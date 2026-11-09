@@ -1,0 +1,112 @@
+# Requirements: Türkiye Siyasi Partileri Araştırması
+
+**Defined:** 2026-11-09
+**Status:** Kullanıcı tarafından onaylandı — 2026-11-09
+**Core Value:** Herkesin siyasi partiler hakkında kendi değerlendirmesini yapabilmesi için kaynağına kadar izlenebilen, karşılaştırılabilir ve eksiklerini açıkça gösteren bilgiye eşit erişim sağlamak.
+
+## v1 Requirements
+
+Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararlarından türetilmiştir. Kullanıcı, gereksinimlerden önceki teknik ekosistem ön araştırmasını atlamıştır; bu seçim siyasi partilere ilişkin kaynak araştırmasını veya sonraki aşamaların doğrulamasını kaldırmaz. Okur, herkesin erişebileceği araştırma çıktısını inceleyen kişidir; araştırmacı, kaynakları ve ortak kayıtları güncelleyen kişidir.
+
+### Kapsam ve yöntem
+
+- [ ] **KAPS-01**: Okur, başlangıç parti listesini tarihli TBMM kaydı ve arşivlenmiş kaynak kopyasıyla görebilir.
+- [ ] **KAPS-02**: Okur, CHP ile Cumhur İttifakı'nın mevcut/geçmiş ortaklarının dışlanma gerekçelerini görebilir; HÜDA PAR, DSP ve Yeniden Refah kapsam dışında tutulur.
+- [ ] **KAPS-03**: Okur, parti kimliği, milletvekilinin parti üyeliği ve ortak Meclis grubu arasındaki ayrımı kaynaklarıyla izleyebilir.
+- [ ] **KAPS-04**: Okur, inceleme dönemini, olay seçme ölçütlerini ve bütün partilere uygulanan ortak araştırma yöntemini görebilir.
+
+### Standart parti dosyaları
+
+- [ ] **DOS-01**: Okur, kapsamdaki her parti için kuruluş, tüzük, program, söylem–uygulama ve finansman–harcamalar başlıklarını içeren aynı şablonda dosya açabilir.
+- [ ] **DOS-02**: Okur, partinin kuruluş tarihini, resmî adını ve temel kimlik bilgilerini kaynaklarıyla görebilir.
+- [ ] **TUZ-01**: Okur, parti üyelerinin haklarını ilgili tüzük maddelerine dayanarak inceleyebilir.
+- [ ] **TUZ-02**: Okur, parti yönetiminin nasıl seçildiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
+- [ ] **TUZ-03**: Okur, parti yönetiminin nasıl denetlendiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
+- [ ] **TUZ-04**: Okur, parti içinde farklı görüşlerin ifade edilmesine olanak tanıyan mekanizmaları ilgili tüzük maddeleriyle inceleyebilir.
+- [ ] **PRG-01**: Okur, partinin açıkladığı ilkeleri, hedefleri ve politika yaklaşımlarını programındaki ilgili bölümlerle birlikte inceleyebilir.
+
+### Kaynaklar ve belge arşivi
+
+- [ ] **KAY-01**: Okur, kullanılan kaynakların türünü ve birincil kaynaklara verilen önceliği görebilir; gazetecilik, akademik çalışma ve bağımsız raporlar açıkça etiketlenir.
+- [ ] **KAY-02**: Okur, her önemli bulgunun kaynak bağlantısını, belge tarihini, varsa sürümünü, ilgili madde/sayfa veya pasajını, erişim tarihini ve doğrulama tarihini görebilir.
+- [ ] **KAY-03**: Araştırmacı, erişilebilen kaynak belgelerini özgün dosya veya tarihli sayfa kopyası olarak arşivleyebilir; arşiv kaydı özgün bağlantıya geri izlenebilir.
+- [ ] **KAY-04**: Okur, bulgunun hangi belge sürümüne ve döneme dayandığını izleyebilir; farklı sürümler sessizce birbirinin yerine geçirilmez.
+
+### Söylem, uygulama ve mali bilgiler
+
+- [ ] **UYG-01**: Okur, açıklanan ilke veya vaadi, buna ilişkin belgelenmiş uygulama kaydıyla aynı konu altında karşılaştırabilir.
+- [ ] **UYG-02**: Okur, söylem–uygulama karşılaştırmasının aktörünü, tarihlerini, bağlamını ve belgelerin desteklediği benzerlik veya farklılığı görebilir.
+- [ ] **MAL-01**: Okur, erişilebilen belgelerde partinin finansman kaynaklarını ve açıklanan gelir tutarlarını görebilir.
+- [ ] **MAL-02**: Okur, erişilebilen belgelerde partinin harcama kalemlerini ve açıklanan harcama tutarlarını görebilir.
+- [ ] **MAL-03**: Okur, mali kaydın hesap dönemini, para birimini ve kapsadığı örgütsel düzeyi görebilir; farklı dönem ve kapsamlar eşdeğer gibi karşılaştırılmaz.
+
+### Metin kökeni ve eksik bilgiler
+
+- [ ] **MET-01**: Okur, kaynaktan değişmeden alınmış doğrudan aktarımları siyah renkte, alıntı oldukları belirtilerek görebilir.
+- [ ] **MET-02**: Okur, yapay zekânın kaynaklardan özetleyip düzenlediği metinleri koyu mavi renkte görebilir; her özet dayandığı kaynaklara bağlıdır ve kaynakta bulunmayan olgular eklenmez.
+- [ ] **MET-03**: Okur, metnin doğrudan aktarım mı yapay zekâ özeti mi olduğunu renge bağlı kalmadan etiketten anlayabilir; bu tür bilgisi veri dışa aktarımında da korunur.
+- [ ] **MET-04**: Okur, doğrulanmış olguyu, bir kaynağın kendi beyanını ve yorumu açıkça ayırt edebilir.
+- [ ] **EKS-01**: Araştırmacı, eksikleri “Bulunamadı”, “Erişilemedi” ve “Doğrulanamadı” olarak ayrı ayrı kaydedebilir.
+- [ ] **EKS-02**: Okur, eksik bilgi listesini ilgili parti/konu, arama veya erişim tarihi ve eksikliğin gerekçesiyle görebilir; eksiklik sıfır değer veya olumsuz bulgu gibi sunulmaz.
+
+### Karşılaştırmalar ve HTML raporu
+
+- [ ] **KAR-01**: Okur, partilerin tüzük düzenlemelerini aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
+- [ ] **KAR-02**: Okur, partilerin programlarını aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
+- [ ] **KAR-03**: Okur, açıklanan ilkeler ile belgelenmiş uygulamaların karşılaştırmalarını bütün partilere uygulanan ortak ölçütlerle görebilir.
+- [ ] **RAP-01**: Okur, parti dosyalarını, karşılaştırmaları, kaynakları ve eksik bilgi listesini sekmelere ayrılmış Türkçe HTML raporunda açabilir ve raporu paylaşabilir.
+- [ ] **RAP-02**: Okur, rapordaki bulgulardan ve karşılaştırma hücrelerinden ilgili kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir.
+- [ ] **RAP-03**: Okur, rapor sekmelerini klavyeyle kullanabilir ve dar ekranda içerik kaybı olmadan okuyabilir.
+
+### Ortak veri tabanı ve güncelleme
+
+- [ ] **VER-01**: Araştırmacı, parti, belge, bulgu ve karşılaştırma kayıtlarını ortak veri tabanında kaynak ilişkileri korunarak saklayabilir.
+- [ ] **VER-02**: Araştırmacı, yeni belge, belge sürümü ve bulgu ekleyebilir veya düzeltme yapabilir; değişiklik tarihi, gerekçesi ve önceki kayda bağlantı korunur.
+- [ ] **VER-03**: Araştırmacı, güncellenen ortak kayıtlardan parti dosyalarını, karşılaştırmaları ve HTML raporunu yeniden üretebilir.
+
+## v2 Requirements
+
+Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının istediği yedi çıktı da v1 kapsamındadır.
+
+## Out of Scope
+
+| Feature | Reason |
+|---------|--------|
+| CHP ve Cumhur İttifakı'nın mevcut/geçmiş ortaklarının parti dosyaları | Kullanıcının onayladığı ilk kapsam sınırı; AKP/AK Parti, MHP, BBP, HÜDA PAR, DSP ve Yeniden Refah dışarıdadır. |
+| TBMM'de esas alınan tarihte temsil edilmeyen partilerin tam incelemesi | İlk kapsam TBMM kayıtlarında temsil edilen partilerle sınırlıdır. |
+| Bağımsız milletvekilleri için siyasi parti dosyası | Araştırmanın birimi siyasi partidir. |
+| Kaynaksız olgular, uydurma kaynaklar veya doğrulanmamış iddiayı kesin bilgi gibi sunmak | Araştırmanın kaynak ve doğrulama ilkeleriyle bağdaşmaz. |
+| Yapay zekâ özetini doğrudan alıntı gibi göstermek | Metin kökeni görünür ve izlenebilir olmalıdır. |
+| Oy verme yönlendirmesi veya araştırmacının tercihine dayalı siyasi sıralama/puanlama | Amaç herkesin kendi değerlendirmesini yapabileceği bilgi kaynağı oluşturmaktır. |
+
+## Definition of Done
+
+- Kapsamdaki her parti dosyasında ortak beş başlık bulunur; her başlıkta kaynaklı bulgular veya gerekçeli eksik bilgi durumları gösterilir.
+- Önemli her olgusal bulgunun gerçek kaynak pasajıyla ilişkisi kontrol edilmiş ve doğrulama kaydı tutulmuştur; doğrulanamayan kayıtlar doğrulanmış bilgi gibi sunulmaz.
+- Doğrudan aktarım/özet ayrımı ve olgu/beyan/yorum ayrımı hem veri kayıtlarında hem raporda korunur.
+- Kullanıcının istediği yedi çıktı, aynı ortak kayıtlardan izlenebilir: parti dosyaları, kaynak/belge arşivi, tüzük/program tabloları, ilke/uygulama karşılaştırmaları, eksik bilgi listesi, sekmeli HTML raporu ve güncellenebilir veri tabanı.
+- Kaynak bağlantıları, sekme kullanımı, içerik taşması ve yeniden üretim akışı ilgili teslim aşamalarında doğrulanır.
+- Gereksinimler yol haritasında tam olarak birer aşamaya atanır; tamamlanma durumları uygulama ve doğrulama kanıtına dayanır.
+
+## Open Decisions
+
+- İnceleme başlangıç yılı ve ortak karşılaştırma dönemleri henüz seçilmedi. 2023 veya son beş yıl varsayılmaz; dönem ve olay örnekleme/arama sonlandırma kuralları yöntem aşamasında netleştirilir.
+- Onaylanan dokuz partilik ön liste, araştırma başlangıcındaki TBMM kaydıyla arşivlenerek tekrar kontrol edilir. Ortak grup ve bireysel parti üyeliği farklılıkları sessizce kapsam değişikliğine dönüştürülmez.
+- Veri tabanı teknolojisi, katkı/düzeltme iş akışı, HTML raporunun teknik yapısı ve yayın/barındırma yeri henüz seçilmedi. Bu belge bir kamuya yayın işlemi başlatmaz.
+
+## Traceability
+
+Aşamalar, gereksinim onayından sonra yol haritası oluşturulurken atanacaktır. Henüz tamamlanan veya bir aşamaya eşlenmiş gereksinim yoktur.
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+
+**Coverage:**
+- v1 requirements: 35 total
+- Mapped to phases: 0
+- Unmapped: 35 — yol haritası bekleniyor
+
+---
+*Requirements defined: 2026-11-09*
+*Last updated: 2026-11-09 after explicit user approval of all 35 v1 requirements*
+
