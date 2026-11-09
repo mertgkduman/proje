@@ -143,7 +143,7 @@ Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yap�
 - **İlk kapsam:** TBMM kayıtlarında temsil edilen partiler arasından CHP ve Cumhur İttifakı'nın mevcut/geçmiş ortakları çıkarılır; onaylanan dokuz partilik ön liste esas alınır ve değişiklikler belgelenir.
 - **Dil ve teslim biçimi:** Araştırma Türkçe ve herkesin okuyabileceği şekilde sunulur; ana okuyucu çıktısı sekmeli HTML raporudur.
 - **Geliştirilebilirlik:** Kaynaklar, belge sürümleri ve bulgu değişiklikleri izlenebilir olmalı; veri tabanı yeni bilgilerle güncellenebilmelidir.
-- **Model ve maliyet tercihi:** Kullanıcının mevcut GSD rol/model ayarları korunur. Belirtilmeyen orkestrasyon ve alt görevlerde Terra/high; ağır araştırma, planlama, sentez ve yöntem doğrulamasında yapılandırılmış Sol/xhigh rolleri esas alınır. Astra açık kullanıcı seçimi olmadan otomatik model veya yedek model olarak eklenmez.
+- **Model ve maliyet tercihi:** Kullanıcının 2026-11-09 tarihli seçimiyle kayıtlı Sol ve Terra modelleri 6.1 sürümlerine geçirilmiştir. Belirtilmeyen orkestrasyon ve alt görevlerde GPT-6.1 Terra/high; ağır araştırma, planlama, sentez ve yöntem doğrulamasında yapılandırılmış GPT-6.1 Sol/xhigh rolleri esas alınır. Rol bazında önceden seçilmiş reasoning seviyeleri ve iki rutin Luna rolü korunur. Astra açık kullanıcı seçimi olmadan otomatik model veya yedek model olarak eklenmez.
 
 ## Key Decisions
 
@@ -159,6 +159,7 @@ Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yap�
 | Eksik bilgi için üç ayrı durumu korumak | Bilgi eksikliğini ve erişim/doğrulama sorunlarını gizlememek | Onaylandı |
 | Ortak veri tabanından beslenen sekmeli HTML raporu hedeflemek | Paylaşılabilir ve güncellenebilir araştırma çıktısı | Onaylandı; teknik mimari bekliyor |
 | İnceleme dönemini henüz sabitlememek | Kullanıcı tarafından bir başlangıç yılı seçilmedi | Açık; yöntem aşamasında netleştirilecek |
+| Kayıtlı GSD Sol/Terra modellerini 6.1'e geçirmek | Kullanıcının açık model güncelleme isteği; mevcut rol ve maliyet dağılımını korumak | Uygulandı; Luna seçimi ve reasoning seviyeleri korundu, otomatik Astra eklenmedi |
 
 ## Evolution
 
@@ -178,4 +179,4 @@ Bu belge aşama geçişlerinde ve kilometre taşı sınırlarında güncellenir.
 4. Parti kapsamı, kaynaklar, kullanıcı geri bildirimi ve çıktılardaki güncel durumu Context bölümüne işle.
 
 ---
-*Last updated: 2026-11-09 after initialization and explicit user approval of project scope*
+*Last updated: 2026-11-09 after project scope approval and authorized GSD model migration to Sol/Terra 6.1*
