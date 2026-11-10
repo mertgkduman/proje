@@ -9,22 +9,23 @@ created: "2026-11-10"
 
 # Faz 1 — Doğrulama stratejisi
 
-Bu belge yürütme için taslaktır; testlerin çalıştığını veya pilot içeriğinin doğrulandığını iddia etmez. Planlayıcı görev/test eşlemesini son planlarla eşitleyecektir.
+Bu belge altı plan ve on iki görevle eşlenmiş yürütme taslağıdır; testlerin çalıştığını veya pilot içeriğinin doğrulandığını iddia etmez. Gerçek test/inceleme kanıtı gelene kadar `draft`, `nyquist_compliant=false`, `wave_0_complete=false` korunur.
 
 ## Test Infrastructure
 
 | Özellik | Değer |
 |---|---|
 | Framework | Python standart kitaplığı `unittest` |
-| Yapılandırma | Wave 0'da `tests/` ve yerel fixture'lar kurulacak |
-| Hızlı komut | `python3 -m unittest discover -s tests -v` |
-| Tam paket | `python3 -m unittest discover -s tests -v` + planlarda tanımlanacak gerçek veri/rapor denetimi |
+| Yapılandırma | 01-01-01 tracer içinde Wave 0: `tests/run.py`, gerçek kaynak capture'ı, geçici yerel fixture ve scratch DB |
+| Hızlı komut | `python3 tests/run.py --pattern test_tracer.py` (her görevde aşağıdaki hedefli pattern kullanılır) |
+| Tam paket | `python3 tests/run.py`; ardından `python3 src/arsiv.py audit --release current --phase 1` (son komut 01-06-02'de genişler) |
+| Sıfır-test kapısı | Runner `unittest` keşfi 0 ise çıkış 2; test hatası çıkış 1; başarı `TESTS_OK count=N`. Atlanan tarayıcı başarı sayılmaz. |
 | Süre hedefi | Hızlı <30 sn; tam otomatik <60 sn; henüz ölçülmedi |
 
 ## Sampling Rate
 
-- Her görev commit'inden sonra hedefli test; henüz olmayan testin önceki Wave 0 görevi açık olmalı.
-- Her plan dalgasından sonra tam paket ve gerçek veri/çıktı bütünlüğü denetimi.
+- Her görev commit'inden önce hedefli test; yeni test ilgili görevin ilk adımıdır. Ortak runner/scratch/browser altyapısının sahibi 01-01-01'dir; ayrı yatay scaffold görevi yoktur.
+- Her plan dalgasından sonra `python3 tests/run.py` ve `python3 src/arsiv.py audit --release current`; çıkış 0 ve TESTS_OK/AUDIT_OK gerekir. Son dalgada `--phase 1` ve PHASE1_AUDIT_OK gerekir.
 - `$gsd-verify-work` öncesi tam paket yeşil, kaynak doğruluğu ve tarayıcı incelemesi tamamlanmış olmalı.
 - Sıfır test, çalıştırılmamış test veya eksik tarayıcı kontrolü başarı değildir.
 
@@ -32,17 +33,28 @@ Bu belge yürütme için taslaktır; testlerin çalıştığını veya pilot iç
 
 | Task ID | Plan | Wave | Requirement | Threat Ref | Secure Behavior | Test Type | Automated Command | File Exists | Status |
 |---|---|---|---|---|---|---|---|---|---|
-| Planlama sonrası atanacak | — | 0 | VER-01, KAY-02, KAY-03 | — | Scratch DB ve kaynak bütünlüğü | Integration | `python3 -m unittest discover -s tests -v` | Hayır, Wave 0 | pending |
-| Planlama sonrası atanacak | — | — | KAPS-01–04 | — | Kapsam/kimlik korunur | Contract | Planlarda hedefli test atanacak | Hayır | pending |
-| Planlama sonrası atanacak | — | — | MET-01–04 | — | Kaynak metni kaçışlanır, köken korunur | Integration/browser | Planlarda hedefli test atanacak | Hayır | pending |
-| Planlama sonrası atanacak | — | — | EKS-01–02 | — | Girişimsiz eksik/sıfır üretilemez | Contract | Planlarda hedefli test atanacak | Hayır | pending |
+| 01-01-01 | 01-01 | 1 (Wave 0 içerir) | KAY-02, KAY-03, MET-01–03, VER-01 | T-01-01, T-01-03 | Gerçek arşiv/hash, write-close-reopen, güvenli kaynak tıklama | Integration/browser | `python3 tests/run.py --pattern test_tracer.py` | Hayır; bu görev `tests/test_tracer.py`, runner ve browser probe yaratır | pending |
+| 01-01-02 | 01-01 | 1 | KAY-03, VER-01 | T-01-02, T-01-04 | Tek-yazıcı/staging/pointer, traversal reddi, hata kurtarma | Integration | `python3 tests/run.py --pattern test_publication.py` | Hayır; bu görev `tests/test_publication.py` yaratır | pending |
+| 01-02-01 | 01-02 | 2 | KAPS-01–03, KAY-02, KAY-03, VER-01 | T-02-01, T-02-02 | Dokuz ad, dışlama, registry/üye/grup ayrımı | Contract/data | `python3 tests/run.py --pattern test_scope.py` | Hayır; bu görev `tests/test_scope.py` yaratır | pending |
+| 01-02-02 | 01-02 | 2 | KAPS-04, KAY-02, VER-01 | T-02-02, T-02-03 | Ayrı tarih ve yeniden üretilebilir kesim | Contract | `python3 tests/run.py --pattern test_dates.py` | Hayır; bu görev `tests/test_dates.py` yaratır | pending |
+| 01-03-01 | 01-03 | 3 | KAPS-04, KAY-02, VER-01 | T-03-01, T-03-03 | Döngü/yeni sürüm, pending kapanma reddi ve reopen | State/integration | `python3 tests/run.py --pattern test_chain.py` | Hayır; bu görev `tests/test_chain.py` yaratır | pending |
+| 01-03-02 | 01-03 | 3 | EKS-01, EKS-02, VER-01 | T-03-02 | Girişim/tür/parti/konu uyumu; not_researched ayrı | Contract/data | `python3 tests/run.py --pattern test_missing.py` | Hayır; bu görev `tests/test_missing.py` yaratır | pending |
+| 01-04-01 | 01-04 | 4 | KAY-02, KAY-03, MET-01–04, EKS-01, EKS-02, VER-01 | T-04-01, T-04-02 | Belge otoritesi, sürüm/hash ve gerçek pasaj | Contract/data | `python3 tests/run.py --pattern test_documents.py` | Hayır; bu görev `tests/test_documents.py` yaratır | pending |
+| 01-04-02 | 01-04 | 4 | KAPS-04, KAY-02, VER-01 | T-04-03 | Konu dayanağı ve sürüm, aday/doğrulanmış ayrımı | Contract/data | `python3 tests/run.py --pattern test_topics.py` | Hayır; bu görev `tests/test_topics.py` yaratır | pending |
+| 01-05-01 | 01-05 | 5 | KAPS-04, KAY-02, MET-01–04, EKS-01, EKS-02, VER-01 | T-05-01–T-05-03 | Aktör/oluş kanıtı; bütün uygun kayıtların küme eşitliği | Contract/data | `python3 tests/run.py --pattern test_matches.py` | Hayır; bu görev `tests/test_matches.py` yaratır | pending |
+| 01-05-02 | 01-05 | 5 | KAY-02, KAY-03, MET-01–04, EKS-01, EKS-02, VER-01 | T-05-01, T-05-03 | Güncel tüzel kimlik, gerçek dönem/kapsam, NULL/0 | Contract/data | `python3 tests/run.py --pattern test_finance.py` | Hayır; bu görev `tests/test_finance.py` yaratır | pending |
+| 01-06-01 | 01-06 | 6 | KAY-02, KAY-03, MET-01–04, EKS-01, EKS-02 | T-06-01, T-06-03 | Güvenli DOM/URL/yol, hash/geri/fokus ve offline arşiv | Integration/browser | `python3 tests/run.py --pattern test_report.py` | Hayır; bu görev `tests/test_report.py` yaratır, mevcut probe'u genişletir | pending |
+| 01-06-02 | 01-06 | 6 | Faz 1'in 13 gereksinimi | T-06-02; bütün high tehditler | Gerçek release/FK/hash/kanıt/export eşitliği | Acceptance/data | `python3 tests/run.py --pattern test_acceptance.py`; `python3 src/arsiv.py audit --release current --phase 1` | Hayır; bu görev `tests/test_acceptance.py` ve phase audit yaratır | pending |
+
+Her hedefli komutun failing direction'ı: sıfır olmayan çıkış, sıfır test veya TESTS_OK count= yokluğu. Faz audit'i sıfır olmayan çıkış veya PHASE1_AUDIT_OK yokluğunda başarısızdır. Bütün PLAN görevlerinde `<automated>` öğesinin hemen ardından `<fails_when>` vardır. Yalnız planlama yapısal kontrolü bu testlerin çalıştırılması sayılmaz.
 
 ## Wave 0 Requirements
 
-- [ ] `tests/` ve küçük yerel belge fixture'ları; sıfır testin sahte başarı sayılmaması.
-- [ ] Yerel scratch DB yazma–kapatma–yeniden okuma düzeneği.
-- [ ] Kaynak/pasaj, hash ve yerel HTML/arşiv bağlantısı denetimi.
-- [ ] Paket kurmadan kullanılabilir tarayıcı yolunun keşfi ve ürün probu.
+- [ ] 01-01-01: `tests/run.py` sıfır keşfi reddeder, hedef pattern ve tam discovery çalışır; test verileri geçici dizinde kalır.
+- [ ] 01-01-01: gerçek capture ve yerel scratch DB yazma–kapatma–yeniden okuma düzeneği.
+- [ ] 01-01-01: `tests/test_tracer.py`, kaynak/pasaj/hash ve yerel HTML/arşiv bağlantısı denetimi.
+- [ ] 01-01-01: `tests/browser_probe.py`, paket kurmadan tarayıcı keşfi ve gerçek citation.click(); tarayıcı bulunamaması başarı değildir.
+- [ ] Sonraki 11 görev: kendi adlandırılmış test dosyasını verify'dan önce yaratır; ortak runner 01-01-01 bağımlılığıyla hazırdır. Test dosyası yaratılmadan verify geçemez.
 
 ## Manual-Only Verifications
 
@@ -51,14 +63,15 @@ Bu belge yürütme için taslaktır; testlerin çalıştığını veya pilot iç
 | Alıntı/özet/pasaj doğruluğu | KAY-02, MET-01–04 | Metnin kaynak sınırını aşması salt şemayla anlaşılamaz | Her önemli bulguyu özgün pasajla karşılaştır; alıntıyı ve özetin anlamını kontrol et |
 | Kapsam, kimlik, tarafsız yöntem | KAPS-01–04 | Hukuki kimlik ve aktör bağlamı yargı gerektirir | Arşiv TBMM/Yargıtay kayıtlarını aç; ad/grup/üyelik ve dışlama gerekçelerini karşılaştır |
 | Okunabilirlik ve kaynak etkileşimi | MET-01–03, KAY-03, EKS-02 | DOM kontrolleri gerçek okuma incelemesini tamamlamaz | Kaynak bağlantısı, geri/fokus, klavye, dar ekran ve çevrimdışı arşivi dene; özet ve alıntıyı birlikte gör |
+| Belgesiz niyet ve uç varsayımları | Bütün 13 gereksinim | Edge motoru 13 satırı unclassified/unresolved bıraktı; dört prohibition descriptor-less ve flagged-unverified | COVERAGE.md'deki her flagged satırı ve 01-06 must_haves.prohibitions maddelerini incele; test yeşiliyle otomatik resolved verme |
 
 ## Validation Sign-Off
 
-- [ ] Her görevde `<automated>` + `<fails_when>` veya açık Wave 0 bağımlılığı.
-- [ ] Üç ardışık doğrulamasız görev yok.
-- [ ] Wave 0 bütün henüz olmayan test yollarını karşılıyor.
+- [x] Her görevde planlanmış `<automated>` + hemen sonra `<fails_when>` ve test sahipliği var.
+- [x] Üç ardışık doğrulamasız görev yok; 12/12 görev hedefli kontrolde örnekleniyor.
+- [x] Wave 0 ortak altyapıyı; her sonraki görev kendi yeni test yolunu açıkça sahipleniyor.
 - [ ] Watch kipinde veya sınırsız komut yok.
-- [ ] Son görev eşlemesi ve tehdit referansları planlarla eşit.
+- [x] Son görev eşlemesi ve tehdit referansları altı planla eşit.
 - [ ] Gecikme hedefleri yürütmede ölçüldü.
 - [ ] Gerçek testler/kaynak incelemesi sonrası `nyquist_compliant` ve `wave_0_complete` güncellendi.
 
