@@ -121,7 +121,8 @@ def check_identity(db, values):
         raise ValueError('Kimlik için resmi sicil sayfası gerekli')
     registry_key = 'yargitay-' + match.group(1)
     # Existing TİP key is a historical TBMM identifier; the crosswalk to
-    # Yargıtay 208 was manually established for this one entity.
+    # Yargıtay 208 is an agent-assessed crosswalk for this one entity and
+    # remains subject to independent human source review.
     legacy = (party['id'], party['registry_key'], registry_key) == ('tip','tbmm-f72877bd-6276-037b-e050-007f01005610','yargitay-208')
     if party['registry_key'] != registry_key and not legacy: raise ValueError('Sicil anahtarı kaynak adresiyle uyuşmuyor')
     content = safe_path(DATA, source['original_path']).read_text(encoding='utf-8', errors='replace')
