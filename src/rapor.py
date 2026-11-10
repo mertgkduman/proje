@@ -92,6 +92,13 @@ def render_report(data):
             ref = (' <a href="#match-' + esc(c['match_id']) + '">Eşleşme</a>') if c['match_id'] else ''
             pieces.append('<p id="candidate-ledger-' + esc(c['id']) + '" data-status="' + esc(c['status']) + '">' + esc(c['id']) + ': ' + esc(c['status']) + ' — ' + esc(c['rationale']) + ref + '</p>')
         pieces.append('</section>')
+    if data.get('financial'):
+        pieces.append('<section><h2>Finansman ve harcamalar</h2>')
+        for f in data['financial']:
+            amount = 'Bilinmiyor' if f['amount'] is None else esc(f['amount'])
+            ref = (' <a class="citation" href="#source-' + esc(f['passage_id']) + '">[Kaynak]</a>') if f['passage_id'] else ''
+            pieces.append('<p id="financial-' + esc(f['id']) + '">' + esc(f['category']) + ': ' + amount + ' ' + esc(f['currency']) + ' — ' + esc(f['period_start']) + ' / ' + esc(f['period_end']) + ' — ' + esc(f['organization_scope']) + ' — yayın: ' + esc(f['published_at']) + ref + '</p>')
+        pieces.append('</section>')
     for f in data['finding']:
         evidence = [e for e in data['finding_evidence'] if e['finding_id'] == f['id']]
         if not evidence: raise ValueError('Kanıtsız bulgu')

@@ -15,6 +15,8 @@ import urllib.request
 import uuid
 import ctypes
 import ctypes.util
+import re
+from decimal import Decimal, InvalidOperation
 
 from rapor import render_report
 
@@ -74,6 +76,7 @@ TABLES.update({
     'match_candidate': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), topic_id TEXT NOT NULL, lead_id TEXT REFERENCES lead(id), passage_id TEXT REFERENCES passage(id), status TEXT NOT NULL, match_id TEXT REFERENCES match(id), missing_id TEXT REFERENCES missing(id), rationale TEXT NOT NULL, reviewed_at TEXT NOT NULL',
     'missing_resolution': 'missing_id TEXT PRIMARY KEY REFERENCES missing(id), resolved_at TEXT NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), reason TEXT NOT NULL'
 })
+TABLES['financial'] = 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT NOT NULL REFERENCES document_version(id), category TEXT NOT NULL, amount TEXT, currency TEXT NOT NULL, period_start TEXT NOT NULL, period_end TEXT NOT NULL, organization_scope TEXT NOT NULL, published_at TEXT NOT NULL, passage_id TEXT REFERENCES passage(id), missing_id TEXT REFERENCES missing(id)'
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -231,6 +234,7 @@ def record(work, kind, values):
         raise ValueError('Geçersiz kayıt türü veya yükü')
     assert_lock(work)
     if kind == 'match': return record_match(work, values)
+    if kind == 'financial': return record_financial(work, values)
     if kind == 'match_candidate': return insert_checked(work, kind, values, check_candidate)
     if kind == 'missing_resolution': return insert_checked(work, kind, values, check_unlinked_resolution)
     if kind in ('lead', 'attempt', 'closure', 'reopen', 'missing', 'document_authority', 'topic'):
@@ -522,6 +526,55 @@ def reopen_topic(work, values):
     insert_checked(work, 'reopen', values, validate)
 
 
+def check_financial(db, v):
+    required = ('id', 'party_id', 'version_id', 'category', 'currency', 'period_start', 'period_end', 'organization_scope', 'published_at')
+    if any(not v.get(k) for k in required): raise ValueError('Mali dönem, kapsam ve kaynak alanları gerekli')
+    try:
+        start, end, published = (dt.date.fromisoformat(v[k]) for k in ('period_start', 'period_end', 'published_at'))
+    except (ValueError, TypeError): raise ValueError('Geçersiz mali tarih')
+    identity = db.execute("SELECT valid_from FROM identity_observation WHERE entity_id=? AND entity_kind='party'", (v['party_id'],)).fetchone()
+    method = db.execute('SELECT cutoff_at FROM method ORDER BY version DESC LIMIT 1').fetchone()
+    source = db.execute('SELECT d.party_id,d.source_kind,v.document_date,p.exact FROM document_version v JOIN document d ON d.id=v.document_id LEFT JOIN passage p ON p.version_id=v.id AND p.id=? WHERE v.id=?', (v.get('passage_id'), v['version_id'])).fetchone()
+    if not identity or not identity[0] or not method or not source or source['party_id'] != v['party_id'] or not source['document_date'] or source['document_date'] != v['published_at'] or start < dt.date.fromisoformat(identity[0]) or end < start or end >= dt.datetime.fromisoformat(method[0]).date() or published < end:
+        raise ValueError('Mali kimlik, dönem veya yayın tarihi uyuşmuyor')
+    if not re.fullmatch(r'[A-Z]{3}', v['currency']): raise ValueError('Para birimi gerekli')
+    if not db.execute('SELECT 1 FROM accounting_period ap JOIN passage p ON p.id=ap.passage_id WHERE ap.party_id=? AND ap.period_start=? AND ap.period_end=? AND ap.date_precision=? AND p.version_id=?', (v['party_id'],v['period_start'],v['period_end'],'day',v['version_id'])).fetchone(): raise ValueError('Kaynakla ilişkili hesap dönemi gerekli')
+    if source['source_kind'] == 'party' and not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (v['version_id'],v['party_id'])).fetchone(): raise ValueError('Parti kaynağının yetkisi doğrulanmadı')
+    if v.get('amount') is None:
+        missing = db.execute('SELECT party_id,heading FROM missing WHERE id=?', (v.get('missing_id'),)).fetchone()
+        if not missing or missing['party_id'] != v['party_id'] or missing['heading'] != 'Finansman ve harcamalar': raise ValueError('Bilinmeyen tutar girişime bağlı eksik gerektirir')
+    else:
+        if not isinstance(v['amount'], str) or not re.fullmatch(r'\d+(?:\.\d+)?', v['amount']) or not source['exact'] or v.get('missing_id'): raise ValueError('Mali tutar ondalık metin ve pasaj gerektirir')
+        if v['organization_scope'].casefold() not in source['exact'].casefold() or (v['currency'] == 'TRY' and not re.search(r'\b(TL|TRY|lira)\b',source['exact'],re.I)) or (v['currency'] != 'TRY' and v['currency'] not in source['exact']): raise ValueError('Kapsam ve para birimi kaynak pasajında gerekli')
+        try: amount = Decimal(v['amount'])
+        except InvalidOperation: raise ValueError('Geçersiz tutar')
+        numbers = re.findall(r'(?<!\w)\d+(?:[.,]\d+)*(?!\w)', source['exact'])
+        def numeric(s):
+            if ',' in s: s = s.replace('.', '').replace(',', '.')
+            return Decimal(s)
+        if not any(numeric(n) == amount for n in numbers): raise ValueError('Tutar kaynak pasajında yok')
+
+
+def record_financial(work, values):
+    insert_checked(work, 'financial', values, check_financial)
+
+
+def audit_finance(path):
+    db = connect(path)
+    try:
+        if not db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='financial'").fetchone(): raise ValueError('Mali kayıt tablosu yok')
+        for row in db.execute('SELECT * FROM financial'): check_financial(db, dict(row))
+        states = {r['heading']: r['state'] for r in db.execute("SELECT heading,state FROM research_state WHERE party_id='yeni-parti'")}
+        for heading in ('Kuruluş', 'Tüzük', 'Program', 'Söylem ve uygulama', 'Finansman ve harcamalar'):
+            if states.get(heading) == 'not_researched' or (heading in ('Söylem ve uygulama', 'Finansman ve harcamalar') and states.get(heading) != 'reviewed'): raise ValueError('Pilot başlığı araştırılmamış: ' + heading)
+            if not db.execute('SELECT 1 FROM finding WHERE party_id=? AND heading=? UNION SELECT 1 FROM missing WHERE party_id=? AND heading=? UNION SELECT 1 FROM financial WHERE party_id=? AND ?=? LIMIT 1', ('yeni-parti',heading,'yeni-parti',heading,'yeni-parti',heading,'Finansman ve harcamalar')).fetchone(): raise ValueError('Pilot başlığı boş: ' + heading)
+        for row in db.execute("SELECT * FROM missing WHERE heading='Finansman ve harcamalar'"):
+            a = db.execute('SELECT * FROM attempt WHERE id=?', (row['attempt_id'],)).fetchone()
+            allowed = {'Bulunamadı':('search','no_result'), 'Erişilemedi':('access','failure'), 'Doğrulanamadı':('verification','inconclusive')}
+            if not a or any(a[k] != row[k] for k in ('party_id','heading','topic_id')) or allowed.get(row['status']) != (a['type'],a['result']): raise ValueError('Mali eksik girişimi geçersiz')
+    finally: db.close()
+
+
 def record_missing(work, values):
     def validate(db, v):
         a = db.execute('SELECT * FROM attempt WHERE id=?', (v['attempt_id'],)).fetchone()
@@ -662,6 +715,8 @@ def export_db(path, release_id):
             eligible = [c['match_id'] for c in result['match_candidate'] if c['status'] == 'eligible']
             if len(eligible) != len(set(eligible)) or set(eligible) != {m['id'] for m in result['match'] if m['eligibility'] == 'eligible'}: raise ValueError('Uygun aday ve eşleşme kümeleri uyuşmuyor')
             for resolution in result['missing_resolution']: check_missing_resolution(db, resolution)
+        if 'financial' in existing:
+            for financial in result['financial']: check_financial(db, financial)
         return result
     finally:
         db.close()
@@ -770,6 +825,7 @@ def main():
                 table = {'matches': 'match', 'finance': 'financial'}[args.check]
                 if not db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name=?", (table,)).fetchone(): raise ValueError('Bu sürüm hedef denetimi desteklemiyor')
             finally: db.close()
+            if args.check == 'finance': audit_finance(DATA / 'releases' / release / 'records.sqlite3')
         print('AUDIT_OK', release)
     elif args.command == 'serve':
         from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
