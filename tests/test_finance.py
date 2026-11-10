@@ -18,11 +18,12 @@ class FinanceContract(unittest.TestCase):
         self.db = arsiv.connect(self.work / 'records.sqlite3')
         self.db.execute("INSERT INTO document VALUES ('finance-fixture','yeni-parti','Test raporu','news')")
         obj = arsiv.DATA / 'objects' / 'finance-fixture'
-        obj.mkdir(); original = obj / 'original.html.bin'; original.write_text('Yeni Parti Kocaeli il örgütü: 2026-08-01 ile 2026-10-23 döneminde 0 TL')
+        obj.mkdir(); original = obj / 'original.html.bin'; original.write_text('Yeni Parti Kocaeli il örgütü: 2026-08-01 ile 2026-10-23 döneminde gelir 0 TL')
         (obj / 'readable.html').write_bytes(arsiv.readable_bytes(original.read_bytes(), 'html'))
         self.db.execute("INSERT INTO document_version (id,document_id,original_url,final_url,document_date,accessed_at,verified_at,mime,sha256,original_path,readable_path,date_precision) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", ('finance-fixture','finance-fixture','https://example.org/finance','https://example.org/finance','2026-10-24','2026-11-10T15:00:00+00:00','2026-11-10T15:00:00+00:00','text/html',arsiv.sha(original),str(original.relative_to(arsiv.DATA)),str((obj/'readable.html').relative_to(arsiv.DATA)),'day'))
         self.db.execute("INSERT INTO passage (id,version_id,exact) VALUES (?,?,?)", ('finance-fixture','finance-fixture',original.read_text()))
         self.db.execute("INSERT INTO accounting_period VALUES ('fixture-period','yeni-parti','finance-fixture','2026-08-01','2026-10-23','day',NULL)")
+        self.db.execute("INSERT INTO review VALUES ('finance-review','financial','f1','agent','2026-11-10T15:00:00+00:00','reviewed','Tutar, para birimi ve kategori kaynakta incelendi.')")
         self.db.commit()
         self.row = dict(id='f1',party_id='yeni-parti',version_id='finance-fixture',category='gelir',amount='0',currency='TRY',period_start='2026-08-01',period_end='2026-10-23',organization_scope='Kocaeli il örgütü',published_at='2026-10-24',passage_id='finance-fixture',missing_id=None)
 
@@ -36,6 +37,8 @@ class FinanceContract(unittest.TestCase):
         for changes in ({'party_id':'tip'}, {'period_start':'2009-01-01'}, {'period_end':'2026-11-11'}, {'currency':''}, {'organization_scope':''}, {'amount':0.0}, {'version_id':'missing'}, {'passage_id':'missing'}):
             with self.subTest(changes=changes), self.assertRaises(ValueError):
                 arsiv.check_financial(self.db, dict(self.row, **changes))
+        for changes in ({'amount':'2026'}, {'category':'bağış'}, {'amount':'2026','category':'bağış'}):
+            with self.subTest(changes=changes), self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, **changes))
 
     def test_null_and_documented_zero_are_distinct(self):
         self.db.execute("INSERT INTO attempt (id,party_id,heading,topic_id,type,query,attempted_at,result,reason) VALUES ('finance-missing-attempt','yeni-parti','Finansman ve harcamalar','test','verification','test','2026-11-10T15:00:00+00:00','inconclusive','Test')")

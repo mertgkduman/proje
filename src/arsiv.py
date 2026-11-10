@@ -564,11 +564,14 @@ def check_financial(db, v):
         if v['organization_scope'].casefold() not in source['exact'].casefold() or (v['currency'] == 'TRY' and not re.search(r'\b(TL|TRY|lira)\b',source['exact'],re.I)) or (v['currency'] != 'TRY' and v['currency'] not in source['exact']): raise ValueError('Kapsam ve para birimi kaynak pasajında gerekli')
         try: amount = Decimal(v['amount'])
         except InvalidOperation: raise ValueError('Geçersiz tutar')
-        numbers = re.findall(r'(?<!\w)\d+(?:[.,]\d+)*(?!\w)', source['exact'])
+        if not db.execute("SELECT 1 FROM review WHERE kind='financial' AND subject_id=? AND result='reviewed' AND reviewer_kind IN ('agent','human') AND reviewed_at<>'' AND reason<>''", (v['id'],)).fetchone(): raise ValueError('Mali ifade için kaynak incelemesi gerekli')
+        if v['category'].casefold() not in source['exact'].casefold(): raise ValueError('Mali kategori kaynak pasajında gerekli')
+        currency = r'(?:TL|TRY|lira)' if v['currency'] == 'TRY' else re.escape(v['currency'])
+        numbers = re.findall(r'(?<![\w.\-])(?<!\d[./-])(\d+(?:[.,]\d+)*)\s*' + currency + r'\b', source['exact'], re.I)
         def numeric(s):
             if ',' in s: s = s.replace('.', '').replace(',', '.')
             return Decimal(s)
-        if not any(numeric(n) == amount for n in numbers): raise ValueError('Tutar kaynak pasajında yok')
+        if not any(numeric(n) == amount for n in numbers): raise ValueError('Tutar ve para birimi kaynakta birlikte bulunmalı')
 
 
 def record_financial(work, values):
