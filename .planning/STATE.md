@@ -4,16 +4,16 @@ milestone: v1.0
 current_phase: 01
 current_phase_name: Kapsam, yöntem ve kaynaklı pilot rapor
 status: executing
-stopped_at: Completed 01-04-PLAN.md
-last_updated: "2026-11-10T15:42:48.316Z"
+stopped_at: Completed 01-05-PLAN.md
+last_updated: "2026-11-10T16:39:15.951Z"
 last_activity: 2026-11-10
-last_activity_desc: 01-01 tamamlandı; tracer insan kontrolü onaylandı, 10 test ve AUDIT_OK geçti. 01-02–01-06 bekliyor.
-state_head: 4edcc791c635c2b7dfeb40965a86fe6d46d00244
+last_activity_desc: 01-05 tamamlandı; 31 test ve mali audit geçti. 01-06 ve aşama sonu insan incelemesi bekliyor.
+state_head: c573263f95400e403bde9b2d6cc11eccadec0644
 progress:
   total_phases: 6
   completed_phases: 0
   total_plans: 6
-  completed_plans: 4
+  completed_plans: 5
 ---
 
 # Project State
@@ -28,11 +28,11 @@ See: .planning/PROJECT.md (updated 2026-11-09)
 ## Current Position
 
 Phase: 01 (Kapsam, yöntem ve kaynaklı pilot rapor) — EXECUTING
-Plan: 5 of 6
+Plan: 6 of 6
 Status: Ready to execute
-Last activity: 2026-11-10 — Phase 01 execution started
+Last activity: 2026-11-10 — 01-05 completed
 
-Progress: [███████░░░] 4/6 plans
+Progress: [████████░░] 5/6 plans
 
 ## Performance Metrics
 
@@ -61,6 +61,7 @@ Progress: [███████░░░] 4/6 plans
 | Phase 01 P02 | 18 min | 2 tasks | 7 files |
 | Phase 01 P03 | 22 min | 2 tasks | 20 files |
 | Phase 01 P04 | 18 min | 2 tasks | 35 files |
+| Phase 01 P05 | 53min | 2 tasks | 113 files |
 
 ## Accumulated Context
 
@@ -77,6 +78,8 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 1]: Pilot Yeni Parti; inceleme partinin kaynakla doğrulanacak kuruluşundan başlar. Ortak konulardaki bütün uygun kanıtlı eşleşmeler kaydedilir; ilgili belge zinciri takip edilir. Ana sekmeler partiler ve Karşılaştırmalı Özet; kaynaklar sekme altında ve metin içinde kaynak kaydına bağlantıyla sunulur. Ayrıntılar 01-CONTEXT.md içinde.
 - [Phase 01]: Alan adı sahipliği incelenen Yargıtay ve TBMM kayıtlarıyla doğrulanamadığında doğrulanmamış bırakılır.
 - [Phase 01]: TİP tüzüğü yalnız ortak konu sözlüğü dayanağıdır; kesim anındaki sürümü doğrulanmadı ve diğer parti dosyası incelenmiş sayılmaz.
+- [Phase 01]: Eşleşme adayları ve çözümlenen eksikler geçmişi korunarak kaydedilir.
+- [Phase 01]: Eski 2009 hesabı ve dönemi doğrulanmamış tutarlar güncel partiye mali satır olarak bağlanmaz.
 
 ### Pending Todos
 
@@ -101,6 +104,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-10T15:42:48.263Z
-Stopped at: Completed 01-04-PLAN.md
+Last session: 2026-11-10T16:38:59.358Z
+Stopped at: Completed 01-05-PLAN.md
 Resume file: None
