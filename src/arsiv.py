@@ -24,6 +24,7 @@ from rapor_v2 import render_report as render_v2_report
 from rapor_v3 import render_report as render_v3_report
 from rapor_v4 import render_report as render_v4_report
 from rapor_v5 import render_report as render_v5_report
+from rapor_v6 import render_report as render_v6_report
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
@@ -805,7 +806,7 @@ def audit_release(release='current'):
     exported = export_db(folder / 'records.sqlite3', release)
     if json.loads((folder / 'records.json').read_text(encoding='utf-8')) != exported:
         raise ValueError('JSON kapalı snapshot ile eşleşmiyor')
-    renderer = {None: render_legacy_report, 2: render_v2_report, 3: render_v3_report, 4: render_v4_report, 5: render_v5_report, 6: render_report}.get(manifest.get('renderer_version'))
+    renderer = {None: render_legacy_report, 2: render_v2_report, 3: render_v3_report, 4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_report}.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
         raise ValueError('HTML kapalı snapshot ile eşleşmiyor')
@@ -907,7 +908,7 @@ def publish_release(work, fail_at=None):
         if base_phase or payload.get('method'):
             phase_data = validate_phase_one_workspace(staging)
             validate_phase_one_html(phase_data, (staging / 'index.html').read_text(encoding='utf-8'))
-        manifest = {'release_id': release, 'renderer_version': 6, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
+        manifest = {'release_id': release, 'renderer_version': 7, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
         (DATA / 'releases').mkdir(exist_ok=True)

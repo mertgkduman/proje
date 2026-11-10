@@ -37,6 +37,11 @@ def probe_tabs(content, source_id, data_root, readable_path):
         raise RuntimeError('Headless Chrome bulunamadı')
     marker = '''<script>
 const first=document.querySelector('[role=tab]'), next=first.nextElementSibling;
+const scope=document.getElementById('scope-method');scope.open=false;
+document.querySelector('a[href="#scope-method"]').click();const scopeClick=scope.open;
+const attemptLink=document.querySelector('a[href^="#attempt-"]');const attempt=document.getElementById(attemptLink.hash.slice(1));scope.open=false;
+location.hash='#'+attempt.id;window.dispatchEvent(new Event('hashchange'));const attemptHash=scope.open;
+scope.open=false;attemptLink.click();const attemptClick=scope.open;
 next.click(); const clicked=next.getAttribute('aria-selected')==='true';
 next.dispatchEvent(new KeyboardEvent('keydown',{key:'Home',bubbles:true}));
 const keyboard=first.getAttribute('aria-selected')==='true' && document.activeElement===first;
@@ -44,7 +49,7 @@ history.replaceState(null,'','#start');
 const citation=document.querySelector('[role=tabpanel] .citation[href="#source-''' + source_id + '''"]');
 citation.click(); const source=document.getElementById('source-''' + source_id + '''');
 const opened=source.open && !source.closest('[role=tabpanel]').hidden;
-setTimeout(()=>{history.back();setTimeout(()=>{const back=location.hash==='#start' && document.activeElement===citation;citation.click();setTimeout(()=>{source.open=false;setTimeout(()=>{document.body.dataset.probe=(clicked&&keyboard&&opened&&back&&document.activeElement===citation&&document.documentElement.scrollWidth<=innerWidth)?'PASS':'FAIL';document.body.dataset.checks=[clicked,keyboard,opened,back,document.activeElement===citation,document.documentElement.scrollWidth<=innerWidth].join(',')},50)},50)},100)},100);
+setTimeout(()=>{history.back();setTimeout(()=>{const back=location.hash==='#start' && document.activeElement===citation;citation.click();setTimeout(()=>{source.open=false;setTimeout(()=>{document.body.dataset.probe=(scopeClick&&attemptHash&&attemptClick&&clicked&&keyboard&&opened&&back&&document.activeElement===citation&&document.documentElement.scrollWidth<=innerWidth)?'PASS':'FAIL';document.body.dataset.checks=[scopeClick,attemptHash,attemptClick,clicked,keyboard,opened,back,document.activeElement===citation,document.documentElement.scrollWidth<=innerWidth].join(',')},50)},50)},100)},100);
 </script>'''
     data_root = Path(data_root).resolve()
     if not (data_root / readable_path).is_file():

@@ -2,11 +2,34 @@
 import json
 import sys
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from rapor import render_report
 from browser_probe import probe_tabs
+
+
+class ReaderText(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.depth = 0
+        self.parts = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if self.depth:
+            self.depth += 1
+        elif tag == 'article' and 'data-match-id' in attrs or tag == 'p' and 'data-status' in attrs:
+            self.depth = 1
+
+    def handle_endtag(self, tag):
+        if self.depth:
+            self.depth -= 1
+
+    def handle_data(self, data):
+        if self.depth:
+            self.parts.append(data)
 
 
 class ReportTest(unittest.TestCase):
@@ -21,6 +44,17 @@ class ReportTest(unittest.TestCase):
             self.assertIn('id="party-' + party['party_id'] + '"', report)
         self.assertIn('data-finding-id="kurulus-summary"', report)
         self.assertIn('id="scope-method"', report)
+        self.assertIn('<meta name="viewport" content="width=device-width, initial-scale=1">', report)
+        self.assertIn('<h1>Türkiye siyasi partileri: kaynaklı pilot rapor</h1>', report)
+        text = ReaderText()
+        text.feed(report)
+        visible = ' '.join(text.parts)
+        self.assertIn('Aktör: kurumsal', visible)
+        self.assertIn('uygun', visible)
+        for raw in ('eligible', 'institution', 'unverified', 'excluded', 'candidate-0105'):
+            self.assertNotIn(raw, visible)
+        self.assertIn('data-status="eligible"', report)
+        self.assertIn('aria-label="Kaynak:', report)
         passage = next(p for p in data['passage'] if p['id'] == 'kurulus')
         version = next(v for v in data['document_version'] if v['id'] == passage['version_id'])
         self.assertEqual(probe_tabs(report, 'kurulus', root / 'data', version['readable_path']), 'BROWSER_TABS_OK')

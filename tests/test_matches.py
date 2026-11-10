@@ -119,7 +119,9 @@ class MatchContract(unittest.TestCase):
         payload=arsiv.export_db(self.work/'records.sqlite3','fixture')
         page=render_report(payload)
         self.assertIn('Çözümlenen geçmiş eksikler', page)
-        self.assertIn('test-missing', page)
+        self.assertIn('Oluş kanıtı bekleniyor.', page)
+        self.assertIn('Olay pasajı incelendi.', page)
+        self.assertIn('href="#source-occurrence"', page)
         self.assertEqual(sum(r['missing_id']=='test-missing' for r in payload['missing_resolution']),1)
 
 
