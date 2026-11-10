@@ -48,7 +48,14 @@ def render_report(data):
             for lead in data.get('lead', []):
                 pieces.append('<li>' + esc(lead['topic_id']) + ': <a href="' + esc(lead['url']) + '">' + esc(lead['url']) + '</a> — ' + esc(lead['status']) + ' — ' + esc(lead['relevance_reason']) + '</li>')
             for edge in data.get('edge', []):
-                pieces.append('<li>İlişki: ' + esc(edge['relation']) + ' — ' + esc(edge['relevance_reason']) + '</li>')
+                if {'name': 'chain_links', 'value': '1'} in data.get('report_option', []):
+                    source = next((p['id'] for p in data['passage'] if p['version_id'] == edge['from_version_id']), None)
+                    target = next(l for l in data['lead'] if l['id'] == edge['to_lead_id'])
+                    document = documents[versions[edge['from_version_id']]['document_id']]
+                    ref = '<a class="citation" href="#source-' + esc(source) + '">' + esc(document['title']) + '</a>' if source else esc(document['title'])
+                    pieces.append('<li>' + ref + ' (' + esc(document['source_kind']) + ') → <a href="' + esc(target['url']) + '">' + esc(target['url']) + '</a>: ' + esc(edge['relation']) + ' — ' + esc(edge['relevance_reason']) + '</li>')
+                else:
+                    pieces.append('<li>İlişki: ' + esc(edge['relation']) + ' — ' + esc(edge['relevance_reason']) + '</li>')
             for closure in data.get('closure', []):
                 pieces.append('<li>Kapanma: ' + esc(closure['closed_at']) + ' — ' + esc(closure['reason']) + ' — ' + esc(closure['residual_leads']) + '</li>')
             for reopen in data.get('reopen', []):

@@ -54,6 +54,7 @@ TABLES.update({
     'reopen': 'closure_id TEXT NOT NULL REFERENCES closure(id), lead_id TEXT NOT NULL REFERENCES lead(id), opened_at TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(closure_id,lead_id)',
     'missing': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, topic_id TEXT NOT NULL, status TEXT NOT NULL, attempt_id TEXT NOT NULL REFERENCES attempt(id), reason TEXT NOT NULL'
     , 'research_state': 'party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, state TEXT NOT NULL, PRIMARY KEY(party_id,heading)'
+    , 'report_option': 'name TEXT PRIMARY KEY, value TEXT NOT NULL'
 })
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
@@ -217,6 +218,8 @@ def record(work, kind, values):
             if values.get('relation') not in ('reference','contradiction','new_version') or not values.get('relevance_reason'): raise ValueError('İlgili kenar ve gerekçe gerekli')
         if kind == 'research_state' and values.get('state') not in ('not_researched','in_progress','reviewed'):
             raise ValueError('Geçersiz araştırma durumu')
+        if kind == 'report_option' and values != {'name': 'chain_links', 'value': '1'}:
+            raise ValueError('Geçersiz rapor seçeneği')
         if kind in ('topic_search', 'url_alias'):
             raise ValueError('Durum ve takma adlar ilgili işlem tarafından yönetilir')
         if kind == 'identity_observation':
