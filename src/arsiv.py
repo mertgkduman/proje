@@ -363,6 +363,18 @@ def enqueue_lead(work, values):
     finally: db.close()
 
 
+def check_examined_lead(db, lead, version_id):
+    version = db.execute('SELECT v.original_url,v.final_url,d.party_id FROM document_version v JOIN document d ON d.id=v.document_id WHERE v.id=?', (version_id,)).fetchone()
+    if not version or version['party_id'] != lead['party_id']:
+        raise ValueError('İncelenen kaynak uç partisine ait değil')
+    urls = {normalize_url(version['original_url']), normalize_url(version['final_url'])}
+    # Aliases are created only by the capture writer, never by arbitrary records.
+    for alias in db.execute('SELECT original_url,final_url FROM url_alias WHERE version_id=?', (version_id,)):
+        urls.update(normalize_url(u) for u in alias)
+    if normalize_url(lead['url']) not in urls:
+        raise ValueError('İncelenen kaynak adresi uçla uyuşmuyor')
+
+
 def record_attempt(work, values):
     def validate(db, v):
         if not all(v.get(k) for k in ('query','attempted_at','reason','type','result')): raise ValueError('Girişim alanları gerekli')
@@ -377,6 +389,7 @@ def record_attempt(work, values):
         if v.get('lead_id'):
             state = {'examined':'examined','failure':'blocked','excluded':'excluded'}.get(v['result'])
             if state == 'examined' and not v.get('source_version_id'): raise ValueError('İncelenmiş uç için belge gerekli')
+            if state == 'examined': check_examined_lead(db, lead, v['source_version_id'])
             if state: db.execute('UPDATE lead SET status=? WHERE id=?', (state,v['lead_id']))
     insert_checked(work, 'attempt', values, validate)
 
@@ -528,6 +541,7 @@ def close_topic(work, values):
             attempt = db.execute("SELECT * FROM attempt WHERE lead_id=? AND result IN ('examined','failure','excluded') ORDER BY attempted_at DESC LIMIT 1", (lead['id'],)).fetchone()
             expected = {'examined':'examined','blocked':'failure','excluded':'excluded'}[lead['status']]
             if not attempt or not attempt['reason'] or attempt['result'] != expected or (lead['status'] == 'examined' and not attempt['source_version_id']): raise ValueError('Uç gerçek girişimle desteklenmeli')
+            if lead['status'] == 'examined': check_examined_lead(db, lead, attempt['source_version_id'])
         db.execute("UPDATE topic_search SET state='closed' WHERE topic_id=?", (v['topic_id'],))
     insert_checked(work, 'closure', values, validate)
 
@@ -767,6 +781,13 @@ def audit_release(release='current'):
 def validate_phase_one_workspace(work):
     path = Path(work) / 'records.sqlite3'
     data = export_db(path, 'workspace')
+    db = connect_readonly(path)
+    try:
+        for attempt in db.execute("SELECT * FROM attempt WHERE lead_id IS NOT NULL AND type='access' AND result='examined'"):
+            lead = db.execute('SELECT * FROM lead WHERE id=?', (attempt['lead_id'],)).fetchone()
+            if not lead or any(lead[k] != attempt[k] for k in ('party_id','heading','topic_id')): raise ValueError('Girişim uçla uyuşmuyor')
+            check_examined_lead(db, lead, attempt['source_version_id'])
+    finally: db.close()
     audit_finance(path)
     if len(data['scope_party']) != 9 or len({s['party_id'] for s in data['scope_party']}) != 9:
         raise ValueError('Dokuz kapsam kararı gerekli')
