@@ -70,6 +70,9 @@ def render_report(data):
                 a = attempts[m['attempt_id']]
                 pieces.append('<p>' + esc(m['topic_id']) + ': ' + esc(m['status']) + ' — ' + esc(m['reason']) + ' (' + esc(a['attempted_at']) + ') <a href="#attempt-' + esc(a['id']) + '">Girişim</a></p>')
             pieces.append('</section>')
+    for state in data.get('research_state', []):
+        if state['state'] == 'not_researched':
+            pieces.append('<section><h2>' + esc(state['heading']) + '</h2><p>Henüz incelenmedi</p></section>')
     if data.get('missing'):
         attempts = {a['id']: a for a in data['attempt']}
         pieces.append('<h2>Eksik bilgiler</h2><ul>')

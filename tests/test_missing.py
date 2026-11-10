@@ -26,6 +26,11 @@ class MissingContract(unittest.TestCase):
                 arsiv.DATA = Path(tmp) / 'data'
                 shutil.copytree(old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
                 work = arsiv.open_workspace(tmp)
+                arsiv.record(work, 'research_state', dict(party_id='yeni-parti', heading='D', state='not_researched'))
+                db = arsiv.connect(work / 'records.sqlite3')
+                self.assertEqual(db.execute("SELECT state FROM research_state WHERE heading='D'").fetchone()[0], 'not_researched')
+                self.assertEqual(db.execute("SELECT COUNT(*) FROM missing WHERE heading='D'").fetchone()[0], 0)
+                db.close()
                 arsiv.enqueue_lead(work, dict(id='l', party_id='yeni-parti', heading='B', topic_id='t', url='https://example.org/', relevance_reason='Denenecek kaynak'))
                 base = dict(party_id='yeni-parti', heading='B', topic_id='t', query='Belirli sorgu', attempted_at='2026-11-10T15:00:00+00:00', reason='Deneme kaydı')
                 for aid, typ, result, status in [('search','search','no_result','Bulunamadı'), ('access','access','failure','Erişilemedi'), ('verify','verification','inconclusive','Doğrulanamadı')]:

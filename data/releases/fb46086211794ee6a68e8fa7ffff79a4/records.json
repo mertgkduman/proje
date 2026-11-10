@@ -1,0 +1,962 @@
+{
+  "accounting_period": [],
+  "attempt": [
+    {
+      "attempted_at": "2026-11-10T14:20:10.705030+00:00",
+      "heading": "A",
+      "id": "attempt-registry-365-v1",
+      "lead_id": "lead-registry-365-v1",
+      "party_id": "yeni-parti",
+      "query": "https://www.yargitaycb.gov.tr/sipar/365",
+      "reason": "Arşivlenen resmi kayıt ve pasaj incelendi",
+      "result": "examined",
+      "source_version_id": "registry-365-v1",
+      "topic_id": "kapsam",
+      "type": "access"
+    },
+    {
+      "attempted_at": "2026-11-10T14:42:04.915400+00:00",
+      "heading": "A",
+      "id": "attempt-tbmm-list-v1",
+      "lead_id": "lead-tbmm-list-v1",
+      "party_id": "yeni-parti",
+      "query": "https://tbmm.gov.tr/SandalyeDagilimi/UyeListe?partiId=51c2a312-6e03-4a9f-980a-01946886a821&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7",
+      "reason": "Arşivlenen resmi kayıt ve pasaj incelendi",
+      "result": "examined",
+      "source_version_id": "tbmm-list-v1",
+      "topic_id": "kapsam",
+      "type": "access"
+    },
+    {
+      "attempted_at": "2026-11-10T14:44:21+00:00",
+      "heading": "A",
+      "id": "attempt-tbmm-member-v1",
+      "lead_id": "lead-tbmm-member-v1",
+      "party_id": "yeni-parti",
+      "query": "https://tbmm.gov.tr/milletvekili/milletvekilidetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&Id=a2df93eb-1507-4d16-909c-01885ccf4022",
+      "reason": "Arşivlenen resmi kayıt ve pasaj incelendi",
+      "result": "examined",
+      "source_version_id": "tbmm-member-v1",
+      "topic_id": "kapsam",
+      "type": "access"
+    },
+    {
+      "attempted_at": "2026-11-10T14:38:46.154751+00:00",
+      "heading": "A",
+      "id": "attempt-tbmm-scope-v1",
+      "lead_id": "lead-tbmm-scope-v1",
+      "party_id": "yeni-parti",
+      "query": "https://tbmm.gov.tr/sandalyedagilimi",
+      "reason": "Arşivlenen resmi kayıt ve pasaj incelendi",
+      "result": "examined",
+      "source_version_id": "tbmm-scope-v1",
+      "topic_id": "kapsam",
+      "type": "access"
+    },
+    {
+      "attempted_at": "2026-11-10T15:09:42.988717+00:00",
+      "heading": "Kapsam",
+      "id": "attempt-ysk-2023-success",
+      "lead_id": "lead-ysk-2023",
+      "party_id": "yeni-parti",
+      "query": "https://www.ysk.gov.tr/doc/dosyalar/docs/Faaliyet_Raporlari/2023_Yili_Faaliyet_Raporu.pdf",
+      "reason": "PDF arşivlendi; 76. PDF sayfası, basılı 69. sayfadaki protokol başlığı doğrulandı",
+      "result": "examined",
+      "source_version_id": "ysk-2023-v1",
+      "topic_id": "2023-ittifak",
+      "type": "access"
+    },
+    {
+      "attempted_at": "2026-11-10T15:14:29.275568+00:00",
+      "heading": "Tüzük ve program",
+      "id": "access-org",
+      "lead_id": "lead-org",
+      "party_id": "yeni-parti",
+      "query": "https://yeni-parti.org",
+      "reason": "Erişim denemesi: HTTP Error 522: <none>",
+      "result": "failure",
+      "source_version_id": null,
+      "topic_id": "alan-adi-org",
+      "type": "access"
+    },
+    {
+      "attempted_at": "2026-11-10T15:14:49.156631+00:00",
+      "heading": "Tüzük ve program",
+      "id": "verify-org",
+      "lead_id": null,
+      "party_id": "yeni-parti",
+      "query": "Arşivlenmiş Yargıtay sicil kaydı ve TBMM sandalye sayfasında https://yeni-parti.org",
+      "reason": "Bu iki resmi kayıtta alan adı bulunmadı; sahiplik bağı kurulamadı",
+      "result": "inconclusive",
+      "source_version_id": "registry-365-v1",
+      "topic_id": "alan-adi-org",
+      "type": "verification"
+    },
+    {
+      "attempted_at": "2026-11-10T15:14:50.004008+00:00",
+      "heading": "Tüzük ve program",
+      "id": "access-orgtr",
+      "lead_id": "lead-orgtr",
+      "party_id": "yeni-parti",
+      "query": "https://yeni-parti.org.tr/",
+      "reason": "Yanıt arşivlendi; alan adının yetkisi ayrıca doğrulanmalıdır",
+      "result": "examined",
+      "source_version_id": "domain-orgtr-v1",
+      "topic_id": "alan-adi-orgtr",
+      "type": "access"
+    },
+    {
+      "attempted_at": "2026-11-10T15:14:50.013513+00:00",
+      "heading": "Tüzük ve program",
+      "id": "verify-orgtr",
+      "lead_id": null,
+      "party_id": "yeni-parti",
+      "query": "Arşivlenmiş Yargıtay sicil kaydı ve TBMM sandalye sayfasında https://yeni-parti.org.tr/",
+      "reason": "Bu iki resmi kayıtta alan adı bulunmadı; sahiplik bağı kurulamadı",
+      "result": "inconclusive",
+      "source_version_id": "registry-365-v1",
+      "topic_id": "alan-adi-orgtr",
+      "type": "verification"
+    }
+  ],
+  "closure": [],
+  "comparison": [],
+  "comparison_evidence": [],
+  "document": [
+    {
+      "id": "registry-365",
+      "party_id": "yeni-parti",
+      "source_kind": "registry",
+      "title": "Yargıtay Cumhuriyet Başsavcılığı — YENİ PARTİ"
+    },
+    {
+      "id": "tbmm-scope",
+      "party_id": "yeni-parti",
+      "source_kind": "official",
+      "title": "TBMM — 28. Dönem sandalye dağılımı"
+    },
+    {
+      "id": "tbmm-list",
+      "party_id": "yeni-parti",
+      "source_kind": "official",
+      "title": "TBMM — Yeni Yol listesi"
+    },
+    {
+      "id": "aa-2023",
+      "party_id": "yeni-parti",
+      "source_kind": "journalism",
+      "title": "Anadolu Ajansı — 2023 seçim ittifakları"
+    },
+    {
+      "id": "tbmm-member",
+      "party_id": "yeni-parti",
+      "source_kind": "official",
+      "title": "TBMM — Ali Yüksel bireysel kaydı"
+    },
+    {
+      "id": "tbmm-history",
+      "party_id": "yeni-parti",
+      "source_kind": "official",
+      "title": "TBMM — Mehmet Emin Ekmen konuşma kayıtları"
+    },
+    {
+      "id": "ysk-2023",
+      "party_id": "yeni-parti",
+      "source_kind": "official",
+      "title": "YSK 2023 faaliyet raporu"
+    },
+    {
+      "id": "domain-orgtr",
+      "party_id": "yeni-parti",
+      "source_kind": "unknown",
+      "title": "İncelenen alan adı: https://yeni-parti.org.tr/"
+    }
+  ],
+  "document_version": [
+    {
+      "accessed_at": "2026-11-10T14:20:10.705030+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Belge tarihi kaynakta belirtilmemiş veya doğrulanmamış.",
+      "document_date": null,
+      "document_id": "registry-365",
+      "final_url": "https://www.yargitaycb.gov.tr/sipar/365",
+      "id": "registry-365-v1",
+      "mime": "text/html",
+      "original_path": "objects/404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f/original.html.bin",
+      "original_url": "https://www.yargitaycb.gov.tr/sipar/365",
+      "readable_path": "objects/404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f/readable.html",
+      "sha256": "404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f",
+      "verified_at": "2026-11-10T14:20:10.705030+00:00",
+      "version_label": "Erişim anındaki kayıt"
+    },
+    {
+      "accessed_at": "2026-11-10T14:38:46.154751+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Belge tarihi kaynakta belirtilmemiş veya doğrulanmamış.",
+      "document_date": null,
+      "document_id": "tbmm-scope",
+      "final_url": "https://tbmm.gov.tr/sandalyedagilimi",
+      "id": "tbmm-scope-v1",
+      "mime": "text/html",
+      "original_path": "objects/2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a/original.html.bin",
+      "original_url": "https://tbmm.gov.tr/sandalyedagilimi",
+      "readable_path": "objects/2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a/readable.html",
+      "sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a",
+      "verified_at": "2026-11-10T14:38:46.154751+00:00",
+      "version_label": "Erişim anındaki kayıt"
+    },
+    {
+      "accessed_at": "2026-11-10T14:42:04.915400+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Belge tarihi kaynakta belirtilmemiş veya doğrulanmamış.",
+      "document_date": null,
+      "document_id": "tbmm-list",
+      "final_url": "https://tbmm.gov.tr/SandalyeDagilimi/UyeListe?partiId=51c2a312-6e03-4a9f-980a-01946886a821&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7",
+      "id": "tbmm-list-v1",
+      "mime": "text/html",
+      "original_path": "objects/b08cb4721e9d989eaf0e888933c5cfec923d4cdfb7a43bf596dc804d500f32cc/original.html.bin",
+      "original_url": "https://tbmm.gov.tr/SandalyeDagilimi/UyeListe?partiId=51c2a312-6e03-4a9f-980a-01946886a821&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7",
+      "readable_path": "objects/b08cb4721e9d989eaf0e888933c5cfec923d4cdfb7a43bf596dc804d500f32cc/readable.html",
+      "sha256": "b08cb4721e9d989eaf0e888933c5cfec923d4cdfb7a43bf596dc804d500f32cc",
+      "verified_at": "2026-11-10T14:42:04.915400+00:00",
+      "version_label": "Erişim anındaki kayıt"
+    },
+    {
+      "accessed_at": "2026-11-10T14:42:58.761254+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Belge tarihi kaynakta belirtilmemiş veya doğrulanmamış.",
+      "document_date": null,
+      "document_id": "aa-2023",
+      "final_url": "https://www.aa.com.tr/tr/gundem/secimde-13-siyasi-parti-tek-basina-digerleri-ittifak-catisinda-yarisacak/2868155",
+      "id": "aa-2023-v1",
+      "mime": "text/html",
+      "original_path": "objects/35b61d5656aa2d1c60c2eb859358a2426ec274ab26e42b3e559a772aa68c6f4c/original.html.bin",
+      "original_url": "https://www.aa.com.tr/tr/gundem/secimde-13-siyasi-parti-tek-basina-digerleri-ittifak-catisinda-yarisacak/2868155",
+      "readable_path": "objects/35b61d5656aa2d1c60c2eb859358a2426ec274ab26e42b3e559a772aa68c6f4c/readable.html",
+      "sha256": "35b61d5656aa2d1c60c2eb859358a2426ec274ab26e42b3e559a772aa68c6f4c",
+      "verified_at": "2026-11-10T14:42:58.761254+00:00",
+      "version_label": "Erişim anındaki kayıt"
+    },
+    {
+      "accessed_at": "2026-11-10T14:44:21+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Belge tarihi kaynakta belirtilmemiş veya doğrulanmamış.",
+      "document_date": null,
+      "document_id": "tbmm-member",
+      "final_url": "https://tbmm.gov.tr/milletvekili/milletvekilidetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&Id=a2df93eb-1507-4d16-909c-01885ccf4022",
+      "id": "tbmm-member-v1",
+      "mime": "text/html",
+      "original_path": "objects/33c47ab35501318b98c56f9a39a5445356e9cd7d2c1af00b81a721ce7919cd1c/original.html.bin",
+      "original_url": "https://tbmm.gov.tr/milletvekili/milletvekilidetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&Id=a2df93eb-1507-4d16-909c-01885ccf4022",
+      "readable_path": "objects/33c47ab35501318b98c56f9a39a5445356e9cd7d2c1af00b81a721ce7919cd1c/readable.html",
+      "sha256": "33c47ab35501318b98c56f9a39a5445356e9cd7d2c1af00b81a721ce7919cd1c",
+      "verified_at": "2026-11-10T14:44:21+00:00",
+      "version_label": "Erişim anındaki kayıt"
+    },
+    {
+      "accessed_at": "2026-11-10T14:44:26+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Belge tarihi kaynakta belirtilmemiş veya doğrulanmamış.",
+      "document_date": null,
+      "document_id": "tbmm-history",
+      "final_url": "https://www.tbmm.gov.tr/milletvekili/UyeGenelKurulKonusma?Id=f72877c2-c883-037b-e050-007f01005610&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7",
+      "id": "tbmm-history-v1",
+      "mime": "text/html",
+      "original_path": "objects/09bfd003dc9924fe19f21132d14e83a9a6bb2e04da78bbec3e9db5c150b93783/original.html.bin",
+      "original_url": "https://www.tbmm.gov.tr/milletvekili/UyeGenelKurulKonusma?Id=f72877c2-c883-037b-e050-007f01005610&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7",
+      "readable_path": "objects/09bfd003dc9924fe19f21132d14e83a9a6bb2e04da78bbec3e9db5c150b93783/readable.html",
+      "sha256": "09bfd003dc9924fe19f21132d14e83a9a6bb2e04da78bbec3e9db5c150b93783",
+      "verified_at": "2026-11-10T14:44:26+00:00",
+      "version_label": "Erişim anındaki kayıt"
+    },
+    {
+      "accessed_at": "2026-11-10T15:09:42.988717+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Raporun kesin yayımlanma günü doğrulanmadı",
+      "document_date": null,
+      "document_id": "ysk-2023",
+      "final_url": "https://www.ysk.gov.tr/doc/dosyalar/docs/Faaliyet_Raporlari/2023_Yili_Faaliyet_Raporu.pdf",
+      "id": "ysk-2023-v1",
+      "mime": "application/pdf",
+      "original_path": "objects/8192d9d796b57b7d478baf7f74cf47f94265ad2d89d8c195a3df76442ce201f2/original.pdf",
+      "original_url": "https://www.ysk.gov.tr/doc/dosyalar/docs/Faaliyet_Raporlari/2023_Yili_Faaliyet_Raporu.pdf",
+      "readable_path": "objects/8192d9d796b57b7d478baf7f74cf47f94265ad2d89d8c195a3df76442ce201f2/readable.html",
+      "sha256": "8192d9d796b57b7d478baf7f74cf47f94265ad2d89d8c195a3df76442ce201f2",
+      "verified_at": "2026-11-10T15:09:42.988717+00:00",
+      "version_label": "2023 faaliyet raporu"
+    },
+    {
+      "accessed_at": "2026-11-10T15:14:50.004008+00:00",
+      "date_precision": "unknown",
+      "date_unknown_reason": "Yayın tarihi doğrulanmadı",
+      "document_date": null,
+      "document_id": "domain-orgtr",
+      "final_url": "https://yeni-parti.org.tr/",
+      "id": "domain-orgtr-v1",
+      "mime": "text/html",
+      "original_path": "objects/55ee5f6ec49d81e2aa9b7f7b5f104e76abacbef293bdde7e8062d9753fc32560/original.html.bin",
+      "original_url": "https://yeni-parti.org.tr/",
+      "readable_path": "objects/55ee5f6ec49d81e2aa9b7f7b5f104e76abacbef293bdde7e8062d9753fc32560/readable.html",
+      "sha256": "55ee5f6ec49d81e2aa9b7f7b5f104e76abacbef293bdde7e8062d9753fc32560",
+      "verified_at": "2026-11-10T15:14:50.004008+00:00",
+      "version_label": "Erişim anı"
+    }
+  ],
+  "edge": [
+    {
+      "from_version_id": "tbmm-scope-v1",
+      "relation": "reference",
+      "relevance_reason": "TBMM sandalye sayfasındaki parti listesi bağlantısı",
+      "to_lead_id": "lead-tbmm-list-v1"
+    }
+  ],
+  "event_date": [],
+  "finding": [
+    {
+      "epistemic_type": "registry",
+      "heading": "Kuruluş",
+      "id": "kurulus-summary",
+      "pair_id": "kurulus",
+      "party_id": "yeni-parti",
+      "provenance": "summary",
+      "text": "Yargıtay kaydında Yeni Partinin kuruluş tarihi 24 Temmuz 2026 olarak yer alır."
+    },
+    {
+      "epistemic_type": "registry",
+      "heading": "Kuruluş",
+      "id": "kurulus-quote",
+      "pair_id": "kurulus",
+      "party_id": "yeni-parti",
+      "provenance": "quote",
+      "text": "24.07.2026"
+    }
+  ],
+  "finding_evidence": [
+    {
+      "finding_id": "kurulus-summary",
+      "passage_id": "kurulus",
+      "role": "support"
+    },
+    {
+      "finding_id": "kurulus-quote",
+      "passage_id": "kurulus",
+      "role": "quotation"
+    }
+  ],
+  "group_membership": [
+    {
+      "group_id": "yeni-yol-group",
+      "passage_id": "tbmm-bulent-group",
+      "person_id": "bulent-kaya",
+      "valid_from": null,
+      "valid_to": null
+    }
+  ],
+  "identity_observation": [
+    {
+      "entity_id": "yeni-parti",
+      "entity_kind": "party",
+      "passage_id": "kurulus",
+      "registry_key": "yargitay-365",
+      "valid_from": "2026-07-24",
+      "valid_to": null
+    }
+  ],
+  "lead": [
+    {
+      "heading": "A",
+      "id": "lead-registry-365-v1",
+      "normalized_url": "https://www.yargitaycb.gov.tr/sipar/365",
+      "party_id": "yeni-parti",
+      "relevance_reason": "Önceki planda arşivlenen resmi kayıt",
+      "status": "examined",
+      "topic_id": "kapsam",
+      "url": "https://www.yargitaycb.gov.tr/sipar/365"
+    },
+    {
+      "heading": "A",
+      "id": "lead-tbmm-list-v1",
+      "normalized_url": "https://tbmm.gov.tr/SandalyeDagilimi/UyeListe?partiId=51c2a312-6e03-4a9f-980a-01946886a821&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7",
+      "party_id": "yeni-parti",
+      "relevance_reason": "Önceki planda arşivlenen resmi kayıt",
+      "status": "examined",
+      "topic_id": "kapsam",
+      "url": "https://tbmm.gov.tr/SandalyeDagilimi/UyeListe?partiId=51c2a312-6e03-4a9f-980a-01946886a821&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7"
+    },
+    {
+      "heading": "A",
+      "id": "lead-tbmm-member-v1",
+      "normalized_url": "https://tbmm.gov.tr/milletvekili/milletvekilidetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&Id=a2df93eb-1507-4d16-909c-01885ccf4022",
+      "party_id": "yeni-parti",
+      "relevance_reason": "Önceki planda arşivlenen resmi kayıt",
+      "status": "examined",
+      "topic_id": "kapsam",
+      "url": "https://tbmm.gov.tr/milletvekili/milletvekilidetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&Id=a2df93eb-1507-4d16-909c-01885ccf4022"
+    },
+    {
+      "heading": "A",
+      "id": "lead-tbmm-scope-v1",
+      "normalized_url": "https://tbmm.gov.tr/sandalyedagilimi",
+      "party_id": "yeni-parti",
+      "relevance_reason": "Önceki planda arşivlenen resmi kayıt",
+      "status": "examined",
+      "topic_id": "kapsam",
+      "url": "https://tbmm.gov.tr/sandalyedagilimi"
+    },
+    {
+      "heading": "Kapsam",
+      "id": "lead-ysk-2023",
+      "normalized_url": "https://www.ysk.gov.tr/doc/dosyalar/docs/Faaliyet_Raporlari/2023_Yili_Faaliyet_Raporu.pdf",
+      "party_id": "yeni-parti",
+      "relevance_reason": "Önceki planda okunan ve arşivlenmesi gereken YSK faaliyet raporu",
+      "status": "examined",
+      "topic_id": "2023-ittifak",
+      "url": "https://www.ysk.gov.tr/doc/dosyalar/docs/Faaliyet_Raporlari/2023_Yili_Faaliyet_Raporu.pdf"
+    },
+    {
+      "heading": "Tüzük ve program",
+      "id": "lead-org",
+      "normalized_url": "https://yeni-parti.org/",
+      "party_id": "yeni-parti",
+      "relevance_reason": "Partiye ait olduğu ileri sürülen alan adının doğrulanması",
+      "status": "blocked",
+      "topic_id": "alan-adi-org",
+      "url": "https://yeni-parti.org"
+    },
+    {
+      "heading": "Tüzük ve program",
+      "id": "lead-orgtr",
+      "normalized_url": "https://yeni-parti.org.tr/",
+      "party_id": "yeni-parti",
+      "relevance_reason": "Partiye ait olduğu ileri sürülen alan adının doğrulanması",
+      "status": "examined",
+      "topic_id": "alan-adi-orgtr",
+      "url": "https://yeni-parti.org.tr/"
+    }
+  ],
+  "membership": [
+    {
+      "party_id": "saadet",
+      "passage_id": "tbmm-history-saadet",
+      "person_id": "ekmen",
+      "valid_from": "2024-12-25",
+      "valid_to": "2024-12-25"
+    }
+  ],
+  "method": [
+    {
+      "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+      "cutoff_capture_version_id": "tbmm-scope-v1",
+      "cutoff_reason": "İçeriği doğrulanan TBMM kapsam yakalamasının erişim anı; kullanıcı seçimi değildir.",
+      "id": "method-1",
+      "period_rule": "Başlangıç doğrulanmış kuruluş günüdür (24.07.2026); kesim anı dahildir. Sonraki parti dosyalarında kendi kuruluş tarihi uygulanır.",
+      "pilot_reason": "Pilot Yeni Parti kullanıcının seçimidir; siyasi sıralama değildir.",
+      "version": 1
+    }
+  ],
+  "missing": [
+    {
+      "attempt_id": "access-org",
+      "heading": "Tüzük ve program",
+      "id": "missing-access-org",
+      "party_id": "yeni-parti",
+      "reason": "Belirlenen alan adına yapılan bu denemede içerik alınamadı",
+      "status": "Erişilemedi",
+      "topic_id": "alan-adi-org"
+    },
+    {
+      "attempt_id": "verify-org",
+      "heading": "Tüzük ve program",
+      "id": "missing-authority-org",
+      "party_id": "yeni-parti",
+      "reason": "Alan adının partiyle yetkili bağı incelenen resmi kayıtlardan doğrulanamadı",
+      "status": "Doğrulanamadı",
+      "topic_id": "alan-adi-org"
+    },
+    {
+      "attempt_id": "verify-orgtr",
+      "heading": "Tüzük ve program",
+      "id": "missing-authority-orgtr",
+      "party_id": "yeni-parti",
+      "reason": "Alan adının partiyle yetkili bağı incelenen resmi kayıtlardan doğrulanamadı",
+      "status": "Doğrulanamadı",
+      "topic_id": "alan-adi-orgtr"
+    }
+  ],
+  "parliamentary_group": [
+    {
+      "id": "yeni-yol-group",
+      "name": "Yeni Yol Partisi Grubu",
+      "passage_id": "tbmm-group"
+    }
+  ],
+  "party": [
+    {
+      "id": "yeni-parti",
+      "legal_name": "YENİ PARTİ",
+      "registry_key": "yargitay-365"
+    },
+    {
+      "id": "dem",
+      "legal_name": "HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ",
+      "registry_key": "tbmm-9fde412b-e6e1-40b1-85b8-018b5b776e0e"
+    },
+    {
+      "id": "iyi",
+      "legal_name": "İYİ PARTİ",
+      "registry_key": "tbmm-f72877bd-62bd-037b-e050-007f01005610"
+    },
+    {
+      "id": "yeni-yol",
+      "legal_name": "YENİ YOL PARTİSİ",
+      "registry_key": "tbmm-51c2a312-6e03-4a9f-980a-01946886a821"
+    },
+    {
+      "id": "tip",
+      "legal_name": "TÜRKİYE İŞÇİ PARTİSİ",
+      "registry_key": "tbmm-f72877bd-6276-037b-e050-007f01005610"
+    },
+    {
+      "id": "dbp",
+      "legal_name": "DEMOKRATİK BÖLGELER PARTİSİ",
+      "registry_key": "tbmm-f72877bd-6268-037b-e050-007f01005610"
+    },
+    {
+      "id": "emep",
+      "legal_name": "EMEK PARTİSİ",
+      "registry_key": "tbmm-68d1fbf4-6d03-486d-b6e0-0188108aef49"
+    },
+    {
+      "id": "saadet",
+      "legal_name": "SAADET PARTİSİ",
+      "registry_key": "tbmm-f72877bd-6287-037b-e050-007f01005610"
+    },
+    {
+      "id": "demokrat",
+      "legal_name": "DEMOKRAT PARTİ",
+      "registry_key": "tbmm-f72877bd-626d-037b-e050-007f01005610"
+    }
+  ],
+  "passage": [
+    {
+      "article": null,
+      "exact": "24.07.2026",
+      "id": "kurulus",
+      "pdf_page_index": null,
+      "prefix": "Kuruluş Tarihi",
+      "printed_page": null,
+      "section": "Kuruluş Tarihi",
+      "suffix": null,
+      "version_id": "registry-365-v1"
+    },
+    {
+      "article": null,
+      "exact": "YEN&#x130; PART&#x130;",
+      "id": "tbmm-yeni-parti",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "HALKLARIN E&#x15E;&#x130;TL&#x130;K VE DEMOKRAS&#x130; PART&#x130;S&#x130;",
+      "id": "tbmm-dem",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "&#x130;Y&#x130; PART&#x130;",
+      "id": "tbmm-iyi",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "YEN&#x130; YOL PART&#x130;S&#x130;",
+      "id": "tbmm-yeni-yol",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "T&#xDC;RK&#x130;YE &#x130;&#x15E;&#xC7;&#x130; PART&#x130;S&#x130;",
+      "id": "tbmm-tip",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "DEMOKRAT&#x130;K B&#xD6;LGELER PART&#x130;S&#x130;",
+      "id": "tbmm-dbp",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "EMEK PART&#x130;S&#x130;",
+      "id": "tbmm-emep",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "SAADET PART&#x130;S&#x130;",
+      "id": "tbmm-saadet",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "DEMOKRAT PART&#x130;",
+      "id": "tbmm-demokrat",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-scope-v1"
+    },
+    {
+      "article": null,
+      "exact": "Yeni Yol Partisi Grup Ba&#x15F;kanvekili",
+      "id": "tbmm-group",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-list-v1"
+    },
+    {
+      "article": null,
+      "exact": "YEN&#x130; YOL KONYA MİLLETVEKİLİ",
+      "id": "tbmm-member-label",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-member-v1"
+    },
+    {
+      "article": null,
+      "exact": "<tr>\n                                        <td>3</td>\n                                        <td>42</td>\n                                        <td class=\"mobile_disabled\">25.12.2024</td>\n                                        <td>\n                                            <a href=\"UyeGenelKurulKonusmalariDetay?eid=131204\"> A&#xE7;&#x131;klanan asgari &#xFC;crete ili&#x15F;kin a&#xE7;&#x131;klamas&#x131;</a>\n                                        </td>\n                                        <td class=\"mobile_disabled\"></td>\n                                        <td class=\"mobile_disabled\">561</td>\n                                        <td><a href=\"/Tutanaklar/TutanakGetir?donem=28&amp;yasamaYili=3&amp;birlesimNo=42\">Tutanak</a></td>\n                                        <td>SAADET Partisi</td>\n                                    </tr>",
+      "id": "tbmm-history-saadet",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-history-v1"
+    },
+    {
+      "article": null,
+      "exact": "B&#xDC;LENT KAYA\n                            </span>\n                             <span class=\"ozgemis_linki_desktop\">\n                                <a style=\"float:right;letter-spacing:1.5px; color: #c1ad82;text-transform:uppercase;font-size:12px;font-weight:500;\" \n                                href=\"/milletvekili/milletvekilidetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&Id=b98e53f3-f17c-4ced-8ae9-01886b4b7840\">Öz Geçmiş</a>\n                            </span>\n                        </strong>\n                    </h6>\n                    <span class=\"gorev_listesi\" style=\"font-size:14px;padding-top:5px;display:block;\">\n                        \n\n\n\n\nYeni Yol Partisi Grup Ba&#x15F;kanvekili",
+      "id": "tbmm-bulent-group",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "tbmm-list-v1"
+    },
+    {
+      "article": null,
+      "exact": "Ancak Cumhur İttifakı'na destek veren DSP ve HÜDA PAR'ın adayları, seçimde AK Parti listelerinde yer aldı.",
+      "id": "aa-2023-passage",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": null,
+      "suffix": null,
+      "version_id": "aa-2023-v1"
+    },
+    {
+      "article": null,
+      "exact": "SİYASİ PARTİLER ARASINDA YAPILAN İTTİFAK PROTOKOLÜNÜN USUL VE\nESASLARI",
+      "id": "ysk-2023-protocol",
+      "pdf_page_index": 75,
+      "prefix": null,
+      "printed_page": "69",
+      "section": "İttifak protokolü",
+      "suffix": null,
+      "version_id": "ysk-2023-v1"
+    },
+    {
+      "article": null,
+      "exact": "<title>Yeni Parti</title>",
+      "id": "domain-orgtr-title",
+      "pdf_page_index": null,
+      "prefix": null,
+      "printed_page": null,
+      "section": "HTML başlığı",
+      "suffix": null,
+      "version_id": "domain-orgtr-v1"
+    }
+  ],
+  "person": [
+    {
+      "id": "ekmen",
+      "name": "Mehmet Emin Ekmen"
+    },
+    {
+      "id": "bulent-kaya",
+      "name": "Bülent Kaya"
+    }
+  ],
+  "release_id": "fb46086211794ee6a68e8fa7ffff79a4",
+  "reopen": [],
+  "research_state": [
+    {
+      "heading": "Söylem ve uygulama",
+      "party_id": "yeni-parti",
+      "state": "not_researched"
+    },
+    {
+      "heading": "Finansman ve harcamalar",
+      "party_id": "yeni-parti",
+      "state": "not_researched"
+    }
+  ],
+  "schema_version": 3,
+  "scope_exclusion": [
+    {
+      "decision_origin": "PROJECT.md kullanıcı kararı",
+      "evidence_passage_id": null,
+      "name": "CHP",
+      "reason": "Kullanıcının açık dışlama kararı"
+    },
+    {
+      "decision_origin": "PROJECT.md kullanıcı kararı",
+      "evidence_passage_id": null,
+      "name": "AKP/AK Parti",
+      "reason": "Kullanıcının ittifak ortakları için kapsam kararı"
+    },
+    {
+      "decision_origin": "PROJECT.md kullanıcı kararı",
+      "evidence_passage_id": null,
+      "name": "MHP",
+      "reason": "Kullanıcının ittifak ortakları için kapsam kararı"
+    },
+    {
+      "decision_origin": "PROJECT.md kullanıcı kararı",
+      "evidence_passage_id": null,
+      "name": "BBP",
+      "reason": "Kullanıcının ittifak ortakları için kapsam kararı; temsil koşulu ayrıca değerlendirilir"
+    },
+    {
+      "decision_origin": "PROJECT.md kullanıcı kararı",
+      "evidence_passage_id": null,
+      "name": "HÜDA PAR",
+      "reason": "Kullanıcının açık kapsam kararı"
+    },
+    {
+      "decision_origin": "PROJECT.md kullanıcı kararı",
+      "evidence_passage_id": null,
+      "name": "DSP",
+      "reason": "Kullanıcının açık kapsam kararı"
+    },
+    {
+      "decision_origin": "PROJECT.md kullanıcı kararı",
+      "evidence_passage_id": null,
+      "name": "Yeniden Refah",
+      "reason": "Kullanıcının açık kapsam kararı"
+    }
+  ],
+  "scope_observation": [
+    {
+      "discrepancy_reason": null,
+      "id": "observation-yeni-parti",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "yeni-parti",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-yeni-parti"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-dem",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "dem",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-dem"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-iyi",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "iyi",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-iyi"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-yeni-yol",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "yeni-yol",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-yeni-yol"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-tip",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "tip",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-tip"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-dbp",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "dbp",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-dbp"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-emep",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "emep",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-emep"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-saadet",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "saadet",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-saadet"
+    },
+    {
+      "discrepancy_reason": null,
+      "id": "observation-demokrat",
+      "observed_at": "2026-11-10T14:38:46.154751+00:00",
+      "party_id": "demokrat",
+      "representation_kind": "TBMM tablosunda parti satırı",
+      "source_passage_id": "tbmm-demokrat"
+    }
+  ],
+  "scope_party": [
+    {
+      "approved_order": 1,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "yeni-parti"
+    },
+    {
+      "approved_order": 2,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "dem"
+    },
+    {
+      "approved_order": 3,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "iyi"
+    },
+    {
+      "approved_order": 4,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "yeni-yol"
+    },
+    {
+      "approved_order": 5,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "tip"
+    },
+    {
+      "approved_order": 6,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "dbp"
+    },
+    {
+      "approved_order": 7,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "emep"
+    },
+    {
+      "approved_order": 8,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "saadet"
+    },
+    {
+      "approved_order": 9,
+      "decision_origin": "PROJECT.md; D-05",
+      "inclusion_reason": "Kullanıcının onaylı ön listesi",
+      "party_id": "demokrat"
+    }
+  ],
+  "topic_search": [
+    {
+      "method_version": 1,
+      "state": "in_progress",
+      "topic_id": "kapsam"
+    },
+    {
+      "method_version": 1,
+      "state": "in_progress",
+      "topic_id": "2023-ittifak"
+    },
+    {
+      "method_version": 1,
+      "state": "in_progress",
+      "topic_id": "alan-adi-org"
+    },
+    {
+      "method_version": 1,
+      "state": "in_progress",
+      "topic_id": "alan-adi-orgtr"
+    }
+  ],
+  "url_alias": [
+    {
+      "final_url": "https://www.ysk.gov.tr/doc/dosyalar/docs/Faaliyet_Raporlari/2023_Yili_Faaliyet_Raporu.pdf",
+      "original_url": "https://www.ysk.gov.tr/doc/dosyalar/docs/Faaliyet_Raporlari/2023_Yili_Faaliyet_Raporu.pdf",
+      "version_id": "ysk-2023-v1"
+    },
+    {
+      "final_url": "https://yeni-parti.org.tr/",
+      "original_url": "https://yeni-parti.org.tr/",
+      "version_id": "domain-orgtr-v1"
+    }
+  ]
+}

@@ -53,6 +53,7 @@ TABLES.update({
     'closure': 'id TEXT PRIMARY KEY, topic_id TEXT NOT NULL REFERENCES topic_search(topic_id), closed_at TEXT NOT NULL, reason TEXT NOT NULL, residual_leads TEXT NOT NULL',
     'reopen': 'closure_id TEXT NOT NULL REFERENCES closure(id), lead_id TEXT NOT NULL REFERENCES lead(id), opened_at TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(closure_id,lead_id)',
     'missing': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, topic_id TEXT NOT NULL, status TEXT NOT NULL, attempt_id TEXT NOT NULL REFERENCES attempt(id), reason TEXT NOT NULL'
+    , 'research_state': 'party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, state TEXT NOT NULL, PRIMARY KEY(party_id,heading)'
 })
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
@@ -214,6 +215,10 @@ def record(work, kind, values):
                 return duplicate['id']
         if kind == 'edge':
             if values.get('relation') not in ('reference','contradiction','new_version') or not values.get('relevance_reason'): raise ValueError('İlgili kenar ve gerekçe gerekli')
+        if kind == 'research_state' and values.get('state') not in ('not_researched','in_progress','reviewed'):
+            raise ValueError('Geçersiz araştırma durumu')
+        if kind in ('topic_search', 'url_alias'):
+            raise ValueError('Durum ve takma adlar ilgili işlem tarafından yönetilir')
         if kind == 'identity_observation':
             party = db.execute('SELECT registry_key FROM party WHERE id=?', (values['entity_id'],)).fetchone()
             if not party or party['registry_key'] != values['registry_key']:
@@ -263,6 +268,8 @@ def insert_checked(work, table, values, validate):
     assert_lock(work)
     db = connect(Path(work) / 'records.sqlite3')
     try:
+        if not set(values) <= {r['name'] for r in db.execute(f'PRAGMA table_info({table})')}:
+            raise ValueError('Bilinmeyen kayıt alanı')
         validate(db, values)
         keys = list(values)
         db.execute(f"INSERT INTO {table} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
@@ -279,6 +286,7 @@ def enqueue_lead(work, values):
     db = connect(Path(work) / 'records.sqlite3')
     try:
         v = values
+        if not set(v) <= {r['name'] for r in db.execute('PRAGMA table_info(lead)')}: raise ValueError('Bilinmeyen kayıt alanı')
         if not v.get('relevance_reason') or v['status'] != 'pending': raise ValueError('Yeni ilgili uç ve gerekçe gerekli')
         duplicate = db.execute('SELECT id FROM lead WHERE party_id=? AND topic_id=? AND normalized_url=?', (v['party_id'],v['topic_id'],v['normalized_url'])).fetchone()
         if duplicate: return duplicate['id']
