@@ -39,6 +39,8 @@ class FinanceContract(unittest.TestCase):
                 arsiv.check_financial(self.db, dict(self.row, **changes))
         for changes in ({'amount':'2026'}, {'category':'bağış'}, {'amount':'2026','category':'bağış'}):
             with self.subTest(changes=changes), self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, **changes))
+        self.db.execute("UPDATE passage SET exact=exact || '; Bağış konusu incelenmedi.' WHERE id='finance-fixture'")
+        with self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, category='bağış'))
 
     def test_null_and_documented_zero_are_distinct(self):
         self.db.execute("INSERT INTO attempt (id,party_id,heading,topic_id,type,query,attempted_at,result,reason) VALUES ('finance-missing-attempt','yeni-parti','Finansman ve harcamalar','test','verification','test','2026-11-10T15:00:00+00:00','inconclusive','Test')")

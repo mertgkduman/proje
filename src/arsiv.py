@@ -600,9 +600,10 @@ def check_financial(db, v):
         try: amount = Decimal(v['amount'])
         except InvalidOperation: raise ValueError('Geçersiz tutar')
         if not db.execute("SELECT 1 FROM review WHERE kind='financial' AND subject_id=? AND result='reviewed' AND reviewer_kind IN ('agent','human') AND reviewed_at<>'' AND reason<>''", (v['id'],)).fetchone(): raise ValueError('Mali ifade için kaynak incelemesi gerekli')
-        if v['category'].casefold() not in source['exact'].casefold(): raise ValueError('Mali kategori kaynak pasajında gerekli')
         currency = r'(?:TL|TRY|lira)' if v['currency'] == 'TRY' else re.escape(v['currency'])
-        numbers = re.findall(r'(?<![\w.\-])(?<!\d[./-])(\d+(?:[.,]\d+)*)\s*' + currency + r'\b', source['exact'], re.I)
+        clauses = re.split(r'[;\n]|(?<=[.!?])\s+', source['exact'])
+        numbers = [n for clause in clauses if v['category'].casefold() in clause.casefold()
+                   for n in re.findall(r'(?<![\w.\-])(?<!\d[./-])(\d+(?:[.,]\d+)*)\s*' + currency + r'\b', clause, re.I)]
         def numeric(s):
             if ',' in s: s = s.replace('.', '').replace(',', '.')
             return Decimal(s)
