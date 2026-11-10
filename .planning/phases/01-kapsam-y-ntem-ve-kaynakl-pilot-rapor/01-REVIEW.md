@@ -1,6 +1,6 @@
 ---
 phase: 01-kapsam-y-ntem-ve-kaynakl-pilot-rapor
-reviewed: 2026-11-10T17:18:09Z
+reviewed: 2026-11-10T17:22:47Z
 depth: standard
 files_reviewed: 23
 files_reviewed_list:
@@ -28,48 +28,39 @@ files_reviewed_list:
   - tests/test_topics.py
   - tests/test_tracer.py
 findings:
-  critical: 2
+  critical: 0
   warning: 0
   info: 0
-  total: 2
-status: issues_found
+  total: 0
+status: clean
 ---
 
 # Phase 1: Code Re-review Report
 
-**Reviewed:** 2026-11-10T17:18:09Z  
+**Reviewed:** 2026-11-10T17:22:47Z  
 **Depth:** standard  
 **Files Reviewed:** 23  
-**Status:** issues_found
+**Status:** clean
 
 ## Summary
 
-Re-reviewed the original scope and the fixes through `0fd27e1`, including the new frozen renderer and release compatibility. The eight original reproductions are addressed in the changed code. Two affected-path correctness defects remain: an unchanged source capture wrongly reopens research, and Turkish-formatted amounts can be converted by a factor of 1,000. Both were reproduced using isolated copies. The current release has no financial rows; the monetary example concerns future input. Twenty-nine relevant tests passed independently. Human assessment of source meaning, the TİP identifier relationship, neutrality, and interface presentation remains outstanding and is not represented as approved.
+This is a targeted verification of the repairs through `5d159b8`, following the standard review of the original 23-file scope. Both later blockers now pass their exact isolated reproductions: an identical re-capture of `tip-charter-v1` leaves `organ-secimi` closed, and `1.000 TL` with `number_format=tr` accepts `1000` and rejects `1`. Eight relevant tests passed independently, including unchanged/changed captures, number formats, document ownership, staged publication and candidate resolution. The prior review separately ran 29 relevant tests. No remaining software findings were found in this focused repair verification. Human assessment of source meaning, the TİP identifier relationship, dates, neutrality and interface presentation remains outstanding and is not represented as approved.
 
 ## Narrative Findings (AI reviewer)
 
-### CR-01: Re-capturing unchanged bytes falsely reopens closed research
+No remaining findings in the focused repair verification.
 
-**Classification:** BLOCKER  
-**File:** `src/arsiv.py:325-331`  
-**Issue:** The CR-02 fix correctly preserves a separate version for each capture, but every version insertion matching a closed lead now unconditionally records a reopening reason of “new content version” and changes the topic to `in_progress`, without comparing hashes. In an isolated copy of the current release, inserting a second version of `tip-charter-v1` with the same URL and SHA-256 changed the `organ-secimi` topic from `closed` to `in_progress`. Routine re-capture of unchanged documents thus fabricates a content change and makes a completed research chain appear incomplete.
+## Later blocker resolution
 
-**Fix:** Retain the separate capture and document ownership, but compare the captured hash with the previous version associated with that lead before recording a content-change reopening. Reopen when the content actually changes, and keep a distinct rule for a genuinely new lead. Test identical and changed bytes at the same closed lead, including the stored reopening reason.
-
-### CR-02: Turkish thousands separators are read as decimal points
-
-**Classification:** BLOCKER  
-**File:** `src/arsiv.py:601-607`  
-**Issue:** `numeric()` removes dots only if a comma is also present. Therefore the conventional Turkish amount `1.000 TL` is parsed as `Decimal('1.000')` rather than 1,000 lira. Using the isolated finance fixture with a passage containing `gelir 1.000 TL`, `check_financial` accepted amount `1` and rejected `1000`. This can publish a sourced financial amount at one thousandth of its value. The existing date/category regressions do not exercise this numeric format.
-
-**Fix:** Parse the source's declared number format explicitly, treating Turkish grouping and decimal separators consistently, or require an unambiguous reviewed structured transcription when the notation is ambiguous. Verify both `1.000 TL` → `1000` and `1.000,50 TL` → `1000.50`, as well as decimal and grouping edge cases; retain human review for what the amount means.
+- **Unchanged capture:** `src/arsiv.py:329-342` now preserves each version while comparing the previous capture for the lead and party before reopening. The exact previous reproduction stayed closed; `tests/test_chain.py` also confirmed changed content reopens with the appropriate reason.
+- **Turkish numerical format:** `src/arsiv.py:612-622` requires an explicit source format and parses Turkish grouping and decimal separators separately from canonical notation. The exact previous reproduction now rejects `1` and accepts `1000`; `tests/test_finance.py` also covers grouped decimals, missing formats and malformed grouping. The choice of format and the financial source's substantive meaning remain matters for source review.
 
 ## Status of previous findings
 
 - **Original CR-01, identity:** Resolved for the reported wrong-party/key cases by registry host/path/key and document-party checks in `check_identity`, applied to new publication. The former TİP-specific exception was removed; its canonical key and historical parliamentary identifier are retained separately. Earlier immutable releases explicitly use legacy compatibility. These technical checks do not decide the substance of the cross-source identity assessment.
-- **Original CR-02, ownership:** Separate version rows retain document/party ownership even with shared bytes; the CLI returns the ID. The resulting changed-content regression is CR-01 above.
+- **Original CR-02, ownership:** Separate version rows retain document/party ownership even with shared bytes; the CLI returns the ID. The subsequent unchanged-capture regression is resolved above.
 - **Original CR-03, examined source:** Access attempts, closure, and phase validation bind the examined version to the lead's party and captured original/final URL, without treating legacy hash aliases as redirect evidence.
-- **Original CR-04, unrelated numbers:** The originally reported date and unrelated-category reproductions are rejected, and a review plus adjacent amount/currency expression is required. Numeric-format correctness remains open as CR-02 above; semantic review is separate.
+- **Original CR-04, unrelated numbers:** The originally reported date and unrelated-category reproductions are rejected, and a review plus adjacent amount/currency expression is required. The subsequently reported Turkish numeric-format reproduction is resolved above; semantic review is separate.
 - **Original CR-05, publication gate:** Phase-capable bases and snapshots containing a method undergo staged acceptance and HTML checks before `current` changes; the missing-review and removed-method tests pass.
 - **Original CR-06, candidate resolution:** The documented `resolve-candidate` CLI routes to the atomic transition, with a CLI-path regression for history and failure.
 - **Original WR-01, provenance display:** Match rendering now applies each finding's quote or summary style. Version 5 was frozen byte-for-byte from the former renderer and new releases use version 6.
@@ -81,16 +72,16 @@ These are implementation observations for the orchestrator's ASVS1 review, not a
 
 | Plan threat IDs | Relevant evidence and remaining limits |
 |---|---|
-| T-01-01, T-01-04, T-06-01, T-06-03 | `safe_url`/`safe_path` at `src/arsiv.py:93-105`, escaped readable bytes at `:108-110`, report escaping and URL checks at `src/rapor.py:6-12`, and loopback allowlisted serving at `src/arsiv.py:965-983`; negative URL/path tests are in `tests/test_publication.py` and `tests/test_report.py`. |
-| T-01-02, T-06-02 | Integrity, FK, object and derivative checks at `src/arsiv.py:701-737`; staged acceptance and pointer swap at `:867-907`; failure and acceptance tests in `tests/test_publication.py`. The HTML acceptance function at `:850-856` checks presence of IDs, not complete HTML/data semantic equivalence. |
+| T-01-01, T-01-04, T-06-01, T-06-03 | `safe_url`/`safe_path` at `src/arsiv.py:93-105`, escaped readable bytes at `:108-110`, report escaping and URL checks at `src/rapor.py:6-12`, and loopback allowlisted serving at `src/arsiv.py:978-996`; negative URL/path tests are in `tests/test_publication.py` and `tests/test_report.py`. |
+| T-01-02, T-06-02 | Integrity, FK, object and derivative checks at `src/arsiv.py:714-750`; staged acceptance and pointer swap at `:880-920`; failure and acceptance tests in `tests/test_publication.py`. The HTML acceptance function at `:863-869` checks presence of IDs, not complete HTML/data semantic equivalence. |
 | T-01-03 | Capture timeout and source-size cap at `src/arsiv.py:185-196`; review did not independently exercise all network failure modes. |
-| T-02-01, T-02-02, T-02-03 | Identity checks at `src/arsiv.py:113-130`, frozen cutoff and source hash at `:674-694`, and scope/date regressions in `tests/test_scope.py` and `tests/test_dates.py`. Strict identity is applied to new publications; old manifests retain documented legacy identity behavior. Human validation of registry semantics remains open. |
-| T-03-01, T-03-02, T-03-03 | Lead normalization, attempt and source binding at `src/arsiv.py:339-410`, closure at `:550-564`, missing-attempt checks at `:630-638`, and version/object checks at `:701-737`. CR-01 demonstrates an incorrect reopening claim after an unchanged capture. |
-| T-04-01, T-04-02, T-04-03 | Authority checks at `src/arsiv.py:415-426`, evidence checks at `:542-547`, exact-passage/hash checks and topic-basis validation at `:729-765`; wrong-party and topic tests cover selected negative cases. Manual source meaning is not established by these checks. |
-| T-05-01, T-05-02, T-05-03 | Actor and distinct occurrence evidence checks at `src/arsiv.py:440-477`, candidate-set checks at `:766-773`, financial checks at `:577-607`, and matching/finance tests. CR-02 leaves financial numerical attribution unsafe for Turkish grouping. |
+| T-02-01, T-02-02, T-02-03 | Identity checks at `src/arsiv.py:113-130`, frozen cutoff and source hash at `:687-707`, and scope/date regressions in `tests/test_scope.py` and `tests/test_dates.py`. Strict identity is applied to new publications; old manifests retain documented legacy identity behavior. Human validation of registry semantics remains open. |
+| T-03-01, T-03-02, T-03-03 | Lead normalization, attempt and source binding at `src/arsiv.py:347-418`, closure at `:558-572`, and missing-attempt checks at `:643-651`. The latest-capture comparison at `:329-342` and the chain test distinguish unchanged bytes from changed content. |
+| T-04-01, T-04-02, T-04-03 | Authority checks at `src/arsiv.py:423-434`, evidence checks at `:550-555`, exact-passage/hash checks and topic-basis validation at `:742-778`; wrong-party and topic tests cover selected negative cases. Manual source meaning is not established by these checks. |
+| T-05-01, T-05-02, T-05-03 | Actor and distinct occurrence evidence checks at `src/arsiv.py:448-485`, candidate-set checks at `:779-786`, financial checks and explicit number formats at `:585-622`, and matching/finance tests. Source format and material financial meaning still require review. |
 
 ---
 
-_Reviewed: 2026-11-10T17:18:09Z_  
+_Reviewed: 2026-11-10T17:22:47Z_  
 _Reviewer: the agent (gsd-code-reviewer)_  
 _Depth: standard_
