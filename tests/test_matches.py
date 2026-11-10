@@ -84,6 +84,18 @@ class MatchContract(unittest.TestCase):
         self.assertEqual(ids, exported)
         self.assertEqual({'m1','m2','m3'}, rendered)
 
+    def test_match_respects_each_findings_provenance(self):
+        self.db.execute("UPDATE finding SET provenance='quote' WHERE id='statement-test'")
+        self.db.commit(); self.db.close()
+        arsiv.record_match(self.work, self.match)
+        arsiv.record(self.work, 'match_candidate', dict(id='candidate-test-render',party_id='yeni-parti',topic_id='organ-secimi',passage_id='statement',status='eligible',match_id='m1',rationale='Test',reviewed_at='2026-11-10T15:00:00+00:00'))
+        self.db = arsiv.connect(self.work / 'records.sqlite3')
+        payload = arsiv.export_db(self.work / 'records.sqlite3', 'fixture')
+        page = render_report(payload)
+        article = page.split('id="match-m1"', 1)[1].split('</article>', 1)[0]
+        self.assertIn('<p class="quote">“Yöneticileri üyeler seçecek.”', article)
+        self.assertIn('<p class="summary">Üyeler il ön seçiminde oy kullandı.', article)
+
     def test_invalid_input_is_rejected(self):
         with self.assertRaises(ValueError): arsiv.record_match(self.work, {})
         with self.assertRaises(ValueError): arsiv.check_match(self.db, dict(self.match, eligibility='excluded', exclusion_reason=None))

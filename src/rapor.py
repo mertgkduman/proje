@@ -115,7 +115,14 @@ def render_report(data):
             occurrence_ref = '<a class="citation" href="#source-' + esc(action['occurrence_passage_id']) + '">[Oluş kaynağı]</a>'
             authority_ref = (' <a class="citation" href="#source-' + esc(actor['authorization_passage_id']) + '">[Yetki kaynağı]</a>') if actor['authorization_passage_id'] else ''
             prefix = 'match-' if m['eligibility'] == 'eligible' else 'candidate-'
-            pieces.append('<article id="' + prefix + esc(m['id']) + '" data-match-id="' + esc(m['id']) + '"><h3>' + esc(m['topic_id']) + '</h3><p class="summary">' + esc(findings[m['statement_finding_id']]['text']) + ' ' + statement_refs + '</p><p class="summary">' + esc(findings[m['action_finding_id']]['text']) + ' ' + occurrence_ref + '</p><p>Aktör: ' + esc(actor['kind']) + authority_ref + ' — olay: ' + esc(action['event_date']) + ' — ' + esc(action['context']) + '</p><p>Yorum: ' + esc(m['relation']) + ' — ' + esc(m['rationale']) + ' — ' + esc(m['eligibility']) + ' ' + esc(m['exclusion_reason']) + '</p></article>')
+            def match_text(finding_id):
+                finding = findings[finding_id]
+                cls = 'quote' if finding['provenance'] == 'quote' else 'summary'
+                value = esc(finding['text'])
+                return cls, ('“' + value + '”' if cls == 'quote' else value)
+            statement_class, statement_text = match_text(m['statement_finding_id'])
+            action_class, action_text = match_text(m['action_finding_id'])
+            pieces.append('<article id="' + prefix + esc(m['id']) + '" data-match-id="' + esc(m['id']) + '"><h3>' + esc(m['topic_id']) + '</h3><p class="' + statement_class + '">' + statement_text + ' ' + statement_refs + '</p><p class="' + action_class + '">' + action_text + ' ' + occurrence_ref + '</p><p>Aktör: ' + esc(actor['kind']) + authority_ref + ' — olay: ' + esc(action['event_date']) + ' — ' + esc(action['context']) + '</p><p>Yorum: ' + esc(m['relation']) + ' — ' + esc(m['rationale']) + ' — ' + esc(m['eligibility']) + ' ' + esc(m['exclusion_reason']) + '</p></article>')
         pieces.append('</section>')
     if 'match_candidate' in data:
         pieces.append('<section><h2>Eşleşme adayları</h2>')
