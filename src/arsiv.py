@@ -120,11 +120,7 @@ def check_identity(db, values):
     if url.scheme != 'https' or url.hostname not in ('yargitaycb.gov.tr','www.yargitaycb.gov.tr') or not match:
         raise ValueError('Kimlik için resmi sicil sayfası gerekli')
     registry_key = 'yargitay-' + match.group(1)
-    # Existing TİP key is a historical TBMM identifier; the crosswalk to
-    # Yargıtay 208 is an agent-assessed crosswalk for this one entity and
-    # remains subject to independent human source review.
-    legacy = (party['id'], party['registry_key'], registry_key) == ('tip','tbmm-f72877bd-6276-037b-e050-007f01005610','yargitay-208')
-    if party['registry_key'] != registry_key and not legacy: raise ValueError('Sicil anahtarı kaynak adresiyle uyuşmuyor')
+    if party['registry_key'] != registry_key: raise ValueError('Sicil anahtarı kaynak adresiyle uyuşmuyor')
     content = safe_path(DATA, source['original_path']).read_text(encoding='utf-8', errors='replace')
     if party['legal_name'].casefold() not in content.casefold(): raise ValueError('Parti adı sicil kaynağında yok')
     dates = []
@@ -803,9 +799,9 @@ def audit_release(release='current'):
     return release
 
 
-def validate_phase_one_workspace(work):
+def validate_phase_one_workspace(work, strict_identity=True):
     path = Path(work) / 'records.sqlite3'
-    data = export_db(path, 'workspace', strict_identity=True)
+    data = export_db(path, 'workspace', strict_identity=strict_identity)
     db = connect_readonly(path)
     try:
         for attempt in db.execute("SELECT * FROM attempt WHERE lead_id IS NOT NULL AND type='access' AND result='examined'"):
@@ -845,7 +841,8 @@ def validate_phase_one_workspace(work):
 def validate_phase_one(release='current'):
     release = audit_release(release)
     folder = DATA / 'releases' / release
-    data = validate_phase_one_workspace(folder)
+    manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+    data = validate_phase_one_workspace(folder, strict_identity=manifest.get('identity_validation_version', 0) >= 1)
     validate_phase_one_html(data, (folder / 'index.html').read_text(encoding='utf-8'))
     return release
 
@@ -897,7 +894,7 @@ def publish_release(work, fail_at=None):
         if base_phase or payload.get('method'):
             phase_data = validate_phase_one_workspace(staging)
             validate_phase_one_html(phase_data, (staging / 'index.html').read_text(encoding='utf-8'))
-        manifest = {'release_id': release, 'renderer_version': 6, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
+        manifest = {'release_id': release, 'renderer_version': 6, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
         (DATA / 'releases').mkdir(exist_ok=True)

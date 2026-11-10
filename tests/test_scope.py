@@ -32,6 +32,22 @@ class ScopeContract(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     arsiv.record_identity(work, 'identity_observation', dict(entity_id='yeni-parti', entity_kind='party', registry_key='old-same-name', valid_from=None, valid_to=None, passage_id='kurulus'))
                 db = arsiv.connect(work / 'records.sqlite3')
+                db.execute("UPDATE party SET registry_key='yargitay-999' WHERE id='tip'")
+                db.execute("UPDATE identity_observation SET registry_key='yargitay-999' WHERE entity_id='tip'")
+                db.commit(); db.close()
+                with self.assertRaisesRegex(ValueError, 'Sicil anahtarı'):
+                    arsiv.export_db(work / 'records.sqlite3', 'test', strict_identity=True)
+                db = arsiv.connect(work / 'records.sqlite3')
+                db.execute("UPDATE party SET registry_key='yargitay-208' WHERE id='tip'")
+                db.execute("UPDATE identity_observation SET registry_key='yargitay-208' WHERE entity_id='tip'")
+                db.execute("UPDATE document_version SET final_url='https://www.yargitaycb.gov.tr/sipar/365' WHERE id='tip-registry-v1'")
+                db.commit(); db.close()
+                with self.assertRaisesRegex(ValueError, 'Sicil anahtarı'):
+                    arsiv.export_db(work / 'records.sqlite3', 'test', strict_identity=True)
+                db = arsiv.connect(work / 'records.sqlite3')
+                db.execute("UPDATE document_version SET final_url='https://www.yargitaycb.gov.tr/sipar/208' WHERE id='tip-registry-v1'")
+                db.commit(); db.close()
+                db = arsiv.connect(work / 'records.sqlite3')
                 db.execute("UPDATE identity_observation SET valid_from='2000-01-01' WHERE entity_id='yeni-parti'")
                 db.commit(); db.close()
                 with self.assertRaises(ValueError): arsiv.export_db(work / 'records.sqlite3', 'test', strict_identity=True)
@@ -43,3 +59,11 @@ class ScopeContract(unittest.TestCase):
                 arsiv.publish_release(work)
             finally:
                 arsiv.DATA = previous
+
+    def test_canonical_identity_and_parliamentary_identifier_history(self):
+        data = json.loads((arsiv.DATA / 'releases' / arsiv.current() / 'records.json').read_text())
+        self.assertEqual(next(p['registry_key'] for p in data['party'] if p['id'] == 'tip'), 'yargitay-208')
+        self.assertEqual(next(i['registry_key'] for i in data['identity_observation'] if i['entity_id'] == 'tip'), 'yargitay-208')
+        passage = next(p for p in data['passage'] if p['id'] == 'tip-tbmm-identifier')
+        self.assertIn('f72877bd-6276-037b-e050-007f01005610', passage['exact'])
+        self.assertTrue(any(r['id'] == 'tip-identifier-migration' and 'tip-tbmm-identifier' in r['reason'] for r in data['review']))
