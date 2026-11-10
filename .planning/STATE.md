@@ -5,10 +5,10 @@ current_phase: 2
 current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
 status: planning
 stopped_at: Phase 2 context gathered
-last_updated: "2026-11-10T23:13:28.418Z"
+last_updated: "2026-11-10T23:21:34.907Z"
 last_activity: 2026-11-10
-last_activity_desc: Phase 1 complete, transitioned to Phase 2
-state_head: 93c285964249ccbf52da83191be411f974d79e26
+last_activity_desc: GitHub aktarımı ve pilot HTML raporunun yayımlanması
+state_head: 46f488204f7e477d9c966b19612597989042fc1e
 progress:
   total_phases: 6
   completed_phases: 1
@@ -30,7 +30,7 @@ See: .planning/PROJECT.md (updated 2026-11-10)
 Phase: 2 — Bütün partiler için dosyalar ve sürümlü kaynaklar
 Plan: Not started
 Status: Ready to plan
-Last activity: 2026-11-10 — Phase 1 complete, transitioned to Phase 2
+Last activity: 2026-11-10 — GitHub aktarımı ve pilot HTML raporunun yayımlanması
 
 Progress: [██░░░░░░░░] 17%
 
@@ -93,6 +93,12 @@ None yet.
 - [Phase 1 → Phase 2] Pilotun tüzük/program otoritesi ve doğrulanmış mali tutarlar bakımından kaynak sınırları devam ediyor; bu durumlar raporda girişimleriyle kayıtlıdır.
 - [Phase 1 → Phase 2] COVERAGE.md içindeki 13 unclassified/unresolved ham uç satırı değiştirilmedi. Kullanıcı bu yöntem sınırlarıyla fazı kabul etti; bunlar yeni kaynak kanıtı veya otomatik sınıflandırma sonucu değildir.
 - [Phase 2] Parti tüzel kimliği, bireysel milletvekili üyeliği ve ortak grup ayrımı kapsam genişlerken korunacak; model/maliyet tercihleri değişmedi.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 261110-pds | GitHub aktarımı ve pilot HTML raporunun yayımlanması | 2026-11-10 | 46f4882 | [261110-pds-repoyu-github-a-kopyala-ve-pilot-html-ra](./quick/261110-pds-repoyu-github-a-kopyala-ve-pilot-html-ra/) |
 
 ### Roadmap Evolution
 
