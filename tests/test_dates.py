@@ -25,6 +25,13 @@ class DateContract(unittest.TestCase):
                 self.assertEqual(arsiv.validate_dates('2026-11-10', 'day', '2026-07-24', cutoff), 'uncertain')
                 self.assertEqual(arsiv.validate_dates('2026-08-01', 'day', '2026-07-24', cutoff), 'inside')
                 self.assertEqual(arsiv.validate_dates('2026-11-11', 'day', '2026-07-24', cutoff), 'outside')
+                self.assertEqual(arsiv.validate_dates(cutoff, 'instant', '2026-07-24', cutoff), 'inside')
+                self.assertEqual(arsiv.validate_dates(None, 'unknown', '2026-07-24', cutoff, 'Tarih belirtilmemiş'), 'uncertain')
+                with self.assertRaises(ValueError):
+                    arsiv.validate_dates(None, 'unknown', '2026-07-24', cutoff)
+                arsiv.record(work, 'event_date', dict(id='past', party_id='yeni-parti', passage_id='kurulus', event_at='2026-07-24', date_precision='day', date_unknown_reason=None, scope_status='inside'))
+                with self.assertRaises(ValueError):
+                    arsiv.record(work, 'event_date', dict(id='future', party_id='yeni-parti', passage_id='kurulus', event_at='2026-11-11', date_precision='day', date_unknown_reason=None, scope_status='inside'))
                 arsiv.publish_release(work)
             finally:
                 arsiv.DATA = old

@@ -17,7 +17,7 @@ def probe(report):
     executable = browser()
     if not executable: raise RuntimeError('Headless Chrome bulunamadı')
     content = Path(report).read_text(encoding='utf-8')
-    marker = '<script>document.querySelector(".citation").click();const d=document.querySelector("details");document.body.dataset.probe=(d.open && d.textContent.includes("24.07.2026") && !!d.querySelector("a[href^=https]") && !!d.querySelector("a[href*=readable]")) ? "PASS" : "FAIL";</script>'
+    marker = '<script>document.querySelector("a[href$=kurulus]").click();const d=document.getElementById("source-kurulus");document.body.dataset.probe=(d.open && d.textContent.includes("24.07.2026") && !!d.querySelector("a[href^=https]") && !!d.querySelector("a[href*=readable]")) ? "PASS" : "FAIL";</script>'
     with tempfile.TemporaryDirectory() as directory:
         copy = Path(directory) / 'probe.html'
         copy.write_text(content.replace('</html>', marker + '</html>'), encoding='utf-8')

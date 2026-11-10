@@ -36,7 +36,9 @@ def render_report(data):
         if 'aa-2023-passage' in passages:
             pieces.append('<p>TBMM sayfasının kendi güncelleme tarihi bilinmiyor. 2023 seçimindeki resmî ittifak ortaklığı ile ortak listeden aday gösterilmesi ayrı ilişkilerdir. Bu tarihsel kaynak güncel üyeliği göstermez. <a class="citation" href="#source-aa-2023-passage">[Kaynak]</a></p>')
         for m in data.get('method', []):
-            pieces.append('<p>Kesim: ' + esc(m['cutoff_at']) + ' — ' + esc(m['cutoff_reason']) + '</p><p>' + esc(m['period_rule']) + ' ' + esc(m['pilot_reason']) + '</p>')
+            cited = next((p['id'] for p in data['passage'] if p['version_id'] == m['cutoff_capture_version_id']), None)
+            if not cited: raise ValueError('Kesim pasajı bulunamadı')
+            pieces.append('<p>Kesim: ' + esc(m['cutoff_at']) + ' — ' + esc(m['cutoff_reason']) + ' <a class="citation" href="#source-' + esc(cited) + '">[Kaynak]</a></p><p>' + esc(m['period_rule']) + ' ' + esc(m['pilot_reason']) + '</p><p>Belge tarihi, olay tarihi, hesap dönemi, erişim ve doğrulama anı ayrı kayıtlardır. Kesim günü yalnız gün biliniyorsa olayın kapsamı belirsizdir. Daha sonra edinilen belge, kesim içindeki geçmiş bir olayı destekleyebilir.</p>')
         pieces.append('</section>')
     for f in data['finding']:
         evidence = [e for e in data['finding_evidence'] if e['finding_id'] == f['id']]
@@ -52,7 +54,7 @@ def render_report(data):
         pieces.append('<details id="source-' + esc(p['id']) + '"><summary>' + esc(d['title']) + '</summary>'
                       '<p>Pasaj: ' + esc(p['exact']) + '</p><p>Belge tarihi: ' + esc(v['document_date'] or 'Belirtilmemiş') +
                       ' | Sürüm: ' + esc(v['version_label'] or 'Belirtilmemiş') + ' | Erişim: ' + esc(v['accessed_at']) +
-                      ' | Doğrulama: ' + esc(v['verified_at']) + '</p><p><a href="' + esc(v['original_url']) + '">Özgün kaynak</a> '
+                      ' | Doğrulama: ' + esc(v['verified_at']) + ((' | Tarih kesinliği: ' + esc(v.get('date_precision')) + ' | Gerekçe: ' + esc(v.get('date_unknown_reason'))) if data.get('schema_version') == 3 else '') + '</p><p><a href="' + esc(v['original_url']) + '">Özgün kaynak</a> '
                       '<a href="../../' + esc(v['readable_path']) + '">Yerel arşiv</a> '
                       '<a download href="../../' + esc(v['original_path']) + '">Ham belgeyi indir</a></p></details>')
     pieces.append('<script>document.querySelectorAll(".citation").forEach(a=>a.addEventListener("click",()=>{const d=document.getElementById(a.hash.slice(1));if(d)d.open=true}));</script></html>')
