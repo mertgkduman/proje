@@ -13,7 +13,7 @@ JSON ve HTML yalnız snapshot'tan türetilir; elle düzenlenmez. `python3 tests/
 
 Yeni kanıtla açık eşleşme adayını çözmek için `python3 src/arsiv.py resolve-candidate --workspace DIZIN --candidate ADAY --match ESLESME --input -` komutuna `missing_id`, `resolved_at`, `passage_id` ve `reason` içeren JSON verin. Geçiş ve çözüm kaydı atomiktir; önceki eksik kaydı korunur.
 
-Bilinen mali tutar için pasajda kategori, örgüt kapsamı ve tutara bitişik para birimi bulunmalı; `financial` kimliğine bağlı gerekçeli `review` kaydı önce yazılmalıdır. Bu biçimsel kontroller kaynak yorumunun maddi doğruluğunu garanti etmez; insan incelemesi gereklidir.
+Bilinen mali tutar için pasajda kategori, örgüt kapsamı ve tutara bitişik para birimi bulunmalı; `financial` kimliğine bağlı gerekçeli `review` kaydı önce yazılmalıdır. `amount` kanonik ondalık metindir (ör. `1234.56`); kaynakta kullanılan sayı biçimi `number_format: "tr"` (ör. `1.234,56`) veya `number_format: "canonical"` (ör. `1234.56`) olarak açıkça kaydedilir. Örneğin `1.000` bu iki biçimde sırasıyla bin ve birdir; biçim kaynaktan belirlenemiyorsa tutar bilinmiyor olarak kaydedilmelidir. Bu biçimsel kontroller kaynak yorumunun maddi doğruluğunu garanti etmez; insan incelemesi gereklidir.
 
 Taşıma ve kurtarma için `data/current.json`, `data/releases/` ve `data/objects/` dizinlerini birlikte koruyun. Yeni çalışma alanı geçerli kapalı SQLite snapshot'ından açılır; uygulama dosyaları ve sürümlü rapor üreticileri de korunmalıdır. Önce audit çalıştırın. Bağlantılı özgün HTML dosyaları indirme, kaçışlanmış okunabilir kopyalar görüntüleme içindir.
 

@@ -81,7 +81,7 @@ TABLES.update({
     'match_candidate': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), topic_id TEXT NOT NULL, lead_id TEXT REFERENCES lead(id), passage_id TEXT REFERENCES passage(id), status TEXT NOT NULL, match_id TEXT REFERENCES match(id), missing_id TEXT REFERENCES missing(id), rationale TEXT NOT NULL, reviewed_at TEXT NOT NULL',
     'missing_resolution': 'missing_id TEXT PRIMARY KEY REFERENCES missing(id), resolved_at TEXT NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), reason TEXT NOT NULL'
 })
-TABLES['financial'] = 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT NOT NULL REFERENCES document_version(id), category TEXT NOT NULL, amount TEXT, currency TEXT NOT NULL, period_start TEXT NOT NULL, period_end TEXT NOT NULL, organization_scope TEXT NOT NULL, published_at TEXT NOT NULL, passage_id TEXT REFERENCES passage(id), missing_id TEXT REFERENCES missing(id)'
+TABLES['financial'] = 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT NOT NULL REFERENCES document_version(id), category TEXT NOT NULL, amount TEXT, currency TEXT NOT NULL, period_start TEXT NOT NULL, period_end TEXT NOT NULL, organization_scope TEXT NOT NULL, published_at TEXT NOT NULL, passage_id TEXT REFERENCES passage(id), missing_id TEXT REFERENCES missing(id), number_format TEXT'
 TABLES['review'] = 'id TEXT PRIMARY KEY, kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL'
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
@@ -261,6 +261,8 @@ def open_workspace(scratch=None):
                 db.execute(f'ALTER TABLE document_version ADD COLUMN {column} TEXT')
         if 'date_precision' not in columns:
             db.execute("UPDATE document_version SET date_precision=CASE WHEN document_date IS NULL THEN 'unknown' ELSE 'day' END, date_unknown_reason=CASE WHEN document_date IS NULL THEN 'Belge tarihi kaynakta belirtilmemiş veya doğrulanmamış.' ELSE NULL END")
+        if 'number_format' not in {r['name'] for r in db.execute('PRAGMA table_info(financial)')}:
+            db.execute('ALTER TABLE financial ADD COLUMN number_format TEXT')
         db.commit()
         db.close()
         (work / 'workspace.json').write_text(json.dumps({'base': base, 'token': token}), encoding='utf-8')
@@ -607,10 +609,15 @@ def check_financial(db, v):
         clauses = re.split(r'[;\n]|(?<=[.!?])\s+', source['exact'])
         numbers = [n for clause in clauses if v['category'].casefold() in clause.casefold()
                    for n in re.findall(r'(?<![\w.\-])(?<!\d[./-])(\d+(?:[.,]\d+)*)\s*' + currency + r'\b', clause, re.I)]
+        fmt = v.get('number_format')
+        if fmt not in ('tr', 'canonical'): raise ValueError('Kaynak sayı biçimi tr veya canonical olarak belirtilmeli')
         def numeric(s):
-            if ',' in s: s = s.replace('.', '').replace(',', '.')
+            if fmt == 'tr':
+                if not re.fullmatch(r'(?:\d+|[1-9]\d{0,2}(?:\.\d{3})+)(?:,\d+)?', s): return None
+                return Decimal(s.replace('.', '').replace(',', '.'))
+            if not re.fullmatch(r'\d+(?:\.\d+)?', s): return None
             return Decimal(s)
-        if not any(numeric(n) == amount for n in numbers): raise ValueError('Tutar ve para birimi kaynakta birlikte bulunmalı')
+        if not any(numeric(n) == amount for n in numbers): raise ValueError('Tutar ve para birimi belirtilen sayı biçiminde kaynakta birlikte bulunmalı')
 
 
 def record_financial(work, values):

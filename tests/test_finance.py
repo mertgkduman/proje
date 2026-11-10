@@ -25,7 +25,7 @@ class FinanceContract(unittest.TestCase):
         self.db.execute("INSERT INTO accounting_period VALUES ('fixture-period','yeni-parti','finance-fixture','2026-08-01','2026-10-23','day',NULL)")
         self.db.execute("INSERT INTO review VALUES ('finance-review','financial','f1','agent','2026-11-10T15:00:00+00:00','reviewed','Tutar, para birimi ve kategori kaynakta incelendi.')")
         self.db.commit()
-        self.row = dict(id='f1',party_id='yeni-parti',version_id='finance-fixture',category='gelir',amount='0',currency='TRY',period_start='2026-08-01',period_end='2026-10-23',organization_scope='Kocaeli il örgütü',published_at='2026-10-24',passage_id='finance-fixture',missing_id=None)
+        self.row = dict(id='f1',party_id='yeni-parti',version_id='finance-fixture',category='gelir',amount='0',currency='TRY',period_start='2026-08-01',period_end='2026-10-23',organization_scope='Kocaeli il örgütü',published_at='2026-10-24',passage_id='finance-fixture',missing_id=None,number_format='tr')
 
     def tearDown(self):
         self.db.close()
@@ -56,6 +56,17 @@ class FinanceContract(unittest.TestCase):
         self.assertIn('0 TRY', render_report(payload))
         self.assertIn('Bilinmiyor TRY', render_report(payload))
         with self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, id='f2', amount=None))
+
+    def test_explicit_number_format_controls_source_transcription(self):
+        for source, fmt, accepted, rejected in [('1.000','tr','1000','1'), ('1.234,56','tr','1234.56','1.23456'), ('1.000,50','tr','1000.50','1.00050'), ('1.000','canonical','1','1000'), ('12.50','canonical','12.50','1250'), ('1,25','tr','1.25','125')]:
+            with self.subTest(source=source, fmt=fmt):
+                self.db.execute('UPDATE passage SET exact=? WHERE id=?', ('Kocaeli il örgütü gelir ' + source + ' TL', 'finance-fixture'))
+                arsiv.check_financial(self.db, dict(self.row, amount=accepted, number_format=fmt))
+                with self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, amount=rejected, number_format=fmt))
+                with self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, amount=accepted, number_format=None))
+        for malformed in ('1.23', '1.234.56', '1,234.56'):
+            self.db.execute('UPDATE passage SET exact=? WHERE id=?', ('Kocaeli il örgütü gelir ' + malformed + ' TL', 'finance-fixture'))
+            with self.subTest(malformed=malformed), self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, amount='123', number_format='tr'))
 
     def test_current_pilot_has_researched_finance(self):
         release = arsiv.current()
