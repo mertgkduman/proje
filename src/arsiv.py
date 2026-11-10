@@ -390,9 +390,8 @@ def check_examined_lead(db, lead, version_id):
     if not version or version['party_id'] != lead['party_id']:
         raise ValueError('İncelenen kaynak uç partisine ait değil')
     urls = {normalize_url(version['original_url']), normalize_url(version['final_url'])}
-    # Aliases are created only by the capture writer, never by arbitrary records.
-    for alias in db.execute('SELECT original_url,final_url FROM url_alias WHERE version_id=?', (version_id,)):
-        urls.update(normalize_url(u) for u in alias)
+    # Historical aliases may have been created by hash deduplication rather
+    # than a redirect; only the capture's own endpoints establish access.
     if normalize_url(lead['url']) not in urls:
         raise ValueError('İncelenen kaynak adresi uçla uyuşmuyor')
 
