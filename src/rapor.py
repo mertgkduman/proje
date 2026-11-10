@@ -39,6 +39,21 @@ def render_report(data):
             cited = next((p['id'] for p in data['passage'] if p['version_id'] == m['cutoff_capture_version_id']), None)
             if not cited: raise ValueError('Kesim pasajı bulunamadı')
             pieces.append('<p>Kesim: ' + esc(m['cutoff_at']) + ' — ' + esc(m['cutoff_reason']) + ' <a class="citation" href="#source-' + esc(cited) + '">[Kaynak]</a></p><p>' + esc(m['period_rule']) + ' ' + esc(m['pilot_reason']) + '</p><p>Belge tarihi, olay tarihi, hesap dönemi, erişim ve doğrulama anı ayrı kayıtlardır. Kesim günü yalnız gün biliniyorsa olayın kapsamı belirsizdir. Daha sonra edinilen belge, kesim içindeki geçmiş bir olayı destekleyebilir.</p>')
+        if data.get('lead') or data.get('attempt'):
+            pieces.append('<h3>Tarama zinciri</h3><ul>')
+            for a in data.get('attempt', []):
+                linked = next((p['id'] for p in data['passage'] if p['version_id'] == a['source_version_id']), None)
+                ref = ' <a class="citation" href="#source-' + esc(linked) + '">[Kaynak]</a>' if linked else ''
+                pieces.append('<li id="attempt-' + esc(a['id']) + '">' + esc(a['topic_id']) + ' — ' + esc(a['query']) + ' — ' + esc(a['attempted_at']) + ': ' + esc(a['result']) + ' — ' + esc(a['reason']) + ref + '</li>')
+            for lead in data.get('lead', []):
+                pieces.append('<li>' + esc(lead['topic_id']) + ': <a href="' + esc(lead['url']) + '">' + esc(lead['url']) + '</a> — ' + esc(lead['status']) + ' — ' + esc(lead['relevance_reason']) + '</li>')
+            for edge in data.get('edge', []):
+                pieces.append('<li>İlişki: ' + esc(edge['relation']) + ' — ' + esc(edge['relevance_reason']) + '</li>')
+            for closure in data.get('closure', []):
+                pieces.append('<li>Kapanma: ' + esc(closure['closed_at']) + ' — ' + esc(closure['reason']) + ' — ' + esc(closure['residual_leads']) + '</li>')
+            for reopen in data.get('reopen', []):
+                pieces.append('<li>Yeniden açılma: ' + esc(reopen['opened_at']) + ' — ' + esc(reopen['reason']) + '</li>')
+            pieces.append('</ul>')
         pieces.append('</section>')
     for f in data['finding']:
         evidence = [e for e in data['finding_evidence'] if e['finding_id'] == f['id']]
@@ -47,12 +62,19 @@ def render_report(data):
         value = '“' + esc(f['text']) + '”' if cls == 'quote' else esc(f['text'])
         links = ' '.join('<a class="citation" href="#source-' + esc(e['passage_id']) + '">[Kaynak]</a>' for e in evidence)
         pieces.append('<p class="' + cls + '">' + value + ' ' + links + '</p>')
+    if data.get('missing'):
+        attempts = {a['id']: a for a in data['attempt']}
+        pieces.append('<h2>Eksik bilgiler</h2><ul>')
+        for m in data['missing']:
+            a = attempts[m['attempt_id']]
+            pieces.append('<li>' + esc(m['party_id']) + ' / ' + esc(m['heading']) + ' / ' + esc(m['topic_id']) + ': ' + esc(m['status']) + ' — ' + esc(m['reason']) + ' (' + esc(a['attempted_at']) + ') <a href="#attempt-' + esc(a['id']) + '">Girişim</a></li>')
+        pieces.append('</ul>')
     pieces.append('<h2>Kaynaklar</h2>')
     for p in data['passage']:
         v = versions[p['version_id']]; d = documents[v['document_id']]
         if urlsplit(v['original_url']).scheme not in ('http', 'https'): raise ValueError('Geçersiz URL')
         pieces.append('<details id="source-' + esc(p['id']) + '"><summary>' + esc(d['title']) + '</summary>'
-                      '<p>Pasaj: ' + esc(p['exact']) + '</p><p>Belge tarihi: ' + esc(v['document_date'] or 'Belirtilmemiş') +
+                      '<p>Pasaj: ' + esc(p['exact']) + ((' | PDF sayfası: ' + esc(p['pdf_page_index'] + 1) + ' | Basılı sayfa: ' + esc(p['printed_page'])) if p['pdf_page_index'] is not None else '') + '</p><p>Belge tarihi: ' + esc(v['document_date'] or 'Belirtilmemiş') +
                       ' | Sürüm: ' + esc(v['version_label'] or 'Belirtilmemiş') + ' | Erişim: ' + esc(v['accessed_at']) +
                       ' | Doğrulama: ' + esc(v['verified_at']) + ((' | Tarih kesinliği: ' + esc(v.get('date_precision')) + ' | Gerekçe: ' + esc(v.get('date_unknown_reason'))) if data.get('schema_version') == 3 else '') + '</p><p><a href="' + esc(v['original_url']) + '">Özgün kaynak</a> '
                       '<a href="../../' + esc(v['readable_path']) + '">Yerel arşiv</a> '

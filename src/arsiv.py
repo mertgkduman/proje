@@ -13,6 +13,8 @@ import tempfile
 import urllib.parse
 import urllib.request
 import uuid
+import ctypes
+import ctypes.util
 
 from rapor import render_report
 
@@ -42,6 +44,16 @@ TABLES.update({
     'event_date': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), passage_id TEXT NOT NULL REFERENCES passage(id), event_at TEXT, date_precision TEXT NOT NULL, date_unknown_reason TEXT, scope_status TEXT NOT NULL',
     'accounting_period': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), passage_id TEXT NOT NULL REFERENCES passage(id), period_start TEXT, period_end TEXT, date_precision TEXT NOT NULL, date_unknown_reason TEXT'
 })
+TABLES.update({
+    'lead': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, topic_id TEXT NOT NULL, url TEXT NOT NULL, normalized_url TEXT NOT NULL, relevance_reason TEXT NOT NULL, status TEXT NOT NULL',
+    'edge': 'from_version_id TEXT NOT NULL REFERENCES document_version(id), to_lead_id TEXT NOT NULL REFERENCES lead(id), relation TEXT NOT NULL, relevance_reason TEXT NOT NULL, PRIMARY KEY(from_version_id,to_lead_id,relation)',
+    'url_alias': 'original_url TEXT NOT NULL, final_url TEXT NOT NULL, version_id TEXT NOT NULL REFERENCES document_version(id), PRIMARY KEY(original_url,final_url,version_id)',
+    'attempt': 'id TEXT PRIMARY KEY, lead_id TEXT REFERENCES lead(id), party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, topic_id TEXT NOT NULL, type TEXT NOT NULL, query TEXT NOT NULL, attempted_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, source_version_id TEXT REFERENCES document_version(id)',
+    'topic_search': 'topic_id TEXT PRIMARY KEY, method_version INTEGER NOT NULL, state TEXT NOT NULL',
+    'closure': 'id TEXT PRIMARY KEY, topic_id TEXT NOT NULL REFERENCES topic_search(topic_id), closed_at TEXT NOT NULL, reason TEXT NOT NULL, residual_leads TEXT NOT NULL',
+    'reopen': 'closure_id TEXT NOT NULL REFERENCES closure(id), lead_id TEXT NOT NULL REFERENCES lead(id), opened_at TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(closure_id,lead_id)',
+    'missing': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, topic_id TEXT NOT NULL, status TEXT NOT NULL, attempt_id TEXT NOT NULL REFERENCES attempt(id), reason TEXT NOT NULL'
+})
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -67,6 +79,36 @@ def safe_path(base, relative):
 def readable_bytes(content, kind):
     decoded = content.decode('utf-8', errors='replace') if kind == 'html' else 'PDF dosyasını özgün kopyadan açın.'
     return ('<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>' + html.escape(decoded) + '</pre>').encode('utf-8')
+
+
+def pdf_page_text(path, index):
+    name = ctypes.util.find_library('poppler-glib')
+    if not name: raise ValueError('PDF pasaj doğrulaması için Poppler gerekli')
+    pop = ctypes.CDLL(name)
+    obj = ctypes.CDLL(ctypes.util.find_library('gobject-2.0'))
+    glib = ctypes.CDLL(ctypes.util.find_library('glib-2.0'))
+    pop.poppler_document_new_from_file.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_void_p]
+    pop.poppler_document_new_from_file.restype = ctypes.c_void_p
+    pop.poppler_document_get_page.argtypes = [ctypes.c_void_p, ctypes.c_int]
+    pop.poppler_document_get_page.restype = ctypes.c_void_p
+    pop.poppler_page_get_text.argtypes = [ctypes.c_void_p]
+    pop.poppler_page_get_text.restype = ctypes.c_void_p
+    obj.g_object_unref.argtypes = [ctypes.c_void_p]
+    glib.g_free.argtypes = [ctypes.c_void_p]
+    document = pop.poppler_document_new_from_file(Path(path).resolve().as_uri().encode(), None, None)
+    if not document: raise ValueError('PDF açılamadı')
+    page = None
+    text_ptr = None
+    try:
+        page = pop.poppler_document_get_page(document, index)
+        if not page: raise ValueError('PDF sayfası bulunamadı')
+        text_ptr = pop.poppler_page_get_text(page)
+        if not text_ptr: raise ValueError('PDF sayfasında metin bulunamadı')
+        return ctypes.string_at(text_ptr).decode('utf-8')
+    finally:
+        if text_ptr: glib.g_free(text_ptr)
+        if page: obj.g_object_unref(page)
+        obj.g_object_unref(document)
 
 
 def capture_source(url, kind, out=None):
@@ -154,6 +196,8 @@ def record(work, kind, values):
     if kind not in TABLES or not isinstance(values, dict) or not values:
         raise ValueError('Geçersiz kayıt türü veya yükü')
     assert_lock(work)
+    if kind in ('lead', 'attempt', 'closure', 'reopen', 'missing'):
+        return {'lead': enqueue_lead, 'attempt': record_attempt, 'closure': close_topic, 'reopen': reopen_topic, 'missing': record_missing}[kind](work, values)
     db = connect(Path(work) / 'records.sqlite3')
     try:
         allowed = {row['name'] for row in db.execute(f'PRAGMA table_info({kind})')}
@@ -161,8 +205,15 @@ def record(work, kind, values):
             raise ValueError('Bilinmeyen kayıt alanı')
         if kind == 'document_version':
             safe_url(values['original_url']); safe_url(values['final_url'])
-            if values.get('document_date') is None and not values.get('date_unknown_reason'):
+            if values.get('document_date') is None and (values.get('date_precision') != 'unknown' or not values.get('date_unknown_reason')):
                 raise ValueError('Bilinmeyen belge tarihi için gerekçe gerekli')
+            duplicate = db.execute('SELECT id FROM document_version WHERE sha256=?', (values['sha256'],)).fetchone()
+            if duplicate:
+                db.execute('INSERT OR IGNORE INTO url_alias VALUES (?,?,?)', (values['original_url'],values['final_url'],duplicate['id']))
+                db.commit()
+                return duplicate['id']
+        if kind == 'edge':
+            if values.get('relation') not in ('reference','contradiction','new_version') or not values.get('relevance_reason'): raise ValueError('İlgili kenar ve gerekçe gerekli')
         if kind == 'identity_observation':
             party = db.execute('SELECT registry_key FROM party WHERE id=?', (values['entity_id'],)).fetchone()
             if not party or party['registry_key'] != values['registry_key']:
@@ -189,9 +240,101 @@ def record(work, kind, values):
                     raise ValueError('Geçersiz hesap dönemi')
         keys = list(values)
         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
+        if kind == 'document_version':
+            db.execute('INSERT OR IGNORE INTO url_alias VALUES (?,?,?)', (values['original_url'], values['final_url'], values['id']))
         db.commit()
     finally:
         db.close()
+
+
+def normalize_url(url):
+    p = urllib.parse.urlsplit(safe_url(url))
+    query = urllib.parse.parse_qsl(p.query, keep_blank_values=True)
+    query = [(k, v) for k, v in query if not k.lower().startswith('utm_') and k.lower() not in ('fbclid', 'gclid')]
+    return urllib.parse.urlunsplit((p.scheme.lower(), p.netloc.lower(), p.path or '/', urllib.parse.urlencode(query, doseq=True), ''))
+
+
+def insert_checked(work, table, values, validate):
+    assert_lock(work)
+    db = connect(Path(work) / 'records.sqlite3')
+    try:
+        validate(db, values)
+        keys = list(values)
+        db.execute(f"INSERT INTO {table} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
+        db.commit()
+    finally:
+        db.close()
+
+
+def enqueue_lead(work, values):
+    values = dict(values)
+    values['normalized_url'] = normalize_url(values['url'])
+    values.setdefault('status', 'pending')
+    assert_lock(work)
+    db = connect(Path(work) / 'records.sqlite3')
+    try:
+        v = values
+        if not v.get('relevance_reason') or v['status'] != 'pending': raise ValueError('Yeni ilgili uç ve gerekçe gerekli')
+        duplicate = db.execute('SELECT id FROM lead WHERE party_id=? AND topic_id=? AND normalized_url=?', (v['party_id'],v['topic_id'],v['normalized_url'])).fetchone()
+        if duplicate: return duplicate['id']
+        db.execute("INSERT OR IGNORE INTO topic_search VALUES (?,1,'in_progress')", (v['topic_id'],))
+        closed = db.execute('SELECT state FROM topic_search WHERE topic_id=?', (v['topic_id'],)).fetchone()[0] == 'closed'
+        keys = list(v)
+        db.execute(f"INSERT INTO lead ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [v[k] for k in keys])
+        if closed:
+            closure = db.execute('SELECT id FROM closure WHERE topic_id=? ORDER BY rowid DESC LIMIT 1', (v['topic_id'],)).fetchone()
+            db.execute('INSERT INTO reopen VALUES (?,?,?,?)', (closure[0],v['id'],dt.datetime.now(dt.timezone.utc).isoformat(),'Yeni ilgili uç: '+v['relevance_reason']))
+            db.execute("UPDATE topic_search SET state='in_progress' WHERE topic_id=?", (v['topic_id'],))
+        db.commit()
+        return v['id']
+    finally: db.close()
+
+
+def record_attempt(work, values):
+    def validate(db, v):
+        if not all(v.get(k) for k in ('query','attempted_at','reason','type','result')): raise ValueError('Girişim alanları gerekli')
+        dt.datetime.fromisoformat(v['attempted_at'].replace('Z','+00:00'))
+        if v.get('lead_id'):
+            lead = db.execute('SELECT * FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
+            if not lead or any(lead[k] != v[k] for k in ('party_id','topic_id','heading')): raise ValueError('Girişim uçla uyuşmuyor')
+        if v.get('lead_id'):
+            state = {'examined':'examined','failure':'blocked','excluded':'excluded'}.get(v['result'])
+            if state == 'examined' and not v.get('source_version_id'): raise ValueError('İncelenmiş uç için belge gerekli')
+            if state: db.execute('UPDATE lead SET status=? WHERE id=?', (state,v['lead_id']))
+    insert_checked(work, 'attempt', values, validate)
+
+
+def close_topic(work, values):
+    def validate(db, v):
+        if not v.get('reason') or not v.get('closed_at'): raise ValueError('Kapanma gerekçesi ve tarihi gerekli')
+        leads = db.execute('SELECT * FROM lead WHERE topic_id=?', (v['topic_id'],)).fetchall()
+        if not leads: raise ValueError('Uçsuz tarama kapanamaz')
+        for lead in leads:
+            if lead['status'] not in ('examined', 'blocked', 'excluded'): raise ValueError('İncelenmemiş uç var')
+            attempt = db.execute('SELECT * FROM attempt WHERE lead_id=? ORDER BY attempted_at DESC LIMIT 1', (lead['id'],)).fetchone()
+            expected = {'examined':'examined','blocked':'failure','excluded':'excluded'}[lead['status']]
+            if not attempt or not attempt['reason'] or attempt['result'] != expected or (lead['status'] == 'examined' and not attempt['source_version_id']): raise ValueError('Uç gerçek girişimle desteklenmeli')
+        db.execute("UPDATE topic_search SET state='closed' WHERE topic_id=?", (v['topic_id'],))
+    insert_checked(work, 'closure', values, validate)
+
+
+def reopen_topic(work, values):
+    def validate(db, v):
+        if not v.get('reason') or not v.get('opened_at'): raise ValueError('Yeniden açma gerekçesi gerekli')
+        closure = db.execute('SELECT topic_id FROM closure WHERE id=?', (v['closure_id'],)).fetchone()
+        lead = db.execute('SELECT topic_id FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
+        if not closure or not lead or closure[0] != lead[0]: raise ValueError('Konu uyuşmuyor')
+        db.execute("UPDATE topic_search SET state='in_progress' WHERE topic_id=?", (closure[0],))
+    insert_checked(work, 'reopen', values, validate)
+
+
+def record_missing(work, values):
+    def validate(db, v):
+        a = db.execute('SELECT * FROM attempt WHERE id=?', (v['attempt_id'],)).fetchone()
+        allowed = {'Bulunamadı': ('search','no_result'), 'Erişilemedi': ('access','failure'), 'Doğrulanamadı': ('verification','inconclusive')}
+        if not a or any(a[k] != v[k] for k in ('party_id','heading','topic_id')) or allowed.get(v['status']) != (a['type'],a['result']) or not v.get('reason'):
+            raise ValueError('Eksik durumuyla eşleşen gerekçeli girişim gerekli')
+    insert_checked(work, 'missing', values, validate)
 
 
 def record_scope(work, kind, values):
@@ -289,7 +432,12 @@ def export_db(path, release_id):
                 raise ValueError('Okunabilir arşiv özgün belgeden farklı')
         for p in result['passage']:
             v = next(v for v in result['document_version'] if v['id'] == p['version_id'])
-            if p['exact'] not in safe_path(DATA, v['original_path']).read_bytes().decode('utf-8', errors='replace'):
+            path = safe_path(DATA, v['original_path'])
+            if path.name == 'original.pdf':
+                if p['pdf_page_index'] is None or p['pdf_page_index'] < 0: raise ValueError('PDF sayfa indeksi gerekli')
+                content = pdf_page_text(path, p['pdf_page_index'])
+            else: content = path.read_bytes().decode('utf-8', errors='replace')
+            if p['exact'] not in content:
                 raise ValueError('Pasaj özgün belgede bulunamadı')
         for f in result['finding']:
             if f['provenance'] == 'quote' and not any(f['text'] == p['exact'] for e in result['finding_evidence'] if e['finding_id'] == f['id'] for p in result['passage'] if p['id'] == e['passage_id']):
@@ -375,6 +523,7 @@ def main():
     c = sub.add_parser('capture'); c.add_argument('--url', required=True); c.add_argument('--kind', choices=['html', 'pdf'], required=True); c.add_argument('--out')
     w = sub.add_parser('workspace'); w.add_argument('--scratch')
     r = sub.add_parser('record'); r.add_argument('--workspace', required=True); r.add_argument('--kind', required=True); r.add_argument('--input', default='-')
+    ch = sub.add_parser('chain'); ch.add_argument('--workspace', required=True); ch.add_argument('--party', required=True); ch.add_argument('--topic', required=True)
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True)
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
     a = sub.add_parser('audit'); a.add_argument('--release', default='current')
@@ -385,6 +534,12 @@ def main():
     elif args.command == 'record':
         import sys
         record(args.workspace, args.kind, json.load(sys.stdin) if args.input == '-' else json.loads(Path(args.input).read_text(encoding='utf-8')))
+    elif args.command == 'chain':
+        assert_lock(args.workspace)
+        db = connect(Path(args.workspace) / 'records.sqlite3')
+        try:
+            print(json.dumps([dict(x) for x in db.execute('SELECT * FROM lead WHERE party_id=? AND topic_id=? ORDER BY rowid', (args.party,args.topic))], ensure_ascii=False, indent=2))
+        finally: db.close()
     elif args.command == 'publish': print(publish_release(args.workspace))
     elif args.command == 'freeze': print(freeze_cutoff(args.workspace, args.tbmm_version, args.method_version))
     elif args.command == 'audit': print('AUDIT_OK', audit_release(args.release))

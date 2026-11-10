@@ -1,10 +1,10 @@
 ---
 schema_version: 1
-open_count: 1
+open_count: 0
 waived_count: 0
-fixed_count: 0
+fixed_count: 1
 total_count: 1
-last_updated: 2026-11-10T14:57:24.597Z
+last_updated: 2026-11-10T15:11:30.167Z
 ---
 
 # Broken Windows Ledger
@@ -15,7 +15,7 @@ last_updated: 2026-11-10T14:57:24.597Z
 
 | id | phase | kind | file | line | description | status | reason | recorded_at | resolved_at |
 |----|-------|------|------|------|-------------|--------|--------|-------------|-------------|
-| 1 | 01 | deviation | src/arsiv.py |  | YSK 2023 faaliyet raporu okundu; PDF henüz arşiv ve pasaj kaydına bağlanmadı. | open |  | 2026-11-10T14:57:24.597Z |  |
+| 1 | 01 | deviation | src/arsiv.py |  | YSK 2023 faaliyet raporu okundu; PDF henüz arşiv ve pasaj kaydına bağlanmadı. | fixed |  | 2026-11-10T14:57:24.597Z | 2026-11-10T15:11:30.167Z |
 
 ````json
 [
@@ -26,10 +26,10 @@ last_updated: 2026-11-10T14:57:24.597Z
     "file": "src/arsiv.py",
     "line": null,
     "description": "YSK 2023 faaliyet raporu okundu; PDF henüz arşiv ve pasaj kaydına bağlanmadı.",
-    "status": "open",
+    "status": "fixed",
     "reason": "",
     "recorded_at": "2026-11-10T14:57:24.597Z",
-    "resolved_at": null,
+    "resolved_at": "2026-11-10T15:11:30.167Z",
     "milestone": "v1.0"
   }
 ]
