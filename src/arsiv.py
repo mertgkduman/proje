@@ -29,6 +29,19 @@ TABLES = {
     'comparison': 'id TEXT PRIMARY KEY, topic_id TEXT NOT NULL, state TEXT NOT NULL',
     'comparison_evidence': 'comparison_id TEXT NOT NULL REFERENCES comparison(id), passage_id TEXT NOT NULL REFERENCES passage(id), PRIMARY KEY(comparison_id, passage_id)'}
 
+TABLES.update({
+    'scope_party': 'party_id TEXT PRIMARY KEY REFERENCES party(id), approved_order INTEGER NOT NULL UNIQUE, inclusion_reason TEXT NOT NULL, decision_origin TEXT NOT NULL',
+    'scope_observation': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), observed_at TEXT NOT NULL, source_passage_id TEXT NOT NULL REFERENCES passage(id), representation_kind TEXT NOT NULL, discrepancy_reason TEXT',
+    'scope_exclusion': 'name TEXT PRIMARY KEY, reason TEXT NOT NULL, decision_origin TEXT NOT NULL, evidence_passage_id TEXT REFERENCES passage(id)',
+    'identity_observation': 'entity_id TEXT NOT NULL REFERENCES party(id), entity_kind TEXT NOT NULL, registry_key TEXT NOT NULL, valid_from TEXT, valid_to TEXT, passage_id TEXT NOT NULL REFERENCES passage(id), PRIMARY KEY(entity_kind, registry_key)',
+    'person': 'id TEXT PRIMARY KEY, name TEXT NOT NULL',
+    'membership': 'person_id TEXT NOT NULL REFERENCES person(id), party_id TEXT NOT NULL REFERENCES party(id), valid_from TEXT, valid_to TEXT, passage_id TEXT NOT NULL REFERENCES passage(id), PRIMARY KEY(person_id, party_id, passage_id)',
+    'parliamentary_group': 'id TEXT PRIMARY KEY, name TEXT NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id)',
+    'group_membership': 'person_id TEXT NOT NULL REFERENCES person(id), group_id TEXT NOT NULL REFERENCES parliamentary_group(id), valid_from TEXT, valid_to TEXT, passage_id TEXT NOT NULL REFERENCES passage(id), PRIMARY KEY(person_id, group_id, passage_id)',
+    'method': 'id TEXT PRIMARY KEY, version INTEGER NOT NULL UNIQUE, cutoff_at TEXT NOT NULL, cutoff_capture_version_id TEXT NOT NULL REFERENCES document_version(id), cutoff_reason TEXT NOT NULL, pilot_reason TEXT NOT NULL, period_rule TEXT NOT NULL'
+})
+LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
+
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -140,6 +153,10 @@ def record(work, kind, values):
             raise ValueError('Bilinmeyen kayıt alanı')
         if kind == 'document_version':
             safe_url(values['original_url']); safe_url(values['final_url'])
+        if kind == 'identity_observation':
+            party = db.execute('SELECT registry_key FROM party WHERE id=?', (values['entity_id'],)).fetchone()
+            if not party or party['registry_key'] != values['registry_key']:
+                raise ValueError('Kimlik anahtarı parti kaydıyla eşleşmiyor')
         keys = list(values)
         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
         db.commit()
@@ -147,13 +164,27 @@ def record(work, kind, values):
         db.close()
 
 
+def record_scope(work, kind, values):
+    if kind not in ('scope_party', 'scope_observation', 'scope_exclusion'):
+        raise ValueError('Geçersiz kapsam türü')
+    record(work, kind, values)
+
+
+def record_identity(work, kind, values):
+    if kind not in ('identity_observation', 'person', 'membership', 'parliamentary_group', 'group_membership'):
+        raise ValueError('Geçersiz kimlik türü')
+    record(work, kind, values)
+
+
 def export_db(path, release_id):
     db = connect(path)
     try:
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Veritabanı bütünlük hatası')
-        result = {'schema_version': 1, 'release_id': release_id}
-        for name in TABLES:
+        existing = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+        names = TABLES if 'scope_party' in existing else LEGACY_TABLES
+        result = {'schema_version': 2 if 'scope_party' in existing else 1, 'release_id': release_id}
+        for name in names:
             result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY rowid')]
         if any(not any(e['finding_id'] == f['id'] for e in result['finding_evidence']) for f in result['finding']):
             raise ValueError('Kanıtsız bulgu')

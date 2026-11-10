@@ -11,6 +11,33 @@ def render_report(data):
     pieces = ['<!doctype html><html lang="tr"><meta charset="utf-8"><title>Kaynaklı pilot rapor</title>',
               '<style>.summary{color:#003366}.quote{color:#000}body{max-width:70em;margin:auto;font-family:sans-serif}</style>',
               '<h1>Yeni Parti: kuruluş bilgisi</h1>']
+    if data.get('scope_party'):
+        parties = {p['id']: p for p in data['party']}
+        pieces.append('<p><a href="#kapsam-yontem">Kapsam ve yöntem</a></p><section id="kapsam-yontem"><h2>Kapsam ve yöntem</h2>')
+        pieces.append('<p>Bu dokuz partilik ön liste kullanıcının kapsam seçimidir; siyasi değerlendirme değildir.</p><ol>')
+        for s in sorted(data['scope_party'], key=lambda s: s['approved_order']):
+            obs = [o for o in data['scope_observation'] if o['party_id'] == s['party_id']]
+            refs = ' '.join('<a class="citation" href="#source-' + esc(o['source_passage_id']) + '">[Kaynak]</a>' for o in obs)
+            notes = ' '.join(esc(o['discrepancy_reason']) for o in obs if o['discrepancy_reason'])
+            pieces.append('<li>' + esc(parties[s['party_id']]['legal_name']) + ' ' + refs + ' ' + notes + '</li>')
+        pieces.append('</ol><h3>Başlangıç kapsamı dışında tutulanlar</h3><ul>')
+        for e in data['scope_exclusion']:
+            pieces.append('<li>' + esc(e['name']) + ': ' + esc(e['reason']) + ' (' + esc(e['decision_origin']) + ')</li>')
+        pieces.append('</ul><p>Parti tüzel kimliği, milletvekili parti üyeliği ve Meclis grubu ayrı ilişkilerdir. Grup adından bireysel parti üyeliği çıkarılmaz.</p>')
+        for i in data.get('identity_observation', []):
+            pieces.append('<p>' + esc(parties[i['entity_id']]['legal_name']) + ' — sicil anahtarı: ' + esc(i['registry_key']) + ' <a class="citation" href="#source-' + esc(i['passage_id']) + '">[Kaynak]</a></p>')
+        for g in data.get('parliamentary_group', []):
+            pieces.append('<p>Meclis grubu: ' + esc(g['name']) + ' <a class="citation" href="#source-' + esc(g['passage_id']) + '">[Kaynak]</a></p>')
+        persons = {p['id']: p for p in data.get('person', [])}
+        for m in data.get('membership', []):
+            pieces.append('<p>' + esc(persons[m['person_id']]['name']) + ': ' + esc(parties[m['party_id']]['legal_name']) + ' (' + esc(m['valid_from']) + ' tarihli kayıt) <a class="citation" href="#source-' + esc(m['passage_id']) + '">[Kaynak]</a></p>')
+        for m in data.get('group_membership', []):
+            pieces.append('<p>' + esc(persons[m['person_id']]['name']) + ': grup kaydı <a class="citation" href="#source-' + esc(m['passage_id']) + '">[Kaynak]</a></p>')
+        if 'aa-2023-passage' in passages:
+            pieces.append('<p>TBMM sayfasının kendi güncelleme tarihi bilinmiyor. 2023 seçimindeki resmî ittifak ortaklığı ile ortak listeden aday gösterilmesi ayrı ilişkilerdir. Bu tarihsel kaynak güncel üyeliği göstermez. <a class="citation" href="#source-aa-2023-passage">[Kaynak]</a></p>')
+        for m in data.get('method', []):
+            pieces.append('<p>Kesim: ' + esc(m['cutoff_at']) + ' — ' + esc(m['cutoff_reason']) + '</p><p>' + esc(m['period_rule']) + ' ' + esc(m['pilot_reason']) + '</p>')
+        pieces.append('</section>')
     for f in data['finding']:
         evidence = [e for e in data['finding_evidence'] if e['finding_id'] == f['id']]
         if not evidence: raise ValueError('Kanıtsız bulgu')
