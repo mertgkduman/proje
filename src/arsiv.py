@@ -63,6 +63,7 @@ TABLES.update({
     'topic': 'id TEXT NOT NULL, label TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, valid_from TEXT NOT NULL, status TEXT NOT NULL, change_reason TEXT NOT NULL, PRIMARY KEY(id,taxonomy_version)',
     'topic_basis': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), rationale TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(topic_id,taxonomy_version,passage_id)',
     'finding_topic': 'finding_id TEXT NOT NULL REFERENCES finding(id), topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(finding_id,topic_id,taxonomy_version)',
+    'topic_query': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, actor_kind TEXT NOT NULL, query TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(topic_id,taxonomy_version,actor_kind)',
 })
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
@@ -242,6 +243,8 @@ def record(work, kind, values):
             raise ValueError('Geçersiz araştırma durumu')
         if kind == 'report_option' and values != {'name': 'chain_links', 'value': '1'}:
             raise ValueError('Geçersiz rapor seçeneği')
+        if kind == 'topic_query' and (values.get('actor_kind') not in ('institutional','authorized','individual') or not values.get('query')):
+            raise ValueError('Konu sorgusu ve aktör türü gerekli')
         if kind in ('topic_search', 'url_alias'):
             raise ValueError('Durum ve takma adlar ilgili işlem tarafından yönetilir')
         if kind == 'identity_observation':
@@ -346,17 +349,22 @@ def record_attempt(work, values):
     insert_checked(work, 'attempt', values, validate)
 
 
+def check_document_authority(db, v):
+    target = db.execute('SELECT d.party_id,v.final_url FROM document_version v JOIN document d ON d.id=v.document_id WHERE v.id=?', (v['version_id'],)).fetchone()
+    source = db.execute('SELECT p.exact,d.party_id,d.source_kind,v.final_url FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (v['authority_passage_id'],)).fetchone()
+    attempt = db.execute('SELECT * FROM attempt WHERE id=?', (v['verification_attempt_id'],)).fetchone()
+    identity = db.execute("SELECT p.exact,v.final_url FROM identity_observation i JOIN passage p ON p.id=i.passage_id JOIN document_version v ON v.id=p.version_id WHERE i.entity_id=? AND i.entity_kind='party'", (v['registry_party_id'],)).fetchone()
+    party = db.execute('SELECT legal_name FROM party WHERE id=?', (v['registry_party_id'],)).fetchone()
+    if not target or not source or not attempt or not identity or not party or not v.get('reason') or v.get('status') != 'verified': raise ValueError('Otorite zinciri eksik')
+    host = urllib.parse.urlsplit(target['final_url']).hostname or ''
+    source_host = urllib.parse.urlsplit(source['final_url']).hostname or ''
+    identity_host = urllib.parse.urlsplit(identity['final_url']).hostname or ''
+    if target['party_id'] != v['registry_party_id'] or source['party_id'] != v['registry_party_id'] or source['source_kind'] != 'official' or source_host not in ('tbmm.gov.tr','www.tbmm.gov.tr','cdn.tbmm.gov.tr') or host.removeprefix('www.') not in source['exact'] or identity_host not in ('www.yargitaycb.gov.tr','yargitaycb.gov.tr') or party['legal_name'] not in identity['exact'] or attempt['party_id'] != v['registry_party_id'] or (attempt['type'],attempt['result']) != ('verification','confirmed'):
+        raise ValueError('Parti veya resmî otorite zinciri uyuşmuyor')
+
+
 def verify_document_authority(work, values):
-    def validate(db, v):
-        target = db.execute('SELECT d.party_id,v.final_url FROM document_version v JOIN document d ON d.id=v.document_id WHERE v.id=?', (v['version_id'],)).fetchone()
-        source = db.execute('SELECT p.exact,d.party_id,d.source_kind,v.final_url FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (v['authority_passage_id'],)).fetchone()
-        attempt = db.execute('SELECT * FROM attempt WHERE id=?', (v['verification_attempt_id'],)).fetchone()
-        if not target or not source or not attempt or not v.get('reason') or v.get('status') != 'verified': raise ValueError('Otorite zinciri eksik')
-        host = urllib.parse.urlsplit(target['final_url']).hostname or ''
-        source_host = urllib.parse.urlsplit(source['final_url']).hostname or ''
-        if target['party_id'] != v['registry_party_id'] or source['party_id'] != v['registry_party_id'] or source['source_kind'] != 'official' or source_host not in ('tbmm.gov.tr','www.tbmm.gov.tr','cdn.tbmm.gov.tr') or host.removeprefix('www.') not in source['exact'] or attempt['party_id'] != v['registry_party_id'] or (attempt['type'],attempt['result']) != ('verification','confirmed'):
-            raise ValueError('Parti veya resmî otorite zinciri uyuşmuyor')
-    insert_checked(work, 'document_authority', values, validate)
+    insert_checked(work, 'document_authority', values, check_document_authority)
 
 
 def record_topic(work, values):
@@ -524,6 +532,7 @@ def export_db(path, release_id):
                 for e in (e for e in result['finding_evidence'] if e['finding_id'] == f['id']):
                     validate_evidence(db, f, next(p for p in result['passage'] if p['id'] == e['passage_id']))
         if 'topic' in existing:
+            for authority in result['document_authority']: check_document_authority(db, authority)
             for t in result['topic']:
                 if t['status'] == 'verified':
                     bases = [b for b in result['topic_basis'] if b['topic_id'] == t['id'] and b['taxonomy_version'] == t['taxonomy_version']]

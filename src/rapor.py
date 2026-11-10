@@ -39,6 +39,17 @@ def render_report(data):
             cited = next((p['id'] for p in data['passage'] if p['version_id'] == m['cutoff_capture_version_id']), None)
             if not cited: raise ValueError('Kesim pasajı bulunamadı')
             pieces.append('<p>Kesim: ' + esc(m['cutoff_at']) + ' — ' + esc(m['cutoff_reason']) + ' <a class="citation" href="#source-' + esc(cited) + '">[Kaynak]</a></p><p>' + esc(m['period_rule']) + ' ' + esc(m['pilot_reason']) + '</p><p>Belge tarihi, olay tarihi, hesap dönemi, erişim ve doğrulama anı ayrı kayıtlardır. Kesim günü yalnız gün biliniyorsa olayın kapsamı belirsizdir. Daha sonra edinilen belge, kesim içindeki geçmiş bir olayı destekleyebilir.</p>')
+        if data.get('topic'):
+            pieces.append('<h3>Ortak konu sözlüğü</h3><p>Bu başlıklar beş parti dosyası başlığından ayrıdır. TİP kaynağı yalnız sözlük dayanağıdır; TİP dosyası henüz incelenmedi. Erişilen belgenin kesim günündeki sürümü ayrıca doğrulanmamıştır.</p><ul>')
+            for topic in data['topic']:
+                bases = [b for b in data.get('topic_basis', []) if b['topic_id'] == topic['id'] and b['taxonomy_version'] == topic['taxonomy_version']]
+                refs = ' '.join('<a class="citation" href="#source-' + esc(b['passage_id']) + '">[Dayanak]</a> ' + esc(b['rationale']) for b in bases)
+                pieces.append('<li>' + esc(topic['label']) + ' — sürüm ' + esc(topic['taxonomy_version']) + ': ' + ('dayanak doğrulandı' if topic['status'] == 'verified' else 'aday, dayanak doğrulanmadı') + ' ' + refs + '</li>')
+                for q in data.get('topic_query', []):
+                    if q['topic_id'] == topic['id'] and q['taxonomy_version'] == topic['taxonomy_version']:
+                        label = {'institutional':'kurumsal', 'authorized':'yetkili temsilci', 'individual':'bireysel'}[q['actor_kind']]
+                        pieces.append('<li>Planlanan başlangıç sorgusu (' + label + '): ' + esc(q['query']) + '</li>')
+            pieces.append('</ul><p>Tarama kaynakları: resmî kayıtlar ve kararlar, yetkili parti açıklamaları ve güvenilir bağımsız kaynaklar. Yeterli kanıtlı bütün uygun eşleşmeler alınır; sayısal kota veya sonucun yönüyle eleme yapılmaz. Kurumsal eylem, yetkili temsilci ve bireysel kayıt ayrı değerlendirilir. İlgili bağlantılar ve çelişkiler izlenir; bekleyen uç kalmayınca gerekçeyle kapanır, yeni kanıtla yeniden açılır. Erişim engelleri görünür kalır.</p>')
         if data.get('lead') or data.get('attempt'):
             pieces.append('<h3>Tarama zinciri</h3><ul>')
             for a in data.get('attempt', []):
