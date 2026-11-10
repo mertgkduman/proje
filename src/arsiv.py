@@ -325,9 +325,15 @@ def record(work, kind, values):
         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
         if kind == 'document_version':
             db.execute('INSERT OR IGNORE INTO url_alias VALUES (?,?,?)', (values['original_url'], values['final_url'], values['id']))
-            for lead in db.execute("SELECT l.id,l.topic_id FROM lead l JOIN topic_search t ON t.topic_id=l.topic_id WHERE t.state='closed' AND l.normalized_url=?", (normalize_url(values['original_url']),)).fetchall():
+            owner = db.execute('SELECT party_id FROM document WHERE id=?', (values['document_id'],)).fetchone()
+            for lead in db.execute("SELECT l.id,l.topic_id,l.normalized_url FROM lead l JOIN topic_search t ON t.topic_id=l.topic_id WHERE t.state='closed' AND l.party_id=? AND l.normalized_url=?", (owner['party_id'], normalize_url(values['original_url']))).fetchall():
+                earlier = db.execute('SELECT v.original_url,v.final_url,v.sha256 FROM document_version v JOIN document d ON d.id=v.document_id WHERE d.party_id=? AND v.id<>? ORDER BY v.rowid DESC', (owner['party_id'], values['id'])).fetchall()
+                previous = next((v for v in earlier if lead['normalized_url'] in (normalize_url(v['original_url']), normalize_url(v['final_url']))), None)
+                if previous and previous['sha256'] == values['sha256']:
+                    continue
                 closure = db.execute('SELECT id FROM closure WHERE topic_id=? ORDER BY rowid DESC LIMIT 1', (lead['topic_id'],)).fetchone()
-                db.execute('INSERT OR IGNORE INTO reopen VALUES (?,?,?,?)', (closure['id'],lead['id'],values['accessed_at'],'Aynı adreste yeni içerik sürümü'))
+                reason = 'Aynı adreste yeni içerik sürümü' if previous else 'Uç için ilk kaynak yakalaması'
+                db.execute('INSERT OR IGNORE INTO reopen VALUES (?,?,?,?)', (closure['id'],lead['id'],values['accessed_at'],reason))
                 db.execute("UPDATE topic_search SET state='in_progress' WHERE topic_id=?", (lead['topic_id'],))
                 db.execute("UPDATE lead SET status='pending' WHERE id=?", (lead['id'],))
         db.commit()
