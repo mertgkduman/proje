@@ -49,6 +49,11 @@ def safe_path(base, relative):
     return target
 
 
+def readable_bytes(content, kind):
+    decoded = content.decode('utf-8', errors='replace') if kind == 'html' else 'PDF dosyasını özgün kopyadan açın.'
+    return ('<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>' + html.escape(decoded) + '</pre>').encode('utf-8')
+
+
 def capture_source(url, kind, out=None):
     safe_url(url)
     if kind not in ('html', 'pdf'):
@@ -69,10 +74,12 @@ def capture_source(url, kind, out=None):
     original = folder / ('original.html.bin' if kind == 'html' else 'original.pdf')
     if original.exists() and sha(original) != digest:
         raise ValueError('Mevcut arşiv nesnesi bozuk')
-    original.write_bytes(content)
     readable = folder / 'readable.html'
-    decoded = content.decode('utf-8', errors='replace') if kind == 'html' else 'PDF dosyasını özgün kopyadan açın.'
-    readable.write_text('<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>' + html.escape(decoded) + '</pre>', encoding='utf-8')
+    derivative = readable_bytes(content, kind)
+    if readable.exists() and readable.read_bytes() != derivative:
+        raise ValueError('Mevcut okunabilir arşiv bozuk')
+    if not original.exists(): original.write_bytes(content)
+    if not readable.exists(): readable.write_bytes(derivative)
     now = dt.datetime.now(dt.timezone.utc).isoformat()
     return dict(original_url=url, final_url=final, accessed_at=now, verified_at=now, mime=mime, sha256=digest, original_path=str(original.relative_to(DATA)) if original.is_relative_to(DATA) else str(original), readable_path=str(readable.relative_to(DATA)) if readable.is_relative_to(DATA) else str(readable))
 
@@ -94,13 +101,14 @@ def open_workspace(scratch=None):
     root = Path(scratch or tempfile.gettempdir()).resolve()
     root.mkdir(parents=True, exist_ok=True)
     fs = subprocess.check_output(['stat', '-f', '-c', '%T', str(root)], text=True).strip().lower()
-    if fs in ('nfs', 'nfs4', 'cifs', 'smb2', 'fuse.sshfs'):
+    if fs not in ('xfs', 'ext2/ext3', 'ext2', 'ext3', 'ext4', 'tmpfs', 'overlayfs', 'btrfs', 'zfs', 'apfs'):
         raise ValueError('Aktif SQLite için yerel dosya sistemi gerekir')
     DATA.mkdir(parents=True, exist_ok=True)
     lock = DATA / '.write.lock'
+    token = uuid.uuid4().hex
     fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
     try:
-        os.write(fd, json.dumps({'pid': os.getpid(), 'host': os.uname().nodename}).encode())
+        os.write(fd, json.dumps({'pid': os.getpid(), 'host': os.uname().nodename, 'token': token}).encode())
     finally:
         os.close(fd)
     try:
@@ -114,7 +122,7 @@ def open_workspace(scratch=None):
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         db.commit()
         db.close()
-        (work / 'workspace.json').write_text(json.dumps({'base': base, 'lock': str(lock)}), encoding='utf-8')
+        (work / 'workspace.json').write_text(json.dumps({'base': base, 'token': token}), encoding='utf-8')
         return work
     except Exception:
         lock.unlink(missing_ok=True)
@@ -124,6 +132,7 @@ def open_workspace(scratch=None):
 def record(work, kind, values):
     if kind not in TABLES or not isinstance(values, dict) or not values:
         raise ValueError('Geçersiz kayıt türü veya yükü')
+    assert_lock(work)
     db = connect(Path(work) / 'records.sqlite3')
     try:
         allowed = {row['name'] for row in db.execute(f'PRAGMA table_info({kind})')}
@@ -150,13 +159,19 @@ def export_db(path, release_id):
             raise ValueError('Kanıtsız bulgu')
         for v in result['document_version']:
             safe_url(v['original_url']); safe_url(v['final_url'])
-            original = safe_path(DATA, v['original_path']); safe_path(DATA, v['readable_path'])
+            original = safe_path(DATA, v['original_path']); readable = safe_path(DATA, v['readable_path'])
             if sha(original) != v['sha256']:
                 raise ValueError('Arşiv özeti eşleşmiyor')
+            kind = 'pdf' if original.name == 'original.pdf' else 'html'
+            if readable.read_bytes() != readable_bytes(original.read_bytes(), kind):
+                raise ValueError('Okunabilir arşiv özgün belgeden farklı')
         for p in result['passage']:
             v = next(v for v in result['document_version'] if v['id'] == p['version_id'])
             if p['exact'] not in safe_path(DATA, v['original_path']).read_bytes().decode('utf-8', errors='replace'):
                 raise ValueError('Pasaj özgün belgede bulunamadı')
+        for f in result['finding']:
+            if f['provenance'] == 'quote' and not any(f['text'] == p['exact'] for e in result['finding_evidence'] if e['finding_id'] == f['id'] for p in result['passage'] if p['id'] == e['passage_id']):
+                raise ValueError('Alıntı kanıt pasajıyla eşleşmiyor')
         return result
     finally:
         db.close()
@@ -181,11 +196,17 @@ def audit_release(release='current'):
     return release
 
 
+def assert_lock(work):
+    metadata = json.loads((Path(work) / 'workspace.json').read_text(encoding='utf-8'))
+    lock = DATA / '.write.lock'
+    if not lock.is_file() or json.loads(lock.read_text(encoding='utf-8')).get('token') != metadata.get('token') or not metadata.get('token'):
+        raise ValueError('Çalışma alanının yazıcı kilidi bulunamadı')
+    return metadata
+
+
 def publish_release(work, fail_at=None):
     work = Path(work)
-    metadata = json.loads((work / 'workspace.json').read_text(encoding='utf-8'))
-    if not Path(metadata['lock']).exists():
-        raise ValueError('Yazıcı kilidi bulunamadı')
+    metadata = assert_lock(work)
     release = uuid.uuid4().hex
     staging = DATA / '.staging' / release
     staging.mkdir(parents=True)
@@ -217,7 +238,13 @@ def publish_release(work, fail_at=None):
             raise RuntimeError('İşaretçi sonrası doğrulanmış sürüm')
         return release
     finally:
-        Path(metadata['lock']).unlink(missing_ok=True)
+        if (DATA / '.write.lock').exists():
+            try:
+                assert_lock(work)
+            except (ValueError, OSError, json.JSONDecodeError):
+                pass
+            else:
+                (DATA / '.write.lock').unlink()
 
 
 def main():
