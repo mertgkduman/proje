@@ -31,7 +31,7 @@
 1. Okur, tarihli TBMM kaynak kopyasından başlangıç listesini, dahil etme/dışlama gerekçelerini ve parti üyeliği ile ortak Meclis grubu ayrımını görebilir.
 2. Okur, incelenecek dönemleri, olay seçimi ve arama sonlandırma ölçütlerini ve kapsam içinden pilot partinin seçilme gerekçesini yöntem bölümünde okuyabilir; henüz onaylanmamış bir başlangıç yılı varsayılmaz.
 3. Okur, bir pilot partinin kuruluş, tüzük, program, söylem–uygulama ve finansman–harcamalar başlıklarını gerçek kaynaklı bulgular veya denenmiş aramalara dayanan eksik bilgi durumlarıyla HTML raporunda görebilir; ortak veri kaydından bağlantı, belge tarihi/sürümü, madde/sayfa veya pasaj, erişim/doğrulama tarihleri ve arşiv kopyasına ulaşabilir.
-4. Okur, aynı pilot içerikte doğrudan aktarımı siyah, kaynaklı yapay zekâ özetini koyu mavi ve ayrıca tür etiketleriyle görebilir; olgu, kaynağın beyanı ve yorum birbirinden ayrılır.
+4. Okur, aynı pilot içerikte doğrudan aktarımı siyah ve tırnak içinde, kaynaklı yapay zekâ özetini koyu mavi görebilir; görünür metin türü etiketi kullanılmaz, metin kökeni veri kayıtlarında korunur. Olgu, kaynağın beyanı ve yorum birbirinden ayrılır.
 5. Araştırmacı üç eksik bilgi durumunu ayrı kaydedebilir; okur eksik listesinde parti/konu, arama veya erişim tarihi ve gerekçeyi görebilir. Yalnız denenmiş aramalar bu durumlara dönüştürülür; eksikler sıfır veya olumsuz bulgu sayılmaz.
 **Plans:** TBD
 **UI hint**: yes
@@ -93,7 +93,7 @@
 **Requirements:** RAP-01, RAP-03, VER-02, VER-03
 **Success Criteria**:
 1. Okur, kapsamdaki bütün parti dosyalarını, karşılaştırmaları, kaynak/belge arşivini ve eksik bilgi listesini sekmeli Türkçe HTML raporunda açabilir; rapor alıcının proje geliştirme ortamını kurmasını gerektirmeyen biçimde paylaşılabilir.
-2. Okur, rapordaki sekmeleri klavyeyle kullanabilir ve dar ekranda parti dosyaları, kaynaklar ve karşılaştırmaları içerik kaybı olmadan okuyabilir; siyah/koyu mavi ayrımı ve tür etiketleri korunur.
+2. Okur, rapordaki sekmeleri klavyeyle kullanabilir ve dar ekranda parti dosyaları, kaynaklar ve karşılaştırmaları içerik kaybı olmadan okuyabilir; siyah/koyu mavi ayrımı, tırnaklı alıntı yapısı ve metin kökeni bilgisi korunur.
 3. Araştırmacı yeni belge, sürüm ve bulgu ekleyebilir veya bir kaydı düzeltebilir; değişiklik tarihi, gerekçesi ve önceki kayda bağlantı görülebilir.
 4. Araştırmacı güncellenen ortak kayıtlardan parti dosyalarını, karşılaştırmaları ve HTML raporunu yeniden üretebilir; kaynak, sürüm, metin kökeni ve eksik bilgi kayıtları çıktılar arasında tutarlı kalır.
 **Plans:** TBD

@@ -12,7 +12,7 @@ Türkiye'deki siyasi partilerin kuruluş bilgilerini, tüzüklerini, programlar�
 
 - **Tarafsızlık:** Bütün partiler aynı başlıklar ve doğrulama ölçütleriyle incelenir; kapsam kararı araştırma sonucu gibi sunulmaz.
 - **Kaynak zorunluluğu:** Her önemli bulgu izlenebilir kanıta dayanır; yapay zekâ modelinin bilgisi kaynak olarak kabul edilmez.
-- **Metin sunumu:** Doğrudan aktarım siyah, yapay zekâ özeti/düzenlemesi koyu mavidir; açık metin türü etiketleri eşlik eder.
+- **Metin sunumu:** Doğrudan aktarım siyah ve tırnak içinde, yapay zekâ özeti/düzenlemesi koyu mavidir; görünür metin türü etiketi kullanılmaz, metin kökeni kayıtlarda korunur.
 - **Eksikleri görünür kılma:** “Bulunamadı”, “Erişilemedi” ve “Doğrulanamadı” durumları açıkça gösterilir.
 - **İlk kapsam:** TBMM kayıtlarında temsil edilen partiler arasından CHP ve Cumhur İttifakı'nın mevcut/geçmiş ortakları çıkarılır; onaylanan dokuz partilik ön liste esas alınır ve değişiklikler belgelenir.
 - **Dil ve teslim biçimi:** Araştırma Türkçe ve herkesin okuyabileceği şekilde sunulur; ana okuyucu çıktısı sekmeli HTML raporudur.

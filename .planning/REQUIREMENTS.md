@@ -13,7 +13,7 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 - [ ] **KAPS-01**: Okur, başlangıç parti listesini tarihli TBMM kaydı ve arşivlenmiş kaynak kopyasıyla görebilir.
 - [ ] **KAPS-02**: Okur, CHP ile Cumhur İttifakı'nın mevcut/geçmiş ortaklarının dışlanma gerekçelerini görebilir; HÜDA PAR, DSP ve Yeniden Refah kapsam dışında tutulur.
 - [ ] **KAPS-03**: Okur, parti kimliği, milletvekilinin parti üyeliği ve ortak Meclis grubu arasındaki ayrımı kaynaklarıyla izleyebilir.
-- [ ] **KAPS-04**: Okur, inceleme dönemini, olay seçme ölçütlerini ve bütün partilere uygulanan ortak araştırma yöntemini görebilir.
+- [ ] **KAPS-04**: Okur, partinin kuruluşundan başlayan inceleme dönemini, olay seçme ölçütlerini ve bütün partilere uygulanan ortak araştırma yöntemini görebilir.
 
 ### Standart parti dosyaları
 
@@ -42,9 +42,9 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Metin kökeni ve eksik bilgiler
 
-- [ ] **MET-01**: Okur, kaynaktan değişmeden alınmış doğrudan aktarımları siyah renkte, alıntı oldukları belirtilerek görebilir.
+- [ ] **MET-01**: Okur, kaynaktan değişmeden alınmış doğrudan aktarımları siyah renkte ve tırnak içinde görebilir.
 - [ ] **MET-02**: Okur, yapay zekânın kaynaklardan özetleyip düzenlediği metinleri koyu mavi renkte görebilir; her özet dayandığı kaynaklara bağlıdır ve kaynakta bulunmayan olgular eklenmez.
-- [ ] **MET-03**: Okur, metnin doğrudan aktarım mı yapay zekâ özeti mi olduğunu renge bağlı kalmadan etiketten anlayabilir; bu tür bilgisi veri dışa aktarımında da korunur.
+- [ ] **MET-03**: Okur, doğrudan aktarımı tırnak işaretleri ve alıntı yapısıyla renge bağlı kalmadan ayırt edebilir; görünür metin türü etiketi kullanılmaz. Alıntı/özet türü veri kayıtlarında ve dışa aktarımında korunur.
 - [ ] **MET-04**: Okur, doğrulanmış olguyu, bir kaynağın kendi beyanını ve yorumu açıkça ayırt edebilir.
 - [ ] **EKS-01**: Araştırmacı, eksikleri “Bulunamadı”, “Erişilemedi” ve “Doğrulanamadı” olarak ayrı ayrı kaydedebilir.
 - [ ] **EKS-02**: Okur, eksik bilgi listesini ilgili parti/konu, arama veya erişim tarihi ve eksikliğin gerekçesiyle görebilir; eksiklik sıfır değer veya olumsuz bulgu gibi sunulmaz.
@@ -54,7 +54,7 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 - [ ] **KAR-01**: Okur, partilerin tüzük düzenlemelerini aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
 - [ ] **KAR-02**: Okur, partilerin programlarını aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
 - [ ] **KAR-03**: Okur, açıklanan ilkeler ile belgelenmiş uygulamaların karşılaştırmalarını bütün partilere uygulanan ortak ölçütlerle görebilir.
-- [ ] **RAP-01**: Okur, parti dosyalarını, karşılaştırmaları, kaynakları ve eksik bilgi listesini sekmelere ayrılmış Türkçe HTML raporunda açabilir ve raporu paylaşabilir.
+- [ ] **RAP-01**: Okur, parti bazlı ana sekmelerden ve Karşılaştırmalı Özet sekmesinden oluşan Türkçe HTML raporunu açabilir ve paylaşabilir; her parti altında ortak araştırma başlıklarını, ilgili sekmenin altında kaynakları ve metin içinde kaynak kaydına bağlantıları görebilir. Eksik bilgi durumu ve gerekçesi ilgili araştırma başlığında gösterilir.
 - [ ] **RAP-02**: Okur, rapordaki bulgulardan ve karşılaştırma hücrelerinden ilgili kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir.
 - [ ] **RAP-03**: Okur, rapor sekmelerini klavyeyle kullanabilir ve dar ekranda içerik kaybı olmadan okuyabilir.
 
@@ -88,9 +88,15 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 - Kaynak bağlantıları, sekme kullanımı, içerik taşması ve yeniden üretim akışı ilgili teslim aşamalarında doğrulanır.
 - Gereksinimler yol haritasında tam olarak birer aşamaya atanır; tamamlanma durumları uygulama ve doğrulama kanıtına dayanır.
 
+## Decision Updates
+
+- **2026-11-09 — Phase 1 görüşmesi:** Pilot Yeni Parti; inceleme başlangıcı partinin kuruluşudur. Ana sekmeler partiler ve Karşılaştırmalı Özet olarak seçilmiştir. Metin içi kaynak bağlantıları rapordaki kaynak kaydını açar.
+- **2026-11-09 — Açık kullanıcı düzeltmesi:** “açıkça etiketlemeye gerek yok, alıntıda tırnak işaretleri kullanırsın.” Önceki görünür metin türü etiketi koşulu MET-03'te tırnak/alıntı yapısıyla değiştirilmiştir; metin kökeninin veri kaydı ve dışa aktarımda korunması sürer. Bu değişiklik kaynak türü, olgu/beyan/yorum veya eksik bilgi durumlarını gizleme talebi değildir.
+- Ayrıntılı yöntem ve sunum kararları: [.planning/phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md](phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md). Gereksinimlerin uygulanma durumları Pending olarak kalır.
+
 ## Open Decisions
 
-- İnceleme başlangıç yılı ve ortak karşılaştırma dönemleri henüz seçilmedi. 2023 veya son beş yıl varsayılmaz; dönem ve olay örnekleme/arama sonlandırma kuralları yöntem aşamasında netleştirilir.
+- İnceleme partinin kaynakla doğrulanacak kuruluş tarihinden başlar. Veri kesim tarihi, ortak karşılaştırma dönemleri ve ortak konu listesinin ayrıntıları planlamada somutlaştırılır. Olay kotası uygulanmaz; yeterli kanıtlı bütün uygun eşleşmeler alınır ve ilgili belge zinciri takip edilerek tarama kapatılır.
 - Onaylanan dokuz partilik ön liste, araştırma başlangıcındaki TBMM kaydıyla arşivlenerek tekrar kontrol edilir. Ortak grup ve bireysel parti üyeliği farklılıkları sessizce kapsam değişikliğine dönüştürülmez.
 - Veri tabanı teknolojisi, katkı/düzeltme iş akışı, HTML raporunun teknik yapısı ve yayın/barındırma yeri henüz seçilmedi. Bu belge bir kamuya yayın işlemi başlatmaz.
 
@@ -143,5 +149,5 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 
 ---
 *Requirements defined: 2026-11-09*
-*Last updated: 2026-11-09 after explicit user approval of the complete mapping to the six-phase MVP roadmap*
+*Last updated: 2026-11-09 after the Phase 1 discussion; requirement IDs and the six-phase mapping are preserved*
 

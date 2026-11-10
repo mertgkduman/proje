@@ -25,7 +25,7 @@ Henüz yok; proje başlangıç aşamasındadır ve teslim edilerek doğrulanmı�
 - [ ] Birincil kaynaklara öncelik vermek; güvenilir gazetecilik, akademik araştırmalar ve bağımsız raporların kullanımını kaynak türüyle birlikte açıkça göstermek.
 - [ ] Her önemli bulguya kaynak bağlantısı, belge tarihi, varsa sürüm, ilgili madde veya sayfa, erişim tarihi ve doğrulama tarihi eklemek.
 - [ ] Kaynak bağlantılarını ve elde edilen belgeleri, değişiklikleri izlenebilen bir belge arşivinde toplamak.
-- [ ] Kaynaktan doğrudan aktarılan metni siyah; yapay zekâ tarafından kaynaklardan özetlenip düzenlenen metni koyu mavi göstermek ve metin türlerini açık etiketlerle ayırmak.
+- [ ] Kaynaktan doğrudan aktarılan metni siyah ve tırnak içinde; yapay zekâ tarafından kaynaklardan özetlenip düzenlenen metni koyu mavi göstermek; metin kökenini veri kayıtlarında korumak.
 - [ ] Olgusal bilgi, kaynağın kendi beyanı ve yorum arasındaki ayrımı korumak; kaynakta bulunmayan olgusal iddialar üretmemek.
 - [ ] Bulunamayan belgeyi “Bulunamadı”, erişilemeyen belgeyi “Erişilemedi”, doğrulanamayan iddiayı “Doğrulanamadı” olarak kaydetmek ve eksik bilgi listesini sunmak.
 - [ ] Bütün partilere aynı araştırma başlıklarını ve doğrulama ölçütlerini uygulayan tüzük, program ve söylem–uygulama karşılaştırmaları hazırlamak.
@@ -102,10 +102,10 @@ Finansman ve harcamalarda belge kapsamı, hesap dönemi, tutarın para birimi ve
 
 Kullanıcının ilk tanımındaki “Yapay zekâ tarafından üretilen bilgiler kabul edilmeyecektir” ilkesi, sonraki açıklamasıyla kaynakta doğrulanmış bilgilerin yapay zekâ tarafından özetlenip düzenlenmesine izin verecek şekilde netleştirilmiştir. Bu izin kaynakta bulunmayan yeni olgular üretmeyi kapsamaz.
 
-- **Doğrudan aktarım:** Kaynaktaki metin, alıntı olduğu ve yeri belirtilerek siyah gösterilir. Metin değiştirilirse doğrudan alıntı gibi sunulamaz.
-- **Yapay zekâ özeti/düzenlemesi:** Kaynakta doğrulanmış içerik koyu mavi gösterilir ve yapay zekâ tarafından özetlendiği/düzenlendiği açıkça etiketlenir. İlgili kaynaklara ve özgün pasajlara ulaşılabilir olmalıdır.
+- **Doğrudan aktarım:** Kaynaktaki metin, tırnak içinde ve yeri belirtilerek siyah gösterilir. Metin değiştirilirse doğrudan alıntı gibi sunulamaz.
+- **Yapay zekâ özeti/düzenlemesi:** Kaynakta doğrulanmış içerik koyu mavi gösterilir. İlgili kaynaklara ve özgün pasajlara ulaşılabilir olmalıdır. Kısa özet ve kısa özgün alıntı birlikte görünür.
 - Renkler, doğruluğa ya da güven düzeyine verilen puanlar değildir; metnin nasıl üretildiğini gösterir.
-- Renk ayrımına ek olarak metin türü etiketleri tutulur; erişilebilirlik, yazdırma ve veri dışa aktarımlarında bu bilgi kaybolmamalıdır.
+- Kullanıcı 2026-11-09 tarihli Phase 1 görüşmesinde görünür metin türü etiketlerini kaldırmış, alıntılar için tırnak işaretini seçmiştir. Metin kökeni veri kayıtlarında ve dışa aktarımlarda korunur; alıntı yapısı erişilebilirlik ve yazdırmada da anlaşılır olmalıdır.
 - Olgusal bilgi ile yorum ayrı tutulur. Kaynağın kendi iddiası, bağımsız olarak doğrulanmış sonuç gibi sunulmaz.
 
 ### Eksik bilgi durumları
@@ -130,7 +130,11 @@ Bu durumlar birbirinin yerine kullanılmaz ve bilginin yokluğundan parti aleyhi
 
 Çalışma kökü `/hpc/group/pfisterlab/mg551/storage/proje/` olarak onaylanmıştır. Boş klasörde yeni Git deposu başlatılmıştır; devralınmış uygulama, veri tabanı veya kod tabanı yoktur. GSD planlama dosyaları `.planning/` altında tutulacaktır.
 
-Söylem–uygulama ve finansman incelemesinin başlangıç yılı henüz kararlaştırılmamıştır; 2023 veya son beş yıl gibi bir aralık onaylanmış sayılmamalıdır. Ortak dönemlerin nasıl seçileceği, belge kapsamları ve mali denetim yayın dönemlerinin karşılaştırmaya etkisi araştırma yöntemi belirlenirken netleştirilmelidir.
+Phase 1 görüşmesinde pilot Yeni Parti olarak seçilmiş, incelemenin partinin kuruluşundan başlaması kararlaştırılmıştır. Hukuki kimlik ve kuruluş tarihi kaynakla doğrulanacaktır. Veri kesim tarihi, ortak karşılaştırma dönemleri, belge kapsamları ve mali denetim yayın dönemlerinin karşılaştırmaya etkisi planlamada açıkça belirtilmelidir.
+
+Ortak konu başlıklarında tarama sırasında bulunan bütün uygun ve yeterli kanıtlı eşleşmeler kaydedilir; bulunan belgelerin ilgili bağlantıları ve çelişkiler takip edilir. Takip edilecek ilgili kaynak kalmadığında konu taraması kapanır. Kurumsal kararlar ve parti adına hareket ettiği belgelenen yetkili temsilcilerin eylemleri esas alınır; bireysel oy ve açıklamalar aktörleriyle ayrı gösterilir.
+
+Ana rapor sekmeleri partiler ve Karşılaştırmalı Özet olacaktır; her partinin altında ortak araştırma başlıkları bulunacaktır. Kaynaklar ilgili sekmenin altında listelenir ve metindeki ilgili ifadelerden rapordaki kaynak kaydına bağlantı verilir. Kaynak kaydı künye, ilgili pasaj, özgün bağlantı ve arşiv kopyasını bir araya getirir. Eksik bilgi durumu, gerekçe ve arama/erişim tarihi ilgili araştırma başlığında gösterilir. Ayrıntılı kararlar: [.planning/phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md](phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md).
 
 Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yapısı ve barındırma/yayın yeri henüz seçilmemiştir. Paylaşılabilir rapor hedefi kamuya otomatik yayın yapıldığı veya yayın izni alındığı anlamına gelmez. Siyasi partilere yönelik esas araştırma ve belge arşivleme henüz başlamamıştır.
 
@@ -138,7 +142,7 @@ Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yap�
 
 - **Tarafsızlık:** Bütün partiler aynı başlıklar ve doğrulama ölçütleriyle incelenir; kapsam kararı araştırma sonucu gibi sunulmaz.
 - **Kaynak zorunluluğu:** Her önemli bulgu izlenebilir kanıta dayanır; yapay zekâ modelinin bilgisi kaynak olarak kabul edilmez.
-- **Metin sunumu:** Doğrudan aktarım siyah, yapay zekâ özeti/düzenlemesi koyu mavidir; açık metin türü etiketleri eşlik eder.
+- **Metin sunumu:** Doğrudan aktarım siyah ve tırnak içinde, yapay zekâ özeti/düzenlemesi koyu mavidir; görünür metin türü etiketi kullanılmaz, metin kökeni kayıtlarda korunur.
 - **Eksikleri görünür kılma:** “Bulunamadı”, “Erişilemedi” ve “Doğrulanamadı” durumları açıkça gösterilir.
 - **İlk kapsam:** TBMM kayıtlarında temsil edilen partiler arasından CHP ve Cumhur İttifakı'nın mevcut/geçmiş ortakları çıkarılır; onaylanan dokuz partilik ön liste esas alınır ve değişiklikler belgelenir.
 - **Dil ve teslim biçimi:** Araştırma Türkçe ve herkesin okuyabileceği şekilde sunulur; ana okuyucu çıktısı sekmeli HTML raporudur.
@@ -158,7 +162,11 @@ Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yap�
 | Kaynaklı yapay zekâ özetine izin vermek; kaynaksız olgu üretimini dışlamak | Kullanıcının yapay zekâ ilkesini netleştirmesi | Onaylandı |
 | Eksik bilgi için üç ayrı durumu korumak | Bilgi eksikliğini ve erişim/doğrulama sorunlarını gizlememek | Onaylandı |
 | Ortak veri tabanından beslenen sekmeli HTML raporu hedeflemek | Paylaşılabilir ve güncellenebilir araştırma çıktısı | Onaylandı; teknik mimari bekliyor |
-| İnceleme dönemini henüz sabitlememek | Kullanıcı tarafından bir başlangıç yılı seçilmedi | Açık; yöntem aşamasında netleştirilecek |
+| İncelemeyi partinin kuruluşundan başlatmak | Kullanıcının Phase 1 görüşmesindeki açık seçimi | Onaylandı; resmî kuruluş tarihi kaynakla doğrulanacak, veri kesim tarihi planlamada belirtilecek |
+| Yeni Parti ile pilotu başlatmak | Kullanıcının açık parti seçimi | Onaylandı; kimlik ve kuruluş tarihi doğrulaması araştırmada yapılacak |
+| Ortak konularda bütün uygun eşleşmeleri almak ve ilgili belge zincirini takip etmek | Kullanıcının olay seçimi ve arama sonlandırma kararları | Onaylandı; ayrıntılar 01-CONTEXT.md içinde |
+| Parti bazlı ana sekmeler ve Karşılaştırmalı Özet kullanmak | Kullanıcının rapor düzeni seçimi | Onaylandı; kaynaklar sekme altında ve metinden bağlantıyla erişilecek |
+| Görünür metin türü etiketlerini kaldırıp siyah alıntıda tırnak kullanmak | Kullanıcının önceki etiket kararını açıkça güncellemesi | Onaylandı; koyu mavi özet ve veri kayıtlarındaki metin kökeni korunacak |
 | Kayıtlı GSD Sol/Terra modellerini 6.1'e geçirmek | Kullanıcının açık model güncelleme isteği; mevcut rol ve maliyet dağılımını korumak | Uygulandı; Luna seçimi ve reasoning seviyeleri korundu, otomatik Astra eklenmedi |
 | Gereksinimlerden önceki teknik ekosistem ön araştırmasını atlamak | Kullanıcı gereksinimlerin mevcut proje tanımından çıkarılmasını seçti | Onaylandı; esas kaynak araştırması ve aşama doğrulama ayarları korunuyor |
 | Önce tek partide çalışan örnekle ilerlemek; bütün aşamaları mvp modunda kurmak | Kullanıcı kaynak → veri tabanı → sekmeli HTML akışının önce bir pilotta tamamlanmasını seçti | Onaylandı; 35 gereksinimi kapsayan altı aşamalı yol haritası kullanıcı tarafından onaylandı |
@@ -181,4 +189,4 @@ Bu belge aşama geçişlerinde ve kilometre taşı sınırlarında güncellenir.
 4. Parti kapsamı, kaynaklar, kullanıcı geri bildirimi ve çıktılardaki güncel durumu Context bölümüne işle.
 
 ---
-*Last updated: 2026-11-09 after user approval of the six-phase MVP roadmap and completion of project initialization*
+*Last updated: 2026-11-09 after the Phase 1 discussion and the user's text presentation correction*
