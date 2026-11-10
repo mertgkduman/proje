@@ -35,7 +35,9 @@ class MissingContract(unittest.TestCase):
                 base = dict(party_id='yeni-parti', heading='B', topic_id='t', query='Belirli sorgu', attempted_at='2026-11-10T15:00:00+00:00', reason='Deneme kaydı')
                 for aid, typ, result, status in [('search','search','no_result','Bulunamadı'), ('access','access','failure','Erişilemedi'), ('verify','verification','inconclusive','Doğrulanamadı')]:
                     attempt = dict(base, id=aid, type=typ, result=result)
-                    if aid == 'access': attempt['lead_id'] = 'l'
+                    if aid == 'access':
+                        attempt['lead_id'] = 'l'
+                        attempt['query'] = 'https://example.org/'
                     arsiv.record_attempt(work, attempt)
                     missing = dict(id='m-'+aid, party_id='yeni-parti', heading='B', topic_id='t', status=status, attempt_id=aid, reason='Deneme sonucu')
                     arsiv.record_missing(work, missing)

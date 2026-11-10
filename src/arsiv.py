@@ -312,6 +312,8 @@ def record_attempt(work, values):
         if v.get('lead_id'):
             lead = db.execute('SELECT * FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
             if not lead or any(lead[k] != v[k] for k in ('party_id','topic_id','heading')): raise ValueError('Girişim uçla uyuşmuyor')
+            if v['type'] == 'access' and normalize_url(v['query']) != lead['normalized_url']:
+                raise ValueError('Erişim adresi uçla uyuşmuyor')
         if v.get('lead_id'):
             state = {'examined':'examined','failure':'blocked','excluded':'excluded'}.get(v['result'])
             if state == 'examined' and not v.get('source_version_id'): raise ValueError('İncelenmiş uç için belge gerekli')
