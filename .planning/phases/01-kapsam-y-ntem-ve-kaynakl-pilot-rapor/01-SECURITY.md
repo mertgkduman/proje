@@ -62,4 +62,6 @@ Kullanıcı adına kabul edilmiş risk yoktur.
 - [x] Her plan tehdidinin disposition ve önlem referansı var.
 - [x] Kaynaklı negatif testler ve bağımsız kod düzeltme teyidi kayıtlı.
 - [x] ASVS 1 yazılım önlemi kapsamı için threats_open: 0.
-- [ ] İnsan kaynak/kimlik/tarafsızlık incelemesi — ayrı UAT kapısı.
+- [x] İnsan UAT kapısı — kullanıcı sekiz kontrolü topluca kabul etti; kaynak durumları değişmedi.
+
+Kapanış 2026-11-10T19:55:29.442929+00:00: kullanıcı kabulü `01-UAT.md` içinde; yeni güvenlik testi yapılmadı.

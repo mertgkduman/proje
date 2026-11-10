@@ -142,7 +142,7 @@ covered_files:
   - "tests/test_topics.py"
   - "tests/test_tracer.py"
 
-covered_digest: "v1:sha256:98831e005fad1350faf622ec5a1b3cf0a46efeb0af481ffe948f43788d91c87c"
+covered_digest: "v1:sha256:1a6edbf08cc2c9126eccf2d2d576f6f34a382d28f111bbf3e03f5968c3098880"
 behavior_unverified: 0
 overrides_applied: 0
 decision_coverage:
@@ -487,3 +487,9 @@ Kullanıcı `$gsd-verify-work 1 onaylıyorum` yanıtıyla daha önce sunulan H1�
 H4–H7 kapsamındaki dört prohibition kullanıcı tarafından kabul edildi. H8 kapsamındaki 13 motor sınıflandırmasının ham `unclassified/unresolved` kaydı korunur; bunlar testlerle otomatik çözülmüş gösterilmedi. Kullanıcı bu açık yöntem sınıflandırmalarını ve raporda belirtilen kaynak sınırlarını kabul ederek faz kapanışını onayladı.
 
 Bu kayıt yeni saha araştırması, ayrı ayrı cihaz testi veya kaynak otoritesinin yeni kanıtla doğrulanması iddiası değildir. Pilot belge/mali eksikleri raporda aynı durumlarıyla kalır.
+
+## Kapanış metaverisi parmak izi — 2026-11-10T19:56:14.335194+00:00
+
+Kullanıcı kabulü ve faz geçişi, yol haritası/gereksinim/proje açıklaması ile inceleme kayıtlarını güncelledi. `e5b40d0` sonrasındaki değişiklikler yalnız izinli `.planning/` kapanış belgelerindedir; uygulama, test, kaynak arşivi ve `data/current.json` değişmedi. Teknik doğrulamanın kapsamı daraltılmadı; aynı 136 dosya ile deterministik parmak izi güncellendi. Önceki parmak izi: "v1:sha256:98831e005fad1350faf622ec5a1b3cf0a46efeb0af481ffe948f43788d91c87c".
+
+Faz tamamlama yardımcısının altı SUMMARY için verdiği dosya uyarıları, `python3 tests/run.py ...` komutlarını dosya yolu olarak ayrıştırmasından kaynaklanır. `tests/run.py` ve ilgili bütün test dosyaları mevcuttur; yeni eksik dosya veya kayıp commit bulunmadı. Özetlerin tarihsel ölçümleri değiştirilmedi.

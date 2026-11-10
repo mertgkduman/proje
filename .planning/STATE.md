@@ -1,17 +1,17 @@
 ---
 gsd_state_version: "1.0"
 milestone: v1.0
-current_phase: 01
-current_phase_name: Kapsam, yöntem ve kaynaklı pilot rapor
-status: Awaiting human verification — Phase 01 UAT
-stopped_at: Phase 01 human_needed; all 6 plans executed, 8 UAT checks pending
-last_updated: "2026-11-10T17:51:18.340Z"
+current_phase: 2
+current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
+status: planning
+stopped_at: Phase 1 complete with 8/8 UAT acceptance; ready to discuss and plan Phase 2
+last_updated: "2026-11-10T19:55:30.402Z"
 last_activity: 2026-11-10
-last_activity_desc: Faz 1 altı plan uygulandı; 44 test ve PHASE1_AUDIT_OK geçti. Kod bulguları giderildi; bağımsız doğrulama human_needed, 12/13 must-have ve 8 UAT kontrolü bekliyor.
-state_head: 76b27bda7769eb6d152dd1456b86d403e42b558a
+last_activity_desc: Phase 1 complete, transitioned to Phase 2
+state_head: 643b65dc224075212857b719a4a2bfce721bf3fc
 progress:
   total_phases: 6
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 6
   completed_plans: 6
 ---
@@ -20,19 +20,19 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-11-09)
+See: .planning/PROJECT.md (updated 2026-11-10)
 
 **Core value:** Kaynağına kadar izlenebilen, karşılaştırılabilir ve eksiklerini açıkça gösteren siyasi parti bilgisine eşit erişim.
-**Current focus:** Phase 01 — Kapsam, yöntem ve kaynaklı pilot rapor
+**Current focus:** Phase 2 — Bütün partiler için dosyalar ve sürümlü kaynaklar; bağlam toplama ve planlama.
 
 ## Current Position
 
-Phase: 01 (Kapsam, yöntem ve kaynaklı pilot rapor) — VERIFYING
-Plan: 6 of 6
-Status: Awaiting human verification — Phase 01 UAT
-Last activity: 2026-11-10 — 6/6 plan, 44 test ve bağımsız doğrulama tamamlandı; 8 insan UAT kontrolü bekliyor.
+Phase: 2 — Bütün partiler için dosyalar ve sürümlü kaynaklar
+Plan: Not started
+Status: Ready to plan
+Last activity: 2026-11-10 — Phase 1 complete, transitioned to Phase 2
 
-Progress: [██████████] 6/6 plans
+Progress: [██░░░░░░░░] 17%
 
 ## Performance Metrics
 
@@ -46,12 +46,12 @@ Progress: [██████████] 6/6 plans
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1 | 6 | Kesin toplam ölçülmedi | - |
+| 1 | 6 | - | - |
 
 **Recent Trend:**
 
 - Last 5 plans: 01-02, 01-03, 01-04, 01-05, 01-06
-- Trend: 6/6 plan uygulandı; faz kapanışı 8 insan UAT kontrolünü bekliyor.
+- Trend: Faz 1, 6/6 plan ve 8/8 kullanıcı UAT kabulüyle tamamlandı; Faz 2 henüz başlamadı.
 
 **Per-Plan Metrics:**
 
@@ -89,9 +89,10 @@ None yet.
 
 ### Blockers/Concerns
 
-- Başlatmayı engelleyen teknik sorun yok; gereksinimler ve yol haritası kullanıcı tarafından onaylandı.
-- TBMM ön listesi arşivlenerek yeniden kontrol edilecek; ortak Meclis grubu ile bireysel parti üyeliği ayrımı korunacak.
-- Plan kontrolü geçti; COVERAGE.md içindeki 13 sınıflandırılmamış uç varsayımı ve dört descriptor-less prohibition yürütmede insan incelemesine bağlıdır, otomatik çözülmüş sayılmaz. Yeni Parti tüzük/programının özgün dosyaları ve otoritesi yürütmede doğrulanacaktır.
+- Faz 1 için açık uygulama engeli yok; 8/8 UAT toplu kullanıcı kabulüyle kapandı.
+- [Phase 1 → Phase 2] Pilotun tüzük/program otoritesi ve doğrulanmış mali tutarlar bakımından kaynak sınırları devam ediyor; bu durumlar raporda girişimleriyle kayıtlıdır.
+- [Phase 1 → Phase 2] COVERAGE.md içindeki 13 unclassified/unresolved ham uç satırı değiştirilmedi. Kullanıcı bu yöntem sınırlarıyla fazı kabul etti; bunlar yeni kaynak kanıtı veya otomatik sınıflandırma sonucu değildir.
+- [Phase 2] Parti tüzel kimliği, bireysel milletvekili üyeliği ve ortak grup ayrımı kapsam genişlerken korunacak; model/maliyet tercihleri değişmedi.
 
 ### Roadmap Evolution
 
@@ -106,6 +107,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-10T17:51:18.060Z
-Stopped at: Phase 01 human_needed; all 6 plans executed, 8 UAT checks pending
-Resume file: .planning/phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-UAT.md
+Last session: 2026-11-10T19:55:30.103Z
+Stopped at: Phase 1 complete with 8/8 UAT acceptance; ready to discuss and plan Phase 2
+Resume file: None

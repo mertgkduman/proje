@@ -12,12 +12,15 @@ Herkesin siyasi partiler hakkında kendi değerlendirmesini yapabilmesi için ka
 
 ### Validated
 
-Henüz yok; proje başlangıç aşamasındadır ve teslim edilerek doğrulanmış bir çıktı bulunmamaktadır.
+- ✓ Tarihli TBMM kopyası, dokuz partilik kapsam ve dahil etme/dışlama gerekçeleri — Faz 1 (KAPS-01–03).
+- ✓ Kuruluştan başlayan inceleme dönemi ve kaynak yakalamasına bağlı veri kesimi — Faz 1 (KAPS-04).
+- ✓ Yeni Parti'nin beş başlıklı kaynaklı pilotu; girişim destekli eksikler, metin kökeni ve olgu/beyan/yorum ayrımı — Faz 1 (KAY-02–03, MET-01–04, EKS-01–02).
+- ✓ Kapalı SQLite snapshot'ından sürümlü JSON/HTML ve arşiv zinciri — Faz 1 (VER-01).
+
+Kullanıcı `$gsd-verify-work 1 onaylıyorum` yanıtıyla sekiz UAT kontrolünü topluca kabul etti. Bu doğrulama pilot ve ortak yöntemin ilk uygulaması içindir; bütün parti dosyaları ve karşılaştırmalar sonraki fazlardadır.
 
 ### Active
 
-- [ ] TBMM kayıtlarından araştırmanın başlangıç parti listesini, esas alınan tarihi ve dahil etme/dışlama gerekçelerini belgelemek.
-- [ ] CHP'yi ve Cumhur İttifakı'nın mevcut veya geçmiş ortaklarını ilk inceleme kapsamı dışında tutmak; kullanıcının açık seçimi doğrultusunda Yeniden Refah Partisi'ni de dışlamak.
 - [ ] Her parti için kuruluş ve temel bilgiler, tüzük, program, söylem–uygulama ve finansman–harcamalar başlıkları altında standart bilgi dosyası hazırlamak.
 - [ ] Parti üyelerinin haklarını, yönetimin seçilmesini ve denetlenmesini, farklı görüşlerin ifade mekanizmalarını belge maddelerine dayanarak incelemek.
 - [ ] Kamuoyuna açıklanan ilke ve vaatleri belgelenmiş uygulamalarla, ilgili aktör, tarih ve bağlam korunarak karşılaştırmak.
@@ -51,7 +54,7 @@ Proje, siyasi partiler ve aktörler değerlendirilirken yeterli, güvenilir ve k
 
 ### Onaylanan başlangıç kapsamı
 
-Kaynak: [TBMM — 28. Dönem Milletvekilleri Sandalye Dağılımı](https://tbmm.gov.tr/sandalyedagilimi). Başlangıç listesi oluşturulurken sayfa 2026-11-09 tarihinde görüntülenmiştir. Bu erişim tarihi, sayfanın kendi güncelleme tarihi olarak yorumlanamaz. Ham sayfanın bu proje deposunda arşivlenmesi ve listenin araştırma başlangıcında yeniden kontrol edilmesi henüz yapılmamıştır.
+Kaynak: [TBMM — 28. Dönem Milletvekilleri Sandalye Dağılımı](https://tbmm.gov.tr/sandalyedagilimi). Başlangıç listesi oluşturulurken sayfa 2026-11-09 tarihinde görüntülenmiştir. Bu erişim tarihi, sayfanın kendi güncelleme tarihi olarak yorumlanamaz. Faz 1 içinde sayfanın özgün baytları arşivlenmiş ve liste yeniden kontrol edilmiştir. İlk doğrulanmış TBMM yakalamasının `2026-11-10T14:38:46.154751+00:00` erişim anı ilk yöntem kesimidir; bu an sayfanın kendi güncelleme tarihi değildir.
 
 TBMM tablosundan elde edilen ve kullanıcının onayladığı ön liste, CHP ve Cumhur İttifakı'nın mevcut/geçmiş ortakları çıkarıldıktan sonra dokuz partidir:
 
@@ -136,7 +139,7 @@ Ortak konu başlıklarında tarama sırasında bulunan bütün uygun ve yeterli 
 
 Ana rapor sekmeleri partiler ve Karşılaştırmalı Özet olacaktır; her partinin altında ortak araştırma başlıkları bulunacaktır. Kaynaklar ilgili sekmenin altında listelenir ve metindeki ilgili ifadelerden rapordaki kaynak kaydına bağlantı verilir. Kaynak kaydı künye, ilgili pasaj, özgün bağlantı ve arşiv kopyasını bir araya getirir. Eksik bilgi durumu, gerekçe ve arama/erişim tarihi ilgili araştırma başlığında gösterilir. Ayrıntılı kararlar: [.planning/phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md](phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md).
 
-Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yapısı ve barındırma/yayın yeri henüz seçilmemiştir. Paylaşılabilir rapor hedefi kamuya otomatik yayın yapıldığı veya yayın izni alındığı anlamına gelmez. Siyasi partilere yönelik esas araştırma ve belge arşivleme henüz başlamamıştır.
+Faz 1 yerel Python/SQLite yazıcısı, değişmez belge arşivi, kapalı release snapshotları ve bunlardan üretilen sekmeli Türkçe HTML ile tamamlandı. Aktif SQLite yerel scratch üzerinde çalışır; kayıt, JSON ve HTML tek atomik release işaretçisiyle birlikte tutulur. PDF denetimindeki mevcut yerel Poppler/Cairo gereksinimleri README içinde belgelenir. Katkı/güncelleme sürecinin genişletilmesi ve barındırma/yayın yeri sonraki çalışmalardır. Kamuya yayın yapılmadı. Pilotun tüzük/program otoritesi ve doğrulanmış mali tutarları bakımından süren kaynak eksikleri raporda korunur; kullanıcı kabulü bu eksikleri yeni olguya dönüştürmez.
 
 ## Constraints
 
@@ -153,23 +156,28 @@ Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yap�
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Mevcut `proje/` klasöründe başlamak | Kullanıcının klasör seçimi | Onaylandı; uygulama aşaması bekliyor |
-| Başlangıç parti listesini TBMM kayıtlarına dayandırmak | Temsil durumunu doğrulanabilir birincil kaynaktan belirlemek | Onaylandı; ham kaynak arşivi ve yeniden kontrol bekliyor |
+| Mevcut `proje/` klasöründe başlamak | Kullanıcının klasör seçimi | Faz 1 yerel pilotu uygulandı ve kullanıcı kabulü alındı |
+| Başlangıç parti listesini TBMM kayıtlarına dayandırmak | Temsil durumunu doğrulanabilir birincil kaynaktan belirlemek | Faz 1 tarihli arşivi ve yeniden kontrolü tamamlandı |
 | CHP'yi kapsam dışında tutmak | İlk proje tanımındaki açık sınır | Onaylandı |
 | Cumhur İttifakı'nın mevcut ve geçmiş ortaklarını dışlamak | Kullanıcının kapsam daraltması ve geçmiş ortaklar için açık seçimi | Onaylandı; HÜDA PAR, DSP ve Yeniden Refah da dışarıda |
 | Dokuz partilik başlangıç ön listesini esas almak | TBMM tablosuna dışlama kurallarının uygulanması | Onaylandı; grup/parti kimlik eşleştirmesi araştırmada doğrulanacak |
-| Doğrudan aktarımı siyah, yapay zekâ özetini koyu mavi göstermek | Kullanıcının metin kökenini görünür kılma isteği | Onaylandı; HTML ve veri modelinde uygulanacak |
+| Doğrudan aktarımı siyah, yapay zekâ özetini koyu mavi göstermek | Kullanıcının metin kökenini görünür kılma isteği | Faz 1 HTML ve veri modelinde uygulandı |
 | Kaynaklı yapay zekâ özetine izin vermek; kaynaksız olgu üretimini dışlamak | Kullanıcının yapay zekâ ilkesini netleştirmesi | Onaylandı |
 | Eksik bilgi için üç ayrı durumu korumak | Bilgi eksikliğini ve erişim/doğrulama sorunlarını gizlememek | Onaylandı |
-| Ortak veri tabanından beslenen sekmeli HTML raporu hedeflemek | Paylaşılabilir ve güncellenebilir araştırma çıktısı | Onaylandı; teknik mimari bekliyor |
-| İncelemeyi partinin kuruluşundan başlatmak | Kullanıcının Phase 1 görüşmesindeki açık seçimi | Onaylandı; resmî kuruluş tarihi kaynakla doğrulanacak, veri kesim tarihi planlamada belirtilecek |
-| Yeni Parti ile pilotu başlatmak | Kullanıcının açık parti seçimi | Onaylandı; kimlik ve kuruluş tarihi doğrulaması araştırmada yapılacak |
+| Ortak veri tabanından beslenen sekmeli HTML raporu hedeflemek | Paylaşılabilir ve güncellenebilir araştırma çıktısı | Faz 1 yerel Python/SQLite ve sürümlü HTML mimarisinde uygulandı |
+| İncelemeyi partinin kuruluşundan başlatmak | Kullanıcının Phase 1 görüşmesindeki açık seçimi | Faz 1 arşivli sicil kaydı ve TBMM yakalamasına bağlı kesimle uygulandı |
+| Yeni Parti ile pilotu başlatmak | Kullanıcının açık parti seçimi | Faz 1 pilotu tamamlandı; kaynak sınırlarıyla birlikte kullanıcı kabulü alındı |
 | Ortak konularda bütün uygun eşleşmeleri almak ve ilgili belge zincirini takip etmek | Kullanıcının olay seçimi ve arama sonlandırma kararları | Onaylandı; ayrıntılar 01-CONTEXT.md içinde |
 | Parti bazlı ana sekmeler ve Karşılaştırmalı Özet kullanmak | Kullanıcının rapor düzeni seçimi | Onaylandı; kaynaklar sekme altında ve metinden bağlantıyla erişilecek |
 | Görünür metin türü etiketlerini kaldırıp siyah alıntıda tırnak kullanmak | Kullanıcının önceki etiket kararını açıkça güncellemesi | Onaylandı; koyu mavi özet ve veri kayıtlarındaki metin kökeni korunacak |
 | Kayıtlı GSD Sol/Terra modellerini 6.1'e geçirmek | Kullanıcının açık model güncelleme isteği; mevcut rol ve maliyet dağılımını korumak | Uygulandı; Luna seçimi ve reasoning seviyeleri korundu, otomatik Astra eklenmedi |
 | Gereksinimlerden önceki teknik ekosistem ön araştırmasını atlamak | Kullanıcı gereksinimlerin mevcut proje tanımından çıkarılmasını seçti | Onaylandı; esas kaynak araştırması ve aşama doğrulama ayarları korunuyor |
 | Önce tek partide çalışan örnekle ilerlemek; bütün aşamaları mvp modunda kurmak | Kullanıcı kaynak → veri tabanı → sekmeli HTML akışının önce bir pilotta tamamlanmasını seçti | Onaylandı; 35 gereksinimi kapsayan altı aşamalı yol haritası kullanıcı tarafından onaylandı |
+
+| Yerel scratch ve kapalı snapshot ile sürümlü yayın | NFS üzerinde aktif DB çalıştırmamak ve başarısız üretimde önceki raporu korumak | Faz 1 uygulandı; atomik pointer ve hata testleri mevcut |
+| İlk doğrulanmış TBMM yakalamasını veri kesimi yapmak | Tekrarlanabilir dönem ve ayrı erişim/olay/belge tarihleri | 2026-11-10T14:38:46.154751+00:00; kullanıcı tarafından önceden seçilmiş tarih olarak sunulmaz |
+| Yeni kanıtla çözülen eksikleri tarihçede korumak | Aday/eksik geçişini ve kanıt değişimini izlemek | Faz 1 aday ledger ve çözüm kayıtlarıyla uygulandı |
+| Faz 1 UAT kabulünü toplu kullanıcı yanıtıyla kaydetmek | Kullanıcının açık onayıyla kapanış; yeni test veya kaynak olgusu üretmemek | 8/8 kabul, bildirilen sorun yok; ham 13 uç sınıflandırması ve kaynak eksikleri korunur |
 
 ## Evolution
 
@@ -189,4 +197,4 @@ Bu belge aşama geçişlerinde ve kilometre taşı sınırlarında güncellenir.
 4. Parti kapsamı, kaynaklar, kullanıcı geri bildirimi ve çıktılardaki güncel durumu Context bölümüne işle.
 
 ---
-*Last updated: 2026-11-09 after the Phase 1 discussion and the user's text presentation correction*
+*Last updated: 2026-11-10 after Phase 1 UAT acceptance and completion*

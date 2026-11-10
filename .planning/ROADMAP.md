@@ -13,7 +13,7 @@
 
 **Phase Numbering:** Tam sayı aşamalar ana çalışmayı, gerektiğinde eklenecek ondalık aşamalar ara işleri gösterir. Sıralama 1 → 2 → 3 → 4 → 5 → 6'dır.
 
-- [ ] **Phase 1: Kapsam, yöntem ve kaynaklı pilot rapor** - Okur, kapsamı ve araştırma yöntemini görebilir; seçilen bir partinin beş başlıklı pilot dosyasını ortak kayıttan HTML raporuna ve arşiv belgelerine kadar izleyebilir.
+- [x] **Phase 1: Kapsam, yöntem ve kaynaklı pilot rapor** - Okur, kapsamı ve araştırma yöntemini görebilir; seçilen bir partinin beş başlıklı pilot dosyasını ortak kayıttan HTML raporuna ve arşiv belgelerine kadar izleyebilir. (completed 2026-11-10)
 - [ ] **Phase 2: Bütün partiler için dosyalar ve sürümlü kaynaklar** - Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir.
 - [ ] **Phase 3: Tüzük ve programların karşılaştırılması** - Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir.
 - [ ] **Phase 4: Söylem ve belgelenmiş uygulamaların karşılaştırılması** - Okur, ilan edilen ilke ve vaatlerin belgelenmiş uygulamalarla ilişkisini ortak yöntem ve olay bağlamı içinde değerlendirebilir.
@@ -36,7 +36,7 @@
 4. Okur, aynı pilot içerikte doğrudan aktarımı siyah ve tırnak içinde, kaynaklı yapay zekâ özetini koyu mavi görebilir; görünür metin türü etiketi kullanılmaz, metin kökeni veri kayıtlarında korunur. Olgu, kaynağın beyanı ve yorum birbirinden ayrılır.
 5. Araştırmacı üç eksik bilgi durumunu ayrı kaydedebilir; okur eksik listesinde parti/konu, arama veya erişim tarihi ve gerekçeyi görebilir. Yalnız denenmiş aramalar bu durumlara dönüştürülür; eksikler sıfır veya olumsuz bulgu sayılmaz.
 
-**Plans:** 6/6 plans executed
+**Plans:** 6/6 plans complete
 
 Plans:
 **Wave 1**
@@ -159,7 +159,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | In Progress|  |
+| 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 0/TBD | Not started | - |
 | 3. Tüzük ve programların karşılaştırılması | 0/TBD | Not started | - |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |

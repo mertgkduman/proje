@@ -65,3 +65,7 @@
 - `data/current.json` and `data/releases/6fd06aa1a6c643ed99b2b1c95f32822d/index.html`
 - `src/rapor.py`, `tests/browser_probe.py`, `README.md`, `AGENTS.md`
 - `01-CONTEXT.md` and phase 01 plans and summaries (01–06)
+
+## Kapanış kaydı — 2026-11-10T19:55:29.442929+00:00
+
+Bu tarihsel görsel audit 6fd06aa1 sürümüne ve yalnız kod incelemesine aittir; puanı sonradan yükseltilmedi. `01-UI-FIX.md` yeni renderer 7 düzeltmelerini ve Chromium kanıtlarını açıklar. Kullanıcı mevcut raporun sekiz UAT kontrolünü topluca kabul etti; bu kayıt yeni mobil cihaz veya bağımsız görsel test iddiası değildir.

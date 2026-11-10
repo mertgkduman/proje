@@ -95,3 +95,7 @@ Test dosyaları ve test adları, görev komutları ile çapraz kontrol edildi. Y
 ## UI repair verification 2026-11-10T17:35:20.374044+00:00
 
 UI-FIX ve 3e4f7ad commitinden sonra tam paket: TESTS_OK count=44; 34,546 sn. PHASE1_AUDIT_OK 7b69e39259214749b36bd655e60c7e66. Kapsam/girişim hash bağlantısı, viewport meta ve Türkçe okuyucu etiketleri gerçek Chromium file/loopback probuyla kontrol edildi. Dar/geniş ekran görüntüleri masaüstü pencereleridir; gerçek mobil ve insan erişilebilirliği incelemesi bekliyor.
+
+## Kullanıcı kabulü — 2026-11-10T19:55:29.442929+00:00
+
+Sekiz manuel UAT kontrolü kullanıcının `$gsd-verify-work 1 onaylıyorum` yanıtıyla topluca kabul edildi. `01-UAT.md` 8 pass / 0 issue gösterir. Yukarıdaki ilk teknik inceleme anına ait bekliyor/açık ifadeleri tarihsel kanıttır; yeni test veya tekil cihaz incelemesi iddiası eklenmedi. 13 ham uç sınıflandırması değiştirilmedi.

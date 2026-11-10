@@ -10,10 +10,10 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Kapsam ve yöntem
 
-- [ ] **KAPS-01**: Okur, başlangıç parti listesini tarihli TBMM kaydı ve arşivlenmiş kaynak kopyasıyla görebilir.
-- [ ] **KAPS-02**: Okur, CHP ile Cumhur İttifakı'nın mevcut/geçmiş ortaklarının dışlanma gerekçelerini görebilir; HÜDA PAR, DSP ve Yeniden Refah kapsam dışında tutulur.
-- [ ] **KAPS-03**: Okur, parti kimliği, milletvekilinin parti üyeliği ve ortak Meclis grubu arasındaki ayrımı kaynaklarıyla izleyebilir.
-- [ ] **KAPS-04**: Okur, partinin kuruluşundan başlayan inceleme dönemini, olay seçme ölçütlerini ve bütün partilere uygulanan ortak araştırma yöntemini görebilir.
+- [x] **KAPS-01**: Okur, başlangıç parti listesini tarihli TBMM kaydı ve arşivlenmiş kaynak kopyasıyla görebilir.
+- [x] **KAPS-02**: Okur, CHP ile Cumhur İttifakı'nın mevcut/geçmiş ortaklarının dışlanma gerekçelerini görebilir; HÜDA PAR, DSP ve Yeniden Refah kapsam dışında tutulur.
+- [x] **KAPS-03**: Okur, parti kimliği, milletvekilinin parti üyeliği ve ortak Meclis grubu arasındaki ayrımı kaynaklarıyla izleyebilir.
+- [x] **KAPS-04**: Okur, partinin kuruluşundan başlayan inceleme dönemini, olay seçme ölçütlerini ve bütün partilere uygulanan ortak araştırma yöntemini görebilir.
 
 ### Standart parti dosyaları
 
@@ -28,8 +28,8 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 ### Kaynaklar ve belge arşivi
 
 - [ ] **KAY-01**: Okur, kullanılan kaynakların türünü ve birincil kaynaklara verilen önceliği görebilir; gazetecilik, akademik çalışma ve bağımsız raporlar açıkça etiketlenir.
-- [ ] **KAY-02**: Okur, her önemli bulgunun kaynak bağlantısını, belge tarihini, varsa sürümünü, ilgili madde/sayfa veya pasajını, erişim tarihini ve doğrulama tarihini görebilir.
-- [ ] **KAY-03**: Araştırmacı, erişilebilen kaynak belgelerini özgün dosya veya tarihli sayfa kopyası olarak arşivleyebilir; arşiv kaydı özgün bağlantıya geri izlenebilir.
+- [x] **KAY-02**: Okur, her önemli bulgunun kaynak bağlantısını, belge tarihini, varsa sürümünü, ilgili madde/sayfa veya pasajını, erişim tarihini ve doğrulama tarihini görebilir.
+- [x] **KAY-03**: Araştırmacı, erişilebilen kaynak belgelerini özgün dosya veya tarihli sayfa kopyası olarak arşivleyebilir; arşiv kaydı özgün bağlantıya geri izlenebilir.
 - [ ] **KAY-04**: Okur, bulgunun hangi belge sürümüne ve döneme dayandığını izleyebilir; farklı sürümler sessizce birbirinin yerine geçirilmez.
 
 ### Söylem, uygulama ve mali bilgiler
@@ -42,12 +42,12 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Metin kökeni ve eksik bilgiler
 
-- [ ] **MET-01**: Okur, kaynaktan değişmeden alınmış doğrudan aktarımları siyah renkte ve tırnak içinde görebilir.
-- [ ] **MET-02**: Okur, yapay zekânın kaynaklardan özetleyip düzenlediği metinleri koyu mavi renkte görebilir; her özet dayandığı kaynaklara bağlıdır ve kaynakta bulunmayan olgular eklenmez.
-- [ ] **MET-03**: Okur, doğrudan aktarımı tırnak işaretleri ve alıntı yapısıyla renge bağlı kalmadan ayırt edebilir; görünür metin türü etiketi kullanılmaz. Alıntı/özet türü veri kayıtlarında ve dışa aktarımında korunur.
-- [ ] **MET-04**: Okur, doğrulanmış olguyu, bir kaynağın kendi beyanını ve yorumu açıkça ayırt edebilir.
-- [ ] **EKS-01**: Araştırmacı, eksikleri “Bulunamadı”, “Erişilemedi” ve “Doğrulanamadı” olarak ayrı ayrı kaydedebilir.
-- [ ] **EKS-02**: Okur, eksik bilgi listesini ilgili parti/konu, arama veya erişim tarihi ve eksikliğin gerekçesiyle görebilir; eksiklik sıfır değer veya olumsuz bulgu gibi sunulmaz.
+- [x] **MET-01**: Okur, kaynaktan değişmeden alınmış doğrudan aktarımları siyah renkte ve tırnak içinde görebilir.
+- [x] **MET-02**: Okur, yapay zekânın kaynaklardan özetleyip düzenlediği metinleri koyu mavi renkte görebilir; her özet dayandığı kaynaklara bağlıdır ve kaynakta bulunmayan olgular eklenmez.
+- [x] **MET-03**: Okur, doğrudan aktarımı tırnak işaretleri ve alıntı yapısıyla renge bağlı kalmadan ayırt edebilir; görünür metin türü etiketi kullanılmaz. Alıntı/özet türü veri kayıtlarında ve dışa aktarımında korunur.
+- [x] **MET-04**: Okur, doğrulanmış olguyu, bir kaynağın kendi beyanını ve yorumu açıkça ayırt edebilir.
+- [x] **EKS-01**: Araştırmacı, eksikleri “Bulunamadı”, “Erişilemedi” ve “Doğrulanamadı” olarak ayrı ayrı kaydedebilir.
+- [x] **EKS-02**: Okur, eksik bilgi listesini ilgili parti/konu, arama veya erişim tarihi ve eksikliğin gerekçesiyle görebilir; eksiklik sıfır değer veya olumsuz bulgu gibi sunulmaz.
 
 ### Karşılaştırmalar ve HTML raporu
 
@@ -60,7 +60,7 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Ortak veri tabanı ve güncelleme
 
-- [ ] **VER-01**: Araştırmacı, parti, belge, bulgu ve karşılaştırma kayıtlarını ortak veri tabanında kaynak ilişkileri korunarak saklayabilir.
+- [x] **VER-01**: Araştırmacı, parti, belge, bulgu ve karşılaştırma kayıtlarını ortak veri tabanında kaynak ilişkileri korunarak saklayabilir.
 - [ ] **VER-02**: Araştırmacı, yeni belge, belge sürümü ve bulgu ekleyebilir veya düzeltme yapabilir; değişiklik tarihi, gerekçesi ve önceki kayda bağlantı korunur.
 - [ ] **VER-03**: Araştırmacı, güncellenen ortak kayıtlardan parti dosyalarını, karşılaştırmaları ve HTML raporunu yeniden üretebilir.
 
@@ -106,10 +106,10 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| KAPS-01 | Phase 1 | Pending |
-| KAPS-02 | Phase 1 | Pending |
-| KAPS-03 | Phase 1 | Pending |
-| KAPS-04 | Phase 1 | Pending |
+| KAPS-01 | Phase 1 | Complete |
+| KAPS-02 | Phase 1 | Complete |
+| KAPS-03 | Phase 1 | Complete |
+| KAPS-04 | Phase 1 | Complete |
 | DOS-01 | Phase 2 | Pending |
 | DOS-02 | Phase 2 | Pending |
 | TUZ-01 | Phase 3 | Pending |
@@ -118,31 +118,32 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 | TUZ-04 | Phase 3 | Pending |
 | PRG-01 | Phase 3 | Pending |
 | KAY-01 | Phase 2 | Pending |
-| KAY-02 | Phase 1 | Pending |
-| KAY-03 | Phase 1 | Pending |
+| KAY-02 | Phase 1 | Complete |
+| KAY-03 | Phase 1 | Complete |
 | KAY-04 | Phase 2 | Pending |
 | UYG-01 | Phase 4 | Pending |
 | UYG-02 | Phase 4 | Pending |
 | MAL-01 | Phase 5 | Pending |
 | MAL-02 | Phase 5 | Pending |
 | MAL-03 | Phase 5 | Pending |
-| MET-01 | Phase 1 | Pending |
-| MET-02 | Phase 1 | Pending |
-| MET-03 | Phase 1 | Pending |
-| MET-04 | Phase 1 | Pending |
-| EKS-01 | Phase 1 | Pending |
-| EKS-02 | Phase 1 | Pending |
+| MET-01 | Phase 1 | Complete |
+| MET-02 | Phase 1 | Complete |
+| MET-03 | Phase 1 | Complete |
+| MET-04 | Phase 1 | Complete |
+| EKS-01 | Phase 1 | Complete |
+| EKS-02 | Phase 1 | Complete |
 | KAR-01 | Phase 3 | Pending |
 | KAR-02 | Phase 3 | Pending |
 | KAR-03 | Phase 4 | Pending |
 | RAP-01 | Phase 6 | Pending |
 | RAP-02 | Phase 3 | Pending |
 | RAP-03 | Phase 6 | Pending |
-| VER-01 | Phase 1 | Pending |
+| VER-01 | Phase 1 | Complete |
 | VER-02 | Phase 6 | Pending |
 | VER-03 | Phase 6 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 35 total
 - Mapped to phases: 35
 - Unmapped: 0
@@ -150,4 +151,3 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 ---
 *Requirements defined: 2026-11-09*
 *Last updated: 2026-11-09 after the Phase 1 discussion; requirement IDs and the six-phase mapping are preserved*
-
