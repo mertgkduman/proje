@@ -110,6 +110,30 @@ def readable_bytes(content, kind):
     return ('<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>' + html.escape(decoded) + '</pre>').encode('utf-8')
 
 
+def check_identity(db, values):
+    party = db.execute('SELECT * FROM party WHERE id=?', (values['entity_id'],)).fetchone()
+    source = db.execute('SELECT d.party_id,d.source_kind,v.final_url,v.original_path FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (values['passage_id'],)).fetchone()
+    if not party or party['registry_key'] != values['registry_key'] or values['entity_kind'] != 'party' or not source or source['party_id'] != party['id'] or source['source_kind'] != 'registry':
+        raise ValueError('Kimlik ve sicil kaynağı partiyle uyuşmuyor')
+    url = urllib.parse.urlsplit(source['final_url'])
+    match = re.fullmatch(r'/sipar/(\d+)', url.path)
+    if url.scheme != 'https' or url.hostname not in ('yargitaycb.gov.tr','www.yargitaycb.gov.tr') or not match:
+        raise ValueError('Kimlik için resmi sicil sayfası gerekli')
+    registry_key = 'yargitay-' + match.group(1)
+    # Existing TİP key is a historical TBMM identifier; the crosswalk to
+    # Yargıtay 208 was manually established for this one entity.
+    legacy = (party['id'], party['registry_key'], registry_key) == ('tip','tbmm-f72877bd-6276-037b-e050-007f01005610','yargitay-208')
+    if party['registry_key'] != registry_key and not legacy: raise ValueError('Sicil anahtarı kaynak adresiyle uyuşmuyor')
+    content = safe_path(DATA, source['original_path']).read_text(encoding='utf-8', errors='replace')
+    if party['legal_name'].casefold() not in content.casefold(): raise ValueError('Parti adı sicil kaynağında yok')
+    dates = []
+    for key in ('valid_from','valid_to'):
+        if values.get(key):
+            date = dt.date.fromisoformat(values[key]); dates.append(date)
+            if date.strftime('%d.%m.%Y') not in content and date.isoformat() not in content: raise ValueError('Kimlik tarihi sicil kaynağında yok')
+    if values.get('valid_from') and values.get('valid_to') and dates[1] < dates[0]: raise ValueError('Kimlik dönemi geçersiz')
+
+
 def pdf_libraries():
     libraries = []
     for name in ('poppler-glib', 'gobject-2.0', 'glib-2.0'):
@@ -279,9 +303,7 @@ def record(work, kind, values):
         if kind in ('topic_search', 'url_alias'):
             raise ValueError('Durum ve takma adlar ilgili işlem tarafından yönetilir')
         if kind == 'identity_observation':
-            party = db.execute('SELECT registry_key FROM party WHERE id=?', (values['entity_id'],)).fetchone()
-            if not party or party['registry_key'] != values['registry_key']:
-                raise ValueError('Kimlik anahtarı parti kaydıyla eşleşmiyor')
+            check_identity(db, values)
         if kind == 'method':
             raise ValueError('Yöntem kesimi freeze komutuyla kaydedilir')
         if kind == 'event_date':
@@ -679,7 +701,7 @@ def freeze_cutoff(work, tbmm_version, version=1):
         db.close()
 
 
-def export_db(path, release_id):
+def export_db(path, release_id, strict_identity=False):
     db = connect_readonly(path)
     try:
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
@@ -690,6 +712,8 @@ def export_db(path, release_id):
         result = {'schema_version': 3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1), 'release_id': release_id}
         for name in names:
             result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY rowid')]
+        if strict_identity:
+            for identity in result.get('identity_observation', []): check_identity(db, identity)
         if result['schema_version'] == 3:
             versions = {v['id']: v for v in result['document_version']}
             for method in result['method']:
@@ -780,7 +804,7 @@ def audit_release(release='current'):
 
 def validate_phase_one_workspace(work):
     path = Path(work) / 'records.sqlite3'
-    data = export_db(path, 'workspace')
+    data = export_db(path, 'workspace', strict_identity=True)
     db = connect_readonly(path)
     try:
         for attempt in db.execute("SELECT * FROM attempt WHERE lead_id IS NOT NULL AND type='access' AND result='examined'"):
@@ -855,7 +879,7 @@ def publish_release(work, fail_at=None):
         db.commit(); db.close()
         if fail_at == 'close': raise RuntimeError('Enjekte edilen kapatma hatası')
         shutil.copyfile(work / 'records.sqlite3', staging / 'records.sqlite3')
-        payload = export_db(staging / 'records.sqlite3', release)
+        payload = export_db(staging / 'records.sqlite3', release, strict_identity=True)
         (staging / 'records.json').write_text(json.dumps(payload, ensure_ascii=False, sort_keys=True, indent=2) + '\n', encoding='utf-8')
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
         (staging / 'index.html').write_text(render_report(payload), encoding='utf-8')

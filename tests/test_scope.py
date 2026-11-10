@@ -27,9 +27,17 @@ class ScopeContract(unittest.TestCase):
                 shutil.copytree(previous, arsiv.DATA)
                 work = arsiv.open_workspace(tmp)
                 arsiv.record(work, 'party', dict(id='same-name-old', legal_name='YENİ PARTİ', registry_key='old-same-name'))
-                arsiv.record_identity(work, 'identity_observation', dict(entity_id='same-name-old', entity_kind='party', registry_key='old-same-name', valid_from=None, valid_to=None, passage_id='kurulus'))
+                with self.assertRaises(ValueError):
+                    arsiv.record_identity(work, 'identity_observation', dict(entity_id='same-name-old', entity_kind='party', registry_key='old-same-name', valid_from=None, valid_to=None, passage_id='kurulus'))
                 with self.assertRaises(ValueError):
                     arsiv.record_identity(work, 'identity_observation', dict(entity_id='yeni-parti', entity_kind='party', registry_key='old-same-name', valid_from=None, valid_to=None, passage_id='kurulus'))
+                db = arsiv.connect(work / 'records.sqlite3')
+                db.execute("UPDATE identity_observation SET valid_from='2000-01-01' WHERE entity_id='yeni-parti'")
+                db.commit(); db.close()
+                with self.assertRaises(ValueError): arsiv.export_db(work / 'records.sqlite3', 'test', strict_identity=True)
+                db = arsiv.connect(work / 'records.sqlite3')
+                db.execute("UPDATE identity_observation SET valid_from='2026-07-24' WHERE entity_id='yeni-parti'")
+                db.commit(); db.close()
                 with self.assertRaises(sqlite3.IntegrityError):
                     arsiv.record_scope(work, 'scope_observation', dict(id='bad', party_id='yeni-parti', observed_at='2026-11-10', source_passage_id='missing', representation_kind='party', discrepancy_reason=None))
                 arsiv.publish_release(work)
