@@ -11,6 +11,8 @@ Python 3 ve standart kitaplık ile yerel kullanım içindir. Ağdan kaynak alma 
 
 JSON ve HTML yalnız snapshot'tan türetilir; elle düzenlenmez. `python3 tests/run.py` tüm testleri, `python3 tests/run.py --pattern test_publication.py` seçili testleri çalıştırır; sıfır test başarı değildir. Tarayıcı testi Chrome/Chromium'u veya `BROWSER_BIN` ile verilen çalıştırılabilir dosyayı kullanır.
 
+Yeni kanıtla açık eşleşme adayını çözmek için `python3 src/arsiv.py resolve-candidate --workspace DIZIN --candidate ADAY --match ESLESME --input -` komutuna `missing_id`, `resolved_at`, `passage_id` ve `reason` içeren JSON verin. Geçiş ve çözüm kaydı atomiktir; önceki eksik kaydı korunur.
+
 Taşıma ve kurtarma için `data/current.json`, `data/releases/` ve `data/objects/` dizinlerini birlikte koruyun. Yeni çalışma alanı geçerli kapalı SQLite snapshot'ından açılır; uygulama dosyaları ve sürümlü rapor üreticileri de korunmalıdır. Önce audit çalıştırın. Bağlantılı özgün HTML dosyaları indirme, kaçışlanmış okunabilir kopyalar görüntüleme içindir.
 
 Yeni Parti'nin tüzük ve program kopyalarının yetkisi henüz doğrulanmadı; TİP kaynağı yalnız ortak konu sözlüğündeki bir konu için dayanak olarak kullanıldı. Toplu ve yerel seçim haberleri ile ayrı beyanlar örtüşür; eşleşme sayıları bağımsız olay toplamı değildir. Kesim 2026-11-10T14:38:46.154751+00:00; sonradan edinilen kaynak bu tarihten önceki olaylara ilişkin olabilir. İnsan kaynak, tarafsızlık ve arayüz incelemesi henüz tamamlanmamıştır; otomatik audit maddi doğruluğu veya dört açık tarafsızlık yasağını tek başına karara bağlamaz.

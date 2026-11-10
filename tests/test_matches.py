@@ -3,6 +3,7 @@ import re
 import shutil
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 import arsiv
@@ -94,9 +95,12 @@ class MatchContract(unittest.TestCase):
         arsiv.record(self.work, 'match_candidate', dict(id='test-candidate',party_id='yeni-parti',topic_id='organ-secimi',passage_id='statement',status='unverified',missing_id='test-missing',rationale='Kanıt bekleniyor',reviewed_at='2026-11-10T15:00:00+00:00'))
         arsiv.record_match(self.work, dict(self.match,id='resolved-match'))
         resolution=dict(missing_id='test-missing',resolved_at='2026-11-10T16:00:00+00:00',passage_id='occurrence',reason='Olay pasajı incelendi.')
-        with self.assertRaises(ValueError): arsiv.resolve_candidate(self.work,'test-candidate','resolved-match',dict(resolution,passage_id='authority'))
+        import sys
+        import io
+        args=['arsiv.py','resolve-candidate','--workspace',str(self.work),'--candidate','test-candidate','--match','resolved-match']
+        with patch.object(sys, 'argv', args), patch.object(sys, 'stdin', io.StringIO(json.dumps(dict(resolution,passage_id='authority')))), self.assertRaises(ValueError): arsiv.main()
         with self.assertRaises(ValueError): arsiv.resolve_candidate(self.work,'test-candidate','resolved-match',dict(resolution,resolved_at='2026-11-09T16:00:00+00:00'))
-        arsiv.resolve_candidate(self.work,'test-candidate','resolved-match',resolution)
+        with patch.object(sys, 'argv', args), patch.object(sys, 'stdin', io.StringIO(json.dumps(resolution))): arsiv.main()
         self.db = arsiv.connect(self.work / 'records.sqlite3')
         self.assertEqual(self.db.execute("SELECT status FROM match_candidate WHERE id='test-candidate'").fetchone()[0], 'eligible')
         self.assertEqual(self.db.execute("SELECT count(*) FROM missing WHERE id='test-missing'").fetchone()[0], 1)

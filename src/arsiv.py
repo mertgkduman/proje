@@ -856,6 +856,7 @@ def main():
     c = sub.add_parser('capture'); c.add_argument('--url', required=True); c.add_argument('--kind', choices=['html', 'pdf'], required=True); c.add_argument('--out')
     w = sub.add_parser('workspace'); w.add_argument('--scratch')
     r = sub.add_parser('record'); r.add_argument('--workspace', required=True); r.add_argument('--kind', required=True); r.add_argument('--input', default='-')
+    rc = sub.add_parser('resolve-candidate'); rc.add_argument('--workspace', required=True); rc.add_argument('--candidate', required=True); rc.add_argument('--match', required=True); rc.add_argument('--input', default='-')
     ch = sub.add_parser('chain'); ch.add_argument('--workspace', required=True); ch.add_argument('--party', required=True); ch.add_argument('--topic', required=True)
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True)
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
@@ -868,6 +869,9 @@ def main():
         import sys
         result = record(args.workspace, args.kind, json.load(sys.stdin) if args.input == '-' else json.loads(Path(args.input).read_text(encoding='utf-8')))
         if result is not None: print(result)
+    elif args.command == 'resolve-candidate':
+        import sys
+        resolve_candidate(args.workspace, args.candidate, args.match, json.load(sys.stdin) if args.input == '-' else json.loads(Path(args.input).read_text(encoding='utf-8')))
     elif args.command == 'chain':
         assert_lock(args.workspace)
         db = connect(Path(args.workspace) / 'records.sqlite3')
