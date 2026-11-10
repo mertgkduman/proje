@@ -24,7 +24,7 @@
 
 ### Phase 1: Kapsam, yöntem ve kaynaklı pilot rapor
 
-**Goal:** Okur, kapsamı ve araştırma yöntemini görebilir; seçilen bir partinin beş başlıklı pilot dosyasını ortak kayıttan HTML raporuna ve arşiv belgelerine kadar izleyebilir.
+**Goal:** As a okur, I want to kapsamı ve araştırma yöntemini görmek ve seçilen bir partinin beş başlıklı pilot dosyasını ortak kayıttan HTML raporuna ve arşiv belgelerine kadar izlemek, so that bulguların dayanaklarını kendim inceleyebilirim.
 **Mode:** mvp
 **Depends on:** Nothing (first phase)
 **Requirements:** KAPS-01, KAPS-02, KAPS-03, KAPS-04, KAY-02, KAY-03, MET-01, MET-02, MET-03, MET-04, EKS-01, EKS-02, VER-01
