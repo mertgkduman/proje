@@ -1,9 +1,10 @@
 ---
 phase: 01-kapsam-y-ntem-ve-kaynakl-pilot-rapor
 verified: 2026-11-10T17:43:56Z
-status: human_needed
-score: 12/13 must-haves verified
+status: passed
+score: 13/13 must-haves accepted (12 technical, 1 user-confirmed)
 covered_files:
+
   - ".planning/PROJECT.md"
   - ".planning/REQUIREMENTS.md"
   - ".planning/ROADMAP.md"
@@ -140,40 +141,20 @@ covered_files:
   - "tests/test_scope.py"
   - "tests/test_topics.py"
   - "tests/test_tracer.py"
+
 covered_digest: "v1:sha256:98831e005fad1350faf622ec5a1b3cf0a46efeb0af481ffe948f43788d91c87c"
-behavior_unverified: 1
+behavior_unverified: 0
 overrides_applied: 0
 decision_coverage:
   honored: 24
   total: 24
   not_honored: []
-behavior_unverified_items:
-  - truth: "Okur dokuz parti ana sekmesi ve Karşılaştırmalı Özet içinde ortak beş başlığı açabilir; gerçek pilot Yeni Parti'dedir (D-13, D-14, D-15)."
-    test: "Raporu aç; bütün sekmeleri klavyeyle değiştir; doğrudan kaynak ve girişim bağlantısını, geri dönüşü ve odağı dene."
-    expected: "Seçili sekme, görünür panel, aria-selected ve odak tutarlı kalır; kaynak/girişim hedefi açılır; geri dönüş okuma yerine ulaşır."
-    why_human: "Kod ve mevcut test bağlıdır; test_scoped_parties_and_summary_are_navigable kendi HTTP sunucusunu başlattığından bu doğrulayıcının servis başlatmama sınırı içinde çalıştırılmadı. Tracer yalnız tek kaynak tıklamasını sınar."
-unverified_prohibitions:
-  - statement: "Kapsam seçimi partiler hakkında başarısızlık, destek veya siyasi sıralama sonucu gibi sunulmamalıdır."
-    status: unverified
-    verification: null
-    flagged: true
-    human_item: H4
-  - statement: "İlan edilen taramada bulunan uygun kanıtlı eşleşmeler olumlu veya olumsuz sonuçlarına göre seçilerek rapordan çıkarılmamalıdır."
-    status: unverified
-    verification: null
-    flagged: true
-    human_item: H5
-  - statement: "Kaynakta bulunmayan olgu eklenmemeli; kaynağın beyanı gerçekleşmiş uygulama veya doğrulanmış olgu gibi sunulmamalıdır."
-    status: unverified
-    verification: null
-    flagged: true
-    human_item: H6
-  - statement: "Eksik veya araştırılmamış bilgi sıfır, uyumsuzluk ya da parti lehine veya aleyhine sonuç gibi sunulmamalıdır."
-    status: unverified
-    verification: null
-    flagged: true
-    human_item: H7
+behavior_unverified_items: []
+
+unverified_prohibitions: []
+
 human_verification:
+
   - test: "H1 — Kapsam, hukuki kimlik ve dönem: arşivli TBMM/Yargıtay kopyalarını karşılaştır."
     expected: "Dokuz ad ve yedi kapsam dışlama kararı doğru kökenle gösterilir; parti/üyelik/grup ayrımı korunur. Yeni Parti kuruluşu ve TİP yargitay-208 ile tarihsel TBMM tanımlayıcısının bağlantısı kaynak anlamıyla doğrulanır; kesim ve tarih belirsizlikleri doğru yorumlanır."
     why_human: "FK, adres, anahtar ve metin eşleşmesi hukuki kimlik veya tarih alanının anlamını tek başına ispatlamaz. Yalnız ilk 01-01 tracer onaylanmıştır."
@@ -198,7 +179,13 @@ human_verification:
   - test: "H8 — COVERAGE.md içindeki 13 unclassified/unresolved uç satırını ayrı ayrı incele."
     expected: "KAPS-01–04, KAY-02–03, MET-01–04, EKS-01–02 ve VER-01 için varsayım ya açık gerekçeyle çözülür ya da açık bırakılır; normal test başarısı otomatik çözüm sayılmaz."
     why_human: "Motor her satırda verification/resolution/reason=null ve unclassified — review manually üretmiştir; bu rapor yeni sınıflandırma veya insan onayı uydurmaz."
+
+human_verification_completed: true
+human_accepted_at: "2026-11-10T19:53:28.477132+00:00"
+human_acceptance_source: "01-UAT.md — user: $gsd-verify-work 1 onaylıyorum"
 ---
+
+> Kapanış notu: Aşağıdaki teknik değerlendirme ilk doğrulamanın tarihsel kaydıdır. Kullanıcının sonraki toplu UAT kabulü dosyanın sonundadır; ilk 12/13 skoru ve bekleyen insan kontrolü ifadeleri o zamanki durumu anlatır.
 
 # Phase 1: Kapsam, yöntem ve kaynaklı pilot rapor Verification Report
 
@@ -386,6 +373,7 @@ Bu fuzzy kapsam kontrolü uyarı düzeyindedir; 24 insan kararı verilmiş oldu�
 **Disabled requirements tests:** 0. **Circular expected-value fixtures:** 0. **BLOCKER test kalitesi bulgusu:** 0.
 
 Disconfirmation kontrolü:
+
 - **Kısmen otomatik kanıtlanan gereksinim:** MET-02'nin kaynak dışına çıkmama kısmı ve MET-04'ün epistemik ataması şemayla kanıtlanamaz; NEEDS HUMAN olarak kaldı.
 - **Tek başına yanıltıcı test:** `ScopeContract.test_scope_writer_exists` yalnız callable varlığını sınar; KAPS-03 için kanıt sayılmadı. Daha güçlü negatif testler, gerçek kaynak ilişkileri ve H1 birlikte değerlendirildi.
 - **Bağımsız davranış kanıtı olmayan hata yolu:** capture_source'un canlı ağ timeout/boyut/MIME hata yolları bu turda çalıştırılmadı. 30 sn timeout ve 20 MiB sınırı kodda vardır; bütün ağ hata kipleri sınandı denmez. Güvenlik kaydındaki kapalı kontrol durumu sertifika veya kaynak onayı sayılmaz.
@@ -492,3 +480,10 @@ Sekiz insan inceleme kalemi, dört **flagged-unverified prohibition** ve 13 **un
 _Verified: 2026-11-10T17:43:56Z_
 _Verifier: the agent (gsd-verifier)_
 
+## Kullanıcı UAT kabulü — 2026-11-10T19:53:28.477132+00:00
+
+Kullanıcı `$gsd-verify-work 1 onaylıyorum` yanıtıyla daha önce sunulan H1–H8 kontrollerini topluca kabul etti; `01-UAT.md` 8 pass / 0 issue / 0 pending olarak kaydedildi. T12 bu kullanıcı teyidiyle kabul edilmiştir; toplam 13/13 ölçüt kabul edildi. Bağımsız teknik test kapsamı geriye dönük genişletilmedi.
+
+H4–H7 kapsamındaki dört prohibition kullanıcı tarafından kabul edildi. H8 kapsamındaki 13 motor sınıflandırmasının ham `unclassified/unresolved` kaydı korunur; bunlar testlerle otomatik çözülmüş gösterilmedi. Kullanıcı bu açık yöntem sınıflandırmalarını ve raporda belirtilen kaynak sınırlarını kabul ederek faz kapanışını onayladı.
+
+Bu kayıt yeni saha araştırması, ayrı ayrı cihaz testi veya kaynak otoritesinin yeni kanıtla doğrulanması iddiası değildir. Pilot belge/mali eksikleri raporda aynı durumlarıyla kalır.
