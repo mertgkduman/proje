@@ -27,7 +27,7 @@ class TracerTest(unittest.TestCase):
         self.assertIn('Kuruluş Tarihi', raw.decode('utf-8'))
         with sqlite3.connect(folder / 'records.sqlite3') as db:
             self.assertEqual(db.execute('select exact from passage').fetchone()[0], '24.07.2026')
-            self.assertEqual(db.execute('select count(*) from finding_evidence').fetchone()[0], 2)
+            self.assertEqual(db.execute("select count(*) from finding_evidence where finding_id in ('kurulus-summary', 'kurulus-quote') and passage_id='kurulus'").fetchone()[0], 2)
         page = (folder / 'index.html').read_text(encoding='utf-8')
         self.assertIn('#003366', page)
         self.assertIn('“24.07.2026”', page)

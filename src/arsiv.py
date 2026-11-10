@@ -65,6 +65,15 @@ TABLES.update({
     'finding_topic': 'finding_id TEXT NOT NULL REFERENCES finding(id), topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(finding_id,topic_id,taxonomy_version)',
     'topic_query': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, actor_kind TEXT NOT NULL, query TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(topic_id,taxonomy_version,actor_kind)',
 })
+TABLES.update({
+    'actor': 'id TEXT PRIMARY KEY, kind TEXT NOT NULL, party_id TEXT NOT NULL REFERENCES party(id), person_id TEXT REFERENCES person(id), authorization_passage_id TEXT REFERENCES passage(id)',
+    'action': 'finding_id TEXT PRIMARY KEY REFERENCES finding(id), actor_id TEXT NOT NULL REFERENCES actor(id), event_date TEXT NOT NULL, date_precision TEXT NOT NULL, occurrence_passage_id TEXT NOT NULL REFERENCES passage(id), context TEXT NOT NULL',
+    'match': 'id TEXT PRIMARY KEY, topic_id TEXT NOT NULL, statement_finding_id TEXT NOT NULL REFERENCES finding(id), action_finding_id TEXT NOT NULL REFERENCES action(finding_id), relation TEXT NOT NULL, rationale TEXT NOT NULL, eligibility TEXT NOT NULL, exclusion_reason TEXT, reviewed_at TEXT NOT NULL'
+})
+TABLES.update({
+    'match_candidate': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), topic_id TEXT NOT NULL, lead_id TEXT REFERENCES lead(id), passage_id TEXT REFERENCES passage(id), status TEXT NOT NULL, match_id TEXT REFERENCES match(id), missing_id TEXT REFERENCES missing(id), rationale TEXT NOT NULL, reviewed_at TEXT NOT NULL',
+    'missing_resolution': 'missing_id TEXT PRIMARY KEY REFERENCES missing(id), resolved_at TEXT NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), reason TEXT NOT NULL'
+})
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -221,6 +230,9 @@ def record(work, kind, values):
     if kind not in TABLES or not isinstance(values, dict) or not values:
         raise ValueError('Geçersiz kayıt türü veya yükü')
     assert_lock(work)
+    if kind == 'match': return record_match(work, values)
+    if kind == 'match_candidate': return insert_checked(work, kind, values, check_candidate)
+    if kind == 'missing_resolution': return insert_checked(work, kind, values, check_unlinked_resolution)
     if kind in ('lead', 'attempt', 'closure', 'reopen', 'missing', 'document_authority', 'topic'):
         return {'lead': enqueue_lead, 'attempt': record_attempt, 'closure': close_topic, 'reopen': reopen_topic, 'missing': record_missing, 'document_authority': verify_document_authority, 'topic': record_topic}[kind](work, values)
     db = connect(Path(work) / 'records.sqlite3')
@@ -374,6 +386,108 @@ def record_topic(work, values):
     insert_checked(work, 'topic', values, validate)
 
 
+def check_match(db, v):
+    required = ('id', 'topic_id', 'statement_finding_id', 'action_finding_id', 'relation', 'rationale', 'eligibility', 'reviewed_at')
+    if any(not v.get(k) for k in required): raise ValueError('Eşleşme ve gerekçe alanları gerekli')
+    if v['relation'] not in ('benzerlik', 'farklılık', 'belirlenemiyor') or v['eligibility'] != 'eligible':
+        raise ValueError('Geçersiz eşleşme durumu')
+    if dt.datetime.fromisoformat(v['reviewed_at'].replace('Z', '+00:00')).tzinfo is None: raise ValueError('İnceleme zamanı saat dilimi içermeli')
+    if v['eligibility'] != 'eligible' and not v.get('exclusion_reason'): raise ValueError('Dışlama gerekçesi gerekli')
+    s = db.execute('SELECT * FROM finding WHERE id=?', (v['statement_finding_id'],)).fetchone()
+    a = db.execute('SELECT f.*,a.actor_id,a.event_date,a.date_precision,a.occurrence_passage_id,a.context,ac.kind,ac.person_id,ac.authorization_passage_id,ac.party_id AS actor_party FROM action a JOIN finding f ON f.id=a.finding_id JOIN actor ac ON ac.id=a.actor_id WHERE a.finding_id=?', (v['action_finding_id'],)).fetchone()
+    if not s or not a or s['id'] == a['id'] or s['party_id'] != a['party_id'] or a['party_id'] != a['actor_party'] or not a['context']: raise ValueError('Ayrı ve aynı partiye bağlı bulgular gerekli')
+    if a['kind'] not in ('institution', 'authorized_representative', 'individual_mp'): raise ValueError('Aktör türü geçersiz')
+    if a['kind'] != 'institution' and not a['person_id']: raise ValueError('Kişi kimliği gerekli')
+    if a['kind'] == 'authorized_representative' and not a['authorization_passage_id']: raise ValueError('Temsil yetkisi kanıtı gerekli')
+    if a['kind'] == 'authorized_representative':
+        authority = db.execute('SELECT d.party_id,p.exact FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (a['authorization_passage_id'],)).fetchone()
+        person = db.execute('SELECT name FROM person WHERE id=?', (a['person_id'],)).fetchone()
+        if not authority or authority['party_id'] != a['party_id'] or not person or person['name'] not in authority['exact']: raise ValueError('Yetki kanıtı kişi ve partiyle uyuşmuyor')
+    if a['kind'] == 'individual_mp' and v['eligibility'] == 'eligible': raise ValueError('Bireysel oy kurumsal uygulama sayılmaz')
+    for finding in (s, a):
+        if not db.execute("SELECT 1 FROM finding_topic ft JOIN topic t ON t.id=ft.topic_id AND t.taxonomy_version=ft.taxonomy_version WHERE ft.finding_id=? AND ft.topic_id=? AND t.status='verified'", (finding['id'],v['topic_id'])).fetchone(): raise ValueError('Doğrulanmış ortak konu gerekli')
+    statement = db.execute("SELECT passage_id FROM finding_evidence WHERE finding_id=? AND role='statement'", (s['id'],)).fetchall()
+    occurrence = db.execute("SELECT 1 FROM finding_evidence WHERE finding_id=? AND passage_id=? AND role='occurrence'", (a['id'],a['occurrence_passage_id'])).fetchone()
+    if not statement or not occurrence or a['occurrence_passage_id'] in [x[0] for x in statement]: raise ValueError('Ayrı beyan ve oluş kanıtı gerekli')
+    for finding_id, passage_id in [(s['id'], row[0]) for row in statement] + [(a['id'], a['occurrence_passage_id'])]:
+        reviewed = db.execute("SELECT 1 FROM verification WHERE finding_id=? AND passage_id=? AND result='confirmed' AND reason<>''", (finding_id, passage_id)).fetchone()
+        if not reviewed: raise ValueError('Kanıtın açık doğrulama kaydı gerekli')
+        evidence = db.execute('SELECT d.party_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (passage_id,)).fetchone()
+        if not evidence or evidence['party_id'] != s['party_id']: raise ValueError('Kanıt başka partiye ait')
+    source = db.execute('SELECT d.source_kind,d.party_id,v.document_date FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (a['occurrence_passage_id'],)).fetchone()
+    if not source or source['party_id'] != a['party_id'] or source['source_kind'] == 'party': raise ValueError('Parti duyurusu veya başka parti kaynağı oluş kanıtı olamaz')
+    if source['document_date'] and source['document_date'] < a['event_date'][:10]: raise ValueError('Oluş kaynağı olaydan önce yayımlanmış')
+    method = db.execute('SELECT cutoff_at FROM method ORDER BY version DESC LIMIT 1').fetchone()
+    if not method or validate_dates(a['event_date'], a['date_precision'], '2026-07-24', method['cutoff_at']) != 'inside': raise ValueError('Olay tarihi kapsam dışında veya belirsiz')
+
+
+def record_match(work, values):
+    insert_checked(work, 'match', values, check_match)
+
+
+def aware_time(value):
+    parsed = dt.datetime.fromisoformat((value or '').replace('Z', '+00:00'))
+    if parsed.tzinfo is None: raise ValueError('Saat dilimi içeren zaman gerekli')
+    return parsed.astimezone(dt.timezone.utc)
+
+
+def check_candidate(db, v):
+    if any(not v.get(k) for k in ('id','party_id','topic_id','status','rationale','reviewed_at')):
+        raise ValueError('Aday kimliği, kapsamı ve inceleme gerekçesi gerekli')
+    aware_time(v['reviewed_at'])
+    if v['status'] not in ('eligible','excluded','unverified') or not (v.get('lead_id') or v.get('passage_id')):
+        raise ValueError('Aday durumu ve kaynak ucu veya pasajı gerekli')
+    if v.get('lead_id'):
+        lead = db.execute('SELECT party_id,topic_id FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
+        if not lead or lead['party_id'] != v['party_id'] or lead['topic_id'] != v['topic_id']: raise ValueError('Aday kaynak ucu kapsamla uyuşmuyor')
+    if v.get('passage_id'):
+        source = db.execute('SELECT d.party_id FROM passage p JOIN document_version dv ON dv.id=p.version_id JOIN document d ON d.id=dv.document_id WHERE p.id=?', (v['passage_id'],)).fetchone()
+        if not source or source['party_id'] != v['party_id']: raise ValueError('Aday pasajı partiyle uyuşmuyor')
+    if v['status'] == 'eligible':
+        m = db.execute('SELECT m.*,f.party_id FROM match m JOIN finding f ON f.id=m.statement_finding_id WHERE m.id=?', (v.get('match_id'),)).fetchone()
+        if not m or m['eligibility'] != 'eligible' or m['party_id'] != v['party_id'] or m['topic_id'] != v['topic_id']: raise ValueError('Uygun aday eşleşmeyle uyuşmuyor')
+        if v.get('missing_id'):
+            resolved = db.execute('SELECT r.passage_id FROM missing_resolution r JOIN missing x ON x.id=r.missing_id WHERE x.id=? AND x.party_id=? AND x.topic_id=?', (v['missing_id'],v['party_id'],v['topic_id'])).fetchone()
+            if not resolved or not db.execute('SELECT 1 FROM finding_evidence WHERE passage_id=? AND finding_id IN (?,?)', (resolved['passage_id'],m['statement_finding_id'],m['action_finding_id'])).fetchone(): raise ValueError('Çözümlenen adayın yeni kanıtı eşleşmeyle uyuşmuyor')
+    elif v['status'] == 'unverified':
+        m = db.execute('SELECT m.*,a.attempted_at FROM missing m JOIN attempt a ON a.id=m.attempt_id WHERE m.id=?', (v.get('missing_id'),)).fetchone()
+        if not m or m['party_id'] != v['party_id'] or m['topic_id'] != v['topic_id'] or m['status'] != 'Doğrulanamadı' or v.get('match_id'): raise ValueError('Doğrulanamayan aday eksikle uyuşmuyor')
+        if aware_time(v['reviewed_at']) < aware_time(m['attempted_at']) or db.execute('SELECT 1 FROM missing_resolution WHERE missing_id=?', (m['id'],)).fetchone(): raise ValueError('Aday incelemesi eksik zamanı veya çözümüyle uyuşmuyor')
+    elif v.get('match_id') or v.get('missing_id'): raise ValueError('Dışlanan aday eşleşme veya eksik taşıyamaz')
+
+
+def check_missing_resolution(db, v):
+    if any(not v.get(k) for k in ('missing_id','resolved_at','passage_id','reason')): raise ValueError('Çözüm zamanı, pasajı ve gerekçesi gerekli')
+    m = db.execute('SELECT m.*,a.attempted_at FROM missing m JOIN attempt a ON a.id=m.attempt_id WHERE m.id=?', (v['missing_id'],)).fetchone()
+    p = db.execute('SELECT d.party_id FROM passage p JOIN document_version dv ON dv.id=p.version_id JOIN document d ON d.id=dv.document_id WHERE p.id=?', (v['passage_id'],)).fetchone()
+    if not m or not p or p['party_id'] != m['party_id'] or aware_time(v['resolved_at']) < aware_time(m['attempted_at']): raise ValueError('Çözümün parti, zaman ve kanıt ilişkisi geçersiz')
+    if not db.execute('SELECT 1 FROM finding_topic ft JOIN finding_evidence e ON e.finding_id=ft.finding_id WHERE ft.topic_id=? AND e.passage_id=?', (m['topic_id'],v['passage_id'])).fetchone(): raise ValueError('Çözüm kanıtı eksik konusu ile ilişkilendirilmeli')
+
+
+def check_unlinked_resolution(db, v):
+    check_missing_resolution(db, v)
+    if db.execute("SELECT 1 FROM match_candidate WHERE missing_id=? AND status='unverified'", (v['missing_id'],)).fetchone(): raise ValueError('Aday çözümü atomik geçişle yapılmalı')
+
+
+def resolve_candidate(work, candidate_id, match_id, resolution):
+    """Atomically retain the missing history and promote a candidate with evidence."""
+    assert_lock(work)
+    db = connect(Path(work) / 'records.sqlite3')
+    try:
+        candidate = db.execute('SELECT * FROM match_candidate WHERE id=?', (candidate_id,)).fetchone()
+        if not candidate or candidate['status'] != 'unverified' or candidate['missing_id'] != resolution.get('missing_id'): raise ValueError('Açık aday ve eksik uyuşmuyor')
+        check_missing_resolution(db, resolution)
+        if aware_time(resolution['resolved_at']) < aware_time(candidate['reviewed_at']): raise ValueError('Çözüm aday incelemesinden önce olamaz')
+        candidate = dict(candidate, status='eligible', match_id=match_id, reviewed_at=resolution['resolved_at'], rationale=resolution['reason'])
+        match = db.execute('SELECT statement_finding_id,action_finding_id FROM match WHERE id=?', (match_id,)).fetchone()
+        if not match or not db.execute('SELECT 1 FROM finding_evidence WHERE passage_id=? AND finding_id IN (?,?)', (resolution['passage_id'],match[0],match[1])).fetchone(): raise ValueError('Çözüm pasajı eşleşmenin kanıtı olmalı')
+        db.execute('INSERT INTO missing_resolution VALUES (?,?,?,?)', (resolution['missing_id'],resolution['resolved_at'],resolution['passage_id'],resolution['reason']))
+        check_candidate(db, candidate)
+        db.execute('UPDATE match_candidate SET status=?,match_id=?,reviewed_at=?,rationale=? WHERE id=?', ('eligible',match_id,resolution['resolved_at'],resolution['reason'],candidate_id))
+        db.commit()
+    finally: db.close()
+
+
 def validate_evidence(db, finding, passage):
     row = db.execute('SELECT d.party_id,d.source_kind,v.id AS version_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (passage['id'],)).fetchone()
     if not row or row['party_id'] != finding['party_id']: raise ValueError('Kanıt başka partiye ait')
@@ -391,7 +505,7 @@ def close_topic(work, values):
         if not leads: raise ValueError('Uçsuz tarama kapanamaz')
         for lead in leads:
             if lead['status'] not in ('examined', 'blocked', 'excluded'): raise ValueError('İncelenmemiş uç var')
-            attempt = db.execute('SELECT * FROM attempt WHERE lead_id=? ORDER BY attempted_at DESC LIMIT 1', (lead['id'],)).fetchone()
+            attempt = db.execute("SELECT * FROM attempt WHERE lead_id=? AND result IN ('examined','failure','excluded') ORDER BY attempted_at DESC LIMIT 1", (lead['id'],)).fetchone()
             expected = {'examined':'examined','blocked':'failure','excluded':'excluded'}[lead['status']]
             if not attempt or not attempt['reason'] or attempt['result'] != expected or (lead['status'] == 'examined' and not attempt['source_version_id']): raise ValueError('Uç gerçek girişimle desteklenmeli')
         db.execute("UPDATE topic_search SET state='closed' WHERE topic_id=?", (v['topic_id'],))
@@ -540,6 +654,14 @@ def export_db(path, release_id):
                     for b in bases:
                         row = db.execute("SELECT a.status,d.title FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id JOIN document_authority a ON a.version_id=v.id WHERE p.id=?", (b['passage_id'],)).fetchone()
                         if not b['rationale'] or not row or row['status'] != 'verified' or not any(x in row['title'].lower() for x in ('tüzük','program')): raise ValueError('Konu tüzük/program dayanağı geçersiz')
+        if 'match' in existing:
+            for match in result['match']:
+                check_match(db, match)
+        if 'match_candidate' in existing:
+            for candidate in result['match_candidate']: check_candidate(db, candidate)
+            eligible = [c['match_id'] for c in result['match_candidate'] if c['status'] == 'eligible']
+            if len(eligible) != len(set(eligible)) or set(eligible) != {m['id'] for m in result['match'] if m['eligibility'] == 'eligible'}: raise ValueError('Uygun aday ve eşleşme kümeleri uyuşmuyor')
+            for resolution in result['missing_resolution']: check_missing_resolution(db, resolution)
         return result
     finally:
         db.close()
@@ -624,7 +746,7 @@ def main():
     ch = sub.add_parser('chain'); ch.add_argument('--workspace', required=True); ch.add_argument('--party', required=True); ch.add_argument('--topic', required=True)
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True)
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
-    a = sub.add_parser('audit'); a.add_argument('--release', default='current')
+    a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance'))
     s = sub.add_parser('serve'); s.add_argument('--host', default='127.0.0.1'); s.add_argument('--port', type=int, default=8000)
     args = p.parse_args()
     if args.command == 'capture': print(json.dumps(capture_source(args.url, args.kind, args.out), ensure_ascii=False))
@@ -640,7 +762,15 @@ def main():
         finally: db.close()
     elif args.command == 'publish': print(publish_release(args.workspace))
     elif args.command == 'freeze': print(freeze_cutoff(args.workspace, args.tbmm_version, args.method_version))
-    elif args.command == 'audit': print('AUDIT_OK', audit_release(args.release))
+    elif args.command == 'audit':
+        release = audit_release(args.release)
+        if args.check:
+            db = connect(DATA / 'releases' / release / 'records.sqlite3')
+            try:
+                table = {'matches': 'match', 'finance': 'financial'}[args.check]
+                if not db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name=?", (table,)).fetchone(): raise ValueError('Bu sürüm hedef denetimi desteklemiyor')
+            finally: db.close()
+        print('AUDIT_OK', release)
     elif args.command == 'serve':
         from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
         class Handler(SimpleHTTPRequestHandler):

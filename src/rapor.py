@@ -73,6 +73,25 @@ def render_report(data):
                 pieces.append('<li>Yeniden açılma: ' + esc(reopen['opened_at']) + ' — ' + esc(reopen['reason']) + '</li>')
             pieces.append('</ul>')
         pieces.append('</section>')
+    if data.get('match'):
+        findings = {f['id']: f for f in data['finding']}
+        actions = {a['finding_id']: a for a in data['action']}
+        actors = {a['id']: a for a in data['actor']}
+        pieces.append('<section><h2>Söylem ve uygulama eşleşmeleri</h2>')
+        for m in data['match']:
+            action = actions[m['action_finding_id']]; actor = actors[action['actor_id']]
+            statement_refs = ' '.join('<a class="citation" href="#source-' + esc(e['passage_id']) + '">[Kaynak]</a>' for e in data['finding_evidence'] if e['finding_id'] == m['statement_finding_id'] and e['role'] == 'statement')
+            occurrence_ref = '<a class="citation" href="#source-' + esc(action['occurrence_passage_id']) + '">[Oluş kaynağı]</a>'
+            authority_ref = (' <a class="citation" href="#source-' + esc(actor['authorization_passage_id']) + '">[Yetki kaynağı]</a>') if actor['authorization_passage_id'] else ''
+            prefix = 'match-' if m['eligibility'] == 'eligible' else 'candidate-'
+            pieces.append('<article id="' + prefix + esc(m['id']) + '"><h3>' + esc(m['topic_id']) + '</h3><p class="summary">' + esc(findings[m['statement_finding_id']]['text']) + ' ' + statement_refs + '</p><p class="summary">' + esc(findings[m['action_finding_id']]['text']) + ' ' + occurrence_ref + '</p><p>Aktör: ' + esc(actor['kind']) + authority_ref + ' — olay: ' + esc(action['event_date']) + ' — ' + esc(action['context']) + '</p><p>Yorum: ' + esc(m['relation']) + ' — ' + esc(m['rationale']) + ' — ' + esc(m['eligibility']) + ' ' + esc(m['exclusion_reason']) + '</p></article>')
+        pieces.append('</section>')
+    if 'match_candidate' in data:
+        pieces.append('<section><h2>Eşleşme adayları</h2>')
+        for c in data['match_candidate']:
+            ref = (' <a href="#match-' + esc(c['match_id']) + '">Eşleşme</a>') if c['match_id'] else ''
+            pieces.append('<p id="candidate-ledger-' + esc(c['id']) + '" data-status="' + esc(c['status']) + '">' + esc(c['id']) + ': ' + esc(c['status']) + ' — ' + esc(c['rationale']) + ref + '</p>')
+        pieces.append('</section>')
     for f in data['finding']:
         evidence = [e for e in data['finding_evidence'] if e['finding_id'] == f['id']]
         if not evidence: raise ValueError('Kanıtsız bulgu')
@@ -80,23 +99,32 @@ def render_report(data):
         value = '“' + esc(f['text']) + '”' if cls == 'quote' else esc(f['text'])
         links = ' '.join('<a class="citation" href="#source-' + esc(e['passage_id']) + '">[Kaynak]</a>' for e in evidence)
         pieces.append('<p class="' + cls + '">' + value + ' ' + links + '</p>')
-    if data.get('missing'):
+    resolved = {r['missing_id']: r for r in data.get('missing_resolution', [])}
+    unresolved = [m for m in data.get('missing', []) if m['id'] not in resolved]
+    if unresolved:
         attempts = {a['id']: a for a in data['attempt']}
-        for heading in dict.fromkeys(m['heading'] for m in data['missing']):
+        for heading in dict.fromkeys(m['heading'] for m in unresolved):
             pieces.append('<section><h2>' + esc(heading) + '</h2>')
-            for m in (m for m in data['missing'] if m['heading'] == heading):
+            for m in (m for m in unresolved if m['heading'] == heading):
                 a = attempts[m['attempt_id']]
                 pieces.append('<p>' + esc(m['topic_id']) + ': ' + esc(m['status']) + ' — ' + esc(m['reason']) + ' (' + esc(a['attempted_at']) + ') <a href="#attempt-' + esc(a['id']) + '">Girişim</a></p>')
             pieces.append('</section>')
     for state in data.get('research_state', []):
         if state['state'] == 'not_researched':
             pieces.append('<section><h2>' + esc(state['heading']) + '</h2><p>Henüz incelenmedi</p></section>')
-    if data.get('missing'):
+    if unresolved:
         attempts = {a['id']: a for a in data['attempt']}
         pieces.append('<h2>Eksik bilgiler</h2><ul>')
-        for m in data['missing']:
+        for m in unresolved:
             a = attempts[m['attempt_id']]
             pieces.append('<li>' + esc(m['party_id']) + ' / ' + esc(m['heading']) + ' / ' + esc(m['topic_id']) + ': ' + esc(m['status']) + ' — ' + esc(m['reason']) + ' (' + esc(a['attempted_at']) + ') <a href="#attempt-' + esc(a['id']) + '">Girişim</a></li>')
+        pieces.append('</ul>')
+    if resolved:
+        pieces.append('<h2>Çözümlenen geçmiş eksikler</h2><ul>')
+        for m in data['missing']:
+            if m['id'] in resolved:
+                r = resolved[m['id']]
+                pieces.append('<li>' + esc(m['id']) + ': ' + esc(m['status']) + ' — ' + esc(m['reason']) + '; çözüm ' + esc(r['resolved_at']) + ': ' + esc(r['reason']) + ' <a class="citation" href="#source-' + esc(r['passage_id']) + '">[Yeni kanıt]</a></li>')
         pieces.append('</ul>')
     pieces.append('<h2>Kaynaklar</h2>')
     for p in data['passage']:
