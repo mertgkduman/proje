@@ -36,7 +36,7 @@
 4. Okur, aynı pilot içerikte doğrudan aktarımı siyah ve tırnak içinde, kaynaklı yapay zekâ özetini koyu mavi görebilir; görünür metin türü etiketi kullanılmaz, metin kökeni veri kayıtlarında korunur. Olgu, kaynağın beyanı ve yorum birbirinden ayrılır.
 5. Araştırmacı üç eksik bilgi durumunu ayrı kaydedebilir; okur eksik listesinde parti/konu, arama veya erişim tarihi ve gerekçeyi görebilir. Yalnız denenmiş aramalar bu durumlara dönüştürülür; eksikler sıfır veya olumsuz bulgu sayılmaz.
 
-**Plans:** 3/6 plans executed
+**Plans:** 4/6 plans executed
 
 Plans:
 **Wave 1**
@@ -53,7 +53,7 @@ Plans:
 
 **Wave 4** *(blocked on Wave 3 completion)*
 
-- [ ] 01-04-PLAN.md — Pilot tüzük/program belgeleri ve kaynaklı ortak konu sözlüğü
+- [x] 01-04-PLAN.md — Pilot tüzük/program belgeleri ve kaynaklı ortak konu sözlüğü
 
 **Wave 5** *(blocked on Wave 4 completion)*
 
@@ -159,7 +159,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Kapsam, yöntem ve kaynaklı pilot rapor | 3/6 | In Progress|  |
+| 1. Kapsam, yöntem ve kaynaklı pilot rapor | 4/6 | In Progress|  |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 0/TBD | Not started | - |
 | 3. Tüzük ve programların karşılaştırılması | 0/TBD | Not started | - |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
