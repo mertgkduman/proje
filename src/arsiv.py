@@ -260,11 +260,6 @@ def record(work, kind, values):
             safe_url(values['original_url']); safe_url(values['final_url'])
             if values.get('document_date') is None and (values.get('date_precision') != 'unknown' or not values.get('date_unknown_reason')):
                 raise ValueError('Bilinmeyen belge tarihi için gerekçe gerekli')
-            duplicate = db.execute('SELECT id FROM document_version WHERE sha256=?', (values['sha256'],)).fetchone()
-            if duplicate:
-                db.execute('INSERT OR IGNORE INTO url_alias VALUES (?,?,?)', (values['original_url'],values['final_url'],duplicate['id']))
-                db.commit()
-                return duplicate['id']
         if kind == 'edge':
             if values.get('relation') not in ('reference','contradiction','new_version') or not values.get('relevance_reason'): raise ValueError('İlgili kenar ve gerekçe gerekli')
         if kind == 'research_state' and values.get('state') not in ('not_researched','in_progress','reviewed'):
@@ -309,6 +304,7 @@ def record(work, kind, values):
                 db.execute("UPDATE topic_search SET state='in_progress' WHERE topic_id=?", (lead['topic_id'],))
                 db.execute("UPDATE lead SET status='pending' WHERE id=?", (lead['id'],))
         db.commit()
+        if kind == 'document_version': return values['id']
     finally:
         db.close()
 
@@ -870,7 +866,8 @@ def main():
     elif args.command == 'workspace': print(open_workspace(args.scratch))
     elif args.command == 'record':
         import sys
-        record(args.workspace, args.kind, json.load(sys.stdin) if args.input == '-' else json.loads(Path(args.input).read_text(encoding='utf-8')))
+        result = record(args.workspace, args.kind, json.load(sys.stdin) if args.input == '-' else json.loads(Path(args.input).read_text(encoding='utf-8')))
+        if result is not None: print(result)
     elif args.command == 'chain':
         assert_lock(args.workspace)
         db = connect(Path(args.workspace) / 'records.sqlite3')
