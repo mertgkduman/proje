@@ -6,6 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from rapor import render_report
+from browser_probe import probe_tabs
 
 
 class ReportTest(unittest.TestCase):
@@ -20,6 +21,17 @@ class ReportTest(unittest.TestCase):
             self.assertIn('id="party-' + party['party_id'] + '"', report)
         self.assertIn('data-finding-id="kurulus-summary"', report)
         self.assertIn('id="scope-method"', report)
+        self.assertEqual(probe_tabs(report, 'kurulus'), 'BROWSER_TABS_OK')
+
+    def test_rejects_unsafe_archive_path_and_escapes_finding(self):
+        root = Path(__file__).resolve().parents[1]
+        release = json.loads((root / 'data/current.json').read_text())['release_id']
+        data = json.loads((root / 'data/releases' / release / 'records.json').read_text())
+        data['finding'][0]['text'] = '<script>alert(1)</script>'
+        self.assertNotIn('<script>alert(1)</script>', render_report(data))
+        data['document_version'][0]['readable_path'] = '../outside'
+        with self.assertRaises(ValueError):
+            render_report(data)
 
 
 if __name__ == '__main__':

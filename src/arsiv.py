@@ -19,6 +19,7 @@ import re
 from decimal import Decimal, InvalidOperation
 
 from rapor import render_report
+from rapor_legacy import render_report as render_legacy_report
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
@@ -736,7 +737,9 @@ def audit_release(release='current'):
     exported = export_db(folder / 'records.sqlite3', release)
     if json.loads((folder / 'records.json').read_text(encoding='utf-8')) != exported:
         raise ValueError('JSON kapalı snapshot ile eşleşmiyor')
-    if (folder / 'index.html').read_text(encoding='utf-8') != render_report(exported):
+    renderer = {None: render_legacy_report, 2: render_report}.get(manifest.get('renderer_version'))
+    if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
+    if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
         raise ValueError('HTML kapalı snapshot ile eşleşmiyor')
     return release
 
@@ -767,7 +770,7 @@ def publish_release(work, fail_at=None):
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
         (staging / 'index.html').write_text(render_report(payload), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
-        manifest = {'release_id': release, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
+        manifest = {'release_id': release, 'renderer_version': 2, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
         (DATA / 'releases').mkdir(exist_ok=True)
