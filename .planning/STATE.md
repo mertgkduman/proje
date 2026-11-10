@@ -30,7 +30,7 @@ See: .planning/PROJECT.md (updated 2026-11-09)
 Phase: 01 (Kapsam, yöntem ve kaynaklı pilot rapor) — VERIFYING
 Plan: 6 of 6
 Status: Awaiting human verification — Phase 01 UAT
-Last activity: 2026-11-10 — 01-06 completed; verification pending
+Last activity: 2026-11-10 — 6/6 plan, 44 test ve bağımsız doğrulama tamamlandı; 8 insan UAT kontrolü bekliyor.
 
 Progress: [██████████] 6/6 plans
 
@@ -38,20 +38,20 @@ Progress: [██████████] 6/6 plans
 
 **Velocity:**
 
-- Total plans completed: 0
-- Average duration: Henüz veri yok
-- Total execution time: Henüz uygulama başlamadı
+- Total plans completed: 6
+- Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
+- Total execution time: Altı plan ve son inceleme/düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | 0 | - | - |
+| 1 | 6 | Kesin toplam ölçülmedi | - |
 
 **Recent Trend:**
 
-- Last 5 plans: Henüz plan tamamlanmadı
-- Trend: Henüz veri yok
+- Last 5 plans: 01-02, 01-03, 01-04, 01-05, 01-06
+- Trend: 6/6 plan uygulandı; faz kapanışı 8 insan UAT kontrolünü bekliyor.
 
 **Per-Plan Metrics:**
 
