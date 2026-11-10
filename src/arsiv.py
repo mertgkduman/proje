@@ -885,9 +885,16 @@ def publish_release(work, fail_at=None):
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
         (staging / 'index.html').write_text(render_report(payload), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
-        # A frozen phase-one method marks a phase-capable snapshot; older,
-        # incomplete authoring snapshots retain their historical compatibility.
-        if payload.get('method'):
+        # Once the base is phase-capable, deleting its method cannot bypass
+        # acceptance. Earlier snapshots may still be authored incrementally.
+        base_phase = False
+        if metadata['base']:
+            base = connect_readonly(DATA / 'releases' / metadata['base'] / 'records.sqlite3')
+            try:
+                has_method = base.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='method'").fetchone()
+                base_phase = bool(has_method and base.execute('SELECT 1 FROM method LIMIT 1').fetchone())
+            finally: base.close()
+        if base_phase or payload.get('method'):
             phase_data = validate_phase_one_workspace(staging)
             validate_phase_one_html(phase_data, (staging / 'index.html').read_text(encoding='utf-8'))
         manifest = {'release_id': release, 'renderer_version': 6, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}

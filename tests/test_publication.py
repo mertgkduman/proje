@@ -74,6 +74,15 @@ class PublicationTest(unittest.TestCase):
             arsiv.publish_release(work)
         self.assertEqual(arsiv.current(), before)
 
+    def test_removing_method_cannot_bypass_phase_acceptance(self):
+        before = arsiv.current()
+        work = arsiv.open_workspace(self.tmp.name)
+        db = arsiv.connect(work / 'records.sqlite3')
+        db.execute('DELETE FROM method')
+        db.commit(); db.close()
+        with self.assertRaises(ValueError): arsiv.publish_release(work)
+        self.assertEqual(arsiv.current(), before)
+
     def test_foreign_key_corruption_rejected(self):
         work = arsiv.open_workspace(self.tmp.name)
         before = arsiv.current()
