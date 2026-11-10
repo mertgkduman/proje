@@ -6,6 +6,13 @@ import arsiv
 
 
 class DocumentContract(unittest.TestCase):
+    def test_pilot_document_headings_have_attempt_backed_results(self):
+        data = arsiv.export_db(arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3', 'test')
+        for heading in ('Tüzük', 'Program'):
+            relevant = [m for m in data['missing'] if m['party_id'] == 'yeni-parti' and m['heading'] == heading]
+            self.assertTrue(relevant)
+            self.assertTrue(all(any(a['id'] == m['attempt_id'] for a in data['attempt']) for m in relevant))
+
     def test_wrong_party_evidence_is_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             old = arsiv.DATA

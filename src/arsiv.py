@@ -56,6 +56,14 @@ TABLES.update({
     , 'research_state': 'party_id TEXT NOT NULL REFERENCES party(id), heading TEXT NOT NULL, state TEXT NOT NULL, PRIMARY KEY(party_id,heading)'
     , 'report_option': 'name TEXT PRIMARY KEY, value TEXT NOT NULL'
 })
+TABLES.update({
+    'manual_passage': 'passage_id TEXT PRIMARY KEY REFERENCES passage(id), checked_at TEXT NOT NULL, method TEXT NOT NULL, reason TEXT NOT NULL',
+    'document_authority': 'version_id TEXT PRIMARY KEY REFERENCES document_version(id), registry_party_id TEXT NOT NULL REFERENCES party(id), authority_passage_id TEXT NOT NULL REFERENCES passage(id), verification_attempt_id TEXT NOT NULL REFERENCES attempt(id), status TEXT NOT NULL, reason TEXT NOT NULL',
+    'verification': 'finding_id TEXT NOT NULL REFERENCES finding(id), passage_id TEXT NOT NULL REFERENCES passage(id), checked_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(finding_id,passage_id)',
+    'topic': 'id TEXT NOT NULL, label TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, valid_from TEXT NOT NULL, status TEXT NOT NULL, change_reason TEXT NOT NULL, PRIMARY KEY(id,taxonomy_version)',
+    'topic_basis': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), rationale TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(topic_id,taxonomy_version,passage_id)',
+    'finding_topic': 'finding_id TEXT NOT NULL REFERENCES finding(id), topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(finding_id,topic_id,taxonomy_version)',
+})
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -111,6 +119,20 @@ def pdf_page_text(path, index):
         if text_ptr: glib.g_free(text_ptr)
         if page: obj.g_object_unref(page)
         obj.g_object_unref(document)
+
+
+def pdf_page_exists(path, index):
+    pop = ctypes.CDLL(ctypes.util.find_library('poppler-glib'))
+    obj = ctypes.CDLL(ctypes.util.find_library('gobject-2.0'))
+    pop.poppler_document_new_from_file.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_void_p]
+    pop.poppler_document_new_from_file.restype = ctypes.c_void_p
+    pop.poppler_document_get_n_pages.argtypes = [ctypes.c_void_p]
+    pop.poppler_document_get_n_pages.restype = ctypes.c_int
+    obj.g_object_unref.argtypes = [ctypes.c_void_p]
+    document = pop.poppler_document_new_from_file(Path(path).resolve().as_uri().encode(), None, None)
+    if not document: return False
+    try: return 0 <= index < pop.poppler_document_get_n_pages(document)
+    finally: obj.g_object_unref(document)
 
 
 def capture_source(url, kind, out=None):
@@ -198,8 +220,8 @@ def record(work, kind, values):
     if kind not in TABLES or not isinstance(values, dict) or not values:
         raise ValueError('Geçersiz kayıt türü veya yükü')
     assert_lock(work)
-    if kind in ('lead', 'attempt', 'closure', 'reopen', 'missing'):
-        return {'lead': enqueue_lead, 'attempt': record_attempt, 'closure': close_topic, 'reopen': reopen_topic, 'missing': record_missing}[kind](work, values)
+    if kind in ('lead', 'attempt', 'closure', 'reopen', 'missing', 'document_authority', 'topic'):
+        return {'lead': enqueue_lead, 'attempt': record_attempt, 'closure': close_topic, 'reopen': reopen_topic, 'missing': record_missing, 'document_authority': verify_document_authority, 'topic': record_topic}[kind](work, values)
     db = connect(Path(work) / 'records.sqlite3')
     try:
         allowed = {row['name'] for row in db.execute(f'PRAGMA table_info({kind})')}
@@ -310,7 +332,7 @@ def record_attempt(work, values):
     def validate(db, v):
         if not all(v.get(k) for k in ('query','attempted_at','reason','type','result')): raise ValueError('Girişim alanları gerekli')
         if dt.datetime.fromisoformat(v['attempted_at'].replace('Z','+00:00')).tzinfo is None: raise ValueError('Girişim zaman dilimi içermeli')
-        if (v['type'], v['result']) not in (('search','no_result'), ('access','failure'), ('access','examined'), ('verification','inconclusive'), ('review','excluded')):
+        if (v['type'], v['result']) not in (('search','no_result'), ('search','results'), ('access','failure'), ('access','examined'), ('verification','inconclusive'), ('verification','confirmed'), ('review','excluded')):
             raise ValueError('Girişim türü ve sonucu uyuşmuyor')
         if v.get('lead_id'):
             lead = db.execute('SELECT * FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
@@ -322,6 +344,34 @@ def record_attempt(work, values):
             if state == 'examined' and not v.get('source_version_id'): raise ValueError('İncelenmiş uç için belge gerekli')
             if state: db.execute('UPDATE lead SET status=? WHERE id=?', (state,v['lead_id']))
     insert_checked(work, 'attempt', values, validate)
+
+
+def verify_document_authority(work, values):
+    def validate(db, v):
+        target = db.execute('SELECT d.party_id,v.final_url FROM document_version v JOIN document d ON d.id=v.document_id WHERE v.id=?', (v['version_id'],)).fetchone()
+        source = db.execute('SELECT p.exact,d.party_id,d.source_kind,v.final_url FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (v['authority_passage_id'],)).fetchone()
+        attempt = db.execute('SELECT * FROM attempt WHERE id=?', (v['verification_attempt_id'],)).fetchone()
+        if not target or not source or not attempt or not v.get('reason') or v.get('status') != 'verified': raise ValueError('Otorite zinciri eksik')
+        host = urllib.parse.urlsplit(target['final_url']).hostname or ''
+        source_host = urllib.parse.urlsplit(source['final_url']).hostname or ''
+        if target['party_id'] != v['registry_party_id'] or source['party_id'] != v['registry_party_id'] or source['source_kind'] != 'official' or source_host not in ('tbmm.gov.tr','www.tbmm.gov.tr','cdn.tbmm.gov.tr') or host.removeprefix('www.') not in source['exact'] or attempt['party_id'] != v['registry_party_id'] or (attempt['type'],attempt['result']) != ('verification','confirmed'):
+            raise ValueError('Parti veya resmî otorite zinciri uyuşmuyor')
+    insert_checked(work, 'document_authority', values, validate)
+
+
+def record_topic(work, values):
+    def validate(db, v):
+        if v.get('status') not in ('candidate','verified') or not v.get('label') or not v.get('change_reason') or not v.get('valid_from') or not isinstance(v.get('taxonomy_version'), int) or v['taxonomy_version'] < 1:
+            raise ValueError('Konu sürümü ve gerekçesi gerekli')
+    insert_checked(work, 'topic', values, validate)
+
+
+def validate_evidence(db, finding, passage):
+    row = db.execute('SELECT d.party_id,d.source_kind,v.id AS version_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (passage['id'],)).fetchone()
+    if not row or row['party_id'] != finding['party_id']: raise ValueError('Kanıt başka partiye ait')
+    if finding['provenance'] == 'quote' and finding['text'] not in passage['exact']: raise ValueError('Alıntı pasajda bulunamadı')
+    if finding['heading'] in ('Tüzük','Program') and not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (row['version_id'],finding['party_id'])).fetchone(): raise ValueError('Belge otoritesi doğrulanmadı')
+    if finding['heading'] == 'Söylem ve uygulama' and finding['epistemic_type'] == 'fact' and row['source_kind'] == 'party': raise ValueError('Parti beyanı uygulama olgusu olarak kullanılamaz')
 
 
 def close_topic(work, values):
@@ -460,12 +510,27 @@ def export_db(path, release_id):
             if path.name == 'original.pdf':
                 if p['pdf_page_index'] is None or p['pdf_page_index'] < 0: raise ValueError('PDF sayfa indeksi gerekli')
                 content = pdf_page_text(path, p['pdf_page_index'])
+                manual = next((m for m in result.get('manual_passage', []) if m['passage_id'] == p['id']), None)
+                if manual:
+                    if not manual['checked_at'] or not manual['method'] or not manual['reason'] or not pdf_page_exists(path, p['pdf_page_index']): raise ValueError('PDF elle doğrulama kaydı geçersiz')
+                    continue
             else: content = path.read_bytes().decode('utf-8', errors='replace')
             if p['exact'] not in content:
                 raise ValueError('Pasaj özgün belgede bulunamadı')
         for f in result['finding']:
             if f['provenance'] == 'quote' and not any(f['text'] == p['exact'] for e in result['finding_evidence'] if e['finding_id'] == f['id'] for p in result['passage'] if p['id'] == e['passage_id']):
                 raise ValueError('Alıntı kanıt pasajıyla eşleşmiyor')
+            if 'document_authority' in existing:
+                for e in (e for e in result['finding_evidence'] if e['finding_id'] == f['id']):
+                    validate_evidence(db, f, next(p for p in result['passage'] if p['id'] == e['passage_id']))
+        if 'topic' in existing:
+            for t in result['topic']:
+                if t['status'] == 'verified':
+                    bases = [b for b in result['topic_basis'] if b['topic_id'] == t['id'] and b['taxonomy_version'] == t['taxonomy_version']]
+                    if not bases: raise ValueError('Doğrulanmış konu dayanağı bulunamadı')
+                    for b in bases:
+                        row = db.execute("SELECT a.status,d.title FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id JOIN document_authority a ON a.version_id=v.id WHERE p.id=?", (b['passage_id'],)).fetchone()
+                        if not b['rationale'] or not row or row['status'] != 'verified' or not any(x in row['title'].lower() for x in ('tüzük','program')): raise ValueError('Konu tüzük/program dayanağı geçersiz')
         return result
     finally:
         db.close()

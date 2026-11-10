@@ -90,9 +90,10 @@ def render_report(data):
     pieces.append('<h2>Kaynaklar</h2>')
     for p in data['passage']:
         v = versions[p['version_id']]; d = documents[v['document_id']]
+        manual = next((m for m in data.get('manual_passage', []) if m['passage_id'] == p['id']), None)
         if urlsplit(v['original_url']).scheme not in ('http', 'https'): raise ValueError('Geçersiz URL')
         pieces.append('<details id="source-' + esc(p['id']) + '"><summary>' + esc(d['title']) + '</summary>'
-                      '<p>Pasaj: ' + esc(p['exact']) + ((' | PDF sayfası: ' + esc(p['pdf_page_index'] + 1) + ' | Basılı sayfa: ' + esc(p['printed_page'])) if p['pdf_page_index'] is not None else '') + '</p><p>Belge tarihi: ' + esc(v['document_date'] or 'Belirtilmemiş') +
+                      '<p>Pasaj: ' + esc(p['exact']) + ((' | PDF sayfası: ' + esc(p['pdf_page_index'] + 1) + ' | Basılı sayfa: ' + esc(p['printed_page'])) if p['pdf_page_index'] is not None else '') + ((' | Elle sayfa kontrolü: ' + esc(manual['checked_at']) + ' — ' + esc(manual['reason'])) if manual else '') + '</p><p>Belge tarihi: ' + esc(v['document_date'] or 'Belirtilmemiş') +
                       ' | Sürüm: ' + esc(v['version_label'] or 'Belirtilmemiş') + ' | Erişim: ' + esc(v['accessed_at']) +
                       ' | Doğrulama: ' + esc(v['verified_at']) + ((' | Tarih kesinliği: ' + esc(v.get('date_precision')) + ' | Gerekçe: ' + esc(v.get('date_unknown_reason'))) if data.get('schema_version') == 3 else '') + '</p><p><a href="' + esc(v['original_url']) + '">Özgün kaynak</a> '
                       '<a href="../../' + esc(v['readable_path']) + '">Yerel arşiv</a> '
