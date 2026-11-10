@@ -3,9 +3,14 @@ import tempfile
 import shutil
 from pathlib import Path
 import arsiv
+from unittest.mock import patch
 
 
 class DocumentContract(unittest.TestCase):
+    def test_missing_pdf_library_has_actionable_error(self):
+        with patch('arsiv.ctypes.util.find_library', return_value=None), self.assertRaisesRegex(ValueError, 'Poppler-glib.*gobject|Poppler-glib.*eksik'):
+            arsiv.pdf_page_text('missing.pdf', 0)
+
     def test_identical_bytes_keep_document_ownership(self):
         with tempfile.TemporaryDirectory() as tmp:
             old = arsiv.DATA

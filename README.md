@@ -1,6 +1,6 @@
 # Kaynaklı pilot arşiv
 
-Python 3 ve standart kitaplık ile yerel kullanım içindir. Ağdan kaynak alma işlemi yalnız açıkça çalıştırıldığında yapılır; testler kaydedilmiş kaynağı kullanır. Raporu kamuya yayınlamaz.
+Python 3 ve standart kitaplık ile yerel kullanım içindir. PDF pasajlarının denetimi ayrıca Poppler-glib, GObject, GLib ve Poppler'ın Cairo dahil yerel çalışma zamanı bağımlılıklarını gerektirir. Örneğin Debian/Ubuntu üzerinde dağıtımın `libpoppler-glib8`, `libglib2.0-0` ve `libcairo2` paketleri gereklidir (paket adları sürüme göre değişebilir). `python3 -c "import ctypes.util; print({n: ctypes.util.find_library(n) for n in ('poppler-glib','gobject-2.0','glib-2.0','cairo')})"` ile keşfi kontrol edin; gerçek yükleme ve bağımlılık kontrolü audit sırasında yapılır. Ağdan kaynak alma işlemi yalnız açıkça çalıştırıldığında yapılır; testler kaydedilmiş kaynağı kullanır. Raporu kamuya yayınlamaz.
 
 1. `python3 src/arsiv.py capture --url https://www.yargitaycb.gov.tr/sipar/365 --kind html` kaynak baytlarını `data/objects` altında özetiyle saklar ve kayıt alanlarını JSON olarak döndürür. `--out DIR` ayrı bir nesne kökü seçer.
 2. `python3 src/arsiv.py workspace --scratch /tmp` tek yazıcı kilidini alır, geçerli doğrulanmış snapshot'tan yerel çalışma dizini oluşturur ve dizini yazdırır. Çalışan SQLite için yerel dosya sistemi gerekir.

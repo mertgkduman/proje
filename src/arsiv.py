@@ -109,12 +109,20 @@ def readable_bytes(content, kind):
     return ('<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>' + html.escape(decoded) + '</pre>').encode('utf-8')
 
 
+def pdf_libraries():
+    libraries = []
+    for name in ('poppler-glib', 'gobject-2.0', 'glib-2.0'):
+        try:
+            path = ctypes.util.find_library(name)
+            if not path: raise OSError('bulunamadı')
+            libraries.append(ctypes.CDLL(path))
+        except OSError as exc:
+            raise ValueError('PDF doğrulaması için Poppler-glib, GObject ve GLib paylaşımlı kütüphaneleri ve bağımlılıkları (Cairo dahil) gerekli; eksik: ' + name) from exc
+    return libraries
+
+
 def pdf_page_text(path, index):
-    name = ctypes.util.find_library('poppler-glib')
-    if not name: raise ValueError('PDF pasaj doğrulaması için Poppler gerekli')
-    pop = ctypes.CDLL(name)
-    obj = ctypes.CDLL(ctypes.util.find_library('gobject-2.0'))
-    glib = ctypes.CDLL(ctypes.util.find_library('glib-2.0'))
+    pop, obj, glib = pdf_libraries()
     pop.poppler_document_new_from_file.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_void_p]
     pop.poppler_document_new_from_file.restype = ctypes.c_void_p
     pop.poppler_document_get_page.argtypes = [ctypes.c_void_p, ctypes.c_int]
@@ -140,8 +148,7 @@ def pdf_page_text(path, index):
 
 
 def pdf_page_exists(path, index):
-    pop = ctypes.CDLL(ctypes.util.find_library('poppler-glib'))
-    obj = ctypes.CDLL(ctypes.util.find_library('gobject-2.0'))
+    pop, obj, _ = pdf_libraries()
     pop.poppler_document_new_from_file.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_void_p]
     pop.poppler_document_new_from_file.restype = ctypes.c_void_p
     pop.poppler_document_get_n_pages.argtypes = [ctypes.c_void_p]
