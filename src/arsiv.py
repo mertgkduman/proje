@@ -242,6 +242,11 @@ def record(work, kind, values):
         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
         if kind == 'document_version':
             db.execute('INSERT OR IGNORE INTO url_alias VALUES (?,?,?)', (values['original_url'], values['final_url'], values['id']))
+            for lead in db.execute("SELECT l.id,l.topic_id FROM lead l JOIN topic_search t ON t.topic_id=l.topic_id WHERE t.state='closed' AND l.normalized_url=?", (normalize_url(values['original_url']),)).fetchall():
+                closure = db.execute('SELECT id FROM closure WHERE topic_id=? ORDER BY rowid DESC LIMIT 1', (lead['topic_id'],)).fetchone()
+                db.execute('INSERT OR IGNORE INTO reopen VALUES (?,?,?,?)', (closure['id'],lead['id'],values['accessed_at'],'Aynı adreste yeni içerik sürümü'))
+                db.execute("UPDATE topic_search SET state='in_progress' WHERE topic_id=?", (lead['topic_id'],))
+                db.execute("UPDATE lead SET status='pending' WHERE id=?", (lead['id'],))
         db.commit()
     finally:
         db.close()
@@ -293,7 +298,9 @@ def enqueue_lead(work, values):
 def record_attempt(work, values):
     def validate(db, v):
         if not all(v.get(k) for k in ('query','attempted_at','reason','type','result')): raise ValueError('Girişim alanları gerekli')
-        dt.datetime.fromisoformat(v['attempted_at'].replace('Z','+00:00'))
+        if dt.datetime.fromisoformat(v['attempted_at'].replace('Z','+00:00')).tzinfo is None: raise ValueError('Girişim zaman dilimi içermeli')
+        if (v['type'], v['result']) not in (('search','no_result'), ('access','failure'), ('access','examined'), ('verification','inconclusive'), ('review','excluded')):
+            raise ValueError('Girişim türü ve sonucu uyuşmuyor')
         if v.get('lead_id'):
             lead = db.execute('SELECT * FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
             if not lead or any(lead[k] != v[k] for k in ('party_id','topic_id','heading')): raise ValueError('Girişim uçla uyuşmuyor')
@@ -307,6 +314,8 @@ def record_attempt(work, values):
 def close_topic(work, values):
     def validate(db, v):
         if not v.get('reason') or not v.get('closed_at'): raise ValueError('Kapanma gerekçesi ve tarihi gerekli')
+        state = db.execute('SELECT state FROM topic_search WHERE topic_id=?', (v['topic_id'],)).fetchone()
+        if not state or state['state'] != 'in_progress': raise ValueError('Konu açık değil')
         leads = db.execute('SELECT * FROM lead WHERE topic_id=?', (v['topic_id'],)).fetchall()
         if not leads: raise ValueError('Uçsuz tarama kapanamaz')
         for lead in leads:
@@ -334,6 +343,8 @@ def record_missing(work, values):
         allowed = {'Bulunamadı': ('search','no_result'), 'Erişilemedi': ('access','failure'), 'Doğrulanamadı': ('verification','inconclusive')}
         if not a or any(a[k] != v[k] for k in ('party_id','heading','topic_id')) or allowed.get(v['status']) != (a['type'],a['result']) or not v.get('reason'):
             raise ValueError('Eksik durumuyla eşleşen gerekçeli girişim gerekli')
+        if v['status'] == 'Erişilemedi' and not a['lead_id']:
+            raise ValueError('Erişim engeli belirlenmiş bir kaynağa bağlanmalı')
     insert_checked(work, 'missing', values, validate)
 
 

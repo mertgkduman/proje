@@ -64,6 +64,14 @@ def render_report(data):
         pieces.append('<p class="' + cls + '">' + value + ' ' + links + '</p>')
     if data.get('missing'):
         attempts = {a['id']: a for a in data['attempt']}
+        for heading in dict.fromkeys(m['heading'] for m in data['missing']):
+            pieces.append('<section><h2>' + esc(heading) + '</h2>')
+            for m in (m for m in data['missing'] if m['heading'] == heading):
+                a = attempts[m['attempt_id']]
+                pieces.append('<p>' + esc(m['topic_id']) + ': ' + esc(m['status']) + ' — ' + esc(m['reason']) + ' (' + esc(a['attempted_at']) + ') <a href="#attempt-' + esc(a['id']) + '">Girişim</a></p>')
+            pieces.append('</section>')
+    if data.get('missing'):
+        attempts = {a['id']: a for a in data['attempt']}
         pieces.append('<h2>Eksik bilgiler</h2><ul>')
         for m in data['missing']:
             a = attempts[m['attempt_id']]
