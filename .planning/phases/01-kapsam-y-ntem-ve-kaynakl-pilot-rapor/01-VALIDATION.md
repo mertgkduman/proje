@@ -91,3 +91,7 @@ Her hedefli komutun failing direction'ı: sıfır olmayan çıkış, sıfır tes
 | İnsan/probe yargıları | 13 uç ve 4 prohibition açık; kaynak/UI/tarafsızlık incelemesi bekliyor |
 
 Test dosyaları ve test adları, görev komutları ile çapraz kontrol edildi. Yeni otomatik test açığı bulunmadığından validate-phase adım 3→6 kısa yolu kullanıldı; ek Nyquist denetçisi veya yapay kapsama testi üretilmedi. Süre sonucu kaynak doğruluğunun insan onayı sayılmaz.
+
+## UI repair verification 2026-11-10T17:35:20.374044+00:00
+
+UI-FIX ve 3e4f7ad commitinden sonra tam paket: TESTS_OK count=44; 34,546 sn. PHASE1_AUDIT_OK 7b69e39259214749b36bd655e60c7e66. Kapsam/girişim hash bağlantısı, viewport meta ve Türkçe okuyucu etiketleri gerçek Chromium file/loopback probuyla kontrol edildi. Dar/geniş ekran görüntüleri masaüstü pencereleridir; gerçek mobil ve insan erişilebilirliği incelemesi bekliyor.
