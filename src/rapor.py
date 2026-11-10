@@ -5,6 +5,11 @@ from urllib.parse import urlsplit
 
 def render_report(data):
     esc = lambda value: escape(str(value or ''), quote=True)
+    def web_url(value):
+        parsed = urlsplit(value)
+        if parsed.scheme not in ('http', 'https') or not parsed.hostname or parsed.username or parsed.password:
+            raise ValueError('Geçersiz URL')
+        return esc(value)
     versions = {v['id']: v for v in data['document_version']}
     documents = {d['id']: d for d in data['document']}
     passages = {p['id']: p for p in data['passage']}
@@ -57,14 +62,14 @@ def render_report(data):
                 ref = ' <a class="citation" href="#source-' + esc(linked) + '">[Kaynak]</a>' if linked else ''
                 pieces.append('<li id="attempt-' + esc(a['id']) + '">' + esc(a['topic_id']) + ' — ' + esc(a['query']) + ' — ' + esc(a['attempted_at']) + ': ' + esc(a['result']) + ' — ' + esc(a['reason']) + ref + '</li>')
             for lead in data.get('lead', []):
-                pieces.append('<li>' + esc(lead['topic_id']) + ': <a href="' + esc(lead['url']) + '">' + esc(lead['url']) + '</a> — ' + esc(lead['status']) + ' — ' + esc(lead['relevance_reason']) + '</li>')
+                pieces.append('<li>' + esc(lead['topic_id']) + ': <a href="' + web_url(lead['url']) + '">' + esc(lead['url']) + '</a> — ' + esc(lead['status']) + ' — ' + esc(lead['relevance_reason']) + '</li>')
             for edge in data.get('edge', []):
                 if {'name': 'chain_links', 'value': '1'} in data.get('report_option', []):
                     source = next((p['id'] for p in data['passage'] if p['version_id'] == edge['from_version_id']), None)
                     target = next(l for l in data['lead'] if l['id'] == edge['to_lead_id'])
                     document = documents[versions[edge['from_version_id']]['document_id']]
                     ref = '<a class="citation" href="#source-' + esc(source) + '">' + esc(document['title']) + '</a>' if source else esc(document['title'])
-                    pieces.append('<li>' + ref + ' (' + esc(document['source_kind']) + ') → <a href="' + esc(target['url']) + '">' + esc(target['url']) + '</a>: ' + esc(edge['relation']) + ' — ' + esc(edge['relevance_reason']) + '</li>')
+                    pieces.append('<li>' + ref + ' (' + esc(document['source_kind']) + ') → <a href="' + web_url(target['url']) + '">' + esc(target['url']) + '</a>: ' + esc(edge['relation']) + ' — ' + esc(edge['relevance_reason']) + '</li>')
                 else:
                     pieces.append('<li>İlişki: ' + esc(edge['relation']) + ' — ' + esc(edge['relevance_reason']) + '</li>')
             for closure in data.get('closure', []):
@@ -156,12 +161,13 @@ def render_report(data):
     for p in data['passage']:
         v = versions[p['version_id']]; d = documents[v['document_id']]
         manual = next((m for m in data.get('manual_passage', []) if m['passage_id'] == p['id']), None)
-        if urlsplit(v['original_url']).scheme not in ('http', 'https'): raise ValueError('Geçersiz URL')
+        web_url(v['original_url'])
         for path in (v['readable_path'], v['original_path']):
             if path.startswith('/') or '..' in path.split('/') or not path.startswith('objects/'):
                 raise ValueError('Geçersiz arşiv yolu')
-        source_groups.setdefault(d['party_id'], []).append('<details id="source-' + esc(p['id']) + '"><summary>' + esc(d['title']) + ' — ' + esc(d['source_kind']) + '</summary>'
-                      '<p>Pasaj: ' + esc(p['exact']) + ((' | PDF sayfası: ' + esc(p['pdf_page_index'] + 1) + ' | Basılı sayfa: ' + esc(p['printed_page'])) if p['pdf_page_index'] is not None else '') + ((' | Elle sayfa kontrolü: ' + esc(manual['checked_at']) + ' — ' + esc(manual['reason'])) if manual else '') + '</p><p>Belge tarihi: ' + esc(v['document_date'] or 'Belirtilmemiş') +
+        kind = {'registry':'sicil', 'official':'resmî kayıt', 'journalism':'haber', 'news':'haber', 'unknown':'türü doğrulanmadı', 'unverified':'yetkisi doğrulanmadı', 'party':'parti kaynağı'}.get(d['source_kind'], d['source_kind'])
+        source_groups.setdefault(d['party_id'], []).append('<details id="source-' + esc(p['id']) + '"><summary>' + esc(d['title']) + ' — ' + esc(kind) + '</summary>'
+                      '<p>Pasaj: ' + esc(p['exact']) + ((' | Konum: ' + esc(p['article'] or p['section'] or p['prefix'] or p['suffix'])) if (p['article'] or p['section'] or p['prefix'] or p['suffix']) else '') + ((' | PDF sayfası: ' + esc(p['pdf_page_index'] + 1) + ' | Basılı sayfa: ' + esc(p['printed_page'])) if p['pdf_page_index'] is not None else '') + ((' | Elle sayfa kontrolü: ' + esc(manual['checked_at']) + ' — ' + esc(manual['reason'])) if manual else '') + '</p><p>Belge tarihi: ' + esc(v['document_date'] or 'Belirtilmemiş') +
                       ' | Sürüm: ' + esc(v['version_label'] or 'Belirtilmemiş') + ' | Erişim: ' + esc(v['accessed_at']) +
                       ' | Doğrulama: ' + esc(v['verified_at']) + ((' | Tarih kesinliği: ' + esc(v.get('date_precision')) + ' | Gerekçe: ' + esc(v.get('date_unknown_reason'))) if data.get('schema_version') == 3 else '') + '</p><p><a href="' + esc(v['original_url']) + '">Özgün kaynak</a> '
                       '<a href="../../' + esc(v['readable_path']) + '">Yerel arşiv</a> '

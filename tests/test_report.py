@@ -21,7 +21,9 @@ class ReportTest(unittest.TestCase):
             self.assertIn('id="party-' + party['party_id'] + '"', report)
         self.assertIn('data-finding-id="kurulus-summary"', report)
         self.assertIn('id="scope-method"', report)
-        self.assertEqual(probe_tabs(report, 'kurulus'), 'BROWSER_TABS_OK')
+        passage = next(p for p in data['passage'] if p['id'] == 'kurulus')
+        version = next(v for v in data['document_version'] if v['id'] == passage['version_id'])
+        self.assertEqual(probe_tabs(report, 'kurulus', root / 'data', version['readable_path']), 'BROWSER_TABS_OK')
 
     def test_rejects_unsafe_archive_path_and_escapes_finding(self):
         root = Path(__file__).resolve().parents[1]
@@ -29,6 +31,10 @@ class ReportTest(unittest.TestCase):
         data = json.loads((root / 'data/releases' / release / 'records.json').read_text())
         data['finding'][0]['text'] = '<script>alert(1)</script>'
         self.assertNotIn('<script>alert(1)</script>', render_report(data))
+        data['lead'][0]['url'] = 'javascript:alert(1)'
+        with self.assertRaises(ValueError):
+            render_report(data)
+        data['lead'][0]['url'] = 'https://example.org/'
         data['document_version'][0]['readable_path'] = '../outside'
         with self.assertRaises(ValueError):
             render_report(data)

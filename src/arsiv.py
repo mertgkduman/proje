@@ -20,6 +20,9 @@ from decimal import Decimal, InvalidOperation
 
 from rapor import render_report
 from rapor_legacy import render_report as render_legacy_report
+from rapor_v2 import render_report as render_v2_report
+from rapor_v3 import render_report as render_v3_report
+from rapor_v4 import render_report as render_v4_report
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
@@ -78,6 +81,7 @@ TABLES.update({
     'missing_resolution': 'missing_id TEXT PRIMARY KEY REFERENCES missing(id), resolved_at TEXT NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), reason TEXT NOT NULL'
 })
 TABLES['financial'] = 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT NOT NULL REFERENCES document_version(id), category TEXT NOT NULL, amount TEXT, currency TEXT NOT NULL, period_start TEXT NOT NULL, period_end TEXT NOT NULL, organization_scope TEXT NOT NULL, published_at TEXT NOT NULL, passage_id TEXT REFERENCES passage(id), missing_id TEXT REFERENCES missing(id)'
+TABLES['review'] = 'id TEXT PRIMARY KEY, kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL'
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -184,6 +188,13 @@ def connect(path):
     db.row_factory = sqlite3.Row
     db.execute('PRAGMA foreign_keys=ON')
     db.execute('PRAGMA journal_mode=DELETE')
+    return db
+
+
+def connect_readonly(path):
+    db = sqlite3.connect(Path(path).resolve().as_uri() + '?mode=ro', uri=True)
+    db.row_factory = sqlite3.Row
+    db.execute('PRAGMA foreign_keys=ON')
     return db
 
 
@@ -561,7 +572,7 @@ def record_financial(work, values):
 
 
 def audit_finance(path):
-    db = connect(path)
+    db = connect_readonly(path)
     try:
         if not db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='financial'").fetchone(): raise ValueError('Mali kayıt tablosu yok')
         for row in db.execute('SELECT * FROM financial'): check_financial(db, dict(row))
@@ -648,7 +659,7 @@ def freeze_cutoff(work, tbmm_version, version=1):
 
 
 def export_db(path, release_id):
-    db = connect(path)
+    db = connect_readonly(path)
     try:
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Veritabanı bütünlük hatası')
@@ -672,6 +683,8 @@ def export_db(path, release_id):
                 if actual == 'outside' or actual != event['scope_status']: raise ValueError('Olay kapsamı geçersiz')
         if any(not any(e['finding_id'] == f['id'] for e in result['finding_evidence']) for f in result['finding']):
             raise ValueError('Kanıtsız bulgu')
+        if any(not any(e['comparison_id'] == c['id'] for e in result['comparison_evidence']) for c in result['comparison']):
+            raise ValueError('Kanıtsız karşılaştırma')
         for v in result['document_version']:
             safe_url(v['original_url']); safe_url(v['final_url'])
             original = safe_path(DATA, v['original_path']); readable = safe_path(DATA, v['readable_path'])
@@ -737,10 +750,56 @@ def audit_release(release='current'):
     exported = export_db(folder / 'records.sqlite3', release)
     if json.loads((folder / 'records.json').read_text(encoding='utf-8')) != exported:
         raise ValueError('JSON kapalı snapshot ile eşleşmiyor')
-    renderer = {None: render_legacy_report, 2: render_report}.get(manifest.get('renderer_version'))
+    renderer = {None: render_legacy_report, 2: render_v2_report, 3: render_v3_report, 4: render_v4_report, 5: render_report}.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
         raise ValueError('HTML kapalı snapshot ile eşleşmiyor')
+    return release
+
+
+def validate_phase_one_workspace(work):
+    path = Path(work) / 'records.sqlite3'
+    data = export_db(path, 'workspace')
+    audit_finance(path)
+    if len(data['scope_party']) != 9 or len({s['party_id'] for s in data['scope_party']}) != 9:
+        raise ValueError('Dokuz kapsam kararı gerekli')
+    if not data['method'] or not data['scope_observation'] or not data['identity_observation']:
+        raise ValueError('Kapsam, kimlik ve yöntem kaydı gerekli')
+    if any(not s['inclusion_reason'] or not s['decision_origin'] for s in data['scope_party']):
+        raise ValueError('Kapsam gerekçesi gerekli')
+    for v in data['document_version']:
+        if not all(v[k] for k in ('original_url','accessed_at','verified_at','date_precision')):
+            raise ValueError('Kaynak tarihleri veya adresi eksik')
+        if v['date_precision'] == 'unknown' and not v['date_unknown_reason']:
+            raise ValueError('Bilinmeyen tarih için gerekçe gerekli')
+    for p in data['passage']:
+        if not p['exact'] or not any(p.get(k) is not None and p.get(k) != '' for k in ('article','section','pdf_page_index','prefix','suffix')):
+            raise ValueError('Pasaj veya konum eksik')
+    attempts = {a['id']: a for a in data['attempt']}
+    allowed = {'Bulunamadı': ('search','no_result'), 'Erişilemedi': ('access','failure'), 'Doğrulanamadı': ('verification','inconclusive')}
+    for m in data['missing']:
+        a = attempts.get(m['attempt_id'])
+        if not a or any(a[k] != m[k] for k in ('party_id','heading','topic_id')) or allowed.get(m['status']) != (a['type'],a['result']) or not m['reason']:
+            raise ValueError('Eksik kaydı girişimiyle uyuşmuyor')
+    for f in data['finding']:
+        if f['provenance'] not in ('quote','summary') or f['epistemic_type'] not in ('registry','fact','claim','comment'):
+            raise ValueError('Bulgu kökeni veya bilgi türü geçersiz')
+        if not any(r['kind']=='finding' and r['subject_id']==f['id'] and r['reviewer_kind']=='agent' and r['result']=='reviewed' and r['reason'] and r['reviewed_at'] for r in data.get('review', [])):
+            raise ValueError('Bulgu için kaynak incelemesi eksik: ' + f['id'])
+    return data
+
+
+def validate_phase_one(release='current'):
+    release = audit_release(release)
+    folder = DATA / 'releases' / release
+    data = validate_phase_one_workspace(folder)
+    report = (folder / 'index.html').read_text(encoding='utf-8')
+    for f in data['finding']:
+        if 'data-finding-id="' + html.escape(f['id'], quote=True) + '"' not in report:
+            raise ValueError('Bulgu HTML içinde eksik')
+    for m in data['match']:
+        if m['eligibility'] == 'eligible' and 'data-match-id="' + html.escape(m['id'], quote=True) + '"' not in report:
+            raise ValueError('Uygun eşleşme HTML içinde eksik')
     return release
 
 
@@ -770,7 +829,7 @@ def publish_release(work, fail_at=None):
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
         (staging / 'index.html').write_text(render_report(payload), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
-        manifest = {'release_id': release, 'renderer_version': 2, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
+        manifest = {'release_id': release, 'renderer_version': 5, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
         (DATA / 'releases').mkdir(exist_ok=True)
@@ -804,7 +863,7 @@ def main():
     ch = sub.add_parser('chain'); ch.add_argument('--workspace', required=True); ch.add_argument('--party', required=True); ch.add_argument('--topic', required=True)
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True)
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
-    a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance'))
+    a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1',))
     s = sub.add_parser('serve'); s.add_argument('--host', default='127.0.0.1'); s.add_argument('--port', type=int, default=8000)
     args = p.parse_args()
     if args.command == 'capture': print(json.dumps(capture_source(args.url, args.kind, args.out), ensure_ascii=False))
@@ -829,12 +888,19 @@ def main():
                 if not db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name=?", (table,)).fetchone(): raise ValueError('Bu sürüm hedef denetimi desteklemiyor')
             finally: db.close()
             if args.check == 'finance': audit_finance(DATA / 'releases' / release / 'records.sqlite3')
-        print('AUDIT_OK', release)
+        if args.phase == '1':
+            validate_phase_one(release)
+            print('PHASE1_AUDIT_OK', release)
+        else: print('AUDIT_OK', release)
     elif args.command == 'serve':
+        if args.host != '127.0.0.1': raise ValueError('Sunucu yalnız 127.0.0.1 üzerinde çalışabilir')
         from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
         class Handler(SimpleHTTPRequestHandler):
             def translate_path(self, path):
                 relative = urllib.parse.unquote(urllib.parse.urlsplit(path).path).lstrip('/')
+                if not (re.fullmatch(r'releases/[0-9a-f]+/(?:index\.html|records\.json|records\.sqlite3|manifest\.json)', relative) or
+                        re.fullmatch(r'objects/[0-9a-f]{64}/(?:readable\.html|original\.pdf|original\.html\.bin)', relative)):
+                    return str(DATA / '.invalid-path')
                 try: return str(safe_path(DATA, relative))
                 except ValueError: return str(DATA / '.invalid-path')
             def end_headers(self):
