@@ -1,19 +1,29 @@
 ---
 phase: 01-kapsam-y-ntem-ve-kaynakl-pilot-rapor
-fixed_at: 2026-11-10T17:10:50Z
+fixed_at: 2026-11-10T17:21:06Z
 review_path: .planning/phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-REVIEW.md
-iteration: 1
-findings_in_scope: 8
-fixed: 8
+iteration: 2
+findings_in_scope: 2
+fixed: 2
 skipped: 0
 status: all_fixed
 ---
 
 # Phase 1: Code Review Fix Report
 
-All eight software findings are addressed. Logic changes and the material interpretation of sources still require human review.
+Both findings from the second review are addressed. Logic changes and the material interpretation of sources still require human review.
 
-## Fixed issues
+## Iteration 2 fixes
+
+### CR-01: Re-capturing unchanged bytes
+
+**Commit:** `3df7994`. A capture remains distinct, but a closed lead is reopened only if its party's latest prior capture for that address has different bytes; a first capture has a distinct reopening reason. Tests verify the same-hash capture remains closed and a changed hash reopens with the recorded content-change reason. **Status:** fixed, requires human verification.
+
+### CR-02: Turkish monetary separators
+
+**Commit:** `5d159b8`. Known financial amounts now require a stored source `number_format` (`tr` or `canonical`); Turkish grouping and comma decimals and canonical decimals are parsed according to that explicit choice. Ambiguous notation without a format and malformed grouping are rejected. Tests cover `1.000`, `1.234,56`, `1.000,50`, decimal notation, and the alternate meaning of `1.000`. A new nullable column is added only to newly opened authoring workspaces; immutable snapshots are unchanged. The format and the material meaning still need review. **Status:** fixed, requires human verification.
+
+## Iteration 1 fixes (historical)
 
 ### CR-02: Shared source bytes retain document ownership
 
@@ -49,6 +59,6 @@ All eight software findings are addressed. Logic changes and the material interp
 
 ## Verification
 
-Targeted regressions and the full Python suite ran in the main checkout: 43 tests passed. `audit --release current --phase 1` returned `PHASE1_AUDIT_OK 6fd06aa1a6c643ed99b2b1c95f32822d`; the preceding release `ce36c63ae9e44e50bb36b440aa4ada2b` also passed its legacy phase audit. Historical renderers remain available. Source accuracy, political neutrality, the TİP identifier relationship and financial semantics still require human review.
+Targeted regressions and the iteration 2 full Python suite ran in the main checkout: 44 tests passed. `audit --release current --phase 1` returned `PHASE1_AUDIT_OK 6fd06aa1a6c643ed99b2b1c95f32822d`; the current snapshot and older releases remain unchanged. Historical renderers remain available. Source accuracy, political neutrality, the TİP identifier relationship and financial semantics still require human review.
 
-_Fixer: gsd-code-fixer; iteration 1_
+_Fixer: gsd-code-fixer; iteration 2_
