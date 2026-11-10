@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#841d1d">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="T.C. Yargıtay Başkanlığı'nın resmi web sitesidir. Sitede teşkilat yapısı, tarihçesi ve Yargıtay hakkında haberler yer almaktadır.">
+    <meta name="keywords"
+        content="Yargıtay, Yargıtay Başkanlığı, yargıtay dosya sorgu, savcılık, Uyap dosya sorgu, Karar arama, emsal karar">
+    <meta name="author" content="T.C. Yargıtay Başkanlığı">
+    <meta name="robots" content="index, follow">
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="T.C. Yargıtay Başkanlığı" />
+    <meta property="og:type" content="website" />
+    <meta name="csrf-token" content="dlMhd0pbhewlfrmlb0kdluymohEF5rPlZ9WIpz5I" />
+    <title>            Yargıtay Cumhuriyet Başsavcılığı - YENİ PARTİ
+    </title>
+
+    <link rel="icon" href="https://www.yargitaycb.gov.tr/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://www.yargitaycb.gov.tr/images/footer-logo.png">
+
+    <link href="https://www.yargitaycb.gov.tr/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.yargitaycb.gov.tr/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://www.yargitaycb.gov.tr/vendor/fonts/fonts.css">
+    <link rel="stylesheet" href="https://www.yargitaycb.gov.tr/css/styles.css">
+    <link rel="stylesheet" href="https://www.yargitaycb.gov.tr/css/animations.css">
+    <link rel="stylesheet" href="https://www.yargitaycb.gov.tr/css/pages.css">
+    </head>
+
+<body>
+
+    
+
+    <header class="site-header">
+    <div id="e-services-overlay" class="e-services-overlay"></div>
+
+    <div class="header-top-bar">
+        <div class="container py-2">
+            <div class="d-flex justify-content-between align-items-center small">
+                <div class="d-flex align-items-center gap-3 text-gray-600">
+                    
+                                            <a href="/lang/en" class="header-language-link" lang="en" hreflang="en"
+                            aria-label="English" title="English">
+                            <i class="ri-global-line" aria-hidden="true"></i>
+                            <span>EN</span>
+                        </a>
+                                    </div>
+                <div class="d-none d-lg-flex align-items-center" style="gap: 1.5rem;">
+                    <form action="https://www.yargitaycb.gov.tr/search" method="GET" class="position-relative" autocomplete="off">
+                        <label for="site-search" class="visually-hidden">Site içi arama</label>
+                        <input type="text" name="arama" id="site-search"
+                            placeholder="arama..." value=""
+                            class="header-search-input border border-gray-300" autocomplete="off">
+                        <button type="submit" class="header-search-icon border-0 bg-transparent p-0"
+                            aria-label="arama">
+                            <i class="ri-search-line text-gray-400 small" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                    <div class="position-relative menu-item w-e-services">
+                        <button type="button" class="e-services-btn bg-bordo text-white border-0">
+                            <span class="w-100 text-center">E-HİZMETLER</span>
+                            <i class="ri-arrow-down-s-line position-absolute end-0 top-50 translate-middle-y me-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="d-flex d-lg-none align-items-center ms-3">
+                    <div class="mobile-e-services-wrapper-top mb-0">
+                        <div class="mobile-nav-item mobile-e-services-item border-0">
+                            <a href="javascript:void(0);" class="mobile-e-services-btn">
+                                E-HİZMETLER <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                            <div class="mobile-e-submenu-down">
+                                                                    <a href="https://vatandasilam.yargitay.gov.tr/proxyYargitay/jsp/yargitay_jsp/yargitayDosyaSorguSecim.html" target="_blank"
+                                        class="d-flex flex-column gap-1 text-decoration-none">
+                                        <span
+                                            class="fw-medium text-gray-800 small text-uppercase">Dosya Sorgu</span>
+                                        <span
+                                            class="text-gray-500 font-normal mobile-e-desc">Dosyanızın Yargıtay&#039; da bulunduğu durum, kapalı ise karar bilgilerini ve ilamını görüntüleyebilirisiniz.</span>
+                                    </a>
+                                                                    <a href="https://vatandas.yargitaycb.gov.tr/proxyYargitay/portal_baslangic.uyap" target="_blank"
+                                        class="d-flex flex-column gap-1 text-decoration-none">
+                                        <span
+                                            class="fw-medium text-gray-800 small text-uppercase">Tebliğname  Sorgu</span>
+                                        <span
+                                            class="text-gray-500 font-normal mobile-e-desc">Ceza Dairesinde bulunan dosyanızın Yargıtay Cumhuriyet Başsavcılığı&#039;nda yazılmış tebliğnamesini görüntüleyebilirsiniz.</span>
+                                    </a>
+                                                                    <a href="/sorgulamaislemleri" target="_self"
+                                        class="d-flex flex-column gap-1 text-decoration-none">
+                                        <span
+                                            class="fw-medium text-gray-800 small text-uppercase">Siyasi Parti Üyelik Sorgu</span>
+                                        <span
+                                            class="text-gray-500 font-normal mobile-e-desc">Herhangi bir siyasi partiye üyeliğinizin bulunup bulunmadığını sorgulayabilirsiniz.</span>
+                                    </a>
+                                                                    <a href="/category/36/siyasi-parti-islemleri" target="_self"
+                                        class="d-flex flex-column gap-1 text-decoration-none">
+                                        <span
+                                            class="fw-medium text-gray-800 small text-uppercase">Siyasi  Partiler</span>
+                                        <span
+                                            class="text-gray-500 font-normal mobile-e-desc">Partinize tanımlanmış e-imza ile siyasi partiler web uygulamasına erişebilirsiniz.</span>
+                                    </a>
+                                                                    <a href="https://karararama.yargitay.gov.tr" target="_blank"
+                                        class="d-flex flex-column gap-1 text-decoration-none">
+                                        <span
+                                            class="fw-medium text-gray-800 small text-uppercase">Karar Arama</span>
+                                        <span
+                                            class="text-gray-500 font-normal mobile-e-desc">Yargıtay kararlarını görüntüleyebilirsiniz.</span>
+                                    </a>
+                                                                    <a href="https://vatandasilam.yargitay.gov.tr/proxyYargitay/jsp/yargitay_jsp/yargitayDosyaSorguRandevu.html" target="_blank"
+                                        class="d-flex flex-column gap-1 text-decoration-none">
+                                        <span
+                                            class="fw-medium text-gray-800 small text-uppercase">Ön Büro  Hizmetleri</span>
+                                        <span
+                                            class="text-gray-500 font-normal mobile-e-desc">Dosyaya belge sunmak ve dosyadan belge almak için Ön Büromuza uğrayabilirsiniz.</span>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="e-services-mega" class="e-services-mega d-none d-lg-block">
+        <div class="container">
+            <div class="e-services-mega-inner">
+                                    <a href="https://vatandasilam.yargitay.gov.tr/proxyYargitay/jsp/yargitay_jsp/yargitayDosyaSorguSecim.html" target="_blank" class="d-block submenu-item-inner d-flex">
+                        <div class="d-flex align-items-center gap-2 text-uppercase">
+                            <i class="ri-arrow-right-s-line text-bordo"></i> Dosya Sorgu
+                        </div>
+                        <div class="menu-desc">Dosyanızın Yargıtay&#039; da bulunduğu durum, kapalı ise karar bilgilerini ve ilamını görüntüleyebilirisiniz.</div>
+                    </a>
+                                    <a href="https://vatandas.yargitaycb.gov.tr/proxyYargitay/portal_baslangic.uyap" target="_blank" class="d-block submenu-item-inner d-flex">
+                        <div class="d-flex align-items-center gap-2 text-uppercase">
+                            <i class="ri-arrow-right-s-line text-bordo"></i> Tebliğname  Sorgu
+                        </div>
+                        <div class="menu-desc">Ceza Dairesinde bulunan dosyanızın Yargıtay Cumhuriyet Başsavcılığı&#039;nda yazılmış tebliğnamesini görüntüleyebilirsiniz.</div>
+                    </a>
+                                    <a href="/sorgulamaislemleri" target="_self" class="d-block submenu-item-inner d-flex">
+                        <div class="d-flex align-items-center gap-2 text-uppercase">
+                            <i class="ri-arrow-right-s-line text-bordo"></i> Siyasi Parti Üyelik Sorgu
+                        </div>
+                        <div class="menu-desc">Herhangi bir siyasi partiye üyeliğinizin bulunup bulunmadığını sorgulayabilirsiniz.</div>
+                    </a>
+                                    <a href="/category/36/siyasi-parti-islemleri" target="_self" class="d-block submenu-item-inner d-flex">
+                        <div class="d-flex align-items-center gap-2 text-uppercase">
+                            <i class="ri-arrow-right-s-line text-bordo"></i> Siyasi  Partiler
+                        </div>
+                        <div class="menu-desc">Partinize tanımlanmış e-imza ile siyasi partiler web uygulamasına erişebilirsiniz.</div>
+                    </a>
+                                    <a href="https://karararama.yargitay.gov.tr" target="_blank" class="d-block submenu-item-inner d-flex">
+                        <div class="d-flex align-items-center gap-2 text-uppercase">
+                            <i class="ri-arrow-right-s-line text-bordo"></i> Karar Arama
+                        </div>
+                        <div class="menu-desc">Yargıtay kararlarını görüntüleyebilirsiniz.</div>
+                    </a>
+                                    <a href="https://vatandasilam.yargitay.gov.tr/proxyYargitay/jsp/yargitay_jsp/yargitayDosyaSorguRandevu.html" target="_blank" class="d-block submenu-item-inner d-flex">
+                        <div class="d-flex align-items-center gap-2 text-uppercase">
+                            <i class="ri-arrow-right-s-line text-bordo"></i> Ön Büro  Hizmetleri
+                        </div>
+                        <div class="menu-desc">Dosyaya belge sunmak ve dosyadan belge almak için Ön Büromuza uğrayabilirsiniz.</div>
+                    </a>
+                            </div>
+        </div>
+    </div>
+
+    <nav class="container">
+        <div class="d-flex align-items-center" style="height: 5rem;">
+            <a href="https://www.yargitaycb.gov.tr" class="d-flex align-items-center gap-3 text-decoration-none">
+                                    <img src="https://www.yargitaycb.gov.tr/images/ycblogo.png" alt="Yargıtay Logo"
+                        class="logo-height header-logo-img">
+                            </a>
+
+            <div class="d-none d-lg-flex align-items-center gap-8 ms-auto">
+                
+                <!--<div class="position-relative menu-item">
+          <a href="https://www.yargitaycb.gov.tr/sayfa/yargitay-birinci-baskani/44"
+            class="nav-menu-link d-flex align-items-center gap-1 text-decoration-none">
+            Başsavcı
+          </a>
+        </div>-->
+
+                
+                                                        <div class="position-relative menu-item">
+                                                    <a href="https://www.yargitaycb.gov.tr/category/1/bassavciligimiz"
+                                class="nav-menu-link d-flex align-items-center gap-1 text-decoration-none">
+                                BAŞSAVCILIK
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        
+                                                    <div
+                                class="submenu position-absolute top-100 start-0 bg-white rounded-0 py-2 nav-desktop-menu">
+                                                                    
+                                                                            <div class="submenu-item-wrapper">
+                                            <a href="javascript:void(0);" class="submenu-link has-submenu">
+                                                Yönetim <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <div class="nested-submenu">
+                                                                                                                                                                                                                <a
+                                                            href="https://www.yargitaycb.gov.tr/category/2/yargitay-cumhuriyet-bassavcisi">Cumhuriyet Başsavcısı</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/3/yargitay-cumhuriyet-bassavci-vekili">Cumhuriyet Başsavcı Vekili</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/120/organizasyon-semasi">Organizayon Şeması</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/5/is-bolumu">İş Bölümü</a>
+                                                                                                                                                </div>
+                                        </div>
+                                                                                                        
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/4/tarihce"
+                                                class="submenu-link">Tarihçe</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/6/misyonumuz"
+                                                class="submenu-link">Misyonumuz</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/7/vizyonumuz"
+                                                class="submenu-link">Vizyonumuz</a>
+                                                                                                                                                
+                                                                            <div class="submenu-item-wrapper">
+                                            <a href="javascript:void(0);" class="submenu-link has-submenu">
+                                                Görevler <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <div class="nested-submenu">
+                                                                                                                                                                                                                <a
+                                                            href="https://www.yargitaycb.gov.tr/category/48/temyiz-incelemesi">Temyiz İncelemesi</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/49/itiraz-incelemesi">İtiraz İncelemesi</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/50/kanun-yararina-bozma">Kanun Yararına Bozma</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/51/ust-duzey-memur-sorusturma">Üst Düzey Memur Soruşturma</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/52/uyusmazlik-mahkemesi-ile-ilgili-gorevleri">Uyuşmazlık Mahkemesi İle İlgili Görevleri</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/53/siyasi-partilerle-ilgili-gorevleri">Siyasi Partilerle İlgili Görevleri</a>
+                                                                                                                                                </div>
+                                        </div>
+                                                                                                        
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/8/temel-ilkelerimiz"
+                                                class="submenu-link">Temel İlkelerimiz</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/9/yasal-dayanak"
+                                                class="submenu-link">Yasal Dayanak</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/10/etik-seffaflik"
+                                                class="submenu-link">Etik - Şeffaflık</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/123/onursal-bassavcilarimiz"
+                                                class="submenu-link">Onursal Başsavcılarımız</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/124/onursal-bassavcivekillerimiz"
+                                                class="submenu-link">Onursal Başsavcıvekillerimiz</a>
+                                                                                                                                        </div>
+                                            </div>
+                                                        <div class="position-relative menu-item">
+                                                    <a href="https://www.yargitaycb.gov.tr/category/11/birimlerimiz"
+                                class="nav-menu-link d-flex align-items-center gap-1 text-decoration-none">
+                                BİRİMLER
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        
+                                                    <div
+                                class="submenu position-absolute top-100 start-0 bg-white rounded-0 py-2 nav-desktop-menu">
+                                                                    
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/12/egitim-ve-sosyal-isler-burosu"
+                                                class="submenu-link">Eğitim ve Sosyal İşler Bürosu</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/13/bilgi-islem-burosu"
+                                                class="submenu-link">Bilgi İşlem Bürosu</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/14/personel-burosu"
+                                                class="submenu-link">Personel Bürosu</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/15/idari-isler-burosu"
+                                                class="submenu-link">İdari İşler Bürosu</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/16/siyasi-partiler-burosu"
+                                                class="submenu-link">Siyasi Partiler Bürosu</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/17/genel-evrak-burosu"
+                                                class="submenu-link">Genel Evrak Bürosu</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/18/mali-isler-burosu"
+                                                class="submenu-link">Mali İşler Bürosu</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/19/dosya-islem-burosu"
+                                                class="submenu-link">Dosya İşlem Bürosu</a>
+                                                                                                                                        </div>
+                                            </div>
+                                                        <div class="position-relative menu-item">
+                                                    <a href="https://www.yargitaycb.gov.tr/category/20/faaliyetler"
+                                class="nav-menu-link d-flex align-items-center gap-1 text-decoration-none">
+                                FAALİYETLER
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        
+                                                    <div
+                                class="submenu position-absolute top-100 start-0 bg-white rounded-0 py-2 nav-desktop-menu">
+                                                                    
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/122/tdt-bassavcilar-surasi"
+                                                class="submenu-link">Türk Devletleri Teşkilatı Başsavcılar Şurası</a>
+                                                                                                                                                
+                                                                            <div class="submenu-item-wrapper">
+                                            <a href="javascript:void(0);" class="submenu-link has-submenu">
+                                                Eğitim Faaliyetleri <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <div class="nested-submenu">
+                                                                                                                                                                                                                <a
+                                                            href="https://www.yargitaycb.gov.tr/category/22/kurum-ici-egitim">Kurum İçi Eğitim</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/23/savci-adaylarina-meslek-oncesi-egitim">Savcı Adaylarına Meslek Öncesi Eğitim</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/24/hakim-ve-savcilara-meslek-ici-egitim">Hakim ve Savcılara Meslek İçi Eğitim</a>
+                                                                                                                                                </div>
+                                        </div>
+                                                                                                        
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/25/diger-faaliyetler"
+                                                class="submenu-link">Diğer Faaliyetler</a>
+                                                                                                                                                
+                                                                            <div class="submenu-item-wrapper">
+                                            <a href="javascript:void(0);" class="submenu-link has-submenu">
+                                                Uluslararası İlişkiler <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <div class="nested-submenu">
+                                                                                                                                                                                                                <a
+                                                            href="https://www.yargitaycb.gov.tr/category/43/uye-olunan-uluslararasi-kuruluslar">Üye Olunan Uluslararası Kuruluşlar</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/44/uluslararasi-konferanslar">Uluslararası Konferanslar</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/45/ziyaretler">Ziyaretler</a>
+                                                                                                                                                                                                                                                                    <a
+                                                            href="https://www.yargitaycb.gov.tr/category/46/mutabakat-zabitlari">Mutabakat Zabıtları</a>
+                                                                                                                                                </div>
+                                        </div>
+                                                                                                        
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/26/yayinlar"
+                                                class="submenu-link">Yayınlar</a>
+                                                                                                                                        </div>
+                                            </div>
+                                                        <div class="position-relative menu-item">
+                                                    <a href="https://www.yargitaycb.gov.tr/category/36/siyasi-parti-islemleri"
+                                class="nav-menu-link d-flex align-items-center gap-1 text-decoration-none">
+                                SİYASİ PARTİLER
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        
+                                                    <div
+                                class="submenu position-absolute top-100 start-0 bg-white rounded-0 py-2 nav-desktop-menu">
+                                                                    
+                                                                                                                        <a href="/sipars"
+                                                class="submenu-link">Siyasi Parti Genel Bilgileri</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/category/39/siparweb-uygulamasi"
+                                                class="submenu-link">Siparweb Uygulaması</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/sorgulamaislemleri"
+                                                class="submenu-link">Sorgulama İşlemleri</a>
+                                                                                                                                                
+                                                                                                                        <a href="https://www.yargitaycb.gov.tr/istifaislemleri"
+                                                class="submenu-link">İstifa İşlemleri</a>
+                                                                                                                                        </div>
+                                            </div>
+                            </div>
+
+            <div class="d-flex align-items-center gap-4 ms-auto">
+                <img src="https://www.yargitaycb.gov.tr/images/ataturk.png" alt="Mustafa Kemal Atatürk"
+                    class="ataturk-img d-block">
+                <button type="button" id="mobile-menu-btn"
+                    class="mobile-menu-btn d-lg-none ms-auto border-0 bg-transparent" aria-label="Menüyü aç">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+    <div id="mobile-sidebar" class="mobile-sidebar">
+    <div class="mobile-sidebar-header">
+        <span class="fw-semibold">Yargıtay Başkanlığı</span>
+        <button id="mobile-menu-close" class="mobile-sidebar-close" aria-label="Menüyü kapat">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+
+    <nav class="mobile-nav-content">
+
+
+        
+                                <div class="mobile-nav-item">
+                                    <a href="#" class="mobile-nav-link">BAŞSAVCILIK <i
+                            class="ri-arrow-right-s-line"></i></a>
+                    <div class="mobile-submenu">
+                                                                                                                <div class="mobile-nested-item">
+                                    <a href="#" class="mobile-nested-link">Yönetim <i
+                                            class="ri-arrow-down-s-line"></i></a>
+                                    <div class="mobile-nested-submenu">
+                                                                                                                                                                                <a
+                                                    href="https://www.yargitaycb.gov.tr/category/2/yargitay-cumhuriyet-bassavcisi">Cumhuriyet Başsavcısı</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/3/yargitay-cumhuriyet-bassavci-vekili">Cumhuriyet Başsavcı Vekili</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/120/organizasyon-semasi">Organizayon Şeması</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/5/is-bolumu">İş Bölümü</a>
+                                                                                                                        </div>
+                                </div>
+                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/4/tarihce">Tarihçe</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/6/misyonumuz">Misyonumuz</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/7/vizyonumuz">Vizyonumuz</a>
+                                                                                                                                                                            <div class="mobile-nested-item">
+                                    <a href="#" class="mobile-nested-link">Görevler <i
+                                            class="ri-arrow-down-s-line"></i></a>
+                                    <div class="mobile-nested-submenu">
+                                                                                                                                                                                <a
+                                                    href="https://www.yargitaycb.gov.tr/category/48/temyiz-incelemesi">Temyiz İncelemesi</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/49/itiraz-incelemesi">İtiraz İncelemesi</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/50/kanun-yararina-bozma">Kanun Yararına Bozma</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/51/ust-duzey-memur-sorusturma">Üst Düzey Memur Soruşturma</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/52/uyusmazlik-mahkemesi-ile-ilgili-gorevleri">Uyuşmazlık Mahkemesi İle İlgili Görevleri</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/53/siyasi-partilerle-ilgili-gorevleri">Siyasi Partilerle İlgili Görevleri</a>
+                                                                                                                        </div>
+                                </div>
+                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/8/temel-ilkelerimiz">Temel İlkelerimiz</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/9/yasal-dayanak">Yasal Dayanak</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/10/etik-seffaflik">Etik - Şeffaflık</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/123/onursal-bassavcilarimiz">Onursal Başsavcılarımız</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/124/onursal-bassavcivekillerimiz">Onursal Başsavcıvekillerimiz</a>
+                                                                                                        </div>
+                            </div>
+                                <div class="mobile-nav-item">
+                                    <a href="#" class="mobile-nav-link">BİRİMLER <i
+                            class="ri-arrow-right-s-line"></i></a>
+                    <div class="mobile-submenu">
+                                                                                                                                                    <a
+                                        href="https://www.yargitaycb.gov.tr/category/12/egitim-ve-sosyal-isler-burosu">Eğitim ve Sosyal İşler Bürosu</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/13/bilgi-islem-burosu">Bilgi İşlem Bürosu</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/14/personel-burosu">Personel Bürosu</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/15/idari-isler-burosu">İdari İşler Bürosu</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/16/siyasi-partiler-burosu">Siyasi Partiler Bürosu</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/17/genel-evrak-burosu">Genel Evrak Bürosu</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/18/mali-isler-burosu">Mali İşler Bürosu</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/19/dosya-islem-burosu">Dosya İşlem Bürosu</a>
+                                                                                                        </div>
+                            </div>
+                                <div class="mobile-nav-item">
+                                    <a href="#" class="mobile-nav-link">FAALİYETLER <i
+                            class="ri-arrow-right-s-line"></i></a>
+                    <div class="mobile-submenu">
+                                                                                                                                                    <a
+                                        href="https://www.yargitaycb.gov.tr/category/122/tdt-bassavcilar-surasi">Türk Devletleri Teşkilatı Başsavcılar Şurası</a>
+                                                                                                                                                                            <div class="mobile-nested-item">
+                                    <a href="#" class="mobile-nested-link">Eğitim Faaliyetleri <i
+                                            class="ri-arrow-down-s-line"></i></a>
+                                    <div class="mobile-nested-submenu">
+                                                                                                                                                                                <a
+                                                    href="https://www.yargitaycb.gov.tr/category/22/kurum-ici-egitim">Kurum İçi Eğitim</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/23/savci-adaylarina-meslek-oncesi-egitim">Savcı Adaylarına Meslek Öncesi Eğitim</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/24/hakim-ve-savcilara-meslek-ici-egitim">Hakim ve Savcılara Meslek İçi Eğitim</a>
+                                                                                                                        </div>
+                                </div>
+                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/25/diger-faaliyetler">Diğer Faaliyetler</a>
+                                                                                                                                                                            <div class="mobile-nested-item">
+                                    <a href="#" class="mobile-nested-link">Uluslararası İlişkiler <i
+                                            class="ri-arrow-down-s-line"></i></a>
+                                    <div class="mobile-nested-submenu">
+                                                                                                                                                                                <a
+                                                    href="https://www.yargitaycb.gov.tr/category/43/uye-olunan-uluslararasi-kuruluslar">Üye Olunan Uluslararası Kuruluşlar</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/44/uluslararasi-konferanslar">Uluslararası Konferanslar</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/45/ziyaretler">Ziyaretler</a>
+                                                                                                                                                                                                                            <a
+                                                    href="https://www.yargitaycb.gov.tr/category/46/mutabakat-zabitlari">Mutabakat Zabıtları</a>
+                                                                                                                        </div>
+                                </div>
+                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/26/yayinlar">Yayınlar</a>
+                                                                                                        </div>
+                            </div>
+                                <div class="mobile-nav-item">
+                                    <a href="#" class="mobile-nav-link">SİYASİ PARTİLER <i
+                            class="ri-arrow-right-s-line"></i></a>
+                    <div class="mobile-submenu">
+                                                                                                                                                    <a href="/sipars">Siyasi Parti Genel Bilgileri</a>
+                                                                                                                                                                                                                <a
+                                        href="https://www.yargitaycb.gov.tr/category/39/siparweb-uygulamasi">Siparweb Uygulaması</a>
+                                                                                                                                                                                                                <a href="https://www.yargitaycb.gov.tr/sorgulamaislemleri">Sorgulama İşlemleri</a>
+                                                                                                                                                                                                                <a href="https://www.yargitaycb.gov.tr/istifaislemleri">İstifa İşlemleri</a>
+                                                                                                        </div>
+                            </div>
+            </nav>
+
+    <div class="mobile-search">
+        <form action="https://www.yargitaycb.gov.tr/search" method="GET" class="mobile-search-form">
+            <input type="text" name="arama" placeholder="arama..."
+                value="" autocomplete="off">
+            <button type="submit" class="mobile-search-btn" aria-label="arama">
+                <i class="ri-search-line"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+        <div class="container mt-2">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <h5>YENİ PARTİ</h5>
+            </div>
+            <div class="card-body" style="min-height:500px">
+                                    <div style="margin-bottom:15px;">
+                        <img style="width:120px" src="data:image/png;base64,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" alt="YENİ PARTİ">
+                    </div>
+                
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="width:220px;">Ad</th>
+                            <td>:</td>
+                            <td>YENİ PARTİ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="width:220px;">Kısa Ad</th>
+                            <td>:</td>
+                            <td>YENİ PARTİ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kuruluş Tarihi</th>
+                            <td>:</td>
+                            <td>24.07.2026
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Başkan</th>
+                            <td>:</td>
+                            <td>ÖZGÜR ÖZEL</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tel</th>
+                            <td>:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Adres</th>
+                            <td>:</td>
+                            <td>MUSTAFA KEMAL MAH. 2127 CD. NO: 7 ÇANKAYA/ANKARA</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Üye Sayısı</th>
+                            <td>:</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+        
+        <div class="row g-4">
+            
+                                                        <div class="col-6 col-md-4 col-lg-2">
+                    <h6>YÖNETİM
+                    </h6>
+                    <ul class="footer-links">
+                                                                                                                                                                                        <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/2/cumhuriyet-bassavcisi">Cumhuriyet Başsavcısı</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/3/cumhuriyet-bassavci-vekili">Cumhuriyet Başsavcı Vekili</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/120/organizayon-semasi">Organizayon Şeması</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/5/is-bolumu">İş Bölümü</a>
+                                    </li>
+                                                                                                        </ul>
+                </div>
+                                            <div class="col-6 col-md-4 col-lg-2">
+                    <h6>BAŞSAVCILIK
+                    </h6>
+                    <ul class="footer-links">
+                                                                                                                                                                                                                        <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/4/tarihce">Tarihçe</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/6/misyonumuz">Misyonumuz</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/7/vizyonumuz">Vizyonumuz</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/47/gorevler">Görevler</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/8/temel-ilkelerimiz">Temel İlkelerimiz</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/9/yasal-dayanak">Yasal Dayanak</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/10/etik-seffaflik">Etik - Şeffaflık</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/123/onursal-bassavcilarimiz">Onursal Başsavcılarımız</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/124/onursal-bassavcivekillerimiz">Onursal Başsavcıvekillerimiz</a>
+                                    </li>
+                                                                                                        </ul>
+                </div>
+                                            <div class="col-6 col-md-4 col-lg-2">
+                    <h6>BİRİMLER
+                    </h6>
+                    <ul class="footer-links">
+                                                                                                                                                                                        <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/12/egitim-ve-sosyal-isler-burosu">Eğitim ve Sosyal İşler Bürosu</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/13/bilgi-islem-burosu">Bilgi İşlem Bürosu</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/14/personel-burosu">Personel Bürosu</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/15/idari-isler-burosu">İdari İşler Bürosu</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/16/siyasi-partiler-burosu">Siyasi Partiler Bürosu</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/17/genel-evrak-burosu">Genel Evrak Bürosu</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/18/mali-isler-burosu">Mali İşler Bürosu</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/19/dosya-islem-burosu">Dosya İşlem Bürosu</a>
+                                    </li>
+                                                                                                        </ul>
+                </div>
+                                            <div class="col-6 col-md-4 col-lg-2">
+                    <h6>FAALİYETLER
+                    </h6>
+                    <ul class="footer-links">
+                                                                                                                                                                                        <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/122/turk-devletleri-teskilati-bassavcilar-surasi">Türk Devletleri Teşkilatı Başsavcılar Şurası</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/21/egitim-faaliyetleri">Eğitim Faaliyetleri</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/25/diger-faaliyetler">Diğer Faaliyetler</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/42/uluslararasi-iliskiler">Uluslararası İlişkiler</a>
+                                    </li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/26/yayinlar">Yayınlar</a>
+                                    </li>
+                                                                                                        </ul>
+                </div>
+                                            <div class="col-6 col-md-4 col-lg-2">
+                    <h6>SİYASİ PARTİLER
+                    </h6>
+                    <ul class="footer-links">
+                                                                                                                                                                                        <li><a href="/sipars">Siyasi Parti Genel Bilgileri</a></li>
+                                                                                                                                                                                                <li><a
+                                            href="https://www.yargitaycb.gov.tr/category/39/siparweb-uygulamasi">Siparweb Uygulaması</a>
+                                    </li>
+                                                                                                                                                                                                <li><a href="https://www.yargitaycb.gov.tr/sorgulamaislemleri">Sorgulama İşlemleri</a></li>
+                                                                                                                                                                                                <li><a href="https://www.yargitaycb.gov.tr/istifaislemleri">İstifa İşlemleri</a></li>
+                                                                                                        </ul>
+                </div>
+            
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <h6>İletişim</h6>
+                <address class="footer-contact">
+                    <p>Ahlatlıbel Mahallesi, İncek Şehit Savcı Mehmet Selim Kiraz Bulvarı No:6 E Blok - Çankaya / ANKARA
+                    </p>
+                    <br>
+                    <p><i class="fas fa-phone me-1" style="color:var(--gold)"></i> <a href="tel:03128360000"
+                            class="text-decoration-none" style="color:var(--gold)">0312 836 00 00</a>
+                    </p>
+                </address>
+            </div>
+        </div>
+
+        <hr class="my-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0 small">© 2026 | Yargıtay Cumhuriyet Başsavcılığı</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0 small">Yargıtay Bilgi İşlem Merkezi</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content border-0" style="height:90vh;">
+                <div class="modal-header py-2 px-3" style="background:var(--bordo);color:#fff;border-radius:0;">
+                    <span id="pdfModalLabel" class="small fw-semibold text-truncate me-2" style="max-width:80%;"></span>
+                    <div class="d-flex gap-2 ms-auto">
+                        <button id="pdfModalFullscreen" type="button"
+                            class="btn btn-sm px-2 py-1 border-0 text-white d-flex align-items-center gap-1"
+                            style="background:rgba(255,255,255,0.15); font-size:0.75rem;" title="Yeni sekmede aç">
+                            <i class="ri-external-link-line"></i>
+                            <span class="d-none d-sm-inline">Tam ekran</span>
+                        </button>
+
+                        <button type="button" class="btn btn-sm px-2 py-1 border-0 text-white"
+                            style="background:rgba(255,255,255,0.15);" data-bs-dismiss="modal" aria-label="Kapat">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body p-0" style="flex:1;overflow:hidden;">
+                    <iframe id="pdfModalFrame" src="" style="width:100%;height:100%;border:none;"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.yargitaycb.gov.tr/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.yargitaycb.gov.tr/js/yargitay-script.js"></script>
+    <script src="https://www.yargitaycb.gov.tr/js/yargitay-pages.js"></script>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pdfModal = new bootstrap.Modal(document.getElementById('pdfModal'));
+            const pdfFrame = document.getElementById('pdfModalFrame');
+            const pdfLabel = document.getElementById('pdfModalLabel');
+
+            let currentPdfHref = '';
+
+            document.addEventListener('click', function(e) {
+                const link = e.target.closest('a[href]');
+                if (!link) return;
+                const href = link.getAttribute('href') || '';
+                if (href.match(/\.pdf(\?.*)?$/i)) {
+                    e.preventDefault();
+                    currentPdfHref = href;
+                    const fileName = decodeURIComponent(href.split('/').pop().split('?')[0]);
+                    pdfLabel.textContent = fileName;
+                    pdfFrame.src = href.includes('#') ? href : href + '#page=1&zoom=auto';
+                    pdfModal.show();
+                }
+            });
+
+            document.getElementById('pdfModalFullscreen').addEventListener('click', function() {
+                if (currentPdfHref) window.open(currentPdfHref, '_blank');
+            });
+
+            document.getElementById('pdfModal').addEventListener('hidden.bs.modal', function() {
+                pdfFrame.src = '';
+                currentPdfHref = '';
+            });
+        });
+    </script>
+
+    <script src="https://www.yargitaycb.gov.tr/js/_Accessibility.js" data-asw-css-path="https://www.yargitaycb.gov.tr/css/_Accessibility.css"
+        data-asw-lang="tr" data-asw-position="bottom-right" data-asw-offset="20,90" defer></script>
+</body>
+
+</html>
