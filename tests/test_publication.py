@@ -64,6 +64,16 @@ class PublicationTest(unittest.TestCase):
         self.assertEqual(arsiv.current(), before)
         self.assertEqual(arsiv.audit_release(), before)
 
+    def test_phase_acceptance_precedes_pointer_change(self):
+        before = arsiv.current()
+        work = arsiv.open_workspace(self.tmp.name)
+        db = arsiv.connect(work / 'records.sqlite3')
+        db.execute("DELETE FROM review WHERE kind='finding' AND subject_id=(SELECT id FROM finding LIMIT 1)")
+        db.commit(); db.close()
+        with self.assertRaisesRegex(ValueError, 'incelemesi eksik'):
+            arsiv.publish_release(work)
+        self.assertEqual(arsiv.current(), before)
+
     def test_foreign_key_corruption_rejected(self):
         work = arsiv.open_workspace(self.tmp.name)
         before = arsiv.current()

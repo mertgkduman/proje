@@ -797,14 +797,17 @@ def validate_phase_one(release='current'):
     release = audit_release(release)
     folder = DATA / 'releases' / release
     data = validate_phase_one_workspace(folder)
-    report = (folder / 'index.html').read_text(encoding='utf-8')
+    validate_phase_one_html(data, (folder / 'index.html').read_text(encoding='utf-8'))
+    return release
+
+
+def validate_phase_one_html(data, report):
     for f in data['finding']:
         if 'data-finding-id="' + html.escape(f['id'], quote=True) + '"' not in report:
             raise ValueError('Bulgu HTML içinde eksik')
     for m in data['match']:
         if m['eligibility'] == 'eligible' and 'data-match-id="' + html.escape(m['id'], quote=True) + '"' not in report:
             raise ValueError('Uygun eşleşme HTML içinde eksik')
-    return release
 
 
 def assert_lock(work):
@@ -833,6 +836,11 @@ def publish_release(work, fail_at=None):
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
         (staging / 'index.html').write_text(render_report(payload), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
+        # A frozen phase-one method marks a phase-capable snapshot; older,
+        # incomplete authoring snapshots retain their historical compatibility.
+        if payload.get('method'):
+            phase_data = validate_phase_one_workspace(staging)
+            validate_phase_one_html(phase_data, (staging / 'index.html').read_text(encoding='utf-8'))
         manifest = {'release_id': release, 'renderer_version': 6, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
