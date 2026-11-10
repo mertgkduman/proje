@@ -4,14 +4,14 @@ fixed_at: 2026-11-10T17:10:50Z
 review_path: .planning/phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-REVIEW.md
 iteration: 1
 findings_in_scope: 8
-fixed: 7
-skipped: 1
-status: partial
+fixed: 8
+skipped: 0
+status: all_fixed
 ---
 
 # Phase 1: Code Review Fix Report
 
-Seven findings are fixed; CR-01 has a narrower mitigation but remains open for independent source review. All logic changes require human verification of the evidence semantics.
+All eight software findings are addressed. Logic changes and the material interpretation of sources still require human review.
 
 ## Fixed issues
 
@@ -43,14 +43,12 @@ Seven findings are fixed; CR-01 has a narrower mitigation but remains open for i
 
 **Commit:** `d52ba20`. README documents Poppler-glib, GLib, GObject and Cairo runtime requirements; missing libraries produce an actionable diagnostic, tested with a mocked missing library.
 
-## Partially addressed issue
-
 ### CR-01: Identity source and registry binding
 
-**Commits:** `746793e`, `90e49b2`. The writer and strict phase export check source ownership, official registry host and identifier, source name and dates; tests reject a different party's passage and altered date. For compatibility, exactly one existing crosswalk maps TİP's TBMM key to Yargıtay 208. This is an agent-assessed assumption, not a human-approved or independently source-linked crosswalk. General identity and date semantics cannot be established merely from text occurrence. The crosswalk and validity interpretation require independent human source review; therefore this finding is not claimed fully resolved.
+**Commits:** `746793e`, `90e49b2`, `0fd27e1`. TİP's canonical legal key is now `yargitay-208`, matching its archived registry URL; the stable party ID and approved scope remain intact. The old parliamentary identifier is preserved in `tip-tbmm-identifier` and the agent review record `tip-identifier-migration`, referring to the archived TBMM passage and `tip-registry-name`. The party-specific exception was removed. The writer and strict phase export check ownership, registry host and exact identifier, name and dates; regressions reject another party's passage, a wrong registry URL and an altered date. The source relationship is an agent assessment, not human approval; identity and date semantics require independent human review. Old immutable manifests use documented legacy audit compatibility, while new publications always enforce strict identity checks. **Status:** fixed, requires human verification.
 
 ## Verification
 
-Targeted regressions and the full Python suite ran in the main checkout: 42 tests passed. `audit --release current --phase 1` returned `PHASE1_AUDIT_OK ce36c63ae9e44e50bb36b440aa4ada2b`. Historical renderers remain available. Source accuracy, political neutrality, the TİP crosswalk and the financial semantics still require human review.
+Targeted regressions and the full Python suite ran in the main checkout: 43 tests passed. `audit --release current --phase 1` returned `PHASE1_AUDIT_OK 6fd06aa1a6c643ed99b2b1c95f32822d`; the preceding release `ce36c63ae9e44e50bb36b440aa4ada2b` also passed its legacy phase audit. Historical renderers remain available. Source accuracy, political neutrality, the TİP identifier relationship and financial semantics still require human review.
 
 _Fixer: gsd-code-fixer; iteration 1_
