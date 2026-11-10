@@ -45,9 +45,13 @@ class ChainContract(unittest.TestCase):
                 self.assertEqual(db.execute("SELECT status FROM lead WHERE id='registry-lead'").fetchone()[0], 'pending')
                 db.close()
                 arsiv.enqueue_lead(work, dict(lead, id='b', url='https://example.org/next'))
+                arsiv.record(work, 'edge', dict(from_version_id='registry-365-v1', to_lead_id='b', relation='reference', relevance_reason='A → B'))
+                arsiv.record(work, 'edge', dict(from_version_id='tbmm-scope-v1', to_lead_id='a', relation='reference', relevance_reason='B → A'))
+                self.assertEqual(arsiv.enqueue_lead(work, dict(lead, id='cycle-return')), 'a')
                 db = arsiv.connect(work / 'records.sqlite3')
                 self.assertEqual(db.execute('SELECT state FROM topic_search WHERE topic_id=?', ('t',)).fetchone()[0], 'in_progress')
                 self.assertEqual(db.execute("SELECT lead_id FROM reopen WHERE closure_id='c'").fetchone()[0], 'b')
+                self.assertEqual(db.execute("SELECT COUNT(*) FROM lead WHERE topic_id='t'").fetchone()[0], 2)
                 db.close()
                 with self.assertRaises(ValueError): arsiv.close_topic(work, dict(close, id='c2'))
             finally: arsiv.DATA = old
