@@ -96,17 +96,52 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 
 ## Traceability
 
-Aşamalar, gereksinim onayından sonra yol haritası oluşturulurken atanacaktır. Henüz tamamlanan veya bir aşamaya eşlenmiş gereksinim yoktur.
+35 gereksinimin tamamı kullanıcı tarafından onaylanan yol haritasında tam olarak birer aşamaya atanmıştır. Bütün gereksinimler uygulama açısından Pending durumundadır.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
+| KAPS-01 | Phase 1 | Pending |
+| KAPS-02 | Phase 1 | Pending |
+| KAPS-03 | Phase 1 | Pending |
+| KAPS-04 | Phase 1 | Pending |
+| DOS-01 | Phase 2 | Pending |
+| DOS-02 | Phase 2 | Pending |
+| TUZ-01 | Phase 3 | Pending |
+| TUZ-02 | Phase 3 | Pending |
+| TUZ-03 | Phase 3 | Pending |
+| TUZ-04 | Phase 3 | Pending |
+| PRG-01 | Phase 3 | Pending |
+| KAY-01 | Phase 2 | Pending |
+| KAY-02 | Phase 1 | Pending |
+| KAY-03 | Phase 1 | Pending |
+| KAY-04 | Phase 2 | Pending |
+| UYG-01 | Phase 4 | Pending |
+| UYG-02 | Phase 4 | Pending |
+| MAL-01 | Phase 5 | Pending |
+| MAL-02 | Phase 5 | Pending |
+| MAL-03 | Phase 5 | Pending |
+| MET-01 | Phase 1 | Pending |
+| MET-02 | Phase 1 | Pending |
+| MET-03 | Phase 1 | Pending |
+| MET-04 | Phase 1 | Pending |
+| EKS-01 | Phase 1 | Pending |
+| EKS-02 | Phase 1 | Pending |
+| KAR-01 | Phase 3 | Pending |
+| KAR-02 | Phase 3 | Pending |
+| KAR-03 | Phase 4 | Pending |
+| RAP-01 | Phase 6 | Pending |
+| RAP-02 | Phase 3 | Pending |
+| RAP-03 | Phase 6 | Pending |
+| VER-01 | Phase 1 | Pending |
+| VER-02 | Phase 6 | Pending |
+| VER-03 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 35 total
-- Mapped to phases: 0
-- Unmapped: 35 — yol haritası bekleniyor
+- Mapped to phases: 35
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-11-09*
-*Last updated: 2026-11-09 after explicit user approval of all 35 v1 requirements*
+*Last updated: 2026-11-09 after explicit user approval of the complete mapping to the six-phase MVP roadmap*
 

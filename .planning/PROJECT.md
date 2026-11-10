@@ -161,6 +161,7 @@ Veri tabanı teknolojisi, katkı/güncelleme süreci, HTML raporunun teknik yap�
 | İnceleme dönemini henüz sabitlememek | Kullanıcı tarafından bir başlangıç yılı seçilmedi | Açık; yöntem aşamasında netleştirilecek |
 | Kayıtlı GSD Sol/Terra modellerini 6.1'e geçirmek | Kullanıcının açık model güncelleme isteği; mevcut rol ve maliyet dağılımını korumak | Uygulandı; Luna seçimi ve reasoning seviyeleri korundu, otomatik Astra eklenmedi |
 | Gereksinimlerden önceki teknik ekosistem ön araştırmasını atlamak | Kullanıcı gereksinimlerin mevcut proje tanımından çıkarılmasını seçti | Onaylandı; esas kaynak araştırması ve aşama doğrulama ayarları korunuyor |
+| Önce tek partide çalışan örnekle ilerlemek; bütün aşamaları mvp modunda kurmak | Kullanıcı kaynak → veri tabanı → sekmeli HTML akışının önce bir pilotta tamamlanmasını seçti | Onaylandı; 35 gereksinimi kapsayan altı aşamalı yol haritası kullanıcı tarafından onaylandı |
 
 ## Evolution
 
@@ -180,4 +181,4 @@ Bu belge aşama geçişlerinde ve kilometre taşı sınırlarında güncellenir.
 4. Parti kapsamı, kaynaklar, kullanıcı geri bildirimi ve çıktılardaki güncel durumu Context bölümüne işle.
 
 ---
-*Last updated: 2026-11-09 after user chose to define requirements directly without preliminary ecosystem research*
+*Last updated: 2026-11-09 after user approval of the six-phase MVP roadmap and completion of project initialization*
