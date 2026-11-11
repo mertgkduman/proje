@@ -1,0 +1,4113 @@
+{
+  "schema_version": 1,
+  "party_id": "saadet",
+  "method_version": 1,
+  "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+  "records": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-publisher-info",
+        "party_id": "saadet",
+        "title": "Saadet Partisi — Yayıncı ve resmî site iletişim kaydı",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "accessed_at": "2026-11-11T21:07:34.248760+00:00",
+        "verified_at": "2026-11-11T21:07:34.248760+00:00",
+        "mime": "application/json",
+        "sha256": "b8e0dec14ae214696f22fb64dfcb04fb7fde7d23a0101833be01d02f10a75472",
+        "original_path": "objects/b8e0dec14ae214696f22fb64dfcb04fb7fde7d23a0101833be01d02f10a75472/original.html.bin",
+        "readable_path": "objects/b8e0dec14ae214696f22fb64dfcb04fb7fde7d23a0101833be01d02f10a75472/readable.html",
+        "id": "0209-saadet-publisher-info-v1",
+        "document_id": "0209-saadet-publisher-info",
+        "document_date": null,
+        "version_label": "Yayıncının siteadı, ana site URLsi ve iletişim kaydını veren tarihsiz yanıtı",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Site bilgisi yanıtı yayın veya tarihsel geçerlilik günü vermez."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-publisher-info-v1",
+        "kind": "party_publication",
+        "publisher": "Saadet Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "basis": "Site istemcisinin footer için bağladığı sabitler GETyanıtı açık siteadi=Saadet Partisi ve siteURL=https://saadet.org.tr/ içerir. Aynı yayıncının belge diziniyle ilişkisi ve kaynağın kendisindeki kurum adı korunur; alan adı sicil kanıtı aranmaz."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-publisher-info-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Tarihsel geçerlilik başlangıç/bitiş günü bilinmiyor; erişim günü bu alanların tarihi değildir.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "version_id": "0209-saadet-publisher-info-v1",
+        "reason": "Yayıncının kendi site adı, siteURLsi ve iletişim bilgileri; belge diziniyle aynı yayıncı ilişkisini kaynaklar."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-publisher-info",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "normalized_url": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "relevance_reason": "Ana site footerinin kullandığı yayıncı/iletişim yanıtı; kaynak adı ve resmî site ilişkisinin kendi kaynağı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-publisher-info",
+        "lead_id": "0209-saadet-lead-publisher-info",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "attempted_at": "2026-11-11T21:07:34.248760+00:00",
+        "result": "examined",
+        "reason": "Siteadı ve siteURL alanları özgün JSON yanıtıyla karşılaştırıldı; tarihsel geçerlilik tarihi verilmedi.",
+        "source_version_id": "0209-saadet-publisher-info-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-publisher-site",
+        "version_id": "0209-saadet-publisher-info-v1",
+        "exact": "\"siteadi\":\"Saadet Partisi\",\"siteURL\":\"https://saadet.org.tr/\"",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Yayıncının siteadi ve siteURL alanları",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-registry",
+        "party_id": "saadet",
+        "title": "Yargıtay — Saadet Partisi sicil kaydı",
+        "source_kind": "registry"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://www.yargitaycb.gov.tr/sipar/70",
+        "final_url": "https://www.yargitaycb.gov.tr/sipar/70",
+        "accessed_at": "2026-11-11T20:52:54.116690+00:00",
+        "verified_at": "2026-11-11T20:52:54.116690+00:00",
+        "mime": "text/html",
+        "sha256": "9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c",
+        "original_path": "objects/9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c/original.html.bin",
+        "readable_path": "objects/9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c/readable.html",
+        "id": "0209-saadet-registry-v1",
+        "document_id": "0209-saadet-registry",
+        "document_date": null,
+        "version_label": "Yayın günü belirtilmemiş sicil sayfası",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kesin yayın/kabul günü belirtilmemiştir; kısmi basım veya değişiklik bilgisi sürüm etiketinde korunur."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-registry-v1",
+        "kind": "registry",
+        "publisher": "Yargıtay Cumhuriyet Başsavcılığı",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://www.yargitaycb.gov.tr/sipar/70",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. "
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-registry-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "version_id": "0209-saadet-registry-v1",
+        "reason": "Birincil sicil/Meclis yayını veya tarihsel kütüphane nüshası."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-registry",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://www.yargitaycb.gov.tr/sipar/70",
+        "normalized_url": "https://www.yargitaycb.gov.tr/sipar/70",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-registry",
+        "lead_id": "0209-saadet-lead-registry",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://www.yargitaycb.gov.tr/sipar/70",
+        "attempted_at": "2026-11-11T20:52:54.116690+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-registry-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-program",
+        "party_id": "saadet",
+        "title": "Saadet Partisi — Parti Programı",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+        "final_url": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+        "accessed_at": "2026-11-11T20:53:43.489123+00:00",
+        "verified_at": "2026-11-11T20:53:43.489123+00:00",
+        "mime": "application/pdf",
+        "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c",
+        "original_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+        "readable_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/readable.html",
+        "id": "0209-saadet-program-v1",
+        "document_id": "0209-saadet-program",
+        "document_date": "2019-11-03",
+        "version_label": "03 Kasım 2019, Ankara; eski yükleme adresinden tam 70 sayfa",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-program-v1",
+        "kind": "party_publication",
+        "publisher": "Saadet Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2019-11-03",
+        "date_precision": "day",
+        "public_url": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. Kapakta 03 Kasım 2019, Ankara yazar; kabul tutanağı ayrıca bulunmadı. Güncel site belge dizini ve PDF önizleyici bağlantısı doğrudan izlenmiştir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-program-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Program",
+        "version_id": "0209-saadet-program-v1",
+        "reason": "Parti amaç/kural beyanı olarak açık atıflı yayın."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-program",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "url": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+        "normalized_url": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-program",
+        "lead_id": "0209-saadet-lead-program",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "type": "access",
+        "query": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+        "attempted_at": "2026-11-11T20:53:43.489123+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-program-v1"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+        "final_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+        "accessed_at": "2026-11-11T20:55:25.151623+00:00",
+        "verified_at": "2026-11-11T20:55:25.151623+00:00",
+        "mime": "application/pdf",
+        "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c",
+        "original_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+        "readable_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/readable.html",
+        "id": "0209-saadet-current-program-v1",
+        "document_id": "0209-saadet-program",
+        "document_date": "2019-11-03",
+        "version_label": "Güncel belge dizininin bağladığı nüsha; 03 Kasım 2019, Ankara, 70 sayfa",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-current-program-v1",
+        "kind": "party_publication",
+        "publisher": "Saadet Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2019-11-03",
+        "date_precision": "day",
+        "public_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. Kapakta 03 Kasım 2019, Ankara yazar; kabul tutanağı ayrıca bulunmadı. Güncel site belge dizini ve PDF önizleyici bağlantısı doğrudan izlenmiştir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-current-program-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Program",
+        "version_id": "0209-saadet-current-program-v1",
+        "reason": "Parti amaç/kural beyanı olarak açık atıflı yayın."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-current-program",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+        "normalized_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-current-program",
+        "lead_id": "0209-saadet-lead-current-program",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "type": "access",
+        "query": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+        "attempted_at": "2026-11-11T20:55:25.151623+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-current-program-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-charter",
+        "party_id": "saadet",
+        "title": "Saadet Partisi — Parti Tüzüğü",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+        "final_url": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+        "accessed_at": "2026-11-11T20:52:55.924923+00:00",
+        "verified_at": "2026-11-11T20:52:55.924923+00:00",
+        "mime": "application/pdf",
+        "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790",
+        "original_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+        "readable_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/readable.html",
+        "id": "0209-saadet-charter-v1",
+        "document_id": "0209-saadet-charter",
+        "document_date": null,
+        "version_label": "25 sayfa; 03.11.2019 değişiklik notu ve 05.01.2020 GİK kararı",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kesin yayın/kabul günü belirtilmemiştir; kısmi basım veya değişiklik bilgisi sürüm etiketinde korunur."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-charter-v1",
+        "kind": "party_publication",
+        "publisher": "Saadet Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. 24. sayfa 03.11.2019 kongre değişiklik notunu; 25. sayfa 05.01.2020 tarihli 125 sayılı GİK kararını içerir. Bunlar tüm dosyanın kesin yayın günü veya kesintisiz yürürlük dönemi yapılmadı."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-charter-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "version_id": "0209-saadet-charter-v1",
+        "reason": "Parti amaç/kural beyanı olarak açık atıflı yayın."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "url": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+        "normalized_url": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-charter",
+        "lead_id": "0209-saadet-lead-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "type": "access",
+        "query": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+        "attempted_at": "2026-11-11T20:52:55.924923+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-charter-v1"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+        "final_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+        "accessed_at": "2026-11-11T20:55:26.287618+00:00",
+        "verified_at": "2026-11-11T20:55:26.287618+00:00",
+        "mime": "application/pdf",
+        "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790",
+        "original_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+        "readable_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/readable.html",
+        "id": "0209-saadet-current-charter-v1",
+        "document_id": "0209-saadet-charter",
+        "document_date": null,
+        "version_label": "Güncel belge dizininin bağladığı 25 sayfalık aynı nüsha",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kesin yayın/kabul günü belirtilmemiştir; kısmi basım veya değişiklik bilgisi sürüm etiketinde korunur."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-current-charter-v1",
+        "kind": "party_publication",
+        "publisher": "Saadet Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. 24. sayfa 03.11.2019 kongre değişiklik notunu; 25. sayfa 05.01.2020 tarihli 125 sayılı GİK kararını içerir. Bunlar tüm dosyanın kesin yayın günü veya kesintisiz yürürlük dönemi yapılmadı."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-current-charter-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "version_id": "0209-saadet-current-charter-v1",
+        "reason": "Parti amaç/kural beyanı olarak açık atıflı yayın."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-current-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+        "normalized_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-current-charter",
+        "lead_id": "0209-saadet-lead-current-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "type": "access",
+        "query": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+        "attempted_at": "2026-11-11T20:55:26.287618+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-current-charter-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-old-charter",
+        "party_id": "saadet",
+        "title": "TBMM Kütüphanesi — Saadet Partisi Tüzüğü, Ankara 2002, ikinci baskı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+        "final_url": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+        "accessed_at": "2026-11-11T20:53:15.366658+00:00",
+        "verified_at": "2026-11-11T20:53:15.366658+00:00",
+        "mime": "application/pdf",
+        "sha256": "ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8",
+        "original_path": "objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/original.pdf",
+        "readable_path": "objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/readable.html",
+        "id": "0209-saadet-old-charter-v1",
+        "document_id": "0209-saadet-old-charter",
+        "document_date": null,
+        "version_label": "Ankara 2002, ikinci baskı; 75 PDF sayfası; kesin gün bilinmiyor",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kesin yayın/kabul günü belirtilmemiştir; kısmi basım veya değişiklik bilgisi sürüm etiketinde korunur."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-old-charter-v1",
+        "kind": "official",
+        "publisher": "TBMM Kütüphanesi (Saadet Partisi basımının arşivi)",
+        "author": "Saadet Partisi (kurumsal yazar)",
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. İç başlık sayfası görsel okundu: ANKARA 2002, İKİNCİ BASKI. Kitap üzerindeki kütüphane damgası kabul/basım günü sayılmadı."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-old-charter-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "version_id": "0209-saadet-old-charter-v1",
+        "reason": "Birincil sicil/Meclis yayını veya tarihsel kütüphane nüshası."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-old-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "url": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+        "normalized_url": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-old-charter",
+        "lead_id": "0209-saadet-lead-old-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "type": "access",
+        "query": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+        "attempted_at": "2026-11-11T20:53:15.366658+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-old-charter-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-congress",
+        "party_id": "saadet",
+        "title": "Anadolu Ajansı — Saadet Partisinde kongre heyecanı",
+        "source_kind": "news"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+        "final_url": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+        "accessed_at": "2026-11-11T20:53:11.315341+00:00",
+        "verified_at": "2026-11-11T20:53:11.315341+00:00",
+        "mime": "text/html",
+        "sha256": "8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b",
+        "original_path": "objects/8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b/original.html.bin",
+        "readable_path": "objects/8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b/readable.html",
+        "id": "0209-saadet-congress-v1",
+        "document_id": "0209-saadet-congress",
+        "document_date": "2019-11-01",
+        "version_label": "1 Kasım 2019 yayın, 6 Kasım 2019 web güncellemesi",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-congress-v1",
+        "kind": "journalism",
+        "publisher": "Anadolu Ajansı",
+        "author": "Sefa Şahin, Süleyman Tunç",
+        "social_handle": null,
+        "published_at": "2019-11-01",
+        "date_precision": "day",
+        "public_url": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. İlk kongre için erişilen tarihli ajans haberi kullanılır; kongre tutanağı yerine geçmez. 2019 programının oylanacağı duyurusu kabul edildiği sonucuna dönüştürülmedi."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-congress-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "version_id": "0209-saadet-congress-v1",
+        "reason": "Kuruluş/kongre adımlarını bildiren tarihli gazetecilik kaydı; tam tutanak bulunmadığı için kullanılır."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-congress",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+        "normalized_url": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-congress",
+        "lead_id": "0209-saadet-lead-congress",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+        "attempted_at": "2026-11-11T20:53:11.315341+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-congress-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-founding-news",
+        "party_id": "saadet",
+        "title": "Yeni Şafak — Saadet Partisi kuruldu; 21 Temmuz 2001 arşivi",
+        "source_kind": "news"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+        "final_url": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+        "accessed_at": "2026-11-11T20:53:07.347632+00:00",
+        "verified_at": "2026-11-11T20:53:07.347632+00:00",
+        "mime": "text/html",
+        "sha256": "a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625",
+        "original_path": "objects/a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625/original.html.bin",
+        "readable_path": "objects/a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625/readable.html",
+        "id": "0209-saadet-founding-news-v1",
+        "document_id": "0209-saadet-founding-news",
+        "document_date": "2001-07-21",
+        "version_label": "21 Temmuz 2001 tarihli gazete arşivi",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-founding-news-v1",
+        "kind": "journalism",
+        "publisher": "Yeni Şafak",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2001-07-21",
+        "date_precision": "day",
+        "public_url": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. "
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-founding-news-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "version_id": "0209-saadet-founding-news-v1",
+        "reason": "Kuruluş/kongre adımlarını bildiren tarihli gazetecilik kaydı; tam tutanak bulunmadığı için kullanılır."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-founding-news",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+        "normalized_url": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-founding-news",
+        "lead_id": "0209-saadet-lead-founding-news",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+        "attempted_at": "2026-11-11T20:53:07.347632+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-founding-news-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-tbmm-foundation",
+        "party_id": "saadet",
+        "title": "TBMM Bülteni — Mecliste iki yeni parti; Sayı 85, Ağustos–Ekim 2001",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+        "final_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+        "accessed_at": "2026-11-11T20:53:06.798655+00:00",
+        "verified_at": "2026-11-11T20:53:06.798655+00:00",
+        "mime": "application/pdf",
+        "sha256": "5b578f79685815d00e47f8f894ccb5a9297aee19bd6aab02c90d14754d555dc3",
+        "original_path": "objects/5b578f79685815d00e47f8f894ccb5a9297aee19bd6aab02c90d14754d555dc3/original.pdf",
+        "readable_path": "objects/5b578f79685815d00e47f8f894ccb5a9297aee19bd6aab02c90d14754d555dc3/readable.html",
+        "id": "0209-saadet-tbmm-foundation-v1",
+        "document_id": "0209-saadet-tbmm-foundation",
+        "document_date": null,
+        "version_label": "Ağustos–Ekim 2001 aylık bülten, sayı 85, basılı sayfa 16",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kesin yayın/kabul günü belirtilmemiştir; kısmi basım veya değişiklik bilgisi sürüm etiketinde korunur."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-tbmm-foundation-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. "
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-tbmm-foundation-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "version_id": "0209-saadet-tbmm-foundation-v1",
+        "reason": "Birincil sicil/Meclis yayını veya tarihsel kütüphane nüshası."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-tbmm-foundation",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+        "normalized_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-tbmm-foundation",
+        "lead_id": "0209-saadet-lead-tbmm-foundation",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+        "attempted_at": "2026-11-11T20:53:06.798655+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-tbmm-foundation-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0209-saadet-tbmm-scope",
+        "party_id": "saadet",
+        "title": "TBMM — 28. dönem milletvekilleri sandalye dağılımı; Saadet satırı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://www.tbmm.gov.tr/sandalyedagilimi",
+        "final_url": "https://tbmm.gov.tr/sandalyedagilimi",
+        "accessed_at": "2026-11-11T20:55:30.284143+00:00",
+        "verified_at": "2026-11-11T20:55:30.284143+00:00",
+        "mime": "text/html",
+        "sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a",
+        "original_path": "objects/2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a/original.html.bin",
+        "readable_path": "objects/2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a/readable.html",
+        "id": "0209-saadet-tbmm-scope-v1",
+        "document_id": "0209-saadet-tbmm-scope",
+        "document_date": null,
+        "version_label": "Yayın/güncelleme günü belirtilmemiş sayfa",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kesin yayın/kabul günü belirtilmemiştir; kısmi basım veya değişiklik bilgisi sürüm etiketinde korunur."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0209-saadet-tbmm-scope-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tbmm.gov.tr/sandalyedagilimi",
+        "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. "
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0209-saadet-tbmm-scope-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "version_id": "0209-saadet-tbmm-scope-v1",
+        "reason": "Birincil sicil/Meclis yayını veya tarihsel kütüphane nüshası."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-tbmm-scope",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://www.tbmm.gov.tr/sandalyedagilimi",
+        "normalized_url": "https://www.tbmm.gov.tr/sandalyedagilimi",
+        "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-access-tbmm-scope",
+        "lead_id": "0209-saadet-lead-tbmm-scope",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://www.tbmm.gov.tr/sandalyedagilimi",
+        "attempted_at": "2026-11-11T20:55:30.284143+00:00",
+        "result": "examined",
+        "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+        "source_version_id": "0209-saadet-tbmm-scope-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-why",
+        "version_id": "0209-saadet-program-v1",
+        "exact": "Amacımız, başta Türkiye’de yaşayan insanlar olmak üzere, bütün insanlığın saadetidir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 5,
+        "printed_page": "6"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-why-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-why",
+        "text": "Saadet Partisi, programında amacını Türkiye’de yaşayanlar başta olmak üzere bütün insanlığın saadeti olarak açıklar. Ahlaki ve manevi değerleri, hak ve adaleti temel ilke; hukukun üstünlüğünü öncelik, maddi ve manevi kalkınmayı hedef olarak tanımlar. Bunlar partinin kendi amaç beyanıdır.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-why-summary",
+        "passage_id": "0209-saadet-why",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-why-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-why-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-why-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-why",
+        "text": "Amacımız, başta Türkiye’de yaşayan insanlar olmak üzere, bütün insanlığın saadetidir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-why-quote",
+        "passage_id": "0209-saadet-why",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-why-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-why-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-legal",
+        "version_id": "0209-saadet-registry-v1",
+        "exact": "SAADET PARTİSİ",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-legal-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-legal",
+        "text": "Yargıtay sicilindeki hukuki ad SAADET PARTİSİ’dir. yargitay-70 bu arşivin /sipar/70 adresinden aldığı anahtardır; ayrıca ilan edilmiş bir sicil numarası sayılmaz.",
+        "provenance": "summary",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-legal-summary",
+        "passage_id": "0209-saadet-legal",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-legal-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-legal-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-legal-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-legal",
+        "text": "SAADET PARTİSİ",
+        "provenance": "quote",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-legal-quote",
+        "passage_id": "0209-saadet-legal",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-legal-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-legal-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-abbreviation",
+        "version_id": "0209-saadet-registry-v1",
+        "exact": "SAADET",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-abbreviation-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-abbreviation",
+        "text": "Sicil kısa adı SAADET olarak verir. Haberlerde kullanılan SP, sicildeki kısa adın yerine geçirilmedi.",
+        "provenance": "summary",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-abbreviation-summary",
+        "passage_id": "0209-saadet-abbreviation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-abbreviation-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-abbreviation-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-abbreviation-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-abbreviation",
+        "text": "SAADET",
+        "provenance": "quote",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-abbreviation-quote",
+        "passage_id": "0209-saadet-abbreviation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-abbreviation-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-abbreviation-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-foundation",
+        "version_id": "0209-saadet-registry-v1",
+        "exact": "20.07.2001",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-foundation-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-foundation",
+        "text": "Saadet Partisi’nin hukuki kuruluş tarihi sicilde 20.07.2001’dir. Bu tarih, siyasi hareketin veya önceki başka partilerin kuruluş tarihiyle birleştirilmedi.",
+        "provenance": "summary",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-foundation-summary",
+        "passage_id": "0209-saadet-foundation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-foundation-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-foundation-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-foundation-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-foundation",
+        "text": "20.07.2001",
+        "provenance": "quote",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-foundation-quote",
+        "passage_id": "0209-saadet-foundation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-foundation-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-foundation-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-chair",
+        "version_id": "0209-saadet-registry-v1",
+        "exact": "MAHMUT ARIKAN",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-chair-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-chair",
+        "text": "Erişilen sicilin başkan alanı MAHMUT ARIKAN’dır. Sayfa bu görevin başlangıç tarihini vermez; erişim günü görev başlangıcı veya kesim öncesi geçerlilik günü sayılmaz.",
+        "provenance": "summary",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-chair-summary",
+        "passage_id": "0209-saadet-chair",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-chair-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-chair-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-chair-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-chair",
+        "text": "MAHMUT ARIKAN",
+        "provenance": "quote",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-chair-quote",
+        "passage_id": "0209-saadet-chair",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-chair-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-chair-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-headquarters",
+        "version_id": "0209-saadet-registry-v1",
+        "exact": "Zübeyde Hanım Mah. Tesviyeci Cad.  No: 31  Altındağ/ANKARA",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-headquarters-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-headquarters",
+        "text": "Sicilin genel merkez adresi Zübeyde Hanım Mah. Tesviyeci Cad.  No: 31  Altındağ/ANKARA’dır. Bu adresin tarihsel başlangıç/bitiş günü kaynakta belirtilmez.",
+        "provenance": "summary",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-headquarters-summary",
+        "passage_id": "0209-saadet-headquarters",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-headquarters-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-headquarters-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-headquarters-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-headquarters",
+        "text": "Zübeyde Hanım Mah. Tesviyeci Cad.  No: 31  Altındağ/ANKARA",
+        "provenance": "quote",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-headquarters-quote",
+        "passage_id": "0209-saadet-headquarters",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-headquarters-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-headquarters-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-site",
+        "version_id": "0209-saadet-program-v1",
+        "exact": "Saadet Partisi olarak temel ilkemiz",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 5,
+        "printed_page": "6"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-site-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-site",
+        "text": "https://saadet.org.tr alanında parti adı, amblemi ve kurumun amaç metniyle yayımlanan program resmî site alanını kaynaklar. Güncel belge dizininin admin.saadet.org.tr üzerinden verdiği dosya da aynı program baytlarına bağlanır; alan adı için ayrıca sicil onayı aranmadı.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-site-summary",
+        "passage_id": "0209-saadet-site",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-site-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-site-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-site-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-site",
+        "text": "Saadet Partisi olarak temel ilkemiz",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-site-quote",
+        "passage_id": "0209-saadet-site",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-site-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-site-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-first-management",
+        "version_id": "0209-saadet-tbmm-foundation-v1",
+        "exact": "50 kişilik Genel İdare Kurulu",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 16,
+        "printed_page": "16"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-first-management-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-first-management",
+        "text": "TBMM Bülteni, 20 Temmuz 2001’deki Kurucular Kurulu toplantısında Recai Kutan’ın genel başkanlığa seçildiğini, 50 kişilik Genel İdare Kurulu ve Yüksek Disiplin Kurulu üyelerinin belirlendiğini bildirir. Basılı sayfa 16’daki haber kuruluş dilekçesinin aynı gün İçişleri Bakanlığına verildiğini de aktarır; haber asıl başvuru/tutanak değildir.",
+        "provenance": "summary",
+        "epistemic_type": "fact"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-first-management-summary",
+        "passage_id": "0209-saadet-first-management",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-first-management-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-first-management-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-first-management-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-first-management",
+        "text": "50 kişilik Genel İdare Kurulu",
+        "provenance": "quote",
+        "epistemic_type": "fact"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-first-management-quote",
+        "passage_id": "0209-saadet-first-management",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-first-management-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-first-management-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-first-congress",
+        "version_id": "0209-saadet-congress-v1",
+        "exact": "11 Mayıs 2003'te yapılan 1. Olağan Kongresi'nde",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-first-congress-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-first-congress",
+        "text": "Anadolu Ajansının Sefa Şahin ve Süleyman Tunç imzalı 1 Kasım 2019 haberi, ilk olağan kongreyi 11 Mayıs 2003’e tarihler; Recai Kutan’ın aday olmadığı kongrede Necmettin Erbakan’ın genel başkan seçildiğini aktarır. Geriye dönük haber, ilk kongrenin tam tutanağı sayılmaz.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-first-congress-summary",
+        "passage_id": "0209-saadet-first-congress",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-first-congress-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-first-congress-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-first-congress-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-first-congress",
+        "text": "11 Mayıs 2003'te yapılan 1. Olağan Kongresi'nde",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-first-congress-quote",
+        "passage_id": "0209-saadet-first-congress",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-first-congress-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-first-congress-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-founding-context",
+        "version_id": "0209-saadet-founding-news-v1",
+        "exact": "135 kişilik Kurucular Kurulu",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-founding-context-summary",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-founding-context",
+        "text": "21 Temmuz 2001 Yeni Şafak arşivi, Recai Kutan’ın genel başkan seçildiğini ve kuruluş dilekçesiyle kurucular listesinin İçişleri Bakanlığına sunulduğunu aktarır. Haberde 135 kişilik kurul içinde 51 milletvekili denir; TBMM Bülteni aynı kuruluş bağlamında 32 FP kökenli milletvekili sayar. Kapsam/zaman farkı asıl liste olmadan çözülemedi; tek kurucu milletvekili sayısı kesinleştirilmedi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-founding-context-summary",
+        "passage_id": "0209-saadet-founding-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-founding-context-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-founding-context-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-founding-context-quote",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "pair_id": "0209-saadet-founding-context",
+        "text": "135 kişilik Kurucular Kurulu",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-founding-context-quote",
+        "passage_id": "0209-saadet-founding-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-founding-context-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-founding-context-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-founding-context-summary",
+        "passage_id": "0209-saadet-first-management",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "Partinin amacı programında yazılı hususları gerçekleştirmektir.",
+        "prefix": null,
+        "suffix": null,
+        "article": "1–2",
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 0,
+        "printed_page": "1"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter",
+        "text": "Partinin güncel belge dizininden 25 sayfalık tam tüzük PDF’si edinildi. İlk iki madde siyasi teşkilatı, Ankara genel merkezini ve programda yazılı amaçların gerçekleştirilmesini tanımlar. Son iki sayfada 2019 değişiklik notu ile 2020 GİK kararı bulunur; dosyanın kesin yayın günü ve tüm maddelerin geçerlilik dönemi bilinmiyor.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-summary",
+        "passage_id": "0209-saadet-charter",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter",
+        "text": "Partinin amacı programında yazılı hususları gerçekleştirmektir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-quote",
+        "passage_id": "0209-saadet-charter",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter-rights",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "a) Parti organlarına aday olmak ve seçilmek,",
+        "prefix": null,
+        "suffix": null,
+        "article": "4, 6, 8",
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 1,
+        "printed_page": "2"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-rights-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-rights",
+        "text": "Tüzüğün 8. maddesi parti organlarına ve genel/yerel seçimlerde adaylık haklarını; 4 ve 6. maddeleri üyeliğe kabul ve kaydın silinmesine karşı parti içi itiraz yollarını düzenler. Üyelik hükümleri kısa tanıtılmıştır; ayrıntılı karşılaştırma sonraki fazdadır.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-rights-summary",
+        "passage_id": "0209-saadet-charter-rights",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-rights-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-rights-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-rights-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-rights",
+        "text": "a) Parti organlarına aday olmak ve seçilmek,",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-rights-quote",
+        "passage_id": "0209-saadet-charter-rights",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-rights-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-rights-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter-governance",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "MADDE 10. Büyük Kongre Partinin en yüksek karar organıdır",
+        "prefix": null,
+        "suffix": null,
+        "article": "10–11",
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 4,
+        "printed_page": "5"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-governance-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-governance",
+        "text": "Tüzük 10–11. maddelerde Büyük Kongreyi en yüksek karar organı olarak tanımlar; genel başkan, GİK ve Yüksek Disiplin Kurulunu gizli oyla seçme, tüzük/program değişikliği ve gelir-gider hesabıyla faaliyetleri kabul/ret yetkilerini sayar. Bunlar yazılı kurallardır; gerçekleşmiş denetim veya harcama sonucu değildir.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-governance-summary",
+        "passage_id": "0209-saadet-charter-governance",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-governance-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-governance-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-governance-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-governance",
+        "text": "MADDE 10. Büyük Kongre Partinin en yüksek karar organıdır",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-governance-quote",
+        "passage_id": "0209-saadet-charter-governance",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-governance-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-governance-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter-expression",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "delegelerin onda birinin teklifi ve hazır bulunanların salt",
+        "prefix": null,
+        "suffix": null,
+        "article": "14, 50",
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 5,
+        "printed_page": "6"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-expression-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-expression",
+        "text": "Tüzük 14. madde, kanunlara ve parti tüzük/programına aykırı olmayan konuları gündeme eklemek için delegelerin onda birinin teklifi ve hazır bulunanların salt çoğunluğunu arar. 50. madde izinsiz açıklama/yayın ve parti kararlarına aykırı söz-yazı için disiplin hükümleri de içerir. Bu mekanizmaların fiilî işleyişi bu fazda incelenmedi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-expression-summary",
+        "passage_id": "0209-saadet-charter-expression",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-expression-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-expression-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-expression-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-expression",
+        "text": "delegelerin onda birinin teklifi ve hazır bulunanların salt",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-expression-quote",
+        "passage_id": "0209-saadet-charter-expression",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-expression-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-expression-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter-history",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "03. 11. 2019 tarihinde yapılan 7. Olağan Büyük Kongrede",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 23,
+        "printed_page": "24"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-history-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-history",
+        "text": "Tüzüğün 24. sayfasındaki açıklama, 30 Ekim 2016 kongresinde değişen metnin 9, 21, 22, 23, 27 ve 37. maddelerinin 3 Kasım 2019 kongresinde değiştirildiğini bildirir. Bu erişilebilir sürüm notudur; iki kongrenin tam önceki tüzük nüshaları veya tüm değişiklik tutanakları bulunmuş sayılmaz.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-history-summary",
+        "passage_id": "0209-saadet-charter-history",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-history-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-history-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-history-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-history",
+        "text": "03. 11. 2019 tarihinde yapılan 7. Olağan Büyük Kongrede",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-history-quote",
+        "passage_id": "0209-saadet-charter-history",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-history-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-history-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter-gik",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "Karar Tarihi: 05.01.2020",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 24,
+        "printed_page": "25"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-gik-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-gik",
+        "text": "PDF’nin 25. sayfası 5 Ocak 2020 tarihli, 125 sayılı GİK kararını içerir; il, ilçe ve belde yönetimlerinin üye sayılarını düzenler. Bu ek karar, tüzük metninin tümünün aynı gün kabul edildiği veya yayımlandığı anlamına getirilmedi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-gik-summary",
+        "passage_id": "0209-saadet-charter-gik",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-gik-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-gik-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-gik-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-gik",
+        "text": "Karar Tarihi: 05.01.2020",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-gik-quote",
+        "passage_id": "0209-saadet-charter-gik",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-gik-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-gik-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter-2002",
+        "version_id": "0209-saadet-old-charter-v1",
+        "exact": "ANKARA 2002",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İç başlık sayfası; ANKARA 2002, İKİNCİ BASKI",
+        "pdf_page_index": 2,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0209-saadet-charter-2002",
+        "checked_at": "2026-11-11T20:59:26.649747+00:00",
+        "method": "Özgün PDF sayfasının Poppler/Cairo görüntüsüyle harf karşılaştırması",
+        "reason": "Metin katmanındaki OCR farkı korunur; kısa pasaj görselden okundu. Ajan kontrolü insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-2002-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-2002",
+        "text": "TBMM Kütüphanesinden Ankara 2002, ikinci baskı ibareli Saadet Partisi Tüzüğü edinildi. 75 PDF sayfasındaki bu tarihsel nüsha güncel belge dizininin 25 sayfalık nüshasından ayrı saklanır; aradaki bütün kabul/değişiklik sırası ve 2002 basımının kesin günü bilinmiyor.",
+        "provenance": "summary",
+        "epistemic_type": "fact"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-2002-summary",
+        "passage_id": "0209-saadet-charter-2002",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-2002-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-2002-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-2002-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-2002",
+        "text": "ANKARA 2002",
+        "provenance": "quote",
+        "epistemic_type": "fact"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-2002-quote",
+        "passage_id": "0209-saadet-charter-2002",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-2002-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-2002-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-program",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "03 Kasım 2019, Ankara",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 0,
+        "printed_page": "1"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-program-summary",
+        "party_id": "saadet",
+        "heading": "Program",
+        "pair_id": "0209-saadet-program",
+        "text": "Güncel parti belge dizininin bağladığı tam program 70 sayfadır; kapağı 03 Kasım 2019, Ankara der. Siyaset/yönetim anlayışı, demokrasi ve haklar, ekonomi ve kalkınma, eğitim-sağlık, çevre, kadın-gençlik, güvenlik ve dış ilişkiler bölümlerini içerir. Bu başlıklar açıklanan politika yaklaşımıdır; uygulama veya mali sonuç sayılmaz.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-summary",
+        "passage_id": "0209-saadet-program",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-program-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-program-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-program-quote",
+        "party_id": "saadet",
+        "heading": "Program",
+        "pair_id": "0209-saadet-program",
+        "text": "03 Kasım 2019, Ankara",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-quote",
+        "passage_id": "0209-saadet-program",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-program-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-program-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-program-policy",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Kutuplaştırıcı Değil, Kucaklayıcı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 1,
+        "printed_page": "2"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-program-policy-summary",
+        "party_id": "saadet",
+        "heading": "Program",
+        "pair_id": "0209-saadet-program-policy",
+        "text": "Program, kutuplaştırmama ve birleştirme; yönetimde adalet, liyakat, istişare, ahlak ve şeffaflık/denetim ilkelerini sıralar. Üretim ekonomisi ve sosyal güvenlik hedeflerini, Türkiye vizyonu ve dış politika yaklaşımıyla birlikte sunar. Bunlar kaynağa atıflı temel program özetidir.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-policy-summary",
+        "passage_id": "0209-saadet-program-policy",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-program-policy-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-program-policy-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-program-policy-quote",
+        "party_id": "saadet",
+        "heading": "Program",
+        "pair_id": "0209-saadet-program-policy",
+        "text": "Kutuplaştırıcı Değil, Kucaklayıcı",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-policy-quote",
+        "passage_id": "0209-saadet-program-policy",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-program-policy-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-program-policy-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-charter-url-relation",
+        "version_id": "0209-saadet-charter-v1",
+        "exact": "Partinin amacı programında yazılı hususları gerçekleştirmektir.",
+        "prefix": null,
+        "suffix": null,
+        "article": "2",
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 0,
+        "printed_page": "1"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-url-relation-summary",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-url-relation",
+        "text": "Eski saadet.org.tr/upload/file adresi ve güncel belge dizininin admin.saadet.org.tr/dosyalar adresi aynı 25 sayfalık tüzük baytlarını verir. Bu iki adres aynı nüshanın dağıtım bağlantılarıdır; yeni bir tüzük değişikliği iddiası değildir.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-url-relation-summary",
+        "passage_id": "0209-saadet-charter-url-relation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-url-relation-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-url-relation-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-charter-url-relation-quote",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "pair_id": "0209-saadet-charter-url-relation",
+        "text": "Partinin amacı programında yazılı hususları gerçekleştirmektir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-url-relation-quote",
+        "passage_id": "0209-saadet-charter-url-relation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-charter-url-relation-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-charter-url-relation-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-program-url-relation",
+        "version_id": "0209-saadet-program-v1",
+        "exact": "03 Kasım 2019, Ankara",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlgili kaynak bölümü",
+        "pdf_page_index": 0,
+        "printed_page": "1"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-program-url-relation-summary",
+        "party_id": "saadet",
+        "heading": "Program",
+        "pair_id": "0209-saadet-program-url-relation",
+        "text": "Eski yükleme adresinden ve güncel parti belge dizininin dosya adresinden edinilen 70 sayfalık programın SHA-256 değerleri aynıdır. İki kaynak adresi aynı 3 Kasım 2019 kapak tarihli nüshayı sunar; dosya adı veya erişim zamanı yeni kabul tarihi sayılmaz.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-url-relation-summary",
+        "passage_id": "0209-saadet-program-url-relation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-program-url-relation-summary-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-program-url-relation-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0209-saadet-program-url-relation-quote",
+        "party_id": "saadet",
+        "heading": "Program",
+        "pair_id": "0209-saadet-program-url-relation",
+        "text": "03 Kasım 2019, Ankara",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-url-relation-quote",
+        "passage_id": "0209-saadet-program-url-relation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-program-url-relation-quote-review",
+        "kind": "finding",
+        "subject_id": "0209-saadet-program-url-relation-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+      }
+    },
+    {
+      "kind": "version_relation",
+      "values": {
+        "version_id": "0209-saadet-current-charter-v1",
+        "previous_version_id": "0209-saadet-charter-v1",
+        "relation": "related",
+        "passage_id": "0209-saadet-charter-url-relation",
+        "explanation_finding_id": "0209-saadet-charter-url-relation-summary",
+        "id": "0209-saadet-current-charter-v1-related-copy"
+      }
+    },
+    {
+      "kind": "version_relation",
+      "values": {
+        "version_id": "0209-saadet-current-program-v1",
+        "previous_version_id": "0209-saadet-program-v1",
+        "relation": "related",
+        "passage_id": "0209-saadet-program-url-relation",
+        "explanation_finding_id": "0209-saadet-program-url-relation-summary",
+        "id": "0209-saadet-current-program-v1-related-copy"
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "version_id": "0209-saadet-program-v1",
+        "reason": "Amaç beyanı/resmî site veya programın doğrudan yayıncı dosya bağlantısı."
+      }
+    },
+    {
+      "kind": "dossier_identity_note",
+      "values": {
+        "id": "0209-saadet-identity-note-summary",
+        "pair_id": "0209-saadet-identity-note",
+        "party_id": "saadet",
+        "related_party_id": "yeni-yol",
+        "own_passage_id": "0209-saadet-legal",
+        "related_passage_id": "0206-yeni-yol-legal",
+        "text": "Saadet Partisi (Yargıtay /sipar/70) ile Yeni Yol (ayrı /sipar/331 kaydı) ayrı tüzel kimliklerdir. Ortak Meclis grubu ve siyasi işbirliği, Saadet’in adının Yeni Yol olarak değiştiğinin veya tüm milletvekillerinin aynı parti üyeliğini taşıdığının kanıtı değildir. Bireysel üyelikler bu toplu kayıtlardan türetilmedi.",
+        "provenance": "summary"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-identity-note-summary-review",
+        "kind": "dossier_identity_note",
+        "subject_id": "0209-saadet-identity-note-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "İki ayrı sicil sayfası ve önceki Yeni Yol dosyasındaki kaynaklı kimlik karşılaştırıldı; grup/üyelik sonucu çıkarılmadı."
+      }
+    },
+    {
+      "kind": "dossier_identity_note",
+      "values": {
+        "id": "0209-saadet-identity-note-quote",
+        "pair_id": "0209-saadet-identity-note",
+        "party_id": "saadet",
+        "related_party_id": "yeni-yol",
+        "own_passage_id": "0209-saadet-legal",
+        "related_passage_id": "0206-yeni-yol-legal",
+        "text": "SAADET PARTİSİ",
+        "provenance": "quote"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0209-saadet-identity-note-quote-review",
+        "kind": "dossier_identity_note",
+        "subject_id": "0209-saadet-identity-note-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "reviewed",
+        "reason": "İki ayrı sicil sayfası ve önceki Yeni Yol dosyasındaki kaynaklı kimlik karşılaştırıldı; grup/üyelik sonucu çıkarılmadı."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0209-saadet-field-legal_name",
+        "party_id": "saadet",
+        "field": "legal_name",
+        "value": "SAADET PARTİSİ",
+        "finding_id": "0209-saadet-legal-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak alanın tarihsel başlangıç/bitiş gününü vermiyor; erişim günü görev veya yürürlük günü yapılmadı."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0209-saadet-field-abbreviation",
+        "party_id": "saadet",
+        "field": "abbreviation",
+        "value": "SAADET",
+        "finding_id": "0209-saadet-abbreviation-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak alanın tarihsel başlangıç/bitiş gününü vermiyor; erişim günü görev veya yürürlük günü yapılmadı."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0209-saadet-field-foundation_date",
+        "party_id": "saadet",
+        "field": "foundation_date",
+        "value": "20.07.2001",
+        "finding_id": "0209-saadet-foundation-summary",
+        "missing_id": null,
+        "as_of": "2001-07-20",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0209-saadet-field-registry_key",
+        "party_id": "saadet",
+        "field": "registry_key",
+        "value": "yargitay-70",
+        "finding_id": "0209-saadet-legal-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak alanın tarihsel başlangıç/bitiş gününü vermiyor; erişim günü görev veya yürürlük günü yapılmadı."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0209-saadet-field-official_site",
+        "party_id": "saadet",
+        "field": "official_site",
+        "value": "https://saadet.org.tr",
+        "finding_id": "0209-saadet-site-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak alanın tarihsel başlangıç/bitiş gününü vermiyor; erişim günü görev veya yürürlük günü yapılmadı."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0209-saadet-field-chairperson",
+        "party_id": "saadet",
+        "field": "chairperson",
+        "value": "MAHMUT ARIKAN",
+        "finding_id": "0209-saadet-chair-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak alanın tarihsel başlangıç/bitiş gününü vermiyor; erişim günü görev veya yürürlük günü yapılmadı."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0209-saadet-field-headquarters",
+        "party_id": "saadet",
+        "field": "headquarters",
+        "value": "Zübeyde Hanım Mah. Tesviyeci Cad.  No: 31  Altındağ/ANKARA",
+        "finding_id": "0209-saadet-headquarters-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak alanın tarihsel başlangıç/bitiş gününü vermiyor; erişim günü görev veya yürürlük günü yapılmadı."
+      }
+    },
+    {
+      "kind": "event_date",
+      "values": {
+        "id": "0209-saadet-foundation-date",
+        "party_id": "saadet",
+        "passage_id": "0209-saadet-foundation",
+        "event_at": "2001-07-20",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_status": "inside"
+      }
+    },
+    {
+      "kind": "dossier_event",
+      "values": {
+        "id": "0209-saadet-foundation-event",
+        "party_id": "saadet",
+        "kind": "foundation",
+        "event_date_id": "0209-saadet-foundation-date",
+        "summary_finding_id": "0209-saadet-foundation-summary"
+      }
+    },
+    {
+      "kind": "event_date",
+      "values": {
+        "id": "0209-saadet-first-management-date",
+        "party_id": "saadet",
+        "passage_id": "0209-saadet-first-management",
+        "event_at": "2001-07-20",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_status": "inside"
+      }
+    },
+    {
+      "kind": "dossier_event",
+      "values": {
+        "id": "0209-saadet-first-management-event",
+        "party_id": "saadet",
+        "kind": "first_management",
+        "event_date_id": "0209-saadet-first-management-date",
+        "summary_finding_id": "0209-saadet-first-management-summary"
+      }
+    },
+    {
+      "kind": "event_date",
+      "values": {
+        "id": "0209-saadet-first-congress-date",
+        "party_id": "saadet",
+        "passage_id": "0209-saadet-first-congress",
+        "event_at": "2003-05-11",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_status": "inside"
+      }
+    },
+    {
+      "kind": "dossier_event",
+      "values": {
+        "id": "0209-saadet-first-congress-event",
+        "party_id": "saadet",
+        "kind": "first_congress",
+        "event_date_id": "0209-saadet-first-congress-date",
+        "summary_finding_id": "0209-saadet-first-congress-summary"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-search-founding-minutes",
+        "lead_id": null,
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "search",
+        "query": "Saadet Partisi 20 Temmuz 2001 kuruluş dilekçesi kurucular kurulu ilk kongre 11 Mayıs 2003 tutanak",
+        "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "no_result",
+        "reason": "Kuruluş dilekçesinin aslı ve ilk kongrenin tam tutanağı bu taramada bulunamadı. TBMM Bülteni ilk yönetimi, atıflı ajans haberi ilk kongreyi kaynaklar; asıl belgelerin yerine geçirilmez.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "missing",
+      "values": {
+        "id": "0209-saadet-missing-founding-minutes",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "status": "Bulunamadı",
+        "attempt_id": "0209-saadet-search-founding-minutes",
+        "reason": "Kuruluş dilekçesinin aslı ve ilk kongrenin tam tutanağı bu taramada bulunamadı. TBMM Bülteni ilk yönetimi, atıflı ajans haberi ilk kongreyi kaynaklar; asıl belgelerin yerine geçirilmez."
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-search-charter-history",
+        "lead_id": null,
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "type": "search",
+        "query": "site:saadet.org.tr 2016 tüzük değişiklik; Saadet Partisi tüzük 2019 2020 önceki sürüm",
+        "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "no_result",
+        "reason": "2002 ikinci baskı, 2019 değişiklik notu ve 2020 GİK eki edinildi; aradaki tüm tüzük nüshaları ve kabul/değişiklik tutanakları bulunamadı. Kesin bütün sürüm zinciri ve yürürlük bitişleri bilinmiyor.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "missing",
+      "values": {
+        "id": "0209-saadet-missing-charter-history",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "status": "Bulunamadı",
+        "attempt_id": "0209-saadet-search-charter-history",
+        "reason": "2002 ikinci baskı, 2019 değişiklik notu ve 2020 GİK eki edinildi; aradaki tüm tüzük nüshaları ve kabul/değişiklik tutanakları bulunamadı. Kesin bütün sürüm zinciri ve yürürlük bitişleri bilinmiyor."
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-search-older-program",
+        "lead_id": null,
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "type": "search",
+        "query": "Saadet Partisi program 2001 2006 TBMM; site:saadet.org.tr parti programı 2019; https://saadet.org.tr/wp-content/uploads/2018/12/program",
+        "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "no_result",
+        "reason": "3 Kasım 2019 tarihli tam program edinildi. Daha eski tam parti programı bu taramada bulunamadı; eski 2018 yükleme adresi güncel boş uygulama kabuğuna döndü. Seçim beyannamesi, parti programının önceki sürümü sayılmadı.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "missing",
+      "values": {
+        "id": "0209-saadet-missing-older-program",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "status": "Bulunamadı",
+        "attempt_id": "0209-saadet-search-older-program",
+        "reason": "3 Kasım 2019 tarihli tam program edinildi. Daha eski tam parti programı bu taramada bulunamadı; eski 2018 yükleme adresi güncel boş uygulama kabuğuna döndü. Seçim beyannamesi, parti programının önceki sürümü sayılmadı."
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-verify-founders",
+        "lead_id": null,
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "verification",
+        "query": "TBMM Bülteni sayı85 sayfa16 kurucu milletvekili sayısı32 ile Yeni Şafak21.07.2001 sayı51 karşılaştırması",
+        "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+        "result": "inconclusive",
+        "reason": "İki kaynak farklı sayı verir; asıl kurucular listesi ve zaman/kapsam farkı bilinmiyor.",
+        "source_version_id": "0209-saadet-tbmm-foundation-v1"
+      }
+    },
+    {
+      "kind": "missing",
+      "values": {
+        "id": "0209-saadet-missing-founders-number",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "status": "Doğrulanamadı",
+        "attempt_id": "0209-saadet-verify-founders",
+        "reason": "Kurucu milletvekili sayısı TBMM Bülteninde32, Yeni Şafak arşivinde51 olarak geçer. Asıl liste olmadan tek sayı kesinleştirilmedi."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-site",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://saadet.org.tr/",
+        "normalized_url": "https://saadet.org.tr/",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-site",
+        "lead_id": "0209-saadet-lead-unused-site",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://saadet.org.tr/",
+        "attempted_at": "2026-11-11T20:52:55.107912+00:00",
+        "result": "failure",
+        "reason": "HTTP baytları arşivlendi, fakat yanıt yalnız JavaScript uygulama kabuğu; araştırılan belge metni bu HTML’de yok. Gerçek program/tüzük yayıncı dizininden doğrudan PDF olarak edinildi.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-charter-landing",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "url": "https://saadet.org.tr/tr/parti-tuzugu",
+        "normalized_url": "https://saadet.org.tr/tr/parti-tuzugu",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-charter-landing",
+        "lead_id": "0209-saadet-lead-unused-charter-landing",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "type": "access",
+        "query": "https://saadet.org.tr/tr/parti-tuzugu",
+        "attempted_at": "2026-11-11T20:53:44.080217+00:00",
+        "result": "failure",
+        "reason": "HTTP baytları arşivlendi, fakat yanıt yalnız JavaScript uygulama kabuğu; araştırılan belge metni bu HTML’de yok. Gerçek program/tüzük yayıncı dizininden doğrudan PDF olarak edinildi.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-program-landing",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "url": "https://saadet.org.tr/tr/parti-programi",
+        "normalized_url": "https://saadet.org.tr/tr/parti-programi",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-program-landing",
+        "lead_id": "0209-saadet-lead-unused-program-landing",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "type": "access",
+        "query": "https://saadet.org.tr/tr/parti-programi",
+        "attempted_at": "2026-11-11T20:53:45.022771+00:00",
+        "result": "failure",
+        "reason": "HTTP baytları arşivlendi, fakat yanıt yalnız JavaScript uygulama kabuğu; araştırılan belge metni bu HTML’de yok. Gerçek program/tüzük yayıncı dizininden doğrudan PDF olarak edinildi.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-yargitay-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "url": "https://www.yargitaycb.gov.tr/documents/saadet.pdf",
+        "normalized_url": "https://www.yargitaycb.gov.tr/documents/saadet.pdf",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-yargitay-charter",
+        "lead_id": "0209-saadet-lead-unused-yargitay-charter",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "type": "access",
+        "query": "https://www.yargitaycb.gov.tr/documents/saadet.pdf",
+        "attempted_at": "2026-11-11T20:53:45.658180+00:00",
+        "result": "failure",
+        "reason": "HTTP Error 404: Not Found",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-new-program-route",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "url": "https://saadet.org.tr/parti/parti-programi",
+        "normalized_url": "https://saadet.org.tr/parti/parti-programi",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-new-program-route",
+        "lead_id": "0209-saadet-lead-unused-new-program-route",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "type": "access",
+        "query": "https://saadet.org.tr/parti/parti-programi",
+        "attempted_at": "2026-11-11T20:54:56.521314+00:00",
+        "result": "failure",
+        "reason": "HTTP baytları arşivlendi, fakat yanıt yalnız JavaScript uygulama kabuğu; araştırılan belge metni bu HTML’de yok. Gerçek program/tüzük yayıncı dizininden doğrudan PDF olarak edinildi.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-new-charter-route",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "url": "https://saadet.org.tr/parti/parti-tuzugu",
+        "normalized_url": "https://saadet.org.tr/parti/parti-tuzugu",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-new-charter-route",
+        "lead_id": "0209-saadet-lead-unused-new-charter-route",
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "topic_id": "saadet-tuzuk-surum",
+        "type": "access",
+        "query": "https://saadet.org.tr/parti/parti-tuzugu",
+        "attempted_at": "2026-11-11T20:54:57.154194+00:00",
+        "result": "failure",
+        "reason": "HTTP baytları arşivlendi, fakat yanıt yalnız JavaScript uygulama kabuğu; araştırılan belge metni bu HTML’de yok. Gerçek program/tüzük yayıncı dizininden doğrudan PDF olarak edinildi.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-legacy-program-url",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "url": "https://saadet.org.tr/wp-content/uploads/2018/12/program",
+        "normalized_url": "https://saadet.org.tr/wp-content/uploads/2018/12/program",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-legacy-program-url",
+        "lead_id": "0209-saadet-lead-unused-legacy-program-url",
+        "party_id": "saadet",
+        "heading": "Program",
+        "topic_id": "saadet-program-edinimi",
+        "type": "access",
+        "query": "https://saadet.org.tr/wp-content/uploads/2018/12/program",
+        "attempted_at": "2026-11-11T20:55:26.866708+00:00",
+        "result": "failure",
+        "reason": "HTTP baytları arşivlendi, fakat yanıt yalnız JavaScript uygulama kabuğu; araştırılan belge metni bu HTML’de yok. Gerçek program/tüzük yayıncı dizininden doğrudan PDF olarak edinildi.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0209-saadet-lead-unused-tbmm-groups",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "url": "https://www.tbmm.gov.tr/SiyasiPartiGruplari",
+        "normalized_url": "https://www.tbmm.gov.tr/SiyasiPartiGruplari",
+        "relevance_reason": "Gerçekte denenmiş belge/site/grup adresi; sonuç içeriği dosyaya sahte metin olarak eklenmedi.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0209-saadet-unused-tbmm-groups",
+        "lead_id": "0209-saadet-lead-unused-tbmm-groups",
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "topic_id": "saadet-kurulus-kimlik",
+        "type": "access",
+        "query": "https://www.tbmm.gov.tr/SiyasiPartiGruplari",
+        "attempted_at": "2026-11-11T20:55:28.491041+00:00",
+        "result": "failure",
+        "reason": "Kaynak boş veya beklenen türde değil",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Kuruluş",
+        "state": "reviewed"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Tüzük",
+        "state": "reviewed"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Program",
+        "state": "reviewed"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Söylem ve uygulama",
+        "state": "not_researched"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "saadet",
+        "heading": "Finansman ve harcamalar",
+        "state": "not_researched"
+      }
+    },
+    {
+      "kind": "closure",
+      "values": {
+        "id": "0209-saadet-closure-saadet-kurulus-kimlik",
+        "topic_id": "saadet-kurulus-kimlik",
+        "closed_at": "2026-11-11T21:12:16.769887+00:00",
+        "reason": "Bulunan ilgili sicil, kuruluş/kongre, eski tüzük ve güncel parti belge bağlantıları izlendi. Ana site uygulama kabuğundan yayıncının GET belge dizini ve PDF önizleyicisinin doğrudan dosya bağlantıları okunup tam PDFler edinildi. 2002/2019/2020 bilgileri korunur; sonuçsuz/engelli uçlar, sayı çelişkisi ve eski nüsha açıkları kayıtlıdır. İzlenmemiş ilgili doğrudan belge bağlantısı kalmadı; yeni ilgili kaynakta tarama yeniden açılır.",
+        "residual_leads": "[]"
+      }
+    },
+    {
+      "kind": "closure",
+      "values": {
+        "id": "0209-saadet-closure-saadet-tuzuk-surum",
+        "topic_id": "saadet-tuzuk-surum",
+        "closed_at": "2026-11-11T21:12:16.769906+00:00",
+        "reason": "Bulunan ilgili sicil, kuruluş/kongre, eski tüzük ve güncel parti belge bağlantıları izlendi. Ana site uygulama kabuğundan yayıncının GET belge dizini ve PDF önizleyicisinin doğrudan dosya bağlantıları okunup tam PDFler edinildi. 2002/2019/2020 bilgileri korunur; sonuçsuz/engelli uçlar, sayı çelişkisi ve eski nüsha açıkları kayıtlıdır. İzlenmemiş ilgili doğrudan belge bağlantısı kalmadı; yeni ilgili kaynakta tarama yeniden açılır.",
+        "residual_leads": "[]"
+      }
+    },
+    {
+      "kind": "closure",
+      "values": {
+        "id": "0209-saadet-closure-saadet-program-edinimi",
+        "topic_id": "saadet-program-edinimi",
+        "closed_at": "2026-11-11T21:12:16.769909+00:00",
+        "reason": "Bulunan ilgili sicil, kuruluş/kongre, eski tüzük ve güncel parti belge bağlantıları izlendi. Ana site uygulama kabuğundan yayıncının GET belge dizini ve PDF önizleyicisinin doğrudan dosya bağlantıları okunup tam PDFler edinildi. 2002/2019/2020 bilgileri korunur; sonuçsuz/engelli uçlar, sayı çelişkisi ve eski nüsha açıkları kayıtlıdır. İzlenmemiş ilgili doğrudan belge bağlantısı kalmadı; yeni ilgili kaynakta tarama yeniden açılır.",
+        "residual_leads": "[]"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0209-saadet-registry-v1",
+        "view_id": "ae5681893760057ddc5671737694fa2f",
+        "format_version": 1,
+        "source_sha256": "9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c",
+        "index_path": "views/ae5681893760057ddc5671737694fa2f/index.html",
+        "manifest_path": "views/ae5681893760057ddc5671737694fa2f/manifest.json",
+        "manifest_sha256": "b7821902deb13f2fbf6d1366413d744001faab7c766c5d45f6c8e4e3145066c1"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0209-saadet-congress-v1",
+        "view_id": "39d0faf51ed6716492a28412470e8c2a",
+        "format_version": 1,
+        "source_sha256": "8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b",
+        "index_path": "views/39d0faf51ed6716492a28412470e8c2a/index.html",
+        "manifest_path": "views/39d0faf51ed6716492a28412470e8c2a/manifest.json",
+        "manifest_sha256": "cd7477e9e7d6addb0b9e8f90bb174be7521532dbc11818bfdf068848e548a1c3"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0209-saadet-founding-news-v1",
+        "view_id": "a34f774529899dd120fffd66826a16c5",
+        "format_version": 1,
+        "source_sha256": "a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625",
+        "index_path": "views/a34f774529899dd120fffd66826a16c5/index.html",
+        "manifest_path": "views/a34f774529899dd120fffd66826a16c5/manifest.json",
+        "manifest_sha256": "0246a339f7818db725c2ca2f1e910b97978df145ca144a0e69f5592df50674fa"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0209-saadet-tbmm-scope-v1",
+        "view_id": "02c00b3602758dba4cbe9c7e14c87cc4",
+        "format_version": 1,
+        "source_sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a",
+        "index_path": "views/02c00b3602758dba4cbe9c7e14c87cc4/index.html",
+        "manifest_path": "views/02c00b3602758dba4cbe9c7e14c87cc4/manifest.json",
+        "manifest_sha256": "77b47c6f859a56799afcd07e3d21726badfcbc22ea27cc04e5daa69b06be19b2"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-voice-permission",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "yetkili organların bilgisi ve izni",
+        "prefix": null,
+        "suffix": null,
+        "article": "50",
+        "section": "Özetteki ek düzenleme veya sayı için destek pasajı",
+        "pdf_page_index": 19,
+        "printed_page": "20"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-expression-summary",
+        "passage_id": "0209-saadet-voice-permission",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-voice-discipline",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "Parti Tüzük ve Programına aykırı hareket etmek",
+        "prefix": null,
+        "suffix": null,
+        "article": "50",
+        "section": "Özetteki ek düzenleme veya sayı için destek pasajı",
+        "pdf_page_index": 20,
+        "printed_page": "21"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-expression-summary",
+        "passage_id": "0209-saadet-voice-discipline",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-membership-objection",
+        "version_id": "0209-saadet-current-charter-v1",
+        "exact": "Üyeliği kabul edilmeyen kişinin bir hafta içinde",
+        "prefix": null,
+        "suffix": null,
+        "article": "4",
+        "section": "Özetteki ek düzenleme veya sayı için destek pasajı",
+        "pdf_page_index": 0,
+        "printed_page": "1"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-charter-rights-summary",
+        "passage_id": "0209-saadet-membership-objection",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-program-headings",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Sosyal Politikalar",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Özetteki ek düzenleme veya sayı için destek pasajı",
+        "pdf_page_index": 2,
+        "printed_page": "3"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-summary",
+        "passage_id": "0209-saadet-program-headings",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-program-production",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Üretim ekonomisi temelli kalkınmanın sonucu",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Özetteki ek düzenleme veya sayı için destek pasajı",
+        "pdf_page_index": 69,
+        "printed_page": "70"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-program-policy-summary",
+        "passage_id": "0209-saadet-program-production",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-founder-count-tbmm",
+        "version_id": "0209-saadet-tbmm-foundation-v1",
+        "exact": "di. FP kökenli 32 milletvekili yeni",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Özetteki ek düzenleme veya sayı için destek pasajı",
+        "pdf_page_index": 16,
+        "printed_page": "16"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-founding-context-summary",
+        "passage_id": "0209-saadet-founder-count-tbmm",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0209-saadet-founder-count-news",
+        "version_id": "0209-saadet-founding-news-v1",
+        "exact": "51 milletvekili",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Özetteki ek düzenleme veya sayı için destek pasajı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-founding-context-summary",
+        "passage_id": "0209-saadet-founder-count-news",
+        "role": "context"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0209-saadet-site-summary",
+        "passage_id": "0209-saadet-publisher-site",
+        "role": "context"
+      }
+    }
+  ],
+  "identity_confirmation": {
+    "registry_key": "yargitay-70",
+    "legal_name": "SAADET PARTİSİ",
+    "valid_from": "2001-07-20",
+    "passage_id": "0209-saadet-legal",
+    "changed_at": "2026-11-11T20:59:26.649747+00:00",
+    "reason": "Sabit saadet kimliği ve önceki TBMM kapsam gözlemleri korunur; eski TBMM anahtarı gerçek /sipar/70 kaydıyla kontrollü güncellenir. Ortak grup, Yeni Yol tüzel kimliği ve bireysel parti üyeliği ayrı tutulur."
+  },
+  "research_log": [
+    {
+      "query": "Gerçek kaynak/erişim envanteri",
+      "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+      "result": "archived",
+      "reason": "Güncel belge dizini→PDFönizleyici→/dosyalar zinciri izlendi. Güncel70sayfa program ve25sayfa tüzük eski yükleme adresleriyle aynı hash.2002ikinci baskı ve TBMM2001sayı85 edinildi. Ana site boş uygulama kabuğu; pasif metin uydurulmadı. İlgisiz galeri erişimi sınırlandı.",
+      "captures": {
+        "registry": {
+          "capture": {
+            "original_url": "https://www.yargitaycb.gov.tr/sipar/70",
+            "final_url": "https://www.yargitaycb.gov.tr/sipar/70",
+            "accessed_at": "2026-11-11T20:52:54.116690+00:00",
+            "verified_at": "2026-11-11T20:52:54.116690+00:00",
+            "mime": "text/html",
+            "sha256": "9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c",
+            "original_path": "objects/9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c/original.html.bin",
+            "readable_path": "objects/9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c/readable.html"
+          },
+          "kind": "html"
+        },
+        "site": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/",
+            "final_url": "https://saadet.org.tr/",
+            "accessed_at": "2026-11-11T20:52:55.107912+00:00",
+            "verified_at": "2026-11-11T20:52:55.107912+00:00",
+            "mime": "text/html",
+            "sha256": "9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc",
+            "original_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/original.html.bin",
+            "readable_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/readable.html"
+          },
+          "kind": "html"
+        },
+        "charter": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+            "final_url": "https://saadet.org.tr/upload/file/e8f71be8fcb394274f5ee8b666376c2b.pdf",
+            "accessed_at": "2026-11-11T20:52:55.924923+00:00",
+            "verified_at": "2026-11-11T20:52:55.924923+00:00",
+            "mime": "application/pdf",
+            "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790",
+            "original_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+            "readable_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/readable.html"
+          },
+          "kind": "pdf"
+        },
+        "tbmm-foundation": {
+          "capture": {
+            "original_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+            "final_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/MeclisHaberDergisi/44315ab6-3889-490e-8acb-7ae5a465dc9e.pdf",
+            "accessed_at": "2026-11-11T20:53:06.798655+00:00",
+            "verified_at": "2026-11-11T20:53:06.798655+00:00",
+            "mime": "application/pdf",
+            "sha256": "5b578f79685815d00e47f8f894ccb5a9297aee19bd6aab02c90d14754d555dc3",
+            "original_path": "objects/5b578f79685815d00e47f8f894ccb5a9297aee19bd6aab02c90d14754d555dc3/original.pdf",
+            "readable_path": "objects/5b578f79685815d00e47f8f894ccb5a9297aee19bd6aab02c90d14754d555dc3/readable.html"
+          },
+          "kind": "pdf"
+        },
+        "founding-news": {
+          "capture": {
+            "original_url": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+            "final_url": "https://www.yenisafak.com/arsiv/2001/temmuz/21/politika.html",
+            "accessed_at": "2026-11-11T20:53:07.347632+00:00",
+            "verified_at": "2026-11-11T20:53:07.347632+00:00",
+            "mime": "text/html",
+            "sha256": "a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625",
+            "original_path": "objects/a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625/original.html.bin",
+            "readable_path": "objects/a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625/readable.html"
+          },
+          "kind": "html"
+        },
+        "congress": {
+          "capture": {
+            "original_url": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+            "final_url": "https://www.aa.com.tr/tr/politika/saadet-partisinde-kongre-heyecani/1632608",
+            "accessed_at": "2026-11-11T20:53:11.315341+00:00",
+            "verified_at": "2026-11-11T20:53:11.315341+00:00",
+            "mime": "text/html",
+            "sha256": "8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b",
+            "original_path": "objects/8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b/original.html.bin",
+            "readable_path": "objects/8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b/readable.html"
+          },
+          "kind": "html"
+        },
+        "old-charter": {
+          "capture": {
+            "original_url": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+            "final_url": "https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/22e113c6-5266-43c5-8895-1449393c7f00/content",
+            "accessed_at": "2026-11-11T20:53:15.366658+00:00",
+            "verified_at": "2026-11-11T20:53:15.366658+00:00",
+            "mime": "application/pdf",
+            "sha256": "ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8",
+            "original_path": "objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/original.pdf",
+            "readable_path": "objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/readable.html"
+          },
+          "kind": "pdf"
+        },
+        "program": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+            "final_url": "https://saadet.org.tr/upload/file/992649b84c8d390c3ba07fdb6c403965.pdf",
+            "accessed_at": "2026-11-11T20:53:43.489123+00:00",
+            "verified_at": "2026-11-11T20:53:43.489123+00:00",
+            "mime": "application/pdf",
+            "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c",
+            "original_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+            "readable_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/readable.html"
+          },
+          "kind": "pdf"
+        },
+        "charter-landing": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/tr/parti-tuzugu",
+            "final_url": "https://saadet.org.tr/tr/parti-tuzugu",
+            "accessed_at": "2026-11-11T20:53:44.080217+00:00",
+            "verified_at": "2026-11-11T20:53:44.080217+00:00",
+            "mime": "text/html",
+            "sha256": "9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc",
+            "original_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/original.html.bin",
+            "readable_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/readable.html"
+          },
+          "kind": "html"
+        },
+        "program-landing": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/tr/parti-programi",
+            "final_url": "https://saadet.org.tr/tr/parti-programi",
+            "accessed_at": "2026-11-11T20:53:45.022771+00:00",
+            "verified_at": "2026-11-11T20:53:45.022771+00:00",
+            "mime": "text/html",
+            "sha256": "9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc",
+            "original_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/original.html.bin",
+            "readable_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/readable.html"
+          },
+          "kind": "html"
+        },
+        "yargitay-charter": {
+          "url": "https://www.yargitaycb.gov.tr/documents/saadet.pdf",
+          "kind": "pdf",
+          "error": "HTTP Error 404: Not Found",
+          "attempted_at": "2026-11-11T20:53:45.658180+00:00"
+        },
+        "document-index": {
+          "capture": {
+            "original_url": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "accessed_at": "2026-11-11T20:54:55.448498+00:00",
+            "verified_at": "2026-11-11T20:54:55.448498+00:00",
+            "mime": "application/json",
+            "sha256": "a865374283553675e7ce8528d4748691d5edddb05e4d834e0e7cc4f66b990a09",
+            "original_path": "objects/a865374283553675e7ce8528d4748691d5edddb05e4d834e0e7cc4f66b990a09/original.html.bin",
+            "readable_path": "objects/a865374283553675e7ce8528d4748691d5edddb05e4d834e0e7cc4f66b990a09/readable.html"
+          },
+          "kind": "html"
+        },
+        "pdf-preview": {
+          "capture": {
+            "original_url": "https://admin.saadet.org.tr/pdf-preview/index.html?f=K-D-1751227555.pdf&t=Parti%20Program%C4%B1",
+            "final_url": "https://admin.saadet.org.tr/pdf-preview/index.html?f=K-D-1751227555.pdf&t=Parti%20Program%C4%B1",
+            "accessed_at": "2026-11-11T20:54:55.910618+00:00",
+            "verified_at": "2026-11-11T20:54:55.910618+00:00",
+            "mime": "text/html",
+            "sha256": "754333aeac019bcf38e91130b67184a18306b554daa6ef52117c56010a335f37",
+            "original_path": "objects/754333aeac019bcf38e91130b67184a18306b554daa6ef52117c56010a335f37/original.html.bin",
+            "readable_path": "objects/754333aeac019bcf38e91130b67184a18306b554daa6ef52117c56010a335f37/readable.html"
+          },
+          "kind": "html"
+        },
+        "new-program-route": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/parti/parti-programi",
+            "final_url": "https://saadet.org.tr/parti/parti-programi",
+            "accessed_at": "2026-11-11T20:54:56.521314+00:00",
+            "verified_at": "2026-11-11T20:54:56.521314+00:00",
+            "mime": "text/html",
+            "sha256": "9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc",
+            "original_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/original.html.bin",
+            "readable_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/readable.html"
+          },
+          "kind": "html"
+        },
+        "new-charter-route": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/parti/parti-tuzugu",
+            "final_url": "https://saadet.org.tr/parti/parti-tuzugu",
+            "accessed_at": "2026-11-11T20:54:57.154194+00:00",
+            "verified_at": "2026-11-11T20:54:57.154194+00:00",
+            "mime": "text/html",
+            "sha256": "9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc",
+            "original_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/original.html.bin",
+            "readable_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/readable.html"
+          },
+          "kind": "html"
+        },
+        "current-program": {
+          "capture": {
+            "original_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+            "final_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227555.pdf",
+            "accessed_at": "2026-11-11T20:55:25.151623+00:00",
+            "verified_at": "2026-11-11T20:55:25.151623+00:00",
+            "mime": "application/pdf",
+            "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c",
+            "original_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+            "readable_path": "objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/readable.html"
+          },
+          "kind": "pdf"
+        },
+        "current-charter": {
+          "capture": {
+            "original_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+            "final_url": "https://admin.saadet.org.tr/dosyalar/K-D-1751227541.pdf",
+            "accessed_at": "2026-11-11T20:55:26.287618+00:00",
+            "verified_at": "2026-11-11T20:55:26.287618+00:00",
+            "mime": "application/pdf",
+            "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790",
+            "original_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+            "readable_path": "objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/readable.html"
+          },
+          "kind": "pdf"
+        },
+        "legacy-program-url": {
+          "capture": {
+            "original_url": "https://saadet.org.tr/wp-content/uploads/2018/12/program",
+            "final_url": "https://saadet.org.tr/wp-content/uploads/2018/12/program",
+            "accessed_at": "2026-11-11T20:55:26.866708+00:00",
+            "verified_at": "2026-11-11T20:55:26.866708+00:00",
+            "mime": "text/html",
+            "sha256": "9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc",
+            "original_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/original.html.bin",
+            "readable_path": "objects/9e930cdfff707d359901346e438c3120aca3457f8d3524288473d77fb1e966dc/readable.html"
+          },
+          "kind": "html"
+        },
+        "tbmm-groups": {
+          "url": "https://www.tbmm.gov.tr/SiyasiPartiGruplari",
+          "kind": "html",
+          "error": "Kaynak boş veya beklenen türde değil",
+          "attempted_at": "2026-11-11T20:55:28.491041+00:00"
+        },
+        "tbmm-scope": {
+          "capture": {
+            "original_url": "https://www.tbmm.gov.tr/sandalyedagilimi",
+            "final_url": "https://tbmm.gov.tr/sandalyedagilimi",
+            "accessed_at": "2026-11-11T20:55:30.284143+00:00",
+            "verified_at": "2026-11-11T20:55:30.284143+00:00",
+            "mime": "text/html",
+            "sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a",
+            "original_path": "objects/2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a/original.html.bin",
+            "readable_path": "objects/2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a/readable.html"
+          },
+          "kind": "html"
+        }
+      }
+    },
+    {
+      "query": "Sicil, ilk yönetim, ilk kongre; ad/kısa ad/tüzel statü",
+      "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+      "result": "results",
+      "reason": "Saadet20.07.2001, /sipar/70; ilk yönetim20.07.2001 TBMM, ilk kongre11.05.2003AA. Sicildeki SAADET ile haber SPkullanımı ayrıldı. Kaynaklarda Saadet için belgeli bir ad/kısa ad değişikliği veya kapanma bulunmadı; yokluğu siyasi sonuç sayılmaz. Yeni Yol ayrı sicil ve grup/üyelik ayrımı iki kaynaklı notta korunur."
+    },
+    {
+      "query": "Kurucular sayısı ve birincil tutanak",
+      "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+      "result": "inconclusive",
+      "reason": "TBMM32ile Yeni Şafak51arasındaki sayı farkı açık. İlk yönetim/kongre kaynaklandı; asıl başvuru ve tam kongre tutanağı yok."
+    },
+    {
+      "query": "Tüzük/program tarihi ve erişilebilen geçmiş",
+      "attempted_at": "2026-11-11T20:59:26.649747+00:00",
+      "result": "results",
+      "reason": "2002ikinci baskı görsel okundu. Modern tüzüğün24.sayfası2016/2019değişiklik notu,25.sayfası05.01.2020GİK125kararı; program kapağı03.11.2019. Kesin yayın/yürürlük uçları uydurulmadı. Önceki tam program sorguları ve2018URLsonuçsuz; seçim beyannameleri program sürümü yapılmadı."
+    },
+    {
+      "query": "Pasif HTML kaynaklarında temel CSS/logo önceliği",
+      "attempted_at": "2026-11-11T21:04:28.394211+00:00",
+      "result": "improved",
+      "reason": "Sicil için daha önce arşivlenmiş aynı URLli yerel stiller/varlıklar tekrar kullanıldı. Haber ve Meclis görünümlerinde ana CSS önce alındı; ilgisiz galeriler alınmadı ve yeni erişim16adresle sınırlandı. Özgün baytlar ve ilk görünümler korundu.",
+      "views": [
+        {
+          "version_id": "0209-saadet-registry-v1",
+          "before": {
+            "version_id": "0209-saadet-registry-v1",
+            "view_id": "838288755149b6372aaaaeda314cc049",
+            "format_version": 1,
+            "source_sha256": "9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c",
+            "index_path": "views/838288755149b6372aaaaeda314cc049/index.html",
+            "manifest_path": "views/838288755149b6372aaaaeda314cc049/manifest.json",
+            "manifest_sha256": "7d48caceabb422041417373d7a82d68af601ef246e9fde0ed3051cc09daa95b5"
+          },
+          "after": {
+            "view_id": "ae5681893760057ddc5671737694fa2f",
+            "format_version": 1,
+            "source_sha256": "9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c",
+            "index_path": "views/ae5681893760057ddc5671737694fa2f/index.html",
+            "manifest_path": "views/ae5681893760057ddc5671737694fa2f/manifest.json",
+            "manifest_sha256": "b7821902deb13f2fbf6d1366413d744001faab7c766c5d45f6c8e4e3145066c1"
+          }
+        },
+        {
+          "version_id": "0209-saadet-congress-v1",
+          "before": {
+            "version_id": "0209-saadet-congress-v1",
+            "view_id": "2ea79d6d96821aad79715cdfa16e21b9",
+            "format_version": 1,
+            "source_sha256": "8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b",
+            "index_path": "views/2ea79d6d96821aad79715cdfa16e21b9/index.html",
+            "manifest_path": "views/2ea79d6d96821aad79715cdfa16e21b9/manifest.json",
+            "manifest_sha256": "1e4dd79a3591e5de603667073d8c5316d594fa2579811144ee53c8afa8b06ed3"
+          },
+          "after": {
+            "view_id": "39d0faf51ed6716492a28412470e8c2a",
+            "format_version": 1,
+            "source_sha256": "8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b",
+            "index_path": "views/39d0faf51ed6716492a28412470e8c2a/index.html",
+            "manifest_path": "views/39d0faf51ed6716492a28412470e8c2a/manifest.json",
+            "manifest_sha256": "cd7477e9e7d6addb0b9e8f90bb174be7521532dbc11818bfdf068848e548a1c3"
+          }
+        },
+        {
+          "version_id": "0209-saadet-tbmm-scope-v1",
+          "before": {
+            "version_id": "0209-saadet-tbmm-scope-v1",
+            "view_id": "12f808ba19497825967dda20f9f9911b",
+            "format_version": 1,
+            "source_sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a",
+            "index_path": "views/12f808ba19497825967dda20f9f9911b/index.html",
+            "manifest_path": "views/12f808ba19497825967dda20f9f9911b/manifest.json",
+            "manifest_sha256": "f4414af449a5844bb0bee0938eeb224d4f160d9e3448b55690cf427f75857b7e"
+          },
+          "after": {
+            "view_id": "02c00b3602758dba4cbe9c7e14c87cc4",
+            "format_version": 1,
+            "source_sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a",
+            "index_path": "views/02c00b3602758dba4cbe9c7e14c87cc4/index.html",
+            "manifest_path": "views/02c00b3602758dba4cbe9c7e14c87cc4/manifest.json",
+            "manifest_sha256": "77b47c6f859a56799afcd07e3d21726badfcbc22ea27cc04e5daa69b06be19b2"
+          }
+        }
+      ]
+    },
+    {
+      "query": "Güncel belge dizininin aynı yayıncı kaydı",
+      "attempted_at": "2026-11-11T21:08:30.331787+00:00",
+      "result": "archived",
+      "reason": "Dizin yanıtı yalnız Parti Programı/Parti Tüzüğü adlarını taşır. Kaynak denetimi, burada tek başına tam yayıncı adını bulamadı; sitede gerçekten kullanılan sabitler GETyanıtı ayrıca edinilip Saadet Partisi ve siteURL alanları kaydedildi. Doğrulama kuralı değiştirilmedi.",
+      "capture": {
+        "original_url": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=sabitler&lang=1&limit=1",
+        "accessed_at": "2026-11-11T21:07:34.248760+00:00",
+        "verified_at": "2026-11-11T21:07:34.248760+00:00",
+        "mime": "application/json",
+        "sha256": "b8e0dec14ae214696f22fb64dfcb04fb7fde7d23a0101833be01d02f10a75472",
+        "original_path": "objects/b8e0dec14ae214696f22fb64dfcb04fb7fde7d23a0101833be01d02f10a75472/original.html.bin",
+        "readable_path": "objects/b8e0dec14ae214696f22fb64dfcb04fb7fde7d23a0101833be01d02f10a75472/readable.html"
+      }
+    },
+    {
+      "query": "Kategori JSONunu keşif envanterinde koruma; yayıncı kanıtını tam kurum adını taşıyan site bilgisinden alma",
+      "attempted_at": "2026-11-11T21:10:08.550876+00:00",
+      "result": "corrected",
+      "reason": "Kategori JSONunun kendi gövdesinde tam parti adı bulunmaz ve application/json yanıtı aynı-HTML yayını desteği yoluna girmez. Teknik kategori özet/alıntısı yayımlanacak bulgulardan çıkarıldı; özgün JSON, hash, erişim ve keşif zinciri envanterde korundu. Tam kurum adı/siteURLsi taşıyan ayrı yayıncı kaydı ve doğrudan tam PDFler kullanılır. Doğrulama veya MIME alanı değiştirilmedi.",
+      "removed_discovery_records": [
+        {
+          "kind": "document",
+          "values": {
+            "id": "0209-saadet-document-index",
+            "party_id": "saadet",
+            "title": "Saadet Partisi — Güncel site belge bağlantıları; kategori yanıtı",
+            "source_kind": "party"
+          }
+        },
+        {
+          "kind": "document_version",
+          "values": {
+            "original_url": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "accessed_at": "2026-11-11T20:54:55.448498+00:00",
+            "verified_at": "2026-11-11T20:54:55.448498+00:00",
+            "mime": "application/json",
+            "sha256": "a865374283553675e7ce8528d4748691d5edddb05e4d834e0e7cc4f66b990a09",
+            "original_path": "objects/a865374283553675e7ce8528d4748691d5edddb05e4d834e0e7cc4f66b990a09/original.html.bin",
+            "readable_path": "objects/a865374283553675e7ce8528d4748691d5edddb05e4d834e0e7cc4f66b990a09/readable.html",
+            "id": "0209-saadet-document-index-v1",
+            "document_id": "0209-saadet-document-index",
+            "document_date": null,
+            "version_label": "Parti Programı ve Parti Tüzüğü dosya adlarını veren yayıncı yanıtı",
+            "date_precision": "unknown",
+            "date_unknown_reason": "Kesin yayın/kabul günü belirtilmemiştir; kısmi basım veya değişiklik bilgisi sürüm etiketinde korunur."
+          }
+        },
+        {
+          "kind": "source_attribution",
+          "values": {
+            "version_id": "0209-saadet-document-index-v1",
+            "kind": "party_publication",
+            "publisher": "Saadet Partisi",
+            "author": null,
+            "social_handle": null,
+            "published_at": null,
+            "date_precision": "unknown",
+            "public_url": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "basis": "Özgün yayındaki yayıncı, varsa yazar/tarih ve URL kaydedildi. Ana sayfa HTML uygulama kabuğudur. Bağladığı istemci paketinden yalnız yayımlanmış GET belge dizini ve PDF önizleyici bağlantıları okunarak gerçek PDF dosyaları bulundu; kod kaynak delili olarak çalıştırılmadı."
+          }
+        },
+        {
+          "kind": "version_context",
+          "values": {
+            "version_id": "0209-saadet-document-index-v1",
+            "period_start": null,
+            "period_end": null,
+            "date_precision": "unknown",
+            "date_unknown_reason": "Belgenin tüm içeriğinin kesin başlangıç/bitiş dönemi bilinmiyor. Basım, olay, değişiklik, belge ve erişim tarihleri birbirinin yerine geçirilmez.",
+            "passage_id": null,
+            "explanation_finding_id": null
+          }
+        },
+        {
+          "kind": "dossier_source",
+          "values": {
+            "party_id": "saadet",
+            "heading": "Tüzük",
+            "version_id": "0209-saadet-document-index-v1",
+            "reason": "Parti amaç/kural beyanı olarak açık atıflı yayın."
+          }
+        },
+        {
+          "kind": "lead",
+          "values": {
+            "id": "0209-saadet-lead-document-index",
+            "party_id": "saadet",
+            "heading": "Tüzük",
+            "topic_id": "saadet-tuzuk-surum",
+            "url": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "normalized_url": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "relevance_reason": "Gerçekte izlenen kimlik, kuruluş veya tüzük/program belge bağlantısı.",
+            "status": "pending"
+          }
+        },
+        {
+          "kind": "attempt",
+          "values": {
+            "id": "0209-saadet-access-document-index",
+            "lead_id": "0209-saadet-lead-document-index",
+            "party_id": "saadet",
+            "heading": "Tüzük",
+            "topic_id": "saadet-tuzuk-surum",
+            "type": "access",
+            "query": "https://admin.saadet.org.tr/veriler/api.php?resource=kategori&lang=1&ust=1&include_slug=1",
+            "attempted_at": "2026-11-11T20:54:55.448498+00:00",
+            "result": "examined",
+            "reason": "Özgün metin ve künye okundu, ilgili kısa pasajlar karşılaştırıldı. PDF seçilmiş sayfaları görsel kontrol edildi; bütün PDF’ye ayrıntılı konu analizi iddiası yoktur.",
+            "source_version_id": "0209-saadet-document-index-v1"
+          }
+        },
+        {
+          "kind": "passage",
+          "values": {
+            "id": "0209-saadet-document-links",
+            "version_id": "0209-saadet-document-index-v1",
+            "exact": "K-D-1751227555.pdf",
+            "prefix": null,
+            "suffix": null,
+            "article": null,
+            "section": "İlgili kaynak bölümü",
+            "pdf_page_index": null,
+            "printed_page": null
+          }
+        },
+        {
+          "kind": "finding",
+          "values": {
+            "id": "0209-saadet-document-links-summary",
+            "party_id": "saadet",
+            "heading": "Program",
+            "pair_id": "0209-saadet-document-links",
+            "text": "Güncel sitenin yayınladığı belge dizini Parti Programı için K-D-1751227555.pdf, Parti Tüzüğü için K-D-1751227541.pdf dosya adlarını verir. Önizleyicinin gerçek /dosyalar/ bağlantıları izlendi; bu iki PDF eski yükleme adreslerinden alınan dosyalarla ayrı ayrı aynı SHA-256 değerindedir. Yükleme adlarındaki sayılar belge kabul tarihi yapılmadı.",
+            "provenance": "summary",
+            "epistemic_type": "claim"
+          }
+        },
+        {
+          "kind": "finding_evidence",
+          "values": {
+            "finding_id": "0209-saadet-document-links-summary",
+            "passage_id": "0209-saadet-document-links",
+            "role": "support"
+          }
+        },
+        {
+          "kind": "review",
+          "values": {
+            "id": "0209-saadet-document-links-summary-review",
+            "kind": "finding",
+            "subject_id": "0209-saadet-document-links-summary",
+            "reviewer_kind": "agent",
+            "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+            "result": "reviewed",
+            "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+          }
+        },
+        {
+          "kind": "finding",
+          "values": {
+            "id": "0209-saadet-document-links-quote",
+            "party_id": "saadet",
+            "heading": "Program",
+            "pair_id": "0209-saadet-document-links",
+            "text": "K-D-1751227555.pdf",
+            "provenance": "quote",
+            "epistemic_type": "claim"
+          }
+        },
+        {
+          "kind": "finding_evidence",
+          "values": {
+            "finding_id": "0209-saadet-document-links-quote",
+            "passage_id": "0209-saadet-document-links",
+            "role": "support"
+          }
+        },
+        {
+          "kind": "review",
+          "values": {
+            "id": "0209-saadet-document-links-quote-review",
+            "kind": "finding",
+            "subject_id": "0209-saadet-document-links-quote",
+            "reviewer_kind": "agent",
+            "reviewed_at": "2026-11-11T20:59:26.649747+00:00",
+            "result": "reviewed",
+            "reason": "Kısa özgün pasaj ve çevresi özetle karşılaştırıldı; tarih ve beyanın atfı korunur. Ajan okuması insan kabulü değildir."
+          }
+        },
+        {
+          "kind": "dossier_source",
+          "values": {
+            "party_id": "saadet",
+            "heading": "Program",
+            "version_id": "0209-saadet-document-index-v1",
+            "reason": "Amaç beyanı/resmî site veya programın doğrudan yayıncı dosya bağlantısı."
+          }
+        },
+        {
+          "kind": "archive_view",
+          "values": {
+            "version_id": "0209-saadet-document-index-v1",
+            "view_id": "e0c6063e252561bfbf3c1ce53d24b57f",
+            "format_version": 1,
+            "source_sha256": "a865374283553675e7ce8528d4748691d5edddb05e4d834e0e7cc4f66b990a09",
+            "index_path": "views/e0c6063e252561bfbf3c1ce53d24b57f/index.html",
+            "manifest_path": "views/e0c6063e252561bfbf3c1ce53d24b57f/manifest.json",
+            "manifest_sha256": "e7bdd5f5dfe5e0090d3c17f0229e8d602fca76658498f0e28351c556d41ad41d"
+          }
+        }
+      ]
+    }
+  ],
+  "important_gaps": [
+    "Kuruluş dilekçesinin aslı ve ilk kongrenin tam tutanağı bu taramada bulunamadı. TBMM Bülteni ilk yönetimi, atıflı ajans haberi ilk kongreyi kaynaklar; asıl belgelerin yerine geçirilmez.",
+    "2002 ikinci baskı, 2019 değişiklik notu ve 2020 GİK eki edinildi; aradaki tüm tüzük nüshaları ve kabul/değişiklik tutanakları bulunamadı. Kesin bütün sürüm zinciri ve yürürlük bitişleri bilinmiyor.",
+    "3 Kasım 2019 tarihli tam program edinildi. Daha eski tam parti programı bu taramada bulunamadı; eski 2018 yükleme adresi güncel boş uygulama kabuğuna döndü. Seçim beyannamesi, parti programının önceki sürümü sayılmadı.",
+    "Kurucu milletvekili sayısındaki 32/51 farkı asıl liste olmadan doğrulanamadı.",
+    "Başkanlık/adres tarihsel başlangıcı ve belge dönemlerinin kesin bitişi bilinmiyor.",
+    "Söylem–uygulama ve gerçekleşmiş finansman/harcamalar sonraki fazlar için Henüz incelenmedi."
+  ]
+}

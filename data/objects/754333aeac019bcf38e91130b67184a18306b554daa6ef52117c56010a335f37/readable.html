@@ -1,0 +1,155 @@
+<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;tr&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, viewport-fit=cover&quot; /&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot; /&gt;
+  &lt;title&gt;Belge Önizleme | Saadet Partisi&lt;/title&gt;
+  &lt;style&gt;
+    :root { --red:#E10818; --ink:#111827; --muted:#6b7280; --bg:#eceff3; }
+    * { box-sizing:border-box; }
+    html,body{ margin:0; font-family:&quot;Segoe UI&quot;,Tahoma,sans-serif; background:var(--bg); color:var(--ink); }
+    .top{ position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:12px 16px; background:#fff; border-bottom:1px solid #e5e7eb; box-shadow:0 2px 12px rgba(0,0,0,.05); }
+    .brand{ font-weight:800; font-size:17px; }
+    .hint{ color:var(--muted); font-size:13px; margin-top:3px; max-width:820px; line-height:1.35; }
+    .actions{ display:flex; gap:8px; flex-wrap:wrap; }
+    .btn{ appearance:none; border:0; border-radius:999px; padding:11px 16px; font-size:14px; font-weight:700; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; }
+    .btn-back{ background:#111827; color:#fff; }
+    .btn-open{ background:var(--red); color:#fff; }
+    .stage{ max-width:920px; margin:16px auto 40px; padding:0 12px; }
+    .status{ background:#fff; border-radius:12px; padding:12px 14px; margin-bottom:12px; color:var(--muted); font-size:14px; box-shadow:0 4px 16px rgba(0,0,0,.04); }
+    .page{ background:#fff; border-radius:12px; margin-bottom:14px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.06); }
+    .page .num{ padding:8px 12px; font-size:12px; color:var(--muted); border-bottom:1px solid #f3f4f6; }
+    .page img{ width:100%; height:auto; display:block; background:#d1d5db; min-height:80px; }
+    .sentinel{ text-align:center; padding:18px; color:var(--muted); font-size:14px; }
+    @media (max-width:640px){ .btn{ flex:1; } }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;top&quot;&gt;
+    &lt;div&gt;
+      &lt;div class=&quot;brand&quot; id=&quot;title&quot;&gt;Belge Önizleme&lt;/div&gt;
+      &lt;div class=&quot;hint&quot;&gt;Belgeyi aşağı kaydırarak tüm sayfaları okuyabilirsiniz. İsterseniz PDF’yi yeni sekmede de açabilirsiniz.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;actions&quot;&gt;
+      &lt;a class=&quot;btn btn-back&quot; id=&quot;backBtn&quot; href=&quot;https://saadet.org.tr/dosya-arsivi&quot;&gt;← Geri Dön&lt;/a&gt;
+      &lt;a class=&quot;btn btn-open&quot; id=&quot;openBtn&quot; href=&quot;#&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PDF&#x27;yi Yeni Sekmede Aç&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;stage&quot;&gt;
+    &lt;div class=&quot;status&quot; id=&quot;status&quot;&gt;Sayfalar hazırlanıyor...&lt;/div&gt;
+    &lt;div id=&quot;pages&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;sentinel&quot; id=&quot;sentinel&quot;&gt;Kaydırarak devam edin&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    (function(){
+      var params=new URLSearchParams(location.search);
+      var file=params.get(&#x27;f&#x27;)||params.get(&#x27;file&#x27;)||&#x27;&#x27;;
+      var title=params.get(&#x27;t&#x27;)||params.get(&#x27;title&#x27;)||&#x27;Belge Önizleme&#x27;;
+      document.getElementById(&#x27;title&#x27;).textContent=title;
+      document.getElementById(&#x27;backBtn&#x27;).onclick=function(e){ if(history.length&gt;1){ e.preventDefault(); history.back(); } };
+      if(!file){ document.getElementById(&#x27;status&#x27;).textContent=&#x27;Dosya bulunamadı&#x27;; return; }
+      var name=String(file).replace(/\\/g,&#x27;/&#x27;).split(&#x27;/&#x27;).pop();
+      if(!name || name.indexOf(&#x27;..&#x27;)!==-1 || !/\.pdf$/i.test(name)){ document.getElementById(&#x27;status&#x27;).textContent=&#x27;Geçersiz dosya&#x27;; return; }
+
+      var pdfUrl=&#x27;/dosyalar/&#x27;+encodeURIComponent(name);
+      document.getElementById(&#x27;openBtn&#x27;).href=pdfUrl;
+
+      var total=0, next=1, loading=false, done=false, failStreak=0;
+      var pagesEl=document.getElementById(&#x27;pages&#x27;);
+      var statusEl=document.getElementById(&#x27;status&#x27;);
+      var sentinel=document.getElementById(&#x27;sentinel&#x27;);
+      var FIRST=8, BATCH=4;
+
+      function pageUrl(p){ return &#x27;page.php?f=&#x27;+encodeURIComponent(name)+&#x27;&amp;p=&#x27;+p+&#x27;&amp;v=4&#x27;; }
+
+      function addPage(p, src){
+        if(document.getElementById(&#x27;page-&#x27;+p)) return;
+        var wrap=document.createElement(&#x27;div&#x27;);
+        wrap.className=&#x27;page&#x27;;
+        wrap.id=&#x27;page-&#x27;+p;
+        wrap.innerHTML=&#x27;&lt;div class=&quot;num&quot;&gt;Sayfa &#x27;+p+(total?(&#x27; / &#x27;+total):&#x27;&#x27;)+&#x27;&lt;/div&gt;&#x27;;
+        var img=document.createElement(&#x27;img&#x27;);
+        img.alt=title+&#x27; - sayfa &#x27;+p;
+        img.decoding=&#x27;async&#x27;;
+        img.src=src;
+        wrap.appendChild(img);
+        var kids=pagesEl.children;
+        var placed=false;
+        for(var i=0;i&lt;kids.length;i++){
+          var n=parseInt(String(kids[i].id||&#x27;&#x27;).replace(&#x27;page-&#x27;,&#x27;&#x27;),10);
+          if(n&gt;p){ pagesEl.insertBefore(wrap, kids[i]); placed=true; break; }
+        }
+        if(!placed) pagesEl.appendChild(wrap);
+      }
+
+      function loadOne(p){
+        return new Promise(function(resolve){
+          var img=new Image();
+          var settled=false;
+          var timer=setTimeout(function(){ if(!settled){ settled=true; resolve(false); } }, 45000);
+          img.onload=function(){ if(settled) return; settled=true; clearTimeout(timer); addPage(p, img.src); resolve(true); };
+          img.onerror=function(){ if(settled) return; settled=true; clearTimeout(timer); resolve(false); };
+          img.src=pageUrl(p);
+        });
+      }
+
+      async function loadMore(){
+        if(loading || done) return;
+        loading=true;
+        sentinel.textContent=&#x27;Sayfalar yükleniyor...&#x27;;
+        var batch=(next===1?FIRST:BATCH);
+        var start=next;
+        var jobs=[];
+        for(var i=0;i&lt;batch;i++){
+          var p=start+i;
+          if(total &amp;&amp; p&gt;total) break;
+          jobs.push(loadOne(p));
+        }
+        if(!jobs.length){ done=true; loading=false; sentinel.textContent=total?(&#x27;Toplam &#x27;+total+&#x27; sayfa yüklendi.&#x27;):&#x27;Belge sonu.&#x27;; return; }
+        var results=await Promise.all(jobs);
+        var okCount=0;
+        for(var j=0;j&lt;results.length;j++){
+          if(results[j]){ okCount++; failStreak=0; next=start+j+1; }
+          else {
+            failStreak++;
+            if(total &amp;&amp; (start+j)&gt;total){ done=true; break; }
+            if(!total &amp;&amp; failStreak&gt;=2){ done=true; break; }
+            if(total &amp;&amp; (start+j)&lt;=total){
+              // known page failed: stop advancing past hole but allow retry on next scroll
+              next=start+j;
+              break;
+            }
+          }
+        }
+        if(okCount){
+          statusEl.textContent= total
+            ? (&#x27;Sayfa &#x27;+(next-1)+&#x27; / &#x27;+total+&#x27; gösteriliyor. Aşağı kaydırarak devam edin.&#x27;)
+            : (&#x27;Sayfa &#x27;+(next-1)+&#x27; gösteriliyor. Aşağı kaydırarak devam edin.&#x27;);
+        }
+        loading=false;
+        if(done){
+          sentinel.textContent= total ? (&#x27;Toplam &#x27;+total+&#x27; sayfa. Kaydırarak okuyabilirsiniz.&#x27;) : &#x27;Belge sonu.&#x27;;
+        } else {
+          sentinel.textContent=&#x27;Kaydırarak devam edin&#x27;;
+          maybeLoad();
+        }
+      }
+
+      function maybeLoad(){
+        if(done || loading) return;
+        var rect=sentinel.getBoundingClientRect();
+        if(rect.top &lt; window.innerHeight + 1200) loadMore();
+      }
+
+      fetch(&#x27;meta.php?f=&#x27;+encodeURIComponent(name)).then(function(r){return r.json()}).then(function(j){
+        if(j &amp;&amp; j.ok &amp;&amp; j.pages){ total=j.pages; statusEl.textContent=&#x27;Toplam &#x27;+total+&#x27; sayfa. Sayfalar açılıyor...&#x27;; }
+      }).catch(function(){}).finally(function(){ loadMore(); });
+
+      window.addEventListener(&#x27;scroll&#x27;, maybeLoad, {passive:true});
+      window.addEventListener(&#x27;resize&#x27;, maybeLoad);
+    })();
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>

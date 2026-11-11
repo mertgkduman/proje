@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Belge Önizleme | Saadet Partisi</title>
+  <style>
+    :root { --red:#E10818; --ink:#111827; --muted:#6b7280; --bg:#eceff3; }
+    * { box-sizing:border-box; }
+    html,body{ margin:0; font-family:"Segoe UI",Tahoma,sans-serif; background:var(--bg); color:var(--ink); }
+    .top{ position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:12px 16px; background:#fff; border-bottom:1px solid #e5e7eb; box-shadow:0 2px 12px rgba(0,0,0,.05); }
+    .brand{ font-weight:800; font-size:17px; }
+    .hint{ color:var(--muted); font-size:13px; margin-top:3px; max-width:820px; line-height:1.35; }
+    .actions{ display:flex; gap:8px; flex-wrap:wrap; }
+    .btn{ appearance:none; border:0; border-radius:999px; padding:11px 16px; font-size:14px; font-weight:700; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; }
+    .btn-back{ background:#111827; color:#fff; }
+    .btn-open{ background:var(--red); color:#fff; }
+    .stage{ max-width:920px; margin:16px auto 40px; padding:0 12px; }
+    .status{ background:#fff; border-radius:12px; padding:12px 14px; margin-bottom:12px; color:var(--muted); font-size:14px; box-shadow:0 4px 16px rgba(0,0,0,.04); }
+    .page{ background:#fff; border-radius:12px; margin-bottom:14px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.06); }
+    .page .num{ padding:8px 12px; font-size:12px; color:var(--muted); border-bottom:1px solid #f3f4f6; }
+    .page img{ width:100%; height:auto; display:block; background:#d1d5db; min-height:80px; }
+    .sentinel{ text-align:center; padding:18px; color:var(--muted); font-size:14px; }
+    @media (max-width:640px){ .btn{ flex:1; } }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div>
+      <div class="brand" id="title">Belge Önizleme</div>
+      <div class="hint">Belgeyi aşağı kaydırarak tüm sayfaları okuyabilirsiniz. İsterseniz PDF’yi yeni sekmede de açabilirsiniz.</div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-back" id="backBtn" href="https://saadet.org.tr/dosya-arsivi">← Geri Dön</a>
+      <a class="btn btn-open" id="openBtn" href="#" target="_blank" rel="noopener">PDF'yi Yeni Sekmede Aç</a>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="status" id="status">Sayfalar hazırlanıyor...</div>
+    <div id="pages"></div>
+    <div class="sentinel" id="sentinel">Kaydırarak devam edin</div>
+  </div>
+  <script>
+    (function(){
+      var params=new URLSearchParams(location.search);
+      var file=params.get('f')||params.get('file')||'';
+      var title=params.get('t')||params.get('title')||'Belge Önizleme';
+      document.getElementById('title').textContent=title;
+      document.getElementById('backBtn').onclick=function(e){ if(history.length>1){ e.preventDefault(); history.back(); } };
+      if(!file){ document.getElementById('status').textContent='Dosya bulunamadı'; return; }
+      var name=String(file).replace(/\\/g,'/').split('/').pop();
+      if(!name || name.indexOf('..')!==-1 || !/\.pdf$/i.test(name)){ document.getElementById('status').textContent='Geçersiz dosya'; return; }
+
+      var pdfUrl='/dosyalar/'+encodeURIComponent(name);
+      document.getElementById('openBtn').href=pdfUrl;
+
+      var total=0, next=1, loading=false, done=false, failStreak=0;
+      var pagesEl=document.getElementById('pages');
+      var statusEl=document.getElementById('status');
+      var sentinel=document.getElementById('sentinel');
+      var FIRST=8, BATCH=4;
+
+      function pageUrl(p){ return 'page.php?f='+encodeURIComponent(name)+'&p='+p+'&v=4'; }
+
+      function addPage(p, src){
+        if(document.getElementById('page-'+p)) return;
+        var wrap=document.createElement('div');
+        wrap.className='page';
+        wrap.id='page-'+p;
+        wrap.innerHTML='<div class="num">Sayfa '+p+(total?(' / '+total):'')+'</div>';
+        var img=document.createElement('img');
+        img.alt=title+' - sayfa '+p;
+        img.decoding='async';
+        img.src=src;
+        wrap.appendChild(img);
+        var kids=pagesEl.children;
+        var placed=false;
+        for(var i=0;i<kids.length;i++){
+          var n=parseInt(String(kids[i].id||'').replace('page-',''),10);
+          if(n>p){ pagesEl.insertBefore(wrap, kids[i]); placed=true; break; }
+        }
+        if(!placed) pagesEl.appendChild(wrap);
+      }
+
+      function loadOne(p){
+        return new Promise(function(resolve){
+          var img=new Image();
+          var settled=false;
+          var timer=setTimeout(function(){ if(!settled){ settled=true; resolve(false); } }, 45000);
+          img.onload=function(){ if(settled) return; settled=true; clearTimeout(timer); addPage(p, img.src); resolve(true); };
+          img.onerror=function(){ if(settled) return; settled=true; clearTimeout(timer); resolve(false); };
+          img.src=pageUrl(p);
+        });
+      }
+
+      async function loadMore(){
+        if(loading || done) return;
+        loading=true;
+        sentinel.textContent='Sayfalar yükleniyor...';
+        var batch=(next===1?FIRST:BATCH);
+        var start=next;
+        var jobs=[];
+        for(var i=0;i<batch;i++){
+          var p=start+i;
+          if(total && p>total) break;
+          jobs.push(loadOne(p));
+        }
+        if(!jobs.length){ done=true; loading=false; sentinel.textContent=total?('Toplam '+total+' sayfa yüklendi.'):'Belge sonu.'; return; }
+        var results=await Promise.all(jobs);
+        var okCount=0;
+        for(var j=0;j<results.length;j++){
+          if(results[j]){ okCount++; failStreak=0; next=start+j+1; }
+          else {
+            failStreak++;
+            if(total && (start+j)>total){ done=true; break; }
+            if(!total && failStreak>=2){ done=true; break; }
+            if(total && (start+j)<=total){
+              // known page failed: stop advancing past hole but allow retry on next scroll
+              next=start+j;
+              break;
+            }
+          }
+        }
+        if(okCount){
+          statusEl.textContent= total
+            ? ('Sayfa '+(next-1)+' / '+total+' gösteriliyor. Aşağı kaydırarak devam edin.')
+            : ('Sayfa '+(next-1)+' gösteriliyor. Aşağı kaydırarak devam edin.');
+        }
+        loading=false;
+        if(done){
+          sentinel.textContent= total ? ('Toplam '+total+' sayfa. Kaydırarak okuyabilirsiniz.') : 'Belge sonu.';
+        } else {
+          sentinel.textContent='Kaydırarak devam edin';
+          maybeLoad();
+        }
+      }
+
+      function maybeLoad(){
+        if(done || loading) return;
+        var rect=sentinel.getBoundingClientRect();
+        if(rect.top < window.innerHeight + 1200) loadMore();
+      }
+
+      fetch('meta.php?f='+encodeURIComponent(name)).then(function(r){return r.json()}).then(function(j){
+        if(j && j.ok && j.pages){ total=j.pages; statusEl.textContent='Toplam '+total+' sayfa. Sayfalar açılıyor...'; }
+      }).catch(function(){}).finally(function(){ loadMore(); });
+
+      window.addEventListener('scroll', maybeLoad, {passive:true});
+      window.addEventListener('resize', maybeLoad);
+    })();
+  </script>
+</body>
+</html>
