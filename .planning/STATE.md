@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 02
 current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
-current_plan: 8
+current_plan: 9
 status: executing
-stopped_at: 02-07 tamamlandı; DBP teslimi bildirildikten sonra sıradaki 02-08 EMEP
-last_updated: "2026-11-11T19:54:59.157Z"
+stopped_at: "02-08 tamamlandı; EMEP teslimi bildirildikten sonra sıradaki 02-09 Saadet"
+last_updated: "2026-11-11T20:49:00.990941Z"
 last_activity: 2026-11-11
-last_activity_desc: 02-07 tamamlandı; DBP tam yerel dosyası ve Yeni Yol’a bağlı makbuzu hazır, sıradaki 02-08 EMEP
-state_head: 94d3b15acf66d859e23a37e54e9f310a2e6f13ab
+last_activity_desc: "02-08 tamamlandı; EMEP tam yerel dosyası ve DBP’ye bağlı makbuzu hazır, sıradaki 02-09 Saadet"
+state_head: d403b000c17203171a9b06ca9e8c34e5df6ece04
 progress:
   total_phases: 6
   completed_phases: 1
   total_plans: 16
-  completed_plans: 13
+  completed_plans: 14
 ---
 
 # Project State
@@ -28,34 +28,34 @@ See: .planning/PROJECT.md (updated 2026-11-10)
 
 ## Current Position
 
-Current Plan: 8
+Current Plan: 9
 Total Plans in Phase: 10
 Phase: 02 (Bütün partiler için dosyalar ve sürümlü kaynaklar) — EXECUTING
-Plan: 7/10 tamamlandı; sıradaki 02-08
+Plan: 8/10 tamamlandı; sıradaki 02-09
 Status: Ready to execute
-Last activity: 2026-11-11 — 02-07 tamamlandı: DBP’nin 20 kaynaklı özet/alıntı çifti, yedi alanlı kartı, kuruluş/ilk kongre/ad değişikliği kronolojisi ve tüzük/program edinimi 4a4ce5448c894a9ebc3c12e97cacb6dd yerel sürümü ve Yeni Yol’a bağlı makbuzla hazırdır. Ayrı güncel program ve birincil kuruluş tutanakları açık kaldı. Pasif HTML UTF-8 hatası regresyonla düzeltildi; ilk aday ve eski baytlar korundu. DBP tesliminin bildirilmesinden sonra sıradaki plan 02-08 EMEP’tir.
+Last activity: 2026-11-11 — 02-08 tamamlandı: EMEP’nin 22 kaynaklı özet/alıntı çifti, yedi alanlı kartı, kuruluş/ilk kongre/ad değişikliği kronolojisi ve tam program/tüzük derlemesi d0969b9cfaac47c69d09cf27c1f1ad39 yerel sürümü ve DBP’ye bağlı makbuzla hazırdır. Aynı adlı eski parti ayrı kaynaklandı; kuruluş/ilk kongre asılları ve kesin kabul/sürüm zinciri açık kaldı. Sonraki plan 02-09 Saadet, EMEP tesliminin bildirilmesinden sonradır.
 
-Progress: [██░░░░░░░░] 17%
+Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 8/10 plan
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 13
+- Total plans completed: 14
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
-- Total execution time: Faz 1'in altı ve Faz 2'nin yedi planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
+- Total execution time: Faz 1’in altı ve Faz 2’nin sekiz planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 | 6 | - | - |
-| 2 | 7/10 | - | - |
+| 2 | 8/10 | - | - |
 
 **Recent Trend:**
 
-- Last 5 plans: 02-03, 02-04, 02-05, 02-06, 02-07
-- Trend: Faz 1 tamamlandı; Faz 2 7/10 planda. DBP tam yerel dosyası ve makbuzu hazır; sonraki parti EMEP’tir. Kamu raporu 261111-epm sürümünde kalır.
+- Last 5 plans: 02-04, 02-05, 02-06, 02-07, 02-08
+- Trend: Faz 1 tamamlandı; Faz 2 8/10 planda. EMEP tam yerel dosyası ve makbuzu hazır; sonraki parti Saadet’tir. Kamu raporu 261111-epm sürümünde kalır.
 
 **Per-Plan Metrics:**
 
@@ -74,6 +74,7 @@ Progress: [██░░░░░░░░] 17%
 | Phase 02 P05 | 38min | 3 tasks | 387 files |
 | Phase 02 P06 | 37min | 3 tasks | 128 files |
 | Phase 02 P07 | 50min | 3 tasks | 262 files |
+| Phase 02 P08 | 49min | 3 tasks | 225 files |
 
 ## Accumulated Context
 
@@ -140,6 +141,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-11T19:54:21.353Z
-Stopped at: 02-07 tamamlandı; DBP teslimi bildirildikten sonra sıradaki 02-08 EMEP
-Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-08-PLAN.md
+Last session: 2026-11-11T20:48:59.792Z
+Stopped at: 02-08 tamamlandı; EMEP teslimi bildirildikten sonra sıradaki 02-09 Saadet
+Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-09-PLAN.md
