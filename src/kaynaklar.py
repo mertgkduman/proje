@@ -81,7 +81,7 @@ def validate_policy_descent(base_data, data):
         row = data['source_policy'][0]
         if set(json.loads(row['legacy_versions'])) != {v['id'] for v in base_data['document_version']} or set(json.loads(row['legacy_findings'])) != {f['id'] for f in base_data['finding']}:
             raise ValueError('Politika geçiş sınırları taban kayıtlarıyla uyuşmuyor')
-    for table in ('source_attribution',):
+    for table in ('source_attribution','archive_view'):
         if any(row not in data.get(table,[]) for row in base_data.get(table,[])):
             raise ValueError('Önceki kaynak atıfları değiştirilemez')
 

@@ -31,6 +31,7 @@ from rapor_v9 import render_report as render_v9_report
 from rapor_v10 import render_report as render_v10_report
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
                       check_evidence_attribution, validate_policy_descent)
+from arsiv_gorunum import VIEW_TABLES, validate_view, CSP as ARCHIVE_CSP
 from dosyalar import (DOSSIER_TABLES, foundation_for_party, migrate_workspace,
                       validate_dossier, validate_delivery_prefix, DELIVERY_ORDER)
 
@@ -94,6 +95,7 @@ TABLES['financial'] = 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES pa
 TABLES['review'] = 'id TEXT PRIMARY KEY, kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL'
 TABLES.update(DOSSIER_TABLES)
 TABLES.update(POLICY_TABLES)
+TABLES.update(VIEW_TABLES)
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -265,7 +267,7 @@ def open_workspace(scratch=None, fail_at=None):
             shutil.copyfile(DATA / 'releases' / base / 'records.sqlite3', work / 'records.sqlite3')
         db = connect(work / 'records.sqlite3')
         for name, definition in TABLES.items():
-            if name in DOSSIER_TABLES or name in POLICY_TABLES: continue
+            if name in DOSSIER_TABLES or name in POLICY_TABLES or name in VIEW_TABLES: continue
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         columns = {r['name'] for r in db.execute('PRAGMA table_info(document_version)')}
         for column in ('date_precision', 'date_unknown_reason'):
@@ -307,6 +309,10 @@ def record(work, kind, values):
             safe_url(values['original_url']); safe_url(values['final_url'])
             if values.get('document_date') is None and (values.get('date_precision') != 'unknown' or not values.get('date_unknown_reason')):
                 raise ValueError('Bilinmeyen belge tarihi için gerekçe gerekli')
+        if kind == 'archive_view':
+            validate_view(DATA,values)
+            version=db.execute('SELECT sha256 FROM document_version WHERE id=?',(values['version_id'],)).fetchone()
+            if not version or version['sha256']!=values['source_sha256']:raise ValueError('Arşiv görünümü özgün belgeyle uyuşmuyor')
         if kind == 'edge':
             if values.get('relation') not in ('reference','contradiction','new_version') or not values.get('relevance_reason'): raise ValueError('İlgili kenar ve gerekçe gerekli')
         if kind == 'research_state' and values.get('state') not in ('not_researched','in_progress','reviewed'):
@@ -760,6 +766,9 @@ def export_db(path, release_id, strict_identity=False):
         for name in names:
             result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY rowid')]
         validate_policy(db,result)
+        for view in result.get('archive_view',[]):
+            validate_view(DATA,view)
+            if not any(v['id']==view['version_id'] and v['sha256']==view['source_sha256'] for v in result['document_version']):raise ValueError('Arşiv görünümü özgün belgeyle uyuşmuyor')
         if strict_identity:
             for identity in result.get('identity_observation', []): check_identity(db, identity)
         if result['schema_version'] >= 3:
@@ -1095,12 +1104,15 @@ def main():
             def translate_path(self, path):
                 relative = urllib.parse.unquote(urllib.parse.urlsplit(path).path).lstrip('/')
                 if not (re.fullmatch(r'releases/[0-9a-f]+/(?:index\.html|records\.json|records\.sqlite3|manifest\.json)', relative) or
-                        re.fullmatch(r'objects/[0-9a-f]{64}/(?:readable\.html|original\.pdf|original\.html\.bin)', relative)):
+                        re.fullmatch(r'objects/[0-9a-f]{64}/(?:readable\.html|original\.pdf|original\.html\.bin)', relative) or
+                        re.fullmatch(r'views/[0-9a-f]{32}/(?:index\.html|manifest\.json|assets/[0-9a-f]{64}\.(?:css|png|jpg|gif|webp|ico|woff2|woff|ttf|otf))', relative)):
                     return str(DATA / '.invalid-path')
                 try: return str(safe_path(DATA, relative))
                 except ValueError: return str(DATA / '.invalid-path')
             def end_headers(self):
                 self.send_header('X-Content-Type-Options', 'nosniff')
+                if urllib.parse.urlsplit(self.path).path.startswith('/views/'):
+                    self.send_header('Content-Security-Policy', ARCHIVE_CSP)
                 if urllib.parse.urlsplit(self.path).path.endswith('.bin'):
                     self.send_header('Content-Disposition', 'attachment')
                 super().end_headers()

@@ -53,3 +53,17 @@ class ArchiveViews(unittest.TestCase):
                 paths.append(row['index_path'])
             self.assertNotEqual(*paths)
 
+    def test_real_input_links_original_hashes_and_valid_local_assets(self):
+        m=self.module()
+        payload=json.loads((arsiv.DATA/'dossiers/261111-epm-yeni-parti.json').read_text())
+        views=[r['values'] for r in payload['records'] if r['kind']=='archive_view']
+        self.assertEqual({r['source_sha256'] for r in views},{CHARTER,PROGRAM})
+        for row in views:
+            self.assertTrue(m.validate_view(arsiv.DATA,row))
+            manifest=json.loads((arsiv.DATA/row['manifest_path']).read_text())
+            self.assertTrue(any(p.endswith('.png') for p in manifest['files']))
+            self.assertTrue(any(p.endswith('.ttf') for p in manifest['files']))
+            text=(arsiv.DATA/row['index_path']).read_text()
+            self.assertIn('../../objects/',text)
+            self.assertIn('/original.pdf',text)
+

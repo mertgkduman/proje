@@ -8,6 +8,7 @@ import shutil
 import re
 from urllib.parse import urlsplit
 from kaynaklar import POLICY_TABLES, POLICY_VERSION, official_site_supported
+from arsiv_gorunum import VIEW_TABLES
 
 DOSSIER_TABLES = {
     'party_identity_revision': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), previous_registry_key TEXT NOT NULL, registry_key TEXT NOT NULL, previous_legal_name TEXT NOT NULL, legal_name TEXT NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), changed_at TEXT NOT NULL, reason TEXT NOT NULL',
@@ -39,7 +40,7 @@ def migrate_workspace(db, backup_path, fail_at=None):
         db.execute('BEGIN IMMEDIATE')
         for name, definition in DOSSIER_TABLES.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
-        for name, definition in POLICY_TABLES.items():
+        for name, definition in {**POLICY_TABLES,**VIEW_TABLES}.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if fail_at == 'migration':
             raise RuntimeError('Enjekte edilen migration hatası')
@@ -293,7 +294,7 @@ def load_dossier(work, payload):
         method = db.execute('SELECT version,cutoff_at FROM method ORDER BY version DESC LIMIT 1').fetchone()
         db.close()
         if not method or (payload.get('method_version'),payload.get('cutoff_at')) != (method['version'],method['cutoff_at']): raise ValueError('Yöntem sürümü veya kesim uyuşmuyor')
-        rank = {k:i for i,k in enumerate(('document','document_version','source_attribution','archive_view','passage','identity_observation','lead','attempt','missing','event_date','accounting_period','finding','finding_evidence','verification','review','dossier_source','dossier_field','dossier_event','version_context','version_relation','dossier_identity_note','missing_resolution'))}
+        rank = {k:i for i,k in enumerate(('topic','document','document_version','source_attribution','archive_view','passage','identity_observation','lead','attempt','missing','event_date','accounting_period','finding','finding_evidence','finding_topic','verification','review','dossier_source','dossier_field','dossier_event','version_context','version_relation','dossier_identity_note','missing_resolution'))}
         entries = payload['records']
         if any(not isinstance(e,dict) or set(e) != {'kind','values'} or e['kind'] not in arsiv.TABLES or not isinstance(e['values'],dict) for e in entries): raise ValueError('Geçersiz kayıt')
         entries = sorted(entries, key=lambda e: rank.get(e['kind'], 100))
