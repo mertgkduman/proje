@@ -103,9 +103,9 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 02]: 02-05: İYİ Parti 45fdfa3f6abe4a8882c52b2658fc6c6d yerel sürümü ve DEM’e bağlı makbuzla teslim; prefix tip,dem,iyi. Gerçek sicil yargitay-207; 2020/2026 değişiklikli tüzükler ve tam HTML programı derlendi, PDF/kabul tarihi ve kurumsal kaynak görünümü sınırları korundu.
 - [Phase 02]: 02-06: Yeni Yol, 732fcd2bfc954200b4292c51ef29f526 yerel sürümü ve İYİ Parti’ye bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol. Gerçek sicil yargitay-331, kuruluş 13.01.2025; ortak grup ve aynı adlı eski parti ayrıldı. Tam tüzük/program, bağımsız site ve ilk kongre açıkları gerçek aramalarla korunur.
 
-### Pending Todos
-
 - [Quick 261111-j4v]: Süreç içi PDF/kütüphane tekrar kullanımı eklendi; 34 test geçti. Gerçek Yeni Yol makbuz ölçümü 180 saniyede zaman aşımına uğradı; makbuz/veri değişmedi, toplam hızlanma veya yeni makbuz kabulü iddia edilmedi. Önceki başarılı teslim geçerlidir; Faz 2 6/10, sıradaki 02-07.
+
+### Pending Todos
 
 None yet.
 
@@ -126,8 +126,6 @@ None yet.
 | 261111-j4v | Süreç içi PDF yeniden kullanımı; 34 test geçti, tek makbuz ölçümü 180s sınırında tamamlanmadı | 2026-11-11 | a475f5a | [261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel](./quick/261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel/) |
 
 ### Roadmap Evolution
-
-Quick 261111-j4v tamamlandı: `a475f5a`; [plan ve özet](./quick/261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel/). Faz planları ve gereksinim durumu değiştirilmedi.
 
 - Phase 1 edited: success_criteria: kullanıcının görünür metin türü etiketi yerine tırnaklı alıntı seçimi uygulandı; kapsam ve bağımlılıklar korunuyor
 - Phase 6 edited: success_criteria: kullanıcının görünür metin türü etiketi yerine tırnaklı alıntı seçimi uygulandı; kapsam ve bağımlılıklar korunuyor
