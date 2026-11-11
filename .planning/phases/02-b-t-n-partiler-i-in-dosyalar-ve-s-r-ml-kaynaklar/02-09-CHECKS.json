@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "party_id": "saadet",
+  "release_id": "d42f5105a1a1431d86cdfb3db8669fe2",
+  "checked_at": "2026-11-11T21:52:03.493459+00:00",
+  "data_schema_version": 5,
+  "source_policy_version": 2,
+  "renderer_version": 13,
+  "dossier_validation_version": 2,
+  "checks": {
+    "previous_receipt": {
+      "argv": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-08-emep.json"
+      ],
+      "exit": 0,
+      "seconds": 680.0645589828491
+    },
+    "previous_release": {
+      "argv": [
+        "audit",
+        "--release",
+        "d0969b9cfaac47c69d09cf27c1f1ad39",
+        "--phase",
+        "2",
+        "--party",
+        "emep"
+      ],
+      "exit": 0,
+      "seconds": 171.22255158424377
+    },
+    "dossier-check": {
+      "argv": [
+        "dossier-check",
+        "--input",
+        "data/dossiers/02-saadet.json"
+      ],
+      "exit": 0,
+      "seconds": 96.13600468635559
+    },
+    "dossier-tests": {
+      "exit": 0,
+      "seconds": 34.376214027404785,
+      "command": "python3 tests/run.py --pattern test_dossiers.py"
+    },
+    "dossier-load": {
+      "argv": [
+        "dossier-load",
+        "--workspace",
+        "/tmp/proje-work-wr5k991i",
+        "--input",
+        "data/dossiers/02-saadet.json"
+      ],
+      "exit": 0,
+      "seconds": 12.903125762939453
+    },
+    "publish": {
+      "argv": [
+        "publish",
+        "--workspace",
+        "/tmp/proje-work-wr5k991i",
+        "--party",
+        "saadet"
+      ],
+      "exit": 0,
+      "seconds": 142.07710433006287
+    },
+    "party-audit": {
+      "argv": [
+        "audit",
+        "--release",
+        "current",
+        "--phase",
+        "2",
+        "--party",
+        "saadet"
+      ],
+      "exit": 0,
+      "seconds": 205.39279580116272
+    },
+    "phase1-audit": {
+      "argv": [
+        "audit",
+        "--release",
+        "current",
+        "--phase",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 218.68997812271118
+    },
+    "receipt-create": {
+      "argv": [
+        "delivery-receipt",
+        "--release",
+        "current",
+        "--party",
+        "saadet",
+        "--out",
+        "data/deliveries/02-09-saadet.json",
+        "--previous",
+        "data/deliveries/02-08-emep.json"
+      ],
+      "exit": 0,
+      "seconds": 800.7997460365295
+    },
+    "receipt-check": {
+      "argv": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-09-saadet.json"
+      ],
+      "exit": 0,
+      "seconds": 785.4226455688477
+    },
+    "browser": {
+      "exit": 0,
+      "seconds": 9.582829475402832,
+      "command": [
+        "node",
+        "/tmp/saadet0209/browser.cjs",
+        "/hpc/home/mg551/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+        "http://127.0.0.1:8099/releases/d42f5105a1a1431d86cdfb3db8669fe2/index.html",
+        "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/index.html",
+        "http://127.0.0.1:8099/objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+        "http://127.0.0.1:8099/objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+        "http://127.0.0.1:8099/objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/original.pdf",
+        "/tmp/saadet0209/browser-shots"
+      ]
+    },
+    "reading": {
+      "exit": 0,
+      "seconds": 3.5470426082611084,
+      "command": [
+        "node",
+        "/tmp/saadet0209/reading.cjs",
+        "/hpc/home/mg551/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+        "http://127.0.0.1:8099/releases/d42f5105a1a1431d86cdfb3db8669fe2/index.html",
+        "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/index.html",
+        "http://127.0.0.1:8099/objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+        "http://127.0.0.1:8099/objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+        "http://127.0.0.1:8099/objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/original.pdf",
+        "/tmp/saadet0209/browser-shots"
+      ]
+    }
+  },
+  "browser": {
+    "status": "BROWSER_ARCHIVES_OK",
+    "results": [
+      {
+        "kind": "report",
+        "width": 1365,
+        "url": "http://127.0.0.1:8099/releases/d42f5105a1a1431d86cdfb3db8669fe2/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 1365,
+        "url": "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - SAADET PARTİSİ",
+        "overflow": false,
+        "text": true,
+        "characterSet": "UTF-8",
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/23b925f3d9d4e94b1e9971e4367cc30e1c6f56856916fcd741c1e0301ceadaea.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/d18054c528e32ac098f154412e5026ddcb95f905994be5b8b1d768dd7bf73667.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/db2ad03c62da32e6559c07ae60c42972e5109d7d0f6d97afb43c8c29029d1e42.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/e5b29c36b2e7a2f4db58307359fa574004be43d39790e4b7a3cf80a7b16e8bb6.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/ed5bf02d648da84d8d68e5e7a9261c198f4713969f92b5729a81fb039a93be15.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 1365,
+        "open": true,
+        "url": "http://127.0.0.1:8099/objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 539965,
+        "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790"
+      },
+      {
+        "kind": "program",
+        "width": 1365,
+        "open": true,
+        "url": "http://127.0.0.1:8099/objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 556239,
+        "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c"
+      },
+      {
+        "kind": "old-charter",
+        "width": 1365,
+        "open": true,
+        "url": "http://127.0.0.1:8099/objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/original.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 1086808,
+        "sha256": "ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8"
+      },
+      {
+        "kind": "report",
+        "width": 360,
+        "url": "http://127.0.0.1:8099/releases/d42f5105a1a1431d86cdfb3db8669fe2/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 360,
+        "url": "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - SAADET PARTİSİ",
+        "overflow": false,
+        "text": true,
+        "characterSet": "UTF-8",
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/23b925f3d9d4e94b1e9971e4367cc30e1c6f56856916fcd741c1e0301ceadaea.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/d18054c528e32ac098f154412e5026ddcb95f905994be5b8b1d768dd7bf73667.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/db2ad03c62da32e6559c07ae60c42972e5109d7d0f6d97afb43c8c29029d1e42.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/e5b29c36b2e7a2f4db58307359fa574004be43d39790e4b7a3cf80a7b16e8bb6.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/ed5bf02d648da84d8d68e5e7a9261c198f4713969f92b5729a81fb039a93be15.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+          "http://127.0.0.1:8099/views/ae5681893760057ddc5671737694fa2f/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 360,
+        "open": true,
+        "url": "http://127.0.0.1:8099/objects/81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790/original.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 539965,
+        "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790"
+      },
+      {
+        "kind": "program",
+        "width": 360,
+        "open": true,
+        "url": "http://127.0.0.1:8099/objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 556239,
+        "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c"
+      },
+      {
+        "kind": "old-charter",
+        "width": 360,
+        "open": true,
+        "url": "http://127.0.0.1:8099/objects/ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8/original.pdf",
+        "status": 200,
+        "mime": "application/pdf",
+        "bytes": 1086808,
+        "sha256": "ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8"
+      }
+    ]
+  },
+  "source_body_reading": {
+    "status": "SOURCE_BODY_READING_OK",
+    "results": [
+      {
+        "kind": "program-body",
+        "width": 1365,
+        "url": "http://127.0.0.1:8099/objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf#page=6&zoom=100",
+        "title": "",
+        "overflow": false,
+        "requested_pdf_page": 6,
+        "source_page_index": 5
+      },
+      {
+        "kind": "program-body",
+        "width": 360,
+        "url": "http://127.0.0.1:8099/objects/6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c/original.pdf#page=6&zoom=100",
+        "title": "",
+        "overflow": false,
+        "requested_pdf_page": 6,
+        "source_page_index": 5
+      }
+    ]
+  },
+  "preservation": {
+    "status": "pass",
+    "unchanged_immutable_files": 1678,
+    "old_release_id": "d0969b9cfaac47c69d09cf27c1f1ad39",
+    "new_release_id": "d42f5105a1a1431d86cdfb3db8669fe2",
+    "preserved_old_rows": {
+      "accounting_period": 0,
+      "action": 16,
+      "actor": 1,
+      "archive_view": 37,
+      "attempt": 194,
+      "closure": 22,
+      "comparison": 0,
+      "comparison_evidence": 0,
+      "document": 102,
+      "document_authority": 1,
+      "document_version": 112,
+      "dossier_event": 25,
+      "dossier_field": 47,
+      "dossier_identity_note": 0,
+      "dossier_source": 108,
+      "edge": 7,
+      "event_date": 25,
+      "financial": 0,
+      "finding": 311,
+      "finding_evidence": 350,
+      "finding_topic": 26,
+      "group_membership": 1,
+      "identity_observation": 7,
+      "lead": 140,
+      "manual_passage": 10,
+      "match": 18,
+      "match_candidate": 26,
+      "membership": 1,
+      "method": 1,
+      "missing": 42,
+      "missing_resolution": 12,
+      "parliamentary_group": 1,
+      "party": 8,
+      "party_identity_revision": 5,
+      "passage": 226,
+      "person": 2,
+      "reopen": 2,
+      "report_option": 1,
+      "research_state": 35,
+      "review": 312,
+      "scope_exclusion": 7,
+      "scope_observation": 9,
+      "scope_party": 9,
+      "source_attribution": 76,
+      "source_policy": 1,
+      "topic": 16,
+      "topic_basis": 1,
+      "topic_query": 3,
+      "topic_search": 27,
+      "url_alias": 106,
+      "verification": 89,
+      "version_context": 90,
+      "version_relation": 3
+    },
+    "controlled_identity_transition": [
+      {
+        "table": "party",
+        "before": {
+          "id": "saadet",
+          "legal_name": "SAADET PARTİSİ",
+          "registry_key": "tbmm-f72877bd-6287-037b-e050-007f01005610"
+        },
+        "after": {
+          "id": "saadet",
+          "legal_name": "SAADET PARTİSİ",
+          "registry_key": "yargitay-70"
+        }
+      }
+    ],
+    "method_unchanged": true,
+    "completed_prefix": [
+      "tip",
+      "dem",
+      "iyi",
+      "yeni-yol",
+      "dbp",
+      "emep",
+      "saadet"
+    ]
+  },
+  "content": {
+    "records": 296,
+    "source_versions": 11,
+    "card_fields": 7,
+    "chronology_rows": 3,
+    "pairs_by_heading": {
+      "Kuruluş": 10,
+      "Tüzük": 8,
+      "Program": 3
+    },
+    "archive_views": 4
+  },
+  "archive_fidelity": [
+    {
+      "version_id": "0209-saadet-registry-v1",
+      "view_id": "ae5681893760057ddc5671737694fa2f",
+      "local_assets": 31,
+      "limitations": [
+        "İlgisiz galeri/gezinme görseli alınmadı: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDA"
+      ]
+    },
+    {
+      "version_id": "0209-saadet-congress-v1",
+      "view_id": "39d0faf51ed6716492a28412470e8c2a",
+      "local_assets": 16,
+      "limitations": [
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/GothamNarrow_Black-s.p.0kvbm2de4dkbe.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/RB_Light-s.p.228sth-99_h3w.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/RB_Regular-s.p.3em4d7gt1puyg.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/KGoran-s.p.178mbvn980kjo.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Poppins_Regular-s.p.3la7-laixwbfx.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Poppins_Medium-s.p.2_4c79-n-nurc.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Poppins_SemiBold-s.p.0qho_o14gvn9z.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Poppins_Bold-s.p.2df4y57bb5u8i.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Poppins_ExtraBold-s.p.1a94aa7sw3y55.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Poppins_Black-s.p.137psrf9c0i1b.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Raleway_Regular-s.p.0-ofapmn3ddjr.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Raleway_Medium-s.p.3j2ypi7odz8k_.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Raleway_SemiBold-s.p.1folrtn6hazud.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Raleway_Bold-s.p.31jl5tbuxuncb.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/media/Raleway_ExtraBold-s.p.0nsjqpajgn7kn.woff2",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/chunks/044h5z-df3crc.css",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/chunks/2dzlokq7d263w.css",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/_next/static/chunks/3g8jzkt0kw9xs.css",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/images/black-logo.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/next.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/x.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/facebook.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/youtube.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/insta.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/googleplay.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/appstore.png",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://www.aa.com.tr/images/blue-logo.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/svg/language.svg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2019/11/01/thumbs_b_c_ef154942e08981002ae22468e0a8867a.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/ombudsman-icon.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Banners/2026/11/06/f1338cfee31ec4ae8c6d5909a26dcdd5.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/podcast-icon.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://www.aa.com.tr/images/podcast-icon-dark.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/PodCastChannel/2026/01/20/e3fd4cf4b4acbb555b6a1f260831c0e0.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/PodCastChannel/2026/01/20/7b855f0d139b355d689138efbd41a29e.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/PodCastChannel/2026/01/20/4f30ca71dc61f8d0be32f4a98ba17d61.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2019/11/01/thumbs_m_c_47fa3e49fdc771ba090d736d43630fba.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2019/11/01/thumbs_m_c_8ffb7a6cea566271e19d9420b665d3f2.jpg?v=112828",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/10/thumbs_m_c_0c917d480cbf39a62d522695b6456eeb.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/11/thumbs_m_c_63a0a12d4594c984e5c4308e200c7c2c.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/18/thumbs_m_c_7bc2a2fa476a6b3db22e9b5bb932da8e.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/18/thumbs_m_c_ce39e62b762aa21c32cb299a38082736.jpg?v=230902",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/20/thumbs_m_c_984a15d8d3d4ebb1df44fa386a82abf2.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/23/thumbs_m_c_5c4b5b761d4ab699fd1b5fa18f1d6691.jpg?v=121250",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/26/thumbs_m_c_d7a0b0b539927f3f1900c465704a53ed.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/04/26/thumbs_m_c_96bad65fa75bf7f6c8d1a34cd2be7a7b.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/05/02/thumbs_m_c_ac7b7b1e6ab4fc931d9985563f2d9130.jpg",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://web-cdnprod.aa.com.tr/uploads/Contents/2018/05/04/thumbs_m_c_229390634fa1d7166f3b3428841bd815.jpg?v=120039"
+      ]
+    },
+    {
+      "version_id": "0209-saadet-founding-news-v1",
+      "view_id": "a34f774529899dd120fffd66826a16c5",
+      "local_assets": 0,
+      "limitations": [
+        "Kaynak alınamadı: http://www.yenisafak.com/images1/meslekler.gif — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: http://www.yenisafak.com/images1/logo.gif — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: http://www.yenisafak.com/images1/albayrak1.gif — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: http://www.yenisafak.com/images1/bos.gif — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: http://www.yenisafak.com/images1/solyuv.gif — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: http://www.yenisafak.com/images1/sagyuv.gif — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://www.yenisafak.com/arsiv/2001/temmuz/21/7457pol.jpg — Varlık yönlendirmesi kapsam dışında",
+        "Kaynak alınamadı: http://www.yenisafak.com/css/yenisafak.css — HTTP Error 404: Not Found"
+      ]
+    },
+    {
+      "version_id": "0209-saadet-tbmm-scope-v1",
+      "view_id": "02c00b3602758dba4cbe9c7e14c87cc4",
+      "local_assets": 2,
+      "limitations": [
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Cinzel/Cinzel-Regular.ttf — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Cinzel/Cinzel-Bold.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Lato/Lato-Light.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Lato/Lato-Regular.ttf — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Lato/Lato-Bold.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Inter/Inter-Light.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Inter/Inter-Regular.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Inter/Inter-Bold.ttf — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/RalewayFixed/rawline-300.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/RalewayFixed/rawline-400.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/fonts/RalewayFixed/rawline-400.svg",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/RalewayFixed/rawline-400.woff — Pasif varlık türü desteklenmiyor: application/font-woff",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/fonts/RalewayFixed/rawline-400.eot",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/RalewayFixed/rawline-500.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/RalewayFixed/rawline-700.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/Poppins/Poppins-Thin.ttf — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://tbmm.gov.tr/img/ataturk_header.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a",
+        "İlgisiz galeri/gezinme görseli alınmadı: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708",
+        "İlgisiz galeri/gezinme görseli alınmadı: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DDD'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a",
+        "İlgisiz galeri/gezinme görseli alınmadı: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DDD'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://tbmm.gov.tr/css/bootstrap_520/bootstrap.min.css",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://tbmm.gov.tr/css/fontawesome-all.min.css",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://tbmm.gov.tr/img/tbmm-logo.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/img/icon_language.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/img/icon_search.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/BrownRightArrowIcon.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/img/menu_search_icon.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_facebook.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_twitter.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_instagram.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_youtube.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_parlamentolar_arasi_iliskiler.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_kutuphane.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_anayasa.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_kanun_ve_kararlar.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_edilekce.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_bilgi_edinme.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/tbbm_siluet_footer.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/img/footer_asaga_ok.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_home_icon.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_tel_icon.png",
+        "İlgisiz galeri/gezinme görseli alınmadı: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_email_icon.png",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://tbmm.gov.tr/font-awesome/css/font-awesome.min.css",
+        "Yeni ilgili varlık denemesi16adresle sınırlandı: https://tbmm.gov.tr/vendor/datatables/custom.css"
+      ]
+    }
+  ],
+  "browser_screenshot_hashes": [
+    {
+      "name": "charter-1365.png",
+      "sha256": "2488660195c8d0cfaacb88076117db0eeb2e555978226932b3a5f157016135d8"
+    },
+    {
+      "name": "charter-360.png",
+      "sha256": "d49a7cd3c18c156f19c51219a9e3b0adb832c711e02a6c9c8656cd6f9f0bf9d0"
+    },
+    {
+      "name": "program-1365.png",
+      "sha256": "31f25ef56c94a15f5c1664436cbeebde81a46b85a96f041206fa909f78cc7e96"
+    },
+    {
+      "name": "program-360.png",
+      "sha256": "1f3e3d4a2e4488b816c49894209f0ea622682afecb9b9eddd696f25b12393dc5"
+    },
+    {
+      "name": "program-body-1365.png",
+      "sha256": "4bcd0cbb25469a74bafbbf7a51d4db5847e761d8fea33baacb46642dc1269c19"
+    },
+    {
+      "name": "program-body-360.png",
+      "sha256": "9c611383f74aacd3c3ea13db204e32c6eb782250d153eb4e75477d9f34bc018f"
+    },
+    {
+      "name": "registry-1365.png",
+      "sha256": "6c6c7d57d92248a3b1d9112e017c9eec431aceb51c062e3f731834f75306a9be"
+    },
+    {
+      "name": "registry-360.png",
+      "sha256": "6a25a132dff76e9427ddaf1bc6f8f84da1428f3527788f76d9aea48b81d3d1fd"
+    },
+    {
+      "name": "report-1365.png",
+      "sha256": "f812d2b3b04d6c077430480bb1bb5b276b8672de2d25dd49c4d6ecef24b01a0b"
+    },
+    {
+      "name": "report-360.png",
+      "sha256": "2de4d89b81d97517cb87a8a63741d7335d68f7ed201e660bee807aa45dcfc41f"
+    }
+  ],
+  "selected_pdf_page_image_hashes": [
+    {
+      "name": "old-charter-title.png",
+      "sha256": "d23a2ba1ce064c874b1719f93794a42cff91c9fa0cc342744d7c5176d05292c0"
+    },
+    {
+      "name": "charter-history.png",
+      "sha256": "03274f3d017245f3c13dabdd8fec545c4b0088fa0a12bfee3b39c3b5a1918ff5"
+    },
+    {
+      "name": "program-cover.png",
+      "sha256": "d19dc0a06787584b9ef6a0495165791e4d6422ef82350dc765c9ef15229d5ff3"
+    },
+    {
+      "name": "foundation.png",
+      "sha256": "a37dade38c05d8d7558a8e0aefa9215d9fdb62f8da34492fcdaad22762dcb346"
+    },
+    {
+      "name": "charter-governance.png",
+      "sha256": "239e714bee9b987ceada9162627e2c6346376f0887b200ea77843bbc690c1780"
+    },
+    {
+      "name": "charter-rights.png",
+      "sha256": "579f8c05472a871ceaef85335dce2502ba66467bf48ffa47cab6261fca62c42b"
+    },
+    {
+      "name": "charter-gik.png",
+      "sha256": "6684e999aa2d1f1d8b4c063beda5902763df1327f193e3c7046e400b86be006d"
+    }
+  ],
+  "source_reading": [
+    "Program kapağı03.11.2019;70sayfa tam PDF. Kapak, içindekiler ve seçilmiş amaç/politika pasajları okundu.",
+    "Modern tüzük25sayfa; üyelik/yönetim,2019değişiklik notu ve05.01.2020GİK125eki seçilmiş sayfalarda görsel ve metinle karşılaştırıldı.",
+    "Eski tüzük iç başlığı ANKARA2002/İKİNCİBASKI;75PDFsayfası ayrı arşiv.",
+    "TBMM Bülteni85sayfa16 kuruluş dilekçesi, ilk yönetim ve32FPkökenli milletvekili der; gazete51der. İki sayı tek değere indirgenmedi.",
+    "Ana siteHTML yalnız uygulama kabuğu. Yayıncı GETyanıtı siteadi=Saadet Partisi ve siteURL verir; kategoriJSONu yalnız dosya keşfinde tutuldu. Güncel PDFadresleri eski upload baytlarıyla aynı SHA256dır."
+  ],
+  "initial_candidate_checks": {
+    "dossier-initial": {
+      "argv": [
+        "dossier-check",
+        "--input",
+        "data/dossiers/02-saadet.json"
+      ],
+      "exit": 1,
+      "seconds": 74.64395904541016
+    },
+    "dossier-publisher": {
+      "argv": [
+        "dossier-check",
+        "--input",
+        "data/dossiers/02-saadet.json"
+      ],
+      "exit": 1,
+      "seconds": 78.32509160041809
+    },
+    "dossier-keys": {
+      "argv": [
+        "dossier-check",
+        "--input",
+        "data/dossiers/02-saadet.json"
+      ],
+      "exit": 1,
+      "seconds": 82.20240449905396
+    }
+  },
+  "input_corrections": "İlk adaylarda tam yayıncı adını taşımayan kategori JSONunun atfı ve iki sürüm ilişkisi id anahtarı reddedildi. Kategori yanıtı özgün bayt/keşif envanterinde korundu; kendi gövdesinde kurumadı/siteURL bulunan yayıncı kaydı ve tam PDFler kullanıldı. Eksikid anahtarları tamamlandı. Son girdi DOSSIER_INPUT_OK verdi. MIME, kaynak/kanıt/kimlik/hash denetimleri veya üretim kodu değiştirilmedi.",
+  "important_gaps": [
+    "Kuruluş dilekçesinin aslı ve ilk kongrenin tam tutanağı bu taramada bulunamadı. TBMM Bülteni ilk yönetimi, atıflı ajans haberi ilk kongreyi kaynaklar; asıl belgelerin yerine geçirilmez.",
+    "2002 ikinci baskı, 2019 değişiklik notu ve 2020 GİK eki edinildi; aradaki tüm tüzük nüshaları ve kabul/değişiklik tutanakları bulunamadı. Kesin bütün sürüm zinciri ve yürürlük bitişleri bilinmiyor.",
+    "3 Kasım 2019 tarihli tam program edinildi. Daha eski tam parti programı bu taramada bulunamadı; eski 2018 yükleme adresi güncel boş uygulama kabuğuna döndü. Seçim beyannamesi, parti programının önceki sürümü sayılmadı.",
+    "Kurucu milletvekili sayısındaki 32/51 farkı asıl liste olmadan doğrulanamadı.",
+    "Başkanlık/adres tarihsel başlangıcı ve belge dönemlerinin kesin bitişi bilinmiyor.",
+    "Söylem–uygulama ve gerçekleşmiş finansman/harcamalar sonraki fazlar için Henüz incelenmedi."
+  ],
+  "human_acceptance": false,
+  "public_publication": "Yalnız yerel immutable rapor; kamu yayını ve gh-pages değiştirilmedi."
+}
