@@ -220,10 +220,19 @@ def validate_dossier(data, party_id=None, stage='tracer'):
             raise ValueError('Kuruluş kaynağı başlığa bağlanmalı')
         if stage == 'complete':
             if not set(FIELDS[:5]).issubset({x['field'] for x in fs}): raise ValueError('Tam dosya için beş kart alanı gerekli')
-            if not set(HEADINGS).issubset({x['heading'] for x in data['research_state'] if x['party_id'] == party_id and x['state'] == 'reviewed'}): raise ValueError('Beş araştırma başlığı incelenmeli')
+            states = {x['heading']:x['state'] for x in data['research_state'] if x['party_id'] == party_id}
+            # Faz 2 belge/kimlik derlemesini tamamlar; uygulama ve mali inceleme
+            # sonraki fazlardadır. Çalışılmayan başlık için sahte girişim üretme.
+            if not set(HEADINGS).issubset(states) or any(states[h] != 'reviewed' for h in HEADINGS[:3]):
+                raise ValueError('Kuruluş, tüzük ve program incelenmeli; beş başlığın durumu gerekli')
+            if any(states[h] not in ('reviewed','not_researched') for h in HEADINGS[3:]):
+                raise ValueError('Sonraki faz başlığı henüz incelenmedi veya incelendi olmalı')
             for heading in HEADINGS:
                 relevant = [f for f in findings.values() if f['party_id'] == party_id and f['heading'] == heading]
                 gaps = [m for m in missing.values() if m['party_id'] == party_id and m['heading'] == heading]
+                if states[heading] == 'not_researched':
+                    if relevant or gaps: raise ValueError('İçerik veya girişimli eksik bulunan başlık incelenmemiş sayılamaz')
+                    continue
                 if not relevant and not gaps: raise ValueError('İncelenen başlık için bulgu veya girişimli eksik gerekli')
                 for f in relevant:
                     for ev in (e for e in evidence if e['finding_id'] == f['id']):
@@ -366,16 +375,26 @@ def make_delivery_receipt(release, party_id, previous=None, _seen=None):
     stage = delivery.get('stage')
     validate_phase_two(release, party_id, stage)
     data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+    documents = {d['id']:d for d in data['document']}
     fields = [x for x in data['dossier_field'] if x['party_id'] == party_id]
     sources = sorted({x['version_id'] for x in data['dossier_source'] if x['party_id'] == party_id})
     added = [f"{FIELD_LABELS[x['field']]}: {x['value']}" for x in fields if x['value'] is not None]
     if any(x['party_id'] == party_id and x['kind'] == 'foundation' for x in data['dossier_event']): added.append('Kaynaklı kuruluş kronolojisi ve sicil pasajına bağlantı')
     if manifest.get('renderer_version', 0) >= 10:
         added.append('Beş alanlı kimlik kartı, başlıklara göre kaynak künyeleri ve erişilebilir sürüm geçmişi')
+    if stage == 'complete':
+        for heading in HEADINGS[:3]:
+            count = sum(f['party_id'] == party_id and f['heading'] == heading and f['provenance'] == 'summary' for f in data['finding'])
+            added.append(f'{heading}: {count} kaynaklı özet/alıntı çifti')
     gaps = [f"{FIELD_LABELS[name]}: henüz incelenmedi" for name in FIELDS[:5] if not any(f['field'] == name for f in fields)]
     gaps += [f"{FIELD_LABELS[x['field']]}: {next(m['status'] + ' — ' + m['reason'] for m in data['missing'] if m['id'] == x['missing_id'])}" for x in fields if x['value'] is None]
     reviewed = {x['heading'] for x in data['research_state'] if x['party_id'] == party_id and x['state'] == 'reviewed'}
     gaps += [f"{heading}: {'araştırma tamamlanmadı' if any(f['party_id'] == party_id and f['heading'] == heading for f in data['finding']) else 'henüz incelenmedi'}" for heading in HEADINGS if heading not in reviewed]
+    if stage == 'complete':
+        resolved = {r['missing_id'] for r in data.get('missing_resolution', [])}
+        gaps += [f"{m['heading']}: {m['status']} — {m['reason']}" for m in data['missing'] if m['party_id'] == party_id and m['id'] not in resolved and not any(f['missing_id'] == m['id'] for f in fields)]
+        contexts = {c['version_id']:c for c in data['version_context']}
+        gaps += [f"{next(v['version_label'] or documents[v['document_id']]['title'] for v in data['document_version'] if v['id'] == vid)}: {contexts[vid]['date_unknown_reason']}" for vid in sources if contexts.get(vid,{}).get('date_precision') == 'unknown']
     if party_id == 'tip' and stage == 'tracer': gaps.append('Arşivli TİP tüzüğünün kesim tarihinde yürürlükteki sürüm olduğu doğrulanmadı; parti dosyası tamamlanmadı.')
     if not added or not gaps or not sources: raise ValueError('Teslim içeriği, kaynak veya önemli açıklar boş')
     if previous:

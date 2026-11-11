@@ -41,6 +41,22 @@ def add_tip_tracer(work):
 
 
 class DossierTracer(unittest.TestCase):
+    def test_complete_collection_keeps_later_research_explicitly_unexamined(self):
+        # Faz 2 kapsamı: ilk üç başlıkta girişimli belge sonucu; diğer iki
+        # başlıkta henüz çalışılmadı. Tam teslim araştırma yapılmış gibi görünmez.
+        data = {k:[] for k in ('finding','passage','document_version','document','event_date','finding_evidence','review','dossier_field','dossier_event','dossier_source','version_context','version_relation','dossier_identity_note','party_identity_revision','research_state','missing')}
+        for i, heading in enumerate(dosyalar.HEADINGS):
+            data['research_state'].append(dict(party_id='tip',heading=heading,state='reviewed' if i<3 else 'not_researched'))
+            if i<3:data['missing'].append(dict(id='gap-'+str(i),party_id='tip',heading=heading))
+        for field in dosyalar.FIELDS[:5]:
+            data['dossier_field'].append(dict(party_id='tip',field=field,value=None,finding_id=None,missing_id='gap-0',as_of=None,date_precision='unknown',date_unknown_reason='Testte alanın araştırma sonucu eksik.'))
+        self.assertTrue(dosyalar.validate_dossier(data,'tip','complete'))
+        data['research_state'][1]['state']='not_researched'
+        with self.assertRaises(ValueError):dosyalar.validate_dossier(data,'tip','complete')
+        data['research_state'][1]['state']='reviewed'
+        data['missing'].append(dict(id='fake-unexamined-gap',party_id='tip',heading=dosyalar.HEADINGS[3]))
+        with self.assertRaises(ValueError):dosyalar.validate_dossier(data,'tip','complete')
+
     def test_tip_report_exposes_identity_and_grouped_sources(self):
         data = json.loads((arsiv.DATA / 'releases' / arsiv.current() / 'records.json').read_text())
         from rapor import render_report

@@ -1,0 +1,2400 @@
+{
+  "schema_version": 1,
+  "party_id": "tip",
+  "method_version": 1,
+  "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+  "records": [
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "tip-registry-v1",
+        "kind": "registry",
+        "publisher": "Yargıtay Cumhuriyet Başsavcılığı",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://www.yargitaycb.gov.tr/sipar/208",
+        "basis": "https://www.yargitaycb.gov.tr/sipar/208 adresindeki arşivli sicil; ad/kısa ad/kuruluş satırları ve URL anahtarı birlikte okundu."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "tip-charter-v1",
+        "kind": "party_publication",
+        "publisher": "Türkiye İşçi Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tip.org.tr/tuzuk/",
+        "basis": "Parti adı ve yayın bağlamı arşivli HTML sayfasında; aynı tip.org.tr ana makinesindeki PDF parti yayınları bu açık yayıncı ilişkisiyle derlendi. Belge iddiaları partiye atfedilir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "tip-registry-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Sicil sayfası kuruluş gününü verir; kendi güncelleme tarihini ve diğer alanların geçerlilik başlangıcını belirtmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "tip-charter-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "10 Kasım 2026 yakalamasındaki parti tüzüğü sayfası; belge kabul/değişiklik tarihi ve yürürlük aralığı sayfada belirtilmemiştir.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "version_id": "tip-charter-v1",
+        "reason": "Önceki HTML yakalaması değişmeden tüzük sürüm geçmişinde korunur."
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://tip.org.tr/tuzuk/",
+        "final_url": "https://tip.org.tr/tuzuk/",
+        "accessed_at": "2026-11-11T16:30:01.632426+00:00",
+        "verified_at": "2026-11-11T16:30:01.632426+00:00",
+        "mime": "text/html",
+        "sha256": "3618e6ebefa371e469d2d34b4c92cacf479ed8bff6da34cdc21bd1dab2a4b28c",
+        "original_path": "objects/3618e6ebefa371e469d2d34b4c92cacf479ed8bff6da34cdc21bd1dab2a4b28c/original.html.bin",
+        "readable_path": "objects/3618e6ebefa371e469d2d34b4c92cacf479ed8bff6da34cdc21bd1dab2a4b28c/readable.html",
+        "id": "0203-tip-charter-v1",
+        "document_id": "tip-charter",
+        "document_date": null,
+        "version_label": "11 Kasım 2026 HTML yakalaması; belge sürümü belirtilmemiş",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Sayfada/kopyada kesin yayın, kabul veya değişiklik günü belirtilmiyor; URL dizini belge tarihi sayılmadı."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0203-tip-charter-v1",
+        "kind": "party_publication",
+        "publisher": "Türkiye İşçi Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tip.org.tr/tuzuk/",
+        "basis": "Parti adı ve yayın bağlamı arşivli HTML sayfasında; aynı tip.org.tr ana makinesindeki PDF parti yayınları bu açık yayıncı ilişkisiyle derlendi. Belge iddiaları partiye atfedilir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0203-tip-charter-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belge/olay tarihi bilindiğinde ayrıca kaydedilmiştir; yayın, kabul/değişiklik tarihi ve geçerlilik aralığı açıklanmayan alanlar erişim tarihinden türetilmedi.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "version_id": "0203-tip-charter-v1",
+        "reason": "Partinin kendi yayını; belge içeriği ve erişilebilen kopya geçmişi için."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0203-tip-lead-charter",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "topic_id": "tip-tuzuk-surum",
+        "url": "https://tip.org.tr/tuzuk/",
+        "normalized_url": "https://tip.org.tr/tuzuk/",
+        "relevance_reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-access-charter",
+        "lead_id": "0203-tip-lead-charter",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "topic_id": "tip-tuzuk-surum",
+        "type": "access",
+        "query": "https://tip.org.tr/tuzuk/",
+        "attempted_at": "2026-11-11T16:30:01.632426+00:00",
+        "result": "examined",
+        "reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "source_version_id": "0203-tip-charter-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0203-tip-program",
+        "party_id": "tip",
+        "title": "Türkiye İşçi Partisi — Parti Programı",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://tip.org.tr/parti-programi",
+        "final_url": "https://tip.org.tr/parti-programi",
+        "accessed_at": "2026-11-11T16:30:02.403919+00:00",
+        "verified_at": "2026-11-11T16:30:02.403919+00:00",
+        "mime": "text/html",
+        "sha256": "6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0",
+        "original_path": "objects/6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0/original.html.bin",
+        "readable_path": "objects/6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0/readable.html",
+        "id": "0203-tip-program-v1",
+        "document_id": "0203-tip-program",
+        "document_date": null,
+        "version_label": "HTML parti programı; belge sürümü belirtilmemiş",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Sayfada/kopyada kesin yayın, kabul veya değişiklik günü belirtilmiyor; URL dizini belge tarihi sayılmadı."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0203-tip-program-v1",
+        "kind": "party_publication",
+        "publisher": "Türkiye İşçi Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tip.org.tr/parti-programi",
+        "basis": "Parti adı ve yayın bağlamı arşivli HTML sayfasında; aynı tip.org.tr ana makinesindeki PDF parti yayınları bu açık yayıncı ilişkisiyle derlendi. Belge iddiaları partiye atfedilir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0203-tip-program-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "HTML programının kabul/değişiklik günü ve yürürlük aralığı belirtilmiyor. 2018 yayımı için parti yayınında iz bulundu; eski tam program metni bu taramada elde edilmedi.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Program",
+        "version_id": "0203-tip-program-v1",
+        "reason": "Partinin kendi yayını; belge içeriği ve erişilebilen kopya geçmişi için."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0203-tip-lead-program",
+        "party_id": "tip",
+        "heading": "Program",
+        "topic_id": "tip-program-surum",
+        "url": "https://tip.org.tr/parti-programi",
+        "normalized_url": "https://tip.org.tr/parti-programi",
+        "relevance_reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-access-program",
+        "lead_id": "0203-tip-lead-program",
+        "party_id": "tip",
+        "heading": "Program",
+        "topic_id": "tip-program-surum",
+        "type": "access",
+        "query": "https://tip.org.tr/parti-programi",
+        "attempted_at": "2026-11-11T16:30:02.403919+00:00",
+        "result": "examined",
+        "reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "source_version_id": "0203-tip-program-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0203-tip-history",
+        "party_id": "tip",
+        "title": "Türkiye İşçi Partisi — İlerici Kamuoyuna",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://tip.org.tr/parti-aciklamalari/ilerici-kamuoyuna/",
+        "final_url": "https://tip.org.tr/parti-aciklamalari/ilerici-kamuoyuna/",
+        "accessed_at": "2026-11-11T16:30:03.013369+00:00",
+        "verified_at": "2026-11-11T16:30:03.013369+00:00",
+        "mime": "text/html",
+        "sha256": "e29e62822a826b133d09c1afe4d6a7449156e4f427e6a661f9ab7f91c2968147",
+        "original_path": "objects/e29e62822a826b133d09c1afe4d6a7449156e4f427e6a661f9ab7f91c2968147/original.html.bin",
+        "readable_path": "objects/e29e62822a826b133d09c1afe4d6a7449156e4f427e6a661f9ab7f91c2968147/readable.html",
+        "id": "0203-tip-history-v1",
+        "document_id": "0203-tip-history",
+        "document_date": "2018-10-06",
+        "version_label": "6 Ekim 2018 parti açıklaması",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0203-tip-history-v1",
+        "kind": "party_publication",
+        "publisher": "Türkiye İşçi Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2018-10-06",
+        "date_precision": "day",
+        "public_url": "https://tip.org.tr/parti-aciklamalari/ilerici-kamuoyuna/",
+        "basis": "Parti adı ve yayın bağlamı arşivli HTML sayfasında; aynı tip.org.tr ana makinesindeki PDF parti yayınları bu açık yayıncı ilişkisiyle derlendi. Belge iddiaları partiye atfedilir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0203-tip-history-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belge/olay tarihi bilindiğinde ayrıca kaydedilmiştir; yayın, kabul/değişiklik tarihi ve geçerlilik aralığı açıklanmayan alanlar erişim tarihinden türetilmedi.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "version_id": "0203-tip-history-v1",
+        "reason": "Partinin kendi yayını; kuruluş anlatımı ve ilk örgütlenme adımları için."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0203-tip-lead-history",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "url": "https://tip.org.tr/parti-aciklamalari/ilerici-kamuoyuna/",
+        "normalized_url": "https://tip.org.tr/parti-aciklamalari/ilerici-kamuoyuna/",
+        "relevance_reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-access-history",
+        "lead_id": "0203-tip-lead-history",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "type": "access",
+        "query": "https://tip.org.tr/parti-aciklamalari/ilerici-kamuoyuna/",
+        "attempted_at": "2026-11-11T16:30:03.013369+00:00",
+        "result": "examined",
+        "reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "source_version_id": "0203-tip-history-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0203-tip-chair",
+        "party_id": "tip",
+        "title": "Türkiye İşçi Partisi — Genel Başkan Erkan Baş",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://tip.org.tr/genel-baskan",
+        "final_url": "https://tip.org.tr/genel-baskan",
+        "accessed_at": "2026-11-11T16:30:03.267072+00:00",
+        "verified_at": "2026-11-11T16:30:03.267072+00:00",
+        "mime": "text/html",
+        "sha256": "edd3c5f662889a172f393478ede78c4b0082ca9d01330656a999122e98a8a3d2",
+        "original_path": "objects/edd3c5f662889a172f393478ede78c4b0082ca9d01330656a999122e98a8a3d2/original.html.bin",
+        "readable_path": "objects/edd3c5f662889a172f393478ede78c4b0082ca9d01330656a999122e98a8a3d2/readable.html",
+        "id": "0203-tip-chair-v1",
+        "document_id": "0203-tip-chair",
+        "document_date": null,
+        "version_label": "Parti genel başkan tanıtımı; yayın tarihi belirtilmemiş",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Sayfada/kopyada kesin yayın, kabul veya değişiklik günü belirtilmiyor; URL dizini belge tarihi sayılmadı."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0203-tip-chair-v1",
+        "kind": "party_publication",
+        "publisher": "Türkiye İşçi Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tip.org.tr/genel-baskan",
+        "basis": "Parti adı ve yayın bağlamı arşivli HTML sayfasında; aynı tip.org.tr ana makinesindeki PDF parti yayınları bu açık yayıncı ilişkisiyle derlendi. Belge iddiaları partiye atfedilir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0203-tip-chair-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Belge/olay tarihi bilindiğinde ayrıca kaydedilmiştir; yayın, kabul/değişiklik tarihi ve geçerlilik aralığı açıklanmayan alanlar erişim tarihinden türetilmedi.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "version_id": "0203-tip-chair-v1",
+        "reason": "Partinin kendi yayını; kuruluş anlatımı ve ilk örgütlenme adımları için."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0203-tip-lead-chair",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "url": "https://tip.org.tr/genel-baskan",
+        "normalized_url": "https://tip.org.tr/genel-baskan",
+        "relevance_reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-access-chair",
+        "lead_id": "0203-tip-lead-chair",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "type": "access",
+        "query": "https://tip.org.tr/genel-baskan",
+        "attempted_at": "2026-11-11T16:30:03.267072+00:00",
+        "result": "examined",
+        "reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "source_version_id": "0203-tip-chair-v1"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "final_url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "accessed_at": "2026-11-11T16:30:04.230527+00:00",
+        "verified_at": "2026-11-11T16:30:04.230527+00:00",
+        "mime": "application/pdf",
+        "sha256": "e86237895eda1cec2e66ac388ce7b9cd7096e86dfc9f1cccdd93ab1a298e4a60",
+        "original_path": "objects/e86237895eda1cec2e66ac388ce7b9cd7096e86dfc9f1cccdd93ab1a298e4a60/original.pdf",
+        "readable_path": "objects/e86237895eda1cec2e66ac388ce7b9cd7096e86dfc9f1cccdd93ab1a298e4a60/readable.html",
+        "id": "0203-tip-charter2022-v1",
+        "document_id": "tip-charter",
+        "document_date": null,
+        "version_label": "2022 dosya adlı PDF; kabul tarihi belirtilmemiş",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Sayfada/kopyada kesin yayın, kabul veya değişiklik günü belirtilmiyor; URL dizini belge tarihi sayılmadı."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0203-tip-charter2022-v1",
+        "kind": "party_publication",
+        "publisher": "Türkiye İşçi Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "basis": "Parti adı ve yayın bağlamı arşivli HTML sayfasında; aynı tip.org.tr ana makinesindeki PDF parti yayınları bu açık yayıncı ilişkisiyle derlendi. Belge iddiaları partiye atfedilir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0203-tip-charter2022-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "2022 dosya adlı kopyanın kapak başlığı görsel olarak okundu. Kesin kabul tarihi ve HTML metniyle yürürlük ilişkisi belirtilmemiştir.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "version_id": "0203-tip-charter2022-v1",
+        "reason": "Partinin kendi yayını; belge içeriği ve erişilebilen kopya geçmişi için."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0203-tip-lead-charter2022",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "topic_id": "tip-tuzuk-surum",
+        "url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "normalized_url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "relevance_reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-access-charter2022",
+        "lead_id": "0203-tip-lead-charter2022",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "topic_id": "tip-tuzuk-surum",
+        "type": "access",
+        "query": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "attempted_at": "2026-11-11T16:30:04.230527+00:00",
+        "result": "examined",
+        "reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "source_version_id": "0203-tip-charter2022-v1"
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0203-tip-cark2018",
+        "party_id": "tip",
+        "title": "ÇarkBaşak — Kasım 2018, Sayı 1",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "original_url": "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi1_201811.pdf",
+        "final_url": "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi1_201811.pdf",
+        "accessed_at": "2026-11-11T16:30:05.357435+00:00",
+        "verified_at": "2026-11-11T16:30:05.357435+00:00",
+        "mime": "application/pdf",
+        "sha256": "4b09653a46a18494d8597f1d53ac6297d5294eb6345d78d77fd9615de453692e",
+        "original_path": "objects/4b09653a46a18494d8597f1d53ac6297d5294eb6345d78d77fd9615de453692e/original.pdf",
+        "readable_path": "objects/4b09653a46a18494d8597f1d53ac6297d5294eb6345d78d77fd9615de453692e/readable.html",
+        "id": "0203-tip-cark2018-v1",
+        "document_id": "0203-tip-cark2018",
+        "document_date": null,
+        "version_label": "Kasım 2018, Sayı 1 (gün belirtilmemiş)",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Yayının kapak tarihi Kasım 2018; kesin gün belirtilmiyor."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0203-tip-cark2018-v1",
+        "kind": "party_publication",
+        "publisher": "Türkiye İşçi Partisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi1_201811.pdf",
+        "basis": "Parti adı ve yayın bağlamı arşivli HTML sayfasında; aynı tip.org.tr ana makinesindeki PDF parti yayınları bu açık yayıncı ilişkisiyle derlendi. Belge iddiaları partiye atfedilir."
+      }
+    },
+    {
+      "kind": "version_context",
+      "values": {
+        "version_id": "0203-tip-cark2018-v1",
+        "period_start": null,
+        "period_end": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kasım 2018 tarihli ilk sayı; program ve tüzüklerin dağıtıldığını bildirir, bu metinlerin hangi tarihe kadar yürürlükte kaldığını belirtmez.",
+        "passage_id": null,
+        "explanation_finding_id": null
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "version_id": "0203-tip-cark2018-v1",
+        "reason": "Partinin kendi yayını; kuruluş anlatımı ve ilk örgütlenme adımları için."
+      }
+    },
+    {
+      "kind": "lead",
+      "values": {
+        "id": "0203-tip-lead-cark2018",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "url": "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi1_201811.pdf",
+        "normalized_url": "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi1_201811.pdf",
+        "relevance_reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "status": "pending"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-access-cark2018",
+        "lead_id": "0203-tip-lead-cark2018",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "type": "access",
+        "query": "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi1_201811.pdf",
+        "attempted_at": "2026-11-11T16:30:05.357435+00:00",
+        "result": "examined",
+        "reason": "Gerçek kaynak URL’sinden özgün baytlar alındı; başlık, tarih ve ilgili içerik okundu.",
+        "source_version_id": "0203-tip-cark2018-v1"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0203-tip-charter-v1",
+        "view_id": "fdc0c4502b82cd65742600203563fd7e",
+        "format_version": 1,
+        "source_sha256": "3618e6ebefa371e469d2d34b4c92cacf479ed8bff6da34cdc21bd1dab2a4b28c",
+        "index_path": "views/fdc0c4502b82cd65742600203563fd7e/index.html",
+        "manifest_path": "views/fdc0c4502b82cd65742600203563fd7e/manifest.json",
+        "manifest_sha256": "78270f3d67805181fd11910c24e525cf1db641f8d5b32a7f1c4fcb10b3b3f100"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0203-tip-program-v1",
+        "view_id": "6e8fa3b952a87c0699773b16d8c9bc26",
+        "format_version": 1,
+        "source_sha256": "6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0",
+        "index_path": "views/6e8fa3b952a87c0699773b16d8c9bc26/index.html",
+        "manifest_path": "views/6e8fa3b952a87c0699773b16d8c9bc26/manifest.json",
+        "manifest_sha256": "e0f2ab79f77d90fa76aaf5ba9c27d46f90de8fb8947c31ac7cf47270ecc90e71"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0203-tip-history-v1",
+        "view_id": "d218360caed02a580312d1c4d005b20a",
+        "format_version": 1,
+        "source_sha256": "e29e62822a826b133d09c1afe4d6a7449156e4f427e6a661f9ab7f91c2968147",
+        "index_path": "views/d218360caed02a580312d1c4d005b20a/index.html",
+        "manifest_path": "views/d218360caed02a580312d1c4d005b20a/manifest.json",
+        "manifest_sha256": "eaa4849a8b67025fd389f3f5b65ff5bf60e4d6362fcbfcbc912bb4beaa3aa1b2"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0203-tip-chair-v1",
+        "view_id": "f629fb908aeca6106c3786907a3e5bf7",
+        "format_version": 1,
+        "source_sha256": "edd3c5f662889a172f393478ede78c4b0082ca9d01330656a999122e98a8a3d2",
+        "index_path": "views/f629fb908aeca6106c3786907a3e5bf7/index.html",
+        "manifest_path": "views/f629fb908aeca6106c3786907a3e5bf7/manifest.json",
+        "manifest_sha256": "7d9c83aaaf8f1cfbd406aedf488568b00992b10ff5d8225ff0e3e0b0233eb264"
+      }
+    },
+    {
+      "kind": "dossier_source",
+      "values": {
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "version_id": "0203-tip-charter-v1",
+        "reason": "Resmî site kartı için arşivli parti yayınının yayıncı/URL ilişkisi."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-legal",
+        "version_id": "tip-registry-v1",
+        "exact": "TÜRKİYE İŞÇİ PARTİSİ",
+        "prefix": null,
+        "suffix": null,
+        "section": "Ad ve sicil adresi",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-legal-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-legal",
+        "text": "Yargıtay sicilinde resmî ad TÜRKİYE İŞÇİ PARTİSİ olarak kayıtlıdır; yargitay-208, /sipar/208 adresinin bu arşivde kullanılan sicil anahtarıdır.",
+        "provenance": "summary",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-legal-summary",
+        "passage_id": "0203-tip-legal",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-legal-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-legal-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-legal-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-legal",
+        "text": "TÜRKİYE İŞÇİ PARTİSİ",
+        "provenance": "quote",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-legal-quote",
+        "passage_id": "0203-tip-legal",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-legal-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-legal-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0203-tip-field-legal_name",
+        "party_id": "tip",
+        "field": "legal_name",
+        "value": "TÜRKİYE İŞÇİ PARTİSİ",
+        "finding_id": "0203-tip-legal-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak bu bilginin geçerli olduğu kesin günü belirtmiyor; erişim tarihi tarihsel geçerlilik günü yapılmadı."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0203-tip-field-registry_key",
+        "party_id": "tip",
+        "field": "registry_key",
+        "value": "yargitay-208",
+        "finding_id": "0203-tip-legal-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak bu bilginin geçerli olduğu kesin günü belirtmiyor; erişim tarihi tarihsel geçerlilik günü yapılmadı."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-abbreviation",
+        "version_id": "tip-registry-v1",
+        "exact": "TİP",
+        "prefix": null,
+        "suffix": null,
+        "section": "Kısa Ad",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-abbreviation-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-abbreviation",
+        "text": "Sicilin kısa ad alanında TİP yazmaktadır.",
+        "provenance": "summary",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-abbreviation-summary",
+        "passage_id": "0203-tip-abbreviation",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-abbreviation-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-abbreviation-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-abbreviation-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-abbreviation",
+        "text": "TİP",
+        "provenance": "quote",
+        "epistemic_type": "registry"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-abbreviation-quote",
+        "passage_id": "0203-tip-abbreviation",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-abbreviation-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-abbreviation-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0203-tip-field-abbreviation",
+        "party_id": "tip",
+        "field": "abbreviation",
+        "value": "TİP",
+        "finding_id": "0203-tip-abbreviation-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak bu bilginin geçerli olduğu kesin günü belirtmiyor; erişim tarihi tarihsel geçerlilik günü yapılmadı."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-site",
+        "version_id": "0203-tip-charter-v1",
+        "exact": "Türkiye İşçi Partisi",
+        "prefix": null,
+        "suffix": null,
+        "section": "Sayfa başlığı/yayıncı",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-site-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-site",
+        "text": "Türkiye İşçi Partisi, tüzük ve programını https://tip.org.tr üzerinden yayımlar; bu adres yayıncı ilişkisine dayanarak resmî site kartında kullanılır.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-site-summary",
+        "passage_id": "0203-tip-site",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-site-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-site-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-site-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-site",
+        "text": "Türkiye İşçi Partisi",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-site-quote",
+        "passage_id": "0203-tip-site",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-site-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-site-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0203-tip-field-official_site",
+        "party_id": "tip",
+        "field": "official_site",
+        "value": "https://tip.org.tr",
+        "finding_id": "0203-tip-site-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak bu bilginin geçerli olduğu kesin günü belirtmiyor; erişim tarihi tarihsel geçerlilik günü yapılmadı."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-chair",
+        "version_id": "0203-tip-chair-v1",
+        "exact": "kurucu genel başkanı seçilmiştir.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Genel başkan biyografisi",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-chair-context",
+        "version_id": "0203-tip-chair-v1",
+        "exact": "2017’de Türkiye İşçi Partisi’nin yeniden kuruluş sürecinde aktif rol oynamış ve partinin kurucu genel başkanı seçilmiştir.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Genel başkan biyografisi",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-chair-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-chair",
+        "text": "Parti, genel başkan tanıtımında Erkan Baş’ın 2017 kuruluş sürecinde yer aldığını ve kurucu genel başkan seçildiğini anlatır. Seçimin gün ve ayı belirtilmez.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-chair-summary",
+        "passage_id": "0203-tip-chair",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-chair-summary",
+        "passage_id": "0203-tip-chair-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-chair-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-chair-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-chair-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-chair",
+        "text": "kurucu genel başkanı seçilmiştir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-chair-quote",
+        "passage_id": "0203-tip-chair",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-chair-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-chair-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0203-tip-field-chairperson",
+        "party_id": "tip",
+        "field": "chairperson",
+        "value": "Erkan Baş",
+        "finding_id": "0203-tip-chair-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak bu bilginin geçerli olduğu kesin günü belirtmiyor; erişim tarihi tarihsel geçerlilik günü yapılmadı."
+      }
+    },
+    {
+      "kind": "event_date",
+      "values": {
+        "id": "0203-tip-first-management-date",
+        "party_id": "tip",
+        "passage_id": "0203-tip-chair",
+        "event_at": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Parti biyografisinde yıl 2017; seçim gün ve ayı verilmediği için kesin gün üretilmedi.",
+        "scope_status": "uncertain"
+      }
+    },
+    {
+      "kind": "dossier_event",
+      "values": {
+        "id": "0203-tip-first-management-event",
+        "party_id": "tip",
+        "kind": "first_management",
+        "event_date_id": "0203-tip-first-management-date",
+        "summary_finding_id": "0203-tip-chair-summary"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-headquarters",
+        "version_id": "0203-tip-chair-v1",
+        "exact": "Kocatepe Mah. Selanik Cad. No:41/7",
+        "prefix": null,
+        "suffix": null,
+        "section": "Sayfa altı iletişim",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-headquarters-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-headquarters",
+        "text": "Parti sitesinin iletişim bölümünde genel merkez adresi Kocatepe Mah. Selanik Cad. No:41/7, Çankaya / ANKARA olarak yayımlanır; adresin geçerlilik başlangıcı belirtilmez.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-headquarters-summary",
+        "passage_id": "0203-tip-headquarters",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-headquarters-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-headquarters-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-headquarters-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-headquarters",
+        "text": "Kocatepe Mah. Selanik Cad. No:41/7",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-headquarters-quote",
+        "passage_id": "0203-tip-headquarters",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-headquarters-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-headquarters-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "dossier_field",
+      "values": {
+        "id": "0203-tip-field-headquarters",
+        "party_id": "tip",
+        "field": "headquarters",
+        "value": "Kocatepe Mah. Selanik Cad. No:41/7",
+        "finding_id": "0203-tip-headquarters-summary",
+        "missing_id": null,
+        "as_of": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynak bu bilginin geçerli olduğu kesin günü belirtmiyor; erişim tarihi tarihsel geçerlilik günü yapılmadı."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-why-founded",
+        "version_id": "0203-tip-history-v1",
+        "exact": "Gel Kardeşim!",
+        "prefix": null,
+        "suffix": null,
+        "section": "İlerici Kamuoyuna — kuruluş çağrısı",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-why-founded-context",
+        "version_id": "0203-tip-history-v1",
+        "exact": "Türkiye İşçi Partisi’nin kuruluş çalışmaları ülkemizin dört bir yanına yayılan ve hem tartışma hem de örgütlenme faaliyeti yürüten kurucu meclisler eliyle sürdürüldü.",
+        "prefix": null,
+        "suffix": null,
+        "section": "İlerici Kamuoyuna — kuruluş çağrısı",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-why-founded-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-why-founded",
+        "text": "TİP, 6 Ekim 2018 açıklamasında kuruluş amacını işçi sınıfının siyasal temsilini ve örgütlü mücadelesini güçlendirmek olarak anlatır; farklı sosyalist gelenekleri, işçileri, gençleri ve aydınları “Gel Kardeşim!” çağrısında buluşturduğunu söyler.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-why-founded-summary",
+        "passage_id": "0203-tip-why-founded",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-why-founded-summary",
+        "passage_id": "0203-tip-why-founded-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-why-founded-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-why-founded-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-why-founded-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-why-founded",
+        "text": "Gel Kardeşim!",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-why-founded-quote",
+        "passage_id": "0203-tip-why-founded",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-why-founded-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-why-founded-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-founding-steps",
+        "version_id": "0203-tip-history-v1",
+        "exact": "Kuruluş Konferansı gerçekleştirilmiştir.",
+        "prefix": null,
+        "suffix": null,
+        "section": "İlerici Kamuoyuna — kuruluş adımları",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-founding-steps-context",
+        "version_id": "0203-tip-history-v1",
+        "exact": "Resmi kuruluş işlemleri kimi engelleme girişimlerine karşın aşılmış, kurucu meclislerden seçilmiş delegelerle Kuruluş Konferansı gerçekleştirilmiştir.",
+        "prefix": null,
+        "suffix": null,
+        "section": "İlerici Kamuoyuna — kuruluş adımları",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-founding-steps-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-founding-steps",
+        "text": "Aynı açıklama, resmî işlemlerin tamamlandığını ve kurucu meclislerden seçilen delegelerle Kuruluş Konferansı yapıldığını bildirir. İlk Büyük Kongre için hukuki hazırlık yapıldığı ayrıca söylenir; bu iki toplantı aynı olay sayılmaz.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-founding-steps-summary",
+        "passage_id": "0203-tip-founding-steps",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-founding-steps-summary",
+        "passage_id": "0203-tip-founding-steps-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-founding-steps-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-founding-steps-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-founding-steps-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-founding-steps",
+        "text": "Kuruluş Konferansı gerçekleştirilmiştir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-founding-steps-quote",
+        "passage_id": "0203-tip-founding-steps",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-founding-steps-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-founding-steps-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-early-documents",
+        "version_id": "0203-tip-cark2018-v1",
+        "exact": "21 Ekim",
+        "prefix": null,
+        "suffix": null,
+        "section": "Kasım 2018 Sayı 1 — belge yayımı",
+        "article": null,
+        "pdf_page_index": 1,
+        "printed_page": "2"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-early-documents-context",
+        "version_id": "0203-tip-cark2018-v1",
+        "exact": "Partimizin kuruluş sürecinin en önemli aya-\nğı olan Program ve Tüzük metinleri, Türkiye\nKonferansı’nda onaylandıktan sonra son hali-\nni aldı ve 21 Ekim günü düzenlenen Kuruluş\nEtkinliğimiz sırasında tüm üye ve dostlarımıza\nulaştırıldı.\n",
+        "prefix": null,
+        "suffix": null,
+        "section": "Kasım 2018 Sayı 1 — belge yayımı",
+        "article": null,
+        "pdf_page_index": 1,
+        "printed_page": "2"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-early-documents-summary",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-early-documents",
+        "text": "ÇarkBaşak’ın Kasım 2018 ilk sayısı, program ve tüzüğün Türkiye Konferansı’nda onaylandıktan sonra 21 Ekim kuruluş etkinliğinde dağıtıldığını anlatır. Bu, kuruluş tarihini değiştiren bir sicil kaydı değildir.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-early-documents-summary",
+        "passage_id": "0203-tip-early-documents",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-early-documents-summary",
+        "passage_id": "0203-tip-early-documents-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-early-documents-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-early-documents-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-early-documents-quote",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "pair_id": "0203-tip-early-documents",
+        "text": "21 Ekim",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-early-documents-quote",
+        "passage_id": "0203-tip-early-documents",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-early-documents-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-early-documents-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-draft-cover",
+        "version_id": "0203-tip-charter2022-v1",
+        "exact": "TÜRKİYE İŞÇİ PARTİSİ\nTÜZÜĞÜ",
+        "prefix": null,
+        "suffix": null,
+        "section": "Kapak başlığı",
+        "article": null,
+        "pdf_page_index": 0,
+        "printed_page": "1"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0203-tip-draft-cover",
+        "checked_at": "2026-11-11T16:41:55.167894+00:00",
+        "method": "Poppler/Cairo ile özgün PDF ilk sayfası PNG olarak çizildi ve görsel olarak okundu.",
+        "reason": "PDF font eşlemesi başlıktaki Türkçe harfleri metin çıkarımında kaybediyor; başlık özgün sayfa görüntüsünden okundu."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-membership",
+        "version_id": "0203-tip-charter-v1",
+        "exact": "aday olmak ve oy kullanmak",
+        "prefix": null,
+        "suffix": null,
+        "section": "Üyelerin Hak ve Görevleri",
+        "article": "2.1, 2.8",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-membership-context",
+        "version_id": "0203-tip-charter-v1",
+        "exact": "Parti programını ve tüzüğünü benimseyen, bir ilçe örgütüne bağlı olmayı ve parti   aidatlarını düzenli olarak ödemeyi kabul eden herkes parti üyesi olmak için başvurabilir.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Üyelerin Hak ve Görevleri",
+        "article": "2.1, 2.8",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-membership-summary",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "pair_id": "0203-tip-membership",
+        "text": "Tüzük, üyelik için programı ve tüzüğü benimsemeyi, bir ilçe örgütüne bağlılığı ve aidatı kabul etmeyi ister. Üyeye görüş, öneri, itiraz ve eleştiri yapma; aday olma ve oy kullanma hakları tanır.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-membership-summary",
+        "passage_id": "0203-tip-membership",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-membership-summary",
+        "passage_id": "0203-tip-membership-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-membership-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-membership-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-membership-quote",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "pair_id": "0203-tip-membership",
+        "text": "aday olmak ve oy kullanmak",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-membership-quote",
+        "passage_id": "0203-tip-membership",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-membership-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-membership-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-congress",
+        "version_id": "0203-tip-charter-v1",
+        "exact": "3 (üç) yılda bir",
+        "prefix": null,
+        "suffix": null,
+        "section": "Parti Kongresi",
+        "article": "3.3",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-congress-context",
+        "version_id": "0203-tip-charter-v1",
+        "exact": "Genel Başkanı, Parti Meclisini (PM) ve Merkez Disiplin Kurulunu (MDK) seçer.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Parti Kongresi",
+        "article": "3.3",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-congress-summary",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "pair_id": "0203-tip-congress",
+        "text": "Tüzüğe göre üç yılda bir toplanan Kongre en yüksek karar organıdır; program ve tüzüğü değiştirmeye, genel başkanı, Parti Meclisini ve Merkez Disiplin Kurulunu seçmeye yetkilidir.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-congress-summary",
+        "passage_id": "0203-tip-congress",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-congress-summary",
+        "passage_id": "0203-tip-congress-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-congress-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-congress-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-congress-quote",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "pair_id": "0203-tip-congress",
+        "text": "3 (üç) yılda bir",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-congress-quote",
+        "passage_id": "0203-tip-congress",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-congress-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-congress-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-internal-expression",
+        "version_id": "0203-tip-charter-v1",
+        "exact": "bir üst organa itiraz edebilir.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Ortak hükümler — demokratik merkeziyetçilik",
+        "article": "4",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-internal-expression-context",
+        "version_id": "0203-tip-charter-v1",
+        "exact": "Üyeler bağlı oldukları parti organlarında her tür tartışmayı yapabilirler.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Ortak hükümler — demokratik merkeziyetçilik",
+        "article": "4",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-internal-expression-summary",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "pair_id": "0203-tip-internal-expression",
+        "text": "Metin, parti organlarında tartışmayı ve bir üst organa itirazı düzenler; örgütün tamamını ilgilendiren tartışmalar için üyelere açık iç yayını gösterir. Kararlar alındıktan sonra alt kurulların üst kurullara uyması demokratik merkeziyetçilik çerçevesinde tanımlanır.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-internal-expression-summary",
+        "passage_id": "0203-tip-internal-expression",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-internal-expression-summary",
+        "passage_id": "0203-tip-internal-expression-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-internal-expression-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-internal-expression-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-internal-expression-quote",
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "pair_id": "0203-tip-internal-expression",
+        "text": "bir üst organa itiraz edebilir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-internal-expression-quote",
+        "passage_id": "0203-tip-internal-expression",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-internal-expression-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-internal-expression-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-socialism",
+        "version_id": "0203-tip-program-v1",
+        "exact": "merkezi, planlı ve kamucu",
+        "prefix": null,
+        "suffix": null,
+        "section": "Türkiye’nin kurtuluşu sosyalizmde",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-socialism-context",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Dolayısıyla, Türkiye’nin toplumsal kurtuluşu, ancak sosyalist bir siyasal devrimle ve bu devrimin ardından üretim araçlarının özel mülkiyetine son verilmesiyle, merkezi, planlı ve kamucu bir ekonomiyle, yani sosyalizme geçişle mümkündür.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Türkiye’nin kurtuluşu sosyalizmde",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-socialism-summary",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-socialism",
+        "text": "TİP programı, toplumsal kurtuluş hedefini üretim araçlarında özel mülkiyetin kaldırılması ve merkezi, planlı, kamucu ekonomiyle kurduğu sosyalizm anlayışına bağlar.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-socialism-summary",
+        "passage_id": "0203-tip-socialism",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-socialism-summary",
+        "passage_id": "0203-tip-socialism-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-socialism-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-socialism-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-socialism-quote",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-socialism",
+        "text": "merkezi, planlı ve kamucu",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-socialism-quote",
+        "passage_id": "0203-tip-socialism",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-socialism-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-socialism-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-social-rights",
+        "version_id": "0203-tip-program-v1",
+        "exact": "ücretsiz eğitim, sağlık ve barınma",
+        "prefix": null,
+        "suffix": null,
+        "section": "Türkiye’nin devrimi halkçı bir karakter taşıyacaktır",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-social-rights-context",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Türkiye İşçi Partisi, emekçilerin çalışma saatleri, istihdam, ücretsiz eğitim, sağlık ve barınma hakkındaki talepleri ile sosyalizm mücadelesini birbirine bağlayan bir yaklaşımla mücadele eder.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Türkiye’nin devrimi halkçı bir karakter taşıyacaktır",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-social-rights-summary",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-social-rights",
+        "text": "Program; çalışma saatleri, istihdam ve ücretsiz eğitim, sağlık ve barınma taleplerini sosyalizm mücadelesiyle birlikte ele alacağını söyler.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-social-rights-summary",
+        "passage_id": "0203-tip-social-rights",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-social-rights-summary",
+        "passage_id": "0203-tip-social-rights-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-social-rights-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-social-rights-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-social-rights-quote",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-social-rights",
+        "text": "ücretsiz eğitim, sağlık ve barınma",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-social-rights-quote",
+        "passage_id": "0203-tip-social-rights",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-social-rights-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-social-rights-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-ecology",
+        "version_id": "0203-tip-program-v1",
+        "exact": "toplumun ihtiyaçlarını temel alan",
+        "prefix": null,
+        "suffix": null,
+        "section": "Kapitalizm bütünsel bir bunalım içinde",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-ecology-context",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Emeğin kurtuluşu ile doğanın kurtuluşunun yolu toplumun ihtiyaçlarını temel alan sosyalist bir düzenin kurulmasından geçmektedir.",
+        "prefix": null,
+        "suffix": null,
+        "section": "Kapitalizm bütünsel bir bunalım içinde",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-ecology-summary",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-ecology",
+        "text": "Ekolojik sorunların çözümünde programın önerdiği çerçeve, toplumsal ihtiyaçları temel alan sosyalist düzendir; kapitalist büyümenin doğayı tahrip ettiği değerlendirmesi partinin kendi görüşüdür.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-ecology-summary",
+        "passage_id": "0203-tip-ecology",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-ecology-summary",
+        "passage_id": "0203-tip-ecology-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-ecology-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-ecology-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-ecology-quote",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-ecology",
+        "text": "toplumun ihtiyaçlarını temel alan",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-ecology-quote",
+        "passage_id": "0203-tip-ecology",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-ecology-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-ecology-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-organization-program",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Katılım, şeffaflık, siyasallık, hesap sorulabilirlik",
+        "prefix": null,
+        "suffix": null,
+        "section": "TİP, sosyalist hareketin devrimci yeniden kuruluşudur.",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0203-tip-organization-program-context",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Katılım, şeffaflık, siyasallık, hesap sorulabilirlik, kurullu ve kurallı çalışma, demokratik merkeziyetçiliğin olmazsa olmazlarıdır.",
+        "prefix": null,
+        "suffix": null,
+        "section": "TİP, sosyalist hareketin devrimci yeniden kuruluşudur.",
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-organization-program-summary",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-organization-program",
+        "text": "Program, örgütsel işleyişte demokratik merkeziyetçiliği savunur; katılım, şeffaflık, hesap sorulabilirlik ve kurallı çalışmayı bu yaklaşımın unsurları sayar.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-organization-program-summary",
+        "passage_id": "0203-tip-organization-program",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-organization-program-summary",
+        "passage_id": "0203-tip-organization-program-context",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-organization-program-summary-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-organization-program-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0203-tip-organization-program-quote",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "0203-tip-organization-program",
+        "text": "Katılım, şeffaflık, siyasallık, hesap sorulabilirlik",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0203-tip-organization-program-quote",
+        "passage_id": "0203-tip-organization-program",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "0203-tip-organization-program-quote-review",
+        "kind": "finding",
+        "subject_id": "0203-tip-organization-program-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "reviewed",
+        "reason": "Özgün arşiv pasajı ve kaynak metni karşılaştırıldı; özet kaynağın beyanını aktarıyor, alıntı aynı bayt/metin pasajını koruyor."
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "state": "reviewed"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "state": "reviewed"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "tip",
+        "heading": "Program",
+        "state": "reviewed"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "tip",
+        "heading": "Söylem ve uygulama",
+        "state": "not_researched"
+      }
+    },
+    {
+      "kind": "research_state",
+      "values": {
+        "party_id": "tip",
+        "heading": "Finansman ve harcamalar",
+        "state": "not_researched"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-search-0",
+        "lead_id": null,
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "type": "search",
+        "query": "site:tip.org.tr \"kuruluş\" \"2017\" tüzük",
+        "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "results",
+        "reason": "Sicil, 6 Ekim 2018 açıklaması, genel başkan biyografisi ve ilk ÇarkBaşak sayısı bulundu.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-search-1",
+        "lead_id": null,
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "type": "search",
+        "query": "\"TİP\" \"Kuruluş Kongresi\" \"2018\" \"Kasım\"",
+        "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "no_result",
+        "reason": "2017 tüzel kişisinin ilk Büyük Kongresinin kesin gününü veren uygun kayıt bu sorguda bulunmadı.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-search-2",
+        "lead_id": null,
+        "party_id": "tip",
+        "heading": "Tüzük",
+        "topic_id": "tip-tuzuk-surum",
+        "type": "search",
+        "query": "site:tip.org.tr \"program\" \"tüzük\" kongre 2025",
+        "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "results",
+        "reason": "HTML tüzük, 2022 dosya adlı PDF ve 2018 ilk yayın izi bulundu; arşivlendi.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-search-3",
+        "lead_id": null,
+        "party_id": "tip",
+        "heading": "Program",
+        "topic_id": "tip-program-surum",
+        "type": "search",
+        "query": "site:tip.org.tr tüzük pdf program pdf 2018 2022 2025",
+        "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "results",
+        "reason": "Parti programı ve erken yayın izi bulundu; eski tam program kopyası için kesin sürüm zinciri saptanmadı.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0203-tip-first-congress-check",
+        "lead_id": null,
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "type": "verification",
+        "query": "İlerici Kamuoyuna (06.10.2018), genel başkan biyografisi ve ÇarkBaşak Kasım 2018 ilk sayı: ilk kongrenin kesin tarihi",
+        "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+        "result": "inconclusive",
+        "reason": "Kuruluş Konferansı ve ilk Büyük Kongre hazırlığı anlatılıyor; ilk Büyük Kongrenin kesin günü bu kaynaklarda verilmedi.",
+        "source_version_id": "0203-tip-history-v1"
+      }
+    },
+    {
+      "kind": "missing",
+      "values": {
+        "id": "0203-tip-first-congress-gap",
+        "party_id": "tip",
+        "heading": "Kuruluş",
+        "topic_id": "tip-kurulus-tarihce",
+        "status": "Doğrulanamadı",
+        "attempt_id": "0203-tip-first-congress-check",
+        "reason": "Kuruluş Konferansı ve ilk Büyük Kongrenin kesin günleri elde edilen kuruluş kaynaklarında belirtilmiyor; kurucu başkan seçimi yalnız 2017 yılıyla anlatılıyor."
+      }
+    },
+    {
+      "kind": "closure",
+      "values": {
+        "id": "0203-tip-close-kurulus-tarihce",
+        "topic_id": "tip-kurulus-tarihce",
+        "closed_at": "2026-11-11T16:41:55.167894+00:00",
+        "reason": "Bu Faz 2 derlemesindeki ilgili sicil, parti açıklaması, temel belge ve erken yayın uçları okundu. Kesin kongre günü ve tam eski metin zinciri elde edilemedi; bilinmeyen tarihler açık bırakıldı. Söylem/uygulama ve mali inceleme bu kapanmanın kapsamında değildir; yeni ilgili kaynakta yeniden açılır.",
+        "residual_leads": "[]"
+      }
+    },
+    {
+      "kind": "closure",
+      "values": {
+        "id": "0203-tip-close-tuzuk-surum",
+        "topic_id": "tip-tuzuk-surum",
+        "closed_at": "2026-11-11T16:41:55.167894+00:00",
+        "reason": "Bu Faz 2 derlemesindeki ilgili sicil, parti açıklaması, temel belge ve erken yayın uçları okundu. Kesin kongre günü ve tam eski metin zinciri elde edilemedi; bilinmeyen tarihler açık bırakıldı. Söylem/uygulama ve mali inceleme bu kapanmanın kapsamında değildir; yeni ilgili kaynakta yeniden açılır.",
+        "residual_leads": "[]"
+      }
+    },
+    {
+      "kind": "closure",
+      "values": {
+        "id": "0203-tip-close-program-surum",
+        "topic_id": "tip-program-surum",
+        "closed_at": "2026-11-11T16:41:55.167894+00:00",
+        "reason": "Bu Faz 2 derlemesindeki ilgili sicil, parti açıklaması, temel belge ve erken yayın uçları okundu. Kesin kongre günü ve tam eski metin zinciri elde edilemedi; bilinmeyen tarihler açık bırakıldı. Söylem/uygulama ve mali inceleme bu kapanmanın kapsamında değildir; yeni ilgili kaynakta yeniden açılır.",
+        "residual_leads": "[]"
+      }
+    }
+  ],
+  "research_log": [
+    {
+      "query": "site:tip.org.tr \"kuruluş\" \"2017\" tüzük",
+      "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+      "result": "results",
+      "reason": "Sicil, 6 Ekim 2018 açıklaması, genel başkan biyografisi ve ilk ÇarkBaşak sayısı bulundu."
+    },
+    {
+      "query": "\"TİP\" \"Kuruluş Kongresi\" \"2018\" \"Kasım\"",
+      "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+      "result": "no_result",
+      "reason": "2017 tüzel kişisinin ilk Büyük Kongresinin kesin gününü veren uygun kayıt bu sorguda bulunmadı."
+    },
+    {
+      "query": "site:tip.org.tr \"program\" \"tüzük\" kongre 2025",
+      "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+      "result": "results",
+      "reason": "HTML tüzük, 2022 dosya adlı PDF ve 2018 ilk yayın izi bulundu; arşivlendi."
+    },
+    {
+      "query": "site:tip.org.tr tüzük pdf program pdf 2018 2022 2025",
+      "attempted_at": "2026-11-11T16:41:55.167894+00:00",
+      "result": "results",
+      "reason": "Parti programı ve erken yayın izi bulundu; eski tam program kopyası için kesin sürüm zinciri saptanmadı."
+    },
+    {
+      "url": "https://tip.org.tr/wp-content/uploads/2020/03/komunist_1.pdf",
+      "accessed_at": "2026-11-11T16:30:06.635311+00:00",
+      "result": "excluded",
+      "reason": "Komünist sayı 1 PDF’si 2014 TKP kongre belgelerine aittir; 2017 tüzel kişisinin ilk kongresi veya belge sürümü olarak kullanılmadı."
+    }
+  ],
+  "important_gaps": [
+    "İlk Büyük Kongrenin ve Kuruluş Konferansının kesin günü; kurucu başkan seçiminin gün/ayı elde edilen kaynaklarda belirtilmiyor.",
+    "HTML tüzük/programın kabul/değişiklik günü ve önceki metinlerle kesin yürürlük ilişkisi belirtilmiyor; eski tam program kopyası elde edilmedi.",
+    "Söylem–uygulama karşılaştırması ve gerçekleşmiş gelir/harcama araştırması bu Faz 2 derlemesinde henüz incelenmedi."
+  ]
+}

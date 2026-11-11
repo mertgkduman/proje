@@ -5,6 +5,9 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import io
+from email.message import Message
+from unittest.mock import patch
 
 import arsiv
 
@@ -33,6 +36,22 @@ class ArchiveViews(unittest.TestCase):
             self.assertTrue(m.validate_view(Path(tmp),row))
             (Path(tmp)/row['index_path']).write_text(text+'tampered')
             with self.assertRaises(ValueError):m.validate_view(Path(tmp),row)
+
+    def test_known_static_css_cdn_is_localized_while_script_mime_is_rejected(self):
+        m=self.module()
+        def response(request,timeout):
+            value=io.BytesIO(b'h1{color:red}')
+            value.headers=Message()
+            value.headers['Content-Type']='application/javascript' if request.full_url.endswith('.js') else 'text/css'
+            value.geturl=lambda:request.full_url
+            return value
+        resources=m.Resources('https://tip.org.tr/tuzuk/',True)
+        with patch('arsiv_gorunum.urllib.request.urlopen',side_effect=response):
+            local=resources.asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',resources.url,css=True)
+            self.assertTrue(local.endswith('.css'))
+            self.assertEqual(resources.assets[local],b'h1{color:red}')
+            self.assertIsNone(resources.asset('https://cdn.jsdelivr.net/bad.js',resources.url,css=True))
+            self.assertIsNone(resources.asset('https://evil.invalid/style.css',resources.url,css=True))
 
     def test_correct_canonical_charter_and_program_render_as_separate_documents(self):
         m=self.module()

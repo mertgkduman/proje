@@ -18,6 +18,7 @@ ALLOWED_ATTRS=set('id class lang dir title alt width height role aria-label aria
 MAX_ASSETS=40
 MAX_ASSET=8*1024*1024
 MAX_TOTAL=32*1024*1024
+STATIC_ASSET_HOSTS={'fonts.googleapis.com','fonts.gstatic.com','cdn.jsdelivr.net','cdnjs.cloudflare.com','unpkg.com'}
 
 
 def digest(value): return hashlib.sha256(value).hexdigest()
@@ -31,7 +32,7 @@ class Resources:
         url=urllib.parse.urljoin(base,value)
         if url in self.urls:return self.urls[url]
         parsed=urllib.parse.urlsplit(url)
-        allowed={urllib.parse.urlsplit(self.url).hostname,'fonts.googleapis.com','fonts.gstatic.com'}
+        allowed={urllib.parse.urlsplit(self.url).hostname,*STATIC_ASSET_HOSTS}
         if not self.enabled or parsed.scheme not in ('https','http') or not parsed.hostname or parsed.hostname not in allowed or parsed.username or parsed.password:
             self.limitations.append('Yerelleştirilmeyen kaynak: '+url[:250]); return None
         if len(self.assets)>=MAX_ASSETS or self.total>=MAX_TOTAL:

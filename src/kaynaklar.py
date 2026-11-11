@@ -43,8 +43,19 @@ def check_attribution(db, value):
     if value['kind'] == 'social_publication' and (not (value.get('author') or value.get('social_handle')) or not date):
         raise ValueError('Sosyal paylaşım için hesap/yazar, tarih ve kalıcı adres gerekli')
     if value['kind'] == 'party_publication':
-        text = folded(safe_path(DATA, v['original_path']).read_bytes().decode('utf-8', errors='replace'))
-        if folded(value['publisher']) != folded(v['legal_name']) or folded(value['publisher']) not in text:
+        raw = safe_path(DATA, v['original_path']).read_bytes()
+        text = folded(raw.decode('utf-8', errors='replace'))
+        publisher_present = folded(value['publisher']) in text
+        # PDF metni sıkıştırılmış veya font eşlemesi eksik olabilir. Aynı parti
+        # yayıncısının arşivli HTML yayını, aynı ana makinedeki PDF'nin yayıncı
+        # atfını destekler; sicilden alan adı/yürürlük kanıtı istenmez (D-13).
+        if not publisher_present and raw.startswith(b'%PDF-'):
+            host = urlsplit(v['final_url']).hostname
+            for h in db.execute("SELECT v.original_path,v.final_url,a.publisher FROM document_version v JOIN document d ON d.id=v.document_id JOIN source_attribution a ON a.version_id=v.id WHERE d.party_id=? AND a.kind='party_publication' AND v.mime='text/html'", (v['party_id'],)):
+                if urlsplit(h['final_url']).hostname == host and folded(h['publisher']) == folded(value['publisher']) and folded(value['publisher']) in folded(safe_path(DATA,h['original_path']).read_text(encoding='utf-8',errors='replace')):
+                    publisher_present = True
+                    break
+        if folded(value['publisher']) != folded(v['legal_name']) or not publisher_present:
             raise ValueError('Parti yayını yayıncı ilişkisi kaynakta bulunamadı')
     return True
 

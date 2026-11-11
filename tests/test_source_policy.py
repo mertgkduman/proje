@@ -59,6 +59,19 @@ class SourcePolicy(unittest.TestCase):
         self.assertEqual(manifest['phase2_delivery'], dict(party_id='tip', stage='tracer', completed_prefix=[]))
         self.assertIn('Yeni Parti', (arsiv.DATA / 'releases' / release / 'index.html').read_text())
 
+    def test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name(self):
+        dossier=json.loads((arsiv.ROOT/'data/dossiers/02-tip.json').read_text())
+        v=next(r['values'] for r in dossier['records'] if r['kind']=='document_version' and r['values']['id']=='0203-tip-charter2022-v1')
+        db=arsiv.connect(self.work/'records.sqlite3')
+        h=dict(db.execute("SELECT * FROM document_version WHERE id='tip-charter-v1'").fetchone());db.close()
+        arsiv.record(self.work,'source_attribution',self.attribution(h,publisher='Türkiye İşçi Partisi'))
+        arsiv.record(self.work,'document_version',dict(v,id='policy-pdf-v1'))
+        arsiv.record(self.work,'source_attribution',self.attribution(dict(v,id='policy-pdf-v1'),publisher='Türkiye İşçi Partisi'))
+        bad=dict(v,id='policy-pdf-other-host',original_url='https://unsupported.example/tuzuk.pdf',final_url='https://unsupported.example/tuzuk.pdf')
+        arsiv.record(self.work,'document_version',bad)
+        with self.assertRaisesRegex(ValueError,'yayıncı'):
+            arsiv.record(self.work,'source_attribution',self.attribution(bad,publisher='Türkiye İşçi Partisi'))
+
     def test_social_requires_account_date_and_permalink_and_claim_stays_claim(self):
         self.assertIn('source_attribution', arsiv.TABLES, 'Sürümlü atıf sözleşmesi eksik')
         v = self.charter()
