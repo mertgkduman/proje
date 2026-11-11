@@ -78,7 +78,7 @@ Plans:
 3. Okur, kaynakların birincil belge, gazetecilik, akademik çalışma veya bağımsız rapor türünü görebilir; birincil kaynak önceliği ve ikincil kaynak kullanımı aynı yöntemle açıklanır.
 4. Okur, bulgunun hangi belge sürümüne ve döneme dayandığını ve mevcut eski sürümleri görebilir; henüz araştırılmamış bir başlık, denenmiş bir aramanın “Bulunamadı” sonucu gibi gösterilmez.
 
-**Plans:** 8/10 plans executed
+**Plans:** 9/10 plans executed
 
 Plans:
 **Wave 1**
@@ -115,7 +115,7 @@ Plans:
 
 **Wave 9** *(blocked on Wave 8 completion)*
 
-- [ ] 02-09-PLAN.md — Wave 9: Saadet Partisi dosyası ve doğrulanmış yerel teslim
+- [x] 02-09-PLAN.md — Wave 9: Saadet Partisi dosyası ve doğrulanmış yerel teslim
 
 **Wave 10** *(blocked on Wave 9 completion)*
 
@@ -207,7 +207,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
-| 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 8/10 | In Progress|  |
+| 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 9/10 | In Progress|  |
 | 3. Tüzük ve programların karşılaştırılması | 0/TBD | Not started | - |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
