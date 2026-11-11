@@ -26,6 +26,7 @@ from rapor_v4 import render_report as render_v4_report
 from rapor_v5 import render_report as render_v5_report
 from rapor_v6 import render_report as render_v6_report
 from rapor_v7 import render_report as render_v7_report
+from dosyalar import foundation_for_party
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
@@ -311,19 +312,21 @@ def record(work, kind, values):
             method = db.execute('SELECT cutoff_at FROM method ORDER BY version DESC LIMIT 1').fetchone()
             if not method:
                 raise ValueError('Önce yöntem kesimi dondurulmalı')
-            if values.get('party_id') != 'yeni-parti':
-                raise ValueError('Parti kuruluş tarihi henüz doğrulanmadı')
-            status = validate_dates(values.get('event_at'), values.get('date_precision'), '2026-07-24', method['cutoff_at'], values.get('date_unknown_reason'))
+            owner = db.execute('SELECT d.party_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (values.get('passage_id'),)).fetchone()
+            if not owner or owner['party_id'] != values.get('party_id'):
+                raise ValueError('Olay kanıtı partiyle uyuşmuyor')
+            foundation = foundation_for_party(db, values.get('party_id'))
+            status = validate_dates(values.get('event_at'), values.get('date_precision'), foundation, method['cutoff_at'], values.get('date_unknown_reason'))
             if status == 'outside' or values.get('scope_status') != status:
                 raise ValueError('Olay dönem dışında veya belirsizlik yanlış belirtilmiş')
         if kind == 'accounting_period':
-            if values.get('party_id') != 'yeni-parti': raise ValueError('Parti kuruluş tarihi henüz doğrulanmadı')
+            foundation = foundation_for_party(db, values.get('party_id'))
             start, end = values.get('period_start'), values.get('period_end')
             if not start or not end:
                 if values.get('date_precision') != 'unknown' or not values.get('date_unknown_reason'):
                     raise ValueError('Eksik hesap dönemi gerekçesi gerekli')
             else:
-                if values.get('date_precision') != 'day' or dt.date.fromisoformat(start) < dt.date(2026, 7, 24) or dt.date.fromisoformat(end) < dt.date.fromisoformat(start):
+                if values.get('date_precision') != 'day' or dt.date.fromisoformat(start) < dt.date.fromisoformat(foundation) or dt.date.fromisoformat(end) < dt.date.fromisoformat(start):
                     raise ValueError('Geçersiz hesap dönemi')
         keys = list(values)
         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
@@ -590,10 +593,10 @@ def check_financial(db, v):
     try:
         start, end, published = (dt.date.fromisoformat(v[k]) for k in ('period_start', 'period_end', 'published_at'))
     except (ValueError, TypeError): raise ValueError('Geçersiz mali tarih')
-    identity = db.execute("SELECT valid_from FROM identity_observation WHERE entity_id=? AND entity_kind='party'", (v['party_id'],)).fetchone()
+    foundation = foundation_for_party(db, v['party_id'])
     method = db.execute('SELECT cutoff_at FROM method ORDER BY version DESC LIMIT 1').fetchone()
     source = db.execute('SELECT d.party_id,d.source_kind,v.document_date,p.exact FROM document_version v JOIN document d ON d.id=v.document_id LEFT JOIN passage p ON p.version_id=v.id AND p.id=? WHERE v.id=?', (v.get('passage_id'), v['version_id'])).fetchone()
-    if not identity or not identity[0] or not method or not source or source['party_id'] != v['party_id'] or not source['document_date'] or source['document_date'] != v['published_at'] or start < dt.date.fromisoformat(identity[0]) or end < start or end >= dt.datetime.fromisoformat(method[0]).date() or published < end:
+    if not method or not source or source['party_id'] != v['party_id'] or not source['document_date'] or source['document_date'] != v['published_at'] or start < dt.date.fromisoformat(foundation) or end < start or end >= dt.datetime.fromisoformat(method[0]).date() or published < end:
         raise ValueError('Mali kimlik, dönem veya yayın tarihi uyuşmuyor')
     if not re.fullmatch(r'[A-Z]{3}', v['currency']): raise ValueError('Para birimi gerekli')
     if not db.execute('SELECT 1 FROM accounting_period ap JOIN passage p ON p.id=ap.passage_id WHERE ap.party_id=? AND ap.period_start=? AND ap.period_end=? AND ap.date_precision=? AND p.version_id=?', (v['party_id'],v['period_start'],v['period_end'],'day',v['version_id'])).fetchone(): raise ValueError('Kaynakla ilişkili hesap dönemi gerekli')
@@ -735,8 +738,10 @@ def export_db(path, release_id, strict_identity=False):
             if result['event_date'] and not result['method']: raise ValueError('Olay için yöntem kesimi gerekli')
             for event in result['event_date']:
                 method = max(result['method'], key=lambda m: m['version'])
-                if event['party_id'] != 'yeni-parti': raise ValueError('Kuruluş tarihi doğrulanmadı')
-                actual = validate_dates(event['event_at'], event['date_precision'], '2026-07-24', method['cutoff_at'], event['date_unknown_reason'])
+                owner = db.execute('SELECT d.party_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (event['passage_id'],)).fetchone()
+                if not owner or owner['party_id'] != event['party_id']: raise ValueError('Olay kanıtı partiyle uyuşmuyor')
+                foundation = foundation_for_party(db, event['party_id'])
+                actual = validate_dates(event['event_at'], event['date_precision'], foundation, method['cutoff_at'], event['date_unknown_reason'])
                 if actual == 'outside' or actual != event['scope_status']: raise ValueError('Olay kapsamı geçersiz')
         if any(not any(e['finding_id'] == f['id'] for e in result['finding_evidence']) for f in result['finding']):
             raise ValueError('Kanıtsız bulgu')
