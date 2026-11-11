@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 02
 current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
-current_plan: 7
+current_plan: 8
 status: executing
-stopped_at: 02-06 tamamlandı; Yeni Yol teslimi bildirildikten sonra sıradaki 02-07 DBP
-last_updated: "2026-11-11T19:04:04.946Z"
+stopped_at: 02-07 tamamlandı; DBP teslimi bildirildikten sonra sıradaki 02-08 EMEP
+last_updated: "2026-11-11T19:54:59.157Z"
 last_activity: 2026-11-11
-last_activity_desc: 02-06 tamamlandı; Yeni Yol tam yerel dosyası ve İYİ Parti’ye bağlı makbuzu hazır, sıradaki 02-07 DBP
-state_head: a475f5aa3155c42739dd53c45ab5d2ce8cc79726
+last_activity_desc: 02-07 tamamlandı; DBP tam yerel dosyası ve Yeni Yol’a bağlı makbuzu hazır, sıradaki 02-08 EMEP
+state_head: 94d3b15acf66d859e23a37e54e9f310a2e6f13ab
 progress:
   total_phases: 6
   completed_phases: 1
   total_plans: 16
-  completed_plans: 12
+  completed_plans: 13
 ---
 
 # Project State
@@ -28,12 +28,12 @@ See: .planning/PROJECT.md (updated 2026-11-10)
 
 ## Current Position
 
-Current Plan: 7
+Current Plan: 8
 Total Plans in Phase: 10
 Phase: 02 (Bütün partiler için dosyalar ve sürümlü kaynaklar) — EXECUTING
-Plan: 6/10 tamamlandı; sıradaki 02-07
+Plan: 7/10 tamamlandı; sıradaki 02-08
 Status: Ready to execute
-Last activity: 2026-11-11 — 02-06 tamamlandı: Yeni Yol’un 13 kaynaklı özet/alıntı çifti, kaynaklı kartı, kuruluş/grup/yönetim kronolojisi ve aynı adlı eski parti açıklaması 732fcd2bfc954200b4292c51ef29f526 yerel sürümü ve İYİ Parti’ye bağlı makbuzla hazırdır. Tam tüzük/program, bağımsız site ve ilk kongre açıkları gerçek aramalarla kaydedildi; iki kullanılmayan ön yanıtın eksik erişim metadata’sı ayrı notta korundu. Ara teslimin bildirilmesinden sonra sıradaki plan 02-07 DBP’dir.
+Last activity: 2026-11-11 — 02-07 tamamlandı: DBP’nin 20 kaynaklı özet/alıntı çifti, yedi alanlı kartı, kuruluş/ilk kongre/ad değişikliği kronolojisi ve tüzük/program edinimi 4a4ce5448c894a9ebc3c12e97cacb6dd yerel sürümü ve Yeni Yol’a bağlı makbuzla hazırdır. Ayrı güncel program ve birincil kuruluş tutanakları açık kaldı. Pasif HTML UTF-8 hatası regresyonla düzeltildi; ilk aday ve eski baytlar korundu. DBP tesliminin bildirilmesinden sonra sıradaki plan 02-08 EMEP’tir.
 
 Progress: [██░░░░░░░░] 17%
 
@@ -41,21 +41,21 @@ Progress: [██░░░░░░░░] 17%
 
 **Velocity:**
 
-- Total plans completed: 12
+- Total plans completed: 13
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
-- Total execution time: Faz 1'in altı ve Faz 2'nin altı planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
+- Total execution time: Faz 1'in altı ve Faz 2'nin yedi planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 | 6 | - | - |
-| 2 | 6/10 | - | - |
+| 2 | 7/10 | - | - |
 
 **Recent Trend:**
 
-- Last 5 plans: 02-02, 02-03, 02-04, 02-05, 02-06
-- Trend: Faz 1 tamamlandı; Faz 2 6/10 planda. Yeni Yol tam yerel dosyası ve makbuzu hazır; sonraki parti DBP’dir. Kamu raporu 261111-epm sürümünde kalır.
+- Last 5 plans: 02-03, 02-04, 02-05, 02-06, 02-07
+- Trend: Faz 1 tamamlandı; Faz 2 7/10 planda. DBP tam yerel dosyası ve makbuzu hazır; sonraki parti EMEP’tir. Kamu raporu 261111-epm sürümünde kalır.
 
 **Per-Plan Metrics:**
 
@@ -73,6 +73,7 @@ Progress: [██░░░░░░░░] 17%
 | Phase 02 P04 | 26min | 3 tasks | 75 files |
 | Phase 02 P05 | 38min | 3 tasks | 387 files |
 | Phase 02 P06 | 37min | 3 tasks | 128 files |
+| Phase 02 P07 | 50min | 3 tasks | 262 files |
 
 ## Accumulated Context
 
@@ -104,6 +105,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 02]: 02-06: Yeni Yol, 732fcd2bfc954200b4292c51ef29f526 yerel sürümü ve İYİ Parti’ye bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol. Gerçek sicil yargitay-331, kuruluş 13.01.2025; ortak grup ve aynı adlı eski parti ayrıldı. Tam tüzük/program, bağımsız site ve ilk kongre açıkları gerçek aramalarla korunur.
 
 - [Quick 261111-j4v]: Süreç içi PDF/kütüphane tekrar kullanımı eklendi; 34 test geçti. Gerçek Yeni Yol makbuz ölçümü 180 saniyede zaman aşımına uğradı; makbuz/veri değişmedi, toplam hızlanma veya yeni makbuz kabulü iddia edilmedi. Önceki başarılı teslim geçerlidir; Faz 2 6/10, sıradaki 02-07.
+- [Phase 02]: 02-07: DBP, 4a4ce5448c894a9ebc3c12e97cacb6dd yerel sürümü ve Yeni Yol’a bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol,dbp. Gerçek sicil yargitay-117, kuruluş 02.05.2008; BDP–DBP bağı açık metinlerle kaynaklıdır. Ayrı güncel program ve birincil kuruluş tutanakları açık kaldı. UTF-8 pasif görünüm hatası regresyonla düzeltildi; ilk aday ve eski baytlar korundu.
 
 ### Pending Todos
 
@@ -138,6 +140,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-11T18:44:20.878Z
-Stopped at: 02-06 tamamlandı; Yeni Yol teslimi bildirildikten sonra sıradaki 02-07 DBP
-Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-07-PLAN.md
+Last session: 2026-11-11T19:54:21.353Z
+Stopped at: 02-07 tamamlandı; DBP teslimi bildirildikten sonra sıradaki 02-08 EMEP
+Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-08-PLAN.md
