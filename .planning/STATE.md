@@ -108,7 +108,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 - [Quick 261111-j4v]: Süreç içi PDF/kütüphane tekrar kullanımı eklendi; 34 test geçti. Gerçek Yeni Yol makbuz ölçümü 180 saniyede zaman aşımına uğradı; makbuz/veri değişmedi, toplam hızlanma veya yeni makbuz kabulü iddia edilmedi. Önceki başarılı teslim geçerlidir; Faz 2 6/10, sıradaki 02-07.
 - [Phase 02]: 02-07: DBP, 4a4ce5448c894a9ebc3c12e97cacb6dd yerel sürümü ve Yeni Yol’a bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol,dbp. Gerçek sicil yargitay-117, kuruluş 02.05.2008; BDP–DBP bağı açık metinlerle kaynaklıdır. Ayrı güncel program ve birincil kuruluş tutanakları açık kaldı. UTF-8 pasif görünüm hatası regresyonla düzeltildi; ilk aday ve eski baytlar korundu.
-- [Phase 02]: 02-09: Saadet d42f5105a1a1431d86cdfb3db8669fe2 yerel sürümü ve EMEP’e bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol,dbp,emep,saadet. Gerçek sicil yargitay-70, kuruluş20.07.2001; Yeni Yol/grup/üyelik ayrımı korunur. Tam25sayfa tüzük ve70sayfa program ile2002ikinci baskı edinildi; asıl tutanaklar, eski program ve tam sürüm zinciri açık.
+- [Phase 02]: 02-09: Saadet d42f5105a1a1431d86cdfb3db8669fe2 yerel sürümü ve EMEP’e bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol,dbp,emep,saadet. Gerçek sicil yargitay-70, kuruluş 20.07.2001; Yeni Yol/grup/üyelik ayrımı korunur. Tam 25 sayfa tüzük ve 70 sayfa program ile 2002 ikinci baskı edinildi; asıl tutanaklar, eski program ve tam sürüm zinciri açık.
 
 ### Pending Todos
 
@@ -144,5 +144,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-11-11T21:52:10.827Z
-Stopped at: 02-09 tamamlandı; Saadet teslimi bildirildi, sıradaki02-10 Demokrat Parti
+Stopped at: 02-09 tamamlandı; Saadet teslimi bildirildi, sıradaki 02-10 Demokrat Parti
 Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-10-PLAN.md
