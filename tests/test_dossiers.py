@@ -203,6 +203,11 @@ class DossierTracer(unittest.TestCase):
                 version['id'] = 'tip-registry-v2'
                 arsiv.record(work, 'document_version', version)
                 rel = dict(id='tip-version-forward', version_id='tip-registry-v2', previous_version_id='tip-registry-v1', relation='related', passage_id='tip-foundation-passage', explanation_finding_id='tip-foundation-summary')
+                for invalid in (dict(id='self', previous_version_id='tip-registry-v2'),
+                                dict(id='other-document', previous_version_id='tip-charter-v1'),
+                                dict(id='wrong-owner', passage_id='kurulus')):
+                    with self.assertRaises(ValueError):
+                        arsiv.record(work, 'version_relation', dict(rel, **invalid))
                 arsiv.record(work, 'version_relation', rel)
                 rel.update(id='tip-version-cycle', version_id='tip-registry-v1', previous_version_id='tip-registry-v2')
                 with self.assertRaisesRegex(ValueError, 'döngü'): arsiv.record(work, 'version_relation', rel)
