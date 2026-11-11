@@ -1,0 +1,895 @@
+{
+  "schema_version": 1,
+  "party_id": "emep",
+  "release_id": "d0969b9cfaac47c69d09cf27c1f1ad39",
+  "checked_at": "2026-11-11T20:48:19.532704+00:00",
+  "data_schema_version": 5,
+  "source_policy_version": 2,
+  "renderer_version": 13,
+  "dossier_validation_version": 2,
+  "previous_receipt": {
+    "command": [
+      "python3",
+      "src/arsiv.py",
+      "receipt-check",
+      "--input",
+      "data/deliveries/02-07-dbp.json"
+    ],
+    "exit_code": 0,
+    "stdout": "DELIVERY_RECEIPT_OK\n",
+    "stderr": ""
+  },
+  "previous_audit": {
+    "command": [
+      "python3",
+      "src/arsiv.py",
+      "audit",
+      "--release",
+      "4a4ce5448c894a9ebc3c12e97cacb6dd",
+      "--phase",
+      "2",
+      "--party",
+      "dbp"
+    ],
+    "exit_code": 0,
+    "stdout": "PHASE2_PARTY_OK 4a4ce5448c894a9ebc3c12e97cacb6dd\n",
+    "stderr": ""
+  },
+  "dossier_check": {
+    "command": [
+      "python3",
+      "src/arsiv.py",
+      "dossier-check",
+      "--input",
+      "data/dossiers/02-emep.json"
+    ],
+    "exit_code": 0,
+    "started": "2026-11-11T20:15:56.246085+00:00",
+    "ended": "2026-11-11T20:17:19.160119+00:00"
+  },
+  "party_audit": {
+    "command": [
+      "python3",
+      "src/arsiv.py",
+      "audit",
+      "--release",
+      "current",
+      "--phase",
+      "2",
+      "--party",
+      "emep"
+    ],
+    "exit_code": 0,
+    "started": "2026-11-11T20:22:08.971189+00:00",
+    "ended": "2026-11-11T20:25:41.107621+00:00"
+  },
+  "phase1_audit": {
+    "command": [
+      "python3",
+      "src/arsiv.py",
+      "audit",
+      "--release",
+      "current",
+      "--phase",
+      "1"
+    ],
+    "exit_code": 0,
+    "started": "2026-11-11T20:22:08.971383+00:00",
+    "ended": "2026-11-11T20:25:41.003396+00:00"
+  },
+  "receipt_check": {
+    "command": [
+      "python3",
+      "src/arsiv.py",
+      "receipt-check",
+      "--input",
+      "data/deliveries/02-08-emep.json"
+    ],
+    "exit_code": 0,
+    "started": "2026-11-11T20:37:18.130458+00:00",
+    "ended": "2026-11-11T20:48:07.617341+00:00"
+  },
+  "tests": {
+    "command": [
+      "python3",
+      "tests/run.py",
+      "--pattern",
+      "test_dossiers.py"
+    ],
+    "exit_code": 0,
+    "started": "2026-11-11T20:10:59.582423+00:00",
+    "ended": "2026-11-11T20:11:27.612273+00:00"
+  },
+  "browser": {
+    "status": "BROWSER_ARCHIVES_OK",
+    "results": [
+      {
+        "kind": "report",
+        "width": 1365,
+        "url": "http://127.0.0.1:8098/releases/d0969b9cfaac47c69d09cf27c1f1ad39/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 1365,
+        "url": "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - EMEK PARTİSİ",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "EMEK PARTİSİ"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 1365,
+        "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/index.html",
+        "title": "EMEK PARTİSİ PROGRAM ve TÜZÜĞÜ - Emek Partisi (EMEP)",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/66e6ca49738af4c115f46b89e32a2212b7faba12ead800f896900220b995dafd.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/5032ab0aa8273e41af3f955b18fcf035d80c1c3431cfbb9b62fb1ca603352b0e.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ad36e5da964509d610b59b46d1924d2e7436f5ae4d629d59d3a3977fda20f5b2.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/32b188403b0095236fdc6ed0da01a9ddbcc63252a17c87ed4d06caf65a1d91f5.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/296d32cd4688746cc89d2d888a9d76b908770ef5d4419049e0303bc4cfd4fece.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ce0c34d920ae4d4aeee61f0a4ee2dd4a13e1e98631879d852d99c0cb94f2d79c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/9f26ed19fa66bcf2abe1fff5286fd6eef8e5619300986260610a7a4a8a51e00c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+        ]
+      },
+      {
+        "kind": "program",
+        "width": 1365,
+        "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/index.html",
+        "title": "EMEK PARTİSİ PROGRAM ve TÜZÜĞÜ - Emek Partisi (EMEP)",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/66e6ca49738af4c115f46b89e32a2212b7faba12ead800f896900220b995dafd.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/5032ab0aa8273e41af3f955b18fcf035d80c1c3431cfbb9b62fb1ca603352b0e.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ad36e5da964509d610b59b46d1924d2e7436f5ae4d629d59d3a3977fda20f5b2.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/32b188403b0095236fdc6ed0da01a9ddbcc63252a17c87ed4d06caf65a1d91f5.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/296d32cd4688746cc89d2d888a9d76b908770ef5d4419049e0303bc4cfd4fece.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ce0c34d920ae4d4aeee61f0a4ee2dd4a13e1e98631879d852d99c0cb94f2d79c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/9f26ed19fa66bcf2abe1fff5286fd6eef8e5619300986260610a7a4a8a51e00c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+        ]
+      },
+      {
+        "kind": "old-charter-pdf",
+        "width": 1365,
+        "open": true,
+        "url": "http://127.0.0.1:8098/objects/82a0ec082d33e31eeb3ad2e3f0955b851f2d2fc4e9e417fac3bd148bd805f171/original.pdf",
+        "text": "Yargıtay arşivi — EMEP 6. Kongreye program/tüzük değişikliği önerisi ve belge metinleri Birincil belge · Belirtilmemiş · Tarihsiz 38 sayfalık tarama; değişiklik önerisi, program, tüzük ve kurucular\n“PROGRAM VE TÜZÜK DEĞİŞİKLİĞİ ÖNERİSİ”\nBelge tarihi\nBelirtilmemiş\nSürüm\nTarihsiz 38 sayfalık tarama; değişiklik önerisi, program, tüzük ve kurucular\nErişim\n11.11.2026\nDoğrulama\n11.11.2026\nKonum\nİlk sayfa; öneri başlığı\nPDF sayfası\n1\nBasılı sayfa\n1\nSayfa kontrolü\n11.11.2026 · Metin katmanı boş. Belirtilen sayfa görsel okundu; bütün PDF’ye OCR veya insan kabulü yapıldığı iddia edilmez.\nBelge tarihi notu\nKaynağın kesin yayın/kabul günü yok; bilinen yıl veya ay sürüm etiketinde korunur, güne tamamlanmaz.\nAtıf\nYargıtay Cumhuriyet Başsavcılığı (Emek Partisi belgelerini dağıtan arşiv) · yayın tarihi belirtilmemiş\nAtıf dayanağı\nYayıncı, varsa metin imzası/yazar metadata bilgisi, görünen tarih ve kalıcı adres özgün baytlarla birlikte kaydedildi. İlk sayfa açıkça değişiklik ÖNERİSİ başlığı taşır; 6. kongreye sunulur. PDF metin katmanı boş, seçilmiş sayfalar görsel okundu. Önerinin kabul edildiği veya bütün nüshanın güncel olduğu ileri sürülmez.\n\nBirincil sicil, Meclis veya kütüphane/arşiv yayını; belge türü ve tarihsel kimlik sınırı korunur. Kurucular listesi mevcut sicil için kuruluş dilekçesi sayılmadan tarihsel belge olarak kaydedilir. Program değişikliği önerileri aynı taramada bulunur; kabul tarihi bilinmiyor.\n\nBelge sürüm geçmişi\nÖzgün kaynak\nArşiv kopyası\nBelgeyi indir"
+      },
+      {
+        "kind": "report",
+        "width": 360,
+        "url": "http://127.0.0.1:8098/releases/d0969b9cfaac47c69d09cf27c1f1ad39/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 360,
+        "url": "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - EMEK PARTİSİ",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "EMEK PARTİSİ"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8098/views/2f752a1b824053f589504a620f5a0187/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 360,
+        "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/index.html",
+        "title": "EMEK PARTİSİ PROGRAM ve TÜZÜĞÜ - Emek Partisi (EMEP)",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/66e6ca49738af4c115f46b89e32a2212b7faba12ead800f896900220b995dafd.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/5032ab0aa8273e41af3f955b18fcf035d80c1c3431cfbb9b62fb1ca603352b0e.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ad36e5da964509d610b59b46d1924d2e7436f5ae4d629d59d3a3977fda20f5b2.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/32b188403b0095236fdc6ed0da01a9ddbcc63252a17c87ed4d06caf65a1d91f5.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/296d32cd4688746cc89d2d888a9d76b908770ef5d4419049e0303bc4cfd4fece.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ce0c34d920ae4d4aeee61f0a4ee2dd4a13e1e98631879d852d99c0cb94f2d79c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/9f26ed19fa66bcf2abe1fff5286fd6eef8e5619300986260610a7a4a8a51e00c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+        ]
+      },
+      {
+        "kind": "program",
+        "width": 360,
+        "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/index.html",
+        "title": "EMEK PARTİSİ PROGRAM ve TÜZÜĞÜ - Emek Partisi (EMEP)",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/66e6ca49738af4c115f46b89e32a2212b7faba12ead800f896900220b995dafd.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/5032ab0aa8273e41af3f955b18fcf035d80c1c3431cfbb9b62fb1ca603352b0e.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ad36e5da964509d610b59b46d1924d2e7436f5ae4d629d59d3a3977fda20f5b2.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/32b188403b0095236fdc6ed0da01a9ddbcc63252a17c87ed4d06caf65a1d91f5.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/296d32cd4688746cc89d2d888a9d76b908770ef5d4419049e0303bc4cfd4fece.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/ce0c34d920ae4d4aeee61f0a4ee2dd4a13e1e98631879d852d99c0cb94f2d79c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/9f26ed19fa66bcf2abe1fff5286fd6eef8e5619300986260610a7a4a8a51e00c.css",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/8ef83b8cab84eff713c17eb76d33526e3ad49ae95d0b1481ae3a6145e0106205.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/70590a837964f726c03d614314acce03cd25ffcb1d083b70f726bf1d5029d386.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/4d5550af72098d80aaaeb8da64f4c71a25bc014d1a542840b1ea6b739db5ba09.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/2a1d1c13d1ad901318f4daddcba5d1ce8aa34ad8b6afe58d59741388224a30b0.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d683caf6a2d27f0a13a387fb91a93ce4c16ffd5d80935acb93c97ad8c993bf25.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/307fe1c13c81e3cc4527f8fa272a9f1875fb611677bd6af48f716d61cf81b96d.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/d4806df64c7548a7136c073fc605dab19dd966083a59d88f4de97801c9820bd2.png",
+          "http://127.0.0.1:8098/views/f8c4433200047c190dafbc7151a9b0f6/assets/1564c3fc78f3efb5a2de614864d5db2ebee9952bc7245b1865d2d1f23e9b7373.jpg"
+        ]
+      },
+      {
+        "kind": "old-charter-pdf",
+        "width": 360,
+        "open": true,
+        "url": "http://127.0.0.1:8098/objects/82a0ec082d33e31eeb3ad2e3f0955b851f2d2fc4e9e417fac3bd148bd805f171/original.pdf",
+        "text": "Yargıtay arşivi — EMEP 6. Kongreye program/tüzük değişikliği önerisi ve belge metinleri Birincil belge · Belirtilmemiş · Tarihsiz 38 sayfalık tarama; değişiklik önerisi, program, tüzük ve kurucular\n“PROGRAM VE TÜZÜK DEĞİŞİKLİĞİ ÖNERİSİ”\nBelge tarihi\nBelirtilmemiş\nSürüm\nTarihsiz 38 sayfalık tarama; değişiklik önerisi, program, tüzük ve kurucular\nErişim\n11.11.2026\nDoğrulama\n11.11.2026\nKonum\nİlk sayfa; öneri başlığı\nPDF sayfası\n1\nBasılı sayfa\n1\nSayfa kontrolü\n11.11.2026 · Metin katmanı boş. Belirtilen sayfa görsel okundu; bütün PDF’ye OCR veya insan kabulü yapıldığı iddia edilmez.\nBelge tarihi notu\nKaynağın kesin yayın/kabul günü yok; bilinen yıl veya ay sürüm etiketinde korunur, güne tamamlanmaz.\nAtıf\nYargıtay Cumhuriyet Başsavcılığı (Emek Partisi belgelerini dağıtan arşiv) · yayın tarihi belirtilmemiş\nAtıf dayanağı\nYayıncı, varsa metin imzası/yazar metadata bilgisi, görünen tarih ve kalıcı adres özgün baytlarla birlikte kaydedildi. İlk sayfa açıkça değişiklik ÖNERİSİ başlığı taşır; 6. kongreye sunulur. PDF metin katmanı boş, seçilmiş sayfalar görsel okundu. Önerinin kabul edildiği veya bütün nüshanın güncel olduğu ileri sürülmez.\n\nBirincil sicil, Meclis veya kütüphane/arşiv yayını; belge türü ve tarihsel kimlik sınırı korunur. Kurucular listesi mevcut sicil için kuruluş dilekçesi sayılmadan tarihsel belge olarak kaydedilir. Program değişikliği önerileri aynı taramada bulunur; kabul tarihi bilinmiyor.\n\nBelge sürüm geçmişi\nÖzgün kaynak\nArşiv kopyası\nBelgeyi indir"
+      }
+    ]
+  },
+  "source_body_reading": {
+    "status": "SOURCE_BODY_READING_OK",
+    "results": [
+      {
+        "width": 1365,
+        "overflow": false,
+        "heading": "EMEK PARTİSİ TÜZÜK",
+        "color": "rgb(126, 126, 126)",
+        "visible": true,
+        "text": true
+      },
+      {
+        "width": 360,
+        "overflow": false,
+        "heading": "EMEK PARTİSİ TÜZÜK",
+        "color": "rgb(126, 126, 126)",
+        "visible": true,
+        "text": true
+      }
+    ]
+  },
+  "browser_screenshot_hashes": [
+    {
+      "name": "charter-1365.png",
+      "sha256": "24b23db20e282535dff53f648c0672b76766273793fd2ab5bbb9865f57bb8b14"
+    },
+    {
+      "name": "charter-360.png",
+      "sha256": "3b76e66e3371f9ac2525d394f3d4efd7e598d0baa55954a7af9fd5e8d93c83a2"
+    },
+    {
+      "name": "charter-body-1365.png",
+      "sha256": "77fb0341ee62d16a44439c59732281ecc568094e2b24801b4afc554f73592269"
+    },
+    {
+      "name": "charter-body-360.png",
+      "sha256": "add219220e6647dc647de7ff183ca4377589befde3813c43e1c732e6847ae94d"
+    },
+    {
+      "name": "program-1365.png",
+      "sha256": "24b23db20e282535dff53f648c0672b76766273793fd2ab5bbb9865f57bb8b14"
+    },
+    {
+      "name": "program-360.png",
+      "sha256": "3b76e66e3371f9ac2525d394f3d4efd7e598d0baa55954a7af9fd5e8d93c83a2"
+    },
+    {
+      "name": "registry-1365.png",
+      "sha256": "2476e8a6b36d7f24182e2a35cedf9159df8abecec72f4a616b7ea4ad47ec4dbe"
+    },
+    {
+      "name": "registry-360.png",
+      "sha256": "dde3189a5b0f5dbdbaf29f1ada9055a9a15a9576e09f484cae1d44a8b477ce26"
+    },
+    {
+      "name": "report-1365.png",
+      "sha256": "e2e0146819e7563c956823e37f388da8770aa6df3bc418dfa89ea6a4f3e6c185"
+    },
+    {
+      "name": "report-360.png",
+      "sha256": "794b04a1521c472edecb0bd805954232a1b548191008fa068bc23e08fe457f6b"
+    }
+  ],
+  "pdf_http": [
+    {
+      "source": "charter-pdf",
+      "url": "http://127.0.0.1:8098/objects/82a0ec082d33e31eeb3ad2e3f0955b851f2d2fc4e9e417fac3bd148bd805f171/original.pdf",
+      "mime": "application/pdf",
+      "bytes": 2330909,
+      "sha256": "82a0ec082d33e31eeb3ad2e3f0955b851f2d2fc4e9e417fac3bd148bd805f171",
+      "status": "pass"
+    },
+    {
+      "source": "tbmm-1996-pdf",
+      "url": "http://127.0.0.1:8098/objects/2bad4f7822b5f4b5adda6646ea5309a65d231f93cb6aae538b9a57c3467e706c/original.pdf",
+      "mime": "application/pdf",
+      "bytes": 13857320,
+      "sha256": "2bad4f7822b5f4b5adda6646ea5309a65d231f93cb6aae538b9a57c3467e706c",
+      "status": "pass"
+    }
+  ],
+  "preservation": {
+    "status": "pass",
+    "unchanged_immutable_files": 1457,
+    "preserved_old_rows": {
+      "accounting_period": 0,
+      "action": 16,
+      "actor": 1,
+      "archive_view": 30,
+      "attempt": 179,
+      "closure": 19,
+      "comparison": 0,
+      "comparison_evidence": 0,
+      "document": 92,
+      "document_authority": 1,
+      "document_version": 102,
+      "dossier_event": 21,
+      "dossier_field": 40,
+      "dossier_identity_note": 0,
+      "dossier_source": 93,
+      "edge": 7,
+      "event_date": 21,
+      "financial": 0,
+      "finding": 267,
+      "finding_evidence": 302,
+      "finding_topic": 26,
+      "group_membership": 1,
+      "identity_observation": 6,
+      "lead": 127,
+      "manual_passage": 6,
+      "match": 18,
+      "match_candidate": 26,
+      "membership": 1,
+      "method": 1,
+      "missing": 40,
+      "missing_resolution": 12,
+      "parliamentary_group": 1,
+      "party": 8,
+      "party_identity_revision": 4,
+      "passage": 204,
+      "person": 2,
+      "reopen": 2,
+      "report_option": 1,
+      "research_state": 30,
+      "review": 268,
+      "scope_exclusion": 7,
+      "scope_observation": 9,
+      "scope_party": 9,
+      "source_attribution": 66,
+      "source_policy": 1,
+      "topic": 16,
+      "topic_basis": 1,
+      "topic_query": 3,
+      "topic_search": 24,
+      "url_alias": 96,
+      "verification": 89,
+      "version_context": 80,
+      "version_relation": 3
+    },
+    "controlled_changes": [
+      "party:emep"
+    ],
+    "method_unchanged": true,
+    "completed_prefix": [
+      "tip",
+      "dem",
+      "iyi",
+      "yeni-yol",
+      "dbp",
+      "emep"
+    ]
+  },
+  "content": {
+    "records": 277,
+    "source_versions": 10,
+    "card_fields": 7,
+    "chronology_rows": 4,
+    "dated_chronology_rows": 3,
+    "pairs_by_heading": {
+      "Kuruluş": 14,
+      "Tüzük": 5,
+      "Program": 3
+    },
+    "archive_views": 7
+  },
+  "archive_visual_observations": [
+    "1365 ve 360 px ana rapor ve sicil/program/tüzük kaynak gezinmesi başarılı; kaynak metinlerinin tüzük bölümüne kadar gerçek kaydırma ve okunabilirlik kontrolü yapıldı.",
+    "Kırmızı parti kapağında 2017 yazılıdır. Sayfa 2019 yayın ve 2020 web güncellemesi taşır; bu tarihler veya kapak yılı tüzük/program kabul günü sayılmadı. Kapak görseli pasif arşivin yerel ve hashli varlığıdır.",
+    "Yargıtay PDF’si 38 sayfalık, metin katmanı boş bir taramadır; ilk sayfa değişiklik ÖNERİSİ, son sayfa 35 adlık kurucular listesidir. Seçilmiş sayfalar görsel okundu, bütün PDF’ye OCR yapıldığı iddia edilmez.",
+    "TBMM 1996 kitabının kapağındaki ay damgayla kısmen örtülüdür; dosyada yalnız katalog ve kapakta kaynaklı 1996 yılı tutuldu."
+  ],
+  "archive_fidelity": [
+    {
+      "version_id": "0208-emep-registry-v1",
+      "view_id": "2f752a1b824053f589504a620f5a0187",
+      "local_asset_count": 3,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAABwCAYAAADL/oQMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAHL6SURBVHhe7b0FdFzXufc9PCONmGVbZmaOEzvgcNK0adM25bRpb29TStv0lplvKWmYoWHbMdsCy5ZJYPEwsxhs2ZIMkuH//Z89mtRNc+/73tuud32r",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='rou",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236ea8fe'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.7",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.7",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.64",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/css/all.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://www.yargitaycb.gov.tr/vendor/fonts/fonts.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://www.yargitaycb.gov.tr/css/styles.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://www.yargitaycb.gov.tr/css/animations.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://www.yargitaycb.gov.tr/css/pages.css"
+      ]
+    },
+    {
+      "version_id": "0208-emep-program-charter-v1",
+      "view_id": "f8c4433200047c190dafbc7151a9b0f6",
+      "local_asset_count": 40,
+      "limitations": [
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Kaynak alınamadı: https://www.emep.org/wp-includes/fonts/dashicons.eot?99ac726223c749443b642ce33df8b800 — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.emep.org/wp-includes/fonts/dashicons.eot?99ac726223c749443b642ce33df8b800#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Yerelleştirilmeyen kaynak: data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAHvwAAsAAAAA3EgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAAQAAAAFZAuk8lY21hcAAAAXwAAAk/AAAU9l+BPsxnbHlmAAAKvAAAYwIAAKlAcWTMRWhlYWQAAG3AAAAALwAAADYXkmaRaGhlYQAA",
+        "Kaynak alınamadı: https://www.emep.org/wp-includes/fonts/dashicons.ttf?99ac726223c749443b642ce33df8b800 — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Kaynak alınamadı: https://www.emep.org/wp-content/uploads/smile_fonts/Theme-Default-Icons/Theme-Default-Icons.eot?kotylm — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.emep.org/wp-content/uploads/smile_fonts/Theme-Default-Icons/Theme-Default-Icons.eot?kotylm#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.emep.org/wp-content/uploads/smile_fonts/Theme-Default-Icons/Theme-Default-Icons.ttf?kotylm — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Kaynak alınamadı: https://www.emep.org/wp-content/uploads/smile_fonts/Theme-Default-Icons/Theme-Default-Icons.woff?kotylm — Pasif varlık türü desteklenmiyor: application/font-woff",
+        "Kaynak alınamadı: https://www.emep.org/wp-content/uploads/smile_fonts/Theme-Default-Icons/Theme-Default-Icons.svg?kotylm#Theme-Default-Icons — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/animate.min.css?ver=3.5.1",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/ilightbox.css?ver=2.2.0",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/ilightbox-skins/dark-skin.css?ver=2.2.0",
+        "Varlık sayısı/boyut sınırı: https://fonts.googleapis.com/css?family=Alata%7CAndika&subset=latin%2Clatin-ext&ver=6.9.11",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/plugins/tablepress/css/build/default.css?ver=3.3.2",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16"
+      ]
+    },
+    {
+      "version_id": "0208-emep-history-v1",
+      "view_id": "a1d15603e79279bc8803aae04e5fa1b2",
+      "local_asset_count": 40,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://www.evrensel.net/upload/dosya/140530.jpg",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;utf8,<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"50\"/></svg>",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/animate.min.css?ver=3.5.1",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/ilightbox.css?ver=2.2.0",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/ilightbox-skins/dark-skin.css?ver=2.2.0",
+        "Varlık sayısı/boyut sınırı: https://fonts.googleapis.com/css?family=Alata%7CAndika&subset=latin%2Clatin-ext&ver=6.9.11",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/plugins/tablepress/css/build/default.css?ver=3.3.2",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16"
+      ]
+    },
+    {
+      "version_id": "0208-emep-rename-v1",
+      "view_id": "4436a3d84428c10bb200925afea1e397",
+      "local_asset_count": 9,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://mc.yandex.ru/watch/46172883"
+      ]
+    },
+    {
+      "version_id": "0208-emep-first-congress-v1",
+      "view_id": "89faf4846c73adcd2bfe2dddf276bfd5",
+      "local_asset_count": 4,
+      "limitations": [
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/css/font.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/css/stil.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/plugins/typeahead/jquery.typeahead.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/kurumsal/ustkusak.jpg",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/css/all.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/css/animate.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/css/owl.carousel.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://katalog.kadikoy.bel.tr/yordam/css/owl.theme.default.min.css"
+      ]
+    },
+    {
+      "version_id": "0208-emep-reform2014-v1",
+      "view_id": "f6a88f5446483970c4ea1241fe8a0bcb",
+      "local_asset_count": 40,
+      "limitations": [
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/animate.min.css?ver=3.5.1",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/ilightbox.css?ver=2.2.0",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/themes/de-jure/css/ilightbox-skins/dark-skin.css?ver=2.2.0",
+        "Varlık sayısı/boyut sınırı: https://fonts.googleapis.com/css?family=Alata%7CAndika&subset=latin%2Clatin-ext&ver=6.9.11",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/plugins/tablepress/css/build/default.css?ver=3.3.2",
+        "Varlık sayısı/boyut sınırı: https://www.emep.org/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16"
+      ]
+    },
+    {
+      "version_id": "0208-emep-tbmm-scope-v1",
+      "view_id": "e872e6fcf41bcdc1a463ebaccbfa84e7",
+      "local_asset_count": 7,
+      "limitations": [
+        "Kaynak alınamadı: https://tbmm.gov.tr/img/icon_language.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/img/menu_search_icon.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_facebook.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_parlamentolar_arasi_iliskiler.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_anayasa.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/icon_kanun_ve_kararlar.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/icon_edilekce.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/icon_bilgi_edinme.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbbm_siluet_footer.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/img/footer_asaga_ok.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_home_icon.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_tel_icon.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_email_icon.png",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/css/bootstrap_520/bootstrap.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/font-awesome/css/font-awesome.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/css/tbmm-yeni-tasarim.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/css/fontawesome-all.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi 12 adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/vendor/datatables/custom.css"
+      ]
+    }
+  ],
+  "important_gaps": [
+    "Mevcut tüzel partiye ait kuruluş başvurusunun aslı ve ilk kongrenin tam tutanağı bu taramada bulunamadı. Kurucu genel başkan yazısı, 35 adlı tarihsiz PDF listesi ve 14 Eylül 1997 kongre kitabının katalog kaydı bu belgelerin yerine geçirilmedi.",
+    "Tüzük ve programın tam kabul/değişiklik tutanakları ile 6. Kongre öneri paketinin kabul durumu ve kesin sürüm zinciri bulunamadı. 2019 yayın ve 2020 web güncelleme tarihleri normatif kabul tarihi sayılmaz; erişilen içerik kullanılır.",
+    "1996 basımlı eski EP kitabı güncel EMEP programı sayılmadı; 38sayfalık YargıtayPDF’sinin kabul/basım günü ve tam sürüm ilişkisi bilinmiyor.",
+    "Başkanlık/adres görev başlangıcı ve web metinlerinin kesin yürürlük bitişi bilinmiyor.",
+    "Söylem–uygulama ve gerçekleşmiş finansman/harcama araştırması sonraki fazlar için Henüz incelenmedi."
+  ],
+  "human_acceptance": false,
+  "public_publication": "Kamu yayını veya gh-pages değişikliği yapılmadı; yalnız yerel immutable rapor üretildi.",
+  "interrupted_prerequisite": "İlk exec oturumu sonuç kaydetmeden SIGTERM/143 ile sona erdi. Aynı iki tamamlanmamış kontrol bir kez kalıcı süreçlerle yeniden çalıştırılıp ayrı exit/sonuç kayıtlarıyla başarılı oldu. Başarılı önceki teslim kontrolleri tekrar başlatılmadı.",
+  "input_view_improvement": "İlk üç parti görünümünde 12 varlık bütçesi tema CSS’sini atladığı için yerel varlıklar yeniden kullanılarak temel tema CSS tamamlandı. İlk türevler ve özgünler korunur; nihai girdi yeni görünümlerle yeniden DOSSIER_INPUT_OK verdi. Üretim kodu veya doğrulama kuralları değiştirilmedi."
+}
