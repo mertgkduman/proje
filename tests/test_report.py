@@ -1,5 +1,6 @@
 """Raporun gerçek veride erişilebilir sekme sözleşmesi."""
 import json
+import re
 import sys
 import unittest
 from html.parser import HTMLParser
@@ -39,6 +40,9 @@ class ReportTest(unittest.TestCase):
         data = json.loads((root / 'data/releases' / release / 'records.json').read_text())
         report = render_report(data)
         self.assertIn('role="tablist"', report)
+        self.assertEqual(re.findall(r'role="tab" id="tab-([^"]+)"', report),
+                         ['yeni-parti', 'tip', 'dem', 'iyi', 'yeni-yol', 'dbp',
+                          'emep', 'saadet', 'demokrat', 'comparison'])
         self.assertIn('id="comparison-summary"', report)
         for party in data['scope_party']:
             self.assertIn('id="party-' + party['party_id'] + '"', report)
@@ -46,6 +50,15 @@ class ReportTest(unittest.TestCase):
         self.assertIn('id="scope-method"', report)
         self.assertIn('<meta name="viewport" content="width=device-width, initial-scale=1">', report)
         self.assertIn('<h1>Türkiye siyasi partileri: kaynaklı pilot rapor</h1>', report)
+        for removed in ('Bu dokuz partilik ön liste', 'PROJECT.md kullanıcı kararı',
+                        'Grup adından bireysel parti üyeliği çıkarılmaz.',
+                        'Bu başlıklar beş parti dosyası başlığından ayrıdır.',
+                        'TİP kaynağı yalnız sözlük dayanağıdır',
+                        'Erişilen belgenin kesim günündeki sürümü ayrıca doğrulanmamıştır.',
+                        'aday, dayanak doğrulanmadı', 'Doğrulanamadı:'):
+            self.assertNotIn(removed, report)
+        self.assertEqual(report.count('href="#attempt-0104-tuzuk-verify"'), 1)
+        self.assertIn('class="status">Doğrulanamadı</span>', report)
         text = ReaderText()
         text.feed(report)
         visible = ' '.join(text.parts)
