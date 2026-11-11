@@ -17,24 +17,24 @@ Faz 3 tüzük ve program karşılaştırmalarını, Faz 4 söylem–uygulama kar
 
 ### Parti sırası ve ara teslimler
 
-- **D-01** — İlk yeni dosya TİP için hazırlanır. Her parti bu fazın dosya ve kaynak doğrulama ölçütlerini karşıladığında yerel rapora ayrı bir teslim olarak eklenir ve sıradaki partiye geçilir. Yeni Parti dosyası için Faz 1 pilotu temel alınır.
-- **D-02** — Yeni dosyaların hazırlanma sırası TİP → DEM Parti → İYİ Parti → Yeni Yol Partisi → Demokratik Bölgeler Partisi (DBP) → Emek Partisi (EMEP) → Saadet Partisi → Demokrat Parti.
-- **D-03** — Raporun parti sekmeleri Yeni Parti → TİP → DEM Parti → İYİ Parti → Yeni Yol Partisi → DBP → EMEP → Saadet Partisi → Demokrat Parti sırasını izler. TİP ikinci sekmedir. Karşılaştırmalı Özet de ana sekmeler arasında yer alır. Bu sıra rapor sunumuna aittir.
-- **D-04** — Her parti eklendiğinde kısa ara teslim, güncellenmiş rapor bağlantısını, eklenen içeriği ve önemli kaynak eksiklerini içerir.
+- **D-01:** İlk yeni dosya TİP için hazırlanır. Her parti bu fazın dosya ve kaynak doğrulama ölçütlerini karşıladığında yerel rapora ayrı bir teslim olarak eklenir ve sıradaki partiye geçilir. Yeni Parti dosyası için Faz 1 pilotu temel alınır.
+- **D-02:** Yeni dosyaların hazırlanma sırası TİP → DEM Parti → İYİ Parti → Yeni Yol Partisi → Demokratik Bölgeler Partisi (DBP) → Emek Partisi (EMEP) → Saadet Partisi → Demokrat Parti.
+- **D-03:** Raporun parti sekmeleri Yeni Parti → TİP → DEM Parti → İYİ Parti → Yeni Yol Partisi → DBP → EMEP → Saadet Partisi → Demokrat Parti sırasını izler. TİP ikinci sekmedir. Karşılaştırmalı Özet de ana sekmeler arasında yer alır. Bu sıra rapor sunumuna aittir.
+- **D-04:** Her parti eklendiğinde kısa ara teslim, güncellenmiş rapor bağlantısını, eklenen içeriği ve önemli kaynak eksiklerini içerir.
 
 ### Belge sürümlerinin sunumu
 
-- **D-05** — Bulgunun dayandığı belge sürümü önde görünür. Aynı belgenin erişilebilen diğer sürümleri, kaynağın yanındaki açılır geçmiş bölümünden incelenir. Her bulgu, dayandığı pasaj ve belge sürümüne bağlıdır.
-- **D-06** — Kısa künye belge adını, kaynak türünü, belge tarihini ve sürümü gösterir. Künye açıldığında erişim ve doğrulama tarihleri, ilgili madde/sayfa veya pasaj ve özgün belge ile arşiv bağlantıları görünür.
-- **D-07** — Belgenin ait olduğu dönem ve önceki sürümle ilişkisi, kaynaklar elverdiğinde kısa açıklamayla verilir. Kaynaklı yapay zekâ açıklaması koyu mavi, doğrudan aktarım siyah ve tırnak içinde gösterilir. Bu metinlerin kökeni de veri kaydında tutulur.
-- **D-08** — Parti sekmesinin altındaki kaynaklar beş araştırma başlığına göre gruplanır. Belge geçmişi ilgili belgenin yanında, kaynak türü kısa künyede gösterilir. Bulgulardaki bağlantılar ilgili kaynak kaydını açar.
+- **D-05:** Bulgunun dayandığı belge sürümü önde görünür. Aynı belgenin erişilebilen diğer sürümleri, kaynağın yanındaki açılır geçmiş bölümünden incelenir. Her bulgu, dayandığı pasaj ve belge sürümüne bağlıdır.
+- **D-06:** Kısa künye belge adını, kaynak türünü, belge tarihini ve sürümü gösterir. Künye açıldığında erişim ve doğrulama tarihleri, ilgili madde/sayfa veya pasaj ve özgün belge ile arşiv bağlantıları görünür.
+- **D-07:** Belgenin ait olduğu dönem ve önceki sürümle ilişkisi, kaynaklar elverdiğinde kısa açıklamayla verilir. Kaynaklı yapay zekâ açıklaması koyu mavi, doğrudan aktarım siyah ve tırnak içinde gösterilir. Bu metinlerin kökeni de veri kaydında tutulur.
+- **D-08:** Parti sekmesinin altındaki kaynaklar beş araştırma başlığına göre gruplanır. Belge geçmişi ilgili belgenin yanında, kaynak türü kısa künyede gösterilir. Bulgulardaki bağlantılar ilgili kaynak kaydını açar.
 
 ### Temel bilgi kartı ve kuruluş kronolojisi
 
-- **D-09** — Sade bilgi kartı resmî ad, kısaltma, kuruluş tarihi, sicil kimliği ve doğrulanmış resmî siteyi içerir. Genel merkez ve genel başkan gibi diğer kaynaklı temel bilgiler Kuruluş bölümünde yer alır. Bilgiler ilgili kaynak ve tarihleriyle sunulur.
-- **D-10** — Kuruluş bağlamı ve varsa ad değişiklikleri tarih sıralı kayıtlarla gösterilir. Her olay kendi tarihi ve kaynağıyla ayrı satırda yer alır.
-- **D-11** — Kronoloji kuruluşu, belgelenmiş ad ve kısaltma değişikliklerini, tüzel statü kayıtlarını ve ilk kongre veya ilk yönetim gibi doğrulanabilen kuruluş adımlarını kapsar.
-- **D-12** — Aynı adı taşımış ayrı bir partiye değinmek gerektiğinde kronolojinin yanındaki not, her iki tüzel kimliği kaynaklarıyla açıklar.
+- **D-09:** Sade bilgi kartı resmî ad, kısaltma, kuruluş tarihi, sicil kimliği ve doğrulanmış resmî siteyi içerir. Genel merkez ve genel başkan gibi diğer kaynaklı temel bilgiler Kuruluş bölümünde yer alır. Bilgiler ilgili kaynak ve tarihleriyle sunulur.
+- **D-10:** Kuruluş bağlamı ve varsa ad değişiklikleri tarih sıralı kayıtlarla gösterilir. Her olay kendi tarihi ve kaynağıyla ayrı satırda yer alır.
+- **D-11:** Kronoloji kuruluşu, belgelenmiş ad ve kısaltma değişikliklerini, tüzel statü kayıtlarını ve ilk kongre veya ilk yönetim gibi doğrulanabilen kuruluş adımlarını kapsar.
+- **D-12:** Aynı adı taşımış ayrı bir partiye değinmek gerektiğinde kronolojinin yanındaki not, her iki tüzel kimliği kaynaklarıyla açıklar.
 
 ### Faz 1 yönteminin uygulanması
 

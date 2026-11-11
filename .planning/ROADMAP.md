@@ -78,7 +78,54 @@ Plans:
 3. Okur, kaynakların birincil belge, gazetecilik, akademik çalışma veya bağımsız rapor türünü görebilir; birincil kaynak önceliği ve ikincil kaynak kullanımı aynı yöntemle açıklanır.
 4. Okur, bulgunun hangi belge sürümüne ve döneme dayandığını ve mevcut eski sürümleri görebilir; henüz araştırılmamış bir başlık, denenmiş bir aramanın “Bulunamadı” sonucu gibi gösterilmez.
 
-**Plans:** TBD
+**Plans:** 10 plans
+
+Plans:
+**Wave 1**
+
+- [ ] 02-01-PLAN.md — Wave 1: Gerçek TİP kuruluş tracer'ı, güvenli şema/renderer geçişi ve yerel makbuz
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 02-02-PLAN.md — Wave 2: Kaynak künyesi/geçmişi, kimlik kartı ve kuruluş kronolojisi
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
+- [ ] 02-03-PLAN.md — Wave 3: Tam TİP dosyası, korunan Yeni Parti kartı ve ayrı teslim
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
+- [ ] 02-04-PLAN.md — Wave 4: DEM Parti dosyası ve doğrulanmış yerel teslim
+
+**Wave 5** *(blocked on Wave 4 completion)*
+
+- [ ] 02-05-PLAN.md — Wave 5: İYİ Parti dosyası ve doğrulanmış yerel teslim
+
+**Wave 6** *(blocked on Wave 5 completion)*
+
+- [ ] 02-06-PLAN.md — Wave 6: Yeni Yol Partisi dosyası ve doğrulanmış yerel teslim
+
+**Wave 7** *(blocked on Wave 6 completion)*
+
+- [ ] 02-07-PLAN.md — Wave 7: DBP dosyası ve doğrulanmış yerel teslim
+
+**Wave 8** *(blocked on Wave 7 completion)*
+
+- [ ] 02-08-PLAN.md — Wave 8: EMEP dosyası ve doğrulanmış yerel teslim
+
+**Wave 9** *(blocked on Wave 8 completion)*
+
+- [ ] 02-09-PLAN.md — Wave 9: Saadet Partisi dosyası ve doğrulanmış yerel teslim
+
+**Wave 10** *(blocked on Wave 9 completion)*
+
+- [ ] 02-10-PLAN.md — Wave 10: Demokrat Parti dosyası ve dokuz dosyalı Faz 2 kabulü
+
+**Cross-cutting constraints:**
+
+- D-03, D-05, D-06, D-07 ve D-08: Beş başlık, sunum sırası ve doğru sürüm/tür/dönem/pasaj/başlık kaynakları çalışır; önceki dosyalar korunur.
+- Ayrıntılı karşılaştırma, söylem/uygulama ve mali araştırma kapsamı genişletilmez; araştırılmayan başlık Henüz incelenmedi görünür.
+
 **UI hint**: yes
 
 ### Phase 3: Tüzük ve programların karşılaştırılması
@@ -160,7 +207,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
-| 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 0/TBD | Not started | - |
+| 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 0/10 | Planned | - |
 | 3. Tüzük ve programların karşılaştırılması | 0/TBD | Not started | - |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
