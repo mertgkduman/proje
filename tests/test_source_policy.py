@@ -14,6 +14,12 @@ BASE = 'b14c96c54e4b420686c46e5cfb1071a3'
 
 
 class SourcePolicy(unittest.TestCase):
+    def test_turkish_publisher_case_preserves_dotted_and_dotless_i(self):
+        from kaynaklar import folded
+        self.assertEqual(folded('HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ'),
+                         folded('Halkların Eşitlik ve Demokrasi Partisi'))
+        self.assertNotEqual(folded('Halkların'), folded('Halklarin'))
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.old = arsiv.DATA
@@ -71,6 +77,30 @@ class SourcePolicy(unittest.TestCase):
         arsiv.record(self.work,'document_version',bad)
         with self.assertRaisesRegex(ValueError,'yayıncı'):
             arsiv.record(self.work,'source_attribution',self.attribution(bad,publisher='Türkiye İşçi Partisi'))
+
+    def test_short_name_html_uses_same_party_host_and_full_name_anchor(self):
+        import hashlib
+        anchor = self.charter()
+        arsiv.record(self.work, 'source_attribution', self.attribution(anchor))
+        raw = b'<html><title>Parti Tuzugu</title><body>YP</body></html>'
+        digest = hashlib.sha256(raw).hexdigest()
+        folder = arsiv.DATA / 'objects' / digest
+        folder.mkdir()
+        (folder / 'original.html.bin').write_bytes(raw)
+        (folder / 'readable.html').write_bytes(arsiv.readable_bytes(raw, 'html'))
+        short = dict(anchor, id='policy-short-html', sha256=digest,
+                     original_path=f'objects/{digest}/original.html.bin',
+                     readable_path=f'objects/{digest}/readable.html')
+        arsiv.record(self.work, 'document_version', short)
+        arsiv.record(self.work, 'source_attribution', self.attribution(short))
+        bad = dict(short, id='policy-short-other-host',
+                   original_url='https://unsupported.example/tuzuk',
+                   final_url='https://unsupported.example/tuzuk')
+        arsiv.record(self.work, 'document_version', bad)
+        with self.assertRaisesRegex(ValueError, 'yayıncı'):
+            arsiv.record(self.work, 'source_attribution', self.attribution(bad))
+        with self.assertRaisesRegex(ValueError, 'yayıncı'):
+            arsiv.record(self.work, 'source_attribution', self.attribution(short, publisher='Başka Parti'))
 
     def test_social_requires_account_date_and_permalink_and_claim_stays_claim(self):
         self.assertIn('source_attribution', arsiv.TABLES, 'Sürümlü atıf sözleşmesi eksik')

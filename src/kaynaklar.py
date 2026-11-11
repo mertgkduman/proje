@@ -12,7 +12,7 @@ KINDS = {'party_publication': ('party',), 'journalism': ('journalism','news'), '
 
 
 def folded(text):
-    return text.replace('İ','i').casefold()
+    return text.translate(str.maketrans({'İ':'i', 'I':'ı'})).casefold()
 
 
 def active_policy(db):
@@ -46,10 +46,10 @@ def check_attribution(db, value):
         raw = safe_path(DATA, v['original_path']).read_bytes()
         text = folded(raw.decode('utf-8', errors='replace'))
         publisher_present = folded(value['publisher']) in text
-        # PDF metni sıkıştırılmış veya font eşlemesi eksik olabilir. Aynı parti
-        # yayıncısının arşivli HTML yayını, aynı ana makinedeki PDF'nin yayıncı
-        # atfını destekler; sicilden alan adı/yürürlük kanıtı istenmez (D-13).
-        if not publisher_present and raw.startswith(b'%PDF-'):
+        # PDF metni sıkıştırılmış olabilir; HTML sayfası yalnız kısa parti
+        # adını kullanabilir. Tam adı taşıyan arşivli HTML yayını, aynı parti
+        # ve aynı ana makinedeki bu yayının atfını destekler (D-13).
+        if not publisher_present and (raw.startswith(b'%PDF-') or v['mime'] == 'text/html'):
             host = urlsplit(v['final_url']).hostname
             for h in db.execute("SELECT v.original_path,v.final_url,a.publisher FROM document_version v JOIN document d ON d.id=v.document_id JOIN source_attribution a ON a.version_id=v.id WHERE d.party_id=? AND a.kind='party_publication' AND v.mime='text/html'", (v['party_id'],)):
                 if urlsplit(h['final_url']).hostname == host and folded(h['publisher']) == folded(value['publisher']) and folded(value['publisher']) in folded(safe_path(DATA,h['original_path']).read_text(encoding='utf-8',errors='replace')):
