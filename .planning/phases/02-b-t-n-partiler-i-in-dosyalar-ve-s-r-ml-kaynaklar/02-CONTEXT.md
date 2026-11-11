@@ -31,10 +31,18 @@ Faz 3 tüzük ve program karşılaştırmalarını, Faz 4 söylem–uygulama kar
 
 ### Temel bilgi kartı ve kuruluş kronolojisi
 
-- **D-09:** Sade bilgi kartı resmî ad, kısaltma, kuruluş tarihi, sicil kimliği ve doğrulanmış resmî siteyi içerir. Genel merkez ve genel başkan gibi diğer kaynaklı temel bilgiler Kuruluş bölümünde yer alır. Bilgiler ilgili kaynak ve tarihleriyle sunulur.
+- **D-09:** Sade bilgi kartı resmî ad, kısaltma, kuruluş tarihi, sicil kimliği ve kaynaklı resmî siteyi (D-13) içerir. Genel merkez ve genel başkan gibi diğer kaynaklı temel bilgiler Kuruluş bölümünde yer alır. Bilgiler ilgili kaynak ve tarihleriyle sunulur.
 - **D-10:** Kuruluş bağlamı ve varsa ad değişiklikleri tarih sıralı kayıtlarla gösterilir. Her olay kendi tarihi ve kaynağıyla ayrı satırda yer alır.
 - **D-11:** Kronoloji kuruluşu, belgelenmiş ad ve kısaltma değişikliklerini, tüzel statü kayıtlarını ve ilk kongre veya ilk yönetim gibi doğrulanabilen kuruluş adımlarını kapsar.
 - **D-12:** Aynı adı taşımış ayrı bir partiye değinmek gerektiğinde kronolojinin yanındaki not, her iki tüzel kimliği kaynaklarıyla açıklar.
+
+
+### 11 Kasım 2026 kullanıcı düzeltmesi — önceki sınırlamaları değiştirir
+
+- **D-13:** Bu çalışma kaynak derlemesidir. Parti yayınları, atıflı haberler ve sosyal paylaşımlar kullanılabilir. Yeni Parti'nin resmî sitesi kullanıcının açık kararıyla https://yenipartiyiz.biz, tüzük /parti-tuzugu ve program /parti-programi adresleridir. Sicilden alan adı kanıtı, belgenin tarihsel yürürlüğünü kanıtlama veya her kaynak için insan kabulü içerik kullanmanın ön koşulu değildir. Yayıncı, varsa yazar, kaynak adresi ve bilinen yayın tarihi korunur; sosyal paylaşımda hesap/yazar, paylaşım tarihi ve kalıcı adres gerekir. Beyan/iddia söyleyene atfedilir; kaynağı karşılaştırmak iddiayı hukuken doğrulamak değildir. Sicil kimliği iddiaları kendi sicil kaynaklarıyla tutarlı kalır; bilinmeyen tarih/dönem uydurulmaz. D-09'daki site alanı bu kaynaklı yayıncı ilişkisiyle doldurulur.
+- **D-14:** Okur önce partinin neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve finansman-harcama bilgilerini okur. Teknik yöntem, arama girişimleri, yetki incelemeleri ve çözümlenmiş eski eksikler kapalı ayrıntılarda kalır. Gerçek güncel eksikler kısa gösterilir. Alıntılar siyah ve tırnak içinde, kaynaklı özetler koyu mavidir.
+- **D-15:** HTML kaynakların özgün baytları değişmez; ayrıca özgün statik düzeni, yerel görsel/stil/fontları koruyan sürümlü pasif arşiv görünümü hazırlanır. Kaynak scriptleri/formları/çerçeveleri çalışmaz; yerel varlık manifesti ve hash denetimi kullanılır. Tüzük ve program ayrı doğru bağlantılardır.
+- **D-16:** Bu yetkili düzeltme 02-03 başlamadan tamamlanır ve mevcut GitHub Pages raporu güncellenir. D-01/D-02'nin sonraki parti sırası korunur; Faz 2 halen 2/10, TİP tracer ve completed_prefix=[] kalır. Eski release, renderer ve teslim makbuzları değişmez. Sonraki partiler için her kaynakta insan onayı aranmaz; derleme teslimi ve kaynak anlamı ayrı tutulur.
 
 ### Faz 1 yönteminin uygulanması
 
@@ -78,7 +86,7 @@ Bu fazın gereksinimleri yol haritası ve gereksinim belgesinde tanımlıdır.
 
 - `src/arsiv.py` — Kaynak yakalama, belge/sürüm/pasaj ve bulgu kayıtları, yerel çalışma alanı, kapalı SQLite kopyası ve sürüm denetimi.
 - `src/rapor.py` — Geçerli sürümün sekmeli HTML üreticisi. Parti sekmeleri, kaynak bağlantıları, künye ayrıntıları ve “Henüz incelenmedi” görünümü hazırdır.
-- `data/current.json` — Geçerli SQLite, JSON ve HTML dosyalarının aynı kapalı sürümdeki konumunu gösterir. TİP’e bağlı sicil, TBMM komisyon raporu ve tüzük kayıtları araştırma için başlangıç noktasıdır. Tüzük, Faz 1’de ortak konu sözlüğünün dayanağı olarak kullanılmıştır. Kesim tarihindeki tüzük sürümü ayrıca doğrulanmalıdır.
+- `data/current.json` — Geçerli SQLite, JSON ve HTML dosyalarının aynı kapalı sürümdeki konumunu gösterir. TİP’e bağlı sicil, TBMM komisyon raporu ve tüzük kayıtları araştırma için başlangıç noktasıdır. Tüzük, Faz 1’de ortak konu sözlüğünün dayanağı olarak kullanılmıştır. Kesim tarihindeki yürürlük belirsizliği ayrıca kaydedilir; parti yayını olarak derlemeyi engellemez (D-13).
 - `tests/test_documents.py`, `tests/test_report.py` ve `tests/test_publication.py` — Kaynak sahipliği, rapor görünümü ve sürüm üretimi kontrolleri.
 
 ### Established Patterns

@@ -6,7 +6,7 @@ from urllib.parse import urlsplit
 from dosyalar import SOURCE_TYPE_LABELS
 
 
-RENDERER_VERSION = 10
+RENDERER_VERSION = 11
 STYLE = Path(__file__).with_name('rapor_v8.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),

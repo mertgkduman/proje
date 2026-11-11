@@ -90,3 +90,35 @@ class SourcePolicy(unittest.TestCase):
     def test_historical_renderer_and_policy_still_audit(self):
         self.assertEqual(arsiv.audit_release(BASE), BASE)
 
+    def test_journalism_allows_unknown_author_date_but_requires_attributed_claim(self):
+        v = self.charter()
+        db = arsiv.connect(self.work / 'records.sqlite3')
+        db.execute("UPDATE document SET source_kind='news' WHERE id='policy-charter'")
+        db.commit(); db.close()
+        arsiv.record(self.work, 'source_attribution', self.attribution(v, kind='journalism', publisher='Haber yayını'))
+        data = arsiv.export_db(self.work / 'records.sqlite3', 'workspace')
+        self.assertIsNone(data['source_attribution'][0]['author'])
+        db = arsiv.connect(self.work / 'records.sqlite3')
+        db.execute("UPDATE finding SET epistemic_type='fact' WHERE id='policy-charter-f'")
+        db.commit(); db.close()
+        with self.assertRaisesRegex(ValueError, 'atıflı'):
+            arsiv.export_db(self.work / 'records.sqlite3', 'workspace')
+
+    def test_policy_cannot_be_removed_or_exemptions_widened(self):
+        from kaynaklar import validate_policy_descent
+        base = arsiv.export_db(self.work / 'records.sqlite3', 'workspace')
+        for change in ('remove','widen'):
+            candidate = copy.deepcopy(base)
+            if change == 'remove': candidate['source_policy']=[]
+            else: candidate['source_policy'][0]['legacy_findings']='["invented"]'
+            with self.assertRaises(ValueError): validate_policy_descent(base,candidate)
+
+    def test_official_site_needs_party_publication_evidence_for_same_host(self):
+        from kaynaklar import official_site_supported
+        v = self.charter()
+        arsiv.record(self.work, 'source_attribution', self.attribution(v))
+        data = arsiv.export_db(self.work / 'records.sqlite3', 'workspace')
+        field = dict(value='https://yenipartiyiz.biz',finding_id='policy-charter-f')
+        self.assertTrue(official_site_supported(data,field,data['finding_evidence']))
+        self.assertFalse(official_site_supported(data,dict(field,value='https://unsupported.example'),data['finding_evidence']))
+

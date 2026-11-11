@@ -28,6 +28,9 @@ from rapor_v6 import render_report as render_v6_report
 from rapor_v7 import render_report as render_v7_report
 from rapor_v8 import render_report as render_v8_report
 from rapor_v9 import render_report as render_v9_report
+from rapor_v10 import render_report as render_v10_report
+from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
+                      check_evidence_attribution, validate_policy_descent)
 from dosyalar import (DOSSIER_TABLES, foundation_for_party, migrate_workspace,
                       validate_dossier, validate_delivery_prefix, DELIVERY_ORDER)
 
@@ -90,6 +93,7 @@ TABLES.update({
 TABLES['financial'] = 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT NOT NULL REFERENCES document_version(id), category TEXT NOT NULL, amount TEXT, currency TEXT NOT NULL, period_start TEXT NOT NULL, period_end TEXT NOT NULL, organization_scope TEXT NOT NULL, published_at TEXT NOT NULL, passage_id TEXT REFERENCES passage(id), missing_id TEXT REFERENCES missing(id), number_format TEXT'
 TABLES['review'] = 'id TEXT PRIMARY KEY, kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL'
 TABLES.update(DOSSIER_TABLES)
+TABLES.update(POLICY_TABLES)
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -261,7 +265,7 @@ def open_workspace(scratch=None, fail_at=None):
             shutil.copyfile(DATA / 'releases' / base / 'records.sqlite3', work / 'records.sqlite3')
         db = connect(work / 'records.sqlite3')
         for name, definition in TABLES.items():
-            if name in DOSSIER_TABLES: continue
+            if name in DOSSIER_TABLES or name in POLICY_TABLES: continue
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         columns = {r['name'] for r in db.execute('PRAGMA table_info(document_version)')}
         for column in ('date_precision', 'date_unknown_reason'):
@@ -285,10 +289,12 @@ def record(work, kind, values):
     if kind not in TABLES or not isinstance(values, dict) or not values:
         raise ValueError('Geçersiz kayıt türü veya yükü')
     if kind == 'party_identity_revision': raise ValueError('Kimlik geçişi yalnız sicil doğrulamasıyla yapılabilir')
+    if kind == 'source_policy': raise ValueError('Kaynak politikası yalnız sürümlü migration ile belirlenir')
     assert_lock(work)
     if kind == 'match': return record_match(work, values)
     if kind == 'financial': return record_financial(work, values)
     if kind == 'match_candidate': return insert_checked(work, kind, values, check_candidate)
+    if kind == 'source_attribution': return insert_checked(work, kind, values, check_attribution)
     if kind == 'missing_resolution': return insert_checked(work, kind, values, check_unlinked_resolution)
     if kind in ('lead', 'attempt', 'closure', 'reopen', 'missing', 'document_authority', 'topic'):
         return {'lead': enqueue_lead, 'attempt': record_attempt, 'closure': close_topic, 'reopen': reopen_topic, 'missing': record_missing, 'document_authority': verify_document_authority, 'topic': record_topic}[kind](work, values)
@@ -559,7 +565,8 @@ def validate_evidence(db, finding, passage):
     row = db.execute('SELECT d.party_id,d.source_kind,v.id AS version_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (passage['id'],)).fetchone()
     if not row or row['party_id'] != finding['party_id']: raise ValueError('Kanıt başka partiye ait')
     if finding['provenance'] == 'quote' and finding['text'] not in passage['exact']: raise ValueError('Alıntı pasajda bulunamadı')
-    if finding['heading'] in ('Tüzük','Program') and not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (row['version_id'],finding['party_id'])).fetchone(): raise ValueError('Belge otoritesi doğrulanmadı')
+    compiled = check_evidence_attribution(db,finding,row)
+    if not compiled and finding['heading'] in ('Tüzük','Program') and not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (row['version_id'],finding['party_id'])).fetchone(): raise ValueError('Belge otoritesi doğrulanmadı')
     if finding['heading'] == 'Söylem ve uygulama' and finding['epistemic_type'] == 'fact' and row['source_kind'] == 'party': raise ValueError('Parti beyanı uygulama olgusu olarak kullanılamaz')
 
 
@@ -617,7 +624,12 @@ def check_financial(db, v):
         raise ValueError('Mali kimlik, dönem veya yayın tarihi uyuşmuyor')
     if not re.fullmatch(r'[A-Z]{3}', v['currency']): raise ValueError('Para birimi gerekli')
     if not db.execute('SELECT 1 FROM accounting_period ap JOIN passage p ON p.id=ap.passage_id WHERE ap.party_id=? AND ap.period_start=? AND ap.period_end=? AND ap.date_precision=? AND p.version_id=?', (v['party_id'],v['period_start'],v['period_end'],'day',v['version_id'])).fetchone(): raise ValueError('Kaynakla ilişkili hesap dönemi gerekli')
-    if source['source_kind'] == 'party' and not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (v['version_id'],v['party_id'])).fetchone(): raise ValueError('Parti kaynağının yetkisi doğrulanmadı')
+    if source['source_kind'] == 'party':
+        if active_policy(db):
+            attribution = db.execute('SELECT * FROM source_attribution WHERE version_id=?', (v['version_id'],)).fetchone()
+            if not attribution: raise ValueError('Mali parti yayını için kaynak atfı gerekli')
+            check_attribution(db,dict(attribution))
+        elif not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (v['version_id'],v['party_id'])).fetchone(): raise ValueError('Parti kaynağının yetkisi doğrulanmadı')
     if v.get('amount') is None:
         missing = db.execute('SELECT party_id,heading FROM missing WHERE id=?', (v.get('missing_id'),)).fetchone()
         if not missing or missing['party_id'] != v['party_id'] or missing['heading'] != 'Finansman ve harcamalar': raise ValueError('Bilinmeyen tutar girişime bağlı eksik gerektirir')
@@ -741,10 +753,13 @@ def export_db(path, release_id, strict_identity=False):
         existing = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
         names = [n for n in TABLES if n in existing] if 'scope_party' in existing else LEGACY_TABLES
         cols = {r['name'] for r in db.execute('PRAGMA table_info(document_version)')}
-        result = {'schema_version': 4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1)), 'release_id': release_id}
+        policy = active_policy(db)
+        result = {'schema_version': 5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))), 'release_id': release_id}
+        if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
         if existing.intersection(DOSSIER_TABLES) and not set(DOSSIER_TABLES).issubset(existing): raise ValueError('Eksik dosya şeması')
         for name in names:
             result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY rowid')]
+        validate_policy(db,result)
         if strict_identity:
             for identity in result.get('identity_observation', []): check_identity(db, identity)
         if result['schema_version'] >= 3:
@@ -813,7 +828,7 @@ def export_db(path, release_id, strict_identity=False):
             for resolution in result['missing_resolution']: check_missing_resolution(db, resolution)
         if 'financial' in existing:
             for financial in result['financial']: check_financial(db, financial)
-        if result['schema_version'] == 4:
+        if result['schema_version'] >= 4:
             validate_dossier(result)
         return result
     finally:
@@ -835,16 +850,19 @@ def audit_release(release='current', _seen=None):
         if sha(safe_path(folder, name)) != digest:
             raise ValueError('Manifest özeti eşleşmiyor')
     exported = export_db(folder / 'records.sqlite3', release)
-    if exported['schema_version'] == 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
+    if exported['schema_version'] >= 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
-        if exported['schema_version'] != 4 or manifest.get('data_schema_version') != 4 or manifest.get('dossier_validation_version') != 1 or manifest.get('renderer_version') not in (9, 10):
+        expected = (5,2,11) if exported['schema_version']==5 else (4,1,manifest.get('renderer_version'))
+        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version'),manifest.get('renderer_version')) != expected or manifest.get('renderer_version') not in (9,10,11) or (exported['schema_version']==5 and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_id = manifest.get('base_release')
         if not base_id or base_id == release or not re.fullmatch(r'[0-9a-f]{32}', base_id): raise ValueError('Faz 2 tabanı geçersiz')
         audit_release(base_id, _seen)
         base_folder = safe_path(DATA / 'releases', base_id)
         base_manifest = json.loads((base_folder / 'manifest.json').read_text(encoding='utf-8'))
+        base_data = json.loads((base_folder / 'records.json').read_text(encoding='utf-8'))
+        validate_policy_descent(base_data,exported)
         validate_delivery_prefix(base_manifest, manifest)
         for party in manifest['phase2_delivery']['completed_prefix']:
             validate_dossier(exported, party, 'complete')
@@ -859,7 +877,7 @@ def audit_release(release='current', _seen=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        9: render_v9_report, RENDERER_VERSION: render_report,
+        9: render_v9_report, 10: render_v10_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
@@ -963,6 +981,7 @@ def publish_release(work, fail_at=None, party=None, stage='complete'):
         # acceptance. Earlier snapshots may still be authored incrementally.
         base_phase = False
         if metadata['base']:
+            validate_policy_descent(json.loads((DATA / 'releases' / metadata['base'] / 'records.json').read_text(encoding='utf-8')), payload)
             base = connect_readonly(DATA / 'releases' / metadata['base'] / 'records.sqlite3')
             try:
                 has_method = base.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='method'").fetchone()
@@ -978,7 +997,7 @@ def publish_release(work, fail_at=None, party=None, stage='complete'):
                 validate_dossier(payload, completed_party, 'complete')
         manifest = {'release_id': release, 'renderer_version': RENDERER_VERSION, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
         if phase_delivery:
-            manifest.update(data_schema_version=4, dossier_validation_version=1, phase2_delivery=phase_delivery, base_release=metadata['base'])
+            manifest.update(data_schema_version=5, dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=metadata['base'])
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
         (DATA / 'releases').mkdir(exist_ok=True)
@@ -1015,7 +1034,7 @@ def main():
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
     a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','complete'), default='complete')
     dl = sub.add_parser('dossier-load'); dl.add_argument('--workspace', required=True); dl.add_argument('--input', required=True)
-    dc = sub.add_parser('dossier-check'); dc.add_argument('--input', required=True)
+    dc = sub.add_parser('dossier-check'); dc.add_argument('--input', required=True); dc.add_argument('--stage', choices=('tracer','complete'), default='complete')
     dr = sub.add_parser('delivery-receipt'); dr.add_argument('--release', required=True); dr.add_argument('--party', required=True); dr.add_argument('--out', required=True); dr.add_argument('--previous')
     rr = sub.add_parser('receipt-check'); rr.add_argument('--input', required=True)
     s = sub.add_parser('serve'); s.add_argument('--host', default='127.0.0.1'); s.add_argument('--port', type=int, default=8000)
@@ -1041,7 +1060,7 @@ def main():
         load_dossier(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8')))
     elif args.command == 'dossier-check':
         from dosyalar import check_dossier_input
-        check_dossier_input(args.input); print('DOSSIER_INPUT_OK')
+        check_dossier_input(args.input, args.stage); print('DOSSIER_INPUT_OK')
     elif args.command == 'delivery-receipt':
         from dosyalar import make_delivery_receipt
         receipt = make_delivery_receipt(args.release, args.party, args.previous)

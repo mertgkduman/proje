@@ -7,6 +7,7 @@ import tempfile
 import shutil
 import re
 from urllib.parse import urlsplit
+from kaynaklar import POLICY_TABLES, POLICY_VERSION, official_site_supported
 
 DOSSIER_TABLES = {
     'party_identity_revision': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), previous_registry_key TEXT NOT NULL, registry_key TEXT NOT NULL, previous_legal_name TEXT NOT NULL, legal_name TEXT NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), changed_at TEXT NOT NULL, reason TEXT NOT NULL',
@@ -18,6 +19,7 @@ DOSSIER_TABLES = {
     'version_relation': 'id TEXT PRIMARY KEY, version_id TEXT NOT NULL REFERENCES document_version(id), previous_version_id TEXT NOT NULL REFERENCES document_version(id), relation TEXT NOT NULL, passage_id TEXT REFERENCES passage(id), explanation_finding_id TEXT REFERENCES finding(id)',
 }
 SOURCE_TYPE_LABELS = {'registry': 'Birincil belge', 'official': 'Birincil belge', 'party': 'Birincil belge', 'journalism': 'Gazetecilik', 'news': 'Gazetecilik', 'academic': 'Akademik çalışma', 'independent_report': 'Bağımsız rapor', 'unverified': 'Türü doğrulanamadı', 'unknown': 'Türü doğrulanamadı'}
+SOURCE_TYPE_LABELS['social'] = 'Sosyal medya'
 DELIVERY_ORDER = ('tip', 'dem', 'iyi', 'yeni-yol', 'dbp', 'emep', 'saadet', 'demokrat')
 HEADINGS = ('Kuruluş', 'Tüzük', 'Program', 'Söylem ve uygulama', 'Finansman ve harcamalar')
 FIELDS = ('legal_name', 'abbreviation', 'foundation_date', 'registry_key', 'official_site', 'headquarters', 'chairperson')
@@ -37,12 +39,16 @@ def migrate_workspace(db, backup_path, fail_at=None):
         db.execute('BEGIN IMMEDIATE')
         for name, definition in DOSSIER_TABLES.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        for name, definition in POLICY_TABLES.items():
+            db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if fail_at == 'migration':
             raise RuntimeError('Enjekte edilen migration hatası')
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Migration bütünlük denetimi başarısız')
         if any([tuple(row) for row in db.execute('SELECT * FROM "' + name + '"')] != rows for name, rows in before.items()):
             raise ValueError('Migration önceki kayıtları değiştirdi')
+        if not db.execute('SELECT 1 FROM source_policy').fetchone():
+            db.execute('INSERT INTO source_policy VALUES (?,?,?,?,?)', (POLICY_VERSION, '2026-11-11', 'D-13: atıflı kaynak derleme; parti yayını, haber ve sosyal paylaşım kullanılabilir; sicil kimliği ayrı denetlenir.', json.dumps([r[0] for r in db.execute('SELECT id FROM document_version')]), json.dumps([r[0] for r in db.execute('SELECT id FROM finding')])))
         db.commit()
     except Exception:
         db.rollback()
@@ -137,7 +143,8 @@ def validate_dossier(data, party_id=None, stage='tracer'):
                 url = urlsplit(x['value'])
                 if url.scheme not in ('http','https') or not url.hostname or url.username or url.password: raise ValueError('Resmî site adresi geçersiz')
                 host = url.hostname.removeprefix('www.')
-                if not any(a['registry_party_id'] == x['party_id'] and a['status'] == 'verified' and urlsplit(versions[a['version_id']]['final_url']).hostname and urlsplit(versions[a['version_id']]['final_url']).hostname.removeprefix('www.') == host for a in data['document_authority']):
+                supported = official_site_supported(data,x,evidence) if data.get('source_policy') else any(a['registry_party_id'] == x['party_id'] and a['status'] == 'verified' and urlsplit(versions[a['version_id']]['final_url']).hostname and urlsplit(versions[a['version_id']]['final_url']).hostname.removeprefix('www.') == host for a in data['document_authority'])
+                if not supported:
                     raise ValueError('Resmî site alan adı sahipliği doğrulanmadı')
         else:
             m = missing.get(x['missing_id'])
@@ -228,7 +235,7 @@ def validate_dossier(data, party_id=None, stage='tracer'):
 def validate_phase_two_workspace(work, party_id=None, stage='complete'):
     import arsiv
     data = arsiv.validate_phase_one_workspace(work)
-    if data['schema_version'] != 4: raise ValueError('Faz 2 için şema 4 gerekli')
+    if data['schema_version'] not in (4,5): raise ValueError('Faz 2 için şema 4/5 gerekli')
     if stage not in ('tracer', 'complete'): raise ValueError('Geçersiz aşama')
     if party_id:
         if party_id not in ('yeni-parti',) + DELIVERY_ORDER: raise ValueError('Kapsam dışı parti')
@@ -286,7 +293,7 @@ def load_dossier(work, payload):
         method = db.execute('SELECT version,cutoff_at FROM method ORDER BY version DESC LIMIT 1').fetchone()
         db.close()
         if not method or (payload.get('method_version'),payload.get('cutoff_at')) != (method['version'],method['cutoff_at']): raise ValueError('Yöntem sürümü veya kesim uyuşmuyor')
-        rank = {k:i for i,k in enumerate(('document','document_version','passage','identity_observation','lead','attempt','missing','event_date','accounting_period','finding','finding_evidence','verification','review','dossier_source','dossier_field','dossier_event','version_context','version_relation','dossier_identity_note'))}
+        rank = {k:i for i,k in enumerate(('document','document_version','source_attribution','archive_view','passage','identity_observation','lead','attempt','missing','event_date','accounting_period','finding','finding_evidence','verification','review','dossier_source','dossier_field','dossier_event','version_context','version_relation','dossier_identity_note','missing_resolution'))}
         entries = payload['records']
         if any(not isinstance(e,dict) or set(e) != {'kind','values'} or e['kind'] not in arsiv.TABLES or not isinstance(e['values'],dict) for e in entries): raise ValueError('Geçersiz kayıt')
         entries = sorted(entries, key=lambda e: rank.get(e['kind'], 100))
@@ -294,7 +301,7 @@ def load_dossier(work, payload):
         notes = []
         for entry in entries:
             kind, values = entry['kind'], entry['values']
-            if kind in ('party','scope_party','scope_observation','method','party_identity_revision'): raise ValueError('Bu kayıt yükleme yoluyla değiştirilemez')
+            if kind in ('party','scope_party','scope_observation','method','party_identity_revision','source_policy'): raise ValueError('Bu kayıt yükleme yoluyla değiştirilemez')
             if 'party_id' in values and values['party_id'] != payload['party_id']: raise ValueError('Girdi başka partiye yazamaz')
             if payload.get('identity_confirmation') and not confirmation_done and rank.get(kind,100) >= rank['identity_observation']:
                 db = arsiv.connect(tmp / 'records.sqlite3')
@@ -333,14 +340,14 @@ def load_dossier(work, payload):
         (tmp / 'records.sqlite3').replace(work / 'records.sqlite3')
 
 
-def check_dossier_input(path):
+def check_dossier_input(path, stage='complete'):
     import arsiv
     payload = json.loads(Path(path).read_text(encoding='utf-8'))
     with tempfile.TemporaryDirectory() as tmp:
         work = arsiv.open_workspace(tmp)
         try:
             load_dossier(work, payload)
-            validate_phase_two_workspace(work, payload['party_id'], 'complete')
+            validate_phase_two_workspace(work, payload['party_id'], stage)
         finally:
             try: arsiv.assert_lock(work)
             except (ValueError,OSError): pass

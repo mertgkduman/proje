@@ -8,6 +8,10 @@ Türkiye'deki siyasi partilerin kuruluş bilgilerini, tüzüklerini, programlar�
 
 **Core Value:** Herkesin siyasi partiler hakkında kendi değerlendirmesini yapabilmesi için kaynağına kadar izlenebilen, karşılaştırılabilir ve eksiklerini açıkça gösteren bilgiye eşit erişim sağlamak.
 
+### Kaynak derleme kararı (2026-11-11)
+
+Parti yayınları, haberler ve sosyal paylaşımlar açık yayıncı/yazar/hesap/tarih/URL atfıyla kullanılabilir. Sicil üzerinden alan adı veya tarihsel yürürlük kanıtı ve her kaynakta insan kabulü ön koşulu yoktur; sicil kimliği kendi kaynağıyla tutarlı kalır. Yeni Parti resmî sitesi kullanıcının açık kararıyla https://yenipartiyiz.biz; tüzük /parti-tuzugu, program /parti-programi. Okur önce gerçek parti içeriğini görür; yöntem kapalı ayrıntılardadır. Özgün baytlar değişmez, HTML arşivi pasif ve yerel varlıklıdır. D-13–D-16 geçerlidir.
+
 ### Constraints
 
 - **Tarafsızlık:** Bütün partiler aynı başlıklar ve doğrulama ölçütleriyle incelenir; kapsam kararı araştırma sonucu gibi sunulmaz.

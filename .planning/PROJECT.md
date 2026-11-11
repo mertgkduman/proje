@@ -139,7 +139,14 @@ Ortak konu başlıklarında tarama sırasında bulunan bütün uygun ve yeterli 
 
 Ana rapor sekmeleri partiler ve Karşılaştırmalı Özet olacaktır; her partinin altında ortak araştırma başlıkları bulunacaktır. Kaynaklar ilgili sekmenin altında listelenir ve metindeki ilgili ifadelerden rapordaki kaynak kaydına bağlantı verilir. Kaynak kaydı künye, ilgili pasaj, özgün bağlantı ve arşiv kopyasını bir araya getirir. Eksik bilgi durumu, gerekçe ve arama/erişim tarihi ilgili araştırma başlığında gösterilir. Ayrıntılı kararlar: [.planning/phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md](phases/01-kapsam-y-ntem-ve-kaynakl-pilot-rapor/01-CONTEXT.md).
 
-Faz 1 yerel Python/SQLite yazıcısı, değişmez belge arşivi, kapalı release snapshotları ve bunlardan üretilen sekmeli Türkçe HTML ile tamamlandı. Aktif SQLite yerel scratch üzerinde çalışır; kayıt, JSON ve HTML tek atomik release işaretçisiyle birlikte tutulur. PDF denetimindeki mevcut yerel Poppler/Cairo gereksinimleri README içinde belgelenir. Katkı/güncelleme sürecinin genişletilmesi ve barındırma/yayın yeri sonraki çalışmalardır. Kamuya yayın yapılmadı. Pilotun tüzük/program otoritesi ve doğrulanmış mali tutarları bakımından süren kaynak eksikleri raporda korunur; kullanıcı kabulü bu eksikleri yeni olguya dönüştürmez.
+Faz 1 yerel Python/SQLite yazıcısı, değişmez belge arşivi, kapalı release snapshotları ve bunlardan üretilen sekmeli Türkçe HTML ile tamamlandı. Aktif SQLite yerel scratch üzerinde çalışır; kayıt, JSON ve HTML tek atomik release işaretçisiyle birlikte tutulur. PDF denetimindeki mevcut yerel Poppler/Cairo gereksinimleri README içinde belgelenir. Katkı/güncelleme sürecinin genişletilmesi ve barındırma/yayın yeri sonraki çalışmalardır. GitHub Pages yayını 10 Kasım 2026 tarihli yetkili hızlı görevle açıldı. 11 Kasım kaynak derleme kararıyla Yeni Parti parti yayınları doğrudan kullanılır; gerçek mali dönem/hesap açıkları korunur.
+
+
+## Kaynak derleme kararı — 11 Kasım 2026
+
+Bu çalışma parti yayınlarını, haberleri ve sosyal paylaşımları açık atıfla bir araya getirir. Yayıncı, varsa yazar, bilinen yayın tarihi ve adres korunur; sosyal kaynakta hesap/yazar, tarih ve kalıcı adres gerekir. Beyan ve iddia söyleyene atfedilir. Alan adı için sicil kanıtı, tarihsel yürürlük kanıtı veya her kaynakta insan kabulü kullanım ön koşulu değildir. Sicil kimliği iddiası gerçek sicille tutarlı kalır; bilinmeyen tarih ve hesap dönemi uydurulmaz. Yeni Parti'nin resmî sitesi kullanıcının açık kararıyla https://yenipartiyiz.biz; tüzük /parti-tuzugu, program /parti-programi adresidir.
+
+Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve finansman/harcamaları görür. Yöntem ve geçmiş girişimler kapalı ayrıntılardadır. Özgün kaynak baytları korunur; HTML belgeler için yerel varlıklarla pasif arşiv görünümü eklenir. Alıntı siyah ve tırnak içinde, kaynaklı özet koyu mavidir. Politika sürümü 2, şema 5 ve renderer 11 önceki değişmez sürümleri değiştirmez.
 
 ## Constraints
 
@@ -178,6 +185,8 @@ Faz 1 yerel Python/SQLite yazıcısı, değişmez belge arşivi, kapalı release
 | İlk doğrulanmış TBMM yakalamasını veri kesimi yapmak | Tekrarlanabilir dönem ve ayrı erişim/olay/belge tarihleri | 2026-11-10T14:38:46.154751+00:00; kullanıcı tarafından önceden seçilmiş tarih olarak sunulmaz |
 | Yeni kanıtla çözülen eksikleri tarihçede korumak | Aday/eksik geçişini ve kanıt değişimini izlemek | Faz 1 aday ledger ve çözüm kayıtlarıyla uygulandı |
 | Faz 1 UAT kabulünü toplu kullanıcı yanıtıyla kaydetmek | Kullanıcının açık onayıyla kapanış; yeni test veya kaynak olgusu üretmemek | 8/8 kabul, bildirilen sorun yok; ham 13 uç sınıflandırması ve kaynak eksikleri korunur |
+
+| 11 Kasım 2026 D-13–D-16 kaynak derleme düzeltmesi | Kullanıcının kaynakları doğrudan ve atıflı kullanma kararı | Parti/haber/sosyal derleme, içerik öncelikli rapor, pasif arşiv ve mevcut yayının düzeltmesi; Faz 2 2/10 kalır |
 
 ## Evolution
 
