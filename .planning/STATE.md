@@ -6,10 +6,10 @@ current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
 current_plan: 7
 status: executing
 stopped_at: 02-06 tamamlandı; Yeni Yol teslimi bildirildikten sonra sıradaki 02-07 DBP
-last_updated: "2026-11-11T18:44:21.155Z"
+last_updated: "2026-11-11T19:04:04.946Z"
 last_activity: 2026-11-11
 last_activity_desc: 02-06 tamamlandı; Yeni Yol tam yerel dosyası ve İYİ Parti’ye bağlı makbuzu hazır, sıradaki 02-07 DBP
-state_head: 03ba4406bba13620481b5809356f0bfd75beb665
+state_head: a475f5aa3155c42739dd53c45ab5d2ce8cc79726
 progress:
   total_phases: 6
   completed_phases: 1
@@ -105,6 +105,8 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ### Pending Todos
 
+- [Quick 261111-j4v]: Süreç içi PDF/kütüphane tekrar kullanımı eklendi; 34 test geçti. Gerçek Yeni Yol makbuz ölçümü 180 saniyede zaman aşımına uğradı; makbuz/veri değişmedi, toplam hızlanma veya yeni makbuz kabulü iddia edilmedi. Önceki başarılı teslim geçerlidir; Faz 2 6/10, sıradaki 02-07.
+
 None yet.
 
 ### Blockers/Concerns
@@ -121,8 +123,11 @@ None yet.
 |---|-------------|------|--------|-----------|
 | 261110-pds | GitHub aktarımı ve pilot HTML raporunun yayımlanması | 2026-11-10 | 46f4882 | [261110-pds-repoyu-github-a-kopyala-ve-pilot-html-ra](./quick/261110-pds-repoyu-github-a-kopyala-ve-pilot-html-ra/) |
 | 261111-epm | Kaynak derleme yaklaşımı, gerçek Yeni Parti içeriği, sade rapor ve özgün görünümlü belge arşivlerinin yayımlanması | 2026-11-11 | 7e18593 | [261111-epm-kaynak-derleme-y-ntemini-sadele-tir-yeni](./quick/261111-epm-kaynak-derleme-y-ntemini-sadele-tir-yeni/) |
+| 261111-j4v | Süreç içi PDF yeniden kullanımı; 34 test geçti, tek makbuz ölçümü 180s sınırında tamamlanmadı | 2026-11-11 | a475f5a | [261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel](./quick/261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel/) |
 
 ### Roadmap Evolution
+
+Quick 261111-j4v tamamlandı: `a475f5a`; [plan ve özet](./quick/261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel/). Faz planları ve gereksinim durumu değiştirilmedi.
 
 - Phase 1 edited: success_criteria: kullanıcının görünür metin türü etiketi yerine tırnaklı alıntı seçimi uygulandı; kapsam ve bağımlılıklar korunuyor
 - Phase 6 edited: success_criteria: kullanıcının görünür metin türü etiketi yerine tırnaklı alıntı seçimi uygulandı; kapsam ve bağımlılıklar korunuyor
