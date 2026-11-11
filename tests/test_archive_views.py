@@ -37,6 +37,22 @@ class ArchiveViews(unittest.TestCase):
             (Path(tmp)/row['index_path']).write_text(text+'tampered')
             with self.assertRaises(ValueError):m.validate_view(Path(tmp),row)
 
+    def test_utf8_is_declared_early_for_legacy_meta_and_headless_fragments(self):
+        m=self.module()
+        body='İstanbul, özgürlük ve eşitlik; BARIŞ VE DEMOKRASİ PARTİSİ PROGRAMI'
+        sources=[('<html><head><title>'+('Uzun başlık '*200)+'</title>'
+                  '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">'
+                  '</head><body>'+body+'</body></html>'),'<p>'+body+'</p>']
+        for source in sources:
+            with self.subTest(head='<head>' in source), tempfile.TemporaryDirectory() as tmp:
+                raw=source.encode('utf-8')
+                row=m.build_view(raw,'https://example.org/program',Path(tmp),fetch_assets=False)
+                rendered=(Path(tmp)/row['index_path']).read_bytes()
+                self.assertIn(b'<meta charset="utf-8">',rendered[:1024])
+                self.assertIn(body,rendered.decode('utf-8'))
+                self.assertEqual(row['source_sha256'],hashlib.sha256(raw).hexdigest())
+                self.assertTrue(m.validate_view(Path(tmp),row))
+
     def test_known_static_css_cdn_is_localized_while_script_mime_is_rejected(self):
         m=self.module()
         def response(request,timeout):

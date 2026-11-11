@@ -153,8 +153,14 @@ def build_view(content,url,data_root,fetch_assets=True,local_links=None):
     parser=PassiveHTML(resources,local_links or {})
     parser.feed(content.decode('utf-8',errors='replace'));parser.close()
     output='<!doctype html>'+''.join(parser.parts)
+    # The derivative is always UTF-8, including legacy http-equiv sources.
+    # Put its encoding before long titles/styles so browser sniffing cannot
+    # fall back to a single-byte charset after sanitization removes the source meta.
+    output=re.sub(r'<meta charset="[^"]*">','',output)
     if '<head' not in output:
-        output='<meta http-equiv="Content-Security-Policy" content="'+html.escape(CSP,quote=True)+'">'+output
+        output='<meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="'+html.escape(CSP,quote=True)+'">'+output
+    else:
+        output=re.sub(r'(<head(?: [^>]*)?>)',r'\1<meta charset="utf-8">',output,count=1)
     # Static layout additions only; source handlers/scripts remain absent.
     output=output.replace('</head>','<style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head>')
     files={'index.html':output.encode(),**resources.assets}
