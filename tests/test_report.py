@@ -39,8 +39,10 @@ class ReportTest(unittest.TestCase):
         from browser_probe import probe_archives
         root=Path(__file__).resolve().parents[1]
         data=json.loads((root/'data/releases'/arsiv.current()/'records.json').read_text())
-        self.assertEqual(len(data['archive_view']),2)
         views={v['version_id']:v for v in data['archive_view']}
+        self.assertEqual(len(views),len(data['archive_view']),'Arşiv sürüm kimlikleri tekil kalmalı')
+        self.assertTrue({'epm-charter-v1','epm-program-v1'}.issubset(views),
+                        'Sonraki parti dosyaları eklenirken iki pilot arşivi korunmalı')
         result=probe_archives((root/'data/releases'/arsiv.current()/'index.html').as_uri(),(root/'data'/views['epm-charter-v1']['index_path']).as_uri(),(root/'data'/views['epm-program-v1']['index_path']).as_uri())
         self.assertEqual(result['status'],'BROWSER_ARCHIVES_OK')
     def test_reader_shows_party_content_and_faithful_archive_links(self):
