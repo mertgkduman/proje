@@ -1,0 +1,929 @@
+{
+  "schema_version": 1,
+  "party_id": "dbp",
+  "release_id": "4a4ce5448c894a9ebc3c12e97cacb6dd",
+  "checked_at": "2026-11-11T19:53:38.236685+00:00",
+  "data_schema_version": 5,
+  "source_policy_version": 2,
+  "renderer_version": 13,
+  "dossier_validation_version": 2,
+  "previous_receipt": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py receipt-check --input data/deliveries/02-06-yeni-yol.json",
+    "result": "DELIVERY_RECEIPT_OK"
+  },
+  "previous_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release 732fcd2bfc954200b4292c51ef29f526 --phase 2 --party yeni-yol",
+    "result": "PHASE2_PARTY_OK 732fcd2bfc954200b4292c51ef29f526"
+  },
+  "dossier_check": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py dossier-check --input data/dossiers/02-dbp.json",
+    "result": "DOSSIER_INPUT_OK"
+  },
+  "party_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release current --phase 2 --party dbp",
+    "result": "PHASE2_PARTY_OK 4a4ce5448c894a9ebc3c12e97cacb6dd"
+  },
+  "phase1_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release current --phase 1",
+    "result": "PHASE1_AUDIT_OK 4a4ce5448c894a9ebc3c12e97cacb6dd"
+  },
+  "receipt_check": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py receipt-check --input data/deliveries/02-07-dbp.json",
+    "result": "DELIVERY_RECEIPT_OK"
+  },
+  "tests": {
+    "dossiers": {
+      "status": "pass",
+      "passed": 10
+    },
+    "archive_views": {
+      "status": "pass",
+      "passed": 6
+    }
+  },
+  "browser": {
+    "status": "BROWSER_ARCHIVES_OK",
+    "results": [
+      {
+        "kind": "report",
+        "width": 1365,
+        "url": "http://127.0.0.1:8000/releases/4a4ce5448c894a9ebc3c12e97cacb6dd/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 1365,
+        "url": "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - DEMOKRATİK BÖLGELER PARTİSİ",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "DEMOKRATİK BÖLGELER PARTİSİ"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/23b925f3d9d4e94b1e9971e4367cc30e1c6f56856916fcd741c1e0301ceadaea.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/d18054c528e32ac098f154412e5026ddcb95f905994be5b8b1d768dd7bf73667.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/db2ad03c62da32e6559c07ae60c42972e5109d7d0f6d97afb43c8c29029d1e42.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/e5b29c36b2e7a2f4db58307359fa574004be43d39790e4b7a3cf80a7b16e8bb6.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/ed5bf02d648da84d8d68e5e7a9261c198f4713969f92b5729a81fb039a93be15.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 1365,
+        "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/index.html",
+        "title": "Demokratik Bölgeler Partisi",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "Demokratik Bölgeler Partisi",
+          "Demokratik Bölgeler Partisi",
+          ""
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b0c7a8bdbc81d12a3ef4c9a2ef3a86d7249b63ce23c74a2853bc6d3ed047878b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/2ebdf5a39976a24b80a88c4efd09ecf93f2523d8094cf77ddeb7c6ad82f536ff.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b11ef2f9077b8b8b484d463b46f0c6aa9a0812f6f3a66264d356fe67ad282a92.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b88ed638de6606035b9451c074d7eec100a8962c76777bde7da116d7632a70b9.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/ed986063c6ead40f571451e1cc0026957a5e19e5a8b38cb57d1723c710f01545.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/cfe5d60d82f46f8ff8a99373c7a5af29e4ee1f19318f04ee75cfaca217c1034d.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b0c7a8bdbc81d12a3ef4c9a2ef3a86d7249b63ce23c74a2853bc6d3ed047878b.png",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/2ebdf5a39976a24b80a88c4efd09ecf93f2523d8094cf77ddeb7c6ad82f536ff.jpg"
+        ]
+      },
+      {
+        "kind": "program",
+        "width": 1365,
+        "url": "http://127.0.0.1:8000/views/b10cb215176d523b8d52cf98f4a05a99/index.html",
+        "title": "Parti Programımız | Barış ve Demokrasi Partisi",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "",
+          "Bilinmeyen adlı kullanıcının avatarı",
+          "",
+          "",
+          "enver adlı kullanıcının avatarı",
+          "",
+          "",
+          "Bilinmeyen adlı kullanıcının avatarı",
+          "",
+          "",
+          "herbalife ürünleri adlı kullanıcının avatarı",
+          "",
+          "",
+          ""
+        ],
+        "images": [],
+        "resources": [
+          "http://127.0.0.1:8000/views/b10cb215176d523b8d52cf98f4a05a99/assets/d87ba9e3d2b2a1b99dbd4e4f28eee0f9a3f4476a475d2d929327864e80a2b939.css"
+        ]
+      },
+      {
+        "kind": "old-charter-pdf",
+        "width": 1365,
+        "open": true,
+        "url": "http://127.0.0.1:8000/objects/517d8a925bdc5b9260ec45dbce9cafacc9413d3374f4325320892c2e2f0c010a/original.pdf",
+        "text": "Yargıtay arşivinde DBP tüzüğü — 49 sayfalık tarihsiz tarama Birincil belge · Belirtilmemiş · Tarihsiz 49 sayfalık DBP tüzüğü; taranmış PDF\n“Barış ve Demokrasi Partisi BDP tüzüğü yürürlükten kaldırılmıştır.”\nBelge tarihi\nBelirtilmemiş\nSürüm\nTarihsiz 49 sayfalık DBP tüzüğü; taranmış PDF\nErişim\n11.11.2026\nDoğrulama\n11.11.2026\nKonum\n112\nPDF sayfası\n49\nBasılı sayfa\n49\nSayfa kontrolü\n11.11.2026 · PDF metin katmanı boş. İlgili sayfa görsel olarak okunarak kısa pasaj birebir kaydedildi; insan kabulü değildir.\nBelge tarihi notu\nBelgenin kabul/yayın günü belirtilmemiş; yakalama zamanı bu tarihin yerine konmadı.\nAtıf\nYargıtay Cumhuriyet Başsavcılığı (DBP tüzüğü arşivi) · yayın tarihi belirtilmemiş\nAtıf dayanağı\nBaşlık, yayıncı, varsa yazar ve tarih ile özgün adres birlikte okundu. Yargıtay alanındaki DBP başlıklı tüzük taraması; metin katmanı boş. İlk iki ve son sayfa görsel okundu. Metnin kendi yayıncısı DBP, dağıtan arşiv Yargıtaydır; kabul tarihi sayfada yoktur.\n\nErişilen diğer DBP tüzüğü; tarih ve normatif sürüm sırası bilinmiyor, kaynaklı metin ilişkisi ayrıca gösterilir. Ad geçişi anlatımını destekleyen açık BDP tüzüğü bağlantısı,49.sayfa112.madde.\n\nSürüm geçmişi\nÖzgün kaynak\nArşiv kopyası\nBelgeyi indir"
+      },
+      {
+        "kind": "report",
+        "width": 360,
+        "url": "http://127.0.0.1:8000/releases/4a4ce5448c894a9ebc3c12e97cacb6dd/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 360,
+        "url": "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - DEMOKRATİK BÖLGELER PARTİSİ",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "DEMOKRATİK BÖLGELER PARTİSİ"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/23b925f3d9d4e94b1e9971e4367cc30e1c6f56856916fcd741c1e0301ceadaea.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/d18054c528e32ac098f154412e5026ddcb95f905994be5b8b1d768dd7bf73667.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/db2ad03c62da32e6559c07ae60c42972e5109d7d0f6d97afb43c8c29029d1e42.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/e5b29c36b2e7a2f4db58307359fa574004be43d39790e4b7a3cf80a7b16e8bb6.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/ed5bf02d648da84d8d68e5e7a9261c198f4713969f92b5729a81fb039a93be15.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+          "http://127.0.0.1:8000/views/2f58292655d3d47512136c2fa5caca8b/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 360,
+        "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/index.html",
+        "title": "Demokratik Bölgeler Partisi",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "Demokratik Bölgeler Partisi",
+          "Demokratik Bölgeler Partisi",
+          ""
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b0c7a8bdbc81d12a3ef4c9a2ef3a86d7249b63ce23c74a2853bc6d3ed047878b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/2ebdf5a39976a24b80a88c4efd09ecf93f2523d8094cf77ddeb7c6ad82f536ff.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b11ef2f9077b8b8b484d463b46f0c6aa9a0812f6f3a66264d356fe67ad282a92.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b88ed638de6606035b9451c074d7eec100a8962c76777bde7da116d7632a70b9.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/ed986063c6ead40f571451e1cc0026957a5e19e5a8b38cb57d1723c710f01545.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/cfe5d60d82f46f8ff8a99373c7a5af29e4ee1f19318f04ee75cfaca217c1034d.css",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/af5264507d83fcc7af9efe01865e6a449262f03ac6c1c5e0b167357669e99df8.png",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/b0c7a8bdbc81d12a3ef4c9a2ef3a86d7249b63ce23c74a2853bc6d3ed047878b.png",
+          "http://127.0.0.1:8000/views/e936f58a795fed8a1bfdf25c56bf0ff1/assets/2ebdf5a39976a24b80a88c4efd09ecf93f2523d8094cf77ddeb7c6ad82f536ff.jpg"
+        ]
+      },
+      {
+        "kind": "program",
+        "width": 360,
+        "url": "http://127.0.0.1:8000/views/b10cb215176d523b8d52cf98f4a05a99/index.html",
+        "title": "Parti Programımız | Barış ve Demokrasi Partisi",
+        "overflow": false,
+        "characterSet": "UTF-8",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "",
+          "Bilinmeyen adlı kullanıcının avatarı",
+          "",
+          "",
+          "enver adlı kullanıcının avatarı",
+          "",
+          "",
+          "Bilinmeyen adlı kullanıcının avatarı",
+          "",
+          "",
+          "herbalife ürünleri adlı kullanıcının avatarı",
+          "",
+          "",
+          ""
+        ],
+        "images": [],
+        "resources": [
+          "http://127.0.0.1:8000/views/b10cb215176d523b8d52cf98f4a05a99/assets/d87ba9e3d2b2a1b99dbd4e4f28eee0f9a3f4476a475d2d929327864e80a2b939.css"
+        ]
+      },
+      {
+        "kind": "old-charter-pdf",
+        "width": 360,
+        "open": true,
+        "url": "http://127.0.0.1:8000/objects/517d8a925bdc5b9260ec45dbce9cafacc9413d3374f4325320892c2e2f0c010a/original.pdf",
+        "text": "Yargıtay arşivinde DBP tüzüğü — 49 sayfalık tarihsiz tarama Birincil belge · Belirtilmemiş · Tarihsiz 49 sayfalık DBP tüzüğü; taranmış PDF\n“Barış ve Demokrasi Partisi BDP tüzüğü yürürlükten kaldırılmıştır.”\nBelge tarihi\nBelirtilmemiş\nSürüm\nTarihsiz 49 sayfalık DBP tüzüğü; taranmış PDF\nErişim\n11.11.2026\nDoğrulama\n11.11.2026\nKonum\n112\nPDF sayfası\n49\nBasılı sayfa\n49\nSayfa kontrolü\n11.11.2026 · PDF metin katmanı boş. İlgili sayfa görsel olarak okunarak kısa pasaj birebir kaydedildi; insan kabulü değildir.\nBelge tarihi notu\nBelgenin kabul/yayın günü belirtilmemiş; yakalama zamanı bu tarihin yerine konmadı.\nAtıf\nYargıtay Cumhuriyet Başsavcılığı (DBP tüzüğü arşivi) · yayın tarihi belirtilmemiş\nAtıf dayanağı\nBaşlık, yayıncı, varsa yazar ve tarih ile özgün adres birlikte okundu. Yargıtay alanındaki DBP başlıklı tüzük taraması; metin katmanı boş. İlk iki ve son sayfa görsel okundu. Metnin kendi yayıncısı DBP, dağıtan arşiv Yargıtaydır; kabul tarihi sayfada yoktur.\n\nErişilen diğer DBP tüzüğü; tarih ve normatif sürüm sırası bilinmiyor, kaynaklı metin ilişkisi ayrıca gösterilir. Ad geçişi anlatımını destekleyen açık BDP tüzüğü bağlantısı,49.sayfa112.madde.\n\nSürüm geçmişi\nÖzgün kaynak\nArşiv kopyası\nBelgeyi indir"
+      }
+    ]
+  },
+  "pdf_http": {
+    "status": "pass",
+    "url": "http://127.0.0.1:8000/objects/517d8a925bdc5b9260ec45dbce9cafacc9413d3374f4325320892c2e2f0c010a/original.pdf",
+    "mime": "application/pdf",
+    "sha256": "517d8a925bdc5b9260ec45dbce9cafacc9413d3374f4325320892c2e2f0c010a",
+    "matches_original": true
+  },
+  "preservation": {
+    "status": "pass",
+    "unchanged_immutable_files": 1201,
+    "preserved_old_rows": {
+      "accounting_period": 0,
+      "action": 16,
+      "actor": 1,
+      "archive_view": 20,
+      "attempt": 163,
+      "closure": 16,
+      "comparison": 0,
+      "comparison_evidence": 0,
+      "document": 82,
+      "document_authority": 1,
+      "document_version": 91,
+      "dossier_event": 15,
+      "dossier_field": 33,
+      "dossier_identity_note": 0,
+      "dossier_source": 78,
+      "edge": 7,
+      "event_date": 15,
+      "financial": 0,
+      "finding": 227,
+      "finding_evidence": 258,
+      "finding_topic": 26,
+      "group_membership": 1,
+      "identity_observation": 5,
+      "lead": 113,
+      "manual_passage": 4,
+      "match": 18,
+      "match_candidate": 26,
+      "membership": 1,
+      "method": 1,
+      "missing": 38,
+      "missing_resolution": 12,
+      "parliamentary_group": 1,
+      "party": 8,
+      "party_identity_revision": 3,
+      "passage": 183,
+      "person": 2,
+      "reopen": 2,
+      "report_option": 1,
+      "research_state": 25,
+      "review": 228,
+      "scope_exclusion": 7,
+      "scope_observation": 9,
+      "scope_party": 9,
+      "source_attribution": 55,
+      "source_policy": 1,
+      "topic": 16,
+      "topic_basis": 1,
+      "topic_query": 3,
+      "topic_search": 21,
+      "url_alias": 85,
+      "verification": 89,
+      "version_context": 69,
+      "version_relation": 2
+    },
+    "controlled_identity_changes": {
+      "party": [
+        {
+          "id": "dbp",
+          "legal_name": "DEMOKRATİK BÖLGELER PARTİSİ",
+          "registry_key": "tbmm-f72877bd-6268-037b-e050-007f01005610"
+        }
+      ]
+    },
+    "identity_revision": [
+      {
+        "changed_at": "2026-11-11T19:21:41.962612+00:00",
+        "id": "revision-dbp-yargitay-117",
+        "legal_name": "DEMOKRATİK BÖLGELER PARTİSİ",
+        "party_id": "dbp",
+        "passage_id": "0207-dbp-legal",
+        "previous_legal_name": "DEMOKRATİK BÖLGELER PARTİSİ",
+        "previous_registry_key": "tbmm-f72877bd-6268-037b-e050-007f01005610",
+        "reason": "Sabit dbp parti kimliği ve dondurulmuş TBMM gözlemleri korunur; önceki TBMM URL anahtarı gerçek /sipar/117 sicil adı ve02.05.2008kuruluşuyla kontrollü değiştirilir. BDP–DBP ad ilişkisi ayrıca açık kaynaklarla belgelenir.",
+        "registry_key": "yargitay-117"
+      }
+    ]
+  },
+  "content": {
+    "records": 275,
+    "source_versions": 11,
+    "summary_quote_pairs": 20,
+    "card_fields": 7,
+    "chronology_events": 6,
+    "dated_events": 5,
+    "manual_visual_passages": 2,
+    "passive_views": 10
+  },
+  "archive_visual_observations": {
+    "report_desktop_mobile": "readable; no horizontal overflow",
+    "source_charter": "Turkish text reads correctly; some desktop source paragraph formatting extends into its right sidebar; mobile flow is readable. SVG logo omitted under passive asset policy.",
+    "historical_program": "Turkish title and content now read correctly; third-party WordPress theme/avatar assets remain unavailable."
+  },
+  "archive_fidelity": [
+    {
+      "version_id": "0207-dbp-registry-v1",
+      "local_files": 31,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABzAJoDASI",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy=",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236ea8fe'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643 — HTTP Error 418: I'm a teapot",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643#iefix — HTTP Error 418: I'm a teapot",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.svg?t=1769685282643#remixicon — HTTP Error 418: I'm a teapot"
+      ]
+    },
+    {
+      "version_id": "0207-dbp-charter-v1",
+      "local_files": 8,
+      "limitations": [
+        "Kaynak alınamadı: https://dbp.org.tr/uploads/files/dbp-logo-tr.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Kaynak alınamadı: https://dbp.org.tr/fonts/glyphicons-halflings-regular.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://dbp.org.tr/fonts/glyphicons-halflings-regular.eot#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://dbp.org.tr/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://dbp.org.tr/css/owl.video.play.png — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.eot — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.eot#iefix — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.woff — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.ttf — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.svg#flexslider-icon — HTTP Error 404: Not Found",
+        "Yerelleştirilmeyen kaynak: data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+        "Kaynak alınamadı: https://dbp.org.tr/css/ytplayer/ytp-regular.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Yerelleştirilmeyen kaynak: data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAA5sABEAAAAAFCAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABgAAAABwAAAAcZ9iuNUdERUYAAAGcAAAAHQAAACAAdAAET1MvMgAAAbwAAABJAAAAYHUMUrFjbWFwAAACCAAAAKkAAAGKn5XycWN2dCAAAAK0AAAANgAAADYNLQohZnBnbQAA",
+        "Kaynak alınamadı: https://dbp.org.tr/css/bxslider/images/arrow-left.png — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/bxslider/images/arrow-right.png — HTTP Error 404: Not Found",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/dark_square/btnNext.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/dark_square/btnPrevious.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_square/sprite.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_square/btnNext.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_square/btnPrevious.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/sprite.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternTop.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternLeft.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternRight.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/loader.gif",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/btnNext.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/btnPrevious.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternBottom.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/default_thumbnail.gif",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_rounded/loader.gif",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/menuzord-skins/menuzord-rounded-boxed.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/menuzord-skins/menuzord-shadow.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/style-main-v8.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/custom-bootstrap-margin-padding.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/responsive.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/js/revolution-slider/css/settings.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/js/revolution-slider/css/layers.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/js/revolution-slider/css/navigation.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/style.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/colors/theme-skin-green-dbp.css",
+        "UTF-8 düzeltmesi: aynı yakalamanın daha önce alınmış yerel varlıkları yeniden kullanıldı; özgün kaynak değişmedi."
+      ]
+    },
+    {
+      "version_id": "0207-dbp-management-v1",
+      "local_files": 8,
+      "limitations": [
+        "Kaynak alınamadı: https://dbp.org.tr/uploads/files/dbp-logo-tr.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Kaynak alınamadı: https://dbp.org.tr/fonts/glyphicons-halflings-regular.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://dbp.org.tr/fonts/glyphicons-halflings-regular.eot#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://dbp.org.tr/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://dbp.org.tr/css/owl.video.play.png — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.eot — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.eot#iefix — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.woff — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.ttf — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/fonts/flexslider-icon.svg#flexslider-icon — HTTP Error 404: Not Found",
+        "Yerelleştirilmeyen kaynak: data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+        "Kaynak alınamadı: https://dbp.org.tr/css/ytplayer/ytp-regular.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Yerelleştirilmeyen kaynak: data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAA5sABEAAAAAFCAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABgAAAABwAAAAcZ9iuNUdERUYAAAGcAAAAHQAAACAAdAAET1MvMgAAAbwAAABJAAAAYHUMUrFjbWFwAAACCAAAAKkAAAGKn5XycWN2dCAAAAK0AAAANgAAADYNLQohZnBnbQAA",
+        "Kaynak alınamadı: https://dbp.org.tr/css/bxslider/images/arrow-left.png — HTTP Error 404: Not Found",
+        "Kaynak alınamadı: https://dbp.org.tr/css/bxslider/images/arrow-right.png — HTTP Error 404: Not Found",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/dark_square/btnNext.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/dark_square/btnPrevious.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_square/sprite.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_square/btnNext.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_square/btnPrevious.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/sprite.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternTop.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternLeft.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternRight.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/loader.gif",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/btnNext.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/btnPrevious.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/contentPatternBottom.png",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/facebook/default_thumbnail.gif",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/prettyPhoto/light_rounded/loader.gif",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/menuzord-skins/menuzord-rounded-boxed.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/menuzord-skins/menuzord-shadow.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/style-main-v8.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/custom-bootstrap-margin-padding.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/responsive.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/js/revolution-slider/css/settings.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/js/revolution-slider/css/layers.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/js/revolution-slider/css/navigation.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/style.css",
+        "Varlık sayısı/boyut sınırı: https://dbp.org.tr/css/colors/theme-skin-green-dbp.css",
+        "UTF-8 düzeltmesi: aynı yakalamanın daha önce alınmış yerel varlıkları yeniden kullanıldı; özgün kaynak değişmedi."
+      ]
+    },
+    {
+      "version_id": "0207-dbp-first-congress-v1",
+      "local_files": 1,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://maps.gstatic.com/weather/v1/mostly_cloudy_night.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/milli-gazete-dikey-1.svg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/milli-gazete-logo-light-1.svg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/mgzt-varsayilan.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/maaslar-fonda-kaldi-iddiasi-akp-den-yanit-geldi.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/chp-den-akp-ye-gecmisti-ozlem-cercioglu-hakkinda-acilan-yolsuzluk-davasinda-karar-aciklandi.webp",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/sergenyalcin-437721.webp",
+        "Yerelleştirilmeyen kaynak: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFJElEQVR4nO2cS2wbRRjH/+v3Y506dqOEpoSqrQpSKwSoIF6HlEpAwg0JcUDiFHHhyq3ixAkERy6A4MQJCQlRSB+8pNCqcKgEgqgEAiht+lDstb1e27G9u8MhwvV43cTe+PHV+/1u++3M7Kf9eWZnZrNR",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/meteoroloji-marmarayi-uyardi-firtina-12-kasimda-basliyor.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/mit-baskani-kalin-ikby-baskani-necirvan-barzani-ile-gorustu.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/ali-pasli.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/akp-li-guler-den-sahap-kavcioglu-sorusuna-yanit-yarin-konusacagim.webp",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/prayer-bg.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/640x375/milligazete-com-tr/uploads/2026/11/arikan-iktidarin-24-yillik-karnesini-ekonomi-ve-fon-vurgunuyla-anlatti-ciplak-vatandas-ekonomisinin-hesabini-sandikta-soracagiz.jpeg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/10/arikandan-teskilatlara-iktidar-hazirligi-cagrisi-muhalefet-eden-teskilattan-iktidara-hazirlanan-organizasyona-gecmeliyiz.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/10/deva-partisinden-istifa-etti-yeni-yolda-kaldi-ertugrul-kayanin-istifasi-yeni-yolun-gundeminde.jpg",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/super-lig.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-1-lig.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-2-lig-beyaz.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-2-lig-kirmizi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-3-lig-1-grup.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-3-lig-2-grup.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-3-lig-3-grup.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/bundesliga.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/premier-lig.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/la-liga.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/serie-a.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/ligue-1.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/azerbaijan-premyer-liqa.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/uefa-sampiyonlar-ligi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/uefa-avrupa-ligi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/uefa-konferans-ligi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/dunya-kupasi.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/645.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/998.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/3579.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/549.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/1004.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/611.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/7411.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/564.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/6343.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/994.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/milli-gazete-logo-1.svg",
+        "Yerelleştirilmeyen kaynak: https://mc.yandex.ru/watch/98695054",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/vendor/te/fonts/roboto.css?v=7.4.9",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/vendor/bootstrap/css/bootstrap.min.css?v=7.4.9",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/css/app7.4.9.min.css",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/css/flow-story.css?v=7.4.9",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/vendor/te/plugins/advert/css/advert-public.css?v=7.4.9",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/vendor/te/packages/fancybox/jquery.fancybox.min.css?v=7.4.9"
+      ]
+    },
+    {
+      "version_id": "0207-dbp-name-detail-v1",
+      "local_files": 42,
+      "limitations": [
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/images/mosque.svg?v=1895026983 — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23007aff'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23fff'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23007aff'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23fff'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' stroke='%236c6c6c' stroke-width='11' stroke-linecap='round' d='M60 7v20'/%3E%3C/def",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' stroke='%23fff' stroke-width='11' stroke-linecap='round' d='M60 7v20'/%3E%3C/defs%3",
+        "Yerelleştirilmeyen kaynak: data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/font/weathericons-regular-webfont.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/font/weathericons-regular-webfont.eot#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/font/weathericons-regular-webfont.svg#weather_iconsregular — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Yerelleştirilmeyen kaynak: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANElEQVQYV2NkIAAYiVbw//9/Y6DiM1ANJoyMjGdBbLgJQAX/kU0DKgDLkaQAvxW4HEvQFwCRcxIJK1XznAAAAABJRU5ErkJggg==",
+        "Yerelleştirilmeyen kaynak: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALElEQVQYV2NkIAAYSVFgDFR8BqrBBEifBbGRTfiPZhpYjiQFBK3A6l6CvgAAE9kGCd1mvgEAAAAASUVORK5CYII=",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/glyphicons-halflings-regular.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/glyphicons-halflings-regular.eot#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/fontawesome-webfont.eot?v=4.7.0 — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/fontawesome-webfont.eot#iefix&v=4.7.0 — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/fontawesome-webfont.woff?v=4.7.0",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/fontawesome-webfont.ttf?v=4.7.0",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/images/menu-sprite.svg",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/images/menu-sprite-reverse.svg",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/flaticon.eot",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/flaticon.eot#iefix",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/flaticon.woff",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/flaticon.ttf",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/fonts/flaticon.svg",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/style/public.php?v=1324421401",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/style/renk.css?v=1030181750",
+        "Varlık sayısı/boyut sınırı: https://www.semdinlihaber.gen.tr/_themes/hs-retina/style/print.css?v=872974053"
+      ]
+    },
+    {
+      "version_id": "0207-dbp-name-news-v1",
+      "local_files": 3,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://mc.yandex.ru/watch/46172883",
+        "UTF-8 düzeltmesi: aynı yakalamanın daha önce alınmış yerel varlıkları yeniden kullanıldı; özgün kaynak değişmedi."
+      ]
+    },
+    {
+      "version_id": "0207-dbp-tbmm-chair-www-v1",
+      "local_files": 6,
+      "limitations": [
+        "Kaynak alınamadı: https://tbmm.gov.tr/img/tbmm-logo.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/BrownRightArrowIcon.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/img/menu_search_icon.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Yerelleştirilmeyen kaynak: https://cdn.tbmm.gov.tr/IKBS/Milletvekilleri/Resim/fa172401-4c51-42f1-aca7-01881f4cbf9b.jpe",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_twitter.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_youtube.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_kutuphane.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/icon_anayasa.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/icon_kanun_ve_kararlar.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/icon_edilekce.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/icon_bilgi_edinme.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbbm_siluet_footer.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/img/footer_asaga_ok.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_home_icon.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_tel_icon.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_email_icon.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/css/bootstrap_520/bootstrap.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/font-awesome/css/font-awesome.min.css",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/css/tbmm-yeni-tasarim.css",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://tbmm.gov.tr/css/fontawesome-all.min.css"
+      ]
+    },
+    {
+      "version_id": "0207-dbp-bdp-charter-v1",
+      "local_files": 4,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://secure.gravatar.com/blavatar/ec5f65d958d543c30931c32052c83b7965151534b7cbb88f895b7bdb78f92597?s=50&d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png",
+        "Yerelleştirilmeyen kaynak: https://pixel.wp.com/b.gif?v=noscript",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='0' fill='none' width='24' height='24'/%3E%3Cg%3E%3Cpath fill='%232EA2CC' d='M12 2l2.582 6.953L22 9.257l-5.822 4.602L18.18 21 12 16.89 5.82 21l2.002-7.14L2 9",
+        "Kaynak alınamadı: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/wpcom-mark.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/jp-app.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/arrow.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/wpcom-wmark-white.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/logo-icon.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/rss-ico.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/menu-left.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/menu-right.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/menu-left-h.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/menu-right-h.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/sl-t.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/sl-b.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/post-head.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/p-con-li.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/p-cat-ico.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/p-com-ico.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/p-tag.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/nav-left.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/nav-right.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/sr-t.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/sr-b.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/sr-h3-ico.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/search-top.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/search-bottom.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/search-form.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/categ-top.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/categ-bottom.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/categ-arrow.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/widget-bottom.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/widget-top.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/tab-left.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/tab-right.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/themes/pub/albeo/images/post-comment.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035i&cssminify=yes",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/_static/??-eJyNjcsKAjEMRX/ImhmUURfip0inLW3GNCmmQfx7H7gRN+7ugcs5cGsuCPfEHaq5RpaRFZbUmw+XD4MaQ5VolBS0+GuKPsb7eyLndVBdwd+iM3KA2ZAiqAT05Eiy6Bf8KHtJ9RkvW8gks6fX4VSP426/mQ7TMA7",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.files.wordpress.com/2012/01/arkaplan.jpg",
+        "UTF-8 düzeltmesi: aynı yakalamanın daha önce alınmış yerel varlıkları yeniden kullanıldı; özgün kaynak değişmedi."
+      ]
+    },
+    {
+      "version_id": "0207-dbp-bdp-program-wordpress-v1",
+      "local_files": 2,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://s2.wp.com/wp-content/themes/pub/albeo/images/com-top.png?m=1391150590i",
+        "Yerelleştirilmeyen kaynak: https://0.gravatar.com/avatar/?s=32&d=identicon&r=G",
+        "Yerelleştirilmeyen kaynak: https://s2.wp.com/wp-content/themes/pub/albeo/images/com-bot.png?m=1391150590i",
+        "Yerelleştirilmeyen kaynak: https://2.gravatar.com/avatar/8a39a5ea29d4bf97631138bc2ac03c8e724215b75bf9e8c283e027a1aa860e75?s=32&d=identicon&r=G",
+        "Yerelleştirilmeyen kaynak: https://0.gravatar.com/avatar/3e9ed9545fb23d7212b3ce76f45c61244d06b4061f22425b4138cf640afa7d7b?s=32&d=identicon&r=G",
+        "Yerelleştirilmeyen kaynak: https://secure.gravatar.com/blavatar/ec5f65d958d543c30931c32052c83b7965151534b7cbb88f895b7bdb78f92597?s=50&d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png",
+        "Yerelleştirilmeyen kaynak: https://pixel.wp.com/b.gif?v=noscript",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='0' fill='none' width='24' height='24'/%3E%3Cg%3E%3Cpath fill='%232EA2CC' d='M12 2l2.582 6.953L22 9.257l-5.822 4.602L18.18 21 12 16.89 5.82 21l2.002-7.14L2 9",
+        "Kaynak alınamadı: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/wpcom-mark.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/jp-app.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Kaynak alınamadı: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/arrow.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/blog-plugins/marketing-bar/images/wpcom-wmark-white.svg",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/_static/??/wp-content/mu-plugins/core-compat/wp-mediaelement.css,/wp-content/mu-plugins/wpcom-bbpress-premium-themes.css?m=1432920480j&cssminify=yes",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/_static/??-eJx9juEKwjAMhF/IGiaDuR/io0jbxdqZNmVNN3x7KziZCP7L5e7LBZakLEfBKBCKSlScjxlGlKTtXdXVkiyHtwG5xNW7zBgHnkAX4aBFvP1QFQj1YAZTPA2wyr3NeQebQrlhwAypGNBkkCHLg/AntvlrQkPs6ui",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035i&cssminify=yes",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.wordpress.com/_static/??-eJyNjcsKAjEMRX/ImhmUURfip0inLW3GNCmmQfx7H7gRN+7ugcs5cGsuCPfEHaq5RpaRFZbUmw+XD4MaQ5VolBS0+GuKPsb7eyLndVBdwd+iM3KA2ZAiqAT05Eiy6Bf8KHtJ9RkvW8gks6fX4VSP426/mQ7TMA7",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://bdpblog.files.wordpress.com/2012/01/arkaplan.jpg",
+        "UTF-8 düzeltmesi: aynı yakalamanın daha önce alınmış yerel varlıkları yeniden kullanıldı; özgün kaynak değişmedi."
+      ]
+    },
+    {
+      "version_id": "0207-dbp-bdp-program-v1",
+      "local_files": 2,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://img1.blogblog.com/img/icon18_email.gif",
+        "Yerelleştirilmeyen kaynak: https://img2.blogblog.com/img/icon18_edit_allbkg.gif",
+        "Yerelleştirilmeyen kaynak: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBwkjgG3d_U2ohtXzG3dTIJyjUTitR3K8ID3ALyemPL03BezsA-wvbGzSKj9MVsQy9WhzRWLop7jQ5pYZp6ZjrCFIElbB7Bh0F32Er-p-zohC3JM-aQrxQOI0iml4ZIA6O8tf_RRM_bxk/s410/1382808_442635509186500_2085279868_n.jpg",
+        "Yerelleştirilmeyen kaynak: https://www.blogger.com/static/v1/widgets/2872013778-css_bundle_v2.css",
+        "Kaynak alınamadı: https://fonts.gstatic.com/l/font?kit=J7afnpV-BGlaFfdAhLEY7g&skey=a1029226f80653a8&v=v15 — Pasif varlık türü desteklenmiyor: text/html",
+        "Yerelleştirilmeyen kaynak: https://themes.googleusercontent.com/image?id=0BwVBOzw_-hbMN2IwNWVhMDktYzNlYy00MGY2LWI5MTYtMTQ2ZTRkMmI3YTE1",
+        "Yerelleştirilmeyen kaynak: https://www.blogblog.com/1kt/transparent/white80.png",
+        "Yerelleştirilmeyen kaynak: https://www.blogblog.com/1kt/transparent/header_gradient_shade.png",
+        "Yerelleştirilmeyen kaynak: https://www.blogblog.com/1kt/transparent/tabs_gradient_shade.png",
+        "Yerelleştirilmeyen kaynak: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc",
+        "Yerelleştirilmeyen kaynak: https://www.blogblog.com/1kt/transparent/black50.png",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://www.blogger.com/dyncss/174811128530515465/authorization.css?zx=8ef35057-1742-4ae3-ae79-784189c7cf4c",
+        "Bu yakalamada yeni varlık erişim denemesi12adresle sınırlandı; metin ve özgün HTML korunur. Atlanan: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd4pB-ySAo6cs_-_UcKjkLdyjpXQRRbpxY4WdbWN1MBu_BLAMdGQ85a0vgrRabwNDr6Z7rykvtlEzIvt720rfyZywHpOg65FynpY_rACozqMf8Cw0UsVWPM6TVhhkFbWQtNw8uUom6Ln8",
+        "UTF-8 düzeltmesi: aynı yakalamanın daha önce alınmış yerel varlıkları yeniden kullanıldı; özgün kaynak değişmedi."
+      ]
+    }
+  ],
+  "charset_correction": {
+    "retained_candidate": "679d9709aefd40fc8c5061387a675101",
+    "changes": [
+      {
+        "version_id": "0207-dbp-charter-v1",
+        "old_view": {
+          "version_id": "0207-dbp-charter-v1",
+          "view_id": "39e4ba45a1e6bc52f8be44e3a4fda74c",
+          "format_version": 1,
+          "source_sha256": "de5370e8d1e5ec4427d58eadadc9c9d195725d0f4baa013871450d4e7e82124a",
+          "index_path": "views/39e4ba45a1e6bc52f8be44e3a4fda74c/index.html",
+          "manifest_path": "views/39e4ba45a1e6bc52f8be44e3a4fda74c/manifest.json",
+          "manifest_sha256": "05089dacb45b1ad0c90e127b052e5efe7fae1401e5998d8c406f03376cc5c98e"
+        },
+        "new_view": {
+          "view_id": "e936f58a795fed8a1bfdf25c56bf0ff1",
+          "format_version": 1,
+          "source_sha256": "de5370e8d1e5ec4427d58eadadc9c9d195725d0f4baa013871450d4e7e82124a",
+          "index_path": "views/e936f58a795fed8a1bfdf25c56bf0ff1/index.html",
+          "manifest_path": "views/e936f58a795fed8a1bfdf25c56bf0ff1/manifest.json",
+          "manifest_sha256": "112e7e361b219bd8b06766e9574d17bf427c2648ae6e3a4ffc7bcd7e83ea4913"
+        }
+      },
+      {
+        "version_id": "0207-dbp-management-v1",
+        "old_view": {
+          "version_id": "0207-dbp-management-v1",
+          "view_id": "38e1c637596fc7b157d255e665a83114",
+          "format_version": 1,
+          "source_sha256": "3b1a8b4ca5e3482e6cba7644bdf62e0bd238bbd934439afce40eaf802a29b286",
+          "index_path": "views/38e1c637596fc7b157d255e665a83114/index.html",
+          "manifest_path": "views/38e1c637596fc7b157d255e665a83114/manifest.json",
+          "manifest_sha256": "f2571890633fa7d39409d7806aeb8483a7d939d874f6b766377dd48023987e2b"
+        },
+        "new_view": {
+          "view_id": "ec5cf79d083b0e3ceb7cf1e611c57919",
+          "format_version": 1,
+          "source_sha256": "3b1a8b4ca5e3482e6cba7644bdf62e0bd238bbd934439afce40eaf802a29b286",
+          "index_path": "views/ec5cf79d083b0e3ceb7cf1e611c57919/index.html",
+          "manifest_path": "views/ec5cf79d083b0e3ceb7cf1e611c57919/manifest.json",
+          "manifest_sha256": "d5c3c49c70f12ab65a79210a9a39746f3e50e0096e3a2716fea99c51a419a99c"
+        }
+      },
+      {
+        "version_id": "0207-dbp-name-news-v1",
+        "old_view": {
+          "version_id": "0207-dbp-name-news-v1",
+          "view_id": "75ee78a553944417702fc8e6612fe6c1",
+          "format_version": 1,
+          "source_sha256": "d31bdddb3b5e25d2590aa4044c72819a84679259616639ca76aa7ff66aac9759",
+          "index_path": "views/75ee78a553944417702fc8e6612fe6c1/index.html",
+          "manifest_path": "views/75ee78a553944417702fc8e6612fe6c1/manifest.json",
+          "manifest_sha256": "bd009584db5d8cf8c6f60061d392f30b97d020ad7d7085a20c4a538565c9a580"
+        },
+        "new_view": {
+          "view_id": "25c11f922725d8a9f7a87c229c32e98a",
+          "format_version": 1,
+          "source_sha256": "d31bdddb3b5e25d2590aa4044c72819a84679259616639ca76aa7ff66aac9759",
+          "index_path": "views/25c11f922725d8a9f7a87c229c32e98a/index.html",
+          "manifest_path": "views/25c11f922725d8a9f7a87c229c32e98a/manifest.json",
+          "manifest_sha256": "06c74cafac3258c89aa65d88d0c523fa26328ab7bd16135304483fb79b268792"
+        }
+      },
+      {
+        "version_id": "0207-dbp-bdp-charter-v1",
+        "old_view": {
+          "version_id": "0207-dbp-bdp-charter-v1",
+          "view_id": "aea2b41f05639c07b87c89d5cddfd55a",
+          "format_version": 1,
+          "source_sha256": "81154a4e7fac1040f1c2e2500d0557531e9ed87e0c639bfe581b73b5ff8e1268",
+          "index_path": "views/aea2b41f05639c07b87c89d5cddfd55a/index.html",
+          "manifest_path": "views/aea2b41f05639c07b87c89d5cddfd55a/manifest.json",
+          "manifest_sha256": "17701be9cfb546214558c4365088e54331790154fc4bb104ab7f2c9c00ee00bb"
+        },
+        "new_view": {
+          "view_id": "6f7e3e8534ca3bdc1934f8110a845f48",
+          "format_version": 1,
+          "source_sha256": "81154a4e7fac1040f1c2e2500d0557531e9ed87e0c639bfe581b73b5ff8e1268",
+          "index_path": "views/6f7e3e8534ca3bdc1934f8110a845f48/index.html",
+          "manifest_path": "views/6f7e3e8534ca3bdc1934f8110a845f48/manifest.json",
+          "manifest_sha256": "570a561dbcdbcf9dbee5cba6ed63d5a928299aeaee722902af1c0f7af865bb1b"
+        }
+      },
+      {
+        "version_id": "0207-dbp-bdp-program-wordpress-v1",
+        "old_view": {
+          "version_id": "0207-dbp-bdp-program-wordpress-v1",
+          "view_id": "eec3c833cd7f42ca0253143d76b7d808",
+          "format_version": 1,
+          "source_sha256": "1db73a2c13c009691839920cad0824ee700df9dabd1ccad858165d464192fbde",
+          "index_path": "views/eec3c833cd7f42ca0253143d76b7d808/index.html",
+          "manifest_path": "views/eec3c833cd7f42ca0253143d76b7d808/manifest.json",
+          "manifest_sha256": "6c4271df59f19312ee5d9f454bb1a330cf9d50ed11dea38937927bce20ec453c"
+        },
+        "new_view": {
+          "view_id": "b10cb215176d523b8d52cf98f4a05a99",
+          "format_version": 1,
+          "source_sha256": "1db73a2c13c009691839920cad0824ee700df9dabd1ccad858165d464192fbde",
+          "index_path": "views/b10cb215176d523b8d52cf98f4a05a99/index.html",
+          "manifest_path": "views/b10cb215176d523b8d52cf98f4a05a99/manifest.json",
+          "manifest_sha256": "22d85191ccaee895539dbd4ef800cad843cddb0247ed10ce870647f59ec8b0d1"
+        }
+      },
+      {
+        "version_id": "0207-dbp-bdp-program-v1",
+        "old_view": {
+          "version_id": "0207-dbp-bdp-program-v1",
+          "view_id": "e468e85b6019f0e4ea2b731b1868024c",
+          "format_version": 1,
+          "source_sha256": "bd00c00dddbf2011987243257252ea3bf2dc47998bb3d1b7443fb732ec46bdbc",
+          "index_path": "views/e468e85b6019f0e4ea2b731b1868024c/index.html",
+          "manifest_path": "views/e468e85b6019f0e4ea2b731b1868024c/manifest.json",
+          "manifest_sha256": "b9f7f57ee524105815976fdf20f02ebc39e62cd8cb21cd5d5c84cd766a388432"
+        },
+        "new_view": {
+          "view_id": "588a2816176e57c77c90f752f6742dec",
+          "format_version": 1,
+          "source_sha256": "bd00c00dddbf2011987243257252ea3bf2dc47998bb3d1b7443fb732ec46bdbc",
+          "index_path": "views/588a2816176e57c77c90f752f6742dec/index.html",
+          "manifest_path": "views/588a2816176e57c77c90f752f6742dec/manifest.json",
+          "manifest_sha256": "24b294cd128f8c5db9f3f2700e25ff4a8e5adbb8211c7a1dd098182394031973"
+        }
+      }
+    ],
+    "status": "fixed",
+    "regression": "legacy http-equiv Content-Type charset and headless UTF-8 fragment; RED failed two subcases, GREEN six tests passed",
+    "retained_candidate_hashes": "pass",
+    "retained_old_views": "pass",
+    "new_source_bytes": false
+  },
+  "important_gaps": [
+    "Güncel DBP adına yayımlanmış ayrı tam program bu taramada bulunamadı. Parti menüsü/tüzük, açık web ve TBMM tarandı; elde edilen BDP dönemi blog kopyalarının güncel DBP programına karşılık geldiği doğrulanmadı.",
+    "Kuruluş dilekçesi, tam kurucu kurul listesi ve 7 Eylül 2008 ilk kongresinin doğrudan tutanağı bulunamadı. Tarihli gazetecilik kaydı kurucu başkanı ve ilk kongreyi anlatır; eksik birincil belgeler üretilmedi.",
+    "Yargıtay’daki tarihsiz taranmış DBP tüzüğünün kabul/son değişiklik günü ve2025metniyle kesin sürüm sırası bilinmiyor.",
+    "BDP dönemi blog kopyalarının kurumsal sahipliği ve kabul/son değişiklik tarihleri bilinmiyor; güncel DBP programı veya kesin resmî eski sürüm sayılmadı.",
+    "Güncel yönetim sayfalarının görev başlangıcı ve belge dönemlerinin kesin bitiş günleri bilinmiyor.",
+    "Söylem–uygulama ve gerçekleşmiş finansman/harcama araştırması sonraki fazlar için Henüz incelenmedi."
+  ],
+  "human_acceptance": false,
+  "public_publication": false
+}
