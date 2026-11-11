@@ -21,6 +21,7 @@ SOURCE_TYPE_LABELS = {'registry': 'Birincil belge', 'official': 'Birincil belge'
 DELIVERY_ORDER = ('tip', 'dem', 'iyi', 'yeni-yol', 'dbp', 'emep', 'saadet', 'demokrat')
 HEADINGS = ('Kuruluş', 'Tüzük', 'Program', 'Söylem ve uygulama', 'Finansman ve harcamalar')
 FIELDS = ('legal_name', 'abbreviation', 'foundation_date', 'registry_key', 'official_site', 'headquarters', 'chairperson')
+FIELD_LABELS = {'legal_name':'Resmî ad', 'abbreviation':'Kısaltma', 'foundation_date':'Kuruluş tarihi', 'registry_key':'Sicil kimliği', 'official_site':'Resmî site', 'headquarters':'Genel merkez', 'chairperson':'Genel başkan'}
 
 
 def migrate_workspace(db, backup_path, fail_at=None):
@@ -344,12 +345,12 @@ def make_delivery_receipt(release, party_id, previous=None, _seen=None):
     data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
     fields = [x for x in data['dossier_field'] if x['party_id'] == party_id]
     sources = sorted({x['version_id'] for x in data['dossier_source'] if x['party_id'] == party_id})
-    added = [f"{x['field']}: {x['value']}" for x in fields if x['value'] is not None]
+    added = [f"{FIELD_LABELS[x['field']]}: {x['value']}" for x in fields if x['value'] is not None]
     if any(x['party_id'] == party_id and x['kind'] == 'foundation' for x in data['dossier_event']): added.append('Kaynaklı kuruluş kronolojisi ve sicil pasajına bağlantı')
-    gaps = [f"{x['field']}: henüz incelenmedi" for x in ({'field': name} for name in FIELDS[:5]) if not any(f['field'] == x['field'] for f in fields)]
-    gaps += [f"{x['field']}: {next(m['status'] + ' — ' + m['reason'] for m in data['missing'] if m['id'] == x['missing_id'])}" for x in fields if x['value'] is None]
+    gaps = [f"{FIELD_LABELS[name]}: henüz incelenmedi" for name in FIELDS[:5] if not any(f['field'] == name for f in fields)]
+    gaps += [f"{FIELD_LABELS[x['field']]}: {next(m['status'] + ' — ' + m['reason'] for m in data['missing'] if m['id'] == x['missing_id'])}" for x in fields if x['value'] is None]
     reviewed = {x['heading'] for x in data['research_state'] if x['party_id'] == party_id and x['state'] == 'reviewed'}
-    gaps += [f'{heading}: henüz incelenmedi' for heading in HEADINGS if heading not in reviewed]
+    gaps += [f"{heading}: {'araştırma tamamlanmadı' if any(f['party_id'] == party_id and f['heading'] == heading for f in data['finding']) else 'henüz incelenmedi'}" for heading in HEADINGS if heading not in reviewed]
     if party_id == 'tip' and stage == 'tracer': gaps.append('Arşivli TİP tüzüğünün kesim tarihinde yürürlükteki sürüm olduğu doğrulanmadı; parti dosyası tamamlanmadı.')
     if not added or not gaps or not sources: raise ValueError('Teslim içeriği, kaynak veya önemli açıklar boş')
     if previous:

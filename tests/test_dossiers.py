@@ -108,6 +108,8 @@ class DossierTracer(unittest.TestCase):
                 path = Path(tmp) / 'receipt.json'; path.write_text(json.dumps(receipt), encoding='utf-8')
                 self.assertEqual(dosyalar.check_delivery_receipt(path)['release_id'], release)
                 self.assertTrue(receipt['important_gaps'])
+                self.assertIn('Kuruluş: araştırma tamamlanmadı', receipt['important_gaps'])
+                self.assertIn('Kuruluş tarihi: 07.11.2017', receipt['added_content'])
                 cli = 'import sys; from pathlib import Path; sys.path.insert(0, "src"); import arsiv; arsiv.DATA=Path(sys.argv[1]); sys.argv=["arsiv.py", "audit", "--release", "current", "--phase", "2", "--party", "tip", "--stage", "tracer"]; arsiv.main()'
                 result = subprocess.run([sys.executable, '-c', cli, str(arsiv.DATA)], text=True, capture_output=True, check=True)
                 self.assertIn('PHASE2_TRACER_OK', result.stdout)
