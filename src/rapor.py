@@ -1,13 +1,15 @@
 """Kapalı kayıt snapshot'ından güvenli, sekmeli HTML üretir."""
 from collections import defaultdict
-from html import escape
+from html import escape, unescape
+import json
 from pathlib import Path
 from urllib.parse import urlsplit
 from dosyalar import SOURCE_TYPE_LABELS
+from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 11
-STYLE = Path(__file__).with_name('rapor_v8.css').read_text(encoding='utf-8')
+RENDERER_VERSION = 13
+STYLE = Path(__file__).with_name('rapor_v11.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -55,7 +57,7 @@ def code_label(value):
 
 
 def finding_text(finding):
-    value = esc(finding['text'])
+    value = esc(unescape(finding['text'])) if finding['provenance']=='quote' else esc(finding['text'])
     if finding['provenance'] == 'quote':
         return 'quote', f'“{value}”'
     return 'summary', value
@@ -117,7 +119,7 @@ def render_identity_card(pid, fields, missing, evidence, citation):
         value = 'Henüz incelenmedi'
         if field and field['value'] is not None:
             refs = ' '.join(citation(e['passage_id']) for e in evidence[field['finding_id']])
-            value = esc(field['value']) + ' ' + refs
+            value = (f'<a href="{web_url(field["value"])}">{esc(field["value"])}</a>' if name=='official_site' else esc(field['value'])) + ' ' + refs
         elif field:
             m = missing[field['missing_id']]
             value = esc(m['status']) + ' · ' + esc(m['reason'])
@@ -155,6 +157,16 @@ def render_report(data):
         evidence[row['finding_id']].append(row)
     attempts = {a['id']: a for a in data.get('attempt', [])}
     resolutions = {r['missing_id']: r for r in data.get('missing_resolution', [])}
+    attributions = {r['version_id']:r for r in data.get('source_attribution',[])}
+    # Aynı özgün belge baytlarında sonradan tamamlanan yazar künyesi kaybolmaz.
+    for version in versions.values():
+        current_attribution=attributions.get(version['id'])
+        if current_attribution and not current_attribution.get('author'):
+            richer=next((attributions[v['id']] for v in reversed(list(versions.values())) if v['document_id']==version['document_id'] and v['sha256']==version['sha256'] and v['id'] in attributions and attributions[v['id']].get('author')),None)
+            if richer:attributions[version['id']]=richer
+    views = {r['version_id']:r for r in data.get('archive_view',[])}
+    policies=data.get('source_policy',[])
+    legacy_findings=set(json.loads(policies[-1]['legacy_findings'])) if policies else set()
     missing_by_heading = defaultdict(list)
     for row in data.get('missing', []):
         if row['id'] not in resolutions:
@@ -193,6 +205,9 @@ def render_report(data):
             metadata.append(('Sayfa kontrolü', time_tag(manual['checked_at']) + ' · ' + esc(manual['reason'])))
         if v.get('date_unknown_reason'):
             metadata.append(('Belge tarihi notu', esc(v['date_unknown_reason'])))
+        if attribution:=attributions.get(v['id']):
+            metadata.append(('Atıf',esc(attribution_text(attribution))))
+            metadata.append(('Atıf dayanağı',esc(attribution['basis'])))
         details = ''.join(f'<dt>{label}</dt><dd>{value}</dd>' for label, value in metadata)
         if v['id'] not in history_seen:
             history = render_version_history(v, data, versions, citation, findings, evidence)
@@ -200,13 +215,17 @@ def render_report(data):
         else:
             history = f'<a href="#version-history-{esc(v["id"])}">Sürüm geçmişi</a>'
         reasons = ' '.join(esc(x['reason']) for x in data.get('dossier_source', []) if x['version_id'] == v['id'])
+        archive=f'<a href="../../{esc(v["readable_path"])}">Arşiv kopyası</a>'
+        if view:=views.get(v['id']):
+            if not __import__('re').fullmatch(r'views/[0-9a-f]{32}/index\.html',view['index_path']):raise ValueError('Geçersiz arşiv görünümü yolu')
+            archive=f'<a class="archive-view" href="../../{esc(view["index_path"])}">Arşiv görünümü</a>'
         source_entries[p['id']] = (
             f'<details class="source" id="source-{esc(p["id"])}">'
             f'<summary>{esc(d["title"])} <span class="source-type">{source_type}</span> · {time_tag(v["document_date"])} · {esc(v["version_label"] or "Sürüm belirtilmemiş")}</summary>'
-            f'<blockquote class="quote">“{esc(p["exact"])}”</blockquote><dl class="source-info">{details}</dl>'
+            f'<blockquote class="quote">“{esc(unescape(p["exact"]))}”</blockquote><dl class="source-info">{details}</dl>'
             f'<p>{reasons}</p>{history}'
             f'<div class="source-links"><a href="{original}">Özgün kaynak</a>'
-            f'<a href="../../{esc(v["readable_path"])}">Arşiv kopyası</a>'
+            f'{archive}'
             f'<a download href="../../{esc(v["original_path"])}">Belgeyi indir</a></div></details>'
         )
 
@@ -269,7 +288,7 @@ def render_report(data):
             passage_ids = tuple(dict.fromkeys(e['passage_id'] for e in evidence[f['id']]))
             kind = f['epistemic_type']
             shared_source = cls == 'quote' and previous == (kind, passage_ids)
-            label = '' if shared_source else f'<strong>{esc(labels.get(kind, kind))}</strong> '
+            label = ''
             links = '' if shared_source else ' '.join(citation(pid) for pid in passage_ids)
             pieces.append(f'<p id="finding-{esc(f["id"])}" class="{cls}" data-finding-id="{esc(f["id"])}" '
                           f'data-provenance="{esc(f["provenance"])}" data-epistemic-type="{esc(f["epistemic_type"])}">'
@@ -323,6 +342,9 @@ def render_report(data):
         event_dates = {e['id']: e for e in data.get('event_date', [])}
         pieces.append(f'<div role="tabpanel" id="{panel}" aria-labelledby="tab-{esc(pid)}"{hidden}>'
                       f'<h2 class="panel-title">{esc(parties[pid]["legal_name"])}</h2>')
+        official=next((f for f in dossier_fields if f['field']=='official_site' and f['value']),None)
+        if official:
+            pieces.append(f'<p class="official-site">Resmî site: <a href="{web_url(official["value"])}">{esc(official["value"])}</a> '+ ' '.join(citation(e['passage_id']) for e in evidence[official['finding_id']])+'</p>')
         if True:
             anchors = ''.join(f'<a href="#{panel}-{key}">{heading}</a>' for key, heading in HEADINGS)
             sources_anchor = f'<a href="#{panel}-kaynaklar">Kaynaklar</a>'
@@ -330,22 +352,31 @@ def render_report(data):
                           '<div class="reading-grid">')
             for key, heading in HEADINGS:
                 rows = [f for f in party_findings if f['heading'] == heading]
+                previous_rows=[f for f in rows if f['id'] in legacy_findings]
+                primary_rows=[f for f in rows if f['id'] not in legacy_findings]
+                card_pairs={findings[f['finding_id']]['pair_id'] for f in dossier_fields if f['finding_id'] in findings}
+                card_rows=[f for f in primary_rows if f['pair_id'] in card_pairs or f['epistemic_type']=='registry'] if key=='kurulus' else []
+                primary_rows=[f for f in primary_rows if f not in card_rows]
                 missing = party_missing.pop(heading, [])
                 wide = ' card-wide' if key in ('kurulus', 'soylem-uygulama', 'finansman') else ''
                 pieces.append(f'<section class="card{wide}" id="{panel}-{key}"><h3>{heading}</h3>')
+                questions={'kurulus':'Neden kuruldu?','tuzuk':'Üyelik ve yönetim nasıl düzenleniyor?','program':'Ne vaat ediyor?','soylem-uygulama':'Kaynaklar ne yaptığını söylüyor?','finansman':'Para nereden geliyor, nasıl harcanıyor?'}
+                if primary_rows:pieces.append(f'<p class="reader-question">{questions[key]}</p>')
+                if primary_rows:add_findings(primary_rows)
                 if key == 'kurulus':
+                    pieces.append('<details class="record"><summary>Temel bilgiler ve kuruluş kronolojisi</summary>')
+                    if card_rows:add_findings(card_rows)
                     pieces.append(render_identity_card(pid, dossier_fields, {m['id']: m for m in data['missing']}, evidence, citation))
                     pieces.append(render_foundation_timeline(pid, dossier_events, event_dates, findings, [n for n in data.get('dossier_identity_note', []) if n['party_id'] == pid], citation))
                     for field in dossier_fields:
                         if field['field'] in ('headquarters', 'chairperson') and field['value'] is not None:
                             refs = ' '.join(citation(e['passage_id']) for e in evidence[field['finding_id']])
                             pieces.append(f'<p>{"Genel merkez" if field["field"] == "headquarters" else "Genel başkan"}: {esc(field["value"])} {refs}</p>')
-                if rows and key == 'soylem-uygulama':
-                    pieces.append('<details class="record"><summary>Belgelenmiş söylem ve olaylar</summary>')
-                    add_findings(rows)
                     pieces.append('</details>')
-                elif rows:
-                    add_findings(rows)
+                if previous_rows:
+                    pieces.append(f'<details class="record" id="prior-{esc(pid)}-{key}"><summary>Önceki kaynaklı kayıtlar</summary>')
+                    add_findings(previous_rows)
+                    pieces.append('</details>')
                 if key == 'soylem-uygulama':
                     add_matches(matches, candidates)
                 if key == 'finansman':
@@ -358,6 +389,8 @@ def render_report(data):
                 has_content = rows or (key == 'soylem-uygulama' and (matches or candidates)) or (key == 'finansman' and finances)
                 if missing:
                     if has_content:
+                        current_topics=dict.fromkeys(m['topic_id'] for m in missing)
+                        pieces.append('<p class="current-gap">Bilgi açıkları: '+ '; '.join(topic_name(t) for t in current_topics)+'. Ayrıntılar aşağıda.</p>')
                         pieces.append('<details class="record"><summary>Eksik bilgiler</summary>')
                         add_missing(missing, heading)
                         pieces.append('</details>')
@@ -394,7 +427,7 @@ def render_report(data):
 
     if scoped or methods or attempts:
         pieces.append('<details id="scope-method"><summary>Kapsam ve yöntem</summary>')
-        pieces.append('<p>Birincil kaynaklara öncelik verilir; ikincil kaynak kullanımının gerekçesi ilgili kaynak kaydında sunulur.</p>')
+        pieces.append('<p>Parti yayınları, haberler ve sosyal paylaşımlar yayıncıya/yazara atfedilerek derlenir. Sosyal paylaşımda hesap, tarih ve kalıcı adres korunur. Kaynakla metin karşılaştırması iddiayı hukuken doğrulama anlamına gelmez. Sicil kimliği kendi kaynağıyla tutarlı tutulur. Tarihi bilinmeyen yayın ve hesap dönemi uydurulmaz.</p>')
         for m in methods:
             cited = next((p['id'] for p in passages.values() if p['version_id'] == m['cutoff_capture_version_id']), None)
             if not cited:

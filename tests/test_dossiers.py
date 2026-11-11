@@ -20,7 +20,10 @@ def copy_phase_one_data(source, target):
 
 def add_tip_tracer(work):
     reviewed_at = dt.datetime.now(dt.timezone.utc).isoformat()
+    db=arsiv.connect_readonly(work/'records.sqlite3')
+    version=dict(db.execute("SELECT * FROM document_version WHERE id='tip-registry-v1'").fetchone());db.close()
     records = [
+        ('source_attribution', dict(version_id='tip-registry-v1',kind='registry',publisher='Yargıtay Cumhuriyet Başsavcılığı',author=None,social_handle=None,published_at=None,date_precision='unknown',public_url=version['final_url'],basis='Arşivlenmiş sicil kaydı.')),
         ('passage', dict(id='tip-foundation-passage', version_id='tip-registry-v1', exact='07.11.2017', section='Kuruluş Tarihi')),
         ('finding', dict(id='tip-foundation-summary', party_id='tip', heading='Kuruluş', pair_id='tip-foundation', text='Yargıtay sicilinde Türkiye İşçi Partisinin kuruluş tarihi 07.11.2017 olarak yer alır.', provenance='summary', epistemic_type='registry')),
         ('finding', dict(id='tip-foundation-quote', party_id='tip', heading='Kuruluş', pair_id='tip-foundation', text='07.11.2017', provenance='quote', epistemic_type='registry')),
@@ -129,9 +132,10 @@ class DossierTracer(unittest.TestCase):
                 folder = arsiv.DATA / 'releases' / release
                 manifest = json.loads((folder / 'manifest.json').read_text())
                 self.assertEqual(manifest['phase2_delivery'], {'party_id':'tip','stage':'tracer','completed_prefix':[]})
-                self.assertEqual(manifest['renderer_version'], 10)
+                self.assertEqual(manifest['renderer_version'], 13)
+                self.assertEqual(manifest['source_policy_version'],2)
                 data = json.loads((folder / 'records.json').read_text())
-                self.assertEqual(data['schema_version'], 4)
+                self.assertEqual(data['schema_version'], 5)
                 report = (folder / 'index.html').read_text()
                 panel = report.split('id="party-tip"',1)[1].split('id="party-dem"',1)[0]
                 self.assertIn('07.11.2017', panel)
@@ -213,7 +217,7 @@ class DossierTracer(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'döngü'): arsiv.record(work, 'version_relation', rel)
             finally: arsiv.DATA = old_data
 
-    def test_official_site_requires_verified_ownership(self):
+    def test_official_site_rejects_unsupported_domain(self):
         with tempfile.TemporaryDirectory() as tmp:
             old_data = arsiv.DATA
             try:

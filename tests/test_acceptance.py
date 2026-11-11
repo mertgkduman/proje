@@ -39,6 +39,14 @@ class PhaseOneAcceptance(unittest.TestCase):
                 with self.assertRaises(urllib.error.HTTPError) as error:
                     urllib.request.urlopen(base + path, timeout=2)
                 self.assertEqual(error.exception.code, 404)
+            payload=json.loads((arsiv.DATA/'dossiers/261111-epm-yeni-parti.json').read_text())
+            view=next(r['values'] for r in payload['records'] if r['kind']=='archive_view')
+            with urllib.request.urlopen(base+view['index_path'],timeout=2) as response:
+                self.assertIn("script-src 'none'",response.headers['Content-Security-Policy'])
+                self.assertEqual(response.headers['X-Content-Type-Options'],'nosniff')
+                self.assertIn('<title>Parti Tüzüğü',response.read().decode())
+            for suffix in ('../../current.json','assets/not-a-hash.js','source.html'):
+                with self.assertRaises(urllib.error.HTTPError):urllib.request.urlopen(base+'views/'+view['view_id']+'/'+suffix,timeout=2)
         finally:
             server.terminate()
             server.wait(timeout=5)

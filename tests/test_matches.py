@@ -19,13 +19,14 @@ class MatchContract(unittest.TestCase):
         self.work = arsiv.open_workspace(self.tmp.name)
         self.db = arsiv.connect(self.work / 'records.sqlite3')
         # Purpose-made fixtures: neither source is asserted to be a real event.
-        for doc, kind, date, content in [('statement', 'news', '2026-08-04', 'Yöneticileri üyeler seçecek.'), ('occurrence', 'news', '2026-10-19', 'Üyeler il ön seçiminde oy kullandı.'), ('authority', 'official', '2026-08-01', 'Ayşe Örnek parti temsilcisi olarak yetkilendirildi.')]:
+        for doc, kind, date, content in [('statement', 'news', '2026-08-04', 'Yöneticileri üyeler seçecek.'), ('occurrence', 'official', '2026-10-19', 'Üyeler il ön seçiminde oy kullandı.'), ('authority', 'official', '2026-08-01', 'Ayşe Örnek parti temsilcisi olarak yetkilendirildi.')]:
             obj = arsiv.DATA / 'objects' / ('fixture-' + doc)
             obj.mkdir(); original = obj / 'original.html.bin'; original.write_text(content)
             (obj / 'readable.html').write_bytes(arsiv.readable_bytes(original.read_bytes(), 'html'))
             self.db.execute('INSERT INTO document VALUES (?,?,?,?)', (doc, 'yeni-parti', doc, kind))
             self.db.execute('INSERT INTO document_version (id,document_id,original_url,final_url,document_date,accessed_at,verified_at,mime,sha256,original_path,readable_path,date_precision) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', (doc, doc, 'https://example.org/'+doc, 'https://example.org/'+doc, date, '2026-11-10T15:00:00+00:00', '2026-11-10T15:00:00+00:00', 'text/html', arsiv.sha(original), str(original.relative_to(arsiv.DATA)), str((obj/'readable.html').relative_to(arsiv.DATA)), 'day'))
             self.db.execute('INSERT INTO passage (id,version_id,exact) VALUES (?,?,?)', (doc, doc, content))
+            self.db.execute('INSERT INTO source_attribution VALUES (?,?,?,?,?,?,?,?,?)',(doc,'journalism' if kind=='news' else 'official','Test yayını',None,None,date,'day','https://example.org/'+doc,'Amaçlı test kaynağı; gerçek olay iddiası değildir.'))
         self.db.execute("INSERT INTO person VALUES ('person-test','Ayşe Örnek')")
         self.db.execute("INSERT INTO actor VALUES ('actor-test','institution','yeni-parti',NULL,NULL)")
         for fid, text, kind, pid, role in [('statement-test','Yöneticileri üyeler seçecek.','claim','statement','statement'),('action-test','Üyeler il ön seçiminde oy kullandı.','fact','occurrence','occurrence')]:

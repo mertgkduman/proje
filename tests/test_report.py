@@ -34,6 +34,15 @@ class ReaderText(HTMLParser):
 
 
 class ReportTest(unittest.TestCase):
+    def test_real_browser_reads_both_passive_archives(self):
+        import arsiv
+        from browser_probe import probe_archives
+        root=Path(__file__).resolve().parents[1]
+        data=json.loads((root/'data/releases'/arsiv.current()/'records.json').read_text())
+        self.assertEqual(len(data['archive_view']),2)
+        views={v['version_id']:v for v in data['archive_view']}
+        result=probe_archives((root/'data/releases'/arsiv.current()/'index.html').as_uri(),(root/'data'/views['epm-charter-v1']['index_path']).as_uri(),(root/'data'/views['epm-program-v1']['index_path']).as_uri())
+        self.assertEqual(result['status'],'BROWSER_ARCHIVES_OK')
     def test_reader_shows_party_content_and_faithful_archive_links(self):
         root=Path(__file__).resolve().parents[1]
         data=json.loads((root/'data/releases/b14c96c54e4b420686c46e5cfb1071a3/records.json').read_text())
@@ -47,7 +56,9 @@ class ReportTest(unittest.TestCase):
         self.assertIn('href="https://yenipartiyiz.biz"',report)
         self.assertIn('Neden kuruldu?',report)
         self.assertIn('Ne vaat ediyor?',report)
-        self.assertIn('id="prior-yeni-parti-tuzuk"',report)
+        self.assertIn('Ekonomim · Haber Merkezi',report)
+        self.assertIn('Kocaeli TV · Bugün Kocaeli',report)
+        self.assertIn('id="prior-yeni-parti-kurulus"',report)
         for row in (x['values'] for x in payload['records'] if x['kind']=='archive_view'):
             self.assertIn('href="../../'+row['index_path']+'"',report)
 
@@ -74,7 +85,7 @@ class ReportTest(unittest.TestCase):
                         'Erişilen belgenin kesim günündeki sürümü ayrıca doğrulanmamıştır.',
                         'aday, dayanak doğrulanmadı', 'Doğrulanamadı:'):
             self.assertNotIn(removed, report)
-        self.assertEqual(report.count('href="#attempt-0104-tuzuk-verify"'), 1)
+        self.assertIn('id="attempt-0104-tuzuk-verify"',report)
         self.assertIn('class="status">Doğrulanamadı</span>', report)
         text = ReaderText()
         text.feed(report)

@@ -17,6 +17,18 @@ def browser():
     return next((p for p in candidates if p and Path(p).is_file() and os.access(p, os.X_OK)), None)
 
 
+def probe_archives(report_url, charter_url, program_url, output_dir=None):
+    """CSP'yi değiştirmeden gerçek sayfa/asset okuma ve görünürlük denetimi."""
+    executable=browser()
+    if not executable: raise RuntimeError('Headless Chrome bulunamadı')
+    command=['node',str(Path(__file__).with_name('archive_browser.cjs')),executable,report_url,charter_url,program_url]
+    if output_dir: command.append(str(output_dir))
+    result=subprocess.run(command,capture_output=True,text=True,timeout=100)
+    if result.returncode: raise AssertionError(result.stderr[-2000:])
+    import json
+    return json.loads(result.stdout)
+
+
 def probe(report):
     executable = browser()
     if not executable: raise RuntimeError('Headless Chrome bulunamadı')

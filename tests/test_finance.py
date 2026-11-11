@@ -22,6 +22,7 @@ class FinanceContract(unittest.TestCase):
         (obj / 'readable.html').write_bytes(arsiv.readable_bytes(original.read_bytes(), 'html'))
         self.db.execute("INSERT INTO document_version (id,document_id,original_url,final_url,document_date,accessed_at,verified_at,mime,sha256,original_path,readable_path,date_precision) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", ('finance-fixture','finance-fixture','https://example.org/finance','https://example.org/finance','2026-10-24','2026-11-10T15:00:00+00:00','2026-11-10T15:00:00+00:00','text/html',arsiv.sha(original),str(original.relative_to(arsiv.DATA)),str((obj/'readable.html').relative_to(arsiv.DATA)),'day'))
         self.db.execute("INSERT INTO passage (id,version_id,exact) VALUES (?,?,?)", ('finance-fixture','finance-fixture',original.read_text()))
+        self.db.execute('INSERT INTO source_attribution VALUES (?,?,?,?,?,?,?,?,?)',('finance-fixture','journalism','Test yayını',None,None,'2026-10-24','day','https://example.org/finance','Amaçlı mali kaynak testi; gerçek hesap sonucu değildir.'))
         self.db.execute("INSERT INTO accounting_period VALUES ('fixture-period','yeni-parti','finance-fixture','2026-08-01','2026-10-23','day',NULL)")
         self.db.execute("INSERT INTO review VALUES ('finance-review','financial','f1','agent','2026-11-10T15:00:00+00:00','reviewed','Tutar, para birimi ve kategori kaynakta incelendi.')")
         self.db.commit()

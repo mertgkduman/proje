@@ -113,6 +113,12 @@ class SourcePolicy(unittest.TestCase):
             else: candidate['source_policy'][0]['legacy_findings']='["invented"]'
             with self.assertRaises(ValueError): validate_policy_descent(base,candidate)
 
+    def test_removing_policy_cannot_bypass_real_publish(self):
+        db=arsiv.connect(self.work/'records.sqlite3')
+        db.execute('DELETE FROM source_policy');db.commit();db.close()
+        with self.assertRaises(ValueError):arsiv.publish_release(self.work,party='tip',stage='tracer')
+        self.assertEqual(arsiv.current(),BASE)
+
     def test_official_site_needs_party_publication_evidence_for_same_host(self):
         from kaynaklar import official_site_supported
         v = self.charter()

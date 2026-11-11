@@ -20,13 +20,14 @@ class DocumentContract(unittest.TestCase):
                 work = arsiv.open_workspace(tmp)
                 db = arsiv.connect(work / 'records.sqlite3')
                 source = dict(db.execute("SELECT * FROM document_version WHERE id='registry-365-v1'").fetchone())
+                previous_count=db.execute('SELECT COUNT(*) FROM document_version WHERE sha256=?',(source['sha256'],)).fetchone()[0]
                 db.close()
                 arsiv.record(work, 'document', dict(id='shared-tip', party_id='tip', title='Shared', source_kind='official'))
                 source.update(id='shared-tip-v1', document_id='shared-tip', original_url='https://example.org/shared', final_url='https://example.org/shared')
                 self.assertEqual(arsiv.record(work, 'document_version', source), 'shared-tip-v1')
                 db = arsiv.connect(work / 'records.sqlite3')
                 self.assertEqual(db.execute("SELECT d.party_id FROM document_version v JOIN document d ON d.id=v.document_id WHERE v.id='shared-tip-v1'").fetchone()[0], 'tip')
-                self.assertEqual(db.execute("SELECT COUNT(*) FROM document_version WHERE sha256=?", (source['sha256'],)).fetchone()[0], 2)
+                self.assertEqual(db.execute("SELECT COUNT(*) FROM document_version WHERE sha256=?", (source['sha256'],)).fetchone()[0], previous_count+1)
                 db.close()
             finally:
                 arsiv.DATA = old

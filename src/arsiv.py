@@ -29,6 +29,8 @@ from rapor_v7 import render_report as render_v7_report
 from rapor_v8 import render_report as render_v8_report
 from rapor_v9 import render_report as render_v9_report
 from rapor_v10 import render_report as render_v10_report
+from rapor_v11 import render_report as render_v11_report
+from rapor_v12 import render_report as render_v12_report
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
                       check_evidence_attribution, validate_policy_descent)
 from arsiv_gorunum import VIEW_TABLES, validate_view, CSP as ARCHIVE_CSP
@@ -859,11 +861,21 @@ def audit_release(release='current', _seen=None):
         if sha(safe_path(folder, name)) != digest:
             raise ValueError('Manifest özeti eşleşmiyor')
     exported = export_db(folder / 'records.sqlite3', release)
+    if manifest.get('source_policy_version') and exported['schema_version']!=5:raise ValueError('Kaynak politikası snapshot sözleşmesiyle uyuşmuyor')
+    if exported['schema_version']==5:
+        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version'),manifest.get('source_policy_version'))!=(5,2,2):raise ValueError('Kaynak politikası manifesti geçersiz')
+        if not manifest.get('phase2_delivery'):
+            base_id=manifest.get('base_release')
+            if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
+            if base_id:
+                audit_release(base_id,_seen)
+                validate_policy_descent(json.loads((DATA/'releases'/base_id/'records.json').read_text()),exported)
     if exported['schema_version'] >= 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
-        expected = (5,2,11) if exported['schema_version']==5 else (4,1,manifest.get('renderer_version'))
-        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version'),manifest.get('renderer_version')) != expected or manifest.get('renderer_version') not in (9,10,11) or (exported['schema_version']==5 and manifest.get('source_policy_version')!=2):
+        expected = (5,2) if exported['schema_version']==5 else (4,1)
+        valid_renderers=(11,12,13) if exported['schema_version']==5 else (9,10)
+        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version']==5 and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_id = manifest.get('base_release')
         if not base_id or base_id == release or not re.fullmatch(r'[0-9a-f]{32}', base_id): raise ValueError('Faz 2 tabanı geçersiz')
@@ -886,7 +898,7 @@ def audit_release(release='current', _seen=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        9: render_v9_report, 10: render_v10_report, RENDERER_VERSION: render_report,
+        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
@@ -1005,6 +1017,7 @@ def publish_release(work, fail_at=None, party=None, stage='complete'):
             for completed_party in phase_delivery['completed_prefix']:
                 validate_dossier(payload, completed_party, 'complete')
         manifest = {'release_id': release, 'renderer_version': RENDERER_VERSION, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
+        if payload['schema_version']==5:manifest.update(data_schema_version=5,dossier_validation_version=2,source_policy_version=2,base_release=metadata['base'])
         if phase_delivery:
             manifest.update(data_schema_version=5, dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=metadata['base'])
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')

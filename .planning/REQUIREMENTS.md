@@ -105,7 +105,7 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 
 Bu çalışma parti yayınlarını, haberleri ve sosyal paylaşımları açık atıfla bir araya getirir. Yayıncı, varsa yazar, bilinen yayın tarihi ve adres korunur; sosyal kaynakta hesap/yazar, tarih ve kalıcı adres gerekir. Beyan ve iddia söyleyene atfedilir. Alan adı için sicil kanıtı, tarihsel yürürlük kanıtı veya her kaynakta insan kabulü kullanım ön koşulu değildir. Sicil kimliği iddiası gerçek sicille tutarlı kalır; bilinmeyen tarih ve hesap dönemi uydurulmaz. Yeni Parti'nin resmî sitesi kullanıcının açık kararıyla https://yenipartiyiz.biz; tüzük /parti-tuzugu, program /parti-programi adresidir.
 
-Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve finansman/harcamaları görür. Yöntem ve geçmiş girişimler kapalı ayrıntılardadır. Özgün kaynak baytları korunur; HTML belgeler için yerel varlıklarla pasif arşiv görünümü eklenir. Alıntı siyah ve tırnak içinde, kaynaklı özet koyu mavidir. Politika sürümü 2, şema 5 ve renderer 11 önceki değişmez sürümleri değiştirmez.
+Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve finansman/harcamaları görür. Yöntem ve geçmiş girişimler kapalı ayrıntılardadır. Özgün kaynak baytları korunur; HTML belgeler için yerel varlıklarla pasif arşiv görünümü eklenir. Alıntı siyah ve tırnak içinde, kaynaklı özet koyu mavidir. Politika sürümü 2, şema 5 ve renderer 13 önceki değişmez sürümleri değiştirmez.
 
 ## Traceability
 

@@ -313,6 +313,7 @@ def load_dossier(work, payload):
             db = arsiv.connect(tmp / 'records.sqlite3')
             try:
                 info = db.execute(f'PRAGMA table_info({kind})').fetchall()
+                if not set(values)<={r['name'] for r in info}:raise ValueError('Bilinmeyen kayıt alanı')
                 pks = [r['name'] for r in sorted(info, key=lambda r:r['pk']) if r['pk']]
                 if not pks or not all(k in values for k in pks): raise ValueError('Kayıt anahtarı eksik')
                 existing = db.execute(f"SELECT * FROM {kind} WHERE " + ' AND '.join(k+'=?' for k in pks), [values[k] for k in pks]).fetchone()
