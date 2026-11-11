@@ -1,0 +1,248 @@
+{
+  "dossier_check": {
+    "status": "pass",
+    "result": "DOSSIER_INPUT_OK"
+  },
+  "dossier_replay_on_current": {
+    "status": "pass",
+    "result": "DOSSIER_INPUT_OK"
+  },
+  "party_audit": {
+    "status": "pass",
+    "result": "PHASE2_PARTY_OK 77074f17144b41399615da5ee4b37bcf"
+  },
+  "phase1_audit": {
+    "status": "pass",
+    "result": "PHASE1_AUDIT_OK 77074f17144b41399615da5ee4b37bcf"
+  },
+  "receipt_check": {
+    "status": "pass",
+    "result": "DELIVERY_RECEIPT_OK"
+  },
+  "tests": {
+    "dossiers": {
+      "command": "python3 tests/run.py --pattern test_dossiers.py",
+      "passed": 10,
+      "status": "pass"
+    },
+    "source_policy": {
+      "command": "python3 tests/run.py --pattern test_source_policy.py",
+      "passed": 11,
+      "status": "pass"
+    }
+  },
+  "schema_version": 1,
+  "party_id": "dem",
+  "checked_at": "2026-11-11T17:22:34.620256+00:00",
+  "release_id": "77074f17144b41399615da5ee4b37bcf",
+  "record_counts": {
+    "document": 15,
+    "document_version": 16,
+    "source_attribution": 16,
+    "version_context": 16,
+    "dossier_source": 18,
+    "lead": 16,
+    "attempt": 18,
+    "passage": 25,
+    "finding": 46,
+    "finding_evidence": 50,
+    "review": 46,
+    "version_relation": 1,
+    "dossier_field": 7,
+    "event_date": 5,
+    "dossier_event": 5,
+    "missing": 2,
+    "research_state": 5,
+    "closure": 3,
+    "archive_view": 4
+  },
+  "finding_pairs_by_heading": {
+    "Kuruluş": 15,
+    "Tüzük": 5,
+    "Program": 3
+  },
+  "manifest": {
+    "base_release": "7d5f78dde79a4b0bb48f64a16fd263c1",
+    "data_schema_version": 5,
+    "dossier_validation_version": 2,
+    "files": {
+      "index.html": "2807ca11a762589b36030034b9c1a6d75767627c4273ecb41d6dc9ee4e60bc37",
+      "records.json": "f89b4eea18036ac23d07865bcfb304cb6670164d08a04fffc876e1f2bc3a4c42",
+      "records.sqlite3": "c0cabf1c2dfd75c0f938c34878cd772127b4ba56e64bcd792579d2dc4ac713ed"
+    },
+    "identity_validation_version": 1,
+    "phase2_delivery": {
+      "completed_prefix": [
+        "tip",
+        "dem"
+      ],
+      "party_id": "dem",
+      "stage": "complete"
+    },
+    "release_id": "77074f17144b41399615da5ee4b37bcf",
+    "renderer_version": 13,
+    "source_policy_version": 2
+  },
+  "preservation": {
+    "base_head": "e2982c163bf4757d2f056407b5f658d1ec34f736",
+    "base_release": "7d5f78dde79a4b0bb48f64a16fd263c1",
+    "new_release": "77074f17144b41399615da5ee4b37bcf",
+    "prior_rows_preserved": 1206,
+    "prior_immutable_files_preserved": 630,
+    "changed_identity": {
+      "changed_at": "2026-11-11T17:09:01.078532+00:00",
+      "id": "revision-dem-yargitay-157",
+      "legal_name": "HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ",
+      "party_id": "dem",
+      "passage_id": "0204-dem-legal",
+      "previous_legal_name": "HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ",
+      "previous_registry_key": "tbmm-9fde412b-e6e1-40b1-85b8-018b5b776e0e",
+      "reason": "Onaylı sabit dem kimliği korunur; önceki TBMM URL anahtarı geçmişte bırakılıp gerçek /sipar/157 siciliyle kontrollü doğrulanır. Kapsam ve TBMM gözlemleri değişmez.",
+      "registry_key": "yargitay-157"
+    },
+    "prefix": {
+      "completed_prefix": [
+        "tip",
+        "dem"
+      ],
+      "party_id": "dem",
+      "stage": "complete"
+    },
+    "prior_renderer_files_preserved": 15
+  },
+  "browser": {
+    "status": "BROWSER_ARCHIVES_OK",
+    "results": [
+      {
+        "kind": "report",
+        "width": 1365,
+        "url": "http://127.0.0.1:8954/releases/77074f17144b41399615da5ee4b37bcf/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 1365,
+        "title": "Tüzük | DEM Parti",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/d15ac99c9bf1b50f3adff32a34b1996abcc7770047d0446990d7daf8a104c378.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/3a6abc10f7591c971f14a25651a68958e178a95d434e7d5f28f88ac05dca1e19.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/c564455d42bc771f9a42e1ca35cb31665a2bbb200a501f744f2c7ff493ac921e.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/8d483175204cbe57d4fde8d90b04d2f109b21e67b68038b288fc1e9126bae76b.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/f77a6eca4c1b736c8446a16217eff68c9b4804972a39409233a4b5384fb53f7e.jpg"
+        ],
+        "overflow": false,
+        "pdfLinks": [
+          "http://127.0.0.1:8954/objects/97f552324d044a6a0ec4ad9d1dd99ac66ba50540a3ad397ebefaa3fbd7e1a471/original.pdf"
+        ]
+      },
+      {
+        "kind": "program",
+        "width": 1365,
+        "title": "4'üncü Olağanüstü Büyük Kongre Kararları | DEM Parti",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/d15ac99c9bf1b50f3adff32a34b1996abcc7770047d0446990d7daf8a104c378.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/8d483175204cbe57d4fde8d90b04d2f109b21e67b68038b288fc1e9126bae76b.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/3a6abc10f7591c971f14a25651a68958e178a95d434e7d5f28f88ac05dca1e19.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/c564455d42bc771f9a42e1ca35cb31665a2bbb200a501f744f2c7ff493ac921e.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/f77a6eca4c1b736c8446a16217eff68c9b4804972a39409233a4b5384fb53f7e.jpg"
+        ],
+        "overflow": false
+      },
+      {
+        "kind": "report",
+        "width": 360,
+        "url": "http://127.0.0.1:8954/releases/77074f17144b41399615da5ee4b37bcf/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 360,
+        "title": "Tüzük | DEM Parti",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/d15ac99c9bf1b50f3adff32a34b1996abcc7770047d0446990d7daf8a104c378.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/8d483175204cbe57d4fde8d90b04d2f109b21e67b68038b288fc1e9126bae76b.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/3a6abc10f7591c971f14a25651a68958e178a95d434e7d5f28f88ac05dca1e19.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/c564455d42bc771f9a42e1ca35cb31665a2bbb200a501f744f2c7ff493ac921e.css",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png",
+          "http://127.0.0.1:8954/views/dfd80f1f9db3e717944133591629551c/assets/f77a6eca4c1b736c8446a16217eff68c9b4804972a39409233a4b5384fb53f7e.jpg"
+        ],
+        "overflow": false,
+        "pdfLinks": [
+          "http://127.0.0.1:8954/objects/97f552324d044a6a0ec4ad9d1dd99ac66ba50540a3ad397ebefaa3fbd7e1a471/original.pdf"
+        ]
+      },
+      {
+        "kind": "program",
+        "width": 360,
+        "title": "4'üncü Olağanüstü Büyük Kongre Kararları | DEM Parti",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/d15ac99c9bf1b50f3adff32a34b1996abcc7770047d0446990d7daf8a104c378.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/8d483175204cbe57d4fde8d90b04d2f109b21e67b68038b288fc1e9126bae76b.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/3a6abc10f7591c971f14a25651a68958e178a95d434e7d5f28f88ac05dca1e19.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/c564455d42bc771f9a42e1ca35cb31665a2bbb200a501f744f2c7ff493ac921e.css",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/5cb99077dd79e5224b3f85b4394b55cc9a71dda1a8183388d703f54adbe6f7fc.png",
+          "http://127.0.0.1:8954/views/929c7fdb736de4887697c71c87efa76a/assets/f77a6eca4c1b736c8446a16217eff68c9b4804972a39409233a4b5384fb53f7e.jpg"
+        ],
+        "overflow": false
+      }
+    ]
+  },
+  "archived_pdf_http": {
+    "url": "http://127.0.0.1:8954/objects/97f552324d044a6a0ec4ad9d1dd99ac66ba50540a3ad397ebefaa3fbd7e1a471/original.pdf",
+    "status": 200,
+    "mime": "application/pdf",
+    "sha256": "97f552324d044a6a0ec4ad9d1dd99ac66ba50540a3ad397ebefaa3fbd7e1a471"
+  },
+  "source_acceptance_note": "Kaynak metni ajan tarafından karşılaştırıldı. Otomatik hash/ilişki/bağlantı doğrulaması maddi kaynak anlamının veya insan kabulünün yerine geçmez; kaynak kullanımı için yeni bir insan kabulü ön koşulu konmadı.",
+  "tdd_applicable": false
+}
