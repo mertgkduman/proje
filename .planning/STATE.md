@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 02
 current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
-current_plan: 5
+current_plan: 6
 status: executing
-stopped_at: 02-04 tamamlandı; DEM teslimi bildirildikten sonra sıradaki 02-05 İYİ Parti
-last_updated: "2026-11-11T17:24:48.308Z"
+stopped_at: 02-05 tamamlandı; İYİ Parti teslimi bildirildikten sonra sıradaki 02-06 Yeni Yol Partisi
+last_updated: "2026-11-11T18:06:06.166Z"
 last_activity: 2026-11-11
-last_activity_desc: 02-04 tamamlandı; DEM tam yerel raporu ve TİP’e bağlı makbuzu hazır, sıradaki 02-05 İYİ Parti
-state_head: 8aa7a736ed12e29d122558b7397b4acd53958813
+last_activity_desc: 02-05 tamamlandı; İYİ Parti tam yerel raporu ve DEM’e bağlı makbuzu hazır, sıradaki 02-06 Yeni Yol Partisi
+state_head: ffd7a6e2abe799bf66c4c8cf78bc1597ecb359dc
 progress:
   total_phases: 6
   completed_phases: 1
   total_plans: 16
-  completed_plans: 10
+  completed_plans: 11
 ---
 
 # Project State
@@ -28,12 +28,12 @@ See: .planning/PROJECT.md (updated 2026-11-10)
 
 ## Current Position
 
-Current Plan: 5
+Current Plan: 6
 Total Plans in Phase: 10
 Phase: 02 (Bütün partiler için dosyalar ve sürümlü kaynaklar) — EXECUTING
-Plan: 4/10 tamamlandı; sıradaki 02-05
+Plan: 5/10 tamamlandı; sıradaki 02-06
 Status: Ready to execute
-Last activity: 2026-11-11 — 02-04 tamamlandı: DEM'in 23 kaynaklı özet/alıntı çifti, kaynaklı kartı, ad/kısa ad kronolojisi ve iki tüzük kopyası 77074f17144b41399615da5ee4b37bcf yerel sürümü ve TİP'e bağlı makbuzla hazırdır. Güncel bağımsız program ve belge/adres dönem açıkları görünürdür. Ara teslimin bildirilmesinden sonra sıradaki plan 02-05 İYİ Parti'dir.
+Last activity: 2026-11-11 — 02-05 tamamlandı: İYİ Parti'nin 21 kaynaklı özet/alıntı çifti, kaynaklı kartı, kuruluş/ilk yönetim kronolojisi, 2020/2026 değişiklikli tüzükleri ve tam HTML programı 45fdfa3f6abe4a8882c52b2658fc6c6d yerel sürümü ve DEM'e bağlı makbuzla hazırdır. PDF/kabul tarihi ve kurumsal kaynak görünümü sınırları kaydedildi. Ara teslimin bildirilmesinden sonra sıradaki plan 02-06 Yeni Yol Partisi'dir.
 
 Progress: [██░░░░░░░░] 17%
 
@@ -41,21 +41,21 @@ Progress: [██░░░░░░░░] 17%
 
 **Velocity:**
 
-- Total plans completed: 10
+- Total plans completed: 11
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
-- Total execution time: Faz 1'in altı ve Faz 2'nin dört planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
+- Total execution time: Faz 1'in altı ve Faz 2'nin beş planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 | 6 | - | - |
-| 2 | 4/10 | - | - |
+| 2 | 5/10 | - | - |
 
 **Recent Trend:**
 
-- Last 5 plans: 01-06, 02-01, 02-02, 02-03, 02-04
-- Trend: Faz 1 tamamlandı; Faz 2 4/10 planda. DEM tam yerel dosyası ve makbuzu hazır; sonraki parti İYİ Parti'dir. Kamu raporu 261111-epm sürümünde kalır.
+- Last 5 plans: 02-01, 02-02, 02-03, 02-04, 02-05
+- Trend: Faz 1 tamamlandı; Faz 2 5/10 planda. İYİ Parti tam yerel dosyası ve makbuzu hazır; sonraki parti Yeni Yol Partisi'dir. Kamu raporu 261111-epm sürümünde kalır.
 
 **Per-Plan Metrics:**
 
@@ -71,6 +71,7 @@ Progress: [██░░░░░░░░] 17%
 | Phase 02 P02 | 7min | 3 tasks | 12 files |
 | Phase 02 P03 | 26min | 3 tasks | 372 files |
 | Phase 02 P04 | 26min | 3 tasks | 75 files |
+| Phase 02 P05 | 38min | 3 tasks | 387 files |
 
 ## Accumulated Context
 
@@ -98,6 +99,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [2026-11-11 model seçimi]: Kullanıcının daha güçlü ajan isteğiyle bu düzeltmenin planlama ve uygulaması GPT-6.1 Sol/xhigh ile yapıldı. Otomatik Astra eklenmedi; genel kayıtlı maliyet/rol varsayılanları değişmedi.
 - [Phase 02]: 02-03: TİP 7d5f78dde79a4b0bb48f64a16fd263c1 sürümü ve 02-02’ye bağlı makbuzla tam teslim; prefix yalnız ['tip']. Parti yayınları açık atıfla derlendi; söylem/mali başlıklar sonraki fazlar için Henüz incelenmedi kaldı.
 - [Phase 02]: 02-04: DEM 77074f17144b41399615da5ee4b37bcf yerel sürümü ve TİP’e bağlı makbuzla teslim; prefix yalnız tip,dem. Sicil 30 Kasım 2012 ile 25 Kasım toplantısı ve ayrı HDP sicili ayrıldı; güncel bağımsız program açık kaldı.
+- [Phase 02]: 02-05: İYİ Parti 45fdfa3f6abe4a8882c52b2658fc6c6d yerel sürümü ve DEM’e bağlı makbuzla teslim; prefix tip,dem,iyi. Gerçek sicil yargitay-207; 2020/2026 değişiklikli tüzükler ve tam HTML programı derlendi, PDF/kabul tarihi ve kurumsal kaynak görünümü sınırları korundu.
 
 ### Pending Todos
 
@@ -131,6 +133,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-11T17:24:48.035Z
-Stopped at: 02-04 tamamlandı; DEM teslimi bildirildikten sonra sıradaki 02-05 İYİ Parti
-Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-05-PLAN.md
+Last session: 2026-11-11T18:06:05.861Z
+Stopped at: 02-05 tamamlandı; İYİ Parti teslimi bildirildikten sonra sıradaki 02-06 Yeni Yol Partisi
+Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-06-PLAN.md
