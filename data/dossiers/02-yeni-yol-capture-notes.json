@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "party_id": "yeni-yol",
+  "reason": "İlk ek taramada iki capture dizisi aynı geçici metadata dosyasını kullandı. İki ön yanıtın özgün baytları korunmuş, ilk erişim metadata satırları üzerine yazılmıştır. Sonraki capture dizisi sırayla çalıştırıldı. Kaybolan erişim saati uydurulmaz; dosya mtime bilgisi erişim veya yayın günü değildir.",
+  "scope": "Bu iki ham yanıt teslimin kaynak sürümü veya sürüm ilişkisi olarak gösterilmez; bulgular yalnız tam metadata ve atıfla kayıtlı sekiz sürüme dayanır. İlk yanıtların mevcut hashleri, HTML içindeki kanonik adres beyanları ve sonraki seçilmiş capture ile bağlantıları burada görünür tutulur.",
+  "objects": [
+    {
+      "sha256": "5f66770a431c667ea6bd798bb914f46fecdc65d2300728fe357f08a08e230ca9",
+      "original_path": "objects/5f66770a431c667ea6bd798bb914f46fecdc65d2300728fe357f08a08e230ca9/original.html.bin",
+      "readable_path": "objects/5f66770a431c667ea6bd798bb914f46fecdc65d2300728fe357f08a08e230ca9/readable.html",
+      "html_declared_canonical_url": "https://bizimtv.com.tr/politika/mecliste-yeni-yol-grubu-kuruldu-grup-yonetimi-belli-oldu-108282h",
+      "accessed_at": null,
+      "local_file_mtime_utc": "2026-11-11T18:12:31.164902+00:00",
+      "later_capture_sha256": "2f78bfc9442af3190bc86c736437f19fb6f4f1e368d077736347cb601df43554",
+      "later_capture_accessed_at": "2026-11-11T18:13:29.768003+00:00",
+      "published_version_id": null,
+      "selected_quotes_also_present": [],
+      "used_in_findings": false
+    },
+    {
+      "sha256": "dd285291358a021dbcb009bb8ed395d72161a64b9c6067ca45bb9b217549ecfb",
+      "original_path": "objects/dd285291358a021dbcb009bb8ed395d72161a64b9c6067ca45bb9b217549ecfb/original.html.bin",
+      "readable_path": "objects/dd285291358a021dbcb009bb8ed395d72161a64b9c6067ca45bb9b217549ecfb/readable.html",
+      "html_declared_canonical_url": "https://www.milligazete.com.tr/yeni-yol-partisinde-genel-baskanlik-degisimi-izzettin-kucuk-yeni-yol-partisinin-yeni-genel-baskani-oldu",
+      "accessed_at": null,
+      "local_file_mtime_utc": "2026-11-11T18:12:33.105792+00:00",
+      "later_capture_sha256": "8062dc02a1fb01ffb08d3088349e986e4532d0816daf6ddc1c70c830787099ea",
+      "later_capture_accessed_at": "2026-11-11T18:13:30.262887+00:00",
+      "published_version_id": "0206-yeni-yol-chair-change-v1",
+      "selected_quotes_also_present": [
+        "Celal Mümtaz Akıncı’nın yerine",
+        "13 Ocak tarihi itibarıyla"
+      ],
+      "used_in_findings": false
+    }
+  ]
+}

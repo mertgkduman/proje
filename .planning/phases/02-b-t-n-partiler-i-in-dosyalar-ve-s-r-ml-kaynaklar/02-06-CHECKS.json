@@ -1,0 +1,1239 @@
+{
+  "schema_version": 1,
+  "party_id": "yeni-yol",
+  "release_id": "732fcd2bfc954200b4292c51ef29f526",
+  "checked_at": "2026-11-11T18:42:14.783760+00:00",
+  "data_schema_version": 5,
+  "source_policy_version": 2,
+  "renderer_version": 13,
+  "dossier_validation_version": 2,
+  "previous_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release 45fdfa3f6abe4a8882c52b2658fc6c6d --phase 2 --party iyi",
+    "result": "PHASE2_PARTY_OK 45fdfa3f6abe4a8882c52b2658fc6c6d"
+  },
+  "dossier_check": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py dossier-check --input data/dossiers/02-yeni-yol.json",
+    "result": "DOSSIER_INPUT_OK"
+  },
+  "party_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release current --phase 2 --party yeni-yol",
+    "result": "PHASE2_PARTY_OK 732fcd2bfc954200b4292c51ef29f526"
+  },
+  "phase1_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release current --phase 1",
+    "result": "PHASE1_AUDIT_OK 732fcd2bfc954200b4292c51ef29f526"
+  },
+  "receipt_check": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py receipt-check --input data/deliveries/02-06-yeni-yol.json",
+    "result": "DELIVERY_RECEIPT_OK"
+  },
+  "previous_receipt": {
+    "status": "pass",
+    "receipt": "data/deliveries/02-05-iyi.json",
+    "result": "Başlangıç receipt-check sıfır çıkışla başarılı oldu; kabuk && ile önceki parti audit’ine geçti. Yeni receipt-check tüm önceki makbuz zincirini ayrıca denetledi."
+  },
+  "tests": {
+    "dossiers": {
+      "status": "pass",
+      "passed": 10,
+      "command": "python3 tests/run.py --pattern test_dossiers.py"
+    }
+  },
+  "browser": {
+    "status": "BROWSER_ARCHIVES_OK",
+    "results": [
+      {
+        "kind": "report",
+        "width": 1365,
+        "url": "http://127.0.0.1:8026/releases/732fcd2bfc954200b4292c51ef29f526/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 1365,
+        "url": "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - YENİ YOL",
+        "overflow": false,
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "YENİ YOL"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/23b925f3d9d4e94b1e9971e4367cc30e1c6f56856916fcd741c1e0301ceadaea.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/d18054c528e32ac098f154412e5026ddcb95f905994be5b8b1d768dd7bf73667.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/db2ad03c62da32e6559c07ae60c42972e5109d7d0f6d97afb43c8c29029d1e42.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/e5b29c36b2e7a2f4db58307359fa574004be43d39790e4b7a3cf80a7b16e8bb6.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/ed5bf02d648da84d8d68e5e7a9261c198f4713969f92b5729a81fb039a93be15.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2"
+        ]
+      },
+      {
+        "kind": "tbmm",
+        "width": 1365,
+        "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/index.html",
+        "title": "TÜRKİYE BÜYÜK MİLLET MECLİSİ",
+        "overflow": false,
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur.",
+          "Sayfanın dilini ingilizceye döndürmek için kullanılan icon",
+          "",
+          "Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur.",
+          "Tbmm telefonu iconu",
+          "Youtube iconu"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/590548031e8bcf6bbc75a87e45a5a0188c3e55a9dc1e0efd4a936e83d46fe494.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2bc7f7febcd4d2f23aa2da4940103ef68c631d0dfdd8fb572c1d7e3fbbb0ebe3.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/6866b0b69fdfe405ac820e2e6e6e3ba5b70ac1568dc1c0b82890cda41700516f.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/cfbf84cacf96b1f7be775966ed607b0a6078865d641bf41613a8390e8f0c4608.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a6315cca7b297e4ddac677a493e8f22f6f8ea5acb052f6d41307bbcc6bfc2abe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/22feb0da5ff8e1ef844d2cc014293b3f8b71283ab326567cd39a870268008590.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2fa4c7cf47ae558ea384cb182c75004a58afd58d6e83b70318ced0314815f6ea.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/25354182c0560fab317b735edb06d34de82b43250d1aa9a445c35de3bcb2e0a9.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a60072a8b168777cc0d16dee5b5cad41589179ff1da36ae8a2b6f5eda1aa7983.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/445cf311846e49973d7d888ea0057ba08f66ddd02a4664ffb3416e6217ddd51f.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/6866b0b69fdfe405ac820e2e6e6e3ba5b70ac1568dc1c0b82890cda41700516f.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/cfbf84cacf96b1f7be775966ed607b0a6078865d641bf41613a8390e8f0c4608.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a6315cca7b297e4ddac677a493e8f22f6f8ea5acb052f6d41307bbcc6bfc2abe.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/8f4511276075dc1dcdec45ca8338c01220c1094a49964ed5fc5653bbb74772e1.css",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/aab15e7b74aaf5edecd7d2f6245bc5863dee4a7923729251f919dc67c322e4e7.css",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/590548031e8bcf6bbc75a87e45a5a0188c3e55a9dc1e0efd4a936e83d46fe494.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2bc7f7febcd4d2f23aa2da4940103ef68c631d0dfdd8fb572c1d7e3fbbb0ebe3.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/6866b0b69fdfe405ac820e2e6e6e3ba5b70ac1568dc1c0b82890cda41700516f.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/cfbf84cacf96b1f7be775966ed607b0a6078865d641bf41613a8390e8f0c4608.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a6315cca7b297e4ddac677a493e8f22f6f8ea5acb052f6d41307bbcc6bfc2abe.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/22feb0da5ff8e1ef844d2cc014293b3f8b71283ab326567cd39a870268008590.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2fa4c7cf47ae558ea384cb182c75004a58afd58d6e83b70318ced0314815f6ea.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/25354182c0560fab317b735edb06d34de82b43250d1aa9a445c35de3bcb2e0a9.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a60072a8b168777cc0d16dee5b5cad41589179ff1da36ae8a2b6f5eda1aa7983.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/445cf311846e49973d7d888ea0057ba08f66ddd02a4664ffb3416e6217ddd51f.png"
+        ]
+      },
+      {
+        "kind": "same-name-pdf",
+        "width": 1365,
+        "open": true,
+        "url": "http://127.0.0.1:8026/objects/bc2081ef420b30bfbc2c7f6a8909fd5083f5a69ebbba85e6888c195deea810c3/original.pdf",
+        "text": "Anayasa Mahkemesi — E.2023/3 (Değişik İşler), K.2023/10; aynı adlı eski parti Birincil belge · 30.11.2023 · 30 Kasım 2023 karar; 19 Ocak 2024 Resmî Gazete yayını; 3 sayfalık tarama\n“kuruluşuna dair bildiri ve eklerini 4/5/2020 tarihinde”\nBelge tarihi\n30.11.2023\nSürüm\n30 Kasım 2023 karar; 19 Ocak 2024 Resmî Gazete yayını; 3 sayfalık tarama\nErişim\n11.11.2026\nDoğrulama\n11.11.2026\nKonum\nIII. İnceleme, paragraf 4; aynı adlı eski parti\nPDF sayfası\n2\nSayfa kontrolü\n11.11.2026 · Metin katmanı karar gövdesini içermiyor. Sayfa görüntüsü okunarak kısa pasaj birebir yazıldı; insan onayı olarak sunulmaz.\nAtıf\nAnayasa Mahkemesi · 2024-01-19\nAtıf dayanağı\nKaynağın kendi başlığı, yayıncısı, varsa tarih/yazar künyesi ve özgün adresi birlikte okundu. Kararın taranmış üç sayfası görsel olarak okundu; karar tarihi ile Resmî Gazete yayın günü ayrıdır.\n\nDoğrudan okunan sicil, tutanak veya yargı kararı.\n\nBelge sürüm geçmişi\nÖzgün kaynak\nArşiv kopyası\nBelgeyi indir"
+      },
+      {
+        "kind": "report",
+        "width": 360,
+        "url": "http://127.0.0.1:8026/releases/732fcd2bfc954200b4292c51ef29f526/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "registry",
+        "width": 360,
+        "url": "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/index.html",
+        "title": "Yargıtay Cumhuriyet Başsavcılığı - YENİ YOL",
+        "overflow": false,
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "YENİ YOL"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/23b925f3d9d4e94b1e9971e4367cc30e1c6f56856916fcd741c1e0301ceadaea.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/d18054c528e32ac098f154412e5026ddcb95f905994be5b8b1d768dd7bf73667.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/db2ad03c62da32e6559c07ae60c42972e5109d7d0f6d97afb43c8c29029d1e42.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/e5b29c36b2e7a2f4db58307359fa574004be43d39790e4b7a3cf80a7b16e8bb6.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/ed5bf02d648da84d8d68e5e7a9261c198f4713969f92b5729a81fb039a93be15.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+          "http://127.0.0.1:8026/views/d9aab708eaffe8ba923afb1094692581/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png"
+        ]
+      },
+      {
+        "kind": "tbmm",
+        "width": 360,
+        "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/index.html",
+        "title": "TÜRKİYE BÜYÜK MİLLET MECLİSİ",
+        "overflow": false,
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images_without_local_src": [
+          "Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur.",
+          "Sayfanın dilini ingilizceye döndürmek için kullanılan icon",
+          "",
+          "Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur.",
+          "Tbmm telefonu iconu",
+          "Youtube iconu"
+        ],
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/590548031e8bcf6bbc75a87e45a5a0188c3e55a9dc1e0efd4a936e83d46fe494.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2bc7f7febcd4d2f23aa2da4940103ef68c631d0dfdd8fb572c1d7e3fbbb0ebe3.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/6866b0b69fdfe405ac820e2e6e6e3ba5b70ac1568dc1c0b82890cda41700516f.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/cfbf84cacf96b1f7be775966ed607b0a6078865d641bf41613a8390e8f0c4608.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a6315cca7b297e4ddac677a493e8f22f6f8ea5acb052f6d41307bbcc6bfc2abe.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/22feb0da5ff8e1ef844d2cc014293b3f8b71283ab326567cd39a870268008590.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2fa4c7cf47ae558ea384cb182c75004a58afd58d6e83b70318ced0314815f6ea.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/25354182c0560fab317b735edb06d34de82b43250d1aa9a445c35de3bcb2e0a9.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a60072a8b168777cc0d16dee5b5cad41589179ff1da36ae8a2b6f5eda1aa7983.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/445cf311846e49973d7d888ea0057ba08f66ddd02a4664ffb3416e6217ddd51f.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/6866b0b69fdfe405ac820e2e6e6e3ba5b70ac1568dc1c0b82890cda41700516f.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/cfbf84cacf96b1f7be775966ed607b0a6078865d641bf41613a8390e8f0c4608.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a6315cca7b297e4ddac677a493e8f22f6f8ea5acb052f6d41307bbcc6bfc2abe.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/8f4511276075dc1dcdec45ca8338c01220c1094a49964ed5fc5653bbb74772e1.css",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/aab15e7b74aaf5edecd7d2f6245bc5863dee4a7923729251f919dc67c322e4e7.css",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/590548031e8bcf6bbc75a87e45a5a0188c3e55a9dc1e0efd4a936e83d46fe494.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/79015bb885a46bf43a596f48288013f8a97f188a891e67c56b3631a3fd492bfe.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2bc7f7febcd4d2f23aa2da4940103ef68c631d0dfdd8fb572c1d7e3fbbb0ebe3.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/6866b0b69fdfe405ac820e2e6e6e3ba5b70ac1568dc1c0b82890cda41700516f.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/cfbf84cacf96b1f7be775966ed607b0a6078865d641bf41613a8390e8f0c4608.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a6315cca7b297e4ddac677a493e8f22f6f8ea5acb052f6d41307bbcc6bfc2abe.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/22feb0da5ff8e1ef844d2cc014293b3f8b71283ab326567cd39a870268008590.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/2fa4c7cf47ae558ea384cb182c75004a58afd58d6e83b70318ced0314815f6ea.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/25354182c0560fab317b735edb06d34de82b43250d1aa9a445c35de3bcb2e0a9.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/53eba774ad74d2b75f672deb6117f23ff848e50b029256a56826dd5b6efdbeed.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/a60072a8b168777cc0d16dee5b5cad41589179ff1da36ae8a2b6f5eda1aa7983.png",
+          "http://127.0.0.1:8026/views/445d51eb8e38c46bf736d805e6a4d490/assets/445cf311846e49973d7d888ea0057ba08f66ddd02a4664ffb3416e6217ddd51f.png"
+        ]
+      },
+      {
+        "kind": "same-name-pdf",
+        "width": 360,
+        "open": true,
+        "url": "http://127.0.0.1:8026/objects/bc2081ef420b30bfbc2c7f6a8909fd5083f5a69ebbba85e6888c195deea810c3/original.pdf",
+        "text": "Anayasa Mahkemesi — E.2023/3 (Değişik İşler), K.2023/10; aynı adlı eski parti Birincil belge · 30.11.2023 · 30 Kasım 2023 karar; 19 Ocak 2024 Resmî Gazete yayını; 3 sayfalık tarama\n“kuruluşuna dair bildiri ve eklerini 4/5/2020 tarihinde”\nBelge tarihi\n30.11.2023\nSürüm\n30 Kasım 2023 karar; 19 Ocak 2024 Resmî Gazete yayını; 3 sayfalık tarama\nErişim\n11.11.2026\nDoğrulama\n11.11.2026\nKonum\nIII. İnceleme, paragraf 4; aynı adlı eski parti\nPDF sayfası\n2\nSayfa kontrolü\n11.11.2026 · Metin katmanı karar gövdesini içermiyor. Sayfa görüntüsü okunarak kısa pasaj birebir yazıldı; insan onayı olarak sunulmaz.\nAtıf\nAnayasa Mahkemesi · 2024-01-19\nAtıf dayanağı\nKaynağın kendi başlığı, yayıncısı, varsa tarih/yazar künyesi ve özgün adresi birlikte okundu. Kararın taranmış üç sayfası görsel olarak okundu; karar tarihi ile Resmî Gazete yayın günü ayrıdır.\n\nDoğrudan okunan sicil, tutanak veya yargı kararı.\n\nBelge sürüm geçmişi\nÖzgün kaynak\nArşiv kopyası\nBelgeyi indir"
+      }
+    ]
+  },
+  "pdf_http": {
+    "status": "pass",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "sha256": "bc2081ef420b30bfbc2c7f6a8909fd5083f5a69ebbba85e6888c195deea810c3",
+    "matches_original": true
+  },
+  "preservation": {
+    "status": "pass",
+    "unchanged_immutable_files": 1078,
+    "preserved_old_rows": {
+      "accounting_period": 0,
+      "action": 16,
+      "actor": 1,
+      "archive_view": 14,
+      "attempt": 136,
+      "closure": 13,
+      "comparison": 0,
+      "comparison_evidence": 0,
+      "document": 74,
+      "document_authority": 1,
+      "document_version": 83,
+      "dossier_event": 12,
+      "dossier_field": 26,
+      "dossier_identity_note": 0,
+      "dossier_source": 68,
+      "edge": 7,
+      "event_date": 12,
+      "financial": 0,
+      "finding": 201,
+      "finding_evidence": 229,
+      "finding_topic": 26,
+      "group_membership": 1,
+      "identity_observation": 4,
+      "lead": 90,
+      "manual_passage": 2,
+      "match": 18,
+      "match_candidate": 26,
+      "membership": 1,
+      "method": 1,
+      "missing": 34,
+      "missing_resolution": 12,
+      "parliamentary_group": 1,
+      "party": 8,
+      "party_identity_revision": 2,
+      "passage": 169,
+      "person": 2,
+      "reopen": 2,
+      "report_option": 1,
+      "research_state": 20,
+      "review": 202,
+      "scope_exclusion": 7,
+      "scope_observation": 9,
+      "scope_party": 9,
+      "source_attribution": 47,
+      "source_policy": 1,
+      "topic": 16,
+      "topic_basis": 1,
+      "topic_query": 3,
+      "topic_search": 18,
+      "url_alias": 77,
+      "verification": 89,
+      "version_context": 61,
+      "version_relation": 2
+    },
+    "controlled_identity_changes": {
+      "party": [
+        {
+          "id": "yeni-yol",
+          "legal_name": "YENİ YOL PARTİSİ",
+          "registry_key": "tbmm-51c2a312-6e03-4a9f-980a-01946886a821"
+        }
+      ]
+    },
+    "identity_revision": [
+      {
+        "changed_at": "2026-11-11T18:23:36.028236+00:00",
+        "id": "revision-yeni-yol-yargitay-331",
+        "legal_name": "YENİ YOL",
+        "party_id": "yeni-yol",
+        "passage_id": "0206-yeni-yol-legal",
+        "previous_legal_name": "YENİ YOL PARTİSİ",
+        "previous_registry_key": "tbmm-51c2a312-6e03-4a9f-980a-01946886a821",
+        "reason": "Onaylı yeni-yol kimliği korunur. Önceki TBMM URL anahtarı ve kapsam gözlemleri geçmişte kalır; gerçek /sipar/331 sicil kaydıyla ad ve kuruluş kontrollü doğrulanır. Ortak grup ve bireysel üyelik tüzel kimlikle birleştirilmez.",
+        "registry_key": "yargitay-331"
+      }
+    ]
+  },
+  "content": {
+    "records": 220,
+    "source_versions": 8,
+    "summary_quote_pairs": 13,
+    "card_fields": 7,
+    "chronology_events": 3,
+    "manual_visual_passages": 2,
+    "passive_views": 6
+  },
+  "archive_fidelity": [
+    {
+      "version_id": "0206-yeni-yol-registry-v1",
+      "local_files": 31,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAABvCAYAAADG8NPlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAC05SURBVHhe7X0HdF3VtS0Z4///8l+S90klISEdUunhAQmEQEhiCD0EAqEZm9CrwYDBuOCGe5dl9Wb13nvvktV7r5ZVrGLLkhvzz7nvFci2LjGyRPze",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy=",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236ea8fe'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643 — HTTP Error 418: I'm a teapot",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643#iefix — HTTP Error 418: I'm a teapot",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.svg?t=1769685282643#remixicon — HTTP Error 418: I'm a teapot"
+      ]
+    },
+    {
+      "version_id": "0206-yeni-yol-registry-page-v1",
+      "local_files": 32,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy=",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236ea8fe'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643 — HTTP Error 418: I'm a teapot",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643#iefix — HTTP Error 418: I'm a teapot",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.svg?t=1769685282643#remixicon — HTTP Error 418: I'm a teapot",
+        "Kaynak alınamadı: https://www.yargitaycb.gov.tr/sayfa/yeni-yol/2018 — Pasif varlık türü desteklenmiyor: text/html"
+      ]
+    },
+    {
+      "version_id": "0206-yeni-yol-mutabakat-v1",
+      "local_files": 1,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://static.dha.com.tr/images/dha/dha-logo.png?v=1",
+        "Yerelleştirilmeyen kaynak: https://image.dha.com.tr/i/dha/75/0x350/6af4a926bb51d4e475dbdaa4.jpg",
+        "Yerelleştirilmeyen kaynak: https://image.dha.com.tr/i/dha/75/0x350/6af49ee9bb51d4e475dbda48.jpg",
+        "Yerelleştirilmeyen kaynak: https://image.dha.com.tr/i/dha/75/0x350/6af49db6bb51d4e475dbda2f.jpg",
+        "Yerelleştirilmeyen kaynak: https://image.dha.com.tr/i/dha/75/0x350/6af49cf2bb51d4e475dbda1e.jpg",
+        "Yerelleştirilmeyen kaynak: https://image.dha.com.tr/i/dha/75/0x350/6af499a5bb51d4e475dbd9de.jpg",
+        "Yerelleştirilmeyen kaynak: https://static.dha.com.tr/styles/newsdetail/dha-newsdetail.min.css?v=azure-185",
+        "Yerelleştirilmeyen kaynak: https://player.dha.com.tr/q/s/player/html5/1.21.13/assets/css/docs.min.css",
+        "Yerelleştirilmeyen kaynak: https://static.dha.com.tr/quark-player-maestro/player-debug/css/player-skin.min.css?v=azure-185"
+      ]
+    },
+    {
+      "version_id": "0206-yeni-yol-founding-v1",
+      "local_files": 2,
+      "limitations": [
+        "Kaynak alınamadı: https://www.karar.com/d/assets/logo-white.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1771854.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947528.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947527.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947524.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947522.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947521.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947520.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947519.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1946628.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947257.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947314.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947106.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947193.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947249.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947247.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947228.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1937468.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947282.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947291.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947529.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947518.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947516.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947513.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947505.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947502.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1388942.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1946794.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947473.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/news/1947458.jpg",
+        "Yerelleştirilmeyen kaynak: https://images.dmca.com/Badges/DMCA_badge_trn_60w.png?ID=aca89472-5a16-4ba6-baf8-920eb6a38267",
+        "Kaynak alınamadı: https://www.karar.com/d/assets/logo-dark.svg — Pasif varlık türü desteklenmiyor: image/svg+xml",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%2328a745' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5'%3E%3Cpath fill='%23343a40' d='M2 0 0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545'%3E%3Ccircle cx='6' cy='6' r='4.5'/%3E%3Cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3E%3Ccircle cx='6' cy='8.2' ",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/fonts/cm-icons.eot",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/fonts/cm-icons.eot#iefix",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/fonts/cm-icons.woff2",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/fonts/cm-icons.woff",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/fonts/cm-icons.ttf",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/fonts/cm-icons.svg#cm-icons",
+        "Yerelleştirilmeyen kaynak: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAU4AAABSCAMAAAAM7s0PAAABaFBMVEX////kBhPjBRL+//3+/f79/f3oMjz///7nJjL+///iBRHjBBP8/v7lFSHiBRP2sbXvaW/sUlv4v8P8/PzlBRP2ur3+/PzykZX63t7zlJjznqPlFyT62NrsY2vmIy7weH/iCBXlBRH99/fkCRb64uTuZ27lEB3609f50tP9+fn88PD4",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNy40NSA0MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMTU3LjQiIHkxPSItMTg4LjczIiB4Mj0iMTUyLjM0IiB5Mj0iLTE3OC44MSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgx",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMi41NyA0MCI+PHBhdGggZD0iTTI3LjIgMjEuMjVhOC44MyA4LjgzIDAgMCAwIDUuMzcgOC4wOUEyMiAyMiAwIDAgMSAyOS44MSAzNWMtMS42NyAyLjQ0LTMuNCA0Ljg3LTYuMTIgNC45MnMtMy41NC0x",
+        "Yerelleştirilmeyen kaynak: data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAA",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/images/weather-box.jpg",
+        "Yerelleştirilmeyen kaynak: https://cdn.karar.com/assets/bundle/images/imsakiye-header.jpg",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNC40LjJjLS40LjMtMS4yLjktMS45IDEuNWwtMS4xIDFjLTEuOS0uNy0zLjItLjktNC42LTFsLTIuMi0u",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%23fff' d='m6.564.75-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E"
+      ]
+    },
+    {
+      "version_id": "0206-yeni-yol-tbmm-kaya-v1",
+      "local_files": 16,
+      "limitations": [
+        "Kaynak alınamadı: https://tbmm.gov.tr/img/tbmm-logo.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/img/icon_language.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/Icon_youtube.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_parlamentolar_arasi_iliskiler.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_kutuphane.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_anayasa.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/icon_edilekce.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/images/yeni_tasarim/tbmm_tel_icon.png — <urlopen error [Errno 104] Connection reset by peer>",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy=",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e",
+        "Kaynak alınamadı: https://tbmm.gov.tr/font-awesome/css/font-awesome.min.css — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/css/tbmm-yeni-tasarim.css — <urlopen error [Errno 104] Connection reset by peer>",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-brands-400.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-brands-400.eot#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-brands-400.woff2 — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-brands-400.woff — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-brands-400.ttf — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-brands-400.svg#fontawesome — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-regular-400.eot — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-regular-400.eot#iefix — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-regular-400.woff — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-regular-400.ttf — Pasif varlık türü desteklenmiyor: application/x-font-ttf",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-regular-400.svg#fontawesome — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-solid-900.eot — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-solid-900.eot#iefix — Pasif varlık türü desteklenmiyor: application/vnd.ms-fontobject",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-solid-900.woff2 — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-solid-900.woff — Pasif varlık türü desteklenmiyor: application/font-woff",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-solid-900.ttf — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/fonts/fa-solid-900.svg#fontawesome — <urlopen error [Errno 104] Connection reset by peer>",
+        "Kaynak alınamadı: https://tbmm.gov.tr/vendor/datatables/custom.css — <urlopen error [Errno 104] Connection reset by peer>"
+      ]
+    },
+    {
+      "version_id": "0206-yeni-yol-chair-change-v1",
+      "local_files": 1,
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: https://maps.gstatic.com/weather/v1/partly_clear.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/milli-gazete-dikey-1.svg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/milli-gazete-logo-light-1.svg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/1280x720/milligazete-com-tr/uploads/2026/01/yeni-yol.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/sergenyalcin-437721.webp",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/universitelerde-egitim-3-yila-mi-dusecek-yok-baskani-ozvar-acikladi-1.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/7ae1cca0-ccfb-11ee-b460-3d5c71621053jpg.webp",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/users/whatsapp-image-2025-11-12-at-122336.jpeg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/mit-baskani-kalin-ikby-baskani-necirvan-barzani-ile-gorustu.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/ali-pasli.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/akp-li-guler-den-sahap-kavcioglu-sorusuna-yanit-yarin-konusacagim.webp",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/evden-calisanlar-dikkat-isveren-artik-mesai-saatlerini-istedigi-gibi-degistiremeyecek-3370839-202611111544-1.webp",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/yesil-pasaport-kimlere-veriliyor-iste-2026-yili-basvuru-sartlari-ve-gerekli-belgeler-1.webp",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/11/images-1-167.jpg",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/prayer-bg.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/640x375/milligazete-com-tr/uploads/2026/11/arikan-iktidarin-24-yillik-karnesini-ekonomi-ve-fon-vurgunuyla-anlatti-ciplak-vatandas-ekonomisinin-hesabini-sandikta-soracagiz.jpeg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/10/arikandan-teskilatlara-iktidar-hazirligi-cagrisi-muhalefet-eden-teskilattan-iktidara-hazirlanan-organizasyona-gecmeliyiz.jpg",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/crop/250x150/milligazete-com-tr/uploads/2026/10/deva-partisinden-istifa-etti-yeni-yolda-kaldi-ertugrul-kayanin-istifasi-yeni-yolun-gundeminde.jpg",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/super-lig.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-1-lig.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-2-lig-beyaz.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-2-lig-kirmizi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-3-lig-1-grup.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-3-lig-2-grup.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/tff-3-lig-3-grup.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/bundesliga.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/premier-lig.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/la-liga.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/serie-a.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/ligue-1.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/azerbaijan-premyer-liqa.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/uefa-sampiyonlar-ligi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/uefa-avrupa-ligi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/uefa-konferans-ligi.png",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/img/leagues/dunya-kupasi.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/645.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/998.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/3579.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/549.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/1004.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/611.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/7411.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/564.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/6343.png",
+        "Yerelleştirilmeyen kaynak: https://media.api-sports.io/football/teams/994.png",
+        "Yerelleştirilmeyen kaynak: https://milligazetecomtr.teimg.com/milligazete-com-tr/uploads/2025/11/milli-gazete-logo-1.svg",
+        "Yerelleştirilmeyen kaynak: https://mc.yandex.ru/watch/98695054",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/vendor/te/fonts/roboto.css?v=7.4.9",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/vendor/bootstrap/css/bootstrap.min.css?v=7.4.9",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/css/app7.4.9.min.css",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/themes/flow/assets/css/flow-story.css?v=7.4.9",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/vendor/te/plugins/advert/css/advert-public.css?v=7.4.9",
+        "Yerelleştirilmeyen kaynak: https://s.tblsm.com/7.4.9/vendor/te/packages/fancybox/jquery.fancybox.min.css?v=7.4.9"
+      ]
+    }
+  ],
+  "same_name_legal_identity": {
+    "source": "https://www.resmigazete.gov.tr/eskiler/2024/01/20240119-10.pdf",
+    "pages_viewed": [
+      0,
+      1,
+      2
+    ],
+    "document_date": "2023-11-30",
+    "published_at": "2024-01-19",
+    "founding_date_paragraph_4": "4/5/2020",
+    "paragraph_6_internal_date_typo": "4/5/2000",
+    "note": "Paragraf 4 ve davacı metni 2020 der; tekil 2000 yazımı düzeltmeden ve yeni kuruluş tarihi yapmadan kaydedilir. Karar 2025 tüzel kişiliğine taşınmaz."
+  },
+  "unselected_raw_captures": {
+    "schema_version": 1,
+    "party_id": "yeni-yol",
+    "reason": "İlk ek taramada iki capture dizisi aynı geçici metadata dosyasını kullandı. İki ön yanıtın özgün baytları korunmuş, ilk erişim metadata satırları üzerine yazılmıştır. Sonraki capture dizisi sırayla çalıştırıldı. Kaybolan erişim saati uydurulmaz; dosya mtime bilgisi erişim veya yayın günü değildir.",
+    "scope": "Bu iki ham yanıt teslimin kaynak sürümü veya sürüm ilişkisi olarak gösterilmez; bulgular yalnız tam metadata ve atıfla kayıtlı sekiz sürüme dayanır. İlk yanıtların mevcut hashleri, HTML içindeki kanonik adres beyanları ve sonraki seçilmiş capture ile bağlantıları burada görünür tutulur.",
+    "objects": [
+      {
+        "sha256": "5f66770a431c667ea6bd798bb914f46fecdc65d2300728fe357f08a08e230ca9",
+        "original_path": "objects/5f66770a431c667ea6bd798bb914f46fecdc65d2300728fe357f08a08e230ca9/original.html.bin",
+        "readable_path": "objects/5f66770a431c667ea6bd798bb914f46fecdc65d2300728fe357f08a08e230ca9/readable.html",
+        "html_declared_canonical_url": "https://bizimtv.com.tr/politika/mecliste-yeni-yol-grubu-kuruldu-grup-yonetimi-belli-oldu-108282h",
+        "accessed_at": null,
+        "local_file_mtime_utc": "2026-11-11T18:12:31.164902+00:00",
+        "later_capture_sha256": "2f78bfc9442af3190bc86c736437f19fb6f4f1e368d077736347cb601df43554",
+        "later_capture_accessed_at": "2026-11-11T18:13:29.768003+00:00",
+        "published_version_id": null,
+        "selected_quotes_also_present": [],
+        "used_in_findings": false
+      },
+      {
+        "sha256": "dd285291358a021dbcb009bb8ed395d72161a64b9c6067ca45bb9b217549ecfb",
+        "original_path": "objects/dd285291358a021dbcb009bb8ed395d72161a64b9c6067ca45bb9b217549ecfb/original.html.bin",
+        "readable_path": "objects/dd285291358a021dbcb009bb8ed395d72161a64b9c6067ca45bb9b217549ecfb/readable.html",
+        "html_declared_canonical_url": "https://www.milligazete.com.tr/yeni-yol-partisinde-genel-baskanlik-degisimi-izzettin-kucuk-yeni-yol-partisinin-yeni-genel-baskani-oldu",
+        "accessed_at": null,
+        "local_file_mtime_utc": "2026-11-11T18:12:33.105792+00:00",
+        "later_capture_sha256": "8062dc02a1fb01ffb08d3088349e986e4532d0816daf6ddc1c70c830787099ea",
+        "later_capture_accessed_at": "2026-11-11T18:13:30.262887+00:00",
+        "published_version_id": "0206-yeni-yol-chair-change-v1",
+        "selected_quotes_also_present": [
+          "Celal Mümtaz Akıncı’nın yerine",
+          "13 Ocak tarihi itibarıyla"
+        ],
+        "used_in_findings": false
+      }
+    ]
+  },
+  "important_gaps": [
+    "Yeni Yol tüzel kişiliğinin kendi yayıncılığına bağlanabilen bağımsız resmî site adresi bu taramada bulunamadı. Diğer üç partinin siteleri ve ticari tasarım sayfaları resmî Yeni Yol sitesi sayılmadı.",
+    "Tam Yeni Yol tüzüğü ve önceki sürümü bu taramada bulunamadı. Kuruluş haberinde onaylanan taslak anılıyor; metin, kabul/son değişiklik günü ve sürüm geçmişi edinilmedi.",
+    "Tam Yeni Yol programı ve önceki sürümü bu taramada bulunamadı. Kuruluşta taslak onayı haberi tam belge yerine geçmez; DEVA, Gelecek veya Saadet programları Yeni Yol’a mal edilmedi.",
+    "2025’te kurulan tüzel kişiliğin ilk büyük kongresine ilişkin tarihli doğrudan belge bu taramada bulunamadı. 2020 tarihli aynı adlı eski partinin kongre kararı bu dosyanın kongresi değildir.",
+    "İlk genel başkanın seçim günü ve ilk kurucu kurulun tam listesi elde edilmedi.",
+    "Tüzük/program tam metni olmadığından içerik özeti ve sürüm dönemi verilemedi; kuruluş taslak onayı ayrı sunulur.",
+    "Söylem–uygulama ve gerçekleşmiş finansman/harcama araştırması sonraki fazlar için Henüz incelenmedi."
+  ],
+  "human_acceptance": false,
+  "public_publication": false
+}
