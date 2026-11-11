@@ -169,3 +169,18 @@ class DossierTracer(unittest.TestCase):
                 rel.update(id='tip-version-cycle', version_id='tip-registry-v1', previous_version_id='tip-registry-v2')
                 with self.assertRaisesRegex(ValueError, 'döngü'): arsiv.record(work, 'version_relation', rel)
             finally: arsiv.DATA = old_data
+
+    def test_official_site_requires_verified_ownership(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old_data = arsiv.DATA
+            try:
+                arsiv.DATA = Path(tmp) / 'data'; copy_phase_one_data(old_data, arsiv.DATA)
+                work = arsiv.open_workspace(tmp)
+                for suffix, text, provenance in (('summary','https://unverified.example','summary'), ('quote','tip.org.tr','quote')):
+                    fid = 'site-test-' + suffix
+                    arsiv.record(work, 'finding', dict(id=fid,party_id='tip',heading='Kuruluş',pair_id='site-test',text=text,provenance=provenance,epistemic_type='registry'))
+                    arsiv.record(work, 'finding_evidence', dict(finding_id=fid,passage_id='tip-tbmm-domain',role='support'))
+                    arsiv.record(work, 'review', dict(id=fid+'-review',kind='finding',subject_id=fid,reviewer_kind='agent',reviewed_at='2026-11-11T15:00:00+00:00',result='reviewed',reason='Test'))
+                with self.assertRaisesRegex(ValueError, 'sahipliği'):
+                    arsiv.record(work, 'dossier_field', dict(id='site-test-field',party_id='tip',field='official_site',value='https://unverified.example',finding_id='site-test-summary',missing_id=None,as_of='2017-11-07',date_precision='day',date_unknown_reason=None))
+            finally: arsiv.DATA = old_data

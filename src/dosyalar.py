@@ -128,6 +128,17 @@ def validate_dossier(data, party_id=None, stage='tracer'):
                 identities = [i for i in data['identity_observation'] if i['entity_id'] == x['party_id'] and i['entity_kind'] == 'party' and i['valid_from']]
                 if len(identities) != 1 or x['value'] not in (identities[0]['valid_from'], dt.date.fromisoformat(identities[0]['valid_from']).strftime('%d.%m.%Y')):
                     raise ValueError('Kartın kuruluş günü doğrulanmış sicille uyuşmuyor')
+            if x['field'] in ('legal_name','registry_key'):
+                party = next(p for p in data['party'] if p['id'] == x['party_id'])
+                expected = party['legal_name'] if x['field'] == 'legal_name' else party['registry_key']
+                if x['value'] != expected or not any(documents[versions[passages[e['passage_id']]['version_id']]['document_id']]['source_kind'] == 'registry' for e in evidence if e['finding_id'] == f['id']):
+                    raise ValueError('Kimlik alanı parti siciliyle uyuşmuyor')
+            if x['field'] == 'official_site':
+                url = urlsplit(x['value'])
+                if url.scheme not in ('http','https') or not url.hostname or url.username or url.password: raise ValueError('Resmî site adresi geçersiz')
+                host = url.hostname.removeprefix('www.')
+                if not any(a['registry_party_id'] == x['party_id'] and a['status'] == 'verified' and urlsplit(versions[a['version_id']]['final_url']).hostname and urlsplit(versions[a['version_id']]['final_url']).hostname.removeprefix('www.') == host for a in data['document_authority']):
+                    raise ValueError('Resmî site alan adı sahipliği doğrulanmadı')
         else:
             m = missing.get(x['missing_id'])
             if x['finding_id'] or not m or m['party_id'] != x['party_id'] or m['heading'] != 'Kuruluş': raise ValueError('Kart eksiği girişimli kayıt gerektirir')
