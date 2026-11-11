@@ -143,13 +143,20 @@ def build_view(content,url,data_root,fetch_assets=True,local_links=None):
     from arsiv import safe_url
     safe_url(url)
     resources=Resources(url,fetch_assets)
+    # Logos and document images must not lose the shared asset budget to
+    # stylesheet font variants before the body is parsed.
+    class Images(HTMLParser):
+        def handle_starttag(self,tag,attrs):
+            if tag=='img' and (src:=dict(attrs).get('src')):
+                resources.asset(src,url)
+    images=Images();images.feed(content.decode('utf-8',errors='replace'));images.close()
     parser=PassiveHTML(resources,local_links or {})
     parser.feed(content.decode('utf-8',errors='replace'));parser.close()
     output='<!doctype html>'+''.join(parser.parts)
     if '<head' not in output:
         output='<meta http-equiv="Content-Security-Policy" content="'+html.escape(CSP,quote=True)+'">'+output
     # Static layout additions only; source handlers/scripts remain absent.
-    output=output.replace('</head>','<style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}</style></head>')
+    output=output.replace('</head>','<style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head>')
     files={'index.html':output.encode(),**resources.assets}
     hashes={p:digest(value) for p,value in files.items()}
     source_hash=digest(content)

@@ -46,6 +46,20 @@ def check_attribution(db, value):
         raw = safe_path(DATA, v['original_path']).read_bytes()
         text = folded(raw.decode('utf-8', errors='replace'))
         publisher_present = folded(value['publisher']) in text
+        # A compressed PDF can identify its publisher in its own text. An
+        # unavailable HTML page on the hosting domain must not block that
+        # attributed party publication (D-13).
+        if not publisher_present and raw.startswith(b'%PDF-'):
+            from arsiv import pdf_page_exists, pdf_page_text
+            path = safe_path(DATA, v['original_path'])
+            page = 0
+            while pdf_page_exists(path, page):
+                try:
+                    publisher_present = folded(value['publisher']) in folded(pdf_page_text(path, page))
+                except ValueError:
+                    publisher_present = False
+                if publisher_present: break
+                page += 1
         # PDF metni sıkıştırılmış olabilir; HTML sayfası yalnız kısa parti
         # adını kullanabilir. Tam adı taşıyan arşivli HTML yayını, aynı parti
         # ve aynı ana makinedeki bu yayının atfını destekler (D-13).

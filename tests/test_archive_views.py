@@ -57,6 +57,23 @@ class ArchiveViews(unittest.TestCase):
         self.assertIn('.safe{color:red}',cleaned)
         self.assertNotIn('\\',cleaned)
 
+    def test_static_panels_stay_readable_and_images_precede_font_budget(self):
+        m=self.module()
+        source=b'<html><head><link rel="stylesheet" href="/style.css"></head><body><img src="/logo.png"><div class="elementor-tab-content" style="display:none">Program bolumu</div></body></html>'
+        requested=[]
+        def response(request,timeout):
+            url=request.full_url;requested.append(url)
+            content=(''.join('.f'+str(i)+'{src:url(/font'+str(i)+'.woff)}' for i in range(45))).encode() if url.endswith('.css') else b'local-static-asset'
+            value=io.BytesIO(content);value.headers=Message();value.headers['Content-Type']='text/css' if url.endswith('.css') else 'image/png' if url.endswith('.png') else 'font/woff';value.geturl=lambda:url
+            return value
+        with tempfile.TemporaryDirectory() as tmp, patch('arsiv_gorunum.urllib.request.urlopen',side_effect=response):
+            row=m.build_view(source,'https://example.org/program',Path(tmp))
+            text=(Path(tmp)/row['index_path']).read_text()
+            self.assertEqual(requested[0],'https://example.org/logo.png')
+            self.assertRegex(text,r'elementor-tab-content[^}]*display:block!important')
+            self.assertIn('.png"',text)
+            self.assertTrue(m.validate_view(Path(tmp),row))
+
     def test_correct_canonical_charter_and_program_render_as_separate_documents(self):
         m=self.module()
         with tempfile.TemporaryDirectory() as tmp:

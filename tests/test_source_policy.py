@@ -75,8 +75,22 @@ class SourcePolicy(unittest.TestCase):
         arsiv.record(self.work,'source_attribution',self.attribution(dict(v,id='policy-pdf-v1'),publisher='Türkiye İşçi Partisi'))
         bad=dict(v,id='policy-pdf-other-host',original_url='https://unsupported.example/tuzuk.pdf',final_url='https://unsupported.example/tuzuk.pdf')
         arsiv.record(self.work,'document_version',bad)
+        # This short-name-only PDF still needs its full-name HTML anchor.
         with self.assertRaisesRegex(ValueError,'yayıncı'):
             arsiv.record(self.work,'source_attribution',self.attribution(bad,publisher='Türkiye İşçi Partisi'))
+        with self.assertRaisesRegex(ValueError,'yayıncı'):
+            arsiv.record(self.work,'source_attribution',self.attribution(bad,publisher='Başka Parti'))
+
+    def test_compressed_pdf_publisher_text_does_not_need_host_html(self):
+        dossier_path = arsiv.ROOT / 'data/objects/45b1a30149247ae80e00105290343bed2e6d056dbd3cf2db8f5964a3c542441b/original.pdf'
+        raw = dossier_path.read_bytes()
+        self.assertNotIn('İYİ PARTİ'.encode(), raw)
+        arsiv.record(self.work, 'document', dict(id='policy-iyi-pdf', party_id='iyi', title='İYİ Parti — 2020 değişiklikli tüzük', source_kind='party'))
+        v = dict(id='policy-iyi-pdf-v1', document_id='policy-iyi-pdf', original_url='https://iyiparti.istanbul/wp-content/uploads/2024/11/IYI-PARTI-TUZUGU.pdf', final_url='https://iyiparti.istanbul/wp-content/uploads/2024/11/IYI-PARTI-TUZUGU.pdf', document_date='2020-09-20', version_label='20 Eylül 2020 değişiklikli metin', accessed_at='2026-11-11T17:32:00.305272+00:00', verified_at='2026-11-11T17:32:00.305272+00:00', mime='application/pdf', sha256='45b1a30149247ae80e00105290343bed2e6d056dbd3cf2db8f5964a3c542441b', original_path='objects/45b1a30149247ae80e00105290343bed2e6d056dbd3cf2db8f5964a3c542441b/original.pdf', readable_path='objects/45b1a30149247ae80e00105290343bed2e6d056dbd3cf2db8f5964a3c542441b/readable.html')
+        arsiv.record(self.work, 'document_version', v)
+        arsiv.record(self.work, 'source_attribution', self.attribution(v, publisher='İYİ PARTİ'))
+        with self.assertRaisesRegex(ValueError, 'yayıncı'):
+            arsiv.record(self.work, 'source_attribution', self.attribution(v, publisher='Başka Parti'))
 
     def test_short_name_html_uses_same_party_host_and_full_name_anchor(self):
         import hashlib
