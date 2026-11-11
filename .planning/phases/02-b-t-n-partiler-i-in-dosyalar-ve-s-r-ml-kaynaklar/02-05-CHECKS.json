@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "party_id": "iyi",
+  "release_id": "45fdfa3f6abe4a8882c52b2658fc6c6d",
+  "checked_at": "2026-11-11T18:02:31.496903+00:00",
+  "data_schema_version": 5,
+  "source_policy_version": 2,
+  "renderer_version": 13,
+  "dossier_validation_version": 2,
+  "dossier_check": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py dossier-check --input data/dossiers/02-iyi.json",
+    "result": "DOSSIER_INPUT_OK"
+  },
+  "party_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release current --phase 2 --party iyi",
+    "result": "PHASE2_PARTY_OK 45fdfa3f6abe4a8882c52b2658fc6c6d"
+  },
+  "phase1_audit": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py audit --release current --phase 1",
+    "result": "PHASE1_AUDIT_OK 45fdfa3f6abe4a8882c52b2658fc6c6d"
+  },
+  "receipt_check": {
+    "status": "pass",
+    "command": "python3 src/arsiv.py receipt-check --input data/deliveries/02-05-iyi.json",
+    "result": "DELIVERY_RECEIPT_OK"
+  },
+  "previous_delivery": {
+    "status": "pass",
+    "receipt": "data/deliveries/02-04-dem.json",
+    "receipt_result": "DELIVERY_RECEIPT_OK",
+    "immutable_audit_result": "PHASE2_PARTY_OK 77074f17144b41399615da5ee4b37bcf"
+  },
+  "tests": {
+    "source_policy": {
+      "status": "pass",
+      "passed": 12,
+      "command": "python3 tests/run.py --pattern test_source_policy.py"
+    },
+    "dossiers": {
+      "status": "pass",
+      "passed": 10,
+      "command": "python3 tests/run.py --pattern test_dossiers.py"
+    },
+    "archive_views": {
+      "status": "pass",
+      "passed": 5,
+      "command": "python3 tests/run.py --pattern test_archive_views.py"
+    }
+  },
+  "browser": {
+    "status": "BROWSER_ARCHIVES_OK",
+    "results": [
+      {
+        "kind": "report",
+        "width": 1365,
+        "url": "http://127.0.0.1:8065/releases/45fdfa3f6abe4a8882c52b2658fc6c6d/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "charter-pdf-link",
+        "width": 1365,
+        "open": true,
+        "url": "http://127.0.0.1:8065/objects/f35b00a3991e45bca3ac4ecffb6b4a8537574570ef873a50bd6a2e7f7e68e02e/original.pdf"
+      },
+      {
+        "kind": "program",
+        "width": 1365,
+        "title": "Parti Programı | İyi Parti",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/837f265a88eb4a696d7a44e208b16eceaa5970c11e778f44465e31f89d989e26.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/fcd1be4fb39c7c1e4e7d338f61c082808a3851fcf0535ca85e1e5c7bb8112a9a.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/31574ea1b2f39624a8b6615faefc58002c5b1734692dae4fb38f0de05f829f93.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/130d6c1b7ad5df90ff3c2e0f6f5c2b0c355c79743d0531d9538929f5e1f92bb3.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/702fade24a9694a426ecd80fe28a803d679f79e7f49065b613c7d5a5e1c3d116.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/b581ecf02207f1b877d70be5f2b5d160556a671099dc22c6bd81256ad102eb51.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/5ecb54f91384af7226cb4f18f87588edd49ceff5bdd4a3010336e1c22ccc390d.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/ec4ff2978e0c75e69be755af7ff6e87a102095ec5ebc16b976760d93e36f9b29.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/38bfe8930cabc4de8b04e5019d274ceca330aab88842514951915be55e43a068.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/f27590d95af6b6aca73175a10c32a113a017f69c185d88c42ded64ad6739bde7.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/b86d9b414cd1c76d60f428f16aafe2125919b1e60f5deaf578ae3e86ffc0800b.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/2b73c87211053645a898f31c81ecfd54f1035390a2869498edeee89f1618663d.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/d89e5ba26e4b1a24406e5e3c10ec0ecda397c51680f28ada791479074c8713f2.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/3bb7eeb8e0ed2646180e159d22de44a22f1c064d106c2fae1c9ac10977ce1c65.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/19310ebdc4df74634cfec7102aec3002446cef1b2dc2f88f082cb6deec881413.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/ba33153770e883ebefbf6bfb5a1e8753116c71164084d6a227434d516283eccb.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/afff36043b00372e0dba127b77f263505a30b7df0f747b7242b614aaac143a28.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/048f0cadc0f726aebe31a498fd1266bc7b9529ec3157b5b518ee124a77c16941.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/113edac987f8aec2c1e388f06ef7e6969dde6f27868312490a22ad329c732d9b.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg"
+        ],
+        "overflow": false
+      },
+      {
+        "kind": "report",
+        "width": 360,
+        "url": "http://127.0.0.1:8065/releases/45fdfa3f6abe4a8882c52b2658fc6c6d/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "charter-pdf-link",
+        "width": 360,
+        "open": true,
+        "url": "http://127.0.0.1:8065/objects/f35b00a3991e45bca3ac4ecffb6b4a8537574570ef873a50bd6a2e7f7e68e02e/original.pdf"
+      },
+      {
+        "kind": "program",
+        "width": 360,
+        "title": "Parti Programı | İyi Parti",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/837f265a88eb4a696d7a44e208b16eceaa5970c11e778f44465e31f89d989e26.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/fcd1be4fb39c7c1e4e7d338f61c082808a3851fcf0535ca85e1e5c7bb8112a9a.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/31574ea1b2f39624a8b6615faefc58002c5b1734692dae4fb38f0de05f829f93.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/130d6c1b7ad5df90ff3c2e0f6f5c2b0c355c79743d0531d9538929f5e1f92bb3.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/702fade24a9694a426ecd80fe28a803d679f79e7f49065b613c7d5a5e1c3d116.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/b581ecf02207f1b877d70be5f2b5d160556a671099dc22c6bd81256ad102eb51.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/5ecb54f91384af7226cb4f18f87588edd49ceff5bdd4a3010336e1c22ccc390d.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/ec4ff2978e0c75e69be755af7ff6e87a102095ec5ebc16b976760d93e36f9b29.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/38bfe8930cabc4de8b04e5019d274ceca330aab88842514951915be55e43a068.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/f27590d95af6b6aca73175a10c32a113a017f69c185d88c42ded64ad6739bde7.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/b86d9b414cd1c76d60f428f16aafe2125919b1e60f5deaf578ae3e86ffc0800b.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/2b73c87211053645a898f31c81ecfd54f1035390a2869498edeee89f1618663d.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/d89e5ba26e4b1a24406e5e3c10ec0ecda397c51680f28ada791479074c8713f2.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/3bb7eeb8e0ed2646180e159d22de44a22f1c064d106c2fae1c9ac10977ce1c65.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/19310ebdc4df74634cfec7102aec3002446cef1b2dc2f88f082cb6deec881413.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/ba33153770e883ebefbf6bfb5a1e8753116c71164084d6a227434d516283eccb.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/afff36043b00372e0dba127b77f263505a30b7df0f747b7242b614aaac143a28.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/048f0cadc0f726aebe31a498fd1266bc7b9529ec3157b5b518ee124a77c16941.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/113edac987f8aec2c1e388f06ef7e6969dde6f27868312490a22ad329c732d9b.css",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png",
+          "http://127.0.0.1:8065/views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg"
+        ],
+        "overflow": false
+      }
+    ]
+  },
+  "pdf_http": {
+    "status": "PDF_HTTP_HASH_OK",
+    "url": "http://127.0.0.1:8065/objects/f35b00a3991e45bca3ac4ecffb6b4a8537574570ef873a50bd6a2e7f7e68e02e/original.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 729086,
+    "sha256": "f35b00a3991e45bca3ac4ecffb6b4a8537574570ef873a50bd6a2e7f7e68e02e",
+    "content_disposition": null
+  },
+  "preservation": {
+    "status": "PREVIOUS_CONTENT_AND_PREFIX_OK",
+    "release_id": "45fdfa3f6abe4a8882c52b2658fc6c6d",
+    "baseline_release": "77074f17144b41399615da5ee4b37bcf",
+    "immutable_files_checked": 714,
+    "changed_files": [],
+    "preserved_table_rows": {
+      "accounting_period": 0,
+      "action": 16,
+      "actor": 1,
+      "archive_view": 10,
+      "attempt": 111,
+      "closure": 10,
+      "comparison": 0,
+      "comparison_evidence": 0,
+      "document": 63,
+      "document_authority": 1,
+      "document_version": 69,
+      "dossier_event": 8,
+      "dossier_field": 19,
+      "dossier_identity_note": 0,
+      "dossier_source": 53,
+      "edge": 7,
+      "event_date": 8,
+      "financial": 0,
+      "finding": 159,
+      "finding_evidence": 185,
+      "finding_topic": 26,
+      "group_membership": 1,
+      "identity_observation": 3,
+      "lead": 67,
+      "manual_passage": 2,
+      "match": 18,
+      "match_candidate": 26,
+      "membership": 1,
+      "method": 1,
+      "missing": 33,
+      "missing_resolution": 12,
+      "parliamentary_group": 1,
+      "party": 8,
+      "party_identity_revision": 1,
+      "passage": 147,
+      "person": 2,
+      "reopen": 2,
+      "report_option": 1,
+      "research_state": 15,
+      "review": 160,
+      "scope_exclusion": 7,
+      "scope_observation": 9,
+      "scope_party": 9,
+      "source_attribution": 33,
+      "source_policy": 1,
+      "topic": 16,
+      "topic_basis": 1,
+      "topic_query": 3,
+      "topic_search": 15,
+      "url_alias": 63,
+      "verification": 89,
+      "version_context": 47,
+      "version_relation": 1
+    },
+    "controlled_identity_transition": "iyi: tbmm-f72877bd-62bd-037b-e050-007f01005610 -> yargitay-207",
+    "method_version": 1,
+    "cutoff_at": "2026-11-10T14:38:46.154751+00:00"
+  },
+  "program_passive_view": {
+    "status": "pass",
+    "widths": [
+      1365,
+      360
+    ],
+    "visible_sections": 8,
+    "images_loaded": 5,
+    "images_total": 5,
+    "horizontal_overflow": false,
+    "source_scripts": 0,
+    "source_forms": 0
+  },
+  "source_view_limitations": {
+    "institutional_page": {
+      "source": "https://www.iyiparti.org.tr/iyi-parti/",
+      "observed_images": 364,
+      "asset_limit": 40,
+      "all_portraits_localized": false,
+      "horizontal_overflow_at": [
+        1365,
+        360
+      ],
+      "reason": "Kaynak çok sayıda kadro portresi içerir. Pasif kopyanın mevcut varlık sınırları bütün portreleri ve statik düzen ayrıntılarını taşımaz; özgün baytlar tam korunur. Ana rapor ve tam program okuması ayrı olarak taşmasız denetlendi."
+    },
+    "program": {
+      "critical_content_complete": true,
+      "other_assets": "Desteklenmeyen dekoratif SVG/ikon/font biçimleri yerel manifestin limitations alanındadır."
+    }
+  },
+  "content": {
+    "input_records": 295,
+    "source_versions": 14,
+    "summary_quote_pairs": 21,
+    "card_fields": 7,
+    "chronology_events": 4,
+    "active_passive_views": 4
+  },
+  "important_gaps": [
+    "Tam programın HTML kopyası edinildi; merkezdeki eski PDF adresleri ve bağlantılı WeTransfer PDF’sine erişilemedi.",
+    "Programın kabul/son değişiklik günü ve başka program kopyalarıyla sürüm ilişkisi açıklanmıyor.",
+    "2020 ve 2026 değişiklikli tüzükler elde edildi; bütün ara sürümler ve eksiksiz yürürlük aralıkları yok.",
+    "İlk görev dağılımının haber tarihi biliniyor; ayrı karar günü belirtilmiyor.",
+    "Sicil ve parti merkez adreslerindeki cadde adlarının eşdeğerliği ve geçerlilik günleri açıklanmıyor.",
+    "Söylem–uygulama ve gerçekleşmiş finansman/harcama araştırması sonraki fazlar için Henüz incelenmedi."
+  ],
+  "human_acceptance": false,
+  "public_publication": false
+}
