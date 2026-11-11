@@ -327,7 +327,17 @@ def load_dossier(work, payload):
                 if not pks or not all(k in values for k in pks): raise ValueError('Kayıt anahtarı eksik')
                 existing = db.execute(f"SELECT * FROM {kind} WHERE " + ' AND '.join(k+'=?' for k in pks), [values[k] for k in pks]).fetchone()
                 if existing:
-                    if any(existing[r['name']] != values.get(r['name']) for r in info): raise ValueError('Aynı kimlikle çelişen kayıt')
+                    conflicts = [r['name'] for r in info if existing[r['name']] != values.get(r['name'])]
+                    # Girdi ucu pending oluşturur; erişim girişimi aynı satırın
+                    # durumunu türetir. Aynı girdinin yeniden kontrolü bu
+                    # kanıtlı geçişi eski bir kaynak değişikliği saymamalıdır.
+                    if kind == 'lead' and conflicts == ['status'] and values.get('status') == 'pending':
+                        result = {'examined':'examined','blocked':'failure','excluded':'excluded'}.get(existing['status'])
+                        a = db.execute('SELECT * FROM attempt WHERE lead_id=? AND result=? ORDER BY attempted_at DESC LIMIT 1', (existing['id'],result)).fetchone() if result else None
+                        if a and a['reason'] and all(a[k] == existing[k] for k in ('party_id','heading','topic_id')):
+                            if result == 'examined': arsiv.check_examined_lead(db,existing,a['source_version_id'])
+                            conflicts = []
+                    if conflicts: raise ValueError('Aynı kimlikle çelişen kayıt')
                     continue
             finally: db.close()
             if kind == 'dossier_identity_note': notes.append(values)

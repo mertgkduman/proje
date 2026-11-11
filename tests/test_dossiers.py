@@ -14,7 +14,7 @@ import dosyalar
 
 
 def copy_phase_one_data(source, target):
-    shutil.copytree(source, target)
+    shutil.copytree(source, target, ignore=shutil.ignore_patterns('.write.lock', '.staging'))
     (target / 'current.json').write_text(json.dumps({'release_id': '26de2a4efc584b5b9f81ea67dcb8d65c'}) + '\n')
 
 
@@ -41,6 +41,25 @@ def add_tip_tracer(work):
 
 
 class DossierTracer(unittest.TestCase):
+    def test_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old=arsiv.DATA
+            try:
+                arsiv.DATA=Path(tmp)/'data';copy_phase_one_data(old,arsiv.DATA)
+                work=arsiv.open_workspace(tmp)
+                db=arsiv.connect_readonly(work/'records.sqlite3')
+                v=dict(db.execute("SELECT * FROM document_version WHERE id='tip-registry-v1'").fetchone())
+                method=dict(db.execute('SELECT * FROM method ORDER BY version DESC LIMIT 1').fetchone());db.close()
+                lead=dict(id='replay-lead',party_id='tip',heading='Kuruluş',topic_id='tip-replay',url=v['original_url'],normalized_url=arsiv.normalize_url(v['original_url']),relevance_reason='Arşivli gerçek sicil.',status='pending')
+                attempt=dict(id='replay-attempt',lead_id=lead['id'],party_id='tip',heading='Kuruluş',topic_id=lead['topic_id'],type='access',query=lead['url'],attempted_at=v['accessed_at'],result='examined',reason='Gerçek arşivli sicil okundu.',source_version_id=v['id'])
+                payload=dict(schema_version=1,party_id='tip',method_version=method['version'],cutoff_at=method['cutoff_at'],records=[dict(kind='lead',values=lead),dict(kind='attempt',values=attempt)])
+                dosyalar.load_dossier(work,payload);dosyalar.load_dossier(work,payload)
+                db=arsiv.connect(work/'records.sqlite3')
+                self.assertEqual(db.execute("SELECT status FROM lead WHERE id='replay-lead'").fetchone()[0],'examined')
+                db.execute("DELETE FROM attempt WHERE id='replay-attempt'");db.commit();db.close()
+                with self.assertRaisesRegex(ValueError,'çelişen'):dosyalar.load_dossier(work,payload)
+            finally:arsiv.DATA=old
+
     def test_complete_collection_keeps_later_research_explicitly_unexamined(self):
         # Faz 2 kapsamı: ilk üç başlıkta girişimli belge sonucu; diğer iki
         # başlıkta henüz çalışılmadı. Tam teslim araştırma yapılmış gibi görünmez.

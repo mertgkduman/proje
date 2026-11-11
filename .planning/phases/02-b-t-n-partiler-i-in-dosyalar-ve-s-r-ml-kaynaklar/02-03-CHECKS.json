@@ -1,0 +1,515 @@
+{
+  "checked_at": "2026-11-11T16:53:52.429147+00:00",
+  "plan": "02-03",
+  "status": "passed",
+  "release_id": "7d5f78dde79a4b0bb48f64a16fd263c1",
+  "phase2_delivery": {
+    "completed_prefix": [
+      "tip"
+    ],
+    "party_id": "tip",
+    "stage": "complete"
+  },
+  "versions": {
+    "data_schema_version": 5,
+    "source_policy_version": 2,
+    "dossier_validation_version": 2,
+    "renderer_version": 13
+  },
+  "dossier_checks": [
+    "DOSSIER_INPUT_OK tip (including replay on final snapshot)",
+    "DOSSIER_INPUT_OK yeni-parti (including replay)"
+  ],
+  "audits": [
+    "PHASE2_PARTY_OK",
+    "PHASE1_AUDIT_OK",
+    "DELIVERY_RECEIPT_OK"
+  ],
+  "tests": {
+    "dossier": {
+      "passed": 10,
+      "command_log_tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 10 tests in 15.548s",
+        "",
+        "OK",
+        "TESTS_OK count=10"
+      ]
+    },
+    "policy": {
+      "passed": 9,
+      "command_log_tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 9 tests in 14.312s",
+        "",
+        "OK",
+        "TESTS_OK count=9"
+      ]
+    },
+    "archive": {
+      "passed": 4,
+      "command_log_tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 4 tests in 0.099s",
+        "",
+        "OK",
+        "TESTS_OK count=4"
+      ]
+    },
+    "report": {
+      "passed": 4,
+      "command_log_tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 4 tests in 6.923s",
+        "",
+        "OK",
+        "TESTS_OK count=4"
+      ]
+    },
+    "publication": {
+      "passed": 11,
+      "command_log_tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 21.808s",
+        "",
+        "OK",
+        "TESTS_OK count=11"
+      ]
+    }
+  },
+  "passed_tests": 38,
+  "baseline_git_head": "a64e1f708aee3bdf14974b1faffcee8127a60843",
+  "baseline_files_unchanged": 281,
+  "prior_pilot_rows_preserved": {
+    "finding": true,
+    "finding_evidence": true,
+    "review": true,
+    "missing": true,
+    "missing_resolution": true,
+    "financial": true
+  },
+  "browser": {
+    "status": "BROWSER_ARCHIVES_OK",
+    "results": [
+      {
+        "kind": "report",
+        "width": 1365,
+        "url": "http://127.0.0.1:8953/releases/7d5f78dde79a4b0bb48f64a16fd263c1/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 1365,
+        "title": "Tüzük - Türkiye İşçi Partisi",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/82ae3caf0eea6c3e3010266da30c872196f2f011464b3066b36a9631dc170a36.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/f2d80455f9c3d0b745b5d50d7185be6fc88e7b3574c33d7ac3819897443de1fb.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/b41ff3d91762eb05f73b4e162b36f197465868440d3883d511f0a9c525694c4c.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/994c768c8ee388264ef39a2bf904a7601a99927db9f8ba263da38e2996d4031b.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/defc84f2086e2775a20548afc88e184d068db5d7fda13e52abab58c3fa72657e.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/3c86b6a15a684b7b07ce1ad6ca4647aaf861b36361f60fdb31214f37c31cbaef.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/73ebbbb87da9b17ba937c374487e04887f06a569895424f5730f60183a4c977f.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png"
+        ],
+        "overflow": false
+      },
+      {
+        "kind": "program",
+        "width": 1365,
+        "title": "Parti Programı - Türkiye İşçi Partisi",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/82ae3caf0eea6c3e3010266da30c872196f2f011464b3066b36a9631dc170a36.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/b41ff3d91762eb05f73b4e162b36f197465868440d3883d511f0a9c525694c4c.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/f2d80455f9c3d0b745b5d50d7185be6fc88e7b3574c33d7ac3819897443de1fb.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/994c768c8ee388264ef39a2bf904a7601a99927db9f8ba263da38e2996d4031b.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/defc84f2086e2775a20548afc88e184d068db5d7fda13e52abab58c3fa72657e.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/3c86b6a15a684b7b07ce1ad6ca4647aaf861b36361f60fdb31214f37c31cbaef.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/73ebbbb87da9b17ba937c374487e04887f06a569895424f5730f60183a4c977f.css"
+        ],
+        "overflow": false
+      },
+      {
+        "kind": "report",
+        "width": 360,
+        "url": "http://127.0.0.1:8953/releases/7d5f78dde79a4b0bb48f64a16fd263c1/index.html",
+        "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+        "overflow": false,
+        "questions": [
+          "Neden kuruldu?",
+          "Üyelik ve yönetim nasıl düzenleniyor?",
+          "Ne vaat ediyor?"
+        ]
+      },
+      {
+        "kind": "charter",
+        "width": 360,
+        "title": "Tüzük - Türkiye İşçi Partisi",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/82ae3caf0eea6c3e3010266da30c872196f2f011464b3066b36a9631dc170a36.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/f2d80455f9c3d0b745b5d50d7185be6fc88e7b3574c33d7ac3819897443de1fb.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/b41ff3d91762eb05f73b4e162b36f197465868440d3883d511f0a9c525694c4c.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/994c768c8ee388264ef39a2bf904a7601a99927db9f8ba263da38e2996d4031b.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/defc84f2086e2775a20548afc88e184d068db5d7fda13e52abab58c3fa72657e.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/3c86b6a15a684b7b07ce1ad6ca4647aaf861b36361f60fdb31214f37c31cbaef.css",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png",
+          "http://127.0.0.1:8953/views/70aa4c4b7ea0c9c2f006fa9dec994d25/assets/73ebbbb87da9b17ba937c374487e04887f06a569895424f5730f60183a4c977f.css"
+        ],
+        "overflow": false
+      },
+      {
+        "kind": "program",
+        "width": 360,
+        "title": "Parti Programı - Türkiye İşçi Partisi",
+        "text": true,
+        "scripts": 0,
+        "forms": 0,
+        "images": [
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg"
+          },
+          {
+            "loaded": true,
+            "url": "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg"
+          }
+        ],
+        "resources": [
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/82ae3caf0eea6c3e3010266da30c872196f2f011464b3066b36a9631dc170a36.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/f2d80455f9c3d0b745b5d50d7185be6fc88e7b3574c33d7ac3819897443de1fb.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/b41ff3d91762eb05f73b4e162b36f197465868440d3883d511f0a9c525694c4c.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/994c768c8ee388264ef39a2bf904a7601a99927db9f8ba263da38e2996d4031b.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/defc84f2086e2775a20548afc88e184d068db5d7fda13e52abab58c3fa72657e.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/3c86b6a15a684b7b07ce1ad6ca4647aaf861b36361f60fdb31214f37c31cbaef.css",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/454e00e69876cfb886fd6459439f58d23b742b84707af774eff3c9efef1b30bd.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/159e8bc26480e6ef45ef098b7583bf10f747e40eccdbe79e5bbf9704b61fbade.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/c9bb4546390298fc4953601ce35c1b6bf29e8f33df1ab5bbe97deda176e65e3a.jpg",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/956df668fb2d4f485fe8b47b9aa16f22e5b55916ee9f109445ce0c864da80f86.jpg",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/94280679119280bea3466d0b4c345e7f7c60ef33d1d12daf817cf69eb4087a70.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/6806e44f5531e59b18bb61f90e401fe75853a99f4316a8db8f1be93112fe4704.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/39b3fe05f51de676ba0b64e92f81ec9d61b71bac207ab18bef7bdb843f38fd1d.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/81b96908ac89ec7170265d98d7380e356ae58d0abfaa4eff9fde2f4f86c882a5.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/0e298fa57cf0455d87580b5890e991063ba57639c2ef2d8826ae2cbc50b43899.png",
+          "http://127.0.0.1:8953/views/f4174f7874175b384323525e29094a6e/assets/73ebbbb87da9b17ba937c374487e04887f06a569895424f5730f60183a4c977f.css"
+        ],
+        "overflow": false
+      }
+    ]
+  },
+  "retained_intermediate_release": "187323bb32fc4741946ca857c4865985",
+  "public_publication": false
+}
