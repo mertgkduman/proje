@@ -191,8 +191,11 @@ def validate_dossier(data, party_id=None, stage='tracer'):
     if party_id:
         fs = [x for x in data.get('dossier_field', []) if x['party_id'] == party_id]
         es = [x for x in data.get('dossier_event', []) if x['party_id'] == party_id]
-        if not any(x['field'] == 'foundation_date' and x['value'] for x in fs) or not any(x['kind'] == 'foundation' for x in es):
-            raise ValueError('Kaynaklı kuruluş alanı ve kronoloji gerekli')
+        foundation_fields = [x for x in fs if x['field'] == 'foundation_date']
+        has_foundation = bool(foundation_fields and foundation_fields[0]['value'])
+        has_event = any(x['kind'] == 'foundation' for x in es)
+        if (stage == 'tracer' and not has_foundation) or not foundation_fields or has_foundation != has_event:
+            raise ValueError('Kuruluş alanı ile kaynaklı kronoloji veya girişimli eksik gerekli')
         foundation_events = [x for x in es if x['kind'] == 'foundation']
         if not all(any(s['party_id'] == party_id and s['heading'] == 'Kuruluş' and s['version_id'] == passages[events[e['event_date_id']]['passage_id']]['version_id'] for s in data['dossier_source']) for e in foundation_events):
             raise ValueError('Kuruluş kaynağı başlığa bağlanmalı')
@@ -326,7 +329,7 @@ def check_dossier_input(path):
         work = arsiv.open_workspace(tmp)
         try:
             load_dossier(work, payload)
-            validate_phase_two_workspace(work, payload['party_id'], 'tracer')
+            validate_phase_two_workspace(work, payload['party_id'], 'complete')
         finally:
             try: arsiv.assert_lock(work)
             except (ValueError,OSError): pass

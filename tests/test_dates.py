@@ -14,6 +14,9 @@ class DateContract(unittest.TestCase):
             try:
                 arsiv.DATA = Path(tmp) / 'data'
                 shutil.copytree(old, arsiv.DATA)
+                # Phase-one regression must start from the immutable phase-one
+                # baseline even when the live pointer has advanced to phase two.
+                (arsiv.DATA / 'current.json').write_text(json.dumps({'release_id': '26de2a4efc584b5b9f81ea67dcb8d65c'}) + '\n')
                 work = arsiv.open_workspace(tmp)
                 self.assertTrue(callable(getattr(arsiv, 'freeze_cutoff', None)))
                 cutoff = arsiv.freeze_cutoff(work, 'tbmm-scope-v1')

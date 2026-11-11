@@ -15,6 +15,9 @@ class PublicationTest(unittest.TestCase):
         self.old_data = arsiv.DATA
         arsiv.DATA = Path(self.tmp.name) / 'data'
         shutil.copytree(self.old_data, arsiv.DATA)
+        # These tests exercise the phase-one publishing contract independently
+        # of later delivery-prefix requirements on the live current release.
+        (arsiv.DATA / 'current.json').write_text(json.dumps({'release_id': '26de2a4efc584b5b9f81ea67dcb8d65c'}) + '\n')
 
     def tearDown(self):
         arsiv.DATA = self.old_data

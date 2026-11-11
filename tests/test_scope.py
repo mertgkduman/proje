@@ -25,6 +25,7 @@ class ScopeContract(unittest.TestCase):
             try:
                 arsiv.DATA = Path(tmp) / 'data'
                 shutil.copytree(previous, arsiv.DATA)
+                (arsiv.DATA / 'current.json').write_text(json.dumps({'release_id': '26de2a4efc584b5b9f81ea67dcb8d65c'}) + '\n')
                 work = arsiv.open_workspace(tmp)
                 arsiv.record(work, 'party', dict(id='same-name-old', legal_name='YENİ PARTİ', registry_key='old-same-name'))
                 with self.assertRaises(ValueError):
