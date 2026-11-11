@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 02
 current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
-current_plan: 4
+current_plan: 5
 status: executing
-stopped_at: 02-03 tamamlandı; TİP teslimi bildirildikten sonra sıradaki 02-04 DEM
-last_updated: "2026-11-11T16:56:44.507Z"
+stopped_at: 02-04 tamamlandı; DEM teslimi bildirildikten sonra sıradaki 02-05 İYİ Parti
+last_updated: "2026-11-11T17:24:48.308Z"
 last_activity: 2026-11-11
-last_activity_desc: 02-03 tamamlandı; TİP tam yerel raporu ve zincirli makbuzu hazır, sıradaki 02-04 DEM
-state_head: d2042fd0301d7767b007def14199c8316119b2d5
+last_activity_desc: 02-04 tamamlandı; DEM tam yerel raporu ve TİP’e bağlı makbuzu hazır, sıradaki 02-05 İYİ Parti
+state_head: 8aa7a736ed12e29d122558b7397b4acd53958813
 progress:
   total_phases: 6
   completed_phases: 1
   total_plans: 16
-  completed_plans: 9
+  completed_plans: 10
 ---
 
 # Project State
@@ -28,12 +28,12 @@ See: .planning/PROJECT.md (updated 2026-11-10)
 
 ## Current Position
 
-Current Plan: 4
+Current Plan: 5
 Total Plans in Phase: 10
 Phase: 02 (Bütün partiler için dosyalar ve sürümlü kaynaklar) — EXECUTING
-Plan: 3/10 tamamlandı; sıradaki 02-04
+Plan: 4/10 tamamlandı; sıradaki 02-05
 Status: Ready to execute
-Last activity: 2026-11-11 — 02-03 tamamlandı: TİP'in 16 kaynaklı özet/alıntı çifti, kartı ve pasif tüzük/program arşivleri 7d5f78dde79a4b0bb48f64a16fd263c1 yerel sürümü ve 02-02'ye bağlı makbuzla teslim edildi. Kullanıcıya ara teslimin bildirilmesinden sonra sıradaki plan 02-04 DEM'dir.
+Last activity: 2026-11-11 — 02-04 tamamlandı: DEM'in 23 kaynaklı özet/alıntı çifti, kaynaklı kartı, ad/kısa ad kronolojisi ve iki tüzük kopyası 77074f17144b41399615da5ee4b37bcf yerel sürümü ve TİP'e bağlı makbuzla hazırdır. Güncel bağımsız program ve belge/adres dönem açıkları görünürdür. Ara teslimin bildirilmesinden sonra sıradaki plan 02-05 İYİ Parti'dir.
 
 Progress: [██░░░░░░░░] 17%
 
@@ -41,21 +41,21 @@ Progress: [██░░░░░░░░] 17%
 
 **Velocity:**
 
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
-- Total execution time: Altı plan ve son inceleme/düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
+- Total execution time: Faz 1'in altı ve Faz 2'nin dört planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 | 6 | - | - |
-| 2 | 3/10 | - | - |
+| 2 | 4/10 | - | - |
 
 **Recent Trend:**
 
-- Last 5 plans: 01-05, 01-06, 02-01, 02-02, 02-03
-- Trend: Faz 1 tamamlandı; Faz 2 3/10 planda. TİP tam yerel dosyası teslim edildi; sonraki parti DEM'dir. Kamu raporu 261111-epm sürümünde kalır.
+- Last 5 plans: 01-06, 02-01, 02-02, 02-03, 02-04
+- Trend: Faz 1 tamamlandı; Faz 2 4/10 planda. DEM tam yerel dosyası ve makbuzu hazır; sonraki parti İYİ Parti'dir. Kamu raporu 261111-epm sürümünde kalır.
 
 **Per-Plan Metrics:**
 
@@ -70,6 +70,7 @@ Progress: [██░░░░░░░░] 17%
 | Phase 02 P01 | 21min | 3 tasks | 14 files |
 | Phase 02 P02 | 7min | 3 tasks | 12 files |
 | Phase 02 P03 | 26min | 3 tasks | 372 files |
+| Phase 02 P04 | 26min | 3 tasks | 75 files |
 
 ## Accumulated Context
 
@@ -96,6 +97,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [2026-11-11 D-14–D-16]: İçerik önce, yöntem ve eski incelemeler kapalı ayrıntılarda. Özgün kaynaklar korunur, HTML belgeler yerel varlıklı sayfa görünümünde açılır. Düzeltme mevcut kamu raporuna yayımlandı; kalan 02-03–02-10 planları güncellendi, Faz 2 ilerleyişi 2/10 kaldı.
 - [2026-11-11 model seçimi]: Kullanıcının daha güçlü ajan isteğiyle bu düzeltmenin planlama ve uygulaması GPT-6.1 Sol/xhigh ile yapıldı. Otomatik Astra eklenmedi; genel kayıtlı maliyet/rol varsayılanları değişmedi.
 - [Phase 02]: 02-03: TİP 7d5f78dde79a4b0bb48f64a16fd263c1 sürümü ve 02-02’ye bağlı makbuzla tam teslim; prefix yalnız ['tip']. Parti yayınları açık atıfla derlendi; söylem/mali başlıklar sonraki fazlar için Henüz incelenmedi kaldı.
+- [Phase 02]: 02-04: DEM 77074f17144b41399615da5ee4b37bcf yerel sürümü ve TİP’e bağlı makbuzla teslim; prefix yalnız tip,dem. Sicil 30 Kasım 2012 ile 25 Kasım toplantısı ve ayrı HDP sicili ayrıldı; güncel bağımsız program açık kaldı.
 
 ### Pending Todos
 
@@ -129,6 +131,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-11T16:56:15.366Z
-Stopped at: 02-03 tamamlandı; TİP teslimi bildirildikten sonra sıradaki 02-04 DEM
-Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-04-PLAN.md
+Last session: 2026-11-11T17:24:48.035Z
+Stopped at: 02-04 tamamlandı; DEM teslimi bildirildikten sonra sıradaki 02-05 İYİ Parti
+Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-05-PLAN.md
