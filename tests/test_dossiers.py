@@ -38,6 +38,16 @@ def add_tip_tracer(work):
 
 
 class DossierTracer(unittest.TestCase):
+    def test_tip_report_exposes_identity_and_grouped_sources(self):
+        data = json.loads((arsiv.DATA / 'releases' / arsiv.current() / 'records.json').read_text())
+        from rapor import render_report
+        report = render_report(data)
+        self.assertIn('id="identity-tip"', report)
+        self.assertIn('id="chronology-tip"', report)
+        for key in ('kurulus', 'tuzuk', 'program', 'soylem-uygulama', 'finansman'):
+            self.assertIn(f'id="sources-tip-{key}"', report)
+        self.assertIn('id="version-history-tip-registry-v1"', report)
+
     def test_archived_tip_registry_foundation_has_party_contract(self):
         release = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
         db = sqlite3.connect(release)
