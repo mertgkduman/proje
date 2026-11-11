@@ -5,7 +5,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 
-RENDERER_VERSION = 8
+RENDERER_VERSION = 9
 STYLE = Path(__file__).with_name('rapor_v8.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -20,8 +20,9 @@ CODE_LABELS = {
     'individual': 'bireysel', 'eligible': 'uygun', 'excluded': 'kapsam dışı',
     'unverified': 'doğrulanamadı', 'examined': 'incelendi', 'failure': 'erişilemedi',
     'inconclusive': 'doğrulanamadı', 'no_result': 'sonuç bulunamadı', 'results': 'sonuç bulundu',
-    'registry': 'sicil', 'official': 'resmî kayıt', 'journalism': 'haber', 'news': 'haber',
-    'unknown': 'türü doğrulanmadı', 'party': 'parti kaynağı',
+    'registry': 'Birincil belge', 'official': 'Birincil belge', 'journalism': 'Gazetecilik', 'news': 'Gazetecilik',
+    'unknown': 'türü doğrulanmadı', 'party': 'Birincil belge',
+    'academic': 'Akademik çalışma', 'independent_report': 'Bağımsız rapor',
     'day': 'gün', 'month': 'ay', 'year': 'yıl', 'reviewed': 'incelendi', 'pending': 'bekliyor',
 }
 
@@ -230,6 +231,9 @@ def render_report(data):
         finances = [f for f in data.get('financial', []) if f['party_id'] == pid]
         party_missing = {heading: rows for (party_id, heading), rows in missing_by_heading.items() if party_id == pid}
         reviewed = {s['heading'] for s in data.get('research_state', []) if s['party_id'] == pid and s['state'] == 'reviewed'}
+        dossier_fields = [f for f in data.get('dossier_field', []) if f['party_id'] == pid]
+        dossier_events = [e for e in data.get('dossier_event', []) if e['party_id'] == pid]
+        event_dates = {e['id']: e for e in data.get('event_date', [])}
         pieces.append(f'<div role="tabpanel" id="{panel}" aria-labelledby="tab-{esc(pid)}"{hidden}>'
                       f'<h2 class="panel-title">{esc(parties[pid]["legal_name"])}</h2>')
         if party_findings or matches or finances or party_missing or reviewed:
@@ -242,6 +246,27 @@ def render_report(data):
                 missing = party_missing.pop(heading, [])
                 wide = ' card-wide' if key in ('kurulus', 'soylem-uygulama', 'finansman') else ''
                 pieces.append(f'<section class="card{wide}" id="{panel}-{key}"><h3>{heading}</h3>')
+                if key == 'kurulus' and (dossier_fields or dossier_events):
+                    field_map = {f['field']: f for f in dossier_fields}
+                    labels = (('legal_name','Resmî ad'), ('abbreviation','Kısaltma'), ('foundation_date','Kuruluş tarihi'), ('registry_key','Sicil kimliği'), ('official_site','Resmî site'), ('headquarters','Genel merkez'), ('chairperson','Genel başkan'))
+                    pieces.append('<h4>Temel bilgiler</h4><dl>')
+                    for name, label in labels:
+                        field = field_map.get(name)
+                        value = 'Henüz incelenmedi'
+                        if field and field['value'] is not None:
+                            fid = field['finding_id']
+                            refs = ' '.join(citation(e['passage_id']) for e in evidence[fid])
+                            value = esc(field['value']) + ' ' + refs
+                        elif field:
+                            m = next(m for m in data['missing'] if m['id'] == field['missing_id'])
+                            value = esc(m['status']) + ' · ' + esc(m['reason'])
+                        pieces.append(f'<dt>{esc(label)}</dt><dd>{value}</dd>')
+                    pieces.append('</dl><h4>Kuruluş kronolojisi</h4><ul>')
+                    for event in sorted(dossier_events, key=lambda x: event_dates[x['event_date_id']]['event_at'] or ''):
+                        date = event_dates[event['event_date_id']]
+                        finding = findings[event['summary_finding_id']]
+                        pieces.append(f'<li>{time_tag(date["event_at"])} <span class="summary">{esc(finding["text"])}</span> {citation(date["passage_id"])}</li>')
+                    pieces.append('</ul>')
                 if rows and key == 'soylem-uygulama':
                     pieces.append('<details class="record"><summary>Belgelenmiş söylem ve olaylar</summary>')
                     add_findings(rows)
