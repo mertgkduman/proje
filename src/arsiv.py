@@ -17,6 +17,7 @@ import ctypes
 import ctypes.util
 import re
 from decimal import Decimal, InvalidOperation
+from functools import lru_cache
 
 from rapor import RENDERER_VERSION, render_report
 from rapor_legacy import render_report as render_legacy_report
@@ -147,28 +148,47 @@ def check_identity(db, values):
 
 
 def pdf_libraries():
+    return _load_pdf_libraries(ctypes.util.find_library)
+
+
+@lru_cache(maxsize=4)
+def _load_pdf_libraries(find_library):
     libraries = []
     for name in ('poppler-glib', 'gobject-2.0', 'glib-2.0'):
         try:
-            path = ctypes.util.find_library(name)
+            path = find_library(name)
             if not path: raise OSError('bulunamadı')
             libraries.append(ctypes.CDLL(path))
         except OSError as exc:
             raise ValueError('PDF doğrulaması için Poppler-glib, GObject ve GLib paylaşımlı kütüphaneleri ve bağımlılıkları (Cairo dahil) gerekli; eksik: ' + name) from exc
-    return libraries
-
-
-def pdf_page_text(path, index):
-    pop, obj, glib = pdf_libraries()
+    pop, obj, glib = libraries
     pop.poppler_document_new_from_file.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_void_p]
     pop.poppler_document_new_from_file.restype = ctypes.c_void_p
     pop.poppler_document_get_page.argtypes = [ctypes.c_void_p, ctypes.c_int]
     pop.poppler_document_get_page.restype = ctypes.c_void_p
+    pop.poppler_document_get_n_pages.argtypes = [ctypes.c_void_p]
+    pop.poppler_document_get_n_pages.restype = ctypes.c_int
     pop.poppler_page_get_text.argtypes = [ctypes.c_void_p]
     pop.poppler_page_get_text.restype = ctypes.c_void_p
     obj.g_object_unref.argtypes = [ctypes.c_void_p]
     glib.g_free.argtypes = [ctypes.c_void_p]
-    document = pop.poppler_document_new_from_file(Path(path).resolve().as_uri().encode(), None, None)
+    return libraries
+
+
+def pdf_page_text(path, index):
+    pdf_libraries()
+    try:
+        path = Path(path).resolve()
+        digest = sha(path)
+    except OSError as exc:
+        raise ValueError('PDF açılamadı') from exc
+    return _pdf_page_text(path, digest, index)
+
+
+@lru_cache(maxsize=256)
+def _pdf_page_text(path, digest, index):
+    pop, obj, glib = pdf_libraries()
+    document = pop.poppler_document_new_from_file(path.as_uri().encode(), None, None)
     if not document: raise ValueError('PDF açılamadı')
     page = None
     text_ptr = None
@@ -186,11 +206,6 @@ def pdf_page_text(path, index):
 
 def pdf_page_exists(path, index):
     pop, obj, _ = pdf_libraries()
-    pop.poppler_document_new_from_file.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_void_p]
-    pop.poppler_document_new_from_file.restype = ctypes.c_void_p
-    pop.poppler_document_get_n_pages.argtypes = [ctypes.c_void_p]
-    pop.poppler_document_get_n_pages.restype = ctypes.c_int
-    obj.g_object_unref.argtypes = [ctypes.c_void_p]
     document = pop.poppler_document_new_from_file(Path(path).resolve().as_uri().encode(), None, None)
     if not document: return False
     try: return 0 <= index < pop.poppler_document_get_n_pages(document)
