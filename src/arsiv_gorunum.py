@@ -65,10 +65,12 @@ class Resources:
         # Strip comments before tokens, escape-based obfuscation and executable legacy CSS.
         text=re.sub(r'/\*.*?\*/','',text,flags=re.S)
         text=re.sub(r'@import\b[^;]*(?:;|$)','',text,flags=re.I)
-        text=re.sub(r'[^{};]*(?:expression\s*\(|behavior\s*:|-moz-binding\s*:)[^;}]*[;}]?','',text,flags=re.I)
+        text=re.sub(r'[^{};]*(?:expression\s*\(|behavior\s*:|-moz-binding\s*:)[^;}]*;?','',text,flags=re.I)
         if '\\' in text:
             self.limitations.append('CSS kaçış karakteri içeren bildirimler çıkarıldı.')
-            text=re.sub(r'[^{};]*\\[^;}]*[;}]?','',text)
+            # Bildirim çıkarılırken kuralın kapanış parantezi korunmalıdır;
+            # aksi halde ikon font CSS'si binlerce iç içe kurala dönüşür.
+            text=re.sub(r'[^{};]*\\[^;}]*;?','',text)
         def replace(match):
             raw=next(x for x in match.groups() if x is not None).strip()
             asset=self.asset(raw,base)

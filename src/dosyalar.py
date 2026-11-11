@@ -394,7 +394,8 @@ def make_delivery_receipt(release, party_id, previous=None, _seen=None):
         resolved = {r['missing_id'] for r in data.get('missing_resolution', [])}
         gaps += [f"{m['heading']}: {m['status']} — {m['reason']}" for m in data['missing'] if m['party_id'] == party_id and m['id'] not in resolved and not any(f['missing_id'] == m['id'] for f in fields)]
         contexts = {c['version_id']:c for c in data['version_context']}
-        gaps += [f"{next(v['version_label'] or documents[v['document_id']]['title'] for v in data['document_version'] if v['id'] == vid)}: {contexts[vid]['date_unknown_reason']}" for vid in sources if contexts.get(vid,{}).get('date_precision') == 'unknown']
+        basic_documents = {s['version_id'] for s in data['dossier_source'] if s['party_id'] == party_id and s['heading'] in ('Tüzük','Program')}
+        gaps += [f"{next(v['version_label'] or documents[v['document_id']]['title'] for v in data['document_version'] if v['id'] == vid)}: {contexts[vid]['date_unknown_reason']}" for vid in sources if vid in basic_documents and contexts.get(vid,{}).get('date_precision') == 'unknown']
     if party_id == 'tip' and stage == 'tracer': gaps.append('Arşivli TİP tüzüğünün kesim tarihinde yürürlükteki sürüm olduğu doğrulanmadı; parti dosyası tamamlanmadı.')
     if not added or not gaps or not sources: raise ValueError('Teslim içeriği, kaynak veya önemli açıklar boş')
     if previous:

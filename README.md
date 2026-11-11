@@ -2,7 +2,9 @@
 
 [Pilot HTML raporunu tarayıcıda aç](https://mertgkduman.github.io/proje/)
 
-11 Kasım 2026 düzeltmesi: yeni yerel sürüm `e0467880febd44068d476a448e09608f` kuruluş gerekçesini, üyelik/yönetim kurallarını, program vaatlerini ve atıflı faaliyet/mali haberleri öne çıkarır. [Tüzük arşivi](https://mertgkduman.github.io/proje/views/5ad0d30f04d349ca9c6e55a913f9d4b1/index.html) ve [program arşivi](https://mertgkduman.github.io/proje/views/bb13963f4a7945c12f748e1c4f1e1aba/index.html) ayrı pasif belgelerdir. Logo, font ve stiller yereldir; yalnız dekoratif SVG doku efekti kaldırılmıştır. Sicil bilgileri ve yöntem kapalı ayrıntılardadır. TİP tracer aşamasında, Faz 2 2/10 ve sıradaki iş 02-03 olarak kalır.
+11 Kasım 2026 düzeltmesi: yayımlanan `e0467880febd44068d476a448e09608f` sürümü kuruluş gerekçesini, üyelik/yönetim kurallarını, program vaatlerini ve atıflı faaliyet/mali haberleri öne çıkarır. [Tüzük arşivi](https://mertgkduman.github.io/proje/views/5ad0d30f04d349ca9c6e55a913f9d4b1/index.html) ve [program arşivi](https://mertgkduman.github.io/proje/views/bb13963f4a7945c12f748e1c4f1e1aba/index.html) ayrı pasif belgelerdir. Logo, font ve stiller yereldir; yalnız dekoratif SVG doku efekti kaldırılmıştır. Sicil bilgileri ve yöntem kapalı ayrıntılardadır. Kamu sürümünde TİP tracer aşamasındadır.
+
+Yerel Faz 2 teslimi: [tam TİP dosyası ve korunan Yeni Parti pilotu](data/releases/7d5f78dde79a4b0bb48f64a16fd263c1/index.html). TİP'in 16 özet/alıntı çifti, beş alanlı kartı, kuruluş kayıtları, tüzük/program kopyaları ve pasif belge görünümleri bu değişmez sürümdedir. Söylem–uygulama ve mali araştırma sonraki fazlar için “Henüz incelenmedi” görünür. Faz 2 3/10 plandadır; sıradaki parti DEM'dir. Bu teslimin makbuzu `data/deliveries/02-03-tip.json` yolundadır.
 
 GitHub Pages, `gh-pages` dalındaki sürümlü HTML raporunu ve raporda bağlantısı verilen kaynak kopyalarını sunar. Yeni bir yerel sürümü çevrimiçi yayımlamak için bu dalı yeni rapor ve kaynak kopyalarıyla güncelleyin.
 

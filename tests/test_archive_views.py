@@ -52,6 +52,10 @@ class ArchiveViews(unittest.TestCase):
             self.assertEqual(resources.assets[local],b'h1{color:red}')
             self.assertIsNone(resources.asset('https://cdn.jsdelivr.net/bad.js',resources.url,css=True))
             self.assertIsNone(resources.asset('https://evil.invalid/style.css',resources.url,css=True))
+        cleaned=resources.css(r'.fa-a:before{content:"\f001"}.fa-b:before{content:"\f002"}.safe{color:red}','https://tip.org.tr/')
+        self.assertEqual(cleaned.count('{'),cleaned.count('}'))
+        self.assertIn('.safe{color:red}',cleaned)
+        self.assertNotIn('\\',cleaned)
 
     def test_correct_canonical_charter_and_program_render_as_separate_documents(self):
         m=self.module()
