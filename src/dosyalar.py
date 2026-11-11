@@ -110,7 +110,7 @@ def validate_dossier(data, party_id=None, stage='tracer'):
     def pair(fid, party):
         f = checked_finding(fid, party)
         summary_passages = {e['passage_id'] for e in evidence if e['finding_id'] == fid}
-        if f['provenance'] != 'summary' or not any(x['pair_id'] == f['pair_id'] and x['party_id'] == party and x['provenance'] == 'quote' and x['heading'] == f['heading'] and checked_finding(x['id'], party) and summary_passages.intersection(e['passage_id'] for e in evidence if e['finding_id'] == x['id']) for x in findings.values()):
+        if f['provenance'] != 'summary' or not any(x['pair_id'] == f['pair_id'] and x['party_id'] == party and x['provenance'] == 'quote' and x['heading'] == f['heading'] and x['epistemic_type'] == f['epistemic_type'] and checked_finding(x['id'], party) and summary_passages.intersection(e['passage_id'] for e in evidence if e['finding_id'] == x['id']) for x in findings.values()):
             raise ValueError('Kaynaklı özet ve alıntı çifti gerekli')
         return f
     for x in data.get('dossier_field', []):
@@ -361,6 +361,8 @@ def make_delivery_receipt(release, party_id, previous=None, _seen=None):
     sources = sorted({x['version_id'] for x in data['dossier_source'] if x['party_id'] == party_id})
     added = [f"{FIELD_LABELS[x['field']]}: {x['value']}" for x in fields if x['value'] is not None]
     if any(x['party_id'] == party_id and x['kind'] == 'foundation' for x in data['dossier_event']): added.append('Kaynaklı kuruluş kronolojisi ve sicil pasajına bağlantı')
+    if manifest.get('renderer_version', 0) >= 10:
+        added.append('Beş alanlı kimlik kartı, başlıklara göre kaynak künyeleri ve erişilebilir sürüm geçmişi')
     gaps = [f"{FIELD_LABELS[name]}: henüz incelenmedi" for name in FIELDS[:5] if not any(f['field'] == name for f in fields)]
     gaps += [f"{FIELD_LABELS[x['field']]}: {next(m['status'] + ' — ' + m['reason'] for m in data['missing'] if m['id'] == x['missing_id'])}" for x in fields if x['value'] is None]
     reviewed = {x['heading'] for x in data['research_state'] if x['party_id'] == party_id and x['state'] == 'reviewed'}

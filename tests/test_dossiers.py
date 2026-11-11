@@ -48,6 +48,29 @@ class DossierTracer(unittest.TestCase):
             self.assertIn(f'id="sources-tip-{key}"', report)
         self.assertIn('id="version-history-tip-registry-v1"', report)
 
+    def test_each_finding_keeps_its_own_version_in_history(self):
+        from rapor import render_report
+        data = json.loads((arsiv.DATA / 'releases' / arsiv.current() / 'records.json').read_text())
+        old = next(v for v in data['document_version'] if v['id'] == 'tip-registry-v1')
+        old['version_label'] = 'Eski sürüm'
+        new = dict(old, id='test-version-two', version_label='Yeni sürüm')
+        data['document_version'].append(new)
+        passage = next(p for p in data['passage'] if p['id'] == 'tip-foundation-passage')
+        data['passage'].append(dict(passage, id='test-passage-two', version_id=new['id']))
+        f = next(f for f in data['finding'] if f['id'] == 'tip-foundation-summary')
+        data['finding'].append(dict(f, id='test-finding-two', pair_id='test-pair'))
+        data['finding_evidence'].append(dict(finding_id='test-finding-two', passage_id='test-passage-two', role='support'))
+        data['dossier_source'].append(dict(party_id='tip', heading='Tüzük', version_id=new['id'], reason='Test kaynağı'))
+        report = render_report(data)
+        self.assertIn('href="#source-tip-foundation-passage"', report)
+        self.assertIn('href="#source-test-passage-two"', report)
+        self.assertIn('id="version-history-test-version-two"', report)
+        self.assertIn('Eski sürüm', report)
+        self.assertIn('Yeni sürüm', report)
+        import re
+        ids = re.findall(r'\bid="([^"]+)"', report)
+        self.assertEqual(len(ids), len(set(ids)))
+
     def test_archived_tip_registry_foundation_has_party_contract(self):
         release = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
         db = sqlite3.connect(release)
@@ -106,7 +129,7 @@ class DossierTracer(unittest.TestCase):
                 folder = arsiv.DATA / 'releases' / release
                 manifest = json.loads((folder / 'manifest.json').read_text())
                 self.assertEqual(manifest['phase2_delivery'], {'party_id':'tip','stage':'tracer','completed_prefix':[]})
-                self.assertEqual(manifest['renderer_version'], 9)
+                self.assertEqual(manifest['renderer_version'], 10)
                 data = json.loads((folder / 'records.json').read_text())
                 self.assertEqual(data['schema_version'], 4)
                 report = (folder / 'index.html').read_text()
@@ -114,6 +137,11 @@ class DossierTracer(unittest.TestCase):
                 self.assertIn('07.11.2017', panel)
                 self.assertIn('href="#source-tip-foundation-passage"', panel)
                 self.assertIn('id="source-tip-foundation-passage"', panel)
+                self.assertEqual(report.count('id="source-tip-foundation-passage"'), 1)
+                self.assertIn('Arşivde tek sürüm var.', panel)
+                from browser_probe import probe_tabs
+                source = next(v for v in data['document_version'] if v['id'] == 'tip-registry-v1')
+                self.assertEqual(probe_tabs(report, 'tip-foundation-passage', arsiv.DATA, source['readable_path']), 'BROWSER_TABS_OK')
                 receipt = dosyalar.make_delivery_receipt(release, 'tip')
                 path = Path(tmp) / 'receipt.json'; path.write_text(json.dumps(receipt), encoding='utf-8')
                 self.assertEqual(dosyalar.check_delivery_receipt(path)['release_id'], release)

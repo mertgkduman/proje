@@ -27,6 +27,7 @@ from rapor_v5 import render_report as render_v5_report
 from rapor_v6 import render_report as render_v6_report
 from rapor_v7 import render_report as render_v7_report
 from rapor_v8 import render_report as render_v8_report
+from rapor_v9 import render_report as render_v9_report
 from dosyalar import (DOSSIER_TABLES, foundation_for_party, migrate_workspace,
                       validate_dossier, validate_delivery_prefix, DELIVERY_ORDER)
 
@@ -837,7 +838,7 @@ def audit_release(release='current', _seen=None):
     if exported['schema_version'] == 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
-        if exported['schema_version'] != 4 or manifest.get('data_schema_version') != 4 or manifest.get('dossier_validation_version') != 1 or manifest.get('renderer_version') != 9:
+        if exported['schema_version'] != 4 or manifest.get('data_schema_version') != 4 or manifest.get('dossier_validation_version') != 1 or manifest.get('renderer_version') not in (9, 10):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_id = manifest.get('base_release')
         if not base_id or base_id == release or not re.fullmatch(r'[0-9a-f]{32}', base_id): raise ValueError('Faz 2 tabanı geçersiz')
@@ -858,7 +859,7 @@ def audit_release(release='current', _seen=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        RENDERER_VERSION: render_report,
+        9: render_v9_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
