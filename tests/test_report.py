@@ -34,6 +34,23 @@ class ReaderText(HTMLParser):
 
 
 class ReportTest(unittest.TestCase):
+    def test_reader_shows_party_content_and_faithful_archive_links(self):
+        root=Path(__file__).resolve().parents[1]
+        data=json.loads((root/'data/releases/b14c96c54e4b420686c46e5cfb1071a3/records.json').read_text())
+        payload=json.loads((root/'data/dossiers/261111-epm-yeni-parti.json').read_text())
+        data['source_policy']=[{'version':2,'legacy_findings':json.dumps([f['id'] for f in data['finding']])}]
+        for row in payload['records']:
+            target=data.setdefault(row['kind'],[])
+            target.append(dict(dict.fromkeys(target[0],None) if target else {},**row['values']))
+        report=render_report(data)
+        self.assertIn('class="archive-view"',report,'Arşiv bağlantısı özgün görünümlü türeve gitmeli')
+        self.assertIn('href="https://yenipartiyiz.biz"',report)
+        self.assertIn('Neden kuruldu?',report)
+        self.assertIn('Ne vaat ediyor?',report)
+        self.assertIn('id="prior-yeni-parti-tuzuk"',report)
+        for row in (x['values'] for x in payload['records'] if x['kind']=='archive_view'):
+            self.assertIn('href="../../'+row['index_path']+'"',report)
+
     def test_scoped_parties_and_summary_are_navigable(self):
         root = Path(__file__).resolve().parents[1]
         release = json.loads((root / 'data/current.json').read_text())['release_id']
