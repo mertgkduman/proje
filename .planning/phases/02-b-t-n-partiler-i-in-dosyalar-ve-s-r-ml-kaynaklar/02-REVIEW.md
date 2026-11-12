@@ -1,8 +1,8 @@
 ---
 phase: 02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar
-reviewed: 2026-11-11T23:49:29Z
+reviewed: 2026-11-12T00:13:01Z
 depth: standard
-files_reviewed: 26
+files_reviewed: 27
 files_reviewed_list:
   - .gitignore
   - README.md
@@ -15,6 +15,7 @@ files_reviewed_list:
   - src/rapor_v11.css
   - src/rapor_v11.py
   - src/rapor_v12.py
+  - src/rapor_v13.py
   - src/rapor_v8.py
   - src/rapor_v9.py
   - tests/archive_browser.cjs
@@ -31,73 +32,66 @@ files_reviewed_list:
   - tests/test_scope.py
   - tests/test_source_policy.py
 findings:
-  critical: 6
+  critical: 3
   warning: 0
   info: 0
-  total: 6
+  total: 3
 status: issues_found
 ---
 
-# Faz 02: Kod İnceleme Raporu
+# Faz 02: Kod Yeniden İnceleme Raporu
 
-**İnceleme zamanı:** 2026-11-11T23:49:29Z  
+**İnceleme zamanı:** 2026-11-12T00:13:01Z  
 **Derinlik:** standard  
-**İncelenen dosya:** 26  
+**İncelenen dosya:** 27  
 **Durum:** issues_found
 
 ## Özet
 
-Pasif arşiv, kaynak künyesi ve alıntı üretiminde altı doğrulanmış hata bulundu. Bunlar belirli girdilerde kaynak metnini eksiltiyor veya değiştiriyor, yanlış künye gösteriyor ya da istenmeyen bir ağ isteğine yol açıyor. Örnekler geçici dizin ve yerel HTTP sunucuları kullanılarak çalıştırıldı; uzun süren teslim zinciri denetimleri tekrarlanmadı.
+İlk incelemedeki altı düzeltme, `e6c2b92..f08bb25` kaynak farkı ve ilgili testler üzerinden yeniden incelendi. Altı özgün örnek giderilmiş; iki düzeltmede içerik kaybına neden olan yeni durumlar ve kodlama zincirinde önceden var olan ayrı bir eksik bulundu. Önceki kimlikler ve çözüm kanıtları aşağıda korunmuştur. Tam regresyon bu rapor yazılırken çalışıyor; sonuç henüz alınmadı.
 
 ## Narrative Findings (AI reviewer)
 
-### CR-01: Varlık yönlendirmesi doğrulanmadan hedefe istek gönderiliyor
+### CR-07: Yazar aktarımının kaldırılması mevcut üç bilinen yazarı görünmez kılıyor
 
 **Sınıflandırma:** BLOCKER  
-**Dosya:** `src/arsiv_gorunum.py:42-45`  
-**Sorun:** `urlopen` HTTP yönlendirmelerini otomatik izliyor; son ana makinenin izinli olup olmadığı ancak istek tamamlandıktan sonra denetleniyor. Kötü niyetli veya ele geçirilmiş bir kaynak sayfasındaki izinli ana makineye ait görsel/CSS adresi, yerel ağdaki bir servise yönlendirerek arşivi üreten makineden istek gönderebilir. Yerel tekrarda `localhost` üzerindeki izinli varlık `127.0.0.1` üzerindeki farklı hedefe yönlendirdi; fonksiyon dönüşü reddettiği halde hedef `/private` isteğini aldı. İlk veya ara hedeflerde de özel IP ve DNS yeniden bağlanması değerlendirilmelidir.
+**Dosya:** `src/rapor.py:160`, `src/rapor.py:84-110`  
+**Sorun:** CR-05'in yanlış tarih/yayıncı aktarımı giderilmiş; ancak önceki sürüme bağlı bulgular gösterilirken aynı belgenin yazarı doğrulanmış sonraki sürümü sadece tarih ve sürüm etiketi olarak listeleniyor, yazar ve atıf dayanağı hiçbir yerde gösterilmiyor. Mevcut `bcc67d04d9d741e191589d0f5ac173ca` verisi üretici 14 ile tekrar oluşturulduğunda Ekonomim'in iki haberinden “Haber Merkezi”, Kocaeli TV haberinden “Bugün Kocaeli” kayboluyor. Sonraki üç kayıtta yazar ve özgün HTML metadata dayanağı kayıtlıdır. Bu, bilinen yazar atfını okura ulaştırma gereğini bozar.
 
-**Düzeltme:** Otomatik yönlendirmeyi kapatın; her `Location` adresini istekten önce şema, ana makine ve çözümlenen IP açısından doğrulayın, yerel/özel/bağlantı yerel adresleri reddedin ve yönlendirme sayısını sınırlandırın. DNS doğrulaması ile gerçek bağlantının aynı adrese yapıldığından emin olun. İzinli bir URL'nin yerel hedefe yönlendirilmesinde hedefe hiçbir istek ulaşmadığını test edin.
+**Düzeltme:** Her sürümün kendi tarih, yayıncı ve dayanağını koruyarak sonraki sürümün yazarını ve kanıtını açık sürüm atfıyla gösterin. Alternatif olarak yalnız açıkça desteklenen yazarı, kaynak sürüm ve gerekçesine bağlantıyla tamamlayın; yayıncıyı, tarihi veya dayanağı topluca aktarmayın. Gerçek üç kaynakta yazarın görünür kalmasını ve farklı tarih/yayıncıların eski sürüme taşınmamasını birlikte test edin.
 
-### CR-02: Kapanış etiketi olmayan embed sonrasındaki içerik siliniyor
-
-**Sınıflandırma:** BLOCKER  
-**Dosya:** `src/arsiv_gorunum.py:16`, `src/arsiv_gorunum.py:86-90`  
-**Sorun:** HTML'de boş öğe olan `<embed>` `DROP` listesinde ve blok yığınına ekleniyor; normal HTML'de `</embed>` gelmediğinden yığın hiç boşalmıyor. `<p>önce</p><embed src="x"><p>SONRAKI ANA METIN</p>` örneğinde sonraki paragraf ve belgenin kalanı üretilen arşivden kayboldu; görünüm bu veri kaybını bildirmiyor.
-
-**Düzeltme:** `embed` gibi kapanış etiketi olmayan yasak öğeleri yığına sokmadan tek başına atın; içerik taşıyan yasak öğeler için mevcut bloklamayı koruyun. `<embed>` sonrasında belge içeriğinin ve kapanış etiketlerinin korunduğunu doğrulayan test ekleyin.
-
-### CR-03: UTF-8 dışındaki HTML belgeleri bozuk metne dönüştürülüyor
+### CR-08: Kimlik notu alıntılarında HTML entity çözümlemesi atlanıyor
 
 **Sınıflandırma:** BLOCKER  
-**Dosya:** `src/arsiv_gorunum.py:148-154`  
-**Sorun:** Özgün belgenin gerçek karakter kümesi dikkate alınmadan baytlar iki kez `utf-8` ve `errors='replace'` ile çözülüyor. Yerel tekrarda `charset=windows-1254` bildiren ve bu kodlamayla kaydedilen “Türkiye İşçi Partisi”, pasif görünümde “T�rkiye ���i Partisi” oldu. Üretilen UTF-8 meta etiketi kaybolmuş karakterleri geri getirmiyor; bu da eski Türkçe parti belgelerinin yanlış okunmasına yol açıyor.
+**Dosya:** `src/rapor.py:137-139`, `src/rapor.py:158-164`  
+**Sorun:** CR-06 için eklenen `format_finding`, kaynak türünü yalnız `finding_evidence` satırlarından belirliyor. `dossier_identity_note` kayıtları ise kanıta `own_passage_id` ve `related_passage_id` ile bağlanıyor; bu nedenle HTML kaynaklı alıntı notunda eşleşme bulunamıyor ve entity çözümlemesi yapılmıyor. Mevcut kimlik notunun bellek içi kopyasında alıntı ve HTML pasajı `SAADET &amp; PARTİSİ` olduğunda çıktı `SAADET &amp;amp; PARTİSİ` oluyor; tarayıcı okura `&amp;` gösteriyor. Bu metin alıntı ve pasaj eşitliği koşulunu karşılayan bir girdi için birebir aktarımı bozuyor.
 
-**Düzeltme:** Yakalama sırasında HTTP karakter kümesini saklayın ve HTML meta bildirimi/BOM ile birlikte güvenilir kodlama belirleme uygulayın; özgün baytları değiştirmeden yalnız doğrulanmış çözümlemeyi UTF-8 türevine dönüştürün. Windows-1254 ve UTF-8 belgeleri, Türkçe karakter ve kaynak hash'i açısından test edin; çözülemeyen kodlamayı açık hata veya sınırlama olarak bildirin.
+**Düzeltme:** Kimlik notu biçimleyicisine notun iki pasajını sağlayın; metinle eşleşen pasajın kaynak türünü kullanarak HTML entity çözümlemesini uygulayın ve PDF metnini literal koruyun. HTML ve PDF kaynaklı kimlik notlarında entity benzeri dizeleri test edin.
 
-### CR-04: Görünüm kimliği manifestteki kaynak adresini kapsamıyor
-
-**Sınıflandırma:** BLOCKER  
-**Dosya:** `src/arsiv_gorunum.py:167-177`  
-**Sorun:** `view_id` yalnız kaynak hash'i ve üretilmiş dosya hash'lerinden hesaplanıyor; değişmez manifest ayrıca `source_url`, `asset_sources` ve `limitations` içeriyor. Aynı HTML baytları ve çıktısı farklı iki URL'den geldiğinde iki üretim aynı dizine düşüyor ama manifestleri farklı oluyor ve ikinci üretim `Değişmez arşiv görünümü farklı` hatasıyla duruyor. Bu durum aynı belgenin farklı URL'lerden veya farklı indirme sınırlamalarıyla arşivlenmesini engelliyor.
-
-**Düzeltme:** Kimliği, manifestin kimlik ve özeti dışındaki bütün anlamlı alanlarını içeren kanonik bir girdiden türetin veya URL'ye özgü kayıtları içerik adresli görünümden ayrı tutun. Aynı baytların iki farklı URL ve farklı varlık sınırlamasıyla ardışık oluşturulmasını test edin; mevcut sürümlerin biçim kimliğini korumak için formatı sürümleyin.
-
-### CR-05: Yazar tamamlama başka sürümün tüm künyesini kullanıyor
+### CR-09: UTF-8 dışındaki kaynaklar genel kayıt ve pasaj zincirinde kullanılamıyor
 
 **Sınıflandırma:** BLOCKER  
-**Dosya:** `src/rapor.py:160-166`  
-**Sorun:** Bir sürümün yazarı boşsa aynı belge ve hash'e sahip başka sürümün yalnız yazarı yerine bütün atıf sözlüğü kullanılıyor. Böylece ilk sürümün yayıncısı, yayın tarihi ve atıf gerekçesi başka kaydın değerleriyle sunulabiliyor. Geçerli rapor verisinin bellek içi kopyasında ilk sürümün tarihi bilinmezken aynı hash'li ikinci sürüme `2000-01-01` tarihi ve yazar eklenince ilk kaynağın künyesinde de bu tarih gösterildi. Kaynak baytlarının eşit olması künye alanlarının eşit olduğunu kanıtlamaz.
+**Dosya:** `src/arsiv.py:124-126`, `src/arsiv.py:221-245`, `src/arsiv.py:823-835`, `src/kaynaklar.py:45-48`  
+**Sorun:** CR-03'ün pasif görünüm örneği giderildi; bu ayrı genel kayıt zinciri kısıtı önceden de vardı. `capture_source` HTTP karakter kümesini artık sonuç alanı olarak veriyor, ancak `document_version` şemasında bunu koruyan alan yok. `readable_bytes`, atıf denetimi ve `export_db` pasaj kontrolü HTML baytlarını hâlâ UTF-8 replacement ile çözüyor. Bu nedenle Windows-1254 bildirimli ve “Türkiye İşçi Partisi” içeren bir belgenin doğru Türkçe pasajı export sırasında `Pasaj özgün belgede bulunamadı` hatasıyla reddedilir; okunabilir türev de bozuktur. Mevcut pasif görünüm testi bu uçtan uca yolu kapsamıyor.
 
-**Düzeltme:** Sürümün kendi atıf kaydını koruyun; yazarın başka kayıttan devralınması destekleniyorsa yalnız açıkça doğrulanmış yazar alanını kopyalayın ve bu ilişkinin dayanağını saklayın. Aynı hash'li sürümlerin farklı tarih ve yayıncılarıyla kendi künyelerini koruduğunu test edin.
+**Düzeltme:** Yeni yakalamalar için karakter kümesini kalıcı ve sürümlü meta veride koruyup yeni kayıtların atıf/pasaj çözümlemesine aynı değeri aktarın. Önceki okunabilir türevlerin baytlarını ve eski denetim davranışını koruyacak geriye uyumlu bir yol kullanın; mevcut arşivleri yerinde değiştirmeyin. HTTP ve meta bildirimli Windows-1254 kaynakların yakalama → kayıt → pasaj → export akışını test edin.
 
-### CR-06: HTML entity çözümlemesi PDF'deki birebir alıntıyı değiştiriyor
+## Önceki bulguların yeniden kontrolü
 
-**Sınıflandırma:** BLOCKER  
-**Dosya:** `src/rapor.py:59-62`, `src/rapor.py:225`  
-**Sorun:** Kaynak türünden bağımsız `unescape`, doğrudan alıntı ve pasajdaki gerçek karakter dizilerini HTML karakter başvurusu sayıyor. Örneğin PDF metnindeki gerçek `literal &copy; 2026` alıntısı `literal © 2026` olarak gösteriliyor. PDF pasajları `pdf_page_text` ile doğrudan karşılaştırıldığından bu metin geçerli bir birebir alıntı olabilir; okuyucuya ve kaynak künyesine farklı bir metin sunulması kaynak sadakatini bozuyor.
+| Kimlik | Durum | Kanıt |
+|---|---|---|
+| CR-01 | Özgün hata giderildi | `fetch_asset` her yönlendirmeden önce izinli ana makine ve genel IP kontrolü yapıyor; doğrulanmış IP'ye bağlanıyor. Yönlendirme, karma DNS yanıtı ve yeniden çözümleme testleri `tests/test_archive_views.py:100-140`. |
+| CR-02 | Giderildi | `DROP_VOID` içindeki `embed` yığına eklenmiyor; `test_void_embed_does_not_hide_following_content`. |
+| CR-03 | Özgün pasif görünüm hatası giderildi | Görünüm BOM, HTTP charset ve meta kodlamayı çözüyor; `test_declared_charsets_and_bom_preserve_turkish_text_and_original`. Önceden var olan genel kayıt sorunu ayrı CR-09'da açıklanmıştır. |
+| CR-04 | Giderildi | Biçim 2 kimliği manifest içeriğinden üretiliyor; biçim 1 kabul ediliyor. `test_view_identity_covers_source_url_and_limitations` ve mevcut görünüm testleri. |
+| CR-05 | Özgün hata giderildi; yeni CR-07 açık | Başka sürümün tüm künyesi artık aktarılmıyor; `test_attribution_is_never_copied_from_same_hash_sibling`. Mevcut üç yazarlı künye görünmez oluyor. |
+| CR-06 | Özgün PDF örneği giderildi; yeni CR-08 açık | PDF bulgu ve pasajlarında literal entity korunuyor; `test_pdf_quote_entities_are_literal_and_html_entities_decode`. Kimlik notları farklı kanıt yapısı nedeniyle bundan yararlanmıyor. |
 
-**Düzeltme:** Metin kökenini dikkate alın: PDF ve zaten düz metin olarak saklanan pasajları yalnız HTML çıktısı için escape edin; HTML kaynaklarındaki entity çözümlemesini kaynağı ayrıştırırken tek ve tutarlı bir aşamada yapın. PDF'de literal `&copy;`, `&amp;` ve sayısal entity benzeri dizelerin aynen görüntülendiğini test edin.
+## Sürüm ve regresyon
+
+`src/rapor_v13.py`, `e6c2b92:src/rapor.py` ile bayt bayt aynıdır; `bcc67d04d9d741e191589d0f5ac173ca` HTML'i üretici 13 ile birebir yeniden üretilmiştir. Aynı kayıtlarda üretici 14 çıktısı farklıdır ve üç bilinen yazarı gizler. Kod düzeltmelerini rapora yansıtmak için yeni sürüm gerekir; bu açıklar giderilip doğrulanmadan üretici 14 ile yeni sürüm önerilmez. Mevcut sürüm değiştirilmedi.
+
+Tam faz regresyonu `python3 tests/run.py` ile yapılandırılmış 1800 saniyelik sınır altında başlatıldı ve rapor yazılırken devam ediyordu. Sonuç ve test sayısı tamamlandığında `/tmp/phase02-regression-final.json`, ayrıntı `/tmp/phase02-regression-final.log` dosyasındadır; henüz başarılı sayılmamıştır.
 
 ---
 
