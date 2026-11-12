@@ -30,7 +30,7 @@ key-decisions:
   - İlk yerel aday değiştirilmeden korundu; CSS düzeltmesi sonrası nihai sürüm temiz kabul edilmiş tabandan üretildi.
 requirements-completed: []
 actuals:
-  tokens: 1778034
+  tokens: null
   tasks: 3
   commits: 3
 plan_head_before: a64e1f708aee3bdf14974b1faffcee8127a60843

@@ -55,7 +55,7 @@ coverage:
       - {kind: integration, ref: 'python3 src/arsiv.py receipt-check --input data/deliveries/02-08-emep.json', status: pass}
     human_judgment: false
 actuals:
-  tokens: 14287211
+  tokens: null
   tasks: 3
   commits: 3
 plan_head_before: 7d9ab1e7e0cec8b9da562a8ccbb87f57c99bcd64

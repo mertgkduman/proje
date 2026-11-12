@@ -99,3 +99,7 @@ D-13–D-16 uygulanır: alan adı için bağımsız sicil kanıtı, her yayına 
 - [x] status: verified; ASVS 1 kısa yol koşulları sağlandı.
 
 Teknik doğrulama: 2026-11-12 — kaynak içeriği için insan onayı verilmedi.
+
+## Sonraki doğrulamalar
+
+CR-07 ve CR-08 ikinci turda düzeltildi; 25 arşiv/rapor ve iki ilgili atıf testi geçti. CR-09 yalnız HTTP başlığında kalan UTF-8 dışı charset için açık destek sınırı olarak kaydedildi; çözülemeyen yeni kaynaklar açık hata verir. `353a5ee` tamamlanmış sırayı, parti kimliğini ve aşamayı değiştirmeden yalnız tam teslimin açık --refresh yoluyla yeniden yayımlanmasını sağlar; üç olumlu/olumsuz kontrol ve yeni `1d6b49b307f04a258c1a11d90978fe7c` için PHASE2_AUDIT_OK geçti. Önceki belgeler, kaynak atıfları ve sekiz makbuz değişmedi; yeni açık güvenlik tehdidi veya risk kabulü eklenmedi. Regresyon sonucu 02-REGRESSION.md içinde çözülmüş tek eski beklenti hatasıyla belgelenmiştir.

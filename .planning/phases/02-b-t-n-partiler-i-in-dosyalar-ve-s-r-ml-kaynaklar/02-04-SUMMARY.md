@@ -70,7 +70,7 @@ coverage:
         status: pass
     human_judgment: false
 actuals:
-  tokens: 1344644
+  tokens: null
   tasks: 3
   commits: 3
 plan_head_before: e2982c163bf4757d2f056407b5f658d1ec34f736

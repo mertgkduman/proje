@@ -59,7 +59,7 @@ coverage:
       - {kind: integration, ref: '02-10-CHECKS.json#tests', status: pass}
     human_judgment: false
 actuals:
-  tokens: 22739196
+  tokens: null
   tasks: 3
   commits: 5
 plan_head_before: e2564c6ad354bae74c36f38e42a5bbc281c603cd

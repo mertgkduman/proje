@@ -11,6 +11,17 @@ status: partial
 
 # Faz 02: Kod İnceleme Düzeltme Raporu
 
+## CR-10 — Tamamlanmış fazın yerel raporu yenilenemiyordu
+
+**Durum:** Düzeltildi; mantık değişikliği insan doğrulaması gerektirir.
+
+**Kod commit:** `353a5ee`
+
+**Yayın commit:** `72b6908`
+**Dosyalar:** `src/arsiv.py`, `src/dosyalar.py`, `tests/test_dossiers.py`
+
+Yeni `publish --refresh` yolu yalnız tam teslim sırası ve değişmemiş son teslim kimliğiyle kabul edilir. Normal sıradaki parti kuralları, politika inişi, önceki dosya kayıtlarının korunması, bütün parti ve faz 1 denetimleri ve işaretçi öncesi yayın denetimi korunur. Kısmi, yeniden sıralanmış veya değiştirilmiş teslimler ve partiyle birlikte yenileme reddedilir. Üç odaklı test geçti. Resmî CLI ile yeni yerel `1d6b49b307f04a258c1a11d90978fe7c` üretildi; `PHASE2_AUDIT_OK` alındı ve kayıtlar önceki sürümle kimlik alanı dışında eşit. Komutlar ve değişmezlik kanıtı `02-REFRESH.md` dosyasındadır. Eski makbuzlar ve yayınlar değiştirilmedi.
+
 ## İkinci inceleme — 2026-11-12
 
 **Durum:** CR-07 ve CR-08 düzeltildi; CR-09 meta/BOM bildirimli HTML için düzeltildi, yalnız HTTP başlığında kalan kodlama sınırı nedeniyle kısmen açık. Mantık değişiklikleri için insan doğrulaması gereklidir.

@@ -38,7 +38,7 @@ coverage:
     human_judgment: true
     rationale: Kaynakların anlamı ve tüm dosyanın yeterliliği hash veya otomatik testten çıkarılamaz.
 actuals:
-  tokens: 128415
+  tokens: null
   tasks: 3
   commits: 7
 plan_head_before: c36aef448a8f0678d3c9bb7a06031d4581aff366

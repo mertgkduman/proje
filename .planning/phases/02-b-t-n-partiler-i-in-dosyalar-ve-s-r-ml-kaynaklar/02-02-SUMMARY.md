@@ -22,7 +22,7 @@ key-decisions:
   - Kaynak türü ve sürüm yetkisi ayrı tutulur; tek sürüm ve bilinmeyen dönem açıkça belirtilir.
 requirements-completed: []
 actuals:
-  tokens: 127050
+  tokens: null
   tasks: 3
   commits: 4
 plan_head_before: 10a43600020da93cdcdc6f7b2e589f8f4745e3ba

@@ -54,7 +54,7 @@ coverage:
       - {kind: integration, ref: 'python3 src/arsiv.py receipt-check --input data/deliveries/02-09-saadet.json', status: pass}
     human_judgment: false
 actuals:
-  tokens: 7634502
+  tokens: null
   tasks: 3
   commits: 3
 plan_head_before: ee6807576f0fd18a3ddd172ed3f19d27777ad59a
