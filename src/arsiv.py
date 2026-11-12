@@ -35,7 +35,7 @@ from rapor_v12 import render_report as render_v12_report
 from rapor_v13 import render_report as render_v13_report
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
                       check_evidence_attribution, validate_policy_descent)
-from arsiv_gorunum import VIEW_TABLES, validate_view, CSP as ARCHIVE_CSP
+from arsiv_gorunum import VIEW_TABLES, validate_view, decode_html, CSP as ARCHIVE_CSP
 from dosyalar import (DOSSIER_TABLES, foundation_for_party, migrate_workspace,
                       validate_dossier, validate_delivery_prefix, DELIVERY_ORDER)
 
@@ -122,9 +122,14 @@ def safe_path(base, relative):
     return target
 
 
-def readable_bytes(content, kind):
-    decoded = content.decode('utf-8', errors='replace') if kind == 'html' else 'PDF dosyasını özgün kopyadan açın.'
+def readable_bytes(content, kind, legacy=True):
+    decoded = (content.decode('utf-8', errors='replace') if legacy else decode_html(content)) if kind == 'html' else 'PDF dosyasını özgün kopyadan açın.'
     return ('<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>' + html.escape(decoded) + '</pre>').encode('utf-8')
+
+
+def html_source_text(content):
+    try: return decode_html(content)
+    except ValueError: return content.decode('utf-8',errors='replace') # Existing historical captures only.
 
 
 def check_identity(db, values):
@@ -138,7 +143,7 @@ def check_identity(db, values):
         raise ValueError('Kimlik için resmi sicil sayfası gerekli')
     registry_key = 'yargitay-' + match.group(1)
     if party['registry_key'] != registry_key: raise ValueError('Sicil anahtarı kaynak adresiyle uyuşmuyor')
-    content = safe_path(DATA, source['original_path']).read_text(encoding='utf-8', errors='replace')
+    content = html_source_text(safe_path(DATA, source['original_path']).read_bytes())
     if party['legal_name'].casefold() not in content.casefold(): raise ValueError('Parti adı sicil kaynağında yok')
     dates = []
     for key in ('valid_from','valid_to'):
@@ -227,6 +232,16 @@ def capture_source(url, kind, out=None):
         raise ValueError('Kaynak boyut sınırını aşıyor')
     if not content or (kind == 'pdf' and not content.startswith(b'%PDF-')):
         raise ValueError('Kaynak boş veya beklenen türde değil')
+    if kind == 'html' and charset:
+        try:
+            standalone=decode_html(content)
+            declared=decode_html(content,charset)
+        except ValueError as exc:
+            raise ValueError('HTTP charset tek başına kalıcı kaydedilemez; HTML meta/BOM kodlaması gerekli') from exc
+        if standalone != declared:
+            raise ValueError('HTTP charset tek başına kalıcı kaydedilemez; HTML meta/BOM kodlaması gerekli')
+    elif kind == 'html':
+        decode_html(content)
     digest = hashlib.sha256(content).hexdigest()
     object_root = Path(out) if out else DATA / 'objects'
     folder = object_root / digest
@@ -235,8 +250,8 @@ def capture_source(url, kind, out=None):
     if original.exists() and sha(original) != digest:
         raise ValueError('Mevcut arşiv nesnesi bozuk')
     readable = folder / 'readable.html'
-    derivative = readable_bytes(content, kind)
-    if readable.exists() and readable.read_bytes() != derivative:
+    derivative = readable_bytes(content, kind, legacy=False)
+    if readable.exists() and readable.read_bytes() not in (derivative,readable_bytes(content,kind)):
         raise ValueError('Mevcut okunabilir arşiv bozuk')
     if not original.exists(): original.write_bytes(content)
     if not readable.exists(): readable.write_bytes(derivative)
@@ -818,7 +833,11 @@ def export_db(path, release_id, strict_identity=False):
             if sha(original) != v['sha256']:
                 raise ValueError('Arşiv özeti eşleşmiyor')
             kind = 'pdf' if original.name == 'original.pdf' else 'html'
-            if readable.read_bytes() != readable_bytes(original.read_bytes(), kind):
+            raw=original.read_bytes()
+            acceptable=[readable_bytes(raw,kind)]
+            try: acceptable.append(readable_bytes(raw,kind,legacy=False))
+            except ValueError: pass # Historical derivatives retain their original bytes.
+            if readable.read_bytes() not in acceptable:
                 raise ValueError('Okunabilir arşiv özgün belgeden farklı')
         for p in result['passage']:
             v = next(v for v in result['document_version'] if v['id'] == p['version_id'])
@@ -830,7 +849,11 @@ def export_db(path, release_id, strict_identity=False):
                 if manual:
                     if not manual['checked_at'] or not manual['method'] or not manual['reason'] or not pdf_page_exists(path, p['pdf_page_index']): raise ValueError('PDF elle doğrulama kaydı geçersiz')
                     continue
-            else: content = path.read_bytes().decode('utf-8', errors='replace')
+            else:
+                raw=path.read_bytes()
+                content=html_source_text(raw)
+                if p['exact'] not in content and safe_path(DATA,v['readable_path']).read_bytes()==readable_bytes(raw,'html'):
+                    content=raw.decode('utf-8',errors='replace')
             if p['exact'] not in content:
                 raise ValueError('Pasaj özgün belgede bulunamadı')
         for f in result['finding']:

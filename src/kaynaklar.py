@@ -25,7 +25,7 @@ def active_policy(db):
 
 
 def check_attribution(db, value):
-    from arsiv import safe_url, safe_path, DATA
+    from arsiv import safe_url, safe_path, DATA, html_source_text
     v = db.execute('SELECT v.*,d.source_kind,d.party_id,p.legal_name FROM document_version v JOIN document d ON d.id=v.document_id JOIN party p ON p.id=d.party_id WHERE v.id=?', (value.get('version_id'),)).fetchone()
     if not v or value.get('kind') not in KINDS or v['source_kind'] not in KINDS[value['kind']]:
         raise ValueError('Kaynak türü ve atıf uyuşmuyor')
@@ -44,7 +44,7 @@ def check_attribution(db, value):
         raise ValueError('Sosyal paylaşım için hesap/yazar, tarih ve kalıcı adres gerekli')
     if value['kind'] == 'party_publication':
         raw = safe_path(DATA, v['original_path']).read_bytes()
-        text = folded(raw.decode('utf-8', errors='replace'))
+        text = folded(html_source_text(raw))
         publisher_present = folded(value['publisher']) in text
         # A compressed PDF can identify its publisher in its own text. An
         # unavailable HTML page on the hosting domain must not block that
@@ -66,7 +66,7 @@ def check_attribution(db, value):
         if not publisher_present and (raw.startswith(b'%PDF-') or v['mime'] == 'text/html'):
             host = urlsplit(v['final_url']).hostname
             for h in db.execute("SELECT v.original_path,v.final_url,a.publisher FROM document_version v JOIN document d ON d.id=v.document_id JOIN source_attribution a ON a.version_id=v.id WHERE d.party_id=? AND a.kind='party_publication' AND v.mime='text/html'", (v['party_id'],)):
-                if urlsplit(h['final_url']).hostname == host and folded(h['publisher']) == folded(value['publisher']) and folded(value['publisher']) in folded(safe_path(DATA,h['original_path']).read_text(encoding='utf-8',errors='replace')):
+                if urlsplit(h['final_url']).hostname == host and folded(h['publisher']) == folded(value['publisher']) and folded(value['publisher']) in folded(html_source_text(safe_path(DATA,h['original_path']).read_bytes())):
                     publisher_present = True
                     break
         if folded(value['publisher']) != folded(v['legal_name']) or not publisher_present:

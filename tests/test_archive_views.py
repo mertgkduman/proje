@@ -161,7 +161,7 @@ class ArchiveViews(unittest.TestCase):
             m.decode_html(b'<p>\xff</p>')
 
     def test_capture_exposes_http_charset_and_keeps_original_bytes(self):
-        raw='<p>Türkiye İşçi Partisi</p>'.encode('cp1254')
+        raw='<meta charset="windows-1254"><p>Türkiye İşçi Partisi</p>'.encode('cp1254')
         response=io.BytesIO(raw)
         response.headers=Message()
         response.headers['Content-Type']='text/html; charset=windows-1254'
@@ -172,6 +172,42 @@ class ArchiveViews(unittest.TestCase):
             self.assertEqual(Path(capture['original_path']).read_bytes(),raw)
             view=self.module().build_view(raw,capture['final_url'],Path(tmp),fetch_assets=False,http_charset=capture['http_charset'])
             self.assertIn('Türkiye İşçi Partisi',(Path(tmp)/view['index_path']).read_text())
+
+    def test_http_only_non_utf8_capture_fails_with_explicit_limitation(self):
+        response=io.BytesIO('<p>Türkiye</p>'.encode('cp1254'))
+        response.headers=Message();response.headers['Content-Type']='text/html; charset=windows-1254'
+        response.geturl=lambda:'https://example.org/document'
+        with tempfile.TemporaryDirectory() as tmp, patch('arsiv.urllib.request.urlopen',return_value=response):
+            with self.assertRaisesRegex(ValueError,'HTTP charset tek başına kalıcı kaydedilemez'):
+                arsiv.capture_source('https://example.org/document','html',Path(tmp))
+
+    def test_declared_non_utf8_capture_passage_and_export(self):
+        import kaynaklar
+        raw='<meta charset="windows-1254"><p>Türkiye İşçi Partisi</p>'.encode('cp1254')
+        response=io.BytesIO(raw);response.headers=Message();response.headers['Content-Type']='text/html'
+        response.geturl=lambda:'https://example.org/document'
+        with tempfile.TemporaryDirectory() as tmp, patch.object(arsiv,'DATA',Path(tmp)), patch('arsiv.urllib.request.urlopen',return_value=response):
+            capture=arsiv.capture_source('https://example.org/document','html')
+            self.assertEqual((Path(tmp)/capture['original_path']).read_bytes(),raw)
+            self.assertIn('Türkiye İşçi Partisi',(Path(tmp)/capture['readable_path']).read_text())
+            db=arsiv.connect(Path(tmp)/'test.sqlite3')
+            for name in arsiv.LEGACY_TABLES: db.execute(f'CREATE TABLE {name} ({arsiv.TABLES[name]})')
+            db.execute('INSERT INTO party VALUES (?,?,?)',('tip','Türkiye İşçi Partisi','registry'))
+            db.execute('INSERT INTO document VALUES (?,?,?,?)',('doc','tip','Belge','party'))
+            fields=['original_url','final_url','document_date','version_label','accessed_at','verified_at','mime','sha256','original_path','readable_path']
+            values=dict(capture,document_date=None,version_label='v1')
+            db.execute('INSERT INTO document_version VALUES ('+','.join('?' for _ in range(12))+')',['v1','doc']+[values[k] for k in fields])
+            db.execute('INSERT INTO passage VALUES (?,?,?,?,?,?,?,?,?)',('p1','v1','Türkiye İşçi Partisi',None,None,None,'metin',None,None))
+            attribution=dict(version_id='v1',kind='party_publication',publisher='Türkiye İşçi Partisi',author=None,social_handle=None,published_at=None,date_precision='unknown',public_url=capture['final_url'],basis='Belgenin kendisi')
+            self.assertTrue(kaynaklar.check_attribution(db,attribution))
+            db.commit();db.close()
+            exported=arsiv.export_db(Path(tmp)/'test.sqlite3','test')
+            self.assertEqual(exported['passage'][0]['exact'],'Türkiye İşçi Partisi')
+            readable=Path(tmp)/capture['readable_path']
+            old_bytes=arsiv.readable_bytes(raw,'html')
+            readable.write_bytes(old_bytes)
+            self.assertEqual(arsiv.export_db(Path(tmp)/'test.sqlite3','test')['passage'][0]['exact'],'Türkiye İşçi Partisi')
+            self.assertEqual(readable.read_bytes(),old_bytes)
 
     def test_view_identity_covers_source_url_and_limitations(self):
         m=self.module()
