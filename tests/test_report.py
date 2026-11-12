@@ -46,10 +46,25 @@ class ReportTest(unittest.TestCase):
         attribution=copy.deepcopy(original);attribution.update(version_id=sibling['id'],author='Farklı Yazar',publisher='Farklı Yayıncı',published_at='2000-01-01',basis='Farklı dayanak')
         data['source_attribution'].append(attribution)
         report=render_report(data)
-        source=report.split('id="source-'+passage['id']+'"',1)[1].split('</details>',1)[0]
+        source=report.split('id="source-'+passage['id']+'"',1)[1].split('</dl>',1)[0]
         self.assertIn(original['publisher'],source)
         for value in ('Farklı Yazar','Farklı Yayıncı','Farklı dayanak','01.01.2000'):
             self.assertNotIn(value,source)
+        history=report.split('id="version-history-'+version['id']+'"',1)[1].split('</details>',1)[0]
+        self.assertIn('Bu sürümün yazarı: Farklı Yazar',history)
+        self.assertIn('Farklı dayanak',history)
+
+    def test_known_authors_remain_attached_to_their_source_versions(self):
+        root=Path(__file__).resolve().parents[1]
+        data=json.loads((root/'data/releases/bcc67d04d9d741e191589d0f5ac173ca/records.json').read_text())
+        report=render_report(data)
+        versions={v['id']:v for v in data['document_version']}
+        for donor in ('epm-national-author-v2','epm-provinces-author-v2','epm-finance-author-v2'):
+            attribution=next(a for a in data['source_attribution'] if a['version_id']==donor)
+            original=next(v for v in data['document_version'] if v['document_id']==versions[donor]['document_id'] and v['id']!=donor and v['sha256']==versions[donor]['sha256'])
+            history=report.split('id="version-history-'+original['id']+'"',1)[1].split('</details>',1)[0]
+            self.assertIn('Bu sürümün yazarı: '+attribution['author'],history)
+            self.assertIn(attribution['basis'],history)
 
     def test_renderer_13_reproduces_existing_release(self):
         from rapor_v13 import render_report as old_render

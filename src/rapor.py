@@ -81,7 +81,7 @@ def group_party_sources(data, passages, versions, documents):
     return groups
 
 
-def render_version_history(version, data, versions, citation, findings, evidence, format_finding):
+def render_version_history(version, data, versions, citation, findings, evidence, format_finding, attributions):
     siblings = [v for v in versions.values() if v['document_id'] == version['document_id']]
     result = [f'<details id="version-history-{esc(version["id"])}"><summary>Belge sürüm geçmişi</summary>']
     if len(siblings) == 1:
@@ -89,6 +89,9 @@ def render_version_history(version, data, versions, citation, findings, evidence
     for v in sorted(siblings, key=lambda x: x['id']):
         target = f' id="version-{esc(v["id"])}"' if v['id'] == version['id'] else ''
         result.append(f'<div{target}>{esc(v["version_label"] or "Sürüm belirtilmemiş")} · {time_tag(v["document_date"])}')
+        attribution=attributions.get(v['id'])
+        if attribution and attribution.get('author'):
+            result.append(f'<p class="metadata">Bu sürümün yazarı: {esc(attribution["author"])} · Atıf dayanağı: {esc(attribution["basis"])}</p>')
         context = next((x for x in data.get('version_context', []) if x['version_id'] == v['id']), None)
         if context:
             if context['date_precision'] == 'unknown':
@@ -210,7 +213,7 @@ def render_report(data):
             metadata.append(('Atıf dayanağı',esc(attribution['basis'])))
         details = ''.join(f'<dt>{label}</dt><dd>{value}</dd>' for label, value in metadata)
         if v['id'] not in history_seen:
-            history = render_version_history(v, data, versions, citation, findings, evidence, format_finding)
+            history = render_version_history(v, data, versions, citation, findings, evidence, format_finding, attributions)
             history_seen.add(v['id'])
         else:
             history = f'<a href="#version-history-{esc(v["id"])}">Sürüm geçmişi</a>'
