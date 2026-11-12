@@ -4,12 +4,12 @@ milestone: v1.0
 current_phase: 02
 current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
 current_plan: 10
-status: executing
-stopped_at: "02-10 tamamlandı; 10/10 plan, faz sonu inceleme ve doğrulaması bekleniyor"
-last_updated: "2026-11-12T00:05:28.485849Z"
+status: verifying
+stopped_at: "Faz 2 teknik teslimi tamam; üç ortak ilke için 02-UAT kullanıcı kontrolü bekleniyor"
+last_updated: "2026-11-12T01:33:29.768205Z"
 last_activity: 2026-11-11
-last_activity_desc: "02-10 tamamlandı; dokuz dosyalı rapor, sekiz son makbuz kontrolü ve 32 test geçti; faz sonu inceleme bekleniyor"
-state_head: 70b42aeffd2d62ca02ca4c41b83fca43121ae5f8
+last_activity_desc: "10/10 plan, dokuz dosyalı üretici15 raporu ve 13/13 teknik teslim doğrusu hazır; yalnız H4–H6 kullanıcı kontrolü bekleniyor"
+state_head: cc266a0cceb5cf6e0bcb966e5b83ac4d78eac665
 progress:
   total_phases: 6
   completed_phases: 1
@@ -21,7 +21,7 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-11-10)
+See: .planning/PROJECT.md (updated 2026-11-11)
 
 **Core value:** Kaynağına kadar izlenebilen, karşılaştırılabilir ve eksiklerini açıkça gösteren siyasi parti bilgisine eşit erişim.
 **Current focus:** Phase 02 — Bütün partiler için dosyalar ve sürümlü kaynaklar
@@ -30,12 +30,12 @@ See: .planning/PROJECT.md (updated 2026-11-10)
 
 Current Plan: 10
 Total Plans in Phase: 10
-Phase: 02 (Bütün partiler için dosyalar ve sürümlü kaynaklar) — EXECUTING; final phase verification pending
-Plan: 10/10 tamamlandı; faz sonu inceleme ve doğrulaması bekleniyor
-Status: Awaiting final phase review and verification
-Last activity: 2026-11-11 — 02-10 tamamlandı: Demokrat Parti’nin 30 kaynaklı özet/alıntı çifti, kaynaklı kartı, kuruluş/ad değişikliği/ilk kongre/ilk yönetim kronolojisi, tam 48 sayfalık tüzük ve 83 sayfalık program arşivleri bcc67d04d9d741e191589d0f5ac173ca yerel sürümünde hazırdır. Saadet’e bağlı son makbuz üretildikten sonra sekiz makbuz sırayla geçti; dokuz dosyalı PHASE2_AUDIT_OK ve 32 test kaydedildi. Canlı site, asıl tutanaklar ve tam ara sürüm zinciri açık. Fazın ve ortak gereksinimlerin kapanışı root son inceleme/doğrulamasını bekler.
+Phase: 02 (Bütün partiler için dosyalar ve sürümlü kaynaklar) — HUMAN VERIFICATION PENDING
+Plan: 10/10 tamamlandı; teknik doğrulama 13/13, üç ortak ilke UAT bekliyor
+Status: Awaiting user verification — $gsd-verify-work 2
+Last activity: 2026-11-11 — Yerel güncel rapor ac4b8fdec02f4a9ebb666036ed251683, üretici15; dokuz dosya, kaynaklı kart/kronoloji ve sürüm geçmişleri hazır. Nihai değerlendirmede 13/13 teknik teslim doğrusu ve dört kanonik gereksinim karşılandı. Üç descriptor-less ortak ilke için kullanıcı kontrolü 02-UAT.md dosyasında bekler; kaynak başına kabul kapısı yoktur. Faz kapatılmadı veya ilerletilmedi.
 
-Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 10/10 plan; son faz doğrulaması bekleniyor
+Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 10/10 plan ve 13/13 teknik teslim doğrusu; UAT 0/3
 
 ## Performance Metrics
 
@@ -55,7 +55,7 @@ Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 10/10
 **Recent Trend:**
 
 - Last 5 plans: 02-06, 02-07, 02-08, 02-09, 02-10
-- Trend: Faz 1 tamamlandı; Faz 2 10/10 plan yürütümü tamamlandı. Dokuz dosyalı rapor ve sekiz makbuzun kapanış kontrolleri hazır; faz sonu root inceleme/doğrulaması beklenir. Kamu raporu 261111-epm sürümünde kalır.
+- Trend: Faz 1 tamamlandı; Faz 2 yürütümü 10/10 ve teknik teslimi 13/13. Güncel yerel üretici15 raporu hazır; üç ortak ilke UAT bekliyor. Kamu raporu 261111-epm sürümünde kalır.
 
 **Per-Plan Metrics:**
 
@@ -83,6 +83,8 @@ Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 10/10
 ### Decisions
 
 Kararların tamamı PROJECT.md Key Decisions tablosundadır.
+
+- [Güncel 2026-11-11]: Kaynak derleme politikasıyla dokuz dosya ac4b8fdec02f4a9ebb666036ed251683 yerel sürümünde; açık atıf, pasif arşiv, içerik önceliği ve tam teslimi bozmayan --refresh uygulanmıştır. Sol/xhigh nihai değerlendirmesi 13/13 teknik teslim doğrusu verdi; yalnız üç ortak ilke UAT bekler. Aşağıdaki ilerleme sayıları tarihsel karar anlarını gösterir.
 
 - Başlangıç ön listesi TBMM kayıtlarına dayalı dokuz partidir; CHP ve Cumhur İttifakı'nın mevcut/geçmiş ortakları dışarıdadır.
 - Doğrudan aktarım siyah ve tırnak içinde, kaynaklı yapay zekâ özeti koyu mavidir; görünür metin türü etiketi kullanılmaz, veri kökeni kayıtlarda korunur. Kaynakta olmayan olgu üretilmez.
@@ -119,6 +121,9 @@ None yet.
 
 ### Blockers/Concerns
 
+- [Faz 2 güncel]: Açık uygulama açığı yok. Kapanış için 02-UAT.md içindeki üç ortak ilke kullanıcı kontrolü bekler; dört ham tanı unclassified/unresolved kalır. Kaynaklar için tekil insan kabulü kullanım koşulu değildir.
+- [Faz 2 destek sınırı]: UTF-8 dışı kodlama yalnız HTTP başlığında kalıyorsa yeni yakalama açık hata verir; meta/BOM desteklenir. Eski baytlar korunur.
+
 - Faz 1 için açık uygulama engeli yok; 8/8 UAT toplu kullanıcı kabulüyle kapandı.
 - [2026-11-11 düzeltmesi]: Yeni Parti site/tüzük/program kullanım engelleri çözüldü; önceki girişimler tarihçede korunur. Gerçek ulusal kesin hesap ve Kocaeli hesap başlangıcı belirsizliği sürer; tüzükteki mali kurallar gerçekleşmiş harcama olarak sunulmaz.
 - [Phase 1 → Phase 2] COVERAGE.md içindeki 13 unclassified/unresolved ham uç satırı değiştirilmedi. Kullanıcı bu yöntem sınırlarıyla fazı kabul etti; bunlar yeni kaynak kanıtı veya otomatik sınıflandırma sonucu değildir.
@@ -146,6 +151,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-12T00:05:28.485849Z
-Stopped at: 02-10 tamamlandı; 10/10 plan, root faz sonu inceleme/regresyon/doğrulaması bekleniyor
-Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-10-SUMMARY.md
+Last session: 2026-11-12T01:33:29.768205Z
+Stopped at: Faz 2 teknik teslimi hazır; $gsd-verify-work 2 ile üç ortak ilke kontrolü bekleniyor
+Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-UAT.md

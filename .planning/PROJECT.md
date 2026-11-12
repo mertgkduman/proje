@@ -148,6 +148,10 @@ Bu çalışma parti yayınlarını, haberleri ve sosyal paylaşımları açık a
 
 Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve finansman/harcamaları görür. Yöntem ve geçmiş girişimler kapalı ayrıntılardadır. Özgün kaynak baytları korunur; HTML belgeler için yerel varlıklarla pasif arşiv görünümü eklenir. Alıntı siyah ve tırnak içinde, kaynaklı özet koyu mavidir. Politika sürümü 2, şema 5 ve renderer 13 önceki değişmez sürümleri değiştirmez.
 
+### Faz 2 yerel teslim durumu — 2026-11-11
+
+Onaylı dokuz partinin ortak beş başlıklı dosyaları, kaynaklı kimlik kartları/kronolojileri ve belge sürümleri [güncel yerel raporda](../data/releases/ac4b8fdec02f4a9ebb666036ed251683/index.html) hazırdır. Üretici15, şema5 ve kaynak politikası2 özgün kaynak baytlarını ve sekiz ayrı teslim makbuzunu korur; tamamlanmış sıradan yeni okuyucu sürümü --refresh ile üretilebilir. Son değerlendirme 13/13 teknik teslim doğrusu ve dört kanonik gereksinimi karşılanmış buldu. Üç ortak ilke için kullanıcı kontrolü 02-UAT.md dosyasında bekler; faz henüz kapatılmamıştır. Söylem–uygulama ve mali araştırmanın sonraki fazlara ait kısımları açıkça Henüz incelenmedi kalır. Herkese açık site önceki Yeni Parti düzeltmesini sunar; dokuz dosyalı bu sürüm yereldir.
+
 ## Constraints
 
 - **Tarafsızlık:** Bütün partiler aynı başlıklar ve doğrulama ölçütleriyle incelenir; kapsam kararı araştırma sonucu gibi sunulmaz.
@@ -186,7 +190,7 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 | Yeni kanıtla çözülen eksikleri tarihçede korumak | Aday/eksik geçişini ve kanıt değişimini izlemek | Faz 1 aday ledger ve çözüm kayıtlarıyla uygulandı |
 | Faz 1 UAT kabulünü toplu kullanıcı yanıtıyla kaydetmek | Kullanıcının açık onayıyla kapanış; yeni test veya kaynak olgusu üretmemek | 8/8 kabul, bildirilen sorun yok; ham 13 uç sınıflandırması ve kaynak eksikleri korunur |
 
-| 11 Kasım 2026 D-13–D-16 kaynak derleme düzeltmesi | Kullanıcının kaynakları doğrudan ve atıflı kullanma kararı | Parti/haber/sosyal derleme, içerik öncelikli rapor, pasif arşiv ve mevcut yayının düzeltmesi; Faz 2 2/10 kalır |
+| 11 Kasım 2026 D-13–D-16 kaynak derleme düzeltmesi | Kullanıcının kaynakları doğrudan ve atıflı kullanma kararı | Parti/haber/sosyal derleme, içerik öncelikli rapor ve pasif arşiv uygulandı; Faz 2 yürütümü 10/10, teknik teslimi 13/13; üç ortak ilke için UAT bekler |
 
 ## Evolution
 
@@ -206,4 +210,4 @@ Bu belge aşama geçişlerinde ve kilometre taşı sınırlarında güncellenir.
 4. Parti kapsamı, kaynaklar, kullanıcı geri bildirimi ve çıktılardaki güncel durumu Context bölümüne işle.
 
 ---
-*Last updated: 2026-11-10 after Phase 1 UAT acceptance and completion*
+*Last updated: 2026-11-11 after Phase 2 technical delivery; three user verification items pending*
