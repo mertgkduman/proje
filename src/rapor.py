@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 14
+RENDERER_VERSION = 15
 STYLE = Path(__file__).with_name('rapor_v14.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -431,7 +431,7 @@ def render_report(data):
 
     if scoped or methods or attempts:
         pieces.append('<details id="scope-method"><summary>Kapsam ve yöntem</summary>')
-        pieces.append('<p>Parti yayınları, haberler ve sosyal paylaşımlar yayıncıya/yazara atfedilerek derlenir. Sosyal paylaşımda hesap, tarih ve kalıcı adres korunur. Kaynakla metin karşılaştırması iddiayı hukuken doğrulama anlamına gelmez. Sicil kimliği kendi kaynağıyla tutarlı tutulur. Tarihi bilinmeyen yayın ve hesap dönemi uydurulmaz.</p>')
+        pieces.append('<p>Birincil kaynaklara, özellikle parti yayınları, resmî kayıtlar ve özgün belgelere öncelik verilir. İkincil kaynaklar da kullanılır; haber, sosyal paylaşım, akademik çalışma ve bağımsız raporlar yayıncıya ve varsa yazarına atfedilir. Sosyal paylaşımda hesap, tarih ve kalıcı adres korunur. Sicil kimliği kendi kaynağıyla tutarlı tutulur; bilinmeyen belge tarihi ve hesap dönemi açıkça belirtilir.</p>')
         for m in methods:
             cited = next((p['id'] for p in passages.values() if p['version_id'] == m['cutoff_capture_version_id']), None)
             if not cited:

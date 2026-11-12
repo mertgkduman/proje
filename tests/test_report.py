@@ -36,6 +36,19 @@ class ReaderText(HTMLParser):
 
 
 class ReportTest(unittest.TestCase):
+    def test_method_prioritizes_primary_sources_and_old_renderer_is_reproducible(self):
+        from rapor_v14 import render_report as old_render
+        root=Path(__file__).resolve().parents[1]
+        release=root/'data/releases/1d6b49b307f04a258c1a11d90978fe7c'
+        data=json.loads((release/'records.json').read_text())
+        self.assertEqual(old_render(data),(release/'index.html').read_text())
+        report=render_report(data)
+        self.assertIn('<details id="scope-method"><summary>Kapsam ve yöntem</summary>',report)
+        method=report.split('<details id="scope-method">',1)[1].split('</p>',1)[0]
+        self.assertIn('Birincil kaynaklara',method)
+        self.assertIn('öncelik verilir',method)
+        self.assertIn('İkincil kaynaklar da kullanılır',method)
+
     def test_mobile_navigation_hint_and_readable_touch_targets(self):
         from browser_probe import browser
         executable=browser()
