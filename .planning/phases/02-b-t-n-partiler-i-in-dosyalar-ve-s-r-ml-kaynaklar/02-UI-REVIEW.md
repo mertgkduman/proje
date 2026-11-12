@@ -73,3 +73,5 @@
 `dda76a8` ile üç öncelik uygulandı: mobil parti kaydırma ipucu, kaynak/bölüm bağlantılarında daha büyük hedefler ve daha okunaklı küçük metinler. Rapor başlığı “kaynaklı araştırma raporu” oldu. Tarihsel üretici 13 ve CSS11 değişmedi; yeni stil yalnız CSS14 içindedir.
 
 25 başarılı arşiv/rapor testinde gerçek Chromium mobil DOM kontrolü de yer alır. Güncel dokuz partili verinin 360 ve 1365 piksel görünümleri `/tmp/phase02-renderer14-visual/` altında üretildi; root iki görüntüyü de görsel olarak inceledi. Sayfa taşması yok; alıntılar siyah ve tırnak içinde, özetler koyu mavi, içerik önde ve yöntem ayrıntıları kapalı. Bu ek bir insan kaynak kabulü veya yeni bir puanlama değildir. Diğer kozmetik öneriler danışma niteliğinde kalır.
+
+Üretici15, aynı CSS14 ve görünümle yalnız kapalı kapsam/yöntem paragrafına birincil önceliği ile atıflı ikincil kullanım açıklamasını ekler; ana okuma görünümü değişmez. Yeni yerel rapor ac4b8fdec02f4a9ebb666036ed251683 olup ayrıntı başlangıçta kapalıdır.

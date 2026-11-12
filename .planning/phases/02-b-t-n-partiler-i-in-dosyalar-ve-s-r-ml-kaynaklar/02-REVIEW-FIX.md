@@ -11,6 +11,10 @@ status: partial
 
 # Faz 02: Kod İnceleme Düzeltme Raporu
 
+## SC3 / KAY-01 — Kaynak önceliği açıklaması
+
+Üretici 15'in kapalı yöntem bölümünde birincil kaynak önceliği ve atıflı ikincil kaynakların kullanımı açıklandı. Önceki üretici 14 `src/rapor_v14.py` içinde bayt eşitliğiyle korundu; CSS ve eski yayınlar değiştirilmedi. Kod commit'i `c2415da`, yeni yerel yayın commit'i `43542ca`, sürüm `ac4b8fdec02f4a9ebb666036ed251683`. İki odaklı tarihsel üretici/yöntem testi geçti; yeni yayın verileri ve teslim künyesi önceki yayınla aynı, uygulamanın yayın sırasındaki bütün zorunlu kontrolleri başarılı. Ayrıntılı komut ve kanıtlar `02-REFRESH.md` içindedir.
+
 ## CR-10 — Tamamlanmış fazın yerel raporu yenilenemiyordu
 
 **Durum:** Düzeltildi; mantık değişikliği insan doğrulaması gerektirir.
