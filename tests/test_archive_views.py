@@ -135,6 +135,16 @@ class ArchiveViews(unittest.TestCase):
             with self.assertRaises(ValueError):m.fetch_asset('http://example.org/image',{'example.org'})
             connect.assert_called_once_with(('93.184.216.34',80),timeout=15)
 
+    def test_void_embed_does_not_hide_following_content(self):
+        m=self.module()
+        raw=b'<html><body><p>before</p><embed src="x"><p>after</p></body></html>'
+        with tempfile.TemporaryDirectory() as tmp:
+            row=m.build_view(raw,'https://example.org/',Path(tmp),fetch_assets=False)
+            text=(Path(tmp)/row['index_path']).read_text()
+            self.assertIn('<p>after</p></body></html>',text)
+            self.assertNotIn('<embed',text)
+            self.assertTrue(m.validate_view(Path(tmp),row))
+
     def test_correct_canonical_charter_and_program_render_as_separate_documents(self):
         m=self.module()
         with tempfile.TemporaryDirectory() as tmp:

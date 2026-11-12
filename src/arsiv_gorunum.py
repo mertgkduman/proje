@@ -18,6 +18,7 @@ VIEW_TABLES={'archive_view':'version_id TEXT PRIMARY KEY REFERENCES document_ver
 SAFE_TAGS=set('html head body title header footer main nav aside section article div span p h1 h2 h3 h4 h5 h6 ul ol li dl dt dd a img picture source style link meta br hr b strong i em small sup sub blockquote pre code table thead tbody tfoot tr td th caption colgroup col figure figcaption details summary time noscript'.split())
 VOID=set('img source link meta br hr col'.split())
 DROP=set('script iframe frame frameset object embed svg math template canvas video audio'.split())
+DROP_VOID={'embed','frame'}
 ALLOWED_ATTRS=set('id class lang dir title alt width height role aria-label aria-labelledby aria-hidden aria-expanded colspan rowspan scope start value datetime open'.split())
 MAX_ASSETS=40
 MAX_ASSET=8*1024*1024
@@ -124,8 +125,9 @@ class PassiveHTML(HTMLParser):
 
     def handle_starttag(self,tag,attrs):
         if self.block:
-            if tag in DROP:self.block.append(tag)
+            if tag in DROP and tag not in DROP_VOID:self.block.append(tag)
             return
+        if tag in DROP_VOID:return
         if tag in DROP:self.block.append(tag); return
         if tag not in SAFE_TAGS:return
         values=dict(attrs)
