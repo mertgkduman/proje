@@ -145,6 +145,34 @@ class ArchiveViews(unittest.TestCase):
             self.assertNotIn('<embed',text)
             self.assertTrue(m.validate_view(Path(tmp),row))
 
+    def test_declared_charsets_and_bom_preserve_turkish_text_and_original(self):
+        m=self.module()
+        body='Türkiye İşçi Partisi'
+        samples=[(('<meta charset="windows-1254"><p>'+body+'</p>').encode('cp1254'),None),
+                 (('<p>'+body+'</p>').encode('cp1254'),'windows-1254'),
+                 (('<p>'+body+'</p>').encode('utf-8-sig'),'windows-1254'),
+                 (('<p>'+body+'</p>').encode('utf-8'),None)]
+        for raw,charset in samples:
+            with self.subTest(charset=charset,raw=raw[:5]), tempfile.TemporaryDirectory() as tmp:
+                row=m.build_view(raw,'https://example.org/',Path(tmp),fetch_assets=False,http_charset=charset)
+                self.assertIn(body,(Path(tmp)/row['index_path']).read_text())
+                self.assertEqual(row['source_sha256'],hashlib.sha256(raw).hexdigest())
+        with self.assertRaisesRegex(ValueError,'karakter kodlaması'):
+            m.decode_html(b'<p>\xff</p>')
+
+    def test_capture_exposes_http_charset_and_keeps_original_bytes(self):
+        raw='<p>Türkiye İşçi Partisi</p>'.encode('cp1254')
+        response=io.BytesIO(raw)
+        response.headers=Message()
+        response.headers['Content-Type']='text/html; charset=windows-1254'
+        response.geturl=lambda:'https://example.org/document'
+        with tempfile.TemporaryDirectory() as tmp, patch('arsiv.urllib.request.urlopen',return_value=response):
+            capture=arsiv.capture_source('https://example.org/document','html',Path(tmp))
+            self.assertEqual(capture['http_charset'],'windows-1254')
+            self.assertEqual(Path(capture['original_path']).read_bytes(),raw)
+            view=self.module().build_view(raw,capture['final_url'],Path(tmp),fetch_assets=False,http_charset=capture['http_charset'])
+            self.assertIn('Türkiye İşçi Partisi',(Path(tmp)/view['index_path']).read_text())
+
     def test_correct_canonical_charter_and_program_render_as_separate_documents(self):
         m=self.module()
         with tempfile.TemporaryDirectory() as tmp:

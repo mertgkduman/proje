@@ -221,6 +221,7 @@ def capture_source(url, kind, out=None):
         final = safe_url(response.geturl())
         content = response.read(MAX_SOURCE + 1)
         mime = response.headers.get_content_type()
+        charset = response.headers.get_content_charset()
     if len(content) > MAX_SOURCE:
         raise ValueError('Kaynak boyut sınırını aşıyor')
     if not content or (kind == 'pdf' and not content.startswith(b'%PDF-')):
@@ -239,7 +240,9 @@ def capture_source(url, kind, out=None):
     if not original.exists(): original.write_bytes(content)
     if not readable.exists(): readable.write_bytes(derivative)
     now = dt.datetime.now(dt.timezone.utc).isoformat()
-    return dict(original_url=url, final_url=final, accessed_at=now, verified_at=now, mime=mime, sha256=digest, original_path=str(original.relative_to(DATA)) if original.is_relative_to(DATA) else str(original), readable_path=str(readable.relative_to(DATA)) if readable.is_relative_to(DATA) else str(readable))
+    result = dict(original_url=url, final_url=final, accessed_at=now, verified_at=now, mime=mime, sha256=digest, original_path=str(original.relative_to(DATA)) if original.is_relative_to(DATA) else str(original), readable_path=str(readable.relative_to(DATA)) if readable.is_relative_to(DATA) else str(readable))
+    if charset: result['http_charset'] = charset
+    return result
 
 
 def connect(path):

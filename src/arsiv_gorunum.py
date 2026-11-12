@@ -3,6 +3,7 @@ import hashlib
 import html
 import http.client
 import ipaddress
+import codecs
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -180,19 +181,39 @@ class PassiveHTML(HTMLParser):
         else:self.parts.append(html.escape(data))
 
 
-def build_view(content,url,data_root,fetch_assets=True,local_links=None):
+def decode_html(content, http_charset=None):
+    """Decode without replacement; BOM, HTTP and HTML declarations take precedence."""
+    if content.startswith((codecs.BOM_UTF32_LE,codecs.BOM_UTF32_BE)):
+        encoding='utf-32'
+    elif content.startswith((codecs.BOM_UTF16_LE,codecs.BOM_UTF16_BE)):
+        encoding='utf-16'
+    elif content.startswith(codecs.BOM_UTF8):
+        encoding='utf-8-sig'
+    elif http_charset:
+        encoding=http_charset
+    else:
+        match=re.search(br'<meta\b[^>]*\bcharset\s*=\s*[\x22\x27]?\s*([a-zA-Z0-9._-]+)',content[:4096],re.I)
+        encoding=match.group(1).decode('ascii') if match else 'utf-8'
+    try:
+        return content.decode(encoding,errors='strict')
+    except (LookupError,UnicodeError) as exc:
+        raise ValueError('HTML karakter kodlaması çözümlenemedi: '+str(encoding)) from exc
+
+
+def build_view(content,url,data_root,fetch_assets=True,local_links=None,http_charset=None):
     from arsiv import safe_url
     safe_url(url)
     resources=Resources(url,fetch_assets)
+    decoded=decode_html(content,http_charset)
     # Logos and document images must not lose the shared asset budget to
     # stylesheet font variants before the body is parsed.
     class Images(HTMLParser):
         def handle_starttag(self,tag,attrs):
             if tag=='img' and (src:=dict(attrs).get('src')):
                 resources.asset(src,url)
-    images=Images();images.feed(content.decode('utf-8',errors='replace'));images.close()
+    images=Images();images.feed(decoded);images.close()
     parser=PassiveHTML(resources,local_links or {})
-    parser.feed(content.decode('utf-8',errors='replace'));parser.close()
+    parser.feed(decoded);parser.close()
     output='<!doctype html>'+''.join(parser.parts)
     # The derivative is always UTF-8, including legacy http-equiv sources.
     # Put its encoding before long titles/styles so browser sniffing cannot
