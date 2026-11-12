@@ -41,6 +41,30 @@ def add_tip_tracer(work):
 
 
 class DossierTracer(unittest.TestCase):
+    def test_refresh_requires_unchanged_completed_delivery(self):
+        import copy
+        delivery={'party_id':'demokrat','stage':'complete','completed_prefix':list(dosyalar.DELIVERY_ORDER)}
+        base={'phase2_delivery':delivery}
+        candidate={'phase2_delivery':copy.deepcopy(delivery),'phase2_refresh':True}
+        self.assertIsNone(dosyalar.validate_delivery_prefix(base,candidate))
+        for replacement in (
+            dict(delivery,completed_prefix=delivery['completed_prefix'][:-1]),
+            dict(delivery,completed_prefix=list(reversed(delivery['completed_prefix']))),
+            dict(delivery,completed_prefix=delivery['completed_prefix']+['extra']),
+            dict(delivery,party_id='saadet'),dict(delivery,stage='tracer'),
+        ):
+            with self.subTest(delivery=replacement),self.assertRaises(ValueError):
+                dosyalar.validate_delivery_prefix(base,{'phase2_delivery':replacement,'phase2_refresh':True})
+        with self.assertRaises(ValueError):dosyalar.validate_delivery_prefix({'phase2_delivery':dict(delivery,completed_prefix=delivery['completed_prefix'][:-1])},candidate)
+        with self.assertRaises(ValueError):dosyalar.validate_delivery_prefix(base,{'phase2_delivery':delivery})
+        with self.assertRaises(ValueError):dosyalar.validate_delivery_prefix(base,{'phase2_delivery':delivery,'phase2_refresh':False})
+        with self.assertRaises(ValueError):dosyalar.validate_delivery_prefix({}, {'phase2_refresh':True})
+
+    def test_publish_refresh_and_party_are_exclusive(self):
+        result=subprocess.run([sys.executable,'src/arsiv.py','publish','--workspace','unused','--party','tip','--refresh'],capture_output=True,text=True)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('not allowed with argument',result.stderr)
+
     def test_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering(self):
         with tempfile.TemporaryDirectory() as tmp:
             old=arsiv.DATA

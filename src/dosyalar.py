@@ -75,14 +75,21 @@ def foundation_for_party(db, party_id):
 def validate_delivery_prefix(base_manifest, candidate_manifest):
     old = (base_manifest or {}).get('phase2_delivery', {}).get('completed_prefix', [])
     delivery = candidate_manifest.get('phase2_delivery')
+    refresh = candidate_manifest.get('phase2_refresh', False)
+    if 'phase2_refresh' in candidate_manifest and refresh is not True:
+        raise ValueError('Yenileme işareti geçersiz')
     if delivery is None:
-        if old or (base_manifest or {}).get('phase2_delivery'):
+        if refresh or old or (base_manifest or {}).get('phase2_delivery'):
             raise ValueError('Faz 2 teslim sözleşmesi kaldırılamaz')
         return
     new = delivery.get('completed_prefix')
     party, stage = delivery.get('party_id'), delivery.get('stage')
     if not isinstance(old, list) or not isinstance(new, list) or old != list(DELIVERY_ORDER[:len(old)]) or new != list(DELIVERY_ORDER[:len(new)]):
         raise ValueError('Teslim sırası geçersiz')
+    if refresh:
+        if old != list(DELIVERY_ORDER) or delivery != (base_manifest or {}).get('phase2_delivery') or party != DELIVERY_ORDER[-1] or stage != 'complete':
+            raise ValueError('Yenileme tamamlanmış teslimi değiştiremez')
+        return
     if stage == 'tracer':
         if new != old or len(old) >= len(DELIVERY_ORDER) or party != DELIVERY_ORDER[len(old)]:
             raise ValueError('Tracer tamamlanmamış sıradaki parti olmalı')

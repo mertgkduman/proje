@@ -897,6 +897,8 @@ def audit_release(release='current', _seen=None):
     _seen.add(release)
     folder = safe_path(DATA / 'releases', release)
     manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+    if 'phase2_refresh' in manifest and (manifest['phase2_refresh'] is not True or not manifest.get('phase2_delivery')):
+        raise ValueError('Yenileme manifesti geçersiz')
     if manifest['release_id'] != release or set(manifest['files']) != {'records.sqlite3', 'records.json', 'index.html'}:
         raise ValueError('Geçersiz manifest')
     for name, digest in manifest['files'].items():
@@ -1013,7 +1015,7 @@ def assert_lock(work):
     return metadata
 
 
-def publish_release(work, fail_at=None, party=None, stage='complete'):
+def publish_release(work, fail_at=None, party=None, stage='complete', refresh=False):
     work = Path(work)
     metadata = assert_lock(work)
     release = uuid.uuid4().hex
@@ -1024,8 +1026,12 @@ def publish_release(work, fail_at=None, party=None, stage='complete'):
             raise ValueError('Çalışma alanının taban sürümü eskidi')
         base_manifest = json.loads((DATA / 'releases' / metadata['base'] / 'manifest.json').read_text(encoding='utf-8')) if metadata['base'] else {}
         base_delivery = base_manifest.get('phase2_delivery')
-        if base_delivery and not party: raise ValueError('Faz 2 tabanında parti teslimi zorunlu')
-        if party:
+        if refresh and (party is not None or stage != 'complete'): raise ValueError('Yenileme parti veya tracer ile birlikte kullanılamaz')
+        if base_delivery and not party and not refresh: raise ValueError('Faz 2 tabanında parti teslimi zorunlu')
+        if refresh:
+            phase_delivery = dict(base_delivery) if base_delivery else None
+            validate_delivery_prefix(base_manifest, {'phase2_delivery':phase_delivery,'phase2_refresh':True})
+        elif party:
             old = base_delivery['completed_prefix'] if base_delivery else []
             completed = old + [party] if stage == 'complete' else old[:]
             phase_delivery = dict(party_id=party, stage=stage, completed_prefix=completed)
@@ -1055,13 +1061,14 @@ def publish_release(work, fail_at=None, party=None, stage='complete'):
             validate_phase_one_html(phase_data, (staging / 'index.html').read_text(encoding='utf-8'))
         if phase_delivery:
             from dosyalar import validate_phase_two_workspace
-            validate_phase_two_workspace(staging, party, stage)
+            validate_phase_two_workspace(staging, None if refresh else party, stage)
             for completed_party in phase_delivery['completed_prefix']:
                 validate_dossier(payload, completed_party, 'complete')
         manifest = {'release_id': release, 'renderer_version': RENDERER_VERSION, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
         if payload['schema_version']==5:manifest.update(data_schema_version=5,dossier_validation_version=2,source_policy_version=2,base_release=metadata['base'])
         if phase_delivery:
             manifest.update(data_schema_version=5, dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=metadata['base'])
+        if refresh: manifest['phase2_refresh'] = True
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
         (DATA / 'releases').mkdir(exist_ok=True)
@@ -1094,7 +1101,7 @@ def main():
     r = sub.add_parser('record'); r.add_argument('--workspace', required=True); r.add_argument('--kind', required=True); r.add_argument('--input', default='-')
     rc = sub.add_parser('resolve-candidate'); rc.add_argument('--workspace', required=True); rc.add_argument('--candidate', required=True); rc.add_argument('--match', required=True); rc.add_argument('--input', default='-')
     ch = sub.add_parser('chain'); ch.add_argument('--workspace', required=True); ch.add_argument('--party', required=True); ch.add_argument('--topic', required=True)
-    pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True); pub.add_argument('--party'); pub.add_argument('--stage', choices=('tracer','complete'), default='complete')
+    pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True); group=pub.add_mutually_exclusive_group(); group.add_argument('--party'); group.add_argument('--refresh', action='store_true'); pub.add_argument('--stage', choices=('tracer','complete'), default='complete')
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
     a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','complete'), default='complete')
     dl = sub.add_parser('dossier-load'); dl.add_argument('--workspace', required=True); dl.add_argument('--input', required=True)
@@ -1118,7 +1125,7 @@ def main():
         try:
             print(json.dumps([dict(x) for x in db.execute('SELECT * FROM lead WHERE party_id=? AND topic_id=? ORDER BY rowid', (args.party,args.topic))], ensure_ascii=False, indent=2))
         finally: db.close()
-    elif args.command == 'publish': print(publish_release(args.workspace, party=args.party, stage=args.stage))
+    elif args.command == 'publish': print(publish_release(args.workspace, party=args.party, stage=args.stage, refresh=args.refresh))
     elif args.command == 'dossier-load':
         from dosyalar import load_dossier
         load_dossier(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8')))
