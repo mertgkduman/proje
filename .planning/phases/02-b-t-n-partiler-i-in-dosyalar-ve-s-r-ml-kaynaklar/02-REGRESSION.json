@@ -1,0 +1,35 @@
+{
+  "status": "passed_after_targeted_fix",
+  "full_run": {
+    "command": "node /hpc/home/mg551/.codex/gsd-core/bin/gsd-tools.cjs run-with-timeout 1800 -- python3 tests/run.py",
+    "exit_code": 1,
+    "tests": 91,
+    "passed": 90,
+    "failed": 1,
+    "elapsed_seconds": 1583.953,
+    "log": "02-REGRESSION.log",
+    "log_sha256": "de2e8e38b1ebc5f4fa4229b9dfdab5e807e3b0067bb23c9c460c4cca433ffc58",
+    "failure": "test_dossiers.DossierTracer.test_real_tip_publish_audit_html_and_receipt_in_isolated_data: expected13 actual14"
+  },
+  "resolution": {
+    "commit": "8b85586",
+    "targeted_rerun": "PYTHONPATH=src:tests python -m unittest -v test_dossiers.DossierTracer.test_real_tip_publish_audit_html_and_receipt_in_isolated_data",
+    "exit_code": 0,
+    "tests": 1,
+    "elapsed_seconds": 13.225
+  },
+  "changed_path_checks": [
+    {
+      "command": "PYTHONPATH=src:tests python -m unittest test_archive_views test_report",
+      "exit_code": 0,
+      "tests": 25
+    },
+    {
+      "command": "two named test_source_policy tests listed in02-REVIEW-FIX.md",
+      "exit_code": 0,
+      "tests": 2,
+      "elapsed_seconds": 8.191
+    }
+  ],
+  "note": "No complete all-green full rerun claimed. Successful suites were reused; the sole failing test and changed paths passed focused reruns. HTTP-only charset remains an explicit pre-existing support boundary."
+}

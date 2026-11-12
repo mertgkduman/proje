@@ -1,0 +1,106 @@
+test_comparison_needs_evidence_and_preserves_multiple_sources (test_acceptance.PhaseOneAcceptance.test_comparison_needs_evidence_and_preserves_multiple_sources) ... ok
+test_current_snapshot_passes (test_acceptance.PhaseOneAcceptance.test_current_snapshot_passes) ... ok
+test_missing_pilot_heading_is_rejected (test_acceptance.PhaseOneAcceptance.test_missing_pilot_heading_is_rejected) ... ok
+test_server_exposes_only_published_paths (test_acceptance.PhaseOneAcceptance.test_server_exposes_only_published_paths) ... ok
+test_allowed_redirect_host_re_resolves_and_rejects_private_ip (test_archive_views.ArchiveViews.test_allowed_redirect_host_re_resolves_and_rejects_private_ip) ... ok
+test_asset_dns_private_and_mixed_answers_are_rejected (test_archive_views.ArchiveViews.test_asset_dns_private_and_mixed_answers_are_rejected) ... ok
+test_asset_redirect_rejects_private_target_before_connection (test_archive_views.ArchiveViews.test_asset_redirect_rejects_private_target_before_connection) ... ok
+test_capture_exposes_http_charset_and_keeps_original_bytes (test_archive_views.ArchiveViews.test_capture_exposes_http_charset_and_keeps_original_bytes) ... ok
+test_correct_canonical_charter_and_program_render_as_separate_documents (test_archive_views.ArchiveViews.test_correct_canonical_charter_and_program_render_as_separate_documents) ... ok
+test_declared_charsets_and_bom_preserve_turkish_text_and_original (test_archive_views.ArchiveViews.test_declared_charsets_and_bom_preserve_turkish_text_and_original) ... ok
+test_known_static_css_cdn_is_localized_while_script_mime_is_rejected (test_archive_views.ArchiveViews.test_known_static_css_cdn_is_localized_while_script_mime_is_rejected) ... ok
+test_passive_document_retains_layout_and_removes_active_requests (test_archive_views.ArchiveViews.test_passive_document_retains_layout_and_removes_active_requests) ... ok
+test_real_input_links_original_hashes_and_valid_local_assets (test_archive_views.ArchiveViews.test_real_input_links_original_hashes_and_valid_local_assets) ... ok
+test_static_panels_stay_readable_and_images_precede_font_budget (test_archive_views.ArchiveViews.test_static_panels_stay_readable_and_images_precede_font_budget) ... ok
+test_utf8_is_declared_early_for_legacy_meta_and_headless_fragments (test_archive_views.ArchiveViews.test_utf8_is_declared_early_for_legacy_meta_and_headless_fragments) ... ok
+test_view_identity_covers_source_url_and_limitations (test_archive_views.ArchiveViews.test_view_identity_covers_source_url_and_limitations) ... ok
+test_void_embed_does_not_hide_following_content (test_archive_views.ArchiveViews.test_void_embed_does_not_hide_following_content) ... ok
+test_pending_lead_blocks_closure (test_chain.ChainContract.test_pending_lead_blocks_closure) ... ok
+test_cutoff_is_fixed_to_verified_tbmm_capture (test_dates.DateContract.test_cutoff_is_fixed_to_verified_tbmm_capture) ... ok
+test_identical_bytes_keep_document_ownership (test_documents.DocumentContract.test_identical_bytes_keep_document_ownership) ... ok
+test_missing_pdf_library_has_actionable_error (test_documents.DocumentContract.test_missing_pdf_library_has_actionable_error) ... ok
+test_pilot_document_headings_have_attempt_backed_results (test_documents.DocumentContract.test_pilot_document_headings_have_attempt_backed_results) ... ok
+test_wrong_party_evidence_is_rejected (test_documents.DocumentContract.test_wrong_party_evidence_is_rejected) ... ok
+test_changed_bytes_with_same_size_and_mtime_are_rejected (test_documents.PDFReuseTest.test_changed_bytes_with_same_size_and_mtime_are_rejected) ... ok
+test_failed_library_load_is_retried (test_documents.PDFReuseTest.test_failed_library_load_is_retried) ... ok
+test_failed_parse_is_retried_after_file_repair (test_documents.PDFReuseTest.test_failed_parse_is_retried_after_file_repair) ... ok
+test_missing_file_keeps_pdf_error (test_documents.PDFReuseTest.test_missing_file_keeps_pdf_error) ... ok
+test_same_page_reuses_real_libraries_and_parser (test_documents.PDFReuseTest.test_same_page_reuses_real_libraries_and_parser) ... ok
+test_warm_cache_checks_dependencies_before_path_access (test_documents.PDFReuseTest.test_warm_cache_checks_dependencies_before_path_access) ... ok
+test_corruption_after_successful_audit_is_rejected_independently (test_documents.WarmAuditTest.test_corruption_after_successful_audit_is_rejected_independently) ... ok
+test_archived_tip_registry_foundation_has_party_contract (test_dossiers.DossierTracer.test_archived_tip_registry_foundation_has_party_contract) ... ok
+test_complete_collection_keeps_later_research_explicitly_unexamined (test_dossiers.DossierTracer.test_complete_collection_keeps_later_research_explicitly_unexamined) ... ok
+test_each_finding_keeps_its_own_version_in_history (test_dossiers.DossierTracer.test_each_finding_keeps_its_own_version_in_history) ... ok
+test_event_dates_respect_party_and_foundation (test_dossiers.DossierTracer.test_event_dates_respect_party_and_foundation) ... ok
+test_migration_rollback_and_invalid_records_leave_pointer (test_dossiers.DossierTracer.test_migration_rollback_and_invalid_records_leave_pointer) ... ok
+test_official_site_rejects_unsupported_domain (test_dossiers.DossierTracer.test_official_site_rejects_unsupported_domain) ... ok
+test_real_tip_publish_audit_html_and_receipt_in_isolated_data (test_dossiers.DossierTracer.test_real_tip_publish_audit_html_and_receipt_in_isolated_data) ... FAIL
+test_registry_confirmation_and_version_cycle_are_checked (test_dossiers.DossierTracer.test_registry_confirmation_and_version_cycle_are_checked) ... ok
+test_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering (test_dossiers.DossierTracer.test_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering) ... ok
+test_tip_report_exposes_identity_and_grouped_sources (test_dossiers.DossierTracer.test_tip_report_exposes_identity_and_grouped_sources) ... ok
+test_current_pilot_has_researched_finance (test_finance.FinanceContract.test_current_pilot_has_researched_finance) ... ok
+test_explicit_number_format_controls_source_transcription (test_finance.FinanceContract.test_explicit_number_format_controls_source_transcription) ... ok
+test_identity_period_and_required_metadata (test_finance.FinanceContract.test_identity_period_and_required_metadata) ... ok
+test_null_and_documented_zero_are_distinct (test_finance.FinanceContract.test_null_and_documented_zero_are_distinct) ... ok
+test_actor_authorization_and_individual_are_distinct (test_matches.MatchContract.test_actor_authorization_and_individual_are_distinct) ... ok
+test_all_eligible_ids_reach_db_json_and_html (test_matches.MatchContract.test_all_eligible_ids_reach_db_json_and_html) ... ok
+test_candidate_resolution_preserves_history_and_rejects_wrong_evidence (test_matches.MatchContract.test_candidate_resolution_preserves_history_and_rejects_wrong_evidence) ... ok
+test_invalid_input_is_rejected (test_matches.MatchContract.test_invalid_input_is_rejected) ... ok
+test_match_respects_each_findings_provenance (test_matches.MatchContract.test_match_respects_each_findings_provenance) ... ok
+test_separate_reviewed_evidence_event_party_and_topic (test_matches.MatchContract.test_separate_reviewed_evidence_event_party_and_topic) ... ok
+test_current_release_preserves_every_eligible_id (test_matches.PublishedMatches.test_current_release_preserves_every_eligible_id) ... ok
+test_access_failure_requires_identified_source (test_missing.MissingContract.test_access_failure_requires_identified_source) ... ok
+test_statuses_bind_matching_attempt_and_scope (test_missing.MissingContract.test_statuses_bind_matching_attempt_and_scope) ... ok
+test_detects_corrupt_readable_archive (test_publication.PublicationTest.test_detects_corrupt_readable_archive) ... ok
+test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) ... ok
+test_foreign_key_corruption_rejected (test_publication.PublicationTest.test_foreign_key_corruption_rejected) ... ok
+test_lock_excludes_second_writer_and_old_workspace (test_publication.PublicationTest.test_lock_excludes_second_writer_and_old_workspace) ... ok
+test_original_and_manifest_corruption_rejected (test_publication.PublicationTest.test_original_and_manifest_corruption_rejected) ... ok
+test_paths_cannot_escape_root_through_traversal_or_symlink (test_publication.PublicationTest.test_paths_cannot_escape_root_through_traversal_or_symlink) ... ok
+test_phase_acceptance_precedes_pointer_change (test_publication.PublicationTest.test_phase_acceptance_precedes_pointer_change) ... ok
+test_rejects_dangerous_urls (test_publication.PublicationTest.test_rejects_dangerous_urls) ... ok
+test_removing_method_cannot_bypass_phase_acceptance (test_publication.PublicationTest.test_removing_method_cannot_bypass_phase_acceptance) ... ok
+test_report_escapes_untrusted_text_and_rejects_script_url (test_publication.PublicationTest.test_report_escapes_untrusted_text_and_rejects_script_url) ... ok
+test_stale_base_rejected (test_publication.PublicationTest.test_stale_base_rejected) ... ok
+test_attribution_is_never_copied_from_same_hash_sibling (test_report.ReportTest.test_attribution_is_never_copied_from_same_hash_sibling) ... ok
+test_pdf_quote_entities_are_literal_and_html_entities_decode (test_report.ReportTest.test_pdf_quote_entities_are_literal_and_html_entities_decode) ... ok
+test_reader_shows_party_content_and_faithful_archive_links (test_report.ReportTest.test_reader_shows_party_content_and_faithful_archive_links) ... ok
+test_real_browser_reads_both_passive_archives (test_report.ReportTest.test_real_browser_reads_both_passive_archives) ... ok
+test_rejects_unsafe_archive_path_and_escapes_finding (test_report.ReportTest.test_rejects_unsafe_archive_path_and_escapes_finding) ... ok
+test_renderer_13_reproduces_existing_release (test_report.ReportTest.test_renderer_13_reproduces_existing_release) ... ok
+test_scoped_parties_and_summary_are_navigable (test_report.ReportTest.test_scoped_parties_and_summary_are_navigable) ... 127.0.0.1 - - [11/Nov/2026 19:31:51] "GET /objects/404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f/readable.html HTTP/1.1" 200 -
+127.0.0.1 - - [11/Nov/2026 19:31:52] "GET /releases/tmp0pi9br8j/index.html HTTP/1.1" 200 -
+ok
+test_approved_list_is_separate_from_observations (test_scope.ScopeContract.test_approved_list_is_separate_from_observations) ... ok
+test_canonical_identity_and_parliamentary_identifier_history (test_scope.ScopeContract.test_canonical_identity_and_parliamentary_identifier_history) ... ok
+test_identity_is_bound_to_registry_key_and_source (test_scope.ScopeContract.test_identity_is_bound_to_registry_key_and_source) ... ok
+test_scope_writer_exists (test_scope.ScopeContract.test_scope_writer_exists) ... ok
+test_compressed_pdf_publisher_text_does_not_need_host_html (test_source_policy.SourcePolicy.test_compressed_pdf_publisher_text_does_not_need_host_html) ... ok
+test_historical_renderer_and_policy_still_audit (test_source_policy.SourcePolicy.test_historical_renderer_and_policy_still_audit) ... ok
+test_journalism_allows_unknown_author_date_but_requires_attributed_claim (test_source_policy.SourcePolicy.test_journalism_allows_unknown_author_date_but_requires_attributed_claim) ... ok
+test_missing_attribution_and_cross_party_evidence_fail_export (test_source_policy.SourcePolicy.test_missing_attribution_and_cross_party_evidence_fail_export) ... ok
+test_official_site_needs_party_publication_evidence_for_same_host (test_source_policy.SourcePolicy.test_official_site_needs_party_publication_evidence_for_same_host) ... ok
+test_party_charter_passes_real_publication_without_registry_domain_authority (test_source_policy.SourcePolicy.test_party_charter_passes_real_publication_without_registry_domain_authority) ... ok
+test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name (test_source_policy.SourcePolicy.test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name) ... ok
+test_policy_cannot_be_removed_or_exemptions_widened (test_source_policy.SourcePolicy.test_policy_cannot_be_removed_or_exemptions_widened) ... ok
+test_removing_policy_cannot_bypass_real_publish (test_source_policy.SourcePolicy.test_removing_policy_cannot_bypass_real_publish) ... ok
+test_short_name_html_uses_same_party_host_and_full_name_anchor (test_source_policy.SourcePolicy.test_short_name_html_uses_same_party_host_and_full_name_anchor) ... ok
+test_social_requires_account_date_and_permalink_and_claim_stays_claim (test_source_policy.SourcePolicy.test_social_requires_account_date_and_permalink_and_claim_stays_claim) ... ok
+test_turkish_publisher_case_preserves_dotted_and_dotless_i (test_source_policy.SourcePolicy.test_turkish_publisher_case_preserves_dotted_and_dotless_i) ... ok
+test_real_dictionary_contains_a_sourced_verified_topic (test_topics.TopicContract.test_real_dictionary_contains_a_sourced_verified_topic) ... ok
+test_unrelated_party_cannot_authorize_charter (test_topics.TopicContract.test_unrelated_party_cannot_authorize_charter) ... ok
+test_verified_topic_without_basis_is_rejected_on_export (test_topics.TopicContract.test_verified_topic_without_basis_is_rejected_on_export) ... ok
+test_real_evidence_chain (test_tracer.TracerTest.test_real_evidence_chain) ... ok
+
+======================================================================
+FAIL: test_real_tip_publish_audit_html_and_receipt_in_isolated_data (test_dossiers.DossierTracer.test_real_tip_publish_audit_html_and_receipt_in_isolated_data)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_dossiers.py", line 170, in test_real_tip_publish_audit_html_and_receipt_in_isolated_data
+    self.assertEqual(manifest['renderer_version'], 13)
+AssertionError: 14 != 13
+
+----------------------------------------------------------------------
+Ran 91 tests in 1583.953s
+
+FAILED (failures=1)

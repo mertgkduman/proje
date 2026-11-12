@@ -67,3 +67,9 @@
 - `data/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html` ve mevcut `/tmp/proje-epm-browser-public/report-1365.png`, `report-360.png` görüntüleri.
 
 `components.json` yok; üçüncü taraf bileşen kayıt defteri denetimi uygulanmadı. Bu inceleme kaynakların gerçekliğine insan onayı vermez.
+
+## Uygulanan iyileştirmeler — üretici 14
+
+`dda76a8` ile üç öncelik uygulandı: mobil parti kaydırma ipucu, kaynak/bölüm bağlantılarında daha büyük hedefler ve daha okunaklı küçük metinler. Rapor başlığı “kaynaklı araştırma raporu” oldu. Tarihsel üretici 13 ve CSS11 değişmedi; yeni stil yalnız CSS14 içindedir.
+
+25 başarılı arşiv/rapor testinde gerçek Chromium mobil DOM kontrolü de yer alır. Güncel dokuz partili verinin 360 ve 1365 piksel görünümleri `/tmp/phase02-renderer14-visual/` altında üretildi; root iki görüntüyü de görsel olarak inceledi. Sayfa taşması yok; alıntılar siyah ve tırnak içinde, özetler koyu mavi, içerik önde ve yöntem ayrıntıları kapalı. Bu ek bir insan kaynak kabulü veya yeni bir puanlama değildir. Diğer kozmetik öneriler danışma niteliğinde kalır.

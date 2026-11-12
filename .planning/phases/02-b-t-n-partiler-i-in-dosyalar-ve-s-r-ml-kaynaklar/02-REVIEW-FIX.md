@@ -1,15 +1,58 @@
 ---
 phase: 02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar
-fixed_at: 2026-11-12T00:08:12Z
+fixed_at: 2026-11-12T00:39:46Z
 review_path: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-REVIEW.md
-iteration: 1
-findings_in_scope: 6
-fixed: 6
-skipped: 0
-status: all_fixed
+iteration: 2
+findings_in_scope: 3
+fixed: 2
+skipped: 1
+status: partial
 ---
 
 # Faz 02: Kod İnceleme Düzeltme Raporu
+
+## İkinci inceleme — 2026-11-12
+
+**Durum:** CR-07 ve CR-08 düzeltildi; CR-09 meta/BOM bildirimli HTML için düzeltildi, yalnız HTTP başlığında kalan kodlama sınırı nedeniyle kısmen açık. Mantık değişiklikleri için insan doğrulaması gereklidir.
+
+### CR-07 — Yazar atfı sürüm geçmişinde kayboluyordu
+
+**Commit:** `4610441`  
+**Dosyalar:** `src/rapor.py`, `tests/test_report.py`  
+Her sürüm geçmişinde kendi kayıtlı yazarı ve atıf dayanağı, o sürümün etiketi altında gösterilir. Yayıncı, tarih veya gerekçe başka sürümün künyesine taşınmaz. Üç gerçek yazar kaydı ve farklı künyeli kardeş sürümler test edildi.
+
+### CR-08 — Kimlik notunda entity çözümlemesi kaynak türünü göz ardı ediyordu
+
+**Commit:** `acef9a2`  
+**Dosyalar:** `src/rapor.py`, `tests/test_report.py`  
+Kimlik notunun kendi ve ilişkili pasajları kaynak türünü belirlemek için kullanılır; HTML entity'leri çözülür, PDF'deki literal dizeler korunur. Her iki köken test edildi.
+
+### CR-09 — HTML kodlama zinciri kısmen düzeltildi
+
+**Commit:** `d56106c`  
+**Dosyalar:** `src/arsiv.py`, `src/kaynaklar.py`, `tests/test_archive_views.py`  
+Meta/BOM bildirimli HTML, yakalama, okunabilir türev, kaynak atfı, kimlik ve pasaj/export kontrollerinde ortak kodlama çözümlemesini kullanır. Eski replacement tabanlı türevler de doğrulanır ve yerinde değiştirilmez; yeni çözülemeyen yakalamalar açık hatayla durur. Windows-1254 meta bildirimli örnek yakalamadan pasaj/export ve yayıncı atfına kadar test edildi.
+
+**Kalan sınır:** HTTP başlığında bulunan ancak HTML baytlarında meta/BOM ile bulunmayan UTF-8 dışı charset mevcut sürümlü kayıt şemasında kalıcı tutulamaz. Böyle bir yeni yakalama açık hatayla reddedilir; yeniden üretilebilir destek için sürümlü metadata ve geçmişle uyumlu migration gerekir. Bu nedenle CR-09 bütünüyle kapanmış sayılmaz. HTTP bilgisi ile bayttan çözümlenen içerik aynıysa yakalama kabul edilir.
+
+### Mobil arayüz ve regresyon testi
+
+**Commit:** `dda76a8`  
+Yalnız üretici 14 yeni `src/rapor_v14.css` dosyasını kullanır: mobil yatay gezinme ipucu, daha büyük kaynak/bölüm bağlantıları, okunaklı küçük metinler ve araştırma raporu başlığı eklendi. Gerçek Chromium'da sekme klavye gezintisi, kaydırılabilirlik, hedef alanları ve metin boyutu doğrulandı. Üretici 13 ve `src/rapor_v11.css` değiştirilmedi.
+
+**Commit:** `8b85586`  
+TİP yayın entegrasyon testi yeni yayın üreticisini sabit 13 yerine etkin üretici sürümüyle karşılaştırır; eski 13'ün bayt eşitliği ayrıca sınanmaya devam eder.
+
+### İkinci tur doğrulama
+
+- `PYTHONPATH=src:tests python -m unittest test_archive_views test_report` — 25 test geçti; gerçek Chromium mobil DOM kontrolü dahildir.
+- `PYTHONPATH=src:tests python -m unittest -v test_source_policy.SourcePolicy.test_turkish_publisher_case_preserves_dotted_and_dotless_i test_source_policy.SourcePolicy.test_short_name_html_uses_same_party_host_and_full_name_anchor` — 2 test geçti (8.191 saniye).
+- Düzeltme öncesi `python3 tests/run.py` — 91 test, 90 başarılı ve 1 başarısız; 1583.953 saniye. Tek hata `tests/test_dossiers.py:170` için `14 != 13` idi. Günlük: `/tmp/phase02-regression-final.log`; wrapper sonuç JSON'u oluşmadı.
+- `PYTHONPATH=src:tests python -m unittest -v test_dossiers.DossierTracer.test_real_tip_publish_audit_html_and_receipt_in_isolated_data` — başarısız olan entegrasyon testi düzeltmeden sonra geçti; 1 test, 13.225 saniye.
+- Geçici dokuz partili rapor ve Chromium görüntüleri: `/tmp/phase02-renderer14-visual/data/releases/review/index.html`, `/tmp/phase02-renderer14-visual/report-360.png`, `/tmp/phase02-renderer14-visual/report-1365.png`. 360 ve 1365 genişlikte sayfa taşması yok; iki pasif arşiv bağlantısı doğrulandı (`BROWSER_ARCHIVES_OK`).
+- Tarihsel CSS 11, renderer 13, özgün nesneler ve yayınlar değiştirilmedi. Yeni okuyucu çıktısı için yeni yayın gerekir; mevcut sürümün göçü gerekmez.
+
+## Birinci inceleme — 2026-11-12
 
 **Düzeltilme zamanı:** 2026-11-12T00:08:12Z  
 **Kaynak inceleme:** `02-REVIEW.md`  
