@@ -267,10 +267,10 @@ reading_recommendations: [H1, H2, H3]
 
 # Faz 2: Bütün partiler için dosyalar ve sürümlü kaynaklar — Doğrulama
 
-**Amaç:** Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir.  
-**MVP Goal:** As a reader, I want to inspect the dossiers with five common headings and their source versions for every party in the approved scope in one report, so that I can examine the party files and their evidence together.  
-**Doğrulama:** 2026-11-12T01:25:50Z  
-**Durum:** human_needed  
+**Amaç:** Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir.
+**MVP Goal:** As a reader, I want to inspect the dossiers with five common headings and their source versions for every party in the approved scope in one report, so that I can examine the party files and their evidence together.
+**Doğrulama:** 2026-11-12T01:25:50Z
+**Durum:** human_needed
 **Yeniden doğrulama:** Evet — önceki tek uygulama açığı SC3/KAY-01 için dar yeniden doğrulama.
 
 **Teslim sonucu:** Güncel yerel ac4b8fdec02f4a9ebb666036ed251683, üretici15 ile dokuz dosyayı ve kaynaklarını birlikte sunuyor. **13/13 teslim doğrusu ve dört gereksinim karşılandı; açık uygulama açığı veya davranış kanıtı eksiği yok.** Dört ham tanı sınıflandırılmamış, üç descriptor-less prohibition için insan çözümü kaydı verilmemiştir.
@@ -469,20 +469,20 @@ Bu üç end-of-phase öğe kod açığı veya kaynak kullanımı için ön onay 
 
 #### H4 — Kapsam ve sıradan siyasi yönlendirme üretmeme
 
-**Test:** Kapsam/sunum ve parti teslim anlatısını birinci prohibition için değerlendir.  
-**Beklenen:** Kullanıcı kapsamı ve teslim sırası siyasi destek, başarı sıralaması veya oy yönlendirmesi sayılmaz.  
+**Test:** Kapsam/sunum ve parti teslim anlatısını birinci prohibition için değerlendir.
+**Beklenen:** Kullanıcı kapsamı ve teslim sırası siyasi destek, başarı sıralaması veya oy yönlendirmesi sayılmaz.
 **Neden insan:** 02-10 maddesi unresolved ve descriptor-less; açık insan çözümü kaydı yok. Teknik yeşil test bunun yerine geçmez.
 
 #### H5 — Ayrı tüzel kimlik, üyelik ve grubu birleştirmeme
 
-**Test:** Aynı adlı eski partiler, ayrı DYP ve Yeni Yol ortak grup açıklamalarını ikinci prohibition için değerlendir.  
-**Beklenen:** Ayrı tüzel parti, bireysel üyelik ve ortak grup ayrı kalır.  
+**Test:** Aynı adlı eski partiler, ayrı DYP ve Yeni Yol ortak grup açıklamalarını ikinci prohibition için değerlendir.
+**Beklenen:** Ayrı tüzel parti, bireysel üyelik ve ortak grup ayrı kalır.
 **Neden insan:** Kaynak zinciri/kimlik FK'sı doğru bağlanmış; anlatının tüm bağlamsal anlamına ilişkin unresolved insan kararı henüz kaydedilmemiş.
 
 #### H6 — Eksik veya sürüm belirsizliğinden siyasi sonuç/güvence üretmeme
 
-**Test:** Kaynak türü, dönem ve eksik bilgi anlatısını üçüncü prohibition için değerlendir.  
-**Beklenen:** Bunlar parti lehine/aleyhine sonuç, bağımsız doğrulama veya güncellik güvencesi sayılmaz.  
+**Test:** Kaynak türü, dönem ve eksik bilgi anlatısını üçüncü prohibition için değerlendir.
+**Beklenen:** Bunlar parti lehine/aleyhine sonuç, bağımsız doğrulama veya güncellik güvencesi sayılmaz.
 **Neden insan:** Deterministik descriptor/insan çözümü yok. Veri bütünlüğü bu değer yargısını karara bağlamaz.
 
 ### Reading Recommendations — Ek Uygulama Kapısı Değil
@@ -505,7 +505,7 @@ Dört ham tanı ve üç prohibition çözülmemiştir. human_needed yalnız veri
 
 ---
 
-_Doğrulayan: gsd-verifier_  
+_Doğrulayan: gsd-verifier_
 _Kapsam: gerçek yerel üretici15 SC3 kapanışı; geçen diğer unsurlarda ilk doğrulamanın somut kanıtı yeniden kullanıldı._
 
 
