@@ -93,6 +93,19 @@ class ReportTest(unittest.TestCase):
         finding_html=report.split('data-finding-id="'+finding['id']+'"',1)[1].split('</p>',1)[0]
         self.assertIn('literal © &amp; ©',finding_html)
 
+    def test_identity_note_uses_its_passage_origin_for_entities(self):
+        root=Path(__file__).resolve().parents[1]
+        data=json.loads((root/'data/releases/bcc67d04d9d741e191589d0f5ac173ca/records.json').read_text())
+        note=next(n for n in data['dossier_identity_note'] if n['provenance']=='quote')
+        passage=next(p for p in data['passage'] if p['id']==note['own_passage_id'])
+        version=next(v for v in data['document_version'] if v['id']==passage['version_id'])
+        note['text']=passage['exact']='SAADET &amp; PARTİSİ'
+        for suffix,expected in (('original.html.bin','SAADET &amp; PARTİSİ'),('original.pdf','SAADET &amp;amp; PARTİSİ')):
+            version['original_path']='objects/'+'0'*64+'/'+suffix
+            report=render_report(data)
+            element=report.split('id="identity-note-'+note['id']+'"',1)[1].split('</p>',1)[0]
+            self.assertIn(expected,element)
+
     def test_real_browser_reads_both_passive_archives(self):
         import arsiv
         from browser_probe import probe_archives

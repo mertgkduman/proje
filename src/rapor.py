@@ -138,7 +138,7 @@ def render_foundation_timeline(pid, events, event_dates, findings, notes, citati
         result.append(f'<li>{time_tag(date["event_at"])} <span class="summary">{esc(f["text"])}</span> {citation(date["passage_id"])}</li>')
     result.append('</ul>')
     for note in notes:
-        cls, value = format_finding(note)
+        cls, value = format_finding(note, (note['own_passage_id'],note['related_passage_id']))
         result.append(f'<p id="identity-note-{esc(note["id"])}" class="{cls}">{value} {citation(note["own_passage_id"])} {citation(note["related_passage_id"])}</p>')
     return ''.join(result) + '</div>'
 
@@ -158,10 +158,11 @@ def render_report(data):
     evidence = defaultdict(list)
     for row in data['finding_evidence']:
         evidence[row['finding_id']].append(row)
-    def format_finding(finding):
+    def format_finding(finding, passage_ids=None):
         # Legacy HTML passages are stored as raw source markup; PDF text is literal.
-        matching=[passages[e['passage_id']] for e in evidence[finding['id']]
-                  if passages[e['passage_id']]['exact']==finding['text']]
+        if passage_ids is None:
+            passage_ids=(e['passage_id'] for e in evidence[finding['id']])
+        matching=[passages[pid] for pid in passage_ids if passages[pid]['exact']==finding['text']]
         legacy_html=bool(matching) and all(not versions[p['version_id']]['original_path'].endswith('.pdf') for p in matching)
         return finding_text(finding,legacy_html)
     attempts = {a['id']: a for a in data.get('attempt', [])}
