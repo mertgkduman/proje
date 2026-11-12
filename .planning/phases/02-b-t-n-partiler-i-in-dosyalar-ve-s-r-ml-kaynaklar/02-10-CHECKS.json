@@ -1,0 +1,1113 @@
+{
+  "plan": "02-10",
+  "status": "PLAN_02_10_CHECKS_OK",
+  "checked_at": "2026-11-12T00:03:28.301780+00:00",
+  "release_id": "bcc67d04d9d741e191589d0f5ac173ca",
+  "report_path": "/hpc/group/pfisterlab/mg551/storage/proje/data/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+  "report_sha256": "40b2b5c9be2c9055a181d8bafedc5c51cc999a0e66999cdaf597a96eae1f6564",
+  "manifest_contract": {
+    "data_schema_version": 5,
+    "renderer_version": 13,
+    "source_policy_version": 2,
+    "dossier_validation_version": 2,
+    "base_release": "d42f5105a1a1431d86cdfb3db8669fe2",
+    "phase2_delivery": {
+      "completed_prefix": [
+        "tip",
+        "dem",
+        "iyi",
+        "yeni-yol",
+        "dbp",
+        "emep",
+        "saadet",
+        "demokrat"
+      ],
+      "party_id": "demokrat",
+      "stage": "complete"
+    }
+  },
+  "operations": [
+    {
+      "label": "previous-receipt",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-09-saadet.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 807.0304746627808,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T22:11:12.195412+00:00"
+    },
+    {
+      "label": "previous-audit",
+      "args": [
+        "audit",
+        "--release",
+        "d42f5105a1a1431d86cdfb3db8669fe2",
+        "--phase",
+        "2",
+        "--party",
+        "saadet"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 245.5038022994995,
+      "output": "PHASE2_PARTY_OK d42f5105a1a1431d86cdfb3db8669fe2\n",
+      "error": null,
+      "finished_at": "2026-11-11T22:15:17.699618+00:00"
+    },
+    {
+      "label": "dossier-check",
+      "args": [
+        "dossier-check",
+        "--input",
+        "data/dossiers/02-demokrat.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 126.72148180007935,
+      "output": "DOSSIER_INPUT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T22:25:14.553266+00:00"
+    },
+    {
+      "label": "dossier-load",
+      "args": [
+        "dossier-load",
+        "--workspace",
+        "/tmp/proje-work-mcjy5x8y",
+        "--input",
+        "data/dossiers/02-demokrat.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.371051788330078,
+      "output": "",
+      "error": null,
+      "finished_at": "2026-11-11T22:27:17.227915+00:00"
+    },
+    {
+      "label": "publish",
+      "args": [
+        "publish",
+        "--workspace",
+        "/tmp/proje-work-mcjy5x8y",
+        "--party",
+        "demokrat"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 179.784677028656,
+      "output": "bcc67d04d9d741e191589d0f5ac173ca\n",
+      "error": null,
+      "finished_at": "2026-11-11T22:30:17.012990+00:00"
+    },
+    {
+      "label": "party-audit",
+      "args": [
+        "audit",
+        "--release",
+        "current",
+        "--phase",
+        "2",
+        "--party",
+        "demokrat"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 295.6176347732544,
+      "output": "PHASE2_PARTY_OK bcc67d04d9d741e191589d0f5ac173ca\n",
+      "error": null,
+      "finished_at": "2026-11-11T22:35:12.632894+00:00"
+    },
+    {
+      "label": "phase1-audit",
+      "args": [
+        "audit",
+        "--release",
+        "current",
+        "--phase",
+        "1"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 302.892963886261,
+      "output": "PHASE1_AUDIT_OK bcc67d04d9d741e191589d0f5ac173ca\n",
+      "error": null,
+      "finished_at": "2026-11-11T22:40:15.526682+00:00"
+    },
+    {
+      "label": "phase2-final-audit",
+      "args": [
+        "audit",
+        "--release",
+        "current",
+        "--phase",
+        "2"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 249.66541457176208,
+      "output": "PHASE2_AUDIT_OK bcc67d04d9d741e191589d0f5ac173ca\n",
+      "error": null,
+      "finished_at": "2026-11-11T22:44:25.191004+00:00"
+    },
+    {
+      "label": "receipt-create",
+      "args": [
+        "delivery-receipt",
+        "--release",
+        "current",
+        "--party",
+        "demokrat",
+        "--out",
+        "data/deliveries/02-10-demokrat.json",
+        "--previous",
+        "data/deliveries/02-09-saadet.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1057.12593126297,
+      "output": "DELIVERY_RECEIPT_OK bcc67d04d9d741e191589d0f5ac173ca\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:02:06.329556+00:00"
+    },
+    {
+      "label": "final-receipt-tip",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-03-tip.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 58.816407918930054,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:03:05.144970+00:00"
+    },
+    {
+      "label": "final-receipt-dem",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-04-dem.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 116.50477743148804,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:05:01.649850+00:00"
+    },
+    {
+      "label": "final-receipt-iyi",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-05-iyi.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 193.17895221710205,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:08:14.828695+00:00"
+    },
+    {
+      "label": "final-receipt-yeni-yol",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-06-yeni-yol.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 297.3861439228058,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:13:12.215925+00:00"
+    },
+    {
+      "label": "final-receipt-dbp",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-07-dbp.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 442.8127784729004,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:20:35.029163+00:00"
+    },
+    {
+      "label": "final-receipt-emep",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-08-emep.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 610.8755216598511,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:30:45.903945+00:00"
+    },
+    {
+      "label": "final-receipt-saadet",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-09-saadet.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 872.3604855537415,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-11T23:45:18.264717+00:00"
+    },
+    {
+      "label": "final-receipt-demokrat",
+      "args": [
+        "receipt-check",
+        "--input",
+        "data/deliveries/02-10-demokrat.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1089.2664892673492,
+      "output": "DELIVERY_RECEIPT_OK\n",
+      "error": null,
+      "finished_at": "2026-11-12T00:03:27.532669+00:00"
+    }
+  ],
+  "final_receipt_order": [
+    "tip",
+    "dem",
+    "iyi",
+    "yeni-yol",
+    "dbp",
+    "emep",
+    "saadet",
+    "demokrat"
+  ],
+  "final_receipt_created_before_closure_checks": true,
+  "tests": [
+    {
+      "name": "test_dossiers",
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_dossiers.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 31.67415952682495,
+      "count": 10,
+      "output": "test_archived_tip_registry_foundation_has_party_contract (test_dossiers.DossierTracer.test_archived_tip_registry_foundation_has_party_contract) ... ok\ntest_complete_collection_keeps_later_research_explicitly_unexamined (test_dossiers.DossierTracer.test_complete_collection_keeps_later_research_explicitly_unexamined) ... ok\ntest_each_finding_keeps_its_own_version_in_history (test_dossiers.DossierTracer.test_each_finding_keeps_its_own_version_in_history) ... ok\ntest_event_dates_respect_party_and_foundation (test_dossiers.DossierTracer.test_event_dates_respect_party_and_foundation) ... ok\ntest_migration_rollback_and_invalid_records_leave_pointer (test_dossiers.DossierTracer.test_migration_rollback_and_invalid_records_leave_pointer) ... ok\ntest_official_site_rejects_unsupported_domain (test_dossiers.DossierTracer.test_official_site_rejects_unsupported_domain) ... ok\ntest_real_tip_publish_audit_html_and_receipt_in_isolated_data (test_dossiers.DossierTracer.test_real_tip_publish_audit_html_and_receipt_in_isolated_data) ... 127.0.0.1 - - [11/Nov/2026 17:12:59] \"GET /objects/192135ea601a61fc6acdf6c239c627fc366d79c77d53f6d3d15a352cd2da0ab1/readable.html HTTP/1.1\" 200 -\n127.0.0.1 - - [11/Nov/2026 17:13:00] \"GET /releases/tmpkgabjufu/index.html HTTP/1.1\" 200 -\nok\ntest_registry_confirmation_and_version_cycle_are_checked (test_dossiers.DossierTracer.test_registry_confirmation_and_version_cycle_are_checked) ... ok\ntest_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering (test_dossiers.DossierTracer.test_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering) ... ok\ntest_tip_report_exposes_identity_and_grouped_sources (test_dossiers.DossierTracer.test_tip_report_exposes_identity_and_grouped_sources) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 31.118s\n\nOK\nTESTS_OK count=10\n"
+    },
+    {
+      "name": "test_missing",
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_missing.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 122.50558876991272,
+      "count": 2,
+      "output": "test_access_failure_requires_identified_source (test_missing.MissingContract.test_access_failure_requires_identified_source) ... ok\ntest_statuses_bind_matching_attempt_and_scope (test_missing.MissingContract.test_statuses_bind_matching_attempt_and_scope) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 122.043s\n\nOK\nTESTS_OK count=2\n"
+    },
+    {
+      "name": "test_chain",
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_chain.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 60.843005657196045,
+      "count": 1,
+      "output": "test_pending_lead_blocks_closure (test_chain.ChainContract.test_pending_lead_blocks_closure) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 60.392s\n\nOK\nTESTS_OK count=1\n"
+    },
+    {
+      "name": "test_publication",
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_publication.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 49.45135283470154,
+      "count": 11,
+      "output": "test_detects_corrupt_readable_archive (test_publication.PublicationTest.test_detects_corrupt_readable_archive) ... ok\ntest_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) ... ok\ntest_foreign_key_corruption_rejected (test_publication.PublicationTest.test_foreign_key_corruption_rejected) ... ok\ntest_lock_excludes_second_writer_and_old_workspace (test_publication.PublicationTest.test_lock_excludes_second_writer_and_old_workspace) ... ok\ntest_original_and_manifest_corruption_rejected (test_publication.PublicationTest.test_original_and_manifest_corruption_rejected) ... ok\ntest_paths_cannot_escape_root_through_traversal_or_symlink (test_publication.PublicationTest.test_paths_cannot_escape_root_through_traversal_or_symlink) ... ok\ntest_phase_acceptance_precedes_pointer_change (test_publication.PublicationTest.test_phase_acceptance_precedes_pointer_change) ... ok\ntest_rejects_dangerous_urls (test_publication.PublicationTest.test_rejects_dangerous_urls) ... ok\ntest_removing_method_cannot_bypass_phase_acceptance (test_publication.PublicationTest.test_removing_method_cannot_bypass_phase_acceptance) ... ok\ntest_report_escapes_untrusted_text_and_rejects_script_url (test_publication.PublicationTest.test_report_escapes_untrusted_text_and_rejects_script_url) ... ok\ntest_stale_base_rejected (test_publication.PublicationTest.test_stale_base_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 48.811s\n\nOK\nTESTS_OK count=11\n"
+    },
+    {
+      "name": "test_report",
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_report.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.363944292068481,
+      "count": 4,
+      "output": "test_reader_shows_party_content_and_faithful_archive_links (test_report.ReportTest.test_reader_shows_party_content_and_faithful_archive_links) ... ok\ntest_real_browser_reads_both_passive_archives (test_report.ReportTest.test_real_browser_reads_both_passive_archives) ... ok\ntest_rejects_unsafe_archive_path_and_escapes_finding (test_report.ReportTest.test_rejects_unsafe_archive_path_and_escapes_finding) ... ok\ntest_scoped_parties_and_summary_are_navigable (test_report.ReportTest.test_scoped_parties_and_summary_are_navigable) ... 127.0.0.1 - - [11/Nov/2026 17:33:09] \"GET /objects/404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f/readable.html HTTP/1.1\" 200 -\n127.0.0.1 - - [11/Nov/2026 17:33:10] \"GET /releases/tmp72gt3vga/index.html HTTP/1.1\" 200 -\nok\n\n----------------------------------------------------------------------\nRan 4 tests in 7.866s\n\nOK\nTESTS_OK count=4\n"
+    },
+    {
+      "name": "test_acceptance",
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_acceptance.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 348.5033838748932,
+      "count": 4,
+      "output": "test_comparison_needs_evidence_and_preserves_multiple_sources (test_acceptance.PhaseOneAcceptance.test_comparison_needs_evidence_and_preserves_multiple_sources) ... ok\ntest_current_snapshot_passes (test_acceptance.PhaseOneAcceptance.test_current_snapshot_passes) ... ok\ntest_missing_pilot_heading_is_rejected (test_acceptance.PhaseOneAcceptance.test_missing_pilot_heading_is_rejected) ... ok\ntest_server_exposes_only_published_paths (test_acceptance.PhaseOneAcceptance.test_server_exposes_only_published_paths) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 348.042s\n\nOK\nTESTS_OK count=4\n"
+    }
+  ],
+  "total_tests": 32,
+  "browser": {
+    "browser": {
+      "execution": {
+        "argv": [
+          "node",
+          "/tmp/demokrat0210/browser.cjs",
+          "/hpc/home/mg551/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+          "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+          "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/index.html",
+          "http://127.0.0.1:8100/objects/379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4/original.pdf",
+          "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf",
+          "http://127.0.0.1:8100/objects/ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba/original.pdf",
+          "/tmp/demokrat0210/browser-shots"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 11.788561582565308
+      },
+      "output": {
+        "status": "BROWSER_ARCHIVES_OK",
+        "results": [
+          {
+            "kind": "report",
+            "width": 1365,
+            "url": "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+            "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+            "overflow": false,
+            "questions": [
+              "Neden kuruldu?",
+              "Üyelik ve yönetim nasıl düzenleniyor?",
+              "Ne vaat ediyor?"
+            ]
+          },
+          {
+            "kind": "registry",
+            "width": 1365,
+            "url": "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/index.html",
+            "title": "Yargıtay Cumhuriyet Başsavcılığı - DEMOKRAT PARTİ",
+            "overflow": false,
+            "text": true,
+            "characterSet": "UTF-8",
+            "scripts": 0,
+            "forms": 0,
+            "images": [
+              {
+                "loaded": true,
+                "url": "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+              },
+              {
+                "loaded": true,
+                "url": "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+              }
+            ],
+            "resources": [
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/a82da815f254a5a9350fdff2cd54eab934d8c8564f6e6b541e82a804e1b66be3.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/bfb39fd9c3297e4c847bc688745ffbdb7cdbef7cf95d73e0356d912e7c47d9e2.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/7a46ed2e4bd6c479fe90b494bac0c924b164b1c680289523099d08a51a739ffd.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2"
+            ]
+          },
+          {
+            "kind": "charter",
+            "width": 1365,
+            "open": true,
+            "url": "http://127.0.0.1:8100/objects/379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4/original.pdf",
+            "status": 200,
+            "mime": "application/pdf",
+            "bytes": 1106203,
+            "sha256": "379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4"
+          },
+          {
+            "kind": "program",
+            "width": 1365,
+            "open": true,
+            "url": "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf",
+            "status": 200,
+            "mime": "application/pdf",
+            "bytes": 901772,
+            "sha256": "6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2"
+          },
+          {
+            "kind": "old-charter",
+            "width": 1365,
+            "open": true,
+            "url": "http://127.0.0.1:8100/objects/ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba/original.pdf",
+            "status": 200,
+            "mime": "application/pdf",
+            "bytes": 2690885,
+            "sha256": "ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba"
+          },
+          {
+            "kind": "report",
+            "width": 360,
+            "url": "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+            "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+            "overflow": false,
+            "questions": [
+              "Neden kuruldu?",
+              "Üyelik ve yönetim nasıl düzenleniyor?",
+              "Ne vaat ediyor?"
+            ]
+          },
+          {
+            "kind": "registry",
+            "width": 360,
+            "url": "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/index.html",
+            "title": "Yargıtay Cumhuriyet Başsavcılığı - DEMOKRAT PARTİ",
+            "overflow": false,
+            "text": true,
+            "characterSet": "UTF-8",
+            "scripts": 0,
+            "forms": 0,
+            "images": [
+              {
+                "loaded": true,
+                "url": "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png"
+              },
+              {
+                "loaded": true,
+                "url": "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png"
+              }
+            ],
+            "resources": [
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/a82da815f254a5a9350fdff2cd54eab934d8c8564f6e6b541e82a804e1b66be3.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/bfb39fd9c3297e4c847bc688745ffbdb7cdbef7cf95d73e0356d912e7c47d9e2.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/7a46ed2e4bd6c479fe90b494bac0c924b164b1c680289523099d08a51a739ffd.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+              "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png"
+            ]
+          },
+          {
+            "kind": "charter",
+            "width": 360,
+            "open": true,
+            "url": "http://127.0.0.1:8100/objects/379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4/original.pdf",
+            "status": 200,
+            "mime": "application/pdf",
+            "bytes": 1106203,
+            "sha256": "379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4"
+          },
+          {
+            "kind": "program",
+            "width": 360,
+            "open": true,
+            "url": "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf",
+            "status": 200,
+            "mime": "application/pdf",
+            "bytes": 901772,
+            "sha256": "6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2"
+          },
+          {
+            "kind": "old-charter",
+            "width": 360,
+            "open": true,
+            "url": "http://127.0.0.1:8100/objects/ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba/original.pdf",
+            "status": 200,
+            "mime": "application/pdf",
+            "bytes": 2690885,
+            "sha256": "ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba"
+          }
+        ]
+      }
+    },
+    "reading": {
+      "execution": {
+        "argv": [
+          "node",
+          "/tmp/demokrat0210/reading.cjs",
+          "/hpc/home/mg551/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+          "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+          "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/index.html",
+          "http://127.0.0.1:8100/objects/379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4/original.pdf",
+          "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf",
+          "http://127.0.0.1:8100/objects/ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba/original.pdf",
+          "/tmp/demokrat0210/browser-shots"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 9.678818464279175
+      },
+      "output": {
+        "status": "SOURCE_BODY_READING_OK",
+        "results": [
+          {
+            "kind": "program-body",
+            "width": 1365,
+            "url": "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf#page=4&zoom=100",
+            "title": "",
+            "overflow": false,
+            "requested_pdf_page": 4,
+            "source_page_index": 3
+          },
+          {
+            "kind": "program-body",
+            "width": 360,
+            "url": "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf#page=4&zoom=100",
+            "title": "",
+            "overflow": false,
+            "requested_pdf_page": 4,
+            "source_page_index": 3
+          }
+        ]
+      }
+    },
+    "identity-reading": {
+      "execution": {
+        "argv": [
+          "node",
+          "/tmp/demokrat0210/identity-reading.cjs",
+          "/hpc/home/mg551/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+          "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+          "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/index.html",
+          "http://127.0.0.1:8100/objects/379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4/original.pdf",
+          "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf",
+          "http://127.0.0.1:8100/objects/ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba/original.pdf",
+          "/tmp/demokrat0210/browser-shots"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 2.683271646499634
+      },
+      "output": {
+        "status": "IDENTITY_TIMELINE_READING_OK",
+        "results": [
+          {
+            "kind": "identity-and-chronology",
+            "width": 1365,
+            "url": "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+            "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+            "overflow": false
+          },
+          {
+            "kind": "identity-and-chronology",
+            "width": 360,
+            "url": "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+            "title": "Türkiye siyasi partileri: kaynaklı pilot rapor",
+            "overflow": false
+          }
+        ]
+      }
+    }
+  },
+  "historical_source_reading": {
+    "status": "HISTORICAL_BODY_READING_OK",
+    "results": [
+      {
+        "kind": "historical-html-body",
+        "width": 1365,
+        "url": "http://127.0.0.1:8100/views/a2b2e3eebd3b4ecbfc491ab3dd686abc/index.html",
+        "title": "1946 Yılında Kurulan Siyasi Partiler - Atatürk Ansiklopedisi",
+        "overflow": true
+      },
+      {
+        "kind": "historical-html-body",
+        "width": 360,
+        "url": "http://127.0.0.1:8100/views/a2b2e3eebd3b4ecbfc491ab3dd686abc/index.html",
+        "title": "1946 Yılında Kurulan Siyasi Partiler - Atatürk Ansiklopedisi",
+        "overflow": true
+      }
+    ]
+  },
+  "preservation": {
+    "status": "PRESERVATION_OK",
+    "immutable_files_checked": 1791,
+    "objects_and_releases_checked": 456,
+    "prior_view_files_checked": 1335,
+    "changed": [],
+    "lost_prior_rows": {},
+    "method_unchanged": true,
+    "scope_and_approved_order_unchanged": true,
+    "presentation_tabs_unchanged": true,
+    "tabs": [
+      "tab-yeni-parti",
+      "tab-tip",
+      "tab-dem",
+      "tab-iyi",
+      "tab-yeni-yol",
+      "tab-dbp",
+      "tab-emep",
+      "tab-saadet",
+      "tab-demokrat",
+      "tab-comparison"
+    ],
+    "new_party_count": 9,
+    "completed_prefix": [
+      "tip",
+      "dem",
+      "iyi",
+      "yeni-yol",
+      "dbp",
+      "emep",
+      "saadet",
+      "demokrat"
+    ],
+    "controlled_identity_transition": [
+      {
+        "changed_at": "2026-11-11T22:22:54.225324+00:00",
+        "id": "revision-demokrat-yargitay-3",
+        "legal_name": "DEMOKRAT PARTİ",
+        "party_id": "demokrat",
+        "passage_id": "0210-demokrat-legal",
+        "previous_legal_name": "DEMOKRAT PARTİ",
+        "previous_registry_key": "tbmm-f72877bd-626d-037b-e050-007f01005610",
+        "reason": "Sabit demokrat kimliği ve eskiTBMMkapsamgözlemleri korunur; adresanahtarı gerçek/sipar/3siciline kontrollü geçirilir. 2007ad değişikliği kuruluş yapılmaz; ayrıDYPve1946DPkaynakları kimliknotlarında ayrılır.",
+        "registry_key": "yargitay-3"
+      }
+    ]
+  },
+  "source_body_reading": {
+    "reviewer_kind": "agent",
+    "human_acceptance": false,
+    "report_widths": [
+      1365,
+      360
+    ],
+    "actual_pdf_page": 4,
+    "printed_program_page": "10",
+    "identity_and_timeline_opened": true,
+    "selected_source_images": [
+      {
+        "name": "charter-1365.png",
+        "sha256": "6c596089b78c7740ca7d69a646d6f36f1aae1ee3ed1a42e006df84990f2ff7a4"
+      },
+      {
+        "name": "charter-360.png",
+        "sha256": "3392eb65843fa32b48fea5a09f88442455cee79e7b87c493c1f0185bbd0b102a"
+      },
+      {
+        "name": "chronology-1365.png",
+        "sha256": "c6e63a1ffbf2db5174d254ad3b087c158cb1de9b59484d50ab535a96e9214612"
+      },
+      {
+        "name": "chronology-360.png",
+        "sha256": "989a5ff4f71a3c2c0d8b6e5234c1bc07abd31eea0be78cfc5065f33a15d6db01"
+      },
+      {
+        "name": "historical-body-1365.png",
+        "sha256": "1cc312c91c0d6f9f8db553fa413cbcd494e4059a389824677764b675833ea90e"
+      },
+      {
+        "name": "historical-body-360.png",
+        "sha256": "459023903af97e07fec6a00c965e1d042f2c3b78c5730eea3f9d789d8ce35d9c"
+      },
+      {
+        "name": "identity-1365.png",
+        "sha256": "c38c5aaea010e8ed460fc65be6be15fcf1b8169910443b2577c664b78bcafc78"
+      },
+      {
+        "name": "identity-360.png",
+        "sha256": "69891ef7b3ea6842eb287f18af5b59e48cc0a130013088209e29a425cfcf42d4"
+      },
+      {
+        "name": "program-1365.png",
+        "sha256": "55701539f8da83c88cb6253ec8ea77c7b9e83777c1b0afba714b0c827f944d5f"
+      },
+      {
+        "name": "program-360.png",
+        "sha256": "347dea5751d4544c5ded47bca6acee02ba66805d05b2005c55442c42ed7029c5"
+      },
+      {
+        "name": "program-body-1365.png",
+        "sha256": "735916cd04571eef710724137f6b52d7d59c7e5d153febb04593c58ec37286ee"
+      },
+      {
+        "name": "program-body-360.png",
+        "sha256": "0c747818c1ae15f4fd4c5e61ef60196b48b7ce2f67a42e0bbac1a9e70ac8ad25"
+      },
+      {
+        "name": "registry-1365.png",
+        "sha256": "cf1310b4ca2ecdb45b90bfbeb05ee8df37d747ff50ff2cf05bbbe14fe2178aaa"
+      },
+      {
+        "name": "registry-360.png",
+        "sha256": "a03cbf54dad039b233d800ea0fa0fb3bff39c03307658c8dcd78b04d531e344c"
+      },
+      {
+        "name": "report-1365.png",
+        "sha256": "176d7507cbb424d0cd329f2d5d4bd58776a97ed371dcb2844b5698c6e5fc44c2"
+      },
+      {
+        "name": "report-360.png",
+        "sha256": "e9b537abc5d14b5d5ef9eadc2ccdbe435702ecbac9c619587dfcdd421cf74ca5"
+      }
+    ],
+    "note": "Seçilmiş rapor, kart/kronoloji, sicil, tarihsel HTML ve gerçek PDF gövdesi görüntüleri ajan tarafından okundu. İlk PDF ekranında kapak boyaması henüz bitmediğinden görüntüleme bekleme süresi düzeltilerek sadece gövde okuması tekrarlandı. Bu insan kabulü değildir."
+  },
+  "archive_views": [
+    {
+      "version_id": "0210-demokrat-registry-v1",
+      "view_id": "bffc38aacdc49523379abcd7e95c121a",
+      "format_version": 1,
+      "source_sha256": "301be7a39cc299b15f1755851b638c1ab3fed886d63c006f23c1c46671606279",
+      "index_path": "views/bffc38aacdc49523379abcd7e95c121a/index.html",
+      "manifest_path": "views/bffc38aacdc49523379abcd7e95c121a/manifest.json",
+      "manifest_sha256": "b9b726ac611c096cb19138c2b8ad448724478cfd6161f618f6341bc6ace4018c",
+      "assets": 20,
+      "asset_sources": {
+        "https://www.yargitaycb.gov.tr/css/animations.css": "assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+        "https://www.yargitaycb.gov.tr/css/pages.css": "assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+        "https://www.yargitaycb.gov.tr/css/styles.css": "assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+        "https://www.yargitaycb.gov.tr/images/ataturk.png": "assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+        "https://www.yargitaycb.gov.tr/images/pattern.png": "assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png",
+        "https://www.yargitaycb.gov.tr/images/ycblogo.png": "assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+        "https://www.yargitaycb.gov.tr/vendor/bootstrap/css/bootstrap.min.css": "assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/css/all.min.css": "assets/bfb39fd9c3297e4c847bc688745ffbdb7cdbef7cf95d73e0356d912e7c47d9e2.css",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-brands-400.woff2": "assets/d7236a19bf23cbb2027280e8f51dc99d6c45976a2ed60de73382b034b18a2b68.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-regular-400.woff2": "assets/e3456d1283b9d75337a773dfd147bf908fd02c01b4bf48576d8603a69b13cbe5.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-solid-900.woff2": "assets/aa75998623a391e61c6901794ace832e3ecdd288b56d608f21bea0411acc0b8e.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-v4compatibility.woff2": "assets/0ce9033c69dc714f5f45ef9bf17d55e4c46bcdfad6799a4e92b38e7781bf86bd.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/fonts.css": "assets/7a46ed2e4bd6c479fe90b494bac0c924b164b1c680289523099d08a51a739ffd.css",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/great-vibes/great-vibes-ex.woff2": "assets/62effa52c6db97afb238c48a307d85984c9584981565cbb0b06581b945bd4255.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-400-normal.woff2": "assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-700-normal.woff2": "assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-400-normal.woff2": "assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-700-normal.woff2": "assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.css": "assets/a82da815f254a5a9350fdff2cd54eab934d8c8564f6e6b541e82a804e1b66be3.css",
+        "https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.woff2?t=1769685282643": "assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2"
+      },
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAB0AHEDASI",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy=",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236ea8fe'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643#iefix",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.woff?t=1769685282643",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.ttf?t=1769685282643",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.svg?t=1769685282643#remixicon",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-brands-400.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-regular-400.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-solid-900.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-v4compatibility.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-300-normal.woff2",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-300-normal.woff2",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-500-normal.woff2",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-500-normal.woff2"
+      ],
+      "source_url_context": "https://www.yargitaycb.gov.tr/sipar/3"
+    },
+    {
+      "version_id": "0210-demokrat-registry-dyp-v1",
+      "view_id": "a1bc160a1af6f0990a13a79a83d3f9d2",
+      "format_version": 1,
+      "source_sha256": "6aae338722818a207e93c2b337463309c9f966a63082bbdf7ea0d193d1ea3af0",
+      "index_path": "views/a1bc160a1af6f0990a13a79a83d3f9d2/index.html",
+      "manifest_path": "views/a1bc160a1af6f0990a13a79a83d3f9d2/manifest.json",
+      "manifest_sha256": "948028cf4ddcf01b2eb824b9eac385d6e4466f2ba8867b8c260e0cd0b46e8179",
+      "assets": 20,
+      "asset_sources": {
+        "https://www.yargitaycb.gov.tr/css/animations.css": "assets/b5cad48e21be9e67db914bfb16ab721d02cebbbe043a6155f53e100c9e13aa31.css",
+        "https://www.yargitaycb.gov.tr/css/pages.css": "assets/7fd34346afb84d93d7eb068aca5213094587495a15237d184edf894865e67b66.css",
+        "https://www.yargitaycb.gov.tr/css/styles.css": "assets/37a4c84ab0d8df7faf775579dfc38c13ca6827ca298b390d40cb5428a93efa19.css",
+        "https://www.yargitaycb.gov.tr/images/ataturk.png": "assets/07feea2cb30c2dedac8ee35410e31c4ef1d6ccfe7acf0aef087dcd5edbfd882c.png",
+        "https://www.yargitaycb.gov.tr/images/pattern.png": "assets/a47e2aa3081378face9c118a39e7d36f848d7052d50b2914860eef8337ec2c53.png",
+        "https://www.yargitaycb.gov.tr/images/ycblogo.png": "assets/bc16b0d6c101990192d32e4261a0f89e0ad766e1b559b6ae85e8c40c9fa4417b.png",
+        "https://www.yargitaycb.gov.tr/vendor/bootstrap/css/bootstrap.min.css": "assets/6041e5cabf0139ed06dc2db7f4214308e7335687fd9638fbcc256763fb63560d.css",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/css/all.min.css": "assets/bfb39fd9c3297e4c847bc688745ffbdb7cdbef7cf95d73e0356d912e7c47d9e2.css",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-brands-400.woff2": "assets/d7236a19bf23cbb2027280e8f51dc99d6c45976a2ed60de73382b034b18a2b68.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-regular-400.woff2": "assets/e3456d1283b9d75337a773dfd147bf908fd02c01b4bf48576d8603a69b13cbe5.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-solid-900.woff2": "assets/aa75998623a391e61c6901794ace832e3ecdd288b56d608f21bea0411acc0b8e.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-v4compatibility.woff2": "assets/0ce9033c69dc714f5f45ef9bf17d55e4c46bcdfad6799a4e92b38e7781bf86bd.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/fonts.css": "assets/7a46ed2e4bd6c479fe90b494bac0c924b164b1c680289523099d08a51a739ffd.css",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/great-vibes/great-vibes-ex.woff2": "assets/62effa52c6db97afb238c48a307d85984c9584981565cbb0b06581b945bd4255.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-400-normal.woff2": "assets/e44c11f4834bdd4d6b6da7b8ee5eaebc8acb41250cd6bce5cc82ea8262140eaa.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-700-normal.woff2": "assets/2bef6bc763635f137e6b49fc7d01d0d1f74e55413d92a21ce76c9c92c3457150.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-400-normal.woff2": "assets/fdd953c288159a1f149911720d8a19fad17dc80f1a0609948cfa1458c368899d.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-700-normal.woff2": "assets/8f1a4367b3d00ca55ea9b650136e690bf7ddb18674a082ffb08c8500423c2287.woff2",
+        "https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.css": "assets/a82da815f254a5a9350fdff2cd54eab934d8c8564f6e6b541e82a804e1b66be3.css",
+        "https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.woff2?t=1769685282643": "assets/e92dc38bfb1d15dbb9d9ca9e645754f68e7c5b224e33c45a17048bd0cf2407a6.woff2"
+      },
+      "limitations": [
+        "Yerelleştirilmeyen kaynak: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABhAGYDASI",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy=",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236ea8fe'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e",
+        "Yerelleştirilmeyen kaynak: data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e",
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.eot?t=1769685282643#iefix",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.woff?t=1769685282643",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.ttf?t=1769685282643",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/remixicon/remixicon.svg?t=1769685282643#remixicon",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-brands-400.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-regular-400.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-solid-900.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fontawesome-free/webfonts/fa-v4compatibility.ttf",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-300-normal.woff2",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-300-normal.woff2",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-500-normal.woff2",
+        "Yerel woff2 ve normal/bold yazı tipleri tercih edildi; yinelenen biçim/ağırlık alınmadı: https://www.yargitaycb.gov.tr/vendor/fonts/roboto/roboto-latin-ext-500-normal.woff2"
+      ],
+      "source_url_context": "https://www.yargitaycb.gov.tr/sipar/112"
+    },
+    {
+      "version_id": "0210-demokrat-historical1946-archive-v1",
+      "view_id": "a2b2e3eebd3b4ecbfc491ab3dd686abc",
+      "format_version": 1,
+      "source_sha256": "cb22be0d10bd87abc9b9fb8a4db9b8e371e2f614e3dd0591d912a41c072b42ad",
+      "index_path": "views/a2b2e3eebd3b4ecbfc491ab3dd686abc/index.html",
+      "manifest_path": "views/a2b2e3eebd3b4ecbfc491ab3dd686abc/manifest.json",
+      "manifest_sha256": "cd2598da4666636d5771bacbebd60956b0be4bc60bc99a822417d64f08cf1e17",
+      "assets": 14,
+      "asset_sources": {
+        "https://fonts.googleapis.com/css?family=Oswald%3A400%2C700%2C300%7C400%2C100%2C100italic%2C300%2C300italic%2C400italic%2C700%2C700italic%2C900%2C900italic&subset=latin%2Clatin-ext": "assets/4c3e1352d73efedcba9bc428ef2f13cb1a487f79182926fe5e53a3a88dbf844e.css",
+        "https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf": "assets/78fc65f6e2c1ee70e14809be2be4807936bc4986a5929d562d7426afb5e37892.ttf",
+        "https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf": "assets/7ea6756b811074dde3fac6b29de316c128a51640021b19c17d1a1e276ff79535.ttf",
+        "https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf": "assets/03f66dc7c020b0643411b20c21b20e175b6d390d586c9b033709faa42cf66494.ttf",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/dk-pdf/assets/css/frontend.css?ver=1.9.6": null,
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/rdp-wiki-embed/pl/css/style.css?ver=1.2.19": null,
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/rdp-wiki-embed/pl/css/wiki-embed.css?ver=1.2.19": null,
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/tablepress/css/default.min.css?ver=1.14": null,
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/css/audioplayer.css?ver=6.7.1": null,
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/css/bootstrap.css?ver=6.7.1": "assets/567028681e294819bdde582815a265b174a7925f168edecc7325006d59a20e60.css",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/css/jquery.mmenu.all.css?ver=6.7.1": "assets/50216d1eed1ffa272e410f5474b3807cd1bef110ce50c3b78df1758194b111b2.css",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/css/magnific-popup.css?ver=6.7.1": "assets/7e90a3ef8eade5efba8e8cc4089eadf314a53559e49cb0d6c74869447d0397c2.css",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/css/owl.carousel.css?ver=6.7.1": null,
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/fonts/font-awesome/css/font-awesome.min.css?ver=6.7.1": "assets/6be36baf50736a2129f143ba324bfad002e9de1f1c38c9b8aa7923df20c67d66.css",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/style.css?ver=6.7.1": null,
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/uploads/2021/07/ATAM-LOGOHeader.png": "assets/f6962daa038898ac37ce3a189a0361ece438de2e9f626e078135564328959d43.png",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/uploads/2021/07/ata.png": "assets/a68d18cee2486ad1f010cd6fea47d66dde08dba40423b2c07b39c509f0119b32.png",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/uploads/2021/07/ayk.png": "assets/3a31d27d1ca3cfdd728ca598aa68e8cb1144312278474452ef7b1c08324b420c.png",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/uploads/2021/07/kb.png": "assets/3d839fe5a090ea31cc8d2b5944ca4d3693a8645bfe28c09a36c2ceef7148800c.png",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-includes/css/dashicons.min.css?ver=6.7.1": "assets/e903e539fdadc754b47c9bdb25ca97fd278dba36518f7f8c3b93d2b0dc57f256.css",
+        "https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1": "assets/f01828fe70d8fb26a8b93fa83fca29212a2a40465033f7b69b4c7c90a8617300.css"
+      },
+      "limitations": [
+        "CSS kaçış karakteri içeren bildirimler çıkarıldı.",
+        "Pasif sayfada ilgili olmayan form/araç varlığı alınmadı: https://ataturkansiklopedisi.gov.tr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.2",
+        "Pasif sayfada ilgili olmayan form/araç varlığı alınmadı: https://ataturkansiklopedisi.gov.tr/wp-content/plugins/post-views-counter/css/frontend.css?ver=1.3.9",
+        "Pasif sayfada ilgili olmayan form/araç varlığı alınmadı: https://ataturkansiklopedisi.gov.tr/wp-content/plugins/wordpress-tooltips/js/qtip2/jquery.qtip.min.css?ver=6.7.1",
+        "Pasif sayfada ilgili olmayan form/araç varlığı alınmadı: https://ataturkansiklopedisi.gov.tr/wp-content/plugins/wordpress-tooltips/js/jdirectory/directory.min.css?ver=6.7.1",
+        "Pasif sayfada ilgili olmayan form/araç varlığı alınmadı: https://ataturkansiklopedisi.gov.tr/wp-content/plugins/add-search-to-menu/public/css/ivory-search.min.css?ver=4.8.1",
+        "Kaynak alınamadı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/css/audioplayer.css?ver=6.7.1 — <urlopen error [Errno 111] Connection refused>",
+        "Kaynak alınamadı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/css/owl.carousel.css?ver=6.7.1 — <urlopen error [Errno 111] Connection refused>",
+        "Kaynak alınamadı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/themes/dotted/style.css?ver=6.7.1 — <urlopen error [Errno 111] Connection refused>",
+        "Kaynak alınamadı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/tablepress/css/default.min.css?ver=1.14 — <urlopen error [Errno 111] Connection refused>",
+        "Kaynak alınamadı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/rdp-wiki-embed/pl/css/wiki-embed.css?ver=1.2.19 — <urlopen error [Errno 111] Connection refused>",
+        "Kaynak alınamadı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/rdp-wiki-embed/pl/css/style.css?ver=1.2.19 — <urlopen error [Errno 111] Connection refused>",
+        "Yerelleştirilmeyen kaynak: https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.3.0",
+        "Kaynak alınamadı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/plugins/dk-pdf/assets/css/frontend.css?ver=1.9.6 — <urlopen error [Errno 111] Connection refused>",
+        "İlgili ağ varlıkları22adresle sınırlandı: https://web.archive.org/web/20250208190715id_/https://ataturkansiklopedisi.gov.tr/wp-content/uploads/2021/07/1-5.jpg"
+      ],
+      "source_url_context": "https://ataturkansiklopedisi.gov.tr/bilgi/1946-yilinda-kurulan-siyasi-partiler/"
+    }
+  ],
+  "counts": {
+    "document": 14,
+    "document_version": 17,
+    "source_attribution": 17,
+    "version_context": 17,
+    "dossier_source": 23,
+    "lead": 33,
+    "attempt": 37,
+    "passage": 30,
+    "finding": 60,
+    "finding_evidence": 63,
+    "review": 60,
+    "manual_passage": 9,
+    "version_relation": 3,
+    "dossier_field": 7,
+    "event_date": 4,
+    "dossier_event": 4,
+    "missing": 8,
+    "research_state": 5,
+    "closure": 3,
+    "archive_view": 3
+  },
+  "initial_results": {
+    "dossier-check-first": {
+      "args": [
+        "dossier-check",
+        "--input",
+        "data/dossiers/02-demokrat.json"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 132.85787343978882,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/demokrat0210_runner.py\", line 17, in cli\n    with contextlib.redirect_stdout(output),contextlib.redirect_stderr(output): arsiv.main()\n                                                                                ^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 1100, in main\n    check_dossier_input(args.input, args.stage); print('DOSSIER_INPUT_OK')\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/dosyalar.py\", line 370, in check_dossier_input\n    load_dossier(work, payload)\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/dosyalar.py\", line 360, in load_dossier\n    arsiv.export_db(tmp / 'records.sqlite3', 'workspace', strict_identity=True)\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 837, in export_db\n    validate_evidence(db, f, next(p for p in result['passage'] if p['id'] == e['passage_id']))\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 590, in validate_evidence\n    if finding['provenance'] == 'quote' and finding['text'] not in passage['exact']: raise ValueError('Alıntı pasajda bulunamadı')\n                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Alıntı pasajda bulunamadı\n",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/demokrat0210_runner.py\", line 17, in cli\n    with contextlib.redirect_stdout(output),contextlib.redirect_stderr(output): arsiv.main()\n                                                                                ^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 1100, in main\n    check_dossier_input(args.input, args.stage); print('DOSSIER_INPUT_OK')\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/dosyalar.py\", line 370, in check_dossier_input\n    load_dossier(work, payload)\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/dosyalar.py\", line 360, in load_dossier\n    arsiv.export_db(tmp / 'records.sqlite3', 'workspace', strict_identity=True)\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 837, in export_db\n    validate_evidence(db, f, next(p for p in result['passage'] if p['id'] == e['passage_id']))\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 590, in validate_evidence\n    if finding['provenance'] == 'quote' and finding['text'] not in passage['exact']: raise ValueError('Alıntı pasajda bulunamadı')\n                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Alıntı pasajda bulunamadı\n"
+    },
+    "dossier-check-second": {
+      "args": [
+        "dossier-check",
+        "--input",
+        "data/dossiers/02-demokrat.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 128.79293513298035,
+      "output": "DOSSIER_INPUT_OK\n",
+      "error": null
+    },
+    "tests-test_publication-first": {
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_publication.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 37.49450469017029,
+      "output": "test_detects_corrupt_readable_archive (test_publication.PublicationTest.test_detects_corrupt_readable_archive) ... ok\ntest_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) ... \n  test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='close') ... ERROR\n  test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='json') ... ERROR\n  test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='html') ... ERROR\n  test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='validate') ... ERROR\n  test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='after_current') ... ERROR\ntest_foreign_key_corruption_rejected (test_publication.PublicationTest.test_foreign_key_corruption_rejected) ... ERROR\ntest_lock_excludes_second_writer_and_old_workspace (test_publication.PublicationTest.test_lock_excludes_second_writer_and_old_workspace) ... ERROR\ntest_original_and_manifest_corruption_rejected (test_publication.PublicationTest.test_original_and_manifest_corruption_rejected) ... ok\ntest_paths_cannot_escape_root_through_traversal_or_symlink (test_publication.PublicationTest.test_paths_cannot_escape_root_through_traversal_or_symlink) ... ok\ntest_phase_acceptance_precedes_pointer_change (test_publication.PublicationTest.test_phase_acceptance_precedes_pointer_change) ... ERROR\ntest_rejects_dangerous_urls (test_publication.PublicationTest.test_rejects_dangerous_urls) ... ok\ntest_removing_method_cannot_bypass_phase_acceptance (test_publication.PublicationTest.test_removing_method_cannot_bypass_phase_acceptance) ... ERROR\ntest_report_escapes_untrusted_text_and_rejects_script_url (test_publication.PublicationTest.test_report_escapes_untrusted_text_and_rejects_script_url) ... ok\ntest_stale_base_rejected (test_publication.PublicationTest.test_stale_base_rejected) ... ERROR\n\n======================================================================\nERROR: test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='close')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 37, in test_failures_leave_a_complete_release\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpo5ff_gi7/data/.write.lock'\n\n======================================================================\nERROR: test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='json')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 37, in test_failures_leave_a_complete_release\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpo5ff_gi7/data/.write.lock'\n\n======================================================================\nERROR: test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='html')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 37, in test_failures_leave_a_complete_release\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpo5ff_gi7/data/.write.lock'\n\n======================================================================\nERROR: test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='validate')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 37, in test_failures_leave_a_complete_release\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpo5ff_gi7/data/.write.lock'\n\n======================================================================\nERROR: test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) (point='after_current')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 37, in test_failures_leave_a_complete_release\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpo5ff_gi7/data/.write.lock'\n\n======================================================================\nERROR: test_foreign_key_corruption_rejected (test_publication.PublicationTest.test_foreign_key_corruption_rejected)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 90, in test_foreign_key_corruption_rejected\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmp5x4no9pk/data/.write.lock'\n\n======================================================================\nERROR: test_lock_excludes_second_writer_and_old_workspace (test_publication.PublicationTest.test_lock_excludes_second_writer_and_old_workspace)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 48, in test_lock_excludes_second_writer_and_old_workspace\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmp0za4kdh_/data/.write.lock'\n\n======================================================================\nERROR: test_phase_acceptance_precedes_pointer_change (test_publication.PublicationTest.test_phase_acceptance_precedes_pointer_change)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 72, in test_phase_acceptance_precedes_pointer_change\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmp60wns6zx/data/.write.lock'\n\n======================================================================\nERROR: test_removing_method_cannot_bypass_phase_acceptance (test_publication.PublicationTest.test_removing_method_cannot_bypass_phase_acceptance)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 82, in test_removing_method_cannot_bypass_phase_acceptance\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpg8sex8hr/data/.write.lock'\n\n======================================================================\nERROR: test_stale_base_rejected (test_publication.PublicationTest.test_stale_base_rejected)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_publication.py\", line 59, in test_stale_base_rejected\n    work = arsiv.open_workspace(self.tmp.name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py\", line 274, in open_workspace\n    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/tmp/tmpbx30nua5/data/.write.lock'\n\n----------------------------------------------------------------------\nRan 11 tests in 36.813s\n\nFAILED (errors=10)\n"
+    },
+    "tests-test_report-first": {
+      "argv": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_report.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 5.352305173873901,
+      "output": "test_reader_shows_party_content_and_faithful_archive_links (test_report.ReportTest.test_reader_shows_party_content_and_faithful_archive_links) ... ok\ntest_real_browser_reads_both_passive_archives (test_report.ReportTest.test_real_browser_reads_both_passive_archives) ... FAIL\ntest_rejects_unsafe_archive_path_and_escapes_finding (test_report.ReportTest.test_rejects_unsafe_archive_path_and_escapes_finding) ... ok\ntest_scoped_parties_and_summary_are_navigable (test_report.ReportTest.test_scoped_parties_and_summary_are_navigable) ... 127.0.0.1 - - [11/Nov/2026 17:31:11] \"GET /objects/404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f/readable.html HTTP/1.1\" 200 -\n127.0.0.1 - - [11/Nov/2026 17:31:12] \"GET /releases/tmp9_c695au/index.html HTTP/1.1\" 200 -\nok\n\n======================================================================\nFAIL: test_real_browser_reads_both_passive_archives (test_report.ReportTest.test_real_browser_reads_both_passive_archives)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_report.py\", line 42, in test_real_browser_reads_both_passive_archives\n    self.assertEqual(len(data['archive_view']),2)\nAssertionError: 44 != 2\n\n----------------------------------------------------------------------\nRan 4 tests in 4.928s\n\nFAILED (failures=1)\n"
+    },
+    "reading-first": {
+      "argv": [
+        "node",
+        "/tmp/demokrat0210/reading.cjs",
+        "/hpc/home/mg551/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+        "http://127.0.0.1:8100/releases/bcc67d04d9d741e191589d0f5ac173ca/index.html",
+        "http://127.0.0.1:8100/views/bffc38aacdc49523379abcd7e95c121a/index.html",
+        "http://127.0.0.1:8100/objects/379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4/original.pdf",
+        "http://127.0.0.1:8100/objects/6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2/original.pdf",
+        "http://127.0.0.1:8100/objects/ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba/original.pdf",
+        "/tmp/demokrat0210/browser-shots"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.403768539428711
+    }
+  },
+  "corrections": [
+    "Alıntının metnini içermeyen ek bağlam pasajı yalnız özet bulgusuna bağlandı; kaynak/alıntı doğrulaması korunur.",
+    "Varlık toplama betiği data URLlerini ve yinelenen font biçimlerini ağ bütçesinde saymayacak şekilde düzeltildi; seçilmiş görünümlerde ana CSS, Türkçe normal/bold fontlar ve kurum logoları yereldir. Özgünler ve ilk türevler değişmedi.",
+    "İlk publication koşusu, canlı dossier-check yazıcı kilidini copytree ile test fixtureına kopyaladı. Publish kilidi kaldırdıktan sonra aynı publication süiti11/11geçti.",
+    "Report testinin eski tam2arşiv varsayımı,44arşivli gerçek raporda başarısız oldu. Pilot iki sürümün korunması ve tüm sürüm kimliklerinin tekilliği kontrol edilir; gerçek tarayıcı probu korunur. Düzeltilen4test geçti."
+  ],
+  "limitations": [
+    "Canlı dp.org.tr sayfa ve PDFleri TLS zaman aşımı; erişilen tam parti PDFleri2021/2022arşiv yakalamalarıdır, bugün son sürüm oldukları iddia edilmez.",
+    "Sicildeki parti ambleminin data URLsi pasif politika nedeniyle yerelleştirilmedi; kurumun gerçek logoları yereldir.",
+    "Tarihsel ansiklopedi paragrafları360pxde okunur; özgün eski statik sayfanın bazı öğeleri yatay kaydırma yaratır. Bazı arşiv eklenti/yan stil adresleri alınamadı; piksel eşdeğerliği iddia edilmez.",
+    "Özgün PDFler sabit sayfa düzenindedir; mobilde100%yakınlaştırmada yatay kaydırma gerekir.",
+    "Asıl dilekçe/tutanaklar, ilk yönetimin kesin seçim günü, bütün ara belge nüshaları/dönem uçları ve II.Demokrasi Programının3–7ciltleri açık kalır."
+  ],
+  "flagged_raw_probes": [
+    {
+      "requirement_id": "DOS-01",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually"
+    },
+    {
+      "requirement_id": "DOS-02",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually"
+    },
+    {
+      "requirement_id": "KAY-01",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually"
+    },
+    {
+      "requirement_id": "KAY-04",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually"
+    }
+  ],
+  "descriptor_less_prohibitions": [
+    {
+      "statement": "Kapsam seçimi ve parti teslim sırası siyasi destek, başarı sıralaması veya oy yönlendirmesi olarak sunulamaz.",
+      "status": "unresolved"
+    },
+    {
+      "statement": "Aynı adlı ayrı tüzel partiler, milletvekili üyeliği ve ortak Meclis grubu tek bir siyasi kimlikmiş gibi sunulamaz.",
+      "status": "unresolved"
+    },
+    {
+      "statement": "Kaynak türü, eksik kanıt ve sürüm/kesim belirsizliği parti lehine veya aleyhine sonuç, bağımsız doğrulama veya güncellik güvencesi haline getirilemez.",
+      "status": "unresolved"
+    }
+  ],
+  "prohibitions_downstream_status": "flagged-unverified — unverified-prohibition — human review recommended",
+  "flagged_items_note": "Normal kabul testlerinin başarısı dört ham probe sınıflandırmasını veya üç yasağın doğrulanmasını çözmez. Faz1UAT yeni kaynaklara genişletilmedi; yeni kaynaklara ön insan onayı kapısı eklenmedi.",
+  "phase_status": "10/10 plan teslimi; bütün fazın tamamlanması root son inceleme/doğrulamasını bekler.",
+  "canonical_stage_log": "START dossier-check\nDONE dossier-check 0 127\nSTART dossier-load\nDONE dossier-load 0 15\nSTART publish\nDONE publish 0 180\nSTART party-audit\nDONE party-audit 0 296\nSTART phase1-audit\nDONE phase1-audit 0 303\nSTART phase2-final-audit\nDONE phase2-final-audit 0 250\nSTART receipt-create\nDONE receipt-create 0 1057\nSTART final-receipt-tip\nDONE final-receipt-tip 0 59\nSTART final-receipt-dem\nDONE final-receipt-dem 0 117\nSTART final-receipt-iyi\nDONE final-receipt-iyi 0 193\nSTART final-receipt-yeni-yol\nDONE final-receipt-yeni-yol 0 297\nSTART final-receipt-dbp\nDONE final-receipt-dbp 0 443\nSTART final-receipt-emep\nDONE final-receipt-emep 0 611\nSTART final-receipt-saadet\nDONE final-receipt-saadet 0 872\nSTART final-receipt-demokrat\nDONE final-receipt-demokrat 0 1089\n"
+}
