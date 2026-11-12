@@ -34,6 +34,30 @@ class ReaderText(HTMLParser):
 
 
 class ReportTest(unittest.TestCase):
+    def test_attribution_is_never_copied_from_same_hash_sibling(self):
+        import copy
+        root=Path(__file__).resolve().parents[1]
+        data=json.loads((root/'data/releases/bcc67d04d9d741e191589d0f5ac173ca/records.json').read_text())
+        original=data['source_attribution'][0]
+        version=next(v for v in data['document_version'] if v['id']==original['version_id'])
+        passage=next(p for p in data['passage'] if p['version_id']==version['id'])
+        sibling=copy.deepcopy(version);sibling['id']='test-sibling-version'
+        data['document_version'].append(sibling)
+        attribution=copy.deepcopy(original);attribution.update(version_id=sibling['id'],author='Farklı Yazar',publisher='Farklı Yayıncı',published_at='2000-01-01',basis='Farklı dayanak')
+        data['source_attribution'].append(attribution)
+        report=render_report(data)
+        source=report.split('id="source-'+passage['id']+'"',1)[1].split('</details>',1)[0]
+        self.assertIn(original['publisher'],source)
+        for value in ('Farklı Yazar','Farklı Yayıncı','Farklı dayanak','01.01.2000'):
+            self.assertNotIn(value,source)
+
+    def test_renderer_13_reproduces_existing_release(self):
+        from rapor_v13 import render_report as old_render
+        root=Path(__file__).resolve().parents[1]
+        release=root/'data/releases/bcc67d04d9d741e191589d0f5ac173ca'
+        data=json.loads((release/'records.json').read_text())
+        self.assertEqual(old_render(data),(release/'index.html').read_text())
+
     def test_real_browser_reads_both_passive_archives(self):
         import arsiv
         from browser_probe import probe_archives

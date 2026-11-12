@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 13
+RENDERER_VERSION = 14
 STYLE = Path(__file__).with_name('rapor_v11.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -158,12 +158,6 @@ def render_report(data):
     attempts = {a['id']: a for a in data.get('attempt', [])}
     resolutions = {r['missing_id']: r for r in data.get('missing_resolution', [])}
     attributions = {r['version_id']:r for r in data.get('source_attribution',[])}
-    # Aynı özgün belge baytlarında sonradan tamamlanan yazar künyesi kaybolmaz.
-    for version in versions.values():
-        current_attribution=attributions.get(version['id'])
-        if current_attribution and not current_attribution.get('author'):
-            richer=next((attributions[v['id']] for v in reversed(list(versions.values())) if v['document_id']==version['document_id'] and v['sha256']==version['sha256'] and v['id'] in attributions and attributions[v['id']].get('author')),None)
-            if richer:attributions[version['id']]=richer
     views = {r['version_id']:r for r in data.get('archive_view',[])}
     policies=data.get('source_policy',[])
     legacy_findings=set(json.loads(policies[-1]['legacy_findings'])) if policies else set()
