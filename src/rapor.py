@@ -56,8 +56,8 @@ def code_label(value):
     return esc(CODE_LABELS.get(value, 'Belirtilmemiş'))
 
 
-def finding_text(finding):
-    value = esc(unescape(finding['text'])) if finding['provenance']=='quote' else esc(finding['text'])
+def finding_text(finding, legacy_html=False):
+    value = esc(unescape(finding['text'])) if finding['provenance']=='quote' and legacy_html else esc(finding['text'])
     if finding['provenance'] == 'quote':
         return 'quote', f'“{value}”'
     return 'summary', value
@@ -81,7 +81,7 @@ def group_party_sources(data, passages, versions, documents):
     return groups
 
 
-def render_version_history(version, data, versions, citation, findings, evidence):
+def render_version_history(version, data, versions, citation, findings, evidence, format_finding):
     siblings = [v for v in versions.values() if v['document_id'] == version['document_id']]
     result = [f'<details id="version-history-{esc(version["id"])}"><summary>Belge sürüm geçmişi</summary>']
     if len(siblings) == 1:
@@ -103,7 +103,7 @@ def render_version_history(version, data, versions, citation, findings, evidence
                 f = findings[fid]
                 for paired in findings.values():
                     if paired['pair_id'] == f['pair_id'] and paired['party_id'] == f['party_id'] and paired['heading'] == f['heading']:
-                        cls, value = finding_text(paired)
+                        cls, value = format_finding(paired)
                         refs = ' '.join(citation(e['passage_id']) for e in evidence[paired['id']])
                         result.append(f'<p class="{cls}">{value} {refs}</p>')
         result.append('</div>')
@@ -127,7 +127,7 @@ def render_identity_card(pid, fields, missing, evidence, citation):
     return ''.join(result) + '</dl></div>'
 
 
-def render_foundation_timeline(pid, events, event_dates, findings, notes, citation):
+def render_foundation_timeline(pid, events, event_dates, findings, notes, citation, format_finding):
     result = [f'<div id="chronology-{esc(pid)}"><h4>Kuruluş kronolojisi</h4><ul>']
     for event in sorted(events, key=lambda x: (event_dates[x['event_date_id']]['event_at'] is None, event_dates[x['event_date_id']]['event_at'] or '')):
         date = event_dates[event['event_date_id']]
@@ -135,7 +135,7 @@ def render_foundation_timeline(pid, events, event_dates, findings, notes, citati
         result.append(f'<li>{time_tag(date["event_at"])} <span class="summary">{esc(f["text"])}</span> {citation(date["passage_id"])}</li>')
     result.append('</ul>')
     for note in notes:
-        cls, value = finding_text(note)
+        cls, value = format_finding(note)
         result.append(f'<p id="identity-note-{esc(note["id"])}" class="{cls}">{value} {citation(note["own_passage_id"])} {citation(note["related_passage_id"])}</p>')
     return ''.join(result) + '</div>'
 
@@ -155,6 +155,12 @@ def render_report(data):
     evidence = defaultdict(list)
     for row in data['finding_evidence']:
         evidence[row['finding_id']].append(row)
+    def format_finding(finding):
+        # Legacy HTML passages are stored as raw source markup; PDF text is literal.
+        matching=[passages[e['passage_id']] for e in evidence[finding['id']]
+                  if passages[e['passage_id']]['exact']==finding['text']]
+        legacy_html=bool(matching) and all(not versions[p['version_id']]['original_path'].endswith('.pdf') for p in matching)
+        return finding_text(finding,legacy_html)
     attempts = {a['id']: a for a in data.get('attempt', [])}
     resolutions = {r['missing_id']: r for r in data.get('missing_resolution', [])}
     attributions = {r['version_id']:r for r in data.get('source_attribution',[])}
@@ -204,7 +210,7 @@ def render_report(data):
             metadata.append(('Atıf dayanağı',esc(attribution['basis'])))
         details = ''.join(f'<dt>{label}</dt><dd>{value}</dd>' for label, value in metadata)
         if v['id'] not in history_seen:
-            history = render_version_history(v, data, versions, citation, findings, evidence)
+            history = render_version_history(v, data, versions, citation, findings, evidence, format_finding)
             history_seen.add(v['id'])
         else:
             history = f'<a href="#version-history-{esc(v["id"])}">Sürüm geçmişi</a>'
@@ -216,7 +222,7 @@ def render_report(data):
         source_entries[p['id']] = (
             f'<details class="source" id="source-{esc(p["id"])}">'
             f'<summary>{esc(d["title"])} <span class="source-type">{source_type}</span> · {time_tag(v["document_date"])} · {esc(v["version_label"] or "Sürüm belirtilmemiş")}</summary>'
-            f'<blockquote class="quote">“{esc(unescape(p["exact"]))}”</blockquote><dl class="source-info">{details}</dl>'
+            f'<blockquote class="quote">“{esc(p["exact"] if v["original_path"].endswith(".pdf") else unescape(p["exact"]))}”</blockquote><dl class="source-info">{details}</dl>'
             f'<p>{reasons}</p>{history}'
             f'<div class="source-links"><a href="{original}">Özgün kaynak</a>'
             f'{archive}'
@@ -278,7 +284,7 @@ def render_report(data):
         for f in rows:
             if not evidence[f['id']]:
                 raise ValueError('Kanıtsız bulgu')
-            cls, value = finding_text(f)
+            cls, value = format_finding(f)
             passage_ids = tuple(dict.fromkeys(e['passage_id'] for e in evidence[f['id']]))
             kind = f['epistemic_type']
             shared_source = cls == 'quote' and previous == (kind, passage_ids)
@@ -304,8 +310,8 @@ def render_report(data):
                 refs = ' '.join(citation(e['passage_id']) for e in evidence[statement['id']] if e['role'] == 'statement')
                 occurrence = citation(action['occurrence_passage_id'], 'Oluş kaynağı')
                 authority = citation(actor['authorization_passage_id'], 'Yetki kaynağı') if actor['authorization_passage_id'] else ''
-                sc, sv = finding_text(statement)
-                ac, av = finding_text(findings[action['finding_id']])
+                sc, sv = format_finding(statement)
+                ac, av = format_finding(findings[action['finding_id']])
                 pieces.append(
                     f'<article class="match-card" id="{prefix}{esc(m["id"])}" data-match-id="{esc(m["id"])}">'
                     f'<details><summary>{esc(action["context"])} <span class="metadata">{time_tag(action["event_date"])}</span></summary>'
@@ -361,7 +367,7 @@ def render_report(data):
                     pieces.append('<details class="record"><summary>Temel bilgiler ve kuruluş kronolojisi</summary>')
                     if card_rows:add_findings(card_rows)
                     pieces.append(render_identity_card(pid, dossier_fields, {m['id']: m for m in data['missing']}, evidence, citation))
-                    pieces.append(render_foundation_timeline(pid, dossier_events, event_dates, findings, [n for n in data.get('dossier_identity_note', []) if n['party_id'] == pid], citation))
+                    pieces.append(render_foundation_timeline(pid, dossier_events, event_dates, findings, [n for n in data.get('dossier_identity_note', []) if n['party_id'] == pid], citation, format_finding))
                     for field in dossier_fields:
                         if field['field'] in ('headquarters', 'chairperson') and field['value'] is not None:
                             refs = ' '.join(citation(e['passage_id']) for e in evidence[field['finding_id']])

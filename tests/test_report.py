@@ -58,6 +58,26 @@ class ReportTest(unittest.TestCase):
         data=json.loads((release/'records.json').read_text())
         self.assertEqual(old_render(data),(release/'index.html').read_text())
 
+    def test_pdf_quote_entities_are_literal_and_html_entities_decode(self):
+        root=Path(__file__).resolve().parents[1]
+        data=json.loads((root/'data/releases/bcc67d04d9d741e191589d0f5ac173ca/records.json').read_text())
+        finding=next(f for f in data['finding'] if f['provenance']=='quote')
+        related=[e for e in data['finding_evidence'] if e['finding_id']==finding['id']]
+        passage=next(p for p in data['passage'] if p['id']==related[0]['passage_id'])
+        version=next(v for v in data['document_version'] if v['id']==passage['version_id'])
+        raw='literal &copy; &amp; &#169;'
+        finding['text']=passage['exact']=raw
+        version['original_path']='objects/'+'0'*64+'/original.pdf'
+        report=render_report(data)
+        finding_html=report.split('data-finding-id="'+finding['id']+'"',1)[1].split('</p>',1)[0]
+        citation_html=report.split('id="source-'+passage['id']+'"',1)[1].split('</blockquote>',1)[0]
+        for section in (finding_html,citation_html):
+            self.assertIn('literal &amp;copy; &amp;amp; &amp;#169;',section)
+        version['original_path']='objects/'+'0'*64+'/original.html.bin'
+        report=render_report(data)
+        finding_html=report.split('data-finding-id="'+finding['id']+'"',1)[1].split('</p>',1)[0]
+        self.assertIn('literal © &amp; ©',finding_html)
+
     def test_real_browser_reads_both_passive_archives(self):
         import arsiv
         from browser_probe import probe_archives
