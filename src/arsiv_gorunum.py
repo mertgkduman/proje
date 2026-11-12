@@ -13,7 +13,7 @@ import ssl
 import urllib.parse
 import urllib.request
 
-FORMAT_VERSION=1
+FORMAT_VERSION=2
 CSP="default-src 'none'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
 VIEW_TABLES={'archive_view':'version_id TEXT PRIMARY KEY REFERENCES document_version(id), view_id TEXT NOT NULL, format_version INTEGER NOT NULL, source_sha256 TEXT NOT NULL, index_path TEXT NOT NULL, manifest_path TEXT NOT NULL, manifest_sha256 TEXT NOT NULL'}
 SAFE_TAGS=set('html head body title header footer main nav aside section article div span p h1 h2 h3 h4 h5 h6 ul ol li dl dt dd a img picture source style link meta br hr b strong i em small sup sub blockquote pre code table thead tbody tfoot tr td th caption colgroup col figure figcaption details summary time noscript'.split())
@@ -228,11 +228,12 @@ def build_view(content,url,data_root,fetch_assets=True,local_links=None,http_cha
     files={'index.html':output.encode(),**resources.assets}
     hashes={p:digest(value) for p,value in files.items()}
     source_hash=digest(content)
-    view_id=digest(json.dumps({'source':source_hash,'format':FORMAT_VERSION,'files':hashes},sort_keys=True).encode())[:32]
+    manifest=dict(format_version=FORMAT_VERSION,source_sha256=source_hash,source_url=url,files=hashes,asset_sources=resources.urls,limitations=list(dict.fromkeys(resources.limitations)),csp=CSP,http_charset=http_charset)
+    view_id=digest(json.dumps(manifest,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode())[:32]
     relative='views/'+view_id
     folder=Path(data_root)/relative
     folder.mkdir(parents=True,exist_ok=True)
-    manifest=dict(view_id=view_id,format_version=FORMAT_VERSION,source_sha256=source_hash,source_url=url,files=hashes,asset_sources=resources.urls,limitations=list(dict.fromkeys(resources.limitations)),csp=CSP)
+    manifest['view_id']=view_id
     files['manifest.json']=(json.dumps(manifest,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
     for name,value in files.items():
         target=folder/name;target.parent.mkdir(parents=True,exist_ok=True)
@@ -243,11 +244,14 @@ def build_view(content,url,data_root,fetch_assets=True,local_links=None,http_cha
 
 def validate_view(data_root,row):
     from arsiv import safe_path,sha
-    if row['format_version']!=FORMAT_VERSION or not re.fullmatch(r'[0-9a-f]{32}',row['view_id']) or row['index_path']!='views/'+row['view_id']+'/index.html' or row['manifest_path']!='views/'+row['view_id']+'/manifest.json':raise ValueError('Geçersiz arşiv görünümü yolu')
+    if row['format_version'] not in (1,FORMAT_VERSION) or not re.fullmatch(r'[0-9a-f]{32}',row['view_id']) or row['index_path']!='views/'+row['view_id']+'/index.html' or row['manifest_path']!='views/'+row['view_id']+'/manifest.json':raise ValueError('Geçersiz arşiv görünümü yolu')
     path=safe_path(data_root,row['manifest_path'])
     if sha(path)!=row['manifest_sha256']:raise ValueError('Görünüm manifest özeti eşleşmiyor')
     manifest=json.loads(path.read_text())
     if any(manifest[k]!=row[k] for k in ('view_id','source_sha256','format_version')) or 'index.html' not in manifest['files']:raise ValueError('Görünüm kaynak ilişkisi bozuk')
+    if row['format_version']==2:
+        identity={key:value for key,value in manifest.items() if key!='view_id'}
+        if digest(json.dumps(identity,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode())[:32]!=row['view_id']:raise ValueError('Görünüm kimliği manifestle eşleşmiyor')
     for name,value in manifest['files'].items():
         if name!='index.html' and not re.fullmatch(r'assets/[0-9a-f]{64}\.(?:css|png|jpg|gif|webp|ico|woff2|woff|ttf|otf)',name):raise ValueError('Görünüm varlık yolu geçersiz')
         if sha(safe_path(path.parent,name))!=value:raise ValueError('Görünüm/varlık özeti eşleşmiyor')

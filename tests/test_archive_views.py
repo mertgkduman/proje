@@ -173,6 +173,20 @@ class ArchiveViews(unittest.TestCase):
             view=self.module().build_view(raw,capture['final_url'],Path(tmp),fetch_assets=False,http_charset=capture['http_charset'])
             self.assertIn('Türkiye İşçi Partisi',(Path(tmp)/view['index_path']).read_text())
 
+    def test_view_identity_covers_source_url_and_limitations(self):
+        m=self.module()
+        raw=b'<p>same content</p>'
+        with tempfile.TemporaryDirectory() as tmp:
+            first=m.build_view(raw,'https://example.org/a',Path(tmp),fetch_assets=False)
+            second=m.build_view(raw,'https://example.org/b',Path(tmp),fetch_assets=False)
+            with patch.object(m.Resources,'__init__',autospec=True) as init:
+                def initialize(obj,url,enabled):
+                    obj.url=url;obj.enabled=enabled;obj.assets={};obj.urls={};obj.total=0;obj.limitations=['indirme sınırı']
+                init.side_effect=initialize
+                third=m.build_view(raw,'https://example.org/a',Path(tmp),fetch_assets=False)
+            self.assertEqual(len({first['view_id'],second['view_id'],third['view_id']}),3)
+            for row in (first,second,third): self.assertTrue(m.validate_view(Path(tmp),row))
+
     def test_correct_canonical_charter_and_program_render_as_separate_documents(self):
         m=self.module()
         with tempfile.TemporaryDirectory() as tmp:
