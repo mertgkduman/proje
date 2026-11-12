@@ -9,7 +9,7 @@ from kaynaklar import attribution_text
 
 
 RENDERER_VERSION = 14
-STYLE = Path(__file__).with_name('rapor_v11.css').read_text(encoding='utf-8')
+STYLE = Path(__file__).with_name('rapor_v14.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -238,13 +238,13 @@ def render_report(data):
                     key=lambda row: (known_order.get(row['party_id'], len(known_order)), row['approved_order']))
     party_ids = [row['party_id'] for row in scoped] or [pid for pid in parties if pid == 'yeni-parti']
     methods = data.get('method', [])
-    title = 'Türkiye siyasi partileri: kaynaklı pilot rapor'
+    title = 'Türkiye siyasi partileri: kaynaklı araştırma raporu'
     pieces = [
         '<!doctype html><html lang="tr"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1">',
         f'<title>{title}</title><style>{STYLE}</style></head><body>',
         '<a class="skip" href="#main-content">İçeriğe geç</a><div class="shell"><aside class="sidebar">',
-        '<p class="sidebar-title">Parti dosyaları</p><div role="tablist" aria-label="Partiler ve karşılaştırmalı özet">',
+        '<p class="sidebar-title">Parti dosyaları</p><p class="party-scroll-hint">Diğer partiler için yatay kaydırın →</p><div role="tablist" aria-label="Partiler ve karşılaştırmalı özet">',
     ]
     for i, pid in enumerate(party_ids):
         selected, tabindex = ('true', 0) if i == 0 else ('false', -1)

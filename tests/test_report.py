@@ -2,6 +2,8 @@
 import json
 import re
 import sys
+import subprocess
+import tempfile
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
@@ -34,6 +36,29 @@ class ReaderText(HTMLParser):
 
 
 class ReportTest(unittest.TestCase):
+    def test_mobile_navigation_hint_and_readable_touch_targets(self):
+        from browser_probe import browser
+        executable=browser()
+        if not executable: self.skipTest('Headless Chrome bulunamadı')
+        root=Path(__file__).resolve().parents[1]
+        data=json.loads((root/'data/releases/bcc67d04d9d741e191589d0f5ac173ca/records.json').read_text())
+        report=render_report(data)
+        marker='''<script>(()=>{
+const tabs=document.querySelector('[role=tablist]'),hint=document.querySelector('.party-scroll-hint');
+const citation=[...document.querySelectorAll('.citation')].find(x=>x.getClientRects().length);
+const section=[...document.querySelectorAll('.section-links a')].find(x=>x.getClientRects().length);
+const type=[...document.querySelectorAll('.source-type')].find(x=>x.getClientRects().length);
+const checks=[getComputedStyle(hint).display!=='none',tabs.scrollWidth>tabs.clientWidth,citation.getBoundingClientRect().height>=44,section.getBoundingClientRect().height>=44,parseFloat(getComputedStyle(type).fontSize)>=14];
+const first=tabs.querySelector('[role=tab]');first.focus();first.dispatchEvent(new KeyboardEvent('keydown',{key:'End',bubbles:true}));checks.push(document.activeElement.id==='tab-comparison');
+document.body.dataset.mobileChecks=checks.join(',');document.body.dataset.mobileProbe=checks.every(Boolean)?'PASS':'FAIL';
+})()</script>'''
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'report.html';path.write_text(report.replace('</html>',marker+'</html>'))
+            result=subprocess.run([executable,'--headless','--no-sandbox','--disable-gpu','--window-size=360,800','--dump-dom',path.as_uri()],capture_output=True,text=True,timeout=30)
+        self.assertEqual(result.returncode,0,result.stderr[-1000:])
+        checks=re.findall(r'data-mobile-(?:checks|probe)="[^"]*"',result.stdout)
+        self.assertIn('data-mobile-probe="PASS"',checks,str(checks))
+
     def test_attribution_is_never_copied_from_same_hash_sibling(self):
         import copy
         root=Path(__file__).resolve().parents[1]
@@ -151,7 +176,7 @@ class ReportTest(unittest.TestCase):
         self.assertIn('data-finding-id="kurulus-summary"', report)
         self.assertIn('id="scope-method"', report)
         self.assertIn('<meta name="viewport" content="width=device-width, initial-scale=1">', report)
-        self.assertIn('<h1>Türkiye siyasi partileri: kaynaklı pilot rapor</h1>', report)
+        self.assertIn('<h1>Türkiye siyasi partileri: kaynaklı araştırma raporu</h1>', report)
         for removed in ('Bu dokuz partilik ön liste', 'PROJECT.md kullanıcı kararı',
                         'Grup adından bireysel parti üyeliği çıkarılmaz.',
                         'Bu başlıklar beş parti dosyası başlığından ayrıdır.',
