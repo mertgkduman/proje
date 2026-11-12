@@ -67,7 +67,8 @@ Plans:
 
 ### Phase 2: Bütün partiler için dosyalar ve sürümlü kaynaklar
 
-**Goal:** Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir.
+**Goal:** As a reader, I want to inspect the dossiers with five common headings and their source versions for every party in the approved scope in one report, so that I can examine the party files and their evidence together.
+**Amaç:** Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir.
 **Mode:** mvp
 **Depends on:** Phase 1
 **Requirements:** DOS-01, DOS-02, KAY-01, KAY-04
