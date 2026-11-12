@@ -17,8 +17,8 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Standart parti dosyaları
 
-- [ ] **DOS-01**: Okur, kapsamdaki her parti için kuruluş, tüzük, program, söylem–uygulama ve finansman–harcamalar başlıklarını içeren aynı şablonda dosya açabilir.
-- [ ] **DOS-02**: Okur, partinin kuruluş tarihini, resmî adını ve temel kimlik bilgilerini kaynaklarıyla görebilir.
+- [x] **DOS-01**: Okur, kapsamdaki her parti için kuruluş, tüzük, program, söylem–uygulama ve finansman–harcamalar başlıklarını içeren aynı şablonda dosya açabilir.
+- [x] **DOS-02**: Okur, partinin kuruluş tarihini, resmî adını ve temel kimlik bilgilerini kaynaklarıyla görebilir.
 - [ ] **TUZ-01**: Okur, parti üyelerinin haklarını ilgili tüzük maddelerine dayanarak inceleyebilir.
 - [ ] **TUZ-02**: Okur, parti yönetiminin nasıl seçildiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
 - [ ] **TUZ-03**: Okur, parti yönetiminin nasıl denetlendiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
@@ -27,10 +27,10 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Kaynaklar ve belge arşivi
 
-- [ ] **KAY-01**: Okur, kullanılan kaynakların türünü ve birincil kaynaklara verilen önceliği görebilir; gazetecilik, sosyal paylaşım, akademik çalışma ve bağımsız raporlar kaynak künyesinde atfedilir (D-13; sicil alan adı/insan kabulü kapısı yoktur).
+- [x] **KAY-01**: Okur, kullanılan kaynakların türünü ve birincil kaynaklara verilen önceliği görebilir; gazetecilik, sosyal paylaşım, akademik çalışma ve bağımsız raporlar kaynak künyesinde atfedilir (D-13; sicil alan adı/insan kabulü kapısı yoktur).
 - [x] **KAY-02**: Okur, her önemli bulgunun kaynak bağlantısını, belge tarihini, varsa sürümünü, ilgili madde/sayfa veya pasajını, erişim tarihini ve doğrulama tarihini görebilir.
 - [x] **KAY-03**: Araştırmacı, erişilebilen kaynak belgelerini özgün dosya veya tarihli sayfa kopyası olarak arşivleyebilir; arşiv kaydı özgün bağlantıya geri izlenebilir.
-- [ ] **KAY-04**: Okur, bulgunun hangi belge sürümüne ve döneme dayandığını izleyebilir; farklı sürümler sessizce birbirinin yerine geçirilmez.
+- [x] **KAY-04**: Okur, bulgunun hangi belge sürümüne ve döneme dayandığını izleyebilir; farklı sürümler sessizce birbirinin yerine geçirilmez.
 
 ### Söylem, uygulama ve mali bilgiler
 
@@ -100,7 +100,6 @@ Henüz sonraki sürüme ertelenmiş bir gereksinim seçilmedi. Kullanıcının i
 - Onaylanan dokuz partilik ön liste, araştırma başlangıcındaki TBMM kaydıyla arşivlenerek tekrar kontrol edilir. Ortak grup ve bireysel parti üyeliği farklılıkları sessizce kapsam değişikliğine dönüştürülmez.
 - Veri tabanı teknolojisi, katkı/düzeltme iş akışı, HTML raporunun teknik yapısı ve yayın/barındırma yeri henüz seçilmedi. Bu belge bir kamuya yayın işlemi başlatmaz.
 
-
 ## Kaynak derleme kararı — 11 Kasım 2026
 
 Bu çalışma parti yayınlarını, haberleri ve sosyal paylaşımları açık atıfla bir araya getirir. Yayıncı, varsa yazar, bilinen yayın tarihi ve adres korunur; sosyal kaynakta hesap/yazar, tarih ve kalıcı adres gerekir. Beyan ve iddia söyleyene atfedilir. Alan adı için sicil kanıtı, tarihsel yürürlük kanıtı veya her kaynakta insan kabulü kullanım ön koşulu değildir. Sicil kimliği iddiası gerçek sicille tutarlı kalır; bilinmeyen tarih ve hesap dönemi uydurulmaz. Yeni Parti'nin resmî sitesi kullanıcının açık kararıyla https://yenipartiyiz.biz; tüzük /parti-tuzugu, program /parti-programi adresidir.
@@ -109,7 +108,7 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 
 ## Traceability
 
-35 gereksinimin tamamı kullanıcı tarafından onaylanan yol haritasında tam olarak birer aşamaya atanmıştır. Bütün gereksinimler uygulama açısından Pending durumundadır.
+35 gereksinimin tamamı kullanıcı tarafından onaylanan yol haritasında tam olarak birer aşamaya atanmıştır. Faz 1 ve Faz 2 kapsamındaki 17 gereksinim Complete, sonraki fazların 18 gereksinimi Pending durumundadır.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
@@ -117,17 +116,17 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 | KAPS-02 | Phase 1 | Complete |
 | KAPS-03 | Phase 1 | Complete |
 | KAPS-04 | Phase 1 | Complete |
-| DOS-01 | Phase 2 | Pending |
-| DOS-02 | Phase 2 | Pending |
+| DOS-01 | Phase 2 | Complete |
+| DOS-02 | Phase 2 | Complete |
 | TUZ-01 | Phase 3 | Pending |
 | TUZ-02 | Phase 3 | Pending |
 | TUZ-03 | Phase 3 | Pending |
 | TUZ-04 | Phase 3 | Pending |
 | PRG-01 | Phase 3 | Pending |
-| KAY-01 | Phase 2 | Pending |
+| KAY-01 | Phase 2 | Complete |
 | KAY-02 | Phase 1 | Complete |
 | KAY-03 | Phase 1 | Complete |
-| KAY-04 | Phase 2 | Pending |
+| KAY-04 | Phase 2 | Complete |
 | UYG-01 | Phase 4 | Pending |
 | UYG-02 | Phase 4 | Pending |
 | MAL-01 | Phase 5 | Pending |
@@ -157,4 +156,4 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 
 ---
 *Requirements defined: 2026-11-09*
-*Last updated: 2026-11-09 after the Phase 1 discussion; requirement IDs and the six-phase mapping are preserved*
+*Last updated: 2026-11-11 after Phase 2 completion; DOS-01, DOS-02, KAY-01 and KAY-04 verified; requirement IDs and phase mapping preserved*

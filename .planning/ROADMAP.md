@@ -6,7 +6,7 @@
 
 **Status:** Kullanıcı tarafından onaylandı — 2026-11-09.
 **Milestone:** v1.0 — Kaynak temelli ilk araştırma arşivi ve rapor.
-**Structure:** Kullanıcının seçimiyle bütün aşamalar `mvp` modundadır. Gereksinimlerin onayı tamamlanmıştır; uygulama başlamamıştır.
+**Structure:** Kullanıcının seçimiyle bütün aşamalar `mvp` modundadır. Gereksinimler onaylanmıştır; Faz 1 ve Faz 2 tamamlanmış, Faz 3–6 henüz başlamamıştır.
 **Coverage:** 35/35 v1 gereksinimi tam olarak birer aşamaya atanmıştır. Eşleme, gereksinimlerin tamamlandığı anlamına gelmez.
 
 ## Phases
@@ -14,7 +14,7 @@
 **Phase Numbering:** Tam sayı aşamalar ana çalışmayı, gerektiğinde eklenecek ondalık aşamalar ara işleri gösterir. Sıralama 1 → 2 → 3 → 4 → 5 → 6'dır.
 
 - [x] **Phase 1: Kapsam, yöntem ve kaynaklı pilot rapor** - Okur, kapsamı ve araştırma yöntemini görebilir; seçilen bir partinin beş başlıklı pilot dosyasını ortak kayıttan HTML raporuna ve arşiv belgelerine kadar izleyebilir. (completed 2026-11-10)
-- [ ] **Phase 2: Bütün partiler için dosyalar ve sürümlü kaynaklar** - Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir.
+- [x] **Phase 2: Bütün partiler için dosyalar ve sürümlü kaynaklar** - Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir. (completed 2026-11-11)
 - [ ] **Phase 3: Tüzük ve programların karşılaştırılması** - Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir.
 - [ ] **Phase 4: Söylem ve belgelenmiş uygulamaların karşılaştırılması** - Okur, ilan edilen ilke ve vaatlerin belgelenmiş uygulamalarla ilişkisini ortak yöntem ve olay bağlamı içinde değerlendirebilir.
 - [ ] **Phase 5: Finansman ve harcamaların belgelenmesi** - Okur, partilerin erişilebilen gelir ve harcama bilgilerini dönem ve kapsam farklarını anlayarak inceleyebilir.
@@ -79,7 +79,7 @@ Plans:
 3. Okur, kaynakların birincil belge, gazetecilik, akademik çalışma veya bağımsız rapor türünü görebilir; birincil kaynak önceliği ve ikincil kaynak kullanımı aynı yöntemle açıklanır.
 4. Okur, bulgunun hangi belge sürümüne ve döneme dayandığını ve mevcut eski sürümleri görebilir; henüz araştırılmamış bir başlık, denenmiş bir aramanın “Bulunamadı” sonucu gibi gösterilmez.
 
-**Plans:** 10/10 plans executed; 13/13 delivery truths verified; three user verification items pending
+**Plans:** 10/10 plans complete
 
 Plans:
 **Wave 1**
@@ -208,11 +208,11 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
-| 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Awaiting user verification (3 items) |  |
+| 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
 | 3. Tüzük ve programların karşılaştırılması | 0/TBD | Not started | - |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
 ---
-*Last updated: 2026-11-09 after explicit user approval of the six-phase MVP roadmap*
+*Last updated: 2026-11-11 after Phase 2 completion; user UAT 3/3 passed*

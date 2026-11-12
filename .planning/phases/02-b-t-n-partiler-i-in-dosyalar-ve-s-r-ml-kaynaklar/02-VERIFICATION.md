@@ -1,7 +1,7 @@
 ---
 phase: 02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar
 verified: 2026-11-12T01:25:50Z
-status: human_needed
+status: passed
 score: "13/17 must-haves verified (13/13 delivery truths; 4 raw diagnostics uncertain)"
 delivery_score: 13/13
 raw_diagnostic_count: 4
@@ -54,6 +54,7 @@ covered_files:
   - ".planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-REVIEW-FIX.md"
   - ".planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-REVIEW.md"
   - ".planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-SECURITY.md"
+  - ".planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-UAT.md"
   - ".planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-UI-REVIEW.md"
   - "AGENTS.md"
   - "README.md"
@@ -159,7 +160,7 @@ covered_files:
   - "tests/test_report.py"
   - "tests/test_scope.py"
   - "tests/test_source_policy.py"
-covered_digest: "v1:sha256:ca4c07c604546bda9d58252a49cee80d2d65e675e905724786b5836542d94aa4"
+covered_digest: "v1:sha256:e314b934d04db694d9a9851038b253658451e0a8e8c9bba2b8deb6d39b884eb6"
 re_verification:
   previous_status: gaps_found
   previous_score: "12/17 (12/13 delivery truths; 4 raw diagnostics uncertain)"
@@ -205,24 +206,25 @@ must_haves:
       via: "Birincil kaynak önceliği ve atıflı ikincil kullanım açıklaması"
   prohibitions:
     - statement: "Kapsam seçimi ve parti teslim sırası siyasi destek, başarı sıralaması veya oy yönlendirmesi olarak sunulamaz."
-      status: unresolved
+      status: resolved
     - statement: "Aynı adlı ayrı tüzel partiler, milletvekili üyeliği ve ortak Meclis grubu tek bir siyasi kimlikmiş gibi sunulamaz."
-      status: unresolved
+      status: resolved
     - statement: "Kaynak türü, eksik kanıt ve sürüm/kesim belirsizliği parti lehine veya aleyhine sonuç, bağımsız doğrulama veya güncellik güvencesi haline getirilemez."
-      status: unresolved
-unverified_prohibitions:
+      status: resolved
+unverified_prohibitions: []
+human_accepted_prohibitions:
   - statement: "Kapsam seçimi ve parti teslim sırası siyasi destek, başarı sıralaması veya oy yönlendirmesi olarak sunulamaz."
-    status: flagged-unverified
-    verification: null
-    human_accepted: false
+    status: verified
+    verification: "02-UAT.md — kullanıcı pass yanıtı"
+    human_accepted: true
   - statement: "Aynı adlı ayrı tüzel partiler, milletvekili üyeliği ve ortak Meclis grubu tek bir siyasi kimlikmiş gibi sunulamaz."
-    status: flagged-unverified
-    verification: null
-    human_accepted: false
+    status: verified
+    verification: "02-UAT.md — kullanıcı pass yanıtı"
+    human_accepted: true
   - statement: "Kaynak türü, eksik kanıt ve sürüm/kesim belirsizliği parti lehine veya aleyhine sonuç, bağımsız doğrulama veya güncellik güvencesi haline getirilemez."
-    status: flagged-unverified
-    verification: null
-    human_accepted: false
+    status: verified
+    verification: "02-UAT.md — kullanıcı pass yanıtı"
+    human_accepted: true
 raw_diagnostics:
   - requirement_id: DOS-01
     category: unclassified
@@ -252,17 +254,26 @@ raw_diagnostics:
     resolution: null
     reason: null
     probe: "unclassified — review manually"
-human_verification:
+human_verification: []
+human_verification_completed:
   - test: "H4 — Kapsam seçimi ve parti teslim sırası siyasi destek, başarı sıralaması veya oy yönlendirmesi olarak sunulamaz."
+    result: pass
+    response: "pass"
     expected: "Kapsam seçimi ve teslim sırası yöntem/kullanıcı kararı olarak kalır; siyasi destek, başarı sıralaması veya oy yönlendirmesi üretilmez."
     why_human: "02-10 PLAN maddesi unresolved ve descriptor-less; yetkili insan çözümü kaydı yok. Verifier Step 2b/Step 9 bu öğeyi açık insan kalemi sayar; teknik test başarısı kabul yerine geçmez."
   - test: "H5 — Aynı adlı ayrı tüzel partiler, milletvekili üyeliği ve ortak Meclis grubu tek bir siyasi kimlikmiş gibi sunulamaz."
+    result: pass
+    response: "pass"
     expected: "Ayrı tüzel kimlik, bireysel parti üyeliği ve ortak Meclis grubu ayrımı anlatıda korunur."
     why_human: "02-10 PLAN maddesi unresolved ve descriptor-less; yetkili insan çözümü kaydı yok. Verifier Step 2b/Step 9 bu öğeyi açık insan kalemi sayar; teknik test başarısı kabul yerine geçmez."
   - test: "H6 — Kaynak türü, eksik kanıt ve sürüm/kesim belirsizliği parti lehine veya aleyhine sonuç, bağımsız doğrulama veya güncellik güvencesi haline getirilemez."
+    result: pass
+    response: "pass"
     expected: "Kaynak türü, eksik kanıt ve sürüm/kesim belirsizliği siyasi sonuç, bağımsız doğrulama veya güncellik güvencesi sayılmaz."
     why_human: "02-10 PLAN maddesi unresolved ve descriptor-less; yetkili insan çözümü kaydı yok. Verifier Step 2b/Step 9 bu öğeyi açık insan kalemi sayar; teknik test başarısı kabul yerine geçmez."
 reading_recommendations: [H1, H2, H3]
+uat_completed: 2026-11-12T04:32:29.265609Z
+
 ---
 
 # Faz 2: Bütün partiler için dosyalar ve sürümlü kaynaklar — Doğrulama
@@ -270,12 +281,12 @@ reading_recommendations: [H1, H2, H3]
 **Amaç:** Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir.
 **MVP Goal:** As a reader, I want to inspect the dossiers with five common headings and their source versions for every party in the approved scope in one report, so that I can examine the party files and their evidence together.
 **Doğrulama:** 2026-11-12T01:25:50Z
-**Durum:** human_needed
+**Durum:** passed — kullanıcı UAT 3/3
 **Yeniden doğrulama:** Evet — önceki tek uygulama açığı SC3/KAY-01 için dar yeniden doğrulama.
 
-**Teslim sonucu:** Güncel yerel ac4b8fdec02f4a9ebb666036ed251683, üretici15 ile dokuz dosyayı ve kaynaklarını birlikte sunuyor. **13/13 teslim doğrusu ve dört gereksinim karşılandı; açık uygulama açığı veya davranış kanıtı eksiği yok.** Dört ham tanı sınıflandırılmamış, üç descriptor-less prohibition için insan çözümü kaydı verilmemiştir.
+**Teslim sonucu:** Güncel yerel ac4b8fdec02f4a9ebb666036ed251683, üretici15 ile dokuz dosyayı ve kaynaklarını birlikte sunuyor. **13/13 teslim doğrusu ve dört gereksinim karşılandı; açık uygulama açığı veya davranış kanıtı eksiği yok.** Dört ham tanı sınıflandırılmamış olarak korunur. Üç ortak ilke kullanıcı tarafından 02-UAT.md testlerinde ayrı ayrı “pass” yanıtıyla onaylanmıştır.
 
-human_needed, üç prohibition'ın verifier Step2b/Step9 gereğince sessizce kabul edilememesinden doğar. Kaynak kullanımı için kişi veya belge başına insan ön onayı, bağımsız sicil-domain kanıtı ya da kesin yürürlük belgesi şartı getirmez. H1–H3 okuma önerileri ek uygulama kapısı değildir. Faz1 kullanıcı kabulü bu faza genişletilmedi.
+Önceki human_needed durumu üç ortak ilkenin insan kontrolünü bekliyordu; kullanıcı bu fazın üç kontrolünü doğrudan onayladı. Kaynak kullanımı için kişi veya belge başına insan ön onayı, bağımsız sicil-domain kanıtı ya da kesin yürürlük belgesi şartı getirmez. H1–H3 okuma önerileri ek uygulama kapısı değildir. Faz1 kullanıcı kabulü bu faza genişletilmedi.
 
 ## User Flow Coverage
 
@@ -444,7 +455,7 @@ Disconfirmation bulgusu olan kısmi KAY-01 somut yeni HTML'de kapandı; önceki 
 | CR-09 HTTP-only non-UTF8 | INFO | Yeni çözülemeyen capture açık hata; eski baytlar korunur; mevcut girdilerde yeni blocker değil |
 | Bazı arşiv görsel/font ve sabit PDF mobil kaydırma sınırı | INFO / okuma önerisi | Ana rapor akışı mevcut; piksel eşdeğerliği iddiası yok |
 
-### Unresolved Diagnostics and Prohibitions
+### Diagnostics and Prohibitions — Teknik İnceleme Anındaki Durum
 
 | ID | category | status | verification | resolution | reason | probe |
 |---|---|---|---|---|---|---|
@@ -463,9 +474,11 @@ Bu satırlar özgül test veya davranış tanımı içermediğinden yeni uygulam
 
 **unverified-prohibition — human review recommended (3).** Planın status=unresolved ve eksik verification/check_* descriptor'ı korunur; judgment/test-tier yaptırımı ya da insan kararı uydurulmadı. Gözlenen doğru atıf/kimlik/belirsizlik uygulaması teknik kanıttır. Verifier sözleşmesi bu değer yargılarını sessiz passed olarak işaretlemeye izin vermez.
 
-### Human Verification Required
+### Human Verification — Kullanıcı Kontrolleri Tamamlandı
 
 Bu üç end-of-phase öğe kod açığı veya kaynak kullanımı için ön onay değildir. İlk rapordaki dokuz PLAN human-check tekrarları aşağıdaki okuma önerilerinde ve bu üç prohibition maddesinde birleştirilmiştir.
+
+**Kapanış:** Aşağıdaki gerekçeler teknik inceleme anındaki insan ihtiyacını açıklar; H4–H6 artık 02-UAT.md içinde 3/3 pass ile tamamlanmıştır.
 
 #### H4 — Kapsam ve sıradan siyasi yönlendirme üretmeme
 
@@ -508,7 +521,20 @@ Dört ham tanı ve üç prohibition çözülmemiştir. human_needed yalnız veri
 _Doğrulayan: gsd-verifier_
 _Kapsam: gerçek yerel üretici15 SC3 kapanışı; geçen diğer unsurlarda ilk doğrulamanın somut kanıtı yeniden kullanıldı._
 
-
-## Kapanış takibi eşitlemesi
+## Kapanış takibi eşitlemesi — UAT Öncesi Tarihsel Kayıt
 
 Root, teknik teslim kararını değiştirmeden STATE/ROADMAP/PROJECT kayıtlarını üç maddelik UAT bekleme durumuna eşitledi ve aynı 150 dosyanın parmakizini resmî verification.fingerprint aracıyla yeniledi. Kaynak, kod ve rapor verileri değişmedi. human_needed kararı ve üç bekleyen insan maddesi korunur; kullanıcı sonucu henüz kaydedilmemiştir.
+
+## Kullanıcı doğrulaması kapanışı — 2026-11-12T04:32:29.265609Z
+
+Kullanıcı üç kontrolün her birine ayrı ayrı `pass` yanıtı verdi. [02-UAT.md](02-UAT.md), `status: complete`, 3 geçen test ve 0 sorunla bea39ad commitinde kaydedildi.
+
+| Kontrol | UAT | Kullanıcı yanıtı | Sonuç |
+|---|---|---|---|
+| H4 — Siyasi destek veya sıralama üretmeme | 1 | pass | Geçti |
+| H5 — Ayrı parti, üyelik ve ortak grup kimliklerini koruma | 2 | pass | Geçti |
+| H6 — Belirsizlikten siyasi sonuç veya güvence üretmeme | 3 | pass | Geçti |
+
+Önceki inceleme anına ait unresolved/flagged-unverified ifadeleri yukarıda tarihsel kanıt olarak kalır; üç ortak ilkenin güncel insan kararı bu kapanışta ve frontmatter içinde kayıtlıdır. Dört ham tanı aynı unclassified/unresolved durumundadır; bunlara otomatik çözüm veya yeni siyasi doğruluk güvencesi verilmedi. Teknik teslim 13/13, gereksinimler 4/4; yeni otomatik test, kaynak araştırması veya kamu yayını yapılmadı.
+
+Kapanıştaki değişiklikler yalnız planlama/doğrulama metaverisidir. Kod, araştırma verileri ve rapor dosyalarında bu oturumdan kaynaklanan fark yoktur. UAT kabul kaydı da kapsama eklenerek 151 girdinin parmakizi resmî verification.fingerprint aracıyla yeniden hesaplandı.

@@ -1,18 +1,18 @@
 ---
 gsd_state_version: "1.0"
 milestone: v1.0
-current_phase: 02
-current_phase_name: Bütün partiler için dosyalar ve sürümlü kaynaklar
-current_plan: 10
-status: verifying
-stopped_at: "Faz 2 teknik teslimi tamam; üç ortak ilke için 02-UAT kullanıcı kontrolü bekleniyor"
-last_updated: "2026-11-12T01:33:29.768205Z"
+current_phase: 3
+current_phase_name: Tüzük ve programların karşılaştırılması
+current_plan: Not started
+status: planning
+stopped_at: "Faz 2 tamamlandı; Faz 3 görüşme ve planlama için hazır"
+last_updated: "2026-11-12T04:33:52.363Z"
 last_activity: 2026-11-11
-last_activity_desc: "10/10 plan, dokuz dosyalı üretici15 raporu ve 13/13 teknik teslim doğrusu hazır; yalnız H4–H6 kullanıcı kontrolü bekleniyor"
-state_head: cc266a0cceb5cf6e0bcb966e5b83ac4d78eac665
+last_activity_desc: Faz 2 UAT 3/3 geçti, 0 sorun; Faz 3 planlama için hazır
+state_head: bea39ad2819101c19343a5c2560e0bb7aaa369f8
 progress:
   total_phases: 6
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 16
   completed_plans: 16
 ---
@@ -24,18 +24,18 @@ progress:
 See: .planning/PROJECT.md (updated 2026-11-11)
 
 **Core value:** Kaynağına kadar izlenebilen, karşılaştırılabilir ve eksiklerini açıkça gösteren siyasi parti bilgisine eşit erişim.
-**Current focus:** Phase 02 — Bütün partiler için dosyalar ve sürümlü kaynaklar
+**Current focus:** Phase 03 — Tüzük ve programların karşılaştırılması
 
 ## Current Position
 
-Current Plan: 10
-Total Plans in Phase: 10
-Phase: 02 (Bütün partiler için dosyalar ve sürümlü kaynaklar) — HUMAN VERIFICATION PENDING
-Plan: 10/10 tamamlandı; teknik doğrulama 13/13, üç ortak ilke UAT bekliyor
-Status: Awaiting user verification — $gsd-verify-work 2
-Last activity: 2026-11-11 — Yerel güncel rapor ac4b8fdec02f4a9ebb666036ed251683, üretici15; dokuz dosya, kaynaklı kart/kronoloji ve sürüm geçmişleri hazır. Nihai değerlendirmede 13/13 teknik teslim doğrusu ve dört kanonik gereksinim karşılandı. Üç descriptor-less ortak ilke için kullanıcı kontrolü 02-UAT.md dosyasında bekler; kaynak başına kabul kapısı yoktur. Faz kapatılmadı veya ilerletilmedi.
+Current Plan: Not started
+Total Plans in Phase: TBD
+Phase: 3 — Tüzük ve programların karşılaştırılması
+Plan: Not started — Faz 3 bağlamı ve ayrıntılı planı henüz hazırlanmadı
+Status: Ready to plan
+Last activity: 2026-11-11 — Faz 2 kullanıcı UAT 3/3 geçti; 10/10 plan ve 13/13 teknik teslim doğrusu ile tamamlandı. Faz 3 görüşme/planlama için hazır.
 
-Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 10/10 plan ve 13/13 teknik teslim doğrusu; UAT 0/3
+Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3
 
 ## Performance Metrics
 
@@ -50,12 +50,12 @@ Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 10/10
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 | 6 | - | - |
-| 2 | 10/10 | - | - |
+| 02 | 10 | - | - |
 
 **Recent Trend:**
 
 - Last 5 plans: 02-06, 02-07, 02-08, 02-09, 02-10
-- Trend: Faz 1 tamamlandı; Faz 2 yürütümü 10/10 ve teknik teslimi 13/13. Güncel yerel üretici15 raporu hazır; üç ortak ilke UAT bekliyor. Kamu raporu 261111-epm sürümünde kalır.
+- Trend: Faz 1 tamamlandı; Faz 2 yürütümü 10/10 ve teknik teslimi 13/13. Güncel yerel üretici15 raporu hazır; kullanıcı UAT 3/3 geçti, faz tamamlandı. Kamu raporu 261111-epm sürümünde kalır.
 
 **Per-Plan Metrics:**
 
@@ -84,7 +84,7 @@ Progress: [██░░░░░░░░] 17% (tamamlanan fazlar); Faz 2: 10/10
 
 Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
-- [Güncel 2026-11-11]: Kaynak derleme politikasıyla dokuz dosya ac4b8fdec02f4a9ebb666036ed251683 yerel sürümünde; açık atıf, pasif arşiv, içerik önceliği ve tam teslimi bozmayan --refresh uygulanmıştır. Sol/xhigh nihai değerlendirmesi 13/13 teknik teslim doğrusu verdi; yalnız üç ortak ilke UAT bekler. Aşağıdaki ilerleme sayıları tarihsel karar anlarını gösterir.
+- [Güncel 2026-11-11]: Kaynak derleme politikasıyla dokuz dosya ac4b8fdec02f4a9ebb666036ed251683 yerel sürümünde; açık atıf, pasif arşiv, içerik önceliği ve tam teslimi bozmayan --refresh uygulanmıştır. Sol/xhigh nihai değerlendirmesi 13/13 teknik teslim doğrusu verdi; üç ortak ilke kullanıcı UAT 3/3 ile tamamlandı. Aşağıdaki ilerleme sayıları tarihsel karar anlarını gösterir.
 
 - Başlangıç ön listesi TBMM kayıtlarına dayalı dokuz partidir; CHP ve Cumhur İttifakı'nın mevcut/geçmiş ortakları dışarıdadır.
 - Doğrudan aktarım siyah ve tırnak içinde, kaynaklı yapay zekâ özeti koyu mavidir; görünür metin türü etiketi kullanılmaz, veri kökeni kayıtlarda korunur. Kaynakta olmayan olgu üretilmez.
@@ -113,7 +113,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 02]: 02-07: DBP, 4a4ce5448c894a9ebc3c12e97cacb6dd yerel sürümü ve Yeni Yol’a bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol,dbp. Gerçek sicil yargitay-117, kuruluş 02.05.2008; BDP–DBP bağı açık metinlerle kaynaklıdır. Ayrı güncel program ve birincil kuruluş tutanakları açık kaldı. UTF-8 pasif görünüm hatası regresyonla düzeltildi; ilk aday ve eski baytlar korundu.
 - [Phase 02]: 02-09: Saadet d42f5105a1a1431d86cdfb3db8669fe2 yerel sürümü ve EMEP’e bağlı makbuzla teslim; prefix tip,dem,iyi,yeni-yol,dbp,emep,saadet. Gerçek sicil yargitay-70, kuruluş 20.07.2001; Yeni Yol/grup/üyelik ayrımı korunur. Tam 25 sayfa tüzük ve 70 sayfa program ile 2002 ikinci baskı edinildi; asıl tutanaklar, eski program ve tam sürüm zinciri açık.
 
-- [Phase 02]: 02-10: Demokrat bcc67d04d9d741e191589d0f5ac173ca yerel sürümü ve Saadet’e bağlı makbuzla teslim; tam prefix tip,dem,iyi,yeni-yol,dbp,emep,saadet,demokrat. Gerçek sicil yargitay-3, kuruluş 23.06.1983 ve ad değişikliği 27.05.2007 ayrı; 1946 DP ve ayrı güncel DYP kaynaklı notlarla ayrılır. Dokuz dosya audit’i, 32 test ve son makbuzdan sonra sekiz sıralı receipt-check geçti. Dört ham probe/üç descriptor-less prohibition unresolved ve flagged-unverified kalır; fazın tamamı henüz kapatılmadı.
+- [Phase 02]: 02-10: Demokrat bcc67d04d9d741e191589d0f5ac173ca yerel sürümü ve Saadet’e bağlı makbuzla teslim; tam prefix tip,dem,iyi,yeni-yol,dbp,emep,saadet,demokrat. Gerçek sicil yargitay-3, kuruluş 23.06.1983 ve ad değişikliği 27.05.2007 ayrı; 1946 DP ve ayrı güncel DYP kaynaklı notlarla ayrılır. Dokuz dosya audit’i, 32 test ve son makbuzdan sonra sekiz sıralı receipt-check geçti. Teslim anında dört ham probe/üç descriptor-less prohibition unresolved ve flagged-unverified idi. Kapanışta üç ortak ilke kullanıcı UAT ile onaylandı; dört ham tanı korunarak faz tamamlandı.
 
 ### Pending Todos
 
@@ -121,14 +121,14 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Faz 2 güncel]: Açık uygulama açığı yok. Kapanış için 02-UAT.md içindeki üç ortak ilke kullanıcı kontrolü bekler; dört ham tanı unclassified/unresolved kalır. Kaynaklar için tekil insan kabulü kullanım koşulu değildir.
+- [Faz 2 kapanış]: Açık uygulama açığı yok; 02-UAT.md içindeki üç ortak ilke kullanıcı tarafından ayrı ayrı pass ile onaylandı. Faz 2 tamamlandı; dört ham tanı unclassified/unresolved olarak korunur. Kaynaklar için tekil insan kabulü kullanım koşulu değildir.
 - [Faz 2 destek sınırı]: UTF-8 dışı kodlama yalnız HTTP başlığında kalıyorsa yeni yakalama açık hata verir; meta/BOM desteklenir. Eski baytlar korunur.
 
 - Faz 1 için açık uygulama engeli yok; 8/8 UAT toplu kullanıcı kabulüyle kapandı.
 - [2026-11-11 düzeltmesi]: Yeni Parti site/tüzük/program kullanım engelleri çözüldü; önceki girişimler tarihçede korunur. Gerçek ulusal kesin hesap ve Kocaeli hesap başlangıcı belirsizliği sürer; tüzükteki mali kurallar gerçekleşmiş harcama olarak sunulmaz.
 - [Phase 1 → Phase 2] COVERAGE.md içindeki 13 unclassified/unresolved ham uç satırı değiştirilmedi. Kullanıcı bu yöntem sınırlarıyla fazı kabul etti; bunlar yeni kaynak kanıtı veya otomatik sınıflandırma sonucu değildir.
 - [Phase 2] Parti tüzel kimliği, bireysel milletvekili üyeliği ve ortak grup ayrımı kapsam genişlerken korunacak; model/maliyet tercihleri değişmedi.
-- [Phase 2] Planlar bağımsız incelemeden bir sıra çelişkisi düzeltilerek geçti; 4/4 gereksinim ve 12/12 karar kapsandı. Dört sınıflandırılamayan ham uç varsayımı ve üç descriptor-less prohibition çözülmüş/doğrulanmış sayılmadan 02-10-PLAN.md içinde korundu; faz sonu doğrulamasına taşınır.
+- [Phase 2] Planlar bağımsız incelemeden bir sıra çelişkisi düzeltilerek geçti; 4/4 gereksinim ve 12/12 karar kapsandı. Plan zamanındaki dört sınıflandırılamayan ham uç varsayımı ve üç descriptor-less prohibition 02-10-PLAN.md içinde tarihsel olarak korunur. Kapanışta yalnız üç ortak ilke kullanıcı UAT ile onaylandı; dört ham tanı değişmedi.
 
 ### Quick Tasks Completed
 
@@ -151,6 +151,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-12T01:33:29.768205Z
-Stopped at: Faz 2 teknik teslimi hazır; $gsd-verify-work 2 ile üç ortak ilke kontrolü bekleniyor
-Resume file: .planning/phases/02-b-t-n-partiler-i-in-dosyalar-ve-s-r-ml-kaynaklar/02-UAT.md
+Last session: 2026-11-12T04:33:51.672Z
+Stopped at: Faz 2 tamamlandı; Faz 3 görüşme ve planlama için hazır
+Resume file: None

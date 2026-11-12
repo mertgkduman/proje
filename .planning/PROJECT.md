@@ -17,15 +17,17 @@ Herkesin siyasi partiler hakkında kendi değerlendirmesini yapabilmesi için ka
 - ✓ Yeni Parti'nin beş başlıklı kaynaklı pilotu; girişim destekli eksikler, metin kökeni ve olgu/beyan/yorum ayrımı — Faz 1 (KAY-02–03, MET-01–04, EKS-01–02).
 - ✓ Kapalı SQLite snapshot'ından sürümlü JSON/HTML ve arşiv zinciri — Faz 1 (VER-01).
 
+- ✓ Onaylı dokuz partinin ortak beş başlıklı dosyaları ve kaynaklı kimlik kartları/kronolojileri — Faz 2 (DOS-01–02); sonraki fazların ayrıntılı araştırmaları ayrı kapsamdır.
+- ✓ Kaynak türleri, birincil önceliği ve atıflı ikincil kaynak kullanımının ortak yöntemle gösterimi — Faz 2 (KAY-01).
+- ✓ Bulguların kendi belge sürümüne/dönemine bağlanması ve eski sürümlerin korunması — Faz 2 (KAY-04).
+
 Kullanıcı `$gsd-verify-work 1 onaylıyorum` yanıtıyla sekiz UAT kontrolünü topluca kabul etti. Bu doğrulama pilot ve ortak yöntemin ilk uygulaması içindir; bütün parti dosyaları ve karşılaştırmalar sonraki fazlardadır.
 
 ### Active
 
-- [ ] Her parti için kuruluş ve temel bilgiler, tüzük, program, söylem–uygulama ve finansman–harcamalar başlıkları altında standart bilgi dosyası hazırlamak.
 - [ ] Parti üyelerinin haklarını, yönetimin seçilmesini ve denetlenmesini, farklı görüşlerin ifade mekanizmalarını belge maddelerine dayanarak incelemek.
 - [ ] Kamuoyuna açıklanan ilke ve vaatleri belgelenmiş uygulamalarla, ilgili aktör, tarih ve bağlam korunarak karşılaştırmak.
 - [ ] Finansman kaynaklarını ve harcama kalemlerini erişilebilen belgelere dayanarak incelemek; tutarların kapsadığı dönem ve para birimini kaydetmek.
-- [ ] Birincil kaynaklara öncelik vermek; güvenilir gazetecilik, akademik araştırmalar ve bağımsız raporların kullanımını kaynak türüyle birlikte açıkça göstermek.
 - [ ] Her önemli bulguya kaynak bağlantısı, belge tarihi, varsa sürüm, ilgili madde veya sayfa, erişim tarihi ve doğrulama tarihi eklemek.
 - [ ] Kaynak bağlantılarını ve elde edilen belgeleri, değişiklikleri izlenebilen bir belge arşivinde toplamak.
 - [ ] Kaynaktan doğrudan aktarılan metni siyah ve tırnak içinde; yapay zekâ tarafından kaynaklardan özetlenip düzenlenen metni koyu mavi göstermek; metin kökenini veri kayıtlarında korumak.
@@ -150,7 +152,7 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 
 ### Faz 2 yerel teslim durumu — 2026-11-11
 
-Onaylı dokuz partinin ortak beş başlıklı dosyaları, kaynaklı kimlik kartları/kronolojileri ve belge sürümleri [güncel yerel raporda](../data/releases/ac4b8fdec02f4a9ebb666036ed251683/index.html) hazırdır. Üretici15, şema5 ve kaynak politikası2 özgün kaynak baytlarını ve sekiz ayrı teslim makbuzunu korur; tamamlanmış sıradan yeni okuyucu sürümü --refresh ile üretilebilir. Son değerlendirme 13/13 teknik teslim doğrusu ve dört kanonik gereksinimi karşılanmış buldu. Üç ortak ilke için kullanıcı kontrolü 02-UAT.md dosyasında bekler; faz henüz kapatılmamıştır. Söylem–uygulama ve mali araştırmanın sonraki fazlara ait kısımları açıkça Henüz incelenmedi kalır. Herkese açık site önceki Yeni Parti düzeltmesini sunar; dokuz dosyalı bu sürüm yereldir.
+Onaylı dokuz partinin ortak beş başlıklı dosyaları, kaynaklı kimlik kartları/kronolojileri ve belge sürümleri [güncel yerel raporda](../data/releases/ac4b8fdec02f4a9ebb666036ed251683/index.html) hazırdır. Üretici15, şema5 ve kaynak politikası2 özgün kaynak baytlarını ve sekiz ayrı teslim makbuzunu korur; tamamlanmış sıradan yeni okuyucu sürümü --refresh ile üretilebilir. Son değerlendirme 13/13 teknik teslim doğrusu ve dört kanonik gereksinimi karşılanmış buldu. Kullanıcı üç ortak ilkeyi 02-UAT.md içinde ayrı ayrı “pass” yanıtlarıyla onayladı; 3/3 geçen kontrol ve 0 sorunla Faz 2 tamamlandı. Dört ham tanı unclassified/unresolved olarak korunur. Söylem–uygulama ve mali araştırmanın sonraki fazlara ait kısımları açıkça Henüz incelenmedi kalır. Herkese açık site önceki Yeni Parti düzeltmesini sunar; dokuz dosyalı bu sürüm yereldir.
 
 ## Constraints
 
@@ -190,7 +192,9 @@ Onaylı dokuz partinin ortak beş başlıklı dosyaları, kaynaklı kimlik kartl
 | Yeni kanıtla çözülen eksikleri tarihçede korumak | Aday/eksik geçişini ve kanıt değişimini izlemek | Faz 1 aday ledger ve çözüm kayıtlarıyla uygulandı |
 | Faz 1 UAT kabulünü toplu kullanıcı yanıtıyla kaydetmek | Kullanıcının açık onayıyla kapanış; yeni test veya kaynak olgusu üretmemek | 8/8 kabul, bildirilen sorun yok; ham 13 uç sınıflandırması ve kaynak eksikleri korunur |
 
-| 11 Kasım 2026 D-13–D-16 kaynak derleme düzeltmesi | Kullanıcının kaynakları doğrudan ve atıflı kullanma kararı | Parti/haber/sosyal derleme, içerik öncelikli rapor ve pasif arşiv uygulandı; Faz 2 yürütümü 10/10, teknik teslimi 13/13; üç ortak ilke için UAT bekler |
+| 11 Kasım 2026 D-13–D-16 kaynak derleme düzeltmesi | Kullanıcının kaynakları doğrudan ve atıflı kullanma kararı | Parti/haber/sosyal derleme, içerik öncelikli rapor ve pasif arşiv uygulandı; Faz 2 yürütümü 10/10, teknik teslimi 13/13; üç ortak ilke için kullanıcı UAT 3/3 geçti, faz tamamlandı |
+
+| Faz 2 UAT sonucunu üç ayrı kullanıcı yanıtıyla kaydetmek | Siyasi yönlendirme, ayrı kimlik ve belirsizlik ilkeleri kullanıcı tarafından değerlendirildi | 3/3 pass, 0 sorun; dört ham tanı korunarak Faz 3 bağlamına geçildi |
 
 ## Evolution
 
@@ -210,4 +214,4 @@ Bu belge aşama geçişlerinde ve kilometre taşı sınırlarında güncellenir.
 4. Parti kapsamı, kaynaklar, kullanıcı geri bildirimi ve çıktılardaki güncel durumu Context bölümüne işle.
 
 ---
-*Last updated: 2026-11-11 after Phase 2 technical delivery; three user verification items pending*
+*Last updated: 2026-11-11 after Phase 2 completion; user UAT 3/3 passed*
