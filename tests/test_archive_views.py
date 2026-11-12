@@ -2,6 +2,7 @@
 import hashlib
 import importlib.util
 import json
+import socket
 from pathlib import Path
 import tempfile
 import unittest
@@ -62,7 +63,10 @@ class ArchiveViews(unittest.TestCase):
             value.geturl=lambda:request.full_url
             return value
         resources=m.Resources('https://tip.org.tr/tuzuk/',True)
-        with patch('arsiv_gorunum.urllib.request.urlopen',side_effect=response):
+        def fetch(url,allowed):
+            value=response(__import__('urllib.request').request.Request(url),15)
+            return value.read(),value.headers.get_content_type(),url
+        with patch('arsiv_gorunum.fetch_asset',side_effect=fetch):
             local=resources.asset('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',resources.url,css=True)
             self.assertTrue(local.endswith('.css'))
             self.assertEqual(resources.assets[local],b'h1{color:red}')
@@ -82,13 +86,54 @@ class ArchiveViews(unittest.TestCase):
             content=(''.join('.f'+str(i)+'{src:url(/font'+str(i)+'.woff)}' for i in range(45))).encode() if url.endswith('.css') else b'local-static-asset'
             value=io.BytesIO(content);value.headers=Message();value.headers['Content-Type']='text/css' if url.endswith('.css') else 'image/png' if url.endswith('.png') else 'font/woff';value.geturl=lambda:url
             return value
-        with tempfile.TemporaryDirectory() as tmp, patch('arsiv_gorunum.urllib.request.urlopen',side_effect=response):
+        def fetch(url,allowed):
+            value=response(__import__('urllib.request').request.Request(url),15)
+            return value.read(),value.headers.get_content_type(),url
+        with tempfile.TemporaryDirectory() as tmp, patch('arsiv_gorunum.fetch_asset',side_effect=fetch):
             row=m.build_view(source,'https://example.org/program',Path(tmp))
             text=(Path(tmp)/row['index_path']).read_text()
             self.assertEqual(requested[0],'https://example.org/logo.png')
             self.assertRegex(text,r'elementor-tab-content[^}]*display:block!important')
             self.assertIn('.png"',text)
             self.assertTrue(m.validate_view(Path(tmp),row))
+
+    def test_asset_redirect_rejects_private_target_before_connection(self):
+        m=self.module()
+        class Response:
+            status=302
+            def getheader(self,name): return 'http://127.0.0.1/private'
+        class Connection:
+            def __init__(self,*args,**kwargs): self.sock=None
+            def request(self,*args,**kwargs): pass
+            def getresponse(self): return Response()
+            def close(self): pass
+        dns=lambda host,port,**kwargs: [(socket.AF_INET,socket.SOCK_STREAM,6,'',('93.184.216.34',port))]
+        with patch.object(m.socket,'getaddrinfo',side_effect=dns), patch.object(m.socket,'create_connection') as connect, patch.object(m.http.client,'HTTPConnection',Connection):
+            with self.assertRaises(ValueError):m.fetch_asset('http://example.org/image',{'example.org'})
+            connect.assert_called_once_with(('93.184.216.34',80),timeout=15)
+
+    def test_asset_dns_private_and_mixed_answers_are_rejected(self):
+        m=self.module()
+        for addresses in [('127.0.0.1',),('93.184.216.34','10.1.2.3')]:
+            answers=[(socket.AF_INET,socket.SOCK_STREAM,6,'',(ip,80)) for ip in addresses]
+            with self.subTest(addresses=addresses), patch.object(m.socket,'getaddrinfo',return_value=answers), patch.object(m.socket,'create_connection') as connect:
+                with self.assertRaises(ValueError):m.fetch_asset('http://example.org/image',{'example.org'})
+                connect.assert_not_called()
+
+    def test_allowed_redirect_host_re_resolves_and_rejects_private_ip(self):
+        m=self.module()
+        class Response:
+            status=302
+            def getheader(self,name): return '/private'
+        class Connection:
+            def __init__(self,*args,**kwargs): self.sock=None
+            def request(self,*args,**kwargs): pass
+            def getresponse(self): return Response()
+            def close(self): pass
+        answers=lambda ip:[(socket.AF_INET,socket.SOCK_STREAM,6,'',(ip,80))]
+        with patch.object(m.socket,'getaddrinfo',side_effect=[answers('93.184.216.34'),answers('127.0.0.1')]), patch.object(m.socket,'create_connection') as connect, patch.object(m.http.client,'HTTPConnection',Connection):
+            with self.assertRaises(ValueError):m.fetch_asset('http://example.org/image',{'example.org'})
+            connect.assert_called_once_with(('93.184.216.34',80),timeout=15)
 
     def test_correct_canonical_charter_and_program_render_as_separate_documents(self):
         m=self.module()

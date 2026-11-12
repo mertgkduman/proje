@@ -1,10 +1,14 @@
 """Özgün HTML baytlarından scriptsiz, yerel varlıklı sürümlü belge görünümü."""
 import hashlib
 import html
+import http.client
+import ipaddress
 from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+import socket
+import ssl
 import urllib.parse
 import urllib.request
 
@@ -19,9 +23,48 @@ MAX_ASSETS=40
 MAX_ASSET=8*1024*1024
 MAX_TOTAL=32*1024*1024
 STATIC_ASSET_HOSTS={'fonts.googleapis.com','fonts.gstatic.com','cdn.jsdelivr.net','cdnjs.cloudflare.com','unpkg.com'}
+MAX_REDIRECTS=5
 
 
 def digest(value): return hashlib.sha256(value).hexdigest()
+
+
+def fetch_asset(url, allowed):
+    """Validate every hop and connect only to an already validated address."""
+    for hop in range(MAX_REDIRECTS+1):
+        parsed=urllib.parse.urlsplit(url)
+        if parsed.scheme not in ('http','https') or not parsed.hostname or parsed.hostname not in allowed or parsed.username or parsed.password:
+            raise ValueError('Varlık yönlendirmesi kapsam dışında')
+        port=parsed.port or (443 if parsed.scheme=='https' else 80)
+        addresses=socket.getaddrinfo(parsed.hostname,port,type=socket.SOCK_STREAM)
+        def public(address):
+            ip=ipaddress.ip_address(address.split('%')[0])
+            return ip.is_global and not (ip.is_multicast or ip.is_reserved or ip.is_unspecified)
+        if not addresses or any(not public(a[4][0]) for a in addresses):
+            raise ValueError('Varlık adresi genel ağda değil')
+        address=addresses[0][4][0]
+        connection=http.client.HTTPConnection(parsed.hostname,port,timeout=15)
+        try:
+            sock=socket.create_connection((address,port),timeout=15)
+            if parsed.scheme=='https':
+                try: sock=ssl.create_default_context().wrap_socket(sock,server_hostname=parsed.hostname)
+                except Exception:
+                    sock.close()
+                    raise
+            connection.sock=sock
+            target=urllib.parse.urlunsplit(('', '', parsed.path or '/', parsed.query, ''))
+            connection.request('GET',target,headers={'User-Agent':'Mozilla/5.0 proje-arastirma/1.0'})
+            response=connection.getresponse()
+            if response.status in (301,302,303,307,308):
+                location=response.getheader('Location')
+                if not location or hop==MAX_REDIRECTS: raise ValueError('Varlık yönlendirmesi geçersiz veya sınırı aşıyor')
+                url=urllib.parse.urljoin(url,location)
+                continue
+            if not 200<=response.status<300: raise ValueError('Varlık HTTP hatası: '+str(response.status))
+            return response.read(MAX_ASSET+1),response.headers.get_content_type(),url
+        finally:
+            connection.close()
+    raise ValueError('Varlık yönlendirme sınırı')
 
 
 class Resources:
@@ -39,15 +82,11 @@ class Resources:
             self.limitations.append('Varlık sayısı/boyut sınırı: '+url[:250]); return None
         self.urls[url]=None
         try:
-            request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 proje-arastirma/1.0'})
-            with urllib.request.urlopen(request,timeout=15) as response:
-                final=urllib.parse.urlsplit(response.geturl())
-                if final.scheme not in ('https','http') or final.hostname not in allowed: raise ValueError('Varlık yönlendirmesi kapsam dışında')
-                value=response.read(MAX_ASSET+1); mime=response.headers.get_content_type()
+            value,mime,final=fetch_asset(url,allowed)
             if len(value)>MAX_ASSET or self.total+len(value)>MAX_TOTAL:raise ValueError('Varlık boyutu sınırı')
             if css:
                 if mime!='text/css':raise ValueError('CSS türü bekleniyordu')
-                value=self.css(value.decode('utf-8',errors='replace'),url,in_asset=True).encode()
+                value=self.css(value.decode('utf-8',errors='replace'),final,in_asset=True).encode()
                 extension='css'
             else:
                 types={'image/png':'png','image/jpeg':'jpg','image/gif':'gif','image/webp':'webp','image/x-icon':'ico','font/woff2':'woff2','font/woff':'woff','font/ttf':'ttf','font/otf':'otf','application/font-sfnt':'ttf','application/octet-stream':'woff2'}
