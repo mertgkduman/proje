@@ -469,6 +469,13 @@ def validate_comparisons(data):
     for key, topic in topics.items():
         if key[1] > contract['taxonomy_version'] or not all(topic[k] for k in ('domain', 'definition', 'applicable_levels', 'basis_kind')):
             raise ValueError('Karşılaştırma konusu geçersiz')
+        if key[1] >= 2:
+            dictionary_topic = next((t for t in data.get('topic', []) if (t['id'], t['taxonomy_version']) == key), None)
+            bases = [b for b in data.get('topic_basis', []) if (b['topic_id'], b['taxonomy_version']) == key]
+            if not dictionary_topic or dictionary_topic['status'] != 'verified' or not bases:
+                raise ValueError('Karşılaştırma konusu doğrulanmış kaynak dayanağı gerektirir')
+            if any(b.get('source_role') not in ('charter','program','supplement','historical') or b['passage_id'] not in passages or passages[b['passage_id']]['version_id'] not in attrs or not b['rationale'] for b in bases):
+                raise ValueError('Karşılaştırma konusu atıflı ve türü belirtilmiş dayanak gerektirir')
         position = (topic['taxonomy_version'],topic['parent_topic_id'],topic['order_index'])
         if position in positions or not isinstance(topic['order_index'], int) or topic['order_index'] < 0: raise ValueError('Konu sırası geçersiz')
         positions.add(position)
