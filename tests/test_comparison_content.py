@@ -26,14 +26,14 @@ class ComparisonContentTest(unittest.TestCase):
             'uyusturucu-mucadele': 'UYUŞTURUCUYA KARŞI',
             'tuketici-haklari': 'Tüketiciler Korunmalı',
             'yaribaskanlik-sistemi': 'Yarı Başkanlık',
-            'senato': 'SENATO',
+            'senato': 'Senato',
             'yabanci-sermaye': 'Yabancı Sermaye',
             'finansal-hizmetler': 'Finansal Hizmetler',
             'abd-iliskileri': 'ABD İlişkileri',
             'istihbarat': 'İSTİHBARAT',
         }
         for identifier, heading in expected.items():
-            self.assertEqual(passages['03-program-' + identifier].casefold(), heading.casefold(), identifier)
+            self.assertEqual(passages['03-program-' + identifier], heading, identifier)
 
     def test_repeated_fields_merge_only_when_conditions_match_and_keep_sources(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
