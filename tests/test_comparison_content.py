@@ -91,6 +91,8 @@ class ComparisonContentTest(unittest.TestCase):
                     db.execute('ALTER TABLE topic_basis ADD COLUMN source_role TEXT')
                 db.execute("INSERT INTO topic VALUES (?,?,?,?,?,?)", ('test-demokrasi', 'Demokrasi', 2, '2026-11-13', 'verified', 'Test'))
                 db.execute("INSERT INTO topic_basis (topic_id,taxonomy_version,passage_id,rationale,source_role) VALUES (?,?,?,?,?)", ('test-demokrasi', 2, 'epm-parliamentary-p', 'Programdaki yönetim sistemi', 'program'))
+                db.execute("INSERT INTO topic VALUES (?,?,?,?,?,?)", ('test-dem-tuzuk', 'Tüzük', 2, '2026-11-13', 'verified', 'Test'))
+                db.execute("INSERT INTO topic_basis (topic_id,taxonomy_version,passage_id,rationale,source_role) VALUES (?,?,?,?,?)", ('test-dem-tuzuk', 2, '0204-dem-charter-hedep', 'DEM tüzüğündeki ifade', 'charter'))
                 db.commit()
             finally:
                 db.close()
