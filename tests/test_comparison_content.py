@@ -13,6 +13,13 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_new_comparison_topic_requires_a_sourced_dictionary_topic(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        data['comparison_contract'][0].update(taxonomy_version=2, stage='partial')
+        data['comparison_topic'].append(dict(topic_id='unsupported', taxonomy_version=2, domain='program', parent_topic_id=None, order_index=1, definition='Kaynaklanmamış konu', applicable_levels='ulusal', basis_kind='program'))
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+
     def test_complete_stage_requires_a_closed_source_inventory(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         data['scope_party'] = [p for p in data['scope_party'] if p['party_id'] in ('iyi', 'tip')]
