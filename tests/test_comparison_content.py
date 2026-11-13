@@ -71,6 +71,10 @@ class ComparisonContentTest(unittest.TestCase):
         self.assertEqual(records[0]['kind'], 'comparison_source_inventory')
         self.assertEqual(records[0]['values']['topic_ids'], ['merkez-yonetimi-secimi'])
         self.assertEqual(records, convert(inventory, 1))
+        inventory['taxonomy_version'] = 2
+        next_version = convert(inventory, 2)
+        self.assertNotEqual(records[0]['values']['id'], next_version[0]['values']['id'])
+        inventory['taxonomy_version'] = 1
         section['unmatched_headings'] = ['Eşleşmeyen başlık']
         with self.assertRaises(ValueError):
             convert(inventory, 1)
