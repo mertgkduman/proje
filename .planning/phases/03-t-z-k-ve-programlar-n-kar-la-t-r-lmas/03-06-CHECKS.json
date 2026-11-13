@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "release_id": "a828140c2fb649b5b8d0cef32b42769e",
+  "application_code_unchanged_since": "45c7c40",
+  "code_test_baseline": "03-04-checks/result.json (124 unique tests passed)",
+  "package_row_and_reciprocal_links": {
+    "charter": {
+      "all_unique_rows": 249,
+      "active_taxonomy_rows": 249
+    },
+    "program": {
+      "all_unique_rows": 175,
+      "active_taxonomy_rows": 175
+    }
+  },
+  "change_records": "canonical old/new passage and order_basis verified;66 total in charter SUMMARY",
+  "original_source_sha256": "passed",
+  "original_source_metadata_preserved": true,
+  "program_topics_with_content_or_reviewed_scope": 135,
+  "pdf_gap": "format-specific0205-iyi-missing-program-pdf retained; HTML programme available",
+  "party_not_researched_rows": 0,
+  "phase2_delivery_preserved": true,
+  "executor_audits": [
+    "PHASE3_AUDIT_OK 8916515f456d479e8b55011533c22db1",
+    "PHASE3_AUDIT_OK a828140c2fb649b5b8d0cef32b42769e",
+    "PHASE2_AUDIT_OK a828140c2fb649b5b8d0cef32b42769e"
+  ],
+  "audit_record": "03-06-SUMMARY.md",
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "upcoming_key_links": "Yeni Yol package pending as expected; symbolic renderer target manually verified through package row anchors and reciprocal links",
+  "known_navigation_limit": "Renderer17 absence scope/source inline presentation; tracked for03-15/16",
+  "backfill": "Reasoned registration cancellation/re-enrolment distinct from disciplinary expulsion;24–60-month early-childhood care/education; tracked for03-14",
+  "guard_recovery": "Initial attempt selected an unbound documentation example; root verified checkout and exact bound guard; fresh executor completed with no duplicate production work"
+}
