@@ -5,11 +5,11 @@ current_phase: 03
 current_phase_name: Tüzük ve programların karşılaştırılması
 current_plan: 3
 status: executing
-stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-11-13T08:55:01.824Z"
+stopped_at: 03-02 complete; 123 unique regression tests passed; continuing 03-03
+last_updated: "2026-11-13T10:03:12.737Z"
 last_activity: 2026-11-13
 last_activity_desc: 03-02 source inventory and partial comparison complete
-state_head: b71f616e0e79aebcca90bba62932785932d08d99
+state_head: 084f764abcf1e7473cff815c5398513c1f7c97e4
 progress:
   total_phases: 6
   completed_phases: 2
@@ -134,7 +134,6 @@ None yet.
 - [Phase 1 → Phase 2] COVERAGE.md içindeki 13 unclassified/unresolved ham uç satırı değiştirilmedi. Kullanıcı bu yöntem sınırlarıyla fazı kabul etti; bunlar yeni kaynak kanıtı veya otomatik sınıflandırma sonucu değildir.
 - [Phase 2] Parti tüzel kimliği, bireysel milletvekili üyeliği ve ortak grup ayrımı kapsam genişlerken korunacak; model/maliyet tercihleri değişmedi.
 - [Phase 2] Planlar bağımsız incelemeden bir sıra çelişkisi düzeltilerek geçti; 4/4 gereksinim ve 12/12 karar kapsandı. Plan zamanındaki dört sınıflandırılamayan ham uç varsayımı ve üç descriptor-less prohibition 02-10-PLAN.md içinde tarihsel olarak korunur. Kapanışta yalnız üç ortak ilke kullanıcı UAT ile onaylandı; dört ham tanı değişmedi.
-- Faz 3 dalga 1: genel test takımı 1800s süre aşımında kaldı (tam başarı değil); eski renderer beklentisi düzeltildi ve ilgili TİP senaryosu 1/1 geçti. Faz sonu regresyon kapsamı ayrıca tamamlanmalı.
 
 ### Quick Tasks Completed
 
@@ -157,6 +156,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-13T08:55:01.301Z
-Stopped at: Completed 03-02-PLAN.md
+Last session: 2026-11-13T10:03:12.169Z
+Stopped at: 03-02 complete; 123 unique regression tests passed; continuing 03-03
 Resume file: None

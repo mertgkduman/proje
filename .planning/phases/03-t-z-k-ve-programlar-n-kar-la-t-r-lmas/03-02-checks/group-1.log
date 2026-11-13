@@ -1,0 +1,19 @@
+test_all_eligible_ids_reach_db_json_and_html (test_matches.MatchContract.test_all_eligible_ids_reach_db_json_and_html) ... ok
+test_separate_reviewed_evidence_event_party_and_topic (test_matches.MatchContract.test_separate_reviewed_evidence_event_party_and_topic) ... ok
+test_detects_corrupt_readable_archive (test_publication.PublicationTest.test_detects_corrupt_readable_archive) ... ok
+test_original_and_manifest_corruption_rejected (test_publication.PublicationTest.test_original_and_manifest_corruption_rejected) ... ok
+test_removing_method_cannot_bypass_phase_acceptance (test_publication.PublicationTest.test_removing_method_cannot_bypass_phase_acceptance) ... ok
+test_identity_note_uses_its_passage_origin_for_entities (test_report.ReportTest.test_identity_note_uses_its_passage_origin_for_entities) ... ok
+test_pdf_quote_entities_are_literal_and_html_entities_decode (test_report.ReportTest.test_pdf_quote_entities_are_literal_and_html_entities_decode) ... ok
+test_renderer_13_reproduces_existing_release (test_report.ReportTest.test_renderer_13_reproduces_existing_release) ... ok
+test_identity_is_bound_to_registry_key_and_source (test_scope.ScopeContract.test_identity_is_bound_to_registry_key_and_source) ... ok
+test_journalism_allows_unknown_author_date_but_requires_attributed_claim (test_source_policy.SourcePolicy.test_journalism_allows_unknown_author_date_but_requires_attributed_claim) ... ok
+test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name (test_source_policy.SourcePolicy.test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name) ... ok
+test_social_requires_account_date_and_permalink_and_claim_stays_claim (test_source_policy.SourcePolicy.test_social_requires_account_date_and_permalink_and_claim_stays_claim) ... ok
+test_verified_topic_without_basis_is_rejected_on_export (test_topics.TopicContract.test_verified_topic_without_basis_is_rejected_on_export) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1132.473s
+
+OK
+{"group": 1, "total": 13, "passed": 13, "successful": true}

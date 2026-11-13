@@ -1,0 +1,19 @@
+test_actor_authorization_and_individual_are_distinct (test_matches.MatchContract.test_actor_authorization_and_individual_are_distinct) ... ok
+test_match_respects_each_findings_provenance (test_matches.MatchContract.test_match_respects_each_findings_provenance) ... ok
+test_statuses_bind_matching_attempt_and_scope (test_missing.MissingContract.test_statuses_bind_matching_attempt_and_scope) ... ok
+test_lock_excludes_second_writer_and_old_workspace (test_publication.PublicationTest.test_lock_excludes_second_writer_and_old_workspace) ... ok
+test_rejects_dangerous_urls (test_publication.PublicationTest.test_rejects_dangerous_urls) ... ok
+test_attribution_is_never_copied_from_same_hash_sibling (test_report.ReportTest.test_attribution_is_never_copied_from_same_hash_sibling) ... ok
+test_mobile_navigation_hint_and_readable_touch_targets (test_report.ReportTest.test_mobile_navigation_hint_and_readable_touch_targets) ... ok
+test_rejects_unsafe_archive_path_and_escapes_finding (test_report.ReportTest.test_rejects_unsafe_archive_path_and_escapes_finding) ... ok
+test_canonical_identity_and_parliamentary_identifier_history (test_scope.ScopeContract.test_canonical_identity_and_parliamentary_identifier_history) ... ok
+test_historical_renderer_and_policy_still_audit (test_source_policy.SourcePolicy.test_historical_renderer_and_policy_still_audit) ... ok
+test_party_charter_passes_real_publication_without_registry_domain_authority (test_source_policy.SourcePolicy.test_party_charter_passes_real_publication_without_registry_domain_authority) ... ok
+test_short_name_html_uses_same_party_host_and_full_name_anchor (test_source_policy.SourcePolicy.test_short_name_html_uses_same_party_host_and_full_name_anchor) ... ok
+test_unrelated_party_cannot_authorize_charter (test_topics.TopicContract.test_unrelated_party_cannot_authorize_charter) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1252.924s
+
+OK
+{"group": 0, "total": 13, "passed": 13, "successful": true}

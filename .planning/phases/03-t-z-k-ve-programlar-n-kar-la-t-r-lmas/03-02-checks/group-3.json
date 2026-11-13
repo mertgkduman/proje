@@ -1,0 +1,21 @@
+{
+  "passed": [
+    "test_matches.MatchContract.test_invalid_input_is_rejected",
+    "test_missing.MissingContract.test_access_failure_requires_identified_source",
+    "test_publication.PublicationTest.test_foreign_key_corruption_rejected",
+    "test_publication.PublicationTest.test_phase_acceptance_precedes_pointer_change",
+    "test_publication.PublicationTest.test_stale_base_rejected",
+    "test_report.ReportTest.test_method_prioritizes_primary_sources_and_old_renderer_is_reproducible",
+    "test_report.ReportTest.test_real_browser_reads_both_passive_archives",
+    "test_scope.ScopeContract.test_approved_list_is_separate_from_observations",
+    "test_source_policy.SourcePolicy.test_compressed_pdf_publisher_text_does_not_need_host_html",
+    "test_source_policy.SourcePolicy.test_official_site_needs_party_publication_evidence_for_same_host",
+    "test_source_policy.SourcePolicy.test_removing_policy_cannot_bypass_real_publish",
+    "test_topics.TopicContract.test_real_dictionary_contains_a_sourced_verified_topic"
+  ],
+  "failed": [],
+  "errors": [],
+  "skipped": [],
+  "total": 12,
+  "successful": true
+}

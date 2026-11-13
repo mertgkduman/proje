@@ -1,0 +1,21 @@
+test_candidate_resolution_preserves_history_and_rejects_wrong_evidence (test_matches.MatchContract.test_candidate_resolution_preserves_history_and_rejects_wrong_evidence) ... ok
+test_current_release_preserves_every_eligible_id (test_matches.PublishedMatches.test_current_release_preserves_every_eligible_id) ... ok
+test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) ... ok
+test_paths_cannot_escape_root_through_traversal_or_symlink (test_publication.PublicationTest.test_paths_cannot_escape_root_through_traversal_or_symlink) ... ok
+test_report_escapes_untrusted_text_and_rejects_script_url (test_publication.PublicationTest.test_report_escapes_untrusted_text_and_rejects_script_url) ... ok
+test_known_authors_remain_attached_to_their_source_versions (test_report.ReportTest.test_known_authors_remain_attached_to_their_source_versions) ... ok
+test_reader_shows_party_content_and_faithful_archive_links (test_report.ReportTest.test_reader_shows_party_content_and_faithful_archive_links) ... ok
+test_scoped_parties_and_summary_are_navigable (test_report.ReportTest.test_scoped_parties_and_summary_are_navigable) ... 127.0.0.1 - - [13/Nov/2026 04:47:12] "GET /objects/404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f/readable.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 04:47:14] "GET /releases/tmpqq3jtp0p/index.html HTTP/1.1" 200 -
+ok
+test_scope_writer_exists (test_scope.ScopeContract.test_scope_writer_exists) ... ok
+test_missing_attribution_and_cross_party_evidence_fail_export (test_source_policy.SourcePolicy.test_missing_attribution_and_cross_party_evidence_fail_export) ... ok
+test_policy_cannot_be_removed_or_exemptions_widened (test_source_policy.SourcePolicy.test_policy_cannot_be_removed_or_exemptions_widened) ... ok
+test_turkish_publisher_case_preserves_dotted_and_dotless_i (test_source_policy.SourcePolicy.test_turkish_publisher_case_preserves_dotted_and_dotless_i) ... ok
+test_real_evidence_chain (test_tracer.TracerTest.test_real_evidence_chain) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1021.366s
+
+OK
+{"group": 2, "total": 13, "passed": 13, "successful": true}

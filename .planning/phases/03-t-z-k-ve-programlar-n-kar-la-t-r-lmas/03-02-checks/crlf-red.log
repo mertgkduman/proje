@@ -1,0 +1,19 @@
+test_real_sources_reach_closed_comparison_release (test_comparisons.ComparisonReleaseTest.test_real_sources_reach_closed_comparison_release) ... ERROR
+
+======================================================================
+ERROR: test_real_sources_reach_closed_comparison_release (test_comparisons.ComparisonReleaseTest.test_real_sources_reach_closed_comparison_release)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparisons.py", line 133, in test_real_sources_reach_closed_comparison_release
+    release = arsiv.publish_release(work, refresh=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1483, in publish_release
+    audit_release(release)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1322, in audit_release
+    raise ValueError('HTML kapalı snapshot ile eşleşmiyor')
+ValueError: HTML kapalı snapshot ile eşleşmiyor
+
+----------------------------------------------------------------------
+Ran 1 test in 311.633s
+
+FAILED (errors=1)

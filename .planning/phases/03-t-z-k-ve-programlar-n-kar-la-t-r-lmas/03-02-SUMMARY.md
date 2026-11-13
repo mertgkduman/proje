@@ -100,3 +100,7 @@ Planın sekiz uygulama dosyası ve iki yerel raporu mevcut; her iki yayın commi
 Gerçek kapalı yayın kabulü, kaynaklı konu sentezinde geçerli CRLF satır sonuyla çalıştırıldı. RED koşusu `HTML kapalı snapshot ile eşleşmiyor` hatasını yeniden üretti (311.633 saniye; `274fb3d`). HTML denetimi metin okumanın satır sonu dönüşümünü kullanmak yerine renderer UTF-8 baytlarını dosya baytlarıyla doğrudan karşılaştıracak şekilde düzeltildi. Yedi karşılaştırma testi son kodla geçti; eski yayınlar ve kaynak baytları değiştirilmedi. Yeni yayın fixture'ı güncel renderer sürümünü bekler; tarihsel renderer15/16 kabulü ayrı testlerde korunur.
 
 03-03 ön bağımlılık kontrolünün sembolik `parti bölümü ↔ karşılaştırma konusu` hedefi kaynak kodda düz metin olarak aranamadığından otomatik sorgu false verdi. Mevcut kapalı rapordaki 38 kanonik comparison row için iki görünümün kimlikleri ve karşılıklı bağlantıları tek tek doğrulandı; gerçek kablolama açığı bulunmadı.
+
+## Tam regresyon kapsamının kapanışı
+
+Son kod ve `d370042ecc23499b9abfd6c11af33120` verisi üzerinde 123 benzersiz testin tamamı geçti; hata veya skip yok. Genel seri koşu 1800 saniyede süre aşımına uğradı; seri/odaklı koşuda geçen 72 test korundu ve kalan 51 test dört bağımsız grupta (13+13+13+12) tamamlandı. Kod/veri SHA-256 girdi kimliği bütün koşular arasında aynı kaldı. Sonuç kimlikleri ve ham günlükler `03-02-checks/result.json` ve aynı klasörde saklandı. Bu kayıt önceki dalganın açık genel regresyon kapsamını kapatır; tek seri koşunun tamamlandığı iddia edilmez.
