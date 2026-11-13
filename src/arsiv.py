@@ -946,11 +946,11 @@ def resolve_candidate(work, candidate_id, match_id, resolution):
     finally: db.close()
 
 
-def validate_evidence(db, finding, passage):
+def validate_evidence(db, finding, passage, *, validated_policy=None):
     row = db.execute('SELECT d.party_id,d.source_kind,v.id AS version_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (passage['id'],)).fetchone()
     if not row or row['party_id'] != finding['party_id']: raise ValueError('Kanıt başka partiye ait')
     if finding['provenance'] == 'quote' and finding['text'] not in passage['exact']: raise ValueError('Alıntı pasajda bulunamadı')
-    compiled = check_evidence_attribution(db,finding,row)
+    compiled = check_evidence_attribution(db,finding,row,validated_policy=validated_policy)
     if not compiled and finding['heading'] in ('Tüzük','Program') and not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (row['version_id'],finding['party_id'])).fetchone(): raise ValueError('Belge otoritesi doğrulanmadı')
     if finding['heading'] == 'Söylem ve uygulama' and finding['epistemic_type'] == 'fact' and row['source_kind'] == 'party': raise ValueError('Parti beyanı uygulama olgusu olarak kullanılamaz')
 
@@ -1153,7 +1153,7 @@ def export_db(path, release_id, strict_identity=False):
         if existing.intersection(DOSSIER_TABLES) and not set(DOSSIER_TABLES).issubset(existing): raise ValueError('Eksik dosya şeması')
         for name in names:
             result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY rowid')]
-        validate_policy(db,result)
+        validated_policy = validate_policy(db,result)
         for view in result.get('archive_view',[]):
             validate_view(DATA,view)
             if not any(v['id']==view['version_id'] and v['sha256']==view['source_sha256'] for v in result['document_version']):raise ValueError('Arşiv görünümü özgün belgeyle uyuşmuyor')
@@ -1213,7 +1213,7 @@ def export_db(path, release_id, strict_identity=False):
                 raise ValueError('Alıntı kanıt pasajıyla eşleşmiyor')
             if 'document_authority' in existing:
                 for e in (e for e in result['finding_evidence'] if e['finding_id'] == f['id']):
-                    validate_evidence(db, f, next(p for p in result['passage'] if p['id'] == e['passage_id']))
+                    validate_evidence(db, f, next(p for p in result['passage'] if p['id'] == e['passage_id']), validated_policy=validated_policy)
         if 'topic' in existing:
             for authority in result['document_authority']: check_document_authority(db, authority)
             for t in result['topic']:

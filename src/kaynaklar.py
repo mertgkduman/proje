@@ -84,15 +84,24 @@ def validate_policy(db, data):
     attrs = {a['version_id'] for a in data['source_attribution']}
     if any(v['id'] not in old_versions and v['id'] not in attrs for v in data['document_version']):
         raise ValueError('Yeni kaynak için atıf gerekli')
+    # Reuse only within this export. A later export must validate the current
+    # source bytes again, including replacements with unchanged file metadata.
+    return (frozenset(json.loads(policy['legacy_findings'])),
+            {a['version_id']: dict(a) for a in data['source_attribution']})
 
 
-def check_evidence_attribution(db, finding, row):
-    policy = active_policy(db)
-    if not policy: return False
-    if finding['id'] in json.loads(policy['legacy_findings']): return True
-    a = db.execute('SELECT * FROM source_attribution WHERE version_id=?', (row['version_id'],)).fetchone()
+def check_evidence_attribution(db, finding, row, *, validated_policy=None):
+    if validated_policy is None:
+        policy = active_policy(db)
+        if not policy: return False
+        if finding['id'] in json.loads(policy['legacy_findings']): return True
+        a = db.execute('SELECT * FROM source_attribution WHERE version_id=?', (row['version_id'],)).fetchone()
+    else:
+        legacy_findings, attributions = validated_policy
+        if finding['id'] in legacy_findings: return True
+        a = attributions.get(row['version_id'])
     if not a: raise ValueError('Yeni bulgu için kaynak atıf kaydı gerekli')
-    check_attribution(db, dict(a))
+    if validated_policy is None: check_attribution(db, dict(a))
     if a['kind'] in ('party_publication','social_publication','journalism') and finding['epistemic_type'] not in ('claim','comment'):
         raise ValueError('Yayıncı beyanı/haberi atıflı iddia olarak derlenmeli')
     return True
