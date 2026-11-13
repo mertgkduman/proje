@@ -2,9 +2,9 @@
 schema_version: 1
 open_count: 0
 waived_count: 0
-fixed_count: 4
-total_count: 4
-last_updated: 2026-11-11T15:13:58.362Z
+fixed_count: 5
+total_count: 5
+last_updated: 2026-11-13T08:32:08.994Z
 ---
 
 # Broken Windows Ledger
@@ -19,6 +19,7 @@ last_updated: 2026-11-11T15:13:58.362Z
 | 2 | 02 | deviation | tests/test_dates.py |  | Faz 1 testleri yalıtılmış eski release tabanına sabitlendi. | fixed |  | 2026-11-11T15:13:33.375Z | 2026-11-11T15:13:49.470Z |
 | 3 | 02 | deviation | src/dosyalar.py |  | Kısmi kuruluş araştırmasının makbuz etiketi ve Türkçe alan adları düzeltildi. | fixed |  | 2026-11-11T15:13:56.526Z | 2026-11-11T15:13:57.110Z |
 | 4 | 02 | deviation | src/dosyalar.py |  | Resmî site ve sicil alanlarında kaynak sahipliği denetimi eklendi. | fixed |  | 2026-11-11T15:13:57.756Z | 2026-11-11T15:13:58.362Z |
+| 5 | 03 | deviation | data/comparisons/03-taxonomy.json |  | Türkçe casefold ofsetiyle hatalı seçilen konu pasajları gerçek kaynak başlıklarına düzeltildi; başarısız yayın adayı kullanılmadı. | fixed |  | 2026-11-13T08:32:04.272Z | 2026-11-13T08:32:08.994Z |
 
 ````json
 [
@@ -72,6 +73,19 @@ last_updated: 2026-11-11T15:13:58.362Z
     "reason": "",
     "recorded_at": "2026-11-11T15:13:57.756Z",
     "resolved_at": "2026-11-11T15:13:58.362Z",
+    "milestone": "v1.0"
+  },
+  {
+    "id": 5,
+    "kind": "deviation",
+    "phase": "03",
+    "file": "data/comparisons/03-taxonomy.json",
+    "line": null,
+    "description": "Türkçe casefold ofsetiyle hatalı seçilen konu pasajları gerçek kaynak başlıklarına düzeltildi; başarısız yayın adayı kullanılmadı.",
+    "status": "fixed",
+    "reason": "",
+    "recorded_at": "2026-11-13T08:32:04.272Z",
+    "resolved_at": "2026-11-13T08:32:08.994Z",
     "milestone": "v1.0"
   }
 ]
