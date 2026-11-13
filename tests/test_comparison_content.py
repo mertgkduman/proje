@@ -13,6 +13,37 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_repeated_fields_merge_only_when_conditions_match_and_keep_sources(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        row = next(r for r in data['comparison_row'] if r['party_id'] == 'iyi')
+        field = next(f for f in data['comparison_field'] if f['row_id'] == row['id'])
+        original_passage = next(e['passage_id'] for e in data['finding_evidence'] if e['finding_id'] == field['quote_finding_id'])
+        passage = copy.deepcopy(next(p for p in data['passage'] if p['id'] == original_passage))
+        passage['id'] = 'repeat-source'
+        data['passage'].append(passage)
+        repeated = copy.deepcopy(field)
+        repeated['id'] = 'repeated-field'
+        for key in ('summary_finding_id', 'quote_finding_id'):
+            finding = copy.deepcopy(next(f for f in data['finding'] if f['id'] == field[key]))
+            finding['id'] = 'repeated-' + key
+            data['finding'].append(finding)
+            data['finding_evidence'].append(dict(finding_id=finding['id'], passage_id='repeat-source', role='support'))
+            repeated[key] = finding['id']
+        data['comparison_field'].append(repeated)
+        report = rapor.render_report(data)
+        quote = next(f['text'] for f in data['finding'] if f['id'] == field['quote_finding_id'])
+        views = [report.split('id="' + prefix + row['id'] + '"', 1)[1].split('<details>', 1)[0] for prefix in ('comparison-', 'dossier-comparison-')]
+        for view in views:
+            self.assertEqual(view.count('“' + quote + '”'), 1)
+            self.assertIn('#source-' + original_passage, view)
+            self.assertIn('#source-repeat-source', view)
+        repeated['condition_key'] = 'Farklı koşul'
+        report = rapor.render_report(data)
+        views = [report.split('id="' + prefix + row['id'] + '"', 1)[1].split('<details>', 1)[0] for prefix in ('comparison-', 'dossier-comparison-')]
+        for view in views:
+            self.assertEqual(view.count('“' + quote + '”'), 2)
+            self.assertIn('Farklı koşul', view)
+
     def test_taxonomy_basis_passages_precede_their_references(self):
         root = Path(__file__).resolve().parents[1]
         baseline = json.loads((root / 'data/releases/9119e174a8d94f2d9c77efa155347242/records.json').read_text(encoding='utf-8'))
