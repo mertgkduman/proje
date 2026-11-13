@@ -321,9 +321,26 @@ def migrate_comparisons(db, backup_path, fail_at=None):
         raise
 
 
-def load_comparison(work, payload):
+def comparison_inventory_records(inventory, taxonomy_version):
+    if not isinstance(inventory, dict) or inventory.get('status') != 'complete' or inventory.get('taxonomy_version') != taxonomy_version or not isinstance(inventory.get('sections'), list) or not inventory['sections']:
+        raise ValueError('Tam karşılaştırma için tamamlanmış kaynak envanteri gerekli')
+    required = {'party_id','version_id','source_role','section','page_range','full_text_available','scanned_at','topic_ids','unmatched_headings','search_boundary','missing_id'}
+    records = []
+    for section in inventory['sections']:
+        if not isinstance(section, dict) or set(section) != required or type(section['full_text_available']) is not bool or not isinstance(section['topic_ids'], list) or not isinstance(section['unmatched_headings'], list) or section['unmatched_headings']:
+            raise ValueError('Envanter bölümünde eksik veya eşleşmemiş başlık var')
+        canonical = json.dumps(section, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+        values = dict(section, taxonomy_version=taxonomy_version, id='inventory-' + hashlib.sha256(canonical.encode('utf-8')).hexdigest())
+        records.append(dict(kind='comparison_source_inventory', values=values))
+    return records
+
+
+def load_comparison(work, payload, inventory=None):
     if not isinstance(payload, dict) or type(payload.get('contract_version')) is not int or payload['contract_version'] != 1 or payload.get('stage') not in ('tracer','partial','complete') or type(payload.get('taxonomy_version')) is not int or payload['taxonomy_version'] < 1 or not isinstance(payload.get('records'), list):
         raise ValueError('Karşılaştırma paketi geçersiz')
+    if inventory is not None:
+        if payload['stage'] != 'complete': raise ValueError('Kaynak envanteri yalnız tam karşılaştırmaya eklenebilir')
+        payload = dict(payload, records=payload['records'] + comparison_inventory_records(inventory, payload['taxonomy_version']))
     work = Path(work)
     assert_lock(work)
     protected = {'party','scope_party','scope_observation','method','party_identity_revision','source_policy'}
@@ -386,12 +403,13 @@ def load_comparison(work, payload):
         os.replace(temp / 'records.sqlite3', work / 'records.sqlite3')
 
 
-def check_comparison_input(path):
+def check_comparison_input(path, inventory_path=None):
     payload = json.loads(Path(path).read_text(encoding='utf-8'))
+    inventory = json.loads(Path(inventory_path).read_text(encoding='utf-8')) if inventory_path else None
     with tempfile.TemporaryDirectory() as temp:
         work = open_workspace(temp)
         try:
-            load_comparison(work, payload)
+            load_comparison(work, payload, inventory)
         finally:
             try: assert_lock(work)
             except (ValueError,OSError): pass
@@ -1492,8 +1510,8 @@ def main():
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True); group=pub.add_mutually_exclusive_group(); group.add_argument('--party'); group.add_argument('--refresh', action='store_true'); pub.add_argument('--stage', choices=('tracer','complete'), default='complete')
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
     a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2','3')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','partial','complete'), default='complete')
-    cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True)
-    cc = sub.add_parser('comparison-check'); cc.add_argument('--input', required=True)
+    cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
+    cc = sub.add_parser('comparison-check'); cc.add_argument('--input', required=True); cc.add_argument('--inventory')
     dl = sub.add_parser('dossier-load'); dl.add_argument('--workspace', required=True); dl.add_argument('--input', required=True)
     dc = sub.add_parser('dossier-check'); dc.add_argument('--input', required=True); dc.add_argument('--stage', choices=('tracer','complete'), default='complete')
     dr = sub.add_parser('delivery-receipt'); dr.add_argument('--release', required=True); dr.add_argument('--party', required=True); dr.add_argument('--out', required=True); dr.add_argument('--previous')
@@ -1517,9 +1535,10 @@ def main():
         finally: db.close()
     elif args.command == 'publish': print(publish_release(args.workspace, party=args.party, stage=args.stage, refresh=args.refresh))
     elif args.command == 'comparison-load':
-        load_comparison(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8'))); print('COMPARISON_LOAD_OK')
+        inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8')) if args.inventory else None
+        load_comparison(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8')), inventory); print('COMPARISON_LOAD_OK')
     elif args.command == 'comparison-check':
-        check_comparison_input(args.input); print('COMPARISON_INPUT_OK')
+        check_comparison_input(args.input, args.inventory); print('COMPARISON_INPUT_OK')
     elif args.command == 'dossier-load':
         from dosyalar import load_dossier
         load_dossier(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8')))

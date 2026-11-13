@@ -21,6 +21,11 @@ class ComparisonContentTest(unittest.TestCase):
         records = convert(inventory, 1)
         self.assertEqual(records[0]['kind'], 'comparison_source_inventory')
         self.assertEqual(records[0]['values']['topic_ids'], ['merkez-yonetimi-secimi'])
+        self.assertEqual(records, convert(inventory, 1))
+        section['unmatched_headings'] = ['Eşleşmeyen başlık']
+        with self.assertRaises(ValueError):
+            convert(inventory, 1)
+        section['unmatched_headings'] = []
         inventory['status'] = 'in_progress'
         with self.assertRaises(ValueError):
             convert(inventory, 1)
