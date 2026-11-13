@@ -19,11 +19,17 @@ class ComparisonContentTest(unittest.TestCase):
         for name in ('03-taxonomy.json', '03-exception-cases.json'):
             package = json.loads((root / 'data/comparisons' / name).read_text(encoding='utf-8'))
             passages = {item['id'] for item in baseline['passage']}
+            topics = set()
             for entry in package['records']:
                 if entry['kind'] == 'passage':
                     passages.add(entry['values']['id'])
                 elif entry['kind'] == 'topic_basis':
                     self.assertIn(entry['values']['passage_id'], passages, name)
+                elif entry['kind'] in ('topic', 'comparison_topic'):
+                    value = entry['values']
+                    key = (entry['kind'], value.get('id', value.get('topic_id')), value['taxonomy_version'])
+                    self.assertNotIn(key, topics, name)
+                    topics.add(key)
 
     def test_source_inventory_is_converted_for_complete_snapshot(self):
         convert = getattr(arsiv, 'comparison_inventory_records', None)
