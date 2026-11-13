@@ -13,6 +13,16 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_program_fields_are_distinguishable_in_both_views(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        package = json.loads((Path(__file__).resolve().parents[1] / 'data/comparisons/03-program-opening.json').read_text(encoding='utf-8'))
+        data['comparison_contract'][0].update(taxonomy_version=2, stage='partial')
+        for entry in package['records']:
+            data[entry['kind']].append(entry['values'])
+        report = rapor.render_report(data)
+        for label in ('İlke', 'Hedef', 'Önerilen araç'):
+            self.assertGreaterEqual(report.count('>' + label + '</h5>'), 2)
+
     def test_child_topic_follows_its_parent_in_comparison_view(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         common = dict(taxonomy_version=2, domain='program', applicable_levels='ulusal', basis_kind='program')
