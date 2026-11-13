@@ -4,9 +4,11 @@ import tempfile
 import shutil
 import importlib.util
 import json
+import copy
 from pathlib import Path
 
 import arsiv
+import rapor
 import test_comparisons
 
 
@@ -17,6 +19,30 @@ class ComparisonContentTest(unittest.TestCase):
         row['alternative_group'] = 'incomplete-alternatives'
         with self.assertRaises(ValueError):
             arsiv.validate_comparisons(data)
+
+    def test_two_sourced_versions_can_form_an_alternative_group(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        row = next(r for r in data['comparison_row'] if r['party_id'] == 'iyi')
+        row['alternative_group'] = 'two-versions'
+        other = copy.deepcopy(row)
+        other.update(id='alternative-old', version_id='0205-iyi-charter-istanbul-v1')
+        data['comparison_row'].append(other)
+        old_passage = next(p for p in data['passage'] if p['id'] == '03-iyi-once-uye')
+        for typ in ('summary', 'quote'):
+            fid = 'alternative-old-' + typ
+            data['finding'].append(dict(id=fid, party_id='iyi', heading='Tüzük', pair_id='alternative-old-pair', text=old_passage['exact'], provenance=typ, epistemic_type='claim'))
+            data['finding_evidence'].append(dict(finding_id=fid, passage_id=old_passage['id'], role='support'))
+        data['comparison_field'].append(dict(id='alternative-old-field', row_id=other['id'], field='charter_answer', summary_finding_id='alternative-old-summary', quote_finding_id='alternative-old-quote', condition_key=None))
+        self.assertTrue(arsiv.validate_comparisons(data))
+
+    def test_alternative_and_supplement_are_named_in_both_views(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        row = next(r for r in data['comparison_row'] if r['party_id'] == 'tip')
+        row['alternative_group'] = 'alternatives'
+        row['source_role'] = 'supplement'
+        report = rapor.render_report(data)
+        self.assertGreaterEqual(report.count('Alternatif belge nüshası:'), 2)
+        self.assertGreaterEqual(report.count('Ek belge:'), 2)
 
     def test_renderer_16_is_frozen_before_renderer_17(self):
         source = Path(__file__).resolve().parents[1] / 'src' / 'rapor_v16.py'

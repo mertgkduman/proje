@@ -479,6 +479,17 @@ def validate_comparisons(data):
                     raise ValueError('Alan kanıtı sürümle uyuşmuyor')
             if not ({e['passage_id'] for e in evidence if e['finding_id'] == summary['id']} & {e['passage_id'] for e in evidence if e['finding_id'] == quote['id']}):
                 raise ValueError('Özet ve alıntı ortak pasaj gerektirir')
+    groups = {}
+    for row in rows.values():
+        if row['alternative_group']:
+            groups.setdefault(row['alternative_group'], []).append(row)
+    for group in groups.values():
+        keys = {(r['topic_id'], r['taxonomy_version'], r['party_id'], r['level'], r['organ'], r['source_role']) for r in group}
+        version_ids = {r['version_id'] for r in group}
+        if len(group) < 2 or len(keys) != 1 or None in version_ids or len(version_ids) != len(group) or any(r['state'] != 'evidence' for r in group):
+            raise ValueError('Alternatifler aynı konuya ait en az iki kaynaklı sürüm gerektirir')
+        if len({versions[v]['document_id'] for v in version_ids}) != 1:
+            raise ValueError('Alternatifler aynı belgenin sürümleri olmalı')
     for change in data['comparison_change']:
         row = rows[change['row_id']]
         for key in ('before_passage_id','after_passage_id'):

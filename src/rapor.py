@@ -313,6 +313,13 @@ def render_report(data):
                       f'<a href="#{other}{rid}">{label}</a>')
         if row['state'] == 'evidence':
             pieces.append(f'<p class="metadata">{esc(row["level"].capitalize())} · {esc(row["organ"])}</p>')
+            if row['alternative_group']:
+                version = versions[row['version_id']]
+                pieces.append(f'<p class="metadata">Alternatif belge nüshası: {esc(version["version_label"])} · {esc(row["selection_reason"])}</p>')
+            if row['source_role'] in ('supplement', 'historical'):
+                version = versions[row['version_id']]
+                kind = 'Ek belge' if row['source_role'] == 'supplement' else 'Tarihsel belge'
+                pieces.append(f'<p class="metadata">{kind}: {esc(documents[version["document_id"]]["title"])}</p>')
         if row['state'] == 'not_researched':
             pieces.append('<p class="muted">Henüz incelenmedi</p>')
         elif row['state'] == 'document_missing':
