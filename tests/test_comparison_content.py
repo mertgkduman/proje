@@ -13,6 +13,16 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_child_topic_follows_its_parent_in_comparison_view(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        common = dict(taxonomy_version=2, domain='program', applicable_levels='ulusal', basis_kind='program')
+        data['comparison_topic'].extend([
+            dict(common, topic_id='parent', parent_topic_id=None, order_index=50, definition='ÜST KONU ÖRNEĞİ'),
+            dict(common, topic_id='child', parent_topic_id='parent', order_index=1, definition='ALT KONU ÖRNEĞİ'),
+        ])
+        report = rapor.render_report(data)
+        self.assertLess(report.index('ÜST KONU ÖRNEĞİ'), report.index('ALT KONU ÖRNEĞİ'))
+
     def test_new_comparison_topic_requires_a_sourced_dictionary_topic(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         data['comparison_contract'][0].update(taxonomy_version=2, stage='partial')
