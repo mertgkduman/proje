@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "release_id": "6090bfda16a14ce99a1b6c9d3ff47d71",
+  "application_code_unchanged_since": "45c7c40",
+  "code_test_baseline": "03-04-checks/result.json (124 unique tests passed)",
+  "package_row_and_reciprocal_links": {
+    "charter": {
+      "all_unique_rows": 485,
+      "active_taxonomy_rows": 484
+    },
+    "program": {
+      "all_unique_rows": 325,
+      "active_taxonomy_rows": 325
+    }
+  },
+  "original_source_sha256": "passed",
+  "phase2_delivery_preserved": true,
+  "executor_audits": [
+    "PHASE3_AUDIT_OK b051e5f7f7534616bbaa0602c2286dc9",
+    "PHASE3_AUDIT_OK 6090bfda16a14ce99a1b6c9d3ff47d71",
+    "PHASE2_AUDIT_OK 6090bfda16a14ce99a1b6c9d3ff47d71"
+  ],
+  "audit_record": "03-05-SUMMARY.md",
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "upcoming_key_links": "IYI package pending as expected; symbolic renderer target manually verified through package rows and reciprocal links",
+  "known_navigation_limit": "Renderer17 absence scope/source inline presentation; tracked for03-15/16",
+  "backfill": "DEM no-income restriction for basic income, equal pay and six-hour workday without wage loss; tracked for03-14",
+  "review_status": "Agent semantic review; summary human_judgment notes do not create a per-source human-approval prerequisite under D13"
+}
