@@ -84,7 +84,7 @@ TABLES.update({
     'document_authority': 'version_id TEXT PRIMARY KEY REFERENCES document_version(id), registry_party_id TEXT NOT NULL REFERENCES party(id), authority_passage_id TEXT NOT NULL REFERENCES passage(id), verification_attempt_id TEXT NOT NULL REFERENCES attempt(id), status TEXT NOT NULL, reason TEXT NOT NULL',
     'verification': 'finding_id TEXT NOT NULL REFERENCES finding(id), passage_id TEXT NOT NULL REFERENCES passage(id), checked_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(finding_id,passage_id)',
     'topic': 'id TEXT NOT NULL, label TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, valid_from TEXT NOT NULL, status TEXT NOT NULL, change_reason TEXT NOT NULL, PRIMARY KEY(id,taxonomy_version)',
-    'topic_basis': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), rationale TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(topic_id,taxonomy_version,passage_id)',
+    'topic_basis': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, passage_id TEXT NOT NULL REFERENCES passage(id), rationale TEXT NOT NULL, source_role TEXT, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(topic_id,taxonomy_version,passage_id)',
     'finding_topic': 'finding_id TEXT NOT NULL REFERENCES finding(id), topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(finding_id,topic_id,taxonomy_version)',
     'topic_query': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, actor_kind TEXT NOT NULL, query TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES topic(id,taxonomy_version), PRIMARY KEY(topic_id,taxonomy_version,actor_kind)',
 })
@@ -303,6 +303,9 @@ def migrate_comparisons(db, backup_path, fail_at=None):
         backup.close()
     try:
         db.execute('BEGIN IMMEDIATE')
+        columns = {r['name'] for r in db.execute('PRAGMA table_info(topic_basis)')}
+        if columns and 'source_role' not in columns:
+            db.execute('ALTER TABLE topic_basis ADD COLUMN source_role TEXT')
         for name, definition in COMPARISON_TABLES.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if fail_at == 'migration':
@@ -1127,8 +1130,23 @@ def export_db(path, release_id, strict_identity=False):
                     bases = [b for b in result['topic_basis'] if b['topic_id'] == t['id'] and b['taxonomy_version'] == t['taxonomy_version']]
                     if not bases: raise ValueError('Doğrulanmış konu dayanağı bulunamadı')
                     for b in bases:
-                        row = db.execute("SELECT a.status,d.title FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id JOIN document_authority a ON a.version_id=v.id WHERE p.id=?", (b['passage_id'],)).fetchone()
-                        if not b['rationale'] or not row or row['status'] != 'verified' or not any(x in row['title'].lower() for x in ('tüzük','program')): raise ValueError('Konu tüzük/program dayanağı geçersiz')
+                        attr_column = 's.kind' if 'source_attribution' in existing else 'NULL AS kind'
+                        attr_join = 'LEFT JOIN source_attribution s ON s.version_id=v.id' if 'source_attribution' in existing else ''
+                        row = db.execute(f"SELECT a.status,d.title,{attr_column} FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id LEFT JOIN document_authority a ON a.version_id=v.id {attr_join} WHERE p.id=?", (b['passage_id'],)).fetchone()
+                        role = b.get('source_role')
+                        if not b['rationale'] or not row:
+                            raise ValueError('Konu dayanağı geçersiz')
+                        if role is None:
+                            if t['taxonomy_version'] >= 2:
+                                raise ValueError('Yeni konu dayanağı için açık kaynak türü gerekli')
+                            if row['status'] != 'verified' or not any(x in row['title'].lower() for x in ('tüzük','program')):
+                                raise ValueError('Konu tüzük/program dayanağı geçersiz')
+                        elif not active_policy(db) or not row['kind'] or role not in ('charter','program','supplement','historical'):
+                            raise ValueError('Atıflı konu dayanağı için açık kaynak türü gerekli')
+                        elif role in ('charter','program') and (row['kind'] != 'party_publication' or ('tüzük' if role == 'charter' else 'program') not in row['title'].lower()):
+                            raise ValueError('Konu dayanağının kaynak türü belgeyle uyuşmuyor')
+                        elif role == 'supplement' and row['kind'] != 'party_publication':
+                            raise ValueError('Ek parti metni parti yayınına dayanmalı')
         if 'match' in existing:
             for match in result['match']:
                 check_match(db, match)
