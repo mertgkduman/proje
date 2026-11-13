@@ -13,6 +13,14 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_complete_stage_requires_a_closed_source_inventory(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        data['scope_party'] = [p for p in data['scope_party'] if p['party_id'] in ('iyi', 'tip')]
+        data['comparison_row'] = [r for r in data['comparison_row'] if r['party_id'] in ('iyi', 'tip')]
+        data['comparison_contract'][0]['stage'] = 'complete'
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+
     def test_an_alternative_group_cannot_have_only_one_version(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         row = next(r for r in data['comparison_row'] if r['party_id'] == 'iyi')
