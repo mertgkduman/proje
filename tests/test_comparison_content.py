@@ -102,8 +102,25 @@ class ComparisonContentTest(unittest.TestCase):
                 after = [tuple(r) for r in db.execute('SELECT topic_id,taxonomy_version,passage_id,rationale FROM topic_basis')]
                 self.assertEqual(before, after)
                 self.assertIn('source_role', {r['name'] for r in db.execute('PRAGMA table_info(topic_basis)')})
+                self.assertTrue(db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='comparison_source_inventory'").fetchone())
             finally:
                 db.close()
+
+    def test_migrated_inventory_is_included_in_snapshot_export(self):
+        release = arsiv.current()
+        source = arsiv.DATA / 'releases' / release / 'records.sqlite3'
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / 'records.sqlite3'
+            shutil.copyfile(source, path)
+            db = arsiv.connect(path)
+            try:
+                arsiv.migrate_comparisons(db, Path(temp) / 'backup.sqlite3')
+                db.execute("INSERT INTO comparison_source_inventory VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)", ('inventory-test', 1, 'iyi', '0205-iyi-charter-download-v1', 'charter', 'Madde 48', None, 1, '2026-11-13', '["merkez-yonetimi-secimi"]', '[]', 'Madde 48', None))
+                db.commit()
+            finally:
+                db.close()
+            exported = arsiv.export_db(path, 'test')
+            self.assertEqual(exported['comparison_source_inventory'][0]['id'], 'inventory-test')
 
     def test_attributed_program_can_support_a_verified_topic(self):
         release = arsiv.current()
