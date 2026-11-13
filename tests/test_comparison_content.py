@@ -11,6 +11,13 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_an_alternative_group_cannot_have_only_one_version(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        row = next(r for r in data['comparison_row'] if r['party_id'] == 'iyi')
+        row['alternative_group'] = 'incomplete-alternatives'
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+
     def test_renderer_16_is_frozen_before_renderer_17(self):
         source = Path(__file__).resolve().parents[1] / 'src' / 'rapor_v16.py'
         self.assertTrue(source.is_file(), 'Renderer 16 arşivlenmeli')
