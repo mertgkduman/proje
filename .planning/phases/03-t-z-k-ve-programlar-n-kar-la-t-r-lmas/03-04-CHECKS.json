@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "release_id": "b54b8fe4805741d4bd6b87b5dd81da4c",
+  "application_code_unchanged_since": "084f764",
+  "code_test_baseline": "03-02-checks/result.json (123 unique tests passed)",
+  "package_row_and_reciprocal_links": {
+    "charter": 459,
+    "program": 226
+  },
+  "original_source_sha256": "passed",
+  "phase2_delivery_preserved": true,
+  "executor_audits": [
+    "PHASE3_AUDIT_OK d538799da191453abba729858fb28529",
+    "PHASE3_AUDIT_OK b54b8fe4805741d4bd6b87b5dd81da4c",
+    "PHASE2_AUDIT_OK b54b8fe4805741d4bd6b87b5dd81da4c"
+  ],
+  "audit_record": "03-04-SUMMARY.md",
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "known_navigation_limit": "Renderer17 does not show review scope/source inline on no_explicit_statement rows; tracked for03-15/16",
+  "new_topic_and_definition_backfill": "03-tip-charter.json and 03-tip-program.json; five topic candidates and Yeni Parti/TIP basic-income definition review for03-14"
+}
