@@ -479,8 +479,19 @@ def render_report(data):
                   '<h2 class="panel-title">Karşılaştırmalı Özet</h2>')
     if not data.get('comparison_topic'):
         pieces.append('<div class="empty"><p>Partiler arası karşılaştırma henüz hazırlanmadı.</p></div>')
-    for topic in sorted(data.get('comparison_topic', []), key=lambda t: t['order_index']):
-        pieces.append(f'<section class="comparison-topic"><h3>{esc(topic["definition"])}</h3>')
+    children = {}
+    for topic in data.get('comparison_topic', []):
+        children.setdefault((topic['taxonomy_version'], topic['parent_topic_id']), []).append(topic)
+    ordered = []
+    def append_topics(version, parent, depth):
+        for topic in sorted(children.get((version, parent), []), key=lambda t: (t['order_index'], t['topic_id'])):
+            ordered.append((topic, depth))
+            append_topics(version, topic['topic_id'], depth + 1)
+    for version in sorted({t['taxonomy_version'] for t in data.get('comparison_topic', [])}):
+        append_topics(version, None, 0)
+    for topic, depth in ordered:
+        heading = 'h' + str(min(3 + depth, 6))
+        pieces.append(f'<section class="comparison-topic"><{heading}>{esc(topic["definition"])}</{heading}>')
         for synth in data.get('comparison_synthesis', []):
             if (synth['topic_id'],synth['taxonomy_version']) == (topic['topic_id'],topic['taxonomy_version']):
                 refs = ' '.join(named_citation(e['passage_id']) for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == synth['id'])
