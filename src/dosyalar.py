@@ -252,7 +252,7 @@ def validate_dossier(data, party_id=None, stage='tracer'):
 def validate_phase_two_workspace(work, party_id=None, stage='complete'):
     import arsiv
     data = arsiv.validate_phase_one_workspace(work)
-    if data['schema_version'] not in (4,5): raise ValueError('Faz 2 için şema 4/5 gerekli')
+    if data['schema_version'] not in (4,5,6): raise ValueError('Faz 2 için şema 4/5/6 gerekli')
     if stage not in ('tracer', 'complete'): raise ValueError('Geçersiz aşama')
     if party_id:
         if party_id not in ('yeni-parti',) + DELIVERY_ORDER: raise ValueError('Kapsam dışı parti')

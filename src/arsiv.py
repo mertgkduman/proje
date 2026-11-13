@@ -34,6 +34,7 @@ from rapor_v11 import render_report as render_v11_report
 from rapor_v12 import render_report as render_v12_report
 from rapor_v13 import render_report as render_v13_report
 from rapor_v14 import render_report as render_v14_report
+from rapor_v15 import render_report as render_v15_report
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
                       check_evidence_attribution, validate_policy_descent)
 from arsiv_gorunum import VIEW_TABLES, validate_view, decode_html, CSP as ARCHIVE_CSP
@@ -101,6 +102,17 @@ TABLES['review'] = 'id TEXT PRIMARY KEY, kind TEXT NOT NULL, subject_id TEXT NOT
 TABLES.update(DOSSIER_TABLES)
 TABLES.update(POLICY_TABLES)
 TABLES.update(VIEW_TABLES)
+COMPARISON_TABLES = {
+    'comparison_contract': 'version INTEGER PRIMARY KEY, taxonomy_version INTEGER NOT NULL, stage TEXT NOT NULL',
+    'comparison_topic': 'topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, domain TEXT NOT NULL, parent_topic_id TEXT, order_index INTEGER NOT NULL, definition TEXT NOT NULL, applicable_levels TEXT NOT NULL, basis_kind TEXT NOT NULL, PRIMARY KEY(topic_id,taxonomy_version)',
+    'comparison_row': 'id TEXT PRIMARY KEY, topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, party_id TEXT NOT NULL REFERENCES party(id), level TEXT NOT NULL, organ TEXT NOT NULL, version_id TEXT REFERENCES document_version(id), alternative_group TEXT, source_role TEXT NOT NULL, state TEXT NOT NULL, scope_id TEXT, missing_id TEXT REFERENCES missing(id), selection_reason TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES comparison_topic(topic_id,taxonomy_version)',
+    'comparison_field': 'id TEXT PRIMARY KEY, row_id TEXT NOT NULL REFERENCES comparison_row(id), field TEXT NOT NULL, summary_finding_id TEXT REFERENCES finding(id), quote_finding_id TEXT REFERENCES finding(id), condition_key TEXT',
+    'comparison_review_scope': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT NOT NULL REFERENCES document_version(id), sections TEXT NOT NULL, query_terms TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL',
+    'comparison_change': 'id TEXT PRIMARY KEY, row_id TEXT NOT NULL REFERENCES comparison_row(id), before_passage_id TEXT NOT NULL REFERENCES passage(id), after_passage_id TEXT NOT NULL REFERENCES passage(id), summary TEXT NOT NULL, order_basis TEXT NOT NULL',
+    'comparison_synthesis': 'id TEXT PRIMARY KEY, topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, text TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES comparison_topic(topic_id,taxonomy_version)',
+    'comparison_synthesis_evidence': 'synthesis_id TEXT NOT NULL REFERENCES comparison_synthesis(id), passage_id TEXT NOT NULL REFERENCES passage(id), PRIMARY KEY(synthesis_id,passage_id)',
+    'comparison_semantic_review': 'subject_kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(subject_kind,subject_id,reviewer_kind)',
+}
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -280,6 +292,242 @@ def connect_readonly(path):
 def current():
     path = DATA / 'current.json'
     return json.loads(path.read_text(encoding='utf-8'))['release_id'] if path.exists() else None
+
+
+def migrate_comparisons(db, backup_path, fail_at=None):
+    """Add comparison tables atomically without changing existing rows."""
+    backup = sqlite3.connect(backup_path)
+    try:
+        db.backup(backup)
+    finally:
+        backup.close()
+    try:
+        db.execute('BEGIN IMMEDIATE')
+        for name, definition in COMPARISON_TABLES.items():
+            db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        if fail_at == 'migration':
+            raise RuntimeError('Enjekte edilen comparison migration hatası')
+        if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
+            raise ValueError('Karşılaştırma migration bütünlük hatası')
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
+
+
+def load_comparison(work, payload):
+    if not isinstance(payload, dict) or type(payload.get('contract_version')) is not int or payload['contract_version'] != 1 or payload.get('stage') not in ('tracer','partial','complete') or type(payload.get('taxonomy_version')) is not int or payload['taxonomy_version'] < 1 or not isinstance(payload.get('records'), list):
+        raise ValueError('Karşılaştırma paketi geçersiz')
+    work = Path(work)
+    assert_lock(work)
+    protected = {'party','scope_party','scope_observation','method','party_identity_revision','source_policy'}
+    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected)
+    with tempfile.TemporaryDirectory(dir=work) as temp:
+        temp = Path(temp)
+        shutil.copyfile(work / 'records.sqlite3', temp / 'records.sqlite3')
+        shutil.copyfile(work / 'workspace.json', temp / 'workspace.json')
+        db = connect(temp / 'records.sqlite3')
+        try:
+            migrate_comparisons(db, work / 'pre-comparison-migration.sqlite3')
+            with db:
+                contract = db.execute('SELECT * FROM comparison_contract').fetchone()
+                historical_package = False
+                if contract:
+                    if contract['version'] != 1: raise ValueError('Bilinmeyen karşılaştırma sözleşmesi')
+                    stages = {'tracer':0,'partial':1,'complete':2}
+                    historical_package = payload['taxonomy_version'] < contract['taxonomy_version'] or stages[payload['stage']] < stages[contract['stage']]
+                    if not historical_package:
+                        db.execute('UPDATE comparison_contract SET taxonomy_version=?,stage=? WHERE version=1', (payload['taxonomy_version'],payload['stage']))
+                else:
+                    db.execute('INSERT INTO comparison_contract VALUES (?,?,?)', (1,payload['taxonomy_version'],payload['stage']))
+                for entry in payload['records']:
+                    if not isinstance(entry, dict) or set(entry) != {'kind','values'} or entry['kind'] not in allowed or not isinstance(entry['values'],dict) or not entry['values']:
+                        raise ValueError('Karşılaştırma paket kaydı geçersiz')
+                    kind, values = entry['kind'], entry['values']
+                    info = db.execute(f'PRAGMA table_info({kind})').fetchall()
+                    columns = {r['name'] for r in info}
+                    if not set(values) <= columns: raise ValueError('Bilinmeyen kayıt alanı')
+                    pks = [r['name'] for r in sorted(info,key=lambda r:r['pk']) if r['pk']]
+                    if not pks or not all(k in values for k in pks): raise ValueError('Kayıt anahtarı eksik')
+                    existing = db.execute(f"SELECT * FROM {kind} WHERE " + ' AND '.join(k+'=?' for k in pks), [values[k] for k in pks]).fetchone()
+                    if existing:
+                        conflicts = [k for k in columns if existing[k] != values.get(k)]
+                        if conflicts and kind == 'comparison_row' and not historical_package and existing['state'] == 'not_researched' and values.get('state') in ('evidence','no_explicit_statement','document_missing') and all(existing[k] == values.get(k) for k in ('id','topic_id','taxonomy_version','party_id','level','organ')):
+                            keys = [k for k in values if k not in pks]
+                            db.execute(f"UPDATE {kind} SET " + ','.join(k+'=?' for k in keys) + ' WHERE ' + ' AND '.join(k+'=?' for k in pks), [values[k] for k in keys] + [values[k] for k in pks])
+                            conflicts = []
+                        if conflicts: raise ValueError('Aynı kimlikle çelişen kayıt')
+                        continue
+                    if historical_package: raise ValueError('Eski paket mevcut sürüme yeni kayıt ekleyemez')
+                    if kind in COMPARISON_TABLES:
+                        keys = list(values)
+                        db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
+                    else:
+                        # Existing record kinds retain their ordinary checks. The
+                        # whole scratch database is installed only after export.
+                        db.commit()
+                        record(temp, kind, values)
+            if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
+                raise ValueError('Karşılaştırma bütünlük hatası')
+        finally:
+            db.close()
+        export_db(temp / 'records.sqlite3', 'workspace', strict_identity=True)
+        os.replace(temp / 'records.sqlite3', work / 'records.sqlite3')
+
+
+def check_comparison_input(path):
+    payload = json.loads(Path(path).read_text(encoding='utf-8'))
+    with tempfile.TemporaryDirectory() as temp:
+        work = open_workspace(temp)
+        try:
+            load_comparison(work, payload)
+        finally:
+            try: assert_lock(work)
+            except (ValueError,OSError): pass
+            else: (DATA / '.write.lock').unlink()
+    return True
+
+
+def validate_comparisons(data):
+    """Validate ownership and the evidence contract for every comparison."""
+    contracts = data.get('comparison_contract', [])
+    if not contracts:
+        if any(data.get(n) for n in COMPARISON_TABLES if n != 'comparison_contract'):
+            raise ValueError('Karşılaştırma sözleşmesi eksik')
+        return True
+    if len(contracts) != 1 or contracts[0]['version'] != 1 or contracts[0]['stage'] not in ('tracer', 'partial', 'complete'):
+        raise ValueError('Karşılaştırma sözleşmesi geçersiz')
+    contract = contracts[0]
+    topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
+    if not topics: raise ValueError('En az bir karşılaştırma konusu gerekli')
+    rows = {r['id']: r for r in data['comparison_row']}
+    parties = {p['party_id'] for p in data['scope_party']}
+    versions = {v['id']: v for v in data['document_version']}
+    documents = {d['id']: d for d in data['document']}
+    passages = {p['id']: p for p in data['passage']}
+    findings = {f['id']: f for f in data['finding']}
+    attrs = {a['version_id'] for a in data.get('source_attribution', [])}
+    evidence = data['finding_evidence']
+    scopes = {s['id']: s for s in data['comparison_review_scope']}
+    missing = {m['id']: m for m in data.get('missing', [])}
+    attempts = {a['id']: a for a in data.get('attempt', [])}
+    seen = set()
+    positions = set()
+    for key, topic in topics.items():
+        if key[1] > contract['taxonomy_version'] or not all(topic[k] for k in ('domain', 'definition', 'applicable_levels', 'basis_kind')):
+            raise ValueError('Karşılaştırma konusu geçersiz')
+        position = (topic['taxonomy_version'],topic['parent_topic_id'],topic['order_index'])
+        if position in positions or not isinstance(topic['order_index'], int) or topic['order_index'] < 0: raise ValueError('Konu sırası geçersiz')
+        positions.add(position)
+        parent, visited = topic['parent_topic_id'], {topic['topic_id']}
+        while parent:
+            if parent in visited or (parent,topic['taxonomy_version']) not in topics: raise ValueError('Konu üst hiyerarşisi geçersiz')
+            visited.add(parent)
+            parent = topics[parent,topic['taxonomy_version']]['parent_topic_id']
+        topic_rows = [r for r in rows.values() if (r['topic_id'],r['taxonomy_version']) == key]
+        active = key[1] == contract['taxonomy_version']
+        if active and contract['stage'] in ('tracer','complete') and {r['party_id'] for r in topic_rows} != parties: raise ValueError('Konu kapsamındaki tüm partiler gerekli')
+        if active and contract['stage'] == 'tracer' and sum(r['state'] == 'evidence' for r in topic_rows) < 2: raise ValueError('Tracer iki kaynaklı yanıt gerektirir')
+        if active and contract['stage'] == 'complete' and any(r['state'] == 'not_researched' for r in topic_rows): raise ValueError('Tam aşamada incelenmemiş kayıt olamaz')
+        if active and contract['stage'] in ('tracer','complete') and not any((s['topic_id'],s['taxonomy_version']) == key for s in data['comparison_synthesis']): raise ValueError('Konu özeti gerekli')
+    for row in rows.values():
+        key = (row['topic_id'],row['taxonomy_version'],row['party_id'],row['level'],row['organ'],row['version_id'],row['alternative_group'],row['source_role'])
+        if key in seen: raise ValueError('Yinelenen karşılaştırma kaydı')
+        seen.add(key)
+        if (row['topic_id'],row['taxonomy_version']) not in topics or row['party_id'] not in parties or not row['level'] or not row['organ'] or not row['selection_reason']:
+            raise ValueError('Karşılaştırma kaydı eksik')
+        if row['source_role'] not in ('program','charter','supplement','historical') or row['state'] not in ('evidence','no_explicit_statement','document_missing','not_researched'):
+            raise ValueError('Karşılaştırma durumu geçersiz')
+        version = versions.get(row['version_id'])
+        if version and (documents[version['document_id']]['party_id'] != row['party_id'] or row['version_id'] not in attrs):
+            raise ValueError('Karşılaştırma sürümü veya atfı partiyle uyuşmuyor')
+        if version:
+            doc = documents[version['document_id']]
+            title = doc['title'].casefold()
+            if row['source_role'] == 'charter' and not any(x in title for x in ('tüzük','tüzüğü')): raise ValueError('Tüzük kaynağı açıkça tanımlanmalı')
+            if row['source_role'] == 'program' and 'program' not in title: raise ValueError('Program kaynağı açıkça tanımlanmalı')
+        if row['version_id'] and not version: raise ValueError('Karşılaştırma sürümü yok')
+        fields = [f for f in data['comparison_field'] if f['row_id'] == row['id']]
+        if row['state'] == 'evidence' and (not version or not fields): raise ValueError('Kaynaklı satır için sürüm ve alan gerekli')
+        if row['state'] != 'evidence' and fields: raise ValueError('Kanıtsız satırda bulgu alanı olamaz')
+        if row['state'] == 'no_explicit_statement':
+            scope = scopes.get(row['scope_id'])
+            if not scope or scope['party_id'] != row['party_id'] or scope['version_id'] != row['version_id'] or not all(scope[k] for k in ('sections','query_terms','reviewed_at','result','reason')):
+                raise ValueError('Açık ifade yokluğu için incelenen kapsam gerekli')
+        if row['state'] == 'document_missing':
+            m = missing.get(row['missing_id'])
+            a = attempts.get(m['attempt_id']) if m else None
+            valid_attempts = {'Bulunamadı':('search','no_result'), 'Erişilemedi':('access','failure'), 'Doğrulanamadı':('verification','inconclusive')}
+            if not m or m['party_id'] != row['party_id'] or not m['reason'] or not a or any(a[k] != m[k] for k in ('party_id','heading','topic_id')) or valid_attempts.get(m['status']) != (a['type'],a['result']):
+                raise ValueError('Belge eksikliği girişimli eksik kaydı gerektirir')
+        if row['state'] == 'not_researched' and any(row[k] for k in ('version_id','scope_id','missing_id')):
+            raise ValueError('İncelenmemiş kayıt belge sonucu içeremez')
+        for field in fields:
+            if field['field'] not in ('charter_answer','principle','target','instrument'): raise ValueError('Karşılaştırma alanı geçersiz')
+            if field['field'] == 'charter_answer' and row['source_role'] not in ('charter','supplement','historical'): raise ValueError('Tüzük yanıtı belge türüyle uyuşmuyor')
+            if field['field'] in ('principle','target','instrument') and row['source_role'] not in ('program','supplement','historical'): raise ValueError('Program alanı belge türüyle uyuşmuyor')
+            summary, quote = findings.get(field['summary_finding_id']), findings.get(field['quote_finding_id'])
+            if not summary or not quote or summary['party_id'] != row['party_id'] or quote['party_id'] != row['party_id'] or summary['provenance'] != 'summary' or quote['provenance'] != 'quote' or summary['pair_id'] != quote['pair_id'] or summary['heading'] != quote['heading'] or summary['epistemic_type'] != quote['epistemic_type']:
+                raise ValueError('Aynı partiye ait özet ve alıntı çifti gerekli')
+            for finding in (summary, quote):
+                ev = [e for e in evidence if e['finding_id'] == finding['id']]
+                if not ev or any(passages[e['passage_id']]['version_id'] != row['version_id'] for e in ev):
+                    raise ValueError('Alan kanıtı sürümle uyuşmuyor')
+            if not ({e['passage_id'] for e in evidence if e['finding_id'] == summary['id']} & {e['passage_id'] for e in evidence if e['finding_id'] == quote['id']}):
+                raise ValueError('Özet ve alıntı ortak pasaj gerektirir')
+    for change in data['comparison_change']:
+        row = rows[change['row_id']]
+        for key in ('before_passage_id','after_passage_id'):
+            p = passages[change[key]]
+            v = versions[p['version_id']]
+            if documents[v['document_id']]['party_id'] != row['party_id'] or v['id'] not in attrs:
+                raise ValueError('Değişiklik kanıtı parti veya atıfla uyuşmuyor')
+        if change['before_passage_id'] == change['after_passage_id'] or not change['summary'] or not change['order_basis']:
+            raise ValueError('Değişiklik öncesi ve sonrası gerekli')
+        before = versions[passages[change['before_passage_id']]['version_id']]
+        after = versions[passages[change['after_passage_id']]['version_id']]
+        if before['id'] == after['id'] or before['document_id'] != after['document_id']:
+            raise ValueError('Değişiklik aynı belgenin iki ayrı sürümünü gerektirir')
+    for synthesis in data['comparison_synthesis']:
+        if (synthesis['topic_id'],synthesis['taxonomy_version']) not in topics or not synthesis['text']:
+            raise ValueError('Konu özeti geçersiz')
+        ids = [e['passage_id'] for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == synthesis['id']]
+        owners = {documents[versions[passages[p]['version_id']]['document_id']]['party_id'] for p in ids}
+        if len(owners) < 2: raise ValueError('Konu özeti çok partili kanıt gerektirir')
+        valid_ids = {e['passage_id'] for row in rows.values() if (row['topic_id'],row['taxonomy_version']) == (synthesis['topic_id'],synthesis['taxonomy_version']) for f in data['comparison_field'] if f['row_id'] == row['id'] for e in evidence if e['finding_id'] in (f['summary_finding_id'],f['quote_finding_id'])}
+        if not set(ids) <= valid_ids: raise ValueError('Konu özeti kanıtı konu alanına bağlanmalı')
+    return True
+
+
+def validate_comparison_descent(base, candidate):
+    """Keep previously published comparison evidence across refreshes."""
+    old_contracts = base.get('comparison_contract', [])
+    if not old_contracts:
+        return True
+    new_contracts = candidate.get('comparison_contract', [])
+    if len(new_contracts) != 1: raise ValueError('Önceki karşılaştırma sözleşmesi kaldırılamaz')
+    old, new = old_contracts[0], new_contracts[0]
+    stages = {'tracer':0,'partial':1,'complete':2}
+    if new['version'] != old['version'] or new['taxonomy_version'] < old['taxonomy_version'] or stages[new['stage']] < stages[old['stage']]:
+        raise ValueError('Karşılaştırma sözleşmesi geriletilemez')
+    for name in COMPARISON_TABLES:
+        if name in ('comparison_contract','comparison_row'): continue
+        if any(row not in candidate.get(name, []) for row in base.get(name, [])):
+            raise ValueError('Önceki karşılaştırma kaydı değiştirilemez: ' + name)
+    new_rows = {r['id']: r for r in candidate['comparison_row']}
+    for row in base.get('comparison_row', []):
+        current_row = new_rows.get(row['id'])
+        if current_row == row: continue
+        if not current_row or row['state'] != 'not_researched' or current_row['state'] not in ('evidence','no_explicit_statement','document_missing') or any(row[k] != current_row[k] for k in ('id','topic_id','taxonomy_version','party_id','level','organ')):
+            raise ValueError('Önceki karşılaştırma satırı değiştirilemez')
+    fids = {f[k] for f in base.get('comparison_field', []) for k in ('summary_finding_id','quote_finding_id') if f[k]}
+    old_evidence = [e for e in base.get('finding_evidence', []) if e['finding_id'] in fids]
+    pids = {e['passage_id'] for e in old_evidence}
+    pids.update(e['passage_id'] for e in base.get('comparison_synthesis_evidence', []))
+    pids.update(c[k] for c in base.get('comparison_change', []) for k in ('before_passage_id','after_passage_id'))
+    for name, old_rows in (('finding',[f for f in base['finding'] if f['id'] in fids]), ('finding_evidence',old_evidence), ('passage',[p for p in base['passage'] if p['id'] in pids])):
+        if any(row not in candidate.get(name, []) for row in old_rows): raise ValueError('Önceki karşılaştırma kanıtı değiştirilemez: ' + name)
+    return True
 
 
 def open_workspace(scratch=None, fail_at=None):
@@ -794,10 +1042,17 @@ def export_db(path, release_id, strict_identity=False):
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Veritabanı bütünlük hatası')
         existing = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-        names = [n for n in TABLES if n in existing] if 'scope_party' in existing else LEGACY_TABLES
+        names = [n for n in TABLES if n in existing] if 'scope_party' in existing else list(LEGACY_TABLES)
+        present = existing.intersection(COMPARISON_TABLES)
+        if present and present != set(COMPARISON_TABLES): raise ValueError('Eksik karşılaştırma şeması')
+        has_comparisons = bool(present and db.execute('SELECT 1 FROM comparison_contract').fetchone())
+        if present and not has_comparisons and any(db.execute(f'SELECT 1 FROM {n} LIMIT 1').fetchone() for n in COMPARISON_TABLES if n != 'comparison_contract'):
+            raise ValueError('Karşılaştırma kayıtları için sözleşme işaretçisi gerekli')
+        if has_comparisons: names += list(COMPARISON_TABLES)
         cols = {r['name'] for r in db.execute('PRAGMA table_info(document_version)')}
         policy = active_policy(db)
-        result = {'schema_version': 5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))), 'release_id': release_id}
+        result = {'schema_version': 6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1)))), 'release_id': release_id}
+        if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
         if existing.intersection(DOSSIER_TABLES) and not set(DOSSIER_TABLES).issubset(existing): raise ValueError('Eksik dosya şeması')
         for name in names:
@@ -884,6 +1139,8 @@ def export_db(path, release_id, strict_identity=False):
             for financial in result['financial']: check_financial(db, financial)
         if result['schema_version'] >= 4:
             validate_dossier(result)
+        if has_comparisons:
+            validate_comparisons(result)
         return result
     finally:
         db.close()
@@ -906,9 +1163,12 @@ def audit_release(release='current', _seen=None):
         if sha(safe_path(folder, name)) != digest:
             raise ValueError('Manifest özeti eşleşmiyor')
     exported = export_db(folder / 'records.sqlite3', release)
-    if manifest.get('source_policy_version') and exported['schema_version']!=5:raise ValueError('Kaynak politikası snapshot sözleşmesiyle uyuşmuyor')
-    if exported['schema_version']==5:
-        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version'),manifest.get('source_policy_version'))!=(5,2,2):raise ValueError('Kaynak politikası manifesti geçersiz')
+    if manifest.get('source_policy_version') and exported['schema_version'] not in (5,6):raise ValueError('Kaynak politikası snapshot sözleşmesiyle uyuşmuyor')
+    if exported['schema_version'] in (5,6):
+        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version'),manifest.get('source_policy_version'))!=(exported['schema_version'],2,2):raise ValueError('Kaynak politikası manifesti geçersiz')
+        if exported['schema_version'] == 6:
+            c = exported['comparison_contract'][0]
+            if (manifest.get('comparison_validation_version'),manifest.get('comparison_taxonomy_version'),manifest.get('comparison_stage')) != (1,c['taxonomy_version'],c['stage']): raise ValueError('Karşılaştırma manifesti geçersiz')
         if not manifest.get('phase2_delivery'):
             base_id=manifest.get('base_release')
             if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
@@ -918,9 +1178,9 @@ def audit_release(release='current', _seen=None):
     if exported['schema_version'] >= 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
-        expected = (5,2) if exported['schema_version']==5 else (4,1)
-        valid_renderers=(11,12,13,14,15) if exported['schema_version']==5 else (9,10)
-        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version']==5 and manifest.get('source_policy_version')!=2):
+        expected = (exported['schema_version'],2) if exported['schema_version'] in (5,6) else (4,1)
+        valid_renderers=(16,) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10))
+        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6) and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_id = manifest.get('base_release')
         if not base_id or base_id == release or not re.fullmatch(r'[0-9a-f]{32}', base_id): raise ValueError('Faz 2 tabanı geçersiz')
@@ -929,6 +1189,7 @@ def audit_release(release='current', _seen=None):
         base_manifest = json.loads((base_folder / 'manifest.json').read_text(encoding='utf-8'))
         base_data = json.loads((base_folder / 'records.json').read_text(encoding='utf-8'))
         validate_policy_descent(base_data,exported)
+        validate_comparison_descent(base_data,exported)
         validate_delivery_prefix(base_manifest, manifest)
         for party in manifest['phase2_delivery']['completed_prefix']:
             validate_dossier(exported, party, 'complete')
@@ -943,7 +1204,7 @@ def audit_release(release='current', _seen=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, RENDERER_VERSION: render_report,
+        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
@@ -988,6 +1249,31 @@ def validate_phase_one_workspace(work, strict_identity=True):
         if not any(r['kind']=='finding' and r['subject_id']==f['id'] and r['reviewer_kind']=='agent' and r['result']=='reviewed' and r['reason'] and r['reviewed_at'] for r in data.get('review', [])):
             raise ValueError('Bulgu için kaynak incelemesi eksik: ' + f['id'])
     return data
+
+
+def validate_phase_three_workspace(folder, stage):
+    folder = Path(folder)
+    data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+    if data.get('schema_version') != 6 or data['comparison_contract'][0]['stage'] != stage:
+        raise ValueError('İstenen karşılaştırma aşaması uyuşmuyor')
+    validate_comparisons(data)
+    order = ('yeni-parti','tip','dem','iyi','yeni-yol','dbp','emep','saadet','demokrat')
+    for topic in data['comparison_topic']:
+        rows = [r for r in data['comparison_row'] if r['topic_id'] == topic['topic_id'] and r['taxonomy_version'] == topic['taxonomy_version']]
+        active = topic['taxonomy_version'] == data['comparison_contract'][0]['taxonomy_version']
+        if active and stage in ('tracer','complete') and {r['party_id'] for r in rows} != set(order): raise ValueError('Konu dokuz partiyi kapsamalı')
+        if stage == 'complete' and topic['taxonomy_version'] == data['comparison_contract'][0]['taxonomy_version'] and any(r['state'] == 'not_researched' for r in rows): raise ValueError('Tam aşamada incelenmemiş kayıt var')
+        if active and stage == 'tracer' and sum(r['state'] == 'evidence' for r in rows) < 2: raise ValueError('Tracer iki kaynaklı yanıt gerektirir')
+    report = (folder / 'index.html').read_text(encoding='utf-8')
+    for row in data['comparison_row']:
+        rid = html.escape(row['id'], quote=True)
+        if f'id="comparison-{rid}"' not in report or f'id="dossier-comparison-{rid}"' not in report or f'href="#comparison-{rid}"' not in report or f'href="#dossier-comparison-{rid}"' not in report:
+            raise ValueError('İki görünüm arasındaki bağlantı eksik')
+    return True
+
+
+def validate_phase_three(release, stage):
+    return validate_phase_three_workspace(DATA / 'releases' / release, stage)
 
 
 def validate_phase_one(release='current'):
@@ -1045,13 +1331,17 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
         payload = export_db(staging / 'records.sqlite3', release, strict_identity=True)
         (staging / 'records.json').write_text(json.dumps(payload, ensure_ascii=False, sort_keys=True, indent=2) + '\n', encoding='utf-8')
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
-        (staging / 'index.html').write_text(render_report(payload), encoding='utf-8')
+        renderer = render_v15_report if payload['schema_version'] == 5 else render_report
+        renderer_version = 15 if payload['schema_version'] == 5 else RENDERER_VERSION
+        (staging / 'index.html').write_text(renderer(payload), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
         # Once the base is phase-capable, deleting its method cannot bypass
         # acceptance. Earlier snapshots may still be authored incrementally.
         base_phase = False
         if metadata['base']:
-            validate_policy_descent(json.loads((DATA / 'releases' / metadata['base'] / 'records.json').read_text(encoding='utf-8')), payload)
+            base_data = json.loads((DATA / 'releases' / metadata['base'] / 'records.json').read_text(encoding='utf-8'))
+            validate_policy_descent(base_data, payload)
+            validate_comparison_descent(base_data, payload)
             base = connect_readonly(DATA / 'releases' / metadata['base'] / 'records.sqlite3')
             try:
                 has_method = base.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='method'").fetchone()
@@ -1065,10 +1355,15 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
             validate_phase_two_workspace(staging, None if refresh else party, stage)
             for completed_party in phase_delivery['completed_prefix']:
                 validate_dossier(payload, completed_party, 'complete')
-        manifest = {'release_id': release, 'renderer_version': RENDERER_VERSION, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
-        if payload['schema_version']==5:manifest.update(data_schema_version=5,dossier_validation_version=2,source_policy_version=2,base_release=metadata['base'])
+        if payload['schema_version'] == 6:
+            validate_phase_three_workspace(staging, payload['comparison_contract'][0]['stage'])
+        manifest = {'release_id': release, 'renderer_version': renderer_version, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
+        if payload['schema_version'] in (5,6):manifest.update(data_schema_version=payload['schema_version'],dossier_validation_version=2,source_policy_version=2,base_release=metadata['base'])
         if phase_delivery:
-            manifest.update(data_schema_version=5, dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=metadata['base'])
+            manifest.update(data_schema_version=payload['schema_version'], dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=metadata['base'])
+        if payload['schema_version'] == 6:
+            c = payload['comparison_contract'][0]
+            manifest.update(comparison_validation_version=1, comparison_taxonomy_version=c['taxonomy_version'], comparison_stage=c['stage'])
         if refresh: manifest['phase2_refresh'] = True
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
@@ -1104,7 +1399,9 @@ def main():
     ch = sub.add_parser('chain'); ch.add_argument('--workspace', required=True); ch.add_argument('--party', required=True); ch.add_argument('--topic', required=True)
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True); group=pub.add_mutually_exclusive_group(); group.add_argument('--party'); group.add_argument('--refresh', action='store_true'); pub.add_argument('--stage', choices=('tracer','complete'), default='complete')
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
-    a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','complete'), default='complete')
+    a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2','3')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','partial','complete'), default='complete')
+    cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True)
+    cc = sub.add_parser('comparison-check'); cc.add_argument('--input', required=True)
     dl = sub.add_parser('dossier-load'); dl.add_argument('--workspace', required=True); dl.add_argument('--input', required=True)
     dc = sub.add_parser('dossier-check'); dc.add_argument('--input', required=True); dc.add_argument('--stage', choices=('tracer','complete'), default='complete')
     dr = sub.add_parser('delivery-receipt'); dr.add_argument('--release', required=True); dr.add_argument('--party', required=True); dr.add_argument('--out', required=True); dr.add_argument('--previous')
@@ -1127,6 +1424,10 @@ def main():
             print(json.dumps([dict(x) for x in db.execute('SELECT * FROM lead WHERE party_id=? AND topic_id=? ORDER BY rowid', (args.party,args.topic))], ensure_ascii=False, indent=2))
         finally: db.close()
     elif args.command == 'publish': print(publish_release(args.workspace, party=args.party, stage=args.stage, refresh=args.refresh))
+    elif args.command == 'comparison-load':
+        load_comparison(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8'))); print('COMPARISON_LOAD_OK')
+    elif args.command == 'comparison-check':
+        check_comparison_input(args.input); print('COMPARISON_INPUT_OK')
     elif args.command == 'dossier-load':
         from dosyalar import load_dossier
         load_dossier(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8')))
@@ -1159,6 +1460,9 @@ def main():
             from dosyalar import validate_phase_two
             validate_phase_two(release, args.party, args.stage)
             print('PHASE2_TRACER_OK' if args.party and args.stage == 'tracer' else ('PHASE2_PARTY_OK' if args.party else 'PHASE2_AUDIT_OK'), release)
+        elif args.phase == '3':
+            validate_phase_three(release, args.stage)
+            print('PHASE3_AUDIT_OK', release)
         else: print('AUDIT_OK', release)
     elif args.command == 'serve':
         if args.host != '127.0.0.1': raise ValueError('Sunucu yalnız 127.0.0.1 üzerinde çalışabilir')

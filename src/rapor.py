@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 15
+RENDERER_VERSION = 16
 STYLE = Path(__file__).with_name('rapor_v14.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -183,6 +183,10 @@ def render_report(data):
         title = documents[versions[passages[pid]['version_id']]['document_id']]['title']
         return f'<a class="citation" href="#source-{esc(pid)}" aria-label="{esc(label)}: {esc(title)}">[{esc(label)}]</a>'
 
+    def named_citation(pid):
+        title = documents[versions[passages[pid]['version_id']]['document_id']]['title']
+        return citation(pid, title)
+
     grouped = group_party_sources(data, passages, versions, documents)
     source_entries = {}
     history_seen = set()
@@ -300,6 +304,42 @@ def render_report(data):
             previous = (kind, passage_ids)
         pieces.append('</div>')
 
+    def add_comparison_row(row, dossier=False):
+        rid = esc(row['id'])
+        own = 'dossier-comparison-' if dossier else 'comparison-'
+        other = 'comparison-' if dossier else 'dossier-comparison-'
+        label = 'Karşılaştırmaya git' if dossier else 'Parti dosyasına git'
+        pieces.append(f'<article class="comparison-row" id="{own}{rid}"><h4>{esc(parties[row["party_id"]]["legal_name"])}</h4>'
+                      f'<a href="#{other}{rid}">{label}</a>')
+        if row['state'] == 'evidence':
+            pieces.append(f'<p class="metadata">{esc(row["level"].capitalize())} · {esc(row["organ"])}</p>')
+        if row['state'] == 'not_researched':
+            pieces.append('<p class="muted">Henüz incelenmedi</p>')
+        elif row['state'] == 'document_missing':
+            m = next(m for m in data['missing'] if m['id'] == row['missing_id'])
+            pieces.append(f'<p class="muted">{esc(m["status"])} · {esc(m["reason"])} '
+                          f'<a href="#attempt-{esc(m["attempt_id"])}">Araştırma kaydı</a></p>')
+        elif row['state'] == 'no_explicit_statement':
+            pieces.append('<p class="muted">İncelenen kapsamda açık ifade bulunmadı.</p>')
+        else:
+            for field in (x for x in data.get('comparison_field', []) if x['row_id'] == row['id']):
+                for fid in (field['summary_finding_id'],field['quote_finding_id']):
+                    f = findings[fid]
+                    cls, value = format_finding(f)
+                    refs = ' '.join(named_citation(e['passage_id']) for e in evidence[fid])
+                    pieces.append(f'<p class="{cls}">{value} {refs}</p>')
+            changes = [c for c in data.get('comparison_change', []) if c['row_id'] == row['id']]
+            if changes:
+                pieces.append('<details><summary>Belge sürümlerindeki değişiklikler</summary>')
+                for change in sorted(changes, key=lambda c: c['id']):
+                    before, after = passages[change['before_passage_id']], passages[change['after_passage_id']]
+                    pieces.append(f'<p class="summary">{esc(change["summary"])} {named_citation(before["id"])} {named_citation(after["id"])}</p>'
+                                  f'<p class="quote">“{esc(before["exact"])}” {named_citation(before["id"])}</p>'
+                                  f'<p class="quote">“{esc(after["exact"])}” {named_citation(after["id"])}</p>'
+                                  f'<p class="metadata">{esc(change["order_basis"])}</p>')
+                pieces.append('</details>')
+        pieces.append('</article>')
+
     def add_matches(matches, candidates):
         if matches:
             actions = {a['finding_id']: a for a in data['action']}
@@ -367,6 +407,9 @@ def render_report(data):
                 questions={'kurulus':'Neden kuruldu?','tuzuk':'Üyelik ve yönetim nasıl düzenleniyor?','program':'Ne vaat ediyor?','soylem-uygulama':'Kaynaklar ne yaptığını söylüyor?','finansman':'Para nereden geliyor, nasıl harcanıyor?'}
                 if primary_rows:pieces.append(f'<p class="reader-question">{questions[key]}</p>')
                 if primary_rows:add_findings(primary_rows)
+                if key == 'tuzuk':
+                    for row in data.get('comparison_row', []):
+                        if row['party_id'] == pid: add_comparison_row(row, dossier=True)
                 if key == 'kurulus':
                     pieces.append('<details class="record"><summary>Temel bilgiler ve kuruluş kronolojisi</summary>')
                     if card_rows:add_findings(card_rows)
@@ -426,8 +469,21 @@ def render_report(data):
         pieces.append('</div>')
 
     pieces.append('<div role="tabpanel" id="comparison-summary" aria-labelledby="tab-comparison" hidden>'
-                  '<h2 class="panel-title">Karşılaştırmalı Özet</h2>'
-                  '<div class="empty"><p>Partiler arası karşılaştırma henüz hazırlanmadı.</p></div></div>')
+                  '<h2 class="panel-title">Karşılaştırmalı Özet</h2>')
+    if not data.get('comparison_topic'):
+        pieces.append('<div class="empty"><p>Partiler arası karşılaştırma henüz hazırlanmadı.</p></div>')
+    for topic in sorted(data.get('comparison_topic', []), key=lambda t: t['order_index']):
+        pieces.append(f'<section class="comparison-topic"><h3>{esc(topic["definition"])}</h3>')
+        for synth in data.get('comparison_synthesis', []):
+            if (synth['topic_id'],synth['taxonomy_version']) == (topic['topic_id'],topic['taxonomy_version']):
+                refs = ' '.join(named_citation(e['passage_id']) for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == synth['id'])
+                pieces.append(f'<p class="summary">{esc(synth["text"])} {refs}</p>')
+        for pid in PRESENTATION_ORDER:
+            for row in data['comparison_row']:
+                if (row['topic_id'],row['taxonomy_version'],row['party_id']) == (topic['topic_id'],topic['taxonomy_version'],pid):
+                    add_comparison_row(row)
+        pieces.append('</section>')
+    pieces.append('</div>')
 
     if scoped or methods or attempts:
         pieces.append('<details id="scope-method"><summary>Kapsam ve yöntem</summary>')
