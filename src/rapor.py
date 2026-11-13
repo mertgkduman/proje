@@ -330,6 +330,11 @@ def render_report(data):
             pieces.append('<p class="muted">İncelenen kapsamda açık ifade bulunmadı.</p>')
         else:
             for field in (x for x in data.get('comparison_field', []) if x['row_id'] == row['id']):
+                field_label = {'principle':'İlke', 'target':'Hedef', 'instrument':'Önerilen araç'}.get(field['field'])
+                if field_label:
+                    pieces.append(f'<h5>{field_label}</h5>')
+                if field['condition_key']:
+                    pieces.append(f'<p class="metadata">Koşul: {esc(field["condition_key"])}</p>')
                 for fid in (field['summary_finding_id'],field['quote_finding_id']):
                     f = findings[fid]
                     cls, value = format_finding(f)
