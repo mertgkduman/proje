@@ -1,0 +1,35 @@
+test_current_snapshot_passes (test_acceptance.PhaseOneAcceptance.test_current_snapshot_passes) ... ok
+test_asset_dns_private_and_mixed_answers_are_rejected (test_archive_views.ArchiveViews.test_asset_dns_private_and_mixed_answers_are_rejected) ... ok
+test_declared_charsets_and_bom_preserve_turkish_text_and_original (test_archive_views.ArchiveViews.test_declared_charsets_and_bom_preserve_turkish_text_and_original) ... ok
+test_passive_document_retains_layout_and_removes_active_requests (test_archive_views.ArchiveViews.test_passive_document_retains_layout_and_removes_active_requests) ... ok
+test_view_identity_covers_source_url_and_limitations (test_archive_views.ArchiveViews.test_view_identity_covers_source_url_and_limitations) ... ok
+test_an_alternative_group_cannot_have_only_one_version (test_comparison_content.ComparisonContentTest.test_an_alternative_group_cannot_have_only_one_version) ... ok
+test_complete_stage_requires_a_closed_source_inventory (test_comparison_content.ComparisonContentTest.test_complete_stage_requires_a_closed_source_inventory) ... ok
+test_no_explicit_statement_requires_a_review_scope (test_comparison_content.ComparisonContentTest.test_no_explicit_statement_requires_a_review_scope) ... ok
+test_repeated_fields_merge_only_when_conditions_match_and_keep_sources (test_comparison_content.ComparisonContentTest.test_repeated_fields_merge_only_when_conditions_match_and_keep_sources) ... ok
+test_comparison_text_is_escaped (test_comparisons.ComparisonReleaseTest.test_comparison_text_is_escaped) ... ok
+test_new_stylesheet_preserves_historical_style (test_comparisons.ComparisonReleaseTest.test_new_stylesheet_preserves_historical_style) ... ok
+test_identical_bytes_keep_document_ownership (test_documents.DocumentContract.test_identical_bytes_keep_document_ownership) ... ok
+test_archived_tip_registry_foundation_has_party_contract (test_dossiers.DossierTracer.test_archived_tip_registry_foundation_has_party_contract) ... ok
+test_migration_rollback_and_invalid_records_leave_pointer (test_dossiers.DossierTracer.test_migration_rollback_and_invalid_records_leave_pointer) ... ok
+test_refresh_requires_unchanged_completed_delivery (test_dossiers.DossierTracer.test_refresh_requires_unchanged_completed_delivery) ... ok
+test_current_pilot_has_researched_finance (test_finance.FinanceContract.test_current_pilot_has_researched_finance) ... ok
+test_actor_authorization_and_individual_are_distinct (test_matches.MatchContract.test_actor_authorization_and_individual_are_distinct) ... ok
+test_match_respects_each_findings_provenance (test_matches.MatchContract.test_match_respects_each_findings_provenance) ... ok
+test_statuses_bind_matching_attempt_and_scope (test_missing.MissingContract.test_statuses_bind_matching_attempt_and_scope) ... ok
+test_lock_excludes_second_writer_and_old_workspace (test_publication.PublicationTest.test_lock_excludes_second_writer_and_old_workspace) ... ok
+test_rejects_dangerous_urls (test_publication.PublicationTest.test_rejects_dangerous_urls) ... ok
+test_attribution_is_never_copied_from_same_hash_sibling (test_report.ReportTest.test_attribution_is_never_copied_from_same_hash_sibling) ... ok
+test_mobile_navigation_hint_and_readable_touch_targets (test_report.ReportTest.test_mobile_navigation_hint_and_readable_touch_targets) ... ok
+test_rejects_unsafe_archive_path_and_escapes_finding (test_report.ReportTest.test_rejects_unsafe_archive_path_and_escapes_finding) ... ok
+test_canonical_identity_and_parliamentary_identifier_history (test_scope.ScopeContract.test_canonical_identity_and_parliamentary_identifier_history) ... ok
+test_historical_renderer_and_policy_still_audit (test_source_policy.SourcePolicy.test_historical_renderer_and_policy_still_audit) ... ok
+test_party_charter_passes_real_publication_without_registry_domain_authority (test_source_policy.SourcePolicy.test_party_charter_passes_real_publication_without_registry_domain_authority) ... ok
+test_short_name_html_uses_same_party_host_and_full_name_anchor (test_source_policy.SourcePolicy.test_short_name_html_uses_same_party_host_and_full_name_anchor) ... ok
+test_unrelated_party_cannot_authorize_charter (test_topics.TopicContract.test_unrelated_party_cannot_authorize_charter) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 1305.564s
+
+OK
+{"group": 1, "total": 29, "passed": 29, "successful": true}

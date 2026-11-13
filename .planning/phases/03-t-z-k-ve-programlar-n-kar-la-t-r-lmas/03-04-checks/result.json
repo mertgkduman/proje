@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "implementation_commit": "45c7c40",
+  "release_id": "b54b8fe4805741d4bd6b87b5dd81da4c",
+  "total_unique_tests": 124,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "focused": {
+    "passed": 8,
+    "log": "focused.log",
+    "includes": "fresh source bytes with unchanged size/mtime, PDF parser/dependency/corruption guards"
+  },
+  "groups": [
+    {
+      "group": 0,
+      "passed": 29,
+      "log": "group-0.log",
+      "result": "group-0.json"
+    },
+    {
+      "group": 1,
+      "passed": 29,
+      "log": "group-1.log",
+      "result": "group-1.json"
+    },
+    {
+      "group": 2,
+      "passed": 29,
+      "log": "group-2.log",
+      "result": "group-2.json"
+    },
+    {
+      "group": 3,
+      "passed": 29,
+      "log": "group-3.log",
+      "result": "group-3.json"
+    }
+  ],
+  "input_identity": "7ca1401b4746799d5a168b37ad5d5f246f898b5398d3f1d44c772d65802b039b",
+  "input_identity_unchanged": true,
+  "phase2_audit": "PHASE2_AUDIT_OK b54b8fe4805741d4bd6b87b5dd81da4c",
+  "phase3_content": "PHASE3_CONTENT_OK b54b8fe4805741d4bd6b87b5dd81da4c",
+  "performance": "performance.json",
+  "note": "All discovered tests executed exactly once across the focused run and four independent groups on unchanged source/test/current inputs."
+}

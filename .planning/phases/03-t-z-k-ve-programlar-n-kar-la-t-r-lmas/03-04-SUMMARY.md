@@ -68,3 +68,9 @@ Yayınlanmış ara tüzük bulgusundaki af istisnasına atıf fazla kısa kaldı
 ## Self-Check: PASSED
 
 İki görev commit'i, üç kaynak paketi, son rapor ve üç başarılı faz denetimi dosya ve commit olarak doğrulandı.
+
+## Orkestrasyon sonrası doğrulama
+
+Parti veri görevleri kapandıktan sonra aynı yayıncı atfının her bulgu kanıtında tekrar doğrulanması ölçüldü. Her snapshot export'unda tam kaynak atfını bir kez doğrulayan, yalnız o export içinde kullanılan bağlam eklendi; sonraki export kaynak baytlarını yeniden denetler. Renderer, rapor içeriği, kaynak hashleri ve denetim kuralları değişmedi. RED `50e21f2`, düzeltme `45c7c40`. Aynı1718 pasajlı snapshot export ölçümü109,616 saniyeden19,292 saniyeye indi; atıf kontrol çağrıları2730'dan104'e düştü.
+
+[Regresyon kanıtı](03-04-checks/result.json):124 benzersiz test geçti; hata, atlanan veya yürütülmeyen test yok. Aynı boyut/zaman damgasıyla kaynak değiştirme ve sıcak PDF/denetim bozulması reddi test edildi. Gerçek son sürüm için `PHASE2_AUDIT_OK` ve Faz3 içerik/bağlantı kontrolü geçti. Bu dar performans düzeltmesi, yukarıdaki iki parti veri görevinin maliyet ve commit sayısına dahil değildir.

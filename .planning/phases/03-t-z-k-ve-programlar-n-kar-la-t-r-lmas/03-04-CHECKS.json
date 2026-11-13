@@ -1,8 +1,7 @@
 {
   "status": "passed",
   "release_id": "b54b8fe4805741d4bd6b87b5dd81da4c",
-  "application_code_unchanged_since": "084f764",
-  "code_test_baseline": "03-02-checks/result.json (123 unique tests passed)",
+  "code_test_baseline": "03-04-checks/result.json (124 unique tests passed)",
   "package_row_and_reciprocal_links": {
     "charter": 459,
     "program": 226
@@ -21,5 +20,9 @@
     "ui_safety": "passed"
   },
   "known_navigation_limit": "Renderer17 does not show review scope/source inline on no_explicit_statement rows; tracked for03-15/16",
-  "new_topic_and_definition_backfill": "03-tip-charter.json and 03-tip-program.json; five topic candidates and Yeni Parti/TIP basic-income definition review for03-14"
+  "new_topic_and_definition_backfill": "03-tip-charter.json and 03-tip-program.json; five topic candidates and Yeni Parti/TIP basic-income definition review for03-14",
+  "party_execution_application_code_unchanged_since": "084f764",
+  "post_wave_performance_fix": "45c7c40",
+  "fresh_release_audit": "PHASE2_AUDIT_OK b54b8fe4805741d4bd6b87b5dd81da4c",
+  "upcoming_key_links": "DEM package pending as expected; symbolic renderer target manually verified with685 row reciprocal links"
 }
