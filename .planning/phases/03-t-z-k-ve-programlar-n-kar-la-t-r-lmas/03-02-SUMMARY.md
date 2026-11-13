@@ -94,3 +94,9 @@ status: complete
 ## Self-Check: PASSED
 
 Planın sekiz uygulama dosyası ve iki yerel raporu mevcut; her iki yayın commit'i doğrulandı. Plan düzeyinde tamamlanmış gereksinim işaretlenmedi: ilgili faz gereksinimleri sonraki parti incelemeleri ve faz denetimiyle birlikte değerlendirilecektir.
+
+## Dalga sonu ek regresyon düzeltmesi
+
+Gerçek kapalı yayın kabulü, kaynaklı konu sentezinde geçerli CRLF satır sonuyla çalıştırıldı. RED koşusu `HTML kapalı snapshot ile eşleşmiyor` hatasını yeniden üretti (311.633 saniye; `274fb3d`). HTML denetimi metin okumanın satır sonu dönüşümünü kullanmak yerine renderer UTF-8 baytlarını dosya baytlarıyla doğrudan karşılaştıracak şekilde düzeltildi. Yedi karşılaştırma testi son kodla geçti; eski yayınlar ve kaynak baytları değiştirilmedi. Yeni yayın fixture'ı güncel renderer sürümünü bekler; tarihsel renderer15/16 kabulü ayrı testlerde korunur.
+
+03-03 ön bağımlılık kontrolünün sembolik `parti bölümü ↔ karşılaştırma konusu` hedefi kaynak kodda düz metin olarak aranamadığından otomatik sorgu false verdi. Mevcut kapalı rapordaki 38 kanonik comparison row için iki görünümün kimlikleri ve karşılıklı bağlantıları tek tek doğrulandı; gerçek kablolama açığı bulunmadı.

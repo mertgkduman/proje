@@ -1318,7 +1318,7 @@ def audit_release(release='current', _seen=None):
         9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
-    if (folder / 'index.html').read_text(encoding='utf-8') != renderer(exported):
+    if (folder / 'index.html').read_bytes() != renderer(exported).encode('utf-8'):
         raise ValueError('HTML kapalı snapshot ile eşleşmiyor')
     return release
 
