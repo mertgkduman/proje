@@ -1,11 +1,35 @@
 """Source and content invariants for phase-three comparisons."""
 import unittest
+import tempfile
+import shutil
+from pathlib import Path
 
 import arsiv
 import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_attributed_program_can_support_a_verified_topic(self):
+        release = arsiv.current()
+        source = arsiv.DATA / 'releases' / release / 'records.sqlite3'
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / 'records.sqlite3'
+            shutil.copyfile(source, path)
+            db = arsiv.connect(path)
+            try:
+                columns = {row['name'] for row in db.execute('PRAGMA table_info(topic_basis)')}
+                if 'source_role' not in columns:
+                    db.execute('ALTER TABLE topic_basis ADD COLUMN source_role TEXT')
+                db.execute("INSERT INTO topic VALUES (?,?,?,?,?,?)", ('test-demokrasi', 'Demokrasi', 2, '2026-11-13', 'verified', 'Test'))
+                db.execute("INSERT INTO topic_basis (topic_id,taxonomy_version,passage_id,rationale,source_role) VALUES (?,?,?,?,?)", ('test-demokrasi', 2, 'epm-parliamentary-p', 'Programdaki yönetim sistemi', 'program'))
+                db.commit()
+            finally:
+                db.close()
+            try:
+                arsiv.export_db(path, 'test')
+            except ValueError as exc:
+                self.fail(f'Atıflı program dayanağı kabul edilmeli: {exc}')
+
     def test_identical_source_bytes_cannot_be_a_material_change(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         change = data['comparison_change'][0]
