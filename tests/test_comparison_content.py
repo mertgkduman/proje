@@ -147,6 +147,8 @@ class ComparisonContentTest(unittest.TestCase):
                 db.execute("INSERT INTO topic_basis (topic_id,taxonomy_version,passage_id,rationale,source_role) VALUES (?,?,?,?,?)", ('test-demokrasi', 2, 'epm-parliamentary-p', 'Programdaki yönetim sistemi', 'program'))
                 db.execute("INSERT INTO topic VALUES (?,?,?,?,?,?)", ('test-dem-tuzuk', 'Tüzük', 2, '2026-11-13', 'verified', 'Test'))
                 db.execute("INSERT INTO topic_basis (topic_id,taxonomy_version,passage_id,rationale,source_role) VALUES (?,?,?,?,?)", ('test-dem-tuzuk', 2, '0204-dem-charter-hedep', 'DEM tüzüğündeki ifade', 'charter'))
+                db.execute("INSERT INTO topic VALUES (?,?,?,?,?,?)", ('test-tarihsel', 'Tarihsel kaynak', 2, '2026-11-13', 'verified', 'Test'))
+                db.execute("INSERT INTO topic_basis (topic_id,taxonomy_version,passage_id,rationale,source_role) VALUES (?,?,?,?,?)", ('test-tarihsel', 2, '0207-dbp-bdp-program-copy', 'Tarihsel BDP programı', 'historical'))
                 db.commit()
             finally:
                 db.close()
