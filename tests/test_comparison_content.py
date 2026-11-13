@@ -13,6 +13,28 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_program_topic_basis_points_to_the_actual_heading(self):
+        root = Path(__file__).resolve().parents[1]
+        package = json.loads((root / 'data/comparisons/03-taxonomy.json').read_text(encoding='utf-8'))
+        passages = {r['values']['id']: r['values']['exact'] for r in package['records'] if r['kind'] == 'passage'}
+        expected = {
+            'sosyalist-demokrasi': 'SOSYALİST DEMOKRASİ',
+            'kapitalizm-bunalim': 'KAPİTALİZM BÜTÜNSEL BİR BUNALIM İÇİNDE',
+            'turkiye-cumhuriyet-tarih': 'TÜRKİYE’DE BURJUVA DEVRİMİ',
+            'siyasal-ittifaklar': '3. YOL VE İTTİFAKLAR',
+            'cezaevleri': 'CEZAEVLERİ',
+            'uyusturucu-mucadele': 'UYUŞTURUCUYA KARŞI',
+            'tuketici-haklari': 'Tüketiciler Korunmalı',
+            'yaribaskanlik-sistemi': 'Yarı Başkanlık',
+            'senato': 'SENATO',
+            'yabanci-sermaye': 'Yabancı Sermaye',
+            'finansal-hizmetler': 'Finansal Hizmetler',
+            'abd-iliskileri': 'ABD İlişkileri',
+            'istihbarat': 'İSTİHBARAT',
+        }
+        for identifier, heading in expected.items():
+            self.assertEqual(passages['03-program-' + identifier].casefold(), heading.casefold(), identifier)
+
     def test_repeated_fields_merge_only_when_conditions_match_and_keep_sources(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         row = next(r for r in data['comparison_row'] if r['party_id'] == 'iyi')
