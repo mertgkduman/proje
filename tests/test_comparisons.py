@@ -79,6 +79,16 @@ class ComparisonReleaseTest(unittest.TestCase):
         self.assertNotIn('<img src=x onerror=alert(1)>', report)
         self.assertIn('&lt;img src=x', report)
 
+    def test_new_stylesheet_preserves_historical_style(self):
+        source = Path(__file__).resolve().parents[1] / 'src'
+        historical = source / 'rapor_v14.css'
+        current = source / 'rapor_v16.css'
+        self.assertEqual(arsiv.sha(historical), '721a9fe91d18231d01941d8788bac0264862870957c1a85cc13090ec5603fef4')
+        self.assertEqual(rapor.STYLE, current.read_text(encoding='utf-8'))
+        self.assertIn('.comparison-row', rapor.STYLE)
+        self.assertIn('.summary { color: #003366;', rapor.STYLE)
+        self.assertIn('.quote { color: #000;', rapor.STYLE)
+
     def test_published_evidence_cannot_be_rewritten(self):
         base = self.comparison_data()
         candidate = copy.deepcopy(base)
