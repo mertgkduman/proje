@@ -114,6 +114,7 @@ COMPARISON_TABLES = {
     'comparison_synthesis_evidence': 'synthesis_id TEXT NOT NULL REFERENCES comparison_synthesis(id), passage_id TEXT NOT NULL REFERENCES passage(id), PRIMARY KEY(synthesis_id,passage_id)',
     'comparison_semantic_review': 'subject_kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(subject_kind,subject_id,reviewer_kind)',
 }
+COMPARISON_INVENTORY_TABLE = 'id TEXT PRIMARY KEY, taxonomy_version INTEGER NOT NULL, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT REFERENCES document_version(id), source_role TEXT NOT NULL, section TEXT NOT NULL, page_range TEXT, full_text_available INTEGER NOT NULL, scanned_at TEXT NOT NULL, topic_ids TEXT NOT NULL, unmatched_headings TEXT NOT NULL, search_boundary TEXT NOT NULL, missing_id TEXT REFERENCES missing(id)'
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -307,6 +308,7 @@ def migrate_comparisons(db, backup_path, fail_at=None):
         columns = {r['name'] for r in db.execute('PRAGMA table_info(topic_basis)')}
         if columns and 'source_role' not in columns:
             db.execute('ALTER TABLE topic_basis ADD COLUMN source_role TEXT')
+        db.execute(f'CREATE TABLE IF NOT EXISTS comparison_source_inventory ({COMPARISON_INVENTORY_TABLE})')
         for name, definition in COMPARISON_TABLES.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if fail_at == 'migration':
@@ -325,7 +327,7 @@ def load_comparison(work, payload):
     work = Path(work)
     assert_lock(work)
     protected = {'party','scope_party','scope_observation','method','party_identity_revision','source_policy'}
-    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected)
+    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected) | {'comparison_source_inventory'}
     with tempfile.TemporaryDirectory(dir=work) as temp:
         temp = Path(temp)
         shutil.copyfile(work / 'records.sqlite3', temp / 'records.sqlite3')
@@ -348,6 +350,11 @@ def load_comparison(work, payload):
                     if not isinstance(entry, dict) or set(entry) != {'kind','values'} or entry['kind'] not in allowed or not isinstance(entry['values'],dict) or not entry['values']:
                         raise ValueError('Karşılaştırma paket kaydı geçersiz')
                     kind, values = entry['kind'], entry['values']
+                    if kind == 'comparison_source_inventory':
+                        values = dict(values)
+                        for key in ('topic_ids', 'unmatched_headings'):
+                            if isinstance(values.get(key), list):
+                                values[key] = json.dumps(values[key], ensure_ascii=False)
                     info = db.execute(f'PRAGMA table_info({kind})').fetchall()
                     columns = {r['name'] for r in info}
                     if not set(values) <= columns: raise ValueError('Bilinmeyen kayıt alanı')
@@ -363,7 +370,7 @@ def load_comparison(work, payload):
                         if conflicts: raise ValueError('Aynı kimlikle çelişen kayıt')
                         continue
                     if historical_package: raise ValueError('Eski paket mevcut sürüme yeni kayıt ekleyemez')
-                    if kind in COMPARISON_TABLES:
+                    if kind in COMPARISON_TABLES or kind == 'comparison_source_inventory':
                         keys = list(values)
                         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
                     else:
@@ -410,11 +417,53 @@ def validate_comparisons(data):
     documents = {d['id']: d for d in data['document']}
     passages = {p['id']: p for p in data['passage']}
     findings = {f['id']: f for f in data['finding']}
-    attrs = {a['version_id'] for a in data.get('source_attribution', [])}
+    attribution = {a['version_id']: a for a in data.get('source_attribution', [])}
+    attrs = set(attribution)
     evidence = data['finding_evidence']
     scopes = {s['id']: s for s in data['comparison_review_scope']}
     missing = {m['id']: m for m in data.get('missing', [])}
     attempts = {a['id']: a for a in data.get('attempt', [])}
+    all_inventory = data.get('comparison_source_inventory', [])
+    if any(type(item['taxonomy_version']) is not int or item['taxonomy_version'] < 1 or item['taxonomy_version'] > contract['taxonomy_version'] for item in all_inventory):
+        raise ValueError('Kaynak envanteri sürümü geçersiz')
+    inventory = [item for item in all_inventory if item['taxonomy_version'] == contract['taxonomy_version']]
+    coverage = set()
+    for item in inventory:
+        if item['party_id'] not in parties or item['source_role'] not in ('charter','program','supplement','historical') or not all(item[k] for k in ('section','scanned_at','search_boundary')) or item['full_text_available'] not in (0,1):
+            raise ValueError('Kaynak envanteri kapsamı geçersiz')
+        try:
+            matched, unmatched = json.loads(item['topic_ids']), json.loads(item['unmatched_headings'])
+        except (TypeError, ValueError):
+            raise ValueError('Kaynak envanteri konu listeleri geçersiz')
+        if not isinstance(matched, list) or not isinstance(unmatched, list) or any(not isinstance(t, str) or not t for t in matched + unmatched):
+            raise ValueError('Kaynak envanteri konu listeleri geçersiz')
+        if any((t, item['taxonomy_version']) not in topics for t in matched):
+            raise ValueError('Kaynak envanteri bilinmeyen konuya bağlanamaz')
+        if item['full_text_available']:
+            version = versions.get(item['version_id'])
+            if not version or documents[version['document_id']]['party_id'] != item['party_id'] or item['version_id'] not in attrs or item['missing_id']:
+                raise ValueError('Envanterdeki metin kaynakla uyuşmuyor')
+            if item['source_role'] in ('charter','program'):
+                title = documents[version['document_id']]['title'].lower()
+                terms = ('tüzük','tüzüğü') if item['source_role'] == 'charter' else ('program',)
+                if attribution[item['version_id']]['kind'] != 'party_publication' or not any(term in title for term in terms):
+                    raise ValueError('Envanter belge türü kaynakla uyuşmuyor')
+            if contract['stage'] == 'complete' and not matched:
+                raise ValueError('Tam envanterde metin konusu gerekli')
+        else:
+            m = missing.get(item['missing_id'])
+            if item['version_id'] or not m or m['party_id'] != item['party_id'] or m['heading'] != {'charter':'Tüzük','program':'Program'}.get(item['source_role']):
+                raise ValueError('Elde olmayan belge ortak eksik kaydına bağlanmalı')
+            attempt = attempts.get(m['attempt_id'])
+            valid_attempts = {'Bulunamadı':('search','no_result'), 'Erişilemedi':('access','failure'), 'Doğrulanamadı':('verification','inconclusive')}
+            if not attempt or any(attempt[k] != m[k] for k in ('party_id','heading','topic_id')) or valid_attempts.get(m['status']) != (attempt['type'],attempt['result']):
+                raise ValueError('Envanter belge açığı geçerli araştırma kaydı gerektirir')
+        if contract['stage'] == 'complete' and unmatched:
+            raise ValueError('Tam envanterde eşleşmemiş başlık olamaz')
+        if item['source_role'] in ('charter','program'):
+            coverage.add((item['party_id'],item['source_role']))
+    if contract['stage'] == 'complete' and coverage != {(party, role) for party in parties for role in ('charter','program')}:
+        raise ValueError('Tam karşılaştırma bütün partilerin belge envanterini gerektirir')
     seen = set()
     positions = set()
     for key, topic in topics.items():
@@ -531,6 +580,8 @@ def validate_comparison_descent(base, candidate):
         if name in ('comparison_contract','comparison_row'): continue
         if any(row not in candidate.get(name, []) for row in base.get(name, [])):
             raise ValueError('Önceki karşılaştırma kaydı değiştirilemez: ' + name)
+    if any(row not in candidate.get('comparison_source_inventory', []) for row in base.get('comparison_source_inventory', [])):
+        raise ValueError('Önceki kaynak envanteri kaydı değiştirilemez')
     new_rows = {r['id']: r for r in candidate['comparison_row']}
     for row in base.get('comparison_row', []):
         current_row = new_rows.get(row['id'])
@@ -1065,7 +1116,9 @@ def export_db(path, release_id, strict_identity=False):
         has_comparisons = bool(present and db.execute('SELECT 1 FROM comparison_contract').fetchone())
         if present and not has_comparisons and any(db.execute(f'SELECT 1 FROM {n} LIMIT 1').fetchone() for n in COMPARISON_TABLES if n != 'comparison_contract'):
             raise ValueError('Karşılaştırma kayıtları için sözleşme işaretçisi gerekli')
-        if has_comparisons: names += list(COMPARISON_TABLES)
+        if has_comparisons:
+            names += list(COMPARISON_TABLES)
+            if 'comparison_source_inventory' in existing: names.append('comparison_source_inventory')
         cols = {r['name'] for r in db.execute('PRAGMA table_info(document_version)')}
         policy = active_policy(db)
         result = {'schema_version': 6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1)))), 'release_id': release_id}

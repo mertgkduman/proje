@@ -20,6 +20,18 @@ class ComparisonContentTest(unittest.TestCase):
         data['comparison_contract'][0]['stage'] = 'complete'
         with self.assertRaises(ValueError):
             arsiv.validate_comparisons(data)
+        data['comparison_source_inventory'] = []
+        sources = [('iyi', 'charter', '0205-iyi-charter-download-v1'), ('iyi', 'program', '0205-iyi-program-page-v1'), ('tip', 'charter', '0203-tip-charter-v1'), ('tip', 'program', '0203-tip-program-v1')]
+        for party, role, version in sources:
+            data['comparison_source_inventory'].append(dict(id=party + role, taxonomy_version=1, party_id=party, version_id=version, source_role=role, section='İlgili bölüm', page_range=None, full_text_available=1, scanned_at='2026-11-13', topic_ids='["merkez-yonetimi-secimi"]', unmatched_headings='[]', search_boundary='İlgili bölüm incelendi', missing_id=None))
+        self.assertTrue(arsiv.validate_comparisons(data))
+        data['comparison_source_inventory'][0]['unmatched_headings'] = '["Eşleşmeyen başlık"]'
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+        data['comparison_source_inventory'][0]['unmatched_headings'] = '[]'
+        data['comparison_source_inventory'][0]['version_id'] = '0203-tip-charter-v1'
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
 
     def test_an_alternative_group_cannot_have_only_one_version(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
