@@ -2,6 +2,8 @@
 import unittest
 import tempfile
 import shutil
+import importlib.util
+import json
 from pathlib import Path
 
 import arsiv
@@ -9,6 +11,24 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_renderer_16_is_frozen_before_renderer_17(self):
+        source = Path(__file__).resolve().parents[1] / 'src' / 'rapor_v16.py'
+        self.assertTrue(source.is_file(), 'Renderer 16 arşivlenmeli')
+        spec = importlib.util.spec_from_file_location('frozen_rapor_v16', source)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        release_id = arsiv.current()
+        while release_id:
+            release = arsiv.DATA / 'releases' / release_id
+            manifest = json.loads((release / 'manifest.json').read_text(encoding='utf-8'))
+            if manifest['renderer_version'] == 16:
+                break
+            release_id = manifest.get('base_release')
+        self.assertTrue(release_id, 'Renderer 16 yayını bulunmalı')
+        data = json.loads((release / 'records.json').read_text(encoding='utf-8'))
+        self.assertEqual(module.render_report(data).encode(), (release / 'index.html').read_bytes())
+        self.assertEqual(arsiv.RENDERER_VERSION, 17)
+
     def test_basis_role_migration_preserves_legacy_rows(self):
         release = arsiv.current()
         source = arsiv.DATA / 'releases' / release / 'records.sqlite3'
