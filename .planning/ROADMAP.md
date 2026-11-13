@@ -142,7 +142,7 @@ Plans:
 3. Okur, tüzük ve program tablolarında aynı konu başlıklarını bütün partiler için görebilir; her hücrede dayanak veya eksik bilgi durumu bulunur.
 4. Okur, dosyalardaki bulgulardan ve karşılaştırma hücrelerinden doğru kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir; madde/sayfa veya pasaj bağlantısı korunur.
 
-**Plans:** 5/16 plans executed
+**Plans:** 6/16 plans executed
 
 Plans:
 **Wave 1**
@@ -167,7 +167,7 @@ Plans:
 
 **Wave 6** *(blocked on Wave 5 completion)*
 
-- [ ] 03-06-PLAN.md — İYİ Parti tam tüzük tarihçesi ve program alanları
+- [x] 03-06-PLAN.md — İYİ Parti tam tüzük tarihçesi ve program alanları
 
 **Wave 7** *(blocked on Wave 6 completion)*
 
@@ -277,7 +277,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
-| 3. Tüzük ve programların karşılaştırılması | 5/16 | In Progress|  |
+| 3. Tüzük ve programların karşılaştırılması | 6/16 | In Progress|  |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
