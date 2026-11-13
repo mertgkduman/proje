@@ -1155,7 +1155,7 @@ def export_db(path, release_id, strict_identity=False):
                                 raise ValueError('Konu tüzük/program dayanağı geçersiz')
                         elif not active_policy(db) or not row['kind'] or role not in ('charter','program','supplement','historical'):
                             raise ValueError('Atıflı konu dayanağı için açık kaynak türü gerekli')
-                        elif role in ('charter','program') and (row['kind'] != 'party_publication' or ('tüzük' if role == 'charter' else 'program') not in row['title'].lower()):
+                        elif role in ('charter','program') and (row['kind'] != 'party_publication' or not any(term in row['title'].lower() for term in (('tüzük','tüzüğü') if role == 'charter' else ('program',)))):
                             raise ValueError('Konu dayanağının kaynak türü belgeyle uyuşmuyor')
                         elif role == 'supplement' and row['kind'] != 'party_publication':
                             raise ValueError('Ek parti metni parti yayınına dayanmalı')
