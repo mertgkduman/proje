@@ -13,6 +13,18 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_taxonomy_basis_passages_precede_their_references(self):
+        root = Path(__file__).resolve().parents[1]
+        baseline = json.loads((root / 'data/releases/9119e174a8d94f2d9c77efa155347242/records.json').read_text(encoding='utf-8'))
+        for name in ('03-taxonomy.json', '03-exception-cases.json'):
+            package = json.loads((root / 'data/comparisons' / name).read_text(encoding='utf-8'))
+            passages = {item['id'] for item in baseline['passage']}
+            for entry in package['records']:
+                if entry['kind'] == 'passage':
+                    passages.add(entry['values']['id'])
+                elif entry['kind'] == 'topic_basis':
+                    self.assertIn(entry['values']['passage_id'], passages, name)
+
     def test_source_inventory_is_converted_for_complete_snapshot(self):
         convert = getattr(arsiv, 'comparison_inventory_records', None)
         self.assertTrue(callable(convert), 'Kaynak envanteri snapshot kayıtlarına aktarılmalı')
