@@ -15,5 +15,35 @@
   "not_researched_rows": 0,
   "unsupported_policy_fields": 0,
   "phase2_delivery_prefix_unchanged": true,
-  "self_check": "passed"
+  "self_check": "passed",
+  "orchestrator_spot_check": {
+    "status": "passed",
+    "release_id": "b27a1387425c40889313e92dfc91739e",
+    "application_code_unchanged_since": "45c7c40",
+    "code_test_baseline": "03-04-checks/result.json (124 unique tests passed)",
+    "package_row_and_reciprocal_links": {
+      "charter": {
+        "all_unique_rows": 166,
+        "active_taxonomy_rows": 165
+      },
+      "program": {
+        "all_unique_rows": 133,
+        "active_taxonomy_rows": 133
+      }
+    },
+    "active_document_missing_topics": 301,
+    "unsupported_policy_fields": 0,
+    "not_researched_rows": 0,
+    "shared_missing_attempt_owner_and_status": "passed",
+    "original_source_sha256": "passed",
+    "source_metadata_preserved": true,
+    "phase2_delivery_preserved": true,
+    "wave_post_gates": {
+      "schema_drift": "passed",
+      "codebase_drift": "skipped-no-structure-md",
+      "ui_safety": "passed"
+    },
+    "upcoming_key_links": "DBP package pending as expected; symbolic renderer target manually verified via actual row anchors and reciprocal links",
+    "known_navigation_limit": "Renderer17 absence scope/source inline presentation tracked for03-15/16; this plan creates no no_explicit_statement rows"
+  }
 }
