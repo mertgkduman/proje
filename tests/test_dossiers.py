@@ -191,7 +191,8 @@ class DossierTracer(unittest.TestCase):
                 folder = arsiv.DATA / 'releases' / release
                 manifest = json.loads((folder / 'manifest.json').read_text())
                 self.assertEqual(manifest['phase2_delivery'], {'party_id':'tip','stage':'tracer','completed_prefix':[]})
-                self.assertEqual(manifest['renderer_version'], arsiv.RENDERER_VERSION)
+                # Schema 5 keeps its frozen renderer as later schemas advance.
+                self.assertEqual(manifest['renderer_version'], 15)
                 self.assertEqual(manifest['source_policy_version'],2)
                 data = json.loads((folder / 'records.json').read_text())
                 self.assertEqual(data['schema_version'], 5)

@@ -66,3 +66,7 @@ Bu plan sonraki karşılaştırma dilimleri için altyapıyı sağlar; Faz 3 ger
 ## Self-Check: PASSED
 
 Plan dosyaları, yerel rapor ve üç görev commiti doğrulandı.
+
+## Dalga sonu bütünleşme kontrolü
+
+Python derleme kontrolü geçti. Tüm test takımı `/tmp/phase03-wave01-full-tests.log` içinde 1800 saniyede süre aşımına uğradı (çıkış 124); tam takım başarılı sayılmadı. Koşunun saptadığı `test_real_tip_publish_audit_html_and_receipt_in_isolated_data` hatası, şema5 yayınının en yeni renderer yerine dondurulmuş renderer15 kullanmasını bekleyecek şekilde düzeltildi. Aynı senaryo ayrı koşuda 1/1 geçti (38.601 saniye); arşiv ve kapalı rapora gerçek HTTP erişimi başarılıydı. Geri kalan genel kapsam henüz tamamlanmadı. Şema/codebase drift ve UI safety kapıları engel bildirmedi.
