@@ -330,7 +330,8 @@ def comparison_inventory_records(inventory, taxonomy_version):
         if not isinstance(section, dict) or set(section) != required or type(section['full_text_available']) is not bool or not isinstance(section['topic_ids'], list) or not isinstance(section['unmatched_headings'], list) or section['unmatched_headings']:
             raise ValueError('Envanter bölümünde eksik veya eşleşmemiş başlık var')
         canonical = json.dumps(section, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
-        values = dict(section, taxonomy_version=taxonomy_version, id='inventory-' + hashlib.sha256(canonical.encode('utf-8')).hexdigest())
+        identity = f'{taxonomy_version}:{canonical}'
+        values = dict(section, taxonomy_version=taxonomy_version, id='inventory-' + hashlib.sha256(identity.encode('utf-8')).hexdigest())
         records.append(dict(kind='comparison_source_inventory', values=values))
     return records
 
