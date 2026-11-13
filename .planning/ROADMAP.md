@@ -142,7 +142,75 @@ Plans:
 3. Okur, tüzük ve program tablolarında aynı konu başlıklarını bütün partiler için görebilir; her hücrede dayanak veya eksik bilgi durumu bulunur.
 4. Okur, dosyalardaki bulgulardan ve karşılaştırma hücrelerinden doğru kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir; madde/sayfa veya pasaj bağlantısı korunur.
 
-**Plans:** TBD
+**Plans:** 16 plans
+
+Plans:
+**Wave 1**
+
+- [ ] 03-01-PLAN.md — Gerçek İYİ/TİP seçim tracer'ı, schema6 ve eski yayın uyumluluğu
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 03-02-PLAN.md — Tam belge envanteri, ortak konu birleşimi ve gerçek program/istisna dilimleri
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
+- [ ] 03-03-PLAN.md — Yeni Parti ayrıntılı tüzük ve tam program incelemesi
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
+- [ ] 03-04-PLAN.md — TİP ayrıntılı tüzük, HTML/PDF farkları ve tam program
+
+**Wave 5** *(blocked on Wave 4 completion)*
+
+- [ ] 03-05-PLAN.md — DEM tüzük alternatifleri, bağımsız program araması ve ek kongre metni
+
+**Wave 6** *(blocked on Wave 5 completion)*
+
+- [ ] 03-06-PLAN.md — İYİ Parti tam tüzük tarihçesi ve program alanları
+
+**Wave 7** *(blocked on Wave 6 completion)*
+
+- [ ] 03-07-PLAN.md — Yeni Yol'un kendi tüzük/program kaynak zinciri ve gerçek belge açıkları
+
+**Wave 8** *(blocked on Wave 7 completion)*
+
+- [ ] 03-08-PLAN.md — DBP tüzüğü, tarihsel BDP programı ve güncel program açığı
+
+**Wave 9** *(blocked on Wave 8 completion)*
+
+- [ ] 03-09-PLAN.md — EMEP tüzük/program sınırı ve öneri-kabul ayrımı
+
+**Wave 10** *(blocked on Wave 9 completion)*
+
+- [ ] 03-10-PLAN.md — Saadet ayrıntılı tüzük ve kaynaklı önce/sonra tarihçesi
+
+**Wave 11** *(blocked on Wave 10 completion)*
+
+- [ ] 03-11-PLAN.md — Saadet tam programının iki sınırlı bölüm grubuyla incelenmesi
+
+**Wave 12** *(blocked on Wave 11 completion)*
+
+- [ ] 03-12-PLAN.md — Demokrat Parti ayrıntılı tüzük ve erişilen tarihsel metinler
+
+**Wave 13** *(blocked on Wave 12 completion)*
+
+- [ ] 03-13-PLAN.md — Demokrat Parti tam programının iki sınırlı bölüm grubuyla incelenmesi
+
+**Wave 14** *(blocked on Wave 13 completion)*
+
+- [ ] 03-14-PLAN.md — Yeni konularda bütün-parti geri taraması ve kaynaklı konu sentezleri
+
+**Wave 15** *(blocked on Wave 14 completion)*
+
+- [ ] 03-15-PLAN.md — Karşılıklı konu/parti bağlantıları ve gerçek mobil/file/HTTP tarayıcı kabulü
+
+**Wave 16** *(blocked on Wave 15 completion)*
+
+- [ ] 03-16-PLAN.md — Maddi kaynak incelemesi, tüm kapsam complete denetimi ve faz sonu UAT
+
+**Yürütüm dalgaları:** 1–16, her dalgada aynı numaralı tek plan; her plan önceki plana bağlıdır. Yerel SQLite, current işaretçisi ve refresh tek yazıcıyla ilerler.
+
 **UI hint**: yes
 
 ### Phase 4: Söylem ve belgelenmiş uygulamaların karşılaştırılması
@@ -209,10 +277,10 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
-| 3. Tüzük ve programların karşılaştırılması | 0/TBD | Not started | - |
+| 3. Tüzük ve programların karşılaştırılması | 0/16 | Planned | - |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
 ---
-*Last updated: 2026-11-11 after Phase 2 completion; user UAT 3/3 passed*
+*Last updated: 2026-11-12 after Phase 3 planning; 16 plans verified, execution not started*

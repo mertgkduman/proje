@@ -352,13 +352,15 @@ Bu faz için teknoloji yenilemesi önerilmiyor. Mevcut kaynak politikası atıfl
 
 Kullanıcının yeni onayını gerektiren doğrulanmamış teknoloji, mevzuat veya performans eşiği kilitlenmedi. Veri sözleşmesi/kimlik tasarımı ve iş dilimleri **öneri** olarak işaretlendi. Konu birleşimi kesinleşmesi, eksik belgeler ve tarihsel sıralama yürütümün açık araştırma görevleridir; varsayım olarak doldurulmamalıdır.
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. Kesin konu sözlüğü ve her alt konunun belge dayanağı: tam bölüm taramasıyla tamamlanacak.
-2. Yeni Yol'un kendi tüzük/programı, DEM/DBP bağımsız güncel programları: mevcut açıklar korunarak kaynak zinciri yeniden izlenecek.
-3. Tarihsel bütün sürüm zinciri: eldeki eski metinler karşılaştırılacak; bulunamayan ara sürümler görünür kalacak.
-4. Nihai şema/contract sürümü ve yeni Faz 3 CLI kabul adı: ilk tracer planında belirlenecek; mevcut API sanılmayacak.
-5. Başlatılan test/audit süreçlerinin nihai sonuçları: bu araştırmada henüz raporlanmadı; geçti varsayılmayacak.
+**Planlamaya devir kararı:** Aşağıdaki `RESOLVED` işaretleri, nasıl ilerlenileceğinin planlarda karara bağlandığını belirtir. Kaynak açıklarının kapandığı, bütün belgelerin incelendiği veya sonucu alınamayan testlerin geçtiği anlamına gelmez. Maddi araştırma ve yürütüm kabulü, belirtilen görevler tamamlanana kadar açıktır.
+
+1. **Kesin konu sözlüğü ve her alt konunun belge dayanağı — RESOLVED (yürütüm sözleşmesi):** `03-02-01`, erişilen tam belgelerin bölüm envanterinden kaynaklı ortak konu birleşimini çıkarır; `03-03`–`03-13` parti içerik planları bu yapıyı bütün belgelerde sınar; `03-14-01` yeni bulunan her konuyu dokuz partide geri tarar. Kesin konu kapsamı bu görevlerden önce tamamlanmış sayılmaz; `03-16-01` gerçek inceleme kapsamı eksikse complete kabulünü reddeder.
+2. **Yeni Yol tüzük/programı, DEM/DBP bağımsız güncel programları — RESOLVED (yürütüm sözleşmesi):** Kaynak aramaları ve doğru belge türleri `03-05-02`, `03-07-01`/`03-07-02` ve `03-08-02` görevlerine verilmiştir. Elde bağımsız program/tüzük bulunmadığı sürece belgelenmiş açık korunur; ek veya tarihsel metin bu açığı kapatmış gibi sunulmaz. Bunlar yeni kullanıcı kararı bekleyen mimari sorular değildir.
+3. **Tarihsel sürüm zinciri — RESOLVED (yürütüm sözleşmesi):** `03-01` gerçek İYİ önce/sonra dilimini kurar; ilgili parti içerik planları (`03-03`–`03-13`) erişilen eski metinleri, kaynaklı değişiklikleri ve sırası belirsiz alternatifleri işler. `03-14` geri taraması ile `03-16-01` kabulü bu kapsamı denetler. Bulunamayan ara sürümler ve kanıtlanamayan sıra, sonuç gibi doldurulmadan görünür kalır; tarihsel zincirin eksiksiz olduğu iddia edilmez.
+4. **Şema/contract sürümü ve Faz 3 CLI — RESOLVED (tasarım kararı):** `03-01` yeni `data_schema_version=6`, `comparison_validation_version=1`, paket `contract_version=1` sözleşmesini; `comparison-check --input`, `comparison-load --workspace --input` ve `audit --phase 3 --stage tracer|partial|complete` komutlarını açıkça üretilecek artefaktlar olarak tanımlar. Bunlar halen mevcut API değildir; görevler uygulanmadan çalıştıkları varsayılmaz. Eski şema/sürüm kuralları korunur.
+5. **Araştırmada başlatılan test/audit süreçlerinin sonucu — RESOLVED (kanıt kullanımı kararı):** Nihai çıktı alınmadığından bu süreçler başarı kanıtı olarak kullanılmaz. Oturum kimliklerinden sonradan sonuç alınamadı; geçti iddiası eklenmez. `03-01` eski sürüm/başarısız yayın kabulünü yeniden çalıştırır; `03-15-02` ve `03-16-02` geçerli yayın üzerinde Faz 2 audit'ini ve yeni kabul adımlarını çalıştırıp gerçek sonuçlarını kaydeder. Planlama sırasında uygulama yapılmadığı için bu yürütüm sonuçları henüz mevcut değildir.
 
 ## Sources
 
