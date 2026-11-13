@@ -3,7 +3,7 @@
   "taxonomy_version": 2,
   "stage": "partial",
   "status": "in_progress",
-  "note": "İlk konu; tam ortak harita henüz çıkarılmadı.",
+  "note": "Üç kaynaklı başlangıç konusu; tam ortak harita henüz çıkarılmadı.",
   "records": [
     {
       "kind": "comparison_topic",
@@ -37,6 +37,102 @@
         "passage_id": "epm-parliamentary-p",
         "rationale": "Yönetim sistemi ve demokratik karar organlarına ilişkin program dayanağı.",
         "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-dem-il-disiplin-older",
+        "version_id": "0204-dem-charter-older-v1",
+        "exact": "İL DİSİPLİN KURULU\nMadde 29\nİl Disiplin Kurulu, İl Kongresi tarafından gizli oyla seçilen en az 3 asıl 1 yedek\nüyeden oluşur. İl Disiplin Kurulu ilk toplantısında eş başkanlarını seçer. Çalışma\nyöntemleri hazırlanan disiplin yönetmeliğinde belirtilir. İl Disiplin Kurulunun\ntoplanmadığı durumlarda Merkez Disiplin Kurulu, İl Disiplin Kurulunun\ndosyalarına bakabilir.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 29",
+        "section": "İl Disiplin Kurulu",
+        "pdf_page_index": 17,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-dem-gelir",
+        "version_id": "0204-dem-policies-v1",
+        "exact": "Geliri olmayan tüm yurttaşlarımıza Temel Yurttaşlık Geliri sağlamayı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "4. Olağanüstü Büyük Kongre Kararları",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "il-disiplin-kurulu",
+        "label": "İl disiplin kurulu",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Açık kaynak metninde ayrı bir inceleme konusu bulunur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "il-disiplin-kurulu",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": null,
+        "order_index": 2,
+        "definition": "İl disiplin kurulunun oluşumu ve dosya incelemesi",
+        "applicable_levels": "il",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "il-disiplin-kurulu",
+        "taxonomy_version": 2,
+        "passage_id": "03-dem-il-disiplin-older",
+        "rationale": "Konu doğrudan ilgili metindeki ifadeye dayanır.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "temel-yurttaslik-geliri",
+        "label": "Temel yurttaşlık geliri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Açık kaynak metninde ayrı bir inceleme konusu bulunur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 3,
+        "definition": "Geliri olmayan yurttaşlara gelir sağlanması",
+        "applicable_levels": "ulusal",
+        "basis_kind": "supplement"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 2,
+        "passage_id": "03-dem-gelir",
+        "rationale": "Konu doğrudan ilgili metindeki ifadeye dayanır.",
+        "source_role": "supplement"
       }
     }
   ]
