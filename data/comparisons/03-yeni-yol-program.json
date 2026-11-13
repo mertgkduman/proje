@@ -1,0 +1,2431 @@
+{
+  "contract_version": 1,
+  "taxonomy_version": 2,
+  "stage": "partial",
+  "status": "in_progress",
+  "note": "yargitay-331; bağımsız tam program ve partiye ait ek belge bu taramada bulunamadı.",
+  "records": [
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0307-yeni-yol-search-program-20261113",
+        "lead_id": null,
+        "party_id": "yeni-yol",
+        "heading": "Program",
+        "topic_id": "yeni-yol-program-edinimi",
+        "type": "search",
+        "query": "\"Yeni Yol Partisi\" \"parti programı\" 2025; \"yeni yol partisi\" \"ilkeler bildirgesi\" DEVA saadet gelecek; \"yeni yol partisi\" \"kuruluş bildirgesi\" 2025; \"yeni yol partisi\" \"manifesto\" \"parti\"",
+        "attempted_at": "2026-11-13T20:18:14+00:00",
+        "result": "no_result",
+        "reason": "Yargıtay /sipar/331 kimlik sayfası program bağlantısı içermiyor; /sayfa/yeni-yol/2018 erişimi zaman aşımı. KARAR 10.01.2025 kuruluş haberi taslak onayını bildiriyor, metni yayımlamıyor. Arama sonuçlarındaki eski aynı adlı parti, ortak Meclis grubu ve başka partilerin belgeleri ayrı tutuldu; bağımsız tam program veya partiye ait ilkeler/kuruluş metni bulunamadı.",
+        "source_version_id": null
+      }
+    },
+    {
+      "kind": "missing",
+      "values": {
+        "id": "0307-yeni-yol-missing-program",
+        "party_id": "yeni-yol",
+        "heading": "Program",
+        "topic_id": "yeni-yol-program-edinimi",
+        "status": "Bulunamadı",
+        "attempt_id": "0307-yeni-yol-search-program-20261113",
+        "reason": "Yargıtay /sipar/331 kimlik sayfası program bağlantısı içermiyor; /sayfa/yeni-yol/2018 erişimi zaman aşımı. KARAR 10.01.2025 kuruluş haberi taslak onayını bildiriyor, metni yayımlamıyor. Arama sonuçlarındaki eski aynı adlı parti, ortak Meclis grubu ve başka partilerin belgeleri ayrı tutuldu; bağımsız tam program veya partiye ait ilkeler/kuruluş metni bulunamadı."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-yargi-bagimsizligi-program",
+        "topic_id": "yargi-bagimsizligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Yargı bağımsızlığı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sendika-grev-program",
+        "topic_id": "sendika-grev",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sendika ve grev hakları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-para-politikasi-program",
+        "topic_id": "para-politikasi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Para politikası ve merkez bankası",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sagliga-erisim-program",
+        "topic_id": "sagliga-erisim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sağlık hizmetlerine erişim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-barinma-konut-program",
+        "topic_id": "barinma-konut",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve yerel",
+        "organ": "Barınma ve sosyal konut",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-egitime-erisim-program",
+        "topic_id": "egitime-erisim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Eğitime erişim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-temiz-enerji-gecisi-program",
+        "topic_id": "temiz-enerji-gecisi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Temiz enerjiye geçiş",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-avrupa-birligi-program",
+        "topic_id": "avrupa-birligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Avrupa Birliği ilişkileri",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sosyal-hizmetler-v2-program",
+        "topic_id": "sosyal-hizmetler-v2",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve yerel",
+        "organ": "Sosyal hizmetlere erişim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ekonomi-emek-v2-program",
+        "topic_id": "ekonomi-emek-v2",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Ekonomi ve emek",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-yerel-demokrasi-program",
+        "topic_id": "yerel-demokrasi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "yerel",
+        "organ": "Yerel demokrasi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-anayasal-denetim-program",
+        "topic_id": "anayasal-denetim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Anayasal denetim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-dijital-katilim-program",
+        "topic_id": "dijital-katilim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Dijital demokrasi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ayrimcilik-cogulculuk-program",
+        "topic_id": "ayrimcilik-cogulculuk",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Ayrımcılık ve çoğulculuk",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-seffaflik-yolsuzluk-program",
+        "topic_id": "seffaflik-yolsuzluk",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Şeffaflık ve yolsuzluk",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-makroekonomik-politika-program",
+        "topic_id": "makroekonomik-politika",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Makroekonomik politika",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sosyal-guvenlik-program",
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sosyal güvenlik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sosyal-hizmet-program",
+        "topic_id": "sosyal-hizmet",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sosyal hizmetler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-toplumsal-cinsiyet-program",
+        "topic_id": "toplumsal-cinsiyet",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Toplumsal cinsiyet eşitliği",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-genclik-program",
+        "topic_id": "genclik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Gençlik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-dis-politika-program",
+        "topic_id": "dis-politika",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Dış politika",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-guvenlik-program",
+        "topic_id": "guvenlik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Güvenlik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-direnclilik-program",
+        "topic_id": "direnclilik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Afet ve dirençlilik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kurt-sorunu-program",
+        "topic_id": "kurt-sorunu",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kürt sorunu",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-cocuk-haklari-program",
+        "topic_id": "cocuk-haklari",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Çocuk hakları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-anadilde-egitim-program",
+        "topic_id": "anadilde-egitim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Anadilde eğitim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-tarim-hayvancilik-program",
+        "topic_id": "tarim-hayvancilik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Tarım ve hayvancılık",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-doga-ekoloji-program",
+        "topic_id": "doga-ekoloji",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Doğa ve ekoloji",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kultur-sanat-program",
+        "topic_id": "kultur-sanat",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kültür ve sanat",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-cinsel-yonelim-program",
+        "topic_id": "cinsel-yonelim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Cinsel kimlik ve yönelim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-engellilik-program",
+        "topic_id": "engellilik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Engellilik ve eşit yaşam",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-inanc-mezhep-esitligi-program",
+        "topic_id": "inanc-mezhep-esitligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İnanç ve mezhep eşitliği",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kamucu-planli-ekonomi-program",
+        "topic_id": "kamucu-planli-ekonomi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kamucu ve planlı ekonomi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kamu-liyakati-program",
+        "topic_id": "kamu-liyakati",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Liyakat",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kamu-istisare-program",
+        "topic_id": "kamu-istisare",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İstişare",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-secim-siyasi-partiler-program",
+        "topic_id": "secim-siyasi-partiler",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Seçim Sistemi ve Siyasi Partiler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-uretim-yatirim-program",
+        "topic_id": "uretim-yatirim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Üretim ve Yatırım Politikaları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-maliye-vergi-program",
+        "topic_id": "maliye-vergi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Maliye ve Vergi Politikaları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-esnaf-kobi-program",
+        "topic_id": "esnaf-kobi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Esnaf, Zanaatkâr ve KOBİ’ler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-madencilik-program",
+        "topic_id": "madencilik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Madencilik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ulasim-iletisim-program",
+        "topic_id": "ulasim-iletisim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Ulaşım ve İletişim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-dis-ticaret-program",
+        "topic_id": "dis-ticaret",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Dış Ticaret",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-teknoloji-inovasyon-program",
+        "topic_id": "teknoloji-inovasyon",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Teknoloji ve İnovasyon",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-turizm-program",
+        "topic_id": "turizm",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Turizm",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-aile-politikalari-program",
+        "topic_id": "aile-politikalari",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Aile",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sehircilik-program",
+        "topic_id": "sehircilik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Şehircilik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-spor-program",
+        "topic_id": "spor",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Spor",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-medya-program",
+        "topic_id": "medya",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Medya",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ic-goc-program",
+        "topic_id": "ic-goc",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İç Göç",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sivil-toplum-program",
+        "topic_id": "sivil-toplum",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sivil Toplum",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-endustri-toplum-program",
+        "topic_id": "endustri-toplum",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Endüstri 4.0 ve Toplum 5.0",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ic-guvenlik-program",
+        "topic_id": "ic-guvenlik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İç Güvenlik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-dis-guvenlik-program",
+        "topic_id": "dis-guvenlik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Dış Güvenlik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-savunma-sanayi-program",
+        "topic_id": "savunma-sanayi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Savunma Sanayi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-nato-iliskileri-program",
+        "topic_id": "nato-iliskileri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "NATO ile İlişkiler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-bm-guvenlik-konseyi-program",
+        "topic_id": "bm-guvenlik-konseyi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Türkiye - BM Güvenlik Konseyi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-komsularla-iliskiler-program",
+        "topic_id": "komsularla-iliskiler",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Türkiye’nin Komşularıyla İlişkileri",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-turk-cumhuriyetleri-program",
+        "topic_id": "turk-cumhuriyetleri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Türk Cumhuriyetleri ile İşbirliği",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-iran-iliskileri-program",
+        "topic_id": "iran-iliskileri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Türkiye-İran İlişkileri",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-rusya-iliskileri-program",
+        "topic_id": "rusya-iliskileri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Rusya ile İlişkiler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-cin-iliskileri-program",
+        "topic_id": "cin-iliskileri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Çin İle İlişkiler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-karadeniz-isbirligi-program",
+        "topic_id": "karadeniz-isbirligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Karadeniz Ekonomik İşbirliği",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-eko-isbirligi-program",
+        "topic_id": "eko-isbirligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "Ekonomik İşbirliği Teşkilatı (ECO)",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-iit-iliskileri-program",
+        "topic_id": "iit-iliskileri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "İslam İşbirliği Teşkilatı (İİT)",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-d8-iliskileri-program",
+        "topic_id": "d8-iliskileri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "uluslararası",
+        "organ": "D-8",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sosyal-politikalar-v2-program",
+        "topic_id": "sosyal-politikalar-v2",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sosyal politikalar",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ekonomi-uretim-v2-program",
+        "topic_id": "ekonomi-uretim-v2",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Ekonomi ve üretim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-anayasa-yapimi-program",
+        "topic_id": "anayasa-yapimi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Anayasa yapımı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-halk-meclisi-program",
+        "topic_id": "halk-meclisi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Halk meclisi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-temsilci-geri-cagirma-program",
+        "topic_id": "temsilci-geri-cagirma",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Seçilmişleri geri çağırma",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-genel-secim-oy-program",
+        "topic_id": "genel-secim-oy",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Genel seçimde oy hakkı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-yargi-secimi-program",
+        "topic_id": "yargi-secimi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Yargıçların seçimi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ifade-basin-ozgurlugu-program",
+        "topic_id": "ifade-basin-ozgurlugu",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İfade ve basın özgürlüğü",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-anadil-hakki-program",
+        "topic_id": "anadil-hakki",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Anadil hakkı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-laiklik-program",
+        "topic_id": "laiklik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Laiklik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-din-egitimi-program",
+        "topic_id": "din-egitimi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Din eğitimi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-vicdani-ret-program",
+        "topic_id": "vicdani-ret",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Vicdani ret",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-okul-oncesi-egitim-program",
+        "topic_id": "okul-oncesi-egitim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Okul öncesi eğitim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-yuksekogretim-program",
+        "topic_id": "yuksekogretim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Yükseköğretim",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-yabanci-askeri-usler-program",
+        "topic_id": "yabanci-askeri-usler",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Yabancı askerî üsler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kibris-program",
+        "topic_id": "kibris",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kıbrıs",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-uluslararasi-ekonomik-kurumlar-program",
+        "topic_id": "uluslararasi-ekonomik-kurumlar",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Uluslararası ekonomik kurumlar",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kamulastirma-program",
+        "topic_id": "kamulastirma",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kamulaştırma",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-dis-borc-program",
+        "topic_id": "dis-borc",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Dış borç",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-toprak-mulkiyeti-program",
+        "topic_id": "toprak-mulkiyeti",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Toprak mülkiyeti",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-tarimsal-teknoloji-program",
+        "topic_id": "tarimsal-teknoloji",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Tarımsal teknoloji",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-ciftci-borclari-program",
+        "topic_id": "ciftci-borclari",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Çiftçi borçları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-tarimsal-fiyatlar-program",
+        "topic_id": "tarimsal-fiyatlar",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Tarımsal fiyatlar",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-orman-su-yonetimi-program",
+        "topic_id": "orman-su-yonetimi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Orman ve su yönetimi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-calisma-sureleri-program",
+        "topic_id": "calisma-sureleri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Çalışma süreleri",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-is-sagligi-program",
+        "topic_id": "is-sagligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İş sağlığı ve güvenliği",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-asgari-ucret-program",
+        "topic_id": "asgari-ucret",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Asgari ücret",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-bakim-ebeveyn-izni-program",
+        "topic_id": "bakim-ebeveyn-izni",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Bakım ve ebeveyn izni",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kadin-istihdami-program",
+        "topic_id": "kadin-istihdami",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kadın istihdamı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-cocuk-isciligi-program",
+        "topic_id": "cocuk-isciligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Çocuk işçiliği",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-guvencesiz-istihdam-program",
+        "topic_id": "guvencesiz-istihdam",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Güvencesiz istihdam",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-tarim-iscisi-program",
+        "topic_id": "tarim-iscisi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Tarım işçilerinin hakları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-is-denetimi-program",
+        "topic_id": "is-denetimi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İş denetimi ve iş mahkemeleri",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-istihdam-araciligi-program",
+        "topic_id": "istihdam-araciligi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İstihdam aracılığı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-nukleer-enerji-program",
+        "topic_id": "nukleer-enerji",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Nükleer enerji",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kulturel-miras-program",
+        "topic_id": "kulturel-miras",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kültürel miras",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-bilim-ozgurlugu-program",
+        "topic_id": "bilim-ozgurlugu",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Bilimsel araştırma özgürlüğü",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-fikri-mulkiyet-program",
+        "topic_id": "fikri-mulkiyet",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Fikrî mülkiyet",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kamu-hesap-verebilirlik-program",
+        "topic_id": "kamu-hesap-verebilirlik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kamusal hesap verebilirlik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-gocmen-multeci-program",
+        "topic_id": "gocmen-multeci",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Göçmenler ve mülteciler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-diaspora-program",
+        "topic_id": "diaspora",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Yurtdışında yaşayan yurttaşlar",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-program-dusunsel-temel-program",
+        "topic_id": "program-dusunsel-temel",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve uluslararası",
+        "organ": "Programın düşünsel temelleri",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sinif-ve-toplum-program",
+        "topic_id": "sinif-ve-toplum",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve uluslararası",
+        "organ": "İşçi sınıfı ve burjuvazi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-tekeller-emperyalizm-program",
+        "topic_id": "tekeller-emperyalizm",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve uluslararası",
+        "organ": "Tekeller ve emperyalizm",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-uluslararasi-devrim-hareketler-program",
+        "topic_id": "uluslararasi-devrim-hareketler",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve uluslararası",
+        "organ": "Uluslararası hareketler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sosyalist-insa-tarih-program",
+        "topic_id": "sosyalist-insa-tarih",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve uluslararası",
+        "organ": "Sosyalist inşa ve tarih",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-toplumsal-celiskiler-program",
+        "topic_id": "toplumsal-celiskiler",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve uluslararası",
+        "organ": "Toplumsal çelişkiler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-turkiye-devrim-program",
+        "topic_id": "turkiye-devrim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve uluslararası",
+        "organ": "Türkiye devrimi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sosyalist-demokrasi-program",
+        "topic_id": "sosyalist-demokrasi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sosyalist demokrasi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-kapitalizm-bunalim-program",
+        "topic_id": "kapitalizm-bunalim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Kapitalizmin bunalımı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-turkiye-cumhuriyet-tarih-program",
+        "topic_id": "turkiye-cumhuriyet-tarih",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Cumhuriyetin kuruluşu ve devrim tarihi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-siyasal-ittifaklar-program",
+        "topic_id": "siyasal-ittifaklar",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Siyasal ittifaklar",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-cezaevleri-program",
+        "topic_id": "cezaevleri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Cezaevleri ve tutuklu hakları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-uyusturucu-mucadele-program",
+        "topic_id": "uyusturucu-mucadele",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Uyuşturucuyla mücadele",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-tuketici-haklari-program",
+        "topic_id": "tuketici-haklari",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Tüketici hakları",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-yaribaskanlik-sistemi-program",
+        "topic_id": "yaribaskanlik-sistemi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Yarı başkanlık modeli",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-senato-program",
+        "topic_id": "senato",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Senatolu yasama organı",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-yabanci-sermaye-program",
+        "topic_id": "yabanci-sermaye",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Yabancı sermaye",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-finansal-hizmetler-program",
+        "topic_id": "finansal-hizmetler",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Finansal hizmetler ve borsalar",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-abd-iliskileri-program",
+        "topic_id": "abd-iliskileri",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Amerika Birleşik Devletleri ile ilişkiler",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-istihbarat-program",
+        "topic_id": "istihbarat",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İstihbarat politikası",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-terorle-mucadele-program",
+        "topic_id": "terorle-mucadele",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Terörle mücadele",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-mgk-politikasi-program",
+        "topic_id": "mgk-politikasi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Milli Güvenlik Kurulu politikası",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-siber-guvenlik-program",
+        "topic_id": "siber-guvenlik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Siber güvenlik",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-sanayi-politikasi-program",
+        "topic_id": "sanayi-politikasi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Sanayi politikası",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-hayvancilik-program",
+        "topic_id": "hayvancilik",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Hayvancılık politikası",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-alevi-inanc-orgutlenmesi-program",
+        "topic_id": "alevi-inanc-orgutlenmesi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Alevi inanç örgütlenmesi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0307-yeni-yol-islam-inanc-orgutlenmesi-program",
+        "topic_id": "islam-inanc-orgutlenmesi",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "İslam inanç örgütlenmesi",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Yeni Yol'un bağımsız tam programı bulunamadı; ortak belge açığına bağlıdır."
+      }
+    }
+  ]
+}
