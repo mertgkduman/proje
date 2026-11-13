@@ -3,7 +3,7 @@
   "taxonomy_version": 2,
   "stage": "partial",
   "status": "in_progress",
-  "note": "Üç kaynaklı başlangıç konusu; tam ortak harita henüz çıkarılmadı.",
+  "note": "Kaynaklı başlangıç konuları; tam ortak harita ve kaynak eşlemesi henüz tamamlanmadı.",
   "records": [
     {
       "kind": "comparison_topic",
@@ -133,6 +133,966 @@
         "passage_id": "03-dem-gelir",
         "rationale": "Konu doğrudan ilgili metindeki ifadeye dayanır.",
         "source_role": "supplement"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uyelik-kabul-itiraz",
+        "label": "Üyelik kabul ve ret itirazı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uyelik-kabul-itiraz",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 1,
+        "definition": "Üyelik başvurusu, kabul veya ret ve itiraz yolu; üyelik aidatı ayrı konudur.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uyelik-kabul-itiraz",
+        "taxonomy_version": 2,
+        "passage_id": "0204-dem-charter-members",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uyelik-secme-secilme",
+        "label": "Üyenin seçme ve seçilme hakkı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uyelik-secme-secilme",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 2,
+        "definition": "Üyelerin seçimlerde oy kullanma ve organlara aday olma hakları; organların seçim yöntemi ayrı incelenir.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uyelik-secme-secilme",
+        "taxonomy_version": 2,
+        "passage_id": "epm-member-rights-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uyelik-bilgi-gorus",
+        "label": "Üyenin bilgi ve görüş hakkı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uyelik-bilgi-gorus",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 3,
+        "definition": "Üyelerin parti işlerine ilişkin bilgi alma ve görüş bildirme hakları; disiplin yaptırımı ayrı konudur.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uyelik-bilgi-gorus",
+        "taxonomy_version": 2,
+        "passage_id": "epm-member-rights-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ic-tartisma-elestiri",
+        "label": "Parti içi tartışma ve eleştiri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ic-tartisma-elestiri",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "gorus-itiraz-v2",
+        "order_index": 1,
+        "definition": "Üyelerin görüşlerini açıklama, tartışma ve eleştiri yolları ve belirtilen sınırlar.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ic-tartisma-elestiri",
+        "taxonomy_version": 2,
+        "passage_id": "epm-expression-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "parti-ici-itiraz",
+        "label": "Parti içi karara itiraz",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "parti-ici-itiraz",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "gorus-itiraz-v2",
+        "order_index": 2,
+        "definition": "Üyelerin parti içi kararlara itiraz edebileceği üst organ ve usuller; üyelik reddi ayrıca incelenir.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "parti-ici-itiraz",
+        "taxonomy_version": 2,
+        "passage_id": "0203-tip-internal-expression",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "genel-baskan-secimi",
+        "label": "Genel başkan seçimi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "genel-baskan-secimi",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yonetim-denetim-v2",
+        "order_index": 1,
+        "definition": "Genel başkanın seçilmesi, seçmen ve seçim usulleri; diğer merkez organları ayrı incelenir.",
+        "applicable_levels": "merkez",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "genel-baskan-secimi",
+        "taxonomy_version": 2,
+        "passage_id": "epm-leader-election-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "merkez-kurul-olusumu",
+        "label": "Merkez karar organının oluşumu",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "merkez-kurul-olusumu",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yonetim-denetim-v2",
+        "order_index": 2,
+        "definition": "Merkez karar organının üyeleri, seçim biçimi ve bileşimi; görevleri ve denetimi ayrı incelenir.",
+        "applicable_levels": "merkez",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "merkez-kurul-olusumu",
+        "taxonomy_version": 2,
+        "passage_id": "epm-party-council-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "merkez-hesap-denetimi",
+        "label": "Merkez çalışma ve hesap denetimi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "merkez-hesap-denetimi",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yonetim-denetim-v2",
+        "order_index": 3,
+        "definition": "Merkez yönetimi çalışma raporu ve kesin hesabının incelenmesi; mali sonuçların fiilî doğruluğu kapsam dışıdır.",
+        "applicable_levels": "merkez",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "merkez-hesap-denetimi",
+        "taxonomy_version": 2,
+        "passage_id": "epm-oversight-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "genel-kongre-gorev",
+        "label": "Genel kongrenin yetkileri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "genel-kongre-gorev",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yonetim-denetim-v2",
+        "order_index": 4,
+        "definition": "Genel kongrenin parti organlarını seçme ve karar alma yetkileri; yerel kongreler ayrı incelenir.",
+        "applicable_levels": "merkez",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "genel-kongre-gorev",
+        "taxonomy_version": 2,
+        "passage_id": "tip-congress-election",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kongrede-soz",
+        "label": "Kongrede söz ve görüşme usulü",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kongrede-soz",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "gorus-itiraz-v2",
+        "order_index": 3,
+        "definition": "Kongrede söz verilmesi ve görüşme düzeni; parti dışı ifade özgürlüğü kapsam dışıdır.",
+        "applicable_levels": "merkez",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kongrede-soz",
+        "taxonomy_version": 2,
+        "passage_id": "0210-demokrat-charter-expression",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yargi-bagimsizligi",
+        "label": "Yargı bağımsızlığı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yargi-bagimsizligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 14,
+        "definition": "Yargı organlarının bağımsızlığı ve yürütmeyle ilişkisi; parti içi disiplin yargısı ayrı konudur.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yargi-bagimsizligi",
+        "taxonomy_version": 2,
+        "passage_id": "epm-judiciary-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sendika-grev",
+        "label": "Sendika ve grev hakları",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sendika-grev",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 2,
+        "definition": "Sendikal örgütlenme, toplu sözleşme ve grev hakları; parti üyeliği ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sendika-grev",
+        "taxonomy_version": 2,
+        "passage_id": "epm-labor-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "para-politikasi",
+        "label": "Para politikası ve merkez bankası",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "para-politikasi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 1,
+        "definition": "Para politikası kurumlarının görev ve bağımsızlığı; parti bütçesi kapsam dışıdır.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "para-politikasi",
+        "taxonomy_version": 2,
+        "passage_id": "epm-economy-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sagliga-erisim",
+        "label": "Sağlık hizmetlerine erişim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sagliga-erisim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-hizmetler-v2",
+        "order_index": 1,
+        "definition": "Sağlık hizmetlerinin erişilebilirliği ve maliyeti; sosyal güvenlik finansmanı ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sagliga-erisim",
+        "taxonomy_version": 2,
+        "passage_id": "epm-health-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "barinma-konut",
+        "label": "Barınma ve sosyal konut",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "barinma-konut",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-hizmetler-v2",
+        "order_index": 2,
+        "definition": "Barınma hakkı ve sosyal konut politikaları; genel kent planlaması ayrı incelenir.",
+        "applicable_levels": "ulusal ve yerel",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "barinma-konut",
+        "taxonomy_version": 2,
+        "passage_id": "epm-housing-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "egitime-erisim",
+        "label": "Eğitime erişim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "egitime-erisim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-hizmetler-v2",
+        "order_index": 3,
+        "definition": "Kamusal eğitim hizmetlerine erişim ve ücretlendirme; müfredat ve yönetim ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "egitime-erisim",
+        "taxonomy_version": 2,
+        "passage_id": "epm-education-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "temiz-enerji-gecisi",
+        "label": "Temiz enerjiye geçiş",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "temiz-enerji-gecisi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 20,
+        "definition": "Fosil yakıtlardan temiz enerjiye geçişin yönü ve koşulları; enerji arzının diğer konuları ayrıdır.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "temiz-enerji-gecisi",
+        "taxonomy_version": 2,
+        "passage_id": "epm-energy-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "avrupa-birligi",
+        "label": "Avrupa Birliği ilişkileri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Konu, belirtilen kaynak pasajında doğrudan karşılık bulur."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "avrupa-birligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 21,
+        "definition": "Avrupa Birliği ile üyelik ve ilişkiler; diğer dış politika aktörleri ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "avrupa-birligi",
+        "taxonomy_version": 2,
+        "passage_id": "epm-foreign-p",
+        "rationale": "Belirtilen pasaj bu ortak araştırma konusunu doğrudan örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uyelik-haklari-v2",
+        "label": "Üyelik hakları",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Kaynaklı alt konular için ortak üst kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uyelik-haklari-v2",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": null,
+        "order_index": 22,
+        "definition": "Üyeliğe kabul, üye hakları ve bunlara ilişkin başvuru ve itirazlar.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uyelik-haklari-v2",
+        "taxonomy_version": 2,
+        "passage_id": "epm-member-rights-p",
+        "rationale": "Kaynak pasajı üst kapsamın en az bir alt konusunu örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yonetim-denetim-v2",
+        "label": "Yönetim ve denetim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Kaynaklı alt konular için ortak üst kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yonetim-denetim-v2",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": null,
+        "order_index": 23,
+        "definition": "Parti yönetim organlarının oluşumu, seçimi ve hesaplarının denetimi.",
+        "applicable_levels": "merkez",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yonetim-denetim-v2",
+        "taxonomy_version": 2,
+        "passage_id": "epm-party-council-p",
+        "rationale": "Kaynak pasajı üst kapsamın en az bir alt konusunu örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "gorus-itiraz-v2",
+        "label": "Görüş ve itiraz",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Kaynaklı alt konular için ortak üst kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "gorus-itiraz-v2",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": null,
+        "order_index": 24,
+        "definition": "Parti içi görüş açıklama, tartışma ve kararlara itiraz yolları.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "gorus-itiraz-v2",
+        "taxonomy_version": 2,
+        "passage_id": "epm-expression-p",
+        "rationale": "Kaynak pasajı üst kapsamın en az bir alt konusunu örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sosyal-hizmetler-v2",
+        "label": "Sosyal hizmetlere erişim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Kaynaklı alt konular için ortak üst kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sosyal-hizmetler-v2",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 25,
+        "definition": "Sağlık, barınma ve eğitim gibi temel hizmetlere erişim.",
+        "applicable_levels": "ulusal ve yerel",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sosyal-hizmetler-v2",
+        "taxonomy_version": 2,
+        "passage_id": "epm-health-p",
+        "rationale": "Kaynak pasajı üst kapsamın en az bir alt konusunu örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ekonomi-emek-v2",
+        "label": "Ekonomi ve emek",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Kaynaklı alt konular için ortak üst kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ekonomi-emek-v2",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 26,
+        "definition": "Ekonomik kurumlar ve çalışma yaşamındaki haklar.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ekonomi-emek-v2",
+        "taxonomy_version": 2,
+        "passage_id": "epm-labor-p",
+        "rationale": "Kaynak pasajı üst kapsamın en az bir alt konusunu örnekler.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-member-obligations",
+        "version_id": "epm-charter-v1",
+        "exact": "Her üye, parti çalışmalarına katılmak, parti kararlarına uygun davranmak, seçimlerde partinin başarısı için çalışmak ve parti içi dayanışmayı güçlendirmekle yükümlüdür.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 6",
+        "section": "Üyenin Hak ve Yükümlülükleri",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-nonmember-candidate",
+        "version_id": "epm-charter-v1",
+        "exact": "Partiden milletvekili ve mahalli idareler genel seçimlerinde aday olmak için Partiye üye olma zorunluluğu bulunmaz.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 6",
+        "section": "Üyenin Hak ve Yükümlülükleri",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uyelik-aidati",
+        "label": "Üyelik aidatı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan üyelik tüzüğü maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uyelik-aidati",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 4,
+        "definition": "Üyelik giriş ve dönem aidatı yükümlülükleri; parti bütçesinin genel denetimi ayrı incelenir.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uyelik-aidati",
+        "taxonomy_version": 2,
+        "passage_id": "epm-dues-p",
+        "rationale": "Tüzük maddesindeki açık ifade konu kapsamını örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uye-yukumluluk",
+        "label": "Üyenin çalışma yükümlülükleri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan üyelik tüzüğü maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uye-yukumluluk",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 5,
+        "definition": "Üyelerin parti çalışmasına katılma ve parti kararlarına uyma yükümlülükleri; disiplin cezaları ayrı incelenir.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uye-yukumluluk",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-member-obligations",
+        "rationale": "Tüzük maddesindeki açık ifade konu kapsamını örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "secim-adaylik-kosulu",
+        "label": "Seçim adaylığı için üyelik koşulu",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan üyelik tüzüğü maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "secim-adaylik-kosulu",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yonetim-denetim-v2",
+        "order_index": 5,
+        "definition": "Parti veya kamu seçimlerinde adaylık için parti üyeliği koşulu; seçmen olma hakkı ayrı incelenir.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "secim-adaylik-kosulu",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-nonmember-candidate",
+        "rationale": "Tüzük maddesindeki açık ifade konu kapsamını örnekler.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-political-participation",
+        "version_id": "epm-charter-v1",
+        "exact": "Parti üyeleri, partinin amaç, ilke, program ve tüzüğü doğrultusunda siyasal çalışmalara katılma hakkına sahiptir.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 6",
+        "section": "Üyenin Hak ve Yükümlülükleri",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uye-siyasal-katilim",
+        "label": "Üyenin siyasal çalışmaya katılımı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Tüzükte siyasal çalışmaya katılım hakkı açıkça düzenlenir."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uye-siyasal-katilim",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 6,
+        "definition": "Üyelerin partinin siyasal çalışmalarına katılma hakkı; organlarda seçme ve seçilme ayrı incelenir.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uye-siyasal-katilim",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-political-participation",
+        "rationale": "Kaynak tüzük siyasal çalışmaya katılma hakkını açıklar.",
+        "source_role": "charter"
       }
     }
   ]
