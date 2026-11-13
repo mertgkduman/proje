@@ -730,8 +730,8 @@
         "topic_id": "avrupa-birligi",
         "taxonomy_version": 2,
         "domain": "program",
-        "parent_topic_id": null,
-        "order_index": 21,
+        "parent_topic_id": "dis-politika",
+        "order_index": 1,
         "definition": "Avrupa Birliği ile üyelik ve ilişkiler; diğer dış politika aktörleri ayrı incelenir.",
         "applicable_levels": "uluslararası",
         "basis_kind": "program"
@@ -866,8 +866,8 @@
         "topic_id": "sosyal-hizmetler-v2",
         "taxonomy_version": 2,
         "domain": "program",
-        "parent_topic_id": null,
-        "order_index": 25,
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 1,
         "definition": "Sağlık, barınma ve eğitim gibi temel hizmetlere erişim.",
         "applicable_levels": "ulusal ve yerel",
         "basis_kind": "program"
@@ -900,8 +900,8 @@
         "topic_id": "ekonomi-emek-v2",
         "taxonomy_version": 2,
         "domain": "program",
-        "parent_topic_id": null,
-        "order_index": 26,
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 1,
         "definition": "Ekonomik kurumlar ve çalışma yaşamındaki haklar.",
         "applicable_levels": "ulusal",
         "basis_kind": "program"
@@ -1093,6 +1093,5206 @@
         "passage_id": "03-epm-political-participation",
         "rationale": "Kaynak tüzük siyasal çalışmaya katılma hakkını açıklar.",
         "source_role": "charter"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-bdp-yerel-demokrasi",
+        "version_id": "0207-dbp-bdp-program-v1",
+        "exact": "Demokrasinin derinleştirilmesi açısından yerel yönetimler tarihsel bir öneme sahiptir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Yerinden Yönetim",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yerel-demokrasi",
+        "label": "Yerel demokrasi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Tarihsel BDP programında yerel yönetimlerin demokratik rolü açıkça ele alınır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yerel-demokrasi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 27,
+        "definition": "Yerel yönetim ve yurttaş katılımının demokratik karar süreçlerindeki rolü; güncel politika iddiası belgenin türüne göre ayrıca değerlendirilir.",
+        "applicable_levels": "yerel",
+        "basis_kind": "historical"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yerel-demokrasi",
+        "taxonomy_version": 2,
+        "passage_id": "03-bdp-yerel-demokrasi",
+        "rationale": "Tarihsel BDP programındaki yerinden yönetim bölümü doğrudan dayanak sağlar.",
+        "source_role": "historical"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-uye-kayit",
+        "version_id": "epm-charter-v1",
+        "exact": "Birden fazla kaydının bulunması halinde son muhtarlık bölgesindeki kayıt geçerlidir.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 7",
+        "section": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-uye-son",
+        "version_id": "epm-charter-v1",
+        "exact": "Üyelik; istifa, ölüm, başka bir siyasi partiye üyelik, kanuni engel hâlinin ortaya çıkması veya disiplin kurullarının çıkarma cezası kararıyla sona erer.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 8",
+        "section": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-yerel-hesap",
+        "version_id": "epm-charter-v1",
+        "exact": "Genel Merkezin kesin hesabı kurultayca, il ve ilçe örgütlerinin kesin hesapları kendi kongrelerinde incelenir ve karara bağlanır.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 58",
+        "section": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-kongre-sure",
+        "version_id": "epm-charter-v1",
+        "exact": "Kongrelerin başlangıç ve bitiş tarihleri (Kongreler Takvimi) Merkez Yönetim Kurulunca saptanır. Bu süre iki (2) yıldan az üç (3) yıldan fazla olamaz.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 24",
+        "section": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-secim-itiraz",
+        "version_id": "epm-charter-v1",
+        "exact": "İl ve ilçe kongrelerinde seçimin devamı sırasında yapılan işlemler ile seçim sonuçlarına, tutanakların düzenlenmesinden itibaren iki (2) gün içinde, yetkili ve görevli seçim kuruluna itiraz edilir.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 30",
+        "section": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yerel-orgut-denetim",
+        "label": "Yerel örgüt ve denetim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Tüzükte il ve ilçe hesaplarının kongrelerce incelenmesi yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yerel-orgut-denetim",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": null,
+        "order_index": 28,
+        "definition": "İl ve ilçe örgütlerinin kongreleri, seçimleri ve denetim yolları.",
+        "applicable_levels": "il ve ilçe",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yerel-orgut-denetim",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-yerel-hesap",
+        "rationale": "İl ve ilçe kesin hesapları doğrudan düzenlenir.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uye-kayit-yeri",
+        "label": "Üyelik kayıt ve örgüt bağı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan tüzük maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uye-kayit-yeri",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 7,
+        "definition": "Üyelik kaydının yeri ve farklı yerel örgütlerde görev alma koşulları.",
+        "applicable_levels": "il ve ilçe",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uye-kayit-yeri",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-uye-kayit",
+        "rationale": "Tüzükte bu konuya ilişkin açık ifade bulunur.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uyeligin-sona-ermesi",
+        "label": "Üyeliğin sona ermesi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan tüzük maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uyeligin-sona-ermesi",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "uyelik-haklari-v2",
+        "order_index": 8,
+        "definition": "Üyelikten ayrılma, kayıt silinmesi ve üyeliğin sona erme nedenleri.",
+        "applicable_levels": "tüm düzeyler",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uyeligin-sona-ermesi",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-uye-son",
+        "rationale": "Tüzükte bu konuya ilişkin açık ifade bulunur.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yerel-hesap-denetimi",
+        "label": "Yerel kesin hesap denetimi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan tüzük maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yerel-hesap-denetimi",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yerel-orgut-denetim",
+        "order_index": 1,
+        "definition": "İl ve ilçe örgütlerinin kesin hesaplarının incelenmesi ve karara bağlanması.",
+        "applicable_levels": "il ve ilçe",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yerel-hesap-denetimi",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-yerel-hesap",
+        "rationale": "Tüzükte bu konuya ilişkin açık ifade bulunur.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yerel-kongre-sure",
+        "label": "Yerel kongrelerin süreleri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan tüzük maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yerel-kongre-sure",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yerel-orgut-denetim",
+        "order_index": 2,
+        "definition": "İl ve ilçe kongreleri için dönem ve toplantı tarihinin belirlenmesi.",
+        "applicable_levels": "il ve ilçe",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yerel-kongre-sure",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-kongre-sure",
+        "rationale": "Tüzükte bu konuya ilişkin açık ifade bulunur.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "secime-itiraz",
+        "label": "Kongre seçimlerine itiraz",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Doğrudan okunan tüzük maddesinde ayrı kapsam."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "secime-itiraz",
+        "taxonomy_version": 2,
+        "domain": "charter",
+        "parent_topic_id": "yerel-orgut-denetim",
+        "order_index": 3,
+        "definition": "İl ve ilçe kongre seçimleri ile delege seçimlerine itiraz yolları ve süreleri.",
+        "applicable_levels": "il ve ilçe",
+        "basis_kind": "charter"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "secime-itiraz",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-secim-itiraz",
+        "rationale": "Tüzükte bu konuya ilişkin açık ifade bulunur.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-epm-yerel-gorev-kosulu",
+        "version_id": "epm-charter-v1",
+        "exact": "Üyeler kayıtlı oldukları muhtarlık bölgesi/ilçe/il dışında başka bir örgütte yönetim veya disiplin kurulunda görev alamaz ve delege seçilemez.",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 7",
+        "section": "Üyeliğe Başvurma ve Üyelikte Yer Koşulu",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uye-kayit-yeri",
+        "taxonomy_version": 2,
+        "passage_id": "03-epm-yerel-gorev-kosulu",
+        "rationale": "Kayıt yerinin örgüt görevi ve delege seçimiyle ilişkisi açıkça düzenlenir.",
+        "source_role": "charter"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-anayasal-denetim",
+        "version_id": "epm-program-v1",
+        "exact": "Anayasal Denetim ve Kurumsal Hukuk Devleti",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Anayasal denetim",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "anayasal-denetim",
+        "label": "Anayasal denetim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "anayasal-denetim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 29,
+        "definition": "Anayasal denetim ve kurumsal hukuk devleti.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "anayasal-denetim",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-anayasal-denetim",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-dijital-katilim",
+        "version_id": "epm-program-v1",
+        "exact": "Dijital Demokrasi, Medya ve Bilgi Hakkı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Dijital demokrasi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "dijital-katilim",
+        "label": "Dijital demokrasi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "dijital-katilim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 30,
+        "definition": "Dijital demokrasi, medya ve bilgi hakkı.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "dijital-katilim",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-dijital-katilim",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-ayrimcilik-cogulculuk",
+        "version_id": "epm-program-v1",
+        "exact": "Ayrımcılıkla Mücadele ve Çoğulculuk",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Ayrımcılık ve çoğulculuk",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ayrimcilik-cogulculuk",
+        "label": "Ayrımcılık ve çoğulculuk",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ayrimcilik-cogulculuk",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 31,
+        "definition": "Ayrımcılıkla mücadele ve çoğulculuk.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ayrimcilik-cogulculuk",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-ayrimcilik-cogulculuk",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-seffaflik-yolsuzluk",
+        "version_id": "epm-program-v1",
+        "exact": "Yolsuzlukla Mücadele, Şeffaflık ve Hesap Verebilirlik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Şeffaflık ve yolsuzluk",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "seffaflik-yolsuzluk",
+        "label": "Şeffaflık ve yolsuzluk",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "seffaflik-yolsuzluk",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 32,
+        "definition": "Yolsuzlukla mücadele, şeffaflık ve hesap verebilirlik.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "seffaflik-yolsuzluk",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-seffaflik-yolsuzluk",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-makroekonomik-politika",
+        "version_id": "epm-program-v1",
+        "exact": "Makroekonomik Politikalar",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Makroekonomik politika",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "makroekonomik-politika",
+        "label": "Makroekonomik politika",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "makroekonomik-politika",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 2,
+        "definition": "Makroekonomik politikaların genel çerçevesi.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "makroekonomik-politika",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-makroekonomik-politika",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-sosyal-guvenlik",
+        "version_id": "epm-program-v1",
+        "exact": "Güçlü ve Adil Sosyal Güvenlik Sistemi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sosyal güvenlik",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sosyal-guvenlik",
+        "label": "Sosyal güvenlik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 2,
+        "definition": "Sosyal güvenlik sisteminin düzenlenmesi.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-sosyal-guvenlik",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-sosyal-hizmet",
+        "version_id": "epm-program-v1",
+        "exact": "Sosyal Hizmetler",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sosyal hizmetler",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sosyal-hizmet",
+        "label": "Sosyal hizmetler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sosyal-hizmet",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 3,
+        "definition": "Sosyal hizmetlere ilişkin program düzenlemeleri.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sosyal-hizmet",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-sosyal-hizmet",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-toplumsal-cinsiyet",
+        "version_id": "epm-program-v1",
+        "exact": "Toplumsal Cinsiyet Eşitliği",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Toplumsal cinsiyet eşitliği",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "toplumsal-cinsiyet",
+        "label": "Toplumsal cinsiyet eşitliği",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "toplumsal-cinsiyet",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 9,
+        "definition": "Kadınlar ve toplumsal cinsiyet eşitliği.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "toplumsal-cinsiyet",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-toplumsal-cinsiyet",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-genclik",
+        "version_id": "epm-program-v1",
+        "exact": "Özgür, Eşit ve Kurucu Gençlik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Gençlik",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "genclik",
+        "label": "Gençlik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "genclik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 10,
+        "definition": "Gençlerin hakları, konumu ve katılımı.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "genclik",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-genclik",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-dis-politika",
+        "version_id": "epm-program-v1",
+        "exact": "Dış Politika",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Dış politika",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "dis-politika",
+        "label": "Dış politika",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "dis-politika",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 38,
+        "definition": "Devletin uluslararası ilişkilerine ilişkin genel yaklaşım.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "dis-politika",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-dis-politika",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-guvenlik",
+        "version_id": "epm-program-v1",
+        "exact": "Güvenlik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Güvenlik",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "guvenlik",
+        "label": "Güvenlik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "guvenlik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 39,
+        "definition": "Güvenlik politikalarına ilişkin genel yaklaşım.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "guvenlik",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-guvenlik",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-direnclilik",
+        "version_id": "epm-program-v1",
+        "exact": "Dirençlilik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Afet ve dirençlilik",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "direnclilik",
+        "label": "Afet ve dirençlilik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "direnclilik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 40,
+        "definition": "Afetler ve farklı krizler karşısında toplum ve kurumların dirençliliği.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "direnclilik",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-direnclilik",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-kurt-sorunu",
+        "version_id": "0203-tip-program-v1",
+        "exact": "KÜRT SORUNUNDA KARDEŞLİK VE BİRLİKTE YAŞAM",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Kürt sorunu",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kurt-sorunu",
+        "label": "Kürt sorunu",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kurt-sorunu",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 41,
+        "definition": "Kürt sorunu ve çözümüne ilişkin siyasi yaklaşım.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kurt-sorunu",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-kurt-sorunu",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-cocuk-haklari",
+        "version_id": "0203-tip-program-v1",
+        "exact": "ÇOCUKLARIN DA HAKLARI VARDIR",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Çocuk hakları",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "cocuk-haklari",
+        "label": "Çocuk hakları",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "cocuk-haklari",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 11,
+        "definition": "Çocukların hakları ve toplumsal konumu.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "cocuk-haklari",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-cocuk-haklari",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-anadilde-egitim",
+        "version_id": "0203-tip-program-v1",
+        "exact": "HERKESE PARASIZ, BİLİMSEL, ANADİLDE EĞİTİM",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Anadilde eğitim",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "anadilde-egitim",
+        "label": "Anadilde eğitim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "anadilde-egitim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 43,
+        "definition": "Eğitimde anadilin kullanımı.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "anadilde-egitim",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-anadilde-egitim",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-tarim-hayvancilik",
+        "version_id": "0203-tip-program-v1",
+        "exact": "TARIM VE HAYVANCILIKTA TASFİYEYE, ÇİFTÇİLERİN YOKSULLAŞMASINA SON!",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Tarım ve hayvancılık",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "tarim-hayvancilik",
+        "label": "Tarım ve hayvancılık",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "tarim-hayvancilik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 44,
+        "definition": "Tarım, hayvancılık ve çiftçilerin koşulları.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "tarim-hayvancilik",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-tarim-hayvancilik",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-doga-ekoloji",
+        "version_id": "0203-tip-program-v1",
+        "exact": "YAĞMA POLİTİKALARI DOĞAMIZI TALAN EDİYOR",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Doğa ve ekoloji",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "doga-ekoloji",
+        "label": "Doğa ve ekoloji",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "doga-ekoloji",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 45,
+        "definition": "Doğanın korunması ve ekolojik politika.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "doga-ekoloji",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-doga-ekoloji",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-kultur-sanat",
+        "version_id": "0203-tip-program-v1",
+        "exact": "KÜLTÜREL GELİŞİM VE ÖZGÜR SANAT ENGELLENEMEZ",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Kültür ve sanat",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kultur-sanat",
+        "label": "Kültür ve sanat",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kultur-sanat",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 46,
+        "definition": "Kültürel gelişim ve sanat özgürlüğü.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kultur-sanat",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-kultur-sanat",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-cinsel-yonelim",
+        "version_id": "0203-tip-program-v1",
+        "exact": "CİNSEL KİMLİK VE YÖNELİM AYRIMCILIĞINA SON",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Cinsel kimlik ve yönelim",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "cinsel-yonelim",
+        "label": "Cinsel kimlik ve yönelim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "cinsel-yonelim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 47,
+        "definition": "Cinsel kimlik ve yönelime dayalı ayrımcılık.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "cinsel-yonelim",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-cinsel-yonelim",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-engellilik",
+        "version_id": "0203-tip-program-v1",
+        "exact": "TİP, engelli yurttaşların toplumsal ve ekonomik taleplerinin, en temel insan hakları arasında yer aldığını saptar.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Engellilik ve eşit yaşam",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "engellilik",
+        "label": "Engellilik ve eşit yaşam",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "engellilik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 12,
+        "definition": "Engelli yurttaşların toplumsal ve ekonomik hakları.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "engellilik",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-engellilik",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-inanc-mezhep-esitligi",
+        "version_id": "0203-tip-program-v1",
+        "exact": "MEZHEPÇİLİĞE KARŞI EŞİT YURTTAŞLIK",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İnanç ve mezhep eşitliği",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "inanc-mezhep-esitligi",
+        "label": "İnanç ve mezhep eşitliği",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "inanc-mezhep-esitligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 49,
+        "definition": "İnanç ve mezhep temelinde eşit yurttaşlık.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "inanc-mezhep-esitligi",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-inanc-mezhep-esitligi",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-konu-dayanak-kamucu-planli-ekonomi",
+        "version_id": "0203-tip-program-v1",
+        "exact": "REFAH İÇİN KAMUCU VE PLANLI EKONOMİ",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Kamucu ve planlı ekonomi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kamucu-planli-ekonomi",
+        "label": "Kamucu ve planlı ekonomi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Belirtilen program bölümünde açık kaynak dayanağı vardır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kamucu-planli-ekonomi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 50,
+        "definition": "Kamuculuk ve ekonomik planlama yaklaşımı.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kamucu-planli-ekonomi",
+        "taxonomy_version": 2,
+        "passage_id": "03-konu-dayanak-kamucu-planli-ekonomi",
+        "rationale": "Atıflı program bölümündeki ifade konu kapsamına dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-kamu-liyakati",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Liyakat",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Liyakat",
+        "pdf_page_index": 6,
+        "printed_page": "7"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kamu-liyakati",
+        "label": "Liyakat",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kamu-liyakati",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 51,
+        "definition": "Liyakat konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kamu-liyakati",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-kamu-liyakati",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-kamu-istisare",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "İstişare",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İstişare",
+        "pdf_page_index": 7,
+        "printed_page": "8"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kamu-istisare",
+        "label": "İstişare",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kamu-istisare",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 52,
+        "definition": "İstişare konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kamu-istisare",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-kamu-istisare",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-secim-siyasi-partiler",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Seçim Sistemi ve Siyasi Partiler",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Seçim Sistemi ve Siyasi Partiler",
+        "pdf_page_index": 13,
+        "printed_page": "14"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "secim-siyasi-partiler",
+        "label": "Seçim Sistemi ve Siyasi Partiler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "secim-siyasi-partiler",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "demokrasi-katilim",
+        "order_index": 1,
+        "definition": "Seçim Sistemi ve Siyasi Partiler konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "secim-siyasi-partiler",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-secim-siyasi-partiler",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-uretim-yatirim",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Üretim ve Yatırım Politikaları",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Üretim ve Yatırım Politikaları",
+        "pdf_page_index": 14,
+        "printed_page": "15"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uretim-yatirim",
+        "label": "Üretim ve Yatırım Politikaları",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uretim-yatirim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 3,
+        "definition": "Üretim ve Yatırım Politikaları konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uretim-yatirim",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-uretim-yatirim",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-maliye-vergi",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Maliye ve Vergi Politikaları",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Maliye ve Vergi Politikaları",
+        "pdf_page_index": 16,
+        "printed_page": "17"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "maliye-vergi",
+        "label": "Maliye ve Vergi Politikaları",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "maliye-vergi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 4,
+        "definition": "Maliye ve Vergi Politikaları konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "maliye-vergi",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-maliye-vergi",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-esnaf-kobi",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Esnaf, Zanaatkâr ve KOBİ’ler",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Esnaf, Zanaatkâr ve KOBİ’ler",
+        "pdf_page_index": 17,
+        "printed_page": "18"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "esnaf-kobi",
+        "label": "Esnaf, Zanaatkâr ve KOBİ’ler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "esnaf-kobi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 5,
+        "definition": "Esnaf, Zanaatkâr ve KOBİ’ler konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "esnaf-kobi",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-esnaf-kobi",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-madencilik",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Madencilik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Madencilik",
+        "pdf_page_index": 20,
+        "printed_page": "21"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "madencilik",
+        "label": "Madencilik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "madencilik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 6,
+        "definition": "Madencilik konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "madencilik",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-madencilik",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-ulasim-iletisim",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Ulaşım ve İletişim",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Ulaşım ve İletişim",
+        "pdf_page_index": 21,
+        "printed_page": "22"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ulasim-iletisim",
+        "label": "Ulaşım ve İletişim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ulasim-iletisim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 58,
+        "definition": "Ulaşım ve İletişim konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ulasim-iletisim",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-ulasim-iletisim",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-dis-ticaret",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Dış Ticaret",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Dış Ticaret",
+        "pdf_page_index": 22,
+        "printed_page": "23"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "dis-ticaret",
+        "label": "Dış Ticaret",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "dis-ticaret",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 7,
+        "definition": "Dış Ticaret konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "dis-ticaret",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-dis-ticaret",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-teknoloji-inovasyon",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Teknoloji ve İnovasyon",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Teknoloji ve İnovasyon",
+        "pdf_page_index": 23,
+        "printed_page": "24"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "teknoloji-inovasyon",
+        "label": "Teknoloji ve İnovasyon",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "teknoloji-inovasyon",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 8,
+        "definition": "Teknoloji ve İnovasyon konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "teknoloji-inovasyon",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-teknoloji-inovasyon",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-turizm",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Turizm",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Turizm",
+        "pdf_page_index": 24,
+        "printed_page": "25"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "turizm",
+        "label": "Turizm",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "turizm",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 9,
+        "definition": "Turizm konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "turizm",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-turizm",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-aile-politikalari",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Aile",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Aile",
+        "pdf_page_index": 31,
+        "printed_page": "32"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "aile-politikalari",
+        "label": "Aile",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "aile-politikalari",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 4,
+        "definition": "Aile konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "aile-politikalari",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-aile-politikalari",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-sehircilik",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Şehircilik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Şehircilik",
+        "pdf_page_index": 33,
+        "printed_page": "34"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sehircilik",
+        "label": "Şehircilik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sehircilik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 5,
+        "definition": "Şehircilik konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sehircilik",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-sehircilik",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-spor",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Spor",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Spor",
+        "pdf_page_index": 35,
+        "printed_page": "36"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "spor",
+        "label": "Spor",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "spor",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 6,
+        "definition": "Spor konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "spor",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-spor",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-medya",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Medya",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Medya",
+        "pdf_page_index": 36,
+        "printed_page": "37"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "medya",
+        "label": "Medya",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "medya",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 65,
+        "definition": "Medya konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "medya",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-medya",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-ic-goc",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "İç Göç",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İç Göç",
+        "pdf_page_index": 41,
+        "printed_page": "42"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ic-goc",
+        "label": "İç Göç",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ic-goc",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 7,
+        "definition": "İç Göç konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ic-goc",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-ic-goc",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-sivil-toplum",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Sivil Toplum",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sivil Toplum",
+        "pdf_page_index": 42,
+        "printed_page": "43"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sivil-toplum",
+        "label": "Sivil Toplum",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sivil-toplum",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 8,
+        "definition": "Sivil Toplum konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sivil-toplum",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-sivil-toplum",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-endustri-toplum",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Endüstri 4.0 ve Toplum 5.0",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Endüstri 4.0 ve Toplum 5.0",
+        "pdf_page_index": 42,
+        "printed_page": "43"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "endustri-toplum",
+        "label": "Endüstri 4.0 ve Toplum 5.0",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "endustri-toplum",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-uretim-v2",
+        "order_index": 10,
+        "definition": "Endüstri 4.0 ve Toplum 5.0 konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "endustri-toplum",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-endustri-toplum",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-ic-guvenlik",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "İç Güvenlik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İç Güvenlik",
+        "pdf_page_index": 48,
+        "printed_page": "49"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ic-guvenlik",
+        "label": "İç Güvenlik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ic-guvenlik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "guvenlik",
+        "order_index": 1,
+        "definition": "İç Güvenlik konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ic-guvenlik",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-ic-guvenlik",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-dis-guvenlik",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Dış Güvenlik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Dış Güvenlik",
+        "pdf_page_index": 49,
+        "printed_page": "50"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "dis-guvenlik",
+        "label": "Dış Güvenlik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "dis-guvenlik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "guvenlik",
+        "order_index": 2,
+        "definition": "Dış Güvenlik konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "dis-guvenlik",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-dis-guvenlik",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-savunma-sanayi",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Savunma Sanayi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Savunma Sanayi",
+        "pdf_page_index": 51,
+        "printed_page": "52"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "savunma-sanayi",
+        "label": "Savunma Sanayi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "savunma-sanayi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "guvenlik",
+        "order_index": 3,
+        "definition": "Savunma Sanayi konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "savunma-sanayi",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-savunma-sanayi",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-nato-iliskileri",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "NATO ile İlişkiler",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "NATO ile İlişkiler",
+        "pdf_page_index": 61,
+        "printed_page": "62"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "nato-iliskileri",
+        "label": "NATO ile İlişkiler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "nato-iliskileri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 2,
+        "definition": "NATO ile İlişkiler konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "nato-iliskileri",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-nato-iliskileri",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-bm-guvenlik-konseyi",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Türkiye - BM Güvenlik Konseyi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Türkiye - BM Güvenlik Konseyi",
+        "pdf_page_index": 62,
+        "printed_page": "63"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "bm-guvenlik-konseyi",
+        "label": "Türkiye - BM Güvenlik Konseyi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "bm-guvenlik-konseyi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 3,
+        "definition": "Türkiye - BM Güvenlik Konseyi konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "bm-guvenlik-konseyi",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-bm-guvenlik-konseyi",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-komsularla-iliskiler",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Türkiye’nin Komşularıyla İlişkileri",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Türkiye’nin Komşularıyla İlişkileri",
+        "pdf_page_index": 62,
+        "printed_page": "63"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "komsularla-iliskiler",
+        "label": "Türkiye’nin Komşularıyla İlişkileri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "komsularla-iliskiler",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 4,
+        "definition": "Türkiye’nin Komşularıyla İlişkileri konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "komsularla-iliskiler",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-komsularla-iliskiler",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-turk-cumhuriyetleri",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Türk Cumhuriyetleri ile İşbirliği",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Türk Cumhuriyetleri ile İşbirliği",
+        "pdf_page_index": 62,
+        "printed_page": "63"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "turk-cumhuriyetleri",
+        "label": "Türk Cumhuriyetleri ile İşbirliği",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "turk-cumhuriyetleri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 5,
+        "definition": "Türk Cumhuriyetleri ile İşbirliği konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "turk-cumhuriyetleri",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-turk-cumhuriyetleri",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-iran-iliskileri",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Türkiye-İran İlişkileri",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Türkiye-İran İlişkileri",
+        "pdf_page_index": 62,
+        "printed_page": "63"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "iran-iliskileri",
+        "label": "Türkiye-İran İlişkileri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "iran-iliskileri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 6,
+        "definition": "Türkiye-İran İlişkileri konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "iran-iliskileri",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-iran-iliskileri",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-rusya-iliskileri",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Rusya ile İlişkiler",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Rusya ile İlişkiler",
+        "pdf_page_index": 63,
+        "printed_page": "64"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "rusya-iliskileri",
+        "label": "Rusya ile İlişkiler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "rusya-iliskileri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 7,
+        "definition": "Rusya ile İlişkiler konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "rusya-iliskileri",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-rusya-iliskileri",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-cin-iliskileri",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Çin İle İlişkiler",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Çin İle İlişkiler",
+        "pdf_page_index": 63,
+        "printed_page": "64"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "cin-iliskileri",
+        "label": "Çin İle İlişkiler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "cin-iliskileri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 8,
+        "definition": "Çin İle İlişkiler konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "cin-iliskileri",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-cin-iliskileri",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-karadeniz-isbirligi",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Karadeniz Ekonomik İşbirliği",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Karadeniz Ekonomik İşbirliği",
+        "pdf_page_index": 63,
+        "printed_page": "64"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "karadeniz-isbirligi",
+        "label": "Karadeniz Ekonomik İşbirliği",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "karadeniz-isbirligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 9,
+        "definition": "Karadeniz Ekonomik İşbirliği konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "karadeniz-isbirligi",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-karadeniz-isbirligi",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-eko-isbirligi",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Ekonomik İşbirliği Teşkilatı (ECO)",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Ekonomik İşbirliği Teşkilatı (ECO)",
+        "pdf_page_index": 64,
+        "printed_page": "65"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "eko-isbirligi",
+        "label": "Ekonomik İşbirliği Teşkilatı (ECO)",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "eko-isbirligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 10,
+        "definition": "Ekonomik İşbirliği Teşkilatı (ECO) konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "eko-isbirligi",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-eko-isbirligi",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-iit-iliskileri",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "İslam İşbirliği Teşkilatı (İİT)",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İslam İşbirliği Teşkilatı (İİT)",
+        "pdf_page_index": 64,
+        "printed_page": "65"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "iit-iliskileri",
+        "label": "İslam İşbirliği Teşkilatı (İİT)",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "iit-iliskileri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 11,
+        "definition": "İslam İşbirliği Teşkilatı (İİT) konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "iit-iliskileri",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-iit-iliskileri",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-saadet-konu-d8-iliskileri",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "D-8",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "D-8",
+        "pdf_page_index": 64,
+        "printed_page": "65"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "d8-iliskileri",
+        "label": "D-8",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programın ilgili bölüm başlığı kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "d8-iliskileri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 12,
+        "definition": "D-8 konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "d8-iliskileri",
+        "taxonomy_version": 2,
+        "passage_id": "03-saadet-konu-d8-iliskileri",
+        "rationale": "Parti programındaki ilgili bölüm açık kaynak dayanağıdır.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sosyal-politikalar-v2",
+        "label": "Sosyal politikalar",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programda ortak üst kapsam açıkça belirtilir."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sosyal-politikalar-v2",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 83,
+        "definition": "Sosyal güvenlik, hizmetler ve farklı toplumsal kesimlere ilişkin politikalar.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sosyal-politikalar-v2",
+        "taxonomy_version": 2,
+        "passage_id": "0209-saadet-program-headings",
+        "rationale": "Programın ilgili üst kapsamına kaynaklı örnek.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ekonomi-uretim-v2",
+        "label": "Ekonomi ve üretim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Atıflı programda ortak üst kapsam açıkça belirtilir."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ekonomi-uretim-v2",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 84,
+        "definition": "Ekonomik kurumlar, üretim, ticaret ve çalışma yaşamı.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ekonomi-uretim-v2",
+        "taxonomy_version": 2,
+        "passage_id": "0209-saadet-program-production",
+        "rationale": "Programın ilgili üst kapsamına kaynaklı örnek.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-anayasa-yapimi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "kurucu meclis",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "anayasa-yapimi",
+        "label": "Anayasa yapımı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "anayasa-yapimi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "demokrasi-katilim",
+        "order_index": 2,
+        "definition": "Anayasa yapımı konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "anayasa-yapimi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-anayasa-yapimi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-halk-meclisi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "bir halk meclisi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "halk-meclisi",
+        "label": "Halk meclisi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "halk-meclisi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "demokrasi-katilim",
+        "order_index": 3,
+        "definition": "Halk meclisi konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "halk-meclisi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-halk-meclisi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-temsilci-geri-cagirma",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "görevden alma hakkı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "temsilci-geri-cagirma",
+        "label": "Seçilmişleri geri çağırma",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "temsilci-geri-cagirma",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "demokrasi-katilim",
+        "order_index": 4,
+        "definition": "Seçilmişleri geri çağırma konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "temsilci-geri-cagirma",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-temsilci-geri-cagirma",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-genel-secim-oy",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Eşit, tek dereceli, gizli oy",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "genel-secim-oy",
+        "label": "Genel seçimde oy hakkı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "genel-secim-oy",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "demokrasi-katilim",
+        "order_index": 5,
+        "definition": "Genel seçimde oy hakkı konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "genel-secim-oy",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-genel-secim-oy",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-yargi-secimi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Yargıçların halk tarafından\nseçilmesi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yargi-secimi",
+        "label": "Yargıçların seçimi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yargi-secimi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 85,
+        "definition": "Yargıçların seçimi konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yargi-secimi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-yargi-secimi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-ifade-basin-ozgurlugu",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Düşünce ve ifade özgürlüğüyle basın\nve haberleşme",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ifade-basin-ozgurlugu",
+        "label": "İfade ve basın özgürlüğü",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ifade-basin-ozgurlugu",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 86,
+        "definition": "İfade ve basın özgürlüğü konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ifade-basin-ozgurlugu",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-ifade-basin-ozgurlugu",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-anadil-hakki",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "anadilinde yararlanma hakkı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "anadil-hakki",
+        "label": "Anadil hakkı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "anadil-hakki",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 87,
+        "definition": "Anadil hakkı konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "anadil-hakki",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-anadil-hakki",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-laiklik",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "dinin\ndevletten ayrılması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "laiklik",
+        "label": "Laiklik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "laiklik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 88,
+        "definition": "Laiklik konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "laiklik",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-laiklik",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-din-egitimi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "zorunlu din eğitiminin kaldırılması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "din-egitimi",
+        "label": "Din eğitimi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "din-egitimi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 89,
+        "definition": "Din eğitimi konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "din-egitimi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-din-egitimi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-vicdani-ret",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "vicdani ret hakkı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "vicdani-ret",
+        "label": "Vicdani ret",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "vicdani-ret",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 90,
+        "definition": "Vicdani ret konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "vicdani-ret",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-vicdani-ret",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-okul-oncesi-egitim",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "kreş ve\nanaokulu",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "okul-oncesi-egitim",
+        "label": "Okul öncesi eğitim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "okul-oncesi-egitim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-hizmetler-v2",
+        "order_index": 4,
+        "definition": "Okul öncesi eğitim konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "okul-oncesi-egitim",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-okul-oncesi-egitim",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-yuksekogretim",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "yüksek öğrenim ve üniversite eğitimi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / A",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yuksekogretim",
+        "label": "Yükseköğretim",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yuksekogretim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-hizmetler-v2",
+        "order_index": 5,
+        "definition": "Yükseköğretim konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yuksekogretim",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-yuksekogretim",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-yabanci-askeri-usler",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "yabancı askeri üslerin kapatılması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "yabanci-askeri-usler",
+        "label": "Yabancı askerî üsler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "yabanci-askeri-usler",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 13,
+        "definition": "Yabancı askerî üsler konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "yabanci-askeri-usler",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-yabanci-askeri-usler",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-kibris",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Kıbrıs’ın ‘arka bahçe’ olmaktan\nçıkarılması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kibris",
+        "label": "Kıbrıs",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kibris",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 14,
+        "definition": "Kıbrıs konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kibris",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-kibris",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-uluslararasi-ekonomik-kurumlar",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "IMF, Dünya Bankası ve DTÖ",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uluslararasi-ekonomik-kurumlar",
+        "label": "Uluslararası ekonomik kurumlar",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uluslararasi-ekonomik-kurumlar",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "dis-politika",
+        "order_index": 15,
+        "definition": "Uluslararası ekonomik kurumlar konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uluslararasi-ekonomik-kurumlar",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-uluslararasi-ekonomik-kurumlar",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-kamulastirma",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "tazminatsız olarak\nulusallaştırılması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kamulastirma",
+        "label": "Kamulaştırma",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kamulastirma",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 3,
+        "definition": "Kamulaştırma konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kamulastirma",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-kamulastirma",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-dis-borc",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "tüm borçların iptali",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "dis-borc",
+        "label": "Dış borç",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "dis-borc",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 4,
+        "definition": "Dış borç konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "dis-borc",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-dis-borc",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-toprak-mulkiyeti",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "büyük\ntoprak mülkiyetine",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "toprak-mulkiyeti",
+        "label": "Toprak mülkiyeti",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "toprak-mulkiyeti",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 5,
+        "definition": "Toprak mülkiyeti konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "toprak-mulkiyeti",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-toprak-mulkiyeti",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-tarimsal-teknoloji",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "makine-traktör parklarıyla",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "tarimsal-teknoloji",
+        "label": "Tarımsal teknoloji",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "tarimsal-teknoloji",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 6,
+        "definition": "Tarımsal teknoloji konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "tarimsal-teknoloji",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-tarimsal-teknoloji",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-ciftci-borclari",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "borç ve\nyükümlülüklerinin iptal edilmesi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "ciftci-borclari",
+        "label": "Çiftçi borçları",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "ciftci-borclari",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 7,
+        "definition": "Çiftçi borçları konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "ciftci-borclari",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-ciftci-borclari",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-tarimsal-fiyatlar",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "ürünleri\npazarlama ve fiyatlarının belirlenmesinde",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "tarimsal-fiyatlar",
+        "label": "Tarımsal fiyatlar",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "tarimsal-fiyatlar",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 8,
+        "definition": "Tarımsal fiyatlar konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "tarimsal-fiyatlar",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-tarimsal-fiyatlar",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-orman-su-yonetimi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "ormanlar ve su kaynaklarının",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / B",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "orman-su-yonetimi",
+        "label": "Orman ve su yönetimi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "orman-su-yonetimi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "doga-ekoloji",
+        "order_index": 1,
+        "definition": "Orman ve su yönetimi konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "orman-su-yonetimi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-orman-su-yonetimi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-calisma-sureleri",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "7 saatlik iş günü",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "calisma-sureleri",
+        "label": "Çalışma süreleri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "calisma-sureleri",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 9,
+        "definition": "Çalışma süreleri konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "calisma-sureleri",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-calisma-sureleri",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-is-sagligi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "iş kazaları ve meslek hastalıklarına",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "is-sagligi",
+        "label": "İş sağlığı ve güvenliği",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "is-sagligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 10,
+        "definition": "İş sağlığı ve güvenliği konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "is-sagligi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-is-sagligi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-asgari-ucret",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "tek bir asgari ücret",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "asgari-ucret",
+        "label": "Asgari ücret",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "asgari-ucret",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 11,
+        "definition": "Asgari ücret konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "asgari-ucret",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-asgari-ucret",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-bakim-ebeveyn-izni",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "ebeveyn\nizni",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "bakim-ebeveyn-izni",
+        "label": "Bakım ve ebeveyn izni",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "bakim-ebeveyn-izni",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-hizmetler-v2",
+        "order_index": 6,
+        "definition": "Bakım ve ebeveyn izni konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "bakim-ebeveyn-izni",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-bakim-ebeveyn-izni",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-kadin-istihdami",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Kadın istihdamının önündeki tüm engellerin\nkaldırılması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kadin-istihdami",
+        "label": "Kadın istihdamı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kadin-istihdami",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "toplumsal-cinsiyet",
+        "order_index": 1,
+        "definition": "Kadın istihdamı konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kadin-istihdami",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-kadin-istihdami",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-cocuk-isciligi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "18 yaş\nve altı çocuk emeğinin",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "cocuk-isciligi",
+        "label": "Çocuk işçiliği",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "cocuk-isciligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "cocuk-haklari",
+        "order_index": 1,
+        "definition": "Çocuk işçiliği konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "cocuk-isciligi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-cocuk-isciligi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-guvencesiz-istihdam",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Taşeronlaştırma, kiralık ve\nsözleşmeli işçilik",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "guvencesiz-istihdam",
+        "label": "Güvencesiz istihdam",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "guvencesiz-istihdam",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 12,
+        "definition": "Güvencesiz istihdam konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "guvencesiz-istihdam",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-guvencesiz-istihdam",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-tarim-iscisi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Tarım işçilerinin sendika,\nsigorta",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "tarim-iscisi",
+        "label": "Tarım işçilerinin hakları",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "tarim-iscisi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 13,
+        "definition": "Tarım işçilerinin hakları konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "tarim-iscisi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-tarim-iscisi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-is-denetimi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "İş müfettişliği ve iş\nmahkemelerinin",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "is-denetimi",
+        "label": "İş denetimi ve iş mahkemeleri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "is-denetimi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 14,
+        "definition": "İş denetimi ve iş mahkemeleri konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "is-denetimi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-is-denetimi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-istihdam-araciligi",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Özel istihdam büroları",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "istihdam-araciligi",
+        "label": "İstihdam aracılığı",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "istihdam-araciligi",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "ekonomi-emek-v2",
+        "order_index": 15,
+        "definition": "İstihdam aracılığı konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "istihdam-araciligi",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-istihdam-araciligi",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-nukleer-enerji",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Nükleer santrallerin yasaklanarak",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "nukleer-enerji",
+        "label": "Nükleer enerji",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "nukleer-enerji",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "doga-ekoloji",
+        "order_index": 2,
+        "definition": "Nükleer enerji konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "nukleer-enerji",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-nukleer-enerji",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-kulturel-miras",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Tarihsel, kültürel mirasın",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kulturel-miras",
+        "label": "Kültürel miras",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kulturel-miras",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "kultur-sanat",
+        "order_index": 1,
+        "definition": "Kültürel miras konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kulturel-miras",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-kulturel-miras",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-bilim-ozgurlugu",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Bilimsel araştırma özgürlüğü",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "bilim-ozgurlugu",
+        "label": "Bilimsel araştırma özgürlüğü",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "bilim-ozgurlugu",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 91,
+        "definition": "Bilimsel araştırma özgürlüğü konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "bilim-ozgurlugu",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-bilim-ozgurlugu",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-fikri-mulkiyet",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "fikri mülkiyetin kaldırılması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "fikri-mulkiyet",
+        "label": "Fikrî mülkiyet",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "fikri-mulkiyet",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 92,
+        "definition": "Fikrî mülkiyet konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "fikri-mulkiyet",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-fikri-mulkiyet",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-kamu-hesap-verebilirlik",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "halka hesap verme zorunluluğu",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "kamu-hesap-verebilirlik",
+        "label": "Kamusal hesap verebilirlik",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "kamu-hesap-verebilirlik",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "seffaflik-yolsuzluk",
+        "order_index": 1,
+        "definition": "Kamusal hesap verebilirlik konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "kamu-hesap-verebilirlik",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-kamu-hesap-verebilirlik",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-gocmen-multeci",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "mültecilik\nstatüsü",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "gocmen-multeci",
+        "label": "Göçmenler ve mülteciler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "gocmen-multeci",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 13,
+        "definition": "Göçmenler ve mülteciler konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "gocmen-multeci",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-gocmen-multeci",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-konu-diaspora",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "Yurtdışında kalıcı olarak yaşayan",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Program G / C",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "diaspora",
+        "label": "Yurtdışında yaşayan yurttaşlar",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "EMEP programındaki ilgili paragraf kümesi doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "diaspora",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "sosyal-politikalar-v2",
+        "order_index": 14,
+        "definition": "Yurtdışında yaşayan yurttaşlar konusundaki program yaklaşımları; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "diaspora",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-konu-diaspora",
+        "rationale": "Programın ilgili paragraf kümesindeki açık ifade konuya dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "program-dusunsel-temel",
+        "label": "Programın düşünsel temelleri",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programın teorik bölüm başlıkları kaynakta yer alır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "program-dusunsel-temel",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 93,
+        "definition": "Programların düşünsel ve toplumsal çözümleme temelleri; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal ve uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-teori-sinif-ve-toplum",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "İŞÇİ SINIFI VE\nBURJUVAZİ",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İŞÇİ SINIFI VE BURJUVAZİ",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sinif-ve-toplum",
+        "label": "İşçi sınıfı ve burjuvazi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programın ilgili teorik bölümü açıkça adlandırılır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sinif-ve-toplum",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "program-dusunsel-temel",
+        "order_index": 1,
+        "definition": "İşçi sınıfı ve burjuvazi konusunda programdaki düşünsel yaklaşım; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal ve uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sinif-ve-toplum",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-teori-sinif-ve-toplum",
+        "rationale": "Programın atıflı bölüm başlığı doğrudan dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-teori-tekeller-emperyalizm",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "TEKELLER\nVE EMPERYALİZM",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "TEKELLER VE EMPERYALİZM",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "tekeller-emperyalizm",
+        "label": "Tekeller ve emperyalizm",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programın ilgili teorik bölümü açıkça adlandırılır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "tekeller-emperyalizm",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "program-dusunsel-temel",
+        "order_index": 2,
+        "definition": "Tekeller ve emperyalizm konusunda programdaki düşünsel yaklaşım; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal ve uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "tekeller-emperyalizm",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-teori-tekeller-emperyalizm",
+        "rationale": "Programın atıflı bölüm başlığı doğrudan dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-teori-uluslararasi-devrim-hareketler",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "EMPERYALİZM,\nDÜNYA PROLETER DEVRİMİ VE ULUSAL HAREKETLER",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "EMPERYALİZM, DÜNYA PROLETER DEVRİMİ VE ULUSAL HAREKETLER",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "uluslararasi-devrim-hareketler",
+        "label": "Uluslararası hareketler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programın ilgili teorik bölümü açıkça adlandırılır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "uluslararasi-devrim-hareketler",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "program-dusunsel-temel",
+        "order_index": 3,
+        "definition": "Uluslararası hareketler konusunda programdaki düşünsel yaklaşım; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal ve uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "uluslararasi-devrim-hareketler",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-teori-uluslararasi-devrim-hareketler",
+        "rationale": "Programın atıflı bölüm başlığı doğrudan dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-teori-sosyalist-insa-tarih",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "EKİM DEVRİMİ,\nSOSYALİST İNŞA VE KARŞI-DEVRİM",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "EKİM DEVRİMİ, SOSYALİST İNŞA VE KARŞI-DEVRİM",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "sosyalist-insa-tarih",
+        "label": "Sosyalist inşa ve tarih",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programın ilgili teorik bölümü açıkça adlandırılır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "sosyalist-insa-tarih",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "program-dusunsel-temel",
+        "order_index": 4,
+        "definition": "Sosyalist inşa ve tarih konusunda programdaki düşünsel yaklaşım; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal ve uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "sosyalist-insa-tarih",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-teori-sosyalist-insa-tarih",
+        "rationale": "Programın atıflı bölüm başlığı doğrudan dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-teori-toplumsal-celiskiler",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "KESKİNLEŞEN\nÇELİŞKİLER, DEVRİMİN ARTAN OLANAKLARI",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "KESKİNLEŞEN ÇELİŞKİLER, DEVRİMİN ARTAN OLANAKLARI",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "toplumsal-celiskiler",
+        "label": "Toplumsal çelişkiler",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programın ilgili teorik bölümü açıkça adlandırılır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "toplumsal-celiskiler",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "program-dusunsel-temel",
+        "order_index": 5,
+        "definition": "Toplumsal çelişkiler konusunda programdaki düşünsel yaklaşım; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal ve uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "toplumsal-celiskiler",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-teori-toplumsal-celiskiler",
+        "rationale": "Programın atıflı bölüm başlığı doğrudan dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-emep-teori-turkiye-devrim",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "TÜRKİYE\nDEVRİMİ",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "TÜRKİYE DEVRİMİ",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "turkiye-devrim",
+        "label": "Türkiye devrimi",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programın ilgili teorik bölümü açıkça adlandırılır."
+      }
+    },
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "turkiye-devrim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": "program-dusunsel-temel",
+        "order_index": 6,
+        "definition": "Türkiye devrimi konusunda programdaki düşünsel yaklaşım; fiilî uygulamalar ayrı incelenir.",
+        "applicable_levels": "ulusal ve uluslararası",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "turkiye-devrim",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-teori-turkiye-devrim",
+        "rationale": "Programın atıflı bölüm başlığı doğrudan dayanak sağlar.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "program-dusunsel-temel",
+        "taxonomy_version": 2,
+        "passage_id": "03-emep-teori-sinif-ve-toplum",
+        "rationale": "Programın teorik bölüm başlığı üst kapsama dayanak sağlar.",
+        "source_role": "program"
       }
     }
   ]
