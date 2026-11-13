@@ -106,6 +106,10 @@ class ComparisonReleaseTest(unittest.TestCase):
         original_data = arsiv.DATA
         fixture_release = self.fixture_release()
         package = Path(__file__).resolve().parents[1] / 'data/comparisons/03-tracer.json'
+        payload = json.loads(package.read_text(encoding='utf-8'))
+        # Legitimate Windows line endings must survive byte-exact publication.
+        synthesis = next(r['values'] for r in payload['records'] if r['kind'] == 'comparison_synthesis')
+        synthesis['text'] += '\r\n'
         with tempfile.TemporaryDirectory() as tmp:
             arsiv.DATA = Path(tmp) / 'data'
             try:
@@ -120,12 +124,12 @@ class ComparisonReleaseTest(unittest.TestCase):
                 previous_delivery = json.loads((base / 'manifest.json').read_text())['phase2_delivery']
                 self.assertEqual(previous_delivery['completed_prefix'], ['tip','dem','iyi','yeni-yol','dbp','emep','saadet','demokrat'])
                 work = arsiv.open_workspace(tmp)
-                arsiv.load_comparison(work, json.loads(package.read_text(encoding='utf-8')))
+                arsiv.load_comparison(work, payload)
                 with self.assertRaises(RuntimeError):
                     arsiv.publish_release(work, fail_at='json', refresh=True)
                 self.assertEqual(arsiv.current(), before)
                 work = arsiv.open_workspace(tmp)
-                arsiv.load_comparison(work, json.loads(package.read_text(encoding='utf-8')))
+                arsiv.load_comparison(work, payload)
                 release = arsiv.publish_release(work, refresh=True)
                 self.assertNotEqual(before, release)
                 folder = arsiv.DATA / 'releases' / release
@@ -133,7 +137,7 @@ class ComparisonReleaseTest(unittest.TestCase):
                 data = json.loads((folder / 'records.json').read_text())
                 report = (folder / 'index.html').read_text(encoding='utf-8')
                 self.assertEqual(manifest['data_schema_version'], 6)
-                self.assertEqual(manifest['renderer_version'], 16)
+                self.assertEqual(manifest['renderer_version'], arsiv.RENDERER_VERSION)
                 self.assertEqual(manifest['phase2_delivery'], previous_delivery)
                 self.assertEqual(len(data['comparison_row']), 9)
                 self.assertEqual(sum(row['state'] == 'not_researched' for row in data['comparison_row']), 7)
