@@ -1,10 +1,12 @@
 """Atıflı kaynakların gerçek kayıt → export → yayın → audit sözleşmesi."""
 import copy
 import json
+import os
 from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import arsiv
 import dosyalar
@@ -64,6 +66,25 @@ class SourcePolicy(unittest.TestCase):
         self.assertEqual(manifest['source_policy_version'], 2)
         self.assertEqual(manifest['phase2_delivery'], dict(party_id='tip', stage='tracer', completed_prefix=[]))
         self.assertIn('Yeni Parti', (arsiv.DATA / 'releases' / release / 'index.html').read_text())
+
+    def test_export_checks_each_attribution_once_but_rechecks_changed_sources(self):
+        import kaynaklar
+        version = self.charter()
+        arsiv.record(self.work, 'source_attribution', self.attribution(version))
+        snapshot = self.work / 'records.sqlite3'
+        with patch('kaynaklar.check_attribution', wraps=kaynaklar.check_attribution) as check:
+            exported = arsiv.export_db(snapshot, 'workspace')
+        self.assertEqual(check.call_count, len(exported['source_attribution']))
+        original = arsiv.DATA / version['original_path']
+        raw, metadata = original.read_bytes(), original.stat()
+        try:
+            original.write_bytes(b'x' * len(raw))
+            os.utime(original, ns=(metadata.st_atime_ns, metadata.st_mtime_ns))
+            with self.assertRaises(ValueError):
+                arsiv.export_db(snapshot, 'workspace')
+        finally:
+            original.write_bytes(raw)
+        self.assertEqual(arsiv.export_db(snapshot, 'workspace'), exported)
 
     def test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name(self):
         dossier=json.loads((arsiv.ROOT/'data/dossiers/02-tip.json').read_text())
