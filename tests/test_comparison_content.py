@@ -13,6 +13,18 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_source_inventory_is_converted_for_complete_snapshot(self):
+        convert = getattr(arsiv, 'comparison_inventory_records', None)
+        self.assertTrue(callable(convert), 'Kaynak envanteri snapshot kayıtlarına aktarılmalı')
+        section = dict(party_id='iyi', version_id='0205-iyi-charter-download-v1', source_role='charter', section='Madde 48', page_range='PDF 31', full_text_available=True, scanned_at='2026-11-13', topic_ids=['merkez-yonetimi-secimi'], unmatched_headings=[], search_boundary='Madde 48', missing_id=None)
+        inventory = dict(taxonomy_version=1, status='complete', sections=[section])
+        records = convert(inventory, 1)
+        self.assertEqual(records[0]['kind'], 'comparison_source_inventory')
+        self.assertEqual(records[0]['values']['topic_ids'], ['merkez-yonetimi-secimi'])
+        inventory['status'] = 'in_progress'
+        with self.assertRaises(ValueError):
+            convert(inventory, 1)
+
     def test_program_fields_are_distinguishable_in_both_views(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         package = json.loads((Path(__file__).resolve().parents[1] / 'data/comparisons/03-program-opening.json').read_text(encoding='utf-8'))
