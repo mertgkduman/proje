@@ -488,6 +488,8 @@ def validate_comparisons(data):
         after = versions[passages[change['after_passage_id']]['version_id']]
         if before['id'] == after['id'] or before['document_id'] != after['document_id']:
             raise ValueError('Değişiklik aynı belgenin iki ayrı sürümünü gerektirir')
+        if before['sha256'] == after['sha256']:
+            raise ValueError('Aynı içerik maddi değişiklik olarak gösterilemez')
     for synthesis in data['comparison_synthesis']:
         if (synthesis['topic_id'],synthesis['taxonomy_version']) not in topics or not synthesis['text']:
             raise ValueError('Konu özeti geçersiz')

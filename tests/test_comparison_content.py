@@ -14,7 +14,7 @@ class ComparisonContentTest(unittest.TestCase):
         before = versions[passages[change['before_passage_id']]['version_id']]
         after = versions[passages[change['after_passage_id']]['version_id']]
         after['sha256'] = before['sha256']
-        with self.assertRaisesRegex(ValueError, 'aynı|aynı.*içerik'):
+        with self.assertRaisesRegex(ValueError, '[Aa]ynı içerik'):
             arsiv.validate_comparisons(data)
 
     def test_no_explicit_statement_requires_a_review_scope(self):
