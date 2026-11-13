@@ -1,0 +1,43 @@
+{
+  "contract_version": 1,
+  "taxonomy_version": 2,
+  "stage": "partial",
+  "status": "in_progress",
+  "note": "İlk konu; tam ortak harita henüz çıkarılmadı.",
+  "records": [
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 1,
+        "definition": "Siyasal karar süreçlerine yurttaş katılımı ve demokrasi anlayışı",
+        "applicable_levels": "ulusal ve yerel",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "demokrasi-katilim",
+        "label": "Demokrasi ve katılım",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programlarda yurttaşların siyasi karar süreçlerine katılımı ayrı konu olarak düzenlenir."
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "passage_id": "epm-parliamentary-p",
+        "rationale": "Yönetim sistemi ve demokratik karar organlarına ilişkin program dayanağı.",
+        "source_role": "program"
+      }
+    }
+  ]
+}

@@ -1,0 +1,761 @@
+{
+  "contract_version": 1,
+  "taxonomy_version": 2,
+  "stage": "partial",
+  "status": "in_progress",
+  "records": [
+    {
+      "kind": "comparison_topic",
+      "values": {
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "domain": "program",
+        "parent_topic_id": null,
+        "order_index": 1,
+        "definition": "Siyasal karar süreçlerine yurttaş katılımı ve demokrasi anlayışı",
+        "applicable_levels": "ulusal ve yerel",
+        "basis_kind": "program"
+      }
+    },
+    {
+      "kind": "topic",
+      "values": {
+        "id": "demokrasi-katilim",
+        "label": "Demokrasi ve katılım",
+        "taxonomy_version": 2,
+        "valid_from": "2026-11-13",
+        "status": "verified",
+        "change_reason": "Programlarda yurttaşların siyasi karar süreçlerine katılımı ayrı konu olarak düzenlenir."
+      }
+    },
+    {
+      "kind": "topic_basis",
+      "values": {
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "passage_id": "epm-parliamentary-p",
+        "rationale": "Yönetim sistemi ve demokratik karar organlarına ilişkin program dayanağı.",
+        "source_role": "program"
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-yeni-parti-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-parti",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": "epm-program-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "İlgili program bölümleri incelendi; alanlar kaynakta açıkça bulunan ifadelerle sınırlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-tip-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "tip",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": "0203-tip-program-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "İlgili program bölümleri incelendi; alanlar kaynakta açıkça bulunan ifadelerle sınırlıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-dem-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "dem",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "not_researched",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Bu konuda program içeriği henüz incelenmedi."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-iyi-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "iyi",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "not_researched",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Bu konuda program içeriği henüz incelenmedi."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-yeni-yol-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "yeni-yol",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "not_researched",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Bu konuda program içeriği henüz incelenmedi."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-dbp-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "dbp",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "not_researched",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Bu konuda program içeriği henüz incelenmedi."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-emep-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "emep",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "not_researched",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Bu konuda program içeriği henüz incelenmedi."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-saadet-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "saadet",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "not_researched",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Bu konuda program içeriği henüz incelenmedi."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "03-v2-demokrat-demokrasi",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "party_id": "demokrat",
+        "level": "ulusal ve yerel",
+        "organ": "Siyasal katılım",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "not_researched",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Bu konuda program içeriği henüz incelenmedi."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-v2-yeni-parti-principle-passage",
+        "version_id": "epm-program-v1",
+        "exact": "Partimiz, halkın siyasete aktif katılımını temel ilke olarak benimser.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Bölüm I — Değişim Çağrısı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-yeni-parti-principle-summary",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "pair_id": "03-v2-yeni-parti-principle-pair",
+        "text": "Yeni Parti halkın siyasete etkin katılımını temel ilke olarak benimser.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-yeni-parti-principle-summary",
+        "passage_id": "03-v2-yeni-parti-principle-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-yeni-parti-principle-summary",
+        "kind": "finding",
+        "subject_id": "03-v2-yeni-parti-principle-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-yeni-parti-principle-quote",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "pair_id": "03-v2-yeni-parti-principle-pair",
+        "text": "Partimiz, halkın siyasete aktif katılımını temel ilke olarak benimser.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-yeni-parti-principle-quote",
+        "passage_id": "03-v2-yeni-parti-principle-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-yeni-parti-principle-quote",
+        "kind": "finding",
+        "subject_id": "03-v2-yeni-parti-principle-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "03-v2-yeni-parti-principle-field",
+        "row_id": "03-v2-yeni-parti-demokrasi",
+        "field": "principle",
+        "summary_finding_id": "03-v2-yeni-parti-principle-summary",
+        "quote_finding_id": "03-v2-yeni-parti-principle-quote",
+        "condition_key": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-v2-yeni-parti-instrument-passage",
+        "version_id": "epm-program-v1",
+        "exact": "Yerel yönetimlerde katılımcı bütçe, yurttaş meclisleri, kent konseyleri ve mahalle düzeyi danışma mekanizmaları güçlendirilecektir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Aktif Yurttaşlık ve Örgütlü Toplum",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-yeni-parti-instrument-summary",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "pair_id": "03-v2-yeni-parti-instrument-pair",
+        "text": "Yeni Parti yerel yönetimlerde katılımcı bütçeyi, yurttaş meclislerini, kent konseylerini ve mahalle danışma mekanizmalarını güçlendirmeyi önerir.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-yeni-parti-instrument-summary",
+        "passage_id": "03-v2-yeni-parti-instrument-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-yeni-parti-instrument-summary",
+        "kind": "finding",
+        "subject_id": "03-v2-yeni-parti-instrument-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-yeni-parti-instrument-quote",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "pair_id": "03-v2-yeni-parti-instrument-pair",
+        "text": "Yerel yönetimlerde katılımcı bütçe, yurttaş meclisleri, kent konseyleri ve mahalle düzeyi danışma mekanizmaları güçlendirilecektir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-yeni-parti-instrument-quote",
+        "passage_id": "03-v2-yeni-parti-instrument-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-yeni-parti-instrument-quote",
+        "kind": "finding",
+        "subject_id": "03-v2-yeni-parti-instrument-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "03-v2-yeni-parti-instrument-field",
+        "row_id": "03-v2-yeni-parti-demokrasi",
+        "field": "instrument",
+        "summary_finding_id": "03-v2-yeni-parti-instrument-summary",
+        "quote_finding_id": "03-v2-yeni-parti-instrument-quote",
+        "condition_key": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-v2-tip-principle-passage",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Sosyalist demokrasi, halkın, en küçük yerel birimden başlayarak ülke ölçeğine kadar, kendi kendisini yönetmesini ifade eder.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sosyalist Demokrasi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-tip-principle-summary",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "03-v2-tip-principle-pair",
+        "text": "TİP sosyalist demokrasiyi halkın yerelden ülke düzeyine kendi kendini yönetmesi olarak tanımlar.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-tip-principle-summary",
+        "passage_id": "03-v2-tip-principle-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-tip-principle-summary",
+        "kind": "finding",
+        "subject_id": "03-v2-tip-principle-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-tip-principle-quote",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "03-v2-tip-principle-pair",
+        "text": "Sosyalist demokrasi, halkın, en küçük yerel birimden başlayarak ülke ölçeğine kadar, kendi kendisini yönetmesini ifade eder.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-tip-principle-quote",
+        "passage_id": "03-v2-tip-principle-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-tip-principle-quote",
+        "kind": "finding",
+        "subject_id": "03-v2-tip-principle-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "03-v2-tip-principle-field",
+        "row_id": "03-v2-tip-demokrasi",
+        "field": "principle",
+        "summary_finding_id": "03-v2-tip-principle-summary",
+        "quote_finding_id": "03-v2-tip-principle-quote",
+        "condition_key": "Sosyalist demokrasi bağlamı"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-v2-tip-instrument-passage",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Her düzeydeki yönetim ve temsil organları tek dereceli seçimlerle belirlenir ve seçmenler geri çağırma hakkına sahiptir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sosyalist Demokrasi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-tip-instrument-summary",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "03-v2-tip-instrument-pair",
+        "text": "TİP sosyalist demokrasi bağlamında tek dereceli seçim ve seçmenlerin geri çağırma hakkını öngörür.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-tip-instrument-summary",
+        "passage_id": "03-v2-tip-instrument-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-tip-instrument-summary",
+        "kind": "finding",
+        "subject_id": "03-v2-tip-instrument-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-tip-instrument-quote",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "03-v2-tip-instrument-pair",
+        "text": "Her düzeydeki yönetim ve temsil organları tek dereceli seçimlerle belirlenir ve seçmenler geri çağırma hakkına sahiptir.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-tip-instrument-quote",
+        "passage_id": "03-v2-tip-instrument-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-tip-instrument-quote",
+        "kind": "finding",
+        "subject_id": "03-v2-tip-instrument-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "03-v2-tip-instrument-field",
+        "row_id": "03-v2-tip-demokrasi",
+        "field": "instrument",
+        "summary_finding_id": "03-v2-tip-instrument-summary",
+        "quote_finding_id": "03-v2-tip-instrument-quote",
+        "condition_key": "Sosyalist demokrasi bağlamı"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "03-v2-demokrasi-ozet",
+        "topic_id": "demokrasi-katilim",
+        "taxonomy_version": 2,
+        "text": "Her iki program da yurttaşların siyasete katılımını ele alır; TİP’in öz yönetim ve seçim önerisi sosyalist demokrasi bağlamında sunulur."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "03-v2-demokrasi-ozet",
+        "passage_id": "03-v2-yeni-parti-principle-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "03-v2-demokrasi-ozet",
+        "passage_id": "03-v2-tip-principle-passage"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-v2-yeni-parti-target-passage",
+        "version_id": "epm-program-v1",
+        "exact": "Türkiye’nin ihtiyacı, yurttaşları yalnızca seçim günü oy kullanan seçmenler olarak gören anlayışın aşılması; yurttaşların ülkenin geleceğine ilişkin söz ve karar sahibi olduğu katılımcı bir siyasal düzenin kurulmasıdır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Bölüm I — Değişim Çağrısı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-yeni-parti-target-summary",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "pair_id": "03-v2-yeni-parti-target-pair",
+        "text": "Yeni Parti yurttaşların ülkenin geleceği hakkında söz ve karar sahibi olduğu katılımcı bir düzen kurulmasını hedefler.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-yeni-parti-target-summary",
+        "passage_id": "03-v2-yeni-parti-target-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-yeni-parti-target-summary",
+        "kind": "finding",
+        "subject_id": "03-v2-yeni-parti-target-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-yeni-parti-target-quote",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "pair_id": "03-v2-yeni-parti-target-pair",
+        "text": "Türkiye’nin ihtiyacı, yurttaşları yalnızca seçim günü oy kullanan seçmenler olarak gören anlayışın aşılması; yurttaşların ülkenin geleceğine ilişkin söz ve karar sahibi olduğu katılımcı bir siyasal düzenin kurulmasıdır.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-yeni-parti-target-quote",
+        "passage_id": "03-v2-yeni-parti-target-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-yeni-parti-target-quote",
+        "kind": "finding",
+        "subject_id": "03-v2-yeni-parti-target-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "03-v2-yeni-parti-target-field",
+        "row_id": "03-v2-yeni-parti-demokrasi",
+        "field": "target",
+        "summary_finding_id": "03-v2-yeni-parti-target-summary",
+        "quote_finding_id": "03-v2-yeni-parti-target-quote",
+        "condition_key": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "03-v2-tip-target-passage",
+        "version_id": "0203-tip-program-v1",
+        "exact": "Toplumun bütününü ilgilendiren temel kararlar, doğrudan doğruya halk tarafından alınır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sosyalist Demokrasi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-tip-target-summary",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "03-v2-tip-target-pair",
+        "text": "TİP sosyalist demokrasi çerçevesinde toplumu ilgilendiren temel kararların doğrudan halkça alınmasını öngörür.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-tip-target-summary",
+        "passage_id": "03-v2-tip-target-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-tip-target-summary",
+        "kind": "finding",
+        "subject_id": "03-v2-tip-target-summary",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "03-v2-tip-target-quote",
+        "party_id": "tip",
+        "heading": "Program",
+        "pair_id": "03-v2-tip-target-pair",
+        "text": "Toplumun bütününü ilgilendiren temel kararlar, doğrudan doğruya halk tarafından alınır.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "03-v2-tip-target-quote",
+        "passage_id": "03-v2-tip-target-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-03-v2-tip-target-quote",
+        "kind": "finding",
+        "subject_id": "03-v2-tip-target-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-13T05:58:55Z",
+        "result": "reviewed",
+        "reason": "Parti yayınının ilgili bölümü doğrudan okundu."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "03-v2-tip-target-field",
+        "row_id": "03-v2-tip-demokrasi",
+        "field": "target",
+        "summary_finding_id": "03-v2-tip-target-summary",
+        "quote_finding_id": "03-v2-tip-target-quote",
+        "condition_key": "Sosyalist demokrasi bağlamı"
+      }
+    }
+  ]
+}
