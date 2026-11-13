@@ -329,16 +329,29 @@ def render_report(data):
         elif row['state'] == 'no_explicit_statement':
             pieces.append('<p class="muted">İncelenen kapsamda açık ifade bulunmadı.</p>')
         else:
+            grouped_fields = {}
             for field in (x for x in data.get('comparison_field', []) if x['row_id'] == row['id']):
+                pair = [findings[field[k]] for k in ('summary_finding_id', 'quote_finding_id')]
+                key = (field['field'], field['condition_key'], *(
+                    (f['text'], f['provenance'], f['epistemic_type']) for f in pair
+                ))
+                if key not in grouped_fields:
+                    grouped_fields[key] = (field, [[], []])
+                for index, finding in enumerate(pair):
+                    refs = grouped_fields[key][1][index]
+                    for item in evidence[finding['id']]:
+                        if item['passage_id'] not in refs:
+                            refs.append(item['passage_id'])
+            for field, passage_groups in grouped_fields.values():
                 field_label = {'principle':'İlke', 'target':'Hedef', 'instrument':'Önerilen araç'}.get(field['field'])
                 if field_label:
                     pieces.append(f'<h5>{field_label}</h5>')
                 if field['condition_key']:
                     pieces.append(f'<p class="metadata">Koşul: {esc(field["condition_key"])}</p>')
-                for fid in (field['summary_finding_id'],field['quote_finding_id']):
+                for fid, passage_ids in zip((field['summary_finding_id'],field['quote_finding_id']), passage_groups):
                     f = findings[fid]
-                    cls, value = format_finding(f)
-                    refs = ' '.join(named_citation(e['passage_id']) for e in evidence[fid])
+                    cls, value = format_finding(f, passage_ids)
+                    refs = ' '.join(named_citation(pid) for pid in passage_ids)
                     pieces.append(f'<p class="{cls}">{value} {refs}</p>')
             changes = [c for c in data.get('comparison_change', []) if c['row_id'] == row['id']]
             if changes:
