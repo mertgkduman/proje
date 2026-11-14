@@ -18851,6 +18851,270 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DBP 1–114. maddelerde ayrı adla organ kurulması için, Saadet 1–67. maddeler ve 2020 ekinde kuruluş/yönetim usulü için incelendi. DBP basın-yayın görevleri ve Saadet’in izinsiz yayın hakkındaki disiplin hükmü bu kapsamlardan ayrı kalır.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-absence-30-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-30-scope\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-scope-027-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-027\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-denetmen-1",
+        "topic_id": "parti-denetmen",
+        "taxonomy_version": 3,
+        "text": "TİP tüzüğünde Parti Meclisi örgütle ilgili görevlerine yardımcı olmak üzere parti denetmenleri görevlendirebilir; yöntem, görev ve yetkiler yönetmelikle düzenlenir. Saadet tüzüğünde Genel İdare Kurulu kendi üyeleri arasından en az iki denetçi atar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-denetmen-1",
+        "passage_id": "0304-tip-denetmen-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-denetmen-1",
+        "passage_id": "0310-saadet-2-015-parti-denetmen-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-denetmen-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP örgüt görevlerine yardımcı denetmenleri ve yönetmelik düzenlemesini; Saadet GİK üyeleri arasından en az iki denetçi atanmasını belirtir. Sayılar ve görev kapsamları iki partiye ortaklaştırılmadı.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-denetmen-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-denetmen-p1\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-row-0160\",\"support\":\"passage\",\"refs\":[\"0310-saadet-2-015-parti-denetmen-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-denetmen-2",
+        "topic_id": "parti-denetmen",
+        "taxonomy_version": 3,
+        "text": "Demokrat Parti tüzüğünde GİK, gerekli gördüğü kadar parti müfettişi görevlendirebilir; İYİ Parti tüzüğünde Genel Başkan her kademedeki faaliyetleri denetleyip kendisine rapor sunmak üzere parti müfettişi görevlendirebilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-denetmen-2",
+        "passage_id": "0312-demokrat-2-033-parti-denetmen-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-denetmen-2",
+        "passage_id": "0306-iyi-parti-denetmen-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-denetmen-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Her iki pasaj görev adını müfettiş olarak kullanır. Demokrat GİK’in yetkisini ve sayının gerekliliğe göre belirlenmesini; İYİ Genel Başkan’ın atamasını, faaliyet denetimini ve raporu açıklar.\",\"sides\":[{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-033-parti-denetmen-row\",\"support\":\"passage\",\"refs\":[\"0312-demokrat-2-033-parti-denetmen-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-parti-denetmen-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-parti-denetmen-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-denetmen-3",
+        "topic_id": "parti-denetmen",
+        "taxonomy_version": 3,
+        "text": "İncelenen DBP HTML tüzüğünde ‘parti denetmeni’ adlı bağımsız görev veya organın kurulması; DEM kısa adlı tüzükte parti denetmeni atanması için ayrı açık düzenleme saptanmadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-denetmen-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DBP’nin 1–114. maddeleri bağımsız görev veya organ, DEM’in 1–61. maddeleri atama sorusuyla incelendi. DBP yönetim kurullarının bağlı birimleri denetleme görevi ve DEM’in mevcut merkez organları yok sayılmadı.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-absence-26-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-26-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-scope-denetmen-dem-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-denetmen-dem-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-mufettis-1",
+        "topic_id": "parti-mufettis",
+        "taxonomy_version": 3,
+        "text": "İYİ Parti’de Genel Başkan, her kademedeki faaliyetleri denetleyip kendisine rapor sunmak üzere parti müfettişleri görevlendirebilir. Saadet’te Genel Başkan, faaliyet kontrolü, teşkilat denetimi ve özel konularda inceleme için Teşkilat Başkanına bağlı müfettişler görevlendirebilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-mufettis-1",
+        "passage_id": "0306-iyi-parti-mufettis-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-mufettis-1",
+        "passage_id": "0310-saadet-2-017-parti-mufettis-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-mufettis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ hükmü Genel Başkana raporu ve her kademeyi, Saadet hükmü Teşkilat Başkanına bağlılığı ve özel incelemeyi belirtir; görev zincirleri birleştirilmedi.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-parti-mufettis-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-parti-mufettis-passage\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-row-0165\",\"support\":\"passage\",\"refs\":[\"0310-saadet-2-017-parti-mufettis-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-mufettis-2",
+        "topic_id": "parti-mufettis",
+        "taxonomy_version": 3,
+        "text": "Demokrat Parti tüzüğünde GİK, parti işlemlerinin mevzuata uygunluğunu sağlama ve teşkilatı denetleme gibi amaçlarla gerektiği kadar parti müfettişi görevlendirebilir. İYİ Parti’de atama yetkisi Genel Başkana verilmiştir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-mufettis-2",
+        "passage_id": "0312-demokrat-2-033-parti-mufettis-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-mufettis-2",
+        "passage_id": "0306-iyi-parti-mufettis-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-mufettis-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Demokrat arşivindeki görevli organ GİK, İYİ tüzüğünde Genel Başkandır. Demokrat hükmünün amaçları kaynakta sayıldığı kapsamda tutuldu; denetimin gerçekleştiği varsayılmadı.\",\"sides\":[{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-033-parti-mufettis-row\",\"support\":\"passage\",\"refs\":[\"0312-demokrat-2-033-parti-mufettis-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-parti-mufettis-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-parti-mufettis-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-mufettis-3",
+        "topic_id": "parti-mufettis",
+        "taxonomy_version": 3,
+        "text": "İncelenen TİP HTML ve DBP tüzüklerinde ‘parti müfettişi’ adlı ayrı görevin oluşumu veya görevlendirilmesi için açık düzenleme saptanmadı; TİP parti denetmenleri ve DBP’nin mevcut örgüt denetimi ayrıca düzenlenmiştir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-mufettis-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"TİP HTML nüshası ayrı müfettiş unvanının oluşumu, DBP’nin 1–114. maddeleri müfettiş görevlendirilmesi sorusuyla incelendi; başka adla denetimin yokluğu sonucu çıkarılmadı.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-charter-scope-mufettis-html-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-mufettis-html-scope\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-absence-03-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-03-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-tuzuk-bosluk-1",
+        "topic_id": "tuzuk-bosluk",
+        "taxonomy_version": 3,
+        "text": "DBP tüzüğü hüküm bulunmayan hâllerde Siyasi Partiler Kanunu, İnsan Hakları Evrensel Beyannamesi, Avrupa İnsan Hakları Sözleşmesi, Dernekler ve Medeni kanunları ile TBMM İç Tüzüğü’nün ilgili hükümlerine atıf yapar. İYİ Parti tüzüğü belirttiği kanunların konuya ilişkin emredici hükümlerini ve Siyasi Partiler Kanunu’na aykırı olmayan Dernekler Kanunu hükümlerini uygular."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-tuzuk-bosluk-1",
+        "passage_id": "0308-dbp-draft-038-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-tuzuk-bosluk-1",
+        "passage_id": "0306-iyi-tuzuk-bosluk-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-tuzuk-bosluk-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DBP kaynakta sayılan belge ve kanunları; İYİ Medeni Kanun ve Siyasi Partiler Kanunu’nun ilgili emredici hükümlerini ve Dernekler Kanunu için aykırı olmama koşulunu açıklar. Listeler aynılaştırılmadı.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-038-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-038-passage\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-tuzuk-bosluk-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-tuzuk-bosluk-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-tuzuk-bosluk-2",
+        "topic_id": "tuzuk-bosluk",
+        "taxonomy_version": 3,
+        "text": "Saadet tüzüğü açıklık bulunmayan hâllerde Siyasi Partiler Kanunu ile ilgili diğer mevzuatı uygular. Demokrat Parti arşiv tüzüğü hüküm olmayan hâllerde ilgili kanun ve TBMM İçtüzüğü hükümlerine göre hareket edileceğini belirtir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-tuzuk-bosluk-2",
+        "passage_id": "0310-saadet-2-067-tuzuk-bosluk-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-tuzuk-bosluk-2",
+        "passage_id": "0312-demokrat-2-072-tuzuk-bosluk-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-tuzuk-bosluk-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Saadet’in ilgili diğer mevzuat ifadesi ve Demokrat’ın ilgili kanun ile TBMM İçtüzüğü atfı kendi kaynaklarıyla sınırlıdır; somut bir uyuşmazlığın çözümü iddia edilmez.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-row-0237\",\"support\":\"passage\",\"refs\":[\"0310-saadet-2-067-tuzuk-bosluk-p\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-072-tuzuk-bosluk-row\",\"support\":\"passage\",\"refs\":[\"0312-demokrat-2-072-tuzuk-bosluk-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-tuzuk-bosluk-3",
+        "topic_id": "tuzuk-bosluk",
+        "taxonomy_version": 3,
+        "text": "İncelenen EMEP ve TİP HTML tüzüklerinde tüzükte bulunmayan hâllerin çözümü için ayrı genel hüküm saptanmadı; bu sonuç tüzüklerde başka konularda yönetmelik çıkarılmasını dışlamaz."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-tuzuk-bosluk-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:49:17.245713+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"EMEP HTML tüzüğünün 1–65. maddeleri ve son genel hükümleri ile TİP HTML sürümü ayrı genel boşluk hükmü yönünden incelendi. TİP Parti Meclisinin yönetmelik ve genelge yetkisi ayrı bağlamdır.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-scope-025-row\",\"support\":\"scope\",\"refs\":[\"0309-emep-scope-025-scope\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-charter-scope-bosluk-html-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-bosluk-html-scope\"]}]}"
+      }
     }
   ]
 }
