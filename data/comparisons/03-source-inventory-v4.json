@@ -1,7 +1,7 @@
 {
   "taxonomy_version": 4,
   "status": "complete",
-  "note": "1.710 önceki kaynak/bölüm veya soru/kapsam kaydı özgün sınırlarıyla taşınır; İslam kurumları sorusu için 13, Yeni Parti PM oy istisnası için 1 kaynak/soru incelemesi eklenir. 1.724 benzersiz fiziksel başlık sayısı değildir.",
+  "note": "1.710 önceki kaynak/bölüm veya soru/kapsam kaydı taşınır; İslam sorusu için 13, PM oy istisnası için 1 ve son seçili-satır düzeltmeleri için 5 kaynak/soru incelemesi eklenir. 1.729 benzersiz fiziksel başlık sayısı değildir. EMEP Madde 22 parti finansmanı bağlamındaki kampanya kaydı aynen korunur.",
   "sections": [
     {
       "party_id": "yeni-parti",
@@ -26147,7 +26147,7 @@
         "islam-inanc-orgutlenmesi"
       ],
       "unmatched_headings": [],
-      "search_boundary": "İYİ Parti programının temel amaçlar, kamu yönetimi ve ilgili haklar bölümleri, İslam’a özgü kurum veya tüm dinsel devlet kurumları/kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi. 0314-v4-iyi-din-kurum-scope yalnız bu belirli bölümleri kapsar. İnançlara saygı ve laik hukuk devleti ifadeleri önemlidir fakat tek başına devlet dinsel kurumlarının feshi veya finansman değişikliği hükmü değildir.",
+      "search_boundary": "İYİ Parti programının temel amaçlar, kamu yönetimi ve ilgili haklar bölümleri, İslam’a özgü kurum veya tüm dinsel devlet kurumları/kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi. 0314-v4-iyi-din-kurum-scope yalnız bu belirli bölümleri kapsar. İnançlara saygı, demokratik hukuk düzeni ve kamu yönetiminde tarafsızlık/eşitlik ifadeleri önemlidir fakat tek başına devlet dinsel kurumlarının feshi veya finansman değişikliği hükmü değildir.",
       "missing_id": null
     },
     {
@@ -26178,6 +26178,87 @@
       ],
       "unmatched_headings": [],
       "search_boundary": "Madde 22/7 genel toplantı katılımını ve oydan yoksunluğu belirtir; 0314-v4-yeni-pm-hukumet-oy-istisna-p Madde 22/11-f hükümet kurma, hükümete katılma ve hükümetten çekilme konularında TBMM Grup Başkanvekilleri ile Grup Yönetim Kurulu üyelerinin ilgili PM toplantısına katılıp oy kullanacağını açıkça söyler. Kadın ve gençlik kolları genel başkanları bu özel oy hakkına metinde dahil edilmez.",
+      "missing_id": null
+    },
+    {
+      "party_id": "dem",
+      "version_id": "0204-dem-charter-v1",
+      "source_role": "charter",
+      "section": "Eş Genel Başkanlar",
+      "page_range": "PDF indeksi 12",
+      "full_text_available": true,
+      "scanned_at": "2026-11-14",
+      "topic_ids": [
+        "es-genel-baskan",
+        "genel-baskan-secimi",
+        "organ-secim-yontemi"
+      ],
+      "unmatched_headings": [],
+      "search_boundary": "DEM kısa adlı tüzük Madde 17, 0314-dem-cochair-selection-rounds-full-p: salt çoğunluk, gizli oy/açık sayım ve ilk iki tur sonuçsuzsa üçüncü turda en çok oy alan iki üye istisnası birlikte okunmuştur; başka nüshanın yürürlük sırası çıkarılmaz.",
+      "missing_id": null
+    },
+    {
+      "party_id": "dem",
+      "version_id": "0204-dem-charter-older-v1",
+      "source_role": "charter",
+      "section": "Eş Genel Başkanlar",
+      "page_range": "PDF indeksi 11",
+      "full_text_available": true,
+      "scanned_at": "2026-11-14",
+      "topic_ids": [
+        "es-genel-baskan",
+        "genel-baskan-secimi",
+        "organ-secim-yontemi"
+      ],
+      "unmatched_headings": [],
+      "search_boundary": "HEDEP kısa adlı tüzük Madde 17, 0314-hedep-cochair-selection-rounds-full-p: aynı nüshanın ayrı özgün PDF sayfasında salt çoğunluk, gizli oy/açık sayım ve ilk iki tur sonuçsuzsa üçüncü tur istisnası birlikte okunmuştur; DEM nüshasıyla yürürlük sırası çıkarılmaz.",
+      "missing_id": null
+    },
+    {
+      "party_id": "iyi",
+      "version_id": "0205-iyi-charter-download-v1",
+      "source_role": "charter",
+      "section": "Madde5, PDF index5/basılı6, üye kayıt defteri için özel sınırlama",
+      "page_range": "PDF indeksi 5",
+      "full_text_available": true,
+      "scanned_at": "2026-11-14",
+      "topic_ids": [
+        "parti-defterleri"
+      ],
+      "unmatched_headings": [],
+      "search_boundary": "İYİ tüzüğü Madde 78’in genel defter listesi 0306-iyi-parti-defterleri-passage ve Madde 5’in 0314-cm-x06-part1-p pasajı birlikte okunmuştur; üye kayıt defterine ilişkin yalnız ilçe koşulu bütün defterlere veya tüm kademelere yayılmaz.",
+      "missing_id": null
+    },
+    {
+      "party_id": "demokrat",
+      "version_id": "0210-demokrat-charter-archive-v1",
+      "source_role": "charter",
+      "section": "Yan kuruluşlar; kadın ve gençlik kollarını izleyen temsilcilik hükmü",
+      "page_range": "PDF indeksi 12",
+      "full_text_available": true,
+      "scanned_at": "2026-11-14",
+      "topic_ids": [
+        "mahalle-koy-temsilciligi",
+        "parti-temsilcilikleri",
+        "parti-temsilcisi"
+      ],
+      "unmatched_headings": [],
+      "search_boundary": "Demokrat arşiv tüzüğü PDF indeks 12’de 0314-demokrat-mahalle-secim-atama-full-p Kadın ve Gençlik Kolları başlığını, üç kademe listesini ve izleyen temsilcilik hükmünü birlikte içerir; önce büyükşehir statüsündeki şehirlerin merkez ilçeleri mahallelerinde seçim, ardından bunun dışındaki yerlerde atama hükmünü ayırır. Yalnızca kollara münhasırlık veya bütün temel parti organlarına sınırsız bir kural çıkarılmaz; üç konuya bağlanan aynı nüsha hükmüdür.",
+      "missing_id": null
+    },
+    {
+      "party_id": "demokrat",
+      "version_id": "0210-demokrat-charter-archive-v1",
+      "source_role": "charter",
+      "section": "Yan kuruluşlar",
+      "page_range": "PDF indeksi 12",
+      "full_text_available": true,
+      "scanned_at": "2026-11-14",
+      "topic_ids": [
+        "sivil-toplum-iliskileri"
+      ],
+      "unmatched_headings": [],
+      "search_boundary": "Demokrat arşiv tüzüğü PDF indeks 12’de 0314-demokrat-yan-kurulus-kademeleri-full-p gerekli görülen yerleri ve ilçe, il, Genel Merkez kademelerini birlikte sayar; yalnız merkez yetkisi veya gerçekleşmiş kuruluş çıkarılmaz.",
       "missing_id": null
     }
   ]

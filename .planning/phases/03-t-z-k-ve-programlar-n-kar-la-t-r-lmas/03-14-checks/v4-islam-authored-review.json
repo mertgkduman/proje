@@ -1,19 +1,58 @@
 {
-  "reviewed_at":"2026-11-14T22:13:21+00:00",
-  "method":"Kaynakçı, yeni soruyu ve aşağıdaki taraf/sürüm/koşul kararlarını gerçek pasaj, önceki kapsam ve ilgili özgün bölümler üzerinden ayrı ayrı inceledi. Kapsam sınırları belge türü ve bölümle sınırlıdır; düzenli ifade taraması tek başına yokluk gerekçesi değildir.",
-  "decisions":{
-    "03-v3-0308-dbp-current-islam-inanc-orgutlenmesi":{"conditions":"Bağımsız güncel DBP programı bulunamadı; tarihsel BDP kopyaları bu açığı kapatmaz.","explanation":"Gerçek 0207-dbp-missing-current-program kaydı yalnız güncel ana belgenin edinilemediğini gösterir; herhangi bir din kurumu politikası yokluğu veya karşıtlığı çıkarılmaz."},
-    "03-v3-0308-dbp-program-097-0-row":{"conditions":"Tarihsel Blogspot BDP kopyası Diyanet’in demokratik düzenlenmesini ve din işlerinin tedricen inanç gruplarına bırakılmasını ayrı belirtir.","explanation":"0308-dbp-program-097-0-passage doğrudan kurum ve tedricî geçiş hükmüdür; kopyanın tarihi ve güncel DBP ana programıyla ilişkisi bilinmez, derhal fesih atfedilmez."},
-    "03-v3-0308-dbp-program-097-1-row":{"conditions":"İkinci tarihsel WordPress BDP kopyası aynı kurumsal ve tedricî geçiş hükmünü kendi kaynak sürümünde korur.","explanation":"0308-dbp-program-097-1-passage ikinci kopyanın gerçek metnidir; iki kopya bağımsız iki politika veya güncel DBP ana programı sayılmaz."},
-    "03-v3-0305-dem-program-islam-row":{"conditions":"DEM kongre eki Demokratik İslam Kongresiyle ilişkileri canlandırma ve çalışmaları destekleme kararıdır; bağımsız ana program değildir.","explanation":"0305-dem-program-islam-context-passage ve 0305-dem-program-islam-passage adlandırılmış kongreyle parti ilişkisini gösterir; kurumu fesih vaadi veya kamu finansmanı önerisi çıkarılmaz."},
-    "03-v3-0305-dem-program-missing-islam-inanc-orgutlenmesi":{"conditions":"Bağımsız güncel DEM ana programı bulunamadı; kongre eki bu açıkla aynı belge değildir.","explanation":"0204-dem-missing-current-program gerçek arama açığıdır. Kongre ekindeki örgütsel karar ve Diyanet eleştirisi kendi rolünde saklıdır; ana belge eksikliği görüş yokluğu değildir."},
-    "03-v3-0313-demokrat-islam-inanc-orgutlenmesi":{"conditions":"Demokrat arşiv programı Diyanet’in değişik inanç gruplarına hizmet edecek biçimde yeniden yapılandırılmasını önerir.","explanation":"0313-demokrat-025-islam-inanc-orgutlenmesi-p doğrudan Diyanet’i ve yeniden yapılandırma amacını belirtir; kapatma veya kamu finansmanını kesme anlamı yüklenmez."},
-    "03-v3-0306-iyi-program-scope-islam-inanc-orgutlenmesi-context-row":{"conditions":"İYİ programının inançlara saygı ifadesi genel ilkedir; İslam’a özel kurum politikası ve bütün dinsel devlet kurumlarının finansmanı için tek başına araç değildir.","explanation":"0306-iyi-program-scope-islam-inanc-orgutlenmesi-passage inançlara saygıyı amaçlar arasında sayar. Yeni genel soru ayrıca kendi bölüm kapsamıyla incelenir; bu pasajdan kurum feshi veya finansman aracı üretilmez."},
-    "03-v3-0304-tip-program-din-kurum-row":{"conditions":"TİP Diyanet’in kapatılmasını ve din işlerinin bütün din ve mezheplere eşit mesafeli bir kurumda yeniden düzenlenmesini birlikte savunur.","explanation":"0304-tip-program-diyanet-p1 tam paragrafı, 0304-tip-program-diyanet-q eşit mesafeli kurum parçasını içerir; yalnız kapatma veya yalnız eşitlik ifadesine indirgenmez."},
-    "03-v3-0307-yeni-yol-islam-inanc-orgutlenmesi-program":{"conditions":"Yeni Yol’un bağımsız tam programı edinilemedi.","explanation":"0307-yeni-yol-missing-program gerçek arama açığıdır; diğer kurucu partilerin din politikaları Yeni Yol’a atfedilmez ve belge yokluğu tutum yokluğu değildir."},
-    "0314-v4-emep-din-kurum-row":{"conditions":"EMEP’in HTML program gövdesi tüm dinsel devlet kurumlarının feshi ve dini kurumlar ile cemaatlerin devlet finansmanına son verilmesini, dinsel alanın inananlara bırakılmasıyla birlikte önerir.","explanation":"0314-v4-emep-din-kurum-p G/A/7 tam özgün pasajıdır. Hüküm devlet kurumları ve kamu finansmanına ilişkindir; özel inanç örgütlerinin genel yasağı, İslam’a özgü ayrı kurum adı veya gerçekleşmiş uygulama çıkarılmaz."},
-    "0314-v4-yeni-din-kurum-scope-row":{"conditions":"Yeni Parti programında ilgili cumhuriyet ilkeleri ve kamucu eğitim bölümleri, İslam’a özgü kurum ile tüm dinsel devlet kurumları veya kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi.","explanation":"0314-v4-yeni-din-kurum-scope bu belirli bölümlerin sınırıdır. Laik eğitim ve kamusal eğitim sorumluluğunun cemaat/tarikat/vakıf/derneğe devredilmemesi eğitim örgütlenmesine ilişkindir; bundan bütün dinsel devlet kurumları veya finansmanı için ayrıca bir hüküm çıkarılmaz."},
-    "0314-v4-iyi-din-kurum-scope-row":{"conditions":"İYİ Parti programının temel amaçlar, kamu yönetimi ve ilgili haklar bölümleri, İslam’a özgü kurum veya tüm dinsel devlet kurumları/kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi.","explanation":"0314-v4-iyi-din-kurum-scope yalnız bu belirli bölümleri kapsar. İnançlara saygı ve laik hukuk devleti ifadeleri önemlidir fakat tek başına devlet dinsel kurumlarının feshi veya finansman değişikliği hükmü değildir."},
-    "0314-v4-saadet-din-kurum-scope-row":{"conditions":"Saadet arşiv programının siyaset anlayışı, ayrıştırıcı olmayan devlet ve demokrasi/insan hakları bölümleri, İslam’a özgü kurum veya tüm dinsel devlet kurumları/kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi.","explanation":"0314-v4-saadet-din-kurum-scope PDF indeks 4–6 ve 10’daki ilgili bölümlerle sınırlıdır. Din ve mezhep ayrımı olmadan özgürlük ve kamu hizmeti ilkeleri kurumsal fesih ya da finansman aracı olarak yeniden yorumlanmaz."}
+  "reviewed_at": "2026-11-14T22:13:21+00:00",
+  "method": "Kaynakçı, yeni soruyu ve aşağıdaki taraf/sürüm/koşul kararlarını gerçek pasaj, önceki kapsam ve ilgili özgün bölümler üzerinden ayrı ayrı inceledi. Kapsam sınırları belge türü ve bölümle sınırlıdır; düzenli ifade taraması tek başına yokluk gerekçesi değildir.",
+  "decisions": {
+    "03-v3-0308-dbp-current-islam-inanc-orgutlenmesi": {
+      "conditions": "Bağımsız güncel DBP programı bulunamadı; tarihsel BDP kopyaları bu açığı kapatmaz.",
+      "explanation": "Gerçek 0207-dbp-missing-current-program kaydı yalnız güncel ana belgenin edinilemediğini gösterir; herhangi bir din kurumu politikası yokluğu veya karşıtlığı çıkarılmaz."
+    },
+    "03-v3-0308-dbp-program-097-0-row": {
+      "conditions": "Tarihsel Blogspot BDP kopyası Diyanet’in demokratik düzenlenmesini ve din işlerinin tedricen inanç gruplarına bırakılmasını ayrı belirtir.",
+      "explanation": "0308-dbp-program-097-0-passage doğrudan kurum ve tedricî geçiş hükmüdür; kopyanın tarihi ve güncel DBP ana programıyla ilişkisi bilinmez, derhal fesih atfedilmez."
+    },
+    "03-v3-0308-dbp-program-097-1-row": {
+      "conditions": "İkinci tarihsel WordPress BDP kopyası aynı kurumsal ve tedricî geçiş hükmünü kendi kaynak sürümünde korur.",
+      "explanation": "0308-dbp-program-097-1-passage ikinci kopyanın gerçek metnidir; iki kopya bağımsız iki politika veya güncel DBP ana programı sayılmaz."
+    },
+    "03-v3-0305-dem-program-islam-row": {
+      "conditions": "DEM kongre eki Demokratik İslam Kongresiyle ilişkileri canlandırma ve çalışmaları destekleme kararıdır; bağımsız ana program değildir.",
+      "explanation": "0305-dem-program-islam-context-passage ve 0305-dem-program-islam-passage adlandırılmış kongreyle parti ilişkisini gösterir; kurumu fesih vaadi veya kamu finansmanı önerisi çıkarılmaz."
+    },
+    "03-v3-0305-dem-program-missing-islam-inanc-orgutlenmesi": {
+      "conditions": "Bağımsız güncel DEM ana programı bulunamadı; kongre eki bu açıkla aynı belge değildir.",
+      "explanation": "0204-dem-missing-current-program gerçek arama açığıdır. Kongre ekindeki örgütsel karar ve Diyanet eleştirisi kendi rolünde saklıdır; ana belge eksikliği görüş yokluğu değildir."
+    },
+    "03-v3-0313-demokrat-islam-inanc-orgutlenmesi": {
+      "conditions": "Demokrat arşiv programı Diyanet’in değişik inanç gruplarına hizmet edecek biçimde yeniden yapılandırılmasını önerir.",
+      "explanation": "0313-demokrat-025-islam-inanc-orgutlenmesi-p doğrudan Diyanet’i ve yeniden yapılandırma amacını belirtir; kapatma veya kamu finansmanını kesme anlamı yüklenmez."
+    },
+    "03-v3-0306-iyi-program-scope-islam-inanc-orgutlenmesi-context-row": {
+      "conditions": "İYİ programının inançlara saygı ifadesi genel ilkedir; İslam’a özel kurum politikası ve bütün dinsel devlet kurumlarının finansmanı için tek başına araç değildir.",
+      "explanation": "0306-iyi-program-scope-islam-inanc-orgutlenmesi-passage inançlara saygıyı amaçlar arasında sayar. Yeni genel soru ayrıca kendi bölüm kapsamıyla incelenir; bu pasajdan kurum feshi veya finansman aracı üretilmez."
+    },
+    "03-v3-0304-tip-program-din-kurum-row": {
+      "conditions": "TİP Diyanet’in kapatılmasını ve din işlerinin bütün din ve mezheplere eşit mesafeli bir kurumda yeniden düzenlenmesini birlikte savunur.",
+      "explanation": "0304-tip-program-diyanet-p1 tam paragrafı, 0304-tip-program-diyanet-q eşit mesafeli kurum parçasını içerir; yalnız kapatma veya yalnız eşitlik ifadesine indirgenmez."
+    },
+    "03-v3-0307-yeni-yol-islam-inanc-orgutlenmesi-program": {
+      "conditions": "Yeni Yol’un bağımsız tam programı edinilemedi.",
+      "explanation": "0307-yeni-yol-missing-program gerçek arama açığıdır; diğer kurucu partilerin din politikaları Yeni Yol’a atfedilmez ve belge yokluğu tutum yokluğu değildir."
+    },
+    "0314-v4-emep-din-kurum-row": {
+      "conditions": "EMEP’in HTML program gövdesi tüm dinsel devlet kurumlarının feshi ve dini kurumlar ile cemaatlerin devlet finansmanına son verilmesini, dinsel alanın inananlara bırakılmasıyla birlikte önerir.",
+      "explanation": "0314-v4-emep-din-kurum-p G/A/7 tam özgün pasajıdır. Hüküm devlet kurumları ve kamu finansmanına ilişkindir; özel inanç örgütlerinin genel yasağı, İslam’a özgü ayrı kurum adı veya gerçekleşmiş uygulama çıkarılmaz."
+    },
+    "0314-v4-yeni-din-kurum-scope-row": {
+      "conditions": "Yeni Parti programında ilgili cumhuriyet ilkeleri ve kamucu eğitim bölümleri, İslam’a özgü kurum ile tüm dinsel devlet kurumları veya kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi.",
+      "explanation": "0314-v4-yeni-din-kurum-scope bu belirli bölümlerin sınırıdır. Laik eğitim ve kamusal eğitim sorumluluğunun cemaat/tarikat/vakıf/derneğe devredilmemesi eğitim örgütlenmesine ilişkindir; bundan bütün dinsel devlet kurumları veya finansmanı için ayrıca bir hüküm çıkarılmaz."
+    },
+    "0314-v4-iyi-din-kurum-scope-row": {
+      "conditions": "İYİ Parti programının temel amaçlar, kamu yönetimi ve ilgili haklar bölümleri, İslam’a özgü kurum veya tüm dinsel devlet kurumları/kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi.",
+      "explanation": "0314-v4-iyi-din-kurum-scope yalnız bu belirli bölümleri kapsar. İnançlara saygı, demokratik hukuk düzeni ve kamu yönetiminde tarafsızlık/eşitlik ifadeleri önemlidir fakat tek başına devlet dinsel kurumlarının feshi veya finansman değişikliği hükmü değildir."
+    },
+    "0314-v4-saadet-din-kurum-scope-row": {
+      "conditions": "Saadet arşiv programının siyaset anlayışı, ayrıştırıcı olmayan devlet ve demokrasi/insan hakları bölümleri, İslam’a özgü kurum veya tüm dinsel devlet kurumları/kamu finansmanı hakkında açık kurumsal araç sorusuyla incelendi.",
+      "explanation": "0314-v4-saadet-din-kurum-scope PDF indeks 4–6 ve 10’daki ilgili bölümlerle sınırlıdır. Din ve mezhep ayrımı olmadan özgürlük ve kamu hizmeti ilkeleri kurumsal fesih ya da finansman aracı olarak yeniden yorumlanmaz."
+    }
   }
 }
