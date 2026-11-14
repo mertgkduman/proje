@@ -31,7 +31,13 @@ try:
         mappings.append(dict(old_row_id=row['id'], new_row_id='03-v3-' + row['id'], topic_id=row['topic_id'], reason='', fields=fields, changes=changes))
 finally:
     db.close()
-draft = dict(contract_version=1, taxonomy_version=3, stage='partial', status='in_progress', note='Mekanik taslak; boş gerekçeler ve değişmemiş tanımlar kabulü engeller. Kaynak incelemesi ve yeni konular eksiktir.', base_release=release, records=records, row_mappings=mappings, superseded_rows=[])
+decisions = root / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-checks/row-replacement-decisions.json'
+replacements = json.loads(decisions.read_text(encoding='utf-8')) if decisions.exists() else []
+replaced_ids = {item['old_row_id'] for item in replacements}
+if len(replaced_ids) != len(replacements) or not replaced_ids <= {item['old_row_id'] for item in mappings}:
+    raise SystemExit('Açık kaynakçı satır değişimi seçili eski satırlarla uyuşmuyor')
+mappings = [item for item in mappings if item['old_row_id'] not in replaced_ids]
+draft = dict(contract_version=1, taxonomy_version=3, stage='partial', status='in_progress', note='Mekanik taslak; boş gerekçeler ve değişmemiş tanımlar kabulü engeller. Kaynak incelemesi ve yeni konular eksiktir.', base_release=release, records=records, row_mappings=mappings, superseded_rows=replacements)
 output = root / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-checks/taxonomy-mapping-draft.json'
 output.write_text(json.dumps(draft, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print('DRAFT_ONLY', len(records), len(mappings), output)

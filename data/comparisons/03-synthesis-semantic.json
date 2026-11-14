@@ -1005,6 +1005,17 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DBP Madde 14 eğitim ve etkinliklere özgü katılma ve talep hakkını, Yeni Parti pasajı amaç ve ilkeler çerçevesinde siyasal çalışmalara katılım hakkını gösterir; organ adaylığı genel katılım yerine kullanılmaz.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-074-row\",\"support\":\"passage\",\"refs\":[\"0314-dbp-uye-etkinlik-p\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-uye-siyasal-katilim-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-uye-siyasal-katilim-p\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-parti-ici-itiraz-dem-iyi",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:54:33+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM'in kısa adlı tüzüğü il disiplin kurulu kararlarına tebliğden sonra 10 günlük başvuru, İYİ tüzüğü ilgili kişi veya il yönetim kurulu için 15 günlük itiraz süresi belirtir; ikisi de üyelik başvurusunun reddi değildir.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"0314-dem-parti-karar-itiraz-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-mdk-itiraz-dem-passage\"]},{\"party_id\":\"iyi\",\"row_id\":\"0314-iyi-parti-karar-itiraz-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-disiplin-itiraz-passage\"]}]}"
+      }
     }
   ]
 }
