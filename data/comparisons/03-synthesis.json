@@ -2831,6 +2831,40 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM'in kısa adlı tüzüğü il disiplin kurulu kararlarına tebliğden sonra 10 günlük başvuru, İYİ tüzüğü ilgili kişi veya il yönetim kurulu için 15 günlük itiraz süresi belirtir; ikisi de üyelik başvurusunun reddi değildir.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"0314-dem-parti-karar-itiraz-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-mdk-itiraz-dem-passage\"]},{\"party_id\":\"iyi\",\"row_id\":\"0314-iyi-parti-karar-itiraz-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-disiplin-itiraz-passage\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-uyelik-reddi-dem-iyi",
+        "topic_id": "uyelik-kabul-itiraz",
+        "taxonomy_version": 3,
+        "text": "DEM kısa adlı tüzükte üyeliği reddedilenler 15 gün içinde bir üst organa yazılı itiraz edebilir; İYİ Parti tüzüğünde ilgili kişi ret kararının tebliğinden itibaren 15 gün içinde ilçenin bağlı olduğu il yönetim kuruluna itiraz edebilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-uyelik-reddi-dem-iyi",
+        "passage_id": "0305-dem-uye-itiraz-dem-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-uyelik-reddi-dem-iyi",
+        "passage_id": "0306-iyi-uyelik-kabul-itiraz-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-uyelik-reddi-dem-iyi",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:56:15+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM üyeliği reddedilenlere 15 gün içinde bir üst organa yazılı itiraz, İYİ ret kararının tebliğinden itibaren 15 gün içinde ilgili il yönetim kuruluna itiraz hakkı tanır; bu hükümler disiplin kararı itirazından ayrıdır.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-uye-itiraz-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-uye-itiraz-dem-passage\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-uyelik-kabul-itiraz-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-uyelik-kabul-itiraz-passage\"]}]}"
+      }
     }
   ]
 }
