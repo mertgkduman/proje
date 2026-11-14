@@ -64,6 +64,56 @@ def fixture():
 
 
 class SynthesisContractTest(unittest.TestCase):
+    def test_historical_v3_typed_synthesis_keeps_its_contract_under_v4(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        data['comparison_contract'][0].update(version=2, taxonomy_version=4, stage='partial')
+        for table in ('comparison_topic', 'comparison_row', 'comparison_synthesis'):
+            for record in data[table]: record['taxonomy_version'] = 3
+        data['topic'].append(dict(id='merkez-yonetimi-secimi', taxonomy_version=3, status='verified'))
+        data['topic_basis'].append(dict(topic_id='merkez-yonetimi-secimi', taxonomy_version=3,
+            passage_id='03-tip-pm', source_role='charter', rationale='Gerçek pasaj'))
+        row = next(r for r in data['comparison_row'] if r['party_id'] == 'iyi')
+        row.update(state='no_explicit_statement', scope_id='scoped-iyi')
+        data['comparison_field'] = [f for f in data['comparison_field'] if f['row_id'] != row['id']]
+        data['comparison_change'] = [c for c in data['comparison_change'] if c['row_id'] != row['id']]
+        data['comparison_review_scope'].append(dict(id='scoped-iyi', party_id='iyi',
+            version_id=row['version_id'], sections='Seçim maddesi', query_terms='seçim',
+            reviewed_at='2026-11-14T00:00:00+00:00', result='no_explicit_statement', reason='dar kapsam'))
+        s = data['comparison_synthesis'][0]
+        data['comparison_synthesis_evidence'] = [e for e in data['comparison_synthesis_evidence']
+                                                 if e['passage_id'] == '03-tip-pm']
+        decision = dict(contract_version=2, claim_type='one_positive', explanation='Gerçek pasaj ve kapsam.',
+            sides=[dict(party_id='tip', row_id='03-tip-merkez', support='passage', refs=['03-tip-pm']),
+                   dict(party_id='iyi', row_id=row['id'], support='scope', refs=['scoped-iyi'])])
+        data['comparison_semantic_review'].append(dict(subject_kind='comparison_synthesis', subject_id=s['id'],
+            reviewer_kind='agent', reviewed_at='2026-11-14T00:00:00+00:00', result='reviewed',
+            reason=json.dumps(decision, ensure_ascii=False)))
+        self.assertTrue(arsiv.validate_comparisons(data))
+        for mutation in ('wrong_party', 'wrong_topic', 'wrong_proof'):
+            bad = copy.deepcopy(data)
+            claim = json.loads(bad['comparison_semantic_review'][-1]['reason'])
+            if mutation == 'wrong_party': claim['sides'][0]['party_id'] = 'iyi'
+            elif mutation == 'wrong_topic':
+                next(r for r in bad['comparison_row'] if r['id'] == '03-tip-merkez')['topic_id'] = 'other'
+            else: claim['sides'][1]['refs'] = ['wrong-scope']
+            bad['comparison_semantic_review'][-1]['reason'] = json.dumps(claim, ensure_ascii=False)
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError): arsiv.validate_comparisons(bad)
+        tip = next(r for r in data['comparison_row'] if r['id'] == '03-tip-merkez')
+        tip.update(state='no_explicit_statement', scope_id='scoped-tip')
+        data['comparison_field'] = [f for f in data['comparison_field'] if f['row_id'] != tip['id']]
+        data['comparison_change'] = [c for c in data['comparison_change'] if c['row_id'] != tip['id']]
+        data['comparison_review_scope'].append(dict(id='scoped-tip', party_id='tip',
+            version_id=tip['version_id'], sections='Seçim maddesi', query_terms='seçim',
+            reviewed_at='2026-11-14T00:00:00+00:00', result='no_explicit_statement', reason='dar kapsam'))
+        data['comparison_synthesis_evidence'].clear()
+        decision.update(claim_type='status_only', sides=[
+            dict(party_id='tip', row_id=tip['id'], support='scope', refs=['scoped-tip']),
+            dict(party_id='iyi', row_id=row['id'], support='scope', refs=['scoped-iyi'])])
+        data['comparison_semantic_review'][-1]['reason'] = json.dumps(decision, ensure_ascii=False)
+        self.assertTrue(arsiv.validate_comparisons(data))
+        data['comparison_review_scope'][-1]['result'] = 'not_researched'
+        with self.assertRaises(ValueError): arsiv.validate_comparisons(data)
+
     def test_versioned_contract_accepts_one_passage_with_real_scoped_status(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         data['comparison_contract'][0].update(version=2, taxonomy_version=3, stage='partial')
