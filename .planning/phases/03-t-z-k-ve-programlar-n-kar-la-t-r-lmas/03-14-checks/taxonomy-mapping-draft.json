@@ -32,11 +32,11 @@
       "kind": "topic",
       "values": {
         "id": "temel-yurttaslik-geliri",
-        "label": "Temel yurttaşlık geliri",
+        "label": "Temel gelir ve gelir yardımları",
         "taxonomy_version": 3,
         "valid_from": "2026-11-13",
         "status": "verified",
-        "change_reason": "Açık kaynak metninde ayrı bir inceleme konusu bulunur."
+        "change_reason": "Sürüm 2 yalnız geliri olmayan yurttaşları tanımlarken gerçek kaynaklarda her vatandaş, doğma/çalışma/vergi koşulları, iş kaybı ve yaşlılık gibi farklı kapsamlı gelirler vardır. Genel refah ve yalnız nitel yaşam güvencesi olumlu gelir ödemesi olarak taşınmaz; kaynak ödeme biçimini belirtmiyorsa nakit olduğu varsayılmaz."
       }
     },
     {
@@ -6381,7 +6381,7 @@
         "domain": "program",
         "parent_topic_id": null,
         "order_index": 3,
-        "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.",
+        "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
         "applicable_levels": "ulusal",
         "basis_kind": "supplement"
       }
@@ -10615,22 +10615,6 @@
       "changes": []
     },
     {
-      "old_row_id": "03-v2-tip-temel-yurttaslik-geliri",
-      "new_row_id": "03-v3-03-v2-tip-temel-yurttaslik-geliri",
-      "topic_id": "temel-yurttaslik-geliri",
-      "reason": "",
-      "fields": [],
-      "changes": []
-    },
-    {
-      "old_row_id": "03-v2-iyi-temel-yurttaslik-geliri",
-      "new_row_id": "03-v3-03-v2-iyi-temel-yurttaslik-geliri",
-      "topic_id": "temel-yurttaslik-geliri",
-      "reason": "",
-      "fields": [],
-      "changes": []
-    },
-    {
       "old_row_id": "03-v2-yeni-yol-temel-yurttaslik-geliri",
       "new_row_id": "03-v3-03-v2-yeni-yol-temel-yurttaslik-geliri",
       "topic_id": "temel-yurttaslik-geliri",
@@ -10641,14 +10625,6 @@
     {
       "old_row_id": "03-v2-dbp-temel-yurttaslik-geliri",
       "new_row_id": "03-v3-03-v2-dbp-temel-yurttaslik-geliri",
-      "topic_id": "temel-yurttaslik-geliri",
-      "reason": "",
-      "fields": [],
-      "changes": []
-    },
-    {
-      "old_row_id": "03-v2-emep-temel-yurttaslik-geliri",
-      "new_row_id": "03-v3-03-v2-emep-temel-yurttaslik-geliri",
       "topic_id": "temel-yurttaslik-geliri",
       "reason": "",
       "fields": [],
@@ -23946,19 +23922,6 @@
         {
           "old_id": "0304-tip-program-guvenlik-ana-field",
           "new_id": "03-v3-0304-tip-program-guvenlik-ana-field"
-        }
-      ],
-      "changes": []
-    },
-    {
-      "old_row_id": "0304-tip-program-context-gelir-row",
-      "new_row_id": "03-v3-0304-tip-program-context-gelir-row",
-      "topic_id": "temel-yurttaslik-geliri",
-      "reason": "",
-      "fields": [
-        {
-          "old_id": "0304-tip-program-context-gelir-field",
-          "new_id": "03-v3-0304-tip-program-context-gelir-field"
         }
       ],
       "changes": []
@@ -38398,19 +38361,6 @@
         {
           "old_id": "0306-iyi-program-is-denetimi-instrument-field",
           "new_id": "03-v3-0306-iyi-program-is-denetimi-instrument-field"
-        }
-      ],
-      "changes": []
-    },
-    {
-      "old_row_id": "0306-iyi-program-scope-temel-yurttaslik-geliri-context-row",
-      "new_row_id": "03-v3-0306-iyi-program-scope-temel-yurttaslik-geliri-context-row",
-      "topic_id": "temel-yurttaslik-geliri",
-      "reason": "",
-      "fields": [
-        {
-          "old_id": "0306-iyi-program-scope-temel-yurttaslik-geliri-field",
-          "new_id": "03-v3-0306-iyi-program-scope-temel-yurttaslik-geliri-field"
         }
       ],
       "changes": []
@@ -53809,19 +53759,6 @@
       "changes": []
     },
     {
-      "old_row_id": "0309-emep-program-059-1-row",
-      "new_row_id": "03-v3-0309-emep-program-059-1-row",
-      "topic_id": "temel-yurttaslik-geliri",
-      "reason": "",
-      "fields": [
-        {
-          "old_id": "0309-emep-program-059-1-field",
-          "new_id": "03-v3-0309-emep-program-059-1-field"
-        }
-      ],
-      "changes": []
-    },
-    {
       "old_row_id": "0309-emep-program-060-0-row",
       "new_row_id": "03-v3-0309-emep-program-060-0-row",
       "topic_id": "kadin-istihdami",
@@ -55090,19 +55027,6 @@
         {
           "old_id": "0309-emep-program-scope-context-033-field",
           "new_id": "03-v3-0309-emep-program-scope-context-033-field"
-        }
-      ],
-      "changes": []
-    },
-    {
-      "old_row_id": "0309-emep-program-scope-context-034-row",
-      "new_row_id": "03-v3-0309-emep-program-scope-context-034-row",
-      "topic_id": "temel-yurttaslik-geliri",
-      "reason": "",
-      "fields": [
-        {
-          "old_id": "0309-emep-program-scope-context-034-field",
-          "new_id": "03-v3-0309-emep-program-scope-context-034-field"
         }
       ],
       "changes": []
@@ -68606,6 +68530,55 @@
         "0314-saadet-nakit-gelir-row"
       ],
       "reason": "Eski satır hem doğma, çalışma ve vergi koşullu gerçek ödemeyi hem yalnız genel refah ilkesini kanıt alanı olarak taşıyordu. Genişletilmiş nakit sorusuna yalnız koşullu ödeme alanı seçilir; genel refah bağlamı eski arşivde korunur ve olumlu nakit yanıtına dönüştürülmez."
+    },
+    {
+      "old_row_id": "03-v2-emep-temel-yurttaslik-geliri",
+      "replacement_ids": [
+        "0314-emep-nakit-gelir-row"
+      ],
+      "reason": "Eski yokluk kapsamı yalnız tüm yurttaşlara veya gelirsizlere koşulsuz temel geliri inceliyordu; genişletilmiş soruda iş kaybı ve ölüm sonrası düzenli gelir gerçek olumlu ve koşullu bir araçtır. Eski dar kapsam arşivde korunur."
+    },
+    {
+      "old_row_id": "0309-emep-program-059-1-row",
+      "replacement_ids": [
+        "0314-emep-nakit-gelir-row"
+      ],
+      "reason": "İş kaybı ve ölüm sonrası gerçek düzenli gelir aynı özgün bulgu ve pasajlarla yeni tanıma özel incelemeyle taşınır; aynı belge ve hüküm ikinci olumlu satır olarak çoğaltılmaz."
+    },
+    {
+      "old_row_id": "0309-emep-program-scope-context-034-row",
+      "replacement_ids": [
+        "0314-emep-nakit-gelir-row"
+      ],
+      "reason": "Önceki kanıt alanı koşulsuz gelir bakımından dar yokluk açıklamasını iş kaybı sonrası gerçek gelirle birleştiriyordu. Yeni tanımda yalnız doğrudan desteklenen gelir alanı seçilir; eski bağlam ve kapsam arşivde kalır."
+    },
+    {
+      "old_row_id": "03-v2-iyi-temel-yurttaslik-geliri",
+      "replacement_ids": [
+        "0314-iyi-asgari-duzenli-gelir-row"
+      ],
+      "reason": "Önceki kapsam yalnız geliri olmayan yurttaşların temel gelirine dairdi; genişletilmiş asgari veya düzenli parasal gelir sorusunun ilgili program bölümleri özgül biçimde yeniden incelendi. Genç çiftçi maaşı ve afet fark primi, süre ve asgari düzey varsayılmadan kapsam açıklamasında korunur."
+    },
+    {
+      "old_row_id": "0306-iyi-program-scope-temel-yurttaslik-geliri-context-row",
+      "replacement_ids": [
+        "0314-iyi-asgari-duzenli-gelir-row"
+      ],
+      "reason": "Genel refah ve geçim kaynakları bağlamı genişletilmiş soruda olumlu nakit ödeme değildir; gerçek incelenmiş bölümlere bağlı yeni dar kapsam seçilir, eski bulgu ve pasaj arşivde korunur."
+    },
+    {
+      "old_row_id": "03-v2-tip-temel-yurttaslik-geliri",
+      "replacement_ids": [
+        "0314-tip-asgari-duzenli-gelir-row"
+      ],
+      "reason": "Eski kapsam yalnız tüm yurttaşlara veya gelirsizlere düzenli temel gelir sorusuydu; genişletilmiş sorunun çalışma, sosyal haklar, refah ve sosyalist toplum bölümleri özgül biçimde yeniden okundu. Nitel yaşam güvencesi nakit ödeme sayılmadı."
+    },
+    {
+      "old_row_id": "0304-tip-program-context-gelir-row",
+      "replacement_ids": [
+        "0314-tip-asgari-duzenli-gelir-row"
+      ],
+      "reason": "Çalışamayanların insanca yaşaması, kaynağın belirttiği sosyalist toplum koşulunda nitel güvencedir; nakit ödeme olarak işaretlenmez. Yeni dar kapsamda bu gerçek bağlam açıkça korunur, eski kaynaklı bulgu silinmez."
     }
   ]
 }

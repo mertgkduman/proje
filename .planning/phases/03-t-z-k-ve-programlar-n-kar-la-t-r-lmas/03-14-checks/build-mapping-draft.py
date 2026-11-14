@@ -38,6 +38,11 @@ for decision in definitions:
     if len(target) != 1 or not decision['definition'] or not decision['reason']:
         raise SystemExit('Açık kaynakçı tanım kararı eksik veya belirsiz')
     target[0]['definition'] = decision['definition']
+    if decision.get('label'):
+        labels = [entry['values'] for entry in records if entry['kind'] == 'topic' and entry['values']['id'] == decision['topic_id']]
+        if len(labels) != 1: raise SystemExit('Kaynakçı konu etiketi belirsiz')
+        labels[0]['label'] = decision['label']
+        labels[0]['change_reason'] = decision['reason']
 new_topic_file = root / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-checks/new-topic-decisions.json'
 if new_topic_file.exists():
     records.extend(json.loads(new_topic_file.read_text(encoding='utf-8')))

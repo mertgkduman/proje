@@ -7,177 +7,2928 @@
   "records": [
     {
       "kind": "passage",
-      "values": {"id": "0314-iyi-tibbi-uretim-p", "version_id": "0205-iyi-program-page-v1", "exact": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların, millî üretimle karşılanması için alt yapılar hızla oluşturulacak aşı ile korunabilir hastalıklara karşı aşılama hizmetleri aralıksız ve aksatılmadan uygulanacaktır.", "prefix": null, "suffix": null, "article": null, "section": "Sağlık", "pdf_page_index": null, "printed_page": null}
+      "values": {
+        "id": "0314-iyi-tibbi-uretim-p",
+        "version_id": "0205-iyi-program-page-v1",
+        "exact": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların, millî üretimle karşılanması için alt yapılar hızla oluşturulacak aşı ile korunabilir hastalıklara karşı aşılama hizmetleri aralıksız ve aksatılmadan uygulanacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sağlık",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
     },
     {
       "kind": "comparison_row",
-      "values": {"id": "0314-iyi-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "iyi", "level": "ulusal", "organ": "Program", "version_id": "0205-iyi-program-page-v1", "alternative_group": null, "source_role": "program", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "Programın sağlık bölümünde bakteriyel ve viral aşılar için millî üretim altyapısı açıkça ele alınır."}
-    },
-    {"kind": "finding", "values": {"id": "0314-iyi-tibbi-uretim-s", "party_id": "iyi", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların millî üretimle karşılanması için altyapı oluşturulması ve aşılamanın sürdürülmesi öngörülür.", "pair_id": "0314-iyi-tibbi-uretim-pair"}},
-    {"kind": "finding", "values": {"id": "0314-iyi-tibbi-uretim-q", "party_id": "iyi", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların, millî üretimle karşılanması için alt yapılar hızla oluşturulacak aşı ile korunabilir hastalıklara karşı aşılama hizmetleri aralıksız ve aksatılmadan uygulanacaktır.", "pair_id": "0314-iyi-tibbi-uretim-pair"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-iyi-tibbi-uretim-s", "passage_id": "0314-iyi-tibbi-uretim-p", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-iyi-tibbi-uretim-q", "passage_id": "0314-iyi-tibbi-uretim-p", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-iyi-tibbi-uretim-f", "row_id": "0314-iyi-tibbi-uretim-row", "field": "instrument", "summary_finding_id": "0314-iyi-tibbi-uretim-s", "quote_finding_id": "0314-iyi-tibbi-uretim-q", "condition_key": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların millî üretim altyapısı"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-iyi-tibbi-uretim-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:26:44+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların millî üretim altyapısı: 0314-iyi-tibbi-uretim-p bu aşıların millî üretim altyapısını ve aşılamanın sürdürülmesini belirtir; bütün ilaç veya cihazlarda bağımsızlık iddiası değildir."}},
-    {
-      "kind": "comparison_row",
-      "values": {"id": "0314-yeni-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "yeni-parti", "level": "ulusal", "organ": "Program", "version_id": "epm-program-v1", "alternative_group": null, "source_role": "program", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "Programın sağlık bölümündeki üretim kapasitesi hükmü bu konuyu açıkça ele alır."}
+      "values": {
+        "id": "0314-iyi-tibbi-uretim-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "iyi",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": "0205-iyi-program-page-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Programın sağlık bölümünde bakteriyel ve viral aşılar için millî üretim altyapısı açıkça ele alınır."
+      }
     },
     {
       "kind": "finding",
-      "values": {"id": "0314-yeni-tibbi-uretim-s", "party_id": "yeni-parti", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihaz üretiminde yerli kapasitenin artırılması öngörülür.", "pair_id": "0314-yeni-tibbi-uretim-pair"}
+      "values": {
+        "id": "0314-iyi-tibbi-uretim-s",
+        "party_id": "iyi",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların millî üretimle karşılanması için altyapı oluşturulması ve aşılamanın sürdürülmesi öngörülür.",
+        "pair_id": "0314-iyi-tibbi-uretim-pair"
+      }
     },
     {
       "kind": "finding",
-      "values": {"id": "0314-yeni-tibbi-uretim-q", "party_id": "yeni-parti", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihaz üretiminde yerli kapasite artırılacaktır.", "pair_id": "0314-yeni-tibbi-uretim-pair"}
+      "values": {
+        "id": "0314-iyi-tibbi-uretim-q",
+        "party_id": "iyi",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların, millî üretimle karşılanması için alt yapılar hızla oluşturulacak aşı ile korunabilir hastalıklara karşı aşılama hizmetleri aralıksız ve aksatılmadan uygulanacaktır.",
+        "pair_id": "0314-iyi-tibbi-uretim-pair"
+      }
     },
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-yeni-tibbi-uretim-s", "passage_id": "0303-epm-program-detail-sagliga-erisim-p5", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-yeni-tibbi-uretim-q", "passage_id": "0303-epm-program-detail-sagliga-erisim-p5", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-yeni-tibbi-uretim-f", "row_id": "0314-yeni-tibbi-uretim-row", "field": "target", "summary_finding_id": "0314-yeni-tibbi-uretim-s", "quote_finding_id": "0314-yeni-tibbi-uretim-q", "condition_key": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihazlarda yerli kapasite artışı"}},
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-iyi-tibbi-uretim-s",
+        "passage_id": "0314-iyi-tibbi-uretim-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-iyi-tibbi-uretim-q",
+        "passage_id": "0314-iyi-tibbi-uretim-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-iyi-tibbi-uretim-f",
+        "row_id": "0314-iyi-tibbi-uretim-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-iyi-tibbi-uretim-s",
+        "quote_finding_id": "0314-iyi-tibbi-uretim-q",
+        "condition_key": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların millî üretim altyapısı"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-iyi-ilac-cihaz-sanayi-p",
+        "version_id": "0205-iyi-program-page-v1",
+        "exact": "Millî ilaç, tıbbi cihaz ve malzeme sanayi desteklenecek, teşvikler artırılarak dışarıya bağımlılık önlenecektir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Sağlık",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-iyi-ilac-cihaz-sanayi-s",
+        "party_id": "iyi",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Millî ilaç, tıbbi cihaz ve malzeme sanayisinin desteklenmesi ve teşviklerle dışa bağımlılığın önlenmesi önerilir.",
+        "pair_id": "0314-iyi-ilac-cihaz-sanayi-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-iyi-ilac-cihaz-sanayi-q",
+        "party_id": "iyi",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Millî ilaç, tıbbi cihaz ve malzeme sanayi desteklenecek, teşvikler artırılarak dışarıya bağımlılık önlenecektir.",
+        "pair_id": "0314-iyi-ilac-cihaz-sanayi-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-iyi-ilac-cihaz-sanayi-s",
+        "passage_id": "0314-iyi-ilac-cihaz-sanayi-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-iyi-ilac-cihaz-sanayi-q",
+        "passage_id": "0314-iyi-ilac-cihaz-sanayi-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-iyi-ilac-cihaz-sanayi-f",
+        "row_id": "0314-iyi-tibbi-uretim-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-iyi-ilac-cihaz-sanayi-s",
+        "quote_finding_id": "0314-iyi-ilac-cihaz-sanayi-q",
+        "condition_key": "Millî ilaç, tıbbi cihaz ve malzeme sanayisinin teşviki"
+      }
+    },
     {
       "kind": "comparison_semantic_review",
-      "values": {"subject_kind": "comparison_row", "subject_id": "0314-yeni-tibbi-uretim-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:26:44+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihazlarda yerli kapasite artışı: 0303-epm-program-detail-sagliga-erisim-p5 bu ürünlerde kapasiteyi artırma hedefini doğrudan belirtir; tam bağımsızlık veya gerçekleşmiş sonuç söylemez."}
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-iyi-tibbi-uretim-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:27:24+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bulaşıcı hastalıklara karşı bakteriyel ve viral aşı üretim altyapısı ile millî ilaç, cihaz ve malzeme sanayisinin teşviki: 0314-iyi-tibbi-uretim-p belirli aşıların üretim altyapısını, 0314-iyi-ilac-cihaz-sanayi-p ise ilaç, cihaz ve malzeme sanayisi için teşvik ve dışa bağımlılığı önleme hedefini ayrı belirtir."
+      }
     },
     {
       "kind": "comparison_row",
-      "values": {"id": "0314-saadet-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "saadet", "level": "ulusal", "organ": "Program", "version_id": "0209-saadet-current-program-v1", "alternative_group": null, "source_role": "program", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "Sağlık bölümündeki tıbbi cihaz, ilaç ve aşı hükmü bu konuyu açıkça ele alır."}
+      "values": {
+        "id": "0314-yeni-tibbi-uretim-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "yeni-parti",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": "epm-program-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Programın sağlık bölümündeki üretim kapasitesi hükmü bu konuyu açıkça ele alır."
+      }
     },
     {
       "kind": "finding",
-      "values": {"id": "0314-saadet-tibbi-uretim-s", "party_id": "saadet", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "Tıbbi cihaz, ilaç ve aşıda dışa bağımlılığın kaldırılması hedeflenir.", "pair_id": "0314-saadet-tibbi-uretim-pair"}
+      "values": {
+        "id": "0314-yeni-tibbi-uretim-s",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihaz üretiminde yerli kapasitenin artırılması öngörülür.",
+        "pair_id": "0314-yeni-tibbi-uretim-pair"
+      }
     },
     {
       "kind": "finding",
-      "values": {"id": "0314-saadet-tibbi-uretim-q", "party_id": "saadet", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "Tıbbi teknolojide tıbbi cihaz, ilaç ve aşıda dışa bağımlılık ortadan kaldırılacaktır.", "pair_id": "0314-saadet-tibbi-uretim-pair"}
+      "values": {
+        "id": "0314-yeni-tibbi-uretim-q",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihaz üretiminde yerli kapasite artırılacaktır.",
+        "pair_id": "0314-yeni-tibbi-uretim-pair"
+      }
     },
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-saadet-tibbi-uretim-s", "passage_id": "0311-saadet-backfill-05-p", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-saadet-tibbi-uretim-q", "passage_id": "0311-saadet-backfill-05-p", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-saadet-tibbi-uretim-f", "row_id": "0314-saadet-tibbi-uretim-row", "field": "target", "summary_finding_id": "0314-saadet-tibbi-uretim-s", "quote_finding_id": "0314-saadet-tibbi-uretim-q", "condition_key": "Tıbbi cihaz, ilaç ve aşıda dışa bağımlılığın kaldırılması"}},
-    {"kind": "finding", "values": {"id": "0314-saadet-ilac-uretim-s", "party_id": "saadet", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "İlaç sanayisinin geliştirilmesi ve yerli ilaç üretimi için gerekli bilimsel çalışmaların teşvik edilmesi önerilir.", "pair_id": "0314-saadet-ilac-uretim-pair"}},
-    {"kind": "finding", "values": {"id": "0314-saadet-ilac-uretim-q", "party_id": "saadet", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "İlaç sanayimiz geliştirilerek yerli ilaçların üretilmesi için gerekli bilimsel çalışmalar\nteşvik edilerek desteklenecektir.", "pair_id": "0314-saadet-ilac-uretim-pair"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-saadet-ilac-uretim-s", "passage_id": "0311-saadet-p2-172-teknoloji-inovasyon-p", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-saadet-ilac-uretim-q", "passage_id": "0311-saadet-p2-172-teknoloji-inovasyon-p", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-saadet-ilac-uretim-f", "row_id": "0314-saadet-tibbi-uretim-row", "field": "instrument", "summary_finding_id": "0314-saadet-ilac-uretim-s", "quote_finding_id": "0314-saadet-ilac-uretim-q", "condition_key": "Yerli ilaç üretimi için bilimsel çalışmaların teşviki"}},
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-tibbi-uretim-s",
+        "passage_id": "0303-epm-program-detail-sagliga-erisim-p5",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-tibbi-uretim-q",
+        "passage_id": "0303-epm-program-detail-sagliga-erisim-p5",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-yeni-tibbi-uretim-f",
+        "row_id": "0314-yeni-tibbi-uretim-row",
+        "field": "target",
+        "summary_finding_id": "0314-yeni-tibbi-uretim-s",
+        "quote_finding_id": "0314-yeni-tibbi-uretim-q",
+        "condition_key": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihazlarda yerli kapasite artışı"
+      }
+    },
     {
       "kind": "comparison_semantic_review",
-      "values": {"subject_kind": "comparison_row", "subject_id": "0314-saadet-tibbi-uretim-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Tıbbi cihaz, ilaç ve aşıda dışa bağımlılığın kaldırılması ve yerli ilaç üretimi için bilimsel çalışma: 0311-saadet-backfill-05-p dışa bağımlılığı ortadan kaldırmayı hedefler; 0311-saadet-p2-172-teknoloji-inovasyon-p yerli ilaç üretimi için bilimsel çalışmaların teşvikini ayrıca belirtir. Uygulama sonucu veya sayısal takvim söylenmez."}
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-yeni-tibbi-uretim-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:26:44+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihazlarda yerli kapasite artışı: 0303-epm-program-detail-sagliga-erisim-p5 bu ürünlerde kapasiteyi artırma hedefini doğrudan belirtir; tam bağımsızlık veya gerçekleşmiş sonuç söylemez."
+      }
     },
-    {"kind": "passage", "values": {"id": "0314-bdp-duzenli-nakit-p1", "version_id": "0207-dbp-bdp-program-v1", "exact": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.", "prefix": null, "suffix": null, "article": null, "section": "3. Sosyal Güvenlik – Sosyal Haklar", "pdf_page_index": null, "printed_page": null}},
-    {"kind": "passage", "values": {"id": "0314-bdp-duzenli-nakit-p2", "version_id": "0207-dbp-bdp-program-wordpress-v1", "exact": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.", "prefix": null, "suffix": null, "article": null, "section": "3. Sosyal Güvenlik – Sosyal Haklar", "pdf_page_index": null, "printed_page": null}},
-    {"kind": "finding", "values": {"id": "0314-bdp-duzenli-nakit-s1", "party_id": "dbp", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "Tarihsel BDP programı kopyası, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyen hak temelli düzenli nakdi yardımlar önerir.", "pair_id": "0314-bdp-duzenli-nakit-pair1"}},
-    {"kind": "finding", "values": {"id": "0314-bdp-duzenli-nakit-q1", "party_id": "dbp", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.", "pair_id": "0314-bdp-duzenli-nakit-pair1"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-duzenli-nakit-s1", "passage_id": "0314-bdp-duzenli-nakit-p1", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-duzenli-nakit-q1", "passage_id": "0314-bdp-duzenli-nakit-p1", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-bdp-duzenli-nakit-f1", "row_id": "03-v3-0308-dbp-program-061-0-row", "field": "instrument", "summary_finding_id": "0314-bdp-duzenli-nakit-s1", "quote_finding_id": "0314-bdp-duzenli-nakit-q1", "condition_key": "Öncelikle çocuk ve yaşlı yoksulluğuyla mücadele"}},
-    {"kind": "finding", "values": {"id": "0314-bdp-duzenli-nakit-s2", "party_id": "dbp", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "İkinci tarihsel BDP programı kopyası, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyen hak temelli düzenli nakdi yardımlar önerir.", "pair_id": "0314-bdp-duzenli-nakit-pair2"}},
-    {"kind": "finding", "values": {"id": "0314-bdp-duzenli-nakit-q2", "party_id": "dbp", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.", "pair_id": "0314-bdp-duzenli-nakit-pair2"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-duzenli-nakit-s2", "passage_id": "0314-bdp-duzenli-nakit-p2", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-duzenli-nakit-q2", "passage_id": "0314-bdp-duzenli-nakit-p2", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-bdp-duzenli-nakit-f2", "row_id": "03-v3-0308-dbp-program-061-1-row", "field": "instrument", "summary_finding_id": "0314-bdp-duzenli-nakit-s2", "quote_finding_id": "0314-bdp-duzenli-nakit-q2", "condition_key": "Öncelikle çocuk ve yaşlı yoksulluğuyla mücadele"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-0308-dbp-program-061-0-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:08:40+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım: 0308-dbp-program-061-0-passage yaşlı aylığını, 0314-bdp-duzenli-nakit-p1 ayrı düzenli yardımı belirtir. 2022 kanun numarasıdır; tarihsel BDP kopyası güncel DBP programı değildir."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-0308-dbp-program-061-1-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:08:40+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım: 0308-dbp-program-061-1-passage yaşlı aylığını, 0314-bdp-duzenli-nakit-p2 ikinci tarihsel kopyada ayrı düzenli yardımı belirtir. 2022 kanun numarasıdır; kopyalar iki bağımsız öneri sayılmaz."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-03-v2-yeni-parti-temel-yurttaslik-geliri", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Her vatandaş için temel vatandaşlık geliri: 0303-epm-program-temel-yurttaslik-geliri-p1 her vatandaşa insanca yaşam koşullarını güvenceye alacak temel vatandaşlık geliri öngörür; ödeme tutarı veya gelir eşiği belirtmez."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-03-v2-dem-temel-yurttaslik-geliri", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Geliri olmayan tüm yurttaşlar ve kongre eki: 03-dem-gelir bu gruba Temel Yurttaşlık Geliri sağlama hedefini belirtir; bağımsız güncel program yerine geçirilmez."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-03-v2-dem-gelir-program-eksik", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Bağımsız güncel DEM programı elde edilmedi: 0204-dem-missing-current-program gerçek Program aramasına bağlıdır; kongre ekindeki gelir hükmü ayrı kaynak olarak korunur."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-03-v2-dbp-temel-yurttaslik-geliri", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Bağımsız güncel DBP programı elde edilmedi: 0207-dbp-missing-current-program gerçek Program aramasına bağlıdır; tarihsel BDP kopyalarındaki aylık ve yardım ayrıca gösterilir."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-03-v2-yeni-yol-temel-yurttaslik-geliri", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Bağımsız Yeni Yol tam programı bulunamadı: 0206-yeni-yol-missing-program kendi Program aramasına bağlıdır; bu belge durumu parti tutumu olarak yorumlanmaz."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-03-v2-demokrat-temel-yurttaslik-geliri", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Her vatandaş için iş, aş ve asgari nakit gelir desteği: 0313-demokrat-068-temel-yurttaslik-geliri-p bu kapsamı belirtir; eşit ödeme, gelir eşiği veya düzenlilik şartı söylemez."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-0309-emep-program-pdf-003-1-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Kongreye sunulan öneride işsiz, yaşlı ve malullere primsiz devlet bütçesi aylığı: 0309-emep-program-pdf-003-1-passage bu belirli grupları ve finansmanı belirtir; önerinin kabulü bilinmez."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "03-v3-0309-emep-program-pdf-009-2-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:10:12+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Kongreye sunulan öneride çalışamayan engellilere aylık: 0309-emep-program-pdf-009-2-passage insan onuruna yaraşır yaşama olanak tanıyan aylığı belirtir; bütün engellilere veya tüm yurttaşlara ödeme ve kabul sonucu çıkarılmaz."}},
-    {"kind": "comparison_row", "values": {"id": "0314-saadet-nakit-gelir-row", "topic_id": "temel-yurttaslik-geliri", "taxonomy_version": 3, "party_id": "saadet", "level": "ulusal", "organ": "Program", "version_id": "0209-saadet-current-program-v1", "alternative_group": null, "source_role": "program", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "Genişletilmiş nakit gelir sorusuna ülkede doğma, ülke için çalışma ve vergi ödeme koşullu gerçek ödeme pasajı bağlanır; yalnız genel refah ilkesi olumlu nakit yanıt olarak taşınmaz."}},
-    {"kind": "comparison_field", "values": {"id": "0314-saadet-nakit-gelir-f", "row_id": "0314-saadet-nakit-gelir-row", "field": "instrument", "summary_finding_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-s", "quote_finding_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-q", "condition_key": "Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-saadet-nakit-gelir-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:05:58+00:00", "result": "reviewed", "reason": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz. Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar: 0311-saadet-p2-073-temel-yurttaslik-geliri-p bu üç koşuldaki vatandaşlara Temel Vatandaşlık Geliri ödenmesini belirtir; genel refah ilkesi ödeme şartlarını kaldırmaz."}},
-    {"kind": "finding", "values": {"id": "0314-yeni-platform-emek-s", "party_id": "yeni-parti", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "Kurye, yazılımcı ve çağrı merkezi gibi dijital platform çalışanları için sigorta, iş güvenliği ve örgütlenme hakları başta olmak üzere hakları güvenceye alacak özel düzenlemeler önerilir.", "pair_id": "0314-yeni-platform-emek-pair"}},
-    {"kind": "finding", "values": {"id": "0314-yeni-platform-emek-q", "party_id": "yeni-parti", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "Dijital platform çalışanlarının haklarını korumak hedefiyle platform işçilerine (kurye, yazılımcı, çağrı merkezi vb.) dönük sigorta, iş güvenliği ve örgütlenme hakları başta olmak üzere tüm haklarının güvence altına alınması için özel düzenlemeler yapılacaktır.", "pair_id": "0314-yeni-platform-emek-pair"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-yeni-platform-emek-s", "passage_id": "0303-epm-program-detail-guvencesiz-istihdam-p5", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-yeni-platform-emek-q", "passage_id": "0303-epm-program-detail-guvencesiz-istihdam-p5", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-yeni-platform-emek-f", "row_id": "03-v3-0303-epm-program-detail-guvencesiz-istihdam-row", "field": "instrument", "summary_finding_id": "0314-yeni-platform-emek-s", "quote_finding_id": "0314-yeni-platform-emek-q", "condition_key": "Kurye, yazılımcı ve çağrı merkezi gibi dijital platform çalışanları"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_field", "subject_id": "0314-yeni-platform-emek-f", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T19:05:08+00:00", "result": "reviewed", "reason": "Güvencesiz istihdam konusunda 0303-epm-program-detail-guvencesiz-istihdam-p5 platform işçilerini örnekleriyle açıkça adlandırır ve sigorta, iş güvenliği, örgütlenme başta hakların güvencesi için özel düzenleme öngörür. Genel güvencesiz çalışmaya dair önceki kısa alıntı bu özgül hükmün yerine kullanılmaz; gerçekleşmiş uygulama iddiası yoktur."}},
-    {"kind": "comparison_row", "values": {"id": "0314-dem-parti-karar-itiraz-row", "topic_id": "parti-ici-itiraz", "taxonomy_version": 3, "party_id": "dem", "level": "il", "organ": "İl disiplin kurulu", "version_id": "0204-dem-charter-v1", "alternative_group": null, "source_role": "charter", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "Üyelik reddi ayrı konudur; il disiplin kurulu kararına üst organda itiraz doğrudan bu konuyu yanıtlar."}},
-    {"kind": "comparison_field", "values": {"id": "0314-dem-parti-karar-itiraz-f", "row_id": "0314-dem-parti-karar-itiraz-row", "field": "charter_answer", "summary_finding_id": "0305-dem-mdk-itiraz-dem-summary", "quote_finding_id": "0305-dem-mdk-itiraz-dem-quote", "condition_key": "İl disiplin kurulu kararı tebliğinden sonra on gün"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-dem-parti-karar-itiraz-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:49:29+00:00", "result": "reviewed", "reason": "Parti içi kararlara itirazın üst organ ve usulleri sorusunda 0305-dem-mdk-itiraz-dem-passage, il disiplin kurulu kararına tebliğden sonra on gün içinde merkez disiplin kuruluna başvuruyu belirtir. Üyelik başvurusunun reddine itiraz bu sorudan ayrıdır; iki nüshanın yürürlük sırası bilinmez."}},
-    {"kind": "comparison_row", "values": {"id": "0314-dem-older-parti-karar-itiraz-row", "topic_id": "parti-ici-itiraz", "taxonomy_version": 3, "party_id": "dem", "level": "il", "organ": "İl disiplin kurulu", "version_id": "0204-dem-charter-older-v1", "alternative_group": null, "source_role": "charter", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "İkinci tüzük nüshasında il disiplin kurulu kararına itiraz ayrı kaynakla gösterilir; nüshaların sırası bilinmez."}},
-    {"kind": "comparison_field", "values": {"id": "0314-dem-older-parti-karar-itiraz-f", "row_id": "0314-dem-older-parti-karar-itiraz-row", "field": "charter_answer", "summary_finding_id": "0305-dem-mdk-itiraz-hedep-summary", "quote_finding_id": "0305-dem-mdk-itiraz-hedep-quote", "condition_key": "İl disiplin kurulu kararı tebliğinden sonra on gün"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-dem-older-parti-karar-itiraz-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:49:29+00:00", "result": "reviewed", "reason": "Parti içi kararlara itirazın üst organ ve usulleri sorusunda 0305-dem-mdk-itiraz-hedep-passage ikinci nüshada il disiplin kurulu kararına on gün içinde merkez disiplin kuruluna başvuruyu belirtir; üyelik reddi ayrı konudur ve nüshaların sırası bilinmez."}},
-    {"kind": "comparison_row", "values": {"id": "0314-iyi-parti-karar-itiraz-row", "topic_id": "parti-ici-itiraz", "taxonomy_version": 3, "party_id": "iyi", "level": "il", "organ": "İl disiplin kurulu", "version_id": "0205-iyi-charter-download-v1", "alternative_group": null, "source_role": "charter", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "Üyelik reddi yerine il disiplin kurulu kararına itiraz için kaynaklı madde kullanılır."}},
-    {"kind": "comparison_field", "values": {"id": "0314-iyi-parti-karar-itiraz-f", "row_id": "0314-iyi-parti-karar-itiraz-row", "field": "charter_answer", "summary_finding_id": "0306-iyi-disiplin-itiraz-summary", "quote_finding_id": "0306-iyi-disiplin-itiraz-quote", "condition_key": "İl disiplin kurulu kararı tebliğinden sonra on beş gün"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-iyi-parti-karar-itiraz-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:49:29+00:00", "result": "reviewed", "reason": "Parti içi kararlara itirazın üst organ ve usulleri sorusunda 0306-iyi-disiplin-itiraz-passage ilgili kişinin veya il yönetim kurulunun il disiplin kuruluna ilişkin karara tebliğden itibaren 15 gün içinde merkez disiplin kurulunda itirazını düzenler; üyelik başvurusunun reddi ayrı konudur."}},
-    {"kind": "passage", "values": {"id": "0314-dem-elestiri-tam-p", "version_id": "0204-dem-charter-v1", "exact": "Kendi organında çözülemediğini düşündüğü konuları ve eleştirilerini,\nen üst organa kadar, üst organlara sırasıyla iletmek ve yanıt istemek", "prefix": null, "suffix": null, "article": "Madde 9", "section": "Üyelerin eleştiri hakkı", "pdf_page_index": 7, "printed_page": null}},
-    {"kind": "finding", "values": {"id": "0314-dem-elestiri-tam-s", "party_id": "dem", "heading": "Tüzük", "provenance": "summary", "epistemic_type": "claim", "text": "Üye kendi organında çözülemediğini düşündüğü konuları ve eleştirilerini üst organlara sırasıyla iletip yanıt isteyebilir.", "pair_id": "0314-dem-elestiri-tam-pair"}},
-    {"kind": "finding", "values": {"id": "0314-dem-elestiri-tam-q", "party_id": "dem", "heading": "Tüzük", "provenance": "quote", "epistemic_type": "claim", "text": "Kendi organında çözülemediğini düşündüğü konuları ve eleştirilerini,\nen üst organa kadar, üst organlara sırasıyla iletmek ve yanıt istemek", "pair_id": "0314-dem-elestiri-tam-pair"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-dem-elestiri-tam-s", "passage_id": "0314-dem-elestiri-tam-p", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-dem-elestiri-tam-q", "passage_id": "0314-dem-elestiri-tam-p", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-dem-elestiri-tam-f", "row_id": "03-v3-0305-dem-uye-elestiri-dem-row", "field": "charter_answer", "summary_finding_id": "0314-dem-elestiri-tam-s", "quote_finding_id": "0314-dem-elestiri-tam-q", "condition_key": "Kendi organında çözülemediği düşünülen konular ve eleştiriler"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_field", "subject_id": "0314-dem-elestiri-tam-f", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:48:20+00:00", "result": "reviewed", "reason": "İç tartışma ve eleştiri konusunda 0314-dem-elestiri-tam-p, önceki kısa parçanın başını doğrudan PDF sayfasında tamamlar: kendi organında çözülemediği düşünülen konu ve eleştirilerin üst organlara sırasıyla iletilmesi ve yanıt istenmesi söz konusudur; iki tüzük nüshasının yürürlük sırası çıkarılmaz."}},
-    {"kind": "passage", "values": {"id": "0314-dbp-uye-etkinlik-p", "version_id": "0207-dbp-charter-v1", "exact": "Partiden eğitim ve etkinlik düzenlenmesini talep edebilme ve eğitim ve etkinliklere katılabilme,", "prefix": null, "suffix": null, "article": "Madde 14", "section": "Üyelerin Hak ve Görevleri", "pdf_page_index": null, "printed_page": null}},
-    {"kind": "finding", "values": {"id": "0314-dbp-uye-etkinlik-s", "party_id": "dbp", "heading": "Tüzük", "provenance": "summary", "epistemic_type": "claim", "text": "Üye partiden eğitim ve etkinlik düzenlenmesini isteyebilir ve eğitim ve etkinliklere katılabilir.", "pair_id": "0314-dbp-uye-etkinlik-pair"}},
-    {"kind": "finding", "values": {"id": "0314-dbp-uye-etkinlik-q", "party_id": "dbp", "heading": "Tüzük", "provenance": "quote", "epistemic_type": "claim", "text": "Partiden eğitim ve etkinlik düzenlenmesini talep edebilme ve eğitim ve etkinliklere katılabilme,", "pair_id": "0314-dbp-uye-etkinlik-pair"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-dbp-uye-etkinlik-s", "passage_id": "0314-dbp-uye-etkinlik-p", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-dbp-uye-etkinlik-q", "passage_id": "0314-dbp-uye-etkinlik-p", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-dbp-uye-etkinlik-f", "row_id": "03-v3-0308-dbp-draft-074-row", "field": "charter_answer", "summary_finding_id": "0314-dbp-uye-etkinlik-s", "quote_finding_id": "0314-dbp-uye-etkinlik-q", "condition_key": "Parti eğitimi ve etkinlikleri"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_field", "subject_id": "0314-dbp-uye-etkinlik-f", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:48:20+00:00", "result": "reviewed", "reason": "Üyenin siyasal çalışmalara katılımı konusunda 0314-dbp-uye-etkinlik-p tüzüğün 14. maddesinde parti eğitimi ve etkinliklerine katılma ile bunların düzenlenmesini isteme hakkını doğrudan belirtir; önceki organ görevine adaylık pasajından genel katılım hakkı çıkarılmaz."}},
-    {"kind": "comparison_row", "values": {"id": "0314-dem-tibbi-uretim-program-missing", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "dem", "level": "ulusal", "organ": "Program", "version_id": null, "alternative_group": null, "source_role": "program", "state": "document_missing", "scope_id": null, "missing_id": "0204-dem-missing-current-program", "selection_reason": "Bağımsız güncel tam program aramada elde edilmedi; kongre eki ayrı incelenir."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-dem-tibbi-uretim-program-missing", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:26:44+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bağımsız güncel program elde edilmedi: 0204-dem-missing-current-program, 0204-dem-search-program aramasına bağlıdır; kongre kararını veya parti tutumunu yok saymaz."}},
-    {"kind": "comparison_row", "values": {"id": "0314-yeniyol-tibbi-uretim-program-missing", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "yeni-yol", "level": "ulusal", "organ": "Program", "version_id": null, "alternative_group": null, "source_role": "program", "state": "document_missing", "scope_id": null, "missing_id": "0307-yeni-yol-missing-program", "selection_reason": "Bağımsız tam program aramada bulunamadı; farklı parti veya ortak grup belgesi yerine kullanılmaz."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-yeniyol-tibbi-uretim-program-missing", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:26:44+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bağımsız tam program bulunamadı: 0307-yeni-yol-missing-program gerçek program aramasına bağlıdır; konu hakkında karşıt görüş anlamına gelmez."}},
-    {"kind": "comparison_row", "values": {"id": "0314-dbp-tibbi-uretim-program-missing", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "dbp", "level": "ulusal", "organ": "Program", "version_id": null, "alternative_group": null, "source_role": "program", "state": "document_missing", "scope_id": null, "missing_id": "0207-dbp-missing-current-program", "selection_reason": "Bağımsız güncel DBP programı elde edilmedi; tarihsel BDP kopyaları ayrı tutulur."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-dbp-tibbi-uretim-program-missing", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:26:44+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bağımsız güncel DBP programı elde edilmedi: 0207-dbp-missing-current-program, 0207-dbp-search-current-program aramasına bağlıdır; tarihsel BDP pasajları ayrıca sunulur."}},
-    {"kind": "passage", "values": {"id": "0314-bdp-tibbi-uretim-p1", "version_id": "0207-dbp-bdp-program-v1", "exact": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.", "prefix": null, "suffix": null, "article": null, "section": "2. Sağlık", "pdf_page_index": null, "printed_page": null}},
-    {"kind": "passage", "values": {"id": "0314-bdp-tibbi-uretim-p2", "version_id": "0207-dbp-bdp-program-wordpress-v1", "exact": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.", "prefix": null, "suffix": null, "article": null, "section": "2. Sağlık", "pdf_page_index": null, "printed_page": null}},
-    {"kind": "comparison_row", "values": {"id": "0314-bdp-tibbi-uretim-row1", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "dbp", "level": "ulusal", "organ": "Tarihsel BDP programı", "version_id": "0207-dbp-bdp-program-v1", "alternative_group": null, "source_role": "historical", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "Tarihsel BDP program kopyasının sağlık bölümündeki üretim ve denetim hükmü; güncel DBP programı yerine geçmez."}},
-    {"kind": "finding", "values": {"id": "0314-bdp-tibbi-uretim-s1", "party_id": "dbp", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "Tarihsel BDP programı kopyası ilaç, sağlık teknolojisi ve teçhizatı için üretim, kullanım ve pazarlama denetimi, üretime yatırım ve araştırma geliştirmeye kaynak öngörür.", "pair_id": "0314-bdp-tibbi-uretim-pair1"}},
-    {"kind": "finding", "values": {"id": "0314-bdp-tibbi-uretim-q1", "party_id": "dbp", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.", "pair_id": "0314-bdp-tibbi-uretim-pair1"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-tibbi-uretim-s1", "passage_id": "0314-bdp-tibbi-uretim-p1", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-tibbi-uretim-q1", "passage_id": "0314-bdp-tibbi-uretim-p1", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-bdp-tibbi-uretim-f1", "row_id": "0314-bdp-tibbi-uretim-row1", "field": "instrument", "summary_finding_id": "0314-bdp-tibbi-uretim-s1", "quote_finding_id": "0314-bdp-tibbi-uretim-q1", "condition_key": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-bdp-tibbi-uretim-row1", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:26:44+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme: 0314-bdp-tibbi-uretim-p1 tarihsel BDP kopyasında bu araçları açıkça belirtir; güncel bağımsız DBP programı veya tümüyle yerli üretim iddiası değildir."}},
-    {"kind": "comparison_row", "values": {"id": "0314-bdp-tibbi-uretim-row2", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "dbp", "level": "ulusal", "organ": "Tarihsel BDP programı", "version_id": "0207-dbp-bdp-program-wordpress-v1", "alternative_group": null, "source_role": "historical", "state": "evidence", "scope_id": null, "missing_id": null, "selection_reason": "İkinci tarihsel BDP program kopyasının sağlık bölümündeki aynı hüküm; güncel DBP programı yerine geçmez."}},
-    {"kind": "finding", "values": {"id": "0314-bdp-tibbi-uretim-s2", "party_id": "dbp", "heading": "Program", "provenance": "summary", "epistemic_type": "claim", "text": "İkinci tarihsel BDP programı kopyası ilaç, sağlık teknolojisi ve teçhizatı için üretim, kullanım ve pazarlama denetimi, üretime yatırım ve araştırma geliştirmeye kaynak öngörür.", "pair_id": "0314-bdp-tibbi-uretim-pair2"}},
-    {"kind": "finding", "values": {"id": "0314-bdp-tibbi-uretim-q2", "party_id": "dbp", "heading": "Program", "provenance": "quote", "epistemic_type": "claim", "text": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.", "pair_id": "0314-bdp-tibbi-uretim-pair2"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-tibbi-uretim-s2", "passage_id": "0314-bdp-tibbi-uretim-p2", "role": "support"}},
-    {"kind": "finding_evidence", "values": {"finding_id": "0314-bdp-tibbi-uretim-q2", "passage_id": "0314-bdp-tibbi-uretim-p2", "role": "quotation"}},
-    {"kind": "comparison_field", "values": {"id": "0314-bdp-tibbi-uretim-f2", "row_id": "0314-bdp-tibbi-uretim-row2", "field": "instrument", "summary_finding_id": "0314-bdp-tibbi-uretim-s2", "quote_finding_id": "0314-bdp-tibbi-uretim-q2", "condition_key": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme"}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-bdp-tibbi-uretim-row2", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:26:44+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme: 0314-bdp-tibbi-uretim-p2 ikinci tarihsel BDP kopyasında aynı araçları belirtir; güncel bağımsız DBP programı veya tümüyle yerli üretim iddiası değildir."}},
-    {"kind": "comparison_review_scope", "values": {"id": "0314-dem-tarihsel-tibbi-uretim-scope", "party_id": "dem", "version_id": "0204-dem-founding-v1", "sections": "Agos'un 2012 Yeşiller ve Sol Gelecek Partisi program aktarımı, 21- Sağlık bölümünün tamamı", "query_terms": "ilaç, aşı, tıbbi ürün, sağlık teknolojisi, üretim", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "no_explicit_statement", "reason": "Tarihsel basın aktarımının sağlık bölümü hizmetlerin örgütlenmesini ve teknoloji/ilaç kullanımına ilişkin eleştiriyi ele alır; bu bölümde tıbbi ürün üretim modeli açıklanmaz. Bu, güncel bağımsız program veya tüm tarihsel metinler için yokluk değildir."}},
-    {"kind": "comparison_row", "values": {"id": "0314-dem-tarihsel-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "dem", "level": "ulusal", "organ": "2012 tarihli program basın aktarımı", "version_id": "0204-dem-founding-v1", "alternative_group": null, "source_role": "historical", "state": "no_explicit_statement", "scope_id": "0314-dem-tarihsel-tibbi-uretim-scope", "missing_id": null, "selection_reason": "2012 tarihli programın Agos aktarımında yalnız sağlık bölümü doğrudan incelendi; güncel program ve kongre eki ayrı kayıtlardır."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-dem-tarihsel-tibbi-uretim-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Yalnız tarihsel basın aktarımının 21. sağlık bölümü: 0314-dem-tarihsel-tibbi-uretim-scope ilaç ve teknoloji kullanımını eleştirse de üretim modeli belirtmez; tarihsel basın aktarımı güncel bağımsız programa eşitlenmez."}},
-    {"kind": "comparison_review_scope", "values": {"id": "0314-tip-tibbi-uretim-scope", "party_id": "tip", "version_id": "0203-tip-program-v1", "sections": "Sağlıklı ve Güvenli Gelecek İçin başlığının tamamı", "query_terms": "ilaç, aşı, tıbbi ürün, sağlık teknolojisi, üretim", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "no_explicit_statement", "reason": "Bölüm ücretsiz ve erişilebilir sağlık hizmetini, koruyucu hekimliği, kurumları ve sağlık çalışanlarını ele alıyor; bu bölümde tıbbi ürün üretim modeli açıklanmıyor. Diğer bölümler bu sonucun kapsamına dahil değildir."}},
-    {"kind": "comparison_row", "values": {"id": "0314-tip-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "tip", "level": "ulusal", "organ": "Program", "version_id": "0203-tip-program-v1", "alternative_group": null, "source_role": "program", "state": "no_explicit_statement", "scope_id": "0314-tip-tibbi-uretim-scope", "missing_id": null, "selection_reason": "Yalnız sağlık başlığı doğrudan incelendi; diğer ilgili bölümler ayrıca gözden geçirilmelidir."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-tip-tibbi-uretim-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Yalnız Sağlıklı ve Güvenli Gelecek İçin başlığı: 0314-tip-tibbi-uretim-scope hizmet ve çalışanlara ilişkin bölümde üretim hükmü bulunmadığını gösterir; tüm program veya parti tutumu hakkında yokluk iddiası değildir."}},
-    {"kind": "comparison_review_scope", "values": {"id": "0314-emep-tibbi-uretim-scope", "party_id": "emep", "version_id": "0208-emep-program-charter-v1", "sections": "Program A bölümündeki 11. halk ve kişi sağlığı maddesinin tamamı", "query_terms": "ilaç, aşı, tıbbi malzeme, donanım, üretim", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "no_explicit_statement", "reason": "Madde sağlık hizmetlerini ve kurumların personel, donanım ve tıbbi malzemeyle örgütlenmesini ele alıyor; bu maddede malzemenin üretim modeli belirtilmiyor. Programın diğer maddeleri ve kongre önerisi bu kapsamda değildir."}},
-    {"kind": "comparison_row", "values": {"id": "0314-emep-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "emep", "level": "ulusal", "organ": "Program", "version_id": "0208-emep-program-charter-v1", "alternative_group": null, "source_role": "program", "state": "no_explicit_statement", "scope_id": "0314-emep-tibbi-uretim-scope", "missing_id": null, "selection_reason": "Yalnız HTML programının sağlık maddesi doğrudan incelendi; diğer ilgili metinler ayrıca gözden geçirilmelidir."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-emep-tibbi-uretim-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Yalnız HTML programının 11. sağlık maddesi: 0314-emep-tibbi-uretim-scope malzeme ve hizmet organizasyonunu içerir, üretim modeli içermediğini yalnız bu madde için gösterir."}},
-    {"kind": "comparison_review_scope", "values": {"id": "0314-demokrat-tibbi-uretim-scope", "party_id": "demokrat", "version_id": "0210-demokrat-program-archive-v1", "sections": "11- Sağlık Politikaları; PDF indeks 48, basılı sayfa 55", "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "no_explicit_statement", "reason": "Bölüm ilaç harcamaları, sağlık sistemi, hizmet ve katkı payını ele alıyor; tıbbi ürün üretim modeli açıklamıyor. Diğer sağlık, sanayi ve tarihsel bölümler bu dar incelemenin dışındadır."}},
-    {"kind": "comparison_row", "values": {"id": "0314-demokrat-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "demokrat", "level": "ulusal", "organ": "Program", "version_id": "0210-demokrat-program-archive-v1", "alternative_group": null, "source_role": "program", "state": "no_explicit_statement", "scope_id": "0314-demokrat-tibbi-uretim-scope", "missing_id": null, "selection_reason": "Yalnız arşiv programın 11. sağlık politikaları bölümü doğrudan okundu; diğer ilgili metinler ayrıca incelenmelidir."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-demokrat-tibbi-uretim-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Yalnız arşiv programın 11. sağlık politikaları bölümü: 0314-demokrat-tibbi-uretim-scope ilaç harcamalarını içerir fakat o bölümde üretim modeli belirtmez; diğer bölümlere genellenmez."}},
-    {"kind": "comparison_review_scope", "values": {"id": "0314-dem-tibbi-uretim-congress-scope", "party_id": "dem", "version_id": "0204-dem-policies-v1", "sections": "Demokratik ve Halkçı Ekonomi İçin kararları; sağlık hizmetleri maddesi", "query_terms": "sağlık, ilaç, aşı, tıbbi üretim", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "no_explicit_statement", "reason": "Kongre kararındaki sağlık maddesi hizmetin kamusal, parasız ve erişilebilir sunulmasını ve yatırımları ele alıyor; bu maddede tıbbi ürün üretimi açıklanmıyor. Kongre kararının diğer bölümleri bu sınırın dışındadır."}},
-    {"kind": "comparison_row", "values": {"id": "0314-dem-tibbi-uretim-congress-row", "topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "party_id": "dem", "level": "ulusal", "organ": "Kongre kararları", "version_id": "0204-dem-policies-v1", "alternative_group": null, "source_role": "supplement", "state": "no_explicit_statement", "scope_id": "0314-dem-tibbi-uretim-congress-scope", "missing_id": null, "selection_reason": "Kongre ekinin sağlık hizmetleri maddesi dar kapsamla incelendi; bağımsız program açığı ayrı kayıttadır."}},
-    {"kind": "comparison_semantic_review", "values": {"subject_kind": "comparison_row", "subject_id": "0314-dem-tibbi-uretim-congress-row", "reviewer_kind": "agent", "reviewed_at": "2026-11-14T18:31:50+00:00", "result": "reviewed", "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Yalnız kongre kararının sağlık hizmetleri maddesi: 0314-dem-tibbi-uretim-congress-scope hizmet ve yatırım hedefini içerir; bu maddede tıbbi ürün üretimi belirtilmez ve tüm ek belgeye genellenmez."}}
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-saadet-tibbi-uretim-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "saadet",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": "0209-saadet-current-program-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Sağlık bölümündeki tıbbi cihaz, ilaç ve aşı hükmü bu konuyu açıkça ele alır."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-tibbi-uretim-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Tıbbi cihaz, ilaç ve aşıda dışa bağımlılığın kaldırılması hedeflenir.",
+        "pair_id": "0314-saadet-tibbi-uretim-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-tibbi-uretim-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Tıbbi teknolojide tıbbi cihaz, ilaç ve aşıda dışa bağımlılık ortadan kaldırılacaktır.",
+        "pair_id": "0314-saadet-tibbi-uretim-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-tibbi-uretim-s",
+        "passage_id": "0311-saadet-backfill-05-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-tibbi-uretim-q",
+        "passage_id": "0311-saadet-backfill-05-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-tibbi-uretim-f",
+        "row_id": "0314-saadet-tibbi-uretim-row",
+        "field": "target",
+        "summary_finding_id": "0314-saadet-tibbi-uretim-s",
+        "quote_finding_id": "0314-saadet-tibbi-uretim-q",
+        "condition_key": "Tıbbi cihaz, ilaç ve aşıda dışa bağımlılığın kaldırılması"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-ilac-uretim-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "İlaç sanayisinin geliştirilmesi ve yerli ilaç üretimi için gerekli bilimsel çalışmaların teşvik edilmesi önerilir.",
+        "pair_id": "0314-saadet-ilac-uretim-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-ilac-uretim-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "İlaç sanayimiz geliştirilerek yerli ilaçların üretilmesi için gerekli bilimsel çalışmalar\nteşvik edilerek desteklenecektir.",
+        "pair_id": "0314-saadet-ilac-uretim-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-ilac-uretim-s",
+        "passage_id": "0311-saadet-p2-172-teknoloji-inovasyon-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-ilac-uretim-q",
+        "passage_id": "0311-saadet-p2-172-teknoloji-inovasyon-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-ilac-uretim-f",
+        "row_id": "0314-saadet-tibbi-uretim-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-ilac-uretim-s",
+        "quote_finding_id": "0314-saadet-ilac-uretim-q",
+        "condition_key": "Yerli ilaç üretimi için bilimsel çalışmaların teşviki"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-saadet-tibbi-uretim-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Tıbbi cihaz, ilaç ve aşıda dışa bağımlılığın kaldırılması ve yerli ilaç üretimi için bilimsel çalışma: 0311-saadet-backfill-05-p dışa bağımlılığı ortadan kaldırmayı hedefler; 0311-saadet-p2-172-teknoloji-inovasyon-p yerli ilaç üretimi için bilimsel çalışmaların teşvikini ayrıca belirtir. Uygulama sonucu veya sayısal takvim söylenmez. Ayrıca 0314-saadet-medikal-ardestek-p paketleme ile üretimin ayrılması ve Ar-Ge teşvikini, 0314-saadet-medikal-teknokent-p medikal ürünler için teknokent–üniversite iş birliğini ayrı araçlar olarak belirtir. Tıbbi cihaz, ilaç ve aşıda dışa bağımlılık hedefi; yerli ilaç bilimsel çalışması, paketleme/üretim ayrımı ve Ar-Ge ile medikal ürünlerde teknokent–üniversite iş birliği ayrı araçlar."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-p1",
+        "version_id": "0207-dbp-bdp-program-v1",
+        "exact": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "3. Sosyal Güvenlik – Sosyal Haklar",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-p2",
+        "version_id": "0207-dbp-bdp-program-wordpress-v1",
+        "exact": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "3. Sosyal Güvenlik – Sosyal Haklar",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-s1",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Tarihsel BDP programı kopyası, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyen hak temelli düzenli nakdi yardımlar önerir.",
+        "pair_id": "0314-bdp-duzenli-nakit-pair1"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-q1",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.",
+        "pair_id": "0314-bdp-duzenli-nakit-pair1"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-duzenli-nakit-s1",
+        "passage_id": "0314-bdp-duzenli-nakit-p1",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-duzenli-nakit-q1",
+        "passage_id": "0314-bdp-duzenli-nakit-p1",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-f1",
+        "row_id": "03-v3-0308-dbp-program-061-0-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-bdp-duzenli-nakit-s1",
+        "quote_finding_id": "0314-bdp-duzenli-nakit-q1",
+        "condition_key": "Öncelikle çocuk ve yaşlı yoksulluğuyla mücadele"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-s2",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "İkinci tarihsel BDP programı kopyası, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyen hak temelli düzenli nakdi yardımlar önerir.",
+        "pair_id": "0314-bdp-duzenli-nakit-pair2"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-q2",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Partimiz insan onurunu rencide eden bu uygulamalara son vererek, öncelikle çocuk ve yaşlı yoksulluğuyla mücadeleyi hedefleyerek hak temeline dayalı düzenli nakdi yardımların devreye girmesi yönünde adımlar atacaktır.",
+        "pair_id": "0314-bdp-duzenli-nakit-pair2"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-duzenli-nakit-s2",
+        "passage_id": "0314-bdp-duzenli-nakit-p2",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-duzenli-nakit-q2",
+        "passage_id": "0314-bdp-duzenli-nakit-p2",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-bdp-duzenli-nakit-f2",
+        "row_id": "03-v3-0308-dbp-program-061-1-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-bdp-duzenli-nakit-s2",
+        "quote_finding_id": "0314-bdp-duzenli-nakit-q2",
+        "condition_key": "Öncelikle çocuk ve yaşlı yoksulluğuyla mücadele"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-0308-dbp-program-061-0-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:08:40+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım: 0308-dbp-program-061-0-passage yaşlı aylığını, 0314-bdp-duzenli-nakit-p1 ayrı düzenli yardımı belirtir. 2022 kanun numarasıdır; tarihsel BDP kopyası güncel DBP programı değildir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-0308-dbp-program-061-1-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:08:40+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım: 0308-dbp-program-061-1-passage yaşlı aylığını, 0314-bdp-duzenli-nakit-p2 ikinci tarihsel kopyada ayrı düzenli yardımı belirtir. 2022 kanun numarasıdır; kopyalar iki bağımsız öneri sayılmaz."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-03-v2-yeni-parti-temel-yurttaslik-geliri",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Her vatandaş için temel vatandaşlık geliri: 0303-epm-program-temel-yurttaslik-geliri-p1 her vatandaşa insanca yaşam koşullarını güvenceye alacak temel vatandaşlık geliri öngörür; ödeme tutarı veya gelir eşiği belirtmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-03-v2-dem-temel-yurttaslik-geliri",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Geliri olmayan tüm yurttaşlar ve kongre eki: 03-dem-gelir bu gruba Temel Yurttaşlık Geliri sağlama hedefini belirtir; bağımsız güncel program yerine geçirilmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-03-v2-dem-gelir-program-eksik",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Bağımsız güncel DEM programı elde edilmedi: 0204-dem-missing-current-program gerçek Program aramasına bağlıdır; kongre ekindeki gelir hükmü ayrı kaynak olarak korunur."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-03-v2-dbp-temel-yurttaslik-geliri",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Bağımsız güncel DBP programı elde edilmedi: 0207-dbp-missing-current-program gerçek Program aramasına bağlıdır; tarihsel BDP kopyalarındaki aylık ve yardım ayrıca gösterilir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-03-v2-yeni-yol-temel-yurttaslik-geliri",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Bağımsız Yeni Yol tam programı bulunamadı: 0206-yeni-yol-missing-program kendi Program aramasına bağlıdır; bu belge durumu parti tutumu olarak yorumlanmaz."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-03-v2-demokrat-temel-yurttaslik-geliri",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Her vatandaş için iş, aş ve asgari nakit gelir desteği: 0313-demokrat-068-temel-yurttaslik-geliri-p bu kapsamı belirtir; eşit ödeme, gelir eşiği veya düzenlilik şartı söylemez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-0309-emep-program-pdf-003-1-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Kongreye sunulan öneride işsiz, yaşlı ve malullere primsiz devlet bütçesi aylığı: 0309-emep-program-pdf-003-1-passage bu belirli grupları ve finansmanı belirtir; önerinin kabulü bilinmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "03-v3-0309-emep-program-pdf-009-2-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Kongreye sunulan öneride çalışamayan engellilere aylık: 0309-emep-program-pdf-009-2-passage insan onuruna yaraşır yaşama olanak tanıyan aylığı belirtir; bütün engellilere veya tüm yurttaşlara ödeme ve kabul sonucu çıkarılmaz."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-tip-asgari-duzenli-gelir-scope",
+        "party_id": "tip",
+        "version_id": "0203-tip-program-v1",
+        "sections": "Sosyalist Toplumda Çalışma, Üretim ve Bölüşüm; Temel Yurttaş Hakları Güvence Altındadır; işçi sınıfı, çalışma ve sosyal haklar paragrafları; ekonomik refah ve planlama bölümü",
+        "query_terms": "asgari nakit gelir, düzenli parasal yardım, çalışamayacak kişiler, işsizlik, gelir güvencesi, aylık",
+        "reviewed_at": "2026-11-14T19:17:45+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Sosyalist toplum bölümünde çalışamayacak durumda olanların insanca yaşamının güvenceye alınması ve hizmetlerin bedelsiz sunulması; güncel emek mücadelesinde insanca yaşamaya yetecek ücret ve ücretsiz hizmetler vardır. Okunan bu bölümlerde nitel yaşam güvencesinin ayrıca nakit ödeme, asgari gelir desteği veya düzenli parasal yardım biçiminde uygulanacağı belirtilmez; ücret ve hizmet bu soruda otomatik nakit yardım sayılmaz. Diğer bölümler veya belgeler için yokluk çıkarılmaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-tip-asgari-duzenli-gelir-row",
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 3,
+        "party_id": "tip",
+        "level": "ulusal",
+        "organ": "İncelenen program bölümleri",
+        "version_id": "0203-tip-program-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-tip-asgari-duzenli-gelir-scope",
+        "missing_id": null,
+        "selection_reason": "Genişletilmiş soruda çalışma, sosyal haklar ve sosyalist toplum bölümleri doğrudan yeniden okundu; çalışamayanlara nitel yaşam güvencesi nakit ödeme olarak kodlanmadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-tip-asgari-duzenli-gelir-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:17:45+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Yalnız sosyalist toplum, çalışma ve sosyal haklar ile ekonomik refah bölümleri: 0314-tip-asgari-duzenli-gelir-scope çalışamayanlara insanca yaşam güvencesi, emek karşılığı ücret ve ücretsiz hizmetleri bu bölümlerin gerçek içeriği olarak korur; bunlardan belirtilmemiş nakit yardım çıkarmaz."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-iyi-asgari-duzenli-gelir-scope",
+        "party_id": "iyi",
+        "version_id": "0205-iyi-program-page-v1",
+        "sections": "Ekonomi Temel İlkeler ve Kamu Maliyesi; Tarım ve kırsal kalkınma; Okul Öncesi Eğitim ve eğitime erişim; Sağlık ve sigorta; Çalışma Hayatı ve Sendika ile Hedefler/işsizlik; engelliliğe ilişkin eğitim ve bilişim maddeleri",
+        "query_terms": "asgari nakit gelir, geçim güvencesi, düzenli parasal yardım, aylık, işsizlik ödeneği, yaşlı ve engelli desteği",
+        "reviewed_at": "2026-11-14T19:14:43+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Bu kaynak bölümlerinde genel refah ilkesi, hizmet ve ayni gıda/ilaç, sigorta, bakım desteği ve eğitim bursu ayrıldı. Köyünde kalıp çiftçilik isteyen gençlere ekstra maaş ve doğal afet nedeniyle gelir kaybına fark primi açıkça vardır; bu cümleler asgari gelir düzeyi veya düzenli yardım periyodu belirtmez. İncelenen bölümlerde seçilen asgari nakit gelir veya açık düzenli parasal yardım yöntemi saptanmadı; diğer bölümlere ve belgelere yokluk genellenmez."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-iyi-asgari-duzenli-gelir-row",
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 3,
+        "party_id": "iyi",
+        "level": "ulusal",
+        "organ": "İncelenen program bölümleri",
+        "version_id": "0205-iyi-program-page-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-iyi-asgari-duzenli-gelir-scope",
+        "missing_id": null,
+        "selection_reason": "Genişletilmiş soruya önceki gelirsiz yurttaşlar kapsamı otomatik taşınmadı; ilgili program bölümleri yeniden incelendi ve maaş, afet fark primi, ayni yardım ve biçimi belirsiz destekler ayrı değerlendirildi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-iyi-asgari-duzenli-gelir-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:14:43+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Yalnız belirtilen ekonomi, tarım, eğitim, sağlık, çalışma ve engellilik bölümleri: 0314-iyi-asgari-duzenli-gelir-scope genç çiftçiye ekstra maaş ve afet kaybına fark primini gerçek koşullarıyla korur; kaynakta asgari düzey veya düzenlilik belirtilmeyen bu araçlar otomatik olumlu cevap sayılmaz. Bu kapsam diğer belgelere genellenmez."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-emep-nakit-gelir-row",
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 3,
+        "party_id": "emep",
+        "level": "ulusal",
+        "organ": "İş kaybı ve ölüm sonrası gelir desteği",
+        "version_id": "0208-emep-program-charter-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Genişletilmiş soruda iş kaybı ve ölüm sonrası düzenli gelir doğrudan kaynaklı alandır; önceki yalnız evrensel gelir sorusuna ait dar yokluk ve bağlam satırları olumlu genel gelir cevabı olarak taşınmaz."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-emep-nakit-gelir-f",
+        "row_id": "0314-emep-nakit-gelir-row",
+        "field": "instrument",
+        "summary_finding_id": "0309-emep-program-059-1-summary",
+        "quote_finding_id": "0309-emep-program-059-1-quote",
+        "condition_key": "İşini kaybeden emekçi ve ölen emekçinin bakmakla yükümlü olduğu yakınları; patronlara özel vergi"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-emep-nakit-gelir-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:10:12+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. İşini kaybeden emekçi ve ölen emekçinin bakmakla yükümlü olduğu yakınları; patronlara özel vergi: 0309-emep-program-059-1-passage bu gruplara düzenli gelir ve belirtilen finansmanı öngörür; evrensel vatandaşlık geliri anlamına gelmez."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-saadet-nakit-gelir-row",
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 3,
+        "party_id": "saadet",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": "0209-saadet-current-program-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Genişletilmiş nakit gelir sorusuna ülkede doğma, ülke için çalışma ve vergi ödeme koşullu gerçek ödeme pasajı bağlanır; yalnız genel refah ilkesi olumlu nakit yanıt olarak taşınmaz."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-nakit-gelir-f",
+        "row_id": "0314-saadet-nakit-gelir-row",
+        "field": "instrument",
+        "summary_finding_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-s",
+        "quote_finding_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-q",
+        "condition_key": "Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-saadet-nakit-gelir-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:05:58+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar: 0311-saadet-p2-073-temel-yurttaslik-geliri-p bu üç koşuldaki vatandaşlara Temel Vatandaşlık Geliri ödenmesini belirtir; genel refah ilkesi ödeme şartlarını kaldırmaz."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-yeni-platform-emek-s",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Kurye, yazılımcı ve çağrı merkezi gibi dijital platform çalışanları için sigorta, iş güvenliği ve örgütlenme hakları başta olmak üzere hakları güvenceye alacak özel düzenlemeler önerilir.",
+        "pair_id": "0314-yeni-platform-emek-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-yeni-platform-emek-q",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Dijital platform çalışanlarının haklarını korumak hedefiyle platform işçilerine (kurye, yazılımcı, çağrı merkezi vb.) dönük sigorta, iş güvenliği ve örgütlenme hakları başta olmak üzere tüm haklarının güvence altına alınması için özel düzenlemeler yapılacaktır.",
+        "pair_id": "0314-yeni-platform-emek-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-platform-emek-s",
+        "passage_id": "0303-epm-program-detail-guvencesiz-istihdam-p5",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-platform-emek-q",
+        "passage_id": "0303-epm-program-detail-guvencesiz-istihdam-p5",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-yeni-platform-emek-f",
+        "row_id": "03-v3-0303-epm-program-detail-guvencesiz-istihdam-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-yeni-platform-emek-s",
+        "quote_finding_id": "0314-yeni-platform-emek-q",
+        "condition_key": "Kurye, yazılımcı ve çağrı merkezi gibi dijital platform çalışanları"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-yeni-platform-emek-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:05:08+00:00",
+        "result": "reviewed",
+        "reason": "Güvencesiz istihdam konusunda 0303-epm-program-detail-guvencesiz-istihdam-p5 platform işçilerini örnekleriyle açıkça adlandırır ve sigorta, iş güvenliği, örgütlenme başta hakların güvencesi için özel düzenleme öngörür. Genel güvencesiz çalışmaya dair önceki kısa alıntı bu özgül hükmün yerine kullanılmaz; gerçekleşmiş uygulama iddiası yoktur."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dem-parti-karar-itiraz-row",
+        "topic_id": "parti-ici-itiraz",
+        "taxonomy_version": 3,
+        "party_id": "dem",
+        "level": "il",
+        "organ": "İl disiplin kurulu",
+        "version_id": "0204-dem-charter-v1",
+        "alternative_group": null,
+        "source_role": "charter",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Üyelik reddi ayrı konudur; il disiplin kurulu kararına üst organda itiraz doğrudan bu konuyu yanıtlar."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-dem-parti-karar-itiraz-f",
+        "row_id": "0314-dem-parti-karar-itiraz-row",
+        "field": "charter_answer",
+        "summary_finding_id": "0305-dem-mdk-itiraz-dem-summary",
+        "quote_finding_id": "0305-dem-mdk-itiraz-dem-quote",
+        "condition_key": "İl disiplin kurulu kararı tebliğinden sonra on gün"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dem-parti-karar-itiraz-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:49:29+00:00",
+        "result": "reviewed",
+        "reason": "Parti içi kararlara itirazın üst organ ve usulleri sorusunda 0305-dem-mdk-itiraz-dem-passage, il disiplin kurulu kararına tebliğden sonra on gün içinde merkez disiplin kuruluna başvuruyu belirtir. Üyelik başvurusunun reddine itiraz bu sorudan ayrıdır; iki nüshanın yürürlük sırası bilinmez."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dem-older-parti-karar-itiraz-row",
+        "topic_id": "parti-ici-itiraz",
+        "taxonomy_version": 3,
+        "party_id": "dem",
+        "level": "il",
+        "organ": "İl disiplin kurulu",
+        "version_id": "0204-dem-charter-older-v1",
+        "alternative_group": null,
+        "source_role": "charter",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "İkinci tüzük nüshasında il disiplin kurulu kararına itiraz ayrı kaynakla gösterilir; nüshaların sırası bilinmez."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-dem-older-parti-karar-itiraz-f",
+        "row_id": "0314-dem-older-parti-karar-itiraz-row",
+        "field": "charter_answer",
+        "summary_finding_id": "0305-dem-mdk-itiraz-hedep-summary",
+        "quote_finding_id": "0305-dem-mdk-itiraz-hedep-quote",
+        "condition_key": "İl disiplin kurulu kararı tebliğinden sonra on gün"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dem-older-parti-karar-itiraz-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:49:29+00:00",
+        "result": "reviewed",
+        "reason": "Parti içi kararlara itirazın üst organ ve usulleri sorusunda 0305-dem-mdk-itiraz-hedep-passage ikinci nüshada il disiplin kurulu kararına on gün içinde merkez disiplin kuruluna başvuruyu belirtir; üyelik reddi ayrı konudur ve nüshaların sırası bilinmez."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-iyi-parti-karar-itiraz-row",
+        "topic_id": "parti-ici-itiraz",
+        "taxonomy_version": 3,
+        "party_id": "iyi",
+        "level": "il",
+        "organ": "İl disiplin kurulu",
+        "version_id": "0205-iyi-charter-download-v1",
+        "alternative_group": null,
+        "source_role": "charter",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Üyelik reddi yerine il disiplin kurulu kararına itiraz için kaynaklı madde kullanılır."
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-iyi-parti-karar-itiraz-f",
+        "row_id": "0314-iyi-parti-karar-itiraz-row",
+        "field": "charter_answer",
+        "summary_finding_id": "0306-iyi-disiplin-itiraz-summary",
+        "quote_finding_id": "0306-iyi-disiplin-itiraz-quote",
+        "condition_key": "İl disiplin kurulu kararı tebliğinden sonra on beş gün"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-iyi-parti-karar-itiraz-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:49:29+00:00",
+        "result": "reviewed",
+        "reason": "Parti içi kararlara itirazın üst organ ve usulleri sorusunda 0306-iyi-disiplin-itiraz-passage ilgili kişinin veya il yönetim kurulunun il disiplin kuruluna ilişkin karara tebliğden itibaren 15 gün içinde merkez disiplin kurulunda itirazını düzenler; üyelik başvurusunun reddi ayrı konudur."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dem-elestiri-tam-p",
+        "version_id": "0204-dem-charter-v1",
+        "exact": "Kendi organında çözülemediğini düşündüğü konuları ve eleştirilerini,\nen üst organa kadar, üst organlara sırasıyla iletmek ve yanıt istemek",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 9",
+        "section": "Üyelerin eleştiri hakkı",
+        "pdf_page_index": 7,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dem-elestiri-tam-s",
+        "party_id": "dem",
+        "heading": "Tüzük",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Üye kendi organında çözülemediğini düşündüğü konuları ve eleştirilerini üst organlara sırasıyla iletip yanıt isteyebilir.",
+        "pair_id": "0314-dem-elestiri-tam-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dem-elestiri-tam-q",
+        "party_id": "dem",
+        "heading": "Tüzük",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Kendi organında çözülemediğini düşündüğü konuları ve eleştirilerini,\nen üst organa kadar, üst organlara sırasıyla iletmek ve yanıt istemek",
+        "pair_id": "0314-dem-elestiri-tam-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dem-elestiri-tam-s",
+        "passage_id": "0314-dem-elestiri-tam-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dem-elestiri-tam-q",
+        "passage_id": "0314-dem-elestiri-tam-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-dem-elestiri-tam-f",
+        "row_id": "03-v3-0305-dem-uye-elestiri-dem-row",
+        "field": "charter_answer",
+        "summary_finding_id": "0314-dem-elestiri-tam-s",
+        "quote_finding_id": "0314-dem-elestiri-tam-q",
+        "condition_key": "Kendi organında çözülemediği düşünülen konular ve eleştiriler"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-dem-elestiri-tam-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:48:20+00:00",
+        "result": "reviewed",
+        "reason": "İç tartışma ve eleştiri konusunda 0314-dem-elestiri-tam-p, önceki kısa parçanın başını doğrudan PDF sayfasında tamamlar: kendi organında çözülemediği düşünülen konu ve eleştirilerin üst organlara sırasıyla iletilmesi ve yanıt istenmesi söz konusudur; iki tüzük nüshasının yürürlük sırası çıkarılmaz."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dbp-uye-etkinlik-p",
+        "version_id": "0207-dbp-charter-v1",
+        "exact": "Partiden eğitim ve etkinlik düzenlenmesini talep edebilme ve eğitim ve etkinliklere katılabilme,",
+        "prefix": null,
+        "suffix": null,
+        "article": "Madde 14",
+        "section": "Üyelerin Hak ve Görevleri",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dbp-uye-etkinlik-s",
+        "party_id": "dbp",
+        "heading": "Tüzük",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Üye partiden eğitim ve etkinlik düzenlenmesini isteyebilir ve eğitim ve etkinliklere katılabilir.",
+        "pair_id": "0314-dbp-uye-etkinlik-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dbp-uye-etkinlik-q",
+        "party_id": "dbp",
+        "heading": "Tüzük",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Partiden eğitim ve etkinlik düzenlenmesini talep edebilme ve eğitim ve etkinliklere katılabilme,",
+        "pair_id": "0314-dbp-uye-etkinlik-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dbp-uye-etkinlik-s",
+        "passage_id": "0314-dbp-uye-etkinlik-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dbp-uye-etkinlik-q",
+        "passage_id": "0314-dbp-uye-etkinlik-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-dbp-uye-etkinlik-f",
+        "row_id": "03-v3-0308-dbp-draft-074-row",
+        "field": "charter_answer",
+        "summary_finding_id": "0314-dbp-uye-etkinlik-s",
+        "quote_finding_id": "0314-dbp-uye-etkinlik-q",
+        "condition_key": "Parti eğitimi ve etkinlikleri"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-dbp-uye-etkinlik-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:48:20+00:00",
+        "result": "reviewed",
+        "reason": "Üyenin siyasal çalışmalara katılımı konusunda 0314-dbp-uye-etkinlik-p tüzüğün 14. maddesinde parti eğitimi ve etkinliklerine katılma ile bunların düzenlenmesini isteme hakkını doğrudan belirtir; önceki organ görevine adaylık pasajından genel katılım hakkı çıkarılmaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dem-tibbi-uretim-program-missing",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "dem",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0204-dem-missing-current-program",
+        "selection_reason": "Bağımsız güncel tam program aramada elde edilmedi; kongre eki ayrı incelenir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dem-tibbi-uretim-program-missing",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:26:44+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bağımsız güncel program elde edilmedi: 0204-dem-missing-current-program, 0204-dem-search-program aramasına bağlıdır; kongre kararını veya parti tutumunu yok saymaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-yeniyol-tibbi-uretim-program-missing",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "yeni-yol",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0307-yeni-yol-missing-program",
+        "selection_reason": "Bağımsız tam program aramada bulunamadı; farklı parti veya ortak grup belgesi yerine kullanılmaz."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-yeniyol-tibbi-uretim-program-missing",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:26:44+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bağımsız tam program bulunamadı: 0307-yeni-yol-missing-program gerçek program aramasına bağlıdır; konu hakkında karşıt görüş anlamına gelmez."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dbp-tibbi-uretim-program-missing",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "dbp",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": null,
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "document_missing",
+        "scope_id": null,
+        "missing_id": "0207-dbp-missing-current-program",
+        "selection_reason": "Bağımsız güncel DBP programı elde edilmedi; tarihsel BDP kopyaları ayrı tutulur."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dbp-tibbi-uretim-program-missing",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:26:44+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Bağımsız güncel DBP programı elde edilmedi: 0207-dbp-missing-current-program, 0207-dbp-search-current-program aramasına bağlıdır; tarihsel BDP pasajları ayrıca sunulur."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-p1",
+        "version_id": "0207-dbp-bdp-program-v1",
+        "exact": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "2. Sağlık",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-p2",
+        "version_id": "0207-dbp-bdp-program-wordpress-v1",
+        "exact": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "2. Sağlık",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-row1",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "dbp",
+        "level": "ulusal",
+        "organ": "Tarihsel BDP programı",
+        "version_id": "0207-dbp-bdp-program-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Tarihsel BDP program kopyasının sağlık bölümündeki üretim ve denetim hükmü; güncel DBP programı yerine geçmez."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-s1",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Tarihsel BDP programı kopyası ilaç, sağlık teknolojisi ve teçhizatı için üretim, kullanım ve pazarlama denetimi, üretime yatırım ve araştırma geliştirmeye kaynak öngörür.",
+        "pair_id": "0314-bdp-tibbi-uretim-pair1"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-q1",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.",
+        "pair_id": "0314-bdp-tibbi-uretim-pair1"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-tibbi-uretim-s1",
+        "passage_id": "0314-bdp-tibbi-uretim-p1",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-tibbi-uretim-q1",
+        "passage_id": "0314-bdp-tibbi-uretim-p1",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-f1",
+        "row_id": "0314-bdp-tibbi-uretim-row1",
+        "field": "instrument",
+        "summary_finding_id": "0314-bdp-tibbi-uretim-s1",
+        "quote_finding_id": "0314-bdp-tibbi-uretim-q1",
+        "condition_key": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-bdp-tibbi-uretim-row1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:26:44+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme: 0314-bdp-tibbi-uretim-p1 tarihsel BDP kopyasında bu araçları açıkça belirtir; güncel bağımsız DBP programı veya tümüyle yerli üretim iddiası değildir."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-row2",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "dbp",
+        "level": "ulusal",
+        "organ": "Tarihsel BDP programı",
+        "version_id": "0207-dbp-bdp-program-wordpress-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "İkinci tarihsel BDP program kopyasının sağlık bölümündeki aynı hüküm; güncel DBP programı yerine geçmez."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-s2",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "İkinci tarihsel BDP programı kopyası ilaç, sağlık teknolojisi ve teçhizatı için üretim, kullanım ve pazarlama denetimi, üretime yatırım ve araştırma geliştirmeye kaynak öngörür.",
+        "pair_id": "0314-bdp-tibbi-uretim-pair2"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-q2",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "İlaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve pazarlama süreçleri sıkı denetim altına alınacak, üretime dönük yatırımlar yapılacak ve araştırma geliştirme için yeterli kaynak ayrılacaktır.",
+        "pair_id": "0314-bdp-tibbi-uretim-pair2"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-tibbi-uretim-s2",
+        "passage_id": "0314-bdp-tibbi-uretim-p2",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-tibbi-uretim-q2",
+        "passage_id": "0314-bdp-tibbi-uretim-p2",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-bdp-tibbi-uretim-f2",
+        "row_id": "0314-bdp-tibbi-uretim-row2",
+        "field": "instrument",
+        "summary_finding_id": "0314-bdp-tibbi-uretim-s2",
+        "quote_finding_id": "0314-bdp-tibbi-uretim-q2",
+        "condition_key": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-bdp-tibbi-uretim-row2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:26:44+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme: 0314-bdp-tibbi-uretim-p2 ikinci tarihsel BDP kopyasında aynı araçları belirtir; güncel bağımsız DBP programı veya tümüyle yerli üretim iddiası değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-emep-pdf-ilac-uretim-p",
+        "version_id": "0208-emep-charter-pdf-v1",
+        "exact": "İlaç üretimi devlet tarafından üstlenilecek ve fahiş ilaç fiyatlarına son vermek üzere özel ilaç fabrikaları devletleştirilecektir.",
+        "prefix": null,
+        "suffix": null,
+        "article": "B/8",
+        "section": "Program gövdesi: sağlık",
+        "pdf_page_index": 17,
+        "printed_page": "14"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0314-emep-pdf-ilac-uretim-p",
+        "checked_at": "2026-11-14T19:15:54+00:00",
+        "method": "Özgün PDF'nin sıfır tabanlı 17. sayfası Poppler-glib ve Cairo ile görüntülenerek görsel okundu.",
+        "reason": "PDF'nin metin katmanı boştur; basılı 14. sayfadaki B/8 sağlık maddesinin tam ilaç üretimi cümlesi özgün görüntüden doğrulandı."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-emep-pdf-tibbi-uretim-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "emep",
+        "level": "ulusal",
+        "organ": "Yargıtay PDF program gövdesi B/8",
+        "version_id": "0208-emep-charter-pdf-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Yargıtay paketindeki program gövdesinin görsel sağlık maddesi; ilk dört sayfadaki kongre önerisinin kabulü ve gövdeyle sırası bilinmez."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-emep-pdf-ilac-uretim-s",
+        "party_id": "emep",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Yargıtay PDF program gövdesi ilaç üretiminin devletçe üstlenilmesini ve fahiş ilaç fiyatlarına son vermek üzere özel ilaç fabrikalarının devletleştirilmesini öngörür.",
+        "pair_id": "0314-emep-pdf-ilac-uretim-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-emep-pdf-ilac-uretim-q",
+        "party_id": "emep",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "İlaç üretimi devlet tarafından üstlenilecek ve fahiş ilaç fiyatlarına son vermek üzere özel ilaç fabrikaları devletleştirilecektir.",
+        "pair_id": "0314-emep-pdf-ilac-uretim-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-emep-pdf-ilac-uretim-s",
+        "passage_id": "0314-emep-pdf-ilac-uretim-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-emep-pdf-ilac-uretim-q",
+        "passage_id": "0314-emep-pdf-ilac-uretim-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-emep-pdf-ilac-uretim-f",
+        "row_id": "0314-emep-pdf-tibbi-uretim-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-emep-pdf-ilac-uretim-s",
+        "quote_finding_id": "0314-emep-pdf-ilac-uretim-q",
+        "condition_key": "İlaç üretiminin devletçe üstlenilmesi ve özel ilaç fabrikalarının devletleştirilmesi"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-emep-pdf-tibbi-uretim-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:15:54+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. İlaç üretiminin devletçe üstlenilmesi ve özel ilaç fabrikalarının devletleştirilmesi: 0314-emep-pdf-ilac-uretim-p program gövdesinin görsel B/8 maddesinde bu iki aracı ve fahiş fiyatları sona erdirme amacını açıkça belirtir. Ayrı kongre önerisinin kabulü veya belgenin güncelliği çıkarılmaz."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-tip-tibbi-uretim-scope",
+        "party_id": "tip",
+        "version_id": "0203-tip-program-v1",
+        "sections": "Refah İçin Kamucu ve Planlı Ekonomi; Sosyalist Toplumda Çalışma, Üretim ve Bölüşüm; Sağlıklı ve Güvenli Gelecek İçin; Temel Yurttaş Hakları Güvence Altındadır başlıklarının tamamı",
+        "query_terms": "ilaç, aşı, tıbbi ürün, sağlık teknolojisi, üretim",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Bu dört başlık genel kamulaştırma, teknolojik ilerleme ve sağlık hizmetlerini ele alır; ilaç, aşı veya cihaz üretimine özel üretici, yatırım veya Ar-Ge aracı açıklamaz. Bu belirli bölümler dışına yokluk genellenmez."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-tip-tibbi-uretim-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "tip",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": "0203-tip-program-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-tip-tibbi-uretim-scope",
+        "missing_id": null,
+        "selection_reason": "Yalnız sağlık başlığı doğrudan incelendi; diğer ilgili bölümler ayrıca gözden geçirilmelidir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-tip-tibbi-uretim-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Refah İçin Kamucu ve Planlı Ekonomi; Sosyalist Toplumda Çalışma, Üretim ve Bölüşüm; Sağlıklı ve Güvenli Gelecek İçin; Temel Yurttaş Hakları Güvence Altındadır başlıklarının tamamı: Bu dört başlık genel kamulaştırma, teknolojik ilerleme ve sağlık hizmetlerini ele alır; ilaç, aşı veya cihaz üretimine özel üretici, yatırım veya Ar-Ge aracı açıklamaz. Bu belirli bölümler dışına yokluk genellenmez. Dayanak: 0314-tip-tibbi-uretim-scope."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-emep-tibbi-uretim-scope",
+        "party_id": "emep",
+        "version_id": "0208-emep-program-charter-v1",
+        "sections": "Program A bölümündeki 11. halk ve kişi sağlığı maddesinin tamamı",
+        "query_terms": "ilaç, aşı, tıbbi malzeme, donanım, üretim",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Madde sağlık hizmetlerini ve kurumların personel, donanım ve tıbbi malzemeyle örgütlenmesini ele alıyor; bu maddede malzemenin üretim modeli belirtilmiyor. Programın diğer maddeleri ve kongre önerisi bu kapsamda değildir."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-emep-tibbi-uretim-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "emep",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": "0208-emep-program-charter-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-emep-tibbi-uretim-scope",
+        "missing_id": null,
+        "selection_reason": "Yalnız HTML programının sağlık maddesi doğrudan incelendi; diğer ilgili metinler ayrıca gözden geçirilmelidir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-emep-tibbi-uretim-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Yalnız HTML programının 11. sağlık maddesi: 0314-emep-tibbi-uretim-scope malzeme ve hizmet organizasyonunu içerir, üretim modeli içermediğini yalnız bu madde için gösterir."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-demokrat-tibbi-uretim-scope",
+        "party_id": "demokrat",
+        "version_id": "0210-demokrat-program-archive-v1",
+        "sections": "Arşiv programının Sanayi Üretimi ve KOBİ’ler (PDF 39–40), Yatırım Politikaları (45), Yenilikçilik (46–47), İthalat ve İhracat Politikaları (47–48), Sağlık Politikaları (48) başlıklarının tamamı; indeksler sıfır tabanlı",
+        "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Bu beş başlık sanayi finansmanı, yatırım, yenilik, dış ticaret ve sağlık hizmetlerini ele alır; ilaç, aşı veya tıbbi cihaz üretimine özel model, yatırım veya Ar-Ge aracı açıklamaz. Tarihsel kaynaklar ve başka bölümler bu dar kapsamın dışındadır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-demokrat-tibbi-uretim-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "Program",
+        "version_id": "0210-demokrat-program-archive-v1",
+        "alternative_group": null,
+        "source_role": "program",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-demokrat-tibbi-uretim-scope",
+        "missing_id": null,
+        "selection_reason": "Yalnız arşiv programın 11. sağlık politikaları bölümü doğrudan okundu; diğer ilgili metinler ayrıca incelenmelidir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-demokrat-tibbi-uretim-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Arşiv programının Sanayi Üretimi ve KOBİ’ler (PDF 39–40), Yatırım Politikaları (45), Yenilikçilik (46–47), İthalat ve İhracat Politikaları (47–48), Sağlık Politikaları (48) başlıklarının tamamı; indeksler sıfır tabanlı: Bu beş başlık sanayi finansmanı, yatırım, yenilik, dış ticaret ve sağlık hizmetlerini ele alır; ilaç, aşı veya tıbbi cihaz üretimine özel model, yatırım veya Ar-Ge aracı açıklamaz. Tarihsel kaynaklar ve başka bölümler bu dar kapsamın dışındadır. Dayanak: 0314-demokrat-tibbi-uretim-scope."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-dem-tibbi-uretim-congress-scope",
+        "party_id": "dem",
+        "version_id": "0204-dem-policies-v1",
+        "sections": "Demokratik ve Halkçı Ekonomi İçin başlığındaki tüm kongre kararları ve gerekçe",
+        "query_terms": "sağlık, ilaç, aşı, tıbbi üretim",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Kongre eki kamu sağlık hizmeti, sağlık yatırımı ve genel yerel üretimi ele alır; bu bölümde belirli ilaç, aşı veya cihaz üretim aracı açıklanmaz. Bağımsız güncel program açığı ayrıdır."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dem-tibbi-uretim-congress-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "dem",
+        "level": "ulusal",
+        "organ": "Kongre kararları",
+        "version_id": "0204-dem-policies-v1",
+        "alternative_group": null,
+        "source_role": "supplement",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-dem-tibbi-uretim-congress-scope",
+        "missing_id": null,
+        "selection_reason": "Kongre ekinin sağlık hizmetleri maddesi dar kapsamla incelendi; bağımsız program açığı ayrı kayıttadır."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dem-tibbi-uretim-congress-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Demokratik ve Halkçı Ekonomi İçin başlığındaki tüm kongre kararları ve gerekçe: Kongre eki kamu sağlık hizmeti, sağlık yatırımı ve genel yerel üretimi ele alır; bu bölümde belirli ilaç, aşı veya cihaz üretim aracı açıklanmaz. Bağımsız güncel program açığı ayrıdır. Dayanak: 0314-dem-tibbi-uretim-congress-scope."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-iyi-hsk-full-passage-a",
+        "version_id": "0205-iyi-program-page-v1",
+        "exact": "HSK’yı, mahkemelerin bağımsızlığı, doğal veya kanuni hakim ilkesi ve hakim güvencesi sağlanacak biçimde",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Demokrasi ve hukuk",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0306-iyi-program-yargi-bagimsizligi-instrument-summary",
+        "passage_id": "0314-iyi-hsk-full-passage-a",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-iyi-hsk-full-passage-b",
+        "version_id": "0205-iyi-program-page-v1",
+        "exact": "yeniden yapılandıracağız.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Demokrasi ve hukuk",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0306-iyi-program-yargi-bagimsizligi-instrument-summary",
+        "passage_id": "0314-iyi-hsk-full-passage-b",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-iyi-public-personnel-rights-full-passage",
+        "version_id": "0205-iyi-program-page-v1",
+        "exact": "Kamu personelinin halka karşı sorumlu, siyaset kurumuna duyarlı, toplumun tüm kesimlerini temsil edebilme niteliğine haiz, uluslararası standartlarda sosyal güvencelere sahip, grev ve toplu sözleşme haklarıyla donanmış olması yanında, memuriyete alınmada ehliyet, liyakat ve eşitlik ilkelerinin titizlikle uygulandığı, adil ve güvenilir bir Kamu Personel rejiminin tesis edilmesi temel önceliklerimizdir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Kamu Yönetim Politikaları — Personel Rejimi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0306-iyi-program-sendika-grev-instrument-summary",
+        "passage_id": "0314-iyi-public-personnel-rights-full-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-emep-labour-inspection-courts-full-passage",
+        "version_id": "0208-emep-program-charter-v1",
+        "exact": "İş müfettişliği ve iş\nmahkemelerinin, patronu kollama ve işçiyi oyalama aracı olmaktan çıkması.\nBunların, patron ve hükümetlerden uzak, gerçekten bağımsız ve yaptırım gücü\nolan aygıtlar olarak yeniden oluşturulması. İşçi ve sendika örgütlerine,\nbunları denetleme ve yönetimlerine katılma hakkı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "EMEK PARTİSİ PROGRAMI — G/C/2",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0309-emep-program-039-1-summary",
+        "passage_id": "0314-emep-labour-inspection-courts-full-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dyp-1983-gelir-p",
+        "version_id": "0210-demokrat-old1983-v1",
+        "exact": "Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulması şarttır.",
+        "prefix": null,
+        "suffix": null,
+        "article": "49",
+        "section": "Korunmaya Muhtaç Kişiler",
+        "pdf_page_index": 110,
+        "printed_page": "106"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0314-dyp-1983-gelir-p",
+        "checked_at": "2026-11-14T19:49:46+00:00",
+        "method": "Özgün PDF sayfası kaynak araştırmacısı tarafından görsel okundu.",
+        "reason": "Tarihsel taramada ilgili maddenin tam cümlesi özgün sayfa görüntüsünden incelendi; ayrıca devamındaki 65 yaş ve sigortaya dönüşüm bağlamı okundu."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dyp-1983-gelir-row",
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "Tarihsel DYP programı 1983",
+        "version_id": "0210-demokrat-old1983-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Tarihsel DYP nüshasındaki korunmaya muhtaç kişiler maddesi; güncel Demokrat programı veya bugünkü yürürlük yerine geçmez."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dyp-1983-gelir-s",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "1983 tarihli DYP nüshasında yaşlı ve muhtaçların asgari yaşam şartını sağlayacak gelire kavuşturulması hedeflenir; devamında 65 yaşını geçmiş muhtaçlara mevcut uygulamanın yaygınlaştırılması ve zamanla yaşlılık sigortasına dönüşümü ayrıca belirtilir.",
+        "pair_id": "0314-dyp-1983-gelir-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dyp-1983-gelir-q",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulması şarttır.",
+        "pair_id": "0314-dyp-1983-gelir-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1983-gelir-s",
+        "passage_id": "0314-dyp-1983-gelir-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1983-gelir-q",
+        "passage_id": "0314-dyp-1983-gelir-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-dyp-1983-gelir-f",
+        "row_id": "0314-dyp-1983-gelir-row",
+        "field": "target",
+        "summary_finding_id": "0314-dyp-1983-gelir-s",
+        "quote_finding_id": "0314-dyp-1983-gelir-q",
+        "condition_key": "Yaşlı ve muhtaçlara asgari yaşam şartını sağlayacak gelir"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dyp-1983-gelir-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Yaşlı ve muhtaçlara asgari yaşam geliri; 65 yaşını geçen muhtaçlara mevcut uygulama ve yaşlılık sigortasına dönüşüm ayrı bağlam: 0314-dyp-1983-gelir-p belirli gruplara asgari gelir hedefini söyler; eşit tutar, koşulsuz evrensel veya düzenli nakit ödeme aracı çıkarılmaz. Tarihsel DYP nüshası güncel Demokrat programı değildir. 0314-dyp-1983-gelir-context-p maddenin 65 yaş ve sigortaya dönüşüm bağlamını içerir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dyp-1988-gelir-p",
+        "version_id": "0210-demokrat-old1988-v1",
+        "exact": "Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulmaları şarttır.",
+        "prefix": null,
+        "suffix": null,
+        "article": "50",
+        "section": "Korunmaya Muhtaç Kişiler",
+        "pdf_page_index": 119,
+        "printed_page": "119"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0314-dyp-1988-gelir-p",
+        "checked_at": "2026-11-14T19:49:46+00:00",
+        "method": "Özgün PDF sayfası kaynak araştırmacısı tarafından görsel okundu.",
+        "reason": "Tarihsel taramada ilgili maddenin tam cümlesi özgün sayfa görüntüsünden incelendi; ayrıca devamındaki 65 yaş ve sigortaya dönüşüm bağlamı okundu."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dyp-1988-gelir-row",
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "Tarihsel DYP programı 1988",
+        "version_id": "0210-demokrat-old1988-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Tarihsel DYP nüshasındaki korunmaya muhtaç kişiler maddesi; güncel Demokrat programı veya bugünkü yürürlük yerine geçmez."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dyp-1988-gelir-s",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "1988 tarihli DYP nüshasında yaşlı ve muhtaçlara asgari yaşam şartını sağlayacak gelir hedeflenir; 65 yaşını geçmiş muhtaçlara uygulamanın yaygınlaştırılması ve zamanla yaşlılık sigortasına dönüşümü ayrı bağlamdır.",
+        "pair_id": "0314-dyp-1988-gelir-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dyp-1988-gelir-q",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulmaları şarttır.",
+        "pair_id": "0314-dyp-1988-gelir-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1988-gelir-s",
+        "passage_id": "0314-dyp-1988-gelir-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1988-gelir-q",
+        "passage_id": "0314-dyp-1988-gelir-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-dyp-1988-gelir-f",
+        "row_id": "0314-dyp-1988-gelir-row",
+        "field": "target",
+        "summary_finding_id": "0314-dyp-1988-gelir-s",
+        "quote_finding_id": "0314-dyp-1988-gelir-q",
+        "condition_key": "Yaşlı ve muhtaçlara asgari yaşam şartını sağlayacak gelir"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dyp-1988-gelir-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Yaşlı ve muhtaçlara asgari yaşam geliri; 65 yaşını geçen muhtaçlara mevcut uygulama ve yaşlılık sigortasına dönüşüm ayrı bağlam: 0314-dyp-1988-gelir-p belirli gruplara asgari gelir hedefini söyler; eşit tutar, koşulsuz evrensel veya düzenli nakit ödeme aracı çıkarılmaz. Tarihsel DYP nüshası güncel Demokrat programı değildir. 0314-dyp-1988-gelir-context-p maddenin 65 yaş ve sigortaya dönüşüm bağlamını içerir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dyp-1990-gelir-p",
+        "version_id": "0210-demokrat-old1990-v1",
+        "exact": "Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulmaları şarttır.",
+        "prefix": null,
+        "suffix": null,
+        "article": "50",
+        "section": "Korunmaya Muhtaç Kişiler",
+        "pdf_page_index": 120,
+        "printed_page": "119"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0314-dyp-1990-gelir-p",
+        "checked_at": "2026-11-14T19:49:46+00:00",
+        "method": "Özgün PDF sayfası kaynak araştırmacısı tarafından görsel okundu.",
+        "reason": "Tarihsel taramada ilgili maddenin tam cümlesi özgün sayfa görüntüsünden incelendi; ayrıca devamındaki 65 yaş ve sigortaya dönüşüm bağlamı okundu."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dyp-1990-gelir-row",
+        "topic_id": "temel-yurttaslik-geliri",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "Tarihsel DYP programı 1990",
+        "version_id": "0210-demokrat-old1990-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "evidence",
+        "scope_id": null,
+        "missing_id": null,
+        "selection_reason": "Tarihsel DYP nüshasındaki korunmaya muhtaç kişiler maddesi; güncel Demokrat programı veya bugünkü yürürlük yerine geçmez."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dyp-1990-gelir-s",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "1990 tarihli DYP nüshasında yaşlı ve muhtaçlara asgari yaşam şartını sağlayacak gelir hedeflenir; 65 yaşını geçmiş muhtaçlara uygulamanın yaygınlaştırılması ve zamanla yaşlılık sigortasına dönüşümü ayrı bağlamdır.",
+        "pair_id": "0314-dyp-1990-gelir-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-dyp-1990-gelir-q",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulmaları şarttır.",
+        "pair_id": "0314-dyp-1990-gelir-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1990-gelir-s",
+        "passage_id": "0314-dyp-1990-gelir-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1990-gelir-q",
+        "passage_id": "0314-dyp-1990-gelir-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-dyp-1990-gelir-f",
+        "row_id": "0314-dyp-1990-gelir-row",
+        "field": "target",
+        "summary_finding_id": "0314-dyp-1990-gelir-s",
+        "quote_finding_id": "0314-dyp-1990-gelir-q",
+        "condition_key": "Yaşlı ve muhtaçlara asgari yaşam şartını sağlayacak gelir"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dyp-1990-gelir-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz. Yaşlı ve muhtaçlara asgari yaşam geliri; 65 yaşını geçen muhtaçlara mevcut uygulama ve yaşlılık sigortasına dönüşüm ayrı bağlam: 0314-dyp-1990-gelir-p belirli gruplara asgari gelir hedefini söyler; eşit tutar, koşulsuz evrensel veya düzenli nakit ödeme aracı çıkarılmaz. Tarihsel DYP nüshası güncel Demokrat programı değildir. 0314-dyp-1990-gelir-context-p maddenin 65 yaş ve sigortaya dönüşüm bağlamını içerir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dyp-1983-gelir-context-p",
+        "version_id": "0210-demokrat-old1983-v1",
+        "exact": "Yaşlı, kimsesiz ve muhtaçların hayatlarının idamesini sağlamayı cemiyetin görevi sayarız. Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulması şarttır. 65 yaşını geçmiş muhtaçlar hakkında mevcut uygulamayı, daha kolay işler hale getirerek yaygınlaştırmayı ve yaşlılara sağlanan imkânı ekonominin gelişmesine mütenasip olarak arttırmayı gerekli görürüz.\n\n65 yaşını geçen muhtaçlara yapılan bu uygulamayı zamanla yaşlılık sigortasına dönüştürmeyi uygun buluruz.",
+        "prefix": null,
+        "suffix": null,
+        "article": "49",
+        "section": "Korunmaya Muhtaç Kişiler",
+        "pdf_page_index": 110,
+        "printed_page": "106"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0314-dyp-1983-gelir-context-p",
+        "checked_at": "2026-11-14T19:49:46+00:00",
+        "method": "Özgün PDF sayfası kaynak araştırmacısı tarafından görsel okundu.",
+        "reason": "Korunmaya Muhtaç Kişiler maddesinin iki paragrafı sayfa görüntüsünden okunarak 65 yaş ve sigorta bağlamı korunmuştur."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1983-gelir-s",
+        "passage_id": "0314-dyp-1983-gelir-context-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dyp-1988-gelir-context-p",
+        "version_id": "0210-demokrat-old1988-v1",
+        "exact": "Yaşlı, kimsesiz ve muhtaçların hayatlarının idamesini sağlamayı cemiyetin görevi sayarız. Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulmaları şarttır. 65 yaşını geçmiş muhtaçlar hakkındaki uygulamayı, daha kolay işler hale getirerek yaygınlaştırmayı ve yaşlılara sağlanan imkânı ekonominin gelişmesine mütenasip olarak arttırmayı gerekli görürüz.\n\n65 yaşını geçen muhtaçlara yapılan bu uygulamayı zamanla yaşlılık sigortasına dönüştürmeyi uygun buluruz.",
+        "prefix": null,
+        "suffix": null,
+        "article": "50",
+        "section": "Korunmaya Muhtaç Kişiler",
+        "pdf_page_index": 119,
+        "printed_page": "119"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0314-dyp-1988-gelir-context-p",
+        "checked_at": "2026-11-14T19:49:46+00:00",
+        "method": "Özgün PDF sayfası kaynak araştırmacısı tarafından görsel okundu.",
+        "reason": "Korunmaya Muhtaç Kişiler maddesinin iki paragrafı sayfa görüntüsünden okunarak 65 yaş ve sigorta bağlamı korunmuştur."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1988-gelir-s",
+        "passage_id": "0314-dyp-1988-gelir-context-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-dyp-1990-gelir-context-p",
+        "version_id": "0210-demokrat-old1990-v1",
+        "exact": "Yaşlı, kimsesiz ve muhtaçların hayatlarının idamesini sağlamayı cemiyetin görevi sayarız. Yaşlı ve muhtaçların, asgari yaşama şartını sağlayacak bir gelire kavuşturulmaları şarttır. 65 yaşını geçmiş muhtaçlar hakkındaki uygulamayı, daha kolay işler hâle getirerek yaygınlaştırmayı ve yaşlılara sağlanan imkânı ekonominin gelişmesine mütenasip olarak arttırmayı gerekli görürüz.\n\n65 yaşını geçen muhtaçlara yapılan bu uygulamayı zamanla yaşlılık sigortasına dönüştürmeyi uygun buluruz.",
+        "prefix": null,
+        "suffix": null,
+        "article": "50",
+        "section": "Korunmaya Muhtaç Kişiler",
+        "pdf_page_index": 120,
+        "printed_page": "119"
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0314-dyp-1990-gelir-context-p",
+        "checked_at": "2026-11-14T19:49:46+00:00",
+        "method": "Özgün PDF sayfası kaynak araştırmacısı tarafından görsel okundu.",
+        "reason": "Korunmaya Muhtaç Kişiler maddesinin iki paragrafı sayfa görüntüsünden okunarak 65 yaş ve sigorta bağlamı korunmuştur."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-dyp-1990-gelir-s",
+        "passage_id": "0314-dyp-1990-gelir-context-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "attempt",
+      "values": {
+        "id": "0314-dyp-1985-income-page-check",
+        "lead_id": null,
+        "party_id": "demokrat",
+        "heading": "Program",
+        "topic_id": "temel-yurttaslik-geliri",
+        "type": "verification",
+        "query": "0210-demokrat-old1985-v1: PDF indeks 102–103, basılı sayfa 98–101 arasındaki süreklilik",
+        "attempted_at": "2026-11-14T19:49:46+00:00",
+        "result": "inconclusive",
+        "reason": "Özgün taramada basılı 98 sayfasındaki Sendikal Haklar başlangıcından sonra PDF doğrudan basılı 101 Dış Politika sayfasına geçiyor; basılı 99–100 ve bu nüshanın ilgili sosyal güvenlik/yardım maddeleri görülemiyor.",
+        "source_version_id": "0210-demokrat-old1985-v1"
+      }
+    },
+    {
+      "kind": "missing",
+      "values": {
+        "id": "0314-dyp-1985-income-pages-missing",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "topic_id": "temel-yurttaslik-geliri",
+        "attempt_id": "0314-dyp-1985-income-page-check",
+        "status": "Doğrulanamadı",
+        "reason": "Bu özgün 1985 taramasındaki basılı 99–100 eksik olduğundan ilgili tarihsel gelir maddesi doğrulanamadı; diğer DYP nüshaları veya güncel Demokrat programı yerine geçirilmez."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-saadet-medikal-ardestek-p",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Paketleme ile üretim birbirinden ayrılacak, Ar-Ge çalışmalarıyla yerli üretim teşvik\nedilecektir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "2.3.2 Sağlık — Yerli İlaç, Tıbbi Cihaz",
+        "pdf_page_index": 30,
+        "printed_page": "31"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-medikal-ardestek-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Paketleme ile üretimin ayrılması ve Ar-Ge ile yerli üretimin teşviki önerilir.",
+        "pair_id": "0314-saadet-medikal-ardestek-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-medikal-ardestek-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Paketleme ile üretim birbirinden ayrılacak, Ar-Ge çalışmalarıyla yerli üretim teşvik\nedilecektir.",
+        "pair_id": "0314-saadet-medikal-ardestek-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-medikal-ardestek-s",
+        "passage_id": "0314-saadet-medikal-ardestek-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-medikal-ardestek-q",
+        "passage_id": "0314-saadet-medikal-ardestek-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-medikal-ardestek-f",
+        "row_id": "0314-saadet-tibbi-uretim-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-medikal-ardestek-s",
+        "quote_finding_id": "0314-saadet-medikal-ardestek-q",
+        "condition_key": "Paketleme ve üretim ayrımı ile Ar-Ge"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-saadet-medikal-teknokent-p",
+        "version_id": "0209-saadet-current-program-v1",
+        "exact": "Medikal ürünlerin üretimi, yerlileştirilmesi için teknokent-üniversiteler iş birliği ile milli\nteknolojilerde dışa bağımlılığı ortadan kaldırılacak çalışmalar yapılacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "2.3.2 Sağlık — Yerli İlaç, Tıbbi Cihaz",
+        "pdf_page_index": 30,
+        "printed_page": "31"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-medikal-teknokent-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Medikal ürünlerin üretimi ve yerlileştirilmesi için teknokent–üniversite iş birliğiyle millî teknolojilerde dışa bağımlılığı kaldırmaya yönelik çalışmalar önerilir.",
+        "pair_id": "0314-saadet-medikal-teknokent-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-medikal-teknokent-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Medikal ürünlerin üretimi, yerlileştirilmesi için teknokent-üniversiteler iş birliği ile milli\nteknolojilerde dışa bağımlılığı ortadan kaldırılacak çalışmalar yapılacaktır.",
+        "pair_id": "0314-saadet-medikal-teknokent-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-medikal-teknokent-s",
+        "passage_id": "0314-saadet-medikal-teknokent-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-medikal-teknokent-q",
+        "passage_id": "0314-saadet-medikal-teknokent-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-medikal-teknokent-f",
+        "row_id": "0314-saadet-tibbi-uretim-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-medikal-teknokent-s",
+        "quote_finding_id": "0314-saadet-medikal-teknokent-q",
+        "condition_key": "Medikal ürünler için teknokent–üniversite iş birliği"
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-dyp1983-tibbi-scope",
+        "party_id": "demokrat",
+        "version_id": "0210-demokrat-old1983-v1",
+        "sections": "Sanayi ve küçük sanayi md24–25 PDF indeks 91–93; Araştırma/Teknoloji md41 indeks104; sağlık md43–44 indeks105–106",
+        "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim ve yatırım",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dyp1983-tibbi-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "1983 DYP",
+        "version_id": "0210-demokrat-old1983-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-dyp1983-tibbi-scope",
+        "missing_id": null,
+        "selection_reason": "Tarihsel kaynağın belirtilen bölümleri konuya özgü görsel incelendi; güncel program yerine geçmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dyp1983-tibbi-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Sanayi ve küçük sanayi md24–25 PDF indeks 91–93; Araştırma/Teknoloji md41 indeks104; sağlık md43–44 indeks105–106: 0314-dyp1983-tibbi-scope İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz. Sonuç yalnız belirtilen tarihsel kaynak ve bölümlerdedir."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-dyp1985-tibbi-scope",
+        "party_id": "demokrat",
+        "version_id": "0210-demokrat-old1985-v1",
+        "sections": "Sanayi ve küçük sanayi md25–26 PDF indeks 89–90; Araştırma/Teknoloji md42 indeks99; sağlık md44–45 indeks100–101",
+        "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim ve yatırım",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz. Ayrı gelir sorusuna ilişkin eksik basılı 99–100 sayfalar bu tıbbi bölümle karıştırılmaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dyp1985-tibbi-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "1985 DYP",
+        "version_id": "0210-demokrat-old1985-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-dyp1985-tibbi-scope",
+        "missing_id": null,
+        "selection_reason": "Tarihsel kaynağın belirtilen bölümleri konuya özgü görsel incelendi; güncel program yerine geçmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dyp1985-tibbi-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Sanayi ve küçük sanayi md25–26 PDF indeks 89–90; Araştırma/Teknoloji md42 indeks99; sağlık md44–45 indeks100–101: 0314-dyp1985-tibbi-scope İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz. Ayrı gelir sorusuna ilişkin eksik basılı 99–100 sayfalar bu tıbbi bölümle karıştırılmaz. Sonuç yalnız belirtilen tarihsel kaynak ve bölümlerdedir."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-dyp1988-tibbi-scope",
+        "party_id": "demokrat",
+        "version_id": "0210-demokrat-old1988-v1",
+        "sections": "Sanayi ve küçük sanayi md25–26 PDF indeks103–104; Araştırma/Teknoloji md42 indeks113–114; sağlık md44–45 indeks114–116",
+        "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim ve yatırım",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dyp1988-tibbi-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "1988 DYP",
+        "version_id": "0210-demokrat-old1988-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-dyp1988-tibbi-scope",
+        "missing_id": null,
+        "selection_reason": "Tarihsel kaynağın belirtilen bölümleri konuya özgü görsel incelendi; güncel program yerine geçmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dyp1988-tibbi-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Sanayi ve küçük sanayi md25–26 PDF indeks103–104; Araştırma/Teknoloji md42 indeks113–114; sağlık md44–45 indeks114–116: 0314-dyp1988-tibbi-scope İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz. Sonuç yalnız belirtilen tarihsel kaynak ve bölümlerdedir."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-dyp1990-tibbi-scope",
+        "party_id": "demokrat",
+        "version_id": "0210-demokrat-old1990-v1",
+        "sections": "Sanayi ve küçük sanayi md25–26 PDF indeks104–105; Araştırma/Teknoloji md42 indeks114; sağlık md44–45 indeks115–117",
+        "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim ve yatırım",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-dyp1990-tibbi-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "1990 DYP",
+        "version_id": "0210-demokrat-old1990-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-dyp1990-tibbi-scope",
+        "missing_id": null,
+        "selection_reason": "Tarihsel kaynağın belirtilen bölümleri konuya özgü görsel incelendi; güncel program yerine geçmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-dyp1990-tibbi-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Sanayi ve küçük sanayi md25–26 PDF indeks104–105; Araştırma/Teknoloji md42 indeks114; sağlık md44–45 indeks115–117: 0314-dyp1990-tibbi-scope İncelenen sanayi, araştırma ve sağlık maddeleri genel teknoloji ve sağlık hizmetlerini ele alır; özel ilaç, aşı veya cihaz üretim aracı açıklamaz. Sonuç yalnız belirtilen tarihsel kaynak ve bölümlerdedir."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-demokrasi-ozet-tibbi-scope",
+        "party_id": "demokrat",
+        "version_id": "0210-demokrat-democracy-summary-v1",
+        "sections": "Sağlık Reformu PDF indeks19; Biyoteknoloji ve 21. Yüzyıl Projeleri indeks21–24",
+        "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim ve yatırım",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Sağlık reformu hizmet sunumu ve finansmanını; biyoteknoloji sağlık dahil çeşitli alanlarda genel yatırım, araştırma ve eğitimi ele alır. Belirli ilaç, aşı veya tıbbi cihaz üretim modeli açıklanmaz; genel sağlık biyoteknolojisi bağlamı yok sayılmaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-demokrasi-ozet-tibbi-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "demokrat",
+        "level": "ulusal",
+        "organ": "Tarihsel II. Demokrasi özeti",
+        "version_id": "0210-demokrat-democracy-summary-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-demokrasi-ozet-tibbi-scope",
+        "missing_id": null,
+        "selection_reason": "Tarihsel kaynağın belirtilen bölümleri konuya özgü görsel incelendi; güncel program yerine geçmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-demokrasi-ozet-tibbi-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Sağlık Reformu PDF indeks19; Biyoteknoloji ve 21. Yüzyıl Projeleri indeks21–24: 0314-demokrasi-ozet-tibbi-scope Sağlık reformu hizmet sunumu ve finansmanını; biyoteknoloji sağlık dahil çeşitli alanlarda genel yatırım, araştırma ve eğitimi ele alır. Belirli ilaç, aşı veya tıbbi cihaz üretim modeli açıklanmaz; genel sağlık biyoteknolojisi bağlamı yok sayılmaz. Sonuç yalnız belirtilen tarihsel kaynak ve bölümlerdedir."
+      }
+    },
+    {
+      "kind": "comparison_review_scope",
+      "values": {
+        "id": "0314-ep1996-tibbi-scope",
+        "party_id": "emep",
+        "version_id": "0208-emep-tbmm-1996-pdf-v1",
+        "sections": "Ekonomik ve sosyal alan PDF indeks25–27; çevre/teknoloji indeks29; kadın ve gençlik indeks30–31",
+        "query_terms": "ilaç, aşı, tıbbi cihaz, sağlık teknolojisi, üretim ve yatırım",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "no_explicit_statement",
+        "reason": "Bu tarihsel kesitler genel ulusallaştırma, sigorta, koruyucu sağlık ve çevre teknolojisini anlatır; belirli ilaç, aşı veya tıbbi cihaz üretim hükmü içermez. Ayrı EMEP taramasındaki ilaç üretim hükmü bu belgeye aktarılmaz."
+      }
+    },
+    {
+      "kind": "comparison_row",
+      "values": {
+        "id": "0314-ep1996-tibbi-row",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "party_id": "emep",
+        "level": "ulusal",
+        "organ": "1996 tarihli ayrı EP programı",
+        "version_id": "0208-emep-tbmm-1996-pdf-v1",
+        "alternative_group": null,
+        "source_role": "historical",
+        "state": "no_explicit_statement",
+        "scope_id": "0314-ep1996-tibbi-scope",
+        "missing_id": null,
+        "selection_reason": "Tarihsel kaynağın belirtilen bölümleri konuya özgü görsel incelendi; güncel program yerine geçmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_row",
+        "subject_id": "0314-ep1996-tibbi-row",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:49:46+00:00",
+        "result": "reviewed",
+        "reason": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir. Ekonomik ve sosyal alan PDF indeks25–27; çevre/teknoloji indeks29; kadın ve gençlik indeks30–31: 0314-ep1996-tibbi-scope Bu tarihsel kesitler genel ulusallaştırma, sigorta, koruyucu sağlık ve çevre teknolojisini anlatır; belirli ilaç, aşı veya tıbbi cihaz üretim hükmü içermez. Ayrı EMEP taramasındaki ilaç üretim hükmü bu belgeye aktarılmaz. Sonuç yalnız belirtilen tarihsel kaynak ve bölümlerdedir."
+      }
+    }
   ],
   "row_reviews": [
-    {"row_id": "03-v3-03-v2-yeni-parti-temel-yurttaslik-geliri", "topic_id": "temel-yurttaslik-geliri", "party_id": "yeni-parti", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Her vatandaş için temel vatandaşlık geliri", "refs": ["0303-epm-program-temel-yurttaslik-geliri-p1"]},
-    {"row_id": "03-v3-03-v2-dem-temel-yurttaslik-geliri", "topic_id": "temel-yurttaslik-geliri", "party_id": "dem", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Geliri olmayan tüm yurttaşlar ve kongre eki", "refs": ["03-dem-gelir"]},
-    {"row_id": "03-v3-03-v2-dem-gelir-program-eksik", "topic_id": "temel-yurttaslik-geliri", "party_id": "dem", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Bağımsız güncel DEM programı elde edilmedi", "refs": ["0204-dem-missing-current-program"]},
-    {"row_id": "03-v3-03-v2-dbp-temel-yurttaslik-geliri", "topic_id": "temel-yurttaslik-geliri", "party_id": "dbp", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Bağımsız güncel DBP programı elde edilmedi", "refs": ["0207-dbp-missing-current-program"]},
-    {"row_id": "03-v3-03-v2-yeni-yol-temel-yurttaslik-geliri", "topic_id": "temel-yurttaslik-geliri", "party_id": "yeni-yol", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Bağımsız Yeni Yol tam programı bulunamadı", "refs": ["0206-yeni-yol-missing-program"]},
-    {"row_id": "03-v3-03-v2-demokrat-temel-yurttaslik-geliri", "topic_id": "temel-yurttaslik-geliri", "party_id": "demokrat", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Her vatandaş için iş, aş ve asgari nakit gelir desteği", "refs": ["0313-demokrat-068-temel-yurttaslik-geliri-p"]},
-    {"row_id": "03-v3-0309-emep-program-pdf-003-1-row", "topic_id": "temel-yurttaslik-geliri", "party_id": "emep", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Kongreye sunulan öneride işsiz, yaşlı ve malullere primsiz devlet bütçesi aylığı", "refs": ["0309-emep-program-pdf-003-1-passage"]},
-    {"row_id": "03-v3-0309-emep-program-pdf-009-2-row", "topic_id": "temel-yurttaslik-geliri", "party_id": "emep", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Kongreye sunulan öneride çalışamayan engellilere aylık", "refs": ["0309-emep-program-pdf-009-2-passage"]},
-    {"row_id": "03-v3-0308-dbp-program-061-0-row", "topic_id": "temel-yurttaslik-geliri", "party_id": "dbp", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım", "refs": ["0308-dbp-program-061-0-passage", "0314-bdp-duzenli-nakit-p1"]},
-    {"row_id": "03-v3-0308-dbp-program-061-1-row", "topic_id": "temel-yurttaslik-geliri", "party_id": "dbp", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım", "refs": ["0308-dbp-program-061-1-passage", "0314-bdp-duzenli-nakit-p2"]},
-    {"row_id": "0314-saadet-nakit-gelir-row", "topic_id": "temel-yurttaslik-geliri", "party_id": "saadet", "definition": "Yurttaşlara veya belirli gruplara yönelik asgari nakit gelir ve düzenli parasal yardımlar; yararlanıcı, araç ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı nakit ödeme sayılmaz.", "conditions": "Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar", "refs": ["0311-saadet-p2-073-temel-yurttaslik-geliri-p"]},
-    {"row_id": "0314-dem-tarihsel-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "party_id": "dem", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Yalnız tarihsel basın aktarımının 21. sağlık bölümü", "refs": ["0314-dem-tarihsel-tibbi-uretim-scope"]},
-    {"row_id": "0314-tip-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "party_id": "tip", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Yalnız Sağlıklı ve Güvenli Gelecek İçin başlığı", "refs": ["0314-tip-tibbi-uretim-scope"]},
-    {"row_id": "0314-emep-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "party_id": "emep", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Yalnız HTML programının 11. sağlık maddesi", "refs": ["0314-emep-tibbi-uretim-scope"]},
-    {"row_id": "0314-demokrat-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "party_id": "demokrat", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Yalnız arşiv programın 11. sağlık politikaları bölümü", "refs": ["0314-demokrat-tibbi-uretim-scope"]},
-    {"row_id": "0314-dem-tibbi-uretim-congress-row", "topic_id": "tibbi-urun-uretimi", "party_id": "dem", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Yalnız kongre kararının sağlık hizmetleri maddesi", "refs": ["0314-dem-tibbi-uretim-congress-scope"]},
-    {"row_id": "0314-dem-tibbi-uretim-program-missing", "topic_id": "tibbi-urun-uretimi", "party_id": "dem", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Bağımsız güncel program elde edilmedi", "refs": ["0204-dem-missing-current-program"]},
-    {"row_id": "0314-yeniyol-tibbi-uretim-program-missing", "topic_id": "tibbi-urun-uretimi", "party_id": "yeni-yol", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Bağımsız tam program bulunamadı", "refs": ["0307-yeni-yol-missing-program"]},
-    {"row_id": "0314-dbp-tibbi-uretim-program-missing", "topic_id": "tibbi-urun-uretimi", "party_id": "dbp", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Bağımsız güncel DBP programı elde edilmedi", "refs": ["0207-dbp-missing-current-program"]},
-    {"row_id": "0314-bdp-tibbi-uretim-row1", "topic_id": "tibbi-urun-uretimi", "party_id": "dbp", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme", "refs": ["0314-bdp-tibbi-uretim-p1"]},
-    {"row_id": "0314-bdp-tibbi-uretim-row2", "topic_id": "tibbi-urun-uretimi", "party_id": "dbp", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme", "refs": ["0314-bdp-tibbi-uretim-p2"]},
-    {"row_id": "0314-iyi-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "party_id": "iyi", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Bulaşıcı hastalıklara karşı kullanılan bakteriyel ve viral aşıların millî üretim altyapısı", "refs": ["0314-iyi-tibbi-uretim-p"]},
-    {"row_id": "0314-yeni-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "party_id": "yeni-parti", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihazlarda yerli kapasite artışı", "refs": ["0303-epm-program-detail-sagliga-erisim-p5"]},
-    {"row_id": "0314-saadet-tibbi-uretim-row", "topic_id": "tibbi-urun-uretimi", "party_id": "saadet", "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "conditions": "Tıbbi cihaz, ilaç ve aşıda dışa bağımlılığın kaldırılması ve yerli ilaç üretimi için bilimsel çalışma", "refs": ["0311-saadet-backfill-05-p", "0311-saadet-p2-172-teknoloji-inovasyon-p"]}
+    {
+      "row_id": "0314-tip-asgari-duzenli-gelir-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "tip",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Yalnız sosyalist toplum, çalışma ve sosyal haklar ile ekonomik refah bölümleri",
+      "refs": [
+        "0314-tip-asgari-duzenli-gelir-scope"
+      ]
+    },
+    {
+      "row_id": "0314-emep-pdf-tibbi-uretim-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "emep",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "İlaç üretiminin devletçe üstlenilmesi ve özel ilaç fabrikalarının devletleştirilmesi",
+      "refs": [
+        "0314-emep-pdf-ilac-uretim-p"
+      ]
+    },
+    {
+      "row_id": "0314-iyi-asgari-duzenli-gelir-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "iyi",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Yalnız belirtilen ekonomi, tarım, eğitim, sağlık, çalışma ve engellilik bölümleri",
+      "refs": [
+        "0314-iyi-asgari-duzenli-gelir-scope"
+      ]
+    },
+    {
+      "row_id": "0314-emep-nakit-gelir-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "emep",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "İşini kaybeden emekçi ve ölen emekçinin bakmakla yükümlü olduğu yakınları; patronlara özel vergi",
+      "refs": [
+        "0309-emep-program-059-1-passage"
+      ]
+    },
+    {
+      "row_id": "03-v3-03-v2-yeni-parti-temel-yurttaslik-geliri",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "yeni-parti",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Her vatandaş için temel vatandaşlık geliri",
+      "refs": [
+        "0303-epm-program-temel-yurttaslik-geliri-p1"
+      ]
+    },
+    {
+      "row_id": "03-v3-03-v2-dem-temel-yurttaslik-geliri",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "dem",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Geliri olmayan tüm yurttaşlar ve kongre eki",
+      "refs": [
+        "03-dem-gelir"
+      ]
+    },
+    {
+      "row_id": "03-v3-03-v2-dem-gelir-program-eksik",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "dem",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Bağımsız güncel DEM programı elde edilmedi",
+      "refs": [
+        "0204-dem-missing-current-program"
+      ]
+    },
+    {
+      "row_id": "03-v3-03-v2-dbp-temel-yurttaslik-geliri",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "dbp",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Bağımsız güncel DBP programı elde edilmedi",
+      "refs": [
+        "0207-dbp-missing-current-program"
+      ]
+    },
+    {
+      "row_id": "03-v3-03-v2-yeni-yol-temel-yurttaslik-geliri",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "yeni-yol",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Bağımsız Yeni Yol tam programı bulunamadı",
+      "refs": [
+        "0206-yeni-yol-missing-program"
+      ]
+    },
+    {
+      "row_id": "03-v3-03-v2-demokrat-temel-yurttaslik-geliri",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "demokrat",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Her vatandaş için iş, aş ve asgari nakit gelir desteği",
+      "refs": [
+        "0313-demokrat-068-temel-yurttaslik-geliri-p"
+      ]
+    },
+    {
+      "row_id": "03-v3-0309-emep-program-pdf-003-1-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "emep",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Kongreye sunulan öneride işsiz, yaşlı ve malullere primsiz devlet bütçesi aylığı",
+      "refs": [
+        "0309-emep-program-pdf-003-1-passage"
+      ]
+    },
+    {
+      "row_id": "03-v3-0309-emep-program-pdf-009-2-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "emep",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Kongreye sunulan öneride çalışamayan engellilere aylık",
+      "refs": [
+        "0309-emep-program-pdf-009-2-passage"
+      ]
+    },
+    {
+      "row_id": "03-v3-0308-dbp-program-061-0-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "dbp",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım",
+      "refs": [
+        "0308-dbp-program-061-0-passage",
+        "0314-bdp-duzenli-nakit-p1"
+      ]
+    },
+    {
+      "row_id": "03-v3-0308-dbp-program-061-1-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "dbp",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Emeklilik yaşına gelenlere 2022 sayılı kanun aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen düzenli nakdi yardım",
+      "refs": [
+        "0308-dbp-program-061-1-passage",
+        "0314-bdp-duzenli-nakit-p2"
+      ]
+    },
+    {
+      "row_id": "0314-saadet-nakit-gelir-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "saadet",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar",
+      "refs": [
+        "0311-saadet-p2-073-temel-yurttaslik-geliri-p"
+      ]
+    },
+    {
+      "row_id": "0314-tip-tibbi-uretim-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "tip",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Refah İçin Kamucu ve Planlı Ekonomi; Sosyalist Toplumda Çalışma, Üretim ve Bölüşüm; Sağlıklı ve Güvenli Gelecek İçin; Temel Yurttaş Hakları Güvence Altındadır başlıklarının tamamı",
+      "refs": [
+        "0314-tip-tibbi-uretim-scope"
+      ]
+    },
+    {
+      "row_id": "0314-emep-tibbi-uretim-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "emep",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Yalnız HTML programının 11. sağlık maddesi",
+      "refs": [
+        "0314-emep-tibbi-uretim-scope"
+      ]
+    },
+    {
+      "row_id": "0314-demokrat-tibbi-uretim-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "demokrat",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Arşiv programının Sanayi Üretimi ve KOBİ’ler (PDF 39–40), Yatırım Politikaları (45), Yenilikçilik (46–47), İthalat ve İhracat Politikaları (47–48), Sağlık Politikaları (48) başlıklarının tamamı; indeksler sıfır tabanlı",
+      "refs": [
+        "0314-demokrat-tibbi-uretim-scope"
+      ]
+    },
+    {
+      "row_id": "0314-dem-tibbi-uretim-congress-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "dem",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Demokratik ve Halkçı Ekonomi İçin başlığındaki tüm kongre kararları ve gerekçe",
+      "refs": [
+        "0314-dem-tibbi-uretim-congress-scope"
+      ]
+    },
+    {
+      "row_id": "0314-dem-tibbi-uretim-program-missing",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "dem",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Bağımsız güncel program elde edilmedi",
+      "refs": [
+        "0204-dem-missing-current-program"
+      ]
+    },
+    {
+      "row_id": "0314-yeniyol-tibbi-uretim-program-missing",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "yeni-yol",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Bağımsız tam program bulunamadı",
+      "refs": [
+        "0307-yeni-yol-missing-program"
+      ]
+    },
+    {
+      "row_id": "0314-dbp-tibbi-uretim-program-missing",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "dbp",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Bağımsız güncel DBP programı elde edilmedi",
+      "refs": [
+        "0207-dbp-missing-current-program"
+      ]
+    },
+    {
+      "row_id": "0314-bdp-tibbi-uretim-row1",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "dbp",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme",
+      "refs": [
+        "0314-bdp-tibbi-uretim-p1"
+      ]
+    },
+    {
+      "row_id": "0314-bdp-tibbi-uretim-row2",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "dbp",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "İlaç, sağlık teknolojisi ve teçhizatında denetim, üretim yatırımı ve araştırma geliştirme",
+      "refs": [
+        "0314-bdp-tibbi-uretim-p2"
+      ]
+    },
+    {
+      "row_id": "0314-iyi-tibbi-uretim-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "iyi",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Bulaşıcı hastalıklara karşı bakteriyel ve viral aşı üretim altyapısı ile millî ilaç, cihaz ve malzeme sanayisinin teşviki",
+      "refs": [
+        "0314-iyi-tibbi-uretim-p",
+        "0314-iyi-ilac-cihaz-sanayi-p"
+      ]
+    },
+    {
+      "row_id": "0314-yeni-tibbi-uretim-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "yeni-parti",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihazlarda yerli kapasite artışı",
+      "refs": [
+        "0303-epm-program-detail-sagliga-erisim-p5"
+      ]
+    },
+    {
+      "row_id": "0314-saadet-tibbi-uretim-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "saadet",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Tıbbi cihaz, ilaç ve aşıda dışa bağımlılık hedefi; yerli ilaç bilimsel çalışması, paketleme/üretim ayrımı ve Ar-Ge ile medikal ürünlerde teknokent–üniversite iş birliği ayrı araçlar",
+      "refs": [
+        "0311-saadet-backfill-05-p",
+        "0311-saadet-p2-172-teknoloji-inovasyon-p",
+        "0314-saadet-medikal-ardestek-p",
+        "0314-saadet-medikal-teknokent-p"
+      ]
+    },
+    {
+      "row_id": "0314-dyp-1983-gelir-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "demokrat",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Yaşlı ve muhtaçlara asgari yaşam geliri; 65 yaşını geçen muhtaçlara mevcut uygulama ve yaşlılık sigortasına dönüşüm ayrı bağlam",
+      "refs": [
+        "0314-dyp-1983-gelir-p",
+        "0314-dyp-1983-gelir-context-p"
+      ]
+    },
+    {
+      "row_id": "0314-dyp-1988-gelir-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "demokrat",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Yaşlı ve muhtaçlara asgari yaşam geliri; 65 yaşını geçen muhtaçlara mevcut uygulama ve yaşlılık sigortasına dönüşüm ayrı bağlam",
+      "refs": [
+        "0314-dyp-1988-gelir-p",
+        "0314-dyp-1988-gelir-context-p"
+      ]
+    },
+    {
+      "row_id": "0314-dyp-1990-gelir-row",
+      "topic_id": "temel-yurttaslik-geliri",
+      "party_id": "demokrat",
+      "definition": "Yurttaşlara veya belirli gruplara yönelik temel veya asgari gelir güvencesi ve düzenli gelir yardımları; yararlanıcı, ödeme biçimi ve açık koşullar ayrı gösterilir. Nitel yaşam güvencesi, ayni hizmet veya tek başına sigorta varlığı gelir ödemesi sayılmaz.",
+      "conditions": "Yaşlı ve muhtaçlara asgari yaşam geliri; 65 yaşını geçen muhtaçlara mevcut uygulama ve yaşlılık sigortasına dönüşüm ayrı bağlam",
+      "refs": [
+        "0314-dyp-1990-gelir-p",
+        "0314-dyp-1990-gelir-context-p"
+      ]
+    },
+    {
+      "row_id": "0314-dyp1983-tibbi-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "demokrat",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Sanayi ve küçük sanayi md24–25 PDF indeks 91–93; Araştırma/Teknoloji md41 indeks104; sağlık md43–44 indeks105–106",
+      "refs": [
+        "0314-dyp1983-tibbi-scope"
+      ]
+    },
+    {
+      "row_id": "0314-dyp1985-tibbi-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "demokrat",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Sanayi ve küçük sanayi md25–26 PDF indeks 89–90; Araştırma/Teknoloji md42 indeks99; sağlık md44–45 indeks100–101",
+      "refs": [
+        "0314-dyp1985-tibbi-scope"
+      ]
+    },
+    {
+      "row_id": "0314-dyp1988-tibbi-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "demokrat",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Sanayi ve küçük sanayi md25–26 PDF indeks103–104; Araştırma/Teknoloji md42 indeks113–114; sağlık md44–45 indeks114–116",
+      "refs": [
+        "0314-dyp1988-tibbi-scope"
+      ]
+    },
+    {
+      "row_id": "0314-dyp1990-tibbi-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "demokrat",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Sanayi ve küçük sanayi md25–26 PDF indeks104–105; Araştırma/Teknoloji md42 indeks114; sağlık md44–45 indeks115–117",
+      "refs": [
+        "0314-dyp1990-tibbi-scope"
+      ]
+    },
+    {
+      "row_id": "0314-demokrasi-ozet-tibbi-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "demokrat",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Sağlık Reformu PDF indeks19; Biyoteknoloji ve 21. Yüzyıl Projeleri indeks21–24",
+      "refs": [
+        "0314-demokrasi-ozet-tibbi-scope"
+      ]
+    },
+    {
+      "row_id": "0314-ep1996-tibbi-row",
+      "topic_id": "tibbi-urun-uretimi",
+      "party_id": "emep",
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "conditions": "Ekonomik ve sosyal alan PDF indeks25–27; çevre/teknoloji indeks29; kadın ve gençlik indeks30–31",
+      "refs": [
+        "0314-ep1996-tibbi-scope"
+      ]
+    }
   ]
 }

@@ -22,9 +22,10 @@ kapsamının veya yayının tamamlandığı anlamına gelmez.
 | Sosyal hizmet | Demokrat, EMEP, TİP |
 | Toplumsal cinsiyet | Demokrat, EMEP, Saadet, TİP |
 
-İYİ HSK, İYİ kamu personeli sendika hakkı ve EMEP iş yargısı pasajlarında
-yüklem veya kapsamın tamamı kısa alıntıda yer almadığından bu üç araç düzeyi
-karşılaştırma şimdilik eklenmedi; daha geniş özgün pasaj ve konu alanı bağlantısı gerekir. Yazılmış
+İYİ HSK, İYİ kamu personeli sendika hakkı ve EMEP iş yargısı için kaynakçı
+tam özgün bağlamı okudu; üç yeni cümle daha geniş pasajları aynı alanların
+bulgularına bağlayarak eklendi. HSK'deki HTML satır kırılması yüzünden cümle
+özgün kaynakla birebir eşleşen iki pasaj olarak kaydedildi. Yazılmış
 öteki konu ve cümleler de son seçili taksonomiye yüklenmeden yeniden
 denetlenmelidir. Hiçbir satır kullanıcıya karşıt tutum olarak sunulmaz.
 
