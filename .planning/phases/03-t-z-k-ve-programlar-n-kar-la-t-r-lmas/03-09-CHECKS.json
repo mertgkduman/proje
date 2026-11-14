@@ -1,0 +1,116 @@
+{
+  "plan": "03-09",
+  "status": "passed",
+  "checked_at": "2026-11-14T03:54:16.098065+00:00",
+  "charter_release": "d57131ee0f5b4c9dae1c09e3c704de3d",
+  "program_release": "69d1054dc6ce45a7bb45eca3ca37b4c1",
+  "application_code_unchanged_since": "7e49d3d",
+  "code_test_baseline": [
+    "03-04-checks/result.json:124 tests on45c7c40",
+    "03-08-CHECKS.json:12 affected tests and old/new renderer audits on7e49d3d"
+  ],
+  "report_links": {
+    "charter": {
+      "package_sha256": "8fdc69451527ad4232915a680eb83075835c51dbf91b33c116b49b0ac28c7711",
+      "all_rows": 262,
+      "active_topics": 166,
+      "result": "REPORT_LINK_CHECK_OK 262 rows in both views; source anchors and findings checked"
+    },
+    "program": {
+      "package_sha256": "cdc67459d4600fc9b10faf3f1d0e8c72ec67da09affb1f5e152bcb91ee8d1812",
+      "all_rows": 206,
+      "active_topics": 135,
+      "result": "REPORT_LINK_CHECK_OK 206 rows in both views; source anchors and findings checked"
+    }
+  },
+  "active_states": {
+    "evidence": 377,
+    "no_explicit_statement": 90
+  },
+  "all_taxonomies_states": {
+    "evidence": 378,
+    "no_explicit_statement": 90
+  },
+  "original_source_sha256_and_metadata_preserved": 10,
+  "phase2_delivery_preserved": true,
+  "source_semantic_spot_checks": [
+    "HTML20–1000TL vs proposal10–500TL vs body5–250YTL",
+    "GYK president+43 proposed vs president+35 body; unknown adoption/order",
+    "HTMLcongress3years(up to1year early) vs PDFbody2years"
+  ],
+  "normalization": "Same real topic/level/organ/version clauses merged into one row with distinct fields; article locator is not an organ",
+  "final_phase2_recovery": "Initial read-only audit interrupted143 without result; only the fixed-release audit retried detached; accepted retry exit0",
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "upcoming_key_links": "Saadet packages pending; symbolic renderer path checked via actual reciprocal row anchors",
+  "logs": {
+    "charter-final-check": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-final-check.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-final-check.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-final-check.run.json"
+    },
+    "charter-workspace": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-workspace.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-workspace.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-workspace.run.json"
+    },
+    "charter-load": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-load.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-load.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-load.run.json"
+    },
+    "charter-publish": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-publish.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-publish.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-publish.run.json"
+    },
+    "charter-audit": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-audit.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-audit.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/charter-audit.run.json"
+    },
+    "program-check": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-check.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-check.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-check.run.json"
+    },
+    "program-workspace": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-workspace.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-workspace.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-workspace.run.json"
+    },
+    "program-load": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-load.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-load.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-load.run.json"
+    },
+    "program-publish": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-publish.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-publish.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-publish.run.json"
+    },
+    "program-phase3": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-phase3.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-phase3.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-phase3.run.json"
+    },
+    "program-phase2-retry": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-phase2-retry.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-phase2-retry.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-phase2-retry.run.json"
+    },
+    "final-charter-report": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/final-charter-report.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/final-charter-report.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/final-charter-report.run.json"
+    },
+    "program-report": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-report.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-report.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-checks/program-report.run.json"
+    }
+  }
+}

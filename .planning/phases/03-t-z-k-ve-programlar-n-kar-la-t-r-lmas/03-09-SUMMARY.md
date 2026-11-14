@@ -52,7 +52,7 @@ status: complete
 ## Doğrulama
 
 - Her iki paket `COMPARISON_INPUT_OK`, yükleme `COMPARISON_LOAD_OK`, kendi sürümünde Faz 3 kısmi denetim `PHASE3_AUDIT_OK` verdi. Son sürümde Faz 2 denetimi `PHASE2_AUDIT_OK` verdi.
-- Son raporda 262 tüzük ve 206 program satırının iki görünümdeki bulgu ve kaynak hedefleri ayrı ayrı doğrulandı (`REPORT_LINK_CHECK_OK`). Son veritabanında EMEP için `not_researched` satırı yoktur; 377 kanıt ve 90 sınırlı açık ifade yokluğu satırı vardır.
+- Son raporda 262 tüzük ve 206 program satırının iki görünümdeki bulgu ve kaynak hedefleri ayrı ayrı doğrulandı (`REPORT_LINK_CHECK_OK`). Son veritabanında EMEP için `not_researched` satırı yoktur; etkin taksonomide 377 kanıt ve 90 sınırlı açık ifade yokluğu satırı vardır. Korunan eski taksonomideki tek kanıt satırıyla bütün sürümlerde toplam 378 kanıt satırı bulunur.
 - HTML kaynağı SHA-256 `16e8971e7cc015b0134f7836a9930200f04e9a298803f58801cf2261e3593329`, Yargıtay PDF `82a0ec082d33e31eeb3ad2e3f0955b851f2d2fc4e9e417fac3bd148bd805f171`, tarihsel kitap `2bad4f7822b5f4b5adda6646ea5309a65d231f93cb6aae538b9a57c3467e706c` olarak doğrulandı. Tüzük ve program girdilerinin özetleri sırasıyla `8fdc69451527ad4232915a680eb83075835c51dbf91b33c116b49b0ac28c7711` ve `cdc67459d4600fc9b10faf3f1d0e8c72ec67da09affb1f5e152bcb91ee8d1812`.
 - `actuals.tokens`, plan başlangıcı ile iki görev commit'i arasındaki 65.854.747 karakterlik Git farkının dörde bölünmesidir; model tüketimi değildir. Kaynak anlamını değerlendirme araştırma yargısı gerektirir; otomatik doğrulama bunun yerini almaz.
 
