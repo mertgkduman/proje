@@ -5262,6 +5262,83 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Kurulu seçen organ, üye sayısı ve başkanların sayıya dahil olması hakkında tüzük kanıtı elde edilmedi.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-merkez-yurutme-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-edu-egitim-mufredati-synthesis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:06:19+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Demokrat belirli ders alanlarını, ortaöğretimi ve istihdam amacını seçer. Saadet 13 aynı ders listesini veya ağırlık artışını vermez; yeniden oluşturma ölçütünü söyler. İki araç aynı müfredat sorusunda karşılaştırılır, eşit araç sayılmaz.\",\"sides\":[{\"party_id\":\"demokrat\",\"row_id\":\"0314-edu-egitim-mufredati-demokrat-1-row\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-backfill-02-p\"]},{\"party_id\":\"saadet\",\"row_id\":\"0314-edu-egitim-mufredati-saadet-1-row\",\"support\":\"passage\",\"refs\":[\"0311-saadet-backfill-13-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-edu-egitim-mufredati-synthesis-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:06:19+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Her iki gerçek pasaj müfredatın niteliğini doğrudan tanımlar. Yeni Parti’nin çoğulculuk/eleştirel düşünce ölçütü ile Saadet 12’nin değer/ilim yönelimi korunur; bunlardan ayrıca söylenmemiş ders statüsü veya üstünlük sonucu çıkarılmaz.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"0314-edu-egitim-mufredati-yeni-parti-1-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-detail-egitime-erisim-p3\"]},{\"party_id\":\"saadet\",\"row_id\":\"0314-edu-egitim-mufredati-saadet-1-row\",\"support\":\"passage\",\"refs\":[\"0311-saadet-backfill-12-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-edu-egitim-zorunluluk-kademe-synthesis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:06:19+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Saadet 02 süre/yaş vermeden sistem tercihini söyler; Demokrat 087 zorunlu eğitimi okul öncesiyle genişletmenin aşamalı yöntemini verir. Aynı sözcüğün iki farklı kullanımı ve Demokrat’ın yaş/süre koşulu korunur; Saadet için söylenmemiş ayrılma hakkı çıkarılmaz.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"0314-edu-egitim-zorunluluk-kademe-saadet-1-row\",\"support\":\"passage\",\"refs\":[\"0311-saadet-backfill-02-p\"]},{\"party_id\":\"demokrat\",\"row_id\":\"0314-edu-egitim-zorunluluk-kademe-demokrat-1-row\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-087-okul-oncesi-egitim-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-edu-egitim-alternatif-okul-synthesis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:06:19+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"Saadet’in 09/10 pasajları aynı somut okul modeli taahhüdünü iki konumda verir; tek olumlu taraftır. Yeni Yol’un gerçek missing/attempt kayıtları metnin edinilemediğini gösterir, önerisi olmadığı veya modele karşı olduğu sonucunu vermez.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"0314-edu-egitim-alternatif-okul-saadet-1-row\",\"support\":\"passage\",\"refs\":[\"0311-saadet-backfill-09-p\",\"0311-saadet-backfill-10-p\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"0314-edu-egitim-alternatif-okul-yeni-yol-1-row\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-edu-extra-egitim-mufredati",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:16:12+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM ekindeki öneri belirli dersin seçmeli statüsü ve içeriğiyle sınırlıdır; bağımsız güncel program yerine geçmez. EMEP ana programı temel müfredatın genel içerik ölçütlerini sayar. Birinin ders seçeneği diğerinin bütün müfredat ölçütleriyle eşitlenmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"0314-edu-egitim-mufredati-dem-2-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-program-din-egitimi-context-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"0314-edu-egitim-mufredati-emep-1-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-012-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-edu-extra-egitim-zorunluluk-kademe",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:16:12+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti beş yaş için doğrudan zorunluluk, üç-dört yaş için çalışma söyler; ikinci gruba tamamlanmış zorunluluk yüklenmez. EMEP on iki yıllık temel eğitimde her kız ve erkek çocuğu belirtir; bu cümleden okul öncesinin yaş kapsamı çıkarılmaz.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"0314-edu-egitim-zorunluluk-kademe-yeni-parti-1-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-okul-oncesi-egitim-p1\"]},{\"party_id\":\"emep\",\"row_id\":\"0314-edu-egitim-zorunluluk-kademe-emep-1-row\",\"support\":\"passage\",\"refs\":[\"0314-edu-emep_zorunluluk_ve_secim-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-edu-extra-egitim-alternatif-okul",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:16:12+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"Saadet’in iki program konumu aynı model oluşturma önerisini destekler. İYİ’nin farklılaştırılmış öğretim ve Demokrat’ın öğrenci farklılıklarına dayalı pedagojisi incelenmiş gerçek bağlamdır; dar soru özel alternatif okul modelleri kurma aracıdır. Dar kapsam sonucu başka belgelerde veya genel öğrenci odaklılıkta yokluk ve karşıt tutum değildir.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"0314-edu-egitim-alternatif-okul-saadet-1-row\",\"support\":\"passage\",\"refs\":[\"0311-saadet-backfill-09-p\",\"0311-saadet-backfill-10-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"0314-edu-egitim-alternatif-okul-iyi-1-row\",\"support\":\"scope\",\"refs\":[\"0314-edu-egitim-alternatif-okul-iyi-1-scope\"]},{\"party_id\":\"demokrat\",\"row_id\":\"0314-edu-egitim-alternatif-okul-demokrat-1-row\",\"support\":\"scope\",\"refs\":[\"0314-edu-egitim-alternatif-okul-demokrat-1-scope\"]}]}"
+      }
     }
   ]
 }

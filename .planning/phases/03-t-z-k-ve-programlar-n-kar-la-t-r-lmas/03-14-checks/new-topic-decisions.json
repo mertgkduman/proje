@@ -1,6 +1,188 @@
 [
-  {"kind": "topic", "values": {"id": "tibbi-urun-uretimi", "label": "Tıbbi ürün üretimi", "taxonomy_version": 3, "valid_from": "2026-11-14", "status": "verified", "change_reason": "Yeni Parti, İYİ ve Saadet kaynaklarında aşı, ilaç ve cihazların üretimi veya dışa bağımlılığı hakkında farklı araçlar saptandı; genel sağlık erişimi bu ayrı soruyu karşılamaz."}},
-  {"kind": "topic_basis", "values": {"topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "passage_id": "0303-epm-program-detail-sagliga-erisim-p5", "rationale": "Yeni Parti programı aşı, serum, biyolojik ürün, ilaç hammaddesi ve cihazda yerli üretim kapasitesini artırmayı açıkça önerir.", "source_role": "program"}},
-  {"kind": "topic_basis", "values": {"topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "passage_id": "0311-saadet-backfill-05-p", "rationale": "Saadet programı tıbbi cihaz, ilaç ve aşıda dışa bağımlılığı kaldırma hedefini açıkça belirtir.", "source_role": "program"}},
-  {"kind": "comparison_topic", "values": {"topic_id": "tibbi-urun-uretimi", "taxonomy_version": 3, "domain": "program", "parent_topic_id": "ekonomi-uretim-v2", "order_index": 9999, "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.", "applicable_levels": "ulusal", "basis_kind": "program"}}
+  {
+    "kind": "topic",
+    "values": {
+      "id": "tibbi-urun-uretimi",
+      "label": "Tıbbi ürün üretimi",
+      "taxonomy_version": 3,
+      "valid_from": "2026-11-14",
+      "status": "verified",
+      "change_reason": "Yeni Parti, İYİ ve Saadet kaynaklarında aşı, ilaç ve cihazların üretimi veya dışa bağımlılığı hakkında farklı araçlar saptandı; genel sağlık erişimi bu ayrı soruyu karşılamaz."
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "tibbi-urun-uretimi",
+      "taxonomy_version": 3,
+      "passage_id": "0303-epm-program-detail-sagliga-erisim-p5",
+      "rationale": "Yeni Parti programı aşı, serum, biyolojik ürün, ilaç hammaddesi ve cihazda yerli üretim kapasitesini artırmayı açıkça önerir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "tibbi-urun-uretimi",
+      "taxonomy_version": 3,
+      "passage_id": "0311-saadet-backfill-05-p",
+      "rationale": "Saadet programı tıbbi cihaz, ilaç ve aşıda dışa bağımlılığı kaldırma hedefini açıkça belirtir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "comparison_topic",
+    "values": {
+      "topic_id": "tibbi-urun-uretimi",
+      "taxonomy_version": 3,
+      "domain": "program",
+      "parent_topic_id": "ekonomi-uretim-v2",
+      "order_index": 9999,
+      "definition": "Tıbbi ürünlerin, ilaçların, aşıların veya sağlık teknolojisi ve teçhizatının üretimi, yatırım ve dışa bağımlılık politikaları; erişim ve fiilî uygulama ayrı incelenir.",
+      "applicable_levels": "ulusal",
+      "basis_kind": "program"
+    }
+  },
+  {
+    "kind": "topic",
+    "values": {
+      "id": "egitim-mufredati",
+      "label": "Eğitim müfredatı ve dersler",
+      "taxonomy_version": 3,
+      "valid_from": "2026-11-14",
+      "status": "verified",
+      "change_reason": "Eğitime erişim tanımı müfredat ve yönetimi açıkça dışlar; kaynaklarda erişimden ayrı bu somut eğitim yapısı sorusu vardır."
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "egitim-mufredati",
+      "taxonomy_version": 3,
+      "passage_id": "0303-epm-program-detail-egitime-erisim-p3",
+      "rationale": "Yeni Parti bilimsel, çağdaş, çoğulcu ve eleştirel düşünmeyi geliştirici müfredat düzenlemesini açıkça önerir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "egitim-mufredati",
+      "taxonomy_version": 3,
+      "passage_id": "0313-demokrat-backfill-02-p",
+      "rationale": "Demokrat arşiv programı ortaöğretimde belirli ders ve program ağırlıklarını eğitim-istihdam uyumu bağlamında artırmayı önerir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "egitim-mufredati",
+      "taxonomy_version": 3,
+      "passage_id": "0311-saadet-backfill-13-p",
+      "rationale": "Saadet temel müfredatı ihtiyaçlar ve öğrenci donanımıyla ilişkili biçimde yeniden oluşturmayı önerir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "comparison_topic",
+    "values": {
+      "topic_id": "egitim-mufredati",
+      "taxonomy_version": 3,
+      "domain": "program",
+      "parent_topic_id": "sosyal-politikalar-v2",
+      "order_index": 10000,
+      "definition": "Eğitim müfredatının içeriği, düzenleme ölçütleri ve ders veya program ağırlıkları; eğitim hizmetlerine erişim ve ücretlendirme ayrı incelenir.",
+      "applicable_levels": "ulusal",
+      "basis_kind": "program"
+    }
+  },
+  {
+    "kind": "topic",
+    "values": {
+      "id": "egitim-zorunluluk-kademe",
+      "label": "Eğitimin zorunluluğu ve kademeleri",
+      "taxonomy_version": 3,
+      "valid_from": "2026-11-14",
+      "status": "verified",
+      "change_reason": "Eğitime erişim tanımı müfredat ve yönetimi açıkça dışlar; kaynaklarda erişimden ayrı bu somut eğitim yapısı sorusu vardır."
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "egitim-zorunluluk-kademe",
+      "taxonomy_version": 3,
+      "passage_id": "0311-saadet-backfill-02-p",
+      "rationale": "Saadet zorunlu eğitim yerine kademeli eğitim sistemine geçmeyi söyler; süre ve yaş belirtmez.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "egitim-zorunluluk-kademe",
+      "taxonomy_version": 3,
+      "passage_id": "0313-demokrat-087-okul-oncesi-egitim-p",
+      "rationale": "Demokrat arşiv programı okul öncesi dahil 5–17 yaş zorunlu temel eğitimin kademeli olarak 12 yıla çıkarılmasını önerir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "comparison_topic",
+    "values": {
+      "topic_id": "egitim-zorunluluk-kademe",
+      "taxonomy_version": 3,
+      "domain": "program",
+      "parent_topic_id": "sosyal-politikalar-v2",
+      "order_index": 10001,
+      "definition": "Eğitimin zorunluluğu, süresi, kapsadığı yaşlar ve aşamaları; dersin zorunlu veya seçmeli olması, erişimin ücretlendirilmesi ve fiilî uygulama ayrı incelenir.",
+      "applicable_levels": "ulusal",
+      "basis_kind": "program"
+    }
+  },
+  {
+    "kind": "topic",
+    "values": {
+      "id": "egitim-alternatif-okul",
+      "label": "Öğrenci merkezli alternatif okul modelleri",
+      "taxonomy_version": 3,
+      "valid_from": "2026-11-14",
+      "status": "verified",
+      "change_reason": "Eğitime erişim tanımı müfredat ve yönetimi açıkça dışlar; kaynaklarda erişimden ayrı bu somut eğitim yapısı sorusu vardır."
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "egitim-alternatif-okul",
+      "taxonomy_version": 3,
+      "passage_id": "0311-saadet-backfill-09-p",
+      "rationale": "Saadet öğrenciyi merkeze alan alternatif okul modelleri oluşturulmasını açıkça önerir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "topic_basis",
+    "values": {
+      "topic_id": "egitim-alternatif-okul",
+      "taxonomy_version": 3,
+      "passage_id": "0311-saadet-backfill-10-p",
+      "rationale": "Aynı Saadet programında öğrenci merkezli alternatif okul modelleri önerisi ikinci konumda yinelenir.",
+      "source_role": "program"
+    }
+  },
+  {
+    "kind": "comparison_topic",
+    "values": {
+      "topic_id": "egitim-alternatif-okul",
+      "taxonomy_version": 3,
+      "domain": "program",
+      "parent_topic_id": "sosyal-politikalar-v2",
+      "order_index": 10002,
+      "definition": "Öğrenciyi merkeze alan alternatif okul modellerinin oluşturulması veya böyle modellere açık destek; genel bireyselleştirilmiş öğretim ve yükseköğretim yönetimi kendi bağlamında ayrı tutulur.",
+      "applicable_levels": "ulusal",
+      "basis_kind": "program"
+    }
+  }
 ]

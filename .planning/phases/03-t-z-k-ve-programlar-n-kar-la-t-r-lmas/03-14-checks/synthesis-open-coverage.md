@@ -129,3 +129,13 @@ yoksa eski delegeler; EMEP GYK üyesi ihracındaki ayrı üçte iki usulü genel
 kurallarla karıştırılmadı. DBP il kongresi ile EMEP genel kongresi başlıkları,
 HTML işaretlemesi nedeniyle kendi ilgili bentleriyle ayrı kaynak parçaları
 olarak bağlandı. 40/40 iddia bağı doğrulandı.
+
+Üç yeni eğitim sorusunda kaynakçı tarafından yazılan dört cümleye yürütücü
+üç özgül karşılaştırma ekledi. Müfredatta DEM'in kongre ekindeki belirli ders
+ile EMEP'in genel müfredat ölçütleri; zorunlulukta Yeni Parti'nin beş yaş ve
+üç-dört yaş için farklı ifadeleri ile EMEP'in on iki yıllık önerisi ayrı
+korundu. Alternatif okulda Saadet'in tek gerçek olumlu önerisi, İYİ ve
+Demokrat'ın soru ve bölümle sınırlı kapsam kayıtlarıyla karşılaştırıldı;
+olmayan ikinci olumlu pasaj veya karşıt tutum üretilmedi. Üç yeni konu ve
+toplam 485 cümle için mevcut taraf–konu–kanıt denetimi geçti; bütün 305 konu
+henüz sentezlenmedi.

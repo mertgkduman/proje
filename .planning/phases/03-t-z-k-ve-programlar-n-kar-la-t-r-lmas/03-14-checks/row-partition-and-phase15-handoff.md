@@ -21,9 +21,10 @@ dayanaklarına ayırır ve EMEP'in iki görsel eğitim pasajını doğru PDF ind
 fazladan olumlu öneri üretmez. Eski satır, bulgu ve kaynak baytları önceki
 arşivde korunur.
 
-Şimdiki taslak ayrıca **32 doğrudan yeni satır** içerir: tıbbi üretim 19,
-genişletilmiş gelir 7, disiplin itirazı 3 ve erişim/konum düzeltmesi 3.
-Dolayısıyla bu aşamadaki beklenen seçili satır sayısı 4.861 + 32 = **4.893**; bu yüklenmiş sonuç değil,
+Araştırma paketi ayrıca **74 doğrudan yeni satır** içerir: tıbbi üretim 19,
+genişletilmiş gelir 7, disiplin itirazı 3, erişim/konum düzeltmesi 3 ve
+üç eğitim sorusu için 42. Dolayısıyla beklenen seçili satır sayısı
+4.861 + 74 = **4.935**; bu yüklenmiş sonuç değil,
 henüz ek araştırma tamamlanmadan değişebilecek taslak muhasebesidir.
 `unchanged-row-lineage.json` 4.849 değişmeyen tanımlı satırın hash, alan,
 koşul, kaynak ve önceki gerçek inceleme kimlik/tarihlerini taşır; 10 değişen
@@ -31,9 +32,12 @@ gelir satırı ile iki Demokrat alanının gerekçeleri özgül araştırmadır.
 
 ## 03-15 için somut görünüm devri
 
-* Yeni seçili sözlük taslağı 301 eski konuya eklenen `tibbi-urun-uretimi` ile
-  **302 konu** içerir; gerçek payda atomik eşleme sonrası seçili sürümden
-  okunmalı, eski 301 veya taslak satır sayısı sabit yazılmamalıdır.
+* Yeni seçili sözlük taslağı 301 eski konuya `tibbi-urun-uretimi` ve üç ayrı
+  eğitim yapısı konusu (`egitim-mufredati`, `egitim-zorunluluk-kademe`,
+  `egitim-alternatif-okul`) ekleyerek şimdilik **305 konu** içerir. Eğitim
+  kaynak matrisi ve dokuz taraf satırları paketlendi; gerçek payda atomik
+  eşleme sonrası seçili sürümden okunmalı,
+  eski 301 veya taslak satır sayısı sabit yazılmamalıdır.
 * Önceki EMEP eğitim önerisi pasajları yanlışlıkla PDF indeks 2/basılı 3'e
   bağlanmıştı; yeni `0314-emep-education-proposal-correct-page-p` gerçek
   indeks 1/basılı 2'dedir. İki yeni seçili bulgu yalnız doğru pasajı kullanır;
