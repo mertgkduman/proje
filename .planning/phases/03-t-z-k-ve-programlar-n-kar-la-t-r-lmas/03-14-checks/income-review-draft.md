@@ -47,3 +47,40 @@ henüz kapatılmamış soruları ayırır; ajan incelemesidir, insan kabulü de�
 Yeni sözlük tanımı ve alan eşlemeleri henüz yazılmadı. Tüm belge, organ ve alan
 kapsamının tamamlandığı veya bu notun ilgili konu için nihai sonuç olduğu iddia
 edilmez.
+
+## Olası sentez taslağı
+
+Bu taslak, ortak tanımın bütün ilgili belgelerde gözden geçirilmesi ve yeni
+sözlük eşlemesi yapılmadan yayımlanmayacaktır.
+
+1. Yeni Parti her vatandaşın insanca yaşam koşullarını güvenceye alacak temel
+   vatandaşlık gelirini önerir; DEM kongre eki ise geliri olmayan tüm
+   yurttaşlara temel yurttaşlık gelirini hedefler. Dayanaklar:
+   `0303-epm-program-temel-yurttaslik-geliri-p1`, `03-dem-gelir`.
+2. Saadet'in aynı adlı ödeme önerisi ülkede doğmuş, ülke için çalışmış ve vergi
+   ödemiş vatandaşlara yöneliktir. Demokrat her vatandaşa iş, aş ve asgari nakit
+   gelir desteği belirtir; eşit ödeme veya gelir eşiği açıklamaz. Dayanaklar:
+   `0311-saadet-p2-073-temel-yurttaslik-geliri-p`,
+   `0313-demokrat-068-temel-yurttaslik-geliri-p`.
+3. TİP'in sosyalist toplum bağlamındaki çalışamayacak kişilere insanca yaşam
+   güvencesi nitel bir hükümdür. EMEP programı işini kaybeden emekçiye ve ölen
+   emekçinin bakmakla yükümlü olduğu yakınlarına düzenli gelir önerir; kongreye
+   sunulan öneride çalışamayan engellilere aylık ayrı ele alınır. Tarihsel BDP
+   kopyaları ise 2022 sayılı kanunun yaşlı aylığı ve emeklilik yaşına gelmiş
+   kişilerle ilgilidir. Bu kapsamlar aynı nakit araç sayılmaz. Dayanaklar:
+   `0304-tip-program-calisamayan-q`, `0309-emep-program-059-1-passage`,
+   `0309-emep-program-pdf-009-2-passage`, `0308-dbp-program-061-0-passage`,
+   `0308-dbp-program-061-1-passage`.
+4. İYİ'nin mevcut kaydı, erişilen program ve geliri olmayanlara düzenli nakit
+   temel gelir hakkındaki dar soruda açık ifade saptanmadığını belirtir; genel
+   refah ve geçim kaynaklarına erişim ifadesi bu özel sorunun olumlu yanıtı
+   değildir. Yeni Yol'un bağımsız programı bulunamamıştır; DEM ve DBP'nin
+   bağımsız güncel program açıkları da ek ve tarihsel belgelerle kapatılmaz.
+   Kayıtlar: `03-v2-iyi-temel-yurttaslik-geliri`,
+   `03-v2-yeni-yol-temel-yurttaslik-geliri`,
+   `03-v2-dem-gelir-program-eksik`,
+   `03-v2-dbp-temel-yurttaslik-geliri`.
+
+Bu cümlelerin dayanakları, her ilgili parti/pasaj ve sınırlı yokluk için ayrı
+ilişkilerle nihai pakette tekrar kontrol edilecektir; bir kaynağın sessizliği
+karşıt tutum değildir.
