@@ -59,6 +59,369 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Üç eksik kaydı kendi parti ve Program arama girişimlerine bağlıdır; DEM ekinin ve BDP tarihsel kopyasının kullanılması bağımsız güncel programın elde edildiği anlamına gelmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-sosyal-guvenlik\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-sosyal-guvenlik\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-sosyal-guvenlik-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-calisma-sureleri-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti pasajı sürelerin yeniden ele alınmasını, Demokrat pasajı aile politikası bağlamında esnek çalışma saatlerini belirtir; ikisi de bu pasajlarda sayısal genel süre sınırı vermez.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-calisma-sureleri-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-calisma-sureleri-p1\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0313-demokrat-calisma-sureleri\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-111-calisma-sureleri-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-calisma-sureleri-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP pasajının sosyalist toplum ve teknoloji/toplumsal ihtiyaç koşulları korunur; BDP pasajı tarihsel kopyadır ve bu iki ifade sayısal bir eşik olarak sunulmaz.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-program-calisma-sosyalizm-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-program-calisma-sosyalizm-p1\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-program-008-0-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-program-008-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-calisma-sureleri-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM kaynağı bağımsız güncel program değil kongre ekidir; EMEP HTML'deki genel ve ağır/tehlikeli işe özel süreler ayrı pasajlarla desteklenir. Ücret kaybı koşulu yalnız DEM pasajına bağlanır.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-calisma-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-program-calisma-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-023-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-023-0-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-058-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-058-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-calisma-sureleri-4",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM'in altı saat ifadesi ücret kaybı olmamasıyla kayıtlıdır; EMEP önerisinde 7 saat/gün ve 35 saat/hafta, gövdede ücret indirimi olmadan 8 ve 40 saatin altı ayrı ifadelerdir. Öneri ile gövdenin kronolojisi ve kabulü bilinmez; günlük süreden haftalık süre hesaplanmaz.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-calisma-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-program-calisma-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-pdf-000-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-pdf-000-0-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-pdf-001-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-pdf-001-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-calisma-sureleri-5",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"İYİ ve Saadet kapsamları yalnız genel çalışma süresinin kısaltılması sorusuna ilişkindir; üç program eksikliği kendi gerçek arama girişimlerine bağlıdır ve karşıt tutum kanıtı değildir.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-scope-calisma-sureleri-absence-row\",\"support\":\"scope\",\"refs\":[\"0306-iyi-program-scope-calisma-sureleri-scope\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0311-saadet-scope-calisma-sureleri-row\",\"support\":\"scope\",\"refs\":[\"0311-saadet-scope-calisma-sureleri\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-calisma-sureleri\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-calisma-sureleri\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-calisma-sureleri-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-yargi-bagimsizligi-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti yürütmenin etkisini, Demokrat'ın arşiv programı Adalet Bakanlığı vesayetini HSK/HSYK bakımından ayrı olarak belirtir.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-yargi-bagimsizligi-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-yargi-bagimsizligi-p1\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0313-demokrat-yargi-bagimsizligi\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-029-yargi-bagimsizligi-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-yargi-bagimsizligi-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-yargi-bagimsizligi\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-yargi-bagimsizligi\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-yargi-bagimsizligi-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sendika-grev-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti sendikal örgütlenme, toplu sözleşme ve grev engellerini; Demokrat sendikalar ve grev hakkını ILO anlaşmalarıyla birlikte ele alır.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-sendika-grev-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-sendika-grev-p1\",\"0303-epm-program-sendika-grev-p2\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0313-demokrat-sendika-grev\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-096-sendika-grev-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sendika-grev-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-sendika-grev\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-sendika-grev\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-sendika-grev-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-para-politikasi-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti araç bağımsızlığını, İYİ para politikası belirleme ve uygulamada operasyonel ve araçsal bağımsızlığı açıklar.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-para-politikasi-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-para-politikasi-p1\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-para-politikasi-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-para-politikasi-principle-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-para-politikasi-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Saadet ülke potansiyeli ve kurumlar arası eşgüdümü para politikası stratejisine bağlar; İYİ düşük enflasyon ve fiyat istikrarı hedefini belirtir.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0311-saadet-para-politikasi\",\"support\":\"passage\",\"refs\":[\"0311-saadet-p2-045-para-politikasi-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-para-politikasi-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-para-politikasi-target-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-para-politikasi-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-para-politikasi\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-para-politikasi\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-para-politikasi-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sagliga-erisim-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti erişilebilir ve ücretsiz hizmeti, EMEP koruyucu, birinci basamak ve hastane hizmetlerinde ayrımsızlık, parasızlık ve erişimi belirtir.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-sagliga-erisim-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-sagliga-erisim-p1\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-015-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-015-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sagliga-erisim-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP herkese ücretsiz ve anadilde erişilebilir hizmet der; DEM'in kongre eki demokratik, nitelikli, erişilebilir, anadilde ve parasız kamu hizmetini savunur.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-program-saglik-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-program-saglik-q\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-saglik-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-program-saglik-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sagliga-erisim-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-sagliga-erisim\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-sagliga-erisim\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-sagliga-erisim-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-barinma-konut-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti sosyal konut stoku ve kiralık modelleri, İYİ düşük ve orta gelirli yurttaşlar için uzun vadeli düşük faizli kredi önerir.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-barinma-konut-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-barinma-konut-p1\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-barinma-konut-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-barinma-konut-instrument-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-barinma-konut-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM kongre eki temel ihtiyaçları kamu kaynaklarıyla ihtiyaç sınırına kadar ücretsiz sağlamayı, EMEP herkese parasız konut hakkını ifade eder.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-konut-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-program-konut-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-057-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-057-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-barinma-konut-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-barinma-konut\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-barinma-konut\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-barinma-konut-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-egitime-erisim-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP her düzeyde parasız, anadilde, laik ve bilimsel eğitim hakkını; EMEP her kademede parasız, bilimsel ve laik eğitimi belirtir.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-program-egitim-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-program-egitim-q\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-012-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-012-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-egitime-erisim-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ maddi yardıma muhtaç öğrencilere burs ve yatılılık, Demokrat dar gelirli aile çocuklarına yatılı okul ve ihtiyaç sahibi öğrencilere burs/kredi kapasitesi önerir.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-egitime-erisim-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-egitime-erisim-instrument-passage\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0313-demokrat-egitime-erisim\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-086-egitime-erisim-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-egitime-erisim-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-egitime-erisim\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-egitime-erisim\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-egitime-erisim-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-avrupa-birligi-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti üyelik sürecini hızlandırmayı, EMEP AB başvurusunu geri çekmeyi savunur; yönler farklıdır.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-avrupa-birligi-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-avrupa-birligi-p1\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-019-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-019-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-avrupa-birligi-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Demokrat arşiv programı başlatılan üyelik sürecini sürdürmeyi, Saadet tam üyelik yerine eşit koşullarda ikili ilişkileri savunur.\",\"sides\":[{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0313-demokrat-avrupa-birligi\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-1010-avrupa-birligi-p\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0311-saadet-avrupa-birligi\",\"support\":\"passage\",\"refs\":[\"0311-saadet-p1-030-avrupa-birligi-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-avrupa-birligi-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-avrupa-birligi\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-avrupa-birligi\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-avrupa-birligi-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-makroekonomik-politika-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti alım gücü, gelir adaleti ve üretimi enflasyon programıyla ilişkilendirir; İYİ maliye politikasının düşük tek haneli enflasyonu desteklemesini önerir.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-makroekonomik-politika-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-makroekonomik-politika-p1\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-makroekonomik-politika-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-makroekonomik-politika-instrument-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-makroekonomik-politika-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP refah için ekonomik bağımsızlık ve kamucu planlı üretimi; Demokrat arşiv programı gerçekçi kur ile ihracata dayalı arz yönlü büyümeyi belirtir.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-program-makro-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-program-ekonomi-p1\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0313-demokrat-makroekonomik-politika\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-064-makroekonomik-politika-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-makroekonomik-politika-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-makroekonomik-politika\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-makroekonomik-politika\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-makroekonomik-politika-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-hizmet-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti mahalle temelli hizmet modeli ve merkezlerin yaygınlaşmasını, tarihsel BDP kopyası yerel yönetimlerin etkin katılımıyla yeniden yapılanmayı belirtir.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-sosyal-hizmet-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-sosyal-hizmet-p1\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-program-042-0-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-program-042-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-hizmet-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ geriatri merkezleri ve Sağlık Bakanlığı denetiminde huzurevleri; Saadet sosyal güvenlikte tüm yaşlıları kapsayan bakım güvencesi önerir.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-sosyal-hizmet-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-sosyal-hizmet-instrument-passage\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0311-saadet-sosyal-hizmet\",\"support\":\"passage\",\"refs\":[\"0311-saadet-p2-086-sosyal-hizmet-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-hizmet-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-sosyal-hizmet\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-sosyal-hizmet\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-sosyal-hizmet-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-toplumsal-cinsiyet-p1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti İstanbul Sözleşmesi'ne taraf olmayı ve tüm hükümlerini uygulamayı, DEM kongre eki sözleşmeyi geri getirip uygulamayı savunur.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-toplumsal-cinsiyet-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-toplumsal-cinsiyet-p1\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-cinsiyet-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-program-cinsiyet-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-toplumsal-cinsiyet-p2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ eğitim teşkilatı ve okullarda kadın yöneticiler için yüzde 50'yi, tarihsel BDP kopyası parti yönetim kademelerinde yüzde 40 cinsiyet kotasını belirtir.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-toplumsal-cinsiyet-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-toplumsal-cinsiyet-target-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-program-014-0-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-program-014-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-toplumsal-cinsiyet-p3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:41:47+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM ve DBP bağımsız güncel tam program eksikleri ile Yeni Yol tam program eksikliği kendi gerçek Program arama girişimlerine bağlıdır; DEM kongre eki ve BDP tarihsel kopyaları bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-toplumsal-cinsiyet\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-toplumsal-cinsiyet\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-toplumsal-cinsiyet-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
     }
   ]
 }
