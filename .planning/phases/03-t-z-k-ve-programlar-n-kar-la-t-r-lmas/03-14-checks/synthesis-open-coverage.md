@@ -5,7 +5,11 @@ gösterir; sayısal dokuz-parti eşleşmesi, içerik doğruluğu veya araştırm
 kapanışı kanıtı değildir. Mevcut alanın olumlu hüküm mü bağlam mı olduğu,
 belge türü ve kayıtlı dar kapsam taraf eklenmeden ayrıca incelenmelidir.
 
-| Konu | Yazılan cümlelerde henüz ele alınmayan partiler |
+16 ek cümleyle aşağıdaki parti-konu tarafları kaynakçı tarafından özgül
+incelenerek yazılan cümlelerde ele alındı. Bu liste tüm konuların dokuz taraf
+kapsamının veya yayının tamamlandığı anlamına gelmez.
+
+| Konu | Yeni cümlelerde ele alınan partiler |
 | --- | --- |
 | Yargı bağımsızlığı | EMEP, İYİ, Saadet, TİP |
 | Sendika ve grev | EMEP, İYİ, Saadet, TİP |
@@ -18,9 +22,9 @@ belge türü ve kayıtlı dar kapsam taraf eklenmeden ayrıca incelenmelidir.
 | Sosyal hizmet | Demokrat, EMEP, TİP |
 | Toplumsal cinsiyet | Demokrat, EMEP, Saadet, TİP |
 
-İYİ HSK ve sendika pasajlarında yüklem veya kapsamın tamamı kısa alıntı
-parçasında yer almadığından ilgili iki önerilen karşılaştırma şimdilik
-eklenmedi; daha geniş özgün pasaj ve konu alanı bağlantısı gerekir. Yazılmış
+İYİ HSK, İYİ kamu personeli sendika hakkı ve EMEP iş yargısı pasajlarında
+yüklem veya kapsamın tamamı kısa alıntıda yer almadığından bu üç araç düzeyi
+karşılaştırma şimdilik eklenmedi; daha geniş özgün pasaj ve konu alanı bağlantısı gerekir. Yazılmış
 öteki konu ve cümleler de son seçili taksonomiye yüklenmeden yeniden
 denetlenmelidir. Hiçbir satır kullanıcıya karşıt tutum olarak sunulmaz.
 
