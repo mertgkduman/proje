@@ -6978,6 +6978,105 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Üç gerçek eksik ve arama girişimi ana program edinim durumudur; anadilde eğitime ilişkin görüş bulunmadığı veya olumsuz görüş olduğu çıkarılamaz.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-anadilde-egitim\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-anadilde-egitim\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-anadilde-egitim-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-kadin-meclisi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM kadın meclisinin kurulabilmesini ve amacını; DBP üç düzeyde sorumlu olduğu organları açıklar. Kurulabilir ifadesi gerçekleşmiş kuruluş sayılmadı.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-kadin-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-kadin-dem-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-037-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-037-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-kadin-meclisi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"EMEP metni kadın örgütüne karar veren organı, DEM metni Kadın Meclisinin kurulabilmesini ve çalışma konusunu belirtir; iki yapının adı ve yetkisi aynılaştırılmadı.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-055-1-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-055-1-passage\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-kadin-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-kadin-dem-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-kadin-meclisi-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"İYİ’nin 1–91. maddeleri ve geçici maddeleri ile Saadet’in incelenen nüshası kadın meclisi adıyla ayrı organ yönünden tarandı. Her iki metindeki kadın kolları ayrı gerçek düzenlemedir.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-scope-kadin-meclisi-absence\",\"support\":\"scope\",\"refs\":[\"0306-iyi-scope-kadin-meclisi-scope\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-scope-014-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-014\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-genclik-meclisi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM yaşa bağlı üyeliği, DBP merkezi gençlik meclisinin adını ve örgütlenme niteliğini belirtir. DBP için aynı yaş sınırı veya DEM için aynı özerklik otomatik eklenmedi.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-genc-yas-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-genc-yas-dem-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-036-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-036-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-genclik-meclisi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"EMEP gençlik örgütünün kuruluşuna karar veren organı; DEM Gençlik Meclisi üyeliğinde belirli yaş aralığını gösterir. Gençlik örgütü ile gençlik meclisi ve üyelik kuralları özdeş sayılmadı.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-054-1-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-054-1-passage\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-genc-yas-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-genc-yas-dem-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-genclik-meclisi-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"İYİ’nin incelenen tüzüğünde gençlik meclisi adlı örgüt, Saadet’in erişilen nüshasında aynı adla ayrı organ aranmıştır. Gençlik kollarının veya gençlik çalışmasının yokluğu sonucu çıkarılmaz.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-scope-genclik-meclisi-absence\",\"support\":\"scope\",\"refs\":[\"0306-iyi-scope-genclik-meclisi-scope\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-scope-008-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-008\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-belde-orgutu-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM üç üyenin ilçe kurulunca atanmasını; DBP belirli yerlerde biri başkan beş kişilik kurulu belirtir. DBP’ye DEM’in atama yöntemi aktarılmaz.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-belde-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-belde-dem-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-076-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-076-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-belde-orgutu-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İki metinde beş kişilik kurul bulunur; Yeni Parti pasajı ayrıca ihtiyaç ve beldede kayıtlı üyelerin seçimi koşulunu açıklar. İYİ için aynı seçim usulü bu pasajdan çıkarılmadı.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-fifth-belde-orgutu-b-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-fifth-belde-orgutu-b-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-belde-orgutu-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-belde-orgutu-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-belde-orgutu-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:54:31.618378+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"Saadet pasajı üç üyeli kurulun ilçe yönetim kurulunca atanmasını belirtir; TİP’in HTML kapsam kaydı ayrı belde kademesinin oluşumu yönündendir. TİP’te il, ilçe ve temsilcilik düzenlemeleri yok sayılmaz.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-1-057-belde-orgutu-row\",\"support\":\"passage\",\"refs\":[\"0310-saadet-1-081-belde-orgutu-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-charter-scope-belde-html-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-belde-html-scope\"]}]}"
+      }
     }
   ]
 }
