@@ -43,6 +43,23 @@ gelir satırı ile iki Demokrat alanının gerekçeleri özgül araştırmadır.
   kaynak devamı ve emisyonlarını kısıtlamayan ülke koşulu; 2020 emisyon
   hedefinde değişiklik yapılmaması halinde öngörülen seviyeye göre yüzde 20
   tabanı; ayrı yenilenebilir, nükleer ve kömür alanları korunmalıdır.
+* Yeni özgül alanlar görünür kalmalıdır: `0314-saadet-yerel-ekonomik-f`
+  yerel ekonomik gelişme programını; `0314-yeni-enerji-destegi-f` dar gelirli
+  haneleri ve `0314-yeni-sosyal-tarife-f` sosyal tarifeyi;
+  `0314-saadet-saglik-performans-f` sağlıkta performans düzenini; `0314-saadet-yenilenebilir-f`
+  ile `0314-saadet-kaynak-cesitlilik-f` kaynak türlerini ve ekolojik/toplumsal
+  hassasiyetleri gösterir. Bunlar farklı soruları koşullarıyla sunar; ücretsiz
+  hizmet, gerçekleşmiş uygulama veya fosilden çıkış tarihi eklenmez.
+* `0314-demokrat-teacher-development-f` öğretmenlerin hizmet içi eğitimini ve
+  yaşam standardını; `0314-saadet-teacher-interview-f` öğretmen alımında
+  mülakatı; `0314-iyi-membership-record-reset-f` gerekçeli toplu üye kaydı
+  iptali ve yeniden yazımını gösterir. Sonuncu parti içi hükümdür; disiplinle
+  bireysel çıkarma veya fiilen gerçekleşmiş uygulama değildir.
+* `0303-epm-uyeligin-sona-ermesi-field` özetindeki Yeni Parti hükmünde, bir
+  sandık çevresinde partiye hiç oy çıkmaması hâlinde MYK'nın o çevredeki
+  kayıtları silmeye karar verebilmesi `0303-sandik-silme-p` ile kaynaklıdır.
+  Yetki, kesin veya fiilen gerçekleşmiş kayıt silme gibi gösterilmez; bu parti
+  içi hüküm İYİ'nin ayrı koşullu kayıt yenileme yetkisiyle eşitlenmez.
 * Eski manifestler kendi tam görünümü ve renderer sürümüyle yeniden üretilebilir;
   03-15, yeni görünüm iyileştirmesinde eski manifest kapsamını değiştirmez.
 
