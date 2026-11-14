@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-checks/reconcile-integration.py", line 45, in <module>
+    arsiv.comparison_reconcile(work, taxonomy, inventory, payload)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 493, in comparison_reconcile
+    load_comparison(candidate, payload)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 404, in load_comparison
+    export_db(temp / 'records.sqlite3', 'workspace', strict_identity=True)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1344, in export_db
+    validate_comparisons(result)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 655, in validate_comparisons
+    raise ValueError('Alternatifler aynı konuya ait en az iki kaynaklı sürüm gerektirir')
+ValueError: Alternatifler aynı konuya ait en az iki kaynaklı sürüm gerektirir

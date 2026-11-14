@@ -1,0 +1,10 @@
+{
+  "command": "PYTHONPATH=src:tests python3 -m unittest test_comparison_content.ComparisonContentTest.test_reconcile_rejects_one_party_new_topic_without_changing_workspace",
+  "exitCode": 1,
+  "targetTest": "test_reconcile_rejects_one_party_new_topic_without_changing_workspace",
+  "targetFile": "test_comparison_content.py",
+  "output": "not ok 1 - test_reconcile_rejects_one_party_new_topic_without_changing_workspace\n# tests 1\n# pass 0\n# fail 1\n",
+  "unittestOutput": "F\n======================================================================\nFAIL: test_reconcile_rejects_one_party_new_topic_without_changing_workspace (test_comparison_content.ComparisonContentTest.test_reconcile_rejects_one_party_new_topic_without_changing_workspace)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_content.py\", line 18, in test_reconcile_rejects_one_party_new_topic_without_changing_workspace\n    self.assertTrue(callable(reconcile), 'Atomic comparison reconciliation is required')\nAssertionError: False is not true : Atomic comparison reconciliation is required\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (failures=1)\n",
+  "expected": "one-party new topic rejected without mutation",
+  "actual": "reconciliation API is absent"
+}
