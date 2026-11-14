@@ -2906,6 +2906,502 @@
         "result": "reviewed",
         "reason": "0314-saadet-china-east-turkestan-full-p aynı paragrafta Çin ile sağlıklı ilişki isteğini, Doğu Türkistan’da yaşananlara itirazı ve çözüm yolları arayışını birlikte gösterir. Eski 0311-saadet-p1-090-cin-iliskileri-f kısa alanı ve alıntısı korunur; yeni destek koşullu bağlamı görünür tutar."
       }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-yerel-ekonomik-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Yerel kaynaklar ve potansiyel değerlendirilerek bölgesel gelişme sağlanması ve Yerel Ekonomik Gelişme Programı uygulanması önerilir.",
+        "pair_id": "0314-saadet-yerel-ekonomik-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-yerel-ekonomik-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Yerel ekonomik kaynakların ve potansiyelin değerlendirilerek bölgesel gelişme\nsağlanacak ve “Yerel Ekonomik Gelişme Programı” uygulanacak ve halkın refah\nseviyesinin artmasına katkıda bulunulacaktır.",
+        "pair_id": "0314-saadet-yerel-ekonomik-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-yerel-ekonomik-s",
+        "passage_id": "0311-saadet-backfill-08-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-yerel-ekonomik-q",
+        "passage_id": "0311-saadet-backfill-08-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-yerel-ekonomik-f",
+        "row_id": "03-v3-0311-saadet-ekonomi-uretim-v2",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-yerel-ekonomik-s",
+        "quote_finding_id": "0314-saadet-yerel-ekonomik-q",
+        "condition_key": "Yerel kaynaklar ve bölgesel gelişme programı"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-saadet-yerel-ekonomik-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:08:14+00:00",
+        "result": "reviewed",
+        "reason": "Ekonomik üretim başlığı altında somut yerel kaynak ve bölgesel gelişme aracı gösterilir; yerel yönetimde demokratik katılımla veya fiilî sonuçla eşitlenmez. Kaynak pasajı 0311-saadet-backfill-08-p; seçili satır 03-v3-0311-saadet-ekonomi-uretim-v2."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-yeni-enerji-destegi-s",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Enerji yoksulluğuyla mücadele ve dar gelirli hanelere temel enerji desteği önerilir.",
+        "pair_id": "0314-yeni-enerji-destegi-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-yeni-enerji-destegi-q",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Enerji yoksulluğuyla mücadele edilecek, dar gelirli hanelere temel enerji desteği sağlanacaktır.",
+        "pair_id": "0314-yeni-enerji-destegi-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-enerji-destegi-s",
+        "passage_id": "0303-epm-program-enerji-yoksullugu-p1",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-enerji-destegi-q",
+        "passage_id": "0303-epm-program-enerji-yoksullugu-p1",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-yeni-enerji-destegi-f",
+        "row_id": "03-v3-0303-epm-program-parent-sosyal-politikalar-v2-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-yeni-enerji-destegi-s",
+        "quote_finding_id": "0314-yeni-enerji-destegi-q",
+        "condition_key": "Dar gelirli hanelere temel enerji desteği"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-yeni-enerji-destegi-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:08:14+00:00",
+        "result": "reviewed",
+        "reason": "Sosyal politika altında belirli yararlanıcı dar gelirli hanelerdir; destek miktarı veya gerçekleşme sonucu türetilmez. Kaynak pasajı 0303-epm-program-enerji-yoksullugu-p1; seçili satır 03-v3-0303-epm-program-parent-sosyal-politikalar-v2-row."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-yeni-sosyal-tarife-s",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Sosyal tarife uygulamalarının yaygınlaştırılması önerilir.",
+        "pair_id": "0314-yeni-sosyal-tarife-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-yeni-sosyal-tarife-q",
+        "party_id": "yeni-parti",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Sosyal tarife uygulamaları yaygınlaştırılacaktır.",
+        "pair_id": "0314-yeni-sosyal-tarife-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-sosyal-tarife-s",
+        "passage_id": "0303-epm-program-enerji-yoksullugu-p2",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-yeni-sosyal-tarife-q",
+        "passage_id": "0303-epm-program-enerji-yoksullugu-p2",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-yeni-sosyal-tarife-f",
+        "row_id": "03-v3-0303-epm-program-parent-sosyal-politikalar-v2-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-yeni-sosyal-tarife-s",
+        "quote_finding_id": "0314-yeni-sosyal-tarife-q",
+        "condition_key": "Sosyal tarifenin yaygınlaştırılması"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-yeni-sosyal-tarife-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:08:14+00:00",
+        "result": "reviewed",
+        "reason": "Sosyal politika altında gerçek sosyal tarife aracıdır; belirli fiyat, yararlanıcı veya uygulama tarihi eklenmez. Kaynak pasajı 0303-epm-program-enerji-yoksullugu-p2; seçili satır 03-v3-0303-epm-program-parent-sosyal-politikalar-v2-row."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-saglik-performans-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Sağlık bölümünde çalışma barışını bozan adaletsiz performans sisteminin adaleti sağlayacak biçimde yeniden düzenlenmesi önerilir.",
+        "pair_id": "0314-saadet-saglik-performans-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-saglik-performans-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Çalışma barışını bozan adaletsiz performans sistemi, adaleti tesis edecek şekilde\nyeniden düzenlenecektir.",
+        "pair_id": "0314-saadet-saglik-performans-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-saglik-performans-s",
+        "passage_id": "0311-saadet-backfill-04-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-saglik-performans-q",
+        "passage_id": "0311-saadet-backfill-04-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-saglik-performans-f",
+        "row_id": "03-v3-0311-saadet-ekonomi-emek-v2",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-saglik-performans-s",
+        "quote_finding_id": "0314-saadet-saglik-performans-q",
+        "condition_key": "Sağlık çalışanlarının performans sistemi"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-saadet-saglik-performans-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:08:14+00:00",
+        "result": "reviewed",
+        "reason": "Sağlık bölümündeki performans sisteminin çalışma barışı ve adalet bakımından yeniden düzenlenmesi çalışma yaşamına ilişkindir; ücretsiz sağlık hizmeti, ücret tutarı veya uygulanmış sonuç değildir. Kaynak pasajı 0311-saadet-backfill-04-p; seçili satır 03-v3-0311-saadet-ekonomi-emek-v2."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-yenilenebilir-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Hidrolik, rüzgâr, güneş ve jeotermal kaynakların değerlendirilmesi hızlandırılırken ekolojik ve toplumsal hassasiyetlerin gözetilmesi önerilir.",
+        "pair_id": "0314-saadet-yenilenebilir-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-yenilenebilir-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Hidrolik enerji imkânlarının, rüzgâr, güneş ve jeotermal enerji kaynaklarının\ndeğerlendirilmesi için çalışmalar hızlandırılacak, ekolojikve toplumsal hassasiyet\ngözetilecek, yatırım ve işletmeler bunlara göre desteklenecektir.",
+        "pair_id": "0314-saadet-yenilenebilir-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-yenilenebilir-s",
+        "passage_id": "0311-saadet-backfill-06-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-yenilenebilir-q",
+        "passage_id": "0311-saadet-backfill-06-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-yenilenebilir-f",
+        "row_id": "03-v3-0311-saadet-ekonomi-uretim-v2",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-yenilenebilir-s",
+        "quote_finding_id": "0314-saadet-yenilenebilir-q",
+        "condition_key": "Yenilenebilir enerji kaynakları ve ekolojik/toplumsal hassasiyet"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-saadet-yenilenebilir-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:08:14+00:00",
+        "result": "reviewed",
+        "reason": "Bu araç yenilenebilir kaynakların değerlendirilmesi ve yatırımlara ilişkindir; fosilden çıkış tarihi veya net sıfır hedefi değildir. Kaynak pasajı 0311-saadet-backfill-06-p; seçili satır 03-v3-0311-saadet-ekonomi-uretim-v2."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-kaynak-cesitlilik-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Enerjide kaynak çeşitlendirmesi için yerli ve yenilenebilir kaynakların değerlendirilmesi, yerli kaynaklı üretim ve stratejik sektörlerde dönüşüm programları önerilir.",
+        "pair_id": "0314-saadet-kaynak-cesitlilik-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-kaynak-cesitlilik-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Enerji temininde kaynak çeşitlendirmesini için yerli ve yenilenebilir enerji\nkaynaklarımümkün olan en üst düzeyde değerlendirilecek, yerli kaynaklara dayalı\nenerji üretimi ile stratejik sektörlerde dönüşüm programları uygulanacaktır.",
+        "pair_id": "0314-saadet-kaynak-cesitlilik-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-kaynak-cesitlilik-s",
+        "passage_id": "0311-saadet-backfill-11-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-kaynak-cesitlilik-q",
+        "passage_id": "0311-saadet-backfill-11-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-kaynak-cesitlilik-f",
+        "row_id": "03-v3-0311-saadet-ekonomi-uretim-v2",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-kaynak-cesitlilik-s",
+        "quote_finding_id": "0314-saadet-kaynak-cesitlilik-q",
+        "condition_key": "Kaynak çeşitlendirmesi ve yerli enerji üretimi"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-saadet-kaynak-cesitlilik-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:08:14+00:00",
+        "result": "reviewed",
+        "reason": "Kaynak çeşitlendirmesi, yerli ve yenilenebilir kaynaklar ile yerli kaynaklı üretim ayrı ifadeler olarak korunur; fosil kaynakların terk edildiği çıkarılmaz. Kaynak pasajı 0311-saadet-backfill-11-p; seçili satır 03-v3-0311-saadet-ekonomi-uretim-v2."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-demokrat-teacher-development-s",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Öğretmenlerin kişisel ve mesleki gelişimi için hizmet içi eğitim ve yaşam standartlarının yükseltilmesi önerilir.",
+        "pair_id": "0314-demokrat-teacher-development-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-demokrat-teacher-development-q",
+        "party_id": "demokrat",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Demokrat Parti, ülkemizin geleceği bakımından hayati önemi haiz\nuygulamalara, fedakâr öğretmenlerimizin eğitimleri, kişisel ve\nmesleki gelişimleri için hizmet içi eğitimleri ve yaşam standart-\nlarının yükseltilmesi hususları ile birlikte, Milli Eğitim Bakan-\nlığımızın merkez ve taşra teşkilatların da gerekli düzenlemeler ve\nyenileştirmeler ile başlayacaktır.",
+        "pair_id": "0314-demokrat-teacher-development-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-demokrat-teacher-development-s",
+        "passage_id": "0313-demokrat-backfill-01-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-demokrat-teacher-development-q",
+        "passage_id": "0313-demokrat-backfill-01-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-demokrat-teacher-development-f",
+        "row_id": "03-v3-0313-demokrat-ekonomi-emek-v2",
+        "field": "instrument",
+        "summary_finding_id": "0314-demokrat-teacher-development-s",
+        "quote_finding_id": "0314-demokrat-teacher-development-q",
+        "condition_key": "Öğretmenlerin hizmet içi eğitimi ve yaşam standardı"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-demokrat-teacher-development-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:10:18+00:00",
+        "result": "reviewed",
+        "reason": "Arşiv programı öğretmenlerin kişisel/mesleki gelişimi, hizmet içi eğitim ve yaşam standardını birlikte anlatır; öğrenci erişimi veya uygulanmış sonuç olarak sunulmaz. Kaynak pasajı 0313-demokrat-backfill-01-p; seçili satır 03-v3-0313-demokrat-ekonomi-emek-v2."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-teacher-interview-s",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Öğretmen alımlarında mülakat uygulamasının kaldırılması önerilir.",
+        "pair_id": "0314-saadet-teacher-interview-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-saadet-teacher-interview-q",
+        "party_id": "saadet",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Öğretmen alımlarında mülakat uygulaması kaldırılacaktır.",
+        "pair_id": "0314-saadet-teacher-interview-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-teacher-interview-s",
+        "passage_id": "0311-saadet-backfill-03-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-saadet-teacher-interview-q",
+        "passage_id": "0311-saadet-backfill-03-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-saadet-teacher-interview-f",
+        "row_id": "03-v3-0311-saadet-ekonomi-emek-v2",
+        "field": "instrument",
+        "summary_finding_id": "0314-saadet-teacher-interview-s",
+        "quote_finding_id": "0314-saadet-teacher-interview-q",
+        "condition_key": "Öğretmen alımında mülakat"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-saadet-teacher-interview-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:10:18+00:00",
+        "result": "reviewed",
+        "reason": "Öğretmen alımıyla sınırlı mülakat önerisi çalışma yaşamına ilişkin bir alandır; tüm kamu alımları veya öğrenci erişimi için genellenmez. Kaynak pasajı 0311-saadet-backfill-03-p; seçili satır 03-v3-0311-saadet-ekonomi-emek-v2."
+      }
     }
   ],
   "row_reviews": [
