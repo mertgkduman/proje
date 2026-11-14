@@ -13342,19 +13342,6 @@
       "changes": []
     },
     {
-      "old_row_id": "03-v3-0303-epm-genisletilmis-toplanti-row",
-      "new_row_id": "04-03-v3-0303-epm-genisletilmis-toplanti-row",
-      "topic_id": "genisletilmis-toplanti",
-      "reason": "Aynı kaynak, parti, belge rolü, durum ve alanlar korunur; önceki gerçek inceleme kaynak kimliği ve tarihiyle arşivde kalır.",
-      "fields": [
-        {
-          "old_id": "03-v3-0303-epm-genisletilmis-toplanti-field",
-          "new_id": "04-03-v3-0303-epm-genisletilmis-toplanti-field"
-        }
-      ],
-      "changes": []
-    },
-    {
       "old_row_id": "03-v3-0303-epm-grup-tbmm-grup-row",
       "new_row_id": "04-03-v3-0303-epm-grup-tbmm-grup-row",
       "topic_id": "tbmm-grup",
@@ -69456,6 +69443,13 @@
         "0314-v4-saadet-din-kurum-scope-row"
       ],
       "reason": "Önceki kapsam yalnız İslam kurumları ve statüsüyle sınırlıydı; yeni genel kurum ve finansman sorusu ilgili yeni dar bölüm incelemesiyle kaydedilir."
+    },
+    {
+      "old_row_id": "03-v3-0303-epm-genisletilmis-toplanti-row",
+      "replacement_ids": [
+        "0314-v4-yeni-pm-katilim-row"
+      ],
+      "reason": "Eski alan oy kullanmama kuralını istisnasız özetliyordu. Madde 22/11-f hükümet kurma, hükümete katılma veya çekilme konularındaki PM toplantısında TBMM grup başkanvekilleri ve grup yönetim kurulu üyelerinin oy kullanacağını ayrıca düzenler; iki hüküm yeni kaynaklı alanda birlikte korunur."
     }
   ]
 }
