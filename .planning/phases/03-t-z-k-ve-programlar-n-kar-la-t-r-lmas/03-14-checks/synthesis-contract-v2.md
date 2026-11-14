@@ -5,8 +5,12 @@ kullanır; tablo, kolon veya eski kaynak kaydı değiştirmez. Seçili sözlük 
 3 olduğunda sözleşme 1'den 2'ye atomik geçişe izin verilir. Yayın manifesti
 `comparison_validation_version: 2` ve
 `comparison_synthesis_contract_version: 2` taşır. Sözleşme 1 snapshot'ları
-eski doğrulamayla okunur; sürüm 2 seçiliyken de önceki sözlüklerin özetleri eski
-kurallarıyla korunur. Renderer 17 ve 18 ile eski manifestlerin girdileri
+eski doğrulamayla okunur. Daha yeni bir sözlük seçildiğinde, önceki sözlükteki
+açık sözleşme-2 yazar incelemesi taşıyan cümle kendi tipli taraf ve gerçek
+kanıt kurallarıyla doğrulanmaya devam eder; böyle bir kaydı olmayan sözleşme-1
+cümlelerinin iki ayrı gerçek olumlu kaynak sahibi kuralı korunur. İnceleme
+kaydının varlığı iddianın kapsamını otomatik üretmez veya kanıt koşulunu
+gevşetmez. Renderer 17 ve 18 ile eski manifestlerin girdileri
 değiştirilmez.
 
 Her yeni seçili sentez için `subject_kind: comparison_synthesis`, o sentezin

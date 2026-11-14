@@ -275,6 +275,28 @@ class ComparisonContentTest(unittest.TestCase):
             renderer = module.render_report
         self.assertEqual(arsiv.render_comparison_snapshot(data, renderer).encode(), (folder / 'index.html').read_bytes())
 
+    def test_typed_v3_renderer_18_snapshot_remains_byte_exact(self):
+        release = arsiv.current()
+        while release:
+            folder = arsiv.DATA / 'releases' / release
+            manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+            if (manifest.get('renderer_version') == 18
+                    and manifest.get('comparison_taxonomy_version') == 3
+                    and manifest.get('comparison_synthesis_contract_version') == 2):
+                break
+            release = manifest.get('base_release')
+        self.assertTrue(release)
+        self.assertEqual(manifest.get('comparison_view_version'), 1)
+        data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+        frozen = Path(__file__).resolve().parents[1] / 'src' / 'rapor_v18.py'
+        renderer = rapor.render_report
+        if frozen.exists():
+            spec = importlib.util.spec_from_file_location('typed_frozen_rapor_v18', frozen)
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            renderer = module.render_report
+        self.assertEqual(arsiv.render_comparison_snapshot(data, renderer).encode(), (folder / 'index.html').read_bytes())
+
     def test_program_topic_basis_points_to_the_actual_heading(self):
         root = Path(__file__).resolve().parents[1]
         package = json.loads((root / 'data/comparisons/03-taxonomy.json').read_text(encoding='utf-8'))

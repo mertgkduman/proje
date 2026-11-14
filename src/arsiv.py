@@ -786,10 +786,18 @@ def validate_comparisons(data):
             raise ValueError('Değişiklik aynı belgenin iki ayrı sürümünü gerektirir')
         if before['sha256'] == after['sha256']:
             raise ValueError('Aynı içerik maddi değişiklik olarak gösterilemez')
+    typed_synthesis_ids = {r.get('subject_id') for r in data.get('comparison_semantic_review', [])
+                           if r.get('subject_kind') == 'comparison_synthesis'
+                           and r.get('reviewer_kind') == 'agent'}
     for synthesis in data['comparison_synthesis']:
         if (synthesis['topic_id'],synthesis['taxonomy_version']) not in topics or not synthesis['text']:
             raise ValueError('Konu özeti geçersiz')
-        if contract['version'] == 2 and synthesis['taxonomy_version'] == contract['taxonomy_version']:
+        # A typed author's review belongs to the claim, not to whichever
+        # taxonomy is currently selected. Earlier contract-1 claims without
+        # such a review retain their original two-owner validation below.
+        typed_review = synthesis['id'] in typed_synthesis_ids
+        if contract['version'] == 2 and (synthesis['taxonomy_version'] == contract['taxonomy_version']
+                                         or (synthesis['taxonomy_version'] >= 3 and typed_review)):
             validate_synthesis_v2(data, synthesis)
             continue
         ids = [e['passage_id'] for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == synthesis['id']]

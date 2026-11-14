@@ -42,3 +42,9 @@ kaybı sıfır ve eklenen review sayısı 108 idi. İnceleme soyları
 `data/comparisons/03-finding-review-links.json` içindedir. Tam Faz1 workspace
 kontrolü `PHASE_ONE_WORKSPACE_OK 8022` verdi. Başarısız yayın başarı olarak
 kaydedilmedi; yalnız yayın adımı yeni tam kontrollerle tekrar başlatıldı.
+
+Kısmi `4da93e2c64914eecb875c66cca14ea57` yayını sonraki denemede çıkış 0 ile
+kabul edildi. Bu tabandan yeni workspace hazırlayan ayrı süreç, v3 tipli
+sentezlerin v4 altındaki doğrulama düzeltmesinden önceki kodla başlatıldı.
+Bu süreç yalnız mevcut v3 tabanı açıp kendi eski sözleşmesiyle denetler; v4
+reconcile, sentez yüklemesi ve son denetimler GREEN kodla ayrı yürütülür.
