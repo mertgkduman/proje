@@ -35,5 +35,11 @@ karşılaştırılmadan tamamlanmış sayılmaz.
   ve sağlık sigortası tarihsel çiftleri de kaynaklarıyla ayrı gözden geçirilir.
 
 `income-review-draft.md`, `equal-pay-review-draft.md`, `seeds-review-draft.md`,
-`working-hours-review-draft.md` ve `emissions-review-draft.md` bazı kaynak
-ayrımlarını kaydeder. Bunlar yayın paketi veya bütün kapsamın kanıtı değildir.
+`working-hours-review-draft.md`, `emissions-review-draft.md`,
+`energy-sources-review-draft.md`, `energy-poverty-review-draft.md`,
+`early-childhood-review-draft.md`, `curriculum-review-draft.md`,
+`membership-registration-review-draft.md`, `representative-pay-review-draft.md`,
+`animal-status-review-draft.md`, `care-participation-review-draft.md`,
+`platform-work-review-draft.md`, `water-access-review-draft.md` ve
+`demokrat-history-review-draft.md` bazı kaynak ayrımlarını kaydeder. Bunlar
+yayın paketi veya bütün kapsamın kanıtı değildir.
