@@ -76,4 +76,9 @@ with tempfile.TemporaryDirectory(prefix='proje-0314-integration-', dir='/tmp') a
     assert len([r for r in snapshot['comparison_row'] if r['taxonomy_version'] == 3]) == len(rows) + len(test_rows)
     assert len({r['party_id'] for r in snapshot['comparison_row'] if r['topic_id'] == 'test-nine-party-topic'}) == 9
     assert arsiv.validate_changed_topic_reviews(snapshot)
-    print('RECONCILE_REAL_EXPORT_OK', len(rows), 'NEW_TOPIC_NINE_PARTIES_OK', flush=True)
+    (work / 'records.json').write_text(json.dumps(snapshot, ensure_ascii=False), encoding='utf-8')
+    report = arsiv.render_comparison_snapshot(snapshot, arsiv.render_report)
+    (work / 'index.html').write_text(report, encoding='utf-8')
+    arsiv.validate_phase_one_html(snapshot, report)
+    assert arsiv.validate_phase_three_workspace(work, 'partial')
+    print('RECONCILE_REAL_EXPORT_OK', len(rows), 'NEW_TOPIC_NINE_PARTIES_OK', 'SELECTED_HTML_AUDIT_OK', flush=True)
