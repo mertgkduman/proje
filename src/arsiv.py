@@ -647,7 +647,7 @@ def validate_comparisons(data):
     groups = {}
     for row in rows.values():
         if row['alternative_group']:
-            groups.setdefault(row['alternative_group'], []).append(row)
+            groups.setdefault((row['taxonomy_version'], row['alternative_group']), []).append(row)
     for group in groups.values():
         keys = {(r['topic_id'], r['taxonomy_version'], r['party_id'], r['level'], r['organ'], r['source_role']) for r in group}
         version_ids = {r['version_id'] for r in group}

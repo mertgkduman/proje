@@ -329,6 +329,35 @@ class ComparisonContentTest(unittest.TestCase):
         data['comparison_field'].append(dict(id='alternative-old-field', row_id=other['id'], field='charter_answer', summary_finding_id='alternative-old-summary', quote_finding_id='alternative-old-quote', condition_key=None))
         self.assertTrue(arsiv.validate_comparisons(data))
 
+    def test_alternatives_remain_independent_across_taxonomy_versions(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        row = next(r for r in data['comparison_row'] if r['party_id'] == 'iyi')
+        row['alternative_group'] = 'same-alternatives'
+        other = copy.deepcopy(row)
+        other.update(id='alt-old', version_id='0205-iyi-charter-istanbul-v1')
+        data['comparison_row'].append(other)
+        old_passage = next(p for p in data['passage'] if p['id'] == '03-iyi-once-uye')
+        for typ in ('summary', 'quote'):
+            fid = 'alt-old-' + typ
+            data['finding'].append(dict(id=fid, party_id='iyi', heading='Tüzük', pair_id='alt-old-pair', text=old_passage['exact'], provenance=typ, epistemic_type='claim'))
+            data['finding_evidence'].append(dict(finding_id=fid, passage_id=old_passage['id'], role='support'))
+        data['comparison_field'].append(dict(id='alt-old-field', row_id=other['id'], field='charter_answer', summary_finding_id='alt-old-summary', quote_finding_id='alt-old-quote', condition_key=None))
+        topic = copy.deepcopy(data['comparison_topic'][0])
+        topic['taxonomy_version'] = 3
+        data['comparison_topic'].append(topic)
+        data['topic'].append(dict(id=topic['topic_id'], label='Merkez seçimi', taxonomy_version=3, valid_from='2026-11-13', status='verified', change_reason='Test sözlüğü'))
+        data['topic_basis'].append(dict(topic_id=topic['topic_id'], taxonomy_version=3, passage_id='03-iyi-sonra-uye', rationale='Tüzük hükmü', source_role='charter'))
+        for old in (row, other):
+            new = copy.deepcopy(old)
+            new.update(id='v3-' + old['id'], taxonomy_version=3)
+            data['comparison_row'].append(new)
+            for field in [f for f in data['comparison_field'] if f['row_id'] == old['id']]:
+                new_field = copy.deepcopy(field)
+                new_field.update(id='v3-' + field['id'], row_id=new['id'])
+                data['comparison_field'].append(new_field)
+        data['comparison_contract'][0].update(taxonomy_version=3, stage='partial')
+        self.assertTrue(arsiv.validate_comparisons(data))
+
     def test_alternative_and_supplement_are_named_in_both_views(self):
         data = test_comparisons.ComparisonReleaseTest.comparison_data()
         row = next(r for r in data['comparison_row'] if r['party_id'] == 'tip')
