@@ -24,10 +24,17 @@ yokluk sonucu çıkarılmamıştır.
   okundu; eşit işe ücret kuralı bu sayfalarda açıkça saptanmadı. Genel cinsiyet
   eşitliği, istihdam ve bakım önlemleri bu dar soruya olumlu yanıt sayılmadı;
   belgenin geri kalan kapsamı ayrıca değerlendirilecektir.
-- İYİ'nin erişilebilir programında ücret ve eşitlik için ilk metin taraması
-  yapılmıştır; ilgili tüm bağlamlar henüz incelenmediğinden sonuç açık kalır.
-- Yeni Yol'un bağımsız program açığı, DBP'nin bağımsız güncel program açığı ve
-  DBP tarihsel programının ilgili kapsamı ayrıca ele alınacaktır.
+- İYİ'nin erişilebilir programında ekonomik temel ilkelerin ilgili bölümü ve
+  çalışma hayatı/sendika bölümü okundu. İstihdam ve ücretlere ilişkin genel
+  ifadeler var; bu incelenen bağlamda eşit işe ücret kuralı açıkça saptanmadı.
+  İlgili diğer bağlamlar henüz incelenmediğinden belge geneline ilişkin sonuç
+  açık kalır.
+- Yeni Yol'un bağımsız program açığı ile DBP'nin bağımsız güncel program açığı
+  ayrı korunur. Tarihsel BDP Blogspot kopyasının kadın ve emek başlıkları
+  doğrudan okundu: kadın emeğinin görünür kılınması, kadınların istihdamı ve
+  onurlu çalışma ilkesi yer alır; bu iki bölümde eşit işe ücret kuralı açıkça
+  saptanmadı. Bu kapsam, bütün tarihsel program için yokluk sonucu değildir;
+  ikinci kopya ve ilgili ekonomi bölümleri ayrıca gözden geçirilecektir.
 
 Kaynaklar: yukarıdaki pasaj kimlikleri seçili kapalı snapshot'ta belge sürümü,
 özgün bayt ve arşiv konumuna bağlıdır. Saadet özgün PDF SHA-256
