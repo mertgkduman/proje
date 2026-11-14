@@ -1258,6 +1258,37 @@ def export_db(path, release_id, strict_identity=False):
         db.close()
 
 
+def render_comparison_snapshot(data, renderer):
+    """Render the selected dictionary while retaining historical snapshot data."""
+    contracts = data.get('comparison_contract', [])
+    if not contracts or contracts[0]['taxonomy_version'] < 3:
+        return renderer(data)
+    version = contracts[0]['taxonomy_version']
+    visible = dict(data)
+    for name in ('comparison_topic', 'comparison_row', 'comparison_synthesis'):
+        visible[name] = [item for item in data.get(name, []) if item['taxonomy_version'] == version]
+    active_rows = {r['id'] for r in visible['comparison_row']}
+    active_fields = [f for f in data.get('comparison_field', []) if f['row_id'] in active_rows]
+    active_findings = {f[k] for f in active_fields for k in ('summary_finding_id', 'quote_finding_id')}
+    comparison_findings = {f[k] for f in data.get('comparison_field', []) for k in ('summary_finding_id', 'quote_finding_id')}
+    # Retain independently used findings, including their paired quotation or
+    # summary, so removing obsolete comparison-only findings cannot break a
+    # dossier or a version-history reference.
+    referenced = set(active_findings)
+    for table in ('action', 'match', 'dossier_field', 'dossier_event', 'version_context', 'version_relation'):
+        for row in data.get(table, []):
+            referenced.update(value for key, value in row.items() if key.endswith('finding_id') and value)
+    for policy in data.get('source_policy', []):
+        referenced.update(json.loads(policy.get('legacy_findings') or '[]'))
+    pairs = {f['pair_id'] for f in data.get('finding', []) if f['id'] in referenced and f['pair_id']}
+    referenced.update(f['id'] for f in data.get('finding', []) if f['pair_id'] in pairs)
+    hidden = comparison_findings - referenced
+    visible['finding'] = [f for f in data.get('finding', []) if f['id'] not in hidden]
+    visible['finding_evidence'] = [e for e in data.get('finding_evidence', []) if e['finding_id'] not in hidden]
+    visible['comparison_field'] = active_fields
+    return renderer(visible)
+
+
 def audit_release(release='current', _seen=None):
     release = current() if release == 'current' else release
     if not release or not all(c in '0123456789abcdef' for c in release):
@@ -1281,6 +1312,7 @@ def audit_release(release='current', _seen=None):
         if exported['schema_version'] == 6:
             c = exported['comparison_contract'][0]
             if (manifest.get('comparison_validation_version'),manifest.get('comparison_taxonomy_version'),manifest.get('comparison_stage')) != (1,c['taxonomy_version'],c['stage']): raise ValueError('Karşılaştırma manifesti geçersiz')
+            if manifest.get('comparison_view_version') != (1 if c['taxonomy_version'] >= 3 else None): raise ValueError('Karşılaştırma görünümü manifesti geçersiz')
         if not manifest.get('phase2_delivery'):
             base_id=manifest.get('base_release')
             if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
@@ -1319,7 +1351,7 @@ def audit_release(release='current', _seen=None):
         9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
-    if (folder / 'index.html').read_bytes() != renderer(exported).encode('utf-8'):
+    if (folder / 'index.html').read_bytes() != render_comparison_snapshot(exported, renderer).encode('utf-8'):
         raise ValueError('HTML kapalı snapshot ile eşleşmiyor')
     return release
 
@@ -1378,6 +1410,8 @@ def validate_phase_three_workspace(folder, stage):
         if active and stage == 'tracer' and sum(r['state'] == 'evidence' for r in rows) < 2: raise ValueError('Tracer iki kaynaklı yanıt gerektirir')
     report = (folder / 'index.html').read_text(encoding='utf-8')
     for row in data['comparison_row']:
+        if data['comparison_contract'][0]['taxonomy_version'] >= 3 and row['taxonomy_version'] != data['comparison_contract'][0]['taxonomy_version']:
+            continue
         rid = html.escape(row['id'], quote=True)
         if f'id="comparison-{rid}"' not in report or f'id="dossier-comparison-{rid}"' not in report or f'href="#comparison-{rid}"' not in report or f'href="#dossier-comparison-{rid}"' not in report:
             raise ValueError('İki görünüm arasındaki bağlantı eksik')
@@ -1445,7 +1479,7 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
         renderer = render_v15_report if payload['schema_version'] == 5 else render_report
         renderer_version = 15 if payload['schema_version'] == 5 else RENDERER_VERSION
-        (staging / 'index.html').write_text(renderer(payload), encoding='utf-8')
+        (staging / 'index.html').write_text(render_comparison_snapshot(payload, renderer), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
         # Once the base is phase-capable, deleting its method cannot bypass
         # acceptance. Earlier snapshots may still be authored incrementally.
@@ -1476,6 +1510,8 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
         if payload['schema_version'] == 6:
             c = payload['comparison_contract'][0]
             manifest.update(comparison_validation_version=1, comparison_taxonomy_version=c['taxonomy_version'], comparison_stage=c['stage'])
+            if c['taxonomy_version'] >= 3:
+                manifest['comparison_view_version'] = 1
         if refresh: manifest['phase2_refresh'] = True
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')

@@ -24,9 +24,22 @@ class ComparisonContentTest(unittest.TestCase):
         current['definition'] = 'Yeni sözlükteki tanım'
         data['comparison_topic'].append(current)
         data['comparison_contract'][0]['taxonomy_version'] = 3
+        old_row = next(r for r in data['comparison_row'] if r['party_id'] == 'tip')
+        old_field = next(f for f in data['comparison_field'] if f['row_id'] == old_row['id'])
+        old_finding = next(f for f in data['finding'] if f['id'] == old_field['summary_finding_id'])
+        active_row = copy.deepcopy(next(r for r in data['comparison_row'] if r['party_id'] == 'iyi'))
+        active_row.update(id='selected-row', taxonomy_version=3)
+        data['comparison_row'].append(active_row)
+        active_field = copy.deepcopy(next(f for f in data['comparison_field'] if f['row_id'] != old_row['id']))
+        active_field.update(id='selected-field', row_id='selected-row')
+        data['comparison_field'].append(active_field)
+        passage = next(e['passage_id'] for e in data['finding_evidence'] if e['finding_id'] == active_field['quote_finding_id'])
         report = render(data, rapor.render_report)
         self.assertIn('Yeni sözlükteki tanım', report)
         self.assertNotIn(historical['definition'], report)
+        self.assertNotIn('id="finding-' + old_finding['id'] + '"', report)
+        for target in ('id="comparison-selected-row"', 'id="dossier-comparison-selected-row"', 'href="#source-' + passage + '"'):
+            self.assertIn(target, report)
         self.assertEqual(historical['taxonomy_version'], 1)
 
     def test_program_topic_basis_points_to_the_actual_heading(self):
