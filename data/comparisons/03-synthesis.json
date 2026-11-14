@@ -21511,6 +21511,1135 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DEM kongre kararı ve tarihsel BDP çocuk destek önerisi kendi kaynaklarında vardır. Ana program açığından önleme veya tedaviye ilgisizlik sonucu üretilmedi. Taraf incelemeleri: dem: Önleme kongre kararı bağımsız programın bulunması değildir. dbp: Tarihsel BDP çocuklara ilişkin önerisi güncel DBP programı olarak doğrulanmamıştır. yeni-yol: Bağımsız program olmadığı için arz, önleme veya tedavi modeli okunamamıştır.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-uyusturucu-mucadele\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-uyusturucu-mucadele\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-uyusturucu-mucadele-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-kongrede-soz-1",
+        "topic_id": "kongrede-soz",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti il ve ilçe kongrelerinde söz sürelerini kongreye belirletir; İYİ kurultayında süreyi divan başkanı takdir eder, Genel Başkan/GİK üyeleri ve komisyon başkanları/sözcüleri önceliklidir; delege olmayanlar ile misafirlerin söz talebi delegelerin kabulüne bağlıdır."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-kongrede-soz-1",
+        "passage_id": "0303-epm-fifth-kongrede-soz-y-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-kongrede-soz-1",
+        "passage_id": "0306-iyi-kongrede-soz-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-kongrede-soz-1",
+        "passage_id": "0306-iyi-detail-kurultay-katilim-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-kongrede-soz-1",
+        "passage_id": "0314-iyi-congress-speaking-order-full-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-kongrede-soz-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde25’in il/ilçe kongreleri bağlamı bütünüyle okundu: gündem ve söz sırası korunur, konuşma süresi konu görüşülmeye başlanırken kongrece belirlenir. İYİ Madde39’un özgün index25/basılı26 sayfasındaki tam söz paragrafı ise divan başkanının sıra/süre takdirini, sayılan görevlerde olanlara önceliği ve delege olmayanlara ilişkin kabul koşulunu birlikte içerir. Mevcut iki kısa pasajın arasında kalan öncelik cümlesini atlamamak için aşağıdaki yeni tam kaynak bağı gerekir. Farklı kongre düzeylerinden fiili ifade özgürlüğü sonucu çıkarılmadı.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-fifth-kongrede-soz-y-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-fifth-kongrede-soz-y-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-kongrede-soz-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-kongrede-soz-passage\",\"0306-iyi-detail-kurultay-katilim-passage\",\"0314-iyi-congress-speaking-order-full-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-kongrede-soz-2",
+        "topic_id": "kongrede-soz",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bu edinimde bulunamadı; kongrede söz sırası ve sürelerine ilişkin tüzük kuralı okunamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-kongrede-soz-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Gerçek tüzük edinim girişimi tam madde metnini sağlayamamıştır. Taslak onayından söz eden kuruluş haberi konuşma usulünü vermez; bu açık söz hakkı bulunmadığı veya kısıtlandığı anlamına gelmez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-kongrede-soz-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-parti-ici-seffaflik-1",
+        "topic_id": "parti-ici-seffaflik",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti üyeye tüzük ve yönetmelikler çerçevesinde bilgi alma hakkı verir; TİP’in HTML tüzüğü çalışmaları ve mali durumu üye denetimine açar, yazılı bilgi talebine PM aracılığıyla en geç 45 günde yanıt öngörür."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-parti-ici-seffaflik-1",
+        "passage_id": "0303-epm-uyelik-bilgi-gorus-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-parti-ici-seffaflik-1",
+        "passage_id": "0304-tip-seffaflik-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-parti-ici-seffaflik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde 6’daki hak, tüzük ve ilgili yönetmelik çerçevesiyle sınırlanarak aktarılır. TİP Madde 4.5’in tam paragrafında tüm çalışmalarla ilgili bilgi, mali denetim, yöneticilerin bilgiye zamanında/yeterli erişim sağlama yükümlülüğü ve PM aracılığıyla ilgili kurulun ya da PM’nin 45 günde yazılı talebe yanıtı birlikte vardır. İç yayın ve politik çerçevede halka açıklık devamını da okudum; üyeye ilişkin bu hükmü koşulsuz kamuya bütün belge erişimi gibi yazmadım.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parent-parti-ici-seffaflik-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-uyelik-bilgi-gorus-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-seffaflik-ana-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-seffaflik-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-parti-ici-seffaflik-2",
+        "topic_id": "parti-ici-seffaflik",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; üyelerin parti bilgilerine ve mali duruma erişim hakları bu belge üzerinden karşılaştırılamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-parti-ici-seffaflik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belgenin bulunamaması şeffaflık kuralı olmadığına kanıt değildir. Aramada taslak onayı haberinin madde metni vermemesiyle, okunmuş bir tüzükte ilgili kural saptanmaması farklı durumlardır; burada ilk durum vardır.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-ici-seffaflik-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-yerel-orgut-ilkeleri-1",
+        "topic_id": "yerel-orgut-ilkeleri",
+        "taxonomy_version": 3,
+        "text": "TİP’in HTML tüzüğünde ilçe yönetimi, seçilmiş başkan dışında en az beş üyedir ve PM sayıyı iki katına çıkarabilir; EMEP yeni örgütlenen yerde kurucu il yönetimini GYK, kurucu ilçe yönetimini GYK veya il yönetimine atatır."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-yerel-orgut-ilkeleri-1",
+        "passage_id": "0304-tip-ilce-yonetim-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-yerel-orgut-ilkeleri-1",
+        "passage_id": "0309-emep-html-059-2-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-yerel-orgut-ilkeleri-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP Madde3.16 ilçe kurulunun üye sayısını verir ve PM’nin belirleyeceği ilçelerde sayıyı iki katına kadar artırabilmesini düzenler. EMEP Madde65’teki tam cümle yalnız örgütün yeni kurulduğu yerlerdeki kurucu başkan/yönetim atamalarını kapsar. Seçimle oluşan olağan kurul bileşimi ile ilk kuruluş ataması farklı evrelerdir; EMEP’in bütün yerel yönetimlerinin sürekli atamayla oluştuğu veya TİP’te hiç kurucu atama olmadığı sonucu çıkarılmadı.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-yerel-ilkeler-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-ilce-yonetim-p1\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-059-2-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-059-2-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-yerel-orgut-ilkeleri-2",
+        "topic_id": "yerel-orgut-ilkeleri",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadığı için yerel örgütlerin oluşumu ve kurucu atamaları bu belgeyle incelenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-yerel-orgut-ilkeleri-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bu eksiklik yerel örgüt bulunmadığını veya atama/seçim yöntemlerinden birinin reddedildiğini göstermez. Gerçek edinim kaydı madde metninin eksikliğini taşır; başka partilerin tüzükleri Yeni Yol yerine kullanılmaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-yerel-orgut-ilkeleri-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-onsecim-merkez-yoklama-1",
+        "topic_id": "onsecim-merkez-yoklama",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti’de TBMM adayları için merkez yoklaması uygulandığında adayları doğrudan PM belirler; EMEP genel ve yerel seçim adaylarında önseçim veya merkez yoklamasına izin verip olanaklı her durumda önseçimi öngörür."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-onsecim-merkez-yoklama-1",
+        "passage_id": "0303-epm-eighth-onsecim-merkez-yoklama-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-onsecim-merkez-yoklama-1",
+        "passage_id": "0309-emep-html-024-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-onsecim-merkez-yoklama-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde33’ün geniş metni yöntem seçimi, önseçim ve diğer yoklamaları da içerir; alıntılanan fıkra yalnız merkez yoklamasının nasıl sonuçlandığını söyler. Bu yüzden bütün adayların yalnız merkezden belirlendiği sonucunu çıkarmadım. EMEP Madde65’in iki tam cümlesi parti üyesi adayları, üye/delege oyuyla önseçimi ve merkez yoklamasını birlikte sayar; önseçim önceliğinin olanaklı olma koşulu cümlede korunur. TBMM ile genel/yerel kapsamları eşitlenmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-eighth-onsecim-merkez-yoklama-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-eighth-onsecim-merkez-yoklama-p\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-024-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-024-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-onsecim-merkez-yoklama-2",
+        "topic_id": "onsecim-merkez-yoklama",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; adayların önseçim veya merkez yoklamasıyla belirlenme kuralı bu kaynakta okunamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-onsecim-merkez-yoklama-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Taslağın onaylandığı haberi hangi aday belirleme yönteminin düzenlendiğini göstermez. Gerçek belge açığı önseçime destek/karşıtlık veya merkez yoklamasının tercih edildiği şeklinde kullanılamaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-onsecim-merkez-yoklama-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-defterler-1",
+        "topic_id": "mali-defterler",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti zorunlu defterlerin biçim, basım ve dağıtımını yasa ilkelerine uygun Hesap Yönetmeliğine bırakır; TİP’in HTML tüzüğü her kademede üye, karar, evrak, gelir-gider ve demirbaş defterlerini zorunlu sayar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-defterler-1",
+        "passage_id": "0303-epm-tenth-parti-defterleri-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-defterler-1",
+        "passage_id": "0304-tip-defter-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-defterler-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde59 yalnız defteri anmaz; gelir toplama/harcama, bütçe/kesin hesap, alındı ve defter biçimleri ile örgütlerin görevlerini kanuna uygun Hesap Yönetmeliğiyle düzenler. TİP Madde7.2’nin tam ilk cümlesi her kademedeki organlar için beş defter türünü doğrudan sayar. Biri ikincil düzenleme yetkisini, diğeri zorunlu kayıt türlerini öne çıkarır; Yeni Parti’nin defter tutmadığı veya TİP’in başka ayrıntı düzenlemediği anlamı üretilmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parent-mali-defterler-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-tenth-parti-defterleri-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-mali-defter-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-defter-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-defterler-2",
+        "topic_id": "mali-defterler",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; zorunlu defterleri ve bunları düzenleme yetkisini bu belge üzerinden karşılaştırmak mümkün değil."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-defterler-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tam metnin yokluğu kayıt veya defter yükümlülüğünün bulunmadığını göstermez. Edinim girişimi gerçek tüzük metnini sağlayamamış; başka parti defter kuralları Yeni Yol’un kuralı olarak aktarılmamıştır.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-mali-defterler-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-demokratik-merkeziyetcilik-1",
+        "topic_id": "demokratik-merkeziyetcilik",
+        "taxonomy_version": 3,
+        "text": "TİP’in HTML tüzüğü demokratik merkeziyetçiliği karar oluşurken kısıtsız tartışma, uygulamada birlikte hareket olarak tanımlar; EMEP bunu örgütlenmenin ve organ içi/organlar arası ilişkilerin düzenleyici ilkesi sayar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-demokratik-merkeziyetcilik-1",
+        "passage_id": "0304-tip-dem-merkez-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-demokratik-merkeziyetcilik-1",
+        "passage_id": "0309-emep-html-014-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-demokratik-merkeziyetcilik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP Madde4.4’te tartışma evresi ile kararın uygulanması ayrılır; devamı üye eşitliği, organlarda ifade özgürlüğü ve hedef birliğini zedelemeyen görüş farklılıklarını ele alır. EMEP Madde26’nın gerçek cümlesi aynı adlı ilkenin hangi örgütsel ilişkilere uygulandığını belirtir. Aynı kavramın geçmesinden bütün üyelik haklarının ve karar usullerinin özdeş olduğu sonucu çıkarılmadı; her kaynağın açıkladığı kapsamla yetinildi.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-dem-merkez-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-dem-merkez-p1\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-014-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-014-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-demokratik-merkeziyetcilik-2",
+        "topic_id": "demokratik-merkeziyetcilik",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; demokratik merkeziyetçilik adıyla bir örgüt ilkesi düzenleyip düzenlemediği bu belgeyle belirlenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-demokratik-merkeziyetcilik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belge açığı bir örgüt ilkesine destek veya karşıtlık değildir. Tüzük taslağına ilişkin haber içerik sağlamadığından okunmuş bir maddede açık ifade saptanmadığı kararı da burada kurulamaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-demokratik-merkeziyetcilik-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-borc-yasagi-1",
+        "topic_id": "mali-borc-yasagi",
+        "taxonomy_version": 3,
+        "text": "İYİ Parti’nin ve DBP’nin incelenen tüzükleri, partinin üyelerine ve gerçek/tüzel kişilere hiçbir biçimde borç vermesini yasaklar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-borc-yasagi-1",
+        "passage_id": "0306-iyi-mali-borc-yasagi-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-borc-yasagi-1",
+        "passage_id": "0308-dbp-draft-016-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-borc-yasagi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ Madde84 üyeler ve diğer gerçek/tüzel kişiler, DBP HTML Madde106 üyeler ile gerçek/tüzel kişiler için aynı yönde açık borç verme yasağı içerir. DBP kaynağı12Ocak2025değişiklik notlu tam HTML’dir; iç kayıt kimliğindeki adlandırmadan taslak veya yürürlük sırası sonucu çıkarılmadı. Her iki cümle partinin başkasına borç vermesini düzenler; partinin borç almasına ilişkin genel bir yasak veya fiili mali davranış kanıtı gibi okunmadı.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-mali-borc-yasagi-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-mali-borc-yasagi-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-016-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-016-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-borc-yasagi-2",
+        "topic_id": "mali-borc-yasagi",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; partinin borç vermesine ilişkin özel hüküm bu metin üzerinden incelenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-borc-yasagi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tüzüğün edinilememesi borç verme yasağının bulunmadığı veya borç vermeye izin verildiği anlamına gelmez. Gerçek missing kaydı yalnız metin edinimindeki boşluğu gösterir; kanunun bugünkü hükümleri de bu eksik parti hükmünün yerine konmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-mali-borc-yasagi-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-hazine-yardimi-dagitim-1",
+        "topic_id": "hazine-yardimi-dagitim",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğü Hazine yardımının, yerel eğitim payı dâhil yüzde 40’ını il/ilçelere ayırır; İYİ nüshası en az dörtte birlik payı illerin nüfus, üye ve son genel seçim oy oranlarının ortalamasına göre düzenler."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-hazine-yardimi-dagitim-1",
+        "passage_id": "0303-epm-seventh-hazine-yardimi-dagitim-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-hazine-yardimi-dagitim-1",
+        "passage_id": "0306-iyi-hazine-yardimi-dagitim-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-hazine-yardimi-dagitim-1",
+        "passage_id": "0314-iyi-treasury-distribution-rule-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-hazine-yardimi-dagitim-1",
+        "passage_id": "0314-iyi-treasury-coefficient-continuation-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-hazine-yardimi-dagitim-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde 57’de yüzde 40 yerel payın içine Genel Merkezce yerel eğitim harcamalarına ayrılması gereken miktar da girer; bunu ek bir yüzde 40 pay gibi yazmadım. İYİ Madde 82’nin index 49–50/basılı 50–51 tam metni ve formül görseli okundu: yardım şartları taşıyan partiye yapılır, en az dörtte biri ayrılır; il payı nüfus/üyelik/oy oranlarından oluşturulan katsayıya dayanır, il-ilçe dağıtım usulünü GİK planlar ve Genel Muhasip gönderir. Metin en az dörtte bir derken çizimde yüzde 25 çarpanı görünür; bu ifadeleri kesin ve tek bir üst sınır gibi sadeleştirmedim. Mevcut kısa bu formül atfının öncesindeki tam kural için yeni bağ gerekir; hüküm aktarımı fiilen Hazine yardımı alındığını göstermez.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-seventh-hazine-yardimi-dagitim-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-seventh-hazine-yardimi-dagitim-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-hazine-yardimi-dagitim-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-hazine-yardimi-dagitim-passage\",\"0314-iyi-treasury-distribution-rule-p\",\"0314-iyi-treasury-coefficient-continuation-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-hazine-yardimi-dagitim-2",
+        "topic_id": "hazine-yardimi-dagitim",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü elde edilmedi; Hazine yardımının örgütlere dağıtımı bu belge üzerinden karşılaştırılamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-hazine-yardimi-dagitim-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tam tüzük yokluğu dağıtım kuralının olmadığına veya fiilen yardım alındığı/alınmadığına kanıt oluşturmaz. Gerçek edinim aramasının metin vermeyen taslak haberini kaydetmesi bu mali düzenlemeyi belirlemeye yetmez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-hazine-yardimi-dagitim-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-bagis-1",
+        "topic_id": "mali-bagis",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğü yasal miktar sınırını aşmayan bağışları gelir sayar; TİP’in HTML tüzüğü mali açıdan yalnız üyelerine ve emekçilerin bağışlarına dayanmayı bağımsızlık ilkesine bağlar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-bagis-1",
+        "passage_id": "0303-epm-tenth-mali-bagis-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-bagis-1",
+        "passage_id": "0304-tip-parti-bagis-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-bagis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde54’ün bağış bendi Siyasi Partiler Yasasındaki miktar sınırına gönderme yapar; güncel bir parasal tutar bu kaynaktan hesaplanmadı. TİP Madde4.2’nin tam özgün bağlamında ilke siyasal-ideolojik ve örgütsel bağımsızlıktır; mali dayanağın yalnız üyeler ve emekçi bağışları olması bunun gereği olarak yazılır. Kaynaktaki sadece koşulu korunur; iki hükümden fiili bağışçı listesi veya yasanın bugün izin verdiği bütün bağışlar hakkında ek sonuç üretilmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-tenth-mali-bagis-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-tenth-mali-bagis-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-parti-bagis-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-parti-bagis-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-bagis-2",
+        "topic_id": "mali-bagis",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; bağışlara ilişkin parti düzenlemesi bu belgeyle incelenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-bagis-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belgenin eksikliği bir bağış türüne izin veya yasak sonucu vermez. Gerçek edinim girişimi taslak metni sağlayamamış; başka parti tüzüklerindeki sınırlamalar Yeni Yol’a mal edilmemiştir.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-mali-bagis-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-musterek-disiplin-1",
+        "topic_id": "musterek-disiplin",
+        "taxonomy_version": 3,
+        "text": "TİP’in HTML tüzüğünde partili bakan ve milletvekili suçlamaları MYK tarafından ciddi bulunup sevk edilirse grup ve merkez disiplin kurulları müştereken bakar; İYİ’de Müşterek Kurul merkez ve TBMM grup disiplin kurullarının birleşimidir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-musterek-disiplin-1",
+        "passage_id": "0304-tip-disiplin-ortak-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-musterek-disiplin-1",
+        "passage_id": "0306-iyi-musterek-disiplin-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-musterek-disiplin-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP Madde 5.5’in tamamı okundu: MYK ciddi bulduğu suçlamayı grup disiplinine sevk eder; yazılı çağrı ve 15 günlük savunma hakkı tanımlanır, çağrı yanıtlanmazsa grup/merkez kurullarının müşterek toplanıp karar vereceği açıkça belirtilir. Bu özel kişi grubu ve sevk koşulu cümlede korunur. İYİ Madde 75’teki gerçek cümle Müşterek Kurulun iki bileşenini tanımlar. Aynı müşterek adından bütün görev alanlarının, sevk makamının veya itiraz yollarının aynı olduğu sonucu çıkarılmadı.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-disiplin-ortak-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-disiplin-ortak-p1\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-musterek-disiplin-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-musterek-disiplin-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-musterek-disiplin-2",
+        "topic_id": "musterek-disiplin",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; müşterek disiplin kurulu ve yetkisi bu metin üzerinden belirlenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-musterek-disiplin-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Metin açığı böyle bir kurulun bulunmadığını veya belirli kişilere disiplin uygulanmadığını göstermez. Kuruluş taslağına ilişkin haber, kurul bileşimi ve yargılama usulü verecek tam tüzüğün yerine geçmez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-musterek-disiplin-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-uye-secmen-listesi-1",
+        "topic_id": "uye-secmen-listesi",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti muhtarlık bölgesi delege seçimlerinde kongre takviminin ilanındaki üye listesini esas alır; İYİ’nin önseçim seçmen listesine üyeler, asılmasından itibaren 15 gün içinde yazılı itiraz edebilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-uye-secmen-listesi-1",
+        "passage_id": "0303-epm-tenth-uye-secmen-listesi-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-uye-secmen-listesi-1",
+        "passage_id": "0306-iyi-uye-secmen-listesi-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-uye-secmen-listesi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde 27’nin geniş bağlamı delege/kongre üyeliğidir; listenin hangi tarihte sabitlendiği açıkça verilir. İYİ Madde 70’in index 40/basılı 41 sayfasındaki A) Ön seçim bölümünün tamamı okundu: oy kullanacak üye listesinin seçim kuruluna sunumu, ilanı, 15 günlük yazılı itiraz ve kurulun incelemesi bu önseçim usulünün parçalarıdır. Kongre delegesi seçimiyle TBMM adayını belirleyen önseçim listesi aynı seçim işlemi değildir; cümlede iki kapsam ve süre başlangıcı ayrı tutuldu.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-tenth-uye-secmen-listesi-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-tenth-uye-secmen-listesi-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-uye-secmen-listesi-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-uye-secmen-listesi-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-uye-secmen-listesi-2",
+        "topic_id": "uye-secmen-listesi",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; parti içi üye/seçmen listesinin hazırlanması ve itiraz usulü bu kaynakta okunamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-uye-secmen-listesi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tam metnin eksikliği üye listesi tutulmadığını veya listeye itiraz hakkı bulunmadığını göstermez. Gerçek edinim kaydı metin vermeyen taslak haberini ve başarısız belge aramasını taşır; okunmuş bir bölüm incelemesi olarak sunulmaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-uye-secmen-listesi-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-disiplin-yargi-itiraz-1",
+        "topic_id": "disiplin-yargi-itiraz",
+        "taxonomy_version": 3,
+        "text": "Geçici/kesin çıkarma cezalarında maddelerin saydığı aykırılık iddialarıyla İYİ tüzüğü parti içi yollar kullanıldıktan sonra son karara 30 günde, DBP tüzüğü kararın tebliğinden 30 günde Asliye Hukuk Mahkemesine itirazı düzenler."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-disiplin-yargi-itiraz-1",
+        "passage_id": "0306-iyi-disiplin-yargi-itiraz-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-disiplin-yargi-itiraz-1",
+        "passage_id": "0308-dbp-draft-013-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-disiplin-yargi-itiraz-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ Madde 76 partiden/gruptan çıkarma cezalarını, sevk veya disiplin merciinin görev/yetkisizliğini ya da kararın kanun/tüzük/yönetmeliğe şekil ve usul aykırılığını sayar; parti itirazları sonrası nihai karar ve kararı veren merciin bulunduğu yer mahkemesi koşullarını açıklar. DBP Madde 97’nin tam özgün bağlamı da okundu: ilgili çıkarma cezasında sevk kurulunun yetkisizliği veya yasa/tüzük/yönetmelik aykırılığı savıyla tebliğden 30 gün içinde yetkili mahkemeye itiraz cümlesi vardır; aynı maddede iç itirazlar da düzenlenir. Bu farklı süre anlatımlarından DBP’de parti içi yol bulunmadığı veya sınırsız bir yargı başvurusu olduğu sonucu çıkarılmadı; aktarılanlar yalnız tüzük nüshalarının hükümleridir.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-disiplin-yargi-itiraz-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-disiplin-yargi-itiraz-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-013-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-013-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-disiplin-yargi-itiraz-2",
+        "topic_id": "disiplin-yargi-itiraz",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; disiplin kararına mahkeme başvurusu hakkındaki parti hükmü bu belge üzerinden karşılaştırılamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-disiplin-yargi-itiraz-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bu belge açığı yargı yolunun kapalı veya açık olduğuna ilişkin hukuki sonuç üretmez. Araştırma, başka parti tüzüğünü veya taslak onayı haberini Yeni Yol’un kendi madde metni yerine kullanmaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-disiplin-yargi-itiraz-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-gelir-makbuzu-1",
+        "topic_id": "mali-gelir-makbuzu",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğü gelirlerin parti tüzel kişiliği adına makbuzla toplanmasını; İYİ tüzüğü Genel Merkez ve teşkilat gelirlerinde Genel Merkezin bastırdığı makbuzların kullanılmasını düzenler."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-gelir-makbuzu-1",
+        "passage_id": "0303-epm-eighth-mali-gelir-makbuzu-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-mali-gelir-makbuzu-1",
+        "passage_id": "0306-iyi-mali-gelir-makbuzu-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-gelir-makbuzu-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde54’ün tam cümlesi gelirin kimin adına toplandığını ve makbuz karşılığını birlikte verir. İYİ Madde83’ün ilgili cümlesi merkezi basım usulünü belirtir; index50/basılı51 tam sayfada ayrıca seri/sıra kaydı, üç nüsha, mali sorumluluk ve teknolojik ödeme hükümleri görülür. Cümle iki farklı makbuz unsurunu aktarır; kayıtlı kurallardan gelirlerin fiilen bu usulde tahsil edildiği veya diğer ödeme biçimlerinin yasak olduğu sonucu çıkarılmaz.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-eighth-mali-gelir-makbuzu-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-eighth-mali-gelir-makbuzu-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-mali-gelir-makbuzu-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-mali-gelir-makbuzu-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-mali-gelir-makbuzu-2",
+        "topic_id": "mali-gelir-makbuzu",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; gelir makbuzlarının düzenlenmesine ilişkin kendi kuralı bu kaynakta okunamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-mali-gelir-makbuzu-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tüzüğü edinilemeyen tarafa makbuz kullanmama veya kayıt dışı gelir iddiası yüklenemez. Gerçek missing/attempt bağı yalnız tam metnin sağlanamadığını gösterir; fiili gelir uygulamasını incelemez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-mali-gelir-makbuzu-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-uye-kimlik-karti-1",
+        "topic_id": "uye-kimlik-karti",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti kimlik belgesi ve yenileme karşılıklarını gelir sayar; TİP’in HTML nüshasında dijital kart üyelik bitince silinir, 2022 dosya adlı PDF’de kabul sonrası verilen partiye ait kart çıkarılma/istifada örgüte iade edilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-uye-kimlik-karti-1",
+        "passage_id": "0303-epm-tenth-uye-kimlik-karti-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-uye-kimlik-karti-1",
+        "passage_id": "0304-tip-diff-kart-html-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-uye-kimlik-karti-1",
+        "passage_id": "0304-tip-diff-kart-pdf-context"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-uye-kimlik-karti-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde 54(f) yalnız kart/yenileme karşılığının gelir kaynağı oluşunu söyler; kartın dijital veya fiziksel biçimini bu bentten çıkarmadım. TİP HTML Madde 2.4 kayıttan sonra portalda dijital kart oluşturup çıkarılma/istifada kaydıyla birlikte siler. PDF Madde 2.4 kabul sonrası Örgüt Komitesince düzenlenen, partiye ait kartın iadesini düzenler; index 4/basılı 3 özgün görseli doğrudan okudum. İki TİP hükmü aynı partiye ait alternatif kaynaklardır, iki bağımsız parti veya kanıtlanmış önce/sonra değişikliği değildir; kabul/yürürlük sırası açık bırakıldı.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-tenth-uye-kimlik-karti-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-tenth-uye-kimlik-karti-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-diff-kart-html-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-diff-kart-html-p1\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-diff-kart-pdf-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-diff-kart-pdf-context\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-uye-kimlik-karti-2",
+        "topic_id": "uye-kimlik-karti",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; üye kimlik kartının verilmesi, biçimi ve üyelik sonundaki işlemi bu belgede okunamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-uye-kimlik-karti-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belge açığı kart uygulaması bulunmadığı veya belirli bir kart biçiminin kullanıldığı anlamına gelmez. Kuruluşta taslak onayının anılması bu kart maddesini sağlamaz; başka partinin dijital/teslim hükümleri buraya taşınmaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-uye-kimlik-karti-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-secime-katilma-1",
+        "topic_id": "secime-katilma",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti seçimlere katılıp katılmama kararını PM’ye verir; İYİ tüzüğünde seçimlere kısmi katılım kararı GİK üye tam sayısının en az üçte ikisini gerektirir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-secime-katilma-1",
+        "passage_id": "0303-epm-eighth-secime-katilma-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-secime-katilma-1",
+        "passage_id": "0306-iyi-secime-katilma-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-secime-katilma-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde22’de görev sahibi PM’dir; aynı fıkra yasa/tüzük kurallarına göre aday saptama yöntemine ve merkez adaylarına da değinir. İYİ Madde68’de okunan kural özellikle kısmi katılıma ait nitelikli çoğunluktur. Bu iki kapsamı ayırdım: İYİ’nin tüm seçim kararları için aynı eşik varmış veya Yeni Parti’de kısmi katılıma ilişkin özel hüküm yokmuş gibi bir yokluk/özdeşlik çıkarılmadı.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-eighth-secime-katilma-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-eighth-secime-katilma-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-secime-katilma-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-secime-katilma-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-secime-katilma-2",
+        "topic_id": "secime-katilma",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; seçime katılım kararının organı ve çoğunluğu bu belgeyle belirlenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-secime-katilma-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bu sonuç Yeni Yol’un seçimlere katılmadığını veya katılım için bir organ belirlemediğini göstermez. Tam tüzük aramasının metni sağlayamaması, fiili seçim kararı veya okunmuş kural yokluğu değildir.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-secime-katilma-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-parti-dava-ehliyeti-1",
+        "topic_id": "parti-dava-ehliyeti",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti, yasal özel hükümler saklı kalmak üzere dava açma/husumet yetkisini devredilebilir biçimde Genel Başkana verir; TİP’in HTML tüzüğü işçi, insan, çevre ve sayılan mücadele alanlarında dava açma, katılma ve suç duyurusunu düzenler."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-parti-dava-ehliyeti-1",
+        "passage_id": "0303-epm-eighth-parti-dava-ehliyeti-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-parti-dava-ehliyeti-1",
+        "passage_id": "0304-tip-savasim-yargi-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-parti-dava-ehliyeti-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde21 parti adına davada yetkili organı gösterir, kanunlardaki özel hükümleri saklı tutar ve ilgili organ/mercilere devri açıkça mümkün kılar. TİP Madde4.13 ise işçi/insan/çocuk/kadın/LGBTİ+, çevre, avukat, hayvan, göçmen/mülteci, engelli, emekli ve çalışma yaşamı gibi alanları sayarak dava/katılma/suç duyurusu araçlarını belirtir. Organ yetkisiyle faaliyet alanı farklı unsurlardır; bu tüzük metinlerinden dış hukuktaki her dava için otomatik taraf ehliyeti veya karşıt parti tutumu çıkarılmadı.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-eighth-parti-dava-ehliyeti-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-eighth-parti-dava-ehliyeti-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-savasim-yargi-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-savasim-yargi-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-parti-dava-ehliyeti-2",
+        "topic_id": "parti-dava-ehliyeti",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; parti adına dava açma yetkisi veya dava alanları bu kaynakta incelenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-parti-dava-ehliyeti-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tam metnin eksikliği partinin yargıya başvuramayacağına ilişkin bir hukuki hüküm değildir. Gerçek edinim girişimi tüzük maddesini sağlayamamıştır; kuruluş haberindeki taslak ifadesi yetkili organı göstermez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-dava-ehliyeti-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-parti-yetki-kullanimi-1",
+        "topic_id": "parti-yetki-kullanimi",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti Genel Başkanını yetkili organ kararlarının uygulanmasını denetlemekle görevlendirir; EMEP kararların özgür tartışmadan sonra alınmasını ve alındıktan sonra bütün üyelerce uygulanmasını zorunlu tutar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-parti-yetki-kullanimi-1",
+        "passage_id": "0303-epm-tenth-organ-denetim-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-parti-yetki-kullanimi-1",
+        "passage_id": "0309-emep-html-030-1-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-parti-yetki-kullanimi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde21’in Genel Başkan başlığı ve ilgili görev fıkrası özgün bağlamıyla okundu; sözü edilen denetim kararın ilgililerce uygulanmasına yönelir. EMEP Madde26’nın iki tam cümlesinde serbest düşünce/öneri tartışması karar öncesidir, karar alınınca uyma ve tam uygulama yükümlülüğü bütün üyelere yönelir. Bir organın gözetim görevi ile üyeler için işleyiş ilkesi aynı yetki biçimi sayılmadı; birinin diğer yaklaşımı reddettiği söylenmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parent-parti-yetki-kullanimi-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-tenth-organ-denetim-p\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-030-1-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-030-1-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-parti-yetki-kullanimi-2",
+        "topic_id": "parti-yetki-kullanimi",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; kararların uygulanması ve parti içi yetki kullanımı bu belge üzerinden okunamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-parti-yetki-kullanimi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belge edinimindeki açık, yetki zincirinin veya karar kuralının bulunmadığı anlamına gelmez. Eksik tüzük için organlar arasında itaat ya da özerklik varsayımı üretilmedi; gerçek missing kaydı korunur.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-yetki-kullanimi-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-uyelik-haklari-v2-1",
+        "topic_id": "uyelik-haklari-v2",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti üyeye tüzük/yönetmelik çerçevesinde bilgi alma ve görüş bildirme hakkı tanır; TİP’in HTML tüzüğü toplantılarda eleştiri ve üst kurula iletim yanında üye portalında görüş/eleştiri ve anket oylamasını da sayar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-uyelik-haklari-v2-1",
+        "passage_id": "0303-epm-uyelik-bilgi-gorus-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-uyelik-haklari-v2-1",
+        "passage_id": "0304-tip-uyelik-gorus-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-uyelik-haklari-v2-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde6’daki genel hak ifadesinin tüzük ve ilgili yönetmelik koşulu cümlede tutulur. TİP Madde2.8’in tam hak/yükümlülük listesinde toplantı görüş/öneri/itiraz/eleştiri ile üst kurula iletim talebi, parti içi seçimlere adaylık/oy ve portal anketi ayrı bentlerdir. Portal anketini bütün bağlayıcı parti kararlarının çevrimiçi alınması gibi genişletmedim. Her iki taraf üyelik hakkı içeriği sağlar; bu iki alıntıdan üyeliğe kabulün bütün usulleri türetilmez.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parent-uyelik-haklari-v2-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-uyelik-bilgi-gorus-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-uyelik-ana-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-uyelik-gorus-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-uyelik-haklari-v2-2",
+        "topic_id": "uyelik-haklari-v2",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; üye hakları ve başvuru yolları bu belge üzerinden karşılaştırılamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-uyelik-haklari-v2-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bu eksiklik üyeye bilgi, görüş veya katılım hakkı tanınmadığının kanıtı değildir. Taslak onayı haberinden ayrıntılı üyelik hükmü çıkarılamadığı için belge açığı açık tutulur.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-uyelik-haklari-v2-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-yonetim-denetim-v2-1",
+        "topic_id": "yonetim-denetim-v2",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti merkez kesin hesabını kurultaya, il/ilçe kesin hesaplarını kendi kongrelerine inceletip karara bağlatır; EMEP Genel Kongreye partinin gelir-gider kesin hesabını kabul veya ret yetkisi verir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-yonetim-denetim-v2-1",
+        "passage_id": "0303-epm-seventh-merkez-hesap-denetimi-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-yonetim-denetim-v2-1",
+        "passage_id": "0309-emep-html-048-1-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-yonetim-denetim-v2-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde58’de merkez ve yerel hesapların hangi toplantıda karara bağlanacağı tek tam cümlede ayrılır. EMEP’in özgün tüzük Madde31 başlığı Genel Kongre’dir; kesin hesabı kabul/ret onun görevleri arasında sayılır. Böylece iki cümle yönetim organlarının hesap verme görevinin tüzüksel parçasını karşılaştırır; fiili denetimin kalitesi veya dış mali denetimin varlığı/yokluğu hakkında sonuç vermez.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parent-yonetim-denetim-v2-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-seventh-merkez-hesap-denetimi-p\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-048-1-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-048-1-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-yonetim-denetim-v2-2",
+        "topic_id": "yonetim-denetim-v2",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü bulunamadı; yönetim organlarının hesap denetimi görevleri bu belgeyle incelenemiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-yonetim-denetim-v2-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tam belge açığından hesapların denetlenmediği veya belirli bir organın yetkisiz olduğu çıkarılamaz. Gerçek arama metin sağlamamıştır; araştırma fiili mali uygulamayı bu eksik tüzük yerine değerlendirmez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-yonetim-denetim-v2-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-gorus-itiraz-v2-1",
+        "topic_id": "gorus-itiraz-v2",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti parti içi görüş açıklamayı kararları etkisizleştirmeme, bütünlüğü ve disiplini bozmama sınırlarıyla tanır; TİP’in HTML tüzüğü karar oluşurken kısıtsız tartışma, kararın uygulanmasında birlikte hareket ve üyelere dönük iç yayın öngörür."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-gorus-itiraz-v2-1",
+        "passage_id": "0303-epm-ic-tartisma-elestiri-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-gorus-itiraz-v2-1",
+        "passage_id": "0304-tip-ic-tartisma-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-gorus-itiraz-v2-1",
+        "passage_id": "0304-tip-ic-tartisma-p2"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter-next-gorus-itiraz-v2-1",
+        "passage_id": "0304-tip-ic-tartisma-p3"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-gorus-itiraz-v2-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti Madde6’nın iki tam cümlesinde özgür açıklama parti içi görev/faaliyet kapsamındadır; üç açık sınır atılmadı. TİP Madde4.4’ün tam parçaları bağlı organlarda tartışmayı, tüm örgüt gündemindeki tartışma için yalnız üyelere dönük iç yayını, karar sonrası çoğunluk/üst kurul/PM/Kongre-Konferans kararlarına uyumu birlikte içerir; hedef birliğini zedelemeyen görüş farklılıkları da olumlu değerlendirilir. Karar öncesi ve sonrası evreler korunur; kaynaklardan parti dışı sınırsız ifade veya her itirazın disiplin suçu olduğu sonucu üretilmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parent-gorus-itiraz-v2-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-ic-tartisma-elestiri-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-gorus-ana-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-ic-tartisma-p1\",\"0304-tip-ic-tartisma-p2\",\"0304-tip-ic-tartisma-p3\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter-next-gorus-itiraz-v2-2",
+        "topic_id": "gorus-itiraz-v2",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un tam tüzüğü edinilemedi; parti içi görüş, tartışma ve itiraz yolları bu metinde okunamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter-next-gorus-itiraz-v2-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T22:12:05.502526+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belgeye ulaşılamaması görüş hakkının veya itiraz yolunun bulunmadığı anlamına gelmez. Taslak onayı bilgisinden kuralın kapsamı çıkarılmadı; gerçek tüzük edinim açığı korunarak gösterildi.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-gorus-itiraz-v2-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
     }
   ]
 }
