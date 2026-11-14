@@ -1,0 +1,10 @@
+{
+  "command": "PYTHONPATH=src:tests python3 -m unittest test_comparison_content.ComparisonContentTest.test_reconcile_rolls_back_after_complete_mapping_loader_failure",
+  "exitCode": 1,
+  "targetTest": "test_reconcile_rolls_back_after_complete_mapping_loader_failure",
+  "targetFile": "test_comparison_content.py",
+  "output": "not ok 1 - test_reconcile_rolls_back_after_complete_mapping_loader_failure\n# tests 1\n# pass 0\n# fail 1\n",
+  "unittestOutput": "F\n======================================================================\nFAIL: test_reconcile_rolls_back_after_complete_mapping_loader_failure (test_comparison_content.ComparisonContentTest.test_reconcile_rolls_back_after_complete_mapping_loader_failure)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_content.py\", line 53, in test_reconcile_rolls_back_after_complete_mapping_loader_failure\n    with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 1 test in 1.360s\n\nFAILED (failures=1)\n",
+  "expected": "changed-topic rows require explicit semantic review",
+  "actual": "unreviewed mapping was accepted"
+}

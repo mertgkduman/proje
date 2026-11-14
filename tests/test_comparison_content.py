@@ -49,6 +49,14 @@ class ComparisonContentTest(unittest.TestCase):
                 inventory = dict(taxonomy_version=3, status='complete', sections=[section])
                 backfill = dict(contract_version=1, taxonomy_version=3, stage='partial', records=[])
                 before = arsiv.sha(work / 'records.sqlite3')
+                arsiv.load_comparison = lambda *args: None
+                with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
+                    arsiv.comparison_reconcile(work, taxonomy, inventory, backfill)
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
+                changed_topic = topics[0]['topic_id']
+                for mapping in mappings:
+                    if mapping['topic_id'] == changed_topic:
+                        backfill['records'].append(dict(kind='comparison_semantic_review', values=dict(subject_kind='comparison_row', subject_id=mapping['new_row_id'], reviewer_kind='agent', reviewed_at='2026-11-14T00:00:00+00:00', result='reviewed', reason='Yalıtılmış testte kaynak kapsamı incelendi.')))
                 captured = []
                 def fail_after_mapping(candidate, payload):
                     captured.extend(r for r in payload['records'] if r['kind'] == 'comparison_row')
