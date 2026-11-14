@@ -1,0 +1,218 @@
+{
+  "plan": "03-13",
+  "status": "passed",
+  "checked_at": "2026-11-14T16:48:51.551894+00:00",
+  "first_release": "ba6f647546f64cb98516b04ff6736c33",
+  "final_release": "ae42ae1897864fda810b033ce3ac1e8f",
+  "code_unchanged_since": "7e49d3d",
+  "test_baselines": [
+    "03-04-checks/result.json:124on45c7c40",
+    "03-08-CHECKS.json:12affected tests/old-new audits on7e49d3d"
+  ],
+  "packages": {
+    "1": {
+      "sha256": "756c3491d7859f38ca2da2a474f2e11a2defe5c6021e656d6fb28b473b4b5a11",
+      "rows": 66,
+      "report": "REPORT_LINK_CHECK_OK 66 rows in both views; source anchors and findings checked"
+    },
+    "2": {
+      "sha256": "c4f8af1cb4daeb9b652a8987ee193bd3707c3bf6fb51483eddfbfa4f7ddd6171",
+      "rows": 77,
+      "report": "REPORT_LINK_CHECK_OK 77 rows in both views; source anchors and findings checked"
+    }
+  },
+  "primary_topics": 135,
+  "primary_states": {
+    "evidence": 102,
+    "no_explicit_statement": 33
+  },
+  "historical_rows": 8,
+  "fields": 208,
+  "review_scopes": 33,
+  "semantic_reviews": 241,
+  "historical_pairs": [
+    {
+      "topic": "yargi-bagimsizligi",
+      "historical_passage": "0313-demokrat-history-02-p",
+      "archive_passage": "0313-demokrat-029-yargi-bagimsizligi-p",
+      "explanation": "II. Demokrasi Programı ayrı hâkim ve savcı kurulları önerirken arşiv programı mevcut kurulun Bakanlık vesayetinden çıkarılmasını önerir. Ara sürümler ve II. Demokrasi Programının kesin tarihi bilinmez."
+    },
+    {
+      "topic": "yerel-demokrasi",
+      "historical_passages": [
+        "0313-demokrat-history-04-p",
+        "0313-demokrat-history-06-p",
+        "0313-demokrat-history-07-p",
+        "0313-demokrat-history-08-p"
+      ],
+      "archive_passage": "0313-demokrat-123-yerel-demokrasi-p",
+      "explanation": "1985 programı zorunlu hizmet sağlanamadığında gerektiğinde genel bütçe yardımını; arşiv programı merkezi bütçe ve fon aktarımı yerine yerel kaynak oluşturmayı önerir. Arşiv yakalaması kabul tarihi değildir; aradaki tam zincir bilinmez."
+    },
+    {
+      "topic": "sagliga-erisim",
+      "historical_passage": "0313-demokrat-history-05-p",
+      "archive_passage": "0313-demokrat-076-sagliga-erisim-p",
+      "explanation": "1985 programı herkes için zorunlu sigorta ve yoksulların priminin devletçe karşılanmasını; arşiv programı vatandaşlardan katkı payı alınmamasını önerir. Prim ve katkı payı aynı mekanizma sayılmaz; tam sürüm zinciri bilinmez."
+    }
+  ],
+  "source_backfill_candidates": [
+    {
+      "topic": "Asgari nakit gelir desteğinin kapsamı",
+      "source_version": "0210-demokrat-program-archive-v1",
+      "passage_ids": [
+        "0313-demokrat-068-temel-yurttaslik-geliri-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Her vatandaş için iş, aş ve asgari nakit gelir desteği; eşit ödeme, gelir eşiği ve diğer uygulama koşulları belirtilmez. Gelirsiz yurttaş tanımıyla kapsam farkı kontrol edilmeli."
+    },
+    {
+      "topic": "Düşük gelirli çalışanlara sosyal sigorta",
+      "source_version": "0210-demokrat-program-archive-v1",
+      "passage_ids": [
+        "0313-demokrat-069-sosyal-guvenlik-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Düşük ücretli ve niteliği az işlerde çalışanlar ile düşük gelirli tarımsal işlerde çalışanlara asgari gelir sağlayan sosyal sigorta, genel nakit destekten ayrı kapsamdadır."
+    },
+    {
+      "topic": "Yenilenebilir, nükleer ve kömür kaynakları",
+      "source_version": "0210-demokrat-program-archive-v1",
+      "passage_ids": [
+        "0313-demokrat-124-doga-ekoloji-p",
+        "0313-demokrat-061-nukleer-enerji-p",
+        "0313-demokrat-063-madencilik-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Yenilenebilir yatırımı, nükleer destek ve kömür kullanım teşviki ayrı araçlardır; fosilden çıkış veya net sıfır sonucu çıkarılmaz."
+    },
+    {
+      "topic": "2020 emisyon hedefinin karşılaştırma tabanı",
+      "source_version": "0210-demokrat-program-archive-v1",
+      "passage_ids": [
+        "0313-demokrat-125-doga-ekoloji-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "2020 için değişiklik yapılmaması halinde öngörülen seviyenin yüzde 20 altında emisyon hedefidir; mutlak azaltım veya net sıfır değildir."
+    },
+    {
+      "topic": "İthalatta karbon vergisi",
+      "source_version": "0210-demokrat-program-archive-v1",
+      "passage_ids": [
+        "0313-demokrat-177-doga-ekoloji-p-once",
+        "0313-demokrat-177-doga-ekoloji-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Emisyonlarını kısıtlamayan ülkelerden ithalat koşulu ve önceki sayfadaki cümle devamı korunmalıdır."
+    },
+    {
+      "topic": "Öğretmenlerin mesleki gelişimi",
+      "source_version": "0210-demokrat-program-archive-v1",
+      "passage_ids": [
+        "0313-demokrat-backfill-01-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Hizmet içi eğitim ve yaşam standartlarının yükseltilmesi; ücretsiz öğrenci erişimiyle eşitlenmez."
+    },
+    {
+      "topic": "Müfredat ve ders ağırlıkları",
+      "source_version": "0210-demokrat-program-archive-v1",
+      "passage_ids": [
+        "0313-demokrat-backfill-02-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Fen, sosyal bilimler, yabancı dil ve bilişim derslerinin ortaöğretimdeki ağırlığı; ücretli veya ücretsiz erişim sonucu değildir."
+    }
+  ],
+  "zero_text_layer_page_classification": [
+    {
+      "id": "PDF01-IMG-COVER",
+      "pdf_page": 1,
+      "owner": 1,
+      "classification": "ön kapak",
+      "method": "Poppler-glib/Cairo ile özgün sayfa görsel okuması",
+      "content": "Parti programı kapağı; demokrasi, eğitimde ayrımcılık ve temsil ilkelerini yineleyen görsel metin."
+    },
+    {
+      "id": "PDF08-IMG-FOREWORD-1",
+      "pdf_page": 8,
+      "printed_page": "14",
+      "owner": 1,
+      "classification": "önsöz devamı",
+      "method": "Poppler-glib/Cairo ile özgün sayfa görsel okuması",
+      "content": "Önceki sayfadan devam eden Senato, anayasal denetim ve seçim barajı önerileri."
+    },
+    {
+      "id": "PDF08-IMG-FOREWORD-2",
+      "pdf_page": 8,
+      "printed_page": "14",
+      "owner": 1,
+      "classification": "önsöz kapanışı",
+      "method": "Poppler-glib/Cairo ile özgün sayfa görsel okuması",
+      "content": "Programın hazırlanması ve okura sunuluşuna ilişkin kapanış paragrafı."
+    },
+    {
+      "id": "PDF24-IMG-BLANK",
+      "pdf_page": 24,
+      "owner": 1,
+      "classification": "boş",
+      "method": "Poppler-glib/Cairo ile özgün sayfa görsel okuması",
+      "content": "Görünür metin veya görsel içerik yok."
+    },
+    {
+      "id": "PDF30-IMG-BLANK",
+      "pdf_page": 30,
+      "owner": 1,
+      "classification": "boş",
+      "method": "Poppler-glib/Cairo ile özgün sayfa görsel okuması",
+      "content": "Görünür metin veya görsel içerik yok."
+    },
+    {
+      "id": "PDF83-IMG-COVER",
+      "pdf_page": 83,
+      "owner": 1,
+      "classification": "arka kapak",
+      "method": "Poppler-glib/Cairo ile özgün sayfa görsel okuması",
+      "content": "Programın ekonomi, güvenlik ve gençlik ifadelerini yineleyen arka kapak; ekonomi tekrarı görev 2 çapraz incelemesine aktarılır."
+    }
+  ],
+  "visual_extra_evidence": 9,
+  "visual_evidence_linked_to_real_findings": true,
+  "all_affected_report_rows_checked": 90,
+  "source_versions_sha256_and_metadata_preserved": 17,
+  "all_prior_findings_unchanged": true,
+  "preserved_charter_rows": 309,
+  "phase2_delivery_preserved": true,
+  "active_not_researched": 0,
+  "retained_inactive_placeholders": [
+    {
+      "party_id": "yeni-parti",
+      "topic_id": "merkez-yonetimi-secimi",
+      "taxonomy_version": 1
+    }
+  ],
+  "semantic_spot_checks": [
+    "Quota-free participation forecast is not quota ban; temporarygenderquota/parityinstrument separate withunspecifiedduration",
+    "Minimumcashsupportforallcitizens has no source-defined equalpayment/incomethreshold; low-incomeworkerinsurance separate",
+    "2020emissiontarget20percent below projected no-changebaseline, not absolute/netzero; coal/renewable/nuclear sources distinct"
+  ],
+  "known_limits": [
+    "Renderer18 omits no-explicit-statement scope/context inbothviews; absence state preserved",
+    "Unrepresented principle/target/tool type is not automatically documentaryabsence",
+    "Cross-document historicalpairpresentation deferred03-15/16"
+  ],
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "upcoming_key_links": "Both inventory-to-backfill and synthesis wiring belong upcoming14; no priorartifact wiring gap",
+  "accepted_logs": {
+    "program1-check": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-checks/program1-check.log",
+    "program1-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-checks/program1-load.log",
+    "program1-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-checks/program1-audit.log",
+    "program2-check": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-checks/program2-check.log",
+    "program2-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-checks/program2-load.log",
+    "program2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-checks/program2-audit.log",
+    "program2-phase2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-checks/program2-phase2-audit.log"
+  }
+}
