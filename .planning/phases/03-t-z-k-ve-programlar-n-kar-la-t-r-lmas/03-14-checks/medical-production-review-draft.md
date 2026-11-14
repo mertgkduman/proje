@@ -12,6 +12,12 @@
   hedefini belirtir (`0311-saadet-backfill-05-p`); başka bir pasaj yerli ilaç
   üretimi için bilimsel çalışmaları desteklemeyi öngörür
   (`0311-saadet-p2-172-teknoloji-inovasyon-p`).
+- TİP programının doğrudan okunan “Sağlıklı ve Güvenli Gelecek İçin” bölümü
+  ücretsiz ve erişilebilir anadilde sağlık hizmetini, koruyucu hekimliği,
+  sağlık kurumlarını ve çalışanların koşullarını ele alır; bu bölümde tıbbi
+  ürünlerin yerli üretimine ilişkin özel bir hüküm saptanmadı
+  (`0203-tip-program-v1`). Bu yalnız bölüm sınırındaki incelemedir; diğer
+  bölümler veya başka belgeler için yokluk iddiası değildir.
 
 Üç kaynak tıbbi üretim bakımından ilişkilidir, ancak kapsamları ve araçları
 aynı değildir: kapasite artışı, belirli aşıların üretim altyapısı ve dışa
