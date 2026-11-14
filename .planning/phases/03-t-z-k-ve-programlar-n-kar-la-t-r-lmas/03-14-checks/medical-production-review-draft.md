@@ -31,6 +31,11 @@
   olarak kaydedilmedi; mevcut bağımsız DBP program açığı ayrıca korunur.
   Metindeki yatırım ve denetim, kendi başına yerli üretim veya dışa
   bağımlılığın tamamen kaldırılması şartı sayılmaz.
+- Demokrat Parti'nin arşiv programındaki “11- Sağlık Politikaları” bölümü
+  (PDF indeks 48, basılı sayfa 55) doğrudan okundu: ilaç harcamaları ve sağlık
+  hizmetinin finansmanı tartışılır, bu dar bölümde tıbbi ürün üretim modeli
+  açıklanmaz (`0210-demokrat-program-archive-v1`). Diğer sağlıkla ilgili ve
+  sanayi bölümleri ile tarihsel belgeler için buradan yokluk çıkarılamaz.
 
 Üç kaynak tıbbi üretim bakımından ilişkilidir, ancak kapsamları ve araçları
 aynı değildir: kapasite artışı, belirli aşıların üretim altyapısı ve dışa
