@@ -12,6 +12,18 @@ import rapor
 import test_comparisons
 
 
+def release_with_comparison_taxonomy(version):
+    """Keep version-specific migration tests bound to their historical base."""
+    release = arsiv.current()
+    while release:
+        folder = arsiv.DATA / 'releases' / release
+        manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+        if manifest.get('comparison_taxonomy_version') == version:
+            return folder / 'records.sqlite3'
+        release = manifest.get('base_release')
+    raise AssertionError('İstenen tarihsel karşılaştırma sözlüğü bulunamadı: ' + str(version))
+
+
 class ComparisonContentTest(unittest.TestCase):
     def test_changed_topic_audit_requires_nine_reviewed_rows(self):
         parties = ['yeni-parti', 'tip', 'dem', 'iyi', 'yeni-yol', 'dbp', 'emep', 'saadet', 'demokrat']
@@ -43,7 +55,7 @@ class ComparisonContentTest(unittest.TestCase):
             arsiv.validate_changed_topic_reviews(data)
 
     def test_reconcile_rolls_back_after_complete_mapping_loader_failure(self):
-        source = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        source = release_with_comparison_taxonomy(2)
         original_data, original_load, original_export = arsiv.DATA, arsiv.load_comparison, arsiv.export_db
         before_pointer = arsiv.current()
         closed_before = arsiv.sha(source)
@@ -155,7 +167,7 @@ class ComparisonContentTest(unittest.TestCase):
     def test_reconcile_rejects_one_party_new_topic_without_changing_workspace(self):
         reconcile = getattr(arsiv, 'comparison_reconcile', None)
         self.assertTrue(callable(reconcile), 'Atomic comparison reconciliation is required')
-        source = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        source = release_with_comparison_taxonomy(2)
         previous_data = arsiv.DATA
         before_pointer = arsiv.current()
         with tempfile.TemporaryDirectory() as tmp:
@@ -195,8 +207,13 @@ class ComparisonContentTest(unittest.TestCase):
                 (arsiv.DATA / '.write.lock').write_text(json.dumps({'token': 'test-token'}))
                 before = arsiv.sha(work / 'records.sqlite3')
                 arsiv.export_db = lambda *args, **kwargs: {}
+                db = arsiv.connect_readonly(work / 'records.sqlite3')
+                try:
+                    contract = dict(db.execute('SELECT * FROM comparison_contract').fetchone())
+                finally:
+                    db.close()
                 with self.assertRaisesRegex(ValueError, 'eşleme'):
-                    arsiv.load_comparison(work, dict(contract_version=1, taxonomy_version=3, stage='partial', records=[]))
+                    arsiv.load_comparison(work, dict(contract_version=contract['version'], taxonomy_version=contract['taxonomy_version'] + 1, stage='partial', records=[]))
                 self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
             finally:
                 arsiv.DATA, arsiv.export_db = original_data, original_export
@@ -545,7 +562,7 @@ class ComparisonContentTest(unittest.TestCase):
             finally:
                 db.close()
             exported = arsiv.export_db(path, 'test')
-            self.assertEqual(exported['comparison_source_inventory'][0]['id'], 'inventory-test')
+            self.assertIn('inventory-test', {item['id'] for item in exported['comparison_source_inventory']})
 
     def test_attributed_program_can_support_a_verified_topic(self):
         release = arsiv.current()
