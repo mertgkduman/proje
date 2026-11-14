@@ -1,0 +1,7 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src:tests python3 -m unittest test_comparison_synthesis_contract.SynthesisContractTest.test_versioned_contract_accepts_one_passage_with_real_scoped_status",
+  "result": "RED",
+  "exit_code": 1,
+  "expected_failure": "ValueError: Karşılaştırma sözleşmesi geçersiz",
+  "meaning": "Mevcut doğrulayıcı kaynaklı tek taraf ve ayrı kapsam kaydı taşıyan sürüm 2 sentez sözleşmesini kabul etmiyor."
+}
