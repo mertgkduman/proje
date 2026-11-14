@@ -29,6 +29,14 @@ DEM'in eleştirilerin iletilmesi hakkı ve DBP'nin eğitim/etkinlik katılımı,
 için yazılan senteze eklendi; önceki kısa ve organ adaylığına ilişkin kayıtlar
 silinmedi.
 
+İkinci politika grubunda daha önce eklenmiş 72 cümle geri çıkarıldı: yardımcı,
+anlam gerekçelerinin bağımsız yazılmayıp alan özeti ve pasajın betik kalıbına
+yerleştirilmesiyle üretildiğini açıkça bildirdi. Üçüncü ve dördüncü politika
+gruplarındaki aynı tür otomatik gerekçeler de kabul edilmedi. Bu grupların
+özgül kaynak koşullarına göre ayrı anlam incelemesi yapılması gerekir; bağlantı
+doğrulaması tek başına bunun yerine geçmez. Dört aday cümlede daha geniş koşul
+pasajı gereği ayrıca belirlenmişti.
+
 Parti içi itirazda DEM ve İYİ için önceki üyelik reddi kayıtları bu konunun
 tanımı dışındaydı. İki partinin il disiplin kurulu kararına, tebliğden sonra
 sırasıyla 10 ve 15 gün içinde merkez disiplin kurulunda itirazı açık kaynaklı
