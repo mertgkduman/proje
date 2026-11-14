@@ -40,6 +40,7 @@ class ComparisonContentTest(unittest.TestCase):
         self.assertNotIn('id="finding-' + old_finding['id'] + '"', report)
         for target in ('id="comparison-selected-row"', 'id="dossier-comparison-selected-row"', 'href="#source-' + passage + '"'):
             self.assertIn(target, report)
+        arsiv.validate_phase_one_html(data, report)
         self.assertEqual(historical['taxonomy_version'], 1)
 
     def test_program_topic_basis_points_to_the_actual_heading(self):

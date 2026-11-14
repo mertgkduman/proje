@@ -1258,11 +1258,11 @@ def export_db(path, release_id, strict_identity=False):
         db.close()
 
 
-def render_comparison_snapshot(data, renderer):
-    """Render the selected dictionary while retaining historical snapshot data."""
+def comparison_render_data(data):
+    """Project a report view without modifying the historical snapshot."""
     contracts = data.get('comparison_contract', [])
     if not contracts or contracts[0]['taxonomy_version'] < 3:
-        return renderer(data)
+        return data
     version = contracts[0]['taxonomy_version']
     visible = dict(data)
     for name in ('comparison_topic', 'comparison_row', 'comparison_synthesis'):
@@ -1286,7 +1286,12 @@ def render_comparison_snapshot(data, renderer):
     visible['finding'] = [f for f in data.get('finding', []) if f['id'] not in hidden]
     visible['finding_evidence'] = [e for e in data.get('finding_evidence', []) if e['finding_id'] not in hidden]
     visible['comparison_field'] = active_fields
-    return renderer(visible)
+    return visible
+
+
+def render_comparison_snapshot(data, renderer):
+    """Render the selected dictionary while retaining historical snapshot data."""
+    return renderer(comparison_render_data(data))
 
 
 def audit_release(release='current', _seen=None):
@@ -1432,6 +1437,7 @@ def validate_phase_one(release='current'):
 
 
 def validate_phase_one_html(data, report):
+    data = comparison_render_data(data)
     for f in data['finding']:
         if 'data-finding-id="' + html.escape(f['id'], quote=True) + '"' not in report:
             raise ValueError('Bulgu HTML içinde eksik')
