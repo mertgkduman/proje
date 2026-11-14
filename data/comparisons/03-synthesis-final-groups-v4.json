@@ -2666,6 +2666,209 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Eksik olan belirli belge türüdür; bu partilerin ABD konusunda hiç açıklama yapmadığı veya bir tutumunun olmadığı sonucu çıkarılmaz. Tarihsel kopya ile ek kongre belgesi kendi kaynak rollerinde kullanılabilir. Taraf incelemeleri: dem: Site menüsü ve program araması sonunda ayrı tam programın elde edilemediği kayıtlıdır. Kongre ekinin varlığı bu aramanın belge türünü değiştirmez;2012 Agos yayını bu konu için DEM programı sayılmadı. dbp: İki BDP blog kopyasının güncel DBP programı olduğu doğrulanmamıştır. Tarihsel ABD paragrafına erişilmesi güncel tam program açığını kapatmaz. yeni-yol: Kuruluş haberi taslak onayını bildirir ama program metni yayımlamaz. Eski aynı adlı oluşum, ortak Meclis grubu ve başka partilerin belgeleriyle Yeni Yol'un programı tamamlanmadı.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-program-missing-abd-iliskileri\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"04-03-v3-0308-dbp-current-abd-iliskileri\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"04-03-v3-0307-yeni-yol-abd-iliskileri-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-v4-yardim-scope-comparison",
+        "topic_id": "parti-yardim-kampanya",
+        "taxonomy_version": 4,
+        "text": "DEM tüzüğü, afetlere karşı düzenlenen dayanışma amaçlı yardım kampanyalarına üyelerin ve yurttaşların katılımı için gerekli şartların hazırlanmasını öngörür; etkinlikler konu ve imkânlara göre yerel veya merkezi düzeyde yapılabilir. EMEP tüzüğü ise belirli zamanlarda açılan kampanyaları parti mali kaynakları arasında sayar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-v4-yardim-scope-comparison",
+        "passage_id": "0314-dem-disaster-solidarity-campaign-full-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-v4-yardim-scope-comparison",
+        "passage_id": "0309-emep-html-064-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-v4-yardim-scope-comparison",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T23:14:21.538098+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM madde 50 afetlere karşı dayanışma amaçlı kampanyalara katılım koşullarını ve düzeyi açıklar. EMEP madde 22 kampanyaları aidat, bağış ve diğer gelirlerle parti mali kaynakları arasında sayar; kampanyaların afet yardımı olduğu belirtilmez. İki farklı düzenlemenin amacı eşitlenmedi.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-yardim-dem-row\",\"support\":\"passage\",\"refs\":[\"0314-dem-disaster-solidarity-campaign-full-p\"]},{\"party_id\":\"emep\",\"row_id\":\"04-03-v3-0309-emep-html-064-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-064-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-v4-yardim-scope-status",
+        "topic_id": "parti-yardim-kampanya",
+        "taxonomy_version": 4,
+        "text": "İncelenen DBP, İYİ Parti ve Saadet tüzüklerinde parti yardım kampanyası oluşturma veya düzenleme usulüne ilişkin açık hüküm saptanmadı; Demokrat arşiv tüzüğünde topluma dönük yardım kampanyası örgütleme usulü ayrıca belirtilmedi. TİP’in incelenen HTML ve 2022 PDF tüzüklerinde yardım kampanyalarının kurulması veya denetimi için ayrı usul açıklanmaz; Yeni Parti tüzüğünde de yardım kampanyasına özgü parti usulü açıkça düzenlenmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-v4-yardim-scope-status",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T23:14:21.538098+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Altı taraf için önceki gerçek kapsam kayıtlarının her birindeki belge sürümü ve sorusu korundu. DBP kampanya oluşturma/yönetimini, İYİ ve Saadet düzenleme/açma usulünü, Demokrat topluma dönük örgütleme usulünü, TİP iki nüshada kurulma veya denetimi, Yeni Parti özgül parti usulünü inceler. Bu dar sonuçlar bütün mali kampanyaların veya fiilî yardımların bulunmadığı savı değildir.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"04-03-v3-0308-dbp-absence-19-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-19-scope\"]},{\"party_id\":\"iyi\",\"row_id\":\"04-03-v3-0306-iyi-scope-parti-yardim-kampanya-absence\",\"support\":\"scope\",\"refs\":[\"0306-iyi-scope-parti-yardim-kampanya-scope\"]},{\"party_id\":\"saadet\",\"row_id\":\"04-03-v3-0310-saadet-2-scope-026-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-026\"]},{\"party_id\":\"demokrat\",\"row_id\":\"04-03-v3-0312-demokrat-2-scope-28-row\",\"support\":\"scope\",\"refs\":[\"0312-demokrat-2-scope-28\"]},{\"party_id\":\"tip\",\"row_id\":\"04-03-v3-0304-tip-charter-scope-kampanya-html-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-kampanya-html-scope\"]},{\"party_id\":\"tip\",\"row_id\":\"04-03-v3-0304-tip-charter-scope-kampanya-pdf-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-kampanya-pdf-scope\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"04-03-v3-0303-epm-scope-parti-yardim-kampanya-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-parti-yardim-kampanya-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-sparse-denetleme-saadet-demokrat-claim",
+        "topic_id": "denetleme-kurullari",
+        "taxonomy_version": 4,
+        "text": "Saadet'in Büyük Kongresinde Hesapları Tetkik Komisyonunun raporu öncelikle görüşülür; Demokrat Parti arşiv tüzüğünde ilçe ve il kongreleri yıllık hesapları incelemek için komisyon kurar ve komisyon raporunu kabul veya reddeder."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sparse-denetleme-saadet-demokrat-claim",
+        "passage_id": "0310-saadet-2-013-denetleme-kurullari-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sparse-denetleme-saadet-demokrat-claim",
+        "passage_id": "0310-saadet-2-013-denetleme-kurullari-context"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sparse-denetleme-saadet-demokrat-claim",
+        "passage_id": "0312-demokrat-2-reviewpage-17"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sparse-denetleme-saadet-demokrat-claim",
+        "passage_id": "0312-demokrat-1-025-orgut-ilce-kongre-context"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sparse-denetleme-saadet-demokrat-claim",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T23:18:06+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Saadet Madde14 merkezi Büyük Kongre, Demokrat Madde27/A-b ilçe ve il kongreleri düzeyindedir. İkisinde de hesap incelemek için somut komisyon vardır; görev ve düzeyleri korunur. Bunların TİP örgütsel Denetleme Kurullarıyla aynı organ, bağımsız veya sürekli kurul olduğu söylenmez.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"04-03-v3-0310-saadet-2-row-0156\",\"support\":\"passage\",\"refs\":[\"0310-saadet-2-013-denetleme-kurullari-p\",\"0310-saadet-2-013-denetleme-kurullari-context\"]},{\"party_id\":\"demokrat\",\"row_id\":\"0314-v4-demokrat-kongre-hesap-komisyon-row\",\"support\":\"passage\",\"refs\":[\"0312-demokrat-2-reviewpage-17\",\"0312-demokrat-1-025-orgut-ilce-kongre-context\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-sparse-denetleme-tip-saadet-claim",
+        "topic_id": "denetleme-kurullari",
+        "taxonomy_version": 4,
+        "text": "TİP'in HTML tüzüğünde Örgüt Komitesi önerisiyle PM'nin oluşturduğu en az üç kişilik denetleme kurulları altı ayda rapor hazırlar; Saadet'in Büyük Kongresinde hesap incelemek için kurulan Hesapları Tetkik Komisyonunun raporu öncelikle okunup görüşülür."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sparse-denetleme-tip-saadet-claim",
+        "passage_id": "0304-tip-diff-denetim-html-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sparse-denetleme-tip-saadet-claim",
+        "passage_id": "0310-saadet-2-013-denetleme-kurullari-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sparse-denetleme-tip-saadet-claim",
+        "passage_id": "0310-saadet-2-013-denetleme-kurullari-context"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sparse-denetleme-tip-saadet-claim",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T23:29:37.184946+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP'te il/ilçe ve diğer örgütlerin çalışmalarını izleyen ve geliştiren kurul; Saadet'te Büyük Kongrenin hesap incelemesine bağlı komisyon var. İkisinde de somut toplu inceleme yapısı açık, fakat görev, düzey ve rapor usulü farklı. Konu tanımında bulunmayan kalıcılık/bağımsızlık şartı konmadı; genel komisyon yetkisi olumluya çevrilmedi.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"04-03-v3-0304-tip-diff-denetim-html-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-diff-denetim-html-p1\"]},{\"party_id\":\"saadet\",\"row_id\":\"04-03-v3-0310-saadet-2-row-0156\",\"support\":\"passage\",\"refs\":[\"0310-saadet-2-013-denetleme-kurullari-p\",\"0310-saadet-2-013-denetleme-kurullari-context\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-v4-engelli-incelenen-kapsam",
+        "topic_id": "engelli-koordinasyon",
+        "taxonomy_version": 4,
+        "text": "DBP, DEM, İYİ Parti, EMEP ve Yeni Parti’nin incelenen tüzüklerinde engelliler için ayrı bir koordinasyon birimi hakkında açık düzenleme saptanmadı; TİP’in incelenen HTML ve 2022 PDF nüshalarında da bu adla ayrı organın oluşumu belirtilmedi. Demokrat arşiv tüzüğünde incelenen merkez görev alanları ve 65–67. maddelerde ayrı engelliler koordinasyon birimi belirtilmiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-v4-engelli-incelenen-kapsam",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T23:30:56.255320+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Her tarafın gerçek eski kapsamı ayrı korundu: DBP madde1–114, DEM ve HEDEP iki nüsha madde1–61, İYİ madde1–91 ve geçiciler, EMEP tüzük1–65, Yeni Parti arşiv tüzüğü, TİP ayrı HTML ve PDF nüshaları; Demokrat sonucu yalnız merkez görev alanları ve 65–67. maddeler içindir. Genel adaylık, erişim ve katılım hükümleri yok sayılmadı; bu kayıtlar özel birimin kuruluşunu yanıtlamaz. Fiilî faaliyet veya tüm engelli politikaları için yokluk ileri sürülmez.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"04-03-v3-0308-dbp-absence-11-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-11-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-engelli-dem-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-engelli-dem-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-engelli-hedep-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-engelli-hedep-scope\"]},{\"party_id\":\"iyi\",\"row_id\":\"04-03-v3-0306-iyi-scope-engelli-koordinasyon-absence\",\"support\":\"scope\",\"refs\":[\"0306-iyi-scope-engelli-koordinasyon-scope\"]},{\"party_id\":\"emep\",\"row_id\":\"04-03-v3-0309-emep-scope-026-row\",\"support\":\"scope\",\"refs\":[\"0309-emep-scope-026-scope\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"04-03-v3-0303-epm-scope-engelli-koordinasyon-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-engelli-koordinasyon-scope\"]},{\"party_id\":\"tip\",\"row_id\":\"04-03-v3-0304-tip-charter-scope-engelli-birim-html-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-engelli-birim-html-scope\"]},{\"party_id\":\"tip\",\"row_id\":\"04-03-v3-0304-tip-charter-scope-engelli-birim-pdf-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-engelli-birim-pdf-scope\"]},{\"party_id\":\"demokrat\",\"row_id\":\"04-03-v3-0312-demokrat-2-scope-07-row\",\"support\":\"scope\",\"refs\":[\"0312-demokrat-2-scope-07\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-v4-etik-incelenen-kapsam",
+        "topic_id": "siyasi-etik-kurulu",
+        "taxonomy_version": 4,
+        "text": "DBP, DEM, EMEP, Saadet ve Yeni Parti’nin incelenen tüzüklerinde siyasi etik kurulu adıyla ayrı bir organ hakkında açık düzenleme saptanmadı; TİP’in HTML ve 2022 PDF nüshalarında da bu adla ayrı kurulun oluşumu açıklanmadı. Demokrat arşiv tüzüğünde disiplin ve danışma organları düzenlenirken ayrıca siyasi etik kurulu belirtilmiyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-v4-etik-incelenen-kapsam",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T23:30:56.255390+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Eski incelemeler siyasi etik kurulu adı veya ayrı kurul sorusuna aittir: DBP madde1–114, DEM ve HEDEP madde1–61, EMEP tüzük1–65, Saadet madde1–67 ve 2020 eki, Yeni Parti arşiv tüzüğü, TİP HTML ve PDF, Demokrat disiplin/danışma organları kapsamı. Etik ilke, disiplin, uzlaşma ve genel komisyon hükümleri özel kurul olarak yeniden adlandırılmaz; partilerin etik ilkeleri veya fiilî çalışmaları için yokluk iddiası kurulmaz.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"04-03-v3-0308-dbp-absence-07-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-07-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-etik-dem-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-etik-dem-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-etik-hedep-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-etik-hedep-scope\"]},{\"party_id\":\"emep\",\"row_id\":\"04-03-v3-0309-emep-scope-047-row\",\"support\":\"scope\",\"refs\":[\"0309-emep-scope-047-scope\"]},{\"party_id\":\"saadet\",\"row_id\":\"04-03-v3-0310-saadet-2-scope-029-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-029\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"04-03-v3-0303-epm-scope-siyasi-etik-kurulu-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-siyasi-etik-kurulu-scope\"]},{\"party_id\":\"tip\",\"row_id\":\"04-03-v3-0304-tip-charter-scope-etik-html-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-etik-html-scope\"]},{\"party_id\":\"tip\",\"row_id\":\"04-03-v3-0304-tip-charter-scope-etik-pdf-row\",\"support\":\"scope\",\"refs\":[\"0304-tip-charter-scope-etik-pdf-scope\"]},{\"party_id\":\"demokrat\",\"row_id\":\"04-03-v3-0312-demokrat-2-scope-31-row\",\"support\":\"scope\",\"refs\":[\"0312-demokrat-2-scope-31\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-v4-denetim-dar-kapsam",
+        "topic_id": "denetleme-kurullari",
+        "taxonomy_version": 4,
+        "text": "DBP, DEM, İYİ Parti, EMEP ve Yeni Parti’nin incelenen tüzüklerinde ayrı bir denetleme kurulu hakkında açık düzenleme saptanmadı. Bu dar inceleme sonucu kongrenin hesapları incelemesi veya müfettişlik gibi diğer denetim biçimlerinin bulunmadığı anlamına gelmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-v4-denetim-dar-kapsam",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T23:31:56.983810+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DBP kaydı denetleme kurulu adıyla ayrı organı, DEM ve HEDEP ayrı nüshalarda ayrı kurul oluşumunu, İYİ ayrı parti denetleme kurulunu, EMEP ilgili HTML tüzüğündeki ayrı düzenlemeyi, Yeni Parti ayrı denetleme kurulunu sorar. Bu dar kapsamlar genel mali inceleme komisyonu veya bütün denetim işlevleri yokluğu olarak genişletilmedi; Demokratın kendi kapsamı ise bağımsız kurul sorusudur ve yeni hesap komisyonu kaydıyla ayrıca gösterilir.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"04-03-v3-0308-dbp-absence-27-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-27-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-denetim-dem-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-denetim-dem-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-denetim-hedep-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-denetim-hedep-scope\"]},{\"party_id\":\"iyi\",\"row_id\":\"04-03-v3-0306-iyi-scope-denetleme-kurullari-absence\",\"support\":\"scope\",\"refs\":[\"0306-iyi-scope-denetleme-kurullari-scope\"]},{\"party_id\":\"emep\",\"row_id\":\"04-03-v3-0309-emep-scope-017-row\",\"support\":\"scope\",\"refs\":[\"0309-emep-scope-017-scope\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"04-03-v3-0303-epm-scope-denetleme-kurullari-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-denetleme-kurullari-scope\"]}]}"
+      }
     }
   ]
 }
