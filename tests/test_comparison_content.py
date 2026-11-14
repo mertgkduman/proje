@@ -69,6 +69,12 @@ class ComparisonContentTest(unittest.TestCase):
         for target in ('id="comparison-selected-row"', 'id="dossier-comparison-selected-row"', 'href="#source-' + passage + '"'):
             self.assertIn(target, report)
         arsiv.validate_phase_one_html(data, report)
+        active_id = active_field['summary_finding_id']
+        comparison_ids = {f[k] for f in data['comparison_field'] for k in ('summary_finding_id', 'quote_finding_id')}
+        ordinary_id = next(f['id'] for f in data['finding'] if f['id'] not in comparison_ids and 'data-finding-id="' + f['id'] + '"' in report)
+        for fid in (active_id, ordinary_id):
+            with self.assertRaisesRegex(ValueError, 'Bulgu HTML'):
+                arsiv.validate_phase_one_html(data, report.replace('data-finding-id="' + fid + '"', 'data-removed-finding="' + fid + '"'))
         self.assertEqual(historical['taxonomy_version'], 1)
 
     def test_program_topic_basis_points_to_the_actual_heading(self):
