@@ -1,0 +1,75 @@
+{
+  "plan": "03-08",
+  "checked_at": "2026-11-14T01:20:36.044860+00:00",
+  "status": "passed",
+  "charter_release": "6f05d704dbda4333ab93c4bf1687999f",
+  "program_release": "9f6ba77edd7041e18c72954640c6fff4",
+  "schema_version": 6,
+  "renderer_version": 18,
+  "code_commit": "7e49d3dc22d4623daa032928c8be33a43b422c29",
+  "full_suite_baseline": "03-04-checks/result.json:124 unique tests on45c7c40; affected code covered by12 targeted tests on7e49d3d",
+  "targeted_tests_passed": 12,
+  "frozen17_sha256": "471b4396b20c6793a28bae1b998be9604b99746e2bd8d3c995103f40d49b7e3e",
+  "frozen17_equals_prior_live": true,
+  "css16_sha256": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+  "unchanged_dbp_originals_and_metadata": 12,
+  "phase2_delivery_preserved": true,
+  "not_researched_rows": 0,
+  "report_links": {
+    "charter": {
+      "row_count": 240,
+      "result": "REPORT_LINK_CHECK_OK 240 rows in both views; source anchors and findings checked"
+    },
+    "program": {
+      "row_count": 466,
+      "result": "REPORT_LINK_CHECK_OK 466 rows in both views; source anchors and findings checked"
+    }
+  },
+  "program_publisher_labels_checked": 514,
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "known_limits": [
+    "No explicit statement inline scope presentation deferred03-15/16",
+    "Different document IDs require separate visible alternative rows; preserve identities"
+  ],
+  "logs": {
+    "renderer18-focused": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-focused.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-focused.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-focused.run.json"
+    },
+    "renderer18-publish-test": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-publish-test.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-publish-test.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-publish-test.run.json"
+    },
+    "renderer18-old17-audit": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-old17-audit.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-old17-audit.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/renderer18-old17-audit.run.json"
+    },
+    "final-phase2-audit": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/final-phase2-audit.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/final-phase2-audit.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/final-phase2-audit.run.json"
+    },
+    "charter-phase3-audit": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/charter-phase3-audit.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/charter-phase3-audit.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/charter-phase3-audit.run.json"
+    },
+    "program-phase3-audit": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/program-phase3-audit.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/program-phase3-audit.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/program-phase3-audit.run.json"
+    },
+    "program-label-final": {
+      "log": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/program-label-final.log",
+      "exit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/program-label-final.exit",
+      "run.json": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-checks/program-label-final.run.json"
+    }
+  }
+}
