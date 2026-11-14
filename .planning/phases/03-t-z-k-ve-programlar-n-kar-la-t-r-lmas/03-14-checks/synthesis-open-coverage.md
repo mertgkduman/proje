@@ -71,3 +71,12 @@ bulgulara eklendi; v3 alanlarının özgül anlam incelemesi ve eski→yeni alan
 soyu `demokrat-field-evidence-review.md` ve eşleme paketinde kaydedildi.
 Eski kaynak, bulgu, alan ve alıntı baytları korunur; ek dayanaklar henüz
 atomik eşleme ve yayına yüklenmedi.
+
+Charter5 grubunda 20 konu ve 40 cümle kaynakçı tarafından özgün tüzük
+bağlamıyla ayrı yazıldı. Yedi eksik geniş pasaj ilgili mevcut özet bulgulara
+eklendi ve bütün 40 cümlenin taraf–konu–kaynak ilişkisi sözleşmeyle doğrulandı.
+DEM geçici tüzük maddesinde başka bir karşılaştırma satırına ait kısa bağlantı
+çıkarıldı; aynı satıra bağlanan tam 54. madde, yetki ve usulü destekler.
+TİP kota istisnası ve Demokrat temsilcilik seçim/atama ayrımı özgün metindeki
+sınırlarıyla korundu. Bu grup bütün parti ve konuların tamamlanması veya henüz
+yüklenmiş yayın anlamına gelmez.

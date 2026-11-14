@@ -4754,6 +4754,1121 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Yeni Parti için yukarıda metin ve kurum sorusu belirlenmiş bir inceleme kapsamı vardır. Buradaki DEM ve DBP satırları ise ayrı güncel tam programa erişilemeyen edinim kayıtlarıdır; DEM'in ek kararları ve tarihsel BDP kopyaları kendi türleriyle kalır. Yeni Yol aramasında program metni bulunamamış, başka oluşumların belgeleri dışarıda tutulmuştur. Bu üç taraf incelenmiş fakat istihdam aracılığı hükmü olmayan programlar diye sunulmaz; özel bürolara destek veya karşıtlık da çıkarılmaz.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-istihdam-araciligi\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-istihdam-araciligi\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-istihdam-araciligi-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-yonetmelik-1",
+        "topic_id": "parti-yonetmelik",
+        "taxonomy_version": 3,
+        "text": "DEM kısa adlı tüzükte Parti Meclisi yasaya uygun yönetmelik çıkarabilir, değiştirebilir veya iptal edebilir; ilgili seçilmiş organlarla çalışma gruplarının görüş ve önerileri alınır. İYİ Parti tüzüğü yönetmelik çıkarma yetkisini Genel İdare Kuruluna, genelge ve benzeri talimat yayımlama yetkisini Genel Başkana verir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yonetmelik-1",
+        "passage_id": "0305-dem-yonetmelik-dem-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yonetmelik-1",
+        "passage_id": "0314-charter5-full-1-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yonetmelik-1",
+        "passage_id": "0306-iyi-parti-yonetmelik-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-yonetmelik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM'in 57. maddesinin kesik kayıt alıntısı özgün tam maddeyle karşılaştırıldı: yetki Parti Meclisinindir; yasal uygunluk ve ilgili yapıların görüşlerinin alınması hükümde birlikte yer alır. İYİ Parti'nin 87. maddesi ise yönetmelikle genelgeyi ayırarak farklı yetkilileri sayar. DEM tarafının tam koşulları için aşağıda verilen pasaj genişletmesi bağlanmalıdır.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-yonetmelik-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-yonetmelik-dem-passage\",\"0314-charter5-full-1-passage\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-parti-yonetmelik-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-parti-yonetmelik-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-yonetmelik-2",
+        "topic_id": "parti-yonetmelik",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un bağımsız tam tüzüğü elde edilemediği için yönetmelik ve genelge çıkarma yetkileri belirlenemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-yonetmelik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belgelenen arama tüzük gövdesini sağlamıyor. Kuruluş haberi, yönetmelik veya genelge yetkisinin hangi organa verildiğini göstermediğinden bu konuda kurumsal karşılaştırma yapılamaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-yonetmelik-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-mali-yetki-1",
+        "topic_id": "mali-yetki",
+        "taxonomy_version": 3,
+        "text": "DBP'nin HTML tüzüğünde il ve ilçe yönetim kurullarının sözleşme yapması ve yükümlülük altına girmesi Merkez Yürütme Kurulunun iznine bağlıdır. EMEP'in HTML tüzüğünde ise iki kongre arasında merkez kasasının yönetimi Genel Yönetim Kurulunun sorumluluğundadır."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-mali-yetki-1",
+        "passage_id": "0308-dbp-draft-069-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-mali-yetki-1",
+        "passage_id": "0309-emep-html-067-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-mali-yetki-1",
+        "passage_id": "0314-charter5-full-2-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-mali-yetki-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DBP'nin 105. maddesi yerel kurulların sözleşme ve yükümlülükleri için izin şartı koyar. EMEP'in 36. maddesi merkez kasası görevini GYK'nin iki kongre arasındaki yönetim sorumlulukları içinde sayar. Bu iki hüküm aynı mali işlemi düzenlemediği için biri diğer partide aynı izin kuralının bulunmadığı sonucuna çevrilmedi; EMEP'in süre bağlamı tam madde genişletmesinde verildi.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-069-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-069-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-067-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-067-0-passage\",\"0314-charter5-full-2-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-mali-yetki-2",
+        "topic_id": "mali-yetki",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un mali yetki dağılımı, bağımsız tam tüzüğüne ulaşılamadığı için bu araştırmada açıklanamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-mali-yetki-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Eksik olan metin; sözleşme izni, kasa yönetimi ve sorumluluk düzeninin incelenmesini engelliyor. Arama kaydı bu yetkilerin verilmediğine ilişkin bir hüküm değildir.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-mali-yetki-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-hesap-yonetmeligi-1",
+        "topic_id": "hesap-yonetmeligi",
+        "taxonomy_version": 3,
+        "text": "İYİ Parti tüzüğü bütçe, bilanço, gelir-gider cetvelleri ve kesin hesabın düzenlenişini iç yönetmeliklere bırakır. EMEP'in HTML tüzüğü gelir-giderler ile bütçe, bilanço, gelir-gider hesabı ve kesin hesapların tutulmasını Genel Yönetim Kurulunun hazırlayacağı yönetmeliğe bağlar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-hesap-yonetmeligi-1",
+        "passage_id": "0306-iyi-hesap-yonetmeligi-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-hesap-yonetmeligi-1",
+        "passage_id": "0309-emep-html-058-1-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-hesap-yonetmeligi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ Parti'nin 85. maddesi mali belgelerin nasıl düzenleneceğine ilişkin usul kaynağını gösterir. EMEP'in 65. maddesindeki genel hüküm, kayıtların tutulmasına ilişkin yönetmeliği hazırlayan organı da belirtir. Her iki taraf için uygulanan bir muhasebe sisteminin varlığı veya usulün fiilen işletildiği iddia edilmedi.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-hesap-yonetmeligi-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-hesap-yonetmeligi-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-058-1-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-058-1-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-hesap-yonetmeligi-2",
+        "topic_id": "hesap-yonetmeligi",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un hesap ve bütçe usullerini hangi yönetmeliğe bağladığı, tam tüzük bulunamadığından belirlenemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-hesap-yonetmeligi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tüzük gövdesinin elde edilmemesi mali kayıt usulü ve yönetmelik hazırlayan organ için kanıt açığıdır. Bu açık, partinin hesap usulü bulunmadığını söylemeye elvermez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-hesap-yonetmeligi-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-tuzuk-yururluk-1",
+        "topic_id": "tuzuk-yururluk",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğünün yürürlük maddesi, tüzüğün kuruluş bildirgesinin İçişleri Bakanlığına verilmesiyle yürürlüğe girmesini öngörür. İYİ Parti PDF nüshasının 91. maddesi ise metindeki değişikliğin oylanıp kabul edildiği anda yürürlüğe girmesini düzenler."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-tuzuk-yururluk-1",
+        "passage_id": "0303-epm-ninth-tuzuk-yururluk-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-tuzuk-yururluk-1",
+        "passage_id": "0306-iyi-tuzuk-yururluk-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-tuzuk-yururluk-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti'nin ikinci kez 65 numarası verilen maddesi bütün tüzüğün kuruluş işlemine bağlı yürürlüğünü anlatır. İYİ Parti'deki ifade belirli değişikliğin kabul anına ilişkindir. Bu nedenle iki farklı hukuki nesne korundu; pasajlardan bir kuruluş günü veya bütün tüzük için ortak ilk yürürlük tarihi üretilmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-ninth-tuzuk-yururluk-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-ninth-tuzuk-yururluk-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-tuzuk-yururluk-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-tuzuk-yururluk-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-tuzuk-yururluk-2",
+        "topic_id": "tuzuk-yururluk",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol için tüzüğün yürürlük koşulu incelenemedi; bağımsız tam tüzük araştırmada bulunamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-tuzuk-yururluk-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Partinin kuruluşuna ilişkin haber ile tüzüğün yürürlüğe ilişkin hükmü farklı kanıtlardır. Mevcut arama ve belge açığı, yürürlük maddesinin metnini veya tarihini sağlamaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-tuzuk-yururluk-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-duzenlemeler-1",
+        "topic_id": "gecici-duzenlemeler",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğünde Kurucular Kurulu, Kurultay ilk toplantısını yapıncaya kadar Kurultayın yetkilerini kullanır. DEM kısa adlı tüzük de kongre yetkilerini ilk kongreye kadar Kurucular Kuruluna verir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-duzenlemeler-1",
+        "passage_id": "0303-epm-detail8-gecici-duzenlemeler-kurultay-yetkilerinin-gecici-kullan-m--p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-duzenlemeler-1",
+        "passage_id": "0305-dem-gecici-dem-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-duzenlemeler-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti'nin 15. maddesi ile DEM nüshasının 60. maddesi, yüksek kongre organının yetkilerinin kuruluş döneminde kim tarafından kullanılacağını ve bu yetkinin biteceği aşamayı açıklar. Kurucular Kurulunun bugün bu yetkileri kullandığı veya iki partinin ilk kongrelerinin aynı tarihte gerçekleştiği çıkarılmadı.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-detail8-gecici-duzenlemeler-kurultay-yetkilerinin-gecici-kullan-m--row\",\"support\":\"passage\",\"refs\":[\"0303-epm-detail8-gecici-duzenlemeler-kurultay-yetkilerinin-gecici-kullan-m--p\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-gecici-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-gecici-dem-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-duzenlemeler-2",
+        "topic_id": "gecici-duzenlemeler",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un kuruluş dönemindeki geçici yetki düzeni, bağımsız tam tüzük elde edilemediğinden belirlenemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-duzenlemeler-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Kuruluşun haberle belgelenmesi, kongre yetkilerini geçici olarak kullanacak organı göstermiyor. Bu başlıktaki durum, geçiş hükmünün bulunmaması değil okunabilir tam tüzüğün sağlanamamış olmasıdır.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-gecici-duzenlemeler-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-orgut-olusumu-1",
+        "topic_id": "gecici-orgut-olusumu",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti'de kuruluştan ilk olağan Kurultaya kadar il ve ilçe örgütleri Merkez Yönetim Kurulunun atamasıyla oluşur. EMEP'in HTML tüzüğünde yeni il örgütünün kurucu başkan ve yönetimini Genel Yönetim Kurulu, yeni ilçe örgütününkileri ise Genel Yönetim Kurulu veya il yönetim kurulu atar."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-orgut-olusumu-1",
+        "passage_id": "0303-epm-extra-gecici-orgut-olusumu-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-orgut-olusumu-1",
+        "passage_id": "0309-emep-html-059-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-orgut-olusumu-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti'nin geçici 1. maddesindeki atama, partinin ilk olağan Kurultayına kadar süren geçiş dönemine bağlıdır; buradaki MYK'nin adı Merkez Yönetim Kuruludur. EMEP'in 65. maddesi yeni yerel örgüt kurulmasını esas alır ve il ile ilçenin atama yetkililerini ayırır. EMEP hükmüne ilk parti kongresine kadar geçerlilik sınırı eklenmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-extra-gecici-orgut-olusumu-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-extra-gecici-orgut-olusumu-p\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-059-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-059-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-orgut-olusumu-2",
+        "topic_id": "gecici-orgut-olusumu",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'da ilk yerel örgütlerin nasıl oluşturulacağı, tam tüzüğe ulaşılamadığı için açıklanamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-orgut-olusumu-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Eldeki girişim kaydı il ve ilçe kurucu yönetimlerini atayacak organı ya da geçici görevin süresini içermiyor. Başka partilerin kuruluş modelleri Yeni Yol'a aktarılmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-gecici-orgut-olusumu-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-tuzuk-degis-1",
+        "topic_id": "gecici-tuzuk-degis",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti'de Yargıtay Cumhuriyet Başsavcılığının incelemesinde mevzuat gereği değişmesi gereken tüzük hükümleri belirlenirse Parti Meclisi bu değişiklikleri ilk Kurultayın onayına sunmak üzere yapar. DEM kısa adlı nüsha, program ve tüzüğü değiştirme yetkisini ilk kongreye kadar Kurucular Kuruluna, sonrasında Büyük Kongreye bırakır."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-tuzuk-degis-1",
+        "passage_id": "0303-epm-ninth-gecici-tuzuk-degis-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-tuzuk-degis-1",
+        "passage_id": "0305-dem-gecici-degis-dem-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-tuzuk-degis-1",
+        "passage_id": "0314-charter5-full-3-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-tuzuk-degis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti'nin geçici 2. maddesi, incelemede mevzuata göre değişiklik gereğinin bulunması koşulunu ve sonraki Kurultay onayını birlikte taşır. DEM'in 54. maddesindeki yetki ise kuruluş aşamasına göre organ değiştirir; kesik geçiş alıntısı yerine aynı nüshadaki tam yetki cümlesi de bağlandı. DEM'in olağan değişiklik usulü ve salt oy şartı aşağıdaki özgün tam madde bağlamında korundu; bu karşılaştırma sınırsız değişiklik yetkisi iddia etmez.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-ninth-gecici-tuzuk-degis-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-ninth-gecici-tuzuk-degis-p\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-gecici-degis-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-gecici-degis-dem-passage\",\"0314-charter5-full-3-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-tuzuk-degis-2",
+        "topic_id": "gecici-tuzuk-degis",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un kuruluş aşamasında tüzük değişikliği yapabilecek organ ve varsa onay şartı belirlenemedi; bağımsız tam tüzük bulunamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-tuzuk-degis-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Kuruluş haberindeki taslak onayı, gelecekte tüzüğü değiştirme yetkisinin düzenlenişini göstermiyor. Bu nedenle taslak kabulü geçici değişiklik yetkisinin kanıtı olarak kullanılmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-gecici-tuzuk-degis-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-kota-1",
+        "topic_id": "gecici-kota",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti'nin geçici 3. maddesi, 36/1'deki cinsiyet kotasını ilk olağan Kurultaya kadar yüzde 33; birinci, ikinci, üçüncü ve dördüncü olağan Kurultaylarda sırasıyla yüzde 35, 40, 45 ve 50 olarak düzenler. TİP'in HTML tüzüğünde eşit temsil koşulları oluşana kadar seçilecek kurullarda kadın kotası yüzde 40, Parti Meclisi, Merkez Disiplin Kurulu ve il disiplin kurullarında en az yüzde 50'dir; seçimle oluşmayan organlarda yüzde 40 kotaya özen gösterilmesi istenir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-kota-1",
+        "passage_id": "0303-epm-extra-gecici-kota-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-gecici-kota-1",
+        "passage_id": "0304-tip-gecici-kota-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-kota-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti'nin yüzdeleri belirli Kurultay aşamalarına bağlanmıştır ve 36/1'de belirtilen kapsam içindir. TİP'in 4.6. maddesi takvim vermeden eşit temsil koşullarını esas alır; genel yüzde 40 kuralının yanında üç kurul türü için en az yüzde 50 ve seçimsiz organlar için özen hükmü vardır. Taslaktaki TİP'i yalnız yüzde 40 ile anlatan eksik genelleme bu istisnalarla düzeltildi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-extra-gecici-kota-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-extra-gecici-kota-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-gecici-kota-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-gecici-kota-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-gecici-kota-2",
+        "topic_id": "gecici-kota",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un geçiş dönemine özgü bir kota takvimi veya oranı olup olmadığı, tam tüzük sağlanamadığından belirlenemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-gecici-kota-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bu başlıkta oran, organ kapsamı ve sürenin okunacağı tüzük metni eksiktir. Belge açığı kotanın bulunmadığı ya da partinin kotaya karşı olduğu anlamına getirilmedi.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-gecici-kota-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-fahri-uyelik-1",
+        "topic_id": "fahri-uyelik",
+        "taxonomy_version": 3,
+        "text": "DEM kısa adlı tüzük, partiye özel katkısı olabilecek kişilerin parti örgütlerince fahri üye kaydedilmesine izin verir. DBP'nin HTML tüzüğünde özel katkı sağlayabilecek kişilerden isteyen ve herhangi bir partiye üye olmayanların fahri kaydını Merkez Yürütme Kurulu yapabilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-fahri-uyelik-1",
+        "passage_id": "0305-dem-fahri-dem-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-fahri-uyelik-1",
+        "passage_id": "0308-dbp-draft-004-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-fahri-uyelik-1",
+        "passage_id": "0314-charter5-full-4-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-fahri-uyelik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM'in 5. maddesi ile DBP'nin 10. maddesi özel katkı amacını paylaşır; kayıt yetkilileri farklıdır. DBP ayrıca kişinin isteğini ve başka bir partiye üyeliğinin bulunmamasını açıkça şart koşar. DBP'nin mevcut kısa pasajı özel katkı bağlamını dışarıda bıraktığı için özgün tam paragraf aşağıda genişletme olarak verildi; DEM'de aynı üyelik yasağı varmış gibi bir sonuç çıkarılmadı.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-fahri-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-fahri-dem-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-004-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-004-passage\",\"0314-charter5-full-4-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-fahri-uyelik-2",
+        "topic_id": "fahri-uyelik",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'da fahri üyelik şartları ve kayıt yetkilisi belirlenemedi; araştırmada bağımsız tam tüzüğe ulaşılamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-fahri-uyelik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Fahri üyeliğin kabul edilip edilmediği ve kabul edilirse kimler için uygulanacağı tüzük metni gerektirir. Kaydedilen erişim girişimleri bu içerik sorularına yanıt sağlamıyor.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-fahri-uyelik-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-birimleri-1",
+        "topic_id": "parti-birimleri",
+        "taxonomy_version": 3,
+        "text": "TİP'in HTML tüzüğünde toplumsal alanlarda siyasal mücadele ve örgütlenme için birimler ilçe, il veya bölge komitelerince oluşturulabilir; istisnai olarak işlev temelli birimler de kurulabilir. İYİ Parti tüzüğünde ise Genel Merkezde ihtiyaç duyulan konulardaki hizmet birimlerini Genel Başkan kararı oluşturur."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-birimleri-1",
+        "passage_id": "0304-tip-birim-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-birimleri-1",
+        "passage_id": "0306-iyi-parti-birimleri-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-birimleri-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP'in 3.2. maddesindeki birim toplumsal örgütlenme alanına, İYİ Parti'nin 67. maddesindeki hizmet birimi Genel Merkez işlerine ilişkindir. Aynı adın benzerliğinden kurumsal eşdeğerlik çıkarılmadı; TİP'te kurabilecek komiteler ve işlev temelli istisna, İYİ Parti'de ise Genel Başkan kararı ile merkez kapsamı cümlede tutuldu.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-birim-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-birim-p1\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-parti-birimleri-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-parti-birimleri-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-birimleri-2",
+        "topic_id": "parti-birimleri",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un tüzükte birim adıyla hangi örgütsel yapıları tanımladığı incelenemedi; tam tüzük elde edilemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-birimleri-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Tüzük gövdesi bulunmadığından toplumsal örgütlenme birimi ile merkez hizmet birimi arasında bu parti için bir ayrım yapılamıyor. Başka partilerdeki birim tanımları boşluğu doldurmak için kullanılmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-birimleri-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-konferansi-1",
+        "topic_id": "parti-konferansi",
+        "taxonomy_version": 3,
+        "text": "DEM kısa adlı tüzük, konferansların karar organı olmadığını belirtir. DBP'nin HTML tüzüğü Parti Danışma Konferansının yılda en az bir kez ve ayrıca Eş Genel Başkanlar veya Merkez Yürütme Kurulunun uygun göreceği tarihlerde toplanmasını öngörür."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-konferansi-1",
+        "passage_id": "0305-dem-konferans-dem-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-konferansi-1",
+        "passage_id": "0308-dbp-draft-049-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-konferansi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM'in 48. maddesi konferansın organ niteliğine bir sınır koyar. DBP'nin 63. maddesi ise danışma konferansının asgari sıklığını ve ek toplantı zamanlarını belirleyenleri gösterir. Bu farklı düzenleme boyutlarından DBP konferansının bağlayıcı karar organı olduğu veya DEM'de aynı yıllık takvimin bulunmadığı sonucu üretilmedi.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-konferans-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-konferans-dem-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-049-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-049-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-konferansi-2",
+        "topic_id": "parti-konferansi",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un konferanslarının niteliği ve toplantı sıklığı, bağımsız tam tüzük bulunamadığı için belirlenemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-konferansi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Kayıtlı kaynaklar konferansın karar veya danışma işlevini ve takvimini açıklayan bir tüzük maddesi içermiyor. Bu durum konferans yapılmadığına ilişkin uygulama bulgusu değildir.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-konferansi-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-temsilcisi-1",
+        "topic_id": "parti-temsilcisi",
+        "taxonomy_version": 3,
+        "text": "İYİ Parti tüzüğünde mahalle, köy veya sandık bölgesi temsilcisini ilgili ilçe yönetim kurulu atar; görev süresi aynı kurulun süresiyle sınırlıdır. Demokrat Parti'nin arşiv tüzüğü büyükşehirlerin merkez ilçe mahallelerinde kongreyle seçilen temsilcilik yönetimlerini ayırır; bunun dışında kalan il ve ilçelerde köy ve mahalle temsilcisi, parti üyeleri arasından ilçe yönetim kurulunca atanır ve temsilci ile yardımcısının görevi bu kurulun süresi kadardır."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-temsilcisi-1",
+        "passage_id": "0306-iyi-parti-temsilcisi-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-temsilcisi-1",
+        "passage_id": "0314-charter5-full-5-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-temsilcisi-1",
+        "passage_id": "0312-demokrat-2-039-parti-temsilcisi-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-temsilcisi-1",
+        "passage_id": "0312-demokrat-2-039-parti-temsilcisi-context"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-temsilcisi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İYİ Parti'nin 20. maddesi atamayı ve süresini birlikte düzenler; süre için tam madde genişletmesi gereklidir. Demokrat Parti'nin 17. maddesinde kısa atama alıntısının hemen öncesinde büyükşehir merkez ilçe mahalleleri için seçimli yönetim kuralı bulunduğu özgün sayfada görüldü. Mevcut tam sayfa bağlamı referanslara eklendi; atama bütün mahallelere genellenmedi. Demokrat Parti tarafı bugünkü yürürlüğü ayrıca kanıtlanmamış arşiv nüshası olarak sunuldu.\",\"sides\":[{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-parti-temsilcisi-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-parti-temsilcisi-passage\",\"0314-charter5-full-5-passage\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-039-parti-temsilcisi-row\",\"support\":\"passage\",\"refs\":[\"0312-demokrat-2-039-parti-temsilcisi-p\",\"0312-demokrat-2-039-parti-temsilcisi-context\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-temsilcisi-2",
+        "topic_id": "parti-temsilcisi",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un yerel temsilcisinin seçimi veya atanması ile görev süresi belirlenemedi; tam tüzük araştırmada sağlanamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-temsilcisi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bir temsilcinin görevlendirilme yöntemi, coğrafi kapsamı ve süresi hakkında hüküm okuyabilmek için tüzük gövdesi gerekiyor. Mevcut belge açığı bunlardan herhangi bir yöntemi partiye atamayı desteklemez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-temsilcisi-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-temsilcilikleri-1",
+        "topic_id": "parti-temsilcilikleri",
+        "taxonomy_version": 3,
+        "text": "TİP'in HTML tüzüğünde örgüt bulunan il ve ilçelerin köy ve mahallelerinde ilgili yönetici organın talebi ve Merkez Yürütme Kurulunun onayıyla, örgüt bulunmayan yerlerde ise bu kurulun kararıyla temsilcilik açılabilir. DBP'nin HTML tüzüğünde henüz örgüt kurulmamış il, ilçe veya beldede örgütlenmeyi sağlamak için açılan temsilciliğin görevi, orada parti örgütü kurulunca biter; kurulan yerel örgütler gerekli gördükleri mahalle gibi birimlerde ayrıca temsilcilik açabilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-temsilcilikleri-1",
+        "passage_id": "0304-tip-parti-temsilcilik-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-temsilcilikleri-1",
+        "passage_id": "0308-dbp-draft-120-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-temsilcilikleri-1",
+        "passage_id": "0314-charter5-full-6-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-temsilcilikleri-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP'in 3.18. maddesi örgütlü ve örgütsüz yerler için iki açılış yolu belirtir. DBP'nin 43. maddesindeki sona erme cümlesi, örgüt kuruluşunu hazırlayan temsilcilik hakkındadır; devamındaki mahalle temsilciliği olanağı tüm temsilciliklerin zorunlu olarak kapanacağı genellemesini önler. DBP'deki bu önceki ve sonraki bağlam mevcut kısa ref'te bulunmadığı için aşağıdaki tam bentle genişletilmelidir.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-parti-temsilcilik-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-parti-temsilcilik-p1\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-120-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-120-passage\",\"0314-charter5-full-6-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-temsilcilikleri-2",
+        "topic_id": "parti-temsilcilikleri",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un temsilcilik açma ve sona erdirme koşulları, bağımsız tam tüzük elde edilemediğinden karşılaştırılamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-temsilcilikleri-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Temsilciliğin örgüt bulunan veya bulunmayan yerdeki rolünü gösterecek metin eksiktir. Arama sonucunu temsilcilik yapısının bulunmadığı şeklinde yorumlamak bu iki olasılığı kanıtsız kapatırdı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-temsilcilikleri-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-yan-orgut-1",
+        "topic_id": "parti-yan-orgut",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğü Genel Merkez, il ve ilçe düzeylerinde kadın ve gençlik kolları kurulmasını, gençlik kolu üyeliğinin otuz yaş dahil olmak üzere bu yaşa kadar sürmesini düzenler. EMEP'in HTML tüzüğünde gençlerin sorunları için gençlik örgütü kurulabilir; kuruluş kararını Genel Yönetim Kurulu verir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yan-orgut-1",
+        "passage_id": "0303-epm-third-kadin-genclik-orgut-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yan-orgut-1",
+        "passage_id": "0309-emep-html-054-2-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yan-orgut-1",
+        "passage_id": "0314-charter5-full-7-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-yan-orgut-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti'nin 60. maddesinde üç örgüt düzeyi, kadın ve gençlik kolları ve otuz yaşın dahil olduğu üst sınır birlikte bulunur. EMEP'in 57. maddesinde gençlik örgütü bir kurma olanağıdır ve karar GYK'ye bırakılır. Bu nedenle EMEP'te hükmün zorunlu kuruluş emri olduğu veya aynı yaş sınırının geçerli olduğu söylenmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parent-parti-yan-orgut-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-third-kadin-genclik-orgut-p\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-054-2-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-054-2-passage\",\"0314-charter5-full-7-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-yan-orgut-2",
+        "topic_id": "parti-yan-orgut",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un kadın veya gençlik gibi yan örgütlerini düzenleyen hükümler incelenemedi; tam tüzüğe ulaşılamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-yan-orgut-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Örgüt türleri, kuruluş kararını verecek organ ve yaş şartları hakkında mevcut belgelerden hüküm çıkarılamıyor. Belge edinilememesi bu yapıların fiilen veya tüzükte bulunmadığının kanıtı sayılmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-yan-orgut-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-buro-komisyon-1",
+        "topic_id": "parti-buro-komisyon",
+        "taxonomy_version": 3,
+        "text": "EMEP'in HTML tüzüğü bütün yönetici organlara kendilerine bağlı büro, komisyon ve çalışma grubu kurma yetkisi tanır. Demokrat Parti'nin arşiv tüzüğünde yönetim kurulları, üst kademe kararları, kendi girişimleri veya kongre kararları doğrultusunda belirli konular için sürekli ya da geçici araştırma, inceleme ve danışma kurulları ile komisyonlar kurabilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-buro-komisyon-1",
+        "passage_id": "0309-emep-html-041-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-buro-komisyon-1",
+        "passage_id": "0312-demokrat-2-053-parti-buro-komisyon-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-buro-komisyon-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"EMEP'in 53. maddesindeki yetki bütün yönetici organlara ve kendilerine bağlı yapılara yöneliktir. Demokrat Parti'nin 66. maddesi ise yönetim kurullarını, oluşumu başlatabilecek karar veya girişimleri ve yapıların sürekli ya da geçici niteliğini sayar. Aynı kayıt alıntısına taşmış 67. maddenin Genel Başkan müşavirlerine ilişkin hükmü komisyonlara aktarılmadı.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-041-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-041-0-passage\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-053-parti-buro-komisyon-row\",\"support\":\"passage\",\"refs\":[\"0312-demokrat-2-053-parti-buro-komisyon-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-buro-komisyon-2",
+        "topic_id": "parti-buro-komisyon",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'da büro, komisyon veya çalışma grubu kurma yetkisinin hangi organlarda olduğu belirlenemedi; bağımsız tam tüzük bulunamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-buro-komisyon-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bu başlıktaki belge açığı, yardımcı yapıların türü, bağlılığı ve kuruluş yetkisi için sürüyor. Kuruluş haberi belirli bir komisyon yetkisine dayanak yapılmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-buro-komisyon-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-bolge-komiteleri-1",
+        "topic_id": "bolge-komiteleri",
+        "taxonomy_version": 3,
+        "text": "TİP'in HTML tüzüğü bölge komitelerini farklı il ve ilçe örgütlerinin sorumlularından oluşan ara yönetici kurullar olarak tanımlar; bileşim ve sekreterlik Merkez Yürütme Kurulunca atanır. EMEP'in HTML tüzüğünde bölgesel özellikler gözetilerek birden çok il örgütünün faaliyetlerini merkezileştirmek ve koordine etmek için Genel Yönetim Kurulu kararıyla bölge komiteleri kurulabilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-bolge-komiteleri-1",
+        "passage_id": "0304-tip-bolge-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-bolge-komiteleri-1",
+        "passage_id": "0309-emep-html-021-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-bolge-komiteleri-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP'in 3.23. maddesi kurulun kimlerden oluşacağını, yönetim ve koordinasyon işlevini ve atama yetkilisini birlikte anlatır. EMEP'in 47. maddesi ise bölgesel özelliklere bağlı bir kurma olanağı ile GYK kararını belirtir. TİP'teki sekreter atama usulü EMEP'e, EMEP'teki bölgesel kuruluş şartı TİP'e taşınmadı.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-bolge-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-bolge-p1\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-021-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-021-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-bolge-komiteleri-2",
+        "topic_id": "bolge-komiteleri",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un bölge komitesi veya benzeri ara örgütlenme düzeni, tam tüzük elde edilemediği için belirlenemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-bolge-komiteleri-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Bölge yapısının kuruluş amacı, bileşimi ve merkezle ilişkisi için incelenebilir tüzük hükmü sağlanamadı. İl örgütlerinin varlığı hakkında başka bir kaynak olsa bile bu eksik ara yönetim kuralının yerini tutmaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-bolge-komiteleri-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-yoldaslik-1",
+        "topic_id": "parti-yoldaslik",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğü parti içi dayanışmayı güçlendirmeyi üyenin yükümlülükleri arasında sayar. EMEP'in HTML tüzüğü parti birliğinin gereği olarak üyeler arasındaki ilişkinin dayanışma ve yoldaşça yardımlaşmaya dayanmasını ister."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yoldaslik-1",
+        "passage_id": "0303-epm-uye-yukumluluk-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-yoldaslik-1",
+        "passage_id": "0309-emep-html-061-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-yoldaslik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti'nin 6. maddesi dayanışmayı üyeye verilen ödevler içinde düzenler. EMEP'in 26/e hükmü aynı ilişki alanını parti birliği ve yoldaşça yardımlaşma terimleriyle açıklar. Bu karşılaştırma iki metnin kelime tercihlerini birleştirip Yeni Parti'ye ayrıca yoldaşlık hukuku veya EMEP'e farklı bir üyelik yaptırımı yüklemez.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-parti-yoldaslik-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-uye-yukumluluk-p\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-061-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-061-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-yoldaslik-2",
+        "topic_id": "parti-yoldaslik",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un üyeler arası dayanışma ve yoldaşlık hakkında tüzük hükmü belirlenemedi; bağımsız tam tüzük bulunamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-yoldaslik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Üyelik ilişkilerine ilişkin normu okumaya yarayacak tüzük metni eksik kalmıştır. Siyasi söylemdeki birlik veya dayanışma ifadeleri bu boşluk için tüzük kuralı yerine konulmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-yoldaslik-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-uye-dijital-kimlik-1",
+        "topic_id": "uye-dijital-kimlik",
+        "taxonomy_version": 3,
+        "text": "TİP'in HTML tüzüğü, üyelik kaydından sonra üye portalında dijital üye kimlik kartı oluşturulmasını; üyelikten çıkarılma veya istifada kartın üyelik kaydıyla birlikte silinmesini düzenler. Yeni Parti'nin arşivlenen tam tüzüğünde dijital üye kimlik kartına özgü açık hüküm saptanmadı."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-uye-dijital-kimlik-1",
+        "passage_id": "0304-tip-dijital-kimlik-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-uye-dijital-kimlik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"TİP'in 2.4. maddesi kartın hem oluşturulma hem silinme koşulunu açıkça verir. Yeni Parti'de kayıtlı kapsamla yetinilmedi; üyelik, örgüt ve ortak hükümler dahil bütün tüzük ile geçici maddeler okundu. Elektronik başvuru olanağı dijital kartla aynı işlem sayılmadı. Sonuç yalnız bu nüshanın düzenlediği içerikle sınırlıdır; partinin fiilen dijital kimlik kullanmadığı iddia edilmez.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-dijital-kimlik-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-dijital-kimlik-p1\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-scope-uye-dijital-kimlik-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-uye-dijital-kimlik-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-uye-dijital-kimlik-2",
+        "topic_id": "uye-dijital-kimlik",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un dijital üye kimlik kartına ilişkin tüzük düzeni incelenemedi; tam tüzüğe ulaşılamadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-uye-dijital-kimlik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Kartın düzenlenmesi, silinmesi veya portal kullanımı hakkında tüzük maddesi elde edilmemiştir. Bu belge açığı, bağımsız dijital hizmet araştırması yapılmadan fiili teknoloji kullanımı hakkında yokluk sonucuna dönüştürülemez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-uye-dijital-kimlik-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-ogrenci-orgutlenmesi-1",
+        "topic_id": "ogrenci-orgutlenmesi",
+        "taxonomy_version": 3,
+        "text": "TİP'in HTML tüzüğünde parti üyesi öğrencilerin TİP'li Öğrenciler çalışmasını Öğrenci Komitesi yönetir; her ilde bu komiteye bağlı çalışma kurulur ve kuruluş, işleyiş ve çalışma yöntemlerini Parti Meclisinin hazırlayacağı yönetmelik düzenler. Yeni Parti'nin incelenen tam tüzüğünde öğrencilere özgü ayrı parti örgütlenmesini düzenleyen açık hüküm saptanmadı."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-ogrenci-orgutlenmesi-1",
+        "passage_id": "0304-tip-diff-ogrenci-html-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-ogrenci-orgutlenmesi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"TİP'in 3.11. maddesi üyelik kapsamını, yönetici komiteyi, il düzeyindeki bağlılığı ve yönetmelik hazırlayan organı birlikte tanımlar. Yeni Parti'nin yalnız öğrenci kelimesi aranmadı; üyelik, bütün örgüt yapıları, 60. maddedeki kadın ve gençlik kolları ve geçici hükümler tam tüzük içinde okundu. Gençlik kolu ayrı bir öğrenci örgütüyle eşitlenmedi; bulgu bu nüshadaki açık düzenleme düzeyindedir.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-diff-ogrenci-html-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-diff-ogrenci-html-p1\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-scope-ogrenci-orgutlenmesi-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-ogrenci-orgutlenmesi-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-ogrenci-orgutlenmesi-2",
+        "topic_id": "ogrenci-orgutlenmesi",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un öğrencilere özgü bir parti çalışması veya organı düzenleyip düzenlemediği, bağımsız tam tüzük bulunamadığından belirlenemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-ogrenci-orgutlenmesi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Öğrenci üyelerin örgütlenme biçimi, organ bağlılığı ve çalışma usulünü karşılaştıracak metin elde edilmedi. Buradaki açık öğrenci örgütlenmesine karşı tutum veya öğrencilerin partiye katılmadığı sonucu değildir.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-ogrenci-orgutlenmesi-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-bagimsizlik-1",
+        "topic_id": "parti-bagimsizlik",
+        "taxonomy_version": 3,
+        "text": "TİP'in HTML tüzüğü partinin siyasal, ideolojik ve örgütsel bağımsızlığını esas alır ve tanımlı parti kurullarının üzerinde bir irade tanımaz. Yeni Parti'nin arşivlenen tam tüzüğünde partinin bu kurumsal bağımsızlığını açıkça düzenleyen bir hüküm saptanmadı."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-charter5-independent-parti-bagimsizlik-1",
+        "passage_id": "0304-tip-bagimsizlik-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-bagimsizlik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"TİP'in 4.2. maddesinde bağımsızlığın öznesi partidir ve dış iradeye ilişkin sınır parti kurulları üzerinden kurulur. Yeni Parti'nin bütün tüzüğü, amaçlar, karar organları ve geçici maddeleriyle birlikte okundu; ülkenin bağımsızlığını savunan amaçlar partinin kurumsal bağımsızlığına özgü hüküm sayılmadı. Sonuç partinin siyasi bağımlılığına ilişkin bir değerlendirme değil, yalnız incelenen nüshanın açık düzenleme kapsamıdır.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-bagimsizlik-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-bagimsizlik-p1\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-scope-parti-bagimsizlik-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-parti-bagimsizlik-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-charter5-independent-parti-bagimsizlik-2",
+        "topic_id": "parti-bagimsizlik",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol'un siyasal, ideolojik veya örgütsel bağımsızlık ilkesini tüzüğünde nasıl düzenlediği belirlenemedi; bağımsız tam tüzük elde edilemedi."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-charter5-independent-parti-bagimsizlik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T19:59:13+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belge durumu bağımsızlık konusundaki bir ilkenin varlığını veya yokluğunu sınamaya izin vermiyor. Kuruluş ortaklıklarından ya da parti adından ideolojik veya örgütsel bağlılık hükmü çıkarılmadı.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-bagimsizlik-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
     }
   ]
 }
