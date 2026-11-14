@@ -168,6 +168,18 @@ class ComparisonContentTest(unittest.TestCase):
         data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
         self.assertEqual(arsiv.render_comparison_snapshot(data, module.render_report).encode(), (folder / 'index.html').read_bytes())
 
+    def test_selected_projection_reproduces_existing_renderer_18_snapshot(self):
+        release = arsiv.current()
+        while release:
+            folder = arsiv.DATA / 'releases' / release
+            manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+            if manifest['renderer_version'] == 18 and manifest.get('comparison_taxonomy_version', 0) < 3:
+                break
+            release = manifest.get('base_release')
+        self.assertTrue(release)
+        data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+        self.assertEqual(arsiv.render_comparison_snapshot(data, rapor.render_report).encode(), (folder / 'index.html').read_bytes())
+
     def test_program_topic_basis_points_to_the_actual_heading(self):
         root = Path(__file__).resolve().parents[1]
         package = json.loads((root / 'data/comparisons/03-taxonomy.json').read_text(encoding='utf-8'))
