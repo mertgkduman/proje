@@ -37,6 +37,14 @@ gruplarındaki aynı tür otomatik gerekçeler de kabul edilmedi. Bu grupların
 doğrulaması tek başına bunun yerine geçmez. Dört aday cümlede daha geniş koşul
 pasajı gereği ayrıca belirlenmişti.
 
+İlk üyelik grubundaki yardımcı gerekçeleri de otomatik şablondu ve hiç
+kullanılmadı; üretim paketindeki açıklamalar kaynak pasajları ve koşullar
+okunarak yeniden yazıldı. 300 karakteri aşan altı kaynak pasajının tamamı ve
+diğer kısa pasajlar doğrudan yeniden gözden geçirildi. İlk politika grubunda
+gerekçeler de ayrı yazıldı; kesilmiş uzun pasajın tamamı ayrıca okundu. Bu,
+listede belirtilen henüz temsil edilmeyen tarafların da incelendiği anlamına
+gelmez.
+
 Parti içi itirazda DEM ve İYİ için önceki üyelik reddi kayıtları bu konunun
 tanımı dışındaydı. İki partinin il disiplin kurulu kararına, tebliğden sonra
 sırasıyla 10 ve 15 gün içinde merkez disiplin kurulunda itirazı açık kaynaklı
