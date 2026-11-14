@@ -33,8 +33,10 @@ yokluk sonucu çıkarılmamıştır.
   ayrı korunur. Tarihsel BDP Blogspot kopyasının kadın ve emek başlıkları
   doğrudan okundu: kadın emeğinin görünür kılınması, kadınların istihdamı ve
   onurlu çalışma ilkesi yer alır; bu iki bölümde eşit işe ücret kuralı açıkça
-  saptanmadı. Bu kapsam, bütün tarihsel program için yokluk sonucu değildir;
-  ikinci kopya ve ilgili ekonomi bölümleri ayrıca gözden geçirilecektir.
+  saptanmadı. İkinci kopyadaki kadın emeği paragrafından emek bölümünün sonuna
+  kadar 4.366 karakterlik boşluk-normalleştirilmiş metin aynı bulundu. Bu
+  kapsam, bütün tarihsel program için yokluk sonucu değildir; kadın bölümünün
+  önceki kısmı ve ilgili ekonomi bölümleri ayrıca gözden geçirilecektir.
 
 Kaynaklar: yukarıdaki pasaj kimlikleri seçili kapalı snapshot'ta belge sürümü,
 özgün bayt ve arşiv konumuna bağlıdır. Saadet özgün PDF SHA-256
