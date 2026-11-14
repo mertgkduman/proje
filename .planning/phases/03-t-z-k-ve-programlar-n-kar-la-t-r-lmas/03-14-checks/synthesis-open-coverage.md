@@ -80,3 +80,11 @@ DEM geçici tüzük maddesinde başka bir karşılaştırma satırına ait kısa
 TİP kota istisnası ve Demokrat temsilcilik seçim/atama ayrımı özgün metindeki
 sınırlarıyla korundu. Bu grup bütün parti ve konuların tamamlanması veya henüz
 yüklenmiş yayın anlamına gelmez.
+
+Policy3 grubunda 20 konu için 56 kaynakçı cümlesi ve özgül gerekçesi
+eklendi. Saadet'in Çin bölümündeki kısa ilişki pasajının hemen sonraki Doğu
+Türkistan itirazı ve çözüm arayışını da taşıyan özgün tam paragraf
+`0314-saadet-china-east-turkestan-full-p` olarak bağlandı; bu koşullu bağlamla
+Yeni Parti ve Saadet'i karşılaştıran bir ek cümle daha yazıldı. 57 cümlenin
+taraf–konu–kanıt bağları doğrulandı. Önceki koşulsuz ve eksik bağlamlı aday
+kullanılmadı; eski alıntı ve kaynak korunur.
