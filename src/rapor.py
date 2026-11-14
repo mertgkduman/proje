@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 17
+RENDERER_VERSION = 18
 STYLE = Path(__file__).with_name('rapor_v16.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -56,6 +56,18 @@ def code_label(value):
     return esc(CODE_LABELS.get(value, 'Belirtilmemiş'))
 
 
+def version_source_label(version, attribution, fallback=''):
+    """Identify this source version using its own publisher and version label."""
+    attribution = attribution or {}
+    publisher = attribution.get('publisher') or attribution.get('social_handle') or attribution.get('author')
+    label = version.get('version_label') or ('Sürüm belirtilmemiş' if publisher else fallback or 'Sürüm belirtilmemiş')
+    if not publisher:
+        return fallback + ' · ' + label if fallback and fallback != label else label
+    if publisher.casefold() in label.casefold():
+        return label
+    return publisher + ' · ' + label
+
+
 def finding_text(finding, legacy_html=False):
     value = esc(unescape(finding['text'])) if finding['provenance']=='quote' and legacy_html else esc(finding['text'])
     if finding['provenance'] == 'quote':
@@ -88,7 +100,7 @@ def render_version_history(version, data, versions, citation, findings, evidence
         result.append('<p>Arşivde tek sürüm var.</p>')
     for v in sorted(siblings, key=lambda x: x['id']):
         target = f' id="version-{esc(v["id"])}"' if v['id'] == version['id'] else ''
-        result.append(f'<div{target}>{esc(v["version_label"] or "Sürüm belirtilmemiş")} · {time_tag(v["document_date"])}')
+        result.append(f'<div{target}>{esc(version_source_label(v, attributions.get(v["id"])))} · {time_tag(v["document_date"])}')
         attribution=attributions.get(v['id'])
         if attribution and attribution.get('author'):
             result.append(f'<p class="metadata">Bu sürümün yazarı: {esc(attribution["author"])} · Atıf dayanağı: {esc(attribution["basis"])}</p>')
@@ -180,11 +192,13 @@ def render_report(data):
         return esc(topics.get(value, str(value).replace('-', ' ').capitalize()))
 
     def citation(pid, label='Kaynak'):
-        title = documents[versions[passages[pid]['version_id']]['document_id']]['title']
+        version = versions[passages[pid]['version_id']]
+        title = version_source_label(version, attributions.get(version['id']), documents[version['document_id']]['title'])
         return f'<a class="citation" href="#source-{esc(pid)}" aria-label="{esc(label)}: {esc(title)}">[{esc(label)}]</a>'
 
     def named_citation(pid):
-        title = documents[versions[passages[pid]['version_id']]['document_id']]['title']
+        version = versions[passages[pid]['version_id']]
+        title = version_source_label(version, attributions.get(version['id']), documents[version['document_id']]['title'])
         return citation(pid, title)
 
     grouped = group_party_sources(data, passages, versions, documents)
@@ -229,7 +243,7 @@ def render_report(data):
             archive=f'<a class="archive-view" href="../../{esc(view["index_path"])}">Arşiv görünümü</a>'
         source_entries[p['id']] = (
             f'<details class="source" id="source-{esc(p["id"])}">'
-            f'<summary>{esc(d["title"])} <span class="source-type">{source_type}</span> · {time_tag(v["document_date"])} · {esc(v["version_label"] or "Sürüm belirtilmemiş")}</summary>'
+            f'<summary>{esc(version_source_label(v, attributions.get(v["id"]), d["title"]))} <span class="source-type">{source_type}</span> · {time_tag(v["document_date"])}</summary>'
             f'<blockquote class="quote">“{esc(p["exact"] if v["original_path"].endswith(".pdf") else unescape(p["exact"]))}”</blockquote><dl class="source-info">{details}</dl>'
             f'<p>{reasons}</p>{history}'
             f'<div class="source-links"><a href="{original}">Özgün kaynak</a>'
@@ -315,11 +329,11 @@ def render_report(data):
             pieces.append(f'<p class="metadata">{esc(row["level"].capitalize())} · {esc(row["organ"])}</p>')
             if row['alternative_group']:
                 version = versions[row['version_id']]
-                pieces.append(f'<p class="metadata">Alternatif belge nüshası: {esc(version["version_label"])} · {esc(row["selection_reason"])}</p>')
+                pieces.append(f'<p class="metadata">Alternatif belge nüshası: {esc(version_source_label(version, attributions.get(version["id"]), documents[version["document_id"]]["title"]))} · {esc(row["selection_reason"])}</p>')
             if row['source_role'] in ('supplement', 'historical'):
                 version = versions[row['version_id']]
                 kind = 'Ek belge' if row['source_role'] == 'supplement' else 'Tarihsel belge'
-                pieces.append(f'<p class="metadata">{kind}: {esc(documents[version["document_id"]]["title"])}</p>')
+                pieces.append(f'<p class="metadata">{kind}: {esc(version_source_label(version, attributions.get(version["id"]), documents[version["document_id"]]["title"]))}</p>')
         if row['state'] == 'not_researched':
             pieces.append('<p class="muted">Henüz incelenmedi</p>')
         elif row['state'] == 'document_missing':

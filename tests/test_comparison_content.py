@@ -199,7 +199,7 @@ class ComparisonContentTest(unittest.TestCase):
         self.assertTrue(release_id, 'Renderer 16 yayını bulunmalı')
         data = json.loads((release / 'records.json').read_text(encoding='utf-8'))
         self.assertEqual(module.render_report(data).encode(), (release / 'index.html').read_bytes())
-        self.assertEqual(arsiv.RENDERER_VERSION, 17)
+        self.assertGreaterEqual(arsiv.RENDERER_VERSION, 17)
 
     def test_basis_role_migration_preserves_legacy_rows(self):
         release = arsiv.current()
