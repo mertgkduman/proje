@@ -56,3 +56,14 @@ sırasıyla 10 ve 15 gün içinde merkez disiplin kurulunda itirazı açık kayn
 alanlarla ve sentezle eklendi. Üç eski satırın yeni seçili satırlarla gerekçeli
 değişim kararı `row-replacement-decisions.json` içindedir; eski kayıtlar
 arşivde korunur ve yeni sözlüğe atomik eşleme henüz uygulanmamıştır.
+
+Policy5 grubundaki 20 konu ve 45 cümle, her tarafın gerçek pasajı, koşulu ve
+belge rolü araştırmacı tarafından okunarak ve gerekçeleri elle yazılarak
+eklendi. Betikler yalnız gösterim ve bağlantı denetiminde kullanıldı; 45/45
+iddia taraf–konu–kanıt sözleşmesini geçti. İki kullanılmayan eski alan ayrı
+inceleme gerektirir: `0313-demokrat-144-bakim-ebeveyn-izni-f` özetindeki toplam
+çalışan ölçütü kendi mevcut pasajında, `0313-demokrat-142-cocuk-isciligi-s`
+özetindeki maddi katkı kendi mevcut pasajında yer almıyor. Bu iki ifade yeni
+senteze alınmadı; ilgili eski bulguların kaynaklı kapsamı ve seçili görünümü
+ayrıca düzeltilmelidir. Bu açıkların kaydı, eski kaynak veya bulgu baytlarını
+silme yetkisi vermez.
