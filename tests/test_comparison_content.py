@@ -13,6 +13,22 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_selected_taxonomy_rendering_keeps_legacy_byte_compatibility(self):
+        render = getattr(arsiv, 'render_comparison_snapshot', None)
+        self.assertTrue(callable(render), 'Selected-taxonomy snapshot rendering is required')
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        self.assertEqual(render(data, rapor.render_report), rapor.render_report(data))
+        historical = data['comparison_topic'][0]
+        current = copy.deepcopy(historical)
+        current['taxonomy_version'] = 3
+        current['definition'] = 'Yeni sözlükteki tanım'
+        data['comparison_topic'].append(current)
+        data['comparison_contract'][0]['taxonomy_version'] = 3
+        report = render(data, rapor.render_report)
+        self.assertIn('Yeni sözlükteki tanım', report)
+        self.assertNotIn(historical['definition'], report)
+        self.assertEqual(historical['taxonomy_version'], 1)
+
     def test_program_topic_basis_points_to_the_actual_heading(self):
         root = Path(__file__).resolve().parents[1]
         package = json.loads((root / 'data/comparisons/03-taxonomy.json').read_text(encoding='utf-8'))
