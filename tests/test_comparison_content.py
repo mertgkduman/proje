@@ -42,6 +42,7 @@ class ComparisonContentTest(unittest.TestCase):
         source = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
         original_data, original_load, original_export = arsiv.DATA, arsiv.load_comparison, arsiv.export_db
         before_pointer = arsiv.current()
+        closed_before = arsiv.sha(source)
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             work = root / 'work'
@@ -145,6 +146,7 @@ class ComparisonContentTest(unittest.TestCase):
                 self.assertEqual(arsiv.current(), before_pointer)
             finally:
                 arsiv.DATA, arsiv.load_comparison, arsiv.export_db = original_data, original_load, original_export
+        self.assertEqual(arsiv.sha(source), closed_before)
 
     def test_reconcile_rejects_one_party_new_topic_without_changing_workspace(self):
         reconcile = getattr(arsiv, 'comparison_reconcile', None)
