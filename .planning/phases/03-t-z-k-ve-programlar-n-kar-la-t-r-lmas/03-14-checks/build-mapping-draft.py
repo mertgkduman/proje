@@ -31,6 +31,16 @@ try:
         mappings.append(dict(old_row_id=row['id'], new_row_id='03-v3-' + row['id'], topic_id=row['topic_id'], reason='', fields=fields, changes=changes))
 finally:
     db.close()
+definition_file = root / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-checks/topic-definition-decisions.json'
+definitions = json.loads(definition_file.read_text(encoding='utf-8')) if definition_file.exists() else []
+for decision in definitions:
+    target = [entry['values'] for entry in records if entry['kind'] == 'comparison_topic' and entry['values']['topic_id'] == decision['topic_id']]
+    if len(target) != 1 or not decision['definition'] or not decision['reason']:
+        raise SystemExit('Açık kaynakçı tanım kararı eksik veya belirsiz')
+    target[0]['definition'] = decision['definition']
+new_topic_file = root / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-checks/new-topic-decisions.json'
+if new_topic_file.exists():
+    records.extend(json.loads(new_topic_file.read_text(encoding='utf-8')))
 decisions = root / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-checks/row-replacement-decisions.json'
 replacements = json.loads(decisions.read_text(encoding='utf-8')) if decisions.exists() else []
 replaced_ids = {item['old_row_id'] for item in replacements}
