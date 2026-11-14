@@ -64,6 +64,10 @@ iddia taraf–konu–kanıt sözleşmesini geçti. İki kullanılmayan eski alan
 inceleme gerektirir: `0313-demokrat-144-bakim-ebeveyn-izni-f` özetindeki toplam
 çalışan ölçütü kendi mevcut pasajında, `0313-demokrat-142-cocuk-isciligi-s`
 özetindeki maddi katkı kendi mevcut pasajında yer almıyor. Bu iki ifade yeni
-senteze alınmadı; ilgili eski bulguların kaynaklı kapsamı ve seçili görünümü
-ayrıca düzeltilmelidir. Bu açıkların kaydı, eski kaynak veya bulgu baytlarını
-silme yetkisi vermez.
+senteze alınmadı. Özgün PDF'nin 70 ve 67 numaralı indekslerinde bulunan tam
+dayanaklar `0314-demokrat-workplace-childcare-worker-count-p` ve
+`0314-demokrat-child-labour-family-penalty-support-p` olarak aynı özet
+bulgulara eklendi; v3 alanlarının özgül anlam incelemesi ve eski→yeni alan
+soyu `demokrat-field-evidence-review.md` ve eşleme paketinde kaydedildi.
+Eski kaynak, bulgu, alan ve alıntı baytları korunur; ek dayanaklar henüz
+atomik eşleme ve yayına yüklenmedi.
