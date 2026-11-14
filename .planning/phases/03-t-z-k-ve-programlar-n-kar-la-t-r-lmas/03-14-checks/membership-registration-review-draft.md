@@ -3,6 +3,13 @@
 Bu not, disiplin ihraçla aynı sayılmaması gereken ilgili kayıt hükümlerini
 belgeler; dokuz parti ve bütün tüzük sürümleri için geri tarama henüz bitmedi.
 
+- Yeni Parti özgün HTML tüzüğünde madde 8, bir sandık çevresinde partiye hiç oy
+  çıkmaması halinde Merkez Yönetim Kurulunun o çevrede kayıtlı üyelerin kaydını
+  silmeye karar verebileceğini belirtir (`0303-sandik-silme-p`). Aynı maddede
+  disiplin kurulu çıkarma kararı ve üyelik koşullarının kaybına bağlı kayıt
+  silinmesi ayrı sayılır (`0303-epm-uyeligin-sona-ermesi-p`,
+  `0303-kayit-silme-p`). Bu sıfır-oy hükmüne kaynakta belirtilmeyen yeniden
+  kayıt usulü veya gerçekleşmiş uygulama eklenmemelidir.
 - İYİ'nin eski erişilen nüshasında madde 3, birden fazla üyeyi içerecek şekilde
   kayıt yenileme, iptal, silme veya benzeri adlar altında topluca üyelikten
   çıkarma ya da topluca disipline sevk kararı alınamayacağını belirtir
