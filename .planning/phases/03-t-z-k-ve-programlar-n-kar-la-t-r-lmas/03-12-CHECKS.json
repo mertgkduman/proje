@@ -1,0 +1,65 @@
+{
+  "plan": "03-12",
+  "status": "passed",
+  "checked_at": "2026-11-14T13:39:43.653173+00:00",
+  "first_release": "fcbea5d01f9f409383b2e506878f8876",
+  "final_release": "bcd3dd70ea6d4cefb3379b1a59ccf264",
+  "code_unchanged_since": "7e49d3d",
+  "test_baselines": [
+    "03-04-checks/result.json:124on45c7c40",
+    "03-08-CHECKS.json:12affected tests/old-new audits on7e49d3d"
+  ],
+  "packages": {
+    "1": {
+      "sha256": "3294acce6263cafdc4f1473cab0d2c310035df7769b077d207fb1c766df82856",
+      "rows": 144,
+      "fields": 160,
+      "report": "REPORT_LINK_CHECK_OK 144 rows in both views; source anchors and findings checked"
+    },
+    "2": {
+      "sha256": "8d0ac2a1cfcdf7ac8900b3d4d4f295a0c88d9882fd64651630f1f13af88f1732",
+      "rows": 166,
+      "fields": 152,
+      "report": "REPORT_LINK_CHECK_OK 166 rows in both views; source anchors and findings checked"
+    }
+  },
+  "unique_package_rows": 310,
+  "fields": 312,
+  "active_charter_topics": 166,
+  "narrow_review_scopes": 47,
+  "semantic_reviews": 359,
+  "pending_program_topics": [
+    "demokrasi-katilim",
+    "temel-yurttaslik-geliri"
+  ],
+  "original_source_sha256_and_metadata_preserved": 17,
+  "all_prior_findings_unchanged": true,
+  "phase2_delivery_preserved": true,
+  "semantic_spot_checks": [
+    "Art20 districtordinary1/10 quorum vs art25 every-tier initialopening half+1; repeatmeeting nextday sameplace/time/agenda withpresentdelegates. Application relationship unstated; no conflict/legalpriority judgement.",
+    "1985membership21 vs archived18; historicalsource is not1946DP or separate2007DYP",
+    "1985 rejection no mandatoryreason/5days vs archive reasonedwrittennotification/15days; conditions retain ownsource",
+    "1988 cover15May vs effectiveclause16May;1990catalogue separate1989 amendment/effective dates not catalogueyear"
+  ],
+  "history_limit": "22 historical source fields have own old-version support, with corresponding archived fields separately visible; no formalcrossdocument history relation asserted. Explicit reader pairing tracked03-15/16.",
+  "known_presentation_limits": [
+    "Renderer18 omits reviewscope/context for no_explicit_statement; preserveabsence state, no falsepositive contextfield",
+    "Unrepresented field type is not automatically sourceabsence; scoped slot visibility tracked03-15/16"
+  ],
+  "single_writer_control": "Early second official comparison-check failed immediately FileExistsError without changing live first lock. Retried only afterfirst task commit and writer release; accepted checks exit0.",
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "upcoming_key_links": "Own Demokrat programme package pending; symbolic renderer path verified by actual reciprocal anchors",
+  "accepted_logs": {
+    "finalcheck1": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-checks/finalcheck1.log",
+    "pipeline1-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-checks/pipeline1-load.log",
+    "pipeline1-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-checks/pipeline1-audit.log",
+    "finalcheck2": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-checks/finalcheck2.log",
+    "pipeline2-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-checks/pipeline2-load.log",
+    "pipeline2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-checks/pipeline2-audit.log",
+    "gsd-03-12-phase2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-checks/gsd-03-12-phase2-audit.log"
+  }
+}
