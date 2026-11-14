@@ -6670,6 +6670,50 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Üç gerçek eksik kaydı ve arama girişimi belge edinim durumudur; üç partiye üretime ilişkin herhangi bir olumlu veya olumsuz görüş atfetmez. Tarihsel BDP kopyasının hükmü kendi tarihsel rolünde ayrıca yer alır.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"0314-dem-tibbi-uretim-program-missing\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"0314-dbp-tibbi-uretim-program-missing\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"0314-yeniyol-tibbi-uretim-program-missing\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-toplumsal-mucadele-synthesis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:44:52.964864+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP pasajı sayılan grupların mücadelelerinin sahiplenilmesini ve halkın hak mücadelelerinin örgütlenmesini; DEM pasajı toplumsal mücadele hareketlerinin tarihsel birikimini açıklar. İki farklı tüzük ifadesine aynı örgütsel prosedür veya fiilî katılım sonucu atfedilmedi.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-mucadele-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-siyasi-yasam-p1\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-mucadele-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-mucadele-dem-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-toplumsal-mucadele-synthesis-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:44:52.964864+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti pasajı üyelerin siyasal eylemini toplum hizmeti olarak tanımlar; TİP pasajı parti ve üyelerinin sayılan toplumsal mücadelelerle ilişkisini düzenler. Birincisinden ayrıca belirli hareketlere katılım usulü çıkarılmadı.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-tenth-parti-toplumsal-mucadele-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-tenth-parti-toplumsal-mucadele-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-mucadele-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-siyasi-yasam-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-toplumsal-mucadele-synthesis-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:44:52.964864+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Saadet’in erişilen tüzüğünün 1–67. maddeleri ve 2020 eki, Demokrat’ın arşiv nüshasının 1–88. maddeleri ve geçici maddesi özel katılım usulü sorusuyla incelendi. Genel amaç, siyasi çalışma veya başka kaynaklarda uygulama olmadığı sonucu çıkarılmaz.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-scope-025-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-025\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-scope-27-row\",\"support\":\"scope\",\"refs\":[\"0312-demokrat-2-scope-27\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-toplumsal-mucadele-synthesis-4",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:44:52.964864+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belge açığı ve arama girişimi yalnız tüzüğün edinim durumunu gösterir; toplumsal mücadelelere katılım veya görüş bulunmadığını göstermez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-toplumsal-mucadele-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
     }
   ]
 }
