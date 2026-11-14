@@ -405,6 +405,90 @@ def load_comparison(work, payload, inventory=None):
         os.replace(temp / 'records.sqlite3', work / 'records.sqlite3')
 
 
+def comparison_reconcile(work, taxonomy, inventory, backfill):
+    """Apply explicitly reviewed row lineage and backfill in one workspace swap."""
+    work = Path(work)
+    assert_lock(work)
+    if not all(isinstance(x, dict) for x in (taxonomy, inventory, backfill)):
+        raise ValueError('Karşılaştırma eşleme paketleri geçersiz')
+    version = taxonomy.get('taxonomy_version')
+    if type(version) is not int or backfill.get('taxonomy_version') != version:
+        raise ValueError('Eşleme ve geri tarama sözlüğü uyuşmuyor')
+    taxonomy_records = taxonomy.get('records')
+    backfill_records = backfill.get('records')
+    mappings = taxonomy.get('row_mappings')
+    superseded = taxonomy.get('superseded_rows', [])
+    if not all(isinstance(x, list) for x in (taxonomy_records, backfill_records, mappings, superseded)):
+        raise ValueError('Açık eşleme ve kayıt listeleri gerekli')
+    db = connect_readonly(work / 'records.sqlite3')
+    try:
+        contract = db.execute('SELECT * FROM comparison_contract').fetchone()
+        if not contract or version != contract['taxonomy_version'] + 1:
+            raise ValueError('Yeni sözlük önceki sürümden bir sonraki sürüm olmalı')
+        old_version = contract['taxonomy_version']
+        parties = {r['party_id'] for r in db.execute('SELECT party_id FROM scope_party')}
+        old_topics = {r['topic_id']: dict(r) for r in db.execute('SELECT * FROM comparison_topic WHERE taxonomy_version=?', (old_version,))}
+        old_rows = {r['id']: dict(r) for r in db.execute('SELECT * FROM comparison_row WHERE taxonomy_version=?', (old_version,))}
+        new_topics = {e['values']['topic_id']: e['values'] for e in taxonomy_records if e.get('kind') == 'comparison_topic'}
+        if not new_topics or any(t.get('taxonomy_version') != version for t in new_topics.values()):
+            raise ValueError('Yeni sürümün tam konu sözlüğü gerekli')
+        direct_rows = [e['values'] for e in backfill_records if e.get('kind') == 'comparison_row']
+        # Check reviewed coverage before constructing or writing any candidate.
+        compare_keys = ('domain', 'parent_topic_id', 'definition', 'applicable_levels', 'basis_kind')
+        changed = {tid for tid, topic in new_topics.items() if tid not in old_topics or any(topic.get(k) != old_topics[tid].get(k) for k in compare_keys)}
+        covered = {tid: set() for tid in changed}
+        for row in direct_rows:
+            if row.get('topic_id') in covered and row.get('state') in ('evidence', 'no_explicit_statement', 'document_missing'):
+                covered[row['topic_id']].add(row.get('party_id'))
+        for mapping in mappings:
+            source = old_rows.get(mapping.get('old_row_id')) if isinstance(mapping, dict) else None
+            if source and mapping.get('topic_id') in covered and source['state'] != 'not_researched':
+                covered[mapping['topic_id']].add(source['party_id'])
+        if len(parties) != 9 or any(found != parties for found in covered.values()):
+            raise ValueError('Yeni veya değişen her konu için incelenmiş dokuz parti gerekli')
+        records = list(taxonomy_records)
+        used = set()
+        for mapping in mappings:
+            if not isinstance(mapping, dict) or set(mapping) != {'old_row_id','new_row_id','topic_id','reason','fields','changes'} or not mapping['reason']:
+                raise ValueError('Açık kaynaklı satır eşlemesi gerekli')
+            source = old_rows.get(mapping['old_row_id'])
+            if not source or source['id'] in used or source['state'] == 'not_researched' or mapping['topic_id'] not in new_topics:
+                raise ValueError('Eski satır eşlemesi geçersiz')
+            used.add(source['id'])
+            row = dict(source, id=mapping['new_row_id'], topic_id=mapping['topic_id'], taxonomy_version=version,
+                       selection_reason=source['selection_reason'] + ' Eşleme: ' + mapping['reason'] + ' [' + source['id'] + ']')
+            records.append({'kind': 'comparison_row', 'values': row})
+            for table, key in (('comparison_field','fields'), ('comparison_change','changes')):
+                originals = {r['id']: dict(r) for r in db.execute(f'SELECT * FROM {table} WHERE row_id=?', (source['id'],))}
+                replacements = mapping[key]
+                if not isinstance(replacements, list) or any(not isinstance(x, dict) or set(x) != {'old_id','new_id'} for x in replacements) or {x['old_id'] for x in replacements} != set(originals) or len(replacements) != len(originals):
+                    raise ValueError('Satırın bütün alan ve değişiklik eşlemeleri gerekli')
+                for item in replacements:
+                    value = dict(originals[item['old_id']], id=item['new_id'], row_id=row['id'])
+                    records.append({'kind': table, 'values': value})
+        direct_by_id = {r.get('id'): r for r in direct_rows}
+        for item in superseded:
+            if not isinstance(item, dict) or set(item) != {'old_row_id','replacement_ids','reason'} or not item['reason'] or not isinstance(item['replacement_ids'], list) or not item['replacement_ids']:
+                raise ValueError('Yerine geçen satır ve gerekçe gerekli')
+            source = old_rows.get(item['old_row_id'])
+            if not source or source['id'] in used or any(rid not in direct_by_id or direct_by_id[rid].get('party_id') != source['party_id'] for rid in item['replacement_ids']):
+                raise ValueError('Geçersiz satır değişimi')
+            used.add(source['id'])
+        if used != set(old_rows):
+            raise ValueError('Bütün seçili eski satırların açık lineage eşlemesi gerekli')
+    finally:
+        db.close()
+    records.extend(comparison_inventory_records(inventory, version))
+    records.extend(backfill_records)
+    payload = dict(backfill, records=records)
+    with tempfile.TemporaryDirectory(dir=work) as tmp:
+        candidate = Path(tmp)
+        shutil.copyfile(work / 'records.sqlite3', candidate / 'records.sqlite3')
+        shutil.copyfile(work / 'workspace.json', candidate / 'workspace.json')
+        load_comparison(candidate, payload)
+        os.replace(candidate / 'records.sqlite3', work / 'records.sqlite3')
+
+
 def check_comparison_input(path, inventory_path=None):
     payload = json.loads(Path(path).read_text(encoding='utf-8'))
     inventory = json.loads(Path(inventory_path).read_text(encoding='utf-8')) if inventory_path else None
@@ -1555,6 +1639,7 @@ def main():
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
     a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2','3')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','partial','complete'), default='complete')
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
+    cr = sub.add_parser('comparison-reconcile'); cr.add_argument('--workspace', required=True); cr.add_argument('--taxonomy', required=True); cr.add_argument('--inventory', required=True); cr.add_argument('--input', required=True)
     cc = sub.add_parser('comparison-check'); cc.add_argument('--input', required=True); cc.add_argument('--inventory')
     dl = sub.add_parser('dossier-load'); dl.add_argument('--workspace', required=True); dl.add_argument('--input', required=True)
     dc = sub.add_parser('dossier-check'); dc.add_argument('--input', required=True); dc.add_argument('--stage', choices=('tracer','complete'), default='complete')
@@ -1581,6 +1666,8 @@ def main():
     elif args.command == 'comparison-load':
         inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8')) if args.inventory else None
         load_comparison(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8')), inventory); print('COMPARISON_LOAD_OK')
+    elif args.command == 'comparison-reconcile':
+        comparison_reconcile(args.workspace, *(json.loads(Path(path).read_text(encoding='utf-8')) for path in (args.taxonomy, args.inventory, args.input))); print('COMPARISON_RECONCILE_OK')
     elif args.command == 'comparison-check':
         check_comparison_input(args.input, args.inventory); print('COMPARISON_INPUT_OK')
     elif args.command == 'dossier-load':

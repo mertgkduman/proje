@@ -13,6 +13,78 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_reconcile_rolls_back_after_complete_mapping_loader_failure(self):
+        source = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        original_data, original_load, original_export = arsiv.DATA, arsiv.load_comparison, arsiv.export_db
+        before_pointer = arsiv.current()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            work = root / 'work'
+            work.mkdir()
+            arsiv.DATA = root / 'data'
+            arsiv.DATA.mkdir()
+            try:
+                shutil.copyfile(source, work / 'records.sqlite3')
+                (work / 'workspace.json').write_text(json.dumps({'base': before_pointer, 'token': 'test-token'}))
+                (arsiv.DATA / '.write.lock').write_text(json.dumps({'token': 'test-token'}))
+                (arsiv.DATA / 'current.json').write_text(json.dumps({'release_id': before_pointer}))
+                db = arsiv.connect_readonly(work / 'records.sqlite3')
+                try:
+                    topics = [dict(r) for r in db.execute('SELECT * FROM comparison_topic WHERE taxonomy_version=2')]
+                    dictionary = [dict(r) for r in db.execute('SELECT * FROM topic WHERE taxonomy_version=2')]
+                    bases = [dict(r) for r in db.execute('SELECT * FROM topic_basis WHERE taxonomy_version=2')]
+                    rows = [dict(r) for r in db.execute('SELECT * FROM comparison_row WHERE taxonomy_version=2')]
+                    mappings = []
+                    for row in rows:
+                        fields = [{'old_id': r['id'], 'new_id': 'v3-' + r['id']} for r in db.execute('SELECT id FROM comparison_field WHERE row_id=?', (row['id'],))]
+                        changes = [{'old_id': r['id'], 'new_id': 'v3-' + r['id']} for r in db.execute('SELECT id FROM comparison_change WHERE row_id=?', (row['id'],))]
+                        mappings.append(dict(old_row_id=row['id'], new_row_id='v3-' + row['id'], topic_id=row['topic_id'], reason='Test eşlemesi', fields=fields, changes=changes))
+                finally:
+                    db.close()
+                for topic in topics:
+                    topic['taxonomy_version'] = 3
+                topics[0]['definition'] += ' Test kapsamı.'
+                taxonomy = dict(taxonomy_version=3, records=[dict(kind='comparison_topic', values=t) for t in topics], row_mappings=mappings)
+                section = json.loads((Path(__file__).resolve().parents[1] / 'data/comparisons/03-source-inventory.json').read_text())['sections'][0]
+                inventory = dict(taxonomy_version=3, status='complete', sections=[section])
+                backfill = dict(contract_version=1, taxonomy_version=3, stage='partial', records=[])
+                before = arsiv.sha(work / 'records.sqlite3')
+                captured = []
+                def fail_after_mapping(candidate, payload):
+                    captured.extend(r for r in payload['records'] if r['kind'] == 'comparison_row')
+                    raise RuntimeError('injected loader failure')
+                arsiv.load_comparison = fail_after_mapping
+                with self.assertRaisesRegex(RuntimeError, 'injected loader failure'):
+                    arsiv.comparison_reconcile(work, taxonomy, inventory, backfill)
+                self.assertEqual(len(captured), len(rows))
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
+                self.assertEqual(arsiv.current(), before_pointer)
+                # Exercise the actual transactional loader; source-byte export is
+                # independently checked by the integration publication audit.
+                for item in dictionary + bases:
+                    item['taxonomy_version'] = 3
+                taxonomy['records'] = ([dict(kind='topic', values=t) for t in dictionary] +
+                                       [dict(kind='topic_basis', values=b) for b in bases] + taxonomy['records'])
+                arsiv.load_comparison = original_load
+                arsiv.export_db = lambda *args, **kwargs: {}
+                arsiv.comparison_reconcile(work, taxonomy, inventory, backfill)
+                db = arsiv.connect_readonly(work / 'records.sqlite3')
+                try:
+                    self.assertEqual(db.execute('SELECT taxonomy_version FROM comparison_contract').fetchone()[0], 3)
+                    self.assertEqual(db.execute('SELECT count(*) FROM comparison_row WHERE taxonomy_version=2').fetchone()[0], len(rows))
+                    self.assertEqual(db.execute('SELECT count(*) FROM comparison_row WHERE taxonomy_version=3').fetchone()[0], len(rows))
+                    for state in ('evidence', 'no_explicit_statement', 'document_missing'):
+                        old = next(row for row in rows if row['state'] == state)
+                        new = dict(db.execute('SELECT * FROM comparison_row WHERE id=?', ('v3-' + old['id'],)).fetchone())
+                        for key in ('state', 'party_id', 'version_id', 'scope_id', 'missing_id', 'source_role'):
+                            self.assertEqual(new[key], old[key], (state, key))
+                    self.assertEqual(db.execute('PRAGMA foreign_key_check').fetchall(), [])
+                finally:
+                    db.close()
+                self.assertEqual(arsiv.current(), before_pointer)
+            finally:
+                arsiv.DATA, arsiv.load_comparison, arsiv.export_db = original_data, original_load, original_export
+
     def test_reconcile_rejects_one_party_new_topic_without_changing_workspace(self):
         reconcile = getattr(arsiv, 'comparison_reconcile', None)
         self.assertTrue(callable(reconcile), 'Atomic comparison reconciliation is required')
