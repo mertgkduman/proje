@@ -1,0 +1,165 @@
+{
+  "contract_version": 2,
+  "taxonomy_version": 3,
+  "stage": "partial",
+  "status": "in_progress",
+  "note": "Sosyal güvenlik için kaynakçı tarafından incelenmiş başlangıç cümleleri; seçili sözlük ve tüm konu sentezleri tamamlanmadan yayıma hazır değildir.",
+  "records": [
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-sosyal-guvenlik-1",
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti işsizlik sigortasından yararlanma koşullarını iyileştirmeyi ve ödeneği artırmayı, tarihsel BDP programı ise yararlanma koşullarını yeniden düzenlemeyi ve kapsamı genişletmeyi önerir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-1",
+        "passage_id": "0303-epm-program-detail-sosyal-guvenlik-p6"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-1",
+        "passage_id": "0308-dbp-program-029-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-guvenlik-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti pasajı koşulların iyileştirilmesi ve ödeneğin artırılmasını; tarihsel BDP pasajı koşulların yeniden düzenlenmesi ve kapsamın genişletilmesini söylüyor. Tarihsel kopya güncel DBP programı olarak sunulmuyor.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-program-detail-sosyal-guvenlik-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-detail-sosyal-guvenlik-p6\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-program-029-0-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-program-029-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-sosyal-guvenlik-2",
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 3,
+        "text": "EMEP devletçe desteklenen sigortaların işçilerin seçtiği ve sendikaların denetlediği organlarca yönetilmesini; İYİ Parti sağlık sigortası kuruluşu ile sosyal güvenlik kuruluşlarının ayrı kurumlar olmasını önerir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-2",
+        "passage_id": "0309-emep-program-040-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-2",
+        "passage_id": "0306-iyi-program-sosyal-guvenlik-instrument-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-guvenlik-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"EMEP pasajındaki işçi seçimi ve sendika denetimi sigortaların yönetimine, İYİ pasajındaki ayrım ise sağlık sigortası ile sosyal güvenlik kuruluşlarının kurumsal yapısına ilişkindir.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-program-040-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-program-040-0-passage\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-program-sosyal-guvenlik-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-program-sosyal-guvenlik-instrument-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-sosyal-guvenlik-3",
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 3,
+        "text": "Demokrat Parti düşük ücretli ve niteliği az işlerde çalışanlar ile düşük gelirli tarım çalışanlarına asgari gelir sağlayan sosyal sigorta programları önerirken Saadet sosyal güvenlik sistemi içinde tüm yaşlıları kapsayan bakım güvencesi önerir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-3",
+        "passage_id": "0313-demokrat-069-sosyal-guvenlik-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-3",
+        "passage_id": "0311-saadet-p2-135-sosyal-guvenlik-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-guvenlik-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Demokrat pasajında yararlanıcı düşük ücretli ve niteliği az işlerde veya düşük gelirli tarım işlerinde çalışandır; Saadet pasajındaki araç bütün yaşlıları kapsayan bakım güvencesidir. Bu kapsamlar eşitlenmiyor.\",\"sides\":[{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0313-demokrat-sosyal-guvenlik\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-069-sosyal-guvenlik-p\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0311-saadet-sosyal-guvenlik\",\"support\":\"passage\",\"refs\":[\"0311-saadet-p2-135-sosyal-guvenlik-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-sosyal-guvenlik-4",
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 3,
+        "text": "TİP tarif ettiği sosyalist toplumda çalışamayacak durumda olanların insanca yaşamını güvenceye alırken DEM kongre kararında kriz nedeniyle işsiz veya güvencesiz kalan geniş kesimleri ekonomik güvenceye almayı hedefler."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-4",
+        "passage_id": "0304-tip-program-calisamayan-q"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-sosyal-guvenlik-4",
+        "passage_id": "0305-dem-program-sosyal-guvence-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-guvenlik-4",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP pasajı sosyalist toplum koşulunda çalışamayacak durumdakilerin yaşamından söz eder; DEM kongre eki ekonomik ve sosyal krizin işsiz ve güvencesiz bıraktığı kesimlere yöneliktir. DEM eki bağımsız güncel program yerine geçirilmez.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-program-calisamayan-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-program-calisamayan-q\"]},{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-sosyal-guvence-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-program-sosyal-guvence-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-sosyal-guvenlik-5",
+        "topic_id": "sosyal-guvenlik",
+        "taxonomy_version": 3,
+        "text": "DEM, DBP ve Yeni Yol için bağımsız güncel tam programlar bu araştırmada elde edilememiştir; DEM kongre kararı ve tarihsel BDP kopyaları yukarıda kendi belge türleriyle kullanılmıştır."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-sosyal-guvenlik-5",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:31:50+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Üç eksik kaydı kendi parti ve Program arama girişimlerine bağlıdır; DEM ekinin ve BDP tarihsel kopyasının kullanılması bağımsız güncel programın elde edildiği anlamına gelmez.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-sosyal-guvenlik\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-sosyal-guvenlik\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-sosyal-guvenlik-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
+    }
+  ]
+}
