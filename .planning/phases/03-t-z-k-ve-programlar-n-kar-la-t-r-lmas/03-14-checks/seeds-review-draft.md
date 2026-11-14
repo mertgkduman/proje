@@ -21,8 +21,18 @@ partilerin incelenmesini veya yeni konu kapsamının kapanmasını iddia etmez.
   desteklenmesi önerilir. Özgün PDF indeksi 18 / basılı s. 19 okundu.
 - Demokrat `0313-demokrat-130-tarim-hayvancilik-p`: Ulusal Tohum Güvenliği
   Bankası önerilir. Özgün PDF indeksi 38 / basılı s. 45 okundu.
+- Yeni Parti'nin özgün programındaki “Tarım ve Kırsal Kalkınma” bölümü okundu:
+  planlama, destekler, kooperatifler ve dijital tarım yer alır; bu bölümde
+  genotip saklama veya tohum üretim merkezi açıkça belirtilmez. Bu sonuç yalnız
+  okunan bölüm için geçerlidir.
+- İYİ'nin özgün programının tarım bölümünde çiftçilere tohumluk dahil girdi
+  reçeteleri verilmesi ve Ar-Ge enstitülerinde ülkeye özgü bitki çeşitlerinin
+  geliştirilmesi önerilir. Bu iki araç, TİP'in genotip saklama ve tohum üretim
+  merkezi önerisiyle kendiliğinden özdeş değildir.
+- Yeni Yol'un bağımsız programı mevcut belgelenmiş araştırmada bulunamamıştır;
+  başka bir partinin programı bu açığın yerine kullanılmaz.
 
 Bu araçlar aynı mekanizma sayılmamalı: genotip saklama, üretim merkezi,
-yerel/sertifikalı tohum, üretici işletmesi, GDO yasağı ve tohum bankası ayrı
-kapsamlardır. Yeni Parti, İYİ ve Yeni Yol'un konuya özgü incelemesi ile bütün
-kaynak bölümlerinin çapraz kontrolü henüz tamamlanmadı.
+yerel/sertifikalı tohum, üretici işletmesi, GDO yasağı, tohum bankası ve girdi
+reçetesi ayrı kapsamlardır. Bütün kaynak bölümlerinin çapraz kontrolü henüz
+tamamlanmadı; özellikle Yeni Parti için dar bölüm incelemesi genellenmemelidir.
