@@ -983,6 +983,28 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Yeni Yol için ilgili tüzüğün bulunamadığı kayıt ve ona bağlı gerçek arama girişimi kullanılır; belge açığından parti tutumu çıkarılmaz.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-uye-kayit-yeri-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-ic-tartisma-elestiri-dem-tam",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:49:29+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM'in PDF Madde 9 pasajı, kendi organında çözülemediği düşünülen konular ve eleştirilerle sınırlı üst organlara iletme ve yanıt isteme hakkını açıklar; TİP pasajı bağlı organlarda tartışma hakkını belirtir.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-uye-elestiri-dem-row\",\"support\":\"passage\",\"refs\":[\"0314-dem-elestiri-tam-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-ic-tartisma-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-ic-tartisma-p2\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-uye-siyasal-katilim-dbp-egitim",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T18:49:29+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DBP Madde 14 eğitim ve etkinliklere özgü katılma ve talep hakkını, Yeni Parti pasajı amaç ve ilkeler çerçevesinde siyasal çalışmalara katılım hakkını gösterir; organ adaylığı genel katılım yerine kullanılmaz.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-074-row\",\"support\":\"passage\",\"refs\":[\"0314-dbp-uye-etkinlik-p\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-uye-siyasal-katilim-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-uye-siyasal-katilim-p\"]}]}"
+      }
     }
   ]
 }

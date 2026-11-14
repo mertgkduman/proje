@@ -17,12 +17,15 @@ belge türü ve kayıtlı dar kapsam taraf eklenmeden ayrıca incelenmelidir.
 | Makroekonomik politika | EMEP, Saadet |
 | Sosyal hizmet | Demokrat, EMEP, TİP |
 | Toplumsal cinsiyet | Demokrat, EMEP, Saadet, TİP |
-| İç tartışma ve eleştiri | DEM: seçili pasaj kapsamı eksik |
 | Parti içi itiraz | DEM ve İYİ: görülen satırlar üyelik reddiyle ilgili, bu konuya otomatik taşınamaz |
-| Üyenin siyasal katılımı | DBP: görülen satır yalnız organ görevi, doğrudan üyelik hakkı sayılmaz |
 
 İYİ HSK ve sendika pasajlarında yüklem veya kapsamın tamamı kısa alıntı
 parçasında yer almadığından ilgili iki önerilen karşılaştırma şimdilik
 eklenmedi; daha geniş özgün pasaj ve konu alanı bağlantısı gerekir. Yazılmış
 öteki konu ve cümleler de son seçili taksonomiye yüklenmeden yeniden
 denetlenmelidir. Hiçbir satır kullanıcıya karşıt tutum olarak sunulmaz.
+
+DEM'in eleştirilerin iletilmesi hakkı ve DBP'nin eğitim/etkinlik katılımı,
+özgün kaynakta daha geniş veya doğrudan pasaj okunup yeni alanla bağlandığı
+için yazılan senteze eklendi; önceki kısa ve organ adaylığına ilişkin kayıtlar
+silinmedi.
