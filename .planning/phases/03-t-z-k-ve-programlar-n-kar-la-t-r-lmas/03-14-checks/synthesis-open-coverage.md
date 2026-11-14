@@ -111,3 +111,13 @@ kendi gerçek pasajlarını ve belge açıklarını okuyarak altı özgül iki-t
 karşılaştırma ile altı Yeni Yol belge durumu cümlesi yazdı. Seçim ile adaylık,
 hesabı inceleme ile yalnız sunma gibi farklı görevler birbirine aktarılmadı;
 12/12 iddia bağı doğrulandı.
+
+Charter2 grubunda 20 konu için 60 bağımsız kaynakçı cümlesi eklendi. On beş
+geniş bağlam ilgili alanlara bağlandı: İYİ kota değişikliği ve yetersiz aday
+istisnaları, DEM ve EMEP toplantı eşikleri, İYİ 400 üyeden az ilçe istisnası
+ile Saadet belde üye sayısını artırma olanağı özgün sınırlarında korunur. TİP
+2022 tüzük PDF'sinin metin katmanı bozuk adaylık maddesi, indeks 8/basılı 7
+özgün görüntüden (`gsd-0314-tip2022-index8.png`) okunup ayrıca görsel pasaj
+kaydıyla bağlandı; HTML ve PDF arasında tarih sırası çıkarılmadı. EMEP mali
+yetkide özgün Genel Kongre başlığı ile ilgili bent ayrı kaynak parçalarıdır.
+60/60 iddia ve tüm pakette 438/438 iddia bağı doğrulandı.
