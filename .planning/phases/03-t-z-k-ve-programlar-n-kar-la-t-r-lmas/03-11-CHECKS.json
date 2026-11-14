@@ -1,0 +1,151 @@
+{
+  "plan": "03-11",
+  "status": "passed",
+  "checked_at": "2026-11-14T10:29:29.919770+00:00",
+  "first_release": "3506b12dee39440ca233a251979215be",
+  "final_release": "945f32db93854c19bd1dd1729ffcd691",
+  "code_unchanged_since": "7e49d3d",
+  "test_baselines": [
+    "03-04-checks/result.json:124on45c7c40",
+    "03-08-CHECKS.json:12affected and renderer audits on7e49d3d"
+  ],
+  "packages": {
+    "1": {
+      "sha256": "7c47fb09f848edecbe5fb9887bf26640fccf8aed84466166f10196ae08a07187",
+      "rows": 69,
+      "report": "REPORT_LINK_CHECK_OK 69 rows in both views; source anchors and findings checked"
+    },
+    "2": {
+      "sha256": "148514c4d4c6baf93b36b2e9ebf27d5a2d40a23ef3d3847616f4cdba792cb45b",
+      "rows": 66,
+      "report": "REPORT_LINK_CHECK_OK 66 rows in both views; source anchors and findings checked"
+    }
+  },
+  "topics": 135,
+  "source_evidence_topics": 95,
+  "narrow_absence_topics": 40,
+  "fields": 279,
+  "semantic_reviews": 319,
+  "preserved_charter_rows": 399,
+  "all_prior_findings_unchanged": true,
+  "original_source_sha256_and_metadata_preserved": 11,
+  "same_content_programme_aliases": true,
+  "phase2_delivery_preserved": true,
+  "not_researched_saadet": 0,
+  "income_semantic_spot_check": "Birth/work/tax conditions explicit; social-state income principle does not broaden the conditional instrument; no no-income or unconditional-universal inference.",
+  "source_backfill_candidates": [
+    {
+      "topic": "Yerel ekonomik gelişme programı",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-08-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Yerel kaynaklar ve bölgesel gelişme aracı; yerel demokratik katılımla özdeşleştirilmez."
+    },
+    {
+      "topic": "Temel Vatandaşlık Geliri kapsamı",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-01-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Doğum, çalışma ve vergi ödeme koşulları; yalnız gelirsizlik tanımına veya koşulsuz evrensel ödemeye eşitlenmez."
+    },
+    {
+      "topic": "Eğitim sisteminde zorunluluk ve kademelendirme",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-02-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Zorunlu eğitim yerine kademeli eğitim sistemi önerisi; eğitim hizmetlerine erişimden ayrı sorudur."
+    },
+    {
+      "topic": "Öğretmen atamasında mülakat",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-03-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Öğretmen alımında mülakatın kaldırılması; öğrenci erişimine ilişkin bir sonuç değildir."
+    },
+    {
+      "topic": "Sağlıkta performans sistemi",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-04-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Sağlık çalışanlarının performans düzeninin adalet için yeniden düzenlenmesi; ücretsiz hizmet anlamına gelmez."
+    },
+    {
+      "topic": "Tıbbi cihaz, ilaç ve aşı üretimi",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-05-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Dışa bağımlılığın kaldırılması hedefi; ücretsiz ilaç önerisi değildir."
+    },
+    {
+      "topic": "Enerjide kaynak çeşitlendirme ve yenilenebilir kaynaklar",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-06-p",
+        "0311-saadet-backfill-11-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Yenilenebilir kaynaklarda ekolojik ve toplumsal hassasiyet; fosilden çıkış tarihi veya net sıfır değildir. Yenilenebilir kaynakları değerlendirme önerisi; fosilden çıkış tarihi veya net sıfır değildir."
+    },
+    {
+      "topic": "Kıdem tazminatının korunması",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-07-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "İşten çıkarma veya isteğe bağlı ayrılma durumunda birikmiş kıdem tazminatı güvencesi."
+    },
+    {
+      "topic": "Öğrenci merkezli alternatif okul modelleri",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-09-p",
+        "0311-saadet-backfill-10-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Eğitim modeli; erişimin ücretlendirilmesiyle eşitlenmez. Aynı öneri 28. sayfada da tekrarlanır. Eğitim modeli; erişimin ücretlendirilmesiyle eşitlenmez. Aynı öneri 27. sayfada da tekrarlanır."
+    },
+    {
+      "topic": "Eğitim müfredatının içeriği ve düzenlenmesi",
+      "source_version": "0209-saadet-current-program-v1",
+      "passage_ids": [
+        "0311-saadet-backfill-12-p",
+        "0311-saadet-backfill-13-p"
+      ],
+      "backfill_plan": "03-14",
+      "scope": "Program müfredatın toplumun değerleriyle uyumlu ve bilimsel bir niteliğe kavuşturulmasını önerir. Temel eğitim müfredatının ihtiyaç ve öğrenci kazanımlarına göre yeniden oluşturulması ayrıca önerilir."
+    }
+  ],
+  "known_presentation_limits": [
+    "No-explicit-statement rows forbid fields and renderer18 omits scope/context in both views; preserve real absence state, no fabricated positive field/organ",
+    "Unrepresented principle/target/tool type is not automatically documentary absence; slot visibility and scoped review tracked03-15/16",
+    "Cross-document charter history explicit reader pairing tracked03-15/16"
+  ],
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "upcoming_key_links": "Own Demokrat package pending; symbolic renderer wiring verified through real reciprocal anchors",
+  "accepted_logs": {
+    "program1-final-check": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-checks/program1-final-check.log",
+    "program1-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-checks/program1-load.log",
+    "program1-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-checks/program1-audit.log",
+    "program2-final-check": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-checks/program2-final-check.log",
+    "program2-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-checks/program2-load.log",
+    "program2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-checks/program2-audit.log",
+    "program2-phase2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-checks/program2-phase2-audit.log"
+  }
+}

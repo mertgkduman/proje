@@ -45,7 +45,7 @@ status: complete
 - `0209-saadet-current-program-v1` özgün PDF'sinin 70 sayfası okundu; SHA-256 `6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c`. Kapaktaki 3 Kasım 2019 tarihi bütün metnin yürürlük veya kabul tarihi olarak sunulmaz. Önceki aynı içerikli farklı adresin tüm sürüm geçmişi olduğu varsayılmaz.
 - 80 kaynak envanteri bölümü ve 2.411 benzersiz sayfa/satır kimliği iki görevin gerçek bölüm sahipliğiyle kaydedildi. On çapraz bölüm inceleme kuyruğu ele alındı. 135 konunun 95'i kaynaklı bulgu, 40'ı kendi dar kapsamına bağlı açık ifade bulunmaması kaydıdır. 279 alan (56 ilke, 24 hedef, 199 araç), 334 pasaj ve 319 gerekçeli semantik karar vardır. Kararlar ajan incelemesidir; bağımsız insan kabulü değildir.
 - İlke, hedef ve araçlar kaynakları ve belirtilen koşullarıyla ayrıldı. Sayfa 41'deki Temel Vatandaşlık Geliri, ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar için öneridir; sayfa 38'deki genel sosyal devlet ilkesi ödeme kapsamını değiştirmez. Gelirsizlik şartı veya koşulsuz evrensel kapsam eklenmedi.
-- Dar erişim sorularıyla ilgili olmayan müfredat, öğretmen, sağlık personeli ve benzeri gerçek politika ifadeleri olumlu erişim yanıtına dönüştürülmedi. Ortak sözlükte karşılığı bulunmayan gerçek kaynaklı araçlar, kapsam farklarıyla birlikte 03-14 geri taraması için on somut aday olarak semantik dosyada korunur.
+- Dar erişim sorularıyla ilgili olmayan müfredat, öğretmen, sağlık personeli ve benzeri gerçek politika ifadeleri olumlu erişim yanıtına dönüştürülmedi. Ortak sözlükte karşılığı bulunmayan gerçek kaynaklı araçlar, kapsam farklarıyla birlikte 03-14 geri taraması için on somut aday olarak iki program paketinin `backfill_candidates` alanlarında korunur.
 - Birinci yerel sürüm `3506b12dee39440ca233a251979215be`, son yerel sürüm `945f32db93854c19bd1dd1729ffcd691` olup raporlar bu sürümlerin `index.html` dosyalarındadır. Önceki `4926099ac08b40df96fd4c304064023b` sürümü, kaynak PDF ve Saadet tüzük verileri korundu. Kamuya yayın yapılmadı.
 
 ## Doğrulama
@@ -65,7 +65,7 @@ Program için ayrı semantik dosya kullanıldı; mevcut tüzük kararları korun
 
 ## 03-14, 03-15 ve 03-16 aktarımı
 
-- 03-14, semantik dosyadaki on kaynaklı adayın ortak sözlük kapsamını ve ilgili konu eşlemelerini değerlendirmelidir.
+- 03-14, iki program paketinin `backfill_candidates` alanlarındaki on kaynaklı adayın ortak sözlük kapsamını ve ilgili konu eşlemelerini değerlendirmelidir.
 - 03-15/03-16: Mevcut renderer 18, tek kanonik `no_explicit_statement` satırının kapsamını ve eşlik eden bağlam pasajını iki ana görünümde göstermiyor; veritabanındaki kapsam ve konu inceleme kaydı bu gösterim sınırını ortadan kaldırmaz. Ayrı ilke/hedef/araç alanlarından bazıları için ayrıca açık ifade bulunmaması da mevcut görünümde ayrı gösterilmez. Bu sınırlar sonraki sunum ve kapsam çalışmasına taşınır; bağlam bir olumlu politika yanıtı değildir.
 - Kısmi Faz 3 denetimi, fazın veya bütün gereksinimlerin tamamlandığı anlamına gelmez.
 
