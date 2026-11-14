@@ -37,6 +37,11 @@ yokluk sonucu çıkarılmamıştır.
   kadar 4.366 karakterlik boşluk-normalleştirilmiş metin aynı bulundu. Bu
   kapsam, bütün tarihsel program için yokluk sonucu değildir; kadın bölümünün
   önceki kısmı ve ilgili ekonomi bölümleri ayrıca gözden geçirilecektir.
+  Blogspot nüshasının ekonomi bölümündeki “Ekonomik Sorunlar” ile “İşsizlik
+  ile Mücadele ve İstihdam” ayrıca okundu: düşük ücret, kadınlara ayrımcılık,
+  iş güvencesi ve sendikal haklar ele alınır; bu iki alt bölümde eşit işe eşit
+  ücret kuralı açıkça saptanmadı. Bu da yalnız belirtilen bölümler için bir
+  incelemedir; genel ücret adaleti ifadesi aranan özgül kural sayılmadı.
 
 Kaynaklar: yukarıdaki pasaj kimlikleri seçili kapalı snapshot'ta belge sürümü,
 özgün bayt ve arşiv konumuna bağlıdır. Saadet özgün PDF SHA-256
