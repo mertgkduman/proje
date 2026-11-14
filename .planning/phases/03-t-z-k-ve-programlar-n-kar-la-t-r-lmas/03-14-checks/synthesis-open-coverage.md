@@ -121,3 +121,11 @@ ile Saadet belde üye sayısını artırma olanağı özgün sınırlarında kor
 kaydıyla bağlandı; HTML ve PDF arasında tarih sırası çıkarılmadı. EMEP mali
 yetkide özgün Genel Kongre başlığı ile ilgili bent ayrı kaynak parçalarıdır.
 60/60 iddia ve tüm pakette 438/438 iddia bağı doğrulandı.
+
+Charter4 grubunda 20 konu için 40 bağımsız kaynakçı cümlesi ve 14 gerçek
+geniş bağlam eklendi. İYİ'nin seçimli olağanüstü kongre talebindeki üçte bir,
+45 gün ve belirli gündem; DEM görevden alma sonrası 45 gün ve yeni delegeler
+yoksa eski delegeler; EMEP GYK üyesi ihracındaki ayrı üçte iki usulü genel
+kurallarla karıştırılmadı. DBP il kongresi ile EMEP genel kongresi başlıkları,
+HTML işaretlemesi nedeniyle kendi ilgili bentleriyle ayrı kaynak parçaları
+olarak bağlandı. 40/40 iddia bağı doğrulandı.
