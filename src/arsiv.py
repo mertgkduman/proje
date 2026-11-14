@@ -629,6 +629,8 @@ def validate_comparisons(data):
             valid_attempts = {'Bulunamadı':('search','no_result'), 'Erişilemedi':('access','failure'), 'Doğrulanamadı':('verification','inconclusive')}
             if not m or m['party_id'] != row['party_id'] or not m['reason'] or not a or any(a[k] != m[k] for k in ('party_id','heading','topic_id')) or valid_attempts.get(m['status']) != (a['type'],a['result']):
                 raise ValueError('Belge eksikliği girişimli eksik kaydı gerektirir')
+            if row['taxonomy_version'] >= 3 and m['heading'] != {'charter': 'Tüzük', 'program': 'Program'}.get(row['source_role']):
+                raise ValueError('Belge açığı aynı türde kaynak aramasına bağlanmalı')
         if row['state'] == 'not_researched' and any(row[k] for k in ('version_id','scope_id','missing_id')):
             raise ValueError('İncelenmemiş kayıt belge sonucu içeremez')
         for field in fields:

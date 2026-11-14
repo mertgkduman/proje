@@ -482,6 +482,22 @@ class ComparisonContentTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             arsiv.validate_comparisons(data)
 
+    def test_missing_charter_cannot_use_a_missing_program_attempt(self):
+        data = test_comparisons.ComparisonReleaseTest.comparison_data()
+        topic = copy.deepcopy(data['comparison_topic'][0])
+        topic['taxonomy_version'] = 3
+        data['comparison_topic'].append(topic)
+        data['topic'].append(dict(id=topic['topic_id'], label='Merkez seçimi', taxonomy_version=3, valid_from='2026-11-13', status='verified', change_reason='Test sözlüğü'))
+        data['topic_basis'].append(dict(topic_id=topic['topic_id'], taxonomy_version=3, passage_id='03-iyi-sonra-uye', rationale='Tüzük hükmü', source_role='charter'))
+        row = copy.deepcopy(next(r for r in data['comparison_row'] if r['party_id'] == 'yeni-yol'))
+        row.update(id='v3-wrong-missing', taxonomy_version=3, state='document_missing', missing_id='0206-yeni-yol-missing-charter')
+        data['comparison_row'].append(row)
+        data['comparison_contract'][0].update(taxonomy_version=3, stage='partial')
+        self.assertTrue(arsiv.validate_comparisons(data))
+        row['missing_id'] = '0206-yeni-yol-missing-program'
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+
 
 if __name__ == '__main__':
     unittest.main()
