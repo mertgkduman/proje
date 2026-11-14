@@ -28,6 +28,8 @@ with tempfile.TemporaryDirectory(prefix='proje-0314-integration-', dir='/tmp') a
         dictionary = [dict(r) for r in db.execute('SELECT * FROM topic WHERE taxonomy_version=2')]
         bases = [dict(r) for r in db.execute('SELECT * FROM topic_basis WHERE taxonomy_version=2')]
         rows = [dict(r) for r in db.execute('SELECT * FROM comparison_row WHERE taxonomy_version=2')]
+        test_source_rows = [r for r in rows if r['topic_id'] == 'temel-yurttaslik-geliri']
+        test_fields = [dict(f) for row in test_source_rows for f in db.execute('SELECT * FROM comparison_field WHERE row_id=?', (row['id'],))]
         mappings = []
         for row in rows:
             fields = [{'old_id': r['id'], 'new_id': 'test-v3-' + r['id']} for r in db.execute('SELECT id FROM comparison_field WHERE row_id=?', (row['id'],))]
@@ -38,13 +40,26 @@ with tempfile.TemporaryDirectory(prefix='proje-0314-integration-', dir='/tmp') a
     for item in topics + dictionary + bases:
         item['taxonomy_version'] = 3
     topics[0]['definition'] += ' Yalıtılmış test kapsamı.'
+    source_topic = next(t for t in topics if t['topic_id'] == 'temel-yurttaslik-geliri')
+    source_dictionary = next(t for t in dictionary if t['id'] == 'temel-yurttaslik-geliri')
+    source_bases = [b for b in bases if b['topic_id'] == 'temel-yurttaslik-geliri']
+    test_topic = dict(source_topic, topic_id='test-nine-party-topic', order_index=99999, definition='Yalıtılmış test: dokuz parti konusu.')
+    test_dictionary = dict(source_dictionary, id='test-nine-party-topic', label='Yalıtılmış test konusu', change_reason='Yalıtılmış test')
+    test_bases = [dict(b, topic_id='test-nine-party-topic') for b in source_bases]
+    topics.append(test_topic)
+    dictionary.append(test_dictionary)
+    bases.extend(test_bases)
     taxonomy = dict(taxonomy_version=3, records=([dict(kind='topic', values=t) for t in dictionary] + [dict(kind='topic_basis', values=b) for b in bases] + [dict(kind='comparison_topic', values=t) for t in topics]), row_mappings=mappings)
     inventory = json.loads((Path.cwd() / 'data/comparisons/03-source-inventory.json').read_text(encoding='utf-8'))
     inventory['taxonomy_version'] = 3
-    payload = dict(contract_version=1, taxonomy_version=3, stage='partial', records=[])
+    test_rows = [dict(row, id='test-new-' + row['id'], topic_id='test-nine-party-topic', taxonomy_version=3) for row in test_source_rows]
+    test_fields = [dict(field, id='test-new-' + field['id'], row_id='test-new-' + field['row_id']) for field in test_fields]
+    assert len({r['party_id'] for r in test_rows}) == 9
+    payload = dict(contract_version=1, taxonomy_version=3, stage='partial', records=([dict(kind='comparison_row', values=r) for r in test_rows] + [dict(kind='comparison_field', values=f) for f in test_fields]))
     arsiv.comparison_reconcile(work, taxonomy, inventory, payload)
     snapshot = arsiv.export_db(work / 'records.sqlite3', 'isolated-test', strict_identity=True)
     assert snapshot['comparison_contract'][0]['taxonomy_version'] == 3
     assert len([r for r in snapshot['comparison_row'] if r['taxonomy_version'] == 2]) == len(rows)
-    assert len([r for r in snapshot['comparison_row'] if r['taxonomy_version'] == 3]) == len(rows)
-    print('RECONCILE_REAL_EXPORT_OK', len(rows), flush=True)
+    assert len([r for r in snapshot['comparison_row'] if r['taxonomy_version'] == 3]) == len(rows) + len(test_rows)
+    assert len({r['party_id'] for r in snapshot['comparison_row'] if r['topic_id'] == 'test-nine-party-topic'}) == 9
+    print('RECONCILE_REAL_EXPORT_OK', len(rows), 'NEW_TOPIC_NINE_PARTIES_OK', flush=True)
