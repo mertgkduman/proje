@@ -23,6 +23,14 @@
   öngörür; bu maddede malzemenin yerli üretimi belirtilmez
   (`0208-emep-program-charter-v1`). PDF önerisi ve diğer program bölümleri
   için bu dar maddeden yokluk sonucu çıkarılamaz.
+- DBP ile ilişkili iki tarihsel BDP program kopyasının sağlık bölümü doğrudan
+  okundu: ilaç, sağlık teknolojisi ve teçhizatının üretim, kullanım ve
+  pazarlamasının denetimi; üretime yatırım ve araştırma geliştirmeye kaynak
+  ayrılması öngörülür (`0207-dbp-bdp-program-v1`,
+  `0207-dbp-bdp-program-wordpress-v1`). Bu pasaj henüz karşılaştırma kanıtı
+  olarak kaydedilmedi; mevcut bağımsız DBP program açığı ayrıca korunur.
+  Metindeki yatırım ve denetim, kendi başına yerli üretim veya dışa
+  bağımlılığın tamamen kaldırılması şartı sayılmaz.
 
 Üç kaynak tıbbi üretim bakımından ilişkilidir, ancak kapsamları ve araçları
 aynı değildir: kapasite artışı, belirli aşıların üretim altyapısı ve dışa
