@@ -1,0 +1,427 @@
+{
+  "snapshot":"4da93e2c64914eecb875c66cca14ea57",
+  "research_method":"Orkestratörün açıkça atadığı son 11 mevcut tüzük konusu için gerçek karşılaştırma satırları, alan metinleri, sürümler ve bağlı alıntılar okundu. Aynı konunun taxonomy2 ve taxonomy3 kopyaları bulunduğundan kaynak satırları taxonomy2 kimlikleriyle gösterildi. Yeni Parti, TİP, DBP ve EMEP'in özgün HTML tüzük bölümleri ile İYİ Parti PDF index32–33,37–38,53; Saadet index2,9,11–12,19; DP index11,26–27,37,45 ve DEM index25 okundu. DP index12,30 ile Saadet index23'te aynı görev zincirinde daha önce gerçekten okunan tam sayfalar kesin destekledikleri hükümler için yeniden kullanıldı. Cümleler ve her tarafın anlam gerekçeleri elle yazıldı; betik yalnız satır/pasaj ilişkileri, sürüm ve özgün metin eşleştirme kontrolü içindir. Bu grupta yeni yokluk sonucu oluşturulmadı ve genel bağlamdan belirli adlı kurulun varlığı veya yokluğu türetilmedi.",
+  "source_roles":[
+    {"version_id":"epm-charter-v1","role":"Yeni Parti'nin yenipartiyiz.biz/parti-tuzugu adresindeki özgün arşiv HTML tüzüğü. Hükümet kararlarındaki özel PM oy hakkı genel katılım kuralıyla birlikte okunur."},
+    {"version_id":"0203-tip-charter-v1","role":"TİP'in tip.org.tr/tuzuk adresindeki HTML tüzüğü. Bu dosyadaki TİP iddiaları HTML nüsha içindir; 2022 dosya adlı PDF'nin her alanına taşınmaz."},
+    {"version_id":"0204-dem-charter-v1","role":"DEM kısaltmalı PDF tüzüğü. Madde46'nın komisyon ve çalışma grupları kapsamı kullanılır; alternatif HEDEP nüshasının yürürlük sırası bu görevde belirlenmez."},
+    {"version_id":"0205-iyi-charter-download-v1","role":"18.01.2026 değişiklik notlarını içeren İYİ Parti PDF tüzüğü. Madde62 ve63 oluşturulabilen kurullar, madde90 ise lafzen tüzük değişikliğinin yürütülmesi hakkındadır."},
+    {"version_id":"0207-dbp-charter-v1","role":"12.01.2025 kongre değişiklik notlu DBP HTML tüzüğü. Hükümet kararlarında TBMM grubuna ilişkin özel katılım koşulu korunur."},
+    {"version_id":"0208-emep-program-charter-v1","role":"EMEP birleşik program-tüzük HTML yayınının tüzük bölümü. Program talepleri ve kongre önergesi bu tüzük hükümleri yerine kullanılmaz."},
+    {"version_id":"0209-saadet-current-charter-v1","role":"Saadet'in 25 sayfalık PDF tüzüğü; son açıklamada2019 kongre değişiklikleri sayılır. İktidarda uygulanacak politikalara hazırlık ifadesi gerçekleşmiş iktidar uygulaması değildir."},
+    {"version_id":"0210-demokrat-charter-archive-v1","role":"Demokrat Parti'nin 2022 dosya adlı arşiv PDF tüzüğü. Hükümet, bakan ve başbakan hükümleri bu somut arşiv metninin düzenlemesidir; tarihsel DYP programlarıyla veya güncel anayasal sistemin betimiyle karıştırılmaz."}
+  ],
+  "topics":[
+    {
+      "topic_id":"kolektif-calisma",
+      "claims":[
+        {
+          "text":"DBP parti çalışmalarında ortak yönetim ve kişisel sorumluluğu esas alır. EMEP kolektif çalışmayı esas sayar ve bunu bireysel sorumluluk ve inisiyatifle birleştirmeyi bütün örgüt ve organlar için temel kabul eder. TİP'in HTML tüzüğü bütün parti çalışmalarında kurul işleyişini esas alır.",
+          "claim_type":"multi_positive",
+          "explanation":"Üç metin ortak çalışmayı farklı ifadelerle düzenler. DBP'nin kişisel sorumluluğu ve EMEP'in bireysel inisiyatifi silinmedi; TİP'in kurul işleyişi ifadesinden bütün üyelerin her karara doğrudan katılması sonucu çıkarılmadı.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-083-row","support":"passage","refs":["0308-dbp-draft-083-passage"],"semantic_reason":"Madde4'ün tam ilk cümlesi ortak yönetim ile kişisel sorumluluğu birlikte yazar; kişisel sorumluluk kolektiflik adına çıkarılmadı."},
+            {"party_id":"emep","old_row_id":"0309-emep-html-015-0-row","support":"passage","refs":["0309-emep-html-015-0-passage"],"semantic_reason":"Madde28'in ikinci cümlesi kolektif çalışma ile bireysel sorumluluk ve inisiyatifin birleştirilmesini içerir. Kısa ilk cümleye cf-x01 tam madde bağlanmalıdır."},
+            {"party_id":"tip","old_row_id":"0304-tip-kolektif-row","support":"passage","refs":["0304-tip-yetki-q"],"semantic_reason":"Madde4.8'in açık ilk cümlesi kurul işleyişidir; kolektif çalışmanın ölçülmüş uygulama başarısı veya her kurulda aynı yetki dağılımı ileri sürülmez."}
+          ]
+        },
+        {
+          "text":"DEM'de oluşturulan komisyon ve çalışma grupları eş sözcülük biçiminde çalışır. Saadet ise üyelerine ekip çalışmasına uyumlu, hoşgörülü ve iyi ahlak kurallarına uygun çalışma yükümlülüğü getirir.",
+          "claim_type":"multi_positive",
+          "explanation":"DEM hükmü belirli çalışma yapılarının yönetim biçimi, Saadet hükmü üyenin çalışma davranışı hakkındadır. Eş sözcülük bütün DEM organlarına veya Saadet'in ekip uyumu hükmüne taşınmadı.",
+          "sides":[
+            {"party_id":"dem","old_row_id":"0305-dem-birlikte-dem-row","support":"passage","refs":["0305-dem-birlikte-dem-passage"],"semantic_reason":"Madde46'da eş sözcülük yalnız komisyon ve çalışma grupları için yazılır. Büro ve bütün yönetim organlarını da kapsıyor diye genellenmedi; özgün tam paragraf cf-x04'te verildi."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-1-014-kolektif-calisma-row","support":"passage","refs":["0310-saadet-1-014-kolektif-calisma-p","0310-saadet-1-014-kolektif-calisma-context"],"semantic_reason":"Madde8 üye yükümlülükleri d bendinin tamamı index2/basılı3'te okundu. Ekip çalışmasına ilişkin kesik alıntı görevli kurulun yapısı olarak yorumlanmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tam tüzüğü bulunamadığı için kolektif çalışma veya kurul işleyişine ilişkin tüzük ilkesi karşılaştırılamadı.","claim_type":"status_only","explanation":"Ortak Meclis grubu veya kurucu partilerin çalışma yöntemleri bu tüzel kişiliğin tüzük hükmü değildir.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-kolektif-calisma-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam belge açığı kaydedilir; üyelerin birlikte çalışmadığı yönünde bir uygulama sonucu üretilmez."}]}
+      ]
+    },
+    {
+      "topic_id":"politika-kurullari",
+      "claims":[
+        {
+          "text":"Saadet'in Politika Kurulları, ülke ve dünya gelişmelerini izleyip analiz yaparak kanaat oluşturmak ve partinin iktidarda uygulayacağı politikalara hazırlanmak için oluşturulur; yapı ve çalışma yöntemleri yönetmelikle belirlenir. Demokrat Parti'nin Siyaset Planlama Kurulu temel ülke meselelerine ilişkin önerileri değerlendirir; benimsediği planlama ve öneriler Genel Başkan tarafından GİK'in onayına sunulur.",
+          "claim_type":"multi_positive",
+          "explanation":"Saadet'te hazırlık amacı ile yönetmelik aracı, DP'de önerinin benimsenmesi ve GİK'e sunulması yolu karşılaştırılır. Saadet'in iktidar için hazırlığı mevcut hükümet uygulaması gibi aktarılmadı; DP'de kurulun kendi benimsemesi son parti onayı sayılmadı.",
+          "sides":[
+            {"party_id":"saadet","old_row_id":"0310-saadet-1-044-politika-kurullari-row","support":"passage","refs":["0310-saadet-1-044-politika-kurullari-p","0310-saadet-1-044-politika-kurullari-context"],"semantic_reason":"Madde27/B'nin kısa alıntıdan önceki tam cümlesi kurulun amacını verir. Gerçek tam sayfa bağında okunup cümleye alındı; yalnız yönetmelik cümlesinden amaç tahmin edilmedi."},
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-047-politika-kurullari-row","support":"passage","refs":["0312-demokrat-2-047-politika-kurullari-p","0312-demokrat-2-047-politika-kurullari-context"],"semantic_reason":"Madde50/D2'de ekonomi, iç/dış siyaset ve ulusal güvenlik temel mesele örnekleridir. Kurul, Genel Başkan ve GİK'in farklı aşamaları tam paragraftan korundu."}
+          ]
+        },
+        {
+          "text":"TİP'in HTML tüzüğünde PM'nin oluşturduğu komisyonlar yeni alanlarda partinin resmî görüşünü olgunlaştıracak siyaset önerileri ve tasarılarını merkeze sunar. İYİ Parti'nin ihtisas grupları genel merkezde ülke sorunları ve program çerçevesinde, il ve ilçede yerel gelişme ve sorunlar hakkında araştırma ve çözüm çalışmaları yapabilir; sırasıyla Genel Başkan, il başkanı ve ilçe başkanına bağlıdır.",
+          "claim_type":"multi_positive",
+          "explanation":"Bu cümle iki somut politika geliştirme yapısını karşılaştırır. TİP komisyonları ve İYİ Parti ihtisas grupları, sırf konuları benziyor diye Politika Kurulu adlı organlar olarak yeniden adlandırılmadı; İYİ Parti'de düzeye göre bağlılık korundu.",
+          "sides":[
+            {"party_id":"tip","old_row_id":"0304-tip-charter-context-politika-kurul-html-row","support":"passage","refs":["0304-tip-komite-buro-p1"],"semantic_reason":"Madde3.22'de komisyonların yeni alanlara ilişkin öneri/tasarı görevi ve PM tarafından oluşturulması açık. Tam p1, yalnız büro/komite üyelik şartını içeren kısa q yerine kullanıldı."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-scope-politika-kurullari-context-row","support":"passage","refs":["0306-iyi-scope-politika-kurullari-passage"],"semantic_reason":"Madde64 genel merkez ile yerel görevleri ayrı yazar. Mevcut ref yalnız bağlılıktır; araştırma ve çözüm kapsamı için cf-x12 tam madde aynı satıra bağlanmalıdır. Adlandırılmış Politika Kurulu varlığı veya yokluğu iddia edilmez."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından politika geliştirmekle görevli kurulların kuruluş ve onay usulü karşılaştırılamadı.","claim_type":"status_only","explanation":"Program hazırlığına dair haberlerden tüzükte adı, bileşimi ve yetkisi yazılı bir kurul türetilemez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-politika-kurullari-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Bu taraf tam tüzük kaynağı açığıdır; Yeni Yol'un politika üretmediği anlamına gelmez."}]}
+      ]
+    },
+    {
+      "topic_id":"baskanlik-divani",
+      "claims":[
+        {
+          "text":"İYİ Parti Başkanlık Divanı en üst icra kuruludur; üyelerini Genel Başkan GİK üyeleri arasından atar ve gerekli görürse en fazla beş üyeyi parti üyeleri arasından da atayabilir. Saadet'te Genel Başkanla görev yapacak divan üyelerini Genel Başkan GİK üyeleri arasından belirler ve GİK onayına sunar.",
+          "claim_type":"multi_positive",
+          "explanation":"İYİ Parti'nin GİK üyeleri arasından atama kuralı beş kişilik ek imkânıyla birlikte verildi. Saadet'in Genel Başkan belirlemesinden sonraki GİK onayı atlanmadı; iki usul aynı tek aşamalı atama olarak gösterilmedi.",
+          "sides":[
+            {"party_id":"iyi","old_row_id":"0306-iyi-baskanlik-divani-row","support":"passage","refs":["0306-iyi-baskanlik-divani-passage"],"semantic_reason":"Madde50'nin ilk paragrafı en üst icra tanımından sonra atama kuralı ve en fazla beş üye imkânını getirir. Mevcut bir cümlelik tanıma cf-x05 tam paragraf eklenmelidir."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-1-036-baskanlik-divani-row","support":"passage","refs":["0310-saadet-1-036-baskanlik-divani-p","0310-saadet-1-036-baskanlik-divani-context"],"semantic_reason":"Madde22 ilk paragrafı Genel Başkanın belirlemesini ve GİK onayına sunmayı birlikte içerir. GİK'in seçilmiş üyeleri arasından olma şartı korunur."}
+          ]
+        },
+        {
+          "text":"Demokrat Parti Başkanlık Divanı Genel Başkan, genel başkan yardımcıları, Genel Sekreter ve Mali İşler Başkanından oluşur. Saadet'in divan bileşiminde Genel Başkan, yardımcıları ve Genel Sekreterin yanında genel merkez kadın ve gençlik kolları başkanları da yer alır; TBMM grup başkanvekilleri ile denetçiler toplantılara gözlemci olarak davet edilebilir.",
+          "claim_type":"multi_positive",
+          "explanation":"Üyelik ile gözlemci daveti ayrıldı. DP'deki Mali İşler Başkanı adı Saadet'in kadın/gençlik kolları katılımının yerine geçmez; Saadet'in davet edilebilir kişileri seçilmiş divan üyesi yapılmadı.",
+          "sides":[
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-1-113-baskanlik-divani-row","support":"passage","refs":["0312-demokrat-1-113-baskanlik-divani-p","0312-demokrat-1-113-baskanlik-divani-context"],"semantic_reason":"Madde51'in ilk cümlesi dört görev grubunu sayar. Cümle bütün görev sahiplerinin tüzükteki sürelerini yeniden tanımlamaz."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-1-036-baskanlik-divani-row","support":"passage","refs":["0310-saadet-1-036-baskanlik-divani-context"],"semantic_reason":"Madde22 ikinci paragrafı kadın/gençlik başkanlarını bileşime dahil eder; sonraki cümle grup başkanvekilleri ve denetçileri yalnız davet edilebilen gözlemci yapar. Tam sayfa bağında bu fark okunmuştur."}
+          ]
+        },
+        {
+          "text":"Kongre yönetimi için DBP divanı, parti üyeleri arasından seçilen biri kadın biri erkek iki eş başkan, kararlaştırılan sayıda yardımcı ve yeterli yazmandan oluşur. EMEP kongre divanını bir başkan, iki yardımcı ve iki sekreter olarak açık oyla seçer. Yeni Parti kongresinde kongre üyeleri veya partililerden bir başkan, kongre üyelerinden bir başkan yardımcısı ve en az bir yazman seçilir; disiplin kurulları başkan ve üyeleri kongre başkanlık kurulunda görev alamaz.",
+          "claim_type":"multi_positive",
+          "explanation":"Bu üç yapı kongre oturumunu yönetir; önceki cümlelerdeki sürekli icra divanlarıyla aynı organ değildir. DBP'nin iki eş başkanı ile EMEP'in beş kişilik bileşimi korunur. Yeni Parti'de başkan kongre üyesi veya partili olabilirken yardımcısı ve yazman kongre üyeleri arasından seçilir.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-103-row","support":"passage","refs":["0308-dbp-draft-103-passage"],"semantic_reason":"Madde47'nin bu tam cümlesi büyük kongre divanının bileşimi ve parti üyeleri arasından seçimi hakkındadır. Cümle DBP için başka oylama yöntemi veya sürekli merkez organı iddia etmez."},
+            {"party_id":"emep","old_row_id":"0309-emep-html-033-1-row","support":"passage","refs":["0309-emep-html-033-1-passage"],"semantic_reason":"Tüzük madde30'daki tam divan cümlesi sayıları ve açık oy yöntemini birlikte verir; kongrenin kendisinin oy usulleriyle karıştırılmadı."},
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-parent-baskanlik-divani-row","support":"passage","refs":["0303-epm-ninth-kongre-baskanligi-p"],"semantic_reason":"Madde26/1 bileşimi,26/2 disiplin kurulu görevlerinin bağdaşmazlığını verir. İkinci fıkra cf-x03 olarak bağlanmalı; yalnız ilk fıkradan herkesin seçilebilir olduğu çıkarılmamalıdır."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığı için sürekli Başkanlık Divanı ile kongreyi yönetecek divanın kuruluşu bu metinden belirlenemedi.","claim_type":"status_only","explanation":"Kuruluş ve parti temsilcisi bilgisi bir divanın üye listesi veya atama kuralı yerine geçmez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-baskanlik-divani-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam tüzük açığı kaydedilir; divanın kesinlikle bulunmadığı veya başka partinin divanıyla aynı olduğu söylenmez."}]}
+      ]
+    },
+    {
+      "topic_id":"sivil-toplum-iliskileri",
+      "claims":[
+        {
+          "text":"Yeni Parti'de MYK, partinin sivil toplum örgütleriyle ilişkilerini düzenleyip gerekli kararları alır. İYİ Parti'de Başkanlık Divanı meslek odaları, sivil toplum kuruluşları ve medya ile ilişkilerde koordinasyonu sağlar.",
+          "claim_type":"multi_positive",
+          "explanation":"Yeni Parti'nin ilişkileri düzenleme ve karar yetkisi ile İYİ Parti'nin koordinasyon görevi kendi organlarına bağlı tutuldu. Bu görevlerden gerçekleşmiş ortaklık veya sivil toplum üzerindeki yönetim yetkisi çıkarılmadı.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-eleventh-sivil-toplum-iliskileri-row","support":"passage","refs":["0303-epm-eleventh-sivil-toplum-iliskileri-p"],"semantic_reason":"Özgün madde23/13 MYK görevleri e bendinde hükümet, diğer partiler ve sivil toplum ilişkilerini birlikte sayar. Cümle karşılaştırma konusu olan sivil toplum parçasını, aynı karar yetkisiyle daraltarak aktarır."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-sivil-toplum-iliskileri-row","support":"passage","refs":["0306-iyi-sivil-toplum-iliskileri-passage"],"semantic_reason":"Özgün PDF madde51'in başlığı ve giriş cümlesi öznenin Başkanlık Divanı olduğunu gösterir; meslek odaları/STK/medya görev cümlesi bu başlık altında okundu. Sadece bir başkan yardımcısına görev atanmadı."}
+          ]
+        },
+        {
+          "text":"DBP, halkı siyasetin öznesi yapmaya çalışan sivil toplum kuruluşlarıyla ortak amaç ve hedefler doğrultusunda eşgüdümlü hareket etmeyi belirtir. Demokrat Parti'nin arşiv tüzüğü, gerekli görülen yerlerde temel teşkilat yönetim kurulu kararıyla ilgili teşkilata bağlı Demokratik Kitle Örgütleri Temsilciliği kurulabilmesini düzenler.",
+          "claim_type":"multi_positive",
+          "explanation":"DBP'de işbirliğinin ortak amaç ve hedef koşulu ile DP'de bir yan kuruluş oluşturma yolu farklı araçlardır. DP temsilciliği belirli bir sivil toplum kuruluşunun partiye katıldığı veya bütün kuruluşları temsil ettiği anlamına gelmez.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-090-row","support":"passage","refs":["0308-dbp-draft-090-passage"],"semantic_reason":"Madde41/d hedeflenen STK'ları ve ortak amaç/hedef çerçevesini açıkça sınırlar; bütün STK'larla koşulsuz birlik iddia edilmez."},
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-082-sivil-toplum-iliskileri-row","support":"passage","refs":["0312-demokrat-2-082-sivil-toplum-iliskileri-p","0312-demokrat-2-082-sivil-toplum-iliskileri-context"],"semantic_reason":"Madde17/II/3'ün tam paragrafı temel teşkilat yönetim kurulu kararını ve ilçe/il/genel merkeze bağlı kuruluşları açıklar. Kısa kuyruk alıntısına dayanarak zorunlu yalnız-merkez organı kurulmadı; satırdaki merkez etiketi özgün kapsamın yerine geçirilmedi."}
+          ]
+        },
+        {"text":"Yeni Yol'un tam tüzüğü bulunamadığı için sivil toplum kuruluşlarıyla ilişkilerde karar veya koordinasyon görevinin hangi organa ait olduğu belirlenemedi.","claim_type":"status_only","explanation":"Kurucu partilerin veya ortak Meclis grubunun temasları bu partinin tüzük yetki zincirini göstermez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-sivil-toplum-iliskileri-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Konuya özgü tutum yokluğu değil, tam belge ve organ yetkisi kaynağı açığı aktarılır."}]}
+      ]
+    },
+    {
+      "topic_id":"hukumet-iliskileri",
+      "claims":[
+        {
+          "text":"Yeni Parti'de hükümet kurma, hükümete katılma ve çekilme kararlarını PM verir; bu konular görüşülürken TBMM grup başkanvekilleri ve grup yönetim kurulu üyeleri PM toplantısına katılıp oy kullanır. DBP'de aynı hükümet kararları PM'ye aittir; partinin TBMM grubu varsa yetki kullanımına grup başkanvekilleri ve grup yönetim kurulu üyeleri de katılır.",
+          "claim_type":"multi_positive",
+          "explanation":"Yeni Parti'nin hükümet konularındaki açık oy hakkı, genel PM davetlileri için yazılı oy yasağıyla karıştırılmadı. DBP'de TBMM grubunun varlığı koşulu ve yetki kullanımına katılımı korundu; metnin söylemediği ayrı bir oy hesabı eklenmedi.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-eighth-hukumet-iliskileri-row","support":"passage","refs":["0303-epm-eighth-hukumet-iliskileri-p"],"semantic_reason":"Madde22/11-f iki tam cümledir. Mevcut ref yalnız karar görevini içerir; grup yöneticilerinin özel oy hakkı için cf-x02 aynı satıra bağlanmalıdır. Bu özel kural önceki genisletilmis-toplanti cümlesini de sınırlar."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-085-row","support":"passage","refs":["0308-dbp-draft-085-passage"],"semantic_reason":"Madde90'ın ikinci cümlesi 'TBMM grubu varsa' koşulunu ve grup yöneticilerinin katılımını getirir. Tam paragraf cf-x06 bağlanmadan yetki kullanımı yalnız PM üyeleriyle sınırlı gösterilemez."}
+          ]
+        },
+        {
+          "text":"Demokrat Parti hükümet kurma, koalisyona katılma ve hükümetten veya koalisyondan ayrılma yetkisini GİK'e; Saadet hükümet kurma, hükümete katılma ve çekilme kararlarını GİK'e verir. İYİ Parti'nin ilgili hükmü ise Başkanlık Divanı'na TBMM Grubu, İYİ Partili hükümet üyeleri ve Genel Merkez arasındaki uyum ve koordinasyonda görev verir.",
+          "claim_type":"multi_positive",
+          "explanation":"DP ve Saadet'teki hükümet kararı yetkisi ile İYİ Parti'nin burada alıntılanan koordinasyon görevi ayrı işlemlerdir. Koordinasyon hükmü hükümete katılma kararını tek başına Divana veren hüküm gibi gösterilmedi; İYİ Parti'de başka karar usulünün bulunmadığı da ileri sürülmedi.",
+          "sides":[
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-069-hukumet-iliskileri-row","support":"passage","refs":["0312-demokrat-2-069-hukumet-iliskileri-p","0312-demokrat-2-069-hukumet-iliskileri-context"],"semantic_reason":"Arşiv madde80 ilk paragrafı hükümet ve koalisyon kararlarının GİK'e ait olduğunu açıkça içerir. Bakanların sonradan görevden ayrılmama sonucuna ilişkin başka paragraf bu kararın koşulu olarak karıştırılmadı."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0170","support":"passage","refs":["0310-saadet-2-020-hukumet-iliskileri-p","0310-saadet-2-020-hukumet-iliskileri-context"],"semantic_reason":"Madde23 GİK görev listesinin8. bendi hükümet kurma, katılma ve çekilmeyi içerir. Saadet'e ayrı bir koalisyon sözcüğü eklemek yerine metindeki hükümete katılma kapsamında aktarılır."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-hukumet-iliskileri-row","support":"passage","refs":["0306-iyi-hukumet-iliskileri-passage"],"semantic_reason":"Madde51'in Başkanlık Divanı görevleri altında okunan tam cümle uyum ve koordinasyonda görev almayı söyler. Fiilen İYİ Partili bakan bulunduğu veya Divanın tek karar mercii olduğu sonucu çıkarılmaz."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından hükümet kurma, hükümete katılma veya çekilme kararının parti içindeki usulü karşılaştırılamadı.","claim_type":"status_only","explanation":"Haberlerdeki siyasi işbirliği, tüzükteki hükümet kararı yetkisini kendi başına belirlemez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-hukumet-iliskileri-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam metin açığından hükümet ortaklığına olumlu veya olumsuz tutum türetilmedi."}]}
+      ]
+    },
+    {
+      "topic_id":"bilim-kurulu",
+      "claims":[
+        {
+          "text":"Demokrat Parti'nin Bilim ve Siyasi Araştırmalar Kurulu, Genel Başkanın başkanlığında onun önerisiyle GİK'in seçtiği 20 bilim insanı ve siyasetçiden oluşur; GİK sayıyı artırabilir ve kurulun görevi ilk olağan veya olağanüstü Büyük Kongredeki genel merkez organ seçimlerine kadar sürer. İYİ Parti'de Genel Başkana görüş ve öneri sunacak Bilim Yüksek Kurulu oluşturulabilir; kurul Genel Başkana bağlı çalışır, yapısı ve işleyişi onun teklifi üzerine GİK yönetmeliğiyle belirlenir.",
+          "claim_type":"multi_positive",
+          "explanation":"DP'nin sayısı değişmez sınır gibi verilmedi ve görev sonu korundu. İYİ Parti'de kurulun kurulabilmesi ile çalışma düzeninin yönetmelikle belirlenmesi, kurulun fiilen oluşturulduğunun kanıtı sayılmadı.",
+          "sides":[
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-050-bilim-kurulu-row","support":"passage","refs":["0312-demokrat-2-050-bilim-kurulu-p","0312-demokrat-2-050-bilim-kurulu-context"],"semantic_reason":"Index37 madde65/B'nin ikinci paragrafı sayı artırma ve ilk kongredeki merkez organ seçimiyle görev sonunu açıkça verir. Sadece20 kişilik kısa alıntıyla kalınmadı."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-bilim-kurulu-row","support":"passage","refs":["0306-iyi-bilim-kurulu-passage"],"semantic_reason":"Madde62'nin ilk paragrafı 'oluşturulabilir', ikincisi Genel Başkana bağlılık ve Genel Başkan teklifi/GİK yönetmeliğidir. cf-x07 tam madde bağlanmadan kısa bağlılık cümlesine kuruluş usulü yüklenmemelidir."}
+          ]
+        },
+        {
+          "text":"TİP'in HTML tüzüğündeki Bilim Kurulu alanında uzman parti üyeleri ve gönüllülerden oluşan kolektif bir danışma organıdır; parti politikalarıyla uyumlu bilgi üretir ve çalışma usulü yönetmelikle belirlenir. İYİ Parti'nin oluşturulabilen Bilim Yüksek Kurulu bilimsel-teknolojik gelişmeleri izleyip ülkenin bilimsel-teknolojik atılımı hakkında çalışarak görüş ve önerilerini Genel Başkana sunmayı amaçlar.",
+          "claim_type":"multi_positive",
+          "explanation":"TİP'te uzman üye/gönüllü bileşimi ve danışma rolü, İYİ Parti'de bilim-teknoloji odağı ve Genel Başkana sunma görevi ayrılır. İki kurul bütün parti politikalarında son karar veren organ gibi sunulmadı.",
+          "sides":[
+            {"party_id":"tip","old_row_id":"0304-tip-bilim-row","support":"passage","refs":["0304-tip-bilim-p1"],"semantic_reason":"Madde3.21 Bilim Kurulu maddesi kolektif üretimi uzman üye ve gönüllülere dayandırır; sonraki Adalet İçin Hukukçular platformunun dava yetkileri Bilim Kurulu'na taşınmadı. Tam p1 kullanıldı."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-bilim-kurulu-row","support":"passage","refs":["0306-iyi-bilim-kurulu-passage"],"semantic_reason":"Bilimsel/teknolojik amaçlar madde62 ilk paragraftadır. Aynı cf-x07 bu ikinci karşılaştırmada da bu İYİ tarafına eklenmelidir; isteğe bağlı kuruluş kipi korunur."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından bilim kurulunun kuruluşu, bileşimi veya görevi bu belge üzerinden belirlenemedi.","claim_type":"status_only","explanation":"Uzman isimlerle temas kurulması tüzükte bilim kurulu oluşturulduğunun yerine geçmez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-bilim-kurulu-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Bu eksik bilimsel danışmaya karşıtlık veya böyle bir çalışmanın fiilen yokluğu anlamına gelmez."}]}
+      ]
+    },
+    {
+      "topic_id":"siyasi-etik-kurulu",
+      "claims":[
+        {
+          "text":"İYİ Parti'de parti içi demokrasiyi geliştirmek, siyasi etik ilkelerini belirlemek ve aykırılık şikâyetlerini incelemek üzere Genel Başkana bağlı Parti İçi Demokrasi ve Siyasi Etik Yüksek Kurulu oluşturulabilir. Kurulun oluşumu ve işleyişi Genel Başkanın teklifi üzerine GİK yönetmeliğiyle belirlenir. Yeni Yol'un tüzüğü bulunamadığından bu tür bir kurulun kuralı bu belge üzerinden karşılaştırılamadı.",
+          "claim_type":"one_positive",
+          "explanation":"İYİ Parti hükmü kurulabilen bir yapı ve amaçlarını düzenler; fiilen kurulmuş olduğunu veya disiplin cezası verme yetkisini kanıtlamaz. Yeni Yol tarafı tam belge açığıdır; etik ilkesine karşıtlık veya kurulun kesin yokluğu değildir.",
+          "sides":[
+            {"party_id":"iyi","old_row_id":"0306-iyi-siyasi-etik-kurulu-row","support":"passage","refs":["0306-iyi-siyasi-etik-kurulu-passage"],"semantic_reason":"Madde63'ün ilk paragrafı 'oluşturulabilir', Genel Başkana bağlılık ve görev amaçlarını; ikincisi teklif ve yönetmelik zincirini verir. Kısa ref yalnız ikinci paragraf olduğundan cf-x08 tamamı bağlanmalıdır."},
+            {"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-siyasi-etik-kurulu-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Arama kaydı tam tüzük metni sağlamaz. Bu eksikten başka partilerdeki disiplin organlarını Yeni Yol'a aktararak bir etik kurulu üretilmedi."}
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id":"gonullu-kurulu",
+      "claims":[
+        {
+          "text":"İYİ Parti'de genel merkez, il, ilçe ve beldede gönüllüler kurulu oluşturulabilir; kurul parti üyeleri veya üye olmayan, sürekli ya da geçici ücretsiz çalışacak gönüllülerden oluşur. Her kademede teşkilat başkanınca bir parti üyesi başkan görevlendirilir; genel merkez kurulunun başkanını Genel Başkan görevlendirir. TİP'in HTML tüzüğü ise büro ve komitelerde üyelik şartı koyarken komisyonlarda üyelere ek olarak alanda katkı sunabilecek gönüllülere de yer verir.",
+          "claim_type":"multi_positive",
+          "explanation":"İYİ Parti'deki adlandırılmış kurulun düzeyleri ve üye başkan şartı, TİP'in komisyonlara gönüllü katılımından ayrıdır. Komisyona katılım, TİP'te ayrıca Gönüllüler Kurulu bulunduğu iddiasına dönüştürülmedi; büro ve komitelerin üyelik sınırı korunur.",
+          "sides":[
+            {"party_id":"iyi","old_row_id":"0306-iyi-gonullu-kurulu-row","support":"passage","refs":["0306-iyi-gonullu-kurulu-passage"],"semantic_reason":"Madde66 ilk dört paragrafında kurulabilme, düzey, bileşim, parti üyesi başkan ve genel merkez için Genel Başkan görevlendirmesi ayrı ayrı yazılıdır. Kısa ikinci paragraf bunların tamamı değildir; cf-x09 eklenmelidir."},
+            {"party_id":"tip","old_row_id":"0304-tip-charter-context-gonullu-html-row","support":"passage","refs":["0304-tip-komite-buro-p1"],"semantic_reason":"Madde3.22'nin son iki cümlesi büro/komite ile komisyon farkını doğrudan kurar. Sadece üyelik yasağını içeren kısa q, gönüllü katılımının kanıtı olarak kullanılmadı; tam p1 alındı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından gönüllü kurulların düzeyi, bileşimi veya başkan görevlendirmesi belirlenemedi.","claim_type":"status_only","explanation":"Gönüllü çalışmaya ilişkin haber veya kişisel katılım, adlandırılmış tüzük organının kuruluş kuralı yerine geçmez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-gonullu-kurulu-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam tüzük bulunamaması partiye gönüllü katılımın fiilen olmadığı anlamına gelmez."}]}
+      ]
+    },
+    {
+      "topic_id":"tuzuk-yurutme",
+      "claims":[
+        {
+          "text":"Yeni Parti tüzük hükümlerinin yürütülmesini PM'ye, Saadet GİK ile Genel Başkana verir. İYİ Parti'nin Yürütme başlıklı maddesi ise açıkça tüzükteki değişikliğin yürütülmesini GİK'e verir.",
+          "claim_type":"multi_positive",
+          "explanation":"İYİ Parti'nin madde90'ındaki değişiklik sözcüğü korundu; başka iki metnin bütün tüzük hükümlerine ilişkin lafzıyla eşitlenmedi. Yürütme görevi bu maddelerden tüzüğü değiştirme yetkisine dönüştürülmedi.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-eighth-tuzuk-yurutme-row","support":"passage","refs":["0303-epm-eighth-tuzuk-yurutme-p"],"semantic_reason":"Madde65/2 tam cümlesi 'Bu tüzük hükümlerini Parti Meclisi yürütür' der; yürürlüğe giriş zamanını düzenleyen önceki fıkra ayrı tutulur."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0238","support":"passage","refs":["0310-saadet-2-068-tuzuk-yurutme-p","0310-saadet-2-068-tuzuk-yurutme-context"],"semantic_reason":"Madde67 iki yürütücü organı birlikte sayar. Yalnız GİK'e veya yalnız Genel Başkana indirilmedi."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-tuzuk-yurutme-row","support":"passage","refs":["0306-iyi-tuzuk-yurutme-passage"],"semantic_reason":"Özgün index53/basılı54'te madde90 'İYİ Parti Tüzüğündeki değişikliğini' lafzıyla okunmuştur; sonraki91. madde de bu değişikliğin yürürlüğünden söz eder. Dilbilgisi düzeltilse bile değişiklik kapsamı silinmedi."}
+          ]
+        },
+        {
+          "text":"DBP'de Eş Genel Başkanlar parti çalışmalarını tüzük, program, Büyük Kongre ve PM kararları ışığında yürütür. EMEP'te MYK program, tüzük, kongre ve GYK kararlarının yürütülmesinden sorumludur. TİP'in HTML tüzüğünde PM, tüzüğün uygulanabilmesi ve güncel ihtiyaçlara yanıt verebilmesi için yönetmelik ve genelgeler çıkarır.",
+          "claim_type":"multi_positive",
+          "explanation":"DBP'de parti çalışmalarını yönlendiren Eş Genel Başkanların görevi, EMEP'in MYK sorumluluğu ve TİP'in düzenleyici işlem çıkaran PM yetkisi ayrı görevlerdir. Hepsi bağımsız ve aynı içerikte son yürütme maddeleri gibi sunulmadı.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-125-row","support":"passage","refs":["0308-dbp-draft-125-passage"],"semantic_reason":"Madde54'ün 'Eş Genel Başkanlar' öznesi başlık ve giriştedir; yalnız kısa yüklemden türetilmedi. Kaynak öznesini görünür tutan cf-x10 bu tarafla bağlanmalıdır."},
+            {"party_id":"emep","old_row_id":"0309-emep-html-037-2-row","support":"passage","refs":["0309-emep-html-037-2-passage"],"semantic_reason":"Tüzük madde39'da özne MYK, üst karar kaynağı GYK'dir. GYK ve MYK kısaltmaları birbirinin yerine kullanılmadı; bu görev PM'ye atanmadı."},
+            {"party_id":"tip","old_row_id":"0304-tip-charter-context-yurutme-html-row","support":"passage","refs":["0304-tip-yonetmelik-p1"],"semantic_reason":"Madde3.7'nin PM öznesi tam p1'de vardır. Yönetmelik/genelge çıkarma yetkisi bağımsız bir Genel Başkan yürütme görevi yapılmadı; ayrı yürütme maddesinin varlığı/yokluğu hakkında yeni sonuç üretilmedi."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından tüzük hükümlerini yürütmekle görevlendirilen organ belirlenemedi.","claim_type":"status_only","explanation":"Yasal temsilci veya kuruluş başvurusu bilgisi görülmeyen bir yürütme maddesinin yerini tutmaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-tuzuk-yurutme-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Bu belge açığı tüzüğün hiç yürütülmediği veya belirli bir organa görev verilmediği iddiası değildir."}]}
+      ]
+    },
+    {
+      "topic_id":"partili-yazarlar",
+      "claims":[
+        {
+          "text":"Demokrat Parti'nin arşiv tüzüğü parti üyesi yazarların kitap, gazete ve dergilerde siyasi felsefe, program ve yöntem tartışması yapmasına izin verir; bu tartışmalarda partinin tutum ve politikası, kongre ve organ kararları veya uygulamaları ya da parti üyeleri hakkında karalayıcı veya küçük düşürücü ifadeler kullanılamaz. Saadet'in genel disiplin hükmü ise partinin amaç ve özüne aykırı olmasa bile yetkili organların bilgisi ve izni olmadan açıklama ve yayın yapmayı uyarma cezasını gerektiren fiiller arasında sayar.",
+          "claim_type":"multi_positive",
+          "explanation":"DP'nin yazarlara özgü tartışma hakkı kendi açık ifade sınırıyla birlikte verildi. Saadet'in hükmü bütün üyeler için genel yayın disiplini bağlamındadır; ayrıca partili yazar statüsü veya yazar kurulu kurduğu söylenmedi.",
+          "sides":[
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-001-partili-yazarlar-row","support":"passage","refs":["0312-demokrat-2-001-partili-yazarlar-p","0312-demokrat-2-001-partili-yazarlar-context"],"semantic_reason":"Madde16'nın ikinci tam cümlesi karalama/küçük düşürme sınırını içerir ve tam sayfa bağında okunmuştur. Kısa ilk izin cümlesi sınırsız eleştiri hakkı olarak aktarılmadı."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0313","support":"passage","refs":["0310-saadet-2-context-028-p","0310-saadet-2-context-028-context"],"semantic_reason":"Madde50/a/1 gerçekten Uyarma cezasını gerektiren fiiller başlığı altındadır. Tam sayfa kategoriyi verir; alıntının sonuna taşan2. bent numarası hükmün parçası veya ek koşul yapılmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından partili yazarlara özgü haklar veya yayın yükümlülükleri bu belge üzerinden karşılaştırılamadı.","claim_type":"status_only","explanation":"Partili kişilerin yayımladığı metinler, tüzüğün yazarlar için özel statü tanıdığını veya tanımadığını göstermez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-partili-yazarlar-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam tüzük eksikliği partinin yayın yaptığı ya da yapmadığına ilişkin uygulama sonucu yerine kullanılmadı."}]}
+      ]
+    },
+    {
+      "topic_id":"temsilciler-meclisi",
+      "claims":[
+        {
+          "text":"Demokrat Parti'nin Temsilciler Meclisi; üyeliği süren kurucular, eski genel başkanlar, GİK ve Yüksek Haysiyet Divanı üyeleri, partili bakan ve milletvekilleri, il başkanları, büyükşehir ve il merkezi belediye başkanları ile kadın ve gençlik kolları genel başkanlarından oluşan danışma kuruludur; Genel Başkanın çağrısı ve belirlediği gündemle yılda en az bir kez toplanması zorunludur. TİP'in HTML tüzüğünde ise PM, gerekli gördüğünde örgüt temsilcilerini toplantıya çağırır; bu toplantıya PM ile il/ilçe başkanları, yönetim kurulu üyeleri, komite ve büro üyeleri katılır.",
+          "claim_type":"multi_positive",
+          "explanation":"DP'nin adlandırılmış danışma organı ve zorunlu asgari sıklığı ile TİP'in PM çağrısına bağlı Örgüt Temsilcileri Toplantısı aynı organ sayılmaz. DP'nin listesi kurul üyeliğini, ayrıca genişletilmiş davet imkânı ise başka bir paragrafı anlatır; TİP'in toplantısından ayrı Temsilciler Meclisi organı türetilmedi.",
+          "sides":[
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-1-107-temsilciler-meclisi-row","support":"passage","refs":["0312-demokrat-1-107-temsilciler-meclisi-p","0312-demokrat-1-107-temsilciler-meclisi-context"],"semantic_reason":"Madde46/A'nın kısa alıntısı 'gündem' sözcüğünde kesilir; cümlenin toplanma zorunluluğunu belirten sonu tam index26/basılı26 bağında vardır. Kurucuların üyeliğinin devamı koşulu korunur, oy veya bağlayıcı karar yetkisi eklenmez."},
+            {"party_id":"tip","old_row_id":"0304-tip-charter-context-temsilci-meclis-html-row","support":"passage","refs":["0304-tip-genisletilmis-p1"],"semantic_reason":"Madde4.10'un tam iki cümlesi çağıran PM, gereklilik değerlendirmesi ve katılım listesini verir. Bu HTML listesi komiteleri içerir; başka PDF nüshanın listesiyle sessizce birleştirilmedi."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından Temsilciler Meclisi adlı organın kuruluşu veya toplantı kuralı belirlenemedi.","claim_type":"status_only","explanation":"Ortak Meclis grubu parti içi Temsilciler Meclisi adlı danışma organının yerine konulamaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-temsilciler-meclisi-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam belge açığı adlandırılmış organın kesin yokluğunu göstermediği için yokluk iddiası kurulmadı."}]}
+      ]
+    }
+  ],
+  "evidence_expansions":[
+    {
+      "id":"cf-x01","topic_id":"kolektif-calisma","claim_index":0,"party_id":"emep","old_row_id":"0309-emep-html-015-0-row","version_id":"0208-emep-program-charter-v1","existing_ref":"0309-emep-html-015-0-passage","location":"Özgün HTML tüzük Madde28, tam madde",
+      "exact_complete_passage":"28-Partide kolektif çalışma esastır. Kolektivizm ruhu nu geliştirmek ve kolektif çalışmayla bireysel sorumluluk ve inisiyatifi birleştirmek, bütün örgüt ve organlar için temeldir.",
+      "reason":"Mevcut ilk cümle kolektif çalışma ilkesidir; bireysel sorumluluk ve inisiyatif ikinci cümlededir. Özgün HTML'deki 'ruhu nu' yazımı pasajda aynen korunmuştur.",
+      "binding":"Tam madde bu kolektif çalışma satırının ilgili bulgularına eklenmeli; mevcut ilk cümleye ek olarak bireysel inisiyatif karşılaştırmasını desteklemelidir."
+    },
+    {
+      "id":"cf-x02","topic_id":"hukumet-iliskileri","claim_index":0,"party_id":"yeni-parti","old_row_id":"0303-epm-eighth-hukumet-iliskileri-row","version_id":"epm-charter-v1","existing_ref":"0303-epm-eighth-hukumet-iliskileri-p","location":"Özgün HTML Madde22/11-f, iki tam cümle",
+      "exact_complete_passage":"f) Hükümet kurma, hükümete katılma, hükümetten çekilme konularında karar verir. Bu konuların görüşüldüğü Parti Meclisi toplantısına, TBMM Grup Başkanvekilleri ve Grup Yönetim Kurulu üyeleri katılır ve oy kullanırlar.",
+      "reason":"İkinci cümle TBMM grup yöneticilerine bu belirli PM gündeminde oy hakkı verir. Madde22/7'nin genel oy yasağı özel hükümet kararı toplantılarına koşulsuz taşınamaz.",
+      "binding":"Tam f bendi hükümet-iliskileri satırının ilgili bulgularına bağlanmalı. Aynı sürümde önceki genisletilmis-toplanti tarafı düzeltilecekse ayrıca o satırın bulgularına da bağlanmalıdır; başka satıra bağlı olmak tek başına geçerli sentez ref'i yapmaz."
+    },
+    {
+      "id":"cf-x03","topic_id":"baskanlik-divani","claim_index":2,"party_id":"yeni-parti","old_row_id":"0303-epm-parent-baskanlik-divani-row","version_id":"epm-charter-v1","existing_ref":"0303-epm-ninth-kongre-baskanligi-p","location":"Özgün HTML Madde26/2, tam fıkra",
+      "exact_complete_passage":"(2) Disiplin kurulları başkan ve üyeleri, kongre başkanlık kurullarında görev alamazlar.",
+      "reason":"Kurul bileşiminin yazıldığı ilk fıkrayı izleyen bu fıkra belirli parti üyelerine görev yasağı koyar. İlk fıkradaki partili başkan seçimi bu yasağı ortadan kaldırmaz.",
+      "binding":"İkinci fıkra aynı kongre başkanlık kurulu satırının ilgili bulgularına bağlanmalı; mevcut bileşim pasajıyla birlikte kullanılmalıdır."
+    },
+    {
+      "id":"cf-x04","topic_id":"kolektif-calisma","claim_index":1,"party_id":"dem","old_row_id":"0305-dem-birlikte-dem-row","version_id":"0204-dem-charter-v1","existing_ref":"0305-dem-birlikte-dem-passage","location":"Madde46, PDF index25/basılı26, tam madde","pdf_page_index":25,"printed_page":"26",
+      "exact_complete_passage":"Partinin kongrelerde seçilen merkezi ve yerel bütün yönetici organları kendilerine bağlı büro, komisyon ve çalışma grupları kurma yetkisine sahiptir. Oluşturulan komisyon ve çalışma grupları Eş Sözcülük şeklinde çalışma yürütür. Organlarının kararıyla partili partisiz ayrımı yapılmaksızın yararlı olabilecek herkes bu kurullarda çalışabilir. Bu kurullarda çalışma yapanlar, alanları dikkate alınarak, PM dahil merkezi ve yerel bütün yönetim organlarının toplantılarına danışmak, bilgi ve öneri almak amacıyla davet edilebilir. Çalışmalara ilişkin detaylar çıkarılan yönetmelikte yer alır.",
+      "reason":"Eş sözcülük cümlesi komisyon ve çalışma gruplarıyla sınırlıdır. Tam madde kurucu yönetici organlar ile çalışma yapılarının farklı olduğunu gösterir; tüm yönetim organlarına eş sözcülük kuralı türetilmedi.",
+      "binding":"Tam madde kolektif-calisma satırının ilgili bulgularına eklenerek eş sözcülük kapsamı korunmalıdır; başka konuda gönüllü katılımı için kullanılacaksa o konu satırına ayrı gerçek bağ gerekir."
+    },
+    {
+      "id":"cf-x05","topic_id":"baskanlik-divani","claim_index":0,"party_id":"iyi","old_row_id":"0306-iyi-baskanlik-divani-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-baskanlik-divani-passage","location":"Madde50, PDF index32/basılı33, ilk tam paragraf","pdf_page_index":32,"printed_page":"33",
+      "exact_complete_passage":"Başkanlık Divanı, en üst icra kuruludur. Bu Kurul, Genel Başkan, Genel Sekreter, Genel Muhasip ve diğer Genel Başkan Yardımcılarından oluşur. Genel Başkan, Başkanlık Divanı üyelerini Genel İdare Kurulu üyeleri arasından atar. Partinin TBMM Grup Başkanvekilleri, oy hakları olmamak kaydıyla Başkanlık Divanı toplantılarına katılırlar. Genel Başkan, gerekli gördüğü takdirde, en fazla beş Başkanlık Divanı Üyesini parti üyeleri arasından da atayabilir. Bir kişi üst üste en fazla üç olağan Kurultay döneminde Başkanlık Divanı üyesi olarak görev yapabilir. İlk olağan Kurultaya kadar geçen süre dönem olarak sayılmaz.",
+      "reason":"Tek cümlelik mevcut alıntı sadece en üst icra tanımıdır. Oluşum, GİK'ten atama ve en fazla beş üyeye ilişkin imkân aynı tam paragrafta gerçekten okundu. Paragrafın oy hakkı ve dönem sınırları da kaynakta korunmuştur.",
+      "binding":"Tam paragraf aynı Başkanlık Divanı satırının ilgili bulgularına bağlanmalı; beş kişilik imkân yalnız kısa tanım cümlesine dayanarak yazılmamalıdır."
+    },
+    {
+      "id":"cf-x06","topic_id":"hukumet-iliskileri","claim_index":0,"party_id":"dbp","old_row_id":"0308-dbp-draft-085-row","version_id":"0207-dbp-charter-v1","existing_ref":"0308-dbp-draft-085-passage","location":"Özgün HTML Madde90, ilk tam paragraf",
+      "exact_complete_passage":"Hükümet kurulmasına, bir hükümete katılmaya ya da partinin hükümetten ayrılmasına Parti Meclisi karar verir. Partinin TBMM grubu varsa, bu yetki kullanımına grup başkan vekilleri ve grup yönetim kurulu üyeleri de katılır.",
+      "reason":"Mevcut alıntı yalnız ilk karar cümlesidir. İkinci cümle grubun varlığına bağlı özel katılımı getirir; kaynağın bu koşulu göz ardı edilerek yalnız PM üyeleri yetkili denilemez.",
+      "binding":"İki cümle aynı hükümet-iliskileri satırının ilgili bulgularına bağlanmalı; TBMM grubu koşulu ve katılımcılar bundan sonra senteze alınmalıdır."
+    },
+    {
+      "id":"cf-x07","topic_id":"bilim-kurulu","claim_index":0,"also_required_claim_indices":[1],"party_id":"iyi","old_row_id":"0306-iyi-bilim-kurulu-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-bilim-kurulu-passage","location":"Madde62, PDF index37/basılı38, iki tam paragraf","pdf_page_index":37,"printed_page":"38",
+      "exact_complete_passage":"Parti politikalarını desteklemek amacıyla, dünyada ve Türkiye'de bilimsel ve teknolojik gelişmeleri takip etmek, incelemek, ülkemizde bilimsel ve teknolojik atılım üzerinde çalışmalar yapmak, görüş ve önerilerini Genel Başkana sunmak üzere Bilim Yüksek Kurulu oluşturulabilir. Kurul, Genel Başkana bağlı olarak çalışır. Kurulun yapısı, oluşumu, üye sayısı, görev, yetki ve sorumluluk alanı ile çalışma usul ve esasları Genel Başkan’ın teklifi üzerine Genel İdare Kurulu tarafından yönetmelikle belirlenir.",
+      "reason":"Kurulun fiili varlığını değil kurulabilmesini düzenleyen 'oluşturulabilir' ilk paragraftadır; teklif ve GİK yönetmeliği ikinci paragraftadır. Kısa bağlılık cümlesi tek başına bunları içermez.",
+      "binding":"Tam madde bu bilim-kurulu satırının ilgili bulgularına eklenmeli ve hem0. hem1. karşılaştırma cümlesinin İYİ tarafında kullanılmalıdır."
+    },
+    {
+      "id":"cf-x08","topic_id":"siyasi-etik-kurulu","claim_index":0,"party_id":"iyi","old_row_id":"0306-iyi-siyasi-etik-kurulu-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-siyasi-etik-kurulu-passage","location":"Madde63, PDF index37/basılı38, iki tam paragraf","pdf_page_index":37,"printed_page":"38",
+      "exact_complete_passage":"Genel Merkezde, il ve ilçe teşkilatlarında parti içi demokrasiyi hayata geçirmek, teşkilatlarda görev alanların uymaları gereken siyasi etik ilkelerini belirlemek, parti içi demokrasiye ve siyasi etiğe aykırı davrananlar hakkındaki şikâyet ve başvuruları incelemek üzere Genel Başkan’a bağlı Parti İçi Demokrasi ve Siyasi Etik Yüksek Kurulu oluşturulabilir. Parti İçi Demokrasi ve Siyasi Etik Yüksek Kurulunun oluşumu, görevleri ve işleyişine ilişkin usul ve esaslar Genel Başkan’ın teklifi üzerine Genel İdare Kurulu tarafından yönetmelikle belirlenir.",
+      "reason":"Mevcut ref yalnız yönetmelik cümlesidir. Kurulun amacı, Genel Başkana bağlılığı ve kurulabilme kipi ilk paragrafta gerçekten okunmuştur; disiplin cezası yetkisi eklenmemiştir.",
+      "binding":"Tam madde siyasi-etik-kurulu satırının ilgili bulgularına eklenmeli; yalnız mevcut ikinci paragrafla fiili kurul varlığı veya geniş görev iddiası kurulmamlıdır."
+    },
+    {
+      "id":"cf-x09","topic_id":"gonullu-kurulu","claim_index":0,"party_id":"iyi","old_row_id":"0306-iyi-gonullu-kurulu-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-gonullu-kurulu-passage","location":"Madde66, PDF index38/basılı39, ilk dört tam paragraf","pdf_page_index":38,"printed_page":"39",
+      "exact_complete_passage":"Genel Merkez, il, ilçe ve belde teşkilatlarında diğer kurullar dışında gönüllüler kurulu oluşturulabilir. Gönüllüler kurulu; İYİ Parti üyeleri arasından veya İYİ Parti’ye üyeliği bulunmayan sürekli veya geçici nitelikte, ücretsiz olarak çalışacak parti gönüllülerinden oluşur. Gönüllüler kuruluna, her kademede teşkilat başkanı tarafından görevlendirilen bir Parti üyesi başkanlık eder. Genel Merkez gönüllüler kurulu başkanını Genel Başkan görevlendirir.",
+      "reason":"Kurulun kurulabilmesi, dört düzey ve parti üyesi başkanın görevlendirilmesi mevcut bileşim alıntısının dışında kalır. İlk dört paragraf birlikte okundu; genel merkez başkanını görevlendiren Genel Başkan kuralı ayrıca korundu.",
+      "binding":"Bu dört paragraf aynı gönüllü-kurulu satırının ilgili bulgularına eklenmeli; parti üyesi olmayan gönüllü ile parti üyesi olması gereken başkan aynı statü yapılmamalıdır."
+    },
+    {
+      "id":"cf-x10","topic_id":"tuzuk-yurutme","claim_index":1,"party_id":"dbp","old_row_id":"0308-dbp-draft-125-row","version_id":"0207-dbp-charter-v1","existing_ref":"0308-dbp-draft-125-passage","location":"Özgün HTML Madde54, özneyi belirleyen başlık/giriş ve ilk iki görev paragrafı",
+      "exact_complete_passage":"Parti Eş Genel Başkanlarının Görev ve Yetkileri Madde 54 Eş Genel Başkanlar; Partiyi temsil eder ve disiplin kurulları dışında tüm parti organlarının doğal başkanlarıdır. Bu kurulların toplantılarına bu sıfatla katılabilir. Parti Meclisi, Merkez Yürütme Kurulu ve diğer yönetim kurullarında oy kullanabilirler. Tüzük, program hükümleri, büyük kongre ve PM kararları ışığında parti çalışmalarını yürütür. Yetkili kurullarca verilen kararların uygulanmasını sağlar. Parti örgütüne ve ilgililere gerekli gördüğü bildirimleri yapar.",
+      "reason":"Kısa 'yürütür' cümlesinin öznesi madde54 girişindeki Eş Genel Başkanlardır. Başlık, özne ve tam görev paragrafı özgün HTML'de okunmuştur; başlıktan kopuk yükleme başka organ atanmadı.",
+      "binding":"Özneyi içeren bu kaynak alanı veya eşdeğer mevcut tam pasaj aynı yürütme satırının ilgili bulgularına bağlanmalıdır. Diğer organların başkanlığına ilişkin kaynak cümlesi, yalnız burada karşılaştırılan yürütme görevini genişletmek için kullanılmamalıdır."
+    },
+    {
+      "id":"cf-x12","topic_id":"politika-kurullari","claim_index":1,"party_id":"iyi","old_row_id":"0306-iyi-scope-politika-kurullari-context-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-scope-politika-kurullari-passage","location":"Madde64, PDF index37/basılı38, tam madde","pdf_page_index":37,"printed_page":"38",
+      "exact_complete_passage":"Genel Merkezde, ülkenin sorunları ve Parti Programı çerçevesinde çözüm önerileri üreterek parti politikalarını desteklemek, İl ve ilçe teşkilatlarında bulundukları yerin ekonomik, siyasi ve sosyal gelişmeleri, sorunları ve potansiyeli ile çözüm önerileri hakkında inceleme, araştırma ve değerlendirmeler yapmak üzere ihtisas grupları kurabilir. İhtisas grubu üyeleri; uluslararası politika, ekonomi, hukuk, siyaset, eğitim, kültür, sanat, ileri teknoloji, terör ve sosyal huzur, işsizlik ve istihdam, tarım, turizm, özel teşebbüs, üretim, enerji, denizcilik, yatırım ve finansman, yurt dışında yaşayan Türkler ve akraba toplulukları ve benzeri konularda; kendi alanında bilgi, deneyim ve iyi üne sahip kişiler arasından seçilir. İhtisas grupları Genel Merkez’de Genel Başkan’a, il teşkilatında il başkanına, İlçe teşkilatında ilçe başkanına bağlıdır. İhtisas gruplarının oluşumu, görevleri, yetkileri ve işleyişine ilişkin usul ve esaslar Genel Başkan'ın teklifi üzerine Genel İdare Kurulu tarafından yönetmelikle belirlenir.",
+      "reason":"Mevcut bağlam ref'i yalnız bağlılığı verir. Tam madde araştırma ve çözüm görevlerini merkez/yerel olarak ayırır; üyelerin bilgi-deneyim-iyi ün şartını ve yönetmelik yolunu da içerir. Bu hüküm Politika Kurulu adlı başka bir organın kanıtı değildir.",
+      "binding":"Tam madde aynı mevcut politika-kurullari bağlam satırının ilgili bulgularına eklenmeli; araştırma görevleri ve düzeyleri yalnız kısa bağlılık pasajından türetilmemelidir."
+    }
+  ],
+  "required_evidence_bindings":[
+    {"topic_id":"kolektif-calisma","claim_index":0,"expansion_ids":["cf-x01"],"reason":"EMEP'in bireysel sorumluluk ve inisiyatif koşulu ikinci cümlededir."},
+    {"topic_id":"kolektif-calisma","claim_index":1,"expansion_ids":["cf-x04"],"reason":"DEM eş sözcülük hükmü komisyon/çalışma grubu alanıyla birlikte bağlanmalıdır."},
+    {"topic_id":"politika-kurullari","claim_index":1,"expansion_ids":["cf-x12"],"reason":"İYİ Parti ihtisas gruplarının görevleri kısa bağlılık cümlesinin dışındadır."},
+    {"topic_id":"baskanlik-divani","claim_index":0,"expansion_ids":["cf-x05"],"reason":"İYİ Parti üyelerinin atama yolu ve beş kişilik imkânı kısa icra kurulu tanımında yoktur."},
+    {"topic_id":"baskanlik-divani","claim_index":2,"expansion_ids":["cf-x03"],"reason":"Yeni Parti disiplin kurulu üyeleri için görev yasağı ikinci fıkradadır."},
+    {"topic_id":"hukumet-iliskileri","claim_index":0,"expansion_ids":["cf-x02","cf-x06"],"reason":"Yeni Parti özel PM oy hakkı ve DBP'nin grup varsa katılım koşulu tam paragraflarla bağlanmalıdır."},
+    {"topic_id":"bilim-kurulu","claim_index":0,"expansion_ids":["cf-x07"],"reason":"İYİ Parti kurulabilme kipi ve kuruluş usulü kısa bağlılık cümlesinde yoktur."},
+    {"topic_id":"bilim-kurulu","claim_index":1,"expansion_ids":["cf-x07"],"reason":"Bilimsel-teknolojik amaç ve Genel Başkana öneri sunma görevi ilk paragraftadır."},
+    {"topic_id":"siyasi-etik-kurulu","claim_index":0,"expansion_ids":["cf-x08"],"reason":"İYİ Parti görev/bağlılık/oluşturulabilir kapsamı ilk paragraftadır."},
+    {"topic_id":"gonullu-kurulu","claim_index":0,"expansion_ids":["cf-x09"],"reason":"İYİ Parti kurulun düzeylerini ve üye başkan görevlendirmesini ayrı paragraflarda düzenler."},
+    {"topic_id":"tuzuk-yurutme","claim_index":1,"expansion_ids":["cf-x10"],"reason":"DBP yürütme cümlesinin öznesi başlık ve girişle tamamlanmalıdır."}
+  ],
+  "existing_complete_context_bindings":[
+    {"topic_id":"politika-kurullari","claim_index":0,"old_row_id":"0310-saadet-1-044-politika-kurullari-row","ref":"0310-saadet-1-044-politika-kurullari-context","reason":"Madde27/B'nin amacı ilk cümlede, yönetmelik aracı ikinci cümlededir; index12/basılı13 tam kaynak sayfası zaten bu satıra bağlıdır."},
+    {"topic_id":"politika-kurullari","claim_index":0,"old_row_id":"0312-demokrat-2-047-politika-kurullari-row","ref":"0312-demokrat-2-047-politika-kurullari-context","reason":"Madde50/D2'nin öneri alanları ve benimseme/Genel Başkan/GİK aşamaları index30/basılı30 tam bağında vardır."},
+    {"topic_id":"politika-kurullari","claim_index":1,"old_row_id":"0304-tip-charter-context-politika-kurul-html-row","ref":"0304-tip-komite-buro-p1","reason":"Komisyonların politika önerisi görevi tam madde3.22'de vardır; yalnız üyelik yasağı q pasajı bu görevi kanıtlamaz."},
+    {"topic_id":"baskanlik-divani","claim_indices":[0,1],"old_row_id":"0310-saadet-1-036-baskanlik-divani-row","ref":"0310-saadet-1-036-baskanlik-divani-context","reason":"Madde22 tam sayfası GİK onayı, kadın/gençlik başkanlarının üyeliği ve gözlemci davetini ayrı ayrı içerir."},
+    {"topic_id":"sivil-toplum-iliskileri","claim_index":1,"old_row_id":"0312-demokrat-2-082-sivil-toplum-iliskileri-row","ref":"0312-demokrat-2-082-sivil-toplum-iliskileri-context","reason":"Madde17/II/3, temel teşkilat yönetim kurulu kararı ve ilçe/il/Genel Merkeze bağlılığı kısa kuyruk alıntısından önce verir; tam index12/basılı12 bağında okunmuştur."},
+    {"topic_id":"bilim-kurulu","claim_index":0,"old_row_id":"0312-demokrat-2-050-bilim-kurulu-row","ref":"0312-demokrat-2-050-bilim-kurulu-context","reason":"Madde65/B'nin sayı artırma ve görev sonu paragrafı index37/basılı37'dedir; mevcut20 kişilik q tek başına yeterli değildir."},
+    {"topic_id":"bilim-kurulu","claim_index":1,"old_row_id":"0304-tip-bilim-row","ref":"0304-tip-bilim-p1","reason":"Uzman üye/gönüllü bileşimi, politika uyumlu bilgi üretimi ve yönetmelik yolu aynı Bilim Kurulu maddesindedir. Sonraki hukukçu platformunun yetkileri ayrıdır."},
+    {"topic_id":"gonullu-kurulu","claim_index":0,"old_row_id":"0304-tip-charter-context-gonullu-html-row","ref":"0304-tip-komite-buro-p1","reason":"Büro ve komitelerin üyelik şartı ile komisyonların gönüllü katılımını anlatan iki cümle aynı tam p1'de bulunur ve bu satıra zaten bağlıdır."},
+    {"topic_id":"tuzuk-yurutme","claim_index":1,"old_row_id":"0304-tip-charter-context-yurutme-html-row","ref":"0304-tip-yonetmelik-p1","reason":"PM öznesi ve yönetmelik/genelge yetkisi tam madde3.7 ilk paragrafındadır."},
+    {"topic_id":"partili-yazarlar","claim_index":0,"old_row_id":"0312-demokrat-2-001-partili-yazarlar-row","ref":"0312-demokrat-2-001-partili-yazarlar-context","reason":"Madde16'nın ikinci cümlesi ifade sınırını korur; kısa izin cümlesiyle sınırsız yayın hakkı oluşturulamaz."},
+    {"topic_id":"partili-yazarlar","claim_index":0,"old_row_id":"0310-saadet-2-row-0313","ref":"0310-saadet-2-context-028-context","reason":"Index19/basılı20 tam sayfası madde50/a/1'in uyarma cezası kategorisini gösterir; genel yayın disiplini yazar statüsü değildir."},
+    {"topic_id":"temsilciler-meclisi","claim_index":0,"old_row_id":"0312-demokrat-1-107-temsilciler-meclisi-row","ref":"0312-demokrat-1-107-temsilciler-meclisi-context","reason":"Madde46/A kısa pasajı gündem sözcüğünde kesilir; tam cümle ve yılda en az bir toplantı zorunluluğu kaynak sayfasında okunmuştur."},
+    {"topic_id":"temsilciler-meclisi","claim_index":0,"old_row_id":"0304-tip-charter-context-temsilci-meclis-html-row","ref":"0304-tip-genisletilmis-p1","reason":"Madde4.10 iki cümleyle PM çağrısı ve komite/büro dahil katılım listesini verir; bu toplantı ayrı adlı organla özdeşleştirilmez."}
+  ],
+  "cross_report_corrections":[
+    {
+      "target_research_file":"/tmp/gsd-0314-charter-more-independent.json","topic_id":"genisletilmis-toplanti","claim_index":0,"party_id":"yeni-parti","old_row_id":"0303-epm-genisletilmis-toplanti-row","version_id":"epm-charter-v1",
+      "issue":"Önceki cümlenin Yeni Parti parçası madde22/7'nin genel oy yasağını istisnasız sunuyordu. Aynı tüzüğün22/11-f bendi hükümet konularında TBMM grup yöneticilerine açık oy hakkı verir; iki hüküm birlikte aktarılmalıdır.",
+      "replacement_text":"Yeni Parti'nin genel PM katılım hükmü TBMM grup başkanvekilleri, grup yönetim kurulu üyeleri ile kadın ve gençlik kolları genel başkanlarına söz ve öneri hakkı verirken oy kullanamayacaklarını belirtir; hükümet kurma, katılma ve çekilme konularında ise TBMM grup başkanvekilleri ve grup yönetim kurulu üyeleri PM toplantısına katılıp oy kullanır. DBP ve DEM'de PM bilgi almak veya görüşmek için belirli partili yöneticileri davet ederek geniş toplantı yapabilir; PM üyesi olmayan davetliler oy kullanamaz.",
+      "replacement_explanation":"Yeni Parti'de madde22/7 genel katılım kuralı,22/11-f hükümet kararları için özel oy hakkıdır; kadın ve gençlik kolları başkanlarına aynı özel oy hakkı bu bentten çıkarılamaz. DBP ve DEM'in PM üyesi olmayan davetlilere ilişkin oy sınırı kendi tam kaynak paragraflarına bağlı kalır.",
+      "replacement_new_parti_reason":"Özgün HTML'de22/7 ve22/11-f birlikte okundu. TBMM grup yöneticilerinin özel oy hakkı yalnız hükümet kurma, katılma ve çekilme konuları içindir. Genel yasak ile özel izin birlikte bağlanmadan önceki Yeni Parti cümlesi kullanılamaz.",
+      "existing_general_ref":"0303-epm-detail9-organ-toplanti-parti-meclisinde-oy-hakk-olmayan-kat-l-m-p","required_additional_expansion_id":"cf-x02",
+      "binding":"cf-x02 tam pasajı yeni hükümet-iliskileri satırına eklenmesinin yanında, önceki genisletilmis-toplanti satırının ilgili summary/quote bulgularına da açıkça bağlanmalıdır. Yalnız aynı sürümde bulunması iki satır arasında kanıt bağı kurmaz.",
+      "mutation_status":"Bu düzeltme yalnız yeni araştırma dosyasında önerildi; önceki araştırma dosyası veya üretim kayıtları bu ajan tarafından değiştirilmedi."
+    }
+  ],
+  "field_audit":{
+    "actually_inspected":"Mevcut4da93e2c64914eecb875c66cca14ea57 SQLite anlık görüntüsündeki gerçek taxonomy2 ve taxonomy3 alan metinleri açılıp okundu. V4 için /tmp/gsd-0314-v4-row-lineage-draft.json kayıtları açıldı: aşağıdaki dört satırın04-... kimliklerine changes=[] ile devredildiği görülüyor. Ayrı bir çalışan v4 veritabanı açılmış gibi iddia edilmez.",
+    "corrections":[
+      {
+        "classification":"field_scope_correction","topic_id":"parti-defterleri","party_id":"iyi","v3_row_id":"03-v3-0306-iyi-parti-defterleri-row","v3_field_id":"03-v3-0306-iyi-parti-defterleri-field","summary_finding_id":"0306-iyi-parti-defterleri-summary","v4_lineage_row_id":"04-03-v3-0306-iyi-parti-defterleri-row","v4_lineage_field_id":"04-03-v3-0306-iyi-parti-defterleri-field",
+        "current_summary":"Her kademedeki teşkilatın üye, başvuru, karar, gelen-giden evrak, gelir-gider ve demirbaş defterlerini tutması gerekir.",
+        "issue":"Her kademede üye kayıt defteri tutma şeklindeki genel ifade, aynı sürümün madde5'indeki yalnız ilçe istisnasını dışarıda bırakır. Sadece sentezi daraltmak alanın kendi yanlış genelliğini düzeltmez.",
+        "proposed_summary":"Tüzük her kademe için üye kayıt, üye başvuru, karar, gelen-giden evrak, gelir-gider ve demirbaş defterlerini sayar; üye kayıt defteri yalnız ilçe teşkilatlarında bulundurulur.",
+        "version_id":"0205-iyi-charter-download-v1","exact_sources":[{"location":"Madde78, PDF index48/basılı49","exact":"Her kademedeki İYİ Parti teşkilatları; üye kayıt defteri, üye başvuru defteri, karar defteri, gelen ve giden evrak kayıt defteri, gelir ve gider defteri ile demirbaş eşya defteri tutmak zorundadırlar."},{"location":"Madde5, PDF index5/basılı6","exact":"Üye kayıt defteri sadece ilçe teşkilatlarında bulundurulur."}],
+        "binding":"0306-iyi-parti-defterleri-passage genel listeye zaten bağlıdır. Var olan0306-iyi-scope-uye-portali-passage yalnız-ilçe cümlesini tam içerir; bu pasaj parti-defterleri alanının ilgili bulgularına da eklenmelidir. Önceki charter-more cm-x06 aynı tam cümleyi belgelemiştir."
+      },
+      {
+        "classification":"field_scope_correction","topic_id":"mahalle-koy-temsilciligi","party_id":"demokrat","v3_row_id":"03-v3-0312-demokrat-1-015-mahalle-koy-temsilciligi-row","v3_field_id":"03-v3-0312-demokrat-1-015-mahalle-koy-temsilciligi-f","summary_finding_id":"0312-demokrat-1-015-mahalle-koy-temsilciligi-s","v4_lineage_row_id":"04-03-v3-0312-demokrat-1-015-mahalle-koy-temsilciligi-row","v4_lineage_field_id":"04-03-v3-0312-demokrat-1-015-mahalle-koy-temsilciligi-f",
+        "current_summary":"İlçe yönetim kurulu köy ve mahallelerde temsilci atar; temsilci bir yardımcı seçer.",
+        "issue":"Atama bütün köy/mahalleler için genelmiş gibi görünür; özgün paragraf önce büyükşehir merkez ilçesi mahallelerinde seçilmiş yönetim, bunun dışında atama düzenler. Bu nedenle alanın kendisine coğrafi koşul eklenmelidir.",
+        "proposed_summary":"Büyükşehir statüsü uygulanan şehirlerin merkez ilçesi mahallelerinde, o mahalledeki üyelerin kongresi bir başkan ve dört üyeli yönetim seçer. Bunun dışındaki yerlerde ilçe yönetim kurulu bir parti üyesini temsilci atar; temsilci bir yardımcı seçer. Temsilci ve yardımcısının görevi bağlı ilçe yönetiminin süresiyle sınırlıdır.",
+        "version_id":"0210-demokrat-charter-archive-v1","location":"Madde17, PDF index12/basılı12, mahalle/köy temsilciliklerine ilişkin tam paragraf",
+        "exact_complete_passage":"Ayrıca, Büyükşehir Belediye statüsünün uygulandığı şehirlerin merkez ilçelerindeki mahallelerde temsilcilikler kurulur. Temsilcilik kurulan mahallelerde oturan üyelerin katılımı ile düzenlenen kongrelerde İlçe Teşkilatına benzer yönetim ile 1 başkan ve 4 üyeden oluşan yönetim kurulları seçilir. Bunun dışında kalan diğer il ve ilçelerde, temel teşkilat yönetim kurullarının kararı ile köy ve mahalle temsilcilikleri kurulur. İlçe yönetim kurulu, ilçeye bağlı köy ve mahallelerde partiyi temsil edecek parti üyeleri içinden 1 kişiyi temsilci olarak atar. Temsilci kendine 1 yardımcı seçer. Temsilci ve yardımcının görevi bağlı olduğu ilçe yönetim kurulu’nun görev süresi kadardır.",
+        "binding":"0312-demokrat-1-015-mahalle-koy-temsilciligi-context tam kaynak sayfası zaten bu alanın bulgularına bağlıdır. Alan özeti yukarıdaki iki usulü birlikte yansıtmalı; doğrudan alıntı genişletilecekse özgün tam paragraf kullanılmalıdır."
+      },
+      {
+        "classification":"row_level_metadata_correction","topic_id":"sivil-toplum-iliskileri","party_id":"demokrat","v3_row_id":"03-v3-0312-demokrat-2-082-sivil-toplum-iliskileri-row","v3_field_id":"03-v3-0312-demokrat-2-082-sivil-toplum-iliskileri-f","summary_finding_id":"0312-demokrat-2-082-sivil-toplum-iliskileri-s","v4_lineage_row_id":"04-03-v3-0312-demokrat-2-082-sivil-toplum-iliskileri-row","v4_lineage_field_id":"04-03-v3-0312-demokrat-2-082-sivil-toplum-iliskileri-f",
+        "current_level":"merkez","proposed_level":"merkez ve yerel","current_summary":"Gerekli görülen yerlerde yönetim kurulu kararıyla Demokratik Kitle Örgütleri Temsilciliği kurulabilir.",
+        "issue":"Alan özeti tek başına yanlış bir kurul varlığı ileri sürmez; ancak satırın yalnız merkez etiketi özgün metindeki ilçe/il/Genel Merkez bağlılığından daha dardır. Kararı veren temel teşkilat yönetim kurulu da somutlaştırılabilir.",
+        "proposed_summary":"Gerekli görülen yerlerde temel teşkilat yönetim kurullarının kararıyla ilçe, il veya Genel Merkez teşkilatına bağlı Demokratik Kitle Örgütleri Temsilciliği kurulabilir; kuruluş bulunduğu yerdeki temel teşkilat kademesine bağlı çalışır.",
+        "version_id":"0210-demokrat-charter-archive-v1","location":"Madde17/II/3 ve sonraki bağlılık cümlesi, PDF index12/basılı12",
+        "exact_complete_passage":"3. Genel İdare Kurulu kararı ile Genel Merkeze bağlı olarak yurt dışı temsilcilikler ile gerek görülen yerlerde temel teşkilat yönetim kurulları kararı ile İlçe, İl ve Genel Merkez Teşkilatına bağlı olarak köy ve mahalle temsilcilikleri, Demokratik Kitle Örgütleri Temsilciliği, İşçi ve Sosyal Güvenlik Kurulları ile diğer yan kuruluşlar kurulabilir. Bütün bu kuruluşlar, bulundukları yerdeki Temel Teşkilat kademelerine bağlı olarak çalışırlar.",
+        "binding":"Mevcut0312-demokrat-2-082-sivil-toplum-iliskileri-context tam sayfa bu karar/bağlılık kapsamını içerir. Kısa kuyruk alıntısı yeni bir merkezle sınırlama yaratmamalıdır."
+      },
+      {
+        "classification":"field_exception_correction","topic_id":"genisletilmis-toplanti","party_id":"yeni-parti","v3_row_id":"03-v3-0303-epm-genisletilmis-toplanti-row","v3_field_id":"03-v3-0303-epm-genisletilmis-toplanti-field","summary_finding_id":"0303-epm-detail9-organ-toplanti-parti-meclisinde-oy-hakk-olmayan-kat-l-m-summary","v4_lineage_row_id":"04-03-v3-0303-epm-genisletilmis-toplanti-row","v4_lineage_field_id":"04-03-v3-0303-epm-genisletilmis-toplanti-field",
+        "current_summary":"TBMM grup başkanvekilleri ve yönetim kurulu üyeleri ile kadın ve gençlik kolları genel başkanları Parti Meclisinde söz ve öneri hakkıyla bulunabilir; oy kullanamaz.",
+        "issue":"Genel oy yasağı madde22/11-f'deki hükümet gündemine özgü açık oy hakkını dışarıda bırakır; yalnız karşılaştırma cümlesini düzeltmek alanı onarmaz.",
+        "proposed_summary":"TBMM grup başkanvekilleri ve grup yönetim kurulu üyeleri ile kadın ve gençlik kolları genel başkanları PM toplantılarına katılıp söz alabilir ve öneri sunabilir; madde22/7 genel kuralında oy kullanamazlar. Hükümet kurma, katılma ve çekilme konularında ise TBMM grup başkanvekilleri ve grup yönetim kurulu üyeleri toplantıya katılıp oy kullanırlar.",
+        "proposed_organ":"Parti Meclisinde katılım ve oy hakkı","version_id":"epm-charter-v1","location":"Madde22/7 ile22/11-f birlikte",
+        "exact_general_passage":"(7) Parti Meclisi toplantılarına, partinin TBMM grup başkanvekilleri, grup yönetim kurulu üyeleri, kadın kolları ve gençlik kolları genel başkanları da katılabilir, söz alabilir ve önerilerde bulunabilir; ancak oy kullanamazlar.",
+        "exact_exception_expansion_id":"cf-x02",
+        "binding":"Mevcut genel katılım pasajının yanında cf-x02 tam özel hükmü genisletilmis-toplanti alanının ilgili tüm bulgularına bağlanmalı; oy hakkı olmayan katılım şeklindeki organ etiketi de özel oy hakkını dışlamayacak biçimde düzeltilmelidir."
+      }
+    ],
+    "synthesis_narrowing_or_binding_sufficient":[
+      {"topic_id":"hukumet-iliskileri","row_ids":["03-v3-0303-epm-eighth-hukumet-iliskileri-row","03-v3-0308-dbp-draft-085-row"],"reason":"Mevcut alanlar PM'nin karar yetkisini söylüyor; 'yalnız PM üyeleri katılır' demiyor. Bu dar karar atfı kendi başına yanlış değildir. Sentez katılım/oy düzenini karşılaştırıyorsa cf-x02/cf-x06 tam hükümlerini bağlayıp koşulları eklemek gerekir; istenirse alanlar da bu katılımla zenginleştirilebilir."},
+      {"topic_id":"bilim-kurulu","row_ids":["03-v3-0306-iyi-bilim-kurulu-row"],"reason":"Mevcut alan yalnız Genel Başkana bağlılığı tarif eder, fiilen kurulmuş olduğunu açıkça söylemez. Sentezde oluşturulabilir kipi ve kuruluş yolu korunup cf-x07 bağlanmalıdır. Alan metnine oluşturulabilen nitelemesi eklemek açıklığı artırır; fakat mevcut bağlılık önermesinin kendisini yanlış saymak için ayrı bir gerekçe yoktur."},
+      {"topic_id":"bilim-kurulu","row_ids":["03-v3-0312-demokrat-2-050-bilim-kurulu-row"],"reason":"Mevcut DP alanı20 sayısının GİK tarafından artırılabileceğini zaten içerir. Sentez görev süresi veya başkanlık ekliyorsa aynı tam index37 bağını kullanmak yeterlidir; sayı nedeniyle yeni alan düzeltmesi gerekmiyor."},
+      {"topic_id":"parti-defterleri","row_ids":["03-v3-0310-saadet-2-row-0216","03-v3-0310-saadet-2-row-0218","03-v3-0310-saadet-2-row-0220","03-v3-0310-saadet-2-row-0222"],"reason":"Dört Saadet alanı üye defterinin yalnız ilçe yönetimlerinde tutulduğunu zaten açıkça içerir. Kısa quote bu devamı atladığı için tam sayfa ref'i korunmalıdır; alanı yalnız genel listeye indirerek yeniden yazmak yanlış olur."},
+      {"topic_id":"uzlasma-kurulu","row_ids":["03-v3-0305-dem-uzlasma-dem-row","03-v3-0305-dem-uzlasma-hedep-row"],"reason":"Mevcut alanlar yalnız iki yıllık seçim ve beş asıl/iki yedek bileşimi tarif eder. Genel uyuşmazlık çözme yetkisi iddia etmedikleri için görev koşullarını çiğnemiyorlar. Senteze görev eklenecekse tarafların kabulü ve disiplin alanının dışında kalma koşulları tam madde21 ile birlikte eklenmelidir."},
+      {"topic_id":"tuzuk-yurutme","row_ids":["03-v3-0306-iyi-tuzuk-yurutme-row"],"reason":"Mevcut İYİ alanı doğru biçimde tüzük değişikliğinin yürütülmesi diyor. Sentez bunu bütün tüzük hükümlerinin yürütülmesine genelleştirmemelidir; alan düzeltmesi gerekmiyor."},
+      {"topic_id":"siyasi-etik-kurulu","row_ids":["03-v3-0306-iyi-siyasi-etik-kurulu-row"],"reason":"Mevcut alan yönetmelik/teklif usulünü anlatır; fiili kuruluş veya disiplin cezası yetkisi iddia etmez. Sentezde oluşturulabilir kipi, görev ve Genel Başkana bağlılık cf-x08 ile tamamlanmalıdır."},
+      {"topic_id":"gonullu-kurulu","row_ids":["03-v3-0306-iyi-gonullu-kurulu-row"],"reason":"Mevcut alan oluşabilir kipiyle bileşimi verir; yeni sentezde dört düzey ve üye başkan şartı cf-x09 ile eklenir. Alanın kendisi ücretli/ücretsiz veya başkan üyeliğine ilişkin ters bir iddia kurmaz."}
+    ]
+  },
+  "rendered_visual_evidence":[
+    {"related_research_file":"/tmp/gsd-0314-charter-more-independent.json","related_expansion_id":"cm-x11","version_id":"0203-tip-charter2022-v1","sha256":"e86237895eda1cec2e66ac388ce7b9cd7096e86dfc9f1cccdd93ab1a298e4a60","original_path":"data/objects/e86237895eda1cec2e66ac388ce7b9cd7096e86dfc9f1cccdd93ab1a298e4a60/original.pdf","pdf_page_index":22,"printed_page":"21","render_path":"/tmp/gsd-0314-tip2022-index22-white.png","method":"Özgün PDF sayfası Poppler/Cairo ile beyaz zemine render edildi; önce bellekteki sayfa, sonra orkestratörün isteğiyle oluşturulan kalıcı PNG dosyası doğrudan görüntülenip okundu.","scope":"Madde4.10'un iki tam cümlesi: PM'nin gerek gördüğünde çağrısı ve katılım listesi. Bu sayfanın listesinde komite sözcüğü geçmez; HTML nüshanın listesiyle karıştırılmaz. Bu sayfa okuması PDF'nin bütününde yokluk iddiası değildir."}
+  ],
+  "review_limits":[
+    "Bu11 konuda yeni scope/yokluk sonucu üretilmedi. Genel merkez organları listesi, birim örgütü tanımı veya büro kurma yetkisinden belirli adlı başka kurulun varlığı/yokluğu türetilmedi.",
+    "Yeni Yol'un11 konudaki aynı tam tüzük açığı13.11.2026 tarihli0307-yeni-yol-search-charter-20261113 denemesi ve0307-yeni-yol-missing-charter kaydına dayanır. Bu11 ayrı konu araması yapılmış veya11 tutum bulunmadığı saptanmış gibi sunulmaz.",
+    "Kurul oluşturulabilir denilen yerde fiili kuruluş; görev veya yetki düzenleyen yerde gerçekleşmiş uygulama başarısı ileri sürülmez. Belge adları ve arşiv rolleri korunur.",
+    "Yeni Parti oy hakkı istisnası önceki charter-more araştırma cümlesini ve kendi alan özetini birlikte sınırlar. İlgili eski dosya veya üretim kayıtları burada değiştirilmedi; düzeltme önerisi bu dosyada somut tam kaynakla verildi.",
+    "semantic_reason alanları her taraf için elle yazılmış araştırma gerekçeleridir. Üretim decision.sides sözleşmesi yalnız party_id,row_id,support,refs kabul ediyorsa gerekçeler araştırmada veya uygun açıklama alanında korunmalı; sözleşmeye kendiliğinden yeni anahtar eklenmemelidir.",
+    "Repo, veritabanı ve kilitler değiştirilmedi. Bu görevde yalnız bu araştırma JSON'u; ayrıca orkestratörün açık sonradan talebiyle TİP index22 kalıcı kaynak görseli oluşturuldu."
+  ]
+}

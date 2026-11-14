@@ -1,0 +1,481 @@
+{
+  "snapshot": "ae42ae1897864fda810b033ce3ac1e8f",
+  "research_method": "On beş konu mevcut 220 tamamlanmış konu, assembly-claims dosyasındaki üç konu ve policy_completion araştırmacısının teyit ettiği yirmi tüzük konusu dışlanarak seçildi. Gerçek karşılaştırma satırları, alan metinleri, bağlı alıntılar ve belge sürümü kayıtları okundu. Yeni Parti, TİP, DBP ve EMEP'in özgün HTML tüzük bölümleri; Saadet, İYİ Parti, DEM ve Demokrat Parti'nin ilgili özgün PDF sayfaları okundu. DBP taramasının index47/basılı48'i ile TİP 2022 dosya adlı PDF'nin index22/basılı21'i görsel okundu. HEDEP kısaltmalı nüshanın index14–15'i de okundu; bu nüsha DEM kısaltmalı belgenin kabul veya yürürlük tarihini kanıtlamak için kullanılmadı. Bütün karşılaştırma cümleleri, açıklamaları ve taraf gerekçeleri elle yazıldı. Betik yalnız envanter, bağlantı ve özgün metin eşleştirme kontrolü içindir. Üç DBP yokluk tarafı daha önce kaydedilmiş tam belge incelemesini aynen kullanır; bu görevde madde1–114 yeniden bütünüyle okunmuş gibi sunulmaz.",
+  "source_roles": [
+    {"version_id":"epm-charter-v1","role":"Yeni Parti'nin yenipartiyiz.biz/parti-tuzugu adresindeki HTML tüzüğü. Yayıncı tarihinden her maddenin kabul tarihi çıkarılmaz."},
+    {"version_id":"0203-tip-charter-v1","role":"TİP'in tip.org.tr/tuzuk HTML tüzüğü; kabul tarihi saptanmamış nüsha."},
+    {"version_id":"0203-tip-charter2022-v1","role":"TİP'in dosya adında 2022 geçen ayrı PDF tüzüğü; HTML ile farklar korunur, dosya adı kabul/yürürlük sırasını tek başına belirlemez."},
+    {"version_id":"0204-dem-charter-v1","role":"DEM kısaltmalı PDF tüzüğü. Kurulların ve koşulların kaynağı bu somut nüshadır; kabul tarihi saptanmamıştır."},
+    {"version_id":"0204-dem-charter-older-v1","role":"HEDEP kısaltmasıyla kayıtlı alternatif PDF. Bu görevde madde21–23 okundu; metadata etiketi tek başına hukuki yürürlük sırası sayılmadı."},
+    {"version_id":"0205-iyi-charter-download-v1","role":"İYİ Parti'nin 18.01.2026 değişikliklerini içeren 54 sayfalık PDF tüzüğü. Hükümler değişiklik notlarıyla birlikte okundu."},
+    {"version_id":"0207-dbp-charter-v1","role":"DBP'nin 12.01.2025 kongre değişiklik notlu HTML tüzüğü; gelir aktarım oranını MYK kararına bırakan madde109 bu nüshadadır."},
+    {"version_id":"0207-dbp-charter-older-v1","role":"Yargıtay'daki tarihsiz 49 sayfalık tarama. Madde108'deki yüzde15/yüzde10 aktarım kuralı görsel okunmuştur; bu oran HTML nüshasına taşınmaz."},
+    {"version_id":"0208-emep-program-charter-v1","role":"EMEP'in birleşik program-tüzük HTML yayınının tüzük kısmı. Bu çalışmadaki maddeler program talepleri veya kongre önergesi değildir."},
+    {"version_id":"0209-saadet-current-charter-v1","role":"Saadet'in 25 sayfalık PDF tüzüğü; son açıklamasında 03.11.2019 kongre değişiklikleri sayılır. İndirme dosya tarihi her maddenin kabul tarihi değildir."},
+    {"version_id":"0210-demokrat-charter-archive-v1","role":"Demokrat Parti'nin 2022 dosya adlı arşiv PDF tüzüğü. Tarihsel DYP programı ile karıştırılmaz; kabul tarihi arşiv tarihinden türetilmez."}
+  ],
+  "topics": [
+    {
+      "topic_id":"onsecim-kurulu",
+      "claims":[
+        {
+          "text":"Yeni Parti, örgüt denetimindeki önseçim ve aday yoklamasını örgüt içinde belirlenecek ilçe, il ve merkez seçim kurullarına verir. İYİ Parti'nin önseçimi ise yargı denetim ve gözetiminde, ilçe seçim kurulunun gözetiminde gizli oy ve açık tasnifle yapılır.",
+          "claim_type":"multi_positive",
+          "explanation":"Yeni Parti'deki kurullar örgüt içinde kurulur; İYİ Parti'nin ilçe seçim kurulu yargısal gözetim bağındadır. Adları benziyor diye aynı organ veya aynı önseçim türü sayılmadı.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-tenth-onsecim-kurulu-row","support":"passage","refs":["0303-epm-tenth-onsecim-kurulu-p","0303-orgut-onsecim-p"],"semantic_reason":"Madde33/3'ün ilk iki cümlesi iki yöntemin örgüt denetiminde olduğunu, üçüncüsü kurulların örgüt içinde belirleneceğini açıklar; ikisi birlikte bağlandı."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-onsecim-kurulu-row","support":"passage","refs":["0306-iyi-onsecim-kurulu-passage"],"semantic_reason":"PDF index40'taki A/Ön seçim tanımı yargısal niteliği açıklar; kısa alıntının ilçe seçim kurulu ibaresi bu tanımla okunmalıdır. Tam tanım için cm-x01 gerekir."}
+          ]
+        },
+        {
+          "text":"Saadet tüzüğü, o seçimde aday adayı olmayan partililerden yönetim kurulunca ilçe seçim kuruluna iki asıl ve iki yedek üye seçilmesini, sandık kurulu için de aynı esası öngörür. İYİ Parti'nin ilgili önseçim hükmü ilçe seçim kurulunun gözetimindeki oylama usulünü belirtir.",
+          "claim_type":"multi_positive",
+          "explanation":"Saadet maddesi parti adına kurul üyeliğine seçilecek kişilerin niteliği ve sayısıyla, İYİ maddesi oylamanın gözetimiyle ilgilidir. Saadet'in bütün ilçe seçim kurulunun yalnız dört partiliden oluştuğu sonucu çıkarılmaz.",
+          "sides":[
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0210","support":"passage","refs":["0310-saadet-2-055-onsecim-kurulu-p","0310-saadet-2-055-onsecim-kurulu-context"],"semantic_reason":"Tam madde55 aynı sayıları sandık kuruluna da uygular. Kaynak yalnız 'Yönetim Kurulu' der; hangi kademenin kurulu olduğu ayrıca uydurulmadı."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-onsecim-kurulu-row","support":"passage","refs":["0306-iyi-onsecim-kurulu-passage"],"semantic_reason":"Kısa alıntı gözetim ile gizli oy/açık tasnifi doğrudan içerir; partinin kurula kaç üye verdiğine ilişkin bir sayı içermez ve cümle böyle bir sayı ileri sürmez."}
+          ]
+        },
+        {"text":"Yeni Yol'un tam tüzüğü bulunamadığından önseçim kurullarının kuruluşu bu belge türünde karşılaştırılamadı.","claim_type":"status_only","explanation":"Kuruluş haberindeki taslak onayı, seçim kurullarının madde metnini sağlamaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-onsecim-kurulu-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"13.11.2026 arama kaydı tam metin açığıdır; önseçim kurullarının bulunmadığı sonucu değildir."}]}
+      ]
+    },
+    {
+      "topic_id":"secim-musahitleri",
+      "claims":[
+        {
+          "text":"Saadet, önseçimde her sandık başına yönetim kurulunca bir müşahit görevlendirilmesini ister ve aday adaylarının müşahit olmasını yasaklar. İYİ Parti, sandık kurulu üyeliği veya müşahitlik gibi verilen seçim görevlerini yerine getirmemeyi kesin çıkarma cezası verilebilen fiiller arasında sayar.",
+          "claim_type":"multi_positive",
+          "explanation":"İlk hüküm önseçim görevlendirmesi ve aday adayının bağdaşmazlığı, ikincisi verilmiş seçim görevine uymamanın olası disiplin sonucudur. İYİ hükmü otomatik üyelik düşmesi olarak aktarılmadı.",
+          "sides":[
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0212","support":"passage","refs":["0310-saadet-2-057-secim-musahitleri-p","0310-saadet-2-057-secim-musahitleri-context"],"semantic_reason":"Madde57'nin son cümlesi aday adaylarına açık yasaktır. Müşahidin sandık başı işlemlerini izlemesi, sandık kurulu üyeliğiyle eşitlenmedi."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-secim-musahitleri-row","support":"passage","refs":["0306-iyi-secim-musahitleri-passage"],"semantic_reason":"Madde76/D girişindeki 'verilebilir' ile k bendi birlikte okundu. Kısa bent ceza türünü tek başına göstermediği için cm-x02 giriş pasajı bağlanmadan kategori kullanılamaz."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzük metni bulunamadığı için müşahit görevlendirmesi ve buna ilişkin üyelik yükümlülükleri belirlenemedi.","claim_type":"status_only","explanation":"Başka partilerin müşahit kuralları Yeni Yol'a mal edilemez; mevcut arama yalnız tam belgeye erişim açığını kaydeder.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-secim-musahitleri-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Müşahitlik yapılıp yapılmadığına ilişkin uygulama iddiası kurulmadı; eksik olan tam tüzüktür."}]}
+      ]
+    },
+    {
+      "topic_id":"onsecim-oy-pusulasi",
+      "claims":[
+        {
+          "text":"Yeni Parti, örgüt denetimindeki önseçim ve aday yoklamasında oy pusulasındaki adayların bölge, cinsiyet ve yaş gibi dağılımlarını dengeleyecek önlemleri yönetmeliğe bırakır. Saadet'te ilçe yönetim kurulu aday adayı listeli pusulaları çoğaltıp yeterli zarfla il ve ilçe seçim kurulu başkanlarına verir; zarfları mühürleyip seçim günü sandık başında bulunduran ilçe seçim kurulu başkanıdır.",
+          "claim_type":"multi_positive",
+          "explanation":"Yeni Parti'nin dağılımı düzenleme aracı ile Saadet'in basım, teslim ve mühürleme işlemleri farklı işlerdir. Yeni Parti'nin hükmü her türlü parti oylamasına genişletilmedi.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-eleventh-onsecim-oy-pusulasi-row","support":"passage","refs":["0303-epm-eleventh-onsecim-oy-pusulasi-p"],"semantic_reason":"Madde33/5 örgüt denetimi şartını ve yönetmelik aracını birlikte içerir. Aday dağılımı dengeleme ifadesinden yeni bir oran çıkarılmadı."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0213","support":"passage","refs":["0310-saadet-2-058-onsecim-oy-pusulasi-p","0310-saadet-2-058-onsecim-oy-pusulasi-context"],"semantic_reason":"Madde58'in ikinci cümlesindeki mühürleme ve sandık başında bulundurma görevi ilçe seçim kurulu başkanına aittir; ilçe parti yönetimine taşınmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından önseçim pusulalarının hazırlanma ve teslim usulü bu metin üzerinden karşılaştırılamadı.","claim_type":"status_only","explanation":"Arama sonucu bir pusula usulüne karşıtlık veya böyle bir usulün kesin yokluğu göstermez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-onsecim-oy-pusulasi-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Aynı adlı eski oluşum ve ortak Meclis grubu aramadan ayrılmıştır; bunların belgelerinden kural aktarılmadı."}]}
+      ]
+    },
+    {
+      "topic_id":"onsecim-esit-oy",
+      "claims":[
+        {
+          "text":"Saadet'te önseçimde eşit oy alanların sırasını Genel İdare Kurulu belirler. DBP'nin parti yaşamında kadınlara pozitif ayrımcılık ilkesini düzenleyen genel hükmü ise eşit oy alan adaylardan biri kadınsa kadın adayın seçilmiş sayılmasını öngörür.",
+          "claim_type":"multi_positive",
+          "explanation":"Saadet maddesi önseçim sırasına özgüdür; DBP maddesi parti çalışma ilkeleri içindeki genel aday eşitliği kuralıdır. DBP hükmü yalnız önseçim için yazılmış bir madde gibi sunulmadı.",
+          "sides":[
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0214","support":"passage","refs":["0310-saadet-2-059-onsecim-esit-oy-p","0310-saadet-2-059-onsecim-esit-oy-context"],"semantic_reason":"Madde60 organı GİK, işlemi üst sıranın belirlenmesi olarak açıkça söyler; kura veya oy tekrarından söz edilmedi."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-117-row","support":"passage","refs":["0308-dbp-draft-117-passage"],"semantic_reason":"Madde4'ün pozitif ayrımcılık paragrafı okundu. 'Adaylardan biri kadın ise' koşulu korunur; aynı cinsiyetteki adaylar için ayrıca sonuç uydurulmadı. Geniş ilke bağlamı cm-x03'te verildi."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından önseçimde eşit oy durumuna ilişkin kuralı saptanamadı.","claim_type":"status_only","explanation":"Eşitliğin nasıl çözüleceği mevcut tam metin yokluğundan çıkarılamaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-onsecim-esit-oy-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam tüzük bulunamaması GİK kararı, kura veya başka bir mekanizmadan herhangi birini Yeni Yol'a atamaya yetmez."}]}
+      ]
+    },
+    {
+      "topic_id":"onsecim-iptal",
+      "claims":[
+        {
+          "text":"DBP, yetkili kurulların önseçim sonuçlarını geçersiz sayması halinde aday ve sıralarının merkez yoklamasıyla belirlenmesini öngörür. Saadet'te herhangi bir nedenle iptal edilen önseçim yenilenmez ve adayları Genel İdare Kurulu belirler.",
+          "claim_type":"multi_positive",
+          "explanation":"Her iki metin önseçimden başka bir belirleme yoluna geçer. DBP'nin 'yetkili kurullar' ifadesi belirli bir kurula çevrilmedi; Saadet'in yenilememe kuralı ise açıkça korundu.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-077-row","support":"passage","refs":["0308-dbp-draft-077-passage"],"semantic_reason":"Madde85'in sonuçların geçersiz sayılması koşulu ve merkez yoklamasına geçişi doğrudan alıntıdadır; iptalin bütün nedenleri veya yetkili kurulun kimliği eklenmedi."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0215","support":"passage","refs":["0310-saadet-2-060-onsecim-iptal-p","0310-saadet-2-060-onsecim-iptal-context"],"semantic_reason":"Madde61'in ikinci cümlesindeki GİK yetkisi tam sayfa bağında vardır. Yalnız kısa ilk cümleyle organ ataması yapılmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tam tüzüğüne ulaşılamadığı için iptal edilen önseçimin ardından izlenecek yol karşılaştırılamadı.","claim_type":"status_only","explanation":"Bu eksik, Yeni Yol'un önseçim yapmayacağı veya iptal kararını belirli bir organa bıraktığı anlamına gelmez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-onsecim-iptal-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"13.11.2026 denemesinde kuruluş haberi madde metni sağlamamıştır; karar sonrası usul açık kalır."}]}
+      ]
+    },
+    {
+      "topic_id":"orgut-gelir-paylasimi",
+      "claims":[
+        {
+          "text":"Yeni Parti'de her il ve ilçe yıllık bütçesinden kadın ve gençlik kollarına birlikte en az yüzde10 ayırır. DBP'nin 2025 değişiklik notlu HTML tüzüğü, hazine yardımı dahil farklı örgüt düzeylerinde elde edilen gelirlerin kadın ve gençlik meclislerine aktarım oranını MYK kararına bırakır; tarihsiz tarama nüshası ise bu gelirlerin yüzde15'inin kadın, yüzde10'unun gençlik meclislerine aktarılmasını yazar.",
+          "claim_type":"multi_positive",
+          "explanation":"Yeni Parti'nin il/ilçe bütçesi tabanı ile DBP'nin elde edilen gelir tabanı aynı değildir. Yeni Parti'deki yüzde10 iki kola birlikte asgaridir. DBP'nin iki farklı nüshası tek ve değişmez oran gibi birleştirilmedi; yürürlük sırası bu okumadan kesinleştirilmedi.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-ninth-orgut-gelir-paylasimi-row","support":"passage","refs":["0303-epm-ninth-orgut-gelir-paylasimi-p"],"semantic_reason":"Madde60/3'te 'Her il ve ilçe', 'yıllık bütçe' ve 'toplam en az' sınırları birlikte korunur. Genel merkezin yeterli pay hükmüne aynı sayısal alt sınır taşınmadı."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-alternative-05-html-row","support":"passage","refs":["0308-dbp-alternative-05-html-passage"],"semantic_reason":"HTML madde109 sabit yüzde koymaz; oranı MYK kararına verir. Belde, ilçe, il ve genel merkezdeki gelirleri ve hazine yardımı kapsamını açıkça içerir."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-alternative-05-scan-row","support":"passage","refs":["0308-dbp-alternative-05-scan-passage"],"semantic_reason":"Özgün tarama index47/basılı48 madde108 görsel okundu; yüzde15 kadın ve yüzde10 gençlik ayrımı doğrulandı. Tarihsiz nüsha HTML'in güncel oranı olarak sunulmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından örgütler veya yan kuruluşlar arasındaki gelir paylaşım kuralı belirlenemedi.","claim_type":"status_only","explanation":"Belge eksikliği belirli bir bütçe oranının uygulanmadığını kanıtlamaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-orgut-gelir-paylasimi-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Ana partilerin veya Meclis grubu ortaklarının mali kuralları yeni tüzel kişiliğin tüzüğü yerine kullanılmadı."}]}
+      ]
+    },
+    {
+      "topic_id":"parti-sinif-bilesimi",
+      "claims":[
+        {
+          "text":"EMEP tüzüğü üye bileşiminin asıl kaynağını işçi sınıfı olarak tanımlar. TİP tüzüğü kendisini, işçi sınıfının partisi olarak sermaye düzeninin sömürüsü ve tahakkümüne maruz kalan bütün emekçilerin partisi şeklinde tanımlar.",
+          "claim_type":"multi_positive",
+          "explanation":"EMEP'in üyeliğin sınıfsal kaynağına ilişkin ilkesi ile TİP'in daha geniş emekçi kapsamlı öz tanımı karşılaştırılır. İki ifade de gerçek üye sayımı, ölçülmüş sınıf dağılımı veya sayısal üye kotası değildir.",
+          "sides":[
+            {"party_id":"emep","old_row_id":"0309-emep-html-002-0-row","support":"passage","refs":["0309-emep-html-002-0-passage"],"semantic_reason":"Tüzük madde4'te 'asıl kaynak' açık; cümle gerçek üyelerin çoğunluğunun işçi olduğunu kanıtlanmış istatistik gibi sunmaz."},
+            {"party_id":"tip","old_row_id":"0304-tip-sinif-bilesim-row","support":"passage","refs":["0304-tip-sinif-bilesim-q","0304-tip-sinif-bilesim-p1"],"semantic_reason":"Madde1.2'nin ilk maddesinin başındaki işçi sınıfı öznesi kısa alıntıdan düşmüştü. Gerçek tam paragraf bağlandı; bütün emekçiler ifadesi yalnız ücretli sanayi işçileriyle sınırlandırılmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tam tüzüğü bulunamadığından üyeliğin veya partinin sınıfsal tanımı bu belge üzerinden incelenemedi.","claim_type":"status_only","explanation":"Kurucu kişilerin mesleği ya da başka partilerdeki geçmişi tüzüğün sınıfsal tanımı yerine geçmez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-parti-sinif-bilesimi-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Kayıt tam tüzük açığını gösterir; sınıf temelli üyeliğin kabul veya reddi konusunda sonuç üretmez."}]}
+      ]
+    },
+    {
+      "topic_id":"uye-portali",
+      "claims":[
+        {
+          "text":"TİP'in HTML tüzüğü, üye portalında dijital oylama, anket ve etkinlik yapılabilmesini; kararın PM veya MYK tarafından verilmesini ve yürütme-geliştirme sorumluluğunun Bilişim Büro'da olmasını düzenler. DBP'nin 2025 değişiklik notlu HTML tüzüğüne ilişkin kayıtlı incelemede üyelere özgü çevrimiçi portal konusunda açık hüküm saptanmamıştır.",
+          "claim_type":"one_positive",
+          "explanation":"TİP'teki yazılım ve yetki dağılımı tam maddeyle desteklenir. DBP tarafı yalnız madde1–114 için daha önce kaydedilmiş somut portal sorusunun sonucudur; bilgi edinme hakkı portal varlığının kanıtı sayılmadı ve yokluk bütün parti uygulamalarına yayılmadı.",
+          "sides":[
+            {"party_id":"tip","old_row_id":"0304-tip-uye-portal-row","support":"passage","refs":["0304-tip-uye-portal-p1"],"semantic_reason":"Madde4.14'ün üç cümlesi okundu; 'düzenlenebilir' imkânı korunur. Portalın her oylamayı zorunlu veya bağlayıcı yaptığı söylenmez."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-absence-01-row","support":"scope","refs":["0308-dbp-absence-01-scope"],"semantic_reason":"13.11.2026 tarihli kayıtlı inceleme kapsamı madde1–114, sorusu üyelere özgü çevrimiçi portaldır. Bu görevde genel bilgi hakkı paragrafı yeniden okundu; tam belge yokluk incelemesi yeniden yapılmış sayılmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığı için üyeler için dijital portal öngörüp öngörmediği bu belge üzerinden belirlenemedi.","claim_type":"status_only","explanation":"Genel bir internet sitesi ya da üyelik başvuru bağlantısı, üyelere özgü karar portalının tüzük hükmü değildir.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-uye-portali-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam belge yokluğu kullanıldı; Yeni Yol'da hiçbir dijital hizmet olmadığı ileri sürülmedi."}]}
+      ]
+    },
+    {
+      "topic_id":"aday-tanitimi",
+      "claims":[
+        {
+          "text":"Saadet tüzüğü partinin, aday adaylarının meslek ve sanat başarılarını, eserlerini ve ülkeye hizmetlerini gösteren, vesikalık fotoğraflı basılı tanıtım malzemeleri hazırlayıp dağıtabilmesini öngörür. DBP'nin 2025 değişiklik notlu HTML tüzüğü için kayıtlı incelemede aday adaylarının tanıtımına özgü açık usul saptanmamıştır.",
+          "claim_type":"one_positive",
+          "explanation":"Saadet hükmü bir yetki verir; her aday adayı için yayın zorunluluğu koymaz. DBP tarafının sınırı yalnız belirtilen belge ve özel tanıtım sorusudur; aday belirleme yönetmeliği, tanıtım hükmü sayılmadı.",
+          "sides":[
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0211","support":"passage","refs":["0310-saadet-2-056-aday-tanitimi-p","0310-saadet-2-056-aday-tanitimi-context"],"semantic_reason":"Madde56 bütünüyle bir cümledir ve 'bastırıp dağıtabilir' der. Fotoğraf niteliği ve başarı/hizmet içeriği somut olarak korunur; genel seçim reklamlarının bütün kuralları buradan türetilmez."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-absence-29-row","support":"scope","refs":["0308-dbp-absence-29-scope"],"semantic_reason":"Kayıtlı kapsam madde1–114 ve aday adaylarının tanıtımına özel usuldür. Bu görevde madde85–86 yeniden okundu; bu dar okuma yeni bir bütün-belge yokluk kararı olarak kullanılmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından aday adaylarının tanıtımına ilişkin tüzük usulü karşılaştırılamadı.","claim_type":"status_only","explanation":"Kuruluş haberi aday tanıtımının içeriği, yetkilisi veya zorunluluğu hakkında madde metni sağlamaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-aday-tanitimi-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Adayların fiilen tanıtılıp tanıtılmadığına dair uygulama araştırması yapılmış gibi sunulmadı."}]}
+      ]
+    },
+    {
+      "topic_id":"parti-defterleri",
+      "claims":[
+        {
+          "text":"DEM tüzüğü, PM, MYK, merkez ve il disiplin kurulları ile il ve ilçe yönetim kurullarına karar, üye, evrak, demirbaş ve işletme hesabı defterlerini zorunlu tutar; asıl ve fahri üyelerin kayıtları ayrılır. TİP HTML tüzüğü her kademedeki parti organına üye, karar, evrak, gelir-gider ve demirbaş defteri tutma yükümlülüğü getirir.",
+          "claim_type":"multi_positive",
+          "explanation":"DEM'in organ listesi ile TİP'in her kademe ifadesi ayrı korunur. DEM'deki işletme hesabı ve asıl/fahri üye ayrımı, TİP'te aynı adlarla yazılmış gibi gösterilmedi.",
+          "sides":[
+            {"party_id":"dem","old_row_id":"0305-dem-mali-defter-to-parti-defterleri-dem-row","support":"passage","refs":["0305-dem-mali-defter-to-parti-defterleri-dem-passage"],"semantic_reason":"Madde53'ün ilk cümlesindeki altı organ grubu, kısa listedeki özneyi tamamlar. Tam madde cm-x04 bağlanmadan yükümlü organ listesi kısa alıntıdan çıkarılamaz."},
+            {"party_id":"tip","old_row_id":"0304-tip-defter-row","support":"passage","refs":["0304-tip-defter-q"],"semantic_reason":"Madde7.2'nin ilk cümlesi her kademeyi ve beş defter türünü doğrudan içerir. TİP'in maddesine DEM'deki fahri üye ayrımı eklenmedi."}
+          ]
+        },
+        {
+          "text":"İYİ Parti ve Saadet tüzükleri her kademe için genel defter listeleri verirken üye kayıt defterini yalnız ilçe düzeyine bırakır. İYİ Parti'nin listesinde ayrıca üye başvuru defteri bulunur; Saadet üye kayıtlarının ilçe yönetim kurullarınca mahalle ve köy esasına göre tutulacağını belirtir.",
+          "claim_type":"multi_positive",
+          "explanation":"İYİ Parti'de madde78'in genel listesi madde5'in 'sadece ilçe teşkilatlarında' cümlesiyle birlikte okundu. Saadet'in istisnası madde62'nin ilk paragrafındadır. Genel liste, her düzeyde ayrı bir üye kayıt defteri gerektiği şeklinde yorumlanmadı.",
+          "sides":[
+            {"party_id":"iyi","old_row_id":"0306-iyi-parti-defterleri-row","support":"passage","refs":["0306-iyi-parti-defterleri-passage"],"semantic_reason":"Üye başvuru defteri madde78'in açık adıdır. İlçe istisnası farklı maddede olduğundan cm-x06 aynı sürümde bu satırın bulgusuna ayrıca bağlanmalıdır; madde78 için cm-x05 tam ilk paragrafı verir."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0216","support":"passage","refs":["0310-saadet-2-061a-parti-defterleri-p","0310-saadet-2-061a-parti-defterleri-context"],"semantic_reason":"Tam sayfa bağında üye defterleri yalnız İlçe Yönetim Kurullarına verilmiştir. Satırın 'Genel Merkez' organ etiketi, bu istisnayı tersine çeviremez."}
+          ]
+        },
+        {
+          "text":"DBP, karar defterinde kararların tarih ve numara sırasıyla yer almasını ve oylamaya katılanlarca imzalanmasını ister. Yeni Parti, zorunlu defterlerin biçim, basım ve dağıtımını kanuna uygun Hesap Yönetmeliği'ne bırakır. Demokrat Parti'de ilçe yönetim kurulu, Genel Merkez'in hazırlayıp gönderdiği ve ilçe seçim kurulu başkanlığına onaylatılmış üye kayıt defterini tutar.",
+          "claim_type":"multi_positive",
+          "explanation":"Üç metin sırasıyla karar kaydının içeriğini, defterlerin düzenlenme aracını ve üye defterinin hazırlanma-onay-tutulma yolunu açıklar. Bu görevler tek bir ortak defter dağıtım sistemi olarak birleştirilmedi.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-034-row","support":"passage","refs":["0308-dbp-draft-034-passage"],"semantic_reason":"Madde103'te imza yükümlüleri oylamaya katılanlardır; bütün üyelere veya yalnız başkana çevrilmedi."},
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-tenth-parti-defterleri-row","support":"passage","refs":["0303-epm-tenth-parti-defterleri-p"],"semantic_reason":"Madde59/2 defterlerin biçimi, basımı ve dağıtımını Hesap Yönetmeliği'ne bağlar; tüzükten burada yazmayan yeni bir defter listesi çıkarılmadı."},
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-1-040-parti-defterleri-row","support":"passage","refs":["0312-demokrat-1-040-parti-defterleri-p","0312-demokrat-1-040-parti-defterleri-context"],"semantic_reason":"Madde10 tek cümlede merkezden gönderme, seçim kuruluna onaylatma ve ilçenin tutma rollerini ayırır. Seçim kurulu defteri tutan organ olarak sunulmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığı için zorunlu parti defterlerinin türleri ve bunları tutacak organlar karşılaştırılamadı.","claim_type":"status_only","explanation":"Kanuni bir yükümlülük bulunduğu varsayılarak görülmeyen tüzüğün metni yeniden kurulmadı.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-parti-defterleri-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Bu kayıt defterlerin fiilen tutulup tutulmadığına dair denetim sonucu değildir; tüzük kaynağı açığıdır."}]}
+      ]
+    },
+    {
+      "topic_id":"uzlasma-kurulu",
+      "claims":[
+        {
+          "text":"DEM'in tüzüğünde Uzlaşma Kurulu, disiplin kurulu konuları dışındaki anlaşmazlıklarda tarafların kabulüyle görüşme ve uzlaşma yoluyla çözüm arar; Büyük Kongre tarafından iki yıllığına seçilen beş asıl ve iki yedek üyeden oluşur. DBP'nin 2025 değişiklik notlu HTML tüzüğüne ilişkin kayıtlı incelemede Uzlaşma Kurulu adlı ayrı bir organ konusunda açık hüküm saptanmamıştır.",
+          "claim_type":"one_positive",
+          "explanation":"DEM kurulunun görev alanı ve tarafların rızası, yalnız üye sayısından çıkarılmadı; tam madde21 okundu. DBP'nin yerel örgüt sorunlarının diyalog ve sonunda MYK eliyle çözülmesi, Uzlaşma Kurulu adlı başka bir organın kanıtı sayılmadı.",
+          "sides":[
+            {"party_id":"dem","old_row_id":"0305-dem-uzlasma-dem-row","support":"passage","refs":["0305-dem-uzlasma-dem-passage"],"semantic_reason":"Mevcut kısa alıntı yalnız süre ve sayıdır. Disiplin dışı alan ve tarafların kabulü cm-x07'nin ilk cümlesindedir; bu bağ zorunludur. Kurul her anlaşmazlıkta kendiliğinden yetkili gibi gösterilmez."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-absence-08-row","support":"scope","refs":["0308-dbp-absence-08-scope"],"semantic_reason":"13.11.2026 kapsam kaydı madde1–114 ve belirli adla ayrı organ sorusudur. Bu görevde madde34'teki diyalog/MYK bağlamı okundu, ancak yeni bütün-belge yokluk taraması yapıldığı ileri sürülmedi."}
+          ]
+        },
+        {"text":"Yeni Yol'un tam tüzüğü bulunamadığı için Uzlaşma Kurulu türünde bir organın kuruluşu veya yetkisi belirlenemedi.","claim_type":"status_only","explanation":"Kuruluş haberinden organın adı, üyeleri veya uyuşmazlık alanı çıkarılamaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-uzlasma-kurulu-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Açık kalan belge sorusu, Yeni Yol'un uzlaşmayı benimsemediği yönünde siyasal değerlendirme değildir."}]}
+      ]
+    },
+    {
+      "topic_id":"strateji-kurulu",
+      "claims":[
+        {
+          "text":"DEM'in Strateji Kurulu'nu MYK oluşturur; katılımcı sayısını ve bileşimini belirler, toplantı çağrısını yapar; çalışma yöntemleri PM'nin onaylayacağı yönetmelikle düzenlenir. Demokrat Parti'nin Siyaset Planlama Kurulu ülkenin temel meselelerine ilişkin önerileri değerlendirir; benimsediği siyaset planlama ve öneriler Genel Başkan tarafından Genel İdare Kurulu'nun onayına sunulur.",
+          "claim_type":"multi_positive",
+          "explanation":"DEM maddesi kurulun kuruluş ve usul yetkilerini, DP maddesi önerinin parti politikası olma sürecini açıklar. DEM'in maddesinde sayılmayan politika alanları DP'den aktarılmadı; DP'de GİK aşaması atlanmadı.",
+          "sides":[
+            {"party_id":"dem","old_row_id":"0305-dem-strateji-dem-row","support":"passage","refs":["0305-dem-strateji-dem-passage"],"semantic_reason":"Madde23 index15'te başlayıp index16'da devam eder. Katılımcı bileşimi, çağrı ve PM yönetmeliği cm-x08'in tam metnindedir; yalnız başlangıç cümlesi bunların tümünü kanıtlamaz."},
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-047-strateji-kurulu-row","support":"passage","refs":["0312-demokrat-2-047-strateji-kurulu-p","0312-demokrat-2-047-strateji-kurulu-context"],"semantic_reason":"Madde50/D2'nin ekonomi, iç/dış siyaset ve güvenlik örnekleri temel meseleler kapsamını verir. Benimsenen önerileri GİK'e sunan Genel Başkandır; kurulun son onay makamı olduğu söylenmedi."}
+          ]
+        },
+        {
+          "text":"DBP'de parti programı ve Büyük Kongre kararları çerçevesinde politika ve strateji belirleme görevi Parti Meclisi'nindir. TİP'in HTML tüzüğü de Kongre ve Konferans kararları doğrultusunda siyasal ve stratejik karar alma görevini Parti Meclisi'ne verir.",
+          "claim_type":"multi_positive",
+          "explanation":"Burada iki metnin PM görevleri karşılaştırılır. Bu görevler, ayrıca Strateji Kurulu adlı organ bulunduğunun kanıtı olarak kullanılmaz; her PM'nin bağlı olduğu üst karar çerçevesi korunur.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-absence-context-09-row","support":"passage","refs":["0308-dbp-absence-context-09-passage"],"semantic_reason":"Madde60'ın başlığı Parti Meclisi Görev ve Yetkileri'dir. Kısa tam cümle program ve Büyük Kongre çerçevesini içerir; bağımsız bir strateji kurulu oluşturmaz."},
+            {"party_id":"tip","old_row_id":"0304-tip-charter-context-strateji-html-row","support":"passage","refs":["0304-tip-pm-strateji-p1"],"semantic_reason":"Madde3.7'nin ilk cümlesi PM öznesini ve Kongre/Konferans koşulunu birlikte verir. 'Stratejik' sıfatı tek başına yeni kurul adı gibi okunmadı."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından strateji kurulu veya strateji belirleme yetkisi bu belge üzerinden karşılaştırılamadı.","claim_type":"status_only","explanation":"Program hazırlama haberleri tek başına tüzük organı ve yetki zinciri kurmaz.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-strateji-kurulu-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Eksik olan organı tanımlayan tam metindir; strateji çalışmasının fiilen bulunmadığı iddia edilmedi."}]}
+      ]
+    },
+    {
+      "topic_id":"genisletilmis-toplanti",
+      "claims":[
+        {
+          "text":"Yeni Parti'de TBMM grup başkanvekilleri, grup yönetim kurulu üyeleri ile kadın ve gençlik kolları genel başkanları PM toplantısına katılıp söz ve öneri sunabilir, oy kullanamaz. DBP ve DEM'de PM bilgi almak veya görüşmek için belirli partili yöneticileri davet ederek geniş toplantı yapabilir; PM üyesi olmayan davetliler oy kullanamaz.",
+          "claim_type":"multi_positive",
+          "explanation":"Yeni Parti sayılmış görevler üzerinden katılım hakkı verir. DBP'nin davet listesinde bakan, milletvekili, belediye/il eş başkanları ve uzmanlar; DEM'in listesinde TBMM grup başkanvekilleri, partili bakan/milletvekilleri ve belediye/il eş başkanları vardır. Davet ile üyelik ve oy hakkı aynılaştırılmadı.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-genisletilmis-toplanti-row","support":"passage","refs":["0303-epm-detail9-organ-toplanti-parti-meclisinde-oy-hakk-olmayan-kat-l-m-p"],"semantic_reason":"Madde22/7 belirli görevleri, söz ve öneri imkânını ve oy yasağını tek cümlede içerir. Davetli uzmanlara kendiliğinden bu hakkı verdiği söylenmedi."},
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-124-row","support":"passage","refs":["0308-dbp-draft-124-passage"],"semantic_reason":"Madde59'un davet paragrafında oy yasağı ikinci cümledir. Mevcut ref yalnız ilk cümleyi içerdiğinden cm-x09 birlikte bağlanmalıdır; kurul üyesi olan davetlinin mevcut oy hakkı kaldırılmadı."},
+            {"party_id":"dem","old_row_id":"0305-dem-konferans-okul-dem-row","support":"passage","refs":["0305-dem-konferans-okul-dem-passage"],"semantic_reason":"Madde18'de PM üyesi olmayanların oy kullanamayacağı açık; kısa 'genişletilmiş toplantı yapabilir' ibaresi bu sınırlamayı tek başına göstermez. Tam paragraf cm-x10 zorunludur."}
+          ]
+        },
+        {
+          "text":"Demokrat Parti'de il ve ilçe yönetim kurulları kendi kongre delegelerinin katıldığı danışma toplantılarını yılda en az iki kez yapar. TİP'in iki tüzük nüshasında PM örgüt ve birim temsilcilerini gerekli gördüğünde toplantıya çağırır; HTML nüshanın katılım listesinde il/ilçe başkanları, yönetim kurulu üyeleri, komite ve büro üyeleri, 2022 dosya adlı PDF'de ise il/ilçe başkanları, yönetim kurulu üyeleri ve büro üyeleri sayılır.",
+          "claim_type":"multi_positive",
+          "explanation":"DP'de düzenli asgari sıklık ve yerel kongre delegeleri, TİP'te PM'nin gerek görmesi ve örgüt temsilcileri esas alınır. TİP'in iki liste farkı korunur; PDF'de komite sözcüğünün bu listede geçmemesi bütün PDF'de komitelerin yokluğu diye yorumlanmaz.",
+          "sides":[
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-040-genisletilmis-toplanti-row","support":"passage","refs":["0312-demokrat-2-040-genisletilmis-toplanti-p","0312-demokrat-2-040-genisletilmis-toplanti-context"],"semantic_reason":"Madde31/o iki yerel yönetim düzeyini ve yılda en az iki defayı açıkça içerir. Sonraki p bendinin harfi alıntıya taşmış olsa da cümleye yeni bir şart olarak katılmadı."},
+            {"party_id":"tip","old_row_id":"0304-tip-genisletilmis-row","support":"passage","refs":["0304-tip-genisletilmis-p1"],"semantic_reason":"HTML madde4.10 iki tam cümleyle PM çağrısı ve komiteler dahil katılım listesini verir; bu tam pasaj kullanıldı."},
+            {"party_id":"tip","old_row_id":"0304-tip-pdf-genisletilmis-row","support":"passage","refs":["0304-tip-pdf-genisletilmis-q"],"semantic_reason":"Özgün PDF index22/basılı21 görsel okundu. Mevcut alıntı ikinci cümledir; PDF'de PM'nin gerek görmesi ifadesini de göstermek için cm-x11 tam madde bağlanmalıdır. Dosya tarihinden yürürlük sırası çıkarılmadı."}
+          ]
+        },
+        {
+          "text":"EMEP'te büro, komisyon ve çalışma grubu üyeleri gerektiğinde GYK dahil yönetici organların toplantılarına danışma ve bilgilerinden yararlanmak için çağrılabilir. Saadet Genel Başkanı il başkanları, teşkilat yöneticileri ve uzmanları GİK toplantılarına davet edebilir. İYİ Parti Genel Başkanı ise GİK, TBMM Grubu ve teşkilat kademeleri arasında işbirliği amacıyla birleşik toplantı çağrısı yapıp toplantılara başkanlık edebilir.",
+          "claim_type":"multi_positive",
+          "explanation":"EMEP'in çalışma yapılarından bilgi alma yolu, Saadet'in Genel Başkan eliyle GİK'e daveti ve İYİ Parti'nin kurullar arası eşgüdüm toplantısı farklı katılım mekanizmalarıdır. Metinlerin vermediği oy hakkı, üyelik veya düzenli toplantı takvimi eklenmedi.",
+          "sides":[
+            {"party_id":"emep","old_row_id":"0309-emep-html-042-0-row","support":"passage","refs":["0309-emep-html-042-0-passage"],"semantic_reason":"Tüzük madde53 büro/komisyon/gruplarda partili olmayanların da yararlı görülürse çalışabileceğini ve bu yapı üyelerinin çağrılabileceğini yazar; cümle bunları GYK'nin seçilmiş üyeleri yapmaz."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0252","support":"passage","refs":["0310-saadet-2-078-genisletilmis-toplanti-p","0310-saadet-2-078-genisletilmis-toplanti-context"],"semantic_reason":"Madde23 davet yetkisini Genel Başkana, toplantı yerini GİK'e verir; uzmanları karar organına seçilmiş üye gibi sunmaz."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-genisletilmis-toplanti-row","support":"passage","refs":["0306-iyi-genisletilmis-toplanti-passage"],"semantic_reason":"PDF index30 madde47'nin başlığı Genel Başkanın görev/yetkileridir; pasaj bu özne altında okundu. Birleşik toplantı çağrısı ve başkanlık bir imkândır, zorunlu periyodik toplantı değildir."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından genişletilmiş veya ortak organ toplantılarının katılım ve oy kuralları saptanamadı.","claim_type":"status_only","explanation":"Meclis grubunun ortak toplantı haberleri partinin tüzük organlarına ait katılım kuralı yerine kullanılmadı.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-genisletilmis-toplanti-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Tam tüzük eksikliği, fiilen ortak toplantı yapılmadığı şeklinde yorumlanamaz."}]}
+      ]
+    },
+    {
+      "topic_id":"mahalle-koy-temsilciligi",
+      "claims":[
+        {
+          "text":"Demokrat Parti'nin arşiv tüzüğü, büyükşehir statüsü uygulanan şehirlerin merkez ilçelerindeki mahallelerde o mahallede oturan üyelerin katıldığı kongreyle bir başkan ve dört üyeli yönetim seçilmesini; bunun dışındaki köy ve mahalle temsilciliklerinde ilçe yönetim kurulunun bir temsilci atamasını ve temsilcinin bir yardımcı seçmesini düzenler. İYİ Parti'de mahalle, köy ve sandık bölgesi temsilcisini ilgili ilçe yönetim kurulu atar; görev süresi bu kurulunkiyle sınırlıdır.",
+          "claim_type":"multi_positive",
+          "explanation":"DP'nin tek cümlelik atama alıntısı aynı sayfadaki büyükşehir merkez ilçe istisnasıyla tamamlandı. İYİ Parti'nin atama hükmü DP'ye genellenmedi; temsilci ve yardımcının DP'deki görev süresi de aynı sayfada ilçe yönetimi süresidir.",
+          "sides":[
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-1-015-mahalle-koy-temsilciligi-row","support":"passage","refs":["0312-demokrat-1-015-mahalle-koy-temsilciligi-p","0312-demokrat-1-015-mahalle-koy-temsilciligi-context"],"semantic_reason":"Madde17'nin tam sayfasında 'Bunun dışında kalan' sınırlaması vardır. Büyükşehir merkez ilçelerindeki seçilmiş yönetimi sırf atama cümlesiyle silmek kaynağa aykırı olurdu."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-mahalle-koy-temsilciligi-row","support":"passage","refs":["0306-iyi-mahalle-koy-temsilciligi-passage"],"semantic_reason":"Madde20'nin ilk paragrafı atayan ilçeyi, ikinci paragrafı görev süresini verir. Süreyi söyleyen cm-x13 tam bağlanmalıdır; genel belde başkanı atamasıyla karıştırılmadı."}
+          ]
+        },
+        {
+          "text":"DBP'de köy veya mahallede komisyon ya da meclis kurulmamışsa iletişim için öncelikle oradan seçilmiş bir delege, yoksa bir partili üye temsilci olarak görevlendirilir. DEM'de ilçe örgütü bağlı mahalle ve köylerde temsilcilik açabilir, en az bir kişiyi görevlendirir; temsilcilikler ilçe örgütüne bağlı çalışır.",
+          "claim_type":"multi_positive",
+          "explanation":"DBP'de mevcut komisyon/meclis bulunmaması ve delegeye öncelik koşulları, DEM'de ilçe örgütünün açma/görevlendirme yetkisi ayrı korundu. İki metne ortak bir delege seçimi veya zorunlu her mahallede temsilcilik kuralı eklenmedi.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-086-row","support":"passage","refs":["0308-dbp-draft-086-passage"],"semantic_reason":"Madde32 köy/mahallede başka yapının bulunmaması halinde iletişimi sağlama görevini tanımlar. 'Öncelikle' sözcüğü delegeyi tek mümkün kişi yapmaz; yoksa partili üye seçeneği korunur."},
+            {"party_id":"dem","old_row_id":"0305-dem-temsilcilik-dem-row","support":"passage","refs":["0305-dem-temsilcilik-dem-passage"],"semantic_reason":"Madde36'nın mahalle/köy paragrafı 'açılabilir', 'en az1 kişi' ve ilçe örgütüne bağlılığı içerir. Kısa bağlılık cümlesine cm-x12 eklenmeden açma ve görevlendirme yetkileri desteklenmiş olmaz."}
+          ]
+        },
+        {
+          "text":"Saadet'te köy ve mahalle temsilcilikleri beldede belde, ilçede ilçe teşkilatınca seçilen bir temsilci ve yardımcısından oluşur; yerin büyüklüğüne göre sayıları artırılabilir. TİP'in HTML tüzüğünde örgüt bulunan il ve ilçelerin mahalle/köylerinde ilgili yönetici organın talebi ve MYK onayı, örgüt bulunmayan yerde MYK kararıyla temsilcilik açılabilir; MYK temsilciliği feshedebilir.",
+          "claim_type":"multi_positive",
+          "explanation":"Saadet'in seçen örgütü ve artırılabilir temel bileşimi ile TİP'in yerel örgütün varlığına göre değişen açma yolu karşılaştırılır. TİP'te yerel talep şartı örgüt bulunmayan yere taşınmadı; Saadet'in sayısı değişmez iki kişi gibi sunulmadı.",
+          "sides":[
+            {"party_id":"saadet","old_row_id":"0310-saadet-1-047-mahalle-koy-temsilciligi-row","support":"passage","refs":["0310-saadet-1-047-mahalle-koy-temsilciligi-p","0310-saadet-1-047-mahalle-koy-temsilciligi-context"],"semantic_reason":"Madde30/a'nın tam paragrafı seçen belde/ilçe teşkilatını ve büyüklüğe göre artırımı verir; yalnız ilk kısa cümleye dayanılmadı."},
+            {"party_id":"tip","old_row_id":"0304-tip-mahalle-row","support":"passage","refs":["0304-tip-parti-temsilcilik-p1"],"semantic_reason":"Madde3.18 iki coğrafi/örgütsel durumu ayrı yazar; yönetici organ talebi bulunan örgütlü yer ile doğrudan MYK kararı verilen örgütsüz yer ayrımı korundu. Fesih yetkisi de aynı tam pasajdadır."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından mahalle ve köy temsilciliklerinin oluşturulma, bağlılık veya görev süresi kuralları karşılaştırılamadı.","claim_type":"status_only","explanation":"Temsilciliklerin varlığı ya da yokluğu, kuruluş bilgisinden türetilemez.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-mahalle-koy-temsilciligi-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Aynı adlı 2019 oluşumunun yerel örgüt bilgileri bu partiye aktarılmadı."}]}
+      ]
+    },
+    {
+      "topic_id":"tutanak-rapor",
+      "claims":[
+        {
+          "text":"DBP'nin il, ilçe ve belde yönetimlerine ilişkin ortak hükmü kurul kararlarının karar defterine yazılıp katılan üyelerce imzalanmasını ister. İYİ Parti'nin il ve ilçe yönetim kurulları için de kararların deftere yazılması ve toplantıya katılan üyelerce imzalanması öngörülür.",
+          "claim_type":"multi_positive",
+          "explanation":"İmza yükümlüsü iki metinde de katılan üyelerdir; düzey kapsamı DBP'de beldeyi de içerir. Bu hükümler her üyenin bütün parti kararlarını imzalaması şartına dönüştürülmedi.",
+          "sides":[
+            {"party_id":"dbp","old_row_id":"0308-dbp-draft-102-row","support":"passage","refs":["0308-dbp-draft-102-passage"],"semantic_reason":"Madde31'in il/ilçe/belde ortak kuralları başlığı ve karar paragrafı özgün HTML'de okundu; cümle yalnız bu yerel yönetim kapsamındadır."},
+            {"party_id":"iyi","old_row_id":"0306-iyi-tutanak-rapor-row","support":"passage","refs":["0306-iyi-tutanak-rapor-passage"],"semantic_reason":"Madde25 üçüncü kısmın il/ilçe ortak hükümleri altındadır. Tutanak imzası merkezi bütün organlara genişletilmedi; kaynak sayfa17/basılı18'de bu bağ okunmuştur."}
+          ]
+        },
+        {
+          "text":"DEM, Büyük Kongre'ye sunulacak rapor ve belgelerin kongreden önce delegelerle paylaşılmasını öngörür. Demokrat Parti'de kongre divan başkanlığı tutanakları en az üç suret düzenleyip yeni yönetime teslim eder; suretler sırasıyla üst kademelere gönderilir.",
+          "claim_type":"multi_positive",
+          "explanation":"DEM'in kongre öncesi delegelerin bilgiye erişimi ile DP'nin kongre sonrası tutanakların üretim/teslim/iletim işlemi farklı aşamalardır. Belgelerin hepsine ortak bir son tarih veya aynı sayıda suret şartı eklenmedi.",
+          "sides":[
+            {"party_id":"dem","old_row_id":"0305-dem-gundem-kongre-dem-row","support":"passage","refs":["0305-dem-gundem-kongre-dem-passage"],"semantic_reason":"Madde16 kongre öncesi paylaşımı açıkça yazar; belirli gün sayısı veya bütün halka yayınlama yükümlülüğü ileri sürülmez."},
+            {"party_id":"demokrat","old_row_id":"0312-demokrat-2-076-tutanak-rapor-row","support":"passage","refs":["0312-demokrat-2-076-tutanak-rapor-p","0312-demokrat-2-076-tutanak-rapor-context"],"semantic_reason":"Madde27'nin ikinci tutanak cümlesi suretlerin üst kademelere gönderilmesini içerir ve tam sayfa bağında mevcuttur. Divan başkanlığı ile yeni yönetimin rolleri değiştirilmedi."}
+          ]
+        },
+        {
+          "text":"EMEP'in il yönetim kurulu faaliyetleri hakkında GYK'ye ve il örgütüne düzenli rapor verir. Saadet'in merkez denetçileri merkez muhasebesini denetleyip partinin mali durumu hakkında üç ayda bir GİK'e rapor vermekle yükümlüdür.",
+          "claim_type":"multi_positive",
+          "explanation":"EMEP'te faaliyet raporunun öznesi il yönetimi ve iki alıcısı, Saadet'te mali denetim raporunun öznesi merkez denetçileri ve üç aylık süre açık tutuldu. EMEP için belirtilmeyen üç aylık aralık üretilmedi.",
+          "sides":[
+            {"party_id":"emep","old_row_id":"0309-emep-html-049-2-row","support":"passage","refs":["0309-emep-html-049-2-passage"],"semantic_reason":"Tüzük madde46'daki tam cümle İYK öznesiyle başlar ve düzenli raporu GYK ile il örgütüne verir. Kısa ref özneyi atladığı için cm-x14 bağlanmalıdır; aylık toplantı periyodu raporun zorunlu aylık sıklığı sayılmadı."},
+            {"party_id":"saadet","old_row_id":"0310-saadet-2-row-0163","support":"passage","refs":["0310-saadet-2-016-tutanak-rapor-p","0310-saadet-2-016-tutanak-rapor-context"],"semantic_reason":"Madde22 devamında merkez denetçileri görevli kılınır. Üç ayda bir süre mali duruma ilişkin raporundur; bütün teşkilat faaliyet raporlarına yayılmadı."}
+          ]
+        },
+        {
+          "text":"Yeni Parti'de Genel Sekreter MYK ve PM toplantılarının tutanaklarının düzenlenmesini, kararların imzalanıp saklanmasını sağlar. TİP'in HTML tüzüğü bütün yönetici kurullar, komiteler ve büroların her toplantıda tutanak tutup üst kurula iletmesini; il, bölge komiteleri, komiteler ve merkez büroların tutanaklarının Örgüt Komitesi'ne, bu komiteninkilerin PM'ye sunulmasını düzenler.",
+          "claim_type":"multi_positive",
+          "explanation":"Yeni Parti'nin merkezde Genel Sekretere verdiği koordinasyon görevi ile TİP'in tutanak tutma ve üst organa iletme zinciri ayrı sunulur. İmza ve saklama görevi TİP'e, TİP'in komite zinciri Yeni Parti'ye taşınmadı.",
+          "sides":[
+            {"party_id":"yeni-parti","old_row_id":"0303-epm-eleventh-tutanak-rapor-row","support":"passage","refs":["0303-epm-eleventh-tutanak-rapor-p"],"semantic_reason":"Madde23/9'un başında özne Genel Sekreterdir. Kısa son cümle özneyi göstermediğinden cm-x15 tam paragrafı bağlanmalıdır; tutanağı MYK'nin tüm üyelerinin bizzat yazdığı çıkarılmadı."},
+            {"party_id":"tip","old_row_id":"0304-tip-tutanak-row","support":"passage","refs":["0304-tip-tutanak-p1"],"semantic_reason":"HTML madde4.11'in iki cümlesi yazma ve rapor zincirini içerir. İkinci cümledeki komite listesi 2022 dosya adlı PDF'ye aynen taşınmadı; bu cümle açıkça HTML nüsha içindir."}
+          ]
+        },
+        {"text":"Yeni Yol'un tüzüğü bulunamadığından toplantı tutanaklarının hazırlanması, imzalanması ve raporların iletilmesine ilişkin görev zinciri saptanamadı.","claim_type":"status_only","explanation":"Tam metin eksikliği, kayıt veya rapor tutulmadığını gösteren bir denetim bulgusu değildir.","sides":[{"party_id":"yeni-yol","old_row_id":"0307-yeni-yol-tutanak-rapor-charter","support":"missing","refs":["0307-yeni-yol-missing-charter","0307-yeni-yol-search-charter-20261113"],"semantic_reason":"Mevcut arama kanıtı hangi organın tutanak/rapor görevini üstlendiğini göstermediği için bu yetki başka partiden tamamlanmadı."}]}
+      ]
+    }
+  ],
+  "evidence_expansions": [
+    {
+      "id":"cm-x01","topic_id":"onsecim-kurulu","claim_index":0,"party_id":"iyi","old_row_id":"0306-iyi-onsecim-kurulu-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-onsecim-kurulu-passage","location":"Madde70/A Ön seçim, PDF index40/basılı41, tanım paragrafı","pdf_page_index":40,"printed_page":"41",
+      "exact_complete_passage":"Ön seçim; yargı denetim ve gözetiminde, her seçim çevresinde ön seçimin ilan edildiği tarih itibarıyla mevcut İYİ Parti üyelerinin tamamının oy kullandığı, İYİ Parti adaylarının ve liste sıralamalarının belirlendiği yöntemdir.",
+      "reason":"Yeni Parti'nin örgüt içi kurullarıyla karşılaştırılırken İYİ ilçe seçim kurulunun yargısal gözetim niteliği kısa alıntıya bırakılmamalıdır. Gerçek tam tanım özgün index40'ta okundu.",
+      "binding":"Bu tanım aynı sürümde yeni pasaj veya mevcut tam pasaj olarak bu satırın ilgili summary/quote bulgusuna bağlanmalı; 0.cümlenin İYİ tarafında mevcut usul pasajıyla birlikte kullanılmalıdır."
+    },
+    {
+      "id":"cm-x02","topic_id":"secim-musahitleri","claim_index":0,"party_id":"iyi","old_row_id":"0306-iyi-secim-musahitleri-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-secim-musahitleri-passage","location":"Madde76/D Kesin Çıkarma Cezası giriş paragrafı, PDF index46/basılı47; k bendi index47/basılı48","pdf_page_index":46,"printed_page":"47",
+      "exact_complete_passage":"Kesin çıkarma cezası disiplin kurulu tarafından yazılı olarak tesis edilen ve Parti üyeliğini sona erdirerek Parti ile bütün ilişkilerin kesilmesi sonucunu doğuran ceza olup; aşağıdaki hallerde verilebilir:",
+      "reason":"Müşahitlik görevine ilişkin mevcut k bendi ceza kategorisini ve ihtiyariliği tek başına göstermez. Bir önceki sayfanın D başlığı ve tam giriş cümlesi gerçekten okundu; 'verilebilir' korunmuştur.",
+      "binding":"Bu giriş yeni pasaj olarak aynı satırın bulgusuna bağlanmalı ve mevcut k bendiyle birlikte kullanılmalıdır. Disiplin cezasının otomatik olduğu yazılamaz."
+    },
+    {
+      "id":"cm-x03","topic_id":"onsecim-esit-oy","claim_index":0,"party_id":"dbp","old_row_id":"0308-dbp-draft-117-row","version_id":"0207-dbp-charter-v1","existing_ref":"0308-dbp-draft-117-passage","location":"HTML Madde4, parti çalışma ilkelerinde kadınlara pozitif ayrımcılık paragrafı",
+      "exact_complete_passage":"Partinin organ ve kurulları dâhil olmak üzere kadınlara parti yaşamının her alan ve düzeyinde pozitif ayırımcılık uygulanır. Eşit oy alan adaylardan biri kadın ise kadın aday seçilmiş sayılır. Pozitif ayırımcılık, herhangi bir organ ya da kişinin inisiyatifine bırakılamaz. Partinin her türlü organ seçimi ile genel ve yerel seçimlerin aday belirlemelerinde kadın-erkek eşit temsiline özen gösterilir.",
+      "reason":"Eşit oy cümlesinin genel ilke bağlamı okunmuştur. Bu bağlam, Saadet'in yalnız önseçim sıralamasına ilişkin maddesiyle aynı dar kapsamda yazılmadığını gösterir.",
+      "binding":"Tam paragraf aynı satırın ilgili bulgusuna eklenmeli; DBP'nin kuralının yalnız önseçime özgü olduğu izlenimi verilmemelidir."
+    },
+    {
+      "id":"cm-x04","topic_id":"parti-defterleri","claim_index":0,"party_id":"dem","old_row_id":"0305-dem-mali-defter-to-parti-defterleri-dem-row","version_id":"0204-dem-charter-v1","existing_ref":"0305-dem-mali-defter-to-parti-defterleri-dem-passage","location":"Madde53, PDF index30/basılı31, tam madde","pdf_page_index":30,"printed_page":"31",
+      "exact_complete_passage":"Parti Meclisi, Merkez Yürütme Kurulu, Merkez Disiplin Kurulu, İl ve İlçe Yönetim Kurulları ve İl Disiplin Kurullarının aşağıdaki defterleri tutmaları zorunludur: Karar Defteri, asıl ve fahri üyeler ayrı olmak üzere Üye Kayıt Defteri, Gelen-Giden Evrak Defteri, Demirbaş Eşya Defteri, İşletme Hesabı Defteri. Bu defterlere kayıtlar zamanında işlenir ve yöneticiler tarafından imzalanır. Diğer hususlar yönetmelikte yer alır.",
+      "reason":"Mevcut alıntı yalnız defter listesidir. Zorunluluk ve yükümlü organlar tam ilk cümlenin başındadır; bu bölüm özgün PDF'de okundu.",
+      "binding":"Tam madde aynı satırdaki ilgili bulguya bağlanmalı; listedeki organların tamamı ancak bu pasajla desteklenir."
+    },
+    {
+      "id":"cm-x06","topic_id":"parti-defterleri","claim_index":1,"party_id":"iyi","old_row_id":"0306-iyi-parti-defterleri-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-parti-defterleri-passage","location":"Madde5, PDF index5/basılı6, üye kayıt defteri için özel sınırlama","pdf_page_index":5,"printed_page":"6",
+      "exact_complete_passage":"Üye kayıt defteri sadece ilçe teşkilatlarında bulundurulur.",
+      "reason":"Madde78'in her kademe listesi bu özel sınırlamayla birlikte okunmuştur. Aynı kaynakta bir internet üyelik başvurusu olması, üye kayıt defterini elektronik portal yapmaz.",
+      "binding":"Bu tam cümle aynı sürümdeki mevcut 0306-iyi-scope-uye-portali-passage içinde bulunuyorsa o pasaj bu parti-defterleri satırının ilgili bulgusuna ayrıca bağlanabilir; yoksa yeni pasaj gerekir. Mevcut konu dışı bağ tek başına bu satıra geçerli ref sağlamaz."
+    },
+    {
+      "id":"cm-x07","topic_id":"uzlasma-kurulu","claim_index":0,"party_id":"dem","old_row_id":"0305-dem-uzlasma-dem-row","version_id":"0204-dem-charter-v1","existing_ref":"0305-dem-uzlasma-dem-passage","location":"Madde21, PDF index15/basılı16, tam madde","pdf_page_index":15,"printed_page":"16",
+      "exact_complete_passage":"Parti Tüzüğü’nde ve Siyasi Partiler Yasası’nda yer alıp disiplin kurulu çalışmalarının konusu olan sorunların dışında kalan anlaşmazlık alanlarında, tarafların kabulü halinde görüşmeler ve uzlaşmalar yoluyla çözüm arayan merkezi parti kuruludur. Büyük Kongre’de iki yıllığına seçilen 5 asıl, 2 yedek üyeden oluşur. Bu kurula seçilenler başka bir kurulda yer alamaz. Oluşumunda partinin cinsiyet temsili ilkeleri uygulanır. Çalışma esasları ve usulleri PM tarafından hazırlanan bir yönetmelikle düzenlenir.",
+      "reason":"Üye sayısının öncesindeki görev alanı ve tarafların kabulü, kurulun her uyuşmazlık için zorunlu bir yargı mercii gibi okunmasını engeller. Tam madde özgün DEM nüshasında okundu.",
+      "binding":"Tam madde bu satırın ilgili bulgusuna bağlanmadan disiplin dışı alan ve taraf rızası içeren cümle kullanılmamalıdır."
+    },
+    {
+      "id":"cm-x08","topic_id":"strateji-kurulu","claim_index":0,"party_id":"dem","old_row_id":"0305-dem-strateji-dem-row","version_id":"0204-dem-charter-v1","existing_ref":"0305-dem-strateji-dem-passage","location":"Madde23, PDF index15–16/basılı16–17, iki sayfaya taşan tam madde","pdf_page_index":15,"printed_page":"16","page_indices":[15,16],
+      "exact_complete_passage":"Merkez Yürütme Kurulu tarafından oluşturulur. Katılımcı sayısı ve bileşimi MYK tarafından belirlenir. Tarih ve gündemi talepler dikkate alınarak oluşturulan toplantıların çağrısı MYK tarafından yapılır. İşleyiş ve çalışma yöntemleri PM tarafından onaylanacak bir yönetmelikle düzenlenir.",
+      "source_segments":[{"pdf_page_index":15,"exact":"Merkez Yürütme Kurulu tarafından oluşturulur. Katılımcı sayısı"},{"pdf_page_index":16,"exact":"ve bileşimi MYK tarafından belirlenir. Tarih ve gündemi talepler dikkate alınarak oluşturulan toplantıların çağrısı MYK tarafından yapılır. İşleyiş ve çalışma yöntemleri PM tarafından onaylanacak bir yönetmelikle düzenlenir."}],
+      "reason":"Madde index15'in sonunda kesilir; katılımcı bileşimi, çağrı ve PM onayı index16'nın başındadır. İki sayfa da okundu. Tam metin sayfa başlığı/sayfa numarası çıkarılarak birleştirilmiştir; özgün parçalar ayrıca verildi.",
+      "binding":"İki sayfayı kapsayan tam madde veya iki ayrı bağlı kaynak pasajı aynı satırın ilgili bulgularına eklenmeli; ikinci sayfa olmadan MYK ve PM arasındaki usul yetkileri karşılaştırılmamalıdır."
+    },
+    {
+      "id":"cm-x09","topic_id":"genisletilmis-toplanti","claim_index":0,"party_id":"dbp","old_row_id":"0308-dbp-draft-124-row","version_id":"0207-dbp-charter-v1","existing_ref":"0308-dbp-draft-124-passage","location":"HTML Madde59, davetliler ve oy hakkına ilişkin tam paragraf",
+      "exact_complete_passage":"Parti Meclisi, bilgi almak ya da bir konuyu görüşmek üzere, toplantılarına partili bakanları, milletvekillerini, belediye eş başkanlarını ya da il eş başkanları ile kendi alanında uzman kişileri çağırabilir. Görüşmelere çağrılanlar kurulun üyesi değillerse oy kullanamazlar.",
+      "reason":"Kısa mevcut alıntı daveti, ikinci cümle üye olmayanların oy sınırını içerir. İki cümle özgün HTML'de birlikte okundu.",
+      "binding":"Oy hakkı karşılaştırması için ikinci cümle dahil tam paragraf aynı satırın bulgusuna bağlanmalıdır; üye olan kişinin mevcut oy hakkı silinmemelidir."
+    },
+    {
+      "id":"cm-x10","topic_id":"genisletilmis-toplanti","claim_index":0,"party_id":"dem","old_row_id":"0305-dem-konferans-okul-dem-row","version_id":"0204-dem-charter-v1","existing_ref":"0305-dem-konferans-okul-dem-passage","location":"Madde18, PDF index13/basılı14, genişletilmiş PM paragrafı","pdf_page_index":13,"printed_page":"14",
+      "exact_complete_passage":"Parti Meclisi, bilgi almak için ya da bir konuda görüşmek üzere TBMM Grup Başkan Vekilleri, partili bakan ve milletvekilleri, belediye ve il eş başkanlarıyla genişletilmiş Parti Meclisi toplantıları yapabilir. Parti Meclisi üyesi olmayanlar bu toplantılarda oy kullanamaz. Gerekli gördüğü durumlarda MYK’ya yetki verebilir. Parti Meclisi çalışma esasları ve usullerine ilişkin detaylar yönetmelikle düzenlenir.",
+      "reason":"Mevcut ref yalnız toplantı yapma ibaresidir. Davetli grupları ve oy yasağı özgün paragrafın ayrı tam cümlelerinde okunmuştur.",
+      "binding":"Bu paragraf DEM genişletilmiş-toplantı satırının ilgili bulgusuna eklenmeli ve oy hakkı karşılaştırmasında mevcut kısa ref'e ek kullanılmalıdır."
+    },
+    {
+      "id":"cm-x11","topic_id":"genisletilmis-toplanti","claim_index":1,"party_id":"tip","old_row_id":"0304-tip-pdf-genisletilmis-row","version_id":"0203-tip-charter2022-v1","existing_ref":"0304-tip-pdf-genisletilmis-q","location":"Madde4.10, PDF index22/basılı21, tam madde; özgün sayfa görsel okundu","pdf_page_index":22,"printed_page":"21","reading_mode":"rendered_pdf_visual",
+      "exact_complete_passage":"PM, partinin çalışmalarını daha da etkinleştirmek, hızlandırmak ve ortaklık sağlamak için örgüt ve birim temsilcilerini gerekli gördüğü zamanlarda toplantıya çağırır. Örgüt Temsilcileri Toplantısı Parti Meclisi ile birlikte il ve ilçe başkanları, il ve ilçe yönetim kurulu üyeleri ve büro üyeleriyle yapılır.",
+      "reason":"Görüntüde iki tam cümle okundu; satır sonundaki sağ-lamak hece bölünmesi birleştirildi. Liste HTML'den kopyalanmadı: bu nüshanın listesinde 'komite' sözcüğü yoktur.",
+      "binding":"Görsel doğrulanmış tam madde aynı PDF satırının ilgili bulgusuna eklenmeli; PM'nin gerek görmesine bağlı çağrı yalnız HTML pasajına dayanarak PDF'ye yüklenmemelidir."
+    },
+    {
+      "id":"cm-x12","topic_id":"mahalle-koy-temsilciligi","claim_index":1,"party_id":"dem","old_row_id":"0305-dem-temsilcilik-dem-row","version_id":"0204-dem-charter-v1","existing_ref":"0305-dem-temsilcilik-dem-passage","location":"Madde36, PDF index21/basılı22, mahalle ve köy temsilcilikleri paragrafı","pdf_page_index":21,"printed_page":"22",
+      "exact_complete_passage":"Ayrıca İlçe Örgütü tarafından ilçelere bağlı tüm mahalle ve köylerde Mahalle veya Köy Temsilcilikleri açılabilir. Buna göre; İlçe Örgütü en az 1 kişiyi Mahalle veya Köy Temsilcisi olarak görevlendirir, mahalle sınırları içerisinde bir büroyu temsilcilik olarak kullanır. Mahalle ve Köy Temsilcilikleri İlçe Örgütüne bağlı olarak çalışır. Çalışmalar hazırlanan yönetmelikle düzenlenir.",
+      "reason":"İlk iki cümle açabilen ve kişi görevlendiren ilçe örgütünü gösterir. Kısa mevcut ref yalnız bağlılığı içerdiği için 'en az1 kişi' oradan çıkarılamaz.",
+      "binding":"Tam mahalle/köy paragrafı bu satırın ilgili bulgusuna eklenmeli. Önceki il/ilçe/belde geçici temsilcilik paragrafındaki örgüt kurulunca sona erme kuralı bu ayrı mahalle/köy paragrafına taşınmamalıdır."
+    },
+    {
+      "id":"cm-x13","topic_id":"mahalle-koy-temsilciligi","claim_index":0,"party_id":"iyi","old_row_id":"0306-iyi-mahalle-koy-temsilciligi-row","version_id":"0205-iyi-charter-download-v1","existing_ref":"0306-iyi-mahalle-koy-temsilciligi-passage","location":"Madde20, PDF index14/basılı15, iki tam paragraf","pdf_page_index":14,"printed_page":"15",
+      "exact_complete_passage":"İYİ Parti’yi, İYİ Parti’nin Programını, seçim taahhütlerini ve faaliyetlerini tanıtmak; görev yerlerindeki aksaklıkları ve talepleri tespit edip raporlamak ve verilecek parti görevlerini yapmak üzere mahallelerde, köylerde veya sandık bölgelerinde temsilcilikler oluşturulabilir. Mahalle, köy veya sandık bölgesi temsilcisi; ilgili mahalle, köy veya sandık bölgesinin bağlı bulunduğu ilçe yönetim kurulu tarafından atanır. Mahalle, köy veya sandık bölgesi temsilcilerinin görev süresi, bağlı bulundukları ilçe yönetim kurulunun görev süresi ile sınırlıdır.",
+      "reason":"Atayan organ ilk paragrafta, süre ikinci paragraftadır; 18.01.2026 değişiklik notlu metin özgün PDF'den okundu.",
+      "binding":"Tam madde veya atama pasajına ek süre cümlesi bu satırın ilgili bulgusuna bağlanmalı; görev süresi mevcut tek atama cümlesinden varsayılmamalıdır."
+    },
+    {
+      "id":"cm-x14","topic_id":"tutanak-rapor","claim_index":2,"party_id":"emep","old_row_id":"0309-emep-html-049-2-row","version_id":"0208-emep-program-charter-v1","existing_ref":"0309-emep-html-049-2-passage","location":"HTML tüzük Madde46, İYK toplantısı ve rapor paragrafı",
+      "exact_complete_passage":"İYK, yedek üyelerinin oy hakkı olmaksızın katılımı ile en geç ayda bir toplanır; faaliyetleri hakkında GYK’ye ve il örgütüne düzenli olarak rapor verir, il kasasını yönetir.",
+      "reason":"Kısa alıntının 'faaliyetleri' öznesi tam cümlede İYK'dir. Aylık toplantı ile düzenli rapor ifadesi farklı yükümlülüklerdir; rapora kaynakta yazmayan kesin dönem atanmadı.",
+      "binding":"Özneyi içeren tam cümle aynı satırın ilgili bulgusuna eklenmeli. Program kısmından başka raporlama metniyle tamamlanmamalıdır."
+    },
+    {
+      "id":"cm-x15","topic_id":"tutanak-rapor","claim_index":3,"party_id":"yeni-parti","old_row_id":"0303-epm-eleventh-tutanak-rapor-row","version_id":"epm-charter-v1","existing_ref":"0303-epm-eleventh-tutanak-rapor-p","location":"HTML Madde23/9, Genel Sekreterin görevlerine ilişkin tam paragraf",
+      "exact_complete_passage":"(9) Genel Sekreter parti politikalarının belirlenmesi, uygulanması ve yaygınlaştırılmasındaki eşgüdümü sağlar. Genel Başkan Yardımcıları ile görüşüp Genel Başkanı bilgilendirerek Merkez Yönetim Kurulu gündemini ve Genel Başkanın belirleyeceği Parti Meclisi gündemini hazırlar. Merkez Yönetim Kurulu ve Parti Meclisi toplantısına ilişkin tutanakların düzenlenmesini, kararların imzalanmasını ve muhafaza edilmesini sağlar.",
+      "reason":"Kısa son cümlede saklı kalan özne Genel Sekreterdir. Tam paragraf özgün Yeni Parti HTML'sinde okunmuştur; görev toplantı organlarına veya başka bir genel başkan yardımcısına kaydırılmadı.",
+      "binding":"Genel Sekreter öznesini gösteren tam paragraf bu tutanak satırının ilgili bulgusuna eklenmeli; sadece mevcut son cümleyle organ/yetkili eşlemesi bırakılmamalıdır."
+    }
+  ],
+  "existing_complete_context_bindings": [
+    {"id":"cm-x05","topic_id":"parti-defterleri","claim_index":1,"party_id":"iyi","old_row_id":"0306-iyi-parti-defterleri-row","existing_complete_passage_id":"0306-iyi-parti-defterleri-passage","version_id":"0205-iyi-charter-download-v1","location":"Madde78, index48/basılı49","exact_complete_passage":"Her kademedeki İYİ Parti teşkilatları; üye kayıt defteri, üye başvuru defteri, karar defteri, gelen ve giden evrak kayıt defteri, gelir ve gider defteri ile demirbaş eşya defteri tutmak zorundadırlar.","reason":"Bu ilk paragraf zaten eksiksiz ve bu satıra bağlıdır; yeni pasaj gerekmez. İlçe istisnası için ayrıca cm-x06 gereklidir."},
+    {"topic_id":"onsecim-kurulu","claim_index":0,"party_id":"yeni-parti","old_row_id":"0303-epm-tenth-onsecim-kurulu-row","existing_complete_passage_ids":["0303-orgut-onsecim-p","0303-epm-tenth-onsecim-kurulu-p"],"reason":"Örgüt denetimindeki iki yöntemin tanımı ve kurulların örgüt içinde belirlenmesi birlikte zaten finding_evidence bağındadır; ikisi de cümlede kullanılmalıdır."},
+    {"topic_id":"onsecim-kurulu","claim_index":1,"party_id":"saadet","old_row_id":"0310-saadet-2-row-0210","existing_complete_passage_id":"0310-saadet-2-055-onsecim-kurulu-context","reason":"Index22/basılı23 tam madde55'i içerir; sandık kurulunun da iki asıl/iki yedek sayısı yalnız kısa ilk cümlede yoktur."},
+    {"topic_id":"secim-musahitleri","claim_index":0,"party_id":"saadet","old_row_id":"0310-saadet-2-row-0212","existing_complete_passage_id":"0310-saadet-2-057-secim-musahitleri-context","reason":"Tam madde57'de aday adaylarının müşahit olamayacağı açıkça okunmuştur; bu ref zaten gerçek satıra bağlıdır."},
+    {"topic_id":"onsecim-oy-pusulasi","claim_index":0,"party_id":"saadet","old_row_id":"0310-saadet-2-row-0213","existing_complete_passage_id":"0310-saadet-2-058-onsecim-oy-pusulasi-context","reason":"Mühürleme ve seçim günü sandık başında bulundurma görevi madde58'in ikinci cümlesindedir; mevcut tam sayfa ref'i birlikte tutulmalıdır."},
+    {"topic_id":"onsecim-iptal","claim_index":0,"party_id":"saadet","old_row_id":"0310-saadet-2-row-0215","existing_complete_passage_id":"0310-saadet-2-060-onsecim-iptal-context","reason":"Adayları GİK'in tespit etmesi madde61'in ikinci cümlesidir. Tam sayfa zaten bu satırın finding_evidence bağlantısında bulunur."},
+    {"topic_id":"parti-sinif-bilesimi","claim_index":0,"party_id":"tip","old_row_id":"0304-tip-sinif-bilesim-row","existing_complete_passage_id":"0304-tip-sinif-bilesim-p1","reason":"Tam madde1.2 ilk maddeciğin başındaki işçi sınıfının partisi öznesini içerir. Kısa q alıntısı tek başına bu başlangıcı göstermez."},
+    {"topic_id":"uye-portali","claim_index":0,"party_id":"tip","old_row_id":"0304-tip-uye-portal-row","existing_complete_passage_id":"0304-tip-uye-portal-p1","reason":"PM/MYK karar yetkisi ve Bilişim Büro sorumluluğu tam madde4.14'tedir; bu p1 ref'i zaten bağlı ve senteze doğrudan eklenmiştir."},
+    {"topic_id":"parti-defterleri","claim_index":1,"party_id":"saadet","old_row_id":"0310-saadet-2-row-0216","existing_complete_passage_id":"0310-saadet-2-061a-parti-defterleri-context","reason":"Madde62 ilk paragrafının devamı ilçe istisnasını verir; Genel Merkez satırı etiketi bu açık metni değiştirmez."},
+    {"topic_id":"strateji-kurulu","claim_index":0,"party_id":"demokrat","old_row_id":"0312-demokrat-2-047-strateji-kurulu-row","existing_complete_passage_id":"0312-demokrat-2-047-strateji-kurulu-context","reason":"Index30/basılı30 madde50/D2'nin tam Siyaset Planlama Kurulu paragrafı öneri alanları, benimseme, Genel Başkan ve GİK aşamalarını içerir."},
+    {"topic_id":"strateji-kurulu","claim_index":1,"party_id":"tip","old_row_id":"0304-tip-charter-context-strateji-html-row","existing_complete_passage_id":"0304-tip-pm-strateji-p1","reason":"PM öznesi ve Kongre/Konferans karar çerçevesi madde3.7'nin ilk tam cümlesindedir; p1 zaten bu gerçek bağlam satırına bağlıdır."},
+    {"topic_id":"genisletilmis-toplanti","claim_index":1,"party_id":"tip","old_row_id":"0304-tip-genisletilmis-row","existing_complete_passage_id":"0304-tip-genisletilmis-p1","reason":"HTML madde4.10'un iki cümlesi çağıran PM'yi ve komiteler dahil katılım listesini birlikte verir; PDF için ayrı cm-x11 gerekir."},
+    {"topic_id":"mahalle-koy-temsilciligi","claim_index":0,"party_id":"demokrat","old_row_id":"0312-demokrat-1-015-mahalle-koy-temsilciligi-row","existing_complete_passage_id":"0312-demokrat-1-015-mahalle-koy-temsilciligi-context","reason":"Index12/basılı12'de büyükşehir merkez ilçelerinde seçim ve bunun dışında atama ayrımı gerçekten okundu. Kısa atama cümlesi tek başına yayımlanmamalıdır."},
+    {"topic_id":"mahalle-koy-temsilciligi","claim_index":2,"party_id":"saadet","old_row_id":"0310-saadet-1-047-mahalle-koy-temsilciligi-row","existing_complete_passage_id":"0310-saadet-1-047-mahalle-koy-temsilciligi-context","reason":"Madde30/a seçen belde/ilçe teşkilatını ve yerin büyüklüğüne göre sayı artırılabilmesini içerir."},
+    {"topic_id":"mahalle-koy-temsilciligi","claim_index":2,"party_id":"tip","old_row_id":"0304-tip-mahalle-row","existing_complete_passage_id":"0304-tip-parti-temsilcilik-p1","reason":"Örgüt bulunan ve bulunmayan yer ayrımı ile MYK fesih yetkisi tam madde3.18'dedir; bu ref zaten gerçek satıra bağlıdır."},
+    {"topic_id":"tutanak-rapor","claim_index":1,"party_id":"demokrat","old_row_id":"0312-demokrat-2-076-tutanak-rapor-row","existing_complete_passage_id":"0312-demokrat-2-076-tutanak-rapor-context","reason":"Madde27'nin devamındaki suretlerin üst kademelere gönderilmesi cümlesi tam sayfa bağındadır."},
+    {"topic_id":"tutanak-rapor","claim_index":3,"party_id":"tip","old_row_id":"0304-tip-tutanak-row","existing_complete_passage_id":"0304-tip-tutanak-p1","reason":"HTML madde4.11 iki cümleyle hem tutanak yükümlülüğünü hem Örgüt Komitesi/PM iletim zincirini verir. HTML entity'leri veri kaydında korunmuştur; özgün HTML okumasında çözülmüş metinle karşılaştırıldı."}
+  ],
+  "required_evidence_bindings": [
+    {"topic_id":"onsecim-kurulu","claim_index":0,"expansion_ids":["cm-x01"],"reason":"İYİ Parti önseçiminin yargısal denetim niteliğinin tam tanımı gerekir."},
+    {"topic_id":"secim-musahitleri","claim_index":0,"expansion_ids":["cm-x02"],"reason":"Kesin çıkarma kategorisi ve verilebilir kipinin kaynağı D girişidir."},
+    {"topic_id":"onsecim-esit-oy","claim_index":0,"expansion_ids":["cm-x03"],"reason":"DBP'nin genel pozitif ayrımcılık ilke kapsamı görünür tutulmalıdır."},
+    {"topic_id":"parti-defterleri","claim_index":0,"expansion_ids":["cm-x04"],"reason":"DEM'de yükümlü organların öznesi kısa listeden önce gelir."},
+    {"topic_id":"parti-defterleri","claim_index":1,"expansion_ids":["cm-x06"],"reason":"İYİ Parti'nin ilçe üye defteri istisnası madde5'tedir; mevcut madde78 ref'i bu koşulu içermez."},
+    {"topic_id":"uzlasma-kurulu","claim_index":0,"expansion_ids":["cm-x07"],"reason":"DEM kurulunun disiplin dışı görev alanı ve tarafların kabulü sayısal alıntının öncesindedir."},
+    {"topic_id":"strateji-kurulu","claim_index":0,"expansion_ids":["cm-x08"],"reason":"DEM madde23 iki sayfa üzerinde MYK ve PM yetkilerini tamamlar."},
+    {"topic_id":"genisletilmis-toplanti","claim_index":0,"expansion_ids":["cm-x09","cm-x10"],"reason":"DBP ve DEM'in üye olmayanların oy yasağı mevcut kısa ref'lerde yoktur."},
+    {"topic_id":"genisletilmis-toplanti","claim_index":1,"expansion_ids":["cm-x11"],"reason":"TİP PDF nüshasının çağrı ve katılım listesi özgün görselden ayrı bağlanmalıdır."},
+    {"topic_id":"mahalle-koy-temsilciligi","claim_index":0,"expansion_ids":["cm-x13"],"reason":"İYİ Parti temsilci görev süresi atama cümlesinin sonraki paragrafındadır."},
+    {"topic_id":"mahalle-koy-temsilciligi","claim_index":1,"expansion_ids":["cm-x12"],"reason":"DEM ilçe örgütünün açma ve en az bir kişi görevlendirme yetkisi kısa bağlılık alıntısında yoktur."},
+    {"topic_id":"tutanak-rapor","claim_index":2,"expansion_ids":["cm-x14"],"reason":"EMEP faaliyet raporunun öznesi tam cümledeki İYK'dir."},
+    {"topic_id":"tutanak-rapor","claim_index":3,"expansion_ids":["cm-x15"],"reason":"Yeni Parti'de tutanak görevinin öznesi Genel Sekreterdir; kısa son cümlede görünmez."}
+  ],
+  "scope_provenance": [
+    {"topic_id":"uye-portali","scope_id":"0308-dbp-absence-01-scope","version_id":"0207-dbp-charter-v1","registered_sections":"12 Ocak 2025 değişiklik notlu HTML tüzüğü, madde 1–114","registered_question":"üyelere özgü çevrimiçi portal","registered_reviewed_at":"2026-11-13T23:23:34.023336+00:00","this_task_actually_reread":"Madde 4 üyelerin bilgi edinmesi, gecikmeksizin yanıt ve üst organa başvuru paragrafı; kayıtlı kapsamın bütün alanları ve gerekçesi.","limit":"Önceki kayıtlı tam belge incelemesi yeniden kullanılır. Bu görevde madde 1–114'ün yeniden bütünüyle okunduğu veya hiçbir uygulamada portal olmadığı iddia edilmez."},
+    {"topic_id":"aday-tanitimi","scope_id":"0308-dbp-absence-29-scope","version_id":"0207-dbp-charter-v1","registered_sections":"12 Ocak 2025 değişiklik notlu HTML tüzüğü, madde 1–114","registered_question":"aday adaylarının tanıtımına ilişkin özel usul","registered_reviewed_at":"2026-11-13T23:23:34.023336+00:00","this_task_actually_reread":"Madde 85 aday belirleme yöntemlerinin tamamı ve madde 86 yerel seçimler cümlesi; kayıtlı kapsamın bütün alanları ve gerekçesi.","limit":"Önceki kayıtlı yokluk sonucu korunur; bu dar özgün okuma yeni bir bütün-belge yokluk kararı üretmez. Aday belirleme usulü, tanıtım usulüyle eşitlenmedi."},
+    {"topic_id":"uzlasma-kurulu","scope_id":"0308-dbp-absence-08-scope","version_id":"0207-dbp-charter-v1","registered_sections":"12 Ocak 2025 değişiklik notlu HTML tüzüğü, madde 1–114","registered_question":"uzlaşma kurulu adlı ayrı bir parti organı","registered_reviewed_at":"2026-11-13T23:23:34.023336+00:00","this_task_actually_reread":"Madde 34 kadın/gençlik meclisleri ve yerel örgüt ilişkilerinde diyalog, son çözüm mercii MYK paragrafı; kayıtlı kapsamın bütün alanları ve gerekçesi.","limit":"İnceleme yalnız belirli adla ayrı organ sorusudur; uzlaşma pratiğinin veya uyuşmazlık çözümünün bütünüyle yokluğu anlamına gelmez. Tam belge yeniden okunmuş gibi sunulmadı."}
+  ],
+  "review_limits": [
+    "Üç DBP scope tarafı yeni yokluk kararı değildir; önceden kaydedilmiş somut soru ve tam belge kapsamı aynen kullanılmıştır. Önceki kapsamın kaynak okuması ayrıca reddediliyorsa bu üç DBP tarafı, yeni bütün-belge okuması tamamlanıncaya kadar açık kalmalıdır; dar madde okumaları onların yerine geçmez.",
+    "TİP HTML ile dosya adında2022 geçen PDF'nin, DEM/HEDEP nüshalarının ve DBP HTML/tarihsiz taramanın hukuki yürürlük sırası bu görevde kesinleştirilmedi. Karşılaştırmalar somut sürüm rollerini korur.",
+    "EMEP'in parti-defterleri bağlamındaki genel hesap yönetmeliği, belirli defter adlarının listesi gibi kullanılmadı. Başka konulardaki genel üyelik, aday yöntemi veya kurul görevleri konuya özel yapıların varlığına otomatik kanıt sayılmadı.",
+    "Yeni Yol'un bütün15 konusundaki status_only tarafları aynı tam tüzük açığı ve arama denemesine dayanır; bunlar15 ayrı başarısız konu araması veya15 siyasal tutum yokluğu olarak okunmamalıdır.",
+    "Araştırma dosyasındaki semantic_reason her taraf için elle yazılmış inceleme gerekçesidir. Üretim decision.sides sözleşmesi yalnız party_id,row_id,support,refs istiyorsa semantic_reason araştırmada korunmalı veya açıklamaya uygun biçimde aktarılmalı; sözleşmeye habersiz yeni alan eklenmemelidir."
+  ]
+}
