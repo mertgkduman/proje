@@ -75,7 +75,26 @@ class ComparisonContentTest(unittest.TestCase):
         for fid in (active_id, ordinary_id):
             with self.assertRaisesRegex(ValueError, 'Bulgu HTML'):
                 arsiv.validate_phase_one_html(data, report.replace('data-finding-id="' + fid + '"', 'data-removed-finding="' + fid + '"'))
+        shared = copy.deepcopy(data)
+        shared['dossier_field'][0]['finding_id'] = old_finding['id']
+        self.assertIn(old_finding['id'], {f['id'] for f in arsiv.comparison_render_data(shared)['finding']})
         self.assertEqual(historical['taxonomy_version'], 1)
+
+    def test_selected_projection_reproduces_renderer_17_snapshot(self):
+        path = Path(__file__).resolve().parents[1] / 'src' / 'rapor_v17.py'
+        spec = importlib.util.spec_from_file_location('frozen_rapor_v17', path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        release = arsiv.current()
+        while release:
+            folder = arsiv.DATA / 'releases' / release
+            manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+            if manifest['renderer_version'] == 17:
+                break
+            release = manifest.get('base_release')
+        self.assertTrue(release)
+        data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+        self.assertEqual(arsiv.render_comparison_snapshot(data, module.render_report).encode(), (folder / 'index.html').read_bytes())
 
     def test_program_topic_basis_points_to_the_actual_heading(self):
         root = Path(__file__).resolve().parents[1]
