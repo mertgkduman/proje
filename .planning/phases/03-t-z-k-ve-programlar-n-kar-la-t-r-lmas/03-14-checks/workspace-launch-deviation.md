@@ -15,3 +15,30 @@ geriye dönük iddia edilemez. İlk deneme başarılı sayılmadı. Sonraki dene
 `start_new_session=True`, `DEVNULL` stdin, kalıcı günlük/çıkış ve
 PID/host/token içeren `run.json` ile ayrı yürütülür; aynı adlı herhangi başka
 bir kilidin kaldırılması için bu olay emsal değildir.
+
+## 14 Kasım: başarısız yayın ve aynı çalışma alanına dönüş
+
+Atomik eşleme `COMPARISON_RECONCILE_OK` ve çıkış 0 ile bitti. Bu koşunun
+üç girdi dosyası koşu süresince değiştirilmedi; koşu öncesi SHA ayrıca
+alınmadı. Koşudan hemen sonra değişmeyen `f76ab7d` girdileri için SHA ve salt
+okunur kopyalar `/tmp/gsd-0314-reconcile-inputs/` altında kaydedildi. İlk
+sentez yüklemesinde salt okunur girdi süreçten önce oluşturuldu; SHA ise süreç
+başlatıldıktan sonra run kaydına yazıldı. Sonraki koşularda kopya/SHA ve ilk
+run kaydı süreç başlamadan oluşturulur.
+
+İlk yerel yayın denemesi yeni bir bulguda Faz1 kaynak inceleme ilişkisinin
+eksikliği nedeniyle çıkış 1 ile reddedildi; kabul edilmiş current işaretçisi
+değişmedi. Yayın fonksiyonunun `finally` bölümü bu çalışma alanına ait
+kilidi kaldırdı. Desteklenen bir workspace-resume komutu bulunmadığından,
+aynı workspace metadata belirteci, sabit current/base ve O_EXCL ile bu
+çalışma alanının kilidi yeniden alındı. Başka kilit üzerine yazılmadı.
+O_EXCL öncesi workspace DB SHA'sı ayrıca ölçülmedi: sonradan başarısız
+yayının staging DB SHA'sı, yayın öncesi kaydedilmiş workspace SHA'sıyla
+`ed109bca93d73600ccb154e26ebb34af4c1e1b182b1d9e2a1f568e4b605e426b`
+olarak birebir eşleşti. İlişki yüklemesinden sonra staging ile workspace'in
+review dışındaki bütün tabloları iki yönlü EXCEPT ile eşitti; eski review
+kaybı sıfır ve eklenen review sayısı 108 idi. İnceleme soyları
+`finding-review-lineage.json`, yüklenebilir ilişkiler
+`data/comparisons/03-finding-review-links.json` içindedir. Tam Faz1 workspace
+kontrolü `PHASE_ONE_WORKSPACE_OK 8022` verdi. Başarısız yayın başarı olarak
+kaydedilmedi; yalnız yayın adımı yeni tam kontrollerle tekrar başlatıldı.
