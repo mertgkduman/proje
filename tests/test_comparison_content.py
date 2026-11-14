@@ -13,6 +13,34 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_reconcile_rejects_one_party_new_topic_without_changing_workspace(self):
+        reconcile = getattr(arsiv, 'comparison_reconcile', None)
+        self.assertTrue(callable(reconcile), 'Atomic comparison reconciliation is required')
+        source = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        previous_data = arsiv.DATA
+        before_pointer = arsiv.current()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            work = root / 'work'
+            work.mkdir()
+            arsiv.DATA = root / 'data'
+            arsiv.DATA.mkdir()
+            try:
+                shutil.copyfile(source, work / 'records.sqlite3')
+                (work / 'workspace.json').write_text(json.dumps({'base': before_pointer, 'token': 'test-token'}))
+                (arsiv.DATA / '.write.lock').write_text(json.dumps({'token': 'test-token'}))
+                (arsiv.DATA / 'current.json').write_text(json.dumps({'release_id': before_pointer}))
+                before = arsiv.sha(work / 'records.sqlite3')
+                taxonomy = {'taxonomy_version': 3, 'records': [{'kind': 'comparison_topic', 'values': {'topic_id': 'new-topic', 'taxonomy_version': 3}}], 'row_mappings': []}
+                inventory = {'taxonomy_version': 3, 'status': 'complete', 'sections': []}
+                backfill = {'contract_version': 1, 'taxonomy_version': 3, 'stage': 'partial', 'records': [{'kind': 'comparison_row', 'values': {'id': 'one-party', 'topic_id': 'new-topic', 'taxonomy_version': 3, 'party_id': 'iyi', 'state': 'evidence'}}]}
+                with self.assertRaisesRegex(ValueError, '(?i)dokuz|parti'):
+                    reconcile(work, taxonomy, inventory, backfill)
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
+                self.assertEqual(arsiv.current(), before_pointer)
+            finally:
+                arsiv.DATA = previous_data
+
     def test_selected_taxonomy_rendering_keeps_legacy_byte_compatibility(self):
         render = getattr(arsiv, 'render_comparison_snapshot', None)
         self.assertTrue(callable(render), 'Selected-taxonomy snapshot rendering is required')
