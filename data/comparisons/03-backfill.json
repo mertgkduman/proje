@@ -3682,6 +3682,256 @@
         "passage_id": "0310-saadet-1-096-secim-adaylik-kosulu-p",
         "role": "support"
       }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-iyi-cyprus-recognition-full-p",
+        "version_id": "0205-iyi-program-page-v1",
+        "exact": "Türkiye tarafından egemen ve bağımsız bir Devlet olarak tanınmış olan Kuzey Kıbrıs Türk Cumhuriyeti’nin uluslararası toplumun diğer üyelerince de tanınmasının, uluslararası kuruluş ve örgütlere üyeliğinin sağlanmasının, ekonomisinin güçlendirilerek refah seviyesinin yükseltilmesinin, Ada’da âdil ve kalıcı siyasî çözüm şekline ulaşılmasını kolaylaştıracağı inancındayız.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Dış politika — Kıbrıs",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0306-iyi-program-kibris-target-summary",
+        "passage_id": "0314-iyi-cyprus-recognition-full-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-bdp-childcare-blog-p",
+        "version_id": "0207-dbp-bdp-program-v1",
+        "exact": "Ücretsiz kreş hizmetleri kamu ve özel sektörün finansmanı ile sağlanacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Kadın politikaları",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-childcare-blog-s",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Tarihsel BDP program kopyası ücretsiz kreş hizmetlerinin kamu ve özel sektör finansmanıyla sağlanmasını önerir.",
+        "pair_id": "0314-bdp-childcare-blog-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-childcare-blog-q",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Ücretsiz kreş hizmetleri kamu ve özel sektörün finansmanı ile sağlanacaktır.",
+        "pair_id": "0314-bdp-childcare-blog-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-childcare-blog-s",
+        "passage_id": "0314-bdp-childcare-blog-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-childcare-blog-q",
+        "passage_id": "0314-bdp-childcare-blog-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-bdp-childcare-blog-f",
+        "row_id": "03-v3-0308-dbp-program-scope-06-0-context-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-bdp-childcare-blog-s",
+        "quote_finding_id": "0314-bdp-childcare-blog-q",
+        "condition_key": "Ücretsiz kreş; kamu ve özel sektör finansmanı"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-bdp-childcare-blog-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:28:45+00:00",
+        "result": "reviewed",
+        "reason": "Kaynak ücretsiz hizmet ve iki finansman kaynağını birlikte belirtir; ücretli ebeveyn izni veya güncel DBP programı sayılmaz. Kaynak 0314-bdp-childcare-blog-p; seçili satır 03-v3-0308-dbp-program-scope-06-0-context-row."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-bdp-childcare-wordpress-p",
+        "version_id": "0207-dbp-bdp-program-wordpress-v1",
+        "exact": "Ücretsiz kreş hizmetleri kamu ve özel sektörün finansmanı ile sağlanacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Kadın politikaları",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-childcare-wordpress-s",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Tarihsel BDP programının ikinci kopyası ücretsiz kreş hizmetlerinin kamu ve özel sektör finansmanıyla sağlanmasını önerir.",
+        "pair_id": "0314-bdp-childcare-wordpress-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-childcare-wordpress-q",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Ücretsiz kreş hizmetleri kamu ve özel sektörün finansmanı ile sağlanacaktır.",
+        "pair_id": "0314-bdp-childcare-wordpress-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-childcare-wordpress-s",
+        "passage_id": "0314-bdp-childcare-wordpress-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-childcare-wordpress-q",
+        "passage_id": "0314-bdp-childcare-wordpress-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-bdp-childcare-wordpress-f",
+        "row_id": "03-v3-0308-dbp-program-scope-06-1-context-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-bdp-childcare-wordpress-s",
+        "quote_finding_id": "0314-bdp-childcare-wordpress-q",
+        "condition_key": "Ücretsiz kreş; kamu ve özel sektör finansmanı"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-bdp-childcare-wordpress-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:28:45+00:00",
+        "result": "reviewed",
+        "reason": "İkinci kaynak aynı önerinin tarihsel kopyasıdır; iki bağımsız politika veya güncel DBP programı gibi sunulmaz. Kaynak 0314-bdp-childcare-wordpress-p; seçili satır 03-v3-0308-dbp-program-scope-06-1-context-row."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0314-bdp-military-commercial-p",
+        "version_id": "0207-dbp-bdp-program-wordpress-v1",
+        "exact": "Partimiz,  TSK’nın kâr amaçlı şirketler kurarak ekonomik faaliyette bulunmasını son derece sakıncalı bulmaktadır.  Devletin resmi kurumları sadece kamu yararı çerçevesinde faaliyette bulunabilir, asıl görevi güvenliği sağlamak olan bir kurumun  sahip olduğu şirketler aracılığıyla ekonomik faaliyette bulunması kabul edilemez.  Partimiz bu durumun ortadan kaldırılması için gerekli hukuki ve idari düzenlemeleri yapmayı taahhüt eder.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Ekonomi politikamız",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-military-commercial-s",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "summary",
+        "epistemic_type": "claim",
+        "text": "Tarihsel BDP program kopyası TSK’nın kâr amaçlı şirketlerle ekonomik faaliyette bulunmasını sakıncalı ve kabul edilemez görür; bu durumu kaldırmak için hukuki ve idari düzenlemeler taahhüt eder.",
+        "pair_id": "0314-bdp-military-commercial-pair"
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0314-bdp-military-commercial-q",
+        "party_id": "dbp",
+        "heading": "Program",
+        "provenance": "quote",
+        "epistemic_type": "claim",
+        "text": "Partimiz,  TSK’nın kâr amaçlı şirketler kurarak ekonomik faaliyette bulunmasını son derece sakıncalı bulmaktadır.  Devletin resmi kurumları sadece kamu yararı çerçevesinde faaliyette bulunabilir, asıl görevi güvenliği sağlamak olan bir kurumun  sahip olduğu şirketler aracılığıyla ekonomik faaliyette bulunması kabul edilemez.  Partimiz bu durumun ortadan kaldırılması için gerekli hukuki ve idari düzenlemeleri yapmayı taahhüt eder.",
+        "pair_id": "0314-bdp-military-commercial-pair"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-military-commercial-s",
+        "passage_id": "0314-bdp-military-commercial-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0314-bdp-military-commercial-q",
+        "passage_id": "0314-bdp-military-commercial-p",
+        "role": "quotation"
+      }
+    },
+    {
+      "kind": "comparison_field",
+      "values": {
+        "id": "0314-bdp-military-commercial-f",
+        "row_id": "03-v3-0308-dbp-program-086-1-row",
+        "field": "instrument",
+        "summary_finding_id": "0314-bdp-military-commercial-s",
+        "quote_finding_id": "0314-bdp-military-commercial-q",
+        "condition_key": "TSK’nın kâr amaçlı şirketlerle ekonomik faaliyeti"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_field",
+        "subject_id": "0314-bdp-military-commercial-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T20:28:45+00:00",
+        "result": "reviewed",
+        "reason": "Tarihsel BDP kaynak paragrafı TSK’nın kâr amaçlı şirketlerle ekonomik faaliyetine itirazı ve bu durumu kaldırmak için hukuki/idari düzenleme taahhüdünü açıkça birlikte belirtir. Askerî personelin tüm çalışması veya savunma sanayiinin tümü hakkında genelleme yapılmaz. Kaynak 0314-bdp-military-commercial-p; seçili satır 03-v3-0308-dbp-program-086-1-row."
+      }
     }
   ],
   "row_reviews": [

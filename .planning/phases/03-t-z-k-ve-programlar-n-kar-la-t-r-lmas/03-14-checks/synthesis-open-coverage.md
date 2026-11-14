@@ -97,3 +97,10 @@ başlığı ayrı kaynak parçalarıdır. Saadet'in adaylıkta üyelik koşulu a
 ile adaylıkla üyelik sıfatı kazanılmasına dair iki mevcut maddesi, ilgili iki
 konuya kendi kaynaklarıyla bağlandı; hangi aşamada üyeliğin başladığı yorumla
 tekleştirilmedi. 59/59 taraf–konu–kanıt denetimi geçti.
+
+Policy4 grubunda 20 konu için 52 kaynakçı cümlesi ayrı yazıldı. İYİ Parti'nin
+Kıbrıs'ta tanınma, örgüt üyeliği ve refahı kalıcı çözümü kolaylaştıran adımlar
+olarak anlatan tam özgün cümlesi `0314-iyi-cyprus-recognition-full-p` ile
+eklendi; EMEP'in askerî çekilme önerisiyle bir ek cümlede farklı araçlar
+korunarak karşılaştırıldı. 53/53 iddia bağı doğrulandı. EMEP'in 7-f maddesine
+özgü devrim ve halk iktidarı koşulu başka maddelere otomatik taşınmadı.

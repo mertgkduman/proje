@@ -60,6 +60,18 @@ gelir satırı ile iki Demokrat alanının gerekçeleri özgül araştırmadır.
   kayıtları silmeye karar verebilmesi `0303-sandik-silme-p` ile kaynaklıdır.
   Yetki, kesin veya fiilen gerçekleşmiş kayıt silme gibi gösterilmez; bu parti
   içi hüküm İYİ'nin ayrı koşullu kayıt yenileme yetkisiyle eşitlenmez.
+* `0314-bdp-childcare-blog-f` ve `0314-bdp-childcare-wordpress-f` tarihsel
+  BDP'nin ücretsiz kreş ve kamu/özel finansman önerisinin iki kopyasıdır;
+  ebeveyn izninde sınırlı yokluk kaydıyla veya güncel DBP programıyla
+  eşitlenmez. `0314-bdp-military-commercial-f` TSK'nın kâr amaçlı şirketleri
+  hakkındaki tarihsel paragraf ve hukuki/idari düzenleme hedefidir.
+  `0309-emep-program-035-0-field` kalifiye işçi ortalaması ücret sınırını,
+  `0309-emep-program-pdf-004-0-field` kabulü bilinmeyen kongre önerisindeki
+  herkes için yeterli parasız suyu gösterir.
+* Demokrat'ın II. Demokrasi yargı kurulu, tarihsel DYP yerel bütçe desteği ve
+  tarihsel sağlık sigortası alanları ile arşiv Demokrat karşılıkları
+  `candidate-queue-status.md` bölümünde gerçek satır/alan kimlikleriyle
+  eşleştirilmiştir; farklı kaynak rolleri ve bilinmeyen sıraları korunur.
 * Eski manifestler kendi tam görünümü ve renderer sürümüyle yeniden üretilebilir;
   03-15, yeni görünüm iyileştirmesinde eski manifest kapsamını değiştirmez.
 
