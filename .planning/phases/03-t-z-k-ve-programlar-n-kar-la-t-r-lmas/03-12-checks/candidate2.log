@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1605, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1543, in main
+    check_comparison_input(args.input, args.inventory); print('COMPARISON_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 412, in check_comparison_input
+    work = open_workspace(temp)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 637, in open_workspace
+    fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '/hpc/group/pfisterlab/mg551/storage/proje/data/.write.lock'

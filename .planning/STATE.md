@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 03
 current_phase_name: Tüzük ve programların karşılaştırılması
-current_plan: 12
+current_plan: 13
 status: executing
-stopped_at: Completed 03-11-PLAN.md
-last_updated: "2026-11-14T10:26:17.648Z"
+stopped_at: Completed 03-12-PLAN.md
+last_updated: "2026-11-14T13:35:20.241Z"
 last_activity: 2026-11-14
-last_activity_desc: 03-11 Saadet program karşılaştırması tamamlandı
-state_head: 3accd1d52c6137e4bbb89b90a97e8b5358b07c4f
+last_activity_desc: 03-12 Demokrat tüzük ve tarihçe karşılaştırması tamamlandı
+state_head: d82b0b557cde841348d2768de1b6fbbcf9465952
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 32
-  completed_plans: 27
+  completed_plans: 28
 ---
 
 # Project State
@@ -28,20 +28,20 @@ See: .planning/PROJECT.md (updated 2026-11-11)
 
 ## Current Position
 
-Current Plan: 12
+Current Plan: 13
 Total Plans in Phase: 16
 Phase: 03 (Tüzük ve programların karşılaştırılması) — EXECUTING
-Plan: 12 of 16
+Plan: 13 of 16
 Status: Ready to execute
-Last activity: 2026-11-14 — 03-11 tamamlandı; Saadet program karşılaştırması yerel partial sürümde doğrulandı
+Last activity: 2026-11-14 — 03-12 tamamlandı; Demokrat tüzük ve tarihçe karşılaştırması yerel partial sürümde doğrulandı
 
-Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 11/16 plan
+Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 12/16 plan
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 17
+- Total plans completed: 28
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
 - Total execution time: Faz 1’in altı ve Faz 2’nin on planı ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
@@ -54,7 +54,7 @@ Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/1
 
 **Recent Trend:**
 
-- Last 5 plans: 02-06, 02-07, 02-08, 02-09, 02-10
+- Last 5 plans: 03-08, 03-09, 03-10, 03-11, 03-12
 - Trend: Faz 1 tamamlandı; Faz 2 yürütümü 10/10 ve teknik teslimi 13/13. Güncel yerel üretici15 raporu hazır; kullanıcı UAT 3/3 geçti, faz tamamlandı. Kamu raporu 261111-epm sürümünde kalır.
 
 **Per-Plan Metrics:**
@@ -88,6 +88,7 @@ Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/1
 | Phase 03 P09 | 150min | 2 tasks | 12 files |
 | Phase 03 P10 | unknown | 2 tasks | 55 files |
 | Phase 03 P11 | unknown | 2 tasks | 12 files |
+| Phase 03 P12 | unknown | 2 tasks | 12 files |
 
 ## Accumulated Context
 
@@ -136,6 +137,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 03]: 03-10: Aynı SHA taşıyan Saadet tüzük adresleri maddi değişiklik değildir; 2002 ve sonraki nüsha iki kaynakla, kesin yürürlük ve ara zincir varsayılmadan karşılaştırılır.
 - [Phase 03]: 03-10: Dar soruya eşlik eden kaynak bağlamı olumlu cevap sayılmaz; 63 sınırlı yokluk kaydı kapsamıyla korunur.
 - [Phase 03]: 03-11: Dar soruya eşlik eden bağlam olumlu politika yanıtı sayılmaz; koşullu Temel Vatandaşlık Geliri kaynak koşullarıyla korunur.
+- [Phase 03]: 03-12: Arşiv yakalama tarihi kabul veya son sürüm kanıtı değildir; tüzük 20 ve 25 arasındaki uygulanma ilişkisi varsayılmaz.
 
 ### Pending Todos
 
@@ -174,6 +176,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-14T10:26:17.159Z
-Stopped at: Completed 03-11-PLAN.md
+Last session: 2026-11-14T13:35:19.788Z
+Stopped at: Completed 03-12-PLAN.md
 Resume file: None
