@@ -18317,6 +18317,155 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Programı edinilemeyen tarafa devrimci, reformcu veya devrim karşıtı nitelik atanamaz. Gerçek missing ve attempt kayıtları belge erişimini açık bırakır; DEM kongre eki ve BDP döneminin kopyaları bugünkü bağımsız programın kendisi olarak doğrulanmamıştır.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-program-missing-turkiye-devrim\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-current-turkiye-devrim\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-turkiye-devrim-program\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-tibbi-uretimi-synthesis-1",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti aşı, serum, biyolojik ürün, ilaç hammaddesi ve tıbbi cihazlarda yerli üretim kapasitesini artırmayı; İYİ Parti millî ilaç ve cihaz sanayisini desteklemeyi ve bakteriyel ve viral aşılar için millî üretim altyapısı oluşturmayı önerir. Saadet ise ilaç, aşı ve tıbbi cihazda dışa bağımlılığın kaldırılması hedefini ve yerli ilaç üretimine yönelik bilimsel çalışmaların desteklenmesini ayrı belirtir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-tibbi-uretimi-synthesis-1",
+        "passage_id": "0303-epm-program-detail-sagliga-erisim-p5"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-tibbi-uretimi-synthesis-1",
+        "passage_id": "0314-iyi-ilac-cihaz-sanayi-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-tibbi-uretimi-synthesis-1",
+        "passage_id": "0314-iyi-tibbi-uretim-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-tibbi-uretimi-synthesis-1",
+        "passage_id": "0311-saadet-backfill-05-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-tibbi-uretimi-synthesis-1",
+        "passage_id": "0311-saadet-p2-172-teknoloji-inovasyon-p"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-tibbi-uretimi-synthesis-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:43:17.103298+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Yeni Parti kapasite artışını, İYİ Parti sanayi desteği ile belirli aşıların üretim altyapısını, Saadet bağımlılık hedefi ile bilimsel çalışma desteğini kendi pasajlarında belirtir. Üçüne aynı araç, gerçekleşmiş üretim veya aynı takvim atfedilmedi.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"0314-yeni-tibbi-uretim-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-program-detail-sagliga-erisim-p5\"]},{\"party_id\":\"iyi\",\"row_id\":\"0314-iyi-tibbi-uretim-row\",\"support\":\"passage\",\"refs\":[\"0314-iyi-ilac-cihaz-sanayi-p\",\"0314-iyi-tibbi-uretim-p\"]},{\"party_id\":\"saadet\",\"row_id\":\"0314-saadet-tibbi-uretim-row\",\"support\":\"passage\",\"refs\":[\"0311-saadet-backfill-05-p\",\"0311-saadet-p2-172-teknoloji-inovasyon-p\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-tibbi-uretimi-synthesis-2",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "text": "EMEP’in Yargıtay arşivindeki program gövdesi, ilaç üretiminin devletçe üstlenilmesini ve fahiş fiyatlara son vermek amacıyla özel ilaç fabrikalarının devletleştirilmesini öngörür. DBP dosyasındaki tarihsel BDP programı kopyası ise ilaç ve sağlık teknolojisi ile teçhizatın üretim, kullanım ve pazarlamasında denetim, üretim yatırımı ve araştırma geliştirmeye kaynak ayrılmasını belirtir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-tibbi-uretimi-synthesis-2",
+        "passage_id": "0314-emep-pdf-ilac-uretim-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-tibbi-uretimi-synthesis-2",
+        "passage_id": "0314-bdp-tibbi-uretim-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-tibbi-uretimi-synthesis-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:43:17.103298+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"EMEP taramasının B/8 program gövdesi ilaç üretiminde devlet ve özel fabrikalar için açık araçları belirtir. BDP tarihsel kopyası üç süreçte denetim ile üretime yatırım ve Ar-Ge kaynağını söyler; güncel DBP programı veya aynı devletleştirme önerisi olarak sunulmaz.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"0314-emep-pdf-tibbi-uretim-row\",\"support\":\"passage\",\"refs\":[\"0314-emep-pdf-ilac-uretim-p\"]},{\"party_id\":\"dbp\",\"row_id\":\"0314-bdp-tibbi-uretim-row1\",\"support\":\"passage\",\"refs\":[\"0314-bdp-tibbi-uretim-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-tibbi-uretimi-synthesis-3",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "text": "İncelenen TİP programı ekonomi, üretim ve sağlık başlıkları; Demokrat Parti arşiv programının incelenen sanayi, yatırım, yenilik, dış ticaret ve sağlık başlıkları ile DEM kongre ekinin incelenen ekonomi kararları, bu sınırlı bölümlerde ilaç, aşı veya tıbbi cihaz üretimine özel bir araç açıklamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-tibbi-uretimi-synthesis-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:43:17.103298+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Üç ayrı gerçek kapsam kaydı yalnız adlandırılan kaynak bölümlerini kapsar. TİP’te genel kamulaştırma ve sağlık, Demokrat arşivinde genel sanayi/yatırım ve DEM ekinde sağlık yatırımı dışlanmaz; bölümlerin dışına veya belge geneline yokluk çıkarılmaz.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"0314-tip-tibbi-uretim-row\",\"support\":\"scope\",\"refs\":[\"0314-tip-tibbi-uretim-scope\"]},{\"party_id\":\"demokrat\",\"row_id\":\"0314-demokrat-tibbi-uretim-row\",\"support\":\"scope\",\"refs\":[\"0314-demokrat-tibbi-uretim-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"0314-dem-tibbi-uretim-congress-row\",\"support\":\"scope\",\"refs\":[\"0314-dem-tibbi-uretim-congress-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-tibbi-uretimi-synthesis-4",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "text": "EMEP’in HTML programında ayrıca incelenen halk ve kişi sağlığı maddesi sağlık kurumlarının personel, donanım ve tıbbi malzemeyle örgütlenmesini ele alır; bu maddede malzemenin üretim modeli belirtilmez. Yargıtay taramasındaki ilaç üretimi hükmü ayrı kaynak bölümünde yukarıda gösterilmiştir."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-tibbi-uretimi-synthesis-4",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:43:17.103298+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"EMEP HTML A/11 kapsam kaydı sadece bu maddeyle sınırlıdır. Aynı partiye ait Yargıtay taraması B/8’deki olumlu üretim hükmü ile çelişki veya bütün programda yokluk kurulmaz.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"0314-emep-tibbi-uretim-row\",\"support\":\"scope\",\"refs\":[\"0314-emep-tibbi-uretim-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-tibbi-uretimi-synthesis-5",
+        "topic_id": "tibbi-urun-uretimi",
+        "taxonomy_version": 3,
+        "text": "DEM ve DBP’nin ayrı güncel tam programları ile Yeni Yol’un bağımsız programı bu edinimde bulunamadı; tıbbi ürün üretimi bu ana belgeler üzerinden karşılaştırılamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-tibbi-uretimi-synthesis-5",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:43:17.103298+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Üç gerçek eksik kaydı ve arama girişimi belge edinim durumudur; üç partiye üretime ilişkin herhangi bir olumlu veya olumsuz görüş atfetmez. Tarihsel BDP kopyasının hükmü kendi tarihsel rolünde ayrıca yer alır.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"0314-dem-tibbi-uretim-program-missing\",\"support\":\"missing\",\"refs\":[\"0204-dem-missing-current-program\",\"0204-dem-search-program\"]},{\"party_id\":\"dbp\",\"row_id\":\"0314-dbp-tibbi-uretim-program-missing\",\"support\":\"missing\",\"refs\":[\"0207-dbp-missing-current-program\",\"0207-dbp-search-current-program\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"0314-yeniyol-tibbi-uretim-program-missing\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-program\",\"0307-yeni-yol-search-program-20261113\"]}]}"
+      }
     }
   ]
 }
