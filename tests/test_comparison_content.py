@@ -260,7 +260,14 @@ class ComparisonContentTest(unittest.TestCase):
             release = manifest.get('base_release')
         self.assertTrue(release)
         data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
-        self.assertEqual(arsiv.render_comparison_snapshot(data, rapor.render_report).encode(), (folder / 'index.html').read_bytes())
+        frozen = Path(__file__).resolve().parents[1] / 'src' / 'rapor_v18.py'
+        renderer = rapor.render_report
+        if frozen.exists():
+            spec = importlib.util.spec_from_file_location('frozen_rapor_v18', frozen)
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            renderer = module.render_report
+        self.assertEqual(arsiv.render_comparison_snapshot(data, renderer).encode(), (folder / 'index.html').read_bytes())
 
     def test_program_topic_basis_points_to_the_actual_heading(self):
         root = Path(__file__).resolve().parents[1]
