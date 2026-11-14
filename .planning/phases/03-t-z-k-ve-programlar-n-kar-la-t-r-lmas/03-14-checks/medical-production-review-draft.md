@@ -18,6 +18,11 @@
   ürünlerin yerli üretimine ilişkin özel bir hüküm saptanmadı
   (`0203-tip-program-v1`). Bu yalnız bölüm sınırındaki incelemedir; diğer
   bölümler veya başka belgeler için yokluk iddiası değildir.
+- EMEP'in HTML programındaki sağlık hizmeti maddesi sağlık kurumlarının
+  yeterli personel, donanım ve tıbbi malzemeyle yeniden örgütlenmesini
+  öngörür; bu maddede malzemenin yerli üretimi belirtilmez
+  (`0208-emep-program-charter-v1`). PDF önerisi ve diğer program bölümleri
+  için bu dar maddeden yokluk sonucu çıkarılamaz.
 
 Üç kaynak tıbbi üretim bakımından ilişkilidir, ancak kapsamları ve araçları
 aynı değildir: kapasite artışı, belirli aşıların üretim altyapısı ve dışa
