@@ -429,9 +429,12 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
         parties = {r['party_id'] for r in db.execute('SELECT party_id FROM scope_party')}
         old_topics = {r['topic_id']: dict(r) for r in db.execute('SELECT * FROM comparison_topic WHERE taxonomy_version=?', (old_version,))}
         old_rows = {r['id']: dict(r) for r in db.execute('SELECT * FROM comparison_row WHERE taxonomy_version=?', (old_version,))}
-        new_topics = {e['values']['topic_id']: e['values'] for e in taxonomy_records if e.get('kind') == 'comparison_topic'}
+        topic_entries = [e['values'] for e in taxonomy_records if e.get('kind') == 'comparison_topic']
+        new_topics = {entry['topic_id']: entry for entry in topic_entries}
         if not new_topics or any(t.get('taxonomy_version') != version for t in new_topics.values()):
             raise ValueError('Yeni sürümün tam konu sözlüğü gerekli')
+        if len(new_topics) != len(topic_entries):
+            raise ValueError('Yeni sözlükte yinelenen konu olamaz')
         direct_rows = [e['values'] for e in backfill_records if e.get('kind') == 'comparison_row']
         # Check reviewed coverage before constructing or writing any candidate.
         compare_keys = ('domain', 'parent_topic_id', 'definition', 'applicable_levels', 'basis_kind')
@@ -446,6 +449,8 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
                 covered[mapping['topic_id']].add(source['party_id'])
         if len(parties) != 9 or any(found != parties for found in covered.values()):
             raise ValueError('Yeni veya değişen her konu için incelenmiş dokuz parti gerekli')
+        if not changed or not set(old_topics) <= set(new_topics):
+            raise ValueError('Sürüm değişikliği gerçek konu değişikliği ve tam eski konu eşlemesi gerektirir')
         records = list(taxonomy_records)
         used = set()
         for mapping in mappings:
