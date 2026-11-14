@@ -337,7 +337,7 @@ def comparison_inventory_records(inventory, taxonomy_version):
     return records
 
 
-def load_comparison(work, payload, inventory=None):
+def load_comparison(work, payload, inventory=None, *, reconciled=False):
     if not isinstance(payload, dict) or type(payload.get('contract_version')) is not int or payload['contract_version'] != 1 or payload.get('stage') not in ('tracer','partial','complete') or type(payload.get('taxonomy_version')) is not int or payload['taxonomy_version'] < 1 or not isinstance(payload.get('records'), list):
         raise ValueError('Karşılaştırma paketi geçersiz')
     if inventory is not None:
@@ -359,6 +359,8 @@ def load_comparison(work, payload, inventory=None):
                 historical_package = False
                 if contract:
                     if contract['version'] != 1: raise ValueError('Bilinmeyen karşılaştırma sözleşmesi')
+                    if payload['taxonomy_version'] >= 3 and payload['taxonomy_version'] > contract['taxonomy_version'] and not reconciled:
+                        raise ValueError('Yeni sözlük açık karşılaştırma eşlemesi gerektirir')
                     stages = {'tracer':0,'partial':1,'complete':2}
                     historical_package = payload['taxonomy_version'] < contract['taxonomy_version'] or stages[payload['stage']] < stages[contract['stage']]
                     if not historical_package:
@@ -481,6 +483,45 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
             used.add(source['id'])
         if used != set(old_rows):
             raise ValueError('Bütün seçili eski satırların açık lineage eşlemesi gerekli')
+        # A count is not a research review. Changed topics require an explicit
+        # author-supplied decision for each selected row and references to that
+        # row's actual passage, scoped absence, or missing-document record.
+        candidate_records = records + backfill_records
+        changed_rows = {e['values']['id']: e['values'] for e in candidate_records if e.get('kind') == 'comparison_row' and e['values'].get('topic_id') in changed}
+        reviews = {(e['values'].get('subject_kind'), e['values'].get('subject_id')): e['values'] for e in backfill_records if e.get('kind') == 'comparison_semantic_review'}
+        links = backfill.get('row_reviews')
+        if not isinstance(links, list): raise ValueError('Yeni anlam incelemesi ve kaynak ilişkileri gerekli')
+        by_row = {item.get('row_id'): item for item in links if isinstance(item, dict)}
+        if len(by_row) != len(links) or set(by_row) != set(changed_rows):
+            raise ValueError('Her değişen satır için yeni anlam incelemesi gerekli')
+        candidate_fields = [e['values'] for e in candidate_records if e.get('kind') == 'comparison_field']
+        extra_evidence = [e['values'] for e in candidate_records if e.get('kind') == 'finding_evidence']
+        for rid, row in changed_rows.items():
+            link = by_row[rid]
+            review = reviews.get(('comparison_row', rid))
+            if set(link) != {'row_id','topic_id','party_id','definition','conditions','refs'} or link['topic_id'] != row['topic_id'] or link['party_id'] != row['party_id'] or link['definition'] != new_topics[row['topic_id']]['definition'] or not isinstance(link['conditions'], str) or not link['conditions'].strip():
+                raise ValueError('Satır anlam incelemesi konu, parti ve koşullarla uyuşmalı')
+            if not review or review.get('reviewer_kind') != 'agent' or review.get('result') != 'reviewed' or not isinstance(review.get('reason'), str) or not review['reason'].strip() or not review.get('reviewed_at'):
+                raise ValueError('Her değişen satır için yeni anlam incelemesi gerekli')
+            try:
+                reviewed_at = dt.datetime.fromisoformat(review['reviewed_at'].replace('Z', '+00:00'))
+            except (TypeError, ValueError, AttributeError):
+                raise ValueError('Anlam incelemesi geçerli zaman gerektirir')
+            if reviewed_at.tzinfo is None:
+                raise ValueError('Anlam incelemesi zaman dilimi gerektirir')
+            if row['state'] == 'evidence':
+                fids = {f[k] for f in candidate_fields if f['row_id'] == rid for k in ('summary_finding_id','quote_finding_id')}
+                refs = {e['passage_id'] for e in extra_evidence if e.get('finding_id') in fids}
+                for fid in fids:
+                    refs.update(r['passage_id'] for r in db.execute('SELECT passage_id FROM finding_evidence WHERE finding_id=?', (fid,)))
+            elif row['state'] == 'no_explicit_statement': refs = {row.get('scope_id')}
+            elif row['state'] == 'document_missing': refs = {row.get('missing_id')}
+            else: refs = set()
+            refs.discard(None)
+            if not isinstance(link['refs'], list) or not link['refs'] or set(link['refs']) != refs:
+                raise ValueError('Satır anlam incelemesi gerçek kanıt veya kapsamla uyuşmalı')
+            if link['definition'] not in review['reason'] or link['conditions'] not in review['reason'] or any(ref not in review['reason'] for ref in refs):
+                raise ValueError('Anlam incelemesi tanım, koşul ve tüm kaynak ilişkilerini açıklamalı')
     finally:
         db.close()
     records.extend(comparison_inventory_records(inventory, version))
@@ -490,7 +531,7 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
         candidate = Path(tmp)
         shutil.copyfile(work / 'records.sqlite3', candidate / 'records.sqlite3')
         shutil.copyfile(work / 'workspace.json', candidate / 'workspace.json')
-        load_comparison(candidate, payload)
+        load_comparison(candidate, payload, reconciled=True)
         os.replace(candidate / 'records.sqlite3', work / 'records.sqlite3')
 
 
@@ -1491,12 +1532,46 @@ def validate_phase_one_workspace(work, strict_identity=True):
     return data
 
 
+def validate_changed_topic_reviews(data):
+    """Audit changed selected topics using persisted row review decisions."""
+    contracts = data.get('comparison_contract', [])
+    if not contracts or contracts[0]['taxonomy_version'] < 3:
+        return True
+    version = contracts[0]['taxonomy_version']
+    topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
+    parties = {p['party_id'] for p in data['scope_party']}
+    reviews = {(r['subject_kind'], r['subject_id']): r for r in data.get('comparison_semantic_review', []) if r.get('reviewer_kind') == 'agent'}
+    compare_keys = ('domain', 'parent_topic_id', 'definition', 'applicable_levels', 'basis_kind')
+    for (tid, tv), topic in topics.items():
+        if tv != version:
+            continue
+        old = topics.get((tid, version - 1))
+        if old and all(old.get(key) == topic.get(key) for key in compare_keys):
+            continue
+        rows = [r for r in data['comparison_row'] if (r['topic_id'], r['taxonomy_version']) == (tid, version)]
+        if len(parties) != 9 or {r['party_id'] for r in rows} != parties:
+            raise ValueError('Değişen konuda dokuz parti incelemesi gerekli')
+        for row in rows:
+            review = reviews.get(('comparison_row', row['id']))
+            if row['state'] == 'evidence':
+                fids = {f[k] for f in data['comparison_field'] if f['row_id'] == row['id'] for k in ('summary_finding_id', 'quote_finding_id')}
+                refs = {e['passage_id'] for e in data['finding_evidence'] if e['finding_id'] in fids}
+            elif row['state'] == 'no_explicit_statement': refs = {row.get('scope_id')}
+            elif row['state'] == 'document_missing': refs = {row.get('missing_id')}
+            else: refs = set()
+            refs.discard(None)
+            if not review or review.get('result') != 'reviewed' or not review.get('reviewed_at') or not isinstance(review.get('reason'), str) or topic['definition'] not in review['reason'] or not refs or any(ref not in review['reason'] for ref in refs):
+                raise ValueError('Değişen satır için kaynaklı yeni anlam incelemesi gerekli')
+    return True
+
+
 def validate_phase_three_workspace(folder, stage):
     folder = Path(folder)
     data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
     if data.get('schema_version') != 6 or data['comparison_contract'][0]['stage'] != stage:
         raise ValueError('İstenen karşılaştırma aşaması uyuşmuyor')
     validate_comparisons(data)
+    validate_changed_topic_reviews(data)
     order = ('yeni-parti','tip','dem','iyi','yeni-yol','dbp','emep','saadet','demokrat')
     for topic in data['comparison_topic']:
         rows = [r for r in data['comparison_row'] if r['topic_id'] == topic['topic_id'] and r['taxonomy_version'] == topic['taxonomy_version']]

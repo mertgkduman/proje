@@ -13,6 +13,31 @@ import test_comparisons
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_changed_topic_audit_requires_nine_reviewed_rows(self):
+        parties = ['yeni-parti', 'tip', 'dem', 'iyi', 'yeni-yol', 'dbp', 'emep', 'saadet', 'demokrat']
+        topic = dict(topic_id='test', taxonomy_version=3, domain='program', parent_topic_id=None, definition='Yeni tanım', applicable_levels='ulusal', basis_kind='program')
+        data = dict(comparison_contract=[dict(taxonomy_version=3)], scope_party=[dict(party_id=p) for p in parties], comparison_topic=[topic], comparison_row=[], comparison_field=[], finding_evidence=[], comparison_semantic_review=[])
+        for party in parties:
+            rid, scope = 'row-' + party, 'scope-' + party
+            data['comparison_row'].append(dict(id=rid, topic_id='test', taxonomy_version=3, party_id=party, state='no_explicit_statement', scope_id=scope))
+            data['comparison_semantic_review'].append(dict(subject_kind='comparison_row', subject_id=rid, reviewer_kind='agent', result='reviewed', reviewed_at='2026-11-14T00:00:00+00:00', reason='Yeni tanım; incelenen kapsam: ' + scope))
+        self.assertTrue(arsiv.validate_changed_topic_reviews(data))
+        data['comparison_semantic_review'][0]['subject_id'] = 'old-row'
+        with self.assertRaises(ValueError):
+            arsiv.validate_changed_topic_reviews(data)
+        data['comparison_semantic_review'][0]['subject_id'] = 'row-yeni-parti'
+        data['comparison_semantic_review'][0]['reason'] = 'Yeni tanım; scope-tip'
+        with self.assertRaises(ValueError):
+            arsiv.validate_changed_topic_reviews(data)
+        data['comparison_semantic_review'][0]['reason'] = 'Yeni tanım; scope-yeni-parti'
+        removed = data['comparison_row'].pop()
+        with self.assertRaises(ValueError):
+            arsiv.validate_changed_topic_reviews(data)
+        data['comparison_row'].append(removed)
+        data['comparison_row'][0]['state'] = 'not_researched'
+        with self.assertRaises(ValueError):
+            arsiv.validate_changed_topic_reviews(data)
+
     def test_reconcile_rolls_back_after_complete_mapping_loader_failure(self):
         source = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
         original_data, original_load, original_export = arsiv.DATA, arsiv.load_comparison, arsiv.export_db
@@ -35,10 +60,15 @@ class ComparisonContentTest(unittest.TestCase):
                     bases = [dict(r) for r in db.execute('SELECT * FROM topic_basis WHERE taxonomy_version=2')]
                     rows = [dict(r) for r in db.execute('SELECT * FROM comparison_row WHERE taxonomy_version=2')]
                     mappings = []
+                    row_refs = {}
                     for row in rows:
                         fields = [{'old_id': r['id'], 'new_id': 'v3-' + r['id']} for r in db.execute('SELECT id FROM comparison_field WHERE row_id=?', (row['id'],))]
                         changes = [{'old_id': r['id'], 'new_id': 'v3-' + r['id']} for r in db.execute('SELECT id FROM comparison_change WHERE row_id=?', (row['id'],))]
                         mappings.append(dict(old_row_id=row['id'], new_row_id='v3-' + row['id'], topic_id=row['topic_id'], reason='Test eşlemesi', fields=fields, changes=changes))
+                        if row['state'] == 'evidence':
+                            row_refs[row['id']] = sorted({r['passage_id'] for r in db.execute('SELECT e.passage_id FROM comparison_field f JOIN finding_evidence e ON e.finding_id IN (f.summary_finding_id, f.quote_finding_id) WHERE f.row_id=?', (row['id'],))})
+                        else:
+                            row_refs[row['id']] = [row['scope_id'] or row['missing_id']]
                 finally:
                     db.close()
                 for topic in topics:
@@ -49,16 +79,39 @@ class ComparisonContentTest(unittest.TestCase):
                 inventory = dict(taxonomy_version=3, status='complete', sections=[section])
                 backfill = dict(contract_version=1, taxonomy_version=3, stage='partial', records=[])
                 before = arsiv.sha(work / 'records.sqlite3')
-                arsiv.load_comparison = lambda *args: None
+                arsiv.load_comparison = lambda *args, **kwargs: None
                 with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
                     arsiv.comparison_reconcile(work, taxonomy, inventory, backfill)
                 self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
                 changed_topic = topics[0]['topic_id']
+                backfill['row_reviews'] = []
+                row_parties = {r['id']: r['party_id'] for r in rows}
                 for mapping in mappings:
                     if mapping['topic_id'] == changed_topic:
-                        backfill['records'].append(dict(kind='comparison_semantic_review', values=dict(subject_kind='comparison_row', subject_id=mapping['new_row_id'], reviewer_kind='agent', reviewed_at='2026-11-14T00:00:00+00:00', result='reviewed', reason='Yalıtılmış testte kaynak kapsamı incelendi.')))
+                        reason = topics[0]['definition'] + ' Yalıtılmış test koşulu ' + ' '.join(row_refs[mapping['old_row_id']])
+                        backfill['records'].append(dict(kind='comparison_semantic_review', values=dict(subject_kind='comparison_row', subject_id=mapping['new_row_id'], reviewer_kind='agent', reviewed_at='2026-11-14T00:00:00+00:00', result='reviewed', reason=reason)))
+                        backfill['row_reviews'].append(dict(row_id=mapping['new_row_id'], topic_id=changed_topic, party_id=row_parties[mapping['old_row_id']], definition=topics[0]['definition'], conditions='Yalıtılmış test koşulu', refs=row_refs[mapping['old_row_id']]))
+                for key, bad in (('party_id', 'wrong-party'), ('refs', ['wrong-passage'])):
+                    altered = copy.deepcopy(backfill)
+                    altered['row_reviews'][0][key] = bad
+                    with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
+                        arsiv.comparison_reconcile(work, taxonomy, inventory, altered)
+                first_party = backfill['row_reviews'][0]['party_id']
+                other_ref = next(item['refs'][0] for item in backfill['row_reviews'] if item['party_id'] != first_party and item['refs'])
+                altered = copy.deepcopy(backfill)
+                altered['row_reviews'][0]['refs'] = [other_ref]
+                with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
+                    arsiv.comparison_reconcile(work, taxonomy, inventory, altered)
+                altered = copy.deepcopy(backfill)
+                altered['records'][0]['values']['subject_id'] = mappings[0]['old_row_id']
+                with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
+                    arsiv.comparison_reconcile(work, taxonomy, inventory, altered)
+                altered = copy.deepcopy(backfill)
+                altered['records'].append(dict(kind='comparison_row', values=dict(id='unreviewed-extra', topic_id=changed_topic, taxonomy_version=3, party_id=rows[0]['party_id'], state='not_researched')))
+                with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
+                    arsiv.comparison_reconcile(work, taxonomy, inventory, altered)
                 captured = []
-                def fail_after_mapping(candidate, payload):
+                def fail_after_mapping(candidate, payload, **kwargs):
                     captured.extend(r for r in payload['records'] if r['kind'] == 'comparison_row')
                     raise RuntimeError('injected loader failure')
                 arsiv.load_comparison = fail_after_mapping
@@ -120,6 +173,27 @@ class ComparisonContentTest(unittest.TestCase):
                 self.assertEqual(arsiv.current(), before_pointer)
             finally:
                 arsiv.DATA = previous_data
+
+    def test_direct_load_cannot_bypass_new_dictionary_reconciliation(self):
+        source = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        original_data, original_export = arsiv.DATA, arsiv.export_db
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            work = root / 'work'
+            work.mkdir()
+            arsiv.DATA = root / 'data'
+            arsiv.DATA.mkdir()
+            try:
+                shutil.copyfile(source, work / 'records.sqlite3')
+                (work / 'workspace.json').write_text(json.dumps({'token': 'test-token'}))
+                (arsiv.DATA / '.write.lock').write_text(json.dumps({'token': 'test-token'}))
+                before = arsiv.sha(work / 'records.sqlite3')
+                arsiv.export_db = lambda *args, **kwargs: {}
+                with self.assertRaisesRegex(ValueError, 'eşleme'):
+                    arsiv.load_comparison(work, dict(contract_version=1, taxonomy_version=3, stage='partial', records=[]))
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
+            finally:
+                arsiv.DATA, arsiv.export_db = original_data, original_export
 
     def test_selected_taxonomy_rendering_keeps_legacy_byte_compatibility(self):
         render = getattr(arsiv, 'render_comparison_snapshot', None)
