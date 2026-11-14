@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 03
 current_phase_name: Tüzük ve programların karşılaştırılması
-current_plan: 8
+current_plan: 9
 status: executing
-stopped_at: Completed 03-07-PLAN.md
-last_updated: "2026-11-13T21:32:16.583Z"
-last_activity: 2026-11-13
-last_activity_desc: 03-07 Yeni Yol tüzük ve program araştırması tamamlandı
-state_head: 9747eed55987f899f7cf93312a5d1f357b0e6f06
+stopped_at: Completed 03-08-PLAN.md
+last_updated: "2026-11-14T01:13:22.135Z"
+last_activity: 2026-11-14
+last_activity_desc: 03-08 DBP tüzük ve tarihsel BDP programı karşılaştırması tamamlandı
+state_head: cafd076c9c1553d73945949cc268ab2b92c9fda2
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 32
-  completed_plans: 23
+  completed_plans: 24
 ---
 
 # Project State
@@ -28,14 +28,14 @@ See: .planning/PROJECT.md (updated 2026-11-11)
 
 ## Current Position
 
-Current Plan: 8
+Current Plan: 9
 Total Plans in Phase: 16
 Phase: 03 (Tüzük ve programların karşılaştırılması) — EXECUTING
-Plan: 8 of 16
+Plan: 9 of 16
 Status: Ready to execute
-Last activity: 2026-11-13 — 03-07 tamamlandı; Yeni Yol tüzük ve program belge açıkları yerel partial sürümde doğrulandı
+Last activity: 2026-11-14 — 03-08 tamamlandı; DBP tüzüğü, tarihsel BDP programı ve bağımsız güncel program açığı yerel partial sürümde doğrulandı
 
-Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 7/16 plan
+Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 8/16 plan
 
 ## Performance Metrics
 
@@ -84,6 +84,7 @@ Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/1
 | Phase 03 P05 | ölçülmedi | 2 tasks | 12 files |
 | Phase 03 P06 | 95min | 2 tasks | 12 files |
 | Phase 03 P07 | 84min | 2 tasks | 12 files |
+| Phase 03 P08 | 214min | 2 tasks | 19 files |
 
 ## Accumulated Context
 
@@ -126,6 +127,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 03]: 03-05 DEM tüzük nüshaları eşit ve sırası bilinmeyen alternatifler olarak işlendi; kongre kararı ek belge, bağımsız tam program açığı ayrı kaldı. Yerel sürüm `6090bfda16a14ce99a1b6c9d3ff47d71` Faz 2 ve Faz 3 denetimlerini geçti; gelir kapsamı 03-14 geri taramasına devredildi.
 - [Phase 03]: 03-06 İYİ'nin iki değişiklik notlu tüzüğü ve tam HTML programı ortak konulara işlendi; PDF biçimi erişim açığı ayrı korundu. Yerel sürüm `a828140c2fb649b5b8d0cef32b42769e` Faz 2 ve Faz 3 denetimlerini geçti; kayıt yenilemesi ve erken çocukluk yaş kapsamı 03-14'e aktarıldı.
 - [Phase 03]: 03-07 Yeni Yol için ayrı tüzel kimlikle tüzük ve program aramaları yenilendi; tam metinler bulunamadığından 301 ortak konu gerçek belge açıklarına bağlandı. Yerel sürüm `b27a1387425c40889313e92dfc91739e` Faz 2 ve Faz 3 denetimlerini geçti; başka parti ve ortak grup metinleri yerine kullanılmadı.
+- [Phase 03]: 03-08: DBP tüzüklerinde sırası bilinmeyen farklı hükümler eşit kaynaklı gösterildi; tarihsel BDP programı ve bağımsız güncel DBP programı açığı ayrı korundu. Üretici 17 dondurularak sürümün kendi yayıncı atfını gösteren üretici 18 kullanıldı.
 
 ### Pending Todos
 
@@ -164,6 +166,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-13T21:32:15.985Z
-Stopped at: Completed 03-07-PLAN.md
+Last session: 2026-11-14T01:13:21.595Z
+Stopped at: Completed 03-08-PLAN.md
 Resume file: None
