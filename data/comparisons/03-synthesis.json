@@ -18574,6 +18574,283 @@
         "result": "reviewed",
         "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Belge açığı ve arama girişimi yalnız tüzüğün edinim durumunu gösterir; toplumsal mücadelelere katılım veya görüş bulunmadığını göstermez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-toplumsal-mucadele-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
       }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-faaliyet-ekoloji-1",
+        "topic_id": "parti-faaliyet-ekoloji",
+        "taxonomy_version": 3,
+        "text": "TİP’in HTML tüzüğü parti faaliyetlerinin ekolojik tahribata dolaylı etkilerini en aza indirmeyi ve örgüt ile üyeleri özen göstermeye teşvik etmeyi ilke edinir. DBP tüzüğü ise doğal varlıkları tahrip etmeme esaslı ekolojik bilincin yayılması için eğitici ve uygulamalı programlar geliştirilmesini belirtir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-faaliyet-ekoloji-1",
+        "passage_id": "0304-tip-diff-ekoloji-html-p1"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-faaliyet-ekoloji-1",
+        "passage_id": "0308-dbp-draft-027-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-faaliyet-ekoloji-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"TİP kendi parti faaliyetlerinin dolaylı etkilerini; DBP ekolojik bilincin toplumsallaşması için eğitim ve uygulama programlarını anlatır. Aynı ölçüm veya uygulanmış sonuç atfedilmedi.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-diff-ekoloji-html-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-diff-ekoloji-html-p1\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-027-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-027-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-faaliyet-ekoloji-2",
+        "topic_id": "parti-faaliyet-ekoloji",
+        "taxonomy_version": 3,
+        "text": "TİP’in incelenen PDF tüzüğünde parti faaliyetlerinin karbon ayak izini azaltmak için çaba harcanacağı yazılıdır. EMEP’in incelenen HTML tüzüğünde parti faaliyetlerine uygulanacak ayrı bir ekolojik ölçüt açıkça belirtilmedi."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-faaliyet-ekoloji-2",
+        "passage_id": "0304-tip-diff-ekoloji-pdf-q"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-faaliyet-ekoloji-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"TİP PDF nüshası faaliyetlerin karbon ayak izini azaltma çabasını belirtir; EMEP’in incelenen 1–65. maddeleri ve son hükümleri ayrı bir kural yönünden tarandı. Bu dar kapsam, başka EMEP belgelerine veya ekoloji politikasının tümüne genişletilmez.\",\"sides\":[{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-diff-ekoloji-pdf-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-diff-ekoloji-pdf-q\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-scope-013-row\",\"support\":\"scope\",\"refs\":[\"0309-emep-scope-013-scope\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-faaliyet-ekoloji-3",
+        "topic_id": "parti-faaliyet-ekoloji",
+        "taxonomy_version": 3,
+        "text": "İncelenen EMEP HTML tüzüğü ile Demokrat Parti arşiv tüzüğünde, bu nüshalar için parti faaliyetlerinin kendisine uygulanacak ayrı ekolojik ölçüte ilişkin açık hüküm saptanmadı."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-faaliyet-ekoloji-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"EMEP tüzüğünün 1–65. maddeleri ve son genel hükümleriyle Demokrat arşiv nüshasının 1–88. maddeleri ve geçici maddesi bu dar soruyla incelendi; genel çevre görevlerinin veya başka belge ve uygulamaların yokluğu çıkarılmadı.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-scope-013-row\",\"support\":\"scope\",\"refs\":[\"0309-emep-scope-013-scope\"]},{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-scope-23-row\",\"support\":\"scope\",\"refs\":[\"0312-demokrat-2-scope-23\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-faaliyet-ekoloji-4",
+        "topic_id": "parti-faaliyet-ekoloji",
+        "taxonomy_version": 3,
+        "text": "Yeni Yol’un bağımsız tüzüğü bu edinimde bulunamadığından bu konu aynı belge türü üzerinden karşılaştırılamıyor."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-faaliyet-ekoloji-4",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Gerçek tüzük eksikliği ve arama girişimi partiye çevre konusunda tutum veya tutumsuzluk atfetmez.\",\"sides\":[{\"party_id\":\"yeni-yol\",\"row_id\":\"03-v3-0307-yeni-yol-parti-faaliyet-ekoloji-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-diplomasisi-1",
+        "topic_id": "parti-diplomasisi",
+        "taxonomy_version": 3,
+        "text": "Yeni Parti tüzüğü MYK’ye partinin uluslararası ilişkilerini düzenleme ve çalışmaları yürütme görevini verir; İYİ Parti tüzüğünde uluslararası kişi, kurum ve kuruluşlarla parti ilişkilerini Başkanlık Divanı yürütür."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-diplomasisi-1",
+        "passage_id": "0303-epm-eleventh-parti-diplomasisi-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-diplomasisi-1",
+        "passage_id": "0306-iyi-parti-diplomasisi-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-diplomasisi-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"İki tüzük uluslararası ilişkiler görevini farklı parti organlarına verir; her iki pasajda da somut dış politika sonucu veya anlaşma iddiası yoktur.\",\"sides\":[{\"party_id\":\"yeni-parti\",\"row_id\":\"03-v3-0303-epm-eleventh-parti-diplomasisi-row\",\"support\":\"passage\",\"refs\":[\"0303-epm-eleventh-parti-diplomasisi-p\"]},{\"party_id\":\"iyi\",\"row_id\":\"03-v3-0306-iyi-parti-diplomasisi-row\",\"support\":\"passage\",\"refs\":[\"0306-iyi-parti-diplomasisi-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-diplomasisi-2",
+        "topic_id": "parti-diplomasisi",
+        "taxonomy_version": 3,
+        "text": "EMEP tüzüğü kardeş partilerle ilişkilerde tam eşitlik, içişlerine karışmama ve enternasyonal dayanışmayı belirtir. DBP tüzüğü demokratik ulus paradigması temelinde hak ve inançların eşitliği ile evrensel değerlere uygun yaşam için diplomasi çalışmalarını öngörür."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-diplomasisi-2",
+        "passage_id": "0309-emep-html-070-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-diplomasisi-2",
+        "passage_id": "0308-dbp-draft-054-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-diplomasisi-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"EMEP kardeş partiler arasındaki ilişki ilkelerini; DBP kendi tüzüğündeki diplomasi çalışmalarının amaçlarını anlatır. Aynı kurum, aynı yabancı parti veya fiilî anlaşma kurulmadı.\",\"sides\":[{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-070-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-070-0-passage\"]},{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-draft-054-row\",\"support\":\"passage\",\"refs\":[\"0308-dbp-draft-054-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-diplomasisi-3",
+        "topic_id": "parti-diplomasisi",
+        "taxonomy_version": 3,
+        "text": "İncelenen Demokrat Parti arşiv tüzüğünde partiler arası diplomasi için ayrı bir usul, Saadet tüzüğünde yabancı siyasi partilerle ilişkiler için ayrı diplomasi ilkeleri açıkça belirtilmedi; bu dar kayıtlar mevcut dış ilişkiler görevlerini ve yurt dışı temsilciliklerini dışlamaz."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-diplomasisi-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"Demokrat kaydı arşiv nüshasında partiler arası ayrı usulü, Saadet kaydı 1–67. maddeler ve 2020 ekinde yabancı siyasi partilerle ilişki ilkelerini inceler. Dış ilişkiler görev alanı ve yurt dışı temsilcilikleri ayrı gerçek bağlamdır.\",\"sides\":[{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-scope-22-row\",\"support\":\"scope\",\"refs\":[\"0312-demokrat-2-scope-22\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-scope-020-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-020\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-yayin-organlari-1",
+        "topic_id": "parti-yayin-organlari",
+        "taxonomy_version": 3,
+        "text": "DEM kısa adlı tüzükte Parti Meclisi parti yayınlarını planlar, örgütler ve yönetir. EMEP tüzüğünde yayının kimlerce ve nasıl çıkarılacağına merkezde GYK, yerelde İYK karar verir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-yayin-organlari-1",
+        "passage_id": "0305-dem-yayin-dem-passage"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-yayin-organlari-1",
+        "passage_id": "0309-emep-html-066-0-passage"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-yayin-organlari-1",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"DEM yayınların planlama ve yönetimini Parti Meclisine verir; EMEP merkez ve yerelde çıkarma kararının yetkili organlarını ayırır. Organ isimleri ve görevleri eşitlenmedi.\",\"sides\":[{\"party_id\":\"dem\",\"row_id\":\"03-v3-0305-dem-yayin-dem-row\",\"support\":\"passage\",\"refs\":[\"0305-dem-yayin-dem-passage\"]},{\"party_id\":\"emep\",\"row_id\":\"03-v3-0309-emep-html-066-0-row\",\"support\":\"passage\",\"refs\":[\"0309-emep-html-066-0-passage\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-yayin-organlari-2",
+        "topic_id": "parti-yayin-organlari",
+        "taxonomy_version": 3,
+        "text": "Demokrat Parti tüzüğünde partinin kendi gazete, dergi ve internet siteleri GİK’in kendi içinden seçeceği üyelerin yönetim ve denetimindedir. TİP’in incelenen HTML tüzüğünde MYK, parti görüş ve değerlendirmelerini yaymak üzere basılı yerel, süreli veya elektronik yayın çıkarmaya karar verebilir."
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-yayin-organlari-2",
+        "passage_id": "0312-demokrat-2-038-parti-yayin-organlari-p"
+      }
+    },
+    {
+      "kind": "comparison_synthesis_evidence",
+      "values": {
+        "synthesis_id": "0314-self-parti-yayin-organlari-2",
+        "passage_id": "0304-tip-parti-yayin-p1"
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-yayin-organlari-2",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Demokrat’ın hükmü kendi malı yayınların yönetim ve denetimini, TİP’in HTML hükmü yayın çıkarma kararını düzenler. Ayrı PDF nüshasının Parti Meclisine dair hükmü aynı sürüm gibi sunulmadı.\",\"sides\":[{\"party_id\":\"demokrat\",\"row_id\":\"03-v3-0312-demokrat-2-038-parti-yayin-organlari-row\",\"support\":\"passage\",\"refs\":[\"0312-demokrat-2-038-parti-yayin-organlari-p\"]},{\"party_id\":\"tip\",\"row_id\":\"03-v3-0304-tip-parti-yayin-row\",\"support\":\"passage\",\"refs\":[\"0304-tip-parti-yayin-p1\"]}]}"
+      }
+    },
+    {
+      "kind": "comparison_synthesis",
+      "values": {
+        "id": "0314-self-parti-yayin-organlari-3",
+        "topic_id": "parti-yayin-organlari",
+        "taxonomy_version": 3,
+        "text": "DBP’nin incelenen HTML tüzüğünde ‘yayın organı’ adıyla ayrı bir organ kurulması, Saadet’in incelenen tüzüğünde ise yayın organının kuruluş ve yönetim usulü için açık hüküm saptanmadı; bu farklı dar sorular genel basın görevlerinin yokluğu anlamına gelmez."
+      }
+    },
+    {
+      "kind": "comparison_semantic_review",
+      "values": {
+        "subject_kind": "comparison_synthesis",
+        "subject_id": "0314-self-parti-yayin-organlari-3",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-14T21:47:16.117751+00:00",
+        "result": "reviewed",
+        "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DBP 1–114. maddelerde ayrı adla organ kurulması için, Saadet 1–67. maddeler ve 2020 ekinde kuruluş/yönetim usulü için incelendi. DBP basın-yayın görevleri ve Saadet’in izinsiz yayın hakkındaki disiplin hükmü bu kapsamlardan ayrı kalır.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"03-v3-0308-dbp-absence-30-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-30-scope\"]},{\"party_id\":\"saadet\",\"row_id\":\"03-v3-0310-saadet-2-scope-027-row\",\"support\":\"scope\",\"refs\":[\"0310-saadet-2-scope-027\"]}]}"
+      }
     }
   ]
 }
