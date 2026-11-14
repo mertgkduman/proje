@@ -1385,6 +1385,7 @@ def export_db(path, release_id, strict_identity=False):
             validate_dossier(result)
         if has_comparisons:
             validate_comparisons(result)
+            validate_changed_topic_reviews(result)
         return result
     finally:
         db.close()
@@ -1562,6 +1563,12 @@ def validate_changed_topic_reviews(data):
             refs.discard(None)
             if not review or review.get('result') != 'reviewed' or not review.get('reviewed_at') or not isinstance(review.get('reason'), str) or topic['definition'] not in review['reason'] or not refs or any(ref not in review['reason'] for ref in refs):
                 raise ValueError('Değişen satır için kaynaklı yeni anlam incelemesi gerekli')
+            try:
+                reviewed_at = dt.datetime.fromisoformat(review['reviewed_at'].replace('Z', '+00:00'))
+            except (TypeError, ValueError, AttributeError):
+                raise ValueError('Anlam incelemesi geçerli zaman gerektirir')
+            if reviewed_at.tzinfo is None:
+                raise ValueError('Anlam incelemesi zaman dilimi gerektirir')
     return True
 
 
