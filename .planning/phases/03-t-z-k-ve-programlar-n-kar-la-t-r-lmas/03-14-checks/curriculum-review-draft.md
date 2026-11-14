@@ -5,15 +5,20 @@ konu tanımları tamamlanmadan karşılaştırma sonucu olarak yayımlanmamalıd
 
 - Yeni Parti, müfredatın bilimsel, çağdaş, çoğulcu ve eleştirel düşünmeyi
   geliştirici biçimde düzenlenmesini belirtir
-  (`0303-epm-program-detail-egitime-erisim-p3`).
+  (`0303-epm-program-detail-egitime-erisim-p3`). Özgün HTML eğitim bölümünde
+  öğretmen atamalarının nesnel ölçütlerle yapılması, mülakatın kaldırılması ve
+  öğretmenlerin mesleki gelişiminin desteklenmesi de belirtilir; bu ayrı
+  pasajlar mevcut karşılaştırma kayıtlarına henüz alınmamıştır.
 - TİP'in özgün HTML programında müfredatın sık değişmesine yönelik eleştiri ve
   her düzeyde nitelikli, parasız, anadilde, laik, bilimsel eğitim hakkı aynı
   bölümde yer alır. Eleştiri tek başına ayrı bir müfredat içerik önerisi olarak
   sunulmamalıdır (`0304-tip-program-yuksek-baglam-p1` ve devamındaki kaynak).
 - İYİ'nin özgün HTML eğitim bölümünde temel eğitim müfredatının beceri odaklı,
   yaratıcı, soran ve sorgulayan yapıya dönüştürülmesi; kodlama ve programlama
-  dahil çeşitli yaşam becerilerinin müfredata alınması belirtilir. Bu doğrudan
-  okunan ifadeler henüz ayrı karşılaştırma pasajlarına alınmadı.
+  dahil çeşitli yaşam becerilerinin müfredata alınması belirtilir. Ayrıca
+  öğretmen yetiştirmek üzere öğretmen akademileri önerilir; bu, mülakatın
+  kaldırılmasıyla aynı araç değildir. Bu doğrudan okunan ifadeler henüz ayrı
+  karşılaştırma pasajlarına alınmadı.
 - DEM kongre eki, zorunlu Din Kültürü ve Ahlak Bilgisi dersinin seçmeli hale
   getirilmesini ve ders içeriğinin hiçbir din/inancı öncelemeyen ya da
   ötelemeyen dinler tarihi ve ahlak bilgisine dönüştürülmesini belirtir
