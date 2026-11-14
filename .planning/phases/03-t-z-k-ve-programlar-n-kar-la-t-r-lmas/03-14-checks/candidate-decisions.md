@@ -16,3 +16,9 @@ aynı tanımın yeniden yazılması veya yeni konu açılması gerekmez.
 Diğer adaylar, ayrıntılı konu/alan görünürlüğü ve gerçek kaynak kapsamı
 karşılaştırıldıktan sonra bu tabloya eklenmelidir. Beş kapsam kararı, beş yeni
 dokuz-parti konu kapanışı anlamına gelmez.
+
+03-15 görünüm denetimi, mevcut alanda karşılanan ilk üç adayın koşullarını
+okurda görünür tutmalıdır: düşük ücret/nitelik veya düşük gelirli tarım işi;
+işten çıkarılma veya isteğe bağlı ayrılma; EMEP öneri/gövde ayrımıyla
+7/35 ve ücret indirimi olmadan 8/40'ın altı. Bu not, kaynaklı mevcut alanların
+ve koşulların silinmesine veya sentezde düzleştirilmesine izin vermez.
