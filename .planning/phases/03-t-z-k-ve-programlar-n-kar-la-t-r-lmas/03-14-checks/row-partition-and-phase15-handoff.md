@@ -5,25 +5,27 @@ Kabul edilmiş `ae42ae1897864fda810b033ce3ac1e8f` kaydındaki sürüm 2
 
 | Eski seçili kümenin ayrık parçaları | Satır |
 | --- | ---: |
-| Eski satırdan açık eski→yeni kimlikle taşınan | 4.864 |
-| Gerekçeli yeni satırla yerine geçen veya eski bağlamı seçili yanıttan ayrılan | 11 |
+| Eski satırdan açık eski→yeni kimlikle taşınan | 4.861 |
+| Gerekçeli yeni satırla yerine geçen veya eski bağlamı seçili yanıttan ayrılan | 14 |
 | İki kümenin kesişimi | 0 |
 | Açıklamasız kalan eski seçili satır | 0 |
 
 Eski küme, iki kümenin birleşimine tam eşittir; yabancı eski kimlik yoktur.
-`taxonomy-mapping-draft.json` 11 `superseded_rows` kaydında eski kimliği,
+`taxonomy-mapping-draft.json` 14 `superseded_rows` kaydında eski kimliği,
 gerçek yerine geçen satırları ve konu/kanıt gerekçesini tek tek taşır. Üçü
 üyelik reddi ile disiplin kararına itiraz ayrımıdır; sekizi gelir tanımındaki
 genel bağlam, dar eski kapsam veya aynı gerçek hükmün kaynaklı yeni seçimine
-ilişkindir. Birden fazla eski satır aynı yeni gerçek hükme bağlanabilir; bu
+ilişkindir. Son üç kayıt Yeni Parti'nin karma eğitim alanını dar erişim
+dayanaklarına ayırır ve EMEP'in iki görsel eğitim pasajını doğru PDF indeks
+1/basılı 2 konumuna taşır. Birden fazla eski satır aynı yeni gerçek hükme bağlanabilir; bu
 fazladan olumlu öneri üretmez. Eski satır, bulgu ve kaynak baytları önceki
 arşivde korunur.
 
-Şimdiki taslak ayrıca **29 doğrudan yeni satır** içerir: tıbbi üretim 19,
-genişletilmiş gelir 7 ve disiplin itirazı 3. Dolayısıyla bu aşamadaki
-beklenen seçili satır sayısı 4.864 + 29 = **4.893**; bu yüklenmiş sonuç değil,
+Şimdiki taslak ayrıca **32 doğrudan yeni satır** içerir: tıbbi üretim 19,
+genişletilmiş gelir 7, disiplin itirazı 3 ve erişim/konum düzeltmesi 3.
+Dolayısıyla bu aşamadaki beklenen seçili satır sayısı 4.861 + 32 = **4.893**; bu yüklenmiş sonuç değil,
 henüz ek araştırma tamamlanmadan değişebilecek taslak muhasebesidir.
-`unchanged-row-lineage.json` 4.852 değişmeyen tanımlı satırın hash, alan,
+`unchanged-row-lineage.json` 4.849 değişmeyen tanımlı satırın hash, alan,
 koşul, kaynak ve önceki gerçek inceleme kimlik/tarihlerini taşır; 10 değişen
 gelir satırı ile iki Demokrat alanının gerekçeleri özgül araştırmadır.
 
@@ -32,6 +34,12 @@ gelir satırı ile iki Demokrat alanının gerekçeleri özgül araştırmadır.
 * Yeni seçili sözlük taslağı 301 eski konuya eklenen `tibbi-urun-uretimi` ile
   **302 konu** içerir; gerçek payda atomik eşleme sonrası seçili sürümden
   okunmalı, eski 301 veya taslak satır sayısı sabit yazılmamalıdır.
+* Önceki EMEP eğitim önerisi pasajları yanlışlıkla PDF indeks 2/basılı 3'e
+  bağlanmıştı; yeni `0314-emep-education-proposal-correct-page-p` gerçek
+  indeks 1/basılı 2'dedir. İki yeni seçili bulgu yalnız doğru pasajı kullanır;
+  yanlış konumlu eski kayıt yalnız eski arşivde kalır. Yeni Parti erişiminde
+  `0314-yeni-access-specific-row` köy/yatılı okul ve yaşam boyu öğrenme
+  alanlarını taşır; eski karma alanın müfredat kısmı erişim yanıtı sayılmaz.
 * Sentez sözleşmesi 2'de her olumlu tarafın kendi gerçek passage bağı, dar
   yoklukta ilgili `review_scope`, belge açığında `missing` ve gerçek `attempt`
   okuyucunun kaynağa ve kapsam sınırına ulaşabileceği biçimde gösterilmelidir.

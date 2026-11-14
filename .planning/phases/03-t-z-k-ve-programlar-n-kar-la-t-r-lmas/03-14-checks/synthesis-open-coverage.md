@@ -104,3 +104,10 @@ olarak anlatan tam özgün cümlesi `0314-iyi-cyprus-recognition-full-p` ile
 eklendi; EMEP'in askerî çekilme önerisiyle bir ek cümlede farklı araçlar
 korunarak karşılaştırıldı. 53/53 iddia bağı doğrulandı. EMEP'in 7-f maddesine
 özgü devrim ve halk iktidarı koşulu başka maddelere otomatik taşınmadı.
+
+Altı ek konuda (demokrasi ve katılım, il disiplin kurulu, genel başkan seçimi,
+merkez kurul oluşumu, merkez hesap denetimi, genel kongre görevi) yürütücü
+kendi gerçek pasajlarını ve belge açıklarını okuyarak altı özgül iki-taraflı
+karşılaştırma ile altı Yeni Yol belge durumu cümlesi yazdı. Seçim ile adaylık,
+hesabı inceleme ile yalnız sunma gibi farklı görevler birbirine aktarılmadı;
+12/12 iddia bağı doğrulandı.

@@ -8,7 +8,10 @@
   ],
   "excluded_rows": [
     "0313-demokrat-bakim-ebeveyn-izni",
-    "0313-demokrat-cocuk-isciligi"
+    "0313-demokrat-cocuk-isciligi",
+    "0303-epm-program-detail-egitime-erisim-row",
+    "0309-emep-program-pdf-006-0-row",
+    "0309-emep-program-pdf-006-1-row"
   ],
   "rows": [
     {
@@ -11797,45 +11800,6 @@
             "0303-epm-program-detail-barinma-konut-p2",
             "0303-epm-program-detail-barinma-konut-p3",
             "0303-epm-program-detail-barinma-konut-p4"
-          ],
-          "prior_reviews": [
-            {
-              "reviewer_kind": "agent",
-              "reviewed_at": "2026-11-13T11:40:00Z",
-              "result": "reviewed"
-            }
-          ]
-        }
-      ],
-      "prior_row_and_scope_reviews": []
-    },
-    {
-      "old_row_id": "0303-epm-program-detail-egitime-erisim-row",
-      "new_row_id": "03-v3-0303-epm-program-detail-egitime-erisim-row",
-      "topic_id": "egitime-erisim",
-      "old_definition_sha256": "2d0694694fc686cfa0ef6d54c8058cda1e36d7751ba04ec2ace111a9cba5ca81",
-      "new_definition_sha256": "2d0694694fc686cfa0ef6d54c8058cda1e36d7751ba04ec2ace111a9cba5ca81",
-      "version_id": "epm-program-v1",
-      "state": "evidence",
-      "scope_id": null,
-      "missing_id": null,
-      "fields": [
-        {
-          "old_id": "0303-epm-program-detail-egitime-erisim-field",
-          "new_id": "03-v3-0303-epm-program-detail-egitime-erisim-field",
-          "condition_key": null,
-          "finding_ids": [
-            "0303-epm-program-detail-egitime-erisim-summary",
-            "0303-epm-program-detail-egitime-erisim-quote"
-          ],
-          "passage_ids": [
-            "0303-epm-program-detail-egitime-erisim-p1",
-            "0303-epm-program-detail-egitime-erisim-p2",
-            "0303-epm-program-detail-egitime-erisim-p3",
-            "0303-epm-program-detail-egitime-erisim-p4",
-            "0303-epm-program-detail-egitime-erisim-p5",
-            "0303-epm-program-detail-egitime-erisim-p6",
-            "0303-epm-program-detail-egitime-erisim-p7"
           ],
           "prior_reviews": [
             {
@@ -106518,72 +106482,6 @@
           ],
           "passage_ids": [
             "0309-emep-program-pdf-005-0-passage"
-          ],
-          "prior_reviews": [
-            {
-              "reviewer_kind": "agent",
-              "reviewed_at": "2026-11-14T02:12:10.845708+00:00",
-              "result": "reviewed"
-            }
-          ]
-        }
-      ],
-      "prior_row_and_scope_reviews": []
-    },
-    {
-      "old_row_id": "0309-emep-program-pdf-006-0-row",
-      "new_row_id": "03-v3-0309-emep-program-pdf-006-0-row",
-      "topic_id": "anadilde-egitim",
-      "old_definition_sha256": "b99589abc6eda1269c67304f921b57902ec7f1533236b9cb19afdc6304b5d003",
-      "new_definition_sha256": "b99589abc6eda1269c67304f921b57902ec7f1533236b9cb19afdc6304b5d003",
-      "version_id": "0208-emep-charter-pdf-v1",
-      "state": "evidence",
-      "scope_id": null,
-      "missing_id": null,
-      "fields": [
-        {
-          "old_id": "0309-emep-program-pdf-006-0-field",
-          "new_id": "03-v3-0309-emep-program-pdf-006-0-field",
-          "condition_key": null,
-          "finding_ids": [
-            "0309-emep-program-pdf-006-0-summary",
-            "0309-emep-program-pdf-006-0-quote"
-          ],
-          "passage_ids": [
-            "0309-emep-program-pdf-006-0-passage"
-          ],
-          "prior_reviews": [
-            {
-              "reviewer_kind": "agent",
-              "reviewed_at": "2026-11-14T02:12:10.845708+00:00",
-              "result": "reviewed"
-            }
-          ]
-        }
-      ],
-      "prior_row_and_scope_reviews": []
-    },
-    {
-      "old_row_id": "0309-emep-program-pdf-006-1-row",
-      "new_row_id": "03-v3-0309-emep-program-pdf-006-1-row",
-      "topic_id": "egitime-erisim",
-      "old_definition_sha256": "2d0694694fc686cfa0ef6d54c8058cda1e36d7751ba04ec2ace111a9cba5ca81",
-      "new_definition_sha256": "2d0694694fc686cfa0ef6d54c8058cda1e36d7751ba04ec2ace111a9cba5ca81",
-      "version_id": "0208-emep-charter-pdf-v1",
-      "state": "evidence",
-      "scope_id": null,
-      "missing_id": null,
-      "fields": [
-        {
-          "old_id": "0309-emep-program-pdf-006-1-field",
-          "new_id": "03-v3-0309-emep-program-pdf-006-1-field",
-          "condition_key": null,
-          "finding_ids": [
-            "0309-emep-program-pdf-006-1-summary",
-            "0309-emep-program-pdf-006-1-quote"
-          ],
-          "passage_ids": [
-            "0309-emep-program-pdf-006-1-passage"
           ],
           "prior_reviews": [
             {

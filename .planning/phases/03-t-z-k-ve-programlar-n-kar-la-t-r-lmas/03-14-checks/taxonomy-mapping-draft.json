@@ -14943,19 +14943,6 @@
       "changes": []
     },
     {
-      "old_row_id": "0303-epm-program-detail-egitime-erisim-row",
-      "new_row_id": "03-v3-0303-epm-program-detail-egitime-erisim-row",
-      "topic_id": "egitime-erisim",
-      "reason": "Mekanik soy: aynı konu tanımı ile kaynak satırı ve alan ilişkileri korunur; önceki gerçek inceleme kayıtları arşivde kalır.",
-      "fields": [
-        {
-          "old_id": "0303-epm-program-detail-egitime-erisim-field",
-          "new_id": "03-v3-0303-epm-program-detail-egitime-erisim-field"
-        }
-      ],
-      "changes": []
-    },
-    {
       "old_row_id": "0303-epm-program-detail-tarim-hayvancilik-row",
       "new_row_id": "03-v3-0303-epm-program-detail-tarim-hayvancilik-row",
       "topic_id": "tarim-hayvancilik",
@@ -54201,32 +54188,6 @@
       "changes": []
     },
     {
-      "old_row_id": "0309-emep-program-pdf-006-0-row",
-      "new_row_id": "03-v3-0309-emep-program-pdf-006-0-row",
-      "topic_id": "anadilde-egitim",
-      "reason": "Mekanik soy: aynı konu tanımı ile kaynak satırı ve alan ilişkileri korunur; önceki gerçek inceleme kayıtları arşivde kalır.",
-      "fields": [
-        {
-          "old_id": "0309-emep-program-pdf-006-0-field",
-          "new_id": "03-v3-0309-emep-program-pdf-006-0-field"
-        }
-      ],
-      "changes": []
-    },
-    {
-      "old_row_id": "0309-emep-program-pdf-006-1-row",
-      "new_row_id": "03-v3-0309-emep-program-pdf-006-1-row",
-      "topic_id": "egitime-erisim",
-      "reason": "Mekanik soy: aynı konu tanımı ile kaynak satırı ve alan ilişkileri korunur; önceki gerçek inceleme kayıtları arşivde kalır.",
-      "fields": [
-        {
-          "old_id": "0309-emep-program-pdf-006-1-field",
-          "new_id": "03-v3-0309-emep-program-pdf-006-1-field"
-        }
-      ],
-      "changes": []
-    },
-    {
       "old_row_id": "0309-emep-program-pdf-007-0-row",
       "new_row_id": "03-v3-0309-emep-program-pdf-007-0-row",
       "topic_id": "genel-secim-oy",
@@ -68579,6 +68540,27 @@
         "0314-tip-asgari-duzenli-gelir-row"
       ],
       "reason": "Çalışamayanların insanca yaşaması, kaynağın belirttiği sosyalist toplum koşulunda nitel güvencedir; nakit ödeme olarak işaretlenmez. Yeni dar kapsamda bu gerçek bağlam açıkça korunur, eski kaynaklı bulgu silinmez."
+    },
+    {
+      "old_row_id": "0303-epm-program-detail-egitime-erisim-row",
+      "replacement_ids": [
+        "0314-yeni-access-specific-row"
+      ],
+      "reason": "Eski alan erişimle birlikte müfredat ve eğitim yönetimini tek özette topluyordu. Yeni erişim satırında köy/yatılı bölge okullarının güçlendirilmesi ve yaşam boyu öğrenme hakkı gerçek ayrı pasajlarla korunur; müfredat bu dar erişim yanıtına taşınmaz."
+    },
+    {
+      "old_row_id": "0309-emep-program-pdf-006-0-row",
+      "replacement_ids": [
+        "0314-emep-education-language-correct-page-row"
+      ],
+      "reason": "Eski anadilde eğitim pasajı doğru metni yanlış PDF indeks 2/basılı 3 konumuna bağlıyordu. Özgün görselde kongreye sunulan öneri 13 indeks 1/basılı 2 üzerindedir; doğru kaynak konumlu yeni satır kullanılır, önerinin kabulü bilinmez."
+    },
+    {
+      "old_row_id": "0309-emep-program-pdf-006-1-row",
+      "replacement_ids": [
+        "0314-emep-education-access-correct-page-row"
+      ],
+      "reason": "Eski eğitim erişimi pasajı doğru metni yanlış PDF indeks 2/basılı 3 konumuna bağlıyordu. Özgün görselde kongreye sunulan öneri 13 indeks 1/basılı 2 üzerindedir; doğru kaynak konumlu yeni satır kullanılır, önerinin kabulü bilinmez."
     }
   ]
 }
