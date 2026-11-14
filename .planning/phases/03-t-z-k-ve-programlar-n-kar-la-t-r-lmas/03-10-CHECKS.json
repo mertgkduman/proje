@@ -1,0 +1,54 @@
+{
+  "plan": "03-10",
+  "status": "passed",
+  "checked_at": "2026-11-14T07:34:14.747563+00:00",
+  "first_release": "84e26e5102ff49fc98e523ae7830ed17",
+  "final_release": "4926099ac08b40df96fd4c304064023b",
+  "code_unchanged_since": "7e49d3d",
+  "test_baselines": [
+    "03-04-checks/result.json:124 on45c7c40",
+    "03-08-CHECKS.json:12affected tests and old/new renderer audits on7e49d3d"
+  ],
+  "packages_and_report_links": {
+    "1": {
+      "sha256": "3a163209470d695d779624ce9b081876a93da60e36777f6d03a72dc05ae61821",
+      "rows": 156,
+      "report_link_result": "REPORT_LINK_CHECK_OK 156 rows in both views; source anchors and findings checked"
+    },
+    "2": {
+      "sha256": "ee55e622ab61f6f512238ac642b72e16db1d64f09ddf37727eed972a852adc6b",
+      "rows": 262,
+      "report_link_result": "REPORT_LINK_CHECK_OK 262 rows in both views; source anchors and findings checked"
+    }
+  },
+  "combined_active_charter_topics": 166,
+  "narrow_absence_scopes": 63,
+  "coverage_interpretation": "Source-context evidence accompanying a scoped absence is not an affirmative policy answer.166 topics reviewed;63 scoped absences.",
+  "pending_program_topics": [
+    "demokrasi-katilim",
+    "temel-yurttaslik-geliri"
+  ],
+  "original_source_sha256_and_metadata_preserved": 11,
+  "phase2_delivery_preserved": true,
+  "semantic_spot_checks": [
+    "Extraordinary electoral congress agenda:old2/3 vs othercopy absolute majority, notarized request retained",
+    "GIK old50principal/50reserve vs othercopy75principal/30reserve",
+    "GIK first meeting old7days vs othercopy15days"
+  ],
+  "historical_presentation_limit": "19 separate old/new source field comparisons; formal change/alternative groups require same document_id. No cross-document formal relation claimed. Reader pairing and equivalent current-field repetition tracked03-15/16.",
+  "wave_post_gates": {
+    "schema_drift": "passed",
+    "codebase_drift": "skipped-no-structure-md",
+    "ui_safety": "passed"
+  },
+  "upcoming_key_links": "Programme package pending; symbolic renderer path manually verified via actual reciprocal anchors",
+  "accepted_logs": {
+    "charter1-frozen-check": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-checks/charter1-frozen-check.log",
+    "charter1-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-checks/charter1-load.log",
+    "charter1-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-checks/charter1-audit.log",
+    "charter2-frozen-check": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-checks/charter2-frozen-check.log",
+    "charter2-load": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-checks/charter2-load.log",
+    "charter2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-checks/charter2-audit.log",
+    "charter2-phase2-audit": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-checks/charter2-phase2-audit.log"
+  }
+}
