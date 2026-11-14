@@ -30,6 +30,10 @@ class ComparisonContentTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             arsiv.validate_changed_topic_reviews(data)
         data['comparison_semantic_review'][0]['reason'] = 'Yeni tanım; scope-yeni-parti'
+        data['comparison_semantic_review'][0]['reviewed_at'] = 'invalid-time'
+        with self.assertRaises(ValueError):
+            arsiv.validate_changed_topic_reviews(data)
+        data['comparison_semantic_review'][0]['reviewed_at'] = '2026-11-14T00:00:00+00:00'
         removed = data['comparison_row'].pop()
         with self.assertRaises(ValueError):
             arsiv.validate_changed_topic_reviews(data)
