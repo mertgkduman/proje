@@ -88,3 +88,12 @@ Türkistan itirazı ve çözüm arayışını da taşıyan özgün tam paragraf
 Yeni Parti ve Saadet'i karşılaştıran bir ek cümle daha yazıldı. 57 cümlenin
 taraf–konu–kanıt bağları doğrulandı. Önceki koşulsuz ve eksik bağlamlı aday
 kullanılmadı; eski alıntı ve kaynak korunur.
+
+Charter3 grubunda 20 konuya 59 özgül kaynakçı cümlesi eklendi. Disiplin,
+itiraz, mali usul ve gençlik hükümleri için 11 bağlamın 12 birebir kaynak
+parçası bağlandı; iki sayfaya taşan DEM Genel Sayman maddesi sayfa sınırında
+ayrı pasajlar olarak korunur. DBP disiplin listesinde ilgili bent ve liste
+başlığı ayrı kaynak parçalarıdır. Saadet'in adaylıkta üyelik koşulu aranmaması
+ile adaylıkla üyelik sıfatı kazanılmasına dair iki mevcut maddesi, ilgili iki
+konuya kendi kaynaklarıyla bağlandı; hangi aşamada üyeliğin başladığı yorumla
+tekleştirilmedi. 59/59 taraf–konu–kanıt denetimi geçti.
