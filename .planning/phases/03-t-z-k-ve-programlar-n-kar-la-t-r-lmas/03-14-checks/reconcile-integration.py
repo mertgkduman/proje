@@ -76,9 +76,29 @@ with tempfile.TemporaryDirectory(prefix='proje-0314-integration-', dir='/tmp') a
     assert len([r for r in snapshot['comparison_row'] if r['taxonomy_version'] == 3]) == len(rows) + len(test_rows)
     assert len({r['party_id'] for r in snapshot['comparison_row'] if r['topic_id'] == 'test-nine-party-topic'}) == 9
     assert arsiv.validate_changed_topic_reviews(snapshot)
+    # A purely synthetic claim exercises the real version transition and
+    # source-side links; it is not a research conclusion or publication.
+    selected_evidence = []
+    for row in test_rows:
+        if row['state'] == 'evidence' and row['party_id'] not in {r['party_id'] for r in selected_evidence}:
+            selected_evidence.append(row)
+        if len(selected_evidence) == 2: break
+    assert len(selected_evidence) == 2
+    sides = []
+    records = [dict(kind='comparison_synthesis', values=dict(id='test-claim', topic_id='test-nine-party-topic', taxonomy_version=3, text='Yalıtılmış test cümlesi.'))]
+    for row in selected_evidence:
+        old_id = row['id'].removeprefix('test-new-')
+        ref = row_refs[old_id][0]
+        sides.append(dict(party_id=row['party_id'], row_id=row['id'], support='passage', refs=[ref]))
+        records.append(dict(kind='comparison_synthesis_evidence', values=dict(synthesis_id='test-claim', passage_id=ref)))
+    reason = json.dumps(dict(contract_version=2, claim_type='multi_positive', explanation='Yalıtılmış test verisi; araştırma iddiası değildir.', sides=sides), ensure_ascii=False)
+    records.append(dict(kind='comparison_semantic_review', values=dict(subject_kind='comparison_synthesis', subject_id='test-claim', reviewer_kind='agent', reviewed_at='2026-11-14T00:00:00+00:00', result='reviewed', reason=reason)))
+    arsiv.load_comparison(work, dict(contract_version=2, taxonomy_version=3, stage='partial', records=records))
+    snapshot = arsiv.export_db(work / 'records.sqlite3', 'isolated-test', strict_identity=True)
+    assert snapshot['comparison_contract'][0]['version'] == 2
     (work / 'records.json').write_text(json.dumps(snapshot, ensure_ascii=False), encoding='utf-8')
     report = arsiv.render_comparison_snapshot(snapshot, arsiv.render_report)
     (work / 'index.html').write_text(report, encoding='utf-8')
     arsiv.validate_phase_one_html(snapshot, report)
     assert arsiv.validate_phase_three_workspace(work, 'partial')
-    print('RECONCILE_REAL_EXPORT_OK', len(rows), 'NEW_TOPIC_NINE_PARTIES_OK', 'SELECTED_HTML_AUDIT_OK', flush=True)
+    print('RECONCILE_REAL_EXPORT_OK', len(rows), 'NEW_TOPIC_NINE_PARTIES_OK', 'SYNTHESIS_V2_OK', 'SELECTED_HTML_AUDIT_OK', flush=True)
