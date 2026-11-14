@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 03
 current_phase_name: Tüzük ve programların karşılaştırılması
-current_plan: 11
+current_plan: 12
 status: executing
-stopped_at: Completed 03-10-PLAN.md
-last_updated: "2026-11-14T07:30:33.814Z"
+stopped_at: Completed 03-11-PLAN.md
+last_updated: "2026-11-14T10:26:17.648Z"
 last_activity: 2026-11-14
-last_activity_desc: 03-10 Saadet tüzük ve kaynaklı tarihçe karşılaştırması tamamlandı
-state_head: 1665fd6295b9cb7030e5fc576bbdfbe0bd488269
+last_activity_desc: 03-11 Saadet program karşılaştırması tamamlandı
+state_head: 3accd1d52c6137e4bbb89b90a97e8b5358b07c4f
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 32
-  completed_plans: 26
+  completed_plans: 27
 ---
 
 # Project State
@@ -28,14 +28,14 @@ See: .planning/PROJECT.md (updated 2026-11-11)
 
 ## Current Position
 
-Current Plan: 11
+Current Plan: 12
 Total Plans in Phase: 16
 Phase: 03 (Tüzük ve programların karşılaştırılması) — EXECUTING
-Plan: 11 of 16
+Plan: 12 of 16
 Status: Ready to execute
-Last activity: 2026-11-14 — 03-10 tamamlandı; Saadet tüzüğü ve kaynaklı tarihçesi yerel partial sürümde doğrulandı
+Last activity: 2026-11-14 — 03-11 tamamlandı; Saadet program karşılaştırması yerel partial sürümde doğrulandı
 
-Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 10/16 plan
+Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 11/16 plan
 
 ## Performance Metrics
 
@@ -87,6 +87,7 @@ Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/1
 | Phase 03 P08 | 214min | 2 tasks | 19 files |
 | Phase 03 P09 | 150min | 2 tasks | 12 files |
 | Phase 03 P10 | unknown | 2 tasks | 55 files |
+| Phase 03 P11 | unknown | 2 tasks | 12 files |
 
 ## Accumulated Context
 
@@ -134,6 +135,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 03]: 1996 ayrı Emek Partisi belgesi ve koşullu destekler güncel EMEP kimliği veya evrensel gelir olarak genellenmez.
 - [Phase 03]: 03-10: Aynı SHA taşıyan Saadet tüzük adresleri maddi değişiklik değildir; 2002 ve sonraki nüsha iki kaynakla, kesin yürürlük ve ara zincir varsayılmadan karşılaştırılır.
 - [Phase 03]: 03-10: Dar soruya eşlik eden kaynak bağlamı olumlu cevap sayılmaz; 63 sınırlı yokluk kaydı kapsamıyla korunur.
+- [Phase 03]: 03-11: Dar soruya eşlik eden bağlam olumlu politika yanıtı sayılmaz; koşullu Temel Vatandaşlık Geliri kaynak koşullarıyla korunur.
 
 ### Pending Todos
 
@@ -172,6 +174,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-14T07:30:08.409Z
-Stopped at: Completed 03-10-PLAN.md
+Last session: 2026-11-14T10:26:17.159Z
+Stopped at: Completed 03-11-PLAN.md
 Resume file: None
