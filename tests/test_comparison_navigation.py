@@ -2,6 +2,7 @@
 import datetime
 import functools
 import hashlib
+from html.parser import HTMLParser
 import http.server
 import json
 import os
@@ -48,6 +49,32 @@ def selected_records():
 
 
 class ComparisonNavigation(unittest.TestCase):
+    def test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact(self):
+        import sys
+        sys.path.insert(0, str(ROOT / 'src'))
+        from rapor import render_report
+        from rapor_v20 import render_report as render_20
+        from arsiv import comparison_render_data
+        folder = DATA / 'releases' / 'ef353c40c60b400eb1c52b3245e9a65b'
+        records = json.loads((folder / 'records.json').read_text())
+        snapshot = comparison_render_data(records)
+        self.assertEqual(render_20(snapshot).encode(), (folder / 'index.html').read_bytes())
+        class Sections(HTMLParser):
+            def __init__(self):
+                super().__init__(); self.sections = []; self.rows = {}
+            def handle_starttag(self, tag, attrs):
+                attrs = dict(attrs)
+                if tag == 'section': self.sections.append(attrs.get('id'))
+                if tag == 'article' and attrs.get('id', '').startswith('dossier-comparison-'):
+                    self.rows[attrs['id'][len('dossier-comparison-'):]] = self.sections[-1]
+            def handle_endtag(self, tag):
+                if tag == 'section': self.sections.pop()
+        parser = Sections(); parser.feed(render_report(snapshot))
+        topics = {(t['topic_id'], t['taxonomy_version']): t['domain'] for t in snapshot['comparison_topic']}
+        for row in snapshot['comparison_row']:
+            section = {'charter': 'tuzuk', 'program': 'program'}[topics[row['topic_id'], row['taxonomy_version']]]
+            self.assertEqual(parser.rows[row['id']], 'party-' + row['party_id'] + '-' + section)
+
     def invoke(self, url, width, config):
         executable = browser()
         self.assertIsNotNone(executable, 'Chromium bulunamadı')

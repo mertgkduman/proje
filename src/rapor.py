@@ -8,8 +8,8 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 20
-STYLE = Path(__file__).with_name('rapor_v20.css').read_text(encoding='utf-8')
+RENDERER_VERSION = 21
+STYLE = Path(__file__).with_name('rapor_v21.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -157,6 +157,7 @@ def render_foundation_timeline(pid, events, event_dates, findings, notes, citati
 
 def render_report(data):
     parties = {p['id']: p for p in data['party']}
+    comparison_domains = {(t['topic_id'], t['taxonomy_version']): t['domain'] for t in data.get('comparison_topic', [])}
     versions = {v['id']: v for v in data['document_version']}
     documents = {d['id']: d for d in data['document']}
     passages = {p['id']: p for p in data['passage']}
@@ -454,9 +455,10 @@ def render_report(data):
                 questions={'kurulus':'Neden kuruldu?','tuzuk':'Üyelik ve yönetim nasıl düzenleniyor?','program':'Ne vaat ediyor?','soylem-uygulama':'Kaynaklar ne yaptığını söylüyor?','finansman':'Para nereden geliyor, nasıl harcanıyor?'}
                 if primary_rows:pieces.append(f'<p class="reader-question">{questions[key]}</p>')
                 if primary_rows:add_findings(primary_rows)
-                if key == 'tuzuk':
+                if key in ('tuzuk', 'program'):
                     for row in data.get('comparison_row', []):
-                        if row['party_id'] == pid: add_comparison_row(row, dossier=True)
+                        if row['party_id'] == pid and comparison_domains[(row['topic_id'], row['taxonomy_version'])] == {'tuzuk': 'charter', 'program': 'program'}[key]:
+                            add_comparison_row(row, dossier=True)
                 if key == 'kurulus':
                     pieces.append('<details class="record"><summary>Temel bilgiler ve kuruluş kronolojisi</summary>')
                     if card_rows:add_findings(card_rows)

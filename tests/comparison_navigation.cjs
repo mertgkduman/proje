@@ -22,7 +22,7 @@ function assert(v,m){if(!v)throw Error(m)}
  checks.push(getComputedStyle(a.querySelector('.quote')).color==='rgb(0, 0, 0)' && getComputedStyle(a.querySelector('.summary')).color==='rgb(0, 51, 102)');
  a.querySelector('a[href="#dossier-comparison-'+cfg.row+'"]').click();await pause();
  const d=document.getElementById('dossier-comparison-'+cfg.row);
- checks.push(d.checkVisibility() && document.activeElement===d && d.closest('[role=tabpanel]').id==='party-iyi');
+ checks.push(d.checkVisibility() && document.activeElement===d && d.closest('[role=tabpanel]').id==='party-iyi' && d.closest('section.card').id==='party-iyi-program');
  d.querySelector('a[href="#comparison-'+cfg.row+'"]').click();await pause();
  checks.push(a.checkVisibility() && document.activeElement===a && a.closest('[role=tabpanel]').id==='comparison-summary');
  history.back();await pause();checks.push(document.activeElement===d && d.checkVisibility());
@@ -36,7 +36,9 @@ function assert(v,m){if(!v)throw Error(m)}
  const old=document.activeElement;location.hash='#%ZZ';await pause();checks.push(document.activeElement===old);
  const proof=document.querySelector('a[href="#comparison-'+cfg.scope+'"]'),scopeRow=document.getElementById('comparison-'+cfg.scope);
  checks.push(!!proof && !!scopeRow && scopeRow.innerText.includes('İncelenen kapsam:'));
- document.getElementById('tab-comparison').click();proof.click();await pause();checks.push(document.activeElement===scopeRow && scopeRow.checkVisibility() && !!scopeRow.querySelector('a[href^="../../"]'));
+ document.getElementById('tab-comparison').click();proof.click();await pause();const scopeOk=document.activeElement===scopeRow && scopeRow.checkVisibility() && !!scopeRow.querySelector('a[href^="../../"]');
+ scopeRow.querySelector('a[href="#dossier-comparison-'+cfg.scope+'"]').click();await pause();const ds=document.getElementById('dossier-comparison-'+cfg.scope);
+ checks.push(scopeOk && document.activeElement===ds && ds.checkVisibility() && ds.closest('section.card').id==='party-iyi-tuzuk');
  const ids=[...document.querySelectorAll('[id]')].map(x=>x.id);checks.push(ids.length===new Set(ids).size);
  const tab=document.getElementById('tab-comparison'),event=new KeyboardEvent('keydown',{key:'ArrowUp',bubbles:true,cancelable:true});tab.dispatchEvent(event);checks.push(!event.defaultPrevented);
  const names=[...new Set([...a.closest('.comparison-topic').querySelectorAll(':scope > article.comparison-row > h4')].map(x=>x.textContent))];
