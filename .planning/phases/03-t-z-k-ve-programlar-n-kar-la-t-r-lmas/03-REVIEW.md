@@ -1,8 +1,8 @@
 ---
 phase: 03-t-z-k-ve-programlar-n-kar-la-t-r-lmas
-reviewed: 2026-11-15T19:14:58Z
+reviewed: 2026-11-15T19:52:28Z
 depth: standard
-files_reviewed: 24
+files_reviewed: 25
 files_reviewed_list:
   - data/comparisons/03-acceptance.json
   - data/comparisons/03-completion-basis-v2-source.json
@@ -26,42 +26,36 @@ files_reviewed_list:
   - tests/fixtures/completion_sr25_correction.json
   - tests/fixtures/completion_sr25_reading.json
   - tests/fixtures/completion_sr25_replacement.json
+  - tests/fixtures/completion_synthesis_rebind.json
   - tests/test_comparisons.py
   - tests/test_completion_coverage.py
 findings:
-  critical: 2
+  critical: 1
   warning: 0
   info: 0
-  total: 2
+  total: 1
 status: issues_found
 ---
 
-# Phase 03: Completion v2 Second Re-review
+# Phase 03: Completion v2 Third Re-review
 
 **Depth:** standard  
-**Scope:** the 24-file union at source checkpoint `2bb29b503d43af49b0195a50f8ce759dc0860831`, root metadata HEAD `8cc945e805988039cfa58fcc419d7425d2ecaae4`, compared with prior review commit `8ac0513`. The earlier reviews are preserved in Git at `959c692` and `8ac0513`. Large data, HTML and SQLite artifacts were inspected structurally and by actual identifiers and hashes; this is not a fresh review of every historical source page.
+**Scope:** the 25-file union at implementation checkpoint `00c14601b8532d757a26126d0b8b8806803e1ef1`, root metadata HEAD `7d1b63535cecbe4fa5c89258561cb54603db23dc`, compared with `7941d6c`. Previous review reports remain in Git history, including `959c692`, `8ac0513` and `7941d6c`. Large research and release files were inspected structurally, by actual IDs and hashes; no claim is made that all historical source pages were re-read.
 
 ## Summary
 
-The three prior probes were repeated against the regenerated committed adoption package: the forged 95-field review and unrelated positive/negative supersession were rejected by the shared revision validator, while the same authentic SR25 reading under a new local ID was accepted. The prior unmodified witness-ID case is therefore closed at that validator boundary; the actual new-taxonomy transition and latest-code isolated import/publish/audit remain unverified. The fix also authenticates the initial reading registry, preserves original source bodies, and requires source-registered old/new correction contexts. The two remaining blockers below affect dependent syntheses and a genuine future source-discovery transition.
+The previous stale-SR25 omission is rejected by the shared revision validator. The labelled structural missing→negative fixture now passes the real supersession helper, while an altered source owner is rejected. Existing focused receipts cover mechanical and substantive synthesis successors, rendered selected output and a same-taxonomy A→B→C chain. One blocker remains in cross-taxonomy processing of that preserved chain, demonstrated below. The existing source-reading, correction-registration and typed-risk checks remain in place; the earlier forgery and witness-ID probes are recorded in the preceding review.
 
-All 24 supplied scope hashes matched. No broad tests, audits, publication or global suite were rerun in this review. The recorded earlier `554db20` isolated round trip is historical evidence for older copied inputs, not a latest-code result. Accepted current release `85b1a453ce2346a8ad0df325a2b73ae9` remains v1 and renderer 22. No production correction or new document discovery is asserted. Eight raw probes and three descriptorless prohibitions remain unresolved; all three UAT groups and three value assessments await human responses.
+All 25 scope hashes matched. This review ran bounded read-only validator probes only; it did not rerun tests, audits, publication or the global suite. The expanded latest-code import→partial→complete→audit scenario and an actual new-taxonomy API transition remain unrun. The accepted `85b1a453ce2346a8ad0df325a2b73ae9` release remains completion v1 and renderer 22; the older `554db20` round trip does not prove the current implementation. The structural gap fixture is hypothetical and does not assert a new Yeni Yol document. Agent source reading is not human political acceptance. Eight raw probes and three descriptorless prohibitions remain unresolved; three UAT groups and three value assessments await human responses.
 
 ## Narrative Findings (AI reviewer)
 
-### CR-01: BLOCKER — A retained synthesis can depend on a superseded row hidden from the active view
+### CR-01: BLOCKER — Retained earlier-taxonomy synthesis corrections prevent a later taxonomy from completing
 
-**File:** `src/arsiv.py:1963` (also `src/arsiv.py:952`, `src/arsiv.py:1282`, `src/arsiv.py:2687`, `tests/test_completion_coverage.py:303`)  
-**Issue:** Synthesis validation uses all historical rows rather than the active revision's selection. The committed SR25 replacement fixture selects a new row and removes `04-03-v3-0304-tip-program-kapitalizm-row` from the visible selection, and its documented test passes `validate_comparisons`. The actual retained synthesis `04-0314-policy-more-kapitalizm-bunalim-1` still names the removed row as TİP's positive side. In a read-only probe on the accepted data, `validate_synthesis_v2(full_data, synthesis)` returned `True`; applying the fixture's corresponding old-row/field removal to the active projection made the same API reject it with `Sentez tarafı konu ve partiyle uyuşmalı`. The active renderer still includes the old synthesis while hiding its referenced row. For a correction that changes substance, a stale claim can therefore remain visible without its active support. Conversely, the same-taxonomy basis requires the original synthesis and review unchanged and has no explicit synthesis replacement path, so the author cannot retire or correct that dependent claim while preserving history.
+**File:** `src/arsiv.py:1547` (also `src/arsiv.py:1557`, `src/arsiv.py:1563`, `src/arsiv.py:952`, `src/arsiv.py:1266`)  
+**Issue:** `completion_superseded_syntheses` processes every registered synthesis correction up to the current epoch against the *current* basis, without restricting the correction to its revision's taxonomy. A successor basis must retain the old correction registry, so a legitimate taxonomy 4 A→B synthesis correction remains present after an upgrade to taxonomy 5. However, a taxonomy 5 complete basis contains its own selected synthesis obligations; it need not, and under `validate_source_basis_universe` cannot, include unselected taxonomy 4 claims as current obligations. In a bounded in-memory API probe using actual synthesis `04-0314-policy-more-kapitalizm-bunalim-1` and its real review, an independently registered test-only mechanical taxonomy 4 A→B decision passed `completion_superseded_syntheses` and returned the retired A. With that exact historical decision retained in a taxonomy 5 basis containing a taxonomy 5 claim, the same API rejected `Kaynaklı sentez ardıllığı uyuşmuyor` because A and B were absent from the current basis. Adding those historical obligations to the new complete basis conflicts with the equality check between all non-retired basis obligations and selected taxonomy 5 syntheses. Thus the working same-taxonomy chain can prevent a later legitimate dictionary transition from completing.
 
-**Fix:** Validate each active synthesis's typed sides and evidence against the active row/field projection, while separately validating historical syntheses against their own immutable revision selections. Add source-authenticated synthesis supersession or equivalent explicit re-review and selection binding so dependent claims can be updated when a row changes. Exercise the actual SR25 fixture with both shared validators and rendered active output, plus a substantive correction that requires a replacement synthesis; preserve old claim, old review and old release unchanged.
-
-### CR-02: BLOCKER — A discovered document cannot close a gap with a bounded negative search
-
-**File:** `src/arsiv.py:1474` (also `src/arsiv.py:1478`, `src/arsiv.py:1482`, `src/arsiv.py:1487`)  
-**Issue:** When an existing `document_missing` cell is replaced by `no_explicit_statement` after the real document is found and reviewed, neither cell has a supported field. This branch chooses the old missing cell as `evidence_context`, so `supported` is empty, but requires a nonempty `scope_reassessment.passage_ids` list to be a subset of it. The condition is impossible regardless of the genuine document, complete dated search boundary or independently authored correction. A bounded read-only `completion_superseded_cells` probe used actual outstanding Yeni Yol program gap `cell-449637ae7f0609816815667d` and a clearly labelled hypothetical future document/scope/correction fixture; it rejected the transition with `Farklı kaynak durumu için aynı kapsamın kaynaklı yeniden değerlendirilmesi gerekli`. This does not claim that a new Yeni Yol document exists. It demonstrates that, when one is found, even a truthful bounded absence cannot be published as its successor.
-
-**Fix:** Handle missing-to-reviewed-negative as its own transition. Require the previously genuine missing/attempt chain, the newly acquired document and its actual source attribution, an independently authored correction and complete dated negative scope tied to that document and query; validate any supporting scope evidence directly against that new source instead of requiring a positive field. Preserve the old gap and proof. Add a test with a clearly labelled real-source-based fixture for missing→negative and a negative case for a wrong party, document, or incomplete scope; run it through import, partial/complete revisions and audit.
+**Fix:** Interpret each registered synthesis correction against its own revision's taxonomy and basis, validating earlier revisions in their own preserved projections; apply only applicable current-taxonomy retirements to the current selection. Keep prior correction bodies and proofs immutable. Add a focused real-API regression that first completes source-authenticated taxonomy 4 A→B (and A→B→C), then reconciles a valid taxonomy 5 selection and completes/audits it while preserving and revalidating the earlier history. Include a negative case for a correction that actually crosses taxonomy boundaries without the authorized lineage.
 
 ---
 
