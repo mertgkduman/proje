@@ -848,6 +848,14 @@ def validate_comparison_descent(base, candidate):
     stages = {'tracer':0,'partial':1,'complete':2}
     if (old['version'], new['version']) not in ((1,1), (1,2), (1,3), (2,2), (2,3), (3,3)) or (new['version'] >= 2 and new['taxonomy_version'] < 3) or new['taxonomy_version'] < old['taxonomy_version'] or stages[new['stage']] < stages[old['stage']]:
         raise ValueError('Karşılaştırma sözleşmesi geriletilemez')
+    if new['version'] == 3:
+        if new['taxonomy_version'] > old['taxonomy_version'] + 1:
+            raise ValueError('Satır soyu sözlüğü tabanın hemen sonraki sürümü olmalı')
+        if old['version'] < 3:
+            markers = candidate.get('comparison_lineage_contract', [])
+            expected = {'version': 1, 'first_taxonomy_version': old['taxonomy_version'] + 1}
+            if new['taxonomy_version'] != old['taxonomy_version'] + 1 or markers != [expected]:
+                raise ValueError('Satır soyu başlangıcı önceki sözlük tabanıyla uyuşmuyor')
     for name in COMPARISON_TABLES:
         if name in ('comparison_contract','comparison_row'): continue
         if any(row not in candidate.get(name, []) for row in base.get(name, [])):
@@ -1578,7 +1586,9 @@ def audit_release(release='current', _seen=None):
             if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
             if base_id:
                 audit_release(base_id,_seen)
-                validate_policy_descent(json.loads((DATA/'releases'/base_id/'records.json').read_text()),exported)
+                base_data = json.loads((DATA/'releases'/base_id/'records.json').read_text())
+                validate_policy_descent(base_data, exported)
+                validate_comparison_descent(base_data, exported)
     if exported['schema_version'] >= 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):

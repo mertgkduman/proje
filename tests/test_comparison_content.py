@@ -25,6 +25,19 @@ def release_with_comparison_taxonomy(version):
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_first_lineage_version_is_bound_to_immediate_base(self):
+        base = dict(comparison_contract=[dict(version=2, taxonomy_version=4, stage='partial')], comparison_row=[], finding=[], passage=[])
+        candidate = copy.deepcopy(base)
+        candidate['comparison_contract'][0].update(version=3, taxonomy_version=5)
+        candidate['comparison_lineage_contract'] = [dict(version=1, first_taxonomy_version=5)]
+        self.assertTrue(arsiv.validate_comparison_descent(base, candidate))
+        for marker, version in ((4, 5), (6, 5), (6, 6), (5, 4)):
+            altered = copy.deepcopy(candidate)
+            altered['comparison_lineage_contract'][0]['first_taxonomy_version'] = marker
+            altered['comparison_contract'][0]['taxonomy_version'] = version
+            with self.subTest(marker=marker, version=version), self.assertRaises(ValueError):
+                arsiv.validate_comparison_descent(base, altered)
+
     def test_versioned_lineage_audit_requires_real_review_for_cross_topic_mapping(self):
         parties = ['yeni-parti', 'tip', 'dem', 'iyi', 'yeni-yol', 'dbp', 'emep', 'saadet', 'demokrat']
         common = dict(domain='program', parent_topic_id=None, applicable_levels='ulusal', basis_kind='program')
