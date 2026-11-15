@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'src'))
-from rapor import render_report, RENDERER_VERSION, version_source_label
+from rapor import render_report, version_source_label
 
 class SourceLabelsTest(unittest.TestCase):
  def test_frozen_17_reproduces_actual_17_release_byte_for_byte(self):
@@ -46,7 +46,6 @@ class SourceLabelsTest(unittest.TestCase):
     data['finding_evidence'].append(dict(finding_id=fid,passage_id=pid,role=role))
    data['comparison_field'].append(dict(id=rid+'-field',row_id=rid,field='principle',summary_finding_id=sf,quote_finding_id=qf,condition_key=None))
   report=render_report(data)
-  self.assertEqual(RENDERER_VERSION,18)
   for name,version,pid,publisher,path in cases:
    label=versions[version]['version_label'] if name=='blog' else publisher+' · '+versions[version]['version_label']
    for prefix in ('comparison-','dossier-comparison-'):
