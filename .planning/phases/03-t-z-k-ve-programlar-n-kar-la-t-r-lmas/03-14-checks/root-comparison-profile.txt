@@ -1,0 +1,33 @@
+         10974037 function calls in 28.897 seconds
+
+   Ordered by: cumulative time
+   List reduced from 48 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1   23.311   23.311   28.897   28.897 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:621(validate_comparisons)
+     1339    4.462    0.003    5.335    0.004 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:555(validate_synthesis_v2)
+ 10370507    0.860    0.000    0.860    0.000 {method 'get' of 'dict' objects}
+    45278    0.053    0.000    0.141    0.000 {built-in method builtins.any}
+     4797    0.005    0.000    0.040    0.000 /hpc/home/mg551/miniconda3/lib/python3.12/json/__init__.py:299(loads)
+   284501    0.036    0.000    0.036    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:713(<genexpr>)
+    52086    0.034    0.000    0.034    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:759(<genexpr>)
+     4797    0.007    0.000    0.033    0.000 /hpc/home/mg551/miniconda3/lib/python3.12/json/decoder.py:332(decode)
+      911    0.000    0.000    0.030    0.000 {built-in method builtins.next}
+     1822    0.030    0.000    0.030    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:694(<genexpr>)
+     4797    0.017    0.000    0.017    0.000 /hpc/home/mg551/miniconda3/lib/python3.12/json/decoder.py:343(raw_decode)
+    13015    0.017    0.000    0.017    0.000 {method 'casefold' of 'str' objects}
+     5391    0.006    0.000    0.014    0.000 {built-in method builtins.all}
+    21194    0.010    0.000    0.010    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:728(<genexpr>)
+    22431    0.009    0.000    0.009    0.000 {method 'add' of 'set' objects}
+     9594    0.006    0.000    0.006    0.000 {method 'match' of 're.Pattern' objects}
+    15894    0.005    0.000    0.005    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:736(<genexpr>)
+    24551    0.003    0.000    0.003    0.000 {built-in method builtins.isinstance}
+     3732    0.003    0.000    0.003    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:587(<genexpr>)
+     6610    0.002    0.000    0.002    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:577(<genexpr>)
+    12907    0.002    0.000    0.002    0.000 {built-in method builtins.len}
+     1838    0.002    0.000    0.002    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:698(<genexpr>)
+     1440    0.002    0.000    0.002    0.000 {built-in method fromisoformat}
+     4797    0.002    0.000    0.002    0.000 {method 'startswith' of 'str' objects}
+     4560    0.002    0.000    0.002    0.000 /hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py:691(<genexpr>)
+
+
