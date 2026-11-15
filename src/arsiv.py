@@ -1471,7 +1471,40 @@ def completion_superseded_cells(data, revision, revisions, basis, selection):
         old_context, new_context = context(old), context(new)
         if (correction.get('old_cell_id'), correction.get('new_cell_id'), correction.get('old_row_id'), correction.get('new_row_id')) != (old['id'], new['id'], old_id, new_id) or correction.get('old_context') != old_context or correction.get('new_context') != new_context:
             raise ValueError('Kaynak düzeltmesi eski ve yeni kaynak bağlamlarıyla uyuşmuyor')
-        if old['disposition'] != new['disposition']:
+        if old['disposition'] == 'document_missing' and new['disposition'] == 'no_explicit_statement':
+            missing, attempt, scope = old_context['missing'], old_context['attempt'], new_context['scope']
+            reassessment = correction.get('gap_reassessment')
+            versions = {v['id']: v for v in data['document_version']}
+            documents = {d['id']: d for d in data['document']}
+            attributions = {a['version_id']: a for a in data.get('source_attribution', [])}
+            version = versions.get(new_key['version_id'])
+            document = documents.get(version['document_id']) if version else None
+            attribution = attributions.get(new_key['version_id'])
+            title_terms = {'program': ('program',), 'charter': ('tüzük', 'tüzüğü')}
+            if (not missing or not attempt or not scope or not version or not document or not attribution or
+                    missing.get('attempt_id') != attempt.get('id') or
+                    any(missing.get(k) != attempt.get(k) for k in ('party_id', 'heading', 'topic_id')) or
+                    missing.get('party_id') != new_key['party_id'] or document.get('party_id') != new_key['party_id'] or
+                    missing.get('heading') != {'program': 'Program', 'charter': 'Tüzük'}.get(new_key['source_role']) or
+                    {'Bulunamadı': ('search', 'no_result'), 'Erişilemedi': ('access', 'failure'), 'Doğrulanamadı': ('verification', 'inconclusive')}.get(missing.get('status')) != (attempt.get('type'), attempt.get('result')) or
+                    attribution.get('kind') != 'party_publication' or
+                    not any(term in document.get('title', '').casefold() for term in title_terms.get(new_key['source_role'], ())) or
+                    scope.get('party_id') != new_key['party_id'] or scope.get('version_id') != version['id'] or
+                    scope.get('result') != 'no_explicit_statement' or not all(scope.get(k) for k in ('sections', 'query_terms', 'reason', 'reviewed_at')) or
+                    not isinstance(reassessment, dict) or reassessment.get('missing_id') != missing['id'] or
+                    reassessment.get('attempt_id') != attempt['id'] or reassessment.get('version_id') != version['id'] or
+                    reassessment.get('scope_id') != scope['id'] or reassessment.get('query_terms') != scope['query_terms'] or
+                    reassessment.get('sections') != scope['sections'] or reassessment.get('reviewed_at') != scope['reviewed_at'] or
+                    reassessment.get('coverage') != 'complete_relevant_scope' or not reassessment.get('reason')):
+                raise ValueError('Belge açığından tarihli kaynak kapsamına geçiş geçersiz')
+            try:
+                scanned = dt.datetime.fromisoformat(scope['reviewed_at'].replace('Z', '+00:00'))
+                searched = dt.datetime.fromisoformat(attempt['attempted_at'].replace('Z', '+00:00'))
+                if scanned.tzinfo is None or searched.tzinfo is None or scanned < searched or scanned > reviewed:
+                    raise ValueError('Tarih sırası geçersiz')
+            except (KeyError, TypeError, ValueError, AttributeError) as exc:
+                raise ValueError('Belge araması ve kapsam tarihleri geçersiz') from exc
+        elif old['disposition'] != new['disposition']:
             # A positive statement and a bounded negative scope are distinct
             # judgments. Reclassification needs a decision that explicitly
             # re-examines that scope against passages from the same version.
@@ -1784,9 +1817,15 @@ def validate_comparisons(data):
     contract = contracts[0]
     validate_completion(data)
     active_row_ids = None
+    synthesis_projections = {}
     if data.get('comparison_completion_revision'):
         active_revision = max(data['comparison_completion_revision'], key=lambda r: r['epoch'])
         active_row_ids = {row['id'] for row in json.loads(active_revision['selection'])['rows']}
+        for revision in sorted(data['comparison_completion_revision'], key=lambda r: r['epoch']):
+            selection = json.loads(revision['selection'])
+            projected = dict(data, comparison_row=selection['rows'], comparison_field=selection['fields'])
+            for synthesis in selection['syntheses']:
+                synthesis_projections[synthesis['id']] = projected
     if contract['version'] >= 2 and contract['taxonomy_version'] < 3:
         raise ValueError('Sentez sözleşmesi seçili sözlük sürümü 3 gerektirir')
     topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
@@ -1960,7 +1999,7 @@ def validate_comparisons(data):
         typed_review = synthesis['id'] in typed_synthesis_ids
         if contract['version'] >= 2 and (synthesis['taxonomy_version'] == contract['taxonomy_version']
                                          or (synthesis['taxonomy_version'] >= 3 and typed_review)):
-            validate_synthesis_v2(data, synthesis)
+            validate_synthesis_v2(synthesis_projections.get(synthesis['id'], data), synthesis)
             continue
         ids = [e['passage_id'] for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == synthesis['id']]
         owners = {documents[versions[passages[p]['version_id']]['document_id']]['party_id'] for p in ids}

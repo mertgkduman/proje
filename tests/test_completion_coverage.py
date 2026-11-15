@@ -104,7 +104,7 @@ class CompletionCoverageTest(unittest.TestCase):
         missing = dict(id='test-structural-program-gap', party_id='tip', heading='Program', topic_id='abd-iliskileri',
                        status='Bulunamadı', attempt_id='test-structural-search', reason='STRUCTURAL FIXTURE only')
         attempt = dict(id='test-structural-search', party_id='tip', heading='Program', topic_id='abd-iliskileri',
-                       type='search', result='no_result', reason='STRUCTURAL FIXTURE only')
+                       type='search', result='no_result', attempted_at='2026-11-12T00:00:00Z', reason='STRUCTURAL FIXTURE only')
         old_key = dict(new['logical_key'], version_id=None, context_judgment='test-structural-gap-row')
         old = dict(id='test-structural-gap-cell', logical_key=old_key, disposition='document_missing',
                    source_judgment_record=dict(id='test-structural-gap-row', state='document_missing',
@@ -123,6 +123,7 @@ class CompletionCoverageTest(unittest.TestCase):
                         old_context=old_context, new_context=new_context,
                         gap_reassessment=dict(missing_id=missing['id'], attempt_id=attempt['id'], version_id=scope['version_id'],
                           scope_id=scope['id'], query_terms=scope['query_terms'], sections=scope['sections'],
+                          reviewed_at=scope['reviewed_at'], coverage='complete_relevant_scope',
                           reason='STRUCTURAL FIXTURE: the real bounded scope is reused.'))
         content = arsiv.canonical_json({'decisions': [decision]})
         registration = dict(decision=decision, origin=dict(path='data/comparisons/test-structural-correction.json',
@@ -138,6 +139,15 @@ class CompletionCoverageTest(unittest.TestCase):
         data = dict(data, comparison_row=data['comparison_row'] + [dict(old['source_judgment_record'], taxonomy_version=self.taxonomy)],
                     missing=data['missing'] + [missing], attempt=data['attempt'] + [attempt], comparison_completion_supersession=[link])
         self.assertEqual(arsiv.completion_superseded_cells(data, second, [first, second], basis, {'rows': [dict(id=new_row)]}), {old['id']})
+        version = next(v for v in data['document_version'] if v['id'] == scope['version_id'])
+        document_id = version['document_id']
+        for changes in (
+            dict(document=[dict(d, party_id='dem') if d['id'] == document_id else d for d in data['document']]),
+            dict(document=[dict(d, title='Unrelated document') if d['id'] == document_id else d for d in data['document']]),
+            dict(comparison_review_scope=[dict(s, sections='') if s['id'] == scope['id'] else s for s in data['comparison_review_scope']]),
+        ):
+            with self.subTest(changes=list(changes)), self.assertRaises(ValueError):
+                arsiv.completion_superseded_cells(dict(data, **changes), second, [first, second], basis, {'rows': [dict(id=new_row)]})
 
     def test_re_review_rejects_unrelated_positive_as_negative_scope_correction(self):
         data = self.modern()
