@@ -1,0 +1,117 @@
+{
+  "source_plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-PLAN.md",
+  "flagged_assumptions": [
+    {
+      "requirement_id": "TUZ-01",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "Üyelik hakları ve koşul/itirazın kaynağın anlamını doğru aktardığı son kaynak incelemesinde ve insan UAT'ında açıkça değerlendirilir."
+    },
+    {
+      "requirement_id": "TUZ-02",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "Seçmen/adaylık/usul/süre ile merkez-il-ilçe/diğer organ eşlemesi gerçek maddelere karşı son inceleme ve UAT'ta değerlendirilir."
+    },
+    {
+      "requirement_id": "TUZ-03",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "Denetleyen organ, kapsam, rapor/ibra/görevden alma ve itirazın özetten kaybolmadığı son inceleme/UAT'ta değerlendirilir."
+    },
+    {
+      "requirement_id": "TUZ-04",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "Görüş/önerge/eleştiri güvenceleri ile disiplin/ihraç/itiraz sınırlarının birlikte ve uygulama iddiası olmadan aktarımı değerlendirilir."
+    },
+    {
+      "requirement_id": "PRG-01",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "İlke/hedef/araç ayrımı, olmayan aracın üretilmemesi ve ek/tarihsel kaynak türünün doğru aktarımı değerlendirilir."
+    },
+    {
+      "requirement_id": "KAR-01",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "Aynı tüzük alt soruları/düzeyleri ve gerçek kanıt/eksik/kapsam ayrımının dokuz partiye eşit uygulanması değerlendirilir."
+    },
+    {
+      "requirement_id": "KAR-02",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "Konu birleşimi/az-partili konu geri taraması, tekrar/koşul/uyuşmazlıkların korunması ve kaynaklı sentez değerlendirilir."
+    },
+    {
+      "requirement_id": "RAP-02",
+      "category": "unclassified",
+      "status": "unresolved",
+      "verification": null,
+      "resolution": null,
+      "reason": null,
+      "probe": "unclassified — review manually",
+      "flagged": true,
+      "explicit_acceptance": "Her iki görünümde belirli konu/parti kaydının doğru madde-pasaj/sürüm/arşive götürmesi gerçek tarayıcı ve UAT'ta değerlendirilir."
+    }
+  ],
+  "prohibitions": [
+    {
+      "statement": "Konu özetleri ve parti gösterim sırası siyasi başarı puanı, oy yönlendirmesi veya araştırmacının tercihi olarak sunulamaz.",
+      "status": "unresolved"
+    },
+    {
+      "statement": "Belge eksikliği, açık ifade yokluğu ve sürüm belirsizliği bir partinin karşıt tutumu, olumsuz performansı veya hukuki güncellik güvencesi olarak sunulamaz.",
+      "status": "unresolved"
+    },
+    {
+      "statement": "Tüzükte yazılı mekanizma fiilî uygulama diye, ek/tarihsel belge bağımsız güncel program diye veya ayrı tüzel partinin belgesi başka partiye aitmiş gibi sunulamaz.",
+      "status": "unresolved"
+    }
+  ],
+  "coverage": {
+    "applicable": 8,
+    "resolved": 0,
+    "unresolved": 8,
+    "byVerification": {
+      "explicit": 0,
+      "backstop": 0
+    }
+  },
+  "human_assessment": "pending"
+}

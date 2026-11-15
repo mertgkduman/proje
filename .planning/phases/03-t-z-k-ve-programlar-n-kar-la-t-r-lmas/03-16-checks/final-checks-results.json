@@ -1,0 +1,162 @@
+{
+  "release_id": "85b1a453ce2346a8ad0df325a2b73ae9",
+  "results": [
+    {
+      "name": "comparisons",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_comparisons.py"
+      ],
+      "exit_code": 0,
+      "test_count": 9,
+      "valid": true
+    },
+    {
+      "name": "coverage",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_completion_coverage.py"
+      ],
+      "exit_code": 0,
+      "test_count": 8,
+      "valid": true
+    },
+    {
+      "name": "comparison-content",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_comparison_content.py"
+      ],
+      "exit_code": 0,
+      "test_count": 29,
+      "valid": true
+    },
+    {
+      "name": "comparison-synthesis",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_comparison_synthesis_contract.py"
+      ],
+      "exit_code": 0,
+      "test_count": 9,
+      "valid": true
+    },
+    {
+      "name": "phase3-stage",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_phase3_stage_compatibility.py"
+      ],
+      "exit_code": 0,
+      "test_count": 2,
+      "valid": true
+    },
+    {
+      "name": "navigation",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_comparison_navigation.py"
+      ],
+      "exit_code": 0,
+      "test_count": 4,
+      "valid": true
+    },
+    {
+      "name": "topics",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_topics.py"
+      ],
+      "exit_code": 0,
+      "test_count": 3,
+      "valid": true
+    },
+    {
+      "name": "documents",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_documents.py"
+      ],
+      "exit_code": 0,
+      "test_count": 11,
+      "valid": true
+    },
+    {
+      "name": "publication",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_publication.py"
+      ],
+      "exit_code": 0,
+      "test_count": 11,
+      "valid": true
+    },
+    {
+      "name": "dossiers",
+      "command": [
+        "python3",
+        "tests/run.py",
+        "--pattern",
+        "test_dossiers.py"
+      ],
+      "exit_code": 0,
+      "test_count": 12,
+      "valid": true
+    },
+    {
+      "name": "phase2",
+      "command": [
+        "python3",
+        "src/arsiv.py",
+        "audit",
+        "--release",
+        "85b1a453ce2346a8ad0df325a2b73ae9",
+        "--phase",
+        "2"
+      ],
+      "exit_code": 0,
+      "test_count": null,
+      "valid": true
+    },
+    {
+      "name": "phase3",
+      "command": [
+        "python3",
+        "src/arsiv.py",
+        "audit",
+        "--release",
+        "85b1a453ce2346a8ad0df325a2b73ae9",
+        "--phase",
+        "3",
+        "--stage",
+        "complete"
+      ],
+      "exit_code": 0,
+      "test_count": null,
+      "valid": true
+    },
+    {
+      "name": "input-integrity",
+      "changed": [],
+      "valid": true
+    }
+  ]
+}
