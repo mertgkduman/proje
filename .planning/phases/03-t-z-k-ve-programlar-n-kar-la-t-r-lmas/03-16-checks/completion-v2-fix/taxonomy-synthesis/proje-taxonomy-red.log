@@ -1,0 +1,17 @@
+test_sampled_sr25_context_accepts_authenticated_replacement (test_completion_coverage.CompletionCoverageTest.test_sampled_sr25_context_accepts_authenticated_replacement) ... ERROR
+
+======================================================================
+ERROR: test_sampled_sr25_context_accepts_authenticated_replacement (test_completion_coverage.CompletionCoverageTest.test_sampled_sr25_context_accepts_authenticated_replacement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/proje-taxonomy-red-20261115/tests/test_completion_coverage.py", line 507, in test_sampled_sr25_context_accepts_authenticated_replacement
+    self.assertEqual(arsiv.completion_superseded_syntheses(chain_candidate, next_revision,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/proje-taxonomy-red-20261115/src/arsiv.py", line 1576, in completion_superseded_syntheses
+    raise ValueError('Kaynaklı sentez ardıllığı uyuşmuyor')
+ValueError: Kaynaklı sentez ardıllığı uyuşmuyor
+
+----------------------------------------------------------------------
+Ran 1 test in 92.807s
+
+FAILED (errors=1)

@@ -491,6 +491,42 @@ class CompletionCoverageTest(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'sentez ardıllığı'):
                     arsiv.completion_superseded_syntheses(chain_candidate, chain_revision,
                         chain_candidate['comparison_completion_revision'], chain_basis, missing_terminal)
+                # A later taxonomy carries the immutable earlier decisions but
+                # has its own synthesis obligations and active selection.
+                next_taxonomy = self.taxonomy + 1
+                next_claim = dict(final_claim, id='test-sr25-next-taxonomy-synthesis', taxonomy_version=next_taxonomy)
+                next_review = dict(final_review, subject_id=next_claim['id'])
+                next_path = 'data/comparisons/test-sr25-next-taxonomy.json'
+                next_content = arsiv.canonical_json(dict(purpose='Test-only taxonomy selection', records=[
+                    dict(kind='comparison_synthesis', values=next_claim),
+                    dict(kind='comparison_semantic_review', values=next_review)]))
+                (arsiv.DATA / 'comparisons/test-sr25-next-taxonomy.json').write_text(next_content, encoding='utf-8')
+                next_obligation = dict(chain_obligation, id=next_claim['id'], source_authored_claim=next_claim,
+                    source=dict(path=next_path, pointer='/records/0/values'), original_review=next_review,
+                    review_source=dict(path=next_path, pointer='/records/1/values'))
+                next_basis = dict(chain_basis, taxonomy_version=next_taxonomy, synthesis_obligations=[next_obligation],
+                    source_documents=chain_basis['source_documents'] + [dict(path=next_path,
+                        sha256=hashlib.sha256(next_content.encode()).hexdigest(), role='source_research_or_mapping', original_status=None)])
+                self.assertTrue(arsiv.verify_successor_completion_basis(chain_basis, next_basis))
+                next_selection = dict(chain_selection, syntheses=[next_claim])
+                next_revision = dict(chain_revision, id='test-sr25-next-taxonomy', epoch=4,
+                    parent_revision_id=chain_revision['id'], taxonomy_version=next_taxonomy,
+                    selection=arsiv.canonical_json(next_selection))
+                next_revisions = chain_candidate['comparison_completion_revision'] + [next_revision]
+                self.assertEqual(arsiv.completion_superseded_syntheses(chain_candidate, next_revision,
+                    next_revisions, next_basis, next_selection), set())
+                # A correction authored as part of the new taxonomy cannot
+                # silently retire an old-taxonomy claim; lineage is separate.
+                cross = dict(chain_relation, id='test-unauthorized-cross-taxonomy', revision_id=next_revision['id'],
+                    old_id=final_claim['id'], new_id=next_claim['id'], old_claim=final_claim, new_claim=next_claim,
+                    old_review=final_review, new_review=next_review)
+                cross_content = arsiv.canonical_json({'decisions': [cross]})
+                cross_registration = dict(decision=cross, origin=dict(path='data/comparisons/test-cross-taxonomy.json',
+                    pointer='/decisions/0', content=cross_content, sha256=hashlib.sha256(cross_content.encode()).hexdigest()))
+                cross_basis = dict(next_basis, synthesis_obligations=[chain_obligation, next_obligation],
+                                   _correction_registry=next_basis['_correction_registry'] + [cross_registration])
+                with self.assertRaisesRegex(ValueError, 'sentez ardıllığı'):
+                    arsiv.completion_superseded_syntheses(chain_candidate, next_revision, next_revisions, cross_basis, next_selection)
                 # A substantive addition gets a new dated source review, not
                 # a mechanically inherited approval or a production change.
                 substantive_claim = dict(new_claim, id='test-sr25-synthesis-substantive',

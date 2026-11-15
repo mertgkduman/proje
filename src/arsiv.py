@@ -1547,6 +1547,7 @@ def completion_superseded_cells(data, revision, revisions, basis, selection):
 def completion_superseded_syntheses(data, revision, revisions, basis, selection):
     """Bind retained source claims to separately authored replacement claims."""
     epochs = {r['id']: r['epoch'] for r in revisions}
+    taxonomies = {r['id']: r['taxonomy_version'] for r in revisions}
     obligations = {item['id']: item for item in basis['synthesis_obligations']}
     selected = {s['id'] for s in selection['syntheses']}
     rows = {r['id']: r for r in data['comparison_row']}
@@ -1558,15 +1559,22 @@ def completion_superseded_syntheses(data, revision, revisions, basis, selection)
         epoch = epochs.get(decision.get('revision_id'))
         if epoch is None:
             raise ValueError('Sentez ardıllığının revizyonu yok')
-        if epoch > revision['epoch']:
+        # Earlier taxonomies are validated in their own revision and source
+        # basis by validate_completion_revisions; their retained registry
+        # entries must not retire claims from this taxonomy's selection.
+        if epoch > revision['epoch'] or taxonomies[decision['revision_id']] != revision['taxonomy_version']:
             continue
         old, new = obligations.get(decision.get('old_id')), obligations.get(decision.get('new_id'))
         prior = next((r for r in revisions if r['epoch'] == epoch - 1), None)
         prior_ids = {s['id'] for s in json.loads(prior['selection'])['syntheses']} if prior else set()
         later_successor = any(d.get('old_id') == decision.get('new_id') and
-                              epoch < epochs.get(d.get('revision_id'), -1) <= revision['epoch']
+                              epoch < epochs.get(d.get('revision_id'), -1) <= revision['epoch'] and
+                              taxonomies.get(d.get('revision_id')) == revision['taxonomy_version']
                               for d in decisions)
         if (not old or not new or old['id'] in retired or old['id'] == new['id'] or
+                not prior or prior['taxonomy_version'] != revision['taxonomy_version'] or
+                old['source_authored_claim']['taxonomy_version'] != revision['taxonomy_version'] or
+                new['source_authored_claim']['taxonomy_version'] != revision['taxonomy_version'] or
                 old['topic_id'] != new['topic_id'] or decision.get('result') != 'supersedes' or
                 decision.get('reviewer_kind') != 'agent' or not decision.get('reason') or
                 decision.get('old_claim') != old['source_authored_claim'] or decision.get('new_claim') != new['source_authored_claim'] or
@@ -1586,7 +1594,9 @@ def completion_superseded_syntheses(data, revision, revisions, basis, selection)
         if decision.get('mode') == 'mechanical_rebind':
             if old['source_authored_claim']['text'] != new['source_authored_claim']['text'] or old['original_review']['reviewed_at'] != new['original_review']['reviewed_at']:
                 raise ValueError('Mekanik sentez soyu metni ve gerçek inceleme tarihini korumalı')
-            row_map = {link['old_row_id']: link['new_row_id'] for link in links if epochs.get(link['revision_id'], 0) <= epoch}
+            row_map = {link['old_row_id']: link['new_row_id'] for link in links
+                       if epochs.get(link['revision_id'], 0) <= epoch and
+                       taxonomies.get(link['revision_id']) == revision['taxonomy_version']}
             for side in old_meaning.get('sides', []):
                 if side['row_id'] in row_map:
                     before, after = rows.get(side['row_id']), rows.get(row_map[side['row_id']])
