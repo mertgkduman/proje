@@ -1,0 +1,21 @@
+test_unicode_and_space_ids_in_real_source_preview (percent_preview_test.ComparisonNavigation.test_unicode_and_space_ids_in_real_source_preview) ... FAIL
+
+======================================================================
+FAIL: test_unicode_and_space_ids_in_real_source_preview (percent_preview_test.ComparisonNavigation.test_unicode_and_space_ids_in_real_source_preview)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 116, in test_unicode_and_space_ids_in_real_source_preview
+    observed = self.invoke(report.as_uri(), 360, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 84, in invoke
+    self.assertEqual(result.returncode, 0, result.stderr[-2000:])
+AssertionError: 1 != 0 : Error: {"exceptionId":1,"text":"Uncaught (in promise) URIError: URI malformed","lineNumber":14,"columnNumber":101,"scriptId":"5","stackTrace":{"callFrames":[{"functionName":"","scriptId":"5","url":"","lineNumber":13,"columnNumber":100}]},"exception":{"type":"object","subtype":"error","className":"URIError","description":"URIError: URI malformed\n    at decodeURIComponent (<anonymous>)\n    at <anonymous>:14:101","objectId":"-4852796802097486560.2.1"}}
+    at evaluate (/hpc/group/pfisterlab/mg551/storage/proje/tests/comparison_navigation.cjs:9:154)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async /hpc/group/pfisterlab/mg551/storage/proje/tests/comparison_navigation.cjs:50:14
+
+
+----------------------------------------------------------------------
+Ran 1 test in 13.809s
+
+FAILED (failures=1)

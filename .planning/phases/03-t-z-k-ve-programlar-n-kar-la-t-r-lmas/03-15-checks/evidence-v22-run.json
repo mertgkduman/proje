@@ -1,0 +1,31 @@
+{
+  "release": "27033583248b4951b3fe8e5fd6d77b9f",
+  "snapshot": "/tmp/gsd-03-evidence22-1304c52542dd4ba59cd8c40672ff46a7",
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "started_utc": "2026-11-15T08:32:12.697660+00:00",
+  "runs": {
+    "navigation": {
+      "pid": 1038131,
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "tests/run.py",
+        "--pattern",
+        "test_comparison_navigation.py"
+      ],
+      "output": "/tmp/gsd-03-evidence22-1304c52542dd4ba59cd8c40672ff46a7/navigation.log",
+      "exit": "/tmp/gsd-03-evidence22-1304c52542dd4ba59cd8c40672ff46a7/navigation.exit"
+    },
+    "screenshots": {
+      "pid": 1038132,
+      "command": [
+        "node",
+        "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/capture-navigation.cjs",
+        "/hpc/home/mg551/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+        "file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/27033583248b4951b3fe8e5fd6d77b9f/index.html",
+        "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/screenshots-v22"
+      ],
+      "output": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/screenshots-v22.json",
+      "exit": "/tmp/gsd-03-evidence22-1304c52542dd4ba59cd8c40672ff46a7/screenshots.exit"
+    }
+  }
+}

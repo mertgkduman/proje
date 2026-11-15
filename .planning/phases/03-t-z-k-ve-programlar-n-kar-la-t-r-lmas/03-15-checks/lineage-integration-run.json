@@ -1,0 +1,19 @@
+{
+  "pid": 1029569,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "started_utc": "2026-11-15T07:21:09.763074+00:00",
+  "job": "/tmp/gsd-03-lineage-integration-3ce46b890c2a4d8fac52855f34713ad1",
+  "snapshot": "/tmp/gsd-03-lineage-integration-3ce46b890c2a4d8fac52855f34713ad1/inputs",
+  "proof": "/tmp/gsd-03-lineage-integration-3ce46b890c2a4d8fac52855f34713ad1/proof",
+  "log": "/tmp/gsd-03-lineage-integration-3ce46b890c2a4d8fac52855f34713ad1/run.log",
+  "exit": "/tmp/gsd-03-lineage-integration-3ce46b890c2a4d8fac52855f34713ad1/exit",
+  "current_release": "d8d06dbe3a794d2fb92459391af5a549",
+  "command": [
+    "/hpc/home/mg551/miniconda3/bin/python3",
+    "-u",
+    "-c",
+    "import subprocess,sys; r=subprocess.run([sys.executable,'-u',sys.argv[1]],stdin=subprocess.DEVNULL); open(sys.argv[2],'w').write(str(r.returncode)+'\\n'); sys.exit(r.returncode)",
+    "/tmp/gsd-03-lineage-integration-3ce46b890c2a4d8fac52855f34713ad1/inputs/integration.py",
+    "/tmp/gsd-03-lineage-integration-3ce46b890c2a4d8fac52855f34713ad1/exit"
+  ]
+}

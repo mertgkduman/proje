@@ -51,6 +51,8 @@ Yeni karşılaştırma paketini yüklemeden önce `python3 src/arsiv.py comparis
 
 Yeni sözlük eşlemeleri karşılaştırma sözleşmesi 3 ve satır soyu sözleşmesi 1 kullanır. Ekleme yoluyla oluşturulan soy tabloları eski satırı yeni satırlarına bağlar; değişen konu, farklı konuya taşıma ve yerine geçirme için yazarın yeni tanım, koşul ve gerçek pasaj/kapsam/eksik kaydı kararını saklar. Denetim dokuz parti kapsamını ve ilişkileri doğrular. Önceki sözleşme 1–2 snapshot'ları ve mekanik eşlemeleri geçmişe dönük yeniden onaylanmış sayılmaz; özgün şema ve manifestleriyle okunur.
 
+Yeni sözlük sürümü için `python3 src/arsiv.py comparison-reconcile --workspace DIZIN --taxonomy SOZLUK.json --inventory ENVANTER.json --input GERI_TARAMA.json` ile açık eşleme ve yeni anlam kararları birlikte uygulanır. Rapor bağlantıları hedef kimliğini URL için kodlar; parti dosyası ve karşılaştırma arasındaki satır bağlantıları konunun Tüzük veya Program alanına gider. Saklanan kimlikler değişmez.
+
 ## Kaynak derleme kararı — 11 Kasım 2026
 
 Bu çalışma parti yayınlarını, haberleri ve sosyal paylaşımları açık atıfla bir araya getirir. Yayıncı, varsa yazar, bilinen yayın tarihi ve adres korunur; sosyal kaynakta hesap/yazar, tarih ve kalıcı adres gerekir. Beyan ve iddia söyleyene atfedilir. Alan adı için sicil kanıtı, tarihsel yürürlük kanıtı veya her kaynakta insan kabulü kullanım ön koşulu değildir. Sicil kimliği iddiası gerçek sicille tutarlı kalır; bilinmeyen tarih ve hesap dönemi uydurulmaz. Yeni Parti'nin resmî sitesi kullanıcının açık kararıyla https://yenipartiyiz.biz; tüzük /parti-tuzugu, program /parti-programi adresidir.
