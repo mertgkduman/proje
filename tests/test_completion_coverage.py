@@ -86,3 +86,53 @@ class CompletionCoverageTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             arsiv.validate_comparisons(self.altered('comparison_source_inventory', index, full_text_available=0))
 
+    def test_coordinated_omission_is_not_a_coverage_decision(self):
+        """The independent authored disposition still requires the omitted organ."""
+        data = dict(self.reviewed)
+        target = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
+        row = next(r for r in data['comparison_row'] if r['id'] == target)
+        marker = dict(data['comparison_completion'][0])
+        proof = json.loads(marker['evidence'])
+        proof['rows'] = [r for r in proof['rows'] if r['id'] != target]
+        next(p for p in proof['coverage_review']['parties'] if p['party_id'] == row['party_id'])['row_count'] -= 1
+        marker['evidence'] = json.dumps(proof, ensure_ascii=False)
+        data['comparison_completion'] = [marker]
+        data['comparison_row'] = [r for r in data['comparison_row'] if r['id'] != target]
+        # This independently authored disposition is an additive revision input,
+        # not a second copy of the candidate's submitted completion proof.
+        data['comparison_coverage_disposition'] = [dict(
+            taxonomy_version=self.taxonomy, topic_id=row['topic_id'],
+            party_id=row['party_id'], level=row['level'], organ=row['organ'],
+            scope_id=row['scope_id'], state=row['state'], row_id=target)]
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+
+    def test_review_requires_substantive_inspections(self):
+        data = dict(self.reviewed)
+        marker = dict(data['comparison_completion'][0])
+        proof = json.loads(marker['evidence'])
+        checks = proof['source_review']['checks']
+        seen = set()
+        for check in checks:
+            selected = []
+            for row in check.get('selected_rows', []):
+                party = row['party_id']
+                if party not in seen:
+                    seen.add(party)
+                    selected.append(dict(row, fields=[]))
+            check['selected_rows'] = selected
+            check['inspected_synthesis'] = []
+        marker['evidence'] = json.dumps(proof, ensure_ascii=False)
+        data['comparison_completion'] = [marker]
+        data['comparison_completion_revision'] = [dict(version=2, taxonomy_version=self.taxonomy,
+                                                        revision=1, active=True)]
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+
+    def test_complete_base_can_descend_to_partial_revision(self):
+        candidate = dict(self.reviewed)
+        candidate['comparison_contract'] = [dict(self.reviewed['comparison_contract'][0], stage='partial')]
+        candidate['comparison_completion_revision'] = [dict(version=2, taxonomy_version=self.taxonomy,
+                                                             revision=1, active=False)]
+        self.assertTrue(arsiv.validate_comparison_descent(self.reviewed, candidate))
+
