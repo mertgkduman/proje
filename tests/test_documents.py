@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 import arsiv
+from fixture_data import copy_fixture
 from unittest.mock import Mock, patch
 
 
@@ -161,7 +162,7 @@ class DocumentContract(unittest.TestCase):
             old = arsiv.DATA
             try:
                 arsiv.DATA = Path(tmp) / 'data'
-                shutil.copytree(old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
+                copy_fixture(old, arsiv.DATA)
                 work = arsiv.open_workspace(tmp)
                 db = arsiv.connect(work / 'records.sqlite3')
                 source = dict(db.execute("SELECT * FROM document_version WHERE id='registry-365-v1'").fetchone())
@@ -189,7 +190,7 @@ class DocumentContract(unittest.TestCase):
             old = arsiv.DATA
             try:
                 arsiv.DATA = Path(tmp) / 'data'
-                shutil.copytree(old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
+                copy_fixture(old, arsiv.DATA)
                 work = arsiv.open_workspace(tmp)
                 db = arsiv.connect(work / 'records.sqlite3')
                 db.execute("UPDATE finding SET party_id='tip' WHERE id='kurulus-quote'")

@@ -14,6 +14,7 @@ import urllib.request
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 import arsiv
+from fixture_data import copy_fixture
 
 
 class PhaseOneAcceptance(unittest.TestCase):
@@ -63,7 +64,7 @@ class PhaseOneAcceptance(unittest.TestCase):
             old = arsiv.DATA
             try:
                 arsiv.DATA = Path(directory) / 'data'
-                shutil.copytree(old, arsiv.DATA)
+                copy_fixture(old, arsiv.DATA)
                 work = arsiv.open_workspace(directory)
                 db = arsiv.connect(Path(work) / 'records.sqlite3')
                 db.execute("UPDATE missing SET heading='Bozuk' WHERE heading='Tüzük'")
@@ -78,7 +79,7 @@ class PhaseOneAcceptance(unittest.TestCase):
             old = arsiv.DATA
             try:
                 arsiv.DATA = Path(directory) / 'data'
-                shutil.copytree(old, arsiv.DATA)
+                copy_fixture(old, arsiv.DATA)
                 work = arsiv.open_workspace(directory)
                 path = Path(work) / 'records.sqlite3'
                 db = arsiv.connect(path)

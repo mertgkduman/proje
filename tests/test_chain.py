@@ -3,6 +3,7 @@ from pathlib import Path
 import tempfile
 import shutil
 import arsiv
+from fixture_data import copy_fixture
 
 
 class ChainContract(unittest.TestCase):
@@ -11,7 +12,7 @@ class ChainContract(unittest.TestCase):
             old = arsiv.DATA
             try:
                 arsiv.DATA = Path(tmp) / 'data'
-                shutil.copytree(old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
+                copy_fixture(old, arsiv.DATA)
                 work = arsiv.open_workspace(tmp)
                 lead = dict(id='a', party_id='yeni-parti', heading='A', topic_id='t', url='https://example.org/path?x=1&utm_source=a#ref', relevance_reason='İlgili')
                 self.assertEqual(arsiv.enqueue_lead(work, lead), 'a')

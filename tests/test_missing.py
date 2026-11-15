@@ -3,6 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 import arsiv
+from fixture_data import copy_fixture
 
 
 class MissingContract(unittest.TestCase):
@@ -11,7 +12,7 @@ class MissingContract(unittest.TestCase):
             old = arsiv.DATA
             try:
                 arsiv.DATA = Path(tmp) / 'data'
-                shutil.copytree(old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
+                copy_fixture(old, arsiv.DATA)
                 work = arsiv.open_workspace(tmp)
                 attempt = dict(id='a', party_id='yeni-parti', heading='B', topic_id='t', type='access', query='belirsiz', attempted_at='2026-11-10T15:00:00+00:00', result='failure', reason='Yanıt alınamadı')
                 arsiv.record_attempt(work, attempt)
@@ -24,7 +25,7 @@ class MissingContract(unittest.TestCase):
             old = arsiv.DATA
             try:
                 arsiv.DATA = Path(tmp) / 'data'
-                shutil.copytree(old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
+                copy_fixture(old, arsiv.DATA)
                 work = arsiv.open_workspace(tmp)
                 arsiv.record(work, 'research_state', dict(party_id='yeni-parti', heading='D', state='not_researched'))
                 db = arsiv.connect(work / 'records.sqlite3')

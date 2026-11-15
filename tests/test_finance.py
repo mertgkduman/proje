@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 import arsiv
+from fixture_data import copy_fixture
 from rapor import render_report
 
 
@@ -13,7 +14,7 @@ class FinanceContract(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.old = arsiv.DATA
         arsiv.DATA = Path(self.tmp.name) / 'data'
-        shutil.copytree(self.old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
+        copy_fixture(self.old, arsiv.DATA)
         self.work = arsiv.open_workspace(self.tmp.name)
         self.db = arsiv.connect(self.work / 'records.sqlite3')
         self.db.execute("INSERT INTO document VALUES ('finance-fixture','yeni-parti','Test raporu','news')")
@@ -69,6 +70,9 @@ class FinanceContract(unittest.TestCase):
             self.db.execute('UPDATE passage SET exact=? WHERE id=?', ('Kocaeli il örgütü gelir ' + malformed + ' TL', 'finance-fixture'))
             with self.subTest(malformed=malformed), self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, amount='123', number_format='tr'))
 
+
+
+class PublishedFinance(unittest.TestCase):
     def test_current_pilot_has_researched_finance(self):
         release = arsiv.current()
         arsiv.audit_finance(arsiv.DATA / 'releases' / release / 'records.sqlite3')

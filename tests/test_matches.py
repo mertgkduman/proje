@@ -7,6 +7,7 @@ from unittest.mock import patch
 from pathlib import Path
 
 import arsiv
+from fixture_data import copy_fixture
 from rapor import render_report
 
 
@@ -15,7 +16,7 @@ class MatchContract(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.old = arsiv.DATA
         arsiv.DATA = Path(self.tmp.name) / 'data'
-        shutil.copytree(self.old, arsiv.DATA, ignore=shutil.ignore_patterns('.write.lock'))
+        copy_fixture(self.old, arsiv.DATA)
         self.work = arsiv.open_workspace(self.tmp.name)
         self.db = arsiv.connect(self.work / 'records.sqlite3')
         # Purpose-made fixtures: neither source is asserted to be a real event.
