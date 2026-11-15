@@ -55,11 +55,15 @@ class ComparisonNavigation(unittest.TestCase):
         sys.path.insert(0, str(ROOT / 'src'))
         from rapor import render_report
         from rapor_v20 import render_report as render_20
+        from rapor_v21 import render_report as render_21
         from arsiv import comparison_render_data
         folder = DATA / 'releases' / 'ef353c40c60b400eb1c52b3245e9a65b'
         records = json.loads((folder / 'records.json').read_text())
         snapshot = comparison_render_data(records)
         self.assertEqual(render_20(snapshot).encode(), (folder / 'index.html').read_bytes())
+        old21 = DATA / 'releases' / 'd8d06dbe3a794d2fb92459391af5a549'
+        old21_data = json.loads((old21 / 'records.json').read_text())
+        self.assertEqual(render_21(comparison_render_data(old21_data)).encode(), (old21 / 'index.html').read_bytes())
         class Sections(HTMLParser):
             def __init__(self):
                 super().__init__(); self.sections = []; self.rows = {}
@@ -100,22 +104,24 @@ class ComparisonNavigation(unittest.TestCase):
         from rapor import render_report
         records = json.loads(RECORDS.read_text())
         original = selected_records()
-        aliases = {original['row']: 'gezinti örneği-ş', original['passage']: 'kaynak örneği-ğ'}
         def rename(value):
             if isinstance(value, str): return aliases.get(value, value)
             if isinstance(value, list): return [rename(x) for x in value]
             if isinstance(value, dict): return {k: rename(v) for k, v in value.items()}
             return value
-        preview = rename(records)
-        config = dict(original, row=aliases[original['row']], passage=aliases[original['passage']])
         with tempfile.TemporaryDirectory(prefix='nav-preview-', dir=DATA / 'releases') as tmp:
             report = Path(tmp) / 'index.html'
-            report.write_text(render_report(comparison_render_data(preview)), encoding='utf-8')
-            direct = self.invoke(report.as_uri(), 1365, dict(config, direct=True))
-            self.assertTrue(direct['exists'] and direct['focused'] and direct['visible'])
-            observed = self.invoke(report.as_uri(), 360, config)
-            self.assertEqual(observed['checks'], '1' * 19)
-            self.assertTrue(observed['archiveExcerptFound'])
+            for token in ('%', '%20', '%ZZ'):
+                with self.subTest(token=token):
+                    aliases = {original['row']: 'gezinti ' + token + ' #?/&"\' ş', original['passage']: 'kaynak ' + token + ' #?/&"\' ğ'}
+                    preview = rename(records)
+                    config = dict(original, row=aliases[original['row']], passage=aliases[original['passage']])
+                    report.write_text(render_report(comparison_render_data(preview)), encoding='utf-8')
+                    direct = self.invoke(report.as_uri(), 1365, dict(config, direct=True))
+                    self.assertTrue(direct['exists'] and direct['focused'] and direct['visible'])
+                    observed = self.invoke(report.as_uri(), 360, config)
+                    self.assertEqual(observed['checks'], '1' * 19)
+                    self.assertTrue(observed['archiveExcerptFound'])
 
     def test_four_browser_navigation_modes(self):
         config = selected_records()

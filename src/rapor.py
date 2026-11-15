@@ -3,13 +3,13 @@ from collections import defaultdict
 from html import escape, unescape
 import json
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 21
-STYLE = Path(__file__).with_name('rapor_v21.css').read_text(encoding='utf-8')
+RENDERER_VERSION = 22
+STYLE = Path(__file__).with_name('rapor_v22.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -32,6 +32,11 @@ CODE_LABELS = {
 
 def esc(value):
     return escape(str(value) if value is not None else '', quote=True)
+
+
+def fragment(value):
+    """Encode an entire DOM ID exactly once for use in a URL fragment."""
+    return quote(str(value), safe='')
 
 
 def web_url(value):
@@ -195,7 +200,7 @@ def render_report(data):
     def citation(pid, label='Kaynak'):
         version = versions[passages[pid]['version_id']]
         title = version_source_label(version, attributions.get(version['id']), documents[version['document_id']]['title'])
-        return f'<a class="citation" href="#source-{esc(pid)}" aria-label="{esc(label)}: {esc(title)}">[{esc(label)}]</a>'
+        return f'<a class="citation" href="#{fragment("source-" + pid)}" aria-label="{esc(label)}: {esc(title)}">[{esc(label)}]</a>'
 
     def named_citation(pid):
         version = versions[passages[pid]['version_id']]
@@ -236,7 +241,7 @@ def render_report(data):
             history = render_version_history(v, data, versions, citation, findings, evidence, format_finding, attributions)
             history_seen.add(v['id'])
         else:
-            history = f'<a href="#version-history-{esc(v["id"])}">Sürüm geçmişi</a>'
+            history = f'<a href="#{fragment("version-history-" + v["id"])}">Sürüm geçmişi</a>'
         reasons = ' '.join(esc(x['reason']) for x in data.get('dossier_source', []) if x['version_id'] == v['id'])
         archive=f'<a href="../../{esc(v["readable_path"])}">Arşiv kopyası</a>'
         if view:=views.get(v['id']):
@@ -287,7 +292,7 @@ def render_report(data):
         pieces.append('<ul class="missing-list">')
         for (topic, status, reason), attempt_ids in groups.items():
             links = ' · '.join(
-                f'<a href="#attempt-{esc(aid)}">{time_tag(attempts[aid]["attempted_at"])}</a>'
+                f'<a href="#{fragment("attempt-" + aid)}">{time_tag(attempts[aid]["attempted_at"])}</a>'
                 for aid in dict.fromkeys(attempt_ids)
             )
             document_topic = (heading, topic) in (('Tüzük', 'pilot-tuzuk'), ('Program', 'pilot-program'))
@@ -325,7 +330,7 @@ def render_report(data):
         other = 'comparison-' if dossier else 'dossier-comparison-'
         label = 'Karşılaştırmaya git' if dossier else 'Parti dosyasına git'
         pieces.append(f'<article class="comparison-row" tabindex="-1" id="{own}{rid}"><h4>{esc(parties[row["party_id"]]["legal_name"])}</h4>'
-                      f'<a href="#{other}{rid}">{label}</a>')
+                      f'<a href="#{fragment(other + row["id"])}">{label}</a>')
         if row['state'] == 'evidence':
             pieces.append(f'<p class="metadata">{esc(row["level"].capitalize())} · {esc(row["organ"])}</p>')
             if row['alternative_group']:
@@ -340,7 +345,7 @@ def render_report(data):
         elif row['state'] == 'document_missing':
             m = next(m for m in data['missing'] if m['id'] == row['missing_id'])
             pieces.append(f'<p class="muted">{esc(m["status"])} · {esc(m["reason"])} '
-                          f'<a href="#attempt-{esc(m["attempt_id"])}">Araştırma kaydı</a></p>')
+                          f'<a href="#{fragment("attempt-" + m["attempt_id"])}">Araştırma kaydı</a></p>')
         elif row['state'] == 'no_explicit_statement':
             pieces.append('<p class="muted">İncelenen kapsamda açık ifade bulunmadı.</p>')
             scope = next(s for s in data['comparison_review_scope'] if s['id'] == row['scope_id'])
@@ -415,7 +420,7 @@ def render_report(data):
         if candidates:
             pieces.append('<details class="record"><summary>Eşleşme adayları</summary>')
             for c in candidates:
-                ref = f' <a href="#match-{esc(c["match_id"])}">Eşleşme</a>' if c['match_id'] else ''
+                ref = f' <a href="#{fragment("match-" + c["match_id"])}">Eşleşme</a>' if c['match_id'] else ''
                 pieces.append(f'<p id="candidate-ledger-{esc(c["id"])}" data-status="{esc(c["status"])}">'
                               f'{topic_name(c["topic_id"])} · {code_label(c["status"])} · {esc(c["rationale"])}{ref}</p>')
             pieces.append('</details>')
@@ -438,8 +443,8 @@ def render_report(data):
         if official:
             pieces.append(f'<p class="official-site">Resmî site: <a href="{web_url(official["value"])}">{esc(official["value"])}</a> '+ ' '.join(citation(e['passage_id']) for e in evidence[official['finding_id']])+'</p>')
         if True:
-            anchors = ''.join(f'<a href="#{panel}-{key}">{heading}</a>' for key, heading in HEADINGS)
-            sources_anchor = f'<a href="#{panel}-kaynaklar">Kaynaklar</a>'
+            anchors = ''.join(f'<a href="#{fragment("party-" + pid + "-" + key)}">{heading}</a>' for key, heading in HEADINGS)
+            sources_anchor = f'<a href="#{fragment("party-" + pid + "-kaynaklar")}">Kaynaklar</a>'
             pieces.append(f'<nav class="section-links" aria-label="Dosya başlıkları">{anchors}{sources_anchor}</nav>'
                           '<div class="reading-grid">')
             for key, heading in HEADINGS:
@@ -547,7 +552,7 @@ def render_report(data):
                     except (ValueError, TypeError):
                         decision = None
                     if isinstance(decision, dict) and decision.get('contract_version') == 2:
-                        sides = ' · '.join(f'<a href="#comparison-{esc(side["row_id"])}">{esc(parties[side["party_id"]]["legal_name"])}</a>' for side in decision['sides'])
+                        sides = ' · '.join(f'<a href="#{fragment("comparison-" + side["row_id"])}">{esc(parties[side["party_id"]]["legal_name"])}</a>' for side in decision['sides'])
                         pieces.append(f'<p class="metadata">İddianın dayanakları: {sides}</p>')
         for pid in PRESENTATION_ORDER:
             for row in data['comparison_row']:

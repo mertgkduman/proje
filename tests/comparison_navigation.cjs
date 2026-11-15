@@ -16,14 +16,15 @@ function assert(v,m){if(!v)throw Error(m)}
  if(cfg.direct){const s=await evaluate(`(()=>{const a=document.getElementById('comparison-'+${JSON.stringify(cfg.row)});return {width:innerWidth,exists:!!a,focused:!!a&&document.activeElement===a,visible:!!a&&a.checkVisibility()}})()`);assert(s.width===width&&s.exists&&s.focused&&s.visible,'direct hash: '+JSON.stringify(s));console.log(JSON.stringify({requested:url,actual:initial.url,...s}));return}
  const expression=`(async()=>{
  const cfg=${JSON.stringify(cfg)},checks=[],pause=()=>new Promise(r=>setTimeout(r,150));
+ const linkTo=(container,id)=>[...container.querySelectorAll('a[href^="#"]')].find(link=>{try{return decodeURIComponent(link.hash.slice(1))===id}catch{return false}});
  const a=document.getElementById('comparison-'+cfg.row);
  checks.push(!!a && document.activeElement===a && a.checkVisibility());
  checks.push(!!a.querySelector('.summary') && !!a.querySelector('.quote') && !!a.querySelector('.citation'));
  checks.push(getComputedStyle(a.querySelector('.quote')).color==='rgb(0, 0, 0)' && getComputedStyle(a.querySelector('.summary')).color==='rgb(0, 51, 102)');
- a.querySelector('a[href="#dossier-comparison-'+cfg.row+'"]').click();await pause();
+ linkTo(a,'dossier-comparison-'+cfg.row).click();await pause();
  const d=document.getElementById('dossier-comparison-'+cfg.row);
  checks.push(d.checkVisibility() && document.activeElement===d && d.closest('[role=tabpanel]').id==='party-iyi' && d.closest('section.card').id==='party-iyi-program');
- d.querySelector('a[href="#comparison-'+cfg.row+'"]').click();await pause();
+ linkTo(d,'comparison-'+cfg.row).click();await pause();
  checks.push(a.checkVisibility() && document.activeElement===a && a.closest('[role=tabpanel]').id==='comparison-summary');
  history.back();await pause();checks.push(document.activeElement===d && d.checkVisibility());
  history.forward();await pause();checks.push(document.activeElement===a && a.checkVisibility());
@@ -34,10 +35,10 @@ function assert(v,m){if(!v)throw Error(m)}
  history.forward();await pause();checks.push(document.activeElement===s && s.open && s.checkVisibility());
  history.back();await pause();cite.click();await pause();checks.push(document.documentElement.scrollWidth<=innerWidth);
  const old=document.activeElement;location.hash='#%ZZ';await pause();const malformedInert=document.activeElement===old;location.hash='#unknown-target';await pause();checks.push(malformedInert && document.activeElement===old);
- const proof=document.querySelector('a[href="#comparison-'+cfg.scope+'"]'),scopeRow=document.getElementById('comparison-'+cfg.scope);
+ const proof=linkTo(document,'comparison-'+cfg.scope),scopeRow=document.getElementById('comparison-'+cfg.scope);
  checks.push(!!proof && !!scopeRow && scopeRow.innerText.includes('İncelenen kapsam:'));
  document.getElementById('tab-comparison').click();proof.click();await pause();const scopeOk=document.activeElement===scopeRow && scopeRow.checkVisibility() && !!scopeRow.querySelector('a[href^="../../"]');
- scopeRow.querySelector('a[href="#dossier-comparison-'+cfg.scope+'"]').click();await pause();const ds=document.getElementById('dossier-comparison-'+cfg.scope);
+ linkTo(scopeRow,'dossier-comparison-'+cfg.scope).click();await pause();const ds=document.getElementById('dossier-comparison-'+cfg.scope);
  checks.push(scopeOk && document.activeElement===ds && ds.checkVisibility() && ds.closest('section.card').id==='party-iyi-tuzuk');
  const ids=[...document.querySelectorAll('[id]')].map(x=>x.id);checks.push(ids.length===new Set(ids).size);
  const tab=document.getElementById('tab-comparison'),event=new KeyboardEvent('keydown',{key:'ArrowUp',bubbles:true,cancelable:true});tab.dispatchEvent(event);checks.push(!event.defaultPrevented);
