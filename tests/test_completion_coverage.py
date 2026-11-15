@@ -1,5 +1,6 @@
 """Substantive closure must survive omissions in the selected source inventory."""
 import json
+import hashlib
 from pathlib import Path
 import unittest
 
@@ -116,6 +117,11 @@ class CompletionCoverageTest(unittest.TestCase):
         restored, restored_risk = arsiv.decode_completion_basis(head, cells)
         self.assertEqual(restored, basis)
         self.assertEqual(restored_risk, risk['expected_risk_universe'])
+        self.assertTrue(arsiv.validate_completion_basis_successor(basis, restored))
+        altered_cells = list(restored['cells'])
+        altered_cells[0] = dict(altered_cells[0], disposition='document_missing')
+        with self.assertRaisesRegex(ValueError, 'Önceki kaynak yükümlülüğü'):
+            arsiv.validate_completion_basis_successor(basis, dict(restored, cells=altered_cells))
         self.assertTrue(arsiv.validate_source_basis_universe(self.reviewed, restored))
         self.assertTrue(arsiv.validate_source_risk_review(self.reviewed, restored, restored_risk, risk['decisions']))
 
@@ -125,9 +131,11 @@ class CompletionCoverageTest(unittest.TestCase):
         risk = json.loads((root / '03-completion-risk-v2-source.json').read_text())
         head, cells = arsiv.completion_basis_records(basis, risk['expected_risk_universe'],
                                                      'test-basis', '2026-11-15T16:52:28Z')
+        anchor = arsiv.canonical_json(dict(release_id=self.reviewed['release_id'], marker_sha256=hashlib.sha256(
+            arsiv.canonical_json(self.reviewed['comparison_completion'][0]).encode()).hexdigest()))
         revision = dict(id='test-revision-1', version=2, epoch=1, parent_revision_id=None,
                         taxonomy_version=self.taxonomy, basis_id=head['id'], stage='complete',
-                        created_at='2026-11-15T16:52:28Z', legacy_anchor=None,
+                        created_at='2026-11-15T16:52:28Z', legacy_anchor=anchor,
                         selection=arsiv.canonical_json(arsiv.completion_selection(self.reviewed, self.taxonomy)),
                         review=arsiv.canonical_json({'decisions': risk['decisions']}), reason='test fixture')
         data = dict(self.reviewed, comparison_completion_basis=[head], comparison_coverage_disposition=cells,

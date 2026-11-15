@@ -956,6 +956,28 @@ def completion_selection(data, taxonomy_version):
                 inventory=[i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == taxonomy_version])
 
 
+def validate_completion_basis_successor(old, new):
+    """An appended basis may extend, but must retain, earlier obligations."""
+    for name, identity in (('topics', lambda x: x['topic_id']),
+                           ('cells', lambda x: x['id']),
+                           ('synthesis_obligations', lambda x: x['id'])):
+        latest = {identity(x): x for x in new[name]}
+        if any(latest.get(identity(item)) != item for item in old[name]):
+            raise ValueError('Önceki kaynak yükümlülüğü değiştirilemez: ' + name)
+    for key, value in old['source_assertions'].items():
+        if new['source_assertions'].get(key) != value:
+            raise ValueError('Önceki kaynak dayanağı değiştirilemez')
+    latest_inventory = {canonical_json(item) for item in new['inventory_sections']}
+    if any(canonical_json(item) not in latest_inventory for item in old['inventory_sections']):
+        raise ValueError('Önceki kaynak envanteri değiştirilemez')
+    pairs = {(x['topic_id'], x['party_id']): x for x in new['universe']}
+    for item in old['universe']:
+        successor = pairs.get((item['topic_id'], item['party_id']))
+        if not successor or not set(item['cell_ids']) <= set(successor['cell_ids']):
+            raise ValueError('Önceki parti-konu kapsamı değiştirilemez')
+    return True
+
+
 def validate_completion_revisions(data):
     """Check immutable revision selections; the last epoch is the active one."""
     revisions = sorted(data.get('comparison_completion_revision', []), key=lambda r: r['epoch'])
@@ -964,7 +986,7 @@ def validate_completion_revisions(data):
     if not revisions or len(bases) != len(data.get('comparison_completion_basis', [])):
         raise ValueError('Kaynak kapanışı revizyonu eksik')
     validate_legacy_completion_projection(data)
-    previous = None
+    previous = previous_source = previous_risk = None
     spec = {'topics': ('comparison_topic', lambda x: (x['topic_id'], x['taxonomy_version'])),
             'rows': ('comparison_row', lambda x: x['id']),
             'fields': ('comparison_field', lambda x: x['id']),
@@ -977,12 +999,25 @@ def validate_completion_revisions(data):
             stamp = dt.datetime.fromisoformat(revision['created_at'].replace('Z', '+00:00'))
             if stamp.tzinfo is None:
                 raise ValueError('Zaman dilimi gerekli')
+            if data.get('comparison_completion'):
+                anchor = json.loads(revision['legacy_anchor'])
+                anchor_markers = [m for m in data['comparison_completion']
+                                  if hashlib.sha256(canonical_json(m).encode()).hexdigest() == anchor.get('marker_sha256')]
+                if not anchor.get('release_id') or len(anchor_markers) != 1 or (previous and revision['legacy_anchor'] != previous['legacy_anchor']):
+                    raise ValueError('Önceki kaynak kapanışı çapası uyuşmuyor')
             selection = json.loads(revision['selection'])
             review = json.loads(revision['review'])
             head = bases[revision['basis_id']]
             if head['version'] != 2 or head['taxonomy_version'] != revision['taxonomy_version']:
                 raise ValueError('Sözlük uyuşmuyor')
             source, risk = decode_completion_basis(head, [d for d in dispositions if d['basis_id'] == head['id']])
+            if previous_source is not None and revision['basis_id'] != previous['basis_id']:
+                if head['parent_basis_id'] != previous['basis_id']:
+                    raise ValueError('Kaynak sözlüğü soy zinciri geçersiz')
+                validate_completion_basis_successor(previous_source, source)
+                risks = {r['id']: r for r in risk}
+                if any(risks.get(r['id']) != r for r in previous_risk):
+                    raise ValueError('Önceki kaynak riski değiştirilemez')
             projection = dict(data)
             for name, (table, identity) in spec.items():
                 selected = selection[name]
@@ -996,6 +1031,7 @@ def validate_completion_revisions(data):
         except (KeyError, TypeError, ValueError) as exc:
             raise ValueError('Kaynak kapanışı revizyon kanıtı geçersiz: ' + str(exc)) from exc
         previous = revision
+        previous_source, previous_risk = source, risk
     active = revisions[-1]
     contract = data['comparison_contract'][0]
     if (active['taxonomy_version'], active['stage']) != (contract['taxonomy_version'], contract['stage']):
