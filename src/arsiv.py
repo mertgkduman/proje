@@ -2302,8 +2302,13 @@ def export_db(path, release_id, strict_identity=False):
         if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
         if existing.intersection(DOSSIER_TABLES) and not set(DOSSIER_TABLES).issubset(existing): raise ValueError('Eksik dosya şeması')
+        v2_order = {'comparison_completion_basis': 'id',
+                    'comparison_coverage_disposition': 'basis_id,cell_id',
+                    'comparison_completion_revision': 'epoch',
+                    'comparison_completion_supersession': 'revision_id,old_cell_id,new_cell_id'}
         for name in names:
-            result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY rowid')]
+            order = v2_order.get(name, 'rowid')
+            result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY {order}')]
         validated_policy = validate_policy(db,result)
         for view in result.get('archive_view',[]):
             validate_view(DATA,view)
