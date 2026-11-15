@@ -81,6 +81,20 @@ class CompletionCoverageTest(unittest.TestCase):
             with self.subTest(removed=set(self.reviewed) - set(candidate)), self.assertRaisesRegex(ValueError, 'Kaynak (yükümlülüğü|evreni)'):
                 arsiv.validate_source_basis_universe(candidate, basis)
 
+    def test_risk_coverage_requires_linked_field_and_synthesis_decisions(self):
+        root = Path(__file__).resolve().parents[1] / 'data/comparisons'
+        basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())
+        risk = json.loads((root / '03-completion-risk-v2-source.json').read_text())
+        universe, decisions = risk['expected_risk_universe'], risk['decisions']
+        self.assertTrue(arsiv.validate_source_risk_review(self.reviewed, basis, universe, decisions))
+        stripped = [d for d in decisions if d['kind'] not in ('field_support', 'synthesis_support')]
+        with self.assertRaisesRegex(ValueError, 'Kaynak anlamı riski'):
+            arsiv.validate_source_risk_review(self.reviewed, basis, universe, stripped)
+        principle = next(d for d in decisions if d['id'] == 'SR25:field:tip-kapitalizm-principle')
+        tampered = [dict(d, summary_passage_ids=['not-a-real-passage']) if d is principle else d for d in decisions]
+        with self.assertRaisesRegex(ValueError, 'field:principle'):
+            arsiv.validate_source_risk_review(self.reviewed, basis, universe, tampered)
+
     def test_reviewed_finding_provenance_is_required(self):
         data = dict(self.reviewed)
         data['comparison_semantic_review'] = [r for r in data['comparison_semantic_review']

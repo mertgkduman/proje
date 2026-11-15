@@ -764,6 +764,92 @@ def validate_source_basis_universe(data, basis):
     return True
 
 
+def validate_source_risk_review(data, basis, risk_universe, decisions):
+    """Require a linked substantive witness for each authored applicable risk."""
+    by_id = {d['id']: d for d in decisions}
+    if len(by_id) != len(decisions):
+        raise ValueError('Kaynak anlamı risk kararları yinelenmiş')
+    cells = {c['id']: c for c in basis['cells']}
+    rows = {r['id']: r for r in data['comparison_row']}
+    fields = {f['id']: f for f in data['comparison_field']}
+    syntheses = {s['id']: s for s in data['comparison_synthesis']}
+    reviews = {r['subject_id']: r for r in data['comparison_semantic_review']
+               if r['subject_kind'] == 'comparison_synthesis' and r['reviewer_kind'] == 'agent'}
+    passages = {p['id']: p for p in data['passage']}
+    versions = {v['id']: v for v in data['document_version']}
+    changes = {c['id']: c for c in data['comparison_change']}
+    missing = {m['id']: m for m in data['missing']}
+    attempts = {a['id']: a for a in data['attempt']}
+    evidence = {}
+    for item in data['finding_evidence']:
+        evidence.setdefault(item['finding_id'], set()).add(item['passage_id'])
+
+    def witnessed(decision, constraints):
+        kind = decision.get('kind')
+        if kind not in constraints['allowed_decision_kinds'] or decision.get('reviewer_kind') != 'agent' or not all(decision.get(k) for k in ('judgment', 'recorded_at', 'reading_origin')):
+            return False
+        cell = cells.get(decision.get('cell_id'))
+        if kind in ('field_support', 'scope_or_document_gap', 'change_support') and constraints['source_cell_ids'] and (not cell or cell['id'] not in constraints['source_cell_ids']):
+            return False
+        if kind in ('field_support', 'scope_or_document_gap', 'change_support'):
+            row = rows.get(decision.get('row_id'))
+            if not cell or not row or row['id'] != (cell['mapping_records'][-1]['new_row_id'] if cell['mapping_records'] else cell['logical_key']['context_judgment']):
+                return False
+            if not decision.get('source_reading'):
+                return False
+        if kind == 'field_support':
+            field = fields.get(decision.get('field_id'))
+            if not field or field['row_id'] != row['id'] or any(field.get(k) != decision.get(k) for k in ('field', 'condition_key', 'summary_finding_id', 'quote_finding_id')):
+                return False
+            if any(row.get(k) != decision.get(k) for k in ('party_id', 'version_id', 'source_role')):
+                return False
+            if not set(decision.get('basis_ids', [])) & set(cell['basis_ids']) & set(constraints['source_assertion_ids']):
+                return False
+            for side in ('summary', 'quote'):
+                ids = decision.get(side + '_passage_ids', [])
+                if not ids or not set(ids) <= evidence.get(decision[side + '_finding_id'], set()) or any(pid not in passages or passages[pid]['version_id'] != row['version_id'] for pid in ids):
+                    return False
+            return bool(decision.get('original_field_review') or
+                        (decision['reading_origin'] == 'new_bounded_original_html_reading' and
+                         decision.get('source_sha256') == versions[row['version_id']]['sha256'] and decision.get('limit')))
+        if kind == 'scope_or_document_gap':
+            return (row.get('scope_id') == decision.get('scope_id') and row.get('missing_id') == decision.get('missing_id') and
+                    bool(set(decision.get('basis_ids', [])) & set(cell['basis_ids']) & set(constraints['source_assertion_ids'])))
+        if kind == 'change_support':
+            change = changes.get(decision.get('change_id'))
+            before, after = passages.get(decision.get('before_passage_id')), passages.get(decision.get('after_passage_id'))
+            return bool(change and before and after and change['row_id'] == row['id'] and
+                        change['before_passage_id'] == before['id'] and change['after_passage_id'] == after['id'] and
+                        before['version_id'] != after['version_id'] and change['order_basis'] == decision.get('order_basis'))
+        if kind == 'synthesis_support':
+            sid = decision.get('synthesis_id')
+            if sid not in constraints['synthesis_ids'] or sid not in syntheses or reviews.get(sid) != decision.get('original_semantic_review'):
+                return False
+            try:
+                authored = json.loads(reviews[sid]['reason'])
+                if any(authored.get(k) != decision.get(k) for k in ('claim_type', 'sides', 'explanation')):
+                    return False
+                return validate_synthesis_v2(data, syntheses[sid])
+            except (KeyError, TypeError, ValueError):
+                return False
+        if kind == 'physical_page_gap':
+            m, a = missing.get(decision.get('missing_id')), attempts.get(decision.get('attempt_id'))
+            return bool(m and a and m['attempt_id'] == a['id'] and decision.get('version_id') in versions and decision.get('source_reading'))
+        if kind == 'same_hash_copy':
+            copies = decision.get('versions', [])
+            return len(copies) >= 2 and all(versions.get(v.get('id')) == v for v in copies) and len({v['sha256'] for v in copies}) == 1
+        return False
+
+    for risk in risk_universe:
+        if not risk.get('required'):
+            continue
+        if not risk.get('selection_rationale') or not any(
+                ident in by_id and witnessed(by_id[ident], risk['witness_constraints'])
+                for ident in risk.get('witness_decision_ids', [])):
+            raise ValueError('Kaynak anlamı riski için maddi inceleme eksik: ' + str(risk.get('id')))
+    return True
+
+
 def validate_completion(data):
     """Validate an explicitly adopted, snapshot-bound source closure contract.
 
