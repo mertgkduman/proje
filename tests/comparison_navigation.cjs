@@ -3,6 +3,7 @@ const fs=require('node:fs'),os=require('node:os'),path=require('node:path'),{spa
 const [bin,url,widthArg,configArg]=process.argv.slice(2),width=Number(widthArg),cfg=JSON.parse(configArg);
 const profile=fs.mkdtempSync(path.join(os.tmpdir(),'proje-nav-'));
 const chrome=spawn(bin,['--headless','--no-sandbox','--disable-gpu','--remote-debugging-pipe','--user-data-dir='+profile],{stdio:['ignore','ignore','pipe','pipe','pipe']});
+const chromeExit=new Promise(resolve=>chrome.once('exit',resolve));
 let next=0,buffer='',session;const pending=new Map();
 chrome.stdio[4].on('data',chunk=>{buffer+=chunk.toString();let end;while((end=buffer.indexOf('\0'))>=0){const line=buffer.slice(0,end);buffer=buffer.slice(end+1);if(!line)continue;const msg=JSON.parse(line);if(pending.has(msg.id)){const [ok,no]=pending.get(msg.id);pending.delete(msg.id);msg.error?no(Error(JSON.stringify(msg.error))):ok(msg.result)}}});
 function send(method,params={},sid=session){const id=++next;return new Promise((ok,no)=>{pending.set(id,[ok,no]);chrome.stdio[3].write(JSON.stringify({id,method,params,...(sid?{sessionId:sid}:{})})+'\0')})}
@@ -53,5 +54,13 @@ function assert(v,m){if(!v)throw Error(m)}
  const archive=await load(expectedArchive);const content=await evaluate(`({url:location.href,title:document.title,text:document.body.innerText.replace(/\\s+/g,' ').includes(${JSON.stringify(cfg.excerpt)})})`);
  assert(content.url===expectedArchive&&content.text&&content.title,'archive content mismatch: '+JSON.stringify(content));
  console.log(JSON.stringify({requested:url,actual:initial.url,...state,archiveRequested:expectedArchive,archiveActual:content.url,archiveTitle:content.title,archiveExcerptFound:content.text}));
-})().catch(e=>{console.error(e.stack);process.exitCode=1}).finally(async()=>{try{await send('Browser.close',{},null)}catch{}chrome.kill();fs.rmSync(profile,{recursive:true,force:true})});
+})().catch(e=>{console.error(e.stack);process.exitCode=1}).finally(async()=>{
+ try{await send('Browser.close',{},null)}catch{}
+ const waitForExit=ms=>new Promise(resolve=>{const timer=setTimeout(()=>resolve(false),ms);chromeExit.then(()=>{clearTimeout(timer);resolve(true)})});
+ if(!await waitForExit(5000)){
+  chrome.kill('SIGKILL');
+  if(!await waitForExit(5000))throw Error('browser did not exit');
+ }
+ fs.rmSync(profile,{recursive:true,force:true,maxRetries:8,retryDelay:100});
+});
 setTimeout(()=>{console.error('browser probe timeout');chrome.kill();process.exit(1)},150000).unref();
