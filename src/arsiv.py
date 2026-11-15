@@ -659,6 +659,55 @@ def validate_synthesis_v2(data, synthesis):
     return True
 
 
+def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
+    """Match authored source contexts to selected records, including their evidence.
+
+    This checks individual cells only. The revision contract must additionally
+    establish the completeness and immutability of the independent universe.
+    """
+    rows = {r['id']: r for r in data['comparison_row'] if r['taxonomy_version'] == taxonomy_version}
+    scopes = {s['id']: s for s in data.get('comparison_review_scope', [])}
+    fields = {}
+    for field in data.get('comparison_field', []):
+        fields.setdefault(field['row_id'], []).append(field)
+    evidence = {}
+    for item in data.get('finding_evidence', []):
+        evidence.setdefault(item['finding_id'], set()).add(item['passage_id'])
+    missing = {m['id']: m for m in data.get('missing', [])}
+    attempts = {a['id']: a for a in data.get('attempt', [])}
+    dimensions = ('topic_id', 'party_id', 'source_role', 'version_id', 'level', 'organ')
+    for cell in cells:
+        key = cell['logical_key']
+        ident = key['context_judgment']
+        for mapping in cell['mapping_records']:
+            if mapping.get('old_row_id') != ident or not mapping.get('new_row_id') or not mapping.get('reason'):
+                raise ValueError('Kaynak yükümlülüğü eşleme zinciri geçersiz')
+            ident = mapping['new_row_id']
+        row = rows.get(ident)
+        if not row or any(row.get(k) != key.get(k) for k in dimensions) or row.get('state') != cell['disposition']:
+            raise ValueError('Kaynak yükümlülüğü satır, düzey veya organ eksik')
+        for bid in cell['basis_ids']:
+            assertion = assertions.get(bid)
+            if not isinstance(assertion, dict):
+                raise ValueError('Kaynak yükümlülüğü dayanağı eksik')
+            kind = assertion.get('kind')
+            if kind == 'dated_source_scope':
+                scope = assertion.get('scope') or {}
+                if row.get('scope_id') != scope.get('id') or scopes.get(scope.get('id')) != scope:
+                    raise ValueError('Kaynak yükümlülüğü araştırma kapsamı değişmiş')
+            elif kind == 'documentary_gap':
+                item, attempt = assertion.get('missing') or {}, assertion.get('attempt') or {}
+                if row.get('missing_id') != item.get('id') or missing.get(item.get('id')) != item or attempts.get(attempt.get('id')) != attempt or item.get('attempt_id') != attempt.get('id'):
+                    raise ValueError('Kaynak yükümlülüğü belge araması değişmiş')
+            elif kind == 'supported_field':
+                matches = [f for f in fields.get(ident, []) if all(f.get(k) == assertion.get(k) for k in ('field', 'condition_key', 'summary_finding_id', 'quote_finding_id'))]
+                if not matches or not set(assertion.get('passage_ids', [])) <= (evidence.get(assertion.get('summary_finding_id'), set()) | evidence.get(assertion.get('quote_finding_id'), set())):
+                    raise ValueError('Kaynak yükümlülüğü alanı veya pasajı eksik')
+            else:
+                raise ValueError('Kaynak yükümlülüğü dayanak türü geçersiz')
+    return True
+
+
 def validate_completion(data):
     """Validate an explicitly adopted, snapshot-bound source closure contract.
 

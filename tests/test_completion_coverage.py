@@ -6,6 +6,36 @@ import arsiv
 import test_comparisons
 
 
+class SourceBasisCellTest(unittest.TestCase):
+    def test_source_scope_requires_its_mapped_topic_and_organ(self):
+        scope = dict(id='0304-tip-charter-scope-aday-tanitim-html-scope', party_id='tip',
+                     version_id='0203-tip-charter-v1', sections='HTML tüzük Bölüm 1–7, Madde 1.1–7.2',
+                     query_terms='Kamu adayı tanıtımı', reviewed_at='2026-11-13T13:55:32.558426+00:00',
+                     result='no_explicit_statement',
+                     reason='HTML tüzüğün tüm bölümleri ve ilgili hükümleri incelendi. Aday belirleme yetkisi PMye verilir; incelenen sürümde kamu seçimi aday adaylarının tanıtımına ilişkin ayrı usul açıklanmaz.')
+        old = '0304-tip-charter-scope-aday-tanitim-html-row'
+        new = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
+        key = dict(topic_id='aday-tanitimi', party_id='tip', source_role='charter',
+                   version_id='0203-tip-charter-v1', level='ulusal ve yerel',
+                   organ='Kamu adayı tanıtımı', context_judgment=old)
+        cell = dict(id='cell-test', logical_key=key, disposition='no_explicit_statement',
+                    source_judgment_record=dict(id=old, scope_id=scope['id'], state=scope['result']),
+                    mapping_records=[dict(old_row_id=old, new_row_id='intermediate', reason='authored mapping'),
+                                     dict(old_row_id='intermediate', new_row_id=new, reason='authored mapping')],
+                    basis_ids=['scope-basis'], field_dispositions=[])
+        assertion = {'scope-basis': dict(kind='dated_source_scope', scope=scope)}
+        row = dict(id=new, taxonomy_version=4, state='no_explicit_statement', scope_id=scope['id'],
+                   **{k: v for k, v in key.items() if k != 'context_judgment'})
+        data = dict(comparison_row=[row], comparison_review_scope=[scope], comparison_field=[],
+                    finding_evidence=[], missing=[], attempt=[])
+        self.assertTrue(arsiv.validate_source_basis_cells(data, 4, [cell], assertion))
+        for candidate in (dict(data, comparison_row=[]),
+                          dict(data, comparison_row=[dict(row, organ='başka organ')]),
+                          dict(data, comparison_review_scope=[dict(scope, reason='değiştirilmiş')])):
+            with self.subTest(candidate=candidate), self.assertRaisesRegex(ValueError, 'Kaynak yükümlülüğü'):
+                arsiv.validate_source_basis_cells(candidate, 4, [cell], assertion)
+
+
 class CompletionCoverageTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
