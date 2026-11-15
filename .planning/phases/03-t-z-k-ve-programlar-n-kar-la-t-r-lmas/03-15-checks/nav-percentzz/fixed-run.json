@@ -1,0 +1,12 @@
+{
+  "pid": 1101881,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "started_utc": "2026-11-15T11:54:43.944244+00:00",
+  "command": [
+    "/hpc/home/mg551/miniconda3/bin/python3",
+    "tests/run.py",
+    "--pattern",
+    "test_comparison_navigation.py"
+  ],
+  "inputs": "fixed-inputs.sha256"
+}

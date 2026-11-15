@@ -1,0 +1,653 @@
+{
+  "release": "27033583248b4951b3fe8e5fd6d77b9f",
+  "data_base": "b513965558094e338a941be90a1960a4",
+  "started_utc": "2026-11-15T10:32:09.303520+00:00",
+  "git_head": "46d05d7ba6953e7802e4cd8b939a79633f9943a8",
+  "run_token": "1da31ab9dd714d1db1c1f30ed4c1cb44",
+  "static_checks": "passed",
+  "selected_counts": {
+    "comparison_topic": 305,
+    "comparison_row": 4935,
+    "comparison_synthesis": 854
+  },
+  "source_records_identical_to_base": true,
+  "sqlite_identical_to_base": true,
+  "phase2_delivery_unchanged": true,
+  "original_versions_checked": [
+    {
+      "version_id": "registry-365-v1",
+      "sha256": "404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f"
+    },
+    {
+      "version_id": "tbmm-scope-v1",
+      "sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a"
+    },
+    {
+      "version_id": "tbmm-list-v1",
+      "sha256": "b08cb4721e9d989eaf0e888933c5cfec923d4cdfb7a43bf596dc804d500f32cc"
+    },
+    {
+      "version_id": "aa-2023-v1",
+      "sha256": "35b61d5656aa2d1c60c2eb859358a2426ec274ab26e42b3e559a772aa68c6f4c"
+    },
+    {
+      "version_id": "tbmm-member-v1",
+      "sha256": "33c47ab35501318b98c56f9a39a5445356e9cd7d2c1af00b81a721ce7919cd1c"
+    },
+    {
+      "version_id": "tbmm-history-v1",
+      "sha256": "09bfd003dc9924fe19f21132d14e83a9a6bb2e04da78bbec3e9db5c150b93783"
+    },
+    {
+      "version_id": "ysk-2023-v1",
+      "sha256": "8192d9d796b57b7d478baf7f74cf47f94265ad2d89d8c195a3df76442ce201f2"
+    },
+    {
+      "version_id": "domain-orgtr-v1",
+      "sha256": "55ee5f6ec49d81e2aa9b7f7b5f104e76abacbef293bdde7e8062d9753fc32560"
+    },
+    {
+      "version_id": "0104-tuzuk-copy-v1",
+      "sha256": "b3709f52e07f6d65797d021f571c2b97eca5ac02771a633fe55aafec4130518e"
+    },
+    {
+      "version_id": "0104-program-copy-v1",
+      "sha256": "58fa220ab814bd82a4c8d0d233bf55ab268eb9f856750cd88abc544e17ceba1b"
+    },
+    {
+      "version_id": "tip-tbmm-report-v1",
+      "sha256": "467bbd88a6f97cee9c144e610f0eb3e2dd958dc59f8844b19e95652f6c5bc274"
+    },
+    {
+      "version_id": "tip-registry-v1",
+      "sha256": "192135ea601a61fc6acdf6c239c627fc366d79c77d53f6d3d15a352cd2da0ab1"
+    },
+    {
+      "version_id": "tip-charter-v1",
+      "sha256": "bc3b2009176dd82be5885f38a117c886fa01426ff2f84e82d6f26176c54041b2"
+    },
+    {
+      "version_id": "0104-tuzuk-pdf-v1",
+      "sha256": "b90474ccaee06fd969319cdfccafc645a949f7bf8f2a7020efa1f305969f7cbc"
+    },
+    {
+      "version_id": "0104-program-pdf-v1",
+      "sha256": "925db53771f368cb01f44e4fa0aff99ebbe4182e34f4d94a07a89853daf98061"
+    },
+    {
+      "version_id": "0105-speech-v1",
+      "sha256": "f5835650645352957fe402920529476d9f763868ba1cbd176ca46f85da638389"
+    },
+    {
+      "version_id": "0105-national-v1",
+      "sha256": "827f5beda67cd8e8924c48e8fa0d418406c7bf4054634a5a4f002ba68351771e"
+    },
+    {
+      "version_id": "0105-provinces-v1",
+      "sha256": "8306f1e6b9011a272de39751ac476a73d22843622c0938a8c8008a4c496244d4"
+    },
+    {
+      "version_id": "0105-izmir-v1",
+      "sha256": "c89ca21c955348b329d2b3c14efcef172ef019f434f96a1664d64b5f8fafb6ce"
+    },
+    {
+      "version_id": "0105-cesme-v1",
+      "sha256": "68df17792083dfbc02c435dbd1235222c1b8434c4dc54a364d02062fa76a3c83"
+    },
+    {
+      "version_id": "0105-balikesir-v1",
+      "sha256": "3db68172149f060663768fa386f7c435513a93ee085f699f9e08e43722256e54"
+    },
+    {
+      "version_id": "0105-aegean-v1",
+      "sha256": "2f43c89c95f62f3786b7ad1debde018337ba48e0049c7b24b572791cadbc6e3d"
+    },
+    {
+      "version_id": "0105-calendar-v1",
+      "sha256": "128d831659adbd02dcf3c07830f4645bbc066f959d3a4f0a33c4f16b05938c0c"
+    },
+    {
+      "version_id": "0105-national-plan-v1",
+      "sha256": "8db9860fa64c3dc14ecd05f248b15f67d56a96bab1a3863b186fa56e3f2c5101"
+    },
+    {
+      "version_id": "0105-tbmm-group-v1",
+      "sha256": "8386be95014cfb3ad887fcaa0bfa8fc3726e77bd5ad67274054e4b3f5b9fae05"
+    },
+    {
+      "version_id": "0105-follow-kritik-v1",
+      "sha256": "9ebe3889033e04db324584843b6f7c88418c5706c78d77e87202752268dfdb08"
+    },
+    {
+      "version_id": "0105-follow-samsun-v1",
+      "sha256": "1f830250b1b49f14e48555d3116c4ad148bd247af53b68a88ba9edc6a4a53c8c"
+    },
+    {
+      "version_id": "0105-follow-istanbul-v1",
+      "sha256": "79294474cb8e78a32ddfaf39c0bb31bc1b05b462f9237269490f0f3771c93b69"
+    },
+    {
+      "version_id": "0105-follow-yonetmelik-v1",
+      "sha256": "0b72ed19320904e2a23da5b65c7ee5282fddb3933ed37bc3db0d926f064e279e"
+    },
+    {
+      "version_id": "0105-search2-edirne-v1",
+      "sha256": "aff4151fb8ff61ab38c2a7708f04840938bdb349fd582f8b1bc5c2fb37bf6f9a"
+    },
+    {
+      "version_id": "0105-search2-eskisehir-v1",
+      "sha256": "f396a7938302170f4b805e23c90225e7b3c35ef784f54539acc79292c3b23fc2"
+    },
+    {
+      "version_id": "0105-search2-unye-v1",
+      "sha256": "fe6867e9840a50cd96d7cfd27616f88311a35de1cc42f7a77f904878a87667c1"
+    },
+    {
+      "version_id": "0105-search2-manisa-plan-v1",
+      "sha256": "76db514d4d6050df93571b0a576aa5bf01b73f6d3a9109a58ed2eb696726e7d4"
+    },
+    {
+      "version_id": "0105-search2-denizli-plan-v1",
+      "sha256": "3bac7cd1cfe2e9445ca4ca9de2bc8d9efa89aeffdbb19884dc601b704f8205b6"
+    },
+    {
+      "version_id": "0105-search2-manisa-older-v1",
+      "sha256": "46e7d3106b1750f451328e82f2d77293dff3ff092d915ce29bfca66a39384650"
+    },
+    {
+      "version_id": "0105-search2-denizli-older-v1",
+      "sha256": "60fa303fc8cad80c5f9e8a9dfa2e2b0edb6570c21a533af3fb68fed602d11238"
+    },
+    {
+      "version_id": "0105-search2-karaman-v1",
+      "sha256": "4e22bd7f2801c5fbfa07d334479a3741291e25bbab795525ca5a4dab6fcb1a8e"
+    },
+    {
+      "version_id": "finance-kocaeli-version",
+      "sha256": "9427a61c0e389bb38a4611e1fcc9dd1d73d2bb062273b5053d18689c58089108"
+    },
+    {
+      "version_id": "epm-charter-v1",
+      "sha256": "b3709f52e07f6d65797d021f571c2b97eca5ac02771a633fe55aafec4130518e"
+    },
+    {
+      "version_id": "epm-program-v1",
+      "sha256": "58fa220ab814bd82a4c8d0d233bf55ab268eb9f856750cd88abc544e17ceba1b"
+    },
+    {
+      "version_id": "epm-registry-v1",
+      "sha256": "404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f"
+    },
+    {
+      "version_id": "epm-national-v1",
+      "sha256": "827f5beda67cd8e8924c48e8fa0d418406c7bf4054634a5a4f002ba68351771e"
+    },
+    {
+      "version_id": "epm-provinces-v1",
+      "sha256": "8306f1e6b9011a272de39751ac476a73d22843622c0938a8c8008a4c496244d4"
+    },
+    {
+      "version_id": "epm-finance-v1",
+      "sha256": "9427a61c0e389bb38a4611e1fcc9dd1d73d2bb062273b5053d18689c58089108"
+    },
+    {
+      "version_id": "epm-national-author-v2",
+      "sha256": "827f5beda67cd8e8924c48e8fa0d418406c7bf4054634a5a4f002ba68351771e"
+    },
+    {
+      "version_id": "epm-provinces-author-v2",
+      "sha256": "8306f1e6b9011a272de39751ac476a73d22843622c0938a8c8008a4c496244d4"
+    },
+    {
+      "version_id": "epm-finance-author-v2",
+      "sha256": "9427a61c0e389bb38a4611e1fcc9dd1d73d2bb062273b5053d18689c58089108"
+    },
+    {
+      "version_id": "0203-tip-charter-v1",
+      "sha256": "3618e6ebefa371e469d2d34b4c92cacf479ed8bff6da34cdc21bd1dab2a4b28c"
+    },
+    {
+      "version_id": "0203-tip-program-v1",
+      "sha256": "6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0"
+    },
+    {
+      "version_id": "0203-tip-history-v1",
+      "sha256": "e29e62822a826b133d09c1afe4d6a7449156e4f427e6a661f9ab7f91c2968147"
+    },
+    {
+      "version_id": "0203-tip-chair-v1",
+      "sha256": "edd3c5f662889a172f393478ede78c4b0082ca9d01330656a999122e98a8a3d2"
+    },
+    {
+      "version_id": "0203-tip-charter2022-v1",
+      "sha256": "e86237895eda1cec2e66ac388ce7b9cd7096e86dfc9f1cccdd93ab1a298e4a60"
+    },
+    {
+      "version_id": "0203-tip-cark2018-v1",
+      "sha256": "4b09653a46a18494d8597f1d53ac6297d5294eb6345d78d77fd9615de453692e"
+    },
+    {
+      "version_id": "0204-dem-name-v1",
+      "sha256": "9c1018bb20395bade3c8f39d163e3760be81e1fbe502e56d6198d5cf224f13af"
+    },
+    {
+      "version_id": "0204-dem-name-objection-v1",
+      "sha256": "81a1774b53664bab75963d2441f3c8aae01ab7f2124940d39c31ad142ebbc39e"
+    },
+    {
+      "version_id": "0204-dem-registry-v1",
+      "sha256": "708e35326d13de69ddc18713acb9129812a5ceed9969809b5090995c06d1a342"
+    },
+    {
+      "version_id": "0204-dem-hdp-registry-v1",
+      "sha256": "6505d63474570e4dfe8ed73d685f8e067c9e57adecb1f7c8e6d6b1fac0703fa7"
+    },
+    {
+      "version_id": "0204-dem-court-v1",
+      "sha256": "a90958d9f4798c15abef2eca1af7fc397f3ee63376e0856f73338a84bd368f41"
+    },
+    {
+      "version_id": "0204-dem-charter-page-v1",
+      "sha256": "08aae82e6b443556bdefa46bdb5160d5ea6e2cb1ea3837964b0d6743c74db675"
+    },
+    {
+      "version_id": "0204-dem-charter-v1",
+      "sha256": "97f552324d044a6a0ec4ad9d1dd99ac66ba50540a3ad397ebefaa3fbd7e1a471"
+    },
+    {
+      "version_id": "0204-dem-charter-older-v1",
+      "sha256": "7c54e58c28d9e0bfadc72a5be640169a15137dc8aca8c93b4c1b6a1fc16470c4"
+    },
+    {
+      "version_id": "0204-dem-founding-v1",
+      "sha256": "d94b38d8a528af9f361632af036b184e43ad46af964390b864e47827fe6c358a"
+    },
+    {
+      "version_id": "0204-dem-founding-detail-v1",
+      "sha256": "a0842f364340c1f38194a5e12851109de332a42b8a0d3ca20c47dfdda9b97f8e"
+    },
+    {
+      "version_id": "0204-dem-first-congress-v1",
+      "sha256": "426ad63dc7ce29b736124682f103f3ce0c64195a599bb3dc45284c778501309d"
+    },
+    {
+      "version_id": "0204-dem-congress2016-v1",
+      "sha256": "ac096f2c5bb3778088f3a965088b69b76ceaba81aabab368a40b8d89de61539a"
+    },
+    {
+      "version_id": "0204-dem-congress2023-v1",
+      "sha256": "d3f874bb5bf4f04788d89fd2303bd068adf9622ea278cdac8bb012605694663f"
+    },
+    {
+      "version_id": "0204-dem-policies-v1",
+      "sha256": "0ba81cd43ab9b5455db4a77ca66fc4bdf08df72a3dcb4fd40405ab977cc8ec45"
+    },
+    {
+      "version_id": "0204-dem-chairs-v1",
+      "sha256": "5a181dd6a793ec44845d866faf3a5abd3f063beb043ab24d858e058888fab175"
+    },
+    {
+      "version_id": "0204-dem-program-search-v1",
+      "sha256": "2765ce6431323c659822fef53dbbebc7b4afd03bcfc902ff2319a24959273c5f"
+    },
+    {
+      "version_id": "0205-iyi-party-v1",
+      "sha256": "809fbea817cf1af73537601f5b477f6178dbc8431a07cf7a4b631177a3e31e23"
+    },
+    {
+      "version_id": "0205-iyi-program-page-v1",
+      "sha256": "7165cd05b2643134a6a8fc4910f312915c59c52a31561ec6f657d89f2a493f9a"
+    },
+    {
+      "version_id": "0205-iyi-registry-v1",
+      "sha256": "f3402beccd3b5848f146d4272504dc82c758318fbdb0544e877937041e814f71"
+    },
+    {
+      "version_id": "0205-iyi-registry-initial-v1",
+      "sha256": "c34c2bc45cd79d8a462e982105b7906190f93d3c25472ab3bdedfe651d666bba"
+    },
+    {
+      "version_id": "0205-iyi-party-initial-v1",
+      "sha256": "2341bedd6ffaa8aed9ee7ce6f1daf30c99b8dfe999e05f81be54a90f90ed9e87"
+    },
+    {
+      "version_id": "0205-iyi-charter-istanbul-v1",
+      "sha256": "45b1a30149247ae80e00105290343bed2e6d056dbd3cf2db8f5964a3c542441b"
+    },
+    {
+      "version_id": "0205-iyi-charter-download-v1",
+      "sha256": "f35b00a3991e45bca3ac4ecffb6b4a8537574570ef873a50bd6a2e7f7e68e02e"
+    },
+    {
+      "version_id": "0205-iyi-founding-v1",
+      "sha256": "72441a28786f4e43f921e31328a09797cf54109167997bcfc8da528584ce325e"
+    },
+    {
+      "version_id": "0205-iyi-first-management-v1",
+      "sha256": "c775b7faaf253cf5a5912847ff6dbaadd76770a94e5fe4ec46f37cfbae3fedbb"
+    },
+    {
+      "version_id": "0205-iyi-first-roles-linked-v1",
+      "sha256": "e820017a75631573e448d3d8da7fc5340ddd9733eef16af956eecc3ae327d408"
+    },
+    {
+      "version_id": "0205-iyi-first-congress-v1",
+      "sha256": "ea88299339b0dd697858b84b43d2ce413f0b4e8c9d95f54e621b73829b2853b8"
+    },
+    {
+      "version_id": "0205-iyi-founder-v1",
+      "sha256": "906f40469e51251e2aaa0215fd88691caad73b2032e56950150cbf1958d3fa40"
+    },
+    {
+      "version_id": "0205-iyi-chair-v1",
+      "sha256": "4db833e9576016e190ce6d75f41f0e841e935757b6e47157220af7b32ee3de51"
+    },
+    {
+      "version_id": "0205-iyi-istanbul-docs-v1",
+      "sha256": "ca17c5d3bd72bdf0930a7e6f35df55009d00b00c90272bee024a3dd08402ff5d"
+    },
+    {
+      "version_id": "0206-yeni-yol-registry-v1",
+      "sha256": "85e1a49718a978222dbcd2ce9a3bb126dd2926404d78f82445e09dbbf89ad5db"
+    },
+    {
+      "version_id": "0206-yeni-yol-registry-page-v1",
+      "sha256": "419d39c4537d66690c70e58df5a70358d13272f6bb54e5570f5cba18dbe5c6da"
+    },
+    {
+      "version_id": "0206-yeni-yol-mutabakat-v1",
+      "sha256": "7776ec54889e9253ce64c06cee3ec677b3940a2444103f0a8e67cae010bd21b4"
+    },
+    {
+      "version_id": "0206-yeni-yol-founding-v1",
+      "sha256": "d8b2c2038f83554fe05f9bb1a6d51e72be40f051a632d3ed9905009bbcffefd0"
+    },
+    {
+      "version_id": "0206-yeni-yol-tbmm-kaya-v1",
+      "sha256": "5b894e44d9a9c3e132ea4ea8e1667fcb91b593d570889932b5cf64055dd650f5"
+    },
+    {
+      "version_id": "0206-yeni-yol-tbmm-pdf-v1",
+      "sha256": "3d722c1fcb0d19983cf79b067881d1bb8351a82b098fd65f8cb3c60f30fd235e"
+    },
+    {
+      "version_id": "0206-yeni-yol-chair-change-v1",
+      "sha256": "8062dc02a1fb01ffb08d3088349e986e4532d0816daf6ddc1c70c830787099ea"
+    },
+    {
+      "version_id": "0206-yeni-yol-court-rg-v1",
+      "sha256": "bc2081ef420b30bfbc2c7f6a8909fd5083f5a69ebbba85e6888c195deea810c3"
+    },
+    {
+      "version_id": "0207-dbp-registry-v1",
+      "sha256": "1e46addda8844a2eec950b0b90de4464793372fce11d8b054d930252f8dacd3a"
+    },
+    {
+      "version_id": "0207-dbp-charter-v1",
+      "sha256": "de5370e8d1e5ec4427d58eadadc9c9d195725d0f4baa013871450d4e7e82124a"
+    },
+    {
+      "version_id": "0207-dbp-management-v1",
+      "sha256": "3b1a8b4ca5e3482e6cba7644bdf62e0bd238bbd934439afce40eaf802a29b286"
+    },
+    {
+      "version_id": "0207-dbp-charter-older-v1",
+      "sha256": "517d8a925bdc5b9260ec45dbce9cafacc9413d3374f4325320892c2e2f0c010a"
+    },
+    {
+      "version_id": "0207-dbp-first-congress-v1",
+      "sha256": "70d50e103ff08b40b932fa4894d23d18fe571303005bc1f1bde3ca53385622b5"
+    },
+    {
+      "version_id": "0207-dbp-name-detail-v1",
+      "sha256": "b915df40a234c69632e425df60b8f588add4130f3e768a5d597b16c00f6d1fdc"
+    },
+    {
+      "version_id": "0207-dbp-name-news-v1",
+      "sha256": "d31bdddb3b5e25d2590aa4044c72819a84679259616639ca76aa7ff66aac9759"
+    },
+    {
+      "version_id": "0207-dbp-tbmm-chair-www-v1",
+      "sha256": "ca17e661ec6651da4348f9ee102a76cebf1276d978efd8084d698c9bef4b0639"
+    },
+    {
+      "version_id": "0207-dbp-bdp-charter-v1",
+      "sha256": "81154a4e7fac1040f1c2e2500d0557531e9ed87e0c639bfe581b73b5ff8e1268"
+    },
+    {
+      "version_id": "0207-dbp-bdp-program-wordpress-v1",
+      "sha256": "1db73a2c13c009691839920cad0824ee700df9dabd1ccad858165d464192fbde"
+    },
+    {
+      "version_id": "0207-dbp-bdp-program-v1",
+      "sha256": "bd00c00dddbf2011987243257252ea3bf2dc47998bb3d1b7443fb732ec46bdbc"
+    },
+    {
+      "version_id": "0208-emep-registry-v1",
+      "sha256": "fec7dbc84e5eddfa0fbdd4dad444e75b262f626dcfa5bbff0640b14bde7e4727"
+    },
+    {
+      "version_id": "0208-emep-program-charter-v1",
+      "sha256": "16e8971e7cc015b0134f7836a9930200f04e9a298803f58801cf2261e3593329"
+    },
+    {
+      "version_id": "0208-emep-history-v1",
+      "sha256": "a57f65a13fd74c7a960a7857f34e48e64e1cb4949f9910fb5453f75318a03c89"
+    },
+    {
+      "version_id": "0208-emep-rename-v1",
+      "sha256": "62a68cdb0e4e2362d8353fc17fb81e097023e89e717734564ea48cf36dc58948"
+    },
+    {
+      "version_id": "0208-emep-first-congress-v1",
+      "sha256": "966ca95d6d42344dad093262d22fcc503cc5f7f567f9c6949f128cfbf75acfc7"
+    },
+    {
+      "version_id": "0208-emep-charter-pdf-v1",
+      "sha256": "82a0ec082d33e31eeb3ad2e3f0955b851f2d2fc4e9e417fac3bd148bd805f171"
+    },
+    {
+      "version_id": "0208-emep-reform2014-v1",
+      "sha256": "a83994e37b6d417762f83bedd6447eaa7b0315f32599314e0ea35f0c2ac612ba"
+    },
+    {
+      "version_id": "0208-emep-tbmm-history-v1",
+      "sha256": "1cc0ae60b38a35dea4dc18200c7face0fbb59542795466f5daca9e120fdb5488"
+    },
+    {
+      "version_id": "0208-emep-tbmm-1996-pdf-v1",
+      "sha256": "2bad4f7822b5f4b5adda6646ea5309a65d231f93cb6aae538b9a57c3467e706c"
+    },
+    {
+      "version_id": "0208-emep-tbmm-scope-v1",
+      "sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a"
+    },
+    {
+      "version_id": "0209-saadet-publisher-info-v1",
+      "sha256": "b8e0dec14ae214696f22fb64dfcb04fb7fde7d23a0101833be01d02f10a75472"
+    },
+    {
+      "version_id": "0209-saadet-registry-v1",
+      "sha256": "9c1baa7d283aadc6e577c22b9ce8d36f3c170d90050dd26c415576b21e89b25c"
+    },
+    {
+      "version_id": "0209-saadet-program-v1",
+      "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c"
+    },
+    {
+      "version_id": "0209-saadet-current-program-v1",
+      "sha256": "6718b7ca1b2997d0d1f0e52999c8c5ce852af648be7e83cb26c5a7eef060805c"
+    },
+    {
+      "version_id": "0209-saadet-charter-v1",
+      "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790"
+    },
+    {
+      "version_id": "0209-saadet-current-charter-v1",
+      "sha256": "81fb3239395626d13934db1787a419f22d8e96b9c9df255f908e793b4c5c4790"
+    },
+    {
+      "version_id": "0209-saadet-old-charter-v1",
+      "sha256": "ec5bfbc48825926691b9e19063dceda1f96f125d81a07c3081af6f044bef83d8"
+    },
+    {
+      "version_id": "0209-saadet-congress-v1",
+      "sha256": "8ba63c57810348600d7fa71751eae6d5aab549533c16fe48b10032b3d42f7a8b"
+    },
+    {
+      "version_id": "0209-saadet-founding-news-v1",
+      "sha256": "a1e2e5ced456ddb82aac6e15c60ff0a2a52c71beaca3cfa3722936006c6b8625"
+    },
+    {
+      "version_id": "0209-saadet-tbmm-foundation-v1",
+      "sha256": "5b578f79685815d00e47f8f894ccb5a9297aee19bd6aab02c90d14754d555dc3"
+    },
+    {
+      "version_id": "0209-saadet-tbmm-scope-v1",
+      "sha256": "2fc162c6e7fd3735bfcdaf6f1af89016419c51bffbabe5a9b433d3218e37de3a"
+    },
+    {
+      "version_id": "0210-demokrat-registry-v1",
+      "sha256": "301be7a39cc299b15f1755851b638c1ab3fed886d63c006f23c1c46671606279"
+    },
+    {
+      "version_id": "0210-demokrat-registry-dyp-v1",
+      "sha256": "6aae338722818a207e93c2b337463309c9f966a63082bbdf7ea0d193d1ea3af0"
+    },
+    {
+      "version_id": "0210-demokrat-court-archive-v1",
+      "sha256": "5ac3f1ae35c983554b3e249613fa35e4489ca3d0a6ad2d106222618f0bbdcc4e"
+    },
+    {
+      "version_id": "0210-demokrat-program-archive-v1",
+      "sha256": "6554ec05b00d37f62159e1d722f4464ff8b32569ddf7455108530cc772747da2"
+    },
+    {
+      "version_id": "0210-demokrat-charter-archive-v1",
+      "sha256": "379499d93d88c2ea209706ed34d337adb8bc22422127c5411bb9fc01dbe809b4"
+    },
+    {
+      "version_id": "0210-demokrat-founding-study-v1",
+      "sha256": "71f10601b0a9c72d13789ab28e44227a90cfccae8cd02d0db8d04b9d9e6674e1"
+    },
+    {
+      "version_id": "0210-demokrat-congress-news-v1",
+      "sha256": "14134ca87499a44b84e3e7458327072e3ff6b74497e74949139de4bfaffbec78"
+    },
+    {
+      "version_id": "0210-demokrat-old1983-v1",
+      "sha256": "ab37cb5d56af306b4fdb3c2f1f52cf427989b3bd4ad645bc7762dae07509c4ba"
+    },
+    {
+      "version_id": "0210-demokrat-old1985-v1",
+      "sha256": "ce791d9c79c4fc93a6cc3eb8d40827ea1238b6a3ce6549b5027966624b15449a"
+    },
+    {
+      "version_id": "0210-demokrat-old1988-v1",
+      "sha256": "bc49cab740f935b7a0de2b1abe2e705ecf7398fc5c0f9eef5beaacb0f9bb76b3"
+    },
+    {
+      "version_id": "0210-demokrat-old1990-v1",
+      "sha256": "01dc82bf270210bd85ea0c9789085c8fb5c7b86c77020c42b6db207f8e0ff7b9"
+    },
+    {
+      "version_id": "0210-demokrat-old1990-charter-v1",
+      "sha256": "197a0845b6904e3168510c30d5c5e7c3162f53fdcabbcd7b5c26f18ceca50928"
+    },
+    {
+      "version_id": "0210-demokrat-old1990-charter2-v1",
+      "sha256": "d36964976a72e22b2810d8ea0bbae7572299025a46344cf7ee4622466d10e591"
+    },
+    {
+      "version_id": "0210-demokrat-democracy-program1-v1",
+      "sha256": "c4af8f2d3703da7b2686c892b29c005513a25255fd43415673b86dd65502acf8"
+    },
+    {
+      "version_id": "0210-demokrat-democracy-program2-v1",
+      "sha256": "b433ca739a3347865b537666940528e9c1d1e70115eeb84008ba0b692d44cbe7"
+    },
+    {
+      "version_id": "0210-demokrat-democracy-summary-v1",
+      "sha256": "4cce935d13f7638aa3ee9c0778fb618e84984afef7a697e0df70d1d28e37f5c3"
+    },
+    {
+      "version_id": "0210-demokrat-historical1946-archive-v1",
+      "sha256": "cb22be0d10bd87abc9b9fb8a4db9b8e371e2f614e3dd0591d912a41c072b42ad"
+    },
+    {
+      "version_id": "0308-dbp-bdp-charter-blog-v1",
+      "sha256": "8e7893a152524e6646692f1f222cc5428b0805e17800aa7da0143939c3679aef"
+    }
+  ],
+  "frozen_hashes": {
+    "src/rapor_v17.py": "471b4396b20c6793a28bae1b998be9604b99746e2bd8d3c995103f40d49b7e3e",
+    "src/rapor_v18.py": "cec0e1cfac3b1d3943c1155d4b784d5b2a65ac6015c54d8615976f085cdbd5df",
+    "src/rapor_v19.py": "370de97012a09edd9736d748a2bbab3f18e428b79ab8f878359cbf58137f385b",
+    "src/rapor_v16.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "src/rapor_v19.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "src/rapor_v20.py": "2cceca388f5d4c418491763e7bd8529cb491e770f989d42b55beb8ff614f7ace",
+    "src/rapor_v21.py": "d24789b22c1b0d0cb11c13aa1d50ac114e0492087df0fdaf8d209bef296b4bd7"
+  },
+  "audit_receipts": {},
+  "wave_post_hooks": [
+    {
+      "query": "verify.schema-drift",
+      "exit": 0,
+      "result": {
+        "block": false,
+        "drift_detected": false,
+        "blocking": false,
+        "schema_files": [],
+        "orms": [],
+        "unpushed_orms": [],
+        "message": "",
+        "skipped": false
+      }
+    },
+    {
+      "query": "verify.codebase-drift",
+      "exit": 0,
+      "result": {
+        "block": false,
+        "skipped": true,
+        "reason": "no-structure-md",
+        "action_required": false,
+        "directive": "none",
+        "elements": []
+      }
+    },
+    {
+      "query": "ui.safety-gate",
+      "exit": 0,
+      "result": {
+        "frontend": true,
+        "hasUiFiles": false,
+        "hasUiSpec": false,
+        "block": false
+      }
+    }
+  ],
+  "exact_file_navigation": true,
+  "screenshots_reviewed_by_root": [
+    "screenshots-v22/navigation-row-360.png",
+    "screenshots-v22/navigation-topic-1365.png"
+  ],
+  "build": {
+    "command": "python3 -m compileall -q src tests",
+    "timeout_seconds": 300,
+    "exit": 0,
+    "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-build.log",
+    "test_count": null
+  },
+  "test": {
+    "command": "python3 tests/run.py",
+    "timeout_seconds": 10800,
+    "exit": 1,
+    "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-tests.log",
+    "test_count": null
+  },
+  "status": "failed",
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-post-wave.py\", line 137, in <module>\n    assert result['test']['exit'] == 0\nAssertionError\n",
+  "finished_utc": "2026-11-15T11:51:54.441049+00:00"
+}
