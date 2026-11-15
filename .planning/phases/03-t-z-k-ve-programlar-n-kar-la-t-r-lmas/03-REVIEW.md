@@ -1,8 +1,8 @@
 ---
 phase: 03-t-z-k-ve-programlar-n-kar-la-t-r-lmas
-reviewed: 2026-11-15T20:17:18Z
+reviewed: 2026-11-15T22:09:28Z
 depth: standard
-files_reviewed: 25
+files_reviewed: 26
 files_reviewed_list:
   - data/comparisons/03-acceptance.json
   - data/comparisons/03-completion-basis-v2-source.json
@@ -27,6 +27,7 @@ files_reviewed_list:
   - tests/fixtures/completion_sr25_reading.json
   - tests/fixtures/completion_sr25_replacement.json
   - tests/fixtures/completion_synthesis_rebind.json
+  - tests/test_audit_memory.py
   - tests/test_comparisons.py
   - tests/test_completion_coverage.py
 findings:
@@ -37,22 +38,26 @@ findings:
 status: clean
 ---
 
-# Phase 03: Completion v2 and Historical Fixture Re-review
+# Phase 03: Completion v2 Audit Memory Re-review
 
 **Depth:** standard  
-**Scope:** the prior 25-file review at source checkpoint `6ef0b5d17c33f2bafc4b124d278d979b878dd0a0`, plus the test-only diff `62f7b09..ef2511d43742f737858754af76d0dc1529a2dd83`. Source and canonical adoption package remain unchanged. Large historical research and release artifacts were inspected structurally and by IDs and hashes. Previous independent findings and closure history remain in Git, including `959c692`, `8ac0513`, `7941d6c` and `48dd0a0`; this is not a new full review of all historical source pages.
+**Scope:** the prior 25-file review and incremental audit-memory/test changes `ef2511d..51bd5bc0f203326c0c865d8f573ca901c8a4e530`; `tests/test_audit_memory.py` expands the union to 26 files. Large historical research and release artifacts were inspected structurally and by IDs and hashes. Previous independent reviews and closure history remain in Git, including `959c692`, `8ac0513`, `7941d6c`, `48dd0a0` and the review following `ef2511d`. This is not a new full review of all historical source pages.
 
 ## Summary
 
-The previously reported cross-taxonomy helper failure is closed at the reviewed boundary. No new actionable finding was established in the two test-only changes. All 25 scope hashes matched, including updated `tests/test_comparisons.py` SHA-256 `bf5ca5b7993d5064344b1d5a2cd106afce087a353481623ae6e917568ae3abb7` and `tests/test_completion_coverage.py` SHA-256 `8ae93eb94ece0ed99d7d4b02abdab72b1768edec7fa5b804155244f3df658b39`.
+No new actionable finding was established in the audit-order and test changes. All 26 scope hashes matched. The earlier cross-taxonomy helper finding remains closed at its reviewed boundary.
 
 ## Narrative Findings (AI reviewer)
 
 No new findings. `completion_superseded_syntheses` now applies a correction to its own taxonomy; `validate_completion_revisions` continues to check each retained revision against its own preserved basis and selection. A bounded read-only repeat using the actual TİP synthesis and its real review accepted the test-only taxonomy 4 A→B relation, returned an empty retirement set for a subsequent taxonomy 5 basis retaining the earlier registry, and rejected a modified historical claim when checking the taxonomy 4 revision. The frozen `taxonomy-synthesis` RED/GREEN evidence additionally records a same-taxonomy A→B→C chain, authenticated successor origin and rejection of an unauthorized cross-taxonomy correction. That evidence is a helper/origin check, not a complete taxonomy 5 import, publish or audit.
 
+The revised `audit_release` verifies the current manifest and file hashes, audits required ancestors before materializing the current export, and then performs the schema, policy, descent, dossier, JSON and renderer checks. A schema 5/6 snapshot without the required source-policy manifest value is rejected after export; omitting that marker cannot make such a snapshot pass without ancestor audit. The new real-release fixture checks both ancestor tampering and cycle rejection, and its profiling hook observes retained exports without replacing validators. The retained-candidate record reports a read-only ordinary audit of the actual candidate in 891.893 seconds with a 1,297,632 KiB peak under the 4 GiB limit; that recorded audit was not rerun here. The prior killed API job remains a failure.
+
+The two removed positive ordinary-audit calls immediately followed `publish_release`, which already performs its ordinary closed-release audit before replacing current. Their replacements check current ID, writer-lock cleanup, manifest shape and all three file hashes; negative manifest-tampering audit and phase 3 checks remain. `validate_phase_three` checks the phase 3 data and links separately and does not itself invoke ordinary `audit_release`.
+
 The new historical fixture reads immutable v1 release `85b1a453ce2346a8ad0df325a2b73ae9` for legacy-specific checks. `reviewed_current()` reads the actual current snapshot without replacing its completion marker, while the isolated API fixture points its own temporary current file at the v1 base. Existing negative assertions remain; no validator mock or broad skip was introduced. The recorded `historical-fixture` evidence distinguishes its initial incomplete-copy failure from the final six passing checks. Modern contract fixtures use the historical base plus the canonical v2 adoption package; live release acceptance remains the separate current-release audit and orchestrator gates.
 
-No tests, audit, publication or global suite were rerun in this test-only re-review. The latest-code same-taxonomy isolated API scenario is running on a separate frozen copy and is not represented as passed; a real taxonomy 5 import/audit remains pending. The older `554db20` isolated round trip concerns earlier copied code only. The accepted `85b1a453ce2346a8ad0df325a2b73ae9` release remains completion v1 and renderer 22. Eight raw probes and three descriptorless prohibitions remain unresolved; three UAT groups and three value assessments await human responses. Agent source reading is not human political acceptance.
+No tests, audit, publication or global suite were rerun in this review. The full global regression and production release acceptance remain pending; a real taxonomy 5 import/audit also remains unverified. The older `554db20` isolated round trip concerns earlier copied code only. The accepted `85b1a453ce2346a8ad0df325a2b73ae9` release remains completion v1 and renderer 22. Eight raw probes and three descriptorless prohibitions remain unresolved; three UAT groups and three value assessments await human responses. Agent source reading is not human political acceptance.
 
 ---
 

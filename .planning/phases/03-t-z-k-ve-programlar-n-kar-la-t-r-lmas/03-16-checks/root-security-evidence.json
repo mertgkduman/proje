@@ -1,6 +1,6 @@
 {
   "basis": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/root-security-register.json",
-  "scope": "PLAN-authored threats only; fourth incremental v2 re-review support, not a new threat scan or SECURITY.md",
+  "scope": "PLAN-authored threats only; incremental audit-order re-review support, not a new threat scan or SECURITY.md",
   "asvs_level": 1,
   "block_on": "high",
   "review_release": "85b1a453ce2346a8ad0df325a2b73ae9",
@@ -10,7 +10,7 @@
       "threat_id": "T-03-01",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
       ],
@@ -20,7 +20,7 @@
       "threat_id": "T-03-02",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -50,7 +50,7 @@
       "threat_id": "T-03-05",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1910",
+        "src/arsiv.py:1932",
         "tests/test_comparison_content.py:719",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:71"
       ],
@@ -60,7 +60,7 @@
       "threat_id": "T-03-06",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1949",
+        "src/arsiv.py:1982",
         "tests/test_comparison_content.py:556",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:45"
       ],
@@ -70,7 +70,7 @@
       "threat_id": "T-03-07",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -90,7 +90,7 @@
       "threat_id": "T-03-03-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
       ],
@@ -100,7 +100,7 @@
       "threat_id": "T-03-03-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -120,7 +120,7 @@
       "threat_id": "T-03-04-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:60"
       ],
@@ -130,7 +130,7 @@
       "threat_id": "T-03-04-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -150,7 +150,7 @@
       "threat_id": "T-03-05-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:59"
       ],
@@ -160,7 +160,7 @@
       "threat_id": "T-03-05-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -180,7 +180,7 @@
       "threat_id": "T-03-06-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
       ],
@@ -190,7 +190,7 @@
       "threat_id": "T-03-06-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -210,7 +210,7 @@
       "threat_id": "T-03-07-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:80"
       ],
@@ -220,7 +220,7 @@
       "threat_id": "T-03-07-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -240,7 +240,7 @@
       "threat_id": "T-03-08-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:71"
       ],
@@ -250,7 +250,7 @@
       "threat_id": "T-03-08-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -270,7 +270,7 @@
       "threat_id": "T-03-09-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:72"
       ],
@@ -280,7 +280,7 @@
       "threat_id": "T-03-09-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -300,7 +300,7 @@
       "threat_id": "T-03-10-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
       ],
@@ -310,7 +310,7 @@
       "threat_id": "T-03-10-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -330,7 +330,7 @@
       "threat_id": "T-03-11-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
       ],
@@ -340,7 +340,7 @@
       "threat_id": "T-03-11-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -360,7 +360,7 @@
       "threat_id": "T-03-12-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:78"
       ],
@@ -370,7 +370,7 @@
       "threat_id": "T-03-12-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -390,7 +390,7 @@
       "threat_id": "T-03-13-A",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1980",
+        "src/arsiv.py:2004",
         "tests/test_comparisons.py:56",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
       ],
@@ -400,7 +400,7 @@
       "threat_id": "T-03-13-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -460,7 +460,7 @@
       "threat_id": "T-03-15-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
+        "src/arsiv.py:3155",
         "tests/test_comparisons.py:101",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
       ],
@@ -500,11 +500,11 @@
       "threat_id": "T-03-16-C",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:3131",
-        "tests/test_comparisons.py:101",
-        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+        "src/arsiv.py:2851",
+        "tests/test_audit_memory.py:44",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/completion-v2-memory/STATUS.md"
       ],
-      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+      "notes": "Ancestor-first ordinary audit, immutable history/prefix checks and preservation evidence exist; retained candidate ordinary audit passed, final API/global gates remain pending."
     },
     {
       "threat_id": "T-03-16-D",
@@ -517,7 +517,7 @@
       "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
     }
   ],
-  "source_checkpoint": "6ef0b5d17c33f2bafc4b124d278d979b878dd0a0",
+  "source_checkpoint": "51bd5bc0f203326c0c865d8f573ca901c8a4e530",
   "latest_api_verification": "pending",
   "test_checkpoint": "ef2511d43742f737858754af76d0dc1529a2dd83"
 }
