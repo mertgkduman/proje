@@ -51,6 +51,14 @@ class CompletionCoverageTest(unittest.TestCase):
         data[table][index] = dict(data[table][index], **changes)
         return data
 
+    def modern(self):
+        payload = json.loads((Path(__file__).resolve().parents[1] /
+                              'data/comparisons/03-completion-review-v2.json').read_text())
+        data = dict(self.reviewed)
+        for table in arsiv.COMPLETION_V2_TABLES:
+            data[table] = [r['values'] for r in payload['records'] if r['kind'] == table]
+        return data
+
     def test_real_review_and_legacy_snapshot_remain_valid(self):
         self.assertTrue(arsiv.validate_completion(self.reviewed))
         legacy = dict(self.reviewed)
@@ -248,7 +256,7 @@ class CompletionCoverageTest(unittest.TestCase):
 
     def test_coordinated_omission_is_not_a_coverage_decision(self):
         """The independent authored disposition still requires the omitted organ."""
-        data = dict(self.reviewed)
+        data = self.modern()
         target = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
         row = next(r for r in data['comparison_row'] if r['id'] == target)
         marker = dict(data['comparison_completion'][0])
@@ -258,41 +266,33 @@ class CompletionCoverageTest(unittest.TestCase):
         marker['evidence'] = json.dumps(proof, ensure_ascii=False)
         data['comparison_completion'] = [marker]
         data['comparison_row'] = [r for r in data['comparison_row'] if r['id'] != target]
-        # This independently authored disposition is an additive revision input,
-        # not a second copy of the candidate's submitted completion proof.
-        data['comparison_coverage_disposition'] = [dict(
-            taxonomy_version=self.taxonomy, topic_id=row['topic_id'],
-            party_id=row['party_id'], level=row['level'], organ=row['organ'],
-            scope_id=row['scope_id'], state=row['state'], row_id=target)]
-        with self.assertRaises(ValueError):
+        revision = dict(data['comparison_completion_revision'][0])
+        selection = json.loads(revision['selection'])
+        selection['rows'] = [r for r in selection['rows'] if r['id'] != target]
+        revision['selection'] = arsiv.canonical_json(selection)
+        revision['legacy_anchor'] = arsiv.canonical_json(dict(release_id=self.reviewed['release_id'],
+            marker_sha256=hashlib.sha256(arsiv.canonical_json(marker).encode()).hexdigest()))
+        data['comparison_completion_revision'] = [revision]
+        with self.assertRaisesRegex(ValueError, 'Kaynak yükümlülüğü satır'):
             arsiv.validate_comparisons(data)
 
     def test_review_requires_substantive_inspections(self):
-        data = dict(self.reviewed)
-        marker = dict(data['comparison_completion'][0])
-        proof = json.loads(marker['evidence'])
-        checks = proof['source_review']['checks']
-        seen = set()
-        for check in checks:
-            selected = []
-            for row in check.get('selected_rows', []):
-                party = row['party_id']
-                if party not in seen:
-                    seen.add(party)
-                    selected.append(dict(row, fields=[]))
-            check['selected_rows'] = selected
-            check['inspected_synthesis'] = []
-        marker['evidence'] = json.dumps(proof, ensure_ascii=False)
-        data['comparison_completion'] = [marker]
-        data['comparison_completion_revision'] = [dict(version=2, taxonomy_version=self.taxonomy,
-                                                        revision=1, active=True)]
-        with self.assertRaises(ValueError):
+        data = self.modern()
+        self.assertTrue(arsiv.validate_completion(data))
+        revision = dict(data['comparison_completion_revision'][0])
+        review = json.loads(revision['review'])
+        review['decisions'] = [d for d in review['decisions'] if d['kind'] not in ('field_support', 'synthesis_support')]
+        revision['review'] = arsiv.canonical_json(review)
+        data['comparison_completion_revision'] = [revision]
+        with self.assertRaisesRegex(ValueError, 'Kaynak anlamı riski'):
             arsiv.validate_comparisons(data)
 
     def test_complete_base_can_descend_to_partial_revision(self):
-        candidate = dict(self.reviewed)
-        candidate['comparison_contract'] = [dict(self.reviewed['comparison_contract'][0], stage='partial')]
-        candidate['comparison_completion_revision'] = [dict(version=2, taxonomy_version=self.taxonomy,
-                                                             revision=1, active=False)]
-        self.assertTrue(arsiv.validate_comparison_descent(self.reviewed, candidate))
+        base = self.modern()
+        first = base['comparison_completion_revision'][0]
+        successor = dict(first, id='test-partial-revision', epoch=2, parent_revision_id=first['id'],
+                         stage='partial', reason='source work in progress')
+        candidate = dict(base, comparison_contract=[dict(base['comparison_contract'][0], stage='partial')],
+                         comparison_completion_revision=[first, successor])
+        self.assertTrue(arsiv.validate_comparison_descent(base, candidate))
 
