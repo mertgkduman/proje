@@ -1,6 +1,6 @@
 {
   "basis": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/root-security-register.json",
-  "scope": "PLAN-authored threats only; third incremental v2 re-review support, not a new threat scan or SECURITY.md",
+  "scope": "PLAN-authored threats only; fourth incremental v2 re-review support, not a new threat scan or SECURITY.md",
   "asvs_level": 1,
   "block_on": "high",
   "review_release": "85b1a453ce2346a8ad0df325a2b73ae9",
@@ -418,23 +418,23 @@
     },
     {
       "threat_id": "T-03-14-A",
-      "classification": "partial_mitigation",
+      "classification": "planned_mitigation_present",
       "anchors": [
         "src/arsiv.py:1547",
-        "src/arsiv.py:952",
-        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-REVIEW.md#cr-01-blocker--retained-earlier-taxonomy-synthesis-corrections-prevent-a-later-taxonomy-from-completing"
+        "src/arsiv.py:1716",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/completion-v2-fix/taxonomy-synthesis/README.md"
       ],
-      "notes": "Existing lineage controls and same-taxonomy chains exist, but retained earlier-taxonomy synthesis corrections block later-taxonomy closure (CR-01)."
+      "notes": "Taxonomy-scoped synthesis retirement retains validation of historical bases; bounded historical/v5 helper probe and frozen chain/origin evidence pass. Complete taxonomy-5 import and audit remain unverified."
     },
     {
       "threat_id": "T-03-14-B",
       "classification": "planned_mitigation_present",
       "anchors": [
-        "src/arsiv.py:1733",
+        "src/arsiv.py:1740",
         "tests/test_completion_coverage.py:303",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/completion-v2-fix/synthesis-chain/README.md"
       ],
-      "notes": "Selected-synthesis validation and registered replacements now preserve historical projections; focused mechanical/substantive/chain receipts exist, latest full API pending."
+      "notes": "Selected synthesis validation and registered replacements retain historical projections; focused chain receipts exist and latest complete API remains pending."
     },
     {
       "threat_id": "T-03-14-C",
@@ -517,6 +517,6 @@
       "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
     }
   ],
-  "source_checkpoint": "00c14601b8532d757a26126d0b8b8806803e1ef1",
+  "source_checkpoint": "6ef0b5d17c33f2bafc4b124d278d979b878dd0a0",
   "latest_api_verification": "pending"
 }
