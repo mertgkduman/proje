@@ -11,13 +11,24 @@ import test_comparisons
 
 
 class SourceBasisCellTest(unittest.TestCase):
+    def test_new_taxonomy_basis_retains_source_assertions(self):
+        old = dict(taxonomy_version=4, source_assertions={'a': {'kind': 'dated_source_scope'}},
+                   source_documents=[dict(path='data/example.json', sha256='old')])
+        new = dict(taxonomy_version=5, source_assertions=dict(old['source_assertions'], b={'kind': 'supported_field'}),
+                   source_documents=list(old['source_documents']))
+        self.assertTrue(arsiv.validate_completion_basis_successor(old, new))
+        with self.assertRaisesRegex(ValueError, 'kaynak dayanağı'):
+            arsiv.validate_completion_basis_successor(old, dict(new, source_assertions={}))
+        with self.assertRaisesRegex(ValueError, 'hemen ardılı'):
+            arsiv.validate_completion_basis_successor(old, dict(new, taxonomy_version=6))
+
     def test_supersession_requires_previous_row_and_new_source_basis(self):
         old_key = dict(topic_id='aday-tanitimi', party_id='tip', source_role='charter', context_judgment='old-row')
         new_key = dict(old_key, context_judgment='new-row')
         basis = dict(cells=[dict(id='old-cell', logical_key=old_key, mapping_records=[], basis_ids=['old-basis']),
                             dict(id='new-cell', logical_key=new_key, mapping_records=[], basis_ids=['new-basis'])])
-        first = dict(id='revision-1', epoch=1, selection=arsiv.canonical_json({'rows': [dict(id='old-row')]}))
-        second = dict(id='revision-2', epoch=2)
+        first = dict(id='revision-1', epoch=1, taxonomy_version=4, selection=arsiv.canonical_json({'rows': [dict(id='old-row')]}))
+        second = dict(id='revision-2', epoch=2, taxonomy_version=4)
         link = dict(revision_id='revision-2', old_cell_id='old-cell', new_cell_id='new-cell',
                     old_row_id='old-row', new_row_id='new-row', source_basis_refs='["new-basis"]',
                     reason='test-only source-backed replacement')

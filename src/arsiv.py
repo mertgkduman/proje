@@ -1078,6 +1078,18 @@ def completion_adoption_payload(data, basis, risk, created_at):
 
 def validate_completion_basis_successor(old, new):
     """An appended basis may extend, but must retain, earlier obligations."""
+    if new['taxonomy_version'] != old['taxonomy_version']:
+        if new['taxonomy_version'] != old['taxonomy_version'] + 1:
+            raise ValueError('Yeni kaynak sözlüğü öncekinin hemen ardılı olmalı')
+        for key, value in old['source_assertions'].items():
+            if new['source_assertions'].get(key) != value:
+                raise ValueError('Önceki kaynak dayanağı değiştirilemez')
+        documents = {item['path']: item for item in new['source_documents']}
+        if any(documents.get(item['path']) != item for item in old['source_documents']):
+            raise ValueError('Önceki kaynak paketinin kökeni değiştirilemez')
+        # Row and topic replacements are authorized separately by the
+        # contract-3 lineage and its source-backed meaning decisions.
+        return True
     for name, identity in (('topics', lambda x: x['topic_id']),
                            ('cells', lambda x: x['id']),
                            ('synthesis_obligations', lambda x: x['id'])):
@@ -1133,8 +1145,8 @@ def verify_successor_completion_basis(old, new):
         except (KeyError, IndexError, TypeError, ValueError) as exc:
             raise ValueError('Yeni kaynak kararının özgün adresi geçersiz') from exc
 
-    previous_cells = {c['id'] for c in old['cells']}
-    added_cells = [c for c in new['cells'] if c['id'] not in previous_cells]
+    previous_cells = {c['id']: c for c in old['cells']}
+    added_cells = [c for c in new['cells'] if previous_cells.get(c['id']) != c]
     new_assertions = set(new['source_assertions']) - set(old['source_assertions'])
     if not new_assertions <= {bid for cell in added_cells for bid in cell['basis_ids']}:
         raise ValueError('Yeni kaynak dayanağı kaynak hücresine bağlanmalı')
@@ -1174,6 +1186,7 @@ def verify_successor_completion_basis(old, new):
 def completion_superseded_cells(data, revision, revisions, basis, selection):
     """Verify explicit source-backed replacements while retaining prior records."""
     epochs = {r['id']: r['epoch'] for r in revisions}
+    taxonomies = {r['id']: r['taxonomy_version'] for r in revisions}
     by_epoch = {r['epoch']: r for r in revisions}
     cells = {c['id']: c for c in basis['cells']}
     rows = {r['id']: r for r in data['comparison_row']}
@@ -1182,7 +1195,8 @@ def completion_superseded_cells(data, revision, revisions, basis, selection):
     links = data.get('comparison_completion_supersession', [])
     if any(link['revision_id'] not in epochs for link in links):
         raise ValueError('Kaynak ardıllığının revizyonu yok')
-    links = sorted((link for link in links if epochs[link['revision_id']] <= revision['epoch']),
+    links = sorted((link for link in links if epochs[link['revision_id']] <= revision['epoch'] and
+                    taxonomies[link['revision_id']] == revision['taxonomy_version']),
                    key=lambda link: epochs[link['revision_id']])
     for index, link in enumerate(links):
         epoch = epochs.get(link['revision_id'])
@@ -1296,6 +1310,10 @@ def validate_completion_revisions(data):
                 if head['parent_basis_id'] != previous['basis_id']:
                     raise ValueError('Kaynak sözlüğü soy zinciri geçersiz')
                 validate_completion_basis_successor(previous_source, source)
+                if source['taxonomy_version'] != previous_source['taxonomy_version']:
+                    if data['comparison_contract'][0]['version'] != 3:
+                        raise ValueError('Yeni kaynak sözlüğü kalıcı satır soyu gerektirir')
+                    validate_versioned_row_lineage(data)
                 risks = {r['id']: r for r in risk}
                 if any(risks.get(r['id']) != r for r in previous_risk):
                     raise ValueError('Önceki kaynak riski değiştirilemez')
