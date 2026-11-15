@@ -90,6 +90,55 @@ class CompletionCoverageTest(unittest.TestCase):
             data[table] = [r['values'] for r in payload['records'] if r['kind'] == table]
         return data
 
+    def test_re_review_rejects_unrelated_positive_as_negative_scope_correction(self):
+        data = self.modern()
+        first = data['comparison_completion_revision'][0]
+        head = data['comparison_completion_basis'][0]
+        basis, _ = arsiv.decode_completion_basis(head, data['comparison_coverage_disposition'])
+        old_id = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
+        new_id = '04-03-v3-0304-tip-charter-context-aday-tanitim-html-row'
+        old = next(c for c in basis['cells'] if c['fulfilment_locator_only'] == old_id)
+        new = next(c for c in basis['cells'] if c['fulfilment_locator_only'] == new_id)
+        selection = json.loads(first['selection'])
+        selection['rows'] = [r for r in selection['rows'] if r['id'] != old_id]
+        second = dict(first, id='test-forged-correction', epoch=2, parent_revision_id=first['id'],
+                      selection=arsiv.canonical_json(selection), reason='ordinary source is not a correction')
+        link = dict(revision_id=second['id'], old_cell_id=old['id'], new_cell_id=new['id'],
+                    old_row_id=old_id, new_row_id=new_id,
+                    source_basis_refs=arsiv.canonical_json(['basis-8a236988dbbb141d12717df4']),
+                    reason='ordinary source is not a correction')
+        data['comparison_completion_revision'] = [first, second]
+        data['comparison_completion_supersession'] = [link]
+        with self.assertRaises(ValueError):
+            arsiv.validate_completion_revisions(data)
+
+    def test_re_review_rejects_forged_source_reading_decisions(self):
+        data = self.modern()
+        first = dict(data['comparison_completion_revision'][0])
+        review = json.loads(first['review'])
+        for decision in review['decisions']:
+            if decision['kind'] == 'field_support':
+                decision.update(original_field_review={'forged': 'yes'}, judgment='x', source_reading='x',
+                                recorded_at='x', decision='unsupported')
+        first['review'] = arsiv.canonical_json(review)
+        data['comparison_completion_revision'] = [first]
+        head = data['comparison_completion_basis'][0]
+        basis, risks = arsiv.decode_completion_basis(head, data['comparison_coverage_disposition'])
+        for label, call in (('risk', lambda: arsiv.validate_source_risk_review(data, basis, risks, review['decisions'])),
+                            ('revision', lambda: arsiv.validate_completion_revisions(data))):
+            with self.subTest(gate=label), self.assertRaises(ValueError):
+                call()
+
+    def test_re_review_accepts_authenticated_witness_with_new_identity(self):
+        data = self.modern()
+        first = data['comparison_completion_revision'][0]
+        review = json.loads(first['review'])
+        old = next(d for d in review['decisions'] if d['id'] == 'SR25:field:tip-kapitalizm-principle')
+        old['id'] = 'test-identical-authored-reading-new-identity'
+        head = data['comparison_completion_basis'][0]
+        basis, risks = arsiv.decode_completion_basis(head, data['comparison_coverage_disposition'])
+        self.assertTrue(arsiv.validate_source_risk_review(data, basis, risks, review['decisions']))
+
     def sourced_successor(self, base, source_basis, risk, fixture, fixture_digest, *,
                           source_name='source', basis_id='test-successor-basis',
                           revision_id='test-successor-partial', stage='partial'):

@@ -1,0 +1,40 @@
+FFFE
+======================================================================
+ERROR: test_re_review_accepts_authenticated_witness_with_new_identity (test_completion_coverage.CompletionCoverageTest.test_re_review_accepts_authenticated_witness_with_new_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 140, in test_re_review_accepts_authenticated_witness_with_new_identity
+    self.assertTrue(arsiv.validate_source_risk_review(data, basis, risks, review['decisions']))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1031, in validate_source_risk_review
+    raise ValueError('Kaynak anlamı riski için maddi inceleme eksik: ' + str(risk.get('id')))
+ValueError: Kaynak anlamı riski için maddi inceleme eksik: field:principle
+
+======================================================================
+FAIL: test_re_review_rejects_unrelated_positive_as_negative_scope_correction (test_completion_coverage.CompletionCoverageTest.test_re_review_rejects_unrelated_positive_as_negative_scope_correction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 112, in test_re_review_rejects_unrelated_positive_as_negative_scope_correction
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_re_review_rejects_forged_source_reading_decisions (test_completion_coverage.CompletionCoverageTest.test_re_review_rejects_forged_source_reading_decisions) (gate='risk')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 129, in test_re_review_rejects_forged_source_reading_decisions
+    with self.subTest(gate=label), self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_re_review_rejects_forged_source_reading_decisions (test_completion_coverage.CompletionCoverageTest.test_re_review_rejects_forged_source_reading_decisions) (gate='revision')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 129, in test_re_review_rejects_forged_source_reading_decisions
+    with self.subTest(gate=label), self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 3 tests in 6.852s
+
+FAILED (failures=3, errors=1)
