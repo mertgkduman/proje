@@ -1,10 +1,13 @@
 ---
 phase: 03-t-z-k-ve-programlar-n-kar-la-t-r-lmas
-reviewed: 2026-11-15T16:32:47Z
+reviewed: 2026-11-15T18:25:01Z
 depth: standard
-files_reviewed: 13
+files_reviewed: 20
 files_reviewed_list:
   - data/comparisons/03-acceptance.json
+  - data/comparisons/03-completion-basis-v2-source.json
+  - data/comparisons/03-completion-review-v2.json
+  - data/comparisons/03-completion-risk-v2-source.json
   - data/comparisons/03-navigation-checks.json
   - data/comparisons/03-probe-record.json
   - data/comparisons/03-source-review-notes.md
@@ -15,6 +18,10 @@ files_reviewed_list:
   - data/releases/85b1a453ce2346a8ad0df325a2b73ae9/records.json
   - data/releases/85b1a453ce2346a8ad0df325a2b73ae9/records.sqlite3
   - src/arsiv.py
+  - src/rapor.py
+  - src/rapor_v22.py
+  - tests/fixtures/completion_revision_source.json
+  - tests/fixtures/completion_revision_supersession.json
   - tests/test_comparisons.py
   - tests/test_completion_coverage.py
 findings:
@@ -25,37 +32,39 @@ findings:
 status: issues_found
 ---
 
-# Phase 03: Code Review Report
+# Phase 03: Completion v2 Re-review
 
 **Depth:** standard  
-**Scope:** incremental changes from `13dea851333e00328669549492284e9a97bd225c` to `2b4c50471c05528119139019c4bdd9050d3e0aca`; 13 files listed above. Large release data and HTML were inspected structurally and by IDs and hashes, rather than treated as new source prose. The predecessor review is preserved in `03-16-checks/pre16-review.md`; its previously closed findings are historical and were not reopened or all historical source re-reviewed here.
+**Scope:** union of the prior 13 files and the v2 fix delta, at source checkpoint `192f43f2e82d88e22b8dcff38bfc23fa02ebe68c`; root metadata HEAD `d9d0bf3a368cbaa799812582b8947bb624aa4db2`. Large data, SQLite and HTML artifacts were checked structurally, by IDs and hashes; this is not a fresh review of all historic source pages. The prior three-blocker review is preserved at Git commit `959c692`; `03-REVIEW-FIX.md` accurately leaves its findings pending. The defects below concern the new v2 implementation and do not alter that history.
 
 ## Summary
 
-The new completion proof is persisted in SQLite and exported JSON, and the actual manifest file hashes match. The selected snapshot contains 305 topics, 4,935 rows, 3,941 fields, 854 syntheses and 1,729 inventory entries; SQLite integrity and foreign-key checks passed. Source-review evidence actually records an authored 24-group agent reading and distinguishes direct, inherited and finding-only provenance. That reading is not human political acceptance. Three blocker defects remain in enforcement and forward updates. Two are demonstrated using read-only in-memory mutations of the actual selected release through existing validators. Tests and full project regression were not rerun in this review; previously recorded focused tests, audits and browser evidence are not a new global regression result. Eight raw probes and three descriptorless prohibitions remain unresolved; human UAT remains pending.
+The actual committed adoption package contains the independently authored basis and risk universe: 2,745 topic/party dispositions, 4,935 cells, 4,838 assertions, 854 synthesis obligations, 49 risks and 158 decisions. All 66 referenced source-package digests matched. The committed decisions and risk universe match their authored input. The accepted `85b1a453ce2346a8ad0df325a2b73ae9` release remains v1; the documented real second reading is agent work, not human approval. Nevertheless, v2 still allows unauthenticated decisions and unjustified supersessions, and its fixed witness IDs block valid forward reviews.
+
+Probes below used in-memory copies of the actual committed package and accepted release data through existing validator APIs; they changed no source or data files. No tests, audit, publication or global suite were rerun. The latest-code isolated import/publish/audit path and actual new-taxonomy transition remain unverified. The earlier isolated run uses older copied inputs and was not disturbed. Eight raw probes and three descriptorless prohibitions remain unresolved; the three UAT groups and three value assessments remain pending.
 
 ## Narrative Findings (AI reviewer)
 
-### CR-01: BLOCKER — Completion compares coverage against an author-supplied copy, not required coverage
+### CR-01: BLOCKER — Existing unrelated source cells can be presented as a correction and hide an obligation
 
-**File:** `src/arsiv.py:678` (also `src/arsiv.py:741`, `tests/test_completion_coverage.py:35`)  
-**Issue:** The expected topic, row, field, synthesis and inventory lists are taken from the same submitted completion evidence and compared to the supplied records. Per-party counts are likewise checked only against those records. Neither establishes the required topic × party × applicable level/organ/field matrix independently. In a read-only probe against the actual selected release, removing the unsampled `04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row` (TIP, `aday-tanitimi`, `ulusal ve yerel`, `Kamu adayı tanıtımı`), removing that row from the proof and decrementing TIP's proof row count makes `validate_comparisons(data)` return `True`. Thus the gate can certify a snapshot with a missing substantive level/organ while both lists agree. Descent separately protects records already in a base; it cannot establish a record that was omitted before a first completion proof or from newly authored coverage. Existing negative tests modify data while leaving the copied proof untouched, so they do not detect this failure.
+**File:** `src/arsiv.py:1240` (also `src/arsiv.py:1253`, `src/arsiv.py:1364`, `src/arsiv.py:2417`)  
+**Issue:** Supersession verifies only that the old and new cells share topic, party and role, that the old row was selected, and that the cited IDs belong to the new cell. It never verifies a separately authored correction linking those particular old and new contexts, nor that the new context actually supersedes the old one. I built an epoch 2 in memory from the committed canonical package, preserved its basis and prior revision, and claimed that existing positive row `04-03-v3-0304-tip-charter-context-aday-tanitim-html-row` replaced distinct negative-scope row `04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row`. The link cited the positive cell's existing `basis-8a236988dbbb141d12717df4`; the new selection omitted the negative row. `validate_completion_revisions(data)` returned `True`. The selected view removes the old row, although its separate dated finding that the introduction procedure was not explicit is not corrected by the positive candidate-selection context. This defeats the independent coverage remedy by authorizing a material omission using an unrelated existing source.
 
-**Fix:** Derive required coverage from independent, versioned topic applicability, source inventory and documented level/organ/field dispositions, including explicit sourced inapplicability and genuine document gaps. Candidate inputs include `comparison_topic.applicable_levels` (`src/arsiv.py:113`), the independent source inventory and scope records (`src/arsiv.py:116`, `src/arsiv.py:122`), and the authored audit basis in `03-16-precheck/coverage-map.json`; these inputs need a defined, sourced matrix, not invented coverage. Check actual records against that matrix. Add negative tests that modify both the data and submitted proof, including omitted levels, organs, fields and inventory sections, through `validate_comparisons`, `load_comparison`, `publish_release` and audit. Introduce the stronger contract additively; retain accepted v1 historical interpretation rather than retroactively requiring future proof from it.
+**Fix:** Require an independently authored, immutable, source-resolved correction decision tying both exact old and new cells/rows to their source scopes, meaning, evidence and reason. Reject a pre-existing unrelated cell as a replacement solely because its own evidence is valid. Keep documentary absence separate from positive context and preserve D-13–D-16 uncertainty. Preserve the old record and revision, and allow active omission only after validating the explicit correction relation. Add this exact positive-versus-negative actual-ID case through `validate_completion_revisions`, `load_comparison` and the real publish/audit path; also verify the old obligation remains visible when no valid correction exists.
 
-### CR-02: BLOCKER — A source-meaning review can omit all reviewed fields and syntheses
+### CR-02: BLOCKER — Risk witnesses accept forged source-reading provenance and unsupported decisions
 
-**File:** `src/arsiv.py:715` (also `src/arsiv.py:722` and `src/arsiv.py:729`)  
-**Issue:** `selected_rows`, each row's `fields`, and `inspected_synthesis` default to empty lists. The only enforced sampling coverage is that some selected row names each party. A read-only probe retained one actual row per party in eight of the existing checks, removed all inspected fields and syntheses, and `validate_completion(data)` returned `True`. Nonempty free-text rationale and unchanged source hashes then stand in for the specific source→summary and multi-party synthesis judgments the plan requires. Previous field/finding review records do not establish that this second-reading sample covered the planned source types, levels, conditions or synthesis evidence. This does not assert that the actual current 24-group reading was fabricated; its documented substantive evidence exists, but the gate accepts a materially incomplete replacement proof before adoption.
+**File:** `src/arsiv.py:966` (also `src/arsiv.py:991`, `src/arsiv.py:1367`)  
+**Issue:** A field witness only requires nonempty `judgment`, `recorded_at` and `source_reading`, and accepts any truthy `original_field_review`; it never checks the `decision` value, timestamp validity, or whether the alleged original review is the authored review for that field. In a read-only probe with the committed actual package and accepted data, I replaced all 95 field decisions' `original_field_review` with `{'forged':'yes'}`, set their judgment, reading and recorded time to `x`, and set their decision to `unsupported`. Existing IDs, basis IDs and source links stayed intact. Both `validate_source_risk_review` and the complete `validate_completion_revisions` returned `True`. Actual source decisions in the committed package are substantive; the problem is that altered or fabricated decisions can be adopted and frozen while the validator reports risk coverage.
 
-**Fix:** Require explicit, cross-linked substantive decisions and actual inspected field/finding/passage and synthesis IDs appropriate to the recorded risk coverage, with verifiable links to the claimed versions and source roles. Record structured coverage of the applicable level/organ, source-type, condition and synthesis categories and a rationale for the selection; do not enforce an arbitrary fixed sample quota. Add a regression that removes all sampled fields and syntheses while retaining one row per party and valid prior reviews; exercise `validate_completion`, `validate_comparisons` and the real `load_comparison`/comparison-check path. Preserve the actual v1 proof and its historical interpretation.
+**Fix:** Bind inherited decisions, result, time, reading and original-review lineage to independently registered authored source-research evidence; for genuinely new readings allow new immutable authored review records and revisions with valid source links, appropriate supported/limited result, timezone-aware date and a specific rationale. Verify field/finding/passage links and applicable risk constraints without assuming that nonempty text or a source hash proves meaning. Persist enough source and review content for later closed audits without mutable external JSON. Add actual-package negative cases for forged review bodies, invalid dates/results and stripped context, including the shared revision gate and importer.
 
-### CR-03: BLOCKER — The adopted marker freezes all future selected records without a revision path
+### CR-03: BLOCKER — Fixed witness identities prevent new reviewed corrections
 
-**File:** `src/arsiv.py:685` (also `src/arsiv.py:123`, `src/arsiv.py:662`, `src/arsiv.py:957`)  
-**Issue:** The selected proof must equal *all* current rows, fields, syntheses and inventory for its taxonomy, but descent requires the old marker and its evidence to remain byte-for-byte unchanged. SQLite permits only one version-1 marker per taxonomy and rejects other marker versions. After the current release adopts its marker, adding a legitimate new sourced row, field, synthesis or inventory entry to taxonomy 4 makes the original proof mismatch; replacing the proof violates descent and a second same-version marker violates the primary key. Consequently ordinary corrections or newly discovered source evidence cannot be published under that taxonomy without creating an unrelated taxonomy revision. In addition, any retained marker is rejected for a partial stage, and the existing descent stage rule also prevents a complete base from progressing to a partial candidate. This conflates historical proof preservation with the current completion state and obstructs incremental forward work.
+**File:** `src/arsiv.py:1025` (also `src/arsiv.py:970`, `src/arsiv.py:985`, `src/arsiv.py:1354`)  
+**Issue:** Each immutable risk searches only its predeclared `witness_decision_ids`, cell IDs and assertion IDs; successors cannot change those risk entries. The actual `field:principle` risk lists only `SR25:field:tip-kapitalizm-principle`, one cell and one assertion, even though its `additional_eligible_witness_policy` explicitly permits a newly authored source-linked witness. As a bounded probe on the committed package, I retained the exact same substantive decision but gave it a new immutable ID and removed the old ID from the proposed current decisions. `validate_source_risk_review` rejected it with `Kaynak anlamı riski için maddi inceleme eksik: field:principle`. A real supersession of that sampled row or a changed-taxonomy migration needs a new active row/field/decision, yet the old ID and old cell remain the only eligible proof. Historical complete revisions can retain the old decision, but the active revision cannot satisfy the risk with its new source-linked witness.
 
-**Fix:** Preserve historical proofs as immutable, revisioned snapshots, bind the active completion decision to a new revision or release, and validate preserved records separately from newly added records. Permit a legitimately sourced same-taxonomy addition and new completion revision without inventing a taxonomy change. Define supported partial/new-taxonomy/supersession transitions so the old marker remains immutable without asserting that an unfinished new selection is complete. Exercise the actual APIs `load_comparison`, `export_db`, `publish_release`, `audit_release` and `validate_comparison_descent` for a sourced addition and a partial-to-complete forward transition from the marked release; verify that modifying or removing old proof still fails.
+**Fix:** Keep the original risk class and historic decisions immutable, while treating listed witness IDs as examples and allowing each later revision to supply new independently authenticated witnesses evaluated against typed applicability and source/lineage constraints instead of a frozen list of decision and cell IDs. Verify a real replacement of the SR25-sampled context and a source-backed new-taxonomy transition, preserving and revalidating the old revision. Include a negative case showing an unrelated witness is rejected; do not solve this by accepting arbitrary IDs or dropping the risk.
 
 ---
 
