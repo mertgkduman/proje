@@ -16,15 +16,16 @@ class ComparisonReleaseTest(unittest.TestCase):
     @staticmethod
     def reviewed_current():
         folder = arsiv.DATA / 'releases' / arsiv.current()
-        data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
-        package = Path(__file__).resolve().parents[1] / 'data/comparisons/03-source-review.json'
-        payload = json.loads(package.read_text(encoding='utf-8'))
-        data['comparison_completion'] = [r['values'] for r in payload['records']
-                                         if r['kind'] == 'comparison_completion']
-        return data
+        return json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+
+    @staticmethod
+    def reviewed_v1_history():
+        """The immutable release whose v1 completion proof these tests exercise."""
+        folder = arsiv.DATA / 'releases' / '85b1a453ce2346a8ad0df325a2b73ae9'
+        return json.loads((folder / 'records.json').read_text(encoding='utf-8'))
 
     def test_completion_requires_source_meaning_review(self):
-        data = self.reviewed_current()
+        data = self.reviewed_v1_history()
         marker = data['comparison_completion'][0]
         evidence = json.loads(marker['evidence'])
         evidence['source_review']['checks'] = []

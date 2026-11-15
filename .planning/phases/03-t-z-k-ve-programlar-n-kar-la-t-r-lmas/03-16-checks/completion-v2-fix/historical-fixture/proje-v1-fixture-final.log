@@ -1,0 +1,12 @@
+test_historical_contract_fixture_survives_v2_current (test_completion_coverage.CompletionCoverageTest.test_historical_contract_fixture_survives_v2_current)
+A live v2 release cannot turn the historical v1 fixture into v2. ... ok
+test_real_review_and_legacy_snapshot_remain_valid (test_completion_coverage.CompletionCoverageTest.test_real_review_and_legacy_snapshot_remain_valid) ... ok
+test_mutable_input_cannot_claim_a_modified_historical_marker (test_completion_coverage.CompletionCoverageTest.test_mutable_input_cannot_claim_a_modified_historical_marker) ... ok
+test_rejects_missing_topic_party_and_unmatched_inventory (test_completion_coverage.CompletionCoverageTest.test_rejects_missing_topic_party_and_unmatched_inventory) ... ok
+test_frozen_renderer_22_reproduces_historical_release (test_completion_coverage.CompletionCoverageTest.test_frozen_renderer_22_reproduces_historical_release) ... ok
+test_completion_requires_source_meaning_review (test_comparisons.ComparisonReleaseTest.test_completion_requires_source_meaning_review) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 22.650s
+
+OK

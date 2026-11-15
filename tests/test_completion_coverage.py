@@ -76,7 +76,7 @@ class SourceBasisCellTest(unittest.TestCase):
 class CompletionCoverageTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.reviewed = test_comparisons.ComparisonReleaseTest.reviewed_current()
+        cls.reviewed = test_comparisons.ComparisonReleaseTest.reviewed_v1_history()
         cls.taxonomy = cls.reviewed['comparison_contract'][0]['taxonomy_version']
 
     def altered(self, table, index, **changes):
@@ -92,6 +92,37 @@ class CompletionCoverageTest(unittest.TestCase):
         for table in arsiv.COMPLETION_V2_TABLES:
             data[table] = [r['values'] for r in payload['records'] if r['kind'] == table]
         return data
+
+    def test_historical_contract_fixture_survives_v2_current(self):
+        """A live v2 release cannot turn the historical v1 fixture into v2."""
+        original = arsiv.DATA
+        v2 = self.modern()
+        self.assertTrue(arsiv.validate_completion(v2))
+        historical_id = '85b1a453ce2346a8ad0df325a2b73ae9'
+        with tempfile.TemporaryDirectory() as temp:
+            arsiv.DATA = Path(temp) / 'data'
+            try:
+                historical = arsiv.DATA / 'releases' / historical_id
+                historical.mkdir(parents=True)
+                shutil.copyfile(original / 'releases' / historical_id / 'records.json', historical / 'records.json')
+                current = arsiv.DATA / 'releases' / 'fixture-v2-current'
+                current.mkdir()
+                v2 = dict(v2, release_id='fixture-v2-current')
+                (current / 'records.json').write_text(json.dumps(v2, ensure_ascii=False), encoding='utf-8')
+                (arsiv.DATA / 'current.json').write_text(json.dumps({'release_id': 'fixture-v2-current'}), encoding='utf-8')
+                live = test_comparisons.ComparisonReleaseTest.reviewed_current()
+                self.assertEqual(live['release_id'], 'fixture-v2-current')
+                self.assertEqual(live, v2)
+                self.assertTrue(arsiv.validate_completion(live))
+                class HistoricalContract(CompletionCoverageTest):
+                    pass
+                HistoricalContract.setUpClass()
+                fixture = HistoricalContract('test_real_review_and_legacy_snapshot_remain_valid')
+                fixture.test_real_review_and_legacy_snapshot_remain_valid()
+                self.assertEqual(fixture.reviewed['release_id'], historical_id)
+                self.assertFalse(fixture.reviewed.get('comparison_completion_revision'))
+            finally:
+                arsiv.DATA = original
 
     def structural_gap_fixture(self):
         """STRUCTURAL FUTURE fixture; no missing TİP program is claimed."""
@@ -900,7 +931,9 @@ class CompletionCoverageTest(unittest.TestCase):
                 arsiv.DATA.mkdir()
                 for directory in ('releases', 'objects', 'views'):
                     shutil.copytree(original / directory, arsiv.DATA / directory)
-                shutil.copyfile(original / 'current.json', arsiv.DATA / 'current.json')
+                # This isolated workflow starts from the immutable v1 fixture,
+                # regardless of which release is live outside the test tree.
+                (arsiv.DATA / 'current.json').write_text(json.dumps({'release_id': self.reviewed['release_id']}), encoding='utf-8')
                 for source in basis['source_documents']:
                     relative = Path(source['path']).relative_to('data')
                     target = arsiv.DATA / relative

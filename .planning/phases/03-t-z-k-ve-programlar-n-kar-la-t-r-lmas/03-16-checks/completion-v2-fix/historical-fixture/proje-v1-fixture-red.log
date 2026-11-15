@@ -1,0 +1,31 @@
+test_historical_contract_fixture_survives_v2_current (test_completion_coverage.CompletionCoverageTest.test_historical_contract_fixture_survives_v2_current)
+A live v2 release cannot turn the historical v1 fixture into v2. ... ERROR
+
+======================================================================
+ERROR: test_historical_contract_fixture_survives_v2_current (test_completion_coverage.CompletionCoverageTest.test_historical_contract_fixture_survives_v2_current)
+A live v2 release cannot turn the historical v1 fixture into v2.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/proje-v1-fixture-red-20261115/src/arsiv.py", line 1700, in validate_completion_revisions
+    raise ValueError('Var olmayan önceki kaynak kapanışı çapası reddedildi')
+ValueError: Var olmayan önceki kaynak kapanışı çapası reddedildi
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/proje-v1-fixture-red-20261115/tests/test_completion_coverage.py", line 121, in test_historical_contract_fixture_survives_v2_current
+    fixture.test_real_review_and_legacy_snapshot_remain_valid()
+  File "/tmp/proje-v1-fixture-red-20261115/tests/test_completion_coverage.py", line 672, in test_real_review_and_legacy_snapshot_remain_valid
+    self.assertTrue(arsiv.validate_completion(legacy))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/proje-v1-fixture-red-20261115/src/arsiv.py", line 1778, in validate_completion
+    return validate_completion_revisions(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/proje-v1-fixture-red-20261115/src/arsiv.py", line 1751, in validate_completion_revisions
+    raise ValueError('Kaynak kapanışı revizyon kanıtı geçersiz: ' + str(exc)) from exc
+ValueError: Kaynak kapanışı revizyon kanıtı geçersiz: Var olmayan önceki kaynak kapanışı çapası reddedildi
+
+----------------------------------------------------------------------
+Ran 1 test in 17.773s
+
+FAILED (errors=1)
