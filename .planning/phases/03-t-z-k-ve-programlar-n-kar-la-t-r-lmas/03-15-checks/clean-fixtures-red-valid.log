@@ -1,0 +1,21 @@
+test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact (test_comparison_navigation.ComparisonNavigation.test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact) ... ERROR
+
+======================================================================
+ERROR: test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact (test_comparison_navigation.ComparisonNavigation.test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/gsd-03-clean-fixtures-red-valid-ke_lfrwb/tests/test_comparison_navigation.py", line 61, in test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact
+    records = json.loads((folder / 'records.json').read_text())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/gsd-03-clean-fixtures-red-valid-ke_lfrwb/data/releases/ef353c40c60b400eb1c52b3245e9a65b/records.json'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.346s
+
+FAILED (errors=1)

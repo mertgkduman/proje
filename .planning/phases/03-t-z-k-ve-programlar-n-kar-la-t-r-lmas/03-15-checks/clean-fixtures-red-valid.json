@@ -1,0 +1,39 @@
+{
+  "head": "5face6bd78e563df380a53fa5fe9a73b17518b75",
+  "requested_scopes": [
+    "src",
+    "tests",
+    "data/current.json",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549"
+  ],
+  "selection_command": [
+    "git",
+    "ls-files",
+    "-z",
+    "--",
+    "src",
+    "tests",
+    "data/current.json",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549"
+  ],
+  "tracked_fixture_files": [],
+  "archive_member_count": 63,
+  "cwd": "/tmp/gsd-03-clean-fixtures-red-valid-ke_lfrwb",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_comparison_navigation.py",
+    "-k",
+    "test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact",
+    "-v"
+  ],
+  "exit": 1,
+  "supersedes": "clean-fixtures-red.json: initial scope did not explicitly request fixture directories"
+}
