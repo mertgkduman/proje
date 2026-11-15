@@ -386,6 +386,8 @@ class CompletionCoverageTest(unittest.TestCase):
                 self.assertEqual(partial_data['comparison_contract'][0]['stage'], 'partial')
                 self.assertEqual(partial_data['comparison_completion'], self.reviewed['comparison_completion'])
                 self.assertIn('test-tip-kapitalizm-context-row', {r['id'] for r in partial_data['comparison_row']})
+                arsiv.load_comparison(work, partial)
+                self.assertEqual(arsiv.export_db(work / 'records.sqlite3', 'partial-work'), partial_data)
                 print('isolated: publishing and auditing partial revision', flush=True)
                 partial_release = arsiv.publish_release(work, refresh=True)
                 self.assertEqual(arsiv.validate_phase_three(partial_release, 'partial'), True)
@@ -421,6 +423,7 @@ class CompletionCoverageTest(unittest.TestCase):
                 arsiv.load_comparison(work, complete_payload)
                 complete_release = arsiv.publish_release(work, refresh=True)
                 self.assertEqual(arsiv.audit_release(complete_release), complete_release)
+                self.assertTrue(arsiv.validate_phase_three(complete_release, 'complete'))
                 result = json.loads((arsiv.DATA / 'releases' / complete_release / 'records.json').read_text())
                 self.assertEqual(result['comparison_contract'][0]['taxonomy_version'], self.taxonomy)
                 self.assertEqual(result['comparison_contract'][0]['stage'], 'complete')
@@ -432,6 +435,16 @@ class CompletionCoverageTest(unittest.TestCase):
                 self.assertIn(link['new_row_id'], {r['id'] for r in visible['comparison_row']})
                 self.assertTrue(arsiv.validate_comparison_descent(partial_data, result))
                 self.assertEqual(preserved, {p.name: arsiv.sha(p) for p in folder.iterdir() if p.is_file()})
+                manifest_path = arsiv.DATA / 'releases' / complete_release / 'manifest.json'
+                original_manifest = manifest_path.read_bytes()
+                try:
+                    manifest = json.loads(original_manifest)
+                    manifest['comparison_completion_review_sha256'] = '0' * 64
+                    manifest_path.write_text(json.dumps(manifest))
+                    with self.assertRaisesRegex(ValueError, 'revizyon manifesti'):
+                        arsiv.audit_release(complete_release)
+                finally:
+                    manifest_path.write_bytes(original_manifest)
                 print('isolated: audited complete successor', complete_release, flush=True)
             finally:
                 arsiv.DATA = original
