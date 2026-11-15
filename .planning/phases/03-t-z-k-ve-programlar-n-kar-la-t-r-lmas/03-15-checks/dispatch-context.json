@@ -1,0 +1,23 @@
+{
+  "phase": "03",
+  "plan": "03-15",
+  "created_utc": "2026-11-15T02:28:29.738534+00:00",
+  "start_head": "717df861ae50a32e43534c4df6754fb51d2c4885",
+  "model": "gpt-6.1-terra",
+  "reasoning_effort": "high",
+  "dispatch": "native typed gsd-executor; isolation none; fork_turns none",
+  "tdd_applicable": true,
+  "tdd_source": "task_attribute",
+  "transport": "Explicit complete compiled-file read required before work; native message does not assume @ expansion. Canonical source texts are embedded verbatim in file; all bytes/ranges must be loaded, not summarized.",
+  "payload": "/tmp/gsd-dispatch-03-15.txt",
+  "characters": 140848,
+  "sha256": "4a6e0e3131adc35a7c85bfc62cda4f169c7fc9d504d467df97575d1616fbe78b",
+  "canonical_sources": {
+    "/hpc/home/mg551/.codex/gsd-core/workflows/execute-plan.md": "75a54468ff8774a909c5760757a1f277e73fcf27fb5988279cc371a056b2f462",
+    "/hpc/home/mg551/.codex/gsd-core/templates/summary.md": "4aeac499ff18e4c1285934854cb649e0762aa579a3934f4e666a1cccd60b8171",
+    "/hpc/home/mg551/.codex/gsd-core/references/checkpoints.md": "3cd676accd75084a1be0c32b886bdd9d0c8148fb644f0000eb314f07eceb3d73",
+    "/hpc/home/mg551/.codex/gsd-core/references/tdd.md": "e40bd834227d4fe8be59efc08fe89b553b6dce1aaa6408c9dcf558244f845d42",
+    "/hpc/home/mg551/.codex/gsd-core/references/worktree-path-safety.md": "2b670ac759e70a83f790385fa0d1d7cab72eb57d30c71b21046613ec3b420942",
+    "/hpc/home/mg551/.codex/gsd-core/references/executor-examples.md": "2de8e6a99861e9b12e17d9dd6ffc37b7340274784dbc3b020e3fbc0bf900be45"
+  }
+}
