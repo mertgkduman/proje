@@ -25,6 +25,47 @@ def release_with_comparison_taxonomy(version):
 
 
 class ComparisonContentTest(unittest.TestCase):
+    def test_versioned_lineage_audit_requires_real_review_for_cross_topic_mapping(self):
+        parties = ['yeni-parti', 'tip', 'dem', 'iyi', 'yeni-yol', 'dbp', 'emep', 'saadet', 'demokrat']
+        common = dict(domain='program', parent_topic_id=None, applicable_levels='ulusal', basis_kind='program')
+        topics = [dict(common, topic_id=tid, taxonomy_version=v, definition=definition)
+                  for v in (4, 5) for tid, definition in [('a', 'A tanımı'), ('b', 'B tanımı')]]
+        # B really changes; A is unchanged, but one B row is moved to A.
+        next(t for t in topics if t['topic_id'] == 'b' and t['taxonomy_version'] == 5)['definition'] = 'B yeni tanımı'
+        data = dict(comparison_contract=[dict(version=3, taxonomy_version=5)],
+                    scope_party=[dict(party_id=p) for p in parties], comparison_topic=topics,
+                    comparison_row=[], comparison_field=[], finding_evidence=[], comparison_semantic_review=[],
+                    comparison_lineage_contract=[dict(version=1, first_taxonomy_version=5)], comparison_row_lineage=[], comparison_row_meaning=[])
+        for topic in ('a', 'b'):
+            for party in parties:
+                old = dict(id=f'old-{topic}-{party}', topic_id=topic, taxonomy_version=4, party_id=party,
+                           state='no_explicit_statement', scope_id=f'scope-{topic}-{party}')
+                new = dict(old, id=f'new-{topic}-{party}', taxonomy_version=5)
+                if topic == 'b' and party == 'iyi': new['topic_id'] = 'a'
+                data['comparison_row'].extend([old, new])
+                data['comparison_row_lineage'].append(dict(old_row_id=old['id'], new_row_id=new['id'], transition='mapped'))
+                if new['topic_id'] == 'b' or (topic == 'b' and party == 'iyi'):
+                    definition = 'A tanımı' if new['topic_id'] == 'a' else 'B yeni tanımı'
+                    refs = [new['scope_id']]
+                    data['comparison_row_meaning'].append(dict(row_id=new['id'], definition=definition, conditions='Kapsam incelendi', refs=json.dumps(refs)))
+                    data['comparison_semantic_review'].append(dict(subject_kind='comparison_row', subject_id=new['id'], reviewer_kind='agent', result='reviewed', reviewed_at='2026-11-14T00:00:00+00:00', reason=definition + ' Kapsam incelendi ' + refs[0]))
+        extra = dict(id='new-b-iyi-replacement', topic_id='b', taxonomy_version=5, party_id='iyi', state='no_explicit_statement', scope_id='scope-b-iyi')
+        data['comparison_row'].append(extra)
+        data['comparison_row_meaning'].append(dict(row_id=extra['id'], definition='B yeni tanımı', conditions='Kapsam incelendi', refs='["scope-b-iyi"]'))
+        data['comparison_semantic_review'].append(dict(subject_kind='comparison_row', subject_id=extra['id'], reviewer_kind='agent', result='reviewed', reviewed_at='2026-11-14T00:00:00+00:00', reason='B yeni tanımı Kapsam incelendi scope-b-iyi'))
+        self.assertTrue(arsiv.validate_changed_topic_reviews(data))
+        for change in ('missing_lineage', 'wrong_lineage', 'missing_review', 'wrong_ref', 'missing_conditions'):
+            altered = copy.deepcopy(data)
+            edge = next(x for x in altered['comparison_row_lineage'] if x['old_row_id'] == 'old-b-iyi')
+            meaning = next(x for x in altered['comparison_row_meaning'] if x['row_id'] == 'new-b-iyi')
+            if change == 'missing_lineage': altered['comparison_row_lineage'].remove(edge)
+            if change == 'wrong_lineage': edge['old_row_id'] = 'old-a-tip'
+            if change == 'missing_review': altered['comparison_row_meaning'].remove(meaning)
+            if change == 'wrong_ref': meaning['refs'] = '["scope-a-iyi"]'
+            if change == 'missing_conditions': meaning['conditions'] = ''
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                arsiv.validate_changed_topic_reviews(altered)
+
     def test_changed_topic_audit_requires_nine_reviewed_rows(self):
         parties = ['yeni-parti', 'tip', 'dem', 'iyi', 'yeni-yol', 'dbp', 'emep', 'saadet', 'demokrat']
         topic = dict(topic_id='test', taxonomy_version=3, domain='program', parent_topic_id=None, definition='Yeni tanım', applicable_levels='ulusal', basis_kind='program')
@@ -127,6 +168,33 @@ class ComparisonContentTest(unittest.TestCase):
                 altered['records'].append(dict(kind='comparison_row', values=dict(id='unreviewed-extra', topic_id=changed_topic, taxonomy_version=3, party_id=rows[0]['party_id'], state='not_researched')))
                 with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
                     arsiv.comparison_reconcile(work, taxonomy, inventory, altered)
+                # Move an old row to a different, unchanged existing topic.
+                # The separate real definition change must not authorize it.
+                parties = {r['party_id'] for r in rows}
+                coverage = {t['topic_id']: {r['party_id'] for r in rows if r['topic_id'] == t['topic_id']} for t in topics}
+                target = next(t for t in topics if t['topic_id'] != changed_topic and coverage[t['topic_id']] == parties)
+                source_mapping = next(m for m in mappings if m['topic_id'] not in (changed_topic, target['topic_id']))
+                cross_taxonomy = copy.deepcopy(taxonomy)
+                moved = next(m for m in cross_taxonomy['row_mappings'] if m['old_row_id'] == source_mapping['old_row_id'])
+                moved['topic_id'] = target['topic_id']
+                cross_backfill = copy.deepcopy(backfill); cross_backfill['contract_version'] = 3
+                with self.assertRaisesRegex(ValueError, 'anlam incelemesi'):
+                    arsiv.comparison_reconcile(work, cross_taxonomy, inventory, cross_backfill)
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
+                refs = row_refs[moved['old_row_id']]
+                decision = dict(row_id=moved['new_row_id'], topic_id=target['topic_id'], party_id=row_parties[moved['old_row_id']], definition=target['definition'], conditions='Yalıtılmış yeni anlam koşulu', refs=refs)
+                cross_backfill['row_reviews'].append(decision)
+                cross_backfill['records'].append(dict(kind='comparison_semantic_review', values=dict(subject_kind='comparison_row', subject_id=moved['new_row_id'], reviewer_kind='agent', reviewed_at='2026-11-14T00:00:00+00:00', result='reviewed', reason=target['definition'] + ' ' + decision['conditions'] + ' ' + ' '.join(refs))))
+                captured_lineage = []
+                def capture_cross(candidate, payload, **kwargs):
+                    captured_lineage.extend(payload['records'])
+                    raise RuntimeError('cross-topic producer verified')
+                arsiv.load_comparison = capture_cross
+                with self.assertRaisesRegex(RuntimeError, 'cross-topic producer verified'):
+                    arsiv.comparison_reconcile(work, cross_taxonomy, inventory, cross_backfill)
+                self.assertTrue(any(e['kind'] == 'comparison_row_lineage' and e['values']['old_row_id'] == moved['old_row_id'] and e['values']['new_row_id'] == moved['new_row_id'] for e in captured_lineage))
+                self.assertTrue(any(e['kind'] == 'comparison_row_meaning' and e['values']['row_id'] == moved['new_row_id'] for e in captured_lineage))
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
                 captured = []
                 def fail_after_mapping(candidate, payload, **kwargs):
                     captured.extend(r for r in payload['records'] if r['kind'] == 'comparison_row')
@@ -143,6 +211,25 @@ class ComparisonContentTest(unittest.TestCase):
                     item['taxonomy_version'] = 3
                 taxonomy['records'] = ([dict(kind='topic', values=t) for t in dictionary] +
                                        [dict(kind='topic_basis', values=b) for b in bases] + taxonomy['records'])
+                cross_taxonomy['records'] = ([dict(kind='topic', values=t) for t in dictionary] +
+                                             [dict(kind='topic_basis', values=b) for b in bases] + cross_taxonomy['records'])
+                with tempfile.TemporaryDirectory(dir=work) as cross_tmp:
+                    cross_work = Path(cross_tmp)
+                    shutil.copyfile(work / 'records.sqlite3', cross_work / 'records.sqlite3')
+                    shutil.copyfile(work / 'workspace.json', cross_work / 'workspace.json')
+                    arsiv.load_comparison = original_load
+                    arsiv.export_db = lambda *args, **kwargs: {}
+                    arsiv.comparison_reconcile(cross_work, cross_taxonomy, inventory, cross_backfill)
+                    db = arsiv.connect_readonly(cross_work / 'records.sqlite3')
+                    try:
+                        names = ['comparison_contract', 'scope_party', 'comparison_topic', 'comparison_row', 'comparison_field', 'comparison_change', 'finding_evidence', 'comparison_semantic_review', *arsiv.LINEAGE_TABLES]
+                        snapshot = {name: [dict(r) for r in db.execute('SELECT * FROM ' + name)] for name in names}
+                    finally:
+                        db.close()
+                    self.assertTrue(arsiv.validate_changed_topic_reviews(snapshot))
+                    removed = next(e for e in snapshot['comparison_row_lineage'] if e['old_row_id'] == moved['old_row_id'])
+                    snapshot['comparison_row_lineage'].remove(removed)
+                    with self.assertRaises(ValueError): arsiv.validate_changed_topic_reviews(snapshot)
                 arsiv.load_comparison = original_load
                 arsiv.export_db = lambda *args, **kwargs: {}
                 arsiv.comparison_reconcile(work, taxonomy, inventory, backfill)

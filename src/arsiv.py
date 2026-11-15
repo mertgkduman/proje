@@ -119,6 +119,11 @@ COMPARISON_TABLES = {
     'comparison_semantic_review': 'subject_kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(subject_kind,subject_id,reviewer_kind)',
 }
 COMPARISON_INVENTORY_TABLE = 'id TEXT PRIMARY KEY, taxonomy_version INTEGER NOT NULL, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT REFERENCES document_version(id), source_role TEXT NOT NULL, section TEXT NOT NULL, page_range TEXT, full_text_available INTEGER NOT NULL, scanned_at TEXT NOT NULL, topic_ids TEXT NOT NULL, unmatched_headings TEXT NOT NULL, search_boundary TEXT NOT NULL, missing_id TEXT REFERENCES missing(id)'
+LINEAGE_TABLES = {
+    'comparison_lineage_contract': 'version INTEGER PRIMARY KEY, first_taxonomy_version INTEGER NOT NULL',
+    'comparison_row_lineage': 'old_row_id TEXT NOT NULL REFERENCES comparison_row(id), new_row_id TEXT NOT NULL REFERENCES comparison_row(id), transition TEXT NOT NULL, PRIMARY KEY(old_row_id,new_row_id)',
+    'comparison_row_meaning': 'row_id TEXT PRIMARY KEY REFERENCES comparison_row(id), definition TEXT NOT NULL, conditions TEXT NOT NULL, refs TEXT NOT NULL',
+}
 LEGACY_TABLES = ('party', 'document', 'document_version', 'passage', 'finding', 'finding_evidence', 'comparison', 'comparison_evidence')
 
 
@@ -341,7 +346,7 @@ def comparison_inventory_records(inventory, taxonomy_version):
 
 
 def load_comparison(work, payload, inventory=None, *, reconciled=False):
-    if not isinstance(payload, dict) or type(payload.get('contract_version')) is not int or payload['contract_version'] not in (1, 2) or payload.get('stage') not in ('tracer','partial','complete') or type(payload.get('taxonomy_version')) is not int or payload['taxonomy_version'] < 1 or not isinstance(payload.get('records'), list):
+    if not isinstance(payload, dict) or type(payload.get('contract_version')) is not int or payload['contract_version'] not in (1, 2, 3) or payload.get('stage') not in ('tracer','partial','complete') or type(payload.get('taxonomy_version')) is not int or payload['taxonomy_version'] < 1 or not isinstance(payload.get('records'), list):
         raise ValueError('Karşılaştırma paketi geçersiz')
     if inventory is not None:
         if payload['stage'] != 'complete': raise ValueError('Kaynak envanteri yalnız tam karşılaştırmaya eklenebilir')
@@ -349,7 +354,7 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
     work = Path(work)
     assert_lock(work)
     protected = {'party','scope_party','scope_observation','method','party_identity_revision','source_policy'}
-    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected) | {'comparison_source_inventory'}
+    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected) | {'comparison_source_inventory'} | set(LINEAGE_TABLES)
     with tempfile.TemporaryDirectory(dir=work) as temp:
         temp = Path(temp)
         shutil.copyfile(work / 'records.sqlite3', temp / 'records.sqlite3')
@@ -358,16 +363,19 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
         try:
             migrate_comparisons(db, work / 'pre-comparison-migration.sqlite3')
             with db:
+                if payload['contract_version'] == 3:
+                    for name, definition in LINEAGE_TABLES.items():
+                        db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
                 contract = db.execute('SELECT * FROM comparison_contract').fetchone()
                 historical_package = False
                 if contract:
-                    if contract['version'] not in (1, 2): raise ValueError('Bilinmeyen karşılaştırma sözleşmesi')
+                    if contract['version'] not in (1, 2, 3): raise ValueError('Bilinmeyen karşılaştırma sözleşmesi')
                     if payload['taxonomy_version'] >= 3 and payload['taxonomy_version'] > contract['taxonomy_version'] and not reconciled:
                         raise ValueError('Yeni sözlük açık karşılaştırma eşlemesi gerektirir')
                     stages = {'tracer':0,'partial':1,'complete':2}
                     historical_package = payload['taxonomy_version'] < contract['taxonomy_version'] or stages[payload['stage']] < stages[contract['stage']]
                     if not historical_package:
-                        if payload['contract_version'] < contract['version'] or (payload['contract_version'] == 2 and payload['taxonomy_version'] < 3):
+                        if payload['contract_version'] < contract['version'] or (payload['contract_version'] >= 2 and payload['taxonomy_version'] < 3):
                             raise ValueError('Karşılaştırma sözleşmesi geriletilemez veya eski sözlüğe uygulanamaz')
                         db.execute('UPDATE comparison_contract SET version=?,taxonomy_version=?,stage=? WHERE version=?', (payload['contract_version'],payload['taxonomy_version'],payload['stage'],contract['version']))
                 else:
@@ -377,6 +385,8 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                     if not isinstance(entry, dict) or set(entry) != {'kind','values'} or entry['kind'] not in allowed or not isinstance(entry['values'],dict) or not entry['values']:
                         raise ValueError('Karşılaştırma paket kaydı geçersiz')
                     kind, values = entry['kind'], entry['values']
+                    if kind in LINEAGE_TABLES and payload['contract_version'] != 3:
+                        raise ValueError('Satır soyu sürüm 3 sözleşmesi gerektirir')
                     if kind == 'comparison_source_inventory':
                         values = dict(values)
                         for key in ('topic_ids', 'unmatched_headings'):
@@ -397,7 +407,7 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                         if conflicts: raise ValueError('Aynı kimlikle çelişen kayıt')
                         continue
                     if historical_package: raise ValueError('Eski paket mevcut sürüme yeni kayıt ekleyemez')
-                    if kind in COMPARISON_TABLES or kind == 'comparison_source_inventory':
+                    if kind in COMPARISON_TABLES or kind in LINEAGE_TABLES or kind == 'comparison_source_inventory':
                         keys = list(values)
                         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
                     else:
@@ -437,6 +447,9 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
         parties = {r['party_id'] for r in db.execute('SELECT party_id FROM scope_party')}
         old_topics = {r['topic_id']: dict(r) for r in db.execute('SELECT * FROM comparison_topic WHERE taxonomy_version=?', (old_version,))}
         old_rows = {r['id']: dict(r) for r in db.execute('SELECT * FROM comparison_row WHERE taxonomy_version=?', (old_version,))}
+        cross_topic = {m.get('new_row_id') for m in mappings if isinstance(m, dict) and m.get('old_row_id') in old_rows and m.get('topic_id') != old_rows[m['old_row_id']]['topic_id']}
+        if (old_version >= 3 or cross_topic) and backfill.get('contract_version') != 3:
+            raise ValueError('Yeni sözlük için sürüm 3 satır soyu sözleşmesi gerekli')
         topic_entries = [e['values'] for e in taxonomy_records if e.get('kind') == 'comparison_topic']
         new_topics = {entry['topic_id']: entry for entry in topic_entries}
         if not new_topics or any(t.get('taxonomy_version') != version for t in new_topics.values()):
@@ -447,7 +460,8 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
         # Check reviewed coverage before constructing or writing any candidate.
         compare_keys = ('domain', 'parent_topic_id', 'definition', 'applicable_levels', 'basis_kind')
         changed = {tid for tid, topic in new_topics.items() if tid not in old_topics or any(topic.get(k) != old_topics[tid].get(k) for k in compare_keys)}
-        covered = {tid: set() for tid in changed}
+        affected_topics = changed | {m.get('topic_id') for m in mappings if isinstance(m, dict) and m.get('new_row_id') in cross_topic}
+        covered = {tid: set() for tid in affected_topics}
         for row in direct_rows:
             if row.get('topic_id') in covered and row.get('state') in ('evidence', 'no_explicit_statement', 'document_missing'):
                 covered[row['topic_id']].add(row.get('party_id'))
@@ -460,6 +474,8 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
         if not changed or not set(old_topics) <= set(new_topics):
             raise ValueError('Sürüm değişikliği gerçek konu değişikliği ve tam eski konu eşlemesi gerektirir')
         records = list(taxonomy_records)
+        if backfill.get('contract_version') == 3 and contract['version'] < 3:
+            records.append({'kind': 'comparison_lineage_contract', 'values': {'version': 1, 'first_taxonomy_version': version}})
         used = set()
         for mapping in mappings:
             if not isinstance(mapping, dict) or set(mapping) != {'old_row_id','new_row_id','topic_id','reason','fields','changes'} or not mapping['reason']:
@@ -468,6 +484,8 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
             if not source or source['id'] in used or source['state'] == 'not_researched' or mapping['topic_id'] not in new_topics:
                 raise ValueError('Eski satır eşlemesi geçersiz')
             used.add(source['id'])
+            if backfill.get('contract_version') == 3:
+                records.append({'kind': 'comparison_row_lineage', 'values': {'old_row_id': source['id'], 'new_row_id': mapping['new_row_id'], 'transition': 'mapped'}})
             row = dict(source, id=mapping['new_row_id'], topic_id=mapping['topic_id'], taxonomy_version=version,
                        selection_reason=source['selection_reason'] + ' Eşleme: ' + mapping['reason'] + ' [' + source['id'] + ']')
             records.append({'kind': 'comparison_row', 'values': row})
@@ -487,13 +505,17 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
             if not source or source['id'] in used or any(rid not in direct_by_id or direct_by_id[rid].get('party_id') != source['party_id'] for rid in item['replacement_ids']):
                 raise ValueError('Geçersiz satır değişimi')
             used.add(source['id'])
+            if backfill.get('contract_version') == 3:
+                for rid in item['replacement_ids']:
+                    records.append({'kind': 'comparison_row_lineage', 'values': {'old_row_id': source['id'], 'new_row_id': rid, 'transition': 'superseded'}})
         if used != set(old_rows):
             raise ValueError('Bütün seçili eski satırların açık lineage eşlemesi gerekli')
         # A count is not a research review. Changed topics require an explicit
         # author-supplied decision for each selected row and references to that
         # row's actual passage, scoped absence, or missing-document record.
         candidate_records = records + backfill_records
-        changed_rows = {e['values']['id']: e['values'] for e in candidate_records if e.get('kind') == 'comparison_row' and e['values'].get('topic_id') in changed}
+        superseding = {rid for item in superseded for rid in item['replacement_ids']} if backfill.get('contract_version') == 3 else set()
+        changed_rows = {e['values']['id']: e['values'] for e in candidate_records if e.get('kind') == 'comparison_row' and (e['values'].get('topic_id') in changed or e['values']['id'] in cross_topic or e['values']['id'] in superseding)}
         reviews = {(e['values'].get('subject_kind'), e['values'].get('subject_id')): e['values'] for e in backfill_records if e.get('kind') == 'comparison_semantic_review'}
         links = backfill.get('row_reviews')
         if not isinstance(links, list): raise ValueError('Yeni anlam incelemesi ve kaynak ilişkileri gerekli')
@@ -528,10 +550,13 @@ def comparison_reconcile(work, taxonomy, inventory, backfill):
                 raise ValueError('Satır anlam incelemesi gerçek kanıt veya kapsamla uyuşmalı')
             if link['definition'] not in review['reason'] or link['conditions'] not in review['reason'] or any(ref not in review['reason'] for ref in refs):
                 raise ValueError('Anlam incelemesi tanım, koşul ve tüm kaynak ilişkilerini açıklamalı')
+            if backfill.get('contract_version') == 3:
+                records.append({'kind': 'comparison_row_meaning', 'values': {'row_id': rid, 'definition': link['definition'], 'conditions': link['conditions'], 'refs': json.dumps(sorted(refs), ensure_ascii=False)}})
     finally:
         db.close()
     records.extend(comparison_inventory_records(inventory, version))
     records.extend(backfill_records)
+    records = [r for r in records if r['kind'] not in LINEAGE_TABLES] + [r for r in records if r['kind'] in LINEAGE_TABLES]
     payload = dict(backfill, records=records)
     with tempfile.TemporaryDirectory(dir=work) as tmp:
         candidate = Path(tmp)
@@ -628,10 +653,10 @@ def validate_comparisons(data):
         if any(data.get(n) for n in COMPARISON_TABLES if n != 'comparison_contract'):
             raise ValueError('Karşılaştırma sözleşmesi eksik')
         return True
-    if len(contracts) != 1 or contracts[0]['version'] not in (1, 2) or contracts[0]['stage'] not in ('tracer', 'partial', 'complete'):
+    if len(contracts) != 1 or contracts[0]['version'] not in (1, 2, 3) or contracts[0]['stage'] not in ('tracer', 'partial', 'complete'):
         raise ValueError('Karşılaştırma sözleşmesi geçersiz')
     contract = contracts[0]
-    if contract['version'] == 2 and contract['taxonomy_version'] < 3:
+    if contract['version'] >= 2 and contract['taxonomy_version'] < 3:
         raise ValueError('Sentez sözleşmesi seçili sözlük sürümü 3 gerektirir')
     topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
     if not topics: raise ValueError('En az bir karşılaştırma konusu gerekli')
@@ -799,7 +824,7 @@ def validate_comparisons(data):
         # taxonomy is currently selected. Earlier contract-1 claims without
         # such a review retain their original two-owner validation below.
         typed_review = synthesis['id'] in typed_synthesis_ids
-        if contract['version'] == 2 and (synthesis['taxonomy_version'] == contract['taxonomy_version']
+        if contract['version'] >= 2 and (synthesis['taxonomy_version'] == contract['taxonomy_version']
                                          or (synthesis['taxonomy_version'] >= 3 and typed_review)):
             validate_synthesis_v2(data, synthesis)
             continue
@@ -820,7 +845,7 @@ def validate_comparison_descent(base, candidate):
     if len(new_contracts) != 1: raise ValueError('Önceki karşılaştırma sözleşmesi kaldırılamaz')
     old, new = old_contracts[0], new_contracts[0]
     stages = {'tracer':0,'partial':1,'complete':2}
-    if (old['version'], new['version']) not in ((1,1), (1,2), (2,2)) or (new['version'] == 2 and new['taxonomy_version'] < 3) or new['taxonomy_version'] < old['taxonomy_version'] or stages[new['stage']] < stages[old['stage']]:
+    if (old['version'], new['version']) not in ((1,1), (1,2), (1,3), (2,2), (2,3), (3,3)) or (new['version'] >= 2 and new['taxonomy_version'] < 3) or new['taxonomy_version'] < old['taxonomy_version'] or stages[new['stage']] < stages[old['stage']]:
         raise ValueError('Karşılaştırma sözleşmesi geriletilemez')
     for name in COMPARISON_TABLES:
         if name in ('comparison_contract','comparison_row'): continue
@@ -828,6 +853,9 @@ def validate_comparison_descent(base, candidate):
             raise ValueError('Önceki karşılaştırma kaydı değiştirilemez: ' + name)
     if any(row not in candidate.get('comparison_source_inventory', []) for row in base.get('comparison_source_inventory', [])):
         raise ValueError('Önceki kaynak envanteri kaydı değiştirilemez')
+    for name in LINEAGE_TABLES:
+        if any(row not in candidate.get(name, []) for row in base.get(name, [])):
+            raise ValueError('Önceki satır soyu kaydı değiştirilemez: ' + name)
     new_rows = {r['id']: r for r in candidate['comparison_row']}
     for row in base.get('comparison_row', []):
         current_row = new_rows.get(row['id'])
@@ -1365,6 +1393,10 @@ def export_db(path, release_id, strict_identity=False):
         if has_comparisons:
             names += list(COMPARISON_TABLES)
             if 'comparison_source_inventory' in existing: names.append('comparison_source_inventory')
+            contract_version = db.execute('SELECT version FROM comparison_contract').fetchone()[0]
+            if contract_version >= 3:
+                if not set(LINEAGE_TABLES) <= existing: raise ValueError('Sürüm 3 satır soyu şeması eksik')
+                names += list(LINEAGE_TABLES)
         cols = {r['name'] for r in db.execute('PRAGMA table_info(document_version)')}
         policy = active_policy(db)
         result = {'schema_version': 6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1)))), 'release_id': release_id}
@@ -1537,7 +1569,8 @@ def audit_release(release='current', _seen=None):
         if exported['schema_version'] == 6:
             c = exported['comparison_contract'][0]
             if (manifest.get('comparison_validation_version'),manifest.get('comparison_taxonomy_version'),manifest.get('comparison_stage')) != (c['version'],c['taxonomy_version'],c['stage']): raise ValueError('Karşılaştırma manifesti geçersiz')
-            if manifest.get('comparison_synthesis_contract_version') != (2 if c['version'] == 2 else None): raise ValueError('Sentez sözleşmesi manifesti geçersiz')
+            if manifest.get('comparison_synthesis_contract_version') != (2 if c['version'] >= 2 else None): raise ValueError('Sentez sözleşmesi manifesti geçersiz')
+            if manifest.get('comparison_lineage_version') != (1 if c['version'] >= 3 else None): raise ValueError('Satır soyu manifesti geçersiz')
             if manifest.get('comparison_view_version') != (1 if c['taxonomy_version'] >= 3 else None): raise ValueError('Karşılaştırma görünümü manifesti geçersiz')
         if not manifest.get('phase2_delivery'):
             base_id=manifest.get('base_release')
@@ -1558,6 +1591,9 @@ def audit_release(release='current', _seen=None):
         base_folder = safe_path(DATA / 'releases', base_id)
         base_manifest = json.loads((base_folder / 'manifest.json').read_text(encoding='utf-8'))
         base_data = json.loads((base_folder / 'records.json').read_text(encoding='utf-8'))
+        base_contracts, next_contracts = base_data.get('comparison_contract', []), exported.get('comparison_contract', [])
+        if base_manifest.get('renderer_version', 0) >= 20 and base_contracts and next_contracts and next_contracts[0]['taxonomy_version'] > base_contracts[0]['taxonomy_version'] and next_contracts[0]['version'] < 3:
+            raise ValueError('Yeni sözlük için sürüm 3 satır soyu sözleşmesi gerekli')
         validate_policy_descent(base_data,exported)
         validate_comparison_descent(base_data,exported)
         validate_delivery_prefix(base_manifest, manifest)
@@ -1626,6 +1662,8 @@ def validate_changed_topic_reviews(data):
     contracts = data.get('comparison_contract', [])
     if not contracts or contracts[0]['taxonomy_version'] < 3:
         return True
+    if contracts[0].get('version', 1) >= 3:
+        return validate_versioned_row_lineage(data)
     version = contracts[0]['taxonomy_version']
     topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
     parties = {p['party_id'] for p in data['scope_party']}
@@ -1657,6 +1695,85 @@ def validate_changed_topic_reviews(data):
                 raise ValueError('Anlam incelemesi geçerli zaman gerektirir')
             if reviewed_at.tzinfo is None:
                 raise ValueError('Anlam incelemesi zaman dilimi gerektirir')
+    return True
+
+
+def validate_versioned_row_lineage(data):
+    """Contract 3: audit every recorded transition and its authored new meanings."""
+    rows = {r['id']: r for r in data['comparison_row']}
+    topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
+    edges = data.get('comparison_row_lineage')
+    meanings = data.get('comparison_row_meaning')
+    if not isinstance(edges, list) or not edges or not isinstance(meanings, list):
+        raise ValueError('Sürüm 3 için kalıcı satır soyu ve anlam kararları gerekli')
+    decisions = {m['row_id']: m for m in meanings}
+    if len(decisions) != len(meanings): raise ValueError('Yinelenen satır anlam kararı')
+    reviews = {(r['subject_kind'], r['subject_id']): r for r in data['comparison_semantic_review'] if r.get('reviewer_kind') == 'agent'}
+    parties = {p['party_id'] for p in data['scope_party']}
+    fields_by_row, changes_by_row = {}, {}
+    for f in data['comparison_field']:
+        fields_by_row.setdefault(f['row_id'], []).append((f['field'], f.get('summary_finding_id') or '', f.get('quote_finding_id') or '', f.get('condition_key') or ''))
+    for c in data.get('comparison_change', []):
+        changes_by_row.setdefault(c['row_id'], []).append((c['before_passage_id'], c['after_passage_id'], c['summary'], c['order_basis']))
+    grouped = {}
+    for edge in edges:
+        old, new = rows.get(edge.get('old_row_id')), rows.get(edge.get('new_row_id'))
+        if not old or not new or edge.get('transition') not in ('mapped', 'superseded') or new['taxonomy_version'] != old['taxonomy_version'] + 1 or old['party_id'] != new['party_id']:
+            raise ValueError('Geçersiz satır soyu')
+        if edge['transition'] == 'mapped':
+            keys = ('party_id', 'level', 'organ', 'version_id', 'alternative_group', 'source_role', 'state', 'scope_id', 'missing_id')
+            if any(old.get(k) != new.get(k) for k in keys): raise ValueError('Mekanik satır soyu kaynakla uyuşmuyor')
+            if sorted(fields_by_row.get(old['id'], [])) != sorted(fields_by_row.get(new['id'], [])) or sorted(changes_by_row.get(old['id'], [])) != sorted(changes_by_row.get(new['id'], [])):
+                raise ValueError('Mekanik satır alanları kaynakla uyuşmuyor')
+        grouped.setdefault(new['taxonomy_version'], []).append((edge, old, new))
+    markers = data.get('comparison_lineage_contract')
+    if not isinstance(markers, list) or len(markers) != 1 or markers[0].get('version') != 1 or type(markers[0].get('first_taxonomy_version')) is not int:
+        raise ValueError('Satır soyu sözleşme işaretçisi eksik')
+    first = markers[0]['first_taxonomy_version']
+    if first < 3 or first > data['comparison_contract'][0]['taxonomy_version']:
+        raise ValueError('Satır soyu başlangıcı geçersiz')
+    if set(grouped) != set(range(first, data['comparison_contract'][0]['taxonomy_version'] + 1)):
+        raise ValueError('Satır soyu sürüm zinciri eksik')
+    needed = set()
+    for version, links in grouped.items():
+        previous = {r['id'] for r in rows.values() if r['taxonomy_version'] == version - 1}
+        if {old['id'] for _, old, _ in links} != previous:
+            raise ValueError('Önceki satırların tam soyu gerekli')
+        for old_id in previous:
+            transitions = [e['transition'] for e, old, _ in links if old['id'] == old_id]
+            if 'mapped' in transitions and transitions != ['mapped']:
+                raise ValueError('Mekanik soy tek hedef gerektirir')
+        changed = {tid for (tid, tv), t in topics.items() if tv == version and ((tid, version-1) not in topics or any(t.get(k) != topics[tid, version-1].get(k) for k in ('domain','parent_topic_id','definition','applicable_levels','basis_kind')))}
+        moved = {new['id'] for edge, old, new in links if old['topic_id'] != new['topic_id'] or edge['transition'] == 'superseded'}
+        affected = changed | {rows[rid]['topic_id'] for rid in moved}
+        for tid in affected:
+            selected = [r for r in rows.values() if r['taxonomy_version'] == version and r['topic_id'] == tid]
+            if len(parties) != 9 or {r['party_id'] for r in selected if r['state'] != 'not_researched'} != parties:
+                raise ValueError('Değişen konuda dokuz parti incelemesi gerekli')
+        needed.update(r['id'] for r in rows.values() if r['taxonomy_version'] == version and (r['topic_id'] in changed or r['id'] in moved))
+    if set(decisions) != needed: raise ValueError('Satır anlam kararları soyla uyuşmuyor')
+    for rid in needed:
+        row, decision = rows[rid], decisions[rid]
+        topic = topics[row['topic_id'], row['taxonomy_version']]
+        review = reviews.get(('comparison_row', rid))
+        if row['state'] == 'evidence':
+            fids = {f[k] for f in data['comparison_field'] if f['row_id'] == rid for k in ('summary_finding_id','quote_finding_id')}
+            refs = {e['passage_id'] for e in data['finding_evidence'] if e['finding_id'] in fids}
+        elif row['state'] == 'no_explicit_statement': refs = {row.get('scope_id')}
+        elif row['state'] == 'document_missing': refs = {row.get('missing_id')}
+        else: refs = set()
+        refs.discard(None)
+        try: stored_refs = json.loads(decision['refs'])
+        except (ValueError, TypeError): raise ValueError('Satır anlam kaynakları geçersiz')
+        conditions = decision.get('conditions')
+        if decision.get('definition') != topic['definition'] or not isinstance(conditions, str) or not conditions.strip() or not isinstance(stored_refs, list) or len(stored_refs) != len(refs) or set(stored_refs) != refs or not refs:
+            raise ValueError('Satır anlam kararı tanım ve kaynaklarla uyuşmuyor')
+        reason = review.get('reason') if review else None
+        if not review or review.get('result') != 'reviewed' or not isinstance(reason, str) or topic['definition'] not in reason or conditions not in reason or any(ref not in reason for ref in refs):
+            raise ValueError('Satır için yeni kaynaklı anlam incelemesi gerekli')
+        try: reviewed_at = dt.datetime.fromisoformat(review['reviewed_at'].replace('Z', '+00:00'))
+        except (KeyError, TypeError, ValueError, AttributeError): raise ValueError('Anlam incelemesi geçerli zaman gerektirir')
+        if reviewed_at.tzinfo is None: raise ValueError('Anlam incelemesi zaman dilimi gerektirir')
     return True
 
 
@@ -1781,8 +1898,10 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
         if payload['schema_version'] == 6:
             c = payload['comparison_contract'][0]
             manifest.update(comparison_validation_version=c['version'], comparison_taxonomy_version=c['taxonomy_version'], comparison_stage=c['stage'])
-            if c['version'] == 2:
+            if c['version'] >= 2:
                 manifest['comparison_synthesis_contract_version'] = 2
+            if c['version'] >= 3:
+                manifest['comparison_lineage_version'] = 1
             if c['taxonomy_version'] >= 3:
                 manifest['comparison_view_version'] = 1
         if refresh: manifest['phase2_refresh'] = True
