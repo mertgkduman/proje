@@ -708,6 +708,62 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
     return True
 
 
+def validate_source_basis_universe(data, basis):
+    """Validate a source-authored obligation universe against a candidate.
+
+    Establishing the provenance and immutable adoption of the supplied basis
+    remains the responsibility of the revision/import contract.
+    """
+    version = basis['taxonomy_version']
+    topics = {t['topic_id']: t for t in basis['topics']}
+    parties = {p['party_id'] for p in data['scope_party']}
+    cells = {c['id']: c for c in basis['cells']}
+    assertions = basis['source_assertions']
+    if len(topics) != len(basis['topics']) or len(cells) != len(basis['cells']) or not topics or not parties:
+        raise ValueError('Kaynak evreninde yinelenen veya eksik konu/hücre var')
+    for bid, assertion in assertions.items():
+        canonical = json.dumps(assertion, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+        if bid != 'basis-' + hashlib.sha256(canonical.encode()).hexdigest()[:24]:
+            raise ValueError('Kaynak evreninde dayanak kimliği uyuşmuyor')
+    found = {}
+    for item in basis['universe']:
+        pair = (item['topic_id'], item['party_id'])
+        if pair in found or not item.get('cell_ids') or len(set(item['cell_ids'])) != len(item['cell_ids']):
+            raise ValueError('Kaynak evreninde parti-konu yükümlülüğü eksik')
+        found[pair] = item['cell_ids']
+        for cid in item['cell_ids']:
+            cell = cells.get(cid)
+            if not cell or (cell['logical_key']['topic_id'], cell['logical_key']['party_id']) != pair:
+                raise ValueError('Kaynak evreninde parti-konu dayanağı uyuşmuyor')
+    if set(found) != {(topic, party) for topic in topics for party in parties} or set(cells) != {cid for ids in found.values() for cid in ids}:
+        raise ValueError('Kaynak evreni parti-konu kapsamını kapatmıyor')
+    actual_topics = {t['topic_id']: t for t in data['comparison_topic'] if t['taxonomy_version'] == version}
+    if topics != actual_topics:
+        raise ValueError('Kaynak evrenindeki konu tanımları değişmiş')
+    validate_source_basis_cells(data, version, list(cells.values()), assertions)
+    expected_inventory = comparison_inventory_records(dict(status='complete', taxonomy_version=version,
+                                                          sections=basis['inventory_sections']), version)
+    expected = {}
+    for entry in expected_inventory:
+        item = dict(entry['values'])
+        for key in ('topic_ids', 'unmatched_headings'):
+            item[key] = json.dumps(item[key], ensure_ascii=False)
+        expected[item['id']] = item
+    actual = {i['id']: i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == version}
+    if expected != actual:
+        raise ValueError('Kaynak evreni envanter bölümü eksik veya değişmiş')
+    claims = {s['id']: s for s in data['comparison_synthesis'] if s['taxonomy_version'] == version}
+    reviews = {r['subject_id']: r for r in data['comparison_semantic_review']
+               if r['subject_kind'] == 'comparison_synthesis' and r['reviewer_kind'] == 'agent'}
+    obligations = basis['synthesis_obligations']
+    if len({o['id'] for o in obligations}) != len(obligations) or set(claims) != {o['id'] for o in obligations}:
+        raise ValueError('Kaynak evreni sentez yükümlülüğü eksik')
+    for obligation in obligations:
+        if claims[obligation['id']] != obligation['source_authored_claim'] or reviews.get(obligation['id']) != obligation['original_review']:
+            raise ValueError('Kaynak evreni sentez kararı değişmiş')
+    return True
+
+
 def validate_completion(data):
     """Validate an explicitly adopted, snapshot-bound source closure contract.
 

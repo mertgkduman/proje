@@ -1,5 +1,6 @@
 """Substantive closure must survive omissions in the selected source inventory."""
 import json
+from pathlib import Path
 import unittest
 
 import arsiv
@@ -53,6 +54,32 @@ class CompletionCoverageTest(unittest.TestCase):
         legacy = dict(self.reviewed)
         del legacy['comparison_completion']
         self.assertTrue(arsiv.validate_completion(legacy))
+
+    def test_independent_basis_detects_coordinated_source_omissions(self):
+        basis = json.loads((Path(__file__).resolve().parents[1] /
+                            'data/comparisons/03-completion-basis-v2-source.json').read_text())
+        self.assertTrue(arsiv.validate_source_basis_universe(self.reviewed, basis))
+        target = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
+        row = next(r for r in self.reviewed['comparison_row'] if r['id'] == target)
+        inventory = next(i for i in self.reviewed['comparison_source_inventory']
+                         if i['taxonomy_version'] == self.taxonomy)
+        field = next(f for f in self.reviewed['comparison_field']
+                     if any(r['id'] == f['row_id'] and r['taxonomy_version'] == self.taxonomy
+                            for r in self.reviewed['comparison_row']))
+        synthesis = next(s for s in self.reviewed['comparison_synthesis'] if s['taxonomy_version'] == self.taxonomy)
+        candidates = [
+            dict(self.reviewed, comparison_row=[r for r in self.reviewed['comparison_row'] if r['id'] != target]),
+            dict(self.reviewed, comparison_row=[dict(r, organ='başka organ') if r['id'] == row['id'] else r
+                                                for r in self.reviewed['comparison_row']]),
+            dict(self.reviewed, comparison_source_inventory=[i for i in self.reviewed['comparison_source_inventory']
+                                                             if i['id'] != inventory['id']]),
+            dict(self.reviewed, comparison_field=[f for f in self.reviewed['comparison_field'] if f['id'] != field['id']]),
+            dict(self.reviewed, comparison_synthesis=[s for s in self.reviewed['comparison_synthesis']
+                                                       if s['id'] != synthesis['id']]),
+        ]
+        for candidate in candidates:
+            with self.subTest(removed=set(self.reviewed) - set(candidate)), self.assertRaisesRegex(ValueError, 'Kaynak (yükümlülüğü|evreni)'):
+                arsiv.validate_source_basis_universe(candidate, basis)
 
     def test_reviewed_finding_provenance_is_required(self):
         data = dict(self.reviewed)
