@@ -1,0 +1,19 @@
+{
+  "cwd": "/tmp/gsd-03-clean-fixtures-red-rjsbsofm",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_comparison_navigation.py",
+    "-k",
+    "test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact",
+    "-v"
+  ],
+  "exit": 1,
+  "source": "git archive HEAD src tests data/current.json",
+  "expected_failure": "historical release records.json missing from committed tree"
+}

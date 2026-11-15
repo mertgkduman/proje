@@ -1,0 +1,43 @@
+{
+  "phase_start": "ec7c0907aee52665a1bf2df3ebbba588c17e5448",
+  "diff_base": "bf4a6facf741bd7c0f4f6bb8e45f0415e5934327",
+  "files": [
+    "README.md",
+    "src/arsiv.py",
+    "src/rapor.py",
+    "src/rapor_v20.py",
+    "src/rapor_v21.css",
+    "src/rapor_v21.py",
+    "src/rapor_v22.css",
+    "tests/comparison_navigation.cjs",
+    "tests/test_comparison_content.py",
+    "tests/test_comparison_navigation.py",
+    "tests/test_comparison_synthesis_contract.py",
+    "tests/test_source_labels.py"
+  ],
+  "count": 12,
+  "flags": {
+    "fix": false,
+    "all": false,
+    "auto": false,
+    "depth": "",
+    "files": "README.md,src/arsiv.py,src/rapor.py,src/rapor_v20.py,src/rapor_v21.css,src/rapor_v21.py,src/rapor_v22.css,tests/comparison_navigation.cjs,tests/test_comparison_content.py,tests/test_comparison_navigation.py,tests/test_comparison_synthesis_contract.py,tests/test_source_labels.py"
+  },
+  "depth": {
+    "ok": true,
+    "depth": "standard",
+    "resolvedDepth": "standard",
+    "source": "config",
+    "matchedRule": null,
+    "downgraded": false,
+    "fileCount": 12
+  },
+  "model": "gpt-6.1-terra",
+  "effort": "xhigh",
+  "point": "execute:post",
+  "external_lanes": [],
+  "structural_prepass": "excluded: fallow disabled",
+  "stage": "post-fix independent review before plan16; final execute:post remains required",
+  "created_utc": "2026-11-15T08:43:32.690Z",
+  "fix_diff_base": "b53ed3161787205f592f9aaaffe3b347c7887fac"
+}
