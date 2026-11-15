@@ -27,13 +27,13 @@ function assert(v,m){if(!v)throw Error(m)}
  checks.push(a.checkVisibility() && document.activeElement===a && a.closest('[role=tabpanel]').id==='comparison-summary');
  history.back();await pause();checks.push(document.activeElement===d && d.checkVisibility());
  history.forward();await pause();checks.push(document.activeElement===a && a.checkVisibility());
- const cite=a.querySelector('.citation');cite.click();await pause();const s=document.getElementById(cite.hash.slice(1));
+ const cite=a.querySelector('.citation');cite.click();await pause();const s=document.getElementById(decodeURIComponent(cite.hash.slice(1)));
  const archive=s.querySelector('a.archive-view');const archiveUrl=archive&&archive.href;
  checks.push(s.id==='source-'+cfg.passage && s.open && s.checkVisibility() && document.activeElement===s && s.innerText.includes(cfg.version) && s.innerText.includes(cfg.locator) && !!archive && new URL(archive.href).pathname.endsWith('/'+cfg.archive));
  history.back();await pause();checks.push(document.activeElement===cite && cite.checkVisibility());
  history.forward();await pause();checks.push(document.activeElement===s && s.open && s.checkVisibility());
  history.back();await pause();cite.click();await pause();checks.push(document.documentElement.scrollWidth<=innerWidth);
- const old=document.activeElement;location.hash='#%ZZ';await pause();checks.push(document.activeElement===old);
+ const old=document.activeElement;location.hash='#%ZZ';await pause();const malformedInert=document.activeElement===old;location.hash='#unknown-target';await pause();checks.push(malformedInert && document.activeElement===old);
  const proof=document.querySelector('a[href="#comparison-'+cfg.scope+'"]'),scopeRow=document.getElementById('comparison-'+cfg.scope);
  checks.push(!!proof && !!scopeRow && scopeRow.innerText.includes('İncelenen kapsam:'));
  document.getElementById('tab-comparison').click();proof.click();await pause();const scopeOk=document.activeElement===scopeRow && scopeRow.checkVisibility() && !!scopeRow.querySelector('a[href^="../../"]');

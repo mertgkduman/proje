@@ -8,9 +8,10 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import tempfile
 import threading
 import unittest
-from urllib.parse import urldefrag
+from urllib.parse import quote, urldefrag
 
 from browser_probe import browser
 
@@ -22,8 +23,8 @@ RECORDS = Path(os.environ.get('NAV_RECORDS', DATA / 'releases' / RELEASE / 'reco
 PROBE = ROOT / 'tests/comparison_navigation.cjs'
 
 
-def selected_records():
-    records = json.loads(RECORDS.read_text())
+def selected_records(records_path=RECORDS):
+    records = json.loads(records_path.read_text())
     taxonomy = records['comparison_contract'][0]['taxonomy_version']
     rows = records['comparison_row']
     def one(**criteria):
@@ -78,7 +79,7 @@ class ComparisonNavigation(unittest.TestCase):
     def invoke(self, url, width, config):
         executable = browser()
         self.assertIsNotNone(executable, 'Chromium bulunamadı')
-        target = url + '#comparison-' + config['row']
+        target = url + '#comparison-' + quote(config['row'], safe='')
         result = subprocess.run(['node', str(PROBE), executable, target, str(width), json.dumps(config, ensure_ascii=False)], capture_output=True, text=True, timeout=160)
         self.assertEqual(result.returncode, 0, result.stderr[-2000:])
         observed = json.loads(result.stdout)
@@ -91,6 +92,30 @@ class ComparisonNavigation(unittest.TestCase):
         config = selected_records()
         observed = self.invoke(REPORT.as_uri(), 1365, dict(config, direct=True))
         self.assertTrue(observed['exists'] and observed['focused'] and observed['visible'])
+
+    def test_unicode_and_space_ids_in_real_source_preview(self):
+        import sys
+        sys.path.insert(0, str(ROOT / 'src'))
+        from arsiv import comparison_render_data
+        from rapor import render_report
+        records = json.loads(RECORDS.read_text())
+        original = selected_records()
+        aliases = {original['row']: 'gezinti örneği-ş', original['passage']: 'kaynak örneği-ğ'}
+        def rename(value):
+            if isinstance(value, str): return aliases.get(value, value)
+            if isinstance(value, list): return [rename(x) for x in value]
+            if isinstance(value, dict): return {k: rename(v) for k, v in value.items()}
+            return value
+        preview = rename(records)
+        config = dict(original, row=aliases[original['row']], passage=aliases[original['passage']])
+        with tempfile.TemporaryDirectory(prefix='nav-preview-', dir=DATA / 'releases') as tmp:
+            report = Path(tmp) / 'index.html'
+            report.write_text(render_report(comparison_render_data(preview)), encoding='utf-8')
+            direct = self.invoke(report.as_uri(), 1365, dict(config, direct=True))
+            self.assertTrue(direct['exists'] and direct['focused'] and direct['visible'])
+            observed = self.invoke(report.as_uri(), 360, config)
+            self.assertEqual(observed['checks'], '1' * 19)
+            self.assertTrue(observed['archiveExcerptFound'])
 
     def test_four_browser_navigation_modes(self):
         config = selected_records()

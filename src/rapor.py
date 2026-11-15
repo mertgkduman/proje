@@ -646,14 +646,14 @@ function restoreCitation() {
   previousCitation = null;
 }
 function hashTarget(hash) {
-  if (!hash || hash.includes('%')) return null;
-  try { return document.getElementById(hash.slice(1)); }
-  catch { return null; }
+  if (!hash || hash[0] !== '#') return null;
+  try { return document.getElementById(decodeURIComponent(hash.slice(1))); }
+  catch { return undefined; }
 }
 function openHash() {
-  if (location.hash.includes('%')) return;
   const target = hashTarget(location.hash);
-  if (!target) { restoreCitation(); return; }
+  if (target === undefined) return;
+  if (!target) { if (!location.hash) restoreCitation(); return; }
   if (target) {
     reveal(target);
     if (!target.id.startsWith('source-') && previousCitation) {
