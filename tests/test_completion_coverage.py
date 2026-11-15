@@ -197,6 +197,7 @@ class CompletionCoverageTest(unittest.TestCase):
             dict(self.reviewed, comparison_source_inventory=[i for i in self.reviewed['comparison_source_inventory']
                                                              if i['id'] != inventory['id']]),
             dict(self.reviewed, comparison_field=[f for f in self.reviewed['comparison_field'] if f['id'] != field['id']]),
+            dict(self.reviewed, comparison_field=self.reviewed['comparison_field'] + [dict(field, id='unbound-test-field')]),
             dict(self.reviewed, comparison_synthesis=[s for s in self.reviewed['comparison_synthesis']
                                                        if s['id'] != synthesis['id']]),
         ]

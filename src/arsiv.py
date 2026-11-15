@@ -901,6 +901,23 @@ def validate_source_basis_universe(data, basis, superseded_cells=()):
     actual_rows = {r['id'] for r in data['comparison_row'] if r['taxonomy_version'] == version}
     if required_rows != actual_rows:
         raise ValueError('Kaynak evreni seçili satırları bağlamıyor')
+    fields_by_row = {}
+    for field in data['comparison_field']:
+        if field['row_id'] in actual_rows:
+            fields_by_row.setdefault(field['row_id'], []).append(field)
+    required_fields = set()
+    for cell in active_cells:
+        row_id = cell['mapping_records'][-1]['new_row_id'] if cell['mapping_records'] else cell['logical_key']['context_judgment']
+        for bid in cell['basis_ids']:
+            assertion = assertions[bid]
+            if assertion['kind'] != 'supported_field':
+                continue
+            matches = [f for f in fields_by_row.get(row_id, []) if all(f.get(k) == assertion.get(k) for k in ('field', 'condition_key', 'summary_finding_id', 'quote_finding_id'))]
+            if len(matches) != 1:
+                raise ValueError('Kaynak evreni alan yükümlülüğü tekil değil')
+            required_fields.add(matches[0]['id'])
+    if required_fields != {field['id'] for fields in fields_by_row.values() for field in fields}:
+        raise ValueError('Kaynak evreni seçili alanları bağlamıyor')
     expected_inventory = comparison_inventory_records(dict(status='complete', taxonomy_version=version,
                                                           sections=basis['inventory_sections']), version)
     expected = {}
