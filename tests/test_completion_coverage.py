@@ -79,9 +79,11 @@ class CompletionCoverageTest(unittest.TestCase):
             data[table] = [r['values'] for r in payload['records'] if r['kind'] == table]
         return data
 
-    def sourced_successor(self, base, source_basis, risk, fixture, fixture_digest):
+    def sourced_successor(self, base, source_basis, risk, fixture, fixture_digest, *,
+                          source_name='source', basis_id='test-successor-basis',
+                          revision_id='test-successor-partial', stage='partial'):
         """Build a test-only new context from the real, already read TİP source."""
-        source_path = 'data/comparisons/test-completion-revision-source.json'
+        source_path = 'data/comparisons/test-completion-revision-' + source_name + '.json'
         entries = fixture['records']
         row, field, review = entries[0]['values'], entries[1]['values'], entries[7]['values']
         key = {k: row[k] for k in ('topic_id', 'party_id', 'source_role', 'version_id', 'level', 'organ')}
@@ -109,19 +111,19 @@ class CompletionCoverageTest(unittest.TestCase):
                          source_documents=documents)
         previous = base['comparison_completion_revision'][-1]
         head, cells = arsiv.completion_basis_records(new_basis, risk['expected_risk_universe'],
-                                                     'test-successor-basis', '2026-11-15T16:52:28Z',
+                                                     basis_id, '2026-11-15T16:52:28Z',
                                                      previous['basis_id'])
         selection = json.loads(previous['selection'])
         selection['rows'].append(row)
         selection['fields'].append(field)
-        revision = dict(previous, id='test-successor-partial', epoch=previous['epoch'] + 1,
-                        parent_revision_id=previous['id'], basis_id=head['id'], stage='partial',
+        revision = dict(previous, id=revision_id, epoch=previous['epoch'] + 1,
+                        parent_revision_id=previous['id'], basis_id=head['id'], stage=stage,
                         selection=arsiv.canonical_json(selection), reason='Test fixture: sourced context under review.')
         records = ([entries[i] for i in (2, 3, 4, 5, 6, 0, 1, 7)] +
                    [dict(kind='comparison_completion_basis', values=head)] +
                    [dict(kind='comparison_coverage_disposition', values=c) for c in cells] +
                    [dict(kind='comparison_completion_revision', values=revision)])
-        return dict(contract_version=2, taxonomy_version=self.taxonomy, stage='partial', records=records), revision
+        return dict(contract_version=2, taxonomy_version=self.taxonomy, stage=stage, records=records), revision
 
     def test_real_review_and_legacy_snapshot_remain_valid(self):
         self.assertTrue(arsiv.validate_completion(self.reviewed))
@@ -297,6 +299,110 @@ class CompletionCoverageTest(unittest.TestCase):
                                 comparison_completion_revision=candidate['comparison_completion_revision'] + [complete_revision])
                 self.assertTrue(arsiv.validate_completion(complete))
                 self.assertTrue(arsiv.validate_comparison_descent(candidate, complete))
+                replacement_path = root / 'tests/fixtures/completion_revision_supersession.json'
+                replacement = json.loads(replacement_path.read_text())
+                replacement_target = arsiv.DATA / 'comparisons/test-completion-revision-supersession.json'
+                shutil.copyfile(replacement_path, replacement_target)
+                replacement_payload, replacement_revision = self.sourced_successor(
+                    candidate, successor_basis, risk, replacement, arsiv.sha(replacement_target),
+                    source_name='supersession', basis_id='test-replacement-basis',
+                    revision_id='test-replacement-complete', stage='complete')
+                replacement_selection = json.loads(replacement_revision['selection'])
+                replacement_selection['rows'] = [r for r in replacement_selection['rows'] if r['id'] != 'test-tip-kapitalizm-context-row']
+                replacement_selection['fields'] = [f for f in replacement_selection['fields'] if f['row_id'] != 'test-tip-kapitalizm-context-row']
+                replacement_revision['selection'] = arsiv.canonical_json(replacement_selection)
+                new_cells = [entry['values'] for entry in replacement_payload['records'] if entry['kind'] == 'comparison_coverage_disposition']
+                new_head = next(entry['values'] for entry in replacement_payload['records'] if entry['kind'] == 'comparison_completion_basis')
+                replacement_basis, _ = arsiv.decode_completion_basis(new_head, new_cells)
+                old_cell = next(c for c in replacement_basis['cells'] if c['logical_key']['context_judgment'] == 'test-tip-kapitalizm-context-row')
+                new_cell = next(c for c in replacement_basis['cells'] if c['logical_key']['context_judgment'] == 'test-tip-kapitalizm-replacement-row')
+                link = dict(revision_id=replacement_revision['id'], old_cell_id=old_cell['id'], new_cell_id=new_cell['id'],
+                            old_row_id='test-tip-kapitalizm-context-row', new_row_id='test-tip-kapitalizm-replacement-row',
+                            source_basis_refs=arsiv.canonical_json(new_cell['basis_ids']),
+                            reason='Test-only replacement preserving the SR25 source boundary.')
+                replacement_payload['records'].append(dict(kind='comparison_completion_supersession', values=link))
+                result = dict(candidate, comparison_contract=[dict(candidate['comparison_contract'][0], stage='complete')])
+                for table in {entry['kind'] for entry in replacement_payload['records']}:
+                    result[table] = list(candidate.get(table, [])) + [entry['values'] for entry in replacement_payload['records'] if entry['kind'] == table]
+                self.assertTrue(arsiv.verify_successor_completion_basis(successor_basis, replacement_basis))
+                self.assertTrue(arsiv.validate_completion(result))
+                visible = arsiv.comparison_render_data(result)
+                self.assertNotIn(link['old_row_id'], {r['id'] for r in visible['comparison_row']})
+                self.assertIn(link['new_row_id'], {r['id'] for r in visible['comparison_row']})
+                self.assertIn(link['old_row_id'], {r['id'] for r in result['comparison_row']})
+            finally:
+                arsiv.DATA = original
+
+    def test_same_taxonomy_sourced_revision_round_trip(self):
+        """Publish and audit the real-source fixture in one isolated DATA tree."""
+        original = arsiv.DATA
+        root = Path(__file__).resolve().parents[1]
+        basis = json.loads((root / 'data/comparisons/03-completion-basis-v2-source.json').read_text())
+        risk = json.loads((root / 'data/comparisons/03-completion-risk-v2-source.json').read_text())
+        adoption = json.loads((root / 'data/comparisons/03-completion-review-v2.json').read_text())
+        fixture_path = root / 'tests/fixtures/completion_revision_source.json'
+        fixture = json.loads(fixture_path.read_text())
+        base = self.modern()
+        with tempfile.TemporaryDirectory() as temp:
+            temp = Path(temp)
+            arsiv.DATA = temp / 'data'
+            try:
+                arsiv.DATA.mkdir()
+                for directory in ('releases', 'objects', 'views'):
+                    shutil.copytree(original / directory, arsiv.DATA / directory)
+                shutil.copyfile(original / 'current.json', arsiv.DATA / 'current.json')
+                for source in basis['source_documents']:
+                    relative = Path(source['path']).relative_to('data')
+                    target = arsiv.DATA / relative
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copyfile(original / relative, target)
+                target = arsiv.DATA / 'comparisons/test-completion-revision-source.json'
+                shutil.copyfile(fixture_path, target)
+                partial, partial_revision = self.sourced_successor(base, basis, risk, fixture, arsiv.sha(target))
+                partial['records'] = adoption['records'] + partial['records']
+                original_release = self.reviewed['release_id']
+                folder = arsiv.DATA / 'releases' / original_release
+                preserved = {p.name: arsiv.sha(p) for p in folder.iterdir() if p.is_file()}
+
+                def workspace(base_release, name):
+                    work = temp / name
+                    work.mkdir()
+                    shutil.copyfile(arsiv.DATA / 'releases' / base_release / 'records.sqlite3', work / 'records.sqlite3')
+                    token = 'isolated-' + name
+                    (arsiv.DATA / '.write.lock').write_text(json.dumps({'token': token}))
+                    (work / 'workspace.json').write_text(json.dumps({'token': token, 'base': base_release}))
+                    return work
+
+                work = workspace(original_release, 'partial-work')
+                print('isolated: importing source addition and partial revision', flush=True)
+                arsiv.load_comparison(work, partial)
+                partial_data = arsiv.export_db(work / 'records.sqlite3', 'partial-work')
+                self.assertEqual(partial_data['comparison_contract'][0]['stage'], 'partial')
+                self.assertEqual(partial_data['comparison_completion'], self.reviewed['comparison_completion'])
+                self.assertIn('test-tip-kapitalizm-context-row', {r['id'] for r in partial_data['comparison_row']})
+                print('isolated: publishing and auditing partial revision', flush=True)
+                partial_release = arsiv.publish_release(work, refresh=True)
+                self.assertEqual(arsiv.validate_phase_three(partial_release, 'partial'), True)
+                with self.assertRaisesRegex(ValueError, 'aşaması uyuşmuyor'):
+                    arsiv.validate_phase_three(partial_release, 'complete')
+                complete_revision = dict(partial_revision, id='test-successor-complete', epoch=partial_revision['epoch'] + 1,
+                                         parent_revision_id=partial_revision['id'], stage='complete',
+                                         reason='Test fixture: source context and review complete.')
+                complete_payload = dict(contract_version=2, taxonomy_version=self.taxonomy, stage='complete',
+                                        records=[dict(kind='comparison_completion_revision', values=complete_revision)])
+                work = workspace(partial_release, 'complete-work')
+                print('isolated: importing and publishing complete successor', flush=True)
+                arsiv.load_comparison(work, complete_payload)
+                complete_release = arsiv.publish_release(work, refresh=True)
+                self.assertEqual(arsiv.audit_release(complete_release), complete_release)
+                result = json.loads((arsiv.DATA / 'releases' / complete_release / 'records.json').read_text())
+                self.assertEqual(result['comparison_contract'][0]['taxonomy_version'], self.taxonomy)
+                self.assertEqual(result['comparison_contract'][0]['stage'], 'complete')
+                self.assertEqual(result['comparison_completion'], self.reviewed['comparison_completion'])
+                self.assertIn('test-tip-kapitalizm-context-field', {f['id'] for f in result['comparison_field']})
+                self.assertTrue(arsiv.validate_comparison_descent(partial_data, result))
+                self.assertEqual(preserved, {p.name: arsiv.sha(p) for p in folder.iterdir() if p.is_file()})
+                print('isolated: audited complete successor', complete_release, flush=True)
             finally:
                 arsiv.DATA = original
 

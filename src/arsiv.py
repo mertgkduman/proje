@@ -434,10 +434,17 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
             migrate_comparisons(db, work / 'pre-comparison-migration.sqlite3')
             prior_revision = db.execute('SELECT * FROM comparison_completion_revision ORDER BY epoch DESC LIMIT 1').fetchone()
             incoming_revisions = [e['values'] for e in payload['records'] if isinstance(e, dict) and e.get('kind') == 'comparison_completion_revision' and isinstance(e.get('values'), dict)]
-            forward_revision = any(r.get('stage') == payload['stage'] and r.get('taxonomy_version') == payload['taxonomy_version'] and
-                                   r.get('epoch') == (prior_revision['epoch'] + 1 if prior_revision else 1) and
-                                   r.get('parent_revision_id') == (prior_revision['id'] if prior_revision else None)
-                                   for r in incoming_revisions)
+            next_epoch = prior_revision['epoch'] + 1 if prior_revision else 1
+            parent = prior_revision['id'] if prior_revision else None
+            chain = sorted((r for r in incoming_revisions if type(r.get('epoch')) is int and r['epoch'] >= next_epoch), key=lambda r: r['epoch'])
+            forward_revision = bool(chain)
+            for revision in chain:
+                if revision['epoch'] != next_epoch or revision.get('parent_revision_id') != parent:
+                    forward_revision = False
+                    break
+                next_epoch, parent = next_epoch + 1, revision.get('id')
+            forward_revision = bool(forward_revision and chain[-1].get('stage') == payload['stage'] and
+                                    chain[-1].get('taxonomy_version') == payload['taxonomy_version'])
             with db:
                 if payload['contract_version'] == 3:
                     for name, definition in LINEAGE_TABLES.items():
@@ -501,12 +508,13 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                 metadata = json.loads((temp / 'workspace.json').read_text(encoding='utf-8'))
                 if anchor.get('release_id') != metadata.get('base'):
                     raise ValueError('Önceki kaynak kapanışı gerçek tabanla uyuşmuyor')
-            if prior_revision and incoming_revisions:
-                previous_basis_id = prior_revision['basis_id']
+            if incoming_revisions:
+                origin = prior_revision or db.execute('SELECT * FROM comparison_completion_revision ORDER BY epoch LIMIT 1').fetchone()
+                previous_basis_id = origin['basis_id']
                 previous_head = dict(db.execute('SELECT * FROM comparison_completion_basis WHERE id=?', (previous_basis_id,)).fetchone())
                 previous_cells = [dict(row) for row in db.execute('SELECT * FROM comparison_coverage_disposition WHERE basis_id=?', (previous_basis_id,))]
                 previous_basis, _ = decode_completion_basis(previous_head, previous_cells)
-                for successor in db.execute('SELECT * FROM comparison_completion_revision WHERE epoch>? ORDER BY epoch', (prior_revision['epoch'],)):
+                for successor in db.execute('SELECT * FROM comparison_completion_revision WHERE epoch>? ORDER BY epoch', (origin['epoch'],)):
                     if successor['basis_id'] == previous_basis_id:
                         continue
                     next_head = dict(db.execute('SELECT * FROM comparison_completion_basis WHERE id=?', (successor['basis_id'],)).fetchone())

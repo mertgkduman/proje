@@ -1,0 +1,14 @@
+{
+  "purpose": "Test-only source-backed replacement of another test fixture; no production correction or new research is claimed.",
+  "source_reading": "TİP programı, KAPİTALİZM BÜTÜNSEL BİR BUNALIM İÇİNDE; SR25, 2026-11-15T16:52:28Z.",
+  "records": [
+    {"kind":"comparison_row","values":{"id":"test-tip-kapitalizm-replacement-row","topic_id":"kapitalizm-bunalim","taxonomy_version":4,"party_id":"tip","level":"ulusal","organ":"Kapitalist bunalımın kendiliğinden yıkılışla ilişkisi","version_id":"0203-tip-program-v1","alternative_group":null,"source_role":"program","state":"evidence","scope_id":null,"missing_id":null,"selection_reason":"Test fixture: SR25'in okuduğu program paragrafındaki kendiliğinden yıkılış sınırı yeniden ifade edilir."}},
+    {"kind":"comparison_field","values":{"id":"test-tip-kapitalizm-replacement-field","row_id":"test-tip-kapitalizm-replacement-row","field":"principle","summary_finding_id":"test-tip-kapitalizm-replacement-summary","quote_finding_id":"test-tip-kapitalizm-replacement-quote","condition_key":null}},
+    {"kind":"finding","values":{"id":"test-tip-kapitalizm-replacement-summary","party_id":"tip","heading":"Program","epistemic_type":"claim","provenance":"summary","text":"Program, kapitalist sistemin krizlerinden kendiliğinden yıkılış sonucu çıkarmaz.","pair_id":"test-tip-kapitalizm-replacement-pair"}},
+    {"kind":"finding","values":{"id":"test-tip-kapitalizm-replacement-quote","party_id":"tip","heading":"Program","epistemic_type":"claim","provenance":"quote","text":"kapitalist sistemin bunalımları, onun kendiliğinden yıkılacağı anlamına gelmemektedir.","pair_id":"test-tip-kapitalizm-replacement-pair"}},
+    {"kind":"finding_evidence","values":{"finding_id":"test-tip-kapitalizm-replacement-summary","passage_id":"0304-tip-program-kapitalizm-p1","role":"support"}},
+    {"kind":"finding_evidence","values":{"finding_id":"test-tip-kapitalizm-replacement-summary","passage_id":"0304-tip-program-kapitalizm-q","role":"support"}},
+    {"kind":"finding_evidence","values":{"finding_id":"test-tip-kapitalizm-replacement-quote","passage_id":"0304-tip-program-kapitalizm-q","role":"support"}},
+    {"kind":"comparison_semantic_review","values":{"subject_kind":"comparison_field","subject_id":"test-tip-kapitalizm-replacement-field","reviewer_kind":"agent","reviewed_at":"2026-11-15T16:52:28Z","result":"reviewed","reason":"Test fixture: SR25'in sınırlı özgün HTML okumasına göre bunalım kendiliğinden yıkılış olarak sunulmaz; yeni tam program incelemesi iddia edilmez."}}
+  ]
+}
