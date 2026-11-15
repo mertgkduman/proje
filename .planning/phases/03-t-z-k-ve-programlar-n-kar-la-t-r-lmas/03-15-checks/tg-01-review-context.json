@@ -1,0 +1,36 @@
+{
+  "phase": "03",
+  "files": [
+    "tests/fixture_data.py",
+    "tests/test_acceptance.py",
+    "tests/test_chain.py",
+    "tests/test_documents.py",
+    "tests/test_finance.py",
+    "tests/test_matches.py",
+    "tests/test_missing.py",
+    "tests/test_topics.py"
+  ],
+  "flags": {
+    "fix": false,
+    "all": false,
+    "auto": false,
+    "depth": "",
+    "files": "tests/fixture_data.py,tests/test_acceptance.py,tests/test_chain.py,tests/test_documents.py,tests/test_finance.py,tests/test_matches.py,tests/test_missing.py,tests/test_topics.py"
+  },
+  "depth": {
+    "ok": true,
+    "depth": "standard",
+    "resolvedDepth": "standard",
+    "source": "config",
+    "matchedRule": null,
+    "downgraded": false,
+    "fileCount": 8
+  },
+  "diff_base": "a023eb7db9fb2fec978103be3e415796bcc725b8",
+  "model": "gpt-6.1-terra",
+  "effort": "xhigh",
+  "external_lanes": [],
+  "fallow": false,
+  "created_utc": "2026-11-15T10:32:37.054Z",
+  "stage": "independent TG-01 fixture re-review before16; final execute:post still pending"
+}

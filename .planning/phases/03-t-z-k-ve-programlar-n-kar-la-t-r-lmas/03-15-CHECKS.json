@@ -1,6 +1,6 @@
 {
-  "status": "full_suite_interrupted_for_stable_unit_fixtures",
-  "updated_utc": "2026-11-15T10:25:23.575230+00:00",
+  "status": "stable_unit_fixture_review_passed_full_suite_running",
+  "updated_utc": "2026-11-15T10:37:39.608465+00:00",
   "release_id": "27033583248b4951b3fe8e5fd6d77b9f",
   "renderer_version": 22,
   "taxonomy_version": 4,
@@ -23,13 +23,13 @@
   "root_static_checks": "passed",
   "build_exit": 0,
   "global_gate": {
-    "status": "interrupted_143_not_a_pass",
-    "pid": 1040518,
+    "status": "running",
+    "pid": 1069348,
     "host": "dcc-core-ferc-u-ab39-5-6",
-    "input_snapshot": "/tmp/gsd-0315-review-fixes-regression-3ee1aa155b9742e88736600c2faed8d3",
+    "input_snapshot": "/tmp/gsd-0315-stable-fixtures-regression-1da31ab9dd714d1db1c1f30ed4c1cb44",
     "timeout_seconds": 10800,
-    "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.run.json",
-    "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.json"
+    "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-post-wave.run.json",
+    "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-post-wave.json"
   },
   "independent_audits": {
     "phase2": "passed",
@@ -59,7 +59,21 @@
   "plan16": "not_started",
   "global_requirements_and_human_uat": "open",
   "test_gate_review": {
-    "status": "issues_found",
-    "report": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-TEST-GATE-REVIEW.md"
-  }
+    "status": "clean",
+    "report": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-REVIEW.md",
+    "source_fix": "858fc59",
+    "targeted_tests": 19,
+    "targeted_seconds": 45.219
+  },
+  "previous_global_gates": [
+    {
+      "status": "interrupted_143_not_a_pass",
+      "pid": 1040518,
+      "host": "dcc-core-ferc-u-ab39-5-6",
+      "input_snapshot": "/tmp/gsd-0315-review-fixes-regression-3ee1aa155b9742e88736600c2faed8d3",
+      "timeout_seconds": 10800,
+      "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.run.json",
+      "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.json"
+    }
+  ]
 }

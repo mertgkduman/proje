@@ -14,7 +14,7 @@ tech-stack:
   added: []
   patterns: [frozen-renderer-dispatch, chromium-devtools-viewport]
 key-files:
-  created: [src/rapor_v18.py, src/rapor_v19.py, src/rapor_v19.css, src/rapor_v20.css, src/rapor_v20.py, src/rapor_v21.py, src/rapor_v21.css, src/rapor_v22.css, tests/comparison_navigation.cjs, tests/test_comparison_navigation.py, tests/test_phase3_stage_compatibility.py, tests/test_phase2_cli_audit.py, data/comparisons/03-navigation-checks.json]
+  created: [src/rapor_v18.py, src/rapor_v19.py, src/rapor_v19.css, src/rapor_v20.css, src/rapor_v20.py, src/rapor_v21.py, src/rapor_v21.css, src/rapor_v22.css, tests/comparison_navigation.cjs, tests/fixture_data.py, tests/test_comparison_navigation.py, tests/test_phase3_stage_compatibility.py, tests/test_phase2_cli_audit.py, data/comparisons/03-navigation-checks.json]
   modified: [src/arsiv.py, src/rapor.py, README.md]
 key-decisions:
   - Önceki 18, 19, 20 ve 21 rendererları ayrı dosyalarda byte-exact donduruldu; canlı sürüm 22 kullanıldı.
@@ -99,3 +99,7 @@ Seçili konu alanı parti dosyasındaki Tüzük/Program bölümünü belirler; b
 Satır soyu desteğinin sürüm 3/lineage 1 sözleşmesi mevcut veriye geriye dönük uygulanmadı. Ayrı DATA ve kilitte gerçek kaynaklı `ad5f8af53d4b4dd2b333839c5a1b1cff` fixture'ı export, publish, bağımsız audit ve bozuk manifest reddinden geçti (`03-15-checks/lineage-contract-v3-result.json`). Bir soy kenarı silinip SQLite özeti güncellendiğinde audit ve import reddetti, başarısız import workspace baytları değişmedi (`03-15-checks/lineage-tamper-result.json`). Bunlar izole test sonuçlarıdır, güncel araştırma verisine yeni anlam onayı eklemez.
 
 **Son bağımsız denetimler geçti:** Final22 P2 ve P3 partial komutları exit 0 ve gerçek yayın kimliğiyle `PHASE2_AUDIT_OK` / `PHASE3_AUDIT_OK` verdi. P3 partial, complete korumalarını da çalıştırdı. `03-15-checks/audits-v22-result.json` ve `phase2-v22.*` / `phase3-v22.*` sonuçları, komut ve immutable giriş özetlerini bağlar. Son kaynak incelemesi `clean`; önceki dört kod bulgusu ve temiz checkout fixture teslimi kapanmıştır. Altı kapalı yayın/current `2fa77a4` ile Git'e alındı; gerçek temiz Git arşivinde renderer20/21 byte ve bölüm testi geçti (`clean-fixtures-green.json`). Root'un yeni tam global regresyonu çalışıyor; 03-16 kaynak anlamı incelemesi ve UAT/faz kapanışı açık kalır. Bu ek gereksinim kutularını tamamlamaz.
+
+## Test kapısı fixture bağımlılığı düzeltmesi
+
+`858fc59` amaçlı çekirdek mutasyon testlerini sabit kabul edilmiş policy2 `7f816c5afd704cf3a88f2cfd8638528f` + üç atasına ve gerçek kayıtlı kaynak/varlıklara bağladı. Live current snapshot/server/navigation, yayımlanmış mali veri/eşleşme ve gerçek sözlük kontrolleri güncel veride kaldı; validator mock veya skip eklenmedi. Test sayıları korundu. 19 hedef test 45.219 saniyede geçti; gerçek audit/migration ve kaynak/indeks silme retleri `03-15-checks/tg-01/` altında. Bağımsız kaynak incelemesi clean; yeni tam root koşusu `03-15-checks/root-stable-fixtures/` altında çalışıyor. Önceki `root-review-fixes` koşusu 72 testten sonra kontrollü143 ile durduruldu, tam geçiş değildir. Üretim kaynak kodu, araştırma verileri ve current22 bu test onarımında değişmedi.
