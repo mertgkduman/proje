@@ -1,0 +1,24 @@
+test_missing_pilot_heading_is_rejected (test_acceptance.PhaseOneAcceptance.test_missing_pilot_heading_is_rejected) ... ok
+test_comparison_needs_evidence_and_preserves_multiple_sources (test_acceptance.PhaseOneAcceptance.test_comparison_needs_evidence_and_preserves_multiple_sources) ... ok
+test_pending_lead_blocks_closure (test_chain.ChainContract.test_pending_lead_blocks_closure) ... ok
+test_identical_bytes_keep_document_ownership (test_documents.DocumentContract.test_identical_bytes_keep_document_ownership) ... ok
+test_wrong_party_evidence_is_rejected (test_documents.DocumentContract.test_wrong_party_evidence_is_rejected) ... ok
+test_explicit_number_format_controls_source_transcription (test_finance.FinanceContract.test_explicit_number_format_controls_source_transcription) ... ok
+test_identity_period_and_required_metadata (test_finance.FinanceContract.test_identity_period_and_required_metadata) ... ok
+test_null_and_documented_zero_are_distinct (test_finance.FinanceContract.test_null_and_documented_zero_are_distinct) ... ok
+test_current_pilot_has_researched_finance (test_finance.PublishedFinance.test_current_pilot_has_researched_finance) ... ok
+test_actor_authorization_and_individual_are_distinct (test_matches.MatchContract.test_actor_authorization_and_individual_are_distinct) ... ok
+test_all_eligible_ids_reach_db_json_and_html (test_matches.MatchContract.test_all_eligible_ids_reach_db_json_and_html) ... ok
+test_candidate_resolution_preserves_history_and_rejects_wrong_evidence (test_matches.MatchContract.test_candidate_resolution_preserves_history_and_rejects_wrong_evidence) ... ok
+test_invalid_input_is_rejected (test_matches.MatchContract.test_invalid_input_is_rejected) ... ok
+test_match_respects_each_findings_provenance (test_matches.MatchContract.test_match_respects_each_findings_provenance) ... ok
+test_separate_reviewed_evidence_event_party_and_topic (test_matches.MatchContract.test_separate_reviewed_evidence_event_party_and_topic) ... ok
+test_access_failure_requires_identified_source (test_missing.MissingContract.test_access_failure_requires_identified_source) ... ok
+test_statuses_bind_matching_attempt_and_scope (test_missing.MissingContract.test_statuses_bind_matching_attempt_and_scope) ... ok
+test_verified_topic_without_basis_is_rejected_on_export (test_topics.TopicContract.test_verified_topic_without_basis_is_rejected_on_export) ... ok
+test_unrelated_party_cannot_authorize_charter (test_topics.TopicContract.test_unrelated_party_cannot_authorize_charter) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 45.219s
+
+OK
