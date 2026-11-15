@@ -431,7 +431,7 @@
       "classification": "planned_mitigation_present",
       "anchors": [
         "src/arsiv.py:1740",
-        "tests/test_completion_coverage.py:303",
+        "tests/test_completion_coverage.py:343",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/completion-v2-fix/synthesis-chain/README.md"
       ],
       "notes": "Selected synthesis validation and registered replacements retain historical projections; focused chain receipts exist and latest complete API remains pending."
@@ -481,7 +481,7 @@
       "classification": "planned_mitigation_present",
       "anchors": [
         "src/arsiv.py:1474",
-        "tests/test_completion_coverage.py:147",
+        "tests/test_completion_coverage.py:178",
         ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/completion-v2-fix/second-review-green/README.md"
       ],
       "notes": "Source basis, correction guard and missing-to-bounded-negative structural helper exist; latest full API verification remains pending."
@@ -491,7 +491,7 @@
       "classification": "planned_mitigation_present",
       "anchors": [
         "src/arsiv.py:984",
-        "tests/test_completion_coverage.py:119",
+        "tests/test_completion_coverage.py:216",
         "data/comparisons/03-probe-record.json"
       ],
       "notes": "Prior forged-reading probe rejected against the committed source-reading registry; agent review and human pending states remain distinct."
@@ -518,5 +518,6 @@
     }
   ],
   "source_checkpoint": "6ef0b5d17c33f2bafc4b124d278d979b878dd0a0",
-  "latest_api_verification": "pending"
+  "latest_api_verification": "pending",
+  "test_checkpoint": "ef2511d43742f737858754af76d0dc1529a2dd83"
 }
