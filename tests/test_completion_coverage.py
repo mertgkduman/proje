@@ -914,6 +914,17 @@ class CompletionCoverageTest(unittest.TestCase):
             finally:
                 arsiv.DATA = original
 
+    def assert_published_bundle(self, release):
+        """Check post-pointer integrity after publish's full ancestor audit."""
+        self.assertEqual(arsiv.current(), release)
+        self.assertFalse((arsiv.DATA / '.write.lock').exists())
+        folder = arsiv.DATA / 'releases' / release
+        manifest = json.loads((folder / 'manifest.json').read_text())
+        self.assertEqual(manifest['release_id'], release)
+        self.assertEqual(set(manifest['files']), {'records.sqlite3', 'records.json', 'index.html'})
+        for name, digest in manifest['files'].items():
+            self.assertEqual(arsiv.sha(folder / name), digest, name)
+
     def test_same_taxonomy_sourced_revision_round_trip(self):
         """Publish and audit the real-source fixture in one isolated DATA tree."""
         original = arsiv.DATA
@@ -1034,7 +1045,7 @@ class CompletionCoverageTest(unittest.TestCase):
                 print('isolated: importing source-backed replacement and publishing complete successor', flush=True)
                 arsiv.load_comparison(work, complete_payload)
                 complete_release = arsiv.publish_release(work, refresh=True)
-                self.assertEqual(arsiv.audit_release(complete_release), complete_release)
+                self.assert_published_bundle(complete_release)
                 self.assertTrue(arsiv.validate_phase_three(complete_release, 'complete'))
                 result = json.loads((arsiv.DATA / 'releases' / complete_release / 'records.json').read_text())
                 self.assertEqual(result['comparison_contract'][0]['taxonomy_version'], self.taxonomy)
@@ -1112,7 +1123,7 @@ class CompletionCoverageTest(unittest.TestCase):
                 self.assertIn(gap_row['id'], {r['id'] for r in gap_complete['comparison_row']})
                 self.assertNotIn(gap_row['id'], {r['id'] for r in arsiv.comparison_render_data(gap_complete)['comparison_row']})
                 gap_release = arsiv.publish_release(gap_work, refresh=True)
-                self.assertEqual(arsiv.audit_release(gap_release), gap_release)
+                self.assert_published_bundle(gap_release)
                 self.assertTrue(arsiv.validate_phase_three(gap_release, 'complete'))
                 manifest_path = arsiv.DATA / 'releases' / complete_release / 'manifest.json'
                 original_manifest = manifest_path.read_bytes()
