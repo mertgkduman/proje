@@ -151,11 +151,19 @@ class CompletionCoverageTest(unittest.TestCase):
         data = dict(self.reviewed, comparison_completion_basis=[head], comparison_coverage_disposition=cells,
                     comparison_completion_revision=[revision], comparison_completion_supersession=[])
         self.assertTrue(arsiv.validate_completion_revisions(data))
+        self.assertTrue(arsiv.validate_completion(data))
         successor = dict(revision, id='test-revision-2', epoch=2, parent_revision_id=revision['id'],
                          stage='partial', reason='source work in progress')
         partial = dict(data, comparison_contract=[dict(data['comparison_contract'][0], stage='partial')],
                        comparison_completion_revision=[revision, successor])
         self.assertTrue(arsiv.validate_completion_revisions(partial))
+        self.assertTrue(arsiv.validate_comparison_descent(data, partial))
+        altered = dict(partial, comparison_completion_basis=[dict(head, source_catalog='{}')])
+        with self.assertRaisesRegex(ValueError, 'Önceki kaynak kapanışı kaydı'):
+            arsiv.validate_comparison_descent(data, altered)
+        altered = dict(partial, comparison_completion_revision=[successor])
+        with self.assertRaisesRegex(ValueError, 'Önceki kaynak kapanışı kaydı'):
+            arsiv.validate_comparison_descent(data, altered)
         with self.assertRaisesRegex(ValueError, 'revizyon zinciri'):
             arsiv.validate_completion_revisions(dict(partial, comparison_completion_revision=[revision, dict(successor, parent_revision_id='wrong')]))
         changed = dict(data, comparison_contract=[dict(data['comparison_contract'][0], stage='partial')])

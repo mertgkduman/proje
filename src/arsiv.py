@@ -925,7 +925,8 @@ def validate_legacy_completion_projection(data):
         try:
             proof = json.loads(marker['evidence'])
             projection = dict(data)
-            projection.pop('comparison_completion_revision', None)
+            for table in COMPLETION_V2_TABLES:
+                projection.pop(table, None)
             for name, table, identity in (
                 ('topics', 'comparison_topic', lambda x: (x['topic_id'], x['taxonomy_version'])),
                 ('rows', 'comparison_row', lambda x: x['id']),
@@ -1027,6 +1028,8 @@ def verify_initial_completion_basis(basis, risk_universe):
 
 def validate_completion_revisions(data):
     """Check immutable revision selections; the last epoch is the active one."""
+    if data.get('comparison_completion_supersession'):
+        raise ValueError('Kaynak kapanışı seçim ardıllığı henüz desteklenmiyor')
     revisions = sorted(data.get('comparison_completion_revision', []), key=lambda r: r['epoch'])
     bases = {b['id']: b for b in data.get('comparison_completion_basis', [])}
     dispositions = data.get('comparison_coverage_disposition', [])
@@ -1058,6 +1061,8 @@ def validate_completion_revisions(data):
             if head['version'] != 2 or head['taxonomy_version'] != revision['taxonomy_version']:
                 raise ValueError('Sözlük uyuşmuyor')
             source, risk = decode_completion_basis(head, [d for d in dispositions if d['basis_id'] == head['id']])
+            if previous_source is None and (hashlib.sha256(canonical_json(source).encode()).hexdigest() != 'ec14789049a61a7c7e1a4c1f70cfa809cd44c5086b1c636b60f663eebe37fc5a' or hashlib.sha256(canonical_json(risk).encode()).hexdigest() != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9'):
+                raise ValueError('İlk kaynak evreni bağımsız hazırlanmış bütüne uyuşmuyor')
             if previous_source is not None and revision['basis_id'] != previous['basis_id']:
                 if head['parent_basis_id'] != previous['basis_id']:
                     raise ValueError('Kaynak sözlüğü soy zinciri geçersiz')
@@ -1097,6 +1102,12 @@ def validate_completion(data):
     Earlier complete snapshots have no such marker and retain their original
     contract. The review describes agent work, never a human acceptance.
     """
+    if data.get('comparison_completion_revision'):
+        if data.get('comparison_completion_supersession'):
+            raise ValueError('Kaynak kapanışı seçim ardıllığı henüz desteklenmiyor')
+        return validate_completion_revisions(data)
+    if any(data.get(name) for name in COMPLETION_V2_TABLES):
+        raise ValueError('Kaynak kapanışı revizyon ailesi eksik')
     markers = data.get('comparison_completion', [])
     if not markers:
         return True
@@ -1398,13 +1409,28 @@ def validate_comparison_descent(base, candidate):
     old_contracts = base.get('comparison_contract', [])
     if any(row not in candidate.get('comparison_completion', []) for row in base.get('comparison_completion', [])):
         raise ValueError('Önceki kaynak kapanışı kaldırılamaz veya değiştirilemez')
+    for name, keys in (('comparison_completion_basis', ('id',)),
+                       ('comparison_coverage_disposition', ('basis_id', 'cell_id')),
+                       ('comparison_completion_revision', ('id',)),
+                       ('comparison_completion_supersession', ('revision_id', 'old_cell_id', 'new_cell_id'))):
+        retained = {tuple(item[k] for k in keys): item for item in candidate.get(name, [])}
+        if any(retained.get(tuple(item[k] for k in keys)) != item for item in base.get(name, [])):
+            raise ValueError('Önceki kaynak kapanışı kaydı değiştirilemez: ' + name)
     if not old_contracts:
         return True
     new_contracts = candidate.get('comparison_contract', [])
     if len(new_contracts) != 1: raise ValueError('Önceki karşılaştırma sözleşmesi kaldırılamaz')
     old, new = old_contracts[0], new_contracts[0]
     stages = {'tracer':0,'partial':1,'complete':2}
-    if (old['version'], new['version']) not in ((1,1), (1,2), (1,3), (2,2), (2,3), (3,3)) or (new['version'] >= 2 and new['taxonomy_version'] < 3) or new['taxonomy_version'] < old['taxonomy_version'] or stages[new['stage']] < stages[old['stage']]:
+    revisions = candidate.get('comparison_completion_revision', [])
+    base_revisions = base.get('comparison_completion_revision', [])
+    advanced = bool(revisions and (not base_revisions or max(r['epoch'] for r in revisions) > max(r['epoch'] for r in base_revisions)))
+    if base.get('comparison_completion') and not revisions and (
+            old != new or completion_selection(base, old['taxonomy_version']) != completion_selection(candidate, old['taxonomy_version'])):
+        raise ValueError('Önceki kaynak kapanışından değişiklik yeni revizyon gerektirir')
+    if revisions:
+        validate_completion_revisions(candidate)
+    if (old['version'], new['version']) not in ((1,1), (1,2), (1,3), (2,2), (2,3), (3,3)) or (new['version'] >= 2 and new['taxonomy_version'] < 3) or new['taxonomy_version'] < old['taxonomy_version'] or (stages[new['stage']] < stages[old['stage']] and not advanced):
         raise ValueError('Karşılaştırma sözleşmesi geriletilemez')
     if new['version'] == 3:
         if new['taxonomy_version'] > old['taxonomy_version'] + 1:
