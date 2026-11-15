@@ -98,6 +98,16 @@ class ComparisonReleaseTest(unittest.TestCase):
         candidate['comparison_row'] = [r for r in candidate['comparison_row'] if r['party_id'] != 'iyi']
         with self.assertRaises(ValueError): arsiv.validate_comparison_descent(base, candidate)
 
+    def test_completion_marker_cannot_be_dropped_by_a_later_release(self):
+        # A later refresh must not silently fall back to the legacy complete
+        # contract after a sourced completion review has been adopted.
+        base = self.comparison_data()
+        base['comparison_completion'] = [{'version': 1, 'evidence': 'reviewed'}]
+        candidate = copy.deepcopy(base)
+        del candidate['comparison_completion']
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparison_descent(base, candidate)
+
     def test_real_sources_reach_closed_comparison_release(self):
         # Fail on the missing behaviour before paying for the archive copy and
         # immutable release audit; the remainder exercises the real pathway.

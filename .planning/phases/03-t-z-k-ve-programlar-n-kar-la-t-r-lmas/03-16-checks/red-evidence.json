@@ -1,0 +1,10 @@
+{
+  "command": "PYTHONPATH=src:tests python3 -m unittest test_comparisons.ComparisonReleaseTest.test_completion_marker_cannot_be_dropped_by_a_later_release",
+  "exitCode": 1,
+  "output": "TAP version 13\nnot ok 1 - test_completion_marker_cannot_be_dropped_by_a_later_release\n# tests 1\n# pass 0\n# fail 1\n",
+  "targetTest": "test_completion_marker_cannot_be_dropped_by_a_later_release",
+  "targetFile": "tests/test_comparisons.py",
+  "expected": "dropping adopted marker raises ValueError",
+  "actual": "ValueError not raised",
+  "original_unittest_output": "F\n======================================================================\nFAIL: test_completion_marker_cannot_be_dropped_by_a_later_release (test_comparisons.ComparisonReleaseTest.test_completion_marker_cannot_be_dropped_by_a_later_release)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparisons.py\", line 108, in test_completion_marker_cannot_be_dropped_by_a_later_release\n    with self.assertRaises(ValueError):\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 1 test in 0.070s\n\nFAILED (failures=1)\n"
+}
