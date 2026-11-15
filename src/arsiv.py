@@ -1552,10 +1552,9 @@ def completion_superseded_syntheses(data, revision, revisions, basis, selection)
     rows = {r['id']: r for r in data['comparison_row']}
     links = data.get('comparison_completion_supersession', [])
     retired = set()
-    for item in basis.get('_correction_registry', []):
-        decision = validate_registered_decision(item)
-        if decision.get('kind') != 'synthesis_supersession':
-            continue
+    decisions = [validate_registered_decision(item) for item in basis.get('_correction_registry', [])]
+    decisions = [d for d in decisions if d.get('kind') == 'synthesis_supersession']
+    for decision in decisions:
         epoch = epochs.get(decision.get('revision_id'))
         if epoch is None:
             raise ValueError('Sentez ardıllığının revizyonu yok')
@@ -1564,12 +1563,16 @@ def completion_superseded_syntheses(data, revision, revisions, basis, selection)
         old, new = obligations.get(decision.get('old_id')), obligations.get(decision.get('new_id'))
         prior = next((r for r in revisions if r['epoch'] == epoch - 1), None)
         prior_ids = {s['id'] for s in json.loads(prior['selection'])['syntheses']} if prior else set()
+        later_successor = any(d.get('old_id') == decision.get('new_id') and
+                              epoch < epochs.get(d.get('revision_id'), -1) <= revision['epoch']
+                              for d in decisions)
         if (not old or not new or old['id'] in retired or old['id'] == new['id'] or
                 old['topic_id'] != new['topic_id'] or decision.get('result') != 'supersedes' or
                 decision.get('reviewer_kind') != 'agent' or not decision.get('reason') or
                 decision.get('old_claim') != old['source_authored_claim'] or decision.get('new_claim') != new['source_authored_claim'] or
                 decision.get('old_review') != old['original_review'] or decision.get('new_review') != new['original_review'] or
-                old['id'] not in prior_ids or old['id'] in selected or new['id'] not in selected):
+                old['id'] not in prior_ids or old['id'] in selected or
+                (new['id'] not in selected and not later_successor)):
             raise ValueError('Kaynaklı sentez ardıllığı uyuşmuyor')
         try:
             reviewed = dt.datetime.fromisoformat(decision['reviewed_at'].replace('Z', '+00:00'))

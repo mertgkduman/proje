@@ -446,6 +446,51 @@ class CompletionCoverageTest(unittest.TestCase):
                 self.assertNotIn('id="comparison-' + old_row + '"', report)
                 self.assertIn('id="comparison-' + row['id'] + '"', report)
                 self.assertIn(arsiv.html.escape(new_claim['text']), report)
+                # A second independently authored mechanical successor must
+                # preserve A and B at their historical revision selections.
+                final_claim = dict(new_claim, id='test-sr25-synthesis-rebound-again')
+                final_review = dict(new_review, subject_id=final_claim['id'])
+                chain_time = dt.datetime.now(dt.timezone.utc).isoformat()
+                chain_relation = dict(relation, id='test-sr25-synthesis-second-lineage', revision_id='test-sr25-revision-3',
+                    old_id=new_claim['id'], new_id=final_claim['id'], reviewed_at=chain_time,
+                    old_claim=new_claim, new_claim=final_claim, old_review=new_review, new_review=final_review)
+                chain_content = arsiv.canonical_json(dict(purpose='Test-only second mechanical lineage', records=[
+                    dict(kind='comparison_synthesis', values=final_claim),
+                    dict(kind='comparison_semantic_review', values=final_review)], decisions=[chain_relation]))
+                chain_path = 'data/comparisons/test-sr25-synthesis-chain.json'
+                (arsiv.DATA / 'comparisons/test-sr25-synthesis-chain.json').write_text(chain_content, encoding='utf-8')
+                chain_sha = hashlib.sha256(chain_content.encode()).hexdigest()
+                chain_registration = dict(decision=chain_relation, origin=dict(path=chain_path, pointer='/decisions/0',
+                    content=chain_content, sha256=chain_sha))
+                chain_obligation = dict(id=final_claim['id'], topic_id=final_claim['topic_id'], source_authored_claim=final_claim,
+                    source=dict(path=chain_path, pointer='/records/0/values'), typed_source_judgment=meaning,
+                    original_review=final_review, review_source=dict(path=chain_path, pointer='/records/1/values'))
+                chain_basis = dict(new_basis, synthesis_obligations=new_basis['synthesis_obligations'] + [chain_obligation],
+                    source_documents=new_basis['source_documents'] + [dict(path=chain_path, sha256=chain_sha,
+                        role='source_research_or_mapping', original_status=None)],
+                    _correction_registry=new_basis['_correction_registry'] + [chain_registration])
+                self.assertTrue(arsiv.verify_successor_completion_basis(new_basis, chain_basis))
+                chain_head, chain_cells = arsiv.completion_basis_records(chain_basis, risks, 'test-sr25-chain-basis', chain_time, head['id'])
+                chain_selection = json.loads(revision['selection'])
+                chain_selection['syntheses'] = [s for s in chain_selection['syntheses'] if s['id'] != new_claim['id']] + [final_claim]
+                chain_revision = dict(revision, id=chain_relation['revision_id'], epoch=3, parent_revision_id=revision['id'],
+                    basis_id=chain_head['id'], created_at=chain_time, selection=arsiv.canonical_json(chain_selection))
+                chain_evidence = [dict(e, synthesis_id=final_claim['id']) for e in evidence]
+                chain_candidate = dict(candidate, comparison_synthesis=candidate['comparison_synthesis'] + [final_claim],
+                    comparison_synthesis_evidence=candidate['comparison_synthesis_evidence'] + chain_evidence,
+                    comparison_semantic_review=candidate['comparison_semantic_review'] + [final_review],
+                    comparison_completion_basis=candidate['comparison_completion_basis'] + [chain_head],
+                    comparison_coverage_disposition=candidate['comparison_coverage_disposition'] + chain_cells,
+                    comparison_completion_revision=[previous, revision, chain_revision])
+                self.assertTrue(arsiv.validate_completion_revisions(chain_candidate))
+                self.assertTrue(arsiv.validate_comparisons(chain_candidate))
+                self.assertIn(template['old_id'], {s['id'] for s in json.loads(previous['selection'])['syntheses']})
+                self.assertIn(new_claim['id'], {s['id'] for s in json.loads(revision['selection'])['syntheses']})
+                self.assertIn(final_claim['id'], {s['id'] for s in arsiv.comparison_render_data(chain_candidate)['comparison_synthesis']})
+                missing_terminal = dict(chain_selection, syntheses=[s for s in chain_selection['syntheses'] if s['id'] != final_claim['id']])
+                with self.assertRaisesRegex(ValueError, 'sentez ardıllığı'):
+                    arsiv.completion_superseded_syntheses(chain_candidate, chain_revision,
+                        chain_candidate['comparison_completion_revision'], chain_basis, missing_terminal)
                 # A substantive addition gets a new dated source review, not
                 # a mechanically inherited approval or a production change.
                 substantive_claim = dict(new_claim, id='test-sr25-synthesis-substantive',

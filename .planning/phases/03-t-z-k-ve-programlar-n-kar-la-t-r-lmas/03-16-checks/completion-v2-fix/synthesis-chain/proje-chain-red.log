@@ -1,0 +1,27 @@
+test_sampled_sr25_context_accepts_authenticated_replacement (test_completion_coverage.CompletionCoverageTest.test_sampled_sr25_context_accepts_authenticated_replacement) ... ERROR
+
+======================================================================
+ERROR: test_sampled_sr25_context_accepts_authenticated_replacement (test_completion_coverage.CompletionCoverageTest.test_sampled_sr25_context_accepts_authenticated_replacement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/proje-chain-red-20261115/src/arsiv.py", line 1729, in validate_completion_revisions
+    excluded_syntheses = completion_superseded_syntheses(data, revision, revisions, source, selection)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/proje-chain-red-20261115/src/arsiv.py", line 1573, in completion_superseded_syntheses
+    raise ValueError('Kaynaklı sentez ardıllığı uyuşmuyor')
+ValueError: Kaynaklı sentez ardıllığı uyuşmuyor
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/proje-chain-red-20261115/tests/test_completion_coverage.py", line 485, in test_sampled_sr25_context_accepts_authenticated_replacement
+    self.assertTrue(arsiv.validate_completion_revisions(chain_candidate))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/proje-chain-red-20261115/src/arsiv.py", line 1738, in validate_completion_revisions
+    raise ValueError('Kaynak kapanışı revizyon kanıtı geçersiz: ' + str(exc)) from exc
+ValueError: Kaynak kapanışı revizyon kanıtı geçersiz: Kaynaklı sentez ardıllığı uyuşmuyor
+
+----------------------------------------------------------------------
+Ran 1 test in 53.543s
+
+FAILED (errors=1)

@@ -1,0 +1,20 @@
+test_structural_missing_to_reviewed_negative_with_real_tip_source (test_completion_coverage.CompletionCoverageTest.test_structural_missing_to_reviewed_negative_with_real_tip_source) ... ok
+test_sampled_sr25_context_accepts_authenticated_replacement (test_completion_coverage.CompletionCoverageTest.test_sampled_sr25_context_accepts_authenticated_replacement) ... FAIL
+test_committed_adoption_package_passes_shared_validation (test_completion_coverage.CompletionCoverageTest.test_committed_adoption_package_passes_shared_validation) ... ok
+
+======================================================================
+FAIL: test_sampled_sr25_context_accepts_authenticated_replacement (test_completion_coverage.CompletionCoverageTest.test_sampled_sr25_context_accepts_authenticated_replacement)
+----------------------------------------------------------------------
+ValueError: Kaynaklı sentez ardıllığı uyuşmuyor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/proje-chain-green-20261115/tests/test_completion_coverage.py", line 491, in test_sampled_sr25_context_accepts_authenticated_replacement
+    with self.assertRaisesRegex(ValueError, 'Sentez ardıllığı'):
+AssertionError: "Sentez ardıllığı" does not match "Kaynaklı sentez ardıllığı uyuşmuyor"
+
+----------------------------------------------------------------------
+Ran 3 tests in 115.845s
+
+FAILED (failures=1)
