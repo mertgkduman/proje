@@ -1662,8 +1662,12 @@ def validate_changed_topic_reviews(data):
 def validate_phase_three_workspace(folder, stage):
     folder = Path(folder)
     data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
-    if data.get('schema_version') != 6 or data['comparison_contract'][0]['stage'] != stage:
+    actual_stage = data['comparison_contract'][0]['stage'] if data.get('schema_version') == 6 else None
+    if actual_stage != stage and not (stage == 'partial' and actual_stage == 'complete'):
         raise ValueError('İstenen karşılaştırma aşaması uyuşmuyor')
+    # A complete snapshot satisfies a partial request only after the stronger
+    # complete-stage checks below have also run.
+    stage = actual_stage
     validate_comparisons(data)
     validate_changed_topic_reviews(data)
     order = ('yeni-parti','tip','dem','iyi','yeni-yol','dbp','emep','saadet','demokrat')
