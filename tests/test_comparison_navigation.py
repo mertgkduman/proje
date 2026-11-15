@@ -15,12 +15,13 @@ class ComparisonNavigation(unittest.TestCase):
         executable = browser()
         self.assertIsNotNone(executable, 'Chromium bulunamadı')
         source = REPORT.read_text(encoding='utf-8')
-        marker = '''<script>setTimeout(()=>{const e=document.getElementById('comparison-03-iyi-merkez');document.body.dataset.focusCheck=String(e===document.activeElement && !e.closest('[role=tabpanel]').hidden)},200)</script>'''
+        marker = '''<script>setTimeout(()=>{const e=document.getElementById('comparison-04-03-v3-03-v2-iyi-demokrasi');document.body.dataset.targetExists=String(!!e);document.body.dataset.focusCheck=String(!!e && e===document.activeElement && !e.closest('[role=tabpanel]').hidden)},200)</script>'''
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / 'index.html'
             path.write_text(source.replace('</html>', marker + '</html>'), encoding='utf-8')
-            result = subprocess.run([executable, '--headless', '--no-sandbox', '--disable-gpu', '--virtual-time-budget=1000', '--dump-dom', path.as_uri() + '#comparison-03-iyi-merkez'], capture_output=True, text=True, timeout=120)
+            result = subprocess.run([executable, '--headless', '--no-sandbox', '--disable-gpu', '--virtual-time-budget=1000', '--dump-dom', path.as_uri() + '#comparison-04-03-v3-03-v2-iyi-demokrasi'], capture_output=True, text=True, timeout=120)
         self.assertEqual(result.returncode, 0, result.stderr[-1000:])
+        self.assertTrue('data-target-exists="true"' in result.stdout, 'Kanonik hedef yok')
         self.assertTrue('data-focus-check="true"' in result.stdout, 'Doğrudan hedef odaklanmadı')
 
 
