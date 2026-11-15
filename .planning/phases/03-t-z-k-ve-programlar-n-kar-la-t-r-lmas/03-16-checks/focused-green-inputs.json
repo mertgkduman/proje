@@ -1,0 +1,12 @@
+{
+  "command": "PYTHONPATH=src:tests python3 -m unittest test_completion_coverage test_comparisons.ComparisonReleaseTest.test_completion_marker_cannot_be_dropped_by_a_later_release test_comparisons.ComparisonReleaseTest.test_completion_requires_source_meaning_review",
+  "exit_code": 0,
+  "tests": 10,
+  "inputs": {
+    "src/arsiv.py": "26d5ea0715e4114fcbe8c3c6e10c59cc5d98ae2493ab0fee72cba7aa6e4b977a",
+    "tests/test_comparisons.py": "80bfa30951a5a1281df153ec603479af1ad9082eae533c49d348a3fb77c70bf6",
+    "tests/test_completion_coverage.py": "9ea0b06dd4370e8f3e34465f6dd38422c2b89a8cce85189c0e50bbd52e87fd7a",
+    "data/comparisons/03-source-review.json": "1c259e3e2864591f1ec7f121c7088787e7ba3ab9f8988461a19991a0ef909e42",
+    "data/releases/27033583248b4951b3fe8e5fd6d77b9f/records.json": "65a522a9e7aba2625e87d8436059dc5a7a11c1bf06b7afb50b09b36dcf14a773"
+  }
+}

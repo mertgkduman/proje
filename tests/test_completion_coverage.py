@@ -18,6 +18,20 @@ class CompletionCoverageTest(unittest.TestCase):
         data[table][index] = dict(data[table][index], **changes)
         return data
 
+    def test_real_review_and_legacy_snapshot_remain_valid(self):
+        self.assertTrue(arsiv.validate_completion(self.reviewed))
+        legacy = dict(self.reviewed)
+        del legacy['comparison_completion']
+        self.assertTrue(arsiv.validate_completion(legacy))
+
+    def test_reviewed_finding_provenance_is_required(self):
+        data = dict(self.reviewed)
+        data['comparison_semantic_review'] = [r for r in data['comparison_semantic_review']
+                                              if r['subject_kind'] != 'comparison_field']
+        data['review'] = [r for r in data['review'] if r['kind'] != 'finding']
+        with self.assertRaises(ValueError):
+            arsiv.validate_completion(data)
+
     def test_rejects_changed_applicable_level_and_organ(self):
         index = next(i for i, r in enumerate(self.reviewed['comparison_row'])
                      if r['taxonomy_version'] == self.taxonomy and r['state'] == 'evidence')

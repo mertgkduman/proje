@@ -120,6 +120,7 @@ COMPARISON_TABLES = {
     'comparison_semantic_review': 'subject_kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(subject_kind,subject_id,reviewer_kind)',
 }
 COMPARISON_INVENTORY_TABLE = 'id TEXT PRIMARY KEY, taxonomy_version INTEGER NOT NULL, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT REFERENCES document_version(id), source_role TEXT NOT NULL, section TEXT NOT NULL, page_range TEXT, full_text_available INTEGER NOT NULL, scanned_at TEXT NOT NULL, topic_ids TEXT NOT NULL, unmatched_headings TEXT NOT NULL, search_boundary TEXT NOT NULL, missing_id TEXT REFERENCES missing(id)'
+COMPLETION_TABLE = 'version INTEGER NOT NULL, taxonomy_version INTEGER NOT NULL, evidence TEXT NOT NULL, PRIMARY KEY(version,taxonomy_version)'
 LINEAGE_TABLES = {
     'comparison_lineage_contract': 'version INTEGER PRIMARY KEY, first_taxonomy_version INTEGER NOT NULL',
     'comparison_row_lineage': 'old_row_id TEXT NOT NULL REFERENCES comparison_row(id), new_row_id TEXT NOT NULL REFERENCES comparison_row(id), transition TEXT NOT NULL, PRIMARY KEY(old_row_id,new_row_id)',
@@ -319,6 +320,7 @@ def migrate_comparisons(db, backup_path, fail_at=None):
         if columns and 'source_role' not in columns:
             db.execute('ALTER TABLE topic_basis ADD COLUMN source_role TEXT')
         db.execute(f'CREATE TABLE IF NOT EXISTS comparison_source_inventory ({COMPARISON_INVENTORY_TABLE})')
+        db.execute(f'CREATE TABLE IF NOT EXISTS comparison_completion ({COMPLETION_TABLE})')
         for name, definition in COMPARISON_TABLES.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if fail_at == 'migration':
@@ -355,7 +357,7 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
     work = Path(work)
     assert_lock(work)
     protected = {'party','scope_party','scope_observation','method','party_identity_revision','source_policy'}
-    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected) | {'comparison_source_inventory'} | set(LINEAGE_TABLES)
+    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected) | {'comparison_source_inventory', 'comparison_completion'} | set(LINEAGE_TABLES)
     with tempfile.TemporaryDirectory(dir=work) as temp:
         temp = Path(temp)
         shutil.copyfile(work / 'records.sqlite3', temp / 'records.sqlite3')
@@ -408,7 +410,7 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                         if conflicts: raise ValueError('Aynı kimlikle çelişen kayıt')
                         continue
                     if historical_package: raise ValueError('Eski paket mevcut sürüme yeni kayıt ekleyemez')
-                    if kind in COMPARISON_TABLES or kind in LINEAGE_TABLES or kind == 'comparison_source_inventory':
+                    if kind in COMPARISON_TABLES or kind in LINEAGE_TABLES or kind in ('comparison_source_inventory', 'comparison_completion'):
                         keys = list(values)
                         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
                     else:
@@ -647,6 +649,117 @@ def validate_synthesis_v2(data, synthesis):
     return True
 
 
+def validate_completion(data):
+    """Validate an explicitly adopted, snapshot-bound source closure contract.
+
+    Earlier complete snapshots have no such marker and retain their original
+    contract. The review describes agent work, never a human acceptance.
+    """
+    markers = data.get('comparison_completion', [])
+    if not markers:
+        return True
+    contract = data['comparison_contract'][0]
+    if contract['stage'] != 'complete':
+        raise ValueError('Kaynak kapanışı tam aşama gerektirir')
+    if any(m.get('version') != 1 for m in markers):
+        raise ValueError('Bilinmeyen kaynak kapanışı sözleşmesi')
+    selected = [m for m in markers if m.get('taxonomy_version') == contract['taxonomy_version']]
+    if len(selected) != 1:
+        raise ValueError('Seçili sözlük için kaynak kapanışı gerekli')
+    try:
+        proof = json.loads(selected[0]['evidence'])
+    except (KeyError, TypeError, ValueError):
+        raise ValueError('Kaynak kapanış kanıtı geçersiz')
+    if not isinstance(proof, dict):
+        raise ValueError('Kaynak kapanış kanıtı nesne olmalı')
+    version = contract['taxonomy_version']
+    rows = [r for r in data['comparison_row'] if r['taxonomy_version'] == version]
+    row_ids = {r['id'] for r in rows}
+    actual = {
+        'topics': [t for t in data['comparison_topic'] if t['taxonomy_version'] == version],
+        'rows': rows,
+        'fields': [f for f in data['comparison_field'] if f['row_id'] in row_ids],
+        'syntheses': [s for s in data['comparison_synthesis'] if s['taxonomy_version'] == version],
+        'inventory': [i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == version],
+    }
+    for name, records in actual.items():
+        expected = proof.get(name)
+        key = 'topic_id' if name == 'topics' else 'id'
+        if not isinstance(expected, list) or not expected or any(not isinstance(r, dict) or key not in r for r in expected):
+            raise ValueError('Kaynak kapanış kapsamı eksik: ' + name)
+        expected_by_id = {r[key]: r for r in expected}
+        actual_by_id = {r[key]: r for r in records}
+        if len(expected_by_id) != len(expected) or len(actual_by_id) != len(records) or expected_by_id != actual_by_id:
+            raise ValueError('Kaynak kapanış kapsamı değişmiş: ' + name)
+    if any(r['state'] not in ('evidence', 'no_explicit_statement', 'document_missing') for r in rows):
+        raise ValueError('Kaynak kapanışında açık inceleme var')
+    review = proof.get('source_review')
+    if not isinstance(review, dict) or review.get('reviewer_kind') != 'agent' or not review.get('sample_rationale') or not review.get('actual_reading_time'):
+        raise ValueError('Kaynak anlamı incelemesinin kökeni eksik')
+    versions = {v['id']: v for v in data['document_version']}
+    sources = review.get('source_versions')
+    if not isinstance(sources, list) or not sources:
+        raise ValueError('Kaynak incelemesinin belge sürümleri eksik')
+    for source in sources:
+        version_record = versions.get(source.get('id'))
+        if not version_record or source.get('sha256') != version_record['sha256'] or source.get('computed_sha256') != version_record['sha256'] or source.get('original_path') != version_record['original_path'] or not source.get('reading_provenance'):
+            raise ValueError('Kaynak incelemesinin belge sürümü uyuşmuyor')
+    checks = review.get('checks')
+    if not isinstance(checks, list) or not checks:
+        raise ValueError('Kaynak anlamı incelemesi eksik')
+    row_map = {r['id']: r for r in rows}
+    field_map = {f['id']: f for f in actual['fields']}
+    synthesis_map = {s['id']: s for s in actual['syntheses']}
+    finding_map = {f['id']: f for f in data['finding']}
+    parties = set()
+    for check in checks:
+        if not isinstance(check, dict) or check.get('reviewer_kind') != 'agent' or check.get('result') not in ('supported_with_stated_scope', 'documentary_limitation_preserved') or not all(check.get(k) for k in ('id', 'source_reading', 'judgment', 'expansion')):
+            raise ValueError('Kaynak anlamı kararı eksik')
+        for reviewed in check.get('selected_rows', []):
+            row = row_map.get(reviewed.get('id'))
+            if not row or any(reviewed.get(k) != v for k, v in row.items()):
+                raise ValueError('Kaynak anlamı kararı seçili satırla uyuşmuyor')
+            for reviewed_field in reviewed.get('fields', []):
+                field = field_map.get(reviewed_field.get('id'))
+                if not field or any(reviewed_field.get(k) != v for k, v in field.items()):
+                    raise ValueError('Kaynak incelemesi seçili alanla uyuşmuyor')
+                if reviewed_field.get('summary') != finding_map[field['summary_finding_id']]['text']:
+                    raise ValueError('Kaynak incelemesi özetle uyuşmuyor')
+            parties.add(row['party_id'])
+        for reviewed_claim in check.get('inspected_synthesis', []):
+            claim = synthesis_map.get(reviewed_claim.get('id'))
+            if not claim or any(reviewed_claim.get(k) != v for k, v in claim.items()):
+                raise ValueError('Kaynak incelemesi sentezle uyuşmuyor')
+    if parties != {p['party_id'] for p in data['scope_party']}:
+        raise ValueError('Kaynak anlamı örneklemi bütün partileri kapsamıyor')
+    coverage = proof.get('coverage_review')
+    if not isinstance(coverage, dict) or not isinstance(coverage.get('parties'), list) or not isinstance(coverage.get('semantic_packages'), list):
+        raise ValueError('Paketlerin kaynak inceleme izi eksik')
+    party_coverage = {p.get('party_id'): p for p in coverage['parties']}
+    if set(party_coverage) != parties:
+        raise ValueError('Parti kapsam incelemesi eksik')
+    for party, item in party_coverage.items():
+        selected_rows = [r for r in rows if r['party_id'] == party]
+        ids = {r['id'] for r in selected_rows}
+        if item.get('row_count') != len(selected_rows) or item.get('topic_count') != len({r['topic_id'] for r in selected_rows}) or item.get('field_count') != sum(f['row_id'] in ids for f in actual['fields']):
+            raise ValueError('Parti kapsam incelemesi seçili kayıtlarla uyuşmuyor')
+    field_reviews = {r['subject_id'] for r in data.get('comparison_semantic_review', [])
+                     if r['subject_kind'] == 'comparison_field' and r['reviewer_kind'] == 'agent'
+                     and r['result'] == 'reviewed' and r['reason'] and r['reviewed_at']}
+    reviewed_pairs = {(f['summary_finding_id'], f['quote_finding_id']) for f in data['comparison_field'] if f['id'] in field_reviews}
+    finding_reviews = {r['subject_id'] for r in data.get('review', [])
+                       if r['kind'] == 'finding' and r['reviewer_kind'] == 'agent'
+                       and r['result'] == 'reviewed' and r['reason'] and r['reviewed_at']}
+    for field in actual['fields']:
+        pair = (field['summary_finding_id'], field['quote_finding_id'])
+        if field['id'] not in field_reviews and pair not in reviewed_pairs and not set(pair) <= finding_reviews:
+            raise ValueError('Seçili alanın kaynak anlamı inceleme izi eksik')
+    packages = coverage['semantic_packages']
+    if not packages or any(not p.get('path') or not p.get('sha256') or p.get('invalid_decisions') or not p.get('original_review_time_range') for p in packages):
+        raise ValueError('Önceki anlam kararlarının kökeni eksik')
+    return True
+
+
 def validate_comparisons(data):
     """Validate ownership and the evidence contract for every comparison."""
     contracts = data.get('comparison_contract', [])
@@ -657,6 +770,7 @@ def validate_comparisons(data):
     if len(contracts) != 1 or contracts[0]['version'] not in (1, 2, 3) or contracts[0]['stage'] not in ('tracer', 'partial', 'complete'):
         raise ValueError('Karşılaştırma sözleşmesi geçersiz')
     contract = contracts[0]
+    validate_completion(data)
     if contract['version'] >= 2 and contract['taxonomy_version'] < 3:
         raise ValueError('Sentez sözleşmesi seçili sözlük sürümü 3 gerektirir')
     topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
@@ -840,6 +954,8 @@ def validate_comparisons(data):
 def validate_comparison_descent(base, candidate):
     """Keep previously published comparison evidence across refreshes."""
     old_contracts = base.get('comparison_contract', [])
+    if any(row not in candidate.get('comparison_completion', []) for row in base.get('comparison_completion', [])):
+        raise ValueError('Önceki kaynak kapanışı kaldırılamaz veya değiştirilemez')
     if not old_contracts:
         return True
     new_contracts = candidate.get('comparison_contract', [])
@@ -1402,6 +1518,8 @@ def export_db(path, release_id, strict_identity=False):
         if has_comparisons:
             names += list(COMPARISON_TABLES)
             if 'comparison_source_inventory' in existing: names.append('comparison_source_inventory')
+            if 'comparison_completion' in existing and db.execute('SELECT 1 FROM comparison_completion LIMIT 1').fetchone():
+                names.append('comparison_completion')
             contract_version = db.execute('SELECT version FROM comparison_contract').fetchone()[0]
             if contract_version >= 3:
                 if not set(LINEAGE_TABLES) <= existing: raise ValueError('Sürüm 3 satır soyu şeması eksik')
@@ -1581,6 +1699,10 @@ def audit_release(release='current', _seen=None):
             if manifest.get('comparison_synthesis_contract_version') != (2 if c['version'] >= 2 else None): raise ValueError('Sentez sözleşmesi manifesti geçersiz')
             if manifest.get('comparison_lineage_version') != (1 if c['version'] >= 3 else None): raise ValueError('Satır soyu manifesti geçersiz')
             if manifest.get('comparison_view_version') != (1 if c['taxonomy_version'] >= 3 else None): raise ValueError('Karşılaştırma görünümü manifesti geçersiz')
+            markers = exported.get('comparison_completion', [])
+            active = [m for m in markers if m['taxonomy_version'] == c['taxonomy_version']]
+            if manifest.get('comparison_completion_version') != (active[0]['version'] if len(active) == 1 else None):
+                raise ValueError('Kaynak kapanışı manifesti geçersiz')
         if not manifest.get('phase2_delivery'):
             base_id=manifest.get('base_release')
             if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
@@ -1916,6 +2038,9 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
                 manifest['comparison_lineage_version'] = 1
             if c['taxonomy_version'] >= 3:
                 manifest['comparison_view_version'] = 1
+            markers = [m for m in payload.get('comparison_completion', []) if m['taxonomy_version'] == c['taxonomy_version']]
+            if markers:
+                manifest['comparison_completion_version'] = markers[0]['version']
         if refresh: manifest['phase2_refresh'] = True
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
