@@ -1,0 +1,57 @@
+{
+  "head": "2fa77a4298e4cb2540187293b6ba9191b45f0652",
+  "requested_scopes": [
+    "src",
+    "tests",
+    "data/current.json",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549"
+  ],
+  "selection_command": [
+    "git",
+    "ls-files",
+    "-z",
+    "--",
+    "src",
+    "tests",
+    "data/current.json",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549"
+  ],
+  "tracked_fixture_files": [
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/index.html",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/manifest.json",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/records.json",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/records.sqlite3",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/manifest.json",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/records.json",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/records.sqlite3"
+  ],
+  "cwd": "/tmp/gsd-03-clean-fixtures-green-a1smpgwj",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_comparison_navigation.py",
+    "-k",
+    "test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact",
+    "-v"
+  ],
+  "exit": 0,
+  "finished_utc": "2026-11-15T08:51:47.984453+00:00",
+  "fixture_hashes": {
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/index.html": "41738ca967e5bed4b7a32886aaf5cf91beacbc12812fd466f2e39dd2254c26f3",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/manifest.json": "83528fc59220b9cf680df54841db0b66b6cbe067fd7a1fdca01788c8162a73da",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/records.json": "a5a9f4ab94d493796234dbfe3cfebea23bb2e538bf3bc1589bbd83970de0cb07",
+    "data/releases/d8d06dbe3a794d2fb92459391af5a549/records.sqlite3": "74d6c47aa44d51e1e9f185190393540191992623a774c8400d262c0e4fd4ae87",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html": "78e74311816f7b9903f11a49fc9b096487c8333f026c7e535654d2a8886ae014",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/manifest.json": "8a4e52a473b9e69c29c4d3818899735f246b37adc7baabece33f2ed0fe2d65af",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/records.json": "2b4f8446885afb0c857b40474167f8766fdd941bff6a7400437b10af9c36f24a",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/records.sqlite3": "74d6c47aa44d51e1e9f185190393540191992623a774c8400d262c0e4fd4ae87"
+  }
+}
