@@ -93,6 +93,52 @@ class CompletionCoverageTest(unittest.TestCase):
             data[table] = [r['values'] for r in payload['records'] if r['kind'] == table]
         return data
 
+    def test_structural_missing_to_reviewed_negative_with_real_tip_source(self):
+        """STRUCTURAL FUTURE fixture; no missing TİP program is claimed."""
+        data = self.modern()
+        head = data['comparison_completion_basis'][0]
+        basis, _ = arsiv.decode_completion_basis(head, data['comparison_coverage_disposition'])
+        new = next(c for c in basis['cells'] if c['id'] == 'cell-5337d008fcac7dfe93c8431d')
+        new_row = new['fulfilment_locator_only']
+        scope = basis['source_assertions'][new['basis_ids'][0]]['scope']
+        missing = dict(id='test-structural-program-gap', party_id='tip', heading='Program', topic_id='abd-iliskileri',
+                       status='Bulunamadı', attempt_id='test-structural-search', reason='STRUCTURAL FIXTURE only')
+        attempt = dict(id='test-structural-search', party_id='tip', heading='Program', topic_id='abd-iliskileri',
+                       type='search', result='no_result', reason='STRUCTURAL FIXTURE only')
+        old_key = dict(new['logical_key'], version_id=None, context_judgment='test-structural-gap-row')
+        old = dict(id='test-structural-gap-cell', logical_key=old_key, disposition='document_missing',
+                   source_judgment_record=dict(id='test-structural-gap-row', state='document_missing',
+                     selection_reason='STRUCTURAL FIXTURE only', scope_id=None, missing_id=missing['id'],
+                     **{k: v for k, v in old_key.items() if k != 'context_judgment'}),
+                   mapping_records=[], basis_ids=['test-gap-basis'], field_dispositions=[])
+        assertion = dict(kind='documentary_gap', missing=missing, attempt=attempt)
+        old_context = dict(logical_key=old_key, disposition='document_missing', source_reason='STRUCTURAL FIXTURE only',
+                           fields=[], scope=None, missing=missing, attempt=attempt)
+        new_context = dict(logical_key=new['logical_key'], disposition='no_explicit_statement',
+                           source_reason=new['source_judgment_record']['selection_reason'], fields=[],
+                           scope=scope, missing=None, attempt=None)
+        decision = dict(id='test-structural-correction', old_cell_id=old['id'], new_cell_id=new['id'],
+                        old_row_id='test-structural-gap-row', new_row_id=new_row, result='supersedes', reviewer_kind='agent',
+                        reviewed_at='2026-11-15T19:00:00Z', reason='STRUCTURAL FIXTURE: preserve real TİP scope and synthetic prior gap.',
+                        old_context=old_context, new_context=new_context,
+                        gap_reassessment=dict(missing_id=missing['id'], attempt_id=attempt['id'], version_id=scope['version_id'],
+                          scope_id=scope['id'], query_terms=scope['query_terms'], sections=scope['sections'],
+                          reason='STRUCTURAL FIXTURE: the real bounded scope is reused.'))
+        content = arsiv.canonical_json({'decisions': [decision]})
+        registration = dict(decision=decision, origin=dict(path='data/comparisons/test-structural-correction.json',
+                            pointer='/decisions/0', content=content, sha256=hashlib.sha256(content.encode()).hexdigest()))
+        basis = dict(basis, cells=basis['cells'] + [old], source_assertions=dict(basis['source_assertions'], **{'test-gap-basis': assertion}),
+                     _correction_registry=[registration])
+        first = dict(id='test-gap-first', epoch=1, taxonomy_version=self.taxonomy, created_at='2026-11-15T19:00:00Z',
+                     selection=arsiv.canonical_json({'rows': [dict(id='test-structural-gap-row')]}))
+        second = dict(id='test-gap-second', epoch=2, taxonomy_version=self.taxonomy, created_at='2026-11-15T19:01:00Z')
+        link = dict(revision_id=second['id'], old_cell_id=old['id'], new_cell_id=new['id'], old_row_id='test-structural-gap-row',
+                    new_row_id=new_row, reason='STRUCTURAL FIXTURE only',
+                    source_basis_refs=arsiv.canonical_json(dict(correction_id=decision['id'], basis_ids=new['basis_ids'])))
+        data = dict(data, comparison_row=data['comparison_row'] + [dict(old['source_judgment_record'], taxonomy_version=self.taxonomy)],
+                    missing=data['missing'] + [missing], attempt=data['attempt'] + [attempt], comparison_completion_supersession=[link])
+        self.assertEqual(arsiv.completion_superseded_cells(data, second, [first, second], basis, {'rows': [dict(id=new_row)]}), {old['id']})
+
     def test_re_review_rejects_unrelated_positive_as_negative_scope_correction(self):
         data = self.modern()
         first = data['comparison_completion_revision'][0]
@@ -322,7 +368,10 @@ class CompletionCoverageTest(unittest.TestCase):
                                  comparison_completion_revision=[previous, revision],
                                  comparison_completion_supersession=[link])
                 self.assertTrue(arsiv.validate_completion_revisions(candidate))
-                self.assertTrue(arsiv.validate_comparisons(candidate))
+                # The retained synthesis names the retired SR25 row. Its
+                # historical validity cannot substitute for active support.
+                with self.assertRaisesRegex(ValueError, 'Sentez'):
+                    arsiv.validate_comparisons(candidate)
                 visible = arsiv.comparison_render_data(candidate)
                 self.assertNotIn(old_row, {r['id'] for r in visible['comparison_row']})
                 self.assertIn(row['id'], {r['id'] for r in visible['comparison_row']})

@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_sampled_sr25_context_accepts_authenticated_replacement (test_completion_coverage.CompletionCoverageTest.test_sampled_sr25_context_accepts_authenticated_replacement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 327, in test_sampled_sr25_context_accepts_authenticated_replacement
+    with self.assertRaisesRegex(ValueError, 'Sentez'):
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 34.122s
+
+FAILED (failures=1)

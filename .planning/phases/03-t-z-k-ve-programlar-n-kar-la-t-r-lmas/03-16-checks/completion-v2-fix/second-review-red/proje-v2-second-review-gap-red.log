@@ -1,0 +1,17 @@
+E
+======================================================================
+ERROR: test_structural_missing_to_reviewed_negative_with_real_tip_source (test_completion_coverage.CompletionCoverageTest.test_structural_missing_to_reviewed_negative_with_real_tip_source)
+STRUCTURAL FUTURE fixture; no missing TİP program is claimed.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 140, in test_structural_missing_to_reviewed_negative_with_real_tip_source
+    self.assertEqual(arsiv.completion_superseded_cells(data, second, [first, second], basis, {'rows': [dict(id=new_row)]}), {old['id']})
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1490, in completion_superseded_cells
+    raise ValueError('Farklı kaynak durumu için aynı kapsamın kaynaklı yeniden değerlendirilmesi gerekli')
+ValueError: Farklı kaynak durumu için aynı kapsamın kaynaklı yeniden değerlendirilmesi gerekli
+
+----------------------------------------------------------------------
+Ran 1 test in 0.610s
+
+FAILED (errors=1)
