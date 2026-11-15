@@ -1,0 +1,13 @@
+{
+  "stopped_utc": "2026-11-15T10:20:25.913396+00:00",
+  "pid": 1040587,
+  "ppid": 1040576,
+  "pgid": 1040587,
+  "sid": 1040587,
+  "owner_uid": 1498154,
+  "run_token": "3ee1aa155b9742e88736600c2faed8d3",
+  "reason": "Remaining FinanceContract and MatchContract setups plus Missing/Topic mutation tests repeatedly copy mutable live DATA and audit the full historical chain per unit case. Prior root gate timed out at 1800s; current gate consumed over 90min before these repeated setups. Stop only owned read-only regression group to make purpose-made unit fixtures stable; preserve live-current acceptance/navigation/finance coverage. No suite pass claimed.",
+  "signal": "SIGTERM",
+  "root_writer_lock": false,
+  "release_id": "27033583248b4951b3fe8e5fd6d77b9f"
+}

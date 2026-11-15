@@ -1,6 +1,6 @@
 {
-  "status": "post_fix_review_and_audits_passed_full_suite_running",
-  "updated_utc": "2026-11-15T09:13:25.851723+00:00",
+  "status": "full_suite_interrupted_for_stable_unit_fixtures",
+  "updated_utc": "2026-11-15T10:25:23.575230+00:00",
   "release_id": "27033583248b4951b3fe8e5fd6d77b9f",
   "renderer_version": 22,
   "taxonomy_version": 4,
@@ -23,7 +23,7 @@
   "root_static_checks": "passed",
   "build_exit": 0,
   "global_gate": {
-    "status": "running",
+    "status": "interrupted_143_not_a_pass",
     "pid": 1040518,
     "host": "dcc-core-ferc-u-ab39-5-6",
     "input_snapshot": "/tmp/gsd-0315-review-fixes-regression-3ee1aa155b9742e88736600c2faed8d3",
@@ -57,5 +57,9 @@
     "evidence": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-regression-abort.json"
   },
   "plan16": "not_started",
-  "global_requirements_and_human_uat": "open"
+  "global_requirements_and_human_uat": "open",
+  "test_gate_review": {
+    "status": "issues_found",
+    "report": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-TEST-GATE-REVIEW.md"
+  }
 }
