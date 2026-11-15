@@ -180,6 +180,8 @@ class CompletionCoverageTest(unittest.TestCase):
         basis = json.loads((Path(__file__).resolve().parents[1] /
                             'data/comparisons/03-completion-basis-v2-source.json').read_text())
         self.assertTrue(arsiv.validate_source_basis_universe(self.reviewed, basis))
+        with self.assertRaisesRegex(ValueError, 'çözümlenmemiş'):
+            arsiv.validate_source_basis_universe(self.reviewed, dict(basis, unresolved=[{'kind': 'unresolved'}]))
         target = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
         row = next(r for r in self.reviewed['comparison_row'] if r['id'] == target)
         inventory = next(i for i in self.reviewed['comparison_source_inventory']

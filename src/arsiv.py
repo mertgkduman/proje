@@ -859,6 +859,8 @@ def validate_source_basis_universe(data, basis, superseded_cells=()):
     Establishing the provenance and immutable adoption of the supplied basis
     remains the responsibility of the revision/import contract.
     """
+    if basis.get('reviewer_kind') != 'agent' or basis.get('human_acceptance') is not False or basis.get('unresolved') != []:
+        raise ValueError('Kaynak evreni çözümlenmemiş veya kökeni geçersiz')
     version = basis['taxonomy_version']
     topics = {t['topic_id']: t for t in basis['topics']}
     parties = {p['party_id'] for p in data['scope_party']}
@@ -907,6 +909,8 @@ def validate_source_basis_universe(data, basis, superseded_cells=()):
         for key in ('topic_ids', 'unmatched_headings'):
             item[key] = json.dumps(item[key], ensure_ascii=False)
         expected[item['id']] = item
+    if len(expected) != len(expected_inventory):
+        raise ValueError('Kaynak evreni envanter bölümleri yinelenmiş')
     actual = {i['id']: i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == version}
     if expected != actual:
         raise ValueError('Kaynak evreni envanter bölümü eksik veya değişmiş')
