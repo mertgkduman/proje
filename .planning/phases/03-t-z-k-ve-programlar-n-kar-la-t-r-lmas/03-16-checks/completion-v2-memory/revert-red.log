@@ -1,0 +1,14 @@
+test_closed_release_descent_does_not_hold_descendant_exports (test_audit_memory.AuditMemoryTest.test_closed_release_descent_does_not_hold_descendant_exports) ... FAIL
+
+======================================================================
+FAIL: test_closed_release_descent_does_not_hold_descendant_exports (test_audit_memory.AuditMemoryTest.test_closed_release_descent_does_not_hold_descendant_exports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_audit_memory.py", line 42, in test_closed_release_descent_does_not_hold_descendant_exports
+    self.assertFalse(any(any(frames) for frames in observations), observations)
+AssertionError: True is not false : [[False], [False, True], [False, True, True], [False, True, True, True], [False, True, True, True, True], [False, True, True, True, True, True], [False, True, True, True, True, True, True]]
+
+----------------------------------------------------------------------
+Ran 1 test in 18.393s
+
+FAILED (failures=1)

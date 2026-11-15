@@ -1,0 +1,48 @@
+base 6a673af7506d4b4a8310665b502c984f candidate a87bc0aadf3546f0b46ff376c6b6a622
+parsed_seconds 1.546
+table_lengths {"comparison_contract": [1, 1], "comparison_topic": [912, 912], "comparison_row": [14756, 14757], "comparison_field": [11783, 11783], "comparison_review_scope": [901, 901], "comparison_change": [200, 200], "comparison_synthesis": [1341, 1341], "comparison_synthesis_evidence": [2028, 2028], "comparison_semantic_review": [6350, 6350], "comparison_lineage_contract": [0, 0], "comparison_row_lineage": [0, 0], "comparison_row_meaning": [0, 0]}
+result True elapsed_seconds 17.543 peak_rss_kib 1044532
+         26221978 function calls (26218180 primitive calls) in 17.540 seconds
+
+   Ordered by: cumulative time
+   List reduced from 140 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.055    0.055   17.542   17.542 arsiv.py:2093(validate_comparison_descent)
+        1    0.407    0.407   11.640   11.640 arsiv.py:1672(validate_completion_revisions)
+     2691    5.247    0.002    6.956    0.003 arsiv.py:718(validate_synthesis_v2)
+57835/54037    0.052    0.000    6.462    0.000 {built-in method builtins.any}
+    23522    2.992    0.000    2.995    0.000 arsiv.py:2131(<genexpr>)
+    22107    2.615    0.000    2.619    0.000 arsiv.py:2150(<genexpr>)
+ 22220001    1.932    0.000    1.932    0.000 {method 'get' of 'dict' objects}
+   126303    0.069    0.000    1.538    0.000 __init__.py:299(loads)
+   126303    0.260    0.000    1.437    0.000 decoder.py:332(decode)
+        5    0.062    0.012    1.332    0.266 arsiv.py:176(decode_completion_basis)
+        3    0.207    0.069    1.302    0.434 arsiv.py:874(validate_source_basis_universe)
+   126303    1.077    0.000    1.077    0.000 decoder.py:343(raw_decode)
+    72806    0.059    0.000    0.970    0.000 __init__.py:183(dumps)
+    72806    0.052    0.000    0.901    0.000 encoder.py:183(encode)
+    72806    0.825    0.000    0.825    0.000 encoder.py:205(iterencode)
+        7    0.401    0.057    0.796    0.114 arsiv.py:784(validate_source_basis_cells)
+    42726    0.014    0.000    0.771    0.000 arsiv.py:142(canonical_json)
+        5    0.047    0.009    0.730    0.146 arsiv.py:1017(validate_source_risk_review)
+      940    0.025    0.000    0.403    0.000 arsiv.py:1086(witnessed)
+        4    0.036    0.009    0.250    0.063 arsiv.py:1258(validate_completion_basis_successor)
+     8190    0.004    0.000    0.241    0.000 arsiv.py:1171(<genexpr>)
+        5    0.032    0.006    0.239    0.048 arsiv.py:1398(completion_superseded_cells)
+     8043    0.027    0.000    0.201    0.000 arsiv.py:1048(eligible)
+     3440    0.181    0.000    0.181    0.000 arsiv.py:2133(<genexpr>)
+        1    0.001    0.001    0.165    0.165 arsiv.py:146(completion_basis_digest)
+        1    0.012    0.012    0.144    0.144 arsiv.py:1178(validate_legacy_completion_projection)
+       23    0.005    0.000    0.138    0.006 arsiv.py:984(registered_reading_fingerprints)
+    49987    0.025    0.000    0.127    0.000 {built-in method builtins.all}
+    34559    0.096    0.000    0.096    0.000 {method 'encode' of 'str' objects}
+        1    0.017    0.017    0.094    0.094 arsiv.py:1771(validate_completion)
+    24394    0.064    0.000    0.071    0.000 arsiv.py:1286(<genexpr>)
+     3634    0.006    0.000    0.070    0.000 arsiv.py:991(fingerprint)
+    34559    0.065    0.000    0.065    0.000 {built-in method _hashlib.openssl_sha256}
+   252606    0.061    0.000    0.061    0.000 {method 'match' of 're.Pattern' objects}
+        3    0.015    0.005    0.059    0.020 arsiv.py:415(comparison_inventory_records)
+
+
+

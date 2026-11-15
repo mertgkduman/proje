@@ -2864,6 +2864,14 @@ def audit_release(release='current', _seen=None):
     for name, digest in manifest['files'].items():
         if sha(safe_path(folder, name)) != digest:
             raise ValueError('Manifest özeti eşleşmiyor')
+    # Audit the chain before materializing this release's snapshot. Otherwise
+    # each recursive frame retains a full export while its base is audited.
+    base_id = manifest.get('base_release')
+    if manifest.get('phase2_delivery'):
+        if not base_id or base_id == release or not re.fullmatch(r'[0-9a-f]{32}', base_id): raise ValueError('Faz 2 tabanı geçersiz')
+        audit_release(base_id, _seen)
+    elif manifest.get('source_policy_version') and base_id:
+        audit_release(base_id, _seen)
     exported = export_db(folder / 'records.sqlite3', release)
     if manifest.get('source_policy_version') and exported['schema_version'] not in (5,6):raise ValueError('Kaynak politikası snapshot sözleşmesiyle uyuşmuyor')
     if exported['schema_version'] in (5,6):
@@ -2881,13 +2889,12 @@ def audit_release(release='current', _seen=None):
             if {k: manifest[k] for k in COMPLETION_MANIFEST_KEYS if k in manifest} != completion_manifest_fields(exported):
                 raise ValueError('Kaynak kapanışı revizyon manifesti geçersiz')
         if not manifest.get('phase2_delivery'):
-            base_id=manifest.get('base_release')
             if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
             if base_id:
-                audit_release(base_id,_seen)
                 base_data = json.loads((DATA/'releases'/base_id/'records.json').read_text())
                 validate_policy_descent(base_data, exported)
                 validate_comparison_descent(base_data, exported)
+                del base_data
     if exported['schema_version'] >= 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
@@ -2895,9 +2902,6 @@ def audit_release(release='current', _seen=None):
         valid_renderers=(16,17,18,19,20,21,22,RENDERER_VERSION) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10))
         if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6) and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
-        base_id = manifest.get('base_release')
-        if not base_id or base_id == release or not re.fullmatch(r'[0-9a-f]{32}', base_id): raise ValueError('Faz 2 tabanı geçersiz')
-        audit_release(base_id, _seen)
         base_folder = safe_path(DATA / 'releases', base_id)
         base_manifest = json.loads((base_folder / 'manifest.json').read_text(encoding='utf-8'))
         base_data = json.loads((base_folder / 'records.json').read_text(encoding='utf-8'))
@@ -2912,9 +2916,9 @@ def audit_release(release='current', _seen=None):
         d = manifest['phase2_delivery']
         validate_dossier(exported, d['party_id'], d['stage'])
         if base_manifest.get('phase2_delivery'):
-            base_data = json.loads((base_folder / 'records.json').read_text(encoding='utf-8'))
             for table in DOSSIER_TABLES:
                 if any(row not in exported[table] for row in base_data[table]): raise ValueError('Önceki dosya kayıtları silinemez veya değiştirilemez')
+        del base_data
     if json.loads((folder / 'records.json').read_text(encoding='utf-8')) != exported:
         raise ValueError('JSON kapalı snapshot ile eşleşmiyor')
     renderer = {
