@@ -198,6 +198,12 @@ class CompletionCoverageTest(unittest.TestCase):
             arsiv.validate_completion_basis_successor(basis, dict(restored, cells=altered_cells))
         self.assertTrue(arsiv.validate_source_basis_universe(self.reviewed, restored))
         self.assertTrue(arsiv.validate_source_risk_review(self.reviewed, restored, restored_risk, risk['decisions']))
+        cell = next(c for c in restored['cells'] if c['disposition'] == 'evidence')
+        bid = next(i for i in cell['basis_ids'] if restored['source_assertions'][i]['kind'] == 'supported_field')
+        assertion = dict(restored['source_assertions'][bid], semantic_reviews=[], finding_reviews=[])
+        assertions = dict(restored['source_assertions'], **{bid: assertion})
+        with self.assertRaisesRegex(ValueError, 'anlam incelemesi eksik'):
+            arsiv.validate_source_basis_cells(self.reviewed, self.taxonomy, [cell], assertions)
 
     def test_initial_basis_reconciles_authored_origins_before_adoption(self):
         root = Path(__file__).resolve().parents[1] / 'data/comparisons'

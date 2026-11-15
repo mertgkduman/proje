@@ -810,6 +810,33 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
                 matches = [f for f in fields.get(ident, []) if all(f.get(k) == assertion.get(k) for k in ('field', 'condition_key', 'summary_finding_id', 'quote_finding_id'))]
                 if not matches or not set(assertion.get('passage_ids', [])) <= (evidence.get(assertion.get('summary_finding_id'), set()) | evidence.get(assertion.get('quote_finding_id'), set())):
                     raise ValueError('Kaynak yükümlülüğü alanı veya pasajı eksik')
+                semantic = assertion.get('semantic_reviews', [])
+                finding_reviews = assertion.get('finding_reviews', [])
+                if not semantic and not finding_reviews:
+                    raise ValueError('Kaynak yükümlülüğü anlam incelemesi eksik')
+                for item in semantic + finding_reviews:
+                    review = item.get('record') or {}
+                    source = item.get('source') or {}
+                    if review.get('reviewer_kind') != 'agent' or review.get('result') != 'reviewed' or not all(review.get(k) for k in ('reason', 'reviewed_at', 'subject_id')) or not source.get('path') or not source.get('pointer'):
+                        raise ValueError('Kaynak yükümlülüğü anlam inceleme kökeni eksik')
+                    try:
+                        if dt.datetime.fromisoformat(review['reviewed_at'].replace('Z', '+00:00')).tzinfo is None:
+                            raise ValueError('Zaman dilimi eksik')
+                    except (TypeError, ValueError, AttributeError) as exc:
+                        raise ValueError('Kaynak yükümlülüğü inceleme tarihi geçersiz') from exc
+                if semantic:
+                    mapped = set()
+                    for item in semantic:
+                        subject = item['record']['subject_id']
+                        for mapping in cell['mapping_records']:
+                            successor = next((f['new_id'] for f in mapping.get('fields', []) if f['old_id'] == subject), None)
+                            if successor:
+                                subject = successor
+                        mapped.add(subject)
+                    if not mapped.intersection(f['id'] for f in matches):
+                        raise ValueError('Kaynak yükümlülüğü alan inceleme soyu uyuşmuyor')
+                elif not {assertion['summary_finding_id'], assertion['quote_finding_id']} <= {r['record']['subject_id'] for r in finding_reviews}:
+                    raise ValueError('Kaynak yükümlülüğü bulgu incelemeleri uyuşmuyor')
             else:
                 raise ValueError('Kaynak yükümlülüğü dayanak türü geçersiz')
     return True
