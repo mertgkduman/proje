@@ -1,0 +1,19 @@
+test_complete_request_rejects_partial_and_tracer_snapshots (test_phase3_stage_compatibility.PhaseThreeStageCompatibility.test_complete_request_rejects_partial_and_tracer_snapshots) ... ok
+test_partial_request_runs_complete_guards_on_complete_snapshot (test_phase3_stage_compatibility.PhaseThreeStageCompatibility.test_partial_request_runs_complete_guards_on_complete_snapshot) ... FAIL
+
+======================================================================
+FAIL: test_partial_request_runs_complete_guards_on_complete_snapshot (test_phase3_stage_compatibility.PhaseThreeStageCompatibility.test_partial_request_runs_complete_guards_on_complete_snapshot)
+----------------------------------------------------------------------
+ValueError: İstenen karşılaştırma aşaması uyuşmuyor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_phase3_stage_compatibility.py", line 28, in test_partial_request_runs_complete_guards_on_complete_snapshot
+    with self.assertRaisesRegex(ValueError, 'dokuz partiyi'):
+AssertionError: "dokuz partiyi" does not match "İstenen karşılaştırma aşaması uyuşmuyor"
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+FAILED (failures=1)
