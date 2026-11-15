@@ -1,0 +1,47 @@
+{
+  "label": "green",
+  "mode": "hang",
+  "probe_pid": 1114747,
+  "timeout": false,
+  "exit": 0,
+  "elapsed_seconds": 6.922304167412221,
+  "stdout": "{\"requested\":\"file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/27033583248b4951b3fe8e5fd6d77b9f/index.html#comparison-04-03-v3-03-v2-iyi-demokrasi\",\"actual\":\"file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/27033583248b4951b3fe8e5fd6d77b9f/index.html#comparison-04-03-v3-03-v2-iyi-demokrasi\",\"width\":1365,\"exists\":true,\"focused\":true,\"visible\":true}\n",
+  "stderr": "",
+  "profiles": [
+    "/tmp/proje-nav-RfYvKm"
+  ],
+  "leftovers": [],
+  "events": [
+    {
+      "event": "start",
+      "mode": "hang",
+      "pid": 1114754,
+      "profile": "/tmp/proje-nav-RfYvKm",
+      "time": 1794744907208,
+      "browserPid": 1114761
+    },
+    {
+      "event": "close-request",
+      "mode": "hang",
+      "pid": 1114754,
+      "profile": "/tmp/proje-nav-RfYvKm",
+      "time": 1794744909059
+    },
+    {
+      "event": "suppress-close-response",
+      "mode": "hang",
+      "pid": 1114754,
+      "profile": "/tmp/proje-nav-RfYvKm",
+      "time": 1794744909061
+    },
+    {
+      "event": "browser-exit",
+      "mode": "hang",
+      "pid": 1114754,
+      "profile": "/tmp/proje-nav-RfYvKm",
+      "time": 1794744909092,
+      "code": 0,
+      "signal": null
+    }
+  ]
+}

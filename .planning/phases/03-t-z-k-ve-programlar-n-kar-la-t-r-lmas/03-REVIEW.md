@@ -1,41 +1,39 @@
 ---
 phase: 03-t-z-k-ve-programlar-n-kar-la-t-r-lmas
-reviewed: 2026-11-15T12:08:12Z
+reviewed: 2026-11-15T12:25:01Z
 depth: standard
 files_reviewed: 1
 files_reviewed_list:
   - tests/comparison_navigation.cjs
 findings:
   critical: 0
-  warning: 1
+  warning: 0
   info: 0
-  total: 1
-status: issues_found
+  total: 0
+status: clean
 ---
 
 # Phase 03: Kod İnceleme Raporu
 
-**İncelenen an:** 2026-11-15T12:08:12Z
+**İncelenen an:** 2026-11-15T12:25:01Z
 
 **Derinlik:** standard
 
 **İncelenen dosya:** 1
 
-**Durum:** issues_found
+**Durum:** clean
 
 ## Summary
 
-`f70504e` navigasyon test gözlemcisi düzeltmesi tek dosyalık statik incelemede değerlendirildi. Tarayıcı kapatma yanıtı gelmediğinde sınırlı çıkış beklemesine ulaşılamadığına ilişkin bir test güvenilirliği uyarısı bulundu. Test, audit veya yayın çalıştırılmadı; çalışan tam regresyonun ve Plan 16'nın sonuçları bu raporun kapsamı dışındadır.
+`6e59f35` navigasyon test gözlemcisi düzeltmesi tek dosyalık statik incelemede değerlendirildi. WR-01 kaynak düzeyinde kapandı; yeni açık bulgu saptanmadı. Test, audit veya yayın çalıştırılmadı; tam regresyon ve Plan 16'nın sonuçları bu raporun kapsamı dışındadır.
 
 ## Narrative Findings (AI reviewer)
 
-### WR-01: Browser.close yanıtı gelmezse sınırlı kapanış yolu başlamıyor — WARNING
+### Kapatılan WR-01: Browser.close yanıtı gelmediğinde sınırlı kapanış
 
-**Dosya:** `tests/comparison_navigation.cjs:58`
+Önceki inceleme, `f70504e` sürümünde `Browser.close` yanıtını beklemenin süreç çıkışı ve timeout yoluna ulaşılmasını engellediğini bildirdi. `tests/comparison_navigation.cjs:62` şimdi close isteğini yanıtı beklemeden gönderiyor; `:63-68` sahip olunan child için önce beş saniye bekliyor, gerekirse yalnız bu child'a `SIGKILL` gönderiyor, çıkışı bekleyip geçici profili siliyor. Pipe hata ve kapanış olayları bekleyen CDP isteklerini reddediyor (`:8-11`). Testin 19 navigasyon kontrolü ve başarısızlık çıktısı değişmedi.
 
-**Sorun:** `await send('Browser.close', ...)` yalnız eşleşen CDP yanıtında çözümlenir (`:8-9`); pipe kapanması veya tarayıcının yanıt göndermeden çıkması bekleyen isteği reddetmez. Yanıt gelmeyen ya da donan Chromium için `waitForExit(5000)` ve ardından `SIGKILL` çağrısına (`:59-63`) hiç geçilmez. Canlı süreç varsa 150 saniyelik genel watchdog testi hataya götürür ve profil temizlenmez; süreç ve pipe'lar kapanmışsa bekleyen Promise tek başına Node'u canlı tutmadığından, yazılmış başarılı sonucun ardından profil temizlenmeden süreç bitebilir. Kaydedilen altı başarılı kapanışın tamamı yanıt aldığı için bu hata yolunu sınamıyor. Navigasyon assertion'ları değişmemiştir.
-
-**Düzeltme:** Kapanış isteğinin yanıtını, `chromeExit` olayını ve kısa bir zaman aşımını aynı anda bekleyin; yanıt gelmesini süreç çıkışı veya belirlenen süre için ön koşul yapmayın. Pipe kapanışında bekleyen CDP isteklerini reddedin veya kapatma için ayrı sınırlı yol kullanın. Sonrasında sahip olunan süreç gerçekten çıkana kadar bekleyin, gerektiğinde yalnız onu sonlandırın ve profili temizleyin. Yanıt vermeyen ve yanıt öncesi çıkan sahte bir CDP child ile iki hata yolunun temizliğini ayrıca doğrulayın.
+Önceden kaydedilmiş `wr01-red-{exit,hang}.json` yanıtı bastırılmış iki deneyde eski sürümün timeout ve profil kalıntısını, `wr01-green-{exit,hang}.json` ise yeni sürümün iki durumda yaklaşık 6,9 saniyede başarılı ve profilsiz tamamlandığını bildirir. Bunlar lifecycle deneyleridir. Ayrı `wr01-real-tests.log` ve `.exit` dört gerçek navigasyon testinin 119,246 saniyede çıkış 0 ile geçtiğini, `wr01-real-navigation.json` dört file/HTTP ve genişlik birleşiminde 19 kontrol ile arşiv alıntısının sağlandığını kaydeder. Bu incelemede kanıtlar okundu, testler yeniden çalıştırılmadı.
 
 ### Önceki TG-01 statik incelemesinin tarihsel kaydı
 
@@ -51,7 +49,7 @@ status: issues_found
 
 ---
 
-_Reviewed: 2026-11-15T12:08:12Z_
+_Reviewed: 2026-11-15T12:25:01Z_
 
 _Reviewer: gsd-code-reviewer_
 
