@@ -20,7 +20,8 @@ class SourceBasisCellTest(unittest.TestCase):
                    version_id='0203-tip-charter-v1', level='ulusal ve yerel',
                    organ='Kamu adayı tanıtımı', context_judgment=old)
         cell = dict(id='cell-test', logical_key=key, disposition='no_explicit_statement',
-                    source_judgment_record=dict(id=old, scope_id=scope['id'], state=scope['result']),
+                    source_judgment_record=dict(id=old, scope_id=scope['id'], state=scope['result'],
+                                                **{k: v for k, v in key.items() if k != 'context_judgment'}),
                     mapping_records=[dict(old_row_id=old, new_row_id='intermediate', reason='authored mapping'),
                                      dict(old_row_id='intermediate', new_row_id=new, reason='authored mapping')],
                     basis_ids=['scope-basis'], field_dispositions=[])
@@ -117,6 +118,31 @@ class CompletionCoverageTest(unittest.TestCase):
         self.assertEqual(restored_risk, risk['expected_risk_universe'])
         self.assertTrue(arsiv.validate_source_basis_universe(self.reviewed, restored))
         self.assertTrue(arsiv.validate_source_risk_review(self.reviewed, restored, restored_risk, risk['decisions']))
+
+    def test_revision_validation_preserves_history_and_binds_active_stage(self):
+        root = Path(__file__).resolve().parents[1] / 'data/comparisons'
+        basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())
+        risk = json.loads((root / '03-completion-risk-v2-source.json').read_text())
+        head, cells = arsiv.completion_basis_records(basis, risk['expected_risk_universe'],
+                                                     'test-basis', '2026-11-15T16:52:28Z')
+        revision = dict(id='test-revision-1', version=2, epoch=1, parent_revision_id=None,
+                        taxonomy_version=self.taxonomy, basis_id=head['id'], stage='complete',
+                        created_at='2026-11-15T16:52:28Z', legacy_anchor=None,
+                        selection=arsiv.canonical_json(arsiv.completion_selection(self.reviewed, self.taxonomy)),
+                        review=arsiv.canonical_json({'decisions': risk['decisions']}), reason='test fixture')
+        data = dict(self.reviewed, comparison_completion_basis=[head], comparison_coverage_disposition=cells,
+                    comparison_completion_revision=[revision], comparison_completion_supersession=[])
+        self.assertTrue(arsiv.validate_completion_revisions(data))
+        successor = dict(revision, id='test-revision-2', epoch=2, parent_revision_id=revision['id'],
+                         stage='partial', reason='source work in progress')
+        partial = dict(data, comparison_contract=[dict(data['comparison_contract'][0], stage='partial')],
+                       comparison_completion_revision=[revision, successor])
+        self.assertTrue(arsiv.validate_completion_revisions(partial))
+        with self.assertRaisesRegex(ValueError, 'revizyon zinciri'):
+            arsiv.validate_completion_revisions(dict(partial, comparison_completion_revision=[revision, dict(successor, parent_revision_id='wrong')]))
+        changed = dict(data, comparison_contract=[dict(data['comparison_contract'][0], stage='partial')])
+        with self.assertRaisesRegex(ValueError, 'aktif aşamayla'):
+            arsiv.validate_completion_revisions(changed)
 
     def test_reviewed_finding_provenance_is_required(self):
         data = dict(self.reviewed)

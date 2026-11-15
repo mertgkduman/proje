@@ -725,6 +725,14 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
     dimensions = ('topic_id', 'party_id', 'source_role', 'version_id', 'level', 'organ')
     for cell in cells:
         key = cell['logical_key']
+        original = cell['source_judgment_record']
+        if (original.get('id') != key.get('context_judgment') or
+                any(original.get(k) != key.get(k) for k in dimensions if k != 'topic_id') or
+                original.get('state') != cell['disposition'] or not cell['basis_ids']):
+            raise ValueError('Kaynak yükümlülüğü özgün karar ile uyuşmuyor')
+        for field in cell['field_dispositions']:
+            if field.get('disposition') == 'source_supported' and field.get('basis_id') not in cell['basis_ids']:
+                raise ValueError('Kaynak yükümlülüğü alan dayanağı eksik')
         ident = key['context_judgment']
         for mapping in cell['mapping_records']:
             if mapping.get('old_row_id') != ident or not mapping.get('new_row_id') or not mapping.get('reason'):
@@ -733,6 +741,11 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
         row = rows.get(ident)
         if not row or any(row.get(k) != key.get(k) for k in dimensions) or row.get('state') != cell['disposition']:
             raise ValueError('Kaynak yükümlülüğü satır, düzey veya organ eksik')
+        kinds = {assertions.get(bid, {}).get('kind') for bid in cell['basis_ids']}
+        expected_kind = {'evidence': 'supported_field', 'no_explicit_statement': 'dated_source_scope',
+                         'document_missing': 'documentary_gap'}.get(cell['disposition'])
+        if not expected_kind or expected_kind not in kinds:
+            raise ValueError('Kaynak yükümlülüğü durum dayanağı eksik')
         for bid in cell['basis_ids']:
             assertion = assertions.get(bid)
             if not isinstance(assertion, dict):
@@ -740,11 +753,11 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
             kind = assertion.get('kind')
             if kind == 'dated_source_scope':
                 scope = assertion.get('scope') or {}
-                if row.get('scope_id') != scope.get('id') or scopes.get(scope.get('id')) != scope:
+                if row.get('scope_id') != scope.get('id') or scopes.get(scope.get('id')) != scope or any(scope.get(k) != row.get(k) for k in ('party_id', 'version_id')):
                     raise ValueError('Kaynak yükümlülüğü araştırma kapsamı değişmiş')
             elif kind == 'documentary_gap':
                 item, attempt = assertion.get('missing') or {}, assertion.get('attempt') or {}
-                if row.get('missing_id') != item.get('id') or missing.get(item.get('id')) != item or attempts.get(attempt.get('id')) != attempt or item.get('attempt_id') != attempt.get('id'):
+                if row.get('missing_id') != item.get('id') or missing.get(item.get('id')) != item or attempts.get(attempt.get('id')) != attempt or item.get('attempt_id') != attempt.get('id') or item.get('party_id') != row['party_id']:
                     raise ValueError('Kaynak yükümlülüğü belge araması değişmiş')
             elif kind == 'supported_field':
                 matches = [f for f in fields.get(ident, []) if all(f.get(k) == assertion.get(k) for k in ('field', 'condition_key', 'summary_finding_id', 'quote_finding_id'))]
@@ -772,6 +785,10 @@ def validate_source_basis_universe(data, basis):
         canonical = json.dumps(assertion, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
         if bid != 'basis-' + hashlib.sha256(canonical.encode()).hexdigest()[:24]:
             raise ValueError('Kaynak evreninde dayanak kimliği uyuşmuyor')
+    for cid, cell in cells.items():
+        canonical = canonical_json(cell['logical_key'])
+        if cid != 'cell-' + hashlib.sha256(canonical.encode()).hexdigest()[:24]:
+            raise ValueError('Kaynak evreninde hücre kimliği uyuşmuyor')
     found = {}
     for item in basis['universe']:
         pair = (item['topic_id'], item['party_id'])
@@ -788,6 +805,11 @@ def validate_source_basis_universe(data, basis):
     if topics != actual_topics:
         raise ValueError('Kaynak evrenindeki konu tanımları değişmiş')
     validate_source_basis_cells(data, version, list(cells.values()), assertions)
+    required_rows = {c['mapping_records'][-1]['new_row_id'] if c['mapping_records'] else c['logical_key']['context_judgment']
+                     for c in cells.values()}
+    actual_rows = {r['id'] for r in data['comparison_row'] if r['taxonomy_version'] == version}
+    if required_rows != actual_rows:
+        raise ValueError('Kaynak evreni seçili satırları bağlamıyor')
     expected_inventory = comparison_inventory_records(dict(status='complete', taxonomy_version=version,
                                                           sections=basis['inventory_sections']), version)
     expected = {}
@@ -922,6 +944,67 @@ def validate_legacy_completion_projection(data):
             validate_completion(projection)
         except (KeyError, TypeError, json.JSONDecodeError) as exc:
             raise ValueError('Önceki kaynak kapanışı kanıtı geçersiz') from exc
+    return True
+
+
+def completion_selection(data, taxonomy_version):
+    rows = [r for r in data['comparison_row'] if r['taxonomy_version'] == taxonomy_version]
+    row_ids = {r['id'] for r in rows}
+    return dict(topics=[t for t in data['comparison_topic'] if t['taxonomy_version'] == taxonomy_version],
+                rows=rows, fields=[f for f in data['comparison_field'] if f['row_id'] in row_ids],
+                syntheses=[s for s in data['comparison_synthesis'] if s['taxonomy_version'] == taxonomy_version],
+                inventory=[i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == taxonomy_version])
+
+
+def validate_completion_revisions(data):
+    """Check immutable revision selections; the last epoch is the active one."""
+    revisions = sorted(data.get('comparison_completion_revision', []), key=lambda r: r['epoch'])
+    bases = {b['id']: b for b in data.get('comparison_completion_basis', [])}
+    dispositions = data.get('comparison_coverage_disposition', [])
+    if not revisions or len(bases) != len(data.get('comparison_completion_basis', [])):
+        raise ValueError('Kaynak kapanışı revizyonu eksik')
+    validate_legacy_completion_projection(data)
+    previous = None
+    spec = {'topics': ('comparison_topic', lambda x: (x['topic_id'], x['taxonomy_version'])),
+            'rows': ('comparison_row', lambda x: x['id']),
+            'fields': ('comparison_field', lambda x: x['id']),
+            'syntheses': ('comparison_synthesis', lambda x: x['id']),
+            'inventory': ('comparison_source_inventory', lambda x: x['id'])}
+    for index, revision in enumerate(revisions):
+        if revision['version'] != 2 or revision['epoch'] != index + 1 or revision['parent_revision_id'] != (previous['id'] if previous else None) or revision['stage'] not in ('partial', 'complete') or not revision['reason']:
+            raise ValueError('Kaynak kapanışı revizyon zinciri geçersiz')
+        try:
+            stamp = dt.datetime.fromisoformat(revision['created_at'].replace('Z', '+00:00'))
+            if stamp.tzinfo is None:
+                raise ValueError('Zaman dilimi gerekli')
+            selection = json.loads(revision['selection'])
+            review = json.loads(revision['review'])
+            head = bases[revision['basis_id']]
+            if head['version'] != 2 or head['taxonomy_version'] != revision['taxonomy_version']:
+                raise ValueError('Sözlük uyuşmuyor')
+            source, risk = decode_completion_basis(head, [d for d in dispositions if d['basis_id'] == head['id']])
+            projection = dict(data)
+            for name, (table, identity) in spec.items():
+                selected = selection[name]
+                actual = {identity(r): r for r in data[table]}
+                if len({identity(r) for r in selected}) != len(selected) or any(actual.get(identity(r)) != r for r in selected):
+                    raise ValueError('Seçili tarihsel kayıt değişmiş')
+                projection[table] = selected
+            if revision['stage'] == 'complete':
+                validate_source_basis_universe(projection, source)
+                validate_source_risk_review(projection, source, risk, review['decisions'])
+        except (KeyError, TypeError, ValueError) as exc:
+            raise ValueError('Kaynak kapanışı revizyon kanıtı geçersiz: ' + str(exc)) from exc
+        previous = revision
+    active = revisions[-1]
+    contract = data['comparison_contract'][0]
+    if (active['taxonomy_version'], active['stage']) != (contract['taxonomy_version'], contract['stage']):
+        raise ValueError('Kaynak kapanışı aktif aşamayla uyuşmuyor')
+    selected = json.loads(active['selection'])
+    current = completion_selection(data, active['taxonomy_version'])
+    for name, (_, identity) in spec.items():
+        if {identity(x): x for x in selected[name]} != {identity(x): x for x in current[name]}:
+            raise ValueError('Kaynak kapanışı aktif seçimi uyuşmuyor')
     return True
 
 
