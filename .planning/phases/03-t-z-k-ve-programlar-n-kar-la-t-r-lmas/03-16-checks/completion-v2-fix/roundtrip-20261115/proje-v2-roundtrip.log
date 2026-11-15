@@ -1,0 +1,22 @@
+isolated: importing source addition and partial revision
+isolated: publishing and auditing partial revision
+E
+======================================================================
+ERROR: test_same_taxonomy_sourced_revision_round_trip (test_completion_coverage.CompletionCoverageTest.test_same_taxonomy_sourced_revision_round_trip)
+Publish and audit the real-source fixture in one isolated DATA tree.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/proje-v2-roundtrip-20261115/tests/test_completion_coverage.py", line 351, in test_same_taxonomy_sourced_revision_round_trip
+    partial_release = arsiv.publish_release(work, refresh=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/proje-v2-roundtrip-20261115/src/arsiv.py", line 2717, in publish_release
+    phase_data = validate_phase_one_workspace(staging)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/proje-v2-roundtrip-20261115/src/arsiv.py", line 2486, in validate_phase_one_workspace
+    raise ValueError('Bulgu için kaynak incelemesi eksik: ' + f['id'])
+ValueError: Bulgu için kaynak incelemesi eksik: test-tip-kapitalizm-context-summary
+
+----------------------------------------------------------------------
+Ran 1 test in 201.004s
+
+FAILED (errors=1)

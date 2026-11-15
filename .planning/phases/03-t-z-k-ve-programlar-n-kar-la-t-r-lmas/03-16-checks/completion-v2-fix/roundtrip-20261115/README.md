@@ -1,0 +1,7 @@
+# Isolated revision round trip — input provenance
+
+The detached run used the pre-launch copy at `/tmp/proje-v2-roundtrip-20261115`; `proje-v2-roundtrip-input-sha256.txt` records every copied file under `src`, `tests` and `data` before launch. The copy included the real accepted release and its release ancestry, original objects/views, and source packages. Its host, PID, SID and token are preserved in the handshake.
+
+The copied `src/arsiv.py` SHA-256 was `7157d72bf796688a8f6e4cd5e7fb42195e496b3ff0258fd035b149a49c369e6b`, identical to that file at commit `20d16fe`. The exact copied test is retained as `copied-test_completion_coverage.py` (SHA-256 `bd6306138ddba456230cddaf3adbc9d1c55c7f327878a7f8e412f4f6fd5e885a`). It predates the later supersession test changes at `20d16fe`; this run therefore cannot prove those later tests or code changes. The input manifest remains the authority for all other copied code, tests and data.
+
+The unmodified log and exit file record failure (exit 1, 201.004 seconds). The real TİP source addition imported successfully and partial publication reached the phase-one workspace gate, which rejected the test fixture's new summary because it lacked an individual finding-review record. Neither partial publication nor the complete successor passed in this run. The fixture must include genuine, correctly attributed review records for both new findings before another run.
