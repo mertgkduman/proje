@@ -228,7 +228,7 @@ class SynthesisContractTest(unittest.TestCase):
                 (arsiv.DATA / '.write.lock').write_text(json.dumps({'token': 'test'}))
                 db = arsiv.connect(work / 'records.sqlite3')
                 try:
-                    db.execute('UPDATE comparison_contract SET taxonomy_version=3')
+                    db.execute("UPDATE comparison_contract SET taxonomy_version=3, stage='partial'")
                     db.commit()
                     before_count = db.execute('SELECT count(*) FROM comparison_row').fetchone()[0]
                 finally: db.close()
