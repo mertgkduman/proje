@@ -192,6 +192,11 @@ class CompletionCoverageTest(unittest.TestCase):
         tampered = [dict(d, summary_passage_ids=['not-a-real-passage']) if d is principle else d for d in decisions]
         with self.assertRaisesRegex(ValueError, 'field:principle'):
             arsiv.validate_source_risk_review(self.reviewed, basis, universe, tampered)
+        gap = next(d for d in decisions if d['kind'] == 'physical_page_gap')
+        other_version = next(v['id'] for v in self.reviewed['document_version'] if v['id'] != gap['version_id'])
+        tampered = [dict(d, version_id=other_version) if d is gap else d for d in decisions]
+        with self.assertRaisesRegex(ValueError, 'physical_page_gap'):
+            arsiv.validate_source_risk_review(self.reviewed, basis, universe, tampered)
 
     def test_source_basis_round_trips_in_closed_storage_format(self):
         root = Path(__file__).resolve().parents[1] / 'data/comparisons'

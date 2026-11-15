@@ -808,7 +808,8 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
                     raise ValueError('Kaynak yükümlülüğü belge araması değişmiş')
             elif kind == 'supported_field':
                 matches = [f for f in fields.get(ident, []) if all(f.get(k) == assertion.get(k) for k in ('field', 'condition_key', 'summary_finding_id', 'quote_finding_id'))]
-                if not matches or not set(assertion.get('passage_ids', [])) <= (evidence.get(assertion.get('summary_finding_id'), set()) | evidence.get(assertion.get('quote_finding_id'), set())):
+                passage_ids = assertion.get('passage_ids', [])
+                if not matches or not passage_ids or len(passage_ids) != len(set(passage_ids)) or not set(passage_ids) <= (evidence.get(assertion.get('summary_finding_id'), set()) | evidence.get(assertion.get('quote_finding_id'), set())):
                     raise ValueError('Kaynak yükümlülüğü alanı veya pasajı eksik')
                 semantic = assertion.get('semantic_reviews', [])
                 finding_reviews = assertion.get('finding_reviews', [])
@@ -961,6 +962,7 @@ def validate_source_risk_review(data, basis, risk_universe, decisions):
                          decision.get('source_sha256') == versions[row['version_id']]['sha256'] and decision.get('limit')))
         if kind == 'scope_or_document_gap':
             return (row.get('scope_id') == decision.get('scope_id') and row.get('missing_id') == decision.get('missing_id') and
+                    all(row.get(k) == decision.get(k) for k in ('party_id', 'version_id', 'source_role')) and
                     bool(set(decision.get('basis_ids', [])) & set(cell['basis_ids']) & set(constraints['source_assertion_ids'])))
         if kind == 'change_support':
             change = changes.get(decision.get('change_id'))
@@ -981,7 +983,9 @@ def validate_source_risk_review(data, basis, risk_universe, decisions):
                 return False
         if kind == 'physical_page_gap':
             m, a = missing.get(decision.get('missing_id')), attempts.get(decision.get('attempt_id'))
-            return bool(m and a and m['attempt_id'] == a['id'] and decision.get('version_id') in versions and decision.get('source_reading'))
+            return bool(m and a and m['attempt_id'] == a['id'] and decision.get('version_id') in versions and
+                        a.get('source_version_id') == decision['version_id'] and
+                        all(m.get(k) == a.get(k) for k in ('party_id', 'heading', 'topic_id')) and decision.get('source_reading'))
         if kind == 'same_hash_copy':
             copies = decision.get('versions', [])
             return len(copies) >= 2 and all(versions.get(v.get('id')) == v for v in copies) and len({v['sha256'] for v in copies}) == 1
