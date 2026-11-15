@@ -507,10 +507,17 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                 cells = [dict(row) for row in db.execute('SELECT * FROM comparison_coverage_disposition WHERE basis_id=?', (first['basis_id'],))]
                 source, risk = decode_completion_basis(dict(head), cells)
                 verify_initial_completion_basis(source, risk)
-                anchor = json.loads(first['legacy_anchor'])
                 metadata = json.loads((temp / 'workspace.json').read_text(encoding='utf-8'))
-                if anchor.get('release_id') != metadata.get('base'):
-                    raise ValueError('Önceki kaynak kapanışı gerçek tabanla uyuşmuyor')
+                has_legacy_marker = db.execute('SELECT 1 FROM comparison_completion LIMIT 1').fetchone()
+                if has_legacy_marker:
+                    try:
+                        anchor = json.loads(first['legacy_anchor'])
+                    except (TypeError, ValueError) as exc:
+                        raise ValueError('Önceki kaynak kapanışı çapası eksik') from exc
+                    if anchor.get('release_id') != metadata.get('base'):
+                        raise ValueError('Önceki kaynak kapanışı gerçek tabanla uyuşmuyor')
+                elif first['legacy_anchor'] is not None:
+                    raise ValueError('Var olmayan önceki kaynak kapanışı çapası reddedildi')
             if incoming_revisions:
                 origin = prior_revision or db.execute('SELECT * FROM comparison_completion_revision ORDER BY epoch LIMIT 1').fetchone()
                 previous_basis_id = origin['basis_id']
@@ -1305,6 +1312,8 @@ def validate_completion_revisions(data):
                                   if hashlib.sha256(canonical_json(m).encode()).hexdigest() == anchor.get('marker_sha256')]
                 if not anchor.get('release_id') or len(anchor_markers) != 1 or (previous and revision['legacy_anchor'] != previous['legacy_anchor']):
                     raise ValueError('Önceki kaynak kapanışı çapası uyuşmuyor')
+            elif revision['legacy_anchor'] is not None:
+                raise ValueError('Var olmayan önceki kaynak kapanışı çapası reddedildi')
             selection = json.loads(revision['selection'])
             review = json.loads(revision['review'])
             head = bases[revision['basis_id']]

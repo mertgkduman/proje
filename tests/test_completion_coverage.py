@@ -155,6 +155,16 @@ class CompletionCoverageTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'tarihsel işaretçisi'):
             arsiv.validate_comparisons(data)
 
+    def test_initial_v2_without_a_legacy_marker_has_no_false_anchor(self):
+        data = self.modern()
+        revision = dict(data['comparison_completion_revision'][0], legacy_anchor=None)
+        data['comparison_completion'] = []
+        data['comparison_completion_revision'] = [revision]
+        self.assertTrue(arsiv.validate_completion(data))
+        data['comparison_completion_revision'] = [dict(revision, legacy_anchor='{"release_id":"fabricated"}')]
+        with self.assertRaisesRegex(ValueError, 'Var olmayan önceki'):
+            arsiv.validate_completion(data)
+
     def test_legacy_proof_projection_survives_additions_but_not_mutation(self):
         old = next(r for r in self.reviewed['comparison_row'] if r['taxonomy_version'] == self.taxonomy)
         added = dict(old, id='test-only-new-same-taxonomy-row')
