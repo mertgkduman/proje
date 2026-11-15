@@ -1,0 +1,79 @@
+test_direct_hash_reveals_and_focuses_same_row (test_comparison_navigation.ComparisonNavigation.test_direct_hash_reveals_and_focuses_same_row) ... ok
+test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) ... 127.0.0.1 - - [14/Nov/2026 21:55:25] "GET /views/ecc51c44806790d9980a80aebb940c57/index.html HTTP/1.1" 200 -
+
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpdvdzz7fr/index.html', width=360) ... FAIL
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpdvdzz7fr/index.html', width=1365) ... FAIL
+127.0.0.1 - - [14/Nov/2026 21:55:46] "GET /releases/tmpdvdzz7fr/index.html HTTP/1.1" 200 -
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:38967/releases/tmpdvdzz7fr/index.html', width=360) ... FAIL
+127.0.0.1 - - [14/Nov/2026 21:55:58] "GET /releases/tmpdvdzz7fr/index.html HTTP/1.1" 200 -
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:38967/releases/tmpdvdzz7fr/index.html', width=1365) ... FAIL
+test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) ... FAIL
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpdvdzz7fr/index.html', width=360)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 101, in test_four_browser_navigation_modes
+    checks = re.search(r'data-navigation-(?:checks|error)="[^"]*"', result.stdout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'data-navigation-checks="1111111111101111"' != 'data-navigation-checks="1111111111111111"'
+- data-navigation-checks="1111111111101111"
+?                                    ^
++ data-navigation-checks="1111111111111111"
+?                                    ^
+
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpdvdzz7fr/index.html', width=1365)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 101, in test_four_browser_navigation_modes
+    checks = re.search(r'data-navigation-(?:checks|error)="[^"]*"', result.stdout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'data-navigation-checks="1111111111101111"' != 'data-navigation-checks="1111111111111111"'
+- data-navigation-checks="1111111111101111"
+?                                    ^
++ data-navigation-checks="1111111111111111"
+?                                    ^
+
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:38967/releases/tmpdvdzz7fr/index.html', width=360)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 101, in test_four_browser_navigation_modes
+    checks = re.search(r'data-navigation-(?:checks|error)="[^"]*"', result.stdout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'data-navigation-checks="1111111111101111"' != 'data-navigation-checks="1111111111111111"'
+- data-navigation-checks="1111111111101111"
+?                                    ^
++ data-navigation-checks="1111111111111111"
+?                                    ^
+
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:38967/releases/tmpdvdzz7fr/index.html', width=1365)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 101, in test_four_browser_navigation_modes
+    checks = re.search(r'data-navigation-(?:checks|error)="[^"]*"', result.stdout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'data-navigation-checks="1111111111101111"' != 'data-navigation-checks="1111111111111111"'
+- data-navigation-checks="1111111111101111"
+?                                    ^
++ data-navigation-checks="1111111111111111"
+?                                    ^
+
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 105, in test_four_browser_navigation_modes
+    finally:
+AssertionError: 0 != 4 : Dört tarayıcı koşulu tamamlanmadı
+
+----------------------------------------------------------------------
+Ran 2 tests in 56.224s
+
+FAILED (failures=5)

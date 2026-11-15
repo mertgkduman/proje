@@ -1,0 +1,24 @@
+{
+  "pid": 859625,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "token": "2f21da9c6fb44c42b7102e6424f743e1",
+  "started_utc": "2026-11-15T02:41:29.853642+00:00",
+  "input_snapshot": "/tmp/gsd-0315-publish-2f21da9c6fb44c42b7102e6424f743e1",
+  "inputs": {
+    "src/arsiv.py": "3fe550e65efa3cce888196bdfba13874a2a18d60d9655b7475721a816639129c",
+    "src/rapor.py": "370de97012a09edd9736d748a2bbab3f18e428b79ab8f878359cbf58137f385b",
+    "src/rapor_v18.py": "cec0e1cfac3b1d3943c1155d4b784d5b2a65ac6015c54d8615976f085cdbd5df",
+    "src/rapor_v19.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "data/current.json": "4766cd0fa4224f9207eee0c587afcde20a885be049639119efe036017321ba56",
+    "data/releases/b513965558094e338a941be90a1960a4/manifest.json": "dd8df698ac51d6c52d4713cd00a83a5c821d4b115831a14e593383ca9555a5e2",
+    "data/releases/b513965558094e338a941be90a1960a4/records.sqlite3": "74d6c47aa44d51e1e9f185190393540191992623a774c8400d262c0e4fd4ae87",
+    ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/publish-local.py": "6af6e671f65c22f746a50d5ea40196776e4f494d5ed5f425d5219205ef8fa78d"
+  },
+  "log": "/tmp/gsd-0315-publish-2f21da9c6fb44c42b7102e6424f743e1/publish.log",
+  "result": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/publish-result.json",
+  "command": [
+    "python3",
+    "-u",
+    "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/publish-local.py"
+  ]
+}

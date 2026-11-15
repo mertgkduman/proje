@@ -8,8 +8,8 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 19
-STYLE = Path(__file__).with_name('rapor_v19.css').read_text(encoding='utf-8')
+RENDERER_VERSION = 20
+STYLE = Path(__file__).with_name('rapor_v20.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -649,15 +649,19 @@ function hashTarget(hash) {
   catch { return null; }
 }
 function openHash() {
+  if (location.hash.includes('%')) return;
   const target = hashTarget(location.hash);
-  if (!target && location.hash) return;
+  if (!target) { restoreCitation(); return; }
   if (target) {
     reveal(target);
+    if (!target.id.startsWith('source-') && previousCitation) {
+      if (target.contains(previousCitation)) { restoreCitation(); return; }
+      previousCitation = null;
+    }
     if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
     target.focus({preventScroll:true});
     target.scrollIntoView();
   }
-  if (!target?.id.startsWith('source-')) restoreCitation();
 }
 for (const link of document.querySelectorAll('a[href^="#"]')) {
   link.addEventListener('click', () => {

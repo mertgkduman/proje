@@ -8,6 +8,8 @@ import http.server
 import threading
 import re
 import urllib.request
+import hashlib
+import datetime
 from pathlib import Path
 
 from browser_probe import browser
@@ -59,18 +61,30 @@ class ComparisonNavigation(unittest.TestCase):
  history.forward(); await pause(); checks.push(document.activeElement===a && a.checkVisibility());
  const cite=a.querySelector('.citation'); cite.click(); await pause();
  const s=document.getElementById(cite.hash.slice(1));
- checks.push(s.open && s.checkVisibility() && document.activeElement===s && s.innerText.includes('0205-iyi-program-page-v1') && !!s.querySelector('a[href^="../../"]'));
+ checks.push(s.id==='source-0306-iyi-program-demokrasi-katilim-principle-passage' && s.open && s.checkVisibility() && document.activeElement===s && s.innerText.includes('0205-iyi-program-page-v1') && s.innerText.includes('Demokrasi ve hukuk') && !!s.querySelector('a.archive-view[href="../../views/ecc51c44806790d9980a80aebb940c57/index.html"]'));
+ history.back(); await pause(); checks.push(document.activeElement===cite && cite.checkVisibility());
+ history.forward(); await pause(); checks.push(document.activeElement===s && s.open && s.checkVisibility());
+ history.back(); await pause(); cite.click(); await pause();
  checks.push(document.documentElement.scrollWidth<=innerWidth);
  const old=document.activeElement; location.hash='#%ZZ'; await pause(); checks.push(document.activeElement===old);
  const scope='04-03-v3-0306-iyi-scope-parti-yardim-kampanya-absence';
  const proof=document.querySelector('a[href="#comparison-'+scope+'"]');
  const scopeRow=document.getElementById('comparison-'+scope);
  checks.push(!!proof && !!scopeRow && scopeRow.innerText.includes('İncelenen kapsam:'));
+ document.getElementById('tab-comparison').click();proof.click();await pause();
+ checks.push(document.activeElement===scopeRow && scopeRow.checkVisibility() && !!scopeRow.querySelector('a[href^="../../"]'));
  const ids=[...document.querySelectorAll('[id]')].map(x=>x.id);checks.push(ids.length===new Set(ids).size);
+ const tab=document.getElementById('tab-comparison');const event=new KeyboardEvent('keydown',{key:'ArrowUp',bubbles:true,cancelable:true});tab.dispatchEvent(event);checks.push(!event.defaultPrevented);
+ const names=[...new Set([...a.closest('.comparison-topic').querySelectorAll(':scope > article.comparison-row > h4')].map(x=>x.textContent))];
+ checks.push(JSON.stringify(names)===JSON.stringify(['YENİ PARTİ','TÜRKİYE İŞÇİ PARTİSİ','HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ','İYİ PARTİ','YENİ YOL','DEMOKRATİK BÖLGELER PARTİSİ','EMEK PARTİSİ','SAADET PARTİSİ','DEMOKRAT PARTİ']));
+ checks.push(!document.getElementById('scope-method').open && !!a.closest('.comparison-topic').querySelector(':scope > p.summary'));
+ tab.focus();tab.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true,cancelable:true}));
+ checks.push(document.activeElement.id==='tab-demokrat' && document.activeElement.getAttribute('aria-selected')==='true' && document.activeElement.tabIndex===0 && document.getElementById('party-demokrat').hidden===false);
  document.body.dataset.navigationChecks=checks.map(Number).join('');
 })().catch(e=>document.body.dataset.navigationError=e.message);
 </script>'''.replace('ROW', row)
         source = REPORT.read_text(encoding='utf-8').replace('</html>', marker + '</html>')
+        outcomes = []
         with tempfile.TemporaryDirectory(dir=ROOT / 'data/releases') as tmp:
             path = Path(tmp) / 'index.html'
             path.write_text(source, encoding='utf-8')
@@ -85,13 +99,28 @@ class ComparisonNavigation(unittest.TestCase):
                 for url in urls:
                     for width in (360, 1365):
                         with self.subTest(url=url, width=width):
-                            result = subprocess.run([executable, '--headless', '--no-sandbox', '--disable-gpu', '--window-size=%d,900' % width, '--virtual-time-budget=5000', '--dump-dom', url + '#comparison-' + row], capture_output=True, text=True, timeout=120)
+                            probe = ROOT / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/probe-navigation.cjs'
+                            result = subprocess.run(['node', str(probe), executable, url + '#comparison-' + row, str(width)], capture_output=True, text=True, timeout=130)
                             self.assertEqual(result.returncode, 0, result.stderr[-500:])
-                            checks = re.search(r'data-navigation-(?:checks|error)="[^"]*"', result.stdout)
-                            self.assertIsNotNone(checks, 'Tarayıcı sonucu üretilmedi')
-                            self.assertEqual(checks.group(), 'data-navigation-checks="111111111111"')
+                            observed = json.loads(result.stdout)
+                            self.assertEqual(observed['width'], width)
+                            self.assertEqual(observed['checks'], '1111111111111111111')
+                            outcomes.append({'scheme': 'file' if url.startswith('file:') else 'http', 'width': observed['width'], 'checks': observed['checks'], 'url': url + '#comparison-' + row})
             finally:
                 server.shutdown(); server.server_close(); thread.join()
+        self.assertEqual(len(outcomes), 4, 'Dört tarayıcı koşulu tamamlanmadı')
+        if output := os.environ.get('NAV_EVIDENCE'):
+            release = json.loads((ROOT / 'data/current.json').read_text())['release_id']
+            if REPORT.resolve() != (ROOT / 'data/releases' / release / 'index.html').resolve():
+                self.fail('Kanıt tam olarak geçerli yayına bağlanmalı')
+            if records_path.resolve() != (ROOT / 'data/releases' / release / 'records.json').resolve():
+                self.fail('Kanıtın kayıtları raporla aynı yayından gelmeli')
+            payload = {'release_id': release, 'report_sha256': hashlib.sha256(REPORT.read_bytes()).hexdigest(),
+                       'records_sha256': hashlib.sha256(records_path.read_bytes()).hexdigest(),
+                       'checked_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                       'command': 'python3 tests/run.py --pattern test_comparison_navigation.py',
+                       'row_id': row, 'source_version': version['id'], 'archive': view['index_path'], 'results': outcomes}
+            Path(output).write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
 
 
 if __name__ == '__main__':

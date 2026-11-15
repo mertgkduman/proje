@@ -1,0 +1,26 @@
+{
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "started": "2026-11-15T03:29:13.061354+00:00",
+  "inputs": {
+    "src/rapor.py": "2cceca388f5d4c418491763e7bd8529cb491e770f989d42b55beb8ff614f7ace",
+    "src/rapor_v20.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "src/arsiv.py": "c6fd2efeb9e255ca0c76faab2ca7e6802a6c65994f343269bd2b231ffca144cd",
+    "tests/test_comparison_navigation.py": "2a16db15450cc00a8b7709cd6d6f3ee3e44781cc3588788e47e95ac7378b87b9",
+    ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/probe-navigation.cjs": "86ee7f2d6f8f7c34f593456fd7491315384e455dce1bfac4416b3c74ed9d028e",
+    "/tmp/gsd-0315-v20-preview.html": "78e74311816f7b9903f11a49fc9b096487c8333f026c7e535654d2a8886ae014"
+  },
+  "runs": {
+    "navigation": {
+      "pid": 884805,
+      "command": "NAV_REPORT=/tmp/gsd-0315-v20-preview.html python3 tests/run.py --pattern test_comparison_navigation.py",
+      "log": "/tmp/gsd-0315-v20-navigation.log",
+      "exit": "/tmp/gsd-0315-v20-navigation.exit"
+    },
+    "report": {
+      "pid": 884806,
+      "command": "python3 tests/run.py --pattern test_report.py",
+      "log": "/tmp/gsd-0315-v20-report.log",
+      "exit": "/tmp/gsd-0315-v20-report.exit"
+    }
+  }
+}
