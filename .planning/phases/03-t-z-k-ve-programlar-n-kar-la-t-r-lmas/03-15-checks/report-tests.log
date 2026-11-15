@@ -1,0 +1,19 @@
+test_attribution_is_never_copied_from_same_hash_sibling (test_report.ReportTest.test_attribution_is_never_copied_from_same_hash_sibling) ... ok
+test_identity_note_uses_its_passage_origin_for_entities (test_report.ReportTest.test_identity_note_uses_its_passage_origin_for_entities) ... ok
+test_known_authors_remain_attached_to_their_source_versions (test_report.ReportTest.test_known_authors_remain_attached_to_their_source_versions) ... ok
+test_method_prioritizes_primary_sources_and_old_renderer_is_reproducible (test_report.ReportTest.test_method_prioritizes_primary_sources_and_old_renderer_is_reproducible) ... ok
+test_mobile_navigation_hint_and_readable_touch_targets (test_report.ReportTest.test_mobile_navigation_hint_and_readable_touch_targets) ... ok
+test_pdf_quote_entities_are_literal_and_html_entities_decode (test_report.ReportTest.test_pdf_quote_entities_are_literal_and_html_entities_decode) ... ok
+test_reader_shows_party_content_and_faithful_archive_links (test_report.ReportTest.test_reader_shows_party_content_and_faithful_archive_links) ... ok
+test_real_browser_reads_both_passive_archives (test_report.ReportTest.test_real_browser_reads_both_passive_archives) ... ok
+test_rejects_unsafe_archive_path_and_escapes_finding (test_report.ReportTest.test_rejects_unsafe_archive_path_and_escapes_finding) ... ok
+test_renderer_13_reproduces_existing_release (test_report.ReportTest.test_renderer_13_reproduces_existing_release) ... ok
+test_scoped_parties_and_summary_are_navigable (test_report.ReportTest.test_scoped_parties_and_summary_are_navigable) ... 127.0.0.1 - - [14/Nov/2026 21:35:52] "GET /objects/404e094c66eeb871b91b396689632313f63b186d4afa7f89e5e422f3c732ac6f/readable.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 21:36:10] "GET /releases/tmpay09r6t3/index.html HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 140.489s
+
+OK
+TESTS_OK count=11

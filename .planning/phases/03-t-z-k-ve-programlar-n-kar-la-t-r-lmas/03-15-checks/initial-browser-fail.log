@@ -1,0 +1,65 @@
+test_direct_hash_reveals_and_focuses_same_row (test_comparison_navigation.ComparisonNavigation.test_direct_hash_reveals_and_focuses_same_row) ... ok
+test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) ... 
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpop17h_ye/index.html', width=360) ... FAIL
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpop17h_ye/index.html', width=1365) ... FAIL
+127.0.0.1 - - [14/Nov/2026 21:35:45] "GET /releases/tmpop17h_ye/index.html HTTP/1.1" 200 -
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:37887/releases/tmpop17h_ye/index.html', width=360) ... FAIL
+127.0.0.1 - - [14/Nov/2026 21:36:00] "GET /releases/tmpop17h_ye/index.html HTTP/1.1" 200 -
+  test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:37887/releases/tmpop17h_ye/index.html', width=1365) ... FAIL
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpop17h_ye/index.html', width=360)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 75, in test_four_browser_navigation_modes
+    self.assertEqual(checks.group(), 'data-navigation-checks="1111111111"')
+AssertionError: 'data-navigation-checks="1111111110"' != 'data-navigation-checks="1111111111"'
+- data-navigation-checks="1111111110"
+?                                  ^
++ data-navigation-checks="1111111111"
+?                                  ^
+
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/tmpop17h_ye/index.html', width=1365)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 75, in test_four_browser_navigation_modes
+    self.assertEqual(checks.group(), 'data-navigation-checks="1111111111"')
+AssertionError: 'data-navigation-checks="1111111110"' != 'data-navigation-checks="1111111111"'
+- data-navigation-checks="1111111110"
+?                                  ^
++ data-navigation-checks="1111111111"
+?                                  ^
+
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:37887/releases/tmpop17h_ye/index.html', width=360)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 75, in test_four_browser_navigation_modes
+    self.assertEqual(checks.group(), 'data-navigation-checks="1111111111"')
+AssertionError: 'data-navigation-checks="1111111110"' != 'data-navigation-checks="1111111111"'
+- data-navigation-checks="1111111110"
+?                                  ^
++ data-navigation-checks="1111111111"
+?                                  ^
+
+
+======================================================================
+FAIL: test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) (url='http://127.0.0.1:37887/releases/tmpop17h_ye/index.html', width=1365)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py", line 75, in test_four_browser_navigation_modes
+    self.assertEqual(checks.group(), 'data-navigation-checks="1111111111"')
+AssertionError: 'data-navigation-checks="1111111110"' != 'data-navigation-checks="1111111111"'
+- data-navigation-checks="1111111110"
+?                                  ^
++ data-navigation-checks="1111111111"
+?                                  ^
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 73.768s
+
+FAILED (failures=4)

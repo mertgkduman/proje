@@ -8,8 +8,8 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 18
-STYLE = Path(__file__).with_name('rapor_v16.css').read_text(encoding='utf-8')
+RENDERER_VERSION = 19
+STYLE = Path(__file__).with_name('rapor_v19.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -214,7 +214,7 @@ def render_report(data):
                 raise ValueError('Geçersiz arşiv yolu')
         source_type = esc(SOURCE_TYPE_LABELS.get(d['source_kind'], 'Türü doğrulanamadı'))
         location = p['article'] or p['section'] or p['prefix'] or p['suffix']
-        metadata = [('Belge tarihi', time_tag(v['document_date'])),
+        metadata = [('Sürüm kimliği', esc(v['id'])), ('Belge tarihi', time_tag(v['document_date'])),
                     ('Sürüm', esc(v['version_label'] or 'Belirtilmemiş')),
                     ('Erişim', time_tag(v['accessed_at'])), ('Doğrulama', time_tag(v['verified_at']))]
         if location:
@@ -323,7 +323,7 @@ def render_report(data):
         own = 'dossier-comparison-' if dossier else 'comparison-'
         other = 'comparison-' if dossier else 'dossier-comparison-'
         label = 'Karşılaştırmaya git' if dossier else 'Parti dosyasına git'
-        pieces.append(f'<article class="comparison-row" id="{own}{rid}"><h4>{esc(parties[row["party_id"]]["legal_name"])}</h4>'
+        pieces.append(f'<article class="comparison-row" tabindex="-1" id="{own}{rid}"><h4>{esc(parties[row["party_id"]]["legal_name"])}</h4>'
                       f'<a href="#{other}{rid}">{label}</a>')
         if row['state'] == 'evidence':
             pieces.append(f'<p class="metadata">{esc(row["level"].capitalize())} · {esc(row["organ"])}</p>')
@@ -342,6 +342,14 @@ def render_report(data):
                           f'<a href="#attempt-{esc(m["attempt_id"])}">Araştırma kaydı</a></p>')
         elif row['state'] == 'no_explicit_statement':
             pieces.append('<p class="muted">İncelenen kapsamda açık ifade bulunmadı.</p>')
+            scope = next(s for s in data['comparison_review_scope'] if s['id'] == row['scope_id'])
+            version = versions[scope['version_id']]
+            archive_path = views[version['id']]['index_path'] if version['id'] in views else version['readable_path']
+            if (archive_path.startswith('/') or '..' in archive_path.split('/') or
+                    not (archive_path.startswith('objects/') or __import__('re').fullmatch(r'views/[0-9a-f]{32}/index\.html', archive_path))):
+                raise ValueError('Geçersiz arşiv yolu')
+            ref = f'<a href="../../{esc(archive_path)}">İncelenen belge: {esc(version["id"])}</a>'
+            pieces.append(f'<p class="metadata">İncelenen kapsam: {esc(scope["sections"])} · {esc(scope["reason"])} {ref}</p>')
         else:
             grouped_fields = {}
             for field in (x for x in data.get('comparison_field', []) if x['row_id'] == row['id']):
@@ -521,6 +529,8 @@ def render_report(data):
             append_topics(version, topic['topic_id'], depth + 1)
     for version in sorted({t['taxonomy_version'] for t in data.get('comparison_topic', [])}):
         append_topics(version, None, 0)
+    synthesis_reviews = {r['subject_id']: r for r in data.get('comparison_semantic_review', [])
+                         if r['subject_kind'] == 'comparison_synthesis' and r['reviewer_kind'] == 'agent'}
     for topic, depth in ordered:
         heading = 'h' + str(min(3 + depth, 6))
         pieces.append(f'<section class="comparison-topic"><{heading}>{esc(topic["definition"])}</{heading}>')
@@ -528,6 +538,15 @@ def render_report(data):
             if (synth['topic_id'],synth['taxonomy_version']) == (topic['topic_id'],topic['taxonomy_version']):
                 refs = ' '.join(named_citation(e['passage_id']) for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == synth['id'])
                 pieces.append(f'<p class="summary">{esc(synth["text"])} {refs}</p>')
+                review = synthesis_reviews.get(synth['id'])
+                if review:
+                    try:
+                        decision = json.loads(review['reason'])
+                    except (ValueError, TypeError):
+                        decision = None
+                    if isinstance(decision, dict) and decision.get('contract_version') == 2:
+                        sides = ' · '.join(f'<a href="#comparison-{esc(side["row_id"])}">{esc(parties[side["party_id"]]["legal_name"])}</a>' for side in decision['sides'])
+                        pieces.append(f'<p class="metadata">İddianın dayanakları: {sides}</p>')
         for pid in PRESENTATION_ORDER:
             for row in data['comparison_row']:
                 if (row['topic_id'],row['taxonomy_version'],row['party_id']) == (topic['topic_id'],topic['taxonomy_version'],pid):
@@ -603,8 +622,8 @@ for (const [i, tab] of tabs.entries()) {
     let next;
     if (event.key === 'Home') next = 0;
     else if (event.key === 'End') next = tabs.length - 1;
-    else if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (i + 1) % tabs.length;
-    else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (i + tabs.length - 1) % tabs.length;
+    else if (event.key === 'ArrowRight') next = (i + 1) % tabs.length;
+    else if (event.key === 'ArrowLeft') next = (i + tabs.length - 1) % tabs.length;
     else return;
     event.preventDefault();
     selectTab(tabs[next], true);
@@ -625,13 +644,17 @@ function restoreCitation() {
   previousCitation = null;
 }
 function hashTarget(hash) {
-  try { return document.getElementById(decodeURIComponent(hash.slice(1))); }
+  if (!hash || hash.includes('%')) return null;
+  try { return document.getElementById(hash.slice(1)); }
   catch { return null; }
 }
 function openHash() {
   const target = hashTarget(location.hash);
+  if (!target && location.hash) return;
   if (target) {
     reveal(target);
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus({preventScroll:true});
     target.scrollIntoView();
   }
   if (!target?.id.startsWith('source-')) restoreCitation();
