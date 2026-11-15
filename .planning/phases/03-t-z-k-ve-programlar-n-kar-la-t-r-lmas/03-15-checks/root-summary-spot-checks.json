@@ -1,0 +1,231 @@
+{
+  "plans": [
+    {
+      "plan": "03-01",
+      "created_spot_checks": [
+        {
+          "file": "src/rapor_v15.py",
+          "exists": true
+        },
+        {
+          "file": "src/rapor_v16.css",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 5,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-02",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-taxonomy.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-source-inventory.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 53,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-03",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-yeni-parti-charter.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-yeni-parti-program.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 5,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-04",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-tip-charter.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-tip-semantic.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 5,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-05",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-dem-charter.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-dem-semantic.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 6,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-06",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-iyi-charter.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-iyi-semantic.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 4,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-07",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-yeni-yol-charter.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-yeni-yol-program.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 5,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-08",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-dbp-charter.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-dbp-program.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 6,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-09",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-emep-charter.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-emep-program.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 5,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-10",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-saadet-charter-1.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-saadet-charter-2.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 6,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-11",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-saadet-program-1.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-saadet-program-2.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 5,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-12",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-demokrat-charter-1.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-demokrat-charter-2.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 4,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-13",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-demokrat-program-1.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-demokrat-program-2.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 5,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-14",
+      "created_spot_checks": [
+        {
+          "file": "data/comparisons/03-synthesis-v4.json",
+          "exists": true
+        },
+        {
+          "file": "data/comparisons/03-synthesis-v4-evidence.json",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 128,
+      "self_check_failed": false
+    },
+    {
+      "plan": "03-15",
+      "created_spot_checks": [
+        {
+          "file": "src/rapor_v18.py",
+          "exists": true
+        },
+        {
+          "file": "src/rapor_v19.py",
+          "exists": true
+        }
+      ],
+      "matching_commit_count": 13,
+      "self_check_failed": false
+    }
+  ],
+  "status": "passed",
+  "plan16": "not executed; post-fix full gate pending"
+}

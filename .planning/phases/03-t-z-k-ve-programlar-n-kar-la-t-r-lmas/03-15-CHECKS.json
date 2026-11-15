@@ -1,0 +1,61 @@
+{
+  "status": "post_fix_full_suite_and_two_audits_running",
+  "updated_utc": "2026-11-15T09:11:12.962817+00:00",
+  "release_id": "27033583248b4951b3fe8e5fd6d77b9f",
+  "renderer_version": 22,
+  "taxonomy_version": 4,
+  "comparison_validation_version": 2,
+  "comparison_synthesis_contract_version": 2,
+  "data_schema_version": 6,
+  "code_review": {
+    "status": "clean",
+    "report": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-REVIEW.md",
+    "commit": "6475e3b",
+    "original_four_findings_closed": true,
+    "followup_fixture_finding_closed": true
+  },
+  "delivery": {
+    "commit": "2fa77a4",
+    "closed_bundles": 6,
+    "clean_archive_test_exit": 0,
+    "clean_archive_proof": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/clean-fixtures-green.json"
+  },
+  "root_static_checks": "passed",
+  "build_exit": 0,
+  "global_gate": {
+    "status": "running",
+    "pid": 1040518,
+    "host": "dcc-core-ferc-u-ab39-5-6",
+    "input_snapshot": "/tmp/gsd-0315-review-fixes-regression-3ee1aa155b9742e88736600c2faed8d3",
+    "timeout_seconds": 10800,
+    "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.run.json",
+    "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.json"
+  },
+  "independent_audits": {
+    "phase2": "pending",
+    "phase3_requested_partial_complete_guards": "pending",
+    "metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/audits-v22-run.json"
+  },
+  "navigation": {
+    "status": "passed",
+    "tests": 4,
+    "conditions_per_file_http_width_case": 19,
+    "real_local_archive_read": true,
+    "screenshots": 4,
+    "root_visual_review": [
+      "screenshots-v22/navigation-row-360.png",
+      "screenshots-v22/navigation-topic-1365.png"
+    ]
+  },
+  "summary_spot_checks": {
+    "status": "passed",
+    "plans": 15,
+    "evidence": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-summary-spot-checks.json"
+  },
+  "earlier_regression": {
+    "status": "interrupted_143_not_a_pass",
+    "evidence": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-regression-abort.json"
+  },
+  "plan16": "not_started",
+  "global_requirements_and_human_uat": "open"
+}
