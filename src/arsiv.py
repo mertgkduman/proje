@@ -122,6 +122,9 @@ COMPARISON_TABLES = {
 }
 COMPARISON_INVENTORY_TABLE = 'id TEXT PRIMARY KEY, taxonomy_version INTEGER NOT NULL, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT REFERENCES document_version(id), source_role TEXT NOT NULL, section TEXT NOT NULL, page_range TEXT, full_text_available INTEGER NOT NULL, scanned_at TEXT NOT NULL, topic_ids TEXT NOT NULL, unmatched_headings TEXT NOT NULL, search_boundary TEXT NOT NULL, missing_id TEXT REFERENCES missing(id)'
 COMPLETION_TABLE = 'version INTEGER NOT NULL, taxonomy_version INTEGER NOT NULL, evidence TEXT NOT NULL, PRIMARY KEY(version,taxonomy_version)'
+# Identity of the already adopted v1 marker, not a semantic approval.  New
+# closure decisions use v2; untrusted inputs cannot invent a weaker v1 proof.
+LEGACY_COMPLETION_MARKERS = {(1, 4): '9413a4616f01dedebe47ca63dac068503e58cee09cee3e3e6a3e8512217827e8'}
 # Optional v2 tables are append-only.  The v1 marker above is deliberately
 # unchanged: existing closed snapshots retain their original interpretation.
 COMPLETION_V2_TABLES = {
@@ -1364,6 +1367,9 @@ def validate_completion(data):
     markers = data.get('comparison_completion', [])
     if not markers:
         return True
+    if any(LEGACY_COMPLETION_MARKERS.get((m.get('version'), m.get('taxonomy_version'))) !=
+           hashlib.sha256(canonical_json(m).encode()).hexdigest() for m in markers):
+        raise ValueError('Önceki kaynak kapanışı tarihsel işaretçisi doğrulanamadı')
     contract = data['comparison_contract'][0]
     if contract['stage'] != 'complete':
         raise ValueError('Kaynak kapanışı tam aşama gerektirir')

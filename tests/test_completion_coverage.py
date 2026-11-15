@@ -142,6 +142,19 @@ class CompletionCoverageTest(unittest.TestCase):
         del legacy['comparison_completion']
         self.assertTrue(arsiv.validate_completion(legacy))
 
+    def test_mutable_input_cannot_claim_a_modified_historical_marker(self):
+        data = dict(self.reviewed)
+        marker = dict(data['comparison_completion'][0])
+        proof = json.loads(marker['evidence'])
+        target = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
+        proof['rows'] = [r for r in proof['rows'] if r['id'] != target]
+        next(p for p in proof['coverage_review']['parties'] if p['party_id'] == 'tip')['row_count'] -= 1
+        marker['evidence'] = json.dumps(proof, ensure_ascii=False)
+        data['comparison_completion'] = [marker]
+        data['comparison_row'] = [r for r in data['comparison_row'] if r['id'] != target]
+        with self.assertRaisesRegex(ValueError, 'tarihsel işaretçisi'):
+            arsiv.validate_comparisons(data)
+
     def test_legacy_proof_projection_survives_additions_but_not_mutation(self):
         old = next(r for r in self.reviewed['comparison_row'] if r['taxonomy_version'] == self.taxonomy)
         added = dict(old, id='test-only-new-same-taxonomy-row')
@@ -601,21 +614,18 @@ class CompletionCoverageTest(unittest.TestCase):
     def test_coordinated_omission_is_not_a_coverage_decision(self):
         """The independent authored disposition still requires the omitted organ."""
         data = self.modern()
+        self.assertTrue(arsiv.validate_completion(data))
         target = '04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row'
-        row = next(r for r in data['comparison_row'] if r['id'] == target)
-        marker = dict(data['comparison_completion'][0])
-        proof = json.loads(marker['evidence'])
-        proof['rows'] = [r for r in proof['rows'] if r['id'] != target]
-        next(p for p in proof['coverage_review']['parties'] if p['party_id'] == row['party_id'])['row_count'] -= 1
-        marker['evidence'] = json.dumps(proof, ensure_ascii=False)
-        data['comparison_completion'] = [marker]
+        # Model a first v2 closure without an adopted v1 marker. Its candidate
+        # selection is edited in step with the omitted row; the independent
+        # source basis still requires the TİP scope and organ.
+        data['comparison_completion'] = []
         data['comparison_row'] = [r for r in data['comparison_row'] if r['id'] != target]
         revision = dict(data['comparison_completion_revision'][0])
         selection = json.loads(revision['selection'])
         selection['rows'] = [r for r in selection['rows'] if r['id'] != target]
         revision['selection'] = arsiv.canonical_json(selection)
-        revision['legacy_anchor'] = arsiv.canonical_json(dict(release_id=self.reviewed['release_id'],
-            marker_sha256=hashlib.sha256(arsiv.canonical_json(marker).encode()).hexdigest()))
+        revision['legacy_anchor'] = None
         data['comparison_completion_revision'] = [revision]
         with self.assertRaisesRegex(ValueError, 'Kaynak yükümlülüğü satır'):
             arsiv.validate_comparisons(data)
