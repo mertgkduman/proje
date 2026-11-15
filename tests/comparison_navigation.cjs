@@ -5,6 +5,10 @@ const profile=fs.mkdtempSync(path.join(os.tmpdir(),'proje-nav-'));
 const chrome=spawn(bin,['--headless','--no-sandbox','--disable-gpu','--remote-debugging-pipe','--user-data-dir='+profile],{stdio:['ignore','ignore','pipe','pipe','pipe']});
 const chromeExit=new Promise(resolve=>chrome.once('exit',resolve));
 let next=0,buffer='',session;const pending=new Map();
+function rejectPending(error){for(const [,no] of pending.values())no(error);pending.clear()}
+chrome.stdio[3].on('error',rejectPending);
+chrome.stdio[4].on('error',rejectPending);
+chrome.stdio[4].on('end',()=>rejectPending(Error('browser pipe closed')));
 chrome.stdio[4].on('data',chunk=>{buffer+=chunk.toString();let end;while((end=buffer.indexOf('\0'))>=0){const line=buffer.slice(0,end);buffer=buffer.slice(end+1);if(!line)continue;const msg=JSON.parse(line);if(pending.has(msg.id)){const [ok,no]=pending.get(msg.id);pending.delete(msg.id);msg.error?no(Error(JSON.stringify(msg.error))):ok(msg.result)}}});
 function send(method,params={},sid=session){const id=++next;return new Promise((ok,no)=>{pending.set(id,[ok,no]);chrome.stdio[3].write(JSON.stringify({id,method,params,...(sid?{sessionId:sid}:{})})+'\0')})}
 async function evaluate(expression){const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value}
@@ -55,7 +59,7 @@ function assert(v,m){if(!v)throw Error(m)}
  assert(content.url===expectedArchive&&content.text&&content.title,'archive content mismatch: '+JSON.stringify(content));
  console.log(JSON.stringify({requested:url,actual:initial.url,...state,archiveRequested:expectedArchive,archiveActual:content.url,archiveTitle:content.title,archiveExcerptFound:content.text}));
 })().catch(e=>{console.error(e.stack);process.exitCode=1}).finally(async()=>{
- try{await send('Browser.close',{},null)}catch{}
+ send('Browser.close',{},null).catch(()=>{});
  const waitForExit=ms=>new Promise(resolve=>{const timer=setTimeout(()=>resolve(false),ms);chromeExit.then(()=>{clearTimeout(timer);resolve(true)})});
  if(!await waitForExit(5000)){
   chrome.kill('SIGKILL');
