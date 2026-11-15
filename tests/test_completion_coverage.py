@@ -55,6 +55,17 @@ class CompletionCoverageTest(unittest.TestCase):
         del legacy['comparison_completion']
         self.assertTrue(arsiv.validate_completion(legacy))
 
+    def test_legacy_proof_projection_survives_additions_but_not_mutation(self):
+        old = next(r for r in self.reviewed['comparison_row'] if r['taxonomy_version'] == self.taxonomy)
+        added = dict(old, id='test-only-new-same-taxonomy-row')
+        candidate = dict(self.reviewed, comparison_row=self.reviewed['comparison_row'] + [added],
+                         comparison_contract=[dict(self.reviewed['comparison_contract'][0], stage='partial')])
+        self.assertTrue(arsiv.validate_legacy_completion_projection(candidate))
+        candidate['comparison_row'] = [dict(r, organ='changed') if r['id'] == old['id'] else r
+                                       for r in candidate['comparison_row']]
+        with self.assertRaisesRegex(ValueError, 'Önceki kaynak kapanışı kayıtları'):
+            arsiv.validate_legacy_completion_projection(candidate)
+
     def test_independent_basis_detects_coordinated_source_omissions(self):
         basis = json.loads((Path(__file__).resolve().parents[1] /
                             'data/comparisons/03-completion-basis-v2-source.json').read_text())

@@ -850,6 +850,34 @@ def validate_source_risk_review(data, basis, risk_universe, decisions):
     return True
 
 
+def validate_legacy_completion_projection(data):
+    """Validate retained v1 proofs against their own immutable record sets."""
+    for marker in data.get('comparison_completion', []):
+        try:
+            proof = json.loads(marker['evidence'])
+            projection = dict(data)
+            projection.pop('comparison_completion_revision', None)
+            for name, table, identity in (
+                ('topics', 'comparison_topic', lambda x: (x['topic_id'], x['taxonomy_version'])),
+                ('rows', 'comparison_row', lambda x: x['id']),
+                ('fields', 'comparison_field', lambda x: x['id']),
+                ('syntheses', 'comparison_synthesis', lambda x: x['id']),
+                ('inventory', 'comparison_source_inventory', lambda x: x['id']),
+            ):
+                expected = proof[name]
+                actual = {identity(item): item for item in data[table]}
+                if len({identity(item) for item in expected}) != len(expected) or any(actual.get(identity(item)) != item for item in expected):
+                    raise ValueError('Önceki kaynak kapanışı kayıtları değiştirilmiş')
+                projection[table] = expected
+            projection['comparison_completion'] = [marker]
+            projection['comparison_contract'] = [dict(data['comparison_contract'][0],
+                                                      taxonomy_version=marker['taxonomy_version'], stage='complete')]
+            validate_completion(projection)
+        except (KeyError, TypeError, json.JSONDecodeError) as exc:
+            raise ValueError('Önceki kaynak kapanışı kanıtı geçersiz') from exc
+    return True
+
+
 def validate_completion(data):
     """Validate an explicitly adopted, snapshot-bound source closure contract.
 
