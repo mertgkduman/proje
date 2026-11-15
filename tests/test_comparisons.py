@@ -14,6 +14,35 @@ import arsiv
 
 class ComparisonReleaseTest(unittest.TestCase):
     @staticmethod
+    def reviewed_current():
+        folder = arsiv.DATA / 'releases' / arsiv.current()
+        data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+        taxonomy = data['comparison_contract'][0]['taxonomy_version']
+        rows = [r for r in data['comparison_row'] if r['taxonomy_version'] == taxonomy]
+        row_ids = {r['id'] for r in rows}
+        phase = Path(__file__).resolve().parents[1] / '.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck'
+        authored = json.loads((phase / 'authored_checks.json').read_text(encoding='utf-8'))
+        evidence = {
+            'rows': rows,
+            'fields': [f for f in data['comparison_field'] if f['row_id'] in row_ids],
+            'syntheses': [s for s in data['comparison_synthesis'] if s['taxonomy_version'] == taxonomy],
+            'inventory': [i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == taxonomy],
+            'source_review': authored,
+        }
+        data['comparison_completion'] = [{'version': 1, 'taxonomy_version': taxonomy,
+                                          'evidence': json.dumps(evidence, ensure_ascii=False)}]
+        return data
+
+    def test_completion_requires_source_meaning_review(self):
+        data = self.reviewed_current()
+        marker = data['comparison_completion'][0]
+        evidence = json.loads(marker['evidence'])
+        evidence['source_review']['checks'] = []
+        marker['evidence'] = json.dumps(evidence, ensure_ascii=False)
+        with self.assertRaises(ValueError):
+            arsiv.validate_comparisons(data)
+
+    @staticmethod
     def fixture_release():
         release = arsiv.current()
         while release:

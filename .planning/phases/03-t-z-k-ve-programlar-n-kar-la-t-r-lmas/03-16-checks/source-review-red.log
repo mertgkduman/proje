@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_completion_requires_source_meaning_review (test_comparisons.ComparisonReleaseTest.test_completion_requires_source_meaning_review)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparisons.py", line 42, in test_completion_requires_source_meaning_review
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 21.023s
+
+FAILED (failures=1)

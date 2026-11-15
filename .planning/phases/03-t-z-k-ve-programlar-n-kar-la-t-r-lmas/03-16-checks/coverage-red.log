@@ -1,0 +1,53 @@
+.FF.......FFFF..
+======================================================================
+FAIL: test_completion_marker_cannot_be_dropped_by_a_later_release (test_comparisons.ComparisonReleaseTest.test_completion_marker_cannot_be_dropped_by_a_later_release)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparisons.py", line 137, in test_completion_marker_cannot_be_dropped_by_a_later_release
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_completion_requires_source_meaning_review (test_comparisons.ComparisonReleaseTest.test_completion_requires_source_meaning_review)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparisons.py", line 42, in test_completion_requires_source_meaning_review
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_changed_applicable_level_and_organ (test_completion_coverage.CompletionCoverageTest.test_rejects_changed_applicable_level_and_organ) (key='level')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 26, in test_rejects_changed_applicable_level_and_organ
+    with self.subTest(key=key), self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_changed_applicable_level_and_organ (test_completion_coverage.CompletionCoverageTest.test_rejects_changed_applicable_level_and_organ) (key='organ')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 26, in test_rejects_changed_applicable_level_and_organ
+    with self.subTest(key=key), self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_dropped_field_and_synthesis (test_completion_coverage.CompletionCoverageTest.test_rejects_dropped_field_and_synthesis) (table='comparison_synthesis')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 47, in test_rejects_dropped_field_and_synthesis
+    with self.subTest(table=table), self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_missing_source_review (test_completion_coverage.CompletionCoverageTest.test_rejects_missing_source_review)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_completion_coverage.py", line 36, in test_rejects_missing_source_review
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 15 tests in 228.215s
+
+FAILED (failures=6)

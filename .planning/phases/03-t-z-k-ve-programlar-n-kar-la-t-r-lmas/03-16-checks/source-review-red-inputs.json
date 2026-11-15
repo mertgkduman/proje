@@ -1,0 +1,15 @@
+{
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "pid": 1170350,
+  "sid": 1170350,
+  "token": "7fa24d96a0d6490199943b44d5336e46",
+  "inputs": {
+    "src/arsiv.py": "d1b8bea1c017676f1db907e2322cdcccd622ba4014e1ae351d537de852631a01",
+    "tests/test_comparisons.py": "ac7b64bb65d9a82b01c5a2f3ce908ee4e5f0eee0c9ae3c7125dd3611893f635f",
+    "data/releases/27033583248b4951b3fe8e5fd6d77b9f/records.json": "65a522a9e7aba2625e87d8436059dc5a7a11c1bf06b7afb50b09b36dcf14a773",
+    ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/authored_checks.json": "e443eeb0ed5a6335ba58e884a2d325083ca9fa5701f5a84fd3befd44ec839c44"
+  },
+  "command": "PYTHONPATH=src:tests python3 -m unittest test_comparisons.ComparisonReleaseTest.test_completion_requires_source_meaning_review",
+  "log": "/tmp/gsd-0316-review-red/run.log",
+  "exit": "/tmp/gsd-0316-review-red/exit"
+}
