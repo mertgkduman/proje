@@ -135,6 +135,20 @@ class CompletionCoverageTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'bağımsız hazırlanmış bütüne'):
             arsiv.verify_initial_completion_basis(basis, risk['expected_risk_universe'][1:])
 
+    def test_adoption_payload_retains_real_source_decisions(self):
+        root = Path(__file__).resolve().parents[1] / 'data/comparisons'
+        basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())
+        risk = json.loads((root / '03-completion-risk-v2-source.json').read_text())
+        payload = arsiv.completion_adoption_payload(self.reviewed, basis, risk, '2026-11-15T16:52:28Z')
+        head = next(r['values'] for r in payload['records'] if r['kind'] == 'comparison_completion_basis')
+        cells = [r['values'] for r in payload['records'] if r['kind'] == 'comparison_coverage_disposition']
+        revision = next(r['values'] for r in payload['records'] if r['kind'] == 'comparison_completion_revision')
+        source, universe = arsiv.decode_completion_basis(head, cells)
+        self.assertEqual(source, basis)
+        self.assertEqual(universe, risk['expected_risk_universe'])
+        self.assertEqual(json.loads(revision['review'])['decisions'], risk['decisions'])
+        self.assertEqual(json.loads(revision['legacy_anchor'])['release_id'], self.reviewed['release_id'])
+
     def test_revision_validation_preserves_history_and_binds_active_stage(self):
         root = Path(__file__).resolve().parents[1] / 'data/comparisons'
         basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())

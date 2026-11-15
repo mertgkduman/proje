@@ -957,6 +957,30 @@ def completion_selection(data, taxonomy_version):
                 inventory=[i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == taxonomy_version])
 
 
+def completion_adoption_payload(data, basis, risk, created_at):
+    """Prepare the first v2 adoption without changing its historical marker."""
+    marker = data.get('comparison_completion', [])
+    contract = data['comparison_contract'][0]
+    if len(marker) != 1 or contract['stage'] != 'complete' or basis['taxonomy_version'] != contract['taxonomy_version']:
+        raise ValueError('Kaynak kapanışı başlangıç tabanı geçersiz')
+    verify_initial_completion_basis(basis, risk['expected_risk_universe'])
+    validate_source_basis_universe(data, basis)
+    validate_source_risk_review(data, basis, risk['expected_risk_universe'], risk['decisions'])
+    basis_id = 'completion-basis-v2-' + hashlib.sha256(canonical_json(basis).encode()).hexdigest()[:24]
+    head, cells = completion_basis_records(basis, risk['expected_risk_universe'], basis_id, created_at)
+    anchor = canonical_json(dict(release_id=data['release_id'], marker_sha256=hashlib.sha256(canonical_json(marker[0]).encode()).hexdigest()))
+    revision = dict(version=2, epoch=1, parent_revision_id=None, taxonomy_version=contract['taxonomy_version'],
+                    basis_id=basis_id, stage='complete', created_at=created_at, legacy_anchor=anchor,
+                    selection=canonical_json(completion_selection(data, contract['taxonomy_version'])),
+                    review=canonical_json({'decisions': risk['decisions']}),
+                    reason='Bağımsız kaynak evreni ve tarihli anlam kararlarıyla ilk sürüm 2 kapanışı.')
+    revision['id'] = 'completion-revision-v2-' + hashlib.sha256(canonical_json(revision).encode()).hexdigest()[:24]
+    records = ([dict(kind='comparison_completion_basis', values=head)] +
+               [dict(kind='comparison_coverage_disposition', values=cell) for cell in cells] +
+               [dict(kind='comparison_completion_revision', values=revision)])
+    return dict(contract_version=contract['version'], taxonomy_version=contract['taxonomy_version'], stage='complete', records=records)
+
+
 def validate_completion_basis_successor(old, new):
     """An appended basis may extend, but must retain, earlier obligations."""
     for name, identity in (('topics', lambda x: x['topic_id']),
