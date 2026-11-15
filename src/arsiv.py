@@ -144,15 +144,19 @@ def canonical_json(value):
 
 
 def completion_basis_digest(basis):
-    normalized = dict(basis, cells=sorted(basis['cells'], key=lambda cell: cell['id']))
+    normalized = {k: v for k, v in basis.items() if not k.startswith('_')}
+    normalized['cells'] = sorted(basis['cells'], key=lambda cell: cell['id'])
     return hashlib.sha256(canonical_json(normalized).encode()).hexdigest()
 
 
-def completion_basis_records(basis, risk_universe, basis_id, created_at, parent_basis_id=None):
+def completion_basis_records(basis, risk_universe, basis_id, created_at, parent_basis_id=None, *, reading_registry=None, correction_registry=None):
     """Encode authored source judgments for storage inside a closed snapshot."""
+    catalog = {k: basis[k] for k in ('artifact_version', 'completion_contract_target', 'artifact_kind', 'reviewer_kind', 'origin_policy', 'new_source_reading_claim', 'human_acceptance', 'source_documents', 'unresolved')}
+    catalog['reading_registry'] = reading_registry if reading_registry is not None else basis.get('_reading_registry')
+    catalog['correction_registry'] = correction_registry if correction_registry is not None else basis.get('_correction_registry', [])
     head = dict(id=basis_id, version=2, taxonomy_version=basis['taxonomy_version'],
                 parent_basis_id=parent_basis_id, created_at=created_at,
-                source_catalog=canonical_json({k: basis[k] for k in ('artifact_version', 'completion_contract_target', 'artifact_kind', 'reviewer_kind', 'origin_policy', 'new_source_reading_claim', 'human_acceptance', 'source_documents', 'unresolved')}),
+                source_catalog=canonical_json(catalog),
                 universe=canonical_json({k: basis[k] for k in ('topics', 'topic_bases', 'universe')}),
                 inventory=canonical_json(basis['inventory_sections']),
                 risk_universe=canonical_json(risk_universe),
@@ -172,9 +176,14 @@ def completion_basis_records(basis, risk_universe, basis_id, created_at, parent_
 def decode_completion_basis(head, dispositions):
     """Restore source content without consulting mutable research files."""
     try:
-        result = dict(json.loads(head['source_catalog']), **json.loads(head['universe']),
+        catalog = json.loads(head['source_catalog'])
+        reading_registry = catalog.pop('reading_registry', None)
+        correction_registry = catalog.pop('correction_registry', None)
+        result = dict(catalog, **json.loads(head['universe']),
                       taxonomy_version=head['taxonomy_version'], inventory_sections=json.loads(head['inventory']),
                       **json.loads(head['source_assertions']))
+        result['_reading_registry'] = reading_registry
+        result['_correction_registry'] = correction_registry
         risk = json.loads(head['risk_universe'])
         result['cells'] = []
         for item in dispositions:
@@ -534,6 +543,15 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                     previous_basis_id, previous_basis = successor['basis_id'], next_basis
             if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
                 raise ValueError('Karşılaştırma bütünlük hatası')
+            if incoming_revisions:
+                # Reject invalid candidate closure before performing expensive
+                # source-byte and publication checks; the final export still
+                # performs all of those checks before installing the workspace.
+                available = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+                names = (set(TABLES) | set(COMPARISON_TABLES) | set(COMPLETION_V2_TABLES) |
+                         set(LINEAGE_TABLES) | {'comparison_source_inventory', 'comparison_completion'}) & available
+                candidate = {name: [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY rowid')] for name in names}
+                validate_completion(candidate)
         finally:
             db.close()
         export_db(temp / 'records.sqlite3', 'workspace', strict_identity=True)
@@ -943,17 +961,76 @@ def validate_source_basis_universe(data, basis, superseded_cells=()):
     return True
 
 
-def validate_source_risk_review(data, basis, risk_universe, decisions):
+def validate_registered_decision(item):
+    try:
+        origin, decision = item['origin'], item['decision']
+        content = origin['content']
+        if not origin['path'].startswith('data/') or hashlib.sha256(content.encode('utf-8')).hexdigest() != origin['sha256']:
+            raise ValueError('Kayıt özeti uyuşmuyor')
+        pointer = origin['pointer']
+        if not pointer.startswith('/'):
+            raise ValueError('Kayıt göstericisi geçersiz')
+        value = json.loads(content)
+        for token in pointer[1:].split('/'):
+            token = token.replace('~1', '/').replace('~0', '~')
+            value = value[int(token)] if isinstance(value, list) else value[token]
+        if value != decision:
+            raise ValueError('Kayıt içeriği uyuşmuyor')
+        return decision
+    except (TypeError, ValueError, KeyError, IndexError) as exc:
+        raise ValueError('Yeni kaynak kararının özgün kaydı geçersiz') from exc
+
+
+def registered_reading_fingerprints(registry):
+    """Authenticate original readings and independently registered additions."""
+    if not isinstance(registry, dict) or not isinstance(registry.get('initial'), list) or not isinstance(registry.get('additional'), list):
+        raise ValueError('Kaynak okuması kayıt kataloğu eksik')
+    digest = hashlib.sha256(canonical_json(registry['initial']).encode()).hexdigest()
+    if digest != '94570eb54fd0c0a3e6f8f52a1afeb7941f1df7f8aa24ee81e9ff9d754bb16c95':
+        raise ValueError('Özgün kaynak okuması kataloğu değişmiş')
+    def fingerprint(decision):
+        return canonical_json({key: value for key, value in decision.items() if key != 'id'})
+    readings = {fingerprint(d) for d in registry['initial']}
+    for item in registry['additional']:
+        readings.add(fingerprint(validate_registered_decision(item)))
+    return readings
+
+
+def validate_basis_registry_origins(basis):
+    """Bind retained registered decision bodies to the stored source catalog."""
+    documents = {item['path']: item for item in basis['source_documents']}
+    if len(documents) != len(basis['source_documents']):
+        raise ValueError('Kaynak karar kataloğunda yinelenen belge var')
+    registry = basis.get('_reading_registry')
+    registered_reading_fingerprints(registry)
+    corrections = basis.get('_correction_registry')
+    if not isinstance(corrections, list):
+        raise ValueError('Kaynak düzeltme kararları kataloğu eksik')
+    for registration in registry['additional'] + corrections:
+        validate_registered_decision(registration)
+        origin = registration['origin']
+        if origin['path'] not in documents or documents[origin['path']]['sha256'] != origin['sha256']:
+            raise ValueError('Kaynak kararının kayıtlı kökeni uyuşmuyor')
+    return True
+
+
+def validate_source_risk_review(data, basis, risk_universe, decisions, *, reading_registry=None):
     """Require a linked substantive witness for each authored applicable risk."""
     by_id = {d['id']: d for d in decisions}
     if len(by_id) != len(decisions):
         raise ValueError('Kaynak anlamı risk kararları yinelenmiş')
+    registry = reading_registry if reading_registry is not None else basis.get('_reading_registry')
+    registered = registered_reading_fingerprints(registry)
+    for decision in decisions:
+        if canonical_json({k: v for k, v in decision.items() if k != 'id'}) not in registered:
+            raise ValueError('Kaynak anlamı kararı kayıtlı özgün okumayla uyuşmuyor')
     cells = {c['id']: c for c in basis['cells']}
     rows = {r['id']: r for r in data['comparison_row']}
     fields = {f['id']: f for f in data['comparison_field']}
     syntheses = {s['id']: s for s in data['comparison_synthesis']}
     reviews = {r['subject_id']: r for r in data['comparison_semantic_review']
                if r['subject_kind'] == 'comparison_synthesis' and r['reviewer_kind'] == 'agent'}
+    finding_reviews = {r['id']: r for r in data.get('review', []) if r.get('kind') == 'finding'}
     passages = {p['id']: p for p in data['passage']}
     versions = {v['id']: v for v in data['document_version']}
     changes = {c['id']: c for c in data['comparison_change']}
@@ -963,13 +1040,61 @@ def validate_source_risk_review(data, basis, risk_universe, decisions):
     for item in data['finding_evidence']:
         evidence.setdefault(item['finding_id'], set()).add(item['passage_id'])
 
+    initial_origins = {}
+    for item in registry['initial']:
+        fingerprint = canonical_json({k: v for k, v in item.items() if k != 'id'})
+        initial_origins.setdefault(fingerprint, set()).add(item['id'])
+
+    def eligible(risk, decision):
+        """Use authored historical examples plus typed facts for new witnesses."""
+        fingerprint = canonical_json({k: v for k, v in decision.items() if k != 'id'})
+        if initial_origins.get(fingerprint, set()).intersection(risk.get('witness_decision_ids', [])):
+            return True
+        category, _, value = risk['id'].partition(':')
+        if category == 'party':
+            return decision.get('party_id') == value
+        if category == 'role':
+            return decision.get('source_role') == value
+        if category == 'field':
+            return decision.get('kind') == 'field_support' and decision.get('field') == value
+        if category == 'synthesis':
+            return decision.get('kind') == 'synthesis_support' and decision.get('claim_type') == value
+        if category == 'format':
+            version = versions.get(decision.get('version_id'))
+            mime = (version or {}).get('mime', '').lower()
+            return bool(version and ((value == 'pdf' and 'pdf' in mime) or (value == 'html' and 'html' in mime)))
+        if risk['id'] == 'semantic:multiple_evidence':
+            return len(set(decision.get('summary_passage_ids', []))) >= 2
+        if risk['id'] == 'semantic:before_after':
+            return decision.get('kind') == 'change_support'
+        if risk['id'] == 'semantic:real_document_gap':
+            return decision.get('kind') == 'scope_or_document_gap' and bool(decision.get('missing_id'))
+        if risk['id'] == 'semantic:narrow_negative_scope':
+            return decision.get('kind') == 'scope_or_document_gap' and bool(decision.get('scope_id'))
+        if risk['id'] == 'semantic:physical_page_gap':
+            return decision.get('kind') == 'physical_page_gap'
+        if risk['id'] == 'semantic:same_hash_copy':
+            return decision.get('kind') == 'same_hash_copy'
+        # A new contextual classification requires its own registered,
+        # source-linked rationale; a naked category name is insufficient.
+        refs = set(decision.get('summary_passage_ids', []) + decision.get('quote_passage_ids', []))
+        refs.update(v for k in ('scope_id', 'missing_id', 'change_id', 'synthesis_id') if (v := decision.get(k)))
+        return any(claim.get('risk_id') == risk['id'] and claim.get('reason') and
+                   isinstance(claim.get('refs'), list) and claim['refs'] and set(claim['refs']) <= refs
+                   for claim in decision.get('risk_claims', []))
+
     def witnessed(decision, constraints):
         kind = decision.get('kind')
         if kind not in constraints['allowed_decision_kinds'] or decision.get('reviewer_kind') != 'agent' or not all(decision.get(k) for k in ('judgment', 'recorded_at', 'reading_origin')):
             return False
-        cell = cells.get(decision.get('cell_id'))
-        if kind in ('field_support', 'scope_or_document_gap', 'change_support') and constraints['source_cell_ids'] and (not cell or cell['id'] not in constraints['source_cell_ids']):
+        try:
+            if dt.datetime.fromisoformat(decision['recorded_at'].replace('Z', '+00:00')).tzinfo is None:
+                return False
+        except (TypeError, ValueError, AttributeError):
             return False
+        if kind in ('field_support', 'scope_or_document_gap') and decision.get('decision') not in ('supported_with_stated_scope', 'documentary_limitation_preserved'):
+            return False
+        cell = cells.get(decision.get('cell_id'))
         if kind in ('field_support', 'scope_or_document_gap', 'change_support'):
             row = rows.get(decision.get('row_id'))
             if not cell or not row or row['id'] != (cell['mapping_records'][-1]['new_row_id'] if cell['mapping_records'] else cell['logical_key']['context_judgment']):
@@ -982,19 +1107,34 @@ def validate_source_risk_review(data, basis, risk_universe, decisions):
                 return False
             if any(row.get(k) != decision.get(k) for k in ('party_id', 'version_id', 'source_role')):
                 return False
-            if not set(decision.get('basis_ids', [])) & set(cell['basis_ids']) & set(constraints['source_assertion_ids']):
+            if not set(decision.get('basis_ids', [])) & set(cell['basis_ids']):
                 return False
             for side in ('summary', 'quote'):
                 ids = decision.get(side + '_passage_ids', [])
                 if not ids or not set(ids) <= evidence.get(decision[side + '_finding_id'], set()) or any(pid not in passages or passages[pid]['version_id'] != row['version_id'] for pid in ids):
                     return False
-            return bool(decision.get('original_field_review') or
-                        (decision['reading_origin'] == 'new_bounded_original_html_reading' and
-                         decision.get('source_sha256') == versions[row['version_id']]['sha256'] and decision.get('limit')))
+            lineage = decision.get('original_field_review')
+            if lineage:
+                if not isinstance(lineage, dict) or not isinstance(lineage.get('finding_reviews'), list):
+                    return False
+                prior = lineage['finding_reviews']
+                if not {decision['summary_finding_id'], decision['quote_finding_id']} <= {r.get('subject_id') for r in prior}:
+                    return False
+                for record in prior:
+                    if finding_reviews.get(record.get('id')) != record or record.get('reviewer_kind') != 'agent' or record.get('result') != 'reviewed' or not record.get('reason'):
+                        return False
+                    try:
+                        if dt.datetime.fromisoformat(record['reviewed_at'].replace('Z', '+00:00')).tzinfo is None:
+                            return False
+                    except (KeyError, TypeError, ValueError, AttributeError):
+                        return False
+                return True
+            return bool(decision['reading_origin'] in ('new_bounded_original_html_reading', 'new_bounded_original_reading') and
+                        decision.get('source_sha256') == versions[row['version_id']]['sha256'] and decision.get('limit'))
         if kind == 'scope_or_document_gap':
             return (row.get('scope_id') == decision.get('scope_id') and row.get('missing_id') == decision.get('missing_id') and
                     all(row.get(k) == decision.get(k) for k in ('party_id', 'version_id', 'source_role')) and
-                    bool(set(decision.get('basis_ids', [])) & set(cell['basis_ids']) & set(constraints['source_assertion_ids'])))
+                    bool(set(decision.get('basis_ids', [])) & set(cell['basis_ids'])))
         if kind == 'change_support':
             change = changes.get(decision.get('change_id'))
             before, after = passages.get(decision.get('before_passage_id')), passages.get(decision.get('after_passage_id'))
@@ -1003,7 +1143,7 @@ def validate_source_risk_review(data, basis, risk_universe, decisions):
                         before['version_id'] != after['version_id'] and change['order_basis'] == decision.get('order_basis'))
         if kind == 'synthesis_support':
             sid = decision.get('synthesis_id')
-            if sid not in constraints['synthesis_ids'] or sid not in syntheses or reviews.get(sid) != decision.get('original_semantic_review'):
+            if sid not in syntheses or reviews.get(sid) != decision.get('original_semantic_review'):
                 return False
             try:
                 authored = json.loads(reviews[sid]['reason'])
@@ -1022,12 +1162,15 @@ def validate_source_risk_review(data, basis, risk_universe, decisions):
             return len(copies) >= 2 and all(versions.get(v.get('id')) == v for v in copies) and len({v['sha256'] for v in copies}) == 1
         return False
 
+    for decision in decisions:
+        if not witnessed(decision, {'allowed_decision_kinds': [decision.get('kind')]}):
+            raise ValueError('Kaynak anlamı kararı kaynak bağları veya kökeni geçersiz: ' + str(decision.get('id')))
     for risk in risk_universe:
         if not risk.get('required'):
             continue
         if not risk.get('selection_rationale') or not any(
-                ident in by_id and witnessed(by_id[ident], risk['witness_constraints'])
-                for ident in risk.get('witness_decision_ids', [])):
+                eligible(risk, decision) and witnessed(decision, risk['witness_constraints'])
+                for decision in decisions):
             raise ValueError('Kaynak anlamı riski için maddi inceleme eksik: ' + str(risk.get('id')))
     return True
 
@@ -1093,11 +1236,12 @@ def completion_adoption_payload(data, basis, risk, created_at):
     contract = data['comparison_contract'][0]
     if len(marker) != 1 or contract['stage'] != 'complete' or basis['taxonomy_version'] != contract['taxonomy_version']:
         raise ValueError('Kaynak kapanışı başlangıç tabanı geçersiz')
-    verify_initial_completion_basis(basis, risk['expected_risk_universe'])
+    registry = {'initial': risk['decisions'], 'additional': []}
+    verify_initial_completion_basis(basis, risk['expected_risk_universe'], reading_registry=registry)
     validate_source_basis_universe(data, basis)
-    validate_source_risk_review(data, basis, risk['expected_risk_universe'], risk['decisions'])
+    validate_source_risk_review(data, basis, risk['expected_risk_universe'], risk['decisions'], reading_registry=registry)
     basis_id = 'completion-basis-v2-' + hashlib.sha256(canonical_json(basis).encode()).hexdigest()[:24]
-    head, cells = completion_basis_records(basis, risk['expected_risk_universe'], basis_id, created_at)
+    head, cells = completion_basis_records(basis, risk['expected_risk_universe'], basis_id, created_at, reading_registry=registry)
     anchor = canonical_json(dict(release_id=data['release_id'], marker_sha256=hashlib.sha256(canonical_json(marker[0]).encode()).hexdigest()))
     revision = dict(version=2, epoch=1, parent_revision_id=None, taxonomy_version=contract['taxonomy_version'],
                     basis_id=basis_id, stage='complete', created_at=created_at, legacy_anchor=anchor,
@@ -1113,6 +1257,16 @@ def completion_adoption_payload(data, basis, risk, created_at):
 
 def validate_completion_basis_successor(old, new):
     """An appended basis may extend, but must retain, earlier obligations."""
+    old_registry, new_registry = old.get('_reading_registry'), new.get('_reading_registry')
+    if old_registry is not None:
+        registered_reading_fingerprints(old_registry)
+        registered_reading_fingerprints(new_registry)
+        if old_registry['initial'] != new_registry['initial'] or any(item not in new_registry['additional'] for item in old_registry['additional']):
+            raise ValueError('Önceki kaynak okuması kayıtları değiştirilemez')
+    old_corrections = old.get('_correction_registry')
+    if old_corrections is not None:
+        if not isinstance(new.get('_correction_registry'), list) or any(item not in new['_correction_registry'] for item in old_corrections):
+            raise ValueError('Önceki kaynak düzeltme kararları değiştirilemez')
     if new['taxonomy_version'] != old['taxonomy_version']:
         if new['taxonomy_version'] != old['taxonomy_version'] + 1:
             raise ValueError('Yeni kaynak sözlüğü öncekinin hemen ardılı olmalı')
@@ -1151,6 +1305,29 @@ def validate_completion_basis_successor(old, new):
 def verify_successor_completion_basis(old, new):
     """Reconcile newly authored obligations with their actual source packages."""
     validate_completion_basis_successor(old, new)
+    old_registry, new_registry = old.get('_reading_registry'), new.get('_reading_registry')
+    if old_registry is not None:
+        for registration in new_registry['additional']:
+            if registration in old_registry['additional']:
+                continue
+            origin = registration['origin']
+            document = next((d for d in new['source_documents'] if d['path'] == origin['path']), None)
+            if not document or document['sha256'] != origin['sha256']:
+                raise ValueError('Yeni kaynak okuması bağımsız kaynak kataloğunda yok')
+            file = safe_path(DATA, origin['path'][len('data/'):])
+            if sha(file) != origin['sha256'] or file.read_text(encoding='utf-8') != origin['content']:
+                raise ValueError('Yeni kaynak okumasının kayıt dosyası uyuşmuyor')
+    for registration in new.get('_correction_registry', []):
+        if registration in (old.get('_correction_registry') or []):
+            continue
+        validate_registered_decision(registration)
+        origin = registration['origin']
+        document = next((d for d in new['source_documents'] if d['path'] == origin['path']), None)
+        if not document or document['sha256'] != origin['sha256']:
+            raise ValueError('Yeni düzeltme bağımsız kaynak kataloğunda yok')
+        file = safe_path(DATA, origin['path'][len('data/'):])
+        if sha(file) != origin['sha256'] or file.read_text(encoding='utf-8') != origin['content']:
+            raise ValueError('Yeni düzeltmenin kaynak kaydı uyuşmuyor')
     documents, record_index = {}, {}
     for item in new['source_documents']:
         path = item['path']
@@ -1225,6 +1402,35 @@ def completion_superseded_cells(data, revision, revisions, basis, selection):
     by_epoch = {r['epoch']: r for r in revisions}
     cells = {c['id']: c for c in basis['cells']}
     rows = {r['id']: r for r in data['comparison_row']}
+    findings = {f['id']: f for f in data['finding']}
+    assertions = basis['source_assertions']
+    registry = basis.get('_correction_registry')
+    if not isinstance(registry, list):
+        raise ValueError('Kaynak düzeltme kararları kataloğu eksik')
+    corrections = {}
+    for item in registry:
+        decision = validate_registered_decision(item)
+        if not isinstance(decision, dict) or not decision.get('id') or decision['id'] in corrections:
+            raise ValueError('Kaynak düzeltme kararları yinelenmiş')
+        corrections[decision['id']] = decision
+
+    def context(cell):
+        original = cell['source_judgment_record']
+        result = dict(logical_key=cell['logical_key'], disposition=cell['disposition'],
+                      source_reason=original.get('selection_reason'), fields=[], scope=None, missing=None, attempt=None)
+        for bid in cell['basis_ids']:
+            assertion = assertions[bid]
+            if assertion['kind'] == 'supported_field':
+                summary, quote = findings[assertion['summary_finding_id']], findings[assertion['quote_finding_id']]
+                result['fields'].append(dict(field=assertion['field'], condition_key=assertion['condition_key'],
+                    summary_finding_id=summary['id'], summary_text=summary['text'],
+                    quote_finding_id=quote['id'], quote_text=quote['text'], passage_ids=assertion['passage_ids']))
+            elif assertion['kind'] == 'dated_source_scope':
+                result['scope'] = assertion['scope']
+            elif assertion['kind'] == 'documentary_gap':
+                result['missing'], result['attempt'] = assertion['missing'], assertion['attempt']
+        result['fields'].sort(key=canonical_json)
+        return result
     active = {r['id'] for r in selection['rows']}
     excluded = set()
     links = data.get('comparison_completion_supersession', [])
@@ -1246,9 +1452,55 @@ def completion_superseded_cells(data, revision, revisions, basis, selection):
         old_id = old['mapping_records'][-1]['new_row_id'] if old['mapping_records'] else old_key['context_judgment']
         new_id = new['mapping_records'][-1]['new_row_id'] if new['mapping_records'] else new_key['context_judgment']
         try:
-            refs = json.loads(link['source_basis_refs'])
+            reference = json.loads(link['source_basis_refs'])
         except (TypeError, ValueError) as exc:
             raise ValueError('Kaynak ardıllığı dayanağı geçersiz') from exc
+        if not isinstance(reference, dict) or set(reference) != {'correction_id', 'basis_ids'}:
+            raise ValueError('Kaynak ardıllığı bağımsız düzeltme kararı gerektirir')
+        refs = reference['basis_ids']
+        correction = corrections.get(reference['correction_id'])
+        if not correction or correction.get('result') != 'supersedes' or correction.get('reviewer_kind') != 'agent' or not correction.get('reason'):
+            raise ValueError('Kaynak ardıllığı bağımsız düzeltme kararı gerektirir')
+        try:
+            reviewed = dt.datetime.fromisoformat(correction['reviewed_at'].replace('Z', '+00:00'))
+            created = dt.datetime.fromisoformat(by_epoch[epoch]['created_at'].replace('Z', '+00:00'))
+            if reviewed.tzinfo is None or created.tzinfo is None or reviewed > created:
+                raise ValueError('Zaman dilimi gerekli')
+        except (KeyError, TypeError, ValueError, AttributeError) as exc:
+            raise ValueError('Kaynak düzeltme tarihi geçersiz') from exc
+        old_context, new_context = context(old), context(new)
+        if (correction.get('old_cell_id'), correction.get('new_cell_id'), correction.get('old_row_id'), correction.get('new_row_id')) != (old['id'], new['id'], old_id, new_id) or correction.get('old_context') != old_context or correction.get('new_context') != new_context:
+            raise ValueError('Kaynak düzeltmesi eski ve yeni kaynak bağlamlarıyla uyuşmuyor')
+        if old['disposition'] != new['disposition']:
+            # A positive statement and a bounded negative scope are distinct
+            # judgments. Reclassification needs a decision that explicitly
+            # re-examines that scope against passages from the same version.
+            scope_context = old_context if old['disposition'] == 'no_explicit_statement' else new_context
+            evidence_context = new_context if new['disposition'] == 'evidence' else old_context
+            scope = scope_context.get('scope')
+            reassessment = correction.get('scope_reassessment')
+            supported = {pid for field in evidence_context['fields'] for pid in field['passage_ids']}
+            if scope:
+                if (not isinstance(reassessment, dict) or reassessment.get('scope_id') != scope['id'] or
+                        reassessment.get('query_terms') != scope['query_terms'] or reassessment.get('sections') != scope['sections'] or
+                        reassessment.get('version_id') != scope['version_id'] or not reassessment.get('reason') or
+                        not isinstance(reassessment.get('passage_ids'), list) or not reassessment['passage_ids'] or
+                        not set(reassessment['passage_ids']) <= supported or
+                        any(next((p['version_id'] for p in data['passage'] if p['id'] == pid), None) != scope['version_id'] for pid in reassessment['passage_ids'])):
+                    raise ValueError('Farklı kaynak durumu için aynı kapsamın kaynaklı yeniden değerlendirilmesi gerekli')
+            else:
+                gap_context = old_context if old['disposition'] == 'document_missing' else new_context
+                missing, attempt = gap_context.get('missing'), gap_context.get('attempt')
+                reassessment = correction.get('gap_reassessment')
+                version = evidence_context['logical_key']['version_id']
+                if (not missing or not attempt or not isinstance(reassessment, dict) or
+                        reassessment.get('missing_id') != missing['id'] or reassessment.get('attempt_id') != attempt['id'] or
+                        reassessment.get('version_id') != version or not reassessment.get('reason') or
+                        not isinstance(reassessment.get('passage_ids'), list) or not reassessment['passage_ids'] or
+                        not set(reassessment['passage_ids']) <= supported or
+                        any(next((p['version_id'] for p in data['passage'] if p['id'] == pid), None) != version for pid in reassessment['passage_ids'])):
+                    raise ValueError('Belge açığı için kaynaklı yeniden değerlendirme gerekli')
+        validate_source_basis_cells(data, revision['taxonomy_version'], [old, new], assertions)
         replaced_later = any(later['old_row_id'] == new_id and epochs[later['revision_id']] > epoch for later in links[index + 1:])
         previous_rows = {r['id'] for r in json.loads(by_epoch[epoch - 1]['selection'])['rows']}
         if (old_id != link['old_row_id'] or new_id != link['new_row_id'] or old_id not in rows or new_id not in rows or
@@ -1259,7 +1511,7 @@ def completion_superseded_cells(data, revision, revisions, basis, selection):
     return excluded
 
 
-def verify_initial_completion_basis(basis, risk_universe):
+def verify_initial_completion_basis(basis, risk_universe, *, reading_registry=None):
     """Reconcile the independently authored initial ledger to source packages.
 
     These reviewed corpus identities establish which complete ledger was
@@ -1267,6 +1519,7 @@ def verify_initial_completion_basis(basis, risk_universe):
     Later audit uses the frozen records, not the files read here.
     """
     digest = completion_basis_digest(basis)
+    registered_reading_fingerprints(reading_registry if reading_registry is not None else basis.get('_reading_registry'))
     risk_digest = hashlib.sha256(canonical_json(risk_universe).encode()).hexdigest()
     if digest != '1255473709cc4815a288d1f214cd9c96d111cf56a715ae6fbc64cb615fd2c719' or risk_digest != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9':
         raise ValueError('İlk kaynak evreni bağımsız hazırlanmış bütüne uyuşmuyor')
@@ -1314,7 +1567,7 @@ def validate_completion_revisions(data):
     if not revisions or len(bases) != len(data.get('comparison_completion_basis', [])):
         raise ValueError('Kaynak kapanışı revizyonu eksik')
     validate_legacy_completion_projection(data)
-    previous = previous_source = previous_risk = None
+    previous = previous_source = previous_risk = previous_stamp = None
     spec = {'topics': ('comparison_topic', lambda x: (x['topic_id'], x['taxonomy_version'])),
             'rows': ('comparison_row', lambda x: x['id']),
             'fields': ('comparison_field', lambda x: x['id']),
@@ -1325,7 +1578,7 @@ def validate_completion_revisions(data):
             raise ValueError('Kaynak kapanışı revizyon zinciri geçersiz')
         try:
             stamp = dt.datetime.fromisoformat(revision['created_at'].replace('Z', '+00:00'))
-            if stamp.tzinfo is None:
+            if stamp.tzinfo is None or (previous_stamp is not None and stamp < previous_stamp):
                 raise ValueError('Zaman dilimi gerekli')
             if data.get('comparison_completion'):
                 anchor = json.loads(revision['legacy_anchor'])
@@ -1341,6 +1594,20 @@ def validate_completion_revisions(data):
             if head['version'] != 2 or head['taxonomy_version'] != revision['taxonomy_version']:
                 raise ValueError('Sözlük uyuşmuyor')
             source, risk = decode_completion_basis(head, [d for d in dispositions if d['basis_id'] == head['id']])
+            validate_basis_registry_origins(source)
+            registered = registered_reading_fingerprints(source['_reading_registry'])
+            for decision in review.get('decisions', []):
+                if canonical_json({k: v for k, v in decision.items() if k != 'id'}) not in registered:
+                    raise ValueError('Kaynak anlamı kararı kayıtlı özgün okumayla uyuşmuyor')
+                read_at = dt.datetime.fromisoformat(decision['recorded_at'].replace('Z', '+00:00'))
+                if read_at.tzinfo is None or read_at > stamp:
+                    raise ValueError('Kaynak okuması revizyon zamanını aşamaz')
+            if previous_source is None and source['_reading_registry']['additional']:
+                raise ValueError('İlk kaynak evreninde ek okuma kaydı bulunamaz')
+            if not isinstance(source.get('_correction_registry'), list):
+                raise ValueError('Kaynak düzeltme kararları kataloğu eksik')
+            if previous_source is None and source['_correction_registry']:
+                raise ValueError('İlk kaynak evreninde önceki düzeltme bulunamaz')
             if previous_source is None and (completion_basis_digest(source) != '1255473709cc4815a288d1f214cd9c96d111cf56a715ae6fbc64cb615fd2c719' or hashlib.sha256(canonical_json(risk).encode()).hexdigest() != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9'):
                 raise ValueError('İlk kaynak evreni bağımsız hazırlanmış bütüne uyuşmuyor')
             if previous_source is not None and revision['basis_id'] != previous['basis_id']:
@@ -1365,10 +1632,13 @@ def validate_completion_revisions(data):
             if revision['stage'] == 'complete':
                 validate_source_basis_universe(projection, source, excluded)
                 validate_source_risk_review(projection, source, risk, review['decisions'])
+            elif review.get('decisions'):
+                validate_source_risk_review(projection, source, [], review['decisions'])
         except (KeyError, TypeError, ValueError) as exc:
             raise ValueError('Kaynak kapanışı revizyon kanıtı geçersiz: ' + str(exc)) from exc
         previous = revision
         previous_source, previous_risk = source, risk
+        previous_stamp = stamp
     active = revisions[-1]
     contract = data['comparison_contract'][0]
     if (active['taxonomy_version'], active['stage']) != (contract['taxonomy_version'], contract['stage']):

@@ -1,0 +1,32 @@
+{
+  "purpose": "Test-only identity and source-context mapping of the genuine SR25 bounded reading; original reading time and meaning are reused, not a new reading or production correction.",
+  "decisions": [
+    {
+      "id":"test-sr25-mapped-reading",
+      "group_id":"SR25",
+      "kind":"field_support",
+      "cell_id":"cell-f6a01c23fec0aa02fc0cc084",
+      "basis_ids":["basis-d70724dc28885821874d3ccc"],
+      "row_id":"test-sr25-replacement-row",
+      "field_id":"test-sr25-replacement-field",
+      "party_id":"tip",
+      "version_id":"0203-tip-program-v1",
+      "source_role":"program",
+      "field":"principle",
+      "condition_key":null,
+      "summary_finding_id":"0304-tip-program-kapitalizm-summary",
+      "quote_finding_id":"0304-tip-program-kapitalizm-quote",
+      "summary_passage_ids":["0304-tip-program-kapitalizm-p1","0304-tip-program-kapitalizm-p2","0304-tip-program-kapitalizm-q"],
+      "quote_passage_ids":["0304-tip-program-kapitalizm-q"],
+      "decision":"supported_with_stated_scope",
+      "reviewer_kind":"agent",
+      "recorded_at":"2026-11-15T16:52:28Z",
+      "reading_origin":"new_bounded_original_html_reading",
+      "source_reading":"Original HTML heading KAPİTALİZM BÜTÜNSEL BİR BUNALIM İÇİNDE; preceding paragraph and first three complete following paragraphs read, rather than quote-only verification.",
+      "judgment":"İki tam paragraf kapitalizmin bunalımını ekonomik, siyasal, ideolojik, toplumsal ve ekolojik boyutlarıyla anlatır ve kendiliğinden yıkılış sonucunu açıkça reddeder. Özet her iki unsuru korur. Bu programatik çözümleme ilke alanında kaynaklı aktarılabilir; bu bağlam tek başına ölçülebilir bir hedef veya idari uygulama aracı belirtmez. Sosyalist iktidar mücadelesi ifadesinden yeni tutar, kurum veya uygulama takvimi üretilmez.",
+      "original_path":"data/objects/6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0/original.html.bin",
+      "source_sha256":"6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0",
+      "limit":"One source-context principle decision, not a new whole-programme review or a claim that all targets/instruments are absent."
+    }
+  ]
+}

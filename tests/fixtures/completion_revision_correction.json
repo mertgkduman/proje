@@ -1,0 +1,30 @@
+{
+  "purpose": "Independent test-only correction decision comparing two synthetic fixture records grounded in the already documented SR25 reading; no production correction is asserted.",
+  "decisions": [
+    {
+      "id": "test-sr25-fixture-supersession-decision",
+      "old_cell_id": "cell-3ea0246f2c23b43a360b7268",
+      "new_cell_id": "cell-535df0e54f56055b96ebdff5",
+      "old_row_id": "test-tip-kapitalizm-context-row",
+      "new_row_id": "test-tip-kapitalizm-replacement-row",
+      "result": "supersedes",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-15T18:43:54Z",
+      "reason": "Test-only comparison of both fixture contexts against the same SR25 source passages: both express that the program rejects automatic collapse. The replacement preserves that bounded proposition, source version and passage; it adds no target, institution, legal currency or claim about practice. It replaces only the synthetic fixture row, not any production finding or separate absence scope.",
+      "old_context": {
+        "logical_key": {"topic_id":"kapitalizm-bunalim","party_id":"tip","source_role":"program","version_id":"0203-tip-program-v1","level":"ulusal","organ":"Kapitalist bunalımın kendiliğinden yıkılışla ilişkisi","context_judgment":"test-tip-kapitalizm-context-row"},
+        "disposition":"evidence",
+        "source_reason":"Test fixture: SR25 bağlamında program bunalımın kendiliğinden yıkılış anlamına gelmediğini açıkça belirtir.",
+        "fields":[{"field":"principle","condition_key":null,"summary_finding_id":"test-tip-kapitalizm-context-summary","summary_text":"Program, kapitalist sistemin bunalımlarının kendiliğinden yıkılış anlamına gelmediğini belirtir.","quote_finding_id":"test-tip-kapitalizm-context-quote","quote_text":"kapitalist sistemin bunalımları, onun kendiliğinden yıkılacağı anlamına gelmemektedir.","passage_ids":["0304-tip-program-kapitalizm-p1","0304-tip-program-kapitalizm-q"]}],
+        "scope":null,"missing":null,"attempt":null
+      },
+      "new_context": {
+        "logical_key": {"topic_id":"kapitalizm-bunalim","party_id":"tip","source_role":"program","version_id":"0203-tip-program-v1","level":"ulusal","organ":"Kapitalist bunalımın kendiliğinden yıkılışla ilişkisi","context_judgment":"test-tip-kapitalizm-replacement-row"},
+        "disposition":"evidence",
+        "source_reason":"Test fixture: SR25'in okuduğu program paragrafındaki kendiliğinden yıkılış sınırı yeniden ifade edilir.",
+        "fields":[{"field":"principle","condition_key":null,"summary_finding_id":"test-tip-kapitalizm-replacement-summary","summary_text":"Program, kapitalist sistemin krizlerinden kendiliğinden yıkılış sonucu çıkarmaz.","quote_finding_id":"test-tip-kapitalizm-replacement-quote","quote_text":"kapitalist sistemin bunalımları, onun kendiliğinden yıkılacağı anlamına gelmemektedir.","passage_ids":["0304-tip-program-kapitalizm-p1","0304-tip-program-kapitalizm-q"]}],
+        "scope":null,"missing":null,"attempt":null
+      }
+    }
+  ]
+}

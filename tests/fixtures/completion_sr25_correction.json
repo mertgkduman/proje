@@ -1,0 +1,30 @@
+{
+  "purpose": "Separately authored test-only comparison of the original SR25 source context and a synthetic replacement; no production correction is asserted.",
+  "decisions": [
+    {
+      "id":"test-sr25-sampled-context-replacement",
+      "old_cell_id":"cell-f791bd14f9b5dbaef66975e7",
+      "new_cell_id":"cell-f6a01c23fec0aa02fc0cc084",
+      "old_row_id":"04-03-v3-0304-tip-program-kapitalizm-row",
+      "new_row_id":"test-sr25-replacement-row",
+      "result":"supersedes",
+      "reviewer_kind":"agent",
+      "reviewed_at":"2026-11-15T18:50:15Z",
+      "reason":"Test-only source-context comparison: the synthetic replacement uses the identical TİP program version, full original summary and quote findings, and all three SR25 passages. It retains both the multidimensional crisis analysis and the explicit rejection of automatic collapse. The original dated reading is reused rather than performed again; no target, administrative instrument, legal currency or actual practice is inferred. Only the test-selected row identity is superseded.",
+      "old_context": {
+        "logical_key":{"topic_id":"kapitalizm-bunalim","party_id":"tip","source_role":"program","version_id":"0203-tip-program-v1","level":"ulusal","organ":"Kapitalist sistem çözümlemesi","context_judgment":"0304-tip-program-kapitalizm-row"},
+        "disposition":"evidence",
+        "source_reason":"Programın ilgili bölümü ve önerinin koşulları kaynağında incelendi.",
+        "fields":[{"field":"principle","condition_key":null,"summary_finding_id":"0304-tip-program-kapitalizm-summary","summary_text":"Program kapitalizmi ekonomik, siyasal, ideolojik, toplumsal ve ekolojik boyutları olan bir bunalım içinde değerlendirir; bunalımın kendiliğinden yıkılış anlamına gelmediğini savunur.","quote_finding_id":"0304-tip-program-kapitalizm-quote","quote_text":"kapitalist sistemin bunalımları, onun kendiliğinden yıkılacağı anlamına gelmemektedir.","passage_ids":["0304-tip-program-kapitalizm-p1","0304-tip-program-kapitalizm-p2","0304-tip-program-kapitalizm-q"]}],
+        "scope":null,"missing":null,"attempt":null
+      },
+      "new_context": {
+        "logical_key":{"topic_id":"kapitalizm-bunalim","party_id":"tip","source_role":"program","version_id":"0203-tip-program-v1","level":"ulusal","organ":"Kapitalist sistem çözümlemesi","context_judgment":"test-sr25-replacement-row"},
+        "disposition":"evidence",
+        "source_reason":"Test fixture: SR25'in gerçek sınırlı kaynak okuması ve önceki bulgu çifti değiştirilmeden yeniden bağlanır.",
+        "fields":[{"field":"principle","condition_key":null,"summary_finding_id":"0304-tip-program-kapitalizm-summary","summary_text":"Program kapitalizmi ekonomik, siyasal, ideolojik, toplumsal ve ekolojik boyutları olan bir bunalım içinde değerlendirir; bunalımın kendiliğinden yıkılış anlamına gelmediğini savunur.","quote_finding_id":"0304-tip-program-kapitalizm-quote","quote_text":"kapitalist sistemin bunalımları, onun kendiliğinden yıkılacağı anlamına gelmemektedir.","passage_ids":["0304-tip-program-kapitalizm-p1","0304-tip-program-kapitalizm-p2","0304-tip-program-kapitalizm-q"]}],
+        "scope":null,"missing":null,"attempt":null
+      }
+    }
+  ]
+}

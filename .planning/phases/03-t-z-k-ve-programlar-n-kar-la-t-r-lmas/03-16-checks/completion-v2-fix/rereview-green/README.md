@@ -1,0 +1,9 @@
+# Completion v2 re-review focused checks
+
+The included SHA-256 list was recorded before these tests, and every entry was checked again successfully afterward. The tested adoption package is the actual regenerated `data/comparisons/03-completion-review-v2.json`, not a helper-only substitute. All tests ran in the main checkout; their temporary importer workspaces used isolated DATA and did not update the real current release.
+
+- `proje-v2-rereview-green-guards.log`: seven tests passed in 43.072 seconds. They cover the actual adoption package through `validate_completion` and `validate_comparisons`, the exact unrelated TİP supersession, the 95 forged reading decisions, a genuine reading with a new ID, independently registered and typed principle readings (including invalid date, result and stripped-context negatives), all non-field decision kinds, and actual `load_comparison` rejection/rollback for forged readings and the unrelated correction.
+- `proje-v2-rereview-green-sr25.log`: one test passed in 34.420 seconds. A separately authored test-only correction binds both exact source contexts and replaces the actually sampled SR25 row; its original reading and date are reused under a registered new identity. Both revision and full comparison validators pass. This is not a production content correction.
+- `proje-v2-rereview-green-compat.log`: three tests passed in 26.746 seconds, covering in-memory same-taxonomy partial→complete with registered test-only supersession, byte reproduction by frozen renderer 22, and the existing contract-3 lineage negative cases.
+
+The preceding RED results are preserved separately in `../rereview-red/unittest.log`. These checks are not a latest-code isolated publication/audit, a new-taxonomy end-to-end test, an independent re-review, or human acceptance.

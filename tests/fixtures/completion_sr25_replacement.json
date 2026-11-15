@@ -1,0 +1,8 @@
+{
+  "purpose": "Test-only replacement of the SR25 sampled row, preserving its already reviewed TİP source, findings, passages and original bounded reading; no production correction is asserted.",
+  "records": [
+    {"kind":"comparison_row","values":{"id":"test-sr25-replacement-row","topic_id":"kapitalizm-bunalim","taxonomy_version":4,"party_id":"tip","level":"ulusal","organ":"Kapitalist sistem çözümlemesi","version_id":"0203-tip-program-v1","alternative_group":null,"source_role":"program","state":"evidence","scope_id":null,"missing_id":null,"selection_reason":"Test fixture: SR25'in gerçek sınırlı kaynak okuması ve önceki bulgu çifti değiştirilmeden yeniden bağlanır."}},
+    {"kind":"comparison_field","values":{"id":"test-sr25-replacement-field","row_id":"test-sr25-replacement-row","field":"principle","summary_finding_id":"0304-tip-program-kapitalizm-summary","quote_finding_id":"0304-tip-program-kapitalizm-quote","condition_key":null}},
+    {"kind":"comparison_semantic_review","values":{"subject_kind":"comparison_field","subject_id":"test-sr25-replacement-field","reviewer_kind":"agent","reviewed_at":"2026-11-15T18:43:54Z","result":"reviewed","reason":"Test fixture: SR25'in 2026-11-15T16:52:28Z tarihli sınırlı kaynak okuması ve aynı özet/alıntı çifti yeniden kullanılır; yeni tam-program okuması iddia edilmez."}}
+  ]
+}
