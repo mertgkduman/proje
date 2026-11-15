@@ -605,6 +605,7 @@ def render_report(data):
     pieces.append('''</main></div><script>
 const tabs = [...document.querySelectorAll('[role=tab]')];
 let previousCitation = null;
+let previousCitationHash = null;
 
 function selectTab(tab, focus = false) {
   for (const t of tabs) {
@@ -644,6 +645,7 @@ function restoreCitation() {
   reveal(previousCitation);
   previousCitation.focus();
   previousCitation = null;
+  previousCitationHash = null;
 }
 function hashTarget(hash) {
   if (!hash || hash[0] !== '#') return null;
@@ -653,12 +655,13 @@ function hashTarget(hash) {
 function openHash() {
   const target = hashTarget(location.hash);
   if (target === undefined) return;
-  if (!target) { if (!location.hash) restoreCitation(); return; }
+  if (!target) { if (location.hash === previousCitationHash) restoreCitation(); return; }
   if (target) {
     reveal(target);
     if (!target.id.startsWith('source-') && previousCitation) {
       if (target.contains(previousCitation)) { restoreCitation(); return; }
       previousCitation = null;
+      previousCitationHash = null;
     }
     if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
     target.focus({preventScroll:true});
@@ -669,7 +672,7 @@ for (const link of document.querySelectorAll('a[href^="#"]')) {
   link.addEventListener('click', () => {
     const target = hashTarget(link.hash);
     if (!target) return;
-    if (link.classList.contains('citation')) previousCitation = link;
+    if (link.classList.contains('citation')) { previousCitation = link; previousCitationHash = location.hash; }
     reveal(target);
   });
 }
