@@ -41,6 +41,7 @@ from rapor_v18 import render_report as render_v18_report
 from rapor_v19 import render_report as render_v19_report
 from rapor_v20 import render_report as render_v20_report
 from rapor_v21 import render_report as render_v21_report
+from rapor_v22 import render_report as render_v22_report
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
                       check_evidence_attribution, validate_policy_descent)
 from arsiv_gorunum import VIEW_TABLES, validate_view, decode_html, CSP as ARCHIVE_CSP
@@ -793,7 +794,7 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
     return True
 
 
-def validate_source_basis_universe(data, basis):
+def validate_source_basis_universe(data, basis, superseded_cells=()):
     """Validate a source-authored obligation universe against a candidate.
 
     Establishing the provenance and immutable adoption of the supplied basis
@@ -829,9 +830,13 @@ def validate_source_basis_universe(data, basis):
     actual_topics = {t['topic_id']: t for t in data['comparison_topic'] if t['taxonomy_version'] == version}
     if topics != actual_topics:
         raise ValueError('Kaynak evrenindeki konu tanımları değişmiş')
-    validate_source_basis_cells(data, version, list(cells.values()), assertions)
+    active_cells = [cell for cid, cell in cells.items() if cid not in superseded_cells]
+    for pair, ids in found.items():
+        if not any(cid not in superseded_cells for cid in ids):
+            raise ValueError('Kaynak evreninde etkin parti-konu yükümlülüğü eksik')
+    validate_source_basis_cells(data, version, active_cells, assertions)
     required_rows = {c['mapping_records'][-1]['new_row_id'] if c['mapping_records'] else c['logical_key']['context_judgment']
-                     for c in cells.values()}
+                     for c in active_cells}
     actual_rows = {r['id'] for r in data['comparison_row'] if r['taxonomy_version'] == version}
     if required_rows != actual_rows:
         raise ValueError('Kaynak evreni seçili satırları bağlamıyor')
@@ -1045,6 +1050,45 @@ def validate_completion_basis_successor(old, new):
     return True
 
 
+def completion_superseded_cells(data, revision, revisions, basis, selection):
+    """Verify explicit source-backed replacements while retaining prior records."""
+    epochs = {r['id']: r['epoch'] for r in revisions}
+    by_epoch = {r['epoch']: r for r in revisions}
+    cells = {c['id']: c for c in basis['cells']}
+    rows = {r['id']: r for r in data['comparison_row']}
+    active = {r['id'] for r in selection['rows']}
+    excluded = set()
+    links = data.get('comparison_completion_supersession', [])
+    if any(link['revision_id'] not in epochs for link in links):
+        raise ValueError('Kaynak ardıllığının revizyonu yok')
+    links = sorted((link for link in links if epochs[link['revision_id']] <= revision['epoch']),
+                   key=lambda link: epochs[link['revision_id']])
+    for index, link in enumerate(links):
+        epoch = epochs.get(link['revision_id'])
+        if epoch <= 1:
+            raise ValueError('Kaynak ardıllığı önceki bir revizyon gerektirir')
+        old, new = cells.get(link['old_cell_id']), cells.get(link['new_cell_id'])
+        if not old or not new or old['id'] in excluded or old['id'] == new['id'] or not link.get('reason'):
+            raise ValueError('Kaynak ardıllığının hücreleri geçersiz')
+        old_key, new_key = old['logical_key'], new['logical_key']
+        if any(old_key[k] != new_key[k] for k in ('topic_id', 'party_id', 'source_role')):
+            raise ValueError('Kaynak ardıllığı konu, parti veya belge türünü değiştiremez')
+        old_id = old['mapping_records'][-1]['new_row_id'] if old['mapping_records'] else old_key['context_judgment']
+        new_id = new['mapping_records'][-1]['new_row_id'] if new['mapping_records'] else new_key['context_judgment']
+        try:
+            refs = json.loads(link['source_basis_refs'])
+        except (TypeError, ValueError) as exc:
+            raise ValueError('Kaynak ardıllığı dayanağı geçersiz') from exc
+        replaced_later = any(later['old_row_id'] == new_id and epochs[later['revision_id']] > epoch for later in links[index + 1:])
+        previous_rows = {r['id'] for r in json.loads(by_epoch[epoch - 1]['selection'])['rows']}
+        if (old_id != link['old_row_id'] or new_id != link['new_row_id'] or old_id not in rows or new_id not in rows or
+                old_id not in previous_rows or old_id in active or (new_id not in active and not replaced_later) or not isinstance(refs, list) or not refs or
+                not set(refs) <= set(new['basis_ids'])):
+            raise ValueError('Kaynak ardıllığı etkin seçim ve dayanakla uyuşmuyor')
+        excluded.add(old['id'])
+    return excluded
+
+
 def verify_initial_completion_basis(basis, risk_universe):
     """Reconcile the independently authored initial ledger to source packages.
 
@@ -1094,8 +1138,6 @@ def verify_initial_completion_basis(basis, risk_universe):
 
 def validate_completion_revisions(data):
     """Check immutable revision selections; the last epoch is the active one."""
-    if data.get('comparison_completion_supersession'):
-        raise ValueError('Kaynak kapanışı seçim ardıllığı henüz desteklenmiyor')
     revisions = sorted(data.get('comparison_completion_revision', []), key=lambda r: r['epoch'])
     bases = {b['id']: b for b in data.get('comparison_completion_basis', [])}
     dispositions = data.get('comparison_coverage_disposition', [])
@@ -1143,8 +1185,9 @@ def validate_completion_revisions(data):
                 if len({identity(r) for r in selected}) != len(selected) or any(actual.get(identity(r)) != r for r in selected):
                     raise ValueError('Seçili tarihsel kayıt değişmiş')
                 projection[table] = selected
+            excluded = completion_superseded_cells(data, revision, revisions, source, selection)
             if revision['stage'] == 'complete':
-                validate_source_basis_universe(projection, source)
+                validate_source_basis_universe(projection, source, excluded)
                 validate_source_risk_review(projection, source, risk, review['decisions'])
         except (KeyError, TypeError, ValueError) as exc:
             raise ValueError('Kaynak kapanışı revizyon kanıtı geçersiz: ' + str(exc)) from exc
@@ -1156,6 +1199,9 @@ def validate_completion_revisions(data):
         raise ValueError('Kaynak kapanışı aktif aşamayla uyuşmuyor')
     selected = json.loads(active['selection'])
     current = completion_selection(data, active['taxonomy_version'])
+    excluded_rows = {s['old_row_id'] for s in data.get('comparison_completion_supersession', [])}
+    current['rows'] = [r for r in current['rows'] if r['id'] not in excluded_rows]
+    current['fields'] = [f for f in current['fields'] if f['row_id'] not in excluded_rows]
     for name, (_, identity) in spec.items():
         if {identity(x): x for x in selected[name]} != {identity(x): x for x in current[name]}:
             raise ValueError('Kaynak kapanışı aktif seçimi uyuşmuyor')
@@ -1169,8 +1215,6 @@ def validate_completion(data):
     contract. The review describes agent work, never a human acceptance.
     """
     if data.get('comparison_completion_revision'):
-        if data.get('comparison_completion_supersession'):
-            raise ValueError('Kaynak kapanışı seçim ardıllığı henüz desteklenmiyor')
         return validate_completion_revisions(data)
     if any(data.get(name) for name in COMPLETION_V2_TABLES):
         raise ValueError('Kaynak kapanışı revizyon ailesi eksik')
@@ -1290,6 +1334,10 @@ def validate_comparisons(data):
         raise ValueError('Karşılaştırma sözleşmesi geçersiz')
     contract = contracts[0]
     validate_completion(data)
+    active_row_ids = None
+    if data.get('comparison_completion_revision'):
+        active_revision = max(data['comparison_completion_revision'], key=lambda r: r['epoch'])
+        active_row_ids = {row['id'] for row in json.loads(active_revision['selection'])['rows']}
     if contract['version'] >= 2 and contract['taxonomy_version'] < 3:
         raise ValueError('Sentez sözleşmesi seçili sözlük sürümü 3 gerektirir')
     topics = {(t['topic_id'], t['taxonomy_version']): t for t in data['comparison_topic']}
@@ -1367,7 +1415,8 @@ def validate_comparisons(data):
             if parent in visited or (parent,topic['taxonomy_version']) not in topics: raise ValueError('Konu üst hiyerarşisi geçersiz')
             visited.add(parent)
             parent = topics[parent,topic['taxonomy_version']]['parent_topic_id']
-        topic_rows = [r for r in rows.values() if (r['topic_id'],r['taxonomy_version']) == key]
+        topic_rows = [r for r in rows.values() if (r['topic_id'],r['taxonomy_version']) == key and
+                      (active_row_ids is None or r['taxonomy_version'] != contract['taxonomy_version'] or r['id'] in active_row_ids)]
         active = key[1] == contract['taxonomy_version']
         if active and contract['stage'] in ('tracer','complete') and {r['party_id'] for r in topic_rows} != parties: raise ValueError('Konu kapsamındaki tüm partiler gerekli')
         if active and contract['stage'] == 'tracer' and sum(r['state'] == 'evidence' for r in topic_rows) < 2: raise ValueError('Tracer iki kaynaklı yanıt gerektirir')
@@ -1375,8 +1424,10 @@ def validate_comparisons(data):
         if active and contract['stage'] in ('tracer','complete') and not any((s['topic_id'],s['taxonomy_version']) == key for s in data['comparison_synthesis']): raise ValueError('Konu özeti gerekli')
     for row in rows.values():
         key = (row['topic_id'],row['taxonomy_version'],row['party_id'],row['level'],row['organ'],row['version_id'],row['alternative_group'],row['source_role'])
-        if key in seen: raise ValueError('Yinelenen karşılaştırma kaydı')
-        seen.add(key)
+        selected = active_row_ids is None or row['taxonomy_version'] != contract['taxonomy_version'] or row['id'] in active_row_ids
+        if selected:
+            if key in seen: raise ValueError('Yinelenen karşılaştırma kaydı')
+            seen.add(key)
         if (row['topic_id'],row['taxonomy_version']) not in topics or row['party_id'] not in parties or not row['level'] or not row['organ'] or not row['selection_reason']:
             raise ValueError('Karşılaştırma kaydı eksik')
         if row['source_role'] not in ('program','charter','supplement','historical') or row['state'] not in ('evidence','no_explicit_statement','document_missing','not_researched'):
@@ -1424,7 +1475,7 @@ def validate_comparisons(data):
                 raise ValueError('Özet ve alıntı ortak pasaj gerektirir')
     groups = {}
     for row in rows.values():
-        if row['alternative_group']:
+        if row['alternative_group'] and (active_row_ids is None or row['taxonomy_version'] != contract['taxonomy_version'] or row['id'] in active_row_ids):
             groups.setdefault((row['taxonomy_version'], row['alternative_group']), []).append(row)
     for group in groups.values():
         keys = {(r['topic_id'], r['taxonomy_version'], r['party_id'], r['level'], r['organ'], r['source_role']) for r in group}
@@ -2185,6 +2236,14 @@ def comparison_render_data(data):
     visible = dict(data)
     for name in ('comparison_topic', 'comparison_row', 'comparison_synthesis'):
         visible[name] = [item for item in data.get(name, []) if item['taxonomy_version'] == version]
+    if data.get('comparison_completion_revision'):
+        revision = max(data['comparison_completion_revision'], key=lambda item: item['epoch'])
+        selection = json.loads(revision['selection'])
+        for name, label, key in (('comparison_topic', 'topics', 'topic_id'),
+                                 ('comparison_row', 'rows', 'id'),
+                                 ('comparison_synthesis', 'syntheses', 'id')):
+            ids = {item[key] for item in selection[label]}
+            visible[name] = [item for item in visible[name] if item[key] in ids]
     active_rows = {r['id'] for r in visible['comparison_row']}
     active_fields = [f for f in data.get('comparison_field', []) if f['row_id'] in active_rows]
     active_findings = {f[k] for f in active_fields for k in ('summary_finding_id', 'quote_finding_id')}
@@ -2256,7 +2315,7 @@ def audit_release(release='current', _seen=None):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
         expected = (exported['schema_version'],2) if exported['schema_version'] in (5,6) else (4,1)
-        valid_renderers=(16,17,18,19,20,21,RENDERER_VERSION) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10))
+        valid_renderers=(16,17,18,19,20,21,22,RENDERER_VERSION) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10))
         if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6) and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_id = manifest.get('base_release')
@@ -2284,7 +2343,7 @@ def audit_release(release='current', _seen=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, RENDERER_VERSION: render_report,
+        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, 22: render_v22_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_bytes() != render_comparison_snapshot(exported, renderer).encode('utf-8'):
@@ -2462,15 +2521,16 @@ def validate_phase_three_workspace(folder, stage):
     stage = actual_stage
     validate_comparisons(data)
     validate_changed_topic_reviews(data)
+    visible = comparison_render_data(data)
     order = ('yeni-parti','tip','dem','iyi','yeni-yol','dbp','emep','saadet','demokrat')
     for topic in data['comparison_topic']:
-        rows = [r for r in data['comparison_row'] if r['topic_id'] == topic['topic_id'] and r['taxonomy_version'] == topic['taxonomy_version']]
+        rows = [r for r in visible['comparison_row'] if r['topic_id'] == topic['topic_id'] and r['taxonomy_version'] == topic['taxonomy_version']]
         active = topic['taxonomy_version'] == data['comparison_contract'][0]['taxonomy_version']
         if active and stage in ('tracer','complete') and {r['party_id'] for r in rows} != set(order): raise ValueError('Konu dokuz partiyi kapsamalı')
         if stage == 'complete' and topic['taxonomy_version'] == data['comparison_contract'][0]['taxonomy_version'] and any(r['state'] == 'not_researched' for r in rows): raise ValueError('Tam aşamada incelenmemiş kayıt var')
         if active and stage == 'tracer' and sum(r['state'] == 'evidence' for r in rows) < 2: raise ValueError('Tracer iki kaynaklı yanıt gerektirir')
     report = (folder / 'index.html').read_text(encoding='utf-8')
-    for row in data['comparison_row']:
+    for row in visible['comparison_row']:
         if data['comparison_contract'][0]['taxonomy_version'] >= 3 and row['taxonomy_version'] != data['comparison_contract'][0]['taxonomy_version']:
             continue
         rid = html.escape(row['id'], quote=True)

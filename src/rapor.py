@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 22
+RENDERER_VERSION = 23
 STYLE = Path(__file__).with_name('rapor_v22.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),

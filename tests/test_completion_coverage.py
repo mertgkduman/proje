@@ -11,6 +11,24 @@ import test_comparisons
 
 
 class SourceBasisCellTest(unittest.TestCase):
+    def test_supersession_requires_previous_row_and_new_source_basis(self):
+        old_key = dict(topic_id='aday-tanitimi', party_id='tip', source_role='charter', context_judgment='old-row')
+        new_key = dict(old_key, context_judgment='new-row')
+        basis = dict(cells=[dict(id='old-cell', logical_key=old_key, mapping_records=[], basis_ids=['old-basis']),
+                            dict(id='new-cell', logical_key=new_key, mapping_records=[], basis_ids=['new-basis'])])
+        first = dict(id='revision-1', epoch=1, selection=arsiv.canonical_json({'rows': [dict(id='old-row')]}))
+        second = dict(id='revision-2', epoch=2)
+        link = dict(revision_id='revision-2', old_cell_id='old-cell', new_cell_id='new-cell',
+                    old_row_id='old-row', new_row_id='new-row', source_basis_refs='["new-basis"]',
+                    reason='test-only source-backed replacement')
+        data = dict(comparison_row=[dict(id='old-row'), dict(id='new-row')], comparison_completion_supersession=[link])
+        selection = {'rows': [dict(id='new-row')]}
+        self.assertEqual(arsiv.completion_superseded_cells(data, second, [first, second], basis, selection), {'old-cell'})
+        for bad in (dict(link, source_basis_refs='["wrong"]'), dict(link, reason=''), dict(link, old_row_id='missing')):
+            with self.assertRaisesRegex(ValueError, 'Kaynak ardıllığı'):
+                arsiv.completion_superseded_cells(dict(data, comparison_completion_supersession=[bad]), second,
+                                                   [first, second], basis, selection)
+
     def test_source_scope_requires_its_mapped_topic_and_organ(self):
         scope = dict(id='0304-tip-charter-scope-aday-tanitim-html-scope', party_id='tip',
                      version_id='0203-tip-charter-v1', sections='HTML tüzük Bölüm 1–7, Madde 1.1–7.2',
@@ -208,6 +226,24 @@ class CompletionCoverageTest(unittest.TestCase):
         changed = dict(data, comparison_coverage_disposition=cells)
         self.assertNotEqual(manifest['comparison_completion_basis_sha256'],
                             arsiv.completion_manifest_fields(changed)['comparison_completion_basis_sha256'])
+
+    def test_selected_reader_projection_retains_old_snapshot_records(self):
+        data = self.modern()
+        revision = dict(data['comparison_completion_revision'][0])
+        selection = json.loads(revision['selection'])
+        retired = selection['rows'][0]['id']
+        selection['rows'] = [r for r in selection['rows'] if r['id'] != retired]
+        selection['fields'] = [f for f in selection['fields'] if f['row_id'] != retired]
+        revision['selection'] = arsiv.canonical_json(selection)
+        data['comparison_completion_revision'] = [revision]
+        visible = arsiv.comparison_render_data(data)
+        self.assertIn(retired, {r['id'] for r in data['comparison_row']})
+        self.assertNotIn(retired, {r['id'] for r in visible['comparison_row']})
+
+    def test_frozen_renderer_22_reproduces_historical_release(self):
+        folder = arsiv.DATA / 'releases' / self.reviewed['release_id']
+        self.assertEqual(arsiv.render_comparison_snapshot(self.reviewed, arsiv.render_v22_report).encode(),
+                         (folder / 'index.html').read_bytes())
 
     def test_revision_validation_preserves_history_and_binds_active_stage(self):
         root = Path(__file__).resolve().parents[1] / 'data/comparisons'
