@@ -1,0 +1,10 @@
+{
+  "stopped_utc": "2026-11-15T12:10:54.716827+00:00",
+  "pid": 1108229,
+  "ppid": 1108208,
+  "pgid": 1108229,
+  "run_token": "2833321b729649f185bd190cfde600c0",
+  "reason": "Independent source review WR-01 found unbounded Browser.close await bypassing newly bounded exit/profile cleanup. Stop only owned read-only regression before narrowly fixing observer lifecycle; no pass claimed.",
+  "signal": "SIGTERM",
+  "writer_lock": false
+}
