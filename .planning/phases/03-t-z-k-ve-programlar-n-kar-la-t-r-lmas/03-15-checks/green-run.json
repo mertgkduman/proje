@@ -1,0 +1,14 @@
+{
+  "pid": 855910,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "inputs": {
+    "src/rapor.py": "13c903c8282208df2ee333bdbd154c9c67ffa944a8b7aa83c0c1098f9a037b71",
+    "src/rapor_v19.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "src/arsiv.py": "3fe550e65efa3cce888196bdfba13874a2a18d60d9655b7475721a816639129c",
+    "tests/test_comparison_navigation.py": "ac7b9ed9412dd2da3679a3fb7a918178505a8babe7873e075fcb951ab26d616f",
+    "data/releases/b513965558094e338a941be90a1960a4/records.json": "fb788f71c654590b4c8ab4252afcba73ff005e041883f800f74eb264c3ce4814"
+  },
+  "command": "python3 -c 'import sys,json;sys.path.insert(0,\"src\");from arsiv import render_comparison_snapshot;from rapor import render_report;d=json.load(open(\"data/releases/b513965558094e338a941be90a1960a4/records.json\"));open(\"/tmp/gsd-0315-preview.html\",\"w\").write(render_comparison_snapshot(d,render_report))' && NAV_REPORT=/tmp/gsd-0315-preview.html python3 tests/run.py --pattern test_comparison_navigation.py; r=$?; printf \"%s\\n\" \"$r\" > /tmp/gsd-0315-green2.exit; exit \"$r\"",
+  "log": "/tmp/gsd-0315-green2.log",
+  "exit": "/tmp/gsd-0315-green2.exit"
+}

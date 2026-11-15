@@ -1,0 +1,17 @@
+{
+  "pid": 853889,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "inputs": {
+    "src/rapor.py": "a098f946d53ccc7fe96f91da46e91ba1edb84b6853f151247bc79d07bf9c536e",
+    "src/rapor_v19.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "src/arsiv.py": "3fe550e65efa3cce888196bdfba13874a2a18d60d9655b7475721a816639129c",
+    "data/releases/b513965558094e338a941be90a1960a4/records.json": "fb788f71c654590b4c8ab4252afcba73ff005e041883f800f74eb264c3ce4814"
+  },
+  "command": [
+    "python3",
+    "-c",
+    "import sys,json;sys.path.insert(0,\"src\");from arsiv import render_comparison_snapshot;from rapor import render_report;d=json.load(open(\"data/releases/b513965558094e338a941be90a1960a4/records.json\"));open(\"/tmp/gsd-0315-preview.html\",\"w\").write(render_comparison_snapshot(d,render_report))"
+  ],
+  "log": "/tmp/gsd-0315-preview.log",
+  "output": "/tmp/gsd-0315-preview.html"
+}

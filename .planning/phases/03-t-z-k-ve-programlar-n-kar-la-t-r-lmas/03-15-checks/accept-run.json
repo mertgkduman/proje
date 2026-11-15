@@ -1,0 +1,14 @@
+{
+  "pid": 857709,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "inputs": {
+    "src/rapor.py": "8bd0923a8adbacae73d54190b9b94caf8315b1cf958bdcbb9a70842686b7cf66",
+    "src/rapor_v19.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "src/arsiv.py": "3fe550e65efa3cce888196bdfba13874a2a18d60d9655b7475721a816639129c",
+    "tests/test_comparison_navigation.py": "4b4547cac28036192cabff37b998120720a8c13fa366251a1058db37783a298b",
+    "/tmp/gsd-0315-final-preview.html": "7a72a7d0d7c4a2aaed4aaf10ea20fb5f95c85c3db91701c315fd88eae1a69a0b"
+  },
+  "command": "NAV_REPORT=/tmp/gsd-0315-final-preview.html python3 tests/run.py --pattern test_comparison_navigation.py; r=$?; printf \"%s\\n\" \"$r\" > /tmp/gsd-0315-accept.exit; exit \"$r\"",
+  "log": "/tmp/gsd-0315-accept.log",
+  "exit": "/tmp/gsd-0315-accept.exit"
+}

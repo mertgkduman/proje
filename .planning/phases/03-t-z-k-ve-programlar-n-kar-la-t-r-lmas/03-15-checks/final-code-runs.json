@@ -1,0 +1,33 @@
+{
+  "release": "ef353c40c60b400eb1c52b3245e9a65b",
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "started_utc": "2026-11-15T04:54:50.799492+00:00",
+  "input_snapshot": "/tmp/gsd-0315-final-cli-ef353c40c60b400eb1c52b3245e9a65b",
+  "inputs": {
+    "manifest.json": "8a4e52a473b9e69c29c4d3818899735f246b37adc7baabece33f2ed0fe2d65af",
+    "records.sqlite3": "74d6c47aa44d51e1e9f185190393540191992623a774c8400d262c0e4fd4ae87",
+    "records.json": "2b4f8446885afb0c857b40474167f8766fdd941bff6a7400437b10af9c36f24a",
+    "index.html": "78e74311816f7b9903f11a49fc9b096487c8333f026c7e535654d2a8886ae014",
+    "src/arsiv.py": "8096121b5e16b67304b60cf35ea84536dde750dec8c10f926ad99b7636c55f1b"
+  },
+  "runs": {
+    "phase2-optimized": {
+      "pid": 910892,
+      "command": "python3 src/arsiv.py audit --release ef353c40c60b400eb1c52b3245e9a65b --phase 2",
+      "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/phase2-optimized.log",
+      "exit": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/phase2-optimized.exit"
+    },
+    "final-code-navigation": {
+      "pid": 910894,
+      "command": "python3 tests/run.py --pattern test_comparison_navigation.py",
+      "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/final-code-navigation.log",
+      "exit": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/final-code-navigation.exit"
+    },
+    "final-code-report": {
+      "pid": 910896,
+      "command": "python3 tests/run.py --pattern test_report.py",
+      "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/final-code-report.log",
+      "exit": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/final-code-report.exit"
+    }
+  }
+}

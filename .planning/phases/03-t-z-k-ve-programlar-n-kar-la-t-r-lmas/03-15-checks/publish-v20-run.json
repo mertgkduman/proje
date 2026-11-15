@@ -1,0 +1,26 @@
+{
+  "pid": 886582,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "token": "89a39def604f44ba829cf28ba3262268",
+  "started_utc": "2026-11-15T03:32:15.149270+00:00",
+  "input_snapshot": "/tmp/gsd-0315-publish20-89a39def604f44ba829cf28ba3262268",
+  "inputs": {
+    "src/arsiv.py": "c6fd2efeb9e255ca0c76faab2ca7e6802a6c65994f343269bd2b231ffca144cd",
+    "src/rapor.py": "2cceca388f5d4c418491763e7bd8529cb491e770f989d42b55beb8ff614f7ace",
+    "src/rapor_v18.py": "cec0e1cfac3b1d3943c1155d4b784d5b2a65ac6015c54d8615976f085cdbd5df",
+    "src/rapor_v19.py": "370de97012a09edd9736d748a2bbab3f18e428b79ab8f878359cbf58137f385b",
+    "src/rapor_v19.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "src/rapor_v20.css": "bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389",
+    "data/current.json": "9d8d285f0f9c31752f8d45eb6c6a9d7ef076c088eb87e08313fa853d4837c4f3",
+    "data/releases/61b127ba1cb1479e9e6f55e6a6f40f5e/manifest.json": "8dfd0d12e7f2c15136b5c790b8f0f016b9418b780c4689b06f00983b35d8a7ee",
+    "data/releases/61b127ba1cb1479e9e6f55e6a6f40f5e/records.sqlite3": "74d6c47aa44d51e1e9f185190393540191992623a774c8400d262c0e4fd4ae87",
+    ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/publish-v20.py": "6dd7fe2e71aa17a1ed60590d5ffe4e9e6b60cfc7e85b66dea6fda90a15eb85e6"
+  },
+  "log": "/tmp/gsd-0315-publish20-89a39def604f44ba829cf28ba3262268/publish.log",
+  "result": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/publish-v20-result.json",
+  "command": [
+    "python3",
+    "-u",
+    "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/publish-v20.py"
+  ]
+}

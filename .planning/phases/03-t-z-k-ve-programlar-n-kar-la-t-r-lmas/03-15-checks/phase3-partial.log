@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1912, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1884, in main
+    validate_phase_three(release, args.stage)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1687, in validate_phase_three
+    return validate_phase_three_workspace(DATA / 'releases' / release, stage)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 1666, in validate_phase_three_workspace
+    raise ValueError('İstenen karşılaştırma aşaması uyuşmuyor')
+ValueError: İstenen karşılaştırma aşaması uyuşmuyor

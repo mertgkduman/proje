@@ -1,0 +1,15 @@
+{
+  "release": "ef353c40c60b400eb1c52b3245e9a65b",
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "pid": 898375,
+  "started_utc": "2026-11-15T04:19:58.456570+00:00",
+  "inputs": {
+    "/hpc/group/pfisterlab/mg551/storage/proje/tests/test_comparison_navigation.py": "2a16db15450cc00a8b7709cd6d6f3ee3e44781cc3588788e47e95ac7378b87b9",
+    "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/probe-navigation.cjs": "86ee7f2d6f8f7c34f593456fd7491315384e455dce1bfac4416b3c74ed9d028e",
+    "/hpc/group/pfisterlab/mg551/storage/proje/data/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html": "78e74311816f7b9903f11a49fc9b096487c8333f026c7e535654d2a8886ae014",
+    "/hpc/group/pfisterlab/mg551/storage/proje/data/releases/ef353c40c60b400eb1c52b3245e9a65b/records.json": "2b4f8446885afb0c857b40474167f8766fdd941bff6a7400437b10af9c36f24a"
+  },
+  "command": "NAV_EVIDENCE=/hpc/group/pfisterlab/mg551/storage/proje/data/comparisons/03-navigation-checks.json python3 tests/run.py --pattern test_comparison_navigation.py",
+  "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/final-navigation.log",
+  "exit": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/final-navigation.exit"
+}
