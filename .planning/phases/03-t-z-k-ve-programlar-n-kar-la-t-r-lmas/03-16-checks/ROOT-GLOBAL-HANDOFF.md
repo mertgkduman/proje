@@ -1,0 +1,27 @@
+# Active final validation handoff
+
+User task remains `$gsd-execute-phase 3`; finish all technical work, then retain three human UAT groups and three value assessments as pending. Do not advance phase 4/5 or mark global requirements accepted without human results.
+
+## Current gate
+
+- Genuine detached final full regression began 2026-11-15T22:13:44Z: `/tmp/proje-phase3-final-regression-20261115T221331Z`.
+- Supervisor PID/SID 1559558; official helper child PID/SID 1559561. `node .../gsd-tools.cjs run-with-timeout 10800 -- bash -c 'python3 tests/run.py'` runs on a prospective copy of 2,255 inputs, including all source/tests/data plus config and prior two verification reports. Never duplicate or kill this job.
+- Durable prospective manifest, script and handshake: `03-16-checks/final-regression/`. Temporary `run.log`, `exit.json`, `post-input-integrity.json` give actual result. Require exit 0, nonzero `TESTS_OK count`, completed unchanged-input comparison and supervisor exit. Timeout 124 or any failure halts publication; no timeout increase or fake pass.
+- Source implementation `7ea9376` memory fix plus test-only `51bd5bc`; clean independent review/security continuation committed `be3eeb9`. Source/package/test files must stay unchanged while this gate is running. Canonical v2 package SHA e5156e8f32d5d305aa0ceb48bd003dcd969ba74e11e0c404f21d32a9dade4989.
+- Milestone lease refreshed at 22:10:52Z, valid approximately through 2026-11-16T02:10Z. Refresh before expiry. Root pin before first edit and every commit: `bash /tmp/gsd-03-root-pin.sh`.
+
+## Actual history and remaining work
+
+The earlier isolated API at `/tmp/proje-v2-api-final-20261115T200402Z` FAILED -9; exact kernel memory-cgroup OOM is proven. Preserve that status. Its inputs and unaccepted candidate were retained, not published in production. Minimal audit fix now traverses ancestors before exporting descendants and reuses base JSON. Real seven-release RED→GREEN, five adjacent checks, and exact failed 53-release candidate readonly audit passed (891.893 seconds, peak 1,297,632 KiB under 4 GiB); all candidate/input hashes and isolated pointer unchanged. Proof in `completion-v2-memory/`. Do not confuse that one-boundary proof with the pending full API test.
+
+Full suite now includes the real v2 API scenario; two redundant ordinary audits immediately following publisher audits were replaced by post-pointer bundle-file hashes, current-ID and no-lock checks. All stage/content/source/history/descent/idempotency/rollback/negative-tamper assertions remain. No validator mock, cross-call cache, test skip or timeout increase. See `completion-v2-memory/validation-order.md` for the explicit full-regression-before-production ordering.
+
+Production is still immutable v1 release `85b1a453ce2346a8ad0df325a2b73ae9`, renderer22; HTML SHA 60bafd3b384e020800a01b00a0c58beaf0392d1587d69e372c44667e4186cf3f. All 50 ancestors, 141 source versions, 128 distinct original files, 1,452 view files and eight delivery receipts are preserved. Candidate renderer23 plus canonical v2 selection produces byte-identical HTML, proven in `completion-v2-fix/ui-render-equivalence.json`.
+
+After actual full-gate success, resume `/root/execute_03_16_v2` for explicitly authorized local v2 adoption/publish, current-data ordinary/P2/P3 audits, real NAV four cases and focused current boundary suites. Its preparation commits de84e57/af6e1e0 still point at the OLD failed API gate and old source/test hashes: update guards and refresh prospective input capture before any mutation. Preserve failed attempt evidence. Do not restart a separate full API job. Require final global proof and unchanged source/package, not old `exit.json`.
+
+Security gate: `03-SECURITY.md`, 51 plan-authored threats closed (50 mitigations, one previously accepted bounded risk), ASVS L1. UI gate: `03-UI-REVIEW.md`, 18/24, no functional blocker; same HTML hash permits reuse of actual screenshots, with limits explicit. Code review clean at 26-file scope. Final `03-REVIEW-FIX.md` remains uncommitted/open until global + production evidence.
+
+Root must then reconcile acceptance, source notes, summary, review-fix/security/UI evidence; run configured Sol6.1/xhigh verifier with all 16 plans/summaries, locked context/research, prior verifications, requirements and actual evidence. Canonical verification.status query controls closure. Likely human_needed: keep phase3 pending and requirements unchecked, update STATE/ROADMAP technical16/16 pending UAT, persist actual new report links and three groups. No phase.complete unless actual status passed. Final concise Turkish response links actual new report and `$gsd-verify-work 3`, explaining exact skill/plan human gate if phase remains pending.
+
+Root stops related reads/edits/tests whenever a GSD child is active; only clocks/lease and completion surveillance are allowed. Detached immutable jobs can continue. Protect unrelated server PID2595544:8100 and unowned `.gsd/`, `.planning/milestone.lock`, `data/.staging/`. No Astra, push, PR, remote publication or new branch/worktree.
