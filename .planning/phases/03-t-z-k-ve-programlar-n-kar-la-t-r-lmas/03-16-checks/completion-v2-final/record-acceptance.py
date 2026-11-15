@@ -47,6 +47,8 @@ old.update(release_id=release, report_path=str((folder / 'index.html').relative_
                      'unmatched_inventory_sections': sum(bool(json.loads(i['unmatched_headings'])) for i in inventory)},
            final_checks=str((here / 'focused-results.json').relative_to(root)),
            preservation_evidence=str((here / 'preservation.json').relative_to(root)),
+           source_review='data/comparisons/03-completion-review-v2.json',
+           historical_source_review='data/comparisons/03-source-review.json',
            source_review_kind='agent', human_uat='pending', formal_phase_acceptance='pending', requirements_completed=[])
 (root / 'data/comparisons/03-navigation-checks.json').write_text(json.dumps(nav, ensure_ascii=False, indent=2) + '\n')
 (root / 'data/comparisons/03-acceptance.json').write_text(json.dumps(old, ensure_ascii=False, indent=2) + '\n')

@@ -35,9 +35,10 @@ if not gate.exists() or json.loads(gate.read_text())['exit_code'] != 0:
 if (root / 'data/.write.lock').exists() or json.loads((root / 'data/current.json').read_text())['release_id'] != base:
     raise SystemExit('Writer exists or current changed; reconcile before publication')
 prospective = json.loads((here / 'prospective.json').read_text())
-for path, expected in prospective['file_sha256'].items():
-    if hashlib.sha256((root / path).read_bytes()).hexdigest() != expected:
-        raise SystemExit('Prospective input changed: ' + path)
+for group in ('file_sha256', 'raw_original_sha256', 'view_sha256'):
+    for path, expected in prospective[group].items():
+        if hashlib.sha256((root / path).read_bytes()).hexdigest() != expected:
+            raise SystemExit('Prospective input changed: ' + path)
 job.mkdir(exist_ok=False)
 worker = (here / 'publish-owned.py').read_bytes()
 (job / 'publish-owned.py').write_bytes(worker)
@@ -45,6 +46,7 @@ token = uuid.uuid4().hex
 meta = {'host': socket.gethostname(), 'token': token, 'base': base,
         'prospective_sha256': hashlib.sha256((here / 'prospective.json').read_bytes()).hexdigest(),
         'worker_sha256': hashlib.sha256(worker).hexdigest(),
+        'launcher_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'api_exit_sha256': hashlib.sha256(gate.read_bytes()).hexdigest(),
         'created_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'log': str(job / 'run.log'), 'exit': str(job / 'exit.json')}
