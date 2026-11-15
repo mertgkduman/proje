@@ -26,3 +26,9 @@ class PhaseTwoAuditCLI(unittest.TestCase):
              patch.object(dosyalar, 'validate_phase_two', side_effect=ValueError('kaynak bozuk')):
             with self.assertRaisesRegex(ValueError, 'kaynak bozuk'):
                 arsiv.main()
+
+    def test_real_phase_two_validator_runs_audit_and_propagates_failure(self):
+        with patch.object(arsiv, 'audit_release', side_effect=ValueError('snapshot bozuk')) as audit:
+            with self.assertRaisesRegex(ValueError, 'snapshot bozuk'):
+                dosyalar.validate_phase_two('current')
+        audit.assert_called_once_with('current')

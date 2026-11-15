@@ -1869,6 +1869,12 @@ def main():
         check_delivery_receipt(args.input); print('DELIVERY_RECEIPT_OK')
     elif args.command == 'freeze': print(freeze_cutoff(args.workspace, args.tbmm_version, args.method_version))
     elif args.command == 'audit':
+        if args.phase == '2' and args.check is None:
+            # validate_phase_two performs the full release audit itself.
+            from dosyalar import validate_phase_two
+            release = validate_phase_two(args.release, args.party, args.stage)
+            print('PHASE2_TRACER_OK' if args.party and args.stage == 'tracer' else ('PHASE2_PARTY_OK' if args.party else 'PHASE2_AUDIT_OK'), release)
+            return
         release = audit_release(args.release)
         if args.check:
             db = connect(DATA / 'releases' / release / 'records.sqlite3')
