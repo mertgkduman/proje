@@ -139,6 +139,11 @@ def canonical_json(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
 
 
+def completion_basis_digest(basis):
+    normalized = dict(basis, cells=sorted(basis['cells'], key=lambda cell: cell['id']))
+    return hashlib.sha256(canonical_json(normalized).encode()).hexdigest()
+
+
 def completion_basis_records(basis, risk_universe, basis_id, created_at, parent_basis_id=None):
     """Encode authored source judgments for storage inside a closed snapshot."""
     head = dict(id=basis_id, version=2, taxonomy_version=basis['taxonomy_version'],
@@ -418,7 +423,7 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
     work = Path(work)
     assert_lock(work)
     protected = {'party','scope_party','scope_observation','method','party_identity_revision','source_policy'}
-    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected) | {'comparison_source_inventory', 'comparison_completion'} | set(LINEAGE_TABLES)
+    allowed = (set(COMPARISON_TABLES) - {'comparison_contract'}) | (set(TABLES) - protected) | {'comparison_source_inventory', 'comparison_completion'} | set(LINEAGE_TABLES) | set(COMPLETION_V2_TABLES)
     with tempfile.TemporaryDirectory(dir=work) as temp:
         temp = Path(temp)
         shutil.copyfile(work / 'records.sqlite3', temp / 'records.sqlite3')
@@ -426,6 +431,12 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
         db = connect(temp / 'records.sqlite3')
         try:
             migrate_comparisons(db, work / 'pre-comparison-migration.sqlite3')
+            prior_revision = db.execute('SELECT * FROM comparison_completion_revision ORDER BY epoch DESC LIMIT 1').fetchone()
+            incoming_revisions = [e['values'] for e in payload['records'] if isinstance(e, dict) and e.get('kind') == 'comparison_completion_revision' and isinstance(e.get('values'), dict)]
+            forward_revision = any(r.get('stage') == payload['stage'] and r.get('taxonomy_version') == payload['taxonomy_version'] and
+                                   r.get('epoch') == (prior_revision['epoch'] + 1 if prior_revision else 1) and
+                                   r.get('parent_revision_id') == (prior_revision['id'] if prior_revision else None)
+                                   for r in incoming_revisions)
             with db:
                 if payload['contract_version'] == 3:
                     for name, definition in LINEAGE_TABLES.items():
@@ -437,7 +448,7 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                     if payload['taxonomy_version'] >= 3 and payload['taxonomy_version'] > contract['taxonomy_version'] and not reconciled:
                         raise ValueError('Yeni sözlük açık karşılaştırma eşlemesi gerektirir')
                     stages = {'tracer':0,'partial':1,'complete':2}
-                    historical_package = payload['taxonomy_version'] < contract['taxonomy_version'] or stages[payload['stage']] < stages[contract['stage']]
+                    historical_package = payload['taxonomy_version'] < contract['taxonomy_version'] or (stages[payload['stage']] < stages[contract['stage']] and not forward_revision)
                     if not historical_package:
                         if payload['contract_version'] < contract['version'] or (payload['contract_version'] >= 2 and payload['taxonomy_version'] < 3):
                             raise ValueError('Karşılaştırma sözleşmesi geriletilemez veya eski sözlüğe uygulanamaz')
@@ -471,7 +482,7 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                         if conflicts: raise ValueError('Aynı kimlikle çelişen kayıt')
                         continue
                     if historical_package: raise ValueError('Eski paket mevcut sürüme yeni kayıt ekleyemez')
-                    if kind in COMPARISON_TABLES or kind in LINEAGE_TABLES or kind in ('comparison_source_inventory', 'comparison_completion'):
+                    if kind in COMPARISON_TABLES or kind in LINEAGE_TABLES or kind in COMPLETION_V2_TABLES or kind in ('comparison_source_inventory', 'comparison_completion'):
                         keys = list(values)
                         db.execute(f"INSERT INTO {kind} ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)})", [values[k] for k in keys])
                     else:
@@ -479,6 +490,16 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                         # whole scratch database is installed only after export.
                         db.commit()
                         record(temp, kind, values)
+            if not prior_revision and incoming_revisions:
+                first = db.execute('SELECT * FROM comparison_completion_revision ORDER BY epoch LIMIT 1').fetchone()
+                head = db.execute('SELECT * FROM comparison_completion_basis WHERE id=?', (first['basis_id'],)).fetchone()
+                cells = [dict(row) for row in db.execute('SELECT * FROM comparison_coverage_disposition WHERE basis_id=?', (first['basis_id'],))]
+                source, risk = decode_completion_basis(dict(head), cells)
+                verify_initial_completion_basis(source, risk)
+                anchor = json.loads(first['legacy_anchor'])
+                metadata = json.loads((temp / 'workspace.json').read_text(encoding='utf-8'))
+                if anchor.get('release_id') != metadata.get('base'):
+                    raise ValueError('Önceki kaynak kapanışı gerçek tabanla uyuşmuyor')
             if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
                 raise ValueError('Karşılaştırma bütünlük hatası')
         finally:
@@ -1031,9 +1052,9 @@ def verify_initial_completion_basis(basis, risk_universe):
     adopted; source judgments, mapping bodies and dates are checked separately.
     Later audit uses the frozen records, not the files read here.
     """
-    digest = hashlib.sha256(canonical_json(basis).encode()).hexdigest()
+    digest = completion_basis_digest(basis)
     risk_digest = hashlib.sha256(canonical_json(risk_universe).encode()).hexdigest()
-    if digest != 'ec14789049a61a7c7e1a4c1f70cfa809cd44c5086b1c636b60f663eebe37fc5a' or risk_digest != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9':
+    if digest != '1255473709cc4815a288d1f214cd9c96d111cf56a715ae6fbc64cb615fd2c719' or risk_digest != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9':
         raise ValueError('İlk kaynak evreni bağımsız hazırlanmış bütüne uyuşmuyor')
     sources = {}
     for item in basis['source_documents']:
@@ -1106,7 +1127,7 @@ def validate_completion_revisions(data):
             if head['version'] != 2 or head['taxonomy_version'] != revision['taxonomy_version']:
                 raise ValueError('Sözlük uyuşmuyor')
             source, risk = decode_completion_basis(head, [d for d in dispositions if d['basis_id'] == head['id']])
-            if previous_source is None and (hashlib.sha256(canonical_json(source).encode()).hexdigest() != 'ec14789049a61a7c7e1a4c1f70cfa809cd44c5086b1c636b60f663eebe37fc5a' or hashlib.sha256(canonical_json(risk).encode()).hexdigest() != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9'):
+            if previous_source is None and (completion_basis_digest(source) != '1255473709cc4815a288d1f214cd9c96d111cf56a715ae6fbc64cb615fd2c719' or hashlib.sha256(canonical_json(risk).encode()).hexdigest() != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9'):
                 raise ValueError('İlk kaynak evreni bağımsız hazırlanmış bütüne uyuşmuyor')
             if previous_source is not None and revision['basis_id'] != previous['basis_id']:
                 if head['parent_basis_id'] != previous['basis_id']:

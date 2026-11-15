@@ -2,6 +2,8 @@
 import json
 import hashlib
 from pathlib import Path
+import shutil
+import tempfile
 import unittest
 
 import arsiv
@@ -156,6 +158,38 @@ class CompletionCoverageTest(unittest.TestCase):
         self.assertEqual(universe, risk['expected_risk_universe'])
         self.assertEqual(json.loads(revision['review'])['decisions'], risk['decisions'])
         self.assertEqual(json.loads(revision['legacy_anchor'])['release_id'], self.reviewed['release_id'])
+
+    def test_import_of_v2_is_atomic_while_export_guard_is_active(self):
+        original = arsiv.DATA
+        root = Path(__file__).resolve().parents[1] / 'data/comparisons'
+        basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())
+        payload = json.loads((root / '03-completion-review-v2.json').read_text())
+        with tempfile.TemporaryDirectory() as temp:
+            temp = Path(temp)
+            arsiv.DATA = temp / 'data'
+            try:
+                arsiv.DATA.mkdir()
+                for source in basis['source_documents']:
+                    relative = Path(source['path']).relative_to('data')
+                    target = arsiv.DATA / relative
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copyfile(original / relative, target)
+                work = temp / 'work'
+                work.mkdir()
+                shutil.copyfile(original / 'releases' / self.reviewed['release_id'] / 'records.sqlite3',
+                                work / 'records.sqlite3')
+                (arsiv.DATA / '.write.lock').write_text(json.dumps({'token': 'isolated-test-token'}))
+                (work / 'workspace.json').write_text(json.dumps({'token': 'isolated-test-token', 'base': self.reviewed['release_id']}))
+                before = arsiv.sha(work / 'records.sqlite3')
+                with self.assertRaisesRegex(ValueError, 'sürüm 2'):
+                    arsiv.load_comparison(work, payload)
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
+                (work / 'workspace.json').write_text(json.dumps({'token': 'isolated-test-token', 'base': 'wrong-base'}))
+                with self.assertRaisesRegex(ValueError, 'gerçek taban'):
+                    arsiv.load_comparison(work, payload)
+                self.assertEqual(arsiv.sha(work / 'records.sqlite3'), before)
+            finally:
+                arsiv.DATA = original
 
     def test_manifest_binds_revision_basis_selection_and_review(self):
         data = self.modern()
