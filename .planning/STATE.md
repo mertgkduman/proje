@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 03
 current_phase_name: Tüzük ve programların karşılaştırılması
-current_plan: 14
+current_plan: 15
 status: executing
-stopped_at: Completed 03-13-PLAN.md
-last_updated: "2026-11-14T16:40:42.210Z"
-last_activity: 2026-11-14
-last_activity_desc: 03-12 Demokrat tüzük ve tarihçe karşılaştırması tamamlandı
-state_head: ba93258fae967cdae7543f661e9e148c0c257524
+stopped_at: Completed 03-14-PLAN.md; next 03-15
+last_updated: "2026-11-15T01:48:21.171Z"
+last_activity: 2026-11-15
+last_activity_desc: 03-14 dokuz taraflı kapsam ve kaynaklı sentez, yerel yayın ve P2/P3 denetimleri tamamlandı
+state_head: 936ee56337ac7e325fc89acd2cdd86fd30a23535
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 32
-  completed_plans: 29
+  completed_plans: 30
 ---
 
 # Project State
@@ -28,14 +28,14 @@ See: .planning/PROJECT.md (updated 2026-11-11)
 
 ## Current Position
 
-Current Plan: 14
+Current Plan: 15
 Total Plans in Phase: 16
 Phase: 03 (Tüzük ve programların karşılaştırılması) — EXECUTING
-Plan: 14 of 16
+Plan: 15 of 16
 Status: Ready to execute
-Last activity: 2026-11-14 — 03-13 tamamlandı; Demokrat programı ve tarihsel pasajlar yerel partial sürümde doğrulandı
+Last activity: 2026-11-15 — 03-14 tamamlandı; b513965558094e338a941be90a1960a4 yerel sürümünde v4 305 konu, 4.935 satır ve 854 sentez P2/P3 ile doğrulandı
 
-Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 13/16 plan
+Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 14/16 plan
 
 ## Performance Metrics
 
@@ -90,6 +90,7 @@ Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/1
 | Phase 03 P11 | unknown | 2 tasks | 12 files |
 | Phase 03 P12 | unknown | 2 tasks | 12 files |
 | Phase 03 P13 | unknown | 2 tasks | 15 files |
+| Phase 03 P14 | 529min | 2 tasks | 134 files |
 
 ## Accumulated Context
 
@@ -139,6 +140,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 03]: 03-10: Dar soruya eşlik eden kaynak bağlamı olumlu cevap sayılmaz; 63 sınırlı yokluk kaydı kapsamıyla korunur.
 - [Phase 03]: 03-11: Dar soruya eşlik eden bağlam olumlu politika yanıtı sayılmaz; koşullu Temel Vatandaşlık Geliri kaynak koşullarıyla korunur.
 - [Phase 03]: 03-12: Arşiv yakalama tarihi kabul veya son sürüm kanıtı değildir; tüzük 20 ve 25 arasındaki uygulanma ilişkisi varsayılmaz.
+- [Phase 03]: 03-14: Seçili taxonomy 4 ve typed synthesis contract 2 gerçek pasaj, dar kapsam ve missing/attempt dayanaklarını açık taşır; eski snapshot ve mekanik soy korunur.
 
 ### Pending Todos
 
@@ -177,6 +179,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-11-14T16:40:41.652Z
-Stopped at: Completed 03-13-PLAN.md
+Last session: 2026-11-15T01:47:55.542Z
+Stopped at: Completed 03-14-PLAN.md; next 03-15
 Resume file: None

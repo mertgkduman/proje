@@ -142,7 +142,7 @@ Plans:
 3. Okur, tüzük ve program tablolarında aynı konu başlıklarını bütün partiler için görebilir; her hücrede dayanak veya eksik bilgi durumu bulunur.
 4. Okur, dosyalardaki bulgulardan ve karşılaştırma hücrelerinden doğru kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir; madde/sayfa veya pasaj bağlantısı korunur.
 
-**Plans:** 13/16 plans executed
+**Plans:** 14/16 plans executed
 
 Plans:
 **Wave 1**
@@ -199,7 +199,7 @@ Plans:
 
 **Wave 14** *(blocked on Wave 13 completion)*
 
-- [ ] 03-14-PLAN.md — Yeni konularda bütün-parti geri taraması ve kaynaklı konu sentezleri
+- [x] 03-14-PLAN.md — Yeni konularda bütün-parti geri taraması ve kaynaklı konu sentezleri
 
 **Wave 15** *(blocked on Wave 14 completion)*
 
@@ -277,7 +277,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
-| 3. Tüzük ve programların karşılaştırılması | 13/16 | In Progress|  |
+| 3. Tüzük ve programların karşılaştırılması | 14/16 | In Progress|  |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
