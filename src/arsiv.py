@@ -129,6 +129,53 @@ COMPLETION_V2_TABLES = {
     'comparison_completion_revision': 'id TEXT PRIMARY KEY, version INTEGER NOT NULL, epoch INTEGER NOT NULL UNIQUE, parent_revision_id TEXT REFERENCES comparison_completion_revision(id), taxonomy_version INTEGER NOT NULL, basis_id TEXT NOT NULL REFERENCES comparison_completion_basis(id), stage TEXT NOT NULL, created_at TEXT NOT NULL, legacy_anchor TEXT, selection TEXT NOT NULL, review TEXT NOT NULL, reason TEXT NOT NULL',
     'comparison_completion_supersession': 'revision_id TEXT NOT NULL REFERENCES comparison_completion_revision(id), old_cell_id TEXT NOT NULL, new_cell_id TEXT NOT NULL, old_row_id TEXT NOT NULL, new_row_id TEXT NOT NULL, source_basis_refs TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(revision_id,old_cell_id,new_cell_id)',
 }
+
+
+def canonical_json(value):
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+
+
+def completion_basis_records(basis, risk_universe, basis_id, created_at, parent_basis_id=None):
+    """Encode authored source judgments for storage inside a closed snapshot."""
+    head = dict(id=basis_id, version=2, taxonomy_version=basis['taxonomy_version'],
+                parent_basis_id=parent_basis_id, created_at=created_at,
+                source_catalog=canonical_json({k: basis[k] for k in ('artifact_version', 'completion_contract_target', 'artifact_kind', 'reviewer_kind', 'origin_policy', 'new_source_reading_claim', 'human_acceptance', 'source_documents', 'unresolved')}),
+                universe=canonical_json({k: basis[k] for k in ('topics', 'topic_bases', 'universe')}),
+                inventory=canonical_json(basis['inventory_sections']),
+                risk_universe=canonical_json(risk_universe),
+                source_assertions=canonical_json({'source_assertions': basis['source_assertions'],
+                                                  'synthesis_obligations': basis['synthesis_obligations']}))
+    dispositions = [dict(basis_id=basis_id, cell_id=c['id'], logical_key=canonical_json(c['logical_key']),
+                         disposition=c['disposition'],
+                         source_judgment=canonical_json({'reference': c['source_judgment'], 'record': c['source_judgment_record'],
+                                                         'inventory_section_indexes': c.get('inventory_section_indexes', []),
+                                                         'fulfilment_locator_only': c.get('fulfilment_locator_only')}),
+                         mapping_refs=canonical_json({'references': c['mapping_refs'], 'records': c['mapping_records']}),
+                         basis_ids=canonical_json(c['basis_ids']), field_dispositions=canonical_json(c['field_dispositions']))
+                    for c in basis['cells']]
+    return head, dispositions
+
+
+def decode_completion_basis(head, dispositions):
+    """Restore source content without consulting mutable research files."""
+    try:
+        result = dict(json.loads(head['source_catalog']), **json.loads(head['universe']),
+                      taxonomy_version=head['taxonomy_version'], inventory_sections=json.loads(head['inventory']),
+                      **json.loads(head['source_assertions']))
+        risk = json.loads(head['risk_universe'])
+        result['cells'] = []
+        for item in dispositions:
+            source, mapping = json.loads(item['source_judgment']), json.loads(item['mapping_refs'])
+            result['cells'].append(dict(id=item['cell_id'], logical_key=json.loads(item['logical_key']),
+                                        disposition=item['disposition'], source_judgment=source['reference'],
+                                        source_judgment_record=source['record'], mapping_refs=mapping['references'],
+                                        mapping_records=mapping['records'], basis_ids=json.loads(item['basis_ids']),
+                                        field_dispositions=json.loads(item['field_dispositions']),
+                                        inventory_section_indexes=source['inventory_section_indexes'],
+                                        fulfilment_locator_only=source['fulfilment_locator_only']))
+        return result, risk
+    except (ValueError, TypeError, KeyError) as exc:
+        raise ValueError('Kaynak kapanışı sözlüğü çözümlenemedi') from exc
 LINEAGE_TABLES = {
     'comparison_lineage_contract': 'version INTEGER PRIMARY KEY, first_taxonomy_version INTEGER NOT NULL',
     'comparison_row_lineage': 'old_row_id TEXT NOT NULL REFERENCES comparison_row(id), new_row_id TEXT NOT NULL REFERENCES comparison_row(id), transition TEXT NOT NULL, PRIMARY KEY(old_row_id,new_row_id)',

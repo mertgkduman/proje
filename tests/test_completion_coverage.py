@@ -106,6 +106,18 @@ class CompletionCoverageTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'field:principle'):
             arsiv.validate_source_risk_review(self.reviewed, basis, universe, tampered)
 
+    def test_source_basis_round_trips_in_closed_storage_format(self):
+        root = Path(__file__).resolve().parents[1] / 'data/comparisons'
+        basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())
+        risk = json.loads((root / '03-completion-risk-v2-source.json').read_text())
+        head, cells = arsiv.completion_basis_records(basis, risk['expected_risk_universe'],
+                                                     'test-basis', '2026-11-15T16:52:28Z')
+        restored, restored_risk = arsiv.decode_completion_basis(head, cells)
+        self.assertEqual(restored, basis)
+        self.assertEqual(restored_risk, risk['expected_risk_universe'])
+        self.assertTrue(arsiv.validate_source_basis_universe(self.reviewed, restored))
+        self.assertTrue(arsiv.validate_source_risk_review(self.reviewed, restored, restored_risk, risk['decisions']))
+
     def test_reviewed_finding_provenance_is_required(self):
         data = dict(self.reviewed)
         data['comparison_semantic_review'] = [r for r in data['comparison_semantic_review']
