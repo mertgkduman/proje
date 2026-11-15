@@ -19,6 +19,11 @@ folder = root / 'data/releases' / release
 sha = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
 manifest = json.loads((folder / 'manifest.json').read_text())
 data = json.loads((folder / 'records.json').read_text())
+active_revision = max(data['comparison_completion_revision'], key=lambda row: row['epoch'])
+assert manifest['comparison_completion_revision_id'] == active_revision['id']
+assert manifest['comparison_completion_epoch'] == active_revision['epoch']
+assert manifest['comparison_completion_stage'] == active_revision['stage']
+assert manifest['comparison_completion_basis_id'] == active_revision['basis_id']
 nav = json.loads((job / 'navigation-evidence.json').read_text())
 assert nav['release_id'] == release and nav['report_sha256'] == sha(folder / 'index.html') and nav['records_sha256'] == sha(folder / 'records.json')
 assert len(nav['results']) == 4 and all(r['checks'] == '1' * 19 and r['archiveExcerptFound'] for r in nav['results'])
@@ -40,6 +45,10 @@ old.update(release_id=release, report_path=str((folder / 'index.html').relative_
            records_sha256=sha(folder / 'records.json'), sqlite_sha256=sha(folder / 'records.sqlite3'),
            checked_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
            versions={k: v for k, v in manifest.items() if k.endswith('_version') or k.startswith('comparison_completion_')},
+           completion_contracts={'historical_marker_version': manifest.get('comparison_completion_version'),
+                                 'active_revision_version': active_revision['version'],
+                                 'active_revision_id': active_revision['id'], 'active_epoch': active_revision['epoch'],
+                                 'active_basis_id': active_revision['basis_id'], 'active_stage': active_revision['stage']},
            coverage={'topics': sum(t['taxonomy_version'] == taxonomy for t in data['comparison_topic']),
                      'parties': len(data['scope_party']), 'rows': len(rows), 'fields': len(fields),
                      'syntheses': sum(s['taxonomy_version'] == taxonomy for s in data['comparison_synthesis']),
