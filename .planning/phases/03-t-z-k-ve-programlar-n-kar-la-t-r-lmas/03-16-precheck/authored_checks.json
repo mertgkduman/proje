@@ -1,0 +1,217 @@
+{
+  "method": "Bu kararları ajan kaynak metnini, tam ilgili paragrafı/sayfayı ve gereken gerçek PDF görüntüsünü okuyarak yazdı. Betik yalnız mevcut kimlikleri ve kanıt bağlarını toplar. Hash/FK/alıntı eşitliği anlam kararı değildir.",
+  "checks": [
+    {
+      "id": "SR01", "title": "Yeni Parti: PM genel oyu, özel hükümet oyu ve üyelik kaydı",
+      "rows": ["0314-v4-yeni-pm-katilim-row", "04-03-v3-0303-epm-uyeligin-sona-ermesi-row"],
+      "synthesis": ["0314-v4-charter-more-genisletilmis-toplanti-1"],
+      "source_reading": "epm-charter-v1 özgün HTML Madde 8 ve 22/7,22/11-f; her iki PM paragrafının önceki ve sonraki bentleriyle okuması.",
+      "quote": "Bu konuların görüşüldüğü Parti Meclisi toplantısına, TBMM Grup Başkanvekilleri ve Grup Yönetim Kurulu üyeleri katılır ve oy kullanırlar.",
+      "judgment": "Seçili özet genel söz/öneri katılımındaki oy yasağını korurken hükümet kurma/katılma/çekilme gündemindeki özel hakkı yalnız belirtilen TBMM grup yöneticilerine verir. Kadın/gençlik başkanlarına genişletmez. Madde 8'de sıfır-oy sandık çevresinde MYK'nın karar verebilmesi kaynakta var; gerçekleşmiş kayıt silme veya kesin otomatik sonuç denmiyor.",
+      "expansion": "Genel/özel hükmü aynı belgedeki iki bentle, üyelik sonunu istifa/kanuni engel/disiplin ve MYK yetkisiyle birlikte karşılaştırdım; yeni hata yok."
+    },
+    {
+      "id": "SR02", "title": "TİP 2022 PDF: toplantı katılımcıları ve aday belirleme",
+      "rows": ["04-03-v3-0304-tip-pdf-genisletilmis-row", "04-03-v3-0304-tip-pdf-aday-yetki-row"],
+      "synthesis": ["0314-v4-charter-more-genisletilmis-toplanti-2"],
+      "source_reading": "0203-tip-charter2022-v1 index22/basılı21 ve index8/basılı7 gerçek görüntüleri; bozuk metin katmanına dayanılmadı.",
+      "quote": "il ve ilçe başkanları, il ve ilçe yönetim kurulu üyeleri ve büro üyeleriyle yapılır.",
+      "judgment": "Toplantı PDF listesi yerel yönetimleri ve büroları içeriyor. HTML'deki ek komite üyeleri PDF listesine taşınmamış. Adaylık hükmü yasa/tüzük uyarınca yöntem belirleme ve merkez adaylarını belirleme yetkisini aynı bağlamda taşıyor; başka organla birleştirilmiyor. PDF dosya adı kesin kabul günü yapılmıyor.",
+      "expansion": "Kısa adaylık alıntısına ek tam cümle 0314-charter2-full-3-passage ve toplantının tam 0314-cm-x11-part1-p desteğini görüntüyle karşılaştırdım."
+    },
+    {
+      "id": "SR03", "title": "DEM/HEDEP: üç tur, delege paydası, uzlaşma ve disiplin itirazı",
+      "row_patterns": [{"party":"dem","pattern":"^0314-v4-fix-(dem|hedep)-[123]$|0305-dem-(kota|uzlasma|mdk-itiraz)-(dem|hedep)-row$"}],
+      "synthesis": ["04-0314-charter3-independent-disiplin-itiraz-1"],
+      "source_reading": "DEM index12/basılı13 ve HEDEP index11/basılı10 Madde17 ayrı okundu; DEM index11/basılı12 kongre çoğunluğu, index15/basılı16 uzlaşma, index29/basılı30 itiraz bağlamı ayrıca okundu.",
+      "quote": "İlk iki oylamada yeterli oy sağlanamazsa, üçüncü oylamada en çok oy alan iki üye",
+      "judgment": "Her iki başkan seçimi ilk iki turda delege tam sayısı salt çoğunluğu, üçüncüde en çok oy alan iki üye istisnasını ayrı kaynakla korur. Uzlaşma kurulunun cinsiyet temsili kaydı yalnız bu organa aittir; otomatik yüzde icat edilmiyor. İl disiplin kararının tebliğinden itibaren 10 günlük MDK başvurusu, geçici/kesin çıkarma sonrası yargı yolu bağlamıyla çelişmiyor. Nüsha adları sıra/yürürlük kanıtı değildir.",
+      "expansion": "Altı düzeltilmiş başkan satırının tamamı ve aynı partideki cinsiyet/uzlaşma/itiraz alanları incelendi; HEDEP uzlaşma/itiraz tam sayfalarını bu koşuda yeniden okumadım, bu ek alanların önceden kayıtlı ayrı kaynak incelemesi yeniden kullanılmaktadır."
+    },
+    {
+      "id": "SR04", "title": "İYİ: ilçe kayıt defteri ve iki gerçek Madde48 farkı",
+      "rows": ["0314-v4-fix-iyi-defter-1"],
+      "change_page_selector": {"party":"iyi","before_version":"0205-iyi-charter-istanbul-v1","after_version":"0205-iyi-charter-download-v1","page":31},
+      "synthesis": ["0314-v4-charter-more-parti-defterleri-2"],
+      "source_reading": "2026 PDF index5/basılı6 Madde5; index48/basılı49 Madde78. 2020 ve 2026 PDF index31 Madde48 karşılıklı tam sayfaları.",
+      "quote": "Üye kayıt defteri sadece ilçe teşkilatlarında bulundurulur.",
+      "judgment": "Genel defter listesinin yanında sadece üye kayıt defterinin ilçe istisnası korunuyor; bütün defterlere yayılmıyor. Madde48 gerçek farkları 50/25 → 60/30 ve gündem teklifi 1/10 → 1/5'tir. Olağanüstü toplantıdaki 1/5 başka bir eşik; iki eşik birbirine karıştırılmadı. Değişiklik notu hukuki yürürlük onayı değildir.",
+      "expansion": "Özetin bağlı olduğu Madde5 ve78'i birlikte kontrol ettim; aynı index31'e bağlı bütün seçili değişiklikleri iki kaynakla eşledim."
+    },
+    {
+      "id": "SR05", "title": "İYİ: toplu kayıt yenileme ile aidat yaptırımının ayrı koşulları",
+      "rows": ["04-03-v3-0306-iyi-uye-kayit-yeri-row", "04-03-v3-0306-iyi-disiplin-suc-row", "04-03-v3-0306-iyi-uyelik-aidati-row", "04-03-v3-0306-iyi-detail-uyelik-aidat-aralik-row", "04-03-v3-0306-iyi-detail-uyelik-son-neden-row"],
+      "field_filter": ["04-03-v3-0306-iyi-uye-kayit-yeri-field", "04-03-v3-0306-iyi-disiplin-suc-field", "04-03-v3-0306-iyi-uyelik-aidati-field", "04-03-v3-0306-iyi-detail-uyelik-aidat-aralik-field", "04-0314-iyi-membership-record-reset-f"],
+      "source_reading": "2020 index7; 2026 index7/basılı8 Madde8–9, index45/basılı46 Madde76, index49/basılı50 Madde80.",
+      "quote": "Mali durumu müsait olduğu halde önceden taahhüt ettiği aidatını ödememek veya geç ödemek",
+      "judgment": "2026 toplu üye kaydı iptali/yeniden yazımı eşitlik-demokrasi, kanuna/tüzüğe aykırı olmayan neden ve gerekçe koşullarıyla korunur; bireysel disiplin ihracı diye aktarılmıyor. Aidat ödeme yükümlülüğü Madde80'de genel; ödeme/geç ödeme için uyarma koşulu Madde76'da mali durumun müsait olmasıdır. Genel ödeme özetine bu yaptırım koşulunu aynen taşımamak tek başına hata değildir; seçili tarihçe koşulu açıkça kaydetmiş.",
+      "expansion": "Şüpheli koşul kaybı ihtimalini aynı belgedeki üyelik, aidat aralığı, ödeme ve disiplin tarihçesinin tamamına genişlettim. Gerçek kaynaklar koşulların farklı hükümlere ait olduğunu gösterdi; düzeltme önermiyorum."
+    },
+    {
+      "id": "SR06", "title": "Demokrat: mahalle/köy kapsamı, yerel ve merkez yan kuruluşları",
+      "row_patterns": [{"party":"demokrat","pattern":"^0314-v4-fix-dp-(mahalle-[123]|sivil-1)$"}],
+      "synthesis": ["0314-v4-charter-more-mahalle-koy-temsilciligi-1", "0314-v4-charter-final-sivil-toplum-iliskileri-2"],
+      "source_reading": "Tüzük index12/basılı12 gerçek görüntüsü ve kesintisiz metni; önceki genel yan kuruluş listesi ve sonraki yurt dışı başlığı birlikte.",
+      "quote": "Büyükşehir Belediye statüsünün uygulandığı şehirlerin merkez ilçelerindeki mahallelerde",
+      "judgment": "Üyeli kongreyle 1+4 seçim yalnız belirtilen büyükşehir merkez ilçe mahallelerine; öteki yerler atama/yardımcı seçimine bağlı. Kadın ve Gençlik Kolları başlığını izleyen konum belirtiliyor; kesin münhasırlık veya bütün ana parti organlarına genellik üretilmiyor. STK yan kuruluşu ilçe, il ve Genel Merkez kademelerini korur.",
+      "expansion": "Aynı paragraftan türeyen üç temsilcilik alanının tamamı ve STK alanı birlikte incelendi."
+    },
+    {
+      "id": "SR07", "title": "Demokrat: iki kongre yeter sayısı ve yerel hesap komisyonu",
+      "rows": ["04-03-v3-0312-demokrat-1-051-organ-toplanti-row", "04-03-v3-0312-demokrat-1-052-organ-toplanti-row", "0314-v4-demokrat-kongre-hesap-komisyon-row", "04-03-v3-0312-demokrat-2-scope-06-row"],
+      "source_reading": "Tüzük index14/basılı14 Madde20; index16–17/basılı16–17 Madde25–27.",
+      "quote": "Olağan İlçe Kongrelerinin toplantı yeter sayısı delege sayısının 1/10’u kadardır.",
+      "judgment": "Madde20'nin ilçe 1/10'u ile Madde25'in her kademede yarıdan bir fazla/ikinci toplantı kuralı ayrı mevcut. Ek alan 131 uygulanma ilişkisinin açıklanmadığını söylüyor; hukuki öncelik icat etmiyor. Yerel hesap inceleme komisyonu yıllık belgeler, kongre kabul/red ve ibra kapsamıyla gerçek; dar bağımsız denetim kurulu yokluğu bu komisyonu silmiyor.",
+      "expansion": "Her iki toplantı satırının bütün alanları, kapsam06 ve yeni komisyon kaydı aynı özgün maddelerle karşılaştırıldı."
+    },
+    {
+      "id": "SR08", "title": "Denetleme: örgütsel kurul ile kongre hesabı aynı kurum değildir",
+      "rows": ["04-03-v3-0304-tip-diff-denetim-html-row", "04-03-v3-0304-tip-diff-denetim-pdf-row", "04-03-v3-0310-saadet-2-row-0156", "0314-v4-demokrat-kongre-hesap-komisyon-row"],
+      "synthesis": ["04-0314-charter-last-denetleme-kurullari-1", "0314-sparse-denetleme-tip-saadet-claim", "0314-sparse-denetleme-saadet-demokrat-claim", "0314-v4-denetim-dar-kapsam"],
+      "source_reading": "TİP özgün HTML 5.1 ve PDF index23/basılı22 gerçek görüntü; Saadet index6/basılı7; Demokrat index16–17.",
+      "quote": "yılda bir kez rapor hazırlamak üzere en az 3 kişiden oluşan Denetleme Kurulları",
+      "judgment": "TİP iki nüshada 6 ay/yıl ve Örgüt Komitesi önerisi farkını; Saadet Büyük Kongre hesap raporunun önceliğini; Demokrat il/ilçe kongrelerinin hesap komisyonunu korur. Sentez örgütsel denetimi mali kongre komisyonuyla eşitlemez. Dar kapsam cümlesi müfettişlik/kongre hesabının yokluğu iddiası yapmaz.",
+      "expansion": "Dört sentezin her olumlu tarafı kendi gerçek kaynağı ve düzeyiyle kontrol edildi; dar yokluk taraflarının eski kapsam kayıtları ayrıca izlenebilir."
+    },
+    {
+      "id": "SR09", "title": "DBP: görüş, bilgi talebi, itiraz ve tarihsel kota kopyaları",
+      "row_patterns": [{"party":"dbp","pattern":"0308-dbp-draft-(001|020|072|113)-row$|0308-dbp-historical-quota-(blog|wordpress)-row$"}],
+      "source_reading": "DBP özgün HTML Madde4 ve97; BDP Blogspot ve WordPress özgün HTML Madde4(f) ayrı pencereler.",
+      "quote": "Partinin her türlü organ seçimi ile genel ve yerel seçimleri aday belirlemelerinde @ cinsiyet kotası uygulanır.",
+      "judgment": "Bilgiye cevap ve üst organa başvuru, meşru parti içi tartışma ve disiplin itirazı ayrı kapsamlar. Blogspot %40; WordPress oran yerinde @ taşıyor. %40 ikinci nüshaya aktarılmamış. Güncel DBP'nin eşit temsile özen ifadesi ile tarihsel BDP oranı birleştirilmiyor. Yayıncı sürüm bazında Blogspot/WordPress olarak korunur.",
+      "expansion": "İki tarihsel kota alanı ve güncel organ-kota/görüş/itiraz alanları birlikte incelendi; kaynak bozulması gerçek sınır, yeni veri hatası değil."
+    },
+    {
+      "id": "SR10", "title": "Az-partili engelliler koordinasyonu: tek parti, üç kademe",
+      "topic_rows": ["engelli-koordinasyon"],
+      "synthesis": ["04-0314-charter-last-engelli-koordinasyon-1", "0314-v4-engelli-incelenen-kapsam"],
+      "source_reading": "Saadet tüzük index12/basılı13 Madde27/A tam sayfa yeniden okundu. Diğer sekiz tarafın kapsam/missing zincirleri ve önceki sparse-topic-independent-review.json sınırları yeniden kullanıldı; bu koşuda bütün tüzükler baştan okunmadı.",
+      "quote": "Bu sayı, İl ve İlçe Yönetim Kurulları tarafından yeniden düzenlenebilir.",
+      "judgment": "Merkez7/il5/ilçe3 ve kurabilir/değiştirebilir korunuyor; kurulmuş birim ya da sabit asgari sayı denmiyor. Üç kademe tek olumlu partidir. TİP iki nüsha iki parti sayılmaz. Yeni Yol gerçek belge açığı; diğer taraflar tanımlı dar inceleme kapsamıdır.",
+      "expansion": "Konunun dokuz tarafının bütün seçili satırları, scope/missing/attempt bağları ve iki sentezin tipli tarafları kontrol edildi. Yoklukları yeni bağımsız tam-metin yokluk onayı olarak damgalamıyorum."
+    },
+    {
+      "id": "SR11", "title": "Az-partili siyasi etik: kurulabilirlik ve şikâyet kapsamı",
+      "topic_rows": ["siyasi-etik-kurulu"],
+      "synthesis": ["0314-v4-charter-final-siyasi-etik-kurulu-1", "0314-v4-etik-incelenen-kapsam"],
+      "source_reading": "İYİ PDF index37/basılı38 Madde63 iki paragrafı yeniden okundu. Diğer tarafların eski gerçek kapsam kayıtları/bağımsız sparse okuması yeniden kullanıldı.",
+      "quote": "Genel Başkan’a bağlı Parti İçi Demokrasi ve Siyasi Etik Yüksek Kurulu oluşturulabilir.",
+      "judgment": "Kurulabilirlik, Genel Başkana bağlılık, şikâyet/başvuru incelemesi ve teklif→GİK yönetmeliği ayrı açık. Disiplin cezası verme veya fiilen kurulma iddiası yok. Tek olumlu partiye sahte ikinci olumlu taraf eklenmiyor; etik ilke yokluğu denmiyor.",
+      "expansion": "Dokuz taraf ve iki sentezin tüm passage/scope/missing tarafları kontrol edildi; yeni tam-metin yokluk okuması iddiası yapılmadı."
+    },
+    {
+      "id": "SR12", "title": "Afet dayanışması ile parti finansmanı kampanyası",
+      "row_patterns": [{"party":"dem","pattern":"0305-dem-yardim-(dem|hedep)-row$"},{"party":"emep","pattern":"0309-emep-html-064-0-row$"}],
+      "synthesis": ["04-0314-charter-last-parti-yardim-kampanya-1", "0314-v4-yardim-scope-comparison", "0314-v4-yardim-scope-status"],
+      "source_reading": "DEM index27/basılı28 Madde50 tam sayfa; EMEP özgün HTML22 mali kaynaklar. HEDEP tarafı ayrı nüshasının önceki kaynak incelemesiyle korunur.",
+      "quote": "belirli zamanlarda açılan kampanyalar ve diğer gelirlerdir.",
+      "judgment": "DEM ulusal/uluslararası afete dönük katılım şartları ve konu/imkâna göre yerel/merkezi etkinlik; EMEP parti geliri kampanyası. Sentez ikisini aynı insani yardım uygulaması diye sunmuyor. Sınırlı usul yokluğu EMEP'in gerçek finansman kampanyasını silmiyor.",
+      "expansion": "Üç sentezin bütün tipli tarafları ve dokuz partideki durum tarafları incelendi; EMEP'i afet yokluğuna çeviren replacement seçili değil."
+    },
+    {
+      "id": "SR13", "title": "Temel gelir: Saadet koşulları ve Demokrat her vatandaş ifadesi",
+      "rows": ["04-0314-saadet-nakit-gelir-row", "04-03-v3-03-v2-demokrat-temel-yurttaslik-geliri"],
+      "synthesis": ["04-0314-policy-more-temel-yurttaslik-geliri-2"],
+      "source_reading": "Saadet program index37/basılı38 genel sosyal güvenlik ile index40/basılı41 somut ödeme; Demokrat index44/basılı51 tüm paragraf.",
+      "quote": "Ülkemizde doğmuş, ülkemiz için çalışmış, vergi ödemiş vatandaşlarımıza",
+      "judgment": "Saadet üç koşulu koruyor; genel insanca gelir ilkesi bunları kaldırmıyor. Demokrat gerçekten her vatandaş için asgari nakit gelir söyler, ama eşit tutar, eşik veya ödeme periyodu belirtilmemiştir. Birinin koşulu diğerine aktarılmıyor.",
+      "expansion": "Aynı konudaki iki kaynaklı sentezin her tarafını; Saadet'in komşu genel refah ifadesiyle somut ödeme ayrımını geniş bağlamda kontrol ettim."
+    },
+    {
+      "id": "SR14", "title": "TİP/İYİ: yaşam güvencesi otomatik nakit vaadi değildir",
+      "rows": ["04-0314-tip-asgari-duzenli-gelir-row", "04-0314-iyi-asgari-duzenli-gelir-row"],
+      "synthesis": ["04-0314-policy-more-temel-yurttaslik-geliri-4"],
+      "source_reading": "TİP özgün program Sosyalist Toplumda Çalışma, Üretim ve Bölüşüm tam ilgili paragrafı; İYİ özgün tam HTML hedefler, kırsal çiftçi ve afet fark primi bağlamları. Önceki income-scope-matrix.md bölümsel tam okuması ayrıca yeniden kullanılır.",
+      "quote": "çalışamayacak durumda olanların insanca yaşamaları güvence altına alınır.",
+      "judgment": "TİP nitel yaşam güvencesi ve ücretsiz hizmeti nakit mekanizmasına çevirmiyor. İYİ'deki genç çiftçiye ekstra maaş ve afet fark primi gerçek politikalar; tanımlı asgari nakit gelir/düzenli yardım sorusunun tüm parti görüşleri için yokluk sonucuna genişletilmemiş. HTML program mevcutken PDF erişim açığı tam program yokluğu yapılmıyor.",
+      "expansion": "İYİ'de olası karşı örnekleri (ek maaş/fark primi) özellikle arayıp gerçek paragraflarını okudum; dar kapsam gerekçesi bunları zaten açıkça ayırıyor."
+    },
+    {
+      "id": "SR15", "title": "Tarihsel BDP: 2022 kanun numarası, yaşlı aylığı ve düzenli nakit",
+      "row_patterns": [{"party":"dbp","pattern":"0308-dbp-program-061-[01]-row$|03-v2-dbp-temel-yurttaslik-geliri$"}],
+      "synthesis": ["04-0314-policy-more-temel-yurttaslik-geliri-3", "04-0314-policy-more-temel-yurttaslik-geliri-5"],
+      "source_reading": "Blogspot özgün program sosyal güvenlik ve sosyal politika paragrafları; ikinci WordPress kopyasının kayıtlı ayrı pasaj/atıf bağı. Güncel DBP program missing/attempt ayrı.",
+      "quote": "2022 sayılı kanunun sağladığı yaşlı aylığı asgari ücret düzeyine çekilecek",
+      "judgment": "2022 yıl değil kanun numarasıdır. Emeklilik yaşı/yaşlı aylığı ve öncelikle çocuk/yaşlı yoksulluğunu hedefleyen ayrı düzenli nakit yardım farklı araçlar. İki kopya iki ayrı parti veya iki bağımsız vaat değildir. Güncel DBP tam program açığı aynı görünümde korunur.",
+      "expansion": "Her iki kopyanın mevcut yaşlı aylığı ve ek düzenli nakit alanlarını birlikte listeleyip kaynak rollerini kontrol ettim; WordPress programın tamamını bu koşuda baştan okumadım."
+    },
+    {
+      "id": "SR16", "title": "Çalışma süreleri: genel, ağır iş ve öneri/gövde koşulları",
+      "rows": ["04-03-v3-0305-dem-program-calisma-row", "04-03-v3-0305-dem-program-missing-calisma-sureleri", "04-03-v3-0309-emep-program-023-0-row", "04-03-v3-0309-emep-program-058-0-row", "04-03-v3-0309-emep-program-pdf-000-0-row", "04-03-v3-0309-emep-program-pdf-001-0-row"],
+      "synthesis": ["04-0314-calisma-sureleri-3", "04-0314-calisma-sureleri-4", "04-0314-calisma-sureleri-5"],
+      "source_reading": "DEM kongre kararı özgün HTML emek başlığı; EMEP özgün HTML çalışma maddesi; EMEP tarama index0 öneri başlığı, index1/basılı2 öneri8 ve index16/basılı13 gövde gerçek görüntüsü.",
+      "quote": "ücretlerde indirime gidilmeksizin, iş gününün sekiz ve iş haftasının 40 saatin altına indirilmesi",
+      "judgment": "DEM ücret kaybı olmadan6 saat, HTML EMEP7 saat/5 günlük hafta ve ağır-tehlikeli iş5 saat ayrı. EMEP kongre önerisi7/35, gövde <8/<40 ve ücret kaybı yok ayrı; önerinin kabulü/sırası bilinmiyor. Saatten iş günü veya tatil sayısı türetilmiyor; DEM kongre eki tam program açığını kapatmıyor.",
+      "expansion": "Aynı konudaki tüm EMEP sayısal çalışma süresi alanları ve karşılaştıran iki olumlu sentez doğrudan kontrol edildi; durum sentezinin program açıkları korunuyor."
+    },
+    {
+      "id": "SR17", "title": "EMEP eğitim önerisi: doğru iki alanın gerçek locatorı",
+      "rows": ["04-0314-emep-education-access-correct-page-row", "04-0314-emep-education-language-correct-page-row"],
+      "source_reading": "82a0 tarama index0–2 gerçek görüntüleri; basılı2'nin sonundaki öneri13. Önceki 17 locatorın tek tek bağımsız tablosu yeniden kullanıldı.",
+      "quote": "İlk, orta ve yüksek öğrenimde demokratik, bilimsel, anadilde, parasız eğitim gerçekleşecektir.",
+      "judgment": "İki seçili alan yalnız yeni doğru index1/basılı2 pasajını kullanır. Eski yanlış index2 pasajları tarihsel veride kalır; yeni olumlu desteğe tekrar bağlanmamış. İlk dört sayfa öneri rolündedir; değiştirilmiştir dili kabul edildiğine ek kanıt oluşturmaz.",
+      "expansion": "Erişim ve dil ardıllarının her ikisi, aynı eski locator hatasından etkilenen bütün iki alan ve ilgili seçili sentez bağımlılıkları kontrol edildi."
+    },
+    {
+      "id": "SR18", "title": "Su ve ihtiyaç: kongre ekleri arasında koşul taşınmaz",
+      "rows": ["04-03-v3-0305-dem-program-kamusal-row", "04-03-v3-0305-dem-program-sosyal-hizmetler-row", "04-03-v3-0305-dem-program-temel-ihtiyac-row", "04-03-v3-0309-emep-program-pdf-004-0-row"],
+      "source_reading": "DEM özgün kongre kararları ekonomi3; EMEP index2/basılı3 öneri14 görüntüsü.",
+      "quote": "kamu kaynaklarıyla ve ihtiyaç sınırına kadar ücretsiz",
+      "judgment": "DEM'in temel ihtiyaç/hizmet satırları ihtiyaç sınırını korur. EMEP önerisi herkese yeterli/parasız su der, kabulü bilinmiyor. DEM ihtiyaca kadar koşulu EMEP'e eklenmiyor; EMEP'in cümlesi DEM'e koşulsuz evrensel hizmet diye aktarılmıyor.",
+      "expansion": "Aynı DEM paragrafından üç konuya türeyen benzer alanların tamamı ve EMEP önerisinin ayrı olumlu alanı incelendi."
+    },
+    {
+      "id": "SR19", "title": "Temsilci ücreti: model, payda ve aktör ayrımı",
+      "rows": ["04-03-v3-0304-tip-program-temsilci-ucret-row", "04-03-v3-0309-emep-program-035-0-row"],
+      "source_reading": "TİP özgün program sosyalist demokrasi paragrafı; EMEP özgün HTML politik alan c bendi, halk demokrasisi bağlamı.",
+      "quote": "kalifiye işçi ücretlerinin ortalamasını aşmayacak şekilde",
+      "judgment": "TİP ortalama işçi ücretini sosyalist demokrasi modelinde; EMEP kalifiye işçi ortalamasını seçilmiş temsilci/vekil/görevli için söyler. Bugünkü maaş verisi, fiilî uygulama veya siyasi üstünlük puanı değildir. İki payda eşitlenmemiş.",
+      "expansion": "İki farklı konu altında bulunan ilgili alanlar gerçek program modelleriyle birlikte okundu."
+    },
+    {
+      "id": "SR20", "title": "Demokrat: metin katmanı boş önsözdeki Senato ve seçim barajı",
+      "rows": ["04-03-v3-0313-demokrat-anayasal-denetim", "04-03-v3-0313-demokrat-secim-siyasi-partiler"],
+      "field_filter": ["04-03-v3-0313-demokrat-003-anayasal-denetim-f", "04-03-v3-0313-demokrat-006-secim-siyasi-partiler-f"],
+      "source_reading": "83 sayfalık ana programın sıfır tabanlı index7/PDF8/basılı14 gerçek görüntüsü; Senato cümlesi önceki sayfadan devam eder.",
+      "quote": "ikinci bir meclisin, yani “Senato”nun kurulmasını",
+      "judgment": "Önsöz devamında anayasaya uygunluk denetimi için Senato ve temsilde adalet sağlayacak baraj indirimi gerçekten var. Metin katmanı boşluğu içerik yokluğu değildir. Baraj için sayısal oran üretilmemiş; iki alanın önsöz pasajları kendi sürümüne bağlı.",
+      "expansion": "Görüntüdeki iki politika cümlesinin her iki seçili alan desteği kontrol edildi."
+    },
+    {
+      "id": "SR21", "title": "Demokrat: 2020 BAU tabanı ve iki sayfalı ithalat karbon vergisi",
+      "rows": ["04-03-v3-0313-demokrat-doga-ekoloji"],
+      "field_filter": ["04-03-v3-0313-demokrat-125-doga-ekoloji-f", "04-03-v3-0313-demokrat-126-doga-ekoloji-f", "04-03-v3-0313-demokrat-127-doga-ekoloji-f", "04-03-v3-0313-demokrat-177-doga-ekoloji-f"],
+      "source_reading": "Program index74–75/basılı81–82 kesintisiz İklim Değişikliği bölümü.",
+      "quote": "hiçbir değişiklik yapılmadığı takdirde tahmin edilen emisyon seviyesinin % 20",
+      "judgment": "%20 gidişat projeksiyonuna göre düşüş; mutlak tarihsel salım veya net sıfır değil. İthalat karbon vergisi önceki sayfanın sonunda başlayan emisyonlarını kısıtlamayan ülke koşulunu taşır; iki sayfa bağlı. Üst sınır/ticaret/AB entegrasyonu ve Yeşil Türkiye Fonu ayrı araçlar olarak korunur.",
+      "expansion": "Aynı iklim paragrafının hedef ve üç araç alanı birlikte kontrol edildi; bu satırın başka sayfalardaki diğer çevre alanları bu koşudaki yeni tam okuma kapsamına dahil değil."
+    },
+    {
+      "id": "SR22", "title": "DYP 1985: gerçek nüsha sayfa açığı",
+      "extra_missing_ids": ["0314-dyp-1985-income-pages-missing"],
+      "extra_version_ids": ["0210-demokrat-old1985-v1"],
+      "source_reading": "Özgün tarama index102/basılı98 ile hemen sonraki index103/basılı101 gerçek görüntüleri.",
+      "quote": "ÇALIŞMA HAYATI — MADDE 47; SENDİKAL HAKLAR — MADDE 48",
+      "judgment": "İlk görüntü98'de sendikal hakların başlangıcı, sonraki fiziksel görüntü101'de dış politika52 başlığı var. Basılı99–100 bu nüshada yok. Bu, sosyal güvenlik/yardım maddelerinin bu nüshadan okunamadığı somut sınır; başka kopyanın pasajı buna taşınamaz, bütün DYP gelir politikası yok denmez.",
+      "expansion": "Gerçek missing→0314-dyp-1985-income-page-check bağı ve önceki income/medical derin okuma sınırları kontrol edildi; görünmez sayfalar tamamlandı sayılmadı."
+    },
+    {
+      "id": "SR23", "title": "Tarihsel DYP üç politika çifti: farklı araç ve bilinmeyen sıra",
+      "rows": ["04-03-v3-0313-demokrat-history-02-row", "04-03-v3-0313-demokrat-history-04-row", "04-03-v3-0313-demokrat-history-05-row", "04-03-v3-0313-demokrat-yargi-bagimsizligi", "04-03-v3-0313-demokrat-yerel-demokrasi", "04-03-v3-0313-demokrat-sagliga-erisim"],
+      "field_filter": ["04-03-v3-0313-demokrat-history-02-f", "04-03-v3-0313-demokrat-history-04-f", "04-03-v3-0313-demokrat-history-05-f", "04-03-v3-0313-demokrat-029-yargi-bagimsizligi-f", "04-03-v3-0313-demokrat-123-yerel-demokrasi-f", "04-03-v3-0313-demokrat-076-sagliga-erisim-f"],
+      "source_reading": "II.Demokrasi/Adalet Devleti index4 görüntüsü; DYP1985 index86/basılı82 ve index101/basılı97 görüntüleri; arşiv Demokrat index20/basılı27,28/basılı35,48/basılı55 tam metin sayfaları.",
+      "quote": "Belirli zaruri kamu hizmetlerinin sağlanamamasında gerektiğinde genel bütçeden yardım yapılmalıdır.",
+      "judgment": "Ayrı hâkim/savcı kurulları ile Bakanlık vesayetinden kurtarma farklı; zorunlu hizmet yetersizliğinde gerektiğinde bütçe yardımı ile kendi yerel gelirleri farklı; yoksulun devletçe sigorta primi ile vatandaş katkı payı alınmaması farklı araçtır. Prim/katkı payı eşitlenmez; tam tarihsel sıra ve her metnin hukuki yürürlüğü çıkarılmaz.",
+      "expansion": "Üç tarihsel ve üç ana program alanı, kendi sürüm/pasaj çiftleriyle doğrudan ikinci okundu. Diğer 1983/1988/1990 kopyalar için önceki tam okuma yeniden kullanılır; bu koşuda onlar yeniden baştan okunmadı."
+    },
+    {
+      "id": "SR24", "title": "Yeni Yol: gerçek belge açığı ve başka parti/grup metninin aktarılmaması",
+      "row_patterns": [{"party":"yeni-yol","pattern":"0307-yeni-yol-(genel-baskan-secimi-charter|calisma-sureleri-program)$"}],
+      "extra_version_ids": ["0206-yeni-yol-registry-v1", "0206-yeni-yol-founding-v1"],
+      "source_reading": "Arşivli Yargıtay331 özgün kimlik kaydı ve KARAR kuruluş haberinin taslak onayı paragrafı; iki gerçek 03-07 arama günlüğünün tamamı.",
+      "quote": "parti programı ve tüzük taslaklarının onaylandığı",
+      "judgment": "Haber taslak onayı bildirir, madde metni sağlamaz; sicil aynı331 kimliğinin kuruluş/başkan verisini taşır. Başka tüzel partilerin programı veya ortak grup konuşması Yeni Yol'un tam tüzük/programı yapılmamış. 305 ortak konu iki gerçek belge açığına bağlanabilir; her hücreye sahte yeni arama gerekmez. Bulunamadı parti karşıtlığı değildir.",
+      "expansion": "Dokuzlu kapsam auditinde Yeni Yol'un tüm305 satırının yalnız charter/program gerçek missing bağları kullanıldığı kontrol edildi; aktif içerik henüz-incelenmedi kaydına çevrilmedi."
+    }
+  ]
+}
