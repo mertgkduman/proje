@@ -1,0 +1,456 @@
+{
+  "artifact_version": 1,
+  "tip_independent_dated_scope": {
+    "id": "cell-bcf7559d68a466c2ef17b6e1",
+    "logical_key": {
+      "topic_id": "aday-tanitimi",
+      "party_id": "tip",
+      "source_role": "charter",
+      "version_id": "0203-tip-charter-v1",
+      "level": "ulusal ve yerel",
+      "organ": "Kamu adayı tanıtımı",
+      "context_judgment": "0304-tip-charter-scope-aday-tanitim-html-row"
+    },
+    "disposition": "no_explicit_statement",
+    "source_judgment": {
+      "path": "data/comparisons/03-tip-charter.json",
+      "pointer": "/records/2689/values"
+    },
+    "source_judgment_record": {
+      "id": "0304-tip-charter-scope-aday-tanitim-html-row",
+      "topic_id": "aday-tanitimi",
+      "taxonomy_version": 2,
+      "party_id": "tip",
+      "level": "ulusal ve yerel",
+      "organ": "Kamu adayı tanıtımı",
+      "version_id": "0203-tip-charter-v1",
+      "alternative_group": null,
+      "source_role": "charter",
+      "state": "no_explicit_statement",
+      "scope_id": "0304-tip-charter-scope-aday-tanitim-html-scope",
+      "missing_id": null,
+      "selection_reason": "HTML tüzüğün tüm bölümleri ve ilgili hükümleri incelendi. Aday belirleme yetkisi PMye verilir; incelenen sürümde kamu seçimi aday adaylarının tanıtımına ilişkin ayrı usul açıklanmaz."
+    },
+    "mapping_refs": [
+      {
+        "path": "data/comparisons/03-taxonomy-v3.json",
+        "pointer": "/row_mappings/801"
+      },
+      {
+        "path": "data/comparisons/03-taxonomy-v4.json",
+        "pointer": "/row_mappings/632"
+      }
+    ],
+    "mapping_records": [
+      {
+        "old_row_id": "0304-tip-charter-scope-aday-tanitim-html-row",
+        "new_row_id": "03-v3-0304-tip-charter-scope-aday-tanitim-html-row",
+        "topic_id": "aday-tanitimi",
+        "reason": "Mekanik soy: aynı konu tanımı ile kaynak satırı ve alan ilişkileri korunur; önceki gerçek inceleme kayıtları arşivde kalır.",
+        "fields": [],
+        "changes": []
+      },
+      {
+        "old_row_id": "03-v3-0304-tip-charter-scope-aday-tanitim-html-row",
+        "new_row_id": "04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row",
+        "topic_id": "aday-tanitimi",
+        "reason": "Aynı kaynak, parti, belge rolü, durum ve alanlar korunur; önceki gerçek inceleme kaynak kimliği ve tarihiyle arşivde kalır.",
+        "fields": [],
+        "changes": []
+      }
+    ],
+    "basis_ids": [
+      "basis-1f3cd49156cb596f69292f0c"
+    ],
+    "field_dispositions": [
+      {
+        "field": "charter_answer",
+        "disposition": "no_explicit_statement_in_recorded_scope",
+        "basis_ids": [
+          "basis-1f3cd49156cb596f69292f0c"
+        ],
+        "limit": "This is the boundary of this cited judgment, not a newly performed whole-document search or an opposing party position."
+      }
+    ],
+    "inventory_section_indexes": [],
+    "fulfilment_locator_only": "04-03-v3-0304-tip-charter-scope-aday-tanitim-html-row",
+    "assertions": [
+      {
+        "kind": "dated_source_scope",
+        "scope": {
+          "id": "0304-tip-charter-scope-aday-tanitim-html-scope",
+          "party_id": "tip",
+          "version_id": "0203-tip-charter-v1",
+          "sections": "HTML tüzük Bölüm 1–7, Madde 1.1–7.2",
+          "query_terms": "Kamu adayı tanıtımı",
+          "reviewed_at": "2026-11-13T13:55:32.558426+00:00",
+          "result": "no_explicit_statement",
+          "reason": "HTML tüzüğün tüm bölümleri ve ilgili hükümleri incelendi. Aday belirleme yetkisi PMye verilir; incelenen sürümde kamu seçimi aday adaylarının tanıtımına ilişkin ayrı usul açıklanmaz."
+        },
+        "source": {
+          "path": "data/comparisons/03-tip-charter.json",
+          "pointer": "/records/2688/values"
+        },
+        "semantic_reviews": []
+      }
+    ]
+  },
+  "programme_principle": {
+    "id": "SR25:field:tip-kapitalizm-principle",
+    "group_id": "SR25",
+    "kind": "field_support",
+    "cell_id": "cell-f791bd14f9b5dbaef66975e7",
+    "basis_ids": [
+      "basis-c3ac8d6bd83629a0ad1b87d6"
+    ],
+    "row_id": "04-03-v3-0304-tip-program-kapitalizm-row",
+    "field_id": "04-03-v3-0304-tip-program-kapitalizm-field",
+    "party_id": "tip",
+    "version_id": "0203-tip-program-v1",
+    "source_role": "program",
+    "field": "principle",
+    "condition_key": null,
+    "summary_finding_id": "0304-tip-program-kapitalizm-summary",
+    "quote_finding_id": "0304-tip-program-kapitalizm-quote",
+    "summary_passage_ids": [
+      "0304-tip-program-kapitalizm-p1",
+      "0304-tip-program-kapitalizm-p2",
+      "0304-tip-program-kapitalizm-q"
+    ],
+    "quote_passage_ids": [
+      "0304-tip-program-kapitalizm-q"
+    ],
+    "decision": "supported_with_stated_scope",
+    "reviewer_kind": "agent",
+    "recorded_at": "2026-11-15T16:52:28Z",
+    "reading_origin": "new_bounded_original_html_reading",
+    "source_reading": "Original HTML heading KAPİTALİZM BÜTÜNSEL BİR BUNALIM İÇİNDE; preceding paragraph and first three complete following paragraphs read, rather than quote-only verification.",
+    "judgment": "İki tam paragraf kapitalizmin bunalımını ekonomik, siyasal, ideolojik, toplumsal ve ekolojik boyutlarıyla anlatır ve kendiliğinden yıkılış sonucunu açıkça reddeder. Özet her iki unsuru korur. Bu programatik çözümleme ilke alanında kaynaklı aktarılabilir; bu bağlam tek başına ölçülebilir bir hedef veya idari uygulama aracı belirtmez. Sosyalist iktidar mücadelesi ifadesinden yeni tutar, kurum veya uygulama takvimi üretilmez.",
+    "original_path": "data/objects/6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0/original.html.bin",
+    "source_sha256": "6aa8a0087e2426e808defbc8e427281f08862b1206fdad2ae847fd294854c7e0",
+    "limit": "One source-context principle decision, not a new whole-programme review or a claim that all targets/instruments are absent."
+  },
+  "programme_conditioned_instrument": {
+    "id": "SR13:field:04-0314-saadet-nakit-gelir-f",
+    "group_id": "SR13",
+    "kind": "field_support",
+    "cell_id": "cell-0de861cc32675fa309925227",
+    "basis_ids": [
+      "basis-f1a47f7a3d0597547a496cc1"
+    ],
+    "row_id": "04-0314-saadet-nakit-gelir-row",
+    "field_id": "04-0314-saadet-nakit-gelir-f",
+    "party_id": "saadet",
+    "version_id": "0209-saadet-current-program-v1",
+    "source_role": "program",
+    "field": "instrument",
+    "condition_key": "Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlar",
+    "summary_finding_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-s",
+    "quote_finding_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-q",
+    "summary_passage_ids": [
+      "0311-saadet-p2-073-temel-yurttaslik-geliri-p"
+    ],
+    "quote_passage_ids": [
+      "0311-saadet-p2-073-temel-yurttaslik-geliri-p"
+    ],
+    "decision": "supported_with_stated_scope",
+    "judgment": "Saadet üç koşulu koruyor; genel insanca gelir ilkesi bunları kaldırmıyor. Demokrat gerçekten her vatandaş için asgari nakit gelir söyler, ama eşit tutar, eşik veya ödeme periyodu belirtilmemiştir. Birinin koşulu diğerine aktarılmıyor.",
+    "source_reading": "Saadet program index37/basılı38 genel sosyal güvenlik ile index40/basılı41 somut ödeme; Demokrat index44/basılı51 tüm paragraf.",
+    "recorded_at": "2026-11-15T12:52:48.199108+00:00",
+    "reviewer_kind": "agent",
+    "reading_origin": "inherited_actual_second_reading",
+    "original_field_review": {
+      "kind": "same_findings_prior_semantic",
+      "direct": null,
+      "inherited": [
+        {
+          "reason": "2.3.11 Çalışma Hayatı bölümü, PDF ve basılı sayfa 41: Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlara Temel Vatandaşlık Geliri ödenmesi önerilir; tüm yurttaşları kapsadığı veya gelirsizlik şartı belirtilmez. Bu ifade parti programındaki yaklaşım veya öneridir; gerçekleşmiş uygulama ve bütün nüsha için yürürlük tarihi olarak yorumlanmadı.",
+          "result": "reviewed",
+          "reviewed_at": "2026-11-14T08:57:00.913679+00:00",
+          "reviewer_kind": "agent",
+          "subject_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-f",
+          "subject_kind": "comparison_field"
+        }
+      ],
+      "finding_reviews": [
+        {
+          "id": "review-0311-saadet-p2-073-temel-yurttaslik-geliri-s",
+          "kind": "finding",
+          "reason": "2.3.11 Çalışma Hayatı bölümü, PDF ve basılı sayfa 41: Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlara Temel Vatandaşlık Geliri ödenmesi önerilir; tüm yurttaşları kapsadığı veya gelirsizlik şartı belirtilmez. Bu ifade parti programındaki yaklaşım veya öneridir; gerçekleşmiş uygulama ve bütün nüsha için yürürlük tarihi olarak yorumlanmadı.",
+          "result": "reviewed",
+          "reviewed_at": "2026-11-14T08:57:00.913679+00:00",
+          "reviewer_kind": "agent",
+          "subject_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-s"
+        },
+        {
+          "id": "review-0311-saadet-p2-073-temel-yurttaslik-geliri-q",
+          "kind": "finding",
+          "reason": "2.3.11 Çalışma Hayatı bölümü, PDF ve basılı sayfa 41: Ülkede doğmuş, ülke için çalışmış ve vergi ödemiş vatandaşlara Temel Vatandaşlık Geliri ödenmesi önerilir; tüm yurttaşları kapsadığı veya gelirsizlik şartı belirtilmez. Bu ifade parti programındaki yaklaşım veya öneridir; gerçekleşmiş uygulama ve bütün nüsha için yürürlük tarihi olarak yorumlanmadı.",
+          "result": "reviewed",
+          "reviewed_at": "2026-11-14T08:57:00.913679+00:00",
+          "reviewer_kind": "agent",
+          "subject_id": "0311-saadet-p2-073-temel-yurttaslik-geliri-q"
+        }
+      ]
+    }
+  },
+  "programme_target": {
+    "id": "SR16:field:04-03-v3-0305-dem-program-calisma-field",
+    "group_id": "SR16",
+    "kind": "field_support",
+    "cell_id": "cell-417cf36023a55a26bcd10a8b",
+    "basis_ids": [
+      "basis-d127a1b508c681d458146473"
+    ],
+    "row_id": "04-03-v3-0305-dem-program-calisma-row",
+    "field_id": "04-03-v3-0305-dem-program-calisma-field",
+    "party_id": "dem",
+    "version_id": "0204-dem-policies-v1",
+    "source_role": "supplement",
+    "field": "target",
+    "condition_key": null,
+    "summary_finding_id": "0305-dem-program-calisma-summary",
+    "quote_finding_id": "0305-dem-program-calisma-quote",
+    "summary_passage_ids": [
+      "0305-dem-program-calisma-passage",
+      "0305-dem-program-calisma-context-passage"
+    ],
+    "quote_passage_ids": [
+      "0305-dem-program-calisma-passage"
+    ],
+    "decision": "supported_with_stated_scope",
+    "judgment": "DEM ücret kaybı olmadan6 saat, HTML EMEP7 saat/5 günlük hafta ve ağır-tehlikeli iş5 saat ayrı. EMEP kongre önerisi7/35, gövde <8/<40 ve ücret kaybı yok ayrı; önerinin kabulü/sırası bilinmiyor. Saatten iş günü veya tatil sayısı türetilmiyor; DEM kongre eki tam program açığını kapatmıyor.",
+    "source_reading": "DEM kongre kararı özgün HTML emek başlığı; EMEP özgün HTML çalışma maddesi; EMEP tarama index0 öneri başlığı, index1/basılı2 öneri8 ve index16/basılı13 gövde gerçek görüntüsü.",
+    "recorded_at": "2026-11-15T12:52:48.199108+00:00",
+    "reviewer_kind": "agent",
+    "reading_origin": "inherited_actual_second_reading",
+    "original_field_review": {
+      "kind": "same_findings_prior_semantic",
+      "direct": null,
+      "inherited": [
+        {
+          "reason": "Ajan kongre kararlarının Emek örgütlenmesi bölümündeki metni kaynakla anlam, kapsam ve koşul açısından karşılaştırdı. Ücret kaybı olmadan altı saat çalışma hakkı için mücadele edeceğini belirtir. Bu açıklama ek belgeye aittir; bağımsız program veya fiilî uygulama değildir.",
+          "result": "reviewed",
+          "reviewed_at": "2026-11-13T17:47:13.666925+00:00",
+          "reviewer_kind": "agent",
+          "subject_id": "0305-dem-program-calisma-field",
+          "subject_kind": "comparison_field"
+        }
+      ],
+      "finding_reviews": [
+        {
+          "id": "review-0305-dem-program-calisma-summary",
+          "kind": "finding",
+          "reason": "Ajan kongre kararlarının Emek örgütlenmesi bölümündeki metni kaynakla anlam, kapsam ve koşul açısından karşılaştırdı. Ücret kaybı olmadan altı saat çalışma hakkı için mücadele edeceğini belirtir. Bu açıklama ek belgeye aittir; bağımsız program veya fiilî uygulama değildir.",
+          "result": "reviewed",
+          "reviewed_at": "2026-11-13T17:47:13.666925+00:00",
+          "reviewer_kind": "agent",
+          "subject_id": "0305-dem-program-calisma-summary"
+        },
+        {
+          "id": "review-0305-dem-program-calisma-quote",
+          "kind": "finding",
+          "reason": "Ajan kongre kararlarının Emek örgütlenmesi bölümündeki metni kaynakla anlam, kapsam ve koşul açısından karşılaştırdı. Ücret kaybı olmadan altı saat çalışma hakkı için mücadele edeceğini belirtir. Bu açıklama ek belgeye aittir; bağımsız program veya fiilî uygulama değildir.",
+          "result": "reviewed",
+          "reviewed_at": "2026-11-13T17:47:13.666925+00:00",
+          "reviewer_kind": "agent",
+          "subject_id": "0305-dem-program-calisma-quote"
+        }
+      ]
+    }
+  },
+  "synthesis_one_positive": {
+    "id": "SR10:synthesis:04-0314-charter-last-engelli-koordinasyon-1",
+    "group_id": "SR10",
+    "kind": "synthesis_support",
+    "synthesis_id": "04-0314-charter-last-engelli-koordinasyon-1",
+    "topic_id": "engelli-koordinasyon",
+    "claim_type": "one_positive",
+    "sides": [
+      {
+        "party_id": "saadet",
+        "row_id": "04-03-v3-0310-saadet-1-043-engelli-koordinasyon-row",
+        "support": "passage",
+        "refs": [
+          "0310-saadet-1-043-engelli-koordinasyon-context"
+        ]
+      },
+      {
+        "party_id": "saadet",
+        "row_id": "04-03-v3-0310-saadet-1-076a-engelli-koordinasyon-row",
+        "support": "passage",
+        "refs": [
+          "0310-saadet-1-076a-engelli-koordinasyon-context"
+        ]
+      },
+      {
+        "party_id": "saadet",
+        "row_id": "04-03-v3-0310-saadet-1-076b-engelli-koordinasyon-row",
+        "support": "passage",
+        "refs": [
+          "0310-saadet-1-076b-engelli-koordinasyon-context"
+        ]
+      },
+      {
+        "party_id": "yeni-yol",
+        "row_id": "04-03-v3-0307-yeni-yol-engelli-koordinasyon-charter",
+        "support": "missing",
+        "refs": [
+          "0307-yeni-yol-missing-charter",
+          "0307-yeni-yol-search-charter-20261113"
+        ]
+      }
+    ],
+    "explanation": "Saadet 27/A'nın özgün index12/basılı13 sayfası ve her üç satırın kendi context pasajı okundu. Merkez için GİK kararı, yereller için il ve ilçe yönetim kurulları; başkan dahil 7/5/3 kişi ve sayının ilgili kurullarca yeniden düzenlenebilmesi açıkça yazılıdır. Kurabilir ifadesi zorunlu kuruluş veya fiilî kurulmuş birim kanıtı değildir; sayılar değişmez asgari sayı da değildir. Aynı paragraf birimin engellilerin meseleleri, raporlar ve parti çalışmalarına aktif katılımıyla ilgileneceğini söyler. Üç kademe aynı olumlu partiye aittir; Yeni Yol'un ayrı gerçek belge açığı ikinci tarafın durumunu sağlar, böyle bir birimi reddettiğini göstermez.",
+    "judgment": "Merkez7/il5/ilçe3 ve kurabilir/değiştirebilir korunuyor; kurulmuş birim ya da sabit asgari sayı denmiyor. Üç kademe tek olumlu partidir. TİP iki nüsha iki parti sayılmaz. Yeni Yol gerçek belge açığı; diğer taraflar tanımlı dar inceleme kapsamıdır.",
+    "source_reading": "Saadet tüzük index12/basılı13 Madde27/A tam sayfa yeniden okundu. Diğer sekiz tarafın kapsam/missing zincirleri ve önceki sparse-topic-independent-review.json sınırları yeniden kullanıldı; bu koşuda bütün tüzükler baştan okunmadı.",
+    "recorded_at": "2026-11-15T12:52:48.199108+00:00",
+    "reviewer_kind": "agent",
+    "reading_origin": "inherited_actual_second_reading",
+    "original_semantic_review": {
+      "reason": "{\"contract_version\":2,\"claim_type\":\"one_positive\",\"explanation\":\"Saadet 27/A'nın özgün index12/basılı13 sayfası ve her üç satırın kendi context pasajı okundu. Merkez için GİK kararı, yereller için il ve ilçe yönetim kurulları; başkan dahil 7/5/3 kişi ve sayının ilgili kurullarca yeniden düzenlenebilmesi açıkça yazılıdır. Kurabilir ifadesi zorunlu kuruluş veya fiilî kurulmuş birim kanıtı değildir; sayılar değişmez asgari sayı da değildir. Aynı paragraf birimin engellilerin meseleleri, raporlar ve parti çalışmalarına aktif katılımıyla ilgileneceğini söyler. Üç kademe aynı olumlu partiye aittir; Yeni Yol'un ayrı gerçek belge açığı ikinci tarafın durumunu sağlar, böyle bir birimi reddettiğini göstermez.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"04-03-v3-0310-saadet-1-043-engelli-koordinasyon-row\",\"support\":\"passage\",\"refs\":[\"0310-saadet-1-043-engelli-koordinasyon-context\"]},{\"party_id\":\"saadet\",\"row_id\":\"04-03-v3-0310-saadet-1-076a-engelli-koordinasyon-row\",\"support\":\"passage\",\"refs\":[\"0310-saadet-1-076a-engelli-koordinasyon-context\"]},{\"party_id\":\"saadet\",\"row_id\":\"04-03-v3-0310-saadet-1-076b-engelli-koordinasyon-row\",\"support\":\"passage\",\"refs\":[\"0310-saadet-1-076b-engelli-koordinasyon-context\"]},{\"party_id\":\"yeni-yol\",\"row_id\":\"04-03-v3-0307-yeni-yol-engelli-koordinasyon-charter\",\"support\":\"missing\",\"refs\":[\"0307-yeni-yol-missing-charter\",\"0307-yeni-yol-search-charter-20261113\"]}]}",
+      "result": "reviewed",
+      "reviewed_at": "2026-11-14T22:38:20.226318+00:00",
+      "reviewer_kind": "agent",
+      "subject_id": "04-0314-charter-last-engelli-koordinasyon-1",
+      "subject_kind": "comparison_synthesis"
+    }
+  },
+  "synthesis_multi_positive": {
+    "id": "SR13:synthesis:04-0314-policy-more-temel-yurttaslik-geliri-2",
+    "group_id": "SR13",
+    "kind": "synthesis_support",
+    "synthesis_id": "04-0314-policy-more-temel-yurttaslik-geliri-2",
+    "topic_id": "temel-yurttaslik-geliri",
+    "claim_type": "multi_positive",
+    "sides": [
+      {
+        "party_id": "saadet",
+        "row_id": "04-0314-saadet-nakit-gelir-row",
+        "support": "passage",
+        "refs": [
+          "0311-saadet-p2-073-temel-yurttaslik-geliri-p"
+        ]
+      },
+      {
+        "party_id": "demokrat",
+        "row_id": "04-03-v3-03-v2-demokrat-temel-yurttaslik-geliri",
+        "support": "passage",
+        "refs": [
+          "0313-demokrat-068-temel-yurttaslik-geliri-p"
+        ]
+      }
+    ],
+    "explanation": "Saadet'in üç nitelemesi daha genel herkese gelir ilkesiyle silinmedi. DP'deki asgari nakit desteği ise belirli bir koşulsuz eşit ödeme sistemi olarak tanımlanmadı; bağlı pasajın ayrıntıları aşılmadı. Taraf incelemeleri: saadet: Basılı41 ödeme kapsamını doğum, çalışma ve vergi ile niteler. Basılı38'deki genel insan onuruna yaraşır gelir ilkesi bu somut ödeme şartlarını kaldırmaz. demokrat: Basılı51 her vatandaşa asgari nakit destek hedefini söyler; tutar, sıklık ve gelir testi biçimi bu cümlede açıklanmaz.",
+    "judgment": "Saadet üç koşulu koruyor; genel insanca gelir ilkesi bunları kaldırmıyor. Demokrat gerçekten her vatandaş için asgari nakit gelir söyler, ama eşit tutar, eşik veya ödeme periyodu belirtilmemiştir. Birinin koşulu diğerine aktarılmıyor.",
+    "source_reading": "Saadet program index37/basılı38 genel sosyal güvenlik ile index40/basılı41 somut ödeme; Demokrat index44/basılı51 tüm paragraf.",
+    "recorded_at": "2026-11-15T12:52:48.199108+00:00",
+    "reviewer_kind": "agent",
+    "reading_origin": "inherited_actual_second_reading",
+    "original_semantic_review": {
+      "reason": "{\"contract_version\":2,\"claim_type\":\"multi_positive\",\"explanation\":\"Saadet'in üç nitelemesi daha genel herkese gelir ilkesiyle silinmedi. DP'deki asgari nakit desteği ise belirli bir koşulsuz eşit ödeme sistemi olarak tanımlanmadı; bağlı pasajın ayrıntıları aşılmadı. Taraf incelemeleri: saadet: Basılı41 ödeme kapsamını doğum, çalışma ve vergi ile niteler. Basılı38'deki genel insan onuruna yaraşır gelir ilkesi bu somut ödeme şartlarını kaldırmaz. demokrat: Basılı51 her vatandaşa asgari nakit destek hedefini söyler; tutar, sıklık ve gelir testi biçimi bu cümlede açıklanmaz.\",\"sides\":[{\"party_id\":\"saadet\",\"row_id\":\"04-0314-saadet-nakit-gelir-row\",\"support\":\"passage\",\"refs\":[\"0311-saadet-p2-073-temel-yurttaslik-geliri-p\"]},{\"party_id\":\"demokrat\",\"row_id\":\"04-03-v3-03-v2-demokrat-temel-yurttaslik-geliri\",\"support\":\"passage\",\"refs\":[\"0313-demokrat-068-temel-yurttaslik-geliri-p\"]}]}",
+      "result": "reviewed",
+      "reviewed_at": "2026-11-14T22:00:35.848035+00:00",
+      "reviewer_kind": "agent",
+      "subject_id": "04-0314-policy-more-temel-yurttaslik-geliri-2",
+      "subject_kind": "comparison_synthesis"
+    }
+  },
+  "synthesis_status_only": {
+    "id": "SR08:synthesis:0314-v4-denetim-dar-kapsam",
+    "group_id": "SR08",
+    "kind": "synthesis_support",
+    "synthesis_id": "0314-v4-denetim-dar-kapsam",
+    "topic_id": "denetleme-kurullari",
+    "claim_type": "status_only",
+    "sides": [
+      {
+        "party_id": "dbp",
+        "row_id": "04-03-v3-0308-dbp-absence-27-row",
+        "support": "scope",
+        "refs": [
+          "0308-dbp-absence-27-scope"
+        ]
+      },
+      {
+        "party_id": "dem",
+        "row_id": "04-03-v3-0305-dem-scope-denetim-dem-absence",
+        "support": "scope",
+        "refs": [
+          "0305-dem-scope-denetim-dem-scope"
+        ]
+      },
+      {
+        "party_id": "dem",
+        "row_id": "04-03-v3-0305-dem-scope-denetim-hedep-absence",
+        "support": "scope",
+        "refs": [
+          "0305-dem-scope-denetim-hedep-scope"
+        ]
+      },
+      {
+        "party_id": "iyi",
+        "row_id": "04-03-v3-0306-iyi-scope-denetleme-kurullari-absence",
+        "support": "scope",
+        "refs": [
+          "0306-iyi-scope-denetleme-kurullari-scope"
+        ]
+      },
+      {
+        "party_id": "emep",
+        "row_id": "04-03-v3-0309-emep-scope-017-row",
+        "support": "scope",
+        "refs": [
+          "0309-emep-scope-017-scope"
+        ]
+      },
+      {
+        "party_id": "yeni-parti",
+        "row_id": "04-03-v3-0303-epm-scope-denetleme-kurullari-row",
+        "support": "scope",
+        "refs": [
+          "0303-epm-scope-denetleme-kurullari-scope"
+        ]
+      }
+    ],
+    "explanation": "DBP kaydı denetleme kurulu adıyla ayrı organı, DEM ve HEDEP ayrı nüshalarda ayrı kurul oluşumunu, İYİ ayrı parti denetleme kurulunu, EMEP ilgili HTML tüzüğündeki ayrı düzenlemeyi, Yeni Parti ayrı denetleme kurulunu sorar. Bu dar kapsamlar genel mali inceleme komisyonu veya bütün denetim işlevleri yokluğu olarak genişletilmedi; Demokratın kendi kapsamı ise bağımsız kurul sorusudur ve yeni hesap komisyonu kaydıyla ayrıca gösterilir.",
+    "judgment": "TİP iki nüshada 6 ay/yıl ve Örgüt Komitesi önerisi farkını; Saadet Büyük Kongre hesap raporunun önceliğini; Demokrat il/ilçe kongrelerinin hesap komisyonunu korur. Sentez örgütsel denetimi mali kongre komisyonuyla eşitlemez. Dar kapsam cümlesi müfettişlik/kongre hesabının yokluğu iddiası yapmaz.",
+    "source_reading": "TİP özgün HTML 5.1 ve PDF index23/basılı22 gerçek görüntü; Saadet index6/basılı7; Demokrat index16–17.",
+    "recorded_at": "2026-11-15T12:52:48.199108+00:00",
+    "reviewer_kind": "agent",
+    "reading_origin": "inherited_actual_second_reading",
+    "original_semantic_review": {
+      "reason": "{\"contract_version\":2,\"claim_type\":\"status_only\",\"explanation\":\"DBP kaydı denetleme kurulu adıyla ayrı organı, DEM ve HEDEP ayrı nüshalarda ayrı kurul oluşumunu, İYİ ayrı parti denetleme kurulunu, EMEP ilgili HTML tüzüğündeki ayrı düzenlemeyi, Yeni Parti ayrı denetleme kurulunu sorar. Bu dar kapsamlar genel mali inceleme komisyonu veya bütün denetim işlevleri yokluğu olarak genişletilmedi; Demokratın kendi kapsamı ise bağımsız kurul sorusudur ve yeni hesap komisyonu kaydıyla ayrıca gösterilir.\",\"sides\":[{\"party_id\":\"dbp\",\"row_id\":\"04-03-v3-0308-dbp-absence-27-row\",\"support\":\"scope\",\"refs\":[\"0308-dbp-absence-27-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-denetim-dem-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-denetim-dem-scope\"]},{\"party_id\":\"dem\",\"row_id\":\"04-03-v3-0305-dem-scope-denetim-hedep-absence\",\"support\":\"scope\",\"refs\":[\"0305-dem-scope-denetim-hedep-scope\"]},{\"party_id\":\"iyi\",\"row_id\":\"04-03-v3-0306-iyi-scope-denetleme-kurullari-absence\",\"support\":\"scope\",\"refs\":[\"0306-iyi-scope-denetleme-kurullari-scope\"]},{\"party_id\":\"emep\",\"row_id\":\"04-03-v3-0309-emep-scope-017-row\",\"support\":\"scope\",\"refs\":[\"0309-emep-scope-017-scope\"]},{\"party_id\":\"yeni-parti\",\"row_id\":\"04-03-v3-0303-epm-scope-denetleme-kurullari-row\",\"support\":\"scope\",\"refs\":[\"0303-epm-scope-denetleme-kurullari-scope\"]}]}",
+      "result": "reviewed",
+      "reviewed_at": "2026-11-14T23:31:56.983810+00:00",
+      "reviewer_kind": "agent",
+      "subject_id": "0314-v4-denetim-dar-kapsam",
+      "subject_kind": "comparison_synthesis"
+    }
+  },
+  "physical_copy_gap": {
+    "id": "SR22:physical-page-gap",
+    "group_id": "SR22",
+    "kind": "physical_page_gap",
+    "missing_id": "0314-dyp-1985-income-pages-missing",
+    "attempt_id": "0314-dyp-1985-income-page-check",
+    "version_id": "0210-demokrat-old1985-v1",
+    "pdf_page_indexes": [
+      102,
+      103
+    ],
+    "printed_pages_observed": [
+      "98",
+      "101"
+    ],
+    "unavailable_printed_pages": [
+      "99",
+      "100"
+    ],
+    "judgment": "İlk görüntü98'de sendikal hakların başlangıcı, sonraki fiziksel görüntü101'de dış politika52 başlığı var. Basılı99–100 bu nüshada yok. Bu, sosyal güvenlik/yardım maddelerinin bu nüshadan okunamadığı somut sınır; başka kopyanın pasajı buna taşınamaz, bütün DYP gelir politikası yok denmez.",
+    "source_reading": "Özgün tarama index102/basılı98 ile hemen sonraki index103/basılı101 gerçek görüntüleri.",
+    "recorded_at": "2026-11-15T12:52:48.199108+00:00",
+    "reviewer_kind": "agent",
+    "reading_origin": "inherited_actual_second_reading"
+  }
+}
