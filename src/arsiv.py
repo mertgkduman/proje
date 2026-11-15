@@ -978,6 +978,53 @@ def validate_completion_basis_successor(old, new):
     return True
 
 
+def verify_initial_completion_basis(basis, risk_universe):
+    """Reconcile the independently authored initial ledger to source packages.
+
+    These reviewed corpus identities establish which complete ledger was
+    adopted; source judgments, mapping bodies and dates are checked separately.
+    Later audit uses the frozen records, not the files read here.
+    """
+    digest = hashlib.sha256(canonical_json(basis).encode()).hexdigest()
+    risk_digest = hashlib.sha256(canonical_json(risk_universe).encode()).hexdigest()
+    if digest != 'ec14789049a61a7c7e1a4c1f70cfa809cd44c5086b1c636b60f663eebe37fc5a' or risk_digest != 'b513d957f49f2df597beafbc58969095d498e1cfeb78f96235cf55cb0a37feb9':
+        raise ValueError('İlk kaynak evreni bağımsız hazırlanmış bütüne uyuşmuyor')
+    sources = {}
+    for item in basis['source_documents']:
+        path = item['path']
+        if not path.startswith('data/') or path in sources:
+            raise ValueError('Kaynak paket yolu geçersiz')
+        file = safe_path(DATA, path[len('data/'):])
+        if sha(file) != item['sha256']:
+            raise ValueError('Kaynak paketi özgün özeti uyuşmuyor: ' + path)
+        sources[path] = json.loads(file.read_text(encoding='utf-8'))
+
+    def resolve(ref):
+        if not isinstance(ref, dict) or ref.get('path') not in sources or not ref.get('pointer', '').startswith('/'):
+            raise ValueError('Kaynak kararının özgün adresi geçersiz')
+        value = sources[ref['path']]
+        try:
+            for token in ref['pointer'][1:].split('/'):
+                token = token.replace('~1', '/').replace('~0', '~')
+                value = value[int(token)] if isinstance(value, list) else value[token]
+        except (ValueError, TypeError, IndexError, KeyError) as exc:
+            raise ValueError('Kaynak kararının özgün adresi bulunamadı') from exc
+        return value
+
+    for cell in basis['cells']:
+        if resolve(cell['source_judgment']) != cell['source_judgment_record'] or len(cell['mapping_refs']) != len(cell['mapping_records']):
+            raise ValueError('Özgün kaynak kararının içeriği uyuşmuyor')
+        if any(resolve(ref) != record for ref, record in zip(cell['mapping_refs'], cell['mapping_records'])):
+            raise ValueError('Özgün kaynak eşlemesinin içeriği uyuşmuyor')
+    for claim in basis['synthesis_obligations']:
+        if resolve(claim['source']) != claim['source_authored_claim'] or resolve(claim['review_source']) != claim['original_review']:
+            raise ValueError('Özgün sentez kararı uyuşmuyor')
+    inventory = sources.get('data/comparisons/03-source-inventory-v4.json', {})
+    if inventory.get('sections') != basis['inventory_sections']:
+        raise ValueError('Özgün kaynak envanteri uyuşmuyor')
+    return True
+
+
 def validate_completion_revisions(data):
     """Check immutable revision selections; the last epoch is the active one."""
     revisions = sorted(data.get('comparison_completion_revision', []), key=lambda r: r['epoch'])

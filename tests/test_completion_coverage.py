@@ -125,6 +125,16 @@ class CompletionCoverageTest(unittest.TestCase):
         self.assertTrue(arsiv.validate_source_basis_universe(self.reviewed, restored))
         self.assertTrue(arsiv.validate_source_risk_review(self.reviewed, restored, restored_risk, risk['decisions']))
 
+    def test_initial_basis_reconciles_authored_origins_before_adoption(self):
+        root = Path(__file__).resolve().parents[1] / 'data/comparisons'
+        basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())
+        risk = json.loads((root / '03-completion-risk-v2-source.json').read_text())
+        self.assertTrue(arsiv.verify_initial_completion_basis(basis, risk['expected_risk_universe']))
+        with self.assertRaisesRegex(ValueError, 'bağımsız hazırlanmış bütüne'):
+            arsiv.verify_initial_completion_basis(dict(basis, cells=basis['cells'][1:]), risk['expected_risk_universe'])
+        with self.assertRaisesRegex(ValueError, 'bağımsız hazırlanmış bütüne'):
+            arsiv.verify_initial_completion_basis(basis, risk['expected_risk_universe'][1:])
+
     def test_revision_validation_preserves_history_and_binds_active_stage(self):
         root = Path(__file__).resolve().parents[1] / 'data/comparisons'
         basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())
