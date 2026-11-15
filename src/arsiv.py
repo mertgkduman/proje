@@ -871,7 +871,7 @@ def validate_source_basis_cells(data, taxonomy_version, cells, assertions):
     return True
 
 
-def validate_source_basis_universe(data, basis, superseded_cells=()):
+def validate_source_basis_universe(data, basis, superseded_cells=(), superseded_syntheses=()):
     """Validate a source-authored obligation universe against a candidate.
 
     Establishing the provenance and immutable adoption of the supplied basis
@@ -952,7 +952,7 @@ def validate_source_basis_universe(data, basis, superseded_cells=()):
     claims = {s['id']: s for s in data['comparison_synthesis'] if s['taxonomy_version'] == version}
     reviews = {r['subject_id']: r for r in data['comparison_semantic_review']
                if r['subject_kind'] == 'comparison_synthesis' and r['reviewer_kind'] == 'agent'}
-    obligations = basis['synthesis_obligations']
+    obligations = [o for o in basis['synthesis_obligations'] if o['id'] not in superseded_syntheses]
     if len({o['id'] for o in obligations}) != len(obligations) or set(claims) != {o['id'] for o in obligations}:
         raise ValueError('Kaynak evreni sentez yükümlülüğü eksik')
     for obligation in obligations:
@@ -1544,6 +1544,70 @@ def completion_superseded_cells(data, revision, revisions, basis, selection):
     return excluded
 
 
+def completion_superseded_syntheses(data, revision, revisions, basis, selection):
+    """Bind retained source claims to separately authored replacement claims."""
+    epochs = {r['id']: r['epoch'] for r in revisions}
+    obligations = {item['id']: item for item in basis['synthesis_obligations']}
+    selected = {s['id'] for s in selection['syntheses']}
+    rows = {r['id']: r for r in data['comparison_row']}
+    links = data.get('comparison_completion_supersession', [])
+    retired = set()
+    for item in basis.get('_correction_registry', []):
+        decision = validate_registered_decision(item)
+        if decision.get('kind') != 'synthesis_supersession':
+            continue
+        epoch = epochs.get(decision.get('revision_id'))
+        if epoch is None:
+            raise ValueError('Sentez ardıllığının revizyonu yok')
+        if epoch > revision['epoch']:
+            continue
+        old, new = obligations.get(decision.get('old_id')), obligations.get(decision.get('new_id'))
+        prior = next((r for r in revisions if r['epoch'] == epoch - 1), None)
+        prior_ids = {s['id'] for s in json.loads(prior['selection'])['syntheses']} if prior else set()
+        if (not old or not new or old['id'] in retired or old['id'] == new['id'] or
+                old['topic_id'] != new['topic_id'] or decision.get('result') != 'supersedes' or
+                decision.get('reviewer_kind') != 'agent' or not decision.get('reason') or
+                decision.get('old_claim') != old['source_authored_claim'] or decision.get('new_claim') != new['source_authored_claim'] or
+                decision.get('old_review') != old['original_review'] or decision.get('new_review') != new['original_review'] or
+                old['id'] not in prior_ids or old['id'] in selected or new['id'] not in selected):
+            raise ValueError('Kaynaklı sentez ardıllığı uyuşmuyor')
+        try:
+            reviewed = dt.datetime.fromisoformat(decision['reviewed_at'].replace('Z', '+00:00'))
+            created = dt.datetime.fromisoformat(next(r for r in revisions if r['epoch'] == epoch)['created_at'].replace('Z', '+00:00'))
+            if reviewed.tzinfo is None or created.tzinfo is None or reviewed > created:
+                raise ValueError('invalid date')
+            old_meaning = json.loads(old['original_review']['reason'])
+            new_meaning = json.loads(new['original_review']['reason'])
+        except (KeyError, ValueError, TypeError, StopIteration, AttributeError) as exc:
+            raise ValueError('Sentez ardıllığı tarihi veya kararı geçersiz') from exc
+        if decision.get('mode') == 'mechanical_rebind':
+            if old['source_authored_claim']['text'] != new['source_authored_claim']['text'] or old['original_review']['reviewed_at'] != new['original_review']['reviewed_at']:
+                raise ValueError('Mekanik sentez soyu metni ve gerçek inceleme tarihini korumalı')
+            row_map = {link['old_row_id']: link['new_row_id'] for link in links if epochs.get(link['revision_id'], 0) <= epoch}
+            for side in old_meaning.get('sides', []):
+                if side['row_id'] in row_map:
+                    before, after = rows.get(side['row_id']), rows.get(row_map[side['row_id']])
+                    old_fields = {(f['field'], f.get('condition_key'), f['summary_finding_id'], f['quote_finding_id']) for f in data['comparison_field'] if f['row_id'] == side['row_id']}
+                    new_fields = {(f['field'], f.get('condition_key'), f['summary_finding_id'], f['quote_finding_id']) for f in data['comparison_field'] if f['row_id'] == row_map[side['row_id']]}
+                    if not before or not after or any(before.get(k) != after.get(k) for k in ('topic_id', 'party_id', 'source_role', 'version_id', 'level', 'organ', 'state')) or old_fields != new_fields:
+                        raise ValueError('Mekanik sentez soyu aynı kaynak anlamını gerektirir')
+                    side['row_id'] = row_map[side['row_id']]
+            if old_meaning != new_meaning:
+                raise ValueError('Mekanik sentez soyu anlam ve dayanakları korumalı')
+        elif decision.get('mode') == 'substantive':
+            try:
+                new_reviewed = dt.datetime.fromisoformat(new['original_review']['reviewed_at'].replace('Z', '+00:00'))
+                old_reviewed = dt.datetime.fromisoformat(old['original_review']['reviewed_at'].replace('Z', '+00:00'))
+                if new_reviewed.tzinfo is None or old_reviewed.tzinfo is None or new_reviewed <= old_reviewed or new_reviewed > reviewed or not new['original_review'].get('reason'):
+                    raise ValueError('review date')
+            except (KeyError, TypeError, ValueError, AttributeError) as exc:
+                raise ValueError('Yeni sentez için tarihli kaynaklı anlam incelemesi gerekli') from exc
+        else:
+            raise ValueError('Yeni sentez için kaynaklı anlam incelemesi gerekli')
+        retired.add(old['id'])
+    return retired
+
+
 def verify_initial_completion_basis(basis, risk_universe, *, reading_registry=None):
     """Reconcile the independently authored initial ledger to source packages.
 
@@ -1662,8 +1726,11 @@ def validate_completion_revisions(data):
                     raise ValueError('Seçili tarihsel kayıt değişmiş')
                 projection[table] = selected
             excluded = completion_superseded_cells(data, revision, revisions, source, selection)
+            excluded_syntheses = completion_superseded_syntheses(data, revision, revisions, source, selection)
             if revision['stage'] == 'complete':
-                validate_source_basis_universe(projection, source, excluded)
+                validate_source_basis_universe(projection, source, excluded, excluded_syntheses)
+                for synthesis in selection['syntheses']:
+                    validate_synthesis_v2(projection, synthesis)
                 validate_source_risk_review(projection, source, risk, review['decisions'])
             elif review.get('decisions'):
                 validate_source_risk_review(projection, source, [], review['decisions'])
@@ -1681,6 +1748,7 @@ def validate_completion_revisions(data):
     excluded_rows = {s['old_row_id'] for s in data.get('comparison_completion_supersession', [])}
     current['rows'] = [r for r in current['rows'] if r['id'] not in excluded_rows]
     current['fields'] = [f for f in current['fields'] if f['row_id'] not in excluded_rows]
+    current['syntheses'] = [s for s in current['syntheses'] if s['id'] not in excluded_syntheses]
     for name, (_, identity) in spec.items():
         if {identity(x): x for x in selected[name]} != {identity(x): x for x in current[name]}:
             raise ValueError('Kaynak kapanışı aktif seçimi uyuşmuyor')

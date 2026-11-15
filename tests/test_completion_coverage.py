@@ -93,7 +93,7 @@ class CompletionCoverageTest(unittest.TestCase):
             data[table] = [r['values'] for r in payload['records'] if r['kind'] == table]
         return data
 
-    def test_structural_missing_to_reviewed_negative_with_real_tip_source(self):
+    def structural_gap_fixture(self):
         """STRUCTURAL FUTURE fixture; no missing TİP program is claimed."""
         data = self.modern()
         head = data['comparison_completion_basis'][0]
@@ -104,14 +104,18 @@ class CompletionCoverageTest(unittest.TestCase):
         missing = dict(id='test-structural-program-gap', party_id='tip', heading='Program', topic_id='abd-iliskileri',
                        status='Bulunamadı', attempt_id='test-structural-search', reason='STRUCTURAL FIXTURE only')
         attempt = dict(id='test-structural-search', party_id='tip', heading='Program', topic_id='abd-iliskileri',
-                       type='search', result='no_result', attempted_at='2026-11-12T00:00:00Z', reason='STRUCTURAL FIXTURE only')
+                       type='search', result='no_result', attempted_at='2026-11-12T00:00:00Z', reason='STRUCTURAL FIXTURE only',
+                       lead_id=None, query='STRUCTURAL FIXTURE: prior program search', source_version_id=None)
         old_key = dict(new['logical_key'], version_id=None, context_judgment='test-structural-gap-row')
-        old = dict(id='test-structural-gap-cell', logical_key=old_key, disposition='document_missing',
+        old_id = 'cell-' + hashlib.sha256(arsiv.canonical_json(old_key).encode()).hexdigest()[:24]
+        assertion = dict(kind='documentary_gap', missing_id=missing['id'], missing=missing, attempt=attempt)
+        gap_basis_id = 'basis-' + hashlib.sha256(arsiv.canonical_json(assertion).encode()).hexdigest()[:24]
+        old = dict(id=old_id, logical_key=old_key, disposition='document_missing',
                    source_judgment_record=dict(id='test-structural-gap-row', state='document_missing',
                      selection_reason='STRUCTURAL FIXTURE only', scope_id=None, missing_id=missing['id'],
+                     taxonomy_version=self.taxonomy, alternative_group=None,
                      **{k: v for k, v in old_key.items() if k != 'context_judgment'}),
-                   mapping_records=[], basis_ids=['test-gap-basis'], field_dispositions=[])
-        assertion = dict(kind='documentary_gap', missing=missing, attempt=attempt)
+                   mapping_records=[], basis_ids=[gap_basis_id], field_dispositions=[])
         old_context = dict(logical_key=old_key, disposition='document_missing', source_reason='STRUCTURAL FIXTURE only',
                            fields=[], scope=None, missing=missing, attempt=attempt)
         new_context = dict(logical_key=new['logical_key'], disposition='no_explicit_statement',
@@ -128,7 +132,7 @@ class CompletionCoverageTest(unittest.TestCase):
         content = arsiv.canonical_json({'decisions': [decision]})
         registration = dict(decision=decision, origin=dict(path='data/comparisons/test-structural-correction.json',
                             pointer='/decisions/0', content=content, sha256=hashlib.sha256(content.encode()).hexdigest()))
-        basis = dict(basis, cells=basis['cells'] + [old], source_assertions=dict(basis['source_assertions'], **{'test-gap-basis': assertion}),
+        basis = dict(basis, cells=basis['cells'] + [old], source_assertions=dict(basis['source_assertions'], **{gap_basis_id: assertion}),
                      _correction_registry=[registration])
         first = dict(id='test-gap-first', epoch=1, taxonomy_version=self.taxonomy, created_at='2026-11-15T19:00:00Z',
                      selection=arsiv.canonical_json({'rows': [dict(id='test-structural-gap-row')]}))
@@ -138,6 +142,12 @@ class CompletionCoverageTest(unittest.TestCase):
                     source_basis_refs=arsiv.canonical_json(dict(correction_id=decision['id'], basis_ids=new['basis_ids'])))
         data = dict(data, comparison_row=data['comparison_row'] + [dict(old['source_judgment_record'], taxonomy_version=self.taxonomy)],
                     missing=data['missing'] + [missing], attempt=data['attempt'] + [attempt], comparison_completion_supersession=[link])
+        return data, basis, first, second, link, decision, registration, new, old, assertion
+
+    def test_structural_missing_to_reviewed_negative_with_real_tip_source(self):
+        data, basis, first, second, link, decision, registration, new, old, assertion = self.structural_gap_fixture()
+        new_row = new['fulfilment_locator_only']
+        scope = basis['source_assertions'][new['basis_ids'][0]]['scope']
         self.assertEqual(arsiv.completion_superseded_cells(data, second, [first, second], basis, {'rows': [dict(id=new_row)]}), {old['id']})
         version = next(v for v in data['document_version'] if v['id'] == scope['version_id'])
         document_id = version['document_id']
@@ -377,14 +387,105 @@ class CompletionCoverageTest(unittest.TestCase):
                                  comparison_coverage_disposition=data['comparison_coverage_disposition'] + cells,
                                  comparison_completion_revision=[previous, revision],
                                  comparison_completion_supersession=[link])
-                self.assertTrue(arsiv.validate_completion_revisions(candidate))
-                # The retained synthesis names the retired SR25 row. Its
-                # historical validity cannot substitute for active support.
+                with self.assertRaisesRegex(ValueError, 'Sentez'):
+                    arsiv.validate_completion_revisions(candidate)
                 with self.assertRaisesRegex(ValueError, 'Sentez'):
                     arsiv.validate_comparisons(candidate)
+                before_rebind_basis = new_basis
+                before_rebind_candidate = candidate
+                before_rebind_selection = json.loads(arsiv.canonical_json(selection))
+                # The independently specified mechanical fixture rebinds the
+                # exact original claim and review to the equivalent new row.
+                template = json.loads((root / 'tests/fixtures/completion_synthesis_rebind.json').read_text())
+                obligation = next(o for o in old_basis['synthesis_obligations'] if o['id'] == template['old_id'])
+                new_claim = dict(obligation['source_authored_claim'], id=template['new_id'])
+                meaning = json.loads(obligation['original_review']['reason'])
+                for side in meaning['sides']:
+                    if side['row_id'] == template['old_row_id']:
+                        side['row_id'] = template['new_row_id']
+                new_review = dict(obligation['original_review'], subject_id=template['new_id'], reason=arsiv.canonical_json(meaning))
+                created_at = dt.datetime.now(dt.timezone.utc).isoformat()
+                relation = dict(id='test-sr25-synthesis-lineage', kind='synthesis_supersession', revision_id=revision['id'],
+                    old_id=template['old_id'], new_id=template['new_id'], result='supersedes', reviewer_kind='agent',
+                    reviewed_at=created_at, reason=template['reason'], mode=template['mode'],
+                    old_claim=obligation['source_authored_claim'], new_claim=new_claim,
+                    old_review=obligation['original_review'], new_review=new_review)
+                authored = dict(purpose=template['purpose'], records=[dict(kind='comparison_synthesis', values=new_claim),
+                    dict(kind='comparison_semantic_review', values=new_review)], decisions=[relation])
+                authored_path = arsiv.DATA / 'comparisons/test-sr25-synthesis-rebind.json'
+                authored_content = arsiv.canonical_json(authored)
+                authored_path.write_text(authored_content, encoding='utf-8')
+                authored_ref = 'data/comparisons/test-sr25-synthesis-rebind.json'
+                authored_sha = hashlib.sha256(authored_content.encode()).hexdigest()
+                registration = dict(decision=relation, origin=dict(path=authored_ref, pointer='/decisions/0', content=authored_content, sha256=authored_sha))
+                new_obligation = dict(id=new_claim['id'], topic_id=new_claim['topic_id'], source_authored_claim=new_claim,
+                    source=dict(path=authored_ref, pointer='/records/0/values'), typed_source_judgment=meaning,
+                    original_review=new_review, review_source=dict(path=authored_ref, pointer='/records/1/values'))
+                new_basis = dict(new_basis, synthesis_obligations=new_basis['synthesis_obligations'] + [new_obligation],
+                    source_documents=new_basis['source_documents'] + [dict(path=authored_ref, sha256=authored_sha, role='source_research_or_mapping', original_status=None)],
+                    _correction_registry=new_basis['_correction_registry'] + [registration])
+                self.assertTrue(arsiv.verify_successor_completion_basis(old_basis, new_basis))
+                head, cells = arsiv.completion_basis_records(new_basis, risks, head['id'], created_at, old_head['id'])
+                selection['syntheses'] = [s for s in selection['syntheses'] if s['id'] != template['old_id']] + [new_claim]
+                revision = dict(revision, created_at=created_at, selection=arsiv.canonical_json(selection))
+                evidence = [dict(e, synthesis_id=new_claim['id']) for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == template['old_id']]
+                candidate = dict(candidate, comparison_synthesis=data['comparison_synthesis'] + [new_claim],
+                    comparison_synthesis_evidence=data['comparison_synthesis_evidence'] + evidence,
+                    comparison_semantic_review=candidate['comparison_semantic_review'] + [new_review],
+                    comparison_completion_basis=data['comparison_completion_basis'] + [head],
+                    comparison_coverage_disposition=data['comparison_coverage_disposition'] + cells,
+                    comparison_completion_revision=[previous, revision])
+                self.assertTrue(arsiv.validate_completion_revisions(candidate))
+                self.assertTrue(arsiv.validate_comparisons(candidate))
                 visible = arsiv.comparison_render_data(candidate)
                 self.assertNotIn(old_row, {r['id'] for r in visible['comparison_row']})
                 self.assertIn(row['id'], {r['id'] for r in visible['comparison_row']})
+                self.assertNotIn(template['old_id'], {s['id'] for s in visible['comparison_synthesis']})
+                self.assertIn(template['new_id'], {s['id'] for s in visible['comparison_synthesis']})
+                report = arsiv.render_comparison_snapshot(candidate, arsiv.render_report)
+                self.assertNotIn('id="comparison-' + old_row + '"', report)
+                self.assertIn('id="comparison-' + row['id'] + '"', report)
+                self.assertIn(arsiv.html.escape(new_claim['text']), report)
+                # A substantive addition gets a new dated source review, not
+                # a mechanically inherited approval or a production change.
+                substantive_claim = dict(new_claim, id='test-sr25-synthesis-substantive',
+                    text=new_claim['text'] + ' TİP, aynı bağlamda sermaye sahiplerinin bunalımı işçi haklarını azaltmaya gerekçe yapmaya çalıştığını da belirtir.')
+                substantive_meaning = json.loads(arsiv.canonical_json(meaning))
+                substantive_meaning['explanation'] += ' Test-only new review: TİP p1 explicitly describes this attempted use of crisis.'
+                reviewed_at = dt.datetime.now(dt.timezone.utc).isoformat()
+                substantive_review = dict(new_review, subject_id=substantive_claim['id'], reviewed_at=reviewed_at,
+                                          reason=arsiv.canonical_json(substantive_meaning))
+                substantive_relation = dict(relation, id='test-sr25-substantive-lineage', new_id=substantive_claim['id'],
+                    mode='substantive', reviewed_at=reviewed_at, new_claim=substantive_claim, new_review=substantive_review,
+                    reason='Test-only substantive addition reviewed against the original TİP p1 passage.')
+                substantive_doc = dict(purpose='Test-only substantive source review', records=[
+                    dict(kind='comparison_synthesis', values=substantive_claim),
+                    dict(kind='comparison_semantic_review', values=substantive_review)], decisions=[substantive_relation])
+                content = arsiv.canonical_json(substantive_doc)
+                path = 'data/comparisons/test-sr25-synthesis-substantive.json'
+                (arsiv.DATA / 'comparisons/test-sr25-synthesis-substantive.json').write_text(content, encoding='utf-8')
+                digest = hashlib.sha256(content.encode()).hexdigest()
+                registered = dict(decision=substantive_relation, origin=dict(path=path, pointer='/decisions/0', content=content, sha256=digest))
+                new_obligation = dict(id=substantive_claim['id'], topic_id=substantive_claim['topic_id'], source_authored_claim=substantive_claim,
+                    source=dict(path=path, pointer='/records/0/values'), typed_source_judgment=substantive_meaning,
+                    original_review=substantive_review, review_source=dict(path=path, pointer='/records/1/values'))
+                substantive_basis = dict(before_rebind_basis, synthesis_obligations=before_rebind_basis['synthesis_obligations'] + [new_obligation],
+                    source_documents=before_rebind_basis['source_documents'] + [dict(path=path, sha256=digest, role='source_research_or_mapping', original_status=None)],
+                    _correction_registry=before_rebind_basis['_correction_registry'] + [registered])
+                self.assertTrue(arsiv.verify_successor_completion_basis(old_basis, substantive_basis))
+                head, cells = arsiv.completion_basis_records(substantive_basis, risks, 'test-sr25-substantive-basis', reviewed_at, old_head['id'])
+                before_rebind_selection['syntheses'] = [s for s in before_rebind_selection['syntheses'] if s['id'] != template['old_id']] + [substantive_claim]
+                substantive_revision = dict(revision, basis_id=head['id'], created_at=reviewed_at,
+                                            selection=arsiv.canonical_json(before_rebind_selection))
+                evidence = [dict(e, synthesis_id=substantive_claim['id']) for e in data['comparison_synthesis_evidence'] if e['synthesis_id'] == template['old_id']]
+                substantive_candidate = dict(before_rebind_candidate, comparison_synthesis=data['comparison_synthesis'] + [substantive_claim],
+                    comparison_synthesis_evidence=data['comparison_synthesis_evidence'] + evidence,
+                    comparison_semantic_review=before_rebind_candidate['comparison_semantic_review'] + [substantive_review],
+                    comparison_completion_basis=data['comparison_completion_basis'] + [head],
+                    comparison_coverage_disposition=data['comparison_coverage_disposition'] + cells,
+                    comparison_completion_revision=[previous, substantive_revision])
+                self.assertTrue(arsiv.validate_completion_revisions(substantive_candidate))
+                self.assertTrue(arsiv.validate_comparisons(substantive_candidate))
             finally:
                 arsiv.DATA = original_data
 
@@ -832,6 +933,73 @@ class CompletionCoverageTest(unittest.TestCase):
                 self.assertIn(link['new_row_id'], {r['id'] for r in visible['comparison_row']})
                 self.assertTrue(arsiv.validate_comparison_descent(partial_data, result))
                 self.assertEqual(preserved, {p.name: arsiv.sha(p) for p in folder.iterdir() if p.is_file()})
+                # STRUCTURAL FUTURE: the prior missing/search records are synthetic;
+                # the bounded negative is the already existing real TİP source scope.
+                # This does not claim a discovery for Yeni Yol or for TİP.
+                gap_data, _, _, _, gap_link, decision, registration, new_cell, old_cell, assertion = self.structural_gap_fixture()
+                gap_row = old_cell['source_judgment_record']
+                missing = next(m for m in gap_data['missing'] if m['id'] == 'test-structural-program-gap')
+                attempt = next(a for a in gap_data['attempt'] if a['id'] == 'test-structural-search')
+                gap_source = arsiv.DATA / 'comparisons/test-structural-gap.json'
+                gap_source.write_text(arsiv.canonical_json({'records': [
+                    dict(kind='attempt', values=attempt), dict(kind='missing', values=missing),
+                    dict(kind='comparison_row', values=gap_row)]}), encoding='utf-8')
+                correction_file = arsiv.DATA / 'comparisons/test-structural-correction.json'
+                correction_file.write_text(registration['origin']['content'], encoding='utf-8')
+                current = result['comparison_completion_revision'][-1]
+                current_head = next(b for b in result['comparison_completion_basis'] if b['id'] == current['basis_id'])
+                source_basis, risk_universe = arsiv.decode_completion_basis(current_head, result['comparison_coverage_disposition'])
+                old_cell = dict(old_cell, source_judgment=dict(path='data/comparisons/test-structural-gap.json', pointer='/records/2/values'),
+                                mapping_refs=[], inventory_section_indexes=[], fulfilment_locator_only=gap_row['id'])
+                gap_id = old_cell['basis_ids'][0]
+                source_basis['cells'].append(old_cell)
+                source_basis['source_assertions'][gap_id] = assertion
+                for item in source_basis['universe']:
+                    if (item['topic_id'], item['party_id']) == (gap_row['topic_id'], gap_row['party_id']):
+                        item['cell_ids'].append(old_cell['id'])
+                source_basis['source_documents'].append(dict(path='data/comparisons/test-structural-gap.json',
+                    sha256=arsiv.sha(gap_source), role='source_research_or_mapping', original_status=None))
+                created = dt.datetime.now(dt.timezone.utc).isoformat()
+                gap_head, gap_cells = arsiv.completion_basis_records(source_basis, risk_universe, 'test-structural-gap-basis', created,
+                    current['basis_id'], reading_registry=source_basis['_reading_registry'], correction_registry=source_basis['_correction_registry'])
+                selected = json.loads(current['selection'])
+                selected['rows'].append(gap_row)
+                gap_revision = dict(current, id='test-structural-gap-partial', epoch=current['epoch'] + 1,
+                    parent_revision_id=current['id'], basis_id=gap_head['id'], stage='partial', created_at=created,
+                    selection=arsiv.canonical_json(selected), reason='STRUCTURAL FUTURE: synthetic earlier missing document.')
+                gap_payload = dict(contract_version=2, taxonomy_version=self.taxonomy, stage='partial', records=[
+                    dict(kind='attempt', values=attempt), dict(kind='missing', values=missing),
+                    dict(kind='comparison_row', values=gap_row), dict(kind='comparison_completion_basis', values=gap_head),
+                    *[dict(kind='comparison_coverage_disposition', values=c) for c in gap_cells],
+                    dict(kind='comparison_completion_revision', values=gap_revision)])
+                gap_work = workspace(complete_release, 'structural-gap-work')
+                arsiv.load_comparison(gap_work, gap_payload)
+                gap_partial = arsiv.export_db(gap_work / 'records.sqlite3', 'structural-gap-work')
+                self.assertEqual(gap_partial['comparison_contract'][0]['stage'], 'partial')
+                source_basis['source_documents'].append(dict(path=registration['origin']['path'],
+                    sha256=registration['origin']['sha256'], role='source_research_or_mapping', original_status=None))
+                source_basis['_correction_registry'].append(registration)
+                next_head, next_cells = arsiv.completion_basis_records(source_basis, risk_universe, 'test-structural-corrected-basis', created,
+                    gap_head['id'], reading_registry=source_basis['_reading_registry'], correction_registry=source_basis['_correction_registry'])
+                selected['rows'] = [r for r in selected['rows'] if r['id'] != gap_row['id']]
+                corrected = dict(gap_revision, id='test-structural-gap-complete', epoch=gap_revision['epoch'] + 1,
+                    parent_revision_id=gap_revision['id'], basis_id=next_head['id'], stage='complete',
+                    selection=arsiv.canonical_json(selected), reason='STRUCTURAL FUTURE: reassessment of bounded real source scope.')
+                gap_link = dict(gap_link, revision_id=corrected['id'])
+                corrected_payload = dict(contract_version=2, taxonomy_version=self.taxonomy, stage='complete', records=[
+                    dict(kind='comparison_completion_basis', values=next_head),
+                    *[dict(kind='comparison_coverage_disposition', values=c) for c in next_cells],
+                    dict(kind='comparison_completion_revision', values=corrected),
+                    dict(kind='comparison_completion_supersession', values=gap_link)])
+                arsiv.load_comparison(gap_work, corrected_payload)
+                gap_complete = arsiv.export_db(gap_work / 'records.sqlite3', 'structural-gap-work')
+                self.assertTrue(arsiv.validate_comparisons(gap_complete))
+                self.assertTrue(arsiv.validate_comparison_descent(gap_partial, gap_complete))
+                self.assertIn(gap_row['id'], {r['id'] for r in gap_complete['comparison_row']})
+                self.assertNotIn(gap_row['id'], {r['id'] for r in arsiv.comparison_render_data(gap_complete)['comparison_row']})
+                gap_release = arsiv.publish_release(gap_work, refresh=True)
+                self.assertEqual(arsiv.audit_release(gap_release), gap_release)
+                self.assertTrue(arsiv.validate_phase_three(gap_release, 'complete'))
                 manifest_path = arsiv.DATA / 'releases' / complete_release / 'manifest.json'
                 original_manifest = manifest_path.read_bytes()
                 try:
