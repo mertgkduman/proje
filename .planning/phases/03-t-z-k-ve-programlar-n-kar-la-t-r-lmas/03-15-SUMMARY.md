@@ -103,3 +103,9 @@ Satır soyu desteğinin sürüm 3/lineage 1 sözleşmesi mevcut veriye geriye d�
 ## Test kapısı fixture bağımlılığı düzeltmesi
 
 `858fc59` amaçlı çekirdek mutasyon testlerini sabit kabul edilmiş policy2 `7f816c5afd704cf3a88f2cfd8638528f` + üç atasına ve gerçek kayıtlı kaynak/varlıklara bağladı. Live current snapshot/server/navigation, yayımlanmış mali veri/eşleşme ve gerçek sözlük kontrolleri güncel veride kaldı; validator mock veya skip eklenmedi. Test sayıları korundu. 19 hedef test 45.219 saniyede geçti; gerçek audit/migration ve kaynak/indeks silme retleri `03-15-checks/tg-01/` altında. Bağımsız kaynak incelemesi clean; yeni tam root koşusu `03-15-checks/root-stable-fixtures/` altında çalışıyor. Önceki `root-review-fixes` koşusu 72 testten sonra kontrollü143 ile durduruldu, tam geçiş değildir. Üretim kaynak kodu, araştırma verileri ve current22 bu test onarımında değişmedi.
+
+## Root kapanış denetimi — son durum
+
+Önceki koşu durumları yukarıda tarihsel olarak korunur. Son `root-shutdown-bounded/root-post-wave.json` kaydı, `python3 tests/run.py` için **158 test / 3865.892 saniye / exit 0** ve build exit 0 sonucunu gerçek log ve değişmeyen kaynak/test giriş hashleriyle bağlar. Güncel renderer22 yayını, P2/P3 denetimleri, gerçek file/HTTP tarayıcı kanıtları, 141 özgün belge ve önceki kapalı yayınlar korunmuştur. `6e59f35` tarayıcı kapanış beklemesini sınırlar; bağımsız WR-01 yeniden incelemesi clean. Önceki ENOTEMPTY başarısızlığı ve kontrollü143 koşuları tam geçiş sayılmamıştır.
+
+Ayrı ajan kaynak ikinci okuması 24 risk grubunda 113 seçili satır, 93 alan ve 24 sentezi gerçek kaynak bağlamlarıyla kontrol etti; yeni maddi hata saptamadı. Bu ön inceleme `03-16-precheck/` altında kayıtlıdır; formal 03-16 tamamlanması veya insan kabulü değildir. 03-16 son kapsam sözleşmesi, nihai yayın ve UAT hazırlığı bu kapanıştan sonra yürütülür. Küresel gereksinimler ve insan UAT açık kalır.

@@ -5,10 +5,10 @@ current_phase: 03
 current_phase_name: Tüzük ve programların karşılaştırılması
 current_plan: 16
 status: executing
-stopped_at: Completed 03-15-PLAN.md; next 03-16
-last_updated: "2026-11-15T05:26:33.469Z"
+stopped_at: Completed 03-15 with root regression; next 03-16
+last_updated: "2026-11-15T13:35:26.171357+00:00"
 last_activity: 2026-11-15
-last_activity_desc: 03-15 gezinme, yerel renderer20 yayını ve P2/P3 denetimleri tamamlandı
+last_activity_desc: 03-15 renderer22, kod incelemesi, P2/P3 ve 158 test geçti; 03-16 hazır
 state_head: c47cf12ea939f07887094d2894e1a05352454932
 progress:
   total_phases: 6
@@ -33,7 +33,7 @@ Total Plans in Phase: 16
 Phase: 03 (Tüzük ve programların karşılaştırılması) — EXECUTING
 Plan: 16 of 16
 Status: Ready to execute
-Last activity: 2026-11-15 — 03-15 tamamlandı; ef353c40c60b400eb1c52b3245e9a65b yerel renderer20 sürümü gerçek tarayıcı ve P2/P3 ile doğrulandı. Kaynak anlamı ve UAT 03-16'da sürer.
+Last activity: 2026-11-15 — 03-15 renderer22 27033583248b4951b3fe8e5fd6d77b9f; P2/P3, gerçek tarayıcı ve root 158 test geçti. Bağımsız kaynak ikinci okuması ön kanıtı hazır; formal 03-16 ve insan UAT henüz yapılmadı.
 
 Progress: [███░░░░░░░] 33% (2/6 tamamlanan faz); Faz 2: 10/10 plan, 13/13 teknik teslim doğrusu, UAT 3/3; Faz 3: 15/16 plan
 

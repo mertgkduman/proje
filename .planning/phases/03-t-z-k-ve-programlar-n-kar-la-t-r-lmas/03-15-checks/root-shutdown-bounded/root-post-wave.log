@@ -1,0 +1,3 @@
+ROOT_STATIC_CHECKS_OK
+{"build": {"command": "python3 -m compileall -q src tests", "timeout_seconds": 300, "exit": 0, "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-shutdown-bounded/root-build.log", "test_count": null}}
+{"tests": {"command": "python3 tests/run.py", "timeout_seconds": 10800, "exit": 0, "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-shutdown-bounded/root-tests.log", "test_count": 158}}

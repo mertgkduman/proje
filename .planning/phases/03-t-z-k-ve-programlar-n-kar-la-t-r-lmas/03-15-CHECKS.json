@@ -1,6 +1,6 @@
 {
-  "status": "stable_unit_fixture_review_passed_full_suite_running",
-  "updated_utc": "2026-11-15T10:37:39.608465+00:00",
+  "status": "all_pre16_reviews_and_full_suite_passed",
+  "updated_utc": "2026-11-15T13:35:26.171357+00:00",
   "release_id": "27033583248b4951b3fe8e5fd6d77b9f",
   "renderer_version": 22,
   "taxonomy_version": 4,
@@ -10,9 +10,10 @@
   "code_review": {
     "status": "clean",
     "report": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-REVIEW.md",
-    "commit": "6475e3b",
+    "commit": "13dea85",
     "original_four_findings_closed": true,
-    "followup_fixture_finding_closed": true
+    "followup_fixture_finding_closed": true,
+    "browser_cleanup_WR01_closed": true
   },
   "delivery": {
     "commit": "2fa77a4",
@@ -23,13 +24,19 @@
   "root_static_checks": "passed",
   "build_exit": 0,
   "global_gate": {
-    "status": "running",
-    "pid": 1069348,
+    "status": "passed",
+    "pid": 1120906,
     "host": "dcc-core-ferc-u-ab39-5-6",
-    "input_snapshot": "/tmp/gsd-0315-stable-fixtures-regression-1da31ab9dd714d1db1c1f30ed4c1cb44",
+    "input_snapshot": "/tmp/gsd-0315-shutdown-bounded-regression-b46330e5dd624df783989b5b47c6fb0f",
     "timeout_seconds": 10800,
-    "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-post-wave.run.json",
-    "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-post-wave.json"
+    "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-shutdown-bounded/root-post-wave.run.json",
+    "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-shutdown-bounded/root-post-wave.json",
+    "exit": 0,
+    "tests_run": 158,
+    "duration_seconds": 3865.892,
+    "result_sha256": "6ab434da7bd9d094fa60f50e4df4d9c21eb27a73539707f93d192ea859fecc70",
+    "log_sha256": "a7dd06f8e2ce2613c25a6da5f06f360246fce6f14281a70b670dc6f206a7e6a1",
+    "code_inputs_unchanged": true
   },
   "independent_audits": {
     "phase2": "passed",
@@ -74,6 +81,50 @@
       "timeout_seconds": 10800,
       "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.run.json",
       "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-review-fixes/root-post-wave.json"
+    },
+    {
+      "status": "failed_1_of_158_browser_cleanup_ENOTEMPTY",
+      "pid": 1069348,
+      "host": "dcc-core-ferc-u-ab39-5-6",
+      "input_snapshot": "/tmp/gsd-0315-stable-fixtures-regression-1da31ab9dd714d1db1c1f30ed4c1cb44",
+      "timeout_seconds": 10800,
+      "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-post-wave.run.json",
+      "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-stable-fixtures/root-post-wave.json",
+      "test_exit": 1,
+      "tests_run": 158,
+      "duration_seconds": 4777.117
+    },
+    {
+      "status": "interrupted_143_WR01_not_a_pass",
+      "pid": 1108070,
+      "host": "dcc-core-ferc-u-ab39-5-6",
+      "input_snapshot": "/tmp/gsd-0315-nav-cleanup-regression-2833321b729649f185bd190cfde600c0",
+      "timeout_seconds": 10800,
+      "run_metadata": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-nav-cleanup/root-post-wave.run.json",
+      "result": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/root-nav-cleanup/root-post-wave.json"
     }
-  ]
+  ],
+  "browser_cleanup_fix": {
+    "commit": "f70504e",
+    "target_tests": 4,
+    "target_exit": 0,
+    "review": "clean_WR01_closed",
+    "report": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-NAV-DEBUG-FIX.md",
+    "final_commit": "6e59f35",
+    "target_seconds": 119.246
+  },
+  "source_second_reading_precheck": {
+    "status": "completed_no_new_material_defect",
+    "formal_phase16_acceptance": false,
+    "report": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md",
+    "report_sha256": "3369b26867411efa590590f209e5d18248bf1dd9edc7ba519e61e62d950bac55",
+    "coverage_map": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/coverage-map.json",
+    "semantic_decisions_reference_checked": 4840,
+    "risk_groups": 24,
+    "selected_rows_second_read": 113,
+    "fields_second_read": 93,
+    "syntheses_second_read": 24,
+    "reviewer_kind": "agent",
+    "human_acceptance": "pending"
+  }
 }
