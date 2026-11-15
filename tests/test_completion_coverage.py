@@ -162,6 +162,11 @@ class CompletionCoverageTest(unittest.TestCase):
             arsiv.verify_initial_completion_basis(dict(basis, cells=basis['cells'][1:]), risk['expected_risk_universe'])
         with self.assertRaisesRegex(ValueError, 'bağımsız hazırlanmış bütüne'):
             arsiv.verify_initial_completion_basis(basis, risk['expected_risk_universe'][1:])
+        self.assertTrue(arsiv.verify_successor_completion_basis(basis, basis))
+        documents = list(basis['source_documents'])
+        documents[0] = dict(documents[0], sha256='0' * 64)
+        with self.assertRaisesRegex(ValueError, 'Önceki kaynak paketinin kökeni'):
+            arsiv.verify_successor_completion_basis(basis, dict(basis, source_documents=documents))
 
     def test_adoption_payload_retains_real_source_decisions(self):
         root = Path(__file__).resolve().parents[1] / 'data/comparisons'

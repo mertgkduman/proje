@@ -501,6 +501,19 @@ def load_comparison(work, payload, inventory=None, *, reconciled=False):
                 metadata = json.loads((temp / 'workspace.json').read_text(encoding='utf-8'))
                 if anchor.get('release_id') != metadata.get('base'):
                     raise ValueError('Önceki kaynak kapanışı gerçek tabanla uyuşmuyor')
+            if prior_revision and incoming_revisions:
+                previous_basis_id = prior_revision['basis_id']
+                previous_head = dict(db.execute('SELECT * FROM comparison_completion_basis WHERE id=?', (previous_basis_id,)).fetchone())
+                previous_cells = [dict(row) for row in db.execute('SELECT * FROM comparison_coverage_disposition WHERE basis_id=?', (previous_basis_id,))]
+                previous_basis, _ = decode_completion_basis(previous_head, previous_cells)
+                for successor in db.execute('SELECT * FROM comparison_completion_revision WHERE epoch>? ORDER BY epoch', (prior_revision['epoch'],)):
+                    if successor['basis_id'] == previous_basis_id:
+                        continue
+                    next_head = dict(db.execute('SELECT * FROM comparison_completion_basis WHERE id=?', (successor['basis_id'],)).fetchone())
+                    next_cells = [dict(row) for row in db.execute('SELECT * FROM comparison_coverage_disposition WHERE basis_id=?', (successor['basis_id'],))]
+                    next_basis, _ = decode_completion_basis(next_head, next_cells)
+                    verify_successor_completion_basis(previous_basis, next_basis)
+                    previous_basis_id, previous_basis = successor['basis_id'], next_basis
             if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
                 raise ValueError('Karşılaştırma bütünlük hatası')
         finally:
@@ -1039,6 +1052,9 @@ def validate_completion_basis_successor(old, new):
     for key, value in old['source_assertions'].items():
         if new['source_assertions'].get(key) != value:
             raise ValueError('Önceki kaynak dayanağı değiştirilemez')
+    documents = {item['path']: item for item in new['source_documents']}
+    if any(documents.get(item['path']) != item for item in old['source_documents']):
+        raise ValueError('Önceki kaynak paketinin kökeni değiştirilemez')
     latest_inventory = {canonical_json(item) for item in new['inventory_sections']}
     if any(canonical_json(item) not in latest_inventory for item in old['inventory_sections']):
         raise ValueError('Önceki kaynak envanteri değiştirilemez')
@@ -1047,6 +1063,76 @@ def validate_completion_basis_successor(old, new):
         successor = pairs.get((item['topic_id'], item['party_id']))
         if not successor or not set(item['cell_ids']) <= set(successor['cell_ids']):
             raise ValueError('Önceki parti-konu kapsamı değiştirilemez')
+    return True
+
+
+def verify_successor_completion_basis(old, new):
+    """Reconcile newly authored obligations with their actual source packages."""
+    validate_completion_basis_successor(old, new)
+    documents, record_index = {}, {}
+    for item in new['source_documents']:
+        path = item['path']
+        if not path.startswith('data/') or path in documents:
+            raise ValueError('Kaynak paket yolu geçersiz')
+        file = safe_path(DATA, path[len('data/'):])
+        if sha(file) != item['sha256']:
+            raise ValueError('Kaynak paketi özgün özeti uyuşmuyor: ' + path)
+        payload = json.loads(file.read_text(encoding='utf-8'))
+        documents[path] = payload
+        for entry in payload.get('records', []):
+            if isinstance(entry, dict) and isinstance(entry.get('values'), dict):
+                value = entry['values']
+                if value.get('id'):
+                    record_index.setdefault((entry.get('kind'), value['id']), []).append(value)
+
+    def resolve(ref):
+        try:
+            value = documents[ref['path']]
+            pointer = ref['pointer']
+            if not pointer.startswith('/'):
+                raise ValueError('geçersiz gösterici')
+            for token in pointer[1:].split('/'):
+                token = token.replace('~1', '/').replace('~0', '~')
+                value = value[int(token)] if isinstance(value, list) else value[token]
+            return value
+        except (KeyError, IndexError, TypeError, ValueError) as exc:
+            raise ValueError('Yeni kaynak kararının özgün adresi geçersiz') from exc
+
+    previous_cells = {c['id'] for c in old['cells']}
+    added_cells = [c for c in new['cells'] if c['id'] not in previous_cells]
+    new_assertions = set(new['source_assertions']) - set(old['source_assertions'])
+    if not new_assertions <= {bid for cell in added_cells for bid in cell['basis_ids']}:
+        raise ValueError('Yeni kaynak dayanağı kaynak hücresine bağlanmalı')
+    for cell in added_cells:
+        if resolve(cell['source_judgment']) != cell['source_judgment_record'] or len(cell['mapping_refs']) != len(cell['mapping_records']) or any(resolve(ref) != record for ref, record in zip(cell['mapping_refs'], cell['mapping_records'])):
+            raise ValueError('Yeni kaynak kararı veya eşlemesi uyuşmuyor')
+    for bid in new_assertions:
+        item = new['source_assertions'][bid]
+        kind = item.get('kind')
+        if kind == 'supported_field':
+            original = resolve(item['original_field'])
+            if any(original.get(k) != item.get(k) for k in ('field', 'condition_key', 'summary_finding_id', 'quote_finding_id')):
+                raise ValueError('Yeni alanın özgün kaynak kararı uyuşmuyor')
+            reviews = item.get('semantic_reviews', []) + item.get('finding_reviews', [])
+            if not reviews or any(resolve(r['source']) != r['record'] or not r['record'].get('reason') or not r['record'].get('reviewed_at') or r['record'].get('reviewer_kind') != 'agent' or r['record'].get('result') != 'reviewed' for r in reviews):
+                raise ValueError('Yeni alanın gerekçeli anlam incelemesi eksik')
+        elif kind == 'dated_source_scope':
+            if resolve(item['source']) != item['scope']:
+                raise ValueError('Yeni tarihli kaynak kapsamı uyuşmuyor')
+        elif kind == 'documentary_gap':
+            m, a = item.get('missing') or {}, item.get('attempt') or {}
+            if m not in record_index.get(('missing', m.get('id')), []) or a not in record_index.get(('attempt', a.get('id')), []) or m.get('attempt_id') != a.get('id'):
+                raise ValueError('Yeni belge açığının özgün araması uyuşmuyor')
+        else:
+            raise ValueError('Yeni kaynak dayanağı türü geçersiz')
+    old_claims = {c['id'] for c in old['synthesis_obligations']}
+    for claim in new['synthesis_obligations']:
+        if claim['id'] not in old_claims and (resolve(claim['source']) != claim['source_authored_claim'] or resolve(claim['review_source']) != claim['original_review']):
+            raise ValueError('Yeni sentez kararının kökeni uyuşmuyor')
+    previous_inventory = {canonical_json(item) for item in old['inventory_sections']}
+    authored_inventory = {canonical_json(item) for payload in documents.values() for item in payload.get('sections', []) if isinstance(item, dict)}
+    if any(canonical_json(item) not in authored_inventory for item in new['inventory_sections'] if canonical_json(item) not in previous_inventory):
+        raise ValueError('Yeni envanter bölümünün özgün kaynağı eksik')
     return True
 
 
