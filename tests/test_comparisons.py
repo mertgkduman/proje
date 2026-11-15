@@ -93,9 +93,9 @@ class ComparisonReleaseTest(unittest.TestCase):
                 db.commit()
             finally:
                 db.close()
-            # Do not silently export a closure the v2 validator does not yet
-            # understand. This guard is removed when v2 export is implemented.
-            with self.assertRaisesRegex(ValueError, 'sürüm 2'):
+            # Incomplete synthetic closure records cannot be exported without
+            # a real comparison contract and fully validated source proof.
+            with self.assertRaisesRegex(ValueError, 'karşılaştırma sözleşmesi'):
                 arsiv.export_db(target, 'fixture')
 
     def test_failed_migration_preserves_original_and_current(self):

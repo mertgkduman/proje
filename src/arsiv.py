@@ -2180,15 +2180,16 @@ def export_db(path, release_id, strict_identity=False):
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Veritabanı bütünlük hatası')
         existing = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-        # Until v2 closure validation and export are installed, never silently
-        # discard a persisted v2 proof while exporting an apparently valid release.
         v2_present = existing.intersection(COMPLETION_V2_TABLES)
-        if any(db.execute(f'SELECT 1 FROM {name} LIMIT 1').fetchone() for name in v2_present):
-            raise ValueError('Kaynak kapanışı sürüm 2 henüz dışa aktarılamıyor')
+        has_v2 = any(db.execute(f'SELECT 1 FROM {name} LIMIT 1').fetchone() for name in v2_present)
+        if has_v2 and (v2_present != set(COMPLETION_V2_TABLES) or not db.execute('SELECT 1 FROM comparison_completion_revision LIMIT 1').fetchone()):
+            raise ValueError('Kaynak kapanışı sürüm 2 şeması veya revizyonu eksik')
         names = [n for n in TABLES if n in existing] if 'scope_party' in existing else list(LEGACY_TABLES)
         present = existing.intersection(COMPARISON_TABLES)
         if present and present != set(COMPARISON_TABLES): raise ValueError('Eksik karşılaştırma şeması')
         has_comparisons = bool(present and db.execute('SELECT 1 FROM comparison_contract').fetchone())
+        if has_v2 and not has_comparisons:
+            raise ValueError('Kaynak kapanışı karşılaştırma sözleşmesi gerektirir')
         if present and not has_comparisons and any(db.execute(f'SELECT 1 FROM {n} LIMIT 1').fetchone() for n in COMPARISON_TABLES if n != 'comparison_contract'):
             raise ValueError('Karşılaştırma kayıtları için sözleşme işaretçisi gerekli')
         if has_comparisons:
@@ -2196,6 +2197,8 @@ def export_db(path, release_id, strict_identity=False):
             if 'comparison_source_inventory' in existing: names.append('comparison_source_inventory')
             if 'comparison_completion' in existing and db.execute('SELECT 1 FROM comparison_completion LIMIT 1').fetchone():
                 names.append('comparison_completion')
+            if has_v2:
+                names += list(COMPLETION_V2_TABLES)
             contract_version = db.execute('SELECT version FROM comparison_contract').fetchone()[0]
             if contract_version >= 3:
                 if not set(LINEAGE_TABLES) <= existing: raise ValueError('Sürüm 3 satır soyu şeması eksik')
