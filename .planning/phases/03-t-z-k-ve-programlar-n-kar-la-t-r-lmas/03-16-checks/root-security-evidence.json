@@ -1,0 +1,520 @@
+{
+  "basis": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/root-security-register.json",
+  "scope": "PLAN-authored threats only; compact incremental review support, not a new threat scan or SECURITY.md",
+  "asvs_level": 1,
+  "block_on": "high",
+  "review_release": "85b1a453ce2346a8ad0df325a2b73ae9",
+  "threat_count": 51,
+  "threats": [
+    {
+      "threat_id": "T-03-01",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-02",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-03",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-04",
+      "classification": "plan_accepted_bounded_risk",
+      "anchors": [
+        "src/arsiv.py:52",
+        "src/arsiv.py:252",
+        "tests/test_comparison_navigation.py:87"
+      ],
+      "notes": "Existing plan accepts bounded local source-reading risk; this is not a new acceptance."
+    },
+    {
+      "threat_id": "T-03-05",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:799",
+        "tests/test_comparison_content.py:719",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:71"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-06",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:817",
+        "tests/test_comparison_content.py:556",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:45"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-07",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-08",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-03-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-03-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-03-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-04-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:60"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-04-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-04-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-05-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:59"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-05-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-05-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-06-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-06-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-06-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-07-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:80"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-07-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-07-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-08-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:71"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-08-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-08-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-09-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:72"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-09-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-09-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-10-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-10-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-10-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-11-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-11-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-11-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-12-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:78"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-12-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-12-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-13-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:852",
+        "tests/test_comparisons.py:56",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:47"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-13-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-13-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-14-A",
+      "classification": "partial_mitigation",
+      "anchors": [
+        "src/arsiv.py:954",
+        "tests/test_comparison_content.py:111",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/lineage-contract-v3-result.json"
+      ],
+      "notes": "Existing lineage/migration controls exist; post-marker forward update and completion revision are obstructed (CR-03)."
+    },
+    {
+      "threat_id": "T-03-14-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:586",
+        "tests/test_comparison_synthesis_contract.py:150",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-precheck/source-second-reading.md:64"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-14-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-15-A",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-15-B",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-15-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "tests/test_comparison_navigation.py:83",
+        "tests/test_comparison_navigation.py:126",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/navigation-evidence.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-16-A",
+      "classification": "partial_mitigation",
+      "anchors": [
+        "src/arsiv.py:652",
+        "tests/test_completion_coverage.py:35",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-REVIEW.md#cr-01-blocker--completion-compares-coverage-against-an-author-supplied-copy-not-required-coverage"
+      ],
+      "notes": "Coverage gate accepts omission when data and proof agree (CR-01)."
+    },
+    {
+      "threat_id": "T-03-16-B",
+      "classification": "partial_mitigation",
+      "anchors": [
+        "src/arsiv.py:715",
+        "tests/test_comparisons.py:26",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-REVIEW.md#cr-02-blocker--a-source-meaning-review-can-omit-all-reviewed-fields-and-syntheses"
+      ],
+      "notes": "Actual review and pending human state exist, but validator accepts a second reading without sampled fields or syntheses (CR-02)."
+    },
+    {
+      "threat_id": "T-03-16-C",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:1973",
+        "tests/test_comparisons.py:72",
+        ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-checks/post-publish-preservation.json"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    },
+    {
+      "threat_id": "T-03-16-D",
+      "classification": "planned_mitigation_present",
+      "anchors": [
+        "src/arsiv.py:143",
+        "tests/test_publication.py:108",
+        "src/arsiv_gorunum.py:150"
+      ],
+      "notes": "Anchors identify existing mitigation or recorded source-specific application; no new political or human acceptance is implied."
+    }
+  ]
+}

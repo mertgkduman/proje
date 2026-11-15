@@ -1,0 +1,466 @@
+{
+  "register_authored_at_plan_time": true,
+  "asvs_level": 1,
+  "block_on": "high",
+  "threats": [
+    {
+      "threat_id": "T-03-01",
+      "category": "Tampering",
+      "component": "comparison alanı/kanıt",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Aynı parti, sürüm, konu ve alan doğrulaması yazma/export/audit'te ortak; yanlış sahiplik testi.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-01-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-02",
+      "category": "Tampering",
+      "component": "renderer15/migration/publish",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Renderer15'i önce dondur; transaction/yedek; eski dosya hashleri ve hata-pointer testi.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-01-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-03",
+      "category": "Information Disclosure",
+      "component": "HTML/URL/path",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Mevcut esc/web_url/safe_path; parametreli SQL ve pasif arşiv, saldırgan metin fixture'ı.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-01-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-04",
+      "category": "Denial of Service",
+      "component": "kaynak okuma",
+      "severity": "medium",
+      "disposition": "accept",
+      "mitigation_plan": "Mevcut 20MiB kaynak sınırı ve yerel test zaman aşımı korunur; yeni ağ servisi yok.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-01-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-05",
+      "category": "Spoofing",
+      "component": "source_role/party",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "DEM/DBP ek metni program veya başka tüzel kişilik diye yükleme fixture'ı reddedilir.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-02-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-06",
+      "category": "Tampering",
+      "component": "hierarchy/scope/state",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Döngü, geçersiz parent, kaynaksız yokluk ve eksik alternatives validate_comparisons'ta reddedilir.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-02-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-07",
+      "category": "Tampering",
+      "component": "tarihsel renderer",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Her kalıcı yayın sonrası renderer değişikliğinde önce freeze/dispatch/version; eski HTML hash karşılaştırması.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-02-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-08",
+      "category": "Information Disclosure",
+      "component": "kaynak metni/URL",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Mevcut escape/safe_url/safe_path ve pasif arşiv, yeni alanlarda aynen uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-02-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-03-A",
+      "category": "Spoofing",
+      "component": "parti/sürüm/alan",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Aynı partiye ait version_id ve passage zinciri comparison-check, yükleme ve audit'te doğrulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-03-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-03-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-03-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-03-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-03-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-04-A",
+      "category": "Spoofing",
+      "component": "HTML/PDF sürümü ve dosya adının tarih sanılması",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "HTML/PDF hükümleri kendi version_id'leriyle; belirsiz sıra ana alternatiflerde; dosya adı kabul tarihi olmaz.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-04-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-04-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-04-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-04-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-04-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-05-A",
+      "category": "Spoofing",
+      "component": "Belirsiz sıranın uydurulması ve kongre metninin bağımsız program yapılması",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "uncertain ana alternatifler; supplement türü ve bağımsız program missing bağı korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-05-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-05-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-05-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-05-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-05-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-06-A",
+      "category": "Spoofing",
+      "component": "parti/sürüm/alan",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Aynı partiye ait version_id ve passage zinciri comparison-check, yükleme ve audit'te doğrulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-06-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-06-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-06-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-06-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-06-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-07-A",
+      "category": "Spoofing",
+      "component": "Ortak grup/başka parti belgesinin Yeni Yol'a mal edilmesi",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "yargitay-331 ayrı kimliği ve source party zinciri; gerçek belge yokluğu tek attempt/missing kanıtıyla ortak konulara bağlı.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-07-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-07-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-07-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-07-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-07-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-08-A",
+      "category": "Spoofing",
+      "component": "Tarihsel BDP programının güncel bağımsız DBP programı yapılması",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Kaynakla belgelenmiş ad değişikliği ilişkisinin sınırı, historical source_role ve güncel program missing birlikte korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-08-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-08-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-08-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-09-A",
+      "category": "Spoofing",
+      "component": "Birleşik HTML tüzük/programı ve kabul edilmemiş öneri paketi",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Bölüm scope'u, source_role ve kabul durumu ayrı; öneri güncel hüküm yapılmaz.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-09-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-09-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-09-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-10-A",
+      "category": "Spoofing",
+      "component": "parti/sürüm/alan",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Aynı partiye ait version_id ve passage zinciri comparison-check, yükleme ve audit'te doğrulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-10-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-10-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-10-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-11-A",
+      "category": "Spoofing",
+      "component": "parti/sürüm/alan",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Aynı partiye ait version_id ve passage zinciri comparison-check, yükleme ve audit'te doğrulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-11-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-11-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-11-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-12-A",
+      "category": "Spoofing",
+      "component": "DYP/1946 DP/ayrı güncel DYP kimliğinin karışması",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "yargitay-3 ve kaynaklı1983/2007 ilişki sınırı; diğer tüzel partilerin metni ayrı kalır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-12-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-12-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-12-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-13-A",
+      "category": "Spoofing",
+      "component": "parti/sürüm/alan",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Aynı partiye ait version_id ve passage zinciri comparison-check, yükleme ve audit'te doğrulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-13-B",
+      "category": "Tampering",
+      "component": "scratch/yayın",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Salt okunur tabandan yerel scratch; tek yazıcı; refresh audit; eski prefix/receipt ve baytlar korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-13-C",
+      "category": "Information Disclosure",
+      "component": "alıntı/URL/asset",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "esc/web_url/safe_path ve policy2 atıf/pasif arşiv yolu bütün yeni alanlara uygulanır.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-13-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-14-A",
+      "category": "Tampering",
+      "component": "taxonomy/reconcile",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Tam eşleme, rollback, eski satır ve snapshot koruma testleri; export/audit ortak seçili sürüm.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-14-B",
+      "category": "Spoofing",
+      "component": "synthesis_evidence",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Her karşılaştırılan tarafın gerçek pasajı; sahte çok-partili kanıtı validate_comparisons reddeder.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-14-C",
+      "category": "Information Disclosure",
+      "component": "HTML/URL/SQL",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Mevcut escape/safe_path ve parametreli sorgular yeni eşleme/sentez alanlarında korunur.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-14-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-15-A",
+      "category": "Tampering",
+      "component": "HTML/hash/URL",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Mevcut esc/web_url/safe_path; kaçışlı/geçersiz hash ve saldırgan metin fixture'ı.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-15-B",
+      "category": "Tampering",
+      "component": "tarihsel renderer/stil",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Önce17 freeze+dispatch; yeni CSS18; önceki HTML/hash yeniden üretimi.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-15-C",
+      "category": "Denial of Service",
+      "component": "tarayıcı testi",
+      "severity": "medium",
+      "disposition": "mitigate",
+      "mitigation_plan": "Yerel fixture, alt süreç zaman sınırı ve gerçek hata; Chromium yokluğunu skip saymama.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-16-A",
+      "category": "Tampering",
+      "component": "complete validation",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Her açık substantive hücre ve eksik kapsam için olumsuz test; tek shared validate_phase_three.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-16-B",
+      "category": "Repudiation",
+      "component": "review/acceptance/probe kayıtları",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Gerçek reviewer_kind/tarih/gerekçe/release; ham tanılar korunur, sahte insan pass yazılmaz.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-16-C",
+      "category": "Tampering",
+      "component": "history/source/receipts",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Başlangıç hash karşılaştırması, sürüme bağlı yeniden üretim, phase2/prefix kontrolü.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-PLAN.md"
+    },
+    {
+      "threat_id": "T-03-16-D",
+      "category": "Information Disclosure",
+      "component": "kaynak/HTML/yerel yol",
+      "severity": "high",
+      "disposition": "mitigate",
+      "mitigation_plan": "Mevcut parametreli SQL, esc/web_url/safe_path ve pasif arşiv korunur; yeni dış servis yok.",
+      "plan": ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-16-PLAN.md"
+    }
+  ]
+}
