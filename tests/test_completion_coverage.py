@@ -157,6 +157,24 @@ class CompletionCoverageTest(unittest.TestCase):
         self.assertEqual(json.loads(revision['review'])['decisions'], risk['decisions'])
         self.assertEqual(json.loads(revision['legacy_anchor'])['release_id'], self.reviewed['release_id'])
 
+    def test_manifest_binds_revision_basis_selection_and_review(self):
+        data = self.modern()
+        manifest = arsiv.completion_manifest_fields(data)
+        revision = data['comparison_completion_revision'][0]
+        self.assertEqual(manifest['comparison_completion_revision_id'], revision['id'])
+        self.assertEqual(manifest['comparison_completion_stage'], 'complete')
+        changed = dict(data, comparison_completion_revision=[dict(revision, review=revision['review'] + ' ')])
+        self.assertNotEqual(manifest['comparison_completion_review_sha256'],
+                            arsiv.completion_manifest_fields(changed)['comparison_completion_review_sha256'])
+        changed = dict(data, comparison_completion_revision=[dict(revision, selection=revision['selection'] + ' ')])
+        self.assertNotEqual(manifest['comparison_completion_selection_sha256'],
+                            arsiv.completion_manifest_fields(changed)['comparison_completion_selection_sha256'])
+        cells = list(data['comparison_coverage_disposition'])
+        cells[0] = dict(cells[0], disposition='changed')
+        changed = dict(data, comparison_coverage_disposition=cells)
+        self.assertNotEqual(manifest['comparison_completion_basis_sha256'],
+                            arsiv.completion_manifest_fields(changed)['comparison_completion_basis_sha256'])
+
     def test_revision_validation_preserves_history_and_binds_active_stage(self):
         root = Path(__file__).resolve().parents[1] / 'data/comparisons'
         basis = json.loads((root / '03-completion-basis-v2-source.json').read_text())

@@ -129,6 +129,10 @@ COMPLETION_V2_TABLES = {
     'comparison_completion_revision': 'id TEXT PRIMARY KEY, version INTEGER NOT NULL, epoch INTEGER NOT NULL UNIQUE, parent_revision_id TEXT REFERENCES comparison_completion_revision(id), taxonomy_version INTEGER NOT NULL, basis_id TEXT NOT NULL REFERENCES comparison_completion_basis(id), stage TEXT NOT NULL, created_at TEXT NOT NULL, legacy_anchor TEXT, selection TEXT NOT NULL, review TEXT NOT NULL, reason TEXT NOT NULL',
     'comparison_completion_supersession': 'revision_id TEXT NOT NULL REFERENCES comparison_completion_revision(id), old_cell_id TEXT NOT NULL, new_cell_id TEXT NOT NULL, old_row_id TEXT NOT NULL, new_row_id TEXT NOT NULL, source_basis_refs TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(revision_id,old_cell_id,new_cell_id)',
 }
+COMPLETION_MANIFEST_KEYS = ('comparison_completion_revision_id', 'comparison_completion_epoch',
+                            'comparison_completion_basis_id', 'comparison_completion_stage',
+                            'comparison_completion_basis_sha256', 'comparison_completion_selection_sha256',
+                            'comparison_completion_review_sha256')
 
 
 def canonical_json(value):
@@ -955,6 +959,23 @@ def completion_selection(data, taxonomy_version):
                 rows=rows, fields=[f for f in data['comparison_field'] if f['row_id'] in row_ids],
                 syntheses=[s for s in data['comparison_synthesis'] if s['taxonomy_version'] == taxonomy_version],
                 inventory=[i for i in data['comparison_source_inventory'] if i['taxonomy_version'] == taxonomy_version])
+
+
+def completion_manifest_fields(data):
+    """Bind the active immutable revision and its substantive stored inputs."""
+    revisions = data.get('comparison_completion_revision', [])
+    if not revisions:
+        return {}
+    active = max(revisions, key=lambda r: r['epoch'])
+    head = next(b for b in data['comparison_completion_basis'] if b['id'] == active['basis_id'])
+    cells = sorted((c for c in data['comparison_coverage_disposition'] if c['basis_id'] == head['id']),
+                   key=lambda c: c['cell_id'])
+    basis_digest = hashlib.sha256(canonical_json({'basis': head, 'dispositions': cells}).encode()).hexdigest()
+    return dict(comparison_completion_revision_id=active['id'], comparison_completion_epoch=active['epoch'],
+                comparison_completion_basis_id=head['id'], comparison_completion_stage=active['stage'],
+                comparison_completion_basis_sha256=basis_digest,
+                comparison_completion_selection_sha256=hashlib.sha256(active['selection'].encode()).hexdigest(),
+                comparison_completion_review_sha256=hashlib.sha256(active['review'].encode()).hexdigest())
 
 
 def completion_adoption_payload(data, basis, risk, created_at):
@@ -2200,6 +2221,8 @@ def audit_release(release='current', _seen=None):
             active = [m for m in markers if m['taxonomy_version'] == c['taxonomy_version']]
             if manifest.get('comparison_completion_version') != (active[0]['version'] if len(active) == 1 else None):
                 raise ValueError('Kaynak kapanışı manifesti geçersiz')
+            if {k: manifest[k] for k in COMPLETION_MANIFEST_KEYS if k in manifest} != completion_manifest_fields(exported):
+                raise ValueError('Kaynak kapanışı revizyon manifesti geçersiz')
         if not manifest.get('phase2_delivery'):
             base_id=manifest.get('base_release')
             if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
@@ -2538,6 +2561,7 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
             markers = [m for m in payload.get('comparison_completion', []) if m['taxonomy_version'] == c['taxonomy_version']]
             if markers:
                 manifest['comparison_completion_version'] = markers[0]['version']
+            manifest.update(completion_manifest_fields(payload))
         if refresh: manifest['phase2_refresh'] = True
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
