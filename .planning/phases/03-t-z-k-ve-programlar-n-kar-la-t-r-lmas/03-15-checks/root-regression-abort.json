@@ -1,0 +1,15 @@
+{
+  "reason": "Stopped own read-only regression early after statically confirmed unconditional renderer18 assertion against live20 (review CR-04); not a test-suite pass. Fix all review blockers then rerun.",
+  "recorded_utc": "2026-11-15T06:00:36.700742+00:00",
+  "run_token": "b627888b028b4eab8ebb4cd42dd42c84",
+  "root_job_pid": 922578,
+  "timeout_wrapper_pid": 922830,
+  "test_pid": 922841,
+  "test_process_group": 922841,
+  "signal": "SIGTERM",
+  "test_file_sha256": "c99bc8e696e78cdca3d80d93771d34302102e62b037218d70199450ea08ec3e3",
+  "completed_cases": 1,
+  "interrupted_case": "test_current_snapshot_passes",
+  "current_release_unchanged": true,
+  "root_writer_lock_absent": true
+}

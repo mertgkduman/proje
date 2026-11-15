@@ -1,0 +1,53 @@
+{
+  "phase_start": "ec7c0907aee52665a1bf2df3ebbba588c17e5448",
+  "diff_base": "bf4a6facf741bd7c0f4f6bb8e45f0415e5934327",
+  "files": [
+    "README.md",
+    "src/arsiv.py",
+    "src/dosyalar.py",
+    "src/kaynaklar.py",
+    "src/rapor.py",
+    "src/rapor_v15.py",
+    "src/rapor_v16.css",
+    "src/rapor_v16.py",
+    "src/rapor_v17.py",
+    "src/rapor_v18.py",
+    "src/rapor_v19.css",
+    "src/rapor_v19.py",
+    "src/rapor_v20.css",
+    "tests/comparison_navigation.cjs",
+    "tests/test_comparison_content.py",
+    "tests/test_comparison_navigation.py",
+    "tests/test_comparison_synthesis_contract.py",
+    "tests/test_comparisons.py",
+    "tests/test_dossiers.py",
+    "tests/test_phase2_cli_audit.py",
+    "tests/test_phase3_stage_compatibility.py",
+    "tests/test_source_labels.py",
+    "tests/test_source_policy.py"
+  ],
+  "count": 23,
+  "flags": {
+    "fix": false,
+    "all": false,
+    "auto": false,
+    "depth": "",
+    "files": "README.md,src/arsiv.py,src/dosyalar.py,src/kaynaklar.py,src/rapor.py,src/rapor_v15.py,src/rapor_v16.css,src/rapor_v16.py,src/rapor_v17.py,src/rapor_v18.py,src/rapor_v19.css,src/rapor_v19.py,src/rapor_v20.css,tests/comparison_navigation.cjs,tests/test_comparison_content.py,tests/test_comparison_navigation.py,tests/test_comparison_synthesis_contract.py,tests/test_comparisons.py,tests/test_dossiers.py,tests/test_phase2_cli_audit.py,tests/test_phase3_stage_compatibility.py,tests/test_source_labels.py,tests/test_source_policy.py"
+  },
+  "depth": {
+    "ok": true,
+    "depth": "standard",
+    "resolvedDepth": "standard",
+    "source": "config",
+    "matchedRule": null,
+    "downgraded": false,
+    "fileCount": 23
+  },
+  "model": "gpt-6.1-terra",
+  "effort": "xhigh",
+  "point": "execute:post",
+  "external_lanes": [],
+  "structural_prepass": "excluded: fallow disabled",
+  "stage": "advisory source review before plan16; end-phase hook will re-review later changes",
+  "created_utc": "2026-11-15T05:51:23.404Z"
+}
