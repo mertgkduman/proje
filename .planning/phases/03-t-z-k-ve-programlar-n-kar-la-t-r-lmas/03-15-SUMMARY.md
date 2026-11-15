@@ -8,16 +8,16 @@ requires:
     provides: Seçili v4 karşılaştırma, tipli sentez ve dokuz parti tabanı
 provides:
   - Kaynak ve kapsam kanıtına erişen iki yönlü odaklı karşılaştırma gezintisi
-  - Renderer 20 ile doğrulanmış yerel immutable rapor ve gerçek tarayıcı kanıtı
+  - Renderer 22 ile doğrulanmış yerel immutable rapor ve gerçek tarayıcı kanıtı
 affects: [03-16, source-semantics, uat]
 tech-stack:
   added: []
   patterns: [frozen-renderer-dispatch, chromium-devtools-viewport]
 key-files:
-  created: [src/rapor_v18.py, src/rapor_v19.py, src/rapor_v19.css, src/rapor_v20.css, tests/test_comparison_navigation.py, tests/test_phase3_stage_compatibility.py, tests/test_phase2_cli_audit.py, data/comparisons/03-navigation-checks.json]
+  created: [src/rapor_v18.py, src/rapor_v19.py, src/rapor_v19.css, src/rapor_v20.css, src/rapor_v20.py, src/rapor_v21.py, src/rapor_v21.css, src/rapor_v22.css, tests/comparison_navigation.cjs, tests/test_comparison_navigation.py, tests/test_phase3_stage_compatibility.py, tests/test_phase2_cli_audit.py, data/comparisons/03-navigation-checks.json]
   modified: [src/arsiv.py, src/rapor.py, README.md]
 key-decisions:
-  - Önceki 18 ve ara 19 rendererları ayrı dosyalarda byte-exact donduruldu; canlı sürüm 20 kullanıldı.
+  - Önceki 18, 19, 20 ve 21 rendererları ayrı dosyalarda byte-exact donduruldu; canlı sürüm 22 kullanıldı.
   - Partial audit isteği complete snapshot için complete kontrollerini uygular; Faz 2 CLI kendi tam auditini yapan doğrulayıcıya doğrudan gider.
 requirements-completed: []
 requirements-contributed: [KAR-01, KAR-02, RAP-02]
@@ -90,7 +90,7 @@ status: complete
 
 Yeni koşu `03-15-checks/exact-browser-run.json` ve `exact-browser.log` içinde: 2 test, dört gerçek viewport/protokol koşulu ve 19'ar kontrol exit 0. Tarayıcı doğrudan `file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html` ve o koşuda `http://127.0.0.1:44361/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html` adreslerini açtı; istenen ve gerçekten açılan adresler kanıttadır. Her koşulda aynı browser gerçek yerel İYİ program arşivine giderek beklenen pasajı okudu; arşiv SHA ilişkisi de kontrol edildi. HTTP sunucusu yalnız test süresince çalıştı. Önceden geçen P2/P3, tarihsel renderer ve görsel kanıtları korundu; audit veya yayın tekrarlanmadı. `requirements-completed` boştur; üç kimlik yalnız katkı alanıdır, küresel koşullar 03-16 sonrasına açıktır.
 
-## Kod inceleme düzeltmesi ve renderer 22 (denetimler sürüyor)
+## Kod inceleme düzeltmesi ve renderer 22
 
 Yerel `27033583248b4951b3fe8e5fd6d77b9f` sürümü publisher'ın kendi auditini geçerek current oldu. HTML SHA-256 `60bafd3b384e020800a01b00a0c58beaf0392d1587d69e372c44667e4186cf3f`; renderer 20 ve 21 kapalı HTML'leri byte-byte korunur. Final manifestin gerçek seçili değerleri taxonomy 4, comparison contract 2, synthesis 2 ve stage complete'tir. Önceki renderer 21 ile SQLite baytları ve release ID dışındaki mantıksal kayıtlar eşittir: 305 seçili konu, 4.935 satır, 854 sentez, dokuz parti ve 141 belge sürümü. Sekiz partilik P2 teslim sırası korunmuştur (`03-15-checks/continuity-v22.json`).
 
@@ -98,4 +98,4 @@ Seçili konu alanı parti dosyasındaki Tüzük/Program bölümünü belirler; b
 
 Satır soyu desteğinin sürüm 3/lineage 1 sözleşmesi mevcut veriye geriye dönük uygulanmadı. Ayrı DATA ve kilitte gerçek kaynaklı `ad5f8af53d4b4dd2b333839c5a1b1cff` fixture'ı export, publish, bağımsız audit ve bozuk manifest reddinden geçti (`03-15-checks/lineage-contract-v3-result.json`). Bir soy kenarı silinip SQLite özeti güncellendiğinde audit ve import reddetti, başarısız import workspace baytları değişmedi (`03-15-checks/lineage-tamper-result.json`). Bunlar izole test sonuçlarıdır, güncel araştırma verisine yeni anlam onayı eklemez.
 
-**Bekleyen son denetimler:** Final22 için gerçek P2 ve P3 partial komutları salt okunur olarak çalışıyor; P3 partial talebi complete snapshot için complete korumalarını da çalıştırır. PID, komut ve immutable girdi hashleri `03-15-checks/audits-v22-run.json` ve `audits-v22-inputs.json` içindedir. Exit sonuçları henüz alınmadı; root bu sonuçları ve kanıt loglarını tamamlayacaktır. 03-16 kaynak anlamı incelemesi, tam global regresyon ve UAT/faz kapanışı açık kalır; bu ek gereksinim kutularını tamamlamaz.
+**Son bağımsız denetimler geçti:** Final22 P2 ve P3 partial komutları exit 0 ve gerçek yayın kimliğiyle `PHASE2_AUDIT_OK` / `PHASE3_AUDIT_OK` verdi. P3 partial, complete korumalarını da çalıştırdı. `03-15-checks/audits-v22-result.json` ve `phase2-v22.*` / `phase3-v22.*` sonuçları, komut ve immutable giriş özetlerini bağlar. Son kaynak incelemesi `clean`; önceki dört kod bulgusu ve temiz checkout fixture teslimi kapanmıştır. Altı kapalı yayın/current `2fa77a4` ile Git'e alındı; gerçek temiz Git arşivinde renderer20/21 byte ve bölüm testi geçti (`clean-fixtures-green.json`). Root'un yeni tam global regresyonu çalışıyor; 03-16 kaynak anlamı incelemesi ve UAT/faz kapanışı açık kalır. Bu ek gereksinim kutularını tamamlamaz.
