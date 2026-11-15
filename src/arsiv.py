@@ -121,6 +121,14 @@ COMPARISON_TABLES = {
 }
 COMPARISON_INVENTORY_TABLE = 'id TEXT PRIMARY KEY, taxonomy_version INTEGER NOT NULL, party_id TEXT NOT NULL REFERENCES party(id), version_id TEXT REFERENCES document_version(id), source_role TEXT NOT NULL, section TEXT NOT NULL, page_range TEXT, full_text_available INTEGER NOT NULL, scanned_at TEXT NOT NULL, topic_ids TEXT NOT NULL, unmatched_headings TEXT NOT NULL, search_boundary TEXT NOT NULL, missing_id TEXT REFERENCES missing(id)'
 COMPLETION_TABLE = 'version INTEGER NOT NULL, taxonomy_version INTEGER NOT NULL, evidence TEXT NOT NULL, PRIMARY KEY(version,taxonomy_version)'
+# Optional v2 tables are append-only.  The v1 marker above is deliberately
+# unchanged: existing closed snapshots retain their original interpretation.
+COMPLETION_V2_TABLES = {
+    'comparison_completion_basis': 'id TEXT PRIMARY KEY, version INTEGER NOT NULL, taxonomy_version INTEGER NOT NULL, parent_basis_id TEXT REFERENCES comparison_completion_basis(id), created_at TEXT NOT NULL, source_catalog TEXT NOT NULL, universe TEXT NOT NULL, inventory TEXT NOT NULL, risk_universe TEXT NOT NULL, source_assertions TEXT NOT NULL',
+    'comparison_coverage_disposition': 'basis_id TEXT NOT NULL REFERENCES comparison_completion_basis(id), cell_id TEXT NOT NULL, logical_key TEXT NOT NULL, disposition TEXT NOT NULL, source_judgment TEXT NOT NULL, mapping_refs TEXT NOT NULL, basis_ids TEXT NOT NULL, field_dispositions TEXT NOT NULL, PRIMARY KEY(basis_id,cell_id)',
+    'comparison_completion_revision': 'id TEXT PRIMARY KEY, version INTEGER NOT NULL, epoch INTEGER NOT NULL UNIQUE, parent_revision_id TEXT REFERENCES comparison_completion_revision(id), taxonomy_version INTEGER NOT NULL, basis_id TEXT NOT NULL REFERENCES comparison_completion_basis(id), stage TEXT NOT NULL, created_at TEXT NOT NULL, legacy_anchor TEXT, selection TEXT NOT NULL, review TEXT NOT NULL, reason TEXT NOT NULL',
+    'comparison_completion_supersession': 'revision_id TEXT NOT NULL REFERENCES comparison_completion_revision(id), old_cell_id TEXT NOT NULL, new_cell_id TEXT NOT NULL, old_row_id TEXT NOT NULL, new_row_id TEXT NOT NULL, source_basis_refs TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(revision_id,old_cell_id,new_cell_id)',
+}
 LINEAGE_TABLES = {
     'comparison_lineage_contract': 'version INTEGER PRIMARY KEY, first_taxonomy_version INTEGER NOT NULL',
     'comparison_row_lineage': 'old_row_id TEXT NOT NULL REFERENCES comparison_row(id), new_row_id TEXT NOT NULL REFERENCES comparison_row(id), transition TEXT NOT NULL, PRIMARY KEY(old_row_id,new_row_id)',
@@ -321,6 +329,8 @@ def migrate_comparisons(db, backup_path, fail_at=None):
             db.execute('ALTER TABLE topic_basis ADD COLUMN source_role TEXT')
         db.execute(f'CREATE TABLE IF NOT EXISTS comparison_source_inventory ({COMPARISON_INVENTORY_TABLE})')
         db.execute(f'CREATE TABLE IF NOT EXISTS comparison_completion ({COMPLETION_TABLE})')
+        for name, definition in COMPLETION_V2_TABLES.items():
+            db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         for name, definition in COMPARISON_TABLES.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if fail_at == 'migration':
@@ -1509,6 +1519,11 @@ def export_db(path, release_id, strict_identity=False):
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Veritabanı bütünlük hatası')
         existing = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+        # Until v2 closure validation and export are installed, never silently
+        # discard a persisted v2 proof while exporting an apparently valid release.
+        v2_present = existing.intersection(COMPLETION_V2_TABLES)
+        if any(db.execute(f'SELECT 1 FROM {name} LIMIT 1').fetchone() for name in v2_present):
+            raise ValueError('Kaynak kapanışı sürüm 2 henüz dışa aktarılamıyor')
         names = [n for n in TABLES if n in existing] if 'scope_party' in existing else list(LEGACY_TABLES)
         present = existing.intersection(COMPARISON_TABLES)
         if present and present != set(COMPARISON_TABLES): raise ValueError('Eksik karşılaştırma şeması')

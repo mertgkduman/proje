@@ -69,6 +69,35 @@ class ComparisonReleaseTest(unittest.TestCase):
         data['comparison_synthesis_evidence'][0]['passage_id'] = next(p['id'] for p in data['passage'] if p['version_id'] == '0205-iyi-charter-istanbul-v1')
         with self.assertRaises(ValueError): arsiv.validate_comparisons(data)
 
+    def test_migration_retains_two_same_taxonomy_completion_epochs(self):
+        """A source-closure successor must coexist with its historical epoch."""
+        with tempfile.TemporaryDirectory() as temp:
+            source = arsiv.DATA / 'releases' / self.fixture_release() / 'records.sqlite3'
+            target = Path(temp) / 'records.sqlite3'
+            shutil.copyfile(source, target)
+            db = arsiv.connect(target)
+            try:
+                arsiv.migrate_comparisons(db, Path(temp) / 'backup.sqlite3')
+                db.execute('INSERT INTO comparison_completion_basis VALUES (?,?,?,?,?,?,?,?,?,?)',
+                           ('test-basis', 2, 4, None, '2026-11-15T00:00:00+00:00', '{}', '{}', '[]', '{}', '{}'))
+                first = ('test-revision-1', 2, 1, None, 4, 'test-basis', 'complete',
+                         '2026-11-15T00:00:00+00:00', None, '{}', '{}', 'fixture')
+                second = ('test-revision-2', 2, 2, 'test-revision-1', 4, 'test-basis', 'partial',
+                          '2026-11-15T01:00:00+00:00', None, '{}', '{}', 'forward work')
+                db.executemany('INSERT INTO comparison_completion_revision VALUES (?,?,?,?,?,?,?,?,?,?,?,?)',
+                               (first, second))
+                self.assertEqual([tuple(row) for row in db.execute(
+                    'SELECT epoch, taxonomy_version, stage FROM comparison_completion_revision ORDER BY epoch')],
+                    [(1, 4, 'complete'), (2, 4, 'partial')])
+                self.assertEqual(db.execute('PRAGMA foreign_key_check').fetchall(), [])
+                db.commit()
+            finally:
+                db.close()
+            # Do not silently export a closure the v2 validator does not yet
+            # understand. This guard is removed when v2 export is implemented.
+            with self.assertRaisesRegex(ValueError, 'sürüm 2'):
+                arsiv.export_db(target, 'fixture')
+
     def test_failed_migration_preserves_original_and_current(self):
         before = arsiv.current()
         with tempfile.TemporaryDirectory() as temp:
