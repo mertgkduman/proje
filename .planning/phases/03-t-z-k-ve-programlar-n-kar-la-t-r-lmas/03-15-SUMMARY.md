@@ -19,7 +19,8 @@ key-files:
 key-decisions:
   - Önceki 18 ve ara 19 rendererları ayrı dosyalarda byte-exact donduruldu; canlı sürüm 20 kullanıldı.
   - Partial audit isteği complete snapshot için complete kontrollerini uygular; Faz 2 CLI kendi tam auditini yapan doğrulayıcıya doğrudan gider.
-requirements-completed: [KAR-01, KAR-02, RAP-02]
+requirements-completed: []
+requirements-contributed: [KAR-01, KAR-02, RAP-02]
 coverage:
   - id: D1
     description: Gerçek yerel yayında iki yönlü gezinme, odak, kaynak ve kapsam kanıtı
@@ -82,3 +83,9 @@ status: complete
 ## Self-Check: PASSED
 
 Önemli dosyalar ve listelenen commitler mevcut; final release manifesti, gerçek tarayıcı sonucu, audit logları ve tarihsel renderer eşitlikleri doğrulandı.
+
+## Exact-file acceptance correction
+
+Önceki dört ortam testi release HTML'inin script eklenmiş geçici kopyasını açmıştı; bu sonuçlar gerçek etkileşim kanıtı olarak korunur ancak değişmez dosyanın doğrudan açıldığını kanıtlamak için geçersizdir. Önceki kanıt `03-15-checks/instrumented-navigation-checks.json` içinde saklandı. Yeni test, kapalı HTML'yi değiştirmeden CDP `Runtime.evaluate` kullanır ve kalıcı yardımcısı `tests/comparison_navigation.cjs` altındadır. Aktif taxonomy içindeki İYİ demokrasi ve yardım kampanyası kapsam satırları parti, konu, durum ve gerçek kaynak sürümü ölçütleriyle seçilir.
+
+Yeni koşu `03-15-checks/exact-browser-run.json` ve `exact-browser.log` içinde: 2 test, dört gerçek viewport/protokol koşulu ve 19'ar kontrol exit 0. Tarayıcı doğrudan `file:///hpc/group/pfisterlab/mg551/storage/proje/data/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html` ve o koşuda `http://127.0.0.1:44361/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html` adreslerini açtı; istenen ve gerçekten açılan adresler kanıttadır. Her koşulda aynı browser gerçek yerel İYİ program arşivine giderek beklenen pasajı okudu; arşiv SHA ilişkisi de kontrol edildi. HTTP sunucusu yalnız test süresince çalıştı. Önceden geçen P2/P3, tarihsel renderer ve görsel kanıtları korundu; audit veya yayın tekrarlanmadı. `requirements-completed` boştur; üç kimlik yalnız katkı alanıdır, küresel koşullar 03-16 sonrasına açıktır.

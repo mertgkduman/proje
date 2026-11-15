@@ -1,0 +1,14 @@
+{
+  "pid": 921234,
+  "host": "dcc-core-ferc-u-ab39-5-6",
+  "started_utc": "2026-11-15T05:32:36.161560+00:00",
+  "inputs": {
+    "tests/test_comparison_navigation.py": "0bf1ea899375af86ae9dbcd0d1ea67060885754ac2bad49367b5511c171735a8",
+    "tests/comparison_navigation.cjs": "a9d182e69b06c2c6035e8f4b6289c8c748ada1b864ed56775afab0d5dbf5342f",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/index.html": "78e74311816f7b9903f11a49fc9b096487c8333f026c7e535654d2a8886ae014",
+    "data/releases/ef353c40c60b400eb1c52b3245e9a65b/records.json": "2b4f8446885afb0c857b40474167f8766fdd941bff6a7400437b10af9c36f24a"
+  },
+  "command": "NAV_EVIDENCE=/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/exact-browser-evidence.json python3 tests/run.py --pattern test_comparison_navigation.py",
+  "log": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/exact-browser.log",
+  "exit": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-15-checks/exact-browser.exit"
+}
