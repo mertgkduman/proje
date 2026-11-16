@@ -1,63 +1,41 @@
 ---
 phase: 03-t-z-k-ve-programlar-n-kar-la-t-r-lmas
-fixed_at: 2026-11-15T08:37:35Z
+fixed_at: 2026-11-16
 review_path: .planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-REVIEW.md
-original_review_commit: b53ed3161787205f592f9aaaffe3b347c7887fac
-followup_review_commit: 5face6b
-followup_fixed: 1
-iteration: 1
-findings_in_scope: 4
-fixed: 4
+review_rounds_addressed: 4
+findings_in_scope: 9
+fixed: 9
 skipped: 0
-status: all_fixed
+status: fixed
+human_acceptance: false
 ---
 
-# Phase 03: Code Review Fix Report
+# Phase 03 — completed technical review fixes
 
-**Durum:** Dört kaynak düzeltmesi ve bağımsız incelemenin temiz checkout fixture bulgusu kapandı. Final22 P2/P3 bağımsız auditleri exit 0; son kaynak incelemesi `clean`. Tam global regresyon, 03-16 ve insan UAT ayrı açık kapılardır.
+The nine findings across checkpoints `959c692`, `8ac0513`, `7941d6c` and `48dd0a0` were corrected and independently re-reviewed. Reused CR identifiers belong to those archived reviews; the final clean report does not have nine open findings. Subsequent source/test reviews are clean, including `0175a72`.
 
-## Düzeltilen bulgular
+| Finding family | Final behavior |
+|---|---|
+| Candidate-mirrored closure and incomplete semantic coverage | Independently authored source basis, 2,745 topic/party obligations, source-backed field/synthesis obligations and applicable typed risk decisions; genuine SR25 programme-principle reading supplements the original readings. |
+| Forged decisions, unrelated corrections and fixed witness IDs | Original decision bodies and correction contexts are authenticated; forgeries fail atomically, while an authentic reading under a new local identity remains eligible. |
+| Updates after completion | Explicit immutable epochs retain historical proof while allowing same-taxonomy partial successors, sourced additions and later complete successors. |
+| Dependent syntheses and taxonomy history | Active claims use selected rows/fields; authenticated mechanical/substantive successors and A→B→C chains preserve prior claims. Earlier-taxonomy corrections are validated against their own basis and selection. |
+| Missing document to bounded negative | Registered reassessment binds the previous missing/attempt chain to the actual dated complete scope, without inventing positive fields. The labelled structural future fixture uses a real TİP source and asserts no new Yeni Yol discovery. |
 
-### CR-01: Konular arası satır taşımanın yeni anlam incelemesi
+Method and source evidence: `03-16-checks/completion-v2-method/` and `completion-v2-fix/`. The bounded taxonomy-5 helper/origin test does not prove a complete taxonomy-5 import/publication/audit; current taxonomy-4 acceptance and genuine earlier dictionary transitions are the delivered scope.
 
-**Durum:** fixed: requires human verification  
-**Commit:** `7535b06`, `24edad7`  
-**Dosyalar:** `src/arsiv.py`, `tests/test_comparison_content.py`, `README.md`
+## Runtime follow-ups
 
-Sözleşme 3/lineage 1, yapılandırılmış satır soyunu, tanım/koşul/öz kaynak kararlarını ve ilk sözlük sürümünün gerçek tabana bağlanmasını doğrular. Farklı konuya taşınan her satır için inceleme ve hedefte dokuz parti kapsamı gereklidir. Önceki snapshotlar değişmez. Ayrı DATA üzerindeki gerçek kaynaklı fixture export, publish, bağımsız audit ve bozulmuş manifest reddinden geçti; soy kenarı silinip hash yenilendiğinde gerçek audit ve import reddetti, başarısız import workspace'i değiştirmedi. Kanıtlar `03-15-checks/lineage-contract-v3-result.json` ve `lineage-tamper-result.json`. Final22 mevcut veri sözleşmesini **2**, taxonomy sürümünü **4** olarak korur; izole fixture'daki sözleşme 3 bu yayına geriye dönük uygulanmamıştır.
+`7ea9376` audits ancestors before materializing descendants and avoids a duplicate base JSON read. The exact previously OOM-killed 53-release candidate passed in 891.893 seconds at peak 1,297,632 KiB under a 4 GiB address-space ceiling. Its four files, isolated pointer and 2,251 original inputs were unchanged. The earlier `-9` attempt remains a failure, not a retroactive pass. See `03-16-checks/completion-v2-memory/`.
 
-### CR-02: Parti dosyasında Tüzük/Program hedefi
+`78ec9ab` fixes only the hostile-ID navigation fixture: project the authentic published view before inventing URL/DOM IDs. All `%`, `%20`, `%ZZ`, Unicode, space, quote and fragment cases and browser assertions remain. Four actual-current tests passed; 141 inputs stayed unchanged. Product source and the published bundle did not change. See `03-16-checks/completion-v2-navigation/`.
 
-**Durum:** fixed: requires human verification  
-**Commit:** `b8581a4`  
-**Dosyalar:** `src/rapor.py`, `src/arsiv.py`, `src/rapor_v20.py`, `src/rapor_v21.css`, `tests/test_comparison_navigation.py`, `tests/comparison_navigation.cjs`
+## Final verification scope
 
-Satırlar kaynak rolü yerine seçili konu alanına göre bölüm altında gösterilir; gerçek tarayıcı testi hem Tüzük hem Program atalarını doğrular. Renderer 20 donduruldu ve eski HTML byte-byte yeniden üretildi.
+- Configured full regression: **202 tests**, exit 0, **2,255 unchanged inputs**, using the documented pre-production current and earlier navigation-fixture epoch. No later full-suite rerun is claimed.
+- Its real v2 API scenario passed source-backed import, partial/complete publication, reassessment, rollback/idempotency and manifest-tamper assertions.
+- Actual current `3a3021c8e81749c3834462d1a0d81231`: **91 focused tests** across documented epochs, real file/HTTP × 360/1365 navigation (19/19 plus archive excerpt each), and ordinary, phase-2 complete and phase-3 complete audits, all exit 0. See `03-16-checks/completion-v2-final/STATUS.md`.
+- Root verified unchanged product source, the one test-fixture delta, tracked closed bundle, manifest file hashes and no writer in `03-16-checks/root-final-continuity.json`.
+- HTML is byte-identical to the preceding report. All 50 older releases, original source bytes, delivery receipts, archive views and frozen renderer remain intact.
 
-### CR-03: URL kodlu fragmentler ve ayrılmış karakterler
-
-**Durum:** fixed: requires human verification  
-**Commit:** `5c1c55e`, `40c31a8`, `6af739b`  
-**Dosyalar:** `src/rapor.py`, `src/arsiv.py`, `src/rapor_v21.py`, `src/rapor_v22.css`, `tests/test_comparison_navigation.py`, `tests/comparison_navigation.cjs`
-
-Hedef ID bir kez URL kodlanır ve güvenle çözülür; bozuk fragment güvenli kalır, geçmişten kaynakça odağı korunur. Gerçek kaynaklı izole fixture `%`, `%20`, `%ZZ`, Türkçe, boşluk, `#`, `?`, `/`, `&` ve tırnaklı teknik kimlikleri doğrudan ve karşılıklı bağlantılarda sınar. İlk literal `%` hatası `03-15-checks/percent-preview-red.log` içinde korunur. Renderer 21 frozen modülü gerçek HTML'yi byte-byte yeniden üretir.
-
-### CR-04: Eski renderer sabiti
-
-**Durum:** fixed  
-**Commit:** `4d51cb1`  
-**Dosya:** `tests/test_source_labels.py`
-
-Aktif renderer için eski 18 sabiti kaldırıldı; kaynak/sürüm/atıf/arşiv davranışı ve ayrı tarihsel byte testleri korunur. Sentez downgrade testinin eski complete-stage fixture'ı `8f79e00` ile amaçlanan partial aşamaya sabitlendi.
-
-## Bağımsız yeniden inceleme: temiz checkout fixture teslimi
-
-5face6b incelemesinin yeni CR-01 bulgusu, 2fa77a4 ile kapalı altı yayın zinciri ve current işaretçisinin depoya alınmasıyla düzeltildi. Runtime, test veya araştırma içeriği değişmedi. Manifestteki tüm dosya özetleri teslim öncesi doğrulandı. Aynı `git ls-files` kapsamından açılan temiz Git arşivinde önce gerçek dosya eksikliği görüldü (`clean-fixtures-red-valid.json`), teslim sonrasında renderer 20/21 byte ve alan bazlı bölüm testi geçti (`clean-fixtures-green.json`). İlk RED kapsamı fixture dizinlerini açıkça istemediği için `clean-fixtures-red.json` superseded olarak işaretlendi; geçerli RED/GREEN ayrı korunur.
-
-## Doğrulama ve devredilen işler
-
-Tüm kontroller ana checkout'ta yapıldı. Final local release `27033583248b4951b3fe8e5fd6d77b9f`, renderer 22, HTML SHA-256 `60bafd3b384e020800a01b00a0c58beaf0392d1587d69e372c44667e4186cf3f`: publisher exit 0. Eski renderer 20/21 HTML hashleri ve veri sürekliliği `03-15-checks/continuity-v22.json` içindedir. `pre22-regressions.log`: 26 test geçti; final `navigation-v22.log`: 4 test geçti, gerçek file/HTTP × 360/1365 üzerinde 19'ar kontrol ve kaynak/arşiv başarılı. `screenshots-v22.json`: dört gerçek ekran, exit 0.
-
-**Son bağımsız auditler geçti:** P2 ve P3 partial komutları gerçek `27033583248b4951b3fe8e5fd6d77b9f` sürümünde exit 0 ve `PHASE2_AUDIT_OK` / `PHASE3_AUDIT_OK` verdi. P3 partial, complete snapshot'ın complete korumalarını çalıştırdı. Immutable girdi özetleri değişmedi; kalıcı log/exit ve sonuç `03-15-checks/phase2-v22.*`, `phase3-v22.*`, `audits-v22-result.json` içindedir. Bağımsız kaynak incelemesi `6475e3b` ile clean olarak kaydedildi.
-
-03-16 kaynak anlamı incelemesi, root tam global regresyonu, sekiz küresel gereksinim ve UAT/faz kapanışı tamamlanmamıştır. Durdurulan eski global regresyon geçiş olarak sunulmaz.
+Eight raw probes and three descriptorless prohibitions retain unresolved status. Three human UAT groups and three value assessments remain pending. This technical fix report supplies no human acceptance and does not close the phase.

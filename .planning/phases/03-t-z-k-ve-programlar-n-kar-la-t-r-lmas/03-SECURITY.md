@@ -103,3 +103,8 @@ Kaynak kodu inceleme sınırı `6ef0b5d`; temiz bağımsız rapor `62f7b09` kayd
 ## Bellek düzeltmesi sonrası devamlılık
 
 `7ea9376` tarihsel denetimleri önce çalıştırarak çağrı zincirinde tutulan tam snapshot sayısını sınırlar; hiçbir tehdit önlemi kaldırılmaz. Gerçek 53 sürümlük adayın denetimi 891.893 saniyede, 1,297,632 KiB tepe RSS ile 4 GiB adres alanı sınırında geçti. Dört dosya, işaretçi ve 2.251 ilk girdi değişmedi. Kaynak ve test değişikliklerinin bağımsız artımlı incelemesi temizdir; 51 tehdit için açık sayısı yine 0. Genel regresyon ve üretim v2 kabulü henüz bekleniyor. Ayrıntı: `03-16-checks/completion-v2-memory/STATUS.md`.
+
+
+## Root final publication continuity — 2026-11-16T04:29:51.226758+00:00
+
+Final local release `3a3021c8e81749c3834462d1a0d81231` passed ordinary/P2/P3 complete audits. Product source is unchanged from the reviewed memory fix; 202 pre-production tests and 91 actual-current focused tests across documented epochs passed. The later navigation change affects test-fixture construction only and has an independent clean review and four passing current-release tests. No new risk acceptance is implied; all 51 planned threats remain closed. See `03-16-checks/root-final-continuity.json` and `completion-v2-final/STATUS.md`.

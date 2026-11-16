@@ -65,3 +65,8 @@ The screenshot manifest identifies release `27033583248b4951b3fe8e5fd6d77b9f`; i
 - `03-15-checks/screenshots-v22.json` and four `screenshots-v22/navigation-{row,topic}-{360,1365}.png` images
 
 Registry audit skipped: no `components.json`.
+
+
+## Root final publication continuity — 2026-11-16T04:29:51.226758+00:00
+
+The actual accepted renderer-23 release `3a3021c8e81749c3834462d1a0d81231` has HTML SHA-256 `60bafd3b384e020800a01b00a0c58beaf0392d1587d69e372c44667e4186cf3f`, identical to the audited HTML. Its actual four file/HTTP × 360/1365 cases passed 19/19 checks and the archive excerpt each. Existing screenshots remain byte-equivalent visual evidence; this is no new tablet, keyboard or screen-reader audit. Human tone/readability assessments remain pending.
