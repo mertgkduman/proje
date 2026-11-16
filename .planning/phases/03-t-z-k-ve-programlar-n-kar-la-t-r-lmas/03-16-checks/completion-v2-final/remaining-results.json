@@ -1,0 +1,103 @@
+{
+  "release_id": "3a3021c8e81749c3834462d1a0d81231",
+  "results": [
+    {
+      "name": "topics",
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "tests/run.py",
+        "--pattern",
+        "test_topics.py"
+      ],
+      "exit_code": 0,
+      "test_count": 3,
+      "valid": true
+    },
+    {
+      "name": "documents",
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "tests/run.py",
+        "--pattern",
+        "test_documents.py"
+      ],
+      "exit_code": 0,
+      "test_count": 11,
+      "valid": true
+    },
+    {
+      "name": "publication",
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "tests/run.py",
+        "--pattern",
+        "test_publication.py"
+      ],
+      "exit_code": 0,
+      "test_count": 11,
+      "valid": true
+    },
+    {
+      "name": "dossiers",
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "tests/run.py",
+        "--pattern",
+        "test_dossiers.py"
+      ],
+      "exit_code": 0,
+      "test_count": 12,
+      "valid": true
+    },
+    {
+      "name": "audit",
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "src/arsiv.py",
+        "audit",
+        "--release",
+        "3a3021c8e81749c3834462d1a0d81231"
+      ],
+      "exit_code": 0,
+      "test_count": null,
+      "valid": true
+    },
+    {
+      "name": "phase2",
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "src/arsiv.py",
+        "audit",
+        "--release",
+        "3a3021c8e81749c3834462d1a0d81231",
+        "--phase",
+        "2"
+      ],
+      "exit_code": 0,
+      "test_count": null,
+      "valid": true
+    },
+    {
+      "name": "phase3",
+      "command": [
+        "/hpc/home/mg551/miniconda3/bin/python3",
+        "src/arsiv.py",
+        "audit",
+        "--release",
+        "3a3021c8e81749c3834462d1a0d81231",
+        "--phase",
+        "3",
+        "--stage",
+        "complete"
+      ],
+      "exit_code": 0,
+      "test_count": null,
+      "valid": true
+    },
+    {
+      "name": "input-integrity",
+      "changed": [],
+      "valid": true
+    }
+  ]
+}

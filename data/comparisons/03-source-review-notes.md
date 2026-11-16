@@ -1,5 +1,17 @@
 # 03-16 kaynak kapanış kanıtı
 
+## 2026-11-16 v2 yerel sürüm
+
+Güncel yerel sürüm `3a3021c8e81749c3834462d1a0d81231`, bağımsız kaynak
+yükümlülüklerini ve türlendirilmiş risk incelemesini v2 tamamlanma revizyonu
+olarak taşır. Eski `03-source-review.json` tarihsel v1 işaretçisi korunur;
+v2 kaynağı `03-completion-review-v2.json` dosyasıdır. İlk 24 gerçek okuma
+grubu ve ayrıca tarihli SR25 gerçek kaynak okumasıdır; bunlar tüm derlemenin
+yeniden okunduğu veya insan kabulü verildiği anlamına gelmez. Bu teknik yenileme
+yeni bir Yeni Yol belgesi veya siyasi içerik düzeltmesi iddia etmez. İnsan UAT
+grupları ve üç değer değerlendirmesi bekler; sekiz ham tanı ve üç tanımsız
+yasak çözülmemiştir.
+
 `03-source-review.json`, seçili taxonomy 4 için ayrı sürümlenmiş kaynak
 kapanış işaretçisini ve kapalı snapshot'a taşınacak kanıtı içerir. Eski
 karşılaştırma sözleşmesi 2 ve tarihsel `complete` sürümlerinin anlamı değişmez.

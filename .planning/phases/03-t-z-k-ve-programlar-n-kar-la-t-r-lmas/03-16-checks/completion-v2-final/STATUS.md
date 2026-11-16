@@ -1,4 +1,16 @@
-# Current-release verification: blocked
+# Current-release verification history
+
+## Superseding completion — 2026-11-16
+
+The earlier navigation fixture failure below remains historical. After the
+test-only fix, the four navigation tests passed against actual current with
+141 inputs unchanged, including the four uninstrumented NAV cases. The four
+remaining current suites passed: topics 3, documents 11, publication 11,
+dossiers 12. Actual ordinary, phase-2 complete and phase-3 complete audits
+each exited 0; `remaining-results.json` records all 163 inputs unchanged.
+Final preservation rechecked all historical releases, receipts, originals,
+views and frozen renderer (`preservation.json`). Local technical evidence is
+complete; independent phase verification and human UAT remain pending.
 
 Local refresh `3a3021c8e81749c3834462d1a0d81231` was published successfully;
 publisher exit 0, current pointer matches, and no production writer remains.
