@@ -2,6 +2,7 @@
 from datetime import datetime, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 import sys
 
@@ -11,6 +12,13 @@ import arsiv
 
 OUT = Path(__file__).resolve().parent
 BASE = '3a3021c8e81749c3834462d1a0d81231'
+NATIVE_AUDIT = arsiv.audit_release
+
+
+def observed_audit(release='current', _seen=None):
+    result = NATIVE_AUDIT(release, _seen)
+    print(timestamp(), 'AUDIT_OK', result, flush=True)
+    return result
 
 
 def timestamp():
@@ -65,4 +73,12 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    arsiv.audit_release = observed_audit
+    try:
+        main()
+    finally:
+        lock = arsiv.DATA / '.write.lock'
+        if lock.exists():
+            owner = json.loads(lock.read_text())
+            if owner.get('pid') == os.getpid() and owner.get('host') == os.uname().nodename:
+                lock.unlink()

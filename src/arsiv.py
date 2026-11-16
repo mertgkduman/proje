@@ -374,7 +374,16 @@ def connect(path):
 
 
 def connect_readonly(path):
-    db = sqlite3.connect(Path(path).resolve().as_uri() + '?mode=ro', uri=True)
+    path = Path(path).resolve()
+    uri = path.as_uri() + '?mode=ro'
+    # Closed releases never change. Avoid NFS lock/change checks for those
+    # snapshots; workspaces and staging databases must still see live commits.
+    if (path.name == 'records.sqlite3'
+            and path.parent.parent == (DATA / 'releases').resolve()
+            and re.fullmatch(r'[0-9a-f]{32}', path.parent.name)
+            and (path.parent / 'manifest.json').is_file()):
+        uri += '&immutable=1'
+    db = sqlite3.connect(uri, uri=True)
     db.row_factory = sqlite3.Row
     db.execute('PRAGMA foreign_keys=ON')
     return db
