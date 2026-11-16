@@ -2,6 +2,8 @@
 
 ## CURRENT — 2026-11-16
 
+**Newer status:** the publisher exited 0 and `3a3021c8e81749c3834462d1a0d81231` is current with no writer; closed bundle/preservation committed `276d4f6`. Actual published HTML equals v1. Post-publication focused verification stopped with exit 1 after three percent-token direct-hash preview failures; its real NAV4 cases passed. Ordinary/phase-2/phase-3 audits and four later focused suites were not run. See `completion-v2-final/STATUS.md` and the raw focused logs; reconcile before continuing, and do not republish blindly. Human assessments remain pending.
+
 The pre-production full regression has finished with exit 0, `TESTS_OK count=202`, and all 2,255 captured inputs unchanged; raw evidence is archived in `final-regression/` and committed as `389226a`. It included the genuine v2 API round trip, but ran against the captured v1 current and is not a post-publication regression. The earlier isolated API attempt remains a distinct, recorded `-9` failure.
 
 One owned production-local publisher is active: supervisor PID/SID 1695510, child PID/SID 1695522, token `a373b83d697047f49e2aa6e6d7656979`; its writer lock is present. Current remains `85b1a453ce2346a8ad0df325a2b73ae9`. Candidate `3a3021c8e81749c3834462d1a0d81231` has a closed bundle and manifest (renderer 23; active v2 revision epoch 1, complete; retained historical marker version 1), but its pre-pointer audit has not completed and it is not accepted. Job evidence is in `completion-v2-final/publish-{job,handshake}.json` and `/tmp/proje-v2-production-publish-20261115/`.
