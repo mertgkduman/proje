@@ -1,7 +1,7 @@
 # Faz 03 — İnsan değerlendirmesi
 
-Durum: **bekliyor**. Yerel sürüm `85b1a453ce2346a8ad0df325a2b73ae9` için
-[raporu açın](../../../data/releases/85b1a453ce2346a8ad0df325a2b73ae9/index.html).
+Durum: **bekliyor**. Yerel sürüm `3a3021c8e81749c3834462d1a0d81231` için
+[raporu açın](../../../data/releases/3a3021c8e81749c3834462d1a0d81231/index.html).
 Ajan kaynak okuması insan kabulü değildir; münferit
 kaynakları kullanmak için ön izin de istenmez.
 
@@ -11,8 +11,8 @@ Gereksinimler: TUZ-01, TUZ-02, TUZ-03, TUZ-04, KAR-01. Üyelik hak ve
 koşullarının, seçim usulünün, merkez/il/ilçe/diğer organların, denetimin,
 görüş ve disiplin/itiraz güvencelerinin kaynak kapsamıyla tutarlı sunulmasını
 inceleyin. Örnekler: Yeni Parti Parti Meclisi genel katılım ve özel oy koşulu
-[Yeni Parti katılım kaydı](../../../data/releases/85b1a453ce2346a8ad0df325a2b73ae9/index.html#comparison-0314-v4-yeni-pm-katilim-row);
-[Demokrat il/ilçe kongresi hesap komisyonu](../../../data/releases/85b1a453ce2346a8ad0df325a2b73ae9/index.html#comparison-0314-v4-demokrat-kongre-hesap-komisyon-row). Tarihi bilinmeyen sürümler için
+[Yeni Parti katılım kaydı](../../../data/releases/3a3021c8e81749c3834462d1a0d81231/index.html#comparison-0314-v4-yeni-pm-katilim-row);
+[Demokrat il/ilçe kongresi hesap komisyonu](../../../data/releases/3a3021c8e81749c3834462d1a0d81231/index.html#comparison-0314-v4-demokrat-kongre-hesap-komisyon-row). Tarihi bilinmeyen sürümler için
 kesin hukuki sıra veya fiili uygulama varsayılmamalıdır.
 
 Sonuç: **bekliyor**. Kullanıcı değerlendirmesi: yok.
@@ -22,8 +22,8 @@ Sonuç: **bekliyor**. Kullanıcı değerlendirmesi: yok.
 Gereksinimler: PRG-01, KAR-02. Konu birleşimini, az partili konuları,
 ilke/hedef/araç ve koşul ayrımını, bütün kanıtların ve kaynaklı sentezin
 korunmasını inceleyin. Örnekler: Demokrat iklim ve koşullu ithalat aracı
-[Demokrat iklim kaydı](../../../data/releases/85b1a453ce2346a8ad0df325a2b73ae9/index.html#comparison-04-03-v3-0313-demokrat-doga-ekoloji); EMEP eğitim önerisi
-[eğitim kaydı](../../../data/releases/85b1a453ce2346a8ad0df325a2b73ae9/index.html#comparison-04-0314-emep-education-access-correct-page-row). DEM/DBP/Yeni Yol tam program
+[Demokrat iklim kaydı](../../../data/releases/3a3021c8e81749c3834462d1a0d81231/index.html#comparison-04-03-v3-0313-demokrat-doga-ekoloji); EMEP eğitim önerisi
+[eğitim kaydı](../../../data/releases/3a3021c8e81749c3834462d1a0d81231/index.html#comparison-04-0314-emep-education-access-correct-page-row). DEM/DBP/Yeni Yol tam program
 açığı, ek veya tarihsel belge içeriğiyle kapatılmış sayılmamalıdır.
 
 Sonuç: **bekliyor**. Kullanıcı değerlendirmesi: yok.
