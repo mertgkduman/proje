@@ -6,7 +6,7 @@
 
 **Status:** Kullanıcı tarafından onaylandı — 2026-11-09.
 **Milestone:** v1.0 — Kaynak temelli ilk araştırma arşivi ve rapor.
-**Structure:** Kullanıcının seçimiyle bütün aşamalar `mvp` modundadır. Gereksinimler onaylanmıştır; Faz 1 ve Faz 2 tamamlanmış, Faz 3–6 henüz başlamamıştır.
+**Structure:** Kullanıcının seçimiyle bütün aşamalar `mvp` modundadır. Gereksinimler onaylanmıştır; Faz 1 ve Faz 2 tamamlanmıştır. Faz 3, 16/16 teknik yürütüm ve bağımsız teknik doğrulama sonrası insan kabulü bekler; Faz 4–6 başlamamıştır.
 **Coverage:** 35/35 v1 gereksinimi tam olarak birer aşamaya atanmıştır. Eşleme, gereksinimlerin tamamlandığı anlamına gelmez.
 
 ## Phases
@@ -131,7 +131,8 @@ Plans:
 
 ### Phase 3: Tüzük ve programların karşılaştırılması
 
-**Goal:** Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir.
+**Goal:** As a reader, I want to compare membership rights, party governance and programme principles across the nine in-scope parties using common topics and traceable sources, so that I can make my own informed assessment and see documented information gaps.
+**Goal TR:** Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir.
 **Mode:** mvp
 **Depends on:** Phase 2
 **Requirements:** TUZ-01, TUZ-02, TUZ-03, TUZ-04, PRG-01, KAR-01, KAR-02, RAP-02
@@ -142,7 +143,7 @@ Plans:
 3. Okur, tüzük ve program tablolarında aynı konu başlıklarını bütün partiler için görebilir; her hücrede dayanak veya eksik bilgi durumu bulunur.
 4. Okur, dosyalardaki bulgulardan ve karşılaştırma hücrelerinden doğru kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir; madde/sayfa veya pasaj bağlantısı korunur.
 
-**Plans:** 15/16 plans executed
+**Plans:** 16/16 plans executed technically; 3 UAT groups + 3 value assessments pending
 
 Plans:
 **Wave 1**
@@ -207,7 +208,7 @@ Plans:
 
 **Wave 16** *(blocked on Wave 15 completion)*
 
-- [ ] 03-16-PLAN.md — Maddi kaynak incelemesi, tüm kapsam complete denetimi ve faz sonu UAT
+- [x] 03-16-PLAN.md — Maddi kaynak incelemesi ve teknik complete kabulü; insan UAT bekliyor
 
 **Yürütüm dalgaları:** 1–16, her dalgada aynı numaralı tek plan; her plan önceki plana bağlıdır. Yerel SQLite, current işaretçisi ve refresh tek yazıcıyla ilerler.
 
@@ -277,10 +278,10 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
-| 3. Tüzük ve programların karşılaştırılması | 15/16 | In Progress|  |
+| 3. Tüzük ve programların karşılaştırılması | 16/16 | Human verification needed |  |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
 ---
-*Last updated: 2026-11-12 after Phase 3 planning; 16 plans verified, execution not started*
+*Last updated: 2026-11-16 after Phase 3 technical execution and independent verification; human_needed, no next-phase advance*

@@ -157,3 +157,7 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 ---
 *Requirements defined: 2026-11-09*
 *Last updated: 2026-11-11 after Phase 2 completion; DOS-01, DOS-02, KAY-01 and KAY-04 verified; requirement IDs and phase mapping preserved*
+
+## Faz 03 teknik doğrulama ve insan kabulü
+
+2026-11-16: Sekiz Faz 03 gereksinimi [bağımsız doğrulama](phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-VERIFICATION.md) içinde kanıtla eşleştirildi; teknik kapsam 14/14, açık teknik engel yok. Durum `human_needed` olduğundan TUZ-01–04, PRG-01, KAR-01–02 ve RAP-02 kutuları/izleme durumları insan sonucu gelene kadar Pending kalır. Üç UAT grubu ve üç değer değerlendirmesi [03-UAT.md](phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-UAT.md) içindedir. Diğer fazların kapsamı ve durumu değişmedi.
