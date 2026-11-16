@@ -8,8 +8,8 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 23
-STYLE = Path(__file__).with_name('rapor_v22.css').read_text(encoding='utf-8')
+RENDERER_VERSION = 24
+STYLE = Path(__file__).with_name('rapor_v24.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -173,6 +173,13 @@ def render_report(data):
         'pilot-program': 'Parti programı', 'pilot-tuzuk': 'Parti tüzüğü',
     })
     findings = {f['id']: f for f in data['finding']}
+    acceptance = next((r for r in data.get('review', [])
+                       if r['kind'] == 'phase_uat' and r['subject_id'] == 'phase-03'
+                       and r['reviewer_kind'] == 'human' and r['result'] == 'accepted'), None)
+    phase_review = json.loads(acceptance['reason']) if acceptance else None
+    if phase_review and (phase_review.get('contract_version') != 1 or phase_review.get('phase') != '03'
+                         or [t['number'] for t in phase_review['tests']] != list(range(1, 7))):
+        raise ValueError('Geçersiz Faz 3 kabul kaydı')
     evidence = defaultdict(list)
     for row in data['finding_evidence']:
         evidence[row['finding_id']].append(row)
@@ -277,7 +284,12 @@ def render_report(data):
             f'aria-selected="{selected}" tabindex="{tabindex}">{esc(parties[pid]["legal_name"])}</button>'
         )
     pieces.append('<button type="button" role="tab" id="tab-comparison" aria-controls="comparison-summary" '
-                  'aria-selected="false" tabindex="-1">Karşılaştırmalı Özet</button></div>')
+                  'aria-selected="false" tabindex="-1">Karşılaştırmalı Özet</button>')
+    if phase_review:
+        pieces.append('<button type="button" role="tab" id="tab-phase-03-verification" '
+                      'aria-controls="phase-03-verification" aria-selected="false" tabindex="-1">'
+                      '3. Faz Doğrulama</button>')
+    pieces.append('</div>')
     if scoped or methods or attempts:
         pieces.append('<a class="method-link" href="#scope-method">Kapsam ve yöntem</a>')
     pieces.append(f'</aside><main id="main-content" tabindex="-1"><header class="masthead"><h1>{title}</h1>')
@@ -560,6 +572,48 @@ def render_report(data):
                     add_comparison_row(row)
         pieces.append('</section>')
     pieces.append('</div>')
+
+    if phase_review:
+        rows = {r['id']: r for r in data['comparison_row']}
+        fields = {f['id']: f for f in data['comparison_field']}
+        missing = {m['id']: m for m in data['missing']}
+        pieces.append('<div role="tabpanel" id="phase-03-verification" '
+                      'aria-labelledby="tab-phase-03-verification" hidden>'
+                      '<h2 class="panel-title">3. Faz Doğrulama</h2>'
+                      '<p>Tüzük ve program karşılaştırmasının altı kontrol başlığı, '
+                      'incelenen içerikten örneklerle birlikte.</p>'
+                      f'<p class="metadata">Kullanıcı kabulü · {time_tag(acceptance["reviewed_at"])} '
+                      '<span class="status">6/6 kontrol kabul edildi</span></p><div class="review-list">')
+        for test in phase_review['tests']:
+            pieces.append(f'<section class="card review-card" id="phase-03-check-{test["number"]}">'
+                          f'<h3>{test["number"]}. {esc(test["title"])}</h3>'
+                          f'<p class="summary">{esc(test["description"])}</p>')
+            for example in test['examples']:
+                row = rows[example['row_id']]
+                pieces.append('<article class="review-example">'
+                              f'<h4>{esc(example["label"])}</h4>')
+                if row['state'] == 'document_missing':
+                    gap = missing[row['missing_id']]
+                    pieces.append(f'<p><span class="status">{esc(gap["status"])}</span></p>'
+                                  f'<p class="summary">{esc(gap["reason"])}</p>'
+                                  f'<a href="#{fragment("attempt-" + gap["attempt_id"])}">Araştırma kaydı</a>')
+                else:
+                    field = fields[example['field_id']]
+                    if field['row_id'] != row['id']:
+                        raise ValueError('Doğrulama örneği karşılaştırma kaydıyla uyuşmuyor')
+                    if field['condition_key']:
+                        pieces.append(f'<p class="metadata">Koşul: {esc(field["condition_key"])}</p>')
+                    for key in ('summary_finding_id', 'quote_finding_id'):
+                        finding = findings[field[key]]
+                        cls, value = format_finding(finding)
+                        refs = ' '.join(named_citation(e['passage_id']) for e in evidence[finding['id']])
+                        pieces.append(f'<p class="{cls}">{value} {refs}</p>')
+                pieces.append('<div class="review-links">'
+                              f'<a href="#{fragment("comparison-" + row["id"])}">Karşılaştırma kaydı</a>'
+                              f'<a href="#{fragment("dossier-comparison-" + row["id"])}">Parti dosyası</a>'
+                              '</div></article>')
+            pieces.append('</section>')
+        pieces.append('</div></div>')
 
     if scoped or methods or attempts:
         pieces.append('<details id="scope-method"><summary>Kapsam ve yöntem</summary>')
