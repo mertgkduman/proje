@@ -108,3 +108,7 @@ Kaynak kodu inceleme sınırı `6ef0b5d`; temiz bağımsız rapor `62f7b09` kayd
 ## Root final publication continuity — 2026-11-16T04:29:51.226758+00:00
 
 Final local release `3a3021c8e81749c3834462d1a0d81231` passed ordinary/P2/P3 complete audits. Product source is unchanged from the reviewed memory fix; 202 pre-production tests and 91 actual-current focused tests across documented epochs passed. The later navigation change affects test-fixture construction only and has an independent clean review and four passing current-release tests. No new risk acceptance is implied; all 51 planned threats remain closed. See `03-16-checks/root-final-continuity.json` and `completion-v2-final/STATUS.md`.
+
+## Kapanış güvenlik devamlılığı — 2026-11-16
+
+Kullanıcının gerçek 6/6 kabulü `03-UAT.md` içinde kaydedildi. Renderer24 artımlı incelemesinde mevcut escape/fragment/citation sınırları kullanılır; kullanıcı mesajı ve geliştirme tercihi yalnız kayıt verisidir, HTML arayüzünde gösterilmez. Başlık/örnek etiketinin HTML kaçışı ve ajan incelemesinin insan kabulüne dönüşmemesi dahil beş yeni test ile on bir mevcut rapor testi geçti. Renderer23 kapalı sürümünün baytları bire bir yeniden üretildi. Plan zamanında yazılmış mevcut 51 tehditte önlem kaldırılmadı; ASVS L1 kısa yolu kapsamında `threats_open: 0` korunur. Arşiv yayınının yeni sürüm denetimi quick 261116-mgh günlüğünde ayrıca izlenir.

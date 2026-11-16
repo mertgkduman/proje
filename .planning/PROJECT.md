@@ -23,9 +23,10 @@ Herkesin siyasi partiler hakkında kendi değerlendirmesini yapabilmesi için ka
 
 Kullanıcı `$gsd-verify-work 1 onaylıyorum` yanıtıyla sekiz UAT kontrolünü topluca kabul etti. Bu doğrulama pilot ve ortak yöntemin ilk uygulaması içindir; bütün parti dosyaları ve karşılaştırmalar sonraki fazlardadır.
 
+- ✓ Üyelik hakları, yönetim seçimi ve denetimi, görüş ifade mekanizmaları ile program ilke/hedef/araçlarının ortak konularda kaynaklı karşılaştırılması — Faz 3 (TUZ-01–04, PRG-01, KAR-01–02, RAP-02); 2026-11-16 kullanıcı kabulü 6/6.
+
 ### Active
 
-- [ ] Parti üyelerinin haklarını, yönetimin seçilmesini ve denetlenmesini, farklı görüşlerin ifade mekanizmalarını belge maddelerine dayanarak incelemek.
 - [ ] Kamuoyuna açıklanan ilke ve vaatleri belgelenmiş uygulamalarla, ilgili aktör, tarih ve bağlam korunarak karşılaştırmak.
 - [ ] Finansman kaynaklarını ve harcama kalemlerini erişilebilen belgelere dayanarak incelemek; tutarların kapsadığı dönem ve para birimini kaydetmek.
 - [ ] Her önemli bulguya kaynak bağlantısı, belge tarihi, varsa sürüm, ilgili madde veya sayfa, erişim tarihi ve doğrulama tarihi eklemek.
@@ -214,4 +215,4 @@ Bu belge aşama geçişlerinde ve kilometre taşı sınırlarında güncellenir.
 4. Parti kapsamı, kaynaklar, kullanıcı geri bildirimi ve çıktılardaki güncel durumu Context bölümüne işle.
 
 ---
-*Last updated: 2026-11-11 after Phase 2 completion; user UAT 3/3 passed*
+*Last updated: 2026-11-16 after Phase 3 completion; explicit user UAT acceptance 6/6*

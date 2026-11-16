@@ -1,8 +1,8 @@
 ---
-status: awaiting_human_verify
+status: resolved
 trigger: "Aktif phase 03 tam regresyonunda test_unicode_and_space_ids_in_real_source_preview %ZZ alt testi başarısız; uygulama veya gözlemci nedenini araştır."
 created: 2026-11-15
-updated: 2026-11-15
+updated: 2026-11-16
 ---
 
 ## Current Focus
@@ -94,3 +94,7 @@ verification:
   guardrail_verdict: accepted
   full_suite: "İlk koşu 158 test ve 1 failure; sonraki koşu WR-01 nedeniyle durduruldu (exit 143). Bağımsız inceleme sonrası yeni kodla root yeniden koşacak."
 files_changed: [tests/comparison_navigation.cjs]
+
+## İnsan kabulü ve kapanış — 2026-11-16
+
+Önceki gerçek Chromium dört testlik WR-01 kabulü ve bağımsız inceleme kanıtı korunur. Kullanıcı Faz 3 rapor/kaynak akışı dahil altı UAT kontrolünü açıkça kabul etti. Yeni doğrulama sekmesi ayrıca 360 ve 1365 px gerçek Chromium koşullarında 26 örnek bağlantısı, kaynak açma/geri dönme ve klavye kontrolünden geçti (`quick/261116-mgh.../browser-preview.json`). Profil temizliği sorunu için beklenen insan kabulü tamamlandı; bu kapanış yeni bir kök neden iddiası değildir.

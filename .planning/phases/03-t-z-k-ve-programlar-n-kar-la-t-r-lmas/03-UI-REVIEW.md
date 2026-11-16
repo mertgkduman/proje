@@ -70,3 +70,16 @@ Registry audit skipped: no `components.json`.
 ## Root final publication continuity — 2026-11-16T04:29:51.226758+00:00
 
 The actual accepted renderer-23 release `3a3021c8e81749c3834462d1a0d81231` has HTML SHA-256 `60bafd3b384e020800a01b00a0c58beaf0392d1587d69e372c44667e4186cf3f`, identical to the audited HTML. Its actual four file/HTTP × 360/1365 cases passed 19/19 checks and the archive excerpt each. Existing screenshots remain byte-equivalent visual evidence; this is no new tablet, keyboard or screen-reader audit. Human tone/readability assessments remain pending.
+
+## Kullanıcı kabulü ve doğrulama sekmesi — 2026-11-16
+
+Kullanıcı mevcut altı Faz 3 UAT kontrolünü kabul etti; önceki insan sonucu bekleme notları güncel değildir. Renderer24 ek sekmesi quick 261116-mgh kapsamında mevcut ajan tarafından incelendi; bağımsız yeni alt ajan denetimi iddia edilmez. Önceki 18/24 puan ve ayrıntılı ana rapor bulguları bu eklemeyle yeniden puanlanmadı.
+
+- Metin: Altı kontrol okur başlıkları ve 13 gerçek örnekle sunulur; kullanıcı mesajı/geliştirme talimatı arayüze çıkmaz.
+- Görsel düzen: Mevcut nötr kart düzeni sürer; yeni resim/dekor eklenmedi.
+- Renk: Gerçek Chromium ölçümünde özet `rgb(0,51,102)`, tırnaklı alıntı `rgb(0,0,0)`.
+- Tipografi: Mevcut başlık/gövde stilleri kullanılır; yeni bir yazı ailesi yoktur.
+- Boşluk: Kartlar ve kaynak/örnek bağlantıları dar ekranda taşmaz; bağlantılarda 44px asgari hedef kullanılır.
+- Deneyim: 360 ve 1365 px gerçek Chromium koşullarında 26 örnek/parti bağlantısı, kaynağı açma/geri dönme, doğrudan sekme hash bağlantısı ve klavye seçimi geçti; belge kimlikleri tekildir.
+
+Görseller ve ayrıntılı sonuçlar: `../../../quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/review-360.png`, `review-1365.png`, `browser-preview.json`. Bu ek tablet veya ekran okuyucu doğrulaması iddia etmez.

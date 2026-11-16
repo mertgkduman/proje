@@ -19,11 +19,11 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 - [x] **DOS-01**: Okur, kapsamdaki her parti için kuruluş, tüzük, program, söylem–uygulama ve finansman–harcamalar başlıklarını içeren aynı şablonda dosya açabilir.
 - [x] **DOS-02**: Okur, partinin kuruluş tarihini, resmî adını ve temel kimlik bilgilerini kaynaklarıyla görebilir.
-- [ ] **TUZ-01**: Okur, parti üyelerinin haklarını ilgili tüzük maddelerine dayanarak inceleyebilir.
-- [ ] **TUZ-02**: Okur, parti yönetiminin nasıl seçildiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
-- [ ] **TUZ-03**: Okur, parti yönetiminin nasıl denetlendiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
-- [ ] **TUZ-04**: Okur, parti içinde farklı görüşlerin ifade edilmesine olanak tanıyan mekanizmaları ilgili tüzük maddeleriyle inceleyebilir.
-- [ ] **PRG-01**: Okur, partinin açıkladığı ilkeleri, hedefleri ve politika yaklaşımlarını programındaki ilgili bölümlerle birlikte inceleyebilir.
+- [x] **TUZ-01**: Okur, parti üyelerinin haklarını ilgili tüzük maddelerine dayanarak inceleyebilir.
+- [x] **TUZ-02**: Okur, parti yönetiminin nasıl seçildiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
+- [x] **TUZ-03**: Okur, parti yönetiminin nasıl denetlendiğini ilgili tüzük maddelerine dayanarak inceleyebilir.
+- [x] **TUZ-04**: Okur, parti içinde farklı görüşlerin ifade edilmesine olanak tanıyan mekanizmaları ilgili tüzük maddeleriyle inceleyebilir.
+- [x] **PRG-01**: Okur, partinin açıkladığı ilkeleri, hedefleri ve politika yaklaşımlarını programındaki ilgili bölümlerle birlikte inceleyebilir.
 
 ### Kaynaklar ve belge arşivi
 
@@ -51,11 +51,11 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Karşılaştırmalar ve HTML raporu
 
-- [ ] **KAR-01**: Okur, partilerin tüzük düzenlemelerini aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
-- [ ] **KAR-02**: Okur, partilerin programlarını aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
+- [x] **KAR-01**: Okur, partilerin tüzük düzenlemelerini aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
+- [x] **KAR-02**: Okur, partilerin programlarını aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
 - [ ] **KAR-03**: Okur, açıklanan ilkeler ile belgelenmiş uygulamaların karşılaştırmalarını bütün partilere uygulanan ortak ölçütlerle görebilir.
 - [ ] **RAP-01**: Okur, parti bazlı ana sekmelerden ve Karşılaştırmalı Özet sekmesinden oluşan Türkçe HTML raporunu açabilir ve paylaşabilir; her parti altında ortak araştırma başlıklarını, ilgili sekmenin altında kaynakları ve metin içinde kaynak kaydına bağlantıları görebilir. Eksik bilgi durumu ve gerekçesi ilgili araştırma başlığında gösterilir.
-- [ ] **RAP-02**: Okur, rapordaki bulgulardan ve karşılaştırma hücrelerinden ilgili kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir.
+- [x] **RAP-02**: Okur, rapordaki bulgulardan ve karşılaştırma hücrelerinden ilgili kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir.
 - [ ] **RAP-03**: Okur, rapor sekmelerini klavyeyle kullanabilir ve dar ekranda içerik kaybı olmadan okuyabilir.
 
 ### Ortak veri tabanı ve güncelleme
@@ -118,11 +118,11 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 | KAPS-04 | Phase 1 | Complete |
 | DOS-01 | Phase 2 | Complete |
 | DOS-02 | Phase 2 | Complete |
-| TUZ-01 | Phase 3 | Pending |
-| TUZ-02 | Phase 3 | Pending |
-| TUZ-03 | Phase 3 | Pending |
-| TUZ-04 | Phase 3 | Pending |
-| PRG-01 | Phase 3 | Pending |
+| TUZ-01 | Phase 3 | Complete |
+| TUZ-02 | Phase 3 | Complete |
+| TUZ-03 | Phase 3 | Complete |
+| TUZ-04 | Phase 3 | Complete |
+| PRG-01 | Phase 3 | Complete |
 | KAY-01 | Phase 2 | Complete |
 | KAY-02 | Phase 1 | Complete |
 | KAY-03 | Phase 1 | Complete |
@@ -138,11 +138,11 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 | MET-04 | Phase 1 | Complete |
 | EKS-01 | Phase 1 | Complete |
 | EKS-02 | Phase 1 | Complete |
-| KAR-01 | Phase 3 | Pending |
-| KAR-02 | Phase 3 | Pending |
+| KAR-01 | Phase 3 | Complete |
+| KAR-02 | Phase 3 | Complete |
 | KAR-03 | Phase 4 | Pending |
 | RAP-01 | Phase 6 | Pending |
-| RAP-02 | Phase 3 | Pending |
+| RAP-02 | Phase 3 | Complete |
 | RAP-03 | Phase 6 | Pending |
 | VER-01 | Phase 1 | Complete |
 | VER-02 | Phase 6 | Pending |
@@ -161,3 +161,5 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 ## Faz 03 teknik doğrulama ve insan kabulü
 
 2026-11-16: Sekiz Faz 03 gereksinimi [bağımsız doğrulama](phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-VERIFICATION.md) içinde kanıtla eşleştirildi; teknik kapsam 14/14, açık teknik engel yok. Durum `human_needed` olduğundan TUZ-01–04, PRG-01, KAR-01–02 ve RAP-02 kutuları/izleme durumları insan sonucu gelene kadar Pending kalır. Üç UAT grubu ve üç değer değerlendirmesi [03-UAT.md](phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-UAT.md) içindedir. Diğer fazların kapsamı ve durumu değişmedi.
+
+2026-11-16 kullanıcı kabulü: Sekiz Faz 03 gereksiniminin bağlı olduğu altı UAT kontrolü, kullanıcının ilk tekil ve ardından açık toplu kabulüyle tamamlandı. Güncel sonuç 6/6 pass, 0 issue; `03-UAT.md` kabulün sözlerini ve kapsamını korur. Yukarıdaki `human_needed` bekleme notu önceki teknik doğrulama anına aittir. Ham probe kayıtları değiştirilmedi.

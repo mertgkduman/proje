@@ -1,9 +1,11 @@
 ---
 phase: 03-t-z-k-ve-programlar-n-kar-la-t-r-lmas
-verified: 2026-11-16T04:40:22Z
-status: human_needed
+verified: 2026-11-16T21:25:38.458036+00:00
+status: passed
 score: 14/17 must-haves verified
 technical_score: 14/14
+human_score: 6/6
+human_accepted_at: 2026-11-16T21:16:52.321725+00:00
 covered_files:
   - ".planning/PROJECT.md"
   - ".planning/REQUIREMENTS.md"
@@ -142,6 +144,7 @@ covered_files:
   - "data/comparisons/03-emep-semantic.json"
   - "data/comparisons/03-exception-cases.json"
   - "data/comparisons/03-finding-review-links.json"
+  - "data/comparisons/03-human-acceptance.json"
   - "data/comparisons/03-iyi-charter.json"
   - "data/comparisons/03-iyi-program.json"
   - "data/comparisons/03-iyi-semantic.json"
@@ -342,6 +345,8 @@ covered_files:
   - "src/rapor_v21.py"
   - "src/rapor_v22.css"
   - "src/rapor_v22.py"
+  - "src/rapor_v23.py"
+  - "src/rapor_v24.css"
   - "tests/comparison_navigation.cjs"
   - "tests/fixture_data.py"
   - "tests/fixtures/completion_revision_correction.json"
@@ -352,6 +357,7 @@ covered_files:
   - "tests/fixtures/completion_sr25_replacement.json"
   - "tests/fixtures/completion_synthesis_rebind.json"
   - "tests/test_acceptance.py"
+  - "tests/test_archive_readonly.py"
   - "tests/test_audit_memory.py"
   - "tests/test_chain.py"
   - "tests/test_comparison_content.py"
@@ -365,11 +371,12 @@ covered_files:
   - "tests/test_matches.py"
   - "tests/test_missing.py"
   - "tests/test_phase2_cli_audit.py"
+  - "tests/test_phase3_review.py"
   - "tests/test_phase3_stage_compatibility.py"
   - "tests/test_source_labels.py"
   - "tests/test_source_policy.py"
   - "tests/test_topics.py"
-covered_digest: "v1:sha256:6c265541a7f9950a95b34c9539b7fc301b46bc59b8e280a3c95462073c7eef6f"
+covered_digest: "v1:sha256:1de3a9e6548ad14a57f74371d0ae90ea5383870491fe707b0bf96ba8aeb18d19"
 behavior_unverified: 0
 overrides_applied: 0
 decision_coverage:
@@ -402,34 +409,20 @@ must_haves:
     - statement: 'Tüzükte yazılı mekanizma fiilî uygulama diye, ek/tarihsel belge bağımsız güncel program diye veya ayrı tüzel partinin belgesi başka partiye aitmiş gibi sunulamaz.'
       status: unresolved
       verification: null
-unverified_prohibitions:
-  - 'P1: Puanlama, oy yönlendirmesi ve araştırmacı tercihi — insan kararı bekliyor.'
-  - 'P2: Eksiklik/belirsizlikten karşıt tutum, başarısızlık veya güncellik güvencesi üretmeme — insan kararı bekliyor.'
-  - 'P3: Mekanizma/uygulama, belge türü ve tüzel kimlik ayrımı — insan kararı bekliyor.'
-human_verification:
-  - test: 'H1 — 03-UAT grup 1: Tüzük, haklar ve tarihçeyi Yeni Parti PM katılımı ve Demokrat yerel hesap komisyonu örneklerinden kaynaklarıyla oku.'
-    expected: 'Hak/koşul/itiraz, seçim usulü, merkez/il/ilçe/diğer organ, denetim ve görüş/disiplin sınırları kaynağın anlamını korur; bilinmeyen sıra ve fiilî uygulama varsayılmaz.'
-    why_human: 'TUZ-01–04/KAR-01 için nihai insan anlam ve okuma değerlendirmesi verilmedi; ajan kaynak okuması bunun yerine geçmez.'
-  - test: 'H2 — 03-UAT grup 2: Program alanları, az-partili konular ve sentezi Demokrat iklim ve EMEP eğitim örnekleriyle değerlendir.'
-    expected: 'İlke/hedef/araç ve koşullar ayrıdır; kaynaklar ve sentez tarafları korunur; DEM/DBP/Yeni Yol bağımsız program açıkları görünürdür.'
-    why_human: 'PRG-01/KAR-02 için kaynağa sadakat ve karşılaştırmanın okunabilirliği hakkında kullanıcı sonucu yoktur.'
-  - test: 'H3 — 03-UAT grup 3: Nihai raporda karşılaştırma ile parti dosyası arasında iki yönde ilerle, kaynak kaydı ve gerçek yerel arşivi aç.'
-    expected: 'Doğru konu/parti/pasaj/sürüm açılır; sabit sıra, siyah tırnaklı alıntı ve koyu mavi özet dar ekranda anlaşılırdır.'
-    why_human: 'RAP-02 için gerçek kullanıcı akışı ve okuma rahatlığı bekliyor; dört otomatik tarayıcı durumu bütün kullanıcı/yardımcı teknoloji deneyimini ispatlamaz.'
-  - test: 'H4 — 03-UAT değer 1: Puanlama, oy yönlendirmesi veya araştırmacı tercihi üretilmediğini ayrı karara bağla.'
-    expected: 'Kapsam ve sabit gösterim sırası siyasi destek veya başarı sıralaması sayılmaz.'
-    why_human: 'P1 descriptor-less/unresolved; test veya insan kabulü descriptorı yoktur.'
-  - test: 'H5 — 03-UAT değer 2: Eksik bilgi ve belirsiz sürümlerin anlatımını ayrı karara bağla.'
-    expected: 'Belge açığı, dar ifade yokluğu ve bilinmeyen sıra karşıt tutuma, olumsuz performansa veya hukuki güncellik güvencesine dönüşmez.'
-    why_human: 'P2 descriptor-less/unresolved; yapı ve kaynak bütünlüğü bağlamsal değer kararını çözmez.'
-  - test: 'H6 — 03-UAT değer 3: Yazılı mekanizma/uygulama, ek/tarihsel belge/program ve ayrı tüzel kimlik ayrımını ayrı karara bağla.'
-    expected: 'Yazılı mekanizma gerçekleşmiş uygulama, ek/tarihsel metin bağımsız güncel program veya başka partinin belgesi olarak okunmaz.'
-    why_human: 'P3 descriptor-less/unresolved; insan sonucu alınmadan geçilmiş sayılamaz.'
+unverified_prohibitions: []
+human_verification: []
+human_acceptance:
+  source: 03-UAT.md
+  mode: explicit_user_bulk_acceptance
+  result: accepted
+  accepted_tests: [1, 2, 3, 4, 5, 6]
+  accepted_release: 3a3021c8e81749c3834462d1a0d81231
+  raw_probe_records_reclassified: false
 ---
 
 # Phase 03: Tüzük ve programların karşılaştırılması — Verification
 
-**Durum: human_needed.** Teknik teslim doğrulandı; üç UAT grubu ve üç ayrı değer değerlendirmesi için kullanıcı sonucu bekleniyor. Saptanmış açık teknik engel yoktur. Bu rapor insan kabulü veya sonraki faza geçiş kararı değildir.
+**Durum: passed.** Teknik teslim 14/14 doğrulandı; altı insan kontrolü 2026-11-16 tarihinde kullanıcının açık kabulüyle tamamlandı. Kullanıcı ilk kontrolü ayrı, kalan beş kontrolü topluca kabul etti. Aşağıdaki teknik inceleme ve önceki bekleme ifadeleri özgün doğrulama anını gösterir; güncel insan sonucu `03-UAT.md` ve dosya sonundaki kabul kaydındadır.
 
 **Phase Goal:** As a reader, I want to compare membership rights, party governance and programme principles across the nine in-scope parties using common topics and traceable sources, so that I can make my own informed assessment and see documented information gaps.
 
@@ -684,3 +677,9 @@ _Verifier: gsd-verifier — independent goal-backward verification_
 ## Root administrative reconciliation — 2026-11-16T04:49:40.790193+00:00
 
 STATE/ROADMAP now record 16/16 technical plans and human_needed without phase advancement. Requirement checkboxes remain Pending. The same three UAT groups and three value questions were normalized to six pending tests in the canonical UAT format, with the original report/source links preserved. No user response was supplied. Product code, test code, current release and research source data were not changed by these administrative updates. The official 364-file fingerprint was refreshed after the covered tracking/UAT changes; the independent technical verdict remains 14/14, behavior_unverified=0 and human_needed.
+
+## İnsan kabulü — 2026-11-16
+
+Kullanıcı ilk kontrolü geliştirme talimatlarının arayüze taşınmaması tercihiyle kabul etti; ardından “hepsi gecti olsun” diyerek kalan beş kontrolü açıkça topluca kabul etti. Altı kontrolün sonucu `03-UAT.md` içinde pass olarak kaydedildi. Bu kayıt kullanıcı kabulüdür; yeni kaynak okuması veya altı ayrı tekil yanıt iddia edilmez. Teknik doğrulama 14/14 olarak, üç descriptor-less ve sekiz ham probe kaydı özgün çözümlenmemiş durumlarıyla korunur. Önceki H1–H6 bekleme ifadeleri bu tarihten itibaren güncel değildir.
+
+Kullanıcı ayrıca örnekli yeni doğrulama sekmesini ve GitHub Pages yayınının güncellenmesini istedi; bu ek iş quick task `261116-mgh` kapsamında ayrı teknik kontrollerle yürütülür.

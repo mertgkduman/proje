@@ -15,7 +15,7 @@
 
 - [x] **Phase 1: Kapsam, yöntem ve kaynaklı pilot rapor** - Okur, kapsamı ve araştırma yöntemini görebilir; seçilen bir partinin beş başlıklı pilot dosyasını ortak kayıttan HTML raporuna ve arşiv belgelerine kadar izleyebilir. (completed 2026-11-10)
 - [x] **Phase 2: Bütün partiler için dosyalar ve sürümlü kaynaklar** - Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir. (completed 2026-11-11)
-- [ ] **Phase 3: Tüzük ve programların karşılaştırılması** - Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir.
+- [x] **Phase 3: Tüzük ve programların karşılaştırılması** - Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir. (completed 2026-11-16)
 - [ ] **Phase 4: Söylem ve belgelenmiş uygulamaların karşılaştırılması** - Okur, ilan edilen ilke ve vaatlerin belgelenmiş uygulamalarla ilişkisini ortak yöntem ve olay bağlamı içinde değerlendirebilir.
 - [ ] **Phase 5: Finansman ve harcamaların belgelenmesi** - Okur, partilerin erişilebilen gelir ve harcama bilgilerini dönem ve kapsam farklarını anlayarak inceleyebilir.
 - [ ] **Phase 6: Güncellenebilir veri tabanı ve paylaşılabilir rapor** - Araştırmacı kaynak ve bulguları geçmişi korunarak güncelleyebilir; okur aynı kayıtlardan üretilen tam, erişilebilir ve paylaşılabilir HTML araştırma raporunu kullanabilir.
@@ -143,7 +143,7 @@ Plans:
 3. Okur, tüzük ve program tablolarında aynı konu başlıklarını bütün partiler için görebilir; her hücrede dayanak veya eksik bilgi durumu bulunur.
 4. Okur, dosyalardaki bulgulardan ve karşılaştırma hücrelerinden doğru kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir; madde/sayfa veya pasaj bağlantısı korunur.
 
-**Plans:** 16/16 plans executed technically; 3 UAT groups + 3 value assessments pending
+**Plans:** 16/16 plans complete
 
 Plans:
 **Wave 1**
@@ -278,10 +278,10 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
-| 3. Tüzük ve programların karşılaştırılması | 16/16 | Human verification needed |  |
+| 3. Tüzük ve programların karşılaştırılması | 16/16 | Complete    | 2026-11-16 |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
 ---
-*Last updated: 2026-11-16 after Phase 3 technical execution and independent verification; human_needed, no next-phase advance*
+*Last updated: 2026-11-16 after Phase 3 completion; technical 14/14 and explicit user UAT acceptance 6/6. Phase 4 not started.*
