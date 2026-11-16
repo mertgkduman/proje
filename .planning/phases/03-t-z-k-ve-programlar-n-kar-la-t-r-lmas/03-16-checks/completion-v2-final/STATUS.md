@@ -18,7 +18,10 @@ direct-hash preview subtests for `%`, `%20`, and `%ZZ`: the test reported the
 target missing, unfocused and invisible. `focused-navigation.log` is the raw
 failure output; no underlying cause or correction is claimed here.
 
-The job stopped on that failure. Topics, documents, publication and dossiers
+The job stopped on that failure. A separate post-failure corroboration found
+all 163 captured focused inputs unchanged in both the workspace and the saved
+copy (`focused-post-failure-integrity.json`); it is not the worker's own check.
+Topics, documents, publication and dossiers
 focused suites and actual current ordinary, phase-2 and phase-3 complete audits
 were not run. The focused job did not reach its post-run input-integrity check.
 The three human UAT groups and three value assessments remain pending. Root must
