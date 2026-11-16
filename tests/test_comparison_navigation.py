@@ -102,7 +102,10 @@ class ComparisonNavigation(unittest.TestCase):
         sys.path.insert(0, str(ROOT / 'src'))
         from arsiv import comparison_render_data
         from rapor import render_report
-        records = json.loads(RECORDS.read_text())
+        # Resolve the published selection before assigning hostile preview IDs.
+        # Serialized v2 revision selections deliberately retain original IDs;
+        # they are provenance, not input to this URL/DOM rendering fixture.
+        records = comparison_render_data(json.loads(RECORDS.read_text()))
         original = selected_records()
         def rename(value):
             if isinstance(value, str): return aliases.get(value, value)
@@ -116,7 +119,7 @@ class ComparisonNavigation(unittest.TestCase):
                     aliases = {original['row']: 'gezinti ' + token + ' #?/&"\' ş', original['passage']: 'kaynak ' + token + ' #?/&"\' ğ'}
                     preview = rename(records)
                     config = dict(original, row=aliases[original['row']], passage=aliases[original['passage']])
-                    report.write_text(render_report(comparison_render_data(preview)), encoding='utf-8')
+                    report.write_text(render_report(preview), encoding='utf-8')
                     direct = self.invoke(report.as_uri(), 1365, dict(config, direct=True))
                     self.assertTrue(direct['exists'] and direct['focused'] and direct['visible'])
                     observed = self.invoke(report.as_uri(), 360, config)
