@@ -112,3 +112,7 @@ Final local release `3a3021c8e81749c3834462d1a0d81231` passed ordinary/P2/P3 com
 ## Kapanış güvenlik devamlılığı — 2026-11-16
 
 Kullanıcının gerçek 6/6 kabulü `03-UAT.md` içinde kaydedildi. Renderer24 artımlı incelemesinde mevcut escape/fragment/citation sınırları kullanılır; kullanıcı mesajı ve geliştirme tercihi yalnız kayıt verisidir, HTML arayüzünde gösterilmez. Başlık/örnek etiketinin HTML kaçışı ve ajan incelemesinin insan kabulüne dönüşmemesi dahil beş yeni test ile on bir mevcut rapor testi geçti. Renderer23 kapalı sürümünün baytları bire bir yeniden üretildi. Plan zamanında yazılmış mevcut 51 tehditte önlem kaldırılmadı; ASVS L1 kısa yolu kapsamında `threats_open: 0` korunur. Arşiv yayınının yeni sürüm denetimi quick 261116-mgh günlüğünde ayrıca izlenir.
+
+## Yeni sürümün yayın kabulü — 2026-11-16
+
+Renderer24 sürümü `9003e475ee5d49b29a1310c0bfe2007d` standart API’nin bütün kapılarından geçti; araştırma tabloları ve önceki taban dosya hashleri korundu. Kapalı SQLite okuyucusu yalnız manifestli release kopyalarında immutable kullanır; canlı commit görünürlüğü ve salt okunur sınırları üç testle, tarihsel bozulma/döngü reddi iki testle, yayın/rollback/kilit ve kaynak güvenliği on bir testle doğrulandı. Mevcut 51 plan tehdidinde önlem kaldırılmadı; threats_open: 0 korunur. Canlı rapor/örnek belgeler ve varlıklar SHA-256 ile eşleşti.

@@ -1,6 +1,6 @@
 ---
 phase: 03-t-z-k-ve-programlar-n-kar-la-t-r-lmas
-verified: 2026-11-16T21:25:38.458036+00:00
+verified: 2026-11-16T22:58:00.342958+00:00
 status: passed
 score: 14/17 must-haves verified
 technical_score: 14/14
@@ -119,6 +119,16 @@ covered_files:
   - ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-SECURITY.md"
   - ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-UAT.md"
   - ".planning/phases/03-t-z-k-ve-programlar-n-kar-la-t-r-lmas/03-UI-REVIEW.md"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/261116-mgh-SUMMARY.md"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/browser-bundle-archives.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/browser-bundle-http.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/browser-live.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/candidate-html-equality.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/checks.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/deployment.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/live-checks.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/pages-bundle.json"
+  - ".planning/quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/publication.json"
   - "AGENTS.md"
   - "README.md"
   - "data/comparisons/03-acceptance.json"
@@ -246,6 +256,10 @@ covered_files:
   - "data/releases/8916515f456d479e8b55011533c22db1/manifest.json"
   - "data/releases/8916515f456d479e8b55011533c22db1/records.json"
   - "data/releases/8916515f456d479e8b55011533c22db1/records.sqlite3"
+  - "data/releases/9003e475ee5d49b29a1310c0bfe2007d/index.html"
+  - "data/releases/9003e475ee5d49b29a1310c0bfe2007d/manifest.json"
+  - "data/releases/9003e475ee5d49b29a1310c0bfe2007d/records.json"
+  - "data/releases/9003e475ee5d49b29a1310c0bfe2007d/records.sqlite3"
   - "data/releases/9119e174a8d94f2d9c77efa155347242/index.html"
   - "data/releases/9119e174a8d94f2d9c77efa155347242/manifest.json"
   - "data/releases/9119e174a8d94f2d9c77efa155347242/records.json"
@@ -376,7 +390,7 @@ covered_files:
   - "tests/test_source_labels.py"
   - "tests/test_source_policy.py"
   - "tests/test_topics.py"
-covered_digest: "v1:sha256:1de3a9e6548ad14a57f74371d0ae90ea5383870491fe707b0bf96ba8aeb18d19"
+covered_digest: "v1:sha256:c1cc28d258152b263ee500b2db47eb3f6eda86011338d4d89314e4405863ef42"
 behavior_unverified: 0
 overrides_applied: 0
 decision_coverage:
@@ -683,3 +697,7 @@ STATE/ROADMAP now record 16/16 technical plans and human_needed without phase ad
 Kullanıcı ilk kontrolü geliştirme talimatlarının arayüze taşınmaması tercihiyle kabul etti; ardından “hepsi gecti olsun” diyerek kalan beş kontrolü açıkça topluca kabul etti. Altı kontrolün sonucu `03-UAT.md` içinde pass olarak kaydedildi. Bu kayıt kullanıcı kabulüdür; yeni kaynak okuması veya altı ayrı tekil yanıt iddia edilmez. Teknik doğrulama 14/14 olarak, üç descriptor-less ve sekiz ham probe kaydı özgün çözümlenmemiş durumlarıyla korunur. Önceki H1–H6 bekleme ifadeleri bu tarihten itibaren güncel değildir.
 
 Kullanıcı ayrıca örnekli yeni doğrulama sekmesini ve GitHub Pages yayınının güncellenmesini istedi; bu ek iş quick task `261116-mgh` kapsamında ayrı teknik kontrollerle yürütülür.
+
+## Örnekli doğrulama sekmesi ve kamu yayını — 2026-11-16
+
+Kullanıcının istediği altı başlıklı/13 örnekli sekme renderer24 ile ayrı quick iş olarak tamamlandı. Yeni current `9003e475ee5d49b29a1310c0bfe2007d`, normal/Faz 1/Faz 2/tam Faz 3 API kapılarından geçti. Araştırma tabloları aynı; ayrı kabul kaydı eklendi. Toplam 32 test; dosya/HTTP ve canlı HTTPS Chromium kontrolleri; 14 canlı dosya hash eşleşmesi başarılıdır. [Kamu raporu](https://mertgkduman.github.io/proje/releases/9003e475ee5d49b29a1310c0bfe2007d/index.html#phase-03-verification) ve [kanıt özeti](../../quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/261116-mgh-SUMMARY.md). Teknik 14/14 ve açık kullanıcı kabulü 6/6 korunur; ham tanılar yeniden sınıflandırılmadı.

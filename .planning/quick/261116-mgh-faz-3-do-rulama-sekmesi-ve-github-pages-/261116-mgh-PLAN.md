@@ -1,7 +1,7 @@
 ---
 quick_id: 261116-mgh
 title: Faz 3 doğrulama sekmesi ve GitHub Pages yayını
-status: planned
+status: complete
 ---
 
 # Amaç
@@ -26,3 +26,9 @@ Kullanıcının altı Faz 3 kontrolü için verdiği kabulü kaydetmek; aynı ko
 ## Yürütme
 
 Codex skill adapter'ın alt ajan sınırlaması doğrultusunda planlama, uygulama ve inceleme mevcut ajan tarafından sıralı yürütülür. Kullanıcı push ve yayını açıkça yetkilendirmiştir.
+
+## Yürütmede gerekli dar düzeltme
+
+Kapalı SQLite dosyalarında ağ dosya sistemi kilit/değişiklik kontrolleri yayını aşırı yavaşlattı. Aynı gerçek snapshot üzerinde 40 sorgu normal salt okunur kipte 0.1113s, değişmez kipte 0.00369s ve aynı dokuz parti sonucunu verdi (`readonly-benchmark.json`). [SQLite URI sözleşmesi](https://www.sqlite.org/uri.html) uyarınca `immutable=1` yalnız `data/releases/<32 hex>/records.sqlite3` ve manifesti bulunan değişmez kopyalara uygulanır; çalışma alanı ve staging değişiklik algısını korur. Üç gerçek okuma/yazma-gözleme testi ve iki tarihsel audit testi geçti. Native audit kapıları atlanmaz; ilerlemeleri günlüğe yazılır.
+
+Ek yayın testleri canlı yazıcının kilidini kendi fixture kopyasına taşıdığı için `FileExistsError` verdi. Fixture yalnız kökteki operasyonel `.write.lock` ve `.staging` durumunu kopyalamayacak şekilde düzeltildi; kendi kilit, rollback, bozuk kaynak ve eski taban sınamaları aynen korunur.

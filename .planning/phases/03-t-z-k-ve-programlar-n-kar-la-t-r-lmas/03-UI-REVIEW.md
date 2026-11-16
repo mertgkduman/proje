@@ -82,4 +82,8 @@ Kullanıcı mevcut altı Faz 3 UAT kontrolünü kabul etti; önceki insan sonucu
 - Boşluk: Kartlar ve kaynak/örnek bağlantıları dar ekranda taşmaz; bağlantılarda 44px asgari hedef kullanılır.
 - Deneyim: 360 ve 1365 px gerçek Chromium koşullarında 26 örnek/parti bağlantısı, kaynağı açma/geri dönme, doğrudan sekme hash bağlantısı ve klavye seçimi geçti; belge kimlikleri tekildir.
 
-Görseller ve ayrıntılı sonuçlar: `../../../quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/review-360.png`, `review-1365.png`, `browser-preview.json`. Bu ek tablet veya ekran okuyucu doğrulaması iddia etmez.
+Görseller ve ayrıntılı sonuçlar: `../../quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/review-360.png`, `review-1365.png`, `browser-preview.json`. Bu ek tablet veya ekran okuyucu doğrulaması iddia etmez.
+
+## Canlı yayın kabulü — 2026-11-16
+
+Renderer24 sürümü `9003e475ee5d49b29a1310c0bfe2007d` GitHub Pages’te yayımlandı. Canlı HTTPS raporunda 12 Chromium kontrolü ve 26 örnek/parti bağlantısı geçti; 14 sunulan dosyanın baytları yerel paketle eşleşti. `../../quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/browser-live.json` ve `live-checks.json` gerçek yayın kanıtlarıdır. Önceki puanlar yeniden puanlanmadı.

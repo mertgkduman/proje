@@ -6,10 +6,10 @@ current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılmas
 current_plan: Not started
 status: planning
 stopped_at: Phase 03 complete, ready to plan Phase 4
-last_updated: "2026-11-16T21:26:29.589Z"
+last_updated: "2026-11-16T22:58:00.342958+00:00"
 last_activity: 2026-11-16
-last_activity_desc: Phase 03 complete, transitioned to Phase 4
-state_head: b0449e57f858252f3c8d837e49fe68616aa8b501
+last_activity_desc: Faz 3 UAT 6/6; örnekli doğrulama sekmesi ve 9003e475 sürümü Pages’te, 32 test ve canlı 14 dosya doğrulandı
+state_head: 5af8f438f1e6eb1aa558306ed4d8873fe4a86263
 progress:
   total_phases: 6
   completed_phases: 3
@@ -25,7 +25,7 @@ progress:
 See: .planning/PROJECT.md (updated 2026-11-16)
 
 **Core value:** Kaynağına kadar izlenebilen, karşılaştırılabilir ve eksiklerini açıkça gösteren siyasi parti bilgisine eşit erişim.
-**Current focus:** Phase 4 — Söylem ve belgelenmiş uygulamaların karşılaştırılması; planlama henüz başlamadı. Quick 261116-mgh yayın güncellemesi sürüyor.
+**Current focus:** Phase 4 — Söylem ve belgelenmiş uygulamaların karşılaştırılması; planlama henüz başlamadı. Quick 261116-mgh tamamlandı; örnekli doğrulama sekmesi ve yeni rapor GitHub Pages’te yayında.
 
 ## Current Position
 
@@ -34,7 +34,7 @@ Total Plans in Phase: TBD
 Phase: 4 — Söylem ve belgelenmiş uygulamaların karşılaştırılması
 Plan: Not started
 Status: Ready to plan
-Last activity: 2026-11-16 — Phase 03 complete, transitioned to Phase 4
+Last activity: 2026-11-16 — Quick 261116-mgh tamamlandı: altı kontrol/13 örnekli sekme ve 9003e475 sürümü GitHub Pages’te; 32 test ve canlı 14 dosya geçti.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -171,6 +171,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 | 261110-pds | GitHub aktarımı ve pilot HTML raporunun yayımlanması | 2026-11-10 | 46f4882 | [261110-pds-repoyu-github-a-kopyala-ve-pilot-html-ra](./quick/261110-pds-repoyu-github-a-kopyala-ve-pilot-html-ra/) |
 | 261111-epm | Kaynak derleme yaklaşımı, gerçek Yeni Parti içeriği, sade rapor ve özgün görünümlü belge arşivlerinin yayımlanması | 2026-11-11 | 7e18593 | [261111-epm-kaynak-derleme-y-ntemini-sadele-tir-yeni](./quick/261111-epm-kaynak-derleme-y-ntemini-sadele-tir-yeni/) |
 | 261111-j4v | Süreç içi PDF yeniden kullanımı; 34 test geçti, tek makbuz ölçümü 180s sınırında tamamlanmadı | 2026-11-11 | a475f5a | [261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel](./quick/261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel/) |
+| 261116-mgh | Faz 3 UAT 6/6, örnekli doğrulama sekmesi ve GitHub Pages yayını | 2026-11-16 | 5af8f43 | [261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-](./quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/) |
 
 ### Roadmap Evolution
 
@@ -185,6 +186,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-16T21:28:37.954152+00:00
+Last session: 2026-11-16T22:58:00.342958+00:00
 Stopped at: Phase 03 complete, ready to plan Phase 4
 Resume file: None

@@ -1,6 +1,10 @@
 # Kaynaklı siyasi parti arşivi
 
-[Pilot HTML raporunu tarayıcıda aç](https://mertgkduman.github.io/proje/)
+[Güncel HTML raporunu tarayıcıda aç](https://mertgkduman.github.io/proje/)
+
+16 Kasım 2026 güncellemesi: Faz 3 kullanıcı kabulü 6/6 tamamlandı. Güncel `9003e475ee5d49b29a1310c0bfe2007d` sürümü dokuz parti dosyası ve tüzük/program karşılaştırmalarını yayımlar. [3. Faz Doğrulama sekmesi](https://mertgkduman.github.io/proje/releases/9003e475ee5d49b29a1310c0bfe2007d/index.html#phase-03-verification), altı kontrol başlığını 13 gerçek örnek, alıntı/özet ve karşılaştırma–parti dosyası–kaynak bağlantılarıyla gösterir. Kullanıcı kabulü ile ajan tarafından hazırlanan sunum metinlerinin kökeni ayrı kaydedilir. Önceki sürümler ve kaynak baytları korunur; yeni sürüm standart yayın API’sinin normal, Faz 1, Faz 2 ve tam Faz 3 denetimlerinden geçti. [GitHub Pages dağıtımı](https://github.com/mertgkduman/proje/actions/runs/43974051475) başarılıdır.
+
+Önceki yayın notları tarihleriyle aşağıda korunur.
 
 11 Kasım 2026 düzeltmesi: yayımlanan `e0467880febd44068d476a448e09608f` sürümü kuruluş gerekçesini, üyelik/yönetim kurallarını, program vaatlerini ve atıflı faaliyet/mali haberleri öne çıkarır. [Tüzük arşivi](https://mertgkduman.github.io/proje/views/5ad0d30f04d349ca9c6e55a913f9d4b1/index.html) ve [program arşivi](https://mertgkduman.github.io/proje/views/bb13963f4a7945c12f748e1c4f1e1aba/index.html) ayrı pasif belgelerdir. Logo, font ve stiller yereldir; yalnız dekoratif SVG doku efekti kaldırılmıştır. Sicil bilgileri ve yöntem kapalı ayrıntılardadır. Kamu sürümünde TİP tracer aşamasındadır.
 

@@ -32,12 +32,16 @@ class ReportLinks(HTMLParser):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--worktree', required=True)
+    parser.add_argument('--release', help='Prepare a candidate bundle before native publication completes')
     args = parser.parse_args()
     dest = Path(args.worktree).resolve()
     assert (dest / '.git').is_file(), 'Expected isolated Git worktree'
-    release = json.loads((OUT / 'publication.json').read_text())['release_id']
+    publication = json.loads((OUT / 'publication.json').read_text()) if (OUT / 'publication.json').exists() else None
+    release = args.release or publication['release_id']
     assert re.fullmatch('[0-9a-f]{32}', release)
     report = DATA / 'releases' / release / 'index.html'
+    if not report.exists() and args.release:
+        report = DATA / '.staging' / release / 'index.html'
     links = ReportLinks()
     links.feed(report.read_text())
     sources = {report}
@@ -54,7 +58,7 @@ def main():
             sources.update(path for path in (DATA / 'views' / relative.parts[1]).rglob('*') if path.is_file())
     hashes = {}
     for source in sorted(sources):
-        relative = source.relative_to(DATA)
+        relative = Path('releases') / release / 'index.html' if source == report else source.relative_to(DATA)
         target = dest / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         sha = digest(source)
@@ -72,6 +76,7 @@ def main():
     (dest / 'index.html').write_text(redirect)
     (dest / '.nojekyll').touch()
     evidence = {'release_id': release, 'worktree': str(dest), 'copied_files': len(hashes),
+                'publication_confirmed': bool(publication and publication['release_id'] == release),
                 'sha256': hashes, 'report_url': 'https://mertgkduman.github.io/proje/' + target,
                 'verification_url': 'https://mertgkduman.github.io/proje/' + target + '#phase-03-verification'}
     (OUT / 'pages-bundle.json').write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + '\n')

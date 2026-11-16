@@ -1,0 +1,108 @@
+{
+  "source_commit": "b0449e57f858252f3c8d837e49fe68616aa8b501",
+  "checks": [
+    {
+      "command": "python3 tests/run.py --pattern test_phase3_review.py",
+      "tests": 5,
+      "passed": true,
+      "duration_seconds": 38.508
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_report.py",
+      "tests": 11,
+      "passed": true,
+      "duration_seconds": 241.194
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_archive_readonly.py",
+      "tests": 3,
+      "passed": true,
+      "duration_seconds": 0.602
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_audit_memory.py",
+      "tests": 2,
+      "passed": true,
+      "duration_seconds": 7.016
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_publication.py",
+      "tests": 11,
+      "passed": true,
+      "duration_seconds": 106.951
+    }
+  ],
+  "browser_preview": [
+    {
+      "url": "file:///tmp/proje-review-preview-y_qus5cp/releases/preview/index.html",
+      "checks": {
+        "directLink": true,
+        "checks": true,
+        "examples": true,
+        "privateNotes": true,
+        "exampleNavigation": true,
+        "source": true,
+        "sourceReturn": true,
+        "keyboard": true,
+        "keyboardEnd": true,
+        "originColors": true,
+        "noOverflow": true,
+        "uniqueIds": true
+      },
+      "traversed": 26,
+      "width": 360,
+      "title": "3. Faz Doğrulama"
+    },
+    {
+      "url": "file:///tmp/proje-review-preview-y_qus5cp/releases/preview/index.html",
+      "checks": {
+        "directLink": true,
+        "checks": true,
+        "examples": true,
+        "privateNotes": true,
+        "exampleNavigation": true,
+        "source": true,
+        "sourceReturn": true,
+        "keyboard": true,
+        "keyboardEnd": true,
+        "originColors": true,
+        "noOverflow": true,
+        "uniqueIds": true
+      },
+      "traversed": 26,
+      "width": 1365,
+      "title": "3. Faz Doğrulama"
+    }
+  ],
+  "source_push": {
+    "main": "b0449e57f858252f3c8d837e49fe68616aa8b501",
+    "working_branch": "gsd/phase-01-kapsam-yontem-pilot",
+    "force": false
+  },
+  "publication_retry": {
+    "first_process_exit": 143,
+    "current_pointer_preserved": "3a3021c8e81749c3834462d1a0d81231",
+    "retry": "owned persistent process, ordinary archive API unchanged"
+  },
+  "additional_source_commit": "326c7cb0f626fc6b984261b7d3188ce91801b5b1",
+  "total_tests_passed": 32,
+  "immutable_reader_benchmark": [
+    {
+      "mode": "mode=ro",
+      "queries": 40,
+      "party_counts": [
+        9
+      ],
+      "seconds": 0.11132357642054558
+    },
+    {
+      "mode": "mode=ro&immutable=1",
+      "queries": 40,
+      "party_counts": [
+        9
+      ],
+      "seconds": 0.003691122867166996
+    }
+  ],
+  "publication_fixture_repair": "Do not copy the live root .write.lock or unpublished .staging into isolated test data; all lock/rollback/tamper assertions retained."
+}
