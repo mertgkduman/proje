@@ -6,12 +6,19 @@ from pathlib import Path
 
 root = Path.cwd()
 here = Path(__file__).resolve().parent
-job = Path('/tmp/proje-v2-production-focused-20261115')
+job = Path('/tmp/proje-v2-production-remaining-20261116')
+previous = here / 'focused-results.json'
+navigation = here.parent / 'completion-v2-navigation'
 pub = Path('/tmp/proje-v2-production-publish-20261115')
 assert json.loads((pub / 'exit.json').read_text())['exit_code'] == 0
 assert json.loads((job / 'exit.json').read_text())['exit_code'] == 0
 results = json.loads((job / 'results.json').read_text())
 assert all(r['valid'] for r in results['results'])
+prior = json.loads(previous.read_text())
+assert all(next(r for r in prior['results'] if r['name'] == name)['valid'] for name in ('comparisons', 'content', 'synthesis', 'stage'))
+nav_exit = json.loads((navigation / 'exit.json').read_text())
+assert nav_exit['exit_code'] == 0 and nav_exit['changed_inputs'] == [] and nav_exit['unchanged_inputs'] == 141
+assert 'Ran 4 tests' in (navigation / 'run.log').read_text()
 release = results['release_id']
 assert json.loads((root / 'data/current.json').read_text())['release_id'] == release
 assert not (root / 'data/.write.lock').exists()
@@ -24,7 +31,7 @@ assert manifest['comparison_completion_revision_id'] == active_revision['id']
 assert manifest['comparison_completion_epoch'] == active_revision['epoch']
 assert manifest['comparison_completion_stage'] == active_revision['stage']
 assert manifest['comparison_completion_basis_id'] == active_revision['basis_id']
-nav = json.loads((job / 'navigation-evidence.json').read_text())
+nav = json.loads((navigation / 'navigation-evidence.json').read_text())
 assert nav['release_id'] == release and nav['report_sha256'] == sha(folder / 'index.html') and nav['records_sha256'] == sha(folder / 'records.json')
 assert len(nav['results']) == 4 and all(r['checks'] == '1' * 19 and r['archiveExcerptFound'] for r in nav['results'])
 assert sha(folder / 'index.html') == '60bafd3b384e020800a01b00a0c58beaf0392d1587d69e372c44667e4186cf3f'
@@ -54,7 +61,10 @@ old.update(release_id=release, report_path=str((folder / 'index.html').relative_
                      'syntheses': sum(s['taxonomy_version'] == taxonomy for s in data['comparison_synthesis']),
                      'inventory_sections': len(inventory), 'open_substantive_rows': sum(r['state'] in ('not_researched', 'in_progress') for r in rows),
                      'unmatched_inventory_sections': sum(bool(json.loads(i['unmatched_headings'])) for i in inventory)},
-           final_checks=str((here / 'focused-results.json').relative_to(root)),
+           final_checks=str((here / 'remaining-results.json').relative_to(root)),
+           earlier_focused_checks=str(previous.relative_to(root)),
+           navigation_fixture_correction=str(navigation.relative_to(root)),
+           verification_epochs='202-test full regression on the earlier test epoch and v1 current; corrected navigation fixture independently passed four tests on this current release; remaining focused suites and audits ran on this current release.',
            preservation_evidence=str((here / 'preservation.json').relative_to(root)),
            source_review='data/comparisons/03-completion-review-v2.json',
            historical_source_review='data/comparisons/03-source-review.json',
