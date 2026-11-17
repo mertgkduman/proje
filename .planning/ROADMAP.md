@@ -226,12 +226,12 @@ Plans:
 2. Okur, her eşleştirmenin aktörünü, açıklama ve olay tarihlerini, geçerli belge sürümünü ve bağlamını görebilir; parti açıklaması tek başına uygulamanın gerçekleştiğine kanıt sayılmaz.
 3. Okur, aynı ölçütlerle hazırlanmış karşılaştırmalarda belgelerin desteklediği benzerlik/farklılıkları, kaynağın beyanını ve araştırmacı/yapay zekâ yorumunu ayrı görebilir; kanıt eksikliği uyum veya çelişki sonucu gibi sunulmaz.
 
-**Plans:** 15 plans
+**Plans:** 1/15 plans executed
 
 Plans:
 **Wave 1**
 
-- [ ] 04-01-PLAN.md — Gerçek kaynaklı olay tracer'ı, schema7/renderer25 ve eski sürüm korunumu
+- [x] 04-01-PLAN.md — Gerçek kaynaklı olay tracer'ı, schema7/renderer25 ve eski sürüm korunumu
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
@@ -322,7 +322,7 @@ Plans:
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
 | 3. Tüzük ve programların karşılaştırılması | 16/16 | Complete    | 2026-11-16 |
-| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/15 | Planned | - |
+| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 1/15 | In Progress|  |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
