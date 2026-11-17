@@ -1,0 +1,29 @@
+{
+  "phase": "04",
+  "wave": 1,
+  "status": "running",
+  "completed_plans": ["04-01"],
+  "release_id": "53b24e6740104cb5be5d3419491bd735",
+  "code_head_at_test_start": "9c8bb3bf0e4ede0d349b8b9c39650c8b6b524ec9",
+  "build": {
+    "command": "python3 -m py_compile src/uygulamalar.py src/arsiv.py src/dosyalar.py src/rapor.py src/rapor_v24.py",
+    "exit_code": 0
+  },
+  "capability_gates": {
+    "verify.schema-drift": {"block": false, "drift_detected": false, "skipped": false},
+    "verify.codebase-drift": {"block": false, "skipped": true, "reason": "no-structure-md"},
+    "ui.safety-gate": {"block": false, "frontend": true, "hasUiFiles": false, "hasUiSpec": false}
+  },
+  "test": {
+    "command": "python3 tests/run.py",
+    "timeout_seconds": 10800,
+    "discovered_tests": 219,
+    "pid": 173310,
+    "supervisor_pid": 172374,
+    "log_path": "/tmp/gsd-phase04-wave1-tests.log",
+    "terminal_session": "lost after daemon restart; reconcile log and process before any rerun",
+    "result": "pending"
+  },
+  "next_plan": "04-02",
+  "resume_rule": "Reconcile the existing test process and log before dispatching the next wave; do not duplicate this running suite. A timeout is inconclusive and must never be recorded as a pass."
+}
