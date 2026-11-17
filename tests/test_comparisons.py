@@ -7,6 +7,8 @@ import tempfile
 import unittest
 import sqlite3
 import rapor_v15
+import rapor_v16
+import rapor_v24
 import rapor
 
 import arsiv
@@ -131,9 +133,16 @@ class ComparisonReleaseTest(unittest.TestCase):
     def test_new_stylesheet_preserves_historical_style(self):
         source = Path(__file__).resolve().parents[1] / 'src'
         historical = source / 'rapor_v14.css'
-        current = source / 'rapor_v16.css'
+        style16 = source / 'rapor_v16.css'
+        style24 = source / 'rapor_v24.css'
         self.assertEqual(arsiv.sha(historical), '721a9fe91d18231d01941d8788bac0264862870957c1a85cc13090ec5603fef4')
-        self.assertEqual(rapor.STYLE, current.read_text(encoding='utf-8'))
+        self.assertEqual(arsiv.sha(style16), 'bbf86a55a6134df843aa7acd8644b27daf6039e89239700d08e5b3addbd9c389')
+        self.assertEqual(arsiv.sha(style24), 'a0fdab5efdad55631771818a70890287b42b13ffbb67782e7c04cb7a48a845de')
+        self.assertEqual(arsiv.sha(source / 'rapor_v16.py'), 'd174ae6667b2ade279b37610179d0d636d716d8c6c6204acb9613692c389e5ac')
+        self.assertEqual(arsiv.sha(source / 'rapor_v24.py'), 'adbc002bc4b2c39077ba9e908c01bc56e5133f896d66c9636a0d84682f6d053b')
+        self.assertEqual(rapor_v16.STYLE, style16.read_text(encoding='utf-8'))
+        self.assertEqual(rapor_v24.STYLE, style24.read_text(encoding='utf-8'))
+        self.assertEqual(rapor.STYLE, style24.read_text(encoding='utf-8'))
         self.assertIn('.comparison-row', rapor.STYLE)
         self.assertIn('.summary { color: #003366;', rapor.STYLE)
         self.assertIn('.quote { color: #000;', rapor.STYLE)
