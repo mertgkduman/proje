@@ -30,6 +30,7 @@ def migrate_practice_workspace(db, backup_path, fail_at=None):
         db.execute('BEGIN IMMEDIATE')
         for name, definition in PRACTICE_TABLES.items():
             db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        db.execute('PRAGMA user_version = 7')
         if fail_at == 'migration':
             raise RuntimeError('Migration hatası')
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
@@ -65,6 +66,7 @@ def validate_practices(data):
         selected_rows = set(rows)
     evidence = data['finding_evidence']
     verified = {(x['finding_id'], x['passage_id']): x for x in data['verification'] if x['result'] == 'confirmed' and x['reason']}
+    reviewed = {x['subject_id']: x for x in data['review'] if x['kind'] == 'finding' and x['reviewer_kind'] == 'agent' and x['result'] == 'reviewed' and x['reason']}
     party_sources = {(x['version_id'], x['party_id'], x['passage_id']) for x in data['practice_source_party'] if x['scope_reason']}
     for version, party, passage in party_sources:
         if passage not in passages or passages[passage]['version_id'] != version or party not in {p['id'] for p in data['party']}:
@@ -74,6 +76,9 @@ def validate_practices(data):
         refs = [x['passage_id'] for x in evidence if x['finding_id'] == fid]
         if not f or f['party_id'] != party or not refs or any((fid, p) not in verified for p in refs):
             raise ValueError('Partiyle eşleşen doğrulanmış bulgu gerekli')
+        if fid not in reviewed:
+            raise ValueError('Bulgu için kaynak incelemesi eksik: ' + fid)
+        aware_time(reviewed[fid]['reviewed_at'])
         for p in refs:
             aware_time(verified[(fid, p)]['checked_at'])
         return f
@@ -96,14 +101,16 @@ def validate_practices(data):
         if not p or x['event_id'] not in events or x['stage'] not in ('initiative', 'action', 'result') or x['epistemic_type'] not in ('claim', 'comment', 'fact') or not all(x[k] for k in ('supported_point', 'concrete_basis', 'limitation')):
             raise ValueError('Olay kanıtı geçersiz')
         doc = documents[versions[p['version_id']]['document_id']]
-        if doc['source_kind'] == 'party':
+        if doc['source_kind'] == 'party' and x['stage'] != 'initiative':
             raise ValueError('Salt parti kaynağı oluş kanıtı değildir')
-        if doc['source_kind'] == 'news' and x['epistemic_type'] == 'fact':
-            raise ValueError('Haber iddiası doğrulanmış olguya dönüştürülemez')
+        if doc['source_kind'] in ('news', 'journalism', 'party', 'social') and x['epistemic_type'] == 'fact':
+            raise ValueError('Haber veya parti iddiası doğrulanmış olguya dönüştürülemez')
         event_date = events[x['event_id']]['event_at']
         source_date = versions[p['version_id']]['document_date']
         if event_date and source_date and source_date < event_date[:10]:
             raise ValueError('Olay kaynağı olaydan önce yayımlanmış')
+    if any(not any(x['event_id'] == event_id for x in data['practice_event_evidence']) for event_id in events):
+        raise ValueError('Her olay için kaynaklı kanıt gerekli')
     for r in data['practice_relation']:
         s, e = statements.get(r['statement_id']), events.get(r['event_id'])
         if not s or not e or (r['party_id'], r['topic_id']) != (s['party_id'], s['topic_id']) or not all(r[k] for k in ('comparability_reason', 'temporal_context', 'authority_context')):
@@ -146,12 +153,17 @@ def validate_practices(data):
             authority = passages.get(x['authority_passage_id'])
             if not person or not authority or person['name'] not in authority['exact'] or documents[versions[authority['version_id']]['document_id']]['party_id'] != x['party_id']:
                 raise ValueError('Temsil yetkisi kişi ve partiyle uyuşmuyor')
+        event = events.get(x['event_id'])
+        founding = next((i['valid_from'] for i in data['identity_observation'] if i['entity_id'] == x['party_id'] and i['entity_kind'] == 'party'), None)
+        cutoff = max(data['method'], key=lambda m: m['version'])['cutoff_at']
+        if not event or not founding or validate_dates(event['event_at'], event['date_precision'], founding, cutoff, event['date_unknown_reason']) == 'outside':
+            raise ValueError('Katkı tarihi parti kapsamı dışında')
         finding = check_finding(x['finding_id'], x['party_id'])
         refs = {r['passage_id'] for r in evidence if r['finding_id'] == finding['id']}
         event_refs = {r['passage_id'] for r in data['practice_event_evidence'] if r['event_id'] == x['event_id']}
         if not refs.intersection(event_refs):
             raise ValueError('Katkı olay kanıtıyla uyuşmuyor')
-        if finding['epistemic_type'] == 'fact' and any(documents[versions[passages[p]['version_id']]['document_id']]['source_kind'] == 'news' for p in refs):
+        if finding['epistemic_type'] == 'fact' and any(documents[versions[passages[p]['version_id']]['document_id']]['source_kind'] in ('news', 'journalism', 'party', 'social') for p in refs):
             raise ValueError('Haber kaynaklı katkı iddia olarak korunmalı')
     for link in data['practice_legacy_link']:
         if link['legacy_kind'] not in ('action', 'match', 'candidate') or not link['overlap_reason']:
@@ -160,6 +172,11 @@ def validate_practices(data):
         key = 'finding_id' if table == 'action' else 'id'
         if not any(x[key] == link['legacy_id'] for x in data[table]):
             raise ValueError('Eski kayıt bulunamadı')
+    linked = {value for name in ('practice_statement', 'practice_relation', 'practice_contribution') for row in data[name] for key, value in row.items() if key.endswith('finding_id') and value}
+    pairs = {findings[fid]['pair_id'] for fid in linked if fid in findings}
+    for finding in findings.values():
+        if finding['pair_id'] in pairs:
+            check_finding(finding['id'], finding['party_id'])
     return True
 
 
@@ -198,7 +215,7 @@ def load_practice(work, payload):
 
 
 def _load_practice_copy(work, payload, base):
-    from arsiv import connect, export_db
+    from arsiv import connect, validate_phase_one_workspace, aware_time
     if payload.get('base_release') != base or payload.get('contract_version') != 1 or payload.get('stage') not in ('tracer', 'partial', 'complete') or payload.get('taxonomy_version') != 4:
         raise ValueError('Uygulama paketi veya tabanı geçersiz')
     if len(payload.get('practice_records', {}).get('practice_contract', [])) != 1 or payload['practice_records']['practice_contract'][0].get('stage') != payload['stage']:
@@ -209,10 +226,17 @@ def _load_practice_copy(work, payload, base):
     try:
         migrate_practice_workspace(db, work / 'pre-practice-migration.sqlite3')
         db.execute('BEGIN IMMEDIATE')
+        input_findings = {entry['values']['id'] for entry in payload['entries'] if entry.get('kind') == 'finding' and isinstance(entry.get('values'), dict) and entry['values'].get('id')}
         for entry in payload['entries']:
             kind, values = entry['kind'], entry['values']
-            if kind not in ('finding', 'finding_evidence', 'verification', 'source_attribution') or not values:
+            if kind not in ('finding', 'finding_evidence', 'verification', 'source_attribution', 'review') or not values:
                 raise ValueError('Uygulama girdi türü geçersiz')
+            if kind == 'review' and (values.get('kind'), values.get('reviewer_kind'), values.get('result')) != ('finding', 'agent', 'reviewed'):
+                raise ValueError('Yalnız ajan bulgu incelemesi eklenebilir')
+            if kind == 'review':
+                if values.get('subject_id') not in input_findings or not values.get('reason'):
+                    raise ValueError('İnceleme yeni bir bulguya ve gerekçeye bağlı olmalı')
+                aware_time(values.get('reviewed_at'))
             cols = {x['name'] for x in db.execute(f'PRAGMA table_info({kind})')}
             if not set(values) <= cols:
                 raise ValueError('Bilinmeyen alan')
@@ -227,7 +251,7 @@ def _load_practice_copy(work, payload, base):
                     raise ValueError('Uygulama alanları uyuşmuyor')
                 db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
         # Validate a transaction-consistent snapshot before the commit.
-        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(PRACTICE_TABLES) + ['finding', 'finding_evidence', 'verification', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'action', 'match', 'match_candidate']}
+        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(PRACTICE_TABLES) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'action', 'match', 'match_candidate']}
         validate_practices(data)
         if db.execute('PRAGMA foreign_key_check').fetchall() or db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
             raise ValueError('Uygulama bütünlük hatası')
@@ -237,7 +261,7 @@ def _load_practice_copy(work, payload, base):
         raise
     finally:
         db.close()
-    export_db(work / 'records.sqlite3', 'practice-validation')
+    validate_phase_one_workspace(work)
 
 
 def validate_practice_input(payload, base_release='current'):
@@ -261,6 +285,7 @@ def validate_practice_input(payload, base_release='current'):
         submitted += [{'kind': kind, 'values': row} for kind, rows in payload.get('practice_records', {}).items() for row in rows]
         if not submitted or any(not any(all(existing.get(k) == v for k, v in item['values'].items()) for existing in current_data.get(item['kind'], [])) for item in submitted):
             raise ValueError('Güncel sürüm paket kayıtlarını içermiyor')
+        del current_data
         base = payload['base_release']
     if payload.get('base_release') != base:
         raise ValueError('Taban sürüm uyuşmuyor')

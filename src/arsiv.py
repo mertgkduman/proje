@@ -2684,9 +2684,14 @@ def export_db(path, release_id, strict_identity=False):
             raise ValueError('Veritabanı bütünlük hatası')
         existing = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
         practice_present = existing.intersection(PRACTICE_TABLES)
+        practice_version = db.execute('PRAGMA user_version').fetchone()[0]
+        if practice_version >= 7 and practice_present != set(PRACTICE_TABLES):
+            raise ValueError('Şema 7 uygulama işaretçisi kaldırılamaz')
         if practice_present and practice_present != set(PRACTICE_TABLES):
             raise ValueError('Eksik uygulama şeması')
         has_practices = bool(practice_present)
+        if has_practices and practice_version != 7:
+            raise ValueError('Uygulama şema sürümü eksik')
         if has_practices and not db.execute('SELECT 1 FROM practice_contract').fetchone():
             raise ValueError('Uygulama sözleşmesi eksik')
         v2_present = existing.intersection(COMPLETION_V2_TABLES)
@@ -2814,8 +2819,9 @@ def export_db(path, release_id, strict_identity=False):
                         elif role == 'supplement' and row['kind'] != 'party_publication':
                             raise ValueError('Ek parti metni parti yayınına dayanmalı')
         if 'match' in existing:
+            legacy_match_findings = set(json.loads(policy['legacy_findings'])) if policy else set()
             for match in result['match']:
-                check_match(db, match, historical=not has_practices)
+                check_match(db, match, historical=not has_practices or match['action_finding_id'] in legacy_match_findings)
         if 'match_candidate' in existing:
             for candidate in result['match_candidate']: check_candidate(db, candidate)
             eligible = [c['match_id'] for c in result['match_candidate'] if c['status'] == 'eligible']
@@ -2829,6 +2835,8 @@ def export_db(path, release_id, strict_identity=False):
             validate_comparisons(result)
             validate_changed_topic_reviews(result)
         if has_practices:
+            for party_id in {r['party_id'] for name in ('practice_relation', 'practice_contribution') for r in result[name]}:
+                foundation_for_party(db, party_id)
             validate_practices(result)
         return result
     finally:
@@ -2936,7 +2944,7 @@ def audit_release(release='current', _seen=None):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
         expected = (exported['schema_version'],2) if exported['schema_version'] in (5,6,7) else (4,1)
-        valid_renderers=(25,) if exported['schema_version']==7 else ((16,17,18,19,20,21,22,23,24) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10)))
+        valid_renderers=(25,) if exported['schema_version']==7 else ((16,17,18,19,20,21,22,23,24,25) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10)))
         if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6,7) and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_folder = safe_path(DATA / 'releases', base_id)
@@ -3219,8 +3227,8 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
         payload = export_db(staging / 'records.sqlite3', release, strict_identity=True)
         (staging / 'records.json').write_text(json.dumps(payload, ensure_ascii=False, sort_keys=True, indent=2) + '\n', encoding='utf-8')
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
-        renderer = render_v15_report if payload['schema_version'] == 5 else (render_v24_report if payload['schema_version'] == 6 else render_report)
-        renderer_version = 15 if payload['schema_version'] == 5 else (24 if payload['schema_version'] == 6 else RENDERER_VERSION)
+        renderer = render_v15_report if payload['schema_version'] == 5 else render_report
+        renderer_version = 15 if payload['schema_version'] == 5 else RENDERER_VERSION
         (staging / 'index.html').write_text(render_comparison_snapshot(payload, renderer), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
         # Once the base is phase-capable, deleting its method cannot bypass
@@ -3301,7 +3309,7 @@ def main():
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True); group=pub.add_mutually_exclusive_group(); group.add_argument('--party'); group.add_argument('--refresh', action='store_true'); pub.add_argument('--stage', choices=('tracer','complete'), default='complete')
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
     a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2','3','4')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','partial','complete'), default='complete')
-    pc = sub.add_parser('practice-check'); pc.add_argument('--input', required=True); pc.add_argument('--base-release', default='current')
+    pc = sub.add_parser('practice-check'); pc.add_argument('--input', required=True); pc.add_argument('--inventory'); pc.add_argument('--base-release', default='current')
     pl = sub.add_parser('practice-load'); pl.add_argument('--workspace', required=True); pl.add_argument('--input', required=True)
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
     cr = sub.add_parser('comparison-reconcile'); cr.add_argument('--workspace', required=True); cr.add_argument('--taxonomy', required=True); cr.add_argument('--inventory', required=True); cr.add_argument('--input', required=True)
@@ -3329,7 +3337,10 @@ def main():
         finally: db.close()
     elif args.command == 'publish': print(publish_release(args.workspace, party=args.party, stage=args.stage, refresh=args.refresh))
     elif args.command == 'practice-check':
-        validate_practice_input(json.loads(Path(args.input).read_text(encoding='utf-8')), args.base_release); print('PRACTICE_INPUT_OK')
+        package = json.loads(Path(args.input).read_text(encoding='utf-8'))
+        if args.inventory and json.loads(Path(args.inventory).read_text(encoding='utf-8')) != package.get('scope_inventory'):
+            raise ValueError('Paket ve sağlanan envanter uyuşmuyor')
+        validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
     elif args.command == 'practice-load':
         load_practice(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8'))); print('PRACTICE_LOAD_OK')
     elif args.command == 'comparison-load':

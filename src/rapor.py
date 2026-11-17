@@ -425,23 +425,23 @@ def render_report(data):
             rid = relation['id']
             pieces.append(f'<article class="record" id="{esc(prefix + rid)}">'
                           f'<h4>{esc(event["title"])}</h4><p>Hedef: <span class="summary" data-finding-id="{esc(target["id"])}">{esc(target["text"])}</span> '
-                          + ' '.join(citation(x['passage_id']) for x in evidence[target['id']]) + '</p>')
+                          + ' '.join(named_citation(x['passage_id']) for x in evidence[target['id']]) + '</p>')
             if result:
                 pieces.append(f'<p data-finding-id="{esc(result["id"])}">Belgelenmiş sonuç: <span class="summary">{esc(result["text"])}</span> '
-                              + ' '.join(citation(x['passage_id']) for x in event_refs) + '</p>')
+                              + ' '.join(named_citation(x['passage_id']) for x in event_refs) + '</p>')
             else:
                 pieces.append('<p>Nihai kongre sonucu bu kaynakta belirtilmemiştir.</p>')
             for contribution in data.get('practice_contribution', []):
                 if contribution['event_id'] == event['id'] and contribution['party_id'] == party_id:
                     event_finding = findings[contribution['finding_id']]
                     pieces.append(f'<p class="summary" data-finding-id="{esc(event_finding["id"])}">{esc(event_finding["text"])} '
-                                  + ' '.join(citation(x['passage_id']) for x in evidence[event_finding['id']]) + '</p>')
+                                  + ' '.join(named_citation(x['passage_id']) for x in evidence[event_finding['id']]) + '</p>')
                     for paired in findings_by_pair[event_finding['pair_id']]:
                         if paired['pair_id'] == event_finding['pair_id'] and paired['provenance'] == 'quote':
                             cls, quoted = format_finding(paired)
-                            pieces.append(f'<p class="{cls}" data-finding-id="{esc(paired["id"])}">{quoted} ' + ' '.join(citation(x['passage_id']) for x in evidence[paired['id']]) + '</p>')
+                            pieces.append(f'<p class="{cls}" data-finding-id="{esc(paired["id"])}">{quoted} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[paired['id']]) + '</p>')
             cls, text = format_finding(quote)
-            pieces.append(f'<p class="{cls}" data-finding-id="{esc(quote["id"])}">{text} ' + ' '.join(citation(x['passage_id']) for x in evidence[quote['id']]) + '</p>')
+            pieces.append(f'<p class="{cls}" data-finding-id="{esc(quote["id"])}">{text} {time_tag(statement["statement_at"])} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[quote['id']]) + '</p>')
             pieces.append(f'<p class="summary" data-finding-id="{esc(explanation["id"])}">{esc(explanation["text"])} ' + ' '.join(citation(x['passage_id']) for x in evidence[explanation['id']]) + '</p>')
             pieces.append(f'<p>{time_tag(event["event_at"])} · {esc(relation["authority_context"])} '
                           f'<a href="#{fragment(other + rid)}">Diğer görünüm</a> · '

@@ -1,0 +1,338 @@
+{
+  "contract_version": 1,
+  "base_release": "9003e475ee5d49b29a1310c0bfe2007d",
+  "party_id": "yeni-parti",
+  "taxonomy_version": 4,
+  "stage": "tracer",
+  "entries": [
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0105-cesme-v1",
+        "kind": "journalism",
+        "publisher": "Alaçatı İnternet Gazetesi",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-09-27",
+        "date_precision": "day",
+        "public_url": "https://gundemalacati.com/yeni-parti-cesme-de-on-secim-uyeler-av-s-dolunay-onur-u-secti-onur-guven-tazeledi/2902/",
+        "basis": "Arşivlenmiş haberin künye ve tarih bilgileri."
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0105-speech-v1",
+        "kind": "journalism",
+        "publisher": "Euronews Türkçe",
+        "author": "Sait Burak Utucu",
+        "social_handle": null,
+        "published_at": "2026-08-04",
+        "date_precision": "day",
+        "public_url": "https://tr.euronews.com/2026/08/04/yeni-partide-yeni-orgutlenme-modeli-genel-baskani-dogrudan-uyeler-sececek",
+        "basis": "Arşivlenmiş haberin yayıncı, yazar ve tarih bilgileri."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "tracer-event",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "tracer-event",
+        "text": "Alaçatı İnternet Gazetesi, üyelerin Çeşme ilçe başkanlığı ön seçiminde oy kullandığını bildirdi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "tracer-event",
+        "passage_id": "0105-cesme-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "tracer-event",
+        "passage_id": "0105-cesme-p",
+        "checked_at": "2026-11-17T19:26:00+00:00",
+        "result": "confirmed",
+        "reason": "Haberin aktardığı ön seçim incelendi; yöntem ve nihai kongre sonucu doğrulanmadı."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-tracer-event",
+        "kind": "finding",
+        "subject_id": "tracer-event",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-17T19:26:00+00:00",
+        "result": "reviewed",
+        "reason": "Arşivlenmiş Çeşme haberinin başlığı, olay anlatısı ve Onur sözleri okundu; haberin tespit yöntemi açıklanmıyor ve oy sayıları ile yüzde 86 ifadesi uyuşmuyor. Nihai kongre sonucu bu kaynakla doğrulanmaz."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "tracer-quote",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "tracer-event",
+        "text": "Yeni Parti Çeşme İlçe Başkanlığı ön seçiminde 1.113 üyeden 630’ı oy kullandı.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "tracer-quote",
+        "passage_id": "0105-cesme-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "tracer-quote",
+        "passage_id": "0105-cesme-p",
+        "checked_at": "2026-11-17T19:26:00+00:00",
+        "result": "confirmed",
+        "reason": "Haberin aktardığı ön seçim incelendi; yöntem ve nihai kongre sonucu doğrulanmadı."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-tracer-quote",
+        "kind": "finding",
+        "subject_id": "tracer-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-17T19:26:00+00:00",
+        "result": "reviewed",
+        "reason": "Arşivlenmiş Çeşme haberinin başlığı, olay anlatısı ve Onur sözleri okundu; haberin tespit yöntemi açıklanmıyor ve oy sayıları ile yüzde 86 ifadesi uyuşmuyor. Nihai kongre sonucu bu kaynakla doğrulanmaz."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "tracer-relation",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "tracer-relation",
+        "text": "Bütün üyelerin ilçe başkanını doğrudan seçmesi beyanıyla, haberde anlatılan üye ön oylaması aynı konudadır. Ön seçim nihai kongre seçimi değildir.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "tracer-relation",
+        "passage_id": "0105-cesme-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "tracer-relation",
+        "passage_id": "0105-cesme-p",
+        "checked_at": "2026-11-17T19:26:00+00:00",
+        "result": "confirmed",
+        "reason": "Haberin aktardığı ön seçim incelendi; yöntem ve nihai kongre sonucu doğrulanmadı."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-tracer-relation",
+        "kind": "finding",
+        "subject_id": "tracer-relation",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-17T19:26:00+00:00",
+        "result": "reviewed",
+        "reason": "Euronews beyanı ve Çeşme ön seçim haberinin anlatısı birlikte okundu; konu bağı niyet veya nihai kongre sonucu göstermez."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "tracer-speech-quote",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "0105-statement",
+        "text": "Yeni Parti Genel Başkanı Özgür Özel, partisinin salı günü düzenlenen ilk Türkiye Büyük Millet Meclisi (TBMM) grup toplantısında, ilçe ve il başkanları ile genel başkanın bütün üyeler tarafından doğrudan seçileceğini açıkladı.",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "tracer-speech-quote",
+        "passage_id": "0105-speech-p",
+        "role": "statement"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "tracer-speech-quote",
+        "passage_id": "0105-speech-p",
+        "checked_at": "2026-11-17T19:26:00+00:00",
+        "result": "confirmed",
+        "reason": "Euronews haberinde beyan aktarılıyor."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-tracer-speech-quote",
+        "kind": "finding",
+        "subject_id": "tracer-speech-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-17T19:26:00+00:00",
+        "result": "reviewed",
+        "reason": "Euronews haberinin yazar ve tarih bilgileri ile beyan ve çevresi arşivden okundu; bu kaynak sözü aktarır, gerçekleşme kanıtı değildir."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "tracer-relation",
+        "passage_id": "0105-speech-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "tracer-relation",
+        "passage_id": "0105-speech-p",
+        "checked_at": "2026-11-17T19:26:00+00:00",
+        "result": "confirmed",
+        "reason": "Söylem ve olay kaynakları karşılaştırıldı; amaç veya niyet atfedilmedi."
+      }
+    }
+  ],
+  "practice_records": {
+    "practice_contract": [
+      {
+        "version": 1,
+        "taxonomy_version": 4,
+        "stage": "tracer",
+        "method_version": 1,
+        "inventory_digest": "c4c6fe5e2db2d38534e620445ac88727019a399086395756f5f0097170bc9ffd"
+      }
+    ],
+    "practice_event": [
+      {
+        "id": "tracer-cesme",
+        "common_event_key": "cesme-2026-09-27",
+        "event_at": "2026-09-27",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "Çeşme ilçe başkanlığı ön seçimi",
+        "title": "Çeşme ön seçimi",
+        "occurrence_basis": "Haber, gün, yer ve oy veren üye sayısını bildirir; yöntemi açıklamaz."
+      }
+    ],
+    "practice_event_evidence": [
+      {
+        "event_id": "tracer-cesme",
+        "passage_id": "0105-cesme-p",
+        "supported_point": "Üyelerin ön seçimde oy kullanması",
+        "stage": "action",
+        "concrete_basis": "Haber 27 Eylül, Atatürk Kültür ve Spor Merkezi ve 630 oy kullanan üye bilgisini bildirir.",
+        "limitation": "Haber tespit yöntemini açıklamıyor; tutanak veya gözlem doğrulanmadı. 630/1113 ile haberin yüzde 86 ifadesi tutarsız.",
+        "epistemic_type": "claim"
+      }
+    ],
+    "practice_contribution": [
+      {
+        "id": "tracer-contribution",
+        "event_id": "tracer-cesme",
+        "party_id": "yeni-parti",
+        "actor_id": "0105-party-institution",
+        "contribution_kind": "task",
+        "finding_id": "tracer-event",
+        "authority_passage_id": null,
+        "membership_passage_id": null,
+        "responsibility_limit": "İlçe başkanlığı ön seçimi; nihai kongre sonucu bu kayıtta yok."
+      }
+    ],
+    "practice_statement": [
+      {
+        "id": "tracer-statement",
+        "party_id": "yeni-parti",
+        "topic_id": "organ-secim-yontemi",
+        "taxonomy_version": 4,
+        "summary_finding_id": "0105-statement",
+        "quote_finding_id": "tracer-speech-quote",
+        "statement_at": "2026-08-04",
+        "date_precision": "day",
+        "version_id": "0105-speech-v1",
+        "period_basis": "4 Ağustos tarihli haber, ön seçimden önceki beyanı aktarır.",
+        "uncertainty_reason": "Beyanın tam anı kaynakta ayrıntılı belirtilmez.",
+        "comparison_row_id": "04-03-v3-0303-epm-detail2-organ-secim-yontemi-ilce-yonetim-kurulu-secimi-row"
+      }
+    ],
+    "practice_relation": [
+      {
+        "id": "tracer-relation-id",
+        "statement_id": "tracer-statement",
+        "event_id": "tracer-cesme",
+        "party_id": "yeni-parti",
+        "topic_id": "organ-secim-yontemi",
+        "scope_id": null,
+        "comparability_reason": "İkisi yerel örgütte seçim usulüyle ilgilidir; seçim aşamaları farklıdır.",
+        "target_finding_id": "0105-statement",
+        "result_finding_id": null,
+        "explanation_finding_id": "tracer-relation",
+        "temporal_context": "Beyan 4 Ağustos haberinde, ön seçim 27 Eylül haberinde aktarılır.",
+        "authority_context": "İlçe başkanlığı ön seçimi ile kongrenin yetkisi ayrıdır; bağlantılı tüzük satırı ilçe yönetim kurulu seçimini düzenler.",
+        "uncertainty_reason": "Kaynağın tespit yöntemi ve nihai sonuç doğrulanmadı."
+      }
+    ],
+    "practice_legacy_link": [
+      {
+        "legacy_kind": "action",
+        "legacy_id": "0105-action-cesme",
+        "event_id": "tracer-cesme",
+        "relation_id": "tracer-relation-id",
+        "overlap_reason": "Aynı arşivlenmiş Çeşme ön seçimi."
+      },
+      {
+        "legacy_kind": "match",
+        "legacy_id": "0105-match-cesme",
+        "event_id": "tracer-cesme",
+        "relation_id": "tracer-relation-id",
+        "overlap_reason": "Aynı ön seçim; eski kayıt korunur."
+      }
+    ],
+    "practice_source_party": [
+      {
+        "version_id": "0105-cesme-v1",
+        "party_id": "yeni-parti",
+        "passage_id": "0105-cesme-p",
+        "scope_reason": "Haber Yeni Parti Çeşme ön seçimini anlatır."
+      }
+    ]
+  },
+  "scope_inventory": [
+    {
+      "party_id": "yeni-parti",
+      "topic_id": "organ-secim-yontemi",
+      "event_id": "tracer-cesme",
+      "stage": "tracer",
+      "boundary": "Yalnız Çeşme ön seçim kaydı; parti veya konu araştırması tamamlanmış değildir."
+    }
+  ],
+  "tranches": [],
+  "source_review_refs": []
+}
