@@ -1,0 +1,563 @@
+{
+  "status": "ok",
+  "commands": [
+    {
+      "command": "python3 tests/run.py --pattern test_practice_tracer.py",
+      "statement": "Çıkış kodu sıfır değilse, gerçek arşiv kaynaklı DB→JSON→iki HTML hedefi testi çalışmıyorsa veya TESTS_OK yoksa tracer tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-01-PLAN.md",
+      "task": "04-01-01: Gerçek Çeşme kaydını arşivden iki okuyucu görünümüne geçir"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-tracer.json",
+      "statement": "Çıkış kodu sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-01-PLAN.md",
+      "task": "04-01-02: Yeni yerel tracer sürümünü koruma kontrolleriyle teslim et"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_legacy.py",
+      "statement": "Rollback/eski üretici/marker korunum testlerinden biri başarısızsa veya TESTS_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-01-PLAN.md",
+      "task": "04-01-02: Yeni yerel tracer sürümünü koruma kontrolleriyle teslim et"
+    },
+    {
+      "command": "python3 src/arsiv.py audit --release current --phase 4 --stage tracer",
+      "statement": "Çıkış kodu sıfır değilse veya PHASE4_AUDIT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-01-PLAN.md",
+      "task": "04-01-02: Yeni yerel tracer sürümünü koruma kontrolleriyle teslim et"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_content.py",
+      "statement": "Çıkış sıfır değilse veya çok olay/söylemsiz/ortak olay iki görünüm senaryolarından biri eksikse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-02-PLAN.md",
+      "task": "04-02-01: Bir söylemden çok olaya ve aynı olaydan çok ilişkiye çalışan akışı genişlet"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_contract.py",
+      "statement": "Çıkış kodu sıfır değilse; tek yeterli haber reddediliyor, parti tekrarı/yanlış dönem/kanıtsız katkı kabul ediliyorsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-02-PLAN.md",
+      "task": "04-02-02: Hedef, aşama, ihtilaf ve dönem değişimini kanıtlarıyla iki görünümde tamamla"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_comparison_content.py",
+      "statement": "Çıkış kodu sıfır değilse veya önceki Faz3 içerik davranışı bozulmuşsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-02-PLAN.md",
+      "task": "04-02-02: Hedef, aşama, ihtilaf ve dönem değişimini kanıtlarıyla iki görünümde tamamla"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_coverage.py",
+      "statement": "Çıkış kodu sıfır değilse veya yanlış parti/eksik topic/pending lead/daraltılmış evren reddi çalışmıyorsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-03-PLAN.md",
+      "task": "04-03-01: Gerçek pilot konusu üzerinden partiye özel arama ve kapanışı okuyucuya ulaştır"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_preview.py",
+      "statement": "Çıkış kodu sıfır değilse; karar girdili yeniden üretim/başvuru korunumu veya eksik/çelişik/digest/alias/kanıt ret senaryosu başarısızsa; global current/lock değişirse veya DB→JSON denetimi atlanırsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-03-PLAN.md",
+      "task": "04-03-02: Bağımsız gerçek kaynak önizlemeleri ve birleşme denetimini çalıştır"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-tracer.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-03-tracer-preview",
+      "statement": "Çıkış kodu sıfır değilse veya PRACTICE_PREVIEW_OK ve out altındaki denetlenmiş DB/JSON/HTML/manifest yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-03-PLAN.md",
+      "task": "04-03-02: Bağımsız gerçek kaynak önizlemeleri ve birleşme denetimini çalıştır"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-yeni-parti.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-04-PLAN.md",
+      "task": "04-04-01: Yeni Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-yeni-parti.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-yeni-parti-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-04-PLAN.md",
+      "task": "04-04-01: Yeni Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-yeni-parti.json --party yeni-parti --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-04-PLAN.md",
+      "task": "04-04-02: Yeni Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-yeni-parti.json --review data/practices/04-yeni-parti-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-04-PLAN.md",
+      "task": "04-04-02: Yeni Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-yeni-parti.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-yeni-parti-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-04-PLAN.md",
+      "task": "04-04-02: Yeni Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-tip.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-05-PLAN.md",
+      "task": "04-05-01: TİP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-tip.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-tip-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-05-PLAN.md",
+      "task": "04-05-01: TİP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-tip.json --party tip --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-05-PLAN.md",
+      "task": "04-05-02: TİP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-tip.json --review data/practices/04-tip-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-05-PLAN.md",
+      "task": "04-05-02: TİP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-tip.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-tip-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-05-PLAN.md",
+      "task": "04-05-02: TİP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-dem.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-06-PLAN.md",
+      "task": "04-06-01: DEM Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-dem.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-dem-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-06-PLAN.md",
+      "task": "04-06-01: DEM Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-dem.json --party dem --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-06-PLAN.md",
+      "task": "04-06-02: DEM Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-dem.json --review data/practices/04-dem-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-06-PLAN.md",
+      "task": "04-06-02: DEM Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-dem.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-dem-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-06-PLAN.md",
+      "task": "04-06-02: DEM Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-iyi.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-07-PLAN.md",
+      "task": "04-07-01: İYİ Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-iyi.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-iyi-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-07-PLAN.md",
+      "task": "04-07-01: İYİ Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-iyi.json --party iyi --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-07-PLAN.md",
+      "task": "04-07-02: İYİ Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-iyi.json --review data/practices/04-iyi-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-07-PLAN.md",
+      "task": "04-07-02: İYİ Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-iyi.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-iyi-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-07-PLAN.md",
+      "task": "04-07-02: İYİ Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-yeni-yol.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-08-PLAN.md",
+      "task": "04-08-01: Yeni Yol Partisi kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-yeni-yol.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-yeni-yol-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-08-PLAN.md",
+      "task": "04-08-01: Yeni Yol Partisi kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-yeni-yol.json --party yeni-yol --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-08-PLAN.md",
+      "task": "04-08-02: Yeni Yol Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-yeni-yol.json --review data/practices/04-yeni-yol-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-08-PLAN.md",
+      "task": "04-08-02: Yeni Yol Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-yeni-yol.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-yeni-yol-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-08-PLAN.md",
+      "task": "04-08-02: Yeni Yol Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-dbp.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-09-PLAN.md",
+      "task": "04-09-01: DBP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-dbp.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-dbp-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-09-PLAN.md",
+      "task": "04-09-01: DBP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-dbp.json --party dbp --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-09-PLAN.md",
+      "task": "04-09-02: DBP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-dbp.json --review data/practices/04-dbp-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-09-PLAN.md",
+      "task": "04-09-02: DBP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-dbp.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-dbp-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-09-PLAN.md",
+      "task": "04-09-02: DBP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-emep.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-10-PLAN.md",
+      "task": "04-10-01: EMEP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-emep.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-emep-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-10-PLAN.md",
+      "task": "04-10-01: EMEP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-emep.json --party emep --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-10-PLAN.md",
+      "task": "04-10-02: EMEP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-emep.json --review data/practices/04-emep-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-10-PLAN.md",
+      "task": "04-10-02: EMEP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-emep.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-emep-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-10-PLAN.md",
+      "task": "04-10-02: EMEP bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-saadet.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-11-PLAN.md",
+      "task": "04-11-01: Saadet Partisi kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-saadet.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-saadet-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-11-PLAN.md",
+      "task": "04-11-01: Saadet Partisi kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-saadet.json --party saadet --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-11-PLAN.md",
+      "task": "04-11-02: Saadet Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-saadet.json --review data/practices/04-saadet-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-11-PLAN.md",
+      "task": "04-11-02: Saadet Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-saadet.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-saadet-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-11-PLAN.md",
+      "task": "04-11-02: Saadet Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-demokrat.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_INPUT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-12-PLAN.md",
+      "task": "04-12-01: Demokrat Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-demokrat.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-demokrat-institution",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya gerçek kaynak/eksik kaydı iki görünümde ve ilgili pasaj hedefinde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-12-PLAN.md",
+      "task": "04-12-01: Demokrat Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-demokrat.json --party demokrat --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya bu partinin herhangi bir topic/statement/event hücresi ya da kuyruk dilimi incelenmemişse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-12-PLAN.md",
+      "task": "04-12-02: Demokrat Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-demokrat.json --review data/practices/04-demokrat-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya anlam taşıyan kayıt gerçek pasaj/agent reading kaydı olmadan kalmışsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-12-PLAN.md",
+      "task": "04-12-02: Demokrat Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-preview --input data/practices/04-demokrat.json --inventory data/practices/04-inventory.json --out /tmp/gsd-04-demokrat-policy",
+      "statement": "Çıkış sıfır değilse, PRACTICE_PREVIEW_OK yoksa veya bütün uygun kayıtlar/gerçek eksikler iki görünümde yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-12-PLAN.md",
+      "task": "04-12-02: Demokrat Parti bütün politika konularını ve kalan kaynak zincirlerini kapat"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-merge --inventory data/practices/04-inventory.json --inputs data/practices/04-yeni-parti.json data/practices/04-tip.json data/practices/04-dem.json data/practices/04-iyi.json data/practices/04-yeni-yol.json data/practices/04-dbp.json data/practices/04-emep.json data/practices/04-saadet.json data/practices/04-demokrat.json --event-decisions data/practices/04-shared-events.json --out data/practices/04-merged.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_MERGE_OK yoksa; dokuz girdi/karar atlanırsa veya yeniden üretim kanonik kimlik/başvuru/provenance içeriğini değiştirirse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-13-PLAN.md",
+      "task": "04-13-01: Gerçek ortak olay adayını kaynaklarına göre birleştir ve yerel rapora geçir"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_preview.py",
+      "statement": "Çıkış sıfır değilse; kaynaklı same/distinct/unresolved korunumu veya eksik/çelişik/yanlış digest/dangling alias ret testi başarısızsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-13-PLAN.md",
+      "task": "04-13-01: Gerçek ortak olay adayını kaynaklarına göre birleştir ve yerel rapora geçir"
+    },
+    {
+      "command": "python3 src/arsiv.py audit --release current --phase 4 --stage partial",
+      "statement": "Çıkış sıfır değilse, PHASE4_AUDIT_OK yoksa veya ortak olay/karar/alias/katkı/kanıt kaynak zinciri düşmüşse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-13-PLAN.md",
+      "task": "04-13-01: Gerçek ortak olay adayını kaynaklarına göre birleştir ve yerel rapora geçir"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-merged.json --complete",
+      "statement": "Çıkış sıfır değilse, PRACTICE_COVERAGE_OK yoksa veya herhangi parti/konu/kaynak dilimi/pending uç eksikse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-13-PLAN.md",
+      "task": "04-13-02: Yeni konu, çapraz parti kaynak ve kalan uçların tamamını geri tara"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-merged.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_INPUT_OK yoksa veya backscan dahil on girdi/karar digestleri ve bütün başvurular yeniden üretimde korunmuyorsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-13-PLAN.md",
+      "task": "04-13-02: Yeni konu, çapraz parti kaynak ve kalan uçların tamamını geri tara"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_synthesis.py",
+      "statement": "Çıkış sıfır değilse; gerçek kaynaklı sentez yolu, sıfır olay/pasajla scope dayanaklı load/export/audit/source-check/iki görünüm kabulü veya temelsiz/yanlış/reopened-scope eksik çıkarımı ret senaryolarından biri başarısızsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-14-PLAN.md",
+      "task": "04-14-01: Gerçek bir ortak konunun farklı dönemli sentezini iki görünüm ve kaynağa bağla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-check --input data/practices/04-final.json --inventory data/practices/04-inventory.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_INPUT_OK yoksa; herhangi topic/sentezin record veya scope dayanağı ya da devralınmış merge karar/alias/provenance bağı eksikse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-14-PLAN.md",
+      "task": "04-14-02: Bütün konu sentezlerini gerçek kapsamlarıyla tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-synthesis.json --review data/practices/04-synthesis-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa veya olaysız sentez gerçek scope/attempt/closure incelemesi taşımıyorsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-14-PLAN.md",
+      "task": "04-14-02: Bütün konu sentezlerini gerçek kapsamlarıyla tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py audit --release current --phase 4 --stage partial",
+      "statement": "Çıkış sıfır değilse veya PHASE4_AUDIT_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-14-PLAN.md",
+      "task": "04-14-02: Bütün konu sentezlerini gerçek kapsamlarıyla tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-source-check --input data/practices/04-final.json --review data/practices/04-source-review.json",
+      "statement": "Çıkış sıfır değilse, PRACTICE_SOURCE_REVIEW_OK yoksa; record dalında gerçek kaynak anlam incelemesi veya scope dalında gerçek arama/kapanış incelemesi eksikse tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-15-PLAN.md",
+      "task": "04-15-01: Nihai kaydın maddi kaynak zincirini baştan sona incele ve kapsamı tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py practice-coverage --inventory data/practices/04-inventory.json --input data/practices/04-final.json --complete",
+      "statement": "Çıkış sıfır değilse veya PRACTICE_COVERAGE_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-15-PLAN.md",
+      "task": "04-15-01: Nihai kaydın maddi kaynak zincirini baştan sona incele ve kapsamı tamamla"
+    },
+    {
+      "command": "python3 src/arsiv.py audit --release current --phase 4 --stage complete",
+      "statement": "Çıkış sıfır değilse, PHASE4_AUDIT_OK yoksa veya karar/alias/provenance ya da geçerli olaysız sentez dayanağı kaybolmuşsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-15-PLAN.md",
+      "task": "04-15-01: Nihai kaydın maddi kaynak zincirini baştan sona incele ve kapsamı tamamla"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_practice_navigation.py",
+      "statement": "Çıkış sıfır değilse, gerçek browser/rapor kaynak hedefi başarısızsa veya TESTS_OK yoksa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-15-PLAN.md",
+      "task": "04-15-02: Gerçek rapor gezintisini ve ham varsayımları release'e bağla"
+    },
+    {
+      "command": "python3 tests/run.py --pattern test_comparison_navigation.py",
+      "statement": "Çıkış sıfır değilse veya önceki Faz3 doğrudan kaynak/konu gezintisi bozulmuşsa tamamlanmaz.",
+      "status": "ok",
+      "severity": "none",
+      "plan": "04-15-PLAN.md",
+      "task": "04-15-02: Gerçek rapor gezintisini ve ham varsayımları release'e bağla"
+    }
+  ],
+  "counts": {
+    "blocker": 0,
+    "warning": 0,
+    "total": 69
+  },
+  "readError": null
+}

@@ -226,7 +226,50 @@ Plans:
 2. Okur, her eşleştirmenin aktörünü, açıklama ve olay tarihlerini, geçerli belge sürümünü ve bağlamını görebilir; parti açıklaması tek başına uygulamanın gerçekleştiğine kanıt sayılmaz.
 3. Okur, aynı ölçütlerle hazırlanmış karşılaştırmalarda belgelerin desteklediği benzerlik/farklılıkları, kaynağın beyanını ve araştırmacı/yapay zekâ yorumunu ayrı görebilir; kanıt eksikliği uyum veya çelişki sonucu gibi sunulmaz.
 
-**Plans:** TBD
+**Plans:** 15 plans
+
+Plans:
+**Wave 1**
+
+- [ ] 04-01-PLAN.md — Gerçek kaynaklı olay tracer'ı, schema7/renderer25 ve eski sürüm korunumu
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 04-02-PLAN.md — Çoklu ilişki, ayrı aşama, ihtilaf ve dönemsel iki görünüm
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
+- [ ] 04-03-PLAN.md — Dokuz parti kapsam envanteri, kapanış/yeniden açılma ve bağımsız önizleme
+
+**Wave 4** *(blocked on Wave 3 completion)*
+
+- [ ] 04-04-PLAN.md — Yeni Parti bütün konu ve kaynak zincirleri
+- [ ] 04-05-PLAN.md — TİP bütün konu ve kaynak zincirleri
+- [ ] 04-06-PLAN.md — DEM Parti bütün konu ve kaynak zincirleri
+- [ ] 04-07-PLAN.md — İYİ Parti bütün konu ve kaynak zincirleri
+- [ ] 04-08-PLAN.md — Yeni Yol Partisi bütün konu ve kaynak zincirleri
+- [ ] 04-09-PLAN.md — DBP bütün konu ve kaynak zincirleri
+- [ ] 04-10-PLAN.md — EMEP bütün konu ve kaynak zincirleri
+- [ ] 04-11-PLAN.md — Saadet Partisi bütün konu ve kaynak zincirleri
+- [ ] 04-12-PLAN.md — Demokrat Parti bütün konu ve kaynak zincirleri
+
+**Wave 5** *(blocked on Wave 4 completion)*
+
+- [ ] 04-13-PLAN.md — Ortak olayların seri birleşimi ve bütün-parti geri tarama kapanışı
+
+**Wave 6** *(blocked on Wave 5 completion)*
+
+- [ ] 04-14-PLAN.md — Bütün ortak konularda kaynaklı kısa partiler arası sentez
+
+**Wave 7** *(blocked on Wave 6 completion)*
+
+- [ ] 04-15-PLAN.md — Gerçek maddi kaynak incelemesi, tarayıcı kanıtı ve kullanıcı kabulü hazırlığı
+
+**Cross-cutting constraints:**
+
+- D-02,D-03,D-06,D-07,D-08,D-10,D-11,D-12: Bütün uygun olaylar ortak kimlik, ayrı aşama, gerçek dönemsel yetki/katkı ve ihtilaf kaynaklarıyla korunur.
+- D-13,D-14,D-15,D-16: Açık kısa kayıtlar iki görünümden doğru Faz3/pasaj/arşive ulaşır; farklı kapsamlar senteze açıklanmış olarak devredilir.
+
 **UI hint**: yes
 
 ### Phase 5: Finansman ve harcamaların belgelenmesi
@@ -279,7 +322,7 @@ Plans:
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
 | 3. Tüzük ve programların karşılaştırılması | 16/16 | Complete    | 2026-11-16 |
-| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/TBD | Not started | - |
+| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 0/15 | Planned | - |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 

@@ -1,0 +1,917 @@
+[
+  {
+    "plan": "04-01-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-01-01: Gerçek Çeşme kaydını arşivden iki okuyucu görünümüne geçir",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-01-02: Yeni yerel tracer sürümünü koruma kontrolleriyle teslim et",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-02-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-02-01: Bir söylemden çok olaya ve aynı olaydan çok ilişkiye çalışan akışı genişlet",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-02-02: Hedef, aşama, ihtilaf ve dönem değişimini kanıtlarıyla iki görünümde tamamla",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-03-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-03-01: Gerçek pilot konusu üzerinden partiye özel arama ve kapanışı okuyucuya ulaştır",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-03-02: Bağımsız gerçek kaynak önizlemeleri ve birleşme denetimini çalıştır",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-04-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-04-01: Yeni Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-04-02: Yeni Parti bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-05-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-05-01: TİP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-05-02: TİP bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-06-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-06-01: DEM Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-06-02: DEM Parti bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-07-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-07-01: İYİ Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-07-02: İYİ Parti bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-08-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-08-01: Yeni Yol Partisi kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-08-02: Yeni Yol Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-09-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-09-01: DBP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-09-02: DBP bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-10-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-10-01: EMEP kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-10-02: EMEP bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-11-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-11-01: Saadet Partisi kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-11-02: Saadet Partisi bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-12-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-12-01: Demokrat Parti kurumsal uygulama zincirlerini gerçek kaynaklarla aç ve tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-12-02: Demokrat Parti bütün politika konularını ve kalan kaynak zincirlerini kapat",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-13-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-13-01: Gerçek ortak olay adayını kaynaklarına göre birleştir ve yerel rapora geçir",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-13-02: Yeni konu, çapraz parti kaynak ve kalan uçların tamamını geri tara",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-14-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-14-01: Gerçek bir ortak konunun farklı dönemli sentezini iki görünüm ve kaynağa bağla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-14-02: Bütün konu sentezlerini gerçek kapsamlarıyla tamamla",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  },
+  {
+    "plan": "04-15-PLAN.md",
+    "frontmatter": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "missing": [],
+        "present": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "must_haves"
+        ],
+        "invalidValue": [],
+        "schema": "plan"
+      }
+    },
+    "structure": {
+      "exit_code": 0,
+      "result": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "task_count": 2,
+        "tasks": [
+          {
+            "name": "04-15-01: Nihai kaydın maddi kaynak zincirini baştan sona incele ve kapsamı tamamla",
+            "type": "tracer",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          },
+          {
+            "name": "04-15-02: Gerçek rapor gezintisini ve ham varsayımları release'e bağla",
+            "type": "auto",
+            "hasFiles": true,
+            "hasAction": true,
+            "hasVerify": true,
+            "hasDone": true
+          }
+        ],
+        "frontmatter_fields": [
+          "phase",
+          "plan",
+          "type",
+          "wave",
+          "depends_on",
+          "files_modified",
+          "autonomous",
+          "requirements",
+          "estimate",
+          "must_haves"
+        ]
+      }
+    }
+  }
+]
