@@ -43,6 +43,10 @@ from rapor_v20 import render_report as render_v20_report
 from rapor_v21 import render_report as render_v21_report
 from rapor_v22 import render_report as render_v22_report
 from rapor_v23 import render_report as render_v23_report
+from rapor_v24 import render_report as render_v24_report
+from uygulamalar import (PRACTICE_TABLES, validate_practices, load_practice,
+                         validate_practice_input, practice_manifest_fields,
+                         validate_practice_descent)
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
                       check_evidence_attribution, validate_policy_descent)
 from arsiv_gorunum import VIEW_TABLES, validate_view, decode_html, CSP as ARCHIVE_CSP
@@ -2381,7 +2385,7 @@ def record_topic(work, values):
     insert_checked(work, 'topic', values, validate)
 
 
-def check_match(db, v):
+def check_match(db, v, *, historical=False):
     required = ('id', 'topic_id', 'statement_finding_id', 'action_finding_id', 'relation', 'rationale', 'eligibility', 'reviewed_at')
     if any(not v.get(k) for k in required): raise ValueError('Eşleşme ve gerekçe alanları gerekli')
     if v['relation'] not in ('benzerlik', 'farklılık', 'belirlenemiyor') or v['eligibility'] != 'eligible':
@@ -2413,7 +2417,8 @@ def check_match(db, v):
     if not source or source['party_id'] != a['party_id'] or source['source_kind'] == 'party': raise ValueError('Parti duyurusu veya başka parti kaynağı oluş kanıtı olamaz')
     if source['document_date'] and source['document_date'] < a['event_date'][:10]: raise ValueError('Oluş kaynağı olaydan önce yayımlanmış')
     method = db.execute('SELECT cutoff_at FROM method ORDER BY version DESC LIMIT 1').fetchone()
-    if not method or validate_dates(a['event_date'], a['date_precision'], '2026-07-24', method['cutoff_at']) != 'inside': raise ValueError('Olay tarihi kapsam dışında veya belirsiz')
+    start = '2026-07-24' if historical else foundation_for_party(db, a['party_id'])
+    if not method or validate_dates(a['event_date'], a['date_precision'], start, method['cutoff_at']) != 'inside': raise ValueError('Olay tarihi kapsam dışında veya belirsiz')
 
 
 def record_match(work, values):
@@ -2485,7 +2490,12 @@ def resolve_candidate(work, candidate_id, match_id, resolution):
 
 def validate_evidence(db, finding, passage, *, validated_policy=None):
     row = db.execute('SELECT d.party_id,d.source_kind,v.id AS version_id FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (passage['id'],)).fetchone()
-    if not row or row['party_id'] != finding['party_id']: raise ValueError('Kanıt başka partiye ait')
+    if not row: raise ValueError('Kanıt kaynağı bulunamadı')
+    if row['party_id'] != finding['party_id']:
+        has_practice = db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_source_party'").fetchone()
+        shared = has_practice and db.execute('SELECT 1 FROM practice_source_party WHERE version_id=? AND party_id=? AND passage_id=? AND scope_reason<>\'\'', (row['version_id'], finding['party_id'], passage['id'])).fetchone()
+        used = has_practice and db.execute('SELECT 1 FROM practice_contribution WHERE finding_id=? UNION SELECT 1 FROM practice_statement WHERE summary_finding_id=? OR quote_finding_id=? UNION SELECT 1 FROM practice_relation WHERE target_finding_id=? OR result_finding_id=? OR explanation_finding_id=?', (finding['id'],) * 6).fetchone()
+        if not shared or not used: raise ValueError('Kanıt başka partiye ait')
     if finding['provenance'] == 'quote' and finding['text'] not in passage['exact']: raise ValueError('Alıntı pasajda bulunamadı')
     compiled = check_evidence_attribution(db,finding,row,validated_policy=validated_policy)
     if not compiled and finding['heading'] in ('Tüzük','Program') and not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (row['version_id'],finding['party_id'])).fetchone(): raise ValueError('Belge otoritesi doğrulanmadı')
@@ -2673,6 +2683,12 @@ def export_db(path, release_id, strict_identity=False):
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Veritabanı bütünlük hatası')
         existing = {row[0] for row in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+        practice_present = existing.intersection(PRACTICE_TABLES)
+        if practice_present and practice_present != set(PRACTICE_TABLES):
+            raise ValueError('Eksik uygulama şeması')
+        has_practices = bool(practice_present)
+        if has_practices and not db.execute('SELECT 1 FROM practice_contract').fetchone():
+            raise ValueError('Uygulama sözleşmesi eksik')
         v2_present = existing.intersection(COMPLETION_V2_TABLES)
         has_v2 = any(db.execute(f'SELECT 1 FROM {name} LIMIT 1').fetchone() for name in v2_present)
         if has_v2 and (v2_present != set(COMPLETION_V2_TABLES) or not db.execute('SELECT 1 FROM comparison_completion_revision LIMIT 1').fetchone()):
@@ -2698,7 +2714,10 @@ def export_db(path, release_id, strict_identity=False):
                 names += list(LINEAGE_TABLES)
         cols = {r['name'] for r in db.execute('PRAGMA table_info(document_version)')}
         policy = active_policy(db)
-        result = {'schema_version': 6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1)))), 'release_id': release_id}
+        if has_practices:
+            if not has_comparisons or not policy: raise ValueError('Uygulama tabanı eksik')
+            names += list(PRACTICE_TABLES)
+        result = {'schema_version': 7 if has_practices else (6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))))), 'release_id': release_id}
         if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
         if existing.intersection(DOSSIER_TABLES) and not set(DOSSIER_TABLES).issubset(existing): raise ValueError('Eksik dosya şeması')
@@ -2796,7 +2815,7 @@ def export_db(path, release_id, strict_identity=False):
                             raise ValueError('Ek parti metni parti yayınına dayanmalı')
         if 'match' in existing:
             for match in result['match']:
-                check_match(db, match)
+                check_match(db, match, historical=not has_practices)
         if 'match_candidate' in existing:
             for candidate in result['match_candidate']: check_candidate(db, candidate)
             eligible = [c['match_id'] for c in result['match_candidate'] if c['status'] == 'eligible']
@@ -2809,6 +2828,8 @@ def export_db(path, release_id, strict_identity=False):
         if has_comparisons:
             validate_comparisons(result)
             validate_changed_topic_reviews(result)
+        if has_practices:
+            validate_practices(result)
         return result
     finally:
         db.close()
@@ -2839,7 +2860,7 @@ def comparison_render_data(data):
     # summary, so removing obsolete comparison-only findings cannot break a
     # dossier or a version-history reference.
     referenced = set(active_findings)
-    for table in ('action', 'match', 'dossier_field', 'dossier_event', 'version_context', 'version_relation'):
+    for table in ('action', 'match', 'dossier_field', 'dossier_event', 'version_context', 'version_relation', 'practice_statement', 'practice_relation', 'practice_contribution'):
         for row in data.get(table, []):
             referenced.update(value for key, value in row.items() if key.endswith('finding_id') and value)
     for policy in data.get('source_policy', []):
@@ -2883,10 +2904,10 @@ def audit_release(release='current', _seen=None):
     elif manifest.get('source_policy_version') and base_id:
         audit_release(base_id, _seen)
     exported = export_db(folder / 'records.sqlite3', release)
-    if manifest.get('source_policy_version') and exported['schema_version'] not in (5,6):raise ValueError('Kaynak politikası snapshot sözleşmesiyle uyuşmuyor')
-    if exported['schema_version'] in (5,6):
+    if manifest.get('source_policy_version') and exported['schema_version'] not in (5,6,7):raise ValueError('Kaynak politikası snapshot sözleşmesiyle uyuşmuyor')
+    if exported['schema_version'] in (5,6,7):
         if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version'),manifest.get('source_policy_version'))!=(exported['schema_version'],2,2):raise ValueError('Kaynak politikası manifesti geçersiz')
-        if exported['schema_version'] == 6:
+        if exported['schema_version'] in (6,7):
             c = exported['comparison_contract'][0]
             if (manifest.get('comparison_validation_version'),manifest.get('comparison_taxonomy_version'),manifest.get('comparison_stage')) != (c['version'],c['taxonomy_version'],c['stage']): raise ValueError('Karşılaştırma manifesti geçersiz')
             if manifest.get('comparison_synthesis_contract_version') != (2 if c['version'] >= 2 else None): raise ValueError('Sentez sözleşmesi manifesti geçersiz')
@@ -2898,19 +2919,25 @@ def audit_release(release='current', _seen=None):
                 raise ValueError('Kaynak kapanışı manifesti geçersiz')
             if {k: manifest[k] for k in COMPLETION_MANIFEST_KEYS if k in manifest} != completion_manifest_fields(exported):
                 raise ValueError('Kaynak kapanışı revizyon manifesti geçersiz')
+        if exported['schema_version'] == 7:
+            fields = practice_manifest_fields(exported)
+            if {k: manifest.get(k) for k in fields} != fields: raise ValueError('Uygulama manifesti geçersiz')
+        elif any(k.startswith('practice_') for k in manifest):
+            raise ValueError('Uygulama snapshot işaretçisi eksik')
         if not manifest.get('phase2_delivery'):
             if not base_id and json.loads(exported['source_policy'][0]['legacy_versions']):raise ValueError('Kaynak politikası tabanı eksik')
             if base_id:
                 base_data = json.loads((DATA/'releases'/base_id/'records.json').read_text())
                 validate_policy_descent(base_data, exported)
                 validate_comparison_descent(base_data, exported)
+                validate_practice_descent(base_data, exported)
                 del base_data
     if exported['schema_version'] >= 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
-        expected = (exported['schema_version'],2) if exported['schema_version'] in (5,6) else (4,1)
-        valid_renderers=(16,17,18,19,20,21,22,23,RENDERER_VERSION) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10))
-        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6) and manifest.get('source_policy_version')!=2):
+        expected = (exported['schema_version'],2) if exported['schema_version'] in (5,6,7) else (4,1)
+        valid_renderers=(25,) if exported['schema_version']==7 else ((16,17,18,19,20,21,22,23,24) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10)))
+        if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6,7) and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_folder = safe_path(DATA / 'releases', base_id)
         base_manifest = json.loads((base_folder / 'manifest.json').read_text(encoding='utf-8'))
@@ -2920,6 +2947,7 @@ def audit_release(release='current', _seen=None):
             raise ValueError('Yeni sözlük için sürüm 3 satır soyu sözleşmesi gerekli')
         validate_policy_descent(base_data,exported)
         validate_comparison_descent(base_data,exported)
+        validate_practice_descent(base_data,exported)
         validate_delivery_prefix(base_manifest, manifest)
         for party in manifest['phase2_delivery']['completed_prefix']:
             validate_dossier(exported, party, 'complete')
@@ -2934,7 +2962,7 @@ def audit_release(release='current', _seen=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, 22: render_v22_report, 23: render_v23_report, RENDERER_VERSION: render_report,
+        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, 22: render_v22_report, 23: render_v23_report, 24: render_v24_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_bytes() != render_comparison_snapshot(exported, renderer).encode('utf-8'):
@@ -3104,7 +3132,7 @@ def validate_versioned_row_lineage(data):
 def validate_phase_three_workspace(folder, stage):
     folder = Path(folder)
     data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
-    actual_stage = data['comparison_contract'][0]['stage'] if data.get('schema_version') == 6 else None
+    actual_stage = data['comparison_contract'][0]['stage'] if data.get('schema_version') in (6,7) else None
     if actual_stage != stage and not (stage == 'partial' and actual_stage == 'complete'):
         raise ValueError('İstenen karşılaştırma aşaması uyuşmuyor')
     # A complete snapshot satisfies a partial request only after the stronger
@@ -3191,8 +3219,8 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
         payload = export_db(staging / 'records.sqlite3', release, strict_identity=True)
         (staging / 'records.json').write_text(json.dumps(payload, ensure_ascii=False, sort_keys=True, indent=2) + '\n', encoding='utf-8')
         if fail_at == 'json': raise RuntimeError('Enjekte edilen JSON hatası')
-        renderer = render_v15_report if payload['schema_version'] == 5 else render_report
-        renderer_version = 15 if payload['schema_version'] == 5 else RENDERER_VERSION
+        renderer = render_v15_report if payload['schema_version'] == 5 else (render_v24_report if payload['schema_version'] == 6 else render_report)
+        renderer_version = 15 if payload['schema_version'] == 5 else (24 if payload['schema_version'] == 6 else RENDERER_VERSION)
         (staging / 'index.html').write_text(render_comparison_snapshot(payload, renderer), encoding='utf-8')
         if fail_at == 'html': raise RuntimeError('Enjekte edilen HTML hatası')
         # Once the base is phase-capable, deleting its method cannot bypass
@@ -3202,6 +3230,7 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
             base_data = json.loads((DATA / 'releases' / metadata['base'] / 'records.json').read_text(encoding='utf-8'))
             validate_policy_descent(base_data, payload)
             validate_comparison_descent(base_data, payload)
+            validate_practice_descent(base_data, payload)
             base = connect_readonly(DATA / 'releases' / metadata['base'] / 'records.sqlite3')
             try:
                 has_method = base.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='method'").fetchone()
@@ -3215,13 +3244,13 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
             validate_phase_two_workspace(staging, None if refresh else party, stage)
             for completed_party in phase_delivery['completed_prefix']:
                 validate_dossier(payload, completed_party, 'complete')
-        if payload['schema_version'] == 6:
+        if payload['schema_version'] in (6,7):
             validate_phase_three_workspace(staging, payload['comparison_contract'][0]['stage'])
         manifest = {'release_id': release, 'renderer_version': renderer_version, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
-        if payload['schema_version'] in (5,6):manifest.update(data_schema_version=payload['schema_version'],dossier_validation_version=2,source_policy_version=2,base_release=metadata['base'])
+        if payload['schema_version'] in (5,6,7):manifest.update(data_schema_version=payload['schema_version'],dossier_validation_version=2,source_policy_version=2,base_release=metadata['base'])
         if phase_delivery:
             manifest.update(data_schema_version=payload['schema_version'], dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=metadata['base'])
-        if payload['schema_version'] == 6:
+        if payload['schema_version'] in (6,7):
             c = payload['comparison_contract'][0]
             manifest.update(comparison_validation_version=c['version'], comparison_taxonomy_version=c['taxonomy_version'], comparison_stage=c['stage'])
             if c['version'] >= 2:
@@ -3234,6 +3263,8 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
             if markers:
                 manifest['comparison_completion_version'] = markers[0]['version']
             manifest.update(completion_manifest_fields(payload))
+        if payload['schema_version'] == 7:
+            manifest.update(practice_manifest_fields(payload))
         if refresh: manifest['phase2_refresh'] = True
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
@@ -3269,7 +3300,9 @@ def main():
     ch = sub.add_parser('chain'); ch.add_argument('--workspace', required=True); ch.add_argument('--party', required=True); ch.add_argument('--topic', required=True)
     pub = sub.add_parser('publish'); pub.add_argument('--workspace', required=True); group=pub.add_mutually_exclusive_group(); group.add_argument('--party'); group.add_argument('--refresh', action='store_true'); pub.add_argument('--stage', choices=('tracer','complete'), default='complete')
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
-    a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2','3')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','partial','complete'), default='complete')
+    a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2','3','4')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','partial','complete'), default='complete')
+    pc = sub.add_parser('practice-check'); pc.add_argument('--input', required=True); pc.add_argument('--base-release', default='current')
+    pl = sub.add_parser('practice-load'); pl.add_argument('--workspace', required=True); pl.add_argument('--input', required=True)
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
     cr = sub.add_parser('comparison-reconcile'); cr.add_argument('--workspace', required=True); cr.add_argument('--taxonomy', required=True); cr.add_argument('--inventory', required=True); cr.add_argument('--input', required=True)
     cc = sub.add_parser('comparison-check'); cc.add_argument('--input', required=True); cc.add_argument('--inventory')
@@ -3295,6 +3328,10 @@ def main():
             print(json.dumps([dict(x) for x in db.execute('SELECT * FROM lead WHERE party_id=? AND topic_id=? ORDER BY rowid', (args.party,args.topic))], ensure_ascii=False, indent=2))
         finally: db.close()
     elif args.command == 'publish': print(publish_release(args.workspace, party=args.party, stage=args.stage, refresh=args.refresh))
+    elif args.command == 'practice-check':
+        validate_practice_input(json.loads(Path(args.input).read_text(encoding='utf-8')), args.base_release); print('PRACTICE_INPUT_OK')
+    elif args.command == 'practice-load':
+        load_practice(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8'))); print('PRACTICE_LOAD_OK')
     elif args.command == 'comparison-load':
         inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8')) if args.inventory else None
         load_comparison(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8')), inventory); print('COMPARISON_LOAD_OK')
@@ -3343,6 +3380,13 @@ def main():
         elif args.phase == '3':
             validate_phase_three(release, args.stage)
             print('PHASE3_AUDIT_OK', release)
+        elif args.phase == '4':
+            validate_phase_three(release, 'complete')
+            data = json.loads((DATA / 'releases' / release / 'records.json').read_text(encoding='utf-8'))
+            if data.get('schema_version') != 7 or {'tracer': 0, 'partial': 1, 'complete': 2}[data['practice_contract'][0]['stage']] < {'tracer': 0, 'partial': 1, 'complete': 2}[args.stage]:
+                raise ValueError('İstenen uygulama aşaması yok')
+            validate_practices(data)
+            print('PHASE4_AUDIT_OK', release)
         else: print('AUDIT_OK', release)
     elif args.command == 'serve':
         if args.host != '127.0.0.1': raise ValueError('Sunucu yalnız 127.0.0.1 üzerinde çalışabilir')

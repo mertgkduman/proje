@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 24
+RENDERER_VERSION = 25
 STYLE = Path(__file__).with_name('rapor_v24.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -173,6 +173,9 @@ def render_report(data):
         'pilot-program': 'Parti programı', 'pilot-tuzuk': 'Parti tüzüğü',
     })
     findings = {f['id']: f for f in data['finding']}
+    findings_by_pair = defaultdict(list)
+    for finding in findings.values():
+        findings_by_pair[finding['pair_id']].append(finding)
     acceptance = next((r for r in data.get('review', [])
                        if r['kind'] == 'phase_uat' and r['subject_id'] == 'phase-03'
                        and r['reviewer_kind'] == 'human' and r['result'] == 'accepted'), None)
@@ -405,6 +408,49 @@ def render_report(data):
                 pieces.append('</details>')
         pieces.append('</article>')
 
+    def add_practice_records(party_id, topic_id=None, comparison=False):
+        statements = {s['id']: s for s in data.get('practice_statement', [])}
+        events = {e['id']: e for e in data.get('practice_event', [])}
+        for relation in data.get('practice_relation', []):
+            if relation['party_id'] != party_id or (topic_id is not None and relation['topic_id'] != topic_id):
+                continue
+            statement, event = statements[relation['statement_id']], events[relation['event_id']]
+            event_refs = [e for e in data.get('practice_event_evidence', []) if e['event_id'] == event['id']]
+            target = findings[relation['target_finding_id']]
+            result = findings.get(relation['result_finding_id'])
+            quote = findings[statement['quote_finding_id']]
+            explanation = findings[relation['explanation_finding_id']]
+            prefix = 'comparison-practice-' if comparison else 'party-practice-'
+            other = 'party-practice-' if comparison else 'comparison-practice-'
+            rid = relation['id']
+            pieces.append(f'<article class="record" id="{esc(prefix + rid)}">'
+                          f'<h4>{esc(event["title"])}</h4><p>Hedef: <span class="summary" data-finding-id="{esc(target["id"])}">{esc(target["text"])}</span> '
+                          + ' '.join(citation(x['passage_id']) for x in evidence[target['id']]) + '</p>')
+            if result:
+                pieces.append(f'<p data-finding-id="{esc(result["id"])}">Belgelenmiş sonuç: <span class="summary">{esc(result["text"])}</span> '
+                              + ' '.join(citation(x['passage_id']) for x in event_refs) + '</p>')
+            else:
+                pieces.append('<p>Nihai kongre sonucu bu kaynakta belirtilmemiştir.</p>')
+            for contribution in data.get('practice_contribution', []):
+                if contribution['event_id'] == event['id'] and contribution['party_id'] == party_id:
+                    event_finding = findings[contribution['finding_id']]
+                    pieces.append(f'<p class="summary" data-finding-id="{esc(event_finding["id"])}">{esc(event_finding["text"])} '
+                                  + ' '.join(citation(x['passage_id']) for x in evidence[event_finding['id']]) + '</p>')
+                    for paired in findings_by_pair[event_finding['pair_id']]:
+                        if paired['pair_id'] == event_finding['pair_id'] and paired['provenance'] == 'quote':
+                            cls, quoted = format_finding(paired)
+                            pieces.append(f'<p class="{cls}" data-finding-id="{esc(paired["id"])}">{quoted} ' + ' '.join(citation(x['passage_id']) for x in evidence[paired['id']]) + '</p>')
+            cls, text = format_finding(quote)
+            pieces.append(f'<p class="{cls}" data-finding-id="{esc(quote["id"])}">{text} ' + ' '.join(citation(x['passage_id']) for x in evidence[quote['id']]) + '</p>')
+            pieces.append(f'<p class="summary" data-finding-id="{esc(explanation["id"])}">{esc(explanation["text"])} ' + ' '.join(citation(x['passage_id']) for x in evidence[explanation['id']]) + '</p>')
+            pieces.append(f'<p>{time_tag(event["event_at"])} · {esc(relation["authority_context"])} '
+                          f'<a href="#{fragment(other + rid)}">Diğer görünüm</a> · '
+                          f'<a href="#{fragment("comparison-" + statement["comparison_row_id"])}">İlgili konu</a></p>')
+            pieces.append('<details><summary>Kaynak ve kapsam ayrıntıları</summary>')
+            for ref in event_refs:
+                pieces.append(f'<p>{esc(ref["concrete_basis"])} {esc(ref["limitation"])} {citation(ref["passage_id"])}</p>')
+            pieces.append(f'<p>{esc(relation["comparability_reason"])} {esc(relation["temporal_context"])} {esc(relation["uncertainty_reason"])}</p></details></article>')
+
     def add_matches(matches, candidates):
         if matches:
             actions = {a['finding_id']: a for a in data['action']}
@@ -463,6 +509,10 @@ def render_report(data):
                 rows = [f for f in party_findings if f['heading'] == heading]
                 previous_rows=[f for f in rows if f['id'] in legacy_findings]
                 primary_rows=[f for f in rows if f['id'] not in legacy_findings]
+                if key == 'soylem-uygulama' and data.get('practice_relation'):
+                    practice_ids = {value for table in ('practice_statement', 'practice_relation', 'practice_contribution') for item in data.get(table, []) for name, value in item.items() if name.endswith('finding_id') and value}
+                    pairs = {findings[fid]['pair_id'] for fid in practice_ids if fid in findings}
+                    primary_rows = [f for f in primary_rows if f['pair_id'] not in pairs]
                 card_pairs={findings[f['finding_id']]['pair_id'] for f in dossier_fields if f['finding_id'] in findings}
                 card_rows=[f for f in primary_rows if f['pair_id'] in card_pairs or f['epistemic_type']=='registry'] if key=='kurulus' else []
                 primary_rows=[f for f in primary_rows if f not in card_rows]
@@ -491,6 +541,7 @@ def render_report(data):
                     add_findings(previous_rows)
                     pieces.append('</details>')
                 if key == 'soylem-uygulama':
+                    add_practice_records(pid)
                     add_matches(matches, candidates)
                 if key == 'finansman':
                     for f in finances:
@@ -567,6 +618,7 @@ def render_report(data):
                         sides = ' · '.join(f'<a href="#{fragment("comparison-" + side["row_id"])}">{esc(parties[side["party_id"]]["legal_name"])}</a>' for side in decision['sides'])
                         pieces.append(f'<p class="metadata">İddianın dayanakları: {sides}</p>')
         for pid in PRESENTATION_ORDER:
+            add_practice_records(pid, topic['topic_id'], comparison=True)
             for row in data['comparison_row']:
                 if (row['topic_id'],row['taxonomy_version'],row['party_id']) == (topic['topic_id'],topic['taxonomy_version'],pid):
                     add_comparison_row(row)
