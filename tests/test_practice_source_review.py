@@ -169,6 +169,26 @@ class PracticeSourceReview(unittest.TestCase):
         with self.assertRaises(ValueError):
             uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second])
 
+    def test_partial_pending_only_for_inherited_review(self):
+        selection = dict(practice_event=self.data['practice_event'])
+        first = dict(self.review, subject_kind='practice_event', subject_id='e')
+        self.assertTrue(uygulamalar.validate_practice_source_review(self.data, [first], selection))
+        self.data['document_version'].append(dict(id='v2', document_id='d'))
+        self.data['passage'].append(dict(id='p3', version_id='v2'))
+        self.data['practice_event_evidence'].append(dict(event_id='e', passage_id='p3', stage='result'))
+        self.assertTrue(callable(getattr(uygulamalar, 'practice_source_review_pending', None)),
+                        'partial merge must expose pending inherited coverage')
+        pending = uygulamalar.practice_source_review_pending(self.data, [first], [], selection)
+        self.assertEqual(pending, [dict(subject_kind='practice_event', subject_id='e', state='pending')])
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[])
+        second = dict(first, revision=2, reviewed_at='2026-11-19T12:00:00+00:00',
+                      source_version_ids='["v", "v2"]', passage_ids='["p1", "p3"]',
+                      supported_claim='The expanded technical sources are both described.',
+                      reason='Both technical source sections were inspected.')
+        self.assertEqual(uygulamalar.practice_source_review_pending(self.data, [first], [second], selection), [])
+        self.assertTrue(uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second]))
+
     def test_revision_marker_and_history_cannot_be_removed_or_rewritten(self):
         revision = dict(self.review, revision=2, reviewed_at='2026-11-19T12:00:00+00:00')
         base = dict(practice_source_review_contract=[dict(version=1)], practice_source_review=[self.review],
