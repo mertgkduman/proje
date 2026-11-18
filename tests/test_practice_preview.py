@@ -17,6 +17,109 @@ import uygulamalar
 
 
 class PracticePreview(unittest.TestCase):
+    def test_source_owner_cannot_be_forged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            db = sqlite3.connect(root / 'records.sqlite3')
+            db.executescript("CREATE TABLE document(id TEXT PRIMARY KEY,party_id TEXT); INSERT INTO document VALUES('foreign','tip');")
+            db.close()
+            scope = []
+            package = dict(base_release='base', contract_version=1, stage='tracer', taxonomy_version=4,
+                           party_id='yeni-parti', scope_inventory=scope,
+                           entries=[dict(kind='document_version', values=dict(id='foreign-version', document_id='foreign'))],
+                           practice_records=dict(practice_contract=[dict(stage='tracer', inventory_digest=uygulamalar._digest(scope))]))
+            with patch('uygulamalar.migrate_practice_workspace'):
+                with self.assertRaisesRegex(ValueError, 'parti sahibine'):
+                    uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
+
+    def test_private_capture_rejects_root_escape_and_passive_script(self):
+        import arsiv_gorunum
+        import io
+        from email.message import Message
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / 'root'
+            root.mkdir()
+            (root / 'escape').symlink_to(Path(tmp), target_is_directory=True)
+            with self.assertRaises(ValueError):
+                arsiv.capture_source('https://example.org/', 'html', root / 'escape/out', storage_root=root)
+            values = dict(sha256='a' * 64, mime='text/html', original_path='objects/' + 'a' * 64 + '/../../escape')
+            with self.assertRaises(ValueError):
+                uygulamalar._validate_new_source_path(values, 'original_path')
+            raw = b'<p>technical</p>'
+            view = arsiv_gorunum.build_view(raw, 'https://example.org/', root, fetch_assets=False)
+            manifest_path = root / view['manifest_path']
+            manifest = json.loads(manifest_path.read_text())
+            (root / view['index_path']).write_text('<script>bad()</script>')
+            manifest['files']['index.html'] = arsiv.sha(root / view['index_path'])
+            manifest_path.write_text(json.dumps(manifest))
+            view['manifest_sha256'] = arsiv.sha(manifest_path)
+            with self.assertRaises(ValueError):
+                arsiv_gorunum.validate_view(root, view)
+
+    def test_new_source_end_to_end(self):
+        import io
+        from email.message import Message
+        import arsiv_gorunum
+        raw = b'<html><body>Technical fixture passage<script>bad()</script></body></html>'
+        response = io.BytesIO(raw)
+        response.headers = Message()
+        response.headers['Content-Type'] = 'text/html; charset=utf-8'
+        response.geturl = lambda: 'https://example.org/source'
+        package = json.loads((arsiv.DATA / 'practices/04-coverage-tracer.json').read_text())
+        inventory = json.loads((arsiv.DATA / 'practices/04-inventory.json').read_text())
+        current_before = arsiv.sha(arsiv.DATA / 'current.json')
+        db_path = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        db_before = arsiv.sha(db_path)
+        self.assertFalse((arsiv.DATA / '.write.lock').exists())
+        with tempfile.TemporaryDirectory() as tmp, patch('arsiv.urllib.request.urlopen', return_value=response):
+            root = Path(tmp)
+            source_root = root / 'practices/sources/yeni-parti'
+            source_root.mkdir(parents=True)
+            try:
+                capture = arsiv.capture_source('https://example.org/source', 'html', storage_root=source_root)
+            except TypeError as exc:
+                self.fail('new-source fixture requires private capture: ' + str(exc))
+            view = arsiv_gorunum.build_view(raw, capture['final_url'], source_root, fetch_assets=False)
+            self.assertNotIn('<script', (source_root / view['index_path']).read_text())
+            capture.pop('http_charset', None)
+            version = dict(capture, id='technical-v', document_id='technical-d', document_date=None,
+                           version_label=None, date_precision='unknown', date_unknown_reason='technical fixture')
+            view['version_id'] = 'technical-v'
+            package['entries'] = [
+                dict(kind='document', values=dict(id='technical-d', party_id='yeni-parti', title='Technical fixture', source_kind='news')),
+                dict(kind='document_version', values=version),
+                dict(kind='archive_view', values=view),
+                dict(kind='passage', values=dict(id='technical-p', version_id='technical-v', exact='Technical fixture passage', section='Technical fixture')),
+                dict(kind='source_attribution', values=dict(version_id='technical-v', kind='journalism', publisher='Technical publisher', public_url=capture['final_url'], basis='Technical fixture', date_precision='unknown')),
+            ]
+            records = package['practice_records']
+            evidence = dict(records['practice_event_evidence'][0], passage_id='technical-p', concrete_basis='Technical fixture passage')
+            records['practice_event_evidence'].append(evidence)
+            if 'practice_evidence_assessment' in records:
+                original = records['practice_evidence_assessment'][0]
+                records['practice_evidence_assessment'].append(dict(original, passage_id='technical-p'))
+            out = root / 'preview'
+            uygulamalar.render_practice_preview(package, out, inventory, source_root=source_root)
+            release = next((out / 'releases').iterdir())
+            data = json.loads((release / 'records.json').read_text())
+            self.assertEqual(data, arsiv.export_db(release / 'records.sqlite3', release.name, storage_root=out))
+            self.assertEqual(arsiv.audit_release(release.name, storage_root=out), release.name)
+            self.assertTrue((out / version['original_path']).is_file())
+            self.assertTrue((out / view['index_path']).is_file())
+            report = (release / 'index.html').read_text()
+            self.assertGreaterEqual(report.count('technical-p'), 2)
+            self.assertIn('../../' + version['original_path'], report)
+            self.assertIn('../../' + view['index_path'], report)
+            (source_root / version['original_path']).write_bytes(raw + b'changed')
+            rejected = root / 'rejected'
+            with self.assertRaises(ValueError):
+                uygulamalar.render_practice_preview(package, rejected, inventory, source_root=source_root)
+            self.assertFalse(rejected.exists())
+            self.assertTrue((out / 'releases' / release.name / 'index.html').is_file())
+        self.assertEqual(arsiv.sha(arsiv.DATA / 'current.json'), current_before)
+        self.assertEqual(arsiv.sha(db_path), db_before)
+        self.assertFalse((arsiv.DATA / '.write.lock').exists())
+
     def test_party_source_capture_root_api(self):
         import io
         from email.message import Message
