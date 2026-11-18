@@ -21,8 +21,8 @@
     "pid": 173310,
     "supervisor_pid": 172374,
     "log_path": "/tmp/gsd-phase04-wave1-tests.log",
-    "terminal_session": "lost after daemon restart; reconcile log and process before any rerun",
-    "result": "pending"
+    "terminal_session": "lost after daemon restart; supervisor and children ended at the 10800-second boundary, no exit sidecar available",
+    "result": "inconclusive: timeout or interruption; two test failure lines recorded, no final summary or tracebacks"
   },
   "wave_repair": {
     "status": "in_progress",
@@ -35,10 +35,11 @@
     "historical_renderer_checks": "renderer 24 and 25 archived HTML byte reproduction passed",
     "practice_legacy": "6 tests passed",
     "targeted_log": "/tmp/gsd-phase04-repair-targeted.log",
-    "targeted_result": "running; process loaded an early test typo, which has since been fixed and independently retested",
+    "targeted_result": "source-backed tracer and taxonomy regression passed; combined run interrupted after known test typo; corrected renderer tests and dossier/tab browser checks passed separately",
+    "workspace_preparation": {"pid": 1251605, "log": "/tmp/gsd-phase04-repair-workspace.log", "exit_sidecar": "/tmp/gsd-phase04-repair-workspace.exit", "status": "running; locked read/copy of unchanged current"},
     "new_release": null,
-    "final_full_gate": "not started; original suite and release refresh must finish first"
+    "final_full_gate": "not started; release refresh must finish first"
   },
   "next_plan": "04-02",
-  "resume_rule": "Reconcile the existing test process and log before dispatching the next wave; do not duplicate this running suite. A timeout is inconclusive and must never be recorded as a pass."
+  "resume_rule": "Finish the local repair release and required audits, then run the final configured full gate once with durable log and exit sidecar. A timeout is inconclusive and must never be recorded as a pass."
 }
