@@ -8,8 +8,8 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 26
-STYLE = Path(__file__).with_name('rapor_v24.css').read_text(encoding='utf-8')
+RENDERER_VERSION = 27
+STYLE = Path(__file__).with_name('rapor_v25.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
     ('tuzuk', 'Tüzük'),
@@ -408,16 +408,46 @@ def render_report(data):
                 pieces.append('</details>')
         pieces.append('</article>')
 
+    statements = {s['id']: s for s in data.get('practice_statement', [])}
+    events = {e['id']: e for e in data.get('practice_event', [])}
+    event_evidence = {}
+    event_contributions = {}
+    event_relations = {}
+    relations_by_party_topic = {}
+    unmatched_by_party_topic = {}
+    practice_scopes = {s['id']: s for s in data.get('practice_scope', [])}
+    practice_attempts = {}
+    missing_by_attempt = {}
+    for missing in data.get('missing', []):
+        missing_by_attempt.setdefault((missing['attempt_id'], missing['party_id'], missing['topic_id']), []).append(missing)
+    original_attempts = {a['id']: a for a in data.get('attempt', [])}
+    for attempt in data.get('practice_attempt', []):
+        practice_attempts.setdefault(attempt['scope_id'], []).append(attempt)
+    for item in data.get('practice_event_evidence', []):
+        event_evidence.setdefault(item['event_id'], []).append(item)
+    for item in data.get('practice_contribution', []):
+        event_contributions.setdefault(item['event_id'], []).append(item)
+    for item in data.get('practice_relation', []):
+        event_relations.setdefault(item['event_id'], []).append(item)
+        statement = statements[item['statement_id']]
+        relations_by_party_topic.setdefault((item['party_id'], item['topic_id'], statement['taxonomy_version']), []).append(item)
+    for item in data.get('practice_unmatched', []):
+        scope = practice_scopes[item['statement_scope_id']]
+        unmatched_by_party_topic.setdefault((item['party_id'], item['topic_id'], scope['taxonomy_version']), []).append(item)
+
     def add_practice_records(party_id, topic_id=None, taxonomy_version=None, comparison=False):
-        statements = {s['id']: s for s in data.get('practice_statement', [])}
-        events = {e['id']: e for e in data.get('practice_event', [])}
-        for relation in data.get('practice_relation', []):
+        relations = sorted((r for (pid, tid, ver), items in relations_by_party_topic.items()
+                            if pid == party_id and (topic_id is None or (tid, ver) == (topic_id, taxonomy_version)) for r in items), key=lambda r: (
+            r['statement_id'], events[r['event_id']]['event_at'] is None,
+            events[r['event_id']]['event_at'] or '', r['id']))
+        shown_statements = set()
+        for relation in relations:
             if relation['party_id'] != party_id or (topic_id is not None and relation['topic_id'] != topic_id):
                 continue
             statement, event = statements[relation['statement_id']], events[relation['event_id']]
             if taxonomy_version is not None and statement['taxonomy_version'] != taxonomy_version:
                 continue
-            event_refs = [e for e in data.get('practice_event_evidence', []) if e['event_id'] == event['id']]
+            event_refs = event_evidence.get(event['id'], [])
             target = findings[relation['target_finding_id']]
             result = findings.get(relation['result_finding_id'])
             quote = findings[statement['quote_finding_id']]
@@ -425,15 +455,16 @@ def render_report(data):
             prefix = 'comparison-practice-' if comparison else 'party-practice-'
             other = 'party-practice-' if comparison else 'comparison-practice-'
             rid = relation['id']
-            pieces.append(f'<article class="record" id="{esc(prefix + rid)}">'
-                          f'<h4>{esc(event["title"])}</h4><p>Hedef: <span class="summary" data-finding-id="{esc(target["id"])}">{esc(target["text"])}</span> '
-                          + ' '.join(named_citation(x['passage_id']) for x in evidence[target['id']]) + '</p>')
+            pieces.append(f'<article class="record" id="{esc(prefix + rid)}"><h4>{esc(event["title"])}</h4>')
+            if statement['id'] not in shown_statements:
+                pieces.append(f'<p>Hedef: <span class="summary" data-finding-id="{esc(target["id"])}">{esc(target["text"])}</span> '
+                              + ' '.join(named_citation(x['passage_id']) for x in evidence[target['id']]) + '</p>')
             if result:
                 pieces.append(f'<p data-finding-id="{esc(result["id"])}">Belgelenmiş sonuç: <span class="summary">{esc(result["text"])}</span> '
                               + ' '.join(named_citation(x['passage_id']) for x in event_refs) + '</p>')
             else:
-                pieces.append('<p>Nihai kongre sonucu bu kaynakta belirtilmemiştir.</p>')
-            for contribution in data.get('practice_contribution', []):
+                pieces.append('<p>Belgelenmiş sonuç: ' + esc(relation['uncertainty_reason']) + '</p>')
+            for contribution in event_contributions.get(event['id'], []):
                 if contribution['event_id'] == event['id'] and contribution['party_id'] == party_id:
                     event_finding = findings[contribution['finding_id']]
                     pieces.append(f'<p class="summary" data-finding-id="{esc(event_finding["id"])}">{esc(event_finding["text"])} '
@@ -442,16 +473,45 @@ def render_report(data):
                         if paired['pair_id'] == event_finding['pair_id'] and paired['provenance'] == 'quote':
                             cls, quoted = format_finding(paired)
                             pieces.append(f'<p class="{cls}" data-finding-id="{esc(paired["id"])}">{quoted} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[paired['id']]) + '</p>')
-            cls, text = format_finding(quote)
-            pieces.append(f'<p class="{cls}" data-finding-id="{esc(quote["id"])}">{text} {time_tag(statement["statement_at"])} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[quote['id']]) + '</p>')
+            if statement['id'] not in shown_statements:
+                cls, text = format_finding(quote)
+                pieces.append(f'<p class="{cls}" data-finding-id="{esc(quote["id"])}">{text} {time_tag(statement["statement_at"])} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[quote['id']]) + '</p>')
+                shown_statements.add(statement['id'])
             pieces.append(f'<p class="summary" data-finding-id="{esc(explanation["id"])}">{esc(explanation["text"])} ' + ' '.join(citation(x['passage_id']) for x in evidence[explanation['id']]) + '</p>')
             pieces.append(f'<p>{time_tag(event["event_at"])} · {esc(relation["authority_context"])} '
                           f'<a href="#{fragment(other + rid)}">Diğer görünüm</a> · '
                           f'<a href="#{fragment("comparison-" + statement["comparison_row_id"])}">İlgili konu</a></p>')
+            if not event['event_at']:
+                pieces.append(f'<p>Tarih belirsiz: {esc(event["date_unknown_reason"])}</p>')
+            for related in event_relations.get(event['id'], []):
+                if related['id'] != rid:
+                    pieces.append(f'<p><a href="#{fragment(prefix + related["id"])}">Aynı olayın diğer ilişkisi: {esc(related["party_id"])} · {esc(related["topic_id"])}</a></p>')
             pieces.append('<details><summary>Kaynak ve kapsam ayrıntıları</summary>')
             for ref in event_refs:
                 pieces.append(f'<p>{esc(ref["concrete_basis"])} {esc(ref["limitation"])} {citation(ref["passage_id"])}</p>')
             pieces.append(f'<p>{esc(relation["comparability_reason"])} {esc(relation["temporal_context"])} {esc(relation["uncertainty_reason"])}</p></details></article>')
+        for (pid, tid, ver), items in unmatched_by_party_topic.items():
+            if pid != party_id or (topic_id is not None and (tid, ver) != (topic_id, taxonomy_version)):
+                continue
+            for item in items:
+                event = events[item['event_id']]
+                prefix = 'comparison-unmatched-' if comparison else 'party-unmatched-'
+                other = 'party-unmatched-' if comparison else 'comparison-unmatched-'
+                state = 'Henüz incelenmedi'
+                if item['statement_search_state'] == 'missing':
+                    allowed = {'Bulunamadı': ('search', 'no_result'), 'Erişilemedi': ('access', 'failure'), 'Doğrulanamadı': ('verification', 'inconclusive')}
+                    missing = next(m for a in practice_attempts[item['statement_scope_id']]
+                                   if (original := original_attempts.get(a['id'])) and
+                                   all(original[k] == a[k] for k in ('query', 'attempted_at', 'result', 'reason', 'source_version_id')) and
+                                   (original['party_id'], original['topic_id']) == (item['party_id'], item['topic_id'])
+                                   for m in missing_by_attempt.get((a['id'], item['party_id'], item['topic_id']), [])
+                                   if m['heading'] == original['heading'] and m['reason'] and
+                                   allowed.get(m['status']) == (original['type'], original['result']))
+                    state = missing['status'] + ' · ' + missing['reason']
+                pieces.append(f'<article class="record" id="{esc(prefix + item["id"])}"><h4>{esc(event["title"])}</h4><p>{time_tag(event["event_at"])} · {esc(state)} · {esc(item["reason"])} <a href="#{fragment(other + item["id"])}">Diğer görünüm</a></p>')
+                if not event['event_at']:
+                    pieces.append(f'<p>Tarih belirsiz: {esc(event["date_unknown_reason"])}</p>')
+                pieces.append('<p>' + ' '.join(named_citation(ref['passage_id']) for ref in event_evidence.get(event['id'], [])) + '</p></article>')
 
     def add_matches(matches, candidates):
         if matches:

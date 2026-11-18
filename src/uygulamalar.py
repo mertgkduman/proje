@@ -15,6 +15,14 @@ PRACTICE_TABLES = {
     'practice_source_party': 'version_id TEXT NOT NULL REFERENCES document_version(id), party_id TEXT NOT NULL REFERENCES party(id), passage_id TEXT NOT NULL REFERENCES passage(id), scope_reason TEXT NOT NULL, PRIMARY KEY(version_id,party_id,passage_id)',
 }
 
+# Optional extension: absence preserves the original schema-7 serialization.
+PRACTICE_VARIANT_TABLES = {
+    'practice_variant_contract': 'version INTEGER PRIMARY KEY, inventory_json TEXT NOT NULL',
+    'practice_scope': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, period_start TEXT NOT NULL, cutoff_at TEXT NOT NULL, research_kind TEXT NOT NULL, state TEXT NOT NULL, boundary_reason TEXT NOT NULL, FOREIGN KEY(topic_id,taxonomy_version) REFERENCES comparison_topic(topic_id,taxonomy_version)',
+    'practice_attempt': 'id TEXT PRIMARY KEY, scope_id TEXT NOT NULL REFERENCES practice_scope(id), attempted_at TEXT NOT NULL, query TEXT NOT NULL, url TEXT, result TEXT NOT NULL, reason TEXT NOT NULL, source_version_id TEXT REFERENCES document_version(id)',
+    'practice_unmatched': 'id TEXT PRIMARY KEY, event_id TEXT NOT NULL REFERENCES practice_event(id), party_id TEXT NOT NULL REFERENCES party(id), topic_id TEXT NOT NULL, statement_scope_id TEXT NOT NULL REFERENCES practice_scope(id), statement_search_state TEXT NOT NULL, reason TEXT NOT NULL',
+}
+
 
 def _digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
@@ -59,6 +67,53 @@ def validate_practices(data):
     events = {x['id']: x for x in data['practice_event']}
     statements = {x['id']: x for x in data['practice_statement']}
     rows = {x['id']: x for x in data['comparison_row']}
+    variant = set(data).intersection(PRACTICE_VARIANT_TABLES)
+    if variant:
+        marker = data.get('practice_variant_contract', [])
+        if variant != set(PRACTICE_VARIANT_TABLES) or len(marker) != 1 or marker[0]['version'] != 1:
+            raise ValueError('Uygulama varyant sözleşmesi eksik veya geçersiz')
+        try:
+            inventory = json.loads(marker[0]['inventory_json'])
+        except (ValueError, TypeError):
+            raise ValueError('Kapsam envanteri geçersiz')
+        if not isinstance(inventory, list) or _digest(inventory) != c[0]['inventory_digest']:
+            raise ValueError('Kapsam envanteri özeti uyuşmuyor')
+        scopes = {s['id']: s for s in data['practice_scope']}
+        for s in scopes.values():
+            if (s['research_kind'] != 'statement' or s['state'] not in ('not_researched', 'open', 'closed') or not s['boundary_reason'] or
+                    not any((r['party_id'], r['topic_id'], r['taxonomy_version']) == (s['party_id'], s['topic_id'], s['taxonomy_version']) for r in data['comparison_row']) or
+                    not any(all(cell.get(k) == s[k] for k in ('party_id', 'topic_id', 'taxonomy_version', 'period_start', 'cutoff_at', 'research_kind')) and cell.get('scope_id') == s['id'] for cell in inventory)):
+                raise ValueError('Söylem araştırma kapsamı geçersiz')
+            aware_time(s['cutoff_at'])
+            founding = next((i['valid_from'] for i in data['identity_observation'] if i['entity_id'] == s['party_id'] and i['entity_kind'] == 'party'), None)
+            cutoff = max(data['method'], key=lambda m: m['version'])['cutoff_at']
+            if not founding or validate_dates(s['period_start'], 'day', founding, cutoff) == 'outside' or aware_time(s['cutoff_at']) > aware_time(cutoff) or s['period_start'] > s['cutoff_at'][:10]:
+                raise ValueError('Söylem kapsam dönemi geçersiz')
+        for a in data['practice_attempt']:
+            if a['scope_id'] not in scopes or not all(a[k] for k in ('query', 'result', 'reason')):
+                raise ValueError('Söylem arama girişimi geçersiz')
+            aware_time(a['attempted_at'])
+        for u in data['practice_unmatched']:
+            s = scopes.get(u['statement_scope_id'])
+            if (not s or u['event_id'] not in events or (u['party_id'], u['topic_id']) != (s['party_id'], s['topic_id']) or not u['reason']):
+                raise ValueError('Söylemsiz olay kapsamı geçersiz')
+            if any((r['event_id'], r['party_id'], r['topic_id']) == (u['event_id'], u['party_id'], u['topic_id']) for r in data['practice_relation']):
+                raise ValueError('İlişkili olay aynı kapsamda söylemsiz olamaz')
+            event = events[u['event_id']]
+            if validate_dates(event['event_at'], event['date_precision'], s['period_start'], s['cutoff_at'], event['date_unknown_reason']) == 'outside':
+                raise ValueError('Söylemsiz olay araştırma döneminin dışında')
+            attempts = [a for a in data['practice_attempt'] if a['scope_id'] == s['id']]
+            if u['statement_search_state'] == 'not_researched':
+                if s['state'] != 'not_researched' or attempts:
+                    raise ValueError('İncelenmemiş kapsamda arama girişimi olamaz')
+            elif u['statement_search_state'] == 'missing':
+                linked = {a['id']: a for a in data.get('attempt', [])}
+                missing = data.get('missing', [])
+                allowed = {'Bulunamadı': ('search', 'no_result'), 'Erişilemedi': ('access', 'failure'), 'Doğrulanamadı': ('verification', 'inconclusive')}
+                if s['state'] == 'not_researched' or not attempts or not any(a['id'] in linked and (linked[a['id']]['party_id'], linked[a['id']]['topic_id']) == (s['party_id'], s['topic_id']) and all(linked[a['id']][k] == a[k] for k in ('query', 'attempted_at', 'result', 'reason', 'source_version_id')) and any(m['attempt_id'] == a['id'] and (m['party_id'], m['topic_id'], m['heading']) == (s['party_id'], s['topic_id'], linked[a['id']]['heading']) and allowed.get(m['status']) == (linked[a['id']]['type'], linked[a['id']]['result']) and m['reason'] for m in missing) for a in attempts):
+                    raise ValueError('Eksik söylem için gerçek arama gerekli')
+            else:
+                raise ValueError('Söylem arama durumu geçersiz')
     if data.get('comparison_completion_revision'):
         selected = json.loads(max(data['comparison_completion_revision'], key=lambda x: x['epoch'])['selection'])
         selected_rows = {x['id'] for x in selected['rows']}
@@ -71,6 +126,14 @@ def validate_practices(data):
     for version, party, passage in party_sources:
         if passage not in passages or passages[passage]['version_id'] != version or party not in {p['id'] for p in data['party']}:
             raise ValueError('Kaynak parti kapsamı geçersiz')
+    for item in data.get('practice_unmatched', []):
+        if not any(e['event_id'] == item['event_id'] and (passages[e['passage_id']]['version_id'], item['party_id'], e['passage_id']) in party_sources for e in data['practice_event_evidence'] if e['passage_id'] in passages):
+            raise ValueError('Söylemsiz olay için parti kapsamlı kaynak gerekli')
+        founding = next((i['valid_from'] for i in data['identity_observation'] if i['entity_id'] == item['party_id'] and i['entity_kind'] == 'party'), None)
+        event = events[item['event_id']]
+        cutoff = max(data['method'], key=lambda m: m['version'])['cutoff_at']
+        if not founding or validate_dates(event['event_at'], event['date_precision'], founding, cutoff, event['date_unknown_reason']) == 'outside':
+            raise ValueError('Söylemsiz olay tarihi kapsam dışında')
     def check_finding(fid, party):
         f = findings.get(fid)
         refs = [x['passage_id'] for x in evidence if x['finding_id'] == fid]
@@ -182,10 +245,19 @@ def validate_practices(data):
 
 def practice_manifest_fields(data):
     c = data['practice_contract'][0]
-    return dict(practice_validation_version=c['version'], practice_stage=c['stage'], practice_inventory_sha256=c['inventory_digest'], practice_selection_sha256=_digest({k: data[k] for k in PRACTICE_TABLES}))
+    result = dict(practice_validation_version=c['version'], practice_stage=c['stage'], practice_inventory_sha256=c['inventory_digest'], practice_selection_sha256=_digest({k: data[k] for k in PRACTICE_TABLES}))
+    if 'practice_variant_contract' in data:
+        result['practice_variant_sha256'] = _digest({k: data[k] for k in PRACTICE_VARIANT_TABLES})
+    return result
 
 
 def validate_practice_descent(base, candidate):
+    if 'practice_variant_contract' in base:
+        if any(k not in candidate for k in PRACTICE_VARIANT_TABLES):
+            raise ValueError('Uygulama varyant sözleşmesi kaldırılamaz')
+        for name in PRACTICE_VARIANT_TABLES:
+            if any(row not in candidate[name] for row in base[name]):
+                raise ValueError('Önceki uygulama varyantı değiştirilemez')
     if base.get('practice_contract'):
         if not candidate.get('practice_contract'):
             raise ValueError('Uygulama sözleşmesi kaldırılamaz')
@@ -242,16 +314,24 @@ def _load_practice_copy(work, payload, base):
                 raise ValueError('Bilinmeyen alan')
             db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
         records = payload['practice_records']
-        if set(records) != set(PRACTICE_TABLES):
+        variant = set(records).intersection(PRACTICE_VARIANT_TABLES)
+        if variant and variant != set(PRACTICE_VARIANT_TABLES):
+            raise ValueError('Uygulama varyant tabloları eksik')
+        tables = dict(PRACTICE_TABLES)
+        if variant:
+            tables.update(PRACTICE_VARIANT_TABLES)
+            for name, definition in PRACTICE_VARIANT_TABLES.items():
+                db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        if set(records) != set(tables):
             raise ValueError('Uygulama tabloları eksik')
-        for kind in PRACTICE_TABLES:
+        for kind in tables:
             for values in records[kind]:
                 cols = {x['name'] for x in db.execute(f'PRAGMA table_info({kind})')}
                 if set(values) != cols:
                     raise ValueError('Uygulama alanları uyuşmuyor')
                 db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
         # Validate a transaction-consistent snapshot before the commit.
-        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(PRACTICE_TABLES) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'action', 'match', 'match_candidate']}
+        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'action', 'match', 'match_candidate', 'attempt', 'missing']}
         validate_practices(data)
         if db.execute('PRAGMA foreign_key_check').fetchall() or db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
             raise ValueError('Uygulama bütünlük hatası')
