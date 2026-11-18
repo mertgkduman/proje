@@ -129,8 +129,20 @@ class DossierTracer(unittest.TestCase):
         self.assertIn('id="version-history-test-version-two"', report)
         self.assertIn('Eski sürüm', report)
         self.assertIn('Yeni sürüm', report)
-        import re
-        ids = re.findall(r'\bid="([^"]+)"', report)
+        from html.parser import HTMLParser
+
+        class IdCollector(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.ids = []
+
+            def handle_starttag(self, tag, attrs):
+                self.ids.extend(value for name, value in attrs if name == 'id')
+
+        # Finding references repeat across views; only actual DOM ids are unique.
+        parser = IdCollector()
+        parser.feed(report)
+        ids = parser.ids
         self.assertEqual(len(ids), len(set(ids)))
 
     def test_archived_tip_registry_foundation_has_party_contract(self):

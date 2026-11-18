@@ -182,7 +182,7 @@ document.body.dataset.mobileChecks=checks.join(',');document.body.dataset.mobile
         self.assertIn('role="tablist"', report)
         self.assertEqual(re.findall(r'role="tab" id="tab-([^"]+)"', report),
                          ['yeni-parti', 'tip', 'dem', 'iyi', 'yeni-yol', 'dbp',
-                          'emep', 'saadet', 'demokrat', 'comparison'])
+                          'emep', 'saadet', 'demokrat', 'comparison', 'phase-03-verification'])
         self.assertIn('id="comparison-summary"', report)
         for party in data['scope_party']:
             self.assertIn('id="party-' + party['party_id'] + '"', report)

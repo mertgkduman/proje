@@ -95,6 +95,23 @@ class PracticeTracer(unittest.TestCase):
         actual = arsiv.render_comparison_snapshot(data, arsiv.render_v24_report).encode('utf-8')
         self.assertEqual(actual, (folder / 'index.html').read_bytes())
 
+    def test_historical_taxonomies_do_not_duplicate_practice_cards(self):
+        folder = arsiv.DATA / 'releases' / '53b24e6740104cb5be5d3419491bd735'
+        data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+        versions = {row['taxonomy_version'] for row in data['comparison_topic']
+                    if row['topic_id'] == 'organ-secim-yontemi'}
+        self.assertGreaterEqual(len(versions), 3)
+        report = arsiv.render_report(data)
+        for view in ('party', 'comparison'):
+            self.assertEqual(report.count(f'id="{view}-practice-tracer-relation-id"'), 1)
+
+    def test_renderer_25_reproduces_archived_bytes(self):
+        folder = arsiv.DATA / 'releases' / '53b24e6740104cb5be5d3419491bd735'
+        data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+        from rapor_v25 import render_report
+        actual = arsiv.render_comparison_snapshot(data, render_report).encode(utf-8)
+        self.assertEqual(actual, (folder / 'index.html').read_bytes())
+
     def test_real_archived_event_reaches_both_views(self):
         base = '9003e475ee5d49b29a1310c0bfe2007d'
         folder = arsiv.DATA / 'releases' / base
