@@ -24,8 +24,9 @@ def active_policy(db):
     return dict(row) if row else None
 
 
-def check_attribution(db, value):
+def check_attribution(db, value, *, storage_root=None):
     from arsiv import safe_url, safe_path, DATA, html_source_text
+    storage_root = DATA if storage_root is None else storage_root
     v = db.execute('SELECT v.*,d.source_kind,d.party_id,p.legal_name FROM document_version v JOIN document d ON d.id=v.document_id JOIN party p ON p.id=d.party_id WHERE v.id=?', (value.get('version_id'),)).fetchone()
     if not v or value.get('kind') not in KINDS or v['source_kind'] not in KINDS[value['kind']]:
         raise ValueError('Kaynak türü ve atıf uyuşmuyor')
@@ -43,7 +44,7 @@ def check_attribution(db, value):
     if value['kind'] == 'social_publication' and (not (value.get('author') or value.get('social_handle')) or not date):
         raise ValueError('Sosyal paylaşım için hesap/yazar, tarih ve kalıcı adres gerekli')
     if value['kind'] == 'party_publication':
-        raw = safe_path(DATA, v['original_path']).read_bytes()
+        raw = safe_path(storage_root, v['original_path']).read_bytes()
         text = folded(html_source_text(raw))
         publisher_present = folded(value['publisher']) in text
         # A compressed PDF can identify its publisher in its own text. An
@@ -51,7 +52,7 @@ def check_attribution(db, value):
         # attributed party publication (D-13).
         if not publisher_present and raw.startswith(b'%PDF-'):
             from arsiv import pdf_page_exists, pdf_page_text
-            path = safe_path(DATA, v['original_path'])
+            path = safe_path(storage_root, v['original_path'])
             page = 0
             while pdf_page_exists(path, page):
                 try:
@@ -66,7 +67,7 @@ def check_attribution(db, value):
         if not publisher_present and (raw.startswith(b'%PDF-') or v['mime'] == 'text/html'):
             host = urlsplit(v['final_url']).hostname
             for h in db.execute("SELECT v.original_path,v.final_url,a.publisher FROM document_version v JOIN document d ON d.id=v.document_id JOIN source_attribution a ON a.version_id=v.id WHERE d.party_id=? AND a.kind='party_publication' AND v.mime='text/html'", (v['party_id'],)):
-                if urlsplit(h['final_url']).hostname == host and folded(h['publisher']) == folded(value['publisher']) and folded(value['publisher']) in folded(html_source_text(safe_path(DATA,h['original_path']).read_bytes())):
+                if urlsplit(h['final_url']).hostname == host and folded(h['publisher']) == folded(value['publisher']) and folded(value['publisher']) in folded(html_source_text(safe_path(storage_root,h['original_path']).read_bytes())):
                     publisher_present = True
                     break
         if folded(value['publisher']) != folded(v['legal_name']) or not publisher_present:
@@ -74,12 +75,12 @@ def check_attribution(db, value):
     return True
 
 
-def validate_policy(db, data):
+def validate_policy(db, data, *, storage_root=None):
     policy = active_policy(db)
     if not policy: return
     for key in ('legacy_versions','legacy_findings'):
         if not isinstance(json.loads(policy[key]), list): raise ValueError('Eski kayıt sınırı geçersiz')
-    for a in data['source_attribution']: check_attribution(db,a)
+    for a in data['source_attribution']: check_attribution(db,a,storage_root=storage_root)
     old_versions = set(json.loads(policy['legacy_versions']))
     attrs = {a['version_id'] for a in data['source_attribution']}
     if any(v['id'] not in old_versions and v['id'] not in attrs for v in data['document_version']):

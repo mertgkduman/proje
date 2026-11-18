@@ -6,11 +6,35 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+import sqlite3
 
 import arsiv
+import kaynaklar
 
 
 class PracticePreview(unittest.TestCase):
+    def test_attribution_reads_explicit_storage_root(self):
+        db = sqlite3.connect(':memory:')
+        db.row_factory = sqlite3.Row
+        self.addCleanup(db.close)
+        db.executescript('''CREATE TABLE party(id TEXT, legal_name TEXT);
+            CREATE TABLE document(id TEXT, party_id TEXT, source_kind TEXT);
+            CREATE TABLE document_version(id TEXT, document_id TEXT, original_url TEXT, final_url TEXT, original_path TEXT, mime TEXT);
+            CREATE TABLE source_attribution(version_id TEXT, kind TEXT, publisher TEXT);
+            INSERT INTO party VALUES ('p','Example Party');
+            INSERT INTO document VALUES ('d','p','party');
+            INSERT INTO document_version VALUES ('v','d','https://example.org/', 'https://example.org/', 'source.html', 'text/html');''')
+        attr = dict(version_id='v', kind='party_publication', publisher='Example Party',
+                    basis='technical fixture', public_url='https://example.org/',
+                    published_at='2026-01-01', date_precision='day')
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'source.html').write_text('Example Party', encoding='utf-8')
+            self.assertTrue(kaynaklar.check_attribution(db, attr, storage_root=root))
+            (root / 'source.html').write_text('Different publisher', encoding='utf-8')
+            with self.assertRaises(ValueError):
+                kaynaklar.check_attribution(db, attr, storage_root=root)
+
     def test_legacy_tracer_preview_keeps_global_state(self):
         current = arsiv.DATA / 'current.json'
         before = hashlib.sha256(current.read_bytes()).hexdigest()

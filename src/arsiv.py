@@ -242,7 +242,8 @@ def html_source_text(content):
     except ValueError: return content.decode('utf-8',errors='replace') # Existing historical captures only.
 
 
-def check_identity(db, values):
+def check_identity(db, values, *, storage_root=None):
+    storage_root = DATA if storage_root is None else storage_root
     party = db.execute('SELECT * FROM party WHERE id=?', (values['entity_id'],)).fetchone()
     source = db.execute('SELECT d.party_id,d.source_kind,v.final_url,v.original_path FROM passage p JOIN document_version v ON v.id=p.version_id JOIN document d ON d.id=v.document_id WHERE p.id=?', (values['passage_id'],)).fetchone()
     if not party or party['registry_key'] != values['registry_key'] or values['entity_kind'] != 'party' or not source or source['party_id'] != party['id'] or source['source_kind'] != 'registry':
@@ -253,7 +254,7 @@ def check_identity(db, values):
         raise ValueError('Kimlik için resmi sicil sayfası gerekli')
     registry_key = 'yargitay-' + match.group(1)
     if party['registry_key'] != registry_key: raise ValueError('Sicil anahtarı kaynak adresiyle uyuşmuyor')
-    content = html_source_text(safe_path(DATA, source['original_path']).read_bytes())
+    content = html_source_text(safe_path(storage_root, source['original_path']).read_bytes())
     if party['legal_name'].casefold() not in content.casefold(): raise ValueError('Parti adı sicil kaynağında yok')
     dates = []
     for key in ('valid_from','valid_to'):
@@ -2548,7 +2549,7 @@ def check_accounting_period(db, v):
         if value and validate_dates(value, 'day', foundation, method['cutoff_at']) == 'outside': raise ValueError('Hesap dönemi araştırma dönemi dışında')
 
 
-def check_financial(db, v):
+def check_financial(db, v, *, storage_root=None):
     required = ('id', 'party_id', 'version_id', 'category', 'currency', 'period_start', 'period_end', 'organization_scope', 'published_at')
     if any(not v.get(k) for k in required): raise ValueError('Mali dönem, kapsam ve kaynak alanları gerekli')
     try:
@@ -2565,7 +2566,7 @@ def check_financial(db, v):
         if active_policy(db):
             attribution = db.execute('SELECT * FROM source_attribution WHERE version_id=?', (v['version_id'],)).fetchone()
             if not attribution: raise ValueError('Mali parti yayını için kaynak atfı gerekli')
-            check_attribution(db,dict(attribution))
+            check_attribution(db,dict(attribution),storage_root=storage_root)
         elif not db.execute("SELECT 1 FROM document_authority WHERE version_id=? AND registry_party_id=? AND status='verified'", (v['version_id'],v['party_id'])).fetchone(): raise ValueError('Parti kaynağının yetkisi doğrulanmadı')
     if v.get('amount') is None:
         missing = db.execute('SELECT party_id,heading FROM missing WHERE id=?', (v.get('missing_id'),)).fetchone()
@@ -2595,11 +2596,11 @@ def record_financial(work, values):
     insert_checked(work, 'financial', values, check_financial)
 
 
-def audit_finance(path):
+def audit_finance(path, *, storage_root=None):
     db = connect_readonly(path)
     try:
         if not db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='financial'").fetchone(): raise ValueError('Mali kayıt tablosu yok')
-        for row in db.execute('SELECT * FROM financial'): check_financial(db, dict(row))
+        for row in db.execute('SELECT * FROM financial'): check_financial(db, dict(row), storage_root=storage_root)
         states = {r['heading']: r['state'] for r in db.execute("SELECT heading,state FROM research_state WHERE party_id='yeni-parti'")}
         for heading in ('Kuruluş', 'Tüzük', 'Program', 'Söylem ve uygulama', 'Finansman ve harcamalar'):
             if states.get(heading) == 'not_researched' or (heading in ('Söylem ve uygulama', 'Finansman ve harcamalar') and states.get(heading) != 'reviewed'): raise ValueError('Pilot başlığı araştırılmamış: ' + heading)
@@ -2684,7 +2685,8 @@ def freeze_cutoff(work, tbmm_version, version=1):
         db.close()
 
 
-def export_db(path, release_id, strict_identity=False):
+def export_db(path, release_id, strict_identity=False, *, storage_root=None):
+    storage_root = DATA if storage_root is None else storage_root
     db = connect_readonly(path)
     try:
         if db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok' or db.execute('PRAGMA foreign_key_check').fetchall():
@@ -2755,12 +2757,12 @@ def export_db(path, release_id, strict_identity=False):
         for name in names:
             order = v2_order.get(name, 'rowid')
             result[name] = [dict(row) for row in db.execute(f'SELECT * FROM {name} ORDER BY {order}')]
-        validated_policy = validate_policy(db,result)
+        validated_policy = validate_policy(db,result,storage_root=storage_root)
         for view in result.get('archive_view',[]):
-            validate_view(DATA,view)
+            validate_view(storage_root,view)
             if not any(v['id']==view['version_id'] and v['sha256']==view['source_sha256'] for v in result['document_version']):raise ValueError('Arşiv görünümü özgün belgeyle uyuşmuyor')
         if strict_identity:
-            for identity in result.get('identity_observation', []): check_identity(db, identity)
+            for identity in result.get('identity_observation', []): check_identity(db, identity, storage_root=storage_root)
         if result['schema_version'] >= 3:
             versions = {v['id']: v for v in result['document_version']}
             for method in result['method']:
@@ -2783,7 +2785,7 @@ def export_db(path, release_id, strict_identity=False):
             raise ValueError('Kanıtsız karşılaştırma')
         for v in result['document_version']:
             safe_url(v['original_url']); safe_url(v['final_url'])
-            original = safe_path(DATA, v['original_path']); readable = safe_path(DATA, v['readable_path'])
+            original = safe_path(storage_root, v['original_path']); readable = safe_path(storage_root, v['readable_path'])
             if sha(original) != v['sha256']:
                 raise ValueError('Arşiv özeti eşleşmiyor')
             kind = 'pdf' if original.name == 'original.pdf' else 'html'
@@ -2795,7 +2797,7 @@ def export_db(path, release_id, strict_identity=False):
                 raise ValueError('Okunabilir arşiv özgün belgeden farklı')
         for p in result['passage']:
             v = next(v for v in result['document_version'] if v['id'] == p['version_id'])
-            path = safe_path(DATA, v['original_path'])
+            path = safe_path(storage_root, v['original_path'])
             if path.name == 'original.pdf':
                 if p['pdf_page_index'] is None or p['pdf_page_index'] < 0: raise ValueError('PDF sayfa indeksi gerekli')
                 content = pdf_page_text(path, p['pdf_page_index'])
@@ -2806,7 +2808,7 @@ def export_db(path, release_id, strict_identity=False):
             else:
                 raw=path.read_bytes()
                 content=html_source_text(raw)
-                if p['exact'] not in content and safe_path(DATA,v['readable_path']).read_bytes()==readable_bytes(raw,'html'):
+                if p['exact'] not in content and safe_path(storage_root,v['readable_path']).read_bytes()==readable_bytes(raw,'html'):
                     content=raw.decode('utf-8',errors='replace')
             if p['exact'] not in content:
                 raise ValueError('Pasaj özgün belgede bulunamadı')
@@ -2850,7 +2852,7 @@ def export_db(path, release_id, strict_identity=False):
             if len(eligible) != len(set(eligible)) or set(eligible) != {m['id'] for m in result['match'] if m['eligibility'] == 'eligible'}: raise ValueError('Uygun aday ve eşleşme kümeleri uyuşmuyor')
             for resolution in result['missing_resolution']: check_missing_resolution(db, resolution)
         if 'financial' in existing:
-            for financial in result['financial']: check_financial(db, financial)
+            for financial in result['financial']: check_financial(db, financial, storage_root=storage_root)
         if result['schema_version'] >= 4:
             validate_dossier(result)
         if has_comparisons:
@@ -3002,9 +3004,9 @@ def audit_release(release='current', _seen=None):
     return release
 
 
-def validate_phase_one_workspace(work, strict_identity=True):
+def validate_phase_one_workspace(work, strict_identity=True, *, storage_root=None):
     path = Path(work) / 'records.sqlite3'
-    data = export_db(path, 'workspace', strict_identity=strict_identity)
+    data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
     db = connect_readonly(path)
     try:
         for attempt in db.execute("SELECT * FROM attempt WHERE lead_id IS NOT NULL AND type='access' AND result='examined'"):
@@ -3012,7 +3014,7 @@ def validate_phase_one_workspace(work, strict_identity=True):
             if not lead or any(lead[k] != attempt[k] for k in ('party_id','heading','topic_id')): raise ValueError('Girişim uçla uyuşmuyor')
             check_examined_lead(db, lead, attempt['source_version_id'])
     finally: db.close()
-    audit_finance(path)
+    audit_finance(path, storage_root=storage_root)
     if len(data['scope_party']) != 9 or len({s['party_id'] for s in data['scope_party']}) != 9:
         raise ValueError('Dokuz kapsam kararı gerekli')
     if not data['method'] or not data['scope_observation'] or not data['identity_observation']:

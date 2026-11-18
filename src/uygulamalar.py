@@ -755,7 +755,7 @@ def load_practice(work, payload):
         os.replace(scratch / 'records.sqlite3', work / 'records.sqlite3')
 
 
-def _load_practice_copy(work, payload, base):
+def _load_practice_copy(work, payload, base, *, storage_root=None):
     from arsiv import connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing
     if payload.get('base_release') != base or payload.get('contract_version') != 1 or payload.get('stage') not in ('tracer', 'partial', 'complete') or payload.get('taxonomy_version') != 4:
         raise ValueError('Uygulama paketi veya tabanı geçersiz')
@@ -872,7 +872,7 @@ def _load_practice_copy(work, payload, base):
         raise
     finally:
         db.close()
-    validate_phase_one_workspace(work)
+    validate_phase_one_workspace(work, storage_root=storage_root)
 
 
 def validate_practice_input(payload, base_release='current'):
