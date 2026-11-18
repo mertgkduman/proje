@@ -60,6 +60,24 @@ class PracticeCoverage(unittest.TestCase):
         self.assertTrue(hasattr(uygulamalar, 'validate_practice_closure'),
                         'party-specific closure must be validated against the full scope')
 
+    def test_preview_inventory_remains_bound_to_accepted_history(self):
+        inventory = uygulamalar.build_practice_inventory(self.data)
+        accepted = copy.deepcopy(self.data)
+        accepted['practice_coverage_contract'] = [dict(version=2, inventory_json=json.dumps(inventory))]
+        accepted['practice_inventory_revision'] = []
+        immediate_base = 'a' * 32
+        snapshot = dict(accepted, release_id='b' * 32)
+        self.assertTrue(uygulamalar.validate_preview_inventory(snapshot, accepted, immediate_base, inventory, []))
+        # A package cannot assert an arbitrary older inventory or narrow it.
+        altered = copy.deepcopy(inventory)
+        altered['cells'].pop()
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_preview_inventory(snapshot, accepted, immediate_base, altered, [])
+        forged = copy.deepcopy(inventory)
+        forged['base_release'] = 'c' * 32
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_preview_inventory(snapshot, accepted, immediate_base, forged, [])
+
     def test_extension_backscans_every_party(self):
         from uygulamalar import build_practice_inventory, validate_practice_coverage
         extension = dict(id='technical-test-extension', parent_topic_id='organ-secim-yontemi',
