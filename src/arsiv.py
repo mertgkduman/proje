@@ -2168,12 +2168,17 @@ def validate_comparison_descent(base, candidate):
     return True
 
 
-def open_workspace(scratch=None, fail_at=None):
-    root = Path(scratch or tempfile.gettempdir()).resolve()
-    root.mkdir(parents=True, exist_ok=True)
+def require_local_sqlite_root(root):
+    """Reject filesystems on which active SQLite locking is unsupported."""
     fs = subprocess.check_output(['stat', '-f', '-c', '%T', str(root)], text=True).strip().lower()
     if fs not in ('xfs', 'ext2/ext3', 'ext2', 'ext3', 'ext4', 'tmpfs', 'overlayfs', 'btrfs', 'zfs', 'apfs'):
         raise ValueError('Aktif SQLite için yerel dosya sistemi gerekir')
+
+
+def open_workspace(scratch=None, fail_at=None):
+    root = Path(scratch or tempfile.gettempdir()).resolve()
+    root.mkdir(parents=True, exist_ok=True)
+    require_local_sqlite_root(root)
     DATA.mkdir(parents=True, exist_ok=True)
     lock = DATA / '.write.lock'
     token = uuid.uuid4().hex

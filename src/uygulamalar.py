@@ -919,6 +919,12 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
     import tempfile
     import arsiv
 
+    out = Path(out).resolve()
+    if out == arsiv.ROOT or arsiv.ROOT in out.parents or out.exists():
+        raise ValueError('Önizleme hedefi mevcut veya proje kökü içinde')
+    if not out.parent.is_dir():
+        raise ValueError('Önizleme hedefinin üst dizini bulunamadı')
+    arsiv.require_local_sqlite_root(out.parent)
     storage_root = arsiv.DATA if storage_root is None else Path(storage_root)
     base = arsiv.current() if base_release == 'current' else base_release
     if not isinstance(base, str) or not re.fullmatch(r'[0-9a-f]{32}', base):
@@ -965,11 +971,6 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
         active = max(revisions, key=lambda x: x['epoch'])['inventory_json'] if revisions else markers[0]['inventory_json']
         if json.loads(active) != inventory:
             raise ValueError('Paket ve kanonik envanter uyuşmuyor')
-    out = Path(out).resolve()
-    if out == arsiv.ROOT or arsiv.ROOT in out.parents or out.exists():
-        raise ValueError('Önizleme hedefi mevcut veya proje kökü içinde')
-    if not out.parent.is_dir():
-        raise ValueError('Önizleme hedefinin üst dizini bulunamadı')
     with tempfile.TemporaryDirectory(prefix='.practice-preview-', dir=out.parent) as tmp:
         work = Path(tmp)
         shutil.copyfile(folder / 'records.sqlite3', work / 'records.sqlite3')
