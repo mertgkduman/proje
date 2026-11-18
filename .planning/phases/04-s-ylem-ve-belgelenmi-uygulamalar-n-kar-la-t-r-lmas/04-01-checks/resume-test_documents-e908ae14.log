@@ -1,0 +1,16 @@
+test_identical_bytes_keep_document_ownership (test_documents.DocumentContract.test_identical_bytes_keep_document_ownership) ... ok
+test_missing_pdf_library_has_actionable_error (test_documents.DocumentContract.test_missing_pdf_library_has_actionable_error) ... ok
+test_pilot_document_headings_have_attempt_backed_results (test_documents.DocumentContract.test_pilot_document_headings_have_attempt_backed_results) ... ok
+test_wrong_party_evidence_is_rejected (test_documents.DocumentContract.test_wrong_party_evidence_is_rejected) ... ok
+test_changed_bytes_with_same_size_and_mtime_are_rejected (test_documents.PDFReuseTest.test_changed_bytes_with_same_size_and_mtime_are_rejected) ... ok
+test_failed_library_load_is_retried (test_documents.PDFReuseTest.test_failed_library_load_is_retried) ... ok
+test_failed_parse_is_retried_after_file_repair (test_documents.PDFReuseTest.test_failed_parse_is_retried_after_file_repair) ... ok
+test_missing_file_keeps_pdf_error (test_documents.PDFReuseTest.test_missing_file_keeps_pdf_error) ... ok
+test_same_page_reuses_real_libraries_and_parser (test_documents.PDFReuseTest.test_same_page_reuses_real_libraries_and_parser) ... ok
+test_warm_cache_checks_dependencies_before_path_access (test_documents.PDFReuseTest.test_warm_cache_checks_dependencies_before_path_access) ... ok
+test_corruption_after_successful_audit_is_rejected_independently (test_documents.WarmAuditTest.test_corruption_after_successful_audit_is_rejected_independently) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 55.584s
+
+OK

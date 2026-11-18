@@ -1,7 +1,7 @@
 {
   "phase": "04",
   "wave": 1,
-  "status": "pending_remaining_tests",
+  "status": "completed_across_interrupted_and_resumed_batches",
   "created_at": "2026-11-18T04:12:37.693004+00:00",
   "release_id": "f67ca0a35e634035bf3aa83a46571f50",
   "manifest_sha256": "fb954f92e57ffe768c3cc63c065c8b7dc55a788af9f91dd5c56a8ff02172eb6b",
@@ -697,5 +697,10 @@
   },
   "isolated_heavy_test": "test_completion_coverage.CompletionCoverageTest.test_same_taxonomy_sourced_revision_round_trip",
   "per_batch_timeout_seconds": 10800,
-  "acceptance": "No original single-process success is claimed. Completion requires every discovered test ID to have a successful result on the same code fingerprint/current release, with all interruptions and per-batch exit codes retained."
+  "acceptance": "No original single-process success is claimed. Completion requires every discovered test ID to have a successful result on the same code fingerprint/current release, with all interruptions and per-batch exit codes retained.",
+  "resumed_event_log": "resumed-test-events.jsonl",
+  "resumed_event_log_sha256": "9e102ccaa8f3fefc1c691ef9b829b490b2107f843d78d4c6086a19c7d19555fb",
+  "resumed_success_count": 113,
+  "coverage_remaining": 0,
+  "completed_at": "2026-11-18T06:25:58.192981+00:00"
 }

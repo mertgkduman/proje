@@ -5,10 +5,10 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 2
 status: executing
-stopped_at: Phase 04 Wave 1 repair complete on f67ca0a; final full gate interrupted exit137 during daemon restart. 108/221 tests passed on unchanged code; resume remaining113 by module with isolated long test, preserve original interrupted result.
-last_updated: "2026-11-18T04:13:47.228Z"
-last_activity: 2026-11-17
-last_activity_desc: Phase 04 execution started
+stopped_at: Phase 04 Wave 1 verification completed across interrupted and resumed batches, 221/221 IDs passed; ready for 04-02. Original single-process exit137 remains interrupted, cause unknown.
+last_updated: "2026-11-18T06:25:58Z"
+last_activity: 2026-11-18
+last_activity_desc: Phase 04 Wave 1 split verification complete; ready for 04-02
 state_head: c75031a03483ddba9e31d16204b0243449ea9729
 progress:
   total_phases: 6
@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 2 of 15
 Status: Ready to execute
-Last activity: 2026-11-17 — Phase 04 execution started
+Last activity: 2026-11-18 — Phase 04 Wave 1 split verification complete; ready for 04-02
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -187,6 +187,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-18T04:13:39.570Z
-Stopped at: Phase 04 Wave 1 repair complete on f67ca0a; final full gate interrupted exit137 during daemon restart. 108/221 tests passed on unchanged code; resume remaining113 by module with isolated long test, preserve original interrupted result.
-Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-01-checks/WAVE-1-TEST-RESUME.json
+Last session: 2026-11-18T06:25:58Z
+Stopped at: Phase 04 Wave 1 verification complete across interrupted and resumed batches, 221/221 IDs passed on f67ca0a; 20/20 resumed batch exits 0. Original single-process exit137 remains interrupted, cause unknown. Ready for 04-02; Phase 04 remains 1/15.
+Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-WAVE-1-GATE.json

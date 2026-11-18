@@ -1,0 +1,18 @@
+test_compressed_pdf_publisher_text_does_not_need_host_html (test_source_policy.SourcePolicy.test_compressed_pdf_publisher_text_does_not_need_host_html) ... ok
+test_export_checks_each_attribution_once_but_rechecks_changed_sources (test_source_policy.SourcePolicy.test_export_checks_each_attribution_once_but_rechecks_changed_sources) ... ok
+test_historical_renderer_and_policy_still_audit (test_source_policy.SourcePolicy.test_historical_renderer_and_policy_still_audit) ... ok
+test_journalism_allows_unknown_author_date_but_requires_attributed_claim (test_source_policy.SourcePolicy.test_journalism_allows_unknown_author_date_but_requires_attributed_claim) ... ok
+test_missing_attribution_and_cross_party_evidence_fail_export (test_source_policy.SourcePolicy.test_missing_attribution_and_cross_party_evidence_fail_export) ... ok
+test_official_site_needs_party_publication_evidence_for_same_host (test_source_policy.SourcePolicy.test_official_site_needs_party_publication_evidence_for_same_host) ... ok
+test_party_charter_passes_real_publication_without_registry_domain_authority (test_source_policy.SourcePolicy.test_party_charter_passes_real_publication_without_registry_domain_authority) ... ok
+test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name (test_source_policy.SourcePolicy.test_party_pdf_uses_archived_same_publisher_html_without_raw_binary_name) ... ok
+test_policy_cannot_be_removed_or_exemptions_widened (test_source_policy.SourcePolicy.test_policy_cannot_be_removed_or_exemptions_widened) ... ok
+test_removing_policy_cannot_bypass_real_publish (test_source_policy.SourcePolicy.test_removing_policy_cannot_bypass_real_publish) ... ok
+test_short_name_html_uses_same_party_host_and_full_name_anchor (test_source_policy.SourcePolicy.test_short_name_html_uses_same_party_host_and_full_name_anchor) ... ok
+test_social_requires_account_date_and_permalink_and_claim_stays_claim (test_source_policy.SourcePolicy.test_social_requires_account_date_and_permalink_and_claim_stays_claim) ... ok
+test_turkish_publisher_case_preserves_dotted_and_dotless_i (test_source_policy.SourcePolicy.test_turkish_publisher_case_preserves_dotted_and_dotless_i) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 91.640s
+
+OK

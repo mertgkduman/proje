@@ -1,0 +1,16 @@
+test_detects_corrupt_readable_archive (test_publication.PublicationTest.test_detects_corrupt_readable_archive) ... ok
+test_failures_leave_a_complete_release (test_publication.PublicationTest.test_failures_leave_a_complete_release) ... ok
+test_foreign_key_corruption_rejected (test_publication.PublicationTest.test_foreign_key_corruption_rejected) ... ok
+test_lock_excludes_second_writer_and_old_workspace (test_publication.PublicationTest.test_lock_excludes_second_writer_and_old_workspace) ... ok
+test_original_and_manifest_corruption_rejected (test_publication.PublicationTest.test_original_and_manifest_corruption_rejected) ... ok
+test_paths_cannot_escape_root_through_traversal_or_symlink (test_publication.PublicationTest.test_paths_cannot_escape_root_through_traversal_or_symlink) ... ok
+test_phase_acceptance_precedes_pointer_change (test_publication.PublicationTest.test_phase_acceptance_precedes_pointer_change) ... ok
+test_rejects_dangerous_urls (test_publication.PublicationTest.test_rejects_dangerous_urls) ... ok
+test_removing_method_cannot_bypass_phase_acceptance (test_publication.PublicationTest.test_removing_method_cannot_bypass_phase_acceptance) ... ok
+test_report_escapes_untrusted_text_and_rejects_script_url (test_publication.PublicationTest.test_report_escapes_untrusted_text_and_rejects_script_url) ... ok
+test_stale_base_rejected (test_publication.PublicationTest.test_stale_base_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 82.930s
+
+OK
