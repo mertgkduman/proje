@@ -5,7 +5,7 @@
   "completed_plans": [
     "04-01"
   ],
-  "release_id": "53b24e6740104cb5be5d3419491bd735",
+  "release_id": "f67ca0a35e634035bf3aa83a46571f50",
   "code_head_at_test_start": "9c8bb3bf0e4ede0d349b8b9c39650c8b6b524ec9",
   "build": {
     "command": "python3 -m py_compile src/uygulamalar.py src/arsiv.py src/dosyalar.py src/rapor.py src/rapor_v24.py",
@@ -660,5 +660,9 @@
     }
   },
   "next_plan": "04-02",
-  "resume_rule": "Wave 1 split verification complete; resume with 04-02. Preserve original interrupted exit 137; do not claim single-process success."
+  "resume_rule": "Wave 1 split verification complete; resume with 04-02. Preserve original interrupted exit 137; do not claim single-process success.",
+  "initial_release_id": "53b24e6740104cb5be5d3419491bd735",
+  "code_head_at_verification": "2ea3a847d4daae11b38287ed57fb0fbe1e71caee",
+  "source_fingerprint_at_verification": "e78dd8bb47323250cbc78ad978b7c0c0fc75da7ae2f3e83cee3c66111ae91933",
+  "next_wave_dependency_check": "04-02 key-link diagnostic describes variants produced by upcoming wave in src/rapor.py; skipped as current-wave work per between-wave contract. Required prior-wave files exist."
 }

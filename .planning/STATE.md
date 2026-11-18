@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 2
 status: executing
-stopped_at: Phase 04 Wave 1 verification completed across interrupted and resumed batches, 221/221 IDs passed; ready for 04-02. Original single-process exit137 remains interrupted, cause unknown.
-last_updated: "2026-11-18T06:25:58Z"
+stopped_at: "Phase 04 Wave 1 complete: 221/221 test IDs verified across interrupted and resumed batches; capability gates nonblocking. Ready to execute 04-02, preserve renderer26/current f67ca0a history."
+last_updated: "2026-11-18T06:33:46.045Z"
 last_activity: 2026-11-18
 last_activity_desc: Phase 04 Wave 1 split verification complete; ready for 04-02
-state_head: c75031a03483ddba9e31d16204b0243449ea9729
+state_head: 2ea3a847d4daae11b38287ed57fb0fbe1e71caee
 progress:
   total_phases: 6
   completed_phases: 3
@@ -187,6 +187,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-18T06:25:58Z
-Stopped at: Phase 04 Wave 1 verification complete across interrupted and resumed batches, 221/221 IDs passed on f67ca0a; 20/20 resumed batch exits 0. Original single-process exit137 remains interrupted, cause unknown. Ready for 04-02; Phase 04 remains 1/15.
-Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-WAVE-1-GATE.json
+Last session: 2026-11-18T06:33:22.252Z
+Stopped at: Phase 04 Wave 1 complete: 221/221 test IDs verified across interrupted and resumed batches; capability gates nonblocking. Ready to execute 04-02, preserve renderer26/current f67ca0a history.
+Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-02-PLAN.md
