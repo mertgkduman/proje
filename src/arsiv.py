@@ -46,7 +46,7 @@ from rapor_v23 import render_report as render_v23_report
 from rapor_v24 import render_report as render_v24_report
 from rapor_v25 import render_report as render_v25_report
 from rapor_v26 import render_report as render_v26_report
-from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, validate_practices, load_practice,
+from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, PRACTICE_SOURCE_REVIEW_TABLES, validate_practices, load_practice,
                          validate_practice_input, practice_manifest_fields,
                          validate_practice_descent)
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
@@ -2722,6 +2722,9 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
         coverage_present = existing.intersection(PRACTICE_COVERAGE_TABLES)
         if coverage_present and (coverage_present != set(PRACTICE_COVERAGE_TABLES) or not has_practices or not db.execute('SELECT 1 FROM practice_coverage_contract').fetchone()):
             raise ValueError('Uygulama kapsam işaretçisi veya tabloları eksik')
+        source_review_present = existing.intersection(PRACTICE_SOURCE_REVIEW_TABLES)
+        if source_review_present and (source_review_present != set(PRACTICE_SOURCE_REVIEW_TABLES) or not has_practices or not db.execute('SELECT 1 FROM practice_source_review_contract').fetchone()):
+            raise ValueError('Kaynak inceleme işaretçisi veya tabloları eksik')
         if has_practices and practice_version != 7:
             raise ValueError('Uygulama şema sürümü eksik')
         if has_practices and not db.execute('SELECT 1 FROM practice_contract').fetchone():
@@ -2760,6 +2763,8 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
                 names += list(PRACTICE_EVIDENCE_TABLES)
             if coverage_present:
                 names += list(PRACTICE_COVERAGE_TABLES)
+            if source_review_present:
+                names += list(PRACTICE_SOURCE_REVIEW_TABLES)
         result = {'schema_version': 7 if has_practices else (6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))))), 'release_id': release_id}
         if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
@@ -2994,7 +2999,7 @@ def audit_release(release='current', _seen=None, *, storage_root=None):
         if exported['schema_version'] == 7:
             fields = practice_manifest_fields(exported)
             if ({k: manifest.get(k) for k in fields} != fields or
-                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256', 'practice_coverage_sha256'))):
+                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256', 'practice_coverage_sha256', 'practice_source_review_sha256'))):
                 raise ValueError('Uygulama manifesti geçersiz')
         elif any(k.startswith('practice_') for k in manifest):
             raise ValueError('Uygulama snapshot işaretçisi eksik')
@@ -3384,6 +3389,7 @@ def main():
     pi = sub.add_parser('practice-inventory'); pi.add_argument('--release', default='current'); pi.add_argument('--out', required=True)
     pv = sub.add_parser('practice-coverage'); pv.add_argument('--inventory', required=True); pv.add_argument('--input', required=True); pv.add_argument('--party'); pv.add_argument('--complete', action='store_true')
     pp = sub.add_parser('practice-preview'); pp.add_argument('--input', required=True); pp.add_argument('--out'); pp.add_argument('--inventory'); pp.add_argument('--base-release', default='current'); pp.add_argument('--source-root')
+    ps = sub.add_parser('practice-source-check'); ps.add_argument('--input', required=True); ps.add_argument('--review', required=True)
     pl = sub.add_parser('practice-load'); pl.add_argument('--workspace', required=True); pl.add_argument('--input', required=True)
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
     cr = sub.add_parser('comparison-reconcile'); cr.add_argument('--workspace', required=True); cr.add_argument('--taxonomy', required=True); cr.add_argument('--inventory', required=True); cr.add_argument('--input', required=True)
@@ -3426,6 +3432,27 @@ def main():
         result = build_practice_inventory(snapshot)
         Path(args.out).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print('PRACTICE_INVENTORY_OK')
+    elif args.command == 'practice-source-check':
+        import tempfile
+        from uygulamalar import render_practice_preview
+        package = json.loads(Path(args.input).read_text(encoding='utf-8'))
+        review = json.loads(Path(args.review).read_text(encoding='utf-8'))
+        if not isinstance(review, dict) or set(review) != {'practice_source_review', 'source_review_refs'}:
+            raise ValueError('Kaynak inceleme dosyası geçersiz')
+        records = package.get('practice_records', {})
+        if set(records).intersection(PRACTICE_SOURCE_REVIEW_TABLES):
+            raise ValueError('İnceleme pakette ve dosyada birden bulunamaz')
+        package_refs = package.get('source_review_refs')
+        if package_refs not in (None, []) and sorted(json.dumps(x, sort_keys=True) for x in package_refs) != sorted(json.dumps(x, sort_keys=True) for x in review['source_review_refs']):
+            raise ValueError('Paket ve inceleme başvuruları uyuşmuyor')
+        records['practice_source_review_contract'] = [{'version': 1}]
+        records['practice_source_review'] = review['practice_source_review']
+        package['source_review_refs'] = review['source_review_refs']
+        party = package.get('party_id')
+        source_root = safe_path(DATA / 'practices' / 'sources', party) if isinstance(party, str) and re.fullmatch(r'[a-z0-9-]+', party) else DATA
+        with tempfile.TemporaryDirectory(prefix='gsd-source-check-') as tmp:
+            render_practice_preview(package, Path(tmp) / 'preview', base_release=package.get('base_release'), source_root=source_root)
+        print('PRACTICE_SOURCE_REVIEW_OK')
     elif args.command == 'practice-preview':
         from uygulamalar import render_practice_preview
         package = json.loads(Path(args.input).read_text(encoding='utf-8'))

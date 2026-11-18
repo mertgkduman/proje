@@ -55,6 +55,139 @@ PRACTICE_COVERAGE_TABLES = {
     'practice_legacy_scope': 'scope_id TEXT NOT NULL REFERENCES practice_scope_v2(id), closure_id TEXT NOT NULL REFERENCES closure(id), attempt_id TEXT NOT NULL REFERENCES attempt(id), mapping_reason TEXT NOT NULL, PRIMARY KEY(scope_id,closure_id,attempt_id)',
 }
 
+# Optional independent reading extension; older snapshots retain their bytes.
+PRACTICE_SOURCE_REVIEW_TABLES = {
+    'practice_source_review_contract': 'version INTEGER PRIMARY KEY',
+    'practice_source_review': 'subject_kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, source_version_ids TEXT NOT NULL, passage_ids TEXT NOT NULL, inspected_sections TEXT NOT NULL, supported_claim TEXT NOT NULL, limitations TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(subject_kind,subject_id)',
+}
+
+
+def practice_review_targets(data, selection=None):
+    """Map each semantic target to its actual passages and party boundaries."""
+    selected = data if selection is None else selection
+    targets = {}
+    evidence = data.get('finding_evidence', [])
+
+    def add(kind, identity, passages, parties=()):
+        key = (kind, identity)
+        refs = {p for p in passages if p}
+        if not refs:
+            raise ValueError('İnceleme hedefinin kaynak pasajı eksik: ' + repr(key))
+        if key in targets:
+            raise ValueError('Tekrarlı inceleme hedefi')
+        targets[key] = (refs, {p for p in parties if p})
+
+    for row in selected.get('practice_event_evidence', []):
+        event_id = row['event_id']
+        parties = [r['party_id'] for name in ('practice_relation', 'practice_contribution', 'practice_unmatched')
+                   for r in data.get(name, []) if r['event_id'] == event_id]
+        add('practice_event_evidence', '|'.join((event_id, row['passage_id'], row['stage'])), [row['passage_id']], parties)
+    for row in selected.get('practice_event', []):
+        event_id = row['id']
+        refs = [e['passage_id'] for e in data.get('practice_event_evidence', []) if e['event_id'] == event_id]
+        parties = [r['party_id'] for name in ('practice_relation', 'practice_contribution', 'practice_unmatched')
+                   for r in data.get(name, []) if r['event_id'] == event_id]
+        add('practice_event', event_id, refs, parties)
+    for name, fields in {
+        'practice_statement': ('summary_finding_id', 'quote_finding_id'),
+        'practice_relation': ('target_finding_id', 'result_finding_id', 'explanation_finding_id'),
+        'practice_contribution': ('finding_id',),
+        'practice_dispute': ('summary_finding_id',),
+        'practice_position_change': ('explanation_finding_id',),
+    }.items():
+        for row in selected.get(name, []):
+            if name in ('practice_statement', 'practice_relation', 'practice_contribution', 'practice_dispute', 'practice_position_change'):
+                ids = [row.get(field) for field in fields if row.get(field)]
+                refs = [e['passage_id'] for e in evidence if e['finding_id'] in ids]
+                if name in ('practice_relation', 'practice_dispute'):
+                    refs += [e['passage_id'] for e in data.get('practice_event_evidence', []) if e['event_id'] == row['event_id']]
+                if name == 'practice_relation':
+                    statement = next((s for s in data.get('practice_statement', []) if s['id'] == row['statement_id']), None)
+                    if not statement:
+                        raise ValueError('İnceleme ilişkisinin söylemi bulunamadı')
+                    refs += [e['passage_id'] for e in evidence if e['finding_id'] in (statement['summary_finding_id'], statement['quote_finding_id'])]
+                if name == 'practice_contribution':
+                    refs += [row.get('authority_passage_id'), row.get('membership_passage_id')]
+                parties = [row.get('party_id')]
+                if name == 'practice_dispute':
+                    parties += [f['party_id'] for f in data.get('finding', []) if f['id'] in ids]
+                add(name, row['id'], refs, parties)
+            for field in fields:
+                fid = row.get(field)
+                if fid:
+                    party = row.get('party_id')
+                    if not party:
+                        party = next((f['party_id'] for f in data.get('finding', []) if f['id'] == fid), None)
+                    add(name + '.' + field, row['id'], [e['passage_id'] for e in evidence if e['finding_id'] == fid], [party])
+    for row in selected.get('practice_dispute_evidence', []):
+        identity = '|'.join((row['dispute_id'], row['passage_id'], row['point'], row['role']))
+        dispute = next((d for d in data.get('practice_dispute', []) if d['id'] == row['dispute_id']), None)
+        if not dispute:
+            raise ValueError('İnceleme uyuşmazlığı bulunamadı')
+        parties = [f['party_id'] for f in data.get('finding', []) if f['id'] == dispute['summary_finding_id']]
+        add('practice_dispute_evidence', identity, [row['passage_id']], parties)
+    for row in selected.get('practice_unmatched', []):
+        refs = [e['passage_id'] for e in data.get('practice_event_evidence', []) if e['event_id'] == row['event_id']]
+        add('practice_unmatched', row['id'], refs, [row['party_id']])
+    return targets
+
+
+def validate_practice_source_review(data, reviews, selection=None, *, require_coverage=True, party_id=None):
+    """Validate recorded agent reading, without claiming to repeat that reading."""
+    from arsiv import aware_time
+    targets = practice_review_targets(data, selection)
+    if party_id is not None:
+        targets = {key: value for key, value in targets.items() if not value[1] or party_id in value[1]}
+    passages = {p['id']: p for p in data['passage']}
+    versions = {v['id']: v for v in data['document_version']}
+    documents = {d['id']: d for d in data['document']}
+    shared = {(r['version_id'], r['party_id'], r['passage_id']) for r in data.get('practice_source_party', []) if r.get('scope_reason')}
+    seen = set()
+    descriptions = set()
+    fields = {'subject_kind', 'subject_id', 'reviewer_kind', 'reviewed_at', 'source_version_ids', 'passage_ids', 'inspected_sections', 'supported_claim', 'limitations', 'result', 'reason'}
+    for row in reviews:
+        if not isinstance(row, dict) or set(row) != fields:
+            raise ValueError('Kaynak inceleme alanları geçersiz')
+        if any(not isinstance(row[k], str) or not row[k].strip() for k in ('subject_kind', 'subject_id', 'reviewer_kind', 'reviewed_at', 'result')):
+            raise ValueError('Kaynak inceleme kimliği veya durumu geçersiz')
+        key = (row['subject_kind'], row['subject_id'])
+        if key in seen or key not in targets:
+            raise ValueError('Kaynak inceleme hedefi tekrarlı veya bulunamadı')
+        seen.add(key)
+        if row['reviewer_kind'] != 'agent' or row['result'] != 'reviewed':
+            raise ValueError('Kaynak incelemesi ajan okuması olmalı')
+        aware_time(row['reviewed_at'])
+        if any(not isinstance(row[k], str) or len(row[k].strip()) < 10 for k in ('supported_claim', 'limitations', 'reason')):
+            raise ValueError('Kaynak inceleme açıklaması eksik')
+        try:
+            arrays = [json.loads(row[k]) for k in ('source_version_ids', 'passage_ids', 'inspected_sections')]
+        except (TypeError, ValueError):
+            raise ValueError('Kaynak inceleme dizisi geçersiz')
+        for items in arrays:
+            if not isinstance(items, list) or not items or any(not isinstance(x, str) or not x.strip() for x in items) or len(set(items)) != len(items):
+                raise ValueError('Kaynak inceleme dizisi boş veya geçersiz')
+        version_ids, passage_ids, sections = arrays
+        vague = {'all', 'tümü', 'tamamı', 'source', 'kaynak', 'article', 'haber', 'full article'}
+        if any(section.strip().casefold() in vague or len(section.strip()) < 5 for section in sections):
+            raise ValueError('İncelenen bölümler somut olarak belirtilmeli')
+        description = tuple(row[k].strip() for k in ('inspected_sections', 'supported_claim', 'limitations', 'reason'))
+        if description in descriptions:
+            raise ValueError('Aynı genel açıklama birden çok hedefe kopyalanamaz')
+        descriptions.add(description)
+        required, parties = targets[key]
+        if set(passage_ids) != required or any(p not in passages for p in passage_ids):
+            raise ValueError('Kaynak inceleme pasajı hedefle uyuşmuyor')
+        if set(version_ids) != {passages[p]['version_id'] for p in passage_ids} or any(v not in versions for v in version_ids):
+            raise ValueError('Kaynak inceleme sürümü pasajla uyuşmuyor')
+        for p in passage_ids:
+            v = passages[p]['version_id']
+            document = documents.get(versions[v]['document_id'])
+            if not document or any(document['party_id'] != party and (v, party, p) not in shared for party in parties):
+                raise ValueError('Kaynak inceleme parti sahibi uyuşmuyor')
+    if require_coverage and seen != set(targets):
+        raise ValueError('Kaynak inceleme hedef kapsamı eksik')
+    return True
+
 
 def _digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
@@ -697,6 +830,13 @@ def validate_practices(data):
     for finding in findings.values():
         if finding['pair_id'] in pairs:
             check_finding(finding['id'], finding['party_id'])
+    review_extension = set(data).intersection(PRACTICE_SOURCE_REVIEW_TABLES)
+    if review_extension:
+        if review_extension != set(PRACTICE_SOURCE_REVIEW_TABLES) or data['practice_source_review_contract'] != [{'version': 1}]:
+            raise ValueError('Kaynak inceleme sözleşmesi eksik')
+        validate_practice_source_review(data, data['practice_source_review'], require_coverage=c[0]['stage'] == 'complete')
+    elif c[0]['stage'] == 'complete':
+        raise ValueError('Tam uygulama kaynak incelemesi gerektirir')
     return True
 
 
@@ -709,10 +849,16 @@ def practice_manifest_fields(data):
         result['practice_evidence_sha256'] = _digest({k: data[k] for k in PRACTICE_EVIDENCE_TABLES})
     if 'practice_coverage_contract' in data:
         result['practice_coverage_sha256'] = _digest({k: data[k] for k in PRACTICE_COVERAGE_TABLES})
+    if 'practice_source_review_contract' in data:
+        result['practice_source_review_sha256'] = _digest({k: data[k] for k in PRACTICE_SOURCE_REVIEW_TABLES})
     return result
 
 
 def validate_practice_descent(base, candidate):
+    if 'practice_source_review_contract' in base:
+        for name in PRACTICE_SOURCE_REVIEW_TABLES:
+            if name not in candidate or any(row not in candidate[name] for row in base[name]):
+                raise ValueError('Önceki kaynak incelemesi değiştirilemez')
     if 'practice_coverage_contract' in base:
         for name in PRACTICE_COVERAGE_TABLES:
             if name not in candidate or any(row not in candidate[name] for row in base[name]):
@@ -846,6 +992,16 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
             tables.update(PRACTICE_COVERAGE_TABLES)
             for name, definition in PRACTICE_COVERAGE_TABLES.items():
                 db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        reviews = set(records).intersection(PRACTICE_SOURCE_REVIEW_TABLES)
+        prior_reviews = db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_source_review_contract'").fetchone()
+        if prior_reviews and not reviews:
+            raise ValueError('Kaynak inceleme sözleşmesi kaldırılamaz')
+        if reviews:
+            if reviews != set(PRACTICE_SOURCE_REVIEW_TABLES):
+                raise ValueError('Kaynak inceleme tabloları eksik')
+            tables.update(PRACTICE_SOURCE_REVIEW_TABLES)
+            for name, definition in PRACTICE_SOURCE_REVIEW_TABLES.items():
+                db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if set(records) != set(tables):
             raise ValueError('Uygulama tabloları eksik')
         for kind in tables:
@@ -891,6 +1047,12 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
         data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'scope_party', 'action', 'match', 'match_candidate', 'lead', 'attempt', 'missing', 'closure', 'reopen']}
         data['release_id'] = base
         validate_practices(data)
+        if reviews:
+            refs = payload.get('source_review_refs')
+            expected = [{'subject_kind': row['subject_kind'], 'subject_id': row['subject_id']} for row in records['practice_source_review']]
+            if not isinstance(refs, list) or sorted(refs, key=lambda x: (x['subject_kind'], x['subject_id'])) != sorted(expected, key=lambda x: (x['subject_kind'], x['subject_id'])):
+                raise ValueError('Kaynak inceleme başvuruları uyuşmuyor')
+            validate_practice_source_review(data, records['practice_source_review'], records, party_id=payload.get('party_id'))
         if db.execute('PRAGMA foreign_key_check').fetchall() or db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
             raise ValueError('Uygulama bütünlük hatası')
         db.commit()

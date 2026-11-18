@@ -116,10 +116,34 @@ class PracticePreview(unittest.TestCase):
             if 'practice_evidence_assessment' in records:
                 original = records['practice_evidence_assessment'][0]
                 records['practice_evidence_assessment'].append(dict(original, passage_id='technical-p'))
+            # Ephemeral structural test metadata, not a political research record.
+            # The fixture exercises serialization only; no review artifact is saved.
+            review_data = json.loads((arsiv.DATA / 'releases' / arsiv.current() / 'records.json').read_text())
+            for entry in package['entries']:
+                review_data.setdefault(entry['kind'], []).append(entry['values'])
+            for kind, rows in records.items():
+                existing = review_data.setdefault(kind, [])
+                for row in rows:
+                    if row not in existing:
+                        existing.append(row)
+            passages = {row['id']: row for row in review_data['passage']}
+            review_rows = []
+            for (kind, identity), (refs, _) in uygulamalar.practice_review_targets(review_data, records).items():
+                review_rows.append(dict(subject_kind=kind, subject_id=identity, reviewer_kind='agent',
+                    reviewed_at='2026-11-18T12:00:00+00:00',
+                    source_version_ids=json.dumps(sorted({passages[p]['version_id'] for p in refs})),
+                    passage_ids=json.dumps(sorted(refs)), inspected_sections=json.dumps(['Technical test context for ' + kind]),
+                    supported_claim='Technical test subject ' + identity, limitations='Synthetic test only.',
+                    result='reviewed', reason='Temporary validation fixture.'))
+            records['practice_source_review_contract'] = [dict(version=1)]
+            records['practice_source_review'] = review_rows
+            package['source_review_refs'] = [dict(subject_kind=r['subject_kind'], subject_id=r['subject_id']) for r in review_rows]
             out = root / 'preview'
             uygulamalar.render_practice_preview(package, out, inventory, source_root=source_root)
             release = next((out / 'releases').iterdir())
             data = json.loads((release / 'records.json').read_text())
+            self.assertEqual(data['practice_source_review'], review_rows)
+            self.assertIn('practice_source_review_sha256', json.loads((release / 'manifest.json').read_text()))
             self.assertEqual(data, arsiv.export_db(release / 'records.sqlite3', release.name, storage_root=out))
             self.assertEqual(arsiv.audit_release(release.name, storage_root=out), release.name)
             self.assertTrue((out / version['original_path']).is_file())
