@@ -180,14 +180,41 @@ class PracticeSourceReview(unittest.TestCase):
                         'partial merge must expose pending inherited coverage')
         pending = uygulamalar.practice_source_review_pending(self.data, [first], [], selection)
         self.assertEqual(pending, [dict(subject_kind='practice_event', subject_id='e', state='pending')])
+        for forged in (dict(first, reason=' '), dict(first, reviewer_kind='human'), dict(first, passage_ids='["p2"]')):
+            with self.assertRaises(ValueError):
+                uygulamalar.practice_source_review_pending(self.data, [forged], [], selection)
         with self.assertRaises(ValueError):
             uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[])
+        # A newly submitted narrow revision is not an inherited R1: it must
+        # independently pass the same full-scope check used by the loader.
+        narrow_new = dict(first, revision=2, reviewed_at='2026-11-19T12:00:00+00:00',
+                          reason='A newly submitted technical reading.')
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[narrow_new])
         second = dict(first, revision=2, reviewed_at='2026-11-19T12:00:00+00:00',
                       source_version_ids='["v", "v2"]', passage_ids='["p1", "p3"]',
                       supported_claim='The expanded technical sources are both described.',
                       reason='Both technical source sections were inspected.')
         self.assertEqual(uygulamalar.practice_source_review_pending(self.data, [first], [second], selection), [])
         self.assertTrue(uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second]))
+
+    def test_merge_adapter_preserves_base_rows_and_enables_v2(self):
+        records = {name: [] for name in uygulamalar.PRACTICE_MERGE_TABLES}
+        package = dict(stage='partial', practice_records=records, source_review_refs=[])
+        base = dict(practice_source_review_contract=[dict(version=1)], practice_source_review=[self.review])
+        prepared = uygulamalar.prepare_practice_merge_pending_reviews(package, base)
+        self.assertEqual(prepared['practice_records']['practice_source_review'], [self.review])
+        self.assertEqual(prepared['practice_records']['practice_source_review_revision_contract'], [dict(version=2)])
+        self.assertEqual(prepared['practice_records']['practice_source_review_revision'], [])
+        self.assertEqual(package['practice_records'], records)
+        broken = copy.deepcopy(package)
+        broken['stage'] = 'complete'
+        with self.assertRaises(ValueError):
+            uygulamalar.prepare_practice_merge_pending_reviews(broken, base)
+        broken = copy.deepcopy(base)
+        broken['practice_source_review_revision_contract'] = [dict(version=2)]
+        with self.assertRaises(ValueError):
+            uygulamalar.prepare_practice_merge_pending_reviews(package, broken)
 
     def test_revision_marker_and_history_cannot_be_removed_or_rewritten(self):
         revision = dict(self.review, revision=2, reviewed_at='2026-11-19T12:00:00+00:00')

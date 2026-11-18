@@ -251,6 +251,54 @@ def validate_practice_source_review(data, reviews, selection=None, *, require_co
     return True
 
 
+def practice_source_review_pending(data, reviews, revisions, selection=None, *, party_id=None, target_keys=None):
+    """Return uncovered current targets after validating all historical readings."""
+    validate_practice_source_review(data, reviews, selection, require_coverage=False,
+                                    party_id=party_id, revisions=revisions, target_keys=target_keys)
+    targets = practice_review_targets(data, selection if target_keys is None else None)
+    if target_keys is not None:
+        targets = {key: targets[key] for key in target_keys}
+    if party_id is not None:
+        targets = {key: value for key, value in targets.items() if not value[1] or party_id in value[1]}
+    latest = {(row['subject_kind'], row['subject_id']): (1, row) for row in reviews}
+    for row in revisions:
+        key = (row['subject_kind'], row['subject_id'])
+        if row['revision'] > latest[key][0]:
+            latest[key] = (row['revision'], row)
+    return [dict(subject_kind=kind, subject_id=identity, state='pending')
+            for (kind, identity), (required, _) in sorted(targets.items())
+            if (kind, identity) not in latest or set(json.loads(latest[(kind, identity)][1]['passage_ids'])) != required]
+
+
+def prepare_practice_merge_pending_reviews(payload, base_records):
+    """Preserve accepted base readings and activate the v2 adapter for a partial merge."""
+    import copy
+    result = copy.deepcopy(payload)
+    records = result['practice_records']
+    if result.get('stage') != 'partial' or not set(PRACTICE_MERGE_TABLES) <= set(records):
+        raise ValueError('Bekleyen inceleme yalnız kısmi birleşmede kullanılabilir')
+    if not base_records.get('practice_source_review_contract'):
+        raise ValueError('Önceki kaynak incelemesi bulunamadı')
+    old_revision_tables = set(base_records).intersection(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+    if old_revision_tables and old_revision_tables != set(PRACTICE_SOURCE_REVIEW_REVISION_TABLES):
+        raise ValueError('Önceki inceleme revizyonu eksik')
+    preserved = {name: copy.deepcopy(base_records[name]) for name in PRACTICE_SOURCE_REVIEW_TABLES}
+    preserved.update({name: copy.deepcopy(base_records[name]) for name in PRACTICE_SOURCE_REVIEW_REVISION_TABLES if name in base_records})
+    preserved.setdefault('practice_source_review_revision_contract', [dict(version=2)])
+    preserved.setdefault('practice_source_review_revision', [])
+    for name, rows in preserved.items():
+        if name in records and records[name] != rows:
+            raise ValueError('Önceki kaynak incelemesi değiştirilemez')
+        records[name] = rows
+    refs = [dict(subject_kind=kind, subject_id=identity)
+        for kind, identity in sorted({(row['subject_kind'], row['subject_id']) for row in preserved['practice_source_review'] + preserved['practice_source_review_revision']})]
+    existing_refs = result.get('source_review_refs')
+    if existing_refs not in (None, [], refs):
+        raise ValueError('Birleşme kaynak inceleme başvuruları değiştirilemez')
+    result['source_review_refs'] = refs
+    return result
+
+
 def _digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
 
@@ -987,7 +1035,7 @@ def load_practice(work, payload):
         os.replace(scratch / 'records.sqlite3', work / 'records.sqlite3')
 
 
-def _load_practice_copy(work, payload, base, *, storage_root=None):
+def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherited_review_pending=False):
     from arsiv import connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing, safe_url, validate_view
     if payload.get('base_release') != base or payload.get('contract_version') != 1 or payload.get('stage') not in ('tracer', 'partial', 'complete') or payload.get('taxonomy_version') != 4:
         raise ValueError('Uygulama paketi veya tabanı geçersiz')
@@ -997,6 +1045,15 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
         raise ValueError('Tam uygulama kanonik kapsam sözleşmesi gerektirir')
     if not isinstance(payload.get('scope_inventory'), list) or payload['practice_records']['practice_contract'][0].get('inventory_digest') != _digest(payload['scope_inventory']):
         raise ValueError('Envanter kapsamı özeti uyuşmuyor')
+    if allow_inherited_review_pending:
+        from arsiv import export_db
+        records = payload['practice_records']
+        if (payload['stage'] != 'partial' or not set(PRACTICE_MERGE_TABLES) <= set(records) or
+                not set(PRACTICE_SOURCE_REVIEW_REVISION_TABLES) <= set(records)):
+            raise ValueError('Bekleyen kaynak incelemesi yalnız kısmi birleşmede kullanılabilir')
+        accepted = export_db(Path(work) / 'records.sqlite3', base, storage_root=storage_root)
+        if not accepted.get('practice_source_review_contract') or not accepted.get('practice_source_review'):
+            raise ValueError('Kabul edilmiş önceki kaynak incelemesi gerekli')
     db = connect(work / 'records.sqlite3')
     try:
         migrate_practice_workspace(db, work / 'pre-practice-migration.sqlite3')
@@ -1161,6 +1218,8 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
         data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'archive_view', 'source_attribution', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'scope_party', 'action', 'match', 'match_candidate', 'lead', 'attempt', 'missing', 'closure', 'reopen']}
         data['release_id'] = base
         validate_practices(data)
+        if allow_inherited_review_pending:
+            validate_practice_descent(accepted, data)
         if reviews:
             refs = payload.get('source_review_refs')
             submitted_reviews = records['practice_source_review'] + (records['practice_source_review_revision'] if review_revisions else [])
@@ -1174,7 +1233,13 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
             initial = [row for row in data['practice_source_review'] if (row['subject_kind'], row['subject_id']) in target_keys]
             if review_revisions:
                 later = [row for row in data['practice_source_review_revision'] if (row['subject_kind'], row['subject_id']) in target_keys]
-                validate_practice_source_review(data, initial, party_id=party, revisions=later, target_keys=target_keys)
+                if allow_inherited_review_pending:
+                    practice_source_review_pending(data, initial, later, party_id=party, target_keys=target_keys)
+                    fresh_initial = [row for row in initial if (row['subject_kind'], row['subject_id']) in new_review_subjects]
+                    fresh_later = [row for row in later if (row['subject_kind'], row['subject_id']) in new_review_subjects]
+                    validate_practice_source_review(data, fresh_initial, party_id=party, revisions=fresh_later, target_keys=new_review_subjects)
+                else:
+                    validate_practice_source_review(data, initial, party_id=party, revisions=later, target_keys=target_keys)
             else:
                 validate_practice_source_review(data, initial, party_id=party, target_keys=target_keys)
         if db.execute('PRAGMA foreign_key_check').fetchall() or db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
@@ -1233,7 +1298,7 @@ def _validate_new_source_path(values, key):
         raise ValueError('Kaynak nesne yolu veya özeti geçersiz')
 
 
-def render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None, source_root=None):
+def render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None, source_root=None, allow_inherited_review_pending=False):
     """Build a private, validated snapshot without touching the writer lock."""
     import os
     import re
@@ -1353,7 +1418,7 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
                     decode_html(raw)
             elif kind == 'archive_view':
                 copy_view(source_root, values, reject_links=True)
-        _load_practice_copy(work, payload, base, storage_root=preview_root)
+        _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
         data = arsiv.export_db(work / 'records.sqlite3', release, strict_identity=True, storage_root=preview_root)
         if inventory is not None:
             extensions = [dict(row, basis_passage_ids=json.loads(row['basis_passage_ids']))
