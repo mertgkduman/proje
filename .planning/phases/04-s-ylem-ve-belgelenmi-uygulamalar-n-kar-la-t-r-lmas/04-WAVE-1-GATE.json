@@ -37,9 +37,11 @@
     "targeted_log": "/tmp/gsd-phase04-repair-targeted.log",
     "targeted_result": "source-backed tracer and taxonomy regression passed; combined run interrupted after known test typo; corrected renderer tests and dossier/tab browser checks passed separately",
     "workspace_preparation": {"pid": 1251605, "log": "/tmp/gsd-phase04-repair-workspace.log", "exit_sidecar": "/tmp/gsd-phase04-repair-workspace.exit", "status": "passed", "workspace": "/tmp/proje-work-hwuz6bni"},
-    "local_publish": {"pid": 2942965, "command": "python3 src/arsiv.py publish --workspace /tmp/proje-work-hwuz6bni --refresh", "log": "/tmp/gsd-phase04-repair-publish.log", "exit_sidecar": "/tmp/gsd-phase04-repair-publish.exit", "status": "running"},
-    "new_release": null,
-    "final_full_gate": "not started; release refresh must finish first"
+    "local_publish": {"pid": 2942965, "command": "python3 src/arsiv.py publish --workspace /tmp/proje-work-hwuz6bni --refresh", "log": "/tmp/gsd-phase04-repair-publish.log", "exit_sidecar": "/tmp/gsd-phase04-repair-publish.exit", "status": "passed", "commit": "8b424e6"},
+    "new_release": "f67ca0a35e634035bf3aa83a46571f50",
+    "new_report_sha256": "96b87ce3daf43c10e5f48514daec89d98b82c5824bfb9439f5effe4121f54238",
+    "audits": {"phase2": {"pid": 3272409, "result": "running", "log": "/tmp/gsd-phase04-repair-audit2.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit2.exit"}, "phase3_complete": {"pid": 3272410, "result": "running", "log": "/tmp/gsd-phase04-repair-audit3.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit3.exit"}, "phase4_tracer": {"pid": 3272411, "result": "running", "log": "/tmp/gsd-phase04-repair-audit4.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit4.exit"}},
+    "final_full_gate": "not started; release audits running"
   },
   "next_plan": "04-02",
   "resume_rule": "Finish the local repair release and required audits, then run the final configured full gate once with durable log and exit sidecar. A timeout is inconclusive and must never be recorded as a pass."
