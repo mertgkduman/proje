@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 3
 status: executing
-stopped_at: Phase04 plan04-03 Task1 complete; Task2 partial checkpoint e55d3ef. Legacy and coverage previews functional, global hashes unchanged. Resume standard isolated audit/manifest, local SQLite safety, new-source ingestion, merge, semantic source-review and full acceptance; no plan advance.
-last_updated: "2026-11-18T09:44:56.218Z"
+stopped_at: "Phase04 plan04-03 Task2 continues: standard preview, private ingestion, source review v1/v2 and internal merge engine complete. HEAD fdca5cf; next public merge CLI/SQL/audit, origin adapter/multi-source validation and full combined acceptance. No plan advance."
+last_updated: "2026-11-18T12:20:00.214Z"
 last_activity: 2026-11-18
 last_activity_desc: Phase 04 plan 04-02 completed; plan 04-03 is next
-state_head: e55d3efed5c9cf16aefc081496f34658333ac0b5
+state_head: fdca5cf66225e466242126890b3f376a31354ecb
 progress:
   total_phases: 6
   completed_phases: 3
@@ -189,6 +189,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-18T09:44:50.414Z
-Stopped at: Phase04 plan04-03 Task1 complete; Task2 partial checkpoint e55d3ef. Legacy and coverage previews functional, global hashes unchanged. Resume standard isolated audit/manifest, local SQLite safety, new-source ingestion, merge, semantic source-review and full acceptance; no plan advance.
+Last session: 2026-11-18T12:19:55.110Z
+Stopped at: Phase04 plan04-03 Task2 continues: standard preview, private ingestion, source review v1/v2 and internal merge engine complete. HEAD fdca5cf; next public merge CLI/SQL/audit, origin adapter/multi-source validation and full combined acceptance. No plan advance.
 Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-03-checks/CONTINUE.md
