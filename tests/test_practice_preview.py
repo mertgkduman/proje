@@ -449,6 +449,41 @@ class PracticePreview(unittest.TestCase):
             self.assertEqual({row['canonical_event_id'] for row in records['practice_event_alias']}, {'tracer-cesme'})
             self.assertIn(package['practice_records']['practice_event_evidence'][0], records['practice_event_evidence'])
 
+    def test_public_merge_distinct_and_unresolved_preserve_references(self):
+        """Both uncertain outcomes pass through the real public adapter."""
+        package = json.loads((arsiv.DATA / 'practices/04-coverage-tracer.json').read_text())
+        inventory = json.loads((arsiv.DATA / 'practices/04-inventory.json').read_text())
+        def rename(value):
+            if isinstance(value, dict):
+                return {key: rename(item) for key, item in value.items()}
+            if isinstance(value, list):
+                return [rename(item) for item in value]
+            return 'technical-separate-event' if value == 'tracer-cesme' else value
+        other = rename(package)
+        other['scope_inventory'] = package['scope_inventory']
+        for table in ('practice_contribution', 'practice_relation', 'practice_legacy_link'):
+            other['practice_records'][table] = []
+        inputs = [dict(identity='first.json', raw=json.dumps(package, ensure_ascii=False).encode()),
+                  dict(identity='second.json', raw=json.dumps(other, ensure_ascii=False).encode())]
+        digests = {item['identity']: hashlib.sha256(item['raw']).hexdigest() for item in inputs}
+        for kind in ('distinct', 'unresolved'):
+            decision = dict(version=1, inventory_digest=uygulamalar._digest(inventory), input_digests=digests,
+                decisions=[dict(id='technical-' + kind, candidate_keys=['cesme-2026-09-27'],
+                    event_refs=[dict(input_package_sha256=digests['first.json'], event_id='tracer-cesme'),
+                                dict(input_package_sha256=digests['second.json'], event_id='technical-separate-event')],
+                    decision=kind, canonical_event_id=None, overlap_reason='Technical fixture preserves uncertainty.',
+                    source_passage_ids=['0105-cesme-p'], reviewed_at='2026-11-18T12:00:00+00:00', reviewer_kind='agent')])
+            with self.subTest(decision=kind):
+                merged = uygulamalar.merge_practice_packages(inventory, inputs, json.dumps(decision).encode())
+                records = merged['practice_records']
+                self.assertEqual({r['canonical_event_id'] for r in records['practice_event_alias']},
+                                 {'tracer-cesme', 'technical-separate-event'})
+                self.assertEqual(records['practice_event_decision'][0]['decision'], kind)
+                self.assertTrue({'tracer-cesme', 'technical-separate-event'} <=
+                                {r['event_id'] for r in records['practice_event_evidence']})
+                self.assertIn(package['practice_records']['practice_contribution'][0], records['practice_contribution'])
+                self.assertIn(package['practice_records']['practice_relation'][0], records['practice_relation'])
+
     def test_preview_command_is_available(self):
         result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src' / 'arsiv.py'),
                                  'practice-preview', '--help'], capture_output=True, text=True)
