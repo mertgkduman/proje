@@ -1298,7 +1298,68 @@ def _validate_new_source_path(values, key):
         raise ValueError('Kaynak nesne yolu veya özeti geçersiz')
 
 
-def render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None, source_root=None, allow_inherited_review_pending=False):
+def merge_practice_packages(inventory, inputs, decisions_raw, *, source_roots=None):
+    """Validate each party package before combining its immutable raw bytes."""
+    import re
+    import tempfile
+    import arsiv
+    from uygulama_birlestirme import merge_packages, _parse
+
+    if not isinstance(inputs, list) or not inputs:
+        raise ValueError('Birleşme girdisi gerekli')
+    packages = [_parse(item['raw']) for item in inputs]
+    base = packages[0].get('base_release')
+    if not isinstance(base, str) or not re.fullmatch(r'[0-9a-f]{32}', base):
+        raise ValueError('Geçersiz taban sürüm')
+    folder = arsiv.safe_path(arsiv.DATA / 'releases', base)
+    manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+    if (manifest.get('release_id') != base or set(manifest.get('files', {})) != {'records.sqlite3', 'records.json', 'index.html'} or
+            any(arsiv.sha(arsiv.safe_path(folder, name)) != digest for name, digest in manifest['files'].items())):
+        raise ValueError('Taban sürüm manifesti uyuşmuyor')
+    data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+    if arsiv.export_db(folder / 'records.sqlite3', base) != data:
+        raise ValueError('Taban sürüm DB ve JSON uyuşmuyor')
+    arsiv.audit_release(base)
+    schemas = (PRACTICE_TABLES | PRACTICE_VARIANT_TABLES | PRACTICE_EVIDENCE_TABLES |
+               PRACTICE_COVERAGE_TABLES | PRACTICE_SOURCE_REVIEW_TABLES | PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+    base_records = {name: data[name] for name in schemas if name in data}
+    roots = source_roots or {}
+    with tempfile.TemporaryDirectory(prefix='gsd-merge-inputs-') as tmp:
+        for index, (item, package) in enumerate(zip(inputs, packages)):
+            party = package.get('party_id')
+            if not isinstance(party, str) or not re.fullmatch(r'[a-z0-9-]+', party):
+                raise ValueError('Her birleşme girdisi için parti sahibi gerekli')
+            if package.get('base_release') != base:
+                raise ValueError('Birleşme tabanları uyuşmuyor')
+            root = roots.get(item['identity'], arsiv.safe_path(arsiv.DATA / 'practices' / 'sources', party))
+            render_practice_preview(package, Path(tmp) / str(index), inventory, base, source_root=root)
+    outcome = merge_packages(inventory, inputs, decisions_raw,
+        decisions_sha256=hashlib.sha256(decisions_raw).hexdigest(), base_records=base_records)
+    payload = outcome['payload']
+    payload['practice_records'].update(materialize_practice_merge(inventory, inputs, decisions_raw, base_records, outcome))
+    if base_records.get('practice_source_review_contract'):
+        payload = prepare_practice_merge_pending_reviews(payload, base_records)
+    # The union can violate constraints even when each input is valid.
+    # Validate the materialized union before returning it to the CLI writer.
+    roots_by_entry = {}
+    for item, package in zip(inputs, packages):
+        root = roots.get(item['identity'], arsiv.safe_path(arsiv.DATA / 'practices' / 'sources', package['party_id']))
+        for entry in package['entries']:
+            roots_by_entry.setdefault(_digest(entry), root)
+    with tempfile.TemporaryDirectory(prefix='gsd-merge-union-') as tmp:
+        _render_practice_preview(payload, Path(tmp) / 'preview', inventory, base,
+            allow_inherited_review_pending=bool(base_records.get('practice_source_review_contract')),
+            _validated_merge_roots=roots_by_entry)
+    return payload
+
+
+def render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None, source_root=None, allow_inherited_review_pending=False, merge_source_roots=None):
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+        source_root=source_root, allow_inherited_review_pending=allow_inherited_review_pending,
+        merge_source_roots=merge_source_roots)
+
+
+def _render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None, source_root=None, allow_inherited_review_pending=False, merge_source_roots=None, _validated_merge_roots=None):
     """Build a private, validated snapshot without touching the writer lock."""
     import os
     import re
@@ -1324,6 +1385,27 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
     base_data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
     if arsiv.export_db(folder / 'records.sqlite3', base, storage_root=storage_root) != base_data:
         raise ValueError('Taban sürüm DB ve JSON uyuşmuyor')
+    merge_roots_by_entry = {} if _validated_merge_roots is None else _validated_merge_roots
+    if _validated_merge_roots is None and set(PRACTICE_MERGE_TABLES) <= set(payload.get('practice_records', {})):
+        records = payload['practice_records']
+        provenance = records['practice_merge_provenance']
+        if len(provenance) != 1:
+            raise ValueError('Tek birleşme kökeni gerekli')
+        prov = provenance[0]
+        raw_inputs = [dict(identity=row['input_identity'], raw=bytes.fromhex(row['raw_hex'])) for row in records['practice_merge_input'] if row['provenance_id'] == prov['id']]
+        saved_inventory = json.loads(prov['inventory_json'])
+        if inventory is not None and inventory != saved_inventory:
+            raise ValueError('Birleşme envanteri uyuşmuyor')
+        regenerated = merge_practice_packages(saved_inventory, raw_inputs, bytes.fromhex(prov['decisions_hex']), source_roots=merge_source_roots)
+        if regenerated != payload:
+            raise ValueError('Birleşme paketi doğrulanmış özgün girdilerle uyuşmuyor')
+        for item in raw_inputs:
+            original = json.loads(item['raw'])
+            party = original['party_id']
+            root = (merge_source_roots or {}).get(item['identity'], arsiv.safe_path(arsiv.DATA / 'practices' / 'sources', party))
+            for entry in original['entries']:
+                merge_roots_by_entry.setdefault(_digest(entry), root)
+        allow_inherited_review_pending = bool(base_data.get('practice_source_review_contract'))
     adapted_from = None
     if payload.get('base_release') != base:
         # The original pilot is a historical input, not a mutable template.
@@ -1395,16 +1477,17 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
         party = payload.get('party_id')
         for entry in payload.get('entries', []):
             kind, values = entry['kind'], entry['values']
+            entry_root = merge_roots_by_entry.get(_digest(entry), source_root)
             if kind in ('document_version', 'archive_view') and any(
                     all(row.get(key) == value for key, value in values.items())
                     for row in base_data.get(kind, [])):
                 continue
             if kind == 'document_version':
-                if not isinstance(party, str) or not re.fullmatch(r'[a-z0-9-]+', party):
+                if not merge_roots_by_entry and (not isinstance(party, str) or not re.fullmatch(r'[a-z0-9-]+', party)):
                     raise ValueError('Yeni kaynak için parti sahibi gerekli')
                 for key in ('original_path', 'readable_path'):
                     _validate_new_source_path(values, key)
-                    copy_asset(source_root, values[key], reject_links=True)
+                    copy_asset(entry_root, values[key], reject_links=True)
                 original = arsiv.safe_path(preview_root, values['original_path'])
                 if original.stat().st_size > arsiv.MAX_SOURCE:
                     raise ValueError('Kaynak boyut sınırını aşıyor')
@@ -1417,7 +1500,12 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
                     from arsiv_gorunum import decode_html
                     decode_html(raw)
             elif kind == 'archive_view':
-                copy_view(source_root, values, reject_links=True)
+                copy_view(entry_root, values, reject_links=True)
+        if merge_roots_by_entry:
+            import copy
+            payload = copy.deepcopy(payload)
+            order = {kind: index for index, kind in enumerate(('document', 'document_version', 'archive_view', 'passage', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing'))}
+            payload['entries'].sort(key=lambda item: order[item['kind']])
         _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
         data = arsiv.export_db(work / 'records.sqlite3', release, strict_identity=True, storage_root=preview_root)
         if inventory is not None:

@@ -3398,7 +3398,8 @@ def main():
     pc = sub.add_parser('practice-check'); pc.add_argument('--input', required=True); pc.add_argument('--inventory'); pc.add_argument('--base-release', default='current')
     pi = sub.add_parser('practice-inventory'); pi.add_argument('--release', default='current'); pi.add_argument('--out', required=True)
     pv = sub.add_parser('practice-coverage'); pv.add_argument('--inventory', required=True); pv.add_argument('--input', required=True); pv.add_argument('--party'); pv.add_argument('--complete', action='store_true')
-    pp = sub.add_parser('practice-preview'); pp.add_argument('--input', required=True); pp.add_argument('--out'); pp.add_argument('--inventory'); pp.add_argument('--base-release', default='current'); pp.add_argument('--source-root')
+    pp = sub.add_parser('practice-preview'); pp.add_argument('--input', required=True); pp.add_argument('--out'); pp.add_argument('--inventory'); pp.add_argument('--base-release', default='current'); pp.add_argument('--source-root'); pp.add_argument('--merge-source-root', action='append', default=[], metavar='INPUT=PATH')
+    pm = sub.add_parser('practice-merge'); pm.add_argument('--inventory', required=True); pm.add_argument('--inputs', nargs='+', required=True); pm.add_argument('--event-decisions'); pm.add_argument('--out', required=True); pm.add_argument('--source-root', action='append', default=[], metavar='INPUT=PATH')
     ps = sub.add_parser('practice-source-check'); ps.add_argument('--input', required=True); ps.add_argument('--review', required=True)
     pl = sub.add_parser('practice-load'); pl.add_argument('--workspace', required=True); pl.add_argument('--input', required=True)
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
@@ -3442,6 +3443,51 @@ def main():
         result = build_practice_inventory(snapshot)
         Path(args.out).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print('PRACTICE_INVENTORY_OK')
+    elif args.command == 'practice-merge':
+        import sys
+        import tempfile
+        from uygulama_birlestirme import _parse, MergeError
+        from uygulamalar import merge_practice_packages
+        inputs = [dict(identity=Path(name).name, raw=Path(name).read_bytes()) for name in args.inputs]
+        def merge_candidates():
+            candidates = {}
+            for item in inputs:
+                package = _parse(item['raw'])
+                for event in package.get('practice_records', {}).get('practice_event', []):
+                    if event.get('common_event_key'):
+                        candidates.setdefault(event['common_event_key'], []).append(dict(input_package_sha256=hashlib.sha256(item['raw']).hexdigest(), event_id=event['id']))
+            return {key: refs for key, refs in candidates.items() if len(refs) > 1}
+        if not args.event_decisions:
+            print(json.dumps(dict(error='event decisions required', candidates=merge_candidates()), ensure_ascii=False, sort_keys=True), file=sys.stderr)
+            raise SystemExit(1)
+        roots = {}
+        for spec in args.source_root:
+            identity, sep, root = spec.partition('=')
+            if not sep or not identity or not root or identity in roots or identity not in {item['identity'] for item in inputs}:
+                raise ValueError('Geçersiz kaynak kökü eşlemesi')
+            roots[identity] = Path(root)
+        inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8'))
+        try:
+            result = merge_practice_packages(inventory, inputs, Path(args.event_decisions).read_bytes(), source_roots=roots)
+        except MergeError as exc:
+            print(json.dumps(dict(error=str(exc), candidates=merge_candidates()), ensure_ascii=False, sort_keys=True), file=sys.stderr)
+            raise SystemExit(1)
+        out = Path(args.out)
+        # A completed temporary file is linked exclusively into place; errors
+        # cannot truncate an existing output or expose a partial JSON file.
+        temporary = None
+        try:
+            with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=out.parent, prefix='.practice-merge-', delete=False) as stream:
+                temporary = Path(stream.name)
+                json.dump(result, stream, ensure_ascii=False, sort_keys=True, indent=2)
+                stream.write('\n')
+                stream.flush()
+                os.fsync(stream.fileno())
+            os.link(temporary, out)
+        finally:
+            if temporary is not None:
+                temporary.unlink(missing_ok=True)
+        print('PRACTICE_MERGE_OK', out)
     elif args.command == 'practice-source-check':
         import tempfile
         from uygulamalar import render_practice_preview
@@ -3471,7 +3517,13 @@ def main():
         package = json.loads(Path(args.input).read_text(encoding='utf-8'))
         inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8')) if args.inventory else None
         out = args.out or str(Path(tempfile.gettempdir()) / ('gsd-practice-preview-' + uuid.uuid4().hex))
-        result = render_practice_preview(package, out, inventory, args.base_release, storage_root=DATA, source_root=args.source_root)
+        merge_roots = {}
+        for spec in args.merge_source_root:
+            identity, sep, root = spec.partition('=')
+            if not sep or not identity or not root or identity in merge_roots:
+                raise ValueError('Geçersiz kaynak kökü eşlemesi')
+            merge_roots[identity] = Path(root)
+        result = render_practice_preview(package, out, inventory, args.base_release, storage_root=DATA, source_root=args.source_root, merge_source_roots=merge_roots)
         print('PRACTICE_PREVIEW_OK', result)
     elif args.command == 'practice-coverage':
         import shutil
@@ -3606,4 +3658,11 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    try:
+        main()
+    except (ValueError, OSError, KeyError, TypeError) as exc:
+        if len(sys.argv) > 1 and sys.argv[1] == 'practice-merge':
+            print(json.dumps({'error': str(exc), 'candidates': []}, ensure_ascii=False, sort_keys=True), file=sys.stderr)
+            raise SystemExit(1)
+        raise

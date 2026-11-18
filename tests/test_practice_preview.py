@@ -177,6 +177,35 @@ class PracticePreview(unittest.TestCase):
             self.assertIn('../../' + version['original_path'], report)
             self.assertIn('../../' + view['index_path'], report)
             report_before = arsiv.sha(release / 'index.html')
+            # Exercise the public merge boundary using the same physical capture.
+            # Its review rows remain original provenance, not a broader review.
+            input_path = root / 'physical.json'
+            input_path.write_text(json.dumps(package, ensure_ascii=False), encoding='utf-8')
+            decision_path = root / 'physical-decisions.json'
+            decision_path.write_text(json.dumps(dict(version=1, inventory_digest=uygulamalar._digest(inventory),
+                input_digests={input_path.name: hashlib.sha256(input_path.read_bytes()).hexdigest()}, decisions=[])), encoding='utf-8')
+            inventory_path = arsiv.DATA / 'practices/04-inventory.json'
+            merged_path = root / 'physical-merged.json'
+            command = [sys.executable, str(arsiv.ROOT / 'src/arsiv.py'), 'practice-merge',
+                '--inventory', str(inventory_path), '--inputs', str(input_path),
+                '--event-decisions', str(decision_path), '--out', str(merged_path),
+                '--source-root', input_path.name + '=' + str(source_root)]
+            result = subprocess.run(command, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            merged = json.loads(merged_path.read_text(encoding='utf-8'))
+            merged_out = root / 'merged-preview'
+            uygulamalar.render_practice_preview(merged, merged_out, inventory,
+                merge_source_roots={input_path.name: source_root})
+            merged_release, = (merged_out / 'releases').iterdir()
+            merged_data = json.loads((merged_release / 'records.json').read_text())
+            self.assertEqual(merged_data, arsiv.export_db(merged_release / 'records.sqlite3', merged_release.name, storage_root=merged_out))
+            self.assertEqual(arsiv.audit_release(merged_release.name, storage_root=merged_out), merged_release.name)
+            self.assertNotIn('practice_source_review', merged_data)
+            self.assertTrue(any(row['origin_kind'] == 'review_origins' for row in merged_data['practice_merge_origin']))
+            merged_report = (merged_release / 'index.html').read_text()
+            self.assertGreaterEqual(merged_report.count('technical-p'), 2)
+            self.assertTrue((merged_out / version['original_path']).is_file())
+            self.assertTrue((merged_out / view['index_path']).is_file())
             (source_root / version['original_path']).write_bytes(raw + b'changed')
             rejected = root / 'rejected'
             with self.assertRaises(ValueError):
@@ -385,7 +414,16 @@ class PracticePreview(unittest.TestCase):
                     return [renamed(item) for item in value]
                 return 'technical-alias-event' if value == 'tracer-cesme' else value
             paths = [root / 'first.json', root / 'second.json']
-            for path, value in zip(paths, [package, renamed(package)]):
+            alias_package = renamed(package)
+            # The scope inventory is signed and describes the accepted base;
+            # the alias does not rewrite its historical references.
+            alias_package['scope_inventory'] = package['scope_inventory']
+            # The accepted base already owns the contribution, relation and
+            # legacy IDs.  An independent alias may cite the event evidence,
+            # but cannot rewrite those immutable rows to point to itself.
+            for table in ('practice_contribution', 'practice_relation', 'practice_legacy_link'):
+                alias_package['practice_records'][table] = []
+            for path, value in zip(paths, [package, alias_package]):
                 path.write_text(json.dumps(value, ensure_ascii=False), encoding='utf-8')
             digests = {path.name: hashlib.sha256(path.read_bytes()).hexdigest() for path in paths}
             decision = dict(version=1, inventory_digest=uygulamalar._digest(inventory), input_digests=digests,
@@ -424,3 +462,23 @@ class PracticePreview(unittest.TestCase):
                 result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src' / 'arsiv.py'),
                                          name, '--help'], capture_output=True, text=True)
                 self.assertEqual(result.returncode, 0, name + ' CLI must be available')
+
+    def test_merge_cli_publishes_complete_output_exclusively(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            inventory = root / 'inventory.json'
+            inventory.write_text('{}', encoding='utf-8')
+            source = root / 'input.json'
+            source.write_text('{}', encoding='utf-8')
+            decisions = root / 'decisions.json'
+            decisions.write_text('{}', encoding='utf-8')
+            out = root / 'merged.json'
+            args = ['arsiv.py', 'practice-merge', '--inventory', str(inventory), '--inputs', str(source),
+                    '--event-decisions', str(decisions), '--out', str(out)]
+            with patch.object(sys, 'argv', args), patch('uygulamalar.merge_practice_packages', return_value={'technical': True}):
+                arsiv.main()
+                self.assertEqual(json.loads(out.read_text(encoding='utf-8')), {'technical': True})
+                with self.assertRaises(FileExistsError):
+                    arsiv.main()
+                self.assertEqual(json.loads(out.read_text(encoding='utf-8')), {'technical': True})
+                self.assertFalse(list(root.glob('.practice-merge-*')))
