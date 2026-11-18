@@ -109,7 +109,7 @@ class PracticeTracer(unittest.TestCase):
         folder = arsiv.DATA / 'releases' / '53b24e6740104cb5be5d3419491bd735'
         data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
         from rapor_v25 import render_report
-        actual = arsiv.render_comparison_snapshot(data, render_report).encode(utf-8)
+        actual = arsiv.render_comparison_snapshot(data, render_report).encode('utf-8')
         self.assertEqual(actual, (folder / 'index.html').read_bytes())
 
     def test_real_archived_event_reaches_both_views(self):

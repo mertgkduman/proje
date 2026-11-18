@@ -44,6 +44,7 @@ from rapor_v21 import render_report as render_v21_report
 from rapor_v22 import render_report as render_v22_report
 from rapor_v23 import render_report as render_v23_report
 from rapor_v24 import render_report as render_v24_report
+from rapor_v25 import render_report as render_v25_report
 from uygulamalar import (PRACTICE_TABLES, validate_practices, load_practice,
                          validate_practice_input, practice_manifest_fields,
                          validate_practice_descent)
@@ -2944,7 +2945,7 @@ def audit_release(release='current', _seen=None):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
         expected = (exported['schema_version'],2) if exported['schema_version'] in (5,6,7) else (4,1)
-        valid_renderers=(25,) if exported['schema_version']==7 else ((16,17,18,19,20,21,22,23,24,25) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10)))
+        valid_renderers=(25,26) if exported['schema_version']==7 else ((16,17,18,19,20,21,22,23,24,25,26) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10)))
         if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6,7) and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_folder = safe_path(DATA / 'releases', base_id)
@@ -2970,7 +2971,7 @@ def audit_release(release='current', _seen=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, 22: render_v22_report, 23: render_v23_report, 24: render_v24_report, RENDERER_VERSION: render_report,
+        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, 22: render_v22_report, 23: render_v23_report, 24: render_v24_report, 25: render_v25_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_bytes() != render_comparison_snapshot(exported, renderer).encode('utf-8'):

@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 25
+RENDERER_VERSION = 26
 STYLE = Path(__file__).with_name('rapor_v24.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -408,13 +408,15 @@ def render_report(data):
                 pieces.append('</details>')
         pieces.append('</article>')
 
-    def add_practice_records(party_id, topic_id=None, comparison=False):
+    def add_practice_records(party_id, topic_id=None, taxonomy_version=None, comparison=False):
         statements = {s['id']: s for s in data.get('practice_statement', [])}
         events = {e['id']: e for e in data.get('practice_event', [])}
         for relation in data.get('practice_relation', []):
             if relation['party_id'] != party_id or (topic_id is not None and relation['topic_id'] != topic_id):
                 continue
             statement, event = statements[relation['statement_id']], events[relation['event_id']]
+            if taxonomy_version is not None and statement['taxonomy_version'] != taxonomy_version:
+                continue
             event_refs = [e for e in data.get('practice_event_evidence', []) if e['event_id'] == event['id']]
             target = findings[relation['target_finding_id']]
             result = findings.get(relation['result_finding_id'])
@@ -618,7 +620,7 @@ def render_report(data):
                         sides = ' · '.join(f'<a href="#{fragment("comparison-" + side["row_id"])}">{esc(parties[side["party_id"]]["legal_name"])}</a>' for side in decision['sides'])
                         pieces.append(f'<p class="metadata">İddianın dayanakları: {sides}</p>')
         for pid in PRESENTATION_ORDER:
-            add_practice_records(pid, topic['topic_id'], comparison=True)
+            add_practice_records(pid, topic['topic_id'], topic['taxonomy_version'], comparison=True)
             for row in data['comparison_row']:
                 if (row['topic_id'],row['taxonomy_version'],row['party_id']) == (topic['topic_id'],topic['taxonomy_version'],pid):
                     add_comparison_row(row)
