@@ -1,6 +1,6 @@
 # Wave 1 regression repair
 
-Status: in progress — renderer repair committed; original gate and targeted checks still running. No new release published yet.
+Status: code repair, corrected local release, and phase 2/3/4 audits complete; final general verification interrupted and resuming in isolated batches.
 
 This is execute-phase step 5.8 repair after completed plan 04-01, not another phase plan. Keep phase progress at 1/15 and do not advance the plan counter.
 
@@ -31,3 +31,10 @@ Write actual commands, results, hashes, corrected release, and any remaining iss
 - New report: `data/releases/f67ca0a35e634035bf3aa83a46571f50/index.html`; SHA-256 `96b87ce3daf43c10e5f48514daec89d98b82c5824bfb9439f5effe4121f54238`. Manifest SHA-256 `fb954f92e57ffe768c3cc63c065c8b7dc55a788af9f91dd5c56a8ff02172eb6b`; records.json `2dbd097af27060cdb5818570faa9620bbcf492465734294d1633c07fcc9aa617`; records.sqlite3 `9151c3055f2d53572b9b116ac6799b0a6cfa10d0ca9d7431dc6787ad15c68f5b`.
 - Required `python3 src/arsiv.py audit --release current --phase 2`, `--phase 3 --stage complete`, and `--phase 4 --stage tracer` all passed, exit 0, with `PHASE2_AUDIT_OK`, `PHASE3_AUDIT_OK` and `PHASE4_AUDIT_OK` for release `f67ca0a35e634035bf3aa83a46571f50`. Logs/exit sidecars: `/tmp/gsd-phase04-repair-audit{2,3,4}.log` and `.exit`.
 - Final full gate started once on the corrected code/current with `timeout --signal=TERM --kill-after=30s 10800 python3 tests/run.py`. Detached supervisor PID 3317561, timeout PID 3317562, test PID 3317563; durable log `/tmp/gsd-phase04-repair-final.log`, exit-code sidecar `/tmp/gsd-phase04-repair-final.exit`. Result pending. Exit 124 or timeout is inconclusive, not pass. No phase counter or requirements changed.
+
+## Daemon recovery and remaining verification
+
+- The corrected final combined run ended with exit code 137 during the daemon restart; no final unittest summary was emitted. Its cause is not established. It is interrupted, not passed and not a confirmed configured timeout.
+- Current remains `f67ca0a35e634035bf3aa83a46571f50`; all three required release audits and publication have exit code 0. No production/test code changed after the final run began (`git diff e756835..HEAD -- src tests` was empty at recovery).
+- Exact log reconciliation identified 108 successful test IDs out of 221 discovered tests; no logged failure/error. The remaining 113 IDs include the interrupted source-revision round-trip. The durable original log is `interrupted-final-suite.log`; `WAVE-1-TEST-RESUME.json` binds its SHA, the code fingerprint, all discovered/passed/remaining IDs and release.
+- Resume only remaining IDs: use fresh sequential module processes for 112 tests and a separate process for the interrupted long test. Preserve each per-test result and per-process exit code immediately. Report completion across batches transparently; do not claim that the original full command exited successfully. The session allocates 2 CPUs and 8 GiB (`scontrol show job 59184152`); process isolation bounds retained state without changing assertions or production code.

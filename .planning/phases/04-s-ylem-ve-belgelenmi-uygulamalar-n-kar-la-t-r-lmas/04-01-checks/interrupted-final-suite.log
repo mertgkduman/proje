@@ -1,0 +1,164 @@
+test_comparison_needs_evidence_and_preserves_multiple_sources (test_acceptance.PhaseOneAcceptance.test_comparison_needs_evidence_and_preserves_multiple_sources) ... ok
+test_current_snapshot_passes (test_acceptance.PhaseOneAcceptance.test_current_snapshot_passes) ... ok
+test_missing_pilot_heading_is_rejected (test_acceptance.PhaseOneAcceptance.test_missing_pilot_heading_is_rejected) ... ok
+test_server_exposes_only_published_paths (test_acceptance.PhaseOneAcceptance.test_server_exposes_only_published_paths) ... ok
+test_closed_snapshot_connection_rejects_writes (test_archive_readonly.ArchiveReadonlyTest.test_closed_snapshot_connection_rejects_writes) ... ok
+test_real_closed_snapshot_matches_ordinary_readonly_queries (test_archive_readonly.ArchiveReadonlyTest.test_real_closed_snapshot_matches_ordinary_readonly_queries) ... ok
+test_workspace_and_unpublished_staging_readers_observe_new_commits (test_archive_readonly.ArchiveReadonlyTest.test_workspace_and_unpublished_staging_readers_observe_new_commits) ... ok
+test_allowed_redirect_host_re_resolves_and_rejects_private_ip (test_archive_views.ArchiveViews.test_allowed_redirect_host_re_resolves_and_rejects_private_ip) ... ok
+test_asset_dns_private_and_mixed_answers_are_rejected (test_archive_views.ArchiveViews.test_asset_dns_private_and_mixed_answers_are_rejected) ... ok
+test_asset_redirect_rejects_private_target_before_connection (test_archive_views.ArchiveViews.test_asset_redirect_rejects_private_target_before_connection) ... ok
+test_capture_exposes_http_charset_and_keeps_original_bytes (test_archive_views.ArchiveViews.test_capture_exposes_http_charset_and_keeps_original_bytes) ... ok
+test_correct_canonical_charter_and_program_render_as_separate_documents (test_archive_views.ArchiveViews.test_correct_canonical_charter_and_program_render_as_separate_documents) ... ok
+test_declared_charsets_and_bom_preserve_turkish_text_and_original (test_archive_views.ArchiveViews.test_declared_charsets_and_bom_preserve_turkish_text_and_original) ... ok
+test_declared_non_utf8_capture_passage_and_export (test_archive_views.ArchiveViews.test_declared_non_utf8_capture_passage_and_export) ... ok
+test_http_only_non_utf8_capture_fails_with_explicit_limitation (test_archive_views.ArchiveViews.test_http_only_non_utf8_capture_fails_with_explicit_limitation) ... ok
+test_known_static_css_cdn_is_localized_while_script_mime_is_rejected (test_archive_views.ArchiveViews.test_known_static_css_cdn_is_localized_while_script_mime_is_rejected) ... ok
+test_passive_document_retains_layout_and_removes_active_requests (test_archive_views.ArchiveViews.test_passive_document_retains_layout_and_removes_active_requests) ... ok
+test_real_input_links_original_hashes_and_valid_local_assets (test_archive_views.ArchiveViews.test_real_input_links_original_hashes_and_valid_local_assets) ... ok
+test_static_panels_stay_readable_and_images_precede_font_budget (test_archive_views.ArchiveViews.test_static_panels_stay_readable_and_images_precede_font_budget) ... ok
+test_utf8_is_declared_early_for_legacy_meta_and_headless_fragments (test_archive_views.ArchiveViews.test_utf8_is_declared_early_for_legacy_meta_and_headless_fragments) ... ok
+test_view_identity_covers_source_url_and_limitations (test_archive_views.ArchiveViews.test_view_identity_covers_source_url_and_limitations) ... ok
+test_void_embed_does_not_hide_following_content (test_archive_views.ArchiveViews.test_void_embed_does_not_hide_following_content) ... ok
+test_closed_release_descent_does_not_hold_descendant_exports (test_audit_memory.AuditMemoryTest.test_closed_release_descent_does_not_hold_descendant_exports) ... ok
+test_rejects_tampered_ancestor_and_cycle (test_audit_memory.AuditMemoryTest.test_rejects_tampered_ancestor_and_cycle) ... ok
+test_pending_lead_blocks_closure (test_chain.ChainContract.test_pending_lead_blocks_closure) ... ok
+test_alternative_and_supplement_are_named_in_both_views (test_comparison_content.ComparisonContentTest.test_alternative_and_supplement_are_named_in_both_views) ... ok
+test_alternatives_remain_independent_across_taxonomy_versions (test_comparison_content.ComparisonContentTest.test_alternatives_remain_independent_across_taxonomy_versions) ... ok
+test_an_alternative_group_cannot_have_only_one_version (test_comparison_content.ComparisonContentTest.test_an_alternative_group_cannot_have_only_one_version) ... ok
+test_attributed_program_can_support_a_verified_topic (test_comparison_content.ComparisonContentTest.test_attributed_program_can_support_a_verified_topic) ... ok
+test_basis_role_migration_preserves_legacy_rows (test_comparison_content.ComparisonContentTest.test_basis_role_migration_preserves_legacy_rows) ... ok
+test_changed_topic_audit_requires_nine_reviewed_rows (test_comparison_content.ComparisonContentTest.test_changed_topic_audit_requires_nine_reviewed_rows) ... ok
+test_child_topic_follows_its_parent_in_comparison_view (test_comparison_content.ComparisonContentTest.test_child_topic_follows_its_parent_in_comparison_view) ... ok
+test_complete_stage_requires_a_closed_source_inventory (test_comparison_content.ComparisonContentTest.test_complete_stage_requires_a_closed_source_inventory) ... ok
+test_direct_load_cannot_bypass_new_dictionary_reconciliation (test_comparison_content.ComparisonContentTest.test_direct_load_cannot_bypass_new_dictionary_reconciliation) ... ok
+test_first_lineage_version_is_bound_to_immediate_base (test_comparison_content.ComparisonContentTest.test_first_lineage_version_is_bound_to_immediate_base) ... ok
+test_identical_source_bytes_cannot_be_a_material_change (test_comparison_content.ComparisonContentTest.test_identical_source_bytes_cannot_be_a_material_change) ... ok
+test_migrated_inventory_is_included_in_snapshot_export (test_comparison_content.ComparisonContentTest.test_migrated_inventory_is_included_in_snapshot_export) ... ok
+test_missing_charter_cannot_use_a_missing_program_attempt (test_comparison_content.ComparisonContentTest.test_missing_charter_cannot_use_a_missing_program_attempt) ... ok
+test_new_comparison_topic_requires_a_sourced_dictionary_topic (test_comparison_content.ComparisonContentTest.test_new_comparison_topic_requires_a_sourced_dictionary_topic) ... ok
+test_no_explicit_statement_requires_a_review_scope (test_comparison_content.ComparisonContentTest.test_no_explicit_statement_requires_a_review_scope) ... ok
+test_program_fields_are_distinguishable_in_both_views (test_comparison_content.ComparisonContentTest.test_program_fields_are_distinguishable_in_both_views) ... ok
+test_program_topic_basis_points_to_the_actual_heading (test_comparison_content.ComparisonContentTest.test_program_topic_basis_points_to_the_actual_heading) ... ok
+test_reconcile_rejects_one_party_new_topic_without_changing_workspace (test_comparison_content.ComparisonContentTest.test_reconcile_rejects_one_party_new_topic_without_changing_workspace) ... ok
+test_reconcile_rolls_back_after_complete_mapping_loader_failure (test_comparison_content.ComparisonContentTest.test_reconcile_rolls_back_after_complete_mapping_loader_failure) ... ok
+test_renderer_16_is_frozen_before_renderer_17 (test_comparison_content.ComparisonContentTest.test_renderer_16_is_frozen_before_renderer_17) ... ok
+test_repeated_fields_merge_only_when_conditions_match_and_keep_sources (test_comparison_content.ComparisonContentTest.test_repeated_fields_merge_only_when_conditions_match_and_keep_sources) ... ok
+test_selected_projection_reproduces_existing_renderer_18_snapshot (test_comparison_content.ComparisonContentTest.test_selected_projection_reproduces_existing_renderer_18_snapshot) ... ok
+test_selected_projection_reproduces_renderer_17_snapshot (test_comparison_content.ComparisonContentTest.test_selected_projection_reproduces_renderer_17_snapshot) ... ok
+test_selected_taxonomy_rendering_keeps_legacy_byte_compatibility (test_comparison_content.ComparisonContentTest.test_selected_taxonomy_rendering_keeps_legacy_byte_compatibility) ... ok
+test_source_inventory_is_converted_for_complete_snapshot (test_comparison_content.ComparisonContentTest.test_source_inventory_is_converted_for_complete_snapshot) ... ok
+test_taxonomy_basis_passages_precede_their_references (test_comparison_content.ComparisonContentTest.test_taxonomy_basis_passages_precede_their_references) ... ok
+test_two_sourced_versions_can_form_an_alternative_group (test_comparison_content.ComparisonContentTest.test_two_sourced_versions_can_form_an_alternative_group) ... ok
+test_typed_v3_renderer_18_snapshot_remains_byte_exact (test_comparison_content.ComparisonContentTest.test_typed_v3_renderer_18_snapshot_remains_byte_exact) ... ok
+test_versioned_lineage_audit_requires_real_review_for_cross_topic_mapping (test_comparison_content.ComparisonContentTest.test_versioned_lineage_audit_requires_real_review_for_cross_topic_mapping) ... ok
+test_direct_hash_reveals_and_focuses_same_row (test_comparison_navigation.ComparisonNavigation.test_direct_hash_reveals_and_focuses_same_row) ... ok
+test_four_browser_navigation_modes (test_comparison_navigation.ComparisonNavigation.test_four_browser_navigation_modes) ... 127.0.0.1 - - [17/Nov/2026 21:51:23] "GET /releases/f67ca0a35e634035bf3aa83a46571f50/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/837f265a88eb4a696d7a44e208b16eceaa5970c11e778f44465e31f89d989e26.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/31574ea1b2f39624a8b6615faefc58002c5b1734692dae4fb38f0de05f829f93.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/fcd1be4fb39c7c1e4e7d338f61c082808a3851fcf0535ca85e1e5c7bb8112a9a.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/130d6c1b7ad5df90ff3c2e0f6f5c2b0c355c79743d0531d9538929f5e1f92bb3.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/702fade24a9694a426ecd80fe28a803d679f79e7f49065b613c7d5a5e1c3d116.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/b581ecf02207f1b877d70be5f2b5d160556a671099dc22c6bd81256ad102eb51.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/5ecb54f91384af7226cb4f18f87588edd49ceff5bdd4a3010336e1c22ccc390d.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/ec4ff2978e0c75e69be755af7ff6e87a102095ec5ebc16b976760d93e36f9b29.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/38bfe8930cabc4de8b04e5019d274ceca330aab88842514951915be55e43a068.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/f27590d95af6b6aca73175a10c32a113a017f69c185d88c42ded64ad6739bde7.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/b86d9b414cd1c76d60f428f16aafe2125919b1e60f5deaf578ae3e86ffc0800b.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/2b73c87211053645a898f31c81ecfd54f1035390a2869498edeee89f1618663d.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/d89e5ba26e4b1a24406e5e3c10ec0ecda397c51680f28ada791479074c8713f2.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/3bb7eeb8e0ed2646180e159d22de44a22f1c064d106c2fae1c9ac10977ce1c65.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/ba33153770e883ebefbf6bfb5a1e8753116c71164084d6a227434d516283eccb.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/afff36043b00372e0dba127b77f263505a30b7df0f747b7242b614aaac143a28.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/19310ebdc4df74634cfec7102aec3002446cef1b2dc2f88f082cb6deec881413.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/048f0cadc0f726aebe31a498fd1266bc7b9529ec3157b5b518ee124a77c16941.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/113edac987f8aec2c1e388f06ef7e6969dde6f27868312490a22ad329c732d9b.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:33] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:35] "GET /releases/f67ca0a35e634035bf3aa83a46571f50/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/837f265a88eb4a696d7a44e208b16eceaa5970c11e778f44465e31f89d989e26.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/fcd1be4fb39c7c1e4e7d338f61c082808a3851fcf0535ca85e1e5c7bb8112a9a.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/130d6c1b7ad5df90ff3c2e0f6f5c2b0c355c79743d0531d9538929f5e1f92bb3.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/702fade24a9694a426ecd80fe28a803d679f79e7f49065b613c7d5a5e1c3d116.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/31574ea1b2f39624a8b6615faefc58002c5b1734692dae4fb38f0de05f829f93.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/b581ecf02207f1b877d70be5f2b5d160556a671099dc22c6bd81256ad102eb51.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/5ecb54f91384af7226cb4f18f87588edd49ceff5bdd4a3010336e1c22ccc390d.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/ec4ff2978e0c75e69be755af7ff6e87a102095ec5ebc16b976760d93e36f9b29.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/38bfe8930cabc4de8b04e5019d274ceca330aab88842514951915be55e43a068.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/f27590d95af6b6aca73175a10c32a113a017f69c185d88c42ded64ad6739bde7.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/b86d9b414cd1c76d60f428f16aafe2125919b1e60f5deaf578ae3e86ffc0800b.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/2b73c87211053645a898f31c81ecfd54f1035390a2869498edeee89f1618663d.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/3bb7eeb8e0ed2646180e159d22de44a22f1c064d106c2fae1c9ac10977ce1c65.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/19310ebdc4df74634cfec7102aec3002446cef1b2dc2f88f082cb6deec881413.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/ba33153770e883ebefbf6bfb5a1e8753116c71164084d6a227434d516283eccb.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/d89e5ba26e4b1a24406e5e3c10ec0ecda397c51680f28ada791479074c8713f2.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/afff36043b00372e0dba127b77f263505a30b7df0f747b7242b614aaac143a28.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/048f0cadc0f726aebe31a498fd1266bc7b9529ec3157b5b518ee124a77c16941.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/113edac987f8aec2c1e388f06ef7e6969dde6f27868312490a22ad329c732d9b.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/13af01f873b8e271418d8f3ac30e3d7cb7fb48fd78afab46362c4a7ba1cf6037.png HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 21:51:44] "GET /views/ecc51c44806790d9980a80aebb940c57/assets/dab3cdbf91b7e599a869f5c6bfc5a51c3367b57b49ad83b839b9ebd9d313c61a.jpg HTTP/1.1" 200 -
+ok
+test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact (test_comparison_navigation.ComparisonNavigation.test_preview_places_rows_by_topic_domain_and_frozen_20_is_exact) ... ok
+test_unicode_and_space_ids_in_real_source_preview (test_comparison_navigation.ComparisonNavigation.test_unicode_and_space_ids_in_real_source_preview) ... ok
+test_contract_descent_is_forward_only_and_preserves_old_records (test_comparison_synthesis_contract.SynthesisContractTest.test_contract_descent_is_forward_only_and_preserves_old_records) ... ok
+test_contract_upgrade_is_atomic_and_cannot_be_downgraded (test_comparison_synthesis_contract.SynthesisContractTest.test_contract_upgrade_is_atomic_and_cannot_be_downgraded) ... ok
+test_historical_v3_typed_synthesis_keeps_its_contract_under_v4 (test_comparison_synthesis_contract.SynthesisContractTest.test_historical_v3_typed_synthesis_keeps_its_contract_under_v4) ... ok
+test_missing_review_and_wrong_source_role_are_rejected (test_comparison_synthesis_contract.SynthesisContractTest.test_missing_review_and_wrong_source_role_are_rejected) ... ok
+test_multiple_positive_parties_need_their_own_real_passages (test_comparison_synthesis_contract.SynthesisContractTest.test_multiple_positive_parties_need_their_own_real_passages) ... ok
+test_old_contract_still_requires_two_owners (test_comparison_synthesis_contract.SynthesisContractTest.test_old_contract_still_requires_two_owners) ... ok
+test_old_subject_and_unsupported_claim_do_not_count_as_review (test_comparison_synthesis_contract.SynthesisContractTest.test_old_subject_and_unsupported_claim_do_not_count_as_review) ... ok
+test_single_positive_and_all_status_claims_use_actual_scope_and_attempt (test_comparison_synthesis_contract.SynthesisContractTest.test_single_positive_and_all_status_claims_use_actual_scope_and_attempt) ... ok
+test_versioned_contract_accepts_one_passage_with_real_scoped_status (test_comparison_synthesis_contract.SynthesisContractTest.test_versioned_contract_accepts_one_passage_with_real_scoped_status) ... ok
+test_comparison_text_is_escaped (test_comparisons.ComparisonReleaseTest.test_comparison_text_is_escaped) ... ok
+test_completion_marker_cannot_be_dropped_by_a_later_release (test_comparisons.ComparisonReleaseTest.test_completion_marker_cannot_be_dropped_by_a_later_release) ... ok
+test_completion_requires_source_meaning_review (test_comparisons.ComparisonReleaseTest.test_completion_requires_source_meaning_review) ... ok
+test_failed_migration_preserves_original_and_current (test_comparisons.ComparisonReleaseTest.test_failed_migration_preserves_original_and_current) ... ok
+test_frozen_renderer_reproduces_previous_html (test_comparisons.ComparisonReleaseTest.test_frozen_renderer_reproduces_previous_html) ... ok
+test_invalid_ownership_and_missing_evidence_rejected (test_comparisons.ComparisonReleaseTest.test_invalid_ownership_and_missing_evidence_rejected) ... ok
+test_migration_retains_two_same_taxonomy_completion_epochs (test_comparisons.ComparisonReleaseTest.test_migration_retains_two_same_taxonomy_completion_epochs)
+A source-closure successor must coexist with its historical epoch. ... ok
+test_new_stylesheet_preserves_historical_style (test_comparisons.ComparisonReleaseTest.test_new_stylesheet_preserves_historical_style) ... ok
+test_published_evidence_cannot_be_rewritten (test_comparisons.ComparisonReleaseTest.test_published_evidence_cannot_be_rewritten) ... ok
+test_real_sources_reach_closed_comparison_release (test_comparisons.ComparisonReleaseTest.test_real_sources_reach_closed_comparison_release) ... ok
+test_adoption_payload_retains_real_source_decisions (test_completion_coverage.CompletionCoverageTest.test_adoption_payload_retains_real_source_decisions) ... ok
+test_committed_adoption_package_passes_shared_validation (test_completion_coverage.CompletionCoverageTest.test_committed_adoption_package_passes_shared_validation) ... ok
+test_complete_base_can_descend_to_partial_revision (test_completion_coverage.CompletionCoverageTest.test_complete_base_can_descend_to_partial_revision) ... ok
+test_coordinated_omission_is_not_a_coverage_decision (test_completion_coverage.CompletionCoverageTest.test_coordinated_omission_is_not_a_coverage_decision)
+The independent authored disposition still requires the omitted organ. ... ok
+test_frozen_renderer_22_reproduces_historical_release (test_completion_coverage.CompletionCoverageTest.test_frozen_renderer_22_reproduces_historical_release) ... ok
+test_historical_contract_fixture_survives_v2_current (test_completion_coverage.CompletionCoverageTest.test_historical_contract_fixture_survives_v2_current)
+A live v2 release cannot turn the historical v1 fixture into v2. ... ok
+test_importer_rejects_forged_review_and_unrelated_correction_atomically (test_completion_coverage.CompletionCoverageTest.test_importer_rejects_forged_review_and_unrelated_correction_atomically) ... ok
+test_independent_basis_detects_coordinated_source_omissions (test_completion_coverage.CompletionCoverageTest.test_independent_basis_detects_coordinated_source_omissions) ... ok
+test_initial_basis_reconciles_authored_origins_before_adoption (test_completion_coverage.CompletionCoverageTest.test_initial_basis_reconciles_authored_origins_before_adoption) ... ok
+test_initial_v2_without_a_legacy_marker_has_no_false_anchor (test_completion_coverage.CompletionCoverageTest.test_initial_v2_without_a_legacy_marker_has_no_false_anchor) ... ok
+test_legacy_proof_projection_survives_additions_but_not_mutation (test_completion_coverage.CompletionCoverageTest.test_legacy_proof_projection_survives_additions_but_not_mutation) ... ok
+test_manifest_binds_revision_basis_selection_and_review (test_completion_coverage.CompletionCoverageTest.test_manifest_binds_revision_basis_selection_and_review) ... ok
+test_mutable_input_cannot_claim_a_modified_historical_marker (test_completion_coverage.CompletionCoverageTest.test_mutable_input_cannot_claim_a_modified_historical_marker) ... ok
+test_new_registered_principle_reading_is_typed_and_dated (test_completion_coverage.CompletionCoverageTest.test_new_registered_principle_reading_is_typed_and_dated) ... ok
+test_re_review_accepts_authenticated_witness_with_new_identity (test_completion_coverage.CompletionCoverageTest.test_re_review_accepts_authenticated_witness_with_new_identity) ... ok
+test_re_review_rejects_forged_source_reading_decisions (test_completion_coverage.CompletionCoverageTest.test_re_review_rejects_forged_source_reading_decisions) ... ok
+test_re_review_rejects_unrelated_positive_as_negative_scope_correction (test_completion_coverage.CompletionCoverageTest.test_re_review_rejects_unrelated_positive_as_negative_scope_correction) ... ok
+test_real_review_and_legacy_snapshot_remain_valid (test_completion_coverage.CompletionCoverageTest.test_real_review_and_legacy_snapshot_remain_valid) ... ok
+test_real_source_adoption_import_export_and_rollback (test_completion_coverage.CompletionCoverageTest.test_real_source_adoption_import_export_and_rollback) ... ok
+test_registered_non_field_decision_bodies_cannot_be_replaced (test_completion_coverage.CompletionCoverageTest.test_registered_non_field_decision_bodies_cannot_be_replaced) ... ok
+test_rejects_available_document_as_missing (test_completion_coverage.CompletionCoverageTest.test_rejects_available_document_as_missing) ... ok
+test_rejects_changed_applicable_level_and_organ (test_completion_coverage.CompletionCoverageTest.test_rejects_changed_applicable_level_and_organ) ... ok
+test_rejects_dropped_field_and_synthesis (test_completion_coverage.CompletionCoverageTest.test_rejects_dropped_field_and_synthesis) ... ok
+test_rejects_missing_source_review (test_completion_coverage.CompletionCoverageTest.test_rejects_missing_source_review) ... ok
+test_rejects_missing_topic_party_and_unmatched_inventory (test_completion_coverage.CompletionCoverageTest.test_rejects_missing_topic_party_and_unmatched_inventory) ... ok
+test_rejects_open_selected_states (test_completion_coverage.CompletionCoverageTest.test_rejects_open_selected_states) ... ok
+test_review_requires_substantive_inspections (test_completion_coverage.CompletionCoverageTest.test_review_requires_substantive_inspections) ... ok
+test_reviewed_finding_provenance_is_required (test_completion_coverage.CompletionCoverageTest.test_reviewed_finding_provenance_is_required) ... ok
+test_revision_validation_preserves_history_and_binds_active_stage (test_completion_coverage.CompletionCoverageTest.test_revision_validation_preserves_history_and_binds_active_stage) ... ok
+test_risk_coverage_requires_linked_field_and_synthesis_decisions (test_completion_coverage.CompletionCoverageTest.test_risk_coverage_requires_linked_field_and_synthesis_decisions) ... ok
+test_same_taxonomy_sourced_addition_partial_then_complete (test_completion_coverage.CompletionCoverageTest.test_same_taxonomy_sourced_addition_partial_then_complete) ... ok
+test_same_taxonomy_sourced_revision_round_trip (test_completion_coverage.CompletionCoverageTest.test_same_taxonomy_sourced_revision_round_trip)
+Publish and audit the real-source fixture in one isolated DATA tree. ... isolated: adopting v2 and rejecting forged reviews/corrections
+isolated: importing source addition and partial revision
+isolated: publishing and auditing partial revision
+isolated: importing source-backed replacement and publishing complete successor

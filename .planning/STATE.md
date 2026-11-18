@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 2
 status: executing
-stopped_at: "Phase 04 Wave 1 repair: renderer26 release f67ca0a35e634035bf3aa83a46571f50 and phase2/3/4 audits passed; final full gate PID 3317563 running, timeout 10800s."
-last_updated: "2026-11-18T02:23:42.800Z"
+stopped_at: Phase 04 Wave 1 repair complete on f67ca0a; final full gate interrupted exit137 during daemon restart. 108/221 tests passed on unchanged code; resume remaining113 by module with isolated long test, preserve original interrupted result.
+last_updated: "2026-11-18T04:13:47.228Z"
 last_activity: 2026-11-17
 last_activity_desc: Phase 04 execution started
-state_head: 60a214a796a70646a48dd902faf3bce3407f77b7
+state_head: c75031a03483ddba9e31d16204b0243449ea9729
 progress:
   total_phases: 6
   completed_phases: 3
@@ -187,6 +187,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-18T02:23:38.513Z
-Stopped at: Phase 04 Wave 1 repair: renderer26 release f67ca0a35e634035bf3aa83a46571f50 and phase2/3/4 audits passed; final full gate PID 3317563 running, timeout 10800s.
-Resume file: /tmp/gsd-phase04-repair-final.log
+Last session: 2026-11-18T04:13:39.570Z
+Stopped at: Phase 04 Wave 1 repair complete on f67ca0a; final full gate interrupted exit137 during daemon restart. 108/221 tests passed on unchanged code; resume remaining113 by module with isolated long test, preserve original interrupted result.
+Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-01-checks/WAVE-1-TEST-RESUME.json

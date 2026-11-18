@@ -1,8 +1,10 @@
 {
   "phase": "04",
   "wave": 1,
-  "status": "running",
-  "completed_plans": ["04-01"],
+  "status": "resuming_verification_after_interruption",
+  "completed_plans": [
+    "04-01"
+  ],
   "release_id": "53b24e6740104cb5be5d3419491bd735",
   "code_head_at_test_start": "9c8bb3bf0e4ede0d349b8b9c39650c8b6b524ec9",
   "build": {
@@ -10,9 +12,22 @@
     "exit_code": 0
   },
   "capability_gates": {
-    "verify.schema-drift": {"block": false, "drift_detected": false, "skipped": false},
-    "verify.codebase-drift": {"block": false, "skipped": true, "reason": "no-structure-md"},
-    "ui.safety-gate": {"block": false, "frontend": true, "hasUiFiles": false, "hasUiSpec": false}
+    "verify.schema-drift": {
+      "block": false,
+      "drift_detected": false,
+      "skipped": false
+    },
+    "verify.codebase-drift": {
+      "block": false,
+      "skipped": true,
+      "reason": "no-structure-md"
+    },
+    "ui.safety-gate": {
+      "block": false,
+      "frontend": true,
+      "hasUiFiles": false,
+      "hasUiSpec": false
+    }
   },
   "test": {
     "command": "python3 tests/run.py",
@@ -25,7 +40,7 @@
     "result": "inconclusive: timeout or interruption; two test failure lines recorded, no final summary or tracebacks"
   },
   "wave_repair": {
-    "status": "in_progress",
+    "status": "code_and_release_complete_verification_pending",
     "test_commit": "093555f",
     "source_commit": "804b513",
     "active_renderer": 26,
@@ -36,12 +51,66 @@
     "practice_legacy": "6 tests passed",
     "targeted_log": "/tmp/gsd-phase04-repair-targeted.log",
     "targeted_result": "source-backed tracer and taxonomy regression passed; combined run interrupted after known test typo; corrected renderer tests and dossier/tab browser checks passed separately",
-    "workspace_preparation": {"pid": 1251605, "log": "/tmp/gsd-phase04-repair-workspace.log", "exit_sidecar": "/tmp/gsd-phase04-repair-workspace.exit", "status": "passed", "workspace": "/tmp/proje-work-hwuz6bni"},
-    "local_publish": {"pid": 2942965, "command": "python3 src/arsiv.py publish --workspace /tmp/proje-work-hwuz6bni --refresh", "log": "/tmp/gsd-phase04-repair-publish.log", "exit_sidecar": "/tmp/gsd-phase04-repair-publish.exit", "status": "passed", "commit": "8b424e6"},
+    "workspace_preparation": {
+      "pid": 1251605,
+      "log": "/tmp/gsd-phase04-repair-workspace.log",
+      "exit_sidecar": "/tmp/gsd-phase04-repair-workspace.exit",
+      "status": "passed",
+      "workspace": "/tmp/proje-work-hwuz6bni"
+    },
+    "local_publish": {
+      "pid": 2942965,
+      "command": "python3 src/arsiv.py publish --workspace /tmp/proje-work-hwuz6bni --refresh",
+      "log": "/tmp/gsd-phase04-repair-publish.log",
+      "exit_sidecar": "/tmp/gsd-phase04-repair-publish.exit",
+      "status": "passed",
+      "commit": "8b424e6"
+    },
     "new_release": "f67ca0a35e634035bf3aa83a46571f50",
     "new_report_sha256": "96b87ce3daf43c10e5f48514daec89d98b82c5824bfb9439f5effe4121f54238",
-    "audits": {"phase2": {"pid": 3272409, "result": "pass", "log": "/tmp/gsd-phase04-repair-audit2.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit2.exit"}, "phase3_complete": {"pid": 3272410, "result": "pass", "log": "/tmp/gsd-phase04-repair-audit3.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit3.exit"}, "phase4_tracer": {"pid": 3272411, "result": "pass", "log": "/tmp/gsd-phase04-repair-audit4.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit4.exit"}},
-    "final_full_gate": {"result": "running", "command": "python3 tests/run.py", "timeout_seconds": 10800, "supervisor_pid": 3317561, "timeout_pid": 3317562, "test_pid": 3317563, "log": "/tmp/gsd-phase04-repair-final.log", "exit_sidecar": "/tmp/gsd-phase04-repair-final.exit"}
+    "audits": {
+      "phase2": {
+        "pid": 3272409,
+        "result": "pass",
+        "log": "/tmp/gsd-phase04-repair-audit2.log",
+        "exit_sidecar": "/tmp/gsd-phase04-repair-audit2.exit"
+      },
+      "phase3_complete": {
+        "pid": 3272410,
+        "result": "pass",
+        "log": "/tmp/gsd-phase04-repair-audit3.log",
+        "exit_sidecar": "/tmp/gsd-phase04-repair-audit3.exit"
+      },
+      "phase4_tracer": {
+        "pid": 3272411,
+        "result": "pass",
+        "log": "/tmp/gsd-phase04-repair-audit4.log",
+        "exit_sidecar": "/tmp/gsd-phase04-repair-audit4.exit"
+      }
+    },
+    "final_full_gate": {
+      "result": "interrupted",
+      "command": "python3 tests/run.py",
+      "timeout_seconds": 10800,
+      "supervisor_pid": 3317561,
+      "timeout_pid": 3317562,
+      "test_pid": 3317563,
+      "log": "/tmp/gsd-phase04-repair-final.log",
+      "exit_sidecar": "/tmp/gsd-phase04-repair-final.exit",
+      "exit_code": 137,
+      "termination_cause": "not established; ended during daemon restart",
+      "completed_successfully_logged_tests": 108,
+      "remaining_tests": 113
+    },
+    "resumed_verification": {
+      "status": "pending",
+      "plan": "04-01-checks/WAVE-1-TEST-RESUME.json",
+      "all_tests": 221,
+      "passed_before_interruption": 108,
+      "remaining": 113,
+      "code_fingerprint": "e78dd8bb47323250cbc78ad978b7c0c0fc75da7ae2f3e83cee3c66111ae91933",
+      "strategy": "fresh sequential module processes; interrupted long revision test in a separate process; retain original exit 137 and validate all test IDs without claiming single-process success"
+    }
   },
   "next_plan": "04-02",
   "resume_rule": "Finish the local repair release and required audits, then run the final configured full gate once with durable log and exit sidecar. A timeout is inconclusive and must never be recorded as a pass."
