@@ -134,6 +134,20 @@ class MergeEngine(unittest.TestCase):
         result = self.merge(d, inputs)
         self.assertEqual(len({x['canonical_event_id'] for x in result['aliases']}), 2)
 
+    def test_base_only_event_reference_is_preserved_without_invented_candidate(self):
+        p = package('base-event', 'p1', 's1')
+        event = p['practice_records'].pop('practice_event')[0]
+        p['practice_records']['practice_event_evidence'] = []
+        inp = [dict(identity='one', raw=raw(p))]
+        d = dict(version=1, inventory_digest=digest(raw(self.inventory)),
+                 input_digests={'one': digest(inp[0]['raw'])}, decisions=[])
+        result = self.merge(d, inp, {'practice_event': [event]})
+        self.assertEqual(result['payload']['practice_records']['practice_relation'][0]['event_id'], 'base-event')
+        self.assertEqual(result['review_origins'][0]['canonical_subject_id'], 'base-event')
+        self.assertFalse(result['decisions'])
+        with self.assertRaises(MergeError):
+            self.merge(d, inp, {})
+
     def test_rejects_conflicting_entry_identity(self):
         inputs = copy.deepcopy(self.inputs)
         p = json.loads(inputs[1]['raw']); p['entries'][0]['values']['id'] = 's1'; p['entries'][0]['values']['extra'] = 'different'

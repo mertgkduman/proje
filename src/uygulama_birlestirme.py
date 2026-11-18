@@ -174,6 +174,15 @@ def merge_packages(inventory, inputs, decisions_raw, *, decisions_sha256, base_r
             relevant = sorted(d['id'] for d, g in applicable if ref in g)
             aliases.append(dict(input_package_sha256=ref[0], input_event_id=ref[1], canonical_event_id=canonical, decision_id=relevant[0] if relevant else None))
     output, origins, entry_origins, refs_origins, review_contract_origins = {}, [], [], [], []
+    def resolve_event(sha, event_id):
+        ref = (sha, event_id)
+        if ref in mapping:
+            return mapping[ref]
+        # A reference to an unchanged accepted base event does not assert a
+        # new identity relationship or constitute a candidate decision.
+        if event_id in base_events:
+            return event_id
+        raise MergeError('Dangling event reference')
     def append(table, row):
         rows = output.setdefault(table, [])
         if row not in rows: rows.append(row)
@@ -193,11 +202,11 @@ def merge_packages(inventory, inputs, decisions_raw, *, decisions_sha256, base_r
                 if table in REVIEW_TABLES:
                     kind, subject = row.get('subject_kind'), row.get('subject_id')
                     canonical = subject
-                    if kind == 'practice_event': canonical = mapping.get((sha, subject))
+                    if kind == 'practice_event': canonical = resolve_event(sha, subject)
                     elif kind == 'practice_event_evidence':
                         parts = subject.split('|') if isinstance(subject, str) else []
-                        if len(parts) != 3 or (sha, parts[0]) not in mapping: raise MergeError('Invalid review event evidence subject')
-                        canonical = '|'.join([mapping[(sha, parts[0])], *parts[1:]])
+                        if len(parts) != 3: raise MergeError('Invalid review event evidence subject')
+                        canonical = '|'.join([resolve_event(sha, parts[0]), *parts[1:]])
                     if not _string(canonical): raise MergeError('Dangling review subject')
                     origins.append(dict(input_package_sha256=sha, input_identity=identity, party_id=p.get('party_id'), table=table, original=row, canonical_subject_id=canonical))
                     continue
@@ -208,8 +217,7 @@ def merge_packages(inventory, inputs, decisions_raw, *, decisions_sha256, base_r
                 elif table in EVENT_FK_TABLES:
                     if 'event_id' not in row: raise MergeError('Missing event reference')
                     if row['event_id'] is not None:
-                        if (sha, row['event_id']) not in mapping: raise MergeError('Dangling event reference')
-                        row['event_id'] = mapping[(sha, row['event_id'])]
+                        row['event_id'] = resolve_event(sha, row['event_id'])
                 if original in base_records.get(table, []) and row != original:
                     raise MergeError('Accepted base row cannot be rewritten')
                 append(table, row)
