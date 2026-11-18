@@ -909,3 +909,115 @@ def validate_practice_input(payload, base_release='current'):
         shutil.copyfile(folder / 'records.sqlite3', work / 'records.sqlite3')
         _load_practice_copy(work, payload, base)
     return True
+
+
+def render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None):
+    """Build a private, validated snapshot without touching the writer lock."""
+    import os
+    import re
+    import shutil
+    import tempfile
+    import arsiv
+
+    storage_root = arsiv.DATA if storage_root is None else Path(storage_root)
+    base = arsiv.current() if base_release == 'current' else base_release
+    if not isinstance(base, str) or not re.fullmatch(r'[0-9a-f]{32}', base):
+        raise ValueError('Geçersiz taban sürüm')
+    folder = arsiv.safe_path(arsiv.DATA / 'releases', base)
+    manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+    if (manifest.get('release_id') != base or set(manifest.get('files', {})) != {'records.sqlite3', 'records.json', 'index.html'} or
+            any(arsiv.sha(arsiv.safe_path(folder, name)) != digest for name, digest in manifest['files'].items())):
+        raise ValueError('Taban sürüm manifesti uyuşmuyor')
+    base_data = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+    if arsiv.export_db(folder / 'records.sqlite3', base, storage_root=storage_root) != base_data:
+        raise ValueError('Taban sürüm DB ve JSON uyuşmuyor')
+    adapted_from = None
+    if payload.get('base_release') != base:
+        # The original pilot is a historical input, not a mutable template.
+        # Only the exact historical package can use its reviewed coverage
+        # successor, after checking that every original row exists in base.
+        original = json.loads((arsiv.DATA / 'practices' / '04-tracer.json').read_text(encoding='utf-8'))
+        successor = json.loads((arsiv.DATA / 'practices' / '04-coverage-tracer.json').read_text(encoding='utf-8'))
+        ancestor = payload.get('base_release')
+        cursor, seen = base, set()
+        while cursor != ancestor:
+            if not isinstance(cursor, str) or not re.fullmatch(r'[0-9a-f]{32}', cursor) or cursor in seen:
+                raise ValueError('Tarihsel sürüm taban zincirinde bulunamadı')
+            seen.add(cursor)
+            history = arsiv.safe_path(arsiv.DATA / 'releases', cursor)
+            historical_manifest = json.loads((history / 'manifest.json').read_text(encoding='utf-8'))
+            if (historical_manifest.get('release_id') != cursor or
+                    set(historical_manifest.get('files', {})) != {'records.sqlite3', 'records.json', 'index.html'}):
+                raise ValueError('Tarihsel sürüm manifesti uyuşmuyor')
+            cursor = historical_manifest.get('base_release')
+        submitted = list(payload.get('entries', [])) + [dict(kind=k, values=row) for k, rows in payload.get('practice_records', {}).items() for row in rows]
+        if (payload != original or successor.get('base_release') != base or not submitted or
+                any(not any(all(row.get(k) == v for k, v in item['values'].items()) for row in base_data.get(item['kind'], [])) for item in submitted)):
+            raise ValueError('Taban sürüm veya tarihsel paket ardıllığı uyuşmuyor')
+        adapted_from = _digest(payload)
+        payload = successor
+    records = payload.get('practice_records', {})
+    markers = records.get('practice_coverage_contract', [])
+    if inventory is not None:
+        revisions = records.get('practice_inventory_revision', [])
+        if len(markers) != 1:
+            raise ValueError('Kapsam envanteri işaretçisi eksik')
+        active = max(revisions, key=lambda x: x['epoch'])['inventory_json'] if revisions else markers[0]['inventory_json']
+        if json.loads(active) != inventory:
+            raise ValueError('Paket ve kanonik envanter uyuşmuyor')
+    out = Path(out).resolve()
+    if out == arsiv.ROOT or arsiv.ROOT in out.parents or out.exists():
+        raise ValueError('Önizleme hedefi mevcut veya proje kökü içinde')
+    if not out.parent.is_dir():
+        raise ValueError('Önizleme hedefinin üst dizini bulunamadı')
+    with tempfile.TemporaryDirectory(prefix='.practice-preview-', dir=out.parent) as tmp:
+        work = Path(tmp)
+        shutil.copyfile(folder / 'records.sqlite3', work / 'records.sqlite3')
+        _load_practice_copy(work, payload, base, storage_root=storage_root)
+        data = arsiv.export_db(work / 'records.sqlite3', base, strict_identity=True, storage_root=storage_root)
+        if inventory is not None:
+            extensions = [dict(row, basis_passage_ids=json.loads(row['basis_passage_ids']))
+                          for row in data.get('practice_topic_extension', [])]
+            validate_practice_coverage(data, inventory, extensions)
+        arsiv.validate_policy_descent(base_data, data)
+        arsiv.validate_comparison_descent(base_data, data)
+        validate_practice_descent(base_data, data)
+        (work / 'records.json').write_text(json.dumps(data, ensure_ascii=False, sort_keys=True, indent=2) + '\n', encoding='utf-8')
+        # Published reports live two levels below the source root; a preview
+        # lives directly at its output root. Copy only validated referenced
+        # objects and declared passive view assets, then rewrite those links.
+        asset_root = work / 'assets'
+        paths = {v[k] for v in data['document_version'] for k in ('original_path', 'readable_path')}
+        for view in data.get('archive_view', []):
+            arsiv.validate_view(storage_root, view)
+            view_manifest = json.loads(arsiv.safe_path(storage_root, view['manifest_path']).read_text(encoding='utf-8'))
+            parent = Path(view['manifest_path']).parent
+            paths.add(view['manifest_path'])
+            paths.update(str(parent / name) for name in view_manifest['files'])
+        asset_hashes = {}
+        for relative in sorted(paths):
+            source = arsiv.safe_path(storage_root, relative)
+            target = arsiv.safe_path(asset_root, relative)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
+            asset_hashes[relative] = arsiv.sha(target)
+        report = arsiv.render_comparison_snapshot(data, arsiv.render_report).replace('href="../../', 'href="assets/')
+        (work / 'index.html').write_text(report, encoding='utf-8')
+        arsiv.validate_phase_one_html(data, report)
+        arsiv.validate_phase_three_workspace(work, data['comparison_contract'][0]['stage'])
+        if data != json.loads((work / 'records.json').read_text(encoding='utf-8')):
+            raise ValueError('Önizleme DB ve JSON uyuşmuyor')
+        preview_manifest = dict(release_id=base, base_release=base, preview=True, renderer_version=arsiv.RENDERER_VERSION, asset_files=asset_hashes,
+                                files={n: arsiv.sha(work / n) for n in ('records.sqlite3', 'records.json', 'index.html')})
+        preview_manifest.update(practice_manifest_fields(data))
+        if adapted_from:
+            preview_manifest['legacy_input_canonical_sha256'] = adapted_from
+        (work / 'manifest.json').write_text(json.dumps(preview_manifest, sort_keys=True) + '\n', encoding='utf-8')
+        saved = json.loads((work / 'manifest.json').read_text(encoding='utf-8'))
+        if (saved != preview_manifest or any(arsiv.sha(arsiv.safe_path(work, n)) != h for n, h in saved['files'].items()) or
+                any(arsiv.sha(arsiv.safe_path(asset_root, n)) != h for n, h in saved['asset_files'].items()) or
+                (work / 'index.html').read_text(encoding='utf-8') != report):
+            raise ValueError('Önizleme manifesti veya HTML uyuşmuyor')
+        (work / 'pre-practice-migration.sqlite3').unlink(missing_ok=True)
+        os.rename(work, out)
+    return out

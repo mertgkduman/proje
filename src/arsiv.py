@@ -3338,6 +3338,7 @@ def main():
     pc = sub.add_parser('practice-check'); pc.add_argument('--input', required=True); pc.add_argument('--inventory'); pc.add_argument('--base-release', default='current')
     pi = sub.add_parser('practice-inventory'); pi.add_argument('--release', default='current'); pi.add_argument('--out', required=True)
     pv = sub.add_parser('practice-coverage'); pv.add_argument('--inventory', required=True); pv.add_argument('--input', required=True); pv.add_argument('--party'); pv.add_argument('--complete', action='store_true')
+    pp = sub.add_parser('practice-preview'); pp.add_argument('--input', required=True); pp.add_argument('--out'); pp.add_argument('--inventory'); pp.add_argument('--base-release', default='current')
     pl = sub.add_parser('practice-load'); pl.add_argument('--workspace', required=True); pl.add_argument('--input', required=True)
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
     cr = sub.add_parser('comparison-reconcile'); cr.add_argument('--workspace', required=True); cr.add_argument('--taxonomy', required=True); cr.add_argument('--inventory', required=True); cr.add_argument('--input', required=True)
@@ -3380,6 +3381,13 @@ def main():
         result = build_practice_inventory(snapshot)
         Path(args.out).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print('PRACTICE_INVENTORY_OK')
+    elif args.command == 'practice-preview':
+        from uygulamalar import render_practice_preview
+        package = json.loads(Path(args.input).read_text(encoding='utf-8'))
+        inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8')) if args.inventory else None
+        out = args.out or str(Path(tempfile.gettempdir()) / ('gsd-practice-preview-' + uuid.uuid4().hex))
+        result = render_practice_preview(package, out, inventory, args.base_release, storage_root=DATA)
+        print('PRACTICE_PREVIEW_OK', result)
     elif args.command == 'practice-coverage':
         import shutil
         import tempfile
