@@ -9,12 +9,25 @@ from pathlib import Path
 import sqlite3
 from html.parser import HTMLParser
 from urllib.parse import unquote
+from unittest.mock import patch
 
 import arsiv
 import kaynaklar
+import uygulamalar
 
 
 class PracticePreview(unittest.TestCase):
+    def test_preview_rejects_nonlocal_sqlite_before_creating_output(self):
+        payload = json.loads((arsiv.DATA / 'practices' / '04-coverage-tracer.json').read_text(encoding='utf-8'))
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / 'preview'
+            with patch('arsiv.subprocess.check_output', return_value='nfs\n'), \
+                    patch('tempfile.TemporaryDirectory', side_effect=AssertionError('unsafe SQLite staging started')):
+                with self.assertRaisesRegex(ValueError, 'yerel dosya sistemi'):
+                    uygulamalar.render_practice_preview(payload, out)
+            self.assertFalse(out.exists())
+            self.assertEqual(list(Path(tmp).iterdir()), [])
+
     def test_attribution_reads_explicit_storage_root(self):
         db = sqlite3.connect(':memory:')
         db.row_factory = sqlite3.Row
