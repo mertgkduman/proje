@@ -410,9 +410,19 @@ def render_report(data):
 
     statements = {s['id']: s for s in data.get('practice_statement', [])}
     events = {e['id']: e for e in data.get('practice_event', [])}
+    practice_actors = {a['id']: a for a in data.get('actor', [])}
     event_evidence = {}
     event_contributions = {}
     event_relations = {}
+    event_disputes = {}
+    dispute_evidence = {}
+    changes_by_party_topic = {}
+    for item in data.get('practice_dispute', []):
+        event_disputes.setdefault(item['event_id'], []).append(item)
+    for item in data.get('practice_dispute_evidence', []):
+        dispute_evidence.setdefault(item['dispute_id'], []).append(item)
+    for item in data.get('practice_position_change', []):
+        changes_by_party_topic.setdefault((item['party_id'], item['topic_id']), []).append(item)
     relations_by_party_topic = {}
     unmatched_by_party_topic = {}
     practice_scopes = {s['id']: s for s in data.get('practice_scope', [])}
@@ -461,14 +471,28 @@ def render_report(data):
                               + ' '.join(named_citation(x['passage_id']) for x in evidence[target['id']]) + '</p>')
             if result:
                 pieces.append(f'<p data-finding-id="{esc(result["id"])}">Belgelenmiş sonuç: <span class="summary">{esc(result["text"])}</span> '
-                              + ' '.join(named_citation(x['passage_id']) for x in event_refs) + '</p>')
+                              + ' '.join(named_citation(x['passage_id']) for x in evidence[result['id']]) + '</p>')
             else:
                 pieces.append('<p>Belgelenmiş sonuç: ' + esc(relation['uncertainty_reason']) + '</p>')
+            for stage, label in (('initiative', 'Karar veya girişim'), ('action', 'Fiilen yapılan'), ('result', 'Belgelenmiş sonuç dayanağı')):
+                refs = [ref for ref in event_refs if ref['stage'] == stage]
+                if refs:
+                    pieces.append('<p>' + label + ': ' + ' '.join('<span class="summary">' + esc(ref['supported_point']) + '</span> ' + named_citation(ref['passage_id']) for ref in refs) + '</p>')
+                else:
+                    pieces.append('<p>' + label + ': Bu aşama için bağlı kanıt bulunmuyor.</p>')
+            for dispute in event_disputes.get(event['id'], []):
+                refs = dispute_evidence.get(dispute['id'], [])
+                pieces.append('<p class="summary">Desteklenen: ' + esc(dispute['supported_points']) + ' · Tartışılan: ' + esc(dispute['disputed_points']) + ' · Çözülemeyen: ' + esc(dispute['unresolved_points']) + ' ' + ' '.join(named_citation(ref['passage_id']) for ref in refs) + '</p>')
             for contribution in event_contributions.get(event['id'], []):
                 if contribution['event_id'] == event['id'] and contribution['party_id'] == party_id:
                     event_finding = findings[contribution['finding_id']]
+                    if practice_actors[contribution['actor_id']]['kind'] == 'individual_mp':
+                        pieces.append('<p>Bireysel milletvekili faaliyeti; kurumsal tutum olarak değerlendirilmez.</p>')
+                    if not event['event_at'] and practice_actors[contribution['actor_id']]['kind'] in ('individual_mp', 'authorized_representative'):
+                        pieces.append('<p>Olay tarihi belirsiz olduğundan aktörün yetki veya üyelik dönemiyle çakışması doğrulanamadı.</p>')
                     pieces.append(f'<p class="summary" data-finding-id="{esc(event_finding["id"])}">{esc(event_finding["text"])} '
                                   + ' '.join(named_citation(x['passage_id']) for x in evidence[event_finding['id']]) + '</p>')
+                    pieces.append('<p class="summary">' + esc(contribution['responsibility_limit']) + '</p>')
                     for paired in findings_by_pair[event_finding['pair_id']]:
                         if paired['pair_id'] == event_finding['pair_id'] and paired['provenance'] == 'quote':
                             cls, quoted = format_finding(paired)
@@ -476,6 +500,7 @@ def render_report(data):
             if statement['id'] not in shown_statements:
                 cls, text = format_finding(quote)
                 pieces.append(f'<p class="{cls}" data-finding-id="{esc(quote["id"])}">{text} {time_tag(statement["statement_at"])} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[quote['id']]) + '</p>')
+                pieces.append(f'<p class="summary">{esc(statement["period_basis"])} {esc(statement["uncertainty_reason"])}</p>')
                 shown_statements.add(statement['id'])
             pieces.append(f'<p class="summary" data-finding-id="{esc(explanation["id"])}">{esc(explanation["text"])} ' + ' '.join(citation(x['passage_id']) for x in evidence[explanation['id']]) + '</p>')
             pieces.append(f'<p>{time_tag(event["event_at"])} · {esc(relation["authority_context"])} '
@@ -488,8 +513,27 @@ def render_report(data):
                     pieces.append(f'<p><a href="#{fragment(prefix + related["id"])}">Aynı olayın diğer ilişkisi: {esc(related["party_id"])} · {esc(related["topic_id"])}</a></p>')
             pieces.append('<details><summary>Kaynak ve kapsam ayrıntıları</summary>')
             for ref in event_refs:
-                pieces.append(f'<p>{esc(ref["concrete_basis"])} {esc(ref["limitation"])} {citation(ref["passage_id"])}</p>')
+                pieces.append(f'<p class="summary">{esc(ref["concrete_basis"])} {esc(ref["limitation"])} {citation(ref["passage_id"])}</p>')
+            for dispute in event_disputes.get(event['id'], []):
+                for ref in dispute_evidence.get(dispute['id'], []):
+                    label = {'support': 'Destek', 'conflict': 'Karşı anlatım', 'reply': 'Yanıt'}[ref['role']]
+                    pieces.append(f'<p class="summary">{label}: {esc(ref["point"])} · {esc(ref["source_position"])} {citation(ref["passage_id"])}</p>')
             pieces.append(f'<p>{esc(relation["comparability_reason"])} {esc(relation["temporal_context"])} {esc(relation["uncertainty_reason"])}</p></details></article>')
+        for (pid, tid), changes in changes_by_party_topic.items():
+            if pid != party_id or (topic_id is not None and tid != topic_id):
+                continue
+            for change in changes:
+                before, after = statements[change['before_statement_id']], statements[change['after_statement_id']]
+                if taxonomy_version is not None and (before['taxonomy_version'], after['taxonomy_version']) != (taxonomy_version, taxonomy_version):
+                    continue
+                finding = findings[change['explanation_finding_id']]
+                prefix = 'comparison-change-' if comparison else 'party-change-'
+                pieces.append(f'<article class="record" id="{esc(prefix + change["id"])}"><h4>Kaynaklı tutum değişimi</h4>')
+                for label, statement in (('Önce', before), ('Sonra', after)):
+                    quote = findings[statement['quote_finding_id']]
+                    cls, text = format_finding(quote)
+                    pieces.append(f'<p class="{cls}">{label}: {text} {time_tag(statement["statement_at"])} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[quote['id']]) + '</p>')
+                pieces.append(f'<p class="summary">{esc(finding["text"])} {esc(change["comparison_conditions"])} {esc(change["uncertainty_reason"])} ' + ' '.join(named_citation(x['passage_id']) for x in evidence[finding['id']]) + '</p></article>')
         for (pid, tid, ver), items in unmatched_by_party_topic.items():
             if pid != party_id or (topic_id is not None and (tid, ver) != (topic_id, taxonomy_version)):
                 continue
@@ -511,14 +555,34 @@ def render_report(data):
                 pieces.append(f'<article class="record" id="{esc(prefix + item["id"])}"><h4>{esc(event["title"])}</h4><p>{time_tag(event["event_at"])} · {esc(state)} · {esc(item["reason"])} <a href="#{fragment(other + item["id"])}">Diğer görünüm</a></p>')
                 if not event['event_at']:
                     pieces.append(f'<p>Tarih belirsiz: {esc(event["date_unknown_reason"])}</p>')
-                pieces.append('<p>' + ' '.join(named_citation(ref['passage_id']) for ref in event_evidence.get(event['id'], [])) + '</p></article>')
+                refs = event_evidence.get(event['id'], [])
+                for stage, label in (('initiative', 'Karar veya girişim'), ('action', 'Fiilen yapılan'), ('result', 'Belgelenmiş sonuç')):
+                    stage_refs = [ref for ref in refs if ref['stage'] == stage]
+                    pieces.append('<p>' + label + ': ' + (' '.join('<span class="summary">' + esc(ref['supported_point']) + '</span> ' + named_citation(ref['passage_id']) for ref in stage_refs) if stage_refs else 'Bu aşama için bağlı kanıt bulunmuyor.') + '</p>')
+                for contribution in event_contributions.get(event['id'], []):
+                    if contribution['party_id'] == party_id:
+                        finding = findings[contribution['finding_id']]
+                        if practice_actors[contribution['actor_id']]['kind'] == 'individual_mp':
+                            pieces.append('<p>Bireysel milletvekili faaliyeti; kurumsal tutum olarak değerlendirilmez.</p>')
+                        if not event['event_at'] and practice_actors[contribution['actor_id']]['kind'] in ('individual_mp', 'authorized_representative'):
+                            pieces.append('<p>Olay tarihi belirsiz olduğundan aktörün yetki veya üyelik dönemiyle çakışması doğrulanamadı.</p>')
+                        pieces.append(f'<p class="summary">{esc(finding["text"])} {esc(contribution["responsibility_limit"])} ' + ' '.join(named_citation(ref['passage_id']) for ref in evidence[finding['id']]) + '</p>')
+                for dispute in event_disputes.get(event['id'], []):
+                    refs = dispute_evidence.get(dispute['id'], [])
+                    pieces.append('<p class="summary">Desteklenen: ' + esc(dispute['supported_points']) + ' · Tartışılan: ' + esc(dispute['disputed_points']) + ' · Çözülemeyen: ' + esc(dispute['unresolved_points']) + ' ' + ' '.join(named_citation(ref['passage_id']) for ref in refs) + '</p>')
+                    pieces.append('<details><summary>İhtilaf kaynakları</summary>')
+                    for ref in refs:
+                        label = {'support': 'Destek', 'conflict': 'Karşı anlatım', 'reply': 'Yanıt'}[ref['role']]
+                        pieces.append(f'<p class="summary">{label}: {esc(ref["point"])} · {esc(ref["source_position"])} {citation(ref["passage_id"])}</p>')
+                    pieces.append('</details>')
+                pieces.append('</article>')
 
     def add_matches(matches, candidates):
         if matches:
             actions = {a['finding_id']: a for a in data['action']}
             actors = {a['id']: a for a in data['actor']}
             pieces.append('<details class="record"><summary>Söylem ve uygulama eşleşmeleri</summary>'
-                          '<p class="metadata">Toplu ve yerel kayıtlar örtüşebilir. Ön seçim ile kongredeki nihai seçim ayrı olaylardır.</p>')
+                          '<p class="metadata">Toplu ve yerel kayıtlar örtüşebilir; olayın aşamaları ve kapsamı ayrı değerlendirilir.</p>')
             for m in matches:
                 action = actions[m['action_finding_id']]
                 actor = actors[action['actor_id']]
@@ -572,7 +636,7 @@ def render_report(data):
                 previous_rows=[f for f in rows if f['id'] in legacy_findings]
                 primary_rows=[f for f in rows if f['id'] not in legacy_findings]
                 if key == 'soylem-uygulama' and data.get('practice_relation'):
-                    practice_ids = {value for table in ('practice_statement', 'practice_relation', 'practice_contribution') for item in data.get(table, []) for name, value in item.items() if name.endswith('finding_id') and value}
+                    practice_ids = {value for table in ('practice_statement', 'practice_relation', 'practice_contribution', 'practice_dispute', 'practice_position_change') for item in data.get(table, []) for name, value in item.items() if name.endswith('finding_id') and value}
                     pairs = {findings[fid]['pair_id'] for fid in practice_ids if fid in findings}
                     primary_rows = [f for f in primary_rows if f['pair_id'] not in pairs]
                 card_pairs={findings[f['finding_id']]['pair_id'] for f in dossier_fields if f['finding_id'] in findings}

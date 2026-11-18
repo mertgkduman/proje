@@ -4,11 +4,14 @@
   status: resolved
   Renderer 25 was frozen as `src/rapor_v25.py`; its CSS24 remains unchanged. The active renderer now uses version 26.
 - Before 04-02 changes the active renderer, freeze the then-current renderer 26 and preserve its CSS and dispatch, with byte-reproduction coverage; retain the historical 16 and 24 stylesheet checks.
-  status: open
+  status: resolved
+  Renderer 26 remains frozen; the content regression reproduces its archived bytes and the historical stylesheet assertions are retained.
 - Replace the Çeşme-specific missing-result wording when 04-02 renders other event types; do not imply their results concern a congress.
-  status: open
+  status: resolved
+  Event-specific uncertainty is shown without inferring a congress result.
 - Extend the tracer contribution validator in 04-02 to represent individually sourced MP activity as individual activity, without treating it as the party's institutional position.
-  status: open
+  status: resolved
+  Independently sourced identity, membership and period are checked; both views identify the contribution as individual activity.
 - The pre-existing `test_new_stylesheet_preserves_historical_style` expects `rapor_v16.css` although the baseline renderer already uses `rapor_v24.css`; the required comparison regression therefore fails before this plan's changes.
   status: resolved
   Resolved in 7d9ba91: the regression separately checks the frozen renderer 16 and 24 producers and styles, and the current renderer 25 style.

@@ -46,7 +46,7 @@ from rapor_v23 import render_report as render_v23_report
 from rapor_v24 import render_report as render_v24_report
 from rapor_v25 import render_report as render_v25_report
 from rapor_v26 import render_report as render_v26_report
-from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, validate_practices, load_practice,
+from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, validate_practices, load_practice,
                          validate_practice_input, practice_manifest_fields,
                          validate_practice_descent)
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
@@ -2497,6 +2497,8 @@ def validate_evidence(db, finding, passage, *, validated_policy=None):
         has_practice = db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_source_party'").fetchone()
         shared = has_practice and db.execute('SELECT 1 FROM practice_source_party WHERE version_id=? AND party_id=? AND passage_id=? AND scope_reason<>\'\'', (row['version_id'], finding['party_id'], passage['id'])).fetchone()
         used = has_practice and db.execute('SELECT 1 FROM practice_contribution WHERE finding_id=? UNION SELECT 1 FROM practice_statement WHERE summary_finding_id=? OR quote_finding_id=? UNION SELECT 1 FROM practice_relation WHERE target_finding_id=? OR result_finding_id=? OR explanation_finding_id=?', (finding['id'],) * 6).fetchone()
+        if not used and db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_evidence_contract'").fetchone():
+            used = db.execute('SELECT 1 FROM practice_dispute WHERE summary_finding_id=? UNION SELECT 1 FROM practice_position_change WHERE explanation_finding_id=?', (finding['id'], finding['id'])).fetchone()
         if not shared or not used: raise ValueError('Kanıt başka partiye ait')
     if finding['provenance'] == 'quote' and finding['text'] not in passage['exact']: raise ValueError('Alıntı pasajda bulunamadı')
     compiled = check_evidence_attribution(db,finding,row,validated_policy=validated_policy)
@@ -2695,6 +2697,9 @@ def export_db(path, release_id, strict_identity=False):
         variant_present = existing.intersection(PRACTICE_VARIANT_TABLES)
         if variant_present and (variant_present != set(PRACTICE_VARIANT_TABLES) or not has_practices or not db.execute('SELECT 1 FROM practice_variant_contract').fetchone()):
             raise ValueError('Uygulama varyant işaretçisi veya tabloları eksik')
+        evidence_present = existing.intersection(PRACTICE_EVIDENCE_TABLES)
+        if evidence_present and (evidence_present != set(PRACTICE_EVIDENCE_TABLES) or not variant_present or not db.execute('SELECT 1 FROM practice_evidence_contract').fetchone()):
+            raise ValueError('Uygulama kanıt işaretçisi veya tabloları eksik')
         if has_practices and practice_version != 7:
             raise ValueError('Uygulama şema sürümü eksik')
         if has_practices and not db.execute('SELECT 1 FROM practice_contract').fetchone():
@@ -2729,6 +2734,8 @@ def export_db(path, release_id, strict_identity=False):
             names += list(PRACTICE_TABLES)
             if variant_present:
                 names += list(PRACTICE_VARIANT_TABLES)
+            if evidence_present:
+                names += list(PRACTICE_EVIDENCE_TABLES)
         result = {'schema_version': 7 if has_practices else (6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))))), 'release_id': release_id}
         if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
@@ -2875,7 +2882,7 @@ def comparison_render_data(data):
     # summary, so removing obsolete comparison-only findings cannot break a
     # dossier or a version-history reference.
     referenced = set(active_findings)
-    for table in ('action', 'match', 'dossier_field', 'dossier_event', 'version_context', 'version_relation', 'practice_statement', 'practice_relation', 'practice_contribution'):
+    for table in ('action', 'match', 'dossier_field', 'dossier_event', 'version_context', 'version_relation', 'practice_statement', 'practice_relation', 'practice_contribution', 'practice_dispute', 'practice_position_change'):
         for row in data.get(table, []):
             referenced.update(value for key, value in row.items() if key.endswith('finding_id') and value)
     for policy in data.get('source_policy', []):
@@ -2937,7 +2944,7 @@ def audit_release(release='current', _seen=None):
         if exported['schema_version'] == 7:
             fields = practice_manifest_fields(exported)
             if ({k: manifest.get(k) for k in fields} != fields or
-                    ('practice_variant_sha256' in manifest) != ('practice_variant_sha256' in fields)):
+                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256'))):
                 raise ValueError('Uygulama manifesti geçersiz')
         elif any(k.startswith('practice_') for k in manifest):
             raise ValueError('Uygulama snapshot işaretçisi eksik')

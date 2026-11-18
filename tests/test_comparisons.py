@@ -142,7 +142,7 @@ class ComparisonReleaseTest(unittest.TestCase):
         self.assertEqual(arsiv.sha(source / 'rapor_v24.py'), 'adbc002bc4b2c39077ba9e908c01bc56e5133f896d66c9636a0d84682f6d053b')
         self.assertEqual(rapor_v16.STYLE, style16.read_text(encoding='utf-8'))
         self.assertEqual(rapor_v24.STYLE, style24.read_text(encoding='utf-8'))
-        self.assertEqual(rapor.STYLE, style24.read_text(encoding='utf-8'))
+        self.assertEqual(rapor.STYLE, (source / 'rapor_v25.css').read_text(encoding='utf-8'))
         self.assertIn('.comparison-row', rapor.STYLE)
         self.assertIn('.summary { color: #003366;', rapor.STYLE)
         self.assertIn('.quote { color: #000;', rapor.STYLE)
