@@ -16,4 +16,5 @@
   status: resolved
   Resolved in 7d9ba91: the regression separately checks the frozen renderer 16 and 24 producers and styles, and the current renderer 25 style.
 - A partial merged snapshot cannot currently advance its `practice_contract` stage to complete: `validate_practice_merge` compares the replayed partial contract row for exact equality with the promoted row. `/tmp/gsd-04-pending-e2e-v3.log` reaches full review coverage and then fails with `Birleşme kaydı kayıp: practice_contract`. Preserve replay integrity while allowing legitimate monotonic stage progression before final merge acceptance.
-  status: open
+  status: resolved
+  Fixed in `2b066d4`. `/tmp/gsd-04-stage-red.log/.exit` reproduces the exact replay failure; `/tmp/gsd-04-stage-green-v2.log/.exit` passes 2/2, including SQLite-persisted merge replay, immutable contract fields and stage downgrade/unknown-stage rejection. Ordinary validation rejects the real open coverage and missing reviews; with closed coverage states simulated, it accepts separately generated complete technical review records. `/tmp/gsd-04-stage-regressions.log/.exit` passes 11/11 focused regressions. This does not claim real coverage is closed.

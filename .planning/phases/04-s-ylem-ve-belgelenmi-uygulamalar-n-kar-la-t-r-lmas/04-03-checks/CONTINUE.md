@@ -1,5 +1,10 @@
 # 04-03 devam: Task 1 tamamlandı, Task 2 bekliyor
 
+### 2026-11-18 birleşme aşaması yükseltme düzeltmesi
+
+- `2b066d4` replay içindeki `practice_contract` için yalnız `tracer → partial → complete` yönünde aşama yükseltmesine izin verir; diğer bütün alanlar ve alan kümesi aynen korunur. Bilinmeyen aşama, gerileme, değişen version/taxonomy/method/digest ve kayıp diğer kaynak satırları reddedilir. Bu değişiklik global complete kapsamı veya kaynak incelemesi doğrulamasını atlamaz.
+- `/tmp/gsd-04-stage-red.log/.exit` önceki exact-row hatasını yeniden üretti; `/tmp/gsd-04-stage-green-v2.log/.exit` 2/2 exit 0: SQLite'ta saklanıp okunmuş merge uzantısı, yükseltme ve negatifler; gerçek tabanlı ordinary validator açık coverage ve eksik incelemeyi reddeder, yalnız teknik fixture'da coverage durumları kapalı simüle edilip tam kaynak incelemeleri üretildikten sonra geçer. Gerçek kapsam kapatılmadı. `/tmp/gsd-04-stage-regressions.log/.exit` 11/11 exit 0. Deferred kayıt resolved. Public CLI, fiziksel çoklu-source adapter ve Task 2 tam kabulü hâlâ bekliyor; SUMMARY/sayaç ilerletilmedi.
+
 ### 2026-11-18 kısmi birleşmede devralınan incelemenin beklemesi
 
 - Kabul edilmiş tabandaki R1 yeni kanıt eklenince değiştirilmez, yeni R2 uydurulmaz; v2 geçmiş yolu eski okumanın gerçek pasaj/sürüm ve sahipliğini doğrular. `practice_source_review_pending(data, initial_rows, revision_rows, selection=None, party_id=None, target_keys=None)` doğrulanmış kayıtlara göre kapsanmayan veya artık dar kalan hedefleri `{subject_kind, subject_id, state:'pending'}` olarak hesaplar. Tam `validate_practice_source_review`/`practice-source-check` ve `stage=complete` hâlâ bütün güncel pasajları kapsayan gerçek ayrı okumaları zorunlu tutar.
