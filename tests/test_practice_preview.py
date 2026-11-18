@@ -372,6 +372,45 @@ class PracticePreview(unittest.TestCase):
                 self.fail('merge must report undecided candidates as JSON')
             self.assertTrue(diagnostic['candidates'])
 
+    def test_merge_same_event_preserves_base_event_and_is_order_independent(self):
+        package = json.loads((arsiv.DATA / 'practices/04-coverage-tracer.json').read_text(encoding='utf-8'))
+        inventory_path = arsiv.DATA / 'practices/04-inventory.json'
+        inventory = json.loads(inventory_path.read_text(encoding='utf-8'))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            def renamed(value):
+                if isinstance(value, dict):
+                    return {key: renamed(item) for key, item in value.items()}
+                if isinstance(value, list):
+                    return [renamed(item) for item in value]
+                return 'technical-alias-event' if value == 'tracer-cesme' else value
+            paths = [root / 'first.json', root / 'second.json']
+            for path, value in zip(paths, [package, renamed(package)]):
+                path.write_text(json.dumps(value, ensure_ascii=False), encoding='utf-8')
+            digests = {path.name: hashlib.sha256(path.read_bytes()).hexdigest() for path in paths}
+            decision = dict(version=1, inventory_digest=uygulamalar._digest(inventory), input_digests=digests,
+                decisions=[dict(id='technical-same', candidate_keys=['cesme-2026-09-27'],
+                    event_refs=[dict(input_package_sha256=digests[paths[0].name], event_id='tracer-cesme'),
+                                dict(input_package_sha256=digests[paths[1].name], event_id='technical-alias-event')],
+                    decision='same', canonical_event_id='tracer-cesme', overlap_reason='Technical duplicate fixture.',
+                    source_passage_ids=['0105-cesme-p'], reviewed_at='2026-11-18T12:00:00+00:00', reviewer_kind='agent')])
+            decisions = root / 'decisions.json'
+            decisions.write_text(json.dumps(decision, ensure_ascii=False), encoding='utf-8')
+            outputs = []
+            for index, inputs in enumerate((paths, list(reversed(paths)))):
+                out = root / ('merged-' + str(index) + '.json')
+                result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src/arsiv.py'), 'practice-merge',
+                    '--inventory', str(inventory_path), '--inputs', *map(str, inputs),
+                    '--event-decisions', str(decisions), '--out', str(out)], capture_output=True, text=True)
+                self.assertEqual(result.returncode, 0, 'same-event merge must succeed: ' + result.stderr)
+                outputs.append(json.loads(out.read_text(encoding='utf-8')))
+            self.assertEqual(outputs[0], outputs[1])
+            records = outputs[0]['practice_records']
+            self.assertEqual([row for row in records['practice_event'] if row['id'] == 'tracer-cesme'],
+                             package['practice_records']['practice_event'])
+            self.assertEqual({row['canonical_event_id'] for row in records['practice_event_alias']}, {'tracer-cesme'})
+            self.assertIn(package['practice_records']['practice_event_evidence'][0], records['practice_event_evidence'])
+
     def test_preview_command_is_available(self):
         result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src' / 'arsiv.py'),
                                  'practice-preview', '--help'], capture_output=True, text=True)
