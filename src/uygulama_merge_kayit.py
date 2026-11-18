@@ -50,6 +50,16 @@ def _sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
+def _contract_descends(previous, current):
+    """Only the operational stage may advance; every other field is immutable."""
+    levels = {'tracer': 0, 'partial': 1, 'complete': 2}
+    return (isinstance(previous, dict) and isinstance(current, dict) and
+            set(previous) == set(current) and 'stage' in previous and
+            previous['stage'] in levels and current['stage'] in levels and
+            levels[current['stage']] >= levels[previous['stage']] and
+            all(value == current[key] for key, value in previous.items() if key != 'stage'))
+
+
 def materialize_practice_merge(inventory, inputs, decisions_raw, base_records, outcome):
     """Encode an already validated engine result; this does not validate sources."""
     from uygulama_birlestirme import merge_packages
@@ -100,6 +110,11 @@ def validate_practice_merge(data):
                 actual = data[table] if table == 'practice_merge_contract' else [x for x in data[table] if (x['id'] if table == 'practice_merge_provenance' else x['provenance_id']) == batch]
                 if sorted(map(_json, actual)) != sorted(map(_json, rows)): raise ValueError('Birleşme kökeni veya kararı uyuşmuyor: ' + table)
             for table, rows in replay['payload']['practice_records'].items():
+                if table == 'practice_contract':
+                    current = data.get(table, [])
+                    if len(rows) != 1 or len(current) != 1 or not _contract_descends(rows[0], current[0]):
+                        raise ValueError('Birleşme sözleşmesi geriletilemez veya değiştirilemez')
+                    continue
                 if any(row not in data.get(table, []) for row in rows): raise ValueError('Birleşme kaydı kayıp: ' + table)
             for entry in replay['payload']['entries']:
                 if entry['kind'] not in ENTRY_KINDS or not any(all(existing.get(k) == v for k, v in entry['values'].items())
@@ -108,10 +123,8 @@ def validate_practice_merge(data):
             if any(row not in data.get(table, []) for table, rows in base.items() if table != 'practice_contract' for row in rows):
                 raise ValueError('Birleşme tabanı kayıp')
             if base.get('practice_contract'):
-                old, current = base['practice_contract'][0], data.get('practice_contract', [{}])[0]
-                levels = {'tracer': 0, 'partial': 1, 'complete': 2}
-                if (any(old.get(k) != current.get(k) for k in ('version', 'taxonomy_version', 'method_version', 'inventory_digest')) or
-                        levels.get(current.get('stage'), -1) < levels.get(old.get('stage'), 99)):
+                current = data.get('practice_contract', [])
+                if len(base['practice_contract']) != 1 or len(current) != 1 or not _contract_descends(base['practice_contract'][0], current[0]):
                     raise ValueError('Birleşme taban sözleşmesi geriletilemez')
             events = {x['id'] for x in data.get('practice_event', [])}
             if any(x['canonical_event_id'] not in events for x in expected['practice_event_alias']): raise ValueError('Birleşme olayı bulunamadı')

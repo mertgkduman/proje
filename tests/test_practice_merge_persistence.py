@@ -1,15 +1,63 @@
 """Technical merge persistence fixtures, never research or human acceptance."""
 import copy
 import json
+import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 from test_practice_merge_engine import MergeEngine, raw, digest
 import uygulamalar
 import arsiv
 
 
 class MergePersistence(unittest.TestCase):
+    def test_promoted_merge_still_requires_complete_review_and_coverage(self):
+        from uygulama_birlestirme import merge_packages
+        inventory = json.loads((arsiv.DATA / 'practices/04-inventory.json').read_text())
+        package = json.loads((arsiv.DATA / 'practices/04-coverage-tracer.json').read_text())
+        base = package['base_release']
+        data = json.loads((arsiv.DATA / 'releases' / base / 'records.json').read_text())
+        schemas = (uygulamalar.PRACTICE_TABLES | uygulamalar.PRACTICE_VARIANT_TABLES |
+                   uygulamalar.PRACTICE_EVIDENCE_TABLES | uygulamalar.PRACTICE_COVERAGE_TABLES |
+                   uygulamalar.PRACTICE_SOURCE_REVIEW_TABLES | uygulamalar.PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+        base_records = {name: data[name] for name in schemas if name in data}
+        package['stage'] = package['practice_records']['practice_contract'][0]['stage'] = 'partial'
+        inputs = [dict(identity='technical', raw=raw(package))]
+        decisions = raw(dict(version=1, inventory_digest=uygulamalar._digest(inventory),
+                             input_digests={'technical': digest(inputs[0]['raw'])}, decisions=[]))
+        outcome = merge_packages(inventory, inputs, decisions, decisions_sha256=digest(decisions), base_records=base_records)
+        for name, rows in outcome['payload']['practice_records'].items():
+            if name == 'practice_contract':
+                data[name] = copy.deepcopy(rows)
+            else:
+                data.setdefault(name, [])
+                for row in rows:
+                    if row not in data[name]: data[name].append(row)
+        data.update(uygulamalar.materialize_practice_merge(inventory, inputs, decisions, base_records, outcome))
+        data['practice_contract'][0]['stage'] = 'complete'
+        # The real inventory has open cells; its coverage gate must reject first.
+        with self.assertRaisesRegex(ValueError, 'bütün kanonik kapsamlar'):
+            uygulamalar.validate_practices(data)
+        # Simulate closed cells only: genuine ordinary review validation must
+        # still reject missing readings and accept complete technical readings.
+        with patch('uygulamalar.practice_coverage_states', return_value=[]):
+            with self.assertRaisesRegex(ValueError, 'kaynak incelemesi gerektirir'):
+                uygulamalar.validate_practices(data)
+            passages = {row['id']: row for row in data['passage']}
+            reviews = []
+            for (kind, identity), (refs, _) in uygulamalar.practice_review_targets(data).items():
+                reviews.append(dict(subject_kind=kind, subject_id=identity, reviewer_kind='agent',
+                    reviewed_at='2026-11-18T12:00:00+00:00',
+                    source_version_ids=json.dumps(sorted({passages[p]['version_id'] for p in refs})),
+                    passage_ids=json.dumps(sorted(refs)), inspected_sections=json.dumps(['Technical section ' + kind + identity]),
+                    supported_claim='Technical fixture claim ' + kind + identity,
+                    limitations='Synthetic test fixture only.', result='reviewed',
+                    reason='Technical fixture validates ' + kind + identity))
+            data['practice_source_review_contract'] = [dict(version=1)]
+            data['practice_source_review'] = reviews
+            self.assertTrue(uygulamalar.validate_practices(data))
+
     def test_real_snapshot_preview_roundtrip_and_audit(self):
         inventory = json.loads((arsiv.DATA / 'practices/04-inventory.json').read_text())
         source = (arsiv.DATA / 'practices/04-coverage-tracer.json').read_bytes()
@@ -68,6 +116,8 @@ class MergePersistence(unittest.TestCase):
         decision = fixture.decision()
         for index, item in enumerate(fixture.inputs):
             package = json.loads(item['raw'])
+            package['practice_records']['practice_contract'] = [dict(version=1, taxonomy_version=4,
+                method_version=1, inventory_digest='a' * 64, stage='partial')]
             for table in ('practice_source_review', 'practice_source_review_revision'):
                 package['practice_records'][table][0]['source_version_ids'] = json.dumps(['v' + str(index + 1)])
             item['raw'] = raw(package)
@@ -86,7 +136,25 @@ class MergePersistence(unittest.TestCase):
         snapshot['document'] = [dict(id='d1', party_id='p1'), dict(id='d2', party_id='p2')]
         snapshot['practice_coverage_contract'] = [dict(version=2, inventory_json=json.dumps(fixture.inventory))]
         snapshot.update(extension)
+        # Exercise the persisted representation, not just materializer output.
+        with sqlite3.connect(':memory:') as db:
+            for table, definition in uygulamalar.PRACTICE_MERGE_TABLES.items():
+                db.execute('CREATE TABLE ' + table + ' (' + definition + ')')
+                for row in extension[table]:
+                    db.execute('INSERT INTO ' + table + ' (' + ','.join(row) + ') VALUES (' + ','.join('?' for _ in row) + ')', list(row.values()))
+            db.row_factory = sqlite3.Row
+            for table in extension:
+                snapshot[table] = [dict(row) for row in db.execute('SELECT * FROM ' + table)]
         self.assertTrue(uygulamalar.validate_practice_merge(snapshot))
+        promoted = copy.deepcopy(snapshot)
+        promoted['practice_contract'][0]['stage'] = 'complete'
+        self.assertTrue(uygulamalar.validate_practice_merge(promoted))
+        for key, value in [('stage', 'tracer'), ('stage', 'unknown'), ('version', 2),
+                           ('taxonomy_version', 5), ('method_version', 2), ('inventory_digest', 'b' * 64)]:
+            broken = copy.deepcopy(promoted)
+            broken['practice_contract'][0][key] = value
+            with self.subTest(contract_field=key, value=value), self.assertRaises(ValueError):
+                uygulamalar.validate_practice_merge(broken)
         review_origins = [json.loads(row['original_json']) for row in snapshot['practice_merge_origin'] if row['origin_kind'] == 'review_origins']
         self.assertEqual(len(review_origins), 4)
         self.assertEqual({row['table'] for row in review_origins}, {'practice_source_review', 'practice_source_review_revision'})
