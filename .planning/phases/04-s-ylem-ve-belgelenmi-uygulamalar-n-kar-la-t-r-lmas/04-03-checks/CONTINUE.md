@@ -1,5 +1,11 @@
 # 04-03 devam: Task 1 tamamlandı, Task 2 bekliyor
 
+### 2026-11-18 yerel SQLite güvenliği devamı
+
+- `150f885` gerçek coverage paketiyle nonlocal SQLite staging RED testini ekler. `/tmp/gsd-04-03-local-red.log` ve `.exit`: hedef test, NFS benzetiminde geçici SQLite staging'e girildiği için başarısız; `/tmp/gsd-04-03-local-red-evidence.json` unittest→TAP projeksiyonu `RED_EVIDENCE_OK` verdi.
+- `be5cb9b` mevcut `open_workspace` dosya sistemi kontrolünü `require_local_sqlite_root` olarak ortaklaştırır; preview, geçici dizin veya DB yazmadan önce `out.parent` üzerinde aynı denetimi uygular. `/tmp/gsd-04-03-local-green.log` ve `.exit`: hedef test 1/1 geçti, çıkış 0. Bu yalnızca ara GREEN'dir; Task 2 veya plan tamamlanmadı.
+- Current pointer SHA256 `5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7`, current DB SHA256 `9151c3055f2d53572b9b116ac6799b0a6cfa10d0ca9d7431dc6787ad15c68f5b` değişmedi. Standart isolated manifest/audit, yeni kaynak alımı, merge ve source-review, kapsamlı negatif/pozitif testler ve planın tam kabulü hâlâ aşağıda belirtildiği gibi zorunlu.
+
 ## Konum ve kanıt
 
 - `04-03-01` tamamlandı: RED `72bbf93`, uygulama `55bf41f`. `04-03-SUMMARY.md` oluşturulmadı; plan sayacı ilerletilmedi.
