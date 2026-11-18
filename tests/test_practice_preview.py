@@ -17,6 +17,10 @@ import uygulamalar
 
 
 class PracticePreview(unittest.TestCase):
+    def test_shared_release_manifest_and_audit_contract(self):
+        self.assertTrue(callable(getattr(arsiv, 'build_release_manifest', None)),
+                        'preview and publishing must share the standard manifest builder')
+
     def test_preview_rejects_nonlocal_sqlite_before_creating_output(self):
         payload = json.loads((arsiv.DATA / 'practices' / '04-coverage-tracer.json').read_text(encoding='utf-8'))
         with tempfile.TemporaryDirectory() as tmp:
@@ -68,23 +72,37 @@ class PracticePreview(unittest.TestCase):
                                      '--out', str(out)], capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertIn('PRACTICE_PREVIEW_OK', result.stdout)
+            self.assertTrue((out / 'releases').is_dir(), 'preview must use standard release layout')
+            releases = list((out / 'releases').iterdir())
+            self.assertEqual(len(releases), 1)
+            release_dir = releases[0]
             for name in ('records.sqlite3', 'records.json', 'index.html', 'manifest.json'):
-                self.assertTrue((out / name).is_file(), name)
-            snapshot = json.loads((out / 'records.json').read_text(encoding='utf-8'))
-            self.assertEqual(arsiv.export_db(out / 'records.sqlite3', snapshot['release_id']), snapshot)
-            report = (out / 'index.html').read_text(encoding='utf-8')
+                self.assertTrue((release_dir / name).is_file(), name)
+            manifest = json.loads((release_dir / 'manifest.json').read_text(encoding='utf-8'))
+            for field in ('phase2_delivery', 'source_policy_version', 'comparison_stage', 'practice_stage'):
+                self.assertIn(field, manifest)
+            self.assertEqual(arsiv.audit_release(release_dir.name, storage_root=out), release_dir.name)
+            asset = out / next(iter(manifest['asset_files']))
+            original = asset.read_bytes()
+            asset.write_bytes(original + b'corrupt')
+            with self.assertRaises(ValueError):
+                arsiv.audit_release(release_dir.name, storage_root=out)
+            asset.write_bytes(original)
+            snapshot = json.loads((release_dir / 'records.json').read_text(encoding='utf-8'))
+            self.assertEqual(arsiv.export_db(release_dir / 'records.sqlite3', snapshot['release_id'], storage_root=out), snapshot)
+            report = (release_dir / 'index.html').read_text(encoding='utf-8')
             class Links(HTMLParser):
                 def __init__(self):
                     super().__init__()
                     self.paths = []
 
                 def handle_starttag(self, tag, attrs):
-                    self.paths.extend(value for name, value in attrs if name == 'href' and value and value.startswith('assets/'))
+                    self.paths.extend(value for name, value in attrs if name == 'href' and value and value.startswith('../../'))
             links = Links()
             links.feed(report)
             self.assertTrue(links.paths)
             for path in links.paths:
-                self.assertTrue((out / unquote(path.split('#')[0])).is_file(), path)
+                self.assertTrue((release_dir / unquote(path.split('#')[0])).is_file(), path)
             for view in ('party', 'comparison'):
                 self.assertIn('id="' + view + '-practice-tracer-relation-id"', report)
             coverage_out = Path(tmp) / 'coverage-preview'
@@ -94,8 +112,13 @@ class PracticePreview(unittest.TestCase):
                                        '--out', str(coverage_out)], capture_output=True, text=True)
             self.assertEqual(coverage.returncode, 0, coverage.stderr)
             self.assertIn('PRACTICE_PREVIEW_OK', coverage.stdout)
-            coverage_snapshot = json.loads((coverage_out / 'records.json').read_text(encoding='utf-8'))
-            self.assertEqual(arsiv.export_db(coverage_out / 'records.sqlite3', coverage_snapshot['release_id']), coverage_snapshot)
+            coverage_dir = next((coverage_out / 'releases').iterdir())
+            coverage_snapshot = json.loads((coverage_dir / 'records.json').read_text(encoding='utf-8'))
+            self.assertEqual(arsiv.export_db(coverage_dir / 'records.sqlite3', coverage_snapshot['release_id'], storage_root=coverage_out), coverage_snapshot)
+            self.assertEqual(arsiv.audit_release(coverage_dir.name, storage_root=coverage_out), coverage_dir.name)
+            coverage_report = (coverage_dir / 'index.html').read_text(encoding='utf-8')
+            for view in ('party', 'comparison'):
+                self.assertIn('id="' + view + '-practice-tracer-relation-id"', coverage_report)
             self.assertTrue(coverage_snapshot['practice_coverage_contract'])
         self.assertEqual(before, hashlib.sha256(current.read_bytes()).hexdigest())
         self.assertEqual(database_before, hashlib.sha256(db.read_bytes()).hexdigest())
