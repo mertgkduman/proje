@@ -36,7 +36,8 @@
     "practice_legacy": "6 tests passed",
     "targeted_log": "/tmp/gsd-phase04-repair-targeted.log",
     "targeted_result": "source-backed tracer and taxonomy regression passed; combined run interrupted after known test typo; corrected renderer tests and dossier/tab browser checks passed separately",
-    "workspace_preparation": {"pid": 1251605, "log": "/tmp/gsd-phase04-repair-workspace.log", "exit_sidecar": "/tmp/gsd-phase04-repair-workspace.exit", "status": "running; locked read/copy of unchanged current"},
+    "workspace_preparation": {"pid": 1251605, "log": "/tmp/gsd-phase04-repair-workspace.log", "exit_sidecar": "/tmp/gsd-phase04-repair-workspace.exit", "status": "passed", "workspace": "/tmp/proje-work-hwuz6bni"},
+    "local_publish": {"pid": 2942965, "command": "python3 src/arsiv.py publish --workspace /tmp/proje-work-hwuz6bni --refresh", "log": "/tmp/gsd-phase04-repair-publish.log", "exit_sidecar": "/tmp/gsd-phase04-repair-publish.exit", "status": "running"},
     "new_release": null,
     "final_full_gate": "not started; release refresh must finish first"
   },
