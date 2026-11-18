@@ -343,6 +343,23 @@ def validate_practice_coverage(data, inventory, extensions=()):
     return True
 
 
+def validate_preview_inventory(data, accepted_base, base_release, inventory, extensions=()):
+    """Validate the universe against the base or its recorded inventory history."""
+    if not isinstance(inventory, dict):
+        raise ValueError('Envanter geçersiz')
+    inventory_base = base_release
+    if inventory.get('base_release') != base_release:
+        try:
+            rows = accepted_base.get('practice_coverage_contract', []) + accepted_base.get('practice_inventory_revision', [])
+            recorded = [json.loads(row['inventory_json']) for row in rows]
+        except (KeyError, TypeError, ValueError):
+            raise ValueError('Kabul edilmiş kapsam geçmişi geçersiz')
+        if inventory not in recorded:
+            raise ValueError('Envanter kabul edilmiş kapsam geçmişinde bulunamadı')
+        inventory_base = inventory['base_release']
+    return validate_practice_coverage(dict(data, release_id=inventory_base), inventory, extensions)
+
+
 def validate_practice_closure(data, inventory, extensions=()):
     """Validate append-only coverage records against the canonical universe.
 
@@ -1511,9 +1528,8 @@ def _render_practice_preview(payload, out, inventory=None, base_release='current
         if inventory is not None:
             extensions = [dict(row, basis_passage_ids=json.loads(row['basis_passage_ids']))
                           for row in data.get('practice_topic_extension', [])]
-            # Inventory identifies the immutable base, not this newly assigned
-            # preview release ID; validate the entire universe against it.
-            validate_practice_coverage(dict(data, release_id=base), inventory, extensions)
+            # A later accepted base retains its already bound inventory history.
+            validate_preview_inventory(data, base_data, base, inventory, extensions)
         arsiv.validate_policy_descent(base_data, data)
         arsiv.validate_comparison_descent(base_data, data)
         validate_practice_descent(base_data, data)
