@@ -15,3 +15,5 @@
 - The pre-existing `test_new_stylesheet_preserves_historical_style` expects `rapor_v16.css` although the baseline renderer already uses `rapor_v24.css`; the required comparison regression therefore fails before this plan's changes.
   status: resolved
   Resolved in 7d9ba91: the regression separately checks the frozen renderer 16 and 24 producers and styles, and the current renderer 25 style.
+- A partial merged snapshot cannot currently advance its `practice_contract` stage to complete: `validate_practice_merge` compares the replayed partial contract row for exact equality with the promoted row. `/tmp/gsd-04-pending-e2e-v3.log` reaches full review coverage and then fails with `Birleşme kaydı kayıp: practice_contract`. Preserve replay integrity while allowing legitimate monotonic stage progression before final merge acceptance.
+  status: open
