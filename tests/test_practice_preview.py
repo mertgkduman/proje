@@ -88,6 +88,16 @@ class PracticePreview(unittest.TestCase):
             with self.assertRaises(ValueError):
                 arsiv.audit_release(release_dir.name, storage_root=out)
             asset.write_bytes(original)
+            report_file = release_dir / 'index.html'
+            original_report = report_file.read_bytes()
+            report_file.write_bytes(original_report + b'<!-- tampered -->')
+            manifest['files']['index.html'] = hashlib.sha256(report_file.read_bytes()).hexdigest()
+            (release_dir / 'manifest.json').write_text(json.dumps(manifest), encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'HTML kapalı snapshot'):
+                arsiv.audit_release(release_dir.name, storage_root=out)
+            report_file.write_bytes(original_report)
+            manifest['files']['index.html'] = hashlib.sha256(original_report).hexdigest()
+            (release_dir / 'manifest.json').write_text(json.dumps(manifest), encoding='utf-8')
             snapshot = json.loads((release_dir / 'records.json').read_text(encoding='utf-8'))
             self.assertEqual(arsiv.export_db(release_dir / 'records.sqlite3', snapshot['release_id'], storage_root=out), snapshot)
             report = (release_dir / 'index.html').read_text(encoding='utf-8')
@@ -119,6 +129,11 @@ class PracticePreview(unittest.TestCase):
             coverage_report = (coverage_dir / 'index.html').read_text(encoding='utf-8')
             for view in ('party', 'comparison'):
                 self.assertIn('id="' + view + '-practice-tracer-relation-id"', coverage_report)
+            coverage_links = Links()
+            coverage_links.feed(coverage_report)
+            self.assertTrue(coverage_links.paths)
+            for path in coverage_links.paths:
+                self.assertTrue((coverage_dir / unquote(path.split('#')[0])).is_file(), path)
             self.assertTrue(coverage_snapshot['practice_coverage_contract'])
         self.assertEqual(before, hashlib.sha256(current.read_bytes()).hexdigest())
         self.assertEqual(database_before, hashlib.sha256(db.read_bytes()).hexdigest())

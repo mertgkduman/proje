@@ -972,22 +972,25 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
         if json.loads(active) != inventory:
             raise ValueError('Paket ve kanonik envanter uyuşmuyor')
     with tempfile.TemporaryDirectory(prefix='.practice-preview-', dir=out.parent) as tmp:
-        work = Path(tmp)
+        preview_root = Path(tmp)
+        release = arsiv.uuid.uuid4().hex
+        work = preview_root / 'releases' / release
+        work.mkdir(parents=True)
         shutil.copyfile(folder / 'records.sqlite3', work / 'records.sqlite3')
         _load_practice_copy(work, payload, base, storage_root=storage_root)
-        data = arsiv.export_db(work / 'records.sqlite3', base, strict_identity=True, storage_root=storage_root)
+        data = arsiv.export_db(work / 'records.sqlite3', release, strict_identity=True, storage_root=storage_root)
         if inventory is not None:
             extensions = [dict(row, basis_passage_ids=json.loads(row['basis_passage_ids']))
                           for row in data.get('practice_topic_extension', [])]
-            validate_practice_coverage(data, inventory, extensions)
+            # Inventory identifies the immutable base, not this newly assigned
+            # preview release ID; validate the entire universe against it.
+            validate_practice_coverage(dict(data, release_id=base), inventory, extensions)
         arsiv.validate_policy_descent(base_data, data)
         arsiv.validate_comparison_descent(base_data, data)
         validate_practice_descent(base_data, data)
         (work / 'records.json').write_text(json.dumps(data, ensure_ascii=False, sort_keys=True, indent=2) + '\n', encoding='utf-8')
-        # Published reports live two levels below the source root; a preview
-        # lives directly at its output root. Copy only validated referenced
-        # objects and declared passive view assets, then rewrite those links.
-        asset_root = work / 'assets'
+        # Use the ordinary release layout and preserve exact renderer bytes.
+        asset_root = preview_root
         paths = {v[k] for v in data['document_version'] for k in ('original_path', 'readable_path')}
         for view in data.get('archive_view', []):
             arsiv.validate_view(storage_root, view)
@@ -1002,23 +1005,20 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source, target)
             asset_hashes[relative] = arsiv.sha(target)
-        report = arsiv.render_comparison_snapshot(data, arsiv.render_report).replace('href="../../', 'href="assets/')
+        report = arsiv.render_comparison_snapshot(data, arsiv.render_report)
         (work / 'index.html').write_text(report, encoding='utf-8')
         arsiv.validate_phase_one_html(data, report)
         arsiv.validate_phase_three_workspace(work, data['comparison_contract'][0]['stage'])
         if data != json.loads((work / 'records.json').read_text(encoding='utf-8')):
             raise ValueError('Önizleme DB ve JSON uyuşmuyor')
-        preview_manifest = dict(release_id=base, base_release=base, preview=True, renderer_version=arsiv.RENDERER_VERSION, asset_files=asset_hashes,
-                                files={n: arsiv.sha(work / n) for n in ('records.sqlite3', 'records.json', 'index.html')})
-        preview_manifest.update(practice_manifest_fields(data))
+        preview_manifest = arsiv.build_release_manifest(
+            work, data, release, arsiv.RENDERER_VERSION, base,
+            manifest.get('phase2_delivery'), refresh=bool(manifest.get('phase2_delivery')))
+        preview_manifest.update(preview=True, asset_files=asset_hashes)
         if adapted_from:
             preview_manifest['legacy_input_canonical_sha256'] = adapted_from
         (work / 'manifest.json').write_text(json.dumps(preview_manifest, sort_keys=True) + '\n', encoding='utf-8')
-        saved = json.loads((work / 'manifest.json').read_text(encoding='utf-8'))
-        if (saved != preview_manifest or any(arsiv.sha(arsiv.safe_path(work, n)) != h for n, h in saved['files'].items()) or
-                any(arsiv.sha(arsiv.safe_path(asset_root, n)) != h for n, h in saved['asset_files'].items()) or
-                (work / 'index.html').read_text(encoding='utf-8') != report):
-            raise ValueError('Önizleme manifesti veya HTML uyuşmuyor')
+        arsiv.audit_release(release, storage_root=preview_root)
         (work / 'pre-practice-migration.sqlite3').unlink(missing_ok=True)
-        os.rename(work, out)
+        os.rename(preview_root, out)
     return out

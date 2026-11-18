@@ -2916,14 +2916,15 @@ def render_comparison_snapshot(data, renderer):
     return renderer(comparison_render_data(data))
 
 
-def audit_release(release='current', _seen=None):
+def audit_release(release='current', _seen=None, *, storage_root=None):
+    storage_root = DATA if storage_root is None else Path(storage_root)
     release = current() if release == 'current' else release
     if not release or not all(c in '0123456789abcdef' for c in release):
         raise ValueError('Geçersiz sürüm')
     _seen = set() if _seen is None else _seen
     if release in _seen: raise ValueError('Sürüm taban zincirinde döngü')
     _seen.add(release)
-    folder = safe_path(DATA / 'releases', release)
+    folder = safe_path(storage_root / 'releases', release)
     manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
     if 'phase2_refresh' in manifest and (manifest['phase2_refresh'] is not True or not manifest.get('phase2_delivery')):
         raise ValueError('Yenileme manifesti geçersiz')
@@ -2937,10 +2938,35 @@ def audit_release(release='current', _seen=None):
     base_id = manifest.get('base_release')
     if manifest.get('phase2_delivery'):
         if not base_id or base_id == release or not re.fullmatch(r'[0-9a-f]{32}', base_id): raise ValueError('Faz 2 tabanı geçersiz')
-        audit_release(base_id, _seen)
+        if storage_root.resolve() == DATA.resolve() or base_id != current():
+            audit_release(base_id, _seen)
+        else:
+            # The immutable, previously audited current release is the trust
+            # anchor for an isolated preview. Recheck all of its bound bytes;
+            # the candidate below still receives the ordinary audit in full.
+            base_folder = safe_path(DATA / 'releases', base_id)
+            base_manifest = json.loads((base_folder / 'manifest.json').read_text(encoding='utf-8'))
+            if (base_manifest.get('release_id') != base_id or
+                    set(base_manifest.get('files', {})) != {'records.sqlite3', 'records.json', 'index.html'} or
+                    any(sha(safe_path(base_folder, name)) != digest for name, digest in base_manifest['files'].items())):
+                raise ValueError('Önizleme taban sürüm özeti uyuşmuyor')
+            if export_db(base_folder / 'records.sqlite3', base_id) != json.loads((base_folder / 'records.json').read_text(encoding='utf-8')):
+                raise ValueError('Önizleme taban DB ve JSON uyuşmuyor')
     elif manifest.get('source_policy_version') and base_id:
         audit_release(base_id, _seen)
-    exported = export_db(folder / 'records.sqlite3', release)
+    exported = export_db(folder / 'records.sqlite3', release, storage_root=storage_root)
+    if storage_root.resolve() != DATA.resolve():
+        if manifest.get('preview') is not True or not isinstance(manifest.get('asset_files'), dict):
+            raise ValueError('İzole önizleme kaynak manifesti eksik')
+        paths = {v[k] for v in exported['document_version'] for k in ('original_path', 'readable_path')}
+        for view in exported.get('archive_view', []):
+            validate_view(storage_root, view)
+            view_manifest = json.loads(safe_path(storage_root, view['manifest_path']).read_text(encoding='utf-8'))
+            parent = Path(view['manifest_path']).parent
+            paths.add(view['manifest_path'])
+            paths.update(str(parent / name) for name in view_manifest['files'])
+        if set(manifest['asset_files']) != paths or any(sha(safe_path(storage_root, name)) != digest for name, digest in manifest['asset_files'].items()):
+            raise ValueError('Önizleme kaynak özeti uyuşmuyor')
     if manifest.get('source_policy_version') and exported['schema_version'] not in (5,6,7):raise ValueError('Kaynak politikası snapshot sözleşmesiyle uyuşmuyor')
     if exported['schema_version'] in (5,6,7):
         if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version'),manifest.get('source_policy_version'))!=(exported['schema_version'],2,2):raise ValueError('Kaynak politikası manifesti geçersiz')
@@ -3229,6 +3255,30 @@ def assert_lock(work):
     return metadata
 
 
+def build_release_manifest(staging, payload, release, renderer_version, base_release, phase_delivery=None, refresh=False):
+    manifest = {'release_id': release, 'renderer_version': renderer_version, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
+    if payload['schema_version'] in (5,6,7):manifest.update(data_schema_version=payload['schema_version'],dossier_validation_version=2,source_policy_version=2,base_release=base_release)
+    if phase_delivery:
+        manifest.update(data_schema_version=payload['schema_version'], dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=base_release)
+    if payload['schema_version'] in (6,7):
+        c = payload['comparison_contract'][0]
+        manifest.update(comparison_validation_version=c['version'], comparison_taxonomy_version=c['taxonomy_version'], comparison_stage=c['stage'])
+        if c['version'] >= 2:
+            manifest['comparison_synthesis_contract_version'] = 2
+        if c['version'] >= 3:
+            manifest['comparison_lineage_version'] = 1
+        if c['taxonomy_version'] >= 3:
+            manifest['comparison_view_version'] = 1
+        markers = [m for m in payload.get('comparison_completion', []) if m['taxonomy_version'] == c['taxonomy_version']]
+        if markers:
+            manifest['comparison_completion_version'] = markers[0]['version']
+        manifest.update(completion_manifest_fields(payload))
+    if payload['schema_version'] == 7:
+        manifest.update(practice_manifest_fields(payload))
+    if refresh: manifest['phase2_refresh'] = True
+    return manifest
+
+
 def publish_release(work, fail_at=None, party=None, stage='complete', refresh=False):
     work = Path(work)
     metadata = assert_lock(work)
@@ -3285,26 +3335,7 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
                 validate_dossier(payload, completed_party, 'complete')
         if payload['schema_version'] in (6,7):
             validate_phase_three_workspace(staging, payload['comparison_contract'][0]['stage'])
-        manifest = {'release_id': release, 'renderer_version': renderer_version, 'identity_validation_version': 1, 'files': {n: sha(staging / n) for n in ('records.sqlite3', 'records.json', 'index.html')}}
-        if payload['schema_version'] in (5,6,7):manifest.update(data_schema_version=payload['schema_version'],dossier_validation_version=2,source_policy_version=2,base_release=metadata['base'])
-        if phase_delivery:
-            manifest.update(data_schema_version=payload['schema_version'], dossier_validation_version=2, source_policy_version=2, phase2_delivery=phase_delivery, base_release=metadata['base'])
-        if payload['schema_version'] in (6,7):
-            c = payload['comparison_contract'][0]
-            manifest.update(comparison_validation_version=c['version'], comparison_taxonomy_version=c['taxonomy_version'], comparison_stage=c['stage'])
-            if c['version'] >= 2:
-                manifest['comparison_synthesis_contract_version'] = 2
-            if c['version'] >= 3:
-                manifest['comparison_lineage_version'] = 1
-            if c['taxonomy_version'] >= 3:
-                manifest['comparison_view_version'] = 1
-            markers = [m for m in payload.get('comparison_completion', []) if m['taxonomy_version'] == c['taxonomy_version']]
-            if markers:
-                manifest['comparison_completion_version'] = markers[0]['version']
-            manifest.update(completion_manifest_fields(payload))
-        if payload['schema_version'] == 7:
-            manifest.update(practice_manifest_fields(payload))
-        if refresh: manifest['phase2_refresh'] = True
+        manifest = build_release_manifest(staging, payload, release, renderer_version, metadata['base'], phase_delivery, refresh)
         (staging / 'manifest.json').write_text(json.dumps(manifest, sort_keys=True), encoding='utf-8')
         if fail_at == 'validate': raise RuntimeError('Enjekte edilen doğrulama hatası')
         (DATA / 'releases').mkdir(exist_ok=True)
