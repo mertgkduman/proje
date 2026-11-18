@@ -121,6 +121,36 @@ class PracticeSourceReview(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'parti sahibi'):
             uygulamalar.validate_practice_source_review(self.data, rows, selected)
 
+    def test_revision_preserves_prior_reading_and_requires_current_scope(self):
+        selection = dict(practice_event=self.data['practice_event'])
+        first = dict(self.review, subject_kind='practice_event', subject_id='e')
+        self.assertTrue(uygulamalar.validate_practice_source_review(self.data, [first], selection))
+        self.data['document_version'].append(dict(id='v2', document_id='d'))
+        self.data['passage'].append(dict(id='p3', version_id='v2'))
+        self.data['practice_event_evidence'].append(dict(event_id='e', passage_id='p3', stage='result'))
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_source_review(self.data, [first], selection)
+        self.assertTrue(hasattr(uygulamalar, 'PRACTICE_SOURCE_REVIEW_REVISION_TABLES'),
+                        'a versioned append-only review adapter is required')
+        second = dict(first, revision=2, reviewed_at='2026-11-19T12:00:00+00:00',
+                      source_version_ids='["v", "v2"]', passage_ids='["p1", "p3"]',
+                      supported_claim='The expanded evidence describes both technical points.',
+                      reason='Both technical source sections were inspected.')
+        self.assertTrue(uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second]))
+        for invalid in (dict(second, revision=3), dict(second, reviewed_at=first['reviewed_at']),
+                        dict(second, passage_ids='["p1"]'), dict(second, reviewer_kind='human'),
+                        dict(second, source_version_ids='["v"]')):
+            with self.subTest(invalid=invalid):
+                with self.assertRaises(ValueError):
+                    uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[invalid])
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second, copy.deepcopy(second)])
+        self.data['document_version'][1]['document_id'] = 'foreign'
+        self.data['document'].append(dict(id='foreign', party_id='other'))
+        self.data['practice_unmatched'] = [dict(event_id='e', party_id='p')]
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second])
+
     def test_source_check_routes_review_to_shared_preview_validation(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
