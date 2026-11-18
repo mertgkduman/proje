@@ -1,7 +1,13 @@
 {
   "phase": "04",
   "wave": 2,
-  "status": "complete",
+  "status": "regression_pending",
+  "gate_scope_correction": {
+    "previous_status": "complete",
+    "reference_commit": "54f2699",
+    "reason": "execute-phase/steps/post-merge-gate.md also requires the general suite in serial mode. Prior plan acceptance and hook results remain valid as recorded; the general regression gate has not run.",
+    "resolution": "Fresh full regression after the stable 04-03 implementation, before Wave 4; no historical Wave 2 full-suite pass is claimed."
+  },
   "completed_plans": [
     "04-02"
   ],
@@ -78,7 +84,7 @@
   },
   "full_suite": {
     "run_this_wave": false,
-    "reason": "Sequential execution without worktree merges; per-plan acceptance and capability gates apply. Required phase-end regression remains pending.",
+    "reason": "Required serial wave regression was omitted under an incorrect scope interpretation; it remains pending, along with the required phase-end regression.",
     "prior_wave_credit": 0
   }
 }
