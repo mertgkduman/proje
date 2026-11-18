@@ -2,9 +2,9 @@
 schema_version: 1
 open_count: 0
 waived_count: 0
-fixed_count: 5
-total_count: 5
-last_updated: 2026-11-13T08:32:08.994Z
+fixed_count: 7
+total_count: 7
+last_updated: 2026-11-18T07:45:55.945Z
 ---
 
 # Broken Windows Ledger
@@ -20,6 +20,8 @@ last_updated: 2026-11-13T08:32:08.994Z
 | 3 | 02 | deviation | src/dosyalar.py |  | Kısmi kuruluş araştırmasının makbuz etiketi ve Türkçe alan adları düzeltildi. | fixed |  | 2026-11-11T15:13:56.526Z | 2026-11-11T15:13:57.110Z |
 | 4 | 02 | deviation | src/dosyalar.py |  | Resmî site ve sicil alanlarında kaynak sahipliği denetimi eklendi. | fixed |  | 2026-11-11T15:13:57.756Z | 2026-11-11T15:13:58.362Z |
 | 5 | 03 | deviation | data/comparisons/03-taxonomy.json |  | Türkçe casefold ofsetiyle hatalı seçilen konu pasajları gerçek kaynak başlıklarına düzeltildi; başarısız yayın adayı kullanılmadı. | fixed |  | 2026-11-13T08:32:04.272Z | 2026-11-13T08:32:08.994Z |
+| 6 | 04 | deviation | src/arsiv.py |  | Versioned evidence export and audit required changes to the shared archive adapter. | fixed |  | 2026-11-18T07:45:25.475Z | 2026-11-18T07:45:55.444Z |
+| 7 | 04 | deviation | tests/test_comparisons.py |  | Updated the active stylesheet expectation while retaining frozen-asset checks. | fixed |  | 2026-11-18T07:45:25.940Z | 2026-11-18T07:45:55.945Z |
 
 ````json
 [
@@ -86,6 +88,32 @@ last_updated: 2026-11-13T08:32:08.994Z
     "reason": "",
     "recorded_at": "2026-11-13T08:32:04.272Z",
     "resolved_at": "2026-11-13T08:32:08.994Z",
+    "milestone": "v1.0"
+  },
+  {
+    "id": 6,
+    "kind": "deviation",
+    "phase": "04",
+    "file": "src/arsiv.py",
+    "line": null,
+    "description": "Versioned evidence export and audit required changes to the shared archive adapter.",
+    "status": "fixed",
+    "reason": "",
+    "recorded_at": "2026-11-18T07:45:25.475Z",
+    "resolved_at": "2026-11-18T07:45:55.444Z",
+    "milestone": "v1.0"
+  },
+  {
+    "id": 7,
+    "kind": "deviation",
+    "phase": "04",
+    "file": "tests/test_comparisons.py",
+    "line": null,
+    "description": "Updated the active stylesheet expectation while retaining frozen-asset checks.",
+    "status": "fixed",
+    "reason": "",
+    "recorded_at": "2026-11-18T07:45:25.940Z",
+    "resolved_at": "2026-11-18T07:45:55.945Z",
     "milestone": "v1.0"
   }
 ]
