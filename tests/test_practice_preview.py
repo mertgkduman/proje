@@ -135,15 +135,39 @@ class PracticePreview(unittest.TestCase):
                     passage_ids=json.dumps(sorted(refs)), inspected_sections=json.dumps(['Technical test context for ' + kind]),
                     supported_claim='Technical test subject ' + identity, limitations='Synthetic test only.',
                     result='reviewed', reason='Temporary validation fixture.'))
+            # Model an earlier reading before the technical passage was added;
+            # the new revision must cover both old and newly added evidence.
+            revision_rows = []
+            for index, row in enumerate(review_rows):
+                current_passages = json.loads(row['passage_ids'])
+                earlier = [p for p in current_passages if p != 'technical-p']
+                if 'technical-p' in current_passages and earlier:
+                    revision_rows.append(dict(row, revision=2, reviewed_at='2026-11-19T12:00:00+00:00',
+                                              reason='Updated technical fixture after the added passage.'))
+                    review_rows[index] = dict(row, passage_ids=json.dumps(earlier),
+                                              source_version_ids=json.dumps(sorted({passages[p]['version_id'] for p in earlier})))
+            event = records['practice_event'][0]
+            initial_event_review = next(r for r in review_rows if (r['subject_kind'], r['subject_id']) == ('practice_event', event['id']))
+            event_revision = next(r for r in revision_rows if (r['subject_kind'], r['subject_id']) == ('practice_event', event['id']))
+            earlier_data = dict(review_data, practice_event_evidence=[r for r in review_data['practice_event_evidence'] if r['passage_id'] != 'technical-p'])
+            event_only = dict(practice_event=[event])
+            self.assertTrue(uygulamalar.validate_practice_source_review(earlier_data, [initial_event_review], event_only))
+            with self.assertRaises(ValueError):
+                uygulamalar.validate_practice_source_review(review_data, [initial_event_review], event_only)
+            self.assertTrue(uygulamalar.validate_practice_source_review(review_data, [initial_event_review], event_only, revisions=[event_revision]))
             records['practice_source_review_contract'] = [dict(version=1)]
             records['practice_source_review'] = review_rows
+            records['practice_source_review_revision_contract'] = [dict(version=2)]
+            records['practice_source_review_revision'] = revision_rows
             package['source_review_refs'] = [dict(subject_kind=r['subject_kind'], subject_id=r['subject_id']) for r in review_rows]
             out = root / 'preview'
             uygulamalar.render_practice_preview(package, out, inventory, source_root=source_root)
             release = next((out / 'releases').iterdir())
             data = json.loads((release / 'records.json').read_text())
             self.assertEqual(data['practice_source_review'], review_rows)
+            self.assertEqual(data['practice_source_review_revision'], revision_rows)
             self.assertIn('practice_source_review_sha256', json.loads((release / 'manifest.json').read_text()))
+            self.assertIn('practice_source_review_revision_sha256', json.loads((release / 'manifest.json').read_text()))
             self.assertEqual(data, arsiv.export_db(release / 'records.sqlite3', release.name, storage_root=out))
             self.assertEqual(arsiv.audit_release(release.name, storage_root=out), release.name)
             self.assertTrue((out / version['original_path']).is_file())

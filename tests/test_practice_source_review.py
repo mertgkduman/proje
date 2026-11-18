@@ -4,6 +4,7 @@ import contextlib
 import io
 import hashlib
 import json
+import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
@@ -103,6 +104,12 @@ class PracticeSourceReview(unittest.TestCase):
         first = uygulamalar.practice_manifest_fields(data)['practice_source_review_sha256']
         data['practice_source_review'][0] = dict(self.review, reason='A different recorded reason.')
         self.assertNotEqual(first, uygulamalar.practice_manifest_fields(data)['practice_source_review_sha256'])
+        self.assertNotIn('practice_source_review_revision_sha256', uygulamalar.practice_manifest_fields(data))
+        data.update(practice_source_review_revision_contract=[dict(version=2)],
+                    practice_source_review_revision=[dict(self.review, revision=2)])
+        digest = uygulamalar.practice_manifest_fields(data)['practice_source_review_revision_sha256']
+        data['practice_source_review_revision'][0]['reason'] = 'A different revised reason.'
+        self.assertNotEqual(digest, uygulamalar.practice_manifest_fields(data)['practice_source_review_revision_sha256'])
 
     def test_unmatched_and_dispute_subjects_bind_real_passages(self):
         self.data['finding'] = [dict(id='f', party_id='p')]
@@ -137,6 +144,14 @@ class PracticeSourceReview(unittest.TestCase):
                       supported_claim='The expanded evidence describes both technical points.',
                       reason='Both technical source sections were inspected.')
         self.assertTrue(uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second]))
+        new_evidence = self.data['practice_event_evidence'][-1]
+        affected = uygulamalar.practice_review_package_targets(self.data, {'practice_event_evidence': [new_evidence]}, {'p3'}, 'p')
+        self.assertIn(('practice_event', 'e'), affected)
+        new_reading = dict(self.review, subject_id='e|p3|result', source_version_ids='["v2"]',
+                           passage_ids='["p3"]', supported_claim='The newly added technical result is described.')
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_source_review(self.data, [first, new_reading], revisions=[], target_keys=affected)
+        self.assertTrue(uygulamalar.validate_practice_source_review(self.data, [first, new_reading], revisions=[second], target_keys=affected))
         for invalid in (dict(second, revision=3), dict(second, reviewed_at=first['reviewed_at']),
                         dict(second, passage_ids='["p1"]'), dict(second, reviewer_kind='human'),
                         dict(second, source_version_ids='["v"]')):
@@ -145,11 +160,48 @@ class PracticeSourceReview(unittest.TestCase):
                     uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[invalid])
         with self.assertRaises(ValueError):
             uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second, copy.deepcopy(second)])
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_source_review(self.data, [first], selection,
+                revisions=[second, dict(second, supported_claim='Conflicting technical interpretation.')])
         self.data['document_version'][1]['document_id'] = 'foreign'
         self.data['document'].append(dict(id='foreign', party_id='other'))
         self.data['practice_unmatched'] = [dict(event_id='e', party_id='p')]
         with self.assertRaises(ValueError):
             uygulamalar.validate_practice_source_review(self.data, [first], selection, revisions=[second])
+
+    def test_revision_marker_and_history_cannot_be_removed_or_rewritten(self):
+        revision = dict(self.review, revision=2, reviewed_at='2026-11-19T12:00:00+00:00')
+        base = dict(practice_source_review_contract=[dict(version=1)], practice_source_review=[self.review],
+                    practice_source_review_revision_contract=[dict(version=2)], practice_source_review_revision=[revision])
+        candidate = copy.deepcopy(base)
+        self.assertIsNone(uygulamalar.validate_practice_descent(base, candidate))
+        for key in ('practice_source_review_revision_contract', 'practice_source_review_revision'):
+            changed = copy.deepcopy(candidate)
+            del changed[key]
+            with self.assertRaises(ValueError):
+                uygulamalar.validate_practice_descent(base, changed)
+        candidate['practice_source_review_revision'][0]['reason'] = 'A rewritten historical reason.'
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_descent(base, candidate)
+
+    def test_private_sqlite_adapter_preserves_v1_rows(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db = sqlite3.connect(Path(tmp) / 'records.sqlite3')
+            db.execute('PRAGMA foreign_keys=ON')
+            for name, definition in uygulamalar.PRACTICE_SOURCE_REVIEW_TABLES.items():
+                db.execute(f'CREATE TABLE {name} ({definition})')
+            values = self.review
+            db.execute('INSERT INTO practice_source_review_contract VALUES (1)')
+            db.execute('INSERT INTO practice_source_review VALUES (' + ','.join('?' for _ in values) + ')', list(values.values()))
+            before = db.execute('SELECT * FROM practice_source_review').fetchall()
+            for name, definition in uygulamalar.PRACTICE_SOURCE_REVIEW_REVISION_TABLES.items():
+                db.execute(f'CREATE TABLE {name} ({definition})')
+            db.execute('INSERT INTO practice_source_review_revision_contract VALUES (2)')
+            revision = dict(values, revision=2)
+            db.execute('INSERT INTO practice_source_review_revision (' + ','.join(revision) + ') VALUES (' + ','.join('?' for _ in revision) + ')', list(revision.values()))
+            self.assertEqual(db.execute('SELECT * FROM practice_source_review').fetchall(), before)
+            self.assertEqual(db.execute('PRAGMA foreign_key_check').fetchall(), [])
+            db.close()
 
     def test_source_check_routes_review_to_shared_preview_validation(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -167,6 +219,14 @@ class PracticeSourceReview(unittest.TestCase):
             sent = preview.call_args.args[0]
             self.assertEqual(sent['practice_records']['practice_source_review'], [self.review])
             self.assertEqual(sent['source_review_refs'], refs)
+            revision = dict(self.review, revision=2, reviewed_at='2026-11-19T12:00:00+00:00')
+            review.write_text(json.dumps(dict(practice_source_review=[self.review], practice_source_review_revision=[revision], source_review_refs=refs)))
+            with patch('sys.argv', ['arsiv.py', 'practice-source-check', '--input', str(package), '--review', str(review)]), \
+                 patch('uygulamalar.render_practice_preview') as preview, contextlib.redirect_stdout(io.StringIO()):
+                arsiv.main()
+            sent = preview.call_args.args[0]['practice_records']
+            self.assertEqual(sent['practice_source_review_revision_contract'], [dict(version=2)])
+            self.assertEqual(sent['practice_source_review_revision'], [revision])
 
     def test_invalid_review_cannot_replace_existing_preview(self):
         with tempfile.TemporaryDirectory() as tmp:

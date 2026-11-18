@@ -46,7 +46,7 @@ from rapor_v23 import render_report as render_v23_report
 from rapor_v24 import render_report as render_v24_report
 from rapor_v25 import render_report as render_v25_report
 from rapor_v26 import render_report as render_v26_report
-from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, PRACTICE_SOURCE_REVIEW_TABLES, validate_practices, load_practice,
+from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, PRACTICE_SOURCE_REVIEW_TABLES, PRACTICE_SOURCE_REVIEW_REVISION_TABLES, validate_practices, load_practice,
                          validate_practice_input, practice_manifest_fields,
                          validate_practice_descent)
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
@@ -2725,6 +2725,9 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
         source_review_present = existing.intersection(PRACTICE_SOURCE_REVIEW_TABLES)
         if source_review_present and (source_review_present != set(PRACTICE_SOURCE_REVIEW_TABLES) or not has_practices or not db.execute('SELECT 1 FROM practice_source_review_contract').fetchone()):
             raise ValueError('Kaynak inceleme işaretçisi veya tabloları eksik')
+        source_review_revision_present = existing.intersection(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+        if source_review_revision_present and (source_review_revision_present != set(PRACTICE_SOURCE_REVIEW_REVISION_TABLES) or not source_review_present or not db.execute('SELECT 1 FROM practice_source_review_revision_contract').fetchone()):
+            raise ValueError('Kaynak inceleme revizyon işaretçisi veya tabloları eksik')
         if has_practices and practice_version != 7:
             raise ValueError('Uygulama şema sürümü eksik')
         if has_practices and not db.execute('SELECT 1 FROM practice_contract').fetchone():
@@ -2765,6 +2768,8 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
                 names += list(PRACTICE_COVERAGE_TABLES)
             if source_review_present:
                 names += list(PRACTICE_SOURCE_REVIEW_TABLES)
+            if source_review_revision_present:
+                names += list(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
         result = {'schema_version': 7 if has_practices else (6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))))), 'release_id': release_id}
         if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
@@ -2999,7 +3004,7 @@ def audit_release(release='current', _seen=None, *, storage_root=None):
         if exported['schema_version'] == 7:
             fields = practice_manifest_fields(exported)
             if ({k: manifest.get(k) for k in fields} != fields or
-                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256', 'practice_coverage_sha256', 'practice_source_review_sha256'))):
+                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256', 'practice_coverage_sha256', 'practice_source_review_sha256', 'practice_source_review_revision_sha256'))):
                 raise ValueError('Uygulama manifesti geçersiz')
         elif any(k.startswith('practice_') for k in manifest):
             raise ValueError('Uygulama snapshot işaretçisi eksik')
@@ -3437,16 +3442,19 @@ def main():
         from uygulamalar import render_practice_preview
         package = json.loads(Path(args.input).read_text(encoding='utf-8'))
         review = json.loads(Path(args.review).read_text(encoding='utf-8'))
-        if not isinstance(review, dict) or set(review) != {'practice_source_review', 'source_review_refs'}:
+        if not isinstance(review, dict) or set(review) not in ({'practice_source_review', 'source_review_refs'}, {'practice_source_review', 'practice_source_review_revision', 'source_review_refs'}):
             raise ValueError('Kaynak inceleme dosyası geçersiz')
         records = package.get('practice_records', {})
-        if set(records).intersection(PRACTICE_SOURCE_REVIEW_TABLES):
+        if set(records).intersection(set(PRACTICE_SOURCE_REVIEW_TABLES) | set(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)):
             raise ValueError('İnceleme pakette ve dosyada birden bulunamaz')
         package_refs = package.get('source_review_refs')
         if package_refs not in (None, []) and sorted(json.dumps(x, sort_keys=True) for x in package_refs) != sorted(json.dumps(x, sort_keys=True) for x in review['source_review_refs']):
             raise ValueError('Paket ve inceleme başvuruları uyuşmuyor')
         records['practice_source_review_contract'] = [{'version': 1}]
         records['practice_source_review'] = review['practice_source_review']
+        if 'practice_source_review_revision' in review:
+            records['practice_source_review_revision_contract'] = [{'version': 2}]
+            records['practice_source_review_revision'] = review['practice_source_review_revision']
         package['source_review_refs'] = review['source_review_refs']
         party = package.get('party_id')
         source_root = safe_path(DATA / 'practices' / 'sources', party) if isinstance(party, str) and re.fullmatch(r'[a-z0-9-]+', party) else DATA

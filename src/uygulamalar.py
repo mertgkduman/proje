@@ -61,6 +61,12 @@ PRACTICE_SOURCE_REVIEW_TABLES = {
     'practice_source_review': 'subject_kind TEXT NOT NULL, subject_id TEXT NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, source_version_ids TEXT NOT NULL, passage_ids TEXT NOT NULL, inspected_sections TEXT NOT NULL, supported_claim TEXT NOT NULL, limitations TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(subject_kind,subject_id)',
 }
 
+# An additive adapter leaves published v1 rows and serialization untouched.
+PRACTICE_SOURCE_REVIEW_REVISION_TABLES = {
+    'practice_source_review_revision_contract': 'version INTEGER PRIMARY KEY',
+    'practice_source_review_revision': 'subject_kind TEXT NOT NULL, subject_id TEXT NOT NULL, revision INTEGER NOT NULL, reviewer_kind TEXT NOT NULL, reviewed_at TEXT NOT NULL, source_version_ids TEXT NOT NULL, passage_ids TEXT NOT NULL, inspected_sections TEXT NOT NULL, supported_claim TEXT NOT NULL, limitations TEXT NOT NULL, result TEXT NOT NULL, reason TEXT NOT NULL, PRIMARY KEY(subject_kind,subject_id,revision), FOREIGN KEY(subject_kind,subject_id) REFERENCES practice_source_review(subject_kind,subject_id)',
+}
+
 
 def practice_review_targets(data, selection=None):
     """Map each semantic target to its actual passages and party boundaries."""
@@ -132,10 +138,21 @@ def practice_review_targets(data, selection=None):
     return targets
 
 
-def validate_practice_source_review(data, reviews, selection=None, *, require_coverage=True, party_id=None):
+def practice_review_package_targets(data, records, new_passages, party_id=None):
+    """Include existing targets affected by newly attached evidence."""
+    targets = practice_review_targets(data, records)
+    targets.update({key: value for key, value in practice_review_targets(data).items() if value[0] & set(new_passages)})
+    return {key: value for key, value in targets.items() if party_id is None or not value[1] or party_id in value[1]}
+
+
+def validate_practice_source_review(data, reviews, selection=None, *, require_coverage=True, party_id=None, revisions=None, target_keys=None):
     """Validate recorded agent reading, without claiming to repeat that reading."""
     from arsiv import aware_time
-    targets = practice_review_targets(data, selection)
+    targets = practice_review_targets(data, selection if target_keys is None else None)
+    if target_keys is not None:
+        if not set(target_keys) <= set(targets):
+            raise ValueError('Kaynak inceleme hedefi bulunamadı')
+        targets = {key: targets[key] for key in target_keys}
     if party_id is not None:
         targets = {key: value for key, value in targets.items() if not value[1] or party_id in value[1]}
     passages = {p['id']: p for p in data['passage']}
@@ -145,13 +162,56 @@ def validate_practice_source_review(data, reviews, selection=None, *, require_co
     seen = set()
     descriptions = set()
     fields = {'subject_kind', 'subject_id', 'reviewer_kind', 'reviewed_at', 'source_version_ids', 'passage_ids', 'inspected_sections', 'supported_claim', 'limitations', 'result', 'reason'}
+    if not isinstance(reviews, list) or (revisions is not None and not isinstance(revisions, list)):
+        raise ValueError('Kaynak inceleme kayıtları dizi olmalı')
+    versioned = revisions is not None
+    grouped = {}
     for row in reviews:
         if not isinstance(row, dict) or set(row) != fields:
             raise ValueError('Kaynak inceleme alanları geçersiz')
         if any(not isinstance(row[k], str) or not row[k].strip() for k in ('subject_kind', 'subject_id', 'reviewer_kind', 'reviewed_at', 'result')):
             raise ValueError('Kaynak inceleme kimliği veya durumu geçersiz')
         key = (row['subject_kind'], row['subject_id'])
-        if key in seen or key not in targets:
+        if key in grouped:
+            raise ValueError('Kaynak inceleme hedefi tekrarlı')
+        grouped[key] = [(1, row)]
+    for item in revisions or []:
+        if not isinstance(item, dict) or set(item) != fields | {'revision'} or type(item['revision']) is not int or item['revision'] < 2:
+            raise ValueError('Kaynak inceleme revizyonu geçersiz')
+        row = {k: item[k] for k in fields}
+        if any(not isinstance(row[k], str) or not row[k].strip() for k in ('subject_kind', 'subject_id', 'reviewer_kind', 'reviewed_at', 'result')):
+            raise ValueError('Kaynak inceleme kimliği veya durumu geçersiz')
+        key = (row['subject_kind'], row['subject_id'])
+        if key not in grouped:
+            raise ValueError('İlk kaynak incelemesi bulunamadı')
+        grouped[key].append((item['revision'], row))
+    ordered = []
+    for key, items in grouped.items():
+        items.sort(key=lambda item: item[0])
+        if [i for i, _ in items] != list(range(1, len(items) + 1)):
+            raise ValueError('Kaynak inceleme revizyon sırası belirsiz')
+        previous_time = None
+        previous_passages = set()
+        for index, (_, row) in enumerate(items):
+            when = aware_time(row['reviewed_at'])
+            if previous_time is not None and when <= previous_time:
+                raise ValueError('Kaynak inceleme revizyon tarihi ilerlemeli')
+            previous_time = when
+            try:
+                passage_set = set(json.loads(row['passage_ids']))
+            except (TypeError, ValueError):
+                raise ValueError('Kaynak inceleme pasajları geçersiz')
+            if not previous_passages <= passage_set:
+                raise ValueError('Önceki inceleme kapsamı korunmalı')
+            previous_passages = passage_set
+            ordered.append((row, index == len(items) - 1))
+    for row, latest in ordered:
+        if not isinstance(row, dict) or set(row) != fields:
+            raise ValueError('Kaynak inceleme alanları geçersiz')
+        if any(not isinstance(row[k], str) or not row[k].strip() for k in ('subject_kind', 'subject_id', 'reviewer_kind', 'reviewed_at', 'result')):
+            raise ValueError('Kaynak inceleme kimliği veya durumu geçersiz')
+        key = (row['subject_kind'], row['subject_id'])
+        if (key in seen and not versioned) or key not in targets:
             raise ValueError('Kaynak inceleme hedefi tekrarlı veya bulunamadı')
         seen.add(key)
         if row['reviewer_kind'] != 'agent' or row['result'] != 'reviewed':
@@ -175,7 +235,7 @@ def validate_practice_source_review(data, reviews, selection=None, *, require_co
             raise ValueError('Aynı genel açıklama birden çok hedefe kopyalanamaz')
         descriptions.add(description)
         required, parties = targets[key]
-        if set(passage_ids) != required or any(p not in passages for p in passage_ids):
+        if (not set(passage_ids) <= required or (latest and (require_coverage or not versioned) and set(passage_ids) != required) or any(p not in passages for p in passage_ids)):
             raise ValueError('Kaynak inceleme pasajı hedefle uyuşmuyor')
         if set(version_ids) != {passages[p]['version_id'] for p in passage_ids} or any(v not in versions for v in version_ids):
             raise ValueError('Kaynak inceleme sürümü pasajla uyuşmuyor')
@@ -831,10 +891,13 @@ def validate_practices(data):
         if finding['pair_id'] in pairs:
             check_finding(finding['id'], finding['party_id'])
     review_extension = set(data).intersection(PRACTICE_SOURCE_REVIEW_TABLES)
+    revision_extension = set(data).intersection(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+    if revision_extension and (revision_extension != set(PRACTICE_SOURCE_REVIEW_REVISION_TABLES) or not review_extension or data['practice_source_review_revision_contract'] != [{'version': 2}]):
+        raise ValueError('Kaynak inceleme revizyon sözleşmesi eksik')
     if review_extension:
         if review_extension != set(PRACTICE_SOURCE_REVIEW_TABLES) or data['practice_source_review_contract'] != [{'version': 1}]:
             raise ValueError('Kaynak inceleme sözleşmesi eksik')
-        validate_practice_source_review(data, data['practice_source_review'], require_coverage=c[0]['stage'] == 'complete')
+        validate_practice_source_review(data, data['practice_source_review'], require_coverage=c[0]['stage'] == 'complete', revisions=data['practice_source_review_revision'] if revision_extension else None)
     elif c[0]['stage'] == 'complete':
         raise ValueError('Tam uygulama kaynak incelemesi gerektirir')
     return True
@@ -851,10 +914,16 @@ def practice_manifest_fields(data):
         result['practice_coverage_sha256'] = _digest({k: data[k] for k in PRACTICE_COVERAGE_TABLES})
     if 'practice_source_review_contract' in data:
         result['practice_source_review_sha256'] = _digest({k: data[k] for k in PRACTICE_SOURCE_REVIEW_TABLES})
+    if 'practice_source_review_revision_contract' in data:
+        result['practice_source_review_revision_sha256'] = _digest({k: data[k] for k in PRACTICE_SOURCE_REVIEW_REVISION_TABLES})
     return result
 
 
 def validate_practice_descent(base, candidate):
+    if 'practice_source_review_revision_contract' in base:
+        for name in PRACTICE_SOURCE_REVIEW_REVISION_TABLES:
+            if name not in candidate or any(row not in candidate[name] for row in base[name]):
+                raise ValueError('Önceki kaynak inceleme revizyonu değiştirilemez')
     if 'practice_source_review_contract' in base:
         for name in PRACTICE_SOURCE_REVIEW_TABLES:
             if name not in candidate or any(row not in candidate[name] for row in base[name]):
@@ -915,6 +984,8 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
     try:
         migrate_practice_workspace(db, work / 'pre-practice-migration.sqlite3')
         db.execute('BEGIN IMMEDIATE')
+        new_review_passages = set()
+        new_review_subjects = set()
         input_findings = {entry['values']['id'] for entry in payload['entries'] if entry.get('kind') == 'finding' and isinstance(entry.get('values'), dict) and entry['values'].get('id')}
         for entry in payload['entries']:
             kind, values = entry['kind'], entry['values']
@@ -961,6 +1032,8 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
                         raise ValueError('Önceki kayıt değiştirilemez')
                     continue
             db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
+            if kind == 'finding_evidence':
+                new_review_passages.add(values['passage_id'])
             if kind == 'document_version':
                 db.execute('INSERT OR IGNORE INTO url_alias VALUES (?,?,?)', (values['original_url'], values['final_url'], values['id']))
         records = payload['practice_records']
@@ -1001,6 +1074,16 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
                 raise ValueError('Kaynak inceleme tabloları eksik')
             tables.update(PRACTICE_SOURCE_REVIEW_TABLES)
             for name, definition in PRACTICE_SOURCE_REVIEW_TABLES.items():
+                db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        review_revisions = set(records).intersection(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+        prior_revisions = db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_source_review_revision_contract'").fetchone()
+        if prior_revisions and not review_revisions:
+            raise ValueError('Kaynak inceleme revizyon sözleşmesi kaldırılamaz')
+        if review_revisions:
+            if review_revisions != set(PRACTICE_SOURCE_REVIEW_REVISION_TABLES) or not reviews:
+                raise ValueError('Kaynak inceleme revizyon tabloları eksik')
+            tables.update(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+            for name, definition in PRACTICE_SOURCE_REVIEW_REVISION_TABLES.items():
                 db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if set(records) != set(tables):
             raise ValueError('Uygulama tabloları eksik')
@@ -1043,16 +1126,30 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
                     if party is not None and scope_party is not None and party != scope_party:
                         raise ValueError('Parti paketi başka partinin kapsamını değiştiremez')
                     db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
+                    if kind == 'practice_event_evidence':
+                        new_review_passages.add(values['passage_id'])
+                    if kind in ('practice_source_review', 'practice_source_review_revision'):
+                        new_review_subjects.add((values['subject_kind'], values['subject_id']))
         # Validate a transaction-consistent snapshot before the commit.
         data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'scope_party', 'action', 'match', 'match_candidate', 'lead', 'attempt', 'missing', 'closure', 'reopen']}
         data['release_id'] = base
         validate_practices(data)
         if reviews:
             refs = payload.get('source_review_refs')
-            expected = [{'subject_kind': row['subject_kind'], 'subject_id': row['subject_id']} for row in records['practice_source_review']]
+            submitted_reviews = records['practice_source_review'] + (records['practice_source_review_revision'] if review_revisions else [])
+            expected = [dict(subject_kind=kind, subject_id=identity) for kind, identity in sorted({(row['subject_kind'], row['subject_id']) for row in submitted_reviews})]
             if not isinstance(refs, list) or sorted(refs, key=lambda x: (x['subject_kind'], x['subject_id'])) != sorted(expected, key=lambda x: (x['subject_kind'], x['subject_id'])):
                 raise ValueError('Kaynak inceleme başvuruları uyuşmuyor')
-            validate_practice_source_review(data, records['practice_source_review'], records, party_id=payload.get('party_id'))
+            party = payload.get('party_id')
+            target_keys = set(practice_review_package_targets(data, records, new_review_passages, party))
+            if not new_review_subjects <= target_keys:
+                raise ValueError('Yeni kaynak incelemesi paket kapsamı dışında')
+            initial = [row for row in data['practice_source_review'] if (row['subject_kind'], row['subject_id']) in target_keys]
+            if review_revisions:
+                later = [row for row in data['practice_source_review_revision'] if (row['subject_kind'], row['subject_id']) in target_keys]
+                validate_practice_source_review(data, initial, party_id=party, revisions=later, target_keys=target_keys)
+            else:
+                validate_practice_source_review(data, initial, party_id=party, target_keys=target_keys)
         if db.execute('PRAGMA foreign_key_check').fetchall() or db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
             raise ValueError('Uygulama bütünlük hatası')
         db.commit()
