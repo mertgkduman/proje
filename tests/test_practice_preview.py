@@ -7,6 +7,8 @@ import tempfile
 import unittest
 from pathlib import Path
 import sqlite3
+from html.parser import HTMLParser
+from urllib.parse import unquote
 
 import arsiv
 import kaynaklar
@@ -34,6 +36,9 @@ class PracticePreview(unittest.TestCase):
             (root / 'source.html').write_text('Different publisher', encoding='utf-8')
             with self.assertRaises(ValueError):
                 kaynaklar.check_attribution(db, attr, storage_root=root)
+            db.execute("UPDATE document_version SET original_path='../outside.html'")
+            with self.assertRaises(ValueError):
+                kaynaklar.check_attribution(db, attr, storage_root=root)
 
     def test_legacy_tracer_preview_keeps_global_state(self):
         current = arsiv.DATA / 'current.json'
@@ -55,6 +60,18 @@ class PracticePreview(unittest.TestCase):
             snapshot = json.loads((out / 'records.json').read_text(encoding='utf-8'))
             self.assertEqual(arsiv.export_db(out / 'records.sqlite3', snapshot['release_id']), snapshot)
             report = (out / 'index.html').read_text(encoding='utf-8')
+            class Links(HTMLParser):
+                def __init__(self):
+                    super().__init__()
+                    self.paths = []
+
+                def handle_starttag(self, tag, attrs):
+                    self.paths.extend(value for name, value in attrs if name == 'href' and value and value.startswith('assets/'))
+            links = Links()
+            links.feed(report)
+            self.assertTrue(links.paths)
+            for path in links.paths:
+                self.assertTrue((out / unquote(path.split('#')[0])).is_file(), path)
             for view in ('party', 'comparison'):
                 self.assertIn('id="' + view + '-practice-tracer-relation-id"', report)
             coverage_out = Path(tmp) / 'coverage-preview'
@@ -89,6 +106,33 @@ class PracticePreview(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertEqual(list(out.iterdir()), [sentinel])
             self.assertEqual(sentinel.read_bytes(), b'unchanged')
+
+    def test_merge_reports_undecided_shared_event_without_overwriting(self):
+        package = json.loads((arsiv.DATA / 'practices' / '04-coverage-tracer.json').read_text(encoding='utf-8'))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            first = root / 'first.json'
+            second = root / 'second.json'
+            first.write_text(json.dumps(package), encoding='utf-8')
+            def rename(value):
+                if isinstance(value, dict):
+                    return {key: rename(item) for key, item in value.items()}
+                if isinstance(value, list):
+                    return [rename(item) for item in value]
+                return 'temporary-event' if value == 'tracer-cesme' else value
+            second.write_text(json.dumps(rename(package)), encoding='utf-8')
+            out = root / 'merged.json'
+            out.write_bytes(b'unchanged')
+            result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src' / 'arsiv.py'),
+                                     'practice-merge', '--inventory', str(arsiv.DATA / 'practices' / '04-inventory.json'),
+                                     '--inputs', str(first), str(second), '--out', str(out)], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertEqual(out.read_bytes(), b'unchanged')
+            try:
+                diagnostic = json.loads(result.stderr)
+            except json.JSONDecodeError:
+                self.fail('merge must report undecided candidates as JSON')
+            self.assertTrue(diagnostic['candidates'])
 
     def test_preview_command_is_available(self):
         result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src' / 'arsiv.py'),
