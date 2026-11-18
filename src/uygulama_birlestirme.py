@@ -200,6 +200,8 @@ def merge_packages(inventory, inputs, decisions_raw, *, decisions_sha256, base_r
             if table in ('practice_source_review_contract', 'practice_source_review_revision_contract'):
                 review_contract_origins.append(dict(input_package_sha256=sha, input_identity=identity, party_id=p.get('party_id'), table=table, original=copy.deepcopy(rows)))
                 continue
+            if table not in REVIEW_TABLES:
+                output.setdefault(table, [])
             for original in rows:
                 row = copy.deepcopy(original)
                 if table in REVIEW_TABLES:
@@ -214,7 +216,7 @@ def merge_packages(inventory, inputs, decisions_raw, *, decisions_sha256, base_r
                     origins.append(dict(input_package_sha256=sha, input_identity=identity, party_id=p.get('party_id'), table=table, original=row, canonical_subject_id=canonical))
                     continue
                 for key in row:
-                    if 'event' in key and key not in (('id', 'common_event_key') if table == 'practice_event' else ('event_id',) if table in EVENT_FK_TABLES else ()):
+                    if 'event' in key and key not in (('id', 'common_event_key', 'event_at') if table == 'practice_event' else ('event_id',) if table in EVENT_FK_TABLES else ()):
                         raise MergeError('Unknown event-bearing field')
                 if table == 'practice_event': row['id'] = mapping[(sha, row['id'])]
                 elif table in EVENT_FK_TABLES:

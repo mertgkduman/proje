@@ -46,7 +46,7 @@ from rapor_v23 import render_report as render_v23_report
 from rapor_v24 import render_report as render_v24_report
 from rapor_v25 import render_report as render_v25_report
 from rapor_v26 import render_report as render_v26_report
-from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, PRACTICE_SOURCE_REVIEW_TABLES, PRACTICE_SOURCE_REVIEW_REVISION_TABLES, validate_practices, load_practice,
+from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, PRACTICE_SOURCE_REVIEW_TABLES, PRACTICE_SOURCE_REVIEW_REVISION_TABLES, PRACTICE_MERGE_TABLES, validate_practices, load_practice,
                          validate_practice_input, practice_manifest_fields,
                          validate_practice_descent)
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
@@ -2728,6 +2728,9 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
         source_review_revision_present = existing.intersection(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
         if source_review_revision_present and (source_review_revision_present != set(PRACTICE_SOURCE_REVIEW_REVISION_TABLES) or not source_review_present or not db.execute('SELECT 1 FROM practice_source_review_revision_contract').fetchone()):
             raise ValueError('Kaynak inceleme revizyon işaretçisi veya tabloları eksik')
+        merge_present = existing.intersection(PRACTICE_MERGE_TABLES)
+        if merge_present and (merge_present != set(PRACTICE_MERGE_TABLES) or not has_practices or not db.execute('SELECT 1 FROM practice_merge_contract').fetchone()):
+            raise ValueError('Birleşme işaretçisi veya tabloları eksik')
         if has_practices and practice_version != 7:
             raise ValueError('Uygulama şema sürümü eksik')
         if has_practices and not db.execute('SELECT 1 FROM practice_contract').fetchone():
@@ -2770,6 +2773,8 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
                 names += list(PRACTICE_SOURCE_REVIEW_TABLES)
             if source_review_revision_present:
                 names += list(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+            if merge_present:
+                names += list(PRACTICE_MERGE_TABLES)
         result = {'schema_version': 7 if has_practices else (6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))))), 'release_id': release_id}
         if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
@@ -3004,7 +3009,7 @@ def audit_release(release='current', _seen=None, *, storage_root=None):
         if exported['schema_version'] == 7:
             fields = practice_manifest_fields(exported)
             if ({k: manifest.get(k) for k in fields} != fields or
-                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256', 'practice_coverage_sha256', 'practice_source_review_sha256', 'practice_source_review_revision_sha256'))):
+                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256', 'practice_coverage_sha256', 'practice_source_review_sha256', 'practice_source_review_revision_sha256', 'practice_merge_provenance_sha256'))):
                 raise ValueError('Uygulama manifesti geçersiz')
         elif any(k.startswith('practice_') for k in manifest):
             raise ValueError('Uygulama snapshot işaretçisi eksik')

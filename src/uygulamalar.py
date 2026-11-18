@@ -4,6 +4,8 @@ import json
 import sqlite3
 from datetime import date
 from pathlib import Path
+from uygulama_merge_kayit import (PRACTICE_MERGE_TABLES, materialize_practice_merge,
+                                  validate_practice_merge)
 
 PRACTICE_TABLES = {
     'practice_contract': 'version INTEGER PRIMARY KEY, taxonomy_version INTEGER NOT NULL, stage TEXT NOT NULL, method_version INTEGER NOT NULL, inventory_digest TEXT NOT NULL',
@@ -900,6 +902,7 @@ def validate_practices(data):
         validate_practice_source_review(data, data['practice_source_review'], require_coverage=c[0]['stage'] == 'complete', revisions=data['practice_source_review_revision'] if revision_extension else None)
     elif c[0]['stage'] == 'complete':
         raise ValueError('Tam uygulama kaynak incelemesi gerektirir')
+    validate_practice_merge(data)
     return True
 
 
@@ -916,10 +919,24 @@ def practice_manifest_fields(data):
         result['practice_source_review_sha256'] = _digest({k: data[k] for k in PRACTICE_SOURCE_REVIEW_TABLES})
     if 'practice_source_review_revision_contract' in data:
         result['practice_source_review_revision_sha256'] = _digest({k: data[k] for k in PRACTICE_SOURCE_REVIEW_REVISION_TABLES})
+    if 'practice_merge_contract' in data:
+        result['practice_merge_provenance_sha256'] = _digest({k: data[k] for k in PRACTICE_MERGE_TABLES})
     return result
 
 
 def validate_practice_descent(base, candidate):
+    if 'practice_merge_contract' in base:
+        for name in PRACTICE_MERGE_TABLES:
+            if name not in candidate or any(row not in candidate[name] for row in base[name]):
+                raise ValueError('Önceki birleşme kökeni değiştirilemez')
+    previous = {row['id'] for row in base.get('practice_merge_provenance', [])}
+    for row in candidate.get('practice_merge_provenance', []):
+        if row['id'] not in previous:
+            claimed = json.loads(row['base_records_json'])
+            schemas = (PRACTICE_TABLES | PRACTICE_VARIANT_TABLES | PRACTICE_EVIDENCE_TABLES |
+                       PRACTICE_COVERAGE_TABLES | PRACTICE_SOURCE_REVIEW_TABLES | PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+            if set(claimed) != set(base).intersection(schemas) or any(records != base[table] for table, records in claimed.items()):
+                raise ValueError('Birleşme kabul edilmiş tabanla uyuşmuyor')
     if 'practice_source_review_revision_contract' in base:
         for name in PRACTICE_SOURCE_REVIEW_REVISION_TABLES:
             if name not in candidate or any(row not in candidate[name] for row in base[name]):
@@ -1085,6 +1102,16 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
             tables.update(PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
             for name, definition in PRACTICE_SOURCE_REVIEW_REVISION_TABLES.items():
                 db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        merge = set(records).intersection(PRACTICE_MERGE_TABLES)
+        prior_merge = db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_merge_contract'").fetchone()
+        if prior_merge and not merge:
+            raise ValueError('Birleşme sözleşmesi kaldırılamaz')
+        if merge:
+            if merge != set(PRACTICE_MERGE_TABLES):
+                raise ValueError('Birleşme tabloları eksik')
+            tables.update(PRACTICE_MERGE_TABLES)
+            for name, definition in PRACTICE_MERGE_TABLES.items():
+                db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if set(records) != set(tables):
             raise ValueError('Uygulama tabloları eksik')
         for kind in tables:
@@ -1131,7 +1158,7 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
                     if kind in ('practice_source_review', 'practice_source_review_revision'):
                         new_review_subjects.add((values['subject_kind'], values['subject_id']))
         # Validate a transaction-consistent snapshot before the commit.
-        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'scope_party', 'action', 'match', 'match_candidate', 'lead', 'attempt', 'missing', 'closure', 'reopen']}
+        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'archive_view', 'source_attribution', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'scope_party', 'action', 'match', 'match_candidate', 'lead', 'attempt', 'missing', 'closure', 'reopen']}
         data['release_id'] = base
         validate_practices(data)
         if reviews:
