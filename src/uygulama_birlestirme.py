@@ -181,6 +181,9 @@ def merge_packages(inventory, inputs, decisions_raw, *, decisions_sha256, base_r
         # A reference to an unchanged accepted base event does not assert a
         # new identity relationship or constitute a candidate decision.
         if event_id in base_events:
+            mapping[ref] = event_id
+            aliases.append(dict(input_package_sha256=sha, input_event_id=event_id,
+                                canonical_event_id=event_id, decision_id=None))
             return event_id
         raise MergeError('Dangling event reference')
     def append(table, row):

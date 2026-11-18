@@ -145,6 +145,8 @@ class MergeEngine(unittest.TestCase):
         self.assertEqual(result['payload']['practice_records']['practice_relation'][0]['event_id'], 'base-event')
         self.assertEqual(result['review_origins'][0]['canonical_subject_id'], 'base-event')
         self.assertFalse(result['decisions'])
+        self.assertEqual(result['aliases'], [dict(input_package_sha256=digest(inp[0]['raw']),
+            input_event_id='base-event', canonical_event_id='base-event', decision_id=None)])
         with self.assertRaises(MergeError):
             self.merge(d, inp, {})
 
