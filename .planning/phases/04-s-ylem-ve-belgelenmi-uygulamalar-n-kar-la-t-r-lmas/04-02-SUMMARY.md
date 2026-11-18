@@ -25,7 +25,7 @@ patterns-established:
   - A source attributed to another party requires an explicit passage-scoped sharing record.
 requirements-completed: []
 actuals:
-  tokens: 34843
+  tokens: 36991
   tasks: 2
   commits: 7
 plan_head_before: 62c7bfcca71b4de7d059e76178dc898f1cc9f30d
