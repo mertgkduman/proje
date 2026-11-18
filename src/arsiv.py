@@ -329,8 +329,13 @@ def pdf_page_exists(path, index):
     finally: obj.g_object_unref(document)
 
 
-def capture_source(url, kind, out=None):
+def capture_source(url, kind, out=None, *, storage_root=None):
     safe_url(url)
+    root = DATA if storage_root is None else Path(storage_root).resolve()
+    if storage_root is not None and out is not None:
+        candidate = Path(out).resolve()
+        if candidate != root and root not in candidate.parents:
+            raise ValueError('Kaynak çıktı yolu kök dışında')
     if kind not in ('html', 'pdf'):
         raise ValueError('Desteklenmeyen kaynak türü')
     request = urllib.request.Request(url, headers={'User-Agent': 'proje-arastirma/1.0'})
@@ -354,8 +359,12 @@ def capture_source(url, kind, out=None):
     elif kind == 'html':
         decode_html(content)
     digest = hashlib.sha256(content).hexdigest()
-    object_root = Path(out) if out else DATA / 'objects'
+    object_root = Path(out) if out else root / 'objects'
+    if storage_root is not None:
+        object_root = object_root.resolve()
     folder = object_root / digest
+    if storage_root is not None:
+        safe_path(root, str(folder.resolve().relative_to(root)))
     folder.mkdir(parents=True, exist_ok=True)
     original = folder / ('original.html.bin' if kind == 'html' else 'original.pdf')
     if original.exists() and sha(original) != digest:
@@ -367,7 +376,7 @@ def capture_source(url, kind, out=None):
     if not original.exists(): original.write_bytes(content)
     if not readable.exists(): readable.write_bytes(derivative)
     now = dt.datetime.now(dt.timezone.utc).isoformat()
-    result = dict(original_url=url, final_url=final, accessed_at=now, verified_at=now, mime=mime, sha256=digest, original_path=str(original.relative_to(DATA)) if original.is_relative_to(DATA) else str(original), readable_path=str(readable.relative_to(DATA)) if readable.is_relative_to(DATA) else str(readable))
+    result = dict(original_url=url, final_url=final, accessed_at=now, verified_at=now, mime=mime, sha256=digest, original_path=str(original.relative_to(root)) if original.is_relative_to(root) else str(original), readable_path=str(readable.relative_to(root)) if readable.is_relative_to(root) else str(readable))
     if charset: result['http_charset'] = charset
     return result
 
@@ -3374,7 +3383,7 @@ def main():
     pc = sub.add_parser('practice-check'); pc.add_argument('--input', required=True); pc.add_argument('--inventory'); pc.add_argument('--base-release', default='current')
     pi = sub.add_parser('practice-inventory'); pi.add_argument('--release', default='current'); pi.add_argument('--out', required=True)
     pv = sub.add_parser('practice-coverage'); pv.add_argument('--inventory', required=True); pv.add_argument('--input', required=True); pv.add_argument('--party'); pv.add_argument('--complete', action='store_true')
-    pp = sub.add_parser('practice-preview'); pp.add_argument('--input', required=True); pp.add_argument('--out'); pp.add_argument('--inventory'); pp.add_argument('--base-release', default='current')
+    pp = sub.add_parser('practice-preview'); pp.add_argument('--input', required=True); pp.add_argument('--out'); pp.add_argument('--inventory'); pp.add_argument('--base-release', default='current'); pp.add_argument('--source-root')
     pl = sub.add_parser('practice-load'); pl.add_argument('--workspace', required=True); pl.add_argument('--input', required=True)
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
     cr = sub.add_parser('comparison-reconcile'); cr.add_argument('--workspace', required=True); cr.add_argument('--taxonomy', required=True); cr.add_argument('--inventory', required=True); cr.add_argument('--input', required=True)
@@ -3422,7 +3431,7 @@ def main():
         package = json.loads(Path(args.input).read_text(encoding='utf-8'))
         inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8')) if args.inventory else None
         out = args.out or str(Path(tempfile.gettempdir()) / ('gsd-practice-preview-' + uuid.uuid4().hex))
-        result = render_practice_preview(package, out, inventory, args.base_release, storage_root=DATA)
+        result = render_practice_preview(package, out, inventory, args.base_release, storage_root=DATA, source_root=args.source_root)
         print('PRACTICE_PREVIEW_OK', result)
     elif args.command == 'practice-coverage':
         import shutil

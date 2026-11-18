@@ -756,7 +756,7 @@ def load_practice(work, payload):
 
 
 def _load_practice_copy(work, payload, base, *, storage_root=None):
-    from arsiv import connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing
+    from arsiv import connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing, safe_url, validate_view
     if payload.get('base_release') != base or payload.get('contract_version') != 1 or payload.get('stage') not in ('tracer', 'partial', 'complete') or payload.get('taxonomy_version') != 4:
         raise ValueError('Uygulama paketi veya tabanı geçersiz')
     if len(payload.get('practice_records', {}).get('practice_contract', [])) != 1 or payload['practice_records']['practice_contract'][0].get('stage') != payload['stage']:
@@ -772,10 +772,26 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
         input_findings = {entry['values']['id'] for entry in payload['entries'] if entry.get('kind') == 'finding' and isinstance(entry.get('values'), dict) and entry['values'].get('id')}
         for entry in payload['entries']:
             kind, values = entry['kind'], entry['values']
-            if kind not in ('finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing') or not values:
+            if kind not in ('document', 'document_version', 'archive_view', 'passage', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing') or not values:
                 raise ValueError('Uygulama girdi türü geçersiz')
             if payload.get('party_id') is not None and values.get('party_id') is not None and values['party_id'] != payload['party_id']:
                 raise ValueError('Parti paketi başka partinin kaydını ekleyemez')
+            if kind in ('document_version', 'archive_view', 'passage', 'source_attribution') and payload.get('party_id') is not None:
+                if kind == 'document_version':
+                    owner = db.execute('SELECT party_id FROM document WHERE id=?', (values.get('document_id'),)).fetchone()
+                else:
+                    owner = db.execute('SELECT d.party_id FROM document_version v JOIN document d ON d.id=v.document_id WHERE v.id=?', (values.get('version_id'),)).fetchone()
+                if not owner or owner['party_id'] != payload['party_id']:
+                    raise ValueError('Kaynak kaydı parti sahibine ait değil')
+            if kind == 'document_version':
+                safe_url(values['original_url']); safe_url(values['final_url'])
+                if values.get('document_date') is None and (values.get('date_precision') != 'unknown' or not values.get('date_unknown_reason')):
+                    raise ValueError('Bilinmeyen belge tarihi için gerekçe gerekli')
+            if kind == 'archive_view':
+                validate_view(storage_root, values)
+                version = db.execute('SELECT sha256 FROM document_version WHERE id=?', (values.get('version_id'),)).fetchone()
+                if not version or version['sha256'] != values['source_sha256']:
+                    raise ValueError('Arşiv görünümü özgün belgeyle uyuşmuyor')
             if kind == 'attempt':
                 if (values.get('type'), values.get('result'), values.get('lead_id')) != ('search', 'no_result', None):
                     raise ValueError('Paket girişimi yalnız uçsuz sonuçsuz arama olabilir')
@@ -791,7 +807,16 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
             cols = {x['name'] for x in db.execute(f'PRAGMA table_info({kind})')}
             if not set(values) <= cols:
                 raise ValueError('Bilinmeyen alan')
+            pk = [x['name'] for x in sorted(db.execute(f'PRAGMA table_info({kind})'), key=lambda x: x['pk']) if x['pk']]
+            if pk and all(key in values for key in pk):
+                existing = db.execute(f"SELECT * FROM {kind} WHERE " + ' AND '.join(key + '=?' for key in pk), [values[key] for key in pk]).fetchone()
+                if existing:
+                    if any(existing[key] != value for key, value in values.items()):
+                        raise ValueError('Önceki kayıt değiştirilemez')
+                    continue
             db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
+            if kind == 'document_version':
+                db.execute('INSERT OR IGNORE INTO url_alias VALUES (?,?,?)', (values['original_url'], values['final_url'], values['id']))
         records = payload['practice_records']
         variant = set(records).intersection(PRACTICE_VARIANT_TABLES)
         if variant and variant != set(PRACTICE_VARIANT_TABLES):
@@ -841,6 +866,8 @@ def _load_practice_copy(work, payload, base, *, storage_root=None):
                         continue
                 where = ' AND '.join(f'{key} IS ?' for key in values)
                 if not db.execute(f'SELECT 1 FROM {kind} WHERE {where}', list(values.values())).fetchone():
+                    if kind == 'practice_source_party' and payload.get('party_id') is not None and values.get('party_id') != payload['party_id']:
+                        raise ValueError('Parti paketi başka partiye kaynak yetkisi veremez')
                     party = payload.get('party_id') if kind in PRACTICE_COVERAGE_TABLES else None
                     scope_id = values.get('scope_id') if kind in PRACTICE_COVERAGE_TABLES else None
                     if kind == 'practice_scope_v2':
@@ -911,7 +938,16 @@ def validate_practice_input(payload, base_release='current'):
     return True
 
 
-def render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None):
+def _validate_new_source_path(values, key):
+    import re
+    path = values[key]
+    digest = values.get('sha256')
+    names = ('readable.html',) if key == 'readable_path' else ('original.pdf', 'original.html.bin')
+    if not isinstance(path, str) or not isinstance(digest, str) or not re.fullmatch(r'[0-9a-f]{64}', digest) or path not in {'objects/' + digest + '/' + name for name in names}:
+        raise ValueError('Kaynak nesne yolu veya özeti geçersiz')
+
+
+def render_practice_preview(payload, out, inventory=None, base_release='current', *, storage_root=None, source_root=None):
     """Build a private, validated snapshot without touching the writer lock."""
     import os
     import re
@@ -977,8 +1013,62 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
         work = preview_root / 'releases' / release
         work.mkdir(parents=True)
         shutil.copyfile(folder / 'records.sqlite3', work / 'records.sqlite3')
-        _load_practice_copy(work, payload, base, storage_root=storage_root)
-        data = arsiv.export_db(work / 'records.sqlite3', release, strict_identity=True, storage_root=storage_root)
+        def copy_asset(root, relative, *, reject_links=False):
+            if not isinstance(relative, str) or Path(relative).is_absolute() or '..' in Path(relative).parts:
+                raise ValueError('Geçersiz kaynak yolu')
+            if reject_links:
+                current = Path(root)
+                for part in Path(relative).parts:
+                    current = current / part
+                    if current.is_symlink():
+                        raise ValueError('Kaynak sembolik bağlantı içeremez')
+            source = arsiv.safe_path(root, relative)
+            target = arsiv.safe_path(preview_root, relative)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if target.exists() and target.read_bytes() != source.read_bytes():
+                raise ValueError('Kaynak varlığı değiştirilemez')
+            if not target.exists(): shutil.copyfile(source, target)
+
+        def copy_view(root, view, *, reject_links=False):
+            arsiv.validate_view(root, view)
+            path = view['manifest_path']
+            copy_asset(root, path, reject_links=reject_links)
+            view_manifest = json.loads(arsiv.safe_path(root, path).read_text(encoding='utf-8'))
+            for name in view_manifest['files']:
+                copy_asset(root, str(Path(path).parent / name), reject_links=reject_links)
+
+        for version in base_data['document_version']:
+            for key in ('original_path', 'readable_path'): copy_asset(storage_root, version[key])
+        for view in base_data.get('archive_view', []): copy_view(storage_root, view)
+        source_root = storage_root if source_root is None else Path(source_root).resolve()
+        party = payload.get('party_id')
+        for entry in payload.get('entries', []):
+            kind, values = entry['kind'], entry['values']
+            if kind in ('document_version', 'archive_view') and any(
+                    all(row.get(key) == value for key, value in values.items())
+                    for row in base_data.get(kind, [])):
+                continue
+            if kind == 'document_version':
+                if not isinstance(party, str) or not re.fullmatch(r'[a-z0-9-]+', party):
+                    raise ValueError('Yeni kaynak için parti sahibi gerekli')
+                for key in ('original_path', 'readable_path'):
+                    _validate_new_source_path(values, key)
+                    copy_asset(source_root, values[key], reject_links=True)
+                original = arsiv.safe_path(preview_root, values['original_path'])
+                if original.stat().st_size > arsiv.MAX_SOURCE:
+                    raise ValueError('Kaynak boyut sınırını aşıyor')
+                raw = original.read_bytes()
+                if not raw or len(raw) > arsiv.MAX_SOURCE or arsiv.sha(original) != values['sha256']:
+                    raise ValueError('Kaynak baytları veya özeti geçersiz')
+                if original.name == 'original.pdf':
+                    if not raw.startswith(b'%PDF-'): raise ValueError('PDF kaynak biçimi geçersiz')
+                else:
+                    from arsiv_gorunum import decode_html
+                    decode_html(raw)
+            elif kind == 'archive_view':
+                copy_view(source_root, values, reject_links=True)
+        _load_practice_copy(work, payload, base, storage_root=preview_root)
+        data = arsiv.export_db(work / 'records.sqlite3', release, strict_identity=True, storage_root=preview_root)
         if inventory is not None:
             extensions = [dict(row, basis_passage_ids=json.loads(row['basis_passage_ids']))
                           for row in data.get('practice_topic_extension', [])]
@@ -993,17 +1083,14 @@ def render_practice_preview(payload, out, inventory=None, base_release='current'
         asset_root = preview_root
         paths = {v[k] for v in data['document_version'] for k in ('original_path', 'readable_path')}
         for view in data.get('archive_view', []):
-            arsiv.validate_view(storage_root, view)
-            view_manifest = json.loads(arsiv.safe_path(storage_root, view['manifest_path']).read_text(encoding='utf-8'))
+            arsiv.validate_view(preview_root, view)
+            view_manifest = json.loads(arsiv.safe_path(preview_root, view['manifest_path']).read_text(encoding='utf-8'))
             parent = Path(view['manifest_path']).parent
             paths.add(view['manifest_path'])
             paths.update(str(parent / name) for name in view_manifest['files'])
         asset_hashes = {}
         for relative in sorted(paths):
-            source = arsiv.safe_path(storage_root, relative)
             target = arsiv.safe_path(asset_root, relative)
-            target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(source, target)
             asset_hashes[relative] = arsiv.sha(target)
         report = arsiv.render_comparison_snapshot(data, arsiv.render_report)
         (work / 'index.html').write_text(report, encoding='utf-8')

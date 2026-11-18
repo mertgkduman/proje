@@ -17,6 +17,16 @@ import uygulamalar
 
 
 class PracticePreview(unittest.TestCase):
+    def test_shared_source_rejects_wrong_version_passage(self):
+        snapshot = arsiv.DATA / 'releases' / arsiv.current() / 'records.json'
+        data = json.loads(snapshot.read_text())
+        passage = data['passage'][0]
+        other = next(row for row in data['document_version'] if row['id'] != passage['version_id'])
+        data['practice_source_party'].append(dict(version_id=other['id'], passage_id=passage['id'],
+                                                  party_id=data['party'][0]['id'], scope_reason='technical mismatch'))
+        with self.assertRaisesRegex(ValueError, 'Kaynak parti kapsamı geçersiz'):
+            uygulamalar.validate_practices(data)
+
     def test_source_owner_cannot_be_forged(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -49,11 +59,19 @@ class PracticePreview(unittest.TestCase):
             view = arsiv_gorunum.build_view(raw, 'https://example.org/', root, fetch_assets=False)
             manifest_path = root / view['manifest_path']
             manifest = json.loads(manifest_path.read_text())
-            (root / view['index_path']).write_text('<script>bad()</script>')
+            index = root / view['index_path']
+            index.write_text(index.read_text() + '<script>bad()</script>')
             manifest['files']['index.html'] = arsiv.sha(root / view['index_path'])
+            identity = {key: value for key, value in manifest.items() if key != 'view_id'}
+            new_id = hashlib.sha256(json.dumps(identity, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()[:32]
+            new_folder = root / 'views' / new_id
+            manifest_path.parent.rename(new_folder)
+            manifest['view_id'] = new_id
+            view.update(view_id=new_id, index_path='views/' + new_id + '/index.html', manifest_path='views/' + new_id + '/manifest.json')
+            manifest_path = root / view['manifest_path']
             manifest_path.write_text(json.dumps(manifest))
             view['manifest_sha256'] = arsiv.sha(manifest_path)
-            with self.assertRaises(ValueError):
+            with self.assertRaisesRegex(ValueError, 'etkin öğe'):
                 arsiv_gorunum.validate_view(root, view)
 
     def test_new_source_end_to_end(self):
@@ -110,12 +128,13 @@ class PracticePreview(unittest.TestCase):
             self.assertGreaterEqual(report.count('technical-p'), 2)
             self.assertIn('../../' + version['original_path'], report)
             self.assertIn('../../' + view['index_path'], report)
+            report_before = arsiv.sha(release / 'index.html')
             (source_root / version['original_path']).write_bytes(raw + b'changed')
             rejected = root / 'rejected'
             with self.assertRaises(ValueError):
                 uygulamalar.render_practice_preview(package, rejected, inventory, source_root=source_root)
             self.assertFalse(rejected.exists())
-            self.assertTrue((out / 'releases' / release.name / 'index.html').is_file())
+            self.assertEqual(arsiv.sha(release / 'index.html'), report_before)
         self.assertEqual(arsiv.sha(arsiv.DATA / 'current.json'), current_before)
         self.assertEqual(arsiv.sha(db_path), db_before)
         self.assertFalse((arsiv.DATA / '.write.lock').exists())
