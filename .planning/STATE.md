@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 2
 status: executing
-stopped_at: "Phase 04 Wave 1 repair: corrected renderer26 local release f67ca0a35e634035bf3aa83a46571f50 committed; phase2/3/4 audits running; full gate pending; no counter advance."
-last_updated: "2026-11-18T01:26:01.243Z"
+stopped_at: "Phase 04 Wave 1 repair: renderer26 release f67ca0a35e634035bf3aa83a46571f50 and phase2/3/4 audits passed; final full gate PID 3317563 running, timeout 10800s."
+last_updated: "2026-11-18T02:23:42.800Z"
 last_activity: 2026-11-17
 last_activity_desc: Phase 04 execution started
-state_head: 8b424e6c601bb1932820e826e52fe6a7566a4d78
+state_head: 60a214a796a70646a48dd902faf3bce3407f77b7
 progress:
   total_phases: 6
   completed_phases: 3
@@ -187,6 +187,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-18T01:25:55.908Z
-Stopped at: Phase 04 Wave 1 repair: corrected renderer26 local release f67ca0a35e634035bf3aa83a46571f50 committed; phase2/3/4 audits running; full gate pending; no counter advance.
-Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-01-checks/WAVE-1-REPAIR.md
+Last session: 2026-11-18T02:23:38.513Z
+Stopped at: Phase 04 Wave 1 repair: renderer26 release f67ca0a35e634035bf3aa83a46571f50 and phase2/3/4 audits passed; final full gate PID 3317563 running, timeout 10800s.
+Resume file: /tmp/gsd-phase04-repair-final.log

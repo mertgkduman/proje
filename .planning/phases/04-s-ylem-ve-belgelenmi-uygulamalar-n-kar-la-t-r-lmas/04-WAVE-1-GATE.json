@@ -40,8 +40,8 @@
     "local_publish": {"pid": 2942965, "command": "python3 src/arsiv.py publish --workspace /tmp/proje-work-hwuz6bni --refresh", "log": "/tmp/gsd-phase04-repair-publish.log", "exit_sidecar": "/tmp/gsd-phase04-repair-publish.exit", "status": "passed", "commit": "8b424e6"},
     "new_release": "f67ca0a35e634035bf3aa83a46571f50",
     "new_report_sha256": "96b87ce3daf43c10e5f48514daec89d98b82c5824bfb9439f5effe4121f54238",
-    "audits": {"phase2": {"pid": 3272409, "result": "running", "log": "/tmp/gsd-phase04-repair-audit2.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit2.exit"}, "phase3_complete": {"pid": 3272410, "result": "running", "log": "/tmp/gsd-phase04-repair-audit3.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit3.exit"}, "phase4_tracer": {"pid": 3272411, "result": "running", "log": "/tmp/gsd-phase04-repair-audit4.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit4.exit"}},
-    "final_full_gate": "not started; release audits running"
+    "audits": {"phase2": {"pid": 3272409, "result": "pass", "log": "/tmp/gsd-phase04-repair-audit2.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit2.exit"}, "phase3_complete": {"pid": 3272410, "result": "pass", "log": "/tmp/gsd-phase04-repair-audit3.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit3.exit"}, "phase4_tracer": {"pid": 3272411, "result": "pass", "log": "/tmp/gsd-phase04-repair-audit4.log", "exit_sidecar": "/tmp/gsd-phase04-repair-audit4.exit"}},
+    "final_full_gate": {"result": "running", "command": "python3 tests/run.py", "timeout_seconds": 10800, "supervisor_pid": 3317561, "timeout_pid": 3317562, "test_pid": 3317563, "log": "/tmp/gsd-phase04-repair-final.log", "exit_sidecar": "/tmp/gsd-phase04-repair-final.exit"}
   },
   "next_plan": "04-02",
   "resume_rule": "Finish the local repair release and required audits, then run the final configured full gate once with durable log and exit sidecar. A timeout is inconclusive and must never be recorded as a pass."
