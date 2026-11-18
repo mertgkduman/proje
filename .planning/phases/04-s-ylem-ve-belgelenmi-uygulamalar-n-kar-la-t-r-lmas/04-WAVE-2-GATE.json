@@ -1,0 +1,84 @@
+{
+  "phase": "04",
+  "wave": 2,
+  "status": "complete",
+  "completed_plans": [
+    "04-02"
+  ],
+  "phase_completed_plans": 2,
+  "total_phase_plans": 15,
+  "recorded_at": "2026-11-18T07:47:28.068924+00:00",
+  "head": "4ac63041feb2e24711181181c5bb72b888e96e06",
+  "release_id": "f67ca0a35e634035bf3aa83a46571f50",
+  "source_test_fingerprint": "5a47e3de98e4eed93b8e3ae3cb7df2283f2e451885dbc571907993c6798e8ffb",
+  "source_test_file_count": 86,
+  "tests": [
+    {
+      "suite": "practice_contract",
+      "count": 4,
+      "exit": 0,
+      "duration_seconds": 184.76,
+      "log": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-02-checks/final-practice_contract.log",
+      "sha256": "cfd4ee5cdd4072655aab7d1893afe6fd009c7887672cf775f7e05a105e0145a1"
+    },
+    {
+      "suite": "practice_content",
+      "count": 3,
+      "exit": 0,
+      "duration_seconds": 249.957,
+      "log": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-02-checks/final-practice_content.log",
+      "sha256": "bfb007a2257519742f2862f26a087470965515c2aa3f7a3c79340352c9b5e632"
+    },
+    {
+      "suite": "comparison_content",
+      "count": 29,
+      "exit": 0,
+      "duration_seconds": 285.79,
+      "log": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-02-checks/final-comparison_content.log",
+      "sha256": "30d3581298b62797d62c1be297715104edf511784e553beeaa218d49bec247f5"
+    }
+  ],
+  "tracer_feedback": {
+    "count": 3,
+    "exit": 0,
+    "duration_seconds": 143.673,
+    "commit": "5f9bbc8"
+  },
+  "historical_real_tracer": {
+    "count": 5,
+    "exit": 0,
+    "duration_seconds": 217.315
+  },
+  "hooks": {
+    "verify.schema-drift": {
+      "block": false,
+      "drift_detected": false
+    },
+    "verify.codebase-drift": {
+      "block": false,
+      "skipped": true,
+      "reason": "no-structure-md"
+    },
+    "ui.safety-gate": {
+      "block": false,
+      "frontend": true,
+      "hasUiFiles": false,
+      "hasUiSpec": false
+    }
+  },
+  "spot_checks": {
+    "first_two_created_files_present": true,
+    "plan_commits_present": true,
+    "self_check_passed": true,
+    "writer_lock_absent": true
+  },
+  "next_wave_key_links": {
+    "all_verified": true,
+    "pending_current_wave_artifact": "data/practices/04-inventory.json"
+  },
+  "full_suite": {
+    "run_this_wave": false,
+    "reason": "Sequential execution without worktree merges; per-plan acceptance and capability gates apply. Required phase-end regression remains pending.",
+    "prior_wave_credit": 0
+  }
+}

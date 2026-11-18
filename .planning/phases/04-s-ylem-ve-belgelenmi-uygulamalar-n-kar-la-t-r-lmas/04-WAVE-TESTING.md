@@ -2,7 +2,9 @@
 
 Wave 1 verified all 221 discovered test IDs on the same source fingerprint and release: 108 recorded successes before interruption, then 113 successes in 20 isolated batches. The original single-process exit 137 remains interrupted with unknown cause. It is not a successful single-process result.
 
-For subsequent wave gates, preserve the full discovered test set while using fresh sequential module processes; put the long `test_same_taxonomy_sourced_revision_round_trip` in its own process. The session has 2 CPUs and an 8 GiB allocation. This is an execution adaptation, not a change to the project test configuration or test assertions.
+Whenever a later gate requires the full suite, preserve the full discovered test set while using fresh sequential module processes; put the long `test_same_taxonomy_sourced_revision_round_trip` in its own process. The session has 2 CPUs and an 8 GiB allocation. This is an execution adaptation, not a change to the project test configuration or test assertions.
+
+Gate scope follows execute-phase: the post-merge full-suite gate applies when worktrees were merged. This run degraded to sequential execution without worktrees. Subsequent sequential waves therefore require their plan acceptance commands, spot-checks and capability hooks; they do not create an additional full-suite requirement at every wave. The required phase-end regression remains pending and must test the final source tree with zero credit from earlier fingerprints. Wave 1's broad regression repaired and checked genuine baseline regressions; it is not coverage credit for later implementation.
 
 - Create a new per-wave contract from current unittest discovery. New source/test fingerprint or release invalidates prior-wave success credit: begin with zero credited IDs for new code.
 - Bind source/test hashes, release and manifest before/after each batch; require matching checks and a zero exit code.
