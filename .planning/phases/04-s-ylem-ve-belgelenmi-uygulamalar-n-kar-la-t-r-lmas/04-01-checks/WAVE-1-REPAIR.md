@@ -1,6 +1,6 @@
 # Wave 1 regression repair
 
-Status: pending
+Status: in progress — renderer repair committed; original gate and targeted checks still running. No new release published yet.
 
 This is execute-phase step 5.8 repair after completed plan 04-01, not another phase plan. Keep phase progress at 1/15 and do not advance the plan counter.
 
@@ -19,3 +19,10 @@ Freeze the current producer as rapor_v25.py before edits. Advance the active ren
 Reconcile `/tmp/gsd-phase04-wave1-tests.log` and process 173310 before changing data/current.json: the original full suite is still running its last current-release audit as of dispatch. Do not mutate its input release/pointer while it runs. Then publish only through the normal locked workspace + publish --refresh path, preserving all historical releases and source bytes. Run the affected targeted regressions, historical renderer 25 byte reproduction, and required phase 2/3/4 audits. Run the full configured test gate once on the final code/current, bounded at 10,800 seconds; log and report the actual result without treating timeout as success.
 
 Write actual commands, results, hashes, corrected release, and any remaining issues here. Update 04-WAVE-1-GATE.json and the session continuation record accurately. Do not advance phase/plan counters or mark phase requirements complete. Do not publicly deploy or push.
+
+## Execution evidence (interim)
+
+- RED: `PYTHONPATH=src:tests python3 -m unittest test_practice_tracer.PracticeTracer.test_historical_taxonomies_do_not_duplicate_practice_cards` failed intentionally on the actual renderer25 historical data: comparison card count was 3, expected 1. The dataset contained at least three versions of the topic. Regression commit `093555f` preserves DOM ID collection and the Phase 3 verification tab.
+- GREEN: the same real-data test passed after taxonomy-version filtering; source commit `804b513` freezes renderer25, advances the active renderer to 26, and dispatches both versions. Renderer25 file SHA-256 is `dedd4a8bfca3490affe655dc8834bb758813f150760ac4a704b127b5051fb7a6`, identical to the original renderer before changes.
+- `PYTHONPATH=src:tests python3 -m unittest -v test_practice_tracer.PracticeTracer.test_renderer_25_reproduces_archived_bytes test_practice_tracer.PracticeTracer.test_renderer_24_reproduces_archived_bytes` passed both byte-for-byte comparisons. First attempt failed because the new test accidentally used an unquoted encoding name; fixed in `804b513` and rerun passed. `test_comparisons.ComparisonReleaseTest.test_new_stylesheet_preserves_historical_style` passed; CSS24 and renderer24 hashes remain asserted.
+- Syntax compilation passed for the modified Python sources/tests. Remaining targeted and legacy runs are in `/tmp/gsd-phase04-repair-targeted.log` and `/tmp/gsd-phase04-repair-legacy.log`; do not claim them as passed until they finish. The original suite is still running on release `53b24e6740104cb5be5d3419491bd735`; do not update `data/current.json` until its process and children exit and the log is reconciled.

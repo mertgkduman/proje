@@ -1,8 +1,10 @@
 ## Deferred Items
 
 - Preserve the renderer 25 producer and its assets before extending the report for additional practice cases in 04-02, so the 04-01 immutable tracer remains reproducible.
+  status: resolved
+  Renderer 25 was frozen as `src/rapor_v25.py`; its CSS24 remains unchanged. The active renderer now uses version 26.
+- Before 04-02 changes the active renderer, freeze the then-current renderer 26 and preserve its CSS and dispatch, with byte-reproduction coverage; retain the historical 16 and 24 stylesheet checks.
   status: open
-  Update the current-style assertion in `test_new_stylesheet_preserves_historical_style` when the active renderer advances, while retaining the historical 16 and 24 checks.
 - Replace the Çeşme-specific missing-result wording when 04-02 renders other event types; do not imply their results concern a congress.
   status: open
 - Extend the tracer contribution validator in 04-02 to represent individually sourced MP activity as individual activity, without treating it as the party's institutional position.

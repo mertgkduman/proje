@@ -24,6 +24,21 @@
     "terminal_session": "lost after daemon restart; reconcile log and process before any rerun",
     "result": "pending"
   },
+  "wave_repair": {
+    "status": "in_progress",
+    "test_commit": "093555f",
+    "source_commit": "804b513",
+    "active_renderer": 26,
+    "frozen_renderer": 25,
+    "frozen_renderer_sha256": "dedd4a8bfca3490affe655dc8834bb758813f150760ac4a704b127b5051fb7a6",
+    "regression": "historical taxonomy card count: RED 3 instead of 1, then GREEN",
+    "historical_renderer_checks": "renderer 24 and 25 archived HTML byte reproduction passed",
+    "practice_legacy": "6 tests passed",
+    "targeted_log": "/tmp/gsd-phase04-repair-targeted.log",
+    "targeted_result": "running; process loaded an early test typo, which has since been fixed and independently retested",
+    "new_release": null,
+    "final_full_gate": "not started; original suite and release refresh must finish first"
+  },
   "next_plan": "04-02",
   "resume_rule": "Reconcile the existing test process and log before dispatching the next wave; do not duplicate this running suite. A timeout is inconclusive and must never be recorded as a pass."
 }

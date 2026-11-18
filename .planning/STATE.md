@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 2
 status: executing
-stopped_at: "Phase 04 Wave 1: 04-01 complete; full 219-test wave gate running, do not dispatch 04-02 until result reconciled. Test session 92898, process 173310; log /tmp/gsd-phase04-wave1-tests.log; timeout 10800s."
-last_updated: "2026-11-17T21:51:24.641Z"
+stopped_at: "Phase 04 Wave 1 repair: renderer26 commits 093555f/804b513; original gate still running, current unchanged, release refresh and final verification pending."
+last_updated: "2026-11-18T00:24:27.349Z"
 last_activity: 2026-11-17
 last_activity_desc: Phase 04 execution started
-state_head: 9c8bb3bf0e4ede0d349b8b9c39650c8b6b524ec9
+state_head: 804b513ae9c45b80c4665d96806f91124923011a
 progress:
   total_phases: 6
   completed_phases: 3
@@ -187,6 +187,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-17T21:51:20.219Z
-Stopped at: Phase 04 Wave 1: 04-01 complete; full 219-test wave gate running, do not dispatch 04-02 until result reconciled. Test session 92898, process 173310; log /tmp/gsd-phase04-wave1-tests.log; timeout 10800s.
-Resume file: /tmp/gsd-phase04-wave1-tests.log
+Last session: 2026-11-18T00:24:17.763Z
+Stopped at: Phase 04 Wave 1 repair: renderer26 commits 093555f/804b513; original gate still running, current unchanged, release refresh and final verification pending.
+Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-01-checks/WAVE-1-REPAIR.md
