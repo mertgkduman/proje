@@ -17,6 +17,23 @@ import uygulamalar
 
 
 class PracticePreview(unittest.TestCase):
+    def test_party_source_capture_root_api(self):
+        import io
+        from email.message import Message
+        response = io.BytesIO(b'<html><body>Technical source</body></html>')
+        response.headers = Message()
+        response.headers['Content-Type'] = 'text/html; charset=utf-8'
+        response.geturl = lambda: 'https://example.org/source'
+        with tempfile.TemporaryDirectory() as tmp, patch('arsiv.urllib.request.urlopen', return_value=response):
+            root = Path(tmp)
+            try:
+                capture = arsiv.capture_source('https://example.org/source', 'html',
+                                               root / 'practices/sources/yeni-parti', storage_root=root)
+            except TypeError as exc:
+                self.fail('capture must support an explicit private storage root: ' + str(exc))
+            self.assertEqual((root / capture['original_path']).read_bytes(), b'<html><body>Technical source</body></html>')
+            self.assertTrue(capture['original_path'].startswith('practices/sources/yeni-parti/'))
+
     def test_shared_release_manifest_and_audit_contract(self):
         self.assertTrue(callable(getattr(arsiv, 'build_release_manifest', None)),
                         'preview and publishing must share the standard manifest builder')
