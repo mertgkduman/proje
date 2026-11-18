@@ -1,6 +1,8 @@
 """Two isolated, temporary releases; all review metadata is synthetic."""
 import copy
 import json
+import shutil
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -13,6 +15,107 @@ from test_practice_merge_engine import raw, digest
 
 
 class PracticePendingIntegration(unittest.TestCase):
+    def test_public_merge_preserves_accepted_r1_as_pending(self):
+        """A real temporary accepted release anchors public merge and replay."""
+        original = arsiv.DATA
+        inventory = json.loads((original / 'practices/04-inventory.json').read_text())
+        initial = json.loads((original / 'practices/04-coverage-tracer.json').read_text())
+        base_data = json.loads((original / 'releases' / initial['base_release'] / 'records.json').read_text())
+        passages = {r['id']: r for r in base_data['passage']}
+        rows = []
+        for (kind, identity), (refs, _) in uygulamalar.practice_review_targets(base_data, initial['practice_records']).items():
+            rows.append(dict(subject_kind=kind, subject_id=identity, reviewer_kind='agent',
+                reviewed_at='2026-11-18T12:00:00+00:00',
+                source_version_ids=json.dumps(sorted({passages[p]['version_id'] for p in refs})),
+                passage_ids=json.dumps(sorted(refs)), inspected_sections=json.dumps(['Technical section ' + kind]),
+                supported_claim='Technical fixture subject ' + identity, limitations='Synthetic fixture only.',
+                result='reviewed', reason='Temporary fixture validation.'))
+        initial['practice_records'].update(practice_source_review_contract=[dict(version=1)], practice_source_review=rows)
+        initial['source_review_refs'] = [dict(subject_kind=r['subject_kind'], subject_id=r['subject_id']) for r in rows]
+        event = initial['practice_records']['practice_event'][0]['id']
+        old_review = next(r for r in rows if (r['subject_kind'], r['subject_id']) == ('practice_event', event))
+        old_evidence = initial['practice_records']['practice_event_evidence'][0]
+        new_passage = dict(passages[old_evidence['passage_id']], id='technical-public-pending-passage')
+        with tempfile.TemporaryDirectory(prefix='gsd-public-pending-') as tmp:
+            root = Path(tmp)
+            archive = root / 'archive'
+            # Copy the complete private ancestry without touching canonical bytes.
+            shutil.copytree(original, archive, ignore=shutil.ignore_patterns('.staging', '.write.lock'))
+            with patch.object(arsiv, 'DATA', archive):
+                accepted = root / 'accepted'
+                uygulamalar.render_practice_preview(initial, accepted)
+                folder, = (accepted / 'releases').iterdir()
+                accepted_id = folder.name
+                shutil.copytree(folder, archive / 'releases' / accepted_id)
+                self.assertEqual(arsiv.audit_release(accepted_id), accepted_id)
+                accepted_data = json.loads((folder / 'records.json').read_text())
+                self.assertEqual(arsiv.export_db(folder / 'records.sqlite3', accepted_id, storage_root=accepted), accepted_data)
+                incoming = copy.deepcopy(initial)
+                incoming.update(base_release=accepted_id, stage='partial')
+                records = incoming['practice_records']
+                records['practice_contract'][0]['stage'] = 'partial'
+                incoming['entries'] = [dict(kind='passage', values=new_passage)]
+                records['practice_event_evidence'].append(dict(old_evidence, passage_id=new_passage['id']))
+                # Raw inputs must themselves have real, scoped technical reviews;
+                # those revisions are provenance and must not become base approval.
+                expanded = copy.deepcopy(accepted_data)
+                expanded['passage'].append(new_passage)
+                expanded['practice_event_evidence'].append(records['practice_event_evidence'][-1])
+                by_key = {(r['subject_kind'], r['subject_id']): r for r in rows}
+                new_rows, revisions = [], []
+                versions = {p['id']: p['version_id'] for p in expanded['passage']}
+                targets = uygulamalar.practice_review_package_targets(expanded, records, {new_passage['id']}, incoming['party_id'])
+                for (kind, identity), (refs, _) in targets.items():
+                    key = (kind, identity)
+                    updates = dict(subject_kind=kind, subject_id=identity,
+                        source_version_ids=json.dumps(sorted({versions[p] for p in refs})),
+                        passage_ids=json.dumps(sorted(refs)), inspected_sections=json.dumps(['Technical section ' + kind + identity]),
+                        supported_claim='Technical expanded subject ' + identity,
+                        reason='Technical fixture inspected current evidence.')
+                    if key in by_key:
+                        if set(json.loads(by_key[key]['passage_ids'])) != refs:
+                            revisions.append(dict(by_key[key], **updates, revision=2, reviewed_at='2026-11-19T12:00:00+00:00'))
+                    else:
+                        new_rows.append(dict(old_review, **updates))
+                records['practice_source_review'] = rows + new_rows
+                records['practice_source_review_revision_contract'] = [dict(version=2)]
+                records['practice_source_review_revision'] = revisions
+                incoming['source_review_refs'] = [dict(subject_kind=k, subject_id=i) for k, i in sorted(
+                    {(r['subject_kind'], r['subject_id']) for r in rows + new_rows + revisions})]
+                inputs = [dict(identity='incoming.json', raw=raw(incoming))]
+                decision = raw(dict(version=1, inventory_digest=uygulamalar._digest(inventory),
+                                    input_digests={'incoming.json': digest(inputs[0]['raw'])}, decisions=[]))
+                merged = uygulamalar.merge_practice_packages(inventory, inputs, decision)
+                result = root / 'result'
+                uygulamalar.render_practice_preview(merged, result, inventory, base_release=accepted_id)
+                output, = (result / 'releases').iterdir()
+                snapshot = json.loads((output / 'records.json').read_text())
+                self.assertEqual(snapshot, arsiv.export_db(output / 'records.sqlite3', output.name, storage_root=result))
+                self.assertEqual(arsiv.audit_release(output.name, storage_root=result), output.name)
+                self.assertIn(old_review, snapshot['practice_source_review'])
+                self.assertEqual(snapshot['practice_source_review_revision'], [])
+                self.assertIn(dict(old_evidence, passage_id=new_passage['id']), snapshot['practice_event_evidence'])
+                event_only = dict(practice_event=[next(r for r in snapshot['practice_event'] if r['id'] == event)])
+                self.assertEqual(uygulamalar.practice_source_review_pending(snapshot, [old_review], [], event_only),
+                                 [dict(subject_kind='practice_event', subject_id=event, state='pending')])
+                with self.assertRaises(ValueError):
+                    uygulamalar.validate_practice_source_review(snapshot, [old_review], event_only, revisions=[])
+                unchecked = copy.deepcopy(incoming)
+                for table in ('practice_source_review_contract', 'practice_source_review',
+                              'practice_source_review_revision_contract', 'practice_source_review_revision'):
+                    unchecked['practice_records'].pop(table)
+                unchecked['source_review_refs'] = []
+                unchecked_path, review_path = root / 'unchecked.json', root / 'old-review.json'
+                unchecked_path.write_text(json.dumps(unchecked))
+                review_path.write_text(json.dumps(dict(practice_source_review=rows,
+                    source_review_refs=[dict(subject_kind=r['subject_kind'], subject_id=r['subject_id']) for r in rows])))
+                with patch.object(sys, 'argv', ['arsiv.py', 'practice-source-check', '--input', str(unchecked_path),
+                                                '--review', str(review_path)]), self.assertRaisesRegex(ValueError, 'Kaynak inceleme'):
+                    arsiv.main()
+                complete = dict(snapshot, practice_contract=[dict(snapshot['practice_contract'][0], stage='complete')])
+                with self.assertRaises(ValueError):
+                    uygulamalar.validate_practices(complete)
+
     def test_inherited_reading_is_pending_after_partial_merge(self):
         original_data = arsiv.DATA
         inventory = json.loads((original_data / 'practices/04-inventory.json').read_text())
