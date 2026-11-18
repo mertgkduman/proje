@@ -46,7 +46,7 @@ from rapor_v23 import render_report as render_v23_report
 from rapor_v24 import render_report as render_v24_report
 from rapor_v25 import render_report as render_v25_report
 from rapor_v26 import render_report as render_v26_report
-from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, validate_practices, load_practice,
+from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, validate_practices, load_practice,
                          validate_practice_input, practice_manifest_fields,
                          validate_practice_descent)
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
@@ -2343,23 +2343,24 @@ def check_examined_lead(db, lead, version_id):
         raise ValueError('İncelenen kaynak adresi uçla uyuşmuyor')
 
 
+def check_attempt(db, v):
+    if not all(v.get(k) for k in ('query','attempted_at','reason','type','result')): raise ValueError('Girişim alanları gerekli')
+    if dt.datetime.fromisoformat(v['attempted_at'].replace('Z','+00:00')).tzinfo is None: raise ValueError('Girişim zaman dilimi içermeli')
+    if (v['type'], v['result']) not in (('search','no_result'), ('search','results'), ('access','failure'), ('access','examined'), ('verification','inconclusive'), ('verification','confirmed'), ('review','excluded')):
+        raise ValueError('Girişim türü ve sonucu uyuşmuyor')
+    if v.get('lead_id'):
+        lead = db.execute('SELECT * FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
+        if not lead or any(lead[k] != v[k] for k in ('party_id','topic_id','heading')): raise ValueError('Girişim uçla uyuşmuyor')
+        if v['type'] == 'access' and normalize_url(v['query']) != lead['normalized_url']:
+            raise ValueError('Erişim adresi uçla uyuşmuyor')
+        state = {'examined':'examined','failure':'blocked','excluded':'excluded'}.get(v['result'])
+        if state == 'examined' and not v.get('source_version_id'): raise ValueError('İncelenmiş uç için belge gerekli')
+        if state == 'examined': check_examined_lead(db, lead, v['source_version_id'])
+        if state: db.execute('UPDATE lead SET status=? WHERE id=?', (state,v['lead_id']))
+
+
 def record_attempt(work, values):
-    def validate(db, v):
-        if not all(v.get(k) for k in ('query','attempted_at','reason','type','result')): raise ValueError('Girişim alanları gerekli')
-        if dt.datetime.fromisoformat(v['attempted_at'].replace('Z','+00:00')).tzinfo is None: raise ValueError('Girişim zaman dilimi içermeli')
-        if (v['type'], v['result']) not in (('search','no_result'), ('search','results'), ('access','failure'), ('access','examined'), ('verification','inconclusive'), ('verification','confirmed'), ('review','excluded')):
-            raise ValueError('Girişim türü ve sonucu uyuşmuyor')
-        if v.get('lead_id'):
-            lead = db.execute('SELECT * FROM lead WHERE id=?', (v['lead_id'],)).fetchone()
-            if not lead or any(lead[k] != v[k] for k in ('party_id','topic_id','heading')): raise ValueError('Girişim uçla uyuşmuyor')
-            if v['type'] == 'access' and normalize_url(v['query']) != lead['normalized_url']:
-                raise ValueError('Erişim adresi uçla uyuşmuyor')
-        if v.get('lead_id'):
-            state = {'examined':'examined','failure':'blocked','excluded':'excluded'}.get(v['result'])
-            if state == 'examined' and not v.get('source_version_id'): raise ValueError('İncelenmiş uç için belge gerekli')
-            if state == 'examined': check_examined_lead(db, lead, v['source_version_id'])
-            if state: db.execute('UPDATE lead SET status=? WHERE id=?', (state,v['lead_id']))
-    insert_checked(work, 'attempt', values, validate)
+    insert_checked(work, 'attempt', values, check_attempt)
 
 
 def check_document_authority(db, v):
@@ -2610,15 +2611,17 @@ def audit_finance(path):
     finally: db.close()
 
 
+def check_missing(db, v):
+    a = db.execute('SELECT * FROM attempt WHERE id=?', (v['attempt_id'],)).fetchone()
+    allowed = {'Bulunamadı': ('search','no_result'), 'Erişilemedi': ('access','failure'), 'Doğrulanamadı': ('verification','inconclusive')}
+    if not a or any(a[k] != v[k] for k in ('party_id','heading','topic_id')) or allowed.get(v['status']) != (a['type'],a['result']) or not v.get('reason'):
+        raise ValueError('Eksik durumuyla eşleşen gerekçeli girişim gerekli')
+    if v['status'] == 'Erişilemedi' and not a['lead_id']:
+        raise ValueError('Erişim engeli belirlenmiş bir kaynağa bağlanmalı')
+
+
 def record_missing(work, values):
-    def validate(db, v):
-        a = db.execute('SELECT * FROM attempt WHERE id=?', (v['attempt_id'],)).fetchone()
-        allowed = {'Bulunamadı': ('search','no_result'), 'Erişilemedi': ('access','failure'), 'Doğrulanamadı': ('verification','inconclusive')}
-        if not a or any(a[k] != v[k] for k in ('party_id','heading','topic_id')) or allowed.get(v['status']) != (a['type'],a['result']) or not v.get('reason'):
-            raise ValueError('Eksik durumuyla eşleşen gerekçeli girişim gerekli')
-        if v['status'] == 'Erişilemedi' and not a['lead_id']:
-            raise ValueError('Erişim engeli belirlenmiş bir kaynağa bağlanmalı')
-    insert_checked(work, 'missing', values, validate)
+    insert_checked(work, 'missing', values, check_missing)
 
 
 def record_scope(work, kind, values):
@@ -2700,6 +2703,9 @@ def export_db(path, release_id, strict_identity=False):
         evidence_present = existing.intersection(PRACTICE_EVIDENCE_TABLES)
         if evidence_present and (evidence_present != set(PRACTICE_EVIDENCE_TABLES) or not variant_present or not db.execute('SELECT 1 FROM practice_evidence_contract').fetchone()):
             raise ValueError('Uygulama kanıt işaretçisi veya tabloları eksik')
+        coverage_present = existing.intersection(PRACTICE_COVERAGE_TABLES)
+        if coverage_present and (coverage_present != set(PRACTICE_COVERAGE_TABLES) or not has_practices or not db.execute('SELECT 1 FROM practice_coverage_contract').fetchone()):
+            raise ValueError('Uygulama kapsam işaretçisi veya tabloları eksik')
         if has_practices and practice_version != 7:
             raise ValueError('Uygulama şema sürümü eksik')
         if has_practices and not db.execute('SELECT 1 FROM practice_contract').fetchone():
@@ -2736,6 +2742,8 @@ def export_db(path, release_id, strict_identity=False):
                 names += list(PRACTICE_VARIANT_TABLES)
             if evidence_present:
                 names += list(PRACTICE_EVIDENCE_TABLES)
+            if coverage_present:
+                names += list(PRACTICE_COVERAGE_TABLES)
         result = {'schema_version': 7 if has_practices else (6 if has_comparisons and policy else (5 if policy else (4 if set(DOSSIER_TABLES).issubset(existing) else (3 if 'date_precision' in cols else (2 if 'scope_party' in existing else 1))))), 'release_id': release_id}
         if has_comparisons and not policy: raise ValueError('Karşılaştırma kaynak politikası gerektirir')
         if existing.intersection(POLICY_TABLES) and (not set(POLICY_TABLES).issubset(existing) or not policy): raise ValueError('Kaynak politikası eksik')
@@ -2944,7 +2952,7 @@ def audit_release(release='current', _seen=None):
         if exported['schema_version'] == 7:
             fields = practice_manifest_fields(exported)
             if ({k: manifest.get(k) for k in fields} != fields or
-                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256'))):
+                    any((key in manifest) != (key in fields) for key in ('practice_variant_sha256', 'practice_evidence_sha256', 'practice_coverage_sha256'))):
                 raise ValueError('Uygulama manifesti geçersiz')
         elif any(k.startswith('practice_') for k in manifest):
             raise ValueError('Uygulama snapshot işaretçisi eksik')
@@ -3326,6 +3334,8 @@ def main():
     f = sub.add_parser('freeze'); f.add_argument('--workspace', required=True); f.add_argument('--tbmm-version', required=True); f.add_argument('--method-version', type=int, default=1)
     a = sub.add_parser('audit'); a.add_argument('--release', default='current'); a.add_argument('--check', choices=('matches', 'finance')); a.add_argument('--phase', choices=('1','2','3','4')); a.add_argument('--party'); a.add_argument('--stage', choices=('tracer','partial','complete'), default='complete')
     pc = sub.add_parser('practice-check'); pc.add_argument('--input', required=True); pc.add_argument('--inventory'); pc.add_argument('--base-release', default='current')
+    pi = sub.add_parser('practice-inventory'); pi.add_argument('--release', default='current'); pi.add_argument('--out', required=True)
+    pv = sub.add_parser('practice-coverage'); pv.add_argument('--inventory', required=True); pv.add_argument('--input', required=True); pv.add_argument('--party'); pv.add_argument('--complete', action='store_true')
     pl = sub.add_parser('practice-load'); pl.add_argument('--workspace', required=True); pl.add_argument('--input', required=True)
     cl = sub.add_parser('comparison-load'); cl.add_argument('--workspace', required=True); cl.add_argument('--input', required=True); cl.add_argument('--inventory')
     cr = sub.add_parser('comparison-reconcile'); cr.add_argument('--workspace', required=True); cr.add_argument('--taxonomy', required=True); cr.add_argument('--inventory', required=True); cr.add_argument('--input', required=True)
@@ -3352,10 +3362,69 @@ def main():
             print(json.dumps([dict(x) for x in db.execute('SELECT * FROM lead WHERE party_id=? AND topic_id=? ORDER BY rowid', (args.party,args.topic))], ensure_ascii=False, indent=2))
         finally: db.close()
     elif args.command == 'publish': print(publish_release(args.workspace, party=args.party, stage=args.stage, refresh=args.refresh))
+    elif args.command == 'practice-inventory':
+        from uygulamalar import build_practice_inventory
+        release = current() if args.release == 'current' else args.release
+        if not re.fullmatch(r'[0-9a-f]{32}', release):
+            raise ValueError('Geçersiz sürüm')
+        folder = safe_path(DATA / 'releases', release)
+        manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+        if (manifest.get('release_id') != release or set(manifest.get('files', {})) != {'records.sqlite3', 'records.json', 'index.html'} or
+                any(sha(safe_path(folder, name)) != digest for name, digest in manifest['files'].items())):
+            raise ValueError('Sürüm manifesti uyuşmuyor')
+        snapshot = json.loads((folder / 'records.json').read_text(encoding='utf-8'))
+        if export_db(folder / 'records.sqlite3', release) != snapshot:
+            raise ValueError('Sürüm veritabanı ve JSON uyuşmuyor')
+        result = build_practice_inventory(snapshot)
+        Path(args.out).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print('PRACTICE_INVENTORY_OK')
+    elif args.command == 'practice-coverage':
+        import shutil
+        import tempfile
+        from uygulamalar import _load_practice_copy, practice_coverage_states
+        package = json.loads(Path(args.input).read_text(encoding='utf-8'))
+        inventory = json.loads(Path(args.inventory).read_text(encoding='utf-8'))
+        records = package.get('practice_records', {})
+        markers = records.get('practice_coverage_contract', [])
+        revisions = records.get('practice_inventory_revision', [])
+        active_inventory = max(revisions, key=lambda x: x['epoch'])['inventory_json'] if revisions else (markers[0]['inventory_json'] if len(markers) == 1 else '{}')
+        if len(markers) != 1 or json.loads(active_inventory) != inventory:
+            raise ValueError('Paket ve kanonik envanter uyuşmuyor')
+        base = package.get('base_release')
+        if not base or not re.fullmatch(r'[0-9a-f]{32}', base):
+            raise ValueError('Geçersiz taban sürüm')
+        folder = safe_path(DATA / 'releases', base)
+        manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+        if (manifest.get('release_id') != base or set(manifest.get('files', {})) != {'records.sqlite3', 'records.json', 'index.html'} or
+                any(sha(safe_path(folder, name)) != digest for name, digest in manifest['files'].items())):
+            raise ValueError('Taban sürüm manifesti uyuşmuyor')
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            shutil.copyfile(folder / 'records.sqlite3', work / 'records.sqlite3')
+            _load_practice_copy(work, package, base)
+            data = export_db(work / 'records.sqlite3', base)
+            states = practice_coverage_states(data, inventory)
+        parties = {party['party_id'] for party in inventory['parties']}
+        if args.party and args.party not in parties:
+            raise ValueError('Parti kapsam dışında')
+        if args.complete and any(item['state'] != 'closed' for item in states):
+            raise ValueError('Tam kapsam için bütün parti ve konular kapanmalı')
+        print(json.dumps([item for item in states if not args.party or item['party_id'] == args.party], ensure_ascii=False))
+        print('PRACTICE_COVERAGE_OK')
     elif args.command == 'practice-check':
         package = json.loads(Path(args.input).read_text(encoding='utf-8'))
-        if args.inventory and json.loads(Path(args.inventory).read_text(encoding='utf-8')) != package.get('scope_inventory'):
-            raise ValueError('Paket ve sağlanan envanter uyuşmuyor')
+        if args.inventory:
+            supplied = json.loads(Path(args.inventory).read_text(encoding='utf-8'))
+            records = package.get('practice_records', {})
+            markers = records.get('practice_coverage_contract', [])
+            revisions = records.get('practice_inventory_revision', [])
+            if markers:
+                active = max(revisions, key=lambda x: x['epoch'])['inventory_json'] if revisions else markers[0]['inventory_json']
+                expected = json.loads(active)
+            else:
+                expected = package.get('scope_inventory')
+            if supplied != expected:
+                raise ValueError('Paket ve sağlanan envanter uyuşmuyor')
         validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
     elif args.command == 'practice-load':
         load_practice(args.workspace, json.loads(Path(args.input).read_text(encoding='utf-8'))); print('PRACTICE_LOAD_OK')
@@ -3412,6 +3481,8 @@ def main():
             data = json.loads((DATA / 'releases' / release / 'records.json').read_text(encoding='utf-8'))
             if data.get('schema_version') != 7 or {'tracer': 0, 'partial': 1, 'complete': 2}[data['practice_contract'][0]['stage']] < {'tracer': 0, 'partial': 1, 'complete': 2}[args.stage]:
                 raise ValueError('İstenen uygulama aşaması yok')
+            if args.stage == 'complete' and not data.get('practice_coverage_contract'):
+                raise ValueError('Tam uygulama kanonik kapsam sözleşmesi gerektirir')
             validate_practices(data)
             print('PHASE4_AUDIT_OK', release)
         else: print('AUDIT_OK', release)

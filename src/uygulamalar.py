@@ -34,9 +34,319 @@ PRACTICE_EVIDENCE_TABLES = {
     'practice_position_change': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), topic_id TEXT NOT NULL, before_statement_id TEXT NOT NULL REFERENCES practice_statement(id), after_statement_id TEXT NOT NULL REFERENCES practice_statement(id), comparison_conditions TEXT NOT NULL, explanation_finding_id TEXT NOT NULL REFERENCES finding(id), uncertainty_reason TEXT NOT NULL',
 }
 
+# Coverage v2 is append-only: v1 scope rows remain byte-identical while new
+# scopes and their transitions can evolve without mutating archived snapshots.
+# Extension topic IDs intentionally do not reference comparison_topic: those
+# topics belong to practice research and must not change the Phase 3 taxonomy.
+PRACTICE_COVERAGE_TABLES = {
+    'practice_coverage_contract': 'version INTEGER PRIMARY KEY, inventory_json TEXT NOT NULL',
+    'practice_inventory_revision': 'epoch INTEGER PRIMARY KEY, inventory_json TEXT NOT NULL, reason TEXT NOT NULL',
+    'practice_scope_v2': 'id TEXT PRIMARY KEY, party_id TEXT NOT NULL REFERENCES party(id), topic_id TEXT NOT NULL, taxonomy_version INTEGER NOT NULL, period_start TEXT NOT NULL, cutoff_at TEXT NOT NULL, research_kind TEXT NOT NULL, boundary_reason TEXT NOT NULL',
+    'practice_scope_source': 'scope_id TEXT NOT NULL REFERENCES practice_scope_v2(id), version_id TEXT NOT NULL REFERENCES document_version(id), inspected_sections TEXT NOT NULL, inspected_at TEXT NOT NULL, PRIMARY KEY(scope_id,version_id,inspected_at)',
+    'practice_lead': 'id TEXT PRIMARY KEY, scope_id TEXT NOT NULL REFERENCES practice_scope_v2(id), url TEXT NOT NULL, relevance_reason TEXT NOT NULL, state TEXT NOT NULL, attempt_ids TEXT NOT NULL',
+    'practice_lead_revision': 'id TEXT PRIMARY KEY, lead_id TEXT NOT NULL REFERENCES practice_lead(id), recorded_at TEXT NOT NULL, state TEXT NOT NULL, attempt_ids TEXT NOT NULL, reason TEXT NOT NULL',
+    'practice_attempt_v2': 'id TEXT PRIMARY KEY, scope_id TEXT NOT NULL REFERENCES practice_scope_v2(id), attempted_at TEXT NOT NULL, query TEXT NOT NULL, url TEXT, result TEXT NOT NULL, reason TEXT NOT NULL, source_version_id TEXT REFERENCES document_version(id)',
+    'practice_candidate': 'id TEXT PRIMARY KEY, scope_id TEXT NOT NULL REFERENCES practice_scope_v2(id), event_id TEXT REFERENCES practice_event(id), relation_id TEXT REFERENCES practice_relation(id), state TEXT NOT NULL, reason TEXT NOT NULL, passage_ids TEXT NOT NULL',
+    'practice_candidate_legacy': 'candidate_id TEXT NOT NULL REFERENCES practice_candidate(id), legacy_id TEXT NOT NULL REFERENCES match_candidate(id), reason TEXT NOT NULL, PRIMARY KEY(candidate_id,legacy_id)',
+    'practice_candidate_revision': 'id TEXT PRIMARY KEY, candidate_id TEXT NOT NULL REFERENCES practice_candidate(id), recorded_at TEXT NOT NULL, event_id TEXT REFERENCES practice_event(id), relation_id TEXT REFERENCES practice_relation(id), state TEXT NOT NULL, reason TEXT NOT NULL, passage_ids TEXT NOT NULL',
+    'practice_closure': 'id TEXT PRIMARY KEY, scope_id TEXT NOT NULL REFERENCES practice_scope_v2(id), closed_at TEXT NOT NULL, reason TEXT NOT NULL, residual_lead_ids TEXT NOT NULL',
+    'practice_reopen': 'id TEXT PRIMARY KEY, closure_id TEXT NOT NULL REFERENCES practice_closure(id), lead_id TEXT NOT NULL REFERENCES practice_lead(id), opened_at TEXT NOT NULL, reason TEXT NOT NULL',
+    'practice_topic_extension': 'id TEXT PRIMARY KEY, parent_topic_id TEXT NOT NULL, definition TEXT NOT NULL, basis_passage_ids TEXT NOT NULL, reason TEXT NOT NULL',
+    'practice_legacy_scope': 'scope_id TEXT NOT NULL REFERENCES practice_scope_v2(id), closure_id TEXT NOT NULL REFERENCES closure(id), attempt_id TEXT NOT NULL REFERENCES attempt(id), mapping_reason TEXT NOT NULL, PRIMARY KEY(scope_id,closure_id,attempt_id)',
+}
+
 
 def _digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+
+
+def build_practice_inventory(data, extensions=()):
+    """Derive the research queue from the authoritative completed selection."""
+    selection = json.loads(max(data['comparison_completion_revision'], key=lambda x: x['epoch'])['selection'])
+    topics = list(selection['topics'])
+    selected_ids = {t['topic_id'] for t in topics}
+    passages = {p['id'] for p in data['passage']}
+    extension_ids = set()
+    for extension in extensions:
+        if (not isinstance(extension, dict) or set(extension) != {'id', 'parent_topic_id', 'definition', 'basis_passage_ids', 'reason'} or
+                any(not isinstance(extension[k], str) or not extension[k] for k in ('id', 'parent_topic_id', 'definition', 'reason')) or
+                extension['id'] in selected_ids or extension['id'] in extension_ids or
+                extension['parent_topic_id'] not in selected_ids or not extension['definition'] or not extension['reason'] or
+                not isinstance(extension['basis_passage_ids'], list) or not extension['basis_passage_ids'] or
+                any(not isinstance(p, str) for p in extension['basis_passage_ids']) or
+                not set(extension['basis_passage_ids']) <= passages):
+            raise ValueError('Konu uzantısı kaynak veya kapsamı geçersiz')
+        extension_ids.add(extension['id'])
+        topics.append(dict(topic_id=extension['id'], taxonomy_version=4, parent_topic_id=extension['parent_topic_id'], definition=extension['definition'], basis_passage_ids=extension['basis_passage_ids'], reason=extension['reason']))
+    parties = sorted(data['scope_party'], key=lambda x: x['approved_order'])
+    method = max(data['method'], key=lambda x: x['version'])
+    cells = []
+    for party in parties:
+        pid = party['party_id']
+        starts = [x['valid_from'] for x in data['identity_observation'] if x['entity_kind'] == 'party' and x['entity_id'] == pid and x['valid_from']]
+        if len(starts) != 1:
+            raise ValueError('Parti için tek kuruluş tarihi gerekli')
+        for topic in topics:
+            for kind in ('statement', 'event'):
+                key = [pid, topic['topic_id'], topic['taxonomy_version'], starts[0], method['cutoff_at'], kind]
+                cells.append(dict(cell_id='practice-' + _digest(key), party_id=pid, topic_id=topic['topic_id'], taxonomy_version=topic['taxonomy_version'], period_start=starts[0], cutoff_at=method['cutoff_at'], research_kind=kind, state='not_researched'))
+    return dict(base_release=data['release_id'], method_version=method['version'], cutoff_at=method['cutoff_at'], taxonomy_version=4, parties=parties, topics=topics, cells=cells, source_collections=selection['inventory'])
+
+
+def validate_practice_coverage(data, inventory, extensions=()):
+    expected = build_practice_inventory(data, extensions)
+    if inventory != expected:
+        raise ValueError('Envanter kanonik seçili evrenle uyuşmuyor')
+    return True
+
+
+def validate_practice_closure(data, inventory, extensions=()):
+    """Validate append-only coverage records against the canonical universe.
+
+    A closure records a bounded research process, never proof that no event
+    exists. A later relevant lead must reopen that closure before it can be
+    counted as closed again.
+    """
+    from arsiv import aware_time, safe_url, normalize_url
+
+    snapshot = dict(data, release_id=inventory['base_release'])
+    validate_practice_coverage(snapshot, inventory, extensions)
+    cells = {cell['cell_id']: cell for cell in inventory['cells']}
+    scopes = {scope['id']: scope for scope in data['practice_scope_v2']}
+    relation_scopes = {scope['id']: scope for scope in data.get('practice_scope', [])}
+    relation_scopes.update(scopes)
+    attempts = {attempt['id']: attempt for attempt in data['practice_attempt_v2']}
+    legacy_attempts = {attempt['id']: attempt for attempt in data['attempt']}
+    legacy_leads = {lead['id']: lead for lead in data['lead']}
+    legacy_closures = {item['id']: item for item in data['closure']}
+    bridged_topics = {}
+    for bridge in data.get('practice_legacy_scope', []):
+        old = legacy_closures.get(bridge['closure_id'])
+        if old:
+            bridged_topics.setdefault(bridge['scope_id'], set()).add(old['topic_id'])
+    leads = {lead['id']: dict(lead) for lead in data['practice_lead']}
+    closures = {closure['id']: closure for closure in data['practice_closure']}
+    versions = {version['id']: version for version in data['document_version']}
+    documents = {doc['id']: doc for doc in data['document']}
+    passages = {passage['id']: passage for passage in data['passage']}
+    shared = {(x['version_id'], x['party_id'], x['passage_id']) for x in data['practice_source_party'] if x['scope_reason']}
+
+    def source_allowed(version_id, party, passage_id=None):
+        version = versions.get(version_id)
+        document = documents.get(version['document_id']) if version else None
+        return bool(document and (document['party_id'] == party or any(v == version_id and p == party and (passage_id is None or ref == passage_id) for v, p, ref in shared)))
+
+    for relation in data['practice_relation']:
+        if relation['scope_id']:
+            scope = relation_scopes.get(relation['scope_id'])
+            if not scope or (scope['party_id'], scope['topic_id']) != (relation['party_id'], relation['topic_id']):
+                raise ValueError('İlişki araştırma kapsamıyla uyuşmuyor')
+
+    revisions = sorted(data.get('practice_lead_revision', []), key=lambda r: aware_time(r['recorded_at']))
+    if len({(r['lead_id'], aware_time(r['recorded_at'])) for r in revisions}) != len(revisions):
+        raise ValueError('Uç revizyonları aynı zamanda çakışamaz')
+    for revision in revisions:
+        lead = leads.get(revision['lead_id'])
+        if not lead or not revision['reason'] or revision['state'] not in ('pending', 'examined', 'blocked', 'excluded'):
+            raise ValueError('Uç revizyonu geçersiz')
+        lead.update(state=revision['state'], attempt_ids=revision['attempt_ids'])
+
+    for scope in scopes.values():
+        cell = cells.get(scope['id'])
+        if not cell or not scope['boundary_reason'] or any(scope[k] != cell[k] for k in ('party_id', 'topic_id', 'taxonomy_version', 'period_start', 'cutoff_at', 'research_kind')):
+            raise ValueError('Kanonik parti kapsamı uyuşmuyor')
+    for item in attempts.values():
+        scope = scopes.get(item['scope_id'])
+        original = legacy_attempts.get(item['id'])
+        allowed_topics = {scope['topic_id']} | bridged_topics.get(scope['id'], set()) if scope else set()
+        if (not scope or not item['query'] or not item['reason'] or item['result'] not in ('no_result', 'results', 'failure', 'examined', 'inconclusive', 'confirmed', 'excluded') or
+                (original and (original['party_id'] != scope['party_id'] or original['topic_id'] not in allowed_topics or
+                 any(original[k] != item[k] for k in ('attempted_at', 'query', 'result', 'reason', 'source_version_id'))))):
+            raise ValueError('Gerçek parti ve konu girişimi gerekli')
+        aware_time(item['attempted_at'])
+        old_lead = legacy_leads.get(original['lead_id']) if original else None
+        if original and original['result'] == 'examined' and (not old_lead or (old_lead['party_id'], old_lead['topic_id']) != (original['party_id'], original['topic_id'])):
+            raise ValueError('Kaynak incelemesi aynı kapsamda kayıtlı uç gerektirir')
+        if item['url']:
+            safe_url(item['url'])
+            if original and ((old_lead and old_lead['url'] != item['url']) or (not old_lead and original['query'] != item['url'])):
+                raise ValueError('Girişim URL kaynağıyla uyuşmuyor')
+        if item['source_version_id'] and not source_allowed(item['source_version_id'], scope['party_id']):
+            raise ValueError('Girişim kaynağı parti kapsamı dışında')
+        if item['result'] == 'examined':
+            version = versions.get(item['source_version_id'])
+            if not version or not item['url'] or item['url'] not in (version['original_url'], version['final_url']):
+                raise ValueError('Kaynak incelemesi arşivlenmiş kaynak adresini gerektirir')
+        if item['result'] == 'no_result':
+            if not original or original['type'] != 'search' or not any(m['attempt_id'] == item['id'] and m['party_id'] == scope['party_id'] and m['topic_id'] == original['topic_id'] and m['heading'] == original['heading'] and m['status'] == 'Bulunamadı' and m['reason'] for m in data['missing']):
+                raise ValueError('Sonuçsuz arama gerçek eksik zinciri gerektirir')
+    for bridge in data.get('practice_legacy_scope', []):
+        scope = scopes.get(bridge['scope_id'])
+        old = legacy_closures.get(bridge['closure_id'])
+        attempt = legacy_attempts.get(bridge['attempt_id'])
+        if (not scope or not old or not attempt or not bridge['mapping_reason'] or
+                attempt['party_id'] != scope['party_id'] or attempt['topic_id'] != old['topic_id'] or
+                not attempt['source_version_id'] or not source_allowed(attempt['source_version_id'], scope['party_id'])):
+            raise ValueError('Eski tarama köprüsü parti veya kaynakla uyuşmuyor')
+        relations = [r for r in data['practice_relation'] if (r['party_id'], r['topic_id']) == (scope['party_id'], scope['topic_id'])]
+        event_ids = {r['event_id'] for r in relations}
+        event_passages = {e['passage_id'] for e in data['practice_event_evidence'] if e['event_id'] in event_ids}
+        statement_ids = {r['statement_id'] for r in relations}
+        statement_versions = {s['version_id'] for s in data['practice_statement'] if s['id'] in statement_ids}
+        supported = (any(passages.get(p, {}).get('version_id') == attempt['source_version_id'] for p in event_passages)
+                     if scope['research_kind'] == 'event' else attempt['source_version_id'] in statement_versions)
+        if not supported:
+            raise ValueError('Eski tarama köprüsü seçili konu kanıtına bağlanmalı')
+    for lead in leads.values():
+        scope = scopes.get(lead['scope_id'])
+        try:
+            linked = json.loads(lead['attempt_ids'])
+            safe_url(lead['url'])
+        except (ValueError, TypeError):
+            raise ValueError('Uç girişimleri veya URL geçersiz')
+        if not scope or not lead['relevance_reason'] or lead['state'] not in ('pending', 'examined', 'blocked', 'excluded') or not isinstance(linked, list) or any(not isinstance(a, str) for a in linked):
+            raise ValueError('Araştırma ucu geçersiz')
+        old_lead = legacy_leads.get(lead['id'])
+        allowed_topics = {scope['topic_id']} | bridged_topics.get(scope['id'], set())
+        if old_lead and (old_lead['party_id'] != scope['party_id'] or old_lead['topic_id'] not in allowed_topics or old_lead['url'] != lead['url']):
+            raise ValueError('Önceki uç parti, konu veya URL ile uyuşmuyor')
+        if any(a not in attempts or attempts[a]['scope_id'] != scope['id'] for a in linked) or (lead['state'] != 'pending' and not linked):
+            raise ValueError('Uç aynı kapsamdaki gerçek girişimi gerektirir')
+        resolved = [attempts[a] for a in linked if attempts[a]['url'] and normalize_url(attempts[a]['url']) == normalize_url(lead['url'])]
+        if lead['state'] == 'examined' and not any(a['result'] == 'examined' and a['source_version_id'] for a in resolved):
+            raise ValueError('İncelenen uç kaynaklı inceleme gerektirir')
+        if lead['state'] == 'blocked' and not any(a['result'] in ('failure', 'inconclusive') for a in resolved):
+            raise ValueError('Engelli uç gerçek başarısız girişim gerektirir')
+        if lead['state'] == 'excluded' and not any(a['result'] == 'excluded' for a in resolved):
+            raise ValueError('Dışlanan uç gerekçeli inceleme gerektirir')
+    for source in data['practice_scope_source']:
+        scope = scopes.get(source['scope_id'])
+        if not scope or not source['inspected_sections'] or not source_allowed(source['version_id'], scope['party_id']):
+            raise ValueError('İncelenen kaynak veya parti kapsamı geçersiz')
+        aware_time(source['inspected_at'])
+        if not any(a['scope_id'] == scope['id'] and a['source_version_id'] == source['version_id'] and a['result'] == 'examined' and aware_time(a['attempted_at']) <= aware_time(source['inspected_at']) for a in attempts.values()):
+            raise ValueError('İncelenen kaynak gerçek girişim gerektirir')
+    events = {event['id'] for event in data['practice_event']}
+    relations = {r['id']: r for r in data['practice_relation']}
+    candidates = {c['id']: dict(c) for c in data['practice_candidate']}
+    candidate_revisions = sorted(data.get('practice_candidate_revision', []), key=lambda row: aware_time(row['recorded_at']))
+    if len({(r['candidate_id'], aware_time(r['recorded_at'])) for r in candidate_revisions}) != len(candidate_revisions):
+        raise ValueError('Aday revizyonları aynı zamanda çakışamaz')
+    for revision in candidate_revisions:
+        candidate = candidates.get(revision['candidate_id'])
+        if not candidate or not revision['reason']:
+            raise ValueError('Aday revizyonu geçersiz')
+        candidate.update({k: revision[k] for k in ('event_id', 'relation_id', 'state', 'reason', 'passage_ids')})
+    for candidate in candidates.values():
+        scope = scopes.get(candidate['scope_id'])
+        try:
+            refs = json.loads(candidate['passage_ids'])
+        except (ValueError, TypeError):
+            raise ValueError('Aday pasajları geçersiz')
+        if (not scope or not candidate['reason'] or candidate['state'] not in ('eligible', 'excluded', 'unverified') or
+                not isinstance(refs, list) or not refs or any(not isinstance(p, str) or p not in passages or not source_allowed(passages[p]['version_id'], scope['party_id'], p) for p in refs)):
+            raise ValueError('Aday kaynak veya kapsamı geçersiz')
+        if any(not any(s['scope_id'] == scope['id'] and s['version_id'] == passages[p]['version_id'] for s in data['practice_scope_source']) for p in refs):
+            raise ValueError('Aday pasajı incelenen kapsam kaynağı gerektirir')
+        if candidate['event_id'] and candidate['event_id'] not in events:
+            raise ValueError('Aday olayı bulunamadı')
+        if candidate['state'] == 'eligible' and (not candidate['event_id'] or not any(e['event_id'] == candidate['event_id'] and e['passage_id'] in refs for e in data['practice_event_evidence'])):
+            raise ValueError('Uygun aday olayla bağlı kanıt gerektirir')
+        if candidate['state'] == 'eligible' and not (any(r['event_id'] == candidate['event_id'] and (r['party_id'], r['topic_id']) == (scope['party_id'], scope['topic_id']) for r in data['practice_relation']) or
+                any(u['event_id'] == candidate['event_id'] and (u['party_id'], u['topic_id']) == (scope['party_id'], scope['topic_id']) for u in data.get('practice_unmatched', []))):
+            raise ValueError('Uygun olay için parti ve konu bağı gerekli')
+        if candidate['relation_id']:
+            relation = relations.get(candidate['relation_id'])
+            if not relation or (relation['party_id'], relation['topic_id'], relation['event_id']) != (scope['party_id'], scope['topic_id'], candidate['event_id']):
+                raise ValueError('Aday ilişkisi kapsam dışında')
+    old_candidates = {candidate['id']: candidate for candidate in data['match_candidate']}
+    candidate_links = set()
+    for link in data.get('practice_candidate_legacy', []):
+        candidate, old = candidates.get(link['candidate_id']), old_candidates.get(link['legacy_id'])
+        scope = scopes.get(candidate['scope_id']) if candidate else None
+        if (not scope or not old or not link['reason'] or old['party_id'] != scope['party_id'] or
+                old['topic_id'] not in ({scope['topic_id']} | bridged_topics.get(scope['id'], set())) or
+                (old.get('passage_id') and old['passage_id'] not in json.loads(candidate['passage_ids']))):
+            raise ValueError('Eski aday köprüsü kapsam dışında')
+        candidate_links.add((scope['id'], old['id']))
+    for closure in closures.values():
+        scope = scopes.get(closure['scope_id'])
+        try:
+            residual = json.loads(closure['residual_lead_ids'])
+        except (ValueError, TypeError):
+            raise ValueError('Kapanış uçları geçersiz')
+        closed_at = aware_time(closure['closed_at'])
+        prior = [a for a in attempts.values() if scope and a['scope_id'] == scope['id'] and aware_time(a['attempted_at']) <= closed_at]
+        if (not scope or not closure['reason'] or not isinstance(residual, list) or any(not isinstance(x, str) for x in residual) or
+                any(x not in leads or leads[x]['scope_id'] != scope['id'] or leads[x]['state'] not in ('blocked', 'excluded') for x in residual) or
+                not any(a['result'] in ('results', 'no_result') for a in prior)):
+            raise ValueError('Kapanış için gerçek kapsamlı girişim gerekli')
+        for attempt in prior:
+            if attempt['result'] == 'results' and not any(lead['scope_id'] == scope['id'] and attempt['id'] in json.loads(lead['attempt_ids']) for lead in leads.values()):
+                raise ValueError('Sonuç veren aramanın ilgili uçları gerekli')
+            if attempt['result'] == 'examined' and not any(s['scope_id'] == scope['id'] and s['version_id'] == attempt['source_version_id'] for s in data['practice_scope_source']):
+                raise ValueError('Kapanış incelenen kaynak bölümlerini gerektirir')
+    for reopen in data['practice_reopen']:
+        closure, lead = closures.get(reopen['closure_id']), leads.get(reopen['lead_id'])
+        if not closure or not lead or lead['scope_id'] != closure['scope_id'] or not reopen['reason'] or aware_time(reopen['opened_at']) <= aware_time(closure['closed_at']):
+            raise ValueError('Yeniden açılma kapsam veya dönemi geçersiz')
+    for scope in scopes.values():
+        history = sorted((c for c in closures.values() if c['scope_id'] == scope['id']), key=lambda c: aware_time(c['closed_at']))
+        if not history:
+            continue
+        if len({aware_time(c['closed_at']) for c in history}) != len(history):
+            raise ValueError('Kapsam kapanışları aynı zamanda çakışamaz')
+        for previous, following in zip(history, history[1:]):
+            if not any(r['closure_id'] == previous['id'] and aware_time(previous['closed_at']) < aware_time(r['opened_at']) < aware_time(following['closed_at']) for r in data['practice_reopen']):
+                raise ValueError('Yeni kapanış önceki yeniden açılmayı gerektirir')
+        latest = history[-1]
+        reopened = any(r['closure_id'] == latest['id'] for r in data['practice_reopen'])
+        if not reopened and any(l['scope_id'] == scope['id'] and l['state'] == 'pending' for l in leads.values()):
+            raise ValueError('Bekleyen uçla kapanış yapılamaz')
+        residual_ids = set(json.loads(latest['residual_lead_ids']))
+        if not reopened and any(l['scope_id'] == scope['id'] and l['state'] == 'blocked' and l['id'] not in residual_ids for l in leads.values()):
+            raise ValueError('Erişilemeyen uç kapanış sınırında korunmalı')
+        allowed_topics = {scope['topic_id']} | bridged_topics.get(scope['id'], set())
+        if not reopened and any(l['party_id'] == scope['party_id'] and l['topic_id'] in allowed_topics and not any(n['scope_id'] == scope['id'] and normalize_url(n['url']) == l['normalized_url'] for n in leads.values()) for l in legacy_leads.values()):
+            raise ValueError('Kapsamdaki kayıtlı uçlar kapanıştan atlanamaz')
+        candidate_ids = {c['id'] for c in candidates.values() if c['scope_id'] == scope['id']}
+        if not reopened and any(c['party_id'] == scope['party_id'] and c['topic_id'] in allowed_topics and c['id'] not in candidate_ids and (scope['id'], c['id']) not in candidate_links for c in data['match_candidate']):
+            raise ValueError('Kapsamdaki kayıtlı adaylar kapanıştan atlanamaz')
+        if not reopened and any(s['scope_id'] == scope['id'] and aware_time(s['inspected_at']) > aware_time(latest['closed_at']) for s in data['practice_scope_source']):
+            raise ValueError('Yeni kaynak kapsamı yeniden açmalı')
+        if not reopened and any(a['scope_id'] == scope['id'] and aware_time(a['attempted_at']) > aware_time(latest['closed_at']) for a in attempts.values()):
+            raise ValueError('Yeni girişim kapsamı yeniden açmalı')
+        if not reopened and any(leads[r['lead_id']]['scope_id'] == scope['id'] and aware_time(r['recorded_at']) > aware_time(latest['closed_at']) for r in revisions):
+            raise ValueError('Yeni uç bilgisi kapsamı yeniden açmalı')
+        if not reopened and any(candidates[r['candidate_id']]['scope_id'] == scope['id'] and aware_time(r['recorded_at']) > aware_time(latest['closed_at']) for r in candidate_revisions):
+            raise ValueError('Yeni aday bilgisi kapsamı yeniden açmalı')
+    return True
+
+
+def practice_coverage_states(data, inventory):
+    """Compute current states without mutating immutable scope history."""
+    from arsiv import aware_time
+    scopes = {s['id'] for s in data.get('practice_scope_v2', [])}
+    researched = {a['scope_id'] for a in data.get('practice_attempt_v2', [])}
+    researched.update(b['scope_id'] for b in data.get('practice_legacy_scope', []))
+    researched.update(l['scope_id'] for l in data.get('practice_lead', []))
+    researched.update(c['scope_id'] for c in data.get('practice_candidate', []))
+    latest = {}
+    for closure in data.get('practice_closure', []):
+        current = latest.get(closure['scope_id'])
+        if current is None or aware_time(closure['closed_at']) > aware_time(current['closed_at']):
+            latest[closure['scope_id']] = closure
+    reopened = {r['closure_id'] for r in data.get('practice_reopen', [])}
+    result = []
+    for cell in inventory['cells']:
+        sid = cell['cell_id']
+        state = 'not_researched'
+        if sid in scopes and sid in researched:
+            state = 'open'
+        if sid in latest and latest[sid]['id'] not in reopened:
+            state = 'closed'
+        result.append(dict(cell_id=sid, party_id=cell['party_id'], topic_id=cell['topic_id'], research_kind=cell['research_kind'], state=state))
+    return result
 
 
 def migrate_practice_workspace(db, backup_path, fail_at=None):
@@ -354,6 +664,34 @@ def validate_practices(data):
             raise ValueError('Eski kayıt bulunamadı')
     validate_practice_evidence(data, findings, passages, events, statements, check_finding, party_sources)
     validate_practice_temporality(data, statements, check_finding)
+    coverage = set(data).intersection(PRACTICE_COVERAGE_TABLES)
+    if coverage:
+        if coverage != set(PRACTICE_COVERAGE_TABLES) or len(data['practice_coverage_contract']) != 1 or data['practice_coverage_contract'][0]['version'] != 2:
+            raise ValueError('Uygulama kapsam sözleşmesi eksik')
+        try:
+            initial_inventory = json.loads(data['practice_coverage_contract'][0]['inventory_json'])
+            extensions = [dict(x, basis_passage_ids=json.loads(x['basis_passage_ids'])) for x in data['practice_topic_extension']]
+            revisions = sorted(data['practice_inventory_revision'], key=lambda row: row['epoch'])
+            inventory = json.loads(revisions[-1]['inventory_json']) if revisions else initial_inventory
+        except (ValueError, TypeError):
+            raise ValueError('Uygulama kapsam envanteri geçersiz')
+        canonical_base = dict(data, release_id=initial_inventory['base_release'])
+        validate_practice_coverage(canonical_base, initial_inventory)
+        previous_ids = set()
+        for revision in revisions:
+            if revision['epoch'] < 1 or not revision['reason']:
+                raise ValueError('Envanter revizyonu geçersiz')
+            revised = json.loads(revision['inventory_json'])
+            ids = {t['topic_id'] for t in revised['topics']} - {t['topic_id'] for t in initial_inventory['topics']}
+            if not previous_ids < ids or not ids <= {e['id'] for e in extensions}:
+                raise ValueError('Envanter uzantıları yalnız eklenebilir')
+            validate_practice_coverage(canonical_base, revised, [e for e in extensions if e['id'] in ids])
+            previous_ids = ids
+        if {e['id'] for e in extensions} != previous_ids:
+            raise ValueError('Konu uzantısı envanter revizyonu gerektirir')
+        validate_practice_closure(data, inventory, extensions)
+        if c[0]['stage'] == 'complete' and any(item['state'] != 'closed' for item in practice_coverage_states(data, inventory)):
+            raise ValueError('Tam uygulama için bütün kanonik kapsamlar kapanmalı')
     linked = {value for name in ('practice_statement', 'practice_relation', 'practice_contribution', 'practice_dispute', 'practice_position_change') for row in data.get(name, []) for key, value in row.items() if key.endswith('finding_id') and value}
     pairs = {findings[fid]['pair_id'] for fid in linked if fid in findings}
     for finding in findings.values():
@@ -369,10 +707,16 @@ def practice_manifest_fields(data):
         result['practice_variant_sha256'] = _digest({k: data[k] for k in PRACTICE_VARIANT_TABLES})
     if 'practice_evidence_contract' in data:
         result['practice_evidence_sha256'] = _digest({k: data[k] for k in PRACTICE_EVIDENCE_TABLES})
+    if 'practice_coverage_contract' in data:
+        result['practice_coverage_sha256'] = _digest({k: data[k] for k in PRACTICE_COVERAGE_TABLES})
     return result
 
 
 def validate_practice_descent(base, candidate):
+    if 'practice_coverage_contract' in base:
+        for name in PRACTICE_COVERAGE_TABLES:
+            if name not in candidate or any(row not in candidate[name] for row in base[name]):
+                raise ValueError('Önceki uygulama kapsam kaydı değiştirilemez')
     if 'practice_evidence_contract' in base:
         for name in PRACTICE_EVIDENCE_TABLES:
             if name not in candidate or any(row not in candidate[name] for row in base[name]):
@@ -412,11 +756,13 @@ def load_practice(work, payload):
 
 
 def _load_practice_copy(work, payload, base):
-    from arsiv import connect, validate_phase_one_workspace, aware_time
+    from arsiv import connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing
     if payload.get('base_release') != base or payload.get('contract_version') != 1 or payload.get('stage') not in ('tracer', 'partial', 'complete') or payload.get('taxonomy_version') != 4:
         raise ValueError('Uygulama paketi veya tabanı geçersiz')
     if len(payload.get('practice_records', {}).get('practice_contract', [])) != 1 or payload['practice_records']['practice_contract'][0].get('stage') != payload['stage']:
         raise ValueError('Paket ve uygulama aşaması uyuşmuyor')
+    if payload['stage'] == 'complete' and 'practice_coverage_contract' not in payload['practice_records']:
+        raise ValueError('Tam uygulama kanonik kapsam sözleşmesi gerektirir')
     if not isinstance(payload.get('scope_inventory'), list) or payload['practice_records']['practice_contract'][0].get('inventory_digest') != _digest(payload['scope_inventory']):
         raise ValueError('Envanter kapsamı özeti uyuşmuyor')
     db = connect(work / 'records.sqlite3')
@@ -426,8 +772,16 @@ def _load_practice_copy(work, payload, base):
         input_findings = {entry['values']['id'] for entry in payload['entries'] if entry.get('kind') == 'finding' and isinstance(entry.get('values'), dict) and entry['values'].get('id')}
         for entry in payload['entries']:
             kind, values = entry['kind'], entry['values']
-            if kind not in ('finding', 'finding_evidence', 'verification', 'source_attribution', 'review') or not values:
+            if kind not in ('finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing') or not values:
                 raise ValueError('Uygulama girdi türü geçersiz')
+            if payload.get('party_id') is not None and values.get('party_id') is not None and values['party_id'] != payload['party_id']:
+                raise ValueError('Parti paketi başka partinin kaydını ekleyemez')
+            if kind == 'attempt':
+                if (values.get('type'), values.get('result'), values.get('lead_id')) != ('search', 'no_result', None):
+                    raise ValueError('Paket girişimi yalnız uçsuz sonuçsuz arama olabilir')
+                check_attempt(db, values)
+            if kind == 'missing':
+                check_missing(db, values)
             if kind == 'review' and (values.get('kind'), values.get('reviewer_kind'), values.get('result')) != ('finding', 'agent', 'reviewed'):
                 raise ValueError('Yalnız ajan bulgu incelemesi eklenebilir')
             if kind == 'review':
@@ -454,6 +808,19 @@ def _load_practice_copy(work, payload, base):
             tables.update(PRACTICE_EVIDENCE_TABLES)
             for name, definition in PRACTICE_EVIDENCE_TABLES.items():
                 db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
+        coverage = set(records).intersection(PRACTICE_COVERAGE_TABLES)
+        if not coverage and db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_coverage_contract'").fetchone():
+            raise ValueError('Önceki uygulama kapsam sözleşmesi kaldırılamaz')
+        if coverage:
+            if coverage != set(PRACTICE_COVERAGE_TABLES):
+                raise ValueError('Uygulama kapsam tabloları eksik')
+            existing_marker = db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='practice_coverage_contract'").fetchone()
+            marker_rows = records['practice_coverage_contract']
+            if (len(marker_rows) != 1 or (not existing_marker and json.loads(marker_rows[0]['inventory_json']).get('base_release') != base)):
+                raise ValueError('Kapsam envanteri taban sürümle uyuşmuyor')
+            tables.update(PRACTICE_COVERAGE_TABLES)
+            for name, definition in PRACTICE_COVERAGE_TABLES.items():
+                db.execute(f'CREATE TABLE IF NOT EXISTS {name} ({definition})')
         if set(records) != set(tables):
             raise ValueError('Uygulama tabloları eksik')
         for kind in tables:
@@ -461,9 +828,41 @@ def _load_practice_copy(work, payload, base):
                 cols = {x['name'] for x in db.execute(f'PRAGMA table_info({kind})')}
                 if set(values) != cols:
                     raise ValueError('Uygulama alanları uyuşmuyor')
-                db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
+                if kind == 'practice_contract':
+                    existing = db.execute('SELECT * FROM practice_contract').fetchone()
+                    if existing:
+                        old = dict(existing)
+                        levels = {'tracer': 0, 'partial': 1, 'complete': 2}
+                        if (any(old[k] != values[k] for k in ('version', 'taxonomy_version', 'method_version', 'inventory_digest')) or
+                                values['stage'] not in levels or levels[values['stage']] < levels[old['stage']]):
+                            raise ValueError('Uygulama sözleşmesi geriletilemez veya değiştirilemez')
+                        if old['stage'] != values['stage']:
+                            db.execute('UPDATE practice_contract SET stage=? WHERE version=?', (values['stage'], values['version']))
+                        continue
+                where = ' AND '.join(f'{key} IS ?' for key in values)
+                if not db.execute(f'SELECT 1 FROM {kind} WHERE {where}', list(values.values())).fetchone():
+                    party = payload.get('party_id') if kind in PRACTICE_COVERAGE_TABLES else None
+                    scope_id = values.get('scope_id') if kind in PRACTICE_COVERAGE_TABLES else None
+                    if kind == 'practice_scope_v2':
+                        scope_party = values['party_id']
+                    else:
+                        if kind == 'practice_reopen':
+                            parent = db.execute('SELECT scope_id FROM practice_closure WHERE id=?', (values['closure_id'],)).fetchone()
+                            scope_id = parent['scope_id'] if parent else None
+                        elif kind == 'practice_lead_revision':
+                            parent = db.execute('SELECT scope_id FROM practice_lead WHERE id=?', (values['lead_id'],)).fetchone()
+                            scope_id = parent['scope_id'] if parent else None
+                        elif kind in ('practice_candidate_revision', 'practice_candidate_legacy'):
+                            parent = db.execute('SELECT scope_id FROM practice_candidate WHERE id=?', (values['candidate_id'],)).fetchone()
+                            scope_id = parent['scope_id'] if parent else None
+                        parent = db.execute('SELECT party_id FROM practice_scope_v2 WHERE id=?', (scope_id,)).fetchone() if scope_id else None
+                        scope_party = parent['party_id'] if parent else None
+                    if party is not None and scope_party is not None and party != scope_party:
+                        raise ValueError('Parti paketi başka partinin kapsamını değiştiremez')
+                    db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
         # Validate a transaction-consistent snapshot before the commit.
-        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'action', 'match', 'match_candidate', 'attempt', 'missing']}
+        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'scope_party', 'action', 'match', 'match_candidate', 'lead', 'attempt', 'missing', 'closure', 'reopen']}
+        data['release_id'] = base
         validate_practices(data)
         if db.execute('PRAGMA foreign_key_check').fetchall() or db.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
             raise ValueError('Uygulama bütünlük hatası')

@@ -445,7 +445,88 @@ def render_report(data):
         scope = practice_scopes[item['statement_scope_id']]
         unmatched_by_party_topic.setdefault((item['party_id'], item['topic_id'], scope['taxonomy_version']), []).append(item)
 
+    coverage_states = {}
+    coverage_topics = {t['topic_id']: t['definition'] for t in data.get('comparison_topic', []) if t['taxonomy_version'] == 4}
+    coverage_topics.update({t['id']: t['definition'] for t in data.get('practice_topic_extension', [])})
+    coverage_leads = {item['id']: dict(item) for item in data.get('practice_lead', [])}
+    coverage_candidates = {item['id']: dict(item) for item in data.get('practice_candidate', [])}
+    coverage_shared = {(item['version_id'], item['party_id'], item['passage_id']) for item in data.get('practice_source_party', []) if item['scope_reason']}
+
+    def coverage_passages(scope, version_id):
+        version = versions.get(version_id)
+        if not version:
+            return []
+        owner = documents[version['document_id']]['party_id']
+        return [p for p in data.get('passage', []) if p['version_id'] == version_id and (owner == scope['party_id'] or (version_id, scope['party_id'], p['id']) in coverage_shared)]
+
+    if data.get('practice_coverage_contract'):
+        from datetime import datetime
+        from uygulamalar import practice_coverage_states
+        for revision in sorted(data.get('practice_lead_revision', []), key=lambda x: datetime.fromisoformat(x['recorded_at'].replace('Z', '+00:00'))):
+            coverage_leads[revision['lead_id']].update(state=revision['state'], attempt_ids=revision['attempt_ids'])
+        for revision in sorted(data.get('practice_candidate_revision', []), key=lambda x: datetime.fromisoformat(x['recorded_at'].replace('Z', '+00:00'))):
+            coverage_candidates[revision['candidate_id']].update(state=revision['state'], reason=revision['reason'])
+        revisions = data.get('practice_inventory_revision', [])
+        marker = max(revisions, key=lambda x: x['epoch']) if revisions else data['practice_coverage_contract'][0]
+        inventory = json.loads(marker['inventory_json'])
+        coverage_states = {item['cell_id']: item['state'] for item in practice_coverage_states(data, inventory)}
+
     def add_practice_records(party_id, topic_id=None, taxonomy_version=None, comparison=False):
+        if data.get('practice_coverage_contract'):
+            scopes_v2 = {s['id']: s for s in data.get('practice_scope_v2', [])}
+            legacy_closures = {c['id']: c for c in data.get('closure', [])}
+            legacy_attempts = {a['id']: a for a in data.get('attempt', [])}
+            party_scopes = [s for s in scopes_v2.values() if s['party_id'] == party_id and (topic_id is None or s['topic_id'] == topic_id)]
+            if topic_id is not None and not party_scopes:
+                pieces.append(f'<p class="muted">{esc(parties[party_id]["legal_name"])} — Söylem ve olay kapsamı: Henüz incelenmedi</p>')
+            topics_with_scope = {s['topic_id'] for s in party_scopes}
+            for tid in topics_with_scope:
+                present_kinds = {s['research_kind'] for s in party_scopes if s['topic_id'] == tid}
+                for missing_kind, label in (('statement', 'Söylem'), ('event', 'Olay')):
+                    if missing_kind not in present_kinds:
+                        pieces.append(f'<p class="muted">{esc(parties[party_id]["legal_name"])} · {esc(coverage_topics.get(tid, tid))} · {label} — Henüz incelenmedi</p>')
+            for scope in party_scopes:
+                label = {'not_researched': 'Henüz incelenmedi', 'open': 'Araştırma sürüyor', 'closed': 'Belirtilen kapsam incelendi'}[coverage_states[scope['id']]]
+                prefix = 'comparison' if comparison else 'party'
+                kind = 'Söylem' if scope['research_kind'] == 'statement' else 'Olay'
+                topic_label = coverage_topics.get(scope['topic_id'], scope['topic_id'])
+                pieces.append(f'<p class="summary" id="{esc(prefix + "-scope-" + scope["id"])}">{esc(parties[party_id]["legal_name"])} · {esc(topic_label)} · {kind} — {esc(label)} ({esc(scope["period_start"])} – {esc(scope["cutoff_at"])}). {esc(scope["boundary_reason"])}</p>')
+                scope_attempts = [a for a in data.get('practice_attempt_v2', []) if a['scope_id'] == scope['id']]
+                scope_closures = [c for c in data.get('practice_closure', []) if c['scope_id'] == scope['id']]
+                scope_leads = [lead for lead in coverage_leads.values() if lead['scope_id'] == scope['id']]
+                scope_candidates = [candidate for candidate in coverage_candidates.values() if candidate['scope_id'] == scope['id']]
+                if scope_attempts or scope_closures or scope_leads or scope_candidates:
+                    pieces.append('<details><summary>Araştırma girişimleri ve kapsam geçmişi</summary>')
+                    lead_labels = {'pending': 'Bekliyor', 'examined': 'İncelendi', 'blocked': 'Erişilemedi', 'excluded': 'Kapsam dışı'}
+                    for lead in scope_leads:
+                        pieces.append(f'<p>{esc(lead_labels[lead["state"]])}: <a href="{web_url(lead["url"])}">Kaynak bağlantısı</a> — {esc(lead["relevance_reason"])}</p>')
+                    for candidate in scope_candidates:
+                        pieces.append(f'<p>{esc(candidate["reason"])}</p>')
+                    for attempt in scope_attempts:
+                        refs = ' '.join(citation(p['id']) for p in coverage_passages(scope, attempt['source_version_id']))
+                        pieces.append(f'<p>{esc(attempt["attempted_at"])}: {esc(attempt["query"])} — {esc(attempt["reason"])} {refs}</p>')
+                    for closure in scope_closures:
+                        pieces.append(f'<p>{esc(closure["closed_at"])}: {esc(closure["reason"])}</p>')
+                        for reopen in data.get('practice_reopen', []):
+                            if reopen['closure_id'] == closure['id']:
+                                pieces.append(f'<p>{esc(reopen["opened_at"])}: {esc(reopen["reason"])}</p>')
+                    pieces.append('</details>')
+            for bridge in data.get('practice_legacy_scope', []):
+                scope = scopes_v2[bridge['scope_id']]
+                if scope['party_id'] != party_id or (topic_id is not None and scope['topic_id'] != topic_id):
+                    continue
+                old = legacy_closures[bridge['closure_id']]
+                attempt = legacy_attempts[bridge['attempt_id']]
+                prefix = 'comparison' if comparison else 'party'
+                pieces.append(f'<section class="record" id="{esc(prefix + "-coverage-" + scope["id"])}"><p class="summary">{esc(scope["boundary_reason"])}</p>')
+                pieces.append(f'<details><summary>Önceki sınırlı tarama ve kaynak</summary><p>{esc(bridge["mapping_reason"])}</p><p>{esc(old["reason"])}</p><p>{esc(old["residual_leads"])}</p>')
+                pieces.append(f'<p>{esc(attempt["query"])} — {esc(attempt["reason"])}</p>')
+                for passage in coverage_passages(scope, attempt['source_version_id']):
+                    pieces.append(f'<p><a href="#{fragment("source-" + passage["id"])}">İncelenen kaynak pasajı</a></p>')
+                for reopen in data.get('reopen', []):
+                    if reopen['closure_id'] == old['id']:
+                        pieces.append(f'<p>Eski konu taraması yeniden açıldı: {esc(reopen["reason"])}</p>')
+                pieces.append('</details></section>')
         relations = sorted((r for (pid, tid, ver), items in relations_by_party_topic.items()
                             if pid == party_id and (topic_id is None or (tid, ver) == (topic_id, taxonomy_version)) for r in items), key=lambda r: (
             r['statement_id'], events[r['event_id']]['event_at'] is None,
@@ -748,6 +829,11 @@ def render_report(data):
             for row in data['comparison_row']:
                 if (row['topic_id'],row['taxonomy_version'],row['party_id']) == (topic['topic_id'],topic['taxonomy_version'],pid):
                     add_comparison_row(row)
+        pieces.append('</section>')
+    for extension in data.get('practice_topic_extension', []):
+        pieces.append(f'<section class="comparison-topic"><h3>{esc(extension["definition"])}</h3>')
+        for pid in PRESENTATION_ORDER:
+            add_practice_records(pid, extension['id'], 4, comparison=True)
         pieces.append('</section>')
     pieces.append('</div>')
 
