@@ -484,6 +484,139 @@ class PracticePreview(unittest.TestCase):
                 self.assertIn(package['practice_records']['practice_contribution'][0], records['practice_contribution'])
                 self.assertIn(package['practice_records']['practice_relation'][0], records['practice_relation'])
 
+    def test_public_merge_separate_party_physical_roots(self):
+        import copy
+        import io
+        from email.message import Message
+        import arsiv_gorunum
+        original = json.loads((arsiv.DATA / 'practices/04-coverage-tracer.json').read_text())
+        inventory = json.loads((arsiv.DATA / 'practices/04-inventory.json').read_text())
+        pointer_before = arsiv.sha(arsiv.DATA / 'current.json')
+        base_db = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        db_before = arsiv.sha(base_db)
+        self.assertFalse((arsiv.DATA / '.write.lock').exists())
+        with tempfile.TemporaryDirectory(prefix='gsd-public-roots-') as tmp:
+            root = Path(tmp)
+            roots, inputs = {}, []
+            for party in ('yeni-parti', 'tip'):
+                source_root = root / party
+                source_root.mkdir()
+                raw = ('<html><body>Technical source for ' + party + '</body></html>').encode()
+                response = io.BytesIO(raw)
+                response.headers = Message()
+                response.headers['Content-Type'] = 'text/html; charset=utf-8'
+                response.geturl = lambda party=party: 'https://example.org/' + party
+                with patch('arsiv.urllib.request.urlopen', return_value=response):
+                    capture = arsiv.capture_source('https://example.org/' + party, 'html', storage_root=source_root)
+                view = arsiv_gorunum.build_view(raw, capture['final_url'], source_root, fetch_assets=False)
+                capture.pop('http_charset', None)
+                document, version, passage = ('technical-' + party + suffix for suffix in ('-doc', '-version', '-passage'))
+                source_version = dict(capture, id=version, document_id=document, document_date=None,
+                                      version_label=None, date_precision='unknown', date_unknown_reason='Technical fixture')
+                view['version_id'] = version
+                package = copy.deepcopy(original)
+                package['party_id'] = party
+                if party == 'tip':
+                    # The pilot's scope and legacy bridge are new rows owned by
+                    # Yeni Parti; TİP must not submit them as its own scope.
+                    package['practice_records']['practice_scope_v2'] = []
+                    package['practice_records']['practice_legacy_scope'] = []
+                package['entries'] = [
+                    dict(kind='document', values=dict(id=document, party_id=party, title='Technical fixture', source_kind='news')),
+                    dict(kind='document_version', values=source_version), dict(kind='archive_view', values=view),
+                    dict(kind='passage', values=dict(id=passage, version_id=version,
+                        exact='Technical source for ' + party, section='Technical fixture')),
+                    dict(kind='source_attribution', values=dict(version_id=version, kind='journalism',
+                        publisher='Technical publisher', public_url=capture['final_url'], basis='Technical fixture', date_precision='unknown'))]
+                records = package['practice_records']
+                new_event = 'technical-' + party + '-event'
+                records['practice_event'].append(dict(records['practice_event'][0], id=new_event,
+                                                      common_event_key='technical-' + party))
+                records['practice_event_evidence'].append(dict(records['practice_event_evidence'][0],
+                    event_id=new_event, passage_id=passage, concrete_basis='Technical source for ' + party))
+                records['practice_source_party'].append(dict(version_id=version, party_id=party,
+                                                              passage_id=passage, scope_reason='Technical fixture ownership.'))
+                identity = party + '.json'
+                roots[identity] = source_root
+                inputs.append(dict(identity=identity, raw=json.dumps(package, ensure_ascii=False).encode()))
+            digests = {item['identity']: hashlib.sha256(item['raw']).hexdigest() for item in inputs}
+            decision = dict(version=1, inventory_digest=uygulamalar._digest(inventory), input_digests=digests,
+                decisions=[dict(id='technical-same-base', candidate_keys=['cesme-2026-09-27'],
+                    event_refs=[dict(input_package_sha256=digests[item['identity']], event_id='tracer-cesme') for item in inputs],
+                    decision='same', canonical_event_id='tracer-cesme', overlap_reason='Shared immutable base event.',
+                    source_passage_ids=['0105-cesme-p'], reviewed_at='2026-11-18T12:00:00+00:00', reviewer_kind='agent')])
+            merged = uygulamalar.merge_practice_packages(inventory, inputs, json.dumps(decision).encode(), source_roots=roots)
+            self.assertIsNone(merged['party_id'])
+            out = root / 'preview'
+            uygulamalar.render_practice_preview(merged, out, inventory, merge_source_roots=roots)
+            folder, = (out / 'releases').iterdir()
+            snapshot = json.loads((folder / 'records.json').read_text())
+            self.assertEqual(snapshot, arsiv.export_db(folder / 'records.sqlite3', folder.name, storage_root=out))
+            self.assertEqual(arsiv.audit_release(folder.name, storage_root=out), folder.name)
+            self.assertGreaterEqual((folder / 'index.html').read_text().count('0105-cesme-p'), 2)
+            for party in ('yeni-parti', 'tip'):
+                self.assertTrue(any(r['party_id'] == party and r['passage_id'] == 'technical-' + party + '-passage'
+                                    for r in snapshot['practice_source_party']))
+                version = next(v for v in snapshot['document_version'] if v['id'] == 'technical-' + party + '-version')
+                self.assertTrue((out / version['original_path']).is_file())
+                self.assertTrue(any(r['event_id'] == 'technical-' + party + '-event' and
+                                    r['passage_id'] == 'technical-' + party + '-passage'
+                                    for r in snapshot['practice_event_evidence']))
+            swapped = {'yeni-parti.json': roots['tip.json'], 'tip.json': roots['yeni-parti.json']}
+            rejected = root / 'rejected'
+            with self.assertRaises((ValueError, FileNotFoundError)):
+                uygulamalar.render_practice_preview(merged, rejected, inventory, merge_source_roots=swapped)
+            self.assertFalse(rejected.exists())
+            # A party cannot submit a physical document owned by another party.
+            forged = json.loads(inputs[1]['raw'])
+            forged['entries'][0]['values']['party_id'] = 'yeni-parti'
+            forged_input = dict(identity=inputs[1]['identity'], raw=json.dumps(forged).encode())
+            forged_decision = dict(version=1, inventory_digest=uygulamalar._digest(inventory),
+                input_digests={forged_input['identity']: hashlib.sha256(forged_input['raw']).hexdigest()}, decisions=[])
+            before = arsiv.sha(folder / 'manifest.json')
+            with self.assertRaisesRegex(ValueError, 'başka partinin'):
+                uygulamalar.merge_practice_packages(inventory, [forged_input], json.dumps(forged_decision).encode(), source_roots=roots)
+            self.assertEqual(arsiv.sha(folder / 'manifest.json'), before)
+        self.assertEqual(arsiv.sha(arsiv.DATA / 'current.json'), pointer_before)
+        self.assertEqual(arsiv.sha(base_db), db_before)
+        self.assertFalse((arsiv.DATA / '.write.lock').exists())
+
+    def test_public_merge_rejects_bad_digest_and_conflicting_decisions(self):
+        package = json.loads((arsiv.DATA / 'practices/04-coverage-tracer.json').read_text())
+        inventory_path = arsiv.DATA / 'practices/04-inventory.json'
+        inventory = json.loads(inventory_path.read_text())
+        pointer = arsiv.sha(arsiv.DATA / 'current.json')
+        db = arsiv.DATA / 'releases' / arsiv.current() / 'records.sqlite3'
+        db_hash = arsiv.sha(db)
+        with tempfile.TemporaryDirectory(prefix='gsd-public-negative-') as tmp:
+            root = Path(tmp)
+            first, second = root / 'first.json', root / 'second.json'
+            first.write_text(json.dumps(package), encoding='utf-8')
+            second.write_text(json.dumps(package, indent=2), encoding='utf-8')
+            digests = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in (first, second)}
+            row = dict(id='decision-one', candidate_keys=['cesme-2026-09-27'],
+                event_refs=[dict(input_package_sha256=digests[p.name], event_id='tracer-cesme') for p in (first, second)],
+                decision='same', canonical_event_id='tracer-cesme', overlap_reason='Technical fixture duplicate.',
+                source_passage_ids=['0105-cesme-p'], reviewed_at='2026-11-18T12:00:00+00:00', reviewer_kind='agent')
+            cases = [([first], dict(version=1, inventory_digest=uygulamalar._digest(inventory),
+                                    input_digests={first.name: '0' * 64}, decisions=[]), 'digest'),
+                     ([first, second], dict(version=1, inventory_digest=uygulamalar._digest(inventory),
+                                            input_digests=digests, decisions=[row, dict(row, id='decision-two')]), 'conflicting')]
+            for inputs, decisions, expected in cases:
+                with self.subTest(expected=expected):
+                    decision_path, out = root / (expected + '.json'), root / (expected + '-out.json')
+                    decision_path.write_text(json.dumps(decisions), encoding='utf-8')
+                    out.write_bytes(b'existing output')
+                    result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src/arsiv.py'), 'practice-merge',
+                        '--inventory', str(inventory_path), '--inputs', *map(str, inputs),
+                        '--event-decisions', str(decision_path), '--out', str(out)], capture_output=True, text=True)
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertIn(expected, json.loads(result.stderr)['error'].lower())
+                    self.assertEqual(out.read_bytes(), b'existing output')
+        self.assertEqual(arsiv.sha(arsiv.DATA / 'current.json'), pointer)
+        self.assertEqual(arsiv.sha(db), db_hash)
+        self.assertFalse((arsiv.DATA / '.write.lock').exists())
+
     def test_preview_command_is_available(self):
         result = subprocess.run([sys.executable, str(arsiv.ROOT / 'src' / 'arsiv.py'),
                                  'practice-preview', '--help'], capture_output=True, text=True)
