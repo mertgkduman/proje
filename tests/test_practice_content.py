@@ -18,6 +18,9 @@ class PracticeContent(unittest.TestCase):
     def test_unmatched_statement_search_survives_load_export_and_views(self):
         base = '9003e475ee5d49b29a1310c0bfe2007d'
         package = tracer_input(base)
+        # This fixture intentionally combines records from several parties.
+        # Single-party packages must retain the stricter ownership boundary.
+        package['party_id'] = None
         records = package['practice_records']
         records['practice_scope'] = [dict(id='speech-scope', party_id='yeni-parti', topic_id='organ-secim-yontemi', taxonomy_version=4, period_start='2026-07-24', cutoff_at='2026-11-10T14:38:46.154751+00:00', research_kind='statement', state='not_researched', boundary_reason='Bu kapsam henüz taranmadı.')]
         records['practice_scope'].append(dict(id='attempted-scope', party_id='demokrat', topic_id='temel-yurttaslik-geliri', taxonomy_version=4, period_start='1983-06-23', cutoff_at='2026-11-10T14:38:46.154751+00:00', research_kind='statement', state='open', boundary_reason='Teknik kapsam örneği.'))
