@@ -1,5 +1,17 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Güncel gözlem — 2026-11-20 14:56:12 UTC
+
+Bu bölüm önceki anlık görüntülerin yerini alır; yeni sonuçlar için canlı JSONL ve gerçek çıkış dosyaları otoritedir.
+
+- Aynı `/root/phase04_gate_recovery` typed yürütücüsü etkin. Genel kapının güncel fingerprint'i `083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4`: 287 benzersiz ID / 295 ham görünüm. Tam bitmiş, sıfır çıkışlı ve kimliği eşleşen batch'lerden kredi **32/287**. Eski fingerprint sonuçları taşınmadı.
+- Riskli gerçek R1 merge ve digest/provenance ile bağlı replay ilk iki batch olarak geçti. Ardından content 3, contract 4, coverage 6, legacy 6, merge-engine 8 ve persistence 3 ID geçti; ilk iki ID ile toplam 32.
+- Canlı batch `a01b1c6241054047aa0066e264aa060c`: `test_practice_pending_integration.PracticePendingIntegration.test_inherited_reading_is_pending_after_partial_merge`. Çocuk PID `664983`; başlangıç `2026-11-20T14:31:44.253644+00:00`. Bu gözlemde sonuç veya batch sonu yok; başarı sayılmaz ve tekrar başlatılmaz.
+- Ayrılmış wrapper PID `389626`, supervisor PID `389629`. Sözleşme `fresh-gate-contract.json`, kanıt `fresh-gate-events.jsonl` / `fresh-supervisor-v3.log` / `fresh-a01b1c6241054047aa0066e264aa060c.log`. Native oturum kaybolsa da önce bu süreçleri ve kalıcı çıktıları kontrol edin.
+- `tests/test_practice_pending_integration.py` ve `tests/test_practice_merge_persistence.py` teknik fixture düzeltmeleri hâlâ korunacak değişikliklerdir. Persistence tek hedefli v2 gerçek exit 0 (3704.998 s), inherited tek hedefli v2 gerçek exit 0 (5124.366 s) verdi; bunlar fresh gate yerine kredi edilmedi. Persistence bu güncel gate'te ayrıca 3/3 geçti; inherited şu anda yeniden çalışıyor. Üretim denetimleri ve assertion'lar korunuyor.
+- Slurm `62173687` kendi tutulmuş taksonomi işi olarak sonraya bırakılmıştır; koşu/ağır denetimler bitmeden bırakılmaz veya kopyası gönderilmez. Son gerçek durumunu eylem öncesi yeniden kontrol edin.
+- Kök yalnız bu orkestrasyon notunu güncelledi; kaynak/test dosyalarına veya canlı testlere müdahale etmedi. Plan ve faz ilerlemesi hâlâ **2/15**; 04-03 birleşik kapısı, tracer ve Faz2/Faz3 audit'leri bitmeden SUMMARY/sayaç ilerletilmez.
+
 ## Sonraki güncelleme — 2026-11-20 04:28:47 UTC
 
 Bu bölüm aşağıdaki ilk kurtarma anlık görüntüsünden daha yenidir; canlı JSONL/çıkış dosyaları yine otoritedir.
