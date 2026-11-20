@@ -1,5 +1,16 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Güncel gözlem — 2026-11-20 17:39:03 UTC
+
+Bu bölüm önceki gözlemlerden yenidir; canlı JSONL/çıkış dosyaları sonraki sonuçlar için otoritedir.
+
+- Aynı `/root/phase04_gate_recovery` etkin; kaynak/test fingerprint'i `083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4` değişmedi. 287 benzersiz ID / 295 ham görünüm içinde tam sıfır çıkışlı, kimliği eşleşen batch kredisi **40/287**.
+- `test_inherited_reading_is_pending_after_partial_merge` bu güncel kapıda gerçek exit 0 ile geçti; önceki hedefli sonucu yerine kredi edilmedi. Önizleme kontrolleri ilerledi; `test_merge_same_event_preserves_base_event_and_is_order_independent` batch `b170987664e6418c92d45b955b4f99bc`, `2026-11-20T17:00:51.468959+00:00` zamanında exit 0 / identity_ok true ile bitti.
+- Şimdi `test_practice_preview.PracticePreview.test_new_source_end_to_end` çalışıyor. Batch `fd0afd4cd1ea4ded872bc86118b9dd2c`, başlangıç `2026-11-20T17:00:51.671626+00:00`. Son yürütücü gözleminde test PID `704815`, gerçek `practice-merge` çocuk PID `708139` canlıydı; bu gözlemde sonuç veya batch sonu yok. Bu testi tekrar başlatmayın.
+- Wrapper `389626` / supervisor `389629` aynı koşuyu sürdürüyor. Güncel kanıt `fresh-gate-events.jsonl`, `fresh-fd0afd4cd1ea4ded872bc86118b9dd2c.log`, `fresh-supervisor-v3.log`; sözleşme `fresh-gate-contract.json`. Eski parmak izi sayıları veya hedefli loglar bu kapıya kredi olmaz.
+- Plan/faz hâlâ **2/15**. Kalan bütün ID'ler, dış Slurm taksonomi ID'si (`62173687`, eylem öncesi gerçek durumu yeniden kontrol edin), tracer, Faz2/Faz3 audit'leri ve değişmez kanonik özetler kapanmadan 04-03 SUMMARY/sayaç ilerletilmez. Parti araştırma planları başlamadı.
+- Kök yalnız bu devam notunu güncelledi. Diğer kaynak/test, ham arşiv, kanonik yayın ve canlı süreçlere müdahale edilmedi.
+
 ## Güncel gözlem — 2026-11-20 14:56:12 UTC
 
 Bu bölüm önceki anlık görüntülerin yerini alır; yeni sonuçlar için canlı JSONL ve gerçek çıkış dosyaları otoritedir.
