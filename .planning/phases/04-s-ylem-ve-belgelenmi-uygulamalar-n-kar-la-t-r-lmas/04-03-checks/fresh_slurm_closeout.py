@@ -84,8 +84,8 @@ class RelativeSources(HTMLParser):
         self.links.extend(value for key, value in attrs if key == 'href' and value and value.startswith('../../'))
 
 
-def preview_bundle():
-    releases = list((OUT / 'releases').iterdir())
+def preview_bundle(root):
+    releases = list((root / 'releases').iterdir())
     require(len(releases) == 1, 'expected one preview release')
     release = releases[0]
     manifest_path = release / 'manifest.json'
@@ -113,14 +113,16 @@ def main():
     run(job, 'build', ['-m', 'compileall', '-q', 'src', 'tests'])
     run(job, 'tracer', ['src/arsiv.py', 'practice-preview', '--input', 'data/practices/04-tracer.json',
                          '--inventory', 'data/practices/04-inventory.json', '--out', str(OUT)], 'PRACTICE_PREVIEW_OK ')
-    release, manifest_sha, local_links = preview_bundle()
+    release, manifest_sha, local_links = preview_bundle(OUT)
+    artifact = ROOT / 'data/.staging' / f'gsd-04-03-tracer-preview-{job}'
+    shutil.copytree(OUT, artifact)
+    copied, copied_sha, copied_links = preview_bundle(artifact)
+    require((copied.name, copied_sha, copied_links) == (release.name, manifest_sha, local_links), 'copied preview differs')
+    print(f'Preserved audited preview: {copied}', flush=True)
     run(job, 'phase2', ['src/arsiv.py', 'audit', '--release', 'current', '--phase', '2'], f'PHASE2_AUDIT_OK {before["release"]}')
     run(job, 'phase3-complete', ['src/arsiv.py', 'audit', '--release', 'current', '--phase', '3', '--stage', 'complete'],
         f'PHASE3_AUDIT_OK {before["release"]}')
     require(identity() == before, 'canonical identity changed during closeout')
-    artifact = ROOT / 'data/.staging' / f'gsd-04-03-tracer-preview-{job}'
-    shutil.copytree(OUT, artifact)
-    require(sha(artifact / 'releases' / release.name / 'manifest.json') == manifest_sha, 'copied manifest differs')
     result = dict(job=job, ok=True, credited=count, source_test_fingerprint=before['fingerprint'],
                   canonical_release=before['release'], canonical_manifest=before['manifest'],
                   canonical_pointer=before['pointer'], preview_path=str(artifact),
