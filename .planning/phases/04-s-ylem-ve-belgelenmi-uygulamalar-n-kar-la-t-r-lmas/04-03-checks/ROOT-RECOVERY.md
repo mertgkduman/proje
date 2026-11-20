@@ -1,5 +1,17 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Sonraki güncelleme — 2026-11-20 04:28:47 UTC
+
+Bu bölüm aşağıdaki ilk kurtarma anlık görüntüsünden daha yenidir; canlı JSONL/çıkış dosyaları yine otoritedir.
+
+- İlk kurtarma koşusu `dd9...5cc85` fingerprint'inde 190 gerçek ID'yi tam batch olarak doğruladıktan sonra `test_practice_merge_persistence` grubunda exit 1 ile durdu. Bu gruptaki iki kısmi başarı kredi değildir. Eski 57 dosya / 26 batch kanıtı `fresh-dd9-persistence-failure/` altında korunuyor.
+- Hata teknik fixture'dadır: R2 gerekçesi R1'den aynen kopyalıydı ve paket normal doğrulayıcısının istediği bütün seçilmiş/etkilenmiş okuma hedeflerini sağlamıyordu. Yürütücü yalnız `tests/test_practice_merge_persistence.py` örneğini, gerçek snapshot'tan gereken hedef/pasaj/sürüm kümelerini türetecek ve olay R2 gerekçesini ayıracak şekilde düzeltiyor. Üretim denetimleri ve assertion'lar kaldırılmadı. Değişiklik henüz doğrulanmış veya commit edilmiş değildir; önceki 190 sonuç gelecekteki yeni fingerprint'e kredi olmaz.
+- Mevcut tek hedefli gerçek koşu: `/tmp/gsd-04-persistence-revision-v2.log` ve `.exit`; Python sarmalayıcı PID `3906750`, timeout PID `3906751`. Son gözlem 39m16s, süreçler canlı, yalnız test başlangıç satırı var; sonuç/exit dosyası yok. Sarmalayıcı gerçek çıkışı bekleyip kaydeder. Bu koşuyu tekrar başlatmayın.
+- Önceki hedefli v1'in kabuğu kesildi; süreç daha sonra unittest ERROR verdi, güvenilir dış çıkışı olmadığından yalnız tanıdır ve başarı kredisi yoktur. Yeni v2 gerçek gözeticiyle çalışıyor.
+- `tests/test_practice_pending_integration.py` içindeki önceki test-only aşamalama düzenlemesi de hâlâ commit edilmemiştir. Yeni kapıda gerçek R1 merge ve ona digest/provenance ile bağlı R1 replay **ilk iki batch** olarak ardışık koşulacak; sonra diğer ID'ler. Geçerli ilk merge sonucu kaydedilmeden replay çıktısı varsayılmaz.
+- Slurm `62173687` aynı kendi işimizdir ve tutulmuştur; başka iş gönderilmedi veya ek test yazıcısı başlatılmadı. Bütün kontroller, yeni tam regresyon, gerçek tracer ve Faz2/Faz3 audit'leri bitmeden 04-03 SUMMARY/sayaç ilerletilmez. Faz hâlâ 2/15'tir.
+- Yeni native yürütücü `/root/phase04_gate_recovery` çalışıyor. Ajan yine kaybolursa süreç/kanıt durumunu yeniden kontrol edin. Aşağıdaki ilk snapshot'taki PID'ler ve sıfır kredi bilgisi artık tarihsel gözlemdir; onları otomatik yeniden başlatma talimatı saymayın.
+
 Gözlem zamanı: 2026-11-20 01:42:46 UTC. Bu dosya bir kurtarma anlık görüntüsüdür; sonraki gerçek sonuçlar için `fresh-gate-events.jsonl` ve çıkış dosyaları otoritedir.
 
 ## Amaç ve yürütüm
