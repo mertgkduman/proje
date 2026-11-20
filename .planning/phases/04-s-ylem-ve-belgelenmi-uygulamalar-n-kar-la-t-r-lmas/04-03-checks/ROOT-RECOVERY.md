@@ -1,5 +1,20 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Slurm iş sırası — 2026-11-20 21:05:22 UTC
+
+- 62261875 çalışan seri regresyondur. 40/287 gerçek başarıdan devam etti. Konak değişiminde kesilen test yeni batch 09713561827049fba28e05516e350f6e altında tekrar başladı. Önbellekler isteğe bağlı çalıştırma girdileridir ve eski sonuçların kaydedilmiş fixture bağları korunur.
+- Önceden tutulan 62173687 işi aynı taksonomi testini kendi geçici DATA ağacında çalıştırır. Betiği doğrulandı. İş 62261875 sona erdikten sonra başlayacak şekilde `afterany` bağımlılığıyla serbest bırakıldı; alttaki eski held bilgisi tarihsel gözlemdir. Başarı ölçütü kendi gerçek test günlüğü, sıfır çıkış ve kaynak/yayın kimliğidir.
+- 62262262 (`gsd04-closeout`) yalnız 62173687 sıfır çıkışla bitince çalışır. `fresh_slurm_closeout.py` 287 benzersiz başarıyı gerçek batch çıkışları ve değişmez kaynak/yayın kimliğiyle doğrular. Seri iş dış test açıkken `coverage incomplete` ile çıkabilir; bu tek başına başarılı bir suite değildir. Kapanış betiği eksik veya yinelenen test sonucuyla denetimlere geçmez.
+- Regresyon tam ise sırayla sözdizimi kontrolü, gerçek tracer CLI, Faz 2 audit ve Faz 3 complete audit çalışır. Tracer üretiminin normal DB/JSON/HTML/manifest denetimine ek olarak iki görünümün tracer bağlantıları ve yerel kaynak dosyaları kontrol edilir. Çıkışlar ve günlükler `closeout-62262262-*`, sonuç `closeout-62262262.json`; başarılı preview kopyası `data/.staging/gsd-04-03-tracer-preview-62262262`. Bu işler plan veya faz sayaçlarını veya SUMMARY'yi kendiliğinden ilerletmez.
+- Kapanışın eksik kanıtı reddetme yolu canlı 40/287 ledger üzerinde doğrulandı. Test kimliği 083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4. Yeni başarılı sonuç bulunmadan 04-03 tamamlanmış sayılmaz.
+
+## Güncel kurtarma — 2026-11-20 21:00 UTC
+
+- Yeni makinede önceki gözetici, test ve `fd0afd4cd1ea4ded872bc86118b9dd2c` batch çıkışı yoktu; bu batch `batch_abandoned` olarak kaydedildi ve kredi verilmedi. 16 başarılı batch'in her birinin gerçek `OK` günlüğü, sıfır çıkış dosyası ve kaynak/yayın kimliği kontrol edildi: 40/287 ID. R1 merge fixture SHA `444aecf81f9c0f33033f45eb16a95adcb8ecd6085d8c4db7a3c233c5d1bed601`; eski accepted manifest ve replay fixture kimlikleri eski olaylarda korunur, yeniden üretilmiş gibi gösterilmez.
+- `fresh_gate.py` kurtarma uyarlaması geçmiş batch'lerin tam kimliğini doğrular; yeni testlerde mevcut kaynak/test/yayın kimliğiyle çalışır ve artık kayıp, yalnızca isteğe bağlı `/tmp` fixture dosyalarını zorunlu kılmaz. Testlerin desteklediği önbelleksiz yollar ve özgün assertion'lar kullanılır. Kanonik manifestin DB/JSON/HTML özetleri, DB baseline ve kilit yokluğu her batch öncesi/sonrasında kontrol edilir. Kaynak/test fingerprint'i değişmedi; keşif doğrulandı ve 10.800 saniyelik batch sınırı korunuyor.
+- Slurm **62261875** `gsd04-gate-resume`, common, 2 CPU/8 GiB, 2 gün üst sınırla **RUNNING**; `fresh_slurm_resume.py` gerçek supervisor çıkışını `fresh-slurm-62261875.exit` dosyasına kaydeder. Başlangıçta 40/287 kredi saptandı; yeni batch `09713561827049fba28e05516e350f6e`, `test_new_source_end_to_end`, 20:59:59 UTC'de gerçekten başladı. Job, batch ve olay durumunu kontrol etmeden tekrar başlatmayın. Gözetici çalışırken aynı dosyaları değiştirmeyin ve başka kanonik test yazıcısı açmayın.
+- Ayrı tutulmuş taksonomi işi **62173687** `JobHeldUser`; diğer seri testler bittikten ve gerçek Slurm betiği/kimliği yeniden incelendikten sonra ele alınacak. İşi şimdi serbest bırakmayın. Genel gate tek dış ID beklerken tamamlanmış sayılmaz; tracer, Faz 2/Faz 3 audit ve son kanonik özetler de bekler. 04-03 SUMMARY/sayaç henüz güncellenmedi. Test fixture değişiklikleri korunuyor; commit yapılmadı.
+
 ## Güncel gözlem — 2026-11-20 17:39:03 UTC
 
 Bu bölüm önceki gözlemlerden yenidir; canlı JSONL/çıkış dosyaları sonraki sonuçlar için otoritedir.
