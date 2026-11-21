@@ -11550,6 +11550,46 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" üye listeleri askı 26 ağustos 1 eylül 2026 kongre"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"disiplin kurulu\" \"karar\" ihraç 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"üyelik\" \"itiraz\" kongre 2026 liste ilçe"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"il disiplin\" \"üyelik\" 2026 itiraz"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"ön seçim\" \"itiraz\" 2026 il kongresi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Süleyman Girgin\" \"itiraz\" \"reddedildi\" \"ön seçim\" Fethiye 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Girgin\" \"Fethiye\" \"itiraz\" \"genel merkez\" 21 ekim yeni parti"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Muğla\" \"itiraz\" \"Girgin\" genel merkez ön seçim"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Süleyman Girgin\" \"ön seçim\" \"itiraz\" Fethiye 19 20 Ekim 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Süleyman Girgin\" \"Nail Kızıl\" \"Fethiye\" \"itiraz\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Girgin\" \"ön seçim\" \"itiraz\" Fethiye tutanaklar 2026"
     }
   ],
   "source_queue": [
@@ -13140,6 +13180,31 @@
       "url": "https://deniz.tv/yeni-parti-kurucular-kurulu-parti-meclisi-150-uye/",
       "state": "source_read_pending_chain",
       "note": "9 Kasım 11:10 tarihli haber Kurucular Kurulu kararını aktarıyor. Değiştirilmiş tüzük metninin kendisi değil; yayıncının başka haberler ile ilişkisi ve ilgili karar ayrıntıları izlenecek."
+    },
+    {
+      "url": "https://www.muglayenigun.com/suleyman-girginin-yeni-parti-mugla-il-baskanligi-on-secim-itirazi-reddedildi/",
+      "state": "read_capture_blocked",
+      "note": "Ümmü Gülsüm Dural 21 Ekim haberinde Girgin itirazının reddini ve Fethiye kayıtlarının incelendiği parti yanıtını aktarıyor; web metni okundu, doğrudan yakalama 403; karar yazısı görülmedi."
+    },
+    {
+      "url": "https://www.muglagazetesi.com.tr/mugla-haberleri/suleyman-girginin-secim-itirazina-ret-yaniti-222287h",
+      "state": "source_read_pending_chain",
+      "note": "İlayda Dikmen 21 Ekim: genel merkezin Girgin itirazına ret yanıtı aktarıldı; parti yazısı ve oy tutanakları görülmedi. Gayriresmî Girgin oyu 7.584; Evrensel 7.574 yazıyor, fark çözülmedi."
+    },
+    {
+      "url": "https://www.cumhuriyet.com.tr/turkiye/yeni-parti-nin-kongre-sureci-basliyor-secimler-icin-uyelik-listeleri-askiya-cikacak-taban-hareketiyle-ilk-kongre-2532367",
+      "state": "source_read_pending_chain",
+      "note": "Sarp Sağkal 26 Ağustos haberinde parti il başkanları itiraz sonunu 7 Eylül aktarıyor; 27 Ağustos Dokuz Eylül haberindeki 1 Eylül 18.00 ile farklı, kapsam/tarih değişikliği açıklanmadı."
+    },
+    {
+      "url": "https://demecgazetesi.com/gundem/yeni-parti-mugla-il-baskanligi-seciminde-girginin-itirazi-reddedildi",
+      "state": "source_read_pending_chain",
+      "note": "21 Ekim ret haberinde Fethiye listeleri/tutanaklarının incelendiği aktarılıyor; Genel Merkez yazısı ve itiraz dilekçesi görülmedi. Muğla Gazetesi ile bağımsız üretim derecesi araştırılacak."
+    },
+    {
+      "url": "https://www.marmarishaber.net/yeni-parti-muglada-nail-kizil-yeniden-il-baskani-secildi-20923h",
+      "state": "source_read_pending_chain",
+      "note": "18 Ekim Marmaris Haber Fethiye/Menteşe sonuçlarına itiraz ve başkası yerine oy kullanıldığı iddialarını bildiriyor; genel merkez yanıtı 21 Ekim Muğla Gazetesi haberinde aktarılıyor. İtiraz dilekçesi/karar/tutanak asılları görülmedi. Ön seçim 7.574 ve sonraki haberde 7.584 Girgin oyu ayrımı çözülemedi."
     }
   ],
   "foundation_for_party": {
@@ -13255,6 +13320,30 @@
       "sha256": "5155c3dce109ec92afc48b70870cdbacab0fa269b8a195129e8101d8c57666e4",
       "accessed_at": "2026-11-21T19:04:53.254902+00:00",
       "state": "javascript_shell_only"
+    },
+    {
+      "url": "https://www.cumhuriyet.com.tr/turkiye/yeni-parti-nin-kongre-sureci-basliyor-secimler-icin-uyelik-listeleri-askiya-cikacak-taban-hareketiyle-ilk-kongre-2532367",
+      "sha256": "767ebd75eddd63b1ca4af2b8ffb3d776f76a72523ba9fda9e34d9e209e5b912c",
+      "accessed_at": "2026-11-21T19:08:13.366197+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://www.muglagazetesi.com.tr/mugla-haberleri/suleyman-girginin-secim-itirazina-ret-yaniti-222287h",
+      "sha256": "f4cda8687670963c3dff4d850192c9fd50e109589d59dd7e219751fb3cde22b5",
+      "accessed_at": "2026-11-21T19:08:32.064407+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://demecgazetesi.com/gundem/yeni-parti-mugla-il-baskanligi-seciminde-girginin-itirazi-reddedildi",
+      "sha256": "a878cbd536cf140f6b7f6620415bb8fcc5d0cf26b42e8a437404e85c47480767",
+      "accessed_at": "2026-11-21T19:08:33.526675+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://www.marmarishaber.net/yeni-parti-muglada-nail-kizil-yeniden-il-baskani-secildi-20923h",
+      "sha256": "d7e6c67db7bc3f5e5c4f04a718e1c3b8d3897ddd2664a2256ed7cdc0725e2615",
+      "accessed_at": "2026-11-21T19:10:05.079649+00:00",
+      "state": "draft_owner_bound"
     }
   ],
   "legacy_action_queue": [
