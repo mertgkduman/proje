@@ -11606,6 +11606,34 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"asgari ücret\" \"kanun teklifi\" 2026 TBMM"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"Siyasi Etik\" \"YENİ PARTİ\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"Asgari Ücretin Artırılması\" \"YENİ PARTİ\""
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"İstanbul Sözleşmesi\" \"YENİ PARTİ\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"kayyım\" \"YENİ PARTİ\" 2026 belediye"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"2 / 3790\" asgari ücret 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"2 / 3791\" \"Gülhane\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"2 / 3792\" \"gazi\" 2026"
     }
   ],
   "source_queue": [
@@ -13277,6 +13305,26 @@
       "url": "https://www.24saatgazetesi.com/yeni-partinin-sundugu-ilk-dort-kanun-teklifi-belli-oldu",
       "state": "source_read_pending_chain",
       "note": "Nur Yıldız 5 Ağustos, grup başkanvekili Günaydının siyasi etik, asgari ücret, şehit ve gazi yakınları, askerî sağlık başlıklı dört ilk teklif açıklamasını aktarıyor. Her teklifin TBMM kaydı ve sonraki aşaması ayrı araştırılacak."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/5bb86db7-fd76-4c2e-ad4d-019fcd078d88",
+      "state": "source_read_pending_chain",
+      "note": "TBMM 2/3795 siyasi etik teklifinde başkanlığa geliş 4 Ağustos ve Özel ile üç grup başkanvekilinin imzaları görülüyor; yakalama tarihinde komisyon aşamasında. Program sözüyle ilgili; sonuç ve kesim tarihi ayrıca araştırılacak."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/a23ef9a0-a971-46ea-b750-019fc805f5a7",
+      "state": "source_read_pending_chain",
+      "note": "TBMM gelen kâğıtları 2/3790 asgari ücret, 2/3791 askerî sağlık, 2/3792 şehit ve gazi tekliflerinde Yeni Parti genel başkanı ve üç grup başkanvekilini, 3 Ağustos 2026 geliş tarihini kaydediyor."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Milletvekili/UyeGenelKurulKonusmalariDetay?eid=147817",
+      "state": "read_capture_blocked",
+      "note": "TBMM 5 Ağustos tutanağında Ali Mahir Başarır Yeni Parti grubu adına dört teklifi sayıyor; web metni okundu ancak özgün yakalama connection reset. Kaynak bağlantısı ve parti adına yetki ayrı kullanılacak."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/99085cfc-46b5-46b8-b34d-019fc7aca761",
+      "state": "source_read_pending_chain",
+      "note": "TBMM 2/3790 3 Ağustos geliş ve teklif özetinde 45.800 TL, Özel ile grup başkanvekillerinin imzalarını gösteriyor; 21 Ekim Oksijen benzer tutarlı yeni açıklama haberini ayrıca aktarıyor. Tekliflerin aynı veya farklı sürümler olup olmadığı doğrulanmadı; güncel komisyon aşamasının kesim tarihi için tarihi kanıtı gerekir."
     }
   ],
   "foundation_for_party": {
@@ -13422,6 +13470,24 @@
       "sha256": "41c44e624cc0150ad807987ef9c51b7a29e0613717cd2f46404cd1d614e6ec25",
       "accessed_at": "2026-11-21T19:21:11.906467+00:00",
       "state": "captured_unbound"
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/5bb86db7-fd76-4c2e-ad4d-019fcd078d88",
+      "sha256": "7ebc13704b17ff99f4559585ce756a17880ee58dd3b8a11e31bcf7b98b272e41",
+      "accessed_at": "2026-11-21T19:25:20.210400+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/a23ef9a0-a971-46ea-b750-019fc805f5a7",
+      "sha256": "49b7ab23335abc63a62806e6ff51e71c58b4248b6bc8a013867dfdaed0288f82",
+      "accessed_at": "2026-11-21T19:25:20.993088+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/99085cfc-46b5-46b8-b34d-019fc7aca761",
+      "sha256": "e14f477b9b839b4edc82752ec92d835a04375f21d42776984f2c7495382357b3",
+      "accessed_at": "2026-11-21T19:32:00.679824+00:00",
+      "state": "draft_owner_bound"
     }
   ],
   "legacy_action_queue": [

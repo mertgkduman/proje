@@ -7,7 +7,7 @@ for name in ('kayseri', 'gaziantep', 'mugla'):
     r = json.loads((p/(name+'-review-draft.json')).read_text())
     for x in r['practice_source_review']:
         additions = []
-        if x['subject_kind']=='practice_relation.explanation_finding_id' and x['subject_id']=='0404-kayseri-uyelik-relation':
+        if x['subject_kind'] in ('practice_relation','practice_relation.explanation_finding_id') and x['subject_id']=='0404-kayseri-uyelik-relation':
             additions = [('0404-kayseri-kongre-v1','0404-kayseri-kongre-p','Kayserim, 17 Ekim, Gözbaşı açıklaması ve Ayan yanıtı')]
         elif x['subject_kind']=='practice_relation.explanation_finding_id' and x['subject_id']=='0404-gaziantep-disiplin-relation':
             additions = [('0404-gaziantep-ihrac-v1','0404-gaziantep-ihrac-p','Ayıntab 24 Ağustos, il yönetimine atfedilen açıklama')]
@@ -22,5 +22,5 @@ for name in ('kayseri', 'gaziantep', 'mugla'):
                 values=json.loads(x[k]); values += [a[i] for a in additions if a[i] not in values]; x[k]=json.dumps(values,ensure_ascii=False)
             x['supported_claim'] += ' İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.'
             x['reason'] += ' İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı.'
-    (p/(name+'-review-draft-v3.json')).write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+    (p/(name+'-review-draft-v4.json')).write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
     print('COMBINED_REVIEW',name,len(r['practice_source_review']))
