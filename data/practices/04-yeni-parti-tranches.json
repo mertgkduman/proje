@@ -11416,6 +11416,18 @@
       "url": "https://www.batiekspres.com/edirne/yeni-parti-edirne-de-uye-listeleri-askida-bin-799-uye-var-203693",
       "section": "Haber gövdesi ve ilçe başkanının açıklaması",
       "note": "Uğur Akagündüz, 27 Ağustos: aynı ilçe başkanına atfedilen 1.799 ve 1 Eylül askı bitişi. Aynı açıklamaya dayanması bağımsız üye kaydı olduğu anlamına gelmez."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://www.referandom.com/onergeler/barinma-krizinin-nedenleri-ve-sonuclari",
+      "section": "Haber veya kaynak gövdesi",
+      "note": "Tarihi belirtilmeyen ikincil sayfa: 7 Ağustos 2026 grup önerisinin görüşülmesini reddedildi diye aktarıyor. Güncel sayfanın tarihsel sürümü bilinmiyor; temel araştırma önergesinin nihai sonucu ile grup önerisi oylaması farklıdır. Resmî tutanak takip edilecek."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://gazeteoksijen.com/turkiye/fon-kriziyle-ilgili-yeni-partiden-kanun-teklifi-zarar-sorumlularin-mal-varliklariyla-karsilansin-290188",
+      "section": "Haber veya kaynak gövdesi",
+      "note": "21 Eylül haberinde parti sözcüsü fon tasfiyeleri hakkındaki teklifin o hafta sunulacağını söylüyor. Sunulma veya yasalaşma kaydı değildir; TBMM esas numarası ve sonraki işlem araştırılacak."
     }
   ],
   "queries": [
@@ -11918,6 +11930,18 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"Edirne\" \"üyelik\" \"itiraz\" 27 ağustos 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"kanun teklifi\" \"2026\" grup \"kadın\""
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"TBMM\" \"kanun teklifi\" eylül 2026 seçim"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" grup önerisi \"kira\" 2026 7 ağustos"
     }
   ],
   "source_queue": [
@@ -13789,6 +13813,11 @@
       "url": "https://www.gazianteppusula.com/haber/29017471/yeni-parti-gaziantepte-disiplin-depremi",
       "state": "read_search_index_capture_blocked",
       "note": "20 Ekim 13:28 metni arama indeksinde okundu; Ermayası açıklamasına dayanarak sevk ve kurul kararı beklentisi bildiriliyor. Aynı açıklama bağımsız nihai karar kanıtı değildir; doğrudan capture önceki girişimde 403."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Milletvekili/UyeGenelKurulKonusmalariDetay?eid=148101",
+      "state": "read_capture_failed",
+      "note": "TBMM 7 Ağustos 122. birleşiminde DEM Parti grubu adına konuşma ve Yeni Parti grup önerisi konusu web üzerinden okundu; doğrudan capture SSL record layer failure. Tam tutanak sayfasında içerik web aracında yüklenmedi; karar aslı aranacak."
     }
   ],
   "foundation_for_party": {
@@ -14065,6 +14094,18 @@
       "url": "https://www.batiekspres.com/edirne/yeni-parti-edirne-de-uye-listeleri-askida-bin-799-uye-var-203693",
       "sha256": "0078f775cf4fc3d50955ce0140090ff5e43ac5ab645db1c28d2c85173dcb9e1e",
       "accessed_at": "2026-11-21T20:40:26.087374+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://www.referandom.com/onergeler/barinma-krizinin-nedenleri-ve-sonuclari",
+      "sha256": "db13f4aded14574e053d3c46aa5068bbc5cb5d7c1b01d7917182bff3ed2d5c98",
+      "accessed_at": "2026-11-21T20:42:48.886541+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://gazeteoksijen.com/turkiye/fon-kriziyle-ilgili-yeni-partiden-kanun-teklifi-zarar-sorumlularin-mal-varliklariyla-karsilansin-290188",
+      "sha256": "b40111718d0ddebf351225fbbc4cb1803f30ce0ce72c8868c4ccc38e6340c021",
+      "accessed_at": "2026-11-21T20:42:51.156503+00:00",
       "state": "source_records_draft"
     }
   ],
