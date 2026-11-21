@@ -1,0 +1,52 @@
+"""Prepare owner-scoped source records; no release or live package is changed."""
+import hashlib
+import json
+from pathlib import Path
+import shutil
+import sys
+
+sys.path.insert(0, str(Path.cwd() / 'src'))
+from arsiv import html_source_text
+from arsiv_gorunum import build_view, validate_view
+
+root = Path('data/practices/sources/yeni-parti')
+draft = Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/source-records-draft-v4.json')
+sources = [
+    dict(id='0404-cesme-kongre', digest='b819866878cf71373b999f666d91d8f6c4534789c98fdbb79974ee9490c517c7', url='https://dokuzeylul.com/yeni-partide-heyecan-dorukta', date='2026-10-04', accessed='2026-11-21T18:01:44.022368+00:00', publisher='Dokuz Eylül', author='Sinan Genç', title='YENİ Parti’de 13 ilçede başkanlar belli oldu', exact="Çeşme'de gerçekleştirilen oylamanın ardından Seyit Dolunay Onur başkanlığındaki yeni yönetim ve il kongresi delegeleri kesinleşti.", section='ÇEŞME ve ilçe sonuçları'),
+    dict(id='0404-iller-on-secim-takvim', digest='790772fe2da5c48cc81c64ef12b3f9f28ab135691ed7ac44fded8b8bf7e2eee5', url='https://www.haberler.com/politika/yeni-parti-de-69-ilde-yapilacak-on-secimde-750-20335856-haberi/', date='2026-10-16', accessed='2026-11-21T18:01:59.054795+00:00', publisher='Haberler.com / Anadolu Ajansı', author=None, title="Yeni Parti'de 69 ilde yapılacak ön seçimde 750 bini aşkın üye oy kullanacak", exact="Bu seçimlerin ardından, 24-27 Ekim tarihlerinde 81 ilde parti delegelerince resmi yönetimler belirlenecek.", section='AA kaynaklı ön seçim takvimi'),
+    dict(id='0404-samsun-iha', digest='f9f4971fb8f2c9976bf86a84a235d29b2aa58d02705c335d9658b779f0359b30', url='https://yerel-haberler.haberturk.com/samsun-haberleri/yeni-parti-samsun-il-baskanliginda-on-secimi-mehmet-ozdag-kazandi-119496567', date='2026-10-18', accessed='2026-11-21T18:10:38.627340+00:00', publisher='Habertürk / İhlas Haber Ajansı', author=None, title="Yeni Parti Samsun İl Başkanlığı'nda ön seçimi Mehmet Özdağ kazandı", exact="Öte yandan Turgay Özçelik'in Atakum'daki seçimlere itiraz ettiği öğrenildi.", section='Ön seçim sonuçları ve itiraz'),
+    dict(id='0404-samsun-olay', digest='fda15b692e8e8e7d871e5854de180e81d7f43fb427d771fda0c15305744d524a', url='https://www.samsunolay.com.tr/yeni-partide-on-secim-yarisini-ozdag-kazandi/', date='2026-10-19', accessed='2026-11-21T18:10:38.638850+00:00', publisher='Samsun Olay', author=None, title="Yeni Parti'de ön seçim yarışını Özdağ kazandı", exact='Mehmet Özdağ 3 bin 999 oy alırken, rakibi Turgay Özçelik 3 bin 796 oyda kaldı.', section='Ön seçim sonuçları; sayfa gövdesinde ds-assistant-message-main-content işaretlemesi'),
+    dict(id='0404-samsun-uzlasi', digest='5d4c209d4d4e51b8d8ee01066c64f9841725162b47e02b65407ffc9024078783', url='https://www.cumhuriyet.com.tr/turkiye/samsun-il-kongresi-oncesi-uzlasi-2549942', date='2026-10-25', accessed='2026-11-21T18:29:57.215572+00:00', publisher='Cumhuriyet', author='Cemil Ciğerim', title='Samsun il kongresi öncesi uzlaşı', exact='Turgay Özçelik önseçim sonucuna itiraz etti.', section='Ön seçim itirazı ve kongre öncesi uzlaşı'),
+    dict(id='0404-samsun-kongre', digest='f9d91d767e7baaa3b3a0ae9851d62ab8569b919ee3155f2cd0173123ff05c904', url='https://www.samsunobjektif.com/yeni-parti-samsun-il-kongresi-sona-erdi-mehmet-ozdag-yeniden-baskan', date='2026-10-25', accessed='2026-11-21T18:29:58.623517+00:00', publisher='Samsun Objektif', author=None, title='Yeni Parti Samsun İl Kongresi sona erdi: Mehmet Özdağ yeniden başkan', exact="Tek aday olarak seçime giren Mehmet Özdağ, geçerli 278 oyun 276'sını alarak Yeni Parti Samsun İl Başkanı seçildi.", section='Kongre oylaması ve başkan sonucu'),
+    dict(id='0404-cesme-mazbata', digest='47c074ab31bca8fed8649d8dffdd15b7f86b2f2817370073b495066e08284182', url='https://www.cesmeninsesi.com.tr/haber/yeni-parti-cesmede-dolunay-onur-ve-yonetimi-mazbatalarini-alarak-goreve-basladi-1791449917', date='2026-10-08', accessed='2026-11-21T18:29:57.863432+00:00', publisher="Çeşme'nin Sesi", author=None, title="YENİ Parti Çeşme'de Dolunay Onur ve yönetimi mazbatalarını alarak göreve başladı", exact='ilçe başkanlığına seçilen Av. Seyit Dolunay Onur ve yönetim kurulu üyeleri, mazbatalarını alarak resmen göreve başladı.', section='8 Ekim mazbata ve göreve başlama haberi'),
+    dict(id='0404-samsun-kongre-beyan', digest='f73b35df5614c740eb3baf051003d85bcd2b18ae787179f499fc2283cadd830f', url='https://www.samsungazetesi.com/yeni-parti-samsun-kongresinde-birlik-mesaji-birlikte-yuruyecegiz', date='2026-10-25', accessed='2026-11-21T18:29:57.324548+00:00', publisher='Samsun Gazetesi', author='Yunus Emre Purç', title='Yeni Parti Samsun kongresinde birlik mesajı', exact='Yarış sürecinde farklı görüşlerin dile getirildiğini ifade eden Özdağ, sürecin parti kuralları çerçevesinde çözüme kavuşturulduğunu söyledi.', section='Özdağ kongre konuşması'),
+    dict(id='0404-kayseri-uyelik-durust', digest='478d663728a1e62a991dd9fa897da32f0dadb46e19aeb7c8df8f8f7b6ed27649', url='https://www.durusthaber.com/yeni-parti-kayseri-de-230-uyelik-kayit-tartismasi/277680/', final='https://www.durusthaber.com/yeni-parti-kayseri-de-230-uyelik-kayit-tartismasi/277680', date='2026-08-27', accessed='2026-11-21T18:38:27.487983+00:00', publisher='Dürüst Haber', author='İbrahim Esat Güler', title="YENİ Parti Kayseri'de 230 Üyelik Kayıt Tartışması", exact='230 kişinin üyelik kayıtlarının sisteme işlenmediğini öne sürdü.', section='Ayanın kayıtlara ilişkin iddiası'),
+    dict(id='0404-kayseri-uyelik-haber', digest='ace816bf90e60822df2bbe4c09c3f6a2860c60216deda7b377fe6492e1d17474', url='https://www.kayserihaber.com/yeni-parti-kayseri-uye-krizi-230-basvuru-sisteme-islenmedi', date='2026-08-28', accessed='2026-11-21T18:38:26.378829+00:00', publisher='Kayseri Haber', author='Döndü Nur Özçelik', title='Yeni Parti Kayseri’de üye krizi: 230 başvuru sisteme işlenmedi iddiası', exact='Başvuru formlarının daha sonra tutanak ve ekleriyle birlikte Yeni Parti Kayseri İl Başkanlığına teslim edildiğini belirten Ayan, buna rağmen söz konusu üyeliklerin sisteme girilmediğini öne sürdü.', section='Başvuruların teslimi ve kayıt iddiası'),
+    dict(id='0404-kayseri-kongre', digest='741c60d3691f1e4e06e3d107173211a143688ae3af26be5f562b11037243858e', url='https://www.kayserim.net/haber/30000835/kayseri-yeni-parti-il-kongresi-tansiyon-yukseld', date='2026-10-17', accessed='2026-11-21T18:38:26.737469+00:00', publisher='Kayserim.net', author='Rabiya Aksoy', title="YENİ Parti Kayseri İl Kongresi'nde tansiyon yükseldi", exact="Gözbaşı, tüzüğe göre ilgili üyelerin il başkanlığı seçiminde oy kullanamayacağını ifade etti. Kocasinan İlçe Başkanı Emre Ayan ise söz isteyerek Gözbaşı'yı yalanladı.", section='İl başkanı açıklaması ve Ayanın karşı çıkışı', charset=None),
+    dict(id='0404-gaziantep-sevk', digest='5d360186c033c29b82f6ecaa783c93e08f34db4aef698de4c9fce035e9f26b39', url='https://www.ayintabgazetesi.com/haber/yeni-parti-gaziantep-te-gorev-dagilimi-yapildi-29813.html', date='2026-08-24', accessed='2026-11-21T18:43:51.175112+00:00', publisher='Ayıntab Gazetesi', author=None, title='YENİ Parti Gaziantep’te Görev Dağılımı Yapıldı', exact='Yapılan değerlendirme sonucunda Keleş’in, kesin ihraç talebiyle tedbirli olarak YENİ Parti Gaziantep İl Disiplin Kurulu’na sevk edilmesine karar verildi.', section='İl yönetimi toplantısı ve disipline sevk haberi'),
+    dict(id='0404-gaziantep-ihrac', digest='34e9d2499751459f2571c429389e040e8449a5807dc1131796437aabbcf584fb', url='https://www.ayintabgazetesi.com/haber/seydi-ahmet-keles-partiden-ihrac-edildi-29814.html', date='2026-08-24', accessed='2026-11-21T18:43:50.985680+00:00', publisher='Ayıntab Gazetesi', author='Ökkeş Sabah', title='Seydi Ahmet Keleş partiden ihraç edildi', exact='Yapılan değerlendirmeler sonucunda, Seydi Ahmet Keleş’in YENİ Parti’den kesin ihracına İl Yönetim Kurulu tarafından karar verilmiştir.', section='İl yönetimine atfedilen ihraç açıklaması'),
+]
+entries = []
+for s in sources:
+    source = root / s['digest']
+    raw = (source / 'original.html.bin').read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == s['digest']
+    assert s['exact'] in html_source_text(raw), s['id']
+    target = root / 'objects' / s['digest']
+    target.mkdir(parents=True, exist_ok=True)
+    for name in ('original.html.bin', 'readable.html'):
+        original, copy = source / name, target / name
+        if copy.exists():
+            assert copy.read_bytes() == original.read_bytes()
+        else:
+            shutil.copyfile(original, copy)
+    final = s.get('final', s['url'])
+    view = build_view(raw, final, root, fetch_assets=False, http_charset=s.get('charset', 'utf-8'))
+    view['version_id'] = s['id'] + '-v1'
+    validate_view(root, view)
+    version = dict(id=s['id']+'-v1', document_id=s['id'], original_url=s['url'], final_url=final, document_date=s['date'], version_label='Yayımlanan haber; yakalanan HTML', accessed_at=s['accessed'], verified_at=s['accessed'], mime='text/html', sha256=s['digest'], original_path='objects/'+s['digest']+'/original.html.bin', readable_path='objects/'+s['digest']+'/readable.html', date_precision='day', date_unknown_reason=None)
+    passage = dict(id=s['id']+'-p', version_id=version['id'], exact=s['exact'], prefix=None, suffix=None, article=None, section=s['section'], pdf_page_index=None, printed_page=None)
+    attribution = dict(version_id=version['id'], kind='journalism', publisher=s['publisher'], author=s['author'], social_handle=None, published_at=s['date'], date_precision='day', public_url=s['url'], basis='Kaynak sayfasındaki yayıncı, tarih ve varsa yazar/ajans künyesi incelendi.')
+    entries.extend([dict(kind='document', values=dict(id=s['id'], party_id='yeni-parti', title=s['title'], source_kind='journalism')), dict(kind='document_version', values=version), dict(kind='archive_view', values=view), dict(kind='passage', values=passage), dict(kind='source_attribution', values=attribution)])
+draft.write_text(json.dumps(dict(status='draft_unvalidated', source_root=str(root), entries=entries), ensure_ascii=False, indent=2)+'\n')
+print('PREPARED', len(sources), len(entries), draft)
