@@ -1,0 +1,88 @@
+{
+  "phase": "04",
+  "wave": 3,
+  "status": "complete",
+  "completed_plans": [
+    "04-03"
+  ],
+  "phase_completed_plans": 3,
+  "total_phase_plans": 15,
+  "recorded_at": "2026-11-21T17:54:16.927492+00:00",
+  "summary_and_tracking_head": "f979d6f70fbaca6c47aa2667385881f3ade42d20",
+  "release_id": "f67ca0a35e634035bf3aa83a46571f50",
+  "canonical_manifest_sha256": "fb954f92e57ffe768c3cc63c065c8b7dc55a788af9f91dd5c56a8ff02172eb6b",
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "full_suite": {
+    "status": "passed",
+    "test_command": "python3 tests/run.py",
+    "execution": "All discovered unittest IDs executed in verified serial batches plus one isolated Slurm batch",
+    "counts": {
+      "unique_passed": 287,
+      "unique_discovered": 287,
+      "raw_discovery_count": 295,
+      "credited_batches": 64
+    },
+    "batch_timeout_seconds": 10800,
+    "source_test_fingerprint": "083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4",
+    "serial_slurm": {
+      "id": 62261875,
+      "passed_tests": 286,
+      "supervisor_exit": 1,
+      "reason": "Only the separately queued taxonomy ID was still missing when the supervisor exited"
+    },
+    "taxonomy_slurm": {
+      "id": 62173687,
+      "passed_tests": 1,
+      "exit": 0,
+      "duration_seconds": 10601.023
+    },
+    "contract": {
+      "path": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-03-checks/fresh-gate-contract.json",
+      "sha256": "5d83eac1b0dfe9a641beded10c2e106babcdd35aab69ebe771b172fe31a19ab9"
+    },
+    "ledger": {
+      "path": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-03-checks/fresh-gate-events.jsonl",
+      "sha256": "e79eb23c244384439463f4c0e27de61c0436acdf19fc20ba8e24e56199fa664f"
+    },
+    "proof_commit": "627d475"
+  },
+  "closeout_audits": {
+    "job": 62262262,
+    "exit": 0,
+    "checks": [
+      "build",
+      "tracer",
+      "phase2",
+      "phase3-complete"
+    ],
+    "path": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-03-checks/closeout-62262262.json",
+    "sha256": "7cace87285b82ac652ad71d305266b0d18adf670c24cf74a8edc4a927d5cd415"
+  },
+  "hooks": {
+    "verify.schema-drift": {
+      "block": false,
+      "drift_detected": false
+    },
+    "verify.codebase-drift": {
+      "block": false,
+      "skipped": true,
+      "reason": "no-structure-md"
+    },
+    "ui.safety-gate": {
+      "block": false,
+      "frontend": true,
+      "hasUiFiles": false,
+      "hasUiSpec": false
+    }
+  },
+  "spot_checks": {
+    "first_two_created_files_present": true,
+    "plan_commits_present": true,
+    "self_check_passed": true,
+    "writer_lock_absent": true
+  },
+  "next_wave_key_links": {
+    "present": "data/practices/04-inventory.json",
+    "sha256": "58e75b83e3a3634e33ef8dc519302c709ea923dac6074b276b487991c83cb5d7"
+  }
+}

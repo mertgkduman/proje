@@ -14,3 +14,5 @@ Gate scope follows execute-phase and its `steps/post-merge-gate.md`: build and f
 - Aggregate completion only when every test ID for the same code/current has a passing outcome. Preserve all failed/interrupted attempts and execution-method differences.
 
 The checked runner and Wave 1 identity/result contracts are under `04-01-checks/`. Use separate per-wave paths and fresh contracts for later code changes.
+
+Wave 3 verified 287/287 discovered unique IDs on one source/test fingerprint and the unchanged canonical release. The stable Wave 3 run closes the open Wave 2 regression gap. No full-suite run took place during Wave 2 itself. See `04-WAVE-3-GATE.json` for the Slurm jobs, durable evidence, and hook outcomes.
