@@ -837,11 +837,11 @@
       "subject_id": "0404-genelbaskan-onsecim",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-21T20:05:37+00:00",
-      "source_version_ids": "[\"0404-genelbaskan-onsecim-v1\"]",
-      "passage_ids": "[\"0404-genelbaskan-onsecim-p\"]",
-      "inspected_sections": "[\"Gazete Oksijen 8 Kasım, genel başkan ön seçimi açıklaması\"]",
-      "supported_claim": "Parti açıklamasının 8 Kasım ulusal ön seçimle ilgili olduğu görülüyor.",
-      "limitations": "Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.",
+      "source_version_ids": "[\"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\"]",
+      "passage_ids": "[\"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\"]",
+      "inspected_sections": "[\"Gazete Oksijen ulusal ön seçim açıklaması\", \"Hudut Edirne merkez sandıkları\", \"Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları\"]",
+      "supported_claim": "Ulusal ön seçim açıklaması ve Edirne ile Eskişehirdeki yerel sandık haberleri aynı genel başkan ön seçimine ilişkindir.",
+      "limitations": "Yerel sandıklar ulusal olayla örtüşür; sayılar toplanmaz ve sonraki kurultay sonucu çıkarılmaz.",
       "result": "reviewed",
       "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
     },
@@ -850,11 +850,11 @@
       "subject_id": "0404-genelbaskan-onsecim-iliski-id",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-21T20:05:37+00:00",
-      "source_version_ids": "[\"0105-speech-v1\", \"0404-genelbaskan-onsecim-v1\"]",
-      "passage_ids": "[\"0105-speech-p\", \"0404-genelbaskan-onsecim-p\"]",
-      "inspected_sections": "[\"Euronews 4 Ağustos, başkanların üyelerce seçimi beyanı\", \"Gazete Oksijen 8 Kasım, genel başkan ön seçimi açıklaması\"]",
-      "supported_claim": "Beyan ile genel başkan ön seçimi haberi aynı seçim yöntemiyle ilgilidir.",
-      "limitations": "Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi\", \"Gazete Oksijen ulusal ön seçim açıklaması\", \"Hudut Edirne merkez sandıkları\", \"Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları\"]",
+      "supported_claim": "Beyan ve ulusal ön seçim ile Edirne ve Eskişehir yerel sandık haberleri aynı seçim yöntemine ilişkindir.",
+      "limitations": "Yerel sandıklar ulusal ön seçimle örtüşür; kurultay ve toplam sayı ayrı ele alınır.",
       "result": "reviewed",
       "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
     },
@@ -1065,6 +1065,357 @@
       "limitations": "Sandık tutanakları görülmedi; kongre ve farklı kaynaklardaki ad yazımı ayrı izleniyor.",
       "result": "reviewed",
       "reason": "Beyan ve yerel ön seçim haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-edirne-genel-onsecim-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:03:21+00:00",
+      "source_version_ids": "[\"0404-edirne-genel-onsecim-v1\"]",
+      "passage_ids": "[\"0404-edirne-genel-onsecim-p\"]",
+      "inspected_sections": "[\"Hudut Edirne merkez sandıkları\"]",
+      "supported_claim": "8 Kasım genel başkan ön seçiminin yerel sandığı haberleştirildi.",
+      "limitations": "Yerel sandık ulusal ön seçimle örtüşür; kurultay ve ulusal toplam olarak yeniden sayılmaz.",
+      "result": "reviewed",
+      "reason": "Yerel haber ve ulusal olay tarihi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-eskisehir-genel-baslama-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:03:21+00:00",
+      "source_version_ids": "[\"0404-eskisehir-genel-onsecim-v1\"]",
+      "passage_ids": "[\"0404-eskisehir-genel-baslama-p\"]",
+      "inspected_sections": "[\"Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları\"]",
+      "supported_claim": "8 Kasım genel başkan ön seçiminin yerel sandığı haberleştirildi.",
+      "limitations": "Yerel sandık ulusal ön seçimle örtüşür; kurultay ve ulusal toplam olarak yeniden sayılmaz.",
+      "result": "reviewed",
+      "reason": "Yerel haber ve ulusal olay tarihi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-bursa-onsecim-event|0404-bursa-onsecim-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0404-bursa-onsecim-v1\"]",
+      "passage_ids": "[\"0404-bursa-onsecim-p\"]",
+      "inspected_sections": "[\"Bursa 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Bursa ön seçim haberi.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Bursa haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-bursa-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0404-bursa-onsecim-v1\"]",
+      "passage_ids": "[\"0404-bursa-onsecim-p\"]",
+      "inspected_sections": "[\"Bursa 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Bursa il başkanlığı ön seçimi aktarıldı.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Bursa haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-bursa-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-bursa-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-bursa-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"Bursa 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Bursa ön seçimi beyanın ilgili konusunu izliyor.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Bursa haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-bursa-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\"]",
+      "supported_claim": "Bursa için karşılaştırılan seçim yöntemi beyanı.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Bursa haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-bursa-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-bursa-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-bursa-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"Bursa 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Bursa yerel haber ve beyan karşılaştırması.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Bursa haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sakarya-onsecim-event|0404-sakarya-onsecim-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0404-sakarya-onsecim-v1\"]",
+      "passage_ids": "[\"0404-sakarya-onsecim-p\"]",
+      "inspected_sections": "[\"Sakarya 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Sakarya ön seçim haberi.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Sakarya haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-sakarya-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0404-sakarya-onsecim-v1\"]",
+      "passage_ids": "[\"0404-sakarya-onsecim-p\"]",
+      "inspected_sections": "[\"Sakarya 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Sakarya il başkanlığı ön seçimi aktarıldı.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Sakarya haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-sakarya-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-sakarya-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-sakarya-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"Sakarya 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Sakarya ön seçimi beyanın ilgili konusunu izliyor.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Sakarya haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-sakarya-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\"]",
+      "supported_claim": "Sakarya için karşılaştırılan seçim yöntemi beyanı.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Sakarya haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-sakarya-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:07:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-sakarya-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-sakarya-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"Sakarya 18 Ekim yerel ön seçim haberi\"]",
+      "supported_claim": "Sakarya yerel haber ve beyan karşılaştırması.",
+      "limitations": "Sandık tutanağı görülmedi; il kongresi ve sayısal ayrıntılar ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Sakarya haberi ile beyan karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-izmir-onsecim-event|0404-izmir-onsecim-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0404-izmir-onsecim-v1\"]",
+      "passage_ids": "[\"0404-izmir-onsecim-p\"]",
+      "inspected_sections": "[\"Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu\"]",
+      "supported_claim": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu kaynakta aktarılıyor.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-izmir-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0404-izmir-onsecim-v1\"]",
+      "passage_ids": "[\"0404-izmir-onsecim-p\"]",
+      "inspected_sections": "[\"Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu\"]",
+      "supported_claim": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu haberde yer alıyor.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-izmir-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-izmir-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-izmir-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\", \"Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu\"]",
+      "supported_claim": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu beyanla ilgili süreç aşamasıdır.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-izmir-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\"]",
+      "supported_claim": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu için hedef beyan başkan belirleme yöntemidir.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-izmir-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-izmir-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-izmir-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\", \"Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu\"]",
+      "supported_claim": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu ve beyan karşılaştırıldı.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-izmir-kongre-event|0404-izmir-kongre-tire-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0404-izmir-kongre-tire-v1\"]",
+      "passage_ids": "[\"0404-izmir-kongre-tire-p\"]",
+      "inspected_sections": "[\"Haber Tire 25 Ekim İzmir il kongresi\"]",
+      "supported_claim": "Haber Tire 25 Ekim İzmir il kongresi kaynakta aktarılıyor.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Haber Tire 25 Ekim İzmir il kongresi ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-izmir-kongre-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0404-izmir-kongre-tire-v1\"]",
+      "passage_ids": "[\"0404-izmir-kongre-tire-p\"]",
+      "inspected_sections": "[\"Haber Tire 25 Ekim İzmir il kongresi\"]",
+      "supported_claim": "Haber Tire 25 Ekim İzmir il kongresi haberde yer alıyor.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Haber Tire 25 Ekim İzmir il kongresi ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-izmir-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-izmir-kongre-tire-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-izmir-kongre-tire-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\", \"Haber Tire 25 Ekim İzmir il kongresi\"]",
+      "supported_claim": "Haber Tire 25 Ekim İzmir il kongresi beyanla ilgili süreç aşamasıdır.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Haber Tire 25 Ekim İzmir il kongresi ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-izmir-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\"]",
+      "supported_claim": "Haber Tire 25 Ekim İzmir il kongresi için hedef beyan başkan belirleme yöntemidir.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Haber Tire 25 Ekim İzmir il kongresi ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-izmir-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:15:33+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-izmir-kongre-tire-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-izmir-kongre-tire-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\", \"Haber Tire 25 Ekim İzmir il kongresi\"]",
+      "supported_claim": "Haber Tire 25 Ekim İzmir il kongresi ve beyan karşılaştırıldı.",
+      "limitations": "Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Haber Tire 25 Ekim İzmir il kongresi ve beyan kaynakları karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-diyarbakir-onsecim-event|0404-diyarbakir-onsecim-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:19:30+00:00",
+      "source_version_ids": "[\"0404-diyarbakir-onsecim-v1\"]",
+      "passage_ids": "[\"0404-diyarbakir-onsecim-p\"]",
+      "inspected_sections": "[\"Toplumsal / ANKA 18 Ekim Diyarbakır ön seçimi\"]",
+      "supported_claim": "ANKA Diyarbakır ön seçiminin tamamlandığını bildiriyor.",
+      "limitations": "Sandık tutanağı görülmedi; ön seçim ile sonraki kongre ayrı işlemlerdir.",
+      "result": "reviewed",
+      "reason": "Diyarbakır ANKA haberi ile 4 Ağustos beyanı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-diyarbakir-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:19:30+00:00",
+      "source_version_ids": "[\"0404-diyarbakir-onsecim-v1\"]",
+      "passage_ids": "[\"0404-diyarbakir-onsecim-p\"]",
+      "inspected_sections": "[\"Toplumsal / ANKA 18 Ekim Diyarbakır ön seçimi\"]",
+      "supported_claim": "18 Ekim Diyarbakır ön seçimi haberde aktarılıyor.",
+      "limitations": "Sandık tutanağı görülmedi; ön seçim ile sonraki kongre ayrı işlemlerdir.",
+      "result": "reviewed",
+      "reason": "Diyarbakır ANKA haberi ile 4 Ağustos beyanı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-diyarbakir-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:19:30+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-diyarbakir-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-diyarbakir-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\", \"Toplumsal / ANKA 18 Ekim Diyarbakır ön seçimi\"]",
+      "supported_claim": "Diyarbakır ön seçimi beyanın ilgili konusunu izliyor.",
+      "limitations": "Sandık tutanağı görülmedi; ön seçim ile sonraki kongre ayrı işlemlerdir.",
+      "result": "reviewed",
+      "reason": "Diyarbakır ANKA haberi ile 4 Ağustos beyanı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-diyarbakir-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:19:30+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\"]",
+      "supported_claim": "İl başkanlarını üyelerin belirlemesi beyanı hedefleniyor.",
+      "limitations": "Sandık tutanağı görülmedi; ön seçim ile sonraki kongre ayrı işlemlerdir.",
+      "result": "reviewed",
+      "reason": "Diyarbakır ANKA haberi ile 4 Ağustos beyanı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-diyarbakir-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:19:30+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-diyarbakir-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-diyarbakir-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi beyanı\", \"Toplumsal / ANKA 18 Ekim Diyarbakır ön seçimi\"]",
+      "supported_claim": "Diyarbakır haberi ve beyan karşılaştırıldı.",
+      "limitations": "Sandık tutanağı görülmedi; ön seçim ile sonraki kongre ayrı işlemlerdir.",
+      "result": "reviewed",
+      "reason": "Diyarbakır ANKA haberi ile 4 Ağustos beyanı karşılaştırıldı."
     }
   ],
   "source_review_refs": [
@@ -1395,6 +1746,114 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0404-usak-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-edirne-genel-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-eskisehir-genel-baslama-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-bursa-onsecim-event|0404-bursa-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-bursa-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-bursa-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-bursa-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-bursa-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sakarya-onsecim-event|0404-sakarya-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-sakarya-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-sakarya-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-sakarya-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-sakarya-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-izmir-onsecim-event|0404-izmir-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-izmir-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-izmir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-izmir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-izmir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-izmir-kongre-event|0404-izmir-kongre-tire-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-izmir-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-izmir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-izmir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-izmir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-diyarbakir-onsecim-event|0404-diyarbakir-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-diyarbakir-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-diyarbakir-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-diyarbakir-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-diyarbakir-iliski-id"
     }
   ]
 }
