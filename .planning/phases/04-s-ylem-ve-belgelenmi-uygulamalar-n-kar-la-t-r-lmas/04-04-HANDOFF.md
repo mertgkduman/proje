@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 21:56 UTC — daha güncel durum
+
+Housing preview PID 754968/session 97130, housing source-check v2 PID 764737/session 4966; Uşak source-check v2 PID 765080/session 86472, Uşak preview PID 781695/session 25448; Diyarbakır source-check PID 793223/session 86934 son sorguda hâlâ çalışıyor. Gerçek çıkışları bekleyin; eşzamanlı aynı komutları başlatmayın.
+
+Engelli öğrencilere erişilebilir eğitim materyali hakkında 17 Eylül TBMM 2/3853 bireysel teklif kaynağı `38955cf`; programın yardımcı teknoloji hükmü, teklif, ilk imza ve geliş tarihi kaynakları `c2bfd83` taslağında ayrı bağlandı. Paket SHA `335c2fd75af62e2b13206643c5e3d4682021bddc7d57523f45f57b4f07696e8d`, review SHA `af98fe7a302407f2481f9f641cf0bc01bf8ee0ba512cef98a51b7f387478f079`, doğrudan bellekte 153 inceleme hedefi doğrulandı; gerçek CLI/preview yapılmadı. Bireysel teklif yasalaşma, hizmet sunumu veya parti grubu kararı değildir. 125 kurucu bölümün gerçek okumaları envanter kimlikleriyle 230 ilgili hücreye bağlandı (`54e020a`); bu bir olay araması veya kapanış değildir, 610 hücre halen pending.
+
 ## 2026-11-21 21:51 UTC — daha güncel durum
 
 Housing preview PID 754968/session 97130, housing source-check v2 PID 764737/session 4966; Uşak source-check v2 PID 765080/session 86472, Uşak preview PID 781695/session 25448; Diyarbakır source-check PID 793223/session 86934 hâlâ aktif. Gerçek çıkışları bekleyin ve aynı komutları tekrar başlatmayın. Diyarbakır staging ve ulusal üç kontrol daha önce geçti; kaynak kuyruğu açık.
