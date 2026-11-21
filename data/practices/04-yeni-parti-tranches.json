@@ -13388,7 +13388,7 @@
     {
       "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/5d13749f-7351-4fe3-841d-01a08b317303",
       "state": "source_read_pending_chain",
-      "note": "TBMM arama metninde 2/3827 10 Eylül geliş, günlük ücretsiz öğün önerisi ve ilk imza Mahmut Tanal; ayrı ikincil komisyon arama sonucu Suat Özçağdaş adını taşıyor. Teklif metni, imza ve iddia edilen ret ile komisyon aşamasının farklı işlem/sürüm olup olmadığı ayrılacak. TBMM sayfası web aracıyla okundu; 21 Kasım doğrudan özgün bayt yakalama connection reset verdi, arşiv kaydı henüz yapılmadı."
+      "note": "TBMM arama metninde 2/3827 10 Eylül geliş, günlük ücretsiz öğün önerisi ve ilk imza Mahmut Tanal; ayrı ikincil komisyon arama sonucu Suat Özçağdaş adını taşıyor. Teklif metni, imza ve iddia edilen ret ile komisyon aşamasının farklı işlem/sürüm olup olmadığı ayrılacak. TBMM sayfası web aracıyla okundu; 21 Kasım doğrudan özgün bayt yakalama connection reset verdi, arşiv kaydı henüz yapılmadı. Sonraki curl denemesi HTTP 200, 61.161 bayt özgün sayfa yakalandı; sürüm/pasaj bağlama bekliyor."
     },
     {
       "url": "https://t24.com.tr/gundem/yeni-partiden-asgari-ucret-hamlesi-net-ucret-45-bin-800-lira-olsun-prim-yukunu-hazine-ustlensin%2C1340028",
@@ -13402,8 +13402,8 @@
     },
     {
       "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T2/WebOnergeMetni/36f0a6f0-ed91-4d84-8a6f-fd928174e540.pdf",
-      "state": "read_capture_blocked",
-      "note": "2/3790 TBMM özgün PDF 9 sayfa web aracıyla açıldı; ilk sayfada Özel ve grup başkanvekilleri Yeni Parti unvanıyla, ikinci sayfada 3 Ağustos evrak kaydı ve 2/3790 görülüyor. 21 Kasım doğrudan özgün bayt yakalama connection reset verdi. Günaydın sitesi transkripsiyonunda CHP unvanı farklı; kaynaklarda ayrı korunur."
+      "state": "source_read_pending_chain",
+      "note": "2/3790 TBMM özgün PDF 9 sayfa web aracıyla açıldı; ilk sayfada Özel ve grup başkanvekilleri Yeni Parti unvanıyla, ikinci sayfada 3 Ağustos evrak kaydı ve 2/3790 görülüyor. 21 Kasım doğrudan özgün bayt yakalama connection reset verdi. Günaydın sitesi transkripsiyonunda CHP unvanı farklı; kaynaklarda ayrı korunur. Daha sonra curl HTTP 200 ile 463.313 özgün PDF baytı yakalandı, ilk sayfa yerel pdf_page_text ile tekrar okundu; sürüm/pasaj taslağı hazır, henüz pakete katılmadı."
     }
   ],
   "foundation_for_party": {
@@ -13566,6 +13566,18 @@
       "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/99085cfc-46b5-46b8-b34d-019fc7aca761",
       "sha256": "e14f477b9b839b4edc82752ec92d835a04375f21d42776984f2c7495382357b3",
       "accessed_at": "2026-11-21T19:32:00.679824+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/5d13749f-7351-4fe3-841d-01a08b317303",
+      "sha256": "72784cd047a0f0d668b448573b7b0a4ce241eb0b4d276f10bbd1b19bc96aad12",
+      "accessed_at": "2026-11-21T19:52:30.463563+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T2/WebOnergeMetni/36f0a6f0-ed91-4d84-8a6f-fd928174e540.pdf",
+      "sha256": "e828a2a5ad9ff52e2bc9f3e5831bd18edc1eecbd49992baa2204836e9e6ca68b",
+      "accessed_at": "2026-11-21T19:53:01.482680+00:00",
       "state": "draft_owner_bound"
     }
   ],

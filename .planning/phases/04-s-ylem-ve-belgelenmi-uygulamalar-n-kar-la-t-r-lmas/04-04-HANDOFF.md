@@ -2,6 +2,8 @@
 
 ## 2026-11-21 19:40 UTC güncellemesi — aşağıdaki eski durumlar bu bölümle düzeltilir
 
+19:52 UTC ek: Gaziantep v2 preview PID 648004/session 52554 gerçek exit 0 `PRACTICE_PREVIEW_OK`; release `fe1d89465449488783d138fa4a4e60f9`. DB, JSON, iki görünüm, kaynak ve karşılıklı fragman hedefleri, manifest doğrulaması `gaziantep-v2-preview-proof.md`, commit `47ffe44`. Source-check v4 PID 661951/session 97267 ile Muğla preview PID 662467/session 65304, Muğla source-check PID 663107/session 43656, program v2 staging check PID 679338/session 95028 aktiftir. Gaziantep preview, source-check başarısı veya kapsam kapanması anlamına gelmez.
+
 19:49 UTC ek: Program v1 staging session 48389 gerçek exit 0 `PRACTICE_INPUT_OK`. Günaydın sitesindeki teklif transkripsiyonu ve TBMM özgün PDF ilk sayfasındaki CHP/Yeni Parti unvanları farklı olduğundan, belirsizliği açıklayan ayrı v2 paket SHA `5d73d7a069ab30af22b7eafbda4695510f776e4dccca1349ca3cfc4a47048c71`, review SHA `ce70321ef75997e3182abc0b28972eace22248ff04f573e87efe760724641e56` oluşturuldu; v1 sonucu v2'ye devredilemez. v2 gerçek staging `practice-check` PID 679338 session 95028 aktiftir. TBMM 2/3790 özgün PDF web aracıyla okundu; doğrudan indirme connection reset, veri kuyruğunda kayıtlı. Özgün PDF ilk sayfası Yeni Parti unvanlarını gösteriyor; transkripsiyonla fark açık. Aşağıdaki dört Gaziantep/Muğla süreçleri son kontrol itibarıyla sürüyor.
 
 - İki görev ve 610 hücrenin olay/arama kapanışı açık. Tracer feedback commit `ec2e24b` ve iki gerçek görünüm kanıtı `04-04-checks/tracer-proof.md`; dar feedback görevin tamamlanması değildir. Programın 81.036 karakterlik özgün doc-body metni gerçekten okundu, 41 bölüm `source_read_pending_scope`; tüzük 84 bölüm aynı şekilde açık.
