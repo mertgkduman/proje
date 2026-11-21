@@ -1,4 +1,4 @@
-"""Verify regression evidence, then run the remaining 04-03 checks in order."""
+"""Verify available regression evidence and run independent 04-03 audits."""
 import hashlib
 from html.parser import HTMLParser
 import json
@@ -7,6 +7,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import tempfile
 from urllib.parse import unquote
 
 from fresh_gate import CONTRACT, EVENTS, HERE, ROOT, core, identity
@@ -26,8 +27,8 @@ def sha(path):
         return hashlib.file_digest(stream, 'sha256').hexdigest()
 
 
-def verify_regression(contract, current):
-    entries = [json.loads(line) for line in EVENTS.read_text().splitlines()]
+def verify_regression(contract, current, *, allow_pending_taxonomy=False):
+    entries = [json.loads(line) for line in EVENTS.read_text().splitlines(keepends=True) if line.endswith("\n")]
     starts = {entry['batch']: entry for entry in entries if entry['event'] == 'batch_start'}
     passed = set()
     for end in entries:
@@ -56,7 +57,13 @@ def verify_regression(contract, current):
             require((HERE / 'taxonomy-slurm-supervisor.exit').read_text().strip() == '0', 'taxonomy supervisor exit missing')
         passed.update(ids)
     expected_ids = set(contract['ids'])
-    require(passed == expected_ids, f'Test coverage mismatch: {len(expected_ids - passed)} outstanding, {len(passed - expected_ids)} unknown')
+    pending = expected_ids - passed
+    unknown = passed - expected_ids
+    if allow_pending_taxonomy and pending == {TAXONOMY} and not unknown:
+        require(any(entry['event'] == 'external_test_pending' and entry['ids'] == [TAXONOMY] for entry in entries),
+                'isolated taxonomy handoff missing')
+        return len(passed)
+    require(not pending and not unknown, f'Test coverage mismatch: {len(pending)} outstanding, {len(unknown)} unknown')
     return len(passed)
 
 
@@ -107,10 +114,11 @@ def main():
     contract = json.loads(CONTRACT.read_text())
     before = identity()
     require(before == core(contract['identity']), 'contract no longer matches current code/release')
-    count = verify_regression(contract, before)
-    print(f'Regression evidence verified: {count}/{len(contract["ids"])}', flush=True)
+    count = verify_regression(contract, before, allow_pending_taxonomy=True)
+    print(f'Regression evidence at audit start: {count}/{len(contract["ids"])}', flush=True)
     require(not OUT.exists() and not OUT.is_symlink(), f'Preview path already exists: {OUT}')
-    run(job, 'build', ['-m', 'compileall', '-q', 'src', 'tests'])
+    with tempfile.TemporaryDirectory(prefix='gsd-04-03-pycache-') as cache:
+        run(job, 'build', ['-X', f'pycache_prefix={cache}', '-m', 'compileall', '-q', 'src', 'tests'])
     run(job, 'tracer', ['src/arsiv.py', 'practice-preview', '--input', 'data/practices/04-tracer.json',
                          '--inventory', 'data/practices/04-inventory.json', '--out', str(OUT)], 'PRACTICE_PREVIEW_OK ')
     release, manifest_sha, local_links = preview_bundle(OUT)
@@ -123,7 +131,8 @@ def main():
     run(job, 'phase3-complete', ['src/arsiv.py', 'audit', '--release', 'current', '--phase', '3', '--stage', 'complete'],
         f'PHASE3_AUDIT_OK {before["release"]}')
     require(identity() == before, 'canonical identity changed during closeout')
-    result = dict(job=job, ok=True, credited=count, source_test_fingerprint=before['fingerprint'],
+    result = dict(job=job, audits_ok=True, regression_credited_at_start=count,
+                  regression_required=len(contract['ids']), source_test_fingerprint=before['fingerprint'],
                   canonical_release=before['release'], canonical_manifest=before['manifest'],
                   canonical_pointer=before['pointer'], preview_path=str(artifact),
                   preview_release=release.name, preview_manifest_sha256=manifest_sha, local_links=local_links)
@@ -132,7 +141,7 @@ def main():
         stream.write('\n')
         stream.flush()
         os.fsync(stream.fileno())
-    print('04-03 closeout checks passed', flush=True)
+    print('04-03 build, tracer and canonical audits passed', flush=True)
 
 
 if __name__ == '__main__':

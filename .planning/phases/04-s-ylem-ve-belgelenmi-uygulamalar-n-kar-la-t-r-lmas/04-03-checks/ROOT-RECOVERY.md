@@ -1,5 +1,13 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Seri regresyon tamamlandı — 2026-11-21 14:51:15 UTC
+
+- 62261875 içindeki **286/286** seri test gerçek exit 0 ve eşleşen batch kimliğiyle geçti. Genel kapsam **286/287**. Son seri gerçek kanıt zinciri testi `ea478e9ee81844068b3ea51b03122d87` 14:49:21 UTC'de exit 0. Gözetici yalnız ayrı taksonomi ID'si için `external_test_pending` yazıp `coverage incomplete` ile exit 1 verdi. Bu, seri bir test başarısızlığı değildir. Ledger, günlükler ve exit dosyalarıyla geriye kalan tek ID doğrulandı; root canonical release özeti eşleşti ve global kilit yoktu.
+- Ayrı Slurm **62173687** çalışıyor. Batch `5af6daf9326d4634848f0d331cdaf6e1`, PID 50181, başlangıç `2026-11-21T14:49:44.688013+00:00`. Özdeş `test_same_taxonomy_sourced_revision_round_trip` çalışıyor; gerçek sonuç/exit henüz yok. Tekrar başlatmayın.
+- Denetim işi **62262262** artık taksonomi işine bağımlı değildir. Seri iş tamamlandıktan sonra bu iki iş bağımsız kaynaklarda çalışabilir: taksonomi testi kendi geçici DATA ağacına yazıyor, denetimler kanonik yayını salt okunur kullanıyor, tracer yalnız geçici hedefe yazıyor. 62262262 ilk gözlemde Priority bekliyor. Eski `afterok` notu tarihsel.
+- `fresh_slurm_closeout.py` audit başlangıcında yalnız kaydedilmiş ayrı taksonomi ID'sinin açık kalmasına izin verir ve `audits_ok` sonucu yalnız build/tracer/iki kanonik audit'i kapsar. Başka eksik testle ilerlemez. 286/287 denemesinde audit hazırlığı geçti, bütün regresyon doğrulayıcısı bilinçli olarak eksik döndü. Kapanış için ayrı taksonomi sıfır çıkışı, **bütün 287** gerçek test sonucu, `closeout-62262262.json` auditi ve son kanonik kimlik eşleşmesi birlikte zorunlu.
+- Kaynak/test fingerprint 083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4. 04-03 açık, faz **2/15**. İki işin gerçek güncel durumuna ve kanıtına bakmadan SUMMARY veya sayaç ilerletmeyin.
+
 ## Uygulama testleri tamamlandı — 2026-11-21 13:23:02 UTC
 
 Slurm 62261875 aynı 083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4 kaynak/test kimliğinde koşuyor. Keşfedilen 77 uygulama testinin tamamı gerçek sıfır çıkış ve kimlik eşleşmesi verdi. Genel sayım **77/287**. Son tamamlanan uygulama grupları: preview 18/18, replay negatifleri 8/8, source-review 13/13, tracer 5/5. Önbelleksiz kalan replay koşuları gerçek test sürecinden geçti.
