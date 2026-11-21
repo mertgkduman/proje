@@ -1,0 +1,860 @@
+{
+  "status": "sources_read",
+  "party_id": "yeni-parti",
+  "source_root": "data/practices/sources/yeni-parti",
+  "fetches": [
+    {
+      "file": "research-4938.html",
+      "accessed_at": "2026-11-21T23:39:57+00:00",
+      "status": 200,
+      "url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/cfe56c1f-c86e-4d9a-9689-01a1a19e4330",
+      "mime": "text/html",
+      "byte_count": 67750,
+      "sha256": "6a517a90e10f4540d13e41371c1cd70d0ffd7bcbf75bb370605a2f384b2708cc"
+    },
+    {
+      "file": "research-4938.pdf",
+      "accessed_at": "2026-11-21T23:39:58+00:00",
+      "status": 200,
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T10/WebOnergeMetni/1c51e772-2fc9-4483-b5ae-c4368829d177.pdf",
+      "mime": "application/pdf",
+      "byte_count": 77836,
+      "sha256": "292073460f60e52b12d8271bef8d82d9db4dad9374d9c084b8b62bda6d1aafd7"
+    },
+    {
+      "file": "agenda-4938.html",
+      "accessed_at": "2026-11-21T23:40:20+00:00",
+      "status": 200,
+      "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/320939c7-5802-4fba-a1aa-01a1afad6c0c",
+      "mime": "text/html",
+      "byte_count": 85230,
+      "sha256": "af8ee31780d23e486398d2ccb87ec65eb9543aa3200d4565e218cfe78cd35e99"
+    },
+    {
+      "file": "question-51142.html",
+      "accessed_at": "2026-11-21T23:39:59+00:00",
+      "status": 200,
+      "url": "https://tbmm.gov.tr/Denetim/Yazili-Soru-Onergesi-Detay/7606716f-53c4-476a-8f3f-01a143852624",
+      "mime": "text/html",
+      "byte_count": 56610,
+      "sha256": "1b2199e12eda025dc53fdb0ae977f1e6aa89ce03079a628f5c591c1be465e350"
+    },
+    {
+      "file": "question-51142.pdf",
+      "accessed_at": "2026-11-21T23:40:19+00:00",
+      "status": 200,
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T7/WebOnergeMetni/9bd9a892-4511-48ac-9a0c-991e26c775ee.pdf",
+      "mime": "application/pdf",
+      "byte_count": 92371,
+      "sha256": "39f4b8e3bcbf28ec6e7f0e453c31553f7db3ca72d1d063d215411a2ee8ccbd4f"
+    },
+    {
+      "file": "yaman.html",
+      "accessed_at": "2026-11-21T23:40:00+00:00",
+      "status": 200,
+      "url": "https://tbmm.gov.tr/Haber/Detay?Id=f3d59a4e-93e9-4078-8c4b-01a0a9b94d15",
+      "mime": "text/html",
+      "byte_count": 69067,
+      "sha256": "adad99d65a93a959023a0f802018af04b23e2ce0b4f3a0857bc47ae3b96fa084"
+    },
+    {
+      "file": "bulbul.html",
+      "accessed_at": "2026-11-21T23:40:01+00:00",
+      "status": 200,
+      "url": "https://www.yorukefe.com/suleyman-bulbul-aydin-yaslaniyor-ama-cozum-uretilemiyor",
+      "mime": "text/html",
+      "byte_count": 136996,
+      "sha256": "686981e416212af43ea3adc317f504a4170101f697558d306550da0c39220be7"
+    },
+    {
+      "file": "ministry-aydin.html",
+      "accessed_at": "2026-11-21T23:42:38+00:00",
+      "status": 200,
+      "url": "https://www.aile.gov.tr/haberler/aile-ve-sosyal-hizmetler-bakanimiz-goktas-aydin-da-toplu-acilis-toreninde-konustu/",
+      "mime": "text/html",
+      "byte_count": 231935,
+      "sha256": "5ef0495dd125f5d412f3db6ba0d4948f927f3b74accbb6a8eba5c5ac08a84daa"
+    },
+    {
+      "file": "agenda-51142.html",
+      "accessed_at": "2026-11-21T23:47:33+00:00",
+      "status": 200,
+      "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/4d7fe45a-0122-4d98-8bb5-01a1e87bb4a9",
+      "mime": "text/html",
+      "byte_count": 103027,
+      "sha256": "23177194d0f9c860b685cc4e6673b74c1af5151d7991ef66236b556bab42109b"
+    }
+  ],
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-104938",
+        "party_id": "yeni-parti",
+        "title": "TBMM 10/4938 araştırma önergesi kaydı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-104938-v1",
+        "document_id": "0404-yasli-104938",
+        "original_url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/cfe56c1f-c86e-4d9a-9689-01a1a19e4330",
+        "final_url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/cfe56c1f-c86e-4d9a-9689-01a1a19e4330",
+        "document_date": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynağın yayın tarihi belirtilmemiştir.",
+        "version_label": "Önergenin konusu, geliş tarihi ve sahipleri TBMM künyesinden okundu.",
+        "accessed_at": "2026-11-21T23:39:57+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "text/html",
+        "sha256": "6a517a90e10f4540d13e41371c1cd70d0ffd7bcbf75bb370605a2f384b2708cc",
+        "original_path": "objects/6a517a90e10f4540d13e41371c1cd70d0ffd7bcbf75bb370605a2f384b2708cc/original.html.bin",
+        "readable_path": "objects/6a517a90e10f4540d13e41371c1cd70d0ffd7bcbf75bb370605a2f384b2708cc/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-104938-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/cfe56c1f-c86e-4d9a-9689-01a1a19e4330",
+        "basis": "Önergenin konusu, geliş tarihi ve sahipleri TBMM künyesinden okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "f96687b6cd5579a3caec3709fd3b1edc",
+        "format_version": 2,
+        "source_sha256": "6a517a90e10f4540d13e41371c1cd70d0ffd7bcbf75bb370605a2f384b2708cc",
+        "index_path": "views/f96687b6cd5579a3caec3709fd3b1edc/index.html",
+        "manifest_path": "views/f96687b6cd5579a3caec3709fd3b1edc/manifest.json",
+        "manifest_sha256": "fac5539b45c94ab7261aa361c26390db46f64794f5272bca73d86858bd141d5f",
+        "version_id": "0404-yasli-104938-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-104938-purpose",
+        "version_id": "0404-yasli-104938-v1",
+        "exact": "Devlet destekli huzurevi ve bak&#x131;mevi say&#x131;lar&#x131;n&#x131;n art&#x131;r&#x131;lmas&#x131; ile ya&#x15F;l&#x131; bak&#x131;m&#x131; konusunda yap&#x131;lmas&#x131; gerekenlerin belirlenmesi amac&#x131;yla bir Meclis ara&#x15F;t&#x131;rmas&#x131; a&#xE7;&#x131;lmas&#x131;na ili&#x15F;kin &#xF6;nergesi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Araştırma önergesi özeti",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-104938-owner",
+        "version_id": "0404-yasli-104938-v1",
+        "exact": "Mersin Milletvekili Talat Din&#xE7;er ve 20 Milletvekili",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Önerge sahibi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-104938-received",
+        "version_id": "0404-yasli-104938-v1",
+        "exact": "03/11/2026",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Başkanlığa geliş",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-104938-status",
+        "version_id": "0404-yasli-104938-v1",
+        "exact": "G&#xFC;ndemde",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "21 Kasım erişimindeki durum",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-104938-metni",
+        "party_id": "yeni-parti",
+        "title": "TBMM 10/4938 imzalı araştırma önergesi",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-104938-metni-v1",
+        "document_id": "0404-yasli-104938-metni",
+        "original_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T10/WebOnergeMetni/1c51e772-2fc9-4483-b5ae-c4368829d177.pdf",
+        "final_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T10/WebOnergeMetni/1c51e772-2fc9-4483-b5ae-c4368829d177.pdf",
+        "document_date": "2026-10-21",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "İki sayfa görsel olarak okundu. Dilekçe 21 Ekim, grup damgası 2 Kasım ve TBMM geliş kaydı 3 Kasım 2026 tarihli. Metin pasajı TBMM künye kaydından bağlanır.",
+        "accessed_at": "2026-11-21T23:39:58+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "application/pdf",
+        "sha256": "292073460f60e52b12d8271bef8d82d9db4dad9374d9c084b8b62bda6d1aafd7",
+        "original_path": "objects/292073460f60e52b12d8271bef8d82d9db4dad9374d9c084b8b62bda6d1aafd7/original.pdf",
+        "readable_path": "objects/292073460f60e52b12d8271bef8d82d9db4dad9374d9c084b8b62bda6d1aafd7/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-104938-metni-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T10/WebOnergeMetni/1c51e772-2fc9-4483-b5ae-c4368829d177.pdf",
+        "basis": "İki sayfa görsel olarak okundu. Dilekçe 21 Ekim, grup damgası 2 Kasım ve TBMM geliş kaydı 3 Kasım 2026 tarihli. Metin pasajı TBMM künye kaydından bağlanır."
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-104938-gelen",
+        "party_id": "yeni-parti",
+        "title": "TBMM Gelen Kâğıtlar 25, 6 Kasım 2026",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-104938-gelen-v1",
+        "document_id": "0404-yasli-104938-gelen",
+        "original_url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/320939c7-5802-4fba-a1aa-01a1afad6c0c",
+        "final_url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/320939c7-5802-4fba-a1aa-01a1afad6c0c",
+        "document_date": "2026-11-06",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Gelen Kâğıtlar liste başlığı ve 10/4938 satırı okundu.",
+        "accessed_at": "2026-11-21T23:40:20+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "text/html",
+        "sha256": "af8ee31780d23e486398d2ccb87ec65eb9543aa3200d4565e218cfe78cd35e99",
+        "original_path": "objects/af8ee31780d23e486398d2ccb87ec65eb9543aa3200d4565e218cfe78cd35e99/original.html.bin",
+        "readable_path": "objects/af8ee31780d23e486398d2ccb87ec65eb9543aa3200d4565e218cfe78cd35e99/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-104938-gelen-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-11-06",
+        "date_precision": "day",
+        "public_url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/320939c7-5802-4fba-a1aa-01a1afad6c0c",
+        "basis": "Gelen Kâğıtlar liste başlığı ve 10/4938 satırı okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "8c8847d901cf95714ba7adf8166990d8",
+        "format_version": 2,
+        "source_sha256": "af8ee31780d23e486398d2ccb87ec65eb9543aa3200d4565e218cfe78cd35e99",
+        "index_path": "views/8c8847d901cf95714ba7adf8166990d8/index.html",
+        "manifest_path": "views/8c8847d901cf95714ba7adf8166990d8/manifest.json",
+        "manifest_sha256": "a70a38b7b9878d85b65e95c93195d9c3568823b49b0110ebb9313cb9487b07bf",
+        "version_id": "0404-yasli-104938-gelen-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-104938-gelen-item",
+        "version_id": "0404-yasli-104938-gelen-v1",
+        "exact": "&nbsp;25.- Mersin Milletvekili Talat Din&ccedil;er ve 20 Milletvekilinin, devlet destekli huzurevi ve bakımevi sayılarının artırılması ile yaşlı bakımı konusunda yapılması gerekenlerin belirlenmesi amacıyla bir Meclis araştırması a&ccedil;ılmasına ilişkin &ouml;nergesi (10/4938) (Başkanlığa geliş tarihi: 3.11.2026)",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Meclis araştırma önergeleri, sıra 25",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-104938-gelen-day",
+        "version_id": "0404-yasli-104938-gelen-v1",
+        "exact": "&nbsp;6.11.2026 Cuma&nbsp;",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Gelen Kâğıtlar tarihi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-751142",
+        "party_id": "yeni-parti",
+        "title": "TBMM 7/51142 yazılı soru önergesi kaydı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-751142-v1",
+        "document_id": "0404-yasli-751142",
+        "original_url": "https://tbmm.gov.tr/Denetim/Yazili-Soru-Onergesi-Detay/7606716f-53c4-476a-8f3f-01a143852624",
+        "final_url": "https://tbmm.gov.tr/Denetim/Yazili-Soru-Onergesi-Detay/7606716f-53c4-476a-8f3f-01a143852624",
+        "document_date": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynağın yayın tarihi belirtilmemiştir.",
+        "version_label": "Geliş, sahip ve muhatap alanları okundu. Erişimdeki durumun hangi gün değiştiği künyede gösterilmiyor.",
+        "accessed_at": "2026-11-21T23:39:59+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "text/html",
+        "sha256": "1b2199e12eda025dc53fdb0ae977f1e6aa89ce03079a628f5c591c1be465e350",
+        "original_path": "objects/1b2199e12eda025dc53fdb0ae977f1e6aa89ce03079a628f5c591c1be465e350/original.html.bin",
+        "readable_path": "objects/1b2199e12eda025dc53fdb0ae977f1e6aa89ce03079a628f5c591c1be465e350/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-751142-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://tbmm.gov.tr/Denetim/Yazili-Soru-Onergesi-Detay/7606716f-53c4-476a-8f3f-01a143852624",
+        "basis": "Geliş, sahip ve muhatap alanları okundu. Erişimdeki durumun hangi gün değiştiği künyede gösterilmiyor."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "3e6ec796f31e877fccd1cf724999f729",
+        "format_version": 2,
+        "source_sha256": "1b2199e12eda025dc53fdb0ae977f1e6aa89ce03079a628f5c591c1be465e350",
+        "index_path": "views/3e6ec796f31e877fccd1cf724999f729/index.html",
+        "manifest_path": "views/3e6ec796f31e877fccd1cf724999f729/manifest.json",
+        "manifest_sha256": "5f758b2f2952effaafb9071215f6dbe96750f2b322618b1fcbd73b70607c5601",
+        "version_id": "0404-yasli-751142-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-purpose",
+        "version_id": "0404-yasli-751142-v1",
+        "exact": "Ankara&#x27;da bulunan bir ya&#x15F;l&#x131; bak&#x131;m ve rehabilitasyon merkeziyle ilgili verilere ili&#x15F;kin",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Yazılı soru önergesi özeti",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-owner",
+        "version_id": "0404-yasli-751142-v1",
+        "exact": "Ankara Milletvekili Aliye T&#x130;M&#x130;S&#x130; ERSEVER",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Önerge sahibi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-received",
+        "version_id": "0404-yasli-751142-v1",
+        "exact": "15.10.2026",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Başkanlığa geliş",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-status",
+        "version_id": "0404-yasli-751142-v1",
+        "exact": "Cevaplanmad&#x131;&#x11F;&#x131; Gelen Ka&#x11F;&#x131;tlarda &#x130;lan Edildi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "21 Kasım erişimindeki durum",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-751142-metni",
+        "party_id": "yeni-parti",
+        "title": "TBMM 7/51142 imzalı yazılı soru önergesi",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-751142-metni-v1",
+        "document_id": "0404-yasli-751142-metni",
+        "original_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T7/WebOnergeMetni/9bd9a892-4511-48ac-9a0c-991e26c775ee.pdf",
+        "final_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T7/WebOnergeMetni/9bd9a892-4511-48ac-9a0c-991e26c775ee.pdf",
+        "document_date": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kaynağın yayın tarihi belirtilmemiştir.",
+        "version_label": "TBMM sayfasının bağladığı taramada Yeni Parti Grup Başkanlığı başlığı ve iki sayfadaki sorular okundu.",
+        "accessed_at": "2026-11-21T23:40:19+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "application/pdf",
+        "sha256": "39f4b8e3bcbf28ec6e7f0e453c31553f7db3ca72d1d063d215411a2ee8ccbd4f",
+        "original_path": "objects/39f4b8e3bcbf28ec6e7f0e453c31553f7db3ca72d1d063d215411a2ee8ccbd4f/original.pdf",
+        "readable_path": "objects/39f4b8e3bcbf28ec6e7f0e453c31553f7db3ca72d1d063d215411a2ee8ccbd4f/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-751142-metni-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T7/WebOnergeMetni/9bd9a892-4511-48ac-9a0c-991e26c775ee.pdf",
+        "basis": "TBMM sayfasının bağladığı taramada Yeni Parti Grup Başkanlığı başlığı ve iki sayfadaki sorular okundu."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-metni-capacity",
+        "version_id": "0404-yasli-751142-metni-v1",
+        "exact": "Seyranbağları Huzurevi Yaşlı Bakım ve Rehabilitasyon Merkezi’nin yatak\nkapasitesi, yıl veya dönem sonunda kalan kişi sayısı nedir? Bu kişilerin cinsiyet,\nyaş grubu ve bakım ihtiyacına göre dağılımı nedir?",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Birinci sayfa, birinci soru",
+        "pdf_page_index": 0,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-metni-audit",
+        "version_id": "0404-yasli-751142-metni-v1",
+        "exact": "7- Kurumda kaç planlı ve habersiz denetim yapılmıştır? Denetimlerde bakım,\nsağlık, beslenme, hijyen, güvenlik ve personel yeterliliği yönünden hangi\neksiklikler tespit edilmiştir? Bu eksiklikler için verilen süreler, yapılan düzeltici\nişlemler ve takip denetimlerinin sonuçları nelerdir?",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İkinci sayfa, yedinci soru",
+        "pdf_page_index": 1,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-yaman",
+        "party_id": "yeni-parti",
+        "title": "TBMM Meclis Haberleri, Aylin Yaman basın toplantısı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-yaman-v1",
+        "document_id": "0404-yasli-yaman",
+        "original_url": "https://tbmm.gov.tr/Haber/Detay?Id=f3d59a4e-93e9-4078-8c4b-01a0a9b94d15",
+        "final_url": "https://tbmm.gov.tr/Haber/Detay?Id=f3d59a4e-93e9-4078-8c4b-01a0a9b94d15",
+        "document_date": "2026-09-16",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "TBMM haber başlığı, tarih ve aktarılan konuşma okundu. Aylin Yaman haberin konuşmacısıdır.",
+        "accessed_at": "2026-11-21T23:40:00+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "text/html",
+        "sha256": "adad99d65a93a959023a0f802018af04b23e2ce0b4f3a0857bc47ae3b96fa084",
+        "original_path": "objects/adad99d65a93a959023a0f802018af04b23e2ce0b4f3a0857bc47ae3b96fa084/original.html.bin",
+        "readable_path": "objects/adad99d65a93a959023a0f802018af04b23e2ce0b4f3a0857bc47ae3b96fa084/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-yaman-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-09-16",
+        "date_precision": "day",
+        "public_url": "https://tbmm.gov.tr/Haber/Detay?Id=f3d59a4e-93e9-4078-8c4b-01a0a9b94d15",
+        "basis": "TBMM haber başlığı, tarih ve aktarılan konuşma okundu. Aylin Yaman haberin konuşmacısıdır."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "61ba18801eb155ac17976283f1825fe5",
+        "format_version": 2,
+        "source_sha256": "adad99d65a93a959023a0f802018af04b23e2ce0b4f3a0857bc47ae3b96fa084",
+        "index_path": "views/61ba18801eb155ac17976283f1825fe5/index.html",
+        "manifest_path": "views/61ba18801eb155ac17976283f1825fe5/manifest.json",
+        "manifest_sha256": "6f371240cb3ad71d0d424b178216d6a629dcaf3dc4bcc9fc5f753982bdb6ec01",
+        "version_id": "0404-yasli-yaman-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-yaman-role",
+        "version_id": "0404-yasli-yaman-v1",
+        "exact": "Yeni Parti Genel Başkan Yardımcısı ve Ankara Milletvekili Aylin Yaman, 2027-2029 dönemini kapsayan Orta Vadeli Program'da (OVP) sosyal güvenlik alanına hiçbir yenilik sunulmadığını, bu alanda hiçbir reform ve düzenleme yaklaşımının bulunmadığını öne sürdü.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Basın toplantısı haberi, konuşmacı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-yaman-proposal",
+        "version_id": "0404-yasli-yaman-v1",
+        "exact": "Yeni Parti'li Yaman, bakım sigortası sisteminde hak verilirken yaşa ve yoksulluğa değil, kişinin bakım ve destek ihtiyacına bakılmasını, bakıma bağımlılık ve bağımsız yaşam güvencesinin kurulması gerektiğini söyledi.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Bakım sigortası yaklaşımı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-yaman-date",
+        "version_id": "0404-yasli-yaman-v1",
+        "exact": "2026-09-16 - 13:18",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Meclis Haberleri yayın tarihi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-bulbul",
+        "party_id": "yeni-parti",
+        "title": "Yörük Efe, Süleyman Bülbül’ün Aydın bakım hizmetleri açıklaması",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-bulbul-v1",
+        "document_id": "0404-yasli-bulbul",
+        "original_url": "https://www.yorukefe.com/suleyman-bulbul-aydin-yaslaniyor-ama-cozum-uretilemiyor",
+        "final_url": "https://www.yorukefe.com/suleyman-bulbul-aydin-yaslaniyor-ama-cozum-uretilemiyor",
+        "document_date": "2026-10-10",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Haber başlığı, Selva Demir künyesi, yayın ve güncelleme satırları ile Bülbül’ün açıklaması okundu.",
+        "accessed_at": "2026-11-21T23:40:01+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "text/html",
+        "sha256": "686981e416212af43ea3adc317f504a4170101f697558d306550da0c39220be7",
+        "original_path": "objects/686981e416212af43ea3adc317f504a4170101f697558d306550da0c39220be7/original.html.bin",
+        "readable_path": "objects/686981e416212af43ea3adc317f504a4170101f697558d306550da0c39220be7/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-bulbul-v1",
+        "kind": "journalism",
+        "publisher": "Yörük Efe Gazetesi",
+        "author": "Selva Demir",
+        "social_handle": null,
+        "published_at": "2026-10-10",
+        "date_precision": "day",
+        "public_url": "https://www.yorukefe.com/suleyman-bulbul-aydin-yaslaniyor-ama-cozum-uretilemiyor",
+        "basis": "Haber başlığı, Selva Demir künyesi, yayın ve güncelleme satırları ile Bülbül’ün açıklaması okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "4df4de03085a0a2ed834530451e3fb80",
+        "format_version": 2,
+        "source_sha256": "686981e416212af43ea3adc317f504a4170101f697558d306550da0c39220be7",
+        "index_path": "views/4df4de03085a0a2ed834530451e3fb80/index.html",
+        "manifest_path": "views/4df4de03085a0a2ed834530451e3fb80/manifest.json",
+        "manifest_sha256": "245bc12bb8fe18587a4cb6959637a86c96132fa9100abe262e64ee18bffd30c8",
+        "version_id": "0404-yasli-bulbul-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-bulbul-role",
+        "version_id": "0404-yasli-bulbul-v1",
+        "exact": "YENİ Parti Aydın Milletvekili Süleyman Bülbül, Aydın’da yaşlı nüfus oranının Türkiye ortalamasının üzerinde olduğuna dikkat çekerek yaşlı bakım hizmetlerinin yetersizliğini gündeme taşıdı. Bülbül, huzurevlerinde başvuru, kabul ve bekleme sayılarını sorarken ilçelerde gündüz yaşlı bakım merkezleri açılması ve evde profesyonel bakım hizmetlerinin yaygınlaştırılması çağrısında bulundu.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Haber girişi ve milletvekili sıfatı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-bulbul-requests",
+        "version_id": "0404-yasli-bulbul-v1",
+        "exact": "“Sayın Bakan, kapasiteyi söylediniz. Başvuran kaç kişi, kabul edilen kaç kişi, sıra bekleyen kaç kişi? Evinde bakım hizmeti bekleyen kaç yurttaşımız var? Bu soruların yanıtını neden Aydınlılarla paylaşmadınız?”",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Açıklamada yöneltilen sorular",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-bulbul-date",
+        "version_id": "0404-yasli-bulbul-v1",
+        "exact": "10.10.2026 - 21:02",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Yayın saati",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-aydin-bakanlik",
+        "party_id": "yeni-parti",
+        "title": "Bakanlığın Aydın sosyal hizmet merkezleri açılış açıklaması",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-aydin-bakanlik-v1",
+        "document_id": "0404-yasli-aydin-bakanlik",
+        "original_url": "https://www.aile.gov.tr/haberler/aile-ve-sosyal-hizmetler-bakanimiz-goktas-aydin-da-toplu-acilis-toreninde-konustu/",
+        "final_url": "https://www.aile.gov.tr/haberler/aile-ve-sosyal-hizmetler-bakanimiz-goktas-aydin-da-toplu-acilis-toreninde-konustu/",
+        "document_date": "2026-09-13",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Bakanlık tarih satırı ve Aydın Huzurevi kapasitesi açıklaması okundu.",
+        "accessed_at": "2026-11-21T23:42:38+00:00",
+        "verified_at": "2026-11-21T23:45:04+00:00",
+        "mime": "text/html",
+        "sha256": "5ef0495dd125f5d412f3db6ba0d4948f927f3b74accbb6a8eba5c5ac08a84daa",
+        "original_path": "objects/5ef0495dd125f5d412f3db6ba0d4948f927f3b74accbb6a8eba5c5ac08a84daa/original.html.bin",
+        "readable_path": "objects/5ef0495dd125f5d412f3db6ba0d4948f927f3b74accbb6a8eba5c5ac08a84daa/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-aydin-bakanlik-v1",
+        "kind": "official",
+        "publisher": "Aile ve Sosyal Hizmetler Bakanlığı",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-09-13",
+        "date_precision": "day",
+        "public_url": "https://www.aile.gov.tr/haberler/aile-ve-sosyal-hizmetler-bakanimiz-goktas-aydin-da-toplu-acilis-toreninde-konustu/",
+        "basis": "Bakanlık tarih satırı ve Aydın Huzurevi kapasitesi açıklaması okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "fba5f11487dd64a6d4dbbe311be78249",
+        "format_version": 2,
+        "source_sha256": "5ef0495dd125f5d412f3db6ba0d4948f927f3b74accbb6a8eba5c5ac08a84daa",
+        "index_path": "views/fba5f11487dd64a6d4dbbe311be78249/index.html",
+        "manifest_path": "views/fba5f11487dd64a6d4dbbe311be78249/manifest.json",
+        "manifest_sha256": "7be823fafa75877073723858eb99114b5f80043191393e18c34710741bdd016f",
+        "version_id": "0404-yasli-aydin-bakanlik-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-aydin-bakanlik-capacity",
+        "version_id": "0404-yasli-aydin-bakanlik-v1",
+        "exact": "Buharkent ve Söke'ye de en kısa zamanda bir huzurevi, yaşlı bakım ve rehabilitasyon merkezi kazandıracaklarını ifade eden Göktaş, \"Bugün hizmete açtığımız dört merkezimizle Aydın'daki hizmet ağımıza yeni halkalar ekliyoruz. 50 kapasiteli Aydın ve 30 kapasiteli Işıklı çocuk evleri sitelerimizle 80 çocuğumuza sevgiyle büyüyecekleri güvenli yuvalar sunuyoruz. Her bir evladımızın gelişimini destekleyerek, yeteneklerini keşfetmelerine ve geleceğe güvenle hazırlanmalarına katkı sağlayacağız. 96 bakım ve 64 huzurevi kapasiteli Aydın Huzurevimizle toplam 160 büyüğümüze hizmet sunacağız. 63 kapasiteli Köşk Engelsiz Yaşam Bakım, Rehabilitasyon ve Aile Danışma Merkezimizde ise 13-18 yaş grubundaki evlatlarımızı, ihtiyaçlarına uygun bakım ve rehabilitasyon imkanlarıyla buluşturacağız. Evlatlarımızın, daha güçlü hayata katılmalarını sağlarken, ailelerimizin de yol arkadaşı olacağız.\" diye konuştu.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Bakanın Aydın Huzurevi kapasitesi açıklaması",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-aydin-bakanlik-date",
+        "version_id": "0404-yasli-aydin-bakanlik-v1",
+        "exact": "13 Eyl&#xFC;l 2026, Pazar",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Bakanlık yayın tarihi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yasli-751142-gelen",
+        "party_id": "yeni-parti",
+        "title": "TBMM Gelen Kâğıtlar 31, 16 Kasım 2026",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yasli-751142-gelen-v1",
+        "document_id": "0404-yasli-751142-gelen",
+        "original_url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/4d7fe45a-0122-4d98-8bb5-01a1e87bb4a9",
+        "final_url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/4d7fe45a-0122-4d98-8bb5-01a1e87bb4a9",
+        "document_date": "2026-11-16",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Gelen Kâğıtlar 31 sayısında başlık ve 7/51142 satırı kesim sonrasına tarihli olarak okundu.",
+        "accessed_at": "2026-11-21T23:47:33+00:00",
+        "verified_at": "2026-11-21T23:50:14+00:00",
+        "mime": "text/html",
+        "sha256": "23177194d0f9c860b685cc4e6673b74c1af5151d7991ef66236b556bab42109b",
+        "original_path": "objects/23177194d0f9c860b685cc4e6673b74c1af5151d7991ef66236b556bab42109b/original.html.bin",
+        "readable_path": "objects/23177194d0f9c860b685cc4e6673b74c1af5151d7991ef66236b556bab42109b/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yasli-751142-gelen-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-11-16",
+        "date_precision": "day",
+        "public_url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/4d7fe45a-0122-4d98-8bb5-01a1e87bb4a9",
+        "basis": "Gelen Kâğıtlar 31 sayısında başlık ve 7/51142 satırı kesim sonrasına tarihli olarak okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "67f01019581ad20c334ea88dddbbc946",
+        "format_version": 2,
+        "source_sha256": "23177194d0f9c860b685cc4e6673b74c1af5151d7991ef66236b556bab42109b",
+        "index_path": "views/67f01019581ad20c334ea88dddbbc946/index.html",
+        "manifest_path": "views/67f01019581ad20c334ea88dddbbc946/manifest.json",
+        "manifest_sha256": "e41d48acbfe1e0230439acbce22f16811fa5a9d08a7de03e19e4455b0854b300",
+        "version_id": "0404-yasli-751142-gelen-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-gelen-item",
+        "version_id": "0404-yasli-751142-gelen-v1",
+        "section": "Süresinde yanıtlanmadığı ilanı, sıra 14",
+        "exact": "&nbsp;14.- Ankara Milletvekili Aliye Timisi Ersever&#39;in, Ankara&#39;da bulunan bir yaşlı bakım ve rehabilitasyon merkeziyle ilgili verilere ilişkin yazılı soru &ouml;nergesi (7/51142)&nbsp;",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yasli-751142-gelen-day",
+        "version_id": "0404-yasli-751142-gelen-v1",
+        "section": "Gelen Kâğıtlar 31 tarih satırı",
+        "exact": "&nbsp;16.11.2026 Pazartesi&nbsp;",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    }
+  ]
+}
