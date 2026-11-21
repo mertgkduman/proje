@@ -1,5 +1,13 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Önizleme testleri tamamlandı — 2026-11-21 08:12:52 UTC
+
+62261875 aynı kaynak/test/yayın kimliğinde çalışıyor. Kapanış denetçisi gerçek çıkış dosyaları, günlükler ve önce/sonra kimlikleriyle genel **55/287** sonucunu doğruladı. `test_practice_preview` modülünde **18/18** gerçek başarı var. Modül ayrı süreçlerde tam keşfedilmiş ID kümesiyle çalıştı. 232 genel ID, tracer CLI ve Faz 2/3 kapanış denetimleri bekliyor.
+
+- Fiziksel parti kökleri testi e74c8179581e44d2a0cb3fc2180fff2d, 2026-11-21T03:43:47.632621+00:00 zamanında exit 0 ve eşleşen kimlikle kapandı. Diğer üç önizleme testi ardından geçerek modülü tamamladı.
+- Replay negatifleri şu ana dek kaynak yol sınırı, kabul edilmiş katkı değişikliği, geçersiz hedefli alias ve sahte okuma kökeni için exit 0 / kimlik eşleşmesi verdi. Doğrulayan kaynağın kendisi `fresh-gate-events.jsonl` ve batch log/exit dosyalarıdır.
+- Açık batch 13cabc2023994f62b99318170e3f42cf, `test_lost_alias_rejected`, 08:06:42 UTC başladı. Slurm 62173687 ve 62262262 bağımlılık sırasını bekliyor. Plan/faz 2/15 ve 04-03 SUMMARY bekliyor.
+
 ## Slurm koşusunda doğrulanan sonuçlar — 2026-11-21 02:12:05 UTC
 
 62261875 etkin. Geçerli 083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4 kimliğinde 47/287 gerçek başarı var. Kapanış denetçisi bütün mevcut sıfır çıkışları, günlükleri ve before/after kimliklerini okudu; kalan 240 ID nedeniyle kapanışı reddetti.
