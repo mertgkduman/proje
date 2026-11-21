@@ -1,0 +1,19 @@
+test_archived_tip_registry_foundation_has_party_contract (test_dossiers.DossierTracer.test_archived_tip_registry_foundation_has_party_contract) ... ok
+test_complete_collection_keeps_later_research_explicitly_unexamined (test_dossiers.DossierTracer.test_complete_collection_keeps_later_research_explicitly_unexamined) ... ok
+test_each_finding_keeps_its_own_version_in_history (test_dossiers.DossierTracer.test_each_finding_keeps_its_own_version_in_history) ... ok
+test_event_dates_respect_party_and_foundation (test_dossiers.DossierTracer.test_event_dates_respect_party_and_foundation) ... ok
+test_migration_rollback_and_invalid_records_leave_pointer (test_dossiers.DossierTracer.test_migration_rollback_and_invalid_records_leave_pointer) ... ok
+test_official_site_rejects_unsupported_domain (test_dossiers.DossierTracer.test_official_site_rejects_unsupported_domain) ... ok
+test_publish_refresh_and_party_are_exclusive (test_dossiers.DossierTracer.test_publish_refresh_and_party_are_exclusive) ... ok
+test_real_tip_publish_audit_html_and_receipt_in_isolated_data (test_dossiers.DossierTracer.test_real_tip_publish_audit_html_and_receipt_in_isolated_data) ... 127.0.0.1 - - [21/Nov/2026 09:11:26] "GET /objects/192135ea601a61fc6acdf6c239c627fc366d79c77d53f6d3d15a352cd2da0ab1/readable.html HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2026 09:11:26] "GET /releases/tmpvb46a940/index.html HTTP/1.1" 200 -
+ok
+test_refresh_requires_unchanged_completed_delivery (test_dossiers.DossierTracer.test_refresh_requires_unchanged_completed_delivery) ... ok
+test_registry_confirmation_and_version_cycle_are_checked (test_dossiers.DossierTracer.test_registry_confirmation_and_version_cycle_are_checked) ... ok
+test_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering (test_dossiers.DossierTracer.test_replaying_dossier_keeps_attempt_derived_lead_status_and_rejects_tampering) ... ok
+test_tip_report_exposes_identity_and_grouped_sources (test_dossiers.DossierTracer.test_tip_report_exposes_identity_and_grouped_sources) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 157.812s
+
+OK

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-03-checks/fresh_gate.py", line 151, in <module>
+    try: main()
+         ^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-03-checks/fresh_gate.py", line 144, in main
+    if credited != set(discovered): raise RuntimeError('coverage incomplete')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: coverage incomplete
