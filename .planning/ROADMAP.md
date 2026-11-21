@@ -226,7 +226,7 @@ Plans:
 2. Okur, her eşleştirmenin aktörünü, açıklama ve olay tarihlerini, geçerli belge sürümünü ve bağlamını görebilir; parti açıklaması tek başına uygulamanın gerçekleştiğine kanıt sayılmaz.
 3. Okur, aynı ölçütlerle hazırlanmış karşılaştırmalarda belgelerin desteklediği benzerlik/farklılıkları, kaynağın beyanını ve araştırmacı/yapay zekâ yorumunu ayrı görebilir; kanıt eksikliği uyum veya çelişki sonucu gibi sunulmaz.
 
-**Plans:** 2/15 plans executed
+**Plans:** 3/15 plans executed
 
 Plans:
 **Wave 1**
@@ -239,7 +239,7 @@ Plans:
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [ ] 04-03-PLAN.md — Dokuz parti kapsam envanteri, kapanış/yeniden açılma ve bağımsız önizleme
+- [x] 04-03-PLAN.md — Dokuz parti kapsam envanteri, kapanış/yeniden açılma ve bağımsız önizleme
 
 **Wave 4** *(blocked on Wave 3 completion)*
 
@@ -322,7 +322,7 @@ Plans:
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
 | 3. Tüzük ve programların karşılaştırılması | 16/16 | Complete    | 2026-11-16 |
-| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 2/15 | In Progress|  |
+| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 3/15 | In Progress|  |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 

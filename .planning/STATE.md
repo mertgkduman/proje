@@ -3,18 +3,18 @@ gsd_state_version: "1.0"
 milestone: v1.0
 current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
-current_plan: 3
+current_plan: 4
 status: executing
-stopped_at: "Phase04 plan04-03 Task2 continues: standard preview, private ingestion, source review v1/v2 and internal merge engine complete. HEAD fdca5cf; next public merge CLI/SQL/audit, origin adapter/multi-source validation and full combined acceptance. No plan advance."
-last_updated: "2026-11-18T12:20:00.214Z"
-last_activity: 2026-11-18
-last_activity_desc: Phase 04 plan 04-02 completed; plan 04-03 is next
-state_head: fdca5cf66225e466242126890b3f376a31354ecb
+stopped_at: Completed 04-03-PLAN.md; wave post checks pending
+last_updated: "2026-11-21T17:52:58.250Z"
+last_activity: 2026-11-21
+last_activity_desc: Phase 04 plan 04-03 completed; wave post checks pending
+state_head: 5c2d566748ad225569685f0733a359c48fc621f7
 progress:
   total_phases: 6
   completed_phases: 3
   total_plans: 47
-  completed_plans: 34
+  completed_plans: 35
 ---
 
 # Project State
@@ -28,12 +28,12 @@ See: .planning/PROJECT.md (updated 2026-11-16)
 
 ## Current Position
 
-Current Plan: 3
+Current Plan: 4
 Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
-Plan: 3 of 15
-Status: Executing plan 04-03 — task 1 complete, task 2 continuation
-Last activity: 2026-11-18 — Coverage tracer verified; isolated preview partial implementation preserved for remaining task 2 work
+Plan: 4 of 15
+Status: Plan 04-03 complete; wave post checks pending
+Last activity: 2026-11-21 — 287 regression tests, tracer and phase 2/3 audits verified; 04-03 complete
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -41,7 +41,7 @@ Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/1
 
 **Velocity:**
 
-- Total plans completed: 32 (Faz 1–3 teknik yürütüm ve kullanıcı kabulü tamamlandı)
+- Total plans completed: 35 (Faz 1–3 tamamlandı; Faz 4 üç plan)
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
 - Total execution time: Faz 1 altı, Faz 2 on ve Faz 3 on altı plan ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
@@ -56,7 +56,7 @@ Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/1
 **Recent Trend:**
 
 - Last 5 plans: 03-12, 03-13, 03-14, 03-15, 03-16
-- Trend: Faz 1–3 tamamlandı. Faz 3 teknik 14/14 ve kullanıcı UAT 6/6; kabulün toplu niteliği kayıtlarda korunur. Faz 4 yürütülüyor; 04-01 ve 04-02 tamamlandı, 13 plan kaldı.
+- Trend: Faz 1–3 tamamlandı. Faz 3 teknik 14/14 ve kullanıcı UAT 6/6; kabulün toplu niteliği kayıtlarda korunur. Faz 4 yürütülüyor; 04-01–04-03 tamamlandı, 12 plan kaldı.
 
 **Per-Plan Metrics:**
 
@@ -96,6 +96,7 @@ Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/1
 | Phase 03 P16 | toplam ölçülmedi | 2 tasks | bkz. 03-16-SUMMARY.md |
 | Phase 04 P01 | 3h 35m 52s | 2 tasks | 14 files |
 | Phase 04 P02 | at least 65min since first task commit | 2 tasks | 9 files |
+| Phase 04 P03 | 82h 59m elapsed, including interruptions | 2 tasks | 16 files |
 
 ## Accumulated Context
 
@@ -150,6 +151,9 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 - [Phase 03]: 03-14: Seçili taxonomy 4 ve typed synthesis contract 2 gerçek pasaj, dar kapsam ve missing/attempt dayanaklarını açık taşır; eski snapshot ve mekanik soy korunur.
 - [Phase 04]: 04-01: Çeşme ön seçimi haber iddiası ve doğrulanmamış sonuç sınırıyla yerel schema7 tracer olarak kaydedildi; Faz4 tamamlanmadı.
 - [Phase 04]: 04-02: Preserve version-1 variant snapshots and bind expanded evidence with a separate marker and digest.
+- [Phase 04]: 04-03: Çeşme eski kapanışı yalnız belgelenmiş dar sorgulara bağlıdır; geniş kapsam hücresi açık kalır.
+- [Phase 04]: 04-03: Birleşen olayların önceki kaynak okumaları genişletilmiş kanıta otomatik onay sağlamaz; pending korunur.
+- [Phase 04]: 04-03: İzole preview standart manifest ve audit sözleşmesini açık kaynak kökleriyle kullanır.
 
 ### Pending Todos
 
@@ -189,6 +193,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-18T12:19:55.110Z
-Stopped at: Phase04 plan04-03 Task2 continues: standard preview, private ingestion, source review v1/v2 and internal merge engine complete. HEAD fdca5cf; next public merge CLI/SQL/audit, origin adapter/multi-source validation and full combined acceptance. No plan advance.
-Resume file: .planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-03-checks/CONTINUE.md
+Last session: 2026-11-21T17:51:54.872Z
+Stopped at: Completed 04-03-PLAN.md; wave post checks pending
+Resume file: None
