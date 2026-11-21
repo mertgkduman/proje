@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 21:20 UTC — daha güncel durum
+
+Housing ilk source-check session 37436 çıkış 1 `Kaynak inceleme hedef kapsamı eksik`; üç program beyanı hedefi gerçek pasajla yeni review v2 SHA `511336de76a298db2559687c4248bd3a0c93f565e455ce47aae67373e9ce2703` içine eklendi. Eski ret ve düzeltme `housing-review-correction.md`, commit `a26de25`; gerçek base verisiyle 77/77 hedef/pasaj mekanik eşleşti. Housing source-check v2 PID 764737/session 4966, aynı değişmemiş paket preview PID 754968/session 97130 sürüyor. Uşak staging session 37488 çıkış 0, `usak-staging-proof.md`; düzeltilmiş review v2 SHA `dfb7aba358cc4a7871ff0678a0de8b808ce6a1210fd6e1d3386d13696f8b31ef` ile gerçek source-check PID 765080/session 86472 sürüyor, Uşak preview henüz başlatılmadı. Ulusal source-check PID 723299/session 5218 ve preview PID 723350/session 56904 sürüyor. Eşzamanlı aynı komutu başlatmayın.
+
+Edirne ve Eskişehir yerel ulusal ön seçim haberleri `d9a65c8`, ulusal olaya ayrı kanıt olarak bağlanan geniş taslak `a9b885d`; Bursa ve Sakarya haberleri `5136045`, onların olay taslağı `07fb5cd`. Ulusal ilişki yeni pasajlarla düzeltildi, `62ed004` v3 review 94/94 hedef mekanik eşleşmesi; gerçek CLI değildir. İzmir 18 Ekim ön seçim ve 25 Ekim kongresi kaynakları `9e4f11c`, iki ayrı olay taslağı `7b0354c`: paket SHA `27f85bdb323843b3e1a272c180b85edd547ac64aa5c3ce6ec64c8d2c2c858eb6`, review SHA `53e897ef3f32d1bc9f5f2648c592ab4a05db7d9ebd46bad02af1d6bbb5f5121b`, 104/104 hedef/pasaj mekanik eşleşti, henüz CLI kontrolü yok. Diyarbakır ön seçiminde aynı ANKA ajansına bağlı iki gerçek haber `d4e08f0`. Bunlar kaynak kuyruğunu veya görevi kapatmaz.
+
 ## 2026-11-21 21:00 UTC — daha güncel durum
 
 Program v2 kaynak kontrolü session 75655 ve gerçek preview session 24801 çıkış 0; DB/JSON, iki görünüm, kaynak bağlantıları ve manifest `program-v2-preview-proof.md`, commit `40b97cb`. Housing staging session 31126 çıkış 0, aynı commit `housing-staging-proof.md`; bu iki başarı yalnız o SHA'lı taslaklara aittir. Şimdi housing gerçek source-check PID 754867/session 37436 ve gerçek açık kaynak köklü preview PID 754968/session 97130 `/tmp/gsd-04-yeni-parti-housing` başladı. Ulusal source-check PID 723299/session 5218 ve preview PID 723350/session 56904 hâlâ aktif; koruyun ve gerçek çıkışları bekleyin. Aynı komutların eşzamanlı kopyalarını başlatmayın.
