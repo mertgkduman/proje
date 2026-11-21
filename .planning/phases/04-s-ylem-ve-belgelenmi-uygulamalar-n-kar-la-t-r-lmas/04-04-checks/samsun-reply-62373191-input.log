@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/arsiv.py", line 3663, in <module>
+    main()
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/arsiv.py", line 3575, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/uygulamalar.py", line 1305, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/uygulamalar.py", line 1270, in _load_practice_copy
+    validate_phase_one_workspace(work, storage_root=storage_root)
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/arsiv.py", line 3064, in validate_phase_one_workspace
+    data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/arsiv.py", line 2849, in export_db
+    validate_evidence(db, f, next(p for p in result['passage'] if p['id'] == e['passage_id']), validated_policy=validated_policy)
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/arsiv.py", line 2520, in validate_evidence
+    compiled = check_evidence_attribution(db,finding,row,validated_policy=validated_policy)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-samsun-reply-23g8i3ge/src/kaynaklar.py", line 104, in check_evidence_attribution
+    if not a: raise ValueError('Yeni bulgu için kaynak atıf kaydı gerekli')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Yeni bulgu için kaynak atıf kaydı gerekli

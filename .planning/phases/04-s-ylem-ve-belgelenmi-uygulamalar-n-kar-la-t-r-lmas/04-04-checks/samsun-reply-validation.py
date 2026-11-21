@@ -64,11 +64,11 @@ def check(job, name, args, cwd, marker):
     require(any(line.startswith(marker) for line in path.read_text().splitlines()), f'{name}: missing {marker}')
 
 
-def main():
+def main(package_path, review_path):
     job = os.environ['SLURM_JOB_ID']
     baseline = canonical_identity()
-    ps, rs, inv = (sha(path) for path in (PACKAGE, REVIEW, INVENTORY))
-    package = json.loads(PACKAGE.read_text())
+    ps, rs, inv = (sha(path) for path in (package_path, review_path, INVENTORY))
+    package = json.loads(package_path.read_text())
     require(package['base_release'] == baseline['release'] and package['party_id'] == 'yeni-parti', 'wrong package base/owner')
     with tempfile.TemporaryDirectory(prefix='gsd-0404-samsun-reply-') as tmp:
         stage = Path(tmp)
@@ -105,12 +105,12 @@ def main():
         print(f'Staged {len(paths)} original, readable and view paths; package {ps}; review {rs}', flush=True)
         staged_inventory = stage / 'data/practices/04-inventory.json'
         require(sha(staged_inventory) == inv, 'staged inventory differs')
-        check(job, 'input', ['practice-check','--input',str(PACKAGE),'--inventory',str(staged_inventory)],
+        check(job, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
               stage, 'PRACTICE_INPUT_OK')
-        check(job, 'source', ['practice-source-check','--input',str(PACKAGE),'--review',str(REVIEW)],
+        check(job, 'source', ['practice-source-check','--input',str(package_path),'--review',str(review_path)],
               ROOT, 'PRACTICE_SOURCE_REVIEW_OK')
         out = stage / 'view'
-        check(job, 'preview', ['practice-preview','--input',str(PACKAGE),'--inventory',str(INVENTORY),
+        check(job, 'preview', ['practice-preview','--input',str(package_path),'--inventory',str(INVENTORY),
                                '--out',str(out),'--source-root',str(SOURCE)], ROOT, 'PRACTICE_PREVIEW_OK')
         releases = list((out / 'releases').iterdir())
         require(len(releases) == 1, 'expected one preview release')
@@ -125,7 +125,7 @@ def main():
         for prefix in ('party', 'comparison'):
             require(f'id="{prefix}-practice-0404-samsun-soz-iliski-id"' in report, f'{prefix} relation missing')
         require(canonical_identity()==baseline, 'canonical archive changed')
-        require((sha(PACKAGE),sha(REVIEW),sha(INVENTORY))==(ps,rs,inv), 'draft or inventory changed')
+        require((sha(package_path),sha(review_path),sha(INVENTORY))==(ps,rs,inv), 'draft or inventory changed')
         artifact = DATA / '.staging' / f'gsd-0404-samsun-reply-{job}'
         shutil.copytree(out, artifact)
         result = {'job':job,'scope':'Samsun reply draft only','package_sha256':ps,'review_sha256':rs,
@@ -135,4 +135,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    supplied = tuple(Path(p).resolve() for p in sys.argv[1:])
+    main(*(supplied or (PACKAGE, REVIEW)))
