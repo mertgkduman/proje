@@ -1,0 +1,15 @@
+import json
+from pathlib import Path
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks');pkg=json.loads((p/'package-izmir-draft.json').read_text());extra=json.loads((p/'october-referral-records-draft.json').read_text())['entries'];ids=('0404-diyarbakir-onsecim','0404-diyarbakir-baslama')
+pkg['entries'] += [e for e in extra if any(str(e['values'].get(k,'')).startswith(i) for k in ('id','version_id','document_id') for i in ids)]
+e=pkg['entries'];r=pkg['practice_records'];ev='0404-diyarbakir-onsecim-event';fid='0404-diyarbakir-iliski';speech='0105-speech-p';ref='0404-diyarbakir-onsecim-p';now='2026-11-21T21:19:30+00:00'
+e.append(dict(kind='finding',values=dict(id=fid,party_id='yeni-parti',heading='Söylem ve uygulama',pair_id=fid,text='Başkanların üyelerce belirlenmesine ilişkin beyanın ardından Toplumsal, ANKA kaynaklı haberinde Diyarbakır il başkanlığı için 17 ilçede ön seçimin tamamlandığını aktardı. Sonraki il kongresi ayrı bir aşamadır.',provenance='summary',epistemic_type='claim')))
+for x in (speech,ref):
+ e.append(dict(kind='finding_evidence',values=dict(finding_id=fid,passage_id=x,role='support')))
+ e.append(dict(kind='verification',values=dict(finding_id=fid,passage_id=x,checked_at=now,result='confirmed',reason='Beyan ve ANKA kaynaklı Diyarbakır ön seçim haberi karşılaştırıldı; kongre oylaması çıkarılmadı.')))
+e.append(dict(kind='review',values=dict(id='review-'+fid,kind='finding',subject_id=fid,reviewer_kind='agent',reviewed_at=now,result='reviewed',reason='Beyan ve yerel ön seçim haberi kaynaklarında incelendi.')))
+r['practice_event'].append(dict(id=ev,common_event_key='yeni-parti-diyarbakir-2026-il-on-secim',event_at='2026-10-18',date_precision='day',date_unknown_reason=None,scope_context='Diyarbakır il başkanlığı ön seçimi',title='Diyarbakır il başkanlığı ön seçimi',occurrence_basis='18 Ekim ANKA kaynaklı haber ön seçimin tamamlandığını aktarıyor.'))
+r['practice_event_evidence'].append(dict(event_id=ev,passage_id=ref,supported_point='Diyarbakırda 17 ilçede il başkanlığı ön seçimi',stage='action',concrete_basis='Toplumsalın ANKA kaynaklı haberinde ön seçimin tamamlandığı bildiriliyor.',limitation='Özgün sandık tutanakları ve sonraki il kongresi bu pasajdan doğrulanmaz.',epistemic_type='claim'))
+r['practice_evidence_assessment'].append(dict(event_id=ev,passage_id=ref,stage='action',basis_kind='independent_report'))
+r['practice_relation'].append(dict(id=fid+'-id',statement_id='tracer-statement',event_id=ev,party_id='yeni-parti',topic_id='organ-secim-yontemi',scope_id=None,comparability_reason='Beyan il başkanlarının üyelerce belirlenmesini, haber Diyarbakır il başkanlığı ön seçimini konu eder.',target_finding_id='0105-statement',result_finding_id=None,explanation_finding_id=fid,temporal_context='Beyan 4 Ağustos, ön seçim 18 Ekim 2026 tarihlidir.',authority_context='Üye ön seçimi ile sonraki il kongresi ayrı işlemlerdir.',uncertainty_reason='Özgün sandık ve kongre tutanakları görülmedi.'))
+(p/'package-diyarbakir-draft.json').write_text(json.dumps(pkg,ensure_ascii=False,indent=2)+'\n');print('DIYARBAKIR_DRAFT pending checks')
