@@ -1,0 +1,74 @@
+{
+  "status": "draft_unvalidated",
+  "source_root": "data/practices/sources/yeni-parti",
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-charter-announcement-api",
+        "party_id": "yeni-parti",
+        "title": "Zeynel Emre tüzük değişikliği ve kurultay açıklaması",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-charter-announcement-api-v1",
+        "document_id": "0404-charter-announcement-api",
+        "original_url": "https://api.yeni-parti.org.tr/api/haberler/295",
+        "final_url": "https://api.yeni-parti.org.tr/api/haberler/295",
+        "document_date": "2026-11-09",
+        "version_label": "Site API özgün JSON yanıtı; sözcü açıklaması",
+        "accessed_at": "2026-11-21T21:35:30.869818+00:00",
+        "verified_at": "2026-11-21T21:35:30.869818+00:00",
+        "mime": "application/json",
+        "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
+        "original_path": "objects/4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2/original.html.bin",
+        "readable_path": "objects/4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2/readable.html",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "062b1fc9cf4de351fbc26e9ef4003ee0",
+        "format_version": 2,
+        "source_sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
+        "index_path": "views/062b1fc9cf4de351fbc26e9ef4003ee0/index.html",
+        "manifest_path": "views/062b1fc9cf4de351fbc26e9ef4003ee0/manifest.json",
+        "manifest_sha256": "6d52dfa3837dd15479db41c229c6c5d124d60d67c5a9c3407e5f0027f766e5bb",
+        "version_id": "0404-charter-announcement-api-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-charter-announcement-api-p",
+        "version_id": "0404-charter-announcement-api-v1",
+        "exact": "bir sonraki olağan kurultay takvimine kadar geçerli olmak üzere, seksenden yüz elliye çıkartılmasına, otuz da yedek üyenin görev yapmasına",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Parti Meclisinin 150 üyeye çıkarılması ve bir defalık geçici süre",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-charter-announcement-api-v1",
+        "kind": "party",
+        "publisher": "Yeni Parti (yeni-parti.org.tr yayını)",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-11-09",
+        "date_precision": "day",
+        "public_url": "https://api.yeni-parti.org.tr/api/haberler/295",
+        "basis": "Haber sayfası JavaScriptinin çağırdığı kamuya açık JSON yanıtında başlık, Zeynel Emreye atfedilen açıklama ve created_at incelendi; bu alan adı kullanıcının seçtiği başka resmî alan adıyla özdeşlenmedi."
+      }
+    }
+  ]
+}

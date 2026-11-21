@@ -11570,6 +11570,12 @@
       "url": "https://api.yeni-parti.org.tr/api/haberler/295",
       "section": "Yayınlanan JSON icerik: 9 Kasım sözcü açıklaması, parti içi demokrasi ve PM değişikliği",
       "note": "Haber sayfasının kendi JavaScripti GET /api/haberler/295 uç noktasını gösterdi; API HTTP 200 özgün JSON gövdesi okundu, created_at ve updated_at 9 Kasım 16:08:39.050Z. Zeynel Emreye atfedilen açıklama bir sonraki olağan kurultay takvimine kadar bir kereye mahsus PMnin 80den 150ye çıkmasını ve 30 yedeği bildiriyor; bu açıklama değişikliğin tam tüzük metni değildir. Aynı açıklama 639.454 üyeye ve yüzde 81 üzeri katılıma atıf yapıyor; önceki 8 Kasım kısmi veriyle kapsam farkı ayrıca araştırılır. Bu domain kullanıcı tarafından seçilen yenipartiyiz.biz ile özdeşlenmedi. JSON ham baytı mevcut HTML/PDF kaynak şemasına dönüştürülmeden araştırma nesnesi olarak saklandı."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://api.yeni-parti.org.tr/api/haberler/295",
+      "section": "JSON özgün bayt, aynı bayttan pasif görünüm ve 9 Kasım sözcü pasajı",
+      "note": "Normal capture MIME application/json bildirdi ve özgün bayt önceki JSON SHA ile eşleşti. Var olan kaynak görüntüleyicisi ile pasif görünüm ve belirli pasaj başarıyla doğrulandı; partiye bağlı belge/sürüm/atıf taslağı hazırlandı. Tam paket/source-check/preview yapılmadı; yayın başka alan adı üzerinden sözcü beyanıdır, tam tüzük değişiklik metni değildir."
     }
   ],
   "queries": [
@@ -14542,6 +14548,12 @@
       "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
       "accessed_at": "2026-11-21T21:34:03+00:00",
       "state": "json_raw_unbound"
+    },
+    {
+      "url": "https://api.yeni-parti.org.tr/api/haberler/295",
+      "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
+      "accessed_at": "2026-11-21T21:35:30.869818+00:00",
+      "state": "source_records_draft"
     }
   ],
   "legacy_action_queue": [
