@@ -1416,6 +1416,734 @@
       "limitations": "Sandık tutanağı görülmedi; ön seçim ile sonraki kongre ayrı işlemlerdir.",
       "result": "reviewed",
       "reason": "Diyarbakır ANKA haberi ile 4 Ağustos beyanı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ankara-kongre-event|0404-ankara-kongre-vtv-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:26:22+00:00",
+      "source_version_ids": "[\"0404-ankara-kongre-vtv-v1\"]",
+      "passage_ids": "[\"0404-ankara-kongre-vtv-p\"]",
+      "inspected_sections": "[\"VTV Ankara kongresi 372 delege ve 357 oy\"]",
+      "supported_claim": "VTV 372 delege ve 357 oy aktarıyor.",
+      "limitations": "İki kongre haberi sayıları farklı aktarıyor; sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve Ankara kongresine ilişkin iki haberin sayıları kaynaklarıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ankara-kongre-event|0404-ankara-kongre-baskent-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:26:22+00:00",
+      "source_version_ids": "[\"0404-ankara-kongre-baskent-v1\"]",
+      "passage_ids": "[\"0404-ankara-kongre-baskent-p\"]",
+      "inspected_sections": "[\"Başkent Haber Ankara kongresi 349 geçerli oy\"]",
+      "supported_claim": "Başkent Haber 349 geçerli oy bildiriyor.",
+      "limitations": "İki kongre haberi sayıları farklı aktarıyor; sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve Ankara kongresine ilişkin iki haberin sayıları kaynaklarıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ankara-kongre-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:26:22+00:00",
+      "source_version_ids": "[\"0404-ankara-kongre-vtv-v1\", \"0404-ankara-kongre-baskent-v1\"]",
+      "passage_ids": "[\"0404-ankara-kongre-vtv-p\", \"0404-ankara-kongre-baskent-p\"]",
+      "inspected_sections": "[\"VTV Ankara kongresi 372 delege ve 357 oy\", \"Başkent Haber Ankara kongresi 349 geçerli oy\"]",
+      "supported_claim": "İki haber Ankara kongresini farklı sayılarla bildiriyor.",
+      "limitations": "İki kongre haberi sayıları farklı aktarıyor; sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve Ankara kongresine ilişkin iki haberin sayıları kaynaklarıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ankara-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:26:22+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-ankara-kongre-vtv-v1\", \"0404-ankara-kongre-baskent-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-ankara-kongre-vtv-p\", \"0404-ankara-kongre-baskent-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"VTV Ankara kongresi 372 delege ve 357 oy\", \"Başkent Haber Ankara kongresi 349 geçerli oy\"]",
+      "supported_claim": "Beyan ve iki kongre haberi ilgili süreç aşamalarını gösteriyor.",
+      "limitations": "İki kongre haberi sayıları farklı aktarıyor; sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve Ankara kongresine ilişkin iki haberin sayıları kaynaklarıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ankara-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:26:22+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\"]",
+      "supported_claim": "Üyelerin başkan belirleme yöntemi beyanı hedefleniyor.",
+      "limitations": "İki kongre haberi sayıları farklı aktarıyor; sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve Ankara kongresine ilişkin iki haberin sayıları kaynaklarıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ankara-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:26:22+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-ankara-kongre-vtv-v1\", \"0404-ankara-kongre-baskent-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-ankara-kongre-vtv-p\", \"0404-ankara-kongre-baskent-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"VTV Ankara kongresi 372 delege ve 357 oy\", \"Başkent Haber Ankara kongresi 349 geçerli oy\"]",
+      "supported_claim": "Açıklama iki haberin farklı sayılarını ve beyanı atıfla koruyor.",
+      "limitations": "İki kongre haberi sayıları farklı aktarıyor; sandık ve kongre tutanakları görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve Ankara kongresine ilişkin iki haberin sayıları kaynaklarıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-pm-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\", \"Kuruluş tüzüğü Kurucular Kurulu geçici seçim\"]",
+      "supported_claim": "Kuruluş tüzüğündeki Parti Meclisi bileşimi ve geçici seçim incelendi.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-pm-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\", \"Kuruluş tüzüğü Kurucular Kurulu geçici seçim\"]",
+      "supported_claim": "Eski tüzük ve geçici seçim özeti iki pasajla destekleniyor.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-pm-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\"]",
+      "supported_claim": "Alıntı eski tüzükteki Parti Meclisi üye sayısını gösteriyor.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-pm-degisikligi-event|0404-tuzuk-degisikligi-haber-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"0404-tuzuk-degisikligi-haber-v1\"]",
+      "passage_ids": "[\"0404-tuzuk-degisikligi-haber-p\"]",
+      "inspected_sections": "[\"Cumhuriyet 9 Kasım değişiklik haberi\"]",
+      "supported_claim": "Cumhuriyet tüzük değişikliği ve 150 üyeyi haberleştiriyor.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-pm-degisikligi-event|0404-charter-announcement-api-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"0404-charter-announcement-api-v1\"]",
+      "passage_ids": "[\"0404-charter-announcement-api-p\"]",
+      "inspected_sections": "[\"9 Kasım site JSON sözcü açıklaması tek seferlik süre ve üye sayıları\"]",
+      "supported_claim": "Sözcü açıklaması bir defalık 150 asıl ve 30 yedek süresini aktarıyor.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-pm-degisikligi-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"0404-tuzuk-degisikligi-haber-v1\", \"0404-charter-announcement-api-v1\"]",
+      "passage_ids": "[\"0404-tuzuk-degisikligi-haber-p\", \"0404-charter-announcement-api-p\"]",
+      "inspected_sections": "[\"Cumhuriyet 9 Kasım değişiklik haberi\", \"9 Kasım site JSON sözcü açıklaması tek seferlik süre ve üye sayıları\"]",
+      "supported_claim": "9 Kasım haber ve sözcü açıklaması Parti Meclisi değişikliğini anlatıyor.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-pm-degisikligi-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-tuzuk-degisikligi-haber-v1\", \"0404-charter-announcement-api-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\", \"0404-tuzuk-degisikligi-haber-p\", \"0404-charter-announcement-api-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\", \"Kuruluş tüzüğü Kurucular Kurulu geçici seçim\", \"Cumhuriyet 9 Kasım değişiklik haberi\", \"9 Kasım site JSON sözcü açıklaması tek seferlik süre ve üye sayıları\"]",
+      "supported_claim": "Kuruluş tüzüğü ile 9 Kasım açıklaması bileşim açısından karşılaştırıldı.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-pm-degisikligi-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\", \"Kuruluş tüzüğü Kurucular Kurulu geçici seçim\"]",
+      "supported_claim": "Hedef eski tüzükteki bileşim ve geçici seçim hükmüdür.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-pm-degisikligi-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:35:30+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-tuzuk-degisikligi-haber-v1\", \"0404-charter-announcement-api-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\", \"0404-tuzuk-degisikligi-haber-p\", \"0404-charter-announcement-api-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\", \"Kuruluş tüzüğü Kurucular Kurulu geçici seçim\", \"Cumhuriyet 9 Kasım değişiklik haberi\", \"9 Kasım site JSON sözcü açıklaması tek seferlik süre ve üye sayıları\"]",
+      "supported_claim": "Açıklama eski hüküm, haber ve geçici düzen sözcü açıklamasını ayırıyor.",
+      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-tarim-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-tarim-hayvancilik-p1\", \"0303-epm-program-tarim-hayvancilik-p2\"]",
+      "inspected_sections": "[\"Programda tarım desteklerinin zamanında ödenmesi\", \"Programda tarımsal girdi maliyeti destekleri\"]",
+      "supported_claim": "Programın tarım destekleri iki pasajla incelendi.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-tarim-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-tarim-hayvancilik-p1\", \"0303-epm-program-tarim-hayvancilik-p2\"]",
+      "inspected_sections": "[\"Programda tarım desteklerinin zamanında ödenmesi\", \"Programda tarımsal girdi maliyeti destekleri\"]",
+      "supported_claim": "Tarımsal destek özeti iki program pasajına bağlı.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-tarim-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-tarim-hayvancilik-p1\"]",
+      "inspected_sections": "[\"Programda tarım desteklerinin zamanında ödenmesi\"]",
+      "supported_claim": "Tarım destek alıntısı program pasajında yer alıyor.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tarim-grup-onerisi|0404-tbmm-tarim-tutanak-oneri-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"0404-tbmm-tarim-tutanak-v1\"]",
+      "passage_ids": "[\"0404-tbmm-tarim-tutanak-oneri-p\"]",
+      "inspected_sections": "[\"TBMM 123. birleşim tarım genel görüşme grup önerisi\"]",
+      "supported_claim": "Grup önerisi genel görüşmenin öne alınmasını istiyor.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tarim-grup-onerisi|0404-tbmm-tarim-tutanak-oylama-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"0404-tbmm-tarim-tutanak-v1\"]",
+      "passage_ids": "[\"0404-tbmm-tarim-tutanak-oylama-p\"]",
+      "inspected_sections": "[\"TBMM 123. birleşim yoklama sonrası öneri oylaması\"]",
+      "supported_claim": "Yoklama sonrasında grup önerisi kabul edilmedi.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tarim-grup-onerisi",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"0404-tbmm-tarim-tutanak-v1\"]",
+      "passage_ids": "[\"0404-tbmm-tarim-tutanak-oneri-p\", \"0404-tbmm-tarim-tutanak-oylama-p\"]",
+      "inspected_sections": "[\"TBMM 123. birleşim tarım genel görüşme grup önerisi\", \"TBMM 123. birleşim yoklama sonrası öneri oylaması\"]",
+      "supported_claim": "8 Ağustos tarım grup önerisi ve oylama tutanakta kayıtlı.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tarim-grup-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-tarim-tutanak-v1\"]",
+      "passage_ids": "[\"0303-epm-program-tarim-hayvancilik-p1\", \"0303-epm-program-tarim-hayvancilik-p2\", \"0404-tbmm-tarim-tutanak-oneri-p\", \"0404-tbmm-tarim-tutanak-oylama-p\"]",
+      "inspected_sections": "[\"Programda tarım desteklerinin zamanında ödenmesi\", \"Programda tarımsal girdi maliyeti destekleri\", \"TBMM 123. birleşim tarım genel görüşme grup önerisi\", \"TBMM 123. birleşim yoklama sonrası öneri oylaması\"]",
+      "supported_claim": "Program destekleri ve tarım genel görüşme girişimi karşılaştırıldı.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tarim-grup-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-tarim-hayvancilik-p1\", \"0303-epm-program-tarim-hayvancilik-p2\"]",
+      "inspected_sections": "[\"Programda tarım desteklerinin zamanında ödenmesi\", \"Programda tarımsal girdi maliyeti destekleri\"]",
+      "supported_claim": "Hedef tarım desteklerine ilişkin program hükmüdür.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tarim-grup-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:43:06+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-tarim-tutanak-v1\"]",
+      "passage_ids": "[\"0303-epm-program-tarim-hayvancilik-p1\", \"0303-epm-program-tarim-hayvancilik-p2\", \"0404-tbmm-tarim-tutanak-oneri-p\", \"0404-tbmm-tarim-tutanak-oylama-p\"]",
+      "inspected_sections": "[\"Programda tarım desteklerinin zamanında ödenmesi\", \"Programda tarımsal girdi maliyeti destekleri\", \"TBMM 123. birleşim tarım genel görüşme grup önerisi\", \"TBMM 123. birleşim yoklama sonrası öneri oylaması\"]",
+      "supported_claim": "Açıklama program, grup önerisi ve oylamayı ayırıyor.",
+      "limitations": "Ret grup önerisine ilişkindir; temel önergenin sonraki süreci veya fiilî destek ödemesi görülmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program ve 8 Ağustos TBMM tarım görüşmesi tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-emekli-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-sosyal-guvenlik-p4\"]",
+      "inspected_sections": "[\"Program sosyal güvenlik: emekli yoksulluğu\"]",
+      "supported_claim": "Program emekli yoksulluğuna dönük gelir politikasını öneriyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-emekli-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-sosyal-guvenlik-p4\"]",
+      "inspected_sections": "[\"Program sosyal güvenlik: emekli yoksulluğu\"]",
+      "supported_claim": "Emekli gelir politikası özeti program pasajına dayanıyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-emekli-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-sosyal-guvenlik-p4\"]",
+      "inspected_sections": "[\"Program sosyal güvenlik: emekli yoksulluğu\"]",
+      "supported_claim": "Emekli yoksulluğu alıntısı programda yer alıyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-3960-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"0404-tbmm-emekli-3960-v1\"]",
+      "passage_ids": "[\"0404-tbmm-emekli-3960-p\"]",
+      "inspected_sections": "[\"TBMM 2/3960 teklif özeti\"]",
+      "supported_claim": "2/3960 teklifinin asgari ücret düzeyi amacı kayıtlı.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-imza-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"0404-tbmm-emekli-3960-v1\"]",
+      "passage_ids": "[\"0404-tbmm-emekli-imza-p\"]",
+      "inspected_sections": "[\"TBMM 2/3960 ilk imza sahibi\"]",
+      "supported_claim": "İbrahim Arslan teklifin ilk imza sahibidir.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-tarih-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"0404-tbmm-emekli-3960-v1\"]",
+      "passage_ids": "[\"0404-tbmm-emekli-tarih-p\"]",
+      "inspected_sections": "[\"TBMM 2/3960 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Teklifin Başkanlığa geliş tarihi 16 Ekimdir.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-emekli-teklif-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"0404-tbmm-emekli-3960-v1\"]",
+      "passage_ids": "[\"0404-tbmm-emekli-3960-p\", \"0404-tbmm-emekli-imza-p\", \"0404-tbmm-emekli-tarih-p\"]",
+      "inspected_sections": "[\"TBMM 2/3960 teklif özeti\", \"TBMM 2/3960 ilk imza sahibi\", \"TBMM 2/3960 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Bireysel teklif amacı, ilk imza ve geliş tarihi TBMM kaydında gösteriliyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-emekli-teklif-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-emekli-3960-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-sosyal-guvenlik-p4\", \"0404-tbmm-emekli-3960-p\", \"0404-tbmm-emekli-imza-p\", \"0404-tbmm-emekli-tarih-p\"]",
+      "inspected_sections": "[\"Program sosyal güvenlik: emekli yoksulluğu\", \"TBMM 2/3960 teklif özeti\", \"TBMM 2/3960 ilk imza sahibi\", \"TBMM 2/3960 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Programdaki emekli geliri hedefi ile milletvekilinin teklifi ilişkilidir.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-emekli-teklif-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-sosyal-guvenlik-p4\"]",
+      "inspected_sections": "[\"Program sosyal güvenlik: emekli yoksulluğu\"]",
+      "supported_claim": "Hedef emekli yoksulluğuna yönelik program hükmüdür.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-emekli-teklif-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:47:56+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-emekli-3960-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-sosyal-guvenlik-p4\", \"0404-tbmm-emekli-3960-p\", \"0404-tbmm-emekli-imza-p\", \"0404-tbmm-emekli-tarih-p\"]",
+      "inspected_sections": "[\"Program sosyal güvenlik: emekli yoksulluğu\", \"TBMM 2/3960 teklif özeti\", \"TBMM 2/3960 ilk imza sahibi\", \"TBMM 2/3960 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Açıklama program, bireysel teklif sahibi ve amacı ayırıyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya aylıklara fiilen yansıması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3960 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-engelli-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-engellilik-p4\"]",
+      "inspected_sections": "[\"Program engellilik: eğitim ve yardımcı teknolojiler\"]",
+      "supported_claim": "Program erişilebilir eğitim destekleri ve teknolojileri öneriyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-engelli-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-engellilik-p4\"]",
+      "inspected_sections": "[\"Program engellilik: eğitim ve yardımcı teknolojiler\"]",
+      "supported_claim": "Eğitim destekleri özeti program pasajına dayanıyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-engelli-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-engellilik-p4\"]",
+      "inspected_sections": "[\"Program engellilik: eğitim ve yardımcı teknolojiler\"]",
+      "supported_claim": "Yardımcı teknolojilere ilişkin alıntı programda yer alıyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-3853-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"0404-tbmm-engelli-3853-v1\"]",
+      "passage_ids": "[\"0404-tbmm-engelli-3853-p\"]",
+      "inspected_sections": "[\"TBMM 2/3853 teklif özeti\"]",
+      "supported_claim": "2/3853 erişilebilir materyal ve teknolojileri öneriyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-imza-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"0404-tbmm-engelli-3853-v1\"]",
+      "passage_ids": "[\"0404-tbmm-engelli-imza-p\"]",
+      "inspected_sections": "[\"TBMM 2/3853 ilk imza sahibi\"]",
+      "supported_claim": "Mahmut Tanal teklifin ilk imza sahibidir.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-tarih-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"0404-tbmm-engelli-3853-v1\"]",
+      "passage_ids": "[\"0404-tbmm-engelli-tarih-p\"]",
+      "inspected_sections": "[\"TBMM 2/3853 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Teklifin Başkanlığa geliş tarihi 17 Eylüldür.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-engelli-teklif-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"0404-tbmm-engelli-3853-v1\"]",
+      "passage_ids": "[\"0404-tbmm-engelli-3853-p\", \"0404-tbmm-engelli-imza-p\", \"0404-tbmm-engelli-tarih-p\"]",
+      "inspected_sections": "[\"TBMM 2/3853 teklif özeti\", \"TBMM 2/3853 ilk imza sahibi\", \"TBMM 2/3853 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Bireysel teklifin amacı, ilk imza ve geliş tarihi TBMM kaydında gösteriliyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-engelli-teklif-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-engelli-3853-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-engellilik-p4\", \"0404-tbmm-engelli-3853-p\", \"0404-tbmm-engelli-imza-p\", \"0404-tbmm-engelli-tarih-p\"]",
+      "inspected_sections": "[\"Program engellilik: eğitim ve yardımcı teknolojiler\", \"TBMM 2/3853 teklif özeti\", \"TBMM 2/3853 ilk imza sahibi\", \"TBMM 2/3853 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Program eğitim desteği ile milletvekilinin teklifi ilişkilidir.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-engelli-teklif-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-engellilik-p4\"]",
+      "inspected_sections": "[\"Program engellilik: eğitim ve yardımcı teknolojiler\"]",
+      "supported_claim": "Hedef eğitim ve yardımcı teknolojilere yönelik program hükmüdür.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-engelli-teklif-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T21:54:51+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-engelli-3853-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail-engellilik-p4\", \"0404-tbmm-engelli-3853-p\", \"0404-tbmm-engelli-imza-p\", \"0404-tbmm-engelli-tarih-p\"]",
+      "inspected_sections": "[\"Program engellilik: eğitim ve yardımcı teknolojiler\", \"TBMM 2/3853 teklif özeti\", \"TBMM 2/3853 ilk imza sahibi\", \"TBMM 2/3853 Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Açıklama program, bireysel teklif sahibi ve amacı ayırıyor.",
+      "limitations": "Bireysel teklifin grup önerisi, yasalaşması veya hizmetlerin fiilen sunulması kayıttan çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "Kurucu program ile TBMM 2/3853 teklif künyesi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-onsecim-event|0404-aydin-sonuc-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0404-aydin-sonuc-v1\"]",
+      "passage_ids": "[\"0404-aydin-sonuc-p\"]",
+      "inspected_sections": "[\"18 Ekim ön seçim haberi, 22 Ekim güncellemesi\"]",
+      "supported_claim": "Aydın Times ön seçim birincisine 4.152 oy atfediyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-onsecim-event|0404-aydin-onsecim-ihbar-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0404-aydin-onsecim-ihbar-v1\"]",
+      "passage_ids": "[\"0404-aydin-onsecim-ihbar-p\"]",
+      "inspected_sections": "[\"19 Ekim ön seçim haberindeki sayı\"]",
+      "supported_claim": "İhbar Aydın ön seçim birincisine 4.094 oy atfediyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aydin-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0404-aydin-sonuc-v1\", \"0404-aydin-onsecim-ihbar-v1\"]",
+      "passage_ids": "[\"0404-aydin-sonuc-p\", \"0404-aydin-onsecim-ihbar-p\"]",
+      "inspected_sections": "[\"18 Ekim ön seçim haberi, 22 Ekim güncellemesi\", \"19 Ekim ön seçim haberindeki sayı\"]",
+      "supported_claim": "Aydın onsecim aşaması ilgili haber pasajlarında bildiriliyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aydin-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-sonuc-v1\", \"0404-aydin-onsecim-ihbar-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-sonuc-p\", \"0404-aydin-onsecim-ihbar-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"18 Ekim ön seçim haberi, 22 Ekim güncellemesi\", \"19 Ekim ön seçim haberindeki sayı\"]",
+      "supported_claim": "Beyan Aydın onsecim aşamasıyla kaynaklarına göre karşılaştırılıyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aydin-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\"]",
+      "supported_claim": "onsecim karşılaştırmasının hedefi üyelerin başkan belirleme beyanıdır.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aydin-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-sonuc-v1\", \"0404-aydin-onsecim-ihbar-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-sonuc-p\", \"0404-aydin-onsecim-ihbar-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"18 Ekim ön seçim haberi, 22 Ekim güncellemesi\", \"19 Ekim ön seçim haberindeki sayı\"]",
+      "supported_claim": "Açıklama Aydın onsecim haberlerinin sınırlılıklarını gösteriyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-bulten-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0404-aydin-kongre-bulten-v1\"]",
+      "passage_ids": "[\"0404-aydin-kongre-bulten-p\"]",
+      "inspected_sections": "[\"26 Ekim il kongresi haberindeki seçim bildirimi\"]",
+      "supported_claim": "Bülten Aydın kongrede Demir’in seçildiğini bildiriyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-gunaydin-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
+      "supported_claim": "Günaydın Aydın oy verme bitişini saat 17.00 için bekliyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aydin-kongre-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0404-aydin-kongre-bulten-v1\", \"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0404-aydin-kongre-bulten-p\", \"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"26 Ekim il kongresi haberindeki seçim bildirimi\", \"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
+      "supported_claim": "Aydın kongre aşaması ilgili haber pasajlarında bildiriliyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aydin-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-kongre-bulten-v1\", \"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-kongre-bulten-p\", \"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"26 Ekim il kongresi haberindeki seçim bildirimi\", \"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
+      "supported_claim": "Beyan Aydın kongre aşamasıyla kaynaklarına göre karşılaştırılıyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aydin-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\"]",
+      "supported_claim": "kongre karşılaştırmasının hedefi üyelerin başkan belirleme beyanıdır.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aydin-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-kongre-bulten-v1\", \"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-kongre-bulten-p\", \"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"26 Ekim il kongresi haberindeki seçim bildirimi\", \"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
+      "supported_claim": "Açıklama Aydın kongre haberlerinin sınırlılıklarını gösteriyor.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
     }
   ],
   "source_review_refs": [
@@ -1854,6 +2582,230 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0404-diyarbakir-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ankara-kongre-event|0404-ankara-kongre-vtv-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ankara-kongre-event|0404-ankara-kongre-baskent-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ankara-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ankara-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ankara-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ankara-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-pm-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-pm-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-pm-charter-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-pm-degisikligi-event|0404-tuzuk-degisikligi-haber-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-pm-degisikligi-event|0404-charter-announcement-api-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-pm-degisikligi-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-pm-degisikligi-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-pm-degisikligi-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-pm-degisikligi-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-tarim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-tarim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-tarim-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tarim-grup-onerisi|0404-tbmm-tarim-tutanak-oneri-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tarim-grup-onerisi|0404-tbmm-tarim-tutanak-oylama-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tarim-grup-onerisi"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tarim-grup-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tarim-grup-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tarim-grup-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-emekli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-emekli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-emekli-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-3960-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-imza-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-emekli-teklif-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-emekli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-emekli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-emekli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-engelli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-engelli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-engelli-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-3853-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-imza-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-engelli-teklif-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-engelli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-engelli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-engelli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-onsecim-event|0404-aydin-sonuc-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-onsecim-event|0404-aydin-onsecim-ihbar-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aydin-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aydin-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aydin-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aydin-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-bulten-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-gunaydin-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aydin-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aydin-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aydin-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aydin-kongre-iliski-id"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Aydın geniş taslağı gerçek önizlemesi
 
-Paket SHA256 `2b56b5767b3caa81c79911eeacfb0de4ae162ace75815a00b2d8dfec8fc43b6f`; staging practice-check session 65770 çıkış 0. Açık kaynak köklü preview session 63162 çıkış 0 `PRACTICE_PREVIEW_OK /tmp/gsd-04-yeni-parti-aydin-v2`. Düzeltilmiş review SHA `f7a5d3da6ceb0340b4afd287c117933b94bb515cb8e0c791d1ea0f19bb0e756a` için gerçek source-check session 97095 bu yazımda sürüyor; önceki review reddi `aydin-review-correction.md` içinde korunuyor.
+Paket SHA256 `2b56b5767b3caa81c79911eeacfb0de4ae162ace75815a00b2d8dfec8fc43b6f`; staging practice-check session 65770 çıkış 0. Açık kaynak köklü preview session 63162 çıkış 0 `PRACTICE_PREVIEW_OK /tmp/gsd-04-yeni-parti-aydin-v2`. Düzeltilmiş review SHA `f7a5d3da6ceb0340b4afd287c117933b94bb515cb8e0c791d1ea0f19bb0e756a` için gerçek source-check session 97095 çıkış 0 `PRACTICE_SOURCE_REVIEW_OK`; önceki review reddi `aydin-review-correction.md` içinde korunuyor.
 
 Preview release `7a481e2bd726443cad5bad6b748a66fa`, temel `f67ca0a35e634035bf3aa83a46571f50`, renderer 27, tracer ve preview true. Manifest dosya hashleri eşleşti: DB `3e50e78399c649b6763c213f8746928d74d1bb18f42bffcfd8e3adcf9019af2d`, JSON `85ae801dfa21849c25a26c8195de26d435c8666e06522549ceb5f76a21097db0`, HTML `711ef8d9c028238a748e90fe61ff9ff5e6c6e6e935d75579db7ec8faa1621401`, manifest `8afc8d51fd14119dd0de58271314dad24bd08f441f62382f054d447603b7bf04`.
 
