@@ -1,5 +1,15 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Slurm koşusunda doğrulanan sonuçlar — 2026-11-21 02:12:05 UTC
+
+62261875 etkin. Geçerli 083475eeaf93e3b034722e3bf702e41598952e29144ce19b376d3cf116bff8e4 kimliğinde 47/287 gerçek başarı var. Kapanış denetçisi bütün mevcut sıfır çıkışları, günlükleri ve before/after kimliklerini okudu; kalan 240 ID nedeniyle kapanışı reddetti.
+
+- Kesintiden sonraki `test_new_source_end_to_end` batch 09713561827049fba28e05516e350f6e, 22:35:24 UTC test başarı kaydı, exit 0 ve eşleşen kimlik. Ardından dört kısa preview kontrolü aynı koşuda geçti.
+- `test_public_merge_distinct_and_unresolved_preserve_references` batch 0337e9409b5244e99320d12864069052, 00:06:46 UTC exit 0 ve eşleşen kimlik.
+- `test_public_merge_rejects_bad_digest_and_conflicting_decisions` batch db4dcb0c7a0b4d2fa34e172f81bdc72c, 01:14:54 UTC exit 0 ve eşleşen kimlik.
+- Açık batch e74c8179581e44d2a0cb3fc2180fff2d, `test_public_merge_separate_party_physical_roots`, 01:14:55 UTC başladı. Yeni durum için canlı JSONL ve Slurm kayıtlarına bakın.
+- 62173687 ve 62262262 önceki bölümdeki sıra ile bağlı. Kapanış betiği denetlenmiş tracer kopyasını Faz 2/Faz 3 denetimlerinden önce kalıcı olarak saklar (3ef0e60). Üretim/test dosyaları, plan ilerlemesi ve kanonik yayın kimliği aynı kalır.
+
 ## Slurm iş sırası — 2026-11-20 21:05:22 UTC
 
 - 62261875 çalışan seri regresyondur. 40/287 gerçek başarıdan devam etti. Konak değişiminde kesilen test yeni batch 09713561827049fba28e05516e350f6e altında tekrar başladı. Önbellekler isteğe bağlı çalıştırma girdileridir ve eski sonuçların kaydedilmiş fixture bağları korunur.
