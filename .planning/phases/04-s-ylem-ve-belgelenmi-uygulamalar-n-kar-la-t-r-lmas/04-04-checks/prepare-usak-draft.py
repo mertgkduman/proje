@@ -1,0 +1,18 @@
+import json
+from pathlib import Path
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks')
+pkg=json.loads((p/'package-housing-draft.json').read_text()); sources=json.loads((p/'usak-source-records-draft.json').read_text())['entries']
+ids=('0404-usak-onsecim','0404-usak-kongre-bitkin','0404-usak-kongre-bitgin','0404-usak-adaylik')
+pkg['entries'] += [e for e in sources if any(str(e['values'].get(k,'')).startswith(i) for k in ('id','version_id','document_id') for i in ids)]
+e=pkg['entries']; r=pkg['practice_records']; now='2026-11-21T20:33:18+00:00'; ev='0404-usak-onsecim-event'; fid='0404-usak-iliski'; speech='0105-speech-p'; ref='0404-usak-onsecim-detay-p'
+e.append(dict(kind='passage',values=dict(id=ref,version_id='0404-usak-onsecim-v1',exact='Yeni Parti Uşak İl Başkanlığı için 18 Ekim 2026 Pazar günü Atatürk Kültür Merkezi’nde gerçekleştirilen seçimde sandık sonuçları belli oldu.',prefix=None,suffix=None,article=None,section='18 Ekim il başkanlığı ön seçimi haberi',pdf_page_index=None,printed_page=None)))
+e.append(dict(kind='finding',values=dict(id=fid,party_id='yeni-parti',heading='Söylem ve uygulama',pair_id=fid,text='İl başkanının üyelerce belirlenmesine ilişkin beyanın ardından Uşak Olay, 18 Ekim Uşak il başkanlığı ön seçiminin sonucunu haberleştirdi. İl kongresi ve aday adının kaynaklardaki farklı yazımları ayrı incelenmektedir.',provenance='summary',epistemic_type='claim')))
+for passage in (speech,ref):
+ e.append(dict(kind='finding_evidence',values=dict(finding_id=fid,passage_id=passage,role='support')))
+ e.append(dict(kind='verification',values=dict(finding_id=fid,passage_id=passage,checked_at=now,result='confirmed',reason='Başkanların üyelerce belirlenmesi beyanı ve il ön seçim haberi kaynaklarından okundu; kongre sonucuyla eşitlenmedi.')))
+e.append(dict(kind='review',values=dict(id='review-'+fid,kind='finding',subject_id=fid,reviewer_kind='agent',reviewed_at=now,result='reviewed',reason='Beyan ve haber karşılaştırıldı; kaynaklardaki isim yazımı ve kongre ayrı takip ediliyor.')))
+r['practice_event'].append(dict(id=ev,common_event_key='yeni-parti-usak-2026-il-on-secim',event_at='2026-10-18',date_precision='day',date_unknown_reason=None,scope_context='Uşak il başkanlığı ön seçimi',title='Uşak il başkanlığı ön seçimi',occurrence_basis='18 Ekim tarihli yerel haber ön seçim sonucunu aktarıyor.'))
+r['practice_event_evidence'].append(dict(event_id=ev,passage_id=ref,supported_point='Uşak ön seçim sonucunun haberleştirilmesi',stage='action',concrete_basis='Uşak Olay 18 Ekim ön seçimi ve oy sayısını haberleştiriyor.',limitation='Sandık tutanakları görülmedi; kongre haberlerindeki ad yazımı farkı ve kongre aşaması ayrıca inceleniyor.',epistemic_type='claim'))
+r['practice_evidence_assessment'].append(dict(event_id=ev,passage_id=ref,stage='action',basis_kind='independent_report'))
+r['practice_relation'].append(dict(id='0404-usak-iliski-id',statement_id='tracer-statement',event_id=ev,party_id='yeni-parti',topic_id='organ-secim-yontemi',scope_id=None,comparability_reason='Beyan il başkanlarının üyelerce belirlenmesini kapsar; haber Uşak il başkanlığı ön seçimini bildirir.',target_finding_id='0105-statement',result_finding_id=None,explanation_finding_id=fid,temporal_context='Beyan 4 Ağustos, ön seçim haberi 18 Ekim 2026 tarihlidir.',authority_context='Üye ön seçimi ile sonraki il kongresi farklı işlemlerdir.',uncertainty_reason='Özgün sandık tutanağı görülmedi; kongre haberlerinde isim yazımı farklıdır.'))
+(p/'package-usak-draft.json').write_text(json.dumps(pkg,ensure_ascii=False,indent=2)+'\n');print('USAK_DRAFT pending checks')

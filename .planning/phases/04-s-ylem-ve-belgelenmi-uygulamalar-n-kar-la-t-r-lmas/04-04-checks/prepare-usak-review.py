@@ -1,0 +1,9 @@
+import json
+from pathlib import Path
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks'); r=json.loads((p/'housing-review-draft.json').read_text()); ev='0404-usak-onsecim-event'; rel='0404-usak-iliski-id'; speech='0105-speech-p'; ref='0404-usak-onsecim-detay-p'
+items=[('practice_event_evidence',ev+'|'+ref+'|action',[ref],'18 Ekim Uşak il başkanlığı seçimi sonucu yerel haberde anlatılıyor.'),('practice_event',ev,[ref],'Haber il başkanlığı ön seçiminin yapıldığını bildiriyor.'),('practice_relation',rel,[speech,ref],'Beyan ve il ön seçim haberi il başkanı belirleme yöntemiyle ilgilidir.'),('practice_relation.target_finding_id',rel,[speech],'Özel başkanların üyelerce belirlenmesi yöntemini açıklıyor.'),('practice_relation.explanation_finding_id',rel,[speech,ref],'İl ön seçimi ve sonraki kongrenin ayrıldığı anlatılıyor.')]
+versions={speech:'0105-speech-v1',ref:'0404-usak-onsecim-v1'}; sections={speech:'Euronews 4 Ağustos başkan seçimi beyanı',ref:'Uşak Olay 18 Ekim il seçimi haberi'}
+for kind,identity,passages,claim in items:
+ r['practice_source_review'].append(dict(subject_kind=kind,subject_id=identity,reviewer_kind='agent',reviewed_at='2026-11-21T20:33:18+00:00',source_version_ids=json.dumps([versions[x] for x in passages],ensure_ascii=False),passage_ids=json.dumps(passages,ensure_ascii=False),inspected_sections=json.dumps([sections[x] for x in passages],ensure_ascii=False),supported_claim=claim,limitations='Sandık tutanakları görülmedi; kongre ve farklı kaynaklardaki ad yazımı ayrı izleniyor.',result='reviewed',reason='Beyan ve yerel ön seçim haberi karşılaştırıldı.'))
+r['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in r['practice_source_review']]
+(p/'usak-review-draft.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print('USAK_REVIEW_DRAFT',len(r['practice_source_review']))
