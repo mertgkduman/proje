@@ -11634,6 +11634,50 @@
     {
       "at": "2026-11-21",
       "query": "site:tbmm.gov.tr/Yasama/KanunTeklifi \"2 / 3792\" \"gazi\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr \"YENİ PARTİ\" \"İstanbul Sözleşmesi\" 2026 grup önerisi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr \"YENİ PARTİ\" \"kayyım\" \"grup önerisi\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr \"YENİ PARTİ\" \"cemevi\" 2026 \"kanun teklifi\""
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"sendika\" \"grev\" kanun teklifi 2026 TBMM"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"kadın\" \"İstanbul Sözleşmesi\" TBMM \"2026\" önerge"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"eğitim\" \"ücretsiz yemek\" \"kanun teklifi\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"tarikat\" \"cemaat\" \"okul\" önerge 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"asgari ücret\" \"45 bin 800\" teklif ağustos 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"2/3827\" \"Yeni Parti\" TBMM 2026 ücretsiz yemek"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr \"2/3827\" \"yemek\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"bir öğün\" \"kanun teklifi\" 3827 2026 reddedildi"
     }
   ],
   "source_queue": [
@@ -13325,6 +13369,31 @@
       "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/99085cfc-46b5-46b8-b34d-019fc7aca761",
       "state": "source_read_pending_chain",
       "note": "TBMM 2/3790 3 Ağustos geliş ve teklif özetinde 45.800 TL, Özel ile grup başkanvekillerinin imzalarını gösteriyor; 21 Ekim Oksijen benzer tutarlı yeni açıklama haberini ayrıca aktarıyor. Tekliflerin aynı veya farklı sürümler olup olmadığı doğrulanmadı; güncel komisyon aşamasının kesim tarihi için tarihi kanıtı gerekir."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Haber/tbmm-genel-kurulu-toplandi-20261105214533",
+      "state": "source_read_pending_chain",
+      "note": "5 Kasım TBMM haberinde Yeni Parti sermaye piyasaları grup önerisinin görüşüldüğü ve grup önerilerinin kabul edilmediği yazıyor. Özgür Karabatın araştırma talepleri aktarılıyor; tam tutanak ve sonucun hangi işlem için olduğu ayrıca kontrol edilecek."
+    },
+    {
+      "url": "https://vekilin.com/teklif/2-4061-emniyet-teskilat-kanunu-ile-kamu-gorevlileri-sendikalari-ve-toplu-sozlesme-kanun",
+      "state": "excluded_outside_cutoff",
+      "note": "Arama sonucu 16 Kasım geliş tarihli polis sendikası teklifini gösteriyor; 10 Kasım 14:38:46 UTC kesiminden sonra, kapsam içi eylem değil."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/8161415b-e134-429a-831c-019fea584ed2",
+      "state": "source_read_pending_chain",
+      "note": "TBMM gelen kâğıtlarında 10/4485 basın ve ifade özgürlüğü hakkında 6 Ağustos, 10/4499 üniversite öğrencileri hakkında 9 Ağustos grup adına araştırma önergeleri bulunuyor. Grup başkanvekilleri gösteriliyor; devam ve sonuç araştırılacak."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/5d13749f-7351-4fe3-841d-01a08b317303",
+      "state": "source_read_pending_chain",
+      "note": "TBMM arama metninde 2/3827 10 Eylül geliş, günlük ücretsiz öğün önerisi ve ilk imza Mahmut Tanal; ayrı ikincil komisyon arama sonucu Suat Özçağdaş adını taşıyor. Teklif metni, imza ve iddia edilen ret ile komisyon aşamasının farklı işlem/sürüm olup olmadığı ayrılacak. TBMM sayfası web aracıyla okundu; 21 Kasım doğrudan özgün bayt yakalama connection reset verdi, arşiv kaydı henüz yapılmadı."
+    },
+    {
+      "url": "https://t24.com.tr/gundem/yeni-partiden-asgari-ucret-hamlesi-net-ucret-45-bin-800-lira-olsun-prim-yukunu-hazine-ustlensin%2C1340028",
+      "state": "pending",
+      "note": "Arama sonucu 45.800 lira teklifinin Ağustos dönemi için haberini gösteriyor; Ekim açıklamasıyla aynı teklif olup olmadığı tam metin ve TBMM sayfalarından araştırılacak."
     }
   ],
   "foundation_for_party": {
