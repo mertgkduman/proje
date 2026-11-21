@@ -11446,6 +11446,18 @@
       "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/8bdc192b-ef6a-4ef2-befe-01a0e803dd24",
       "section": "TBMM teklif künyesi ve komisyon bilgileri",
       "note": "2/3895 Özlale ilk imzası, 28 Eylül Başkanlığa geliş ve 1 Ekim komisyon havalesi kayıtlı. Dinamik sayfanın bugünkü komisyon durumu, kesim anındaki durum olarak otomatik çıkarılmadı. Başka 2/3939 teklifinden ayrı. Python capture bağlantı sıfırlanınca curl HTTP 200 ile asıl HTML yakalandı."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://gazetemerhaba.com/siyaset/balikesir-yeni-parti-il-baskanligi-on-seciminde-sonuclar-belli-oldu-124633",
+      "section": "Ön seçim haber gövdesi",
+      "note": "Semra Aman Akyürek, 18 Ekim 18:47/19:25: üyelerin katıldığı ön seçimi, Köybaşı ve Ak adaylığını ve 25 Ekimde yapılacak kongreyi ayrı aktarıyor. Oy sayılarına ilişkin kaynaklar arasındaki fark çözülmedi."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://gazetemerhaba.com/siyaset/yeni-parti-balikesir-on-seciminde-erden-koybasi-ve-ozan-can-akin-20-ilcedeki-oylari-belli-oldu-124679",
+      "section": "Ön seçim haber gövdesi",
+      "note": "Macit Ermiş, 19 Ekim: il başkanının açıkladığı 20 ilçe oy listesini aktarıyor. Haber parti açıklamasını kaydeder; özgün sandık tutanağı değildir, sayısal farkın tek başına çözümü sayılmadı."
     }
   ],
   "queries": [
@@ -11992,6 +12004,26 @@
     {
       "at": "2026-11-21",
       "query": "site:cdn.tbmm.gov.tr \"Yatırımcıların Korunması Amacıyla Bazı Yatırım Fonlarının Adil Tasfiyesi\""
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Balıkesir\" \"ön seçim\" 18 Ekim 2026 il başkanı sonuç"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Balıkesir\" \"il kongresi\" 25 Ekim 2026 başkan"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Balıkesir\" \"önseçim\" 2026 \"oy\" itiraz"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Erden Köybaşı\" \"25 Ekim 2026\" \"kongresi\" seçildi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Balıkesir\" \"25 Ekim\" \"Köybaşı\" kongre 2026"
     }
   ],
   "source_queue": [
@@ -13873,6 +13905,16 @@
       "url": "https://tbmm.gov.tr/milletvekili/UyeKomisyonKonusmaTutanakDetay?tutanakId=90375",
       "state": "read_capture_failed",
       "note": "Komisyon konuşması 28 Eylül Özlale teklifinin sunulduğunu belirtiyor; capture bağlantı sıfırlandı. Bağımsız dizinde 2/3895; resmi teklif kaydı ve 2/3939 farklı teklifin ayrı sonucu takip edilmeli."
+    },
+    {
+      "url": "https://www.balikesir24saat.com/yeni-partide-yeni-donem.html",
+      "state": "read_search_index_capture_blocked",
+      "note": "Arama indeksi 25 Ekim kongresi ve Köybaşı seçimini bildiriyor; doğrudan sayfa 403 verdi. Kongre ve ön seçim ayrı, gerçek kongre kaynağı izlenecek."
+    },
+    {
+      "url": "https://www.onturk.tv/erden-koybasi-yeni-parti039nin-balikesir-il-baskani-secildi/80633/",
+      "state": "read_search_index_capture_blocked",
+      "note": "25 Ekim 14:07 kongre haberini arama indeksi gösterdi; capture 403. Tam erişim izlenecek."
     }
   ],
   "foundation_for_party": {
@@ -14179,6 +14221,18 @@
       "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/8bdc192b-ef6a-4ef2-befe-01a0e803dd24",
       "sha256": "724f6b88fea0443df4881deefed05dfa28970649831a81c5008678963cf4f744",
       "accessed_at": "2026-11-21T20:52:02+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://gazetemerhaba.com/siyaset/balikesir-yeni-parti-il-baskanligi-on-seciminde-sonuclar-belli-oldu-124633",
+      "sha256": "603f01c670e7672f9df2e90be1bf4bea7f0512d7f7cbad910e690de4b872ac2e",
+      "accessed_at": "2026-11-21T20:56:15.528584+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://gazetemerhaba.com/siyaset/yeni-parti-balikesir-on-seciminde-erden-koybasi-ve-ozan-can-akin-20-ilcedeki-oylari-belli-oldu-124679",
+      "sha256": "d0532530f59db369418dbc5c6e5ce935338eb0e65acdd937be466bbecaec41d5",
+      "accessed_at": "2026-11-21T20:56:15.887662+00:00",
       "state": "source_records_draft"
     }
   ],
