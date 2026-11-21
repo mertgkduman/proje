@@ -1,0 +1,5 @@
+# Tüzük kaynak tarihi gerçek hata ve düzeltme
+
+Önceki kayıtları koruyan paket SHA `c69ca34f9dee8c641b7bc760da9a4e8dec948dd9a7f4c0757a6b4e162b308ef1` ile staging practice-check session 43994 gerçek çıkış 1 `Söylem kaynak tarihinden sonra olamaz`. Samsun söz hakkı tüzük söyleminde 24 Temmuz tarihi verilmişti, ancak temel `epm-charter-v1` belge tarihi 22 Temmuz; parti kuruluşu 24 Temmuz. Başka bir tarih veya tarihsel yürürlük icat etmeden, diğer tüzük söylemlerindeki gibi tarih `unknown`, kaynak tarihi ve kuruluş farkı ile geçerlilik belirsizliği açık yazıldı.
+
+Düzeltilmiş daha geniş paket SHA `28e1029d2f93777b6d002c9342d2a84edfc01cff2ae918af411d508bae27269b`, review SHA `3a986b6a636fef482a0c1ab7a4cc166eb46a02c571d703a1606cde997c64b186`; 234 kaynak yolu stagingde mevcut ve eşit. Gerçek practice-check session 25721 sürüyor. Önceki girdiler ve retler korunuyor; üç dar otomatik düzeltmeden sonra yeni hata çıkarsa aynı görevde otomatik düzeltme sınırına uyulmalı ve kalan açık soruna ilişkin orkestratör bilgilendirilmelidir.
