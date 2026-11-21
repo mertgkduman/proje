@@ -11822,6 +11822,38 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"Sakarya\" \"Selda Sezgin\" \"Ecevit Keleş\" 18 Ekim sonuç"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Uşak\" \"il başkanlığı\" \"18 Ekim\" 2026 sonuç"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"İzmir\" \"ön seçim\" \"18 Ekim\" 2026 itiraz"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"İstanbul\" \"ön seçim\" \"18 Ekim\" 2026 il başkanı sonuç"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Balıkesir\" \"ön seçim\" \"18 Ekim\" 2026 oy itiraz"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Serap Ergün Bitgin\" \"Uşak\" 2026 kongre"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Serap Ergun Bitkin\" \"Uşak\" 25 ekim 2026 kongre"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Serap Ergün Bitgin\" \"Serap\" \"Yeni Parti\" Uşak 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Serap Ergun Bitkin\" Yeni Parti 2026 Uşak il başkanı"
     }
   ],
   "source_queue": [
@@ -13658,6 +13690,26 @@
       "url": "https://www.netgaste.com/haber/29007144/yeni-parti-sakaryada-selda-sezgin-onde-iste-ilce-ilce-secim-sonuclari",
       "state": "blocked",
       "note": "18 Ekim 19:15 arama sonucu Karasu ve Sapanca hariç 14 ilçe için kesin olmayan sayıları gösteriyor; web açılışı 403. Farklı saat ve kapsam aynı kesin toplam sayı sanılmamalı."
+    },
+    {
+      "url": "https://www.usakolay.com/usak/yeni-parti-usakta-serap-ergun-bitgin-2-bin-213-oyla-birinci-oldu-73102h",
+      "state": "source_read_pending_chain",
+      "note": "Ozan Yavuz 18 Ekim 21:25 Uşak ön seçiminde Serap Ergün Bitgin adını ve oyları aktarıyor; delege onayı hakkında o tarihte bilgi olmadığını belirtiyor."
+    },
+    {
+      "url": "https://www.usakhabergazetesi.com.tr/yeni-parti-usakta-baskanini-secti-on-secimin-ardindan-delegeler-de-onayladi",
+      "state": "source_read_pending_chain",
+      "note": "Hüsnü Kazım Özler 25 Ekim 18:01 Uşak kongresini ve delege seçimini aktarıyor ancak ismi Serap Ergun Bitkin yazıyor. 18 Ekim haberindeki Bitgin yazımıyla isim farkı kaynaklara bağlı, gerçek kişi ve kimlik eşleştirmesi ayrıca doğrulanacak."
+    },
+    {
+      "url": "https://www.yesilsivasligazetesi.com/yeni-parti-usak-1-olagan-il-kongresi-yapildi",
+      "state": "source_read_pending_chain",
+      "note": "Salih Kılınç 25 Ekim 15:00 Uşak kongresini ve listede Serap Ergün Bitgin adını bildiriyor; başka haber Bitkin yazıyor. Özgün seçim tutanağı veya kimlik teyidi yok."
+    },
+    {
+      "url": "https://www.usakhabergazetesi.com.tr/serap-ergun-bitgin-yeni-parti-usak-il-baskanligina-adayligini-acikladi",
+      "state": "source_read_pending_chain",
+      "note": "Aynı yayın kuruluşunun 9 Ekim adaylık haberinde Serap Ergün Bitgin yazımı mevcut; 25 Ekim haberindeki Bitkin yazımı farklı kalıyor, yazım hatası olduğu varsayılmıyor."
     }
   ],
   "foundation_for_party": {
