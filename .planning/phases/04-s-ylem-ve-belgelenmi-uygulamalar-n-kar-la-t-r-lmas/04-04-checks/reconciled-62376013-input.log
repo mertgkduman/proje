@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0404-reconciled-kh5xkd9d/src/arsiv.py", line 3663, in <module>
+    main()
+  File "/tmp/gsd-0404-reconciled-kh5xkd9d/src/arsiv.py", line 3575, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-reconciled-kh5xkd9d/src/uygulamalar.py", line 1305, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0404-reconciled-kh5xkd9d/src/uygulamalar.py", line 1237, in _load_practice_copy
+    validate_practices(data)
+  File "/tmp/gsd-0404-reconciled-kh5xkd9d/src/uygulamalar.py", line 814, in validate_practices
+    f = check_finding(s[key], s['party_id'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-reconciled-kh5xkd9d/src/uygulamalar.py", line 800, in check_finding
+    raise ValueError('Partiyle eşleşen doğrulanmış bulgu gerekli')
+ValueError: Partiyle eşleşen doğrulanmış bulgu gerekli
