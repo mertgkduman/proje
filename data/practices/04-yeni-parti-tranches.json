@@ -12226,6 +12226,22 @@
     {
       "at": "2026-11-21",
       "query": "\"İbrahim Karaca\" \"25 Ekim 2026\" il kongresi Yeni Parti"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"İbrahim Karaca\" \"349\" \"357\" 25 Ekim kongre"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"İbrahim Karaca\" \"349\" \"Ankara\" \"kongresi\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"İbrahim Karaca\" \"357\" \"372\" \"kongre\" 25 ekim 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Ankara\" \"25 ekim\" \"divan\" \"oy\" Karaca"
     }
   ],
   "source_queue": [
@@ -14127,6 +14143,11 @@
       "url": "https://api.yeni-parti.org.tr/api/haberler/295",
       "state": "read_json_unbound",
       "note": "Doğrudan JSON kaynak için desteklenen kaynak sürümü/konumlandırılmış pasaj ve yerel arşiv görünümü yöntemi araştırılacak; yayımlanan haber, tam tüzük değişikliği metniyle eşit değildir."
+    },
+    {
+      "url": "https://ankara24.com/news/yeni-parti-ankara-il-baskanligina-ibrahim-karaca-secildi-675145",
+      "state": "read_search_index_unbound",
+      "note": "25 Ekim 19:29 Mynet üzerinden AAya atfedilen özet 372 delege/357 oy bildiriyor; VTVdeki rakamla aynı olsa da kaynak zinciri ve Başkent Haberdeki 349 ile farkı çözülmedi. Sayfa arama indeksi okundu, henüz capture yok."
     }
   ],
   "foundation_for_party": {
