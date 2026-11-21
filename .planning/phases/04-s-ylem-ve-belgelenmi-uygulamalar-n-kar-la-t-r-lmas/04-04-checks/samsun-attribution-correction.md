@@ -10,3 +10,5 @@
 `package-samsun-attribution-draft.json` yalnız iki atıf satırı ekler. Kaynak baytları, belge sürümleri, bulgular, Samsun kayıtları ve inceleme dosyası aynıdır. Atıf alanları canlı sayfalardan da 21 Kasım 2026 tarihinde kontrol edildi.
 
 Güncellenen girdi, aynı inceleme dosyasıyla `62373520` işinde yeniden denetleniyor.
+
+`62373520` işi `COMPLETED 0:0` ile 17 dakika 52 saniyede bitti. Aynı pakette `PRACTICE_INPUT_OK`, `PRACTICE_SOURCE_REVIEW_OK` ve `PRACTICE_PREVIEW_OK` görüldü. Önizleme `e7be32c726f445cca67878b96ecd7e0c` ve renderer 27 ile oluştu. SQLite ve JSON’da Samsun olayı ve ilişkisi birer kez yer alıyor. Dayanaksız ihtilaf ve ona bağlı ihtilaf delilleri yok. Parti ve karşılaştırma görünümlerinin bağlantı hedefleri birer kez üretildi ve birbirlerine bağlanıyor. Kanonik `f67ca0a35e634035bf3aa83a46571f50` sürümü, işaretçi ve manifest özetleri eşit kaldı. `samsun-reply-62373520.json` değişmez girdileri ve önizleme varlıklarını kaydediyor. Bu denetim taslağın `tracer` aşamasına aittir. Canlı parti dosyasına uzlaştırma ve kapsam taraması sürüyor.
