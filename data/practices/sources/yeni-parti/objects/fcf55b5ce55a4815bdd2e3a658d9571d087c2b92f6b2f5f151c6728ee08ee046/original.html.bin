@@ -1,0 +1,1484 @@
+
+<!doctype html>
+<html class="no-js" lang="tr">
+
+<head>
+	<base href="https://www.bultenaydin.com/">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>YENİ PARTİ İL YÖNETİMİ BELLİ OLDU. ÖMER GÜNEL KURULTAY DELEGESİ SEÇİLDİ.</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<!-- Facebook Metadata Start -->
+	<meta property="og:image:height" content="300" />
+	<meta property="og:image:width" content="573" />
+	<meta property="og:title" content="YENİ PARTİ İL YÖNETİMİ BELLİ OLDU. ÖMER GÜNEL KURULTAY DELEGESİ SEÇİLDİ." />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://www.bultenaydin.com/haber/yeni-parti-il-yonetimi-belli-oldu-omer-gunel-kurultay-delegesi-secildi" />
+	<meta property="og:image" content="https://www.bultenaydin.com/tema/genel/uploads/haberler/delege.jpg" />
+	<link rel="icon" type="image/png" href="tema/genel/uploads/favicon/500pxico.png">
+	<meta name="yandex-verification" content="81d7adc0741f01e6" />
+<meta name="google-adsense-account" content="ca-pub-2232017642681842">
+	
+    
+    <link rel="stylesheet" href="tema/genel/css/normalize.css">
+    <link rel="stylesheet" href="tema/genel/css/main.css">
+    <link rel="stylesheet" href="tema/genel/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tema/genel/css/animate.min.css">
+    <link rel="stylesheet" href="tema/genel/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="tema/genel/vendor/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="tema/genel/vendor/OwlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="tema/genel/css/meanmenu.min.css">
+	<link rel="stylesheet" href="tema/genel/css/select2.min.css">
+    <link rel="stylesheet" href="tema/genel/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="tema/genel/css/hover-min.css">
+    <link rel="stylesheet" href="tema/genel/css/style.php">
+    <link rel="stylesheet" href="tema/genel/css/ie-only.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.css"/>
+    <script src="tema/genel/js/modernizr-2.8.3.min.js"></script>
+	<script src="tema/genel/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="tema/genel/vendor/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
+	
+	<script>
+/*
+  MOBİLDE çalışır.
+  href="#" olan ve hemen arkasında <ul> bulunan
+  menü başlıklarını (KATEGORİLER, SERVİSLER vb.)
+  tıklanınca açıp kapatır.
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (window.innerWidth > 991) return; // sadece mobil
+
+    var links = document.querySelectorAll('a[href="#"]');
+
+    links.forEach(function(link) {
+
+        link.addEventListener('click', function(e) {
+
+            var next = link.nextElementSibling;
+
+            // Sadece alt menüsü varsa müdahale et
+            if (next && next.tagName === 'UL') {
+                e.preventDefault(); // # zıplamasını engelle
+
+                // toggle
+                if (next.style.display === 'block') {
+                    next.style.display = 'none';
+                } else {
+                    next.style.display = 'block';
+                }
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+<script>
+/*
+====================================================
+KÖŞE YAZARLARI ALANI – YAZAR ÖNCELİĞİ
+----------------------------------------------------
+1) "Önder Yıldırımcan" her zaman EN BAŞTA gösterilir.
+2) Owl Carousel aktifse kendi sahası (owl-stage)
+   içinde sıralama yapılır.
+3) Mobilde kullanılan destroy / listeleme
+   JS'i ile çakışmaz.
+----------------------------------------------------
+Not: Bu kod DOM yüklendikten sonra çalışır.
+====================================================
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    var $carousel = $('.ne-carousel');
+    var $stage = $carousel.find('.owl-stage');
+
+    /* Eğer Owl çalışıyorsa stage içinde işlem yap */
+    var $container = $stage.length ? $stage : $carousel;
+
+    /* Clone olmayan gerçek item'lar */
+    var $items = $container.find('.owl-item:not(.cloned) .hover-show-play-btn');
+
+    /* Önder Yıldırımcan olanı bul */
+    var $onder = $items.filter(function () {
+        return $(this).find('.yazarlar a').text().trim() === 'Önder Yıldırımcan';
+    }).first();
+
+    /* Kendi owl-item'ı ile birlikte başa al */
+    if ($onder.length) {
+        var $wrapper = $onder.closest('.owl-item');
+        $container.prepend($wrapper.length ? $wrapper : $onder);
+    }
+
+});
+</script>
+
+<script>
+/*
+====================================================
+KÖŞE YAZARLARI ALANI ÖZEL DÜZENLEME
+----------------------------------------------------
+1) Mobilde Owl Carousel devre dışı bırakılır
+   ve köşe yazıları alt alta listelenir.
+2) "Önder Yıldırımcan" mobil listede
+   SADECE 1 KEZ ve EN BAŞTA gösterilir.
+3) Masaüstü görünümüne ve slider yapısına
+   KESİNLİKLE dokunulmaz.
+----------------------------------------------------
+Not: Bu kod DOM yüklendikten sonra çalışır.
+====================================================
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* === SADECE MOBİL === */
+    if (window.innerWidth > 768) return;
+
+    var $carousel = $('.ne-carousel');
+
+    /* Owl Carousel aktifse mobilde kapat */
+    if ($carousel.hasClass('owl-loaded')) {
+        $carousel.trigger('destroy.owl.carousel');
+    }
+
+    /* Clone edilmiş item'ları TAMAMEN kaldır */
+    $carousel.find('.owl-item.cloned').remove();
+
+    /* Owl sarmalayıcılarını kaldır */
+    $carousel
+        .removeClass('owl-carousel owl-loaded owl-theme')
+        .find('.owl-stage-outer, .owl-stage')
+        .children()
+        .unwrap()
+        .unwrap();
+
+    /* owl-item class'larını temizle */
+    $carousel.find('.owl-item').removeClass('owl-item');
+
+    /* Oklar ve noktaları kaldır */
+    $carousel.find('.owl-nav, .owl-dots').remove();
+
+    /* Önder Yıldırımcan'ı TEK KOPYA olarak başa al */
+    var $onder = $carousel.find('.hover-show-play-btn').filter(function () {
+        return $(this).find('.yazarlar a').text().trim() === 'Önder Yıldırımcan';
+    }).first();
+
+    if ($onder.length) {
+        $carousel.prepend($onder);
+    }
+
+});
+</script>
+
+<script>
+/*
+----------------------------------------------------
+MANŞET ALANI
+ALTINDAKİ SAYILARI
+ORTALAR
+----------------------------------------------------
+*/
+var checkDots = setInterval(function() {
+    var dots = document.querySelector('#MansetSlider .owl-dots');
+    if(dots) {
+        // !important ile override ediyoruz
+        dots.style.setProperty('text-align', 'center', 'important');
+        clearInterval(checkDots);
+    }
+}, 100);
+</script>
+
+<script>
+/*
+----------------------------------------------------
+OKUNMA SAYILARINI KALDIRIR
+----------------------------------------------------
+*/
+document.addEventListener("DOMContentLoaded", function() {
+    // #breadcrumbs içindeki p etiketlerinden "kez okundu" içerenleri bul ve sil
+    document.querySelectorAll('#breadcrumbs p').forEach(function(p) {
+        if (p.textContent.includes('kez okundu')) {
+            p.remove();
+        }
+    });
+});
+</script>
+<script>
+/*
+----------------------------------------------------
+SAĞ TIK, KOPYALAMA ENGELLEME VE UYARI
+----------------------------------------------------
+*/
+
+// Sağ tıklama engelleme
+document.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  alert("Bultenaydin.com içeriği izinsiz olarak kopyalanamaz!");
+});
+
+// Belirli tuş kombinasyonlarını engelleme (F12, I, J, U, Ctrl+C ve Command+C)
+document.onkeydown = (e) => {
+  // Ctrl/Cmd + C tuşları engelleniyor
+  if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+    e.preventDefault();
+    alert("Bultenaydin.com içeriği izinsiz olarak kopyalanamaz!");
+  }
+
+  // F12, I, J, U tuş kombinasyonları engelleniyor
+  if (['F12', 'I', 'J', 'U'].includes(e.key) && (e.ctrlKey || e.metaKey)) {
+    e.preventDefault();
+    alert("Bultenaydin.com içeriği izinsiz olarak kopyalanamaz!");
+  }
+};
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8TC9Q3BJK2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8TC9Q3BJK2');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2232017642681842"
+     crossorigin="anonymous"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNBZPGYJ7P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNBZPGYJ7P');
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2232017642681842"
+     crossorigin="anonymous"></script>		
+		
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+		<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+	<script>
+	  window.OneSignalDeferred = window.OneSignalDeferred || [];
+	  OneSignalDeferred.push(async function(OneSignal) {
+		await OneSignal.init({
+		  appId: "daedc470-8ad0-4789-b7fa-9147b839e94c",
+		  cookies: {
+			enabled: true,
+			persistence: 'localStorage' // Çerez yerine localStorage kullan
+		  }
+		});
+	  });
+	</script>
+		
+</head>
+
+<body>
+
+		
+    <div id="wrapper">
+        <!-- Header Area Start Here -->
+        <header>
+            <div id="header-layout2" class="header-style6">
+                <div class="header-top-bar">
+                    <div class="top-bar-top bg-accent py-3  d-none d-lg-block">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-3 col-md-12">
+                                    <ul class="news-info-list text-center--md">
+																				                                        <li>
+											<a  href="icerik/kunye">
+																								KÜNYE											</a>
+                                        </li>
+										                                        <li>
+											<a  href="iletisim">
+																								İLETİŞİM											</a>
+                                        </li>
+										 
+                                    </ul>
+                                </div>
+                                <div class="col-lg-9">
+                                    <ul class="header-top-menu">
+																				                                        <li>
+											<a  href="yazarlar">
+																									<div class="tmenu_icon"><i class="fas fa-users"></i></div>
+																								YAZARLAR											</a>
+                                        </li>
+										                                        <li>
+											<a  href=" https://bultenaydin.com/gazeteler/sozcu">
+																									<div class="tmenu_icon"><i class="fas fa-book-open"></i></div>
+																								GAZETELER											</a>
+                                        </li>
+										 										
+                                    </ul>									
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-menu-area bg-body" id="sticker">
+                    <div class="container">
+                        <div class="row no-gutters d-flex align-items-center">
+                            <div class="col-lg-2 d-none d-lg-block">
+                                <div class="logo-area">
+                                    <a href="./" class="img-fluid">
+                                        <img src="tema/genel/uploads/logo/logo-site_1.png" alt="Bülten Aydın" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 d-none d-lg-block position-static min-height-none">
+                                <div class="ne-main-menu">
+                                    <nav id="dropdown">
+                                        <ul>	
+																						<li>
+													<a  href="anasayfa">ANA SAYFA</a>													
+																									</li>
+																								<li>
+													<a  href="#">KATEGORİLER</a>													
+																											<ul class="ne-dropdown-menu">    
+																															<li><a  href="kategori/guncel">GÜNCEL</a></li>
+																															<li><a  href="kategori/siyaset">SİYASET</a></li>
+																															<li><a  href="kategori/asayis">ASAYİŞ</a></li>
+																															<li><a  href="kategori/ekonomi">EKONOMİ</a></li>
+																															<li><a  href="kategori/spor">SPOR</a></li>
+																															<li><a  href="kategori/egitim">EĞİTİM</a></li>
+																													</ul>
+																									</li>
+																								<li>
+													<a  href="yazarlar">YAZARLAR</a>													
+																									</li>
+																								<li>
+													<a  href="#">GALERİ</a>													
+																											<ul class="ne-dropdown-menu">    
+																															<li><a  href="galeriler">FOTO GALERİ</a></li>
+																															<li><a  href="video-galeri">VİDEO GALERİ</a></li>
+																													</ul>
+																									</li>
+																								<li>
+													<a  href="resmi-ilanlar">RESMİ REKLAMLAR</a>													
+																									</li>
+																								<li>
+													<a  href="#">SERVİSLER</a>													
+																											<ul class="ne-dropdown-menu">    
+																															<li><a  href=" https://bultenaydin.com/nobetci-eczaneler/Ayd%C4%B1n">NÖBETÇİ ECZANELER</a></li>
+																															<li><a  href="canli-borsa">CANLI BORSA</a></li>
+																															<li><a  href="piyasalar">PİYASALAR</a></li>
+																															<li><a  href="burclar">BURÇLAR</a></li>
+																															<li><a  href=" https://bultenaydin.com/gazeteler/sozcu">GAZETELER</a></li>
+																													</ul>
+																									</li>
+																								<li>
+													<a  href="icerik/kunye">KÜNYE</a>													
+																									</li>
+																							
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-12 text-right position-static">
+                                <div class="header-action-item on-mobile-fixed d-flex align-items-center justify-content-end">
+                                    <ul>
+										                                        <li>
+											<form id="top-search-form" class="header-search-light">
+												<input type="text" class="search-input" placeholder="Aranacak kelimeyi yazıp, enter'a basınız." style="display:none;">
+												<button type="button" class="search-button">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</button>
+											</form>
+											<script>
+											$(document).ready(function(){
+												let acildi = false;
+												$(document).on("click", ".search-button", function(e){
+													e.preventDefault();
+													let input = $(this).siblings(".search-input");
+													if(!acildi){
+														input.show().focus();
+														acildi = true;
+														return;
+													}
+													let val = input.val().trim();
+													if(val !== ""){
+														window.location.href = "haberleri/"+encodeURIComponent(val)+"";
+													} else {
+														input.focus();
+													}
+												});
+												$(document).on("keypress", ".search-input", function(e){
+													if(e.which == 13){
+														e.preventDefault();
+														let val = $(this).val().trim();
+														if(val !== ""){
+															window.location.href = "haberleri/"+encodeURIComponent(val)+"";
+														}
+													}
+												});
+											});
+											</script>
+                                        </li>
+										                                        <li>
+                                            <div id="side-menu-trigger" class="offcanvas-menu-btn offcanvas-btn-repoint">
+                                                <a href="#" class="menu-bar">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </a>
+                                                <a href="#" class="menu-times close">
+                                                    <span></span>
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+									                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+		
+				
+		<div class="fixed_ads">
+							<a href="iletisim"><img src="https://placehold.co/160x605?text=Reklam 160x605px" width="160" height="605" alt="Advert" border="0"></a>
+					</div>
+
+			
+		<div class="fixed_ads_2">
+							<a href="iletisim"><img src="https://placehold.co/160x605?text=Reklam 160x605px" width="160" height="605" alt="Advert" border="0"></a>
+					</div>
+		
+		<section class="breadcrumbs-area">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="./" title="Anasayfa">Anasayfa</a></li>
+								<li class="breadcrumb-item"><a href="kategori/siyaset">Si̇yaset</a></li>	
+								<li class="breadcrumb-item d-mobile-none">YENİ PARTİ İL YÖNETİMİ BELLİ OLDU. ÖMER GÜNEL KURULTAY DELEGESİ SEÇİLDİ.</li>		
+			</ol>
+		</nav>
+	</div>
+</section>
+
+<section class="bg-body section-space-default">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-12 mb-30">
+				<div class="news-details-layout1 haberDetay">
+					
+					<div id="breadcrumbs" class="breadcrumbs">
+						<a href="kategori/siyaset" rel="category tag">SİYASET</a>
+						<p>512 kez okundu.</p>
+					</div>
+				
+					<h1>YENİ PARTİ İL YÖNETİMİ BELLİ OLDU. ÖMER GÜNEL KURULTAY DELEGESİ SEÇİLDİ.</h1>
+					<p>Yeni Parti Aydın İl Başkanlığı’nın 1. Olağan İl Kongresi gerçekleştirildi. Kongrede  Tekirdağ'da tutuklu bulunan Kuşadası Belediye Başkanı Ömer Günel kurultay delegeliğine seçildi.</p>
+					<div class="tarih">
+						<strong>Yayınlanma Tarihi : <time>26 Ekim 2026, 16:33</time></strong>
+						
+												
+					</div>
+					<div class="position-relative mb-10 mt-30">
+												<img src="tema/genel/uploads/haberler/delege.jpg" alt="YENİ PARTİ İL YÖNETİMİ BELLİ OLDU. ÖMER GÜNEL KURULTAY DELEGESİ SEÇİLDİ." class="img-fluid w-100">
+											</div>
+					
+						
+					<div class="g-ads text-center mb-10">
+													<a href="iletisim"><img src="https://placehold.co/730x160?text=Reklam 730x160" width="730" height="160" alt="Advert" border="0"></a>
+											</div>
+					
+					
+<p>Yeni Parti Aydın İl Başkanlığı’nın 1. Olağan İl Kongresi gerçekleştirildi. Kongrede&nbsp; Tekirdağ'da tutuklu bulunan Kuşadası Belediye Başkanı Ömer Günel kurultay delegeliğine seçildi.</p>
+
+<p>Kongrede Dilaver Demir il başkanlığına seçilirken, il yönetim kurulu, disiplin kurulu ve kurultay delegeleri de belli oldu. Kongrede Tekirdağ'da tutuklu bulunan Ömer Günel'in kurultay delegesi seçilmesi partililerce sevinçle karşılandı.Kongrede yapılan konuşmalarda birlik, beraberlik ve iktidar hedefi vurgulandı.Kongreye Aydın milletvekilleri Bülent Tezcan ve Süleyman Bülbül'ün yanı sıra parti yöneticileri, ilçe başkanları, belediye başkanları ve çok sayıda partili katıldı.</p>
+
+<p><img alt="" class="img-fluid" src="../../dosyalar/il.jpg" style="height:auto; width:auto"></p>
+<script data-ts="1793022268114" src="https://cdn.n1ed.com/widgets.js?apiKey=FLMNFLMN"></script>
+					
+										
+					
+										
+					<div class="post-share-area mb-40 mt-50 item-shadow-1">
+						<ul class="social-default item-inline">
+							<li>
+								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.bultenaydin.com/haber/yeni-parti-il-yonetimi-belli-oldu-omer-gunel-kurultay-delegesi-secildi&image=https://www.bultenaydin.com/tema/genel/uploads/haberler/delege.jpg" class="facebook">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://twitter.com/share?url=https://www.bultenaydin.com/haber/yeni-parti-il-yonetimi-belli-oldu-omer-gunel-kurultay-delegesi-secildi&image=https://www.bultenaydin.com/tema/genel/uploads/haberler/delege.jpg" class="twitter">
+									<i class="fa-brands fa-x-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://pinterest.com/pin/create/button/?url=https://www.bultenaydin.com/haber/yeni-parti-il-yonetimi-belli-oldu-omer-gunel-kurultay-delegesi-secildi&image=https://www.bultenaydin.com/tema/genel/uploads/haberler/delege.jpg" class="pinterest">
+									<i class="fa-brands fa-pinterest"></i>
+								</a>
+							</li>							
+							<li>
+								<a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.bultenaydin.com/haber/yeni-parti-il-yonetimi-belli-oldu-omer-gunel-kurultay-delegesi-secildi&image=https://www.bultenaydin.com/tema/genel/uploads/haberler/delege.jpg" class="linkedin">
+									<i class="fa-brands fa-linkedin-in"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://api.whatsapp.com/send?text=https://www.bultenaydin.com/haber/yeni-parti-il-yonetimi-belli-oldu-omer-gunel-kurultay-delegesi-secildi" class="whatsapp">
+									<i class="fa-brands fa-whatsapp"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					
+					
+										<div class="emoji-box" id="tepkiBox" data-id="3568" data-tur="haber">
+													<div class="emoji" data-tepki="begendim">
+								<div class="emoji-inner">
+									<img src="tema/genel/img/emoji/begendim.png" class="emoji-icon" alt="begendim">
+									<div class="emoji-count" id="begendim">0</div>
+								</div>
+								<div class="emoji-text">Begendim</div>
+							</div>
+													<div class="emoji" data-tepki="bayildim">
+								<div class="emoji-inner">
+									<img src="tema/genel/img/emoji/bayildim.png" class="emoji-icon" alt="bayildim">
+									<div class="emoji-count" id="bayildim">0</div>
+								</div>
+								<div class="emoji-text">Bayildim</div>
+							</div>
+													<div class="emoji" data-tepki="komik">
+								<div class="emoji-inner">
+									<img src="tema/genel/img/emoji/komik.png" class="emoji-icon" alt="komik">
+									<div class="emoji-count" id="komik">0</div>
+								</div>
+								<div class="emoji-text">Komik</div>
+							</div>
+													<div class="emoji" data-tepki="begenmedim">
+								<div class="emoji-inner">
+									<img src="tema/genel/img/emoji/begenmedim.png" class="emoji-icon" alt="begenmedim">
+									<div class="emoji-count" id="begenmedim">0</div>
+								</div>
+								<div class="emoji-text">Begenmedim</div>
+							</div>
+													<div class="emoji" data-tepki="uzgunum">
+								<div class="emoji-inner">
+									<img src="tema/genel/img/emoji/uzgunum.png" class="emoji-icon" alt="uzgunum">
+									<div class="emoji-count" id="uzgunum">0</div>
+								</div>
+								<div class="emoji-text">Uzgunum</div>
+							</div>
+													<div class="emoji" data-tepki="sinirlendim">
+								<div class="emoji-inner">
+									<img src="tema/genel/img/emoji/sinirlendim.png" class="emoji-icon" alt="sinirlendim">
+									<div class="emoji-count" id="sinirlendim">0</div>
+								</div>
+								<div class="emoji-text">Sinirlendim</div>
+							</div>
+											</div>
+					
+					<script>
+					document.querySelectorAll('.emoji').forEach(el => {
+						el.addEventListener('click', function() {
+							const box = this.closest('.emoji-box');
+							const id = box.dataset.id;
+							const tur = box.dataset.tur;
+							const tepki = this.dataset.tepki;
+
+							fetch('tema/genel/ajax/tepki_kaydet.php', {
+								method: 'POST',
+								headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+								body: `icerik_id=${id}&icerik_turu=${tur}&tepki=${tepki}`
+							})
+							.then(res => res.json())
+							.then(data => {
+								if(data.success) {
+									for(let t in data.sayilar) {
+										document.getElementById(t).innerText = data.sayilar[t];
+									}
+									if(data.message === 'added' || data.message === 'changed') {
+										document.querySelectorAll('.emoji').forEach(e => e.classList.remove('active'));
+										this.classList.add('active');
+									} else {
+										this.classList.remove('active');
+									}
+								}
+							});
+						});
+					});
+					</script>
+
+					
+						
+					<div class="g-ads text-center mb-10">
+													<a href="iletisim"><img src="https://placehold.co/730x160?text=Reklam 730x160" width="730" height="160" alt="Advert" border="0"></a>
+											</div>
+					
+					
+										
+										<div class="leave-comments mb-40 mt-40">
+						<h2 class="title-semibold-dark size-xl mb-20">Yorum Gönder</h2>
+						<form id="yorum-form" method="POST">
+							<input type="hidden" name="tip" value="haber">
+							<input type="hidden" name="icerik_id" value="3568">
+							<input type="hidden" name="parent_id" id="parent_id" value="0">
+
+							<div id="cevap-bilgi" class="mb-3" style="display:none;">
+								<div class="alert alert-info d-flex justify-content-between align-items-center">
+									<span id="cevap-kime"></span>
+									<button type="button" id="cevap-iptal" class="btn btn-sm btn-danger"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+									<div class="form-group">
+										<input name="isim" placeholder="Adınız Soyadınız *" class="form-control" type="text" required>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<div class="form-group">
+										<input name="email" placeholder="E-Posta Adresiniz" class="form-control" type="email">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<textarea name="yorum" placeholder="Yorumunuz *" class="textarea form-control" rows="8" required></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group mb-none">
+										<button type="submit" class="btn-ftg-ptp-45">Yorumu Gönder</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+					<div class="comments-area">
+						<h2 class="title-semibold-dark size-xl border-bottom mb-20 pb-20">Yorumlar</h2>
+						<div id="yorumlar"></div>
+					</div>
+
+					<script>
+					$(document).ready(function() {
+						let tip = $("input[name='tip']").val();
+						let icerik_id = $("input[name='icerik_id']").val();
+
+						function yorumlariYukle() {
+							$("#yorumlar").load("tema/genel/ajax/yorumlar.php?tip=" + tip + "&icerik_id=" + icerik_id);
+						}
+
+						yorumlariYukle();
+
+						$("#yorum-form").on("submit", function(e) {
+							e.preventDefault();
+							$.post("tema/genel/ajax/yorum-ekle.php", $(this).serialize(), function(cevap) {
+								 if (cevap.trim() === "ok") {
+									 
+									Swal.fire({
+										type: 'success',
+										title: 'Yorum alındı!',
+										text: 'Yorumunuz başarıyla gönderildi. Onay sonrası yayınlanacaktır.',
+										confirmButtonText: 'Tamam'
+									});
+
+									$("#yorum-form")[0].reset();
+									$("#parent_id").val("0");
+									$("#cevap-bilgi").hide();
+									yorumlariYukle();
+								} else {
+									 Swal.fire({
+										type: 'warning',
+										title: 'Hata.!',
+										text: cevap,
+										confirmButtonText: 'Tamam'
+									});
+
+								}
+							});
+						});
+
+						$(document).on("click", ".cevapla-btn", function(e) {
+							e.preventDefault();
+							let yorumId = $(this).data("id");
+							let yorumAd = $(this).data("ad");
+
+							$("#parent_id").val(yorumId);
+							$("#cevap-kime").html(`<strong>${yorumAd}</strong> adlı kullanıcıya cevap yazıyorsunuz`);
+							$("#cevap-bilgi").show();
+							$('html, body').animate({
+								scrollTop: $("#yorum-form").offset().top - 100
+							}, 400);
+						});
+
+						$("#cevap-iptal").on("click", function() {
+							$("#parent_id").val("0");
+							$("#cevap-bilgi").hide();
+						});
+					});
+					</script>
+									</div>
+				
+			</div>
+			<div class="ne-sidebar sidebar-break-md col-lg-4 col-md-12">
+				
+					
+				<div class="sidebar-box mb-20">
+					<div class="g-ads text-center">
+													<a href="iletisim"><img src="https://placehold.co/350x262?text=Reklam 350x262" width="350" height="262" alt="Advert" border="0"></a>
+												
+					</div>
+				</div>
+				
+				
+								<div class="sidebar-box">
+					<div class="topic-border color-cod-gray mb-5">
+						<div class="topic-box-lg color-cod-gray">Manşet Haberleri</div>
+					</div>
+					<div class="row">
+																	<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<div class="mt-25 position-relative">
+								<div class="topic-box-top-xs">
+									<div class="topic-box-sm color-pomegranate mb-20">ASAYİŞ</div>
+								</div>
+								<a href="haber/aydin-ve-27-ilde-feto-operasyonu-83-kisi-yakalandi" class="mb-10 display-block img-opacity-hover haber_detay_sag_img" >
+									<img src="tema/genel/uploads/haberler/fettt.jpeg" alt="AYDIN VE 27 İLDE FETÖ OPERASYONU: 83 KİŞİ YAKALANDI.." class="img-fluid m-auto width-100">
+								</a>
+								<h3 class="title-medium-dark size-md mb-none haber_kisa">
+									<a href="haber/aydin-ve-27-ilde-feto-operasyonu-83-kisi-yakalandi" >AYDIN VE 27 İLDE FETÖ OPERASYONU: 83 KİŞİ YAKALANDI..</a>
+								</h3>
+							</div>
+						</div>
+												<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<div class="mt-25 position-relative">
+								<div class="topic-box-top-xs">
+									<div class="topic-box-sm color-cinnabar mb-20">GÜNCEL</div>
+								</div>
+								<a href="haber/ozel-cocuklar-ve-ailelerine-moral-gezisi" class="mb-10 display-block img-opacity-hover haber_detay_sag_img" >
+									<img src="tema/genel/uploads/haberler/ozz.jpg" alt="ÖZEL ÇOCUKLAR VE AİLELERİNE MORAL GEZİSİ.." class="img-fluid m-auto width-100">
+								</a>
+								<h3 class="title-medium-dark size-md mb-none haber_kisa">
+									<a href="haber/ozel-cocuklar-ve-ailelerine-moral-gezisi" >ÖZEL ÇOCUKLAR VE AİLELERİNE MORAL GEZİSİ..</a>
+								</h3>
+							</div>
+						</div>
+												<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<div class="mt-25 position-relative">
+								<div class="topic-box-top-xs">
+									<div class="topic-box-sm color-azure-radiance mb-20">YEREL</div>
+								</div>
+								<a href="haber/baskan-gencay-dan-1444-sokak-ta-gece-incelemesi-acilis-icin-geri-sayim-basladi" class="mb-10 display-block img-opacity-hover haber_detay_sag_img" >
+									<img src="tema/genel/uploads/haberler/soki.jpg" alt="BAŞKAN  GENÇAY’DAN 1444 SOKAK’TA GECE İNCELEMESİ: AÇILIŞ İÇİN GERİ SAYIM BAŞLADI.." class="img-fluid m-auto width-100">
+								</a>
+								<h3 class="title-medium-dark size-md mb-none haber_kisa">
+									<a href="haber/baskan-gencay-dan-1444-sokak-ta-gece-incelemesi-acilis-icin-geri-sayim-basladi" >BAŞKAN  GENÇAY’DAN 1444 SOKAK’TA GECE İNCELEMESİ: AÇILIŞ İÇİN GERİ SAYIM BAŞLADI..</a>
+								</h3>
+							</div>
+						</div>
+												<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<div class="mt-25 position-relative">
+								<div class="topic-box-top-xs">
+									<div class="topic-box-sm color-cinnabar mb-20">GÜNCEL</div>
+								</div>
+								<a href="haber/hasereyle-mucadeleye-para-ayirmayan-buyuksehire-baskan-yetiskin-den-tepki" class="mb-10 display-block img-opacity-hover haber_detay_sag_img" >
+									<img src="tema/genel/uploads/haberler/hase.jpeg" alt="HAŞEREYLE MÜCADELEYE PARA AYIRMAYAN BÜYÜKŞEHİRE BAŞKAN YETİŞKİN'DEN TEPKİ.. " class="img-fluid m-auto width-100">
+								</a>
+								<h3 class="title-medium-dark size-md mb-none haber_kisa">
+									<a href="haber/hasereyle-mucadeleye-para-ayirmayan-buyuksehire-baskan-yetiskin-den-tepki" >HAŞEREYLE MÜCADELEYE PARA AYIRMAYAN BÜYÜKŞEHİRE BAŞKAN YETİŞKİN'DEN TEPKİ.. </a>
+								</h3>
+							</div>
+						</div>
+												<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<div class="mt-25 position-relative">
+								<div class="topic-box-top-xs">
+									<div class="topic-box-sm color-cinnabar mb-20">GÜNCEL</div>
+								</div>
+								<a href="haber/demirtas-varsova-dan-kusadasi-turizmine-iliskin-aciklamalarda-bulundu" class="mb-10 display-block img-opacity-hover haber_detay_sag_img" >
+									<img src="tema/genel/uploads/haberler/demirr.jpg" alt="DEMİRTAŞ VARŞOVA’DAN KUŞADASI TURİZMİNE İLİŞKİN AÇIKLAMALARDA BULUNDU.." class="img-fluid m-auto width-100">
+								</a>
+								<h3 class="title-medium-dark size-md mb-none haber_kisa">
+									<a href="haber/demirtas-varsova-dan-kusadasi-turizmine-iliskin-aciklamalarda-bulundu" >DEMİRTAŞ VARŞOVA’DAN KUŞADASI TURİZMİNE İLİŞKİN AÇIKLAMALARDA BULUNDU..</a>
+								</h3>
+							</div>
+						</div>
+												<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<div class="mt-25 position-relative">
+								<div class="topic-box-top-xs">
+									<div class="topic-box-sm color-azure-radiance mb-20">YEREL</div>
+								</div>
+								<a href="haber/efeler-belediyesi-nden-cocuklara-20-kasim-hediyesi" class="mb-10 display-block img-opacity-hover haber_detay_sag_img" >
+									<img src="tema/genel/uploads/haberler/vld.jpg" alt="EFELER BELEDİYESİ'NDEN ÇOCUKLARA 20 KASIM HEDİYESİ.." class="img-fluid m-auto width-100">
+								</a>
+								<h3 class="title-medium-dark size-md mb-none haber_kisa">
+									<a href="haber/efeler-belediyesi-nden-cocuklara-20-kasim-hediyesi" >EFELER BELEDİYESİ'NDEN ÇOCUKLARA 20 KASIM HEDİYESİ..</a>
+								</h3>
+							</div>
+						</div>
+											</div>
+				</div>
+								
+					
+				<div class="sidebar-box">
+					<div class="g-ads text-center">
+													<a href="iletisim"><img src="https://placehold.co/350x262?text=Reklam 350x262" width="350" height="262" alt="Advert" border="0"></a>
+												
+					</div>
+				</div>
+				
+				
+								<div class="sidebar-box">
+					<div class="topic-border color-cod-gray mb-30">
+						<div class="topic-box-lg color-cod-gray">Çok Okunanlar</div>
+					</div>
+															<div class="position-relative mb30-list bg-body">
+						<div class="media">
+							<a href="haber/cercioglu-asli-sorumlulugunu-parasizliktan-reddetmis-8230" class="img-opacity-hover uclu_haber_alt" >
+								<img src="tema/genel/uploads/haberler/cercioglu-asli-sorumlulugunu-parasizliktan-reddetmis-8230-697340d66160c.jpeg" alt="Çerçioğlu, asli sorumluluğunu parasızlıktan reddetmiş&#8230;" class="img-fluid">
+							</a>
+							<div class="media-body">
+								<div class="post-date-dark">
+									<ul>
+										<li><span><i class="far fa-clock"></i></span> 15 Ocak 2026, 20:31</li>
+									</ul>
+								</div>
+								<h3 class="title-medium-dark mb-none haber_kisa">
+									<a href="haber/cercioglu-asli-sorumlulugunu-parasizliktan-reddetmis-8230" >Çerçioğlu, asli sorumluluğunu parasızlıktan reddetmiş&#8230;</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+										<div class="position-relative mb30-list bg-body">
+						<div class="media">
+							<a href="haber/derin-analiz-operasyondan-cercioglu-sorumlu-tutulacak-ozlem-hanim-in-tutunmasi-artik-mucize" class="img-opacity-hover uclu_haber_alt" >
+								<img src="tema/genel/uploads/haberler/WhatsApp-Image-2026-03-13-at-19.45.39.jpeg" alt=" DERİN ANALİZ: ‘OPERASYONDAN ÇERÇİOĞLU SORUMLU TUTULACAK. ÖZLEM HANIM’IN TUTUNMASI ARTIK MUCİZE’" class="img-fluid">
+							</a>
+							<div class="media-body">
+								<div class="post-date-dark">
+									<ul>
+										<li><span><i class="far fa-clock"></i></span> 13 Mart 2026, 19:56</li>
+									</ul>
+								</div>
+								<h3 class="title-medium-dark mb-none haber_kisa">
+									<a href="haber/derin-analiz-operasyondan-cercioglu-sorumlu-tutulacak-ozlem-hanim-in-tutunmasi-artik-mucize" > DERİN ANALİZ: ‘OPERASYONDAN ÇERÇİOĞLU SORUMLU TUTULACAK. ÖZLEM HANIM’IN TUTUNMASI ARTIK MUCİZE’</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+										<div class="position-relative mb30-list bg-body">
+						<div class="media">
+							<a href="haber/belediyede-mobbing-skandali-cercioglu-personeli-sosyal-medyada-saf-tutmaya-zorladi" class="img-opacity-hover uclu_haber_alt" >
+								<img src="tema/genel/uploads/haberler/Untitled-2.jpg" alt="BELEDİYEDE MOBBİNG SKANDALI: ÇERÇİOĞLU PERSONELİ SOSYAL MEDYADA SAF TUTMAYA ZORLADI" class="img-fluid">
+							</a>
+							<div class="media-body">
+								<div class="post-date-dark">
+									<ul>
+										<li><span><i class="far fa-clock"></i></span> 29 Ocak 2026, 21:17</li>
+									</ul>
+								</div>
+								<h3 class="title-medium-dark mb-none haber_kisa">
+									<a href="haber/belediyede-mobbing-skandali-cercioglu-personeli-sosyal-medyada-saf-tutmaya-zorladi" >BELEDİYEDE MOBBİNG SKANDALI: ÇERÇİOĞLU PERSONELİ SOSYAL MEDYADA SAF TUTMAYA ZORLADI</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+										<div class="position-relative mb30-list bg-body">
+						<div class="media">
+							<a href="haber/ertugrul-yamen-in-yetkisi-olmadigi-halde-mahkemeye-resmi-yazi-yazdigi-kararla-tespit-edildi" class="img-opacity-hover uclu_haber_alt" >
+								<img src="tema/genel/uploads/haberler/Untitled-1.jpg" alt="ERTUĞRUL YAMEN'İN YETKİSİ OLMADIĞI HALDE MAHKEMEYE RESMİ YAZI YAZDIĞI KARARLA TESPİT EDİLDİ" class="img-fluid">
+							</a>
+							<div class="media-body">
+								<div class="post-date-dark">
+									<ul>
+										<li><span><i class="far fa-clock"></i></span> 26 Ocak 2026, 14:08</li>
+									</ul>
+								</div>
+								<h3 class="title-medium-dark mb-none haber_kisa">
+									<a href="haber/ertugrul-yamen-in-yetkisi-olmadigi-halde-mahkemeye-resmi-yazi-yazdigi-kararla-tespit-edildi" >ERTUĞRUL YAMEN'İN YETKİSİ OLMADIĞI HALDE MAHKEMEYE RESMİ YAZI YAZDIĞI KARARLA TESPİT EDİLDİ</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+										<div class="position-relative mb30-list bg-body">
+						<div class="media">
+							<a href="haber/masalarda-rakilar-avuclar-hakka-yonelmis" class="img-opacity-hover uclu_haber_alt" >
+								<img src="tema/genel/uploads/haberler/onder-yildirimcan-kose.jpg" alt="MASALARDA RAKILAR AVUÇLAR HAKKA YÖNELMİŞ" class="img-fluid">
+							</a>
+							<div class="media-body">
+								<div class="post-date-dark">
+									<ul>
+										<li><span><i class="far fa-clock"></i></span> 08 Şubat 2026, 23:33</li>
+									</ul>
+								</div>
+								<h3 class="title-medium-dark mb-none haber_kisa">
+									<a href="haber/masalarda-rakilar-avuclar-hakka-yonelmis" >MASALARDA RAKILAR AVUÇLAR HAKKA YÖNELMİŞ</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+									</div>
+								
+					
+				<div class="sidebar-box">
+					<div class="g-ads text-center">
+													<a href="iletisim"><img src="https://placehold.co/350x262?text=Reklam 350x262" width="350" height="262" alt="Advert" border="0"></a>
+												
+					</div>
+				</div>
+				
+								<div class="sagKurular">
+					<div class="row tab-space4">
+												<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<a href="canli-borsa" title="Canlı Borsa">
+								<div>
+									<i class="fa-solid fa-chart-line"></i>
+									<strong>Canlı Borsa</strong>
+								</div>
+							</a>
+						</div>
+																		<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<a href="nobetci-eczaneler" title="Nöbetçi Eczaneler">
+								<div>
+									<i class="fa-solid fa-prescription-bottle-medical"></i>
+									<strong>Nöbetçi Eczaneler</strong>
+								</div>
+							</a>
+						</div>
+																		<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<a href="hava-durumu" title="Hava Durumu">
+								<div>
+									<i class="fa-solid fa-temperature-half"></i>
+									<strong>Hava Durumu</strong>
+								</div>
+							</a>
+						</div>
+																								<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<a href="trafik-durumu" title="Trafik Durumu">
+								<div>
+									<i class="fa-solid fa-traffic-light"></i>
+									<strong>Trafik Durumu</strong>
+								</div>
+							</a>
+						</div>
+																		<div class="col-lg-6 col-md-4 col-sm-6 col-6">
+							<a href="canli-sonuclar" title="Canlı Sonuçlar">
+								<div>
+									<i class="fa-solid fa-stopwatch-20"></i>
+									<strong>Canlı Sonuçlar</strong>
+								</div>
+							</a>
+						</div>
+											</div>
+				</div>
+								
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="sonraki-haber-container"></div>
+<script>
+$(document).ready(function() {
+    let currentId = 3568;
+    let isLoading = false;
+    let hasMore = true;
+
+    function throttle(func, limit) {
+        let inThrottle;
+        return function(...args) {
+            if (!inThrottle) {
+                func(...args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        };
+    }
+
+    function loadNextHaber() {
+        if (isLoading || !hasMore) return;
+
+        isLoading = true;
+        $('#sonraki-haber-container').empty().html('<div class="text-center py-4"><i class="fas fa-spinner fa-spin fa-2x"></i></div>');
+
+        $.ajax({
+            url: 'tema/genel/ajax/sonraki-haber.php',
+            type: 'GET',
+            data: {
+                current_id: currentId,
+                kategori: '63'
+            },
+            success: function(response) {
+                if (response.trim() !== '') {
+                    $('#sonraki-haber-container').html(response).hide().fadeIn(500);
+                    let newId = $('#sonraki-haber-container').find('[data-haber-id]').data('haber-id');
+                    let newTitle = $('#sonraki-haber-container').find('[data-haber-title]').data('haber-title');
+                    if (newId && newTitle) {
+                        currentId = newId;
+                        history.pushState(null, null, 'haber/' + $('#sonraki-haber-container').find('[data-haber-seo]').data('haber-seo') + '');
+                        document.title = newTitle;
+                    } else {
+                        hasMore = false;
+                        $('#sonraki-haber-container').html('');
+                    }
+                } else {
+                    hasMore = false;
+                    $('#sonraki-haber-container').html('');
+                }
+                isLoading = false;
+                setTimeout(() => $(window).trigger('scroll'), 50);
+            },
+            error: function(xhr, status, error) {
+                $('#sonraki-haber-container').html('<div class="text-center py-4">Haber yüklenirken bir hata oluştu: ' + error + '</div>');
+                isLoading = false;
+                hasMore = false;
+            }
+        });
+    }
+
+    function isAtBottom() {
+        const scrollTop = $(window).scrollTop();
+        const windowHeight = $(window).height();
+        const documentHeight = $(document).height();
+        const isBottom = scrollTop + windowHeight >= documentHeight - 10 ||
+                         (window.scrollY >= (document.documentElement.scrollHeight - window.innerHeight - 10));
+        return isBottom;
+    }
+
+    $(window).on('scroll', throttle(function() {
+        if (isAtBottom() && !isLoading && hasMore) {
+            loadNextHaber();
+        }
+    }, 100));
+
+    if (isAtBottom() && !isLoading && hasMore) {
+        loadNextHaber();
+    }
+
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length && isAtBottom() && !isLoading && hasMore) {
+                loadNextHaber();
+            }
+        });
+    });
+
+    observer.observe(document.getElementById('sonraki-haber-container'), {
+        childList: true,
+        subtree: true
+    });
+
+    $(window).on('scroll', function() {
+        if (isAtBottom() && !isLoading && hasMore) {
+            window.scrollTo(0, $(window).scrollTop() - 1);
+            setTimeout(() => window.scrollTo(0, $(window).scrollTop() + 1), 10);
+        }
+    });
+});
+</script>
+	
+        <!-- Footer Area Start Here -->
+        <footer>
+			<div class="footer-ust">
+				<div class="container">
+					<div class="row align-items-center">						
+						<div class="col-md-6">
+							 <a href="./" class="footer-logo img-fluid">
+                                <img src="tema/genel/uploads/logo/footer/logo-site_1.png" alt="Bülten Aydın" class="img-fluid">
+                            </a>
+						</div>
+						<div class="col-md-6">
+														<ul class="footer-social">
+								                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100082955975100" title="facebook">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+																                                <li>
+                                    <a target="_blank" href="https://x.com/bultenaydincom" title="twitter">
+                                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+																                                <li>
+                                    <a target="_blank" href="https://instagram.com/bultenaydincom" title="instagram">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+																                                <li>
+                                    <a target="_blank" href="https://www.youtube.com/@bultenaydincom" title="youtube">
+                                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+																								                                <li>
+                                    <a target="_blank" href="rss.xml" title="Feed">
+                                        <i class="fa-solid fa-rss" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+								                            </ul>
+													</div>
+					</div>
+				</div>
+			</div>
+            <div class="footer-area-top">
+                <div class="container">
+                    <div class="row">
+						<div class="col-lg-3 col-md-6 col-6"><div class="footer-box"><ul class="most-view-post">							<li class="support-item-footer caption-1">
+								<a 								   href="kategori/guncel">
+								   GÜNCEL								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="kategori/siyaset">
+								   SİYASET								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="kategori/saglik">
+								   SAĞLIK								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="kategori/kultur-sanat">
+								   KÜLTÜR - SANAT								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="kategori/spor">
+								   SPOR								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="resmi-ilanlar">
+								   RESMİ REKLAMLAR								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="yazarlar">
+								   YAZARLAR								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href=" https://bultenaydin.com/nobetci-eczaneler/Ayd%C4%B1n">
+								   NÖBETÇİ ECZANELER								</a>
+							</li>
+						</ul></div></div><div class="col-lg-3 col-md-6 col-6"><div class="footer-box"><ul class="most-view-post">							<li class="support-item-footer caption-1">
+								<a 								   href="canli-borsa">
+								   CANLI BORSA								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="canli-sonuclar">
+								   CANLI SONUÇLAR								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="fikstur">
+								   FİKSTÜR								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="trafik-durumu">
+								   TRAFİK DURUMU								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="hava-durumu">
+								   HAVA DURUMU								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="piyasalar">
+								   PİYASALAR								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="puan-durumu">
+								   PUAN DURUMU								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="burclar">
+								   BURÇLAR								</a>
+							</li>
+						</ul></div></div><div class="col-lg-3 col-md-6 col-6"><div class="footer-box"><ul class="most-view-post">							<li class="support-item-footer caption-1">
+								<a 								   href=" https://bultenaydin.com/gazeteler/sozcu">
+								   GAZETELER								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="seri-ilanlar">
+								    SERİ İLANLAR								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="firma-rehberi">
+								   FİRMA REHBERİ								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="iletisim">
+								   İLETİŞİM								</a>
+							</li>
+													<li class="support-item-footer caption-1">
+								<a 								   href="icerik/kunye">
+								   KÜNYE								</a>
+							</li>
+						</ul></div></div>					</div>
+                </div>
+            </div>
+            <div class="footer-area-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">                                                       
+                            <p>Web sitemizdeki haber içerikleri, izin alınmadan ve kaynak gösterilse dahi kopyalanamaz veya üçüncü kişilerce yayımlanamaz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End Here -->
+
+        <!-- Offcanvas Menu Start -->
+        <div id="offcanvas-body-wrapper" class="offcanvas-body-wrapper">
+            <div id="offcanvas-nav-close" class="offcanvas-nav-close offcanvas-menu-btn">
+                <a href="#" class="menu-times re-point">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="offcanvas-main-body">
+            			<ul id="accordion" class="offcanvas-nav panel-group">
+						</ul>
+			<div class="mwhatsapp">
+				<a href="https://wa.me/+905303206627" target="_blank" title="WhatsApp İhbar Hattı">
+				<i class="fa-brands fa-whatsapp fa-beat" style="--fa-beat-scale: 1.2; --fa-animation-duration: 5s; --fa-fade-opacity: 0.6;"></i>
+				<strong>WhatsApp İhbar Hattı</strong>
+				</a>
+			</div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="tema/genel/js/plugins.js" type="text/javascript"></script>
+    <script src="tema/genel/js/popper.js" type="text/javascript"></script>
+    <script src="tema/genel/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="tema/genel/js/wow.min.js"></script>
+    <script src="tema/genel/js/jquery.meanmenu.min.js" type="text/javascript"></script>
+    <script src="tema/genel/js/jquery.scrollUp.min.js" type="text/javascript"></script>
+    <script src="tema/genel/js/waypoints.min.js"></script>
+	<script src="tema/genel/js/select2.min.js" type="text/javascript"></script>
+    <script src="tema/genel/js/jquery.magnific-popup.min.js"></script>
+	<script src="tema/genel/js/sweetalert2.all.min.js"></script>
+	<script src="tema/genel/js/sweetalert2.min.js"></script>	
+	<script src="tema/genel/js/cerez.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+	<script>
+	var logo = "<div class='mobile-menu-nav-back'><a href='./' class='logo-mobile'><img style='height: 60px;' src='tema/genel/uploads/logo/logo-site_1.png'/></a></div>";
+	</script>
+    <script src="tema/genel/js/main.js" type="text/javascript"></script>
+	
+	<script>
+		function dildegis(dilID) {
+			$.ajax({
+				url: 'dildegis.php',
+				dataType: 'JSON',
+				data: {
+					id: dilID,
+					current: '1'
+				}
+			})
+			.done(function(msg) {
+				if (msg.hata) {
+					alert("Hata");
+				} else {
+					window.location = msg.redirect;
+				}
+			})
+			.fail(function(jqXHR, textStatus, errorThrown) {
+				console.error("Hata ", textStatus, errorThrown);
+			})
+			.always(function() {
+				console.log("Hata");
+			});
+		}
+		
+		/*
+		$(document).ready(function() {
+			$('#dropdown a').each(function() {
+				if ($(this).text().trim() === 'SESLİ HABERLER') {
+					$(this).append(' <span style="position: absolute;top: 16px;right: 12px;background: #cc292b;font-size: 10px;color: #fff;height: 14px;line-height: 14px;padding: 0 6px;border-radius: 10px;font-weight: 500;text-transform: none;">Yeni</span>');
+				}
+			});
+		});
+		*/
+
+
+		
+		$(document).ready(function() {
+			
+			$('form.ajax-form').on('submit', function(e) {
+				e.preventDefault(); // Formun normal gönderimini engelle
+
+				var $form = $(this); // jQuery form nesnesi
+				var $button = $form.find('button[type="submit"]'); // Butonu seç
+				var defaultButtonText = $button.html(); // Varsayılan buton metnini sakla
+
+				if ($form[0].checkValidity()) { // HTML5 doğrulama
+					var formData = $form.serialize(); // Form verilerini al
+
+					$button.prop('disabled', true); // Gönderim düğmesini devre dışı bırak
+					$button.html('Lütfen Bekleyiniz.'); // Gönderim butonunu güncelle
+
+					$.ajax({
+						url: $form.attr('action') || '_class/site_islem.php', // Formun action özelliğini kullan veya varsayılan URL
+						type: 'POST', // Verilerin gönderim türü
+						data: formData, // Gönderilecek form verileri
+						success: function(response) {
+							try {
+								var result = JSON.parse(response); // JSON yanıtı işleme
+
+								if(result.status === 'success') {
+									Swal({
+										type: result.status,
+										title: result.title || 'Başarılı.!',
+										text: result.message || 'İletiniz Yöneticiye Gönderilmiştir.',
+										confirmButtonText: 'Tamam',
+										timer: 5000
+									}).then(function() {
+										$form[0].reset(); // Formu yalnızca başarılı yanıt aldığında sıfırlama
+									});
+								} else {
+									Swal({
+										type: result.status,
+										title: result.title || 'Hata.!',
+										text: result.message || 'İletiniz Gönderilmedi Tekrar Deneyiniz.',
+										confirmButtonText: 'Tamam',
+										timer: 5000
+									});
+								}
+							} catch (e) {
+								Swal({
+									type: result.status,
+									title: 'Yanıt işlenemedi',
+									text: response,
+									confirmButtonText: 'Tamam',
+									timer: 5000
+								});
+							}
+						},
+						error: function(xhr, status, error) {
+							Swal({
+								type: result.status,
+								title: 'Form gönderimi başarısız',
+								text: 'Bir hata oluştu: ' + error,
+								confirmButtonText: 'Tamam',
+								timer: 5000
+							});
+						},
+						complete: function() {
+							$button.prop('disabled', false); // Gönderim düğmesini yeniden etkinleştir
+							$button.html(defaultButtonText); // Buton metnini varsayılan metne döndür
+						}
+					});
+				}
+			});
+		});
+
+		var isLoggedIn = false;
+		var alert_modal_title = "Uyarı";
+		var success_modal_title = "Başarılı";
+		var cookie_popup_html = '<div id="cookie-alert-popup">\n' +
+				'  <div class="alert-popup__policy-card alert-popup__card">\n' +
+				'    <div class="alert-popup__content">\n' +
+				'      <h3>Çerez Kullanımı</h3>\n' +
+				'      <p>Sizlere daha iyi bir hizmet sunabilmek için sitemizde çerezlerden faydalanıyoruz. Sitemizi kullanmaya devam ederek çerezleri kullanmamıza izin vermiş olursunuz. Detaylı bilgi için <a style="color:white;" href="icerik/cerez-politikasi" target="_blank"><strong>Çerez Politikamızı</strong></a> inceleyebilirsiniz</p>\n' +
+				'      <button class="alert-popup-button">Tamam</button>\n' +
+				'    </div>\n' +
+				'  </div>\n' +
+				'</div>';
+			setTimeout(function(){
+				checkAlertCookie();
+			},1000);
+		
+		document.addEventListener('DOMContentLoaded', function() {
+			// Tüm lazy img'ler için container oluştur
+			document.querySelectorAll('img.lazy').forEach(function(img) {
+				// Eğer zaten bir container içinde değilse
+				if (!img.closest('.lazy-container')) {
+					const container = document.createElement('div');
+					container.className = 'lazy-container';
+					
+					// Container'a uygun class'ları ekle (eğer varsa)			
+					if (
+						img.closest('.news-image-container') ||
+						img.closest('.video-thumbnail') ||
+						img.closest('.category-image')
+					) {
+						container.classList.add('news-image-container', 'video-thumbnail', 'category-image');
+					}
+					
+					// Spinner ekle
+					const spinner = document.createElement('div');
+					spinner.className = 'lazy-spinner';
+					
+					// Resmi container içine al
+					img.parentNode.insertBefore(container, img);
+					container.appendChild(img);
+					container.appendChild(spinner);
+				}
+			});
+
+			// Lazy Load Başlat
+			  var lazyLoadInstance = new LazyLoad({
+				elements_selector: "img.lazy",
+				threshold: 100,
+				callback_loading: function(el) {
+				  el.classList.remove('lazy-loaded');
+				  // Spinner'ı bul ve göster
+				  let spinner = el.closest('.lazy-container')?.querySelector('.lazy-spinner');
+				  if (!spinner && el.nextElementSibling?.classList.contains('lazy-spinner')) {
+					spinner = el.nextElementSibling;
+				  }
+				  if (spinner) {
+					spinner.style.display = 'block';
+				  }
+				},
+				callback_loaded: function(el) {
+				  el.classList.add('lazy-loaded');
+				  // Spinner'ı bul ve kaldır
+				  let spinner = el.closest('.lazy-container')?.querySelector('.lazy-spinner');
+				  if (!spinner && el.nextElementSibling?.classList.contains('lazy-spinner')) {
+					spinner = el.nextElementSibling;
+				  }
+				  if (spinner) {
+					spinner.style.opacity = '0';
+					setTimeout(() => spinner.remove(), 300);
+				  }
+				},
+				callback_error: function(el) {
+				  el.src = "https://dummyimage.com/300x200/f8f8f8/d63384&text=Bülten Aydın";
+				  // Spinner'ı bul ve kaldır
+				  let spinner = el.closest('.lazy-container')?.querySelector('.lazy-spinner');
+				  if (!spinner && el.nextElementSibling?.classList.contains('lazy-spinner')) {
+					spinner = el.nextElementSibling;
+				  }
+				  if (spinner) {
+					spinner.remove();
+				  }
+				}
+			  });
+
+			  // Dinamik içerikler için
+			  function updateLazyLoad() {
+				lazyLoadInstance.update();
+			  }
+
+			  // Swiper, AJAX vs. için event listener'lar
+			  if (typeof Swiper !== 'undefined') {
+				document.querySelectorAll('.swiper').forEach(function(swiper) {
+				  swiper.addEventListener('slideChange', updateLazyLoad);
+				});
+			  }
+
+			  // Global fonksiyon olarak tanımla
+			  window.updateLazyLoad = updateLazyLoad;
+			});
+
+	</script>
+</body>
+
+</html>
