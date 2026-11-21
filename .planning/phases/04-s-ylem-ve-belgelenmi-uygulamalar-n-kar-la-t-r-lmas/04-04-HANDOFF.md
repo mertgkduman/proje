@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 23:30 UTC — en güncel durum
+
+İstanbul preview session 3638 gerçek çıkış 0; staging session 1568 ve source-check 53702 de aynı paket/review ile 0. Preview `e55ce18c85a14318b36135cd5cbfcc05` için DB/JSON olay+ilişki tekilliği, iki görünüm/karşılıklı bağlantı, Sözcü/ANKA hedefi ve orijinal/pasif arşiv/indirme bağlantıları, siyah alıntı ve mavi özet, manifest hashleri `istanbul-preview-proof.md`; paket SHA `b73aee55eaf58551bb79221ae5adda8f5cc07c35976f43601f1cd7e210ea3172`, review `e2481b9c9c856f416d3c1e5d1421a1787bfcd67d37cae829fc06fd8233b516cc` birebir `3291361` ile canlı dosyalarda. Kanonik release değişmedi, stage tracer; 610 hücre ve plan açık.
+
+Deprem 10/4638 için gerçek TBMM HTTP 200 bayt ve owner-bound kaynak taslağı `75ec24c`; kurucu programda dirençli kent cümlesi `22dfde2` ile ayrıca okundu. Envanterde doğrudan deprem/afet konu kimliği ve seçili karşılaştırma bağı bulunamadı; gerçek uzantı araştırması açık, olay bağı/kapanış üretilmedi. Daha geniş 28e1029d… paketin Samsun söz ihtilafında `support`+`reply` bulunan ama `conflict` bulunmayan son gerçek ret `fae03c3`; görev başına üç otomatik düzeltme sınırı dolduğu için kaynakla uyumlu dar düzeltme ve ilgili kayıt sahipliği orkestratöre devredildi, bu yürütücü aynı dosyalara dokunmaz. Sonraki dört gerçek arama `4f213df`, üye talebinin reddi veya nihai sonucu kanıtlamadı.
+
 ## 2026-11-21 23:26 UTC — en güncel durum
 
 Diyarbakır preview session 96992 ve source-check session 86934 çıkış 0, gerçek DB/JSON/iki görünüm/manifest `diyarbakir-preview-proof.md`; aynı paket `5ea2eb8` ile alındı. Aydın v2 preview session 63162 ve düzeltilmiş review source-check session 97095 çıkış 0, DB/JSON/iki görünüm/kaynak köprüleri/manifest ve siyah alıntı-koyu mavi özet `aydin-preview-proof.md`; birebir canlı paket SHA `2b56b5767b3caa81c79911eeacfb0de4ae162ace75815a00b2d8dfec8fc43b6f`, review `f7a5d3da6ceb0340b4afd287c117933b94bb515cb8e0c791d1ea0f19bb0e756a`, commit `4ff9aaa`. Stage tracer, kanonik release ve kapsam kapanmadı.
