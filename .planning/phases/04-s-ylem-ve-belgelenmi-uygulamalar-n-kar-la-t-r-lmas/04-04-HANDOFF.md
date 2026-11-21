@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 21:25 UTC — daha güncel durum
+
+Ulusal taslak staging, gerçek source-check session 5218 ve preview session 56904 çıkış 0. DB/JSON, iki görünüm, kaynak ve manifest `national-preview-proof.md`; SHA `eadac56120944d839b3ad8c0a87e9d01cf00b157abd90fe2374e35d9813ef92a` ile review `785da80425db877fccf5132d7a5ed0a9813197a3946ae30086efda135daee2fa` aynı baytlarla canlı parti paketine alındı, `3e11709`. Bu yalnız dar kapsam doğrulaması; stage tracer, parti kuyruğu ve plan açık, kanonik release değiştirilmedi.
+
+Aktif beş süreç: housing preview PID 754968/session 97130, housing source-check v2 PID 764737/session 4966; Uşak source-check v2 PID 765080/session 86472, Uşak preview PID 781695/session 25448; Diyarbakır daha geniş paket staging `practice-check` PID 781946/session 35006. Sonuncuda 142 nesne/görünüm yolu kontrol edildi, 40 yeni dosya eklendi, mevcut yollar eşit bayt, eksik 0. Paket SHA `7ad241fa04061499903d88dee70f77b08fcbd3ff92fcb45228dec1d09215172d`, review SHA `41b492e59c72d2d7a0dc44b60d8ebab2c418f210d1160738c8db019fd2d9ec2f`; `957e2fe`, 109 hedef doğrudan doğrulayıcıyla bellekte geçti, tam CLI çıktısı değil. İşlemlerin gerçek çıkışını alın, eşzamanlı aynı komutu başlatmayın. İzmir paketi için 104 hedef bellekte doğrulama kanıtı `cb20651`.
+
 ## 2026-11-21 21:20 UTC — daha güncel durum
 
 Housing ilk source-check session 37436 çıkış 1 `Kaynak inceleme hedef kapsamı eksik`; üç program beyanı hedefi gerçek pasajla yeni review v2 SHA `511336de76a298db2559687c4248bd3a0c93f565e455ce47aae67373e9ce2703` içine eklendi. Eski ret ve düzeltme `housing-review-correction.md`, commit `a26de25`; gerçek base verisiyle 77/77 hedef/pasaj mekanik eşleşti. Housing source-check v2 PID 764737/session 4966, aynı değişmemiş paket preview PID 754968/session 97130 sürüyor. Uşak staging session 37488 çıkış 0, `usak-staging-proof.md`; düzeltilmiş review v2 SHA `dfb7aba358cc4a7871ff0678a0de8b808ce6a1210fd6e1d3386d13696f8b31ef` ile gerçek source-check PID 765080/session 86472 sürüyor, Uşak preview henüz başlatılmadı. Ulusal source-check PID 723299/session 5218 ve preview PID 723350/session 56904 sürüyor. Eşzamanlı aynı komutu başlatmayın.
