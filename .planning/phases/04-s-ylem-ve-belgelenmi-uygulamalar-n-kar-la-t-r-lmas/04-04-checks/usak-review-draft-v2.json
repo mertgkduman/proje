@@ -1,0 +1,1400 @@
+{
+  "practice_source_review": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "tracer-cesme|0105-cesme-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Haber ön seçimde üyelerin oy kullandığını bildiriyor.",
+      "limitations": "Haber yöntemi ve tutanağı açıklamıyor; katılım yüzdesi sayılarla uyuşmuyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim işlemini bağımsız haberin kendi olgu anlatımıyla sınırlı inceledim."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "tracer-cesme",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Çeşme ilçe başkanlığı ön seçimi haberin kapsamına giriyor.",
+      "limitations": "Haberdeki 630 ve 1113 sayıları yüzde 86 ifadesiyle uyuşmuyor.",
+      "result": "reviewed",
+      "reason": "Olay adı ve yerel ön seçim kapsamını yayın tarihi ve pasajla karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "tracer-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "Özel üyelerin ilçe ve il başkanları ile genel başkanı doğrudan seçeceğini açıkladı.",
+      "limitations": "Haber beyanı aktarır, gerçekleşmiş seçim veya kabul edilmiş yönetmelik kanıtı değildir.",
+      "result": "reviewed",
+      "reason": "Haberin ilk grup toplantısı anlatımı ve tarihini sözün kapsamıyla karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "tracer-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "Özet üç başkanlık düzeyini ve üyelerin doğrudan seçimi beyanını koruyor.",
+      "limitations": "Özet kurumsal uygulamanın gerçekleştiğini ileri sürmez.",
+      "result": "reviewed",
+      "reason": "Özetin özne ve seçilecek makamlarını Euronews pasajıyla karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "tracer-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "Alıntı Euronews haberinin Özel beyanını aktaran cümlesidir.",
+      "limitations": "Gazetecinin aktardığı cümle doğrudan Özel sözü olarak sunulmamalıdır.",
+      "result": "reviewed",
+      "reason": "Alıntı metni özgün haber ve arşivlenmiş pasajla eşleştirildi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "tracer-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0105-cesme-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\", \"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Beyan ve Çeşme ön oylaması üyelerin yerel başkan seçimine ilişkindir.",
+      "limitations": "Tüzükte kongrenin nihai yetkisi ile ön seçim aşaması ayrı; haber yöntemi belirsiz.",
+      "result": "reviewed",
+      "reason": "İki kaynağın tarih, özne, kapsam ve yetki farklarını karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "tracer-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "İlişkinin hedefi üyelerin başkanları doğrudan seçmesi hakkındaki beyan.",
+      "limitations": "Bu hedefin gerçekleştiği yalnızca bu beyan kaynağından çıkarılamaz.",
+      "result": "reviewed",
+      "reason": "Hedef bulgusunu 4 Ağustos haberindeki grup toplantısı bağlamıyla okudum."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "tracer-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0105-cesme-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\", \"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Aynı konudaki beyan ve üyelerin ön oylaması arasında dar ilişki kuruluyor.",
+      "limitations": "Ön seçim ile kongre birbirinin yerine geçmez; seçim sonucuna ilişkin ek kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "İlişki cümlesinin iki aşamayı ayırdığını her iki pasajla kontrol ettim."
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "tracer-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Çeşme ilçe örgütünün ön seçim düzenlediği ve üyelerin oy kullandığı aktarılıyor.",
+      "limitations": "Kayıt parti geneline veya kongrenin nihai sonucuna genellenemez.",
+      "result": "reviewed",
+      "reason": "Olayın örgüt düzeyi ve görev kapsamını haberin Çeşme ön seçim metniyle karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "tracer-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "İlgili bulgu gazetenin Çeşme üyelerinin ön oylamasını haberleştirdiğini belirtiyor.",
+      "limitations": "Haberin gözlem yöntemi ve oy tutanağı bağımsız olarak açıklanmamış.",
+      "result": "reviewed",
+      "reason": "Bulgu ifadesinin habere atfını ve seçim türünü pasajla karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cesme-congress|0404-cesme-kongre-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0404-cesme-kongre-v1\"]",
+      "passage_ids": "[\"0404-cesme-kongre-p\"]",
+      "inspected_sections": "[\"Dokuz Eylül 4 Ekim ilçe kongresi ve Çeşme sonucu\"]",
+      "supported_claim": "Haber kongre oylaması ardından yeni yönetimin kesinleştiğini bildiriyor.",
+      "limitations": "Haber resmî tutanak ve oy sayısı içermiyor.",
+      "result": "reviewed",
+      "reason": "Çeşme bölümündeki oylama ve yönetim ifadesi kaynak baytıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cesme-congress",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0404-cesme-kongre-v1\"]",
+      "passage_ids": "[\"0404-cesme-kongre-p\"]",
+      "inspected_sections": "[\"Dokuz Eylül 4 Ekim ilçe kongresi ve Çeşme sonucu\"]",
+      "supported_claim": "4 Ekim ilçe kongresi haberde yer alıyor.",
+      "limitations": "Kongre 27 Eylül ön seçimiyle aynı olay değildir.",
+      "result": "reviewed",
+      "reason": "Haber tarihi, ilçe ve sonuç anlatımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cesme-congress-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-cesme-kongre-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-cesme-kongre-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\", \"Dokuz Eylül 4 Ekim ilçe kongresi ve Çeşme sonucu\"]",
+      "supported_claim": "4 Ağustos beyanı ve daha sonraki ilçe kongresi yerel başkanlık konusundadır.",
+      "limitations": "Üye ön seçimi ve delege kongresi ayrı aşamalardır; tutanak yoktur.",
+      "result": "reviewed",
+      "reason": "İki kaynağın konu, dönem ve seçim düzeyleri karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "Hedef, üyelerin başkanları doğrudan seçmesi beyanıdır.",
+      "limitations": "Beyan kendi başına kongre işleminin gerçekleştiğini göstermez.",
+      "result": "reviewed",
+      "reason": "Euronews haberinde sözü aktaran pasaj ve bağlam incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0404-cesme-kongre-v1\"]",
+      "passage_ids": "[\"0404-cesme-kongre-p\"]",
+      "inspected_sections": "[\"Dokuz Eylül 4 Ekim ilçe kongresi ve Çeşme sonucu\"]",
+      "supported_claim": "Kongre oylaması sonrası Onur yönetiminin kesinleştiği haberleştirildi.",
+      "limitations": "Haber olayın resmî tutanağını veya oy dökümünü sunmuyor.",
+      "result": "reviewed",
+      "reason": "Sonuç özeti Çeşme kongresi pasajıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-cesme-kongre-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-cesme-kongre-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\", \"Dokuz Eylül 4 Ekim ilçe kongresi ve Çeşme sonucu\"]",
+      "supported_claim": "İlişki yerel başkanlık beyanı ile kongre oylamasının farklı aşamalarını açıklar.",
+      "limitations": "Beyan üyeleri, kongre ise delegeleri ilgilendirir; aynı usul varsayılmaz.",
+      "result": "reviewed",
+      "reason": "İlişki cümlesinin beyan ve kongre kaynaklarına uyumu okundu."
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-cesme-congress-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0404-cesme-kongre-v1\"]",
+      "passage_ids": "[\"0404-cesme-kongre-p\"]",
+      "inspected_sections": "[\"Dokuz Eylül 4 Ekim ilçe kongresi ve Çeşme sonucu\"]",
+      "supported_claim": "Çeşme ilçe kongresindeki yönetim seçimi parti kurumu düzeyindedir.",
+      "limitations": "Bu yerel kayıt genel parti kongrelerinin tümüne genellenmez.",
+      "result": "reviewed",
+      "reason": "Kurum katkısının coğrafi ve örgütsel sınırı kongre metniyle incelendi."
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-cesme-congress-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0404-cesme-kongre-v1\"]",
+      "passage_ids": "[\"0404-cesme-kongre-p\"]",
+      "inspected_sections": "[\"Dokuz Eylül 4 Ekim ilçe kongresi ve Çeşme sonucu\"]",
+      "supported_claim": "Katkı bulgusu Onur başkanlığındaki yerel yönetimin haberini özetler.",
+      "limitations": "Haber sayısal oy sonucu veya itiraz süreci bildirmiyor.",
+      "result": "reviewed",
+      "reason": "Katkı bulgusunun özne ve sınırı haber pasajıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kayseri-kayit-iddiasi|0404-kayseri-uyelik-haber-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"0404-kayseri-uyelik-haber-v1\"]",
+      "passage_ids": "[\"0404-kayseri-uyelik-haber-p\"]",
+      "inspected_sections": "[\"Kayseri Haber 28 Ağustos, teslim ve kayıt iddiası\"]",
+      "supported_claim": "Ayanın başvuruların sisteme işlenmediği iddiası haberleştirildi.",
+      "limitations": "Başvuru kayıtları ve teslim tutanağı haberde yayımlanmıyor.",
+      "result": "reviewed",
+      "reason": "Döndü Nur Özçelik haberinde iddia sahibi ve teslim anlatımı incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kayseri-kayit-iddiasi",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"0404-kayseri-uyelik-haber-v1\"]",
+      "passage_ids": "[\"0404-kayseri-uyelik-haber-p\"]",
+      "inspected_sections": "[\"Kayseri Haber 28 Ağustos, teslim ve kayıt iddiası\"]",
+      "supported_claim": "28 Ağustos haberinde Kayseri başvuruları konusunda Ayanın iddiası yer alıyor.",
+      "limitations": "Haber tarihi iddia edilen işlemin gerçekleşme tarihi değildir.",
+      "result": "reviewed",
+      "reason": "Olay kimliği kaydın gerçekleşmesi değil iddianın yayımlanmasıyla sınırlandı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-uyelik-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-kabul-itiraz-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 7(3), üyelik başvurusu\"]",
+      "supported_claim": "Tüzükte başvurunun otuz gün içinde reddedilmemesi ve ret gerekçesi düzenleniyor.",
+      "limitations": "Somut Kayseri başvurularının tarih ve durumları bu metinden bilinmez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü Md. 7(3) ve kayıtlı karşılaştırma satırı okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-uyelik-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-kabul-itiraz-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 7(3), üyelik başvurusu\"]",
+      "supported_claim": "Özet otuz günlük düzenlemeyi ve ret gerekçesi koşulunu koruyor.",
+      "limitations": "İtiraz mercii yokluğu yalnız incelenen tüzüğün kapsamındadır.",
+      "result": "reviewed",
+      "reason": "Önceki Faz 3 özetinin ilgili tüzük pasajıyla sınırı gözden geçirildi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-uyelik-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-kabul-itiraz-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 7(3), üyelik başvurusu\"]",
+      "supported_claim": "Alıntı üyelik başvurusunun kabul sayılması ve ret gerekçesi cümleleridir.",
+      "limitations": "Alıntı başvuruların fiilî sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Alıntı ve özgün tüzük pasajı birebir karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kayseri-uyelik-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-kayseri-uyelik-haber-v1\", \"0404-kayseri-kongre-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-kabul-itiraz-p\", \"0404-kayseri-uyelik-haber-p\", \"0404-kayseri-kongre-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 7(3), üyelik başvurusu\", \"Kayseri Haber 28 Ağustos, teslim ve kayıt iddiası\", \"Kayserim, 17 Ekim, Gözbaşı açıklaması ve Ayan yanıtı\"]",
+      "supported_claim": "Tüzük hükmü ve haberleştirilen kayıt iddiası üyelik başvuruları konusundadır. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "İşlenmeme iddiası ret kararı ve otuz günün dolmasıyla eşitlenemez.",
+      "result": "reviewed",
+      "reason": "Belge ve haberin konu ve dönem sınırları birlikte değerlendirildi. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kayseri-uyelik-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-kabul-itiraz-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 7(3), üyelik başvurusu\"]",
+      "supported_claim": "İlişki hedefi otuz günlük tüzük düzenlemesidir.",
+      "limitations": "Başvuru tarihleri ve hükmün somut duruma uygulanması belirlenmedi.",
+      "result": "reviewed",
+      "reason": "Hedef bulgunun Faz 3 pasajına ait olduğu teyit edildi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kayseri-uyelik-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-kayseri-uyelik-haber-v1\", \"0404-kayseri-kongre-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-kabul-itiraz-p\", \"0404-kayseri-uyelik-haber-p\", \"0404-kayseri-kongre-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 7(3), üyelik başvurusu\", \"Kayseri Haber 28 Ağustos, teslim ve kayıt iddiası\", \"Kayserim, 17 Ekim, Gözbaşı açıklaması ve Ayan yanıtı\"]",
+      "supported_claim": "İlişki açıklaması yalnız konu bağlantısı ve açık belirsizliği bildiriyor. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "İddianın doğruluğu ve hukuki sonucu kaynaktan çıkarılamaz.",
+      "result": "reviewed",
+      "reason": "İki kaynağın açıklamada temsil edilmesi ve iddia dili kontrol edildi. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-kayseri-kayit-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"0404-kayseri-uyelik-haber-v1\", \"0404-kayseri-kongre-v1\", \"epm-charter-v1\"]",
+      "passage_ids": "[\"0404-kayseri-uyelik-haber-p\", \"0404-kayseri-kongre-p\", \"0303-epm-uyelik-kabul-itiraz-p\"]",
+      "inspected_sections": "[\"Kayseri Haber 28 Ağustos, teslim ve kayıt iddiası\", \"Kayserim 17 Ekim, il kongresi açıklamaları\", \"Tüzük Madde 7(3), üyelik başvurusu\"]",
+      "supported_claim": "Başvuru kaydı iddiası ve kongredeki karşılıklı açıklamalar bildiriliyor. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "Kayıt ve idari kararlar görülmedi; açıklamaların doğruluğu çözülmedi.",
+      "result": "reviewed",
+      "reason": "Ağustos iddiası ile Ekim kongresindeki yanıt karşılaştırıldı. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-kayseri-kayit-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"0404-kayseri-uyelik-haber-v1\", \"0404-kayseri-kongre-v1\", \"epm-charter-v1\"]",
+      "passage_ids": "[\"0404-kayseri-uyelik-haber-p\", \"0404-kayseri-kongre-p\", \"0303-epm-uyelik-kabul-itiraz-p\"]",
+      "inspected_sections": "[\"Kayseri Haber 28 Ağustos, teslim ve kayıt iddiası\", \"Kayserim 17 Ekim, il kongresi açıklamaları\", \"Tüzük Madde 7(3), üyelik başvurusu\"]",
+      "supported_claim": "Özet Ayanın iddiasını ve Gözbaşının oy hakkı açıklamasını ayırıyor. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "İki haber açıklamaları aktarır; belgelenmiş nihai başvuru sonucu değildir.",
+      "result": "reviewed",
+      "reason": "Özetin her görüşü kendi kaynağına bağladığı incelendi. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-kayseri-kayit-dispute|0404-kayseri-uyelik-haber-p|Başvuruların sisteme işlenmediği iddiası|support",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"0404-kayseri-uyelik-haber-v1\"]",
+      "passage_ids": "[\"0404-kayseri-uyelik-haber-p\"]",
+      "inspected_sections": "[\"Kayseri Haber 28 Ağustos, teslim ve kayıt iddiası\"]",
+      "supported_claim": "Kayseri Haber başvuruların işlenmediği iddiasını Ayana atfediyor.",
+      "limitations": "Haber tutanağı veya kayıt listesini göstermiyor.",
+      "result": "reviewed",
+      "reason": "Teslim ve sisteme giriş cümlesi özgün haber baytlarında bulundu."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-kayseri-kayit-dispute|0404-kayseri-kongre-p|Üyelerin oy hakkı ve tarafların karşı çıkışı|conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:38:26+00:00",
+      "source_version_ids": "[\"0404-kayseri-kongre-v1\"]",
+      "passage_ids": "[\"0404-kayseri-kongre-p\"]",
+      "inspected_sections": "[\"Kayserim 17 Ekim, il kongresi açıklamaları\"]",
+      "supported_claim": "Kayserim Gözbaşının oy hakkı açıklaması ile Ayanın karşı çıkışını aktarıyor.",
+      "limitations": "Bu haber 230 başvurunun kesin statüsünü belgelemiyor.",
+      "result": "reviewed",
+      "reason": "Kongre tartışmasındaki iki aktör ve görüşler birlikte okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-gaziantep-disiplin-aciklama|0404-gaziantep-sevk-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"0404-gaziantep-sevk-v1\"]",
+      "passage_ids": "[\"0404-gaziantep-sevk-p\"]",
+      "inspected_sections": "[\"Ayıntab 24 Ağustos 00:42, disipline sevk\"]",
+      "supported_claim": "Haber il yönetimine tedbirli sevk kararı atfediyor.",
+      "limitations": "Özgün sevk belgesi ve kurul kararı görülmedi.",
+      "result": "reviewed",
+      "reason": "00:42 haberindeki yetki ve sevk anlatımı okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-gaziantep-disiplin-aciklama|0404-gaziantep-ihrac-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"0404-gaziantep-ihrac-v1\"]",
+      "passage_ids": "[\"0404-gaziantep-ihrac-p\"]",
+      "inspected_sections": "[\"Ayıntab 24 Ağustos 09:51, ihraç açıklaması\"]",
+      "supported_claim": "Haber il yönetimine kesin ihraç açıklaması atfediyor.",
+      "limitations": "Açıklama sevk haberinden farklı; kurul kararı görülmedi.",
+      "result": "reviewed",
+      "reason": "09:51 haberindeki parti açıklamasının metni okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-gaziantep-disiplin-aciklama",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"0404-gaziantep-sevk-v1\", \"0404-gaziantep-ihrac-v1\"]",
+      "passage_ids": "[\"0404-gaziantep-sevk-p\", \"0404-gaziantep-ihrac-p\"]",
+      "inspected_sections": "[\"Ayıntab 24 Ağustos 00:42, disipline sevk\", \"Ayıntab 24 Ağustos 09:51, ihraç açıklaması\"]",
+      "supported_claim": "Aynı gazete aynı gün iki farklı işlem anlatımı yayımladı.",
+      "limitations": "Fark ayrı karar veya düzeltme olarak açıklanamadı.",
+      "result": "reviewed",
+      "reason": "Yayın saatleri, ilgili kişi ve metinler karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-disiplin-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-disiplin-ust-1\", \"0303-disiplin-ust-2\", \"0303-epm-fourth-disiplin-yetki-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 43(1), merkez ve TBMM görevleri\", \"Tüzük Madde 43(2), il ve belediye görevleri\", \"Tüzük Madde 43(3), diğer üyeler\"]",
+      "supported_claim": "Tüzük görev gruplarına göre disiplin sevk ve karar yetkisini ayırıyor.",
+      "limitations": "İlgilinin dönemdeki parti görevi ve geçici hükümler olaya uygulanmadı.",
+      "result": "reviewed",
+      "reason": "Md. 43 kapsamındaki üç görev grubu ve seçili Faz 3 satırı okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-disiplin-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-disiplin-ust-1\", \"0303-disiplin-ust-2\", \"0303-epm-fourth-disiplin-yetki-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 43(1), merkez ve TBMM görevleri\", \"Tüzük Madde 43(2), il ve belediye görevleri\", \"Tüzük Madde 43(3), diğer üyeler\"]",
+      "supported_claim": "Özet üst görevler dışındaki kişiler için il kurulunu tanımlıyor.",
+      "limitations": "Üst görev istisnalarının dışlandığı bu olayda doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "Önceki özet üç yetki pasajıyla birlikte gözden geçirildi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-disiplin-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-fourth-disiplin-yetki-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 43(3), diğer üyeler\"]",
+      "supported_claim": "Alıntı üst görevler dışındaki üyeler için yetkili kurulu düzenliyor.",
+      "limitations": "Bu hükmün ilgili kişiye uygulanması belirlenmedi.",
+      "result": "reviewed",
+      "reason": "Alıntı tüzükteki Md. 43(3) pasajına karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-gaziantep-disiplin-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-gaziantep-sevk-v1\", \"0404-gaziantep-ihrac-v1\"]",
+      "passage_ids": "[\"0303-disiplin-ust-1\", \"0303-disiplin-ust-2\", \"0303-epm-fourth-disiplin-yetki-p\", \"0404-gaziantep-sevk-p\", \"0404-gaziantep-ihrac-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 43(1), merkez ve TBMM görevleri\", \"Tüzük Madde 43(2), il ve belediye görevleri\", \"Tüzük Madde 43(3), diğer üyeler\", \"Ayıntab 24 Ağustos 00:42, disipline sevk\", \"Ayıntab 24 Ağustos 09:51, ihraç açıklaması\"]",
+      "supported_claim": "Disiplin yetkisi hükmü ve il yönetimine atfedilen açıklamalar aynı konudadır.",
+      "limitations": "Görev statüsü ve özgün kurul kararları görülmedi.",
+      "result": "reviewed",
+      "reason": "Tüzük yetki ayrımı ve iki haberin aşama farkı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-disiplin-ust-1\", \"0303-disiplin-ust-2\", \"0303-epm-fourth-disiplin-yetki-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 43(1), merkez ve TBMM görevleri\", \"Tüzük Madde 43(2), il ve belediye görevleri\", \"Tüzük Madde 43(3), diğer üyeler\"]",
+      "supported_claim": "İlişkinin hedefi tüzükte disiplin kurulunun yetki ayrımıdır.",
+      "limitations": "Hedef hükmün kişi bakımından uygulanması ayrıca kanıt gerektirir.",
+      "result": "reviewed",
+      "reason": "Hedef özetin üç tüzük pasajı ve kayıtlı sürümü karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-gaziantep-sevk-v1\", \"0404-gaziantep-ihrac-v1\"]",
+      "passage_ids": "[\"0303-epm-fourth-disiplin-yetki-p\", \"0404-gaziantep-sevk-p\", \"0404-gaziantep-ihrac-p\"]",
+      "inspected_sections": "[\"Tüzük Madde 43(3), diğer üyeler\", \"Ayıntab 24 Ağustos 00:42, disipline sevk\", \"Ayıntab 24 Ağustos, il yönetimine atfedilen açıklama\"]",
+      "supported_claim": "Açıklama disiplin yetkisi ile bildirilen süreci dar biçimde ilişkilendiriyor. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "Açıklama işlemin kanuna veya tüzüğe uygunluğunu karara bağlamaz.",
+      "result": "reviewed",
+      "reason": "İlişki cümlesi tüzük ve sevk haberiyle karşılaştırıldı. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-gaziantep-disiplin-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"0404-gaziantep-sevk-v1\", \"0404-gaziantep-ihrac-v1\", \"epm-charter-v1\"]",
+      "passage_ids": "[\"0404-gaziantep-sevk-p\", \"0404-gaziantep-ihrac-p\", \"0303-epm-fourth-disiplin-yetki-p\"]",
+      "inspected_sections": "[\"Ayıntab 24 Ağustos 00:42, disipline sevk\", \"Ayıntab 24 Ağustos 09:51, ihraç açıklaması\", \"Tüzük Madde 43(3), disiplin yetkisi\"]",
+      "supported_claim": "İki haberde tedbirli sevk ve kesin ihraç anlatımları var. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "İl yönetimi ve disiplin kurulu kararlarının asılları bulunmadı.",
+      "result": "reviewed",
+      "reason": "İki haberin aynı kişi ve farklı usul aşamasını anlatması incelendi. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"0404-gaziantep-sevk-v1\", \"0404-gaziantep-ihrac-v1\", \"epm-charter-v1\"]",
+      "passage_ids": "[\"0404-gaziantep-sevk-p\", \"0404-gaziantep-ihrac-p\", \"0303-epm-fourth-disiplin-yetki-p\"]",
+      "inspected_sections": "[\"Ayıntab 24 Ağustos 00:42, disipline sevk\", \"Ayıntab 24 Ağustos 09:51, ihraç açıklaması\", \"Tüzük Madde 43(3), disiplin yetkisi\"]",
+      "supported_claim": "Özet haberlerin sevk ve ihraç anlatımlarını ayrı tutuyor. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "İki anlatımın resmi işlem sırasıyla ilişkisi çözülmedi.",
+      "result": "reviewed",
+      "reason": "İhtilaf özeti iki tarihli kaynakla karşılaştırıldı. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-gaziantep-disiplin-dispute|0404-gaziantep-sevk-p|Tedbirli sevk|support",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"0404-gaziantep-sevk-v1\"]",
+      "passage_ids": "[\"0404-gaziantep-sevk-p\"]",
+      "inspected_sections": "[\"Ayıntab 24 Ağustos 00:42, disipline sevk\"]",
+      "supported_claim": "00:42 haberi tedbirli disiplin sevkini bildiriyor.",
+      "limitations": "Haber parti yönetiminin açıklaması dışındaki kararı göstermiyor.",
+      "result": "reviewed",
+      "reason": "Sevk paragrafı yakalanan ham HTML içinde bulundu."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-gaziantep-disiplin-dispute|0404-gaziantep-ihrac-p|İl yönetimine atfedilen kesin ihraç|conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:43:51+00:00",
+      "source_version_ids": "[\"0404-gaziantep-ihrac-v1\"]",
+      "passage_ids": "[\"0404-gaziantep-ihrac-p\"]",
+      "inspected_sections": "[\"Ayıntab 24 Ağustos 09:51, ihraç açıklaması\"]",
+      "supported_claim": "09:51 haberi il yönetimine kesin ihraç kararı atfediyor.",
+      "limitations": "Disiplin kurulunun kendi kararı veya belge numarası yok.",
+      "result": "reviewed",
+      "reason": "Açıklama paragrafı yakalanan ham HTML ile karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-itiraz|0404-mugla-onsecim-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0404-mugla-onsecim-v1\"]",
+      "passage_ids": "[\"0404-mugla-onsecim-p\"]",
+      "inspected_sections": "[\"Marmaris Haber, 18 Ekim, Fethiye ve Menteşe itirazları\"]",
+      "supported_claim": "İki ilçede ön seçim itirazı ve başka üye yerine oy iddiaları haberleştiriliyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-itiraz|0404-mugla-itiraz-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0404-mugla-itiraz-v1\"]",
+      "passage_ids": "[\"0404-mugla-itiraz-p\"]",
+      "inspected_sections": "[\"Muğla Gazetesi, 21 Ekim, genel merkez yanıtı haberi\"]",
+      "supported_claim": "Genel merkezin Girgin itirazını reddettiği haberleştiriliyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-mugla-onsecim-itiraz",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0404-mugla-onsecim-v1\", \"0404-mugla-itiraz-v1\"]",
+      "passage_ids": "[\"0404-mugla-onsecim-p\", \"0404-mugla-itiraz-p\"]",
+      "inspected_sections": "[\"Marmaris Haber, 18 Ekim, Fethiye ve Menteşe itirazları\", \"Muğla Gazetesi, 21 Ekim, genel merkez yanıtı haberi\"]",
+      "supported_claim": "18 ve 21 Ekim haberleri itiraz ve yanıtı aktarıyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-mugla-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-mugla-onsecim-v1\", \"0404-mugla-itiraz-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-mugla-onsecim-p\", \"0404-mugla-itiraz-p\"]",
+      "inspected_sections": "[\"Euronews, 4 Ağustos, başkanların doğrudan seçimi beyanı\", \"Marmaris Haber, 18 Ekim, Fethiye ve Menteşe itirazları\", \"Muğla Gazetesi, 21 Ekim, genel merkez yanıtı haberi\"]",
+      "supported_claim": "Beyan örgüt başkanlarının üyelerce seçimini; haberler Muğla il ön seçimi itirazını ilgilendiriyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-mugla-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews, 4 Ağustos, başkanların doğrudan seçimi beyanı\"]",
+      "supported_claim": "Hedef bulgu başkanların üyelerce seçilmesi beyanını aktarıyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-mugla-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-mugla-onsecim-v1\", \"0404-mugla-itiraz-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-mugla-onsecim-p\", \"0404-mugla-itiraz-p\"]",
+      "inspected_sections": "[\"Euronews, 4 Ağustos, başkanların doğrudan seçimi beyanı\", \"Marmaris Haber, 18 Ekim, Fethiye ve Menteşe itirazları\", \"Muğla Gazetesi, 21 Ekim, genel merkez yanıtı haberi\"]",
+      "supported_claim": "İlişki özeti ön seçim itirazını ve yanıt haberini ayrı tutuyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-mugla-dispute-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0404-mugla-onsecim-v1\", \"0404-mugla-itiraz-v1\", \"0105-speech-v1\"]",
+      "passage_ids": "[\"0404-mugla-onsecim-p\", \"0404-mugla-itiraz-p\", \"0105-speech-p\"]",
+      "inspected_sections": "[\"Marmaris Haber, 18 Ekim, Fethiye ve Menteşe itirazları\", \"Muğla Gazetesi, 21 Ekim, genel merkez yanıtı haberi\", \"Euronews 4 Ağustos, doğrudan başkan seçimi beyanı\"]",
+      "supported_claim": "İtiraz iddiaları ve genel merkez yanıtı haber olarak aktarıldı. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-mugla-dispute-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0404-mugla-onsecim-v1\", \"0404-mugla-itiraz-v1\", \"0105-speech-v1\"]",
+      "passage_ids": "[\"0404-mugla-onsecim-p\", \"0404-mugla-itiraz-p\", \"0105-speech-p\"]",
+      "inspected_sections": "[\"Marmaris Haber, 18 Ekim, Fethiye ve Menteşe itirazları\", \"Muğla Gazetesi, 21 Ekim, genel merkez yanıtı haberi\", \"Euronews 4 Ağustos, doğrudan başkan seçimi beyanı\"]",
+      "supported_claim": "İhtilaf özeti iddiaları ve ret haberini kaynaklarına bağlıyor. İlişki açıklaması, ihtilafın karşı kaynaklı özetiyle birlikte okunmuştur.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi. İkinci haber ve birleştirilmiş özet ayrıca karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-dispute-id|0404-mugla-onsecim-p|İtiraz ve oy kullanma iddiaları|support",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0404-mugla-onsecim-v1\"]",
+      "passage_ids": "[\"0404-mugla-onsecim-p\"]",
+      "inspected_sections": "[\"Marmaris Haber, 18 Ekim, Fethiye ve Menteşe itirazları\"]",
+      "supported_claim": "Marmaris Haber iki ilçe sonucuna itirazı aktarıyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-dispute-id|0404-mugla-itiraz-p|Genel merkezin ret yanıtı|conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:10:05+00:00",
+      "source_version_ids": "[\"0404-mugla-itiraz-v1\"]",
+      "passage_ids": "[\"0404-mugla-itiraz-p\"]",
+      "inspected_sections": "[\"Muğla Gazetesi, 21 Ekim, genel merkez yanıtı haberi\"]",
+      "supported_claim": "Muğla Gazetesi genel merkezin itirazı reddettiğini aktarıyor.",
+      "limitations": "İtiraz dilekçesi, parti kararı ve seçim tutanaklarının asılları görülmedi; rakamlar kaynaklar arasında farklı.",
+      "result": "reviewed",
+      "reason": "Belirtilen haber ve ilgili beyanın yerel metni okundu; kaynak atfı ve olay aşaması kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-asgari-ucret-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"0404-tbmm-asgari-ucret-v1\"]",
+      "passage_ids": "[\"0404-tbmm-asgari-ucret-p\"]",
+      "inspected_sections": "[\"TBMM 2/3790, teklif özeti\"]",
+      "supported_claim": "TBMM teklif özetinde 45.800 lira tutarı öneriliyor.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-gelen-kagit-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"0404-tbmm-gelen-kagit-v1\"]",
+      "passage_ids": "[\"0404-tbmm-gelen-kagit-p\"]",
+      "inspected_sections": "[\"TBMM gelen kâğıtları, 2/3790 ve teklif sahipleri\"]",
+      "supported_claim": "Gelen kâğıtlarda genel başkan ve grup başkanvekilleri teklif sahipleri olarak yer alıyor.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-asgari-ucret-teklif",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"0404-tbmm-asgari-ucret-v1\", \"0404-tbmm-gelen-kagit-v1\", \"0404-tbmm-3790-pdf-v1\"]",
+      "passage_ids": "[\"0404-tbmm-asgari-ucret-p\", \"0404-tbmm-gelen-kagit-p\", \"0404-tbmm-3790-pdf-p\"]",
+      "inspected_sections": "[\"TBMM 2/3790, teklif özeti\", \"TBMM gelen kâğıtları, 2/3790 ve teklif sahipleri\", \"TBMM 2/3790 PDF, ilk sayfa, Özel imza ve unvanı\"]",
+      "supported_claim": "2/3790 için kaynaklar teklifi ve sahiplerini gösteriyor.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı. TBMM PDF ilk sayfası da yerelde incelendi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-asgari-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-asgari-ucret-p1\"]",
+      "inspected_sections": "[\"Kurucu program, Güvenceli Emek ve Nitelikli İstihdam\"]",
+      "supported_claim": "Program insanca yaşam düzeyinde asgari ücret hedefliyor.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-asgari-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-asgari-ucret-p1\"]",
+      "inspected_sections": "[\"Kurucu program, Güvenceli Emek ve Nitelikli İstihdam\"]",
+      "supported_claim": "Özet asgari ücret hedefini ve hesap yönteminin açıklanmadığını aktarıyor.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-asgari-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-asgari-ucret-p1\"]",
+      "inspected_sections": "[\"Kurucu program, Güvenceli Emek ve Nitelikli İstihdam\"]",
+      "supported_claim": "Alıntı programdaki tek cümleye karşılaştırıldı.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-asgari-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-asgari-ucret-v1\", \"0404-tbmm-gelen-kagit-v1\", \"0404-tbmm-3790-pdf-v1\"]",
+      "passage_ids": "[\"0303-epm-program-asgari-ucret-p1\", \"0404-tbmm-asgari-ucret-p\", \"0404-tbmm-gelen-kagit-p\", \"0404-tbmm-3790-pdf-p\"]",
+      "inspected_sections": "[\"Kurucu program, Güvenceli Emek ve Nitelikli İstihdam\", \"TBMM 2/3790, teklif özeti\", \"TBMM gelen kâğıtları, 2/3790 ve teklif sahipleri\", \"TBMM 2/3790 PDF, ilk sayfa, Özel imza ve unvanı\"]",
+      "supported_claim": "Program hedefi ve aynı konudaki kanun teklifi birlikte incelendi.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir. Günaydın sitesindeki aktarılan teklif metninde parti unvanları TBMM kopyasından farklıdır.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı. TBMM PDF ilk sayfası da yerelde incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-asgari-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-asgari-ucret-p1\"]",
+      "inspected_sections": "[\"Kurucu program, Güvenceli Emek ve Nitelikli İstihdam\"]",
+      "supported_claim": "Hedef, programdaki asgari ücret hükmüdür.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir. Günaydın sitesindeki aktarılan teklif metninde parti unvanları TBMM kopyasından farklıdır.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-asgari-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:32:00+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-asgari-ucret-v1\", \"0404-tbmm-gelen-kagit-v1\", \"0404-tbmm-3790-pdf-v1\"]",
+      "passage_ids": "[\"0303-epm-program-asgari-ucret-p1\", \"0404-tbmm-asgari-ucret-p\", \"0404-tbmm-gelen-kagit-p\", \"0404-tbmm-3790-pdf-p\"]",
+      "inspected_sections": "[\"Kurucu program, Güvenceli Emek ve Nitelikli İstihdam\", \"TBMM 2/3790, teklif özeti\", \"TBMM gelen kâğıtları, 2/3790 ve teklif sahipleri\", \"TBMM 2/3790 PDF, ilk sayfa, Özel imza ve unvanı\"]",
+      "supported_claim": "Açıklama programı, teklifi ve teklif sahiplerini ayırıyor.",
+      "limitations": "TBMM dinamik sayfasının yayın tarihi ve teklifin kesim tarihindeki sonraki aşaması kesinleştirilmedi; teklif yasalaşma değildir. Günaydın sitesindeki aktarılan teklif metninde parti unvanları TBMM kopyasından farklıdır.",
+      "result": "reviewed",
+      "reason": "Program pasajı ve iki TBMM kayıt bölümündeki olay ile öneri karşılaştırıldı. TBMM PDF ilk sayfası da yerelde incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-3790-pdf-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T19:53:01+00:00",
+      "source_version_ids": "[\"0404-tbmm-3790-pdf-v1\"]",
+      "passage_ids": "[\"0404-tbmm-3790-pdf-p\"]",
+      "inspected_sections": "[\"TBMM 2/3790 PDF, ilk sayfa, Özel imza ve unvanı\"]",
+      "supported_claim": "Teklifin ilk sayfasında Özel Yeni Parti genel başkanı olarak belirtiliyor.",
+      "limitations": "PDF metin çıkarımında seçim çevresi OCR hatalıdır; CHP unvanı taşıyan internet transkripsiyonu ayrıdır.",
+      "result": "reviewed",
+      "reason": "İlk sayfa yerel pdf_page_text çıktısı ile TBMM sayfası karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-genelbaskan-onsecim-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:05:37+00:00",
+      "source_version_ids": "[\"0404-genelbaskan-onsecim-v1\"]",
+      "passage_ids": "[\"0404-genelbaskan-onsecim-p\"]",
+      "inspected_sections": "[\"Gazete Oksijen 8 Kasım, genel başkan ön seçimi açıklaması\"]",
+      "supported_claim": "Haber, parti açıklamasında genel başkan ön seçimi sonuçlarının bildirildiğini aktarıyor.",
+      "limitations": "Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.",
+      "result": "reviewed",
+      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-genelbaskan-onsecim",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:05:37+00:00",
+      "source_version_ids": "[\"0404-genelbaskan-onsecim-v1\"]",
+      "passage_ids": "[\"0404-genelbaskan-onsecim-p\"]",
+      "inspected_sections": "[\"Gazete Oksijen 8 Kasım, genel başkan ön seçimi açıklaması\"]",
+      "supported_claim": "Parti açıklamasının 8 Kasım ulusal ön seçimle ilgili olduğu görülüyor.",
+      "limitations": "Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.",
+      "result": "reviewed",
+      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:05:37+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-genelbaskan-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-genelbaskan-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos, başkanların üyelerce seçimi beyanı\", \"Gazete Oksijen 8 Kasım, genel başkan ön seçimi açıklaması\"]",
+      "supported_claim": "Beyan ile genel başkan ön seçimi haberi aynı seçim yöntemiyle ilgilidir.",
+      "limitations": "Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.",
+      "result": "reviewed",
+      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:05:37+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos, başkanların üyelerce seçimi beyanı\"]",
+      "supported_claim": "Özelin genel, il ve ilçe başkanlarının üyelerce seçimi beyanı hedefleniyor.",
+      "limitations": "Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.",
+      "result": "reviewed",
+      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:05:37+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-genelbaskan-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-genelbaskan-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos, başkanların üyelerce seçimi beyanı\", \"Gazete Oksijen 8 Kasım, genel başkan ön seçimi açıklaması\"]",
+      "supported_claim": "Açıklama beyanı, ulusal ön seçimi ve kurultay ayrımını anlatıyor.",
+      "limitations": "Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.",
+      "result": "reviewed",
+      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-barinma-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-barinma-konut-p1\"]",
+      "inspected_sections": "[\"Program, Bölüm IV barınma hakkı\"]",
+      "supported_claim": "Program sosyal konut stokunu artırmayı ve kiralık modelleri geliştirmeyi öneriyor.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-barinma-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-barinma-konut-p1\"]",
+      "inspected_sections": "[\"Program, Bölüm IV barınma hakkı\"]",
+      "supported_claim": "Programın barınma önerisinin özeti kaynakla karşılaştırıldı.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-barinma-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-barinma-konut-p1\"]",
+      "inspected_sections": "[\"Program, Bölüm IV barınma hakkı\"]",
+      "supported_claim": "Programın barınma alıntısı özgün pasajla karşılaştırıldı.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-barinma-grup-onerisi|0404-barinma-grup-oneri-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"0404-tbmm-barinma-tutanak-v1\"]",
+      "passage_ids": "[\"0404-barinma-grup-oneri-p\"]",
+      "inspected_sections": "[\"TBMM 122. birleşim Yeni Parti grup önerisi\"]",
+      "supported_claim": "Grup önerisi araştırma önergesinin öne alınmasını istiyor.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-barinma-grup-onerisi|0404-barinma-grup-oylama-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"0404-tbmm-barinma-tutanak-v1\"]",
+      "passage_ids": "[\"0404-barinma-grup-oylama-p\"]",
+      "inspected_sections": "[\"Aynı grup önerisi görüşmesinin sonunda başkanın oylama açıklaması\"]",
+      "supported_claim": "Başkan görüşme sonunda grup önerisinin kabul edilmediğini açıklıyor.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-barinma-grup-onerisi",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"0404-tbmm-barinma-tutanak-v1\"]",
+      "passage_ids": "[\"0404-barinma-grup-oneri-p\", \"0404-barinma-grup-oylama-p\"]",
+      "inspected_sections": "[\"TBMM 122. birleşim Yeni Parti grup önerisi\", \"Aynı grup önerisi görüşmesinin sonunda başkanın oylama açıklaması\"]",
+      "supported_claim": "7 Ağustos grup önerisi ve oylama TBMM tutanağında birbirini izliyor.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-barinma-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-barinma-tutanak-v1\"]",
+      "passage_ids": "[\"0303-epm-program-barinma-konut-p1\", \"0404-barinma-grup-oneri-p\", \"0404-barinma-grup-oylama-p\"]",
+      "inspected_sections": "[\"Program, Bölüm IV barınma hakkı\", \"TBMM 122. birleşim Yeni Parti grup önerisi\", \"Aynı grup önerisi görüşmesinin sonunda başkanın oylama açıklaması\"]",
+      "supported_claim": "Program barınmayı, grup önerisi ise barınma araştırmasının öne alınmasını konu ediyor.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-barinma-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-barinma-konut-p1\"]",
+      "inspected_sections": "[\"Program, Bölüm IV barınma hakkı\"]",
+      "supported_claim": "Program sosyal konut stoku ve kiralık modelleri öneriyor.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-barinma-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:46:19+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-barinma-tutanak-v1\"]",
+      "passage_ids": "[\"0303-epm-program-barinma-konut-p1\", \"0404-barinma-grup-oneri-p\", \"0404-barinma-grup-oylama-p\"]",
+      "inspected_sections": "[\"Program, Bölüm IV barınma hakkı\", \"TBMM 122. birleşim Yeni Parti grup önerisi\", \"Aynı grup önerisi görüşmesinin sonunda başkanın oylama açıklaması\"]",
+      "supported_claim": "Açıklama program, grup önerisi ve oylamayı ayırıyor.",
+      "limitations": "Reddedilen işlem araştırma önergesinin öne alınmasına dair grup önerisidir; temel önergenin sonraki aşaması veya konut üretimi gösterilmez.",
+      "result": "reviewed",
+      "reason": "Program ve 7 Ağustos TBMM tutanağı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-usak-onsecim-event|0404-usak-onsecim-detay-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:33:18+00:00",
+      "source_version_ids": "[\"0404-usak-onsecim-v1\"]",
+      "passage_ids": "[\"0404-usak-onsecim-detay-p\"]",
+      "inspected_sections": "[\"Uşak Olay 18 Ekim il seçimi haberi\"]",
+      "supported_claim": "18 Ekim Uşak il başkanlığı seçimi sonucu yerel haberde anlatılıyor.",
+      "limitations": "Sandık tutanakları görülmedi; kongre ve farklı kaynaklardaki ad yazımı ayrı izleniyor.",
+      "result": "reviewed",
+      "reason": "Beyan ve yerel ön seçim haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-usak-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:33:18+00:00",
+      "source_version_ids": "[\"0404-usak-onsecim-v1\"]",
+      "passage_ids": "[\"0404-usak-onsecim-detay-p\"]",
+      "inspected_sections": "[\"Uşak Olay 18 Ekim il seçimi haberi\"]",
+      "supported_claim": "Haber il başkanlığı ön seçiminin yapıldığını bildiriyor.",
+      "limitations": "Sandık tutanakları görülmedi; kongre ve farklı kaynaklardaki ad yazımı ayrı izleniyor.",
+      "result": "reviewed",
+      "reason": "Beyan ve yerel ön seçim haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-usak-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:33:18+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-usak-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-usak-onsecim-detay-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"Uşak Olay 18 Ekim il seçimi haberi\"]",
+      "supported_claim": "Beyan ve il ön seçim haberi il başkanı belirleme yöntemiyle ilgilidir.",
+      "limitations": "Sandık tutanakları görülmedi; kongre ve farklı kaynaklardaki ad yazımı ayrı izleniyor.",
+      "result": "reviewed",
+      "reason": "Beyan ve yerel ön seçim haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-usak-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:33:18+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\"]",
+      "supported_claim": "Özel başkanların üyelerce belirlenmesi yöntemini açıklıyor.",
+      "limitations": "Sandık tutanakları görülmedi; kongre ve farklı kaynaklardaki ad yazımı ayrı izleniyor.",
+      "result": "reviewed",
+      "reason": "Beyan ve yerel ön seçim haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-usak-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T20:33:18+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-usak-onsecim-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-usak-onsecim-detay-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkan seçimi beyanı\", \"Uşak Olay 18 Ekim il seçimi haberi\"]",
+      "supported_claim": "İl ön seçimi ve sonraki kongrenin ayrıldığı anlatılıyor.",
+      "limitations": "Sandık tutanakları görülmedi; kongre ve farklı kaynaklardaki ad yazımı ayrı izleniyor.",
+      "result": "reviewed",
+      "reason": "Beyan ve yerel ön seçim haberi karşılaştırıldı."
+    }
+  ],
+  "source_review_refs": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "tracer-cesme|0105-cesme-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "tracer-cesme"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "tracer-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "tracer-contribution"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cesme-congress|0404-cesme-kongre-p|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cesme-congress"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-cesme-congress-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-cesme-congress-contribution"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kayseri-kayit-iddiasi|0404-kayseri-uyelik-haber-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kayseri-kayit-iddiasi"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-uyelik-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-uyelik-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-uyelik-charter-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kayseri-uyelik-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kayseri-uyelik-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kayseri-uyelik-relation"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-kayseri-kayit-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-kayseri-kayit-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-kayseri-kayit-dispute|0404-kayseri-uyelik-haber-p|Başvuruların sisteme işlenmediği iddiası|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-kayseri-kayit-dispute|0404-kayseri-kongre-p|Üyelerin oy hakkı ve tarafların karşı çıkışı|conflict"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-gaziantep-disiplin-aciklama|0404-gaziantep-sevk-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-gaziantep-disiplin-aciklama|0404-gaziantep-ihrac-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-gaziantep-disiplin-aciklama"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-disiplin-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-disiplin-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-disiplin-charter-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-gaziantep-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-gaziantep-disiplin-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-gaziantep-disiplin-dispute|0404-gaziantep-sevk-p|Tedbirli sevk|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-gaziantep-disiplin-dispute|0404-gaziantep-ihrac-p|İl yönetimine atfedilen kesin ihraç|conflict"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-itiraz|0404-mugla-onsecim-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-itiraz|0404-mugla-itiraz-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-mugla-onsecim-itiraz"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-mugla-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-mugla-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-mugla-relation-id"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-mugla-dispute-id"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-mugla-dispute-id"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-dispute-id|0404-mugla-onsecim-p|İtiraz ve oy kullanma iddiaları|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-dispute-id|0404-mugla-itiraz-p|Genel merkezin ret yanıtı|conflict"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-asgari-ucret-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-gelen-kagit-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-asgari-ucret-teklif"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-asgari-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-asgari-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-asgari-program-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-asgari-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-asgari-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-asgari-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-3790-pdf-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-genelbaskan-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-genelbaskan-onsecim"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-barinma-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-barinma-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-barinma-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-barinma-grup-onerisi|0404-barinma-grup-oneri-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-barinma-grup-onerisi|0404-barinma-grup-oylama-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-barinma-grup-onerisi"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-barinma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-barinma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-barinma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-usak-onsecim-event|0404-usak-onsecim-detay-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-usak-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-usak-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-usak-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-usak-iliski-id"
+    }
+  ]
+}

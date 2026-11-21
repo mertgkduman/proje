@@ -1,0 +1,3 @@
+# Uşak taslağı staging paket denetimi
+
+Önceden doğrulanmış staging tabanına Uşak için dört kaynağın 16 özgün nesne ve görünüm dosyası yalnız yeni veya mevcut dosyayla eşit bayt koşulunda eklendi. `/tmp/gsd-0404-program-staging` içinde `python3 src/arsiv.py practice-check --input data/practices/package-usak-draft.json --inventory data/practices/04-inventory.json` session 37488 gerçek çıkış 0 `PRACTICE_INPUT_OK`; staging ve repo paketi SHA `17e452bb1bf799f2ac05d69226cfa8b521a413ebc6667febe55897dce7354e58`. Ayrı source-check ve açık köklü preview sonucu değildir; parti kapsamı ve görevler açıktır.
