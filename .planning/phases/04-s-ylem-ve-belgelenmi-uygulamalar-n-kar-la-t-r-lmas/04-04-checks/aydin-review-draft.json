@@ -2081,13 +2081,26 @@
       "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
     },
     {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-gunaydin-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:04:32+00:00",
+      "source_version_ids": "[\"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
+      "supported_claim": "Beyan ve Aydın yerel basınında ilgili aşamaya dair bildirim kaynak pasajlarında okundu.",
+      "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
       "subject_kind": "practice_event",
       "subject_id": "0404-aydin-kongre-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-21T22:04:32+00:00",
-      "source_version_ids": "[\"0404-aydin-kongre-bulten-v1\"]",
-      "passage_ids": "[\"0404-aydin-kongre-bulten-p\"]",
-      "inspected_sections": "[\"26 Ekim il kongresi haberindeki seçim bildirimi\"]",
+      "source_version_ids": "[\"0404-aydin-kongre-bulten-v1\", \"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0404-aydin-kongre-bulten-p\", \"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"26 Ekim il kongresi haberindeki seçim bildirimi\", \"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
       "supported_claim": "Beyan ve Aydın yerel basınında ilgili aşamaya dair bildirim kaynak pasajlarında okundu.",
       "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
       "result": "reviewed",
@@ -2098,9 +2111,9 @@
       "subject_id": "0404-aydin-kongre-iliski-id",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-21T22:04:32+00:00",
-      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-kongre-bulten-v1\"]",
-      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-kongre-bulten-p\"]",
-      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"26 Ekim il kongresi haberindeki seçim bildirimi\"]",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-kongre-bulten-v1\", \"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-kongre-bulten-p\", \"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"26 Ekim il kongresi haberindeki seçim bildirimi\", \"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
       "supported_claim": "Beyan ve Aydın yerel basınında ilgili aşamaya dair bildirim kaynak pasajlarında okundu.",
       "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
       "result": "reviewed",
@@ -2124,9 +2137,9 @@
       "subject_id": "0404-aydin-kongre-iliski-id",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-21T22:04:32+00:00",
-      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-kongre-bulten-v1\"]",
-      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-kongre-bulten-p\"]",
-      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"26 Ekim il kongresi haberindeki seçim bildirimi\"]",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-aydin-kongre-bulten-v1\", \"0404-aydin-kongre-gunaydin-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-aydin-kongre-bulten-p\", \"0404-aydin-kongre-gunaydin-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"26 Ekim il kongresi haberindeki seçim bildirimi\", \"26 Ekim kongrede beklenen oy verme bitiş saati\"]",
       "supported_claim": "Beyan ve Aydın yerel basınında ilgili aşamaya dair bildirim kaynak pasajlarında okundu.",
       "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
       "result": "reviewed",
@@ -2773,6 +2786,10 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-bulten-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-gunaydin-p|action"
     },
     {
       "subject_kind": "practice_event",

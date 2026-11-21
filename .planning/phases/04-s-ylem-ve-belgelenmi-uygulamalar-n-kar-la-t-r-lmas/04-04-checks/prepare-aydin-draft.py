@@ -3,7 +3,7 @@ from pathlib import Path
 
 p = Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks')
 pkg = json.loads((p/'package-accessibility-draft.json').read_text())
-for file, ids in [('local-elections-records-draft.json', ('0404-aydin-sonuc',)), ('october-referral-records-draft.json', ('0404-aydin-onsecim-ihbar', '0404-aydin-kongre-bulten'))]:
+for file, ids in [('local-elections-records-draft.json', ('0404-aydin-sonuc',)), ('october-referral-records-draft.json', ('0404-aydin-onsecim-ihbar', '0404-aydin-kongre-bulten', '0404-aydin-kongre-gunaydin'))]:
     extra = json.loads((p/file).read_text())['entries']
     pkg['entries'] += [x for x in extra if any(str(x['values'].get(k, '')).startswith(i) for k in ('id','version_id','document_id') for i in ids)]
 e, r = pkg['entries'], pkg['practice_records']
@@ -11,7 +11,7 @@ speech = '0105-speech-p'
 now = '2026-11-21T22:04:32+00:00'
 cases = [
  ('onsecim','2026-10-18','Aydın il başkanlığı ön seçimi',['0404-aydin-sonuc-p','0404-aydin-onsecim-ihbar-p'], 'İki yerel haber 18 Ekim Aydın il başkanlığı ön seçiminde Dilaver Demir’in birinci olduğunu bildiriyor. Oy sayısını bir haber 4.152, diğeri 4.094 olarak aktarıyor; farklı sayılar uzlaştırılmadı.', 'İki haber farklı ön seçim sayıları bildiriyor; sandık tutanağı görülmedi.'),
- ('kongre','2026-10-26','Aydın il kongresi',['0404-aydin-kongre-bulten-p'], 'Bülten Aydın 26 Ekim il kongresinde Dilaver Demir’in il başkanlığına seçildiğini bildirdi. Sonuç haberinin zamanlaması ayrıca araştırılıyor.', '16.33 tarihli sonuç haberi ile başka haberde beklenen 17.00 sandık kapanışı arasındaki ilişki doğrulanmadı; kongre tutanağı görülmedi.'),
+ ('kongre','2026-10-26','Aydın il kongresi',['0404-aydin-kongre-bulten-p','0404-aydin-kongre-gunaydin-p'], 'Bülten Aydın 26 Ekim il kongresinde Dilaver Demir’in il başkanlığına seçildiğini bildirdi. Günaydın Aydın ise oy vermenin 17.00’de sona ermesinin beklendiğini aktardı; 16.33 tarihli sonuç haberinin zamanlaması ayrıca araştırılıyor.', '16.33 tarihli sonuç haberi ile başka haberde beklenen 17.00 sandık kapanışı arasındaki ilişki doğrulanmadı; kongre tutanağı görülmedi.'),
 ]
 for key, date, title, refs, text, limitation in cases:
     event='0404-aydin-'+key+'-event'; fid='0404-aydin-'+key+'-iliski'

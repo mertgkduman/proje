@@ -5022,6 +5022,74 @@
       }
     },
     {
+      "kind": "document",
+      "values": {
+        "id": "0404-aydin-kongre-gunaydin",
+        "party_id": "yeni-parti",
+        "title": "Dilaver Demir’in yönetim listesi belli oldu",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-aydin-kongre-gunaydin-v1",
+        "document_id": "0404-aydin-kongre-gunaydin",
+        "original_url": "https://gunaydinaydin.com/yeni-parti-aydin-kongresi-basladi",
+        "final_url": "https://gunaydinaydin.com/yeni-parti-aydin-kongresi-basladi",
+        "document_date": "2026-10-26",
+        "version_label": "Yayımlanan haber; yakalanan HTML",
+        "accessed_at": "2026-11-21T22:08:00.671695+00:00",
+        "verified_at": "2026-11-21T22:08:00.671695+00:00",
+        "mime": "text/html",
+        "sha256": "8cc7ee7096adacf85147474e694dcc59843b32cde41e2e3289c4422f3376f3e1",
+        "original_path": "objects/8cc7ee7096adacf85147474e694dcc59843b32cde41e2e3289c4422f3376f3e1/original.html.bin",
+        "readable_path": "objects/8cc7ee7096adacf85147474e694dcc59843b32cde41e2e3289c4422f3376f3e1/readable.html",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "6ef473991e5272586435ce1c1484208f",
+        "format_version": 2,
+        "source_sha256": "8cc7ee7096adacf85147474e694dcc59843b32cde41e2e3289c4422f3376f3e1",
+        "index_path": "views/6ef473991e5272586435ce1c1484208f/index.html",
+        "manifest_path": "views/6ef473991e5272586435ce1c1484208f/manifest.json",
+        "manifest_sha256": "d382c5a8f9e6b910c8f7c23ea305b05e509484ffcbc594720c9be3020d08a7ba",
+        "version_id": "0404-aydin-kongre-gunaydin-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-aydin-kongre-gunaydin-p",
+        "version_id": "0404-aydin-kongre-gunaydin-v1",
+        "exact": "Oy verme işleminin saat 17.00’de sona ermesi bekleniyor.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "26 Ekim 14.36 haberi; beklenen oy verme bitişi, gerçekleşmiş sonuç değildir",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-aydin-kongre-gunaydin-v1",
+        "kind": "journalism",
+        "publisher": "Günaydın Aydın",
+        "author": "Kemal Altan",
+        "social_handle": null,
+        "published_at": "2026-10-26",
+        "date_precision": "day",
+        "public_url": "https://gunaydinaydin.com/yeni-parti-aydin-kongresi-basladi",
+        "basis": "Kaynak sayfasındaki yayıncı, tarih ve varsa yazar künyesi incelendi."
+      }
+    },
+    {
       "kind": "finding",
       "values": {
         "id": "0404-aydin-onsecim-iliski",
@@ -5106,7 +5174,7 @@
         "party_id": "yeni-parti",
         "heading": "Söylem ve uygulama",
         "pair_id": "0404-aydin-kongre-iliski",
-        "text": "Bülten Aydın 26 Ekim il kongresinde Dilaver Demir’in il başkanlığına seçildiğini bildirdi. Sonuç haberinin zamanlaması ayrıca araştırılıyor.",
+        "text": "Bülten Aydın 26 Ekim il kongresinde Dilaver Demir’in il başkanlığına seçildiğini bildirdi. Günaydın Aydın ise oy vermenin 17.00’de sona ermesinin beklendiğini aktardı; 16.33 tarihli sonuç haberinin zamanlaması ayrıca araştırılıyor.",
         "provenance": "summary",
         "epistemic_type": "claim"
       }
@@ -5142,6 +5210,24 @@
       "values": {
         "finding_id": "0404-aydin-kongre-iliski",
         "passage_id": "0404-aydin-kongre-bulten-p",
+        "checked_at": "2026-11-21T22:04:32+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ve haberlerdeki olay aşaması ile sınırlılıklar incelendi."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-aydin-kongre-iliski",
+        "passage_id": "0404-aydin-kongre-gunaydin-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-aydin-kongre-iliski",
+        "passage_id": "0404-aydin-kongre-gunaydin-p",
         "checked_at": "2026-11-21T22:04:32+00:00",
         "result": "confirmed",
         "reason": "Beyan ve haberlerdeki olay aşaması ile sınırlılıklar incelendi."
@@ -5701,6 +5787,15 @@
       {
         "event_id": "0404-aydin-kongre-event",
         "passage_id": "0404-aydin-kongre-bulten-p",
+        "supported_point": "İlgili yerel yayının seçim veya kongre anlatımı",
+        "stage": "action",
+        "concrete_basis": "Kaynak kendi olay anlatımını bildiriyor.",
+        "limitation": "16.33 tarihli sonuç haberi ile başka haberde beklenen 17.00 sandık kapanışı arasındaki ilişki doğrulanmadı; kongre tutanağı görülmedi.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-aydin-kongre-event",
+        "passage_id": "0404-aydin-kongre-gunaydin-p",
         "supported_point": "İlgili yerel yayının seçim veya kongre anlatımı",
         "stage": "action",
         "concrete_basis": "Kaynak kendi olay anlatımını bildiriyor.",
@@ -6541,6 +6636,12 @@
       {
         "event_id": "0404-aydin-kongre-event",
         "passage_id": "0404-aydin-kongre-bulten-p",
+        "stage": "action",
+        "basis_kind": "independent_report"
+      },
+      {
+        "event_id": "0404-aydin-kongre-event",
+        "passage_id": "0404-aydin-kongre-gunaydin-p",
         "stage": "action",
         "basis_kind": "independent_report"
       }
