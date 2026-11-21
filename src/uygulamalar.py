@@ -1053,7 +1053,7 @@ def load_practice(work, payload):
 
 
 def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherited_review_pending=False):
-    from arsiv import connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing, safe_url, validate_view
+    from arsiv import DATA, connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing, safe_url, validate_view
     if payload.get('base_release') != base or payload.get('contract_version') != 1 or payload.get('stage') not in ('tracer', 'partial', 'complete') or payload.get('taxonomy_version') != 4:
         raise ValueError('Uygulama paketi veya tabanı geçersiz')
     if len(payload.get('practice_records', {}).get('practice_contract', [])) != 1 or payload['practice_records']['practice_contract'][0].get('stage') != payload['stage']:
@@ -1096,7 +1096,7 @@ def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherit
                 if values.get('document_date') is None and (values.get('date_precision') != 'unknown' or not values.get('date_unknown_reason')):
                     raise ValueError('Bilinmeyen belge tarihi için gerekçe gerekli')
             if kind == 'archive_view':
-                validate_view(storage_root, values)
+                validate_view(DATA if storage_root is None else storage_root, values)
                 version = db.execute('SELECT sha256 FROM document_version WHERE id=?', (values.get('version_id'),)).fetchone()
                 if not version or version['sha256'] != values['source_sha256']:
                     raise ValueError('Arşiv görünümü özgün belgeyle uyuşmuyor')

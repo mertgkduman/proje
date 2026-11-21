@@ -17,6 +17,37 @@ import uygulamalar
 
 
 class PracticePreview(unittest.TestCase):
+    def test_archive_view_uses_default_or_explicit_storage_root(self):
+        import arsiv_gorunum
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            view = arsiv_gorunum.build_view(b'<p>test</p>', 'https://example.org/', root, fetch_assets=False)
+            view['version_id'] = 'source-v'
+            db = sqlite3.connect(root / 'records.sqlite3')
+            db.executescript("CREATE TABLE document(id TEXT PRIMARY KEY,party_id TEXT);"
+                             "CREATE TABLE document_version(id TEXT PRIMARY KEY,document_id TEXT,sha256 TEXT);"
+                             "INSERT INTO document VALUES('source','yeni-parti');")
+            db.execute('INSERT INTO document_version VALUES(?,?,?)', ('source-v', 'source', view['source_sha256']))
+            db.commit()
+            db.close()
+            scope = []
+            package = dict(base_release='base', contract_version=1, stage='tracer', taxonomy_version=4,
+                           party_id='yeni-parti', scope_inventory=scope,
+                           entries=[dict(kind='archive_view', values=view)],
+                           practice_records=dict(practice_contract=[dict(stage='tracer', inventory_digest=uygulamalar._digest(scope))]))
+
+            def validate_then_stop(data_root, row):
+                arsiv_gorunum.validate_view(data_root, row)
+                raise RuntimeError('view verified')
+
+            for explicit in (False, True):
+                with self.subTest(explicit=explicit), patch('arsiv.DATA', root), \
+                        patch('arsiv.validate_view', side_effect=validate_then_stop), \
+                        patch('uygulamalar.migrate_practice_workspace'):
+                    with self.assertRaisesRegex(RuntimeError, 'view verified'):
+                        kwargs = {'storage_root': root} if explicit else {}
+                        uygulamalar._load_practice_copy(root, package, 'base', **kwargs)
+
     def test_shared_source_rejects_wrong_version_passage(self):
         snapshot = arsiv.DATA / 'releases' / arsiv.current() / 'records.json'
         data = json.loads(snapshot.read_text())
