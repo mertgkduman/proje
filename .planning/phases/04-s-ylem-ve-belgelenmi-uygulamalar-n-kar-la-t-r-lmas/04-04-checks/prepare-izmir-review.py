@@ -1,0 +1,10 @@
+import json
+from pathlib import Path
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks');r=json.loads((p/'bursa-sakarya-review-draft-v3.json').read_text());speech='0105-speech-p'
+for slug,ref,version,section in [('onsecim','0404-izmir-onsecim-p','0404-izmir-onsecim-v1','Sözcü 18 Ekim kesin olmayan İzmir ön seçim sonucu'),('kongre','0404-izmir-kongre-tire-p','0404-izmir-kongre-tire-v1','Haber Tire 25 Ekim İzmir il kongresi')]:
+ ev='0404-izmir-'+slug+'-event';rel='0404-izmir-'+slug+'-iliski-id';versions={speech:'0105-speech-v1',ref:version};sections={speech:'Euronews 4 Ağustos başkanların üyelerce seçimi beyanı',ref:section}
+ items=[('practice_event_evidence',ev+'|'+ref+'|action',[ref],section+' kaynakta aktarılıyor.'),('practice_event',ev,[ref],section+' haberde yer alıyor.'),('practice_relation',rel,[speech,ref],section+' beyanla ilgili süreç aşamasıdır.'),('practice_relation.target_finding_id',rel,[speech],section+' için hedef beyan başkan belirleme yöntemidir.'),('practice_relation.explanation_finding_id',rel,[speech,ref],section+' ve beyan karşılaştırıldı.')]
+ for kind,identity,passages,claim in items:
+  r['practice_source_review'].append(dict(subject_kind=kind,subject_id=identity,reviewer_kind='agent',reviewed_at='2026-11-21T21:15:33+00:00',source_version_ids=json.dumps([versions[x] for x in passages],ensure_ascii=False),passage_ids=json.dumps(passages,ensure_ascii=False),inspected_sections=json.dumps([sections[x] for x in passages],ensure_ascii=False),supported_claim=claim,limitations='Ön seçim ve delegelerin sonraki kongre oylaması ayrı; özgün sandık ve kongre tutanakları görülmedi.',result='reviewed',reason=section+' ve beyan kaynakları karşılaştırıldı.'))
+r['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in r['practice_source_review']]
+(p/'izmir-review-draft.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print('IZMIR_REVIEW_DRAFT',len(r['practice_source_review']))
