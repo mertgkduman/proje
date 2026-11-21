@@ -11758,6 +11758,38 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"yenilenebilir enerji\" \"kanun teklifi\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"temel vatandaşlık geliri\" \"2026\" kanun teklifi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"sağlık\" \"ücretsiz\" \"TBMM\" 2026 kanun teklifi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"barınma\" \"önergesi\" \"2026\" meclis"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Avrupa Birliği\" \"üyelik\" \"2026\" meclis konuşma"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Afyon\" \"ön seçim\" 18 Ekim 2026 başkan"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Ankara\" \"il başkanlığı\" \"ön seçim\" 18 Ekim 2026 sonuç"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Aydın\" \"il başkanlığı\" \"ön seçim\" 18 Ekim 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"Bursa\" \"ön seçim\" 18 Ekim 2026 itiraz başkan"
     }
   ],
   "source_queue": [
@@ -13539,6 +13571,36 @@
       "url": "https://www.tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/5faeaf2a-f67f-49e9-b03a-01a143fa54df",
       "state": "source_read_pending_chain",
       "note": "Önceki web açılışı 500 sonrasında curl HTTP 200 ile 67.333 özgün bayt yakalandı ve HTML metni okundu: 10/4682, 12 Ekim 2026, Ayça Taşkent ve 19 milletvekili; karar/sonraki aşama kesim için ayrıca izlenecek."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/887db598-b3f6-43c2-8f0d-019fd1e310d0",
+      "state": "source_read_pending_chain",
+      "note": "TBMM 10/4479, Ayça Taşkent ve 21 milletvekili, 5 Ağustos barınma sorunlarını araştırma istemi. 7 Ağustos Yeni Parti grubu adına bu önergenin öne alınması ayrıca önerildi; grup önerisi ile araştırma önergesi ve nihai sonuç ayrılacak."
+    },
+    {
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/122/Ham/824e2a72-561f-4031-a097-138f2f468abb.html",
+      "state": "source_read_pending_chain",
+      "note": "7 Ağustos tutanağında Yeni Parti grup başkanvekili Başarır 10/4479 önergesinin öne alınmasını istedi ve Taşkent grup adına konuştu. Oylamanın tam metindeki bağlamı ayrıca okunacak; öneri veya araştırma sonucunun kabulü varsayılmadı."
+    },
+    {
+      "url": "https://afyonsehir.com/yeni-parti-il-kongresi-25-ekim-pazar-gunu/",
+      "state": "source_read_pending_chain",
+      "note": "19 Ekim Afyon Şehir haberi 18 Ekim ön seçim sonuçlarını ve 25 Ekim için beklenen kongreyi ayrı aktarıyor. Sonradan kongre olup olmadığı bu haberden sonuçlandırılmadı; oy sayıları kaynağa atfedilerek diğer kayıtlarla karşılaştırılacak."
+    },
+    {
+      "url": "https://www.sesgazetesi.com.tr/yeni-partide-on-secim-heyecani-aydinda-5-aday-yarisiyor",
+      "state": "source_read_pending_chain",
+      "note": "18 Ekim 11:49 Aydın SES haberi beş adaylı ön seçimin o sırada sürdüğünü, 17 ilçede sandıklar ve yaklaşık 19 bin oy hakkını bildiriyor; sonuç kanıtı değildir."
+    },
+    {
+      "url": "https://www.aydintimes.com/yeni-parti-aydinda-ilce-ilce-sonuclar",
+      "state": "source_read_pending_chain",
+      "note": "Aydın Times 18 Ekim 20:13, 22 Ekim güncellenmiş haber ön seçimde Dilaver Demiri 4.152 oyla ilk sırada bildiriyor; kongreyi sonraki ayrı olay olarak sunuyor. Tutanak görülmedi, güncelleme tarihi korunuyor."
+    },
+    {
+      "url": "https://www.yeniankara.com.tr/yeni-parti/yeni-parti-ankarada-yeni-donem-ilk-olagan-il-kongresi-duzenlendi-187535",
+      "state": "source_read_pending_chain",
+      "note": "Büşra Sağlam 25 Ekim canlı haber; 18 Ekim ön seçim ile 25 Ekim kongresini ayırıyor, sayım beklenirken yapılan ara güncellemeleri de barındırıyor. Nihai delege tutanağı görülmedi."
     }
   ],
   "foundation_for_party": {
@@ -13744,6 +13806,30 @@
       "sha256": "e6e1ed43685b649ca1ad503536afbd035b22697000ded4eb67fe3a2b7625d2b4",
       "accessed_at": "2026-11-21T20:13:24.415448+00:00",
       "state": "captured_unbound"
+    },
+    {
+      "url": "https://afyonsehir.com/yeni-parti-il-kongresi-25-ekim-pazar-gunu/",
+      "sha256": "a312b9ea83b5a1935b8c5a5cfde14a2f70c61959f3242426cd86486efb50cde0",
+      "accessed_at": "2026-11-21T20:20:20.579943+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.sesgazetesi.com.tr/yeni-partide-on-secim-heyecani-aydinda-5-aday-yarisiyor",
+      "sha256": "6ef0aa4680f2d01208036edde44a1970ed32f2df1cff03d8099450a3ae06c576",
+      "accessed_at": "2026-11-21T20:20:21.046794+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.aydintimes.com/yeni-parti-aydinda-ilce-ilce-sonuclar",
+      "sha256": "0629a1d0db0b3eec053eaf1f1760952326f584f5248481b49562791719467892",
+      "accessed_at": "2026-11-21T20:20:21.657206+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.yeniankara.com.tr/yeni-parti/yeni-parti-ankarada-yeni-donem-ilk-olagan-il-kongresi-duzenlendi-187535",
+      "sha256": "4e4475c13472a0332dfeadb9ef0dfd88d203196c74dbee2bb3ebc1d15bffb78b",
+      "accessed_at": "2026-11-21T20:20:22.531597+00:00",
+      "state": "draft_owner_bound"
     }
   ],
   "legacy_action_queue": [
