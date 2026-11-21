@@ -11576,6 +11576,12 @@
       "url": "https://api.yeni-parti.org.tr/api/haberler/295",
       "section": "JSON özgün bayt, aynı bayttan pasif görünüm ve 9 Kasım sözcü pasajı",
       "note": "Normal capture MIME application/json bildirdi ve özgün bayt önceki JSON SHA ile eşleşti. Var olan kaynak görüntüleyicisi ile pasif görünüm ve belirli pasaj başarıyla doğrulandı; partiye bağlı belge/sürüm/atıf taslağı hazırlandı. Tam paket/source-check/preview yapılmadı; yayın başka alan adı üzerinden sözcü beyanıdır, tam tüzük değişiklik metni değildir."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/123/Ham/1b3f5332-d3ef-4874-a338-4ed690455794.html",
+      "section": "8 Ağustos TBMM 123. birleşim, Yeni Parti tarım grup önerisi ve devam oylaması",
+      "note": "Tutanak Murat Emirin tarım genel görüşme önergesinin 8 Ağustosta öne alınmasına ilişkin grup önerisini; görüşme, yoklama nedeniyle ara ve yeter sayı sağlandıktan sonra önerinin kabul edilmediğini kaydediyor. Evrim Karakoz konuşmasında araştırma önergesi ifadesi kullanıyor; gündem başlığı genel görüşme önergesi diyor, iki ifade ayırt edildi. Bu oylama temel önergenin bütün sonraki sürecini veya tarım uygulamasını kanıtlamaz."
     }
   ],
   "queries": [
@@ -12242,6 +12248,30 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"Ankara\" \"25 ekim\" \"divan\" \"oy\" Karaca"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"emekli\" \"kanun teklifi\" 2026 2026 TBMM ağustos"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"tarım\" \"araştırma önergesi\" 2026 TBMM eylül"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"kadın\" \"kanun teklifi\" 2026 2026 meclis"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"deprem\" \"araştırma önergesi\" 2026 TBMM"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/123 \"tarım sektöründe\" \"Yeni Parti\" \"önerge\""
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"İbrahim Arslan\" \"en düşük emekli aylığı\" \"16 Ekim\" kanun teklifi 2026"
     }
   ],
   "source_queue": [
@@ -14148,6 +14178,11 @@
       "url": "https://ankara24.com/news/yeni-parti-ankara-il-baskanligina-ibrahim-karaca-secildi-675145",
       "state": "read_search_index_unbound",
       "note": "25 Ekim 19:29 Mynet üzerinden AAya atfedilen özet 372 delege/357 oy bildiriyor; VTVdeki rakamla aynı olsa da kaynak zinciri ve Başkent Haberdeki 349 ile farkı çözülmedi. Sayfa arama indeksi okundu, henüz capture yok."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/86a79e3f-10fa-4d58-8941-01a143f5093a",
+      "state": "read_unbound",
+      "note": "TBMM 2/3960 16 Ekim 2026, İbrahim Arslan ilk imzasıyla en düşük emekli aylığının net asgari ücret seviyesine çıkarılması teklifini bildiriyor; bireysel milletvekili teklifi, kabul veya parti grubu önerisi olarak varsayılmadı. Özgün kaynak capture ve politika bağı takip edilecek."
     }
   ],
   "foundation_for_party": {
@@ -14574,6 +14609,12 @@
       "url": "https://api.yeni-parti.org.tr/api/haberler/295",
       "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
       "accessed_at": "2026-11-21T21:35:30.869818+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/123/Ham/1b3f5332-d3ef-4874-a338-4ed690455794.html",
+      "sha256": "b2036b0b5a5d7bddf23cd6357c23365e2b13669f3d7a5f3e752dda32155990d5",
+      "accessed_at": "2026-11-21T21:43:06+00:00",
       "state": "source_records_draft"
     }
   ],
