@@ -1,0 +1,176 @@
+{
+  "practice_source_review": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "tracer-cesme|0105-cesme-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Haber ön seçimde üyelerin oy kullandığını bildiriyor.",
+      "limitations": "Haber yöntemi ve tutanağı açıklamıyor; katılım yüzdesi sayılarla uyuşmuyor.",
+      "result": "reviewed",
+      "reason": "Ön seçim işlemini bağımsız haberin kendi olgu anlatımıyla sınırlı inceledim."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "tracer-cesme",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Çeşme ilçe başkanlığı ön seçimi haberin kapsamına giriyor.",
+      "limitations": "Haberdeki 630 ve 1113 sayıları yüzde 86 ifadesiyle uyuşmuyor.",
+      "result": "reviewed",
+      "reason": "Olay adı ve yerel ön seçim kapsamını yayın tarihi ve pasajla karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "tracer-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "Özel üyelerin ilçe ve il başkanları ile genel başkanı doğrudan seçeceğini açıkladı.",
+      "limitations": "Haber beyanı aktarır, gerçekleşmiş seçim veya kabul edilmiş yönetmelik kanıtı değildir.",
+      "result": "reviewed",
+      "reason": "Haberin ilk grup toplantısı anlatımı ve tarihini sözün kapsamıyla karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "tracer-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "Özet üç başkanlık düzeyini ve üyelerin doğrudan seçimi beyanını koruyor.",
+      "limitations": "Özet kurumsal uygulamanın gerçekleştiğini ileri sürmez.",
+      "result": "reviewed",
+      "reason": "Özetin özne ve seçilecek makamlarını Euronews pasajıyla karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "tracer-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "Alıntı Euronews haberinin Özel beyanını aktaran cümlesidir.",
+      "limitations": "Gazetecinin aktardığı cümle doğrudan Özel sözü olarak sunulmamalıdır.",
+      "result": "reviewed",
+      "reason": "Alıntı metni özgün haber ve arşivlenmiş pasajla eşleştirildi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "tracer-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0105-cesme-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\", \"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Beyan ve Çeşme ön oylaması üyelerin yerel başkan seçimine ilişkindir.",
+      "limitations": "Tüzükte kongrenin nihai yetkisi ile ön seçim aşaması ayrı; haber yöntemi belirsiz.",
+      "result": "reviewed",
+      "reason": "İki kaynağın tarih, özne, kapsam ve yetki farklarını karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "tracer-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\"]",
+      "supported_claim": "İlişkinin hedefi üyelerin başkanları doğrudan seçmesi hakkındaki beyan.",
+      "limitations": "Bu hedefin gerçekleştiği yalnızca bu beyan kaynağından çıkarılamaz.",
+      "result": "reviewed",
+      "reason": "Hedef bulgusunu 4 Ağustos haberindeki grup toplantısı bağlamıyla okudum."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "tracer-relation-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0105-cesme-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos grup toplantısı ve örgütlenme beyanı\", \"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Aynı konudaki beyan ve üyelerin ön oylaması arasında dar ilişki kuruluyor.",
+      "limitations": "Ön seçim ile kongre birbirinin yerine geçmez; seçim sonucuna ilişkin ek kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "İlişki cümlesinin iki aşamayı ayırdığını her iki pasajla kontrol ettim."
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "tracer-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "Çeşme ilçe örgütünün ön seçim düzenlediği ve üyelerin oy kullandığı aktarılıyor.",
+      "limitations": "Kayıt parti geneline veya kongrenin nihai sonucuna genellenemez.",
+      "result": "reviewed",
+      "reason": "Olayın örgüt düzeyi ve görev kapsamını haberin Çeşme ön seçim metniyle karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "tracer-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T18:17:51+00:00",
+      "source_version_ids": "[\"0105-cesme-v1\"]",
+      "passage_ids": "[\"0105-cesme-p\"]",
+      "inspected_sections": "[\"Alaçatı İnternet Gazetesi 27 Eylül Çeşme ön seçimi ve katılım sayıları\"]",
+      "supported_claim": "İlgili bulgu gazetenin Çeşme üyelerinin ön oylamasını haberleştirdiğini belirtiyor.",
+      "limitations": "Haberin gözlem yöntemi ve oy tutanağı bağımsız olarak açıklanmamış.",
+      "result": "reviewed",
+      "reason": "Bulgu ifadesinin habere atfını ve seçim türünü pasajla karşılaştırdım."
+    }
+  ],
+  "source_review_refs": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "tracer-cesme|0105-cesme-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "tracer-cesme"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "tracer-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "tracer-contribution"
+    }
+  ]
+}
