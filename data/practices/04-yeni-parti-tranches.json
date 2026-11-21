@@ -11428,6 +11428,18 @@
       "url": "https://gazeteoksijen.com/turkiye/fon-kriziyle-ilgili-yeni-partiden-kanun-teklifi-zarar-sorumlularin-mal-varliklariyla-karsilansin-290188",
       "section": "Haber veya kaynak gövdesi",
       "note": "21 Eylül haberinde parti sözcüsü fon tasfiyeleri hakkındaki teklifin o hafta sunulacağını söylüyor. Sunulma veya yasalaşma kaydı değildir; TBMM esas numarası ve sonraki işlem araştırılacak."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/122/Ham/824e2a72-561f-4031-a097-138f2f468abb.html",
+      "section": "TBMM metni",
+      "note": "7 Ağustos 122. birleşim ham tutanağında Yeni Parti grubunun barınma araştırma önergesini öne alma önerisi, görüşmeleri ve başkanın kabul edilmediği açıklaması ardışık okundu. Bu sonuç öne alma grup önerisine ilişkindir; temel araştırma önergesinin tüm sonraki işlemleri hakkında iddia değildir. Python capture bağlantı sıfırlaması sonrası curl HTTP 200 ile gerçek HTML baytları alındı; yayın tarihi bilinmiyor."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://tbmm.gov.tr/Haber/Detay?Id=6c53cbfc-a5ce-45fd-ae8b-01a0d32b2a5c",
+      "section": "TBMM metni",
+      "note": "TBMM 24 Eylül haberinde Özlale fonlar hakkında hazırlanan teklif ve daha sonra araştırma önergesi planını anlatıyor; hazırlık ve sunum ayrı aşamalardır."
     }
   ],
   "queries": [
@@ -11942,6 +11954,22 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" grup önerisi \"kira\" 2026 7 ağustos"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/122 \"barınma\" \"kabul edilmemiştir\""
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr \"Ayça Taşkent\" \"barınma\" \"önerisi kabul edilmemiştir\" \"2026\""
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Ümit Özlale\" \"fon\" \"kanun teklifi\" \"2/\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Ümit Özlale\" \"tasfiye\" \"kanun teklifi\" 24 eylül 2026 esas numarası"
     }
   ],
   "source_queue": [
@@ -13818,6 +13846,11 @@
       "url": "https://tbmm.gov.tr/Milletvekili/UyeGenelKurulKonusmalariDetay?eid=148101",
       "state": "read_capture_failed",
       "note": "TBMM 7 Ağustos 122. birleşiminde DEM Parti grubu adına konuşma ve Yeni Parti grup önerisi konusu web üzerinden okundu; doğrudan capture SSL record layer failure. Tam tutanak sayfasında içerik web aracında yüklenmedi; karar aslı aranacak."
+    },
+    {
+      "url": "https://tbmm.gov.tr/milletvekili/UyeKomisyonKonusmaTutanakDetay?tutanakId=90375",
+      "state": "read_capture_failed",
+      "note": "Komisyon konuşması 28 Eylül Özlale teklifinin sunulduğunu belirtiyor; capture bağlantı sıfırlandı. Bağımsız dizinde 2/3895; resmi teklif kaydı ve 2/3939 farklı teklifin ayrı sonucu takip edilmeli."
     }
   ],
   "foundation_for_party": {
@@ -14106,6 +14139,18 @@
       "url": "https://gazeteoksijen.com/turkiye/fon-kriziyle-ilgili-yeni-partiden-kanun-teklifi-zarar-sorumlularin-mal-varliklariyla-karsilansin-290188",
       "sha256": "b40111718d0ddebf351225fbbc4cb1803f30ce0ce72c8868c4ccc38e6340c021",
       "accessed_at": "2026-11-21T20:42:51.156503+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/122/Ham/824e2a72-561f-4031-a097-138f2f468abb.html",
+      "sha256": "38d374df7534834cb6fae4b8937f225bcf055c094859881ebea38a416810be78",
+      "accessed_at": "2026-11-21T20:46:19+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://tbmm.gov.tr/Haber/Detay?Id=6c53cbfc-a5ce-45fd-ae8b-01a0d32b2a5c",
+      "sha256": "a2d3d10eef2796f2144795d47249d49d704052c1b56a0c1e26cff53d307bb01e",
+      "accessed_at": "2026-11-21T20:45:09.147090+00:00",
       "state": "source_records_draft"
     }
   ],

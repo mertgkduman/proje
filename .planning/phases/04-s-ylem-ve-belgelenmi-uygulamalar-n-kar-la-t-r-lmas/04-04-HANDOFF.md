@@ -1,6 +1,18 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 20:43 UTC — en güncel durum
+
+Gaziantep v2 staging `practice-check` session 93020 ve Muğla v4 staging `practice-check` session 49254 gerçek çıkış 0 `PRACTICE_INPUT_OK`; önceden aynı paketler için source-check ve gerçek preview geçmişti. Kanıtlar `gaziantep-v2-preview-proof.md` (5a3fd69) ve `mugla-v4-preview-proof.md` (6ddabb1). Muğla v4 paket SHA `0408026d68e8390fb0044377d206630e89b09ac35d5407d8b791e17f786415c5` ve review SHA `299e9f0a26a8c541093d5510caf4c244db1147716ac9ed8cc9b0fddbfcc45f19` birebir `data/practices/04-yeni-parti.json` ve review dosyasına alındı (6ddabb1). Bu dar doğrulama görevleri veya kapsamı bitirmez; paket hâlâ tracer aşamasındadır.
+
+Aktif dört gerçek süreç: program v2 source-check PID 688012/session 75655 ve preview PID 688171/session 24801; ulusal taslak source-check PID 723299/session 5218 ve preview PID 723350/session 56904. Ulusal taslağın staging practice-check'i gerçek exit 0'dır. İşlemleri öldürmeyin, aynı komutu yeniden başlatmayın; sonucu ve tam girdi SHA'sını alın, gerçek preview'da iki görünüm ve manifesti inceleyin. Bellek baskısı nedeniyle başka ağır çiftleri boşalan yuvalara göre sıraya alın. Kanonik yayın yapılmadı.
+
+34bd70e ve b64a978: Oğuzeli Ergüleç disipline sevk ve Edirne merkez üye askısı/itiraz takvimi gerçek kaynakları yakalandı, 20 sahibi belli kaynak kaydı taslaklandı; karar aslı görülmedi, Edirne haberleri aynı ilçe başkanı açıklamasına dayanıyor. 506511c: barınma grup önerisinin reddi tarih belirtilmeyen ikincil kaynaktan, fon teklifi sunulacağı 21 Eylül açıklamasından izlendi; tarih, TBMM asıl kayıtları ve teklifin sonraki işlemleri açık. Kaynaklar ve iki sorgu kümesi parti kuyruğuna yazıldı; 610 hücre, 16 eylem ve 18 eşleştirme gerçek tam inceleme bekler.
+
 ## 2026-11-21 19:40 UTC güncellemesi — aşağıdaki eski durumlar bu bölümle düzeltilir
+
+20:31 UTC ek: Gaziantep v2 source-check session 97267 ve Muğla v4 preview session 65304/source-check session 43656 gerçek çıkış 0 verdi. Release ve iki görünüm/pasaj/manifest kanıtı `gaziantep-v2-preview-proof.md` ve `mugla-v4-preview-proof.md`, commit `12e914c`; bu kapsam kapanışı değildir. Aynı girdiler için izole staging `practice-check` PID 725021/session 93020 Gaziantep, PID 727600/session 49254 Muğla sürüyor. Program v2 source-check PID 688012/session 75655 ve preview PID 688171/session 24801; ulusal source-check PID 723299/session 5218 ve preview PID 723350/session 56904 sürüyor. Her birinin gerçek çıkışı beklenmeli ve aynı komut eşzamanlı yinelenmemeli.
+
+20:26 UTC ek: Ulusal taslak staging PID 708328/session 36732 gerçek exit 0 `PRACTICE_INPUT_OK`. Aynı `eadac561…` paket için gerçek source-check PID 723299/session 5218 ve açık kök preview PID 723350/session 56904 (`/tmp/gsd-04-yeni-parti-national`) yeni başladı. Diğer beş önceki Gaziantep/Muğla/program v2 komutu hâlâ çalışıyor. Bu kontroller kaynak derleme veya 610 hücre kapanışı anlamına gelmez.
 
 20:24 UTC ek: Dört Afyon/Aydın/Ankara haberinin özgün baytları ve 20 kaynak kaydı `aee6273`; Bursa/Sakarya diğer uçlar ve 403 hataları kuyruktadır. 2/3827 TBMM sayfası ve 2/3790 özgün PDF curl ile yakalandı; sonraki v3 PDF kanıtı `a032f72`. `b5a14ba` 10/4551 ve 10/4682 TBMM kaynaklarını içerir. Beş kapsamlı preview/source-check ile bir ulusal staging check, aşağıdaki PID/oturumlarla son kontrol itibarıyla hâlâ CPU kullanıyor; tekrar çalıştırmayın.
 

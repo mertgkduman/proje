@@ -12,6 +12,7 @@ out = Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lm
 sources = [
  dict(id='0404-barinma-oylama-ikincil', digest='db13f4aded14574e053d3c46aa5068bbc5cb5d7c1b01d7917182bff3ed2d5c98', url='https://www.referandom.com/onergeler/barinma-krizinin-nedenleri-ve-sonuclari', date=None, accessed='2026-11-21T20:42:48.886541+00:00', publisher='Referandom', title='Barınma Krizinin Nedenleri ve Sonuçları: Araştırma Önergesi', exact='Önergenin Genel Kurulda görüşülmesini öneren grup önerisi 7 Ağustos 2026', section='Grup önerisinin görüşülmesine ilişkin ikincil kaynak'),
  dict(id='0404-fon-aciklama', digest='b40111718d0ddebf351225fbbc4cb1803f30ce0ce72c8868c4ccc38e6340c021', url='https://gazeteoksijen.com/turkiye/fon-kriziyle-ilgili-yeni-partiden-kanun-teklifi-zarar-sorumlularin-mal-varliklariyla-karsilansin-290188', date='2026-09-21', accessed='2026-11-21T20:42:51.156503+00:00', publisher='Gazete Oksijen', title='Fon kriziyle ilgili Yeni Parti’den kanun teklifi', exact='bu hafta içinde Meclis', section='Hazırlanıp sunulması planlanan kanun teklifine dair açıklama'),
+ dict(id='0404-tbmm-fon-basin', digest='a2d3d10eef2796f2144795d47249d49d704052c1b56a0c1e26cff53d307bb01e', url='https://tbmm.gov.tr/Haber/Detay?Id=6c53cbfc-a5ce-45fd-ae8b-01a0d32b2a5c', date='2026-09-24', accessed='2026-11-21T20:45:09.147090+00:00', publisher='Türkiye Büyük Millet Meclisi', kind='official', title='Yeni Partili Özlale’nin basın toplantısı', exact='adil bir tasfiye sürecini', section='Özlale’nin 24 Eylül basın toplantısı; hazırlanan teklif'),
 ]
 entries = []
 for s in sources:
@@ -23,11 +24,11 @@ for s in sources:
  validate_view(root, view)
  precision = 'day' if s['date'] else 'unknown'
  values = [
-  ('document', dict(id=s['id'], party_id='yeni-parti', title=s['title'], source_kind='journalism')),
+  ('document', dict(id=s['id'], party_id='yeni-parti', title=s['title'], source_kind=s.get('kind','journalism'))),
   ('document_version', dict(id=s['id']+'-v1', document_id=s['id'], original_url=s['url'], final_url=s['url'], document_date=s['date'], version_label='Yakalanan HTML', accessed_at=s['accessed'], verified_at=s['accessed'], mime='text/html', sha256=s['digest'], original_path='objects/'+s['digest']+'/original.html.bin', readable_path='objects/'+s['digest']+'/readable.html', date_precision=precision, date_unknown_reason=None if s['date'] else 'Sayfanın yayımlanma tarihi belirtilmiyor; atfedilen oylama tarihi sayfada ayrıca yer alıyor.')),
   ('archive_view', view),
   ('passage', dict(id=s['id']+'-p', version_id=s['id']+'-v1', exact=s['exact'], prefix=None, suffix=None, article=None, section=s['section'], pdf_page_index=None, printed_page=None)),
-  ('source_attribution', dict(version_id=s['id']+'-v1', kind='journalism', publisher=s['publisher'], author=None, social_handle=None, published_at=s['date'], date_precision=precision, public_url=s['url'], basis='Kaynak sayfasındaki yayıncı ve varsa tarih incelendi.')),
+  ('source_attribution', dict(version_id=s['id']+'-v1', kind=s.get('kind','journalism'), publisher=s['publisher'], author=None, social_handle=None, published_at=s['date'], date_precision=precision, public_url=s['url'], basis='Kaynak sayfasındaki yayıncı ve varsa tarih incelendi.')),
  ]
  entries.extend(dict(kind=k, values=v) for k,v in values)
 out.write_text(json.dumps(dict(status='draft_unvalidated', source_root=str(root), entries=entries), ensure_ascii=False, indent=2)+'\n')
