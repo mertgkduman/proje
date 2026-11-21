@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 21:51 UTC — daha güncel durum
+
+Housing preview PID 754968/session 97130, housing source-check v2 PID 764737/session 4966; Uşak source-check v2 PID 765080/session 86472, Uşak preview PID 781695/session 25448; Diyarbakır source-check PID 793223/session 86934 hâlâ aktif. Gerçek çıkışları bekleyin ve aynı komutları tekrar başlatmayın. Diyarbakır staging ve ulusal üç kontrol daha önce geçti; kaynak kuyruğu açık.
+
+TBMM 2/3960 emekli aylığı teklifi gerçek kaynak baytları `8201e11`; programın emekli yoksulluğu ifadesi, bireysel milletvekili teklifi, ilk imza ve tarih ayrı pasajlarla `3a153d1` taslağına bağlandı. Paket SHA `4ea39d817afd1803f347a00765c6d0bcd4f53b9daac8f802abbbec5bacd68425`, review SHA `a51a42171690e7add40dbfca76221ff8f706aa7c2c49adafc218422348ac67c8`, 143 hedef gerçek doğrulayıcıyla bellekte geçti; tam CLI/preview yapılmadı. Teklif grup kararı, yasalaşma veya fiilî ödeme sayılmadı.
+
 ## 2026-11-21 21:44 UTC — daha güncel durum
 
 Beş süreç: housing preview PID 754968/session 97130, housing source-check review v2 PID 764737/session 4966; Uşak source-check review v2 PID 765080/session 86472, Uşak preview PID 781695/session 25448; Diyarbakır source-check PID 793223/session 86934. Diyarbakır staging session 35006 gerçek çıkış 0 `PRACTICE_INPUT_OK`, `diyarbakir-staging-proof.md` commit `34a8936`. Bunların diğer aşamalarını sonuç gelmeden başarılı saymayın ve eşzamanlı tekrar başlatmayın.
