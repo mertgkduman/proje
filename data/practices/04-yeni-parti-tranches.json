@@ -11726,6 +11726,22 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"gençlik kolları\" yönetmeliği \"cinsiyet kotası\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"genel başkan\" \"ön seçim\" 8 kasım 2026 sonuç"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"parti meclisi\" \"kurucular kurulu\" ilk toplantı 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"üyelik aidatı\" 2026 kayıt başvuru"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"mali rapor\" bağış gider hesap 2026"
     }
   ],
   "source_queue": [
@@ -13467,6 +13483,21 @@
       "url": "https://www.cumhuriyet.com.tr/siyaset/son-dakika-yeni-parti-de-kurultay-oncesi-kritik-karar-parti-meclisi-ni-150-uyeye-cikaran-tuzuk-degisikligi-onaylandi-2554641",
       "state": "pending",
       "note": "9 Kasım 10:37 ANKA kaynaklı haber; aynı tarihli Kurucular Kurulu değişiklik anlatımı. Önceden okunan Sağkal veya Medyascope haberleriyle ilişki ve özgün tüzük metni araştırılacak."
+    },
+    {
+      "url": "https://gazeteoksijen.com/amp/turkiye/yeni-partide-on-secim-tamamlandi-ozgur-ozel-gecerli-oylarin-tamamini-aldi-295389",
+      "state": "source_read_pending_chain",
+      "note": "8 Kasım 22:34 Oksijen haberinde parti açıklaması, 81 il/2.502 sandık ve sisteme girilerek kesinleşen sonuçlar için 639.454 oy ve %81,3 aktarılıyor; genel başkan ön seçimi 14–15 Kasım sonraki kurultaydan ayrı. Tam tutanak ve toplamların evrimi incelenmeli."
+    },
+    {
+      "url": "https://www.diken.com.tr/yeni-parti-yonetimi-belli-oldu/",
+      "state": "source_read_pending_chain",
+      "note": "24 Temmuz 17:49 Diken haberi Kurucular Kurulunun ilk toplantısında Özelin oybirliğiyle genel başkan seçildiğini aktarıyor; 8 Kasım ön seçimi ve Kasım kurultayı ayrı."
+    },
+    {
+      "url": "https://www.yenipartim.net/bilgiler/uyelik",
+      "state": "source_read_pending_chain",
+      "note": "28 Eylül itibarıyla başvuru ve aidat taahhüdünü anlatan derleme okundu; 31 Ağustos Özel açıklaması ve parti açıklamalarına dayanıyor, sayfanın bağımsızlığı ve özgün beyan kaynakları izlenecek."
     }
   ],
   "foundation_for_party": {
@@ -13648,6 +13679,18 @@
       "sha256": "499806c4492fd1e12448cb7d1fb854302b509aa119ef783606fa565430e1f30d",
       "accessed_at": "2026-11-21T19:58:22.098597+00:00",
       "state": "captured_unbound"
+    },
+    {
+      "url": "https://gazeteoksijen.com/amp/turkiye/yeni-partide-on-secim-tamamlandi-ozgur-ozel-gecerli-oylarin-tamamini-aldi-295389",
+      "sha256": "12fb2b079adb4412b03981684c3cc4383a47c763f57f099abec6631983b664e2",
+      "accessed_at": "2026-11-21T20:05:37.738697+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.diken.com.tr/yeni-parti-yonetimi-belli-oldu/",
+      "sha256": "b7678c3c775aeb24112febe98cb280ac664cd2cc19bbf001a14ca440878e3f92",
+      "accessed_at": "2026-11-21T20:05:38.410437+00:00",
+      "state": "draft_owner_bound"
     }
   ],
   "legacy_action_queue": [
