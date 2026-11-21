@@ -11440,6 +11440,12 @@
       "url": "https://tbmm.gov.tr/Haber/Detay?Id=6c53cbfc-a5ce-45fd-ae8b-01a0d32b2a5c",
       "section": "TBMM metni",
       "note": "TBMM 24 Eylül haberinde Özlale fonlar hakkında hazırlanan teklif ve daha sonra araştırma önergesi planını anlatıyor; hazırlık ve sunum ayrı aşamalardır."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/8bdc192b-ef6a-4ef2-befe-01a0e803dd24",
+      "section": "TBMM teklif künyesi ve komisyon bilgileri",
+      "note": "2/3895 Özlale ilk imzası, 28 Eylül Başkanlığa geliş ve 1 Ekim komisyon havalesi kayıtlı. Dinamik sayfanın bugünkü komisyon durumu, kesim anındaki durum olarak otomatik çıkarılmadı. Başka 2/3939 teklifinden ayrı. Python capture bağlantı sıfırlanınca curl HTTP 200 ile asıl HTML yakalandı."
     }
   ],
   "queries": [
@@ -11970,6 +11976,22 @@
     {
       "at": "2026-11-21",
       "query": "\"Ümit Özlale\" \"tasfiye\" \"kanun teklifi\" 24 eylül 2026 esas numarası"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:tbmm.gov.tr \"2 / 3895\" \"Özlale\" fon"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"2/3895\" \"Yatırımcıların Korunması\" TBMM"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Özlale\" \"Adil Tasfiyesi\" \"28/09/2026\" kanun teklifi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "site:cdn.tbmm.gov.tr \"Yatırımcıların Korunması Amacıyla Bazı Yatırım Fonlarının Adil Tasfiyesi\""
     }
   ],
   "source_queue": [
@@ -14151,6 +14173,12 @@
       "url": "https://tbmm.gov.tr/Haber/Detay?Id=6c53cbfc-a5ce-45fd-ae8b-01a0d32b2a5c",
       "sha256": "a2d3d10eef2796f2144795d47249d49d704052c1b56a0c1e26cff53d307bb01e",
       "accessed_at": "2026-11-21T20:45:09.147090+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/8bdc192b-ef6a-4ef2-befe-01a0e803dd24",
+      "sha256": "724f6b88fea0443df4881deefed05dfa28970649831a81c5008678963cf4f744",
+      "accessed_at": "2026-11-21T20:52:02+00:00",
       "state": "source_records_draft"
     }
   ],
