@@ -1,5 +1,13 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 22:24 UTC — en güncel durum
+
+Uşak üç gerçek kontrolden geçti ve DB/JSON, iki görünüm, karşılıklı bağlantılar, kaynaklar ve manifest `usak-preview-proof.md` ile incelendi; aynı paket SHA `17e452bb1bf799f2ac05d69226cfa8b521a413ebc6667febe55897dce7354e58`, review `dfb7aba358cc4a7871ff0678a0de8b808ce6a1210fd6e1d3386d13696f8b31ef` birebir `cb81530` ile canlı parti paketine alındı. Preview release `4f932d97384c47d7881c42107e591146`, kanonik değil; stage tracer ve 610 kapsam/görev hâlâ açık.
+
+Aktif: Diyarbakır source-check PID 793223/session 86934, preview PID 818337/session 96992; Aydın v2 source-check PID 826754/session 49943 ve preview PID 826755/session 63162. Aydın v2 staging session 65770 çıkış 0 (`7ec6856`); diğerleri gerçek çıkış vermedi. İşlemleri koruyun, yinelenenleri başlatmayın. Aydın v2 paket SHA `2b56b5767b3caa81c79911eeacfb0de4ae162ace75815a00b2d8dfec8fc43b6f`, review SHA `1eeaa995369b60ebe349e3a77a341bccb09ccac4dd4d4a6352001db54af27d07`; success sonrası DB/JSON, iki kart, bağlantı, manifest ve kaynakları kontrol edin.
+
+Afyon ön seçim + sonraki kongreyi plan olarak ayıran geniş taslak `8fff766`: paket SHA `166b4fe17965ddc9e8d9e759176065b7c4f933fc01f3333e30feb8f12c5bc437`, review SHA `38ad5fe3e7c42d6da0e721f3aa312c4477527b6992689b85a4a2f41cab728e9c`; hiçbir tam CLI sonucu yok. TBMM 10/4676 künyesi webde gerçek okundu; doğrudan HTML yakalama bağlantı sıfırlaması verdi, üç sayfa tarama PDF'si özgün bayt `c592e01` ile korundu ancak metin çıkarımı yalnız numara döndüğünden içerik pasajı ve olay bağı henüz yok; diğer siteden OCR özgün pasaj yapılmadı.
+
 ## 2026-11-21 22:17 UTC — daha güncel durum
 
 Konut staging practice-check, source-check session 4966 ve gerçek preview session 97130 çıkış 0. Manifest, DB/JSON ve iki karşılıklı görünüm `housing-preview-proof.md`; aynı paket SHA `fa0984a15aa564ba6c400bb2d72456a4a4a6b1220874a8398e433f32e51c16e4` ve review `511336de76a298db2559687c4248bd3a0c93f565e455ce47aae67373e9ce2703` canlı parti dosyalarına `681152c` ile alındı. Release `871f43f39fc74e25ad9d61028d39e86a` yalnız preview, stage tracer; kapsam/plan kapanmadı, kanonik yayın değişmedi.
