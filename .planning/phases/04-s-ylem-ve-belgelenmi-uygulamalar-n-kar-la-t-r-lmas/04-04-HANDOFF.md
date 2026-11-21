@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 22:39 UTC — en güncel durum
+
+Diyarbakır source-check session 86934 çıkış 0 `PRACTICE_SOURCE_REVIEW_OK`; aynı paket gerçek preview PID 818337/session 96992 sürüyor. Aydın v2 ilk review source-check session 49943 çıkış 1 `Aynı genel açıklama birden çok hedefe kopyalanamaz`; eski review/ret korundu, hedefe özgü review v2 SHA `f7a5d3da6ceb0340b4afd287c117933b94bb515cb8e0c791d1ea0f19bb0e756a` ve düzeltme kanıtı `85a9ead`. Yeni source-check PID 833750/session 97095 ve aynı paket preview PID 826755/session 63162 sürüyor. İstanbul geniş taslağı staging practice-check PID 835709/session 1568 sürüyor; 202 varlık yolunda 190 mevcut eşit, 12 yeni, paket SHA `b73aee55eaf58551bb79221ae5adda8f5cc07c35976f43601f1cd7e210ea3172`, review SHA `e2481b9c9c856f416d3c1e5d1421a1787bfcd67d37cae829fc06fd8233b516cc`. Hepsinin gerçek çıkışını bekleyin; tekrar çalıştırmayın.
+
+Samsun il kongresi sonuç kaynağı `66d7165`, üye söz talebi ve divan yanıtı kaynağı `1500cc8`, tüzük Md.25'e bağlı ve nihai sonucu/delege statüsünü açık bırakan olay+ihtilaf taslağı `b5340dd`: paket SHA `b9e5ac33a1b89d5c30517c4875db409ac3a1c58377a011256aeed35cf6a07708`, review SHA `e4dffe2eb309b783583f1a2b0c13515de50cb650ad979a541adc45cafa8517db`. Eski 8 il ve 2 ulusal yerel sandığın eylem/eşleşme köprüleri aynı olay ve aşama için ayrı taslak `dd7397a`, SHA `fc804d2a7465a0050ba1ca33f2a1b5afd3784d3cfe1211b60de9a91554789f01`; gerçek CLI ve preview yapılmadı. Ulusal yerel sandıklar aynı ulusal olaya bağlanmış, ayrıca sayılmamış; 69 il ve kongre farklı düzeylerdir. İstanbul source ve taslak `f67e68a`, `d8d40a0`; yeni konu aramaları `6c6416a`. 610 hücre/16 eylem/18 eşleşme zinciri tamamlanmış değildir.
+
 ## 2026-11-21 22:24 UTC — en güncel durum
 
 Uşak üç gerçek kontrolden geçti ve DB/JSON, iki görünüm, karşılıklı bağlantılar, kaynaklar ve manifest `usak-preview-proof.md` ile incelendi; aynı paket SHA `17e452bb1bf799f2ac05d69226cfa8b521a413ebc6667febe55897dce7354e58`, review `dfb7aba358cc4a7871ff0678a0de8b808ce6a1210fd6e1d3386d13696f8b31ef` birebir `cb81530` ile canlı parti paketine alındı. Preview release `4f932d97384c47d7881c42107e591146`, kanonik değil; stage tracer ve 610 kapsam/görev hâlâ açık.
