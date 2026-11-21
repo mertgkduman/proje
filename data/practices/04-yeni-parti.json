@@ -5244,6 +5244,422 @@
         "result": "reviewed",
         "reason": "Ön seçim ve kongre ayrı tarihlerde ele alındı; sayısal ve zamansal belirsizlikler korundu."
       }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-afyon-onsecim-sehir",
+        "party_id": "yeni-parti",
+        "title": "Yeni Parti İl Kongresi 25 Ekim Pazar günü",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-afyon-onsecim-sehir-v1",
+        "document_id": "0404-afyon-onsecim-sehir",
+        "original_url": "https://afyonsehir.com/yeni-parti-il-kongresi-25-ekim-pazar-gunu/",
+        "final_url": "https://afyonsehir.com/yeni-parti-il-kongresi-25-ekim-pazar-gunu/",
+        "document_date": "2026-10-19",
+        "version_label": "Yayımlanan haber; yakalanan HTML",
+        "accessed_at": "2026-11-21T22:15:17.024316+00:00",
+        "verified_at": "2026-11-21T22:15:17.024316+00:00",
+        "mime": "text/html",
+        "sha256": "59f22050ff1944df63a466fb9ba6bd1f3e7fbf4f2324fbafad41d6bb639064b8",
+        "original_path": "objects/59f22050ff1944df63a466fb9ba6bd1f3e7fbf4f2324fbafad41d6bb639064b8/original.html.bin",
+        "readable_path": "objects/59f22050ff1944df63a466fb9ba6bd1f3e7fbf4f2324fbafad41d6bb639064b8/readable.html",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "28378668a65fb0710094774cfa293a7a",
+        "format_version": 2,
+        "source_sha256": "59f22050ff1944df63a466fb9ba6bd1f3e7fbf4f2324fbafad41d6bb639064b8",
+        "index_path": "views/28378668a65fb0710094774cfa293a7a/index.html",
+        "manifest_path": "views/28378668a65fb0710094774cfa293a7a/manifest.json",
+        "manifest_sha256": "2983335606a48e04d1c73c08c41919bdc15bc0ef2ebac851c0fd0b3043915d6f",
+        "version_id": "0404-afyon-onsecim-sehir-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-afyon-onsecim-sehir-p",
+        "version_id": "0404-afyon-onsecim-sehir-v1",
+        "exact": "YENİ Parti Afyonkarahisar İl Başkanlığı için hafta sonu gerçekleştirilen ön seçimde kurucu İl Başkanı Hasan Karadeniz&#8217;le yarışan Faruk Duha Erhan, sandıktan birinci çıktı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "18 Ekim Afyonkarahisar il başkanlığı ön seçiminin 19 Ekim haberi; 25 Ekim kongresi planlanan ayrı süreç",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-afyon-onsecim-sehir-v1",
+        "kind": "journalism",
+        "publisher": "Afyon Şehir",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-10-19",
+        "date_precision": "day",
+        "public_url": "https://afyonsehir.com/yeni-parti-il-kongresi-25-ekim-pazar-gunu/",
+        "basis": "Kaynak sayfasındaki yayıncı, tarih ve varsa yazar künyesi incelendi."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-afyon-kongre-plan-p",
+        "version_id": "0404-afyon-onsecim-sehir-v1",
+        "exact": "Yeni Parti Afyon İl Kongresi 25 Ekim Pazar günü Fuar Düğün Salonu&#8217;nda, ön seçimin galibi Faruk Duha Erhan&#8217;ın tek aday olarak katılmasıyla yapılması bekleniyor.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "19 Ekim haberinde planlanan kongre",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0404-afyon-onsecim-iliski",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "0404-afyon-onsecim-iliski",
+        "text": "Afyon Şehir, 18 Ekim Afyonkarahisar il başkanlığı ön seçiminde Faruk Duha Erhan’ın Hasan Karadeniz’in önünde birinci olduğunu bildirdi. Haberde 25 Ekim il kongresi sonraki ve henüz planlanan bir işlem olarak yer alıyor.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-afyon-onsecim-iliski",
+        "passage_id": "0105-speech-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-afyon-onsecim-iliski",
+        "passage_id": "0105-speech-p",
+        "checked_at": "2026-11-21T22:15:17+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ile yerel haberin ön seçim ve planlanan kongre anlatımı ayrı okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-afyon-onsecim-iliski",
+        "passage_id": "0404-afyon-onsecim-sehir-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-afyon-onsecim-iliski",
+        "passage_id": "0404-afyon-onsecim-sehir-p",
+        "checked_at": "2026-11-21T22:15:17+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ile yerel haberin ön seçim ve planlanan kongre anlatımı ayrı okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-afyon-onsecim-iliski",
+        "passage_id": "0404-afyon-kongre-plan-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-afyon-onsecim-iliski",
+        "passage_id": "0404-afyon-kongre-plan-p",
+        "checked_at": "2026-11-21T22:15:17+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ile yerel haberin ön seçim ve planlanan kongre anlatımı ayrı okundu."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0404-afyon-onsecim-iliski",
+        "kind": "finding",
+        "subject_id": "0404-afyon-onsecim-iliski",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-21T22:15:17+00:00",
+        "result": "reviewed",
+        "reason": "Ön seçim ile sonraki kongre ayırt edildi; resmî tutanak görülmedi."
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-samsun-kongre-objektif",
+        "party_id": "yeni-parti",
+        "title": "Yeni Parti Samsun İl Kongresi sona erdi: Mehmet Özdağ yeniden başkan",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-samsun-kongre-objektif-v1",
+        "document_id": "0404-samsun-kongre-objektif",
+        "original_url": "https://www.samsunobjektif.com/index.php/yeni-parti-samsun-il-kongresi-sona-erdi-mehmet-ozdag-yeniden-baskan",
+        "final_url": "https://www.samsunobjektif.com/yeni-parti-samsun-il-kongresi-sona-erdi-mehmet-ozdag-yeniden-baskan",
+        "document_date": "2026-10-25",
+        "version_label": "Yayımlanan haber; yakalanan HTML",
+        "accessed_at": "2026-11-21T22:25:03.095427+00:00",
+        "verified_at": "2026-11-21T22:25:03.095427+00:00",
+        "mime": "text/html",
+        "sha256": "a7785dcb788b4516878d3804a17f2f02ea8f91cdc8523fa3383f6a840ce7cf77",
+        "original_path": "objects/a7785dcb788b4516878d3804a17f2f02ea8f91cdc8523fa3383f6a840ce7cf77/original.html.bin",
+        "readable_path": "objects/a7785dcb788b4516878d3804a17f2f02ea8f91cdc8523fa3383f6a840ce7cf77/readable.html",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "22b78b884d1e38ae9f8f4dd9c0c27915",
+        "format_version": 2,
+        "source_sha256": "a7785dcb788b4516878d3804a17f2f02ea8f91cdc8523fa3383f6a840ce7cf77",
+        "index_path": "views/22b78b884d1e38ae9f8f4dd9c0c27915/index.html",
+        "manifest_path": "views/22b78b884d1e38ae9f8f4dd9c0c27915/manifest.json",
+        "manifest_sha256": "641366aa5e7dc7d6587c8ea39e19641c5088f94b0de710953bdc82b35677d932",
+        "version_id": "0404-samsun-kongre-objektif-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-samsun-kongre-objektif-p",
+        "version_id": "0404-samsun-kongre-objektif-v1",
+        "exact": "Tek aday olarak seçime giren Mehmet Özdağ, geçerli 278 oyun 276'sını alarak Yeni Parti Samsun İl Başkanı seçildi.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "25 Ekim Samsun il kongresi haberi; 18 Ekim ön seçim ve itiraz ayrı süreç",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-samsun-kongre-objektif-v1",
+        "kind": "journalism",
+        "publisher": "Samsun Objektif",
+        "author": null,
+        "social_handle": null,
+        "published_at": "2026-10-25",
+        "date_precision": "day",
+        "public_url": "https://www.samsunobjektif.com/index.php/yeni-parti-samsun-il-kongresi-sona-erdi-mehmet-ozdag-yeniden-baskan",
+        "basis": "Kaynak sayfasındaki yayıncı, tarih ve varsa yazar künyesi incelendi."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0404-samsun-kongre-iliski",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "0404-samsun-kongre-iliski",
+        "text": "Samsun Objektif, 25 Ekim il kongresinde Mehmet Özdağ’ın geçerli 278 oyun 276’sını alarak il başkanı seçildiğini bildirdi. Kongre ve üyelerin ön seçimi ayrı aşamalardır; kongre tutanağı görülmedi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-samsun-kongre-iliski",
+        "passage_id": "0105-speech-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-samsun-kongre-iliski",
+        "passage_id": "0105-speech-p",
+        "checked_at": "2026-11-21T22:25:03+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ve kongrenin yerel haberindeki sonuç okundu; ön seçimle ayrıldı."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-samsun-kongre-iliski",
+        "passage_id": "0404-samsun-kongre-objektif-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-samsun-kongre-iliski",
+        "passage_id": "0404-samsun-kongre-objektif-p",
+        "checked_at": "2026-11-21T22:25:03+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ve kongrenin yerel haberindeki sonuç okundu; ön seçimle ayrıldı."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0404-samsun-kongre-iliski",
+        "kind": "finding",
+        "subject_id": "0404-samsun-kongre-iliski",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-21T22:25:03+00:00",
+        "result": "reviewed",
+        "reason": "Kongre haberi ve üyeler ön seçimi aşamaları ayrı değerlendirildi."
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-istanbul-onsecim-sozcu",
+        "party_id": "yeni-parti",
+        "title": "YENİ Parti İstanbul ön seçiminde kazanan belli oldu",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-istanbul-onsecim-sozcu-v1",
+        "document_id": "0404-istanbul-onsecim-sozcu",
+        "original_url": "https://www.sozcu.com.tr/yeni-parti-istanbul-on-seciminde-kazanan-belli-oldu-p370398",
+        "final_url": "https://www.sozcu.com.tr/yeni-parti-istanbul-on-seciminde-kazanan-belli-oldu-p370398",
+        "document_date": "2026-10-18",
+        "version_label": "Yayımlanan haber; yakalanan HTML",
+        "accessed_at": "2026-11-21T22:27:52.136773+00:00",
+        "verified_at": "2026-11-21T22:27:52.136773+00:00",
+        "mime": "text/html",
+        "sha256": "c3710e8f0388a2a8927423891387d6bcde8a53dc1a806f3459c872eca2a0cd1c",
+        "original_path": "objects/c3710e8f0388a2a8927423891387d6bcde8a53dc1a806f3459c872eca2a0cd1c/original.html.bin",
+        "readable_path": "objects/c3710e8f0388a2a8927423891387d6bcde8a53dc1a806f3459c872eca2a0cd1c/readable.html",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "a6875e143a8a67c838ed209afaac846d",
+        "format_version": 2,
+        "source_sha256": "c3710e8f0388a2a8927423891387d6bcde8a53dc1a806f3459c872eca2a0cd1c",
+        "index_path": "views/a6875e143a8a67c838ed209afaac846d/index.html",
+        "manifest_path": "views/a6875e143a8a67c838ed209afaac846d/manifest.json",
+        "manifest_sha256": "e563fd3ab0f9afba68daf218202a9c3c8427ef7723d47b530f10d16f31a43843",
+        "version_id": "0404-istanbul-onsecim-sozcu-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-istanbul-onsecim-sozcu-p",
+        "version_id": "0404-istanbul-onsecim-sozcu-v1",
+        "exact": "YENİ Parti kurucu İstanbul İl Başkanı Özgür Çelik, resmi olmayan sonuçlara göre tek aday olarak girdiği il başkanlığı ön seçimlerini kazandı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "18 Ekim İstanbul il başkanlığı ön seçimi; resmî olmayan sonuç",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-istanbul-onsecim-sozcu-v1",
+        "kind": "journalism",
+        "publisher": "Sözcü",
+        "author": "ANKA",
+        "social_handle": null,
+        "published_at": "2026-10-18",
+        "date_precision": "day",
+        "public_url": "https://www.sozcu.com.tr/yeni-parti-istanbul-on-seciminde-kazanan-belli-oldu-p370398",
+        "basis": "Kaynak sayfasındaki yayıncı, tarih ve varsa yazar künyesi incelendi."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0404-istanbul-onsecim-iliski",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "0404-istanbul-onsecim-iliski",
+        "text": "Sözcü’nün ANKA haberine göre, İstanbul il başkanlığı ön seçiminde Özgür Çelik tek aday olarak resmî olmayan sonuca göre birinci oldu. Ön seçim ile il kongresi ayrı aşamalardır; sandık tutanağı görülmedi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-istanbul-onsecim-iliski",
+        "passage_id": "0105-speech-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-istanbul-onsecim-iliski",
+        "passage_id": "0105-speech-p",
+        "checked_at": "2026-11-21T22:27:52+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ve ANKA kaynaklı resmî olmayan ön seçim haberi okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-istanbul-onsecim-iliski",
+        "passage_id": "0404-istanbul-onsecim-sozcu-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-istanbul-onsecim-iliski",
+        "passage_id": "0404-istanbul-onsecim-sozcu-p",
+        "checked_at": "2026-11-21T22:27:52+00:00",
+        "result": "confirmed",
+        "reason": "Beyan ve ANKA kaynaklı resmî olmayan ön seçim haberi okundu."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0404-istanbul-onsecim-iliski",
+        "kind": "finding",
+        "subject_id": "0404-istanbul-onsecim-iliski",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-21T22:27:52+00:00",
+        "result": "reviewed",
+        "reason": "Yerel ön seçim, kongre ve resmî olmayan sonuç ayrımı korundu."
+      }
     }
   ],
   "practice_records": {
@@ -5466,6 +5882,36 @@
         "scope_context": "Aydın il kongresi",
         "title": "Aydın il kongresi",
         "occurrence_basis": "Haber kaynağının ilgili işlem hakkındaki bildirimi."
+      },
+      {
+        "id": "0404-afyon-onsecim-event",
+        "common_event_key": "yeni-parti-afyon-2026-onsecim",
+        "event_at": "2026-10-18",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "Afyonkarahisar il başkanlığı üyeler ön seçimi",
+        "title": "Afyonkarahisar il başkanlığı ön seçimi",
+        "occurrence_basis": "19 Ekim yerel haberi 18 Ekim sandığını bildiriyor."
+      },
+      {
+        "id": "0404-samsun-kongre-event",
+        "common_event_key": "yeni-parti-samsun-2026-il-kongre",
+        "event_at": "2026-10-25",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "Samsun il kongresinde delegelerin il başkanı seçimi",
+        "title": "Samsun il kongresi",
+        "occurrence_basis": "25 Ekim saat 22.23 yerel haber kongre sonucunu bildiriyor."
+      },
+      {
+        "id": "0404-istanbul-onsecim-event",
+        "common_event_key": "yeni-parti-istanbul-2026-onsecim",
+        "event_at": "2026-10-18",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "İstanbul il başkanlığı ön seçimi",
+        "title": "İstanbul il başkanlığı ön seçimi",
+        "occurrence_basis": "18 Ekim Sözcü/ANKA haberi resmî olmayan sonucu bildiriyor."
       }
     ],
     "practice_event_evidence": [
@@ -5800,6 +6246,42 @@
         "stage": "action",
         "concrete_basis": "Kaynak kendi olay anlatımını bildiriyor.",
         "limitation": "16.33 tarihli sonuç haberi ile başka haberde beklenen 17.00 sandık kapanışı arasındaki ilişki doğrulanmadı; kongre tutanağı görülmedi.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-afyon-onsecim-event",
+        "passage_id": "0404-afyon-onsecim-sehir-p",
+        "supported_point": "Yerel haber ön seçimde Erhan’ın birinci olduğunu bildiriyor.",
+        "stage": "action",
+        "concrete_basis": "Afyon Şehir 19 Ekim haberindeki ön seçim bildirimi.",
+        "limitation": "Kongre henüz haber tarihindeki plandır; resmî ön seçim tutanağı görülmedi.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-afyon-onsecim-event",
+        "passage_id": "0404-afyon-kongre-plan-p",
+        "supported_point": "Haberde kongre ileri tarihli bir beklentidir.",
+        "stage": "action",
+        "concrete_basis": "Afyon Şehir 19 Ekim haberindeki kongre beklentisi.",
+        "limitation": "Bu pasaj kongrenin gerçekleştiğini göstermez.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-samsun-kongre-event",
+        "passage_id": "0404-samsun-kongre-objektif-p",
+        "supported_point": "Haber Özdağ’ın kongrede 276 oyla seçildiğini aktarıyor.",
+        "stage": "action",
+        "concrete_basis": "Samsun Objektif kongre sonuç haberi.",
+        "limitation": "Kongre tutanağı görülmedi; ön seçim itirazları ayrı araştırılır.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-istanbul-onsecim-event",
+        "passage_id": "0404-istanbul-onsecim-sozcu-p",
+        "supported_point": "Habere göre Çelik tek adaylı ön seçimi kazandı.",
+        "stage": "action",
+        "concrete_basis": "ANKA kaynaklı Sözcü ön seçim haberi.",
+        "limitation": "Sonuç resmî olmayan olarak bildirildi; sandık tutanağı görülmedi.",
         "epistemic_type": "claim"
       }
     ],
@@ -6270,6 +6752,51 @@
         "temporal_context": "4 Ağustos beyanı; 18 Ekim ön seçim ve 26 Ekim il kongresi ayrı işlemlerdir.",
         "authority_context": "Üyelerin ön seçimi ile delegelerin kongredeki oylaması farklı işlemlerdir.",
         "uncertainty_reason": "16.33 tarihli sonuç haberi ile başka haberde beklenen 17.00 sandık kapanışı arasındaki ilişki doğrulanmadı; kongre tutanağı görülmedi."
+      },
+      {
+        "id": "0404-afyon-onsecim-iliski-id",
+        "statement_id": "tracer-statement",
+        "event_id": "0404-afyon-onsecim-event",
+        "party_id": "yeni-parti",
+        "topic_id": "organ-secim-yontemi",
+        "scope_id": null,
+        "comparability_reason": "Üyelerin katıldığı il ön seçimi başkan belirleme beyanının bir aşamasıdır.",
+        "target_finding_id": "0105-statement",
+        "result_finding_id": null,
+        "explanation_finding_id": "0404-afyon-onsecim-iliski",
+        "temporal_context": "Beyan 4 Ağustos, ön seçim 18 Ekim 2026 tarihlidir.",
+        "authority_context": "Üyelerin ön seçimi ile kongredeki resmî seçim farklı işlemlerdir.",
+        "uncertainty_reason": "Haber, sonraki kongreyi plan olarak anlatır; ön seçim tutanağı görülmedi."
+      },
+      {
+        "id": "0404-samsun-kongre-iliski-id",
+        "statement_id": "tracer-statement",
+        "event_id": "0404-samsun-kongre-event",
+        "party_id": "yeni-parti",
+        "topic_id": "organ-secim-yontemi",
+        "scope_id": null,
+        "comparability_reason": "İl başkanı belirleme sürecinin kongre aşaması üyelerin rolüne dair beyanın bağlamında gösterilir.",
+        "target_finding_id": "0105-statement",
+        "result_finding_id": null,
+        "explanation_finding_id": "0404-samsun-kongre-iliski",
+        "temporal_context": "Beyan 4 Ağustos, üyeler ön seçimi 18 Ekim, kongre 25 Ekim 2026 tarihlidir.",
+        "authority_context": "Ön seçim ile delegelerin kongre seçimi farklı işlemlerdir.",
+        "uncertainty_reason": "Özgün kongre tutanağı görülmedi; ön seçim itirazları bu sonuçla çözülmüş sayılmaz."
+      },
+      {
+        "id": "0404-istanbul-onsecim-iliski-id",
+        "statement_id": "tracer-statement",
+        "event_id": "0404-istanbul-onsecim-event",
+        "party_id": "yeni-parti",
+        "topic_id": "organ-secim-yontemi",
+        "scope_id": null,
+        "comparability_reason": "Üyelerin katıldığı il başkanlığı ön seçimi başkan belirleme beyanına ilişkindir.",
+        "target_finding_id": "0105-statement",
+        "result_finding_id": null,
+        "explanation_finding_id": "0404-istanbul-onsecim-iliski",
+        "temporal_context": "Beyan 4 Ağustos, ön seçim 18 Ekim 2026 tarihlidir.",
+        "authority_context": "Üyelerin ön seçimi ile kongre işlemleri ayrı gösterilir.",
+        "uncertainty_reason": "Sonuç resmî olmayan olarak bildirildi; sandık tutanağı görülmedi."
       }
     ],
     "practice_legacy_link": [
@@ -6642,6 +7169,30 @@
       {
         "event_id": "0404-aydin-kongre-event",
         "passage_id": "0404-aydin-kongre-gunaydin-p",
+        "stage": "action",
+        "basis_kind": "independent_report"
+      },
+      {
+        "event_id": "0404-afyon-onsecim-event",
+        "passage_id": "0404-afyon-onsecim-sehir-p",
+        "stage": "action",
+        "basis_kind": "independent_report"
+      },
+      {
+        "event_id": "0404-afyon-onsecim-event",
+        "passage_id": "0404-afyon-kongre-plan-p",
+        "stage": "action",
+        "basis_kind": "independent_report"
+      },
+      {
+        "event_id": "0404-samsun-kongre-event",
+        "passage_id": "0404-samsun-kongre-objektif-p",
+        "stage": "action",
+        "basis_kind": "independent_report"
+      },
+      {
+        "event_id": "0404-istanbul-onsecim-event",
+        "passage_id": "0404-istanbul-onsecim-sozcu-p",
         "stage": "action",
         "basis_kind": "independent_report"
       }

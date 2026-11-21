@@ -2144,6 +2144,214 @@
       "limitations": "Ön seçim sayıları farklı; kongre sonuç haberinin zamanlaması ve tutanak ayrıca araştırılıyor.",
       "result": "reviewed",
       "reason": "Ön seçim ile kongreyi ayırarak yayınları ve açıklamayı karşılaştırdım."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-afyon-onsecim-event|0404-afyon-onsecim-sehir-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:15:17+00:00",
+      "source_version_ids": "[\"0404-afyon-onsecim-sehir-v1\"]",
+      "passage_ids": "[\"0404-afyon-onsecim-sehir-p\"]",
+      "inspected_sections": "[\"19 Ekim ön seçim sonucu haberi\"]",
+      "supported_claim": "Yerel haber Erhan’ın ön seçimde birinci olduğunu aktarıyor.",
+      "limitations": "Kongre haberde gelecek zamandadır; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "İl ön seçimi ile sonraki kongre aşaması ayırt edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-afyon-onsecim-event|0404-afyon-kongre-plan-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:15:17+00:00",
+      "source_version_ids": "[\"0404-afyon-onsecim-sehir-v1\"]",
+      "passage_ids": "[\"0404-afyon-kongre-plan-p\"]",
+      "inspected_sections": "[\"19 Ekim haberinde planlanan 25 Ekim kongresi\"]",
+      "supported_claim": "Aynı haber sonraki kongreyi beklenti olarak bildiriyor.",
+      "limitations": "Kongre haberde gelecek zamandadır; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "İl ön seçimi ile sonraki kongre aşaması ayırt edildi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-afyon-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:15:17+00:00",
+      "source_version_ids": "[\"0404-afyon-onsecim-sehir-v1\"]",
+      "passage_ids": "[\"0404-afyon-onsecim-sehir-p\", \"0404-afyon-kongre-plan-p\"]",
+      "inspected_sections": "[\"19 Ekim ön seçim sonucu haberi\", \"19 Ekim haberinde planlanan 25 Ekim kongresi\"]",
+      "supported_claim": "Afyon ön seçimi ve daha sonraki kongre beklentisi ayrı aktarılıyor.",
+      "limitations": "Kongre haberde gelecek zamandadır; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "İl ön seçimi ile sonraki kongre aşaması ayırt edildi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-afyon-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:15:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-afyon-onsecim-sehir-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-afyon-onsecim-sehir-p\", \"0404-afyon-kongre-plan-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı belirleme beyanı\", \"19 Ekim ön seçim sonucu haberi\", \"19 Ekim haberinde planlanan 25 Ekim kongresi\"]",
+      "supported_claim": "Üyelerin rolüne ilişkin beyan ile Afyon ön seçim haberi ilişkilidir.",
+      "limitations": "Kongre haberde gelecek zamandadır; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "İl ön seçimi ile sonraki kongre aşaması ayırt edildi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-afyon-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:15:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı belirleme beyanı\"]",
+      "supported_claim": "Hedef üyelerin başkan belirlemesine ilişkin beyandır.",
+      "limitations": "Kongre haberde gelecek zamandadır; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "İl ön seçimi ile sonraki kongre aşaması ayırt edildi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-afyon-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:15:17+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-afyon-onsecim-sehir-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-afyon-onsecim-sehir-p\", \"0404-afyon-kongre-plan-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı belirleme beyanı\", \"19 Ekim ön seçim sonucu haberi\", \"19 Ekim haberinde planlanan 25 Ekim kongresi\"]",
+      "supported_claim": "Afyon açıklaması gerçekleşen ön seçimi planlanan kongreden ayırır.",
+      "limitations": "Kongre haberde gelecek zamandadır; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "İl ön seçimi ile sonraki kongre aşaması ayırt edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-samsun-kongre-event|0404-samsun-kongre-objektif-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:25:03+00:00",
+      "source_version_ids": "[\"0404-samsun-kongre-objektif-v1\"]",
+      "passage_ids": "[\"0404-samsun-kongre-objektif-p\"]",
+      "inspected_sections": "[\"25 Ekim Samsun il kongresi sonuç haberi\"]",
+      "supported_claim": "Haberde Özdağ’ın 276 oyla kongrede seçildiği aktarılıyor.",
+      "limitations": "Kongre tutanağı görülmedi; ön seçim itirazları ayrı konudur.",
+      "result": "reviewed",
+      "reason": "Beyan ile kongre haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-samsun-kongre-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:25:03+00:00",
+      "source_version_ids": "[\"0404-samsun-kongre-objektif-v1\"]",
+      "passage_ids": "[\"0404-samsun-kongre-objektif-p\"]",
+      "inspected_sections": "[\"25 Ekim Samsun il kongresi sonuç haberi\"]",
+      "supported_claim": "Yerel haber 25 Ekim Samsun kongre sonucunu bildiriyor.",
+      "limitations": "Kongre tutanağı görülmedi; ön seçim itirazları ayrı konudur.",
+      "result": "reviewed",
+      "reason": "Beyan ile kongre haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-samsun-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:25:03+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-samsun-kongre-objektif-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-samsun-kongre-objektif-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"25 Ekim Samsun il kongresi sonuç haberi\"]",
+      "supported_claim": "Üyelerin başkan belirleme beyanı ile sonraki kongre aşaması karşılaştırılıyor.",
+      "limitations": "Kongre tutanağı görülmedi; ön seçim itirazları ayrı konudur.",
+      "result": "reviewed",
+      "reason": "Beyan ile kongre haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-samsun-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:25:03+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\"]",
+      "supported_claim": "Samsun karşılaştırmasının hedefi üye iradesine dair beyandır.",
+      "limitations": "Kongre tutanağı görülmedi; ön seçim itirazları ayrı konudur.",
+      "result": "reviewed",
+      "reason": "Beyan ile kongre haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-samsun-kongre-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:25:03+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-samsun-kongre-objektif-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-samsun-kongre-objektif-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"25 Ekim Samsun il kongresi sonuç haberi\"]",
+      "supported_claim": "Açıklama kongre sonucunu ön seçimden ayrı ele alıyor.",
+      "limitations": "Kongre tutanağı görülmedi; ön seçim itirazları ayrı konudur.",
+      "result": "reviewed",
+      "reason": "Beyan ile kongre haberi karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-istanbul-onsecim-event|0404-istanbul-onsecim-sozcu-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:27:52+00:00",
+      "source_version_ids": "[\"0404-istanbul-onsecim-sozcu-v1\"]",
+      "passage_ids": "[\"0404-istanbul-onsecim-sozcu-p\"]",
+      "inspected_sections": "[\"18 Ekim ANKA kaynaklı İstanbul ön seçimi haberi\"]",
+      "supported_claim": "ANKA haberi Çelik’in tek adaylı ön seçimi resmî olmayan sonuca göre kazandığını bildiriyor.",
+      "limitations": "Sonuç haberde resmî olmayan olarak niteleniyor; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve ANKA ön seçim haberi ayrı aşamalar ve atıfla okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-istanbul-onsecim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:27:52+00:00",
+      "source_version_ids": "[\"0404-istanbul-onsecim-sozcu-v1\"]",
+      "passage_ids": "[\"0404-istanbul-onsecim-sozcu-p\"]",
+      "inspected_sections": "[\"18 Ekim ANKA kaynaklı İstanbul ön seçimi haberi\"]",
+      "supported_claim": "İstanbul ön seçimi ve resmî olmayan sonuç haberde yer alıyor.",
+      "limitations": "Sonuç haberde resmî olmayan olarak niteleniyor; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve ANKA ön seçim haberi ayrı aşamalar ve atıfla okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-istanbul-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:27:52+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-istanbul-onsecim-sozcu-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-istanbul-onsecim-sozcu-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"18 Ekim ANKA kaynaklı İstanbul ön seçimi haberi\"]",
+      "supported_claim": "Üyelerle başkan belirleme beyanı İstanbul ön seçimiyle karşılaştırılıyor.",
+      "limitations": "Sonuç haberde resmî olmayan olarak niteleniyor; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve ANKA ön seçim haberi ayrı aşamalar ve atıfla okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-istanbul-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:27:52+00:00",
+      "source_version_ids": "[\"0105-speech-v1\"]",
+      "passage_ids": "[\"0105-speech-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\"]",
+      "supported_claim": "İstanbul karşılaştırmasının hedefi üyelerin başkan belirlemesine dair beyandır.",
+      "limitations": "Sonuç haberde resmî olmayan olarak niteleniyor; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve ANKA ön seçim haberi ayrı aşamalar ve atıfla okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-istanbul-onsecim-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-21T22:27:52+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-istanbul-onsecim-sozcu-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-istanbul-onsecim-sozcu-p\"]",
+      "inspected_sections": "[\"4 Ağustos il başkanı seçimi beyanı\", \"18 Ekim ANKA kaynaklı İstanbul ön seçimi haberi\"]",
+      "supported_claim": "İstanbul açıklaması resmî olmayan ön seçimi ayrı aşama olarak aktarıyor.",
+      "limitations": "Sonuç haberde resmî olmayan olarak niteleniyor; tutanak görülmedi.",
+      "result": "reviewed",
+      "reason": "Beyan ve ANKA ön seçim haberi ayrı aşamalar ve atıfla okundu."
     }
   ],
   "source_review_refs": [
@@ -2806,6 +3014,70 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0404-aydin-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-afyon-onsecim-event|0404-afyon-onsecim-sehir-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-afyon-onsecim-event|0404-afyon-kongre-plan-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-afyon-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-afyon-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-afyon-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-afyon-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-samsun-kongre-event|0404-samsun-kongre-objektif-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-samsun-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-samsun-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-samsun-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-samsun-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-istanbul-onsecim-event|0404-istanbul-onsecim-sozcu-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-istanbul-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-istanbul-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-istanbul-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-istanbul-onsecim-iliski-id"
     }
   ]
 }
