@@ -1,0 +1,4 @@
+import json
+from pathlib import Path
+p=Path('data/practices/04-yeni-parti-tranches.json');q=json.loads(p.read_text());q['initial_readings'].append(dict(read_at='2026-11-21',url='https://yenipartiyiz.biz/parti-programi',section='İklim ve çevre: kentlerin afetlere karşı direnci',note='Özgün program baytı SHA256 58fa220ab814bd82a4c8d0d233bf55ab268eb9f856750cd88abc544e17ceba1b içinde “Kentler iklim krizine, depreme, sele, yangına ve kuraklığa karşı dirençli hale getirilecektir.” cümlesi okundu. TBMM 10/4638 deprem araştırma isteğiyle konu ilgisi var; program cümlesi hedef, önerge araştırma girişimidir. Envanterde doğrudan deprem/afet/iklim-uyum konu kimliği bulunmadığından ilgili gerçek kapsam uzantısı ve seçili karşılaştırma bağı araştırılacak; henüz olay ilişkisi veya kapanış kurulmadı.'))
+p.write_text(json.dumps(q,ensure_ascii=False,indent=2)+'\n')
