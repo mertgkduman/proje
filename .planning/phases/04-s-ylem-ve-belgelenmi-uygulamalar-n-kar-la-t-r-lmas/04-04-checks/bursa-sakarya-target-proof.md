@@ -1,0 +1,3 @@
+# Genişletilmiş taslağın mekanik inceleme hedefleri
+
+Gerçek temel release `f67ca0a35e634035bf3aa83a46571f50` `records.json` verisine `package-bursa-sakarya-draft.json` SHA `2eafe795a09f62c1e37632d075242b5d5ea97b7942e8a03717eb75b1ab6b5cf7` kayıtları yinelenen aynı kayıtlar korunarak birleştirildi. `practice_review_package_targets` çıktısı 94 hedef, v3 review 94 hedef, eksik 0, fazla 0 ve farklı pasaj kümesi 0 verdi. Önceki review v2'de ulusal ilişki, eklenen iki yerel olay pasajını kapsamıyordu; bunlar ilgili gerçek kaynak sürümleriyle v3'e eklendi. Bu mekanik kontrol gerçek `practice-source-check`, `practice-check` veya preview yerine geçmez.
