@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 22:45 UTC — en güncel durum
+
+İstanbul staging practice-check session 1568 çıkış 0; kanıt `3d8ca41`. Aynı `b73aee55eaf58551bb79221ae5adda8f5cc07c35976f43601f1cd7e210ea3172` paket ve `e2481b9c9c856f416d3c1e5d1421a1787bfcd67d37cae829fc06fd8233b516cc` review için source-check PID 842390/session 53702 sürüyor, preview henüz başlamadı. Diyarbakır preview PID 818337/session 96992; Aydın v2 preview PID 826755/session 63162 ve düzeltilmiş review source-check PID 833750/session 97095 sürüyor. PID'ler son gözlemde CPU kullanıyor. Bekleyenleri öldürmeyin veya yinelemeyin; sonuçları ve girdilerini birbirine karıştırmayın.
+
+`bd6963d` TBMM 10/4551 için önceki gerçek HTML baytından amaç, önerge sahibi, tarih pasajlarını birebir doğrulayıp kurucu programın dokuz pasajıyla ayrı kaynaklı olay ve ilişki taslağı oluşturdu; paket SHA `d35d4b013cc9bc0ad380191736bc709dea27428dbbf6de3d020626929ea4462a`, review SHA `55e287677141f0cf09572f847143b20bb9928560346479f4799289d0ea15354e`, 203 inceleme açıklamasında mekanik tekrar yok. Gerçek CLI/preview yok; önerge araştırma talebidir, kabul veya reform değildir. 4 Kasım 10/4984 farklı önerge olarak `7a2798e` kuyruğunda açık. Canlı parti paketi hâlâ Uşak SHA `17e452bb1bf799f2ac05d69226cfa8b521a413ebc6667febe55897dce7354e58` ve review `dfb7aba358cc4a7871ff0678a0de8b808ce6a1210fd6e1d3386d13696f8b31ef`, stage tracer; 610 hücre ve plan açık.
+
 ## 2026-11-21 22:39 UTC — en güncel durum
 
 Diyarbakır source-check session 86934 çıkış 0 `PRACTICE_SOURCE_REVIEW_OK`; aynı paket gerçek preview PID 818337/session 96992 sürüyor. Aydın v2 ilk review source-check session 49943 çıkış 1 `Aynı genel açıklama birden çok hedefe kopyalanamaz`; eski review/ret korundu, hedefe özgü review v2 SHA `f7a5d3da6ceb0340b4afd287c117933b94bb515cb8e0c791d1ea0f19bb0e756a` ve düzeltme kanıtı `85a9ead`. Yeni source-check PID 833750/session 97095 ve aynı paket preview PID 826755/session 63162 sürüyor. İstanbul geniş taslağı staging practice-check PID 835709/session 1568 sürüyor; 202 varlık yolunda 190 mevcut eşit, 12 yeni, paket SHA `b73aee55eaf58551bb79221ae5adda8f5cc07c35976f43601f1cd7e210ea3172`, review SHA `e2481b9c9c856f416d3c1e5d1421a1787bfcd67d37cae829fc06fd8233b516cc`. Hepsinin gerçek çıkışını bekleyin; tekrar çalıştırmayın.
