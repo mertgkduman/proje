@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    <title>Yeni Parti Samsun İl Kongresinde Tüzük Tartışması</title>
+    <meta name="description" content="Yeni Parti Samsun 1. Olağan İl Kongresi’nde parti üyeleri, delegeler ve yöneticiler bir araya gelirken, konuşmalarda parti içi demokrasi ve üye iradesi vurgusu öne çıktı. Kongrede söz almak isteyen bir parti üyesi ile divan arasında tüzük ve genel kurulda konuşma hakkı konusunda tartışma yaşandı." />
+    <meta name="keywords" content="Samsun haber, samsun haberleri, samsun son dakika, samsun haber gazetesi, samsunspor, samsun hava durumu, samsun gazete, samsun spor haberleri, samsun gazete, Samsun son dakika" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samsunilkhaber.com.tr/yeni-parti-samsun-il-kongresinde-tuzuk-tartismasi" />
+    <meta property="og:title" content="Yeni Parti Samsun İl Kongresinde Tüzük Tartışması" />
+    <meta property="og:description" content="Yeni Parti Samsun 1. Olağan İl Kongresi’nde parti üyeleri, delegeler ve yöneticiler bir araya gelirken, konuşmalarda parti içi demokrasi ve üye iradesi vurgusu öne çıktı. Kongrede söz almak isteyen bir parti üyesi ile divan arasında tüzük ve genel kurulda konuşma hakkı konusunda tartışma yaşandı." />
+    <meta property="og:image" content="/storage/uploads/01M5S9DD0MVEW8K8A32FS1XS5C.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Merriweather:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0F2XQXS2XR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0F2XQXS2XR');
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#dc2626', // Red-600
+                        secondary: '#0f172a', // Slate-900
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                        display: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/themes/ilkadim/css/site.css" />
+    
+    <style>
+        [x-cloak] { display: none !important; }
+        /* Scrollbar customization */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #dc2626; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #b91c1c; }
+
+        html.dark body,
+        html.dark .ilkadim-page-shell,
+        html.dark .ilkadim-category-zone {
+            background: #020617 !important;
+        }
+
+        html.dark .ilkadim-breaking-ticker {
+            background: #0f172a !important;
+            border-color: #1e293b !important;
+        }
+
+        html.dark .ilkadim-breaking-ticker a {
+            color: #e2e8f0 !important;
+        }
+
+        html.dark .ilkadim-breaking-ticker a:hover {
+            color: #f87171 !important;
+        }
+
+        html.dark .ilkadim-numbered-list,
+        html.dark .ilkadim-news-card {
+            background: #0f172a !important;
+            border-color: #1e293b !important;
+        }
+
+        html.dark .ilkadim-numbered-list {
+            border-bottom-color: #b91c1c !important;
+        }
+    </style>
+
+        <link rel="canonical" href="https://samsunilkhaber.com.tr/yeni-parti-samsun-il-kongresinde-tuzuk-tartismasi">
+    <style>
+        .article-content.font-small { font-size: 14px; }
+        .article-content.font-normal { font-size: 16px; }
+        .article-content.font-large { font-size: 20px; }
+        .article-content iframe { width: 100%; aspect-ratio: 16 / 9; border-radius: 0.5rem; }
+        @media print {
+            .no-print { display: none !important; }
+            .article-content { max-width: 100% !important; }
+            body { background: white !important; }
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-950 font-sans antialiased text-gray-900 dark:text-gray-100 transition-colors duration-300" 
+      x-data="{ 
+          mobileMenuOpen: false,
+          darkMode: document.documentElement.classList.contains('dark'),
+          cookieConsent: localStorage.getItem('cookieConsent') === 'true',
+          setTheme(isDark) {
+              this.darkMode = isDark;
+              document.documentElement.classList.toggle('dark', isDark);
+              localStorage.setItem('theme', isDark ? 'dark' : 'light');
+          },
+          toggleTheme() {
+              this.setTheme(!this.darkMode);
+          }
+      }"
+      x-init="setTheme(darkMode)">
+
+    <!-- TOP BANNER AREA -->
+        <div class="flex bg-gray-100 dark:bg-gray-800 py-3 border-b border-gray-200 dark:border-gray-700 justify-center items-center">
+        <div class="container mx-auto px-4 flex justify-center">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194078404210111"
+     crossorigin="anonymous"></script>
+        </div>
+    </div>
+         <!-- BLACK TOP BAR -->
+    <div class="bg-black text-white text-[11px] font-medium border-b border-gray-800 relative z-50">
+        <div class="container mx-auto max-w-[1280px] px-4 h-9 flex justify-between items-center">
+            <!-- Left Side Links -->
+            <div class="flex items-center space-x-4">
+                <a class="flex items-center gap-1.5 hover:text-gray-300 transition-colors" href="https://samsunilkhaber.com.tr/foto-galeri">
+                    <span class="material-icons text-sm">photo_camera</span> <span>Foto Galeriler</span>
+                </a>
+                <a class="flex items-center gap-1.5 hover:text-gray-300 transition-colors" href="https://samsunilkhaber.com.tr/videolar">
+                    <span class="material-icons text-sm">videocam</span> <span>Video</span>
+                </a>
+            </div>
+
+            <!-- Right Side Widgets -->
+            <div class="flex items-center gap-4 text-[12px]" 
+                 x-data="{ 
+                    markets: [], 
+                    currentMarketIndex: 0,
+                    weather: null,
+                    cities: ['Adana', 'Adıyaman', 'Afyonkarahisar', 'Ağrı', 'Aksaray', 'Amasya', 'Ankara', 'Antalya', 'Ardahan', 'Artvin', 'Aydın', 'Balıkesir', 'Bartın', 'Batman', 'Bayburt', 'Bilecik', 'Bingöl', 'Bitlis', 'Bolu', 'Burdur', 'Bursa', 'Çanakkale', 'Çankırı', 'Çorum', 'Denizli', 'Diyarbakır', 'Düzce', 'Edirne', 'Elazığ', 'Erzincan', 'Erzurum', 'Eskişehir', 'Gaziantep', 'Giresun', 'Gümüşhane', 'Hakkari', 'Hatay', 'Iğdır', 'Isparta', 'İstanbul', 'İzmir', 'Kahramanmaraş', 'Karabük', 'Karaman', 'Kars', 'Kastamonu', 'Kayseri', 'Kırıkkale', 'Kırklareli', 'Kırşehir', 'Kilis', 'Kocaeli', 'Konya', 'Kütahya', 'Malatya', 'Manisa', 'Mardin', 'Mersin', 'Muğla', 'Muş', 'Nevşehir', 'Niğde', 'Ordu', 'Osmaniye', 'Rize', 'Sakarya', 'Samsun', 'Şanlıurfa', 'Siirt', 'Sinop', 'Sivas', 'Şırnak', 'Tekirdağ', 'Tokat', 'Trabzon', 'Tunceli', 'Uşak', 'Van', 'Yalova', 'Yozgat', 'Zonguldak'],
+                    selectedCity: 'Samsun',
+                    loading: true,
+                    init() {
+                        this.fetchWidgets();
+                        setInterval(() => {
+                            if (this.markets.length > 0) {
+                                this.currentMarketIndex = (this.currentMarketIndex + 1) % this.markets.length;
+                            }
+                        }, 3000); 
+                    },
+                    fetchWidgets() {
+                        fetch(`/api/widgets?city=${this.selectedCity}`)
+                            .then(r => r.json())
+                            .then(d => {
+                                this.markets = d.markets || [];
+                                this.weather = d.weather || null;
+                                this.loading = false;
+                            })
+                            .catch(() => { this.loading = false; });
+                    },
+                    changeCity() {
+                        this.fetchWidgets();
+                    }
+                 }">
+                
+                <!-- Market Widget -->
+                <div class="hidden sm:flex items-center justify-end min-w-[200px] border-r border-gray-800 pr-4">
+                    <template x-if="loading">
+                         <span class="text-gray-500 animate-pulse">Piyasalar...</span>
+                    </template>
+                    <template x-if="!loading && markets.length > 0">
+                        <div class="flex items-center gap-1.5 font-bold">
+                            <span class="text-white uppercase" x-text="markets[currentMarketIndex].name"></span>
+                            <span class="material-icons text-[10px]" 
+                                  :class="markets[currentMarketIndex].isUp ? 'text-green-500' : 'text-red-500'"
+                                  x-text="markets[currentMarketIndex].isUp ? 'arrow_upward' : 'arrow_downward'"></span>
+                            <span class="text-white" x-text="markets[currentMarketIndex].value"></span>
+                            <span :class="markets[currentMarketIndex].isUp ? 'text-green-500' : 'text-red-500'"
+                                  x-text="'%' + markets[currentMarketIndex].changeRate"></span>
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Weather Widget -->
+                <div class="relative" x-data="{ open: false }">
+                    <div class="cursor-pointer" @click="open = !open">
+                        <template x-if="weather">
+                            <div class="flex items-center gap-1.5 font-bold text-white whitespace-nowrap">
+                                <span x-text="weather.temperature + '°'"></span>
+                                <span class="material-symbols-outlined text-[18px] text-yellow-500" x-text="weather.icon"></span>
+                                <span x-text="selectedCity"></span>
+                                <span class="material-symbols-outlined text-[16px] text-gray-400">expand_more</span>
+                            </div>
+                        </template>
+                    </div>
+
+                    <!-- Weather Dropdown -->
+                    <div x-show="open" x-transition x-cloak @click.away="open = false" 
+                         class="absolute right-0 top-full mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 p-4 z-50 text-gray-800 dark:text-gray-200">
+                        <div class="mb-4">
+                            <label class="text-[10px] font-bold text-gray-500 uppercase">Şehir Seçin</label>
+                            <select class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded p-1.5 text-xs text-gray-700 dark:text-gray-300"
+                                    x-model="selectedCity" @change="changeCity()">
+                                <template x-for="city in cities">
+                                    <option :value="city" x-text="city"></option>
+                                </template>
+                            </select>
+                        </div>
+                        <template x-if="weather && weather.weeklyForecast">
+                            <div class="grid grid-cols-4 gap-1 text-center">
+                                <template x-for="day in weather.weeklyForecast">
+                                    <div class="flex flex-col items-center p-1 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                        <span class="text-[9px] text-gray-500 font-bold" x-text="day.day.substring(0, 3)"></span>
+                                        <span class="material-symbols-outlined text-xs my-0.5" x-text="day.icon"></span>
+                                        <span class="text-[10px] font-bold" x-text="day.maxTemp + '°'"></span>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+
+                <!-- Auth Link -->
+                                    <a class="pl-2 flex items-center gap-1.5 hover:text-primary transition-colors duration-200 text-white" href="/giris">
+                        <span class="material-icons text-[18px]">login</span>
+                        <span>Giriş Yap</span>
+                    </a>
+                            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR (WHITE) -->
+    <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto max-w-[1280px] px-4">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <a class="flex items-center shrink-0 mr-4" href="https://samsunilkhaber.com.tr">
+                    <img src="/themes/ilkadim/img/logo.png" alt="0" class="h-14 w-auto object-contain" onerror="this.onerror=null;this.src='/themes/ilkadim/img/logo.webp';" />
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-5 text-[13px] font-bold text-gray-700 dark:text-gray-300 uppercase tracking-tight">
+                                    
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/samsun-haber">
+                            SAMSUN HABER
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/gundem">
+                            GÜNDEM
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/asayis">
+                            ASAYİŞ
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/guncel">
+                            GÜNCEL
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/spor">
+                            SPOR
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/siyaset">
+                            SİYASET
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/ilceler">
+                            İLÇELER
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/kultur-sanat">
+                            KÜLTÜR-SANAT
+                        </a>
+                                            <a class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary "
+                           href="https://samsunilkhaber.com.tr/kategori/saglik">
+                            SAĞLIK
+                        </a>
+                                    
+                    <a href="https://samsunilkhaber.com.tr/ilanlar"
+                       class="hover:text-primary transition-colors py-5 border-b-2 border-transparent hover:border-primary ">
+                        İLANLAR
+                    </a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="flex items-center gap-3">
+                    <a href="https://samsunilkhaber.com.tr/arama" class="text-gray-500 hover:text-primary transition-colors">
+                        <span class="material-icons text-xl">search</span>
+                    </a>
+                    <button
+                        type="button"
+                        class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm transition hover:border-primary hover:text-primary dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-red-500 dark:hover:text-red-400"
+                        @click="toggleTheme()"
+                        :aria-label="darkMode ? 'Gunduz moduna gec' : 'Gece moduna gec'"
+                    >
+                        <span class="material-icons text-xl" x-text="darkMode ? 'light_mode' : 'dark_mode'"></span>
+                    </button>
+                    <button class="text-gray-500 hover:text-primary transition-colors focus:outline-none" @click="mobileMenuOpen = !mobileMenuOpen">
+                        <span class="material-icons text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MEGA MENU OVERLAY -->
+        <div x-show="mobileMenuOpen" 
+             x-transition 
+             x-cloak 
+             class="absolute top-full left-0 w-full bg-white dark:bg-gray-800 shadow-2xl border-t border-gray-100 dark:border-gray-700 z-50">
+            <div class="container mx-auto max-w-[1280px] p-6">
+                <!-- Service Links Row -->
+                <div class="flex flex-wrap gap-4 pb-4 mb-4 border-b border-gray-100 dark:border-gray-700 text-xs">
+                    <button
+                        type="button"
+                        class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition dark:text-gray-300 dark:hover:text-red-400"
+                        @click="toggleTheme()"
+                    >
+                        <span class="material-icons text-sm" x-text="darkMode ? 'light_mode' : 'dark_mode'"></span>
+                        <span x-text="darkMode ? 'Gündüz Modu' : 'Gece Modu'"></span>
+                    </button>
+                    <a href="https://samsunilkhaber.com.tr/hava-durumu" class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition dark:text-gray-300 dark:hover:text-red-400">
+                        <span class="material-icons text-sm">cloud</span> Hava Durumu
+                    </a>
+                    <a href="https://samsunilkhaber.com.tr/namaz-vakitleri" class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition dark:text-gray-300 dark:hover:text-red-400">
+                        <span class="material-icons text-sm">mosque</span> Namaz Vakitleri
+                    </a>
+                    <a href="https://samsunilkhaber.com.tr/yol-durumu" class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition dark:text-gray-300 dark:hover:text-red-400">
+                        <span class="material-icons text-sm">traffic</span> Trafik Durumu
+                    </a>
+                    <a href="https://samsunilkhaber.com.tr/mansetler" class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition dark:text-gray-300 dark:hover:text-red-400">
+                        <span class="material-icons text-sm">newspaper</span> Tüm Manşetler
+                    </a>
+                    <a href="https://samsunilkhaber.com.tr/son-dakika" class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition dark:text-gray-300 dark:hover:text-red-400">
+                        <span class="material-icons text-sm">bolt</span> Son Dakika
+                    </a>
+                </div>
+                
+                <!-- Categories Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                            <a href="https://samsunilkhaber.com.tr/kategori/samsun-haber" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            SAMSUN HABER
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/gundem" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            GÜNDEM
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/asayis" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            ASAYİŞ
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/guncel" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            GÜNCEL
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/spor" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            SPOR
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/siyaset" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            SİYASET
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/ilceler" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            İLÇELER
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/kultur-sanat" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            KÜLTÜR-SANAT
+                        </a>
+                                            <a href="https://samsunilkhaber.com.tr/kategori/saglik" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">
+                            SAĞLIK
+                        </a>
+                                        <a href="https://samsunilkhaber.com.tr/foto-galeri" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">Foto Galeriler</a>
+                    <a href="https://samsunilkhaber.com.tr/videolar" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">Video</a>
+                    <a href="https://samsunilkhaber.com.tr/ilanlar" class="block text-gray-700 dark:text-gray-200 hover:text-red-600 font-bold uppercase text-sm py-1">İLANLAR</a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex items-center gap-4 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 text-xs text-gray-500">
+                                            <a href="https://www.facebook.com/Samsunilkhaber" target="_blank" class="hover:text-blue-600"><i class="fab fa-facebook"></i> Facebook</a>
+                                                                <a href="https://x.com/samsun61201" target="_blank" class="hover:text-black"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                                                                                                        <a href="https://youtube.com/samsunilkhaber" target="_blank" class="hover:text-red-600"><i class="fab fa-youtube"></i> Youtube</a>
+                                                        </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Breaking News Ticker -->
+            <div class="ilkadim-breaking-ticker bg-gray-100 dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 overflow-hidden relative h-10 flex items-center">
+        <div class="container mx-auto max-w-[1280px] px-4 flex items-center">
+            <span class="bg-red-700 text-white text-[10px] font-bold px-3 py-1 mr-4 whitespace-nowrap">Son Dakika</span>
+            <div class="relative w-full h-10 overflow-hidden">
+                <div class="absolute whitespace-nowrap animate-marquee flex items-center h-full">
+                                            <a href="https://samsunilkhaber.com.tr/nenad-bjelica-galibiyeti-hak-eden-taraf-oldugumuzu-soyleyebilirim" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Nenad Bjelica: &quot;Galibiyeti hak eden taraf olduğumuzu söyleyebilirim&quot;</a>
+                                            <a href="https://samsunilkhaber.com.tr/samsunda-otomobil-bariyeerlere-carpti-3-yarali" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Samsun’da Otomobil Bariyerlere Çarptı: 3 Yaralı</a>
+                                            <a href="https://samsunilkhaber.com.tr/samsunspor-galatasaray-deplasmanindan-puansiz-dondu-2-1" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Samsunspor Galatasaray Deplasmanından Puansız Döndü: 2-1</a>
+                                            <a href="https://samsunilkhaber.com.tr/rizede-degirmendere-kirmizi-akti" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Rize&#039;de Değirmendere Kırmızı Aktı</a>
+                                            <a href="https://samsunilkhaber.com.tr/samsunspor-galatasaray-deplasmaninda-ilk-yariyi-1-0-geride-tamamladi" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Samsunspor, Galatasaray Deplasmanında İlk Yarıyı 1-0 Geride Tamamladı</a>
+                                            <a href="https://samsunilkhaber.com.tr/galatasarayda-5-degisiklik" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Galatasaray&#039;da 5 Değişiklik</a>
+                                            <a href="https://samsunilkhaber.com.tr/samsun-ile-sumqayit-arasindaki-kardeslik-baglari-gucleniyor" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Samsun ile Sumqayıt Arasındaki Kardeşlik Bağları Güçleniyor</a>
+                                            <a href="https://samsunilkhaber.com.tr/14-aracin-karistigi-trafik-kazasi-ilk-belirlemelere-gore-15-yarali" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• 14 Aracın Karıştığı Trafik Kazası: İlk Belirlemelere Göre 15 Yaralı</a>
+                                            <a href="https://samsunilkhaber.com.tr/oruc-reis-pakistan-aciklarinda-sismik-arastirma-calismalarina-basladi" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• Oruç Reis, Pakistan Açıklarında Sismik Araştırma Çalışmalarına Başladı</a>
+                                            <a href="https://samsunilkhaber.com.tr/ilk-yardim-ve-bagimlilikla-mucadele-egitimi" class="text-[13px] font-semibold text-gray-800 dark:text-slate-200 hover:text-red-700 dark:hover:text-red-400 mx-4">• İlk Yardım Ve Bağımlılıkla Mücadele Eğitimi</a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+    </style>
+    
+    <!-- Main Content -->
+    <main class="ilkadim-page-shell flex-grow relative dark:bg-slate-950">
+        <!-- Sticky Side Banners -->
+                    <div class="hidden lg:block fixed left-4 top-1/4 z-50 pointer-events-auto max-w-[120px] 2xl:max-w-none">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194078404210111"
+     crossorigin="anonymous"></script>
+            </div>
+                            <div class="hidden lg:block fixed right-4 top-1/4 z-50 pointer-events-auto max-w-[120px] 2xl:max-w-none">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194078404210111"
+     crossorigin="anonymous"></script>
+            </div>
+                
+        <main class="container mx-auto max-w-[1280px] px-0 md:px-4 py-4">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 px-4 md:px-0">
+        <!-- Content -->
+        <article class="lg:col-span-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg p-6 md:p-8 shadow-sm" x-data="{ fontSize: localStorage.getItem('fontSize') || 'font-normal' }">
+            <header class="mb-6">
+                <!-- Başlık Üstü Reklam -->
+                                    <div class="mb-4 flex justify-center"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194078404210111"
+     crossorigin="anonymous"></script></div>
+                
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                    <a href="https://samsunilkhaber.com.tr/kategori/siyaset" class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded hover:opacity-90">
+                        SIYASET
+                    </a>
+                    <span class="text-gray-500 text-xs">25 Ekim 2026 - 13:24</span>
+                    <!-- Reading Time -->
+                    <span class="bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+                        <span class="material-icons text-sm">schedule</span>
+                        5 dk okuma
+                    </span>
+                    <!-- Author Display -->
+                                            <span class="bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs font-bold px-2 py-1 rounded flex items-center gap-1 uppercase">
+                            EDİTÖR: MEHMET EMİN COŞKUNDERE
+                        </span>
+                                    </div>
+                
+
+                <h1 class="text-2xl md:text-4xl font-black text-gray-900 dark:text-white leading-tight mb-4">
+                    Yeni Parti Samsun İl Kongresinde Tüzük Tartışması
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-gray-300 font-medium leading-relaxed">
+                    Yeni Parti Samsun 1. Olağan İl Kongresi’nde parti üyeleri, delegeler ve yöneticiler bir araya gelirken, konuşmalarda parti içi demokrasi ve üye iradesi vurgusu öne çıktı. Kongrede söz almak isteyen bir parti üyesi ile divan arasında tüzük ve genel kurulda konuşma hakkı konusunda tartışma yaşandı.
+                </p>
+            </header>
+
+            <!-- Toolbar: Font Size + Print -->
+            <div class="flex items-center justify-between mb-4 p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg no-print">
+                <div class="flex items-center gap-2">
+                    <span class="text-xs font-bold text-gray-500 uppercase">Yazı Boyutu:</span>
+                    <button @click="fontSize = 'font-small'; localStorage.setItem('fontSize', 'font-small')" 
+                            :class="fontSize === 'font-small' ? 'bg-red-600 text-white' : 'bg-gray-200 text-gray-700 dark:bg-gray-600 dark:text-gray-300'"
+                            class="w-8 h-8 rounded font-bold text-sm transition">A-</button>
+                    <button @click="fontSize = 'font-normal'; localStorage.setItem('fontSize', 'font-normal')" 
+                            :class="fontSize === 'font-normal' ? 'bg-red-600 text-white' : 'bg-gray-200 text-gray-700 dark:bg-gray-600 dark:text-gray-300'"
+                            class="w-8 h-8 rounded font-bold text-sm transition">A</button>
+                    <button @click="fontSize = 'font-large'; localStorage.setItem('fontSize', 'font-large')" 
+                            :class="fontSize === 'font-large' ? 'bg-red-600 text-white' : 'bg-gray-200 text-gray-700 dark:bg-gray-600 dark:text-gray-300'"
+                            class="w-8 h-8 rounded font-bold text-sm transition">A+</button>
+                </div>
+                <button onclick="window.print()" class="flex items-center gap-1 px-3 py-2 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded hover:bg-gray-300 dark:hover:bg-gray-500 transition text-sm font-bold">
+                    <span class="material-icons text-sm">print</span>
+                    Yazdır
+                </button>
+            </div>
+            
+                                        <div class="mb-6 rounded-lg overflow-hidden max-h-[500px]" style="">
+            <img
+                src="/storage/uploads/01M5S9DD0MVEW8K8A32FS1XS5C.jpg"
+                alt="Yeni Parti Samsun İl Kongresinde Tüzük Tartışması"
+                class="block h-full w-full object-cover"
+                style=""
+            >
+        </div>
+                
+            <div class="article-content prose dark:prose-invert max-w-none text-gray-800 dark:text-gray-200" :class="fontSize">
+                                                                                                            <div class="mb-4"><p>Yeni Parti Samsun 1. Olağan İl Kongresi, 25 Ekim 2026 tarihinde parti il binasında gerçekleştirildi. Ön seçim sürecinin ardından yapılan kongrede il başkanlığı ve yeni yönetimin belirlenmesi için yasal süreç başlatılırken, oy kullanma işleminin saat 17.00’ye kadar devam edeceği belirtildi.</p><p>&nbsp;</p><h2><strong>ÖZDAĞ: “ÜYELERİMİZİN İRADESİNİ TESCİL EDİYORUZ”</strong></h2><p>&nbsp;</p><p>Kongrenin açılışında konuşan Yeni Parti Samsun Kurucu İl Başkanı Mehmet Özdağ, parti üyelerinin ilçe başkanlarını, il başkanlarını ve genel başkanı seçmesini öngören ön seçim uygulamasına değindi. Siyasi Partiler Kanunu gereği belirli sayının üzerinde üyesi bulunan ilçelerde ve illerde delege seçimlerinin yapılması gerektiğini belirten Özdağ, Atakum, İlkadım, Tekkeköy, Çarşamba ve Bafra’da üyelerin katılımıyla ön seçim gerçekleştirildiğini söyledi. Yasal kongre sürecinin yürütüldüğünü ifade eden Özdağ, katılımın beklediklerinden yüksek olması nedeniyle salonun konfor şartlarının yeterli olmadığını belirterek katılımcılardan özür diledi.</p><p>&nbsp;</p><p><br></p></div>
+                                                                                                <figure class="my-6">
+                                <div class="rounded-lg shadow-md overflow-hidden w-full" style="">
+            <img
+                src="/storage/uploads/01M5S9DD0ECTXDXD50QV130DR2.jpg"
+                alt=""
+                class="block h-full w-full object-contain"
+                style=""
+            >
+        </div>
+                                                                </figure>
+                                                                                                <div class="mb-4"><h2><strong>KARAGÖZ: “BİRLİKTE HAREKET ETMELİYİZ”</strong></h2><p>&nbsp;</p><p>Kongre divan başkanlığını üstlenen Yeni Parti Kurucu Amasya Milletvekili Reşat Karagöz, Samsun’daki karşılamadan dolayı teşekkür ederek Genel Başkan Özgür Özel’in selamlarını iletti. Cumhuriyet Halk Partisi’nden ayrılmanın kolay olmadığını söyleyen Karagöz, yaşanan siyasi gelişmelerin ardından yeni bir siyasi yol oluşturduklarını ifade etti. Yeni Parti’nin 91 milletvekiliyle kurulduğunu belirten Karagöz, yaptırılan anketlerde partinin Türkiye genelinde ilk sırada yer aldığını öne sürdü. Karagöz, vatandaşların ekonomik sıkıntılarına da değinerek emeklilerin, asgari ücretlilerin, gençlerin ve çalışanların geleceğe ilişkin kaygılar yaşadığını söyledi. Partililere birlik ve beraberlik çağrısında bulunan Karagöz, önümüzdeki seçimlerde iktidar olmayı hedeflediklerini dile getirdi.</p><p>&nbsp;</p><p><br></p><p><br></p></div>
+                                                                                                <figure class="my-6">
+                                <div class="rounded-lg shadow-md overflow-hidden w-full" style="">
+            <img
+                src="/storage/uploads/01M5S9DD0GYGEY6SFRMF73ZFBM.jpg"
+                alt=""
+                class="block h-full w-full object-contain"
+                style=""
+            >
+        </div>
+                                                                </figure>
+                                                                                                <div class="mb-4"><h2><strong>MURAT ÇAN: “SİYASET MAKAM ELDE ETMEK İÇİN YAPILMAMALI”</strong></h2><p>&nbsp;</p><p>Yeni Parti Samsun Milletvekili Opr. Dr. Murat Çan ise konuşmasında partinin kuruluş sürecine ve üye iradesine dikkat çekti. Yeni Parti’nin farklı siyasi görüşlerden vatandaşların katkılarıyla kurulduğunu belirten Çan, siyasetin makam elde etmek için değil, vatandaşların sorunlarına çözüm üretmek amacıyla yapılması gerektiğini söyledi. Çan, partinin kuruluş sürecinde milliyetçi demokratlar, merkez demokratlar, muhafazakâr demokratlar ve sosyal demokratlar başta olmak üzere farklı kesimlerden kişilerin yer aldığını ifade etti. Partinin vatandaşlara verdiği sözleri hatırlatan Çan, özgür ve adil bir Türkiye, demokrasinin yeniden güçlendirilmesi, üretim ve refahın artırılması ile güçlü ve güvenli bir ülke hedeflerini sıraladı. Makamların kişisel çıkar aracı değil, emanet olarak görülmesi gerektiğini vurgulayan Çan, yöneticilerin vatandaşların sorunlarına odaklanması çağrısında bulundu. Ön seçim sonuçlarına ilişkin de konuşan Çan, yaklaşık 8 bin üyenin oy kullandığını ve adaylar arasında yaklaşık 200 oy farkı bulunduğunu söyledi. Üyelerin tercihlerinin dikkate alınması gerektiğini belirten Çan, yeni yönetimin uzlaşma içinde çalışarak partiyi gelecek seçimlere hazırlaması gerektiğini kaydetti.</p><p>&nbsp;</p><p><br></p></div>
+                                                                                                <figure class="my-6">
+                                <div class="rounded-lg shadow-md overflow-hidden w-full" style="">
+            <img
+                src="/storage/uploads/01M5S9DD0H8XWVE3RB7ETB26HV.jpg"
+                alt=""
+                class="block h-full w-full object-contain"
+                style=""
+            >
+        </div>
+                                                                </figure>
+                                                                                                <div class="mb-4"><h2><strong>KONGREDE TÜZÜK TARTIŞMASI YAŞANDI</strong></h2><p>&nbsp;</p><p>Kongrenin ilerleyen bölümünde söz almak isteyen bir parti üyesi ile divan arasında tüzük değişiklikleri ve genel kurulda konuşma hakkı konusunda tartışma çıktı. Tüzükle ilgili itirazları bulunduğunu söyleyen üye, değişikliklere ilişkin görüşlerini daha önce il başkanlığına, ilçe başkanlarına ve genel merkeze ilettiğini belirtti. Genel kurulda konuşmak istediğini dile getiren üye, tüzüğün incelenmesi ve itirazlarının değerlendirilmesi gerektiğini savundu. Divan üyeleri ise konunun inceleneceğini ve iletilen taleplerin genel merkeze aktarılabileceğini ifade etti. Tartışma sırasında söz hakkı konusunda karşılıklı konuşmalar yaşandı. Parti üyesi, adayların ve yönetim kurullarının belirlenmesinde seçim yapılmasının gerekliliğini de sorgulayarak, “Üye olan arkadaşlar veyahut da bir yere aday olan arkadaşların seçime gerek yok. Üç adaya yönetim kurulu, denetim kurulu her şeyi bölüştürün, niye seçim yapıyoruz?” sözleriyle tepkisini dile getirdi. Kongrede yaşanan tartışmanın ardından gündem ve seçim sürecinin devam etmesi beklenirken, il başkanlığı ve yeni yönetimin belirlenmesine ilişkin işlemlerin delegelerin oylarıyla tamamlanacağı bildirildi.</p><p>&nbsp;</p><p><br></p><p><br></p></div>
+                                                                                                <figure class="my-6">
+                                <div class="rounded-lg shadow-md overflow-hidden w-full" style="">
+            <img
+                src="/storage/uploads/01M5S9DD0JV2Q25HPG5MSP4XQH.jpg"
+                alt=""
+                class="block h-full w-full object-contain"
+                style=""
+            >
+        </div>
+                                                                </figure>
+                                                                                                <div class="mb-4"><p>Öte yandan oy kullanma işlemi saat 17:00'e kadar devam edecek.</p><p><br></p><p><br></p></div>
+                                                                                                <figure class="my-6">
+                                <div class="rounded-lg shadow-md overflow-hidden w-full" style="">
+            <img
+                src="/storage/uploads/01M5S9DD0K90KTH9CRGXFQPA0X.jpg"
+                alt=""
+                class="block h-full w-full object-contain"
+                style=""
+            >
+        </div>
+                                                                </figure>
+                                                                                                <div class="mb-4"><p><strong>MUHABİR: RUTKAY İSMAİL KOCA</strong></p></div>
+                                                                        </div>
+
+            
+            
+            <script>
+            // Sayfa yüklendiğinde SADECE dosya ismi + boyutu içeren caption linklerini sil
+            document.addEventListener('DOMContentLoaded', function() {
+                const articleContent = document.querySelector('.article-content');
+                if (articleContent) {
+                    const allLinks = articleContent.querySelectorAll('a');
+                    allLinks.forEach(link => {
+                        const linkText = link.textContent.trim();
+                        // Eğer link SADECE dosya ismi ve KB/MB içeriyorsa sil (başka metinleri koru)
+                        const isFileInfo = /^[a-zA-Z0-9_\-\.\(\)\s]+\d+(\.\d+)?\s*(KB|MB|GB)$/i.test(linkText);
+                        if (isFileInfo && !link.querySelector('img')) {
+                            link.remove();
+                        }
+                    });
+                }
+            });
+            </script>
+
+            <!-- Tags -->
+                        <div class="mt-6 pt-4 border-t border-gray-100 dark:border-gray-700">
+                <div class="flex flex-wrap gap-2">
+                                        <a href="https://samsunilkhaber.com.tr/etiket/siyaset" class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-bold rounded-full hover:bg-red-600 hover:text-white transition">
+                        #Siyaset
+                    </a>
+                                        <a href="https://samsunilkhaber.com.tr/etiket/samsun" class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-bold rounded-full hover:bg-red-600 hover:text-white transition">
+                        #Samsun
+                    </a>
+                                        <a href="https://samsunilkhaber.com.tr/etiket/samsun-haber" class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-bold rounded-full hover:bg-red-600 hover:text-white transition">
+                        #samsun haber
+                    </a>
+                                        <a href="https://samsunilkhaber.com.tr/etiket/yeni-parti" class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-bold rounded-full hover:bg-red-600 hover:text-white transition">
+                        #Yeni PARTİ
+                    </a>
+                                    </div>
+            </div>
+            
+            <!-- Social Share Bar -->
+            <div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700 no-print">
+                <div class="flex flex-wrap items-center justify-between gap-4">
+                    <span class="text-sm font-bold text-gray-900 dark:text-white">Bu haberi paylaş:</span>
+                    <div class="flex gap-2" x-data="{ copied: false }">
+                        <button @click="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'width=600,height=400')" 
+                                class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button @click="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('Yeni Parti Samsun İl Kongresinde Tüzük Tartışması'), '_blank', 'width=600,height=400')" 
+                                class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition" title="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </button>
+                        <button @click="if(navigator.share) { navigator.share({ title: 'Yeni Parti Samsun İl Kongresinde Tüzük Tartışması', url: window.location.href }); } else { window.open('https://www.instagram.com/', '_blank'); }" 
+                                class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 text-white flex items-center justify-center hover:opacity-90 transition" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                        <button @click="window.open('https://wa.me/?text=' + encodeURIComponent('Yeni Parti Samsun İl Kongresinde Tüzük Tartışması ' + window.location.href), '_blank')" 
+                                class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center hover:bg-green-600 transition" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button @click="window.open('https://t.me/share/url?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('Yeni Parti Samsun İl Kongresinde Tüzük Tartışması'), '_blank', 'width=600,height=400')" 
+                                class="w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center hover:bg-sky-600 transition" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </button>
+                        <button @click="window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent('Yeni Parti Samsun İl Kongresinde Tüzük Tartışması'), '_blank', 'width=600,height=400')" 
+                                class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center hover:bg-blue-800 transition" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+                        <button @click="navigator.clipboard.writeText(window.location.href); copied = true; setTimeout(() => copied = false, 2000)" 
+                                class="w-10 h-10 rounded-full bg-gray-600 text-white flex items-center justify-center hover:bg-gray-700 transition relative" title="Linki Kopyala">
+                            <span class="material-icons text-sm" x-show="!copied">link</span>
+                            <span class="material-icons text-sm text-green-400" x-show="copied" x-cloak>check</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="mt-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg p-6 md:p-8 shadow-sm no-print"
+                 x-data="{ 
+                    comments: [],
+                    newName: '',
+                    newEmail: '',
+                    newText: '',
+                    submitting: false,
+                    newsId: 19486,
+                    showSuccess: false,
+                    async init() {
+                        this.fetchComments();
+                    },
+                    async fetchComments() {
+                        try {
+                            const response = await fetch(`/api/comments/${this.newsId}`);
+                            this.comments = await response.json();
+                        } catch (error) {
+                            console.error('Comments fetch error:', error);
+                        }
+                    },
+                    async submitComment() {
+                        if(!this.newName || !this.newText) return;
+                        this.submitting = true;
+                        this.showSuccess = false;
+                        
+                        try {
+                            const response = await fetch('/api/comments', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'X-CSRF-TOKEN': 'EZsaeClcCEz1ibLhGWTEVT12d9jNOvaKz1aZyKfB'
+                                },
+                                body: JSON.stringify({
+                                    content_id: this.newsId,
+                                    name: this.newName,
+                                    email: this.newEmail,
+                                    text: this.newText
+                                })
+                            });
+
+                            if (response.ok) {
+                                this.showSuccess = true;
+                                this.newName = '';
+                                this.newEmail = '';
+                                this.newText = '';
+                                // We don't push to comments array because it needs approval
+                            } else {
+                                const data = await response.json();
+                                alert(data.message || 'Bir hata oluştu.');
+                            }
+                        } catch (error) {
+                            console.error('Comment submit error:', error);
+                            alert('Sistem hatası oluştu.');
+                        } finally {
+                            this.submitting = false;
+                        }
+                    }
+                }">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                    <span class="material-icons">chat_bubble</span>
+                    Yorumlar <span class="bg-gray-100 dark:bg-gray-800 text-red-600 text-xs px-2 py-0.5 rounded-full" x-text="comments.length">0</span>
+                </h3>
+
+                <!-- Success Message -->
+                <div x-show="showSuccess" x-cloak class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+                    <strong class="font-bold">Teşekkürler!</strong>
+                    <span class="block sm:inline">Yorumunuz başarıyla gönderildi ve yönetici onayı bekliyor.</span>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-gray-50 dark:bg-gray-700/50 p-6 rounded-lg mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Ad Soyad</label>
+                            <input type="text" x-model="newName" placeholder="Adınız Soyadınız" class="w-full rounded border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500 focus:border-red-600 focus:ring-red-600 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">E-posta</label>
+                            <input type="email" x-model="newEmail" placeholder="E-posta adresiniz (Yayınlanmaz)" class="w-full rounded border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500 focus:border-red-600 focus:ring-red-600 text-sm">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">İçerik</label>
+                        <textarea x-model="newText" rows="3" placeholder="Yorumunuzu buraya yazın..." class="w-full rounded border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500 focus:border-red-600 focus:ring-red-600 text-sm"></textarea>
+                    </div>
+                    <button @click="submitComment()" :disabled="submitting" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded transition text-sm disabled:opacity-50">
+                        <span x-text="submitting ? 'Gönderiliyor...' : 'Yorum Yap'"></span>
+                    </button>
+                </div>
+
+                <!-- List -->
+                <div class="space-y-6">
+                    <template x-for="comment in comments" :key="comment.id">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500 dark:text-gray-400 shrink-0" x-text="comment.name.charAt(0).toUpperCase()"></div>
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="font-bold text-gray-900 dark:text-white text-sm" x-text="comment.name"></span>
+                                    <span class="text-xs text-gray-500" x-text="new Date(comment.created_at).toLocaleDateString('tr-TR')"></span>
+                                </div>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed" x-text="comment.comment"></p>
+                            </div>
+                        </div>
+                    </template>
+                    <div x-show="comments.length === 0" class="text-center text-gray-500 dark:text-gray-400 py-4 text-sm">
+                        İlk yorumu siz yapın!
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-4 space-y-8 no-print">
+            <!-- Related News -->
+            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 shadow-sm">
+                <h3 class="font-bold text-lg mb-4 text-gray-900 dark:text-white flex items-center gap-2">
+                    <span class="material-icons text-red-600">recommend</span>
+                    İlgili Haberler
+                </h3>
+                <ul class="space-y-4">
+                                       <li class="flex gap-3 group cursor-pointer">
+                         <a href="https://samsunilkhaber.com.tr/chpde-buyuksehir-depremi-14-belediyeden-geriye-4u-kaldi" class="flex gap-3 w-full">
+                            <div class="w-20 h-20 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
+                                <img src="/storage/uploads/01M7W8ZVM0AHMJ4QDW75PX2AZC.png" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 leading-snug group-hover:text-red-600 transition line-clamp-3">
+                                    CHP’de Büyükşehir Depremi! 14 Belediyeden Geriye 4’ü Kaldı
+                                </h4>
+                                <span class="text-[10px] text-gray-500">Siyaset</span>
+                            </div>
+                        </a>
+                    </li>
+                                       <li class="flex gap-3 group cursor-pointer">
+                         <a href="https://samsunilkhaber.com.tr/ozdagdan-sozcu-tvye-kayyum-atanmasina-tepki-dokunmaya-devam-edecegiz" class="flex gap-3 w-full">
+                            <div class="w-20 h-20 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
+                                <img src="/storage/uploads/01M7MPB72JGW09MGPPWHAAMWKK.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 leading-snug group-hover:text-red-600 transition line-clamp-3">
+                                    Özdağ’dan Sözcü TV’ye Kayyum Atanmasına Tepki: &quot;Dokunmaya Devam Edeceğiz&quot;
+                                </h4>
+                                <span class="text-[10px] text-gray-500">Siyaset</span>
+                            </div>
+                        </a>
+                    </li>
+                                       <li class="flex gap-3 group cursor-pointer">
+                         <a href="https://samsunilkhaber.com.tr/arman-uney-parti-meclis-uyeligine-secildi" class="flex gap-3 w-full">
+                            <div class="w-20 h-20 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
+                                <img src="/storage/uploads/01M7JC59EBZN9RFVW9SAYTV9YD.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 leading-snug group-hover:text-red-600 transition line-clamp-3">
+                                    Arman Üney, Parti Meclis Üyeliğine Seçildi
+                                </h4>
+                                <span class="text-[10px] text-gray-500">Siyaset</span>
+                            </div>
+                        </a>
+                    </li>
+                                       <li class="flex gap-3 group cursor-pointer">
+                         <a href="https://samsunilkhaber.com.tr/samsun-milletvekili-karamandan-butcede-bagimlilikla-mucadele-elestirisi" class="flex gap-3 w-full">
+                            <div class="w-20 h-20 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
+                                <img src="/storage/uploads/01M79YV4BG9K4XPZQJXMYNX0DV.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 leading-snug group-hover:text-red-600 transition line-clamp-3">
+                                    Samsun Milletvekili Karaman&#039;dan Bütçede &quot;Bağımlılıkla Mücadele&quot; Eleştirisi
+                                </h4>
+                                <span class="text-[10px] text-gray-500">Siyaset</span>
+                            </div>
+                        </a>
+                    </li>
+                                       <li class="flex gap-3 group cursor-pointer">
+                         <a href="https://samsunilkhaber.com.tr/saadet-partisi-milletvekili-mehmet-karamandan-sabah-kusagi-programlarina-tepki" class="flex gap-3 w-full">
+                            <div class="w-20 h-20 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
+                                <img src="/storage/uploads/01M72KRFJYHMKVXCJDAPAHBFKH.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 leading-snug group-hover:text-red-600 transition line-clamp-3">
+                                    Saadet Partisi Milletvekili Mehmet Karaman&#039;dan Sabah Kuşağı Programlarına Tepki!
+                                </h4>
+                                <span class="text-[10px] text-gray-500">Siyaset</span>
+                            </div>
+                        </a>
+                    </li>
+                                       <li class="flex gap-3 group cursor-pointer">
+                         <a href="https://samsunilkhaber.com.tr/alperen-carus-ocalana-fiili-ozgurluk-saglayanlar-hakkinda-suc-duyurusunda-bulunacagiz" class="flex gap-3 w-full">
+                            <div class="w-20 h-20 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
+                                <img src="/storage/uploads/01M6RFTZ4VSMT5VYBW9MXGBWR8.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gray-800 dark:text-gray-200 leading-snug group-hover:text-red-600 transition line-clamp-3">
+                                    Alperen Carus: “Öcalan’a Fiili Özgürlük Sağlayanlar Hakkında Suç Duyurusunda Bulunacağız”
+                                </h4>
+                                <span class="text-[10px] text-gray-500">Siyaset</span>
+                            </div>
+                        </a>
+                    </li>
+                                   </ul>
+            </div>
+            
+            <!-- Sidebar Ad -->
+                            <div class="flex justify-center">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194078404210111"
+     crossorigin="anonymous"></script>
+                </div>
+            
+            
+                    </aside>
+    </div>
+</main>
+
+<!-- Floating Share Bar (Mobile) -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 p-3 flex justify-around items-center lg:hidden z-40 no-print">
+    <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" class="flex flex-col items-center text-blue-600">
+        <i class="fab fa-facebook-f text-xl"></i>
+        <span class="text-[10px] mt-1">Facebook</span>
+    </button>
+    <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href), '_blank')" class="flex flex-col items-center text-gray-900 dark:text-white">
+        <i class="fa-brands fa-x-twitter text-xl"></i>
+        <span class="text-[10px] mt-1">X</span>
+    </button>
+    <button onclick="if(navigator.share) { navigator.share({ title: 'Yeni Parti Samsun İl Kongresinde Tüzük Tartışması', url: window.location.href }); } else { window.open('https://www.instagram.com/', '_blank'); }" class="flex flex-col items-center text-purple-600">
+        <i class="fab fa-instagram text-xl"></i>
+        <span class="text-[10px] mt-1">Instagram</span>
+    </button>
+    <button onclick="window.open('https://wa.me/?text=' + encodeURIComponent(window.location.href), '_blank')" class="flex flex-col items-center text-green-500">
+        <i class="fab fa-whatsapp text-xl"></i>
+        <span class="text-[10px] mt-1">WhatsApp</span>
+    </button>
+    <button onclick="navigator.clipboard.writeText(window.location.href); alert('Link kopyalandı!')" class="flex flex-col items-center text-gray-600 dark:text-gray-400">
+        <span class="material-icons text-xl">link</span>
+        <span class="text-[10px] mt-1">Linki Kopyala</span>
+    </button>
+</div>
+    </main>
+
+    <!-- FOOTER AREA -->
+    <footer class="mt-12 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 pt-10 pb-0">
+        <div class="container mx-auto max-w-[1280px] px-4 flex flex-col items-center">
+            
+            
+            <!-- REKLAM 7: Sosyal Medya Üstü -->
+            
+            <!-- Social Icons (Top Center) -->
+            <div class="flex items-center gap-2 mb-8">
+                
+                                    <a href="https://www.facebook.com/Samsunilkhaber" target="_blank" class="w-9 h-9 rounded-full border border-blue-600 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                
+                                    <a href="https://x.com/samsun61201" target="_blank" class="w-9 h-9 rounded-full border border-gray-900 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+                
+                                    <a href="#" class="w-9 h-9 rounded-full border border-pink-600 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-colors opacity-50"><i class="fab fa-instagram"></i></a>
+                                
+                                    <a href="https://youtube.com/samsunilkhaber" target="_blank" class="w-9 h-9 rounded-full border border-red-600 text-red-600 flex items-center justify-center hover:bg-red-600 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                
+                                    <a href="https://wa.me/05467122222" target="_blank" class="w-9 h-9 rounded-full border border-green-500 text-green-500 flex items-center justify-center hover:bg-green-500 hover:text-white transition-colors"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+
+            <!-- Footer Description -->
+            <div class="max-w-4xl text-center text-xs text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
+                <p>
+                    Samsun İlk Haber, Samsun ve ilçelerinde yaşanan en güncel gelişmeleri tarafsız habercilik ilkesiyle okuyucularına sunar. Son dakika Samsun haberleri, İlkadım, Atakum, Canik, Tekkeköy ve diğer tüm ilçelerdeki olayları anında takip edebilirsiniz. Ekonomi, siyaset, spor, sağlık ve kültür-sanat kategorilerinde özenle hazırlanmış haber içeriklerine ulaşabilirsiniz.
+                </p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="w-full max-w-md mb-8" x-data="{ email: '', loading: false, message: '', success: false }">
+                <h4 class="text-sm font-bold text-center mb-3">Bülten Aboneleri</h4>
+                <p class="text-xs text-center text-gray-500 mb-4">Gelişmelerden anında haberdar olmak için bültenimize abone olun.</p>
+                
+                                    <div class="text-center">
+                        <button @click="window.location.href='https://samsunilkhaber.com.tr/giris'" 
+                                class="w-full px-6 py-2 bg-red-600 text-white text-xs font-bold rounded hover:bg-red-700 transition">
+                            Abone Ol
+                        </button>
+                        <p class="text-[10px] text-gray-400 mt-2">Abone olmak için giriş yapmanız gerekmektedir.</p>
+                    </div>
+                            </div>
+
+            <!-- Quick Links Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 w-full max-w-5xl mb-12 text-sm">
+                <div class="space-y-3">
+                    <h4 class="font-black text-gray-900 dark:text-white uppercase text-xs mb-4">Kurumsal</h4>
+                    <a href="/hakkimizda" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-red-600 transition">Hakkımızda</a>
+                    <a href="/kunye" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-red-600 transition">Künye</a>
+                    <a href="/yayin-ilkeleri" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-red-600 transition">Yayın İlkeleri</a>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-black text-gray-900 dark:text-white uppercase text-xs mb-4">Gizlilik</h4>
+                    <a href="/gizlilik-politikasi" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-red-600 transition">Gizlilik Politikası</a>
+                    <a href="/kvkk" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-red-600 transition">KVKK Aydınlatma</a>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-black text-gray-900 dark:text-white uppercase text-xs mb-4">İletişim</h4>
+                    <a href="/iletisim" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-red-600 transition">İletişim</a>
+                    <a href="/duyurular" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-red-600 transition">Duyurular</a>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="font-black text-gray-900 dark:text-white uppercase text-xs mb-4">Bizi Takip Edin</h4>
+                    <a href="https://samsunilkhaber.com.tr/rss" class="flex items-center gap-2 text-orange-500 hover:text-orange-600 font-bold transition">RSS Takibi</a>
+                </div>
+            </div>
+
+            <!-- Mobile App Links -->
+            <div class="flex flex-col items-center mb-10 w-full">
+                <h4 class="font-black text-gray-900 dark:text-white uppercase text-xs mb-4">Mobil Uygulamalarımız</h4>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <!-- Google Play -->
+                    <a href="#" target="_blank" class="flex items-center gap-3 px-5 py-3 bg-gray-900 hover:bg-red-600 text-white rounded-xl transition-all duration-300 group shadow-lg">
+                        <svg class="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.37,13.07L17.82,16.13L15.39,13.7L17.82,11.27L20.37,14.33C20.48,13.93 20.48,13.46 20.37,13.07M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg>
+                        <div class="flex flex-col items-start leading-none">
+                            <span class="text-[10px] uppercase font-medium text-gray-400 group-hover:text-gray-100">İNDİRİN</span>
+                            <span class="text-sm font-bold">Google Play</span>
+                        </div>
+                    </a>
+
+                    <!-- App Store -->
+                    <a href="#" target="_blank" class="flex items-center gap-3 px-5 py-3 bg-gray-900 hover:bg-red-600 text-white rounded-xl transition-all duration-300 group shadow-lg">
+                        <svg class="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.24 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08ZM12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25Z" />
+                        </svg>
+                        <div class="flex flex-col items-start leading-none">
+                            <span class="text-[10px] uppercase font-medium text-gray-400 group-hover:text-gray-100">İNDİRİN</span>
+                            <span class="text-sm font-bold">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="bg-gray-100 text-gray-700 dark:bg-[#1e293b] dark:text-white py-4">
+            <div class="container mx-auto max-w-[1280px] px-4 flex flex-col md:flex-row justify-between items-center text-xs gap-2">
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-400">Copyright © 2026. Her hakkı saklıdır.</span>
+                </div>
+            </div>
+            <div class="flex w-full items-center justify-center gap-2 translate-y-[1px] md:mr-12 md:w-auto md:justify-end">
+                <span class="text-[10px] text-gray-500 dark:text-gray-400">
+                    Created by
+                </span>
+            
+                <a href="https://softartstudios.com/?utm_source=newsflow&utm_medium=footer&utm_campaign=softart"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="SoftArt Studios"
+                   class="flex h-[21px] w-[140px] items-center justify-center overflow-hidden sm:w-[160px]">
+            
+                    
+                    <img src="/logos/softart-black.png"
+                         alt="SoftArt Studios"
+                         class="block h-auto w-full object-contain dark:hidden">
+            
+                    
+                    <img src="/logos/softart.png"
+                         alt="SoftArt Studios"
+                         class="hidden h-auto w-[300px] max-w-none dark:block">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    
+    
+    <!-- Cookie Consent Banner -->
+    <div x-show="!cookieConsent" x-cloak
+         class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 shadow-2xl border-t-4 border-red-600">
+        <div class="container mx-auto max-w-[1280px] px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-start gap-3">
+                <span class="material-icons text-2xl text-yellow-400">cookie</span>
+                <div>
+                    <h4 class="font-bold text-sm">Çerez Kullanımı</h4>
+                    <p class="text-xs text-gray-300 mt-1">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Siteyi kullanmaya devam ederek <a href="https://samsunilkhaber.com.tr/sayfa/gizlilik-politikasi" class="text-red-400 underline hover:text-red-300">Gizlilik Politikamızı</a> ve <a href="https://samsunilkhaber.com.tr/sayfa/cerez-politikasi" class="text-red-400 underline hover:text-red-300">Çerez Politikamızı</a> kabul etmiş olursunuz.</p>
+                </div>
+            </div>
+            <div class="flex gap-2 flex-shrink-0">
+                <button @click="cookieConsent = true; localStorage.setItem('cookieConsent', 'true')"
+                        class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-bold text-sm rounded transition">
+                    Kabul Et
+                </button>
+                <button @click="cookieConsent = true; localStorage.setItem('cookieConsent', 'true')"
+                        class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white font-bold text-sm rounded transition">
+                    Kapat
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" 
+            class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-red-600 hover:bg-black text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 opacity-0 invisible translate-y-4 group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+        <span class="absolute -top-8 right-0 text-[10px] font-bold text-gray-500 whitespace-nowrap opacity-0 group-hover:opacity-100 transition">BAŞA DÖN</span>
+    </button>
+
+    <script>
+        // Scroll to top functionality
+        (function() {
+            const scrollBtn = document.getElementById('scroll-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    scrollBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                    scrollBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+                } else {
+                    scrollBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                    scrollBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                }
+            });
+            
+            scrollBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        })();
+    </script>
+
+    </body>
+</html>
