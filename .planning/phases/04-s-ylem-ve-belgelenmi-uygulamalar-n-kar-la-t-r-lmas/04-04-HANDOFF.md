@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 20:57 UTC — daha güncel durum
+
+Barınma grup önerisine ait 7 Ağustos ham TBMM tutanağı özgün SHA `38d374df7534834cb6fae4b8937f225bcf055c094859881ebea38a416810be78`, kaynak kayıt ve iki pasaj `9b11f9a`; grup önerisinin öne alınması reddedildi, asıl araştırma önergesinin nihai sonucuna ilişkin çıkarım yok. Bu kaynağı ulusal taslağa ekleyen `package-housing-draft.json` SHA `fa0984a15aa564ba6c400bb2d72456a4a6b1220874a8398e433f32e51c16e4`, review SHA `3695ffaed1206daaf984913172a1467099b52855e5090f9374dbcefa5c980632` commit `7bbc1a4`. İzole staging `practice-check` PID 743981/session 31126 çalışıyor; gerçek çıkışı beklenmeli. Önceki dört süreç aşağıdaki gibidir. Stage ve dört source/preview süreci kendi özgün girdi SHA'larına bağlı; canlı paket güncellemesi bu girdileri değiştirmedi.
+
+2/3895 fon teklifinin gerçek TBMM kayıt baytı ve taslak kayıtları `343723c`; diğer 2/3939 teklifinden ayrı. Uşak ön seçim olayı ve review içeren daha geniş taslak `package-usak-draft.json` SHA `17e452bb1bf799f2ac05d69226cfa8b521a413ebc6667febe55897dce7354e58`, `usak-review-draft.json` SHA `4d72d54e2d0f6798baf1992762877a6d5a9c31035ce460e68ec57d45fb1c94c1`, commit `44debcb` ve pasaj düzeltmesi `9041697`; hiçbir gerçek CLI/preview kontrolü yapılmadı. Balıkesir 18 Ekim ön seçim ve 19 Ekim ilçe listesi `2cc44be`; iki 25 Ekim kongre haberi 403, sayısal kaynak farkı çözülmedi. Bütün yeni taslak ve araştırmalar kaynak kuyruğunu kapatmaz.
+
 ## 2026-11-21 20:43 UTC — en güncel durum
 
 Gaziantep v2 staging `practice-check` session 93020 ve Muğla v4 staging `practice-check` session 49254 gerçek çıkış 0 `PRACTICE_INPUT_OK`; önceden aynı paketler için source-check ve gerçek preview geçmişti. Kanıtlar `gaziantep-v2-preview-proof.md` (5a3fd69) ve `mugla-v4-preview-proof.md` (6ddabb1). Muğla v4 paket SHA `0408026d68e8390fb0044377d206630e89b09ac35d5407d8b791e17f786415c5` ve review SHA `299e9f0a26a8c541093d5510caf4c244db1147716ac9ed8cc9b0fddbfcc45f19` birebir `data/practices/04-yeni-parti.json` ve review dosyasına alındı (6ddabb1). Bu dar doğrulama görevleri veya kapsamı bitirmez; paket hâlâ tracer aşamasındadır.
