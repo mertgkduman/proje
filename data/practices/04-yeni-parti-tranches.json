@@ -16066,6 +16066,16 @@
       "url": "https://www.tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/2b8512b1-652e-4c99-b67a-01a1207db7cd",
       "state": "lead_unread",
       "note": "Vekilpedia 10/4676 için TBMM bağlantısı veriyor; web açma aracı erişemedi. 9 Ekim meslek hastalıkları önergesi ile 29 Temmuz 10/4445 ayrı kayıtlardır, TBMM ve özgün metin doğrudan okunacak."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/2b8512b1-652e-4c99-b67a-01a1207db7cd",
+      "state": "read_unbound",
+      "note": "TBMM sayfası web okumasında 10/4676, Başkanlığa geliş 9 Ekim, Kayıhan Pala ve 20 milletvekili, meslek hastalıklarının tanı/bildirim/önlenmesi için araştırma isteği görülüyor. Sayfadaki güncel durum kesim anına uygulanmadı. Özgün HTML yakalama her iki hostta bağlantı sıfırlanmasıyla başarısız; arşiv bağı henüz yok."
+    },
+    {
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T10/WebOnergeMetni/99af6ef2-6f2e-4bd0-a0a9-487eda8124cf.pdf",
+      "state": "captured_unbound",
+      "note": "TBMM bağlı PDF HTTP 200; 3 sayfa, SHA256 a6b8b16c15ebdac19848682812aa6176d7a565634e7dd891dc1f09f6fb35271e. İlk sayfa metin çıkarımı yalnız 10/4676 üretiyor; tarama sayfaları doğrudan okunup indeksli pasajın doğrulanabilirliği araştırılacak. Başka sitedeki OCR özgün pasaj olarak kullanılmadı."
     }
   ],
   "foundation_for_party": {
@@ -16511,6 +16521,12 @@
       "sha256": "1a10eabde6169a8a46946875edb9a6ce381ddc557e4b5ad14691472275c489c1",
       "accessed_at": "2026-11-21T21:54:51+00:00",
       "state": "source_records_draft"
+    },
+    {
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T10/WebOnergeMetni/99af6ef2-6f2e-4bd0-a0a9-487eda8124cf.pdf",
+      "sha256": "a6b8b16c15ebdac19848682812aa6176d7a565634e7dd891dc1f09f6fb35271e",
+      "accessed_at": "2026-11-21",
+      "state": "captured_unbound"
     }
   ],
   "legacy_action_queue": [
