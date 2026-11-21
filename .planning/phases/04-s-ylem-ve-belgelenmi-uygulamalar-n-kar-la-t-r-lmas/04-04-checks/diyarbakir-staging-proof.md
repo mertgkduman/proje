@@ -1,0 +1,3 @@
+# Diyarbakır geniş taslağı staging paket denetimi
+
+`/tmp/gsd-0404-program-staging` tabanına paketin 142 nesne/görünüm yolu kontrol edilerek 40 yeni dosya eklendi; mevcut yollar ancak eşit bayt ise kullanıldı ve eksik yol yoktu. `python3 src/arsiv.py practice-check --input data/practices/package-diyarbakir-draft.json --inventory data/practices/04-inventory.json` session 35006 gerçek çıkış 0 `PRACTICE_INPUT_OK` verdi. Repo ve staging paket SHA `7ad241fa04061499903d88dee70f77b08fcbd3ff92fcb45228dec1d09215172d`, review SHA `41b492e59c72d2d7a0dc44b60d8ebab2c418f210d1160738c8db019fd2d9ec2f`. Bu, kaynak-check veya preview sonucu değildir; araştırma kapsamı açık kalır.
