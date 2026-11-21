@@ -7,6 +7,10 @@ for file, ids in [('local-elections-records-draft.json', ('0404-aydin-sonuc',)),
     extra = json.loads((p/file).read_text())['entries']
     pkg['entries'] += [x for x in extra if any(str(x['values'].get(k, '')).startswith(i) for k in ('id','version_id','document_id') for i in ids)]
 e, r = pkg['entries'], pkg['practice_records']
+for entry in e:
+    if entry['kind']=='source_attribution' and entry['values']['version_id']=='0404-charter-announcement-api-v1':
+        entry['values']['kind']='party_publication'
+        entry['values']['publisher']='Yeni Parti'
 speech = '0105-speech-p'
 now = '2026-11-21T22:04:32+00:00'
 cases = [
@@ -25,4 +29,4 @@ for key, date, title, refs, text, limitation in cases:
         r['practice_event_evidence'].append(dict(event_id=event,passage_id=ref,supported_point='İlgili yerel yayının seçim veya kongre anlatımı',stage='action',concrete_basis='Kaynak kendi olay anlatımını bildiriyor.',limitation=limitation,epistemic_type='claim'))
         r['practice_evidence_assessment'].append(dict(event_id=event,passage_id=ref,stage='action',basis_kind='independent_report'))
     r['practice_relation'].append(dict(id=fid+'-id',statement_id='tracer-statement',event_id=event,party_id='yeni-parti',topic_id='organ-secim-yontemi',scope_id=None,comparability_reason='İl başkanı belirlenmesinin bu aşaması, üyelerin rolüne dair beyanın bağlamında gösterilir.',target_finding_id='0105-statement',result_finding_id=None,explanation_finding_id=fid,temporal_context='4 Ağustos beyanı; 18 Ekim ön seçim ve 26 Ekim il kongresi ayrı işlemlerdir.',authority_context='Üyelerin ön seçimi ile delegelerin kongredeki oylaması farklı işlemlerdir.',uncertainty_reason=limitation))
-(p/'package-aydin-draft.json').write_text(json.dumps(pkg,ensure_ascii=False,indent=2)+'\n')
+(p/'package-aydin-draft-v2.json').write_text(json.dumps(pkg,ensure_ascii=False,indent=2)+'\n')

@@ -7,7 +7,7 @@ repo=Path.cwd()
 checks=repo/'.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks'
 stage=Path('/tmp/gsd-0404-program-staging').resolve()
 source=(repo/'data/practices/sources/yeni-parti').resolve()
-package=checks/'package-aydin-draft.json'
+package=checks/'package-aydin-draft-v2.json'
 data=json.loads(package.read_text())
 paths=set()
 for entry in data['entries']:
@@ -32,7 +32,7 @@ for relative in sorted(paths):
         added+=1
     else:
         raise FileNotFoundError(relative)
-target=stage/'data/practices/package-aydin-draft.json'
+target=stage/'data/practices/package-aydin-draft-v2.json'
 if target.exists() and target.read_bytes()!=package.read_bytes():
     raise ValueError('package collision')
 if not target.exists():
