@@ -1,0 +1,9 @@
+import json
+from pathlib import Path
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks')
+r=json.loads((p/'samsun-congress-review-draft-v2.json').read_text());ev='0404-istanbul-onsecim-event';rel='0404-istanbul-onsecim-iliski-id';speech='0105-speech-p';ref='0404-istanbul-onsecim-sozcu-p';versions={speech:'0105-speech-v1',ref:'0404-istanbul-onsecim-sozcu-v1'};sections={speech:'4 Ağustos il başkanı seçimi beyanı',ref:'18 Ekim ANKA kaynaklı İstanbul ön seçimi haberi'}
+items=[('practice_event_evidence',ev+'|'+ref+'|action',[ref],'ANKA haberi Çelik’in tek adaylı ön seçimi resmî olmayan sonuca göre kazandığını bildiriyor.'),('practice_event',ev,[ref],'İstanbul ön seçimi ve resmî olmayan sonuç haberde yer alıyor.'),('practice_relation',rel,[speech,ref],'Üyelerle başkan belirleme beyanı İstanbul ön seçimiyle karşılaştırılıyor.'),('practice_relation.target_finding_id',rel,[speech],'İstanbul karşılaştırmasının hedefi üyelerin başkan belirlemesine dair beyandır.'),('practice_relation.explanation_finding_id',rel,[speech,ref],'İstanbul açıklaması resmî olmayan ön seçimi ayrı aşama olarak aktarıyor.')]
+for kind,identity,refs,claim in items:
+    r['practice_source_review'].append(dict(subject_kind=kind,subject_id=identity,reviewer_kind='agent',reviewed_at='2026-11-21T22:27:52+00:00',source_version_ids=json.dumps([versions[x] for x in refs],ensure_ascii=False),passage_ids=json.dumps(refs,ensure_ascii=False),inspected_sections=json.dumps([sections[x] for x in refs],ensure_ascii=False),supported_claim=claim,limitations='Sonuç haberde resmî olmayan olarak niteleniyor; tutanak görülmedi.',result='reviewed',reason='Beyan ve ANKA ön seçim haberi ayrı aşamalar ve atıfla okundu.'))
+r['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in r['practice_source_review']]
+(p/'istanbul-review-draft.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
