@@ -11742,6 +11742,22 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"mali rapor\" bağış gider hesap 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"yargı bağımsızlığı\" \"TBMM\" 2026 grup önerisi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"çocuk yoksulluğu\" \"araştırma önergesi\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"kiralar\" \"barınma\" \"kanun teklifi\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"yenilenebilir enerji\" \"kanun teklifi\" 2026"
     }
   ],
   "source_queue": [
@@ -13498,6 +13514,31 @@
       "url": "https://www.yenipartim.net/bilgiler/uyelik",
       "state": "source_read_pending_chain",
       "note": "28 Eylül itibarıyla başvuru ve aidat taahhüdünü anlatan derleme okundu; 31 Ağustos Özel açıklaması ve parti açıklamalarına dayanıyor, sayfanın bağımsızlığı ve özgün beyan kaynakları izlenecek."
+    },
+    {
+      "url": "https://vekilpedia.com/onerge/10-4551-yargi-bagimsizligini-ve-tarafsizligi-engelleyen-uygulamalarin-arastirilarak-alinmasi-gerek",
+      "state": "pending",
+      "note": "Arama sonucunda 30 Eylül yargı bağımsızlığı araştırma önergesi; ilk imza ve TBMM özgün kayıt/PDF incelenecek."
+    },
+    {
+      "url": "https://vekilpedia.com/onerge/10-4682-cocuk-yoksullugunun-nedenlerinin-tespit-edilerek-cocuklarin-yasam-kosullarinin-iyilestiril",
+      "state": "pending",
+      "note": "Arama sonucunda 12 Ekim çocuk yoksulluğu araştırma önergesi; ilk imza ve TBMM özgün kayıt/PDF incelenecek."
+    },
+    {
+      "url": "https://tbmm.gov.tr/Haber/enerjiye-ve-sosyal-guvenlige-iliski-20261118153951",
+      "state": "excluded_outside_cutoff",
+      "note": "18 Kasım komisyon görüşmesi kesim sonrası, kapsam içi eylem değil."
+    },
+    {
+      "url": "https://www.tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/924cbdcb-8da6-4dac-8a8a-01a0f6a0da6d",
+      "state": "source_read_pending_chain",
+      "note": "TBMM 10/4551 yargı bağımsızlığı araştırma önergesi 30 Eylül 2026, Turan Taşkın Özer ve 20 milletvekili; dinamik sayfada güncel gündem durumu görülüyor ancak kesimdeki durum ayrıca izlenecek. Bu bireysel/imzalı önerge otomatik grup kararı değildir. Curl HTTP 200 ile 67.798 özgün bayt yakalandı."
+    },
+    {
+      "url": "https://www.tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/5faeaf2a-f67f-49e9-b03a-01a143fa54df",
+      "state": "source_read_pending_chain",
+      "note": "Önceki web açılışı 500 sonrasında curl HTTP 200 ile 67.333 özgün bayt yakalandı ve HTML metni okundu: 10/4682, 12 Ekim 2026, Ayça Taşkent ve 19 milletvekili; karar/sonraki aşama kesim için ayrıca izlenecek."
     }
   ],
   "foundation_for_party": {
@@ -13691,6 +13732,18 @@
       "sha256": "b7678c3c775aeb24112febe98cb280ac664cd2cc19bbf001a14ca440878e3f92",
       "accessed_at": "2026-11-21T20:05:38.410437+00:00",
       "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/924cbdcb-8da6-4dac-8a8a-01a0f6a0da6d",
+      "sha256": "6f20ae47f079311c791fb3e24f9bde51bc273f81b2194ac6f16f996fcf09cbd0",
+      "accessed_at": "2026-11-21T20:12:54.425248+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://www.tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/5faeaf2a-f67f-49e9-b03a-01a143fa54df",
+      "sha256": "e6e1ed43685b649ca1ad503536afbd035b22697000ded4eb67fe3a2b7625d2b4",
+      "accessed_at": "2026-11-21T20:13:24.415448+00:00",
+      "state": "captured_unbound"
     }
   ],
   "legacy_action_queue": [

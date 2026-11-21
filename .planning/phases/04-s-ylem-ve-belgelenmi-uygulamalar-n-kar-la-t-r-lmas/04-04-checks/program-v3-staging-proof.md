@@ -1,0 +1,5 @@
+# Program v3 izole paket kontrolü
+
+`/tmp/gsd-0404-program-staging` içinde değişmemiş kod ve taban `f67ca0a35e634035bf3aa83a46571f50` verilerinin kopyası, bu partiye ait gerçek nesne ve pasif görünümlerle yalnız eşit bayt veya yeni dosya koşuluyla birleştirildi. Üç yanlış taslak okunabilir türevin eski kopyaları yeni staging kurulumunun dışında bırakıldı ve düzeltilmiş, standart adları taşıyan dosyalar parti kökünden alındı. `arsiv.ROOT` ve `arsiv.DATA` sırasıyla staging kökünü ve staging `data` dizinini gösterdi.
+
+`python3 src/arsiv.py practice-check --input data/practices/package-program-draft-v3.json --inventory data/practices/04-inventory.json` çıkış 0 `PRACTICE_INPUT_OK`. Hem repo taslağı hem staging girdisi SHA-256 `d7411d9ed027e230442981e8a4fdef0f663b778e7d0a210c47c15ca8c61e284c`; review taslağı SHA-256 `cb875043452b354eb86f152a0fe602e1f8a9a9e9aa1fa4e4a350a3a7fadb08e0`. 63 hedefin pasaj kümeleri gerçek taban DB ile mekanik olarak eşleşti. Bu, v3 için source-check veya gerçek açık köklü preview sonucu değildir; ikisi hâlâ yapılmalıdır. Program v2 source-check ve preview süreçleri ayrı sürmektedir.
