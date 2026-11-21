@@ -11558,6 +11558,12 @@
       "url": "https://www.yeniankara.com.tr/yeni-parti/yeni-parti-ankarada-yeni-donem-ilk-olagan-il-kongresi-duzenlendi-187535",
       "section": "Ankara il kongresi haberi",
       "note": "Yeni Ankara 25 Ekim 11:54/13:38: 18 Ekim ön seçimi ve ardından il kongresini anlatıyor. Erken yayınlanan haberin süreç anlatımı son oylama tutanağı yerine geçirilmez."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://www.cumhuriyet.com.tr/turkiye/genis-katilimli-yonetim-yeni-parti-tuzugunu-degistirdi-pm-uye-sayisini-150-yapti-2554702",
+      "section": "9 Kasım tüzük değişikliği haberi ve kaynak künyesi",
+      "note": "Sarp Sağkal 9 Kasım 12:42: tüzük değişikliğinde parti meclisi sayısının 150ye çıkarıldığını ve üç gruba ayrıldığını haberleştiriyor. Haber tam tüzük metni veya değişikliğin tüm maddelerinin tarihsel sürümü değildir; kurucu tüzüğün sonraki geçerliliği varsayılmadı."
     }
   ],
   "queries": [
@@ -14099,6 +14105,11 @@
       "url": "https://www.onturk.tv/erden-koybasi-yeni-parti039nin-balikesir-il-baskani-secildi/80633/",
       "state": "read_search_index_capture_blocked",
       "note": "25 Ekim 14:07 kongre haberini arama indeksi gösterdi; capture 403. Tam erişim izlenecek."
+    },
+    {
+      "url": "https://yeni-parti.org.tr/haber/295",
+      "state": "shell_only",
+      "note": "Arama indeksi 9 Kasım MYK açıklaması gösterdi; doğrudan yakalanan HTML ve web açımı okunabilir haber gövdesi içermiyor. Kaynağın API veya özgün açıklaması araştırılacak; boş kabuk pasaj veya tam metin olarak kullanılmadı."
     }
   ],
   "foundation_for_party": {
@@ -14502,6 +14513,18 @@
       "sha256": "158da3e85da346e5274c4b14efd7566408a0952f2a047fbf9549cca6395760ea",
       "accessed_at": "2026-11-21T21:26:22.038944+00:00",
       "state": "source_records_draft"
+    },
+    {
+      "url": "https://www.cumhuriyet.com.tr/turkiye/genis-katilimli-yonetim-yeni-parti-tuzugunu-degistirdi-pm-uye-sayisini-150-yapti-2554702",
+      "sha256": "5689a62efb7637e39095f77c7d9c6a3fc755b12dc36cf9a2d969657813da9904",
+      "accessed_at": "2026-11-21T21:31:24.178068+00:00",
+      "state": "source_records_draft"
+    },
+    {
+      "url": "https://yeni-parti.org.tr/haber/295",
+      "sha256": "5155c3dce109ec92afc48b70870cdbacab0fa269b8a195129e8101d8c57666e4",
+      "accessed_at": "2026-11-21T21:31:24.847602+00:00",
+      "state": "shell_only_not_source_bound"
     }
   ],
   "legacy_action_queue": [
