@@ -1,5 +1,11 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 21:00 UTC — daha güncel durum
+
+Program v2 kaynak kontrolü session 75655 ve gerçek preview session 24801 çıkış 0; DB/JSON, iki görünüm, kaynak bağlantıları ve manifest `program-v2-preview-proof.md`, commit `40b97cb`. Housing staging session 31126 çıkış 0, aynı commit `housing-staging-proof.md`; bu iki başarı yalnız o SHA'lı taslaklara aittir. Şimdi housing gerçek source-check PID 754867/session 37436 ve gerçek açık kaynak köklü preview PID 754968/session 97130 `/tmp/gsd-04-yeni-parti-housing` başladı. Ulusal source-check PID 723299/session 5218 ve preview PID 723350/session 56904 hâlâ aktif; koruyun ve gerçek çıkışları bekleyin. Aynı komutların eşzamanlı kopyalarını başlatmayın.
+
+TBMM 2/3895 teklifinin 12 sayfalık özgün PDF'si ve ilk sayfadaki esas numarası `12160b4`; teklifin kabul edildiği ileri sürülmedi. Önceki 20:57 ve daha eski durumlarda dört süreçten program v2 ile housing staging'in sürüyor olduğuna ilişkin ifadeler bu bölümle geçersizdir. Hiçbir görev veya kaynak kapsamı tamamlanmadı.
+
 ## 2026-11-21 20:57 UTC — daha güncel durum
 
 Barınma grup önerisine ait 7 Ağustos ham TBMM tutanağı özgün SHA `38d374df7534834cb6fae4b8937f225bcf055c094859881ebea38a416810be78`, kaynak kayıt ve iki pasaj `9b11f9a`; grup önerisinin öne alınması reddedildi, asıl araştırma önergesinin nihai sonucuna ilişkin çıkarım yok. Bu kaynağı ulusal taslağa ekleyen `package-housing-draft.json` SHA `fa0984a15aa564ba6c400bb2d72456a4a6b1220874a8398e433f32e51c16e4`, review SHA `3695ffaed1206daaf984913172a1467099b52855e5090f9374dbcefa5c980632` commit `7bbc1a4`. İzole staging `practice-check` PID 743981/session 31126 çalışıyor; gerçek çıkışı beklenmeli. Önceki dört süreç aşağıdaki gibidir. Stage ve dört source/preview süreci kendi özgün girdi SHA'larına bağlı; canlı paket güncellemesi bu girdileri değiştirmedi.
