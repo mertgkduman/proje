@@ -1,0 +1,62 @@
+{
+  "status": "draft_unvalidated",
+  "source_root": "data/practices/sources/yeni-parti",
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-genclik-yonetmelik",
+        "party_id": "yeni-parti",
+        "title": "Gençlik Kolları Çalışma Yönetmeliği",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-genclik-yonetmelik-v1",
+        "document_id": "0404-genclik-yonetmelik",
+        "original_url": "https://api.yeni-parti.org.tr/uploads/belgeler/yonetmelik-1790069915474-30185980.pdf",
+        "final_url": "https://api.yeni-parti.org.tr/uploads/belgeler/yonetmelik-1790069915474-30185980.pdf",
+        "document_date": null,
+        "version_label": "Yakalanan yönetmelik PDF; tarihsel sürüm araştırılıyor",
+        "accessed_at": "2026-11-21T19:58:22.098597+00:00",
+        "verified_at": "2026-11-21T19:58:22.098597+00:00",
+        "mime": "application/pdf",
+        "sha256": "499806c4492fd1e12448cb7d1fb854302b509aa119ef783606fa565430e1f30d",
+        "original_path": "objects/499806c4492fd1e12448cb7d1fb854302b509aa119ef783606fa565430e1f30d/original.pdf",
+        "readable_path": "objects/499806c4492fd1e12448cb7d1fb854302b509aa119ef783606fa565430e1f30d/readable.html",
+        "date_precision": "unknown",
+        "date_unknown_reason": "Dizindeki 22 Eylül bilgisinin bu PDF baytlarının tarihsel yayımı ve yürürlüğüyle bağı doğrulanmadı."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-genclik-yonetmelik-p",
+        "version_id": "0404-genclik-yonetmelik-v1",
+        "exact": "Gençlik kollarının delegelik dahil her kademedeki seçimlerinde %50 cinsiyet kotası\nuygulanır.",
+        "prefix": null,
+        "suffix": null,
+        "article": "15(1)",
+        "section": "Cinsiyet kotası",
+        "pdf_page_index": 13,
+        "printed_page": "12"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-genclik-yonetmelik-v1",
+        "kind": "party_publication",
+        "publisher": "Yeni Parti",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://api.yeni-parti.org.tr/uploads/belgeler/yonetmelik-1790069915474-30185980.pdf",
+        "basis": "PDF başlığı ve içeriği Yeni Parti Gençlik Kolları yönetmeliği olarak tanımlıyor; alan ve tarihsel sürüm ayrıca araştırılıyor."
+      }
+    }
+  ]
+}

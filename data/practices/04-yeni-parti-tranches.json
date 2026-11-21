@@ -11678,6 +11678,38 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"bir öğün\" \"kanun teklifi\" 3827 2026 reddedildi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"kadın kotası\" 2026 il kongresi seçim"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"gençlik kotası\" 2026 kongre liste"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"tüzük\" \"kadın\" \"kota\" \"kurultay\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"kadın kolları\" \"gençlik kolları\" 2026 seçim kongre"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"tüzük\" \"9 Kasım 2026\" \"Geçici Madde\" 150"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"tüzük\" \"150\" \"9 kasım\" pdf 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"tüzük değişikliği\" \"9 kasım\" \"gençlik\" etik belge"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"site:yeni-parti.org.tr\" \"tüzük\" \"9 Kasım\" \"150\""
     }
   ],
   "source_queue": [
@@ -13404,6 +13436,21 @@
       "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T2/WebOnergeMetni/36f0a6f0-ed91-4d84-8a6f-fd928174e540.pdf",
       "state": "source_read_pending_chain",
       "note": "2/3790 TBMM özgün PDF 9 sayfa web aracıyla açıldı; ilk sayfada Özel ve grup başkanvekilleri Yeni Parti unvanıyla, ikinci sayfada 3 Ağustos evrak kaydı ve 2/3790 görülüyor. 21 Kasım doğrudan özgün bayt yakalama connection reset verdi. Günaydın sitesi transkripsiyonunda CHP unvanı farklı; kaynaklarda ayrı korunur. Daha sonra curl HTTP 200 ile 463.313 özgün PDF baytı yakalandı, ilk sayfa yerel pdf_page_text ile tekrar okundu; sürüm/pasaj taslağı hazır, henüz pakete katılmadı."
+    },
+    {
+      "url": "https://yeni-parti.org.tr/kurumsal-yayinlar/yonetmelikler",
+      "state": "unresolved",
+      "note": "Arama dizininde gençlik, kadın ve kongre yönetmelikleri 22 Eylül 2026 tarihli listeleniyor; web açılışında okunabilir satır yok. Bu aday alan adı ve sunulan dosyaların tarihsel yayım/yürürlük bağları ayrıca araştırılacak; 17 Kasım kurultay yönetmeliği kesim dışıdır."
+    },
+    {
+      "url": "https://api.yeni-parti.org.tr/uploads/belgeler/yonetmelik-1790069915474-30185980.pdf",
+      "state": "source_read_pending_chain",
+      "note": "Gençlik Kolları Çalışma Yönetmeliği PDF, 20 sayfa, Md.15 birinci fıkra PDF sayfa indeksi 13 yerel olarak okundu: gençlik kolunun her kademe seçimleri için %50 cinsiyet kotası düzenliyor. Web dizinindeki 22 Eylül tarihinin bu baytların kesim öncesi sürümüne ve partiye bağını ayrıca araştırın; kural fiilî uygulanma kanıtı değildir."
+    },
+    {
+      "url": "https://www.cumhuriyet.com.tr/siyaset/son-dakika-yeni-parti-de-kurultay-oncesi-kritik-karar-parti-meclisi-ni-150-uyeye-cikaran-tuzuk-degisikligi-onaylandi-2554641",
+      "state": "pending",
+      "note": "9 Kasım 10:37 ANKA kaynaklı haber; aynı tarihli Kurucular Kurulu değişiklik anlatımı. Önceden okunan Sağkal veya Medyascope haberleriyle ilişki ve özgün tüzük metni araştırılacak."
     }
   ],
   "foundation_for_party": {
@@ -13579,6 +13626,12 @@
       "sha256": "e828a2a5ad9ff52e2bc9f3e5831bd18edc1eecbd49992baa2204836e9e6ca68b",
       "accessed_at": "2026-11-21T19:53:01.482680+00:00",
       "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://api.yeni-parti.org.tr/uploads/belgeler/yonetmelik-1790069915474-30185980.pdf",
+      "sha256": "499806c4492fd1e12448cb7d1fb854302b509aa119ef783606fa565430e1f30d",
+      "accessed_at": "2026-11-21T19:58:22.098597+00:00",
+      "state": "captured_unbound"
     }
   ],
   "legacy_action_queue": [
