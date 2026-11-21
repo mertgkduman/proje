@@ -11854,6 +11854,22 @@
     {
       "at": "2026-11-21",
       "query": "\"Serap Ergun Bitkin\" Yeni Parti 2026 Uşak il başkanı"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"denetim kurulu\" \"mali rapor\" 2026 parti"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"bağış\" \"harcama\" \"2026\" mali rapor"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"parti meclisi\" \"toplandı\" \"karar\" Eylül 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"disiplin kurulu\" \"itiraz\" \"2026\" il başkanı"
     }
   ],
   "source_queue": [
@@ -13710,6 +13726,11 @@
       "url": "https://www.usakhabergazetesi.com.tr/serap-ergun-bitgin-yeni-parti-usak-il-baskanligina-adayligini-acikladi",
       "state": "source_read_pending_chain",
       "note": "Aynı yayın kuruluşunun 9 Ekim adaylık haberinde Serap Ergün Bitgin yazımı mevcut; 25 Ekim haberindeki Bitkin yazımı farklı kalıyor, yazım hatası olduğu varsayılmıyor."
+    },
+    {
+      "url": "https://www.gazetepencere.com/gundem/yeni-parti-bagislari-ve-harcamalarini-paylasti-158-bin-kisiden-342-milyon-lira-bagis-723121h",
+      "state": "excluded_outside_cutoff",
+      "note": "14 Kasım 2026 kurultay açıklaması kesimden sonra; bildirilen mali toplamları kesim tarihindeki denetlenmiş tutar olarak geriye taşımayın."
     }
   ],
   "foundation_for_party": {
@@ -13938,6 +13959,30 @@
       "url": "https://www.yeniankara.com.tr/yeni-parti/yeni-parti-ankarada-yeni-donem-ilk-olagan-il-kongresi-duzenlendi-187535",
       "sha256": "4e4475c13472a0332dfeadb9ef0dfd88d203196c74dbee2bb3ebc1d15bffb78b",
       "accessed_at": "2026-11-21T20:20:22.531597+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.usakolay.com/usak/yeni-parti-usakta-serap-ergun-bitgin-2-bin-213-oyla-birinci-oldu-73102h",
+      "sha256": "95b4eee6bb1c21b1384d6cd88984b35abb682fb01ee2b62af3b52748d049ad04",
+      "accessed_at": "2026-11-21T20:33:17.296795+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.usakhabergazetesi.com.tr/yeni-parti-usakta-baskanini-secti-on-secimin-ardindan-delegeler-de-onayladi",
+      "sha256": "01a45b761eb7e422423183656247ff69ec2d6179bdca57a6b922a25eb234b115",
+      "accessed_at": "2026-11-21T20:33:17.829630+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.yesilsivasligazetesi.com/yeni-parti-usak-1-olagan-il-kongresi-yapildi",
+      "sha256": "2c965efc6cbb69e0750df30146f92bc4028e4c3ac131b5a768611316df721bf2",
+      "accessed_at": "2026-11-21T20:33:18.474560+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://www.usakhabergazetesi.com.tr/serap-ergun-bitgin-yeni-parti-usak-il-baskanligina-adayligini-acikladi",
+      "sha256": "ddcf306d2c56e1da24a7579cd543be968d063535995fa85e8febb6f8a57d848f",
+      "accessed_at": "2026-11-21T20:33:18.741219+00:00",
       "state": "draft_owner_bound"
     }
   ],
