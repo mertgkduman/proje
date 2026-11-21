@@ -1,0 +1,7 @@
+# Ulusal ön seçim ve program taslağı gerçek kontrolü
+
+Paket SHA `eadac56120944d839b3ad8c0a87e9d01cf00b157abd90fe2374e35d9813ef92a`; review SHA `785da80425db877fccf5132d7a5ed0a9813197a3946ae30086efda135daee2fa`. Aynı paket için staging `practice-check` session 36732 çıkış 0 `PRACTICE_INPUT_OK`, gerçek `practice-source-check` session 5218 çıkış 0 `PRACTICE_SOURCE_REVIEW_OK` ve `practice-preview --inventory data/practices/04-inventory.json --source-root data/practices/sources/yeni-parti --out /tmp/gsd-04-yeni-parti-national` session 56904 çıkış 0 `PRACTICE_PREVIEW_OK` verdi.
+
+Preview release `164e384c6b944cceb19b1ba6d6f46f8e`, temel `f67ca0a35e634035bf3aa83a46571f50`, renderer 27, stage tracer. DB ve JSON'da ulusal ön seçim olayı, ilişkisi ve asgari ücret teklifi birer kez mevcut. Her iki rapor görünümünde ulusal ilişki fragmanı, karşılıklı bağlantı, özetler, 4 Ağustos beyanı ile 8 Kasım ön seçim kaynağı bağlantıları ve kaynak hedefleri bulundu. Ulusal ön seçim, yerel seçimler ve sonraki kurultay ayrıdır; ön seçim haberindeki o ana kadar girilen sonuçlar nihai toplam diye aktarılmadı.
+
+Manifestin listelediği dosyaların hash'leri doğrulandı: DB `90609c150cc7e0bf42c7c47e4441fffa5a49eeb44239c15928337d1208c03157`, JSON `c91dcba1ed968a2dff63add4536304af48f8e94db9e0def4f57f22c5d7809163`, HTML `73f8a17a3ddb90fa08af1e4a04f3e454ab92219f10923f6d1cbb9c45e25e0c8d`, manifest `4748febde0b346e84a68a9964b3e2c427892434af74d61402d77ccc8cd4a71e5`. Bu dar paket kanonik yayın veya parti kapsamı tamamlanması değildir.
