@@ -1,5 +1,13 @@
 # Faz 4 orkestrasyon kurtarma kaydı
 
+## Plan denetimleri tamamlandı — 2026-11-21 16:11:01 UTC
+
+62262262 Slurm durumu COMPLETED, 0:0. Derleme, gerçek tracer CLI, Faz 2 ve Faz 3 complete komutlarının her biri çıkış 0 verdi. Yayın `f67ca0a35e634035bf3aa83a46571f50` için `PHASE2_AUDIT_OK` ve `PHASE3_AUDIT_OK` kaydedildi. Gözetici başlangıç ve bitişte kanonik kimliği ve yazıcı kilidi yokluğunu doğruladı.
+
+Gerçek `PRACTICE_PREVIEW_OK` çıktısı proje alanındaki `data/.staging/gsd-04-03-tracer-preview-62262262/releases/95a5a7c451f44d20b3d6fc77d1a44f47` altında korunuyor. DB/JSON/HTML/manifest, iki görünümün tracer bağlantıları ve 13754 yerel kaynak bağlantısı kontrol edildi. Manifest SHA256 `9dfcace69ba9d1e98b1bbee49aaf9f9adc2d9e23ec9bc7a593f0893642c920cd`. Denetim özeti `closeout-62262262.json`, SHA256 `7cace87285b82ac652ad71d305266b0d18adf670c24cf74a8edc4a927d5cd415`.
+
+Kapanış denetimleri tamam. Genel test kapısı bu gözlemde 286/287. Son ayrı taksonomi batch `5af6daf9326d4634848f0d331cdaf6e1` Slurm 62173687 altında çalışıyor. Gerçek sıfır çıkış ve kimlik doğrulanmadan 04-03 SUMMARY ve sayaç ilerletilmez.
+
 ## Seri regresyon tamamlandı — 2026-11-21 14:51:15 UTC
 
 - 62261875 içindeki **286/286** seri test gerçek exit 0 ve eşleşen batch kimliğiyle geçti. Genel kapsam **286/287**. Son seri gerçek kanıt zinciri testi `ea478e9ee81844068b3ea51b03122d87` 14:49:21 UTC'de exit 0. Gözetici yalnız ayrı taksonomi ID'si için `external_test_pending` yazıp `coverage incomplete` ile exit 1 verdi. Bu, seri bir test başarısızlığı değildir. Ledger, günlükler ve exit dosyalarıyla geriye kalan tek ID doğrulandı; root canonical release özeti eşleşti ve global kilit yoktu.
