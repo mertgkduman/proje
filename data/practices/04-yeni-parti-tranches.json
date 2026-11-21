@@ -11564,6 +11564,12 @@
       "url": "https://www.cumhuriyet.com.tr/turkiye/genis-katilimli-yonetim-yeni-parti-tuzugunu-degistirdi-pm-uye-sayisini-150-yapti-2554702",
       "section": "9 Kasım tüzük değişikliği haberi ve kaynak künyesi",
       "note": "Sarp Sağkal 9 Kasım 12:42: tüzük değişikliğinde parti meclisi sayısının 150ye çıkarıldığını ve üç gruba ayrıldığını haberleştiriyor. Haber tam tüzük metni veya değişikliğin tüm maddelerinin tarihsel sürümü değildir; kurucu tüzüğün sonraki geçerliliği varsayılmadı."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://api.yeni-parti.org.tr/api/haberler/295",
+      "section": "Yayınlanan JSON icerik: 9 Kasım sözcü açıklaması, parti içi demokrasi ve PM değişikliği",
+      "note": "Haber sayfasının kendi JavaScripti GET /api/haberler/295 uç noktasını gösterdi; API HTTP 200 özgün JSON gövdesi okundu, created_at ve updated_at 9 Kasım 16:08:39.050Z. Zeynel Emreye atfedilen açıklama bir sonraki olağan kurultay takvimine kadar bir kereye mahsus PMnin 80den 150ye çıkmasını ve 30 yedeği bildiriyor; bu açıklama değişikliğin tam tüzük metni değildir. Aynı açıklama 639.454 üyeye ve yüzde 81 üzeri katılıma atıf yapıyor; önceki 8 Kasım kısmi veriyle kapsam farkı ayrıca araştırılır. Bu domain kullanıcı tarafından seçilen yenipartiyiz.biz ile özdeşlenmedi. JSON ham baytı mevcut HTML/PDF kaynak şemasına dönüştürülmeden araştırma nesnesi olarak saklandı."
     }
   ],
   "queries": [
@@ -14110,6 +14116,11 @@
       "url": "https://yeni-parti.org.tr/haber/295",
       "state": "shell_only",
       "note": "Arama indeksi 9 Kasım MYK açıklaması gösterdi; doğrudan yakalanan HTML ve web açımı okunabilir haber gövdesi içermiyor. Kaynağın API veya özgün açıklaması araştırılacak; boş kabuk pasaj veya tam metin olarak kullanılmadı."
+    },
+    {
+      "url": "https://api.yeni-parti.org.tr/api/haberler/295",
+      "state": "read_json_unbound",
+      "note": "Doğrudan JSON kaynak için desteklenen kaynak sürümü/konumlandırılmış pasaj ve yerel arşiv görünümü yöntemi araştırılacak; yayımlanan haber, tam tüzük değişikliği metniyle eşit değildir."
     }
   ],
   "foundation_for_party": {
@@ -14525,6 +14536,12 @@
       "sha256": "5155c3dce109ec92afc48b70870cdbacab0fa269b8a195129e8101d8c57666e4",
       "accessed_at": "2026-11-21T21:31:24.847602+00:00",
       "state": "shell_only_not_source_bound"
+    },
+    {
+      "url": "https://api.yeni-parti.org.tr/api/haberler/295",
+      "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
+      "accessed_at": "2026-11-21T21:34:03+00:00",
+      "state": "json_raw_unbound"
     }
   ],
   "legacy_action_queue": [
