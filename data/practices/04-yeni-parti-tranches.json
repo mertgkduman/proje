@@ -11386,6 +11386,12 @@
       "url": "https://www.ayintabgazetesi.com/haber/seydi-ahmet-keles-partiden-ihrac-edildi-29814.html",
       "section": "Haber gövdesi ve parti açıklaması",
       "note": "24 Ağustos 09:51, Ökkeş Sabah: il yönetimince kesin ihraç kararı alındığını aktarıyor; aynı yayının önceki sevk anlatımıyla aşama ve kurul yetkisi bağdaştırılmadı; disiplin kararı görülmedi."
+    },
+    {
+      "read_at": "2026-11-21",
+      "url": "https://www.e-gazetem.com/yeni-partide-uyeler-kaydedilmedi-iddiasi-telefonlara-mesaj-geliyor-listeler-tartisiliyor/31727",
+      "section": "28 Ağustos E-Gazetem haber gövdesi",
+      "note": "Çeşitli şehirlerde üyelik listeleri hakkında kayda alınmama iddiaları aktarılıyor, sayı ve maddi kayıtlar belirsiz. 26 Ağustos askı ve Kocaeli itiraz takvimi iddia/duyuru düzeyinde; Kayseri 230 dosyasıyla aynı olduğu gösterilmiyor. Henüz ham capture yok."
     }
   ],
   "queries": [
@@ -11512,6 +11518,38 @@
     {
       "at": "2026-11-21",
       "query": "\"Seydi Ahmet Keleş\" \"disiplin\" \"ihraç edildi\" 2026 gaziantep yeni parti"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"disiplin kurulu\" \"kesin ihraç\" Eylül 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"disiplin kurulu\" \"sevk\" Ekim 2026 üye"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"il disiplin kurulu\" \"ihraç\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"üyelik\" \"itiraz\" \"2026\" teşkilat"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"9 Kasım\" 2026 \"tüzük\" parti meclisi 150"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"yenipartiyiz.biz\" \"geçici\" \"150\" tüzük kasım 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" tüzük değişikliği 9 kasım 2026 kurucular kurulu"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" üye listeleri askı 26 ağustos 1 eylül 2026 kongre"
     }
   ],
   "source_queue": [
@@ -13067,6 +13105,41 @@
       "url": "https://medyascope.tv/2026/08/24/melih-merici-bicaklayan-seydi-ahmet-keles-yeni-partiden-ihrac-edildi/",
       "state": "read_unbound",
       "note": "24 Ağustos haberinde il başkanlığı açıklamasına kesin ihraç atfediliyor; çoklu haberlerin aynı parti açıklamasını tekrarlayabilmesi bağımsız karar kaydı yerine geçmez."
+    },
+    {
+      "url": "https://www.gazianteppusula.com/haber/29017471/yeni-parti-gaziantepte-disiplin-depremi",
+      "state": "blocked",
+      "note": "Arama sonucu Mehmet Ergüleç hakkında sevk haberini gösterdi; 21 Kasım açma girişimi HTTP 403 verdi. Tarih, kimlik, işlem ve sonuç başka kaynaklardan teyit edilecek; bulunamadı sonucu değildir."
+    },
+    {
+      "url": "https://www.meclisozel.com.tr/yeni-partide-uyelik-listeleri-askiya-cikti-itiraz-sureci-basladi/",
+      "state": "blocked",
+      "note": "Arama sonucu 27 Ağustos üyelik listeleri ve itiraz takvimini gösterdi; açma girişimi timeout verdi. Tam metin ve taraf/karar kaynakları izlenecek."
+    },
+    {
+      "url": "https://medyascope.tv/2026/11/09/yeni-partide-tuzuk-degisikligi-parti-meclisi-gecici-olarak-150-kisiye-cikti/",
+      "state": "read_capture_blocked",
+      "note": "Özgecan Özgenç haberi web üzerinden okundu; 9 Kasım 2026 Kurucular Kurulu kararı, bir dönem 150 üyeli PM, etik ve mal bildirimi haberleştiriliyor. Doğrudan özgün bayt yakalaması HTTP 403; alternatif kaynak Cumhuriyet yakalandı. Değişik tüzük metni henüz bulunmadı."
+    },
+    {
+      "url": "https://yeni-parti.org.tr/haber/295",
+      "state": "unresolved",
+      "note": "Arama sonucunda 9 Kasım 16:08 tarihli Zeynel Emre açıklaması görünüyor; doğrudan yakalanan 1813 baytlık sayfa JavaScript kabuğu, açıklama okunamadı. Kullanıcının resmî kaynak kararı yenipartiyiz.biz alanı; bu aday alanın kaynak kimliği ve metni ayrıca incelenecek."
+    },
+    {
+      "url": "https://dokuzeylul.com/yeni-partide-1-olagan-kongre-sureci-basladi-uye-listeleri-askiya-cikti",
+      "state": "source_read_pending_chain",
+      "note": "Ömer Ceylan, 27 Ağustos 2026: genel merkezden üyelere iletilen mesaja dayanarak 26 Ağustos–1 Eylül 18:00 askı ve itiraz takvimini aktarıyor. Takvimin uygulanması ve itiraz sonuçları bu haberle kanıtlanmaz."
+    },
+    {
+      "url": "https://www.cumhuriyet.com.tr/turkiye/genis-katilimli-yonetim-yeni-parti-tuzugunu-degistirdi-pm-uye-sayisini-150-yapti-2554702",
+      "state": "source_read_pending_chain",
+      "note": "Sarp Sağkal 9 Kasım 2026 tüzük değişikliği toplantısını ve geçici PM artışını haberleştiriyor. Kararın tam metni veya yeni tüzük sürümü görülmedi; eski tüzüğün sonraki geçerliliği varsayılmadı."
+    },
+    {
+      "url": "https://deniz.tv/yeni-parti-kurucular-kurulu-parti-meclisi-150-uye/",
+      "state": "source_read_pending_chain",
+      "note": "9 Kasım 11:10 tarihli haber Kurucular Kurulu kararını aktarıyor. Değiştirilmiş tüzük metninin kendisi değil; yayıncının başka haberler ile ilişkisi ve ilgili karar ayrıntıları izlenecek."
     }
   ],
   "foundation_for_party": {
@@ -13158,6 +13231,30 @@
       "sha256": "34e9d2499751459f2571c429389e040e8449a5807dc1131796437aabbcf584fb",
       "accessed_at": "2026-11-21T18:43:50.985680+00:00",
       "state": "captured_unbound"
+    },
+    {
+      "url": "https://www.cumhuriyet.com.tr/turkiye/genis-katilimli-yonetim-yeni-parti-tuzugunu-degistirdi-pm-uye-sayisini-150-yapti-2554702",
+      "sha256": "39f724a48147da9c146b05f45eefdee8ec1a8c2f6bcf1cc38d1a5154972ba3da",
+      "accessed_at": "2026-11-21T19:05:21.954543+00:00",
+      "state": "draft_owner_bound"
+    },
+    {
+      "url": "https://dokuzeylul.com/yeni-partide-1-olagan-kongre-sureci-basladi-uye-listeleri-askiya-cikti",
+      "sha256": "0108e550ed0fd7608979a25f5c2af34b18f2a387b33aa61434cb408c27488d43",
+      "accessed_at": "2026-11-21T19:04:52.100196+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://deniz.tv/yeni-parti-kurucular-kurulu-parti-meclisi-150-uye/",
+      "sha256": "8e59f4b0a54c8b1255053fde0393d103ecc460bbd4ff235cdfc762405c4e0d1b",
+      "accessed_at": "2026-11-21T19:05:23.215010+00:00",
+      "state": "captured_unbound"
+    },
+    {
+      "url": "https://yeni-parti.org.tr/haber/295",
+      "sha256": "5155c3dce109ec92afc48b70870cdbacab0fa269b8a195129e8101d8c57666e4",
+      "accessed_at": "2026-11-21T19:04:53.254902+00:00",
+      "state": "javascript_shell_only"
     }
   ],
   "legacy_action_queue": [
