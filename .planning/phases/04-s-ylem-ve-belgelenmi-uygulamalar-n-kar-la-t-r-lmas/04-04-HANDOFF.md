@@ -1,5 +1,15 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 22:17 UTC — daha güncel durum
+
+Konut staging practice-check, source-check session 4966 ve gerçek preview session 97130 çıkış 0. Manifest, DB/JSON ve iki karşılıklı görünüm `housing-preview-proof.md`; aynı paket SHA `fa0984a15aa564ba6c400bb2d72456a4a4a6b1220874a8398e433f32e51c16e4` ve review `511336de76a298db2559687c4248bd3a0c93f565e455ce47aae67373e9ce2703` canlı parti dosyalarına `681152c` ile alındı. Release `871f43f39fc74e25ad9d61028d39e86a` yalnız preview, stage tracer; kapsam/plan kapanmadı, kanonik yayın değişmedi.
+
+Uşak source-check session 86472 çıkış 0; aynı paket preview PID 781695/session 25448 hâlâ sürüyor. Diyarbakır source-check PID 793223/session 86934 ve gerçek preview PID 818337/session 96992 sürüyor. Aydın geniş paket v2 izole staging practice-check PID 821389/session 65770 sürüyor. Bunları koruyun, gerçek çıkış almadan sonuç varsaymayın veya aynı işlemleri tekrar başlatmayın; yeni ağır işleri bellek yuvasına göre sıraya koyun.
+
+Aydın ilk geniş staging check session 96156 çıkış 1 `Kaynak türü ve atıf uyuşmuyor`: tüzük API atfı `party` yerine `party_publication` ve içerikte görülen `Yeni Parti` yayıncısı gerektiriyor. İlk paket SHA `8c287a7b0a3c1df1c382da93ca4c6cfe333d6cde07d381205013355e91c9b96e` korundu; ayrı düzeltmeli v2 SHA `2b56b5767b3caa81c79911eeacfb0de4ae162ace75815a00b2d8dfec8fc43b6f`, review SHA `1eeaa995369b60ebe349e3a77a341bccb09ccac4dd4d4a6352001db54af27d07`, 190 varlık stagingde eşit, tam kanıt `aydin-staging-proof.md`/`d9fe1d7`. V2 geçse dahi source-check, gerçek preview, manifest ve iki görünüm kontrolü gerekli; aynı kaynak hatasını taşıyan önceki tüzük/program taslakları bu v2 düzeltmesinden otomatik düzelmiş sayılmaz.
+
+Aydın 18 Ekim ön seçiminde 4.094/4.152 farklılığı ve 26 Ekim kongre haberinin 16.33 yayın saati ile başka haberdeki beklenen 17.00 kapanış ayrı kaynaklarla kaydedildi (`c3b85aa`, `7841039`, `f0b4cd1`, `abc0068`); tutanak görülmedi ve sayılar uzlaştırılmadı. Afyon ön seçiminin ayrı özgün haberi ve ilgili kaynak taslağı `67f519b`; kongre haberindeki gelecek zaman gerçekleşme diye kullanılmadı. 16 Kasım tarihli daha geç tüzük PDF ipucu 9 Kasım değişiklik notları içeriyor, ancak kesim anındaki tüm metin olduğunu varsaymayın. Gerçek aramalar `8ef55ac` ve `67f519b`; 610 kapsam hücresi ve 16/18 eski zincirin tamamlanması hâlâ açık.
+
 ## 2026-11-21 21:56 UTC — daha güncel durum
 
 Housing preview PID 754968/session 97130, housing source-check v2 PID 764737/session 4966; Uşak source-check v2 PID 765080/session 86472, Uşak preview PID 781695/session 25448; Diyarbakır source-check PID 793223/session 86934 son sorguda hâlâ çalışıyor. Gerçek çıkışları bekleyin; eşzamanlı aynı komutları başlatmayın.
