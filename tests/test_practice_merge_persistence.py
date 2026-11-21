@@ -66,17 +66,32 @@ class MergePersistence(unittest.TestCase):
         original = json.loads((arsiv.DATA / 'releases' / base / 'records.json').read_text())
         event = package['practice_records']['practice_event'][0]['id']
         passage = package['practice_records']['practice_event_evidence'][0]['passage_id']
-        version = next(row['version_id'] for row in original['passage'] if row['id'] == passage)
-        review = dict(subject_kind='practice_event', subject_id=event, reviewer_kind='agent',
-                      reviewed_at='2026-11-18T12:00:00+00:00', source_version_ids=json.dumps([version]),
-                      passage_ids=json.dumps([passage]), inspected_sections=json.dumps(['Technical fixture section']),
-                      supported_claim='Technical fixture only; no research assertion.',
-                      limitations='Technical test metadata does not certify source content.',
-                      result='reviewed', reason='Fixture tests origin serialization.')
+        review_data = copy.deepcopy(original)
+        records = package['practice_records']
+        new_passages = {row['passage_id'] for row in records.get('practice_event_evidence', [])
+                        if row not in original.get('practice_event_evidence', [])}
+        for kind, rows in records.items():
+            existing = review_data.setdefault(kind, [])
+            for row in rows:
+                if row not in existing:
+                    existing.append(row)
+        passages = {row['id']: row for row in review_data['passage']}
+        reviews = []
+        for (kind, identity), (refs, _) in uygulamalar.practice_review_package_targets(
+                review_data, records, new_passages, package.get('party_id')).items():
+            reviews.append(dict(subject_kind=kind, subject_id=identity, reviewer_kind='agent',
+                reviewed_at='2026-11-18T12:00:00+00:00',
+                source_version_ids=json.dumps(sorted({passages[p]['version_id'] for p in refs})),
+                passage_ids=json.dumps(sorted(refs)), inspected_sections=json.dumps(['Technical section ' + kind]),
+                supported_claim='Technical fixture subject ' + identity,
+                limitations='Technical test metadata does not certify source content.',
+                result='reviewed', reason='Fixture tests origin serialization.'))
+        review = next(row for row in reviews if (row['subject_kind'], row['subject_id']) == ('practice_event', event))
         package['practice_records'].update(practice_source_review_contract=[dict(version=1)],
-            practice_source_review=[review], practice_source_review_revision_contract=[dict(version=2)],
-            practice_source_review_revision=[dict(review, revision=2, reviewed_at='2026-11-18T13:00:00+00:00')])
-        package['source_review_refs'] = [dict(subject_kind='practice_event', subject_id=event)]
+            practice_source_review=reviews, practice_source_review_revision_contract=[dict(version=2)],
+            practice_source_review_revision=[dict(review, revision=2, reviewed_at='2026-11-18T13:00:00+00:00',
+                reason='Fixture verifies revised review origin serialization.')])
+        package['source_review_refs'] = [dict(subject_kind=r['subject_kind'], subject_id=r['subject_id']) for r in reviews]
         source = raw(package)
         schemas = (uygulamalar.PRACTICE_TABLES | uygulamalar.PRACTICE_VARIANT_TABLES |
                    uygulamalar.PRACTICE_EVIDENCE_TABLES | uygulamalar.PRACTICE_COVERAGE_TABLES |
