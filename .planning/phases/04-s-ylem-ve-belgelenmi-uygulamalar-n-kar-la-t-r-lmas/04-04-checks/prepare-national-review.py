@@ -1,0 +1,10 @@
+"""Record national primary source checks without implying congress results."""
+import json
+from pathlib import Path
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks');r=json.loads((p/'program-review-draft-v3.json').read_text());ev='0404-genelbaskan-onsecim'; ref='0404-genelbaskan-onsecim-p'; speech='0105-speech-p';rel='0404-genelbaskan-onsecim-iliski-id'
+items=[('practice_event_evidence',ev+'|'+ref+'|action',[ref],'Haber, parti açıklamasında genel başkan ön seçimi sonuçlarının bildirildiğini aktarıyor.'),('practice_event',ev,[ref],'Parti açıklamasının 8 Kasım ulusal ön seçimle ilgili olduğu görülüyor.'),('practice_relation',rel,[speech,ref],'Beyan ile genel başkan ön seçimi haberi aynı seçim yöntemiyle ilgilidir.'),('practice_relation.target_finding_id',rel,[speech],'Özelin genel, il ve ilçe başkanlarının üyelerce seçimi beyanı hedefleniyor.'),('practice_relation.explanation_finding_id',rel,[speech,ref],'Açıklama beyanı, ulusal ön seçimi ve kurultay ayrımını anlatıyor.')]
+versions={speech:'0105-speech-v1',ref:'0404-genelbaskan-onsecim-v1'};sections={speech:'Euronews 4 Ağustos, başkanların üyelerce seçimi beyanı',ref:'Gazete Oksijen 8 Kasım, genel başkan ön seçimi açıklaması'}
+for kind,identity,passages,claim in items:
+ r['practice_source_review'].append(dict(subject_kind=kind,subject_id=identity,reviewer_kind='agent',reviewed_at='2026-11-21T20:05:37+00:00',source_version_ids=json.dumps([versions[x] for x in passages],ensure_ascii=False),passage_ids=json.dumps(passages,ensure_ascii=False),inspected_sections=json.dumps([sections[x] for x in passages],ensure_ascii=False),supported_claim=claim,limitations='Haber parti açıklamasını aktarıyor; sandık tutanakları ve sonraki kurultay sonucu görülmedi.',result='reviewed',reason='Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı.'))
+r['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in r['practice_source_review']]
+(p/'national-review-draft.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print('NATIONAL_REVIEW_DRAFT',len(r['practice_source_review']))
