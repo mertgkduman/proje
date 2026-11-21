@@ -1,4 +1,4 @@
-"""Run the unmodified archive commands on the separately owned Samsun draft."""
+"""Run archive commands against one isolated Yeni Parti draft."""
 import hashlib
 import json
 import os
@@ -53,24 +53,26 @@ def ignore(directory, names):
     return ignored.intersection(names)
 
 
-def check(job, name, args, cwd, marker):
-    path = HERE / f'samsun-reply-{job}-{name}.log'
+def check(receipt_name, name, args, cwd, marker):
+    path = HERE / f'{receipt_name}-{name}.log'
     with path.open('x', encoding='utf-8') as log:
         code = subprocess.call([sys.executable, 'src/arsiv.py', *args], cwd=cwd, stdout=log, stderr=subprocess.STDOUT)
         log.flush()
         os.fsync(log.fileno())
-    receipt(HERE / f'samsun-reply-{job}-{name}.exit', f'{code}\n')
+    receipt(HERE / f'{receipt_name}-{name}.exit', f'{code}\n')
     require(code == 0, f'{name}: exit {code}')
     require(any(line.startswith(marker) for line in path.read_text().splitlines()), f'{name}: missing {marker}')
 
 
-def main(package_path, review_path):
+def main(package_path, review_path, scope='samsun-reply', event_id='0404-samsun-soz-event',
+         relation_id='0404-samsun-soz-iliski-id', absent_dispute='0404-samsun-soz-dispute'):
     job = os.environ['SLURM_JOB_ID']
+    receipt_name = f'{scope}-{job}'
     baseline = canonical_identity()
     ps, rs, inv = (sha(path) for path in (package_path, review_path, INVENTORY))
     package = json.loads(package_path.read_text())
     require(package['base_release'] == baseline['release'] and package['party_id'] == 'yeni-parti', 'wrong package base/owner')
-    with tempfile.TemporaryDirectory(prefix='gsd-0404-samsun-reply-') as tmp:
+    with tempfile.TemporaryDirectory(prefix=f'gsd-0404-{scope}-') as tmp:
         stage = Path(tmp)
         shutil.copytree(ROOT / 'src', stage / 'src', ignore=ignore)
         shutil.copytree(DATA, stage / 'data', ignore=ignore)
@@ -105,12 +107,12 @@ def main(package_path, review_path):
         print(f'Staged {len(paths)} original, readable and view paths; package {ps}; review {rs}', flush=True)
         staged_inventory = stage / 'data/practices/04-inventory.json'
         require(sha(staged_inventory) == inv, 'staged inventory differs')
-        check(job, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+        check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
               stage, 'PRACTICE_INPUT_OK')
-        check(job, 'source', ['practice-source-check','--input',str(package_path),'--review',str(review_path)],
+        check(receipt_name, 'source', ['practice-source-check','--input',str(package_path),'--review',str(review_path)],
               ROOT, 'PRACTICE_SOURCE_REVIEW_OK')
         out = stage / 'view'
-        check(job, 'preview', ['practice-preview','--input',str(package_path),'--inventory',str(INVENTORY),
+        check(receipt_name, 'preview', ['practice-preview','--input',str(package_path),'--inventory',str(INVENTORY),
                                '--out',str(out),'--source-root',str(SOURCE)], ROOT, 'PRACTICE_PREVIEW_OK')
         releases = list((out / 'releases').iterdir())
         require(len(releases) == 1, 'expected one preview release')
@@ -118,22 +120,26 @@ def main(package_path, review_path):
         manifest = json.loads((rel / 'manifest.json').read_text())
         require({name: sha(rel / name) for name in manifest['files']} == manifest['files'], 'preview files differ')
         snapshot = json.loads((rel / 'records.json').read_text())
-        require(any(r['id']=='0404-samsun-soz-event' for r in snapshot['practice_event']), 'Samsun event missing')
-        require(any(r['id']=='0404-samsun-soz-iliski-id' for r in snapshot['practice_relation']), 'Samsun relation missing')
-        require(all(r['id']!='0404-samsun-soz-dispute' for r in snapshot['practice_dispute']), 'unsupported dispute persisted')
+        require(any(r['id']==event_id for r in snapshot['practice_event']), f'event missing: {event_id}')
+        require(any(r['id']==relation_id for r in snapshot['practice_relation']), f'relation missing: {relation_id}')
+        if absent_dispute:
+            require(all(r['id'] != absent_dispute for r in snapshot['practice_dispute']), f'unsupported dispute persisted: {absent_dispute}')
         report = (rel / 'index.html').read_text()
         for prefix in ('party', 'comparison'):
-            require(f'id="{prefix}-practice-0404-samsun-soz-iliski-id"' in report, f'{prefix} relation missing')
+            require(f'id="{prefix}-practice-{relation_id}"' in report, f'{prefix} relation missing')
         require(canonical_identity()==baseline, 'canonical archive changed')
         require((sha(package_path),sha(review_path),sha(INVENTORY))==(ps,rs,inv), 'draft or inventory changed')
-        artifact = DATA / '.staging' / f'gsd-0404-samsun-reply-{job}'
+        artifact = DATA / '.staging' / f'gsd-0404-{receipt_name}'
         shutil.copytree(out, artifact)
-        result = {'job':job,'scope':'Samsun reply draft only','package_sha256':ps,'review_sha256':rs,
+        result = {'job':job,'scope':scope,'event':event_id,'relation':relation_id,'absent_dispute':absent_dispute,'package_sha256':ps,'review_sha256':rs,
                   'inventory_sha256':inv,'canonical':baseline,'preview':str(artifact/'releases'/rel.name),
                   'preview_manifest_sha256':sha(rel/'manifest.json'),'staged_source_paths':len(paths)}
-        receipt(HERE / f'samsun-reply-{job}.json', json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+        receipt(HERE / f'{receipt_name}.json', json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 
 
 if __name__ == '__main__':
-    supplied = tuple(Path(p).resolve() for p in sys.argv[1:])
-    main(*(supplied or (PACKAGE, REVIEW)))
+    arguments = sys.argv[1:]
+    if arguments:
+        main(Path(arguments[0]).resolve(), Path(arguments[1]).resolve(), *arguments[2:])
+    else:
+        main(PACKAGE, REVIEW)
