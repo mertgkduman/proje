@@ -1,5 +1,13 @@
 # 04-04 devam kaydı — tamamlanmadı
 
+## 2026-11-21 21:44 UTC — daha güncel durum
+
+Beş süreç: housing preview PID 754968/session 97130, housing source-check review v2 PID 764737/session 4966; Uşak source-check review v2 PID 765080/session 86472, Uşak preview PID 781695/session 25448; Diyarbakır source-check PID 793223/session 86934. Diyarbakır staging session 35006 gerçek çıkış 0 `PRACTICE_INPUT_OK`, `diyarbakir-staging-proof.md` commit `34a8936`. Bunların diğer aşamalarını sonuç gelmeden başarılı saymayın ve eşzamanlı tekrar başlatmayın.
+
+Ankara 25 Ekim kongresi haberleri 372/357 ve 349 geçerli oy bakımından farklı; bayt/kaynak kayıtları `7f5d504`, tek açıklamada her iki atıf ve belirsizliği koruyan geniş taslak `018f71b`: paket SHA `c9a1b9f435042e21d1caa5c6f326f7fb92bbaf93a2a65cf38fa0e66200ed6891`, review SHA `6a3cb2adebdd3e30ad13872023d23756e6469465ac3cb8c11ad17c228e3ca4d9`, 115 hedef doğrudan bellekte doğrulandı. 9 Kasım açıklamasına erişim sayfanın kendi API çağrısı üzerinden bulundu: `00fc415` özgün JSON, `440b7c4` MIME `application/json` korunmuş normal capture, pasif görünüm ve owner-bound kaynak taslağı; farklı alan adı kullanıcı seçtiği resmî alan adıyla özdeşlenmedi. Eski tüzük 80/20 ve haber/sözcü açıklamasında tek seferlik 150/30 ayrı kaynaklı taslak `964f67b`: paket SHA `c846693427b92979a3033f56f6aa07dc82765c2ac8de4ffbcb12e60191f77ce6`, review SHA `33efcc876d0fb1b522b8017063b322fe4c4d1d26b2d284fb88e3a2725e9d09b0`, 124 hedef bellekte doğrulandı; tam yeni tüzük metni yok.
+
+TBMM 8 Ağustos 123. birleşim tarım genel görüşme grup önerisi ve ret tutanağı `67ffb34`; programla karşılaştırma taslağı `21a8930`, paket SHA `f437ae23f8f9b0340cdefe64e5c818fd6ffbed889c3a8142b5bb297d8646f78d`, review SHA `e87535d731936fd91a6a279c6ed9656c71fed40c07f8085c4280bf5b68c25846`; 133 hedef bellekte doğrulandı. Bunlar kaynak-check, gerçek preview veya tam parti kapsaması değildir. `1f9507c` on kapsam hücresinin ara okumalarını, kapanış uydurmadan açık kuyrukta kaydetti.
+
 ## 2026-11-21 21:25 UTC — daha güncel durum
 
 Ulusal taslak staging, gerçek source-check session 5218 ve preview session 56904 çıkış 0. DB/JSON, iki görünüm, kaynak ve manifest `national-preview-proof.md`; SHA `eadac56120944d839b3ad8c0a87e9d01cf00b157abd90fe2374e35d9813ef92a` ile review `785da80425db877fccf5132d7a5ed0a9813197a3946ae30086efda135daee2fa` aynı baytlarla canlı parti paketine alındı, `3e11709`. Bu yalnız dar kapsam doğrulaması; stage tracer, parti kuyruğu ve plan açık, kanonik release değiştirilmedi.
