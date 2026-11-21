@@ -1,0 +1,3 @@
+# Sendikal haklar dilimi staging girdisi
+
+Önceki İstanbul paketi ve sendika dilimi ayrı test girdisinde birleştirildi: paket SHA256 `1f07a171d46a50c7c6d5058f5d2410cc5107770ea236e6fc0a5eecbe0a39f2e9`, review SHA256 `e33f6be5fbce16f3eebb185d450230410d4d01b8ee1edb2b2df7ac62bbdfc350`. İzole `/tmp/gsd-0404-program-staging` içinde 206 kaynak yolu kontrol edildi; 202 mevcut yol eşit, dört yeni dosya eklendi. Kod ve envanter daha önceki aynı staging kopyasıdır. `python3 src/arsiv.py practice-check --input data/practices/package-union-standalone-draft.json --inventory data/practices/04-inventory.json` session 97181 çalışıyor; henüz gerçek çıkış alınmadı. Bu ayrı girdi orkestratörün eşzamanlı geniş düzeltme taslağını değiştirmez ve kapsam kapanışı değildir.
