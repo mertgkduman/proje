@@ -1,0 +1,11 @@
+import json
+from pathlib import Path
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks');r=json.loads((p/'usak-review-draft.json').read_text()); ev='0404-genelbaskan-onsecim'; national='0404-genelbaskan-onsecim-p'; edirne='0404-edirne-genel-onsecim-p'; esk='0404-eskisehir-genel-baslama-p'
+versions={national:'0404-genelbaskan-onsecim-v1',edirne:'0404-edirne-genel-onsecim-v1',esk:'0404-eskisehir-genel-onsecim-v1'}; sections={national:'Gazete Oksijen ulusal ön seçim açıklaması',edirne:'Hudut Edirne merkez sandıkları',esk:'Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları'}
+for item in r['practice_source_review']:
+ if item['subject_kind']=='practice_event' and item['subject_id']==ev:
+  refs=[national,edirne,esk];item['passage_ids']=json.dumps(refs,ensure_ascii=False);item['source_version_ids']=json.dumps([versions[x] for x in refs],ensure_ascii=False);item['inspected_sections']=json.dumps([sections[x] for x in refs],ensure_ascii=False);item['supported_claim']='Ulusal ön seçim açıklaması ve Edirne ile Eskişehirdeki yerel sandık haberleri aynı genel başkan ön seçimine ilişkindir.';item['limitations']='Yerel sandıklar ulusal olayla örtüşür; sayılar toplanmaz ve sonraki kurultay sonucu çıkarılmaz.'
+for ref in (edirne,esk):
+ r['practice_source_review'].append(dict(subject_kind='practice_event_evidence',subject_id=ev+'|'+ref+'|action',reviewer_kind='agent',reviewed_at='2026-11-21T21:03:21+00:00',source_version_ids=json.dumps([versions[ref]],ensure_ascii=False),passage_ids=json.dumps([ref],ensure_ascii=False),inspected_sections=json.dumps([sections[ref]],ensure_ascii=False),supported_claim='8 Kasım genel başkan ön seçiminin yerel sandığı haberleştirildi.',limitations='Yerel sandık ulusal ön seçimle örtüşür; kurultay ve ulusal toplam olarak yeniden sayılmaz.',result='reviewed',reason='Yerel haber ve ulusal olay tarihi karşılaştırıldı.'))
+r['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in r['practice_source_review']]
+(p/'national-locals-review-draft.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print('NATIONAL_LOCALS_REVIEW_DRAFT',len(r['practice_source_review']))
