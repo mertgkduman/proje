@@ -29,6 +29,11 @@ items=[('practice_event_evidence',event+'|'+q+'|'+stage,[q],point) for q,stage,p
 items += [('practice_contribution',contribution,qs,'DEM adına emeklilik ve yaşlı kadın geliri talepleri.'),('practice_contribution.finding_id',contribution,qs,'Kaya açıklaması özgün tutanakta.'),('practice_candidate',candidate,qs,'Önceki söylem tarihi ve uygulama araştırması açık.')]
 for kind,ident,ps,claim in items:
  review['practice_source_review'].append(dict(subject_kind=kind,subject_id=ident,reviewer_kind='agent',reviewed_at=now,source_version_ids=json.dumps([ver['id']]),passage_ids=json.dumps(ps),inspected_sections=json.dumps([passages[q]['section'] for q in ps],ensure_ascii=False),supported_claim=claim,limitations='DEM adına belirtilen talepler fiilen sağlanan gelir veya isimli oy değildir.',result='reviewed',reason='TBMM özgün tutanağı okundu: '+claim))
+event_review=next(x for x in review['practice_source_review'] if x['subject_kind']=='practice_event' and x['subject_id']==event)
+event_review['passage_ids']=json.dumps(list(dict.fromkeys(json.loads(event_review['passage_ids'])+qs)),ensure_ascii=False)
+event_review['inspected_sections']=json.dumps(list(dict.fromkeys(json.loads(event_review['inspected_sections'])+[passages[q]['section'] for q in qs])),ensure_ascii=False)
+event_review['supported_claim']+=' Kaya konuşması ve üç imzalı önergenin komisyonda reddi de ayrı kaynaklanır.'
+event_review['reason']+=' Komisyon olayına eklenen tüm yeni pasajlar da incelendi.'
 review['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in review['practice_source_review']]
 for name,obj in [('5344-kaya-draft.json',pkg),('5344-kaya-review-draft.json',review)]:
  path=p/name;path.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n');print(name,sha(path.read_bytes()))

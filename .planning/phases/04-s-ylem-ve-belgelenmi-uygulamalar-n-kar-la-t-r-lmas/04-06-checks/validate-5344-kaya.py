@@ -6,7 +6,7 @@ code_root=os.environ.get('GSD04_RENDERER_CHECKOUT')
 if code_root:
  mod.ROOT=Path(code_root);mod.DATA=mod.ROOT/'data';mod.INVENTORY=mod.DATA/'practices/04-inventory.json';mod.SOURCE=mod.DATA/'practices/sources/dem'
 package=here/'5344-kaya-draft.json';review=here/'5344-kaya-review-draft.json';before=json.loads((root/'data/practices/04-dem.json').read_text());candidate=json.loads(package.read_text());canonical=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
-assert mod.sha(package)=='e683ef1610e8b0d891c1a096444501a7632539ce96a83e1055b3f7bfa43a9e20' and mod.sha(review)=='cd33cc92c501a9475e8a98c989ad33dbc03507e077e73e0487a0ab7413498f67'
+assert mod.sha(package)=='abc848b7f06d0de100a1ca28d95f228d9a4dc89c5d67f810583c49143151966d' and mod.sha(review)=='1ec892c2ff51afb9f0114d45b5bbcdd36b120e1961c67293fa743600b4b580ab'
 for k in ('entries','scope_inventory'):assert {canonical(x) for x in before[k]} <= {canonical(x) for x in candidate[k]},k
 for k,rows in before['practice_records'].items():assert {canonical(x) for x in rows} <= {canonical(x) for x in candidate['practice_records'].get(k,[])},k
 mod.main(package,review,'dem-5344-kaya','0406-2026-23464-commission','0406-2025-224-relation','')
