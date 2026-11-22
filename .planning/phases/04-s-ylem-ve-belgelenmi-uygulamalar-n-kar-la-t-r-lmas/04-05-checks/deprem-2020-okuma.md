@@ -57,3 +57,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 33–37 de okundu: Bedri Yaşar ve Müzeyyen Şevkin’in soruları ve AKUT temsilcilerinin eğitim, akreditasyon ve kapasite yanıtları yer alır. Beyanlar ilgili kişi ve kuruluşa aittir; TİP eylemine ya da bağımsız sonuca çevrilmez. İndeks 38–154 açık.
 
 9 Aralık toplantısı PDF indeks 38–42 de okundu: AKUT gönüllüleri özel sektörde izin, itfaiyelerle ortaklık ve ilk müdahale koordinasyonu hakkında üyelerin sorularını yanıtlar. Aktarılanlar katılımcı görüşleridir; TİP’e atfedilmez. İndeks 43–154 açık.
+
+9 Aralık toplantısı PDF indeks 43–47 de okundu: Gökan Zeybek ve Kamil Okyay Sındır’ın afet alanı ve arama-kurtarma soruları ile AKUT yanıtları bulunur. Önermeler ve kişisel gözlemler kaynakta ilgili taraflara aittir; bağımsız sonuç veya TİP’e atıf yapılmadı. İndeks 48–154 açık.
