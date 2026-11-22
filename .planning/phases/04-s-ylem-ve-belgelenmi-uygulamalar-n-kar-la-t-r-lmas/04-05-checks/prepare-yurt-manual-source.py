@@ -17,5 +17,9 @@ entries=[
  dict(kind='source_attribution',values=dict(version_id=vid,kind='official',publisher='Türkiye Büyük Millet Meclisi',author=None,social_handle=None,published_at=None,date_precision='unknown',public_url=url,basis='TBMM imzalı taramasının altı sayfası görüntülenerek okundu.')),
  dict(kind='passage',values=dict(id=passage,version_id=vid,exact='Gençlik ve Spor Bakanlığı Kredi ve Yurtlar Genel Müdürlüğü ve Yükseköğretim Kurumlarına ait tüm yurtlar ücretsiz olarak barınma hizmeti sunar.',prefix=None,suffix=None,article='MADDE 1',section='Öğrencilere barınma hizmeti ve desteği ile yurt inşası',pdf_page_index=5,printed_page=None)),
  dict(kind='manual_passage',values=dict(passage_id=passage,checked_at=now,method='Özgün tarama sayfası Poppler ile görsel olarak okundu.',reason='Teklif 1. maddesindeki ücretsiz kamu yurdu cümlesi 5 indeksli sayfa görüntüsüyle doğrudan karşılaştırıldı; metin katmanı boştur.'))]
+assert pdf_page_exists(f,0) and not pdf_page_text(f,0).strip()
+entries.extend([
+ dict(kind='passage',values=dict(id=doc+'-authority-p',version_id=vid,exact='Erkan Baş\nTİP Genel Başkanı',prefix=None,suffix=None,article=None,section='23 Eylül 2021 imzalı sunuş',pdf_page_index=0,printed_page=None)),
+ dict(kind='manual_passage',values=dict(passage_id=doc+'-authority-p',checked_at=now,method='Özgün tarama sayfası Poppler ile görsel olarak okundu.',reason='Kapakta ilk imza sahibinin adı ve hemen altındaki TİP Genel Başkanı unvanı doğrudan görüntüden okundu.'))])
 (p/'yurt-manual-source-draft.json').write_text(json.dumps(dict(status='draft_unvalidated',entries=entries),ensure_ascii=False,indent=2)+'\n')
 print('MANUAL_SOURCE_DRAFT_ONLY',len(entries))
