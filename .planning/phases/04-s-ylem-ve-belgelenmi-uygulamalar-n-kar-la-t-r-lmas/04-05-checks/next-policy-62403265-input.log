@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0404-next-policy-r3vvoid9/src/arsiv.py", line 3671, in <module>
+    main()
+  File "/tmp/gsd-0404-next-policy-r3vvoid9/src/arsiv.py", line 3583, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-next-policy-r3vvoid9/src/uygulamalar.py", line 1375, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0404-next-policy-r3vvoid9/src/uygulamalar.py", line 1307, in _load_practice_copy
+    validate_practices(data)
+  File "/tmp/gsd-0404-next-policy-r3vvoid9/src/uygulamalar.py", line 932, in validate_practices
+    raise ValueError('Temsil yetkisi kişi ve partiyle uyuşmuyor')
+ValueError: Temsil yetkisi kişi ve partiyle uyuşmuyor

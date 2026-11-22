@@ -1,0 +1,11 @@
+Staged 46 original, readable and view paths; package ab61b4e3bbbe2f0a0f8392e1969f5c0032a36782e2977a83a11e985f17d4be96; review eb7ba4824cb6254ebcb607f80fdc5474396758d4e0383773ab6bd0255789a4d9
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/next-policy-validation.py", line 153, in <module>
+    main(PACKAGE, REVIEW)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/next-policy-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/next-policy-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/next-policy-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1
