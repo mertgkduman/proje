@@ -217,3 +217,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 245–249 okundu: İstanbul, Kocaeli, Erzurum, Van ve Elazığ dönüşüm ve afet konutu örnekleri bakanlık sunumlarına atfen anlatılıyor; teslim edildiği bildirilen ve planlanan birimler ayrıdır. Önceki belediye ve kurum çalışmaları TİP girişimi sayılmadı. İndeks 250 ve sonrası açık.
 
 - 2021 raporu indeks 250–254 metin katmanı okundu: Elazığ projelerinde tamamlanan ve planlanan işler dönemsel bakanlık beyanlarıdır; 251–254 ağırlıkla görsel ve başlıktır, görseller ayrıca incelenmedi ve görsel içerikten olgu çıkarılmadı. 44–254 ilerlemesi metin katmanı okumadır; önceki sayfalardaki gömülü harita/görsellerin tümü incelenmiş sayılmaz. İndeks 255 ve sonrası açık.
+
+- 2021 raporu indeks 255–259 metin katmanı okundu: Malatya afet konutu için bakanlık verileri ve planları var; 256–259’daki fotoğraflar görsel olarak incelenmedi, yalnız başlıkları okundu. İnşaata başlama, plan ve bitim ayrı tutuldu; indeks 260 ve sonrası açık.
