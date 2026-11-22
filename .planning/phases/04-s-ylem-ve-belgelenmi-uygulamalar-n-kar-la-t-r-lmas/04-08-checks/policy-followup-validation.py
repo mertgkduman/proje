@@ -2,6 +2,7 @@
 
 import importlib.util
 import json
+import os
 from pathlib import Path
 import sqlite3
 import sys
@@ -23,6 +24,11 @@ party = sys.argv[1]
 plan, stem, expected_relations, package_hash, review_hash = cases[party]
 here = phase/f'04-{plan}-checks'
 harness.HERE = here
+code_root = os.environ.get('GSD04_RENDERER_CHECKOUT')
+if code_root:
+    harness.ROOT = Path(code_root)
+    harness.DATA = harness.ROOT/'data'
+    harness.INVENTORY = harness.DATA/'practices'/'04-inventory.json'
 harness.SOURCE = harness.DATA/'practices'/'sources'/party
 package = here/'policy-followup-draft.json'
 review = here/'policy-followup-review-draft.json'
@@ -34,7 +40,7 @@ receipt = harness.main(package, review, 'policy-followup', stem+'-event', stem+'
                        expected_party=party, namespace=f'gsd-04{plan}')
 folder = Path(receipt['preview'])
 manifest = json.loads((folder/'manifest.json').read_bytes())
-assert manifest['preview'] and manifest['renderer_version'] == 30
+assert manifest['preview'] and manifest['renderer_version'] == (31 if code_root else 30)
 saved = json.loads((folder/'records.json').read_bytes())
 with sqlite3.connect((folder/'records.sqlite3').as_uri()+'?mode=ro', uri=True) as db:
     db.row_factory = sqlite3.Row
