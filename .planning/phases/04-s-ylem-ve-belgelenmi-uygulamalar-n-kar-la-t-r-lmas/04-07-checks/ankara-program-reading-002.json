@@ -1,0 +1,35 @@
+{
+  "version_id": "0205-iyi-program-page-v1",
+  "sha256": "7165cd05b2643134a6a8fc4910f312915c59c52a31561ec6f657d89f2a493f9a",
+  "read_at": "2026-11-22T05:20:18+00:00",
+  "extracted_character_range": [
+    42000,
+    84000
+  ],
+  "method": "Python HTMLParser; script, style, nav, footer, header dışlanır; metin parçaları boşlukla birleştirilir.",
+  "findings": [
+    {
+      "range": [
+        42000,
+        56000
+      ],
+      "note": "İstihbarat sonu ve ekonomi, sanayi, kamu maliyesi ilkeleri."
+    },
+    {
+      "range": [
+        56000,
+        70000
+      ],
+      "note": "Para politikası, finans, özelleştirme, teknoloji, siber güvenlik ve tarım başlangıcı."
+    },
+    {
+      "range": [
+        70000,
+        84000
+      ],
+      "note": "Tarım, hayvancılık, gıda güvenliği ve orman yönetimi önerileri."
+    }
+  ],
+  "limitation": "Ankara il teşkilatının HTML metninde kabul ve son değişiklik tarihi belirtilmiyor; 2026 yakalamasının tamamı kesim içinde yürürlükte varsayılamaz.",
+  "processed_at": "2026-11-22T05:20:18+00:00"
+}
