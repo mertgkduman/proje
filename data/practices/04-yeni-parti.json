@@ -43949,6 +43949,16 @@
         "scope_context": "Eylem Ertuğ Ertuğrul imzalı yazılı soru 2026-10-12 tarihinde TBMM Başkanlığına kaydedildi.",
         "title": "7/50838 Bildirilen görevlendirme iddiasının Meclis denetimi",
         "occurrence_basis": "Bağlı birincil belge veya olayı aktaran bağımsız haber."
+      },
+      {
+        "id": "0404-tbmm-erken-7-49426-event",
+        "common_event_key": "tbmm-28-yazili-soru-7-49426",
+        "event_at": "2026-09-23",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "title": "7/49426 okul güvenliği yazılı sorusu ve Bakanlık cevabı",
+        "scope_context": "Eylem Ertuğ Ertuğrul’un okul güvenliği ve görevlendirme konulu yazılı sorusu.",
+        "occurrence_basis": "TBMM’nin yazılı soru kayıt günü ve Bakanlığın 30 Ekim tarihli cevap yazısı."
       }
     ],
     "practice_event_evidence": [
@@ -47118,6 +47128,51 @@
         "stage": "initiative",
         "concrete_basis": "Kaynak içindeki bölüm: İmzalı metnin ilgili teklif maddesi veya soru cümlesi",
         "limitation": "İsnat yazılı sorunun konusudur. Cevap 10 Kasım yöntem kesiminden sonra bildirildi. Görevlendirme iddiası veya kapsamı bu kayıtla doğrulanmış sayılmadı.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-filing-signed",
+        "stage": "initiative",
+        "supported_point": "Ertuğrul okulda güvenlik görevlendirmesini ve daha önce uzman çavuş olarak çalışanlar için istihdam seçeneğini sordu.",
+        "concrete_basis": "İmzalı metnin ilgili teklif maddesi veya soru cümlesi",
+        "limitation": "Yazılı soru bireysel milletvekili girişimi. Cevap Bakanlığın bildirimidir. İşe alım önerisinin kabulü ve şiddetin azalıp azalmadığı açık.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-register-date",
+        "stage": "action",
+        "supported_point": "Yazılı soru 23 Eylül 2026 tarihinde TBMM Başkanlığına kaydedildi.",
+        "concrete_basis": "TBMM Başkanlığına geliş tarihi",
+        "limitation": "Yazılı soru bireysel milletvekili girişimi. Cevap Bakanlığın bildirimidir. İşe alım önerisinin kabulü ve şiddetin azalıp azalmadığı açık.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-register-answer-date",
+        "stage": "result",
+        "supported_point": "Bakanlık cevabının 2 Kasım 2026 tarihinde TBMM’ye bildirildiği kaydedildi.",
+        "concrete_basis": "TBMM cevabın geliş veya bildiriliş günü",
+        "limitation": "Yazılı soru bireysel milletvekili girişimi. Cevap Bakanlığın bildirimidir. İşe alım önerisinin kabulü ve şiddetin azalıp azalmadığı açık.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-reply-work",
+        "stage": "result",
+        "supported_point": "Millî Eğitim Bakanlığı, okullarda 2.170 sertifikalı güvenlik görevlisi ve 31.000 okul bahçe görevlisi bulunduğunu bildirdi.",
+        "concrete_basis": "2026–2027 görevlendirme sayıları",
+        "limitation": "Yazılı soru bireysel milletvekili girişimi. Cevap Bakanlığın bildirimidir. İşe alım önerisinin kabulü ve şiddetin azalıp azalmadığı açık.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-reply-protocol",
+        "stage": "result",
+        "supported_point": "Bakanlık cevabı 21 Eylül 2026 tarihli protokol güncellemesini aktarıyor. Bu tarih, yazılı sorunun kayıt gününden önce.",
+        "concrete_basis": "Protokol güncellemesi",
+        "limitation": "Yazılı soru bireysel milletvekili girişimi. Cevap Bakanlığın bildirimidir. İşe alım önerisinin kabulü ve şiddetin azalıp azalmadığı açık.",
         "epistemic_type": "claim"
       }
     ],
@@ -56603,6 +56658,15 @@
         "state": "eligible",
         "reason": "Görevlendirme iddiası karşısında Meclisin izin ve denetim işlevine başvurulması programdaki demokratik savunma denetimiyle ilgili.",
         "passage_ids": "[\"0404-tbmm-erken-7-50838-register-date\", \"0404-tbmm-erken-7-50838-filing-signed\"]"
+      },
+      {
+        "id": "0404-tbmm-erken-7-49426-candidate",
+        "scope_id": "practice-6c39268b9700a5c88ce47149cb6e2b365a359ca612e503bc26cf5ab9caac94c4",
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "relation_id": null,
+        "state": "unmatched",
+        "reason": "Okul güvenliği ve güvenli eğitim hizmetine erişim hakkında bireysel yazılı soru. Soru ile ilgili aynı kapsamda bir parti hükmü bağlanamadı.",
+        "passage_ids": "[\"0404-tbmm-erken-7-49426-filing-signed\", \"0404-tbmm-erken-7-49426-register-date\", \"0404-tbmm-erken-7-49426-register-answer-date\", \"0404-tbmm-erken-7-49426-reply-work\", \"0404-tbmm-erken-7-49426-reply-protocol\"]"
       }
     ],
     "practice_closure": [],
@@ -58739,6 +58803,36 @@
         "passage_id": "0404-tbmm-erken-7-50838-filing-signed",
         "stage": "initiative",
         "basis_kind": "document"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-filing-signed",
+        "stage": "initiative",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-register-date",
+        "stage": "action",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-register-answer-date",
+        "stage": "result",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-reply-work",
+        "stage": "result",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0404-tbmm-erken-7-49426-event",
+        "passage_id": "0404-tbmm-erken-7-49426-reply-protocol",
+        "stage": "result",
+        "basis_kind": "document"
       }
     ],
     "practice_actor_period": [],
@@ -58880,5 +58974,4238 @@
     }
   ],
   "tranches": [],
-  "source_review_refs": []
+  "source_review_refs": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "tracer-cesme|0105-cesme-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "tracer-cesme"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "tracer-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "tracer-relation-id"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "tracer-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "tracer-contribution"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cesme-congress|0404-cesme-kongre-p|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cesme-congress"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cesme-congress-relation-id"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-cesme-congress-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-cesme-congress-contribution"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kayseri-kayit-iddiasi|0404-kayseri-uyelik-haber-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kayseri-kayit-iddiasi"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-uyelik-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-uyelik-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-uyelik-charter-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kayseri-uyelik-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kayseri-uyelik-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kayseri-uyelik-relation"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-kayseri-kayit-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-kayseri-kayit-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-kayseri-kayit-dispute|0404-kayseri-uyelik-haber-p|Başvuruların sisteme işlenmediği iddiası|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-kayseri-kayit-dispute|0404-kayseri-kongre-p|Üyelerin oy hakkı ve tarafların karşı çıkışı|conflict"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-gaziantep-disiplin-aciklama|0404-gaziantep-sevk-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-gaziantep-disiplin-aciklama|0404-gaziantep-ihrac-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-gaziantep-disiplin-aciklama"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-disiplin-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-disiplin-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-disiplin-charter-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-gaziantep-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-gaziantep-disiplin-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-gaziantep-disiplin-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-gaziantep-disiplin-dispute|0404-gaziantep-sevk-p|Tedbirli sevk|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-gaziantep-disiplin-dispute|0404-gaziantep-ihrac-p|İl yönetimine atfedilen kesin ihraç|conflict"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-itiraz|0404-mugla-onsecim-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-itiraz|0404-mugla-itiraz-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-mugla-onsecim-itiraz"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-mugla-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-mugla-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-mugla-relation-id"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-mugla-dispute-id"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-mugla-dispute-id"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-dispute-id|0404-mugla-onsecim-p|İtiraz ve oy kullanma iddiaları|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-dispute-id|0404-mugla-itiraz-p|Genel merkezin ret yanıtı|conflict"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-asgari-ucret-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-gelen-kagit-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-asgari-ucret-teklif"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-asgari-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-asgari-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-asgari-program-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-asgari-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-asgari-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-asgari-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-asgari-ucret-teklif|0404-tbmm-3790-pdf-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-genelbaskan-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-genelbaskan-onsecim"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-genelbaskan-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-barinma-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-barinma-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-barinma-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-barinma-grup-onerisi|0404-barinma-grup-oneri-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-barinma-grup-onerisi|0404-barinma-grup-oylama-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-barinma-grup-onerisi"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-barinma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-barinma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-barinma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-usak-onsecim-event|0404-usak-onsecim-detay-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-usak-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-usak-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-usak-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-usak-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-edirne-genel-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-eskisehir-genel-baslama-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-bursa-onsecim-event|0404-bursa-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-bursa-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-bursa-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-bursa-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-bursa-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sakarya-onsecim-event|0404-sakarya-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-sakarya-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-sakarya-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-sakarya-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-sakarya-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-izmir-onsecim-event|0404-izmir-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-izmir-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-izmir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-izmir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-izmir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-izmir-kongre-event|0404-izmir-kongre-tire-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-izmir-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-izmir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-izmir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-izmir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-diyarbakir-onsecim-event|0404-diyarbakir-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-diyarbakir-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-diyarbakir-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-diyarbakir-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-diyarbakir-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ankara-kongre-event|0404-ankara-kongre-vtv-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ankara-kongre-event|0404-ankara-kongre-baskent-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ankara-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ankara-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ankara-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ankara-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-pm-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-pm-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-pm-charter-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-pm-degisikligi-event|0404-tuzuk-degisikligi-haber-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-pm-degisikligi-event|0404-charter-announcement-api-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-pm-degisikligi-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-pm-degisikligi-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-pm-degisikligi-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-pm-degisikligi-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-tarim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-tarim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-tarim-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tarim-grup-onerisi|0404-tbmm-tarim-tutanak-oneri-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tarim-grup-onerisi|0404-tbmm-tarim-tutanak-oylama-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tarim-grup-onerisi"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tarim-grup-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tarim-grup-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tarim-grup-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-emekli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-emekli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-emekli-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-3960-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-imza-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-emekli-teklif-event|0404-tbmm-emekli-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-emekli-teklif-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-emekli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-emekli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-emekli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-engelli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-engelli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-engelli-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-3853-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-imza-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-teklif-event|0404-tbmm-engelli-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-engelli-teklif-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-engelli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-engelli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-engelli-teklif-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-onsecim-event|0404-aydin-sonuc-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-onsecim-event|0404-aydin-onsecim-ihbar-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aydin-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aydin-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aydin-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aydin-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-bulten-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aydin-kongre-event|0404-aydin-kongre-gunaydin-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aydin-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aydin-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aydin-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aydin-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-afyon-onsecim-event|0404-afyon-onsecim-sehir-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-afyon-onsecim-event|0404-afyon-kongre-plan-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-afyon-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-afyon-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-afyon-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-afyon-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-samsun-kongre-event|0404-samsun-kongre-objektif-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-samsun-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-samsun-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-samsun-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-samsun-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-istanbul-onsecim-event|0404-istanbul-onsecim-sozcu-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-istanbul-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-istanbul-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-istanbul-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-istanbul-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-samsun-soz-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-samsun-soz-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-samsun-soz-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-samsun-soz-event|0404-samsun-kongre-soz-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-samsun-soz-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-samsun-soz-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-samsun-soz-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-samsun-soz-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-yargi-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-yargi-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-yargi-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yargi-arastirma-event|0404-tbmm-yargi-4551-amac-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yargi-arastirma-event|0404-tbmm-yargi-4551-sahip-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yargi-arastirma-event|0404-tbmm-yargi-4551-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yargi-arastirma-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yargi-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yargi-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yargi-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-cocuk-haklari-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-cocuk-haklari-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-cocuk-haklari-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-yoksulluk-event|0404-tbmm-cocuk-4682-amac-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-yoksulluk-event|0404-tbmm-cocuk-4682-sahip-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-yoksulluk-event|0404-tbmm-cocuk-4682-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cocuk-yoksulluk-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cocuk-yoksulluk-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cocuk-yoksulluk-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cocuk-yoksulluk-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-aile-politikalari-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-aile-politikalari-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-aile-politikalari-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-nufus-arastirma-event|0404-tbmm-gender-4875-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-nufus-arastirma-event|0404-tbmm-gender-4875-sahip-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-nufus-arastirma-event|0404-tbmm-gender-4875-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-nufus-arastirma-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-nufus-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-nufus-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-nufus-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-balikesir-onsecim-event|0404-balikesir-onsecim-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-balikesir-onsecim-event|0404-balikesir-oy-metin-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-balikesir-onsecim-event|0404-balikesir-oy-tablo-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-balikesir-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-balikesir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-balikesir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-balikesir-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-balikesir-kongre-event|0404-balikesir-kongre-korfez-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-balikesir-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-balikesir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-balikesir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-balikesir-kongre-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-samsun-onsecim-event|0404-samsun-onsecim-diye-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-samsun-onsecim-event|0404-samsun-onsecim-sondakika-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-samsun-onsecim-event|0404-samsun-iha-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-samsun-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-samsun-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-samsun-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-samsun-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-samsun-onsecim-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-samsun-onsecim-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-samsun-onsecim-dispute|0404-samsun-onsecim-diye-p|3.998 ve 3.798|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-samsun-onsecim-dispute|0404-samsun-onsecim-sondakika-p|3.999 ve 3.796|conflict"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-samsun-onsecim-dispute|0404-samsun-iha-p|Atakum itirazı|support"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ankara-onsecim-event|0404-ankara-onsecim-karaca-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ankara-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ankara-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ankara-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ankara-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-event|0404-mugla-oy-marmaris-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mugla-onsecim-event|0404-mugla-oy-gazete-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-mugla-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-mugla-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-mugla-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-mugla-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-mugla-onsecim-sayi-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-mugla-onsecim-sayi-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-onsecim-sayi-dispute|0404-mugla-oy-marmaris-p|Girgin 7.574|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-mugla-onsecim-sayi-dispute|0404-mugla-oy-gazete-p|Girgin 7.584|conflict"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-69-il-onsecim-event|0105-provinces-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-69-il-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-69-il-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-69-il-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-69-il-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-tbmm-onsecim-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-tbmm-onsecim-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-tbmm-onsecim-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-onsecim-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-sendika-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-sendika-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-sendika-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sendika-arastirma-event|0404-tbmm-sendika-4903-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sendika-arastirma-event|0404-tbmm-sendika-4903-sahip-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sendika-arastirma-event|0404-tbmm-sendika-4903-tarih-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-sendika-arastirma-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-sendika-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-sendika-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-sendika-arastirma-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-cocuk-isciligi-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-cocuk-isciligi-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-cocuk-isciligi-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-emegi-4687-event|0404-tbmm-cocuk-emegi-4687-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-emegi-4687-event|0404-tbmm-cocuk-emegi-4687-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-emegi-4687-event|0404-tbmm-cocuk-emegi-4687-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cocuk-emegi-4687-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cocuk-emegi-4687-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cocuk-emegi-4687-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cocuk-emegi-4687-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-emegi-4553-event|0404-tbmm-cocuk-emegi-4553-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-emegi-4553-event|0404-tbmm-cocuk-emegi-4553-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-emegi-4553-event|0404-tbmm-cocuk-emegi-4553-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cocuk-emegi-4553-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cocuk-emegi-4553-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cocuk-emegi-4553-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cocuk-emegi-4553-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-soru-51913-event|0404-tbmm-cocuk-soru-51913-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-soru-51913-event|0404-tbmm-cocuk-soru-51913-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-soru-51913-event|0404-tbmm-cocuk-soru-51913-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cocuk-soru-51913-event|0404-tbmm-cocuk-soru-51913-recipient-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cocuk-soru-51913-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cocuk-soru-51913-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cocuk-soru-51913-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cocuk-soru-51913-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-housing-3952-event|0404-tbmm-housing-access-3952-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-housing-3952-event|0404-tbmm-housing-access-3952-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-housing-3952-event|0404-tbmm-housing-access-3952-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-housing-3952-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-housing-3952-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-housing-3952-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-housing-3952-relation-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-housing-104686-event|0404-tbmm-housing-access-104686-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-housing-104686-event|0404-tbmm-housing-access-104686-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-housing-104686-event|0404-tbmm-housing-access-104686-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-housing-104686-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-housing-104686-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-housing-104686-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-housing-104686-relation-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-yasli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-yasli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-yasli-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-104938-event|0404-yasli-104938-purpose|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-104938-event|0404-yasli-104938-owner|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-104938-event|0404-yasli-104938-received|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-104938-event|0404-yasli-104938-gelen-item|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-104938-event|0404-yasli-104938-gelen-day|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasli-104938-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasli-104938-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasli-104938-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasli-104938-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-751142-event|0404-yasli-751142-purpose|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-751142-event|0404-yasli-751142-owner|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-751142-event|0404-yasli-751142-received|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-751142-event|0404-yasli-751142-metni-capacity|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasli-751142-event|0404-yasli-751142-metni-audit|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasli-751142-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasli-751142-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasli-751142-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasli-751142-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-engelli-erisim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-engelli-erisim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-engelli-erisim-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-erisim-752416-event|0404-tbmm-housing-access-752416-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-erisim-752416-event|0404-tbmm-housing-access-752416-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-erisim-752416-event|0404-tbmm-housing-access-752416-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-engelli-erisim-752416-event|0404-tbmm-housing-access-752416-recipient-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-engelli-erisim-752416-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-engelli-erisim-752416-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-engelli-erisim-752416-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-engelli-erisim-752416-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-siddet-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-siddet-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-siddet-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-siddet-104683-event|0404-tbmm-kadina-siddet-104683-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-siddet-104683-event|0404-tbmm-kadina-siddet-104683-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-siddet-104683-event|0404-tbmm-kadina-siddet-104683-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-siddet-104683-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-siddet-104683-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-siddet-104683-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-siddet-104683-relation-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-siddet-749746-event|0404-tbmm-kadina-siddet-749746-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-siddet-749746-event|0404-tbmm-kadina-siddet-749746-owner-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-siddet-749746-event|0404-tbmm-kadina-siddet-749746-date-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-siddet-749746-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-siddet-749746-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-siddet-749746-relation-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-siddet-749746-relation-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-tbmm-grup-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-tbmm-grup-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-tbmm-grup-charter-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-secim-0724-event|0404-grup-kurulus-dunya-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-grup-secim-0724-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event|0404-grup-yonetim-ekonomim-context-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event|0404-grup-yonetim-ekonomim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-ab-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-ab-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-ab-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-initiative|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-date|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-result|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-uyum-secim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-ab-orav-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-ab-orav-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-orav-gorusme-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-orav-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-orav-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-orav-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-agenda|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-wiseler-gorusme-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-wiseler-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-wiseler-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-wiseler-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-tbmm-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-ab-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-ab-agenda|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-cumhuriyet-intervention|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-kpk-82-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-kpk-82-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-kpk-82-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-kpk-82-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-tbmm-siyasi-etik-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-greco|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-board|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-grup-konusma-visa|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-grup-konusma-greco|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-3795-gelen-item|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-referral|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-2-3795-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-2-3795-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-2-3795-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-2-3795-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-cevrimici-uyelik-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-cevrimici-uyelik-cesme-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-yeni-parti-haber-49-uyelik-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-yeni-parti-haber-50-uyelik-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-yeni-parti-haber-289-onsecim-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-yeni-parti-haber-291-onsecim-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-yeni-parti-haber-237-orav|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-ilave-kpk-incesu-participation|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-ilave-kpk-incesu-statement|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-made-in-europe-1026-event|0404-ab-ilave-made-1026-agenda|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-made-in-europe-1026-event|0404-ab-ilave-made-1026-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-made-in-europe-1026-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-made-in-europe-1026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-made-in-europe-1026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-made-in-europe-1026-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-aa-time|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-aa-participant|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-kurtulmus-participant|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-haber-296-body|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kesim-anitkabir-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kesim-anitkabir-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kesim-anitkabir-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kesim-anitkabir-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-opening|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-speech-title|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-speech|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-closing|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kesim-tbmm-konusma-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kesim-tbmm-konusma-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kesim-tbmm-konusma-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kesim-tbmm-konusma-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-yemek-3827-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-yemek-3827-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-yemek-3827-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-3827-event|0404-ilk-yayin-takip-yemek-3827-number|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-3827-event|0404-ilk-yayin-takip-yemek-3827-date|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-3827-event|0404-ilk-yayin-takip-yemek-3827-author|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-3827-event|0404-ilk-yayin-takip-yemek-3827-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-3827-event|0404-ilk-yayin-takip-yemek-3827-commission-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-3827-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-3827-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-3827-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-3827-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-adalet-butce-1109-event|0404-ilk-yayin-takip-adalet-gunaydin-yargi|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-adalet-butce-1109-event|0404-ilk-yayin-takip-adalet-gorusme-gunaydin|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-adalet-butce-1109-event|0404-ilk-yayin-takip-adalet-gorusme-sure|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-adalet-butce-1109-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-adalet-butce-1109-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-adalet-butce-1109-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-adalet-butce-1109-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-cop31-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-cop31-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-cop31-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cop31-1105-event|0404-ilk-yayin-takip-cop31-5kasim-climate|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cop31-1105-event|0404-ilk-yayin-takip-cop31-5kasim-attendance|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cop31-1105-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cop31-1105-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cop31-1105-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cop31-1105-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-aliyev-diplomasi-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-aliyev-diplomasi-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-aliyev-diplomasi-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aliyev-1109-event|0404-ilk-yayin-takip-aliyev-anka-phone|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aliyev-1109-event|0404-ilk-yayin-takip-aliyev-apa-call|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aliyev-1109-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aliyev-1109-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aliyev-1109-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aliyev-1109-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-yuceer-istifa-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-yuceer-istifa-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-yuceer-istifa-charter-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yuceer-istifa-1107-event|0404-uyelik-egitim-takip-yuceer-written|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yuceer-istifa-1107-event|0404-uyelik-egitim-takip-yuceer-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yuceer-istifa-1107-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yuceer-istifa-1107-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yuceer-istifa-1107-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yuceer-istifa-1107-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-yok-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-yok-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-yok-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yok-cem-aydin-1106-event|0404-uyelik-egitim-takip-cem-aydin-action|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yok-cem-aydin-1106-event|0404-uyelik-egitim-takip-cem-aydin-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yok-cem-aydin-1106-event|0404-uyelik-egitim-takip-cem-aydin-statement|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yok-cem-aydin-1106-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yok-cem-aydin-1106-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yok-cem-aydin-1106-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yok-cem-aydin-1106-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-zeytinli-tarim-1031-event|0404-zeytinli-haber-ekspres-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-zeytinli-tarim-1031-event|0404-zeytinli-haber-ekspres-time|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-zeytinli-tarim-1031-event|0404-zeytinli-haber-ekspres-customs|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-zeytinli-tarim-1031-event|0404-zeytinli-haber-ekspres-support|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-zeytinli-tarim-1031-event|0404-zeytinli-ozel-customs|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-zeytinli-tarim-1031-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-zeytinli-tarim-1031-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-zeytinli-tarim-1031-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-zeytinli-tarim-1031-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-zeytinli-uretim-destegi-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-zeytinli-uretim-destegi-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-zeytinli-uretim-destegi-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-ersever-1013-event|0404-tbmm-yemek-ersever-1013-speech|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-ersever-1013-event|0404-tbmm-yemek-ersever-1013-meal|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-ersever-1013-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-ersever-1013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-ersever-1013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-ersever-1013-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-motion|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-authority|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-meal|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-support|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-result|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-dem-egitim-1021-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-yemek-dem-egitim-1021-yeni-destek"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-yeni-destek"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-akdogan-1103-event|0404-tbmm-yemek-akdogan-1103-topic|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-akdogan-1103-event|0404-tbmm-yemek-akdogan-1103-meal|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-akdogan-1103-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-akdogan-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-akdogan-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-akdogan-1103-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-egitime-erisim-genel-program"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-egitime-erisim-genel-program"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-egitime-erisim-genel-program"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-number|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-date|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-owner|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-scope|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-okul-masrafi-4641-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-okul-masrafi-4641-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-okul-masrafi-4641-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-okul-masrafi-4641-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-fon-denetim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-fon-denetim-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-fon-denetim-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1013-event|0404-ilk-yayin-takip-fon-1013-grup-onerge|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1013-event|0404-ilk-yayin-takip-fon-1013-grup-yetki|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1013-event|0404-ilk-yayin-takip-fon-1013-grup-yoklama|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1013-event|0404-ilk-yayin-takip-fon-1013-grup-sonuc|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-fon-denetim-1013-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-fon-denetim-1013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-fon-denetim-1013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-fon-denetim-1013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-fon-denetim-1013-relation"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-fon-denetim-1013-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-fon-denetim-1013-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1021-event|0404-ilk-yayin-takip-fon-1021-grup-onerge|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1021-event|0404-ilk-yayin-takip-fon-1021-grup-yetki|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1021-event|0404-ilk-yayin-takip-fon-1021-grup-karsi|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1021-event|0404-ilk-yayin-takip-fon-1021-grup-sonuc|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-fon-denetim-1021-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-fon-denetim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-fon-denetim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-fon-denetim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-fon-denetim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-fon-denetim-1021-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-fon-denetim-1021-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-yasa-1022-event|0404-ilk-yayin-takip-fon-1022-tam-bill|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-yasa-1022-event|0404-ilk-yayin-takip-fon-1022-tam-authority|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-yasa-1022-event|0404-ilk-yayin-takip-fon-1022-tam-objection|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-yasa-1022-event|0404-ilk-yayin-takip-fon-1022-tam-vote|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-yasa-1022-event|0404-ilk-yayin-takip-fon-1022-tam-outcome|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-yasa-1022-event|0404-ilk-yayin-takip-fon-7596-publication|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-yasa-1022-event|0404-ilk-yayin-takip-fon-7596-metin-limit|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-fon-yasa-1022-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-fon-yasa-1022-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-fon-yasa-1022-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-fon-yasa-1022-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-fon-yasa-1022-relation"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-fon-yasa-1022-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-fon-yasa-1022-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ayvalik-sosyal-hizmet-1031-event|0404-ilk-yayin-takip-ayvalik-hizmet-1031-host|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ayvalik-sosyal-hizmet-1031-event|0404-ilk-yayin-takip-ayvalik-hizmet-1031-opening|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ayvalik-sosyal-hizmet-1031-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ayvalik-sosyal-hizmet-1031-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ayvalik-sosyal-hizmet-1031-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ayvalik-sosyal-hizmet-1031-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-ayvalik-sosyal-hizmet-1031-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-m12-rayli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-m12-rayli-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-m12-rayli-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ibb-m12-test-1030-event|0404-ilk-yayin-takip-metro-m12-karar-owner|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ibb-m12-test-1030-event|0404-ilk-yayin-takip-metro-m12-karar-test|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ibb-m12-test-1030-event|0404-ilk-yayin-takip-metro-m12-cnbce-test|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ibb-m12-test-1030-event|0404-ilk-yayin-takip-metro-m12-karar-timing|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ibb-m12-test-1030-event|0404-ilk-yayin-takip-metro-m12-cnbce-plan|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ibb-m12-test-1030-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ibb-m12-test-1030-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ibb-m12-test-1030-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ibb-m12-test-1030-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-teklif-23895-event|0404-ilk-yayin-takip-fon-23895-id|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-teklif-23895-event|0404-ilk-yayin-takip-fon-23895-arrival|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-teklif-23895-event|0404-ilk-yayin-takip-fon-23895-asli-aim|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-fon-teklif-23895-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-fon-teklif-23895-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-fon-teklif-23895-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-fon-teklif-23895-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1103-event|0404-ilk-yayin-takip-1103-fon-onerge|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1103-event|0404-ilk-yayin-takip-1103-fon-yetki|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-fon-denetim-1103-event|0404-ilk-yayin-takip-1103-fon-sonuc|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-fon-denetim-1103-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-fon-denetim-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-fon-denetim-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-fon-denetim-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-fon-denetim-1103-relation"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-fon-denetim-1103-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-fon-denetim-1103-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-gundem-1103-event|0404-ilk-yayin-takip-1103-mekke-yetki|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-gundem-1103-event|0404-ilk-yayin-takip-1103-mekke-sonuc|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-mekke-gundem-1103-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-mekke-gundem-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-mekke-gundem-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-mekke-gundem-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-mekke-gundem-1103-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-1105-pdf-authority|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-1105-pdf-objection|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-1105-pdf-personal|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-1105-pdf-announcement|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-1105-pdf-outcome|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-acik-oy-kabul|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-acik-oy-ret|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-acik-oy-mukerrer|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-acik-oy-ozkan|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-mekke-23961-1105-event|0404-ilk-yayin-takip-mekke-acik-oy-ozel|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-mekke-23961-1105-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-mekke-23961-1105-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-mekke-23961-1105-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-mekke-23961-1105-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-mekke-23961-1105-relation"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-mekke-23961-1105-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-mekke-23961-1105-grup-katkisi"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-okul-haklari-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-okul-haklari-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-okul-haklari-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-cemevi-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-cemevi-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-cemevi-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-goc-uyum-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-goc-uyum-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-goc-uyum-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-doktora-burs-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-doktora-burs-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-doktora-burs-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-engelli-aylik-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-engelli-aylik-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-engelli-aylik-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3825-event|0404-ilk-yayin-takip-yasama-2-3825-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3825-event|0404-ilk-yayin-takip-yasama-2-3825-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3825-event|0404-ilk-yayin-takip-yasama-2-3825-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3825-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3825-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3825-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3825-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3826-event|0404-ilk-yayin-takip-yasama-2-3826-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3826-event|0404-ilk-yayin-takip-yasama-2-3826-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3826-event|0404-ilk-yayin-takip-yasama-2-3826-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3826-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3826-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3826-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3826-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3828-event|0404-ilk-yayin-takip-yasama-2-3828-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3828-event|0404-ilk-yayin-takip-yasama-2-3828-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3828-event|0404-ilk-yayin-takip-yasama-2-3828-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3828-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3828-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3828-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3828-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3830-event|0404-ilk-yayin-takip-yasama-2-3830-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3830-event|0404-ilk-yayin-takip-yasama-2-3830-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3830-event|0404-ilk-yayin-takip-yasama-2-3830-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3830-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3830-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3830-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3830-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3832-event|0404-ilk-yayin-takip-yasama-2-3832-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3832-event|0404-ilk-yayin-takip-yasama-2-3832-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3832-event|0404-ilk-yayin-takip-yasama-2-3832-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3832-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3832-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3832-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3832-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3833-event|0404-ilk-yayin-takip-yasama-2-3833-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3833-event|0404-ilk-yayin-takip-yasama-2-3833-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3833-event|0404-ilk-yayin-takip-yasama-2-3833-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3833-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3833-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3833-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3833-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3917-event|0404-ilk-yayin-takip-yasama-2-3917-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3917-event|0404-ilk-yayin-takip-yasama-2-3917-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3917-event|0404-ilk-yayin-takip-yasama-2-3917-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3917-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3917-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3917-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3917-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3873-event|0404-ilk-yayin-takip-yasama-2-3873-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3873-event|0404-ilk-yayin-takip-yasama-2-3873-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3873-event|0404-ilk-yayin-takip-yasama-2-3873-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3873-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3873-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3873-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3873-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3894-event|0404-ilk-yayin-takip-yasama-2-3894-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3894-event|0404-ilk-yayin-takip-yasama-2-3894-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3894-event|0404-ilk-yayin-takip-yasama-2-3894-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3894-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3894-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3894-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3894-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3937-event|0404-ilk-yayin-takip-yasama-2-3937-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3937-event|0404-ilk-yayin-takip-yasama-2-3937-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-2-3937-event|0404-ilk-yayin-takip-yasama-2-3937-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-2-3937-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-2-3937-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-2-3937-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-2-3937-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50432-event|0404-ilk-yayin-takip-yasama-7-50432-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50432-event|0404-ilk-yayin-takip-yasama-7-50432-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50432-event|0404-ilk-yayin-takip-yasama-7-50432-asli-article|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50432-event|0404-ilk-yayin-takip-yasama-7-50432-asli-model|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-7-50432-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-7-50432-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-7-50432-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-7-50432-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kocaeli-mali-sunum-event|0404-kocaeli-finance-nokta-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kocaeli-mali-sunum-event"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-kocaeli-yerel-hesap-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-kocaeli-yerel-hesap-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-kocaeli-yerel-hesap-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kocaeli-mali-sunum-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kocaeli-mali-sunum-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kocaeli-mali-sunum-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4688-event|0404-ilk-yayin-takip-yasama-10-4688-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4688-event|0404-ilk-yayin-takip-yasama-10-4688-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4688-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4688-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4688-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4688-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4593-event|0404-ilk-yayin-takip-yasama-10-4593-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4593-event|0404-ilk-yayin-takip-yasama-10-4593-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4593-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4593-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4593-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4593-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4884-event|0404-ilk-yayin-takip-yasama-10-4884-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4884-event|0404-ilk-yayin-takip-yasama-10-4884-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4884-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4884-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4884-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4884-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-5013-event|0404-ilk-yayin-takip-yasama-10-5013-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-5013-event|0404-ilk-yayin-takip-yasama-10-5013-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-5013-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-5013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-5013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-5013-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4841-event|0404-ilk-yayin-takip-yasama-10-4841-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4841-event|0404-ilk-yayin-takip-yasama-10-4841-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4841-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4841-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4841-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4841-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4614-event|0404-ilk-yayin-takip-yasama-10-4614-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4614-event|0404-ilk-yayin-takip-yasama-10-4614-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4614-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4614-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4614-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4614-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4661-event|0404-ilk-yayin-takip-yasama-10-4661-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4661-event|0404-ilk-yayin-takip-yasama-10-4661-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4661-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4661-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4661-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4661-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4873-event|0404-ilk-yayin-takip-yasama-10-4873-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4873-event|0404-ilk-yayin-takip-yasama-10-4873-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4873-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4873-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4873-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4873-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4670-event|0404-ilk-yayin-takip-yasama-10-4670-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4670-event|0404-ilk-yayin-takip-yasama-10-4670-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4670-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4670-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4670-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4670-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4992-event|0404-ilk-yayin-takip-yasama-10-4992-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4992-event|0404-ilk-yayin-takip-yasama-10-4992-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4992-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4992-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4992-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4992-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4949-event|0404-ilk-yayin-takip-yasama-10-4949-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-10-4949-event|0404-ilk-yayin-takip-yasama-10-4949-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-10-4949-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-10-4949-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-10-4949-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-10-4949-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50438-event|0404-ilk-yayin-takip-yasama-7-50438-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50438-event|0404-ilk-yayin-takip-yasama-7-50438-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50438-event|0404-ilk-yayin-takip-yasama-7-50438-asli-question|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-7-50438-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-7-50438-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-7-50438-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-7-50438-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50482-event|0404-ilk-yayin-takip-yasama-7-50482-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50482-event|0404-ilk-yayin-takip-yasama-7-50482-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50482-event|0404-ilk-yayin-takip-yasama-7-50482-asli-question|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-7-50482-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-7-50482-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-7-50482-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-7-50482-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50534-event|0404-ilk-yayin-takip-yasama-7-50534-number|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50534-event|0404-ilk-yayin-takip-yasama-7-50534-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yasama-7-50534-event|0404-ilk-yayin-takip-yasama-7-50534-asli-question|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yasama-7-50534-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yasama-7-50534-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yasama-7-50534-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yasama-7-50534-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-germencik-kongre-event|0404-germencik-kongre-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-germencik-kongre-event"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-germencik-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-germencik-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-germencik-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-germencik-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-germencik-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-germencik-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yozgat-il-kongresi-event|0404-yozgat-4379-kongre-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-manisa-il-kongresi-event|0404-manisa-kongre-f5-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yozgat-il-kongresi-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-manisa-il-kongresi-event"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-il-kongresi-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-il-kongresi-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-il-kongresi-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yozgat-il-kongresi-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yozgat-il-kongresi-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yozgat-il-kongresi-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-manisa-il-kongresi-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-manisa-il-kongresi-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-manisa-il-kongresi-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-manisa-il-kongresi-event|0404-manisa-kongre-anka-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-manisa-il-kongresi-event|0404-manisa-kongre-anka-divan-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sulakyurt-kongre-event|0404-sulakyurt-kongre-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-sulakyurt-kongre-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-sulakyurt-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-sulakyurt-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-sulakyurt-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sdd-protokol-event|0404-yeni-parti-haber-197-protocol-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-sdd-protokol-event|0404-sdd-toplumsal-20261008-protocol-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-sdd-protokol-event"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-sdd-protokol-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-sdd-protokol-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-sdd-protokol-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-sdd-protokol-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-sdd-protokol-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-sdd-protokol-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kirikkale-onsecim-event|0404-kirikkale-haberler-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kirikkale-onsecim-event|0404-kirikkale-haber-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kirikkale-onsecim-event|0404-kirikkale-scope-city-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kirikkale-onsecim-event|0404-kirikkale-scope-center-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kirikkale-onsecim-event"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-kirikkale-onsecim-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-kirikkale-onsecim-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-kirikkale-onsecim-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kirikkale-onsecim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kirikkale-onsecim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kirikkale-onsecim-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47172-event|0404-tbmm-erken-7-47172-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47172-event|0404-tbmm-erken-7-47172-register-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47172-event|0404-tbmm-erken-7-47172-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47172-event|0404-tbmm-erken-7-47172-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47172-event|0404-tbmm-erken-7-47172-reply-average|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47172-event|0404-tbmm-erken-7-47172-reply-authority|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-47172-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-47172-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47172-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47172-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47172-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47173-event|0404-tbmm-erken-7-47173-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47173-event|0404-tbmm-erken-7-47173-register-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47173-event|0404-tbmm-erken-7-47173-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47173-event|0404-tbmm-erken-7-47173-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47173-event|0404-tbmm-erken-7-47173-reply-distribution|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-47173-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-47173-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47173-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47173-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47173-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47507-event|0404-tbmm-erken-7-47507-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47507-event|0404-tbmm-erken-7-47507-register-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47507-event|0404-tbmm-erken-7-47507-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47507-event|0404-tbmm-erken-7-47507-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47507-event|0404-tbmm-erken-7-47507-reply-past-meals|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-47507-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-47507-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47507-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47507-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47507-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47381-event|0404-tbmm-erken-7-47381-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47381-event|0404-tbmm-erken-7-47381-register-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47381-event|0404-tbmm-erken-7-47381-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47381-event|0404-tbmm-erken-7-47381-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-47381-event|0404-tbmm-erken-7-47381-reply-data-limit|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-47381-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-47381-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47381-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47381-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-47381-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-48655-event|0404-tbmm-erken-7-48655-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-48655-event|0404-tbmm-erken-7-48655-register-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-48655-event|0404-tbmm-erken-7-48655-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-48655-event|0404-tbmm-erken-7-48655-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-48655-event|0404-tbmm-erken-7-48655-reply-transfer|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-48655-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-48655-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-48655-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-48655-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-48655-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-2-3853-event|0404-tbmm-erken-2-3853-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-2-3853-event|0404-tbmm-erken-2-3853-register-summary|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-2-3853-event|0404-tbmm-erken-2-3853-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-2-3853-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-2-3853-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-2-3853-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-2-3853-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-disiplin-af-yetki-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-disiplin-af-yetki-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-disiplin-af-yetki-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-disiplin-af-basvuru-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-disiplin-af-basvuru-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-disiplin-af-basvuru-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-disiplin-af-gizli-oy-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-disiplin-af-gizli-oy-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-disiplin-af-gizli-oy-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-disiplin-af-sunum-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-disiplin-af-sunum-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-disiplin-af-sunum-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-orman-su-yontem-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-orman-su-yontem-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-orman-su-yontem-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49400-event|0404-tbmm-erken-7-49400-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49400-event|0404-tbmm-erken-7-49400-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49400-event|0404-tbmm-erken-7-49400-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49400-event|0404-tbmm-erken-7-49400-reply-role|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49400-event|0404-tbmm-erken-7-49400-reply-transfer|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-49400-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-49400-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49400-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49400-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49400-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49644-event|0404-tbmm-erken-7-49644-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49644-event|0404-tbmm-erken-7-49644-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49644-event|0404-tbmm-erken-7-49644-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49644-event|0404-tbmm-erken-7-49644-reply-decision|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49644-event|0404-tbmm-erken-7-49644-reply-warning|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-49644-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-49644-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49644-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49644-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49644-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49826-event|0404-tbmm-erken-7-49826-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49826-event|0404-tbmm-erken-7-49826-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-49826-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-49826-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49826-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49826-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yangin-arastirma-104460-event|0404-tbmm-erken-10-4460-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yangin-arastirma-104460-event|0404-tbmm-erken-10-4460-filing-purpose|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yangin-arastirma-104460-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yangin-arastirma-104460-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yangin-arastirma-104460-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yangin-arastirma-104460-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yangin-120-gundem-event|0404-tbmm-120-yangin-gundem-scheduling|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yangin-120-gundem-event|0404-tbmm-120-yangin-gundem-authority|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yangin-120-gundem-event|0404-tbmm-120-yangin-gundem-result|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yangin-120-gundem-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yangin-120-gundem-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yangin-120-gundem-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yangin-120-gundem-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-yangin-120-gundem-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-aile-bakanligi-egitim-fonu-0906-event|0404-aile-bakanligi-egitim-fonu-0906-fund|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-aile-bakanligi-egitim-fonu-0906-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-aile-bakanligi-egitim-fonu-0906-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-aile-bakanligi-egitim-fonu-0906-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-aile-bakanligi-egitim-fonu-0906-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-demokratik-savunma-denetimi-program"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-demokratik-savunma-denetimi-program"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-demokratik-savunma-denetimi-program"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49677-event|0404-tbmm-erken-7-49677-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49677-event|0404-tbmm-erken-7-49677-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49677-event|0404-tbmm-erken-7-49677-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49677-event|0404-tbmm-erken-7-49677-reply-count|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49677-event|0404-tbmm-erken-7-49677-reply-complaint|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-49677-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-49677-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49677-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49677-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-tbmm-erken-7-49677-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-50710-event|0404-tbmm-erken-7-50710-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-50710-event|0404-tbmm-erken-7-50710-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-50710-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-50710-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-50710-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-50710-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-50790-event|0404-tbmm-erken-7-50790-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-50790-event|0404-tbmm-erken-7-50790-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-50790-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-50790-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-50790-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-50790-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-50838-event|0404-tbmm-erken-7-50838-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-50838-event|0404-tbmm-erken-7-50838-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-50838-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-erken-7-50838-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-erken-7-50838-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-erken-7-50838-relation"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-erken-7-49426-event"
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0404-tbmm-erken-7-49426-candidate"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49426-event|0404-tbmm-erken-7-49426-filing-signed|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49426-event|0404-tbmm-erken-7-49426-register-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49426-event|0404-tbmm-erken-7-49426-register-answer-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49426-event|0404-tbmm-erken-7-49426-reply-work|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-erken-7-49426-event|0404-tbmm-erken-7-49426-reply-protocol|result"
+    }
+  ]
 }
