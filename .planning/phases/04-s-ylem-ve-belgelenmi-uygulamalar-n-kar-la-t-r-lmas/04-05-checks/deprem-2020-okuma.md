@@ -79,3 +79,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 88–92 de okundu: Jandarma temsilcisi tahliye planı ve Elâzığ/İzmir müdahalesiyle ilgili sunum yapar, ardından eğitim ve görevlendirme sorularını yanıtlamaya başlar. Rakamlar ve olay anlatımı temsilci beyanı olarak tutulur; TİP eylemine veya bağımsız doğrulamaya çevrilmez. İndeks 93–154 açık.
 
 9 Aralık toplantısı PDF indeks 93–97 de okundu: Jandarma yetkilileri eğitim, tahliye, afetlerde koordinasyon ve İstanbul planına ilişkin üye sorularını yanıtlar. Tartışılan teknik görüşler ve yetkili anlatımları kendi aktörlerine aittir; TİP’e veya doğrulanmış uygulamaya atfedilmez. İndeks 98–154 açık.
+
+9 Aralık toplantısı PDF indeks 98–102 de okundu: Jandarma soru-cevap bölümü tamamlanır ve Nüfus ve Vatandaşlık İşleri Adres Daire Başkanı Levent Yazıcı’nın adres kayıt sistemi sunumu başlar. Görüşler ilgili katılımcılara atfedilir; TİP uygulaması veya bağımsız sonuca dönüştürülmez. İndeks 103–154 açık.
