@@ -11,7 +11,7 @@ raw=Path('data/practices/sources/dem')/capture['original_path']
 assert hashlib.sha256(raw.read_bytes()).hexdigest()=='ed1e950a9d23850333dd94cd3fbae9acf4747da5861019c1b14b0ea5ed891bb0'
 now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 pages=[]
-examined=set(range(20,81)) | set(range(906,924)) | set(range(986,1002))
+examined=set(range(20,93)) | set(range(906,924)) | set(range(986,1002))
 for i in sorted(examined):
  text=pdf_page_text(raw,i)
  assert text.strip()
@@ -22,11 +22,11 @@ queue=[]
 i=0
 while i<1054:
  state='examined' if i in examined else 'pending'; end=i
- while end+1<1054 and (end+1 in examined)==(state=='examined') and end-i<19 and end+1 not in (36,40,54,57,61,69,906,924):end+=1
+ while end+1<1054 and (end+1 in examined)==(state=='examined') and end-i<19 and end+1 not in (36,40,54,57,61,69,81,906,924):end+=1
  row=dict(first=i,last=end,state=state)
- if state=='examined':row.update(review_file=('2025-224-baskan-sunus.md' if i<36 else '2025-224-diger-onergeler.md' if 40<=i<54 else '2025-224-komisyon-uyeleri.md' if 57<=i<61 else '2025-224-calisma-takvimi.md' if 61<=i<69 else '2025-224-istanbul-ziyaret.md' if 69<=i<81 else '2025-224-tespit-oneriler.md' if 906<=i<924 else '2025-224-dem-serhi-reading.md'),text_checked_at=now,pages=[x for x in pages if i<=x['pdf_page_index']<=end])
+ if state=='examined':row.update(review_file=('2025-224-baskan-sunus.md' if i<36 else '2025-224-diger-onergeler.md' if 40<=i<54 else '2025-224-komisyon-uyeleri.md' if 57<=i<61 else '2025-224-calisma-takvimi.md' if 61<=i<69 else '2025-224-istanbul-ziyaret.md' if 69<=i<81 else '2025-224-bolge-ziyaret.md' if 81<=i<93 else '2025-224-tespit-oneriler.md' if 906<=i<924 else '2025-224-dem-serhi-reading.md'),text_checked_at=now,pages=[x for x in pages if i<=x['pdf_page_index']<=end])
  queue.append(row);i=end+1
 assert [x for r in queue for x in range(r['first'],r['last']+1)]==list(range(1054))
-result=dict(version=1,source_sha256=capture['sha256'],total_pages=1054,examined_pages=95,pending_pages=959,queue=queue,limitations='Başkan sunuşu, altı önerge, üyeler, toplantı ve ziyaret kesitleri, ortak tespit ve öneriler, DEM şerhi, örgüt görüşleri ve takdim/kuruluş sayfaları incelendi; diğer bölümler okunmadı, sonuçların uygulanması ve hukuki etki doğrulanmadı.')
+result=dict(version=1,source_sha256=capture['sha256'],total_pages=1054,examined_pages=107,pending_pages=947,queue=queue,limitations='Başkan sunuşu, altı önerge, üyeler, toplantı ve ziyaret kesitleri, ortak tespit ve öneriler, DEM şerhi, örgüt görüşleri ve takdim/kuruluş sayfaları incelendi; diğer bölümler okunmadı, sonuçların uygulanması ve hukuki etki doğrulanmadı.')
 (p/'2025-224-report-reading-queue.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-print('224_REPORT_QUEUE_EXACT',len(queue),'examined',95,'pending',959)
+print('224_REPORT_QUEUE_EXACT',len(queue),'examined',107,'pending',947)
