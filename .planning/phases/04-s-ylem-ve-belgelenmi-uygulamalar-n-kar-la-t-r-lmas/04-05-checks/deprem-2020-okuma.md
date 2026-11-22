@@ -341,3 +341,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 5 Ekim 2021 Genel Kurul tutanağının rapor görüşmesinde HTML metninin boşlukları tekilleştirilmiş konum 268500–278000 aralığı okundu: başkanın gündem ve konuşmacı listesi ile Nuhoğlu'nun İYİ Parti adına konuşmasının başlangıcı. Listede TİP adına konuşmacı gösterilmiyor; bu, okunmayan kalan oturumda herhangi bir katkının yokluğunu kanıtlamaz. Nuhoğlu'nun eleştiri ve önerileri kendisine aittir. Bu HTML'nin kalan bölümü hâlâ açıktır.
 
 - Aynı görüşmenin normalize metninde 278000–287500 okundu: Nuhoğlu'nun afet yargısı, toplanma alanları, kentsel dönüşüm, kaynak ve basın üzerine görüşleri devam ediyor. Beyan ve iddialar konuşmacıya aittir; doğrulanmış uygulama veya TİP'in görüşü değildir. Konum 287500 sonrası açık.
+
+- Aynı görüşmenin normalize metninde 287500–297000 okundu: Nuhoğlu konuşması sona erer ve Bedri Yaşar İYİ Parti adına söz alır; dönüşüm, engellilerin ihtiyaçları ve yerbilimsel planlama üzerine görüşler açıklanır. Beyanlar ilgili kişilere aittir; konum 297000 sonrası ve oturumun diğer kısımları açıktır.
