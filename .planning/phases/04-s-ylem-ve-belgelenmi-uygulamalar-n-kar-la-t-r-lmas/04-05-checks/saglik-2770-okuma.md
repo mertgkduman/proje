@@ -1,0 +1,5 @@
+# Özel sağlık kurumları: 2/2770 açık uç
+
+TBMM 28. dönem 2/2770 teklifinin yedi sayfası (PDF indeks 0–6) metin katmanından okundu. 11 Aralık 2024 tarihli sunuşta Saliha Sera Kadıgil adı ve 12 Aralık 2024 başkanlık kaşesi bulunur. Öneri, 2219 sayılı Kanunun kaldırılmasını ve mevcut özel sağlık kurum ve kuruluşlarının önerilen düzenlemenin yürürlüğünden itibaren bir yıl içinde devletleştirilmesini öngörür. Kanun teklifi kabul edilmiş veya bu kurumlar devletleştirilmiş sayılmaz; kesim anındaki aşama açık.
+
+TİP sitesindeki haberin NewsArticle metaverisinde yayın tarihi 13 Aralık 2024; sayfa Kadıgil'in basın toplantısında 2/2770 teklifini duyurduğunu aktarır ve teklifin metnini tekrarlar. Parti sayfası TBMM teklifinden sonra yayımlanmıştır; önceki bir vaat diye yazılamaz, parti sayfası ile teklif bağımsız iki uygulama değildir. Gerekçelerdeki bütün sayısal, siyasi ve adli iddialar belge sahibine aittir; bağımsız saptama yapılmadı. Basın toplantısı için ayrıca tarihli doğrudan TBMM veya güvenilir yayın, teklif ayrıntısı, 2026 kesim anındaki süreç, source review ve tam kapı açık. Bu araştırma hiçbir kapsamı kapatmaz.
