@@ -44,7 +44,9 @@
       "created_at": "2026-11-09T16:08:39.050Z",
       "updated_at": "2026-11-09T16:08:39.050Z",
       "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
-      "bytes": 31075
+      "bytes": 31075,
+      "reused_version_id": "0404-charter-announcement-api-v1",
+      "existing_pm_passage_id": "0404-charter-announcement-api-p"
     }
   ],
   "entries": [
@@ -217,66 +219,10 @@
       }
     },
     {
-      "kind": "document",
-      "values": {
-        "id": "0404-yeni-parti-haber-295",
-        "party_id": "yeni-parti",
-        "title": "Zeynel Emre: “Tüzük Değişikliğiyle PM Üye Sayısını 150’ye Çıkardık”",
-        "source_kind": "party"
-      }
-    },
-    {
-      "kind": "document_version",
-      "values": {
-        "id": "0404-yeni-parti-haber-295-v1",
-        "document_id": "0404-yeni-parti-haber-295",
-        "original_url": "https://api.yeni-parti.org.tr/api/haberler/295",
-        "final_url": "https://api.yeni-parti.org.tr/api/haberler/295",
-        "document_date": "2026-11-09",
-        "date_precision": "day",
-        "date_unknown_reason": null,
-        "version_label": "Partinin kamuya açık haber servisi. Başlık, yayımlanan içerik ve oluşturma tarihi özgün JSON içinden okundu. Görünen sayfa https://yeni-parti.org.tr/haber/295",
-        "accessed_at": "2026-11-22T00:21:18+00:00",
-        "verified_at": "2026-11-22T00:24:00+00:00",
-        "mime": "application/json",
-        "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
-        "original_path": "objects/4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2/original.json",
-        "readable_path": "objects/4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2/readable.html"
-      }
-    },
-    {
-      "kind": "source_attribution",
-      "values": {
-        "version_id": "0404-yeni-parti-haber-295-v1",
-        "kind": "party_publication",
-        "publisher": "Yeni Parti",
-        "author": null,
-        "social_handle": null,
-        "published_at": "2026-11-09",
-        "date_precision": "day",
-        "public_url": "https://api.yeni-parti.org.tr/api/haberler/295",
-        "basis": "Partinin kamuya açık haber servisi. Başlık, yayımlanan içerik ve oluşturma tarihi özgün JSON içinden okundu. Görünen sayfa https://yeni-parti.org.tr/haber/295"
-      }
-    },
-    {
-      "kind": "passage",
-      "values": {
-        "id": "0404-yeni-parti-haber-295-pm",
-        "version_id": "0404-yeni-parti-haber-295-v1",
-        "section": "Parti Meclisinin 150 üyeye çıkarılmasına ilişkin açıklama",
-        "exact": "Ve önümüzdeki dönem seçim yılına giderken bu sürece ilişkin bir kereye mahsus olmak üzere Parti Meclisi listesinin, yani bir sonraki olağan kurultay takvimine kadar geçerli olmak üzere, seksenden yüz elliye çıkartılmasına, otuz da yedek üyenin görev yapmasına…",
-        "prefix": null,
-        "suffix": null,
-        "article": null,
-        "pdf_page_index": null,
-        "printed_page": null
-      }
-    },
-    {
       "kind": "passage",
       "values": {
         "id": "0404-yeni-parti-haber-295-lojistik",
-        "version_id": "0404-yeni-parti-haber-295-v1",
+        "version_id": "0404-charter-announcement-api-v1",
         "section": "Türkiye–AB Gümrük Birliği, kara yolu sürücüleri önerisi",
         "exact": "Dolayısıyla buna baktığımız zaman uluslararası nakliyecilerin talepleri açık ve bunlar karşılanabilir taleplerdir. Bir defa TIR sürücülerinin Avrupa ekonomisinin sürdürülebilirliği ve Avrupa-Avrasya bölgeleri arasında karayoluyla yapılan ticarette önemli rolleri vardır. Türkiye-AB Ortak Gümrük Birliği sahası içerisinde hizmet sağlayıcısı konumları temelinde acil ve öncelikli grup olarak değerlendirilmesi, bu alana alınması lazım.",
         "prefix": null,
@@ -290,7 +236,7 @@
       "kind": "passage",
       "values": {
         "id": "0404-yeni-parti-haber-295-vize",
-        "version_id": "0404-yeni-parti-haber-295-v1",
+        "version_id": "0404-charter-announcement-api-v1",
         "section": "Schengen süresi ve profesyonel sürücüler",
         "exact": "İkincisi, Schengen Bölgesi'ne seyahat eden sürücüler için 90/180 kuralının, yani altı aylık vize alırsan 90 gün kalırsın kuralının, esnetilip aldıkları vize süresi kadar orada bulunabilmelerine olanak sağlanması gerekmektedir. Ve üçüncüsü olarak da burada randevu sürelerinin problem olmasından, bu alanda çalışan TIR sürücülerine de özel bir sistem geliştirilmesi ve hızlı başvuru yollarına imkân sağlanması lazım. Burada Schengen Bölgesi ülkeleri için tek bir vize merkezinin oluşturulması önemli ve bu konuyla ilgili de gerek Ticaret Bakanlığının gerekse Dışişleri Bakanlığının gerekli temasları yapması, bu sektörde çalışan milyonlar için çok önemlidir.",
         "prefix": null,
