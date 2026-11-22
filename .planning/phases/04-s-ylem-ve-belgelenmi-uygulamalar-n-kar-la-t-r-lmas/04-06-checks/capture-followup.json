@@ -6,5 +6,27 @@
   "tbmm-2159-pdf": {
     "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y2/T2/WebOnergeMetni/3f2c6811-75e2-493b-bf84-904568739471.pdf",
     "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  "tbmm-2159-pdf-curl": {
+    "original_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y2/T2/WebOnergeMetni/3f2c6811-75e2-493b-bf84-904568739471.pdf",
+    "final_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y2/T2/WebOnergeMetni/3f2c6811-75e2-493b-bf84-904568739471.pdf",
+    "accessed_at": "2026-11-22T02:54:19.818549+00:00",
+    "verified_at": "2026-11-22T02:54:19.818549+00:00",
+    "mime": "application/pdf",
+    "sha256": "e2edc662ad1666a8c5a3aa49564c0ee94e5458b3873d8b7dffdde1c46b439cd5",
+    "original_path": "data/practices/sources/dem/objects/e2edc662ad1666a8c5a3aa49564c0ee94e5458b3873d8b7dffdde1c46b439cd5/original.pdf",
+    "readable_path": "data/practices/sources/dem/objects/e2edc662ad1666a8c5a3aa49564c0ee94e5458b3873d8b7dffdde1c46b439cd5/readable.html",
+    "transport": "curl HTTP 200"
+  },
+  "tbmm-2159-html-curl": {
+    "original_url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/fd464f5e-c702-45a9-bfa3-018f776217c9",
+    "final_url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/fd464f5e-c702-45a9-bfa3-018f776217c9",
+    "accessed_at": "2026-11-22T02:56:40.907125+00:00",
+    "verified_at": "2026-11-22T02:56:40.907125+00:00",
+    "mime": "text/html",
+    "sha256": "9e34b485c93de206115e20d55740cc5f559719f3a4156d8308eebff138ed02cc",
+    "original_path": "data/practices/sources/dem/objects/9e34b485c93de206115e20d55740cc5f559719f3a4156d8308eebff138ed02cc/original.html.bin",
+    "readable_path": "data/practices/sources/dem/objects/9e34b485c93de206115e20d55740cc5f559719f3a4156d8308eebff138ed02cc/readable.html",
+    "transport": "curl HTTP 200"
   }
 }
