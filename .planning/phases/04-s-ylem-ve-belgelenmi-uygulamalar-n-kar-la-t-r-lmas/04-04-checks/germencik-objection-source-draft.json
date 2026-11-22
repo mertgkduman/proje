@@ -1,7 +1,7 @@
 {
   "status": "draft_unvalidated",
   "source_root": "data/practices/sources/yeni-parti",
-  "note": "İtirazın asıl dilekçe ve kararı görülmedi; Aydın Times güncel künye Haber Merkezi, yayın 30 Eylül güncelleme 22 Ekim. Aydınpost 432 toplamı ile kalemleri 406; fark açıklanmadı.",
+  "note": "İtirazın asıl dilekçe ve kararı görülmedi; Aydın Times güncel künye Haber Merkezi, yayın 30 Eylül güncelleme 22 Ekim. Aydınpost 432 toplamı ile kalemleri 406; fark açıklanmadı. Ayrı 5 Ekim haberinde ilçe kongresinde delegelerin Gül’ü seçtiği aktarılır; önseçim sayıları ve itirazdan ayrı.",
   "entries": [
     {
       "kind": "document",
@@ -194,6 +194,74 @@
         "pdf_page_index": null,
         "printed_page": null
       }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-germencik-kongre",
+        "party_id": "yeni-parti",
+        "title": "YENİ Parti Germencik’te İbrahim Gül devri",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-germencik-kongre-v1",
+        "document_id": "0404-germencik-kongre",
+        "original_url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "final_url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "document_date": "2026-10-05",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Aydın Times 5 Ekim 14:51, güncelleme 14:55; önseçim ve kongre aşamaları ayrı.",
+        "accessed_at": "2026-11-22T02:21:35.366056+00:00",
+        "verified_at": "2026-11-22T02:21:35.366056+00:00",
+        "mime": "text/html",
+        "sha256": "1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548",
+        "original_path": "objects/1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548/original.html.bin",
+        "readable_path": "objects/1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548/readable.html"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0404-germencik-kongre-v1",
+        "view_id": "7275a80890d5f28c5f7677aaeb0dc4b9",
+        "format_version": 2,
+        "source_sha256": "1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548",
+        "index_path": "views/7275a80890d5f28c5f7677aaeb0dc4b9/index.html",
+        "manifest_path": "views/7275a80890d5f28c5f7677aaeb0dc4b9/manifest.json",
+        "manifest_sha256": "27becccecd4afccf73ff2be5ed48d0fa9ee6b16e955d5cfea0e28dd587bb0518"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-germencik-kongre-v1",
+        "kind": "journalism",
+        "publisher": "Aydın Times",
+        "author": "Ezgi Balcı",
+        "social_handle": null,
+        "published_at": "2026-10-05",
+        "date_precision": "day",
+        "public_url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "basis": "Özgün haber gövdesi ve künye okundu; yayın saati 14:51 Türkiye saati."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-germencik-kongre-p",
+        "version_id": "0404-germencik-kongre-v1",
+        "exact": "Delegelerin oylarıyla İbrahim Gül, Yeni Parti Germencik İlçe Başkanı oldu.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Olağan ilçe kongresi delege seçimi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
     }
   ],
   "assets": [
@@ -204,6 +272,10 @@
     "data/practices/sources/yeni-parti/objects/1ab54ae1d08dab98c3c6a497a9bfd04dc9ba2ca85e510b00def3306a9cd88273/original.html.bin",
     "data/practices/sources/yeni-parti/objects/1ab54ae1d08dab98c3c6a497a9bfd04dc9ba2ca85e510b00def3306a9cd88273/readable.html",
     "data/practices/sources/yeni-parti/views/8986ca2c73120d4968847c1c760ef772/index.html",
-    "data/practices/sources/yeni-parti/views/8986ca2c73120d4968847c1c760ef772/manifest.json"
+    "data/practices/sources/yeni-parti/views/8986ca2c73120d4968847c1c760ef772/manifest.json",
+    "data/practices/sources/yeni-parti/objects/1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548/original.html.bin",
+    "data/practices/sources/yeni-parti/objects/1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548/readable.html",
+    "data/practices/sources/yeni-parti/views/7275a80890d5f28c5f7677aaeb0dc4b9/index.html",
+    "data/practices/sources/yeni-parti/views/7275a80890d5f28c5f7677aaeb0dc4b9/manifest.json"
   ]
 }
