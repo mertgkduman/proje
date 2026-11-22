@@ -1,0 +1,76 @@
+{
+  "status": "catalog_summary_read_detail_sources_acquired",
+  "segment": {
+    "id": "bill-001",
+    "family": "bill",
+    "path": "data/.staging/gsd-0404-tbmm-member-registers/bill-001.txt",
+    "rows": 128,
+    "characters": 16271,
+    "sha256": "e830355520ad1ed7a0a8f96cb9e75ccbd061d23b0b57657eefb6eb1256c88806",
+    "status": "pending_reading"
+  },
+  "read_interval": {
+    "start": "2/3790",
+    "end": "2/4011",
+    "rows_read": 128,
+    "characters": 16271
+  },
+  "detail_capture_index": "data/.staging/gsd-0404-tbmm-member-registers/detail-capture-receipts.json",
+  "detail_capture_sha256": "c9b0545ab9d654cb3f96d6b89696c18b4f4d4839107dacce48af1938949bd8a3",
+  "detail_capture_count": 136,
+  "focused_document_leads": [
+    {
+      "numbers": [
+        "2/3825",
+        "2/3826",
+        "2/3827",
+        "2/3828",
+        "2/3830",
+        "2/3832",
+        "2/3833",
+        "2/3920"
+      ],
+      "theme": "Eğitime erişim, destek ve okul sağlığı",
+      "status": "follow_document_content"
+    },
+    {
+      "numbers": [
+        "2/3895",
+        "2/3959",
+        "2/3968",
+        "2/3860"
+      ],
+      "theme": "Fon krizi, mal bildirimi ve kamu denetimi",
+      "status": "follow_document_content"
+    },
+    {
+      "numbers": [
+        "2/3917",
+        "2/3873",
+        "2/3894",
+        "2/3937",
+        "2/3916"
+      ],
+      "theme": "Cemevi statüsü, göç, yükseköğretim, aylık, taşeron çalışma",
+      "status": "follow_document_content"
+    },
+    {
+      "numbers": [
+        "2/3790",
+        "2/3792",
+        "2/3795",
+        "2/3801",
+        "2/3837",
+        "2/3839",
+        "2/3913",
+        "2/3914",
+        "2/3918",
+        "2/3929",
+        "2/3930"
+      ],
+      "theme": "Çalışma, gaziler, siyasi etik, tarım, çocuklar, su, kadın hakları, seçimler ve genç istihdamı",
+      "status": "follow_document_content"
+    }
+  ],
+  "closure_refs": 0
+}
