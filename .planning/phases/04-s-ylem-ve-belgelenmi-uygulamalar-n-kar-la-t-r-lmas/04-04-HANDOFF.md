@@ -203,3 +203,15 @@ Kırıkkale ve Yozgat üç yerel sonucu HTTP 200 yakalama ve okuma makbuzu `a283
 021 makbuzu `ca96251`: 215[3896:8059], 214[0:9738], 213[0:16555], 212[0:3671], 211[0:1003], 210[0:6452], 209[0:418], 208[0:5447]. 022 makbuzu `86b8b4b`: 208[5447:11685], 207[0:40835]. 58 dilimden 22'si makbuzlu gerçek okundu; 023–058, 36 dilim açıktır, 207 devamı 023'tedir.
 
 62383286 üç gerçek kontrol PASS, preview `371fe8a2dfc14a05b563b7e8da07459a`: 56 olay/57 ilişki DB ve JSON, iki HTML görünümü ve bağlantıları; 49/50/237/255/274/289/291 için yayımlanma tarihi bilinmiyor ve `created_at` açıklamada. Exact paket SHA `0bb8bd8cc1894e409f253afecf5df1e89139d0003da058278b34a6f26ac23183`, review SHA `d83f91a51ef4b90c3f05c9955e2ac04197e611eba8c49eed5e9e7cffceebfc9c`, canlı parti tracer dosyalarına `900abeb` ile terfi edildi. Önceki canlı bütün entry'leri, olay/ilişki/söylem kimlikleri ve review kaynak/pasaj kümeleri korundu; bir PM ilişki satırı eski açıklama bulgusu korunarak yeni tarihsel bağlam bulgusuna bağlandı, beş review genişletildi. Sonraki 63 olay/65 ilişki ayrı girdisi `0456bdf7…`/`78c6f12…` için 62386745 input PASS, daha sonraki kontroller açıktır. 04-04 görevleri ve 610 hücre açık; canonical yayın yapılmadı.
+
+### Devam: 023–029 gerçek kaynak okuması
+023–029 makbuzları 3af33a0, 17d667d, e3a8f9e, e653f13, ba46c6d, 30259cd ve 0073dfd commitlerinde; 58 gövde diliminden 29 gerçek okundu, 030–058 açık. Bu sayı 610 kapsam hücresinin kapanışı değildir.
+- 023: 207[40835:51196], 206[0:11473], 205[0:438], 204[0:10251], 203[0:12842], 202[0:1609].
+- 024: 202[1609:19079], 201[0:343], 200[0:137], 199[0:22139], 198[0:5320].
+- 025: 198[5320:11107], 197[0:1131], 196[0:11686], 195[0:24513], 194[0:4258].
+- 026: 194[4258:10447], 193[0:548], 192[0:3427], 191[0:136], 190[0:1318], 189[0:9657], 188[0:25964].
+- 027: 188[25964:52671], 187[0:8660], 186[0:428], 185[0:12176].
+- 028: 184[0:8466], 183[0:609], 182[0:27207], 181[0:183], 180[0:149], 179[0:228], 178[0:591], 177[0:6980], 176[0:435], 175[0:2898].
+- 029: 175[2898:13000], 174[0:591], 173[0:627], 172[0:987], 171[0:35167].
+
+197 Sosyal Demokrasi Derneği ile protokol imzası parti duyurusunda; Cumhuriyet 8 Ekim 16:34 parti açıklamasına dayanıyor, bağımsız kaynak gibi gösterilmez. 206 Zeynel Emre okul güvenliği ve ücretsiz yemek için teklif/ret iddiası; kesin TBMM işlem zinciri root araştırmasında. 188 ilçe ön seçiminde yüzde 62,5 katılım ve 820 resmî ilçe kongresi parti beyanı, 171’in 61 saha ili ayrı; hiçbiri 69 il toplamı değildir. 182 altı Artvin belediye başkanı için birlikte olma beyanı üyelik kanıtı yerine geçmez. 178 maden göçüğünde o andaki 2 ölüm/3 aranan sayısı nihai bilanço değil. Yeni source-reading makbuzları kapanış açmadı; kapsam ve tam paket doğrulaması devam ediyor.
