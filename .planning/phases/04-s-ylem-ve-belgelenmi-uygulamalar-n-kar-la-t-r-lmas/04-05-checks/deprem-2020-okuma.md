@@ -372,4 +372,6 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 
 - Aynı görüşmenin normalize metninde 430000–439500 okundu: CHP adına Erdan Kılıç'ın İzmir depremzedeleri ve mevzuat üzerine konuşması biter, AK Parti adına komisyon başkanı Recep Uncuoğlu söz alır. Beyan ve öneriler sahiplerine aittir; TİP etkisi ve somut uygulama sonucu göstermez. Konum 439500 sonrası açık.
 
+- Aynı görüşmenin normalize metninde 439500–449000 okundu: Uncuoğlu, komisyon raporunun kapsamını ve yapı envanteri, dönüşüm, finansman önerilerini aktarır; Gürsel Erol ara sözlerle farklı bir değerlendirme sunar. Sözler taraflara atfedildi, öneriler uygulamaya geçmiş sayılmadı. Konum 449000 sonrası açık.
+
 - Aynı görüşmenin normalize metninde 411000–420500 okundu: Karasu'nun barınma, dönüşüm ve eğitim önerileri biter; CHP adına Kamil Okyay Sındır, komisyonu ve İzmir'deki proje alanlarına ilişkin bakanlık yanıtlarını anlatmaya başlar. Beyanlar ve aktarılan yanıtlar ilgili kaynak ve aktörlere aittir; TİP sonucu sayılmaz. Konum 420500 sonrası açık.
