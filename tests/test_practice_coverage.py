@@ -303,5 +303,69 @@ class PracticeCoverage(unittest.TestCase):
             self.assertGreaterEqual(reopened_html.count('Temporary new source'), 2)
 
 
+    def test_documented_unmatched_event_keeps_search_state_and_both_links(self):
+        data = copy.deepcopy(self.data)
+        inventory = uygulamalar.build_practice_inventory(data)
+        topic = 'organ-secim-yontemi'
+        party = 'yeni-parti'
+        for name in uygulamalar.PRACTICE_COVERAGE_TABLES:
+            data[name] = []
+        data['practice_coverage_contract'] = [dict(version=2, inventory_json=json.dumps(inventory))]
+        scopes = {}
+        for cell in inventory['cells']:
+            if (cell['party_id'], cell['topic_id']) == (party, topic):
+                scope = {key: cell[key] for key in ('party_id', 'topic_id', 'taxonomy_version',
+                         'period_start', 'cutoff_at', 'research_kind')}
+                scope.update(id=cell['cell_id'], boundary_reason='Temporary test boundary')
+                scopes[cell['research_kind']] = scope
+        data['practice_scope_v2'] = [scopes['event']]
+        event = next(row for row in data['practice_event'] if row['id'] == 'tracer-cesme')
+        data['practice_event'].append(dict(event, id='temporary-unmatched-event', common_event_key=None))
+        evidence = next(row for row in data['practice_event_evidence']
+                        if row['event_id'] == event['id'] and row['passage_id'] == '0105-cesme-p')
+        data['practice_event_evidence'].append(dict(evidence, event_id='temporary-unmatched-event'))
+        version = next(row for row in data['document_version'] if row['id'] == '0105-cesme-v1')
+        attempt = dict(id='temporary-event-reading', scope_id=scopes['event']['id'],
+                       attempted_at='2026-11-11T13:30:00+00:00', query=version['original_url'],
+                       url=version['original_url'], result='examined', reason='Temporary reviewed source',
+                       source_version_id=version['id'])
+        data['practice_attempt_v2'] = [attempt]
+        data['practice_scope_source'] = [dict(scope_id=scopes['event']['id'], version_id=version['id'],
+            inspected_sections='Temporary source section', inspected_at=attempt['attempted_at'])]
+        candidate = dict(id='temporary-unmatched-candidate', scope_id=scopes['event']['id'],
+                         event_id='temporary-unmatched-event', relation_id=None, state='unmatched',
+                         reason='Temporary test comparison boundary', passage_ids='["0105-cesme-p"]')
+        data['practice_candidate'] = [candidate]
+        self.assertTrue(uygulamalar.validate_practice_closure(data, inventory))
+        targets = uygulamalar.practice_review_targets(data)
+        self.assertEqual(targets[('practice_candidate', candidate['id'])], ({'0105-cesme-p'}, {party}))
+        anchors = [f'{view}-unmatched-{candidate["id"]}' for view in ('party', 'comparison')]
+
+        def check_cards(label):
+            html = arsiv.render_comparison_snapshot(data, arsiv.render_report)
+            for anchor in anchors:
+                tag = f'id="{anchor}"'
+                self.assertEqual(html.count(tag), 1)
+                self.assertIn(f'href="#{anchor}"', html)
+                article = html.split(tag, 1)[1].split('</article>', 1)[0]
+                self.assertIn(label, article)
+
+        check_cards('Henüz incelenmedi')
+        data['practice_scope_v2'].append(scopes['statement'])
+        data['practice_attempt_v2'].append(dict(attempt, id='temporary-statement-reading',
+                                               scope_id=scopes['statement']['id']))
+        check_cards('Araştırma sürüyor')
+
+        linked = dict(data['practice_relation'][0], id='temporary-relation', event_id=candidate['event_id'])
+        data['practice_relation'].append(linked)
+        html = arsiv.render_comparison_snapshot(data, arsiv.render_report)
+        self.assertTrue(all(f'id="{anchor}"' not in html for anchor in anchors))
+        self.assertEqual(data['practice_candidate'], [candidate])
+
+        candidate['event_id'] = 'tracer-event-that-does-not-exist'
+        with self.assertRaises(ValueError):
+            uygulamalar.validate_practice_closure(data, inventory)
+
+
 if __name__ == '__main__':
     unittest.main()

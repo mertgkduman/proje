@@ -70,11 +70,27 @@ PRACTICE_SOURCE_REVIEW_REVISION_TABLES = {
 }
 
 
+def _unmatched_candidates(data, selection):
+    """Yield the retained candidate and revision records with their owner."""
+    scopes = {scope['id']: scope for scope in data.get('practice_scope_v2', [])}
+    parents = {row['id']: row for row in data.get('practice_candidate', [])}
+    for row in selection.get('practice_candidate', []):
+        if row['state'] == 'unmatched' and row['scope_id'] in scopes:
+            yield 'practice_candidate', row, scopes[row['scope_id']]
+    for row in selection.get('practice_candidate_revision', []):
+        parent = parents.get(row['candidate_id'])
+        if row['state'] == 'unmatched' and parent and parent['scope_id'] in scopes:
+            yield 'practice_candidate_revision', row, scopes[parent['scope_id']]
+
+
 def practice_review_targets(data, selection=None):
     """Map each semantic target to its actual passages and party boundaries."""
     selected = data if selection is None else selection
     targets = {}
     evidence = data.get('finding_evidence', [])
+    unmatched_parties = {}
+    for _, row, scope in _unmatched_candidates(data, data):
+        unmatched_parties.setdefault(row['event_id'], set()).add(scope['party_id'])
 
     def add(kind, identity, passages, parties=()):
         key = (kind, identity)
@@ -89,12 +105,14 @@ def practice_review_targets(data, selection=None):
         event_id = row['event_id']
         parties = [r['party_id'] for name in ('practice_relation', 'practice_contribution', 'practice_unmatched')
                    for r in data.get(name, []) if r['event_id'] == event_id]
+        parties.extend(unmatched_parties.get(event_id, ()))
         add('practice_event_evidence', '|'.join((event_id, row['passage_id'], row['stage'])), [row['passage_id']], parties)
     for row in selected.get('practice_event', []):
         event_id = row['id']
         refs = [e['passage_id'] for e in data.get('practice_event_evidence', []) if e['event_id'] == event_id]
         parties = [r['party_id'] for name in ('practice_relation', 'practice_contribution', 'practice_unmatched')
                    for r in data.get(name, []) if r['event_id'] == event_id]
+        parties.extend(unmatched_parties.get(event_id, ()))
         add('practice_event', event_id, refs, parties)
     for name, fields in {
         'practice_statement': ('summary_finding_id', 'quote_finding_id'),
@@ -137,6 +155,8 @@ def practice_review_targets(data, selection=None):
     for row in selected.get('practice_unmatched', []):
         refs = [e['passage_id'] for e in data.get('practice_event_evidence', []) if e['event_id'] == row['event_id']]
         add('practice_unmatched', row['id'], refs, [row['party_id']])
+    for kind, row, scope in _unmatched_candidates(data, selected):
+        add(kind, row['id'], json.loads(row['passage_ids']), [scope['party_id']])
     return targets
 
 
@@ -367,7 +387,7 @@ def validate_practice_closure(data, inventory, extensions=()):
     exists. A later relevant lead must reopen that closure before it can be
     counted as closed again.
     """
-    from arsiv import aware_time, safe_url, normalize_url
+    from arsiv import aware_time, safe_url, normalize_url, validate_dates
 
     snapshot = dict(data, release_id=inventory['base_release'])
     validate_practice_coverage(snapshot, inventory, extensions)
@@ -486,7 +506,7 @@ def validate_practice_closure(data, inventory, extensions=()):
         aware_time(source['inspected_at'])
         if not any(a['scope_id'] == scope['id'] and a['source_version_id'] == source['version_id'] and a['result'] == 'examined' and aware_time(a['attempted_at']) <= aware_time(source['inspected_at']) for a in attempts.values()):
             raise ValueError('İncelenen kaynak gerçek girişim gerektirir')
-    events = {event['id'] for event in data['practice_event']}
+    events = {event['id']: event for event in data['practice_event']}
     relations = {r['id']: r for r in data['practice_relation']}
     candidates = {c['id']: dict(c) for c in data['practice_candidate']}
     candidate_revisions = sorted(data.get('practice_candidate_revision', []), key=lambda row: aware_time(row['recorded_at']))
@@ -503,7 +523,7 @@ def validate_practice_closure(data, inventory, extensions=()):
             refs = json.loads(candidate['passage_ids'])
         except (ValueError, TypeError):
             raise ValueError('Aday pasajları geçersiz')
-        if (not scope or not candidate['reason'] or candidate['state'] not in ('eligible', 'excluded', 'unverified') or
+        if (not scope or not candidate['reason'] or candidate['state'] not in ('eligible', 'excluded', 'unverified', 'unmatched') or
                 not isinstance(refs, list) or not refs or any(not isinstance(p, str) or p not in passages or not source_allowed(passages[p]['version_id'], scope['party_id'], p) for p in refs)):
             raise ValueError('Aday kaynak veya kapsamı geçersiz')
         if any(not any(s['scope_id'] == scope['id'] and s['version_id'] == passages[p]['version_id'] for s in data['practice_scope_source']) for p in refs):
@@ -515,6 +535,13 @@ def validate_practice_closure(data, inventory, extensions=()):
         if candidate['state'] == 'eligible' and not (any(r['event_id'] == candidate['event_id'] and (r['party_id'], r['topic_id']) == (scope['party_id'], scope['topic_id']) for r in data['practice_relation']) or
                 any(u['event_id'] == candidate['event_id'] and (u['party_id'], u['topic_id']) == (scope['party_id'], scope['topic_id']) for u in data.get('practice_unmatched', []))):
             raise ValueError('Uygun olay için parti ve konu bağı gerekli')
+        if candidate['state'] == 'unmatched':
+            event = events.get(candidate['event_id'])
+            linked = {e['passage_id'] for e in data['practice_event_evidence'] if e['event_id'] == candidate['event_id']}
+            if (scope['research_kind'] != 'event' or candidate['relation_id'] or not event or not set(refs) <= linked or
+                    validate_dates(event['event_at'], event['date_precision'], scope['period_start'], scope['cutoff_at'],
+                                   event['date_unknown_reason']) == 'outside'):
+                raise ValueError('Eşleşmemiş olay için aynı kapsamdaki bağlı olay kanıtı gerekli')
         if candidate['relation_id']:
             relation = relations.get(candidate['relation_id'])
             if not relation or (relation['party_id'], relation['topic_id'], relation['event_id']) != (scope['party_id'], scope['topic_id'], candidate['event_id']):
@@ -653,11 +680,15 @@ def validate_practice_evidence(data, findings, passages, events, statements, che
             if not any(e['event_id'] == relation['event_id'] and e['stage'] == 'result' and e['passage_id'] in refs for e in data['practice_event_evidence']):
                 raise ValueError('Sonuç ayrı sonuç aşaması kanıtı gerektirir')
     disputes = {d['id']: d for d in data.get('practice_dispute', [])}
+    unmatched_parties = {}
+    for _, row, scope in _unmatched_candidates(data, data):
+        unmatched_parties.setdefault(row['event_id'], set()).add(scope['party_id'])
     for dispute in disputes.values():
         if dispute['event_id'] not in events or not all(dispute[k] for k in ('supported_points', 'disputed_points', 'unresolved_points')):
             raise ValueError('İhtilaf noktaları veya olayı eksik')
         parties = {r['party_id'] for r in data['practice_relation'] if r['event_id'] == dispute['event_id']}
         parties |= {u['party_id'] for u in data.get('practice_unmatched', []) if u['event_id'] == dispute['event_id']}
+        parties.update(unmatched_parties.get(dispute['event_id'], ()))
         fid = dispute['summary_finding_id']
         if fid not in findings or findings[fid]['party_id'] not in parties:
             raise ValueError('İhtilaf özeti olay kapsamıyla uyuşmuyor')
@@ -675,6 +706,7 @@ def validate_practice_evidence(data, findings, passages, events, statements, che
         documents = {d['id']: d for d in data['document']}
         parties = {r['party_id'] for r in data['practice_relation'] if r['event_id'] == dispute['event_id']}
         parties |= {u['party_id'] for u in data.get('practice_unmatched', []) if u['event_id'] == dispute['event_id']}
+        parties.update(unmatched_parties.get(dispute['event_id'], ()))
         if any(documents[versions[version]['document_id']]['party_id'] != party and (version, party, ref['passage_id']) not in party_sources for party in parties):
             raise ValueError('İhtilaf kaynağı parti kapsamı dışında')
 

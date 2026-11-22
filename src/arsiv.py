@@ -48,6 +48,7 @@ from rapor_v25 import render_report as render_v25_report
 from rapor_v26 import render_report as render_v26_report
 from rapor_v27 import render_report as render_v27_report
 from rapor_v28 import render_report as render_v28_report
+from rapor_v29 import render_report as render_v29_report
 from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVIDENCE_TABLES, PRACTICE_COVERAGE_TABLES, PRACTICE_SOURCE_REVIEW_TABLES, PRACTICE_SOURCE_REVIEW_REVISION_TABLES, PRACTICE_MERGE_TABLES, validate_practices, load_practice,
                          validate_practice_input, practice_manifest_fields,
                          validate_practice_descent)
@@ -3058,7 +3059,7 @@ def audit_release(release='current', _seen=None, *, storage_root=None):
     renderer = {
         None: render_legacy_report, 2: render_v2_report, 3: render_v3_report,
         4: render_v4_report, 5: render_v5_report, 6: render_v6_report, 7: render_v7_report, 8: render_v8_report,
-        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, 22: render_v22_report, 23: render_v23_report, 24: render_v24_report, 25: render_v25_report, 26: render_v26_report, 27: render_v27_report, 28: render_v28_report, RENDERER_VERSION: render_report,
+        9: render_v9_report, 10: render_v10_report, 11: render_v11_report, 12: render_v12_report, 13: render_v13_report, 14: render_v14_report, 15: render_v15_report, 16: render_v16_report, 17: render_v17_report, 18: render_v18_report, 19: render_v19_report, 20: render_v20_report, 21: render_v21_report, 22: render_v22_report, 23: render_v23_report, 24: render_v24_report, 25: render_v25_report, 26: render_v26_report, 27: render_v27_report, 28: render_v28_report, 29: render_v29_report, RENDERER_VERSION: render_report,
     }.get(manifest.get('renderer_version'))
     if renderer is None: raise ValueError('Bilinmeyen rapor sürümü')
     if (folder / 'index.html').read_bytes() != render_comparison_snapshot(exported, renderer).encode('utf-8'):

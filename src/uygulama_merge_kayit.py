@@ -35,7 +35,7 @@ def _review_target_exists(data, kind, identity):
     if kind == 'practice_dispute_evidence':
         return any('|'.join((r['dispute_id'], r['passage_id'], r['point'], r['role'])) == identity for r in data.get(kind, []))
     table, dot, field = kind.partition('.')
-    if table not in set(REVIEW_FIELDS) | {'practice_event', 'practice_unmatched'}:
+    if table not in set(REVIEW_FIELDS) | {'practice_event', 'practice_unmatched', 'practice_candidate', 'practice_candidate_revision'}:
         return False
     if dot and field not in REVIEW_FIELDS.get(table, ()):
         return False

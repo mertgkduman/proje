@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 29
+RENDERER_VERSION = 30
 STYLE = Path(__file__).with_name('rapor_v25.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -465,11 +465,35 @@ def render_report(data):
         for revision in sorted(data.get('practice_lead_revision', []), key=lambda x: datetime.fromisoformat(x['recorded_at'].replace('Z', '+00:00'))):
             coverage_leads[revision['lead_id']].update(state=revision['state'], attempt_ids=revision['attempt_ids'])
         for revision in sorted(data.get('practice_candidate_revision', []), key=lambda x: datetime.fromisoformat(x['recorded_at'].replace('Z', '+00:00'))):
-            coverage_candidates[revision['candidate_id']].update(state=revision['state'], reason=revision['reason'])
+            coverage_candidates[revision['candidate_id']].update(
+                {key: revision[key] for key in ('state', 'reason', 'event_id', 'relation_id', 'passage_ids')})
         revisions = data.get('practice_inventory_revision', [])
         marker = max(revisions, key=lambda x: x['epoch']) if revisions else data['practice_coverage_contract'][0]
         inventory = json.loads(marker['inventory_json'])
         coverage_states = {item['cell_id']: item['state'] for item in practice_coverage_states(data, inventory)}
+        live_scopes = {scope['id']: scope for scope in data['practice_scope_v2']}
+        statements_by_topic = {(cell['party_id'], cell['topic_id'], cell['taxonomy_version']): cell['cell_id']
+                               for cell in inventory['cells'] if cell['research_kind'] == 'statement'}
+        tried = {attempt['scope_id'] for attempt in data.get('practice_attempt_v2', [])}
+        tried.update(bridge['scope_id'] for bridge in data.get('practice_legacy_scope', []))
+        linked = {(r['party_id'], r['topic_id'], r['event_id']) for r in data['practice_relation']}
+        linked.update((r['party_id'], r['topic_id'], r['event_id']) for r in data.get('practice_unmatched', []))
+        for candidate in sorted(coverage_candidates.values(), key=lambda row: row['id']):
+            if candidate['state'] != 'unmatched':
+                continue
+            scope = live_scopes[candidate['scope_id']]
+            key = (scope['party_id'], scope['topic_id'], scope['taxonomy_version'])
+            event_key = (*key[:2], candidate['event_id'])
+            if event_key in linked:
+                continue
+            linked.add(event_key)
+            statement_scope = statements_by_topic[key]
+            state = 'Henüz incelenmedi'
+            if statement_scope in tried:
+                state = ('Belirtilen kapsam incelendi' if coverage_states[statement_scope] == 'closed'
+                         else 'Araştırma sürüyor')
+            unmatched_by_party_topic.setdefault(key, []).append(dict(
+                candidate, statement_search_state='coverage', statement_state_label=state))
 
     def add_dispute_summary(dispute):
         finding = findings[dispute['summary_finding_id']]
@@ -632,7 +656,9 @@ def render_report(data):
                 prefix = 'comparison-unmatched-' if comparison else 'party-unmatched-'
                 other = 'party-unmatched-' if comparison else 'comparison-unmatched-'
                 state = 'Henüz incelenmedi'
-                if item['statement_search_state'] == 'missing':
+                if item['statement_search_state'] == 'coverage':
+                    state = item['statement_state_label']
+                elif item['statement_search_state'] == 'missing':
                     allowed = {'Bulunamadı': ('search', 'no_result'), 'Erişilemedi': ('access', 'failure'), 'Doğrulanamadı': ('verification', 'inconclusive')}
                     missing = next(m for a in practice_attempts[item['statement_scope_id']]
                                    if (original := original_attempts.get(a['id'])) and
@@ -646,6 +672,9 @@ def render_report(data):
                 if not event['event_at']:
                     pieces.append(f'<p>Tarih belirsiz: {esc(event["date_unknown_reason"])}</p>')
                 refs = event_evidence.get(event['id'], [])
+                if item['statement_search_state'] == 'coverage':
+                    source_ids = set(json.loads(item['passage_ids']))
+                    refs = [ref for ref in refs if ref['passage_id'] in source_ids]
                 for stage, label in (('initiative', 'Karar veya girişim'), ('action', 'Fiilen yapılan'), ('result', 'Belgelenmiş sonuç')):
                     stage_refs = [ref for ref in refs if ref['stage'] == stage]
                     pieces.append('<p>' + label + ': ' + (' '.join('<span class="summary">' + esc(ref['supported_point']) + '</span> ' + named_citation(ref['passage_id']) for ref in stage_refs) if stage_refs else 'Bu aşama için bağlı kanıt bulunmuyor.') + '</p>')
