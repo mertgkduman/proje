@@ -6973,7 +6973,7 @@
       "values": {
         "finding_id": "0405-tip-3464-finding",
         "passage_id": "0405-tip-3464-ballot-bas-p",
-        "checked_at": "2026-11-22T22:04:51.914096+00:00",
+        "checked_at": "2026-11-22T22:06:31.364926+00:00",
         "result": "confirmed",
         "reason": "Kesin kişisel oy ve başkanın teklifin tümüne ilişkin açıklaması ayrı incelendi."
       }
@@ -6991,7 +6991,7 @@
       "values": {
         "finding_id": "0405-tip-3464-finding",
         "passage_id": "0405-tip-3464-ballot-kadigil-p",
-        "checked_at": "2026-11-22T22:04:51.914096+00:00",
+        "checked_at": "2026-11-22T22:06:31.364926+00:00",
         "result": "confirmed",
         "reason": "Kesin kişisel oy ve başkanın teklifin tümüne ilişkin açıklaması ayrı incelendi."
       }
@@ -7009,7 +7009,7 @@
       "values": {
         "finding_id": "0405-tip-3464-finding",
         "passage_id": "0405-tip-3464-ballot-sik-p",
-        "checked_at": "2026-11-22T22:04:51.914096+00:00",
+        "checked_at": "2026-11-22T22:06:31.364926+00:00",
         "result": "confirmed",
         "reason": "Kesin kişisel oy ve başkanın teklifin tümüne ilişkin açıklaması ayrı incelendi."
       }
@@ -7027,7 +7027,7 @@
       "values": {
         "finding_id": "0405-tip-3464-finding",
         "passage_id": "0405-tip-3464-tutanak-accept-p",
-        "checked_at": "2026-11-22T22:04:51.914096+00:00",
+        "checked_at": "2026-11-22T22:06:31.364926+00:00",
         "result": "confirmed",
         "reason": "Kesin kişisel oy ve başkanın teklifin tümüne ilişkin açıklaması ayrı incelendi."
       }
@@ -7039,7 +7039,7 @@
         "kind": "finding",
         "subject_id": "0405-tip-3464-finding",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-22T22:04:51.914096+00:00",
+        "reviewed_at": "2026-11-22T22:06:31.364926+00:00",
         "result": "reviewed",
         "reason": "Ret ve katılmama kişisel oylar; kabul toplam sonucudur."
       }
@@ -8768,13 +8768,13 @@
         "scope_id": "practice-5948a2c1b6692a332a51d90310d7670e92bd9b5ab8fabc0339de3b5c0e2cd11d",
         "version_id": "0405-tip-3464-ballot-v1",
         "inspected_sections": "[\"Baş, Kadıgil ve Şık kişisel oy satırları\", \"Kesin açık oy toplamları\"]",
-        "inspected_at": "2026-11-22T22:04:51.914096+00:00"
+        "inspected_at": "2026-11-22T22:06:31.364926+00:00"
       },
       {
         "scope_id": "practice-5948a2c1b6692a332a51d90310d7670e92bd9b5ab8fabc0339de3b5c0e2cd11d",
         "version_id": "0405-tip-3464-tutanak-v1",
         "inspected_sections": "[\"2/3464 teklifinin tümünün oylanması\", \"Başkanın kabul açıklaması\"]",
-        "inspected_at": "2026-11-22T22:04:51.914096+00:00"
+        "inspected_at": "2026-11-22T22:06:31.364926+00:00"
       }
     ],
     "practice_lead": [
@@ -8946,12 +8946,22 @@
       {
         "id": "0405-tip-3464-tutanak-okuma",
         "scope_id": "practice-5948a2c1b6692a332a51d90310d7670e92bd9b5ab8fabc0339de3b5c0e2cd11d",
-        "attempted_at": "2026-11-22T22:04:51.914096+00:00",
+        "attempted_at": "2026-11-22T22:06:31.364926+00:00",
         "query": "TBMM 2/3464 tümü açık oy cetveli, TİP satırları ve sonuç",
         "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/50/AcikOylamaSonuc/7254d212-c78d-48e4-b30e-aa59e82803d0.html",
         "result": "examined",
         "reason": "Üç kişisel oy ve kabul açıklaması okundu; önceki özel gerekçe bulunmadı.",
         "source_version_id": "0405-tip-3464-ballot-v1"
+      },
+      {
+        "id": "0405-tip-3464-birlesim-okuma",
+        "scope_id": "practice-5948a2c1b6692a332a51d90310d7670e92bd9b5ab8fabc0339de3b5c0e2cd11d",
+        "attempted_at": "2026-11-22T22:06:31.364926+00:00",
+        "query": "TBMM 50. birleşim 2/3464 teklifinin tümü ve oylama sonucu",
+        "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/50/Tam/334de34c-51a4-43d6-a3be-5d65bb5659a8.html",
+        "result": "examined",
+        "reason": "Teklifin tümünün oylanması ve başkanın kabul açıklaması incelendi.",
+        "source_version_id": "0405-tip-3464-tutanak-v1"
       }
     ],
     "practice_candidate": [
