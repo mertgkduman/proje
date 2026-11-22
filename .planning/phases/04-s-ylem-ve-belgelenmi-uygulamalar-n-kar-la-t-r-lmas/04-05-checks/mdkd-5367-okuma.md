@@ -25,3 +25,5 @@ Ek okuma: 2026 tutanağının indeks 8–13 metin katmanı da incelendi. Genel S
 İndeks 32–43 metin katmanı okundu: AK Parti temsilcilerinin değerlendirmelerinden sonra DSP Genel Başkanı Önder Aksakal rapora dair görüş ve itirazlarını dile getirir. Konuşmalardaki siyasi nitelendirme ve iddialar yalnız konuşmacılarına aittir. İndeks 49–58 ve tüm sayfa görselleri açık kalır.
 
 İndeks 49–58 metin katmanı da okundu: Doğan Bekin, EMEP adına İskender Bayhan, HÜDA PAR adına Zekeriya Yapıcıoğlu ve Yeni Yol grubu adına konuşmalar yer alır. Bayhan indeks 53'te EMEP adına hayır iradesini açıklar; bu tutum Şık'ın önceki sözleriyle birleştirilip tek parti görüşü sayılmaz. Böylece 62 sayfanın metin katmanı okunmuştur; sayfa görselleri, 2025 tarihli 95 sayfalık tutanağın kalan sayfaları ve konu kapsamındaki diğer kaynak uçları açık olduğundan kapsam kapanışı yapılmaz.
+
+2025 ilk toplantı incelenmemiş tutanağının indeks 0–5 metin katmanı ayrıca okundu: kapak ve Başkan Numan Kurtulmuş'un açılış konuşması bulunur. Başkanın ifadeleri Şık veya TİP'e atfedilmez. Bu belgenin indeks 6–43 ve 50–94 metinleri ve görselleri açıktır.
