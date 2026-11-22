@@ -90,3 +90,5 @@ e2ebfd63: 10 Mart 2021 komisyon toplantısının tüm 33 sayfası okundu; 17 Mar
 9 Aralık 2020 komisyon PDF’sinin tamamı 0–154 de okundu; güncel ayrıntı deprem-2020-okuma.md son paragrafındadır. Tek toplantı tüm komisyonun veya kapsamın bittiği anlamına gelmez.
 
 23 Aralık 2020 2638 kaydının 133 sayfası da okundu; son sayfa konuşma ortasında kesildiğinden toplantı kapanışını ve sonraki katılımı göstermez. TMMOB ve altı oda sunum yaptı; İçmimarlar Odasının dinleyici katılımı ve sunum daveti talebi ayrı kaydedildi. Baş talebiyle nedensellik veya bütün işçi/sağlık temsili kanıtlanmış değil. 2630/2638 ve 2661/2676/2680/2682 özgün PDF baytları 04-05-checks alanında SHA eşleşmesiyle saklandı (d6a48482, 4091eddb); scope-098 yalnız kısmi güncellendi (3853219e). 610 pending, 142 kısmi, sıfır kapanış; rapor ve diğer toplantı kaynakları açık.
+
+Rapor `b525e6da…` PDF indeks 44–204 kesintisiz okunup deprem-2020-okuma.md içinde bölümler ve sınırlamalar kaydedildi (son 52a8ee0c); indeks 205 ve sonrası açık. İndeks 129’da altı oda görüşünün komisyon raporunda değerlendirildiği yazılı; TTB’nin genel anılması ise komisyona katılımını göstermiyor. 610 pending, 142 partial, 0 kapanış.
