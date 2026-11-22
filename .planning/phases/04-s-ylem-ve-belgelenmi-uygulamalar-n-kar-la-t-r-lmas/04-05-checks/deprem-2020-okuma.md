@@ -115,3 +115,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 23 Aralık toplantısı PDF indeks 34–38 okundu: üyeler imar affı ve vergi harcamaları konusunda farklı görüşlerini dile getirir, Harita ve Kadastro Odası oturumu kapanır, İnşaat Mühendisleri Odası Başkanı Taner Yüzgeç sunuma başlar. Tartışmalı iddialar ve tarihsel sayılar ilgili konuşmacılara aittir; TİP’e veya bağımsız olguya çevrilmedi. İndeks 39–132 açık.
 
 23 Aralık toplantısı PDF indeks 39–43 okundu: İnşaat Mühendisleri Odası başkanı deprem stratejisi, bina envanteri, mesleki eğitim ve denetim hakkında kurumunun görüş, tahmin ve önerilerini sunar; kimi gerçekleşme bilgilerine ulaşamadığını açıkça belirtir. Bunlar TİP uygulaması veya bağımsızca doğrulanmış sonuç değildir. İndeks 44–132 açık.
+
+23 Aralık toplantısı PDF indeks 44–48 okundu: İnşaat Mühendisleri Odası sunumu sonlanır, komisyon başkanı ve üyeler öneri ve eleştirilere dair farklı görüşler ile oda başkanının yanıtını aktarır. Bunlar o tarihteki taraf görüşleridir; TİP veya bağımsız gerçekleşme olarak kaydedilmez. İndeks 49–132 açık.
