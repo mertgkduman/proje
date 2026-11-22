@@ -341,14 +341,35 @@ class PracticeCoverage(unittest.TestCase):
         self.assertEqual(targets[('practice_candidate', candidate['id'])], ({'0105-cesme-p'}, {party}))
         anchors = [f'{view}-unmatched-{candidate["id"]}' for view in ('party', 'comparison')]
 
+        summary_id = 'temporary-unmatched-contribution-summary'
+        quote_id = 'temporary-unmatched-contribution-quote'
+        data['finding'].extend([
+            dict(id=summary_id, party_id=party, heading='Belgelenmiş uygulamalar', pair_id=summary_id,
+                 text='Temporary contribution summary', provenance='summary', epistemic_type='claim'),
+            dict(id=quote_id, party_id=party, heading='Belgelenmiş uygulamalar', pair_id=summary_id,
+                 text='Temporary contribution quote', provenance='quote', epistemic_type='claim'),
+        ])
+        data['finding_evidence'].extend([
+            dict(finding_id=identity, passage_id=evidence['passage_id'], role='support')
+            for identity in (summary_id, quote_id)
+        ])
+        actor = next(row for row in data['actor'] if row['party_id'] == party and row['kind'] == 'institution')
+        data['practice_contribution'].append(dict(id='temporary-unmatched-contribution',
+            event_id=candidate['event_id'], party_id=party, actor_id=actor['id'], contribution_kind='support',
+            finding_id=summary_id, authority_passage_id=None, membership_passage_id=None,
+            responsibility_limit='Temporary contribution boundary'))
+
         def check_cards(label):
             html = arsiv.render_comparison_snapshot(data, arsiv.render_report)
+            arsiv.validate_phase_one_html(data, html)
             for anchor in anchors:
                 tag = f'id="{anchor}"'
                 self.assertEqual(html.count(tag), 1)
                 self.assertIn(f'href="#{anchor}"', html)
                 article = html.split(tag, 1)[1].split('</article>', 1)[0]
                 self.assertIn(label, article)
+                for finding_id in (summary_id, quote_id):
+                    self.assertEqual(article.count(f'data-finding-id="{finding_id}"'), 1)
 
         check_cards('Henüz incelenmedi')
         data['practice_scope_v2'].append(scopes['statement'])

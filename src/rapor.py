@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 30
+RENDERER_VERSION = 31
 STYLE = Path(__file__).with_name('rapor_v25.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -685,7 +685,13 @@ def render_report(data):
                             pieces.append('<p>Bireysel milletvekili faaliyeti; kurumsal tutum olarak değerlendirilmez.</p>')
                         if not event['event_at'] and practice_actors[contribution['actor_id']]['kind'] in ('individual_mp', 'authorized_representative'):
                             pieces.append('<p>Olay tarihi belirsiz olduğundan aktörün yetki veya üyelik dönemiyle çakışması doğrulanamadı.</p>')
-                        pieces.append(f'<p class="summary">{esc(finding["text"])} {esc(contribution["responsibility_limit"])} ' + ' '.join(named_citation(ref['passage_id']) for ref in evidence[finding['id']]) + '</p>')
+                        pieces.append(f'<p class="summary" data-finding-id="{esc(finding["id"])}">{esc(finding["text"])} {esc(contribution["responsibility_limit"])} '
+                                      + ' '.join(named_citation(ref['passage_id']) for ref in evidence[finding['id']]) + '</p>')
+                        for paired in findings_by_pair[finding['pair_id']]:
+                            if paired['provenance'] == 'quote':
+                                cls, quoted = format_finding(paired)
+                                pieces.append(f'<p class="{cls}" data-finding-id="{esc(paired["id"])}">{quoted} '
+                                              + ' '.join(named_citation(ref['passage_id']) for ref in evidence[paired['id']]) + '</p>')
                 for dispute in event_disputes.get(event['id'], []):
                     add_dispute_summary(dispute)
                     refs = dispute_evidence.get(dispute['id'], [])
