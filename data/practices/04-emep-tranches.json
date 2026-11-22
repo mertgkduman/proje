@@ -13146,6 +13146,28 @@
       "processed_at": null
     }
   ],
-  "queries": [],
-  "candidate_leads": []
+  "queries": [
+    {
+      "query": "EMEP 10 olağan kongresi 10 aralık 2023 Seyit Aslan genel başkan seçildi sonuç; site:evrensel.net EMEP 10 kongresi 10 Aralık 2023 Seyit Aslan seçildi",
+      "searched_at": "2026-11-22T05:35:57+00:00",
+      "results": [
+        "https://www.cumhuriyet.com.tr/turkiye/yeni-emep-genel-baskani-seyit-aslan-cumhuriyete-konustu-karanliga-2155888",
+        "https://www.emep.org/emepin-10-kongresinde-genel-baskan-seyit-aslan-oldu",
+        "https://www.evrensel.net/daily/506465/10th-congress-of-the-labour-party-barbarism-will-be-defeated-the-working-class-will-win-the-peoples-will-win"
+      ],
+      "note": "Cumhuriyet ve parti gövdeleri okundu/arşivlendi; Evrensel başlık ve özet ucu açık. Kongre 24 Aralık; onuncu kongre numarası takvim günü değildir."
+    }
+  ],
+  "candidate_leads": [
+    {
+      "id": "emep-2023-congress",
+      "scope_ids": [
+        "scope-023",
+        "scope-024"
+      ],
+      "status": "open",
+      "description": "2019 yayınlı/2020 güncellenmiş tüzük 31 ve 32 hükümleri; 24 Aralık 2023 genel başkan seçimi. Aradaki tüzük ve divan tutanağı bilinmiyor.",
+      "source_draft": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/congress-2023-source-draft.json"
+    }
+  ]
 }
