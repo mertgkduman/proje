@@ -36,11 +36,25 @@ assert (harness.sha(package), harness.sha(review)) == (package_hash, review_hash
 draft = json.loads(package.read_bytes())['practice_records']
 assert len(draft['practice_event']) == 5 and len(draft['practice_relation']) == expected_relations
 assert not draft['practice_closure']
-receipt = harness.main(package, review, 'policy-followup', stem+'-event', stem+'-relation', None,
-                       expected_party=party, namespace=f'gsd-04{plan}')
+if len(sys.argv) == 4 and sys.argv[2] == '--receipt':
+    receipt_path = Path(sys.argv[3])
+    receipt = json.loads(receipt_path.read_bytes())
+    assert receipt_path.stem == f'policy-followup-{receipt["job"]}'
+    assert receipt['canonical'] == harness.canonical_identity()
+    assert receipt['inventory_sha256'] == harness.sha(harness.INVENTORY)
+    assert receipt['package_sha256'] == package_hash and receipt['review_sha256'] == review_hash
+    for mode in ('input', 'source', 'preview'):
+        assert receipt_path.with_name(f'{receipt_path.stem}-{mode}.exit').read_text().strip() == '0'
+else:
+    assert len(sys.argv) == 2
+    receipt = harness.main(package, review, 'policy-followup', stem+'-event', stem+'-relation', None,
+                           expected_party=party, namespace=f'gsd-04{plan}')
 folder = Path(receipt['preview'])
-manifest = json.loads((folder/'manifest.json').read_bytes())
-assert manifest['preview'] and manifest['renderer_version'] == (31 if code_root else 30)
+manifest_path = folder/'manifest.json'
+manifest = json.loads(manifest_path.read_bytes())
+assert harness.sha(manifest_path) == receipt['preview_manifest_sha256']
+assert all(harness.sha(folder/name) == digest for name, digest in manifest['files'].items())
+assert manifest['preview'] and manifest['renderer_version'] == (31 if party == 'yeni-yol' else 30)
 saved = json.loads((folder/'records.json').read_bytes())
 with sqlite3.connect((folder/'records.sqlite3').as_uri()+'?mode=ro', uri=True) as db:
     db.row_factory = sqlite3.Row
@@ -65,7 +79,8 @@ if party == 'yeni-yol':
         tag = f'id="{anchor}"'
         assert page.count(tag) == 1 and f'href="#{anchor}"' in page
         card = page.split(tag,1)[1].split('</article>',1)[0]
-        assert all(term in card for term in ('10/3464','Elif Esen','destek','oylanmadı'))
+        assert all(term in card for term in ('10/3464', 'Elif Esen', 'destek', 'oylama yapılmadı'))
+        assert 'data-finding-id="0408-yeni-yol-2025-10-3464-destek-support-finding"' in card
 else:
     for term in ('11528','6 rafinerici','36 dağıtıcı'):
         assert term in page
