@@ -129,3 +129,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 23 Aralık toplantısı PDF indeks 69–73 okundu: Jeoloji Mühendisleri Odası başkanı ve deprem danışma kurulu başkanı risk azaltma, mevzuat ve yapı/yerleşim değerlendirmelerini sunar. Gözlem ve sayılar konuşmacılara aittir; TİP etkisi veya bağımsızca doğrulanmış sonuç sayılmadı. İndeks 74–132 açık.
 
 23 Aralık toplantısı PDF indeks 74–78 okundu: Jeoloji Mühendisleri Odasının risk azaltma, kurumsal yapı ve barınma önerileri ile üyelerin soru ve eleştirileri yer alır. Teknik ve siyasal tartışmalar ilgili kişilere aittir; TİP’e atfedilmedi. İndeks 79–132 açık.
+
+23 Aralık toplantısı PDF indeks 79–83 okundu: Jeoloji Odası başkanı, komisyon başkanı ve üyeler arasında mevcut mevzuat, denetim ve barınma üzerine farklı görüşler var; tutanağın kendisi bazı sayısal ifadeler için düzeltme dipnotu düşer. Bunlar taraf beyanları olarak kalır, TİP veya bağımsız sonuç sayılmaz. İndeks 84–132 açık.
