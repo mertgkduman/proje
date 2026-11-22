@@ -6,6 +6,7 @@ p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/0
 def add(k,v):entries.append(dict(kind=k,values=v))
 def source(doc,title):
  cap=json.loads((p/(doc+'-v1-capture.json')).read_text());h=cap['sha256'];url=cap['url'];raw=(root/'objects'/h/'original.html.bin').read_bytes();assert hashlib.sha256(raw).hexdigest()==h
+ if doc.endswith('tutanak'):assert hashlib.sha256((root/'objects'/h/'readable.html').read_bytes()).hexdigest()=='2374b87000c871c696d85f044150e93507cb443176a0d0b1f10a5e4e84202219'
  add('document',dict(id=doc,party_id='tip',title=title,source_kind='official'))
  add('document_version',dict(id=doc+'-v1',document_id=doc,original_url=url,final_url=url,document_date='2023-10-17',version_label='TBMM tutanağı',accessed_at=cap['accessed_at'],verified_at=cap['accessed_at'],mime='text/html',sha256=h,original_path=f'objects/{h}/original.html.bin',readable_path=f'objects/{h}/readable.html',date_precision='day',date_unknown_reason=None));add('archive_view',cap['view'])
  add('source_attribution',dict(version_id=doc+'-v1',kind='official',publisher='Türkiye Büyük Millet Meclisi',author=None,social_handle=None,published_at=None,date_precision='unknown',public_url=url,basis='17 Ekim 2023 birleşim belgesi; UTF-8 olmayan özgün bayt ve Windows-1254 pasif görünümü korundu.'))
