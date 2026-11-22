@@ -1,0 +1,5 @@
+# EYT ve emekli hakları 2/4804 açık araştırma
+
+TBMM özgün 27. dönem 2/4804 teklifinin sekiz sayfası PDF indeks 0–7 metin katmanından okundu. 27 Aralık 2022 teklifinin komisyon kaşesi 28 Aralık'tır. Gerekçe ve maddeler 1999 öncesi yaş koşulsuz emekliliğin belirli şartlarda sağlanması, sonraki sigorta başlangıçları için tablolu yaş düzenlemesi, emekli aylığı, sendika üyeliği ve taşeron çalışanların resen emekliliği konularında öneriler içerir. Metin katmanındaki bazı isimler imza nedeniyle bozulduğu için imza sayfası görsel incelenmeli; resmî TBMM ayrıntısı dört TİP vekilini listeler, ilk imza alanında hem Kadıgil hem Baş görünür. İmza sırasını yalnız OCR ile kesinleştirmeyiz.
+
+2023 tarihli TİP seçim bildirgesi 2022 teklifine dönük geriye dönük atıf içerir; tekliften önceki vaat değildir. 2023 tarihli 2/4914 iktidar ortaklarının ayrı teklifidir; konudaki benzerlik, TİP'in teklifinin kabulü veya yasaya neden olduğu iddiası değildir. 2/4804 için dönem sonu hükümsüzlük tutanağındaki özgün satır, öncül parti beyanı, kapsam bağı, kaynak incelemesi ve tüm CLI kapıları açık.
