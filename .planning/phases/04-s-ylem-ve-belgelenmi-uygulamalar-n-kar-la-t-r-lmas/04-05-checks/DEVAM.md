@@ -79,3 +79,10 @@ e2ebfd63: 10 Mart 2021 komisyon toplantısının tüm 33 sayfası okundu; 17 Mar
 136a758e: 16 Mart 2021 komisyon toplantısı 68 sayfanın tamamı okundu. Böylece 10, 16 ve 17 Mart toplantıları tam; 9 Aralık, 23 Aralık ve 18 Şubat oturumları ve komisyon raporunun çoğu henüz kısmen incelenmiştir.
 
 2/2702 çok partili belediye kanunu teklifi ve 6 Kasım 2024 TBMM haberi 02c18e4 tabanına eklemeli aday ce0ac08f: paket SHA 9320401d2e28485806487f798a278b56a6ce068c04d516a5abcb5fdec809ef41, review dd52918493f7ec09198d854cb7548f9970b6b2cfbf85c49de80a2e9f34427915; 62407713 giriş/kaynak/preview/ayrı audit çalışıyor. Ortak olay anahtarı tbmm-28-3-2-2702-belediye-45 diğer yürütücüyle uyumlu; CHP grup sunuşu ve TİP ortak imzaları ayrı. Teklif sonucu ve kesim anı bilinmiyor. Başarılı terminal makbuzu olmadan terfi yok. 610 pending, 142 kısmi, 0 closure.
+
+
+## 2/2702 doğrulanmış ek ve güncel devam
+
+62407713 terminal `COMPLETED 0:0`; INPUT, SOURCE, PREVIEW ve ayrı `INDEPENDENT_AUDIT_OK` her biri çıkış 0. Gerçek önizleme `data/.staging/gsd-0405-municipal-62407713/releases/5f597af118f7420d91e542412e218507`, manifest SHA-256 `624af0e404e93048b7545c74afb03f9763747651ba62b416f2044ac84acebbfa`, renderer 30; kanonik işaretçi ve yayın değişmedi. Aday ve review tam baytları sırasıyla `9320401d2e28485806487f798a278b56a6ce068c04d516a5abcb5fdec809ef41`, `dd52918493f7ec09198d854cb7548f9970b6b2cfbf85c49de80a2e9f34427915`; canlıya 72687de0 ile monoton eklendi. Teklif 21 Kasım 2024 CHP grup sunumu ve TİP ortak imzalarını gösterir; yasanın kabulü veya kesimdeki komisyon durumu bilinmiyor.
+
+9 Aralık 2020 155 sayfalık komisyon PDF 0–132 okundu, 133–154 açık; 18 Şubat 2021 83 sayfanın tamamı okundu. Sağlık Bakanlığı yetkililerinin 9 Aralık sunumu sağlık emekçilerinin bağımsız/sendikal katılımını veya talep sonucunu ispatlamaz. 610 hücre açık, en az 142 kısmi; kapsam tamamlandı iddiası yok. Sıradaki kapıda renderer sürümünü kökle yeniden doğrula; renderer 31 düzeltmesi hazırlanıyor.
