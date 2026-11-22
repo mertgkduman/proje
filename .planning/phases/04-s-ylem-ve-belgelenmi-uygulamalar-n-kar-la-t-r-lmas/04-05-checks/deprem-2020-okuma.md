@@ -165,3 +165,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 115–119 okundu: ABD/Japonya örnekleri ile Türkiye’de 1930–2009 afet yönetimi mevzuatı ve AFAD’a geçişin rapordaki tarihsel anlatımı yer alır. Baş konuşması öncesindeki durum TİP girişimi olarak gösterilmedi; indeks 120 ve sonrası açık.
 
 - 2021 raporu indeks 120–124 okundu: merkezî afet kurumları, AFAD ve Çevre ve Şehircilik Bakanlığının rapor dönemindeki yapısı, görevleri ve coğrafi veri düzenlemeleri anlatılıyor. Kurumsal çerçeve TİP uygulaması veya komisyonun Baş talebine yanıtı değildir; indeks 125 ve sonrası açık.
+
+- 2021 raporu indeks 125–129 okundu: Sağlık Bakanlığı ve yerel yönetimlerin 2021 bağlamındaki afet görevleri, üniversiteler ve meslek odaları anlatılır. İndeks 128 TTB’yi deprem alanındaki meslek birliklerinden biri olarak genel biçimde anar; bu komisyona katılımını kanıtlamaz. İndeks 129 altı meslek odasının 23 Aralık 2020 komisyon oturumuna sunumunu ve görüşlerin rapor çalışmalarında değerlendirildiğini açıkça bildirir; bu Baş’ın talebiyle nedensel bağlantı veya sağlık/işçi bağımsız temsiline kanıt değildir. İndeks 130 ve sonrası açık.
