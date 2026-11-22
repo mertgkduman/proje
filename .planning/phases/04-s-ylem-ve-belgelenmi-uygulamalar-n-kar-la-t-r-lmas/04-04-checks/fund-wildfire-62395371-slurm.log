@@ -1,0 +1,11 @@
+Staged 872 original, readable and view paths; package 9f75a0aaf8260d2978c4e468388f1f5426697ef48833cfd5c7196d176729ff7e; review 4d732bfe5dd9969ca484597d3a4d2290b751c3e450f884cbd3752f9bc31ab985
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 143, in <module>
+    main(Path(arguments[0]).resolve(), Path(arguments[1]).resolve(), *arguments[2:])
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 115, in main
+    check(receipt_name, 'preview', ['practice-preview','--input',str(package_path),'--inventory',str(INVENTORY),
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: preview: exit 1

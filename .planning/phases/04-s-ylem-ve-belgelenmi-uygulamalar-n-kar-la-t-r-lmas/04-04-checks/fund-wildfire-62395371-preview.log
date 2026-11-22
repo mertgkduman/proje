@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3664, in <module>
+    ThreadingHTTPServer((args.host, args.port), Handler).serve_forever()
+    ^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3527, in main
+    merge_roots = {}
+             ^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1412, in render_practice_preview
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1616, in _render_practice_preview
+    arsiv.audit_release(release, storage_root=preview_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3031, in audit_release
+    valid_renderers = {
+        ^^^^^^^^^^^^^^^^
+ValueError: Faz 2 manifest sürümleri geçersiz

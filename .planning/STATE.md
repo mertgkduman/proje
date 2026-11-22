@@ -6,7 +6,7 @@ current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılmas
 current_plan: 4
 status: executing
 stopped_at: Wave 4 source research and isolated previews in progress
-last_updated: "2026-11-22T04:32:38.191Z"
+last_updated: "2026-11-22T05:07:56.184Z"
 last_activity: 2026-11-22
 last_activity_desc: Phase 04 wave 4 research and package verification in progress
 state_head: d3f6287208cf5397716d45325d67ee64557fb39c
@@ -32,8 +32,8 @@ Current Plan: 4
 Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
-Status: 04-04, 04-05, 04-06 ve 04-07 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: 2026-11-22 UTC — Yeni Parti 114 olay ve 116 ilişkiyle doğrulandı. TİP ve DEM Parti ilk önizlemeleri tamamladı. İYİ Parti kaynak araştırması başladı.
+Status: 04-04–04-08 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
+Last activity: 2026-11-22 UTC — Yeni Parti 120 olay ve 122 ilişkiyle doğrulandı. TİP birleşik ara pakete geçti. DEM Parti, İYİ Parti ve Yeni Yol adayları denetleniyor.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 

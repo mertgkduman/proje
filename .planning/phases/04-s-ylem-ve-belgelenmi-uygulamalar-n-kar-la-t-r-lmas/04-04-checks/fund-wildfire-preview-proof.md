@@ -1,0 +1,9 @@
+# Fon denetimi ve yangın araştırması ara önizlemesi
+
+Slurm 62397044 işi 29 dakika 30 saniyede 0:0 ile tamamlandı. Girdi, 1.020 hedefli kaynak incelemesi ve yalıtılmış önizleme kontrolleri geçti. Paket SHA-256 `9f75a0aaf8260d2978c4e468388f1f5426697ef48833cfd5c7196d176729ff7e` ve inceleme SHA-256 `4d732bfe5dd9969ca484597d3a4d2290b751c3e450f884cbd3752f9bc31ab985`.
+
+120 olay ve 122 ilişki girdi, SQLite ve JSON'da alan düzeyinde eşleşti. Her ilişkinin iki HTML hedefi benzersiz ve karşılıklı bağlı. Sürüm 29 önizlemesinin manifesti ve bağlı dosyaları doğrulandı. Önizleme `data/.staging/gsd-0404-fund-wildfire-v29-62397044/releases/1c10a11990874ac892ed89540fc146a5/` altında. Kanonik işaretçi, manifest, SQLite, JSON ve HTML önceki özetleriyle eşleşti. Mevcut 114 olaylık paketin bütün kayıt ve inceleme satırları aynen taşındı. Kapsam kapanışı sıfır.
+
+7/49400, 7/49644 ve 7/49826 fon soruları ayrı TBMM kayıtlarına bağlı. İlk iki kaydın 4 Kasım tarihli ve 5 Kasım bildirimli cevap eklerinde geçen SPK yetkisi, 131 fon tasfiye kararı ve 29,3 milyar TL ara ödeme ayrı ölçüler olarak işlendi. Cevapların kapsamı alacaklıya nihai ödeme veya soruyu veren kişinin sonucu sağladığı çıkarımını desteklemiyor. 10/4460 başvurusu ile 5 Ağustos gündeme alma işlemi ayrı olay. Gündem önerisi reddedildi ve erişim anında araştırma önergesi kaydı gündemde. Baytları arşivlenen 6 Eylül eğitim kaynağı duyurusu, 7/48655’in bir gün öncesine ait. Disiplin affı dört tüzük hükmü olarak bağlandı ve 9 Kasım kararının aslı açık.
+
+Önceki 62395371 denemesi girdi ve kaynak incelemesini geçti. Kabul aşamasında eski manifest sürüm listesi yeni renderer sürümünü reddetti. 6a895f6 ile düzeltilen sürüm listesi ve değişmeyen paket özetleriyle 62397044 başarılı oldu. Tam ayrı süreç arşiv denetimi 62398206 işinde çalışıyor.
