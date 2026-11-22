@@ -171,6 +171,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-mesem-78231-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0410-emep-question-8231-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-8231-register-date-p\", \"0410-emep-question-8231-register-owner-p\", \"0410-emep-question-8231-register-reply-p\", \"0410-emep-question-8231-register-topic-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt bildirilişi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-mesem-78231-event için program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-municipal-22702-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -587,6 +600,58 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0410-emep-question-8231-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-8231-register-date-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mesem-78231-event|0410-emep-question-8231-register-date-p|action için program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0410-emep-question-8231-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-8231-register-owner-p\"]",
+      "inspected_sections": "[\"Soru sahibi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mesem-78231-event|0410-emep-question-8231-register-owner-p|action için program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0410-emep-question-8231-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-8231-register-reply-p\"]",
+      "inspected_sections": "[\"Yanıt bildirilişi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mesem-78231-event|0410-emep-question-8231-register-reply-p|action için program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0410-emep-question-8231-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-8231-register-topic-p\"]",
+      "inspected_sections": "[\"Soru konusu\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mesem-78231-event|0410-emep-question-8231-register-topic-p|action için program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-municipal-22702-event|0410-emep-municipal-22702-pdf-signers-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -925,6 +990,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mesem-78231-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-8231-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-8231-register-date-p\", \"0410-emep-question-8231-register-owner-p\", \"0410-emep-question-8231-register-reply-p\", \"0410-emep-question-8231-register-topic-p\", \"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\", \"Program G/C/b\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt bildirilişi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-mesem-78231-relation için program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-municipal-22702-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -1143,6 +1221,19 @@
       "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-mekke-vote-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mesem-78231-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-8231-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-8231-register-date-p\", \"0410-emep-question-8231-register-owner-p\", \"0410-emep-question-8231-register-reply-p\", \"0410-emep-question-8231-register-topic-p\", \"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\", \"Program G/C/b\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt bildirilişi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-mesem-78231-relation için program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -1455,6 +1546,19 @@
       "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-mekke-vote-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mesem-78231-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:51:12+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı MESEM sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-mesem-78231-relation için program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -1993,6 +2097,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-mesem-78231-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-municipal-22702-event"
     },
     {
@@ -2121,6 +2229,22 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mesem-78231-event|0410-emep-question-8231-register-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-municipal-22702-event|0410-emep-municipal-22702-pdf-signers-p|action"
     },
     {
@@ -2225,6 +2349,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mesem-78231-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-municipal-22702-relation"
     },
     {
@@ -2293,6 +2421,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mesem-78231-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-municipal-22702-relation"
     },
     {
@@ -2386,6 +2518,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-mekke-vote-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mesem-78231-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
