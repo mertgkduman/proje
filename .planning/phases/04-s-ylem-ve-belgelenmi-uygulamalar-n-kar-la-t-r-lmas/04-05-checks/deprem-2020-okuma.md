@@ -291,3 +291,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 430–434 metin katmanı okundu: yapı güçlendirme, kültür ve sanayi tesislerinin güvenliği, yapı denetimi ve mesleki yetkinliğe ilişkin komisyon önerileri yer alıyor. Rapor önerileri gerçekleşmiş veya TİP kaynaklı sonuç diye gösterilmedi. İndeks 435–523 ve görseller açık.
 
 - 2021 raporu indeks 435–439 metin katmanı okundu: riskli stok tespiti, mülkiyet, katılımlı ve yerinde dönüşüm, belediye rolü ve afet mevzuatı komisyon önerileri bulunuyor. Bunlar TİP görüşü veya fiilen gerçekleşen politika sayılmadı. İndeks 440–523 ve görseller açık.
+
+- 2021 raporu indeks 440–444 metin katmanı okundu: çerçeve afet yasası, imar ve mülkiyet, kurumların yetki çakışmaları ve yapı güvenliğine ilişkin dönemsel mevzuat değerlendirme ve önerileri bulunur. Bunlar güncel hukuk veya kabul edilmiş düzenleme olarak gösterilmedi. İndeks 445–523 ve görseller açık.
