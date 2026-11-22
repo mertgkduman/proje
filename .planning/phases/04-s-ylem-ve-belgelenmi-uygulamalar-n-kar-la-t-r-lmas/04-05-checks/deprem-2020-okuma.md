@@ -161,3 +161,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 105–109 okundu: önceki 2010 deprem komisyonu önerileri ve izleyen yıllardaki ilgili kurum çalışmalarına raporun atfettiği örnekler yer alıyor. Eski komisyonun önerileri ve bunlarla ilişkilendirilen beyanlar 2020 Baş konuşmasının sonucu değildir; bağımsız doğrulama yapılmadan yürütülme düzeyi kesinleştirilmedi. İndeks 110 ve sonrası açık.
 
 - 2021 raporu indeks 110–114 okundu: rapor 2010 komisyonu sonrası kurum faaliyetleri, sağlık koordinasyonu ve uluslararası afet belgelerini anlatır. Bu tarihsel örnekler 2020 Baş konuşmasının karşılığı veya TİP sonucu değildir; indeks 115 ve sonrası açık.
+
+- 2021 raporu indeks 115–119 okundu: ABD/Japonya örnekleri ile Türkiye’de 1930–2009 afet yönetimi mevzuatı ve AFAD’a geçişin rapordaki tarihsel anlatımı yer alır. Baş konuşması öncesindeki durum TİP girişimi olarak gösterilmedi; indeks 120 ve sonrası açık.
