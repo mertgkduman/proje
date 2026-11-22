@@ -1,0 +1,11 @@
+Staged 82 original, readable and view paths; package 89e8bf611bce1197b6c84e63fcf93a174fd3ef60d0aebf7098f5648d18c37dff; review 5a4bd0c5b3fb471bb5a61b09082db5dd2f1ccd9e8a9fbf59a7e788e74868db52
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/okul-yemegi-validation.py", line 151, in <module>
+    main(Path(arguments[0]).resolve(), Path(arguments[1]).resolve(), *arguments[2:])
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/okul-yemegi-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/okul-yemegi-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/okul-yemegi-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1

@@ -21,7 +21,7 @@ for cap,date in zip(caps,['2022-09-12','2023-09-12']):
  t=pdf_page_text(f,5); start=t.index('öğrencilere ücretsiz gıda desteği sağlanır.'); end=t.index('Bu maddenin',start); exact=t[start:end].strip()
  add('passage',dict(id=doc+'-measure-p',version_id=vid,exact=exact,prefix=None,suffix=None,article='MADDE 1',section='Ücretsiz gıda ve temiz su önerisi',pdf_page_index=5,printed_page=None))
  if n=='4600':
-  t=pdf_page_text(f,3); start=t.index('Bizler de Türkiye İşçi Partisi');end=t.index('Bu bağlamda',start);exact=t[start:end].strip()
+  t=pdf_page_text(f,3); start=t.index('Bizler de Türkiye İşçi Partisi');end=t.index('savunuyoruz.',start)+len('savunuyoruz.');exact=t[start:end].strip()
   add('passage',dict(id=doc+'-statement-p',version_id=vid,exact=exact,prefix=None,suffix=None,article=None,section='TİP adına eğitim ve gıda ilkesi',pdf_page_index=3,printed_page=None))
 cap=json.loads((p/'okul-1573-detail-capture.json').read_text()); h=cap['sha256']; url=cap['url']; vid='0405-tip-1573-detail-v1'; raw=(root/'objects'/h/'original.html.bin').read_bytes(); t=html_source_text(raw)
 add('document',dict(id='0405-tip-1573-detail',party_id='tip',title='TBMM 2/1573 teklif ayrıntısı',source_kind='official'))
@@ -38,7 +38,7 @@ prefix='0405-tip-okul'; s=prefix+'-statement'; ev=prefix+'-1573-event'; rel=pref
 add('actor',dict(id=prefix+'-kadigil',kind='authorized_representative',party_id='tip',person_id='0405-tip-sera-kadigil',authorization_passage_id=authority))
 quote='Bizler de Türkiye İşçi Partisi olarak her çocuğun, temel gıda yardımı alarak, 12 yıl kesintisiz,\nparasız, bilimsel ve laik eğitim hakkının sağlanması gerektiğini savunuyoruz.'
 assert quote in pdf_page_text(root/'objects'/caps[0]['sha256']/'original.pdf',3)
-findings=[(prefix+'-summary','TİP, çocukların temel gıda desteğiyle parasız eğitim hakkını ve sağlıklı gıdaya erişimi savundu.','summary',[st]),(prefix+'-quote',quote,'quote',[st]),(prefix+'-initiative','Sera Kadıgil 2023’te tam gün devlet okullarında ücretsiz gıda ve tüm devlet okullarında ücretsiz temiz su öneren 2/1573 teklifini sundu.','summary',[authority,new,'0405-tip-1573-detail-signature-p','0405-tip-1573-detail-number-p','0405-tip-1573-detail-date-p']),(prefix+'-explanation','2022 tarihli TİP açıklaması ve teklifi çocukların gıda ve eğitim hakkını ilişkilendirdi. İlk teklif 2023’te hükümsüz sayıldı; sonraki 2/1573 yeni dönem teklifidir ve kabul edilmiş uygulama göstermez.','summary',[st,old,hn,ht,new])]
+findings=[(prefix+'-summary','TİP, çocukların temel gıda desteğiyle parasız eğitim hakkını savundu.','summary',[st]),(prefix+'-quote',quote,'quote',[st]),(prefix+'-initiative','Sera Kadıgil 2023’te tam gün devlet okullarında ücretsiz gıda ve tüm devlet okullarında ücretsiz temiz su öneren 2/1573 teklifini sundu.','summary',[authority,new,'0405-tip-1573-detail-signature-p','0405-tip-1573-detail-number-p','0405-tip-1573-detail-date-p']),(prefix+'-explanation','2022 tarihli TİP açıklaması ve teklifi çocukların gıda ve eğitim hakkını ilişkilendirdi. İlk teklif 2023’te hükümsüz sayıldı; sonraki 2/1573 yeni dönem teklifidir ve kabul edilmiş uygulama göstermez.','summary',[st,old,hn,ht,new])]
 for fid,value,prov,refs in findings:
  add('finding',dict(id=fid,party_id='tip',heading='Belgelenmiş uygulamalar',pair_id=s if fid in (prefix+'-summary',prefix+'-quote') else fid,text=value,provenance=prov,epistemic_type='claim'))
  for ref in refs:
