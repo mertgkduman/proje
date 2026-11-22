@@ -1,0 +1,17 @@
+/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-07-checks/institution-tracer-v3.json: OK
+/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-07-checks/institution-review-v3.json: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0407-institution-62397211/check/data/current.json: OK
+PRACTICE_INPUT_OK
+PRACTICE_SOURCE_REVIEW_OK
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3670, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3533, in main
+    result = render_practice_preview(package, out, inventory, args.base_release, storage_root=DATA, source_root=args.source_root, merge_source_roots=merge_roots)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1412, in render_practice_preview
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1427, in _render_practice_preview
+    raise ValueError('Önizleme hedefi mevcut veya proje kökü içinde')
+ValueError: Önizleme hedefi mevcut veya proje kökü içinde
