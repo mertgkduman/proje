@@ -75,3 +75,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 78–82 de okundu: Bedri Yaşar ve Kamil Okyay Sındır afet trafiği ve güvenliğini sorar, emniyet yetkilisi cevap verir. Tartışma ve sayısal iddialar sahiplerine aittir; TİP’e atıf veya bağımsız doğrulama yapılmadı. İndeks 83–154 açık.
 
 9 Aralık toplantısı PDF indeks 83–87 de okundu: emniyet oturumu soru-cevapla kapanır, Jandarma Lojistik Başkanı Ersel Özer tahliye ve yerleştirme planı sunumuna başlar. Beyanlar kaynak aktörüne ait kalır; TİP veya doğrulanmış uygulama sonucu olarak gösterilmez. İndeks 88–154 açık.
+
+9 Aralık toplantısı PDF indeks 88–92 de okundu: Jandarma temsilcisi tahliye planı ve Elâzığ/İzmir müdahalesiyle ilgili sunum yapar, ardından eğitim ve görevlendirme sorularını yanıtlamaya başlar. Rakamlar ve olay anlatımı temsilci beyanı olarak tutulur; TİP eylemine veya bağımsız doğrulamaya çevrilmez. İndeks 93–154 açık.
