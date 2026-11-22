@@ -21,3 +21,5 @@ Raporun PDF indeks 52–64 (basılı 31–43) aralığı ayrıca okundu: 10 Kas�
 9 Aralık 2020 4. toplantı tutanağının özgün PDF baytları yakalandı: SHA-256 58ca4ed15a0f957c2b03df1a2b5e59fb0a03bad144d16a91f1942ae0581836fc, 1.254.527 bayt; deprem-toplanti-2630-capture.json. İndeks 0–2 okundu: Sağlık Bakanlığı acil sağlık hizmetleri genel müdürünün sunumu gündemde ve açılış özetinde kayıtlıdır. Bu, sağlık çalışanları veya sendikalarının temsiline dair aynı şey değildir; tam toplantı okumaya açıktır.
 
 Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının özgün PDF tutanakları deprem-toplanti-2676-2680-2682-capture.json makbuzuyla yakalandı. Her birinin yalnız kapak/içindekiler sayfası okundu: rapor önerileri, bakanlık sunumu ve komisyon görüşmeleri kaydedildi. Tam okuma, taleplerle karşılaştırma ve sonraki işlemler açık; TİP etkisi veya sonuç hakkında çıkarım yapılmadı.
+
+17 Mart 2021 toplantı PDF indeks 1–9 ayrıca okundu. Başkan öneri havuzunun derlenmesi, yapı envanteri ve periyodik denetim önerileriyle plan incelemesi üzerine kurul görüşmelerini anlatır. Bunlar önerilerdir; uygulanma veya TİP etkisi göstermez. İndeks 10–40 henüz okunmadı.
