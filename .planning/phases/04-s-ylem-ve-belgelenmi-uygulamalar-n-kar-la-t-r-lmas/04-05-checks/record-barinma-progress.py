@@ -12,7 +12,7 @@ for tranche in data['tranches']:
     tranche['research_progress'] = {
         'recorded_at': datetime.now(timezone.utc).isoformat(),
         'note': '10 Mayıs 2022 haberindeki Baş söylemi, TBMM 2/4462 teklifinin 11 sayfası, ayrıntı ve hükümsüzlük kaydı ile partinin teklifi izleyen 19 Mayıs 2022 duyurusu okundu. Haber ile teklifteki vergi koşulları farklıdır; kayıtların source-review ve preview işlemleri, diğer dönem ve olay uçları açıktır.',
-        'source_ids': ['0405-tip-274462-v1', '0405-tip-barinma-teklifi-v1', '0405-tip-barinma-10mayis-v1'],
+        'source_ids': ['0405-tip-barinma-274462-pdf-v1', '0405-tip-barinma-duyuru-v1', '0405-tip-barinma-10mayis-v1'],
         'urls': ['https://www.tbmm.gov.tr/Yasama/KanunTeklifi/f72877c1-e581-037b-e050-007f01005610', 'https://tip.org.tr/partiden-haberler/konut-krizine-karsi-kanun-teklifi-sunduk', 'https://www.indyturk.com/node/507986'],
         'status': 'partial',
     }
