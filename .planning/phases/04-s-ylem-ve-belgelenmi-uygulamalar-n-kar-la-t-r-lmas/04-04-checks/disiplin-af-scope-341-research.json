@@ -2571,5 +2571,30 @@
       }
     ],
     "limitation": "Bu hükümler farklı Faz3 taksonomi satırlarında bulunur; Madde 52 hücresine mekanik yeniden sınıflama yapılmadı."
+  },
+  "additional_decision_search": {
+    "searched_at": "2026-11-22T04:00:32.215654+00:00",
+    "queries": [
+      "\"yeni-parti.org.tr\" \"tüzük\" \"9 kasım 2026\"",
+      "\"Yeni Parti\" \"tüzük\" \"madde 52\" \"kasım 2026\"",
+      "\"Yeni Parti\" \"bağışlama\" \"kurucular kurulu\" 2026",
+      "\"Yeni Parti\" \"disiplin affı\" \"parti meclisi\" 2026"
+    ],
+    "examined_result_summaries": [
+      {
+        "url": "https://api.yeni-parti.org.tr/uploads/yayinlar/yayin-1794902310469-811605043.pdf",
+        "reason": "Kesim sonrası 16 Kasım tüzüğü, daha önce madde 52 karşılaştırıldı."
+      },
+      {
+        "url": "https://yenipartiyiz.biz/parti-tuzugu",
+        "reason": "Mevcut kurucu 22 Temmuz tüzük kaynağı, madde 22 ve 52 incelendi."
+      },
+      {
+        "url": "https://www.medyayenigun.net/haber/28439161/adana-milletvekillerinden-yeni-partiye-maas-bagisi",
+        "reason": "Maaş bağışı, disiplin cezasının bağışlanması değildir."
+      }
+    ],
+    "status": "open",
+    "limitation": "Sadece bu arama sonuçları sınırlı biçimde değerlendirildi; 9 Kasım kararının tam aslı hâlâ açık."
   }
 }
