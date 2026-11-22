@@ -8,4 +8,4 @@ rows=[]; now=datetime.now(timezone.utc).isoformat()
 for kind,ident,refs,claim in specs:
  versions=sorted({'0203-tip-program-v1' if v in g else '0405-tip-sendika-hukumsuz-v1' if v==z else '0405-tip-sendika-274390-pdf-v1' for v in refs})
  rows.append(dict(subject_kind=kind,subject_id=ident,reviewer_kind='agent',reviewed_at=now,source_version_ids=json.dumps(versions),passage_ids=json.dumps(refs),inspected_sections=json.dumps(['Program sendikal haklar; TBMM teklif başlığı ve 1. madde; 2023 tutanak sıra 4115'],ensure_ascii=False),supported_claim=claim,limitations='Programın 2022 tarihli sürümü bilinmiyor; hükümsüzlük toplumsal hak sonucuna eşitlenmez.',result='reviewed',reason='Ayrı kaynak ve aşamalar bu alan için okundu: '+kind))
-(p/'union-review-draft.json').write_text(json.dumps(dict(practice_source_review=rows),ensure_ascii=False,indent=2)+'\n');print('DRAFT ONLY',len(rows))
+(p/'union-review-draft.json').write_text(json.dumps(dict(practice_source_review=rows,source_review_refs=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in rows]),ensure_ascii=False,indent=2)+'\n');print('DRAFT ONLY',len(rows))
