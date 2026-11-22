@@ -1,0 +1,5 @@
+# 224 sayılı rapor: uluslararası belgelerden seçili okuma
+
+Özgün rapor SHA-256 `ed1e950a9d23850333dd94cd3fbae9acf4747da5861019c1b14b0ea5ed891bb0`; PDF indisleri 249–256, basılı 228–235. Raporun kendi anlatımı BM bildirgesini, CEDAW'ı ve ihtiyari protokolünü, komite tavsiyelerini, Pekin Eylem Platformu'nu, ILO 100, 111, 45 sayılı sözleşmelerini ve 2006/54/EC direktifini özetliyor. Bunlar komisyon raporunun belgelere dair anlatımıdır; kendi başına DEM'in her önermeyi benimsediği veya ulusal düzeyde uygulamanın gerçekleştiği kanıtı değildir.
+
+Basılı 228'deki CEDAW anlatımı ile 231'de sözleşmede şiddetten açıkça bahsedilmediğini belirten sonraki açıklama aynı düzlemde okunmamalı: sözleşme metni, komitenin genel tavsiyeleri ve raporun açıklaması ayrı kaynaklardır. Basılı 231'de 31 numaralı tavsiyeye verilen tarih ve içerik de özgün CEDAW tavsiye metniyle ayrıca kontrol edilmeden bağımsız olgu sayılmadı. PDF'nin metin katmanındaki bozuk karakterler doğrudan alıntıya dönüştürülmedi. Hukuki statü, tarihler ve uygulanma ayrıca birincil belgelerden doğrulanmalıdır.
