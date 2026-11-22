@@ -19,3 +19,5 @@ Silopi 62402330 üç kapı ve altı olay/iki alternatif/önceki ihtilaf kontroll
 7/50860 13 Ekim sorusu ve TBMM 3 Kasım yanıtı PDF baytları `08c1b17` ile saklandı; soru iki sayfa okundu; taranmış tek sayfalık cevap görsel okundu (`02ac14a`) ve Yılmaz’ın görev alanı bildirimidir, esasa yanıt değildir.
 
 4 Kasım TBMM ham tutanağından grup konuşmacısı ve karşı çıkış için iki özgün pasaj içeren altı kayıtlık doğrulanmamış taslak `73c6f7f`; henüz canlı çifte dahil edilmedi, sonraki genişletmede renderer 30 ile üç kapı zorunludur.
+
+Yargıtay 2019 ve tarihsiz geçmiş liste PDF’leri 685d3c5 ile gerçek bayt ve satırların görsel doğrulamasıyla saklandı. 2019 YSGP 30.11.2012’yi ve HDP/DBP ayrı satırlarını gösterir; tarihsiz nüshada YEŞİL SOL PARTİ kısa adı vardır, tarihsiz belgeye varsayımsal yürürlük günü atanmamıştır.
