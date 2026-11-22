@@ -301,3 +301,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 455–459 metin katmanı okundu: çok dilli afet eğitimi, tatbikatlar, erişilebilirlik, incinebilir gruplar ve psikososyal destek komisyon önerileridir. Bu öneriler bağımsız sağlık örgütlerinin komisyonda temsili veya TİP talebinin yerine getirilmesi olarak yorumlanmadı. İndeks 460–523 ve görseller açık.
 
 - 2021 raporu indeks 460–464 metin katmanı okundu: afet iletişimi, ulaşım, arama-kurtarma, itfaiye ve gönüllülerin hakları ile şebeke sürekliliği önerileri bulunuyor. Rapor önerileri uygulanmış sonuç ya da TİP kaynaklı talep sayılmadı. İndeks 465–523 ve görseller açık; sonraki kısımlar ve muhalefet görüşleri ayrıca okunmalı.
+
+- 2021 raporu indeks 465–469 metin katmanı okundu: 465–466 karar imza cetvelidir ancak imza görselleri henüz okunmadı; 467–469 CHP üyelerinin ek görüşünün başlangıcıdır. Bu görüşler TİP'e veya komisyon çoğunluğuna atfedilmedi. İndeks 470–523 ve görseller açık.
