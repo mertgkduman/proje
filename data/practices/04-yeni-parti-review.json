@@ -6915,6 +6915,461 @@
       "limitations": "Buluşma ve öneri açıklaması gözleniyor. Bir kamu ödemesi, bütçe kararı veya üretici başvurusunun sonucu belgelenmedi.",
       "result": "reviewed",
       "reason": "Görüşmenin gerçekleşmesi ve prim önerisinin sonucu iki farklı kanıt aşamasıdır."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-ersever-1013-event|0404-tbmm-yemek-ersever-1013-speech|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-ersever-1013-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-ersever-1013-speech\"]",
+      "inspected_sections": "[\"Ersever’in okul yemeği ve bakanlık anketi açıklaması\"]",
+      "supported_claim": "Tutanak Ersever’in 39 numaralı açıklamasını kaydetti.",
+      "limitations": "Tutanak talebin dile getirildiğini kaydediyor. Anket uygulanması veya yemek hizmetinin sağlanması ayrı belge gerektirir.",
+      "result": "reviewed",
+      "reason": "Ersever’in okul yemeği ve bakanlık anketi açıklaması özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-ersever-1013-event|0404-tbmm-yemek-ersever-1013-meal|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-ersever-1013-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-ersever-1013-meal\"]",
+      "inspected_sections": "[\"Ersever’in günlük sağlıklı öğün talebi\"]",
+      "supported_claim": "Konuşmada günlük ücretsiz ve sağlıklı öğün talebi açıkça yer aldı.",
+      "limitations": "Tutanak talebin dile getirildiğini kaydediyor. Anket uygulanması veya yemek hizmetinin sağlanması ayrı belge gerektirir.",
+      "result": "reviewed",
+      "reason": "Ersever’in günlük sağlıklı öğün talebi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-ersever-1013-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-ersever-1013-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-ersever-1013-meal\", \"0404-tbmm-yemek-ersever-1013-speech\"]",
+      "inspected_sections": "[\"Ersever’in günlük sağlıklı öğün talebi\", \"Ersever’in okul yemeği ve bakanlık anketi açıklaması\"]",
+      "supported_claim": "13 Ekim TBMM Genel Kurulunun 39 numaralı açıklaması, okulda öğün sağlanması talebi.",
+      "limitations": "Tutanak talebin dile getirildiğini kaydediyor. Anket uygulanması veya yemek hizmetinin sağlanması ayrı belge gerektirir.",
+      "result": "reviewed",
+      "reason": "Aliye Timisi Ersever’in okul yemeği açıklaması tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-ersever-1013-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-ersever-1013-v1\", \"0404-tbmm-kadina-siddet-104683-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\", \"0404-tbmm-yemek-ersever-1013-meal\", \"0404-tbmm-yemek-ersever-1013-section\", \"0404-tbmm-yemek-ersever-1013-speech\", \"0404-tbmm-yemek-ersever-onceki-imza\", \"0404-tbmm-yemek-ersever-onceki-tarih\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Ersever’in günlük sağlıklı öğün talebi\", \"39. açıklamanın konusu ve milletvekili\", \"Ersever’in okul yemeği ve bakanlık anketi açıklaması\", \"12 Ekim önerge imza sahibi Aliye Timisi Ersever\", \"İmzacı tablosunun bağlı olduğu önergenin giriş günü\"]",
+      "supported_claim": "Ersever, 13 Ekim Genel Kurul açıklamasında bakanlığın okul yemeği anketini eleştirdi ve çocuklara günlük ücretsiz, sağlıklı yemek istedi.",
+      "limitations": "Tutanak talebin dile getirildiğini kaydediyor. Anket uygulanması veya yemek hizmetinin sağlanması ayrı belge gerektirir.",
+      "result": "reviewed",
+      "reason": "Aliye Timisi Ersever’in okul yemeği açıklaması ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-ersever-1013-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\"]",
+      "supported_claim": "Kurucu programın sağlıklı öğün hedefiyle milletvekilinin her çocuğa günlük öğün talebi aynı hizmeti kapsıyor.",
+      "limitations": "Tutanak talebin dile getirildiğini kaydediyor. Anket uygulanması veya yemek hizmetinin sağlanması ayrı belge gerektirir.",
+      "result": "reviewed",
+      "reason": "Aliye Timisi Ersever’in okul yemeği açıklaması için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-ersever-1013-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-ersever-1013-v1\", \"0404-tbmm-kadina-siddet-104683-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\", \"0404-tbmm-yemek-ersever-1013-meal\", \"0404-tbmm-yemek-ersever-1013-section\", \"0404-tbmm-yemek-ersever-1013-speech\", \"0404-tbmm-yemek-ersever-onceki-imza\", \"0404-tbmm-yemek-ersever-onceki-tarih\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Ersever’in günlük sağlıklı öğün talebi\", \"39. açıklamanın konusu ve milletvekili\", \"Ersever’in okul yemeği ve bakanlık anketi açıklaması\", \"12 Ekim önerge imza sahibi Aliye Timisi Ersever\", \"İmzacı tablosunun bağlı olduğu önergenin giriş günü\"]",
+      "supported_claim": "Aliye Timisi Ersever Ankara milletvekili olarak kişisel açıklama yaptı. Bakanlık anketi hakkındaki ifadeler kendisine atfediliyor.",
+      "limitations": "Tutanak talebin dile getirildiğini kaydediyor. Anket uygulanması veya yemek hizmetinin sağlanması ayrı belge gerektirir.",
+      "result": "reviewed",
+      "reason": "Aliye Timisi Ersever’in okul yemeği açıklaması açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-motion|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-motion\"]",
+      "inspected_sections": "[\"DEM Parti gündem önerisi, 20703 grup numarası\"]",
+      "supported_claim": "DEM Parti grubunun 20703 numaralı eğitim araştırmasını öne alma önerisi okundu.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "DEM Parti gündem önerisi, 20703 grup numarası özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-authority|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-authority\"]",
+      "inspected_sections": "[\"Başkanın İsmet Güneşhan’ı Yeni Parti grubu adına çağırması\"]",
+      "supported_claim": "Başkan, İsmet Güneşhan’a Yeni Parti grubu adına söz verdi.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Başkanın İsmet Güneşhan’ı Yeni Parti grubu adına çağırması özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-meal|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-meal\"]",
+      "inspected_sections": "[\"Yeni Parti grubunun 21 Ekim okul yemeği talebi\"]",
+      "supported_claim": "Güneşhan çocuklar için içme suyu ve bir öğün ücretsiz yemek talep etti.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Yeni Parti grubunun 21 Ekim okul yemeği talebi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-support|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-support\"]",
+      "inspected_sections": "[\"Güneşhan’ın DEM Parti grup önerisine açık desteği\"]",
+      "supported_claim": "Konuşmacı açıkça DEM Parti grup önerisini desteklediklerini belirtti.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Güneşhan’ın DEM Parti grup önerisine açık desteği özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-result|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-result\"]",
+      "inspected_sections": "[\"Eğitim gündemi, 4. grup önerisinin hemen sonundaki ret\"]",
+      "supported_claim": "Tutanakta 4. grup önerisinin devamında başkan ret sonucunu açıkladı.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Eğitim gündemi, 4. grup önerisinin hemen sonundaki ret özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-dem-egitim-1021-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-authority\", \"0404-tbmm-yemek-gunes-1021-meal\", \"0404-tbmm-yemek-gunes-1021-motion\", \"0404-tbmm-yemek-gunes-1021-result\", \"0404-tbmm-yemek-gunes-1021-support\"]",
+      "inspected_sections": "[\"Başkanın İsmet Güneşhan’ı Yeni Parti grubu adına çağırması\", \"Yeni Parti grubunun 21 Ekim okul yemeği talebi\", \"DEM Parti gündem önerisi, 20703 grup numarası\", \"Eğitim gündemi, 4. grup önerisinin hemen sonundaki ret\", \"Güneşhan’ın DEM Parti grup önerisine açık desteği\"]",
+      "supported_claim": "DEM Parti gündem önerisi üzerine İsmet Güneşhan Yeni Parti grubu adına konuştu.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Eğitim araştırması görüşmesinde Yeni Parti grup desteği tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-dem-4825-v1\", \"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\", \"0404-tbmm-yemek-dem-4825-date\", \"0404-tbmm-yemek-dem-4825-number\", \"0404-tbmm-yemek-dem-4825-owner\", \"0404-tbmm-yemek-dem-4825-scope\", \"0404-tbmm-yemek-gunes-1021-authority\", \"0404-tbmm-yemek-gunes-1021-meal\", \"0404-tbmm-yemek-gunes-1021-motion\", \"0404-tbmm-yemek-gunes-1021-result\", \"0404-tbmm-yemek-gunes-1021-support\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Meclis Başkanlığına geliş tarihi\", \"Eğitim araştırması esas numarası\", \"Araştırma önergesinin sahibi\", \"Eğitim sistemindeki sorunların araştırılması\", \"Başkanın İsmet Güneşhan’ı Yeni Parti grubu adına çağırması\", \"Yeni Parti grubunun 21 Ekim okul yemeği talebi\", \"DEM Parti gündem önerisi, 20703 grup numarası\", \"Eğitim gündemi, 4. grup önerisinin hemen sonundaki ret\", \"Güneşhan’ın DEM Parti grup önerisine açık desteği\"]",
+      "supported_claim": "İsmet Güneşhan, DEM Parti’nin eğitim araştırması için gündem önerisini Yeni Parti grubu adına destekledi. Konuşmada temiz su ve ücretsiz öğün istedi. Genel Kurul gündem önerisini kabul etmedi.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Eğitim araştırması görüşmesinde Yeni Parti grup desteği ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\"]",
+      "supported_claim": "Programın okulda sağlıklı öğün hedefi, araştırma görüşmesinde Yeni Parti adına dile getirilen taleplerden biridir.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Eğitim araştırması görüşmesinde Yeni Parti grup desteği için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-dem-4825-v1\", \"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\", \"0404-tbmm-yemek-dem-4825-date\", \"0404-tbmm-yemek-dem-4825-number\", \"0404-tbmm-yemek-dem-4825-owner\", \"0404-tbmm-yemek-dem-4825-scope\", \"0404-tbmm-yemek-gunes-1021-authority\", \"0404-tbmm-yemek-gunes-1021-meal\", \"0404-tbmm-yemek-gunes-1021-motion\", \"0404-tbmm-yemek-gunes-1021-result\", \"0404-tbmm-yemek-gunes-1021-support\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Meclis Başkanlığına geliş tarihi\", \"Eğitim araştırması esas numarası\", \"Araştırma önergesinin sahibi\", \"Eğitim sistemindeki sorunların araştırılması\", \"Başkanın İsmet Güneşhan’ı Yeni Parti grubu adına çağırması\", \"Yeni Parti grubunun 21 Ekim okul yemeği talebi\", \"DEM Parti gündem önerisi, 20703 grup numarası\", \"Eğitim gündemi, 4. grup önerisinin hemen sonundaki ret\", \"Güneşhan’ın DEM Parti grup önerisine açık desteği\"]",
+      "supported_claim": "Gündem önerisini DEM Parti grubu sundu. Yeni Parti grubu adına Güneşhan destek açıkladı. Oylamayı Genel Kurul yaptı.",
+      "limitations": "Tutanakta gündem önerisinin reddi görülüyor. Oylama bir öğün yemek kanun teklifinin esası hakkında karar vermedi.",
+      "result": "reviewed",
+      "reason": "Eğitim araştırması görüşmesinde Yeni Parti grup desteği açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-motion\", \"0404-tbmm-yemek-gunes-1021-result\"]",
+      "inspected_sections": "[\"DEM Parti gündem önerisi, 20703 grup numarası\", \"Eğitim gündemi, 4. grup önerisinin hemen sonundaki ret\"]",
+      "supported_claim": "Oylama sonucu eğitim araştırmasının gündeme alınması önerisine aittir.",
+      "limitations": "Oylama yalnız gündem usulünü kapsar. Araştırma dilekçesi ve yemek hizmetinin esası ayrı işlemlerdir.",
+      "result": "reviewed",
+      "reason": "Tam tutanakta dördüncü grup önerisi başlığı ile başkanın oylama açıklaması sıralı denetlendi."
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-yemek-dem-egitim-1021-yeni-destek",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-authority\", \"0404-tbmm-yemek-gunes-1021-support\"]",
+      "inspected_sections": "[\"Başkanın İsmet Güneşhan’ı Yeni Parti grubu adına çağırması\", \"Güneşhan’ın DEM Parti grup önerisine açık desteği\"]",
+      "supported_claim": "Yeni Parti grubunun temsilcisi, başka bir grubun gündem önerisini destekledi.",
+      "limitations": "Meclis araştırmasının sahibi ve gündem önerisini sunan grup DEM Parti. Destek konuşması kayıtlı.",
+      "result": "reviewed",
+      "reason": "Temsil sıfatı TBMM Başkanı’nın söz verme satırından, tutum Güneşhan’ın kendi cümlesinden okundu."
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-yeni-destek",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-gunes-1021-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-gunes-1021-authority\", \"0404-tbmm-yemek-gunes-1021-support\"]",
+      "inspected_sections": "[\"Başkanın İsmet Güneşhan’ı Yeni Parti grubu adına çağırması\", \"Güneşhan’ın DEM Parti grup önerisine açık desteği\"]",
+      "supported_claim": "Güneşhan, grubunun DEM Parti gündem önerisini desteklediğini bildirdi.",
+      "limitations": "Yeni Parti grubuna atfedilen sözlü destek bu tutanak oturumuyla sınırlıdır.",
+      "result": "reviewed",
+      "reason": "Yeni Parti adına söz verilmesi ve açık destek ifadesi aynı gündem başlığındaki ayrı pasajlarla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-akdogan-1103-event|0404-tbmm-yemek-akdogan-1103-topic|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-akdogan-1103-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-akdogan-1103-topic\"]",
+      "inspected_sections": "[\"Akdoğan’ın okul temizlik koşullarına ilişkin açıklaması\"]",
+      "supported_claim": "Ham tutanak Akdoğan’ın okul personeli ve temizlik hakkındaki konuşmasını kaydetti.",
+      "limitations": "Tutanak milletvekilinin açıklamasını kaydediyor. Öğün, hijyen veya personel hizmetindeki değişiklik için ayrı idari kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "Akdoğan’ın okul temizlik koşullarına ilişkin açıklaması özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-akdogan-1103-event|0404-tbmm-yemek-akdogan-1103-meal|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-akdogan-1103-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-akdogan-1103-meal\"]",
+      "inspected_sections": "[\"Okulda yemek ve hijyenle ilgili Akdoğan açıklaması\"]",
+      "supported_claim": "Akdoğan konuşmada öğrencilerin öğün koşullarını değerlendirdi.",
+      "limitations": "Tutanak milletvekilinin açıklamasını kaydediyor. Öğün, hijyen veya personel hizmetindeki değişiklik için ayrı idari kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "Okulda yemek ve hijyenle ilgili Akdoğan açıklaması özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-akdogan-1103-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-akdogan-1103-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-akdogan-1103-meal\", \"0404-tbmm-yemek-akdogan-1103-topic\"]",
+      "inspected_sections": "[\"Okulda yemek ve hijyenle ilgili Akdoğan açıklaması\", \"Akdoğan’ın okul temizlik koşullarına ilişkin açıklaması\"]",
+      "supported_claim": "3 Kasım Genel Kurul açıklamasında okul temizliği, öğrenci sağlığı ve öğün koşulları.",
+      "limitations": "Tutanak milletvekilinin açıklamasını kaydediyor. Öğün, hijyen veya personel hizmetindeki değişiklik için ayrı idari kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "Umut Akdoğan’ın okul koşulları açıklaması tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-akdogan-1103-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-akdogan-1103-v1\", \"0404-tbmm-yemek-akdogan-uyelik-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\", \"0404-tbmm-yemek-akdogan-1103-meal\", \"0404-tbmm-yemek-akdogan-1103-topic\", \"0404-tbmm-yemek-akdogan-uyelik-founding\", \"0404-tbmm-yemek-akdogan-uyelik-membership\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Okulda yemek ve hijyenle ilgili Akdoğan açıklaması\", \"Akdoğan’ın okul temizlik koşullarına ilişkin açıklaması\", \"Akdoğan’ın 24 Temmuz 2026 kurucular kurulu üyeliği\", \"Akdoğan’ın TBMM profilinde parti ve seçim çevresi\"]",
+      "supported_claim": "Akdoğan, 3 Kasım Genel Kurul açıklamasında okullardaki temizlik ve personel sorunlarını anlattı, öğrencilere bir öğün verilmediğini söyledi.",
+      "limitations": "Tutanak milletvekilinin açıklamasını kaydediyor. Öğün, hijyen veya personel hizmetindeki değişiklik için ayrı idari kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "Umut Akdoğan’ın okul koşulları açıklaması ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-akdogan-1103-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\"]",
+      "supported_claim": "Programın sağlıklı okul öğünü ve temiz su hedefi, milletvekilinin okul koşullarındaki eksiklere ilişkin açıklamasıyla aynı hizmet alanında.",
+      "limitations": "Tutanak milletvekilinin açıklamasını kaydediyor. Öğün, hijyen veya personel hizmetindeki değişiklik için ayrı idari kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "Umut Akdoğan’ın okul koşulları açıklaması için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-akdogan-1103-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-akdogan-1103-v1\", \"0404-tbmm-yemek-akdogan-uyelik-v1\"]",
+      "passage_ids": "[\"0303-epm-program-detail2-egitime-erisim-p4\", \"0404-tbmm-yemek-akdogan-1103-meal\", \"0404-tbmm-yemek-akdogan-1103-topic\", \"0404-tbmm-yemek-akdogan-uyelik-founding\", \"0404-tbmm-yemek-akdogan-uyelik-membership\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Okulda yemek ve hijyenle ilgili Akdoğan açıklaması\", \"Akdoğan’ın okul temizlik koşullarına ilişkin açıklaması\", \"Akdoğan’ın 24 Temmuz 2026 kurucular kurulu üyeliği\", \"Akdoğan’ın TBMM profilinde parti ve seçim çevresi\"]",
+      "supported_claim": "Umut Akdoğan Ankara milletvekili olarak konuşuyor. Okullardaki koşullara dair örnekleri kendisine atfediliyor.",
+      "limitations": "Tutanak milletvekilinin açıklamasını kaydediyor. Öğün, hijyen veya personel hizmetindeki değişiklik için ayrı idari kanıt gerekir.",
+      "result": "reviewed",
+      "reason": "Umut Akdoğan’ın okul koşulları açıklaması açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-egitime-erisim-genel-program",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-egitime-erisim-p1\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\"]",
+      "supported_claim": "Program eğitimi yurttaşların eşit yararlanması gereken temel kamusal hak olarak görür.",
+      "limitations": "Program hedefi genel eğitim hakkına ilişkin. Zorunlu okul masrafları için miktar veya ödeme mekanizması belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "Seçili hüküm özgün belge içinde ve tarih bağlamıyla yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-egitime-erisim-genel-program",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-egitime-erisim-p1\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\"]",
+      "supported_claim": "Program eğitimi yurttaşların eşit yararlanması gereken temel kamusal hak olarak görür.",
+      "limitations": "Program hedefi genel eğitim hakkına ilişkin. Zorunlu okul masrafları için miktar veya ödeme mekanizması belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "Faz 3 özetinin hüküm kapsamı ve koşulları asıl metinden kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-egitime-erisim-genel-program",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-egitime-erisim-p1\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\"]",
+      "supported_claim": "Seçili Faz 3 bulgusu arşivdeki cümleyi aktarıyor.",
+      "limitations": "Program hedefi genel eğitim hakkına ilişkin. Zorunlu okul masrafları için miktar veya ödeme mekanizması belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "Alıntı özgün belge dizisi ve pasaj kimliğiyle karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-number|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-okul-4641-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-okul-4641-number\"]",
+      "inspected_sections": "[\"Okul masrafları önergesi esas numarası\"]",
+      "supported_claim": "TBMM esas numarası 10/4641 olarak kayıtlı.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "Okul masrafları önergesi esas numarası özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-date|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-okul-4641-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-okul-4641-date\"]",
+      "inspected_sections": "[\"Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Başkanlığa giriş 8 Ekim 2026.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "Başkanlığa geliş tarihi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-owner|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-okul-4641-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-okul-4641-owner\"]",
+      "inspected_sections": "[\"Okul masrafları önergesinin sahibi\"]",
+      "supported_claim": "Kayıt Ayhan Barut ve 19 milletvekilini önerge sahibi olarak tanımlıyor.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "Okul masrafları önergesinin sahibi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-scope|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-okul-4641-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-okul-4641-scope\"]",
+      "inspected_sections": "[\"Okul masrafları ve eğitimde fırsat eşitliği\"]",
+      "supported_claim": "Okul masrafları ve eğitimde fırsat eşitliği araştırma amacı olarak kayda geçti.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "Okul masrafları ve eğitimde fırsat eşitliği özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-okul-masrafi-4641-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"0404-tbmm-yemek-okul-4641-v1\"]",
+      "passage_ids": "[\"0404-tbmm-yemek-okul-4641-date\", \"0404-tbmm-yemek-okul-4641-number\", \"0404-tbmm-yemek-okul-4641-owner\", \"0404-tbmm-yemek-okul-4641-scope\"]",
+      "inspected_sections": "[\"Başkanlığa geliş tarihi\", \"Okul masrafları önergesi esas numarası\", \"Okul masrafları önergesinin sahibi\", \"Okul masrafları ve eğitimde fırsat eşitliği\"]",
+      "supported_claim": "Ayhan Barut ve 19 milletvekilinin okul masrafları ve eğitimde fırsat eşitliği araştırması talebi.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "10/4641 okul masrafları araştırma önergesi tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-okul-masrafi-4641-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-okul-4641-v1\"]",
+      "passage_ids": "[\"0303-epm-program-egitime-erisim-p1\", \"0404-tbmm-yemek-okul-4641-date\", \"0404-tbmm-yemek-okul-4641-number\", \"0404-tbmm-yemek-okul-4641-owner\", \"0404-tbmm-yemek-okul-4641-scope\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Başkanlığa geliş tarihi\", \"Okul masrafları önergesi esas numarası\", \"Okul masrafları önergesinin sahibi\", \"Okul masrafları ve eğitimde fırsat eşitliği\"]",
+      "supported_claim": "Ayhan Barut’un ilk imzasını taşıyan 10/4641, okul masraflarının aile bütçesine etkisini ve eğitimde fırsat eşitliği için alınabilecek önlemleri araştırmayı öneriyor.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "10/4641 okul masrafları araştırma önergesi ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-okul-masrafi-4641-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-egitime-erisim-p1\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\"]",
+      "supported_claim": "Kurucu programın eşit eğitim hakkı ile artan okul masraflarının eğitim fırsatlarına etkisini araştırma talebi aynı soruna yöneliyor.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "10/4641 okul masrafları araştırma önergesi için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-okul-masrafi-4641-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T01:28:57+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-yemek-okul-4641-v1\"]",
+      "passage_ids": "[\"0303-epm-program-egitime-erisim-p1\", \"0404-tbmm-yemek-okul-4641-date\", \"0404-tbmm-yemek-okul-4641-number\", \"0404-tbmm-yemek-okul-4641-owner\", \"0404-tbmm-yemek-okul-4641-scope\"]",
+      "inspected_sections": "[\"Özgür Birey, Güçlü Gelecek ve Kalkınma İçin Eğitim\", \"Başkanlığa geliş tarihi\", \"Okul masrafları önergesi esas numarası\", \"Okul masrafları önergesinin sahibi\", \"Okul masrafları ve eğitimde fırsat eşitliği\"]",
+      "supported_claim": "Ayhan Barut ilk imzacı olarak önerge verdi. Araştırma komisyonu veya uygulanacak politika Meclisin ayrı kararıdır.",
+      "limitations": "TBMM giriş kaydı araştırma talebini gösteriyor. Araştırma komisyonunun kurulması veya okul masraflarına yönelik uygulama sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "10/4641 okul masrafları araştırma önergesi açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
     }
   ],
   "source_review_refs": [
@@ -9045,6 +9500,146 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0404-zeytinli-uretim-destegi-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-ersever-1013-event|0404-tbmm-yemek-ersever-1013-speech|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-ersever-1013-event|0404-tbmm-yemek-ersever-1013-meal|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-ersever-1013-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-ersever-1013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-ersever-1013-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-ersever-1013-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-motion|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-authority|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-meal|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-support|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-dem-egitim-1021-event|0404-tbmm-yemek-gunes-1021-result|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-dem-egitim-1021-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-relation"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0404-yemek-dem-egitim-1021-yeni-destek"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0404-yemek-dem-egitim-1021-yeni-destek"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-akdogan-1103-event|0404-tbmm-yemek-akdogan-1103-topic|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yemek-akdogan-1103-event|0404-tbmm-yemek-akdogan-1103-meal|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yemek-akdogan-1103-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-yemek-akdogan-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-yemek-akdogan-1103-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-yemek-akdogan-1103-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-egitime-erisim-genel-program"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-egitime-erisim-genel-program"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-egitime-erisim-genel-program"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-number|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-date|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-owner|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-okul-masrafi-4641-event|0404-tbmm-yemek-okul-4641-scope|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-okul-masrafi-4641-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-okul-masrafi-4641-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-okul-masrafi-4641-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-okul-masrafi-4641-relation"
     }
   ]
 }
