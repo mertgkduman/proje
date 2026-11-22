@@ -110,6 +110,6 @@ for key, ext, url, title, day, published, passages in sources:
                 reason='İkinci ve üçüncü tarama sayfasının metin katmanı boş. Pasaj ve bağlam gözle okundu.')
 out=checks/'inquiry-3998-source-records.json'
 with out.open('x') as stream:
-    stream.write(json.dumps({'party_id':'demokrat','entries':entries},ensure_ascii=False,indent=2)+'\n')
+    stream.write(json.dumps({'party_id':'yeni-yol','entries':entries},ensure_ascii=False,indent=2)+'\n')
 Path('/tmp/gsd0408-inquiry-3998-source-paths').write_text('\n'.join(sorted(map(str,paths)))+'\n')
 print(sha256(out.read_bytes()).hexdigest(),len(entries),len(paths))
