@@ -293,3 +293,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 435–439 metin katmanı okundu: riskli stok tespiti, mülkiyet, katılımlı ve yerinde dönüşüm, belediye rolü ve afet mevzuatı komisyon önerileri bulunuyor. Bunlar TİP görüşü veya fiilen gerçekleşen politika sayılmadı. İndeks 440–523 ve görseller açık.
 
 - 2021 raporu indeks 440–444 metin katmanı okundu: çerçeve afet yasası, imar ve mülkiyet, kurumların yetki çakışmaları ve yapı güvenliğine ilişkin dönemsel mevzuat değerlendirme ve önerileri bulunur. Bunlar güncel hukuk veya kabul edilmiş düzenleme olarak gösterilmedi. İndeks 445–523 ve görseller açık.
+
+- 2021 raporu indeks 445–449 metin katmanı okundu: stratejik izleme, yargısal denetim, kamu-özel eşgüdümü, STK ve gönüllülerin kolaylaştırılması ile afet finansmanı önerileri bulunur. Öneriler uygulanmış veya TİP'in 2020 çağrısına nedensel yanıt olarak sunulmadı. İndeks 450–523 ve görseller açık.
