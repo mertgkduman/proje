@@ -2464,5 +2464,30 @@
       "access": "web aracında gövde okundu; doğrudan curl HTTP 403, özgün bayt saklanmadı",
       "observation": "9 Kasım Kurucular Kurulu tüzük değişiklikleri ve etik kurulu bildiriliyor; madde 52 bağışlamanın değişip değişmediğini yazmıyor. Tüm kararın aslı yerine kullanılamaz."
     }
+  },
+  "decision_document_search": {
+    "searched_at": "2026-11-22T03:53:56.890483+00:00",
+    "queries": [
+      "\"Yeni Parti\" \"9 Kasım\" \"Kurucular Kurulu\" \"tüzük\" pdf 2026",
+      "\"Yeni Parti\" \"09.11.2026\" \"tüzük\" \"kurucular\"",
+      "\"Yeni Parti\" \"tüzük\" \"9 kasım\" \"madde\" \"bağışlama\"",
+      "site:yeni-parti.org.tr \"9 Kasım\" \"Kurucular Kurulu\" \"tüzük\""
+    ],
+    "leads": [
+      {
+        "url": "https://api.yeni-parti.org.tr/uploads/yayinlar/yayin-1794902310469-811605043.pdf",
+        "reading": "16 Kasım tüzükte bazı hükümlere 9 Kasım değişikliği notu düşülmüş; madde 52 ile ilişkinin kesim içi tam kararı buradan kanıtlanmaz."
+      },
+      {
+        "url": "https://www.cumhuriyet.com.tr/siyaset/son-dakika-yeni-parti-de-kurultay-oncesi-kritik-karar-parti-meclisi-ni-150-uyeye-cikaran-tuzuk-degisikligi-onaylandi-2554641",
+        "reading": "9 Kasım ANKA atıflı haber PM 150 üye kararını aktarır, bağışlama maddesi konusunda sonuç göstermez; web sayfası okundu."
+      },
+      {
+        "url": "https://medyascope.tv/2026/11/04/yeni-partide-kurultay-oncesi-tuzuk-degisikligi-parti-meclisi-genisleyecek-yeni-siyaset-ve-etik-kurul-tuzuge-girecek/",
+        "reading": "4 Kasım planlanan etik ve yeni örgüt değişikliklerine ilişkin haberdir, kabul edilmiş 9 Kasım kararının tamamı değildir; web sayfası okundu."
+      }
+    ],
+    "status": "open",
+    "reason": "Bulunan sayfalar madde 52 için kesim tarihli tam karar veya ara sürüm sağlamadı; arama evreni sınırlı."
   }
 }
