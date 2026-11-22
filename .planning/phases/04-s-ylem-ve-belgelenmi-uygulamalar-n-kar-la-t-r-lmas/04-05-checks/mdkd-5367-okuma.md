@@ -37,3 +37,5 @@ Ek okuma: 2026 tutanağının indeks 8–13 metin katmanı da incelendi. Genel S
 2025 tutanağı indeks 24–29 metin katmanı okundu: DEM Parti konuşmasının ardından CHP adına Murat Emir ve Gökçe Gökçen söz alır. İfadeler ilgili konuşmacılara aittir; TİP'e veya hukuken doğrulanmış sonuca dönüştürülmez. İndeks 30–43 ve 50–94 ile görseller açık kalır.
 
 2025 tutanağı indeks 30–43 metin katmanı okundu: CHP, AK Parti, HÜDA PAR ve Yeniden Refah temsilcilerinin ayrı konuşmaları bulunur. Siyasi görüşler ve gerçekleşmesi istenen işlemler Şık'a veya gerçekleşmiş hukuki sonuca dönüştürülmez. İndeks 50–94 ile görseller açık kalır.
+
+2025 tutanağı indeks 50–55 metin katmanı okundu: Bayhan'ın EMEP adına farklı komisyon adı önerisi ve DSP adına Aksakal'ın değerlendirmeleri vardır. Bayhan'ın adı önerisi Şık'ın önerisinden ayrı korunur. İndeks 56–94 ile görseller açık kalır.
