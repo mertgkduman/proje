@@ -195,3 +195,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 190–194 okundu: MAKS ve 3B kadastro sistemleriyle yapı denetiminin kanuni kapsamı ve dönemsel sayıları açıklanıyor. Komisyonun beyanları bağımsızca doğrulanmadan güncel veri veya TİP sonucu sayılmadı; indeks 195 ve sonrası açık.
 
 - 2021 raporu indeks 195–199 okundu: beton izleme sistemi ile eğitim/sağlık kamu yapılarına ilişkin kurumların tarihli beyan ve planları yer alır. Sağlık Bakanlığı verilerine kaynak olan 9 Aralık dinlemesi önceden incelendi; hastane planları gerçekleşmiş ya da TİP eylemi sayılmadı. İndeks 200 ve sonrası açık.
+
+- 2021 raporu indeks 200–204 okundu: sosyal hizmet, enerji ve ulaşım kurumları yapılarına ilişkin yetkili anlatımları ve 2006’da başlayan İSMEP’in okul/hastane çalışmaları raporlanıyor. Bunlar partinin eylemi veya Baş’ın 2020 konuşmasının kanıtlanmış sonucu sayılmadı; indeks 205 ve sonrası açık.
