@@ -5,6 +5,8 @@ p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/0
 entries=json.loads((p/'institution-sources-draft.json').read_text())['entries']; now=datetime.now(timezone.utc).isoformat()
 e='0405-tip-2024-istifa-aciklama'; s='0405-tip-ic-tartisma-statement'; r='0405-tip-istifa-iliski'; f='0405-tip-istifa-aciklama-ozet'; d='0405-tip-istifa-ihtilaf'
 announcement='0405-tip-istifa-cumhuriyet-announcement-p'; criticism='0405-tip-istifa-cumhuriyet-criticism-p'; rebuttal='0405-tip-istifa-cumhuriyet-rebuttal-mdk-p'; denial='0405-tip-gazeteci-yanit-denial-p'; charter='0304-tip-pdf-uye-tartisma-q'; selfcrit='0405-tip-pm-nisan-self-evaluation-p'
+for fid in ('0304-tip-pdf-uye-tartisma-summary','0304-tip-pdf-uye-tartisma-quote'):
+ entries.append(dict(kind='verification',values=dict(finding_id=fid,passage_id=charter,checked_at=now,result='confirmed',reason='Özgün PDF indeks 20, basılı 19. sayfa görselinde cümle ve madde bağlamı okundu.')))
 entries.append(dict(kind='finding',values=dict(id=f,party_id='tip',heading='Belgelenmiş uygulamalar',pair_id=f,text='Tüzük kopyası üyelerin kendi organlarında tartışabileceğini belirtir. Temmuz 2024’te açıklama yapan kişiler yerel görüşlerin dikkate alınmadığını ileri sürdü ve istifa ettiklerini duyurdu. Parti, bazı kişilerin üyelik ve görev durumlarına itiraz etti; somut statüler çözülmemiştir.',provenance='summary',epistemic_type='claim')))
 for pid in [charter,announcement,criticism,rebuttal,denial]:
  entries.append(dict(kind='finding_evidence',values=dict(finding_id=f,passage_id=pid,role='support')))
