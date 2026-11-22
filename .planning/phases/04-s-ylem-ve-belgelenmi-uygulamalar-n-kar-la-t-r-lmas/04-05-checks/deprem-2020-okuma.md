@@ -197,3 +197,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 195–199 okundu: beton izleme sistemi ile eğitim/sağlık kamu yapılarına ilişkin kurumların tarihli beyan ve planları yer alır. Sağlık Bakanlığı verilerine kaynak olan 9 Aralık dinlemesi önceden incelendi; hastane planları gerçekleşmiş ya da TİP eylemi sayılmadı. İndeks 200 ve sonrası açık.
 
 - 2021 raporu indeks 200–204 okundu: sosyal hizmet, enerji ve ulaşım kurumları yapılarına ilişkin yetkili anlatımları ve 2006’da başlayan İSMEP’in okul/hastane çalışmaları raporlanıyor. Bunlar partinin eylemi veya Baş’ın 2020 konuşmasının kanıtlanmış sonucu sayılmadı; indeks 205 ve sonrası açık.
+
+- 2021 raporu indeks 205–209 okundu: İSMEP sonrası petrol/doğalgaz, baraj ve karayolu güvenliğine ilişkin ilgili kurum temsilcisi beyanları aktarılıyor. Kurum güvenlik iddiaları bağımsız doğrulanmadı; TİP faaliyeti olarak sunulmadı. İndeks 210 ve sonrası açık.
