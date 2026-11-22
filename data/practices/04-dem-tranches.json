@@ -5719,7 +5719,7 @@
       "id": "tbmm-10-1831",
       "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/3/6/Basilmis/7637ae27-84bf-472e-8d00-d4f5777b2eb6.pdf",
       "state": "pending",
-      "reason": "10/1831 araştırma önergesi; doğrudan PDF erişimi sıfırlandı, yeniden erişim ve süreç takibi gerekli."
+      "reason": "Özgün PDF yakalandı ve 189–191 indeksli önerge eki görsel okundu; son rapor ve muhalefet şerhleri açık."
     },
     {
       "id": "hakkari-2024-dispute",
@@ -5743,14 +5743,37 @@
       "id": "tbmm-2024-101831",
       "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/3/6/Basilmis/7637ae27-84bf-472e-8d00-d4f5777b2eb6.pdf",
       "state": "pending",
-      "reason": "10/1831 ve ortak komisyon sonucu; taranmış önerge ekini, komisyon son rapor ve muhalefet şerhlerini takip et."
+      "reason": "Önerge, ortak komisyon ve tartışma okundu; taranmış önerge eki görsel okundu; komisyon son raporu ve şerhler açık."
     },
     {
       "id": "yesil-sol-identity-2023",
       "url": "https://www.yesilsolparti.org/?p=4296",
       "state": "pending",
       "reason": "2023 sonrasında yeni Yeşil Sol Parti adını taşıyan ayrı kuruluşun kaynaklarını DEM ile karıştırma; sicil zinciri araştırılıyor."
+    },
+    {
+      "id": "tbmm-2026-3961",
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/5/14/Ham/7a9ec4d0-5611-415d-a3f5-6c7d1677d672.html",
+      "state": "pending",
+      "reason": "DEM grup konuşması, iki bireysel oy ve komisyonun DEM şerhi okundu; diğer bağlam, kapsam eşleşmesi ve kapılar açık."
     }
   ],
-  "tranches": []
+  "tranches": [
+    {
+      "source_sha256": "3561d414c56eb9e903bb2cb3b256e879328b02ab6ca3527b87919f928dba4413",
+      "scope": "Parti sitesindeki kongre kararları, page-content metni",
+      "character_start": 0,
+      "character_end_exclusive": 42000,
+      "status": "read",
+      "evidence": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/kongre-kararlari-kismi-okuma.md"
+    },
+    {
+      "source_sha256": "3561d414c56eb9e903bb2cb3b256e879328b02ab6ca3527b87919f928dba4413",
+      "scope": "Parti sitesindeki kongre kararları, page-content metni",
+      "character_start": 42000,
+      "character_end_exclusive": 87390,
+      "status": "read",
+      "evidence": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/kongre-kararlari-kismi-okuma.md"
+    }
+  ]
 }
