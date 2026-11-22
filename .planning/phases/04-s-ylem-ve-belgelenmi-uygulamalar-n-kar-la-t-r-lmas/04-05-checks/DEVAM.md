@@ -97,3 +97,5 @@ Rapor `b525e6da…` PDF indeks 44–204 kesintisiz okunup deprem-2020-okuma.md i
 
 
 22 Kasım: 2022 2/4600 ve 2023 2/1573 okul yemeği teklifleri özgün altışar sayfa okundu, 2023 hükümsüz listesi 4314 satırı görsel doğrulandı. Canlı 72cb120a üzerine yalnız eklemeli aday `okul-yemegi-append-draft.json` SHA `84d54e77d0199ec190708ff7693d58c83799e7f081ceff483c902824ffcd08e9`, inceleme `okul-yemegi-review-draft.json` SHA `f8db09da39c34de0df5f83ffbb08955ee0bc48b85ec0cbe422be2639a4c7ccd4`; 62426459 INPUT PASS, SOURCE ve diğer kapılar sürüyor. 62425312 önceki alıntı eşitliği hatası, 34618b5f düzeltmesi. Terminal tam başarı ve audit olmadan aday canlı değildir. 2023 teklifinin kesim aşaması ve somut hizmet sonucu bilinmiyor; kapsama kapanış yoktur.
+
+62426459 terminal COMPLETED 0:0, INPUT/SOURCE/PREVIEW ve ayrı süreç audit PASS, renderer31. Doğrulanmış kesin çift e00e6140 ile canlıya alındı (84d54e77… / f8db09da…); kalıcı preview data/.staging/gsd-0405-okul-yemegi-62426459/releases/cd01c9cd3cfa414eb36ff9d4ca1f4b84, manifest SHA 18298d949858fbb5e4bf8402ca0abd25f942b8e5055fb39cea6a9e48696fba96. Eğitim kapsamındaki iki hücreye yalnız kısmi kaynak bağı eklendi; kapanış yok.
