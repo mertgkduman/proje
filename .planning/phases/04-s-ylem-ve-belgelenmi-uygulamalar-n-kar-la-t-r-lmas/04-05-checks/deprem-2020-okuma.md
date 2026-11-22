@@ -313,3 +313,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 485–489 metin katmanı okundu: CHP üyelerinin imzalı ek görüşü 488'de biter, 489'da Muazzez Orhan Işık ve Ali Kenanoğlu'nun ayrı ek görüşü başlar. Kurumsal çalışmalara ve iddia edilen eksiklere ilişkin değerlendirmeler belirtilen kişilere aittir. İndeks 490–523 ve görseller açık.
 
 - 2021 raporu indeks 490–494 metin katmanı okundu: Orhan Işık ve Kenanoğlu'nun ayrı görüşü 492'de biter; 493'te Hayrettin Nuhoğlu'nun ayrı görüşü başlar. Bağımsız örgütler, yardım ve kamu politikalarına ilişkin görüş ve iddialar sahiplerine atfedildi; TİP'in talebinin karşılandığı çıkarılmadı. İndeks 495–523 ve görseller açık.
+
+- 2021 raporu indeks 495–499 metin katmanı okundu: Nuhoğlu'nun 11 Temmuz 2021 tarihli ek görüşü 498'de biter, kaynakça 499'da başlar. Görüşteki meslek odaları önerileri ve uygulama eleştirileri kendisine aittir; TİP'e veya doğrulanmış sonuca atfedilmedi. İndeks 500–523 ve görseller açık.
