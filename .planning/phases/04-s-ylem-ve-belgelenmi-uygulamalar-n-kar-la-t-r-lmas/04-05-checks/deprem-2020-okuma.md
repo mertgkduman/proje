@@ -191,3 +191,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 180–184 okundu: yapı yönetmeliklerinin gelişimi ve 2021’de TÜİK ile MAKS kaynaklarıyla aktarılan yapı stoku farkları yer alır; rapor iki kaynağın kapsam farkını da açıklar. İstatistikler güncel sayı veya TİP eylemi olarak sunulmadı; indeks 185 ve sonrası açık.
 
 - 2021 raporu indeks 185–189 okundu: bina riski, kurumların dönüşüm sayı ve iddiaları, kamu envanteri ve 2021’de planlanan Bina Kimlik Sistemi aktarılıyor. Kurum beyanları ve hedefleri doğrulanmış güncel sonuç veya TİP faaliyeti sayılmadı; indeks 190 ve sonrası açık.
+
+- 2021 raporu indeks 190–194 okundu: MAKS ve 3B kadastro sistemleriyle yapı denetiminin kanuni kapsamı ve dönemsel sayıları açıklanıyor. Komisyonun beyanları bağımsızca doğrulanmadan güncel veri veya TİP sonucu sayılmadı; indeks 195 ve sonrası açık.
