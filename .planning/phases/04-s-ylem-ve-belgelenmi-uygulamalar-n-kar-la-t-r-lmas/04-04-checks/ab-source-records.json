@@ -1,0 +1,782 @@
+{
+  "status": "sources_read",
+  "party_id": "yeni-parti",
+  "source_root": "data/practices/sources/yeni-parti",
+  "fetches": [
+    {
+      "file": "commission-taşkin.html",
+      "accessed_at": "2026-11-21T23:58:19+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://tbmm.gov.tr/Haber/Detay?Id=0b3aae58-965a-4323-8ef1-01a136f8ee67",
+      "byte_count": 72901,
+      "sha256": "90c4fd43b9f7f4fd2c59349068af48e84716415e6b75b37ad749eefaacde2267"
+    },
+    {
+      "file": "orav-anka.html",
+      "accessed_at": "2026-11-21T23:58:20+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://ankahaber.net/haber/ozgur-ozel-ab-turkiye-delegasyonu-baskani-buyukelci-aivo-orav-ile-gorustu-9e8bad4e",
+      "byte_count": 200639,
+      "sha256": "d0832a335e80e712dddb841cadfa4c108f92b93b80bf7a06fee5d882adb1da1f"
+    },
+    {
+      "file": "eu-report.pdf",
+      "accessed_at": "2026-11-21T23:58:22+00:00",
+      "status": 200,
+      "mime": "application/pdf",
+      "url": "https://enlargement.ec.europa.eu/document/download/652406c3-b824-42f0-b3ab-43da43c243d5_en?filename=turkiye-report-2026.pdf",
+      "byte_count": 2343985,
+      "sha256": "cca595b8641e8506e3d236e04fb7cdbc0f6b77b5786f62d7899344b13a5d82d3"
+    },
+    {
+      "file": "kpk.html",
+      "accessed_at": "2026-11-21T23:58:24+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://tbmm.gov.tr/Haber/turkiye-ab-karma-parlamento-komisyo-20261027104607",
+      "byte_count": 79887,
+      "sha256": "96a3297e0a7b10966ad846a6a925d62d8a8e45676021981109d780700149e01e"
+    },
+    {
+      "file": "wiseler-anka.html",
+      "accessed_at": "2026-11-22T00:00:53+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://ankahaber.net/haber/yeni-parti-heyeti-luksemburg-temsilciler-meclisi-baskani-claude-wiseler-ile-bir-araya-geldi-12c06da6",
+      "byte_count": 209311,
+      "sha256": "337e2b51bf126fc63b213bd6733751cd122723f3ccfa8ff467a86c26555b002d"
+    },
+    {
+      "file": "kpk-cumhuriyet.html",
+      "accessed_at": "2026-11-22T00:00:54+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://www.cumhuriyet.com.tr/turkiye/turkiye-ab-karma-parlamento-komisyonu-nda-gundem-ekrem-imamoglu-ydu-toplantiya-avrupa-dan-yalnizca-5-vekil-katildi-2550502",
+      "byte_count": 324330,
+      "sha256": "8f3f11d70d26dd96926d96a313fe39c131db61faf7cde3938b8f3c273dbcbf63"
+    },
+    {
+      "file": "kpk-ab-gov.html",
+      "accessed_at": "2026-11-22T00:01:19+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://www.ab.gov.tr/54311.html",
+      "byte_count": 32080,
+      "sha256": "ec9a29478a365d4279be6bd74f6bb3f26d8a42e23e766b413f4bb072f6d712a1"
+    },
+    {
+      "file": "mfa-report-copy.html",
+      "accessed_at": "2026-11-22T00:01:43+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://www.ab.gov.tr/p.php?e=54313",
+      "byte_count": 4156,
+      "sha256": "ef5e68df4141660135621672bd1e04812bf53db88a81b3be42944466f4d721b6"
+    }
+  ],
+  "other_accesses": [
+    {
+      "file": "orav-party.html",
+      "accessed_at": "2026-11-21T23:58:20+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://yeni-parti.org.tr/haber/237",
+      "byte_count": 1813,
+      "sha256": "5155c3dce109ec92afc48b70870cdbacab0fa269b8a195129e8101d8c57666e4"
+    },
+    {
+      "file": "wiseler-anka-mirror.html",
+      "accessed_at": "2026-11-21T23:58:21+00:00",
+      "status": 200,
+      "mime": "text/html",
+      "url": "https://www.sondakika.com/guncel/haber-yeni-parti-heyeti-luksemburg-heyetiyle-tbmm-de-tur-20359227/",
+      "byte_count": 87969,
+      "sha256": "ea4bc84e1823f929263242fc1018660ba189841afa3e6c90ecc516b95604cc06"
+    },
+    {
+      "file": "mfa-report-reply.html",
+      "accessed_at": "2026-11-22T00:01:21+00:00",
+      "status": 403,
+      "mime": "text/html",
+      "url": "https://www.mfa.gov.tr/no_-212_-avrupa-komisyonu-2026-turkiye-raporu-hk.tr.mfa",
+      "byte_count": 407,
+      "sha256": "f3ae1e0232677dab3c9ea121d4c55ef2436082285c638497126b7e605f586a8b"
+    }
+  ],
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-uyum",
+        "party_id": "yeni-parti",
+        "title": "TBMM AB Uyum Komisyonu başkanvekili seçimi",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-uyum-v1",
+        "document_id": "0404-ab-uyum",
+        "document_date": "2026-10-13",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Meclis Haberleri tarih ve başlık satırları, seçim duyurusu, oylama ve seçilen üye okundu.",
+        "original_url": "https://tbmm.gov.tr/Haber/Detay?Id=0b3aae58-965a-4323-8ef1-01a136f8ee67",
+        "final_url": "https://tbmm.gov.tr/Haber/Detay?Id=0b3aae58-965a-4323-8ef1-01a136f8ee67",
+        "accessed_at": "2026-11-21T23:58:19+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "text/html",
+        "sha256": "90c4fd43b9f7f4fd2c59349068af48e84716415e6b75b37ad749eefaacde2267",
+        "original_path": "objects/90c4fd43b9f7f4fd2c59349068af48e84716415e6b75b37ad749eefaacde2267/original.html.bin",
+        "readable_path": "objects/90c4fd43b9f7f4fd2c59349068af48e84716415e6b75b37ad749eefaacde2267/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-uyum-v1",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "kind": "official",
+        "published_at": "2026-10-13",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://tbmm.gov.tr/Haber/Detay?Id=0b3aae58-965a-4323-8ef1-01a136f8ee67",
+        "basis": "Meclis Haberleri tarih ve başlık satırları, seçim duyurusu, oylama ve seçilen üye okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "973020876eb7b6da5f4f533acaa1b00c",
+        "format_version": 2,
+        "source_sha256": "90c4fd43b9f7f4fd2c59349068af48e84716415e6b75b37ad749eefaacde2267",
+        "index_path": "views/973020876eb7b6da5f4f533acaa1b00c/index.html",
+        "manifest_path": "views/973020876eb7b6da5f4f533acaa1b00c/manifest.json",
+        "manifest_sha256": "ff7bdbafa8edd2b59baf0402ad89b18166be471c47ab8b3ab9f16a360c0c95d1",
+        "version_id": "0404-ab-uyum-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-uyum-date",
+        "version_id": "0404-ab-uyum-v1",
+        "exact": "2026-10-13 - 23:34",
+        "section": "Meclis Haberleri tarih satırı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-uyum-initiative",
+        "version_id": "0404-ab-uyum-v1",
+        "exact": "Kayatürk, Komisyon Başkanvekili seçimi yapılacağını belirtti.",
+        "section": "Başkanvekili seçimine geçilmesi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-uyum-result",
+        "version_id": "0404-ab-uyum-v1",
+        "exact": "Yapılan oylamada Yeni Parti İzmir Milletvekili Yüksel Taşkın, AB Uyum Komisyonu Başkanvekili seçildi.",
+        "section": "Oylama ve seçilen milletvekili",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-orav",
+        "party_id": "yeni-parti",
+        "title": "ANKA, Özel ve AB delegasyonu görüşmesi",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-orav-v1",
+        "document_id": "0404-ab-orav",
+        "document_date": "2026-10-21",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "ANKA mahreci, yayın zamanı, haber gövdesi ve video bağlantısı incelendi. Haber katılımcıları ve yeri veriyor.",
+        "original_url": "https://ankahaber.net/haber/ozgur-ozel-ab-turkiye-delegasyonu-baskani-buyukelci-aivo-orav-ile-gorustu-9e8bad4e",
+        "final_url": "https://ankahaber.net/haber/ozgur-ozel-ab-turkiye-delegasyonu-baskani-buyukelci-aivo-orav-ile-gorustu-9e8bad4e",
+        "accessed_at": "2026-11-21T23:58:20+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "text/html",
+        "sha256": "d0832a335e80e712dddb841cadfa4c108f92b93b80bf7a06fee5d882adb1da1f",
+        "original_path": "objects/d0832a335e80e712dddb841cadfa4c108f92b93b80bf7a06fee5d882adb1da1f/original.html.bin",
+        "readable_path": "objects/d0832a335e80e712dddb841cadfa4c108f92b93b80bf7a06fee5d882adb1da1f/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-orav-v1",
+        "publisher": "ANKA Haber Ajansı",
+        "author": null,
+        "kind": "journalism",
+        "published_at": "2026-10-21",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://ankahaber.net/haber/ozgur-ozel-ab-turkiye-delegasyonu-baskani-buyukelci-aivo-orav-ile-gorustu-9e8bad4e",
+        "basis": "ANKA mahreci, yayın zamanı, haber gövdesi ve video bağlantısı incelendi. Haber katılımcıları ve yeri veriyor."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "3e282bf15fcb4f8f4f3254e5d0a209e4",
+        "format_version": 2,
+        "source_sha256": "d0832a335e80e712dddb841cadfa4c108f92b93b80bf7a06fee5d882adb1da1f",
+        "index_path": "views/3e282bf15fcb4f8f4f3254e5d0a209e4/index.html",
+        "manifest_path": "views/3e282bf15fcb4f8f4f3254e5d0a209e4/manifest.json",
+        "manifest_sha256": "569130884f6a52a74d8a762654246daa10f71b99aba0355b464a2522b8e4e122",
+        "version_id": "0404-ab-orav-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-orav-date",
+        "version_id": "0404-ab-orav-v1",
+        "exact": "21.10.2026",
+        "section": "ANKA yayın tarihi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-orav-meeting",
+        "version_id": "0404-ab-orav-v1",
+        "exact": "YENİ Parti Genel Başkanı &Ouml;zg&uuml;r &Ouml;zel, Avrupa Birliği T&uuml;rkiye Delegasyonu Başkanı B&uuml;y&uuml;kel&ccedil;i Aivo Orav ve beraberindeki heyetle YENİ Parti Genel Merkezi&rsquo;nde bir araya geldi. &Ouml;zel&rsquo;e; Selin Sayek B&ouml;ke, İlhan Uzgel ve Şule Bucak eşlik etti.",
+        "section": "Görüşmenin yeri ve katılımcıları",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-wiseler",
+        "party_id": "yeni-parti",
+        "title": "ANKA, Yeni Parti ve Lüksemburg parlamento heyeti",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-wiseler-v1",
+        "document_id": "0404-ab-wiseler",
+        "document_date": "2026-10-23",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "ANKA mahreci, yayın tarihi, heyetler ve Murat Emir’e atfedilen gündem açıklaması okundu. Yayın tarihi görüşmenin kesin günü olarak kullanılmadı.",
+        "original_url": "https://ankahaber.net/haber/yeni-parti-heyeti-luksemburg-temsilciler-meclisi-baskani-claude-wiseler-ile-bir-araya-geldi-12c06da6",
+        "final_url": "https://ankahaber.net/haber/yeni-parti-heyeti-luksemburg-temsilciler-meclisi-baskani-claude-wiseler-ile-bir-araya-geldi-12c06da6",
+        "accessed_at": "2026-11-22T00:00:53+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "text/html",
+        "sha256": "337e2b51bf126fc63b213bd6733751cd122723f3ccfa8ff467a86c26555b002d",
+        "original_path": "objects/337e2b51bf126fc63b213bd6733751cd122723f3ccfa8ff467a86c26555b002d/original.html.bin",
+        "readable_path": "objects/337e2b51bf126fc63b213bd6733751cd122723f3ccfa8ff467a86c26555b002d/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-wiseler-v1",
+        "publisher": "ANKA Haber Ajansı",
+        "author": null,
+        "kind": "journalism",
+        "published_at": "2026-10-23",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://ankahaber.net/haber/yeni-parti-heyeti-luksemburg-temsilciler-meclisi-baskani-claude-wiseler-ile-bir-araya-geldi-12c06da6",
+        "basis": "ANKA mahreci, yayın tarihi, heyetler ve Murat Emir’e atfedilen gündem açıklaması okundu. Yayın tarihi görüşmenin kesin günü olarak kullanılmadı."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "e6e6d938ae3540b4abd4400ea0c754cc",
+        "format_version": 2,
+        "source_sha256": "337e2b51bf126fc63b213bd6733751cd122723f3ccfa8ff467a86c26555b002d",
+        "index_path": "views/e6e6d938ae3540b4abd4400ea0c754cc/index.html",
+        "manifest_path": "views/e6e6d938ae3540b4abd4400ea0c754cc/manifest.json",
+        "manifest_sha256": "219b5cec7bf2878e278b4006577993576ade44ba1bdbfde2de5aac1f10fdb550",
+        "version_id": "0404-ab-wiseler-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-wiseler-date",
+        "version_id": "0404-ab-wiseler-v1",
+        "exact": "23.10.2026",
+        "section": "ANKA yayın tarihi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-wiseler-meeting",
+        "version_id": "0404-ab-wiseler-v1",
+        "exact": "YENİ Parti Grup Başkanvekili Murat Emir, Genel Başkan Yardımcısı Utku &Ccedil;akır&ouml;zer, İlhan Uzgel ve Şule Bucak'tan oluşan heyet L&uuml;ksemburg Temsilciler Meclisi Başkanı Claude Wiseler ve beraberindeki parlamento heyeti ile bir araya geldi.",
+        "section": "TBMM heyet görüşmesi ve katılımcılar",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-wiseler-agenda",
+        "version_id": "0404-ab-wiseler-v1",
+        "exact": "\"L&uuml;ksemburg Temsilciler Meclisi Başkanı Claude Wiseler, meclisteki siyasi grupların başkanları ve temsilcilerinden oluşan heyeti Gazi Meclisimizde ağırlamaktan memnuniyet duyduk. Heyetler arası g&ouml;r&uuml;şmemizde iki &uuml;lke arasındaki parlamenter diplomasiyi, b&ouml;lgesel gelişmeleri ve T&uuml;rkiye-Avrupa Birliği ilişkilerini kapsamlı bi&ccedil;imde ele aldık.\"",
+        "section": "Murat Emir’e atfedilen görüşme gündemi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-kpk-tbmm",
+        "party_id": "yeni-parti",
+        "title": "TBMM Türkiye–AB Karma Parlamento Komisyonu 82. Toplantısı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-kpk-tbmm-v1",
+        "document_id": "0404-ab-kpk-tbmm",
+        "document_date": "2026-10-26",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "TBMM haberindeki 82. toplantı, tarih ve iki komisyon eş başkanının açıklamaları okundu.",
+        "original_url": "https://tbmm.gov.tr/Haber/turkiye-ab-karma-parlamento-komisyo-20261027104607",
+        "final_url": "https://tbmm.gov.tr/Haber/turkiye-ab-karma-parlamento-komisyo-20261027104607",
+        "accessed_at": "2026-11-21T23:58:24+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "text/html",
+        "sha256": "96a3297e0a7b10966ad846a6a925d62d8a8e45676021981109d780700149e01e",
+        "original_path": "objects/96a3297e0a7b10966ad846a6a925d62d8a8e45676021981109d780700149e01e/original.html.bin",
+        "readable_path": "objects/96a3297e0a7b10966ad846a6a925d62d8a8e45676021981109d780700149e01e/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-kpk-tbmm-v1",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "kind": "official",
+        "published_at": "2026-10-26",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://tbmm.gov.tr/Haber/turkiye-ab-karma-parlamento-komisyo-20261027104607",
+        "basis": "TBMM haberindeki 82. toplantı, tarih ve iki komisyon eş başkanının açıklamaları okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "4f7b337a8dea282928a03561d9c36716",
+        "format_version": 2,
+        "source_sha256": "96a3297e0a7b10966ad846a6a925d62d8a8e45676021981109d780700149e01e",
+        "index_path": "views/4f7b337a8dea282928a03561d9c36716/index.html",
+        "manifest_path": "views/4f7b337a8dea282928a03561d9c36716/manifest.json",
+        "manifest_sha256": "4e550b8a13f56047fd057cee9bcf84c27563f8712e749a890eb64e105e437c34",
+        "version_id": "0404-ab-kpk-tbmm-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-kpk-tbmm-date",
+        "version_id": "0404-ab-kpk-tbmm-v1",
+        "exact": "2026-10-26 - 18:01",
+        "section": "Meclis Haberleri yayın tarihi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-kpk-tbmm-meeting",
+        "version_id": "0404-ab-kpk-tbmm-v1",
+        "exact": "Karayel, Ankara'da düzenlenen Türkiye-AB Karma Parlamento Komisyonu 82. Toplantısı'ndaki konuşmasında, KPK toplantılarının karşılıklı anlayışın güçlendirilmesi, siyasi diyaloğun canlı tutulması ve ilişkilerin geleceğinin ortak bir perspektifle şekillendirilmesi açısından önemli bir zemin teşkil ettiğini anlattı.",
+        "section": "82. toplantının açılışı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-kpk-cumhuriyet",
+        "party_id": "yeni-parti",
+        "title": "Cumhuriyet, KPK 82. toplantısında Yüksel Taşkın’ın sözleri",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-kpk-cumhuriyet-v1",
+        "document_id": "0404-ab-kpk-cumhuriyet",
+        "document_date": "2026-10-27",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Haber metni, yazar ve yayın künyesi, Taşkın’ın sözü ve diğer katılımcıların farklı görüşleri okundu.",
+        "original_url": "https://www.cumhuriyet.com.tr/turkiye/turkiye-ab-karma-parlamento-komisyonu-nda-gundem-ekrem-imamoglu-ydu-toplantiya-avrupa-dan-yalnizca-5-vekil-katildi-2550502",
+        "final_url": "https://www.cumhuriyet.com.tr/turkiye/turkiye-ab-karma-parlamento-komisyonu-nda-gundem-ekrem-imamoglu-ydu-toplantiya-avrupa-dan-yalnizca-5-vekil-katildi-2550502",
+        "accessed_at": "2026-11-22T00:00:54+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "text/html",
+        "sha256": "8f3f11d70d26dd96926d96a313fe39c131db61faf7cde3938b8f3c273dbcbf63",
+        "original_path": "objects/8f3f11d70d26dd96926d96a313fe39c131db61faf7cde3938b8f3c273dbcbf63/original.html.bin",
+        "readable_path": "objects/8f3f11d70d26dd96926d96a313fe39c131db61faf7cde3938b8f3c273dbcbf63/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-kpk-cumhuriyet-v1",
+        "publisher": "Cumhuriyet",
+        "author": "Batu Bozkürk",
+        "kind": "journalism",
+        "published_at": "2026-10-27",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://www.cumhuriyet.com.tr/turkiye/turkiye-ab-karma-parlamento-komisyonu-nda-gundem-ekrem-imamoglu-ydu-toplantiya-avrupa-dan-yalnizca-5-vekil-katildi-2550502",
+        "basis": "Haber metni, yazar ve yayın künyesi, Taşkın’ın sözü ve diğer katılımcıların farklı görüşleri okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "b6f993f38902a5af7308395de0c68ad7",
+        "format_version": 2,
+        "source_sha256": "8f3f11d70d26dd96926d96a313fe39c131db61faf7cde3938b8f3c273dbcbf63",
+        "index_path": "views/b6f993f38902a5af7308395de0c68ad7/index.html",
+        "manifest_path": "views/b6f993f38902a5af7308395de0c68ad7/manifest.json",
+        "manifest_sha256": "498f1c75c0ec2ec2e830f7612ae979fe73a8cf7b73d9fb488577b1da95bc2448",
+        "version_id": "0404-ab-kpk-cumhuriyet-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-kpk-cumhuriyet-date",
+        "version_id": "0404-ab-kpk-cumhuriyet-v1",
+        "exact": "27.10.2026 04:00:00",
+        "section": "Cumhuriyet yayın tarihi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-kpk-cumhuriyet-intervention",
+        "version_id": "0404-ab-kpk-cumhuriyet-v1",
+        "exact": "YENİ Parti İzmir Milletvekili Y&uuml;ksel Taşkın, &ldquo;İBB bize ge&ccedil;tikten sonra bin 200 Sayıştay incelemesinden ge&ccedil;tik. Tekrarlıyorum. Peki bizden &ouml;nce İstanbul B&uuml;y&uuml;kşehir Belediyesi'ni y&ouml;neten AKP ile ilgili tespit ettiğimiz 90 yolsuzluk dosyasını herhangi bir savcı cesaret ederek a&ccedil;abildi mi? Bizden &ouml;nce Ankara Belediyesi'ni y&ouml;neten şahısla ilgili yaptığımız 47 yolsuzluk soruşturması a&ccedil;ıldı mı? Hayır&rdquo; diye konuştu. CHP Eskişehir Milletvekili Jale Nur S&uuml;ll&uuml; de temel değerlerin &ouml;nemine vurgu yaptı.",
+        "section": "Yüksel Taşkın’a atfedilen KPK açıklaması",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-kpk-ab",
+        "party_id": "yeni-parti",
+        "title": "AB Başkanlığı, Karma Parlamento Komisyonu 82. Toplantısı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-kpk-ab-v1",
+        "document_id": "0404-ab-kpk-ab",
+        "document_date": "2026-10-26",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "AB Başkanlığı yayın listesindeki tarih ve özgün haberin 26–27 Ekim ev sahipliği ve ilk oturum bilgisi okundu.",
+        "original_url": "https://www.ab.gov.tr/54311.html",
+        "final_url": "https://www.ab.gov.tr/54311.html",
+        "accessed_at": "2026-11-22T00:01:19+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "text/html",
+        "sha256": "ec9a29478a365d4279be6bd74f6bb3f26d8a42e23e766b413f4bb072f6d712a1",
+        "original_path": "objects/ec9a29478a365d4279be6bd74f6bb3f26d8a42e23e766b413f4bb072f6d712a1/original.html.bin",
+        "readable_path": "objects/ec9a29478a365d4279be6bd74f6bb3f26d8a42e23e766b413f4bb072f6d712a1/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-kpk-ab-v1",
+        "publisher": "T.C. Dışişleri Bakanlığı Avrupa Birliği Başkanlığı",
+        "author": null,
+        "kind": "official",
+        "published_at": "2026-10-26",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://www.ab.gov.tr/54311.html",
+        "basis": "AB Başkanlığı yayın listesindeki tarih ve özgün haberin 26–27 Ekim ev sahipliği ve ilk oturum bilgisi okundu."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "42371344d53b86bef9c136fd76657005",
+        "format_version": 2,
+        "source_sha256": "ec9a29478a365d4279be6bd74f6bb3f26d8a42e23e766b413f4bb072f6d712a1",
+        "index_path": "views/42371344d53b86bef9c136fd76657005/index.html",
+        "manifest_path": "views/42371344d53b86bef9c136fd76657005/manifest.json",
+        "manifest_sha256": "7d61d80918e1938cad98d5c691a72f1ffc1f07596348d7116051f7307021c1d2",
+        "version_id": "0404-ab-kpk-ab-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-kpk-ab-meeting",
+        "version_id": "0404-ab-kpk-ab-v1",
+        "exact": "Türkiye-AB Karma Parlamento Komisyonu’nun (KPK) 82. Toplantısı, Türkiye Büyük Millet Meclisi’nin evsahipliğinde 26-27 Ekim 2026 tarihlerinde Ankara’da gerçekleştirildi.",
+        "section": "82. toplantının tarih aralığı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-kpk-ab-agenda",
+        "version_id": "0404-ab-kpk-ab-v1",
+        "exact": "Toplantının “Türkiye-AB İlişkileri ve Katılım Müzakerelerinde Mevcut Durum” başlıklı ilk oturumunda, Dışişleri Bakan Yardımcısı ve AB Başkanı Büyükelçi Mehmet Kemal Bozay Türkiye Cumhuriyeti Hükümeti adına hitapta bulundu.",
+        "section": "İlk oturumun gündemi ve hükümet adına konuşmacı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-disisleri-yanit",
+        "party_id": "yeni-parti",
+        "title": "Dışişleri Bakanlığının 2026 Türkiye raporuna açıklaması",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-disisleri-yanit-v1",
+        "document_id": "0404-ab-disisleri-yanit",
+        "document_date": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kopyanın yayın günü belirtilmiyor; güncelleme satırı ayrı pasajdır.",
+        "version_label": "4 Kasım tarihli 212 sayılı Bakanlık açıklaması web üzerinden okundu. Doğrudan HTTP 403 sonrası AB Başkanlığındaki kurumsal kopya alındı. 5 Kasım kopyanın güncelleme tarihidir.",
+        "original_url": "https://www.ab.gov.tr/p.php?e=54313",
+        "final_url": "https://www.ab.gov.tr/p.php?e=54313",
+        "accessed_at": "2026-11-22T00:01:43+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "text/html",
+        "sha256": "ef5e68df4141660135621672bd1e04812bf53db88a81b3be42944466f4d721b6",
+        "original_path": "objects/ef5e68df4141660135621672bd1e04812bf53db88a81b3be42944466f4d721b6/original.html.bin",
+        "readable_path": "objects/ef5e68df4141660135621672bd1e04812bf53db88a81b3be42944466f4d721b6/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-disisleri-yanit-v1",
+        "publisher": "T.C. Dışişleri Bakanlığı",
+        "author": null,
+        "kind": "official",
+        "published_at": null,
+        "date_precision": "unknown",
+        "social_handle": null,
+        "public_url": "https://www.ab.gov.tr/p.php?e=54313",
+        "basis": "4 Kasım tarihli 212 sayılı Bakanlık açıklaması web üzerinden okundu. Doğrudan HTTP 403 sonrası AB Başkanlığındaki kurumsal kopya alındı. 5 Kasım kopyanın güncelleme tarihidir."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "8303d8b641a022570a290691fc55c9db",
+        "format_version": 2,
+        "source_sha256": "ef5e68df4141660135621672bd1e04812bf53db88a81b3be42944466f4d721b6",
+        "index_path": "views/8303d8b641a022570a290691fc55c9db/index.html",
+        "manifest_path": "views/8303d8b641a022570a290691fc55c9db/manifest.json",
+        "manifest_sha256": "7db3a961a4667d0e839a3d70a31b645be2dba4d8a996a7950ef3986a263d3733",
+        "version_id": "0404-ab-disisleri-yanit-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-disisleri-yanit-update",
+        "version_id": "0404-ab-disisleri-yanit-v1",
+        "exact": "Son Güncelleme: 05 Kasım 2026",
+        "section": "Kurumsal kopyanın güncelleme satırı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-disisleri-yanit-response",
+        "version_id": "0404-ab-disisleri-yanit-v1",
+        "exact": "Raporda yer alan, özellikle siyasi kriterler ile yargı ve temel haklar alanındaki mesnetsiz iddiaları reddediyoruz. Söz konusu ithamlar, bazı AB yetkililerinin çifte standartlı yaklaşımının ve tutarsız, inandırıcılığını yitirmiş zihniyetinin yansımasıdır.",
+        "section": "Siyasi kriterler ve yargı değerlendirmesine Bakanlık yanıtı",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-ab-ab-raporu",
+        "party_id": "yeni-parti",
+        "title": "Avrupa Komisyonu 2026 Türkiye Raporu",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-ab-ab-raporu-v1",
+        "document_id": "0404-ab-ab-raporu",
+        "document_date": "2026-11-04",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Avrupa Komisyonunun 4 Kasım yayın künyesi ve raporun Giriş/Kapsam ile AB–Türkiye ilişkileri bölümleri okundu. Raporun parti ayrışmasının çerçevesine dair ifadesi sicil kimliği için kullanılmadı.",
+        "original_url": "https://enlargement.ec.europa.eu/document/download/652406c3-b824-42f0-b3ab-43da43c243d5_en?filename=turkiye-report-2026.pdf",
+        "final_url": "https://enlargement.ec.europa.eu/document/download/652406c3-b824-42f0-b3ab-43da43c243d5_en?filename=turkiye-report-2026.pdf",
+        "accessed_at": "2026-11-21T23:58:22+00:00",
+        "verified_at": "2026-11-22T00:03:47+00:00",
+        "mime": "application/pdf",
+        "sha256": "cca595b8641e8506e3d236e04fb7cdbc0f6b77b5786f62d7899344b13a5d82d3",
+        "original_path": "objects/cca595b8641e8506e3d236e04fb7cdbc0f6b77b5786f62d7899344b13a5d82d3/original.pdf",
+        "readable_path": "objects/cca595b8641e8506e3d236e04fb7cdbc0f6b77b5786f62d7899344b13a5d82d3/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-ab-ab-raporu-v1",
+        "publisher": "Avrupa Komisyonu",
+        "author": null,
+        "kind": "official",
+        "published_at": "2026-11-04",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://enlargement.ec.europa.eu/document/download/652406c3-b824-42f0-b3ab-43da43c243d5_en?filename=turkiye-report-2026.pdf",
+        "basis": "Avrupa Komisyonunun 4 Kasım yayın künyesi ve raporun Giriş/Kapsam ile AB–Türkiye ilişkileri bölümleri okundu. Raporun parti ayrışmasının çerçevesine dair ifadesi sicil kimliği için kullanılmadı."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-ab-raporu-standstill",
+        "version_id": "0404-ab-ab-raporu-v1",
+        "exact": "Accession negotiations with Türkiye have remained at a standstill since 2018, as reiterated\nby the Council Conclusions of December 2024.",
+        "section": "Giriş, üyelik müzakerelerinin durumu",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": 3,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-ab-ab-raporu-customs",
+        "version_id": "0404-ab-ab-raporu-v1",
+        "exact": "It reiterated the previous conclusion that accession negotiations\nwith the country have come to a standstill and no further chapters can be considered for\nopening or closing.",
+        "section": "AB–Türkiye ilişkileri, müzakere fasılları",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "pdf_page_index": 110,
+        "printed_page": null
+      }
+    }
+  ]
+}
