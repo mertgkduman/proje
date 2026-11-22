@@ -23,7 +23,13 @@ topics={
  'yargi-bagimsizligi':(['0304-tip-program-adalet-p1'],'Program bağımsız ve tarafsız yargı, savunmanın bağımsızlığı ve adalete erişimde ekonomik engellerin kaldırılmasını savunur.'),
  'kultur-sanat':(['0304-tip-program-sanat-p1'],'Program kültür ve sanatta sansür ve baskıya karşı çıkar, herkesin etkinliklere katılımı için önlem savunur.'),
  'cinsel-yonelim':(['0304-tip-program-lgbti-p1'],'Program LGBTİ+ yurttaşlara ayrımcı uygulamalara karşı mücadeleyi ve örgütlenme ve yaşam haklarını koruma mücadelelerinin güçlendirilmesini belirtir; ayrı yasa veya başvuru kurumu bu pasajda tanımlanmaz.'),
- 'engellilik':(['0304-tip-program-engelli-p1'],'Program engelli yurttaşların toplumsal, ekonomik ve sağlıkla ilgili taleplerinin yok sayılmasına karşı mücadele eder; ayrı hizmet mekanizması bu pasajda tanımlanmaz.')}
+ 'engellilik':(['0304-tip-program-engelli-p1'],'Program engelli yurttaşların toplumsal, ekonomik ve sağlıkla ilgili taleplerinin yok sayılmasına karşı mücadele eder; ayrı hizmet mekanizması bu pasajda tanımlanmaz.'),
+ 'guvencesiz-istihdam':(['0304-tip-program-guvence-p1'],'Program güvenceli çalışma hakkı için mücadeleye katılmayı savunur; ilgili pasaj ayrı istihdam güvencesi düzenlemesi vermez.'),
+ 'halk-meclisi':(['0304-tip-program-halk-meclis-p1'],'Program iş ve yaşam alanlarında meclis tipi halk örgütlenmelerini ve koordinasyonunu savunur.'),
+ 'ifade-basin-ozgurlugu':(['0304-tip-program-ifade-p1'],'Program örgütlenme, eylem, ifade ve basın özgürlüklerinin korunması ve geliştirilmesi için mücadele eder.'),
+ 'kurt-sorunu':(['0304-tip-program-kurt-esitlik-p1','0304-tip-program-kurt-esitlik-p2'],'Program Kürt halkının eşit yurttaşlığını, anadilde eğitim ve yaşamı ve kendi geleceğini belirleme hakkını savunur; hakkın kullanımına tutumunu sınıf mücadelesinin çıkarları doğrultusunda oluşturur.'),
+ 'anadil-hakki':(['0304-tip-program-anadil-p1'],'Program Kürt halkının eşit yurttaşlık mücadelesini ve anadilde eğitim ile yaşam hakkını destekler.'),
+ 'genclik':(['0304-tip-program-genclik-p1'],'Program gençlerin ülke yönetiminde daha çok söz sahibi olması için çaba söyler; bu pasaj ayrı katılım kurulu veya seçim mekanizması tanımlamaz.')}
 passages={x['values']['id']:x['values']['exact'] for x in comparison if x['kind']=='passage'}
 for ids,_ in topics.values():
  for ident in ids: assert passages[ident] in source,ident
@@ -34,5 +40,5 @@ for row in data['tranches']:
  ids,note=topics[row['topic_id']]
  row['research_progress']=dict(recorded_at=datetime.now(timezone.utc).isoformat(),note=note+' Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.',source_ids=['0203-tip-program-v1'],urls=['https://tip.org.tr/parti-programi'],source_passage_ids=ids,status='partial')
  count+=1
-assert count==17
+assert count==23
 path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print('PARTIAL_STATEMENT_LINKS',count)
