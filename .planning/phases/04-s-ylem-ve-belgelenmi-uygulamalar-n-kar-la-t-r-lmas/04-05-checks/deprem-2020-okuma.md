@@ -307,3 +307,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 470–474 metin katmanı okundu: CHP üyelerinin ek görüşünde zemin etütleri, denetim, yapı güvenliği, imar affı ve dönüşüme ilişkin eleştiri ve öneriler var. Bunlar CHP üyelerine ait görüşlerdir; komisyon çoğunluğu veya TİP görüşü sayılmadı, dönemsel iddialar bağımsız doğrulanmadı. İndeks 475–523 ve görseller açık.
 
 - 2021 raporu indeks 475–479 metin katmanı okundu: CHP üyelerinin ek görüşünde afet sonrası yardım, meslek odalarıyla iş birliği ve İzmir'de 7269 ile 6306 sayılı kanunlara ilişkin hukuki değerlendirmeler bulunuyor. Bunlar tarafların değerlendirmesi olarak kaldı; güncel hukuk, bağımsız olgu veya TİP tutumu sayılmadı. İndeks 480–523 ve görseller açık.
+
+- 2021 raporu indeks 480–484 metin katmanı okundu: CHP üyelerinin ek görüşünde mülkiyet, dönüşüm işlemleri ve İzmir'deki 2020 depremi bağlamındaki iddialar ile meslek odalarının denetimde rolü bulunur. Değerlendirme ve iddialar kaynak sahiplerine aittir; TİP görüşü veya doğrulanmış yargı kararı değildir. İndeks 485–523 ve görseller açık.
