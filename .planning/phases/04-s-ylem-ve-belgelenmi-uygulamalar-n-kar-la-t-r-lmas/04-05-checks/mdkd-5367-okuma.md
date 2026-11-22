@@ -33,3 +33,5 @@ Ek okuma: 2026 tutanağının indeks 8–13 metin katmanı da incelendi. Genel S
 2025 tutanağı indeks 12–17 metin katmanı okundu: Ekmen'in konuşması sona erer, MHP adına Feti Yıldız ve Yücel Bulut söz alır. Konuşmacıların iddia ve değerlendirmeleri ayrı tutulur; indeks 18–43 ve 50–94 ile görseller açıktır.
 
 2025 tutanağı indeks 18–23 metin katmanı okundu: MHP konuşması biter, DEM Parti adına Gülistan Kılıç Koçyiğit ve Meral Danış Beştaş söz alır. Koçyiğit indeks 19'da Erkan Baş'a süreçteki katkısı için teşekkür eder; bu ifade Baş'a belirli bir somut işlem veya sonucu ispatlamaz. İndeks 24–43 ve 50–94 ile görseller açık kalır.
+
+2025 tutanağı indeks 24–29 metin katmanı okundu: DEM Parti konuşmasının ardından CHP adına Murat Emir ve Gökçe Gökçen söz alır. İfadeler ilgili konuşmacılara aittir; TİP'e veya hukuken doğrulanmış sonuca dönüştürülmez. İndeks 30–43 ve 50–94 ile görseller açık kalır.
