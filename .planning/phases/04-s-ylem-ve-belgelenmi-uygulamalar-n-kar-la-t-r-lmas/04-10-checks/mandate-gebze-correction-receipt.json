@@ -1,0 +1,74 @@
+{
+  "failures": [
+    "62412226: Pasaj özgün belgede bulunamadı",
+    "62413216 ve 62413720: Kaynak türü ve atıf uyuşmuyor"
+  ],
+  "original_bytes_immutable": true,
+  "ballot_renderer_limitation": "CP1254 özgün belge yerel pasif görünümde doğru; HTML pasaj doğrulayıcısının kendi metni U+FFFD içeriyor. Bu çözümleme karakteri özgün belgede bulunduğu iddia edilmez.",
+  "candidates": [
+    {
+      "previous_package": "mandate-3761-union-draft.json",
+      "previous_sha256": "aa414c9e03e20d5d7792e0b17d77ff495cc7c0aa6fe131443bde898f5ab54a29",
+      "corrected_package": "mandate-3761-corrected-draft.json",
+      "corrected_sha256": "25107391401a9a0393967d317aa8e3a903302f622e10e106274671f4b15820c8",
+      "unchanged_review": "mandate-3761-union-review-draft.json",
+      "review_sha256": "50e4fb3e498543c5f3e18a1cd73394c9400906f6c997d3861790255cd8d4dc89",
+      "changed_rows": [
+        "0410-emep-tezkere-3761-ballot-emep-p: validatorın HTML çözümlemesindeki özgün satır; U+FFFD kaynak görüntüsünde değil, doğrulayıcı çözümlemesindedir"
+      ],
+      "semantic_review_count": 178
+    },
+    {
+      "previous_package": "gebze-congress-union-draft.json",
+      "previous_sha256": "088982471169e258422c8274d873dfec44cdaf9cbf83d8e05ac5017da8082396",
+      "corrected_package": "gebze-congress-corrected-draft.json",
+      "corrected_sha256": "df6795fd23d51a609bc65bb8bda650d133bc35e3ffa67ffc5b528ecd9f007f86",
+      "unchanged_review": "gebze-congress-union-review-draft.json",
+      "review_sha256": "3a3207dd91586ade67481f9b21b2e185047b29878673eab934f4b34a5a7b00c3",
+      "changed_rows": [
+        "0410-emep-tezkere-3761-ballot-emep-p: validatorın HTML çözümlemesindeki özgün satır; U+FFFD kaynak görüntüsünde değil, doğrulayıcı çözümlemesindedir",
+        "0410-emep-gebze-2026-party-v1: party → party_publication"
+      ],
+      "semantic_review_count": 188
+    },
+    {
+      "previous_package": "izmit-congress-union-draft.json",
+      "previous_sha256": "720e957c247474f9d7c29ec909bae383cf98b744982734493d5f0581d0dedcfa",
+      "corrected_package": "izmit-congress-corrected-draft.json",
+      "corrected_sha256": "d53c9e30882083e21675ed22e087c9c7c639ab438f73eab38995556bce383061",
+      "unchanged_review": "izmit-congress-union-review-draft.json",
+      "review_sha256": "ef41d30601808aa35d71cbd24ef14186133de508d0c9e9de5768654a260c5f6a",
+      "changed_rows": [
+        "0410-emep-tezkere-3761-ballot-emep-p: validatorın HTML çözümlemesindeki özgün satır; U+FFFD kaynak görüntüsünde değil, doğrulayıcı çözümlemesindedir",
+        "0410-emep-gebze-2026-party-v1: party → party_publication"
+      ],
+      "semantic_review_count": 195
+    },
+    {
+      "previous_package": "kocaeli-congress-union-draft.json",
+      "previous_sha256": "2d1f7532869df571c935a3cff64e108305e52bc978472390e2f7b522d7611331",
+      "corrected_package": "kocaeli-congress-corrected-draft.json",
+      "corrected_sha256": "22d0cababdae1254f1bd4046e2a7d144b358e934bc2f4d565ed6111e8606e495",
+      "unchanged_review": "kocaeli-congress-union-review-draft.json",
+      "review_sha256": "8f31e0bc7747b5418180a0e9115e3a0d27d9239090b692e357c68cf31bcd1c54",
+      "changed_rows": [
+        "0410-emep-tezkere-3761-ballot-emep-p: validatorın HTML çözümlemesindeki özgün satır; U+FFFD kaynak görüntüsünde değil, doğrulayıcı çözümlemesindedir",
+        "0410-emep-gebze-2026-party-v1: party → party_publication"
+      ],
+      "semantic_review_count": 205
+    },
+    {
+      "previous_package": "luleburgaz-congress-branch-draft.json",
+      "previous_sha256": "5a23d25ad755ea97ac6a83ad09f9124f4337f8cf87194cb42507ea33546211e1",
+      "corrected_package": "luleburgaz-congress-corrected-draft.json",
+      "corrected_sha256": "346e849f73e9d983d6e6d7152173f2afe16d17f4f7bd2444b387288b8d848eeb",
+      "unchanged_review": "luleburgaz-congress-branch-review-draft.json",
+      "review_sha256": "bc0b4561fedf06b112264223340e10e892426fd4bbe5cd8b221aebb3ba2256a9",
+      "changed_rows": [
+        "0410-emep-tezkere-3761-ballot-emep-p: validatorın HTML çözümlemesindeki özgün satır; U+FFFD kaynak görüntüsünde değil, doğrulayıcı çözümlemesindedir",
+        "0410-emep-gebze-2026-party-v1: party → party_publication"
+      ],
+      "semantic_review_count": 212
+    }
+  ]
+}

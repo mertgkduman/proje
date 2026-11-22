@@ -1,0 +1,22 @@
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-institution-62400681/check/src/arsiv.py: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-institution-62400681/check/src/uygulamalar.py: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-institution-62400681/check/src/rapor.py: OK
+/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/mandate-3761-union-draft.json: OK
+/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/mandate-3761-union-review-draft.json: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-mandate-62412226/check/data/current.json: OK
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-mandate-62412226/check/src/arsiv.py", line 3670, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-mandate-62412226/check/src/arsiv.py", line 3582, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-mandate-62412226/check/src/uygulamalar.py", line 1343, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-mandate-62412226/check/src/uygulamalar.py", line 1308, in _load_practice_copy
+    validate_phase_one_workspace(work, storage_root=storage_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-mandate-62412226/check/src/arsiv.py", line 3071, in validate_phase_one_workspace
+    data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-mandate-62412226/check/src/arsiv.py", line 2845, in export_db
+    raise ValueError('Pasaj özgün belgede bulunamadı')
+ValueError: Pasaj özgün belgede bulunamadı
