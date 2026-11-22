@@ -71,3 +71,5 @@ cd8edd2, 5b547bf ve ef1ddb6: tüzük indeks 26–28 disiplin listesi, cezalar, a
 828665e: deprem komisyonunun 16–18. toplantılarına ait üç TBMM PDF yakalandı, yalnız kapakları okundu; karşılaştırma ve tam okuma açık.
 
 42e9e0a: 17 Mart komisyon tutanağı indeks 1–9 okundu, 10–40 açık. 10b8275: kurumsal karar ve Baş konuşmasının ayrı olduğu dar deprem olay izi kaydedildi. 610 pending, 138 kısmi, 0 closure.
+
+7c64a68f: 17 Mart 2021 son komisyon toplantısı PDF tüm 41 sayfası okundu; atıflar ilgili kişiler/gruplarda, fiili uygulama iddiası yok. 10 ve 16 Mart toplantılarının yalnız kapakları, diğer rapor ve tutanaklar kısmen okunmuştur. Güncel 610 pending, 138 kısmi, 0 closure.
