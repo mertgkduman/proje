@@ -45,3 +45,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık 2020 toplantısı PDF indeks 3–7 de okundu: açılışta davetli kurumlar sayılır, Kızılay başkanı afet müdahalesi ve önerilerine ilişkin sunuma başlar. Bu beyan kurum temsilcisine aittir; sağlık emekçisi veya sendikası temsilinin karşılandığını tek başına göstermez. PDF indeks 8–154 açıktır.
 
 9 Aralık toplantısı PDF indeks 8–12 de okundu: Kızılay temsilcisinin kapasite, gönüllülük ve eğitim anlatımı ile komisyon üyesi soru-cevabı yer alır. Bunlar ilgili kişilerin 2020 beyanlarıdır; sağlık çalışanı/sendika temsilinin veya Baş’ın talebinin karşılandığının kanıtı değildir. PDF indeks 13–154 açıktır.
+
+9 Aralık toplantısı PDF indeks 13–17 de okundu: komisyon üyeleri Kızılay bütçesi, afet eğitimi ve basına yansıyan iddiaları sorar, temsilci kendi açıklamasını ve görüşlerini sunar. İhtilaflı beyanlar bağımsız doğrulanmış olguya dönüştürülmez; bu bölüm TİP’in katkısı değildir. İndeks 18–154 açıktır.
