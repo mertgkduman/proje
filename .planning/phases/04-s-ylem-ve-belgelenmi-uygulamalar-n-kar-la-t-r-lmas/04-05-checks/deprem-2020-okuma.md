@@ -147,3 +147,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 70–74 okundu. 17 Mart AFAD yerinde ziyaretinin katılımcıları ve kurum beyanları; komisyon görevlisi 13 uzmanın kurum/unvan listesi ve komisyona sunulan belgeler listesinin ilk bölümü bulunuyor. Sağlık Bakanlığı Acil Sağlık Hizmetleri Genel Müdürlüğünün 12 Ocak 2021 tarihli belgesi listelenmiş; bu, sendika temsilini veya listenin devamının tamamını göstermez. Resmî liste ile farklı türde katılım ve TİP nedenselliği birbirine karıştırılmadı; raporun kalanı açık.
 
 - 2021 raporu indeks 75–79 okundu. Sunulan belge listesi 80. maddeye ulaşır; ardından üyelerin önerge listesi başlar. Listede Ali Kenanoğlu’nun 18 Kasım 2020 tarihli kişi/kurum daveti önerisi ve diğer öneriler yer alır. Liste davet edileceklerin kimliğini veya önerinin kabulünü açıklamaz; 2020 eylemi TİP’e bağlanmaz. 79 boş ayraçtır. Raporun geri kalanı açıktır.
+
+- 2021 raporu indeks 80–84 okundu: raporun ilk bölüm kapağı, boş sayfa ve Türkiye’nin depremselliği girişidir; komisyonun kimleri dinlediği veya Baş’ın talebinin sonucu konusunda yeni doğrudan veri üretmez. Raporun geri kalanı açık.
