@@ -99,3 +99,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 138–142 de okundu: Müzeyyen Şevkin coğrafi veri, fay hatları ve erişim hakkında sorar; genel müdür bazı konularda yanıt verir, farklı değerlendirmeler korunur. Kaynakta sunulan görüş ve hedefler bağımsız saptamaya veya TİP uygulamasına dönüştürülmez. İndeks 143–154 açık.
 
 9 Aralık toplantısı PDF indeks 143–148 de okundu: coğrafi veri yöntemleri, yapı bilgilerinin paylaşılması ve sel/deprem simülasyon sınırları hakkında üye soruları ve yetkili yanıtları var. Değerlendirmeler ilgili kişilerin 2020 beyanlarıdır; TİP’e veya bağımsız doğrulanmış sonuca dönüştürülmez. İndeks 149–154 açık.
+
+9 Aralık toplantısı PDF indeks 149–154 de okundu: veri analizi ve yapı izleme önerileri ile Coğrafi Bilgi Sistemleri oturumu ve toplantı kapanışı yer alır. Böylece 155 sayfalık PDF’nin tamamı (indeks 0–154) okunmuştur. Sağlık Bakanlığı yetkililerinin sunumu doğrudan kayıtlı olsa da, bu tek toplantı sağlık çalışanlarının bağımsız/sendikal temsiline, diğer toplantılara veya Baş’ın talebine nedensel sonuç yüklemeye yetmez; bütün kapsam hücreleri açık kalır.
