@@ -1,5 +1,5 @@
 """295 raporunu ve kesin isimli oylama cetvelini özgün baytlarla sakla."""
-import datetime, hashlib, html, json, sys
+import datetime, hashlib, json, sys
 from pathlib import Path
 sys.path.insert(0, 'src')
 from arsiv import readable_bytes
@@ -18,7 +18,9 @@ for name, local, url, kind in items:
     folder = root/'objects'/sha
     folder.mkdir(parents=True, exist_ok=True)
     original = 'original.pdf' if kind == 'pdf' else 'original.html.bin'
-    readable = readable_bytes(raw, kind, legacy=False) if kind == 'pdf' else ('<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>'+html.escape(raw.decode('cp1254'))+'</pre>').encode('utf-8')
+    # The legacy audit-compatible derivative uses replacement decoding; the
+    # passive view below preserves the HTTP charset and displays Turkish text.
+    readable = readable_bytes(raw, kind, legacy=(kind == 'html'))
     for filename, data in [(original, raw), ('readable.html', readable)]:
         path = folder/filename
         if path.exists(): assert path.read_bytes() == data
