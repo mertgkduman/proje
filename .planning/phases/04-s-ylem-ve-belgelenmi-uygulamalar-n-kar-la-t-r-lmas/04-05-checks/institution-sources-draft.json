@@ -52,7 +52,7 @@
         "published_at": null,
         "date_precision": "unknown",
         "public_url": "https://tip.org.tr/myk-ve-parti-meclisi/parti-meclisi-degerlendirmesi-6-7-nisan-2024",
-        "basis": "Kaynağın künye, başlık, yayıncı ve metin bağlamı okundu; güncellenmiş haberde iki tarafın açıklaması yer alır."
+        "basis": "Kaynağın künye, başlık, yayıncı ve metin bağlamı okundu; taraflara atfedilen ifadeler ayrı korunur."
       }
     },
     {
@@ -134,7 +134,21 @@
         "published_at": "2024-07-20",
         "date_precision": "day",
         "public_url": "https://www.cumhuriyet.com.tr/siyaset/tipin-uc-il-yonetimi-istifa-etti-statukocu-bir-anlayisla-yol-2229384",
-        "basis": "Kaynağın künye, başlık, yayıncı ve metin bağlamı okundu; güncellenmiş haberde iki tarafın açıklaması yer alır."
+        "basis": "Kaynağın künye, başlık, yayıncı ve metin bağlamı okundu; taraflara atfedilen ifadeler ayrı korunur."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0405-tip-istifa-cumhuriyet-announcement-p",
+        "version_id": "0405-tip-istifa-cumhuriyet-v1",
+        "exact": "Bu sebeplerle Türkiye İşçi Partisi'ndeki görevlerimizden ve parti üyeliğimizden istifa ediyoruz.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Ortak açıklamadaki istifa beyanı",
+        "pdf_page_index": null,
+        "printed_page": null
       }
     },
     {
@@ -175,6 +189,88 @@
         "suffix": null,
         "article": null,
         "section": "Parti basın bürosunun ihraç iddiası",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0405-tip-gazeteci-yanit",
+        "party_id": "tip",
+        "title": "Ümit Özçelik, TİP’nin seni 26 Haziran’da ihraç etmediğini ispatla!",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0405-tip-gazeteci-yanit-v1",
+        "document_id": "0405-tip-gazeteci-yanit",
+        "original_url": "https://cagdassamsun.com/kose-yazilari/umit_ozcelik_tipnin_seni_26_haziranda_ihrac_etmedigini_ispatla_-238",
+        "final_url": "https://cagdassamsun.com/kose-yazilari/umit_ozcelik_tipnin_seni_26_haziranda_ihrac_etmedigini_ispatla_-238",
+        "document_date": "2024-07-24",
+        "version_label": "Yayımlanan sayfanın HTML yakalaması",
+        "accessed_at": "2026-11-22T03:15:06.729100+00:00",
+        "verified_at": "2026-11-22T03:15:06.729100+00:00",
+        "mime": "text/html",
+        "sha256": "f9fae374f127695c1f005f40e4e6ff53d8b67096d771344e21f863e0adbda8a8",
+        "original_path": "objects/f9fae374f127695c1f005f40e4e6ff53d8b67096d771344e21f863e0adbda8a8/original.html.bin",
+        "readable_path": "objects/f9fae374f127695c1f005f40e4e6ff53d8b67096d771344e21f863e0adbda8a8/readable.html",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "d8355704a0bc414535c09b88d9e03c74",
+        "format_version": 2,
+        "source_sha256": "f9fae374f127695c1f005f40e4e6ff53d8b67096d771344e21f863e0adbda8a8",
+        "index_path": "views/d8355704a0bc414535c09b88d9e03c74/index.html",
+        "manifest_path": "views/d8355704a0bc414535c09b88d9e03c74/manifest.json",
+        "manifest_sha256": "5c37716b1427f883422bcbc3513cc16d73aa8dfb54abde266b299041e6a0630b",
+        "version_id": "0405-tip-gazeteci-yanit-v1"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0405-tip-gazeteci-yanit-v1",
+        "kind": "journalism",
+        "publisher": "Çağdaş Samsun",
+        "author": "Mehmet Rebii Özdemir",
+        "social_handle": null,
+        "published_at": "2024-07-24",
+        "date_precision": "day",
+        "public_url": "https://cagdassamsun.com/kose-yazilari/umit_ozcelik_tipnin_seni_26_haziranda_ihrac_etmedigini_ispatla_-238",
+        "basis": "Kaynağın künye, başlık, yayıncı ve metin bağlamı okundu; taraflara atfedilen ifadeler ayrı korunur."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0405-tip-gazeteci-yanit-denial-p",
+        "version_id": "0405-tip-gazeteci-yanit-v1",
+        "exact": "Parti bizi kesinlikle ihraç etmedi. Partinin bizim hakkımızda almış olduğu ihraç kararı yok",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Özçelik’in gazeteciye aktarılan yanıtı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0405-tip-gazeteci-yanit-self-criticism-p",
+        "version_id": "0405-tip-gazeteci-yanit-v1",
+        "exact": "Burada kendime bir özeleştiri veriyorum.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Gazetecinin kendi haberiyle ilgili değerlendirmesi",
         "pdf_page_index": null,
         "printed_page": null
       }

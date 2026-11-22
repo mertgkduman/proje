@@ -1,0 +1,23 @@
+import json
+from pathlib import Path
+from datetime import datetime, timezone
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks')
+entries=json.loads((p/'institution-sources-draft.json').read_text())['entries']; now=datetime.now(timezone.utc).isoformat()
+e='0405-tip-2024-istifa-aciklama'; s='0405-tip-ic-tartisma-statement'; r='0405-tip-istifa-iliski'; f='0405-tip-istifa-aciklama-ozet'; d='0405-tip-istifa-ihtilaf'
+announcement='0405-tip-istifa-cumhuriyet-announcement-p'; criticism='0405-tip-istifa-cumhuriyet-criticism-p'; rebuttal='0405-tip-istifa-cumhuriyet-rebuttal-mdk-p'; denial='0405-tip-gazeteci-yanit-denial-p'; charter='0304-tip-pdf-uye-tartisma-q'; selfcrit='0405-tip-pm-nisan-self-evaluation-p'
+entries.append(dict(kind='finding',values=dict(id=f,party_id='tip',heading='Söylem ve uygulama',pair_id=f,text='Tüzük kopyası üyelerin kendi organlarında tartışabileceğini belirtir. Temmuz 2024’te açıklama yapan kişiler yerel görüşlerin dikkate alınmadığını ileri sürdü ve istifa ettiklerini duyurdu. Parti, bazı kişilerin üyelik ve görev durumlarına itiraz etti; somut statüler çözülmemiştir.',provenance='summary',epistemic_type='claim')))
+for pid in [charter,announcement,criticism,rebuttal,denial]:
+ entries.append(dict(kind='finding_evidence',values=dict(finding_id=f,passage_id=pid,role='support')))
+ entries.append(dict(kind='verification',values=dict(finding_id=f,passage_id=pid,checked_at=now,result='confirmed',reason='Kaynaklardaki karşılıklı açıklama ve tüzük bağlamı atıf ve belirsizlik korunarak okundu.')))
+entries.append(dict(kind='review',values=dict(id='review-'+f,kind='finding',subject_id=f,reviewer_kind='agent',reviewed_at=now,result='reviewed',reason='Gazete haberi, parti yanıtı, sonraki kişi beyanı ve PDF sayfası birlikte incelendi; görev ve üyelik kesinleştirilmedi.')))
+records={
+ 'practice_event':[dict(id=e,common_event_key='tip-samsun-istifa-aciklama-2024-07-20',event_at='2024-07-20',date_precision='day',date_unknown_reason=None,scope_context='Samsun merkezli parti içi eleştiri ve istifa açıklaması',title='Parti içi eleştiri ve istifa açıklaması',occurrence_basis='Cumhuriyet, yayımlanan ortak açıklamayı ve parti cevabını aktardı.')],
+ 'practice_event_evidence':[dict(event_id=e,passage_id=announcement,supported_point='Açıklamayı imzalayanlar istifa ettiklerini duyuruyor',stage='action',concrete_basis='20 Temmuz tarihli haberin yayımladığı açıklama.',limitation='Parti kişilerin üyelik ve görev statüsüne itiraz ediyor; başlık bağımsız sicil doğrulaması değildir.',epistemic_type='claim')],
+ 'practice_evidence_assessment':[dict(event_id=e,passage_id=announcement,stage='action',basis_kind='document')],
+ 'practice_statement':[dict(id=s,party_id='tip',topic_id='ic-tartisma-elestiri',taxonomy_version=4,summary_finding_id='0304-tip-pdf-uye-tartisma-summary',quote_finding_id='0304-tip-pdf-uye-tartisma-quote',statement_at=None,date_precision='unknown',version_id='0203-tip-charter2022-v1',period_basis='2022 dosya adlı Faz3 seçili PDF kopyası.',uncertainty_reason='Kesin kabul ve 2024 yürürlük sırası bilinmiyor.',comparison_row_id='04-03-v3-0304-tip-pdf-uye-tartisma-row')],
+ 'practice_relation':[dict(id=r,statement_id=s,event_id=e,party_id='tip',topic_id='ic-tartisma-elestiri',scope_id=None,comparability_reason='Üyelerin parti içi tartışması ve yayımlanan eleştiri aynı konuya ilişkindir; PDF iç tartışmayı düzenler, açıklama kamuya yöneliktir.',target_finding_id='0304-tip-pdf-uye-tartisma-summary',result_finding_id=None,explanation_finding_id=f,temporal_context='Temmuz 2024 duyurusu; PDF sürümünün o tarihte geçerliliği bilinmiyor.',authority_context='Açıklayıcı kişilerin statüleri taraflarca tartışılıyor; parti yönetiminin yetkisi ve kişilerin üyelik geçmişi ayrıca belgelendirilmeli.',uncertainty_reason='Disiplin kararı, üyelik tarihi ve 2024 tüzük sırası doğrulanmadı.')],
+ 'practice_dispute':[dict(id=d,event_id=e,supported_points='Gazetede ortak açıklama ve parti cevabı yayımlandı.',disputed_points='Özçelik’in ihraç edilip edilmediği ve kişilerin görev ve üyelik statüleri.',unresolved_points='Merkez Disiplin Kurulu kararı ve üyelik tarihi belgeleri görülmedi.',summary_finding_id=f)],
+ 'practice_dispute_evidence':[dict(dispute_id=d,passage_id=rebuttal,point='Önceki ihraç',source_position='Parti, açıklamadan önce ihraç kararı olduğunu bildiriyor.',role='conflict'),dict(dispute_id=d,passage_id=denial,point='Önceki ihraç',source_position='Gazeteci Özçelik’in ihraç kararını reddettiğini aktarıyor.',role='reply')]
+}
+(p/'institution-slice-draft.json').write_text(json.dumps(dict(status='draft_unvalidated',entries=entries,practice_records=records),ensure_ascii=False,indent=2)+'\n')
+print('DRAFT ONLY',len(entries))
