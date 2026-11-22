@@ -1,0 +1,435 @@
+{
+  "status": "semantic_review_pass_full_cli_pending",
+  "party_id": "yeni-parti",
+  "additional_entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-germencik-kongre",
+        "party_id": "yeni-parti",
+        "title": "YENİ Parti Germencik’te İbrahim Gül devri",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-germencik-kongre-v1",
+        "document_id": "0404-germencik-kongre",
+        "original_url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "final_url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "document_date": "2026-10-05",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Aydın Times 5 Ekim 14:51, güncelleme 14:55; önseçim ve kongre aşamaları ayrı.",
+        "accessed_at": "2026-11-22T02:21:35.366056+00:00",
+        "verified_at": "2026-11-22T02:21:35.366056+00:00",
+        "mime": "text/html",
+        "sha256": "1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548",
+        "original_path": "objects/1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548/original.html.bin",
+        "readable_path": "objects/1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548/readable.html"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0404-germencik-kongre-v1",
+        "view_id": "7275a80890d5f28c5f7677aaeb0dc4b9",
+        "format_version": 2,
+        "source_sha256": "1004baf314f346a3323eab6e1acce88b29f3573b624687f6eb9717e15bbea548",
+        "index_path": "views/7275a80890d5f28c5f7677aaeb0dc4b9/index.html",
+        "manifest_path": "views/7275a80890d5f28c5f7677aaeb0dc4b9/manifest.json",
+        "manifest_sha256": "27becccecd4afccf73ff2be5ed48d0fa9ee6b16e955d5cfea0e28dd587bb0518"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-germencik-kongre-v1",
+        "kind": "journalism",
+        "publisher": "Aydın Times",
+        "author": "Ezgi Balcı",
+        "social_handle": null,
+        "published_at": "2026-10-05",
+        "date_precision": "day",
+        "public_url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "basis": "Özgün haber gövdesi ve künye okundu; yayın saati 14:51 Türkiye saati."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-germencik-kongre-p",
+        "version_id": "0404-germencik-kongre-v1",
+        "exact": "Delegelerin oylarıyla İbrahim Gül, Yeni Parti Germencik İlçe Başkanı oldu.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Olağan ilçe kongresi delege seçimi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0404-germencik-kongre-explanation",
+        "party_id": "yeni-parti",
+        "heading": "Söylem ve uygulama",
+        "pair_id": "0404-germencik-kongre-explanation",
+        "text": "Tüzük, ilçe kongresinde ilçe başkanının seçilmesini düzenler. Aydın Times, Germencik olağan ilçe kongresinde delegelerin İbrahim Gül’ü ilçe başkanı seçtiğini bildirir. Bu, üyelerin katıldığı 26 Eylül önseçiminden ayrı bir aşamadır.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-summary",
+        "passage_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p",
+        "checked_at": "2026-11-22T02:23:25.300468+00:00",
+        "result": "confirmed",
+        "reason": "Kurucu tüzük hükmü ve kongre haberi ayrı okunup aşamalar karşılaştırıldı."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-quote",
+        "passage_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p",
+        "checked_at": "2026-11-22T02:23:25.300468+00:00",
+        "result": "confirmed",
+        "reason": "Kurucu tüzük hükmü ve kongre haberi ayrı okunup aşamalar karşılaştırıldı."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-germencik-kongre-explanation",
+        "passage_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-germencik-kongre-explanation",
+        "passage_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p",
+        "checked_at": "2026-11-22T02:23:25.300468+00:00",
+        "result": "confirmed",
+        "reason": "Kurucu tüzük hükmü ve kongre haberi ayrı okunup aşamalar karşılaştırıldı."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0404-germencik-kongre-explanation",
+        "passage_id": "0404-germencik-kongre-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0404-germencik-kongre-explanation",
+        "passage_id": "0404-germencik-kongre-p",
+        "checked_at": "2026-11-22T02:23:25.300468+00:00",
+        "result": "confirmed",
+        "reason": "Kurucu tüzük hükmü ve kongre haberi ayrı okunup aşamalar karşılaştırıldı."
+      }
+    }
+  ],
+  "practice_records": {
+    "practice_statement": [
+      {
+        "id": "0404-germencik-kongre-statement",
+        "party_id": "yeni-parti",
+        "topic_id": "orgut-ilce-kongre",
+        "taxonomy_version": 4,
+        "summary_finding_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-summary",
+        "quote_finding_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-quote",
+        "statement_at": null,
+        "date_precision": "unknown",
+        "version_id": "epm-charter-v1",
+        "period_basis": "22 Temmuz tarihli tüzük ve 24 Temmuz parti kuruluşu ayrı; hükmün kesin kabul anı ayrıca belirlenmedi.",
+        "uncertainty_reason": "Kurucu metin kongre görevini düzenler; münferit kongrenin fiilî sonucunu belirtmez.",
+        "comparison_row_id": "04-03-v3-0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-row"
+      }
+    ],
+    "practice_scope_v2": [
+      {
+        "id": "practice-76957014558f9f7d2859331ac1e963df5d15b0f94c8ece36632bd8413d0a9973",
+        "party_id": "yeni-parti",
+        "topic_id": "orgut-ilce-kongre",
+        "taxonomy_version": 4,
+        "period_start": "2026-07-24",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "Germencik olağan ilçe kongresi okuması; diğer ilçe kongreleri ve resmî tutanaklar açık."
+      },
+      {
+        "id": "practice-52a7ef45c066031308e757065bea9964e24ea87f09113ab929b3c69fc8863a92",
+        "party_id": "yeni-parti",
+        "topic_id": "orgut-ilce-kongre",
+        "taxonomy_version": 4,
+        "period_start": "2026-07-24",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "Germencik olağan ilçe kongresi okuması; diğer ilçe kongreleri ve resmî tutanaklar açık."
+      }
+    ],
+    "practice_event": [
+      {
+        "id": "0404-germencik-kongre-event",
+        "common_event_key": "yeni-parti-germencik-ilce-kongresi-2026",
+        "event_at": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Haber 5 Ekimde yayımlandı ve kongrenin tamamlandığını bildiriyor; tam olay günü metinde belirtilmiyor.",
+        "scope_context": "Germencik birinci olağan ilçe kongresi delege seçimi",
+        "title": "Germencik ilçe kongresinde başkan seçimi",
+        "occurrence_basis": "5 Ekim tarihli yerel haberin kongrede delege oyu ile seçildiğini bildiren pasajı."
+      }
+    ],
+    "practice_event_evidence": [
+      {
+        "event_id": "0404-germencik-kongre-event",
+        "passage_id": "0404-germencik-kongre-p",
+        "supported_point": "İbrahim Gül’ün olağan ilçe kongresinde delegelerin oylarıyla seçilmesi.",
+        "stage": "action",
+        "concrete_basis": "Aydın Times haberinde kongre ve delege oyları ayrı aktarılıyor.",
+        "limitation": "Resmî tutanak, oy sayısı ve kesin olay günü görülmedi.",
+        "epistemic_type": "claim"
+      }
+    ],
+    "practice_evidence_assessment": [
+      {
+        "event_id": "0404-germencik-kongre-event",
+        "passage_id": "0404-germencik-kongre-p",
+        "stage": "action",
+        "basis_kind": "document"
+      }
+    ],
+    "practice_relation": [
+      {
+        "id": "0404-germencik-kongre-relation",
+        "statement_id": "0404-germencik-kongre-statement",
+        "event_id": "0404-germencik-kongre-event",
+        "party_id": "yeni-parti",
+        "topic_id": "orgut-ilce-kongre",
+        "scope_id": "practice-52a7ef45c066031308e757065bea9964e24ea87f09113ab929b3c69fc8863a92",
+        "comparability_reason": "Her ikisi ilçe kongresinde ilçe başkanı seçilmesi aşamasına ilişkindir; önseçim ayrıdır.",
+        "target_finding_id": "0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-summary",
+        "result_finding_id": null,
+        "explanation_finding_id": "0404-germencik-kongre-explanation",
+        "temporal_context": "Kurucu tüzükten sonra 5 Ekim tarihli haber gerçekleşmiş kongreyi bildirir.",
+        "authority_context": "Tüzük ilçe kongresini düzenler, haber delegelerin seçimini aktarır.",
+        "uncertainty_reason": "Seçim tutanağı ve kesin olay günü görülmedi; haber önseçimin sayısal uyuşmazlığını çözmez."
+      }
+    ],
+    "practice_candidate": [
+      {
+        "id": "0404-germencik-kongre-candidate",
+        "scope_id": "practice-52a7ef45c066031308e757065bea9964e24ea87f09113ab929b3c69fc8863a92",
+        "event_id": "0404-germencik-kongre-event",
+        "relation_id": "0404-germencik-kongre-relation",
+        "state": "eligible",
+        "reason": "Germencik delege kongresi, tüzükteki ilçe kongresi seçimiyle doğrudan ilgilidir.",
+        "passage_ids": "[\"0404-germencik-kongre-p\"]"
+      }
+    ],
+    "practice_scope_source": [
+      {
+        "scope_id": "practice-76957014558f9f7d2859331ac1e963df5d15b0f94c8ece36632bd8413d0a9973",
+        "version_id": "epm-charter-v1",
+        "inspected_sections": "[\"İlçe kongresinin başkan ve organ seçim yetkisi için kurucu tüzük pasajı incelendi.\"]",
+        "inspected_at": "2026-11-22T02:25:01.212801+00:00"
+      },
+      {
+        "scope_id": "practice-52a7ef45c066031308e757065bea9964e24ea87f09113ab929b3c69fc8863a92",
+        "version_id": "0404-germencik-kongre-v1",
+        "inspected_sections": "[\"Aydın Times olağan ilçe kongresinde delegelerin İbrahim Gül’ü seçtiğini aktarıyor; kesin kongre günü belirtilmiyor.\"]",
+        "inspected_at": "2026-11-22T02:25:01.212801+00:00"
+      }
+    ],
+    "practice_lead": [
+      {
+        "id": "lead-0404-germencik-kongre-reading-1",
+        "scope_id": "practice-76957014558f9f7d2859331ac1e963df5d15b0f94c8ece36632bd8413d0a9973",
+        "url": "https://yenipartiyiz.biz/parti-tuzugu",
+        "relevance_reason": "İlçe kongresinin başkan ve organ seçim yetkisi için kurucu tüzük pasajı incelendi.",
+        "state": "examined",
+        "attempt_ids": "[\"0404-germencik-kongre-reading-1\"]"
+      },
+      {
+        "id": "lead-0404-germencik-kongre-reading-2",
+        "scope_id": "practice-52a7ef45c066031308e757065bea9964e24ea87f09113ab929b3c69fc8863a92",
+        "url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "relevance_reason": "Aydın Times olağan ilçe kongresinde delegelerin İbrahim Gül’ü seçtiğini aktarıyor; kesin kongre günü belirtilmiyor.",
+        "state": "examined",
+        "attempt_ids": "[\"0404-germencik-kongre-reading-2\"]"
+      }
+    ],
+    "practice_attempt_v2": [
+      {
+        "id": "0404-germencik-kongre-reading-1",
+        "scope_id": "practice-76957014558f9f7d2859331ac1e963df5d15b0f94c8ece36632bd8413d0a9973",
+        "attempted_at": "2026-11-22T02:25:01.212801+00:00",
+        "query": "https://yenipartiyiz.biz/parti-tuzugu",
+        "url": "https://yenipartiyiz.biz/parti-tuzugu",
+        "result": "examined",
+        "reason": "İlçe kongresinin başkan ve organ seçim yetkisi için kurucu tüzük pasajı incelendi.",
+        "source_version_id": "epm-charter-v1"
+      },
+      {
+        "id": "0404-germencik-kongre-reading-2",
+        "scope_id": "practice-52a7ef45c066031308e757065bea9964e24ea87f09113ab929b3c69fc8863a92",
+        "attempted_at": "2026-11-22T02:25:01.212801+00:00",
+        "query": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "url": "https://www.aydintimes.com/yeni-parti-germencikte-ibrahim-gul-devri",
+        "result": "examined",
+        "reason": "Aydın Times olağan ilçe kongresinde delegelerin İbrahim Gül’ü seçtiğini aktarıyor; kesin kongre günü belirtilmiyor.",
+        "source_version_id": "0404-germencik-kongre-v1"
+      }
+    ]
+  },
+  "practice_source_review": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-germencik-kongre-event|0404-germencik-kongre-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"0404-germencik-kongre-v1\"]",
+      "passage_ids": "[\"0404-germencik-kongre-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_event_evidence\"]",
+      "supported_claim": "İlgili pasajlar practice_event_evidence için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-event|0404-germencik-kongre-p|action hedefinin kaynak metni ve aşama ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-germencik-kongre-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"0404-germencik-kongre-v1\"]",
+      "passage_ids": "[\"0404-germencik-kongre-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_event\"]",
+      "supported_claim": "İlgili pasajlar practice_event için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-event hedefinin kaynak metni ve aşama ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-germencik-kongre-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_statement\"]",
+      "supported_claim": "İlgili pasajlar practice_statement için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-statement hedefinin kaynak metni ve aşama ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-germencik-kongre-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_statement.summary_finding_id\"]",
+      "supported_claim": "İlgili pasajlar practice_statement.summary_finding_id için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-statement hedefinin kaynak metni ve aşama ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-germencik-kongre-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_statement.quote_finding_id\"]",
+      "supported_claim": "İlgili pasajlar practice_statement.quote_finding_id için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-statement hedefinin kaynak metni ve aşama ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-germencik-kongre-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"0404-germencik-kongre-v1\", \"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p\", \"0404-germencik-kongre-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_relation\"]",
+      "supported_claim": "İlgili pasajlar practice_relation için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-relation hedefinin kaynak metni ve aşama ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-germencik-kongre-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_relation.target_finding_id\"]",
+      "supported_claim": "İlgili pasajlar practice_relation.target_finding_id için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-relation hedefinin kaynak metni ve aşama ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-germencik-kongre-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T02:23:25.300468+00:00",
+      "source_version_ids": "[\"0404-germencik-kongre-v1\", \"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail8-orgut-ilce-kongre-ilce-kongresindeki-secimler-p\", \"0404-germencik-kongre-p\"]",
+      "inspected_sections": "[\"Kurucu tüzük ve Germencik kongre haberi: practice_relation.explanation_finding_id\"]",
+      "supported_claim": "İlgili pasajlar practice_relation.explanation_finding_id için ilçe kongresi kuralını veya aktarılan delege seçimini gösterir.",
+      "limitations": "Resmî tutanak ve kesin olay günü bulunmadı; üye önseçimi ayrı aşamadır.",
+      "result": "reviewed",
+      "reason": "0404-germencik-kongre-relation hedefinin kaynak metni ve aşama ayrımı incelendi."
+    }
+  ],
+  "source_review_refs": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-germencik-kongre-event|0404-germencik-kongre-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-germencik-kongre-event"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-germencik-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-germencik-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-germencik-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-germencik-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-germencik-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-germencik-kongre-relation"
+    }
+  ]
+}
