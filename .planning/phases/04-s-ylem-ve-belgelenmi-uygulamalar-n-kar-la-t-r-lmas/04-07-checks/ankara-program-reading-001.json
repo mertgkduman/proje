@@ -1,0 +1,35 @@
+{
+  "version_id": "0205-iyi-program-page-v1",
+  "sha256": "7165cd05b2643134a6a8fc4910f312915c59c52a31561ec6f657d89f2a493f9a",
+  "read_at": "2026-11-22T05:19:41+00:00",
+  "extracted_character_range": [
+    0,
+    42000
+  ],
+  "method": "Python HTMLParser; script, style, nav, footer, header dışlanır; metin parçaları boşlukla birleştirilir.",
+  "findings": [
+    {
+      "range": [
+        0,
+        10000
+      ],
+      "note": "Programın ilkeleri, hukuk ve siyasi partiler başlığı; kontenjan dışı milletvekili adaylarının üyelerce doğrudan seçimi önerisi."
+    },
+    {
+      "range": [
+        10000,
+        23000
+      ],
+      "note": "Eğitim, okul öncesi, temel eğitim ve rehberlik önerileri."
+    },
+    {
+      "range": [
+        23000,
+        42000
+      ],
+      "note": "Kamu yönetimi, iç ve dış güvenlik, savunma ve istihbarat önerileri."
+    }
+  ],
+  "limitation": "Ankara il teşkilatının HTML metninde kabul ve son değişiklik tarihi belirtilmiyor; 2026 yakalamasının tamamı kesim içinde yürürlükte varsayılamaz.",
+  "processed_at": "2026-11-22T05:19:41+00:00"
+}
