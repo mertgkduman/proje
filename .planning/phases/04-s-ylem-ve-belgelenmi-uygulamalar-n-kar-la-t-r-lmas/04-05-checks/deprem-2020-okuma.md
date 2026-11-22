@@ -53,3 +53,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 23–27 de okundu: Kızılay soru-cevapla kapanır, AKUT temsilcileri gönüllü müdahale kapasitesi ve önerilerini sunar. Bu katkılar ilgili kurumlara aittir; TİP talebinin uygulandığını göstermez. İndeks 28–154 açık.
 
 9 Aralık toplantısı PDF indeks 28–32 de okundu: AKUT temsilcileri afet eğitimi, erişilebilir tahliye, yerel yönetim-STK desteği ve psikososyal destek önerilerini aktarır; başkan toplanma alanları konusunda değerlendirme yapar. Bunlar kişi ve kuruluş görüşleridir, TİP girişimi veya uygulanmış sonuç olarak atfedilmez. İndeks 33–154 açık.
+
+9 Aralık toplantısı PDF indeks 33–37 de okundu: Bedri Yaşar ve Müzeyyen Şevkin’in soruları ve AKUT temsilcilerinin eğitim, akreditasyon ve kapasite yanıtları yer alır. Beyanlar ilgili kişi ve kuruluşa aittir; TİP eylemine ya da bağımsız sonuca çevrilmez. İndeks 38–154 açık.
