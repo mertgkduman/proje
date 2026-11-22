@@ -4407,6 +4407,86 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0404-tbmm-erken-7-50319-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-member-dues-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-member-dues-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-member-dues-charter-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-account-adoption-event|0404-member-dues-account-rule-adoption|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-member-dues-account-adoption-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-member-dues-account-adoption-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-member-dues-account-adoption-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-member-dues-account-adoption-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event|0404-member-dues-first-pm-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event|0404-member-dues-first-pm-commit|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event|0404-member-dues-first-pm-total|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation"
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute|0404-member-dues-first-pm-meeting|DHA haberi 31 Ağustos açılışını ilk Parti Meclisi toplantısı olarak nitelendiriyor.|support"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute|0404-member-dues-account-rule-adoption|Yönetmeliğin yürürlük maddesi 20 Ağustos tarihli Parti Meclisi toplantısını bildiriyor.|conflict"
     }
   ],
   "practice_source_review": [
@@ -18735,6 +18815,266 @@
       "limitations": "Alım anında cevaplanmadığının ilan edildiği yazıyor. İlan günü ve 10 Kasım kesimindeki cevap durumu açık. Yazılı soru transferlerin gerçekleştiğini veya gerçekleşmediğini göstermiyor.",
       "result": "reviewed",
       "reason": "7/50319 Fonlarla ilişkili yurt dışı para hareketlerinin araştırılması açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-member-dues-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\"]",
+      "supported_claim": "Tüzük başvuruda 50–5.000 TL giriş aidatı ve yılda 600–7.200 TL üyelik aidatı öngörür.",
+      "limitations": "Arşivli tüzük, başvuru aidatını 50–5.000 TL ve yıllık üyelik aidatını 600–7.200 TL olarak ayrı düzenliyor.",
+      "result": "reviewed",
+      "reason": "Seçili hüküm özgün belge içinde ve tarih bağlamıyla yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-member-dues-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\"]",
+      "supported_claim": "Tüzük başvuruda 50–5.000 TL giriş aidatı ve yılda 600–7.200 TL üyelik aidatı öngörür.",
+      "limitations": "Arşivli tüzük, başvuru aidatını 50–5.000 TL ve yıllık üyelik aidatını 600–7.200 TL olarak ayrı düzenliyor.",
+      "result": "reviewed",
+      "reason": "Faz 3 özetinin hüküm kapsamı ve koşulları asıl metinden kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-member-dues-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\"]",
+      "supported_claim": "Seçili Faz 3 bulgusu arşivdeki cümleyi aktarıyor.",
+      "limitations": "Arşivli tüzük, başvuru aidatını 50–5.000 TL ve yıllık üyelik aidatını 600–7.200 TL olarak ayrı düzenliyor.",
+      "result": "reviewed",
+      "reason": "Alıntı özgün belge dizisi ve pasaj kimliğiyle karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-account-adoption-event|0404-member-dues-account-rule-adoption|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-account-rule-v1\"]",
+      "passage_ids": "[\"0404-member-dues-account-rule-adoption\"]",
+      "inspected_sections": "[\"Madde 23 yürürlük\"]",
+      "supported_claim": "Yayımlanan yönetmeliğin 23. maddesi, 20 Ağustos Parti Meclisinde kabul ve yürürlük bildiriyor.",
+      "limitations": "Kabul günü yönetmeliğin kendi hükmünde. Ayrı toplantı kararı, tekil tahsilat ve bağımsız hesap denetimi açık.",
+      "result": "reviewed",
+      "reason": "Madde 23 yürürlük özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-member-dues-account-adoption-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-account-rule-v1\"]",
+      "passage_ids": "[\"0404-member-dues-account-rule-adoption\"]",
+      "inspected_sections": "[\"Madde 23 yürürlük\"]",
+      "supported_claim": "Hesap Yönetmeliği, Parti Meclisinin 20 Ağustos 2026’da kabul ettiğini bildiriyor.",
+      "limitations": "Kabul günü yönetmeliğin kendi hükmünde. Ayrı toplantı kararı, tekil tahsilat ve bağımsız hesap denetimi açık.",
+      "result": "reviewed",
+      "reason": "Hesap Yönetmeliğindeki 20 Ağustos kabul kaydı tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-member-dues-account-adoption-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-member-dues-account-rule-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\", \"0404-member-dues-account-rule-adoption\", \"0404-member-dues-account-rule-group\", \"0404-member-dues-account-rule-record\", \"0404-member-dues-account-rule-regular\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\", \"Madde 23 yürürlük\", \"Madde 15 ayrı grup ödentisi\", \"Madde 12 gelir makbuzu\", \"Madde 15 üyelik aidatının gelir olarak sayılması\"]",
+      "supported_claim": "Hesap Yönetmeliği giriş ve üyelik aidatlarını grup ödentisinden ayrı gelir olarak sayıyor.",
+      "limitations": "Kabul günü yönetmeliğin kendi hükmünde. Ayrı toplantı kararı, tekil tahsilat ve bağımsız hesap denetimi açık.",
+      "result": "reviewed",
+      "reason": "Hesap Yönetmeliğindeki 20 Ağustos kabul kaydı ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-member-dues-account-adoption-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\"]",
+      "supported_claim": "Tüzükteki üyelik aidatı, üyelikten alınan olağan gelir ile aynı kapsamda. Grup ödentileri ayrı.",
+      "limitations": "Kabul günü yönetmeliğin kendi hükmünde. Ayrı toplantı kararı, tekil tahsilat ve bağımsız hesap denetimi açık.",
+      "result": "reviewed",
+      "reason": "Hesap Yönetmeliğindeki 20 Ağustos kabul kaydı için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-member-dues-account-adoption-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-member-dues-account-rule-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\", \"0404-member-dues-account-rule-adoption\", \"0404-member-dues-account-rule-group\", \"0404-member-dues-account-rule-record\", \"0404-member-dues-account-rule-regular\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\", \"Madde 23 yürürlük\", \"Madde 15 ayrı grup ödentisi\", \"Madde 12 gelir makbuzu\", \"Madde 15 üyelik aidatının gelir olarak sayılması\"]",
+      "supported_claim": "Yönetmelik, MYK önerisi ve Parti Meclisinin kabulünü kaydediyor. Yönetmeliğin uygulama esasları Genel Başkanlık ve Genel Sekreterliğe bağlı.",
+      "limitations": "Kabul günü yönetmeliğin kendi hükmünde. Ayrı toplantı kararı, tekil tahsilat ve bağımsız hesap denetimi açık.",
+      "result": "reviewed",
+      "reason": "Hesap Yönetmeliğindeki 20 Ağustos kabul kaydı açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event|0404-member-dues-first-pm-meeting|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-first-pm-meeting\"]",
+      "inspected_sections": "[\"Parti Meclisi ve tarih\"]",
+      "supported_claim": "DHA, 31 Ağustos Parti Meclisi açılışındaki konuşmayı aktarıyor.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "Parti Meclisi ve tarih özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event|0404-member-dues-first-pm-commit|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-first-pm-commit\"]",
+      "inspected_sections": "[\"Düzenli aidat taahhüdü ile tahsilat ayrımı\"]",
+      "supported_claim": "DHA’nın aktardığı konuşmada 400 bin üyenin aidat taahhüdü ve kart bağlantısından söz edildi.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "Düzenli aidat taahhüdü ile tahsilat ayrımı özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event|0404-member-dues-first-pm-total|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-first-pm-total\"]",
+      "inspected_sections": "[\"Parti başkanının üye aidatı ve bağış hakkında sözü\"]",
+      "supported_claim": "Konuşmada bağış ve aidatların birlikte yaklaşık 539 milyon TL olduğu bildirildi.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "Parti başkanının üye aidatı ve bağış hakkında sözü özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-member-dues-first-pm-disclosure-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-first-pm-commit\", \"0404-member-dues-first-pm-meeting\", \"0404-member-dues-first-pm-total\"]",
+      "inspected_sections": "[\"Düzenli aidat taahhüdü ile tahsilat ayrımı\", \"Parti Meclisi ve tarih\", \"Parti başkanının üye aidatı ve bağış hakkında sözü\"]",
+      "supported_claim": "DHA, Özgür Özel’in 31 Ağustos’ta Parti Meclisi açılışında aidat ve bağış hakkında konuştuğunu aktardı.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "31 Ağustos Parti Meclisi açılışındaki aidat açıklaması tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\", \"0404-member-dues-first-pm-commit\", \"0404-member-dues-first-pm-meeting\", \"0404-member-dues-first-pm-total\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\", \"Düzenli aidat taahhüdü ile tahsilat ayrımı\", \"Parti Meclisi ve tarih\", \"Parti başkanının üye aidatı ve bağış hakkında sözü\"]",
+      "supported_claim": "Konuşmada yaklaşık 539 milyon TL toplamı bağışlar ve yeni üyelerin ilk aidatları birlikte verilerek açıklandı.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "31 Ağustos Parti Meclisi açılışındaki aidat açıklaması ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\"]",
+      "supported_claim": "Tüzükteki giriş ve yıllık aidat kalemleri, parti başkanının ilk aidat ve aylık taahhüt açıklamasında ayrı anılıyor.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "31 Ağustos Parti Meclisi açılışındaki aidat açıklaması için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0303-epm-uyelik-aidati-p\", \"0404-member-dues-first-pm-commit\", \"0404-member-dues-first-pm-meeting\", \"0404-member-dues-first-pm-total\"]",
+      "inspected_sections": "[\"Madde 6 – Üyenin Hak ve Yükümlülükleri\", \"Düzenli aidat taahhüdü ile tahsilat ayrımı\", \"Parti Meclisi ve tarih\", \"Parti başkanının üye aidatı ve bağış hakkında sözü\"]",
+      "supported_claim": "Özel açıklamayı parti genel başkanı olarak yaptı. Bağımsız hesap denetçisi veya banka tahsilat kaydı mevcut pasajlarda yer almıyor.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "31 Ağustos Parti Meclisi açılışındaki aidat açıklaması açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-first-pm-commit\", \"0404-member-dues-first-pm-total\"]",
+      "inspected_sections": "[\"Düzenli aidat taahhüdü ile tahsilat ayrımı\", \"Parti başkanının üye aidatı ve bağış hakkında sözü\"]",
+      "supported_claim": "Özel, yaklaşık 539 milyon TL’yi bağışlarla ilk aidatların birlikte toplamı olarak açıkladı. 400 bin sayısını kartla aidat taahhüdü için verdi.",
+      "limitations": "Açıklama aidat taahhüdü, kart bağlantısı ve bağışla birleştirilmiş toplam içeriyor. Üyeye özel fiilî tahsilat, saf aidat toplamı ve bağımsız denetim açık.",
+      "result": "reviewed",
+      "reason": "Bağış ve aidatın toplamı ile kartlı üye taahhüdünün aynı ölçü olmadığı kaynakta kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-account-rule-v1\", \"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-account-rule-adoption\", \"0404-member-dues-first-pm-commit\", \"0404-member-dues-first-pm-meeting\", \"0404-member-dues-first-pm-total\"]",
+      "inspected_sections": "[\"Madde 23 yürürlük\", \"Düzenli aidat taahhüdü ile tahsilat ayrımı\", \"Parti Meclisi ve tarih\", \"Parti başkanının üye aidatı ve bağış hakkında sözü\"]",
+      "supported_claim": "İki arşiv kaydı aynı organ adını kullanıyor. Toplantıların resmî türü, sıra numarası ve kararları aynı kaynaktan doğrulanmadı.",
+      "limitations": "Yönetmelik 20 Ağustos’ta Parti Meclisi toplantısı kaydediyor. 31 Ağustos haberinde toplantı ilk olarak adlandırılıyor. Toplantı türleri ve sıra numarası açık.",
+      "result": "reviewed",
+      "reason": "Yönetmelik Madde 23 ile 31 Ağustos haberinin açılış cümlesi ayrı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-account-rule-v1\", \"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-account-rule-adoption\", \"0404-member-dues-first-pm-meeting\"]",
+      "inspected_sections": "[\"Madde 23 yürürlük\", \"Parti Meclisi ve tarih\"]",
+      "supported_claim": "Yönetmelik 20 Ağustos’ta Parti Meclisi toplantısı kaydediyor. 31 Ağustos haberinde toplantı ilk olarak adlandırılıyor. Toplantı türleri ve sıra numarası açık.",
+      "limitations": "Bir akışın ilk toplantısı başka bir toplantı türünü dışlamaz.",
+      "result": "reviewed",
+      "reason": "Özetin iki iddiası ayrı kaynağa ve kendi işlem gününe bağlandı."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute|0404-member-dues-first-pm-meeting|DHA haberi 31 Ağustos açılışını ilk Parti Meclisi toplantısı olarak nitelendiriyor.|support",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-first-pm-v1\"]",
+      "passage_ids": "[\"0404-member-dues-first-pm-meeting\"]",
+      "inspected_sections": "[\"Parti Meclisi ve tarih\"]",
+      "supported_claim": "DHA haberi 31 Ağustos açılışını ilk Parti Meclisi toplantısı olarak nitelendiriyor.",
+      "limitations": "Yönetmelik 20 Ağustos’ta Parti Meclisi toplantısı kaydediyor. 31 Ağustos haberinde toplantı ilk olarak adlandırılıyor. Toplantı türleri ve sıra numarası açık.",
+      "result": "reviewed",
+      "reason": "Özgün Parti Meclisi ve tarih metni kendi anlatım konumunda okundu."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0404-member-dues-first-pm-disclosure-sira-dispute|0404-member-dues-account-rule-adoption|Yönetmeliğin yürürlük maddesi 20 Ağustos tarihli Parti Meclisi toplantısını bildiriyor.|conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:14:26+00:00",
+      "source_version_ids": "[\"0404-member-dues-account-rule-v1\"]",
+      "passage_ids": "[\"0404-member-dues-account-rule-adoption\"]",
+      "inspected_sections": "[\"Madde 23 yürürlük\"]",
+      "supported_claim": "Yönetmeliğin yürürlük maddesi 20 Ağustos tarihli Parti Meclisi toplantısını bildiriyor.",
+      "limitations": "Yönetmelik 20 Ağustos’ta Parti Meclisi toplantısı kaydediyor. 31 Ağustos haberinde toplantı ilk olarak adlandırılıyor. Toplantı türleri ve sıra numarası açık.",
+      "result": "reviewed",
+      "reason": "Özgün Madde 23 yürürlük metni kendi anlatım konumunda okundu."
     }
   ]
 }
