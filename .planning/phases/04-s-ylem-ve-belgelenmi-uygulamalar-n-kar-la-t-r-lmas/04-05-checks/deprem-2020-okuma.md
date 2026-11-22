@@ -33,3 +33,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 18 Şubat toplantısında PDF indeks 17–24 de okundu: Sakarya belediye temsilcisinin açıklamaları ve farklı milletvekillerinin riskli yapı, mali sorumluluk ve dönüşüm finansmanı hakkında soruları ve görüşleri yer alır. Bunlar ilgili kişilere aittir; TİP tutumu, bağımsız doğrulanmış sonuç veya gerçekleşmiş uygulama olarak atfedilmez. İndeks 25–64 ve 66–82 hâlâ açıktır.
 
 18 Şubat toplantısı PDF indeks 25–34 okundu: Sakarya sunumu soru-cevapla kapanır, Kocaeli temsilcisi deprem hazırlığı, yapı stoku, dönüşüm ve kendi önerilerini anlatır. Aktarılan sayılar ve geçmiş uygulamalar temsilcinin beyanıdır; TİP eylemi veya bağımsızca doğrulanmış sonuç değildir. İndeks 35–64 ve 66–82 açıktır.
+
+18 Şubat toplantısı PDF indeks 35–44 okundu: Kocaeli temsilcisinin sunumu ve afet hazırlığına ilişkin farklı milletvekilleriyle soru-cevapları sona erer; Van belediye temsilcisinin sunumu başlar. Farklı kişilerin görüş ve sayı beyanları kendi kaynak bağlamında kalır, TİP eylemi ya da bağımsız sonuç sayılmaz. İndeks 45–64 ve 66–82 açıktır.
