@@ -219,3 +219,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 250–254 metin katmanı okundu: Elazığ projelerinde tamamlanan ve planlanan işler dönemsel bakanlık beyanlarıdır; 251–254 ağırlıkla görsel ve başlıktır, görseller ayrıca incelenmedi ve görsel içerikten olgu çıkarılmadı. 44–254 ilerlemesi metin katmanı okumadır; önceki sayfalardaki gömülü harita/görsellerin tümü incelenmiş sayılmaz. İndeks 255 ve sonrası açık.
 
 - 2021 raporu indeks 255–259 metin katmanı okundu: Malatya afet konutu için bakanlık verileri ve planları var; 256–259’daki fotoğraflar görsel olarak incelenmedi, yalnız başlıkları okundu. İnşaata başlama, plan ve bitim ayrı tutuldu; indeks 260 ve sonrası açık.
+
+- 2021 raporu indeks 260–264 metin katmanı okundu: İzmir Bayraklı proje alanları, planlanan konutlar ve temel atıldığı belirtilen işler rapor dönemi kaynaklarına dayanır; gömülü resimler görsel incelenmedi. Plan ve gerçekleşme ayrıldı; TİP etkisi çıkarılmadı. İndeks 265 ve sonrası açık.
