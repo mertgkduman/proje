@@ -1,0 +1,9 @@
+# DBP’nin 2022 ve 2023 kongreleri
+
+Diyarbakır Yenigün, 27 Şubat 2022’de 6. Olağan Kongrenin Nazım Hikmet Kültür Merkezi’nde yapıldığını ve Saliha Aydeniz ile Keskin Bayındır’ın oy birliğiyle yeniden seçildiğini bildirdi. Oy sayısı, tutanak ve uygulanan usul açık. Gazete Duvar ve Evrensel bağlantıları arşiv alımında HTTP 403 döndü. Başka haber erişiminin engellenmesi, olay veya belge yokluğu sayılmadı. [Diyarbakır Yenigün](https://diyarbakiryenigun.com/gundem/aydeniz-ve-bayindir-yeniden-secildi-108119h)
+
+PİRHA 5 Kasım 2023’te Diyarbakır’daki konferansta Çiğdem Kılıçgün Uçar ile Keskin Bayındır’ın önerildiğini aktardı. 12 Kasım 6. Olağanüstü Kongresinde bu iki kişinin seçildiği PİRHA ve Güneydoğu Ekspres’te kayıtlı. Öneri konferansı, seçim kongresi ve 12 Ocak 2025 yeniden seçim ayrı işlemler. Oy dökümü açık. [5 Kasım konferansı](https://pirha.org/dbp-es-genel-baskanligina-kilicgun-ve-bayindir-onerildi-401304.html/05/11/2023/) [12 Kasım PİRHA](https://pirha.org/dbpnin-yeni-es-genel-baskanlari-ucar-ve-bayindir-oldu-402381.html/12/11/2023/) [12 Kasım Güneydoğu Ekspres](https://www.guneydoguekspres.com/dbpnin-yen-esbaskanlari-ucar-ve-bayindir/amp)
+
+PİRHA’nın 12 Kasım haberinin bir paragrafı Ankara Dünya Ticaret Merkezi’ni, sonraki paragrafı Diyarbakır’ı gösteriyor. Güneydoğu Ekspres de Ankara Dünya Ticaret Merkezi’ni bildiriyor. 5 Kasım haberi Diyarbakır’ı önceki konferansla ilişkilendiriyor. Haber içi yer farkı ayrı kaynaklı belirsizlik olarak saklandı. Sandık sonucunu değiştirdiğine ilişkin bir çıkarım yapılmadı.
+
+Arşivli 12 Ocak 2025 değişiklikli tüzükte bazı maddelerin 27 Şubat 2022 kongresine ilişkin kayıtları var. 2022 veya 2023 seçimine uygulanan eş genel başkanlık maddesinin tam dönem nüshası açık. İki kongre kaydının söylem araştırması açık ve dört ayrı olayın bulunduğu çalışma çiftinde kapsam kapanışı yok.
