@@ -213,3 +213,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 235–239 okundu: yenileme alanı usulleri, Afyon/Ankara/Konya örnekleri ve 2012–2020 dönüşüm istatistikleri bakanlık kaynaklarına dayanır. Dönemsel sayılar, doğrulanmamış güncel durum veya TİP eylemi sayılmadı; indeks 240 ve sonrası açık.
 
 - 2021 raporu indeks 240–244 okundu: riskli yapı tespit verileri, lisans kayıtları ve İstanbul dönüşüm projeleri bakanlık sunumuna atfediliyor. Tespit edilen bina altkümesindeki oranlar genel yapı stoku olarak genellenmedi; hedeflenen projeler gerçekleşmiş veya TİP faaliyeti olarak gösterilmedi. İndeks 245 ve sonrası açık.
+
+- 2021 raporu indeks 245–249 okundu: İstanbul, Kocaeli, Erzurum, Van ve Elazığ dönüşüm ve afet konutu örnekleri bakanlık sunumlarına atfen anlatılıyor; teslim edildiği bildirilen ve planlanan birimler ayrıdır. Önceki belediye ve kurum çalışmaları TİP girişimi sayılmadı. İndeks 250 ve sonrası açık.
