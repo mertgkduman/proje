@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
 Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: 2026-11-22 UTC — Yeni Parti 124 olay ve 126 ilişkiyle doğrulandı. DEM Parti beş olayla, İYİ Parti ve Yeni Yol ilk olaylarıyla önizlemeyi geçti. Dokuz parti araştırma kuyruğu açık.
+Last activity: 2026-11-22 UTC — Dokuz partinin ilk kaynaklı çalışma çiftleri doğrulandı. Yeni Parti 124 olay ve 126 ilişkiye, TİP dört olaya ve DEM Parti beş olaya ulaştı. Parti kapsamları açık.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 

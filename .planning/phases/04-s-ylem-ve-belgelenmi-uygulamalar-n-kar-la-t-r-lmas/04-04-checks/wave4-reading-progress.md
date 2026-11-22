@@ -4,6 +4,22 @@ Yeni Parti’nin canlı çalışma çifti 124 olay ve 126 ilişkiye ulaştı. Sl
 
 Resmî parti API’sinin 58 dilimi ve 270 özgün gövdesi okundu. TBMM milletvekili dizinindeki 128 kanun teklifi, 306 Meclis araştırması ve sekiz dilimdeki 1.679 yazılı soru özeti okundu. Ayrıntı kayıtları için 325 alım makbuzunun ve imzalı başvuru veya cevap PDF'leri için 398 alım makbuzunun tamamı HTTP 200 ve özgün baytlarla doğrulandı. Makbuzlar tekrar edilen veya ayrı hedeflenen kayıtlar içerebilir. Seçilen PDF’lerin bağlam okuması sürüyor. 610 konu hücresinde kapanış yok.
 
-TİP’in üç olay ve dört ilişkili birleşik paketi 62397038 ile doğrulandı. İşin geçici önizleme dizinine düğüm temizliğinden sonra erişilemedi. DEM Parti’nin canlı çalışma çifti 62398995 ile beş olaya ulaştı. İYİ Parti’nin 2023 kurultayı 62398442, Yeni Yol’un dönüşümlü başkanlığı 62398174 ile önizlemeyi geçti. DBP, EMEP, Saadet ve Demokrat Parti araştırma kuyrukları da açıldı.
+Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış önizleme denetimlerinden geçti. Her parti için 610 konu hücresi açık. Sayılar parti paketlerine ait. Ortak olaylar birleştirme sırasında kendi karar ve kaynak kayıtlarıyla ele alınacak.
+
+| Parti | Olay | İlişki | Son doğrulama işi |
+|---|---:|---:|---|
+| Yeni Parti | 124 | 126 | 62398838 |
+| TİP | 4 | 5 | 62399107 |
+| DEM Parti | 5 | 5 | 62398995 |
+| İYİ Parti | 1 | 1 | 62398442 |
+| Yeni Yol | 1 | 1 | 62398174 |
+| DBP | 1 | 1 | 62399032 |
+| EMEP | 1 | 1 | 62400681 |
+| Saadet Partisi | 1 | 1 | 62401132 |
+| Demokrat Parti | 1 | 1 | 62401133 |
+
+TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
+
+Yeni Parti’nin beş ek fon denetimi sorusu ve üç cevabı kaynaklarıyla okundu. D-04 için 7/49426 okul güvenliği kaydının ilişkisiz olay olarak gösterilmesi yalıtılmış düzeltme denetiminde.
 
 Yeni parti aktörü ve kişi kaydı ile taranmış PDF pasajı kontrolleri 62394087 işinde geçti. Hakkâri dosyasını engelleyen ihtilaf özeti gösterimi 855ba31 ile iki görünüme eklendi. Ayrı süreçlerde aynı HTML'yi üretmek için açık konu satırlarının sırası 4109c5d ile sabitlendi. Kanonik sürüm işaretçisi `f67ca0a35e634035bf3aa83a46571f50` olarak kaldı.
