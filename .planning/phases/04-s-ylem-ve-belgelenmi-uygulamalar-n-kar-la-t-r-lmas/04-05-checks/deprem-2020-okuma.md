@@ -51,3 +51,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 18–22 de okundu: şartlı bağış, kurumsal güven, afet beslenme kapasitesi üzerine Bedri Yaşar ve Kamil Okyay Sındır’ın soruları ile Kızılay temsilcisinin yanıtları bulunur. İhtilaflı iddialar ilgili taraflarına aittir; TİP tutumu veya bağımsız saptama değildir. İndeks 23–154 açık.
 
 9 Aralık toplantısı PDF indeks 23–27 de okundu: Kızılay soru-cevapla kapanır, AKUT temsilcileri gönüllü müdahale kapasitesi ve önerilerini sunar. Bu katkılar ilgili kurumlara aittir; TİP talebinin uygulandığını göstermez. İndeks 28–154 açık.
+
+9 Aralık toplantısı PDF indeks 28–32 de okundu: AKUT temsilcileri afet eğitimi, erişilebilir tahliye, yerel yönetim-STK desteği ve psikososyal destek önerilerini aktarır; başkan toplanma alanları konusunda değerlendirme yapar. Bunlar kişi ve kuruluş görüşleridir, TİP girişimi veya uygulanmış sonuç olarak atfedilmez. İndeks 33–154 açık.
