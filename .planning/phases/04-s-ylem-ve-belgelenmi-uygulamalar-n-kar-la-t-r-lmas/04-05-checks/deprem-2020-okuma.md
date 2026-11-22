@@ -95,3 +95,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 128–132 de okundu: adres oturumu kapanır, Coğrafi Bilgi Sistemleri Genel Müdürü veri standartları ve afet bilgi paylaşımı sunar; Ali Kenanoğlu Kanal İstanbul itirazlarına ilişkin kişisel değerlendirme yapar. 2020 sözleri TİP’e, beyanlar bağımsız uygulama sonucuna dönüştürülmez. İndeks 133–154 açık.
 
 9 Aralık toplantısı PDF indeks 133–137 de okundu: coğrafi veri ve yapı envanteri sunumu, sayısal modeller, veri doğrulama ve sürmekte olduğu belirtilen geliştirmeler konuşulur; Ali Kenanoğlu sistem erişimini sorar. Yetkili beyanı ve projeleri bağımsızca doğrulanmış veya TİP uygulaması sayılmadı. İndeks 138–154 açık.
+
+9 Aralık toplantısı PDF indeks 138–142 de okundu: Müzeyyen Şevkin coğrafi veri, fay hatları ve erişim hakkında sorar; genel müdür bazı konularda yanıt verir, farklı değerlendirmeler korunur. Kaynakta sunulan görüş ve hedefler bağımsız saptamaya veya TİP uygulamasına dönüştürülmez. İndeks 143–154 açık.
