@@ -119,3 +119,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 23 Aralık toplantısı PDF indeks 44–48 okundu: İnşaat Mühendisleri Odası sunumu sonlanır, komisyon başkanı ve üyeler öneri ve eleştirilere dair farklı görüşler ile oda başkanının yanıtını aktarır. Bunlar o tarihteki taraf görüşleridir; TİP veya bağımsız gerçekleşme olarak kaydedilmez. İndeks 49–132 açık.
 
 23 Aralık toplantısı PDF indeks 49–53 okundu: maliyet hesabı, denetim bağımsızlığı ve güçlendirme ile iş güvenliği hakkında İnşaat Mühendisleri Odası başkanı üyelerin sorularına yanıt verir; kimi veriler elinde olmadığını belirtir. İhtilaflı beyan ve tahminler taraflarına aittir; TİP etkisi veya bağımsız gerçekleşme olarak alınmaz. İndeks 54–132 açık.
+
+23 Aralık toplantısı PDF indeks 54–58 okundu: İnşaat Mühendisleri Odası soru-cevap oturumu kapanır, Jeofizik Mühendisleri Odası temsilcilerinin afet eğitimi ve bina incelemesi önerileri başlar. Bu açıklamalar ilgili meslek kuruluşuna aittir, TİP etkisi veya bağımsız doğrulanmış sonuç olarak sunulmaz. İndeks 59–132 açık.
