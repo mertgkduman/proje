@@ -1,0 +1,7 @@
+# DBP Parti Meclisi ve Merkez Yürütme Kurulu
+
+12 Ocak 2025 değişikliklerini içeren arşivli tüzükte Parti Meclisinin MYK üyelerini seçme yetkisi ile MYK’nın dokuz üye ve eş genel başkanlardan oluşması ayrı maddelerde düzenleniyor. 19 Ocak ilk Parti Meclisi toplantısı parti bildirgesinde tarihli. 23 Ocak tarihli Artı Gerçek haberi, toplantı sonrasında MYK’nın belirlendiğini ve görev dağılımını bildiriyor. Haber MA atfını taşıyor. Görev listesi, gizli oyla seçim yapıldığını veya MYK’nın belirlendiği kesin günü kendi başına göstermiyor. [Tüzük](https://dbp.org.tr/parti/tuzuk) · [Parti bildirgesi](https://dbp.org.tr/guncel/haberler/guncel/haberler/parti-meclisi-toplantisi-sonuc-bildirgemizi-acikladik) · [Görev dağılımı](https://artigercek.com/politika/dbp-yeni-myksini-belirledi-331783h)
+
+Partinin kongre çağrısı sayfasında 11 Ocak 2024 ve Cumartesi birlikte yazıyor. Bu tarih, parti bildirgesindeki ve ayrı haberlerdeki 12 Ocak 2025 kongre günüyle aynı kayıt olarak tarihlendirilmedi. 12 Kasım 2023 tarihli 6. Olağanüstü Kongre ve 27 Şubat 2022 tarihli 6. Olağan Kongre ayrı araştırma uçları. [Kongre çağrısı](https://dbp.org.tr/guncel/haberler/guncel/haberler/7-olagan-buyuk-kongreye-gidiyoruz) · [2023 kongresi](https://bianet.org/haber/dbp-nin-yeni-es-genel-baskanlari-ucar-ve-bayindir-oldu-287768) · [2022 kongresi](https://www.demokrathaber.org/dbp-kongresi-aydeniz-ve-bayindir-guven-tazeledi)
+
+Bu ilk kurum içi okuma iki kapsam kaydı açtı. İlk yayımlanma günü, önceki tüzük nüshaları, seçim tutanağı ve kalan 610 hücrenin araştırması devam ediyor.
