@@ -1,0 +1,7 @@
+# DBP 5. Olağanüstü Kongresi ve 2023 eş genel başkan seçimi
+
+JINHAGENCY’nin 25 Haziran 2023 saat 13.23’te yayımladığı haber, 5. Olağanüstü Kongrenin Ankara Dünya Ticaret Merkezi’nde yapıldığını ve Saliha Aydeniz ile Keskin Bayındır’ın yeniden eş genel başkan seçildiğini bildirdi. Haber Erciş, 26 Haziran saat 00.07’de yayımladığı haberde aynı kongreyi, yeri ve sonucu aktardı. Haber Erciş ayrıca aday önergesinin oy birliğiyle kabul edildiğini bildirdi. Oy sayısı, oy verme yöntemi ve resmî kongre tutanağı açık. Benzer haber metinleri için ayrı haber alma zinciri doğrulanmadı. [JINHAGENCY](https://jinhaagency.com/tr/guncel/dbp-kongresi-saliha-aydeniz-ve-keskin-bayindir-yeniden-esbaskan-oldu-41060?page=5) [Haber Erciş](https://www.haberercis.com.tr/dbpde-olaganustu-kongre)
+
+Dönemin eş genel başkan vekilleri Zekiye İlbasan ve Faruk Tatlı’nın kongredeki konuşmaları Haber Erciş’e atıflı. Tatlı’nın tecrit hakkındaki açıklamasının kapsamı kaynak kaydında saklandı. Konuşma, 15 Şubat 2024 tarihli 10/1056 önergesinden ve 12 Kasım 2023 tarihli 6. Olağanüstü Kongredeki Çiğdem Kılıçgün Uçar ve Keskin Bayındır seçiminden ayrı. Haziran kongresinde yürürlükteki tüzüğün seçim maddesi ve tam dönem nüshası açık.
+
+BirGün’ün 25 Haziran haberi tarayıcıda okundu. Özgün bayt alımı HTTP 403 döndüğünden çalışma çiftine sürüm veya pasaj eklenmedi. İki diğer haber HTTP 200 ile alındı ve özgün baytlar pasif görünümleriyle saklandı. [BirGün](https://www.birgun.net/haber/dbp-de-olaganustu-kongre-baskanlar-degismedi-448128)
