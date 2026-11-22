@@ -1,0 +1,5 @@
+# 224 sayılı rapor: PDF 217–224 okuması
+
+Sekiz sayfa özgün raporun metin katmanından okundu. PDF 217–221 kampüslerde şiddet, töre/namus gerekçesiyle işlenen cinayetler ve erken yaşta veya zorla evlilik konularında komisyon raporunun aktardığı araştırmaları ve istatistikleri içeriyor. Ülke, örneklem, referans yıl ve veri tanımları farklı kaynaklardaki oranlar birbirine veya Türkiye genelindeki bütün vakalara doğrudan genellenemez. PDF 218'deki yüzde 99 ifadesi 4 Aralık 2024 tarihli 4066 tutanağına atfediliyor; ilgili özgün sunumun kapsamı ve hesaplaması ayrıca kontrol edilmeden kesin sonuç olarak kullanılmamalı. PDF 220–221 resmî evlenmeler ve kayıtlı doğumları ayrı gösteriyor; kayıt dışı evlilik sayısını ölçtükleri varsayılmaz.
+
+PDF 222–224 üçüncü bölümde güç, güçsüzlük ve güçlenme üzerine literatür ve kuramları özetliyor. Komisyon raporunun kavramsal çerçevesi ve referansları DEM'in kendi görüşü veya gerçekleşmiş uygulama olarak aktarılmaz; atıfların asılları bu okumada doğrulanmadı. Sonraki sayfalar ve rapordaki önerilerin uygulanması açık.
