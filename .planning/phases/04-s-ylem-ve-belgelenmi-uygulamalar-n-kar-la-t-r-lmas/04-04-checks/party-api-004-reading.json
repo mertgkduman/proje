@@ -1,0 +1,82 @@
+{
+  "tranche_id": "0404-yeni-party-api-004",
+  "status": "semantic_reading_completed_for_exact_ranges_only",
+  "read_at": "2026-11-22T00:53:47.487709+00:00",
+  "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+  "scope_closures": [],
+  "note": "Sınırlar JSON icerik alanındaki karakter konumlarıdır. 275 gövdesinin 42139 sonrası okunmadı; kapsam kapanışı yoktur.",
+  "documents": [
+    {
+      "id": 277,
+      "title": "YENİ Parti Grup Başkanvekili Murat Emir: “Burada Sızıntı Yok. Sarayda Kurulmuş Bir Suç Örgütü Var”",
+      "url": "https://api.yeni-parti.org.tr/api/haberler/277",
+      "publisher": "Yeni Parti",
+      "created_at": "2026-11-03T21:51:07.827Z",
+      "updated_at": "2026-11-03T21:51:07.827Z",
+      "created_at_semantics": "API oluşturulma zamanı; yayın zamanı kanıtı olarak kullanılmadı",
+      "accessed_at": "2026-11-22T00:40:25+00:00",
+      "sha256": "f6ff145cf56ba6da1181c6ad98160972875fa21f6b46deb4a84732b98c982542",
+      "mime": "application/json",
+      "owned_original": "data/practices/sources/yeni-parti/objects/f6ff145cf56ba6da1181c6ad98160972875fa21f6b46deb4a84732b98c982542/original.html.bin",
+      "source_section_ranges": {
+        "id": 277,
+        "section_start": 7,
+        "section_end": 13,
+        "char_start": 1957,
+        "char_end": 6210
+      },
+      "reading": "Murat Emir fon soruşturması ve siyasi sorumluluk hakkında suçlama ve sorular yöneltiyor; para ve kişi hakkındaki iddialar konuşmacının iddiası olarak kalır.",
+      "next_leads": [
+        "Soruşturmanın yetkili açıklamalarını ve Genel Kurul tutanağını izle; tahminleri doğrulanmış zarar sayma."
+      ]
+    },
+    {
+      "id": 276,
+      "title": "Özgür Özel, MHP Lideri Bahçeli’ye Taziye Ziyaretinde Bulundu",
+      "url": "https://api.yeni-parti.org.tr/api/haberler/276",
+      "publisher": "Yeni Parti",
+      "created_at": "2026-11-03T15:33:48.547Z",
+      "updated_at": "2026-11-03T16:37:29.477Z",
+      "created_at_semantics": "API oluşturulma zamanı; yayın zamanı kanıtı olarak kullanılmadı",
+      "accessed_at": "2026-11-22T00:40:25+00:00",
+      "sha256": "37fb8f2f92bfb0029d3c30ed2fecaa741e69d765ea019e7d8ae9bfeac9396705",
+      "mime": "application/json",
+      "owned_original": "data/practices/sources/yeni-parti/objects/37fb8f2f92bfb0029d3c30ed2fecaa741e69d765ea019e7d8ae9bfeac9396705/original.html.bin",
+      "source_section_ranges": {
+        "id": 276,
+        "section_start": 1,
+        "section_end": 1,
+        "char_start": 0,
+        "char_end": 186
+      },
+      "reading": "Parti yayını Özgür Özel’in Devlet Bahçeli’ye ablasının ölümü nedeniyle Mecliste taziye ziyaretini bildiriyor.",
+      "next_leads": [
+        "Ziyaretin gerçek tarihini bağımsız kaynakla doğrula; oluşturma zamanı yayın ya da ziyaret zamanı olarak varsayılmadı."
+      ]
+    },
+    {
+      "id": 275,
+      "title": "Özgür Özel: “Sıra Partinin Genel Başkanına Saldırmaya, Olmayacak Karalar Çalarak Tartışma Yaratmaya Geldi; Tüm Hedefleri, Muhalefeti Seçeneksiz Bırakmak”",
+      "url": "https://api.yeni-parti.org.tr/api/haberler/275",
+      "publisher": "Yeni Parti",
+      "created_at": "2026-11-03T15:31:35.230Z",
+      "updated_at": "2026-11-03T15:31:35.230Z",
+      "created_at_semantics": "API oluşturulma zamanı; yayın zamanı kanıtı olarak kullanılmadı",
+      "accessed_at": "2026-11-22T00:40:26+00:00",
+      "sha256": "95ad689adaa48465c6dffb7e2bd007900096604f9acd434efbc2e3594ca5c554",
+      "mime": "application/json",
+      "owned_original": "data/practices/sources/yeni-parti/objects/95ad689adaa48465c6dffb7e2bd007900096604f9acd434efbc2e3594ca5c554/original.html.bin",
+      "source_section_ranges": {
+        "id": 275,
+        "section_start": 1,
+        "section_end": 40,
+        "char_start": 0,
+        "char_end": 42139
+      },
+      "reading": "Özgür Özel grup toplantısında üye katılımıyla 8 Kasım genel başkan önseçimi çağrısı, tarım ve emekli politikaları, fon soruşturması, dış politika ve yargı hakkında görüşler açıklıyor; metro ve suçlama gibi ölçümler bağımsız doğrulanmış sonuç değildir.",
+      "next_leads": [
+        "Önseçim çağrısını mevcut 0404-genelbaskan-onsecim olayıyla ve seçim sonuçlarını ayrı aşamalarla karşılaştır; tarım ve fon araştırma önergesi için TBMM asli belgelerini ara; 42139 sonrası 005 diliminde okunacak."
+      ]
+    }
+  ]
+}
