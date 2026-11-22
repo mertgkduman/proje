@@ -243,3 +243,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 310–314 metin katmanı okundu: Silivri depremi sonrası BTK yaptırımı ile işletmecilerin kapasite ve afet desteklerine ilişkin tarihli sunumları aktarılır; işletmeci iddiaları bağımsızca doğrulanmadı ve TİP’e bağlanmadı. İndeks 315 ve sonrası açık.
 
 - 2021 raporu indeks 315–319 metin katmanı okundu: Vodafone kurum beyanı, afet arama kurtarma kapasitesi ve hasar tespit yöntemi 2020–2021 kaynaklarıyla aktarılıyor. Saha faaliyetleri ve kurumlardaki görevler partiye atfedilmedi; indeks 320 ve sonrası açık.
+
+- 2021 raporu indeks 320–324 metin katmanı okundu: afet finansmanı, 2010–2020 cari fiyatlı AFAD ödenekleri ve DASK’ın rapor tarihindeki kuruluş ve sigorta kapsamı anlatılıyor. Dönemsel bütçe ve sigorta bilgileri güncel rakam, bağımsız uygulama sonucu veya TİP eylemi sayılmadı; indeks 325 ve sonrası açık.
