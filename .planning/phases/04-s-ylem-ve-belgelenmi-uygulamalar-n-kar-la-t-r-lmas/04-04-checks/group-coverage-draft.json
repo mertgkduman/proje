@@ -1,0 +1,125 @@
+{
+  "status": "open_partial",
+  "practice_records": {
+    "practice_scope_v2": [
+      {
+        "id": "practice-e3df21bf792728e4c0e85d656d8f0193ad68d395a93eb5b55ce9a4323b7a6fbe",
+        "party_id": "yeni-parti",
+        "topic_id": "tbmm-grup",
+        "taxonomy_version": 4,
+        "period_start": "2026-07-24",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "TBMM grubunun tüzük ve kuruluş dönemi seçimleri incelendi; sonraki kararlar ve ilgili kaynaklar araştırılmaya devam ediyor."
+      },
+      {
+        "id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "party_id": "yeni-parti",
+        "topic_id": "tbmm-grup",
+        "taxonomy_version": 4,
+        "period_start": "2026-07-24",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "TBMM grubunun tüzük ve kuruluş dönemi seçimleri incelendi; sonraki kararlar ve ilgili kaynaklar araştırılmaya devam ediyor."
+      }
+    ],
+    "practice_attempt_v2": [
+      {
+        "id": "0404-grup-inceleme-epm-charter-v1",
+        "scope_id": "practice-e3df21bf792728e4c0e85d656d8f0193ad68d395a93eb5b55ce9a4323b7a6fbe",
+        "attempted_at": "2026-11-22T00:19:04+00:00",
+        "query": "https://yenipartiyiz.biz/parti-tuzugu",
+        "url": "https://yenipartiyiz.biz/parti-tuzugu",
+        "result": "examined",
+        "reason": "TBMM grubu başkanvekilleri ve grup yönetim kurulu hükümleri okundu.",
+        "source_version_id": "epm-charter-v1"
+      },
+      {
+        "id": "0404-grup-inceleme-0404-grup-kurulus-dunya-v1",
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "attempted_at": "2026-11-22T00:19:04+00:00",
+        "query": "https://www.dunya.com/gundem/yeni-partinin-grup-baskan-vekilleri-pm-ve-ydk-uyeleri-belli-oldu-haberi-833547",
+        "url": "https://www.dunya.com/gundem/yeni-partinin-grup-baskan-vekilleri-pm-ve-ydk-uyeleri-belli-oldu-haberi-833547",
+        "result": "examined",
+        "reason": "24 Temmuz kapalı grup başkanvekili seçimi Dünya haberinden okundu.",
+        "source_version_id": "0404-grup-kurulus-dunya-v1"
+      },
+      {
+        "id": "0404-grup-inceleme-0404-grup-yonetim-ekonomim-v1",
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "attempted_at": "2026-11-22T00:19:04+00:00",
+        "query": "https://www.ekonomim.com/gundem/yeni-parti-ilk-kapali-grup-toplantisini-gerceklestirdi-tbmm-grup-yonetimi-belirlendi-haberi-908682",
+        "url": "https://www.ekonomim.com/gundem/yeni-parti-ilk-kapali-grup-toplantisini-gerceklestirdi-tbmm-grup-yonetimi-belirlendi-haberi-908682",
+        "result": "examined",
+        "reason": "28 Temmuz TBMM grup yönetimi Ekonomim haberinden okundu.",
+        "source_version_id": "0404-grup-yonetim-ekonomim-v1"
+      }
+    ],
+    "practice_lead": [
+      {
+        "id": "lead-0404-grup-inceleme-epm-charter-v1",
+        "scope_id": "practice-e3df21bf792728e4c0e85d656d8f0193ad68d395a93eb5b55ce9a4323b7a6fbe",
+        "url": "https://yenipartiyiz.biz/parti-tuzugu",
+        "relevance_reason": "TBMM grubu başkanvekilleri ve grup yönetim kurulu hükümleri okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0404-grup-inceleme-epm-charter-v1\"]"
+      },
+      {
+        "id": "lead-0404-grup-inceleme-0404-grup-kurulus-dunya-v1",
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "url": "https://www.dunya.com/gundem/yeni-partinin-grup-baskan-vekilleri-pm-ve-ydk-uyeleri-belli-oldu-haberi-833547",
+        "relevance_reason": "24 Temmuz kapalı grup başkanvekili seçimi Dünya haberinden okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0404-grup-inceleme-0404-grup-kurulus-dunya-v1\"]"
+      },
+      {
+        "id": "lead-0404-grup-inceleme-0404-grup-yonetim-ekonomim-v1",
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "url": "https://www.ekonomim.com/gundem/yeni-parti-ilk-kapali-grup-toplantisini-gerceklestirdi-tbmm-grup-yonetimi-belirlendi-haberi-908682",
+        "relevance_reason": "28 Temmuz TBMM grup yönetimi Ekonomim haberinden okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0404-grup-inceleme-0404-grup-yonetim-ekonomim-v1\"]"
+      }
+    ],
+    "practice_scope_source": [
+      {
+        "scope_id": "practice-e3df21bf792728e4c0e85d656d8f0193ad68d395a93eb5b55ce9a4323b7a6fbe",
+        "version_id": "epm-charter-v1",
+        "inspected_sections": "[\"TBMM grubu organlarının belirlenmesi ve görevleri\"]",
+        "inspected_at": "2026-11-22T00:19:04+00:00"
+      },
+      {
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "version_id": "0404-grup-kurulus-dunya-v1",
+        "inspected_sections": "[\"Kapalı grup başkanvekilleri seçimi\"]",
+        "inspected_at": "2026-11-22T00:19:04+00:00"
+      },
+      {
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "version_id": "0404-grup-yonetim-ekonomim-v1",
+        "inspected_sections": "[\"TBMM toplantısı\", \"Grup yönetim kurulu üyeleri\"]",
+        "inspected_at": "2026-11-22T00:19:04+00:00"
+      }
+    ],
+    "practice_candidate": [
+      {
+        "id": "0404-grup-0724-candidate",
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "event_id": "0404-tbmm-grup-secim-0724-event",
+        "relation_id": "0404-tbmm-grup-secim-0724-iliski-id",
+        "state": "eligible",
+        "reason": "TBMM grubu organlarının belirlenmesi haber kaynaklı, tarihli ve bu kapsamla ilişkilidir.",
+        "passage_ids": "[\"0404-grup-kurulus-dunya-p\"]"
+      },
+      {
+        "id": "0404-grup-0728-candidate",
+        "scope_id": "practice-3e4ee7b7b680ffa05f8284f6441f82e15c13e7d63d7f50c25336d9988ebb9faf",
+        "event_id": "0404-tbmm-grup-yonetim-0728-event",
+        "relation_id": "0404-tbmm-grup-yonetim-0728-iliski-id",
+        "state": "eligible",
+        "reason": "TBMM grubu organlarının belirlenmesi haber kaynaklı, tarihli ve bu kapsamla ilişkilidir.",
+        "passage_ids": "[\"0404-grup-yonetim-ekonomim-context-p\", \"0404-grup-yonetim-ekonomim-p\"]"
+      }
+    ]
+  }
+}
