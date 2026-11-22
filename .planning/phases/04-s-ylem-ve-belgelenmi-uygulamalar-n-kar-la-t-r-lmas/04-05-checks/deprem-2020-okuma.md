@@ -171,3 +171,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 130–134 okundu: Kızılay, AKUT ve İHH hakkında kurumsal arka plan sonrasında ikinci bölüm yer kabuğu ve diri fay bilgi altyapısını anlatıyor. Kamu kurumu veya sivil toplum hakkındaki ifadeler TİP sonucu ya da bağımsız/sendikal sağlık çalışanı katılımı sayılmaz; indeks 135 ve sonrası açık.
 
 - 2021 raporu indeks 135–139 okundu: MTA’nın fay haritalama ve paleosismoloji çalışmaları ve AFAD deprem tehlike haritaları rapor tarihindeki kaynaklara dayanılarak özetleniyor. Öncesinde başlayan çalışmalar TİP’e veya Baş’ın önerisinin sonucuna atfedilmedi; indeks 140 ve sonrası açık.
+
+- 2021 raporu indeks 140–144 okundu: sıvılaşma, heyelan duyarlılığı ve mikrobölgeleme haritaları ile deprem gözleminin teknik çerçevesi; mevcut ve hedeflenen çalışmalar ayrı aktarılır. Planlar tamamlanmış veya TİP kaynaklı sayılmadı; indeks 145 ve sonrası açık.
