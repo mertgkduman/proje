@@ -9,12 +9,12 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 139 | 140 | 62406651 |
-| TİP | 14 | 14 | 62441046 |
-| DEM Parti | 12 | 9 | 62440960 |
+| TİP | 15 | 15 | 62443486 |
+| DEM Parti | 12 | 9 | 62442819 |
 | İYİ Parti | 6 | 6 | 62435745 |
 | Yeni Yol | 7 | 4 | 62441335 |
 | DBP | 10 | 7 | 62443961 |
-| EMEP | 27 | 29 | 62440980 |
+| EMEP | 28 | 30 | 62441366 |
 | Saadet Partisi | 8 | 6 | 62437168 |
 | Demokrat Parti | 9 | 8 | 62441374 |
 
