@@ -153,3 +153,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 85–89 okundu: tarihsel deprem tablosu ve sismik tehlike açıklamasından ulusal afet mevzuatına geçilir; rapor beyanları TİP’in girişimi veya bağımsız kanıtı değildir. Raporun indeks 90 ve sonrası açık.
 
 - 2021 raporu indeks 90–94 okundu: afet riski ve sigorta düzenlemeleri, imar mevzuatı ve belediyelerin afet görevleri ile yapı denetimi hakkında komisyonun 2021 açıklamaları yer alıyor. Bunlar bugünkü hukuk durumu veya TİP uygulaması olarak değerlendirilmedi; raporun geri kalanı açık.
+
+- 2021 raporu indeks 95–99 okundu: komisyon 2021 itibarıyla yapı denetim kapsamı, kamu kurumları ve AFAD teşkilatı ile deprem yönetmeliklerinin tarihçesini özetliyor; mevcut hukuk veya TİP faaliyeti olarak sunulmadı. İndeks 100 ve sonrası açık.
