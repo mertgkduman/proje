@@ -9,8 +9,14 @@ base=json.loads(Path('data/releases/f67ca0a35e634035bf3aa83a46571f50/records.jso
 live=json.loads(Path('data/practices/04-yeni-parti.json').read_text())
 now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 scope=research['scope_id']; pids=research['charter']['passage_ids']
-prefixes=['0303-epm-third-disiplin-af','0303-epm-detail13-disiplin-af-bag-slama-basvurusu-',
-          '0303-epm-detail14-disiplin-af-bag-slama-karar-nda-gizli-oy-',
+from arsiv import html_source_text
+from hashlib import sha256
+charter=next(v for v in base['document_version'] if v['id']=='epm-charter-v1')
+raw=(Path('data')/charter['original_path']).read_bytes(); assert sha256(raw).hexdigest()==charter['sha256']
+content=html_source_text(raw)
+assert all(next(p['exact'] for p in base['passage'] if p['id']==pid) in content for pid in pids)
+prefixes=['0303-epm-third-disiplin-af','0303-epm-detail13-disiplin-af-bag-slama-basvurusu',
+          '0303-epm-detail14-disiplin-af-bag-slama-karar-nda-gizli-oy',
           '0303-epm-detail15-disiplin-af-bag-slama-isteminin-sunulmas-']
 keys=['yetki','basvuru','gizli-oy','sunum']
 records={k:[] for k in live['practice_records']}; entries=[]
@@ -18,9 +24,9 @@ records['practice_scope_v2'].append({'id':scope,'party_id':'yeni-parti','topic_i
  'period_start':'2026-07-24','cutoff_at':'2026-11-10T14:38:46.154751+00:00','research_kind':'statement',
  'boundary_reason':'Kurucu tüzük madde 52 bağışlama söylemi; kesim içi sonraki değişiklik kararı ve diğer söylemler açık.'})
 for key,pre,pid in zip(keys,prefixes,pids):
- summary=pre+'-summary' if not pre.endswith('-') else pre+'-summary'
- quote=pre+'-quote' if not pre.endswith('-') else pre+'-quote'
- row='04-03-v3-'+pre+'-row' if not pre.endswith('-') else '04-03-v3-'+pre+'-row'
+ summary=pre+'-summary'
+ quote=pre+'-quote'
+ row='04-03-v3-'+pre+'-row'
  for identity in (summary,quote):
   assert any(x['id']==identity for x in base['finding'])
   assert any(x['finding_id']==identity and x['passage_id']==pid for x in base['finding_evidence'])
