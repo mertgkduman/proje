@@ -1,6 +1,6 @@
 # 04-05 TİP — devam noktası
 
-Plan tamamlanmamıştır. `04-tip-tranches.json` 610/610 pending, 0 closure; 77 hücreye gerçek ama kısmi araştırma kaydı bağlandı. 33 özgün kaynak nesnesi mevcuttur. TİP başlangıcı 2017-11-07, method-1 kesimi 2026-11-10T14:38:46.154751+00:00. `04-05-SUMMARY.md` yoktur. Ortak inventory, current, STATE ve ROADMAP değiştirilmemiştir.
+Plan tamamlanmamıştır. `04-tip-tranches.json` 610/610 pending, 0 closure; 83 hücreye gerçek ama kısmi araştırma kaydı bağlandı. 33 özgün kaynak nesnesi mevcuttur. TİP başlangıcı 2017-11-07, method-1 kesimi 2026-11-10T14:38:46.154751+00:00. `04-05-SUMMARY.md` yoktur. Ortak inventory, current, STATE ve ROADMAP değiştirilmemiştir.
 
 - 2/2121: parent sahipliğindeki `policy-tracer-checked-draft.json` / `policy-review-checked-draft.json`. 62393670 izole giriş, kaynak inceleme ve preview kapıları exit 0; wrapper DB/JSON ve iki görünümde ilişkiyi, manifesti ve kanonik tabanın değişmediğini doğruladı. Makbuz `tip-policy-dossier-62393670.json`; geçici önizleme `data/.staging/gsd-0405-tip-policy-dossier-62393670/releases/db98bb1e8b6648ed967ec02c575cf063`. Paket SHA-256 `1235d8eb304b6a7cbd92f36dd9fefa9fe87c21aa6ec9db771e870d502bb97f3d`. Bu yalnız dar tracer'dır. 9 Nisan 2024 parti meclisi 35 saat hedefi için `policy-35h-statement-delta.json` ve `policy-35h-review-delta.json` ek taslaktır; birleştirilip ayrı input/source/preview geçmedi.
 - Kurumsal: `institution-package-publication-day-draft.json` / `institution-review-checked-draft.json`; 62394917 input/source/preview PASS ve wrapper iki görünümü denetledi. Önizleme `data/.staging/gsd-0405-institution-day-62394917/releases/af09521ede8b45f4a193f54de728daa5`, makbuz `institution-day-62394917.json`. Önceki 62394107, 62394148, 62394160 input denemeleri sıfır dışıdır. Nisan öz değerlendirmesi, Temmuz açıklaması, parti cevabı ve muhatabın sonraki yanıtı ayrı kaynaklarda korunuyor; ihraç ve üyelik durumu ihtilaflıdır. Tire sevk/tedbir ve istifa/yanıt zinciri `tire-disiplin-reading.md` içinde ayrı olay adayıdır.
@@ -49,3 +49,5 @@ dc4ecf0: 9 Aralık 2020 sağlık sunumu toplantı tutanağı yakalandı; indeks 
 4ac3565 ve bad0916: 2022 adlı tüzüğün indeks 3–5 sayfaları görsel okunarak sekiz üyelik ve örgüt hücresine dar kısmi iz eklendi. 610 pending, 57 kısmi, 0 closure; tarihsel yürürlük ve fiili süreç açık.
 
 5691386, 7e10582, 6a8d4e2 ve 04dce65: 2022 adlı tüzük PDF indeks 6–9 görsel okundu; kongre, birim, PM ve Genel Başkan kuralları kısmi izlere bağlandı. Mevcut durum 610 pending, 77 kısmi, 0 kapanış; sürüm yürürlüğü ve olay uçları açık.
+
+341d687 ve bb28679: tüzük indeks 10–11 görsel okuması MYK, öğrenci, yayın, kadın bürosu ve il kongresine ilişkin altı kısmi iz ekledi; şu an 610 pending, 83 kısmi, 0 closure.
