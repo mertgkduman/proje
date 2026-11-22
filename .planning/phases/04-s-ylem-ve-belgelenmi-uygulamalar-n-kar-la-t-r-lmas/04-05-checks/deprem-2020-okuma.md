@@ -43,3 +43,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 18 Şubat toplantısı PDF indeks 66–82 de okundu: bakanlık yetkililerinin yapı ve zemin denetimi sunumları, üye soruları, farklı görüşler ve toplantı kapanışı yer alır. İndeks 65 daha önce okunduğundan özgün 83 sayfanın tümü (0–82) okunmuştur. Tartışma ve yetkili beyanları kendilerine aittir; tek toplantının tamamı diğer toplantıların tamamı veya Baş’ın talebinin gerçekleştiği anlamına gelmez. Kapsam hücreleri kapanmadı.
 
 9 Aralık 2020 toplantısı PDF indeks 3–7 de okundu: açılışta davetli kurumlar sayılır, Kızılay başkanı afet müdahalesi ve önerilerine ilişkin sunuma başlar. Bu beyan kurum temsilcisine aittir; sağlık emekçisi veya sendikası temsilinin karşılandığını tek başına göstermez. PDF indeks 8–154 açıktır.
+
+9 Aralık toplantısı PDF indeks 8–12 de okundu: Kızılay temsilcisinin kapasite, gönüllülük ve eğitim anlatımı ile komisyon üyesi soru-cevabı yer alır. Bunlar ilgili kişilerin 2020 beyanlarıdır; sağlık çalışanı/sendika temsilinin veya Baş’ın talebinin karşılandığının kanıtı değildir. PDF indeks 13–154 açıktır.
