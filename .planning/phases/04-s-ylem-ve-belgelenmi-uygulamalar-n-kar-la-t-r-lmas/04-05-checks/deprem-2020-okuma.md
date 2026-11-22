@@ -159,3 +159,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 100–104 okundu: komisyon 2018 yapı yönetmeliği ile kalkınma planları, KENTGES, UDSEP ve TAMP belgelerini tarihsel bağlamda anlatıyor. Plan hedefleri tamamlanmış uygulama, bugünkü durum veya TİP’in girişimi sayılmadı; indeks 105 ve sonrası açık.
 
 - 2021 raporu indeks 105–109 okundu: önceki 2010 deprem komisyonu önerileri ve izleyen yıllardaki ilgili kurum çalışmalarına raporun atfettiği örnekler yer alıyor. Eski komisyonun önerileri ve bunlarla ilişkilendirilen beyanlar 2020 Baş konuşmasının sonucu değildir; bağımsız doğrulama yapılmadan yürütülme düzeyi kesinleştirilmedi. İndeks 110 ve sonrası açık.
+
+- 2021 raporu indeks 110–114 okundu: rapor 2010 komisyonu sonrası kurum faaliyetleri, sağlık koordinasyonu ve uluslararası afet belgelerini anlatır. Bu tarihsel örnekler 2020 Baş konuşmasının karşılığı veya TİP sonucu değildir; indeks 115 ve sonrası açık.
