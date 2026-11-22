@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-11-22T05:22:29+00:00",
+  "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+  "package_sha256": "d6ab78b2725a62a29b5ef0cd98e6d94520fd13bb28acecbb5052750dbf07463b",
+  "review_sha256": "b88bcf389c1435aba259e45e9c0ec727b97d70e7db7725cf96f1e14711dac188",
+  "input_source_log": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-07-checks/institution-v3-62397727.log",
+  "preview_log": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-07-checks/institution-preview-v3-62398442.log",
+  "preview_release": "data/.staging/gsd-0407-institution-62398442/preview/releases/0b4d541eb39b4e8289deb782fe824897",
+  "renderer_version": 29,
+  "files_sha256": {
+    "manifest.json": "67263f7d1eb425d406a0da701b9abbe044bc669581b3d7c295b692bb385d5455",
+    "records.json": "b8cfaafa770b76069faf4c5bc1a1bd549e255ae42fc973fce359819e345462a2",
+    "records.sqlite3": "f8ff70acc3a7d09302dfbc428b93d3c6a54496d9eb5c741575bb3a6b58cd4836",
+    "index.html": "a874ba31a800f568c766f3e49175341dea58c65cffc5d3b3e40aa06c99bea32d"
+  },
+  "current_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "verification": "Input ve kaynak denetimleri 62397727; preview, SQLite/JSON, iki HTML görünümü ve bağımsız audit 62398442, exit 0. Yalıtılmış çıktı; kanonik yayın yapılmadı.",
+  "coverage": "610 kapsam hücresi açık; closure yok. İlk dar zincir parti planının tamamı değildir."
+}
