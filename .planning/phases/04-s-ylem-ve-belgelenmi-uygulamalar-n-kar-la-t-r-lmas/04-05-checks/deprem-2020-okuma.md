@@ -63,3 +63,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 48–52 de okundu: arama-kurtarma araçları, AKUT lojistiği ve deprem anı davranışı üzerine karşılıklı sorular ve kişisel beyanlar yer alır. İhtilaflı veya teknik değerlendirmeler bağımsız doğrulanmış sonuç olarak alınmaz; TİP’e atfedilmez. İndeks 53–154 açık.
 
 9 Aralık toplantısı PDF indeks 53–57 de okundu: AKUT sunumundan sonra Sağlık Bakanlığı Acil Sağlık Hizmetleri Genel Müdürü Semih Korkut’un davet ve sunumu başlar; afet planı, personel ve UMKE üzerine kendi kurumsal beyanlarını aktarır. Bu somut bakanlık yetkilisinin dinlenmesini gösterir; sağlık emekçilerinin bağımsız veya sendikal temsiline ve Baş’ın talebinin karşılandığına eşitlenmez. İndeks 58–154 açık.
+
+9 Aralık toplantısı PDF indeks 58–62 de okundu: Bakanlık sunumu kapanır, Bedri Yaşar ve Müzeyyen Şevkin soru sorar; sağlık yetkilileri kapasite, afet planı ve tesis yatırımları hakkında yanıt verir. Hedefler gerçekleşme olarak alınmaz; sağlık yetkililerinin katılımı, sağlık çalışanlarının bağımsız veya sendikal temsili ile eşitlenmez. İndeks 63–154 açık.
