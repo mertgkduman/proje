@@ -271,3 +271,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 380–384 metin katmanı okundu: afet ve imar kanunlarının dönemsel eksikleri, görev çakışması ve DASK kapsamına ilişkin komisyon değerlendirmeleri var. Bunlar güncel mevzuat, gerçekleşmiş düzenleme veya partinin pozisyonu sayılmadı; indeks 385 ve sonrası açık.
 
 - 2021 raporu indeks 385–389 metin katmanı okundu: mevzuatın uygulanmasındaki komisyon tespitleri, 2020 idari yazı ve eski/yeni afet kurulları anlatılır. Yazı, Baş’ın çağrısına nedensel yanıt olarak gösterilmedi; komisyonun üst kurul önerisi uygulanmış karar sayılmadı. İndeks 390 ve sonrası açık.
+
+- 2021 raporu indeks 390–394 metin katmanı okundu: AFAD ve kurumlar arası koordinasyonun komisyon değerlendirmesi ve kamu-özel iş birliği önerileri yer alır. Kurumsal değerlendirme ve öneriler TİP’in talebine nedensel yanıt ya da gerçekleşmiş sonuç sayılmadı; indeks 395 ve sonrası açık.
