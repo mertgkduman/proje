@@ -1,0 +1,7 @@
+# Demokrat Parti kongresinde kurul seçimleri ve sonraki açıklamalar
+
+Ankara Masası’nın 17 Kasım 2024 tarihli haberi, genel başkanlık seçimini izleyen Genel İdare Kurulu, Merkez Karar Kurulu ve Yüksek Haysiyet Divanı seçimlerini ayrı veriyor. Haberde GİK listesi 50, MKK listesi 70, Yüksek Haysiyet Divanı listesi 21 kişi olarak bildiriliyor. 2022 arşivli tüzükte MKK 70 seçilen üye ve genel başkan, GİK 50 asıl ve 25 yedek üye ile genel başkandan oluşuyor. Haber listesi ve tüzük bileşimi bu sınırla karşılaştırılabilir. Seçim tutanağı ve yedek liste açık. [Kurul seçimi haberi](https://www.ankaramasasi.com.tr/haber/2162189/demokrat-parti-de-77-kisiye-yeni-gorev-verilirken-43-isim-yerini-korudu)
+
+Karar’a konuşan İlay Aksoy 60 imza topladığını ve 11 imzanın baskıyla geri çektirildiğini ileri sürdü. Bunlar Aksoy’un beyanı olarak saklandı. Divan açıklaması, yazılı imza listesi ve varsa adaylık itirazının resmi sonucu ayrı kaynak aramalarıdır. [Karar görüşmesi](https://www.karar.com/guncel-haberler/kongrede-adayligi-dusurulen-ilay-aksoy-istifa-etmeyecegim-1909918)
+
+TRT Haber’in 18 Kasım 2024 tarihli AA aktarımı, Cemal Enginyurt ve Salih Uzun’un ayrılma açıklamalarını bildiriyor. Cumhuriyet’in 19 Kasım haberi olaydan sonraki ayrı yayındır. Açıklama, parti sicilinden çıkış günü veya yeni partiye geçiş günü olarak kullanılmadı. [TRT Haber](https://www.trthaber.com/haber/gundem/demokrat-partiden-2-istifa-888663.html)
