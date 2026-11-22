@@ -379,3 +379,7 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - Aynı görüşmenin normalize metninde 458500–468000 okundu: Demir'in konuşması biter; AK Parti adına Necip Nasır İzmir, dönüşüm ve komisyon finansman önerilerini anlatır. Sayılar, hedefler ve siyasi değerlendirmeler ilgili konuşmacıya atfedildi; öneriler gerçekleşmiş sonuç sayılmadı. Konum 468000 sonrası açık.
 
 - Aynı görüşmenin normalize metninde 411000–420500 okundu: Karasu'nun barınma, dönüşüm ve eğitim önerileri biter; CHP adına Kamil Okyay Sındır, komisyonu ve İzmir'deki proje alanlarına ilişkin bakanlık yanıtlarını anlatmaya başlar. Beyanlar ve aktarılan yanıtlar ilgili kaynak ve aktörlere aittir; TİP sonucu sayılmaz. Konum 420500 sonrası açık.
+
+- Aynı görüşmenin normalize metninde 468000–477500 okundu: Nasır dönüşüm finansmanı hakkındaki önerilerini tamamlar; AK Parti adına Selahattin Minsolmaz afet yönetimi ve kentleşme hakkındaki değerlendirmelerini sunar. Görüşler ve sayılar konuşmacılarına atfedildi; TİP uygulaması veya doğrulanmış sonuç sayılmadı.
+
+- 477500–488600 okundu: Minsolmaz konuşmasını tamamlar; AK Parti adına İlyas Şeker rapor ve kentsel dönüşüm hakkındaki değerlendirmelerini sunar. Başkan genel görüşmenin tamamlandığını bildirip birleşimi kapatır. Bu beyanlar kendi sahiplerine aittir; TİP etkisi veya önerilerin gerçekleştiği çıkarımı yapılmadı. Deprem raporu görüşmesinin kaydedilen 268500–488600 aralığı okundu; tutanağın görüşme dışındaki önceki bölümleri bu okumayla kapsanmadı.
