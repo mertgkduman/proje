@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 4
 status: executing
-stopped_at: Completed 04-03-PLAN.md; wave post checks pending
-last_updated: "2026-11-21T17:52:58.250Z"
-last_activity: 2026-11-21
-last_activity_desc: Phase 04 plan 04-03 completed; wave post checks pending
-state_head: 5c2d566748ad225569685f0733a359c48fc621f7
+stopped_at: Wave 4 source research and isolated previews in progress
+last_updated: "2026-11-22T03:49:52.120Z"
+last_activity: 2026-11-22
+last_activity_desc: Phase 04 wave 4 research and package verification in progress
+state_head: d3f6287208cf5397716d45325d67ee64557fb39c
 progress:
   total_phases: 6
   completed_phases: 3
@@ -32,10 +32,12 @@ Current Plan: 4
 Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
-Status: Plan 04-03 complete; wave post checks pending
-Last activity: 2026-11-21 — 287 regression tests, tracer and phase 2/3 audits verified; 04-03 complete
+Status: 04-04, 04-05 ve 04-06 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
+Last activity: 2026-11-22 UTC — Yeni Parti 106 olay ve 108 ilişkiyle ara önizlemede doğrulandı. TİP ve DEM Parti için ilk kaynaklı zincirler ayrı denetleniyor.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
+
+Dalga 4 devam kaydı: [kaynak taraması ve doğrulama durumu](phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-reading-progress.md).
 
 ## Performance Metrics
 
