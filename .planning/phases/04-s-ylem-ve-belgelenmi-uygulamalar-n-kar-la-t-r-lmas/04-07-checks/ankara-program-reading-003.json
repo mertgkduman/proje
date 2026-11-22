@@ -1,0 +1,35 @@
+{
+  "version_id": "0205-iyi-program-page-v1",
+  "sha256": "7165cd05b2643134a6a8fc4910f312915c59c52a31561ec6f657d89f2a493f9a",
+  "read_at": "2026-11-22T05:20:52+00:00",
+  "extracted_character_range": [
+    84000,
+    125975
+  ],
+  "method": "Python HTMLParser; script, style, nav, footer, header dışlanır; metin parçaları boşlukla birleştirilir.",
+  "findings": [
+    {
+      "range": [
+        84000,
+        98000
+      ],
+      "note": "Orman, maden, enerji ve ulaştırma önerileri; sağlık başlangıcı."
+    },
+    {
+      "range": [
+        98000,
+        112000
+      ],
+      "note": "Sağlık ve turizm önerileri."
+    },
+    {
+      "range": [
+        112000,
+        125975
+      ],
+      "note": "Turizm, sendika hakları, dış politika, AB ilişkileri ve sayısal hedefler."
+    }
+  ],
+  "limitation": "Ankara il teşkilatının HTML metninde kabul ve son değişiklik tarihi belirtilmiyor; 2026 yakalamasının tamamı kesim içinde yürürlükte varsayılamaz.",
+  "processed_at": "2026-11-22T05:20:52+00:00"
+}
