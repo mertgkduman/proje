@@ -4045,7 +4045,18 @@
           "inventory-1ee6839e5995d1c2eebb850d3efba6c2a688857307b715ec9b3712832dc76cde"
         ],
         "note": "İlgili kurucu kaynak bölümleri toplu okundu; bu yalnız kaynak bağlamı okumasıdır, olay araması veya kapsam kapanışı değildir."
-      }
+      },
+      "body_reading_followups": [
+        {
+          "mapped_at": "2026-11-22T02:07:22.255604+00:00",
+          "status": "candidate_only_no_closure",
+          "note": "Parti ile dernek arasında bildirilen protokol, sivil toplum ilişkileri için iz; anlaşma kapsamı bilinmiyor.",
+          "references": [
+            ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/party-api-025-reading.json",
+            ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/sdd-protocol-source-draft.json"
+          ]
+        }
+      ]
     },
     {
       "tranche_id": "scope-153",
@@ -10696,7 +10707,19 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "body_reading_followups": [
+        {
+          "mapped_at": "2026-11-22T02:07:22.255713+00:00",
+          "status": "candidate_only_no_closure",
+          "note": "YSK parti temsilciliği başvurusunun kabul edildiği haber ve parti açıklaması aday izi; bu envanter başlığının kapsamı ve kaynağı ayrıca eşlenmeli, seçim kurulu yetkileri varsayılmamalı.",
+          "references": [
+            ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/party-api-054-reading.json",
+            ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/ysk-representative-reading.json",
+            ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/ysk-representative-source-draft.json"
+          ]
+        }
+      ]
     },
     {
       "tranche_id": "scope-419",
@@ -12355,7 +12378,18 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "body_reading_followups": [
+        {
+          "mapped_at": "2026-11-22T02:07:22.255757+00:00",
+          "status": "candidate_only_no_closure",
+          "note": "Sivil toplum ilişkileri için aynı protokolün aday izi; bu genişletme başlığının parti temel kaynağı ayrıca incelenmeli.",
+          "references": [
+            ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/party-api-025-reading.json",
+            ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/sdd-protocol-source-draft.json"
+          ]
+        }
+      ]
     },
     {
       "tranche_id": "scope-517",
