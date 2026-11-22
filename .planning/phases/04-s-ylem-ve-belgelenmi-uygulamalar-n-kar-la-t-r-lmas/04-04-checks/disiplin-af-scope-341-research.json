@@ -2619,5 +2619,30 @@
     "reading": "Güncel yayın menüsünde Tüzük kategorisi var; Tüzük kategori yanıtında tek belge /uploads/yayinlar/yayin-1794902310469-811605043.pdf ve tarih alanı 2026-11-17T10:58:30.700Z. Bu PDF özgün SHA a46c73ad… ile önceden korunmuş.",
     "limitations": "Mevcut liste geçmişteki sürümlerin yokluğunu kanıtlamaz. API tarih alanının yayın veya oluşturma anlamı ayrıca doğrulanmadı. PDF ve kategori tarihi kesim sonrası olduğundan 10 Kasım tarihli karar veya ara sürüm olarak kullanılamaz.",
     "status": "open"
+  },
+  "targeted_actor_disambiguation": {
+    "searched_at": "2026-11-22T04:13:10.771467+00:00",
+    "queries": [
+      "\"Özgür Özel\" \"disiplin cezalarının bağışlanması\"",
+      "\"YENİ Parti\" \"disiplin\" \"bağışlanması\" \"2026\"",
+      "\"YENİ Parti\" \"disiplin cezası\" \"affı\" parti meclisi",
+      "\"Yeni Parti\" \"disiplin\" \"af\" \"tüzük\" kasım"
+    ],
+    "examined_results": [
+      {
+        "url": "https://aglihaber.com.tr/chp-tbb-baskan-vekilligi-seciminde-yeni-parti-adayi-unluceyi-destekleyecek/",
+        "reading": "21 Ekim ANKA/Nurcan Bayram haberinde disiplin affı bağlamı Müslim Sarı’nın CHP MYK ve CHP Parti Meclisi açıklamasıdır; başlıktaki Yeni Parti adayı başka konudadır. Yeni Parti uygulaması değildir."
+      },
+      {
+        "url": "https://gaziantep-nizip.chp.org.tr/haberler/muslim-sari-myk-ve-pm-kararlarini-acikladi",
+        "reading": "CHP yerel sitesinde Müslim Sarı açıklamasında Yeni Parti belediye aidiyeti tartışması yer alır; kaynak metnini Yeni Parti kurulu işlemi veya tüzük değişikliği saymak için dayanak yoktur."
+      },
+      {
+        "url": "https://duyuru.tr/p/i/?a=normal&cid=1791893997097716&idMax=1794400471284261&rid=6a3594b5e0566&search=author%3A%22mehmet.efe.altay%22&sort=rand&state=3",
+        "reading": "9 Kasım ANKA aktarması PM ve etik kurulu anlatır; tam kurul kararı veya madde 52 sürümü değildir."
+      }
+    ],
+    "status": "open",
+    "limitation": "Gözlenen arama sonuçları sınırlıdır; diğer kaynaklarda söylem veya karar yokluğu iddia edilmez."
   }
 }
