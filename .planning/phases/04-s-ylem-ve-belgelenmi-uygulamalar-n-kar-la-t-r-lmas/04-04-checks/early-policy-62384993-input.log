@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0404-early-policy-n7e_yr2y/src/arsiv.py", line 3663, in <module>
+    main()
+  File "/tmp/gsd-0404-early-policy-n7e_yr2y/src/arsiv.py", line 3575, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-early-policy-n7e_yr2y/src/uygulamalar.py", line 1305, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0404-early-policy-n7e_yr2y/src/uygulamalar.py", line 1195, in _load_practice_copy
+    raise ValueError('Uygulama alanları uyuşmuyor')
+ValueError: Uygulama alanları uyuşmuyor
