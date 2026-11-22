@@ -225,3 +225,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 265–269 metin katmanı okundu: belediyelerin strateji belgesi hazırlığı, 2019–2023 hedefleri ve Kartal dönüşümüne ilişkin bakanlık süreç anlatımı bulunuyor. Sayılar/uzlaşma iddiaları kurum kaynağının dönemsel beyanlarıdır; hedefler ve parti katkısı doğrulanmış sonuç sayılmadı. İndeks 270 ve sonrası açık.
 
 - 2021 raporu indeks 270–274 metin katmanı okundu: hazırlık ve KENTGES uygulamaları ile 2011 tarihli UDSEP’in hazırlığı ve eylemleri anlatılır. Önceden var olan planlar Baş’ın 2020 talebinin sonucu veya TİP girişimi olarak gösterilmedi; indeks 275 ve sonrası açık.
+
+- 2021 raporu indeks 275–279 metin katmanı okundu: UDSEP eylem örnekleri, AFAD’ın rapordaki ilerleme değerlendirmesi ve TAMP çözüm ortakları listesi yer alıyor. Afet müdahalesindeki ortaklık, 2020 komisyonunda temsil ya da Baş’ın önerisine nedensel cevapla eşitlenmedi; grafikler görsel olarak incelenmedi. İndeks 280 ve sonrası açık.
