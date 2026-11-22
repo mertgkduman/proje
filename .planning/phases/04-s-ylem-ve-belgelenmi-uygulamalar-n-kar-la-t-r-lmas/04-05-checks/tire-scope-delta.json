@@ -1,0 +1,129 @@
+{
+  "status": "draft_unvalidated",
+  "practice_records": {
+    "practice_scope_v2": [
+      {
+        "id": "practice-82927d667e14701e4d10e48efd6cb87ec8605fa9048669f45479aeab3e612a27",
+        "party_id": "tip",
+        "topic_id": "parti-ici-itiraz",
+        "taxonomy_version": 4,
+        "period_start": "2017-11-07",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "Tüzük hükmü ve Tire açıklamaları okundu; somut itiraz, nihai karar ve bütün dönem uçları araştırılacak."
+      },
+      {
+        "id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "party_id": "tip",
+        "topic_id": "parti-ici-itiraz",
+        "taxonomy_version": 4,
+        "period_start": "2017-11-07",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "Tüzük hükmü ve Tire açıklamaları okundu; somut itiraz, nihai karar ve bütün dönem uçları araştırılacak."
+      }
+    ],
+    "practice_attempt_v2": [
+      {
+        "id": "0405-itiraz-statement-okuma-1",
+        "scope_id": "practice-82927d667e14701e4d10e48efd6cb87ec8605fa9048669f45479aeab3e612a27",
+        "attempted_at": "2026-11-22T04:10:29.838837+00:00",
+        "query": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "result": "examined",
+        "reason": "Tüzük PDF basılı 18. sayfada organ kararına üst organa itiraz hükmü görsel okundu.",
+        "source_version_id": "0203-tip-charter2022-v1"
+      },
+      {
+        "id": "0405-itiraz-event-okuma-1",
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "attempted_at": "2026-11-22T04:10:29.838837+00:00",
+        "query": "https://www.habertire.com/tip-ilce-baskanligi-ali-haydar-ozturku-disipline-sevk-etti",
+        "url": "https://www.habertire.com/tip-ilce-baskanligi-ali-haydar-ozturku-disipline-sevk-etti",
+        "result": "examined",
+        "reason": "İlçe açıklamasında disipline sevk ve geçici tedbir okundu.",
+        "source_version_id": "0405-tip-tire-sevk-v1"
+      },
+      {
+        "id": "0405-itiraz-event-okuma-2",
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "attempted_at": "2026-11-22T04:10:29.838837+00:00",
+        "query": "https://www.habertire.com/tip-tire-ilce-baskanligi-ozturkun-iddialarina-yanit-verdi",
+        "url": "https://www.habertire.com/tip-tire-ilce-baskanligi-ozturkun-iddialarina-yanit-verdi",
+        "result": "examined",
+        "reason": "İlçe açıklamasında istifa ve sevk zamanlamasına ilişkin karşı beyan okundu.",
+        "source_version_id": "0405-tip-tire-yanit-v1"
+      },
+      {
+        "id": "0405-itiraz-event-okuma-3",
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "attempted_at": "2026-11-22T04:10:29.838837+00:00",
+        "query": "https://egeyebakis.com/siyaset/tipin-vekil-adayindan-tipe-agir-elestiri-iktidarin-ekmegine-yag-suren-bir-parti-84934",
+        "url": "https://egeyebakis.com/siyaset/tipin-vekil-adayindan-tipe-agir-elestiri-iktidarin-ekmegine-yag-suren-bir-parti-84934",
+        "result": "examined",
+        "reason": "Kişinin ayrı istifa beyanı ve siyasi gerekçesi okundu.",
+        "source_version_id": "0405-tip-tire-ozturk-v1"
+      }
+    ],
+    "practice_scope_source": [
+      {
+        "scope_id": "practice-82927d667e14701e4d10e48efd6cb87ec8605fa9048669f45479aeab3e612a27",
+        "version_id": "0203-tip-charter2022-v1",
+        "inspected_sections": "[\"Tüzük PDF basılı 18. sayfada organ kararına üst organa itiraz hükmü görsel okundu.\"]",
+        "inspected_at": "2026-11-22T04:10:29.838837+00:00"
+      },
+      {
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "version_id": "0405-tip-tire-sevk-v1",
+        "inspected_sections": "[\"İlçe açıklamasında disipline sevk ve geçici tedbir okundu.\"]",
+        "inspected_at": "2026-11-22T04:10:29.838837+00:00"
+      },
+      {
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "version_id": "0405-tip-tire-yanit-v1",
+        "inspected_sections": "[\"İlçe açıklamasında istifa ve sevk zamanlamasına ilişkin karşı beyan okundu.\"]",
+        "inspected_at": "2026-11-22T04:10:29.838837+00:00"
+      },
+      {
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "version_id": "0405-tip-tire-ozturk-v1",
+        "inspected_sections": "[\"Kişinin ayrı istifa beyanı ve siyasi gerekçesi okundu.\"]",
+        "inspected_at": "2026-11-22T04:10:29.838837+00:00"
+      }
+    ],
+    "practice_lead": [
+      {
+        "id": "lead-0405-itiraz-statement-okuma-1",
+        "scope_id": "practice-82927d667e14701e4d10e48efd6cb87ec8605fa9048669f45479aeab3e612a27",
+        "url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "relevance_reason": "Tüzük PDF basılı 18. sayfada organ kararına üst organa itiraz hükmü görsel okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-itiraz-statement-okuma-1\"]"
+      },
+      {
+        "id": "lead-0405-itiraz-event-okuma-1",
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "url": "https://www.habertire.com/tip-ilce-baskanligi-ali-haydar-ozturku-disipline-sevk-etti",
+        "relevance_reason": "İlçe açıklamasında disipline sevk ve geçici tedbir okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-itiraz-event-okuma-1\"]"
+      },
+      {
+        "id": "lead-0405-itiraz-event-okuma-2",
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "url": "https://www.habertire.com/tip-tire-ilce-baskanligi-ozturkun-iddialarina-yanit-verdi",
+        "relevance_reason": "İlçe açıklamasında istifa ve sevk zamanlamasına ilişkin karşı beyan okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-itiraz-event-okuma-2\"]"
+      },
+      {
+        "id": "lead-0405-itiraz-event-okuma-3",
+        "scope_id": "practice-3d94ea998ea43d135764f73f99e31e85d0b66762ad1802becf4ebd66898eed29",
+        "url": "https://egeyebakis.com/siyaset/tipin-vekil-adayindan-tipe-agir-elestiri-iktidarin-ekmegine-yag-suren-bir-parti-84934",
+        "relevance_reason": "Kişinin ayrı istifa beyanı ve siyasi gerekçesi okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-itiraz-event-okuma-3\"]"
+      }
+    ]
+  }
+}
