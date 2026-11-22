@@ -69,3 +69,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 63–67 de okundu: Korkut afet ve sağlık iletişimi sorularını yanıtlar; üyeler ilk yardım önerir ve başkan Sağlık Bakanlığı yetkililerinin oturumunu kapatır. Bu bölümde katılımcıların sözleri kendi beyanlarıdır. Üç bakanlık yöneticisi oturumu, sağlık emekçileri veya sendikalarının temsiliyle eşitlenmez; kalan PDF indeks 68–154 açıktır.
 
 9 Aralık toplantısı PDF indeks 68–72 de okundu: Emniyet Genel Müdür Yardımcısı Erhan Gülveren’in afet müdahale, trafik ve eğitim planları sunumu başlar. Yetkiliye ait mevcut kapasite ve hedef beyanları ayrı tutulur; bunlar TİP girişimi veya hedeflerin gerçekleşmesi olarak sunulmaz. İndeks 73–154 açık.
+
+9 Aralık toplantısı PDF indeks 73–77 de okundu: emniyet yetkilisinin haberleşme, Elâzığ örneği ve sunum sonrası trafik, personel ve yapı güvenliği sorularına yanıtları bulunur. Anlatılan olay ve sayılar ilgili yetkiliye atfedilir; TİP eylemi veya bağımsız doğrulama olarak kaydedilmedi. İndeks 78–154 açık.
