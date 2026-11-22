@@ -279,3 +279,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 400–404 metin katmanı okundu: yerel katılım ve farkındalık, tatbikat ve öğretim, kamu personeli eğitimi, kırılgan grupların farklı ihtiyaçları komisyon tarafından değerlendirilir. Bunlar TİP'e atfedilmedi; tavsiyeler uygulanmış sayılmadı. İndeks 405–523 ve görseller açık.
 
 - 2021 raporu indeks 405–409 metin katmanı okundu: çocukların psikososyal desteği, iş yeri afet eğitimi, medya, yapısal olmayan riskler, ulaşım ve arama kurtarma kapasitesi değerlendirilir. Eski oranlar ve öneriler güncel durum veya TİP'in sonucu olarak aktarılmadı; kaynak komisyon raporudur. İndeks 410–523 ve görseller açık.
+
+- 2021 raporu indeks 410–414 metin katmanı okundu: afet iletişimi, güvenlik ve dördüncü bölümde daimi deprem komisyonu ve veri yönetimi önerileri yer alıyor. Bunlar partiye, uygulamaya veya 2020 talebine nedensel yanıt olarak atfedilmedi. İndeks 415–523 ve görseller açık.
