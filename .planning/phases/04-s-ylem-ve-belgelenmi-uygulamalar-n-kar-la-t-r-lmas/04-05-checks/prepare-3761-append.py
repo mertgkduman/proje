@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0,'src')
 from uygulamalar import practice_review_targets
 p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks');live=Path('data/practices/04-tip.json');rev=Path('data/practices/04-tip-review.json')
+assert hashlib.sha256(Path('data/practices/sources/tip/objects/f41542187d09f436ac0af5be886c417f9fcd983401c6b86d2dfa722fef341e07/readable.html').read_bytes()).hexdigest()=='2374b87000c871c696d85f044150e93507cb443176a0d0b1f10a5e4e84202219'
 assert hashlib.sha256(live.read_bytes()).hexdigest()=='b38b4625cf600a8e035601783840dcfbbc6c51443f3eb666e113c5b43a016547','Aliağa tam kapıdan geçip canlıya alınmamış'
 assert hashlib.sha256(rev.read_bytes()).hexdigest()=='fcf88d34f5737196000201d0373fae78d8708f696529dcc490d46ddd6cf66da2'
 pkg=json.loads(live.read_text());review=json.loads(rev.read_text());now=datetime.now(timezone.utc).isoformat();entries=json.loads((p/'tezkere-3761-source-records.json').read_text())['entries'];records={}
