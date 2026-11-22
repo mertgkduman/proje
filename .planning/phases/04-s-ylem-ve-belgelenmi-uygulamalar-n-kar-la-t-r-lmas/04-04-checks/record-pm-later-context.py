@@ -1,0 +1,6 @@
+import json
+from pathlib import Path
+p=Path('data/practices/04-yeni-parti-tranches.json');q=json.loads(p.read_text())
+q['queries'] += [dict(at='2026-11-21',query=s) for s in ['"Yeni Parti" "9 Kasım" "150" "160" parti meclisi tüzük','"Yeni Parti" "9 Kasım 2026" "160" "150" parti meclisi','"Yeni Parti" "150" "160" "tüzük" "kurucular kurulu" 2026','"Yeni Parti" "9 kasım" "geçici madde 6" "160"']]
+q['candidate_leads'] += [dict(url='https://amidahaber.com/gundem/yeni-parti-kongresi-suruyor-parti-meclis-uyeleri-belli-oldu-240410h',state='source_records_draft',note='Amida Haber/Haber Merkezi 15 Kasım 2026: 9 Kasımda 150’ye çıkma ve kurultayda daha sonra 160’a çıkarılma anlatımı. 21 Kasım HTTP 200 özgün HTML SHA256 9e39001fe4c3df9801eb7a766e8e1e4c3512e077b8261083d11f2e2576f17fa6; 0404-pm-artis-amida-p. Kesim sonrası haber kesim tarihindeki sonucu 160 olarak kanıtlamaz.'),dict(url='https://www.birgun.net/haber/kurulus-kurultayi-nda-ikinci-gun-yeni-parti-de-160-kisilik-parti-meclisi-listesi-delegeden-onay-aldi-746546',state='read_unbound',note='15 Kasım haberinin arama görünümü 9 Kasım 150 ve sonraki 160 artışını ayırıyor. Doğrudan özgün HTML GET HTTP 403; sürüm bağı kurulmadı.')]
+p.write_text(json.dumps(q,ensure_ascii=False,indent=2)+'\n')

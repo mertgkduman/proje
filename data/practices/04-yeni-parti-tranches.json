@@ -14338,6 +14338,22 @@
     {
       "at": "2026-11-21",
       "query": "\"Yeni Parti\" \"üyeliği\" \"disiplin kurulu\" \"2026\" sevk edildi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"9 Kasım\" \"150\" \"160\" parti meclisi tüzük"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"9 Kasım 2026\" \"160\" \"150\" parti meclisi"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"150\" \"160\" \"tüzük\" \"kurucular kurulu\" 2026"
+    },
+    {
+      "at": "2026-11-21",
+      "query": "\"Yeni Parti\" \"9 kasım\" \"geçici madde 6\" \"160\""
     }
   ],
   "source_queue": [
@@ -16569,6 +16585,16 @@
       "url": "https://api.yeni-parti.org.tr/uploads/yayinlar/yayin-1794902310469-811605043.pdf",
       "state": "source_records_draft",
       "note": "Erişilen PDF özgün bayt SHA256 a46c73ade5a7800e3df4a4c3baafc5d4e8d14e077964652cbdda1b6a7c9d0bf0; XMP dönüşümü 16 Kasım 2026, yayın tarihi bilinmiyor. İndeks 137/basılı 138 Geçici Madde 6, 9 Kasım Kurucular Kurulu kararına atıfla 160 asıl ve 30 yedek yazıyor. 9 Kasım haber ve açıklamadaki 150/30 anlatımıyla farklılık açık; kesim sonrası üretilen sürümün aynı ifadesinin kesimde yürürlükte olduğu varsayılamaz. Kesim öncesi karar aslı ve olası sonraki değişiklik izlenmeli."
+    },
+    {
+      "url": "https://amidahaber.com/gundem/yeni-parti-kongresi-suruyor-parti-meclis-uyeleri-belli-oldu-240410h",
+      "state": "source_records_draft",
+      "note": "Amida Haber/Haber Merkezi 15 Kasım 2026: 9 Kasımda 150’ye çıkma ve kurultayda daha sonra 160’a çıkarılma anlatımı. 21 Kasım HTTP 200 özgün HTML SHA256 9e39001fe4c3df9801eb7a766e8e1e4c3512e077b8261083d11f2e2576f17fa6; 0404-pm-artis-amida-p. Kesim sonrası haber kesim tarihindeki sonucu 160 olarak kanıtlamaz."
+    },
+    {
+      "url": "https://www.birgun.net/haber/kurulus-kurultayi-nda-ikinci-gun-yeni-parti-de-160-kisilik-parti-meclisi-listesi-delegeden-onay-aldi-746546",
+      "state": "read_unbound",
+      "note": "15 Kasım haberinin arama görünümü 9 Kasım 150 ve sonraki 160 artışını ayırıyor. Doğrudan özgün HTML GET HTTP 403; sürüm bağı kurulmadı."
     }
   ],
   "foundation_for_party": {
