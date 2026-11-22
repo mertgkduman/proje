@@ -199,3 +199,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 200–204 okundu: sosyal hizmet, enerji ve ulaşım kurumları yapılarına ilişkin yetkili anlatımları ve 2006’da başlayan İSMEP’in okul/hastane çalışmaları raporlanıyor. Bunlar partinin eylemi veya Baş’ın 2020 konuşmasının kanıtlanmış sonucu sayılmadı; indeks 205 ve sonrası açık.
 
 - 2021 raporu indeks 205–209 okundu: İSMEP sonrası petrol/doğalgaz, baraj ve karayolu güvenliğine ilişkin ilgili kurum temsilcisi beyanları aktarılıyor. Kurum güvenlik iddiaları bağımsız doğrulanmadı; TİP faaliyeti olarak sunulmadı. İndeks 210 ve sonrası açık.
+
+- 2021 raporu indeks 210–214 okundu: karayolu, demiryolu, havalimanı ve elektrik dağıtımına dair risk azaltma çalışmaları kurum temsilcilerinin rapordaki beyanlarına dayanır. Beyanlar bağımsızca doğrulanmadı, TİP kaynaklı sayılmadı; indeks 215 ve sonrası açık.
