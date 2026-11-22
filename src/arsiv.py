@@ -3026,8 +3026,13 @@ def audit_release(release='current', _seen=None, *, storage_root=None):
     if exported['schema_version'] >= 4 and any(exported.get(name) for name in DOSSIER_TABLES) and not manifest.get('phase2_delivery'):
         raise ValueError('Dosya kayıtları için Faz 2 teslim manifesti gerekli')
     if manifest.get('phase2_delivery'):
-        expected = (exported['schema_version'],2) if exported['schema_version'] in (5,6,7) else (4,1)
-        valid_renderers=(25,26,27) if exported['schema_version']==7 else ((16,17,18,19,20,21,22,23,24,25,26,27) if exported['schema_version']==6 else ((11,12,13,14,15) if exported['schema_version']==5 else (9,10)))
+        schema_version = exported['schema_version']
+        expected = (schema_version, 2) if schema_version in (5, 6, 7) else (4, 1)
+        valid_renderers = {
+            5: range(11, 16),
+            6: range(16, RENDERER_VERSION + 1),
+            7: range(25, RENDERER_VERSION + 1),
+        }.get(schema_version, range(9, 11))
         if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6,7) and manifest.get('source_policy_version')!=2):
             raise ValueError('Faz 2 manifest sürümleri geçersiz')
         base_folder = safe_path(DATA / 'releases', base_id)
