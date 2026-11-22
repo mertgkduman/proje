@@ -1215,8 +1215,8 @@
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:12:54.256140+00:00",
       "source_version_ids": "[\"0406-tbmm-2025-24-v1\", \"0406-tbmm-103465-detail-v1\"]",
-      "passage_ids": "[\"0406-tbmm-2025-24-speaker-p\", \"0406-tbmm-2025-24-support-p\", \"0406-tbmm-2025-24-media-speech-p\", \"0406-tbmm-2025-24-declined-p\", \"0406-tbmm-103465-detail-number-p\", \"0406-tbmm-103465-detail-received-p\"]",
-      "inspected_sections": "[\"DEM grubu konuşmacısı\", \"Grup adına destek niyeti\", \"Medya ortamına ilişkin grup görüşü\", \"Ön görüşme takvimi sonucu\", \"Resmî esas numarası\", \"Başkanlığa geliş tarihi\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-speaker-p\", \"0406-tbmm-2025-24-support-p\", \"0406-tbmm-2025-24-media-speech-p\", \"0406-tbmm-2025-24-declined-p\", \"0406-tbmm-103465-detail-number-p\", \"0406-tbmm-103465-detail-received-p\", \"0406-tbmm-2025-24-yerel-medya-p\"]",
+      "inspected_sections": "[\"DEM grubu konuşmacısı\", \"Grup adına destek niyeti\", \"Medya ortamına ilişkin grup görüşü\", \"Ön görüşme takvimi sonucu\", \"Resmî esas numarası\", \"Başkanlığa geliş tarihi\", \"Yerel medya ve ilanlar\"]",
       "supported_claim": "Grup konuşması ile takvim sonucunu ayırır.",
       "limitations": "Parti ekinin tarihi ve toplantı kökeni bilinmiyor; bireysel oy veya harcama sonucu kanıtlanmıyor.",
       "result": "reviewed",
@@ -1445,9 +1445,22 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2025-103465-gundem|0406-tbmm-2025-24-yerel-medya-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:28:19.154361+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-yerel-medya-p\"]",
+      "inspected_sections": "[\"Cupolo’nun yerel medya hakkındaki açıklaması\"]",
+      "supported_claim": "Konuşmacı yerel medya ve ilanlara ilişkin görüşünü açıkladı.",
+      "limitations": "İddia konuşmacıya aittir; yerel medya gelirleri bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "TBMM tutanağında Cupolo’nun yerel medya cümlesi okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0406-2025-103464-gundem|0406-tbmm-103464-detail-number-p|initiative",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-22T09:26:42.490301+00:00",
+      "reviewed_at": "2026-11-22T09:28:19.154361+00:00",
       "source_version_ids": "[\"0406-tbmm-103464-detail-v1\"]",
       "passage_ids": "[\"0406-tbmm-103464-detail-number-p\"]",
       "inspected_sections": "[\"Araştırma önergesinin esas numarası\"]",
@@ -1460,7 +1473,7 @@
       "subject_kind": "practice_event_evidence",
       "subject_id": "0406-2025-103464-gundem|0406-tbmm-103464-detail-received-p|initiative",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-22T09:26:42.490301+00:00",
+      "reviewed_at": "2026-11-22T09:28:19.154361+00:00",
       "source_version_ids": "[\"0406-tbmm-103464-detail-v1\"]",
       "passage_ids": "[\"0406-tbmm-103464-detail-received-p\"]",
       "inspected_sections": "[\"Başkanlığa geliş tarihi\"]",
@@ -1473,7 +1486,7 @@
       "subject_kind": "practice_event_evidence",
       "subject_id": "0406-2025-103465-gundem|0406-tbmm-103465-detail-number-p|initiative",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-22T09:26:42.490301+00:00",
+      "reviewed_at": "2026-11-22T09:28:19.154361+00:00",
       "source_version_ids": "[\"0406-tbmm-103465-detail-v1\"]",
       "passage_ids": "[\"0406-tbmm-103465-detail-number-p\"]",
       "inspected_sections": "[\"Araştırma önergesinin esas numarası\"]",
@@ -1486,7 +1499,7 @@
       "subject_kind": "practice_event_evidence",
       "subject_id": "0406-2025-103465-gundem|0406-tbmm-103465-detail-received-p|initiative",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-22T09:26:42.490301+00:00",
+      "reviewed_at": "2026-11-22T09:28:19.154361+00:00",
       "source_version_ids": "[\"0406-tbmm-103465-detail-v1\"]",
       "passage_ids": "[\"0406-tbmm-103465-detail-received-p\"]",
       "inspected_sections": "[\"Başkanlığa geliş tarihi\"]",
@@ -1940,6 +1953,10 @@
     {
       "subject_kind": "practice_candidate",
       "subject_id": "0406-2025-103464-unmatched"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2025-103465-gundem|0406-tbmm-2025-24-yerel-medya-p|initiative"
     },
     {
       "subject_kind": "practice_event_evidence",
