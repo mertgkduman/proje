@@ -119,6 +119,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-gebze-2026-congress-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0410-emep-gebze-2026-news-v1\", \"0410-emep-gebze-2026-party-v1\", \"0410-emep-gebze-2026-plan-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-2026-news-event-p\", \"0410-emep-gebze-2026-party-p\", \"0410-emep-gebze-2026-plan-p\"]",
+      "inspected_sections": "[\"Kongre öncesi duyurulan tarih\", \"Kongrenin gerçekleşmesine ilişkin haber\", \"Partinin kongrenin gerçekleştiğine ilişkin haberi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-gebze-2026-congress-event için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-labor-23163-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:20:33+00:00",
@@ -558,6 +571,45 @@
       "limitations": "Teklif kabulü veya çevresel sonuç kanıtlanmadı; program ara dönem yürürlüğü ayrıca araştırılacak.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-forest-23804-event|0410-emep-forest-23804-register-filed-p|action için özgün program, imzalı teklif ve TBMM kayıt pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-news-event-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0410-emep-gebze-2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-2026-news-event-p\"]",
+      "inspected_sections": "[\"Kongrenin gerçekleşmesine ilişkin haber\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-gebze-2026-congress-event|0410-emep-gebze-2026-news-event-p|action için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-party-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0410-emep-gebze-2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-2026-party-p\"]",
+      "inspected_sections": "[\"Partinin kongrenin gerçekleştiğine ilişkin haberi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-gebze-2026-congress-event|0410-emep-gebze-2026-party-p|initiative için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-plan-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0410-emep-gebze-2026-plan-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-2026-plan-p\"]",
+      "inspected_sections": "[\"Kongre öncesi duyurulan tarih\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-gebze-2026-congress-event|0410-emep-gebze-2026-plan-p|initiative için tüzük ve ilgili yayın pasajları incelendi."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -1094,6 +1146,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-gebze-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-gebze-2026-news-v1\", \"0410-emep-gebze-2026-party-v1\", \"0410-emep-gebze-2026-plan-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-2026-news-event-p\", \"0410-emep-gebze-2026-party-p\", \"0410-emep-gebze-2026-plan-p\", \"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\"]",
+      "inspected_sections": "[\"Kongre öncesi duyurulan tarih\", \"Kongrenin gerçekleşmesine ilişkin haber\", \"Partinin kongrenin gerçekleştiğine ilişkin haberi\", \"İlçe Kongresi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-gebze-2026-congress-relation için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-labor-23163-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:20:33+00:00",
@@ -1364,6 +1429,19 @@
       "limitations": "Teklif kabulü veya çevresel sonuç kanıtlanmadı; program ara dönem yürürlüğü ayrıca araştırılacak.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-forest-23804-relation için özgün program, imzalı teklif ve TBMM kayıt pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-gebze-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-gebze-2026-news-v1\", \"0410-emep-gebze-2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-2026-news-event-p\", \"0410-emep-gebze-2026-party-p\", \"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\"]",
+      "inspected_sections": "[\"Kongrenin gerçekleşmesine ilişkin haber\", \"Partinin kongrenin gerçekleştiğine ilişkin haberi\", \"İlçe Kongresi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-gebze-2026-congress-relation için tüzük ve ilgili yayın pasajları incelendi."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -1731,6 +1809,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-gebze-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\"]",
+      "inspected_sections": "[\"İlçe Kongresi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-gebze-2026-congress-relation için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-labor-23163-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:20:33+00:00",
@@ -1926,6 +2017,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-gebze-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\"]",
+      "inspected_sections": "[\"İlçe Kongresi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-gebze-charter-statement için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-il-disiplin-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -2069,6 +2173,19 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-gebze-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\"]",
+      "inspected_sections": "[\"İlçe Kongresi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-gebze-charter-statement için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-il-disiplin-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -2209,6 +2326,19 @@
       "limitations": "Teklif kabulü veya çevresel sonuç kanıtlanmadı; program ara dönem yürürlüğü ayrıca araştırılacak.",
       "result": "reviewed",
       "reason": "practice_statement.summary_finding_id / 0410-forest-statement için özgün program, imzalı teklif ve TBMM kayıt pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-gebze-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:08:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\"]",
+      "inspected_sections": "[\"İlçe Kongresi\"]",
+      "supported_claim": "İlçe kongresi seçimi tüzükte düzenlenir; Gebze kongresinin yapıldığı haberlerde bildirildi.",
+      "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-gebze-charter-statement için tüzük ve ilgili yayın pasajları incelendi."
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
@@ -2367,6 +2497,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-gebze-2026-congress-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-labor-23163-event"
     },
     {
@@ -2500,6 +2634,18 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-forest-23804-event|0410-emep-forest-23804-register-filed-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-news-event-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-party-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-plan-p|initiative"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2667,6 +2813,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-labor-23163-relation"
     },
     {
@@ -2751,6 +2901,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-labor-23163-relation"
     },
     {
@@ -2863,6 +3017,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-labor-23163-relation"
     },
     {
@@ -2923,6 +3081,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-gebze-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-il-disiplin-statement"
     },
     {
@@ -2967,6 +3129,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-gebze-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-il-disiplin-statement"
     },
     {
@@ -3008,6 +3174,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-forest-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-gebze-charter-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
