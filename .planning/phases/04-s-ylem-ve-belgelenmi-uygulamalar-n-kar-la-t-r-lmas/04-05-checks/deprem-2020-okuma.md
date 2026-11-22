@@ -319,3 +319,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 500–504 metin katmanı okundu: kaynakçada resmî yayın, kurum yazıları, akademik yayın ve çevrimiçi bağlantılar listeleniyor. Liste bu kaynakların içeriğinin ayrıca incelendiğini göstermez; İHH bilgi notu kaydı bağımsız sağlık örgütlerinin temsilini kanıtlamaz. İndeks 505–523 ve görseller açık.
 
 - 2021 raporu indeks 505–509 metin katmanı okundu: kaynakçada Sağlık Bakanlığı bilgi notu, AFAD kaynakları ve diğer yayınlar; eklerde 2012–2020 UDAP proje listesi ve 6306 sayılı Kanun değişiklik tablosu yer alır. Resmî sağlık idaresi kaydı bağımsız sağlık örgütünün komisyon sunumu değildir; listeler güncel mevzuat teyidi sayılmaz. İndeks 510–523 ve görseller açık.
+
+- 2021 raporu indeks 510–514 metin katmanı okundu: 6306 uygulama yönetmeliğinin eski değişiklik tarihleri, Bakanlığın 2020 tarihli yanıtından il bazında riskli yapı verileri ve belediye strateji belgelerine ilişkin dönemsel özetler bulunuyor. Bunlar güncel veri veya tüm güncel belediye uygulamalarının kanıtı değildir. İndeks 515–523 ve görseller açık.
