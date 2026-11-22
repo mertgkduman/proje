@@ -1,0 +1,7 @@
+# 28. dönem 2/2702: ortak belediye kanunu teklifi
+
+TBMM'ye 21 Kasım 2024'te gelen ve İçişleri Komisyonuna aynı gün giren teklifin özgün 19 sayfası okundu. PDF SHA-256 `e93cb7661e77554c101ac3b6105a92b15c9a179c85b54f63a646ffff2390a787`; kaynak ve erişim zamanı `tbmm-282702-capture.json` dosyasındadır. İndeks 0 CHP Grup Başkanlığının sunuş yazısı, 10 Emek Partisinden iki milletvekilinin imzası, 11 TİP'ten Erkan Baş, Sera Kadıgil ve Ahmet Şık imzalarıdır. İndeks 14–17 gerekçeler ve 18 teklif metnidir. Teklif 5393 sayılı Belediye Kanunu'nun 45. maddesinin ikinci fıkrasını yürürlükten kaldırmayı öngörür; gerekçedeki hukuki ve siyasi değerlendirmeler teklif sahiplerine aittir.
+
+TBMM ayrıntı sayfası `282702-detail-capture.json` ile özgün baytları ve pasif görünümü korunarak 22 Kasım 2026'da alındı. Kayıtta Baş dahil birden çok kişi “İlk İmza Sahibi” olarak listelenir. Baş tek ilk imza sahibi veya CHP grup sunuşunun tek sahibi değildir. Sayfa erişim anında “komisyonda” ve sonuç alanı boş görünür; bu bilgi tek başına 10 Kasım 2026 yöntem kesimi anındaki durumu kanıtlamaz. Komisyona 21 Kasım 2024 girişinin ötesinde sonuç saptanmadı; teklifin kabulü, yürürlüğe girmesi veya hedeflenen sonucun gerçekleşmesi ileri sürülmez.
+
+Önerilen ortak olay kimliği `tbmm-28-3-2-2702-belediye-45`; Yeni Parti/EMEP araştırmasıyla paylaşıldı. Kapsam ve parti programı ile tarihli söylem eşleşmesi, her imzacının olay tarihindeki yetkisi, tam source review ve izole input/source/preview/audit kapıları henüz tamamlanmadı. Bu dosya yeni bir canlı uygulama kaydı veya kapanış değildir.
