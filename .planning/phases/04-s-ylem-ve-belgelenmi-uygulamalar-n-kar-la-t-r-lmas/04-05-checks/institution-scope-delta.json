@@ -1,0 +1,105 @@
+{
+  "status": "draft_unvalidated",
+  "practice_records": {
+    "practice_scope_v2": [
+      {
+        "id": "practice-790d1ab12c7f291d5df82b3dd6e1d03f247681ee85698aaa824008091187e3d8",
+        "party_id": "tip",
+        "topic_id": "ic-tartisma-elestiri",
+        "taxonomy_version": 4,
+        "period_start": "2017-11-07",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "Seçili tüzük ve çekişmeli olay kaynakları okundu; bütün dönem ve kalan ilgili uçlar araştırılacak."
+      },
+      {
+        "id": "practice-42359551432bcfebfb326a8af81be25948972b2501b62caa45708a083cdc3463",
+        "party_id": "tip",
+        "topic_id": "ic-tartisma-elestiri",
+        "taxonomy_version": 4,
+        "period_start": "2017-11-07",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "Seçili tüzük ve çekişmeli olay kaynakları okundu; bütün dönem ve kalan ilgili uçlar araştırılacak."
+      }
+    ],
+    "practice_attempt_v2": [
+      {
+        "id": "0405-tartisma-statement-okuma-1",
+        "scope_id": "practice-790d1ab12c7f291d5df82b3dd6e1d03f247681ee85698aaa824008091187e3d8",
+        "attempted_at": "2026-11-22T04:06:08.751185+00:00",
+        "query": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "result": "examined",
+        "reason": "Tüzük PDF basılı 18–19. sayfalarda organlarda tartışma, karar uygulaması ve kamusal açıklama sınırı görsel okundu.",
+        "source_version_id": "0203-tip-charter2022-v1"
+      },
+      {
+        "id": "0405-tartisma-event-okuma-1",
+        "scope_id": "practice-42359551432bcfebfb326a8af81be25948972b2501b62caa45708a083cdc3463",
+        "attempted_at": "2026-11-22T04:06:08.751185+00:00",
+        "query": "https://www.cumhuriyet.com.tr/siyaset/tipin-uc-il-yonetimi-istifa-etti-statukocu-bir-anlayisla-yol-2229384",
+        "url": "https://www.cumhuriyet.com.tr/siyaset/tipin-uc-il-yonetimi-istifa-etti-statukocu-bir-anlayisla-yol-2229384",
+        "result": "examined",
+        "reason": "Açıklama, eleştiriler ve partinin üyelik ve görev durumuna karşı cevabı okundu.",
+        "source_version_id": "0405-tip-istifa-cumhuriyet-v1"
+      },
+      {
+        "id": "0405-tartisma-event-okuma-2",
+        "scope_id": "practice-42359551432bcfebfb326a8af81be25948972b2501b62caa45708a083cdc3463",
+        "attempted_at": "2026-11-22T04:06:08.751185+00:00",
+        "query": "https://cagdassamsun.com/kose-yazilari/umit_ozcelik_tipnin_seni_26_haziranda_ihrac_etmedigini_ispatla_-238",
+        "url": "https://cagdassamsun.com/kose-yazilari/umit_ozcelik_tipnin_seni_26_haziranda_ihrac_etmedigini_ispatla_-238",
+        "result": "examined",
+        "reason": "Gazetecinin sonraki yazısı ve kişinin ihraç edilmediği yönündeki cevabı okundu.",
+        "source_version_id": "0405-tip-gazeteci-yanit-v1"
+      }
+    ],
+    "practice_scope_source": [
+      {
+        "scope_id": "practice-790d1ab12c7f291d5df82b3dd6e1d03f247681ee85698aaa824008091187e3d8",
+        "version_id": "0203-tip-charter2022-v1",
+        "inspected_sections": "[\"Tüzük PDF basılı 18–19. sayfalarda organlarda tartışma, karar uygulaması ve kamusal açıklama sınırı görsel okundu.\"]",
+        "inspected_at": "2026-11-22T04:06:08.751185+00:00"
+      },
+      {
+        "scope_id": "practice-42359551432bcfebfb326a8af81be25948972b2501b62caa45708a083cdc3463",
+        "version_id": "0405-tip-istifa-cumhuriyet-v1",
+        "inspected_sections": "[\"Açıklama, eleştiriler ve partinin üyelik ve görev durumuna karşı cevabı okundu.\"]",
+        "inspected_at": "2026-11-22T04:06:08.751185+00:00"
+      },
+      {
+        "scope_id": "practice-42359551432bcfebfb326a8af81be25948972b2501b62caa45708a083cdc3463",
+        "version_id": "0405-tip-gazeteci-yanit-v1",
+        "inspected_sections": "[\"Gazetecinin sonraki yazısı ve kişinin ihraç edilmediği yönündeki cevabı okundu.\"]",
+        "inspected_at": "2026-11-22T04:06:08.751185+00:00"
+      }
+    ],
+    "practice_lead": [
+      {
+        "id": "lead-0405-tartisma-statement-okuma-1",
+        "scope_id": "practice-790d1ab12c7f291d5df82b3dd6e1d03f247681ee85698aaa824008091187e3d8",
+        "url": "https://tip.org.tr/wp-content/uploads/2022/06/Tu%CC%88rkiye-I%CC%87s%CC%A7c%CC%A7i-Partisi-Tu%CC%88zu%CC%88k-2022.pdf",
+        "relevance_reason": "Tüzük PDF basılı 18–19. sayfalarda organlarda tartışma, karar uygulaması ve kamusal açıklama sınırı görsel okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-tartisma-statement-okuma-1\"]"
+      },
+      {
+        "id": "lead-0405-tartisma-event-okuma-1",
+        "scope_id": "practice-42359551432bcfebfb326a8af81be25948972b2501b62caa45708a083cdc3463",
+        "url": "https://www.cumhuriyet.com.tr/siyaset/tipin-uc-il-yonetimi-istifa-etti-statukocu-bir-anlayisla-yol-2229384",
+        "relevance_reason": "Açıklama, eleştiriler ve partinin üyelik ve görev durumuna karşı cevabı okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-tartisma-event-okuma-1\"]"
+      },
+      {
+        "id": "lead-0405-tartisma-event-okuma-2",
+        "scope_id": "practice-42359551432bcfebfb326a8af81be25948972b2501b62caa45708a083cdc3463",
+        "url": "https://cagdassamsun.com/kose-yazilari/umit_ozcelik_tipnin_seni_26_haziranda_ihrac_etmedigini_ispatla_-238",
+        "relevance_reason": "Gazetecinin sonraki yazısı ve kişinin ihraç edilmediği yönündeki cevabı okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-tartisma-event-okuma-2\"]"
+      }
+    ]
+  }
+}
