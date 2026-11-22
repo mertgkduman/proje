@@ -1053,7 +1053,8 @@ def load_practice(work, payload):
 
 
 def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherited_review_pending=False):
-    from arsiv import DATA, connect, validate_phase_one_workspace, aware_time, check_attempt, check_missing, safe_url, validate_view
+    from arsiv import (DATA, aware_time, check_attempt, check_missing, connect, pdf_page_text, safe_path,
+                       safe_url, validate_phase_one_workspace, validate_view)
     if payload.get('base_release') != base or payload.get('contract_version') != 1 or payload.get('stage') not in ('tracer', 'partial', 'complete') or payload.get('taxonomy_version') != 4:
         raise ValueError('Uygulama paketi veya tabanı geçersiz')
     if len(payload.get('practice_records', {}).get('practice_contract', [])) != 1 or payload['practice_records']['practice_contract'][0].get('stage') != payload['stage']:
@@ -1078,9 +1079,12 @@ def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherit
         new_review_passages = set()
         new_review_subjects = set()
         input_findings = {entry['values']['id'] for entry in payload['entries'] if entry.get('kind') == 'finding' and isinstance(entry.get('values'), dict) and entry['values'].get('id')}
+        actor_person_ids = {entry['values'].get('person_id') for entry in payload['entries']
+                            if entry.get('kind') == 'actor' and isinstance(entry.get('values'), dict)}
+        added_passages = set()
         for entry in payload['entries']:
             kind, values = entry['kind'], entry['values']
-            if kind not in ('document', 'document_version', 'archive_view', 'passage', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing') or not values:
+            if kind not in ('document', 'document_version', 'archive_view', 'passage', 'manual_passage', 'person', 'actor', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing') or not values:
                 raise ValueError('Uygulama girdi türü geçersiz')
             if payload.get('party_id') is not None and values.get('party_id') is not None and values['party_id'] != payload['party_id']:
                 raise ValueError('Parti paketi başka partinin kaydını ekleyemez')
@@ -1112,6 +1116,38 @@ def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherit
                 if values.get('subject_id') not in input_findings or not values.get('reason'):
                     raise ValueError('İnceleme yeni bir bulguya ve gerekçeye bağlı olmalı')
                 aware_time(values.get('reviewed_at'))
+            if kind == 'person' and (values.get('id') not in actor_person_ids or
+                                     not isinstance(values.get('name'), str) or not values['name'].strip()):
+                raise ValueError('Kişi kaydı paket aktörüne ve ada bağlı olmalı')
+            if kind == 'actor':
+                role, person, authority = (values.get(key) for key in ('kind', 'person_id', 'authorization_passage_id'))
+                if (role not in ('institution', 'authorized_representative', 'individual_mp') or
+                        (role == 'institution' and (person or authority)) or
+                        (role != 'institution' and not person) or
+                        (role == 'authorized_representative' and not authority)):
+                    raise ValueError('Aktör türü, kişi veya yetki kaydı geçersiz')
+            if kind == 'manual_passage':
+                passage_id = values.get('passage_id')
+                if passage_id not in added_passages:
+                    raise ValueError('Elle doğrulama yeni paket pasajına bağlı olmalı')
+                if any(not isinstance(values.get(key), str) or not values[key].strip() for key in ('method', 'reason')):
+                    raise ValueError('Elle doğrulama yöntemi veya gerekçesi eksik')
+                aware_time(values.get('checked_at'))
+                passage = db.execute(
+                    'SELECT p.pdf_page_index, p.exact, v.mime, v.original_path FROM passage p '
+                    'JOIN document_version v ON v.id=p.version_id WHERE p.id=?', (passage_id,)).fetchone()
+                page = passage['pdf_page_index']
+                if passage['mime'] != 'application/pdf' or page is None or page < 0:
+                    raise ValueError('Elle doğrulama için PDF sayfası gerekli')
+                original = safe_path(DATA if storage_root is None else storage_root, passage['original_path'])
+                try:
+                    text = pdf_page_text(original, page)
+                except ValueError as exc:
+                    if str(exc) != 'PDF sayfasında metin bulunamadı':
+                        raise
+                    text = ''
+                if text.strip() and passage['exact'] not in text:
+                    raise ValueError('Elle doğrulanan pasaj PDF metniyle uyuşmuyor')
             cols = {x['name'] for x in db.execute(f'PRAGMA table_info({kind})')}
             if not set(values) <= cols:
                 raise ValueError('Bilinmeyen alan')
@@ -1123,6 +1159,8 @@ def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherit
                         raise ValueError('Önceki kayıt değiştirilemez')
                     continue
             db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
+            if kind == 'passage':
+                added_passages.add(values['id'])
             if kind == 'finding_evidence':
                 new_review_passages.add(values['passage_id'])
             if kind == 'document_version':
@@ -1536,7 +1574,7 @@ def _render_practice_preview(payload, out, inventory=None, base_release='current
         if merge_roots_by_entry:
             import copy
             payload = copy.deepcopy(payload)
-            order = {kind: index for index, kind in enumerate(('document', 'document_version', 'archive_view', 'passage', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing'))}
+            order = {kind: index for index, kind in enumerate(('document', 'document_version', 'archive_view', 'passage', 'manual_passage', 'person', 'actor', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing'))}
             payload['entries'].sort(key=lambda item: order[item['kind']])
         _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
         data = arsiv.export_db(work / 'records.sqlite3', release, strict_identity=True, storage_root=preview_root)

@@ -2829,11 +2829,11 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
             path = safe_path(storage_root, v['original_path'])
             if path.name == 'original.pdf':
                 if p['pdf_page_index'] is None or p['pdf_page_index'] < 0: raise ValueError('PDF sayfa indeksi gerekli')
-                content = pdf_page_text(path, p['pdf_page_index'])
                 manual = next((m for m in result.get('manual_passage', []) if m['passage_id'] == p['id']), None)
                 if manual:
                     if not manual['checked_at'] or not manual['method'] or not manual['reason'] or not pdf_page_exists(path, p['pdf_page_index']): raise ValueError('PDF elle doğrulama kaydı geçersiz')
                     continue
+                content = pdf_page_text(path, p['pdf_page_index'])
             else:
                 raw=path.read_bytes()
                 content=html_source_text(raw)

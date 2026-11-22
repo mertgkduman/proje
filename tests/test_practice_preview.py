@@ -73,6 +73,58 @@ class PracticePreview(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'parti sahibine'):
                     uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
 
+    def test_practice_accepts_party_actor_and_rejects_unattached_person(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('uygulamalar.migrate_practice_workspace'):
+            root = Path(tmp)
+            with sqlite3.connect(root / 'records.sqlite3') as db:
+                db.executescript('CREATE TABLE person(id TEXT PRIMARY KEY,name TEXT NOT NULL);'
+                                 'CREATE TABLE actor(id TEXT PRIMARY KEY,kind TEXT,party_id TEXT,'
+                                 'person_id TEXT,authorization_passage_id TEXT);')
+            scope = []
+            actor = dict(id='dem-actor', kind='institution', party_id='dem',
+                         person_id=None, authorization_passage_id=None)
+            package = dict(base_release='base', contract_version=1, stage='tracer', taxonomy_version=4,
+                           party_id='dem', scope_inventory=scope, entries=[dict(kind='actor', values=actor)],
+                           practice_records=dict(practice_contract=[dict(stage='tracer', inventory_digest=uygulamalar._digest(scope))]))
+            with self.assertRaisesRegex(ValueError, 'Uygulama tabloları eksik'):
+                uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
+            actor['party_id'] = 'tip'
+            with self.assertRaisesRegex(ValueError, 'başka partinin kaydını'):
+                uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
+            actor['party_id'] = 'dem'
+            package['entries'].insert(0, dict(kind='person', values=dict(id='unattached', name='Fixture Person')))
+            with self.assertRaisesRegex(ValueError, 'paket aktörüne'):
+                uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
+
+    def test_practice_manual_passage_requires_new_pdf_and_agreement_with_extractable_text(self):
+        with tempfile.TemporaryDirectory() as tmp, patch('uygulamalar.migrate_practice_workspace'):
+            root = Path(tmp)
+            (root / 'original.pdf').touch()
+            with sqlite3.connect(root / 'records.sqlite3') as db:
+                db.executescript('CREATE TABLE document(id TEXT PRIMARY KEY,party_id TEXT);'
+                                 'CREATE TABLE document_version(id TEXT PRIMARY KEY,document_id TEXT,mime TEXT,original_path TEXT);'
+                                 'CREATE TABLE passage(id TEXT PRIMARY KEY,version_id TEXT,pdf_page_index INT,exact TEXT);'
+                                 'CREATE TABLE manual_passage(passage_id TEXT PRIMARY KEY,checked_at TEXT,method TEXT,reason TEXT);'
+                                 "INSERT INTO document VALUES('letter','yeni-parti');"
+                                 "INSERT INTO document_version VALUES('letter-v','letter','application/pdf','original.pdf');")
+            scope = []
+            passage = dict(id='letter-p', version_id='letter-v', pdf_page_index=1, exact='Observed text')
+            manual = dict(passage_id='letter-p', checked_at='2026-11-22T02:00:00+00:00',
+                          method='Original scan visual reading', reason='Read the relevant answer page.')
+            package = dict(base_release='base', contract_version=1, stage='tracer', taxonomy_version=4,
+                           party_id='yeni-parti', scope_inventory=scope,
+                           entries=[dict(kind='passage', values=passage), dict(kind='manual_passage', values=manual)],
+                           practice_records=dict(practice_contract=[dict(stage='tracer', inventory_digest=uygulamalar._digest(scope))]))
+            with patch('arsiv.pdf_page_text', return_value=''):
+                with self.assertRaisesRegex(ValueError, 'Uygulama tabloları eksik'):
+                    uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
+            with patch('arsiv.pdf_page_text', return_value='A different selectable sentence'):
+                with self.assertRaisesRegex(ValueError, 'PDF metniyle uyuşmuyor'):
+                    uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
+            manual['passage_id'] = 'unrelated'
+            with self.assertRaisesRegex(ValueError, 'yeni paket pasajına'):
+                uygulamalar._load_practice_copy(root, package, 'base', storage_root=root)
+
     def test_private_capture_rejects_root_escape_and_passive_script(self):
         import arsiv_gorunum
         import io
