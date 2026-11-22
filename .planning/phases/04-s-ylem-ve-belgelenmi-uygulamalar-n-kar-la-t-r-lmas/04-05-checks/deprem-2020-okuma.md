@@ -123,3 +123,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 23 Aralık toplantısı PDF indeks 54–58 okundu: İnşaat Mühendisleri Odası soru-cevap oturumu kapanır, Jeofizik Mühendisleri Odası temsilcilerinin afet eğitimi ve bina incelemesi önerileri başlar. Bu açıklamalar ilgili meslek kuruluşuna aittir, TİP etkisi veya bağımsız doğrulanmış sonuç olarak sunulmaz. İndeks 59–132 açık.
 
 23 Aralık toplantısı PDF indeks 59–63 okundu: Jeofizik Mühendisleri Odası temsilcisi zemin, yer hareketi ve afet önlemlerine dair teknik görüşleri sunar; başkan ve Gökan Zeybek detay sorar. Bu beyanlar kaynağına bağlıdır, bağımsız teyit veya TİP uygulaması değildir. İndeks 64–132 açık.
+
+23 Aralık toplantısı PDF indeks 64–68 okundu: Jeofizik Mühendisleri Odası soruları yanıtlar ve oturumu kapanır; Jeoloji Mühendisleri Odası Başkanı Hüseyin Alan sunumuna başlar. Meslek örgütlerinin görüş ve eleştirileri kendilerine ait tutulur; TİP veya bağımsız sonuç olarak kaydedilmez. İndeks 69–132 açık.
