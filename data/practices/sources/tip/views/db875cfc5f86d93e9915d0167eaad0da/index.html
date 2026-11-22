@@ -1,0 +1,1424 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;none&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; img-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;none&#x27;; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+    
+    
+    <style>*,::after,::before{box-sizing:border-box}body{margin:0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#212529}img{max-width:100%;height:auto}a{text-decoration:none;color:inherit}.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}@media (min-width:1400px){.container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{max-width:1320px}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}.col-auto{flex:0 0 auto;width:auto}.col-1{flex:0 0 auto;width:8.33333333%}.col-2{flex:0 0 auto;width:16.66666667%}.col-3{flex:0 0 auto;width:25%}.col-4{flex:0 0 auto;width:33.33333333%}.col-5{flex:0 0 auto;width:41.66666667%}.col-6{flex:0 0 auto;width:50%}.col-7{flex:0 0 auto;width:58.33333333%}.col-8{flex:0 0 auto;width:66.66666667%}.col-9{flex:0 0 auto;width:75%}.col-10{flex:0 0 auto;width:83.33333333%}.col-11{flex:0 0 auto;width:91.66666667%}.col-12{flex:0 0 auto;width:100%}.col-sm-auto{flex:0 0 auto;width:auto}.col-sm-1{flex:0 0 auto;width:8.33333333%}.col-sm-2{flex:0 0 auto;width:16.66666667%}.col-sm-3{flex:0 0 auto;width:25%}.col-sm-4{flex:0 0 auto;width:33.33333333%}.col-sm-5{flex:0 0 auto;width:41.66666667%}.col-sm-6{flex:0 0 auto;width:50%}.col-sm-7{flex:0 0 auto;width:58.33333333%}.col-sm-8{flex:0 0 auto;width:66.66666667%}.col-sm-9{flex:0 0 auto;width:75%}.col-sm-10{flex:0 0 auto;width:83.33333333%}.col-sm-11{flex:0 0 auto;width:91.66666667%}.col-sm-12{flex:0 0 auto;width:100%}.col-md-auto{flex:0 0 auto;width:auto}.col-md-1{flex:0 0 auto;width:8.33333333%}.col-md-2{flex:0 0 auto;width:16.66666667%}.col-md-3{flex:0 0 auto;width:25%}.col-md-4{flex:0 0 auto;width:33.33333333%}.col-md-5{flex:0 0 auto;width:41.66666667%}.col-md-6{flex:0 0 auto;width:50%}.col-md-7{flex:0 0 auto;width:58.33333333%}.col-md-8{flex:0 0 auto;width:66.66666667%}.col-md-9{flex:0 0 auto;width:75%}.col-md-10{flex:0 0 auto;width:83.33333333%}.col-md-11{flex:0 0 auto;width:91.66666667%}.col-md-12{flex:0 0 auto;width:100%}.col-lg-auto{flex:0 0 auto;width:auto}.col-lg-1{flex:0 0 auto;width:8.33333333%}.col-lg-2{flex:0 0 auto;width:16.66666667%}.col-lg-3{flex:0 0 auto;width:25%}.col-lg-4{flex:0 0 auto;width:33.33333333%}.col-lg-5{flex:0 0 auto;width:41.66666667%}.col-lg-6{flex:0 0 auto;width:50%}.col-lg-7{flex:0 0 auto;width:58.33333333%}.col-lg-8{flex:0 0 auto;width:66.66666667%}.col-lg-9{flex:0 0 auto;width:75%}.col-lg-10{flex:0 0 auto;width:83.33333333%}.col-lg-11{flex:0 0 auto;width:91.66666667%}.col-lg-12{flex:0 0 auto;width:100%}.col-xl-auto{flex:0 0 auto;width:auto}.col-xl-1{flex:0 0 auto;width:8.33333333%}.col-xl-2{flex:0 0 auto;width:16.66666667%}.col-xl-3{flex:0 0 auto;width:25%}.col-xl-4{flex:0 0 auto;width:33.33333333%}.col-xl-5{flex:0 0 auto;width:41.66666667%}.col-xl-6{flex:0 0 auto;width:50%}.col-xl-7{flex:0 0 auto;width:58.33333333%}.col-xl-8{flex:0 0 auto;width:66.66666667%}.col-xl-9{flex:0 0 auto;width:75%}.col-xl-10{flex:0 0 auto;width:83.33333333%}.col-xl-11{flex:0 0 auto;width:91.66666667%}.col-xl-12{flex:0 0 auto;width:100%}.col-xxl-auto{flex:0 0 auto;width:auto}.col-xxl-1{flex:0 0 auto;width:8.33333333%}.col-xxl-2{flex:0 0 auto;width:16.66666667%}.col-xxl-3{flex:0 0 auto;width:25%}.col-xxl-4{flex:0 0 auto;width:33.33333333%}.col-xxl-5{flex:0 0 auto;width:41.66666667%}.col-xxl-6{flex:0 0 auto;width:50%}.col-xxl-7{flex:0 0 auto;width:58.33333333%}.col-xxl-8{flex:0 0 auto;width:66.66666667%}.col-xxl-9{flex:0 0 auto;width:75%}.col-xxl-10{flex:0 0 auto;width:83.33333333%}.col-xxl-11{flex:0 0 auto;width:91.66666667%}.col-xxl-12{flex:0 0 auto;width:100%}.col-form-label{padding-top:calc(.375rem + var(--bs-border-width));padding-bottom:calc(.375rem + var(--bs-border-width));margin-bottom:0;font-size:inherit;line-height:1.5}.col-form-label-lg{padding-top:calc(.5rem + var(--bs-border-width));padding-bottom:calc(.5rem + var(--bs-border-width));font-size:1.25rem}.col-form-label-sm{padding-top:calc(.25rem + var(--bs-border-width));padding-bottom:calc(.25rem + var(--bs-border-width));font-size:.875rem}.d-none{display:none!important}.d-flex{display:flex!important}.d-block{display:block!important}.flex-wrap{flex-wrap:wrap!important}.align-items-center{align-items:center!important}.justify-content-between{justify-content:space-between!important}.w-100{width:100%!important}</style>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <title>TİP&#x27;in vekil adayından TİP&#x27;e ağır eleştiri: İktidarın ekmeğine yağ süren bir parti  - Ege&#x27;ye Bakış</title>
+            
+        
+        
+            <noscript></noscript>
+    
+    
+    <noscript></noscript>
+    
+    
+    
+        
+                
+        
+        
+        
+    
+    
+    
+    
+    
+        
+        
+                                    
+        
+        
+        
+        
+            
+            
+        
+    
+    
+    
+    
+    
+    
+    
+            
+    
+        
+                        
+        
+            
+    
+    
+        
+    
+    
+    
+
+    
+
+    <noscript></noscript>
+
+    
+    
+    
+    
+    <style>:root { --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif; --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --color-primary: #e74c3c; --color-primary-dark: #c0392b; --color-primary-rgb: 231,76,60; --color-secondary: #2c3e50; --color-header-bg: #ffffff; --color-header-text: #1a1a2e; --color-topbar-bg: #f8f9fa; --color-topbar-text: #6c757d; --color-menu-bg: #1a1a2e; --color-menu-text: #ffffff; --color-menu-hover: #e74c3c; --color-menu-dropdown-bg: #ffffff; --color-menu-dropdown-text: #333333; --color-footer-bg: #1a1a2e; --color-footer-text: #cccccc; --color-footer-link: #ffffff; --color-footer-border: rgba(255,255,255,0.1); --color-link: #e74c3c; --color-link-hover: #c0392b; --color-block-title-bg: #e74c3c; --color-block-title-text: #ffffff; --color-block-bg: #ffffff; --color-block-border: #e9ecef; --color-sidebar-header-bg: #e74c3c; --color-sidebar-header-text: #ffffff; --color-icon: #e74c3c; --color-body-bg: #f5f5f5; --color-text: #333333; --color-text-secondary: #666666; --color-text-muted: #999999; --color-card-bg: #ffffff; --color-border: #e9ecef; --color-border-light: #f0f1f3; --color-badge-bg: #e74c3c; --color-badge-text: #ffffff; --color-breaking-bg: #e74c3c; --color-breaking-text: #ffffff; --color-ticker-bg: #0d1117; --color-ticker-text: #ffffff; --color-stock-up: #00c853; --color-stock-down: #ff1744; --color-cat-spor: #27ae60; --color-cat-ekonomi: #e67e22; --color-cat-teknoloji: #2980b9; --color-cat-saglik: #8e44ad; --color-cat-dunya: #2c3e50; --color-cat-yasam: #16a085; --color-cat-egitim: #d35400; --color-cat-magazin: #c0392b; --color-cat-otomobil: #d35400; --color-pagination-bg: #ffffff; --color-pagination-active-bg: #e74c3c; --color-pagination-active-text: #ffffff; --color-input-border: #dddddd; --color-input-focus: #e74c3c; --color-input-bg: #fafbfc; --color-tab-bg: #f5f5f5; --color-tab-active-text: #e74c3c; --color-alert-success-bg: #d4edda; --color-alert-success-text: #155724; --color-alert-error-bg: #f8d7da; --color-alert-error-text: #721c24; --color-alert-warning-bg: #fff3cd; --color-alert-warning-text: #856404; --color-profil-gradient-start: #1a1a2e; --color-profil-gradient-end: #16213e; --color-video-bg: #0d1117; --color-video-card-bg: #161b22; --shadow-sm: 0 1px 3px rgba(0,0,0,0.08); --shadow-md: 0 4px 12px rgba(0,0,0,0.1); --shadow-lg: 0 8px 24px rgba(0,0,0,0.12); --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px; --t2-primary: var(--color-primary); --t2-primary-dark: var(--color-primary-dark); --t2-primary-light: #ff6b6b; --t2-black: #1a1a1a; --t2-dark: #2d2d2d; --t2-gray-900: var(--color-text); --t2-gray-700: var(--color-text-secondary); --t2-gray-500: var(--color-text-muted); --t2-gray-300: #ccc; --t2-gray-200: var(--color-border); --t2-gray-100: var(--color-body-bg); --t2-white: var(--color-card-bg); --t2-success: #27ae60; --t2-danger: #e74c3c; --t2-warning: #f39c12; --t2-info: #3498db; --t2-font-body: var(--font-body); --t2-font-heading: var(--font-heading); --t2-container-max: 1240px; --t2-header-height: 44px; --t2-nav-height: 46px; --t2-shadow-sm: var(--shadow-sm); --t2-shadow-md: var(--shadow-md); --t2-shadow-lg: var(--shadow-lg); --t2-transition: 0.25s ease; --t2-radius: var(--radius-sm); --t2-border: 1px solid var(--color-border); }</style>
+    <style>:root{--font-heading:Quicksand, sans-serif;--font-body:Poppins, sans-serif;--color-primary:#e30613;--color-primary-dark:#b3050f;--color-secondary:#2c3e50;--color-header-bg:#ffffff;--color-header-text:#1a1a2e;--color-topbar-bg:#f8f9fa;--color-topbar-text:#6c757d;--color-menu-bg:#1a1a2e;--color-menu-text:#ffffff;--color-menu-hover:#e30613;--color-menu-dropdown-bg:#ffffff;--color-menu-dropdown-text:#333333;--color-footer-bg:#1a1a2e;--color-footer-text:#cccccc;--color-footer-link:#ffffff;--color-footer-border:rgba(255,255,255,0.1);--color-link:#e30613;--color-link-hover:#b3050f;--color-icon:#e30613;--color-block-title-bg:#e30613;--color-block-title-text:#ffffff;--color-block-bg:#ffffff;--color-block-border:#e9ecef;--color-sidebar-header-bg:#e30613;--color-sidebar-header-text:#ffffff;--color-body-bg:#f5f5f5;--color-text:#333333;--color-text-secondary:#666666;--color-text-muted:#999999;--color-card-bg:#ffffff;--color-border:#e9ecef;--color-border-light:#f0f1f3;--color-badge-bg:#e30613;--color-badge-text:#ffffff;--color-breaking-bg:#e30613;--color-breaking-text:#ffffff;--color-ticker-bg:#0d1117;--color-ticker-text:#ffffff;--color-stock-up:#00c853;--color-stock-down:#ff1744;--color-cat-spor:#27ae60;--color-cat-ekonomi:#e67e22;--color-cat-teknoloji:#2980b9;--color-cat-saglik:#8e44ad;--color-cat-dunya:#2c3e50;--color-cat-yasam:#16a085;--color-cat-egitim:#d35400;--color-cat-magazin:#b3050f;--color-cat-otomobil:#d35400;--color-pagination-bg:#ffffff;--color-pagination-active-bg:#e30613;--color-pagination-active-text:#ffffff;--color-input-border:#dddddd;--color-input-focus:#e30613;--color-input-bg:#fafbfc;--color-tab-bg:#f5f5f5;--color-tab-active-text:#e30613;--color-alert-success-bg:#d4edda;--color-alert-success-text:#155724;--color-alert-error-bg:#f8d7da;--color-alert-error-text:#721c24;--color-alert-warning-bg:#fff3cd;--color-alert-warning-text:#856404;--color-profil-gradient-start:#1a1a2e;--color-profil-gradient-end:#16213e;--color-video-bg:#0d1117;--color-video-card-bg:#161b22;}</style>    
+    
+    
+    <noscript></noscript>
+    
+    
+    
+    
+    
+        
+    
+    
+            
+    
+            
+    
+    <style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head>
+<body>
+
+<div class="t2-topbar">
+    <div class="container">
+        <div class="t2-topbar-inner">
+            <span class="t2-topbar-date" id="t2TopbarDate"></span>
+            <div class="t2-topbar-markets">
+                                                <span class="t2-market-item">
+                    <span class="t2-market-name">BIST 100</span>
+                    <span class="t2-market-val">11.131,32</span><span class="t2-market-down"><i class="fas fa-caret-down"></i> %2,36</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Altın</span>
+                    <span class="t2-market-val">5.731,95 ₺/gr</span><span class="t2-market-down"><i class="fas fa-caret-down"></i> %3,48</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Bitcoin</span>
+                    <span class="t2-market-val">-</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %1,92</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Dolar</span>
+                    <span class="t2-market-val">50,49 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,00</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Euro</span>
+                    <span class="t2-market-val">55,40 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,00</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Sterlin</span>
+                    <span class="t2-market-val">66,28 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,00</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Gümüş</span>
+                    <span class="t2-market-val">66,65 ₺/gr</span><span class="t2-market-down"><i class="fas fa-caret-down"></i> %6,54</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Ethereum</span>
+                    <span class="t2-market-val">$1.685,62</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %4,25</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">İsviçre Frangı</span>
+                    <span class="t2-market-val">60,24 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,72</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Kanada Doları</span>
+                    <span class="t2-market-val">35,25 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,19</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Avustralya Doları</span>
+                    <span class="t2-market-val">33,45 ₺</span><span class="t2-market-down"><i class="fas fa-caret-down"></i> %0,51</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Suudi Riyali</span>
+                    <span class="t2-market-val">13,48 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,19</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">BAE Dirhemi</span>
+                    <span class="t2-market-val">13,78 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,23</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Rus Rublesi</span>
+                    <span class="t2-market-val">0,62 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,53</span>                </span>
+                                <span class="t2-market-item">
+                    <span class="t2-market-name">Çin Yuanı</span>
+                    <span class="t2-market-val">7,58 ₺</span><span class="t2-market-up"><i class="fas fa-caret-up"></i> %0,45</span>                </span>
+                                            </div>
+            <div class="t2-topbar-right">
+                                <a href="https://www.youtube.com/channel/UCq_9G4JdqnybWVn8Acf1tKw" class="t2-yt-btn" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                                                <div style="position:relative;margin-left:6px;">
+                    <a href="#" class="topbar-lang-toggle" style="display:flex;align-items:center;gap:4px;color:var(--color-topbar-text);text-decoration:none;font-size:0.78rem;">
+                        <span class="fi fi-tr"></span>
+                        TR
+                        <i class="fas fa-chevron-down" style="font-size:8px;"></i>
+                    </a>
+                    <div class="topbar-lang-dropdown" style="display:none;position:absolute;top:100%;right:0;background:#fff;border:1px solid #e0e0e0;border-radius:6px;min-width:140px;box-shadow:0 4px 12px rgba(0,0,0,0.1);z-index:1000;padding:4px 0;">
+                                                <a href="#" class="language-option" style="display:flex;align-items:center;gap:8px;padding:6px 12px;color:#333;text-decoration:none;font-size:12px;font-weight:bold;background:#f5f5f5;">
+                            <span class="fi fi-tr"></span> Türkçe
+                        </a>
+                                                <a href="#" class="language-option" style="display:flex;align-items:center;gap:8px;padding:6px 12px;color:#333;text-decoration:none;font-size:12px;">
+                            <span class="fi fi-gb"></span> English
+                        </a>
+                                            </div>
+                </div>
+                            </div>
+        </div>
+    </div>
+</div>
+<div class="t2-brand">
+    <div class="container">
+        <div class="t2-brand-inner">
+            <a href="https://egeyebakis.com/" class="t2-logo">
+                <img alt="Ege&#x27;ye Bakış" height="50">
+            </a>
+            <div class="hd-promo">
+                
+            </div>
+            <div class="t2-brand-links">
+                <a href="https://egeyebakis.com/foto-galeri" class="t2-brand-link">Foto Galeri</a>
+                <a href="https://egeyebakis.com/video" class="t2-brand-link">Video</a>
+                <a href="https://egeyebakis.com/yazarlar" class="t2-brand-link">Yazarlar</a>
+                
+                    <i class="fas fa-search"></i>
+                
+                
+                    <i class="fas fa-moon"></i>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="t2-search-panel" id="t2SearchPanel">
+    <div class="container">
+        
+            
+            <i class="fas fa-search"></i>
+            <i class="fas fa-times"></i>
+        
+    </div>
+</div>
+<nav class="t2-nav" id="t2Nav">
+    <div class="container">
+        <div class="t2-nav-inner">
+            <ul class="t2-nav-menu" id="t2NavMenu">
+                <li class="t2-nav-item t2-nav-home">
+                    <a href="https://egeyebakis.com/" class="t2-nav-link"><i class="fas fa-home" style="margin-right:6px;"></i> Anasayfa</a>
+                </li>
+                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/yerel" class="t2-nav-link">Yerel</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/cevre" class="t2-nav-link">Çevre</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/guncel" class="t2-nav-link">Güncel</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/siyaset" class="t2-nav-link">Siyaset</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/ekonomi" class="t2-nav-link">Ekonomi</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/kultur-sanat" class="t2-nav-link">Kültür Sanat</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/ozel-haber" class="t2-nav-link">Özel Haber</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/roportaj" class="t2-nav-link">Röportaj</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/foto-galeri" class="t2-nav-link">Foto Galeri</a>
+                                    </li>
+                                                                <li class="t2-nav-item">
+                    <a href="https://egeyebakis.com/teknoloji" class="t2-nav-link">Teknoloji</a>
+                                    </li>
+                                                                                                                                                                                                                                                                                                                <li class="t2-nav-item t2-has-sub t2-nav-more">
+                    <a class="t2-nav-link" aria-label="Diğer"><i class="fas fa-ellipsis-h"></i></a>
+                    <ul class="t2-dropdown">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="https://egeyebakis.com/film-dizi-kitap-gunlukleri">Magazin</a></li>
+                                                                                                <li><a href="https://egeyebakis.com/analiz">Analiz</a></li>
+                                                                                                <li><a href="https://egeyebakis.com/egitim">Eğitim</a></li>
+                                                                                                <li><a href="https://egeyebakis.com/saglik">Sağlık</a></li>
+                                                                                                <li><a href="https://egeyebakis.com/video-haberler">Video</a></li>
+                                                                                                <li><a href="https://egeyebakis.com/spor">Spor</a></li>
+                                                                                                <li><a href="https://egeyebakis.com/asayis">Asayiş</a></li>
+                                                                                                <li><a href="https://egeyebakis.com/resmi-ilanlar">RESMİ REKLAMLAR </a></li>
+                                                                        <li><a href="https://egeyebakis.com/kose-yazarlari">Köşe Yazarları</a></li>
+                        <li><a href="https://egeyebakis.com/kurumsal">Kurumsal</a></li>
+                    </ul>
+                </li>
+                                <li class="t2-nav-item t2-nav-kunye">
+                    <a href="https://egeyebakis.com/kunye/" class="t2-nav-link">Künye</a>
+                </li>
+                            </ul>
+            
+                <span></span><span></span><span></span>
+            
+        </div>
+    </div>
+</nav>
+<div class="t2-mobile-overlay" id="t2Overlay"></div>
+<div class="t2-mobile-menu" id="t2MobileMenu">
+    <div class="t2-mobile-header">
+        <a href="https://egeyebakis.com/" class="t2-mobile-logo">
+            <img alt="Ege&#x27;ye Bakış" height="32">
+        </a>
+        <i class="fas fa-times"></i>
+    </div>
+    <ul class="t2-mobile-nav">
+        <li><a href="https://egeyebakis.com/"><i class="fas fa-home"></i> Anasayfa</a></li>
+                <li class="">
+            <a href="https://egeyebakis.com/yerel">Yerel</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/cevre">Çevre</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/guncel">Güncel</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/siyaset">Siyaset</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/ekonomi">Ekonomi</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/kultur-sanat">Kültür Sanat</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/ozel-haber">Özel Haber</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/roportaj">Röportaj</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/foto-galeri">Foto Galeri</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/teknoloji">Teknoloji</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/film-dizi-kitap-gunlukleri">Magazin</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/analiz">Analiz</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/egitim">Eğitim</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/saglik">Sağlık</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/video-haberler">Video</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/spor">Spor</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/asayis">Asayiş</a>
+                    </li>
+                <li class="">
+            <a href="https://egeyebakis.com/resmi-ilanlar">RESMİ REKLAMLAR </a>
+                    </li>
+            </ul>
+    <div class="t2-mobile-extras">
+        <a href="https://egeyebakis.com/foto-galeri"><i class="fas fa-camera"></i> Foto Galeri</a>
+        <a href="https://egeyebakis.com/video"><i class="fas fa-video"></i> Video</a>
+        <a href="https://egeyebakis.com/yazarlar"><i class="fas fa-pen-nib"></i> Yazarlar</a>
+    </div>
+    <div class="t2-mobile-social">
+        <a href="https://www.facebook.com/egeyebakis/"><i class="fab fa-facebook-f"></i></a>        <a href="https://www.twitter.com/EgeyeBakis"><i class="fab fa-x-twitter"></i></a>        <a href="https://www.instagram.com/egeyebakis/"><i class="fab fa-instagram"></i></a>        <a href="https://www.youtube.com/channel/UCq_9G4JdqnybWVn8Acf1tKw"><i class="fab fa-youtube"></i></a>            </div>
+</div>
+
+
+<div class="page-main-col">
+<div class="gazete-breadcrumb">
+    <div class="container">
+        <a href="https://egeyebakis.com/"><i class="fas fa-home"></i> Anasayfa</a>
+                                    <i class="fas fa-chevron-right"></i>
+                <a href="https://egeyebakis.com/siyaset">Siyaset</a>
+                        <i class="fas fa-chevron-right"></i>
+            <span>TİP&#x27;in vekil adayından TİP&#x27;e ağır eleştiri: İktidarın ekm...</span>
+            </div>
+</div>
+<section class="content-area">
+    <div class="container">
+<div id="infiniteScrollContainer">
+<div class="content-row haber-kapsa">
+    
+    <div class="content-main">
+        <div class="block-card">
+
+            
+            
+            
+                        <div class="nd-date-top"><i class="far fa-clock"></i><time datetime="2024-03-12T21:49:44+03:00">12.03.2024 21:49</time></div>
+            
+            
+            
+            
+            <h1 class="nd-title">TİP&#x27;in vekil adayından TİP&#x27;e ağır eleştiri: İktidarın ekmeğine yağ süren bir parti </h1>
+
+            
+            
+            
+                        <p class="nd-spot">Genel seçimlerde TİP İzmir 2. bölge milletvekili adayı olan, daha sonra partisinden kesin ihraç talebiyle Merkez Disiplin Kurulu&#x27;na sevk edilen Ali Haydar Öztürk, TİP Çankaya Belediye Başkan Adayı İrfan Değirmenci’nin basın açıklamasına yanıt verdi. </p>
+            
+            
+            <div class="nd-meta-strip">
+                <div class="nd-ms-left">
+                                                            
+                                        
+                    
+                    <div class="nd-share-inline">
+                <a class="nd-sc-btn nd-sc-fb" title="Facebook&#x27;ta Paylaş"><i class="fab fa-facebook-f"></i></a>
+                <a class="nd-sc-btn nd-sc-tw" title="X&#x27;te Paylaş"><i class="fab fa-x-twitter"></i></a>
+                <a class="nd-sc-btn nd-sc-wa" title="WhatsApp&#x27;ta Paylaş"><i class="fab fa-whatsapp"></i></a>
+                <a class="nd-sc-btn nd-sc-tg" title="Telegram&#x27;da Paylaş"><i class="fab fa-telegram-plane"></i></a>
+                <a class="nd-sc-btn nd-sc-li" title="LinkedIn&#x27;de Paylaş"><i class="fab fa-linkedin-in"></i></a>
+                <a class="nd-sc-btn nd-sc-pi" title="Pinterest&#x27;te Paylaş"><i class="fab fa-pinterest-p"></i></a>
+                <i class="fas fa-link"></i>
+                    </div>
+                </div>
+                <div class="nd-ms-right">
+                    <span id="ttsContainer" style="display:none;">
+                        <i class="fas fa-volume-up"></i><span>Dinle</span>
+                    </span>
+                    <i class="fas fa-print"></i><span>Yazdır</span>
+                    <i class="fas fa-font" style="font-size:1.1em;"></i><sup style="font-size:.6em;font-weight:700;">+</sup><span>Büyüt</span>
+                    <i class="fas fa-font" style="font-size:.85em;"></i><sup style="font-size:.6em;font-weight:700;">-</sup><span>Küçült</span>
+                                        <a href="#yorumlar" class="hd-tool-btn" title="Yorumlar"><span style="position:relative;display:inline-block;"><i class="far fa-comment-dots"></i><span class="hd-yorum-badge">0</span></span><span>Yorumlar</span></a>
+                                    </div>
+            </div>
+
+
+            
+                                    <div class="detay-image">
+                <img alt="TİP&#x27;in vekil adayından TİP&#x27;e ağır eleştiri: İktidarın ekmeğine yağ süren bir parti " class="detay-img">            </div>
+                        
+                        
+            <div class="detay-content" id="icerikAlani">
+                <p><span style="font-family:Times New Roman,Times,serif;"><span style="font-size:20px;">Geçtiğimiz genel seçimlerde TİP İzmir 2. Bölge Milletvekili Adayı olan ve bu Yerel Seçim’de Tire’de CHP Belediye Başkan Adayı Hayati Okuroğlu’na destek verdiği gerekçesiyle partisinden kesin ihraç talebiyle Merkez Disiplin Kurulu’na sevkedilen Ali Haydar Öztürk, TİP Çankaya Belediye Başkan Adayı İrfan Değirmenci’nin dün gerçekleştirdiği basın açıklamasına ilişkin değerlendirmelerde bulundu. </span></span></p>
+
+<p><span style="font-family:Times New Roman,Times,serif;"><span style="font-size:20px;">Kendi sosyal medya hesabı üzerinden paylaşım yapan Öztürk, şunları kaydetti: </span></span></p>
+
+<p> </p>
+
+<p><strong><span style="font-family:Times New Roman,Times,serif;"><span style="font-size:20px;">“ÇANKAYA ÖNEMLİ DE, TİRE ÖNEMSİZ Mİ?</span></span></strong></p>
+
+<p><span style="font-family:Times New Roman,Times,serif;"><span style="font-size:20px;">&#x27;Çankaya&#x27;da AKP’nin kazanma ihtimalini görmediğim için aday olmayı kabul ettim&#x27; diyen TİP’in Çankaya Belediye Başkan Adayı Sayın İrfan Değirmenci; &#x27;Biz iktidarın ekmeğine yağ süren, muhalefete zarar veren bir parti olmak istemedik. O yüzden bıçak sırtı olan yerlerde de aday gösterip iktidar bloğunun önünü açmak istemedik&#x27; diye açıklamada bulundu. </span></span></p>
+
+<p><span style="font-family:Times New Roman,Times,serif;"><span style="font-size:20px;">Çok doğru bir yaklaşım, ancak gerçeği yansıtmıyor ne yazık ki… Çünkü, sadece İzmir’den örnek vermek gerekse bile; Aliağa, Kemalpaşa, Torbalı, Menderes, Selçuk, Ödemiş, Kiraz ve Tire gibi bıçak sırtı yerlerde aday çıkardı TİP.</span></span></p>
+
+<p><span style="font-family:Times New Roman,Times,serif;"><span style="font-size:20px;">Ben de aynen Sayın İrfan Değirmenci gibi düşünüp, yaşadığım ilçe olan Tire’de MHP/AKP Bloğu’nun kazanma ihtimalini gördüğüm için TİP’in Tire’de aday çıkarmasını kabul etmedim. İktidarın ekmeğine yağ süren, muhalefete zarar veren bir partide yer almak istemedim. Tire gibi bıçak sırtı olan yerlerde TİP’in aday gösterip iktidar bloğunun önünü açmasını kabullenemedim. Ve istifa ettim. Denklem bu kadar basit…”</span></span></p>
+
+            </div>
+            
+            
+                                    <br><br>
+            
+
+            
+            
+                        
+            
+            <div class="hd-toolbar hd-toolbar-tts">
+                <div id="ttsPlayerBar" style="display:none;margin-left:8px;">
+                    <div class="tts-player-area" style="display:none;align-items:center;gap:8px;background:#f0e6f6;padding:5px 12px;border-radius:8px;">
+                        <i class="fas fa-pause tts-state-icon"></i>
+                        <i class="fas fa-stop"></i>
+                        <div style="flex:1;height:4px;background:#ddd;border-radius:2px;min-width:60px;">
+                            <div class="tts-progress-fill" style="height:100%;background:#8e44ad;border-radius:2px;width:0%;transition:width 0.3s;"></div>
+                        </div>
+                        <span class="tts-rate-label">1x</span>
+                    </div>
+                </div>
+            </div>
+            
+                        
+                        <div class="detay-tags">
+                <i class="fas fa-tags"></i>
+                                <a href="https://egeyebakis.com/etiket/ali-haydar-ozturk-41256" class="detay-tag">Ali Haydar Öztürk</a>
+                                <a href="https://egeyebakis.com/etiket/irfan-degirmenci-34066" class="detay-tag">İrfan Değirmenci</a>
+                                <a href="https://egeyebakis.com/etiket/izmir-24235" class="detay-tag">İzmir</a>
+                                <a href="https://egeyebakis.com/etiket/son-dakika-1004" class="detay-tag">son dakika</a>
+                                <a href="https://egeyebakis.com/etiket/yerel-secim-18970" class="detay-tag">yerel seçim</a>
+                            </div>
+                        
+                        
+                        
+        </div>
+        
+        <div class="block-card" style="margin-top:20px;">
+            <div class="reaksiyon-container" id="reaksiyon-alani">
+                <div class="reaksiyon-grid" id="reaksiyon-grid"></div>
+            </div>
+        </div>
+        
+                <div class="block-card" style="margin-top:20px;" id="yorumlar">
+            <div class="block-header">
+                <h3 class="block-title"><i class="far fa-comments"></i> Yorumlar (<span id="yorum-toplam">0</span>)</h3>
+            </div>
+            
+            <div id="yorum-listesi">
+                <div class="yorum-bos" id="yorum-yukle-bilgi"><i class="fas fa-spinner fa-spin"></i> Yorumlar yükleniyor...</div>
+            </div>
+            
+            <div id="yorum-daha-fazla" style="display:none; text-align:center; padding:16px 0;">
+                Daha Fazla Yorum <i class="fas fa-chevron-down"></i>
+            </div>
+            
+                        <div class="yorum-form-container">
+                <h4 class="yorum-form-baslik"><i class="fas fa-pen"></i> Yorum Yaz</h4>
+                                <p class="yorum-form-info">Yorumunuz hemen yayınlanacaktır.</p>
+                                
+                <div id="yorum-cevap-bilgi" style="display:none;">
+                    <span id="yorum-cevap-isim"></span>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div id="yorum-alert"></div>
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                                        <div class="yorum-form-grid">
+                                                <div class="yorum-form-group">
+                            <i class="far fa-user"></i> Adınız *
+                            
+                        </div>
+                        <div class="yorum-form-group">
+                            <i class="far fa-envelope"></i> E-posta *
+                            
+                        </div>
+                                                <div class="yorum-form-group full-width">
+                            <i class="far fa-comment-dots"></i> Yorumunuz *
+                            
+                            <div class="yorum-karakter-sayac"><span id="yorum-karakter">0</span>/1000</div>
+                        </div>
+                    </div>
+                                        <div class="yorum-captcha">
+                        <div class="yorum-captcha-img">
+                            <i class="fas fa-shield-alt"></i> Güvenlik Kodu *
+                            <img alt="Güvenlik Kodu" id="yorum-captcha-img">
+                            <i class="fas fa-sync-alt"></i> Yenile
+                        </div>
+                        <div class="yorum-captcha-input">
+                            
+                        </div>
+                    </div>
+                                        
+                        <i class="far fa-paper-plane"></i> Yorum Gönder
+                    
+                
+            </div>
+                    </div>
+                
+                <div class="block-card" style="margin-top:20px;">
+            <div class="detay-nav">
+                                <a href="https://egeyebakis.com/guncel/secime-20-gun-kala-mustafa-inceden-komsu-atamasi-84933" class="detay-nav-item detay-nav-prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>
+                        <small>Önceki Haber</small>
+                        <span>Seçime 20 gün kala... Mustafa İnce&#x27;den komşu...</span>
+                    </div>
+                </a>
+                                                <a href="https://egeyebakis.com/siyaset/chpli-yalimdan-orcye-anket-cikisi-algi-operasyonu-yurutulmektedir-84935" class="detay-nav-item detay-nav-next">
+                    <div>
+                        <small>Sonraki Haber</small>
+                        <span>CHP&#x27;li Yalım&#x27;dan ORC&#x27;ye anket çıkışı: &quot;Algı...</span>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                            </div>
+        </div>
+                
+                <div class="block-card" style="margin-top:20px;">
+            <div class="block-header">
+                <h3 class="block-title"><i class="fas fa-layer-group"></i> Benzer Haberler</h3>
+            </div>
+            <div class="diger-grid">
+                                                <a href="https://egeyebakis.com/siyaset/iyi-partili-kirkpinardan-otoyol-ozellestirmelerine-tepki-107132" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">İYİ Partili Kırkpınar&#x27;dan &#x27;otoyol özelleştirmelerine&#x27; tepki!</h3>
+                                                <p class="diger-desc"> İYİ Parti İzmir Milletvekili Hüsmen Kırkpınar, İzmir İl Başkanlığı&#x27;nda yaptığı basın...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 1 ay önce</div>
+                                            </div>
+                </a>
+                                                                <a href="https://egeyebakis.com/siyaset/baskan-cagatay-guc-iktidarin-batan-gemisine-binenler-var-107127" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">Başkan Çağatay Güç: &quot;İktidarın batan gemisine binenler var&quot;</h3>
+                                                <p class="diger-desc"> YENİ Parti İzmir Kurucu İl Başkanı Çağatay Güç, iktidarın belediye başkanlarını korkutarak veya...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 1 ay önce</div>
+                                            </div>
+                </a>
+                                                                <a href="https://egeyebakis.com/siyaset/yeni-parti-icin-90in-uzerinde-vekil-imza-verdi-105533" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">&#x27;Yeni Parti&#x27; için 90&#x27;ın üzerinde vekil imza verdi!</h3>
+                                                <p class="diger-desc">CHP Genel Başkanı Özgür Özel&#x27;in kurulacağını duyurduğu &quot;yeni parti&quot; için gerçekleştirilen...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 4 ay önce</div>
+                                            </div>
+                </a>
+                                                                                                                                            </div>
+        </div>
+                
+                <div class="block-card" style="margin-top:20px;">
+            <div class="block-header">
+                <h3 class="block-title"><i class="fas fa-newspaper"></i> Siyaset Haberleri</h3>
+                                <a href="https://egeyebakis.com/siyaset" class="block-more">Tümü <i class="fas fa-arrow-right"></i></a>
+                            </div>
+            <div class="diger-grid">
+                                <a href="https://egeyebakis.com/siyaset/ak-partili-inandan-yeni-partili-ozlaleye-masada-neleri-konustugumuzu-cok-iyi-biliyoruz-108769" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">AK Partili İnan&#x27;dan YENİ Partili Özlale&#x27;ye: Masada neleri...</h3>
+                                                <p class="diger-desc"> AK Parti Karşıyaka İlçe Danışma Meclisi’nde konuşma yapan AK Parti Genel Sekreteri ve İzmir...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 13 saat önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/erdogandan-adalet-vurgusu-zorbanin-cezasini-cekmedigi-yerde-108765" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">Erdoğan&#x27;dan &#x27;adalet&#x27; vurgusu: Zorbanın cezasını çekmediği...</h3>
+                                                <p class="diger-desc"> Cumhurbaşkanı Erdoğan Gaziosmanpaşa Adalet Sarayı Açılış Töreni&#x27;nde konuştu. Erdoğan &quot;Toplumları...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 14 saat önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/ak-partili-saygilidan-izmir-mesajlari-suda-yuzde-60-indirim-hedefi-108764" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">AK Partili Saygılı&#x27;dan İzmir mesajları: Suda yüzde 60...</h3>
+                                                <p class="diger-desc">  AK Parti Karşıyaka İlçe Danışma Meclisi’nde konuşan İl Başkanı Bilal Saygılı, parti içinde...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 14 saat önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/chpli-gumrukcu-den-tirede-sut-ve-uretim-mesajlari-108758" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">CHP&#x27;li Gümrükçü’ den Tire’de Süt ve Üretim Mesajları</h3>
+                                                <p class="diger-desc"> CHP İzmir İl Başkanı Utku Gümrükçü ve İl Yönetim Kurulu, Tire’de gerçekleştirdiği yoğun...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 18 saat önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/dem-partide-toplu-istifa-belediye-baskani-ile-4-meclis-uyesi-gorevlerine-bagimsiz-devam-edecek-108747" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">DEM Parti&#x27;de Toplu İstifa: Belediye Başkanı ile 4 Meclis...</h3>
+                                                <p class="diger-desc"> 
+ Siirt’in Baykan ilçesine bağlı Veysel Karani Belde Belediye Başkanı Enes Cengiz ile 4...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 1 gün önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/baskan-erdogandan-ak-parti-iddialarini-kuvvetlendiren-begeni-108746" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">Başkan Erdoğan&#x27;dan AK Parti iddialarını kuvvetlendiren...</h3>
+                                                <p class="diger-desc"> Yeni Parti&#x27;den istifa eden Karaburun Belediye Başkanı İlkay Girgin Erdoğan&#x27;ın AK Parti&#x27;ye...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 1 gün önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/ak-partili-kirkpinardan-turkiye-yuzyili-mesaji-108722" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">AK Partili Kırkpınar&#x27;dan Türkiye Yüzyılı mesajı</h3>
+                                                <p class="diger-desc"> AK Parti İzmir Milletvekili Yaşar Kırkpınar, TBMM Plan ve Bütçe Komisyonu’nda görüşülen...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 2 gün önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/9-belediye-baskani-daha-ak-partiye-gecti-108718" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">9 belediye başkanı daha AK Parti&#x27;ye geçti!</h3>
+                                                <p class="diger-desc"> Yerel seçimlerde muhalefet partilerinin listelerinden seçilen ya da seçilmiş başkanların...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 2 gün önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/umit-ozlale-fon-dosyasinda-ak-partili-vahit-kilerin-ismini-verdi-108716" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">Ümit Özlale fon dosyasında AK Partili Vahit Kiler&#x27;in...</h3>
+                                                <p class="diger-desc"> Yeni Parti Milletvekili Ümit Özlale, fon dosyasında dair dördüncü dosyada AKP&#x27;li Vahit Kiler&#x27;in...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 2 gün önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/soyer-ve-kayanin-tahliye-karari-sonrasi-yucelden-aciklama-tutuksuz-yargilanmalari-gerekiyor-108707" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">Soyer ve Kaya&#x27;nın tahliye kararı sonrası Yücel&#x27;den...</h3>
+                                                <p class="diger-desc"> Eski İzmir Büyükşehir Belediye Başkanı Tunç Soyer ve Eski İZBETON Genel Müdürü Heval Savaş Kaya...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 2 gün önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/gumrukcu-vatandasin-sorunlarina-ve-cozume-odaklandik-108705" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">Gümrükçü: &quot;Vatandaşın Sorunlarına ve Çözüme Odaklandık&quot;</h3>
+                                                <p class="diger-desc"> Cumhuriyet Halk Partisi İzmir İl Başkanı Utku Gümrükçü ve İl Yönetim Kurulu üyeleri, Aliağa’da...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 2 gün önce</div>
+                                            </div>
+                </a>
+                                <a href="https://egeyebakis.com/siyaset/ak-parti-izmirden-ankara-cikarmasi-ortak-sevdamiz-izmir-108693" class="diger-card">
+                    <div class="diger-img" style="background-image:none"></div>
+                    <div class="diger-body">
+                        <h3 class="diger-title">AK Parti İzmir&#x27;den Ankara çıkarması: Ortak sevdamız İzmir</h3>
+                                                <p class="diger-desc"> İzmir Büyükşehir Belediye Başkanı Cemil Tugay, AK Parti İzmir milletvekilleri, İl Başkanı Bilal...</p>
+                                                                        <div class="diger-meta"><i class="far fa-clock"></i> 2 gün önce</div>
+                                            </div>
+                </a>
+                            </div>
+        </div>
+        
+    </div>
+
+    <div class="content-sidebar">
+        <div class="dynamic-block-sidebar">
+    <div class="sidebar-widget sw-popular">
+    <div class="sw-header" style="background:#e74c3c;">
+        <i class="fas fa-fire"></i> En Çok Okunanlar
+    </div>
+    <div class="sw-popular-list">
+                <a href="https://egeyebakis.com/ozel-haber/aradaki-buzlar-eridi-basdastan-dava-ettigi-tugaya-cuma-hediyesi-108752" class="sw-popular-item">
+            <span class="sw-popular-no">1</span>
+            <div class="sw-popular-img" style="background-image: none;"></div>
+            <div class="sw-popular-body">
+                <h4 class="sw-popular-title">Aradaki buzlar eridi! Başdaş&#x27;tan dava ettiği Tugay&#x27;a Cuma hediyesi</h4>
+                            </div>
+        </a>
+                <a href="https://egeyebakis.com/siyaset/ak-partili-inandan-yeni-partili-ozlaleye-masada-neleri-konustugumuzu-cok-iyi-biliyoruz-108769" class="sw-popular-item">
+            <span class="sw-popular-no">2</span>
+            <div class="sw-popular-img" style="background-image: none;"></div>
+            <div class="sw-popular-body">
+                <h4 class="sw-popular-title">AK Partili İnan&#x27;dan YENİ Partili Özlale&#x27;ye: Masada neleri konuştuğumuzu çok iyi biliyoruz!</h4>
+                            </div>
+        </a>
+                <a href="https://egeyebakis.com/siyaset/ak-partili-saygilidan-izmir-mesajlari-suda-yuzde-60-indirim-hedefi-108764" class="sw-popular-item">
+            <span class="sw-popular-no">3</span>
+            <div class="sw-popular-img" style="background-image: none;"></div>
+            <div class="sw-popular-body">
+                <h4 class="sw-popular-title">AK Partili Saygılı&#x27;dan İzmir mesajları: Suda yüzde 60 indirim hedefi!</h4>
+                            </div>
+        </a>
+                <a href="https://egeyebakis.com/guncel/sungurlu-osbde-is-kazasi-21-yasindaki-isci-oldu-108760" class="sw-popular-item">
+            <span class="sw-popular-no">4</span>
+            <div class="sw-popular-img" style="background-image: none;"></div>
+            <div class="sw-popular-body">
+                <h4 class="sw-popular-title">Sungurlu OSB&#x27;de iş kazası: 21 yaşındaki işçi öldü</h4>
+                            </div>
+        </a>
+                <a href="https://egeyebakis.com/asayis/tartistigi-24-yasindaki-oglunu-tufekle-vurarak-katletti-108767" class="sw-popular-item">
+            <span class="sw-popular-no">5</span>
+            <div class="sw-popular-img" style="background-image: none;"></div>
+            <div class="sw-popular-body">
+                <h4 class="sw-popular-title">Tartıştığı 24 yaşındaki oğlunu tüfekle vurarak katletti!</h4>
+                            </div>
+        </a>
+                <a href="https://egeyebakis.com/yerel/konakta-sevgiyle-orulen-ilmekler-cocuk-haklari-icin-birlesti-108757" class="sw-popular-item">
+            <span class="sw-popular-no">6</span>
+            <div class="sw-popular-img" style="background-image: none;"></div>
+            <div class="sw-popular-body">
+                <h4 class="sw-popular-title">Konak’ta sevgiyle örülen ilmekler ‘Çocuk Hakları’ için birleşti</h4>
+                            </div>
+        </a>
+            </div>
+</div>
+</div>
+<div class="dynamic-block-sidebar">
+    <div class="sidebar-widget sw-hava">
+    <div class="sw-header sw-header-blue">
+        <i class="fas fa-cloud-sun"></i> Hava Durumu
+    </div>
+    <div class="sw-body">
+        <div class="hava-bugun">
+            <div class="hava-icon"><i class="fas fa-sun"></i></div>
+            <div class="hava-info">
+                <div class="hava-derece">12°C</div>
+                <div class="hava-durum">Açık</div>
+                <div class="hava-sehir">İZMİR</div>
+            </div>
+        </div>
+        <div class="hava-hafta">
+                                                <div class="hava-gun"><span>Pzr</span><i class="fas fa-sun"></i><span>15°</span></div>
+                                                <div class="hava-gun"><span>Pzt</span><i class="fas fa-cloud-rain"></i><span>15°</span></div>
+                                                <div class="hava-gun"><span>Sal</span><i class="fas fa-sun"></i><span>13°</span></div>
+                                                <div class="hava-gun"><span>Çar</span><i class="fas fa-sun"></i><span>8°</span></div>
+                                                <div class="hava-gun"><span>Per</span><i class="fas fa-cloud"></i><span>10°</span></div>
+                                            </div>
+    </div>
+</div>
+</div>
+<div class="dynamic-block-sidebar">
+    <div class="sidebar-widget sw-eczane">
+    <div class="sw-header sw-header-green">
+        <i class="fas fa-prescription-bottle-alt"></i> Nöbetçi Eczaneler
+    </div>
+    <div class="sw-body">
+        <div class="eczane-baslik">İZMİR</div>
+        <div>
+                                                <div class="eczane-item">
+                <div class="eczane-name"><i class="fas fa-plus-circle"></i> YAZAL ECZANESİ</div>
+                <div class="eczane-adres">YENİ ŞAKRAN MAH. VALİ KAZIM DİRİK CAD.NO:58/A ALİAĞA/İZMİR</div>
+                                <div class="eczane-tel"><i class="fas fa-phone"></i> 02326287143</div>
+                            </div>
+                                                <div class="eczane-item">
+                <div class="eczane-name"><i class="fas fa-plus-circle"></i> MELTEM ECZANESİ</div>
+                <div class="eczane-adres">KÜLTÜR MAHALLESİ ATATÜRK CADDESİ NO:66/B</div>
+                                <div class="eczane-tel"><i class="fas fa-phone"></i> 02326171152</div>
+                            </div>
+                                                <div class="eczane-item">
+                <div class="eczane-name"><i class="fas fa-plus-circle"></i> EGENUR ECZANESİ</div>
+                <div class="eczane-adres">FEVZİ ÇAKMAK MAH.ATA CAD. NO:152/A BALÇOVA</div>
+                                <div class="eczane-tel"><i class="fas fa-phone"></i> 02322789581</div>
+                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+        <a href="https://egeyebakis.com/nobetci-eczaneler/" class="eczane-tumu">Tümünü Gör <i class="fas fa-angle-right"></i></a>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+</div>
+<div id="infiniteScrollSentinel">
+    <div class="scroll-loader" style="display:none;">
+        <div class="spinner-border text-danger" role="status"></div>
+        <p>Sonraki haber yükleniyor...</p>
+    </div>
+</div>
+<style>
+.detay-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #1a1a2e;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+.detay-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 18px;
+    font-size: 0.82rem;
+    color: #888;
+}
+.detay-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.detay-meta i {
+    color: #e74c3c;
+}
+.detay-image {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.detay-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+}
+.detay-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+.detay-content p { margin-bottom: 16px; }
+.detay-content img,
+.detay-content picture img,
+.detay-content figure img,
+.detay-content a img,
+.detay-content p img,
+.detay-content table img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 8px;
+    margin: 16px 0;
+    display: block;
+    box-sizing: border-box;
+}
+.detay-content figure { max-width: 100% !important; width: auto !important; margin: 16px 0; }
+.detay-content iframe,
+.detay-content video,
+.detay-content embed,
+.detay-content object {
+    max-width: 100% !important;
+    width: 100% !important;
+    border-radius: 8px;
+    margin: 16px 0;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+.detay-content table {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block;
+    overflow-x: auto;
+}
+.detay-content * { max-width: 100% !important; }
+.detay-source {
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 14px;
+}
+.detay-like {
+    font-size: 0.9rem;
+    color: #e74c3c;
+    margin-bottom: 14px;
+}
+.detay-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 0.82rem;
+    color: #999;
+}
+.detay-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #f0f1f3;
+    border-radius: 16px;
+    color: #555;
+    font-size: 0.78rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.detay-tag:hover {
+    background: #e74c3c;
+    color: #fff;
+}
+.detay-share {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+.detay-share-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+}
+.detay-share-links {
+    display: flex;
+    gap: 8px;
+}
+.detay-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: transform 0.2s, opacity 0.2s;
+}
+.detay-share-btn:hover { transform: translateY(-2px); opacity: 0.85; }
+.share-facebook { background: #1877f2; }
+.share-twitter { background: #1da1f2; }
+.share-whatsapp { background: #25d366; }
+.share-email { background: #555; }
+.detay-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.detay-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #555;
+    flex: 1;
+    transition: all 0.2s;
+}
+.detay-nav-item:hover { background: #e74c3c; color: #fff; }
+.detay-nav-item small { display: block; font-size: 0.72rem; text-transform: uppercase; opacity: 0.7; }
+.detay-nav-item span { font-size: 0.85rem; font-weight: 600; }
+.detay-nav-next { text-align: right; justify-content: flex-end; }
+@media (max-width: 767px) {
+    .detay-img { max-height: 350px; }
+}
+@media (max-width: 575px) {
+    .detay-title { font-size: 2rem; }
+    .detay-nav { flex-direction: column; }
+    .detay-share { flex-direction: column; align-items: flex-start; }
+    .detay-img { max-height: 250px; }
+}
+#infiniteScrollSentinel {
+    padding: 20px 0;
+    text-align: center;
+    min-height: 40px;
+}
+.scroll-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+.scroll-loader p {
+    color: #999;
+    font-size: 0.85rem;
+    margin: 0;
+}
+.haber-ayirici {
+    padding: 30px 0 10px;
+    text-align: center;
+}
+.haber-ayirici-line {
+    width: 80px;
+    height: 3px;
+    background: #e74c3c;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+.haber-kapsa-loaded {
+    animation: haberFadeIn 0.5s ease-out;
+}
+@keyframes haberFadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.reaksiyon-container { padding: 10px 0; }
+.reaksiyon-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+.reaksiyon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: transform 0.2s;
+    user-select: none;
+    min-width: 70px;
+}
+.reaksiyon-item:hover { transform: translateY(-3px); }
+.reaksiyon-item.aktif { transform: translateY(-3px); }
+.reaksiyon-sayi {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 4px;
+}
+.reaksiyon-item.aktif .reaksiyon-sayi { color: #e74c3c; }
+.reaksiyon-cizgi {
+    width: 100%;
+    height: 3px;
+    background: #3b5998;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+.reaksiyon-item.aktif .reaksiyon-cizgi { background: #e74c3c; }
+.reaksiyon-emoji {
+    font-size: 2rem;
+    line-height: 1;
+    transition: transform 0.2s;
+}
+.reaksiyon-item:hover .reaksiyon-emoji { transform: scale(1.2); }
+@media (max-width: 575px) {
+    .reaksiyon-item { padding: 6px 10px; min-width: 50px; }
+    .reaksiyon-emoji { font-size: 1.5rem; }
+    .reaksiyon-sayi { font-size: 0.75rem; }
+}
+.yorum-card {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f1f3;
+}
+.yorum-card:last-child { border-bottom: none; }
+.yorum-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+.yorum-body { flex: 1; min-width: 0; }
+.yorum-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+}
+.yorum-isim {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #1a1a2e;
+}
+.yorum-tarih {
+    font-size: 0.78rem;
+    color: #999;
+}
+.yorum-icerik {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+.yorum-cevapla-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+.yorum-cevapla-btn:hover { opacity: 0.7; }
+.yorum-alt-container {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 14px;
+    border-left: 3px solid #e74c3c20;
+}
+.yorum-alt-container .yorum-card {
+    padding: 10px 0;
+}
+.yorum-alt-container .yorum-avatar {
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+}
+.yorum-daha-cevap {
+    font-size: 0.8rem;
+    color: #e74c3c;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 6px 0;
+    font-weight: 600;
+}
+.yorum-daha-cevap:hover { opacity: 0.7; }
+.yorum-bos {
+    text-align: center;
+    padding: 30px 16px;
+    color: #999;
+    font-size: 0.9rem;
+}
+.yorum-daha-btn {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+.yorum-daha-btn:hover { background: #e74c3c; color: #fff; border-color: #e74c3c; }
+.yorum-form-container {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f1f3;
+}
+.yorum-form-baslik {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+.yorum-form-baslik i { color: #e74c3c; margin-right: 6px; }
+.yorum-form-info {
+    font-size: 0.82rem;
+    color: #999;
+    margin-bottom: 16px;
+}
+#yorum-cevap-bilgi {
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #856404;
+}
+#yorum-cevap-bilgi button {
+    background: none;
+    border: none;
+    color: #856404;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0 4px;
+}
+.yorum-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+.yorum-form-group.full-width { grid-column: 1 / -1; }
+.yorum-form-group label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+}
+.yorum-form-group label i { color: #e74c3c; margin-right: 4px; }
+.yorum-form-group input,
+.yorum-form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #333;
+    transition: border-color 0.2s;
+    font-family: inherit;
+    resize: vertical;
+}
+.yorum-form-group input:focus,
+.yorum-form-group textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231,76,60,0.1);
+}
+.yorum-karakter-sayac {
+    text-align: right;
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-top: 4px;
+}
+.yorum-captcha {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding: 14px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+.yorum-captcha-img label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+}
+.yorum-captcha-img label i { color: #e74c3c; margin-right: 4px; }
+.yorum-captcha-img img { border-radius: 6px; display: block; margin: 6px 0; cursor: pointer; }
+.yorum-captcha-refresh {
+    background: none; border: none; color: #e74c3c; font-size: 0.78rem;
+    cursor: pointer; padding: 0; font-weight: 600;
+}
+.yorum-captcha-refresh:hover { text-decoration: underline; }
+.yorum-captcha-input { flex: 1; }
+.yorum-captcha-input input {
+    width: 100%; max-width: 180px; padding: 10px 14px; border: 1px solid #ddd;
+    border-radius: 8px; font-size: 0.9rem; color: #333; letter-spacing: 3px;
+    font-weight: 700; text-align: center;
+}
+.yorum-captcha-input input:focus { outline: none; border-color: #e74c3c; box-shadow: 0 0 0 3px rgba(231,76,60,0.1); }
+.yorum-gonder-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.yorum-gonder-btn:hover { background: #c0392b; transform: translateY(-1px); }
+.yorum-gonder-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+.yorum-alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+}
+.yorum-alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.yorum-alert-error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+@media (max-width: 575px) {
+    .yorum-form-grid { grid-template-columns: 1fr; }
+    .yorum-alt-container { margin-left: 10px; padding-left: 10px; }
+    .yorum-avatar { width: 36px; height: 36px; font-size: 0.85rem; }
+}
+.haber-ses-player {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+}
+.haber-ses-header {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.haber-ses-player audio {
+    border-radius: 6px;
+}
+</style>
+
+
+
+
+<style>.yb-btn{margin-right:10px}.yb-btn.yb-aktif{color:#dc2626;opacity:1}.yb-btn .yb-sayi{margin-left:4px}.yb-not{display:block;font-size:.8rem;margin-top:6px;color:#6b7280}.yb-not a{text-decoration:underline}</style>
+    </div>
+</section>
+    </div>
+        
+            <div class="container" style="margin-bottom:20px;text-align:center">
+        <div class="pn-item pn-footer-banner"><a href="https://yenislowradyo.com/" title="Slow Radyo - Radyo Dinle" style="display:none;">
+   Yeni Slow Radyo
+</div>
+    </div>
+        
+    <div style="height:40px"></div>    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                    <a href="https://egeyebakis.com/" class="footer-logo">
+                        <img alt="Ege&#x27;ye Bakış" class="footer-logo-img">
+                    </a>
+                    <p>Ege&#x27;ye Bakış - Ege ve Türkiye&#x27;den son dakika haberleri ve güncel gelişmeler</p>
+                                        <div class="footer-social">
+                        <a href="https://www.twitter.com/EgeyeBakis" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>                        <a href="https://www.facebook.com/egeyebakis/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>                        <a href="https://www.instagram.com/egeyebakis/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>                        <a href="https://www.youtube.com/channel/UCq_9G4JdqnybWVn8Acf1tKw" aria-label="YouTube"><i class="fab fa-youtube"></i></a>                                            </div>
+                                                        </div>
+                
+                <div class="footer-nav-group">
+                                        <div>
+                        <h4 class="footer-heading">Kategoriler</h4>
+                        <div class="footer-links">
+                                                                                    <a href="https://egeyebakis.com/yerel">Yerel</a>
+                                                                                                                <a href="https://egeyebakis.com/cevre">Çevre</a>
+                                                                                                                <a href="https://egeyebakis.com/guncel">Güncel</a>
+                                                                                                                <a href="https://egeyebakis.com/siyaset">Siyaset</a>
+                                                                                                                <a href="https://egeyebakis.com/ekonomi">Ekonomi</a>
+                                                                                                                <a href="https://egeyebakis.com/kultur-sanat">Kültür Sanat</a>
+                                                                                                                <a href="https://egeyebakis.com/ozel-haber">Özel Haber</a>
+                                                                                                                <a href="https://egeyebakis.com/roportaj">Röportaj</a>
+                                                                                                                                                                        <a href="https://egeyebakis.com/teknoloji">Teknoloji</a>
+                                                                                                                <a href="https://egeyebakis.com/film-dizi-kitap-gunlukleri">Magazin</a>
+                                                                                                                <a href="https://egeyebakis.com/analiz">Analiz</a>
+                                                                                                                <a href="https://egeyebakis.com/egitim">Eğitim</a>
+                                                                                                                <a href="https://egeyebakis.com/saglik">Sağlık</a>
+                                                                                                                                                                        <a href="https://egeyebakis.com/spor">Spor</a>
+                                                                                                                <a href="https://egeyebakis.com/asayis">Asayiş</a>
+                                                                                                                <a href="https://egeyebakis.com/resmi-ilanlar">RESMİ REKLAMLAR </a>
+                                                                                </div>
+                    </div>
+                                                            <div>
+                        <h4 class="footer-heading">Hızlı Erişim</h4>
+                        <div class="footer-links">
+                                                        <a href="https://egeyebakis.com/son-dakika/"><i class="fas fa-bolt"></i> Son Dakika</a>
+                                                        <a href="https://egeyebakis.com/video-haberler/"><i class="fas fa-video"></i> Video Haberler</a>
+                                                        <a href="https://egeyebakis.com/foto-galeri/"><i class="fas fa-images"></i> Foto Galeri</a>
+                                                        <a href="https://egeyebakis.com/kose-yazarlari/"><i class="fas fa-pen-fancy"></i> Köşe Yazarları</a>
+                                                        <a href="https://egeyebakis.com/burclar/"><i class="fas fa-star"></i> Burç Yorumları</a>
+                                                        <a href="https://egeyebakis.com/hava-durumu/"><i class="fas fa-cloud-sun"></i> Hava Durumu</a>
+                                                        <a href="https://egeyebakis.com/eczaneler/"><i class="fas fa-prescription-bottle-alt"></i> Nöbetçi Eczane</a>
+                                                        <a href="https://egeyebakis.com/piyasalar/"><i class="fas fa-chart-line"></i> Piyasalar</a>
+                                                        <a href="https://egeyebakis.com/iletisim/"><i class="fas fa-envelope"></i> İletişim</a>
+                                                        <a href="https://egeyebakis.com/rsslistesi/"><i class="fas fa-rss" style="color:#ee802f"></i> RSS Beslemeleri</a>
+                                                    </div>
+                    </div>
+                                    </div>
+
+                <div class="footer-newsletter">
+                                        <h4 class="footer-heading">Bülten Aboneliği</h4>
+                    <p>Günün öne çıkan haberlerini her sabah e-posta kutunuza gönderelim.</p>
+                    
+                        
+                        
+                        Abone Ol
+                    
+                                                            <div class="footer-contact">
+                        <h4 class="footer-heading">İletişim</h4>
+                        <div class="footer-links">
+                            <a><i class="fas fa-phone"></i> 0(507) 970 23 51</a>                            <a><i class="fas fa-envelope"></i> info@egeyebakis.com</a>                            <a href="https://egeyebakis.com/iletisim/"><i class="fas fa-map-marker-alt"></i> Konak / İzmir</a>                        </div>
+                    </div>
+                                    </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>© 2026 Ege&#x27;ye Bakış. Tüm hakları saklıdır.</span>
+                <div class="footer-legal">
+                    <a href="https://egeyebakis.com/kurumsal/">Kurumsal</a>
+                    <a href="https://egeyebakis.com/kunye/" style="margin-left:10px;">Künye</a>
+                    <span style="margin-left:10px;opacity:.6;">Haber yazılımı: <a href="https://alestaweb.com/haber-yazilimi" style="color:inherit;">Alesta WEB</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <i class="fas fa-chevron-up"></i>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div id="google_translate_element" style="display:none;"></div>
+    
+    
+            
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
