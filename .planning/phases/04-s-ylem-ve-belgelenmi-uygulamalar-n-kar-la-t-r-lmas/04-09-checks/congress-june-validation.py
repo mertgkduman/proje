@@ -15,8 +15,8 @@ harness.SOURCE = harness.DATA/'practices'/'sources'/'dbp'
 stem = '0409-dbp-2023-5-olaganustu'
 package = here/'congress-june-draft.json'
 review = here/'congress-june-review-draft.json'
-assert harness.sha(package) == '589e154b1e48f3bb9461ed05190046e4bdb27827909d82b8ed6cd82d0798f5ab'
-assert harness.sha(review) == 'b1857ae14f9dd8114932b08259b81c9640c60e50317460d2dbf46ef8532fff01'
+assert harness.sha(package) == 'cab0684c245f4af7c0785f38ce7da48c555fb53416764d25a45ffeceab846d04'
+assert harness.sha(review) == '058d65fd5db9821c9790962abdf3e1725caa4bd27639f3b9d97e74afbeb5b5e4'
 draft = json.loads(package.read_bytes())['practice_records']
 assert len(draft['practice_event']) == 7 and len(draft['practice_relation']) == 4
 assert not draft['practice_closure']

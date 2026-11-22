@@ -7,3 +7,5 @@ Dönemin eş genel başkan vekilleri Zekiye İlbasan ve Faruk Tatlı’nın kong
 BirGün’ün 25 Haziran haberi tarayıcıda okundu. Özgün bayt alımı HTTP 403 döndüğünden çalışma çiftine sürüm veya pasaj eklenmedi. İki diğer haber HTTP 200 ile alındı ve özgün baytlar pasif görünümleriyle saklandı. [BirGün](https://www.birgun.net/haber/dbp-de-olaganustu-kongre-baskanlar-degismedi-448128)
 
 İlk adayda künyenin tarih satırı olay aşaması olarak önerildi ve ön kontrol tarafından reddedildi. Tarih satırı kaynak incelemesinde, olay kanıtı gerçekleşme ve sonuç pasajlarında tutuldu. Olay günü verilmediğinden Haziran 2023 bağlamda saklandı. Belge yayım tarihleri gün kesinliğinde ayrı ayrı kayıtlı.
+
+62414240 girdi, kaynak, SQLite ve JSON doğrulamalarını geçti. Son HTML denetimi iki kişinin adlarını kartta bulamadı. Kaynaklı sonuç satırındaki «iki isim» ifadesi Saliha Aydeniz ile Keskin Bayındır olarak açıldı. Özgün pasaj ve olay kimliği korundu, değişen çift için tam denetim yeniden başlatıldı.

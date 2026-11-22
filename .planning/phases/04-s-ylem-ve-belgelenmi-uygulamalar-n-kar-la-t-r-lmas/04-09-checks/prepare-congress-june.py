@@ -92,7 +92,7 @@ limit = ('Yayın tarihleri ayrı ve olay Haziran 2023 olarak kaydedildi. Haber E
 refs = [
     (jinha+'venue', 'action', 'independent_report', 'JINHAGENCY Ankara Dünya Ticaret Merkezi’nde 5. Olağanüstü Kongreyi haberleştirdi.'),
     (ercis+'venue', 'action', 'independent_report', 'Haber Erciş aynı sıra ve yerdeki kongreyi 26 Haziran tarihli haberde aktardı.'),
-    (jinha+'result', 'result', 'independent_report', 'JINHAGENCY iki ismin yeniden seçildiğini bildirdi.'),
+    (jinha+'result', 'result', 'independent_report', 'JINHAGENCY, Saliha Aydeniz ile Keskin Bayındır’ın yeniden eş genel başkan seçildiğini bildirdi.'),
     (ercis+'vote', 'result', 'independent_report', 'Haber Erciş aday önergesinin oy birliğiyle kabulünü ve iki ismin yeniden seçilmesini bildirdi.'),
 ]
 eid = event(stem, None, 'DBP 5. Olağanüstü Kongresinde eş genel başkan seçimi', context, refs, limit)
