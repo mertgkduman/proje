@@ -16,16 +16,17 @@ cases = {
                '3805e36c9eb643d1978a0a1306a65064f54168c53a51230a5209c89af3bc0ff1',
                'cee5aa56d52c7659a8f23216056b0ce38bd1d4964dd8c1db259abc78e6615907'),
     'demokrat': ('12','0412-demokrat-2024-merkez-kurul-secimi','0412-demokrat-2024-merkez-kurul-secimi-gik-relation',
-                 'a44da54d6ddce016c06f0edb78ee5d17787d4cf9d164cfb2c6a92038148c7d13',
-                 '9f458f7b54249e373f65171bf8aa805f65dae9013fd0039d23c8cbcb595f9363'),
+                 'be44a4e34558c7da52365b501622e0d79a4ef3a8efd779ac129b2fa3178c888b',
+                 'fa239f2e4cf050c3da8b909b3a2f0acb4434121037bafedaa39814b543b510a5'),
 }
 party=sys.argv[1]
 plan,stem,relation,package_hash,review_hash=cases[party]
 here=phase/f'04-{plan}-checks'
 harness.HERE=here
 harness.SOURCE=harness.DATA/'practices'/'sources'/party
-package=here/'congress-followup-draft.json'
-review=here/'congress-followup-review-draft.json'
+sample='congress-followup-v2' if party=='demokrat' else 'congress-followup'
+package=here/f'{sample}-draft.json'
+review=here/f'{sample}-review-draft.json'
 assert (harness.sha(package),harness.sha(review))==(package_hash,review_hash)
 receipt=harness.main(package,review,'congress-followup',stem+'-event',relation,None,
                      expected_party=party,namespace=f'gsd-04{plan}')
