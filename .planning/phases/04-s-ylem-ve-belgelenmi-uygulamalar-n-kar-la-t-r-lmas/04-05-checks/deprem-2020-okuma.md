@@ -353,3 +353,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - Aynı görüşmenin normalize metninde 325500–335000 okundu: Çetin konuşmasını bitirir, MHP adına Lütfi Kaşıkçı komisyon raporunun veri ve önerilerini anlatır. Söylenen sayılar ve siyasi değerlendirmeler konuşmacılara aittir; rapor önerileri uygulanmış ya da TİP sonucu olarak sunulmadı. Konum 335000 sonrası açık.
 
 - Aynı görüşmenin normalize metninde 335000–344500 okundu: Kaşıkçı'nın bina envanteri, dönüşüm, yapı denetimi ve afet yönetimi düzenlemelerine dair rapor önerilerini anlatımı sürer. Sözler MHP adına konuşmacıya aittir; TİP'e atfedilmedi veya uygulanmış sayılmadı. Konum 344500 sonrası açık.
+
+- Aynı görüşmenin normalize metninde 344500–354000 okundu: Kaşıkçı konuşmasını bitirir, HDP adına Ali Kenanoğlu konuşmaya başlar. Raporun uygulanması hakkındaki eleştiriler Kenanoğlu'na aittir; TİP kaynaklı veya bağımsızca kanıtlanmış sonuç sayılmadı. Konum 354000 sonrası açık.
