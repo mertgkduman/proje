@@ -1,0 +1,11 @@
+Staged 66 original, readable and view paths; package 36fca0cc585a4c9b85ecdf91616b5b402206cd03b6a7ec739bf7eaae11ba1c8f; review 6eaaf10993ae06dafa1c6956573de2aa2923b7850ff1235275ccaaf44d69f8ee
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/104172-validation.py", line 151, in <module>
+    main(Path(arguments[0]).resolve(), Path(arguments[1]).resolve(), *arguments[2:])
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/104172-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/104172-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/104172-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1
