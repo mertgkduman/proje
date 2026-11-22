@@ -273,3 +273,7 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 385–389 metin katmanı okundu: mevzuatın uygulanmasındaki komisyon tespitleri, 2020 idari yazı ve eski/yeni afet kurulları anlatılır. Yazı, Baş’ın çağrısına nedensel yanıt olarak gösterilmedi; komisyonun üst kurul önerisi uygulanmış karar sayılmadı. İndeks 390 ve sonrası açık.
 
 - 2021 raporu indeks 390–394 metin katmanı okundu: AFAD ve kurumlar arası koordinasyonun komisyon değerlendirmesi ve kamu-özel iş birliği önerileri yer alır. Kurumsal değerlendirme ve öneriler TİP’in talebine nedensel yanıt ya da gerçekleşmiş sonuç sayılmadı; indeks 395 ve sonrası açık.
+
+- 2021 raporu indeks 395–399 metin katmanı okundu: denetim sorumluluğu ve afet davaları, özel ihtisas yargısı önerisi, yapı güçlendirme ve dönüşüm finansmanı değerlendirilir. 2021'e ait maliyet ve yapı stoku tahminleri güncel veri veya gerçekleşen sonuç olarak kullanılmadı; uzmanlık mahkemesi önerisi uygulama sayılmadı. İndeks 400–523 ve sayfalardaki görseller açık.
+
+- 2021 raporu indeks 400–404 metin katmanı okundu: yerel katılım ve farkındalık, tatbikat ve öğretim, kamu personeli eğitimi, kırılgan grupların farklı ihtiyaçları komisyon tarafından değerlendirilir. Bunlar TİP'e atfedilmedi; tavsiyeler uygulanmış sayılmadı. İndeks 405–523 ve görseller açık.
