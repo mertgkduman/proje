@@ -6,7 +6,7 @@ current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılmas
 current_plan: 4
 status: executing
 stopped_at: Wave 4 source research and isolated previews in progress
-last_updated: "2026-11-22T10:41:21.040Z"
+last_updated: "2026-11-22T11:07:21.019Z"
 last_activity: 2026-11-22
 last_activity_desc: Phase 04 wave 4 research and package verification in progress
 state_head: d3f6287208cf5397716d45325d67ee64557fb39c
@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
 Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: 2026-11-22 UTC — Yeni Parti 139 olay ve 140 ilişkiye, TİP 8 olay ve 9 ilişkiye, DEM Parti 8 olay ve 8 ilişkiye, EMEP 11 olay ve 11 ilişkiye ulaştı. Demokrat Parti ve Yeni Yol beşer, İYİ Parti ve DBP dörder, Saadet üç olay kaydını doğruladı. Parti kapsamları açık.
+Last activity: 2026-11-22 UTC — Yeni Parti 139 olay ve 140 ilişkiye, TİP 8 olay ve 9 ilişkiye, DEM Parti 8 olay ve 8 ilişkiye, EMEP 11 olay ve 11 ilişkiye ulaştı. Demokrat Parti ve Yeni Yol beşer, İYİ Parti, DBP ve Saadet dörder olay kaydını doğruladı. Parti kapsamları açık.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
