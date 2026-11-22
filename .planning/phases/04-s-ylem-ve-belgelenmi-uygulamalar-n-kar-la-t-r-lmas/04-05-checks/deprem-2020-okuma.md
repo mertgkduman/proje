@@ -173,3 +173,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 135–139 okundu: MTA’nın fay haritalama ve paleosismoloji çalışmaları ve AFAD deprem tehlike haritaları rapor tarihindeki kaynaklara dayanılarak özetleniyor. Öncesinde başlayan çalışmalar TİP’e veya Baş’ın önerisinin sonucuna atfedilmedi; indeks 140 ve sonrası açık.
 
 - 2021 raporu indeks 140–144 okundu: sıvılaşma, heyelan duyarlılığı ve mikrobölgeleme haritaları ile deprem gözleminin teknik çerçevesi; mevcut ve hedeflenen çalışmalar ayrı aktarılır. Planlar tamamlanmış veya TİP kaynaklı sayılmadı; indeks 145 ve sonrası açık.
+
+- 2021 raporu indeks 145–149 okundu: AFAD, Kandilli ve diğer sismik gözlem ağlarının 2020–2021 itibarıyla tarihçesi, veri paylaşımı ve kapasiteleri komisyon kaynaklarıyla anlatılır. Kurum beyanları güncel kapasite veya TİP sonucu sayılmadı; indeks 150 ve sonrası açık.
