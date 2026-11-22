@@ -1,0 +1,156 @@
+{
+  "tranche_id": "0404-yeni-party-api-001",
+  "queue_sha256": "4fbc59477ad6c2a93ccfbefdc88f676874f04c3d3e5ac300c942d37efea0b356",
+  "processed_at": "2026-11-22T00:53:29+00:00",
+  "status": "body_ranges_read_followups_open",
+  "char_count": 47779,
+  "source_section_ranges": [
+    {
+      "id": 297,
+      "section_start": 1,
+      "section_end": 10,
+      "char_start": 0,
+      "char_end": 5496,
+      "source_sha256": "4f726244196b2d131fea93f8c204348eca409a6d3761b4ba15b6a048257dffa3",
+      "source_url": "https://api.yeni-parti.org.tr/api/haberler/297",
+      "created_at": "2026-11-10T17:45:22.770Z"
+    },
+    {
+      "id": 296,
+      "section_start": 1,
+      "section_end": 1,
+      "char_start": 0,
+      "char_end": 197,
+      "source_sha256": "939dd03523447d4cbc1a041ace70cc1a33a869faf123e1a232f13e923291f312",
+      "source_url": "https://api.yeni-parti.org.tr/api/haberler/296",
+      "created_at": "2026-11-10T10:29:47.337Z"
+    },
+    {
+      "id": 295,
+      "section_start": 1,
+      "section_end": 112,
+      "char_start": 0,
+      "char_end": 27849,
+      "source_sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
+      "source_url": "https://api.yeni-parti.org.tr/api/haberler/295",
+      "created_at": "2026-11-09T16:08:39.050Z"
+    },
+    {
+      "id": 294,
+      "section_start": 1,
+      "section_end": 25,
+      "char_start": 0,
+      "char_end": 14237,
+      "source_sha256": "b3361f5b31af97d01d2d2145e5fa425512c9443be8ae46bf1f08de0d4ca41dbd",
+      "source_url": "https://api.yeni-parti.org.tr/api/haberler/294",
+      "created_at": "2026-11-09T15:03:03.423Z"
+    }
+  ],
+  "readings": [
+    {
+      "id": 297,
+      "section_start": 1,
+      "section_end": 10,
+      "notes": "TBMM konuşmasında 10 Kasım anması, Cumhuriyet dönemindeki yatırımlar ve finansman örnekleri, özelleştirme ve bütçe faizi değerlendirmesi. Kişi ve rakam iddiaları bağımsız doğrulama gerektiriyor. Parti kaydı kesimden sonra oluşturulmuş. Asıl konuşma TBMM’nin birinci oturum tutanağına bağlandı.",
+      "next_leads": [
+        "0404-kesim-tbmm-konusma-event"
+      ]
+    },
+    {
+      "id": 296,
+      "section_start": 1,
+      "section_end": 1,
+      "notes": "Özgür Özel’in Anıtkabir devlet törenine katılımı hakkında kısa parti duyurusu. Törenin başlangıcı ve katılım Anadolu Ajansı ile TBMM Başkanı’nın iletişim kaydından incelendi.",
+      "next_leads": [
+        "0404-kesim-anitkabir-event"
+      ]
+    },
+    {
+      "id": 295,
+      "section_start": 1,
+      "section_end": 19,
+      "notes": "Kurucular Kurulu, Parti Meclisi ve MYK toplantıları, Aliağa iş kazası için heyet görevlendirme beyanı, Aliyev ile telefon görüşmesi bildirimi, kurultay hazırlığı ve ön seçim katılım rakamları. Heyetin gerçekleşen işlemi ve seçim tutanağı ayrı kaynak ister.",
+      "next_leads": [
+        "0404-genelbaskan-onsecim",
+        "https://tbmm.gov.tr/Haber/tbmm-genel-kurulu-toplandi-20261110161117"
+      ]
+    },
+    {
+      "id": 295,
+      "section_start": 20,
+      "section_end": 31,
+      "notes": "Fon soruşturmasında zarar ve kişi iddiaları ile şeffaflık talebi. Sayılar, sorumluluk ve hüküm durumu sözcünün beyanından ayrı doğrulanmalı.",
+      "next_leads": [
+        "https://tbmm.gov.tr/Haber/adalet-bakanliginin-2027-yili-butce-20261109131015"
+      ]
+    },
+    {
+      "id": 295,
+      "section_start": 32,
+      "section_end": 45,
+      "notes": "Tarımda girdi maliyetleri ve üretim planlaması talebi. AB sanayi politikası, lojistik hizmet sağlayıcısı kapsamı, Schengen süre ve randevu talepleri. AB önerileri ayrı siyasi söylem olarak açık kaynak kapsamına alındı.",
+      "next_leads": [
+        "0404-ab-made-in-europe-1026-event"
+      ]
+    },
+    {
+      "id": 295,
+      "section_start": 46,
+      "section_end": 60,
+      "notes": "MEB hesapları ve Sayıştay hakkında açıklamalar, okulda ücretsiz yemek oylaması iddiası, ilaç kullanımı ve basın özgürlüğü değerlendirmesi. 2/3827 ücretsiz yemek teklifi için gerçek TBMM kaydı bulundu. Emre’nin andığı ret işleminin aynı kayıt olduğu kurulmadı.",
+      "next_leads": [
+        "https://tbmm.gov.tr/Yasama/KanunTeklifi/5d13749f-7351-4fe3-841d-01a08b317303",
+        "https://tbmm.gov.tr/Haber/milli-egitim-bakanliginin-2027-yili-20261112133353"
+      ]
+    },
+    {
+      "id": 295,
+      "section_start": 61,
+      "section_end": 74,
+      "notes": "Etik kurul ve görev süreleri, Parti Meclisi için geçici üye sayısı ve üç işlev alanı. Yönetmelikle belirlenecek unsurlar beyan kapsamındadır. 150 asıl ve 30 yedek açıklaması mevcut Parti Meclisi kaydına bağlandı.",
+      "next_leads": [
+        "0404-pm-degisikligi-event"
+      ]
+    },
+    {
+      "id": 295,
+      "section_start": 75,
+      "section_end": 94,
+      "notes": "Fon soruşturması konusunda on kişilik çalışma grubu ve cezaevi ziyaretleri beyanı, komisyon oylaması iddiası ve soruşturma hakkındaki gazeteci soruları. Ziyaret, oylama ve isnatlar ayrı kaynakla değerlendirilmek üzere açık.",
+      "next_leads": [
+        "https://tbmm.gov.tr/Haber/adalet-bakanliginin-2027-yili-butce-20261109131015"
+      ]
+    },
+    {
+      "id": 295,
+      "section_start": 95,
+      "section_end": 112,
+      "notes": "Tekirdağ belediye başkanının istifasına ilişkin sözcü yanıtı, delegelik açıklamasına itiraz ve duyumlar. 7 Kasım istifa açıklaması ile 9 Kasım sözcü yanıtı ayrı görüşler ve zamanlar.",
+      "next_leads": [
+        "https://bianet.org/haber/candan-yuceer-yeni-parti-den-istifa-etti-325193",
+        "https://bianet.org/haber/yeni-parti-den-istifa-eden-candan-yuceer-in-akp-ye-gececegi-iddiasi-325236"
+      ]
+    },
+    {
+      "id": 294,
+      "section_start": 1,
+      "section_end": 12,
+      "notes": "9 Kasım Plan ve Bütçe Komisyonu konuşması. Yargıya güven, anayasal bağlayıcılık, yargısal atama ve görev çakışmaları hakkındaki eleştiriler ile Esenyurt ve Beyoğlu örnekleri ayrı atıflı iddialar. Komisyonun Adalet Bakanlığı oturumu ve bakanın açıklaması TBMM kaydında.",
+      "next_leads": [
+        "https://tbmm.gov.tr/Haber/Detay?Id=60ecbb50-4e95-437e-abf4-01a1bfc82bc9",
+        "https://tbmm.gov.tr/Haber/adalet-bakanliginin-2027-yili-butce-20261109131015"
+      ]
+    },
+    {
+      "id": 294,
+      "section_start": 13,
+      "section_end": 25,
+      "notes": "Komisyon konuşmasının devamında yargı dosyalarına ilişkin iddialar, duruşma yayını, bakan yardımcısı ve HSK atamaları, malvarlığı açıklaması, yerel yönetimlere yönelik işlemler ve gelecekteki yargı bağımsızlığı taahhüdü. Tutanakla konuşma doğrulanabilir, ileri sürülen olaylar ayrı kanıt gerektirir.",
+      "next_leads": [
+        "https://vekilpedia.com/konusma/gokhan-gunaydin-2026-11-09-tutanak-metni"
+      ]
+    }
+  ],
+  "next_tranche_id": "0404-yeni-party-api-002",
+  "closure_refs": []
+}
