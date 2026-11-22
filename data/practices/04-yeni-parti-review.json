@@ -836,27 +836,27 @@
       "subject_kind": "practice_event",
       "subject_id": "0404-genelbaskan-onsecim",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-21T20:05:37+00:00",
-      "source_version_ids": "[\"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\"]",
-      "passage_ids": "[\"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\"]",
-      "inspected_sections": "[\"Gazete Oksijen ulusal ön seçim açıklaması\", \"Hudut Edirne merkez sandıkları\", \"Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları\"]",
+      "reviewed_at": "2026-11-22T00:42:45+00:00",
+      "source_version_ids": "[\"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\", \"0404-yeni-parti-haber-289-v1\", \"0404-yeni-parti-haber-291-v1\"]",
+      "passage_ids": "[\"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\", \"0404-yeni-parti-haber-289-onsecim-p\", \"0404-yeni-parti-haber-291-onsecim-p\"]",
+      "inspected_sections": "[\"Gazete Oksijen ulusal ön seçim açıklaması\", \"Hudut Edirne merkez sandıkları\", \"Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları\", \"Parti 289 ön seçimde oy kullanma anlatımı\", \"Parti 291 katılım oranı beyanı\"]",
       "supported_claim": "Ulusal ön seçim açıklaması ve Edirne ile Eskişehirdeki yerel sandık haberleri aynı genel başkan ön seçimine ilişkindir.",
-      "limitations": "Yerel sandıklar ulusal olayla örtüşür; sayılar toplanmaz ve sonraki kurultay sonucu çıkarılmaz.",
+      "limitations": "Yerel sandıklar ulusal olayla örtüşür; sayılar toplanmaz ve sonraki kurultay sonucu çıkarılmaz. Parti oranı ulusal beyan olup yerel ön seçimlerle toplanmaz; 291 kayıt oluşturma günü Türkiye saatinde 9 Kasımdır.",
       "result": "reviewed",
-      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
+      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı. Parti JSON 289 ve 291 ayrı okunup kaynak zincirine eklendi."
     },
     {
       "subject_kind": "practice_relation",
       "subject_id": "0404-genelbaskan-onsecim-iliski-id",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-21T20:05:37+00:00",
-      "source_version_ids": "[\"0105-speech-v1\", \"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\"]",
-      "passage_ids": "[\"0105-speech-p\", \"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\"]",
-      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi\", \"Gazete Oksijen ulusal ön seçim açıklaması\", \"Hudut Edirne merkez sandıkları\", \"Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları\"]",
+      "reviewed_at": "2026-11-22T00:42:45+00:00",
+      "source_version_ids": "[\"0105-speech-v1\", \"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\", \"0404-yeni-parti-haber-289-v1\", \"0404-yeni-parti-haber-291-v1\"]",
+      "passage_ids": "[\"0105-speech-p\", \"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\", \"0404-yeni-parti-haber-289-onsecim-p\", \"0404-yeni-parti-haber-291-onsecim-p\"]",
+      "inspected_sections": "[\"Euronews 4 Ağustos başkanların üyelerce seçimi\", \"Gazete Oksijen ulusal ön seçim açıklaması\", \"Hudut Edirne merkez sandıkları\", \"Siyaset Akademi / Eskişehir Haber Ajansı Eskişehir sandıkları\", \"Parti 289 ön seçimde oy kullanma anlatımı\", \"Parti 291 katılım oranı beyanı\"]",
       "supported_claim": "Beyan ve ulusal ön seçim ile Edirne ve Eskişehir yerel sandık haberleri aynı seçim yöntemine ilişkindir.",
-      "limitations": "Yerel sandıklar ulusal ön seçimle örtüşür; kurultay ve toplam sayı ayrı ele alınır.",
+      "limitations": "Yerel sandıklar ulusal ön seçimle örtüşür; kurultay ve toplam sayı ayrı ele alınır. Parti oranı ulusal beyan olup yerel ön seçimlerle toplanmaz; 291 kayıt oluşturma günü Türkiye saatinde 9 Kasımdır.",
       "result": "reviewed",
-      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı."
+      "reason": "Ulusal ön seçim haberi ve açıklanan seçim yöntemi ilgili kaynaklara karşılaştırıldı. Parti JSON 289 ve 291 ayrı okunup kaynak zincirine eklendi."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -1577,14 +1577,14 @@
       "subject_kind": "practice_relation",
       "subject_id": "0404-pm-degisikligi-iliski-id",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-21T21:35:30+00:00",
-      "source_version_ids": "[\"epm-charter-v1\", \"0404-tuzuk-degisikligi-haber-v1\", \"0404-charter-announcement-api-v1\"]",
-      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\", \"0404-tuzuk-degisikligi-haber-p\", \"0404-charter-announcement-api-p\"]",
-      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\", \"Kuruluş tüzüğü Kurucular Kurulu geçici seçim\", \"Cumhuriyet 9 Kasım değişiklik haberi\", \"9 Kasım site JSON sözcü açıklaması tek seferlik süre ve üye sayıları\"]",
-      "supported_claim": "Kuruluş tüzüğü ile 9 Kasım açıklaması bileşim açısından karşılaştırıldı.",
-      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "reviewed_at": "2026-11-22T00:26:16+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-tuzuk-degisikligi-haber-v1\", \"0404-charter-announcement-api-v1\", \"0404-pm-artis-amida-v1\", \"0404-sonraki-tuzuk-16kasim-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\", \"0404-tuzuk-degisikligi-haber-p\", \"0404-charter-announcement-api-p\", \"0404-pm-artis-amida-p\", \"0404-sonraki-tuzuk-16kasim-gecici6-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Parti Meclisi\", \"Kuruluş tüzüğü kurucu seçim hükmü\", \"Cumhuriyet 9 Kasım değişiklik haberi\", \"9 Kasım sözcü açıklamasında 150 ve 30\", \"Amida 15 Kasım sonraki artış haberi\", \"16 Kasım üretilen PDF Geçici Madde 6\"]",
+      "supported_claim": "Tarih sırasıyla 9 Kasım açıklaması ve sonraki sayı anlatımları ayrıldı.",
+      "limitations": "9 Kasım kararının tam metni ve sonraki artışın metne işlenme zamanı doğrulanmadı.",
       "result": "reviewed",
-      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+      "reason": "Kuruluş tüzüğü, 9 Kasım haber ve sözcü açıklaması ile sonraki Amida ve PDF pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -1603,14 +1603,14 @@
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0404-pm-degisikligi-iliski-id",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-21T21:35:30+00:00",
-      "source_version_ids": "[\"epm-charter-v1\", \"0404-tuzuk-degisikligi-haber-v1\", \"0404-charter-announcement-api-v1\"]",
-      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\", \"0404-tuzuk-degisikligi-haber-p\", \"0404-charter-announcement-api-p\"]",
-      "inspected_sections": "[\"Kuruluş tüzüğü Madde 22 Parti Meclisi\", \"Kuruluş tüzüğü Kurucular Kurulu geçici seçim\", \"Cumhuriyet 9 Kasım değişiklik haberi\", \"9 Kasım site JSON sözcü açıklaması tek seferlik süre ve üye sayıları\"]",
-      "supported_claim": "Açıklama eski hüküm, haber ve geçici düzen sözcü açıklamasını ayırıyor.",
-      "limitations": "Tam değişiklik metni ve eski tüzüğün sonraki yürürlüğü görülmedi; JSON yayın sözcü beyanıdır.",
+      "reviewed_at": "2026-11-22T00:26:16+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-tuzuk-degisikligi-haber-v1\", \"0404-charter-announcement-api-v1\", \"0404-pm-artis-amida-v1\", \"0404-sonraki-tuzuk-16kasim-v1\"]",
+      "passage_ids": "[\"0303-epm-extra-merkez-kurul-olusumu-p\", \"0303-kurucular-secim-p\", \"0404-tuzuk-degisikligi-haber-p\", \"0404-charter-announcement-api-p\", \"0404-pm-artis-amida-p\", \"0404-sonraki-tuzuk-16kasim-gecici6-p\"]",
+      "inspected_sections": "[\"Kuruluş tüzüğü Parti Meclisi\", \"Kuruluş tüzüğü kurucu seçim hükmü\", \"Cumhuriyet 9 Kasım değişiklik haberi\", \"9 Kasım sözcü açıklamasında 150 ve 30\", \"Amida 15 Kasım sonraki artış haberi\", \"16 Kasım üretilen PDF Geçici Madde 6\"]",
+      "supported_claim": "Açıklama sonraki 160 sayısını kesim içi karar diye sunmuyor.",
+      "limitations": "9 Kasım kararının tam metni ve sonraki artışın metne işlenme zamanı doğrulanmadı.",
       "result": "reviewed",
-      "reason": "Kuruluş tüzüğü ve 9 Kasım haber ve sözcü açıklaması kaynaklarında karşılaştırıldı."
+      "reason": "Kuruluş tüzüğü, 9 Kasım haber ve sözcü açıklaması ile sonraki Amida ve PDF pasajları okundu."
     },
     {
       "subject_kind": "practice_statement",
@@ -3462,14 +3462,14 @@
       "subject_kind": "practice_relation",
       "subject_id": "0404-tbmm-onsecim-iliski-id",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-21T23:16:07+00:00",
-      "source_version_ids": "[\"0105-tbmm-group-v1\", \"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\"]",
-      "passage_ids": "[\"0105-tbmm-statement-p\", \"0105-tbmm-statement-detail-p\", \"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\"]",
-      "inspected_sections": "[\"3 Kasım TBMM haberinde ön seçim beyanı\", \"TBMM haberinde 81 il ve üye sayısı beyanı\", \"8 Kasım ulusal ön seçim haberi\", \"8 Kasım Edirne sandığı haberi\", \"8 Kasım Eskişehir sandığı haberi\"]",
+      "reviewed_at": "2026-11-22T00:42:45+00:00",
+      "source_version_ids": "[\"0105-tbmm-group-v1\", \"0404-genelbaskan-onsecim-v1\", \"0404-edirne-genel-onsecim-v1\", \"0404-eskisehir-genel-onsecim-v1\", \"0404-yeni-parti-haber-289-v1\", \"0404-yeni-parti-haber-291-v1\"]",
+      "passage_ids": "[\"0105-tbmm-statement-p\", \"0105-tbmm-statement-detail-p\", \"0404-genelbaskan-onsecim-p\", \"0404-edirne-genel-onsecim-p\", \"0404-eskisehir-genel-baslama-p\", \"0404-yeni-parti-haber-289-onsecim-p\", \"0404-yeni-parti-haber-291-onsecim-p\"]",
+      "inspected_sections": "[\"3 Kasım TBMM haberinde ön seçim beyanı\", \"TBMM haberinde 81 il ve üye sayısı beyanı\", \"8 Kasım ulusal ön seçim haberi\", \"8 Kasım Edirne sandığı haberi\", \"8 Kasım Eskişehir sandığı haberi\", \"Parti 289 ön seçimde oy kullanma anlatımı\", \"Parti 291 katılım oranı beyanı\"]",
       "supported_claim": "3 Kasım beyanı ile ulusal ve iki yerel ön seçim kaydı ilişkilidir.",
-      "limitations": "Beyandaki 800 bin sayı gerçekleşmiş katılım değildir; yerel ve ulusal kayıtlar örtüşür.",
+      "limitations": "Beyandaki 800 bin sayı gerçekleşmiş katılım değildir; yerel ve ulusal kayıtlar örtüşür. Parti oranı ulusal beyan olup yerel ön seçimlerle toplanmaz; 291 kayıt oluşturma günü Türkiye saatinde 9 Kasımdır.",
       "result": "reviewed",
-      "reason": "TBMM haberinin özgün baytı ile ulusal ve yerel sandık haberleri karşılaştırıldı."
+      "reason": "TBMM haberinin özgün baytı ile ulusal ve yerel sandık haberleri karşılaştırıldı. Parti JSON 289 ve 291 ayrı okunup kaynak zincirine eklendi."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -4770,6 +4770,1267 @@
       "limitations": "Yazılı soru yanıt veya fiili sonuç değildir.",
       "result": "reviewed",
       "reason": "Kurucu program ve TBMM kaydı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-tbmm-grup-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:13:36+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0303-epm-grup-tbmm-grup-p3\", \"0303-epm-grup-tbmm-grup-p4\", \"0303-epm-grup-tbmm-grup-p5\"]",
+      "inspected_sections": "[\"Tüzük grup organlarını belirleme\", \"Tüzük başkanvekillerinin görevi\", \"Tüzük grup yönetiminin görevi\", \"Tüzük MYK üyelerinin toplantıya katılması\"]",
+      "supported_claim": "Tüzük grup organlarının belirlenmesi ve görevlerini düzenler.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğünün TBMM grubu hükümleri ve Dünya Gazetesinin 24 Temmuz haberi okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-tbmm-grup-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:13:36+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0303-epm-grup-tbmm-grup-p3\", \"0303-epm-grup-tbmm-grup-p4\", \"0303-epm-grup-tbmm-grup-p5\"]",
+      "inspected_sections": "[\"Tüzük grup organlarını belirleme\", \"Tüzük başkanvekillerinin görevi\", \"Tüzük grup yönetiminin görevi\", \"Tüzük MYK üyelerinin toplantıya katılması\"]",
+      "supported_claim": "Özet tüzüğün grup yönetimi, görevi ve toplantı pasajlarına dayanır.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğünün TBMM grubu hükümleri ve Dünya Gazetesinin 24 Temmuz haberi okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-tbmm-grup-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:13:36+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\"]",
+      "inspected_sections": "[\"Tüzük grup organlarını belirleme\"]",
+      "supported_claim": "Alıntı grup başkanvekillerinin belirlenmesi hükmüdür.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğünün TBMM grubu hükümleri ve Dünya Gazetesinin 24 Temmuz haberi okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-secim-0724-event|0404-grup-kurulus-dunya-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:13:36+00:00",
+      "source_version_ids": "[\"0404-grup-kurulus-dunya-v1\"]",
+      "passage_ids": "[\"0404-grup-kurulus-dunya-p\"]",
+      "inspected_sections": "[\"Dünya kapalı grup seçimi paragrafı\"]",
+      "supported_claim": "Dünya haberi kapalı grup toplantısındaki üç başkanvekilinin seçimini bildirir.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğünün TBMM grubu hükümleri ve Dünya Gazetesinin 24 Temmuz haberi okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-grup-secim-0724-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:13:36+00:00",
+      "source_version_ids": "[\"0404-grup-kurulus-dunya-v1\"]",
+      "passage_ids": "[\"0404-grup-kurulus-dunya-p\"]",
+      "inspected_sections": "[\"Dünya kapalı grup seçimi paragrafı\"]",
+      "supported_claim": "24 Temmuz grup başkanvekili seçimi haberden kaydedildi.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğünün TBMM grubu hükümleri ve Dünya Gazetesinin 24 Temmuz haberi okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:31:11+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-grup-kurulus-dunya-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0404-grup-kurulus-dunya-p\", \"0303-epm-grup-tbmm-grup-p3\", \"0303-epm-grup-tbmm-grup-p4\", \"0303-epm-grup-tbmm-grup-p5\"]",
+      "inspected_sections": "[\"Madde 39, başkanvekilleri ve kurul seçimi\", \"Kapalı grup toplantısı ve başkanvekili seçimi\", \"Madde 39, başkanvekillerinin görevleri\", \"Madde 39, yönetim kurulunun yasama ve disiplin görevleri\", \"Madde 39, MYK üyelerinin oy kullanmadan katılması\"]",
+      "supported_claim": "Tüzükteki grup belirleme yetkisi ve haber verilen seçim ilişkilidir.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Madde 39’un başkanvekili, grup yönetim kurulu ve toplantıya katılım hükümleriyle 24 Temmuz seçim haberi karşılaştırıldı. Bu kaynaklar ayrı grup görevlerini göstermektedir."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:13:36+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0303-epm-grup-tbmm-grup-p3\", \"0303-epm-grup-tbmm-grup-p4\", \"0303-epm-grup-tbmm-grup-p5\"]",
+      "inspected_sections": "[\"Tüzük grup organlarını belirleme\", \"Tüzük başkanvekillerinin görevi\", \"Tüzük grup yönetiminin görevi\", \"Tüzük MYK üyelerinin toplantıya katılması\"]",
+      "supported_claim": "Hedef TBMM grup yetki ve görevleri hükmüdür.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğünün TBMM grubu hükümleri ve Dünya Gazetesinin 24 Temmuz haberi okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:13:36+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-grup-kurulus-dunya-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0404-grup-kurulus-dunya-p\"]",
+      "inspected_sections": "[\"Tüzük grup organlarını belirleme\", \"Dünya kapalı grup seçimi paragrafı\"]",
+      "supported_claim": "Açıklama seçim haberinden bütün usul uygunluğunu çıkarmıyor.",
+      "limitations": "Haber tek başına grup iç yönetmeliğinin bütün usulünü ve sonraki görev değişikliklerini belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğünün TBMM grubu hükümleri ve Dünya Gazetesinin 24 Temmuz haberi okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event|0404-grup-yonetim-ekonomim-context-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:17:18+00:00",
+      "source_version_ids": "[\"0404-grup-yonetim-ekonomim-v1\"]",
+      "passage_ids": "[\"0404-grup-yonetim-ekonomim-context-p\"]",
+      "inspected_sections": "[\"Ekonomim TBMM toplantısı paragrafı\"]",
+      "supported_claim": "Ekonomim TBMM kapalı grup toplantısını bildirir.",
+      "limitations": "Haber grup iç yönetmeliğinin bütün usulünü veya sonraki görev değişikliklerini tek başına belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Ekonomim’in 28 Temmuz tarihli haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event|0404-grup-yonetim-ekonomim-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:17:18+00:00",
+      "source_version_ids": "[\"0404-grup-yonetim-ekonomim-v1\"]",
+      "passage_ids": "[\"0404-grup-yonetim-ekonomim-p\"]",
+      "inspected_sections": "[\"Ekonomim grup yönetimi isimleri\"]",
+      "supported_claim": "Haberde beş grup yönetim kurulu üyesi listelenir.",
+      "limitations": "Haber grup iç yönetmeliğinin bütün usulünü veya sonraki görev değişikliklerini tek başına belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Ekonomim’in 28 Temmuz tarihli haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:17:18+00:00",
+      "source_version_ids": "[\"0404-grup-yonetim-ekonomim-v1\"]",
+      "passage_ids": "[\"0404-grup-yonetim-ekonomim-context-p\", \"0404-grup-yonetim-ekonomim-p\"]",
+      "inspected_sections": "[\"Ekonomim TBMM toplantısı paragrafı\", \"Ekonomim grup yönetimi isimleri\"]",
+      "supported_claim": "28 Temmuz tarihli haber toplantı ve grup yönetimini aktarır.",
+      "limitations": "Haber grup iç yönetmeliğinin bütün usulünü veya sonraki görev değişikliklerini tek başına belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Ekonomim’in 28 Temmuz tarihli haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:31:11+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-grup-yonetim-ekonomim-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0404-grup-yonetim-ekonomim-context-p\", \"0404-grup-yonetim-ekonomim-p\", \"0303-epm-grup-tbmm-grup-p3\", \"0303-epm-grup-tbmm-grup-p4\", \"0303-epm-grup-tbmm-grup-p5\"]",
+      "inspected_sections": "[\"Madde 39, başkanvekilleri ve kurul seçimi\", \"TBMM kapalı grup toplantısı\", \"TBMM grup yönetim kurulu üyeleri\", \"Madde 39, başkanvekillerinin görevleri\", \"Madde 39, yönetim kurulunun yasama ve disiplin görevleri\", \"Madde 39, MYK üyelerinin oy kullanmadan katılması\"]",
+      "supported_claim": "Tüzüğün grup yönetimini belirleme hükmü ile haber ilişkilidir.",
+      "limitations": "Haber grup iç yönetmeliğinin bütün usulünü veya sonraki görev değişikliklerini tek başına belirlemez.",
+      "result": "reviewed",
+      "reason": "Madde 39’un başkanvekili, grup yönetim kurulu ve toplantıya katılım hükümleriyle 28 Temmuz yönetim kurulu haberi karşılaştırıldı. Bu kaynaklar ayrı grup görevlerini göstermektedir."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:31:11+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0303-epm-grup-tbmm-grup-p3\", \"0303-epm-grup-tbmm-grup-p4\", \"0303-epm-grup-tbmm-grup-p5\"]",
+      "inspected_sections": "[\"Madde 39, başkanvekilleri ve kurul seçimi\", \"Madde 39, başkanvekillerinin görevleri\", \"Madde 39, yönetim kurulunun yasama ve disiplin görevleri\", \"Madde 39, MYK üyelerinin oy kullanmadan katılması\"]",
+      "supported_claim": "Hedef tüzükteki grup organlarını belirleme hükmüdür.",
+      "limitations": "Haber grup iç yönetmeliğinin bütün usulünü veya sonraki görev değişikliklerini tek başına belirlemez.",
+      "result": "reviewed",
+      "reason": "Madde 39’un başkanvekili, grup yönetim kurulu ve toplantıya katılım hükümleriyle 28 Temmuz yönetim kurulu haberi karşılaştırıldı. Bu kaynaklar ayrı grup görevlerini göstermektedir."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:17:18+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-grup-yonetim-ekonomim-v1\"]",
+      "passage_ids": "[\"0303-epm-grup-tbmm-grup-p2\", \"0404-grup-yonetim-ekonomim-context-p\", \"0404-grup-yonetim-ekonomim-p\"]",
+      "inspected_sections": "[\"Tüzük grup organlarını belirleme\", \"Ekonomim TBMM toplantısı paragrafı\", \"Ekonomim grup yönetimi isimleri\"]",
+      "supported_claim": "Açıklama haberin göstermediği usul uygunluğunu çıkarmıyor.",
+      "limitations": "Haber grup iç yönetmeliğinin bütün usulünü veya sonraki görev değişikliklerini tek başına belirlemez.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Ekonomim’in 28 Temmuz tarihli haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-ab-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Kurucu program AB üyeliği, demokratik reformlar ve Gümrük Birliği güncellemesini hedefliyor.",
+      "limitations": "Program hedeflerine ilişkin takvim ve resmî müzakere yetkisi bu paragrafta belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "Dış Politika bölümündeki üç cümlelik kurucu program hükmü okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-ab-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Özet üç hedefi ayrı biçimde koruyor.",
+      "limitations": "Program hedeflerine ilişkin takvim ve resmî müzakere yetkisi bu paragrafta belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "Faz 3 seçili özeti özgün program paragrafındaki hedef sırasıyla karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-ab-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Alıntının üyelik, reform ve Gümrük Birliği cümleleri özgün paragrafta yer alıyor.",
+      "limitations": "Program hedeflerine ilişkin takvim ve resmî müzakere yetkisi bu paragrafta belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "Alıntı metninin arşivdeki pasajla karakter dizisi eşitliği kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-initiative|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-uyum-v1\"]",
+      "passage_ids": "[\"0404-ab-uyum-initiative\"]",
+      "inspected_sections": "[\"Başkanvekili seçimine geçilmesi\"]",
+      "supported_claim": "Komisyon başkanı başkanvekili seçimi yapılacağını bildirdi.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta Başkanvekili seçimine geçilmesi bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-date|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-uyum-v1\"]",
+      "passage_ids": "[\"0404-ab-uyum-date\"]",
+      "inspected_sections": "[\"Meclis Haberleri tarih satırı\"]",
+      "supported_claim": "Meclis Haberleri kaydı 13 Ekim 2026 tarihli.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta Meclis Haberleri tarih satırı bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-result|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-uyum-v1\"]",
+      "passage_ids": "[\"0404-ab-uyum-result\"]",
+      "inspected_sections": "[\"Oylama ve seçilen milletvekili\"]",
+      "supported_claim": "Oylamada Yeni Parti İzmir Milletvekili Yüksel Taşkın başkanvekili seçildi.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta Oylama ve seçilen milletvekili bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-uyum-secim-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-uyum-v1\"]",
+      "passage_ids": "[\"0404-ab-uyum-initiative\", \"0404-ab-uyum-date\", \"0404-ab-uyum-result\"]",
+      "inspected_sections": "[\"Başkanvekili seçimine geçilmesi\", \"Meclis Haberleri tarih satırı\", \"Oylama ve seçilen milletvekili\"]",
+      "supported_claim": "TBMM AB Uyum Komisyonu toplantısı ve komisyon içi oylama bağlı belgelerde yer alıyor.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "AB Uyum Komisyonunda başkanvekili seçimi için olayın oluş ve kaynak sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-uyum-secim-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-uyum-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-uyum-initiative\", \"0404-ab-uyum-date\", \"0404-ab-uyum-result\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Başkanvekili seçimine geçilmesi\", \"Meclis Haberleri tarih satırı\", \"Oylama ve seçilen milletvekili\"]",
+      "supported_claim": "Kurucu program AB ilişkilerinde üyelik ve reform hedefi koydu. TBMM AB Uyum Komisyonu 13 Ekim’de Yeni Parti İzmir Milletvekili Yüksel Taşkın’ı başkanvekili seçti.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "AB Uyum Komisyonunda başkanvekili seçimi programın AB hedefleriyle kapsam ve dönem bakımından karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Kurucu program üyelik sürecini, demokratik reformları ve Gümrük Birliği güncellemesini hedefliyor.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "AB Uyum Komisyonunda başkanvekili seçimi için program hedefi özgün Dış Politika paragrafına bağlandı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-uyum-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-uyum-initiative\", \"0404-ab-uyum-date\", \"0404-ab-uyum-result\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Başkanvekili seçimine geçilmesi\", \"Meclis Haberleri tarih satırı\", \"Oylama ve seçilen milletvekili\"]",
+      "supported_claim": "Komisyon başkanvekilini TBMM komisyonu seçti. Taşkın’ın görevi komisyon içi temsil kapsamındadır.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "AB Uyum Komisyonunda başkanvekili seçimi açıklamasındaki aktör ve yetki sınırları gerçek kaynaklarla denetlendi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-uyum-v1\"]",
+      "passage_ids": "[\"0404-ab-uyum-result\"]",
+      "inspected_sections": "[\"Oylama ve seçilen milletvekili\"]",
+      "supported_claim": "TBMM kaydına göre Yüksel Taşkın, AB Uyum Komisyonu başkanvekilliğine seçildi.",
+      "limitations": "Kaynak, komisyon görevi için oylama sonucunu belgeliyor. Müzakerelerde değişiklik bu işlemin kanıt kapsamı dışındadır.",
+      "result": "reviewed",
+      "reason": "TBMM’deki oylamanın başkanvekili seçimiyle sınırlı sonucu okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-ab-orav-meeting|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-orav-v1\"]",
+      "passage_ids": "[\"0404-ab-orav-meeting\"]",
+      "inspected_sections": "[\"Görüşmenin yeri ve katılımcıları\"]",
+      "supported_claim": "ANKA, Özgür Özel ve Aivo Orav heyetinin parti genel merkezinde görüşmesini ve eşlik edenleri bildirdi.",
+      "limitations": "Haber görüşmenin yerini ve katılımcılarını veriyor. Görüşmenin içeriği ve kararı açıklanmadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta Görüşmenin yeri ve katılımcıları bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-ab-orav-date|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-orav-v1\"]",
+      "passage_ids": "[\"0404-ab-orav-date\"]",
+      "inspected_sections": "[\"ANKA yayın tarihi\"]",
+      "supported_claim": "Görüşmeyi aktaran ANKA haberi 21 Ekim 2026 tarihli.",
+      "limitations": "Haber görüşmenin yerini ve katılımcılarını veriyor. Görüşmenin içeriği ve kararı açıklanmadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta ANKA yayın tarihi bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-orav-gorusme-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-ab-orav-v1\", \"0404-yeni-parti-haber-237-v1\"]",
+      "passage_ids": "[\"0404-ab-orav-date\", \"0404-ab-orav-meeting\", \"0404-yeni-parti-haber-237-orav\"]",
+      "inspected_sections": "[\"ANKA yayın tarihi\", \"Görüşmenin yeri ve katılımcıları\", \"AB Türkiye Delegasyonu ile görüşme, parti açıklaması\"]",
+      "supported_claim": "Parti duyurusu ve ANKA haberi aynı genel merkez görüşmesine atıf yapıyor.",
+      "limitations": "Parti duyurusu görüşme içeriği veya ortak karar yayımlamıyor. Oluş desteği ANKA haberiyle sağlandı.",
+      "result": "reviewed",
+      "reason": "Görüşmenin katılımcıları ve iki metnin kaynağı ayrı kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-orav-gorusme-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-orav-v1\", \"0404-yeni-parti-haber-237-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-orav-date\", \"0404-ab-orav-meeting\", \"0404-yeni-parti-haber-237-orav\"]",
+      "inspected_sections": "[\"Dış Politika\", \"ANKA yayın tarihi\", \"Görüşmenin yeri ve katılımcıları\", \"AB Türkiye Delegasyonu ile görüşme, parti açıklaması\"]",
+      "supported_claim": "Parti genel merkezindeki temas, AB ilişkileri hedefine ilişkin diplomatik temas alanındadır.",
+      "limitations": "Parti duyurusu görüşme içeriği veya ortak karar yayımlamıyor. Oluş desteği ANKA haberiyle sağlandı.",
+      "result": "reviewed",
+      "reason": "Programın anlamı ile ANKA ve parti duyurusunun kapsamı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-orav-gorusme-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Kurucu program üyelik sürecini, demokratik reformları ve Gümrük Birliği güncellemesini hedefliyor.",
+      "limitations": "Haber görüşmenin yerini ve katılımcılarını veriyor. Görüşmenin içeriği ve kararı açıklanmadı.",
+      "result": "reviewed",
+      "reason": "Yeni Parti genel merkezinde AB Türkiye Delegasyonu görüşmesi için program hedefi özgün Dış Politika paragrafına bağlandı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-orav-gorusme-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-orav-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-orav-meeting\", \"0404-ab-orav-date\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Görüşmenin yeri ve katılımcıları\", \"ANKA yayın tarihi\"]",
+      "supported_claim": "Özgür Özel parti genel başkanı, Aivo Orav AB Türkiye Delegasyonu başkanı olarak haberde yer alıyor.",
+      "limitations": "Haber görüşmenin yerini ve katılımcılarını veriyor. Görüşmenin içeriği ve kararı açıklanmadı.",
+      "result": "reviewed",
+      "reason": "Yeni Parti genel merkezinde AB Türkiye Delegasyonu görüşmesi açıklamasındaki aktör ve yetki sınırları gerçek kaynaklarla denetlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-meeting|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-wiseler-v1\"]",
+      "passage_ids": "[\"0404-ab-wiseler-meeting\"]",
+      "inspected_sections": "[\"TBMM heyet görüşmesi ve katılımcılar\"]",
+      "supported_claim": "ANKA, görüşmenin taraflarını ve heyet üyelerini bildirdi.",
+      "limitations": "Açıklamanın kapsadığı görüşme ve bildirilen gündem belgeleniyor. Ortak karar veya müzakere sonucu yayınlanmadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta TBMM heyet görüşmesi ve katılımcılar bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-agenda|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-wiseler-v1\"]",
+      "passage_ids": "[\"0404-ab-wiseler-agenda\"]",
+      "inspected_sections": "[\"Murat Emir’e atfedilen görüşme gündemi\"]",
+      "supported_claim": "Murat Emir, parlamenter diplomasi ve Türkiye–AB ilişkilerinin görüşüldüğünü açıkladı.",
+      "limitations": "Açıklamanın kapsadığı görüşme ve bildirilen gündem belgeleniyor. Ortak karar veya müzakere sonucu yayınlanmadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta Murat Emir’e atfedilen görüşme gündemi bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-date|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-wiseler-v1\"]",
+      "passage_ids": "[\"0404-ab-wiseler-date\"]",
+      "inspected_sections": "[\"ANKA yayın tarihi\"]",
+      "supported_claim": "Görüşmeyi aktaran ANKA haberinin yayın tarihi 23 Ekim 2026.",
+      "limitations": "Açıklamanın kapsadığı görüşme ve bildirilen gündem belgeleniyor. Ortak karar veya müzakere sonucu yayınlanmadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta ANKA yayın tarihi bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-wiseler-gorusme-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-wiseler-v1\"]",
+      "passage_ids": "[\"0404-ab-wiseler-meeting\", \"0404-ab-wiseler-agenda\", \"0404-ab-wiseler-date\"]",
+      "inspected_sections": "[\"TBMM heyet görüşmesi ve katılımcılar\", \"Murat Emir’e atfedilen görüşme gündemi\", \"ANKA yayın tarihi\"]",
+      "supported_claim": "TBMM’de Murat Emir ve Claude Wiseler’in yer aldığı iki heyet görüşmesi bağlı belgelerde yer alıyor.",
+      "limitations": "Açıklamanın kapsadığı görüşme ve bildirilen gündem belgeleniyor. Ortak karar veya müzakere sonucu yayınlanmadı.",
+      "result": "reviewed",
+      "reason": "Yeni Parti heyetinin Lüksemburg parlamento heyetiyle görüşmesi için olayın oluş ve kaynak sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-wiseler-gorusme-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-wiseler-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-wiseler-meeting\", \"0404-ab-wiseler-agenda\", \"0404-ab-wiseler-date\"]",
+      "inspected_sections": "[\"Dış Politika\", \"TBMM heyet görüşmesi ve katılımcılar\", \"Murat Emir’e atfedilen görüşme gündemi\", \"ANKA yayın tarihi\"]",
+      "supported_claim": "ANKA, Yeni Parti heyetinin Claude Wiseler ve Lüksemburg parlamento heyetini TBMM’de ağırladığını bildirdi. Murat Emir görüşmede Türkiye–AB ilişkilerinin ele alındığını söyledi.",
+      "limitations": "Açıklamanın kapsadığı görüşme ve bildirilen gündem belgeleniyor. Ortak karar veya müzakere sonucu yayınlanmadı.",
+      "result": "reviewed",
+      "reason": "Yeni Parti heyetinin Lüksemburg parlamento heyetiyle görüşmesi programın AB hedefleriyle kapsam ve dönem bakımından karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-wiseler-gorusme-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Kurucu program üyelik sürecini, demokratik reformları ve Gümrük Birliği güncellemesini hedefliyor.",
+      "limitations": "Açıklamanın kapsadığı görüşme ve bildirilen gündem belgeleniyor. Ortak karar veya müzakere sonucu yayınlanmadı.",
+      "result": "reviewed",
+      "reason": "Yeni Parti heyetinin Lüksemburg parlamento heyetiyle görüşmesi için program hedefi özgün Dış Politika paragrafına bağlandı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-wiseler-gorusme-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-wiseler-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-wiseler-meeting\", \"0404-ab-wiseler-agenda\", \"0404-ab-wiseler-date\"]",
+      "inspected_sections": "[\"Dış Politika\", \"TBMM heyet görüşmesi ve katılımcılar\", \"Murat Emir’e atfedilen görüşme gündemi\", \"ANKA yayın tarihi\"]",
+      "supported_claim": "Yeni Parti heyeti ile Lüksemburg ulusal parlamentosunun heyeti bir araya geldi. Gündem bilgisi Murat Emir’e atfediliyor.",
+      "limitations": "Açıklamanın kapsadığı görüşme ve bildirilen gündem belgeleniyor. Ortak karar veya müzakere sonucu yayınlanmadı.",
+      "result": "reviewed",
+      "reason": "Yeni Parti heyetinin Lüksemburg parlamento heyetiyle görüşmesi açıklamasındaki aktör ve yetki sınırları gerçek kaynaklarla denetlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-tbmm-meeting|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-kpk-tbmm-v1\"]",
+      "passage_ids": "[\"0404-ab-kpk-tbmm-meeting\"]",
+      "inspected_sections": "[\"82. toplantının açılışı\"]",
+      "supported_claim": "TBMM, Ankara’da 82. toplantının gerçekleştirildiğini kaydetti.",
+      "limitations": "Katılım ve ilgili kurum görüşleri belgeleniyor. Toplantı ile müzakere durumu arasında nedensel bağ gösteren belge bulunamadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta 82. toplantının açılışı bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-ab-meeting|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-kpk-ab-v1\"]",
+      "passage_ids": "[\"0404-ab-kpk-ab-meeting\"]",
+      "inspected_sections": "[\"82. toplantının tarih aralığı\"]",
+      "supported_claim": "AB Başkanlığı toplantıyı 26–27 Ekim olarak tarihledi.",
+      "limitations": "Katılım ve ilgili kurum görüşleri belgeleniyor. Toplantı ile müzakere durumu arasında nedensel bağ gösteren belge bulunamadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta 82. toplantının tarih aralığı bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-ab-agenda|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-kpk-ab-v1\"]",
+      "passage_ids": "[\"0404-ab-kpk-ab-agenda\"]",
+      "inspected_sections": "[\"İlk oturumun gündemi ve hükümet adına konuşmacı\"]",
+      "supported_claim": "İlk oturumun gündeminde Türkiye–AB ilişkileri ve katılım müzakereleri yer aldı.",
+      "limitations": "Katılım ve ilgili kurum görüşleri belgeleniyor. Toplantı ile müzakere durumu arasında nedensel bağ gösteren belge bulunamadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta İlk oturumun gündemi ve hükümet adına konuşmacı bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-cumhuriyet-intervention|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"0404-ab-kpk-cumhuriyet-v1\"]",
+      "passage_ids": "[\"0404-ab-kpk-cumhuriyet-intervention\"]",
+      "inspected_sections": "[\"Yüksel Taşkın’a atfedilen KPK açıklaması\"]",
+      "supported_claim": "Cumhuriyet, Yüksel Taşkın’ın yerel yönetimlere yönelik denetim ve yargı değerlendirmesini aktardı.",
+      "limitations": "Katılım ve ilgili kurum görüşleri belgeleniyor. Toplantı ile müzakere durumu arasında nedensel bağ gösteren belge bulunamadı.",
+      "result": "reviewed",
+      "reason": "Özgün kaynakta Yüksel Taşkın’a atfedilen KPK açıklaması bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-kpk-82-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-ab-ilave-kpk-incesu-v1\", \"0404-ab-kpk-ab-v1\", \"0404-ab-kpk-cumhuriyet-v1\", \"0404-ab-kpk-tbmm-v1\"]",
+      "passage_ids": "[\"0404-ab-ilave-kpk-incesu-participation\", \"0404-ab-ilave-kpk-incesu-statement\", \"0404-ab-kpk-ab-agenda\", \"0404-ab-kpk-ab-meeting\", \"0404-ab-kpk-cumhuriyet-intervention\", \"0404-ab-kpk-tbmm-meeting\"]",
+      "inspected_sections": "[\"82. toplantıya katılım ve milletvekili sıfatı\", \"İncesu’nun tam üyelik ve beklenti değerlendirmesi\", \"İlk oturumun gündemi ve hükümet adına konuşmacı\", \"82. toplantının tarih aralığı\", \"Yüksel Taşkın’a atfedilen KPK açıklaması\", \"82. toplantının açılışı\"]",
+      "supported_claim": "Kurumlar toplantıyı, iki ayrı haber Taşkın ve İncesu’nun katılım veya açıklamasını kaydetti.",
+      "limitations": "Taşkın ve İncesu’nun açıklamaları milletvekillerinin kendilerine atfedilir. Bir toplantı kararı veya müzakere sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "TBMM, AB Başkanlığı, Cumhuriyet ve Ardahan Medya metinleri toplantı kimliği ve katılımcı rolleriyle karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-kpk-82-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-ab-raporu-v1\", \"0404-ab-ilave-kpk-incesu-v1\", \"0404-ab-kpk-ab-v1\", \"0404-ab-kpk-cumhuriyet-v1\", \"0404-ab-kpk-tbmm-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-ab-raporu-standstill\", \"0404-ab-ilave-kpk-incesu-participation\", \"0404-ab-ilave-kpk-incesu-statement\", \"0404-ab-kpk-ab-agenda\", \"0404-ab-kpk-ab-meeting\", \"0404-ab-kpk-cumhuriyet-intervention\", \"0404-ab-kpk-tbmm-meeting\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Giriş, üyelik müzakerelerinin durumu\", \"82. toplantıya katılım ve milletvekili sıfatı\", \"İncesu’nun tam üyelik ve beklenti değerlendirmesi\", \"İlk oturumun gündemi ve hükümet adına konuşmacı\", \"82. toplantının tarih aralığı\", \"Yüksel Taşkın’a atfedilen KPK açıklaması\", \"82. toplantının açılışı\"]",
+      "supported_claim": "TBMM ve AB Başkanlığı 82. Karma Parlamento Komisyonunun 26–27 Ekim’de toplandığını bildirdi. Cumhuriyet, Yüksel Taşkın’ın yerel yönetimlerin denetimi ve yargı süreçlerine dair görüşlerini aktardı. Avrupa Komisyonu 4 Kasım raporunda üyelik müzakerelerinin 2018’den beri durduğu değerlendirmesini yineledi. Ardahan Medya, Özgür Erdem İncesu’nun aynı toplantıya katıldığını ve tam üyelik konusunda açıklama yaptığını bildirdi.",
+      "limitations": "Taşkın ve İncesu’nun açıklamaları milletvekillerinin kendilerine atfedilir. Bir toplantı kararı veya müzakere sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "Kurucu programın AB paragrafı ve 82. toplantı için iki milletvekilinin ayrı açıklamaları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-kpk-82-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:11:13+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Kurucu program üyelik sürecini, demokratik reformları ve Gümrük Birliği güncellemesini hedefliyor.",
+      "limitations": "Katılım ve ilgili kurum görüşleri belgeleniyor. Toplantı ile müzakere durumu arasında nedensel bağ gösteren belge bulunamadı.",
+      "result": "reviewed",
+      "reason": "82. Türkiye–AB Karma Parlamento Komisyonunda Yeni Parti milletvekilinin katılımı için program hedefi özgün Dış Politika paragrafına bağlandı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-kpk-82-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-ab-raporu-v1\", \"0404-ab-ilave-kpk-incesu-v1\", \"0404-ab-kpk-ab-v1\", \"0404-ab-kpk-cumhuriyet-v1\", \"0404-ab-kpk-tbmm-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-ab-raporu-standstill\", \"0404-ab-ilave-kpk-incesu-participation\", \"0404-ab-ilave-kpk-incesu-statement\", \"0404-ab-kpk-ab-agenda\", \"0404-ab-kpk-ab-meeting\", \"0404-ab-kpk-cumhuriyet-intervention\", \"0404-ab-kpk-tbmm-meeting\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Giriş, üyelik müzakerelerinin durumu\", \"82. toplantıya katılım ve milletvekili sıfatı\", \"İncesu’nun tam üyelik ve beklenti değerlendirmesi\", \"İlk oturumun gündemi ve hükümet adına konuşmacı\", \"82. toplantının tarih aralığı\", \"Yüksel Taşkın’a atfedilen KPK açıklaması\", \"82. toplantının açılışı\"]",
+      "supported_claim": "Karma Parlamento Komisyonunun toplantısı parlamenter faaliyettir. Taşkın ve İncesu’nun görüşleri kendilerine, müzakere durumu Avrupa Komisyonuna atfedilir.",
+      "limitations": "Taşkın ve İncesu’nun açıklamaları milletvekillerinin kendilerine atfedilir. Bir toplantı kararı veya müzakere sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "Aynı toplantı kaydına eklenen İncesu haberinin açıklamayı desteklediği denetlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-tbmm-siyasi-etik-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-tbmm-siyasi-etik-v1\"]",
+      "passage_ids": "[\"0404-tbmm-siyasi-etik-p\"]",
+      "inspected_sections": "[\"Teklif başlığı ve 4 Ağustos 2026 geliş tarihi\"]",
+      "supported_claim": "TBMM 2/3795 teklifinin başlığını Siyasi Etik Kanunu Teklifi olarak kaydetti.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "2/3795 zincirinde Teklif başlığı ve 4 Ağustos 2026 geliş tarihi bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-greco|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-etik-23975-metni-v1\"]",
+      "passage_ids": "[\"0404-etik-23975-metni-greco\"]",
+      "inspected_sections": "[\"Genel gerekçe, AB müktesebatı ve GRECO\"]",
+      "supported_claim": "Genel gerekçe AB müktesebatı, ilkeler ve GRECO tavsiyelerine uygun etik kuralları hedefliyor.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "2/3795 zincirinde Genel gerekçe, AB müktesebatı ve GRECO bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-board|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-etik-23975-metni-v1\"]",
+      "passage_ids": "[\"0404-etik-23975-metni-board\"]",
+      "inspected_sections": "[\"Madde 6, kurulun oluşumu\"]",
+      "supported_claim": "Madde 6, Siyasi Etik Kurulunun oluşumunu düzenlemeyi öneriyor.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "2/3795 zincirinde Madde 6, kurulun oluşumu bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-grup-konusma-visa|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-etik-grup-konusma-v1\"]",
+      "passage_ids": "[\"0404-etik-grup-konusma-visa\"]",
+      "inspected_sections": "[\"Özgür Özel’in vize süreci açıklaması\"]",
+      "supported_claim": "Özgür Özel, siyasi etik düzenlemesini AB vize serbestisiyle ilişkilendirdi.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "2/3795 zincirinde Özgür Özel’in vize süreci açıklaması bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-grup-konusma-greco|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-etik-grup-konusma-v1\"]",
+      "passage_ids": "[\"0404-etik-grup-konusma-greco\"]",
+      "inspected_sections": "[\"Siyasi etik teklifiyle ilgili GRECO açıklaması\"]",
+      "supported_claim": "Özel siyasi etik için GRECO ölçütlerine uyum önerisini dile getirdi.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "2/3795 zincirinde Siyasi etik teklifiyle ilgili GRECO açıklaması bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-3795-gelen-item|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-etik-3795-gelen-v1\"]",
+      "passage_ids": "[\"0404-etik-3795-gelen-item\"]",
+      "inspected_sections": "[\"Siyasi Etik Kanunu Teklifi, Gelen Kâğıtlar satırı\"]",
+      "supported_claim": "Gelen Kâğıtlar, 4 Ağustos gelişini, dört imzacıyı ve Anayasa ile AB Uyum komisyonlarını belirtiyor.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "2/3795 zincirinde Siyasi Etik Kanunu Teklifi, Gelen Kâğıtlar satırı bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-referral|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-etik-23975-metni-v1\"]",
+      "passage_ids": "[\"0404-etik-23975-metni-referral\"]",
+      "inspected_sections": "[\"Havale kaşesi, esas ve tali komisyon\"]",
+      "supported_claim": "Teklif kaşesinde 5 Ağustos tarihli Anayasa esas komisyonu ve AB Uyum tali komisyonu yer alıyor.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "2/3795 zincirinde Havale kaşesi, esas ve tali komisyon bölümü okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-2-3795-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"0404-tbmm-siyasi-etik-v1\", \"0404-etik-23975-metni-v1\", \"0404-etik-grup-konusma-v1\", \"0404-etik-3795-gelen-v1\"]",
+      "passage_ids": "[\"0404-tbmm-siyasi-etik-p\", \"0404-etik-23975-metni-greco\", \"0404-etik-23975-metni-board\", \"0404-etik-grup-konusma-visa\", \"0404-etik-grup-konusma-greco\", \"0404-etik-3795-gelen-item\", \"0404-etik-23975-metni-referral\"]",
+      "inspected_sections": "[\"Teklif başlığı ve 4 Ağustos 2026 geliş tarihi\", \"Genel gerekçe, AB müktesebatı ve GRECO\", \"Madde 6, kurulun oluşumu\", \"Özgür Özel’in vize süreci açıklaması\", \"Siyasi etik teklifiyle ilgili GRECO açıklaması\", \"Siyasi Etik Kanunu Teklifi, Gelen Kâğıtlar satırı\", \"Havale kaşesi, esas ve tali komisyon\"]",
+      "supported_claim": "TBMM, 2/3795 teklifinin sunulmasını ve iki komisyona havalesini belgeliyor.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": " 2/3795 teklif metni, künye ve Gelen Kâğıtlar kaydı birlikte okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-2-3795-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-siyasi-etik-v1\", \"0404-etik-23975-metni-v1\", \"0404-etik-grup-konusma-v1\", \"0404-etik-3795-gelen-v1\", \"0404-etik-vize-2016-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-tbmm-siyasi-etik-p\", \"0404-etik-23975-metni-greco\", \"0404-etik-23975-metni-board\", \"0404-etik-grup-konusma-visa\", \"0404-etik-grup-konusma-greco\", \"0404-etik-3795-gelen-item\", \"0404-etik-23975-metni-referral\", \"0404-etik-vize-2016-greco\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Teklif başlığı ve 4 Ağustos 2026 geliş tarihi\", \"Genel gerekçe, AB müktesebatı ve GRECO\", \"Madde 6, kurulun oluşumu\", \"Özgür Özel’in vize süreci açıklaması\", \"Siyasi etik teklifiyle ilgili GRECO açıklaması\", \"Siyasi Etik Kanunu Teklifi, Gelen Kâğıtlar satırı\", \"Havale kaşesi, esas ve tali komisyon\", \"Vize yol haritası, yolsuzlukla mücadele ve GRECO\"]",
+      "supported_claim": "4 Ağustos 2026’da sunulan siyasi etik teklifi, TBMM’de bir Siyasi Etik Kurulu öngörüyordu. Teklif gerekçesi GRECO tavsiyeleriyle uyumu hedefledi, Özgür Özel siyasi etik düzenlemesini vize serbestisiyle ilişkilendirdi. TBMM kaydı 5 Ağustos’ta Anayasa ve AB Uyum komisyonlarına havaleyi belgeliyor.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "Kurucu program, teklif ve vize yol haritasının ayrı süreçleri incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-2-3795-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Kurucu program AB üyeliği için demokratik reformları hedefliyor.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "Faz 3 seçili AB satırı ve kurucu programın tam ilgili paragrafı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-2-3795-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:18:27+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-tbmm-siyasi-etik-v1\", \"0404-etik-23975-metni-v1\", \"0404-etik-grup-konusma-v1\", \"0404-etik-3795-gelen-v1\", \"0404-etik-vize-2016-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-tbmm-siyasi-etik-p\", \"0404-etik-23975-metni-greco\", \"0404-etik-23975-metni-board\", \"0404-etik-grup-konusma-visa\", \"0404-etik-grup-konusma-greco\", \"0404-etik-3795-gelen-item\", \"0404-etik-23975-metni-referral\", \"0404-etik-vize-2016-greco\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Teklif başlığı ve 4 Ağustos 2026 geliş tarihi\", \"Genel gerekçe, AB müktesebatı ve GRECO\", \"Madde 6, kurulun oluşumu\", \"Özgür Özel’in vize süreci açıklaması\", \"Siyasi etik teklifiyle ilgili GRECO açıklaması\", \"Siyasi Etik Kanunu Teklifi, Gelen Kâğıtlar satırı\", \"Havale kaşesi, esas ve tali komisyon\", \"Vize yol haritası, yolsuzlukla mücadele ve GRECO\"]",
+      "supported_claim": "Teklifin sunulması ile havale işlemi ve vize koşulunun tarihsel çerçevesi ayrı kaydedilir.",
+      "limitations": "Teklif gerekçesinde AB müktesebatı ve GRECO tavsiyeleri anılıyor. Kesim içinde teklifin kabul edildiği, kurul oluşturulduğu veya vize ölçütünün karşılandığı belgelenemedi.",
+      "result": "reviewed",
+      "reason": "TBMM ve Avrupa Komisyonu belgelerindeki yetki ve aşama farkı kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-cevrimici-uyelik-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:33:55+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail-uyelik-kabul-itiraz-basvuru-sekli-p\"]",
+      "inspected_sections": "[\"Tüzük üyelik başvuru biçimi\"]",
+      "supported_claim": "Tüzük elektronik başvuru olanağını düzenler.",
+      "limitations": "Haberde sistemin kesin açılış günü ve belirli başvuruların kabulü açıklanmıyor.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Çeşme’nin Sesi 12 Ağustos haber pasajı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:33:55+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail-uyelik-kabul-itiraz-basvuru-sekli-p\"]",
+      "inspected_sections": "[\"Tüzük üyelik başvuru biçimi\"]",
+      "supported_claim": "Özet il/ilçe veya elektronik başvuru hükmüne dayanır.",
+      "limitations": "Haberde sistemin kesin açılış günü ve belirli başvuruların kabulü açıklanmıyor.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Çeşme’nin Sesi 12 Ağustos haber pasajı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:33:55+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail-uyelik-kabul-itiraz-basvuru-sekli-p\"]",
+      "inspected_sections": "[\"Tüzük üyelik başvuru biçimi\"]",
+      "supported_claim": "Alıntı tüzüğün başvuru şekli hükmüdür.",
+      "limitations": "Haberde sistemin kesin açılış günü ve belirli başvuruların kabulü açıklanmıyor.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Çeşme’nin Sesi 12 Ağustos haber pasajı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-cevrimici-uyelik-cesme-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:33:55+00:00",
+      "source_version_ids": "[\"0404-cevrimici-uyelik-cesme-v1\"]",
+      "passage_ids": "[\"0404-cevrimici-uyelik-cesme-p\"]",
+      "inspected_sections": "[\"Çeşme haberi sistem ve rehber\"]",
+      "supported_claim": "12 Ağustos haberi çevrim içi sistem ve ilçe rehberini aktarır.",
+      "limitations": "Haberde sistemin kesin açılış günü ve belirli başvuruların kabulü açıklanmıyor.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Çeşme’nin Sesi 12 Ağustos haber pasajı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:37:28+00:00",
+      "source_version_ids": "[\"0404-cevrimici-uyelik-cesme-v1\", \"0404-yeni-parti-haber-49-v1\", \"0404-yeni-parti-haber-50-v1\"]",
+      "passage_ids": "[\"0404-cevrimici-uyelik-cesme-p\", \"0404-yeni-parti-haber-49-uyelik-p\", \"0404-yeni-parti-haber-50-uyelik-p\"]",
+      "inspected_sections": "[\"Çeşme haberi sistem ve rehber\", \"Parti 49 numaralı üyelik duyurusu\", \"Parti 50 numaralı dijital üyelik çağrısı\"]",
+      "supported_claim": "Yerel haber ve iki parti duyurusu sistemin varlığını tarihleriyle bildirir.",
+      "limitations": "Haber ve duyurular açılışın kesin gününü veya tekil başvuruların kabulünü belirlemiyor.",
+      "result": "reviewed",
+      "reason": "Tüzük, 12 Ağustos yerel haber ve Türkiye saatleriyle 13–14 Ağustos parti duyuruları ayrı okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:37:28+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-cevrimici-uyelik-cesme-v1\", \"0404-yeni-parti-haber-49-v1\", \"0404-yeni-parti-haber-50-v1\"]",
+      "passage_ids": "[\"0303-epm-detail-uyelik-kabul-itiraz-basvuru-sekli-p\", \"0404-cevrimici-uyelik-cesme-p\", \"0404-yeni-parti-haber-49-uyelik-p\", \"0404-yeni-parti-haber-50-uyelik-p\"]",
+      "inspected_sections": "[\"Tüzük üyelik başvuru biçimi\", \"Çeşme haberi sistem ve rehber\", \"Parti 49 numaralı üyelik duyurusu\", \"Parti 50 numaralı dijital üyelik çağrısı\"]",
+      "supported_claim": "Tüzükteki elektronik başvuru hükmü, yerel haber ve sonraki duyurular ilişkilidir.",
+      "limitations": "Haber ve duyurular açılışın kesin gününü veya tekil başvuruların kabulünü belirlemiyor.",
+      "result": "reviewed",
+      "reason": "Tüzük, 12 Ağustos yerel haber ve Türkiye saatleriyle 13–14 Ağustos parti duyuruları ayrı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:33:55+00:00",
+      "source_version_ids": "[\"epm-charter-v1\"]",
+      "passage_ids": "[\"0303-epm-detail-uyelik-kabul-itiraz-basvuru-sekli-p\"]",
+      "inspected_sections": "[\"Tüzük üyelik başvuru biçimi\"]",
+      "supported_claim": "Hedef tüzükteki başvuru şeklidir.",
+      "limitations": "Haberde sistemin kesin açılış günü ve belirli başvuruların kabulü açıklanmıyor.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Çeşme’nin Sesi 12 Ağustos haber pasajı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:33:55+00:00",
+      "source_version_ids": "[\"epm-charter-v1\", \"0404-cevrimici-uyelik-cesme-v1\"]",
+      "passage_ids": "[\"0303-epm-detail-uyelik-kabul-itiraz-basvuru-sekli-p\", \"0404-cevrimici-uyelik-cesme-p\"]",
+      "inspected_sections": "[\"Tüzük üyelik başvuru biçimi\", \"Çeşme haberi sistem ve rehber\"]",
+      "supported_claim": "Açıklama haberden tekil kabul veya kesin açılış günü çıkarmıyor.",
+      "limitations": "Haberde sistemin kesin açılış günü ve belirli başvuruların kabulü açıklanmıyor.",
+      "result": "reviewed",
+      "reason": "Kuruluş tüzüğü ve Çeşme’nin Sesi 12 Ağustos haber pasajı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-yeni-parti-haber-49-uyelik-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:37:28+00:00",
+      "source_version_ids": "[\"0404-yeni-parti-haber-49-v1\"]",
+      "passage_ids": "[\"0404-yeni-parti-haber-49-uyelik-p\"]",
+      "inspected_sections": "[\"Partinin 49 numaralı üyelik duyurusu\"]",
+      "supported_claim": "Partinin üyelik sistemi duyurusu metinde yer alır.",
+      "limitations": "Duyuru açılışın kesin gününü veya tekil başvuruların kabulünü bildirmez.",
+      "result": "reviewed",
+      "reason": "Kamuya açık JSON içeriği ve UTC oluşturma zamanı Türkiye saatine çevrilerek okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-yeni-parti-haber-50-uyelik-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:37:28+00:00",
+      "source_version_ids": "[\"0404-yeni-parti-haber-50-v1\"]",
+      "passage_ids": "[\"0404-yeni-parti-haber-50-uyelik-p\"]",
+      "inspected_sections": "[\"Partinin 50 numaralı üyelik duyurusu\"]",
+      "supported_claim": "Partinin dijital üyelik çağrısı metinde yer alır.",
+      "limitations": "Duyuru açılışın kesin gününü veya tekil başvuruların kabulünü bildirmez.",
+      "result": "reviewed",
+      "reason": "Kamuya açık JSON içeriği ve UTC oluşturma zamanı Türkiye saatine çevrilerek okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-yeni-parti-haber-289-onsecim-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:42:45+00:00",
+      "source_version_ids": "[\"0404-yeni-parti-haber-289-v1\"]",
+      "passage_ids": "[\"0404-yeni-parti-haber-289-onsecim-p\"]",
+      "inspected_sections": "[\"Partinin 289 numaralı ön seçim yayını\"]",
+      "supported_claim": "Parti açıklamasında Özel’in Ankara’da ön seçimde oy kullanması yayında yer alır.",
+      "limitations": "Parti açıklaması sandık tutanağı veya kurultay seçim sonucu değildir.",
+      "result": "reviewed",
+      "reason": "Parti JSON içeriği ve oluşturma zamanı Türkiye saatine çevrilerek okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-yeni-parti-haber-291-onsecim-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:42:45+00:00",
+      "source_version_ids": "[\"0404-yeni-parti-haber-291-v1\"]",
+      "passage_ids": "[\"0404-yeni-parti-haber-291-onsecim-p\"]",
+      "inspected_sections": "[\"Partinin 291 numaralı ön seçim yayını\"]",
+      "supported_claim": "Parti açıklamasında ulusal yüzde 81,3 katılım beyanı yayında yer alır.",
+      "limitations": "Parti açıklaması sandık tutanağı veya kurultay seçim sonucu değildir.",
+      "result": "reviewed",
+      "reason": "Parti JSON içeriği ve oluşturma zamanı Türkiye saatine çevrilerek okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-yeni-parti-haber-237-orav|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-yeni-parti-haber-237-v1\"]",
+      "passage_ids": "[\"0404-yeni-parti-haber-237-orav\"]",
+      "inspected_sections": "[\"AB Türkiye Delegasyonu ile görüşme, parti açıklaması\"]",
+      "supported_claim": "Parti, Özgür Özel ile Aivo Orav heyetinin görüşmesini ve eşlik edenleri duyurdu.",
+      "limitations": "Parti duyurusu görüşme içeriği veya ortak karar yayımlamıyor. Oluş desteği ANKA haberiyle sağlandı.",
+      "result": "reviewed",
+      "reason": "AB Türkiye Delegasyonu ile görüşme, parti açıklaması özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-ilave-kpk-incesu-participation|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-ab-ilave-kpk-incesu-v1\"]",
+      "passage_ids": "[\"0404-ab-ilave-kpk-incesu-participation\"]",
+      "inspected_sections": "[\"82. toplantıya katılım ve milletvekili sıfatı\"]",
+      "supported_claim": "Ardahan Medya, İncesu’nun Ankara’daki 82. toplantıya katıldığını bildirdi.",
+      "limitations": "Taşkın ve İncesu’nun açıklamaları milletvekillerinin kendilerine atfedilir. Bir toplantı kararı veya müzakere sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "82. toplantıya katılım ve milletvekili sıfatı özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-ilave-kpk-incesu-statement|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-ab-ilave-kpk-incesu-v1\"]",
+      "passage_ids": "[\"0404-ab-ilave-kpk-incesu-statement\"]",
+      "inspected_sections": "[\"İncesu’nun tam üyelik ve beklenti değerlendirmesi\"]",
+      "supported_claim": "Ardahan Medya, İncesu’nun üyelik vizyonuna ilişkin değerlendirmesini aktardı.",
+      "limitations": "Taşkın ve İncesu’nun açıklamaları milletvekillerinin kendilerine atfedilir. Bir toplantı kararı veya müzakere sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "İncesu’nun tam üyelik ve beklenti değerlendirmesi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-made-in-europe-1026-event|0404-ab-ilave-made-1026-agenda|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-ab-ilave-made-1026-v1\"]",
+      "passage_ids": "[\"0404-ab-ilave-made-1026-agenda\"]",
+      "inspected_sections": "[\"Parti sözcüsünün 26 Ekim toplantısı gündemi\"]",
+      "supported_claim": "26 Ekim haberi, toplantının AB sanayi çalışmasına ilişkin gündemini Emre’ye atfetti.",
+      "limitations": "Haber görüşülen konuyu bildiriyor. Bir gümrük değişikliği, resmî müzakere veya uygulama sonucu gösterilmiyor.",
+      "result": "reviewed",
+      "reason": "Parti sözcüsünün 26 Ekim toplantısı gündemi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-made-in-europe-1026-event|0404-ab-ilave-made-1026-date|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-ab-ilave-made-1026-v1\"]",
+      "passage_ids": "[\"0404-ab-ilave-made-1026-date\"]",
+      "inspected_sections": "[\"ANKA yayın tarihi\"]",
+      "supported_claim": "ANKA yayını 26 Ekim 2026 tarihini taşıyor.",
+      "limitations": "Haber görüşülen konuyu bildiriyor. Bir gümrük değişikliği, resmî müzakere veya uygulama sonucu gösterilmiyor.",
+      "result": "reviewed",
+      "reason": "ANKA yayın tarihi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-made-in-europe-1026-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-ab-ilave-made-1026-v1\"]",
+      "passage_ids": "[\"0404-ab-ilave-made-1026-agenda\", \"0404-ab-ilave-made-1026-date\"]",
+      "inspected_sections": "[\"Parti sözcüsünün 26 Ekim toplantısı gündemi\", \"ANKA yayın tarihi\"]",
+      "supported_claim": "ANKA’nın 26 Ekim kaydı, Zeynel Emre’nin parti toplantısında AB sanayi çalışmasının Türkiye’ye etkilerinin ele alındığı açıklamasını aktardı.",
+      "limitations": "Haber görüşülen konuyu bildiriyor. Bir gümrük değişikliği, resmî müzakere veya uygulama sonucu gösterilmiyor.",
+      "result": "reviewed",
+      "reason": "Parti toplantısında Made in Europe gündemi tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-made-in-europe-1026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-ilave-iaa-v1\", \"0404-ab-ilave-made-1026-v1\", \"0404-yeni-parti-haber-274-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-ilave-iaa-context\", \"0404-ab-ilave-iaa-reference\", \"0404-ab-ilave-made-1026-agenda\", \"0404-ab-ilave-made-1026-date\", \"0404-yeni-parti-haber-274-sanayi\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Teklif gerekçesinde Made in EU amacı\", \"Tüzük önerisi belge numarası\", \"Parti sözcüsünün 26 Ekim toplantısı gündemi\", \"ANKA yayın tarihi\", \"AB ve lojistik başlığı, Made in Europe değerlendirmesi\"]",
+      "supported_claim": "ANKA, 26 Ekim’de Zeynel Emre’nin parti toplantısında Made in Europe çalışmasının Türkiye’ye etkilerinin tartışıldığını söylediğini aktardı. Parti programı Gümrük Birliğini güncellemeyi hedefliyor.",
+      "limitations": "Haber görüşülen konuyu bildiriyor. Bir gümrük değişikliği, resmî müzakere veya uygulama sonucu gösterilmiyor.",
+      "result": "reviewed",
+      "reason": "Parti toplantısında Made in Europe gündemi ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-made-in-europe-1026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\"]",
+      "inspected_sections": "[\"Dış Politika\"]",
+      "supported_claim": "Gümrük Birliğinin güncellenmesi hedefi ve AB sanayi düzenlemesinin Türkiye’ye etkilerinin tartışılması ekonomik ilişkiler konusunu paylaşır.",
+      "limitations": "Haber görüşülen konuyu bildiriyor. Bir gümrük değişikliği, resmî müzakere veya uygulama sonucu gösterilmiyor.",
+      "result": "reviewed",
+      "reason": "Parti toplantısında Made in Europe gündemi için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-made-in-europe-1026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-ab-ilave-iaa-v1\", \"0404-ab-ilave-made-1026-v1\", \"0404-yeni-parti-haber-274-v1\"]",
+      "passage_ids": "[\"0303-epm-program-avrupa-birligi-p1\", \"0404-ab-ilave-iaa-context\", \"0404-ab-ilave-iaa-reference\", \"0404-ab-ilave-made-1026-agenda\", \"0404-ab-ilave-made-1026-date\", \"0404-yeni-parti-haber-274-sanayi\"]",
+      "inspected_sections": "[\"Dış Politika\", \"Teklif gerekçesinde Made in EU amacı\", \"Tüzük önerisi belge numarası\", \"Parti sözcüsünün 26 Ekim toplantısı gündemi\", \"ANKA yayın tarihi\", \"AB ve lojistik başlığı, Made in Europe değerlendirmesi\"]",
+      "supported_claim": "Zeynel Emre parti sözcüsü olarak toplantı gündemini açıkladı. AB önerisinin yasama süreci ayrı kurumlara aittir.",
+      "limitations": "Haber görüşülen konuyu bildiriyor. Bir gümrük değişikliği, resmî müzakere veya uygulama sonucu gösterilmiyor.",
+      "result": "reviewed",
+      "reason": "Parti toplantısında Made in Europe gündemi açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0404-kesim-program-cumhuriyet-kurucu-p\"]",
+      "inspected_sections": "[\"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\"]",
+      "supported_claim": "Kurucu program ulusal egemenliğe dayalı Cumhuriyet’in kuruluş felsefesini ve Atatürk’ün bağımsız, demokratik Türkiye idealini yol gösterici sayıyor.",
+      "limitations": "Program anma törenine katılma biçimi veya Genel Kurulda anma takvimi belirlemiyor.",
+      "result": "reviewed",
+      "reason": "Programın Cumhuriyet anlayışı ve kurucu felsefe cümleleri özgün sırada okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0404-kesim-program-cumhuriyet-kurucu-p\"]",
+      "inspected_sections": "[\"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\"]",
+      "supported_claim": "Kurucu program ulusal egemenliğe dayalı Cumhuriyet’in kuruluş felsefesini ve Atatürk’ün bağımsız, demokratik Türkiye idealini yol gösterici sayıyor.",
+      "limitations": "Program anma törenine katılma biçimi veya Genel Kurulda anma takvimi belirlemiyor.",
+      "result": "reviewed",
+      "reason": "Özette yer alan ulusal egemenlik, bağımsızlık ve demokrasi kavramları özgün pasajda kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0404-kesim-program-cumhuriyet-kurucu-p\"]",
+      "inspected_sections": "[\"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\"]",
+      "supported_claim": "İki ardışık program cümlesi aynı paragraftan aktarılıyor.",
+      "limitations": "Program anma törenine katılma biçimi veya Genel Kurulda anma takvimi belirlemiyor.",
+      "result": "reviewed",
+      "reason": "Arşivlenen HTML içindeki karakter dizisi ile bulgu alıntısı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-aa-time|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-aa-v1\"]",
+      "passage_ids": "[\"0404-kesim-aa-time\"]",
+      "inspected_sections": "[\"Anıtkabir töreninin başlangıç saati\"]",
+      "supported_claim": "Anadolu Ajansı devlet töreninin 08.45’te başladığını bildirdi.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Anıtkabir töreninin başlangıç saati özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-aa-participant|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-aa-v1\"]",
+      "passage_ids": "[\"0404-kesim-aa-participant\"]",
+      "inspected_sections": "[\"Devlet töreninde Özgür Özel’in katılımı\"]",
+      "supported_claim": "Anadolu Ajansı Özgür Özel’i kortej katılımcısı olarak adlandırdı.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Devlet töreninde Özgür Özel’in katılımı özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-kurtulmus-participant|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-kurtulmus-v1\"]",
+      "passage_ids": "[\"0404-kesim-kurtulmus-participant\"]",
+      "inspected_sections": "[\"TBMM Başkanı’nın anma töreni katılımcı kaydı\"]",
+      "supported_claim": "TBMM Başkanı’nın iletişim kaydı katılımcılar arasında Özgür Özel’i saydı.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "TBMM Başkanı’nın anma töreni katılımcı kaydı özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-haber-296-body|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-haber-296-v1\"]",
+      "passage_ids": "[\"0404-kesim-haber-296-body\"]",
+      "inspected_sections": "[\"Özgür Özel’in tören katılımı hakkında parti açıklaması\"]",
+      "supported_claim": "Yeni Parti, genel başkanının törene katıldığını duyurdu.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Özgür Özel’in tören katılımı hakkında parti açıklaması özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kesim-anitkabir-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-aa-v1\", \"0404-kesim-haber-296-v1\", \"0404-kesim-kurtulmus-v1\"]",
+      "passage_ids": "[\"0404-kesim-aa-participant\", \"0404-kesim-aa-time\", \"0404-kesim-haber-296-body\", \"0404-kesim-kurtulmus-participant\"]",
+      "inspected_sections": "[\"Devlet töreninde Özgür Özel’in katılımı\", \"Anıtkabir töreninin başlangıç saati\", \"Özgür Özel’in tören katılımı hakkında parti açıklaması\", \"TBMM Başkanı’nın anma töreni katılımcı kaydı\"]",
+      "supported_claim": "Özgür Özel 10 Kasım Anıtkabir devlet töreninin kortejine Yeni Parti genel başkanı olarak katıldı.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Anıtkabir’de 10 Kasım devlet törenine katılım tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kesim-anitkabir-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-aa-v1\", \"0404-kesim-haber-296-v1\", \"0404-kesim-kurtulmus-v1\", \"epm-program-v1\"]",
+      "passage_ids": "[\"0404-kesim-aa-participant\", \"0404-kesim-aa-time\", \"0404-kesim-haber-296-body\", \"0404-kesim-kurtulmus-participant\", \"0404-kesim-program-cumhuriyet-kurucu-p\"]",
+      "inspected_sections": "[\"Devlet töreninde Özgür Özel’in katılımı\", \"Anıtkabir töreninin başlangıç saati\", \"Özgür Özel’in tören katılımı hakkında parti açıklaması\", \"TBMM Başkanı’nın anma töreni katılımcı kaydı\", \"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\"]",
+      "supported_claim": "Program Atatürk’ü yol gösterici olarak anıyor. Anadolu Ajansı ve TBMM Başkanı’nın iletişim kaydı Özgür Özel’i Anıtkabir’deki devlet töreninin kortejinde gösteriyor.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Anıtkabir’de 10 Kasım devlet törenine katılım ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kesim-anitkabir-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0404-kesim-program-cumhuriyet-kurucu-p\"]",
+      "inspected_sections": "[\"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\"]",
+      "supported_claim": "Cumhuriyet’in kurucusunun anılmasıyla programın Atatürk’e açık atfı tarihsel referansı paylaşıyor.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Anıtkabir’de 10 Kasım devlet törenine katılım için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kesim-anitkabir-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-aa-v1\", \"0404-kesim-haber-296-v1\", \"0404-kesim-kurtulmus-v1\", \"epm-program-v1\"]",
+      "passage_ids": "[\"0404-kesim-aa-participant\", \"0404-kesim-aa-time\", \"0404-kesim-haber-296-body\", \"0404-kesim-kurtulmus-participant\", \"0404-kesim-program-cumhuriyet-kurucu-p\"]",
+      "inspected_sections": "[\"Devlet töreninde Özgür Özel’in katılımı\", \"Anıtkabir töreninin başlangıç saati\", \"Özgür Özel’in tören katılımı hakkında parti açıklaması\", \"TBMM Başkanı’nın anma töreni katılımcı kaydı\", \"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\"]",
+      "supported_claim": "Özgür Özel’in rolü törene katılımdır. Devlet töreni bir parti organizasyonu değildir.",
+      "limitations": "Katılım, Cumhuriyet ilkeleriyle ilgili politika değişikliğini veya başka bir uygulama sonucunu göstermiyor.",
+      "result": "reviewed",
+      "reason": "Anıtkabir’de 10 Kasım devlet törenine katılım açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-opening|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-tbmm-v1\"]",
+      "passage_ids": "[\"0404-kesim-tbmm-opening\"]",
+      "inspected_sections": "[\"Birinci oturum açılma saati\"]",
+      "supported_claim": "TBMM birinci oturumun 15.00’te açıldığını kaydetti.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Birinci oturum açılma saati özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-speech-title|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-tbmm-v1\"]",
+      "passage_ids": "[\"0404-kesim-tbmm-speech-title\"]",
+      "inspected_sections": "[\"Gökhan Günaydın’ın 26 numaralı konuşması\"]",
+      "supported_claim": "26 numaralı açıklama Günaydın’a atfedildi ve Atatürk ile Cumhuriyet dönemini konu aldı.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Gökhan Günaydın’ın 26 numaralı konuşması özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-speech|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-tbmm-v1\"]",
+      "passage_ids": "[\"0404-kesim-tbmm-speech\"]",
+      "inspected_sections": "[\"Birinci oturumda Günaydın’ın bütçe faizi değerlendirmesi\"]",
+      "supported_claim": "Konuşmanın bütçe faizi ve kamu varlıklarını değerlendiren bölümü tutanağa girdi.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Birinci oturumda Günaydın’ın bütçe faizi değerlendirmesi özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-closing|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-tbmm-v1\"]",
+      "passage_ids": "[\"0404-kesim-tbmm-closing\"]",
+      "inspected_sections": "[\"Birinci oturum kapanma saati\"]",
+      "supported_claim": "TBMM birinci oturumun 16.41’de kapandığını kaydetti.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Birinci oturum kapanma saati özgün kaynakta okundu ve olay aşaması belirlendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kesim-tbmm-konusma-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"0404-kesim-tbmm-v1\"]",
+      "passage_ids": "[\"0404-kesim-tbmm-closing\", \"0404-kesim-tbmm-opening\", \"0404-kesim-tbmm-speech\", \"0404-kesim-tbmm-speech-title\"]",
+      "inspected_sections": "[\"Birinci oturum kapanma saati\", \"Birinci oturum açılma saati\", \"Birinci oturumda Günaydın’ın bütçe faizi değerlendirmesi\", \"Gökhan Günaydın’ın 26 numaralı konuşması\"]",
+      "supported_claim": "15. birleşimin birinci oturumunda 26. açıklama olarak anma ve kamu varlıkları konuşması.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Gökhan Günaydın’ın 10 Kasım Genel Kurul açıklaması tarih ve oluş bakımından incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kesim-tbmm-konusma-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-kesim-tbmm-v1\"]",
+      "passage_ids": "[\"0404-kesim-program-cumhuriyet-kurucu-p\", \"0404-kesim-tbmm-closing\", \"0404-kesim-tbmm-opening\", \"0404-kesim-tbmm-speech\", \"0404-kesim-tbmm-speech-title\"]",
+      "inspected_sections": "[\"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\", \"Birinci oturum kapanma saati\", \"Birinci oturum açılma saati\", \"Birinci oturumda Günaydın’ın bütçe faizi değerlendirmesi\", \"Gökhan Günaydın’ın 26 numaralı konuşması\"]",
+      "supported_claim": "TBMM tutanağı, Gökhan Günaydın’ın 10 Kasım’da Atatürk ve Cumhuriyet döneminde yapılanlar üzerine açıklamasını kaydediyor. İlk oturum Türkiye saatiyle 16.41’de, araştırma kesiminden önce kapandı.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Gökhan Günaydın’ın 10 Kasım Genel Kurul açıklaması ile seçilen program konusu birlikte incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kesim-tbmm-konusma-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\"]",
+      "passage_ids": "[\"0404-kesim-program-cumhuriyet-kurucu-p\"]",
+      "inspected_sections": "[\"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\"]",
+      "supported_claim": "Atatürk ve Cumhuriyet’in birikimine yapılan açık atıf, programdaki tarihsel referansla aynı konudadır.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Gökhan Günaydın’ın 10 Kasım Genel Kurul açıklaması için program hedefinin asıl pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kesim-tbmm-konusma-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T00:51:21+00:00",
+      "source_version_ids": "[\"epm-program-v1\", \"0404-kesim-tbmm-v1\"]",
+      "passage_ids": "[\"0404-kesim-program-cumhuriyet-kurucu-p\", \"0404-kesim-tbmm-closing\", \"0404-kesim-tbmm-opening\", \"0404-kesim-tbmm-speech\", \"0404-kesim-tbmm-speech-title\"]",
+      "inspected_sections": "[\"Düşünsel Temellerimiz ve Siyasi Kimliğimiz, Cumhuriyet’in kurucu felsefesi\", \"Birinci oturum kapanma saati\", \"Birinci oturum açılma saati\", \"Birinci oturumda Günaydın’ın bütçe faizi değerlendirmesi\", \"Gökhan Günaydın’ın 26 numaralı konuşması\"]",
+      "supported_claim": "Genel Kurul konuşması Gökhan Günaydın’a ait. Bir bütçe tahsisi veya kurum kararı olarak değerlendirilmedi.",
+      "limitations": "Tutanak açıklamanın yapıldığını gösteriyor. Konuşmacının mali iddialarını doğrulayan bir mali denetim sunmuyor.",
+      "result": "reviewed",
+      "reason": "Gökhan Günaydın’ın 10 Kasım Genel Kurul açıklaması açıklaması ayrı kaynak ve yetki sınırlarıyla kontrol edildi."
     }
   ],
   "source_review_refs": [
@@ -6240,6 +7501,394 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0404-siddet-749746-relation-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-tbmm-grup-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-tbmm-grup-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-tbmm-grup-charter-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-secim-0724-event|0404-grup-kurulus-dunya-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-grup-secim-0724-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-grup-secim-0724-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event|0404-grup-yonetim-ekonomim-context-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event|0404-grup-yonetim-ekonomim-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-tbmm-grup-yonetim-0728-iliski-id"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-ab-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-ab-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-ab-program-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-initiative|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-date|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-uyum-secim-event|0404-ab-uyum-result|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-uyum-secim-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0404-ab-uyum-secim-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-ab-orav-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-ab-orav-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-orav-gorusme-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-orav-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-orav-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-orav-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-agenda|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-wiseler-gorusme-event|0404-ab-wiseler-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-wiseler-gorusme-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-wiseler-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-wiseler-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-wiseler-gorusme-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-tbmm-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-ab-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-ab-agenda|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-kpk-cumhuriyet-intervention|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-kpk-82-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-kpk-82-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-kpk-82-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-kpk-82-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-tbmm-siyasi-etik-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-greco|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-board|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-grup-konusma-visa|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-grup-konusma-greco|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-3795-gelen-item|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-tbmm-2-3795-event|0404-etik-23975-metni-referral|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-tbmm-2-3795-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-2-3795-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-2-3795-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-2-3795-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-cevrimici-uyelik-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-cevrimici-uyelik-cesme-p|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-cevrimici-uyelik-cesme-iliski-id"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-yeni-parti-haber-49-uyelik-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-cevrimici-uyelik-cesme-event|0404-yeni-parti-haber-50-uyelik-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-yeni-parti-haber-289-onsecim-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-genelbaskan-onsecim|0404-yeni-parti-haber-291-onsecim-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-orav-gorusme-event|0404-yeni-parti-haber-237-orav|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-ilave-kpk-incesu-participation|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-kpk-82-event|0404-ab-ilave-kpk-incesu-statement|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-made-in-europe-1026-event|0404-ab-ilave-made-1026-agenda|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-ab-made-in-europe-1026-event|0404-ab-ilave-made-1026-date|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-ab-made-in-europe-1026-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-ab-made-in-europe-1026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-ab-made-in-europe-1026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-ab-made-in-europe-1026-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0404-kesim-program-cumhuriyet-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-aa-time|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-aa-participant|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-kurtulmus-participant|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-anitkabir-event|0404-kesim-haber-296-body|initiative"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kesim-anitkabir-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kesim-anitkabir-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kesim-anitkabir-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kesim-anitkabir-relation"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-opening|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-speech-title|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-speech|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-kesim-tbmm-konusma-event|0404-kesim-tbmm-closing|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-kesim-tbmm-konusma-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0404-kesim-tbmm-konusma-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0404-kesim-tbmm-konusma-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0404-kesim-tbmm-konusma-relation"
     }
   ]
 }
