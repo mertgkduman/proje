@@ -87,3 +87,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 108–112 de okundu: adres kodu ve adres değişikliği hakkında Gökan Zeybek ve Ali Kenanoğlu soru sorar, nüfus idaresi yetkilisi kendi açıklamalarını yapar. 2020 sözleri otomatik olarak TİP’e atfedilmedi; sistem hakkındaki beyan ve kaygılar ilgili katılımcılara ait kaldı. İndeks 113–154 açık.
 
 9 Aralık toplantısı PDF indeks 113–117 de okundu: okul için adres beyanı, yapı envanteri ve seçim kayıtlarına ilişkin sorular ile idare yetkilisinin farklı açıklamaları yer alır. İddialar ilgili konuşmacılara ait ve ayrı tutulmuştur; Ali Kenanoğlu’nun 2020 sözü TİP’e otomatik atfedilmez. İndeks 118–154 açık.
+
+9 Aralık toplantısı PDF indeks 118–122 de okundu: MAKS güncelliği, esnaf kaydı ve yapı kayıt belgesi taşıyan yapılardaki nüfus üzerine sorular ve yetkili açıklamaları bulunur. Bu kişisel görüş ve kurumsal beyanlar gerçekleşmiş sonuç veya TİP tutumu sayılmaz. İndeks 123–154 açık.
