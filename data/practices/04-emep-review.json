@@ -41,6 +41,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-aliaga-731468-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0410-emep-question-31468-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-31468-register-answer-date-p\", \"0410-emep-question-31468-register-date-p\", \"0410-emep-question-31468-register-owner-p\", \"0410-emep-question-31468-register-topic-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt geliş tarihi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-aliaga-731468-event için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-bolu-il-kongre-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -298,6 +311,58 @@
       "limitations": "2023 ara tüzük ve resmî seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "0410-2023-kongre-event|04010-emep-2023-cumhuriyet-p|result için ilgili metin ve dönemsellik incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-answer-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0410-emep-question-31468-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-31468-register-answer-date-p\"]",
+      "inspected_sections": "[\"Yanıt geliş tarihi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-aliaga-731468-event|0410-emep-question-31468-register-answer-date-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0410-emep-question-31468-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-31468-register-date-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-aliaga-731468-event|0410-emep-question-31468-register-date-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0410-emep-question-31468-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-31468-register-owner-p\"]",
+      "inspected_sections": "[\"Soru sahibi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-aliaga-731468-event|0410-emep-question-31468-register-owner-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0410-emep-question-31468-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-31468-register-topic-p\"]",
+      "inspected_sections": "[\"Soru konusu\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-aliaga-731468-event|0410-emep-question-31468-register-topic-p|action için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -730,6 +795,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-aliaga-731468-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-31468-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-31468-register-answer-date-p\", \"0410-emep-question-31468-register-date-p\", \"0410-emep-question-31468-register-owner-p\", \"0410-emep-question-31468-register-topic-p\", \"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\", \"Program G/C/b\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt geliş tarihi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-aliaga-731468-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-bolu-disiplin-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -935,6 +1013,19 @@
       "limitations": "2023 ara tüzük ve resmî seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "0410-2023-kongre-relation için ilgili metin ve dönemsellik incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-aliaga-731468-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-31468-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-31468-register-answer-date-p\", \"0410-emep-question-31468-register-date-p\", \"0410-emep-question-31468-register-owner-p\", \"0410-emep-question-31468-register-topic-p\", \"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş\", \"Program G/C/b\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt geliş tarihi\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-aliaga-731468-relation için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -1237,6 +1328,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-aliaga-731468-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-aliaga-731468-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-bolu-disiplin-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -1523,6 +1627,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-safety-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-safety-statement için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-school-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:04:41+00:00",
@@ -1650,6 +1767,19 @@
       "limitations": "Teklifin kabulü, yürürlüğü veya belediyelere fiilî etkisi gösterilmedi.",
       "result": "reviewed",
       "reason": "practice_statement.quote_finding_id / 0410-municipal-statement için program, TBMM kayıt ve imzalı teklif incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-safety-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-safety-statement için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -1783,6 +1913,19 @@
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-safety-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:49:24+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\"]",
+      "supported_claim": "Program iş sağlığı önlemi ister; TBMM kaydı Aliağa sorusu ve yanıt gelişini gösterir.",
+      "limitations": "Yanıt gelişi sorunun veya incelemenin sonuçlandığını kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-safety-statement için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-school-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:04:41+00:00",
@@ -1807,6 +1950,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-2023-kongre-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-aliaga-731468-event"
     },
     {
       "subject_kind": "practice_event",
@@ -1887,6 +2034,22 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-2023-kongre-event|04010-emep-2023-cumhuriyet-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-answer-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-topic-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2022,6 +2185,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-aliaga-731468-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-bolu-disiplin-relation"
     },
     {
@@ -2086,6 +2253,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-aliaga-731468-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-bolu-disiplin-relation"
     },
     {
@@ -2175,6 +2346,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-aliaga-731468-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -2263,6 +2438,10 @@
     {
       "subject_kind": "practice_statement",
       "subject_id": "0410-municipal-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-safety-statement"
     },
     {
       "subject_kind": "practice_statement",
@@ -2306,6 +2485,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-safety-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-school-statement"
     },
     {
@@ -2343,6 +2526,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-municipal-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-safety-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
