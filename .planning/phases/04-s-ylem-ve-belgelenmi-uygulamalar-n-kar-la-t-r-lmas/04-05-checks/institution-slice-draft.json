@@ -280,7 +280,7 @@
       "values": {
         "id": "0405-tip-istifa-aciklama-ozet",
         "party_id": "tip",
-        "heading": "Söylem ve uygulama",
+        "heading": "Belgelenmiş uygulamalar",
         "pair_id": "0405-tip-istifa-aciklama-ozet",
         "text": "Tüzük kopyası üyelerin kendi organlarında tartışabileceğini belirtir. Temmuz 2024’te açıklama yapan kişiler yerel görüşlerin dikkate alınmadığını ileri sürdü ve istifa ettiklerini duyurdu. Parti, bazı kişilerin üyelik ve görev durumlarına itiraz etti; somut statüler çözülmemiştir.",
         "provenance": "summary",
@@ -300,7 +300,7 @@
       "values": {
         "finding_id": "0405-tip-istifa-aciklama-ozet",
         "passage_id": "0304-tip-pdf-uye-tartisma-q",
-        "checked_at": "2026-11-22T03:36:29.666144+00:00",
+        "checked_at": "2026-11-22T03:39:47.788361+00:00",
         "result": "confirmed",
         "reason": "Kaynaklardaki karşılıklı açıklama ve tüzük bağlamı atıf ve belirsizlik korunarak okundu."
       }
@@ -318,7 +318,7 @@
       "values": {
         "finding_id": "0405-tip-istifa-aciklama-ozet",
         "passage_id": "0405-tip-istifa-cumhuriyet-announcement-p",
-        "checked_at": "2026-11-22T03:36:29.666144+00:00",
+        "checked_at": "2026-11-22T03:39:47.788361+00:00",
         "result": "confirmed",
         "reason": "Kaynaklardaki karşılıklı açıklama ve tüzük bağlamı atıf ve belirsizlik korunarak okundu."
       }
@@ -336,7 +336,7 @@
       "values": {
         "finding_id": "0405-tip-istifa-aciklama-ozet",
         "passage_id": "0405-tip-istifa-cumhuriyet-criticism-p",
-        "checked_at": "2026-11-22T03:36:29.666144+00:00",
+        "checked_at": "2026-11-22T03:39:47.788361+00:00",
         "result": "confirmed",
         "reason": "Kaynaklardaki karşılıklı açıklama ve tüzük bağlamı atıf ve belirsizlik korunarak okundu."
       }
@@ -354,7 +354,7 @@
       "values": {
         "finding_id": "0405-tip-istifa-aciklama-ozet",
         "passage_id": "0405-tip-istifa-cumhuriyet-rebuttal-mdk-p",
-        "checked_at": "2026-11-22T03:36:29.666144+00:00",
+        "checked_at": "2026-11-22T03:39:47.788361+00:00",
         "result": "confirmed",
         "reason": "Kaynaklardaki karşılıklı açıklama ve tüzük bağlamı atıf ve belirsizlik korunarak okundu."
       }
@@ -372,7 +372,7 @@
       "values": {
         "finding_id": "0405-tip-istifa-aciklama-ozet",
         "passage_id": "0405-tip-gazeteci-yanit-denial-p",
-        "checked_at": "2026-11-22T03:36:29.666144+00:00",
+        "checked_at": "2026-11-22T03:39:47.788361+00:00",
         "result": "confirmed",
         "reason": "Kaynaklardaki karşılıklı açıklama ve tüzük bağlamı atıf ve belirsizlik korunarak okundu."
       }
@@ -384,9 +384,61 @@
         "kind": "finding",
         "subject_id": "0405-tip-istifa-aciklama-ozet",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-22T03:36:29.666144+00:00",
+        "reviewed_at": "2026-11-22T03:39:47.788361+00:00",
         "result": "reviewed",
         "reason": "Gazete haberi, parti yanıtı, sonraki kişi beyanı ve PDF sayfası birlikte incelendi; görev ve üyelik kesinleştirilmedi."
+      }
+    },
+    {
+      "kind": "actor",
+      "values": {
+        "id": "0405-tip-basin-burosu",
+        "kind": "institution",
+        "party_id": "tip",
+        "person_id": null,
+        "authorization_passage_id": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0405-tip-istifa-parti-cevap",
+        "party_id": "tip",
+        "heading": "Belgelenmiş uygulamalar",
+        "pair_id": "0405-tip-istifa-parti-cevap",
+        "text": "Parti Basın Bürosu açıklamada adı geçen Ümit Özçelik’in daha önce disiplin kararıyla ihraç edildiğini bildirdi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0405-tip-istifa-parti-cevap",
+        "passage_id": "0405-tip-istifa-cumhuriyet-rebuttal-mdk-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0405-tip-istifa-parti-cevap",
+        "passage_id": "0405-tip-istifa-cumhuriyet-rebuttal-mdk-p",
+        "checked_at": "2026-11-22T03:39:47.788361+00:00",
+        "result": "confirmed",
+        "reason": "Cumhuriyet haberindeki parti basın bürosu cevabı okunarak kuruma atfedildi."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0405-tip-istifa-parti-cevap",
+        "kind": "finding",
+        "subject_id": "0405-tip-istifa-parti-cevap",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-22T03:39:47.788361+00:00",
+        "result": "reviewed",
+        "reason": "İhraç iddiası partinin cevabıdır; disiplin kararı aslı görülmemiştir."
       }
     }
   ],
@@ -412,6 +464,15 @@
         "concrete_basis": "20 Temmuz tarihli haberin yayımladığı açıklama.",
         "limitation": "Parti kişilerin üyelik ve görev statüsüne itiraz ediyor; başlık bağımsız sicil doğrulaması değildir.",
         "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0405-tip-2024-istifa-aciklama",
+        "passage_id": "0405-tip-istifa-cumhuriyet-rebuttal-mdk-p",
+        "supported_point": "Parti Basın Bürosu önceden ihraç edildiğini bildiriyor",
+        "stage": "action",
+        "concrete_basis": "23 Temmuz güncellemeli haberde kurum cevabı aktarılıyor.",
+        "limitation": "Cevap duyurudan sonradır; disiplin kararı aslı görülmedi.",
+        "epistemic_type": "claim"
       }
     ],
     "practice_evidence_assessment": [
@@ -420,6 +481,25 @@
         "passage_id": "0405-tip-istifa-cumhuriyet-announcement-p",
         "stage": "action",
         "basis_kind": "document"
+      },
+      {
+        "event_id": "0405-tip-2024-istifa-aciklama",
+        "passage_id": "0405-tip-istifa-cumhuriyet-rebuttal-mdk-p",
+        "stage": "action",
+        "basis_kind": "document"
+      }
+    ],
+    "practice_contribution": [
+      {
+        "id": "0405-tip-istifa-parti-katki",
+        "event_id": "0405-tip-2024-istifa-aciklama",
+        "party_id": "tip",
+        "actor_id": "0405-tip-basin-burosu",
+        "contribution_kind": "objection",
+        "finding_id": "0405-tip-istifa-parti-cevap",
+        "authority_passage_id": null,
+        "membership_passage_id": null,
+        "responsibility_limit": "Parti basın bürosu cevabı, karşı açıklamanın ve üyelik sicilinin doğruluğunu tek başına çözmez."
       }
     ],
     "practice_statement": [
