@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;none&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; img-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;none&#x27;; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Parti Programı - Türkiye İşçi Partisi</title>
+      
+    
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+    
+  
+        
+  
+  
+      
+    
+  
+  
+  
+  
+  
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  <style>
+    :root { --offBg:#273248; --offFg:#e5e7eb; --glass:rgba(255,255,255,0.08); --night:#0f274a; --night-2:#132c55; --vr:#e5e7eb; }
+    .navbar { background:#e43442 !important; }
+    .nav-link.lang-link{ display:flex; align-items:center; gap:6px; font-weight:700; }
+    .nav-link.lang-link i{ font-size:14px; }
+    .mobile-topbar{ width:100%; display:flex; align-items:center; justify-content:space-between; }
+    .mobile-center-logo{ position:absolute; left:50%; transform:translateX(-50%); }
+    @media (min-width:768px){ .mobile-center-logo{ position:static; transform:none; } }
+    .icon-btn,.icon-link{ border:0 !important; outline:none !important; box-shadow:none !important; background:transparent; -webkit-tap-highlight-color:transparent; display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; }
+    .icon-btn:focus,.icon-btn:focus-visible,.icon-btn:active,.icon-link:focus,.icon-link:focus-visible,.icon-link:active{ border:0 !important; outline:none !important; box-shadow:none !important; }
+    .icon-btn::-moz-focus-inner{ border:0; }
+    .top-right-stack{ display:flex; align-items:center; gap:12px; }
+    .icon-img,.icon-img-lg{ height:28px; width:auto; display:block; }
+    .icon-link:hover img{ opacity:1; }
+    .icon-link img{ opacity:.95; transition:opacity .15s ease; }
+    .position-static .dropdown-menu.mega-menu{ left:0; right:0; width:100%; border:0; border-radius:0; padding:22px 0; background:#fff; }
+    .mega-menu .container{ max-width:1280px; padding-left:16px; padding-right:16px; }
+    .mega-menu .row{ margin-left:0; margin-right:0; }
+    .mega-menu h5.fw-bold{ font-weight:800; font-size:15px; letter-spacing:.02em; color:#111827; margin:0 0 10px; }
+    .mega-menu .dropdown-item{ padding:6px 0; color:#111827; }
+    .mega-menu .dropdown-item:hover{ color:#e43442; background:transparent; }
+    @media (min-width:992px){ .mega-col{ position:relative; padding:0 18px; border-right:1px solid var(--vr); } .mega-col:last-of-type{ border-right:1px solid var(--vr); } .mega-banners{ padding-left:24px; } }
+    .quick-access-wrap{ display:flex; flex-direction:column; gap:12px; }
+    .quick-access-wrap .quick-banner{ display:block; width:100%; border-radius:12px; overflow:hidden; }
+    .quick-access-wrap .quick-banner img{ border-radius:8px; display:block; width:100%; height:auto; object-fit:cover; max-height:180px; }
+    .offcanvas-modern{ background: radial-gradient(1200px 600px at 20% -10%, rgba(255,255,255,.12), transparent 60%), radial-gradient(1000px 500px at 120% 20%, rgba(255,255,255,.08), transparent 70%), var(--offBg); color:var(--offFg); border-right:0; }
+    .offcanvas-modern .offcanvas-header{ justify-content:space-between; align-items:center; padding-right:48px; }
+    .offcanvas-modern .brand-chip{ display:flex; align-items:center; justify-content:center; text-decoration:none; color:var(--offFg); padding:8px 12px; background:var(--glass); border-radius:14px; backdrop-filter:blur(10px); }
+    .offcanvas-modern .brand-chip img{ height:60px; }
+    .offcanvas-modern .btn-close{ right:12px; top:12px; filter:invert(1); }
+    .offcanvas-modern .group-card{ background:var(--glass); border-radius:16px; padding:12px 14px; margin-bottom:12px; }
+    .offcanvas-modern .group-title{ font-weight:800; font-size:18px; letter-spacing:.02em; color:#f8fafc; opacity:.95; margin:2px 2px 10px; }
+    .offcanvas-modern .list-modern .item{ display:flex; align-items:center; gap:10px; padding:10px 8px; border-radius:10px; text-decoration:none; color:var(--offFg); }
+    .offcanvas-modern .list-modern .item:hover{ background:rgba(255,255,255,.08); }
+    .offcanvas-modern .quick-banners{ display:flex; flex-direction:column; gap:10px; margin:6px 0 14px; }
+    .offcanvas-modern .quick-banners .quick-banner img{ display:block; width:100%; height:auto; object-fit:cover; max-height:140px; border-radius:8px; }
+    .social-row{ display:flex; align-items:center; gap:12px; }
+    .nav-actions a.icon-link{ display:inline-flex; align-items:center; justify-content:center; height:36px; }
+    .search-overlay{ position:fixed; inset:0; z-index:1055; background:linear-gradient(180deg, rgba(19,44,85,.88), rgba(19,44,85,.88)); display:none; backdrop-filter:blur(2px); }
+    .search-overlay.show{ display:block; }
+    .search-card{ position:absolute; left:50%; transform:translateX(-50%); top:clamp(10px, 6vh, 64px); width:min(960px, 92vw); border-radius:16px; overflow:hidden; background:#fff; box-shadow:0 12px 40px rgba(0,0,0,.25); }
+    .search-head{ padding:14px; }
+    .search-head input[type="search"]{ width:100%; border:1px solid #e5e7eb; border-radius:10px; padding:12px 14px; outline:0; }
+    .search-results{ display:none; max-height:60vh; overflow:auto; padding:8px 10px; background:#fff; border-top:1px solid #eee; }
+    .search-results.show{ display:block; }
+    .sr-item{ display:flex; gap:10px; padding:10px; border-radius:12px; text-decoration:none; color:#111; }
+    .sr-item:hover{ background:#f7f7f8; }
+    .sr-thumb{ flex:0 0 64px; width:64px; height:64px; border-radius:8px; background:#f0f0f0; overflow:hidden; }
+    .sr-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .sr-title{ font-weight:800; margin:0 0 4px; font-size:16px; }
+    .sr-snippet{ margin:0; color:#555; font-size:13px; line-height:1.5; }
+    .sr-empty{ padding:14px; color:#333; }
+    .sr-badge{ display:inline-block; font-size:11px; font-weight:700; padding:2px 6px; border-radius:6px; background:#e8eef7; color:#17325a; margin-left:6px; }
+    @media (max-width: 991.98px){ .search-results{ max-height:70vh; } #mobileMenu.offcanvas{ --bs-offcanvas-width:100vw; } #mobileMenu .offcanvas-header{ padding-left:max(12px, env(safe-area-inset-left)); padding-right:max(12px, env(safe-area-inset-right)); } #mobileMenu .offcanvas-body{ height:calc(100vh - 84px); overflow:auto; padding-bottom:max(16px, env(safe-area-inset-bottom)); } }
+    .lang-pill{ display:inline-flex; align-items:center; gap:6px; font-weight:800; font-size:13px; letter-spacing:.02em; color:#0f172a; background:#e5e7eb; padding:6px 10px; border-radius:999px; text-decoration:none; }
+    .lang-pill .fa-globe{ font-size:14px; }
+    .navbar.sticky-top { z-index:1040; }
+    .position-static .dropdown-menu.mega-menu { z-index:1050; }
+    .contact-strip{ margin:6px 0 14px; }
+    .contact-btn{ display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:#e43442; color:#fff; text-decoration:none; padding:12px 14px; border-radius:12px; font-weight:800; letter-spacing:.01em; box-shadow:0 6px 16px rgba(228,52,66,.35); }
+    .contact-btn:active{ transform:translateY(1px); }
+    .ghost-login{ display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; border:1px solid rgba(255,255,255,.9); color:#fff; background:transparent; text-decoration:none; font-weight:600; font-size:15px; letter-spacing:.01em; line-height:1; transition:background .2s ease, border-color .2s ease, color .2s ease, transform .05s ease; will-change:background, transform; }
+    .ghost-login:hover{ background:rgba(255,255,255,.14); color:#fff; }
+    .ghost-login:active{ transform:translateY(1px); }
+    .ghost-login .fa-user{ font-size:14px; }
+  </style>
+  <style>
+    .tip-app-promo{
+      display:none;
+      align-items:center;
+      gap:10px;
+      background:linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
+      border-top:1px solid #d8e3f5;
+      padding:10px 12px;
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1085;
+    }
+    .tip-app-promo__text{
+      flex:1;
+      min-width:0;
+      font-size:13px;
+      line-height:1.35;
+      color:#172b4d;
+      font-weight:700;
+    }
+    .tip-app-promo__store{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      background:#e43442;
+      color:#fff;
+      border-radius:999px;
+      padding:8px 12px;
+      font-size:12px;
+      font-weight:800;
+      white-space:nowrap;
+      box-shadow:0 5px 14px rgba(228,52,66,.25);
+    }
+    .tip-app-promo__icon{
+      width:16px;
+      height:16px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+    }
+    .tip-app-promo__icon svg{ display:block; fill:#fff; color:#fff; }
+    .tip-app-promo__close{
+      border:0;
+      background:transparent;
+      color:#4b5563;
+      width:26px;
+      height:26px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-size:16px;
+      line-height:1;
+      padding:0;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+    .tip-app-promo__close:active{ transform:translateY(1px); }
+    @media (max-width: 991.98px){
+      .tip-app-promo.is-visible{ display:flex; }
+      body.tip-app-promo-visible{ padding-bottom:72px; }
+      .navbar.sticky-top{ top:0 !important; position:sticky; }
+      body.tip-app-promo-visible .back-to-top{
+        bottom:88px !important;
+        z-index:1080 !important;
+      }
+    }
+  </style>
+<style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head>
+<body>
+<div id="tipAppPromo" class="tip-app-promo">
+  <span class="tip-app-promo__text">TİP Dijital Uygulamasını indirin, gelişmeleri takip edin.</span>
+  <a id="tipAppPromoStoreBtn" class="tip-app-promo__store" href="https://play.google.com/store/apps/details?id=com.tipdijital" aria-label="Uygulamayı Aç">
+    <span id="tipAppPromoIcon" class="tip-app-promo__icon" aria-hidden="true"></span>
+    <span id="tipAppPromoBtnText">Uygulamayı Aç</span>
+  </a>
+  ×
+</div>
+
+
+<nav class="navbar navbar-expand-md navbar-light sticky-top shadow-sm">
+  <div class="container-fluid-header w-100">
+    <div class="mobile-topbar d-md-none position-relative">
+      
+        <span class="navbar-toggler-icon"></span>
+      
+      <a href="https://tip.org.tr/" class="navbar-brand mobile-center-logo">
+        <img alt="TİP Logo" height="40">
+      </a>
+      <div class="d-flex align-items-center ms-auto" style="gap:10px;">
+        
+          <img alt="Ara" class="img-raw" width="28" height="28">
+        
+      </div>
+    </div>
+    <a href="https://tip.org.tr/" class="d-none d-md-block navbar-brand ms-md-2">
+      <img alt="TİP Logo" height="50">
+    </a>
+    <div class="d-none d-md-block collapse navbar-collapse" id="topNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown position-static" id="hizliErisimDropdown">
+          <a href="#" class="nav-link" id="hizliDropdown" aria-expanded="false">
+            Hızlı Erişim <i class="fa-chevron-down fas fs-6"></i>
+          </a>
+          <div class="p-0 dropdown-menu mega-menu" aria-labelledby="hizliDropdown">
+            <div class="container">
+              <div class="row gy-0 align-items-start">
+                <div class="col-lg-2 mega-col">
+                  <h5 class="fw-bold">Parti</h5>
+                  <ul class="list-unstyled m-0">
+                                          <li><a href="https://tip.org.tr/parti-programi" class="dropdown-item">Program</a></li>
+                                          <li><a href="https://tip.org.tr/tuzuk" class="dropdown-item">Tüzük</a></li>
+                                          <li><a href="https://tip.org.tr/genel-baskan" class="dropdown-item">Genel Başkan</a></li>
+                                          <li><a href="https://tip.org.tr/parti-sozcusu" class="dropdown-item">Parti Sözcüsü</a></li>
+                                          <li><a href="https://tip.org.tr/yonetim" class="dropdown-item">Yönetim</a></li>
+                                          <li><a href="https://tip.org.tr/burolar-ve-komisyonlar" class="dropdown-item">Bürolar ve Komisyonlar</a></li>
+                                      </ul>
+                </div>
+                <div class="col-lg-3 mega-col">
+                  <h5 class="fw-bold">Çalışmalar</h5>
+                  <ul class="list-unstyled m-0">
+                                          <li><a href="https://tip.org.tr/myk-ve-parti-meclisi/" class="dropdown-item">MYK ve Parti Meclisi Değerlendirmeleri</a></li>
+                                          <li><a href="https://tip.org.tr/raporlar-belgeler/" class="dropdown-item">Raporlar ve Belgeler</a></li>
+                                          <li><a href="https://tip.org.tr/kanun-teklifleri/" class="dropdown-item">Kanun Teklifleri ve Soru Önergeleri</a></li>
+                                          <li><a href="https://tip.org.tr/basin-toplantilari-ve-aciklamalari/" class="dropdown-item">Basın Toplantıları ve Açıklamaları</a></li>
+                                          <li><a href="https://tip.org.tr/partiden-haberler/" class="dropdown-item">Partiden Haberler</a></li>
+                                      </ul>
+                </div>
+                <div class="col-lg-2 mega-col">
+                  <h5 class="fw-bold">Yayınlar</h5>
+                  <ul class="list-unstyled m-0">
+                                          <li><a href="https://tip.org.tr/yayinlar/cark-basak-dergi" class="dropdown-item">ÇarkBaşak</a></li>
+                                          <li><a href="https://tip.org.tr/yayinlar/komunist-dergi" class="dropdown-item">Komünist</a></li>
+                                          <li><a href="https://tip.org.tr/yayinlar/inat-dergi" class="dropdown-item">İnat Dergi</a></li>
+                                          <li><a href="https://tip.org.tr/bultenler/" class="dropdown-item">Bültenler</a></li>
+                                      </ul>
+                </div>
+                <div class="col-lg-5 mega-banners">
+                  <div class="quick-access-wrap">
+                    <a href="https://tipekatil.tip.org.tr" class="quick-banner" aria-label="TİP’e Katıl">
+                      <img alt="TİP’e Katıl">
+                    </a>
+                    <a href="https://tip.org.tr/bagis-yap" class="quick-banner" aria-label="Bağış Yap">
+                      <img alt="Bağış Yap">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="https://tip.org.tr/iletisim" class="nav-link">Bize Ulaşın</a></li>
+        <li class="nav-item">
+          <a href="https://tip.org.tr/en" class="nav-link lang-link" aria-label="English site">
+            <i class="fa-solid fa-globe"></i><span class="d-none d-lg-inline">EN</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-none d-md-flex align-items-center ms-auto top-right-stack nav-actions">
+      
+        <img alt="Ara" class="img-raw" width="28" height="28">
+      
+      <div class="social-row">
+                  <a href="https://www.facebook.com/tipgenelmerkez" class="icon-link" aria-label="facebook">
+            <img alt="Facebook" class="icon-img">
+          </a>
+                  <a href="https://twitter.com/tipgenelmerkez" class="icon-link" aria-label="twitter">
+            <img alt="Twitter" class="icon-img">
+          </a>
+                  <a href="https://www.instagram.com/tipgenelmerkez" class="icon-link" aria-label="instagram">
+            <img alt="Instagram" class="icon-img">
+          </a>
+                  <a href="https://www.youtube.com/@tipgenelmerkez" class="icon-link" aria-label="youtube">
+            <img alt="Youtube" class="icon-img">
+          </a>
+              </div>
+      <a href="https://benim.tip.org.tr" class="ghost-login" aria-label="Üye Girişi - benim.tip.org.tr">
+        <i class="fa-regular fa-user" aria-hidden="true"></i>
+        <span>Üye Girişi</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="search-overlay" id="searchOverlay" role="dialog">
+  <div class="search-card" role="search">
+    <div class="search-head">
+      
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-start offcanvas-modern" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <a href="https://tip.org.tr/" class="brand-chip" id="mobileMenuLabel" aria-label="Anasayfa">
+      <img alt="TİP Logo">
+    </a>
+    <div class="right-actions" style="display:flex; align-items:center; gap:10px;">
+      <a class="lang-pill" href="https://tip.org.tr/en" aria-label="English site">
+        <i class="fa-solid fa-globe" aria-hidden="true"></i><span>EN</span>
+      </a>
+      <div class="social-row">
+                  <a href="https://www.facebook.com/tipgenelmerkez" class="icon-link" aria-label="facebook">
+            <img alt="Facebook" class="icon-img">
+          </a>
+                  <a href="https://twitter.com/tipgenelmerkez" class="icon-link" aria-label="twitter">
+            <img alt="Twitter" class="icon-img">
+          </a>
+                  <a href="https://www.instagram.com/tipgenelmerkez" class="icon-link" aria-label="instagram">
+            <img alt="Instagram" class="icon-img">
+          </a>
+                  <a href="https://www.youtube.com/@tipgenelmerkez" class="icon-link" aria-label="youtube">
+            <img alt="Youtube" class="icon-img">
+          </a>
+              </div>
+    </div>
+    
+  </div>
+  <div class="offcanvas-body">
+    <div class="contact-strip">
+      <a href="https://tip.org.tr/iletisim" class="contact-btn" aria-label="Bize Ulaşın">
+        <i class="fa-regular fa-envelope"></i><span>Bize Ulaşın</span>
+      </a>
+    </div>
+    <div class="contact-strip">
+      <a href="https://benim.tip.org.tr" class="contact-btn" aria-label="Üye Girişi - benim.tip.org.tr" style="background:transparent;border:1px solid rgba(255,255,255,.85);box-shadow:none;color:#fff;">
+        <i class="fa-regular fa-user" aria-hidden="true"></i><span>Üye Girişi</span>
+      </a>
+    </div>
+    <div class="quick-banners">
+      <a href="https://tipekatil.tip.org.tr" class="quick-banner" aria-label="TİP’e Katıl">
+        <img alt="TİP’e Katıl">
+      </a>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Parti</div>
+      <div class="list-modern">
+                  <a class="item" href="https://tip.org.tr/parti-programi"><i class="fa-regular fa-circle-right"></i><span>Program</span></a>
+                  <a class="item" href="https://tip.org.tr/tuzuk"><i class="fa-regular fa-circle-right"></i><span>Tüzük</span></a>
+                  <a class="item" href="https://tip.org.tr/genel-baskan"><i class="fa-regular fa-circle-right"></i><span>Genel Başkan</span></a>
+                  <a class="item" href="https://tip.org.tr/parti-sozcusu"><i class="fa-regular fa-circle-right"></i><span>Parti Sözcüsü</span></a>
+                  <a class="item" href="https://tip.org.tr/yonetim"><i class="fa-regular fa-circle-right"></i><span>Yönetim</span></a>
+                  <a class="item" href="https://tip.org.tr/burolar-ve-komisyonlar"><i class="fa-regular fa-circle-right"></i><span>Bürolar ve Komisyonlar</span></a>
+              </div>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Çalışmalar</div>
+      <div class="list-modern">
+                  <a class="item" href="https://tip.org.tr/myk-ve-parti-meclisi/"><i class="fa-regular fa-circle-right"></i><span>MYK ve Parti Meclisi Değerlendirmeleri</span></a>
+                  <a class="item" href="https://tip.org.tr/raporlar-belgeler/"><i class="fa-regular fa-circle-right"></i><span>Raporlar ve Belgeler</span></a>
+                  <a class="item" href="https://tip.org.tr/kanun-teklifleri/"><i class="fa-regular fa-circle-right"></i><span>Kanun Teklifleri ve Soru Önergeleri</span></a>
+                  <a class="item" href="https://tip.org.tr/basin-toplantilari-ve-aciklamalari/"><i class="fa-regular fa-circle-right"></i><span>Basın Toplantıları ve Açıklamaları</span></a>
+                  <a class="item" href="https://tip.org.tr/partiden-haberler/"><i class="fa-regular fa-circle-right"></i><span>Partiden Haberler</span></a>
+              </div>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Yayınlar</div>
+      <div class="list-modern">
+                  <a class="item" href="https://tip.org.tr/yayinlar/cark-basak-dergi"><i class="fa-regular fa-circle-right"></i><span>ÇarkBaşak</span></a>
+                  <a class="item" href="https://tip.org.tr/yayinlar/komunist-dergi"><i class="fa-regular fa-circle-right"></i><span>Komünist</span></a>
+                  <a class="item" href="https://tip.org.tr/yayinlar/inat-dergi"><i class="fa-regular fa-circle-right"></i><span>İnat Dergi</span></a>
+                  <a class="item" href="https://tip.org.tr/bultenler/"><i class="fa-regular fa-circle-right"></i><span>Bültenler</span></a>
+              </div>
+    </div>
+    <div class="quick-banners">
+      <a href="https://tip.org.tr/bagis-yap" class="quick-banner" aria-label="Bağış Yap">
+        <img alt="Bağış Yap">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+<body>
+
+<div class="page-banner">
+  <div class="container-1200">
+    <div class="banner-row">
+      <h1 class="banner-title">PARTİ PROGRAMI</h1>
+      
+        Keşfet
+      
+    </div>
+  </div>
+</div>
+
+<section class="pt-0 pb-4">
+  <div class="container-1200">
+    <div class="row g-4">
+      <aside class="col-lg-3 d-none d-lg-block">
+        <div class="card border-0 shadow-sm sticky-top">
+          <div class="card-body">
+            <div class="content-outline mb-3">
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <span class="sidebar-heading">Arama yap</span>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                
+                ×
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <small class="text-muted">Sonuç: <span id="searchCount">0</span></small>
+                <small class="text-muted">Enter: sonraki • Shift+Enter: önceki</small>
+              </div>
+            </div>
+
+            <div class="content-outline">
+              <nav id="tocNav" class="nav flex-column small gap-1 mb-2">
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#giris">
+                    <span class="flex-grow-1">GİRİŞ</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#1-bolum-parti-programi">
+                    <span class="flex-grow-1">1. Bölüm: Parti Programı</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#2-bolum-mucadele-programi">
+                    <span class="flex-grow-1">2. Bölüm: Mücadele Programı</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#3-bolum-sosyalizm-programi">
+                    <span class="flex-grow-1">3. Bölüm: Sosyalizm Programı</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                              </nav>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+
+      <main class="col-lg-9">
+        <div id="programContent" class="card border-0 shadow-sm">
+          <div class="card-body p-0 p-md-5">
+            <div id="top"></div>
+
+            
+            <div class="offcanvas offcanvas-start" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="tocOffcanvasLabel">Parti Programı</h5>
+                
+              </div>
+              <div class="offcanvas-body">
+                <div class="input-group mb-2">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                  
+                  ×
+                </div>
+                <div class="mb-2"><small class="text-muted">Sonuç: <span id="searchCountMobile">0</span></small></div>
+
+                <div class="content-outline">
+                  <nav id="tocNavMobile" class="nav flex-column small gap-1 mb-2">
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#giris">
+                        <span class="flex-grow-1"><strong>GİRİŞ</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#1-bolum-parti-programi">
+                        <span class="flex-grow-1"><strong>1. Bölüm: Parti Programı</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#2-bolum-mucadele-programi">
+                        <span class="flex-grow-1"><strong>2. Bölüm: Mücadele Programı</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#3-bolum-sosyalizm-programi">
+                        <span class="flex-grow-1"><strong>3. Bölüm: Sosyalizm Programı</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                      </nav>
+                </div>
+              </div>
+            </div>
+
+            <div class="program-html">
+                              <section id="giris" class="program-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>GİRİŞ</strong></h2>
+                  <p>Zamanların en iyisindeyiz ve zamanların en kötüsünde.</p>
+<p>Dünya üzerindeki halklar eşi görülmemiş bir sefalet ve yoksulluk ile boğuşuyor. Sınırları aşan savaşlar; sınırsız silahlanma; insanlığı birbirine düşman eden ırkçılık ve mezhepçilik; doğal yaşamın, çevrenin, kentlerin geri dönüşü olmayan bir biçimde tahrip edilmesi; her tür insani ilişkiyi ortadan kaldıran ve toplumu birbirine bağlayan tüm değerleri parçalayan bencillik; özgür düşüncenin ve uygarlığın gelişiminin önünü tıkayan bayağılık, tüm çirkinliği ve kokuşmuşluğu ile bu sefalet ve yoksulluk sahnesindeki rollerini oynuyor.</p>
+<p>Kapitalizm, emekçileri en azgın biçimde sömürebilmek için insanlık tarihinin gördüğü en kuralsız, en acımasız, en kapsamlı saldırıyı yürütüyor.</p>
+<p>Binlerce yıldır dünyanın ve uygarlığın gerçek yapıcıları olan emekçiler ise, kapitalizmin vahşetine karşı direnmenin, haklarını ve yaşamlarını korumanın, eşit, özgür ve adil bir geleceğe kendi imkanlarıyla ulaşmanın yolunu arıyor. Latin Amerika’dan Asya’ya, Ortadoğu’dan ülkemize kadar tüm dünyada, işçiler ve emekçiler, gençler ve kadınlar, sanatçılar ve aydınlar her hücresinden irin ve zehir fışkıran kapitalizme karşı aydınlığı, paylaşmayı, dayanışmayı büyüten mücadeleler yaratıyor.</p>
+<p>Dünyayı en sefil arzularının tatmini için barbarlık koşullarına çekmeye uğraşan kapitalizme karşı, emekçiler, bin yıllar içinde kazanılmış insani ve uygar değerlere sahip çıkıyor, dünyayı sermaye egemenliğinin karanlığından kurtarıp özgürleştirmeye gayret ediyor.</p>
+<p>Zamanların en iyisindeyiz ve zamanların en kötüsünde.</p>
+<p>Dünyamız, aydınlık ile karanlığın, ilericilik ile gericiliğin kadim savaşının son evresine giriyor.</p>
+<p>Bu evre, işçi sınıfının sermaye sınıfına karşı savaşından başka bir şey değildir.</p>
+<p>İnsanlığın geleceği, sınıf mücadelesinin geleceğine bağlıdır.</p>
+<p>Sosyalizmin dünya üzerindeki egemenliği, yüzlerce yıldır sefalet ve yoksulluk altında yaşamak zorunda bırakılan işçi ve emekçilerin kurtuluşunu; savaşlarla, ırkçılıkla, mezhepçilikle, baskı ve şiddetle köleleştirilen halkların özgürleşmesini sağlayacak yegane yoldur.</p>
+<p>Dünya, kapitalist sömürü düzeninin egemenliği altında geri dönüşü olmayan bir tercih yapma zorunluluğuyla bir kez daha yüz yüze gelmiştir: Ya sosyalizm, ya barbarlık!</p>
+<p>İnsanlığın kaderinin söz konusu olduğu bu eşikte, sosyalistlerin üstlendiği tarihsel görev bir kat daha önem kazanmış durumdadır. Dünyanın her köşesinde, sınıf mücadelesinin yükseltilmesi, kapitalist egemenliğin ortadan kaldırılması ve sosyalizmin zafere ulaştırılması, sosyalistlerin başka hiçbir görevle ikame edilemeyecek olan temel görevidir.</p>
+<p>Yeni bir dünyanın, insanlığın aydınlık ve özgür geleceğinin anahtarı dünya işçi sınıfının ve onun ayrılmaz parçası olan sosyalistlerin elindedir.</p>
+<p>Tarihin inatçı çarkı dönmeye devam ediyor.</p>
+<p>Zamanların en kötüsü, zamanların en iyisi karşısında can çekişiyor.</p>
+<p>Şimdi zaman, işçi sınıfının devrime yürüyüşünün zamanıdır.</p>
+<p>Çağımız sosyalizmin zaferinin çağıdır.</p>
+<p>Ve çağrımız, dün neyse, bugün de aynısıdır:</p>
+<p>“Varsın egemen sınıflar bir komünist devrim korkusuyla titresin. Proleterlerin, bu devrimde, zincirlerinden başka kaybedecekleri hiçbir şey yok. Kazanacakları bir dünya var.<br>
+<br>
+Bütün ülkelerin işçileri, birleşin!”</p>                </section>
+                              <section id="1-bolum-parti-programi" class="program-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>1. Bölüm: Parti Programı</strong></h2>
+                  <h3>SOSYALİZMİN GÜNCELLİĞİ</h3>
+<p>İnsanlık, 21. yüzyıla, herkesin tüm temel ihtiyaçlarının karşılanmasını mümkün kılabilecek düşünsel, bilimsel ve teknolojik birikimle girmiştir. Tüm insanların bu birikime erişmesi, ondan faydalanması ve ona katkıda bulunması mümkündür. Ne var ki, üretim araçlarının özel mülkiyetine dayanan kapitalist sistemde bu bilimsel ve teknolojik birikim büyük sermaye sahiplerini daha da zenginleştirmenin, geniş kitleleri ise yoksullaştırmanın ve sisteme bağımlı kılmanın aracı olarak kullanılmaktadır. İnsanlığın geleceğini ilgilendiren kararlar, kâr etme güdüsüyle toplumsal ve doğal kaynakları sömüren küçük bir azınlık tarafından alınmaktadır. Dünya nüfusunun ezici çoğunluğu sefalet koşullarında çalışmak ile işsiz kalmak arasında tercihe zorlanmaktadır. Oysa, bilim ve teknolojinin gelişmişlik düzeyi sayesinde, zorunlu çalışma saatleri en aza indirilebilir, yıpratıcı fiziksel ve zihinsel işler makinelere yaptırılabilir, herkesin yaratıcılık kapasitesi toplumsal çıkarlar doğrultusunda harekete geçirilebilir.</p>
+<p>Günümüzde, üretim araçlarının gelişmişlik düzeyi, sosyalizmin ve dahası sınıfsız toplumun ön koşullarını sağlamaktadır. İnsanlık, kapitalist sistem tarafından mahkûm edildiği barbarlıktan kurtulmanın olanaklarına sahiptir. İşçi sınıfının ve onunla birlikte insanlığın nihai kurtuluşu hedefine, ancak dünya devriminin gerçekleştirilmesiyle, sosyalizmin dünya ölçeğinde kurulmasıyla ulaşılabilir. Bu hedef doğrultusunda, her ülkenin komünistlerinin ilk görevi, kendi ülkelerindeki devrim mücadelesinin başarıya ulaşmasını sağlamaktır. Farklı ülkelerin işçi sınıfları arasındaki mücadele bağlarını güçlendirmekse, uzak bir geleceğin değil, bugünün görevidir.</p>
+<h3>KAPİTALİZM BÜTÜNSEL BİR BUNALIM İÇİNDE</h3>
+<p>Kapitalizm, doğası gereği sürekli bunalım yaratan bir sistemdir. Ancak kapitalist sistemin bunalımları, onun kendiliğinden yıkılacağı anlamına gelmemektedir. Dünya kapitalist sisteminin yıkılışı ve insanlığın kurtuluşu emekçilerin sosyalist iktidar mücadelesiyle gerçekleşecektir. Sermaye sahipleri, kapitalizmin bunalım dönemlerini, işçi sınıfının haklarını bu sınıfın elinden almanın, sömürü oranlarını yükseltmenin, emekçileri örgütsüzleştirmenin ve yoksullaştırmanın bahanesi olarak kullanmaya çalışır. İşçi sınıfının güçlü bir özne olarak siyaset sahnesinde yer almadığı koşullarda kapitalizmin bunalımları emekçiler için yıkıcı sonuçlar doğurur.</p>
+<p>Günümüzde dünya kapitalist sistemi, ekonomik, siyasal, ideolojik, toplumsal ve ekolojik boyutlarıyla bütünsel bir bunalımın içindedir. Kâr bölüşümü ve pazar hakimiyeti için büyük tekellerin ve onların temsilcisi kapitalist devletlerin rekabeti şiddetlenmektedir. Bu rekabet sonucunda, sömürü oranı daha önce görülmemiş düzeylere ulaşmakta, dünya işçi sınıfının tümüne yönelen saldırı işçi sınıfının tarihsel kazanımlarını, temel insan ve yurttaş haklarını ortadan kaldırmaktadır. Emekçilerin mücadelelerinin etkisini taşıyan sosyal devlet uygulamalarının yok edilmeye başlandığı 1980’li yıllardan bu yana, toplumsal eşitsizlikler giderek derinleşmiş, sosyalist ülkelerin dağılmasıyla emperyalist-kapitalist saldırganlık dizginlerinden boşanmıştır. İktisadi boyutunun yanı sıra, bölüşüm ilişkileri gibi siyasetin asli konularında emekçilerin karar alma süreçlerine katılımını engelleyen bir devlet ve toplum modeli olan neoliberalizm, işçi sınıfını sosyal haklarından mahrum bırakmış, örgütsüz kılmış; işsizliği, yoksulluğu ve güvencesizliği beraberinde getirmiştir. Burjuva demokrasisinin olağan unsurları dahi sermaye sınıfına fazlalık gelmeye başlamış, halkın siyasete katılımının başta otoriterleşme olmak üzere birçok yolla engellenmesi için adımlar atılmıştır. Kapitalist sistem, geniş kitleleri kucaklayan, birleştirici ideolojiler üretme yeteneğinden yoksun durumdadır. Sömürü düzeni tüm dünyayı barbarlık koşullarına çekerek varlığını sürdürmeye çalışmaktadır.</p>
+<p>Bugün kapitalizm varlığını, ayrıştırıcı ideolojilere ve baskıcı yönetim biçimlerine başvurarak korumaya çalışmaktadır. Toplumsal bölüşüm ilişkilerinin ve sınıf eşitsizliklerinin siyasetin konusu olmaktan çıkarılmasıyla, kimlik ve kültür alanlarına indirgenen siyasal ayrımlar, sermaye sınıfı tarafından egemenliğini sürdürmenin araçları olarak kullanılmaktadır. Böylece tüm dünyada ırkçı, dinci gerici, faşist siyasal akımlar güç kazanmakta, sömürüye karşı ortak çıkarlara sahip olan emekçiler karşı karşıya getirilmektedir. Kimlik ve kültür alanlarına sıkıştırılan siyaset, bu yolla kapitalist sömürüyü perdelemekte, ortak çıkarlara sahip olan toplum kesimlerinin bölünmüşlüğü, baskıcı rejimlerin kurulmasını kolaylaştırmaktadır.</p>
+<p>Sosyalist ülkelerin emperyalist saldırganlığı dizginlediği dönemin son bulması, istikrarlı bir “yeni dünya düzeni” getirmemiş, aksine bölgesel hegemonya arayan güçler arasındaki rekabet yükselmiştir. Emperyalist ve kapitalist devletler, bir yandan kendi sermaye sınıflarının dünya ölçeğindeki hammadde kaynakları ve pazarlar üzerindeki denetimini artırma mücadelesini yürütürken, farklılaşan ittifak ve bloklaşma ilişkileri içinde karşı karşıya da gelebilmektedirler. Silahlanma yarışının körüklenmesini, savaşların ve iç savaşların çıkarılmasını, etnik, ulusal ve dinsel gerilimlerin kışkırtılmasını içeren bu mücadeleler, aynı zamanda halkları aldatmanın ve baskı altına almanın araçlarıdır. Kapitalist devletlerin herhangi bir emperyalist ülke ya da bloktan şu ya da bu ölçüde bağımsız politikalar izleyebilmeleri, sermayenin uluslararası niteliğini ve bundan kaynaklanan bağımlılık ilişkilerini ortadan kaldırmamaktadır. Bu nedenle, günümüzde, anti-kapitalizmi içermeyen bir anti-emperyalizm başarısızlığa mahkûmdur. Dünya emekçi sınıfları, emperyalist merkezlere karşı olduğu kadar, emperyal emeller taşıyan güçlere karşı da yurtsever tutumlarını ve bağımsızlıklarını korumalıdır.</p>
+<p>Yerküremiz bugün ciddi bir ekolojik bunalımın içindedir. 20. yüzyılın ikinci yarısından başlayarak kendisini hissettiren ve 21. yüzyılda kaçınılmaz bir gerçeklik olarak önümüzde duran doğanın tahribatına karşı işçi sınıfı mücadelesi ekolojik bir konum almak durumundadır. Kapitalizm, kâr odaklı ve sermaye birikimine dayalı, büyüme ya da yok olma ikilemine hapsolmuş bir sistemdir. Kapitalizmde amaç, toplumun ihtiyaçlarını karşılamak değil sürekli daha fazla meta satarak kârı artırmaktır. Sonsuz büyüme isteği, aşırı üretimi körüklemekte, doğanın sınırlı kaynaklarını geri dönüşsüz biçimde tüketmekte, bugünün ve gelecek kuşakların yaşam olanaklarını tehlikeye atmaktadır. Kapitalizm emeği sömürdüğü gibi doğayı da sömürmekte, sermaye yarattığı devasa israfla yıkıcı bir nitelik taşımaktadır. Sanayi Devrimi’nden bu yana kapitalist etkinliklere bağlı aşırı kaynak tüketimi, ormansızlaşma, fosil yakıt kullanımı, karbon salımı vb. olguların, küresel iklim değişikliği, çevre kirliliği gibi yakıcı sorunlara yol açtığı görülmektedir. Sermaye kendi mantığıyla işlediği sürece gelecekte insanlığı açlık, susuzluk, çölleşme, tarım alanlarının ve pek çok canlı türünün yok olması, buzulların erimesiyle sular altında kalacak kentler, kitlesel göçler ve kaynak savaşları beklemektedir. Kapitalizmin akıldışılığı ve sürdürülemezliği ortadadır. Doğa tahribatının geri döndürülmesi için yalnızca sistem içi tasarruf önlemleri aramak ya da yeni teknolojik ilerlemelere bel bağlamak sorunları yamalarla geçiştirmeye çalışmaktan başka bir anlama gelmemektedir. Emeğin kurtuluşu ile doğanın kurtuluşunun yolu toplumun ihtiyaçlarını temel alan sosyalist bir düzenin kurulmasından geçmektedir.</p>
+<h3>TÜRKİYE’DE BURJUVA DEVRİMİ VE CUMHURİYET’İN KURULUŞU</h3>
+<p>Türkiye, kapitalistleşme ve burjuva devrimi süreçlerinin özgün örneklerinden birini temsil etmektedir. Yarı-sömürge Osmanlı düzeninin çöküşünün, paylaşım emeliyle atıldığı emperyalist savaşla birlikte kesinleştiği ve emperyalist işgalle kesiştiği bir uğrakta yükselen burjuva devrimi, bir yandan gerici saltanat ve hilafet rejimine karşı, bir yandan da emperyalist işgale karşı mücadele yürütmüştür. Osmanlı egemenliğinin son yüzyılında başlamış olan kapitalistleşme ve modernleşme süreci, asker ve sivil kökenli Osmanlı aydınlarının muhalefetinde kendi siyasal temsilcisini bulmuştur. 1908 ile birlikte giderek etkinliğini artıran muhalefet, Osmanlı hanedanının emperyalist işgale bütünüyle teslim olması ve emperyalizmin işbirlikçisine dönüşmesi sonucunda radikalleşmiş ve yoksul halkın işgale karşı direnişi ile birlikte süreç önce Kurtuluş Savaşı’na, ardından da 1923’te Türkiye Cumhuriyeti’nin kuruluşuna evrilmiştir.</p>
+<p>Hem tarihsel gelişim sürecinin evrensel mantığı, hem de Türkiye’ye özgü siyasal ve ideolojik süreçlerin niteliği açısından bir burjuva devrimi olarak değerlendirilmesi gereken bu dönüşüm, Osmanlı düzeni ile emperyalist işgale karşı mücadele verdiği ölçüde ilerici ve aydınlanmacı bir karakter edinmiştir. Bu anlamıyla, Türkiye’de Cumhuriyet rejiminin kuruluşu ilerici bir niteliğe sahiptir. Ancak 19. yüzyıl Osmanlı aydınlarının ve Cumhuriyet’in kurucu kadrolarının ilericiliği, sermaye sınıfının çıkarlarını aşan ve kapitalizmin ötesine geçen bir nitelik taşımamıştır. Burjuva devrimlerinin evrensel mantığına uygun biçimde, Türkiye’deki sermaye egemenliği de kurtuluş ve Cumhuriyet’in kuruluş yıllarında ortaya çıkmış olan ilerici ve aydınlanmacı niteliklerin hızla terk edilmesine, Türkiye’nin gerici ve işbirlikçi rotaya döndürülmesine yönelmiştir. Siyasal ve toplumsal yaşamın gericileştirilmesi, giderek Cumhuriyet’in tasfiye edilmesi, bir sapma veya sürpriz değil, kuruluşta yatan kapitalist mantığın mümkün kıldığı sonuçlarındandır.</p>
+<p>Türkiye’de, 19. yüzyılda başlayan ve 1923’te Cumhuriyet’in ilanıyla sıçrama yapan burjuva modernleşme süreci ülkemizdeki ilerici siyasal ve toplumsal mücadelelerin önemli kaynaklarından biri olmakla birlikte, tek ve birincil kaynak değildir. Yine Osmanlı düzeninin son yüzyılında ortaya çıkan, 1920’de Türkiye Komünist Partisi’nin kuruluşuyla örgütlü hale gelen, tüm Cumhuriyet tarihi boyunca ülkenin gelişiminin ve ilerlemesinin öncü gücü olan sol/sosyalist düşünce ile işçi sınıfının mücadelesi, günümüzde de ilerici siyasal ve toplumsal mücadelelerin başta gelen kaynağı ve zeminidir.</p>
+<h3>TÜRKİYE’NİN KURTULUŞU SOSYALİZMDE</h3>
+<p>Türkiye, orta gelişkinlikteki kapitalist bir ülkedir. Kapitalist üretim ilişkilerinin egemen olduğu ülkemizde, nüfusun büyük çoğunluğunu, yaşayabilmek için emek güçlerini satmak zorunda olanlar ile işsizler ve aileleri, yani işçi sınıfı oluşturmaktadır. Egemen sınıf ise, Türkiye Cumhuriyeti’nin kuruluşundan bu yana tüm iktidarlar tarafından çıkarları temsil edilen sermaye sahipleri sınıfıdır. Kapitalizm öncesi döneme ait üretim ilişkilerinin, sınıfların ve ideolojilerin kalıntıları süreç içinde ya tasfiye edilmiş ya da kapitalist yeniden üretim ilişkilerinin ayrılmaz birer parçasına dönüşmüştür. Günümüz Türkiye’sindeki tüm sömürme-sömürülme, ezme-ezilme ilişkilerinin temelinde, üretim araçlarının özel mülkiyetine dayalı kapitalist üretim tarzının egemenliği bulunmaktadır. Dolayısıyla, Türkiye’nin toplumsal kurtuluşu, ancak sosyalist bir siyasal devrimle ve bu devrimin ardından üretim araçlarının özel mülkiyetine son verilmesiyle, merkezi, planlı ve kamucu bir ekonomiyle, yani sosyalizme geçişle mümkündür.</p>
+<p>Türkiye kapitalizmi, dünya kapitalist sisteminin bağımlı bir üyesidir. Bağımlılık, dışsal zordan çok çıkar ortaklığına dayanmakta, Türkiye sermaye sınıfının ihtiyaçlarıyla örtüşmektedir. İktidarların zaman zaman emperyalizmin güncel politikalarıyla çelişen tercihlerde bulunabilmesi, Türkiye kapitalizminin iktisadi, siyasal ve askeri açılardan emperyalizme bağımlı olduğu gerçeğini değiştirmemektedir. Diğer yandan, işçi sınıfımızın ve halkımızın kurtuluşunu emperyalizm içi bloklaşmalarda aramak, sermaye egemenliğinin sürmesine katkıda bulunmaktan başka bir anlama gelmeyecektir.</p>
+<h3>SOSYALİZM İÇİN İŞÇİNİN GÜCÜ, PARTİNİN SÖZÜ</h3>
+<p>Türkiye’de toplumsal muhalefetin temel gücü, olanca bölünmüşlüğüne karşın, işçi sınıfıdır. Beyaz yakalı-mavi yakalı, kafa emekçisi-kol emekçisi, sanayi işçisi-hizmet işçisi, kent emekçisi-kır emekçisi, sendikalı-sendikasız, kadrolu-sözleşmeli-taşerona bağlı çalışan, kamu çalışanı-özel sektör çalışanı, tam gün çalışan-yarı zamanlı çalışan, işyerinde çalışan-evde çalışan, yüksek ücretli-düşük ücretli, fiilen çalışan-işsiz-emekli vb. gibi kesimler, yaşayabilmek için emek güçlerini satmak zorunda olan ve temelde ortak çıkarlara sahip tek bir sınıf oluştururlar. Emekleriyle geçinip onurlarıyla yaşamaktan başka bir şey istemeyenlerin ortak çıkarı, sermaye egemenliğine son verilmesindedir. Bu bilincin yaygınlaşmasının yolu, işçilerin ortak mücadele ve dayanışma pratiklerinin geliştirilmesinden ve güçlendirilmesinden geçmektedir.</p>
+<p>İşçi sınıfının gerçek birliği ise ancak sermaye egemenliğine karşı yürütülecek olan ortak siyasal mücadeleyle sağlanabilir. Partinin görevi, işçi sınıfının siyasal ve ideolojik bağımsızlığını korumak ve devrimin işçi sınıfının eseri olmasını sağlamaktır. Bu anlamıyla öncülük görevi, sadece devrim öncesinde değil, sosyalist kuruluş sürecinde de gerekliliğini koruyacaktır. İşçi sınıfı, devrim ve kuruluş süreçlerinde, sermaye sahipleri ile onların doğrudan işbirlikçileri dışındaki tüm halkın çıkarlarının temsilciliğini üstlenecektir.</p>
+<h3>TÜRKİYE’NİN DEVRİMİ HALKÇI BİR KARAKTER TAŞIYACAKTIR</h3>
+<p>Kapitalist meta üretiminin ve sömürü ilişkilerinin tümüyle egemen hale gelmesiyle birlikte geçmişte farklı çıkar ve taleplere sahip olabilen halk kesimleri ile işçi sınıfının çıkarları, sermaye egemenliği karşısında ortaklaşmıştır. Dolayısıyla, işçi sınıfı, sosyalist devrim mücadelesinde halk kesimlerini yanına çekmeli, halk kesimlerinin taleplerini kendi çıkarlarıyla bütünleştirmeli ve devrimci bir halk hareketi yaratmalıdır. Bu anlamda, Türkiye’nin devrimi işçi sınıfının siyasal ve ideolojik öncülüğünde halkçı bir karakter taşıyacaktır.</p>
+<p>Türkiye’nin devrimi, sosyalist siyasal öznenin tüm toplumsal muhalefet dinamiklerini kendi bünyesinde birleştirerek tekleşmesi yoluyla gerçekleşmeyecektir. Sermaye egemenliğinin yaratmış olduğu sayısız toplumsal sorun, özel mücadele gündemlerine sahip olan toplumsal hareketlerin ve öznelerin varlığına yol açmıştır. Türkiye’nin tüm temel sorunlarının gerçek çözümünün sosyalizmde olması, bu hareket ve öznelerin meşruluğunu ve varlık zeminini ortadan kaldırmamaktadır. Bununla birlikte, söz konusu hareket ve mücadelelerin işçi sınıfının iktidar yürüyüşüne katılmaları ve Türkiye devriminin parçası haline gelmeleri vazgeçilmez bir ihtiyaçtır.</p>
+<p>Kapitalizm altında ekonomik, sosyal ve kültürel hakların kazanılması için yürütülen güncel mücadeleler ile bir bütün olarak kapitalist-emperyalist sistemin aşılarak sorunların çözümünü hedefleyen bütüncül ve devrimci hedefler birbirlerinin ayrılmaz parçasıdırlar. Türkiye İşçi Partisi, emekçilerin çalışma saatleri, istihdam, ücretsiz eğitim, sağlık ve barınma hakkındaki talepleri ile sosyalizm mücadelesini birbirine bağlayan bir yaklaşımla mücadele eder.</p>
+<h3>TİP, SOSYALİST HAREKETİN DEVRİMCİ YENİDEN KURULUŞUDUR.</h3>
+TİP, 10 Eylül 1920’de kurulan Türkiye Komünist Partisi’nden başlayarak Türkiye sosyalist hareketinin tüm siyasal ve örgütsel birikimini ve Türkiye’deki devrimci gelenek ve değerleri sahiplenir ve kendisine rehber edinir. TİP ayrıca, uluslararası komünist hareketin evrensel birikiminin Türkiye’deki parçasıdır. Marksizm-Leninizmi rehber edinen TİP, sosyalist hareketin tarihini eleştirel bir bakış açısıyla sahiplenir ve sosyalist hareketin devrimci bir zeminde yeniden kuruluşunu temsil eder. Sosyalist hareketin devrimci bir temelde yeniden kuruluşu hedefi, Türkiye’nin sosyalist birikiminin devrimci bir program ekseninde birliğinin sağlanmasını da içerir.
+<p>TİP, devrim mücadelesinin farklı araç ve yöntemlerinden hiçbirine mutlaklık atfetmediği gibi hiçbir araç ve yöntemi önsel olarak reddetmez. TİP’in mücadele araçlarına yaklaşımını belirleyen ilke, işçi sınıfının çıkarları ile uyumu ve devrim mücadelesine katkısıdır. Parti herhangi bir mücadele aracı ya da yöntemiyle ilgili kararını işçi sınıfının siyasal mücadeleye katılımını artırma, sosyalist iktidar mücadelesinde yeni mevziler kazanma, kısacası devrimci mücadeleyi güçlendirme perspektifine dayalı olarak alır.</p>
+<p>TİP, parti içi yaşam ve işleyişte Marksist-Leninist bir ilke olan demokratik merkeziyetçiliği uygular. Katılım, şeffaflık, siyasallık, hesap sorulabilirlik, kurullu ve kurallı çalışma, demokratik merkeziyetçiliğin olmazsa olmazlarıdır. Parti içi yaşamı ve işleyişi düzenleyen tüzük bu yaklaşım doğrultusunda oluşturulur. Tüzük, parti içi yaşamın ve işleyişin tüm üyeler için bağlayıcı olan kurallara dayalı olarak düzenlenmesinin ve korunmasının başlıca güvencesidir. Öte yandan, devrimci bir partinin iç işleyişinin sadece tüzük maddeleriyle korunamayacağı açıktır. Devrimci yaşam tarzı, işçi sınıfının kurtuluş mücadelesine adanmışlık, yoldaşlık hukuku, sosyalist bilinç ve özveri, sağlıklı bir iç işleyişin zorunlu unsurlarıdır.</p>
+<p>TİP, dünya komünist ve devrimci hareketinin tüm birikimini ve deneyimlerini sahiplenir. Başta 1917 Ekim Devrimi ile Sovyet Sosyalist Cumhuriyetler Birliği deneyimi olmak üzere, sosyalist ülkelerin varlığının emekçi sınıflar için eşsiz kazanımlar yarattığını savunan TİP, dünya üzerindeki sosyalizm deneyimlerinin sonuçlarının değerlendirme ve bu değerlendirmeden dersler çıkarma görevlerini üstlenir.</p>                </section>
+                              <section id="2-bolum-mucadele-programi" class="program-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>2. Bölüm: Mücadele Programı</strong></h2>
+                  <h3>DİRENEN DÜNYA HALKLARI İÇİN SOSYALİST SEÇENEK</h3>
+<p>Dünya halkları, emperyalist-kapitalist saldırganlığa direnmenin yollarını aramaktadır. Toplumsal eşitsizliklerin hızla artışı ve baskıcı yönetimlerin varlığı, dünyanın pek çok ülkesinde iktidar karşıtı toplumsal hareketlerin ortaya çıkmasına yol açmıştır. Bu hareketler kimi ülkelerde, sol veya halkçı güçleri iktidara taşımış ya da iktidarı almaya aday bir güce dönüştürmüştür. Sosyal devlet politikalarını savunan, üretim araçlarının özel mülkiyetine son vermeden toplumsal eşitsizlikleri azaltmayı vaat eden bu güçler, çeşitli örneklerde emekçilerin güncel talepleriyle bağ da kurabilmiştir.Düzen sınırlarını aşmasa da mevcut iktidarın karşılayamayacağı taleplerin ileri sürülmesi, sosyalist mücadelenin de araçlarından biridir. Bu talepler, işçi sınıfının siyasal bilincinin güçlenmesini ve daha ileri hedeflerin belirlenmesini, ayrıca sosyalizmin somut bir seçeneğe dönüşmesini olası kılar. Sosyalistler bu olasılığın ortaya çıkaracağı olanakları önemsemeli; ancak, emekçi sınıfların güncel taleplerinin ve tarihsel çıkarlarının sözcülüğünü üstlenerek işçi sınıfını iktidara taşımak anlamına gelen sosyalist devrim perspektifini korumalı, toplumsal mücadelelere öncülük misyonunu yerine getirmelidir.</p>
+<p>Toplumsal mücadelelere öncülük misyonu yerine getirilirken sosyalist devrim hedefi ile güncel mücadele başlıkları arasındaki bağ her başlıkta yeniden kurulmalıdır. Dünya komünist ve devrimci hareketinin uzun yıllardır başaramadığı görev, işçi sınıfının güncel talepleri ile tarihsel çıkarları arasındaki bağın kurulmasıdır. Bu görev yerine getirilmediği ve sermaye düzeninin dünya çapındaki krizine karşı sömürüye ve üretim araçlarının özel mülkiyetine son vermeyi amaçlayan bir sosyalist seçenek yaratılmadığı sürece, toplumsal hareketlerin ve düzen içi sol güçlerin kapitalizmin sınırlarına mahkûm kalması kaçınılmazdır. Yine bu görevin yerine getirilmemesi, sosyalist hareketlerin toplumsal mücadelelerde etkisiz olmasının ve düzen içi aktörlerin gerisinde kalmasının nedenidir.</p>
+<p>Başta ABD olmak üzere emperyalist ülkelerin müdahalelerine en fazla maruz kalan bölgelerden birinde bulunan ve bu tür müdahalelerin işbirlikçisi konumunda da olan ülkemizde sosyalist iktidar mücadelesi, bölgedeki anti-emperyalist, yurtsever ve gericilik karşıtı dinamiklerle kader ortaklığı içindedir. Ulusal, etnik, dinsel, mezhepsel çatışmaların aşılmasının ve bölge halkları arasında kardeşlik bağlarının kurulmasının yolu, emperyalizme ve gericiliğe karşı yürütülen mücadelelerin birleştirilmesinden ve anti-kapitalist bir niteliğe kavuşturulmasından geçmektedir. Bu çerçevede TİP, başta Avrupa Birliği, NATO, IMF olmak üzere her türlü emperyalist kurum ve kuruluşa, Türkiye’nin bu kuruluşlarla kurduğu ilişkilere, emperyalist tahakkümü pekiştirecek şekilde üstlendiği bölgesel veya küresel askeri ve siyasi misyonlara, İncirlik ve Kürecik başta olmak üzere Türkiye’deki yabancı askeri üslere karşı mücadele eder.</p>
+<h3>SARAY REJİMİ HALKIN DÜŞMANIDIR</h3>
+<p>Türkiye’nin siyasal ve toplumsal yapısında gerçekleşen güncel dönüşümün kökleri 24 Ocak ve 12 Eylül’e, sermaye sınıfının bu dönemlerden itibaren taşıdığı yönelimlere dayanmaktadır. AKP’nin 2002 yılında başlayan iktidar dönemi ise, Türkiye’deki sermaye egemenliğinin biçimi üzerinde kalıcı etkiler doğuran bir rejim değişikliğine yol açmıştır. Cumhuriyet döneminin tüm ilerici birikimini ve işçi sınıfının mücadeleyle elde ettiği kazanımları hedef alan AKP; piyasacı, gerici, milliyetçi, baskıcı, farklı görüşlere ve yaşam tarzlarına tahammülsüz, sansürcü, kamuya ait varlıkların yağmalanmasını ve her tür yolsuzluğu olağanlaştıran, cihatçı çetelerin desteklenmesini ve dışa dönük saldırganlığı devlet politikası düzeyine yükselten, tüm devlet kurumlarını kendi çıkarlarının tahakkümü altına alan, yürütme gücünün tek bir kişide toplandığı fiili bir diktatörlük, bir Saray Rejimi kurmuştur.</p>
+<p>AKP eliyle inşa edilen yeni rejimde sermaye sınıfının payının olmadığı, hatta sermaye sınıfının yeni rejime karşı çıktığı yönündeki iddiaların gerçeklerle en ufak bir ilgisi bulunmamaktadır. Sermaye sınıfı, bu rejime karşı çıkmak bir yana, onun sağladığı zenginleşme olanaklarından yararlanmakta ve Saray Rejimi’nin sermayeye sunduğu olanakların kalıcılaşmasını arzulamaktadır. Saray Rejimi’ne karşı çıkabilecek, direnebilecek ve onun yarattığı tahribatı giderebilecek olan güç, sermaye sahipleri ve onları temsil eden düzen partileri değil, Haziran (Gezi) Direnişi ile ilk zirvelerinden birine ulaşmış olan ilerici, aydınlanmacı, eşitlikçi, özgürlükçü, cumhuriyetçi toplum kesimleridir.</p>
+<p>TİP, Türkiye’deki ilerici, aydınlanmacı, eşitlikçi, özgürlükçü ve cumhuriyetçi hareket, özne ve bireyleri Saray Rejimi’ne karşı ortak mücadelede buluşturacak bir kitlesel sol odağın inşasını gerekli görür. Söz konusu odağın biçimi ve rolü konusundaki yaklaşımını siyasal ve toplumsal mücadelenin gelişim sürecini ve ihtiyaçlarını gözeterek oluşturması gereken TİP, her durum ve koşulda, işçi sınıfının nihai çıkarlarını ve emekçilerin siyasal iktidar mücadelesinin temel öznesi haline gelmesini savunur.</p>
+<h3>İŞÇİ SINIFI MÜCADELEYLE KAZANACAK</h3>
+<p>Türkiye’de işçi sınıfı üzerindeki sömürü devasa boyutlara ulaşmıştır. Sendikasız, sigortasız, güvencesiz çalışma, düşük ücretler, iş cinayetleri, sermaye ve devlet baskısı, borç yükü, gelecek kaygısı gibi olgular Türkiye’deki sınıf mücadelesinin önemli gündemleridir. TİP, bu gündemlerde işçi sınıfının ortak çıkarları doğrultusunda ve dayanışma içinde mücadele etmesi için çaba harcar, var olan mücadelelerin parçası olur ve işçi sınıfı iktidarı hedefini savunur..</p>
+<p>TİP, işçi sınıfının güncel mücadele başlıklarından başta çalışma hakkı, güvenceli çalışma hakkı, sendikal örgütlenme ve toplu sözleşme hakları, insanca yaşamaya yetecek ücret alma hakkı, eşit işe eşit ücret hakkı, dinlenme ve tatil yapma hakkı gibi temel hakların kazanılması için yürütülen mücadelelerde tüm gücüyle yer alır, bu alanlardaki siyasal çalışmanın sınıf bilincinin yaygınlaşması açısından vazgeçilmez önemde olduğunu saptar. Bununla birlikte işçilerin, hakları için birçok bedel ödediği kapitalist sistemde ücret hakkının tek başına iyileştirilmesini yeterli görmez, tüm sosyal haklarının geliştirilmesi gerektiğini savunur. Bu nedenle eğitim, sağlık, barınma vb. hak ve ihtiyaçlarının ticarileştirilerek piyasaya devredilmesine karşı çıkar. Bu hakların kamusal, nitelikli ve ücretsiz olması için mücadele eder.</p>
+<p>TİP, neoliberal saldırıların doğrudan muhatabı olan ve her alanda örgütsüzleştirilip hakları elinden alınan emekçiler arasındaki dayanışmanın büyütülmesini, bu dayanışma zeminlerinin mücadele odaklarına dönüştürülmesini savunur. Gerek iş gerekse yaşam alanlarında dayanışma ve örgütlü mücadeleyi mümkün kılacak meclis tipi halk örgütlenmelerinin kurulması, var olanların korunup güçlendirilmesi ve birer mücadele odağına dönüştürülmeleri halkın siyasete katılımının ve hakları için yürüteceği mücadelenin de araçlarını yaratacaktır. TİP, meclis tipi halk örgütlenmelerinin merkezileşmesini ve koordinasyonunun sağlanmasını ise ortak mücadelenin başarısı için zorunlu görür.</p>
+<p>Türkiye işçi sınıfını bir bütün olarak değerlendiren TİP, siyasal ve ideolojik mücadelesinde de sınıfın bütününe seslenmeyi esas alır. Ancak TİP, işçi sınıfının farklı bileşenlerine ve kesitlerine yönelik özgün araçların geliştirilmesi görevini de önüne koyar. Kapitalist emek sürecinin parçalı hali ve teknolojiyle birlikte yeni emek türlerinin yaygınlaşmaya başlaması, işçi sınıfının yeni meslek ve sektör ölçeklerinde genişlemesini ve çeşitlenmesini getirmiştir. Bu kesimler içinde kentli emekçiler hem karşı karşıya kaldıkları işçileşme ve metalaşma süreçleriyle, hem de ilerici değerlere yatkınlığıyla dikkat çekmektedir. Bu nitelikleriyle sosyalist siyasetin toplumsal etkisine en açık ve politize toplum kesimlerinden birini oluşturan kentli emekçiler ile klasik sanayi proletaryasını karşı karşıya koyan yaklaşımlar işçi sınıfını yapay biçimde bölmekte ve sınıf mücadelesinin güçlendirilmesini engellemektedir.</p>
+<p>Kapitalist üretim ilişkilerinin dönüşümünün en önemli boyutlarından biri de emek sürecinin parçalanmasıdır. Bu durumun bir sonucu olarak, işçi sınıfının işyerindeki birlikteliği dağılmakta, parçalı ve küçük ölçekli emek süreçleri yaygınlaşmaktadır. Aynı zamanda, sermayenin kent mekanına yönelik müdahalelerinin etkisiyle, emeğin yeniden üretimi sürecinde işyeri eksenli topluluklardan çok yerel ölçekli zeminler öne çıkmaktadır. Dolayısıyla, sosyalist hareketin işçi sınıfıyla buluşmak için fabrikalara olduğu kadar, mahallelere de yönelmesi gerekmektedir. Emekçilerin yaşadığı mahallelerde kalıcı bağlar kurmayı hedefleyen TİP, yerel ölçekli dayanışma ve mücadele odaklarının yaratılmasının sınıf mücadelesindeki önemini vurgular.</p>
+<p>Dünyada ve Türkiye’de, teknolojinin üretim süreçlerinde ve günlük yaşamda kullanımı günden güne artmakta, otomasyon sistemlerinin yaygınlaşmasıyla sanayi devriminin yeni bir aşamasına geçildiği görülmektedir. Ancak kapitalizmin elindeki teknoloji yaşamı kolaylaştıran kimi uygulamalarına karşın toplumsal refahı sağlayamamakta, emeğin sömürüsünü artırmakta, ekolojik yıkıma neden olmakta ve insanları teknolojik tüketime bağımlı kılmaktadır. TİP, teknolojilerin toplumsal çıkarlar doğrultusunda geliştirilmesini ve kullanılmasını savunur. Teknolojik ilerlemeleri, çalışma saatlerini azaltmanın, insanları özgürleştirmenin, bireylerin yaratıcılıklarını ve insanlığa katkılarını artırmanın araçları durumuna getirmeyi hedefler.</p>
+<h3>SARAY REJİMİ’NE KARŞI DEVRİMCİ CUMHURİYET CEPHESİ</h3>
+<p>Türkiye’deki sermaye düzeni, Saray Rejimi ile birlikte, toplumsal ve siyasal yapının gericileştirilmesi, ilerici değerlerin ve birikimin tasfiyesi ve halkın siyasete katılımının engellenmesi konularında yeni bir evreye girmiştir. Toplumsal ve siyasal ilişkilerin dinselleştirilmesinin ve buna dayanarak faşizmin kurumsallaştırılmasının baş aktörü olan Saray Rejimi’nin en önemli destekleyicileri ise emperyalizm ile Türkiye sermaye sınıfıdır.</p>
+<p>Türkiye kapitalizminin bugünkü cumhuriyet, laiklik ve özgürlük düşmanlığı, işçi sınıfını daha fazla sömürmeyi, yoksullaştırılan halkı devlet yönetiminden uzak tutmayı, bölmeyi ve direnen halk kesimlerini baskı altına almayı hedeflemektedir. Dolayısıyla, Saray Rejimi’nin sistematik bir biçimde inşasına giriştiği faşizan rejim, sermaye sınıfının da ihtiyaçlarını karşılamaktadır.</p>
+<p>Bu açıdan, Türkiye’de sermaye egemenliğinin yıkılması görevi Saray Rejimi’ne karşı mücadeleyi ertelenemez bir yere oturtmaktadır. Saray Rejimi’ne karşı mücadele, emekle sermaye arasındaki mücadelenin güncel ve yakıcı evresidir. Öte yandan, salt Saray Rejimi’ne daraltılmış bir mücadele programı da sermaye sınıfının bu rejimle ortaklığının gizlenmesine yol açacaktır. Saray Rejimi’ne karşı mücadele sürecinde sermaye egemenliğinin kendisini aklamasına izin verilmemelidir. Bunun yolu ise, rejime karşı mücadelede işçi sınıfı adına en ön saflarda yer almaktan geçmektedir.</p>
+<p>TİP, Saray Rejimi’nin yıkılışının Türkiye emekçilerinin ve halkın ilerici kesimlerinin ortak mücadelesiyle mümkün olacağını saptar. Türkiye’nin Saray Rejimi’nden kurtuluşu, Cumhuriyet tarihinin önceki bir evresine geri dönüş hedefiyle sağlanamaz. Ülkenin Saray Rejimi’nden kurtuluşu, ancak Devrimci Cumhuriyet mücadelesiyle mümkündür.</p>
+<p>Devrimci Cumhuriyet, Saray Rejimi’ne son verecek olan Türkiye emekçilerinin, ilerici ve özgürlükçü toplum kesimlerinin halkçı bir program etrafında buluşmasının zeminidir. İşçi sınıfı ile ilerici ve özgürlükçü toplum kesimlerinin ortak mücadelesine dayanan Devrimci Cumhuriyet yaklaşımı, TİP’in sosyalist devrim yürüyüşünü güçlendirecek, sosyalizmin ülke ölçeğinde kitleselleşmesini sağlayacak ve siyasal iktidarın ele geçirilmesini işçi sınıfının ve halkın gündemine sokacaktır. Devrimci Cumhuriyet yaklaşımının öngördüğü mücadele cephesi, sermaye sınıfının veya devlet aygıtının herhangi bir unsuruyla ittifakı kesin olarak dışlar; ayrıca sermaye egemenliğinin aklanarak yeniden tesis edilmesine karşı da etkin bir mücadele yürütür.</p>
+<p>İşçi sınıfı ile ilerici ve özgürlükçü toplum kesimlerinin ortak mücadelesine dayanan radikal ve kitlesel bir halk hareketi, Saray Rejimi’ne karşı mücadelenin en etkili yoludur. Devrimci Cumhuriyet perspektifi, böylesi bir mücadelenin, onun bileşenlerinin ve ortak taleplerinin inşa edileceği zemindir. Saray Rejimi’ne karşı yükselen halk hareketinin ivmesini sosyalizme yönlendirmek de TİP’in sosyalist devrim yaklaşımının doğal sonucudur. Bu anlamda Devrimci Cumhuriyet mücadelesini sosyalist devrim mücadelesinin bir gündemi olarak gören TİP, Saray Rejimi&#x27;ne karşı emekçiler ile ilerici ve özgürlükçü toplum kesimlerini Devrimci Cumhuriyet zeminindeki bir cephede yan yana getirmeyi hedefler. TİP, Devrimci Cumhuriyet mücadelesinde edinilen tüm kazanımların korunması ve güçlendirilmesinin de yalnızca sosyalist devrime ilerlemekle mümkün olduğunu savunur.</p>
+<p>Türkiye’de, cumhuriyetçiliğin ve laikliğin resmî bir devlet söylemi, özgürlükçülüğün ise serbest piyasacı ve küreselleşmeci ideolojilerin kılıfı olduğu dönem geride kalmıştır. Günümüzde, cumhuriyeti, laikliği ve özgürlüğü savunan toplum kesimleri, Saray Rejimi’ne karşı yürütülen mücadelelerin öne çıkan unsurları arasındadır. Bu koşullar altında, bir yandan halkın temel hak ve özgürlüklerinin korunması, diğer yandan da ülkemizde Cumhuriyet döneminde mücadeleler sayesinde edinilmiş değerlerin halkçı bir içerikle yeniden kazanılması öne çıkan mücadele başlıklarındandır.</p>
+<p>Cumhuriyetçilik, laiklik, kamuculuk ve özgürlük gibi ilerici değerlerin kazanılması için yürütülen mücadelelerin asli parçası olan TİP, demokratik ve sosyal yurttaşlık haklarının, örgütlenme, eylem, ifade ve basın özgürlüklerinin korunması ve geliştirilmesi için mücadele eder.</p>
+<p>Türkiye’de geçmiş Cumhuriyet dönemine dönülmesini veya Cumhuriyet’in yeniden inşasını imkansız gören TİP, cumhuriyet, laiklik, kamuculuk ve özgürlük savunusunun devrimci ve halkçı bir karakter kazanmasını amaçlar ve bu değerlerin sermaye sınıfının çıkarlarına tabi kılınmasına karşı mücadele eder. Diğer yandan, TİP, Gezi Direnişi’nde güç kazanan kardeşlik arzusunu ve dayanışma bilincini, bu topraklarda yaşayan tüm halkların mücadele ortaklığının zemini olarak değerlendirir.</p>
+<h3>REFAH İÇİN KAMUCU VE PLANLI EKONOMİ</h3>
+<p>Saray Rejimi, neoliberal politikalar sonucunda kamu işletmelerini özelleştirmiş, kamuya ait kaynakları sermayeye aktarmış, tarım ve hayvancılığı bitirerek ülkeyi kendi kendine yeter olmaktan çıkarmış, bu alanlarda denetimsiz ithalat ile gıda güvenliğini riske atmış, ekonomiyi küresel finans sermayesinden gelen sıcak para akışına dayalı hale getirmiş, ülkeye giren yabancı parayı üretim ve istihdam yerine rant ekonomisine harcamış, ihracata dayalı üretimde kârı arttırabilmek için emekçinin ücretlerini düşürmüş, her geçen yıl gelir dağılımındaki adaletsizliği derinleştirmiş ve sonunda ülkeyi tümüyle dışa bağımlı hale getirerek büyük bir ekonomik krizin içine sokmuştur.</p>
+<p>TİP, neoliberal politikaların tümüyle karşısında durur, krizin faturasının işçi sınıfına ödetilmemesi ve sermayenin sorumluluğunun teşhir edilmesi için mücadele eder.</p>
+<p>TİP, tüm yurttaşların refah içinde yaşamasının koşulu olarak ekonomik bağımsızlığı, kamucu ve planlı üretimi görür. Özelleştirilen tüm toplumsal varlıkları kamulaştırmayı, ekonomide dışa bağımlılığı sonlandırmayı, üretime dayalı ekonomiye geçmeyi, verimli ülke topraklarını nitelikli tarıma açarak ve hayvancılığı teknolojinin vardığı en ileri tekniklerle geliştirerek en temel insani haklardan olan gıda güvenliğini sağlamayı ve yurttaşları yaşanabilir bir ülkeye kavuşturmayı hedefler.</p>
+<h3>KÜRT SORUNUNDA KARDEŞLİK VE BİRLİKTE YAŞAM</h3>
+<p>TİP, Kürt sorununu, Osmanlı dönemindeki Kürt ayaklanmalarından bugüne ulusal mücadelelerin tarihselliği içinde ele almakla birlikte esas olarak sermaye egemenliğinin bir sonucu ve sınıf mücadelesinin bir başlığı olarak görür. Yoksul Kürt emekçilerine Türkiye işçi sınıfının önemli bir bölmesi olarak yaklaşır ve tarihsel çıkar ortaklığını öne çıkarır. Bununla birlikte, Kürt halkının eşit yurttaşlık mücadelesini destekler, anadilde eğitim ve anadilde yaşam hakkını benimser. Halklar arasında düşmanlığı körükleyen yönelimlerle mücadele eder, Türkiye’de ve bölgede yaşayan halklar arasında nefreti körükleyen yaklaşımlara karşı birlikte yaşamı ve kardeşliği savunur. Türkler ve Kürtler başta olmak üzere her kökenden yurttaşın özgürce ve kardeşlik içinde yaşayacağı bir ülkenin kurulması için mücadele eder.</p>
+<p>TİP, Kürt halkının kendi geleceğini ve kaderini belirleme hakkını kabul eder. Bununla birlikte, bu hakkın kullanımına dair tutumunu işçi sınıfı mücadelesinin çıkarları doğrultusunda oluşturur. Kürt halkının haklı taleplerinin savunulması ve desteklenmesi, Kürt siyasal hareketinin yönelim ve tercihlerinden bağımsız bir ilkedir.</p>
+<p>TİP, Kürt halkını ve mücadelesini, Türkiye’deki özgürlük mücadelesinin ve işçi sınıfı öncülüğündeki devrimci halk hareketinin vazgeçilmez bileşenlerinden biri olarak değerlendirir. Kürt siyasal hareketi ile TİP arasındaki ilişkiler, işçi sınıfının çıkarları ve sınıf mücadelesinin ihtiyaçları göz önünde bulundurularak belirlenir.</p>
+<h3>ORTADOĞU’DA EMPERYALİST MÜDAHALELERE SON</h3>
+<p>Ortadoğu&#x27;da emperyalist müdahaleler ve gericilik halkların başına bela olmayı sürdürmektedir. Filistin, Suriye, Yemen, Afganistan başta olmak üzere birçok bölge ülkesinde halklar savaşlar, çatışmalar, etnik ve mezhepsel kavgaların mağduru haldedir. Emperyalist aktörlerin petrol ve doğalgaz kaynaklarına sahip bölgeler ve ticaret yolları üzerinde tahakküm kurma, pazar arayışları ve yeniden inşa faaliyetlerinde pay sahibi olma gibi niyetleri sonucunda bu bölgede Türk/Türkmen, Arap, Kürt ve Acem halkları sürekli bir tehdit altındadır. Uluslararası pek çok güç gibi, kendine bu bölgede bir hakimiyet alanı kurma çabasında olan Saray Rejimi de halklara karşı işlenen suçların faillerinden biridir.</p>
+<p>TİP, Ortadoğu coğrafyasında halkların emperyal müdahalelere karşı bağımsızlıklarını koruyarak kendi zenginliklerine sahip çıkma mücadelelerine destek verir, gericilik ve emperyalizme karşı barışı ve kardeşliği savunur.</p>
+<h3>MEZHEPÇİLİĞE KARŞI EŞİT YURTTAŞLIK</h3>
+<p>TİP, yaşamın her alanında mezhepçiliğe ve gericileşmeye karşı mücadele eder. Tüm yurttaşlarımızın dinsel inanç sömürü yapan cemaatlerin ve tarikatların kuşatmasından kurtulması için çaba harcar. Osmanlı ve Cumhuriyet tarihi boyunca baskı görmüş ve katliamlara uğramış olan Alevilerin eşit yurttaşlık mücadelesini destekler ve Alevileri, aydınlanmacı, eşitlikçi ve özgürlükçü bir geleceği kurma mücadelesinin bileşenlerinden biri olarak görür.</p>
+<p>TİP, devletin, farklı din, mezhep ve inançlar ile inanmayan yurttaşlar üzerinde bir tahakküm aracı olarak kullandığı zorunlu din derslerinin kaldırılmasını ve dinci-gerici zihniyetin cisimleştiği Diyanet İşleri Başkanlığı’nın kapatılmasını savunur. Eğitimden başlayarak toplumsal yaşamın her alanına yayılan tarikatlaşmaya karşı mücadele eder. Din işlerini, tüm din ve mezheplere eşit mesafede duran bir kurumda yeniden düzenlemeyi hedefler.</p>
+<h3>KADIN MÜCADELESİ KURTULUŞUN AYRILMAZ PARÇASIDIR</h3>
+<p>Dünyada olduğu gibi Türkiye’de de gerici, piyasacı ve toplumsal cinsiyet eşitsizliğinden kaynaklanan saldırıların doğrudan hedefleri arasında yer alan kadınlar, eşitsiz çalışma koşullarıyla, ev içi emeğin ve bakım emeğinin sömürülmesiyle, eğitim ve sağlık hizmetlerinden yararlanma haklarının gasp edilmesiyle, kadın cinayetleriyle, taciz, tecavüz ve istismarla, çocukluk çağında evlendirmelerle karşı karşıyadır. Bu durum, kadınların toplumsal cinsiyet eşitsizliğine karşı mücadelede olduğu kadar, gericiliğe karşı mücadelede de ön plana çıkmasına yol açmaktadır.</p>
+<p>TİP, kadınların sermaye egemenliği ve ataerkil ideolojilere ve uygulamalara karşı yürüttükleri mücadeleyi geleceğin toplumu için yürütülen mücadelenin ayrılmaz bir parçası olarak görür, kadınların toplumsal kurtuluş mücadelesinde daha aktif bir rol oynaması için çaba harcar.</p>
+<h3>GENÇLERİN ÜLKESİNİ GENÇLER KURACAK</h3>
+<p>Kapitalizmin gelecek umudu sunamadığı, ağır sömürü koşulları ile işsizlik arasında tercih yapmak zorunda bırakılan gençler, sermaye egemenliğinden en fazla zarar gören toplum kesimleri arasında yer almaktadır. Gençlik Türkiye’de Saray Rejimi tarafından baskı altına alınmaya ve gerici ideolojilere mahkûm edilmeye çalışılmaktadır. Aydınlanma, özgürlük ve dayanışma gibi değerlerin gençlik içindeki ağırlığı ise, gençlerin sınıf mücadelelerine özgün katkılarda bulunmasını mümkün kılmaktadır.</p>
+<p>TİP, gençleri, siyasal mücadelelerin dinamik ve asli unsurlarından biri olarak görür ve ülke yönetiminde daha fazla söz sahibi olmaları için çaba harcar.</p>
+<h3>ÇOCUKLARIN DA HAKLARI VARDIR</h3>
+<p>18 yaşın altındaki her birey çocuktur ve çocukların hakları vardır. Ancak ülkemizde bu haklar tamamen yok sayılmakta, zorla çalıştırılan çocuk işçi sayısı milyonu aşmakta, okulsuzlaşma giderek artmakta, okul öncesine kadar yayılan tarikatlaşma ve gerici kuşatma altında çocuklarımız zihinsel ve bedensel istismara uğramaktadır.</p>
+<p>Her çocuğun sağlık hizmetlerinden yararlanma, eğitim alma, kültürel-sosyal olanaklara sahip olma ve insanca yaşama haklarının bulunduğunu kabul eden TİP, çocukları her türlü şiddet, istismar ve ihlalden, ekonomik sömürüden korumak için mücadele eder.</p>
+<h3>HERKESE PARASIZ, BİLİMSEL, ANADİLDE EĞİTİM</h3>
+<p>Saray Rejimi eğitimin ticarileşmesini, piyasalaşmasını, kamunun eğitim gibi temel hizmet alanlarından çekilmesini sistematik biçimde hayata geçirmektedir. Saray Rejimi’nde eğitim, sınav sistemi ve müfredatın defalarca değişmesi, okulların tarikatlara emanet edilmesi, dinselleşmenin artması, karma eğitimin tırpanlanması, devlet okullarına aktarılan kaynakların azaltılıp özel okulların artmasıyla tam bir çöküş yaşamıştır. Öte yandan üniversitelere de piyasacı ve baskıcı düzen egemen olmuş, bilim üretmesi gereken kurumlar hurafe ve intihal yuvaları haline gelmiştir.</p>
+<p>TİP, her düzeyde nitelikli, parasız, anadilde, laik ve bilimsel eğitim hakkını savunur. Eğitim emekçilerinin çalışma koşullarının iyileştirilmesi ve özlük haklarının korunması ve güçlendirilmesi TİP’in mücadele gündemlerindendir.</p>
+<h3>SAĞLIKLI VE GÜVENLİ GELECEK İÇİN</h3>
+<p>Ülkemizde sağlık hizmetleri piyasalaşma girdabına girmiş, halk primlere, katılım paylarına, ek ücretlere mahkum edilmiştir. Sağlık hizmetine erişmek isteyen yurttaşı hasta değil, müşteri olarak gören bir anlayış egemen olmuştur.</p>
+<p>TİP, herkese ücretsiz, ulaşılabilir ve anadilde sağlık hizmetini ve koruyucu hekimlik ilkesini savunur. Toplumun ihtiyacını karşılayacak sağlık ocaklarının ve hastanelerin kurulması için çaba harcar. Sağlık çalışanlarının çalışma koşullarının iyileştirilmesi ve özlük haklarının korunması ve güçlendirilmesi, sağlık çalışanlarına yönelik saldırıların son bulması ve güvenli bir çalışma ortamının tesis edilmesi TİP’in mücadele gündemlerindendir.</p>
+<h3>TARIM VE HAYVANCILIKTA TASFİYEYE, ÇİFTÇİLERİN YOKSULLAŞMASINA SON!</h3>
+<p>Türkiye yakın döneme kadar kendi tarımsal alanları ve üretimiyle kendi kendini doyurabilen bir ülkeyken meraların imara açılması ve plansız ekonomi sonucunda temel tarım ürünlerinde ve hayvancılıkta ithalata bağımlı kalınması nedeniyle artık kendini doyuramaz ve hatta yerli tohuma bile sahip çıkamaz hale gelmiştir. Ülkemizin kırsal bölgelerinde geçinmek imkansız hale gelirken sanayileşmiş kentlere göç akınları devam etmektedir.</p>
+<p>Ülkemiz buna mahkum değildir!</p>
+<p>Tohumculukta üretken genotiplerin saklanması ve tohum üretim merkezlerinin kurulmasıyla, fiyat politikaları tüccarlara havale edilmeden taban fiyatlarının hasat zamanından önce ve üretici lehine olacak şekilde üretici kooperatifleri tarafından belirlenmesiyle, tarım ve mera alanlarında yapılaşmanın önüne geçecek uygulamaların hayata geçirilmesiyle, doğru gıda politikaları ve yerli hayvancılığın desteklenmesiyle kırsal bölgelerde atılımın sağlanması mümkündür.</p>
+<p>Türkiye İşçi Partisi, tarım emekçilerinin biricik kurtuluş umududur. TİP, köylerde verilecek mücadelenin dostu ve destekçisi, zaferin garantisidir.</p>
+<h3>YAĞMA POLİTİKALARI DOĞAMIZI TALAN EDİYOR</h3>
+<p>TİP, genel olarak kapitalizmin, özel olarak da Saray Rejimi’nin kendisini yeniden üretmesi ve rant politikalarını geliştirebilmesi için doğayı, kentleri ve kamusal mekanları yağmaladığını ya da kendi çıkarına uygun olarak dönüştürdüğünü saptar. Kentlerimizi gasp eden betonlaşmayı ve mega projeleri durdurmayı hedefler. Ekolojik yıkıma yol açan enerji politikalarının karşısında durur, temiz ve yenilenebilir enerji kaynaklarının planlı kullanımını destekler. Temiz su ve gıdaya erişimi temel insani hak olarak, hayvanları eşya değil canlı olarak görür, canlı-cansız tüm doğal varlıkların metalaştırılmasına karşı çıkar. Buradan hareketle çevrenin ve doğanın talan edilmesine, kentsel alanların ve kamusal mekânların yağmalanmasına karşı mücadele yürütür, yürütülen mücadelelerin içinde yer alır.</p>
+<h3>ADALET İÇİN MÜCADELE</h3>
+<p>Ülkemizdeki adalet mekanizması, yargı teşkilatı ve hukuk sistemi adaleti sağlayacak bir yapı olmaktan çıkmış, Saray Rejimi’nin hedefleri ve amaçları doğrultusunda kullanılan bir araca dönüşmüştür. İktidarın ihtiyaçlarına göre şekil değiştiren, hukuk kurallarıyla değil siyasal tercihler ve talimatlarla karar veren bir yargı mekanizmasından adalet beklenemez.</p>
+<p>TİP, bağımsız ve tarafsız bir yargının tesis edilmesi için, savunmanın bağımsızlığının ve dokunulmazlığının, avukatlığın kamu hizmeti karakterinin güçlendirilmesinin gerekli olduğunu saptar. Halkın adalet talebinin ve hak arama mücadelesinin bir parçası olan TİP, adalete erişimin önündeki ekonomik engellerin kaldırılmasını savunur.</p>
+<h3>KÜLTÜREL GELİŞİM VE ÖZGÜR SANAT ENGELLENEMEZ</h3>
+<p>Çürümüş ve yozlaşmış bir zihniyeti temsil eden Saray Rejimi, toplumun tüm alanlarını olduğu gibi kültür ve sanat alanlarını da gericiliğin ve piyasacılığın kıskacına almaktadır. Kültür ve sanat alanlarında, ifade özgürlüğü, yaratıcılık, insanın gelişimini hedefleyen üretim kısıtlanmakta; görüşlerini eserleriyle ya da sözlü olarak dile getiren sanatçılar tehdit edilmekte, işten atılmakta ve tutuklanmakta; medyadaki tekelleşme sonucunda işçilerin ve emekçilerin çıkarlarını savunan sanatçıların halka ulaşması engellenmekte; topluma sığ, maddi çıkarcı, gerici ve estetikten yoksun propaganda ürünleri dayatılmaktadır.</p>
+<p>Kültür ve sanat alanlarındaki sansüre, baskıya ve yargılama tehditlerine karşı çıkan TİP, bu alanları ücretli emek sömürüsüne ve metalaşmaya tabi kılan tekelleşmeye karşı da mücadele eder. Kültürel gelişimin ve sanatsal üretim özgürlüğünün ülkemizin vazgeçilmez ihtiyaçları arasında yer aldığını gören TİP, tüm halkın kültürel ve sanatsal etkinliklere aktif olarak katılabilmesi için gereken önlemlerin alınmasını savunur.</p>
+<h3>TÜM YURTTAŞLAR İÇİN EŞİTLİK VE ÖZGÜRLÜK</h3>
+<p>TİP, ayrımcılığa ve eşitsizliğe karşı yürütülen mücadelelere, yurttaş haklarının eksiksiz ve ayrımsız olarak sağlanacağı eşitlikçi ve özgürlükçü bir düzene ulaşma mücadelesine katkıda bulunma potansiyellerini göz önünde bulundurarak yaklaşır. Parti, toplumsal hareketlerin toplumsal kurtuluşa hizmet edebilmesi için öncülüğün gerekli olduğunu bilir ve bu konuda görev üstlenir.</p>
+<h3>CİNSEL KİMLİK VE YÖNELİM AYRIMCILIĞINA SON</h3>
+<p>LGBTİ+ yurttaşların yaşadığı ayrımcılık, toplumsal cinsiyet eşitsizliği ile dinci gericiliğin gündelik yaşamdaki saldırganlığından kaynaklanmaktadır. TİP, LGBTİ+ yurttaşların yaşam, çalışma ve sağlık haklarının gasp edilmesine ve yaşamın tüm alanlarında karşılaştıkları ayrımcı uygulamalara karşı mücadele eder, bu yurttaşlarımızın örgütlenme ve yaşam haklarının korunması için yürütülen mücadeleleri güçlendirmek için çaba harcar.</p>
+<h3>EŞİT YAŞAMIN ÖNÜNDEKİ ENGELLERİ KALDIRACAĞIZ</h3>
+<p>TİP, engelli yurttaşların toplumsal ve ekonomik taleplerinin, en temel insan hakları arasında yer aldığını saptar. Engelli yurttaşların toplumsal yaşamdan dışlanmasına, toplumsal, ekonomik ve sağlıkla ilgili taleplerinin yok sayılmasına karşı mücadele eder.</p>                </section>
+                              <section id="3-bolum-sosyalizm-programi" class="program-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>3. Bölüm: Sosyalizm Programı</strong></h2>
+                  <h3>SİYASAL DEVRİM VE SOSYALİZMİN KURULUŞU</h3>
+<p>Sosyalizmin ön koşulu, siyasal iktidarın, işçi sınıfı tarafından, partisi öncülüğünde ve farklı halk kesimlerinin katılımıyla gerçekleştirilen bir devrimle ele geçirilmesidir. Bu siyasal devrimi, üretim araçlarının özel mülkiyetine son verilmesini ve üretim ilişkilerinden başlayarak tüm toplumsal ilişkilerin değiştirilmesini sağlayacak olan toplumsal devrim süreci izleyecektir. Sosyalizm, kapitalist toplum ile sınıfsız toplum arasındaki, siyasal devrimle başlayıp toplumsal devrim süreciyle devam eden geçiş ve mücadele evresidir. Kapitalist devlet mekanizmasını parçalayarak ve ücretli emek sömürüsünü sürdürmek isteyen karşı-devrimci güçleri bastırarak sosyalist demokrasiyi kuracak olan işçi sınıfının bu evredeki temel görevi, kendi ülkesinde sosyalizmin kuruluşunu ilerletmek ve sınıfların tümüyle ortadan kaldırılmasını sağlayacak olan dünya devrimi için mücadele etmektir.</p>
+<p>Sosyalizmde sınıf mücadelesi sonlanmayacak, işçi sınıfının iktidarı altında yeni bir aşamaya geçecektir. Bu aşamada, sosyalist demokrasinin temel hedefi sınıf ilişkilerinin tasfiyesini hızlandıracak adımların hazırlanması ve toplumsal devrim sürecinin ilerletilmesidir. Parti, sosyalizm evresinde de öncülük görevini sürdürecek, sınıf ilişkilerinin tasfiyesi hedefini ihmal eden veya ona zarar veren eğilimlere karşı mücadele edecek ve toplumsal devrim sürecinin ilerletilmesi için sürekli müdahalelerde bulunacaktır. Partinin öncülüğü, sadece kapitalizm koşulları altındaki mücadelelerde değil, sınıf mücadelesinin tüm aşama ve biçimlerinde vazgeçilmezdir.</p>
+<h3>SOSYALİST TOPLUMDA ÇALIŞMA, ÜRETİM VE BÖLÜŞÜM</h3>
+<p>Sosyalist toplumda herkes çalışma hakkına sahiptir, çalışamayacak durumda olanların insanca yaşamaları güvence altına alınır. Çocukların çalıştırılması yasaktır. Zorunlu çalışma saatleri, teknolojik olanakların izin verdiği ölçüde ve toplumun ihtiyaçları gözetilerek azaltılır, tüm yurttaşlara bilim, teknoloji, kültür ve sanat alanlarında gönüllü olarak üretimde bulunma olanağı sağlanır.</p>
+<p>Teknolojinin gelişimini destekleyici önlemler alınır, teknolojinin insanlığın gelişimi hedefine uygun ve halkın yararına olacak biçimde kullanılması sağlanır.</p>
+<p>“Herkese emeğine göre” ilkesi geçerli olur ve bedelsiz olarak tüm yurttaşlara sunulan ürün ve hizmetlerin kapsamı olanaklar ölçüsünde genişletilir. Bu amaçlara ulaşılabilmesi için, üretim araçlarının özel mülkiyetine son verilir, tüm toplumsal kaynaklar tüm yurttaşların katılımına dayanan merkezi planlama yoluyla kullanılır. Sosyalist toplumda merkezi planlama, kullanım değerlerinin üretimini temel alır ve insanın doğanın bir parçası olduğu bilinciyle insan sağlığını, çevreyi ve doğayı koruyacak gerekli önlemlerin alınmasını kapsar.</p>
+<h3>SOSYALİST DEMOKRASİ</h3>
+<p>Sosyalist demokrasi, egemen sınıf olarak örgütlenmiş işçi sınıfının devlet yönetimidir. Sosyalist demokrasi, halkın, en küçük yerel birimden başlayarak ülke ölçeğine kadar, kendi kendisini yönetmesini ifade eder. Toplumun bütününü ilgilendiren temel kararlar, doğrudan doğruya halk tarafından alınır.</p>
+<p>Her düzeydeki yönetim ve temsil organları tek dereceli seçimlerle belirlenir ve seçmenler geri çağırma hakkına sahiptir. Yönetim ve temsil organlarına seçilenlere ortalama işçi ücretinden daha yüksek ücret ödenmez, özel ayrıcalık sağlanmaz. Tüm yöneticiler ve temsilciler üstlendikleri görevler hakkında şeffaf ve hesap sorulabilir olmak zorundadır.</p>
+<p>Sosyalist demokraside, insanın insana tahakkümünü ve emek sömürüsünü savunmayan, etnik köken, ulusal köken, ırk, din, mezhep, inanç, cinsiyet ya da cinsel yönelim ayrımcılığına dayalı olmayan her tür düşünceyi özgürce ifade etme, bu düşünceleri yayma ve örgütlenme hakları eksiksiz olarak sağlanır.</p>
+<p>Sosyalist demokraside yargıçlar halk tarafından seçilir, adalet hizmetleri parasızdır. Hiçbir gerekçeyle kötü muamele ve işkence yapılamaz, ölüm cezası verilemez.</p>
+<h3>TEMEL YURTTAŞ HAKLARI GÜVENCE ALTINDADIR</h3>
+<p>Tüm yurttaşların eğitim ve sağlık hizmetlerinden yararlanma, barınma, ulaşım, iletişim ve insanlığın her tür bilgi ve kültür birikimine erişim gibi temel ihtiyaçları etnik köken, ulusal köken, ırk, din, mezhep, inanç, cinsiyet, cinsel yönelim, engellilik durumuna bakılmaksızın eşitlik temelinde ve bedelsiz olarak karşılanır. Anadilde hizmet alma ihtiyaçları karşılanır. Bu hizmetler hiçbir biçimde satışa sunulamaz, kâr konusu yapılamaz.</p>
+<p>Sosyalist Türkiye’de okullar, çocuklara ve gençlere kendilerini geliştirme olanaklarını sağlar, dostluğu, dayanışmayı, eşitliği, bir arada yaşamayı öğretir, tüm toplumun yararını gözeten bireyler yetiştirir.</p>
+<p>Sağlık hizmetlerinde koruyucu ve önleyici sağlık anlayışı esastır, sağlık hizmeti her basamakta ücretsizdir ve bir insan hakkı olarak sunulur.</p>
+<p>Ulaşım hizmetlerinde herkese ücretsiz, sürekli ve güvenli toplu taşıma olanakları sağlanır.</p>
+<p>Sanat ve sanatçı özgürdür. Yurttaşların sanat eserlerine erişimi ve kültürel etkinliklere katılımı ücretsizdir ve tüm yurttaşların sanatsal üretimde bulunarak kültürel gelişime katkı sağlamaları teşvik edilir. Sanatsal üretime ve kültürel gelişime hizmet eden faaliyetler kamu kaynaklarından desteklenir.</p>
+<h3>DIŞ POLİTİKADA BAĞIMSIZLIK, BARIŞ VE KARDEŞLİK</h3>
+<p>Ülkeyi emperyalizme bağımlı kılan tüm uluslararası kurumlardan çıkılır, ülkenin bağımsızlığını ihlal eden anlaşmalar iptal edilir; eşitlik, barış savunuculuğu ve halkların kardeşliği ilkelerine dayalı bir dış politika izlenir.</p>
+<p>Sosyalist Türkiye, bölgede ve dünyada silahlanma ve gerilim politikaları ile şovenizme karşı barışın inşası için çalışmayı ilke edinir. Uluslararası anlaşmazlıklara barışçıl çözümler bulma ilkesini savunur. Silahlanmaya, yabancı askeri üslere ve emperyalist operasyonlara karşı durur. Bölgesel sorunları katmerleştiren mezhepçiliği geriletmek için uluslararası sınıf dayanışmasına başvurur. Bölgesel ilişkileri gizli diplomasi ile değil, halk egemenliğinin organlarının, sendikaların, kadın, gençlik ve çevre örgütlerinin de rol alacağı bir zeminde geliştirmeye öncelik tanır. Enternasyonalizm için her düzeyde bölgesel ve uluslararası işbirliği forumları inşa eder.</p>                </section>
+                          </div>
+
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  body, .card-body, .program-html { color:#000; }
+
+  .page-banner { background:#f8f9fa; border-bottom:2px solid #e43442; padding:.75rem 0; margin-bottom:1rem; }
+  .banner-row { display:flex; align-items:center; justify-content:space-between; gap:.75rem; }
+  .banner-title { font-size:1.25rem; font-weight:700; margin:0; color:#000; }
+
+  .content-outline { border:1px solid #eee; border-radius:.5rem; padding:.75rem; background:#fff; }
+  .sidebar-heading { font-size:.8rem; letter-spacing:.04em; text-transform:uppercase; color:#6c757d; }
+
+  #tocNav .toc-link, #tocNavMobile .toc-link { color:#000; border-left:3px solid transparent; transition: border-color .15s ease; }
+  #tocNav .toc-link .flex-grow-1, #tocNavMobile .toc-link .flex-grow-1 { font-weight:400; }
+
+  #tocNav .toc-link.active, #tocNav .toc-link[aria-current="true"],
+  #tocNavMobile .toc-link.active, #tocNavMobile .toc-link[aria-current="true"] {
+    background:#fde6e6; border-left-color:#1f1f1f;
+  }
+  #tocNav .toc-link.active .flex-grow-1, #tocNav .toc-link[aria-current="true"] .flex-grow-1,
+  #tocNavMobile .toc-link.active .flex-grow-1, #tocNavMobile .toc-link[aria-current="true"] .flex-grow-1 {
+    font-weight:800 !important; color:#000;
+  }
+
+  .hit-badge { font-weight:600; }
+  .program-section { scroll-margin-top: 84px; }
+  .program-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; }
+  .program-section h3 { font-size:1.1rem; font-weight:600; margin-top:.75rem; margin-bottom:.5rem; }
+  mark.search-hit { background:#ffe08a; padding:0 .2em; border-radius:.2em; }
+
+  .btn-tip { background:#e43442; color:#fff; border-color:#e43442; }
+  .btn-tip:hover { color:#fff; filter:brightness(.95); }
+
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; width:48px; height:48px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    border:none; outline:none; cursor:pointer;
+    background:#e43442; color:#fff; box-shadow:0 6px 20px rgba(0,0,0,.15);
+    opacity:0; pointer-events:none; transform:translateY(12px);
+    transition:opacity .2s ease, transform .2s ease, box-shadow .2s ease; z-index:1030;
+  }
+  .back-to-top.show{opacity:1; pointer-events:auto; transform:translateY(0);}
+  .back-to-top:hover{box-shadow:0 8px 24px rgba(0,0,0,.2);}
+</style>
+
+
+  <i class="fa-solid fa-arrow-up"></i>
+
+
+
+
+
+
+
+
+<style>
+  .footer-divider{
+    display:none;
+  }
+  @media (max-width: 767.98px){
+    .footer-divider{
+      display:block;
+      height:1px;
+      width:100%;
+      margin:6px 0 14px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,.28), transparent);
+      border:0;
+    }
+  }
+  .footer-social-round a.social-round{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:36px;height:36px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.3);
+    text-decoration:none
+  }
+  .footer-social-round a.social-round + a.social-round{margin-left:8px}
+	
+.footer-main-grid {
+  align-items: stretch;              
+}
+.footer-company-info,
+.footer-mail-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;           
+}
+
+
+.footer-mail-box {
+  align-items: flex-start;           
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px){
+  .footer-mail-box {
+    align-items: center;             
+    padding-left: 0;
+  }
+}
+
+</style>
+
+
+
+<footer class="site-footer">
+  <div class="container-1200">
+    
+  <div class="footer-main-grid">
+  
+  <div class="footer-company-info">
+    <div class="footer-contact">
+      <span>
+        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        Kocatepe Mah. Selanik Cad. No:41/7<br>Çankaya / ANKARA
+      </span>
+     
+    </div>
+  </div>
+
+  
+  <div class="footer-mail-box">
+    <div class="footer-contact">
+      <span>
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        <a href="https://tip.org.tr/cdn-cgi/l/email-protection#bcc8d5ccfcc8d5cc92d3cedb92c8ce"><span class="__cf_email__">[email protected]</span></a>
+      </span>
+		 <span>
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <a>+90 (312) 417 93 70</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+    
+    <div class="footer-bottom">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="small mb-0">
+          © 2026 Türkiye İşçi Partisi. Tüm hakları saklıdır.
+        </p>
+        <div class="footer-social-round">
+          <a href="https://www.facebook.com/tipgenelmerkez" class="social-round" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/tipgenelmerkez" class="social-round" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/tipgenelmerkez" class="social-round" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@tipgenelmerkez" class="social-round" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
