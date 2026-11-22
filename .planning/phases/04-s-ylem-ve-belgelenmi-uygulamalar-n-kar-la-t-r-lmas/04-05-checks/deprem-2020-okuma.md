@@ -329,3 +329,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 0–9 metin katmanı ayrıca okundu: kapak ve içindekilerle tablo dizini, dönem ve bölüm sınırlarını gösterir. İndeks 10–43 ve görseller ayrıca okunmalıdır.
 
 - 2021 raporu indeks 10–19 metin katmanı ayrıca okundu: şekil ve resim dizini, kısaltmalar ve terimler listesi yer alır. Dizinde bulunma, görsellerin kendilerinin incelendiği anlamına gelmez. İndeks 20–43 ve görseller açık.
+
+- 2021 raporu indeks 20–29 metin katmanı okundu: terimler, komisyon başkanının sunuşu ve Selahattin Minsolmaz ile diğer vekillerin 10/3200 önergesi ve imzacı listesi bulunur. Önergede verilen dönemsel iddialar imzacılara aittir; Baş'ın ilk önerge sahibi olduğu veya önerilerin uygulandığı ileri sürülmedi. İndeks 30–43 ve görseller açık.
