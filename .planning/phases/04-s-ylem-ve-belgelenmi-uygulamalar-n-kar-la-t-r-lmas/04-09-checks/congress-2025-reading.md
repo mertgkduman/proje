@@ -1,0 +1,7 @@
+# DBP 7. Olağan Kongresi
+
+12 Ocak 2025’te Ankara Dünya Ticaret Merkezi’nde yapılan kongre PİRHA’nın aynı günkü haberinde toplantı sürerken kayda geçti. İlke TV oylamayı kongre delegelerine bağladı. Artı Gerçek’in MA atıflı haberi, Çiğdem Kılıçgün Uçar ile Keskin Bayındır’ın yeniden seçildiğini bildirdi. PİRHA’daki seçim sonucu da MA atfı taşıyor. PİRHA’nın kendi toplantı anlatımı kullanıldı. [PİRHA](https://pirha.org/dbp-7nci-olagan-kongresi-herkes-cozum-icin-sorumluluk-almali-459567.html/12/01/2025/) [İlke TV](https://ilketv.com.tr/dbpnin-es-genel-baskanlari-degismedi/) [Artı Gerçek](https://artigercek.com/politika/dbp-7nci-olagan-kongresi-herkes-cozum-icin-sorumluluk-almali-330746h)
+
+Arşivdeki HTML tüzük, 12 Ocak 2025 kongre değişikliklerini taşıdığını bildiriyor. Madde 53’ün ilk fıkrasında delege tam sayısının salt çoğunluğu, gizli oy, açık sayım ve ilk iki oylamanın ardından izlenen usul yer alıyor. Aynı günkü tüzük değişiklikleri ile oylamanın sırası, önceki yürürlük nüshası, gizli oy veya açık sayımın uygulandığını gösteren tutanak, geçerli oy sayısı ve tur sayısı açık. 19 Ocak Parti Meclisi toplantısı ve MYK görev dağılımı ayrı olay kaydında.
+
+Üç özgün haber gövdesi 22 Kasım 2026’da HTTP 200 ile alındı. Alım günü ile haber tarihleri ayrı saklandı. Özgün baytlar, SHA-256 değerleri ve pasif görünümler kaynak kayıtlarında bağlı. Çalışma çiftinde iki olay ve iki ilişki var. 610 araştırma hücresinin tamamı açık.

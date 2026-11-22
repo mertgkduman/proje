@@ -1,0 +1,380 @@
+{
+  "practice_source_review": [
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0409-dbp-myk-2025-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0409-myk-party-summary-v1\", \"0409-myk-reported-result-v1\"]",
+      "passage_ids": "[\"0409-myk-party-summary-meeting\", \"0409-myk-reported-result-meeting\", \"0409-myk-reported-result-roles\"]",
+      "inspected_sections": "[\"Parti Meclisi toplantısından sonraki belirleme\", \"Toplantı günü ve bir önceki kongre\", \"Örgütleme ve eğitim görevleri listesi\"]",
+      "supported_claim": "DBP, kongreden sonraki ilk Parti Meclisi toplantısının 19 Ocakta yapıldığını bildirdi. Artı Gerçek, toplantı sonrasında MYK’nın belirlendiğini ve görev dağılımını aktardı. İki kaynak, tüzükteki merkez kurulu oluşturma mekanizmasıyla ilgili.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_event hedefinin özgün metin, tarih ve yetki sınırı incelendi. DBP, kongreden sonraki ilk Parti Meclisi toplantısının 19 Ocakta yapıldığını bildirdi. Artı Gerçek, toplantı sonrasında MYK’nın belirlendiğini ve görev dağılımını aktardı. İki kaynak, tüzükteki merkez kurulu oluşturma mekanizmasıyla ilgili."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-myk-2025-event|0409-myk-party-summary-meeting|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0409-myk-party-summary-v1\"]",
+      "passage_ids": "[\"0409-myk-party-summary-meeting\"]",
+      "inspected_sections": "[\"Toplantı günü ve bir önceki kongre\"]",
+      "supported_claim": "DBP’nin bildirgesi ilk Parti Meclisi toplantısı için 19 Ocak günü verdi.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin özgün metin, tarih ve yetki sınırı incelendi. DBP’nin bildirgesi ilk Parti Meclisi toplantısı için 19 Ocak günü verdi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-myk-2025-event|0409-myk-reported-result-meeting|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0409-myk-reported-result-v1\"]",
+      "passage_ids": "[\"0409-myk-reported-result-meeting\"]",
+      "inspected_sections": "[\"Parti Meclisi toplantısından sonraki belirleme\"]",
+      "supported_claim": "Artı Gerçek, 12 Ocak kongresi ardından Parti Meclisi toplantısı yapıldığını bildirdi.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin özgün metin, tarih ve yetki sınırı incelendi. Artı Gerçek, 12 Ocak kongresi ardından Parti Meclisi toplantısı yapıldığını bildirdi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-myk-2025-event|0409-myk-reported-result-roles|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0409-myk-reported-result-v1\"]",
+      "passage_ids": "[\"0409-myk-reported-result-roles\"]",
+      "inspected_sections": "[\"Örgütleme ve eğitim görevleri listesi\"]",
+      "supported_claim": "Artı Gerçek, MYK görev dağılımında eğitim eşsözcülerini adlandırdı.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin özgün metin, tarih ve yetki sınırı incelendi. Artı Gerçek, MYK görev dağılımında eğitim eşsözcülerini adlandırdı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0409-dbp-myk-2025-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\", \"0409-myk-party-summary-v1\", \"0409-myk-reported-result-v1\"]",
+      "passage_ids": "[\"0409-dbp-myk-2025-article61\", \"0409-myk-party-summary-meeting\", \"0409-myk-reported-result-meeting\", \"0409-myk-reported-result-roles\"]",
+      "inspected_sections": "[\"Merkez Yürütme Kurulunun oluşumu\", \"Parti Meclisi toplantısından sonraki belirleme\", \"Toplantı günü ve bir önceki kongre\", \"Örgütleme ve eğitim görevleri listesi\"]",
+      "supported_claim": "DBP, kongreden sonraki ilk Parti Meclisi toplantısının 19 Ocakta yapıldığını bildirdi. Artı Gerçek, toplantı sonrasında MYK’nın belirlendiğini ve görev dağılımını aktardı. İki kaynak, tüzükteki merkez kurulu oluşturma mekanizmasıyla ilgili.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_relation hedefinin özgün metin, tarih ve yetki sınırı incelendi. DBP, kongreden sonraki ilk Parti Meclisi toplantısının 19 Ocakta yapıldığını bildirdi. Artı Gerçek, toplantı sonrasında MYK’nın belirlendiğini ve görev dağılımını aktardı. İki kaynak, tüzükteki merkez kurulu oluşturma mekanizmasıyla ilgili."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0409-dbp-myk-2025-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\", \"0409-myk-party-summary-v1\", \"0409-myk-reported-result-v1\"]",
+      "passage_ids": "[\"0409-dbp-myk-2025-article61\", \"0409-myk-party-summary-meeting\", \"0409-myk-reported-result-meeting\", \"0409-myk-reported-result-roles\"]",
+      "inspected_sections": "[\"Merkez Yürütme Kurulunun oluşumu\", \"Parti Meclisi toplantısından sonraki belirleme\", \"Toplantı günü ve bir önceki kongre\", \"Örgütleme ve eğitim görevleri listesi\"]",
+      "supported_claim": "DBP, kongreden sonraki ilk Parti Meclisi toplantısının 19 Ocakta yapıldığını bildirdi. Artı Gerçek, toplantı sonrasında MYK’nın belirlendiğini ve görev dağılımını aktardı. İki kaynak, tüzükteki merkez kurulu oluşturma mekanizmasıyla ilgili.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id hedefinin özgün metin, tarih ve yetki sınırı incelendi. DBP, kongreden sonraki ilk Parti Meclisi toplantısının 19 Ocakta yapıldığını bildirdi. Artı Gerçek, toplantı sonrasında MYK’nın belirlendiğini ve görev dağılımını aktardı. İki kaynak, tüzükteki merkez kurulu oluşturma mekanizmasıyla ilgili."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0409-dbp-myk-2025-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0409-myk-reported-result-v1\"]",
+      "passage_ids": "[\"0409-myk-reported-result-meeting\", \"0409-myk-reported-result-roles\"]",
+      "inspected_sections": "[\"Parti Meclisi toplantısından sonraki belirleme\", \"Örgütleme ve eğitim görevleri listesi\"]",
+      "supported_claim": "23 Ocak tarihli haber yeni MYK ve görev dağılımını bildirdi. Örgütleme ve eğitim eşsözcülükleri için isimler verildi. Gizli oy veya sandık tutanağının sonucu açık.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id hedefinin özgün metin, tarih ve yetki sınırı incelendi. 23 Ocak tarihli haber yeni MYK ve görev dağılımını bildirdi. Örgütleme ve eğitim eşsözcülükleri için isimler verildi. Gizli oy veya sandık tutanağının sonucu açık."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0409-dbp-myk-2025-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-myk-2025-article61\"]",
+      "inspected_sections": "[\"Merkez Yürütme Kurulunun oluşumu\"]",
+      "supported_claim": "12 Ocak 2025 değişikliklerini içeren tüzüğün 61. maddesi MYK’nın Parti Meclisinden gizli oyla seçilen dokuz üye ve eş genel başkanlardan oluşmasını düzenliyor.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id hedefinin özgün metin, tarih ve yetki sınırı incelendi. 12 Ocak 2025 değişikliklerini içeren tüzüğün 61. maddesi MYK’nın Parti Meclisinden gizli oyla seçilen dokuz üye ve eş genel başkanlardan oluşmasını düzenliyor."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0409-dbp-myk-2025-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-myk-2025-article61\"]",
+      "inspected_sections": "[\"Merkez Yürütme Kurulunun oluşumu\"]",
+      "supported_claim": "12 Ocak 2025 değişikliklerini içeren tüzüğün 61. maddesi MYK’nın Parti Meclisinden gizli oyla seçilen dokuz üye ve eş genel başkanlardan oluşmasını düzenliyor.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_statement hedefinin özgün metin, tarih ve yetki sınırı incelendi. 12 Ocak 2025 değişikliklerini içeren tüzüğün 61. maddesi MYK’nın Parti Meclisinden gizli oyla seçilen dokuz üye ve eş genel başkanlardan oluşmasını düzenliyor."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0409-dbp-myk-2025-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-myk-2025-article61\"]",
+      "inspected_sections": "[\"Merkez Yürütme Kurulunun oluşumu\"]",
+      "supported_claim": "Merkez Yürütme Kurulu, Parti Meclisi Üyeleri arasından gizli oyla seçilen 9 üye ve Eş Genel Başkanlardan oluşur.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id hedefinin özgün metin, tarih ve yetki sınırı incelendi. Merkez Yürütme Kurulu, Parti Meclisi Üyeleri arasından gizli oyla seçilen 9 üye ve Eş Genel Başkanlardan oluşur."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0409-dbp-myk-2025-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:18:46.847285+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-myk-2025-article61\"]",
+      "inspected_sections": "[\"Merkez Yürütme Kurulunun oluşumu\"]",
+      "supported_claim": "12 Ocak 2025 değişikliklerini içeren tüzüğün 61. maddesi MYK’nın Parti Meclisinden gizli oyla seçilen dokuz üye ve eş genel başkanlardan oluşmasını düzenliyor.",
+      "limitations": "Parti Meclisi toplantısının günü parti bildirgesinde. MYK belirleme günü, oylama usulünün uygulanması ve resmî seçim tutanağı açık.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id hedefinin özgün metin, tarih ve yetki sınırı incelendi. 12 Ocak 2025 değişikliklerini içeren tüzüğün 61. maddesi MYK’nın Parti Meclisinden gizli oyla seçilen dokuz üye ve eş genel başkanlardan oluşmasını düzenliyor."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0409-dbp-2025-7-olagan-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-2025-7-olagan-charter\"]",
+      "inspected_sections": "[\"Madde 53 kurum düzeni\"]",
+      "supported_claim": "Özgün HTML başlığı 12 Ocak 2025 tarihli 7. Olağan Kongre değişikliklerini belirtiyor. 12 Ocak 2025 değişikliklerini içeren tüzüğün 53. maddesi delege tam sayısının salt çoğunluğunu, gizli oyu ve açık sayımı düzenliyor. İlk iki oylamada yeterli oy çıkmazsa üçüncü oylamada en çok oy alan iki üye seçiliyor.",
+      "limitations": "Değişikliklerin yürürlüğe giriş sırası ve aynı günkü seçime hangi metnin uygulandığı açık.",
+      "result": "reviewed",
+      "reason": "practice_statement hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. Özgün HTML başlığı 12 Ocak 2025 tarihli 7. Olağan Kongre değişikliklerini belirtiyor. 12 Ocak 2025 değişikliklerini içeren tüzüğün 53. maddesi delege tam sayısının salt çoğunluğunu, gizli oyu ve açık sayımı düzenliyor. İlk iki oylamada yeterli oy çıkmazsa üçüncü oylamada en çok oy alan iki üye seçiliyor."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-2025-7-olagan-charter\"]",
+      "inspected_sections": "[\"Madde 53 kurum düzeni\"]",
+      "supported_claim": "12 Ocak 2025 değişikliklerini içeren tüzüğün 53. maddesi delege tam sayısının salt çoğunluğunu, gizli oyu ve açık sayımı düzenliyor. İlk iki oylamada yeterli oy çıkmazsa üçüncü oylamada en çok oy alan iki üye seçiliyor.",
+      "limitations": "Değişikliklerin yürürlüğe giriş sırası ve aynı günkü seçime hangi metnin uygulandığı açık.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. 12 Ocak 2025 değişikliklerini içeren tüzüğün 53. maddesi delege tam sayısının salt çoğunluğunu, gizli oyu ve açık sayımı düzenliyor. İlk iki oylamada yeterli oy çıkmazsa üçüncü oylamada en çok oy alan iki üye seçiliyor."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-2025-7-olagan-charter\"]",
+      "inspected_sections": "[\"Madde 53 kurum düzeni\"]",
+      "supported_claim": "Madde 53 özgün HTML metnindeki cümle, madde düzeniyle birlikte okundu.",
+      "limitations": "Değişikliklerin yürürlüğe giriş sırası ve aynı günkü seçime hangi metnin uygulandığı açık.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. Madde 53 özgün HTML metnindeki cümle, madde düzeniyle birlikte okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-2025-7-olagan-event|0409-congress-2025-pirha-convened|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0409-congress-2025-pirha-v1\"]",
+      "passage_ids": "[\"0409-congress-2025-pirha-convened\"]",
+      "inspected_sections": "[\"Kongre günü, toplantı yeri ve kongre sırası\"]",
+      "supported_claim": "PİRHA, toplantı sürerken Ankara Dünya Ticaret Merkezi’ndeki 7. Olağan Kongreyi bildirdi.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. PİRHA, toplantı sürerken Ankara Dünya Ticaret Merkezi’ndeki 7. Olağan Kongreyi bildirdi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-2025-7-olagan-event|0409-congress-2025-ilke-tv-delegate|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0409-congress-2025-ilke-tv-v1\"]",
+      "passage_ids": "[\"0409-congress-2025-ilke-tv-delegate\"]",
+      "inspected_sections": "[\"Oylamayı yapan delegeler ve seçilen kişiler\"]",
+      "supported_claim": "İlke TV, seçimi kongre delegelerinin oylarına bağladı.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. İlke TV, seçimi kongre delegelerinin oylarına bağladı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-2025-7-olagan-event|0409-congress-2025-arti-gercek-result|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0409-congress-2025-arti-gercek-v1\"]",
+      "passage_ids": "[\"0409-congress-2025-arti-gercek-result\"]",
+      "inspected_sections": "[\"Eş genel başkanların yeniden seçilmesi\"]",
+      "supported_claim": "Artı Gerçek’te MA atıflı haber, Çiğdem Kılıçgün Uçar ve Keskin Bayındır’ın yeniden seçildiğini aktardı.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. Artı Gerçek’te MA atıflı haber, Çiğdem Kılıçgün Uçar ve Keskin Bayındır’ın yeniden seçildiğini aktardı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0409-dbp-2025-7-olagan-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0409-congress-2025-arti-gercek-v1\", \"0409-congress-2025-ilke-tv-v1\", \"0409-congress-2025-pirha-v1\"]",
+      "passage_ids": "[\"0409-congress-2025-arti-gercek-result\", \"0409-congress-2025-ilke-tv-delegate\", \"0409-congress-2025-pirha-convened\"]",
+      "inspected_sections": "[\"Eş genel başkanların yeniden seçilmesi\", \"Kongre günü, toplantı yeri ve kongre sırası\", \"Oylamayı yapan delegeler ve seçilen kişiler\"]",
+      "supported_claim": "PİRHA, Ankara’daki 7. Olağan Kongrenin yapıldığını aktardı. İlke TV ve Artı Gerçek, iki eş genel başkanın yeniden seçildiğini bildirdi.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_event hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. PİRHA, Ankara’daki 7. Olağan Kongrenin yapıldığını aktardı. İlke TV ve Artı Gerçek, iki eş genel başkanın yeniden seçildiğini bildirdi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0409-dbp-2025-7-olagan-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\", \"0409-congress-2025-arti-gercek-v1\", \"0409-congress-2025-ilke-tv-v1\", \"0409-congress-2025-pirha-v1\"]",
+      "passage_ids": "[\"0409-congress-2025-arti-gercek-result\", \"0409-congress-2025-ilke-tv-delegate\", \"0409-congress-2025-pirha-convened\", \"0409-dbp-2025-7-olagan-charter\"]",
+      "inspected_sections": "[\"Eş genel başkanların yeniden seçilmesi\", \"Kongre günü, toplantı yeri ve kongre sırası\", \"Madde 53 kurum düzeni\", \"Oylamayı yapan delegeler ve seçilen kişiler\"]",
+      "supported_claim": "Kongrede Çiğdem Kılıçgün Uçar ve Keskin Bayındır’ın yeniden seçildiği bildirildi. Tüzük, seçimi kongreye bağlıyor.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_relation hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. Kongrede Çiğdem Kılıçgün Uçar ve Keskin Bayındır’ın yeniden seçildiği bildirildi. Tüzük, seçimi kongreye bağlıyor."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\"]",
+      "passage_ids": "[\"0409-dbp-2025-7-olagan-charter\"]",
+      "inspected_sections": "[\"Madde 53 kurum düzeni\"]",
+      "supported_claim": "Arşivli tüzük hükmü ve kongrede bildirilen seçim aynı eş genel başkanlık makamına ilişkin.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. Arşivli tüzük hükmü ve kongrede bildirilen seçim aynı eş genel başkanlık makamına ilişkin."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0207-dbp-charter-v1\", \"0409-congress-2025-arti-gercek-v1\", \"0409-congress-2025-ilke-tv-v1\", \"0409-congress-2025-pirha-v1\"]",
+      "passage_ids": "[\"0409-congress-2025-arti-gercek-result\", \"0409-congress-2025-ilke-tv-delegate\", \"0409-congress-2025-pirha-convened\", \"0409-dbp-2025-7-olagan-charter\"]",
+      "inspected_sections": "[\"Eş genel başkanların yeniden seçilmesi\", \"Kongre günü, toplantı yeri ve kongre sırası\", \"Madde 53 kurum düzeni\", \"Oylamayı yapan delegeler ve seçilen kişiler\"]",
+      "supported_claim": "Tüzük seçimi kongreye veriyor. İlke TV delege oylamasını bildirdi. Haberlerde oy sayısı veya oy sayım tutanağı verilmedi.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. Tüzük seçimi kongreye veriyor. İlke TV delege oylamasını bildirdi. Haberlerde oy sayısı veya oy sayım tutanağı verilmedi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T07:35:04.847997+00:00",
+      "source_version_ids": "[\"0409-congress-2025-arti-gercek-v1\"]",
+      "passage_ids": "[\"0409-congress-2025-arti-gercek-result\"]",
+      "inspected_sections": "[\"Eş genel başkanların yeniden seçilmesi\"]",
+      "supported_claim": "Artı Gerçek’in MA atıflı haberine göre Çiğdem Kılıçgün Uçar ve Keskin Bayındır yeniden seçildi.",
+      "limitations": "Resmî seçim tutanağı, oy sayısı, oylama turu ve 12 Ocak değişiklikleri öncesindeki son yürürlük nüshası açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id hedefinin asıl kaynakları, tarihi ve iddia sınırları kontrol edildi. Artı Gerçek’in MA atıflı haberine göre Çiğdem Kılıçgün Uçar ve Keskin Bayındır yeniden seçildi."
+    }
+  ],
+  "source_review_refs": [
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0409-dbp-myk-2025-event"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-myk-2025-event|0409-myk-party-summary-meeting|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-myk-2025-event|0409-myk-reported-result-meeting|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-myk-2025-event|0409-myk-reported-result-roles|result"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0409-dbp-myk-2025-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0409-dbp-myk-2025-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0409-dbp-myk-2025-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0409-dbp-myk-2025-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0409-dbp-myk-2025-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0409-dbp-myk-2025-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0409-dbp-myk-2025-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0409-dbp-2025-7-olagan-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-2025-7-olagan-event|0409-congress-2025-pirha-convened|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-2025-7-olagan-event|0409-congress-2025-ilke-tv-delegate|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0409-dbp-2025-7-olagan-event|0409-congress-2025-arti-gercek-result|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0409-dbp-2025-7-olagan-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0409-dbp-2025-7-olagan-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0409-dbp-2025-7-olagan-relation"
+    }
+  ]
+}
