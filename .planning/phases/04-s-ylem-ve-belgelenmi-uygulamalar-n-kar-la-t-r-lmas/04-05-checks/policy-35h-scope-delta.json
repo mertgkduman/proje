@@ -1,0 +1,47 @@
+{
+  "status": "draft_unvalidated",
+  "practice_records": {
+    "practice_scope_v2": [
+      {
+        "id": "practice-34f3b38409b04c43cf337e597fbff3dcce125396094d47665747e77e616151cd",
+        "party_id": "tip",
+        "topic_id": "calisma-sureleri",
+        "taxonomy_version": 4,
+        "period_start": "2017-11-07",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "Tarihli PM açıklaması okundu; tüm dönem ve söylem uçları açık, kapsam kapanmadı."
+      }
+    ],
+    "practice_attempt_v2": [
+      {
+        "id": "0405-pm35-statement-okuma",
+        "scope_id": "practice-34f3b38409b04c43cf337e597fbff3dcce125396094d47665747e77e616151cd",
+        "attempted_at": "2026-11-22T04:05:11.877171+00:00",
+        "query": "https://tip.org.tr/myk-ve-parti-meclisi/parti-meclisi-degerlendirmesi-6-7-nisan-2024",
+        "url": "https://tip.org.tr/myk-ve-parti-meclisi/parti-meclisi-degerlendirmesi-6-7-nisan-2024",
+        "result": "examined",
+        "reason": "9 Nisan 2024 tarihli PM değerlendirmesinin 1 Mayıs için 35 saat hedefi ve tarih künyesi özgün HTML içinde okundu.",
+        "source_version_id": "0405-tip-pm-nisan-v1"
+      }
+    ],
+    "practice_scope_source": [
+      {
+        "scope_id": "practice-34f3b38409b04c43cf337e597fbff3dcce125396094d47665747e77e616151cd",
+        "version_id": "0405-tip-pm-nisan-v1",
+        "inspected_sections": "[\"Öncelikli somut hedeflerimiz ve takvimimiz; sayfa yayın tarihi\"]",
+        "inspected_at": "2026-11-22T04:05:11.877171+00:00"
+      }
+    ],
+    "practice_lead": [
+      {
+        "id": "lead-0405-pm35-statement-okuma",
+        "scope_id": "practice-34f3b38409b04c43cf337e597fbff3dcce125396094d47665747e77e616151cd",
+        "url": "https://tip.org.tr/myk-ve-parti-meclisi/parti-meclisi-degerlendirmesi-6-7-nisan-2024",
+        "relevance_reason": "9 Nisan 2024 tarihli PM değerlendirmesinin 1 Mayıs için 35 saat hedefi ve tarih künyesi özgün HTML içinde okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-pm35-statement-okuma\"]"
+      }
+    ]
+  }
+}
