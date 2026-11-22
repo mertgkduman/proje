@@ -1,0 +1,32 @@
+import copy,datetime,json,sys
+from pathlib import Path
+sys.path.insert(0,'src')
+import uygulamalar as rules
+D=Path(__file__).parent;read=lambda p:json.loads(Path(p).read_text())
+package=read(D/'nuclear-mersin-union-draft.json');previous=read(D/'nuclear-mersin-union-review-draft.json');base=read('data/releases/f67ca0a35e634035bf3aa83a46571f50/records.json')
+entries,records=package['entries'],package['practice_records'];now=datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds');entries.extend(read(D/'bayhan-development-plan-source-draft.json')['entries'])
+scope=next(x['id'] for x in records['practice_scope_v2'] if x['party_id']=='emep' and x['topic_id']=='nukleer-enerji' and x['research_kind']=='event')
+program='0309-emep-program-029-0-passage';pids=['0410-emep-bayhan-plan-2023-tbmm-'+x+'-p' for x in ('date','speech','party')];eid='0410-bayhan-development-plan-2023-event';rid='0410-bayhan-development-plan-nuclear-relation';fid='0410-bayhan-development-plan-nuclear-explanation'
+def add(k,**v):entries.append(dict(kind=k,values=v))
+add('finding',id=fid,party_id='emep',heading='Belgelenmiş uygulamalar',pair_id=fid,text='Program nükleer santrallerin yasaklanmasını ister. İskender Bayhan, 31 Ekim 2023’te TBMM’de On İkinci Kalkınma Planı konuşmasında nükleer santralleri eleştirdi ve EMEP adına planı reddettiğini açıkladı.',provenance='summary',epistemic_type='claim')
+add('review',id='review-'+fid,kind='finding',subject_id=fid,reviewer_kind='agent',reviewed_at=now,result='reviewed',reason='Program ve TBMM konuşmasının tarih, içerik ve parti adına açıklama pasajları ayrı okundu.')
+for pid in [program]+pids:add('finding_evidence',finding_id=fid,passage_id=pid,role='support');add('verification',finding_id=fid,passage_id=pid,checked_at=now,result='confirmed',reason='Özgün program veya TBMM konuşması pasajı okundu.')
+records['practice_event'].append(dict(id=eid,common_event_key='tbmm-28-2-015-kalkinma-plani-bayhan',event_at='2023-10-31',date_precision='day',date_unknown_reason=None,scope_context='TBMM 28. dönem 2. yıl 15. birleşim',title='Bayhan’ın kalkınma planı konuşması',occurrence_basis='TBMM üye konuşması tarihi, konuşmacıyı ve plan bağlamını gösterir.'))
+points=['TBMM kaydı konuşma tarihini 31 Ekim 2023 olarak gösterir.','Bayhan kalkınma planı konuşmasında nükleer santralleri eleştirdi.','Bayhan planı EMEP adına reddettiğini ifade etti.']
+for pid,point in zip(pids,points):records['practice_event_evidence'].append(dict(event_id=eid,passage_id=pid,supported_point=point,stage='action',concrete_basis='TBMM üye genel kurul konuşması kaydı.',limitation='Konuşma oy kaydı, kabul/ret kararı veya santralın durması değildir.',epistemic_type='claim'));records['practice_evidence_assessment'].append(dict(event_id=eid,passage_id=pid,stage='action',basis_kind='document'))
+records['practice_relation'].append(dict(id=rid,statement_id='0410-nuclear-statement',event_id=eid,party_id='emep',topic_id='nukleer-enerji',scope_id=scope,comparability_reason='Program nükleer santral yasağı ister; Bayhan’ın kalkınma planına ilişkin TBMM konuşması nükleer santralleri eleştirir.',target_finding_id='0309-emep-program-029-0-summary',result_finding_id=None,explanation_finding_id=fid,temporal_context='2019 program yayını ve 31 Ekim 2023 TBMM konuşması ayrı tarihlidir.',authority_context='Konuşma İskender Bayhan’a ve plan hakkındaki açıklama EMEP adına kendisine aittir.',uncertainty_reason='Konuşma TBMM oyu veya nükleer santralin durduğunun kanıtı değildir; ara program sürümü açık.'))
+records['practice_candidate'].append(dict(id='0410-bayhan-development-plan-nuclear-candidate',scope_id=scope,event_id=eid,relation_id=rid,state='eligible',reason='TBMM üye konuşması nükleer santralleri ve kalkınma planını ele alıyor.',passage_ids=json.dumps(pids)))
+v='0410-emep-bayhan-plan-2023-tbmm-v1';url='https://tbmm.gov.tr/milletvekili/UyeGenelKurulKonusmalariDetay?eid=118407';aid='0410-bayhan-plan-2023-attempt';section='TBMM konuşma tarihi ve kalkınma planı açıklaması'
+records['practice_scope_source'].append(dict(scope_id=scope,version_id=v,inspected_sections=json.dumps([section],ensure_ascii=False),inspected_at=now));records['practice_lead'].append(dict(id='lead-'+aid,scope_id=scope,url=url,relevance_reason=section,state='examined',attempt_ids=json.dumps([aid])));records['practice_attempt_v2'].append(dict(id=aid,scope_id=scope,attempted_at=now,query=url,url=url,result='examined',reason='TBMM üye konuşması okundu; oylama veya santral sonucu bu konuşmadan çıkarılmaz.',source_version_id=v))
+data=copy.deepcopy(base)
+for e in entries:
+ if e['values'] not in data.setdefault(e['kind'],[]):data[e['kind']].append(e['values'])
+for table,rows in records.items():data.setdefault(table,[]).extend(row for row in rows if row not in data[table])
+rules.validate_practices(data);newpass={x['passage_id'] for x in records['practice_event_evidence']};targets=rules.practice_review_package_targets(data,records,newpass,party_id='emep');passages={p['id']:p for p in data['passage']};old={(r['subject_kind'],r['subject_id']):r for r in previous['practice_source_review']};reviews=[]
+for (kind,identity),(pids,parties) in sorted(targets.items()):
+ if (kind,identity) in old:reviews.append(old[(kind,identity)]);continue
+ inspected=[passages[x] for x in sorted(pids)];reviews.append(dict(subject_kind=kind,subject_id=identity,reviewer_kind='agent',reviewed_at=now,source_version_ids=json.dumps(sorted({p['version_id'] for p in inspected})),passage_ids=json.dumps([p['id'] for p in inspected]),inspected_sections=json.dumps(sorted({p['section'] for p in inspected}),ensure_ascii=False),supported_claim='Program nükleer yasağı ister; TBMM kaydı Bayhan’ın kalkınma planı konuşmasındaki eleştiriyi gösterir.',limitations='Konuşma oylama veya santral faaliyetinde sonuç kanıtı değildir.',result='reviewed',reason=kind+' / '+identity+' için ilgili program ve TBMM konuşma pasajları okundu.'))
+rules.validate_practice_source_review(data,reviews,party_id='emep',target_keys=set(targets));refs=[{k:r[k] for k in ('subject_kind','subject_id')} for r in reviews];package['source_review_refs']=refs
+for n,obj in [('bayhan-development-plan-union-draft.json',package),('bayhan-development-plan-union-review-draft.json',dict(practice_source_review=reviews,source_review_refs=refs))]:
+ with (D/n).open('x') as f:json.dump(obj,f,ensure_ascii=False,indent=2);f.write('\n')
+print('BAYHAN_PLAN_PACKAGE_TARGET_PASS',len(reviews),'EVENTS',len(records['practice_event']),'RELATIONS',len(records['practice_relation']))
