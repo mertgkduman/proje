@@ -14411,5 +14411,58 @@
       ],
       "reading_receipt": "program-2019-reading-004.json"
     }
+  ],
+  "ankara_program_reading_queue": [
+    {
+      "tranche_id": "iyi-ankara-program-01",
+      "source_ids": [
+        "0205-iyi-program-page-v1"
+      ],
+      "source_sha256": "7165cd05b2643134a6a8fc4910f312915c59c52a31561ec6f657d89f2a493f9a",
+      "extracted_character_range": [
+        0,
+        42000
+      ],
+      "extraction": "Python HTMLParser; script, style, nav, footer, header dışlanır; metin parçaları boşlukla birleştirilir.",
+      "processed_at": null,
+      "closure_refs": [],
+      "next_leads": [
+        "Belirtilen gerçek metin bölümünü oku; sürüm tarihi ve ilgili uygulamayı ayrıca araştır."
+      ]
+    },
+    {
+      "tranche_id": "iyi-ankara-program-02",
+      "source_ids": [
+        "0205-iyi-program-page-v1"
+      ],
+      "source_sha256": "7165cd05b2643134a6a8fc4910f312915c59c52a31561ec6f657d89f2a493f9a",
+      "extracted_character_range": [
+        42000,
+        84000
+      ],
+      "extraction": "Python HTMLParser; script, style, nav, footer, header dışlanır; metin parçaları boşlukla birleştirilir.",
+      "processed_at": null,
+      "closure_refs": [],
+      "next_leads": [
+        "Belirtilen gerçek metin bölümünü oku; sürüm tarihi ve ilgili uygulamayı ayrıca araştır."
+      ]
+    },
+    {
+      "tranche_id": "iyi-ankara-program-03",
+      "source_ids": [
+        "0205-iyi-program-page-v1"
+      ],
+      "source_sha256": "7165cd05b2643134a6a8fc4910f312915c59c52a31561ec6f657d89f2a493f9a",
+      "extracted_character_range": [
+        84000,
+        125975
+      ],
+      "extraction": "Python HTMLParser; script, style, nav, footer, header dışlanır; metin parçaları boşlukla birleştirilir.",
+      "processed_at": null,
+      "closure_refs": [],
+      "next_leads": [
+        "Belirtilen gerçek metin bölümünü oku; sürüm tarihi ve ilgili uygulamayı ayrıca araştır."
+      ]
+    }
   ]
 }
