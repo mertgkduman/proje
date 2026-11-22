@@ -7,3 +7,9 @@ Kapak, toplantının 4 Aralık 2024 olduğunu ve Emniyet Genel Müdürlüğünde
 13. sayfada Adalet Kaya sunumun kendilerine verilip verilemeyeceğini soruyor. Bu, tutanakta o anki bireysel talebin varlığını gösterir; partinin öneriyi, sunumdaki sınıflamayı ya da bakanın yanıtını benimsediği anlamına gelmez.
 
 224 sıra sayılı rapor PDF 180'de aynı görevliye 4 Aralık sunumu atfedilirken verilen `4073` bağlantısı 8 Ocak 2025 toplantısına gider. 4066 hem tarihe hem sunumu yapan kişiye hem de iki yüzdeye uyan birincil tutanaktır; raporun bütün sayısal kategorileri ve hangi sunum slaydından aktarıldığı ayrıca doğrulanmadı. Metin katmanı, rapor dipnotundaki bağlantı hatasının olası düzeltmesini destekler, fakat özgün slayt dosyası henüz elde edilmemiştir.
+
+## Ek seçili diyalog, PDF 14–15 ve 18–19
+
+Kaya ayrıca şiddetin yalnız asayiş meselesi olmadığını, bakanlıkların kadın-erkek eşitliğini yeterince güçlü ifade etmediğini ileri sürüyor (14); koordineli sosyal, ekonomik ve psikolojik destek ihtiyacını ve daha yaygın KADES kullanımını dile getiriyor (15). Bakanın ve polis yetkilisinin yanıtları aynı tutanakta ayrı kaydedilmiştir; milletvekilinin eleştirisi kurumların bütün dönem uygulamalarının bağımsız denetimi değildir.
+
+18–19'da Kaya cinsel şiddet kriz merkezleri ve kadın personelle ilgili önerilerini açıklıyor; görevli var olan Çocuk İzlem Merkezleri, adli görüşme odaları ve personel uygulamalarını kendi açısından aktarıyor. Kayıhan Pala hekim cinsiyetine ilişkin zorunlu yaklaşım hakkında Kaya ile farklı görüş bildiriyor; Kaya kendi gerekçesini yineliyor. Buradaki öneri veya tarafların iddiaları uygulamanın gerçekleştiğini ve tüm merkezlerin durumunu kanıtlamaz. Bu karşılıklı görüşler ayrı atıflar olarak korunacaktır; şimdilik adaydır, canlı pakete eklenmedi. Aradaki 16–17. sayfaların tamamı bu ikinci seçili okumaya dahil değildir.
