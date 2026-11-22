@@ -209,3 +209,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 225–229 okundu: yapı kayıt belgeleri, riskli alan ve rezerv alan ilanına dair rapor dönemindeki süreçler ve şemalar açıklanıyor. Mevzuat anlatımı güncel hukuk, uygulama sonucu veya TİP faaliyeti kabul edilmedi; indeks 230 ve sonrası açık.
 
 - 2021 raporu indeks 230–234 okundu: 5393 ve 5366 kapsamındaki alan bazlı dönüşüm ve Diyarbakır, İzmir, Muş örnekleri bakanlık bilgileriyle aktarılıyor. Örnekler TİP’e atfedilmedi, raporun dönemsel iddiaları güncel durum sayılmadı; indeks 235 ve sonrası açık.
+
+- 2021 raporu indeks 235–239 okundu: yenileme alanı usulleri, Afyon/Ankara/Konya örnekleri ve 2012–2020 dönüşüm istatistikleri bakanlık kaynaklarına dayanır. Dönemsel sayılar, doğrulanmamış güncel durum veya TİP eylemi sayılmadı; indeks 240 ve sonrası açık.
