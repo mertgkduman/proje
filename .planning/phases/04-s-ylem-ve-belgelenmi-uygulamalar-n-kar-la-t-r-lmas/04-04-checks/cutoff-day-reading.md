@@ -1,0 +1,8 @@
+# 10 Kasım araştırma kesiminde olay ve belge zamanı
+
+Araştırma kesimi 10 Kasım 2026 saat 14.38.46 UTC, Türkiye saatiyle 17.38.46. Parti API’sinin `created_at` alanı kayıt oluşturma zamanıdır. Ayrı bir kamuya yayın saati bu kaynakta gösterilmedi.
+
+- **Anıtkabir.** Parti kaydı 296, 10.29.47 UTC’de oluşturulmuş. Anadolu Ajansı törenin 08.45’te başladığını ve Özgür Özel’in devlet töreni kortejinde yer aldığını bildiriyor. Numan Kurtulmuş’un iletişim sitesi aynı katılımı kaydediyor. Tören ve parti kaydı kesimden önce. Karşılaştırma için tören katılımının kapsamı korunur. [Anadolu Ajansı](https://aa.com.tr/tr/gundem/buyuk-onder-ataturk-icin-anitkabirde-devlet-toreni-duzenlendi/4118137) · [Katılımcı kaydı](https://www.numankurtulmus.com/haberler/tbmm-baskani-numan-kurtulmus-anitkabirde-duzenlenen-devlet-torenine-katildi-9758) · [Parti kaydı](https://api.yeni-parti.org.tr/api/haberler/296)
+- **Genel Kurul.** Parti kaydı 297, 17.45.22 UTC’de oluşturulmuş. TBMM ham tutanağında Günaydın’ın 26 numaralı konuşması Türkiye saatiyle 15.00–16.41 arasındaki birinci oturumda. Konuşma kesimden önce, parti kaydının oluşturulması kesimden sonra. Kesin konuşma dakikası tutanakta bulunmuyor. Faiz ve kamu varlıkları hakkındaki sayılar konuşmacının beyanı olarak kalır. [TBMM ham tutanağı](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/5/15/Ham/c9cd3264-dc94-4fe4-977f-ad36f649bf95.html) · [Parti kaydı](https://api.yeni-parti.org.tr/api/haberler/297)
+
+Beş kaynağın özgün baytları ve 11 ilgili pasaj bayt özetleriyle saklandı. Tutanak HTML görünümü özgün belgedeki Windows-1254 bildirimiyle çözüldü. Konu ve olay karşılaştırmaları taslak aşamasında açık.
