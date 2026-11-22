@@ -5,3 +5,5 @@ JINHAGENCY’nin 25 Haziran 2023 saat 13.23’te yayımladığı haber, 5. Olağ
 Dönemin eş genel başkan vekilleri Zekiye İlbasan ve Faruk Tatlı’nın kongredeki konuşmaları Haber Erciş’e atıflı. Tatlı’nın tecrit hakkındaki açıklamasının kapsamı kaynak kaydında saklandı. Konuşma, 15 Şubat 2024 tarihli 10/1056 önergesinden ve 12 Kasım 2023 tarihli 6. Olağanüstü Kongredeki Çiğdem Kılıçgün Uçar ve Keskin Bayındır seçiminden ayrı. Haziran kongresinde yürürlükteki tüzüğün seçim maddesi ve tam dönem nüshası açık.
 
 BirGün’ün 25 Haziran haberi tarayıcıda okundu. Özgün bayt alımı HTTP 403 döndüğünden çalışma çiftine sürüm veya pasaj eklenmedi. İki diğer haber HTTP 200 ile alındı ve özgün baytlar pasif görünümleriyle saklandı. [BirGün](https://www.birgun.net/haber/dbp-de-olaganustu-kongre-baskanlar-degismedi-448128)
+
+İlk adayda künyenin tarih satırı olay aşaması olarak önerildi ve ön kontrol tarafından reddedildi. Tarih satırı kaynak incelemesinde, olay kanıtı gerçekleşme ve sonuç pasajlarında tutuldu. Olay günü verilmediğinden Haziran 2023 bağlamda saklandı. Belge yayım tarihleri gün kesinliğinde ayrı ayrı kayıtlı.
