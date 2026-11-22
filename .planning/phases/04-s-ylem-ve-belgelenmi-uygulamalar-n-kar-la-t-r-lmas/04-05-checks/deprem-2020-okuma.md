@@ -203,3 +203,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 210–214 okundu: karayolu, demiryolu, havalimanı ve elektrik dağıtımına dair risk azaltma çalışmaları kurum temsilcilerinin rapordaki beyanlarına dayanır. Beyanlar bağımsızca doğrulanmadı, TİP kaynaklı sayılmadı; indeks 215 ve sonrası açık.
 
 - 2021 raporu indeks 215–219 okundu: enerji tesisleri, tarihî miras ve 2012’den itibaren kentsel dönüşüm mevzuatı ilgili kurumların ve önceki komisyonun anlatımıyla açıklanıyor. Siyasi değerlendirmeler rapora atfedilir; geçmiş kurum çalışması TİP’e atfedilmez. İndeks 220 ve sonrası açık.
+
+- 2021 raporu indeks 220–224 okundu: riskli yapı tespiti, itiraz, yıkım veya güçlendirme süreçleri rapor dönemindeki mevzuatın anlatımı olarak sunuluyor. Bu açıklama güncel hukuki tavsiye, fiilî sonucu kanıtlayan veri veya TİP faaliyeti değildir; indeks 225 ve sonrası açık.
