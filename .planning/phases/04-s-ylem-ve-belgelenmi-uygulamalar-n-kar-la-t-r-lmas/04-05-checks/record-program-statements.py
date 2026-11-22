@@ -20,7 +20,10 @@ topics={
  'cocuk-haklari':(['0304-tip-program-cocuk-p1','0304-tip-program-cocuk-p2'],'Program 18 yaş altını çocuk sayar ve çocukların çeşitli hakları ile şiddet ve sömürüden korunması için mücadeleyi anlatır.'),
  'temiz-enerji-gecisi':(['0304-tip-program-enerji-p1'],'Program temiz ve yenilenebilir enerji kaynaklarının planlı kullanımını destekler; belirli kapanış tarihi veya gerçekleşme oranı vermez.'),
  'orman-su-yonetimi':(['0304-tip-program-su-p1'],'Program temiz su ve gıdaya erişimi temel hak sayar; bu pasaj ayrı bir orman veya su idaresi modeli tanımlamaz.'),
- 'yargi-bagimsizligi':(['0304-tip-program-adalet-p1'],'Program bağımsız ve tarafsız yargı, savunmanın bağımsızlığı ve adalete erişimde ekonomik engellerin kaldırılmasını savunur.')}
+ 'yargi-bagimsizligi':(['0304-tip-program-adalet-p1'],'Program bağımsız ve tarafsız yargı, savunmanın bağımsızlığı ve adalete erişimde ekonomik engellerin kaldırılmasını savunur.'),
+ 'kultur-sanat':(['0304-tip-program-sanat-p1'],'Program kültür ve sanatta sansür ve baskıya karşı çıkar, herkesin etkinliklere katılımı için önlem savunur.'),
+ 'cinsel-yonelim':(['0304-tip-program-lgbti-p1'],'Program LGBTİ+ yurttaşlara ayrımcı uygulamalara karşı mücadeleyi ve örgütlenme ve yaşam haklarını koruma mücadelelerinin güçlendirilmesini belirtir; ayrı yasa veya başvuru kurumu bu pasajda tanımlanmaz.'),
+ 'engellilik':(['0304-tip-program-engelli-p1'],'Program engelli yurttaşların toplumsal, ekonomik ve sağlıkla ilgili taleplerinin yok sayılmasına karşı mücadele eder; ayrı hizmet mekanizması bu pasajda tanımlanmaz.')}
 passages={x['values']['id']:x['values']['exact'] for x in comparison if x['kind']=='passage'}
 for ids,_ in topics.values():
  for ident in ids: assert passages[ident] in source,ident
@@ -31,5 +34,5 @@ for row in data['tranches']:
  ids,note=topics[row['topic_id']]
  row['research_progress']=dict(recorded_at=datetime.now(timezone.utc).isoformat(),note=note+' Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.',source_ids=['0203-tip-program-v1'],urls=['https://tip.org.tr/parti-programi'],source_passage_ids=ids,status='partial')
  count+=1
-assert count==14
+assert count==17
 path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print('PARTIAL_STATEMENT_LINKS',count)
