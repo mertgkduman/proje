@@ -16,6 +16,8 @@ def passage(doc,suffix,exact,section):
 t='0405-tip-20231017-tezkere-tutanak';v='0405-tip-20231017-tezkere-oy';caps={x:json.loads((p/(x+'-v1-capture.json')).read_text())['sha256'] for x in (t,v)}
 traw=source(t,'TBMM 17 Ekim 2023 8. birleşim tam tutanağı');oraw=source(v,'TBMM 3/761 kesin açık oylama cetveli')
 passage(t,'authority','Türkiye İşçi Partisi adına Sayın Sera Kadıgil','Kadıgil’e parti adına söz verilmesi')
+full_tutanak=html_source_text(traw);start=full_tutanak.index('Türkiye İşçi Partisi adına Sayın Sera Kadıgil');end=full_tutanak.index('Saliha Sera Kadıgil',start)+len('Saliha Sera Kadıgil')
+passage(t,'authority-full',full_tutanak[start:end],'Parti adına söz ile tam adın aynı oturum bağlamı')
 passage(t,'statement','Başka ülkelerin topraklarında askerî operasyon yürütülmesine “hayır” diyoruz.','Oylama öncesi Kadıgil açıklaması')
 passage(t,'ballot','Oylama işlemini başlatıyorum.','Konuşmadan sonraki oylama sırası')
 full=oraw.decode('windows-1254');row=next(r for r in re.findall(r'<tr\b.*?</tr>',full,re.I|re.S) if 'Saliha Sera' in r and 'KADIGİL' in r)
