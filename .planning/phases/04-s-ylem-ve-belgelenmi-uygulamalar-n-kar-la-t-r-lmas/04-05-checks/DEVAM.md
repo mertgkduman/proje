@@ -75,3 +75,5 @@ cd8edd2, 5b547bf ve ef1ddb6: tüzük indeks 26–28 disiplin listesi, cezalar, a
 7c64a68f: 17 Mart 2021 son komisyon toplantısı PDF tüm 41 sayfası okundu; atıflar ilgili kişiler/gruplarda, fiili uygulama iddiası yok. 10 ve 16 Mart toplantılarının yalnız kapakları, diğer rapor ve tutanaklar kısmen okunmuştur. Güncel 610 pending, 138 kısmi, 0 closure.
 
 e2ebfd63: 10 Mart 2021 komisyon toplantısının tüm 33 sayfası okundu; 17 Mart 41 sayfa da tam. 16 Mart 68 sayfa kapak düzeyinde; diğer kaynaklar ve tüm kapsam kapanışları açık.
+
+136a758e: 16 Mart 2021 komisyon toplantısı 68 sayfanın tamamı okundu. Böylece 10, 16 ve 17 Mart toplantıları tam; 9 Aralık, 23 Aralık ve 18 Şubat oturumları ve komisyon raporunun çoğu henüz kısmen incelenmiştir.
