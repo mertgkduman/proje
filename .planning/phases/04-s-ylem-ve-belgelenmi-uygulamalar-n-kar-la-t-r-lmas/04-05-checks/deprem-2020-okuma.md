@@ -347,3 +347,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - Aynı görüşmenin normalize metninde 297000–306500 okundu: Bedri Yaşar yapı denetimi, dönüşüm maliyeti, sigorta, konut finansmanı ve afet yönetimi hakkındaki değerlendirme ve önerilerini sürdürür. Bunlar kendisine atfedilen dönemsel görüşlerdir, TİP pozisyonu veya bağımsız doğrulanmış olgu sayılmadı. Konum 306500 sonrası açık.
 
 - Aynı görüşmenin normalize metninde 306500–316000 okundu: Yaşar konuşmasını bitirir, ara sonrası MHP adına Cemal Çetin söz alır. Komisyonun sunumları ile deprem riski üzerine konuşmacıların açıklamaları ilgili kişilere aittir; iddia edilen uygulama sonucu TİP'e bağlanmadı. Konum 316000 sonrası açık.
+
+- Aynı görüşmenin normalize metninde 316000–325500 okundu: Cemal Çetin'in MHP adına deprem verisi, jeolojik planlama, afet eşgüdümü ve altyapı hakkındaki öneri ve siyasi değerlendirmeleri devam eder. Bunlar ilgili konuşmacıya atfedilir; TİP'e veya bağımsızca doğrulanmış sonuca çevrilmedi. Konum 325500 sonrası açık.
