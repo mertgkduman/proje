@@ -81,3 +81,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 93–97 de okundu: Jandarma yetkilileri eğitim, tahliye, afetlerde koordinasyon ve İstanbul planına ilişkin üye sorularını yanıtlar. Tartışılan teknik görüşler ve yetkili anlatımları kendi aktörlerine aittir; TİP’e veya doğrulanmış uygulamaya atfedilmez. İndeks 98–154 açık.
 
 9 Aralık toplantısı PDF indeks 98–102 de okundu: Jandarma soru-cevap bölümü tamamlanır ve Nüfus ve Vatandaşlık İşleri Adres Daire Başkanı Levent Yazıcı’nın adres kayıt sistemi sunumu başlar. Görüşler ilgili katılımcılara atfedilir; TİP uygulaması veya bağımsız sonuca dönüştürülmez. İndeks 103–154 açık.
+
+9 Aralık toplantısı PDF indeks 103–107 de okundu: adres dairesi yetkilisi mekânsal kayıt sistemi, afet örnekleri ve farklı kurumlardaki kullanım olanaklarını anlatır. Örnek rakamlardan biri sunumda hayal ürünü olarak açıkça düzeltilmiştir; hiçbir örnek bağımsız doğrulanmış ölçüm veya TİP eylemi sayılmaz. İndeks 108–154 açık.
