@@ -249,3 +249,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 325–329 metin katmanı okundu: DASK dönemsel sigortalılık/tazminat verileri ve dönüşüm özel hesabı, kira/faiz desteği ve gelirler bakanlık kaynaklarına dayanır. Cari tutarlar güncel veya parti kaynaklı olarak sunulmadı; indeks 330 ve sonrası açık.
 
 - 2021 raporu indeks 330–334 metin katmanı okundu: dönüşüm özel hesap giderleri, İLBANK, yerel ve uluslararası finansman düzenlemeleri dönemsel kurum kaynaklarıyla inceleniyor. Raporun düşük faiz desteği payından yaptığı tercih çıkarımı ayrıca bağımsız doğrulanmadı; bu bölüm TİP faaliyeti sayılmadı. İndeks 335 ve sonrası açık.
+
+- 2021 raporu indeks 335–339 metin katmanı okundu: komisyonun deprem veri, gözlem, erken uyarı ve büyük veri altyapısına ilişkin değerlendirme/öncelikleri başlıyor. Bunlar komisyonun yazılı değerlendirmeleridir, uygulanmış karar veya TİP önerisi sayılmadı; indeks 340 ve sonrası açık.
