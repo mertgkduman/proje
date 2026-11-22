@@ -154,6 +154,76 @@
       }
     },
     {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0314-v4-dem-s",
+        "passage_id": "0314-dem-cochair-selection-rounds-full-p",
+        "checked_at": "2026-11-22T02:54:19.818549+00:00",
+        "result": "confirmed",
+        "reason": "Faz 3 pasajı, kayıtlı özgün metin ve kapsam yeniden karşılaştırıldı; yürürlük ve belge kökeni belirsizliği korunur."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0314-v4-dem-q",
+        "passage_id": "0314-dem-cochair-selection-rounds-full-p",
+        "checked_at": "2026-11-22T02:54:19.818549+00:00",
+        "result": "confirmed",
+        "reason": "Faz 3 pasajı, kayıtlı özgün metin ve kapsam yeniden karşılaştırıldı; yürürlük ve belge kökeni belirsizliği korunur."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "03-v2-dem-temel-yurttaslik-geliri-summary",
+        "passage_id": "03-dem-gelir",
+        "checked_at": "2026-11-22T02:54:19.818549+00:00",
+        "result": "confirmed",
+        "reason": "Faz 3 pasajı, kayıtlı özgün metin ve kapsam yeniden karşılaştırıldı; yürürlük ve belge kökeni belirsizliği korunur."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "03-v2-dem-temel-yurttaslik-geliri-quote",
+        "passage_id": "03-dem-gelir",
+        "checked_at": "2026-11-22T02:54:19.818549+00:00",
+        "result": "confirmed",
+        "reason": "Faz 3 pasajı, kayıtlı özgün metin ve kapsam yeniden karşılaştırıldı; yürürlük ve belge kökeni belirsizliği korunur."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0314-v4-dem-s",
+        "passage_id": "0305-dem-baskan-secim-also-organ-secim-yontemi-dem-passage",
+        "checked_at": "2026-11-22T02:54:19.818549+00:00",
+        "result": "confirmed",
+        "reason": "Aynı tüzükteki kısa eş genel başkan seçim pasajı tam maddeyle karşılaştırıldı; tarihsel yürürlük belirlenmedi."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0314-v4-dem-s",
+        "passage_id": "0305-dem-baskan-secim-dem-passage",
+        "checked_at": "2026-11-22T02:54:19.818549+00:00",
+        "result": "confirmed",
+        "reason": "Aynı tüzükteki kısa eş genel başkan seçim pasajı tam maddeyle karşılaştırıldı; tarihsel yürürlük belirlenmedi."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0314-v4-dem-s",
+        "passage_id": "0305-dem-baskan-secim-to-es-genel-baskan-dem-passage",
+        "checked_at": "2026-11-22T02:54:19.818549+00:00",
+        "result": "confirmed",
+        "reason": "Aynı tüzükteki kısa eş genel başkan seçim pasajı tam maddeyle karşılaştırıldı; tarihsel yürürlük belirlenmedi."
+      }
+    },
+    {
       "kind": "finding",
       "values": {
         "id": "0406-congress-result",
@@ -379,7 +449,7 @@
   "practice_records": {
     "practice_contract": [
       {
-        "inventory_digest": "3430f1b8b55554cfc2c48a8e1765baa13ba0a8328dc9bcc20a83e7653414a17f",
+        "inventory_digest": "c4c6fe5e2db2d38534e620445ac88727019a399086395756f5f0097170bc9ffd",
         "method_version": 1,
         "stage": "tracer",
         "taxonomy_version": 4,
@@ -559,18 +629,11 @@
   },
   "scope_inventory": [
     {
-      "party_id": "dem",
+      "party_id": "yeni-parti",
       "topic_id": "organ-secim-yontemi",
-      "event_id": "0406-2023-congress",
+      "event_id": "tracer-cesme",
       "stage": "tracer",
-      "boundary": "2023 kongresi; tüzüğün olay tarihindeki yürürlüğü belirsiz."
-    },
-    {
-      "party_id": "dem",
-      "topic_id": "temel-yurttaslik-geliri",
-      "event_id": "0406-2159",
-      "stage": "tracer",
-      "boundary": "2/2159 teklif girişimi; tamamlanmış kapsam değildir."
+      "boundary": "Yalnız Çeşme ön seçim kaydı; parti veya konu araştırması tamamlanmış değildir."
     }
   ],
   "tranches": [],

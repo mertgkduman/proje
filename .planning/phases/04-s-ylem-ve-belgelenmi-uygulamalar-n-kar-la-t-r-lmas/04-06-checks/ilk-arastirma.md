@@ -15,6 +15,8 @@ Kongre kararlarının kadın bölümünde 8–9 Eylül 2023 konferansından geç
 
 Sonraki erişim denemesi: curl ile 2/2159 TBMM PDF ve TBMM dinamik kayıt HTML'si HTTP 200 alındı, özgün ve okunabilir baytları kaydedildi. PDF SHA256 `e2edc662ad1666a8c5a3aa49564c0ee94e5458b3873d8b7dffdde1c46b439cd5`; HTML SHA256 `9e34b485c93de206115e20d55740cc5f559719f3a4156d8308eebff138ed02cc`. Sayfa 0 ve 7 üretim PDF çıkarıcısıyla incelendi. BİA HTML kaynağı için pasif yerel görünüm oluşturulup `validate_view` ile doğrulandı. `prepare-tracer.py` iki dar olay/ilişki taslağı hazırlar; küresel veri kökünde doğrudan `practice-check` kaynak görünümü partiye özel kökte olduğu için başarısız oldu. Gerçek kaynak köklerini izole veri alanına taşıyan doğrulama, source review ve preview henüz yapılmadı; taslak asıl paket değildir.
 
+İzole veri kökünde sonraki input denemesi, aktör girdi türü düzeltmesinden sonra `Sonuç ayrı sonuç aşaması kanıtı gerektirir` hatasına ulaştı. 2/2159 girişimi taslak ilişkide yanlışlıkla sonuç bulgusu alanına verilmiştir; gerçek sonuç kanıtı olmadan alan null olmalıdır. Devam ajanı taslağı düzeltip input, gerçek kaynak incelemesi ve preview kapılarını çalıştırmalıdır; mevcut çalışma teknik veya araştırma tamamlanması değildir.
+
 ## Devam
 
 `data/practices/04-dem-tranches.json`: 610 kapsam hücresi ve 177 envanter kaynak bölümü beklemede. Yakalanan her özgün belge ve pasif türev `data/practices/sources/dem/objects/` altında; erişim zamanı ve URL `capture.json` içinde. Kaynakların yaklaşık 48.000 karakterlik bölümleri, referans verdiği uçlar ve bütün hücreler gerçek incelemeye alınmalı. Henüz paket, agent source review, uygulama olayı, kapsam kapanışı veya preview doğrulaması yoktur. Eksik işi tamamlanmış gibi işaretlemeyin.
