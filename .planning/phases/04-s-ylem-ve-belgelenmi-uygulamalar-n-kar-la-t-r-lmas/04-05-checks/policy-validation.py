@@ -129,7 +129,7 @@ def main(package_path, review_path, scope='tip-policy', event_id='0405-tip-28212
             require(f'id="{prefix}-practice-{relation_id}"' in report, f'{prefix} relation missing')
         require(canonical_identity()==baseline, 'canonical archive changed')
         require((sha(package_path),sha(review_path),sha(INVENTORY))==(ps,rs,inv), 'draft or inventory changed')
-        artifact = Path('/tmp') / f'gsd-0405-{receipt_name}'
+        artifact = DATA / '.staging' / f'gsd-0405-{receipt_name}'
         shutil.copytree(out, artifact)
         result = {'job':job,'scope':scope,'event':event_id,'relation':relation_id,'absent_dispute':absent_dispute,'package_sha256':ps,'review_sha256':rs,
                   'inventory_sha256':inv,'canonical':baseline,'preview':str(artifact/'releases'/rel.name),
