@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 8 | 8 | 62410574 |
 | İYİ Parti | 4 | 4 | 62409236 |
 | Yeni Yol | 5 | 2 | 62409235 |
-| DBP | 4 | 2 | 62409588 |
+| DBP | 5 | 3 | 62412200 |
 | EMEP | 11 | 11 | 62407300 |
 | Saadet Partisi | 4 | 3 | 62411840 |
 | Demokrat Parti | 5 | 6 | 62408181 |
