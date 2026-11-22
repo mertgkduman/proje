@@ -325,3 +325,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 515–519 metin katmanı okundu: değişik illerde belediyelerin 2019–2020 dönüşüm stratejisi ve yazışmalarının ek tablosu devam ediyor. Her satır dönemsel belediye bildirimidir; güncel ya da TİP'e ait uygulama göstermez. İndeks 520–523 ve görseller açık.
 
 - 2021 raporu indeks 520–523 metin katmanı okundu: dönemsel belediye bildirimleri ve İstanbul ilçe strateji belgeleri tablosu, Bakanlığın 16 Şubat 2021 tarihli cevabi yazısına atıfla sonlanıyor. Böylece PDF indeks 44–523 metin katmanı okunmuştur; 1–43 arasının tamamı ve görseller, özellikle 465–466 imza görüntüleri okunmuş sayılmamıştır. Diğer kaynakların tam okunması ve kapsam hücresi kapanışı hâlâ açıktır.
+
+- 2021 raporu indeks 0–9 metin katmanı ayrıca okundu: kapak ve içindekilerle tablo dizini, dönem ve bölüm sınırlarını gösterir. İndeks 10–43 ve görseller ayrıca okunmalıdır.
