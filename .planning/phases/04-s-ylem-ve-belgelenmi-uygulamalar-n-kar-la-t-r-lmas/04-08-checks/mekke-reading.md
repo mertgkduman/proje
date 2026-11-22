@@ -9,3 +9,5 @@ TBMM teklifi 277 kabul ve 118 ret oyuyla kabul etti. Cetvel üç mükerrer oyu a
 Ham birleşim tutanağının ilgili madde ve konuşma satırları TBMM PDF’sinin tarayıcı kopyasında okundu. Düğümden PDF ve HTML alımı HTTP 404 döndü. Çalışma çiftine erişilen TBMM konuşma nüshaları ve özgün açık oy cetveli alındı. Ortak cetvel ve teklif farklı parti dosyalarında aynı baytlarla saklanır. [Ham tutanak](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/5/14/Ham/b9ac02f0-8eaa-42a9-aeb0-1e90e7779c6a.pdf)
 
 Ön kontrolde grup konuşmasının aynı zamanda oluş kanıtı yapılması ve erişim girişiminin yanlış durum koduyla kaydı reddedildi. Konuşma söylem ile temsil yetkisini, ayrı cetvel ve yasama belgeleri olay ve oylama sonucunu destekliyor. Ham tutanak alım başarısızlığı açık kaynak ucu olarak kayıtlı.
+
+62414962 girdi denetimi, Windows-1254 cetvelindeki «Mükerrer Oylar» etiketini doğrulayıcının metin çözümünde bulamadı. Yirmi bireysel oy satırının eşleştiği ayrıca kontrol edildi. Mükerrer oy pasajı iki çözümde birebir bulunan etiket sonuna ve üç oy hücresine bağlandı. Özgün cetvel ve pasif görünüm ile inceleme çifti korundu.

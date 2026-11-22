@@ -53,6 +53,9 @@ def archive(key,title,day,publisher,meta,raw,passages,charset=None,published=Non
                     if all(value in m.group(1) for value in marker)]
            assert len(choices)==1,(key,name,len(choices))
            exact=choices[0]
+           if charset and name=='duplicate':
+               exact=exact[exact.index('kerrer Oylar'):]
+               assert exact in html_source_text(raw)
        else:
            assert marker in s,(key,name,marker)
            exact=marker
