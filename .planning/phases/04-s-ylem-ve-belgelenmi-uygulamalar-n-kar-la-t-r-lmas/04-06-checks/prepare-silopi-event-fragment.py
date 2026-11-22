@@ -18,9 +18,7 @@ def finding(ident,text,ps):
  for q in ps:
   add('finding_evidence',finding_id=ident,passage_id=q,role='support');add('verification',finding_id=ident,passage_id=q,checked_at=now,result='confirmed',reason='Haber veya parti açıklaması, kaynak ve süreç evresiyle birlikte okundu.')
  add('review',id='review-'+ident,kind='finding',subject_id=ident,reviewer_kind='agent',reviewed_at=now,result='reviewed',reason='Parti bildirimi, haber aktarımı ve kişisel yanıt tarihlerine göre ayrı tutuldu.')
-finding('0406-silopi-referral-f','DHA, Jiyan Ormanlı’nın 2 Temmuz’da kesin ihraç istemiyle Merkez Disiplin Kuruluna sevk edildiğini bildirdi.',[init])
 finding('0406-silopi-announcement-f','DHA, DEM Yerel Yönetimler Kurulunun Ormanlı’nın partiden ihracını duyurduğunu aktardı.',[result])
-finding('0406-silopi-response-f','Ormanlı, sevkten sonraki 3 Temmuz açıklamasında görevde olduğunu ve sonra bilgilendirme yapacağını söyledi.',[reply])
 targets={x:'0305-dem-disiplin-yaptirim-'+x+'-passage' for x in ('dem','hedep')}
 for short,q in targets.items():
  finding('0406-silopi-'+short+'-link-f',short.upper()+' kısa adlı tüzükte kesin çıkarma yaptırımı yer alır; parti bildiriminde Ormanlı hakkında ihraç bildirildi. Bu, nüshanın olay tarihinde yürürlükte olduğunu veya usulün doğrulandığını göstermez.',[q,result])
