@@ -2533,5 +2533,17 @@
     ],
     "status": "open",
     "limitation": "Dört hedefli sorgu açık web diziniyle sınırlı; bilinmeyen veya dizinlenmeyen kaynaklar hakkında genel yokluk sonucu verilmez."
+  },
+  "program_scope_check": {
+    "checked_at": "2026-11-22T03:57:10.579684+00:00",
+    "version_id": "epm-program-v1",
+    "sha256": "58fa220ab814bd82a4c8d0d233bf55ab268eb9f856750cd88abc544e17ceba1b",
+    "method": "Özgün HTML SHA doğrulandı; bağışla, disiplin ve af yetkisi dizeleri büyük/küçük harf duyarsız tarandı.",
+    "literal_occurrences": {
+      "bağışla": 0,
+      "disiplin": 0,
+      "af yetkisi": 0
+    },
+    "limitation": "Bu yalnız taranan kurucu program baytları ve tam dizeler için mekanik sonuçtur, diğer kaynaklarda veya farklı ifadelerde hüküm bulunmadığına dair sonuç değildir."
   }
 }
