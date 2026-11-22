@@ -7,3 +7,5 @@ Bülent Kaya’nın grup önerisi, araştırma önergesinin ön görüşmesini a
 Ceylan Akça Cupolo, DEM grubu adına destek vereceklerini açıkladı. Tutanak bu açıklamayı gösteriyor. İsimli oy listesi açık. Sonraki DEM grubunun 10/3464 engelli hakları oturum teklifinin oylaması yoklamada yeter sayı bulunamadığı için yapılamadı. İki grup önerisi farklı. [24. Birleşim tutanağı](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html)
 
 25 Mart 2025 konuşmasında Özdağ basın ve ifade özgürlüğünü gündeme getirdi. Kamu reklamının dağıtım ölçütleri için aynı kapsamdaki önceki kurumsal tutum araştırması açık. Daha geç açıklamalar ve başka partilerin ayrı esas numaralı girişimleri araştırma ucu olarak kalıyor. [25 Mart konuşması](https://tbmm.gov.tr/milletvekili/UyeGenelKurulKonusmalariDetay?eid=133679)
+
+İlk önizleme giriş denetiminde metin katmanındaki esas numarası yüzünden ilk sayfanın ayrı görsel pasajı kabul edilmedi. İkinci girdi araştırma talebini metin katmanı bulunmayan ikinci sayfaya, eşitlik ve hakkaniyet ölçütlerini tam tutanaktaki grup önerisine bağladı. PDF baytları korundu.

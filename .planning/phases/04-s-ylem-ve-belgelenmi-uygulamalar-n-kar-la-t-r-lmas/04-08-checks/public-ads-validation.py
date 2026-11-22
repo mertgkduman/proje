@@ -14,8 +14,8 @@ harness.HERE = here
 harness.SOURCE = harness.DATA/'practices'/'sources'/'yeni-yol'
 package = here/'public-ads-draft.json'
 review = here/'public-ads-review-draft.json'
-assert harness.sha(package) == '5eca5316301b74987871f3041c305366bef4aa407742b80584414b69cb492eb7'
-assert harness.sha(review) == '107af8384e4721ee39e88a1ecb23055e484d9b39e09bed62e322e9900c12ccca'
+assert harness.sha(package) == 'd4c47c56e74a6539d80e7d478249e3dbe1f61e322f3c4f7d3221d1e4d6e82fad'
+assert harness.sha(review) == '4d6d7da1f362fb34f51a3c5936c23b96e0205c637cb9b367beb895c18f7509ea'
 stem = '0408-public-ads-3465'
 draft = json.loads(package.read_text())['practice_records']
 relation, = (r['id'] for r in draft['practice_relation'])
