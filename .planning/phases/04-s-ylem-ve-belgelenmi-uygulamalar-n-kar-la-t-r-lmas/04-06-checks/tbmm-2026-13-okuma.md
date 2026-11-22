@@ -1,0 +1,5 @@
+# 4 Kasım 2026 Genel Kurul: DEM grup konuşması
+
+TBMM 28. dönem 5. yasama yılı 13. birleşim ham HTML tutanağı `e1bac8f1e70a9426504b71c500cb0d980f11992a29afab91adb58f77cae362fc` SHA256 ile saklandı; kaynak Windows-1254 kodludur. Grup adına Ceylan Akça Cupolo’nun metni ve kesintili devamı okundu. Konuşmacı, Mekke Anlaşması’nın Türkiye’yi daha çok çatışmaya çekebileceğini savunarak anlaşmaya karşı olduklarını ve barış anlaşmalarını desteklediklerini söyledi; 27 Ekim komisyonundaki usul ve Millî Savunma Komisyonu tartışmasına değindi. Fuat Oktay söz konusu değerlendirmeye itiraz etti; devamında karşılıklı sözler tutanakta yer alır. Diğer milletvekillerinin görüşleri de aynı birleşimdedir.
+
+Bu 4 Kasım konuşmasıdır; 27 Ekim komisyonu ve 5 Kasım ayrı grup konuşması/oylaması değildir. Anılan tarih, çatışma ve strateji iddiaları konuşmacıya atfedilir, bağımsız tespit olarak alınmaz. Ham tutanak uzman incelemesinden geçmemiştir; konuşmacının ilgili konuşması okunmuş, birleşimin tamamı okunmuş sayılmamıştır.
