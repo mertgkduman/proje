@@ -189,3 +189,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 175–179 okundu: risk planlaması projeleri, mekânsal strateji planı hedefleri ve 1975–1998 yapı yönetmeliği tartışması bulunuyor. Rapor dönemi hedefleri ile gerçekleşmeler ayrıdır; partiye nedensel atıf yapılmadı. İndeks 180 ve sonrası açık.
 
 - 2021 raporu indeks 180–184 okundu: yapı yönetmeliklerinin gelişimi ve 2021’de TÜİK ile MAKS kaynaklarıyla aktarılan yapı stoku farkları yer alır; rapor iki kaynağın kapsam farkını da açıklar. İstatistikler güncel sayı veya TİP eylemi olarak sunulmadı; indeks 185 ve sonrası açık.
+
+- 2021 raporu indeks 185–189 okundu: bina riski, kurumların dönüşüm sayı ve iddiaları, kamu envanteri ve 2021’de planlanan Bina Kimlik Sistemi aktarılıyor. Kurum beyanları ve hedefleri doğrulanmış güncel sonuç veya TİP faaliyeti sayılmadı; indeks 190 ve sonrası açık.
