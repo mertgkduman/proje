@@ -1,0 +1,29 @@
+{
+  "job": "62403682",
+  "status": "COMPLETED 0:0",
+  "renderer": 29,
+  "package_sha256": "9f6f0782993939d01715250074896644e0ad8c24e700c56ca6b758fcdd2736a2",
+  "review_sha256": "62234ba5f5344dac3f102d07e37289687772ad9fd33163e906d20802258159a8",
+  "preview_release": "data/.staging/gsd-0410-followup-62403682/preview/releases/566a3e676f2d4580bda7310ceade23c9",
+  "files_sha256": {
+    "manifest.json": "1806c2718d3610b17ce03cb0c9c619904efb0d89793e69f05a792b1e30f11860",
+    "records.json": "757fca18a0dae0bdf787454b930dc372bf147b42191b7053adfed58ffa2ea327",
+    "records.sqlite3": "5643db4098a308056542d06c0ebdf9f5620bedfd873155e2f7906107e250b296",
+    "index.html": "009baf8ce9ceb653bb2f0c6eb5c565256b9721e656e54b156565ffba64222b5a"
+  },
+  "bidirectional_relation_hrefs": [
+    "0410-2023-kongre-relation",
+    "0410-2020-ninth-relation",
+    "0410-2023-extra-relation"
+  ],
+  "markers": [
+    "PRACTICE_INPUT_OK",
+    "PRACTICE_SOURCE_REVIEW_OK",
+    "PRACTICE_PREVIEW_OK",
+    "EMEP_PREVIEW_DB_JSON_BOTH_VIEWS_AND_INDEPENDENT_AUDIT_OK"
+  ],
+  "canonical_current_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "previous_records_and_reviews": "exact subset of new",
+  "scope_closures": 0,
+  "recorded_at": "2026-11-22T07:36:28+00:00"
+}

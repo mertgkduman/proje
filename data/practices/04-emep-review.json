@@ -2,6 +2,32 @@
   "practice_source_review": [
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-2020-ninth-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2020-indy-v1\", \"0410-ipa-2020-congress-date-v1\"]",
+      "passage_ids": "[\"0410-emep-2020-indy-full-p\", \"0410-ipa-2020-congress-date-p\"]",
+      "inspected_sections": "[\"9. kongre genel başkan seçimi\", \"Ercüment Akdeniz biyografisi\"]",
+      "supported_claim": "Independent Türkçe, 9. kongrede Ercüment Akdeniz’in genel başkan seçildiğini bildirir.",
+      "limitations": "Haberin bazı kısımları Evrensel kaynaklıdır; seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "0410-2020-ninth-event için kaynak metni, olay ve yetki ayrımı incelendi. İPA biyografisindeki 22 Kasım tarihi ayrıca okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-2023-extra-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2023-olaganustu-v1\"]",
+      "passage_ids": "[\"0410-emep-2023-extra-full-p\"]",
+      "inspected_sections": "[\"Olağanüstü kongre genel başkan seçimi\"]",
+      "supported_claim": "Evrensel, olağanüstü kongrede Selma Gürkan’ın genel başkan seçildiğini bildirir.",
+      "limitations": "Kongrenin tam günü ve seçim tutanağı görülmedi; 17 Mayıs GYK görevlendirmesi ayrı işlemdir.",
+      "result": "reviewed",
+      "reason": "0410-2023-extra-event için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-2023-kongre-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T05:37:33+00:00",
@@ -12,6 +38,71 @@
       "limitations": "2023 ara tüzük ve resmî seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "0410-2023-kongre-event için ilgili metin ve dönemsellik incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2020-ninth-event|0410-emep-2020-indy-full-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2020-indy-v1\"]",
+      "passage_ids": "[\"0410-emep-2020-indy-full-p\"]",
+      "inspected_sections": "[\"9. kongre genel başkan seçimi\"]",
+      "supported_claim": "Independent Türkçe, 9. kongrede Ercüment Akdeniz’in genel başkan seçildiğini bildirir.",
+      "limitations": "Haberin bazı kısımları Evrensel kaynaklıdır; seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "0410-2020-ninth-event|0410-emep-2020-indy-full-p|action için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2020-ninth-event|0410-emep-2020-indy-full-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2020-indy-v1\"]",
+      "passage_ids": "[\"0410-emep-2020-indy-full-p\"]",
+      "inspected_sections": "[\"9. kongre genel başkan seçimi\"]",
+      "supported_claim": "Independent Türkçe, 9. kongrede Ercüment Akdeniz’in genel başkan seçildiğini bildirir.",
+      "limitations": "Haberin bazı kısımları Evrensel kaynaklıdır; seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "0410-2020-ninth-event|0410-emep-2020-indy-full-p|result için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2020-ninth-event|0410-ipa-2020-congress-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:55:32+00:00",
+      "source_version_ids": "[\"0410-ipa-2020-congress-date-v1\"]",
+      "passage_ids": "[\"0410-ipa-2020-congress-date-p\"]",
+      "inspected_sections": "[\"Ercüment Akdeniz biyografisi\"]",
+      "supported_claim": "İPA konferans kitabı Ercüment Akdeniz biyografisinde EMEP 9. Genel Kongresinin 22 Kasım 2020 günü gerçekleştiğini ve genel başkan seçimini belirtir.",
+      "limitations": "Kesin yayın günü ve resmî seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "Biyografi sayfasında tarih, görev ve kongre bağlamı incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2023-extra-event|0410-emep-2023-extra-full-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2023-olaganustu-v1\"]",
+      "passage_ids": "[\"0410-emep-2023-extra-full-p\"]",
+      "inspected_sections": "[\"Olağanüstü kongre genel başkan seçimi\"]",
+      "supported_claim": "Evrensel, olağanüstü kongrede Selma Gürkan’ın genel başkan seçildiğini bildirir.",
+      "limitations": "Kongrenin tam günü ve seçim tutanağı görülmedi; 17 Mayıs GYK görevlendirmesi ayrı işlemdir.",
+      "result": "reviewed",
+      "reason": "0410-2023-extra-event|0410-emep-2023-extra-full-p|action için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2023-extra-event|0410-emep-2023-extra-full-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2023-olaganustu-v1\"]",
+      "passage_ids": "[\"0410-emep-2023-extra-full-p\"]",
+      "inspected_sections": "[\"Olağanüstü kongre genel başkan seçimi\"]",
+      "supported_claim": "Evrensel, olağanüstü kongrede Selma Gürkan’ın genel başkan seçildiğini bildirir.",
+      "limitations": "Kongrenin tam günü ve seçim tutanağı görülmedi; 17 Mayıs GYK görevlendirmesi ayrı işlemdir.",
+      "result": "reviewed",
+      "reason": "0410-2023-extra-event|0410-emep-2023-extra-full-p|result için kaynak metni, olay ve yetki ayrımı incelendi."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -41,6 +132,32 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-2020-ninth-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-2020-indy-v1\", \"0410-ipa-2020-congress-date-v1\"]",
+      "passage_ids": "[\"0208-emep-charter-governance\", \"0410-emep-2020-indy-full-p\", \"0410-ipa-2020-congress-date-p\"]",
+      "inspected_sections": "[\"9. kongre genel başkan seçimi\", \"Ercüment Akdeniz biyografisi\", \"İlgili kaynak bölümü\"]",
+      "supported_claim": "Parti tüzüğü genel başkan seçimini genel kongrenin görevleri arasında sayar; olay bu konuya ilişkindir.",
+      "limitations": "Haberin bazı kısımları Evrensel kaynaklıdır; seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "0410-2020-ninth-relation için kaynak metni, olay ve yetki ayrımı incelendi. İPA biyografisindeki 22 Kasım tarihi ayrıca okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-2023-extra-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-2023-olaganustu-v1\"]",
+      "passage_ids": "[\"0208-emep-charter-governance\", \"0410-emep-2023-extra-full-p\"]",
+      "inspected_sections": "[\"Olağanüstü kongre genel başkan seçimi\", \"İlgili kaynak bölümü\"]",
+      "supported_claim": "Parti tüzüğü genel başkan seçimini genel kongrenin görevleri arasında sayar; olay bu konuya ilişkindir.",
+      "limitations": "Kongrenin tam günü ve seçim tutanağı görülmedi; 17 Mayıs GYK görevlendirmesi ayrı işlemdir.",
+      "result": "reviewed",
+      "reason": "0410-2023-extra-relation için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-2023-kongre-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T05:37:33+00:00",
@@ -51,6 +168,32 @@
       "limitations": "2023 ara tüzük ve resmî seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "0410-2023-kongre-relation için ilgili metin ve dönemsellik incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-2020-ninth-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-2020-indy-v1\"]",
+      "passage_ids": "[\"0208-emep-charter-governance\", \"0410-emep-2020-indy-full-p\"]",
+      "inspected_sections": "[\"9. kongre genel başkan seçimi\", \"İlgili kaynak bölümü\"]",
+      "supported_claim": "Independent Türkçe, 9. kongrede Ercüment Akdeniz’in genel başkan seçildiğini bildirir.",
+      "limitations": "Haberin bazı kısımları Evrensel kaynaklıdır; seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "0410-2020-ninth-relation için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-2023-extra-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-2023-olaganustu-v1\"]",
+      "passage_ids": "[\"0208-emep-charter-governance\", \"0410-emep-2023-extra-full-p\"]",
+      "inspected_sections": "[\"Olağanüstü kongre genel başkan seçimi\", \"İlgili kaynak bölümü\"]",
+      "supported_claim": "Evrensel, olağanüstü kongrede Selma Gürkan’ın genel başkan seçildiğini bildirir.",
+      "limitations": "Kongrenin tam günü ve seçim tutanağı görülmedi; 17 Mayıs GYK görevlendirmesi ayrı işlemdir.",
+      "result": "reviewed",
+      "reason": "0410-2023-extra-relation için kaynak metni, olay ve yetki ayrımı incelendi."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -67,6 +210,32 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-2020-ninth-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2020-indy-v1\"]",
+      "passage_ids": "[\"0410-emep-2020-indy-full-p\"]",
+      "inspected_sections": "[\"9. kongre genel başkan seçimi\"]",
+      "supported_claim": "Independent Türkçe, 9. kongrede Ercüment Akdeniz’in genel başkan seçildiğini bildirir.",
+      "limitations": "Haberin bazı kısımları Evrensel kaynaklıdır; seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "0410-2020-ninth-relation için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-2023-extra-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0410-emep-2023-olaganustu-v1\"]",
+      "passage_ids": "[\"0410-emep-2023-extra-full-p\"]",
+      "inspected_sections": "[\"Olağanüstü kongre genel başkan seçimi\"]",
+      "supported_claim": "Evrensel, olağanüstü kongrede Selma Gürkan’ın genel başkan seçildiğini bildirir.",
+      "limitations": "Kongrenin tam günü ve seçim tutanağı görülmedi; 17 Mayıs GYK görevlendirmesi ayrı işlemdir.",
+      "result": "reviewed",
+      "reason": "0410-2023-extra-relation için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-2023-kongre-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T05:37:33+00:00",
@@ -77,6 +246,32 @@
       "limitations": "2023 ara tüzük ve resmî seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "0410-2023-kongre-relation için ilgili metin ve dönemsellik incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-2020-ninth-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0208-emep-charter-governance\"]",
+      "inspected_sections": "[\"İlgili kaynak bölümü\"]",
+      "supported_claim": "Parti tüzüğü genel başkan seçimini genel kongrenin görevleri arasında sayar; olay bu konuya ilişkindir.",
+      "limitations": "Haberin bazı kısımları Evrensel kaynaklıdır; seçim tutanağı görülmedi.",
+      "result": "reviewed",
+      "reason": "0410-2020-ninth-relation için kaynak metni, olay ve yetki ayrımı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-2023-extra-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T06:39:21+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0208-emep-charter-governance\"]",
+      "inspected_sections": "[\"İlgili kaynak bölümü\"]",
+      "supported_claim": "Parti tüzüğü genel başkan seçimini genel kongrenin görevleri arasında sayar; olay bu konuya ilişkindir.",
+      "limitations": "Kongrenin tam günü ve seçim tutanağı görülmedi; 17 Mayıs GYK görevlendirmesi ayrı işlemdir.",
+      "result": "reviewed",
+      "reason": "0410-2023-extra-relation için kaynak metni, olay ve yetki ayrımı incelendi."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -134,7 +329,35 @@
   "source_review_refs": [
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-2020-ninth-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-2023-extra-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-2023-kongre-event"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2020-ninth-event|0410-emep-2020-indy-full-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2020-ninth-event|0410-emep-2020-indy-full-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2020-ninth-event|0410-ipa-2020-congress-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2023-extra-event|0410-emep-2023-extra-full-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-2023-extra-event|0410-emep-2023-extra-full-p|result"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -146,7 +369,23 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-2023-extra-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-2023-extra-relation"
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -154,7 +393,23 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-2023-extra-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-2023-extra-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
