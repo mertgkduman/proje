@@ -59,3 +59,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 38–42 de okundu: AKUT gönüllüleri özel sektörde izin, itfaiyelerle ortaklık ve ilk müdahale koordinasyonu hakkında üyelerin sorularını yanıtlar. Aktarılanlar katılımcı görüşleridir; TİP’e atfedilmez. İndeks 43–154 açık.
 
 9 Aralık toplantısı PDF indeks 43–47 de okundu: Gökan Zeybek ve Kamil Okyay Sındır’ın afet alanı ve arama-kurtarma soruları ile AKUT yanıtları bulunur. Önermeler ve kişisel gözlemler kaynakta ilgili taraflara aittir; bağımsız sonuç veya TİP’e atıf yapılmadı. İndeks 48–154 açık.
+
+9 Aralık toplantısı PDF indeks 48–52 de okundu: arama-kurtarma araçları, AKUT lojistiği ve deprem anı davranışı üzerine karşılıklı sorular ve kişisel beyanlar yer alır. İhtilaflı veya teknik değerlendirmeler bağımsız doğrulanmış sonuç olarak alınmaz; TİP’e atfedilmez. İndeks 53–154 açık.
