@@ -1,0 +1,5 @@
+import json
+from pathlib import Path
+p=Path('data/practices/04-yeni-parti-tranches.json');q=json.loads(p.read_text())
+q['candidate_leads'] += [dict(url='https://api.yeni-parti.org.tr/api/haberler/49',state='source_records_draft',note='Parti kamuya açık JSON 49, created_at 12 Ağustos 21:52:34 UTC = 13 Ağustos 00:52 Türkiye; üyelik sisteminin açıldığını duyuruyor, kesin açılış saatini vermiyor. HTTP 200 SHA256 9d7316486f89437e1172c1363b400ea13ee9173e49f060f47bf11dcd80780c6a, pasaj 0404-yeni-parti-haber-49-uyelik-p. 12 Ağustos 10:46 Türkiye saatli yerel haber öncedir; 11 ve 13 tarihleri doğrudan uzlaştırılmadı.'),dict(url='https://api.yeni-parti.org.tr/api/haberler/50',state='source_records_draft',note='Parti kamuya açık JSON 50, created_at 13 Ağustos 22:08:13 UTC = 14 Ağustos 01:08 Türkiye; dijital üyeliğe davet ediyor, açılışın kesin gününü vermiyor. HTTP 200 SHA256 112456905c1482483ad1c2b64b16346d87f6253dc285d6ea942e020326bcc764, pasaj 0404-yeni-parti-haber-50-uyelik-p. Bireysel kayıt kabulü çıkarılmaz.')]
+p.write_text(json.dumps(q,ensure_ascii=False,indent=2)+'\n')
