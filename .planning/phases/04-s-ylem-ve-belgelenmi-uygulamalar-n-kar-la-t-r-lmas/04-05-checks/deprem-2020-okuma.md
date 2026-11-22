@@ -331,3 +331,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 10–19 metin katmanı ayrıca okundu: şekil ve resim dizini, kısaltmalar ve terimler listesi yer alır. Dizinde bulunma, görsellerin kendilerinin incelendiği anlamına gelmez. İndeks 20–43 ve görseller açık.
 
 - 2021 raporu indeks 20–29 metin katmanı okundu: terimler, komisyon başkanının sunuşu ve Selahattin Minsolmaz ile diğer vekillerin 10/3200 önergesi ve imzacı listesi bulunur. Önergede verilen dönemsel iddialar imzacılara aittir; Baş'ın ilk önerge sahibi olduğu veya önerilerin uygulandığı ileri sürülmedi. İndeks 30–43 ve görseller açık.
+
+- 2021 raporu indeks 30–39 metin katmanı okundu: Murat Çepni ve diğer milletvekillerinin 10/3361 önergesi ile Lütfü Türkkan'ın İYİ Parti adına 10/3362 önergesi bulunur. Deprem vergileri, yapılaşma ve sorumluluklara ilişkin iddialar imzacılara aittir; TİP'in önergesi veya bağımsızca doğrulanmış sonuç sayılmadı. İndeks 40–43 ve görseller açık.
