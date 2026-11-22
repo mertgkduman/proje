@@ -1,0 +1,3 @@
+# Program kaynağı: atıf ayrımı
+
+22 Kasım 2026 aramasında Haliç Üniversitesi Sosyal Bilimler Dergisi 2025, 8/1 sayısındaki G. Basmacı makalesi, DEM programı başlığı altındaki alıntısı için kaynakçada `https://www.hdp.org.tr/tr/parti-programi/8/` adresini gösteriyor (PDF basılı s. 17 ve 25). Bu bağlantı HDP’nin kendi parti programı sayfasıdır; 2012 kuruluş tarihi farklı olan HDP ile DEM sicil kayıtları ayrı olduğu için makalenin isimlendirmesi, HDP programının DEM tarafından kabul edildiğine ilişkin yeterli kanıt değildir. İkincil makale henüz arşivlenmiş/tam okunmuş değildir; bu sadece araştırma izi ve atıf uyuşmazlığıdır. DEM’in bağımsız güncel programı konusunda kapanış yapılmaz, program kaynağına ilişkin yedi kesit açık kalır.
