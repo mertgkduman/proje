@@ -215,3 +215,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 240–244 okundu: riskli yapı tespit verileri, lisans kayıtları ve İstanbul dönüşüm projeleri bakanlık sunumuna atfediliyor. Tespit edilen bina altkümesindeki oranlar genel yapı stoku olarak genellenmedi; hedeflenen projeler gerçekleşmiş veya TİP faaliyeti olarak gösterilmedi. İndeks 245 ve sonrası açık.
 
 - 2021 raporu indeks 245–249 okundu: İstanbul, Kocaeli, Erzurum, Van ve Elazığ dönüşüm ve afet konutu örnekleri bakanlık sunumlarına atfen anlatılıyor; teslim edildiği bildirilen ve planlanan birimler ayrıdır. Önceki belediye ve kurum çalışmaları TİP girişimi sayılmadı. İndeks 250 ve sonrası açık.
+
+- 2021 raporu indeks 250–254 metin katmanı okundu: Elazığ projelerinde tamamlanan ve planlanan işler dönemsel bakanlık beyanlarıdır; 251–254 ağırlıkla görsel ve başlıktır, görseller ayrıca incelenmedi ve görsel içerikten olgu çıkarılmadı. 44–254 ilerlemesi metin katmanı okumadır; önceki sayfalardaki gömülü harita/görsellerin tümü incelenmiş sayılmaz. İndeks 255 ve sonrası açık.
