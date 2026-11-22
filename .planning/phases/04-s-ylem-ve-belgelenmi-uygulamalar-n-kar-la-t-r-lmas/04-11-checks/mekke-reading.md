@@ -7,3 +7,5 @@ TBMM 14. Birleşim 5 Kasım 2026 cetvelinde Mahmut Arıkan satırı Saadet Parti
 Cetvel ve teklif kaydı daha önce aynı TBMM adresinden alınan özgün baytlarla doğrulandı. Saadet kapsamına ayrı belge, sürüm ve pasaj kimlikleriyle kaydedildi. Diğer parti kayıtlarıyla aynı TBMM cetveli tek kamusal dayanak. Kaynak incelemesi aynı günkü madde oylamalarını ve kayıtlardaki grup üyeliği farklarını açık bırakıyor.
 
 TBMM’nin milletvekili profili ve Yargıtay’ın arşivli parti sicili Arıkan’ın kimliğini ve parti bağını destekliyor. Sicil alım tarihi 11 Kasım’dır. Oylama günündeki bağ, 4 Kasım tarihli konuşmacı sıfatı ve 5 Kasım isimli oy satırıyla ayrıca belgeleniyor. [TBMM milletvekili profili](https://tbmm.gov.tr/milletvekili/MilletvekiliDetay?Id=7474e03b-0769-4231-adbc-0188709a91f5)
+
+İlk girdi işi 62411787, açık oy cetvelindeki Windows-1254 kodlu «Mükerrer Oylar» etiketinin dışa aktarımda farklı çözülmesi nedeniyle pasajı bulamadı. Pasaj cetvelin doğru çözümünde ve arşiv doğrulayıcısının metninde aynı olan etiket sonu ve sayı hücresine bağlandı. Özgün cetvel baytları ve 3 mükerrer oy bilgisi korundu.

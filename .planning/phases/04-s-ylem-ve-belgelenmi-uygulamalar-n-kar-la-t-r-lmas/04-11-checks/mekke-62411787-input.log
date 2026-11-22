@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0411-mekke-_dov1sst/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0411-mekke-_dov1sst/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0411-mekke-_dov1sst/src/uygulamalar.py", line 1375, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0411-mekke-_dov1sst/src/uygulamalar.py", line 1340, in _load_practice_copy
+    validate_phase_one_workspace(work, storage_root=storage_root)
+  File "/tmp/gsd-0411-mekke-_dov1sst/src/arsiv.py", line 3073, in validate_phase_one_workspace
+    data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0411-mekke-_dov1sst/src/arsiv.py", line 2847, in export_db
+    raise ValueError('Pasaj özgün belgede bulunamadı')
+ValueError: Pasaj özgün belgede bulunamadı

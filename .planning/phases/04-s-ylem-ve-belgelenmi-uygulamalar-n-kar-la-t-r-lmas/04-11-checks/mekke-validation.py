@@ -15,7 +15,7 @@ harness.SOURCE = harness.DATA/'practices'/'sources'/'saadet'
 stem = '0411-saadet-2026-mekke'
 package = here/'mekke-draft.json'
 review = here/'mekke-review-draft.json'
-assert harness.sha(package) == '8fd3dd4dd640e593e8327ffda4abf312bcce6bd2db84a1fdee9ec1fca82c0c31'
+assert harness.sha(package) == '3045d251531ee8aacec79838b14e7a9834b9cc5ad50479396c26564a231f1bce'
 assert harness.sha(review) == 'fab142c2a981831ff9048030799736fa5c5da588db5d1efff66aff9939ac11d2'
 draft = json.loads(package.read_bytes())['practice_records']
 assert len(draft['practice_event']) == 4 and len(draft['practice_relation']) == 3
