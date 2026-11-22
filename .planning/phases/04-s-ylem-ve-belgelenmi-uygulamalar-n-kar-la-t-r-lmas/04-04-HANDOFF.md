@@ -227,3 +227,10 @@ Kırıkkale ve Yozgat üç yerel sonucu HTTP 200 yakalama ve okuma makbuzu `a283
 - 036: 138[3560:17251], 137[0:11815], 136[0:9183], 135[0:476], 134[0:8958], 133[0:3084], 132[0:220], 131[0:390], 130[0:62].
 
 164 ilçe önseçim ilk gününde 174 ilçe (92 tek aday, 82 yarışlı; 42 mevcut/40 rakip kazanma) parti beyanıdır; 159 Gaziemir Çağrı Şırlancı/Orkan Yılmaz ve 163 Yunusemre Yalçın Arcak/Hasan İmamoğlu adaylıklarını, sonraki resmî kongreden ayrı verir. 153 ve 156 Alevi kurumlarının nezaket ziyareti ve taleplerini açıklıyor, anlaşma kanıtı yok. 140 peyzaj mimarı için yazılacak belediye talimatı, henüz uygulanmış karar değil. 134 Bozbey’in mevcut üyeliğini değil gelecek rozet niyetini söylüyor. 131 50 günde 158202 bağışçı, aidat dahil 561631100 TL parti iddiası; kesin hesap değil. Kalan bütün source uçları makbuzlarda açık. 62385192 ve 62386745 input/source PASS, preview sürüyor; 62387440 input denetimi root bildirimine göre çalışıyor. Daha sonraki gerçek sonuç için root alındısını bekle. Canlı 56/57, canonical değişmedi, görevler ve 610 hücre açık.
+
+### Devam: 037–038 ve doğrulanmış 63/65 ara iz
+037 ea8ea72 ve 038 52e9e48 gerçek makbuzları; toplam 58 dilimden 38 gerçek okunmuş, 039–058 açık. Kapsam hücresi kapanışı yok.
+- 037: 130[62:3926], 129[0:4203], 128[0:2397], 126[0:134], 125[0:376], 124[0:21317], 123[0:7335], 122[0:220], 121[0:6642], 120[0:761].
+- 038: 120[761:16394], 119[0:904], 118[0:6772], 117[0:24677].
+
+62385192 üç komut PASS, 60/61 preview d75e4753595643439435279965a74608, exact ca3f7b3455ca3e2caf224f2613df1c300ac5986c82f45350477591297f3af56e / 5ef6866be4486878e122760563e58d38d3e1ff7b8293f745152239e2cba9da9f, 77ae228 ile canlıya alındı. Ardından 62386745 üç komut PASS 63/65 preview 5d7d70e8c74e4097af89e70d34555c07, exact 0456bdf78a08533d5955ad49153b2257b60be888a056bc2ac5747d8f0d7dd155 / 78c6f12f22283ad9841eefe12c30dfe69223d94e8ee0a87b42fd849938bf282f, 8b24efe ile canlıya alındı. Her terfide mevcut bütün entries, practice_records ve review/ref satırları birebir korundu. İki çıktı yalnız tracer, canonical f67ca0a35e634035bf3aa83a46571f50 değişmedi. 62387440 preview sürüyor; root gerçek terminal alındısını bekle.
