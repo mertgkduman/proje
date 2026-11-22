@@ -157,3 +157,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 95–99 okundu: komisyon 2021 itibarıyla yapı denetim kapsamı, kamu kurumları ve AFAD teşkilatı ile deprem yönetmeliklerinin tarihçesini özetliyor; mevcut hukuk veya TİP faaliyeti olarak sunulmadı. İndeks 100 ve sonrası açık.
 
 - 2021 raporu indeks 100–104 okundu: komisyon 2018 yapı yönetmeliği ile kalkınma planları, KENTGES, UDSEP ve TAMP belgelerini tarihsel bağlamda anlatıyor. Plan hedefleri tamamlanmış uygulama, bugünkü durum veya TİP’in girişimi sayılmadı; indeks 105 ve sonrası açık.
+
+- 2021 raporu indeks 105–109 okundu: önceki 2010 deprem komisyonu önerileri ve izleyen yıllardaki ilgili kurum çalışmalarına raporun atfettiği örnekler yer alıyor. Eski komisyonun önerileri ve bunlarla ilişkilendirilen beyanlar 2020 Baş konuşmasının sonucu değildir; bağımsız doğrulama yapılmadan yürütülme düzeyi kesinleştirilmedi. İndeks 110 ve sonrası açık.
