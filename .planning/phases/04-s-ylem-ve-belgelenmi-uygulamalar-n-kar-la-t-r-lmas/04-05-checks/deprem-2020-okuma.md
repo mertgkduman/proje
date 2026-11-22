@@ -259,3 +259,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 350–354 metin katmanı okundu: toplanma, tahliye ve geçici barınma alanları ayrımı ile yapı envanteri ve risk değerlendirme öncelikleri komisyonun görüşü olarak yer alıyor. Öneriler uygulanmış ve TİP’e ait gösterilmedi; indeks 355 ve sonrası açık.
 
 - 2021 raporu indeks 355–359 metin katmanı okundu: bina risk değerlendirmesi, hasar tespiti, güçlendirme ve yapı denetimi konusunda komisyon öncelikleri yer alır. Görüşler uygulamaya geçmiş sonuç veya partinin görüşü olarak gösterilmedi; indeks 360 ve sonrası açık.
+
+- 2021 raporu indeks 360–364 metin katmanı okundu: komisyon yapı denetiminin uygulama eksiklerini, mesleki yetkinliği ve bina kimlik sistemi planlarını tartışıyor. Rapor önerileri gerçekleşmiş politika veya TİP’e ait girişim olarak gösterilmedi; indeks 365 ve sonrası açık.
