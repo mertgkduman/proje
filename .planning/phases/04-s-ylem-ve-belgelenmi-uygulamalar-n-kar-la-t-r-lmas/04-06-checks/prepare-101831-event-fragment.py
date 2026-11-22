@@ -1,0 +1,34 @@
+"""TBMM 10/1831 ortak araştırma kararını aday olay olarak ayırır."""
+import datetime,json
+from pathlib import Path
+checks=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks')
+def read(name):return json.loads((checks/name).read_text())
+entries=[x for x in read('institutional-source-slices-draft.json')['entries'] if (x['values'].get('id') or x['values'].get('version_id','')).startswith('0406-tbmm-101831')]
+entries+=read('101831-reply-passages-draft.json')['entries']
+now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+def add(k,**v):entries.append(dict(kind=k,values=v))
+def finding(ident,text,ps):
+ add('finding',id=ident,party_id='dem',heading='Söylem ve uygulama',pair_id=ident,text=text,provenance='summary',epistemic_type='claim')
+ for p in ps:
+  add('finding_evidence',finding_id=ident,passage_id=p,role='support')
+  add('verification',finding_id=ident,passage_id=p,checked_at=now,result='confirmed',reason='TBMM tutanağının ilgili sayfası ve parti eki pasajı, kapsam ve süreç açısından okundu.')
+ add('review',id='review-'+ident,kind='finding',subject_id=ident,reviewer_kind='agent',reviewed_at=now,result='reviewed',reason='Girişim, birlikte görüşme ve ortak Meclis kararı ayrı okundu; Sözleşmeye dönüş sonucu çıkarılmadı.')
+target='0305-dem-program-cinsiyet-passage';context='0305-dem-program-cinsiyet-context-passage';sub='0406-tbmm-101831-submission-p';res='0406-tbmm-101831-result-p';call='0406-101831-convention-call-p';reply='0406-101831-government-reply-p'
+finding('0406-101831-submission-f','DEM grubu adına Gülüstan Kılıç Koçyiğit kadın cinayetleri ve şiddetin önlenmesi amacıyla 10/1831 sayılı araştırma önergesini sundu.',[sub])
+finding('0406-101831-outcome-f','TBMM, altı araştırma önergesinin ortak görüşülmesinden sonra araştırma açılmasını ve 22 üyeli komisyon kurulmasını kabul etti.',[sub,res])
+finding('0406-101831-relation-f','Kongre ekindeki İstanbul Sözleşmesi hedefi ile şiddet ve eşitliğe ilişkin araştırma önergesi bağlantılıdır; ortak komisyon kurulması Sözleşmeye dönüş değildir.',[target,sub,res])
+finding('0406-101831-debate-f','Koçyiğit Meclisi İstanbul Sözleşmesine dönüş için irade açıklamaya çağırırken, Gül hükümetin kadına yönelik şiddetle mücadeleyi sürdürdüğünü savundu.',[call,reply])
+for fid,p in [('0305-dem-program-cinsiyet-summary',target),('0305-dem-program-cinsiyet-summary',context),('0305-dem-program-cinsiyet-quote',target)]:
+ add('verification',finding_id=fid,passage_id=p,checked_at=now,result='confirmed',reason='Kongre eki ilgili hedef ve bitişik şiddet bağlamı özgün kaynakta okundu; kesin belge tarihi bilinmiyor.')
+event='0406-101831-commission';scope='practice-529fcdbaaa3065999bab90e97de1de760dada2c7a5fff88e4f72ea9851ce48b2'
+r={
+ 'practice_scope_v2':[dict(id=scope,party_id='dem',topic_id='toplumsal-cinsiyet',taxonomy_version=4,period_start='2012-11-30',cutoff_at='2026-11-10T14:38:46.154751+00:00',research_kind='event',boundary_reason='10/1831 ve 10 Ekim ortak komisyon kararı; konu bütününde araştırma sürüyor.')],
+ 'practice_event':[dict(id=event,common_event_key='tbmm-28-10-696-1831-1835-2024-10-10',event_at='2024-10-10',date_precision='day',date_unknown_reason=None,scope_context='TBMM 28. dönem 3. yasama yılı 6. birleşim; altı araştırma önergesinin birleşik görüşmesi',title='Kadına şiddet konusunda ortak Meclis araştırma komisyonu',occurrence_basis='Resmî TBMM basılı tutanak önerge listesini ve kabul edilen komisyon kararını gösterir.')],
+ 'practice_event_evidence':[dict(event_id=event,passage_id=sub,supported_point='DEM grubu adına 10/1831 araştırma önergesinin sunulması',stage='initiative',concrete_basis='TBMM gelen kâğıtlar listesi 10/1831, grup adına sunan ve 10 Ekim tarihini gösterir.',limitation='Önergenin taranmış eki bu pasajda okunmamıştır.',epistemic_type='claim'),dict(event_id=event,passage_id=res,supported_point='Birleştirilen araştırma önergeleri sonrası 22 üyeli komisyon kabulü',stage='result',concrete_basis='TBMM oturum başkanı araştırmanın açılması ve 22 üyeli komisyon oylamalarının kabulünü açıkça kaydeder.',limitation='Karar altı önergenin ortak sonucudur; ayrı partiye tek başına atfedilemez.',epistemic_type='claim')],
+ 'practice_evidence_assessment':[dict(event_id=event,passage_id=sub,stage='initiative',basis_kind='document'),dict(event_id=event,passage_id=res,stage='result',basis_kind='document')],
+ 'practice_contribution':[dict(id='0406-101831-contribution',event_id=event,party_id='dem',actor_id='0406-dem-institution',contribution_kind='support',finding_id='0406-101831-submission-f',authority_passage_id=None,membership_passage_id=None,responsibility_limit='DEM grubu adına araştırma önergesi; komisyon kararı Genel Kurulun ortak yetkisindedir.')],
+ 'practice_statement':[dict(id='0406-cinsiyet-statement',party_id='dem',topic_id='toplumsal-cinsiyet',taxonomy_version=4,summary_finding_id='0305-dem-program-cinsiyet-summary',quote_finding_id='0305-dem-program-cinsiyet-quote',statement_at=None,date_precision='unknown',version_id='0204-dem-policies-v1',period_basis='Kongre kararları ekinde yer alan söz; bağımsız tam program değildir.',uncertainty_reason='Ek belgenin kesin tarih ve kongre kökeni araştırılıyor.',comparison_row_id='04-03-v3-0305-dem-program-cinsiyet-row')],
+ 'practice_relation':[dict(id='0406-101831-relation',statement_id='0406-cinsiyet-statement',event_id=event,party_id='dem',topic_id='toplumsal-cinsiyet',scope_id=scope,comparability_reason='Kongre eki İstanbul Sözleşmesi hedefiyle önerge kadına şiddet ve toplumsal cinsiyet eşitliği konusunda ilişkilidir; kapsamlar birebir değildir.',target_finding_id='0305-dem-program-cinsiyet-summary',result_finding_id='0406-101831-outcome-f',explanation_finding_id='0406-101831-relation-f',temporal_context='Araştırma önergesi ve ortak karar 10 Ekim 2024; kongre ekinin kesin tarihi bilinmiyor.',authority_context='DEM grubu araştırma önergesini sunar; komisyon kurulmasına TBMM Genel Kurulu altı önergeyi birlikte görüşerek karar verir.',uncertainty_reason='Komisyon kurulması Sözleşmeye dönüş veya şiddetin azalması sonucu değildir; nihai rapor ve uygulama izlenmelidir.')],
+}
+(checks/'101831-event-fragment-draft.json').write_text(json.dumps(dict(status='draft_unvalidated',entries=entries,practice_records=r,remaining='Çağrı ve Gül yanıtı ayrı bulgu olarak korundu; ilişki/ihtilaf biçimi ve agent source review ile üç CLI gate henüz yapılmadı.'),ensure_ascii=False,indent=2)+'\n')
+print('COMMISSION_EVENT_FRAGMENT',len(entries),sum(map(len,r.values())))
