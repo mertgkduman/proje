@@ -234,3 +234,28 @@ Kırıkkale ve Yozgat üç yerel sonucu HTTP 200 yakalama ve okuma makbuzu `a283
 - 038: 120[761:16394], 119[0:904], 118[0:6772], 117[0:24677].
 
 62385192 üç komut PASS, 60/61 preview d75e4753595643439435279965a74608, exact ca3f7b3455ca3e2caf224f2613df1c300ac5986c82f45350477591297f3af56e / 5ef6866be4486878e122760563e58d38d3e1ff7b8293f745152239e2cba9da9f, 77ae228 ile canlıya alındı. Ardından 62386745 üç komut PASS 63/65 preview 5d7d70e8c74e4097af89e70d34555c07, exact 0456bdf78a08533d5955ad49153b2257b60be888a056bc2ac5747d8f0d7dd155 / 78c6f12f22283ad9841eefe12c30dfe69223d94e8ee0a87b42fd849938bf282f, 8b24efe ile canlıya alındı. Her terfide mevcut bütün entries, practice_records ve review/ref satırları birebir korundu. İki çıktı yalnız tracer, canonical f67ca0a35e634035bf3aa83a46571f50 değişmedi. 62387440 preview sürüyor; root gerçek terminal alındısını bekle.
+
+### Devam: 039–058 gerçek gövde okumaları
+58 gövde diliminin tamamı ayrı gerçek okuma makbuzuyla belgeli; bu yalnız katalogdaki belirlenmiş kaynak bölümlerinin okunmasıdır, 610 envanter hücresinin veya görevlerin kapanışı değildir. Her makbuz tam aralığı, özgün bayt SHA-256 ve edinim zamanını, beyanı ve takip uçlarını içerir. `created_at` yayın tarihi olarak kullanılmadı.
+- 039: 117[24677:71504].
+- 040: 117[71504:73754], 116[0:17268], 115[0:2494], 114[0:407], 113[0:228], 112[0:168], 111[0:697], 110[0:496], 109[0:244], 108[0:345], 107[0:10596], 106[0:191], 105[0:194], 104[0:11175], 103[0:892].
+- 041: 103[892:11454], 102[0:968], 101[0:24632], 100[0:2135], 99[0:8689].
+- 042: 99[8689:13820], 98[0:415], 97[0:1100], 96[0:11250], 95[0:14331], 94[0:11848], 93[0:2398].
+- 043: 93[2398:47240].
+- 044: 93[47240:74653], 92[0:20399].
+- 045: 92[20399:34466], 91[0:2230], 90[0:158], 89[0:3670], 88[0:27468].
+- 046: 88[27468:73834].
+- 047: 88[73834:99096], 87[0:21207].
+- 048: 87[21207:35993], 86[0:1379], 85[0:1389], 84[0:235], 83[0:185], 82[0:11934], 81[0:436], 80[0:12718], 79[0:270], 78[0:3431].
+- 049: 78[3431:11749], 77[0:17627], 76[0:866], 75[0:310], 74[0:986], 73[0:19657].
+- 050: 72[0:1206], 66[0:18573], 65[0:7916], 64[0:19453], 63[0:64].
+- 051: 63[64:8274], 62[0:3286], 61[0:13842], 60[0:3043], 59[0:4100], 58[0:15497].
+- 052: 58[15497:21463], 57[0:800], 56[0:1002], 55[0:1106], 54[0:12678], 53[0:10693], 52[0:12717], 51[0:1487], 50[0:868], 49[0:497], 48[0:149].
+- 053: 48[149:23174], 47[0:420], 46[0:467], 45[0:12788], 44[0:8610], 43[0:382], 42[0:374], 41[0:682].
+- 054: 41[682:33591], 40[0:593], 39[0:14123], 38[0:76].
+- 055: 38[76:2021], 37[0:10038], 36[0:20132], 35[0:329], 34[0:415], 33[0:711], 32[0:13855].
+- 056: 32[13855:14995], 31[0:374], 28[0:5875], 27[0:282], 25[0:1008], 26[0:37533].
+- 057: 26[37533:85154].
+- 058: 26[85154:100964], 24[0:6023], 20[0:1776], 18[0:374], 17[0:1598], 16[0:1153], 14[0:1313], 13[0:535].
+
+Öncelikli kurumsal uçlar: API 13/14 kuruluş dilekçesi ve öncesi, 16 kurucu genel başkan seçimi, 18/20 PM ve MYK, 25 grup ve 27 YDK ilk toplantıları; 39 YSK temsil kararı; 58/87 önseçim ile resmî kongre farklı aşamalardır. 52 cemevi anahtarı talimatı teslim sonucu değildir. 72/55/51/47/46/43/42/40/34/33 farklı tarihlerde mali beyanlardır; kesin hesap yerine geçmez. 63/64/73/74/59 ve 80 politika kaynak uçları ilgili mevcut olaylarla eşleştirilmeli. 66 ve 206 okul yemeği ret iddialarında resmî işlem eşleşmesi root araştırmasında açık. API gövdesi okumasından sonra kurumsal uçları ve 610 hücreyi tek tek gerçek deneme/bağlantılarla işlemek gerekir; katalog sayısı kapanış değildir.
