@@ -7154,6 +7154,176 @@
       }
     },
     {
+      "kind": "document",
+      "values": {
+        "id": "0410-emep-izmit-2020-news",
+        "party_id": "emep",
+        "title": "EMEP İzmit başkan seçti — Bağımsız Kocaeli",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0410-emep-izmit-2020-news-v1",
+        "document_id": "0410-emep-izmit-2020-news",
+        "document_date": "2020-10-04",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "4 Ekim 2020 tarihli yerel haber",
+        "original_url": "https://www.bagimsizkocaeli.com.tr/siyaset/emep-izmit-baskan-secti/29904",
+        "final_url": "https://www.bagimsizkocaeli.com.tr/siyaset/emep-izmit-baskan-secti/29904",
+        "accessed_at": "2026-11-22T11:17:48+00:00",
+        "verified_at": "2026-11-22T11:17:48+00:00",
+        "mime": "text/html",
+        "sha256": "7041028892d4b18ecaa5aae5e0bcd12840077fe425b7614e93580fc83f4371f3",
+        "original_path": "objects/7041028892d4b18ecaa5aae5e0bcd12840077fe425b7614e93580fc83f4371f3/original.html.bin",
+        "readable_path": "objects/7041028892d4b18ecaa5aae5e0bcd12840077fe425b7614e93580fc83f4371f3/readable.html"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "98c95e076401e64f9a31d80d3b35e1d1",
+        "format_version": 2,
+        "source_sha256": "7041028892d4b18ecaa5aae5e0bcd12840077fe425b7614e93580fc83f4371f3",
+        "index_path": "views/98c95e076401e64f9a31d80d3b35e1d1/index.html",
+        "manifest_path": "views/98c95e076401e64f9a31d80d3b35e1d1/manifest.json",
+        "manifest_sha256": "0a61616a4d4b48d85d4c301be6ba39e1deb70c651253acf0e410ffbaf3d44065",
+        "version_id": "0410-emep-izmit-2020-news-v1"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0410-emep-izmit-2020-news-v1",
+        "publisher": "Bağımsız Kocaeli",
+        "author": "Uğur Enç",
+        "kind": "journalism",
+        "published_at": "2020-10-04",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://www.bagimsizkocaeli.com.tr/siyaset/emep-izmit-baskan-secti/29904",
+        "basis": "Yerel haber muhabir künyesi ve 4 Ekim 2020 yayın bilgisi; kongre günü ayrıca verilmedi."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0410-emep-izmit-2020-news-result-p",
+        "version_id": "0410-emep-izmit-2020-news-v1",
+        "exact": "EMEP İzmit İlçe Başkanı Dursun Deniz yeniden başkan seçildi.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İzmit ilçe başkanı seçimi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0410-izmit-2020-congress-result",
+        "party_id": "emep",
+        "heading": "Belgelenmiş uygulamalar",
+        "pair_id": "0410-izmit-2020-congress-result",
+        "text": "Bağımsız Kocaeli, İzmit ilçe kongresinde Dursun Deniz’in yeniden ilçe başkanı seçildiğini bildirdi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0410-izmit-2020-congress-result",
+        "kind": "finding",
+        "subject_id": "0410-izmit-2020-congress-result",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-22T11:20:00+00:00",
+        "result": "reviewed",
+        "reason": "Tüzük ve yerel haber ayrı okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0410-izmit-2020-congress-result",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0410-izmit-2020-congress-result",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "checked_at": "2026-11-22T11:20:00+00:00",
+        "result": "confirmed",
+        "reason": "İlgili kaynak pasajı incelendi."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0410-izmit-2020-congress-explanation",
+        "party_id": "emep",
+        "heading": "Belgelenmiş uygulamalar",
+        "pair_id": "0410-izmit-2020-congress-explanation",
+        "text": "Tüzük ilçe kongresine ilçe başkanını seçme görevi verir. Bağımsız Kocaeli, İzmit ilçe kongresinde Dursun Deniz’in yeniden başkan seçildiğini aktardı.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0410-izmit-2020-congress-explanation",
+        "kind": "finding",
+        "subject_id": "0410-izmit-2020-congress-explanation",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-22T11:20:00+00:00",
+        "result": "reviewed",
+        "reason": "Tüzük ve yerel haber ayrı okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0410-izmit-2020-congress-explanation",
+        "passage_id": "0410-emep-gebze-charter-selected-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0410-izmit-2020-congress-explanation",
+        "passage_id": "0410-emep-gebze-charter-selected-p",
+        "checked_at": "2026-11-22T11:20:00+00:00",
+        "result": "confirmed",
+        "reason": "İlgili kaynak pasajı incelendi."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0410-izmit-2020-congress-explanation",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0410-izmit-2020-congress-explanation",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "checked_at": "2026-11-22T11:20:00+00:00",
+        "result": "confirmed",
+        "reason": "İlgili kaynak pasajı incelendi."
+      }
+    },
+    {
       "kind": "passage",
       "values": {
         "id": "0410-emep-tezkere-3761-ballot-vote-p",
@@ -7416,6 +7586,16 @@
         "scope_context": "EMEP Gebze 11. Olağan İlçe Kongresi",
         "title": "Gebze ilçe kongresi",
         "occurrence_basis": "Gebze Haber 12 Ekim tarihli haberinde kongrenin yapıldığını bildirdi."
+      },
+      {
+        "id": "0410-izmit-2020-congress-event",
+        "common_event_key": "emep-izmit-ilce-kongresi-dursun-deniz-2020",
+        "event_at": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Haber 4 Ekim 2020’de yayımlandı; kongrenin kesin günü metinde belirtilmiyor.",
+        "scope_context": "EMEP İzmit ilçe kongresi",
+        "title": "İzmit ilçe başkanlığı seçimi",
+        "occurrence_basis": "4 Ekim tarihli yerel haber Dursun Deniz’in yeniden seçimini bildirdi."
       }
     ],
     "practice_event_evidence": [
@@ -7933,6 +8113,24 @@
         "epistemic_type": "claim"
       },
       {
+        "event_id": "0410-izmit-2020-congress-event",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "supported_point": "Yerel haber Dursun Deniz’in İzmit ilçe başkanı seçildiğini bildiriyor.",
+        "stage": "action",
+        "concrete_basis": "Bağımsız Kocaeli tarihli haber.",
+        "limitation": "Haberde oy sayısı, seçim yöntemi ve kesin kongre günü belirtilmiyor.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0410-izmit-2020-congress-event",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "supported_point": "Yerel haber Dursun Deniz’in yeniden başkan seçildiğini bildiriyor.",
+        "stage": "result",
+        "concrete_basis": "Aynı yerel haberde seçim sonucu açıkça belirtiliyor.",
+        "limitation": "Oy sayısı, seçim yöntemi ve kesin kongre günü belirtilmiyor.",
+        "epistemic_type": "claim"
+      },
+      {
         "event_id": "0410-mandate-3761-event",
         "passage_id": "0410-emep-tezkere-3761-ballot-vote-p",
         "supported_point": "Aynı açık oy cetveli satırı Emek Partisi, RET ve 19:33:43 kaydını gösterir.",
@@ -8443,6 +8641,21 @@
         "temporal_context": "2019/2020 yayın, 2023 arşiv ve 2026 kongre haberleri ayrı tarihlidir.",
         "authority_context": "Tüzük parti yayını; kongrenin gerçekleşmesi yerel haber ve parti yayınında bildirilmiştir.",
         "uncertainty_reason": "Alınan haberlerde seçilen yönetim veya delegeler belirtilmedi; tüzüğe uygunluk ve sonuç değerlendirmesi yapılmadı."
+      },
+      {
+        "id": "0410-izmit-2020-congress-relation",
+        "statement_id": "0410-gebze-charter-statement",
+        "event_id": "0410-izmit-2020-congress-event",
+        "party_id": "emep",
+        "topic_id": "orgut-ilce-kongre",
+        "scope_id": "practice-ab7f29a6aa9c8f3fde6866a421f9cf08a98d2267a3d7ff954d8f04f1d5da5295",
+        "comparability_reason": "Tüzüğün ilçe başkanı seçimi görevi ile İzmit kongresinde bildirilen başkan seçimi aynı konudadır.",
+        "target_finding_id": "0410-gebze-charter-finding",
+        "result_finding_id": "0410-izmit-2020-congress-result",
+        "explanation_finding_id": "0410-izmit-2020-congress-explanation",
+        "temporal_context": "Parti yayını 2019, web güncellemesi Ağustos 2020; seçim haberi 4 Ekim 2020 tarihli, tam olay günü bilinmiyor.",
+        "authority_context": "Tüzük ilçe kongresine başkan seçme görevi verir.",
+        "uncertainty_reason": "Ara tüzük değişiklikleri, seçim tutanağı, oy yöntemi ve kongrenin kesin günü görülmedi."
       }
     ],
     "practice_legacy_link": [],
@@ -9008,6 +9221,12 @@
         "version_id": "0410-emep-gebze-2026-plan-v1",
         "inspected_sections": "[\"6 Ekim kongre ön duyurusu\"]",
         "inspected_at": "2026-11-22T11:08:25+00:00"
+      },
+      {
+        "scope_id": "practice-ab7f29a6aa9c8f3fde6866a421f9cf08a98d2267a3d7ff954d8f04f1d5da5295",
+        "version_id": "0410-emep-izmit-2020-news-v1",
+        "inspected_sections": "[\"İlçe kongresi ve Dursun Deniz’in yeniden seçimi\"]",
+        "inspected_at": "2026-11-22T11:20:00+00:00"
       }
     ],
     "practice_lead": [
@@ -9426,6 +9645,14 @@
         "relevance_reason": "6 Ekim kongre ön duyurusu",
         "state": "examined",
         "attempt_ids": "[\"0410-gebze-congress-attempt-4\"]"
+      },
+      {
+        "id": "lead-0410-izmit-2020-congress-attempt",
+        "scope_id": "practice-ab7f29a6aa9c8f3fde6866a421f9cf08a98d2267a3d7ff954d8f04f1d5da5295",
+        "url": "https://www.bagimsizkocaeli.com.tr/siyaset/emep-izmit-baskan-secti/29904",
+        "relevance_reason": "İlçe kongresi ve Dursun Deniz’in yeniden seçimi",
+        "state": "examined",
+        "attempt_ids": "[\"0410-izmit-2020-congress-attempt\"]"
       }
     ],
     "practice_lead_revision": [],
@@ -9949,6 +10176,16 @@
         "result": "examined",
         "reason": "6 Ekim kongre ön duyurusu okundu; yönetim seçimi ve kesin gün açık.",
         "source_version_id": "0410-emep-gebze-2026-plan-v1"
+      },
+      {
+        "id": "0410-izmit-2020-congress-attempt",
+        "scope_id": "practice-ab7f29a6aa9c8f3fde6866a421f9cf08a98d2267a3d7ff954d8f04f1d5da5295",
+        "attempted_at": "2026-11-22T11:20:00+00:00",
+        "query": "https://www.bagimsizkocaeli.com.tr/siyaset/emep-izmit-baskan-secti/29904",
+        "url": "https://www.bagimsizkocaeli.com.tr/siyaset/emep-izmit-baskan-secti/29904",
+        "result": "examined",
+        "reason": "Haber okundu; kesin kongre günü ve seçim tutanağı açık.",
+        "source_version_id": "0410-emep-izmit-2020-news-v1"
       }
     ],
     "practice_candidate": [
@@ -10149,6 +10386,15 @@
         "state": "eligible",
         "reason": "Tüzükte ele alınan ilçe kongresinin gerçekleşmesi haberle belgelenmiştir.",
         "passage_ids": "[\"0410-emep-gebze-2026-news-event-p\", \"0410-emep-gebze-2026-party-p\", \"0410-emep-gebze-2026-plan-p\"]"
+      },
+      {
+        "id": "0410-izmit-2020-congress-candidate",
+        "scope_id": "practice-ab7f29a6aa9c8f3fde6866a421f9cf08a98d2267a3d7ff954d8f04f1d5da5295",
+        "event_id": "0410-izmit-2020-congress-event",
+        "relation_id": "0410-izmit-2020-congress-relation",
+        "state": "eligible",
+        "reason": "Yerel haberde ilçe kongresindeki başkan seçimi belirtiliyor.",
+        "passage_ids": "[\"0410-emep-izmit-2020-news-result-p\"]"
       }
     ],
     "practice_closure": [],
@@ -10507,6 +10753,18 @@
         "basis_kind": "document"
       },
       {
+        "event_id": "0410-izmit-2020-congress-event",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "stage": "action",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0410-izmit-2020-congress-event",
+        "passage_id": "0410-emep-izmit-2020-news-result-p",
+        "stage": "result",
+        "basis_kind": "document"
+      },
+      {
         "event_id": "0410-mandate-3761-event",
         "passage_id": "0410-emep-tezkere-3761-ballot-vote-p",
         "stage": "action",
@@ -10582,6 +10840,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-gebze-2026-congress-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-izmit-2020-congress-event"
     },
     {
       "subject_kind": "practice_event",
@@ -10730,6 +10992,14 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-plan-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|result"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -10901,6 +11171,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-izmit-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-labor-23163-relation"
     },
     {
@@ -10989,6 +11263,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-izmit-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-labor-23163-relation"
     },
     {
@@ -11057,6 +11335,10 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-izmit-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-question-13296-relation"
     },
     {
@@ -11102,6 +11384,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-izmit-2020-congress-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
