@@ -33,9 +33,13 @@ class PracticeContract(unittest.TestCase):
 
     def test_dispute_is_visible_with_source_in_both_views(self):
         data = copy.deepcopy(self.data)
-        data['practice_dispute'] = [dict(id='d1', event_id='tracer-cesme', supported_points='Desteklenen teknik nokta', disputed_points='Tartışılan teknik nokta', unresolved_points='Çözülemeyen teknik nokta', summary_finding_id='tracer-event')]
+        original = next(f for f in data['finding'] if f['id'] == 'tracer-event')
+        data['finding'].append(dict(original, id='dispute-summary', pair_id='dispute-summary', text='Kaynaklı ihtilaf özeti.'))
+        data['finding_evidence'].append(dict(finding_id='dispute-summary', passage_id='0105-cesme-p', role='source'))
+        data['practice_dispute'] = [dict(id='d1', event_id='tracer-cesme', supported_points='Desteklenen teknik nokta', disputed_points='Tartışılan teknik nokta', unresolved_points='Çözülemeyen teknik nokta', summary_finding_id='dispute-summary')]
         data['practice_dispute_evidence'] = [dict(dispute_id='d1', passage_id='0105-cesme-p', point='Teknik nokta', source_position='Teknik kaynak anlatımı', role='conflict')]
         html = arsiv.render_comparison_snapshot(data, arsiv.render_report)
+        self.assertEqual(html.count('class="summary" data-finding-id="dispute-summary">Kaynaklı ihtilaf özeti. <a class="citation" href="#source-0105-cesme-p"'), 2)
         self.assertEqual(html.count('Desteklenen teknik nokta'), 2)
         self.assertEqual(html.count('Tartışılan teknik nokta'), 2)
         self.assertEqual(html.count('Çözülemeyen teknik nokta'), 2)

@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 27
+RENDERER_VERSION = 28
 STYLE = Path(__file__).with_name('rapor_v25.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -471,6 +471,16 @@ def render_report(data):
         inventory = json.loads(marker['inventory_json'])
         coverage_states = {item['cell_id']: item['state'] for item in practice_coverage_states(data, inventory)}
 
+    def add_dispute_summary(dispute):
+        finding = findings[dispute['summary_finding_id']]
+        cls, text = format_finding(finding)
+        sources = ' '.join(named_citation(ref['passage_id']) for ref in evidence[finding['id']])
+        pieces.append(f'<p class="{cls}" data-finding-id="{esc(finding["id"])}">{text} {sources}</p>')
+        sources = ' '.join(named_citation(ref['passage_id']) for ref in dispute_evidence.get(dispute['id'], []))
+        pieces.append(f'<p class="summary">Desteklenen: {esc(dispute["supported_points"])} · '
+                      f'Tartışılan: {esc(dispute["disputed_points"])} · '
+                      f'Çözülemeyen: {esc(dispute["unresolved_points"])} {sources}</p>')
+
     def add_practice_records(party_id, topic_id=None, taxonomy_version=None, comparison=False):
         if data.get('practice_coverage_contract'):
             scopes_v2 = {s['id']: s for s in data.get('practice_scope_v2', [])}
@@ -562,8 +572,7 @@ def render_report(data):
                 else:
                     pieces.append('<p>' + label + ': Bu aşama için bağlı kanıt bulunmuyor.</p>')
             for dispute in event_disputes.get(event['id'], []):
-                refs = dispute_evidence.get(dispute['id'], [])
-                pieces.append('<p class="summary">Desteklenen: ' + esc(dispute['supported_points']) + ' · Tartışılan: ' + esc(dispute['disputed_points']) + ' · Çözülemeyen: ' + esc(dispute['unresolved_points']) + ' ' + ' '.join(named_citation(ref['passage_id']) for ref in refs) + '</p>')
+                add_dispute_summary(dispute)
             for contribution in event_contributions.get(event['id'], []):
                 if contribution['event_id'] == event['id'] and contribution['party_id'] == party_id:
                     event_finding = findings[contribution['finding_id']]
@@ -649,8 +658,8 @@ def render_report(data):
                             pieces.append('<p>Olay tarihi belirsiz olduğundan aktörün yetki veya üyelik dönemiyle çakışması doğrulanamadı.</p>')
                         pieces.append(f'<p class="summary">{esc(finding["text"])} {esc(contribution["responsibility_limit"])} ' + ' '.join(named_citation(ref['passage_id']) for ref in evidence[finding['id']]) + '</p>')
                 for dispute in event_disputes.get(event['id'], []):
+                    add_dispute_summary(dispute)
                     refs = dispute_evidence.get(dispute['id'], [])
-                    pieces.append('<p class="summary">Desteklenen: ' + esc(dispute['supported_points']) + ' · Tartışılan: ' + esc(dispute['disputed_points']) + ' · Çözülemeyen: ' + esc(dispute['unresolved_points']) + ' ' + ' '.join(named_citation(ref['passage_id']) for ref in refs) + '</p>')
                     pieces.append('<details><summary>İhtilaf kaynakları</summary>')
                     for ref in refs:
                         label = {'support': 'Destek', 'conflict': 'Karşı anlatım', 'reply': 'Yanıt'}[ref['role']]
