@@ -1,0 +1,7 @@
+# DBP Batman 2. Olağan İl Kongresinin seçim sonucu
+
+Batman Express, 17 Eylül 2026 haberinde hazırlık toplantısını ve kongrenin 19 Eylül saat 13.00’te Roza Düğün Salonu’nda yapılacağının duyurulduğunu bildirdi. 20 Eylül haberinde aynı kongrenin aynı salonda gerçekleştiğini, tek listeyle Celile Yıldız ile Rıdvan Erzik’in il eş başkanlığına seçildiğini yazdı. Batman Burada 22 Eylül haberinde seçim sonucunu aynı iki isimle aktardı ve göreve başladıklarını bildirdi. İki haberin bağımsız haber alma zinciri incelenmedi. [Duyuru](https://www.batmanexpress.com/haber/dbp-batman-da-secime-gidiyor-33620.html) [Seçim sonucu](https://www.batmanexpress.com/haber/dbp-il-orgutunde-yeni-donem-33640.html) [Göreve başlama haberi](https://www.batmanburada.com.tr/dbp-batmanda-yeni-donem-es-baskanlar-goreve-basladi/)
+
+19 Eylül tarihli Batman Demokrat Haber seçim sonucunu aynı isimlerle duyurdu. Özgün bayt alımı HTTP 403 döndü. Arşivlenen diğer üç kayıtta ilk haber duyuru gününü, iki sonraki haber gerçekleşme ve seçim sonucunu bildiriyor. Kesin seçim günü, kullanılan oy sayısı, oy verme biçimi ve göreve başlama günü açık. [19 Eylül Batman Demokrat Haber](https://batmandemokrathaber.com/dbpde-yeni-es-baskanlar-yildiz-ve-erzik-oldu/)
+
+Arşivli DBP tüzüğünün 22. maddesi il eş başkanlarını il kongresinin seçtiğini söylüyor. Batman haberi bu göreve iki kişinin seçilmesine ilişkin bir uygulama kaydı. Kongre seçim tutanağı ve o gün uygulanan tüzük nüshası ayrıca araştırılıyor.
