@@ -31,3 +31,5 @@ Ek okuma: 2026 tutanağının indeks 8–13 metin katmanı da incelendi. Genel S
 2025 tutanağı indeks 6–11 metin katmanı da okundu: ikinci oturumun açılışı ve Yeni Yol grubu adına Bülent Kaya ile Mehmet Emin Ekmen'in konuşmaları yer alır. Bu görüşler TİP'e atfedilmez. İndeks 12–43 ve 50–94 ile görseller açıktır.
 
 2025 tutanağı indeks 12–17 metin katmanı okundu: Ekmen'in konuşması sona erer, MHP adına Feti Yıldız ve Yücel Bulut söz alır. Konuşmacıların iddia ve değerlendirmeleri ayrı tutulur; indeks 18–43 ve 50–94 ile görseller açıktır.
+
+2025 tutanağı indeks 18–23 metin katmanı okundu: MHP konuşması biter, DEM Parti adına Gülistan Kılıç Koçyiğit ve Meral Danış Beştaş söz alır. Koçyiğit indeks 19'da Erkan Baş'a süreçteki katkısı için teşekkür eder; bu ifade Baş'a belirli bir somut işlem veya sonucu ispatlamaz. İndeks 24–43 ve 50–94 ile görseller açık kalır.
