@@ -265,3 +265,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 365–369 metin katmanı okundu: mevcut tehlikeli yapılar için idari takip önerileri ve riskli yapı stokunu belirleme yöntemleri yer alır. Seçilmiş bina örneklerinin bulguları ülke geneline genellenmedi; gömülü resimler incelenmedi, öneriler partiye veya uygulamaya atfedilmedi. İndeks 370 ve sonrası açık.
 
 - 2021 raporu indeks 370–374 metin katmanı okundu: tespit edilen riskli binalardaki teknik sorunlar ile kentsel dönüşümde arsa payı ve mülkiyet sorunları komisyonca değerlendiriliyor. Seçilmiş bina oranları genellenmedi; öneri ve mülkiyet değerlendirmeleri TİP’e atfedilmedi, resimler görsel incelenmedi. İndeks 375 ve sonrası açık.
+
+- 2021 raporu indeks 375–379 metin katmanı okundu: komisyon imar hakları, dönüşümde sosyolojik katılım, belediyelerin rolü ve mevzuat ihtiyaçlarını değerlendiriyor. Komisyon görüşleri uygulama ya da partinin tutumu olarak sunulmadı; indeks 380 ve sonrası açık.
