@@ -221,3 +221,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 255–259 metin katmanı okundu: Malatya afet konutu için bakanlık verileri ve planları var; 256–259’daki fotoğraflar görsel olarak incelenmedi, yalnız başlıkları okundu. İnşaata başlama, plan ve bitim ayrı tutuldu; indeks 260 ve sonrası açık.
 
 - 2021 raporu indeks 260–264 metin katmanı okundu: İzmir Bayraklı proje alanları, planlanan konutlar ve temel atıldığı belirtilen işler rapor dönemi kaynaklarına dayanır; gömülü resimler görsel incelenmedi. Plan ve gerçekleşme ayrıldı; TİP etkisi çıkarılmadı. İndeks 265 ve sonrası açık.
+
+- 2021 raporu indeks 265–269 metin katmanı okundu: belediyelerin strateji belgesi hazırlığı, 2019–2023 hedefleri ve Kartal dönüşümüne ilişkin bakanlık süreç anlatımı bulunuyor. Sayılar/uzlaşma iddiaları kurum kaynağının dönemsel beyanlarıdır; hedefler ve parti katkısı doğrulanmış sonuç sayılmadı. İndeks 270 ve sonrası açık.
