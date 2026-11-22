@@ -1,0 +1,5 @@
+# 10/437: yaşlı bakımına ilişkin ön görüşme önerisi
+
+İYİ Parti'nin 10/437 araştırma önergesi TBMM ayrıntı kaydı ve dört sayfalık özgün PDF'si arşivlendi. Taranmış PDF'nin dört sayfası görüntü olarak okundu: kapakta 12 Ekim 2023, Manisa Milletvekili Şenol Sunat imzası ve yaşlıların sosyal/ekonomik sorunlarının araştırılması; gerekçede huzurevi ve yaşam kalitesi anlatımı; son sayfada imzalar yer alıyor. Araştırma önergesi kendi içinde kurumların fiilî durumunu doğrulamaz.
+
+17 Ocak 2024 tarihli 50. birleşim tam tutanağında DEM Grubu adına Adalet Kaya yaşlı bakımevlerinde hizmetin iyileştirilmesine yönelik önergeyi desteklediğini söylüyor; kamusal bakım ve denetim ihtiyacını dile getiriyor. Başkan daha sonra gündeme alınmaya ilişkin grup önerisinin kabul edilmediğini açıklıyor. Grup desteği isimli oy, bakım hizmetinin iyileşmesi veya araştırma önergesinin esasına dair nihai karar değildir. 10/437 esas numarası detay ve özgün önergeyle bağlanır; tam tutanağın tamamı okunmadı. İlişkilendirilecek önceki DEM söylemi ve kapsama uygunluğu araştırılıyor.
