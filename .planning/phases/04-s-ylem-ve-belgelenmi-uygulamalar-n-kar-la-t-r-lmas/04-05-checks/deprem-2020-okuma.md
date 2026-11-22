@@ -97,3 +97,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 133–137 de okundu: coğrafi veri ve yapı envanteri sunumu, sayısal modeller, veri doğrulama ve sürmekte olduğu belirtilen geliştirmeler konuşulur; Ali Kenanoğlu sistem erişimini sorar. Yetkili beyanı ve projeleri bağımsızca doğrulanmış veya TİP uygulaması sayılmadı. İndeks 138–154 açık.
 
 9 Aralık toplantısı PDF indeks 138–142 de okundu: Müzeyyen Şevkin coğrafi veri, fay hatları ve erişim hakkında sorar; genel müdür bazı konularda yanıt verir, farklı değerlendirmeler korunur. Kaynakta sunulan görüş ve hedefler bağımsız saptamaya veya TİP uygulamasına dönüştürülmez. İndeks 143–154 açık.
+
+9 Aralık toplantısı PDF indeks 143–148 de okundu: coğrafi veri yöntemleri, yapı bilgilerinin paylaşılması ve sel/deprem simülasyon sınırları hakkında üye soruları ve yetkili yanıtları var. Değerlendirmeler ilgili kişilerin 2020 beyanlarıdır; TİP’e veya bağımsız doğrulanmış sonuca dönüştürülmez. İndeks 149–154 açık.
