@@ -1,0 +1,9 @@
+# TİP Parti Meclisi 6–7 Nisan 2024 değerlendirmesi
+
+URL https://tip.org.tr/myk-ve-parti-meclisi/parti-meclisi-degerlendirmesi-6-7-nisan-2024; kaynak ve pasif görünüm hash ve erişim makbuzu `institution-nisan-capture.json`. Parti yayını, 6–7 Nisan'da toplantı yapıldığını ve siyasal/örgütsel değerlendirme ve yol haritası oluşturulduğunu belirtir. Makalenin üç ana bölümü ve sonundaki öncelikli hedefler okundu. Siyasi ve seçim sonucu değerlendirmeleri partinin yorumudur.
+
+Kurum içi iletişim, katılım ve tartışma kanallarının istenildiği gibi işlemediği; kurul ve iç hukuk işleyişinde sorunlar olduğu, merkez ve yerel örgütler arasında mesafe bulunduğu, parti meclisinin kendi değerlendirmesi olarak aktarılır. Bu anlatım gerçek partinin kendi açıklamasıdır; her bir olay, yerel örgüt veya disiplin kararına ilişkin bağımsız olgu doğrulaması değildir. Kapsam, parti meclisinin sorumluluğu altında açıklanan öz değerlendirmedir. Devamında üyelerle etkileşimi artıracak düzenlemeler hedeflenir; hedef uygulama olarak sunulamaz. Tüzüğün ilgili tarihli sürümü ve Faz 3 `uyelik-bilgi-gorus`, `ic-tartisma-elestiri`, `parti-ici-itiraz` satırları ayrı incelenmelidir. Bağımsız olay delili ve olası yanıtlar aranacak.
+
+Aynı sayfanın “Öncelikli somut hedeflerimiz ve takvimimiz” bölümünde 1 Mayıs için haftalık çalışma süresinin 35 saate indirilmesi talebi açıkça yer alır. Bu, 28. dönem 2/2121 teklifinin 24 Nisan 2024 tarihinden önceki tarihli parti meclisi beyanı olarak önemli bir adaydır; teklifin kanunlaşması veya uygulanması değildir. Programdaki genel çalışma süreleri satırı ile eşleştirmede programın 2024'te yürürlük durumu belirsiz bırakılmalı, Nisan açıklaması ayrı dönemsel kayıt olarak kullanılmalıdır. Toplantı bildirgesi tarihlidir; sayfanın kendi yayın tarihi site liste/künye üzerinden ayrıca doğrulanmalıdır.
+
+Henüz belge/pasaj/kaynak inceleme kaydı üretilmemiş, doğrulama gate'leri yapılmamış ve hiçbir scope kapanmamıştır.
