@@ -237,3 +237,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 295–299 metin katmanı okundu: hastane ve işyeri planları, 2011’de kurulan risk azaltma platformu, toplanma/barınma alanları ve tatbikatlar anlatılıyor. Önceki platform varlığı komisyon katılımını veya TİP nedenselliğini kanıtlamaz; dönemsel veri güncel sayı sayılmadı. İndeks 300 ve sonrası açık.
 
 - 2021 raporu indeks 300–304 metin katmanı okundu: afet tatbikatları, AFAD/Kızılay/MEB eğitimleri ve okul müfredatına ilişkin kaynaklı kurum anlatımları vardır. Sağlık çalışanlarının eğitim hedef kitlesinde sayılması komisyona meslek örgütü katılımı veya TİP kaynaklı uygulama değildir; indeks 305 ve sonrası açık.
+
+- 2021 raporu indeks 305–309 metin katmanı okundu: afet eğitimi, 2019 AFAD gönüllülük sistemi, lojistik depoları ve haberleşme altyapısı kurum anlatımlarına dayanır. Rapor dönemindeki stok ve kapasiteler güncel veya TİP’in eylemi kabul edilmedi; harita ayrıca görsel incelenmedi. İndeks 310 ve sonrası açık.
