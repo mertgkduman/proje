@@ -133,3 +133,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 23 Aralık toplantısı PDF indeks 79–83 okundu: Jeoloji Odası başkanı, komisyon başkanı ve üyeler arasında mevcut mevzuat, denetim ve barınma üzerine farklı görüşler var; tutanağın kendisi bazı sayısal ifadeler için düzeltme dipnotu düşer. Bunlar taraf beyanları olarak kalır, TİP veya bağımsız sonuç sayılmaz. İndeks 84–132 açık.
 
 23 Aralık toplantısı PDF indeks 84–88 okundu: Jeoloji Odası ve komisyon üyeleri arasında teknik denetim, bölgesel risk ve sosyal konut hakkındaki farklı görüşler, açıklamalar ve düzeltmeler sürer. Katılımcı beyanları kendilerine aittir; TİP veya bağımsız olgu olarak aktarılmadı. İndeks 89–132 açık.
+
+- 23 Aralık 2020 tutanağı PDF indeks 89–99 okundu: Jeoloji Mühendisleri Odası temsilcileri yer seçimi, diri fayların tespiti, zemin etütleri ve yapı denetimi hakkında soruları yanıtlıyor; görüşler konuşmacılarına aittir. Bu bölüm işçi veya sağlık emekçileri temsili ya da Baş konuşmasıyla nedensel bağ kanıtlamaz. İndeks 100–132 henüz açık. Özgün 2630 ve 2638 PDF baytları artık bu klasörde korunuyor; SHA değerleri yakalama kayıtlarıyla eşleşti.
