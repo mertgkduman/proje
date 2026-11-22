@@ -1486,13 +1486,15 @@ def _render_practice_preview(payload, out, inventory=None, base_release='current
             view_manifest = json.loads(arsiv.safe_path(root, path).read_text(encoding='utf-8'))
             for name in view_manifest['files']:
                 copy_asset(root, str(Path(path).parent / name), reject_links=reject_links)
+            return view_manifest
 
         for version in base_data['document_version']:
             for key in ('original_path', 'readable_path'): copy_asset(storage_root, version[key])
         for view in base_data.get('archive_view', []): copy_view(storage_root, view)
         source_root = storage_root if source_root is None else Path(source_root).resolve()
         party = payload.get('party_id')
-        for entry in payload.get('entries', []):
+        entries = payload.get('entries', [])
+        for entry in entries:
             kind, values = entry['kind'], entry['values']
             entry_root = merge_roots_by_entry.get(_digest(entry), source_root)
             if kind in ('document_version', 'archive_view') and any(
@@ -1515,7 +1517,20 @@ def _render_practice_preview(payload, out, inventory=None, base_release='current
                     if not raw.startswith(b'%PDF-'): raise ValueError('PDF kaynak biçimi geçersiz')
                 else:
                     from arsiv_gorunum import decode_html
-                    decode_html(raw)
+                    try:
+                        decode_html(raw)
+                    except ValueError:
+                        view_entry = next((item for item in entries if item['kind'] == 'archive_view'
+                                           and item['values'].get('version_id') == values['id']
+                                           and item['values'].get('source_sha256') == values['sha256']), None)
+                        if view_entry is None:
+                            raise
+                        view_root = merge_roots_by_entry.get(_digest(view_entry), source_root)
+                        view_manifest = copy_view(view_root, view_entry['values'], reject_links=True)
+                        charset = view_manifest.get('http_charset')
+                        if view_manifest.get('source_url') != values['final_url'] or not isinstance(charset, str) or not charset:
+                            raise
+                        decode_html(raw, charset)
             elif kind == 'archive_view':
                 copy_view(entry_root, values, reject_links=True)
         if merge_roots_by_entry:

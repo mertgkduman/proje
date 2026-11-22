@@ -247,6 +247,51 @@ class PracticePreview(unittest.TestCase):
         self.assertEqual(arsiv.sha(db_path), db_before)
         self.assertFalse((arsiv.DATA / '.write.lock').exists())
 
+    def test_new_source_preview_uses_matching_archived_charset(self):
+        import arsiv_gorunum
+
+        raw = '<html><body>Türkçe oylama cetveli</body></html>'.encode('windows-1254')
+        url = 'https://example.org/recorded-vote'
+        digest = hashlib.sha256(raw).hexdigest()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source_root = root / 'source'
+            original = f'objects/{digest}/original.html.bin'
+            readable = f'objects/{digest}/readable.html'
+            (source_root / original).parent.mkdir(parents=True)
+            (source_root / original).write_bytes(raw)
+            (source_root / readable).write_bytes(arsiv.readable_bytes(raw, 'html'))
+            version = dict(id='technical-v', final_url=url, mime='text/html', sha256=digest,
+                           original_path=original, readable_path=readable)
+            view = arsiv_gorunum.build_view(raw, url, source_root, fetch_assets=False, http_charset='windows-1254')
+            view['version_id'] = version['id']
+            unrelated = arsiv_gorunum.build_view(raw, 'https://example.org/other', source_root,
+                                                 fetch_assets=False, http_charset='windows-1254')
+            unrelated['version_id'] = version['id']
+            base = 'a' * 32
+            release = root / 'releases' / base
+            release.mkdir(parents=True)
+            base_records = {'document_version': []}
+            (release / 'records.json').write_text(json.dumps(base_records))
+            (release / 'index.html').write_text('<p>Technical fixture</p>')
+            sqlite3.connect(release / 'records.sqlite3').close()
+            files = {path.name: arsiv.sha(path) for path in release.iterdir()}
+            (release / 'manifest.json').write_text(json.dumps(dict(release_id=base, files=files)))
+            package = dict(base_release=base, party_id='yeni-parti',
+                           entries=[dict(kind='document_version', values=version)])
+            with patch('arsiv.DATA', root), patch('arsiv.export_db', return_value=base_records), \
+                    patch('uygulamalar._load_practice_copy', side_effect=RuntimeError('loaded after asset checks')):
+                with self.assertRaisesRegex(ValueError, 'karakter kodlaması'):
+                    uygulamalar.render_practice_preview(package, root / 'missing', base_release=base, source_root=source_root)
+                package['entries'].append(dict(kind='archive_view', values=unrelated))
+                with self.assertRaisesRegex(ValueError, 'karakter kodlaması'):
+                    uygulamalar.render_practice_preview(package, root / 'unrelated', base_release=base, source_root=source_root)
+                package['entries'][-1] = dict(kind='archive_view', values=view)
+                with self.assertRaisesRegex(RuntimeError, 'loaded after asset checks'):
+                    uygulamalar.render_practice_preview(package, root / 'matching', base_release=base, source_root=source_root)
+            self.assertIn('Türkçe oylama cetveli', (source_root / view['index_path']).read_text())
+            self.assertEqual((source_root / original).read_bytes(), raw)
+
     def test_party_source_capture_root_api(self):
         import io
         from email.message import Message
