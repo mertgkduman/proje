@@ -43,5 +43,26 @@
     "reason": "Askerlikte vicdani ret değil, milletvekilinin oylamadaki vicdani kanaati."
   },
   "limitations": "Literal tarama farklı ifadelerle dile getirilmiş olası açıklamaları, başka yayınları ve arama dizini dışındaki kaynakları kapsamaz. API 297 kesim sonrası oluşturulmuş olup kapsam içi kanıt sayılmaz.",
-  "next": "Eşanlamlı ve üye/kurum bazlı hedefli araştırma ile özgün belgeler sürdürülmeli; bu gözlem closure veya genel yokluk sonucu değildir."
+  "next": "Eşanlamlı ve üye/kurum bazlı hedefli araştırma ile özgün belgeler sürdürülmeli; bu gözlem closure veya genel yokluk sonucu değildir.",
+  "followup_search": {
+    "searched_at": "2026-11-22T04:10:31.171738+00:00",
+    "queries": [
+      "\"Yeni Parti\" \"zorunlu askerlik\" \"vicdan\" 2026",
+      "\"Yeni Parti\" \"askerlik\" \"vicdani ret hakkı\" 2026",
+      "\"Özgür Özel\" \"vicdani ret\" askerlik 2026",
+      "\"Deniz Yavuzyılmaz\" \"vicdani ret\" askerlik"
+    ],
+    "examined": [
+      {
+        "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/24/2/25/d6c8a7d1-6147-4e59-aca8-d4a46a922a84.html",
+        "reason": "2011 TBMM tutanağında vicdani ret hakkını savunan pasaj Hasan Ören konuşmasındadır. Aynı uzun tutanakta Özgür Özel adı geçmesi o pasajın kendisine ait olduğunu göstermez; Yeni Parti kuruluşundan önceki belge parti söylemi olarak kullanılmadı."
+      },
+      {
+        "url": "https://www.amedtv.com/politika/ozgur-ozelin-serbestlik-karari-yeni-partide-catlak-mi-yaratti-vekillerden-pese-pese-ret-karari/408694",
+        "reason": "Vicdani serbestlik ifadesi milletvekillerinin siyasi oylamasına ilişkindir; askerlik vicdani reddiyle eşleştirilmedi."
+      }
+    ],
+    "status": "open",
+    "limitation": "Dört sorgu, erişilen sonuçlarla sınırlı; diğer söylem ve kaynaklara genel yokluk çıkarımı yapılamaz."
+  }
 }
