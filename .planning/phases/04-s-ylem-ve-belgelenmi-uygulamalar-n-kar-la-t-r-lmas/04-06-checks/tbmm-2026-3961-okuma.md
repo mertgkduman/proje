@@ -1,0 +1,7 @@
+# 5 Kasım 2026: 2/3961 görüşmesinde DEM grubu
+
+TBMM'nin [28. dönem 5. yasama yılı 14. birleşim ham tutanağı](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/5/14/Ham/7a9ec4d0-5611-415d-a3f5-6c7d1677d672.html) özgün HTML SHA256 `9932391523b6e5ed7ff6d9c824753f2565727588e1c5cdf91991ea49e22a9e29`, pasif görünüm `2ed1d3ba21543991ee1f08e52bbe1cfe` olarak doğrulanıp saklandı. Kaynak Windows-1254 kodlamalıdır. Bu belge yöntem kesiminden önceki bir birleşimi kaydeder; sonradan erişilmiş olması olay tarihini değiştirmez.
+
+2/3961 ve 295 sıra sayılı ortak savunma anlaşmasını uygun bulma teklifi görüşmesinde Muş milletvekili Sezai Temelli DEM grubu adına konuştu. Anlaşmaya karşı olduklarını, NATO'ya ve NATO bağlantılı askerî anlaşmalara karşı tutumlarını açıkladı; komisyon sürecine yönelik eleştirilerini dile getirdi. Bunlar kendisine ve konuştuğu parti grubuna atfedilen değerlendirmelerdir. Aynı tutanakta farklı grup ve milletvekillerinin destek ve itirazları da vardır.
+
+Kongre kararlarındaki barışçı diplomasi, çatışma yerine diyalog ve askeri güç gösterisine dayanan siyasetten uzaklaşma hedefleri bu açıklamayla karşılaştırılabilir. Bir konuşmadan anlaşmanın etkisi, dış politika sonucu veya partinin başka bütün oyları çıkarılmaz. Açık oylama kesin sonuçlarının tutanağa eklendiği bildiriliyor; ham HTML'nin çıkarılan metninde isimli tablo bulunmadığından bireysel ya da grup oyu henüz doğrulanmadı. Komisyondaki metin, 4 Kasım görüşmesi ve oylama eki ayrıca okunacak; bu not kaynak veya kapsam kapanışı değildir.
