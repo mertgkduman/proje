@@ -229,3 +229,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 275–279 metin katmanı okundu: UDSEP eylem örnekleri, AFAD’ın rapordaki ilerleme değerlendirmesi ve TAMP çözüm ortakları listesi yer alıyor. Afet müdahalesindeki ortaklık, 2020 komisyonunda temsil ya da Baş’ın önerisine nedensel cevapla eşitlenmedi; grafikler görsel olarak incelenmedi. İndeks 280 ve sonrası açık.
 
 - 2021 raporu indeks 280–284 metin katmanı okundu: TAMP müdahale seviyeleri ile Elazığ/İzmir arama kurtarma, beslenme ve geçici barınma hakkında raporun kaynaklı kurum beyanları var. Deprem müdahalesindeki bakanlık ve STK katılımı komisyona sendikal sağlık çalışanı katılımı ya da Baş talebinin sonucu değildir. İndeks 285 ve sonrası açık.
+
+- 2021 raporu indeks 285–289 metin katmanı okundu: sağlık, haberleşme, enerji, tahliye, nakliye ve hasar tespiti gruplarının görevleri ve 2020 depremlerine dair kurum anlatımları bulunuyor. Afet müdahalesinde sağlık personeli görevlendirilmesi komisyona sağlık çalışanı örgütü davetiyle aynı şey değildir; TİP bağlantısı kurulmadı. İndeks 290 ve sonrası açık.
