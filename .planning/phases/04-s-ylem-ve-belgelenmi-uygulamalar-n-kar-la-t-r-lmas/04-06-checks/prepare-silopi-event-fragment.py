@@ -3,6 +3,10 @@ import datetime,json
 from pathlib import Path
 p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks');read=lambda n:json.loads((p/n).read_text())
 entries=[x for x in read('institutional-source-slices-draft.json')['entries'] if (x['values'].get('id') or x['values'].get('version_id','')).startswith(('0406-silopi','0406-silopi-dha'))]
+for item in entries:
+ if item['kind']=='source_attribution' and item['values']['version_id']=='0406-silopi-v1':
+  item['values']['publisher']='HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ'
+  item['values']['basis']='Açıklama Demokratik Yerel Yönetimler Kuruluna atfedilir; aynı www.demparti.org.tr ana makinesinde tam hukuki adı taşıyan 11 Aralık 2023 parti yayını yayıncı ilişkisini destekler.'
 entries+=read('silopi-reply-slices-draft.json')['entries'];now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 def add(k,**v):entries.append(dict(kind=k,values=v))
 official='0406-silopi-p'; init='0406-silopi-dha-p'; reply='0406-silopi-reply-3jul-p'; result='0406-silopi-dha-result-p'
