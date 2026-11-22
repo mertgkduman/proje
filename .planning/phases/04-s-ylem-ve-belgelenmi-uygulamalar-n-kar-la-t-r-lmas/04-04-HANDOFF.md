@@ -215,3 +215,15 @@ Kırıkkale ve Yozgat üç yerel sonucu HTTP 200 yakalama ve okuma makbuzu `a283
 - 029: 175[2898:13000], 174[0:591], 173[0:627], 172[0:987], 171[0:35167].
 
 197 Sosyal Demokrasi Derneği ile protokol imzası parti duyurusunda; Cumhuriyet 8 Ekim 16:34 parti açıklamasına dayanıyor, bağımsız kaynak gibi gösterilmez. 206 Zeynel Emre okul güvenliği ve ücretsiz yemek için teklif/ret iddiası; kesin TBMM işlem zinciri root araştırmasında. 188 ilçe ön seçiminde yüzde 62,5 katılım ve 820 resmî ilçe kongresi parti beyanı, 171’in 61 saha ili ayrı; hiçbiri 69 il toplamı değildir. 182 altı Artvin belediye başkanı için birlikte olma beyanı üyelik kanıtı yerine geçmez. 178 maden göçüğünde o andaki 2 ölüm/3 aranan sayısı nihai bilanço değil. Yeni source-reading makbuzları kapanış açmadı; kapsam ve tam paket doğrulaması devam ediyor.
+
+### Devam: 030–036 gerçek kaynak okuması
+030–036 makbuzları a429a2d, 7ccefc0, 1fbd698, 291271a, 5ae0abb, bd95c9f ve 40ceb93 commitlerinde; 58 dilimden 36 gerçek okundu, 037–058 açık. Bu oran 610 hücreye ilişkin kapanış ölçüsü değildir.
+- 030: 171[35167:36428], 170[0:11365], 169[0:511], 168[0:22802], 167[0:702], 166[0:11151].
+- 031: 166[11151:20737], 165[0:20425], 164[0:17164].
+- 032: 164[17164:23756], 163[0:5556], 162[0:262], 161[0:728], 160[0:12598], 159[0:22142].
+- 033: 158[0:5074], 157[0:2931], 156[0:13381], 155[0:7922], 154[0:645], 153[0:853], 152[0:506], 151[0:16606].
+- 034: 150[0:519], 149[0:21266], 148[0:15303], 147[0:277], 146[0:123], 145[0:4171], 144[0:5835], 143[0:164].
+- 035: 143[164:11237], 142[0:7241], 141[0:548], 140[0:14398], 139[0:9886], 138[0:3560].
+- 036: 138[3560:17251], 137[0:11815], 136[0:9183], 135[0:476], 134[0:8958], 133[0:3084], 132[0:220], 131[0:390], 130[0:62].
+
+164 ilçe önseçim ilk gününde 174 ilçe (92 tek aday, 82 yarışlı; 42 mevcut/40 rakip kazanma) parti beyanıdır; 159 Gaziemir Çağrı Şırlancı/Orkan Yılmaz ve 163 Yunusemre Yalçın Arcak/Hasan İmamoğlu adaylıklarını, sonraki resmî kongreden ayrı verir. 153 ve 156 Alevi kurumlarının nezaket ziyareti ve taleplerini açıklıyor, anlaşma kanıtı yok. 140 peyzaj mimarı için yazılacak belediye talimatı, henüz uygulanmış karar değil. 134 Bozbey’in mevcut üyeliğini değil gelecek rozet niyetini söylüyor. 131 50 günde 158202 bağışçı, aidat dahil 561631100 TL parti iddiası; kesin hesap değil. Kalan bütün source uçları makbuzlarda açık. 62385192 ve 62386745 input/source PASS, preview sürüyor; 62387440 input denetimi root bildirimine göre çalışıyor. Daha sonraki gerçek sonuç için root alındısını bekle. Canlı 56/57, canonical değişmedi, görevler ve 610 hücre açık.
