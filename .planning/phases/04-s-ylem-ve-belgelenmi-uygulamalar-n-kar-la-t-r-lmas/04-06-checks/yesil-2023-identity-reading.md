@@ -1,0 +1,3 @@
+# Benzer isimli ayrı parti: sicil ayırımı
+
+Yargıtay Cumhuriyet Başsavcılığı https://www.yargitaycb.gov.tr/sipar/292 sayfası 22 Kasım 2026 erişiminde Yeşil Sol Parti, kısa adı YSP, kuruluş tarihi 24.11.2023 bilgisini gösterir; özgün bayt SHA-256 7aa00e31f4aacafac877496b934fccc49a5b043c09cceec81468e2efdd26aa7a ile arşivlendi. Bu kuruluş kaydı, önceki Yargıtay listesinde 30.11.2012 kuruluşlu Yeşiller ve Sol Gelecek Partisi ile aynı kayıt olarak sunulamaz. Benzer kısa ad veya bir belgenin alan adı tek başına parti kimliğini, tarihsel aidiyeti yahut bugünkü program olarak yürürlüğü kanıtlamaz. Sayfanın yayın tarihi ve kesim anındaki içeriği belirlenmedi; kişisel başkanlık/üye bilgileri tarihsel olarak genellenmez.
