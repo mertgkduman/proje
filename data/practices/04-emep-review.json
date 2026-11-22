@@ -249,6 +249,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-mersin-nuclear-2026-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0410-emep-mersin-nuclear-2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-mersin-nuclear-2026-party-actor-p\", \"0410-emep-mersin-nuclear-2026-party-event-p\", \"0410-emep-mersin-nuclear-2026-party-headline-p\"]",
+      "inspected_sections": "[\"Katılım ve parti sözcüsü\", \"Mersin il örgütünün basın açıklaması\", \"Parti yayınının nükleer karşıtı açıklama başlığı\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-mersin-nuclear-2026-event için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-mesem-104180-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:41:53+00:00",
@@ -938,6 +951,45 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-actor-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0410-emep-mersin-nuclear-2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-mersin-nuclear-2026-party-actor-p\"]",
+      "inspected_sections": "[\"Katılım ve parti sözcüsü\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-actor-p|initiative için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-event-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0410-emep-mersin-nuclear-2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-mersin-nuclear-2026-party-event-p\"]",
+      "inspected_sections": "[\"Mersin il örgütünün basın açıklaması\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-event-p|initiative için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-headline-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0410-emep-mersin-nuclear-2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-mersin-nuclear-2026-party-headline-p\"]",
+      "inspected_sections": "[\"Parti yayınının nükleer karşıtı açıklama başlığı\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-headline-p|initiative için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mesem-104180-event|0410-emep-research-104180-register-date-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:41:53+00:00",
@@ -1536,6 +1588,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mersin-nuclear-2026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mersin-nuclear-2026-party-v1\"]",
+      "passage_ids": "[\"0309-emep-program-029-0-passage\", \"0410-emep-mersin-nuclear-2026-party-actor-p\", \"0410-emep-mersin-nuclear-2026-party-event-p\", \"0410-emep-mersin-nuclear-2026-party-headline-p\"]",
+      "inspected_sections": "[\"G/C/5-a\", \"Katılım ve parti sözcüsü\", \"Mersin il örgütünün basın açıklaması\", \"Parti yayınının nükleer karşıtı açıklama başlığı\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-mersin-nuclear-2026-relation için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-mesem-104180-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:41:53+00:00",
@@ -1897,6 +1962,19 @@
       "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-mekke-vote-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mersin-nuclear-2026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mersin-nuclear-2026-party-v1\"]",
+      "passage_ids": "[\"0309-emep-program-029-0-passage\", \"0410-emep-mersin-nuclear-2026-party-actor-p\", \"0410-emep-mersin-nuclear-2026-party-event-p\", \"0410-emep-mersin-nuclear-2026-party-headline-p\"]",
+      "inspected_sections": "[\"G/C/5-a\", \"Katılım ve parti sözcüsü\", \"Mersin il örgütünün basın açıklaması\", \"Parti yayınının nükleer karşıtı açıklama başlığı\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-mersin-nuclear-2026-relation için ilgili program ve parti yayın pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -2407,6 +2485,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mersin-nuclear-2026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-029-0-passage\"]",
+      "inspected_sections": "[\"G/C/5-a\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-mersin-nuclear-2026-relation için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-mesem-104180-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:41:53+00:00",
@@ -2654,6 +2745,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-nuclear-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-029-0-passage\"]",
+      "inspected_sections": "[\"G/C/5-a\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-nuclear-statement için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-safety-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:49:24+00:00",
@@ -2846,6 +2950,19 @@
       "limitations": "Teklifin kabulü, yürürlüğü veya belediyelere fiilî etkisi gösterilmedi.",
       "result": "reviewed",
       "reason": "practice_statement.quote_finding_id / 0410-municipal-statement için program, TBMM kayıt ve imzalı teklif incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-nuclear-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-029-0-passage\"]",
+      "inspected_sections": "[\"G/C/5-a\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-nuclear-statement için ilgili program ve parti yayın pasajları okundu."
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -3044,6 +3161,19 @@
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-nuclear-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:01:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-029-0-passage\"]",
+      "inspected_sections": "[\"G/C/5-a\"]",
+      "supported_claim": "Program nükleer santral yasağı ister; tarihli parti haberi Mersin açıklamasını bildirir.",
+      "limitations": "Olay günü ve açıklamanın sonucu bağımsız doğrulanmadı; haberdeki sayısal iddialar ayrıca sınanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-nuclear-statement için ilgili program ve parti yayın pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-safety-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:49:24+00:00",
@@ -3158,6 +3288,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-mekke-vote-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-mersin-nuclear-2026-event"
     },
     {
       "subject_kind": "practice_event",
@@ -3373,6 +3507,18 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-actor-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-event-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mersin-nuclear-2026-event|0410-emep-mersin-nuclear-2026-party-headline-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mesem-104180-event|0410-emep-research-104180-register-date-p|action"
     },
     {
@@ -3557,6 +3703,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mersin-nuclear-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-mesem-104180-relation"
     },
     {
@@ -3669,6 +3819,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mersin-nuclear-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-mesem-104180-relation"
     },
     {
@@ -3825,6 +3979,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mersin-nuclear-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-mesem-104180-relation"
     },
     {
@@ -3901,6 +4059,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-nuclear-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-safety-statement"
     },
     {
@@ -3961,6 +4123,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-nuclear-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-safety-statement"
     },
     {
@@ -4018,6 +4184,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-municipal-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-nuclear-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
