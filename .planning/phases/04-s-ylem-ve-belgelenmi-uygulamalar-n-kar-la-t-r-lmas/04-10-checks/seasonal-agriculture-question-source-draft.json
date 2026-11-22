@@ -1,5 +1,5 @@
 {
-  "status": "source_read_partial",
+  "status": "source_read_package_pending",
   "entries": [
     {
       "kind": "document",
@@ -142,7 +142,7 @@
         "original_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y3/T7/WebOnergeMetni/180ca1da-046a-4ade-8f16-071a708160fb.pdf",
         "final_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y3/T7/WebOnergeMetni/180ca1da-046a-4ade-8f16-071a708160fb.pdf",
         "document_date": null,
-        "version_label": "Bakanlık yanıtı; görsel okuma bekliyor",
+        "version_label": "Bakanlık yanıtı; tek sayfa özgün PDF görsel okundu",
         "accessed_at": "2026-11-22T17:39:04+00:00",
         "verified_at": "2026-11-22T17:39:04+00:00",
         "mime": "application/pdf",
@@ -168,5 +168,5 @@
       }
     }
   ],
-  "note": "Kayıt İskender Bayhan, 27 Ağustos 2025 soru ve 29 Haziran 2026 yanıt bildirimi gösteriyor. Soru PDF OCR metin katmanında soyadı BAYMAN çıktığı için kimlik kaydı asıl TBMM ekranından alınır; imza görseli henüz doğrulanmadı. Yanıt PDF metin katmanı boş ve görsel okuması açık. Sorudaki iddialar kesin olgu kabul edilmez."
+  "note": "TBMM kaydı, 27 Ağustos 2025 soru ve 29 Haziran 2026 yanıt bildirimi ayrı. Soru iki sayfa ve yanıt bir sayfa özgün PDF üzerinden görsel okundu: soru imzasında İskender BAYHAN açık; otomatik metin katmanının BAYMAN çıktısı hatalıdır. Bakanlığın proje, sağlık ve atık açıklamaları bakanlığa atfedilir; yerinde doğrulanmış sonuç değildir. Yanıtın metin katmanı boş, sahte metin pasajı eklenmedi."
 }
