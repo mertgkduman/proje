@@ -1,0 +1,64 @@
+{
+  "status": "draft_unvalidated",
+  "source_root": "data/practices/sources/yeni-parti",
+  "candidate_event_id": "0404-genelbaskan-onsecim",
+  "note": "Çağrı önseçim sonucuna değil öncesindeki sürece aittir; var olan olay kimliği kullanılmalı, yeni olay üretilmemeli.",
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yeni-parti-haber-275",
+        "party_id": "yeni-parti",
+        "title": "Özgür Özel: “Sıra Partinin Genel Başkanına Saldırmaya, Olmayacak Karalar Çalarak Tartışma Yaratmaya Geldi; Tüm Hedefleri, Muhalefeti Seçeneksiz Bırakmak”",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yeni-parti-haber-275-v1",
+        "document_id": "0404-yeni-parti-haber-275",
+        "original_url": "https://api.yeni-parti.org.tr/api/haberler/275",
+        "final_url": "https://api.yeni-parti.org.tr/api/haberler/275",
+        "document_date": "2026-11-03",
+        "version_label": "Kamuya açık JSON; created_at 2026-11-03T15:31:35.230Z (Türkiye günü 2026-11-03); yayın zamanı ayrıca belirlenmedi.",
+        "accessed_at": "2026-11-22T00:40:26+00:00",
+        "verified_at": "2026-11-22T00:54:22+00:00",
+        "mime": "application/json",
+        "sha256": "95ad689adaa48465c6dffb7e2bd007900096604f9acd434efbc2e3594ca5c554",
+        "original_path": "objects/95ad689adaa48465c6dffb7e2bd007900096604f9acd434efbc2e3594ca5c554/original.html.bin",
+        "readable_path": "objects/95ad689adaa48465c6dffb7e2bd007900096604f9acd434efbc2e3594ca5c554/readable.html",
+        "date_precision": "day",
+        "date_unknown_reason": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yeni-parti-haber-275-onsecim-p",
+        "version_id": "0404-yeni-parti-haber-275-v1",
+        "exact": "5 Kasım Günü mesai bitimine kadar il başkanlıklarında, ilçe başkanlıklarında kayıt olan herkes 8 Kasım günü sandık başına gelebilir. YENİ Parti’nin Genel Başkanını bizzat belirleyebilir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Grup toplantısında genel başkan önseçimi çağrısı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yeni-parti-haber-275-v1",
+        "kind": "party_publication",
+        "publisher": "Yeni Parti",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://api.yeni-parti.org.tr/api/haberler/275",
+        "basis": "Parti JSON içeriği ve created_at okundu; oluşturulma zamanı ayrı yayın tarihi değildir."
+      }
+    }
+  ]
+}
