@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 28
+RENDERER_VERSION = 29
 STYLE = Path(__file__).with_name('rapor_v25.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -490,7 +490,7 @@ def render_report(data):
             if topic_id is not None and not party_scopes:
                 pieces.append(f'<p class="muted">{esc(parties[party_id]["legal_name"])} — Söylem ve olay kapsamı: Henüz incelenmedi</p>')
             topics_with_scope = {s['topic_id'] for s in party_scopes}
-            for tid in topics_with_scope:
+            for tid in sorted(topics_with_scope):
                 present_kinds = {s['research_kind'] for s in party_scopes if s['topic_id'] == tid}
                 for missing_kind, label in (('statement', 'Söylem'), ('event', 'Olay')):
                     if missing_kind not in present_kinds:
