@@ -6,5 +6,8 @@ for entry in pkg['entries']:
     if entry['kind']=='source_attribution' and entry['values']['version_id'] in versions:
         v=entry['values'];v['published_at']=None;v['date_precision']='unknown';v['basis']='Parti JSON içeriği ve created_at zamanı okundu; created_at oluşturulma zamanıdır, ayrı yayın tarihi belirlenmedi.';changed.add(v['version_id'])
 assert changed==versions
+for row in review['practice_source_review']:
+    for field in ('supported_claim','limitations','reason','inspected_sections'):
+        row[field]=row[field].replace('291 yayın günü Türkiye saatinde 9 Kasımdır','291 kayıt oluşturma günü Türkiye saatinde 9 Kasımdır')
 (p/'package-creation-date-distinction-draft.json').write_text(json.dumps(pkg,ensure_ascii=False,indent=2)+'\n');(p/'creation-date-distinction-review-draft.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n')
 print('document creation retained; unknown publication',sorted(changed))
