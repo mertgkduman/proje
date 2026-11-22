@@ -361,3 +361,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - Aynı görüşmenin normalize metninde 363500–373000 okundu: Kenanoğlu'nun bina hasarı, vergi ve meslek odaları değerlendirmeleri biter; HDP adına Muazzez Orhan Işık konuşmaya başlar. İddialar ilgili konuşmacılara aittir, TİP'e veya doğrulanmış kurumsal sonuca atfedilmedi. Konum 373000 sonrası açık.
 
 - Aynı görüşmenin normalize metninde 373000–382500 okundu: Işık, HDP adına afetlerde ilk yardım için Türk Tabipleri Birliğiyle iş birliği ve önceden tatbikat yapılmasını önerir; erişilebilirlik ve diğer afet başlıklarında kendi görüşlerini sunar. Bu bir 5 Ekim 2021 konuşma önerisidir, TTB'nin komisyonda temsil edildiğinin veya önerinin uygulandığının kanıtı değildir; TİP'e atfedilmez. Konum 382500 sonrası açık.
+
+- Aynı görüşmenin normalize metninde 382500–392000 okundu: Işık'ın finansman, Van belediyesi ve barınma hakkındaki siyasi iddiaları ve önerileri biter; CHP adına Müzeyyen Şevkin konuşmaya başlar. Beyanlar konuşmacılara atfedilir ve bağımsızca doğrulanmış sonuç ya da TİP tutumu olarak kaydedilmez. Konum 392000 sonrası açık.
