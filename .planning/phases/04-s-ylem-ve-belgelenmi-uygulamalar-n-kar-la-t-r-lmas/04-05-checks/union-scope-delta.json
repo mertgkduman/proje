@@ -1,0 +1,105 @@
+{
+  "status": "draft_unvalidated",
+  "practice_records": {
+    "practice_scope_v2": [
+      {
+        "id": "practice-3b8ba9ff37698ed4b34920edb04c6da9a9fb2dbab22c2cbf720ed5f5d70684f3",
+        "party_id": "tip",
+        "topic_id": "sendika-grev",
+        "taxonomy_version": 4,
+        "period_start": "2017-11-07",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "Seçili kaynaklar incelendi; bütün dönem ve diğer ilgili uçlar açık, kapanış yapılmadı."
+      },
+      {
+        "id": "practice-b638d1dd02ce0fa532cc942ca0e066281e79cbdcd3881286acf32823c9cef946",
+        "party_id": "tip",
+        "topic_id": "sendika-grev",
+        "taxonomy_version": 4,
+        "period_start": "2017-11-07",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "Seçili kaynaklar incelendi; bütün dönem ve diğer ilgili uçlar açık, kapanış yapılmadı."
+      }
+    ],
+    "practice_attempt_v2": [
+      {
+        "id": "0405-sendika-statement-okuma-1",
+        "scope_id": "practice-3b8ba9ff37698ed4b34920edb04c6da9a9fb2dbab22c2cbf720ed5f5d70684f3",
+        "attempted_at": "2026-11-22T03:59:25.630864+00:00",
+        "query": "https://tip.org.tr/parti-programi",
+        "url": "https://tip.org.tr/parti-programi",
+        "result": "examined",
+        "reason": "İşçi sınıfı mücadelesi bölümünde sendikal örgütlenme ve toplu sözleşme hakları okundu.",
+        "source_version_id": "0203-tip-program-v1"
+      },
+      {
+        "id": "0405-sendika-event-okuma-1",
+        "scope_id": "practice-b638d1dd02ce0fa532cc942ca0e066281e79cbdcd3881286acf32823c9cef946",
+        "attempted_at": "2026-11-22T03:59:25.630864+00:00",
+        "query": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T2/WebOnergeMetni/9c60b46f-6665-479a-aa0f-9025c059f4e9.pdf",
+        "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T2/WebOnergeMetni/9c60b46f-6665-479a-aa0f-9025c059f4e9.pdf",
+        "result": "examined",
+        "reason": "İmzalı 2/4390 teklifinin 1. maddesi ve gerekçesi okundu.",
+        "source_version_id": "0405-tip-sendika-274390-pdf-v1"
+      },
+      {
+        "id": "0405-sendika-event-okuma-2",
+        "scope_id": "practice-b638d1dd02ce0fa532cc942ca0e066281e79cbdcd3881286acf32823c9cef946",
+        "attempted_at": "2026-11-22T03:59:25.630864+00:00",
+        "query": "https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d28/c001/tbmm28001001.pdf",
+        "url": "https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d28/c001/tbmm28001001.pdf",
+        "result": "examined",
+        "reason": "2 Haziran 2023 tutanak basılı 200. sayfada 2/4390 hükümsüz listesi okundu.",
+        "source_version_id": "0405-tip-sendika-hukumsuz-v1"
+      }
+    ],
+    "practice_scope_source": [
+      {
+        "scope_id": "practice-3b8ba9ff37698ed4b34920edb04c6da9a9fb2dbab22c2cbf720ed5f5d70684f3",
+        "version_id": "0203-tip-program-v1",
+        "inspected_sections": "[\"İşçi sınıfı mücadelesi bölümünde sendikal örgütlenme ve toplu sözleşme hakları okundu.\"]",
+        "inspected_at": "2026-11-22T03:59:25.630864+00:00"
+      },
+      {
+        "scope_id": "practice-b638d1dd02ce0fa532cc942ca0e066281e79cbdcd3881286acf32823c9cef946",
+        "version_id": "0405-tip-sendika-274390-pdf-v1",
+        "inspected_sections": "[\"İmzalı 2/4390 teklifinin 1. maddesi ve gerekçesi okundu.\"]",
+        "inspected_at": "2026-11-22T03:59:25.630864+00:00"
+      },
+      {
+        "scope_id": "practice-b638d1dd02ce0fa532cc942ca0e066281e79cbdcd3881286acf32823c9cef946",
+        "version_id": "0405-tip-sendika-hukumsuz-v1",
+        "inspected_sections": "[\"2 Haziran 2023 tutanak basılı 200. sayfada 2/4390 hükümsüz listesi okundu.\"]",
+        "inspected_at": "2026-11-22T03:59:25.630864+00:00"
+      }
+    ],
+    "practice_lead": [
+      {
+        "id": "lead-0405-sendika-statement-okuma-1",
+        "scope_id": "practice-3b8ba9ff37698ed4b34920edb04c6da9a9fb2dbab22c2cbf720ed5f5d70684f3",
+        "url": "https://tip.org.tr/parti-programi",
+        "relevance_reason": "İşçi sınıfı mücadelesi bölümünde sendikal örgütlenme ve toplu sözleşme hakları okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-sendika-statement-okuma-1\"]"
+      },
+      {
+        "id": "lead-0405-sendika-event-okuma-1",
+        "scope_id": "practice-b638d1dd02ce0fa532cc942ca0e066281e79cbdcd3881286acf32823c9cef946",
+        "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T2/WebOnergeMetni/9c60b46f-6665-479a-aa0f-9025c059f4e9.pdf",
+        "relevance_reason": "İmzalı 2/4390 teklifinin 1. maddesi ve gerekçesi okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-sendika-event-okuma-1\"]"
+      },
+      {
+        "id": "lead-0405-sendika-event-okuma-2",
+        "scope_id": "practice-b638d1dd02ce0fa532cc942ca0e066281e79cbdcd3881286acf32823c9cef946",
+        "url": "https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d28/c001/tbmm28001001.pdf",
+        "relevance_reason": "2 Haziran 2023 tutanak basılı 200. sayfada 2/4390 hükümsüz listesi okundu.",
+        "state": "examined",
+        "attempt_ids": "[\"0405-sendika-event-okuma-2\"]"
+      }
+    ]
+  }
+}
