@@ -1,0 +1,37 @@
+{
+  "package_sha256": "3a482b3093b1a476633284c09ad2dcabbef6039b56f47b477b71217d6dbb367a",
+  "original_review_sha256": "3c8aba27b952e1f267405bc3832352c1fb928cb9cb4781d380a5d12d068b7aa6",
+  "checked_at": "2026-11-22T00:31:11+00:00",
+  "source_reviews": 424,
+  "verified_findings": 98,
+  "changes": [
+    {
+      "target_kind": "practice_relation",
+      "target_id": "0404-tbmm-grup-secim-0724-iliski-id",
+      "added_passages": [
+        "0303-epm-grup-tbmm-grup-p3",
+        "0303-epm-grup-tbmm-grup-p4",
+        "0303-epm-grup-tbmm-grup-p5"
+      ]
+    },
+    {
+      "target_kind": "practice_relation",
+      "target_id": "0404-tbmm-grup-yonetim-0728-iliski-id",
+      "added_passages": [
+        "0303-epm-grup-tbmm-grup-p3",
+        "0303-epm-grup-tbmm-grup-p4",
+        "0303-epm-grup-tbmm-grup-p5"
+      ]
+    },
+    {
+      "target_kind": "practice_relation.target_finding_id",
+      "target_id": "0404-tbmm-grup-yonetim-0728-iliski-id",
+      "added_passages": [
+        "0303-epm-grup-tbmm-grup-p3",
+        "0303-epm-grup-tbmm-grup-p4",
+        "0303-epm-grup-tbmm-grup-p5"
+      ]
+    }
+  ],
+  "result": "source review validation passed"
+}
