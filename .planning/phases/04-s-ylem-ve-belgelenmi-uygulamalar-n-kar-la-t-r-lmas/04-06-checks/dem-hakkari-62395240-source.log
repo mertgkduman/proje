@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3663, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3513, in main
+    render_practice_preview(package, Path(tmp) / 'preview', base_release=package.get('base_release'), source_root=source_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1412, in render_practice_preview
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1605, in _render_practice_preview
+    arsiv.validate_phase_one_html(data, report)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3268, in validate_phase_one_html
+    raise ValueError('Bulgu HTML içinde eksik')
+ValueError: Bulgu HTML içinde eksik
