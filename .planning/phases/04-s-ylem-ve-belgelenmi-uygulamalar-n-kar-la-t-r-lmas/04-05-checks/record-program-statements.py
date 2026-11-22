@@ -29,7 +29,13 @@ topics={
  'ifade-basin-ozgurlugu':(['0304-tip-program-ifade-p1'],'Program örgütlenme, eylem, ifade ve basın özgürlüklerinin korunması ve geliştirilmesi için mücadele eder.'),
  'kurt-sorunu':(['0304-tip-program-kurt-esitlik-p1','0304-tip-program-kurt-esitlik-p2'],'Program Kürt halkının eşit yurttaşlığını, anadilde eğitim ve yaşamı ve kendi geleceğini belirleme hakkını savunur; hakkın kullanımına tutumunu sınıf mücadelesinin çıkarları doğrultusunda oluşturur.'),
  'anadil-hakki':(['0304-tip-program-anadil-p1'],'Program Kürt halkının eşit yurttaşlık mücadelesini ve anadilde eğitim ile yaşam hakkını destekler.'),
- 'genclik':(['0304-tip-program-genclik-p1'],'Program gençlerin ülke yönetiminde daha çok söz sahibi olması için çaba söyler; bu pasaj ayrı katılım kurulu veya seçim mekanizması tanımlamaz.')}
+ 'genclik':(['0304-tip-program-genclik-p1'],'Program gençlerin ülke yönetiminde daha çok söz sahibi olması için çaba söyler; bu pasaj ayrı katılım kurulu veya seçim mekanizması tanımlamaz.'),
+ 'teknoloji-inovasyon':(['0304-tip-program-teknoloji-p1'],'Program teknolojinin toplumsal çıkar doğrultusunda geliştirilmesini, çalışma saatlerinin azaltılması ve yaratıcılık için kullanılmasını savunur.'),
+ 'kamucu-planli-ekonomi':(['0304-tip-program-ekonomi-p1'],'Program ekonomik bağımsızlık ve kamucu, planlı üretimi refahın koşulu görür.'),
+ 'kamulastirma':(['0304-tip-program-kamulastirma-p1'],'Program özelleştirilen toplumsal varlıkların kamulaştırılmasını hedefler.'),
+ 'doga-ekoloji':(['0304-tip-program-doga-p1'],'Program doğa ve kamusal alan yağmasına, betonlaşmaya ve doğal varlıkların metalaştırılmasına karşı mücadeleyi anlatır.'),
+ 'dis-politika':(['0304-tip-program-dis-sosyalizm-p1','0304-tip-program-dis-sosyalizm-p2'],'Programın sosyalist Türkiye modelinde emperyalizme bağımlı kılan kurumlar ve bağımsızlığı ihlal eden anlaşmalarla ilişkilerin sonlandırılması, barış ve halkların kardeşliği öngörülür; model koşulu korunur.'),
+ 'sehircilik':(['0304-tip-program-sehir-p1'],'Program kentlerde betonlaşma ve mega projeleri durdurmayı hedefler.')}
 passages={x['values']['id']:x['values']['exact'] for x in comparison if x['kind']=='passage'}
 for ids,_ in topics.values():
  for ident in ids: assert passages[ident] in source,ident
@@ -40,5 +46,5 @@ for row in data['tranches']:
  ids,note=topics[row['topic_id']]
  row['research_progress']=dict(recorded_at=datetime.now(timezone.utc).isoformat(),note=note+' Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.',source_ids=['0203-tip-program-v1'],urls=['https://tip.org.tr/parti-programi'],source_passage_ids=ids,status='partial')
  count+=1
-assert count==23
+assert count==29
 path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print('PARTIAL_STATEMENT_LINKS',count)
