@@ -16,7 +16,11 @@ topics={
  'nato-iliskileri':(['0304-tip-program-nato-p1'],'Program NATO dahil emperyalist olarak nitelediği kurumlara ve Türkiye’nin bu kuruluşlarla ilişkilerine karşı mücadele edeceğini belirtir.'),
  'yabanci-askeri-usler':(['0304-tip-program-yabanci-us-p1'],'Program İncirlik ve Kürecik dahil Türkiye’deki yabancı askerî üslere karşı mücadele edeceğini belirtir.'),
  'sagliga-erisim':(['0304-tip-program-saglik-p1'],'Program herkese ücretsiz, ulaşılabilir ve anadilde sağlık hizmetini ve koruyucu hekimliği savunur; sağlık ocakları ve hastaneler kurulması için çaba söyler.'),
- 'toplumsal-cinsiyet':(['0304-tip-program-kadin-p1','0304-tip-program-kadin-p2'],'Program kadınların ataerki ve sermaye egemenliğine karşı mücadelesini destekler; incelenen bölüm belirli bir şiddet başvuru kurumu tanımlamaz.')}
+ 'toplumsal-cinsiyet':(['0304-tip-program-kadin-p1','0304-tip-program-kadin-p2'],'Program kadınların ataerki ve sermaye egemenliğine karşı mücadelesini destekler; incelenen bölüm belirli bir şiddet başvuru kurumu tanımlamaz.'),
+ 'cocuk-haklari':(['0304-tip-program-cocuk-p1','0304-tip-program-cocuk-p2'],'Program 18 yaş altını çocuk sayar ve çocukların çeşitli hakları ile şiddet ve sömürüden korunması için mücadeleyi anlatır.'),
+ 'temiz-enerji-gecisi':(['0304-tip-program-enerji-p1'],'Program temiz ve yenilenebilir enerji kaynaklarının planlı kullanımını destekler; belirli kapanış tarihi veya gerçekleşme oranı vermez.'),
+ 'orman-su-yonetimi':(['0304-tip-program-su-p1'],'Program temiz su ve gıdaya erişimi temel hak sayar; bu pasaj ayrı bir orman veya su idaresi modeli tanımlamaz.'),
+ 'yargi-bagimsizligi':(['0304-tip-program-adalet-p1'],'Program bağımsız ve tarafsız yargı, savunmanın bağımsızlığı ve adalete erişimde ekonomik engellerin kaldırılmasını savunur.')}
 passages={x['values']['id']:x['values']['exact'] for x in comparison if x['kind']=='passage'}
 for ids,_ in topics.values():
  for ident in ids: assert passages[ident] in source,ident
@@ -27,5 +31,5 @@ for row in data['tranches']:
  ids,note=topics[row['topic_id']]
  row['research_progress']=dict(recorded_at=datetime.now(timezone.utc).isoformat(),note=note+' Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.',source_ids=['0203-tip-program-v1'],urls=['https://tip.org.tr/parti-programi'],source_passage_ids=ids,status='partial')
  count+=1
-assert count==10
+assert count==14
 path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print('PARTIAL_STATEMENT_LINKS',count)
