@@ -7,3 +7,5 @@ Ayrı çalışma dizinindeki odak testi renderer 30 ile «Bulgu HTML içinde eks
 İlk izole 62409143 ve 62409144 işleri kaynak aşamasına ulaşmadan geçici dizinin yanlışlıkla izlediği Python bayt kodu nedeniyle durdu. Yalnız izole dizinin Git dizini düzeltildi. Aynı adayların tekrar çalıştırmaları 62409235 ve 62409236 numaralarını aldı. Renderer 30 kullanan Demokrat Parti 62408181 ve DEM Parti 62409142 işlemleri ana kaynak dosyaları değiştirilmeden tamamlandı.
 
 Renderer 30 dönemindeki 15 odak testi ve birleştirme sırası için ayrı uzun test geçti. Renderer 31'in ilk doğrulama kapsamı, eşleşmeyen katkı testi ve arşiv HTML tekrar üretimidir. Parti önizlemeleri kendi doğrulama kayıtlarına sahiptir.
+
+Renderer 31 kaynaklarıyla 7 kapsam ve 8 birleştirme motoru testi daha çalıştırıldı. 15 testin tamamı geçti. [Test çıktısı](wave4-v31-coverage-and-merge.log)
