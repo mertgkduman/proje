@@ -27,7 +27,7 @@ topics={
  'guvencesiz-istihdam':(['0304-tip-program-guvence-p1'],'Program güvenceli çalışma hakkı için mücadeleye katılmayı savunur; ilgili pasaj ayrı istihdam güvencesi düzenlemesi vermez.'),
  'halk-meclisi':(['0304-tip-program-halk-meclis-p1'],'Program iş ve yaşam alanlarında meclis tipi halk örgütlenmelerini ve koordinasyonunu savunur.'),
  'ifade-basin-ozgurlugu':(['0304-tip-program-ifade-p1'],'Program örgütlenme, eylem, ifade ve basın özgürlüklerinin korunması ve geliştirilmesi için mücadele eder.'),
- 'kurt-sorunu':(['0304-tip-program-kurt-esitlik-p1','0304-tip-program-kurt-esitlik-p2'],'Program Kürt halkının eşit yurttaşlığını, anadilde eğitim ve yaşamı ve kendi geleceğini belirleme hakkını savunur; hakkın kullanımına tutumunu sınıf mücadelesinin çıkarları doğrultusunda oluşturur.'),
+ 'kurt-sorunu':(['0304-tip-program-kurt-esitlik-p1','0304-tip-program-kurt-esitlik-p2'],'Program Kürt halkının eşit yurttaşlık mücadelesini destekler, anadilde eğitim ve yaşam hakkını benimser ve kendi geleceğini belirleme hakkını kabul eder; hakkın kullanımına tutumunu sınıf mücadelesinin çıkarları doğrultusunda oluşturur.'),
  'anadil-hakki':(['0304-tip-program-anadil-p1'],'Program Kürt halkının eşit yurttaşlık mücadelesini ve anadilde eğitim ile yaşam hakkını destekler.'),
  'genclik':(['0304-tip-program-genclik-p1'],'Program gençlerin ülke yönetiminde daha çok söz sahibi olması için çaba söyler; bu pasaj ayrı katılım kurulu veya seçim mekanizması tanımlamaz.'),
  'teknoloji-inovasyon':(['0304-tip-program-teknoloji-p1'],'Program teknolojinin toplumsal çıkar doğrultusunda geliştirilmesini, çalışma saatlerinin azaltılması ve yaratıcılık için kullanılmasını savunur.'),
