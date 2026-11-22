@@ -1,0 +1,53 @@
+{
+  "job": "62435207",
+  "status": "COMPLETED 0:0; input/source/preview and independent audit pass",
+  "renderer": 29,
+  "package_sha256": "f6aaa0b26d485e76ec85175ca1c8a44a55323a01f9b6a7ee20090983bfbddba4",
+  "review_sha256": "a8e9fb9c62beb34b5bd6062e15fdd96c954de2e3c335f49e086009cd65a3c23f",
+  "release": "data/.staging/gsd-0410-kocdiscipline-62435207/preview/releases/6a5fb9c32bc44b10b99540842f2627f7",
+  "files_sha256": {
+    "manifest.json": "0857ec2354c1956ac3391ceea4f4dfe5c6be4d22f2e8901383503476d323ea51",
+    "records.json": "e84b4e9e6cf8d8de607cae18690f428818641cb6102a798dc1e92a8dd6e9719f",
+    "records.sqlite3": "b5650d4c3fc282da51b14a23de31bccc76d127808860a21a592141afc17224db",
+    "index.html": "d7ec205a694be45042735cd9f0535935d2aa25d16e4dafed01e63ced42f3fb9f"
+  },
+  "canonical_current_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "event_count": 26,
+  "relations": 28,
+  "old_package_preserved": true,
+  "unchanged_reviews_exact": true,
+  "reread_reviews_prior_content_and_passages_preserved": [
+    {
+      "subject": [
+        "practice_event",
+        "0410-kocaeli-2026-congress-event"
+      ],
+      "old_passage_ids": [
+        "0410-emep-kocaeli-2026-news-result-p"
+      ],
+      "new_passage_ids": [
+        "0410-emep-kocaeli-2026-congress-ozgun-discipline-p",
+        "0410-emep-kocaeli-2026-news-result-p"
+      ]
+    },
+    {
+      "subject": [
+        "practice_relation",
+        "0410-kocaeli-2026-congress-relation"
+      ],
+      "old_passage_ids": [
+        "0410-emep-kocaeli-2026-news-result-p",
+        "0410-emep-kocaeli-charter-202305-p",
+        "0410-emep-kocaeli-charter-selected-p"
+      ],
+      "new_passage_ids": [
+        "0410-emep-kocaeli-2026-congress-ozgun-discipline-p",
+        "0410-emep-kocaeli-2026-news-result-p",
+        "0410-emep-kocaeli-charter-202305-p",
+        "0410-emep-kocaeli-charter-selected-p"
+      ]
+    }
+  ],
+  "both_view_href_pass": true,
+  "scope_closures": 0
+}
