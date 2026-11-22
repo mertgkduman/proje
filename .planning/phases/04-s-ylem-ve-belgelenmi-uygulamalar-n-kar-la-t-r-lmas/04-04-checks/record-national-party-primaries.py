@@ -1,0 +1,5 @@
+import json
+from pathlib import Path
+p=Path('data/practices/04-yeni-parti-tranches.json');q=json.loads(p.read_text())
+q['candidate_leads'] += [dict(url='https://api.yeni-parti.org.tr/api/haberler/289',state='source_records_draft',note='Parti JSON 289, 8 Kasım 2026 Türkiye gününde Özgür Özel’in Ankara’da genel başkanlık ön seçiminde oy kullandığını bildiriyor. HTTP 200 özgün SHA256 cf8452a40626b75945985145ec73102287324840cf6c3700bd9987ff31c6e403, 0404-yeni-parti-haber-289-onsecim-p. Ayrı ulusal olay veya kurultay seçimi oluşturulmadı.'),dict(url='https://api.yeni-parti.org.tr/api/haberler/291',state='source_records_draft',note='Parti JSON 291 created_at 8 Kasım 23:47 UTC = 9 Kasım 02:47 Türkiye; ulusal ön seçimde %81,3 katılımı parti beyanı olarak aktarıyor. HTTP 200 özgün SHA256 5e1b0e0bdf4797c14b6c3d981c3439fca60f59572f339089517908bbb57c2d73, 0404-yeni-parti-haber-291-onsecim-p. 69 il toplamı, yerel ön seçimler ve sonraki kurultay sonucu ile sayısal birleştirme yapılmadı.')]
+p.write_text(json.dumps(q,ensure_ascii=False,indent=2)+'\n')
