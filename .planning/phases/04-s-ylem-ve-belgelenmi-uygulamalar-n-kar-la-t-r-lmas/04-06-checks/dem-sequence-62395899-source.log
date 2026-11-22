@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3664, in <module>
+    try:
+        ^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3514, in main
+    with tempfile.TemporaryDirectory(prefix='gsd-source-check-') as tmp:
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1412, in render_practice_preview
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1616, in _render_practice_preview
+    arsiv.audit_release(release, storage_root=preview_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3031, in audit_release
+    if (manifest.get('data_schema_version'),manifest.get('dossier_validation_version')) != expected or manifest.get('renderer_version') not in valid_renderers or (exported['schema_version'] in (5,6,7) and manifest.get('source_policy_version')!=2):
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Faz 2 manifest sürümleri geçersiz
