@@ -93,3 +93,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 123–127 de okundu: nüfus kütüğü, inşaat ruhsatı, orta hasar kayıtları ve MAKS’ın planlanan tamamlanması tartışılır. Beklenen takvim ve tarafların hukuki/teknik görüşleri gerçekleşmiş sonuç olarak sunulmaz, TİP’e atfedilmez. İndeks 128–154 açık.
 
 9 Aralık toplantısı PDF indeks 128–132 de okundu: adres oturumu kapanır, Coğrafi Bilgi Sistemleri Genel Müdürü veri standartları ve afet bilgi paylaşımı sunar; Ali Kenanoğlu Kanal İstanbul itirazlarına ilişkin kişisel değerlendirme yapar. 2020 sözleri TİP’e, beyanlar bağımsız uygulama sonucuna dönüştürülmez. İndeks 133–154 açık.
+
+9 Aralık toplantısı PDF indeks 133–137 de okundu: coğrafi veri ve yapı envanteri sunumu, sayısal modeller, veri doğrulama ve sürmekte olduğu belirtilen geliştirmeler konuşulur; Ali Kenanoğlu sistem erişimini sorar. Yetkili beyanı ve projeleri bağımsızca doğrulanmış veya TİP uygulaması sayılmadı. İndeks 138–154 açık.
