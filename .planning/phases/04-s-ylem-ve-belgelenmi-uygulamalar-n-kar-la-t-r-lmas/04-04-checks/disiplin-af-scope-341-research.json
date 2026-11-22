@@ -2512,5 +2512,26 @@
     "sha256": "4a1481d97a845c31a4b8c97384ccc94de1dee1014fc8e89ab39337f11e3af6d2",
     "reading": "Sözcü Kurucular Kurulunda tüzük değişiklikleri yapıldığını, etik kurul üzerinde mutabakatı ve diğer konuları anlatıyor. Özgün JSON icerik içinde disiplin veya bağışlama sözcüğü yok; bu açıklama 9 Kasım kararının tam metni değildir.",
     "limitation": "created_at yayın zamanı değildir; duyuru eksikliği madde 52’nin değişmediğini veya ilgili kararın bulunmadığını kanıtlamaz."
+  },
+  "official_pdf_search": {
+    "searched_at": "2026-11-22T03:56:18.752883+00:00",
+    "queries": [
+      "site:api.yeni-parti.org.tr/uploads/yayinlar/ \"2026\" \"TÜZÜK\" \"9 Kasım\"",
+      "site:api.yeni-parti.org.tr/uploads/ \"YENİ PARTİ\" \"MADDE 52\" \"BAĞIŞLAMA\"",
+      "\"Yeni Parti\" \"tüzük\" \"9 Kasım\" \"pdf\" 2026",
+      "\"Yeni Parti\" \"tüzüğü\" \"kasım\" \"2026\" \"indir\""
+    ],
+    "leads": [
+      {
+        "url": "https://api.yeni-parti.org.tr/uploads/yayinlar/yayin-1794902310469-811605043.pdf",
+        "result": "16 Kasım PDF bulundu ve karşılaştırıldı; kesim içi tam karar değil."
+      },
+      {
+        "url": "https://medyascope.tv/2026/11/09/yeni-partide-tuzuk-degisikligi-parti-meclisi-gecici-olarak-150-kisiye-cikti/",
+        "result": "9 Kasım kararını haberleştiren metin, 52. madde için kararın aslı değil."
+      }
+    ],
+    "status": "open",
+    "limitation": "Dört hedefli sorgu açık web diziniyle sınırlı; bilinmeyen veya dizinlenmeyen kaynaklar hakkında genel yokluk sonucu verilmez."
   }
 }
