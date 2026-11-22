@@ -1,0 +1,9 @@
+# Kızıltepe: 2024 disiplin süreci — kaynak okuması
+
+Bu çalışma adayıdır; henüz uygulama paketine alınmış veya kapsam hücresi tamamlanmış değildir. Üç sayfanın özgün baytları, pasif görünümleri ve erişim kayıtları `kiziltepe-2024-capture.json` içindedir.
+
+- **25 Aralık:** Türkiye Gazetesi, Zeyni İpek'in partiden istifa ettiğini duyurduğu yazılı açıklamasını aktarıyor. İpek, özel görüntülerin paylaşılması tehdidine maruz kaldığını ve belediye yönetimini ele geçirmeye yönelik bir girişim bulunduğunu öne sürüyor. Bu iddialar kendisine aittir; haberdeki aktarım birincil açıklamanın özgün kaydı değildir.
+- **26 Aralık:** DEM Parti Demokratik Yerel Yönetimler Kurulu'nun kendi sitesindeki açıklaması, soruşturma sonrasında kesin ihraç istemiyle Merkez Disiplin Kuruluna sevk ve beyan için tebligat yapıldığını, İpek'in önceki gün istifasını duyurduğunu bildiriyor. Partinin kişi hakkındaki isnatları partinin beyanlarıdır; bağımsız doğrulanmış olgular sayılmaz. 26 Aralık açıklamasındaki sevk, henüz ihraç kararı değildir.
+- **27 Aralık:** Amida Haber, DEM Parti Merkez Disiplin Kurulunun yazılı açıklamasını aktararak ihraç kararını haberleştiriyor. Aktarılan kurul açıklaması, disiplin soruşturması sürerken duyurulan istifanın yönetmelik gereği kabul edilmediğini belirtiyor; bu, kurulun kendi hukuki değerlendirmesidir. Doğrudan kurulun özgün kararı burada henüz elde edilmemiştir.
+
+İpek'in 25 Aralık istifa beyanı ile partinin bu istifanın kabul edilmediği yönündeki 27 Aralık açıklaması ayrı kayıtlardır. Bunlardan kesin üyelik sona erme tarihi veya yargısal kesinlik çıkarılmaz. Önceki Ağustos 2024 istifa duyurusu ve geri çekilmesi farklı zamanlıdır, Aralık beyanıyla birleştirilmez. Bu üç sayfa iddiaları teyit etmez; mahrem ayrıntılar yeniden üretilmemiştir. Özgün MDK kararının erişimi ve sonraki doğrudan yanıt araştırılmaya devam edecektir.
