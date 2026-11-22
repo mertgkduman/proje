@@ -1,0 +1,90 @@
+{
+  "base_live_sha256": "d8e191f5edd4000a47d1e48f41ff7a1629c84852bb5aad5a8ef65c28713d8076",
+  "branches": [
+    {
+      "base": "izmit-congress-union-draft.json",
+      "branch": "izmit-account-union-v2-draft.json",
+      "added_entries": 15,
+      "added_records": {
+        "practice_event_evidence": 1,
+        "practice_statement": 1,
+        "practice_relation": 1,
+        "practice_scope_v2": 2,
+        "practice_scope_source": 2,
+        "practice_lead": 2,
+        "practice_attempt_v2": 2,
+        "practice_candidate": 1,
+        "practice_evidence_assessment": 1
+      }
+    },
+    {
+      "base": "izmit-congress-union-draft.json",
+      "branch": "luleburgaz-congress-branch-draft.json",
+      "added_entries": 46,
+      "added_records": {
+        "practice_event": 2,
+        "practice_event_evidence": 4,
+        "practice_statement": 1,
+        "practice_relation": 2,
+        "practice_scope_v2": 2,
+        "practice_scope_source": 4,
+        "practice_lead": 4,
+        "practice_attempt_v2": 4,
+        "practice_candidate": 2,
+        "practice_evidence_assessment": 4
+      }
+    },
+    {
+      "base": "mandate-3761-source-faithful-v2-draft.json",
+      "branch": "seasonal-agriculture-branch-draft.json",
+      "added_entries": 30,
+      "added_records": {
+        "practice_event": 1,
+        "practice_event_evidence": 4,
+        "practice_statement": 1,
+        "practice_relation": 1,
+        "practice_scope_v2": 2,
+        "practice_scope_source": 3,
+        "practice_lead": 3,
+        "practice_attempt_v2": 3,
+        "practice_candidate": 1,
+        "practice_evidence_assessment": 4
+      }
+    }
+  ],
+  "updated_live_reviews": [
+    {
+      "subject": [
+        "practice_event",
+        "0410-izmit-2020-congress-event"
+      ],
+      "old_passages": [
+        "0410-emep-izmit-2020-news-result-p"
+      ],
+      "new_passages": [
+        "0410-emep-izmit-2020-news-finance-p",
+        "0410-emep-izmit-2020-news-result-p"
+      ]
+    },
+    {
+      "subject": [
+        "practice_relation",
+        "0410-izmit-2020-congress-relation"
+      ],
+      "old_passages": [
+        "0410-emep-gebze-charter-202305-p",
+        "0410-emep-gebze-charter-selected-p",
+        "0410-emep-izmit-2020-news-result-p"
+      ],
+      "new_passages": [
+        "0410-emep-gebze-charter-202305-p",
+        "0410-emep-gebze-charter-selected-p",
+        "0410-emep-izmit-2020-news-finance-p",
+        "0410-emep-izmit-2020-news-result-p"
+      ]
+    }
+  ],
+  "prior_review_subset": true,
+  "limits": "İzmit mali raporun okunması, kabul veya doğruluk anlamına gelmez; Kocaeli ve Gebze için dönemdeki ara tüzük değişikliği bilinmiyor. TBMM yanıtı sorunların giderildiğini kanıtlamaz.",
+  "closures": 0
+}
