@@ -89,3 +89,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 113–117 de okundu: okul için adres beyanı, yapı envanteri ve seçim kayıtlarına ilişkin sorular ile idare yetkilisinin farklı açıklamaları yer alır. İddialar ilgili konuşmacılara ait ve ayrı tutulmuştur; Ali Kenanoğlu’nun 2020 sözü TİP’e otomatik atfedilmez. İndeks 118–154 açık.
 
 9 Aralık toplantısı PDF indeks 118–122 de okundu: MAKS güncelliği, esnaf kaydı ve yapı kayıt belgesi taşıyan yapılardaki nüfus üzerine sorular ve yetkili açıklamaları bulunur. Bu kişisel görüş ve kurumsal beyanlar gerçekleşmiş sonuç veya TİP tutumu sayılmaz. İndeks 123–154 açık.
+
+9 Aralık toplantısı PDF indeks 123–127 de okundu: nüfus kütüğü, inşaat ruhsatı, orta hasar kayıtları ve MAKS’ın planlanan tamamlanması tartışılır. Beklenen takvim ve tarafların hukuki/teknik görüşleri gerçekleşmiş sonuç olarak sunulmaz, TİP’e atfedilmez. İndeks 128–154 açık.
