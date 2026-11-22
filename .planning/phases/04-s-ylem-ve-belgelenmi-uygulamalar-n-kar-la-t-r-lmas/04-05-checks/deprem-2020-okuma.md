@@ -257,3 +257,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 345–349 metin katmanı okundu: komisyon jeolojik veri, fay sakınımı, veri paylaşımı ve katılımlı kent planlamasında eksik gördüğü hususları değerlendiriyor. Bunlar rapor önerisi olup uygulanmış karar ya da TİP önerisi sayılmadı; indeks 350 ve sonrası açık.
 
 - 2021 raporu indeks 350–354 metin katmanı okundu: toplanma, tahliye ve geçici barınma alanları ayrımı ile yapı envanteri ve risk değerlendirme öncelikleri komisyonun görüşü olarak yer alıyor. Öneriler uygulanmış ve TİP’e ait gösterilmedi; indeks 355 ve sonrası açık.
+
+- 2021 raporu indeks 355–359 metin katmanı okundu: bina risk değerlendirmesi, hasar tespiti, güçlendirme ve yapı denetimi konusunda komisyon öncelikleri yer alır. Görüşler uygulamaya geçmiş sonuç veya partinin görüşü olarak gösterilmedi; indeks 360 ve sonrası açık.
