@@ -261,3 +261,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 355–359 metin katmanı okundu: bina risk değerlendirmesi, hasar tespiti, güçlendirme ve yapı denetimi konusunda komisyon öncelikleri yer alır. Görüşler uygulamaya geçmiş sonuç veya partinin görüşü olarak gösterilmedi; indeks 360 ve sonrası açık.
 
 - 2021 raporu indeks 360–364 metin katmanı okundu: komisyon yapı denetiminin uygulama eksiklerini, mesleki yetkinliği ve bina kimlik sistemi planlarını tartışıyor. Rapor önerileri gerçekleşmiş politika veya TİP’e ait girişim olarak gösterilmedi; indeks 365 ve sonrası açık.
+
+- 2021 raporu indeks 365–369 metin katmanı okundu: mevcut tehlikeli yapılar için idari takip önerileri ve riskli yapı stokunu belirleme yöntemleri yer alır. Seçilmiş bina örneklerinin bulguları ülke geneline genellenmedi; gömülü resimler incelenmedi, öneriler partiye veya uygulamaya atfedilmedi. İndeks 370 ve sonrası açık.
