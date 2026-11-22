@@ -351,3 +351,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - Aynı görüşmenin normalize metninde 316000–325500 okundu: Cemal Çetin'in MHP adına deprem verisi, jeolojik planlama, afet eşgüdümü ve altyapı hakkındaki öneri ve siyasi değerlendirmeleri devam eder. Bunlar ilgili konuşmacıya atfedilir; TİP'e veya bağımsızca doğrulanmış sonuca çevrilmedi. Konum 325500 sonrası açık.
 
 - Aynı görüşmenin normalize metninde 325500–335000 okundu: Çetin konuşmasını bitirir, MHP adına Lütfi Kaşıkçı komisyon raporunun veri ve önerilerini anlatır. Söylenen sayılar ve siyasi değerlendirmeler konuşmacılara aittir; rapor önerileri uygulanmış ya da TİP sonucu olarak sunulmadı. Konum 335000 sonrası açık.
+
+- Aynı görüşmenin normalize metninde 335000–344500 okundu: Kaşıkçı'nın bina envanteri, dönüşüm, yapı denetimi ve afet yönetimi düzenlemelerine dair rapor önerilerini anlatımı sürer. Sözler MHP adına konuşmacıya aittir; TİP'e atfedilmedi veya uygulanmış sayılmadı. Konum 344500 sonrası açık.
