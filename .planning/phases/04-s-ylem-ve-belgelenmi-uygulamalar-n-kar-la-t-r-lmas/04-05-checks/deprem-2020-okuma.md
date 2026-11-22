@@ -309,3 +309,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 475–479 metin katmanı okundu: CHP üyelerinin ek görüşünde afet sonrası yardım, meslek odalarıyla iş birliği ve İzmir'de 7269 ile 6306 sayılı kanunlara ilişkin hukuki değerlendirmeler bulunuyor. Bunlar tarafların değerlendirmesi olarak kaldı; güncel hukuk, bağımsız olgu veya TİP tutumu sayılmadı. İndeks 480–523 ve görseller açık.
 
 - 2021 raporu indeks 480–484 metin katmanı okundu: CHP üyelerinin ek görüşünde mülkiyet, dönüşüm işlemleri ve İzmir'deki 2020 depremi bağlamındaki iddialar ile meslek odalarının denetimde rolü bulunur. Değerlendirme ve iddialar kaynak sahiplerine aittir; TİP görüşü veya doğrulanmış yargı kararı değildir. İndeks 485–523 ve görseller açık.
+
+- 2021 raporu indeks 485–489 metin katmanı okundu: CHP üyelerinin imzalı ek görüşü 488'de biter, 489'da Muazzez Orhan Işık ve Ali Kenanoğlu'nun ayrı ek görüşü başlar. Kurumsal çalışmalara ve iddia edilen eksiklere ilişkin değerlendirmeler belirtilen kişilere aittir. İndeks 490–523 ve görseller açık.
