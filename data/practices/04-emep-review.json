@@ -132,6 +132,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-mandate-3761-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T10:47:37+00:00",
+      "source_version_ids": "[\"0410-emep-tezkere-3761-ballot-v1\", \"0410-emep-tezkere-3761-session-v1\"]",
+      "passage_ids": "[\"0410-emep-tezkere-3761-ballot-emep-p\", \"0410-emep-tezkere-3761-ballot-vote-p\", \"0410-emep-tezkere-3761-session-emep-p\"]",
+      "inspected_sections": "[\"Aynı Bayhan satırında parti, ret oyu ve zaman\", \"Açık oy cetvelinde Bayhan soyadı\", \"Bayhan’ın EMEP adına açıklaması\"]",
+      "supported_claim": "Program dış ilişkilerde barış ilkesini savunur; Bayhan EMEP adına hayır dedi ve bireysel ret oyu verdi.",
+      "limitations": "EMEP adına konuşma grup bulunduğu anlamına gelmez; toplam farklılığı açık. Oy cetveli adı ve oy alanı aynı satırın iki özgün ASCII parçası olarak birlikte kontrol edildi.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-mandate-3761-event için program, tutanak ve cetvel pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-may-gyk-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:17:15+00:00",
@@ -571,6 +584,32 @@
       "limitations": "İşyeri koşulu ile işkolu barajı ayrıdır; teklifin kabulü ve fiilî etkisi kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-labor-23163-event|0410-emep-labor-23163-register-filed-p|action için program, TBMM kayıt ve teklif metni okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T10:47:37+00:00",
+      "source_version_ids": "[\"0410-emep-tezkere-3761-ballot-v1\"]",
+      "passage_ids": "[\"0410-emep-tezkere-3761-ballot-emep-p\"]",
+      "inspected_sections": "[\"Bayhan’ın 17 Ekim açık oy cetvelindeki satırı\"]",
+      "supported_claim": "Program dış ilişkilerde barış ilkesini savunur; Bayhan EMEP adına hayır dedi ve bireysel ret oyu verdi.",
+      "limitations": "EMEP adına konuşma grup bulunduğu anlamına gelmez; toplam farklılığı açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action için program, tutanak ve cetvel pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-session-emep-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T10:47:37+00:00",
+      "source_version_ids": "[\"0410-emep-tezkere-3761-session-v1\"]",
+      "passage_ids": "[\"0410-emep-tezkere-3761-session-emep-p\"]",
+      "inspected_sections": "[\"Bayhan’ın EMEP adına açıklaması\"]",
+      "supported_claim": "Program dış ilişkilerde barış ilkesini savunur; Bayhan EMEP adına hayır dedi ve bireysel ret oyu verdi.",
+      "limitations": "EMEP adına konuşma grup bulunduğu anlamına gelmez; toplam farklılığı açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mandate-3761-event|0410-emep-tezkere-3761-session-emep-p|action için program, tutanak ve cetvel pasajları incelendi."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -1068,6 +1107,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mandate-3761-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T10:47:37+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-tezkere-3761-ballot-v1\", \"0410-emep-tezkere-3761-session-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\", \"0410-emep-tezkere-3761-ballot-emep-p\", \"0410-emep-tezkere-3761-ballot-vote-p\", \"0410-emep-tezkere-3761-session-emep-p\"]",
+      "inspected_sections": "[\"Aynı Bayhan satırında parti, ret oyu ve zaman\", \"Açık oy cetvelinde Bayhan soyadı\", \"Bayhan’ın EMEP adına açıklaması\", \"G/B/1\"]",
+      "supported_claim": "Program dış ilişkilerde barış ilkesini savunur; Bayhan EMEP adına hayır dedi ve bireysel ret oyu verdi.",
+      "limitations": "EMEP adına konuşma grup bulunduğu anlamına gelmez; toplam farklılığı açık. Oy cetveli adı ve oy alanı aynı satırın iki özgün ASCII parçası olarak birlikte kontrol edildi.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-mandate-3761-relation için program, tutanak ve cetvel pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-may-gyk-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:17:15+00:00",
@@ -1325,6 +1377,19 @@
       "limitations": "İşyeri koşulu ile işkolu barajı ayrıdır; teklifin kabulü ve fiilî etkisi kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-labor-23163-relation için program, TBMM kayıt ve teklif metni okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mandate-3761-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T10:47:37+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-tezkere-3761-ballot-v1\", \"0410-emep-tezkere-3761-session-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\", \"0410-emep-tezkere-3761-ballot-emep-p\", \"0410-emep-tezkere-3761-ballot-vote-p\", \"0410-emep-tezkere-3761-session-emep-p\"]",
+      "inspected_sections": "[\"Aynı Bayhan satırında parti, ret oyu ve zaman\", \"Açık oy cetvelinde Bayhan soyadı\", \"Bayhan’ın EMEP adına açıklaması\", \"G/B/1\"]",
+      "supported_claim": "Program dış ilişkilerde barış ilkesini savunur; Bayhan EMEP adına hayır dedi ve bireysel ret oyu verdi.",
+      "limitations": "EMEP adına konuşma grup bulunduğu anlamına gelmez; toplam farklılığı açık. Oy cetveli adı ve oy alanı aynı satırın iki özgün ASCII parçası olarak birlikte kontrol edildi.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-mandate-3761-relation için program, tutanak ve cetvel pasajları incelendi."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -1676,6 +1741,19 @@
       "limitations": "İşyeri koşulu ile işkolu barajı ayrıdır; teklifin kabulü ve fiilî etkisi kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-labor-23163-relation için program, TBMM kayıt ve teklif metni okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mandate-3761-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T10:47:37+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\"]",
+      "inspected_sections": "[\"G/B/1\"]",
+      "supported_claim": "Program dış ilişkilerde barış ilkesini savunur; Bayhan EMEP adına hayır dedi ve bireysel ret oyu verdi.",
+      "limitations": "EMEP adına konuşma grup bulunduğu anlamına gelmez; toplam farklılığı açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-mandate-3761-relation için program, tutanak ve cetvel pasajları incelendi."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -2235,6 +2313,19 @@
       "limitations": "Soru, bakanlık yanıtı ve bölgesel rakam farklı aktör ve kapsamlara aittir; nihai politika sonucu çıkarılmadı.",
       "result": "reviewed",
       "reason": "practice_statement.summary_finding_id / 0410-school-statement için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T17:28:14+00:00",
+      "source_version_ids": "[\"0410-emep-tezkere-3761-ballot-v1\"]",
+      "passage_ids": "[\"0410-emep-tezkere-3761-ballot-vote-p\"]",
+      "inspected_sections": "[\"Aynı Bayhan satırında parti, ret oyu ve zaman\"]",
+      "supported_claim": "Kesin açık oy cetvelinin Bayhan satırındaki ikinci özgün parça Emek Partisi, RET ve 19:33:43 alanlarını gösterir.",
+      "limitations": "Soyad ve oy alanı aynı satırdaki iki ayrı ASCII pasajla birlikte okunmalıdır; oylama genel toplamı ayrıca değerlendirilir.",
+      "result": "reviewed",
+      "reason": "Olay kanıtı 0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action için özgün TBMM cetvelindeki parti, oy ve saat alanları okundu."
     }
   ],
   "source_review_refs": [
@@ -2277,6 +2368,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-labor-23163-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-mandate-3761-event"
     },
     {
       "subject_kind": "practice_event",
@@ -2413,6 +2508,14 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-labor-23163-event|0410-emep-labor-23163-register-filed-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-session-emep-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2568,6 +2671,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mandate-3761-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-may-gyk-relation"
     },
     {
@@ -2648,6 +2755,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mandate-3761-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-may-gyk-relation"
     },
     {
@@ -2756,6 +2867,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mandate-3761-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-may-gyk-relation"
     },
     {
@@ -2925,6 +3040,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-school-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action"
     }
   ]
 }
