@@ -153,3 +153,23 @@ Sonraki ayrı geliştirme exact girdi `package-creation-date-distinction-draft.j
 Üyelikte 12 Ağustos 10:46 Türkiye tarihli yerel haber sistemin açık olduğunu bildirir; parti API 49 oluşturulma 12 Ağustos 21:52Z=13 Ağustos 00:52 Türkiye, 50 oluşturulma 13 Ağustos 22:08Z=14 Ağustos 01:08 Türkiye; hiçbirisi kesin açılış gününü kanıtlamaz. 5 Kasım kapaklı kurultay çalışma programı PDF'sinin tamamı okundu (`34805c8`); gelecek hedefleri fiili sonuç değildir ve bugünkü indirilen baytın ilk duyuru anındaki özdeşliği belirlenmemiştir.
 
 Root'un 34 sayfalık parti kamu API kataloğu ve 270 gerçek detay GET'i mevcut (`db1741c`); katalog taraması/gövde GET okumaya eşit değildir. Root yalnız ilk 1–2 gerçek okuma dilimi, AB ve 10 Kasım iki kaynaktan sorumlu; kullanıcı tarafından istenen bütün diğer kaynak ailelerini dikkatle sürdürün. Görev 1 için doğrudan agent tanımının görev başına 3 otomatik düzeltme sınırı doldu; sonraki validator hatalarında exact kayıt/pasaj tanısı verip düzeltme sahipliğini orchestrator'a aktarın, bağımsız kaynak araştırmasını durdurmayın. Pin script ve ortak ağaç koruması hâlâ geçerli.
+
+### Parti API gerçek gövde okuması: 001–011
+
+Toplam 58 dilimin 001–011 için gerçek aralık okuması ve ayrı makbuzu mevcut; 012–058, yani 47 dilim bu makbuzlarda henüz okunmuş sayılmaz. Bu sayım 610 hücrenin kapanışı değildir; kuyruk dosyasındaki pending durumları ve bütün kapsam uçları korunur. Makbuzlar `04-04-checks/party-api-NNN-reading.json` konumunda; 001/002 root, 003–011 parti executor tarafından incelendi. 006 makbuzundaki 264 ilk aralık açıklaması `460dd94` ile düzeltildi. Karakter sınırları JSON `icerik` alanına aittir:
+
+- 001: 297[0:5496], 296[0:197], 295[0:27849], 294[0:14237].
+- 002: 294[14237:15765], 293[0:172], 292[0:164], 291[0:914], 290[0:315], 289[0:7289], 288[0:10915], 287[0:315], 286[0:4977], 283[0:5635], 282[0:11961], 281[0:2431].
+- 003: 281[2431:12429], 280[0:12435], 279[0:9993], 278[0:13370], 277[0:1957].
+- 004: 277[1957:6210], 276[0:186], 275[0:42139].
+- 005: 275[42139:44979], 274[0:25802], 273[0:558], 272[0:18132].
+- 006: 272[18132:24956], 271[0:135], 270[0:206], 269[0:9961], 268[0:363], 267[0:22457], 266[0:183], 265[0:7383], 264[0:135].
+- 007: 264[135:5160], 263[0:8554], 262[0:187], 261[0:33854].
+- 008: 261[33854:78042].
+- 009: 261[78042:100810], 260[0:209], 259[0:2060], 258[0:997], 257[0:291], 256[0:7786], 255[0:13885].
+- 010: 255[13885:14412], 254[0:314], 253[0:46523].
+- 011: 253[46523:50892], 252[0:344], 251[0:22221], 250[0:7733], 249[0:12576].
+
+Byte SHA, API URL, erişim zamanı ve anlatımlar ilgili makbuzda; `created_at` yayımlanma zamanı sayılmadı. 003 kaynak bağları taslağı `dc9d3e6`, 275 önseçim çağrısı taslağı `7561f51`; tam CLI ve canlı paket birleşimi bekliyor. 255 ve 274 mevcut ortak sürümleri, 281 ise `0404-yeni-parti-haber-281-v1` tek kimliği korunur. 249 kalan aralık 012'dedir.
+
+62381839 gerçek input ve source PASS, preview devam; 62383286 daha güncel input PASS, source devam (orchestrator son bildirimi). İkinci iş veya yayın başlatmayın; terminal receipt ve çıkış kodlarıyla teyit edin. Yeni anlamsal doğrulanmış 60 olay/61 ilişkili ayrı taslak paket SHA `1046f3b6…`, review SHA `5ef6866b…`; henüz canlı değil, tam CLI/preview doğrulanmış sayılmaz. Canonical `f67ca0a35e634035bf3aa83a46571f50` değişmemeli. İki görev ve 610 hücre incelemesi açık kalır.
