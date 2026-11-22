@@ -21,10 +21,10 @@ import shutil,sys
 source,target=map(Path,sys.argv[1:])
 for path in source.rglob('*'):
     if not path.is_file(): continue
-    dest=target/path.relative_to(source)
-    dest.parent.mkdir(parents=True,exist_ok=True)
-    if dest.exists(): assert dest.read_bytes()==path.read_bytes(),dest
-    else: shutil.copyfile(path,dest)
+    for dest in (target/path.relative_to(source),target/'practices/sources/emep'/path.relative_to(source)):
+        dest.parent.mkdir(parents=True,exist_ok=True)
+        if dest.exists(): assert dest.read_bytes()==path.read_bytes(),dest
+        else: shutil.copyfile(path,dest)
 PY
 printf '%s  %s\n' 5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7 "$stage/check/data/current.json" | sha256sum -c -
 python3 "$stage/check/src/arsiv.py" practice-check --input "$package" --inventory "$stage/check/data/practices/04-inventory.json" --base-release "$base"
