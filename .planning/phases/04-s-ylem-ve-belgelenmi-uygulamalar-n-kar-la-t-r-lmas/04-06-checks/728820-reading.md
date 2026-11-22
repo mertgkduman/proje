@@ -1,0 +1,3 @@
+# 7/28820 yanıtında komisyon raporunun yazımı
+
+TBMM detayında Ömer Faruk Gergerlioğlu’nun 7/28820 yazılı sorusunun 23 Mayıs 2025 gelişli olduğu ve yanıtın 17 Haziran 2025’te geldiği görülür. Ayrı özgün yanıt PDF’si SHA-256 9652c8d711a1c18af1cad09d1879acab980f3f8e7e28abf070cab97ca0f8e769 ile saklandı. Yanıtta sıfır tabanlı 4. sayfadaki 6 ve 11. cevapların 11 Haziran 2025 itibarıyla komisyon durumlarını gösteren tablosu, 5. sayfada kadınların her türlü şiddet ve ayrımcılığa maruz kalmasının önlenmesi araştırma komisyonu için rapor yazımının sürdüğünü belirtir. Bu yalnız o tarihe ait TBMM Başkanlığı yanıtıdır; sonraki raporun yokluğu veya yöntem kesimindeki aşama sonucuna varılmaz. İlgili iki sayfa okunmuştur, tüm yanıtın diğer konuları bu incelemede kapatılmamıştır.
