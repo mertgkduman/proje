@@ -47,3 +47,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 8–12 de okundu: Kızılay temsilcisinin kapasite, gönüllülük ve eğitim anlatımı ile komisyon üyesi soru-cevabı yer alır. Bunlar ilgili kişilerin 2020 beyanlarıdır; sağlık çalışanı/sendika temsilinin veya Baş’ın talebinin karşılandığının kanıtı değildir. PDF indeks 13–154 açıktır.
 
 9 Aralık toplantısı PDF indeks 13–17 de okundu: komisyon üyeleri Kızılay bütçesi, afet eğitimi ve basına yansıyan iddiaları sorar, temsilci kendi açıklamasını ve görüşlerini sunar. İhtilaflı beyanlar bağımsız doğrulanmış olguya dönüştürülmez; bu bölüm TİP’in katkısı değildir. İndeks 18–154 açıktır.
+
+9 Aralık toplantısı PDF indeks 18–22 de okundu: şartlı bağış, kurumsal güven, afet beslenme kapasitesi üzerine Bedri Yaşar ve Kamil Okyay Sındır’ın soruları ile Kızılay temsilcisinin yanıtları bulunur. İhtilaflı iddialar ilgili taraflarına aittir; TİP tutumu veya bağımsız saptama değildir. İndeks 23–154 açık.
