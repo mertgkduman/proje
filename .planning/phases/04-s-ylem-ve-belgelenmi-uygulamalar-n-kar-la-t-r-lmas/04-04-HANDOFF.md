@@ -187,3 +187,11 @@ Sonraki gerçek okumalar `party-api-012-reading.json`, `party-api-013-reading.js
 235 için 21 Ekim AYM'nin isim ve rumuzun hükümsüzlüğü ve terkin talebini reddi Medyascope'ta okundu; `site:anayasa.gov.tr "2026/9" "YENİ PARTİ"` ve `"YENİ PARTİ" "21/10/2026"` sorguları sonuç vermedi. Basın, 29 Eylül gündemindeki E.2026/9 Değişik İşler dosyasını bildiriyor; AYM asıl karar metni henüz bulunmadı. Sonraki kaynak araştırmasında parti görüşü ve yargı kararı, açıklanan sonuç ve gerekçe ayrı tutulmalı.
 
 Yeni root paketin ilk input'unda üç söylemin `comparison_row_id` alanı eksikti; root düzeltmesi `7d31714`, paket SHA `ca3f7b34…`, review `5ef6866b…`, job 62385192. Son okumada 62381839 preview, 62383286 source ve 62385192 girdi denetimi çalışıyordu; bunları sonuç veya görev kapanışı saymayın.
+
+### Devam: 015–017 ve yerel önseçim izleri
+
+015–017 makbuzları da gerçek okundu; 58 dilimden toplam 17 makbuz mevcut, 018–058 arası 41 dilim açık. 015: 232[7215:8403], 231[0:916], 230[0:42222]. 016: 230[42222:55482], 229[0:168], 228[0:14124], 227[0:169], 226[0:18468]. 017: 226[18468:29524], 225[0:23887], 224[0:11633]; 224 devamı 018'dedir. Makbuzlar `party-api-015-reading.json`–`party-api-017-reading.json`.
+
+226 Çankaya ilçe yönetiminde genel merkez müdahalesi hakkında genel başkan açıklaması, kaynak taslağı `857d6c8`; kararın aslı ve tarihi açık. Özel'in kendi sitesinde aynı konuşma 17 Ekim tarihli; 20 Ekim Ankara Masası'ndaki sonraki fesih iddiası ve Güner yanıtı aynı işlem olarak varsayılamaz.
+
+Kırıkkale ve Yozgat üç yerel sonucu HTTP 200 yakalama ve okuma makbuzu `a28382e`: Kırıkkale'de ANKA 928/221/5 geçersiz, Kırıkkale Haber 467/171 kesin olmayan sayıları verir; mevcut kaynaklar arasındaki fark uzlaştırılmadı. Yozgat Medya 2912 oy hakkı ve 1541/461 sonucu verirken üyeler ve delegeler ifadelerini karıştırır. Asıl seçim tutanakları, resmî kongre sonuçları ve pasif görünüm doğrulaması açıktır; hiçbir yerel sayı ulusal 69 il toplamına eklenmedi.
