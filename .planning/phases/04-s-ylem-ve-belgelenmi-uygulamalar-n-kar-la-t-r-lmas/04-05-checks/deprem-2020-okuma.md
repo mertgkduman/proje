@@ -253,3 +253,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 335–339 metin katmanı okundu: komisyonun deprem veri, gözlem, erken uyarı ve büyük veri altyapısına ilişkin değerlendirme/öncelikleri başlıyor. Bunlar komisyonun yazılı değerlendirmeleridir, uygulanmış karar veya TİP önerisi sayılmadı; indeks 340 ve sonrası açık.
 
 - 2021 raporu indeks 340–344 metin katmanı okundu: komisyon risklerin belirlenmesi ve strateji/plan eksiklerine ilişkin dönemsel değerlendirmeleri ve önerileri sunuyor. Rapor önerisi sonraki uygulama veya TİP’in önerisi sayılmadı; indeks 345 ve sonrası açık.
+
+- 2021 raporu indeks 345–349 metin katmanı okundu: komisyon jeolojik veri, fay sakınımı, veri paylaşımı ve katılımlı kent planlamasında eksik gördüğü hususları değerlendiriyor. Bunlar rapor önerisi olup uygulanmış karar ya da TİP önerisi sayılmadı; indeks 350 ve sonrası açık.
