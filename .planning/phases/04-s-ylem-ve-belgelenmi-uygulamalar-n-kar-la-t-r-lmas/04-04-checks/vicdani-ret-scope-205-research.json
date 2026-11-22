@@ -1,0 +1,47 @@
+{
+  "status": "research_open",
+  "topic_id": "vicdani-ret",
+  "scope_tranche": "scope-205",
+  "research_kind": "statement",
+  "checked_at": "2026-11-22T04:06:42.509344+00:00",
+  "method_cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+  "terms": [
+    "vicdani ret",
+    "vicdani reddi",
+    "askerlik hizmeti",
+    "zorunlu askerlik"
+  ],
+  "foundation_literal_scan": [
+    {
+      "version_id": "epm-charter-v1",
+      "sha256": "b3709f52e07f6d65797d021f571c2b97eca5ac02771a633fe55aafec4130518e",
+      "observed": "İlk iki vicdani ret ifadesi ve zorunlu askerlik dizeleri özgün metinde bulunmadı."
+    },
+    {
+      "version_id": "epm-program-v1",
+      "sha256": "58fa220ab814bd82a4c8d0d233bf55ab268eb9f856750cd88abc544e17ceba1b",
+      "observed": "İlk iki vicdani ret ifadesi ve zorunlu askerlik dizeleri özgün metinde bulunmadı."
+    }
+  ],
+  "party_corpus": {
+    "documents": 270,
+    "source": "party-publication-body-reading-queue.json; 58 okuma makbuzu aralık denetimi disiplin-af-scope-341-research.json içinde",
+    "observed": "Dört tam dizeden yalnız 44 numaralı parti haberinde zorunlu askerlik ifadesi bulundu.",
+    "hit": {
+      "url": "https://api.yeni-parti.org.tr/api/haberler/44",
+      "sha256": "1b8d8a5ec1c30bbcec0598fa5d1bfa685f58149ac046b0355cf239b6f59b6ef0",
+      "created_at": "2026-08-06T13:22:25.960Z",
+      "reading": "Özel şehit aileleri ve gaziler buluşmasında askerlikte kayıplar ve profesyonel ordu bağlamında aile/gazi taleplerini anlatıyor; vicdani ret hakkı veya askerlikten muafiyet savunusu söylemiyor."
+    }
+  },
+  "external_queries": [
+    "\"YENİ Parti\" \"vicdani ret\" 2026",
+    "\"YENİ Parti\" \"vicdani ret\" \"Özgür Özel\""
+  ],
+  "false_lead": {
+    "url": "https://kayserihaber.com.tr/haber/ozgur-ozel-evet-diyecegiz-demisti-askin-gencin-oyu-herkesi-sasirtti-95980",
+    "reason": "Askerlikte vicdani ret değil, milletvekilinin oylamadaki vicdani kanaati."
+  },
+  "limitations": "Literal tarama farklı ifadelerle dile getirilmiş olası açıklamaları, başka yayınları ve arama dizini dışındaki kaynakları kapsamaz. API 297 kesim sonrası oluşturulmuş olup kapsam içi kanıt sayılmaz.",
+  "next": "Eşanlamlı ve üye/kurum bazlı hedefli araştırma ile özgün belgeler sürdürülmeli; bu gözlem closure veya genel yokluk sonucu değildir."
+}
