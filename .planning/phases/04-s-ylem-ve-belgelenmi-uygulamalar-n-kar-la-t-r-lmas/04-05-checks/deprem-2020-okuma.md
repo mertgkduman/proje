@@ -287,3 +287,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 420–424 metin katmanı okundu: çoklu tehlike ve zemin etütleri, fay haritalaması, yerel uzman istihdamı ve katılımlı imar planlaması için komisyon önerileri yer alır. Öneriler gerçekleşmiş uygulama veya TİP'e özgü sonuç sayılmadı. İndeks 425–523 ve görseller açık.
 
 - 2021 raporu indeks 425–429 metin katmanı okundu: toplanma alanları, güncel yapı envanteri, zemin ve bina risk değerlendirmesi ile güçlendirme öncelikleri komisyon önerileridir; gerçekleştiklerine veya TİP talebine cevap olduklarına dair kanıt değillerdir. İndeks 430–523 ve görseller açık.
+
+- 2021 raporu indeks 430–434 metin katmanı okundu: yapı güçlendirme, kültür ve sanayi tesislerinin güvenliği, yapı denetimi ve mesleki yetkinliğe ilişkin komisyon önerileri yer alıyor. Rapor önerileri gerçekleşmiş veya TİP kaynaklı sonuç diye gösterilmedi. İndeks 435–523 ve görseller açık.
