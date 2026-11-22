@@ -44,6 +44,6 @@ for view in ('party', 'comparison'):
     tag = f'id="{anchor}"'
     assert page.count(tag) == 1 and f'href="#{anchor}"' in page
     card = page.split(tag,1)[1].split('</article>',1)[0]
-    assert all(word in card for word in ('10/3998','Burak Dalgın','akademik','kabul etmedi','Araştırma sürüyor'))
+    assert all(word in card for word in ('10/3998','Burak Dalgın','akademik','kabul edilmediğini','Araştırma sürüyor'))
 assert page.count(f'data-finding-id="{stem}-dalgin-finding"') == 2
 print('IYI_TUIK_3998_DB_JSON_BOTH_VIEWS_OK', folder, flush=True)
