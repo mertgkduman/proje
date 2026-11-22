@@ -1,0 +1,13 @@
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0407-institution-62397173/package.json: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0407-institution-62397173/review.json: OK
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0407-institution-62397173/check/src/arsiv.py", line 3670, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0407-institution-62397173/check/src/arsiv.py", line 3582, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0407-institution-62397173/check/src/uygulamalar.py", line 1343, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0407-institution-62397173/check/src/uygulamalar.py", line 1065, in _load_practice_copy
+    raise ValueError('Envanter kapsamı özeti uyuşmuyor')
+ValueError: Envanter kapsamı özeti uyuşmuyor
