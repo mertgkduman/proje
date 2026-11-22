@@ -9,7 +9,10 @@ source=html_source_text(Path('data/objects/6aa8a0087e2426e808defbc8e427281f08862
 topics={
  'inanc-mezhep-esitligi':(['0304-tip-program-inanc-p1','0304-tip-program-inanc-p2'],'Program Alevilerin eşit yurttaşlığı, zorunlu din dersleri ve Diyanet yanında, din işlerinin tüm din ve mezheplere eşit mesafeli bir kurumda yeniden düzenlenmesini de içerir.'),
  'anadilde-egitim':(['0304-tip-program-egitim-dil-p1'],'Program her düzeyde nitelikli, parasız, anadilde, laik ve bilimsel eğitim hakkını savunur.'),
- 'tarim-hayvancilik':(['0304-tip-program-tarim-p1'],'Program tohum üretim merkezleri, kooperatif taban fiyatı, mera koruması ve yerli hayvancılık desteğini birlikte önerir.')}
+ 'tarim-hayvancilik':(['0304-tip-program-tarim-p1'],'Program tohum üretim merkezleri, kooperatif taban fiyatı, mera koruması ve yerli hayvancılık desteğini birlikte önerir.'),
+ 'din-egitimi':(['0304-tip-program-din-ders-p1'],'Program zorunlu din derslerinin kaldırılmasını savunur; bütün din eğitimine genel yasak çıkarılmaz.'),
+ 'tarimsal-fiyatlar':(['0304-tip-program-fiyat-p1'],'Program taban fiyatlarının hasattan önce, üretici lehine ve üretici kooperatiflerince belirlenmesini önerir.'),
+ 'alevi-inanc-orgutlenmesi':(['0304-tip-program-alevi-p1'],'Program Alevilerin eşit yurttaşlık mücadelesini destekler; incelenen programda inanç kurumlarının hukuki statüsüne ayrı açık düzenleme saptanmamıştır. Bu tek belge bütün diğer söylemler için yokluk değildir.')}
 passages={x['values']['id']:x['values']['exact'] for x in comparison if x['kind']=='passage'}
 for ids,_ in topics.values():
  for ident in ids: assert passages[ident] in source,ident
@@ -20,5 +23,5 @@ for row in data['tranches']:
  ids,note=topics[row['topic_id']]
  row['research_progress']=dict(recorded_at=datetime.now(timezone.utc).isoformat(),note=note+' Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.',source_ids=['0203-tip-program-v1'],urls=['https://tip.org.tr/parti-programi'],source_passage_ids=ids,status='partial')
  count+=1
-assert count==3
+assert count==6
 path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print('PARTIAL_STATEMENT_LINKS',count)
