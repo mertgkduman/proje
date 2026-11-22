@@ -136,12 +136,25 @@
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:20:00+00:00",
       "source_version_ids": "[\"0410-emep-izmit-2020-news-v1\"]",
-      "passage_ids": "[\"0410-emep-izmit-2020-news-result-p\"]",
-      "inspected_sections": "[\"İzmit ilçe başkanı seçimi\"]",
-      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; yerel haber Deniz’in yeniden seçimini bildirir.",
-      "limitations": "Haber günü kesin kongre günü değildir; oy yöntemi ve ara tüzük değişiklikleri bilinmiyor.",
+      "passage_ids": "[\"0410-emep-izmit-2020-news-finance-p\", \"0410-emep-izmit-2020-news-result-p\"]",
+      "inspected_sections": "[\"Mali rapor ve önergelerin okunması\", \"İzmit ilçe başkanı seçimi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; yerel haber Deniz’in yeniden seçimini bildirir. Aynı İzmit haberinde mali raporun kongrede okunduğu da bildiriliyor.",
+      "limitations": "Haber günü kesin kongre günü değildir; oy yöntemi ve ara tüzük değişiklikleri bilinmiyor. Okunma, mali raporun kabul edildiğini veya hesapların doğruluğunu göstermez.",
       "result": "reviewed",
-      "reason": "practice_event / 0410-izmit-2020-congress-event için ilgili tüzük ve haber pasajları okundu."
+      "reason": "practice_event / 0410-izmit-2020-congress-event için ilgili tüzük ve haber pasajları okundu. Ek mali rapor pasajı yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-kocaeli-2026-congress-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0410-emep-kocaeli-2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-2026-news-result-p\"]",
+      "inspected_sections": "[\"Kongre tarihi ve kullanılan oylar\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-kocaeli-2026-congress-event için tüzük ve seçim haberi pasajları incelendi."
     },
     {
       "subject_kind": "practice_event",
@@ -155,6 +168,19 @@
       "limitations": "İşyeri koşulu ile işkolu barajı ayrıdır; teklifin kabulü ve fiilî etkisi kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_event / 0410-labor-23163-event için program, TBMM kayıt ve teklif metni okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-luleburgaz-2020-congress-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T13:36:43+00:00",
+      "source_version_ids": "[\"0410-emep-luleburgaz-2020-evrensel-v1\"]",
+      "passage_ids": "[\"0410-emep-luleburgaz-2020-evrensel-p\"]",
+      "inspected_sections": "[\"11 Ekim ilçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; haber Atlı’nın başkanlığa getirildiğini bildirir.",
+      "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-luleburgaz-2020-congress-event için ilgili tüzük ve haber pasajları okundu."
     },
     {
       "subject_kind": "practice_event",
@@ -298,6 +324,19 @@
       "limitations": "Soru, bakanlık yanıtı ve bölgesel rakam farklı aktör ve kapsamlara aittir; nihai politika sonucu çıkarılmadı.",
       "result": "reviewed",
       "reason": "practice_event / 0410-question-8988-event için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-seasonal-733034-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0410-emep-question-33034-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-33034-register-date-p\", \"0410-emep-question-33034-register-owner-p\", \"0410-emep-question-33034-register-reply-p\", \"0410-emep-question-33034-register-topic-p\"]",
+      "inspected_sections": "[\"Soru başkanlığa geliş tarihi\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt bildiriliş tarihi\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-seasonal-733034-event için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -626,6 +665,19 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-finance-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:32:57+00:00",
+      "source_version_ids": "[\"0410-emep-izmit-2020-news-v1\"]",
+      "passage_ids": "[\"0410-emep-izmit-2020-news-finance-p\"]",
+      "inspected_sections": "[\"Mali rapor ve önergelerin okunması\"]",
+      "supported_claim": "Tüzük ilçe hesap görevi verir; haber mali raporun okunmasını bildirir.",
+      "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-finance-p|action için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:20:00+00:00",
@@ -649,6 +701,32 @@
       "limitations": "Haber günü kesin kongre günü değildir; oy yöntemi ve ara tüzük değişiklikleri bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|result için ilgili tüzük ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kocaeli-2026-congress-event|0410-emep-kocaeli-2026-news-result-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0410-emep-kocaeli-2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-2026-news-result-p\"]",
+      "inspected_sections": "[\"Kongre tarihi ve kullanılan oylar\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-kocaeli-2026-congress-event|0410-emep-kocaeli-2026-news-result-p|action için tüzük ve seçim haberi pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kocaeli-2026-congress-event|0410-emep-kocaeli-2026-news-result-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0410-emep-kocaeli-2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-2026-news-result-p\"]",
+      "inspected_sections": "[\"Kongre tarihi ve kullanılan oylar\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-kocaeli-2026-congress-event|0410-emep-kocaeli-2026-news-result-p|result için tüzük ve seçim haberi pasajları incelendi."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -678,6 +756,32 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-luleburgaz-2020-congress-event|0410-emep-luleburgaz-2020-evrensel-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T13:36:43+00:00",
+      "source_version_ids": "[\"0410-emep-luleburgaz-2020-evrensel-v1\"]",
+      "passage_ids": "[\"0410-emep-luleburgaz-2020-evrensel-p\"]",
+      "inspected_sections": "[\"11 Ekim ilçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; haber Atlı’nın başkanlığa getirildiğini bildirir.",
+      "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-luleburgaz-2020-congress-event|0410-emep-luleburgaz-2020-evrensel-p|action için ilgili tüzük ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-luleburgaz-2020-congress-event|0410-emep-luleburgaz-2020-evrensel-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T13:36:43+00:00",
+      "source_version_ids": "[\"0410-emep-luleburgaz-2020-evrensel-v1\"]",
+      "passage_ids": "[\"0410-emep-luleburgaz-2020-evrensel-p\"]",
+      "inspected_sections": "[\"11 Ekim ilçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; haber Atlı’nın başkanlığa getirildiğini bildirir.",
+      "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-luleburgaz-2020-congress-event|0410-emep-luleburgaz-2020-evrensel-p|result için ilgili tüzük ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:47:37+00:00",
@@ -688,6 +792,19 @@
       "limitations": "EMEP adına konuşma grup bulunduğu anlamına gelmez; toplam farklılığı açık.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action için program, tutanak ve cetvel pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T17:28:14+00:00",
+      "source_version_ids": "[\"0410-emep-tezkere-3761-ballot-v1\"]",
+      "passage_ids": "[\"0410-emep-tezkere-3761-ballot-vote-p\"]",
+      "inspected_sections": "[\"Aynı Bayhan satırında parti, ret oyu ve zaman\"]",
+      "supported_claim": "Kesin açık oy cetvelinin Bayhan satırındaki ikinci özgün parça Emek Partisi, RET ve 19:33:43 alanlarını gösterir.",
+      "limitations": "Soyad ve oy alanı aynı satırdaki iki ayrı ASCII pasajla birlikte okunmalıdır; oylama genel toplamı ayrıca değerlendirilir.",
+      "result": "reviewed",
+      "reason": "Olay kanıtı 0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action için özgün TBMM cetvelindeki parti, oy ve saat alanları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -1067,6 +1184,58 @@
       "reason": "practice_event_evidence / 0410-question-8988-event|0410-emep-question-8988-register-subject-p|action için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
     },
     {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0410-emep-question-33034-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-33034-register-date-p\"]",
+      "inspected_sections": "[\"Soru başkanlığa geliş tarihi\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-seasonal-733034-event|0410-emep-question-33034-register-date-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0410-emep-question-33034-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-33034-register-owner-p\"]",
+      "inspected_sections": "[\"Soru sahibi\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-seasonal-733034-event|0410-emep-question-33034-register-owner-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0410-emep-question-33034-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-33034-register-reply-p\"]",
+      "inspected_sections": "[\"Yanıt bildiriliş tarihi\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-seasonal-733034-event|0410-emep-question-33034-register-reply-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0410-emep-question-33034-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-33034-register-topic-p\"]",
+      "inspected_sections": "[\"Soru konusu\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-seasonal-733034-event|0410-emep-question-33034-register-topic-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
       "subject_kind": "practice_relation",
       "subject_id": "0410-2020-ninth-relation",
       "reviewer_kind": "agent",
@@ -1202,12 +1371,38 @@
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:20:00+00:00",
       "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-izmit-2020-news-v1\"]",
-      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\", \"0410-emep-izmit-2020-news-result-p\"]",
-      "inspected_sections": "[\"İlçe Kongresi\", \"İzmit ilçe başkanı seçimi\"]",
-      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; yerel haber Deniz’in yeniden seçimini bildirir.",
-      "limitations": "Haber günü kesin kongre günü değildir; oy yöntemi ve ara tüzük değişiklikleri bilinmiyor.",
+      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\", \"0410-emep-izmit-2020-news-finance-p\", \"0410-emep-izmit-2020-news-result-p\"]",
+      "inspected_sections": "[\"Mali rapor ve önergelerin okunması\", \"İlçe Kongresi\", \"İzmit ilçe başkanı seçimi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; yerel haber Deniz’in yeniden seçimini bildirir. Aynı İzmit haberinde mali raporun kongrede okunduğu da bildiriliyor.",
+      "limitations": "Haber günü kesin kongre günü değildir; oy yöntemi ve ara tüzük değişiklikleri bilinmiyor. Okunma, mali raporun kabul edildiğini veya hesapların doğruluğunu göstermez.",
       "result": "reviewed",
-      "reason": "practice_relation / 0410-izmit-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
+      "reason": "practice_relation / 0410-izmit-2020-congress-relation için ilgili tüzük ve haber pasajları okundu. Ek mali rapor pasajı yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-izmit-account-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:32:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-izmit-2020-news-v1\"]",
+      "passage_ids": "[\"0309-emep-html-040-0-passage\", \"0410-emep-izmit-2020-news-finance-p\", \"0410-emep-izmit-2020-news-result-p\"]",
+      "inspected_sections": "[\"Mali rapor ve önergelerin okunması\", \"İlçe kongresi\", \"İzmit ilçe başkanı seçimi\"]",
+      "supported_claim": "Tüzük ilçe hesap görevi verir; haber mali raporun okunmasını bildirir.",
+      "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-izmit-account-relation için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-kocaeli-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-kocaeli-2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-2026-news-result-p\", \"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"Kongre tarihi ve kullanılan oylar\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-kocaeli-2026-congress-relation için tüzük ve seçim haberi pasajları incelendi."
     },
     {
       "subject_kind": "practice_relation",
@@ -1221,6 +1416,19 @@
       "limitations": "İşyeri koşulu ile işkolu barajı ayrıdır; teklifin kabulü ve fiilî etkisi kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_relation / 0410-labor-23163-relation için program, TBMM kayıt ve teklif metni okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-luleburgaz-2020-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T13:36:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-luleburgaz-2020-evrensel-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\", \"0410-emep-luleburgaz-2020-evrensel-p\"]",
+      "inspected_sections": "[\"11 Ekim ilçe kongresi\", \"İlçe Kongresi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; haber Atlı’nın başkanlığa getirildiğini bildirir.",
+      "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-luleburgaz-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
     },
     {
       "subject_kind": "practice_relation",
@@ -1364,6 +1572,19 @@
       "limitations": "Soru, bakanlık yanıtı ve bölgesel rakam farklı aktör ve kapsamlara aittir; nihai politika sonucu çıkarılmadı.",
       "result": "reviewed",
       "reason": "practice_relation / 0410-question-8988-relation için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-seasonal-733034-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-33034-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-038-0-passage\", \"0410-emep-question-33034-register-date-p\", \"0410-emep-question-33034-register-owner-p\", \"0410-emep-question-33034-register-reply-p\", \"0410-emep-question-33034-register-topic-p\"]",
+      "inspected_sections": "[\"G/C/1-i\", \"Soru başkanlığa geliş tarihi\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt bildiriliş tarihi\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-seasonal-733034-relation için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -1510,6 +1731,32 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-izmit-account-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:32:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-izmit-2020-news-v1\"]",
+      "passage_ids": "[\"0309-emep-html-040-0-passage\", \"0410-emep-izmit-2020-news-finance-p\"]",
+      "inspected_sections": "[\"Mali rapor ve önergelerin okunması\", \"İlçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe hesap görevi verir; haber mali raporun okunmasını bildirir.",
+      "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-izmit-account-relation için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-kocaeli-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-kocaeli-2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-2026-news-result-p\", \"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"Kongre tarihi ve kullanılan oylar\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-kocaeli-2026-congress-relation için tüzük ve seçim haberi pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-labor-23163-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:20:33+00:00",
@@ -1520,6 +1767,19 @@
       "limitations": "İşyeri koşulu ile işkolu barajı ayrıdır; teklifin kabulü ve fiilî etkisi kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-labor-23163-relation için program, TBMM kayıt ve teklif metni okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-luleburgaz-2020-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T13:36:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-luleburgaz-2020-evrensel-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-charter-selected-p\", \"0410-emep-luleburgaz-2020-evrensel-p\"]",
+      "inspected_sections": "[\"11 Ekim ilçe kongresi\", \"İlçe Kongresi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; haber Atlı’nın başkanlığa getirildiğini bildirir.",
+      "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-luleburgaz-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -1665,6 +1925,19 @@
       "reason": "practice_relation.explanation_finding_id / 0410-question-8988-relation için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
     },
     {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-seasonal-733034-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-33034-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-038-0-passage\", \"0410-emep-question-33034-register-date-p\", \"0410-emep-question-33034-register-owner-p\", \"0410-emep-question-33034-register-reply-p\", \"0410-emep-question-33034-register-topic-p\"]",
+      "inspected_sections": "[\"G/C/1-i\", \"Soru başkanlığa geliş tarihi\", \"Soru konusu\", \"Soru sahibi\", \"Yanıt bildiriliş tarihi\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-seasonal-733034-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
       "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-2020-ninth-relation",
       "reviewer_kind": "agent",
@@ -1741,6 +2014,32 @@
       "limitations": "Haber günü kesin kongre günü değildir; oy yöntemi ve ara tüzük değişiklikleri bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_relation.result_finding_id / 0410-izmit-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-kocaeli-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0410-emep-kocaeli-2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-2026-news-result-p\"]",
+      "inspected_sections": "[\"Kongre tarihi ve kullanılan oylar\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id / 0410-kocaeli-2026-congress-relation için tüzük ve seçim haberi pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-luleburgaz-2020-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T13:36:43+00:00",
+      "source_version_ids": "[\"0410-emep-luleburgaz-2020-evrensel-v1\"]",
+      "passage_ids": "[\"0410-emep-luleburgaz-2020-evrensel-p\"]",
+      "inspected_sections": "[\"11 Ekim ilçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; haber Atlı’nın başkanlığa getirildiğini bildirir.",
+      "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id / 0410-luleburgaz-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
@@ -1913,6 +2212,32 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-izmit-account-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:32:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-html-040-0-passage\"]",
+      "inspected_sections": "[\"İlçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe hesap görevi verir; haber mali raporun okunmasını bildirir.",
+      "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-izmit-account-relation için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-kocaeli-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-kocaeli-2026-congress-relation için tüzük ve seçim haberi pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-labor-23163-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:20:33+00:00",
@@ -1923,6 +2248,19 @@
       "limitations": "İşyeri koşulu ile işkolu barajı ayrıdır; teklifin kabulü ve fiilî etkisi kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-labor-23163-relation için program, TBMM kayıt ve teklif metni okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-luleburgaz-2020-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T13:36:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-gebze-charter-202305-p\", \"0410-emep-gebze-charter-selected-p\"]",
+      "inspected_sections": "[\"İlçe Kongresi\"]",
+      "supported_claim": "Tüzük ilçe başkanı seçimini düzenler; haber Atlı’nın başkanlığa getirildiğini bildirir.",
+      "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-luleburgaz-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -2068,6 +2406,19 @@
       "reason": "practice_relation.target_finding_id / 0410-question-8988-relation için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
     },
     {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-seasonal-733034-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-038-0-passage\"]",
+      "inspected_sections": "[\"G/C/1-i\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-seasonal-733034-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
       "subject_kind": "practice_statement",
       "subject_id": "0410-expression-statement",
       "reviewer_kind": "agent",
@@ -2131,6 +2482,32 @@
       "limitations": "Tüzük kabul ve geçerlilik dönemi tam doğrulanmadı.",
       "result": "reviewed",
       "reason": "practice_statement / 0410-il-disiplin-statement için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-izmit-account-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:32:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-html-040-0-passage\"]",
+      "inspected_sections": "[\"İlçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe hesap görevi verir; haber mali raporun okunmasını bildirir.",
+      "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-izmit-account-statement için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-kocaeli-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-kocaeli-charter-statement için tüzük ve seçim haberi pasajları incelendi."
     },
     {
       "subject_kind": "practice_statement",
@@ -2224,6 +2601,19 @@
       "reason": "practice_statement / 0410-school-statement için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
     },
     {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-seasonal-agriculture-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-038-0-passage\"]",
+      "inspected_sections": "[\"G/C/1-i\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-seasonal-agriculture-statement için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
       "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-expression-statement",
       "reviewer_kind": "agent",
@@ -2287,6 +2677,32 @@
       "limitations": "Tüzük kabul ve geçerlilik dönemi tam doğrulanmadı.",
       "result": "reviewed",
       "reason": "practice_statement.quote_finding_id / 0410-il-disiplin-statement için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-izmit-account-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:32:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-html-040-0-passage\"]",
+      "inspected_sections": "[\"İlçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe hesap görevi verir; haber mali raporun okunmasını bildirir.",
+      "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-izmit-account-statement için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-kocaeli-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-kocaeli-charter-statement için tüzük ve seçim haberi pasajları incelendi."
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -2380,6 +2796,19 @@
       "reason": "practice_statement.quote_finding_id / 0410-school-statement için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
     },
     {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-seasonal-agriculture-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-038-0-passage\"]",
+      "inspected_sections": "[\"G/C/1-i\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-seasonal-agriculture-statement için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-expression-statement",
       "reviewer_kind": "agent",
@@ -2443,6 +2872,32 @@
       "limitations": "Tüzük kabul ve geçerlilik dönemi tam doğrulanmadı.",
       "result": "reviewed",
       "reason": "practice_statement.summary_finding_id / 0410-il-disiplin-statement için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-izmit-account-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:32:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-html-040-0-passage\"]",
+      "inspected_sections": "[\"İlçe kongresi\"]",
+      "supported_claim": "Tüzük ilçe hesap görevi verir; haber mali raporun okunmasını bildirir.",
+      "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-izmit-account-statement için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-kocaeli-charter-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T11:44:30+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresinde başkan seçimi tüzükte düzenlenir; yerel haber Şahbaz’ın 1 Kasım seçimini bildirir.",
+      "limitations": "Seçim tutanağı ve 2026 ara tüzük sürümü görülmedi; kullanılan oy sayısı delege sayısı değildir.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-kocaeli-charter-statement için tüzük ve seçim haberi pasajları incelendi."
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
@@ -2536,17 +2991,17 @@
       "reason": "practice_statement.summary_finding_id / 0410-school-statement için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
     },
     {
-      "subject_kind": "practice_event_evidence",
-      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action",
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-seasonal-agriculture-statement",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-22T17:28:14+00:00",
-      "source_version_ids": "[\"0410-emep-tezkere-3761-ballot-v1\"]",
-      "passage_ids": "[\"0410-emep-tezkere-3761-ballot-vote-p\"]",
-      "inspected_sections": "[\"Aynı Bayhan satırında parti, ret oyu ve zaman\"]",
-      "supported_claim": "Kesin açık oy cetvelinin Bayhan satırındaki ikinci özgün parça Emek Partisi, RET ve 19:33:43 alanlarını gösterir.",
-      "limitations": "Soyad ve oy alanı aynı satırdaki iki ayrı ASCII pasajla birlikte okunmalıdır; oylama genel toplamı ayrıca değerlendirilir.",
+      "reviewed_at": "2026-11-22T18:45:59+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-038-0-passage\"]",
+      "inspected_sections": "[\"G/C/1-i\"]",
+      "supported_claim": "Program mevsimlik işçi konutu ister; TBMM kaydı barınma sorusunu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
       "result": "reviewed",
-      "reason": "Olay kanıtı 0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action için özgün TBMM cetvelindeki parti, oy ve saat alanları okundu."
+      "reason": "practice_statement.summary_finding_id / 0410-seasonal-agriculture-statement için ilgili program ve TBMM kayıt pasajları okundu."
     }
   ],
   "source_review_refs": [
@@ -2596,7 +3051,15 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-kocaeli-2026-congress-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-labor-23163-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-luleburgaz-2020-congress-event"
     },
     {
       "subject_kind": "practice_event",
@@ -2641,6 +3104,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-question-8988-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-seasonal-733034-event"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2744,11 +3211,23 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-finance-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kocaeli-2026-congress-event|0410-emep-kocaeli-2026-news-result-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kocaeli-2026-congress-event|0410-emep-kocaeli-2026-news-result-p|result"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2760,7 +3239,19 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-luleburgaz-2020-congress-event|0410-emep-luleburgaz-2020-evrensel-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-luleburgaz-2020-congress-event|0410-emep-luleburgaz-2020-evrensel-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2879,460 +3370,564 @@
       "subject_id": "0410-question-8988-event|0410-emep-question-8988-register-subject-p|action"
     },
     {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-2020-ninth-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-2023-extra-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-2023-kongre-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-aliaga-104172-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-aliaga-731468-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-bolu-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-corum-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-expression-23643-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-forest-23804-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-gebze-2026-congress-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-izmit-2020-congress-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-labor-23163-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-mandate-3761-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-may-gyk-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-may-resignation-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-mekke-question-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-mekke-vote-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-mesem-104180-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-mesem-78231-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-municipal-22702-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-question-13296-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-question-4186-relation"
-    },
-    {
-      "subject_kind": "practice_relation",
-      "subject_id": "0410-question-8988-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-2020-ninth-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-2023-extra-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-2023-kongre-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-aliaga-104172-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-aliaga-731468-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-bolu-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-corum-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-expression-23643-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-forest-23804-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-gebze-2026-congress-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-izmit-2020-congress-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-labor-23163-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-mandate-3761-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-may-gyk-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-may-resignation-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-mekke-question-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-mekke-vote-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-mesem-104180-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-mesem-78231-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-municipal-22702-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-question-13296-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-question-4186-relation"
-    },
-    {
-      "subject_kind": "practice_relation.explanation_finding_id",
-      "subject_id": "0410-question-8988-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-2020-ninth-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-2023-extra-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-2023-kongre-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-bolu-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-corum-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-izmit-2020-congress-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-question-13296-relation"
-    },
-    {
-      "subject_kind": "practice_relation.result_finding_id",
-      "subject_id": "0410-question-4186-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-2020-ninth-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-2023-extra-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-2023-kongre-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-aliaga-104172-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-aliaga-731468-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-bolu-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-corum-disiplin-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-expression-23643-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-forest-23804-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-gebze-2026-congress-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-izmit-2020-congress-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-labor-23163-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-mandate-3761-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-may-gyk-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-may-resignation-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-mekke-question-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-mekke-vote-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-mesem-104180-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-mesem-78231-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-municipal-22702-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-question-13296-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-question-4186-relation"
-    },
-    {
-      "subject_kind": "practice_relation.target_finding_id",
-      "subject_id": "0410-question-8988-relation"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-expression-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-foreign-principles-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-forest-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-gebze-charter-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-il-disiplin-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-kongre-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-labor-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-may-gyk-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-may-resignation-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-municipal-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-safety-statement"
-    },
-    {
-      "subject_kind": "practice_statement",
-      "subject_id": "0410-school-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-expression-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-foreign-principles-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-forest-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-gebze-charter-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-il-disiplin-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-kongre-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-labor-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-may-gyk-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-may-resignation-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-municipal-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-safety-statement"
-    },
-    {
-      "subject_kind": "practice_statement.quote_finding_id",
-      "subject_id": "0410-school-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-expression-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-foreign-principles-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-forest-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-gebze-charter-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-il-disiplin-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-kongre-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-labor-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-may-gyk-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-may-resignation-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-municipal-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-safety-statement"
-    },
-    {
-      "subject_kind": "practice_statement.summary_finding_id",
-      "subject_id": "0410-school-statement"
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-date-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
-      "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-vote-p|action"
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-2023-extra-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-aliaga-104172-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-aliaga-731468-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-bolu-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-corum-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-expression-23643-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-forest-23804-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-izmit-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-izmit-account-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-kocaeli-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-labor-23163-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-luleburgaz-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-mandate-3761-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-may-gyk-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-may-resignation-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-mekke-question-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-mekke-vote-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-mesem-104180-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-mesem-78231-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-municipal-22702-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-question-13296-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-question-4186-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-question-8988-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-seasonal-733034-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-2023-extra-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-aliaga-104172-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-aliaga-731468-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-bolu-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-corum-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-expression-23643-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-forest-23804-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-izmit-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-izmit-account-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-kocaeli-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-labor-23163-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-luleburgaz-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mandate-3761-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-may-gyk-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-may-resignation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mekke-question-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mekke-vote-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mesem-104180-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mesem-78231-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-municipal-22702-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-question-13296-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-question-4186-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-question-8988-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-seasonal-733034-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-2023-extra-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-bolu-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-corum-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-izmit-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-kocaeli-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-luleburgaz-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-question-13296-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-question-4186-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-2020-ninth-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-2023-extra-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-aliaga-104172-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-aliaga-731468-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-bolu-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-corum-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-expression-23643-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-forest-23804-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-izmit-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-izmit-account-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-kocaeli-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-labor-23163-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-luleburgaz-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mandate-3761-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-may-gyk-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-may-resignation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mekke-question-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mekke-vote-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mesem-104180-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mesem-78231-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-municipal-22702-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-question-13296-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-question-4186-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-question-8988-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-seasonal-733034-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-expression-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-foreign-principles-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-forest-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-gebze-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-il-disiplin-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-izmit-account-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-kocaeli-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-labor-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-may-gyk-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-may-resignation-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-municipal-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-safety-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-school-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-seasonal-agriculture-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-expression-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-foreign-principles-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-forest-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-gebze-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-il-disiplin-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-izmit-account-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-kocaeli-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-labor-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-may-gyk-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-may-resignation-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-municipal-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-safety-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-school-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-seasonal-agriculture-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-expression-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-foreign-principles-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-forest-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-gebze-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-il-disiplin-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-izmit-account-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-kocaeli-charter-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-labor-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-may-gyk-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-may-resignation-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-municipal-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-safety-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-school-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-seasonal-agriculture-statement"
     }
   ]
 }

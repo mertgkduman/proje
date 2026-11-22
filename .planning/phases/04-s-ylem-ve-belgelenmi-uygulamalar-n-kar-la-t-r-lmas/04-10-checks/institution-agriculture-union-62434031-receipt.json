@@ -1,0 +1,53 @@
+{
+  "job": "62434031",
+  "status": "COMPLETED 0:0; input/source/preview and independent audit pass",
+  "renderer": 29,
+  "package_sha256": "4b83401a21314de59c17bf7210637026b019e8a765b20ef3ac96f8e3b86ebeae",
+  "review_sha256": "7ee6cef94304eb912c892295830a31559fa905d1aa709537dfad88955f2468e3",
+  "release": "data/.staging/gsd-0410-instagri-62434031/preview/releases/5e70a2a5eb184bfe9b970d8d4676e96d",
+  "files_sha256": {
+    "manifest.json": "ebc95d6ca92e508162bab1fd45624e5e8acef67a33c3bd74a5288878a0837558",
+    "records.json": "72876c423a19cc4e5a06af0bc87e03dc6d14b847774255dbd7563819abaa494e",
+    "records.sqlite3": "2e5f19829ae89e461e922792091c2ba494dec8224c60102210a634fbdac42cf3",
+    "index.html": "d038cb5d06eea80afa0b21f8e5b79fdbe0a6576394f4cc71b5478027520fc3f9"
+  },
+  "canonical_current_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "event_count": 26,
+  "relations": 27,
+  "old_package_preserved": true,
+  "unchanged_reviews_exact": true,
+  "reread_reviews_prior_content_and_passages_preserved": [
+    {
+      "subject": [
+        "practice_event",
+        "0410-izmit-2020-congress-event"
+      ],
+      "old_passage_ids": [
+        "0410-emep-izmit-2020-news-result-p"
+      ],
+      "new_passage_ids": [
+        "0410-emep-izmit-2020-news-finance-p",
+        "0410-emep-izmit-2020-news-result-p"
+      ]
+    },
+    {
+      "subject": [
+        "practice_relation",
+        "0410-izmit-2020-congress-relation"
+      ],
+      "old_passage_ids": [
+        "0410-emep-gebze-charter-202305-p",
+        "0410-emep-gebze-charter-selected-p",
+        "0410-emep-izmit-2020-news-result-p"
+      ],
+      "new_passage_ids": [
+        "0410-emep-gebze-charter-202305-p",
+        "0410-emep-gebze-charter-selected-p",
+        "0410-emep-izmit-2020-news-finance-p",
+        "0410-emep-izmit-2020-news-result-p"
+      ]
+    }
+  ],
+  "both_view_href_pass": true,
+  "scope_closures": 0
+}
