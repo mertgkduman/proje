@@ -163,3 +163,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 110–114 okundu: rapor 2010 komisyonu sonrası kurum faaliyetleri, sağlık koordinasyonu ve uluslararası afet belgelerini anlatır. Bu tarihsel örnekler 2020 Baş konuşmasının karşılığı veya TİP sonucu değildir; indeks 115 ve sonrası açık.
 
 - 2021 raporu indeks 115–119 okundu: ABD/Japonya örnekleri ile Türkiye’de 1930–2009 afet yönetimi mevzuatı ve AFAD’a geçişin rapordaki tarihsel anlatımı yer alır. Baş konuşması öncesindeki durum TİP girişimi olarak gösterilmedi; indeks 120 ve sonrası açık.
+
+- 2021 raporu indeks 120–124 okundu: merkezî afet kurumları, AFAD ve Çevre ve Şehircilik Bakanlığının rapor dönemindeki yapısı, görevleri ve coğrafi veri düzenlemeleri anlatılıyor. Kurumsal çerçeve TİP uygulaması veya komisyonun Baş talebine yanıtı değildir; indeks 125 ve sonrası açık.
