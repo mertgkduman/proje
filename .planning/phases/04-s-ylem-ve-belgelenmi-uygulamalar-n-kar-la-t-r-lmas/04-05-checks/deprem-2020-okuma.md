@@ -235,3 +235,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 290–294 metin katmanı okundu: hasar tespiti ve psikososyal destek beyanları ile afet risk azaltma ve hastane acil planlaması anlatılır. İRAP hedefleri gerçek uygulama veya Baş konuşmasının sonucu sayılmadı; indeks 295 ve sonrası açık.
 
 - 2021 raporu indeks 295–299 metin katmanı okundu: hastane ve işyeri planları, 2011’de kurulan risk azaltma platformu, toplanma/barınma alanları ve tatbikatlar anlatılıyor. Önceki platform varlığı komisyon katılımını veya TİP nedenselliğini kanıtlamaz; dönemsel veri güncel sayı sayılmadı. İndeks 300 ve sonrası açık.
+
+- 2021 raporu indeks 300–304 metin katmanı okundu: afet tatbikatları, AFAD/Kızılay/MEB eğitimleri ve okul müfredatına ilişkin kaynaklı kurum anlatımları vardır. Sağlık çalışanlarının eğitim hedef kitlesinde sayılması komisyona meslek örgütü katılımı veya TİP kaynaklı uygulama değildir; indeks 305 ve sonrası açık.
