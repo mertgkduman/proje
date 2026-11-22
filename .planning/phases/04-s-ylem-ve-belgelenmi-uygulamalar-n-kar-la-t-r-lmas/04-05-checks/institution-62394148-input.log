@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0404-institution-486pw2m4/src/arsiv.py", line 3663, in <module>
+    main()
+  File "/tmp/gsd-0404-institution-486pw2m4/src/arsiv.py", line 3575, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-institution-486pw2m4/src/uygulamalar.py", line 1343, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0404-institution-486pw2m4/src/uygulamalar.py", line 1275, in _load_practice_copy
+    validate_practices(data)
+  File "/tmp/gsd-0404-institution-486pw2m4/src/uygulamalar.py", line 925, in validate_practices
+    validate_practice_evidence(data, findings, passages, events, statements, check_finding, party_sources)
+  File "/tmp/gsd-0404-institution-486pw2m4/src/uygulamalar.py", line 644, in validate_practice_evidence
+    raise ValueError('Olay kanıtının somut dayanak türü gerekli')
+ValueError: Olay kanıtının somut dayanak türü gerekli
