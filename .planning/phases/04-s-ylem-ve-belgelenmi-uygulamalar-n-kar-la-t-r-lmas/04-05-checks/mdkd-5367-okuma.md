@@ -21,3 +21,5 @@ Ek okuma: 2026 tutanağının indeks 8–13 metin katmanı da incelendi. Genel S
 İndeks 20–25 metin katmanı okundu: Koçyiğit ve Cengiz Çiçek DEM Parti'nin rapor hakkındaki görüşlerini, ardından Murat Emir ve Murat Bakan CHP görüş ve eleştirilerini ifade eder. Her görüş kendi konuşmacısına aittir; TİP'e genellenmez. İndeks 26–43 ve 49–58 ile görseller hâlâ açıktır.
 
 İndeks 26–31 metin katmanı okundu: CHP adına başka konuşmalar, Mehmet Salih Uzun'un oylamanın ertelenmesi ve önce Can Atalay hakkındaki AYM kararının uygulanması önerisi, ardından AK Parti adına Abdülhamit Gül'ün konuşması vardır. Uzun'un önerisi Şık'a atfedilmez; oylama sonucuyla karıştırılmaz. İndeks 32–43 ve 49–58 ile görseller açıktır.
+
+İndeks 32–43 metin katmanı okundu: AK Parti temsilcilerinin değerlendirmelerinden sonra DSP Genel Başkanı Önder Aksakal rapora dair görüş ve itirazlarını dile getirir. Konuşmalardaki siyasi nitelendirme ve iddialar yalnız konuşmacılarına aittir. İndeks 49–58 ve tüm sayfa görselleri açık kalır.
