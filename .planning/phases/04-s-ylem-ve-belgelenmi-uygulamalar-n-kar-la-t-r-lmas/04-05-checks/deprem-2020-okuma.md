@@ -85,3 +85,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 103–107 de okundu: adres dairesi yetkilisi mekânsal kayıt sistemi, afet örnekleri ve farklı kurumlardaki kullanım olanaklarını anlatır. Örnek rakamlardan biri sunumda hayal ürünü olarak açıkça düzeltilmiştir; hiçbir örnek bağımsız doğrulanmış ölçüm veya TİP eylemi sayılmaz. İndeks 108–154 açık.
 
 9 Aralık toplantısı PDF indeks 108–112 de okundu: adres kodu ve adres değişikliği hakkında Gökan Zeybek ve Ali Kenanoğlu soru sorar, nüfus idaresi yetkilisi kendi açıklamalarını yapar. 2020 sözleri otomatik olarak TİP’e atfedilmedi; sistem hakkındaki beyan ve kaygılar ilgili katılımcılara ait kaldı. İndeks 113–154 açık.
+
+9 Aralık toplantısı PDF indeks 113–117 de okundu: okul için adres beyanı, yapı envanteri ve seçim kayıtlarına ilişkin sorular ile idare yetkilisinin farklı açıklamaları yer alır. İddialar ilgili konuşmacılara ait ve ayrı tutulmuştur; Ali Kenanoğlu’nun 2020 sözü TİP’e otomatik atfedilmez. İndeks 118–154 açık.
