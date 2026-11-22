@@ -2596,5 +2596,28 @@
     ],
     "status": "open",
     "limitation": "Sadece bu arama sonuçları sınırlı biçimde değerlendirildi; 9 Kasım kararının tam aslı hâlâ açık."
+  },
+  "public_publisher_catalog": {
+    "receipt": "disiplin-af-official-publication-catalog-reading.json",
+    "read_at": "2026-11-22T04:03:25.404290+00:00",
+    "documents": [
+      {
+        "url": "https://api.yeni-parti.org.tr/api/yayinlar/menu",
+        "http_status": 200,
+        "mime": "application/json; charset=utf-8",
+        "sha256": "f7a145443335910d4fb2dbdb09d89225b33a0b60b8975988a0ff88f4bf006a8c",
+        "original_path": "data/practices/sources/yeni-parti/objects/f7a145443335910d4fb2dbdb09d89225b33a0b60b8975988a0ff88f4bf006a8c/original.html.bin"
+      },
+      {
+        "url": "https://api.yeni-parti.org.tr/api/yayinlar/k/tuzuk",
+        "http_status": 200,
+        "mime": "application/json; charset=utf-8",
+        "sha256": "c5a745e958a15cb869b25d203f4eaf7ed208c7d255cf16c5ea7f3b1e492a006f",
+        "original_path": "data/practices/sources/yeni-parti/objects/c5a745e958a15cb869b25d203f4eaf7ed208c7d255cf16c5ea7f3b1e492a006f/original.html.bin"
+      }
+    ],
+    "reading": "Güncel yayın menüsünde Tüzük kategorisi var; Tüzük kategori yanıtında tek belge /uploads/yayinlar/yayin-1794902310469-811605043.pdf ve tarih alanı 2026-11-17T10:58:30.700Z. Bu PDF özgün SHA a46c73ad… ile önceden korunmuş.",
+    "limitations": "Mevcut liste geçmişteki sürümlerin yokluğunu kanıtlamaz. API tarih alanının yayın veya oluşturma anlamı ayrıca doğrulanmadı. PDF ve kategori tarihi kesim sonrası olduğundan 10 Kasım tarihli karar veya ara sürüm olarak kullanılamaz.",
+    "status": "open"
   }
 }
