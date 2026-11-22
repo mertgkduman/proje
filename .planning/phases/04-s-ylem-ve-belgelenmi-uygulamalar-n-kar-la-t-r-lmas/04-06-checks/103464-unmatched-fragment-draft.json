@@ -1,0 +1,340 @@
+{
+  "entries": [
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0406-103464-contribution-f",
+        "party_id": "dem",
+        "heading": "Belgelenmiş uygulamalar",
+        "pair_id": "0406-103464-contribution-f",
+        "text": "Ömer Faruk Gergerlioğlu DEM grubu adına engelli yurttaşların gelirine ilişkin öneriyi açıkladı; oylama öncesi iki yoklamada yeter sayı bulunmadığından birleşim kapandı.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-disability-speaker-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-disability-speaker-p",
+        "checked_at": "2026-11-22T09:16:30.638236+00:00",
+        "result": "confirmed",
+        "reason": "TBMM birleşim tutanağının özgün metni incelendi."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-disability-income-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-disability-income-p",
+        "checked_at": "2026-11-22T09:16:30.638236+00:00",
+        "result": "confirmed",
+        "reason": "TBMM birleşim tutanağının özgün metni incelendi."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-noquorum-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-noquorum-p",
+        "checked_at": "2026-11-22T09:16:30.638236+00:00",
+        "result": "confirmed",
+        "reason": "TBMM birleşim tutanağının özgün metni incelendi."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-second-rollcall-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0406-103464-contribution-f",
+        "passage_id": "0406-tbmm-2025-24-second-rollcall-p",
+        "checked_at": "2026-11-22T09:16:30.638236+00:00",
+        "result": "confirmed",
+        "reason": "TBMM birleşim tutanağının özgün metni incelendi."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0406-103464-contribution-f",
+        "kind": "finding",
+        "subject_id": "0406-103464-contribution-f",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+        "result": "reviewed",
+        "reason": "Öneri, görüşme takvimi ve yeter sayı yokluğu ayrı okundu."
+      }
+    }
+  ],
+  "practice_records": {
+    "practice_scope_v2": [
+      {
+        "id": "practice-ae547a34c2afbfccd7913c6eed51c5a5a6d7f422594965429bb8466e60594705",
+        "party_id": "dem",
+        "topic_id": "engellilik",
+        "taxonomy_version": 4,
+        "period_start": "2012-11-30",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "Yalnız 3 Aralık 2025 araştırma önergesinin ön görüşme takvimi; engellilik kapsamı araştırması sürüyor."
+      }
+    ],
+    "practice_event": [
+      {
+        "id": "0406-2025-103464-gundem",
+        "common_event_key": "tbmm-28-4-24-10-3464-gundem",
+        "event_at": "2025-12-03",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "TBMM 28. dönem 4. yasama yılı 24. birleşim; DEM 10/3464 araştırma önergesi ön görüşme takvimi",
+        "title": "Engelli yurttaşlar araştırmasının ön görüşme takvimi",
+        "occurrence_basis": "TBMM Genel Kurulu birleşim tutanağı."
+      }
+    ],
+    "practice_event_evidence": [
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-disability-speaker-p",
+        "supported_point": "DEM grubu konuşmacısı",
+        "stage": "initiative",
+        "concrete_basis": "Tutanak DEM grubu adına Gergerlioğlu’nu gösterir.",
+        "limitation": "Yoklama sonucu araştırma önergesinin kabulü veya reddi değildir; ödeme yapıldığı gösterilmez.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-disability-income-p",
+        "supported_point": "Gelire ilişkin öneri",
+        "stage": "initiative",
+        "concrete_basis": "Konuşmacı gelir eşiği ve asgari ücret düzeyinde ödeme önerir.",
+        "limitation": "Yoklama sonucu araştırma önergesinin kabulü veya reddi değildir; ödeme yapıldığı gösterilmez.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-noquorum-p",
+        "supported_point": "İlk yoklamada yeter sayı yok",
+        "stage": "result",
+        "concrete_basis": "Tutanak DEM grup önerisinin oylanması öncesinde yeter sayı bulunmadığını belirtir.",
+        "limitation": "Yoklama sonucu araştırma önergesinin kabulü veya reddi değildir; ödeme yapıldığı gösterilmez.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-second-rollcall-p",
+        "supported_point": "İkinci yoklama ve kapanış",
+        "stage": "result",
+        "concrete_basis": "Başkan ikinci yoklamada yeter sayı bulunamadığından birleşimi kapatır.",
+        "limitation": "Yoklama sonucu araştırma önergesinin kabulü veya reddi değildir; ödeme yapıldığı gösterilmez.",
+        "epistemic_type": "claim"
+      }
+    ],
+    "practice_evidence_assessment": [
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-disability-speaker-p",
+        "stage": "initiative",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-disability-income-p",
+        "stage": "initiative",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-noquorum-p",
+        "stage": "result",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0406-2025-103464-gundem",
+        "passage_id": "0406-tbmm-2025-24-second-rollcall-p",
+        "stage": "result",
+        "basis_kind": "document"
+      }
+    ],
+    "practice_contribution": [
+      {
+        "id": "0406-2025-103464-contribution",
+        "event_id": "0406-2025-103464-gundem",
+        "party_id": "dem",
+        "actor_id": "0406-dem-institution",
+        "contribution_kind": "support",
+        "finding_id": "0406-103464-contribution-f",
+        "authority_passage_id": null,
+        "membership_passage_id": null,
+        "responsibility_limit": "Grup adına açıklanan öneri; kabul, ret veya ödeme sonucu değil."
+      }
+    ],
+    "practice_attempt_v2": [
+      {
+        "id": "0406-103464-tutanak-okuma",
+        "scope_id": "practice-ae547a34c2afbfccd7913c6eed51c5a5a6d7f422594965429bb8466e60594705",
+        "attempted_at": "2026-11-22T09:16:30.638236+00:00",
+        "query": "TBMM 28/4/24 DEM 10/3464 grup önerisi ve yoklama",
+        "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+        "result": "examined",
+        "reason": "Grup konuşması ve iki yoklama özgün tutanakta okundu.",
+        "source_version_id": "0406-tbmm-2025-24-v1"
+      }
+    ],
+    "practice_scope_source": [
+      {
+        "scope_id": "practice-ae547a34c2afbfccd7913c6eed51c5a5a6d7f422594965429bb8466e60594705",
+        "version_id": "0406-tbmm-2025-24-v1",
+        "inspected_sections": "[\"DEM grup konuşması\", \"İlk ve ikinci yoklama, birleşimin kapanışı\"]",
+        "inspected_at": "2026-11-22T09:16:30.638236+00:00"
+      }
+    ],
+    "practice_candidate": [
+      {
+        "id": "0406-2025-103464-unmatched",
+        "scope_id": "practice-ae547a34c2afbfccd7913c6eed51c5a5a6d7f422594965429bb8466e60594705",
+        "event_id": "0406-2025-103464-gundem",
+        "relation_id": null,
+        "state": "unmatched",
+        "reason": "Faz 3 seçili engellilik söylemi parti faaliyetlerinin sesli, görsel ve işaret dili sürümleridir; gelir önerisini o hedefin gerçekleşmesi olarak bağlamak desteklenmez. Diğer uygun söylemler ve adaylar araştırılacak.",
+        "passage_ids": "[\"0406-tbmm-2025-24-disability-speaker-p\", \"0406-tbmm-2025-24-disability-income-p\", \"0406-tbmm-2025-24-noquorum-p\", \"0406-tbmm-2025-24-second-rollcall-p\"]"
+      }
+    ]
+  },
+  "practice_source_review": [
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2025-103464-gundem|0406-tbmm-2025-24-disability-speaker-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-disability-speaker-p\"]",
+      "inspected_sections": "[\"DEM grubu konuşmacısı\"]",
+      "supported_claim": "DEM grubu konuşmacısı",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: DEM grubu konuşmacısı"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2025-103464-gundem|0406-tbmm-2025-24-disability-income-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-disability-income-p\"]",
+      "inspected_sections": "[\"Gelire ilişkin öneri\"]",
+      "supported_claim": "Gelire ilişkin öneri",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: Gelire ilişkin öneri"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2025-103464-gundem|0406-tbmm-2025-24-noquorum-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-noquorum-p\"]",
+      "inspected_sections": "[\"İlk yoklamada yeter sayı yok\"]",
+      "supported_claim": "İlk yoklamada yeter sayı yok",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: İlk yoklamada yeter sayı yok"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2025-103464-gundem|0406-tbmm-2025-24-second-rollcall-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-second-rollcall-p\"]",
+      "inspected_sections": "[\"İkinci yoklama ve kapanış\"]",
+      "supported_claim": "İkinci yoklama ve kapanış",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: İkinci yoklama ve kapanış"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0406-2025-103464-gundem",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-disability-speaker-p\", \"0406-tbmm-2025-24-disability-income-p\", \"0406-tbmm-2025-24-noquorum-p\", \"0406-tbmm-2025-24-second-rollcall-p\"]",
+      "inspected_sections": "[\"DEM grubu konuşmacısı\", \"Gelire ilişkin öneri\", \"İlk yoklamada yeter sayı yok\", \"İkinci yoklama ve kapanış\"]",
+      "supported_claim": "DEM grubu konuşması ve iki yoklama ayrı aşamalardır.",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: DEM grubu konuşması ve iki yoklama ayrı aşamalardır."
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0406-2025-103464-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-disability-speaker-p\", \"0406-tbmm-2025-24-disability-income-p\", \"0406-tbmm-2025-24-noquorum-p\", \"0406-tbmm-2025-24-second-rollcall-p\"]",
+      "inspected_sections": "[\"DEM grubu konuşmacısı\", \"Gelire ilişkin öneri\", \"İlk yoklamada yeter sayı yok\", \"İkinci yoklama ve kapanış\"]",
+      "supported_claim": "Gergerlioğlu grup adına gelir önerisini açıkladı; oylama yapılmadı.",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: Gergerlioğlu grup adına gelir önerisini açıkladı; oylama yapılmadı."
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0406-2025-103464-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-disability-speaker-p\", \"0406-tbmm-2025-24-disability-income-p\", \"0406-tbmm-2025-24-noquorum-p\", \"0406-tbmm-2025-24-second-rollcall-p\"]",
+      "inspected_sections": "[\"DEM grubu konuşmacısı\", \"Gelire ilişkin öneri\", \"İlk yoklamada yeter sayı yok\", \"İkinci yoklama ve kapanış\"]",
+      "supported_claim": "Katkı ve yoklama sınırı tutanakla desteklenir.",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: Katkı ve yoklama sınırı tutanakla desteklenir."
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0406-2025-103464-unmatched",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:16:30.638236+00:00",
+      "source_version_ids": "[\"0406-tbmm-2025-24-v1\"]",
+      "passage_ids": "[\"0406-tbmm-2025-24-disability-speaker-p\", \"0406-tbmm-2025-24-disability-income-p\", \"0406-tbmm-2025-24-noquorum-p\", \"0406-tbmm-2025-24-second-rollcall-p\"]",
+      "inspected_sections": "[\"DEM grubu konuşmacısı\", \"Gelire ilişkin öneri\", \"İlk yoklamada yeter sayı yok\", \"İkinci yoklama ve kapanış\"]",
+      "supported_claim": "Gelir önerisi, seçili işaret dili söyleminin gerçekleşmesi sayılmaz; eşleme araştırması açık.",
+      "limitations": "Ön görüşme takviminde yeter sayı bulunmaması kabul, ret veya ödeme sonucu değildir; söylem eşlemesi açık.",
+      "result": "reviewed",
+      "reason": "İlgili kaynak ve sınırları okundu: Gelir önerisi, seçili işaret dili söyleminin gerçekleşmesi sayılmaz; eşleme araştırması açık."
+    }
+  ]
+}
