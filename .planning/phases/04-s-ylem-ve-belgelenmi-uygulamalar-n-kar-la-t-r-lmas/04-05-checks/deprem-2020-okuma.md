@@ -285,3 +285,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 415–419 metin katmanı okundu: sismik ağlar, erken uyarı, afet risk planları, gönüllü kuruluşların koordinasyonu ve yerbilimsel planlama komisyon önerileri sunulur. Öneriler uygulanmış gösterilmedi; özel olarak TİP talebine nedensel cevap sayılmadı. İndeks 420–523 ve görseller açık.
 
 - 2021 raporu indeks 420–424 metin katmanı okundu: çoklu tehlike ve zemin etütleri, fay haritalaması, yerel uzman istihdamı ve katılımlı imar planlaması için komisyon önerileri yer alır. Öneriler gerçekleşmiş uygulama veya TİP'e özgü sonuç sayılmadı. İndeks 425–523 ve görseller açık.
+
+- 2021 raporu indeks 425–429 metin katmanı okundu: toplanma alanları, güncel yapı envanteri, zemin ve bina risk değerlendirmesi ile güçlendirme öncelikleri komisyon önerileridir; gerçekleştiklerine veya TİP talebine cevap olduklarına dair kanıt değillerdir. İndeks 430–523 ve görseller açık.
