@@ -127,3 +127,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 23 Aralık toplantısı PDF indeks 64–68 okundu: Jeofizik Mühendisleri Odası soruları yanıtlar ve oturumu kapanır; Jeoloji Mühendisleri Odası Başkanı Hüseyin Alan sunumuna başlar. Meslek örgütlerinin görüş ve eleştirileri kendilerine ait tutulur; TİP veya bağımsız sonuç olarak kaydedilmez. İndeks 69–132 açık.
 
 23 Aralık toplantısı PDF indeks 69–73 okundu: Jeoloji Mühendisleri Odası başkanı ve deprem danışma kurulu başkanı risk azaltma, mevzuat ve yapı/yerleşim değerlendirmelerini sunar. Gözlem ve sayılar konuşmacılara aittir; TİP etkisi veya bağımsızca doğrulanmış sonuç sayılmadı. İndeks 74–132 açık.
+
+23 Aralık toplantısı PDF indeks 74–78 okundu: Jeoloji Mühendisleri Odasının risk azaltma, kurumsal yapı ve barınma önerileri ile üyelerin soru ve eleştirileri yer alır. Teknik ve siyasal tartışmalar ilgili kişilere aittir; TİP’e atfedilmedi. İndeks 79–132 açık.
