@@ -24,7 +24,7 @@ for name,ex in [('fund',exact),('rental','kira yardımı yapmak')]:
 info=json.loads((p/'barinma-tip-capture.json').read_text()); doc='0405-tip-barinma-duyuru'; vid=doc+'-v1'; sha=info['sha256']; url=info['url']; raw=(root/'objects'/sha/'original.html.bin').read_bytes(); assert hashlib.sha256(raw).hexdigest()==sha
 exact='Genel Başkanımız ve Milletvekilimiz Erkan Baş ile Milletvekilleri Sera Kadıgil, Ahmet Şık ve Barış Atay'
 assert exact in html_source_text(raw)
-add('document',dict(id=doc,party_id='tip',title='Konut Krizine Karşı Kanun Teklifi Sunduk',source_kind='party_publication'))
+add('document',dict(id=doc,party_id='tip',title='Konut Krizine Karşı Kanun Teklifi Sunduk',source_kind='party'))
 add('document_version',dict(id=vid,document_id=doc,original_url=url,final_url=url,document_date='2022-05-19',version_label='TİP teklif duyurusu',accessed_at=info['accessed_at'],verified_at=info['accessed_at'],mime='text/html',sha256=sha,original_path=f'objects/{sha}/original.html.bin',readable_path=f'objects/{sha}/readable.html',date_precision='day',date_unknown_reason=None))
 view=info['view'].copy(); view['version_id']=vid; add('archive_view',view)
 add('source_attribution',dict(version_id=vid,kind='party_publication',publisher='Türkiye İşçi Partisi',author=None,social_handle=None,published_at='2022-05-19',date_precision='day',public_url=url,basis='Tarihli parti duyurusunun tam gövdesi ve yayın künyesi okundu.'))

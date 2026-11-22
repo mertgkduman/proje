@@ -1,0 +1,11 @@
+Staged 32 original, readable and view paths; package d029bfa3e20d1f2dd14faba10879aec97cb145be6bd8b6621ca664bf432d086e; review 0f81be421cb248f4be7061e5ce63ed9dc97ebfae0da582b7fdcb37a0e4438ce5
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/barinma-validation.py", line 153, in <module>
+    main(PACKAGE, REVIEW)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/barinma-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/barinma-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/barinma-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1
