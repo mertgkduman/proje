@@ -28,6 +28,8 @@ TBMM'nin 19 Haziran 2025 [haberinde](https://tbmm.gov.tr/Haber/Detay?Id=dbc5416a
 
 Yargıtay'ın geçmiş faal partiler listesinin web okumasında DBP 02.05.2008, HDP 15.10.2012 ve Yeşiller ve Sol Gelecek Partisi 30.11.2012 ayrı satırlardır; özgün liste PDF'si yerel DNS hatası nedeniyle henüz yakalanamadı. `0204-dem-legal` kaynaklı sicil kimliği ve kuruluş tarihi değişmez. 10 Ocak 2024 [yeni Yeşil Sol Parti tanıtımı](https://www.yesilsolparti.org/?p=4296) (SHA256 `d7039c233781df277f7c89eef8946912d058a4142fc5d659b01f93cec9c0b350`) kendi 16 Kasım 2023 başvurusunu ve 24 Kasım alındı belgesini bildirir. Bu başka partiye ait bir kimlik ayırıcı kaynak adayıdır; 2024 ve sonrası Yeşil Sol adlı her kaynağı DEM'e devretmek doğru değildir. Sicil bağı ve daha eski tüzük nüshaları için Faz 3 kayıtları korunmalı, nüshaların yürürlük sırası tahmin edilmemelidir.
 
+Takip eden web okumasında [Yargıtay sicil 292](https://www.yargitaycb.gov.tr/sipar/292) Yeşil Sol Parti'nin kuruluşunu 24 Kasım 2023 olarak gösterir; bu, DEM'in 30 Kasım 2012 kuruluşlu sicil 157 kaydından ayrı bir kayıttır. Yerel DNS erişimi nedeniyle 292 sayfasının özgün baytları henüz alınamadı; web sonucu tek başına arşivlenmiş passage sayılmaz.
+
 ## İki tüzük nüshasında ilgili hükümler
 
 Özgün `0204-dem-charter-v1` PDF indeksi 28–31 ve `0204-dem-charter-older-v1` indeksi 25–28, üretim PDF çıkarıcısıyla yeniden okundu. Her iki metnin Madde 59'u genel/yerel adaylar için üye ve delegelerin oy kullandığı ön seçim veya merkez yoklamasını ve usulü Parti Meclisinin belirlemesini düzenler (`0305-dem-secim-yontem-to-yerel-aday-dem-passage`, `0305-dem-secim-yontem-to-yerel-aday-hedep-passage`). Hakkâri'de gerçekleştiği aktarılan aday belirleme bu konuyla ilgilidir; yöntem hükmü Çallı'nın özel itirazını çözmez.
