@@ -233,3 +233,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 285–289 metin katmanı okundu: sağlık, haberleşme, enerji, tahliye, nakliye ve hasar tespiti gruplarının görevleri ve 2020 depremlerine dair kurum anlatımları bulunuyor. Afet müdahalesinde sağlık personeli görevlendirilmesi komisyona sağlık çalışanı örgütü davetiyle aynı şey değildir; TİP bağlantısı kurulmadı. İndeks 290 ve sonrası açık.
 
 - 2021 raporu indeks 290–294 metin katmanı okundu: hasar tespiti ve psikososyal destek beyanları ile afet risk azaltma ve hastane acil planlaması anlatılır. İRAP hedefleri gerçek uygulama veya Baş konuşmasının sonucu sayılmadı; indeks 295 ve sonrası açık.
+
+- 2021 raporu indeks 295–299 metin katmanı okundu: hastane ve işyeri planları, 2011’de kurulan risk azaltma platformu, toplanma/barınma alanları ve tatbikatlar anlatılıyor. Önceki platform varlığı komisyon katılımını veya TİP nedenselliğini kanıtlamaz; dönemsel veri güncel sayı sayılmadı. İndeks 300 ve sonrası açık.
