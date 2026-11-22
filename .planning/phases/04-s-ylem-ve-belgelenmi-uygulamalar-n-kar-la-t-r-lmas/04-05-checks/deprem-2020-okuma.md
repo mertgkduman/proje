@@ -181,3 +181,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 155–159 okundu: tsunami uyarısı, AFAD-RED ve AYDES sistemleri kurumların rapordaki açıklamalarıyla anlatılır. Tanımlanmış sistemlerin çalışması veya etkisi ayrıca doğrulanmadan TİP uygulaması sayılmaz; indeks 160 ve sonrası açık.
 
 - 2021 raporu indeks 160–164 okundu: UDAP destekleri, yapı sağlığı izleme ve jeolojik etütlerin planlamayla ilişkisi rapor dönemindeki kurum verileriyle açıklanıyor. Devam eden projeler, gerçekleşmiş sonuçlar ve TİP girişimleri birbirine eşitlenmedi; indeks 165 ve sonrası açık.
+
+- 2021 raporu indeks 165–169 okundu: jeolojik-jeoteknik etüt ve mikrobölgeleme süreçleri, resmî etüt sayıları ve YERBİS projesi raporun kurum kaynaklarıyla anlatılıyor. Başlangıç tarihleri ve devam eden çalışmalar TİP faaliyetine bağlanmadı; indeks 170 ve sonrası açık.
