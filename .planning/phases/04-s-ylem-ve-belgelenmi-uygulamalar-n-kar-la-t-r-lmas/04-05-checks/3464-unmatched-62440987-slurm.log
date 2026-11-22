@@ -1,0 +1,11 @@
+Staged 110 original, readable and view paths; package 4903d5a3033adb01ef233eac0629fd9856a44fb7fabb1ef72ea8cf5126d457ce; review 7bd57c97a119961e29139c65959fb38d8841f5a7d3656bcabd3a997721ef0dc3
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/3464-unmatched-validation.py", line 153, in <module>
+    main(Path(arguments[0]).resolve(), Path(arguments[1]).resolve(), *arguments[2:])
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/3464-unmatched-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/3464-unmatched-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/3464-unmatched-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1

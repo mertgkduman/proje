@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0404-3464-unmatched-san1ym4r/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0404-3464-unmatched-san1ym4r/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0404-3464-unmatched-san1ym4r/src/uygulamalar.py", line 1375, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0404-3464-unmatched-san1ym4r/src/uygulamalar.py", line 1307, in _load_practice_copy
+    validate_practices(data)
+  File "/tmp/gsd-0404-3464-unmatched-san1ym4r/src/uygulamalar.py", line 984, in validate_practices
+    validate_practice_closure(data, inventory, extensions)
+  File "/tmp/gsd-0404-3464-unmatched-san1ym4r/src/uygulamalar.py", line 530, in validate_practice_closure
+    raise ValueError('Aday pasajı incelenen kapsam kaynağı gerektirir')
+ValueError: Aday pasajı incelenen kapsam kaynağı gerektirir

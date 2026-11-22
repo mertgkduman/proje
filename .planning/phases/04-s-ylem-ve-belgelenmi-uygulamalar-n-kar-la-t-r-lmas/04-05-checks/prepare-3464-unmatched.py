@@ -31,6 +31,7 @@ rec('practice_contribution',dict(id=con,event_id=event,party_id='tip',actor_id='
 rec('practice_actor_period',dict(contribution_id=con,valid_from='2024-11-06',valid_to='2026-01-23',identity_passage_id=auth))
 rec('practice_attempt_v2',dict(id='0405-tip-3464-tutanak-okuma',scope_id=scope,attempted_at=now,query='TBMM 2/3464 tümü açık oy cetveli, TİP satırları ve sonuç',url=url,result='examined',reason='Üç kişisel oy ve kabul açıklaması okundu; önceki özel gerekçe bulunmadı.',source_version_id=vid))
 rec('practice_scope_source',dict(scope_id=scope,version_id=vid,inspected_sections=json.dumps(['Baş, Kadıgil ve Şık kişisel oy satırları','Kesin açık oy toplamları'],ensure_ascii=False),inspected_at=now))
+rec('practice_scope_source',dict(scope_id=scope,version_id='0405-tip-3464-tutanak-v1',inspected_sections=json.dumps(['2/3464 teklifinin tümünün oylanması','Başkanın kabul açıklaması'],ensure_ascii=False),inspected_at=now))
 rec('practice_candidate',dict(id=candidate,scope_id=scope,event_id=event,relation_id=None,state='unmatched',reason='2019 ve 2022 EYT yaş koşulu söylemi ile 2026 torba kanunun tümüne ret oyu farklı konulardır; ret oyuna belirli madde gerekçesi atfedilmez. Önceki uygun doğrudan söylem araştırması açık.',passage_ids=json.dumps(refs,ensure_ascii=False)))
 pkg['entries'].extend(entries)
 for k,v in records.items():pkg['practice_records'].setdefault(k,[]).extend(v)
