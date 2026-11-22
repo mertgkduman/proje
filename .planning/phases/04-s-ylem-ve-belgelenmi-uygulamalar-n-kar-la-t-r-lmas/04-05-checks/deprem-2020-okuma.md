@@ -241,3 +241,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 305–309 metin katmanı okundu: afet eğitimi, 2019 AFAD gönüllülük sistemi, lojistik depoları ve haberleşme altyapısı kurum anlatımlarına dayanır. Rapor dönemindeki stok ve kapasiteler güncel veya TİP’in eylemi kabul edilmedi; harita ayrıca görsel incelenmedi. İndeks 310 ve sonrası açık.
 
 - 2021 raporu indeks 310–314 metin katmanı okundu: Silivri depremi sonrası BTK yaptırımı ile işletmecilerin kapasite ve afet desteklerine ilişkin tarihli sunumları aktarılır; işletmeci iddiaları bağımsızca doğrulanmadı ve TİP’e bağlanmadı. İndeks 315 ve sonrası açık.
+
+- 2021 raporu indeks 315–319 metin katmanı okundu: Vodafone kurum beyanı, afet arama kurtarma kapasitesi ve hasar tespit yöntemi 2020–2021 kaynaklarıyla aktarılıyor. Saha faaliyetleri ve kurumlardaki görevler partiye atfedilmedi; indeks 320 ve sonrası açık.
