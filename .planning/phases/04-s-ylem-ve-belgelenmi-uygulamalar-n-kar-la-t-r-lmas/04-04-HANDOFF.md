@@ -173,3 +173,17 @@ Toplam 58 dilimin 001–011 için gerçek aralık okuması ve ayrı makbuzu mevc
 Byte SHA, API URL, erişim zamanı ve anlatımlar ilgili makbuzda; `created_at` yayımlanma zamanı sayılmadı. 003 kaynak bağları taslağı `dc9d3e6`, 275 önseçim çağrısı taslağı `7561f51`; tam CLI ve canlı paket birleşimi bekliyor. 255 ve 274 mevcut ortak sürümleri, 281 ise `0404-yeni-parti-haber-281-v1` tek kimliği korunur. 249 kalan aralık 012'dedir.
 
 62381839 gerçek input ve source PASS, preview devam; 62383286 daha güncel input PASS, source devam (orchestrator son bildirimi). İkinci iş veya yayın başlatmayın; terminal receipt ve çıkış kodlarıyla teyit edin. Yeni anlamsal doğrulanmış 60 olay/61 ilişkili ayrı taslak paket SHA `1046f3b6…`, review SHA `5ef6866b…`; henüz canlı değil, tam CLI/preview doğrulanmış sayılmaz. Canonical `f67ca0a35e634035bf3aa83a46571f50` değişmemeli. İki görev ve 610 hücre incelemesi açık kalır.
+
+### Devam: 012–014 ve Manisa kaynakları
+
+Sonraki gerçek okumalar `party-api-012-reading.json`, `party-api-013-reading.json`, `party-api-014-reading.json` makbuzlarında; şimdi toplam 58 dilimden 14 okunmuş, 015–058 arasında 44 dilim açıktır. Bu sayı yalnız API gövde dilimleridir, araştırma kapsamı kapanışı değildir.
+
+- 012: 249[12576:17428], 248[0:17327], 247[0:20548].
+- 013: 247[20548:29473], 246[0:172], 245[0:158], 244[0:333], 243[0:260], 242[0:6002], 241[0:8900], 240[0:9312], 239[0:6898], 238[0:6659].
+- 014: 238[6659:19286], 237[0:398], 236[0:16049], 235[0:2022], 234[0:8494], 233[0:937], 232[0:7215].
+
+247 parti kaydı Manisa'da 18 Ekim üye önseçimi için 13.123 oy kullanıldığını konuşmacıya atfeder; kaynak zinciri taslağı `0f2c9e4`. 25 Ekim ANKA asıl haberi ayrı delege kongresinde 483 oy, 470 geçerli, 13 geçersiz ve İlksen Özalper'in 470 geçerli oyla seçildiğini bildirir: kaynak taslağı `0a8fb6c`, özgün SHA `c5bea37ef9d487d5a141ad9d8f575ef155082c3a6c6a798064f4f8a0d121b005`. HTML haber gövdesi uygulama verisinde kaçışlı olduğundan kaynak yerleşimi ve pasif görünüm ayrıca doğrulanmalı; iki olay aşamasını ve ulusal toplamı karıştırmayın.
+
+235 için 21 Ekim AYM'nin isim ve rumuzun hükümsüzlüğü ve terkin talebini reddi Medyascope'ta okundu; `site:anayasa.gov.tr "2026/9" "YENİ PARTİ"` ve `"YENİ PARTİ" "21/10/2026"` sorguları sonuç vermedi. Basın, 29 Eylül gündemindeki E.2026/9 Değişik İşler dosyasını bildiriyor; AYM asıl karar metni henüz bulunmadı. Sonraki kaynak araştırmasında parti görüşü ve yargı kararı, açıklanan sonuç ve gerekçe ayrı tutulmalı.
+
+Yeni root paketin ilk input'unda üç söylemin `comparison_row_id` alanı eksikti; root düzeltmesi `7d31714`, paket SHA `ca3f7b34…`, review `5ef6866b…`, job 62385192. Son okumada 62381839 preview, 62383286 source ve 62385192 girdi denetimi çalışıyordu; bunları sonuç veya görev kapanışı saymayın.
