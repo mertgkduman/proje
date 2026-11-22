@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3663, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3513, in main
+    render_practice_preview(package, Path(tmp) / 'preview', base_release=package.get('base_release'), source_root=source_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1412, in render_practice_preview
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1616, in _render_practice_preview
+    arsiv.audit_release(release, storage_root=preview_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3042, in audit_release
+    validate_dossier(exported, party, 'complete')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/dosyalar.py", line 241, in validate_dossier
+    if relevant or gaps: raise ValueError('İçerik veya girişimli eksik bulunan başlık incelenmemiş sayılamaz')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: İçerik veya girişimli eksik bulunan başlık incelenmemiş sayılamaz
