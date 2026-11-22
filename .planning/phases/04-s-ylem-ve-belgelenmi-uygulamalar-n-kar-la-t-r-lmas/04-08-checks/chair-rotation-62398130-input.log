@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/arsiv.py", line 3670, in <module>
+    main()
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/arsiv.py", line 3582, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/uygulamalar.py", line 1343, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/uygulamalar.py", line 1308, in _load_practice_copy
+    validate_phase_one_workspace(work, storage_root=storage_root)
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/arsiv.py", line 3071, in validate_phase_one_workspace
+    data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/arsiv.py", line 2791, in export_db
+    validated_policy = validate_policy(db,result,storage_root=storage_root)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/kaynaklar.py", line 83, in validate_policy
+    for a in data['source_attribution']: check_attribution(db,a,storage_root=storage_root)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0408-chair-rotation-a_szup1_/src/kaynaklar.py", line 43, in check_attribution
+    else: raise ValueError('Yayın tarihi kesinliği geçersiz')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Yayın tarihi kesinliği geçersiz

@@ -14,9 +14,9 @@ spec.loader.exec_module(harness)
 
 harness.HERE=here
 harness.SOURCE=harness.DATA/'practices'/'sources'/'yeni-yol'
-package=here/'institution-rotation-draft.json'
+package=here/'institution-rotation-publication-day-draft.json'
 review=here/'institution-rotation-review-draft.json'
-assert harness.sha(package)=='24052bd7a0fe48f0abb09b01c14879071f81d2d972e239f9949dd6b1633aed1d'
+assert harness.sha(package)=='de46afc8969108a54f480124ffaa65ea6acbb8df41d217a2f5d71e64d697218a'
 assert harness.sha(review)=='4304ecd8eb5f0a654b1687370856edd13eab98a753059d275beaeb75b5d85657'
 stem='0408-chair-rotation'
 receipt=harness.main(package,review,'chair-rotation',stem+'-event',stem+'-relation',None,
