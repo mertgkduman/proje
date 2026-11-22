@@ -1,0 +1,139 @@
+{
+  "status": "draft_unvalidated",
+  "source_root": "data/practices/sources/yeni-parti",
+  "note": "Parti duyurusu ve Toplumsal canlı künye Haber Merkezi. Basına kapalı görüşme, protokol metni bilinmiyor; özet ve gövde görüşme gündeminde çelişiyor. Tam CLI ve bağ henüz yapılmadı.",
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-yeni-parti-haber-197",
+        "party_id": "yeni-parti",
+        "title": "YENİ Parti Genel Başkanı Özgür Özel, SDD Heyeti ile Görüştü",
+        "source_kind": "party"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-yeni-parti-haber-197-v1",
+        "document_id": "0404-yeni-parti-haber-197",
+        "original_url": "https://api.yeni-parti.org.tr/api/haberler/197",
+        "final_url": "https://api.yeni-parti.org.tr/api/haberler/197",
+        "document_date": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Yayın tarihi kanıtlanmadı; created_at oluşturulma zamanıdır.",
+        "version_label": "Parti JSON created_at 2026-10-08T21:19:31.390Z; yayın zamanı bilinmiyor.",
+        "accessed_at": "2026-11-22T00:41:26+00:00",
+        "verified_at": "2026-11-22T02:06:38.490770+00:00",
+        "mime": "application/json",
+        "sha256": "dd58a9a5214fe6cb16a61207ed7906d7abe574c5a9f47e35c7e89391935272f0",
+        "original_path": "objects/dd58a9a5214fe6cb16a61207ed7906d7abe574c5a9f47e35c7e89391935272f0/original.html.bin",
+        "readable_path": "objects/dd58a9a5214fe6cb16a61207ed7906d7abe574c5a9f47e35c7e89391935272f0/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-yeni-parti-haber-197-v1",
+        "kind": "party_publication",
+        "publisher": "Yeni Parti",
+        "author": null,
+        "social_handle": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "public_url": "https://api.yeni-parti.org.tr/api/haberler/197",
+        "basis": "Özgün sayfa gövdesi ve künyesi okundu; parti API created_at yayın tarihi değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-yeni-parti-haber-197-protocol-p",
+        "version_id": "0404-yeni-parti-haber-197-v1",
+        "exact": "Görüşmede, YENİ Parti ile Sosyal Demokrasi Derneği arasında iş birliği protokolü imzalandı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İş birliği protokolünün imzalanması",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-sdd-toplumsal-20261008",
+        "party_id": "yeni-parti",
+        "title": "Özgür Özel ve heyeti Sosyal Demokrasi Derneği ile görüştü",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-sdd-toplumsal-20261008-v1",
+        "document_id": "0404-sdd-toplumsal-20261008",
+        "original_url": "https://www.toplumsal.com.tr/haber/ozgur-ozel-ve-heyeti-sosyal-demokrasi-dernegi-ile-gorustu_28637/",
+        "final_url": "https://www.toplumsal.com.tr/haber/ozgur-ozel-ve-heyeti-sosyal-demokrasi-dernegi-ile-gorustu_28637/",
+        "document_date": "2026-10-08",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Haber 8 Ekim 2026 17:28, güncelleme 17:27 olarak yazıyor.",
+        "accessed_at": "2026-11-22T02:06:38.490770+00:00",
+        "verified_at": "2026-11-22T02:06:38.490770+00:00",
+        "mime": "text/html",
+        "sha256": "98c60ca8655ec93b6951d07dfa5ee3791fd401cc4f410194f86da8a740957706",
+        "original_path": "objects/98c60ca8655ec93b6951d07dfa5ee3791fd401cc4f410194f86da8a740957706/original.html.bin",
+        "readable_path": "objects/98c60ca8655ec93b6951d07dfa5ee3791fd401cc4f410194f86da8a740957706/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-sdd-toplumsal-20261008-v1",
+        "kind": "journalism",
+        "publisher": "Toplumsal Haber",
+        "author": "Haber Merkezi",
+        "social_handle": null,
+        "published_at": "2026-10-08T17:28:00+03:00",
+        "date_precision": "minute",
+        "public_url": "https://www.toplumsal.com.tr/haber/ozgur-ozel-ve-heyeti-sosyal-demokrasi-dernegi-ile-gorustu_28637/",
+        "basis": "Özgün sayfa gövdesi ve künyesi okundu; parti API created_at yayın tarihi değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-sdd-toplumsal-20261008-protocol-p",
+        "version_id": "0404-sdd-toplumsal-20261008-v1",
+        "exact": "Ankara'daki YENİ Parti Genel Merkezi'nde basına kapalı olarak gerçekleşen toplantıda, iki kurum arasında iş birliği protokolü imzalandı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İş birliği protokolünün imzalanması",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0404-sdd-toplumsal-20261008-v1",
+        "view_id": "ac271d81dfee2a693dc708b2d0f85ca1",
+        "format_version": 2,
+        "source_sha256": "98c60ca8655ec93b6951d07dfa5ee3791fd401cc4f410194f86da8a740957706",
+        "index_path": "views/ac271d81dfee2a693dc708b2d0f85ca1/index.html",
+        "manifest_path": "views/ac271d81dfee2a693dc708b2d0f85ca1/manifest.json",
+        "manifest_sha256": "86fa34e6631b046de94f6083b9ae957b9f5f1364d510a143dabf1da1afe13c25"
+      }
+    }
+  ],
+  "assets": [
+    "data/practices/sources/yeni-parti/objects/dd58a9a5214fe6cb16a61207ed7906d7abe574c5a9f47e35c7e89391935272f0/original.html.bin",
+    "data/practices/sources/yeni-parti/objects/dd58a9a5214fe6cb16a61207ed7906d7abe574c5a9f47e35c7e89391935272f0/readable.html",
+    "data/practices/sources/yeni-parti/objects/98c60ca8655ec93b6951d07dfa5ee3791fd401cc4f410194f86da8a740957706/original.html.bin",
+    "data/practices/sources/yeni-parti/objects/98c60ca8655ec93b6951d07dfa5ee3791fd401cc4f410194f86da8a740957706/readable.html",
+    "data/practices/sources/yeni-parti/views/ac271d81dfee2a693dc708b2d0f85ca1/index.html",
+    "data/practices/sources/yeni-parti/views/ac271d81dfee2a693dc708b2d0f85ca1/manifest.json"
+  ]
+}
