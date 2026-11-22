@@ -29,3 +29,5 @@ Ek okuma: 2026 tutanağının indeks 8–13 metin katmanı da incelendi. Genel S
 2025 ilk toplantı incelenmemiş tutanağının indeks 0–5 metin katmanı ayrıca okundu: kapak ve Başkan Numan Kurtulmuş'un açılış konuşması bulunur. Başkanın ifadeleri Şık veya TİP'e atfedilmez. Bu belgenin indeks 6–43 ve 50–94 metinleri ve görselleri açıktır.
 
 2025 tutanağı indeks 6–11 metin katmanı da okundu: ikinci oturumun açılışı ve Yeni Yol grubu adına Bülent Kaya ile Mehmet Emin Ekmen'in konuşmaları yer alır. Bu görüşler TİP'e atfedilmez. İndeks 12–43 ve 50–94 ile görseller açıktır.
+
+2025 tutanağı indeks 12–17 metin katmanı okundu: Ekmen'in konuşması sona erer, MHP adına Feti Yıldız ve Yücel Bulut söz alır. Konuşmacıların iddia ve değerlendirmeleri ayrı tutulur; indeks 18–43 ve 50–94 ile görseller açıktır.
