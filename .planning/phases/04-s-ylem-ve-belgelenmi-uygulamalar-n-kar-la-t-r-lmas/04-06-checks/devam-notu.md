@@ -16,4 +16,4 @@ Silopi aday çifti `60e0615` içinde: paket SHA256 `0f6dfd2a4fe726f54f122b5fee49
 
 Silopi 62402330 üç kapı ve altı olay/iki alternatif/önceki ihtilaf kontrollerini geçti (`967a76d`). Kalıcı önizleme `data/.staging/gsd-0406-dem-silopi-62402330/releases/5522b56179ed4c3db8c7b17126af2957`; manifest `58f2f97d9fb5780422926005d797957657cad7668062537c54158975e510fc1d`, renderer 29. Canlı çift 66b539e ile SHA256 paket `0f6dfd2a4fe726f54f122b5fee49836ec4bfd4c7062c35d254ceb93368ee25b3` ve review `49e49e8846a358907aee694f1a8a8dc7042b743cf179a7449a0e7d979b39af24` olarak terfi etti. Bağımsız Silopi karar sonucu ve kapsam kapanışı hâlâ yoktur. Yeni kapılarda renderer 30 esas alınır.
 
-7/50860 13 Ekim sorusu ve TBMM 3 Kasım yanıtı PDF baytları `08c1b17` ile saklandı; soru iki sayfa okundu, taranmış cevap görsel okumayı bekler ve içeriği bilinmiyor.
+7/50860 13 Ekim sorusu ve TBMM 3 Kasım yanıtı PDF baytları `08c1b17` ile saklandı; soru iki sayfa okundu; taranmış tek sayfalık cevap görsel okundu (`02ac14a`) ve Yılmaz’ın görev alanı bildirimidir, esasa yanıt değildir.
