@@ -67,3 +67,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 58–62 de okundu: Bakanlık sunumu kapanır, Bedri Yaşar ve Müzeyyen Şevkin soru sorar; sağlık yetkilileri kapasite, afet planı ve tesis yatırımları hakkında yanıt verir. Hedefler gerçekleşme olarak alınmaz; sağlık yetkililerinin katılımı, sağlık çalışanlarının bağımsız veya sendikal temsili ile eşitlenmez. İndeks 63–154 açık.
 
 9 Aralık toplantısı PDF indeks 63–67 de okundu: Korkut afet ve sağlık iletişimi sorularını yanıtlar; üyeler ilk yardım önerir ve başkan Sağlık Bakanlığı yetkililerinin oturumunu kapatır. Bu bölümde katılımcıların sözleri kendi beyanlarıdır. Üç bakanlık yöneticisi oturumu, sağlık emekçileri veya sendikalarının temsiliyle eşitlenmez; kalan PDF indeks 68–154 açıktır.
+
+9 Aralık toplantısı PDF indeks 68–72 de okundu: Emniyet Genel Müdür Yardımcısı Erhan Gülveren’in afet müdahale, trafik ve eğitim planları sunumu başlar. Yetkiliye ait mevcut kapasite ve hedef beyanları ayrı tutulur; bunlar TİP girişimi veya hedeflerin gerçekleşmesi olarak sunulmaz. İndeks 73–154 açık.
