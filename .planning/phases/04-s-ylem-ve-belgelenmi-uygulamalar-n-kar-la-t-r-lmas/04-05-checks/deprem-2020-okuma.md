@@ -185,3 +185,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 165–169 okundu: jeolojik-jeoteknik etüt ve mikrobölgeleme süreçleri, resmî etüt sayıları ve YERBİS projesi raporun kurum kaynaklarıyla anlatılıyor. Başlangıç tarihleri ve devam eden çalışmalar TİP faaliyetine bağlanmadı; indeks 170 ve sonrası açık.
 
 - 2021 raporu indeks 170–174 okundu: İstanbul mikrobölgeleme haritaları, zemin ve temel etütleri, risk ve sakınım planlaması ele alınıyor. Proje hedefleri gerçekleşmiş sonuç veya TİP uygulaması sayılmadı; indeks 175 ve sonrası açık.
+
+- 2021 raporu indeks 175–179 okundu: risk planlaması projeleri, mekânsal strateji planı hedefleri ve 1975–1998 yapı yönetmeliği tartışması bulunuyor. Rapor dönemi hedefleri ile gerçekleşmeler ayrıdır; partiye nedensel atıf yapılmadı. İndeks 180 ve sonrası açık.
