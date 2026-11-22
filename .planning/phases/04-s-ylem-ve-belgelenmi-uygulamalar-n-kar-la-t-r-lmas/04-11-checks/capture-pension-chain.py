@@ -16,7 +16,7 @@ entries = []
 paths = set()
 sources = [
     ('arikan-3456','html','https://tbmm.gov.tr/Yasama/KanunTeklifi/f8c3247e-5f23-4c8b-81b9-019b8e661f8b',
-     '2/3456 en düşük emekli aylığı teklifinin TBMM kaydı','2026-01-05',None,[
+     '2/3456 en düşük emekli aylığı teklifinin TBMM kaydı',None,None,[
         ('id','2/3456 esas numarası','2 / 3456',None),
         ('submitted','Başkanlığa geliş günü','05/01/2026',None),
         ('referred','Esas ve tali komisyona giriş günü','06/01/2026',None),
@@ -37,7 +37,7 @@ sources = [
         ('objection','20.000 TL’lik teklife ilişkin itiraz','teklifin 20 bin lira olmasını kabul etmediklerini kaydederek',None),
     ]),
     ('pension-bill-23464','html','https://tbmm.gov.tr/Yasama/KanunTeklifi/eeaf5693-28b4-4c9a-8197-019ba20e2a59',
-     '2/3464 ve 248 sıra sayılı teklifin TBMM kaydı','2026-01-09',None,[
+     '2/3464 ve 248 sıra sayılı teklifin TBMM kaydı',None,None,[
         ('id','2/3464 esas numarası','2 / 3464',None),
         ('law','2/3464’ten kanun kaydına bağlantı','>7573</a>',None),
     ]),
@@ -78,7 +78,7 @@ for key, ext, url, title, day, published, passages in sources:
     captured = datetime.fromtimestamp(fetched.stat().st_mtime, timezone.utc).isoformat()
     add('document',id=doc,party_id='saadet',title=title,source_kind='official')
     add('document_version',id=vid,document_id=doc,original_url=url,final_url=url,document_date=day,
-        date_precision='day',date_unknown_reason=None,version_label='TBMM’nin erişilen özgün kaydı.',
+        date_precision='day' if day else 'unknown',date_unknown_reason=None if day else 'TBMM kayıt sayfasının ilk yayımlandığı gün açık değil. Teklifin geliş, sevk ve kabul tarihleri ayrı görünen pasajlarda.',version_label='TBMM’nin erişilen özgün kaydı.',
         accessed_at=captured,verified_at=now,mime='text/html' if ext=='html' else 'application/pdf',
         sha256=digest,original_path=original,readable_path=readable)
     add('source_attribution',version_id=vid,publisher='TBMM',author=None,kind='official',
