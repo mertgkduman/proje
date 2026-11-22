@@ -1,0 +1,7 @@
+# Yeni Yol başkanlık devri ara önizlemesi
+
+62398174 işi 15 dakika 29 saniyede 0:0 ile tamamlandı. Girdi, 15 hedefli kaynak incelemesi ve yalıtılmış önizleme kontrolleri geçti. Paket SHA-256 `de46afc8969108a54f480124ffaa65ea6acbb8df41d217a2f5d71e64d697218a`, inceleme SHA-256 `4304ecd8eb5f0a654b1687370856edd13eab98a753059d275beaeb75b5d85657`. 1 olay, 1 ilişki ve 1 ihtilaf özeti SQLite, JSON ve iki HTML görünümünde doğrulandı.
+
+14 Ocak 2025’te DEVA Genel Başkanı Ali Babacan, Yeni Yol’daki yönetim görevleri için bir yıllık bileşen dönüşümünü tarif etti. Ocak 2026’da Küçük, 13 Ocak itibarıyla Yeni Yol genel başkanlığını devraldığını açıkladı. Yerel haber ve sicil Küçük’ü genel başkan olarak kaydediyor. Kurucular Kuruluna ilişkin önceki haber ile Küçük’ün Yönetim Kurulu açıklaması ayrı atıflarla gösterildi. Tam tüzük, karar aslı ve kurulların işlem sırası açık. [Söylem](https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html) · [Devir açıklaması](https://www.urfadasin.com/sanliurfa-eski-valisi-izzettin-kucuk-yeni-yol-partisinin-genel-baskani-oldu) · [Önceki haber](https://ankahaber.net/haber/detay/yeni_yolda_degisim_donemi%E2%80%A6_genel_baskanliga_izzettin_kucuk_getirilecek_285847)
+
+Önizleme `data/.staging/gsd-0408-chair-rotation-62398174/releases/b0a9daf2ce694612a5e772171a527d20/` altında. Manifest SHA-256 `3022187000b30be5627b432969c497cf1ce6e83f2385400ff19d633eaa22dfd5` ve bağlı üç dosya yeniden denetlendi. 610 konu hücresi araştırma kuyruğunda. Kapsam kapanışı sıfır.
