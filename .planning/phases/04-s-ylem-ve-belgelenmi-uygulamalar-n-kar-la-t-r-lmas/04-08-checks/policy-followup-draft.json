@@ -2054,7 +2054,7 @@
         "date_unknown_reason": "PDF’nin basım ve ilk yayım günü belirtilmiyor. Üç Aralık tutanağındaki beyan ayrı.",
         "version_label": "Elif Esen başlıklı metnin Engelsiz Haber 23’teki kopyası.",
         "accessed_at": "2026-11-22T08:35:18.838300+00:00",
-        "verified_at": "2026-11-22T08:49:54.738737+00:00",
+        "verified_at": "2026-11-22T09:03:12.903095+00:00",
         "mime": "application/pdf",
         "sha256": "242f5dc92de88f41e471ee89861248fee3d8b736e385b933147e6ae9489767cf",
         "original_path": "objects/242f5dc92de88f41e471ee89861248fee3d8b736e385b933147e6ae9489767cf/original.pdf",
@@ -2114,7 +2114,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-10-3464-destek-support-finding",
         "passage_id": "0408-policy-yeni-yol-shared-support",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Tutanaktaki temsil ve destek cümleleri, oylama sonucu ile ayrı kontrol edildi."
       }
@@ -2132,7 +2132,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-10-3464-destek-support-finding",
         "passage_id": "0408-policy-yeni-yol-shared-authority",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Tutanaktaki temsil ve destek cümleleri, oylama sonucu ile ayrı kontrol edildi."
       }
@@ -2144,7 +2144,7 @@
         "kind": "finding",
         "subject_id": "0408-yeni-yol-2025-10-3464-destek-support-finding",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-22T08:49:54.738737+00:00",
+        "reviewed_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "reviewed",
         "reason": "Tutanaktaki temsil ve destek cümleleri, oylama sonucu ile ayrı kontrol edildi."
       }
@@ -2191,7 +2191,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-target",
         "passage_id": "0408-policy-yeni-yol-esens-press-quota",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "3 Aralık Meclis Haber basın toplantısı açıklaması okundu."
       }
@@ -2203,9 +2203,23 @@
         "kind": "finding",
         "subject_id": "0408-yeni-yol-2025-2-3406-istihdam-target",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-22T08:49:54.738737+00:00",
+        "reviewed_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "reviewed",
         "reason": "3 Aralık Meclis Haber basın toplantısı açıklaması okundu."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0408-yeni-yol-2025-2-3406-istihdam-press-quote-passage",
+        "version_id": "0408-policy-yeni-yol-esens-press-v1",
+        "exact": "Özel sektör ve kamudaki engelli istihdam kotasının yüzde 6'ya çıkarılması ve bu kotanın en az 3'te birinin kadın engelli çalışanlardan oluşması gerekir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Esen’e atfedilen doğrudan kota alıntısı",
+        "pdf_page_index": null,
+        "printed_page": null
       }
     },
     {
@@ -2224,7 +2238,7 @@
       "kind": "finding_evidence",
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-quote",
-        "passage_id": "0408-policy-yeni-yol-esens-press-quota",
+        "passage_id": "0408-yeni-yol-2025-2-3406-istihdam-press-quote-passage",
         "role": "support"
       }
     },
@@ -2232,8 +2246,8 @@
       "kind": "verification",
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-quote",
-        "passage_id": "0408-policy-yeni-yol-esens-press-quota",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "passage_id": "0408-yeni-yol-2025-2-3406-istihdam-press-quote-passage",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Esen’e atfedilen doğrudan aktarım basın toplantısı kaynağında kontrol edildi."
       }
@@ -2245,7 +2259,7 @@
         "kind": "finding",
         "subject_id": "0408-yeni-yol-2025-2-3406-istihdam-quote",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-22T08:49:54.738737+00:00",
+        "reviewed_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "reviewed",
         "reason": "Esen’e atfedilen doğrudan aktarım basın toplantısı kaynağında kontrol edildi."
       }
@@ -2275,7 +2289,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-explanation",
         "passage_id": "0408-policy-yeni-yol-esens-press-quota",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Teklif, kayıt ve Meclis işlemi ayrı kanıtlara bağlandı."
       }
@@ -2293,7 +2307,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-explanation",
         "passage_id": "0408-policy-yeni-yol-esens-signed-quota",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Teklif, kayıt ve Meclis işlemi ayrı kanıtlara bağlandı."
       }
@@ -2311,7 +2325,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-explanation",
         "passage_id": "0408-policy-yeni-yol-esens-bill-date",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Teklif, kayıt ve Meclis işlemi ayrı kanıtlara bağlandı."
       }
@@ -2329,7 +2343,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-explanation",
         "passage_id": "0408-policy-yeni-yol-esens-signed-scope",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Teklif, kayıt ve Meclis işlemi ayrı kanıtlara bağlandı."
       }
@@ -2347,7 +2361,7 @@
       "values": {
         "finding_id": "0408-yeni-yol-2025-2-3406-istihdam-explanation",
         "passage_id": "0408-policy-yeni-yol-esens-bill-committee",
-        "checked_at": "2026-11-22T08:49:54.738737+00:00",
+        "checked_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "confirmed",
         "reason": "Teklif, kayıt ve Meclis işlemi ayrı kanıtlara bağlandı."
       }
@@ -2359,7 +2373,7 @@
         "kind": "finding",
         "subject_id": "0408-yeni-yol-2025-2-3406-istihdam-explanation",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-22T08:49:54.738737+00:00",
+        "reviewed_at": "2026-11-22T09:03:12.903095+00:00",
         "result": "reviewed",
         "reason": "Teklif, kayıt ve Meclis işlemi ayrı kanıtlara bağlandı."
       }
@@ -3054,31 +3068,31 @@
       {
         "scope_id": "practice-a4a2e4afe938585da64c1ebe1ce2a7a40f509a7afe332e94d926ac016bb20f39",
         "version_id": "0408-public-ads-plenary-v1",
-        "inspected_at": "2026-11-22T08:49:54.738737+00:00",
+        "inspected_at": "2026-11-22T09:03:12.903095+00:00",
         "inspected_sections": "[\"DEM Grup önerisinin dayanağındaki 15229 grup numarası\", \"Elif Esen’in Yeni Yol Grubu adına temsil ve rapor açıklaması\", \"Elif Esen’in grup desteği beyanı\", \"Oturum başkanının birleşimi kapatması\", \"İkinci yoklamada toplantı yeter sayısına ulaşılamaması\"]"
       },
       {
         "scope_id": "practice-1ec6eaf1b8d5c4ddb099915dd0e0a2fd306a0d04324f1fa03b773aa3bbb658e0",
         "version_id": "0408-policy-yeni-yol-esens-press-v1",
-        "inspected_at": "2026-11-22T08:49:54.738737+00:00",
-        "inspected_sections": "[\"İstihdam kotası ve kadın engelli çalışan alt kotası\"]"
+        "inspected_at": "2026-11-22T09:03:12.903095+00:00",
+        "inspected_sections": "[\"Esen’e atfedilen doğrudan kota alıntısı\", \"İstihdam kotası ve kadın engelli çalışan alt kotası\"]"
       },
       {
         "scope_id": "practice-1ec6eaf1b8d5c4ddb099915dd0e0a2fd306a0d04324f1fa03b773aa3bbb658e0",
         "version_id": "0408-policy-esen-copy-v1",
-        "inspected_at": "2026-11-22T08:49:54.738737+00:00",
+        "inspected_at": "2026-11-22T09:03:12.903095+00:00",
         "inspected_sections": "[\"Öneri raporu PDF indeks 30, sivil toplumun önerdiği istihdam hedefi\"]"
       },
       {
         "scope_id": "practice-a4a2e4afe938585da64c1ebe1ce2a7a40f509a7afe332e94d926ac016bb20f39",
         "version_id": "0408-policy-yeni-yol-esens-signed-v1",
-        "inspected_at": "2026-11-22T08:49:54.738737+00:00",
+        "inspected_at": "2026-11-22T09:03:12.903095+00:00",
         "inspected_sections": "[\"Madde 4’te kadın istihdam payı ve yüzde altı\", \"İmzalı başvuru üst yazısı ve teklif türü\"]"
       },
       {
         "scope_id": "practice-a4a2e4afe938585da64c1ebe1ce2a7a40f509a7afe332e94d926ac016bb20f39",
         "version_id": "0408-policy-yeni-yol-esens-bill-v1",
-        "inspected_at": "2026-11-22T08:49:54.738737+00:00",
+        "inspected_at": "2026-11-22T09:03:12.903095+00:00",
         "inspected_sections": "[\"Başkanlığa geliş günü\", \"Erişilen komisyon aşaması\"]"
       }
     ],
@@ -3419,7 +3433,7 @@
       {
         "id": "followup-reading-event-engellilik-0408-public-ads-plenary-v1",
         "scope_id": "practice-a4a2e4afe938585da64c1ebe1ce2a7a40f509a7afe332e94d926ac016bb20f39",
-        "attempted_at": "2026-11-22T08:49:54.738737+00:00",
+        "attempted_at": "2026-11-22T09:03:12.903095+00:00",
         "query": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
         "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
         "result": "examined",
@@ -3429,7 +3443,7 @@
       {
         "id": "followup-reading-statement-engellilik-0408-policy-yeni-yol-esens-press-v1",
         "scope_id": "practice-1ec6eaf1b8d5c4ddb099915dd0e0a2fd306a0d04324f1fa03b773aa3bbb658e0",
-        "attempted_at": "2026-11-22T08:49:54.738737+00:00",
+        "attempted_at": "2026-11-22T09:03:12.903095+00:00",
         "query": "https://tbmm.gov.tr/Haber/Detay?Id=f2c393ea-c989-4fe3-8d85-019ae42edec4",
         "url": "https://tbmm.gov.tr/Haber/Detay?Id=f2c393ea-c989-4fe3-8d85-019ae42edec4",
         "result": "examined",
@@ -3439,7 +3453,7 @@
       {
         "id": "followup-reading-statement-engellilik-0408-policy-esen-copy-v1",
         "scope_id": "practice-1ec6eaf1b8d5c4ddb099915dd0e0a2fd306a0d04324f1fa03b773aa3bbb658e0",
-        "attempted_at": "2026-11-22T08:49:54.738737+00:00",
+        "attempted_at": "2026-11-22T09:03:12.903095+00:00",
         "query": "https://engelsizhaber23.com/wp-content/uploads/2025/12/engelli-bireylerin-sorunlarini-arastirma-komisyonu-tavsiye-raporu-nihai.pdf",
         "url": "https://engelsizhaber23.com/wp-content/uploads/2025/12/engelli-bireylerin-sorunlarini-arastirma-komisyonu-tavsiye-raporu-nihai.pdf",
         "result": "examined",
@@ -3449,7 +3463,7 @@
       {
         "id": "0408-yeni-yol-2025-10-3464-destek-statement-search",
         "scope_id": "practice-1ec6eaf1b8d5c4ddb099915dd0e0a2fd306a0d04324f1fa03b773aa3bbb658e0",
-        "attempted_at": "2026-11-22T08:49:54.738737+00:00",
+        "attempted_at": "2026-11-22T09:03:12.903095+00:00",
         "query": "Elif Esen Yeni Yol 3 Aralık 2025 komisyon öneri raporu engelli bireylerin sorunları site:tbmm.gov.tr",
         "url": null,
         "result": "results",
@@ -3459,7 +3473,7 @@
       {
         "id": "followup-reading-event-engellilik-0408-policy-yeni-yol-esens-signed-v1",
         "scope_id": "practice-a4a2e4afe938585da64c1ebe1ce2a7a40f509a7afe332e94d926ac016bb20f39",
-        "attempted_at": "2026-11-22T08:49:54.738737+00:00",
+        "attempted_at": "2026-11-22T09:03:12.903095+00:00",
         "query": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T2/WebOnergeMetni/9d0c8554-5922-4335-845f-655b280941d2.pdf",
         "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T2/WebOnergeMetni/9d0c8554-5922-4335-845f-655b280941d2.pdf",
         "result": "examined",
@@ -3469,7 +3483,7 @@
       {
         "id": "followup-reading-event-engellilik-0408-policy-yeni-yol-esens-bill-v1",
         "scope_id": "practice-a4a2e4afe938585da64c1ebe1ce2a7a40f509a7afe332e94d926ac016bb20f39",
-        "attempted_at": "2026-11-22T08:49:54.738737+00:00",
+        "attempted_at": "2026-11-22T09:03:12.903095+00:00",
         "query": "https://tbmm.gov.tr/Yasama/KanunTeklifi/85cd319e-ec56-4b4d-be06-019ae99a7dcf",
         "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/85cd319e-ec56-4b4d-be06-019ae99a7dcf",
         "result": "examined",

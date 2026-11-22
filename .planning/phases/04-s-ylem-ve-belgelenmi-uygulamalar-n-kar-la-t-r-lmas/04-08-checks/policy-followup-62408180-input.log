@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0408-policy-followup-8969v__j/src/arsiv.py", line 3671, in <module>
+    main()
+  File "/tmp/gsd-0408-policy-followup-8969v__j/src/arsiv.py", line 3583, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0408-policy-followup-8969v__j/src/uygulamalar.py", line 1375, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0408-policy-followup-8969v__j/src/uygulamalar.py", line 1340, in _load_practice_copy
+    validate_phase_one_workspace(work, storage_root=storage_root)
+  File "/tmp/gsd-0408-policy-followup-8969v__j/src/arsiv.py", line 3072, in validate_phase_one_workspace
+    data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0408-policy-followup-8969v__j/src/arsiv.py", line 2849, in export_db
+    raise ValueError('Alıntı kanıt pasajıyla eşleşmiyor')
+ValueError: Alıntı kanıt pasajıyla eşleşmiyor

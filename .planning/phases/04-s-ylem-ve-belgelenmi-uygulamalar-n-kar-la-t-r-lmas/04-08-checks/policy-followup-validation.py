@@ -13,8 +13,8 @@ harness = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(harness)
 cases = {
     'yeni-yol': ('08','0408-yeni-yol-2025-2-3406-istihdam',2,
-        '45850fb503b9b276009a926d1e3e16e9a9ff6743dbda4f9f092d066a57a0626d',
-        'a589b83610424974c8ba49c18ebdc2ff69887017758ab9726c7a873055ad6cf5'),
+        'bb0454e596b75bdb355dfc963a347b163ff3c83f5fd06ee0e72f88a03d1b1891',
+        '76a251035631cc836031fdc6fe29fdcab387f3026ede7b20862a5e7242b1b675'),
     'demokrat': ('12','0412-demokrat-2023-7-5577-petrol',6,
         '598bd72c66632a073947de1d996599bbdbb1b681f9891b8f42c767a6d86bdedc',
         'fb5fdc96f6f95ed3062667143b3d73842ec7d1691a2f1b73d7bc409a9a4fed59'),
