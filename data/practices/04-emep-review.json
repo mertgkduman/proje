@@ -132,6 +132,32 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-mekke-question-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0410-emep-mekke-748173-pdf-v1\", \"0410-emep-mekke-748173-register-v1\"]",
+      "passage_ids": "[\"0410-emep-mekke-748173-pdf-criticism-p\", \"0410-emep-mekke-748173-register-date-p\", \"0410-emep-mekke-748173-register-owner-p\"]",
+      "inspected_sections": "[\"Bayhan’ın anlaşmaya ilişkin değerlendirmesi\", \"TBMM soru kaydı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-mekke-question-event için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-mekke-vote-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0410-emep-mekke-ballot-v1\"]",
+      "passage_ids": "[\"0410-emep-mekke-ballot-bayhan-p\", \"0410-emep-mekke-ballot-karaca-p\"]",
+      "inspected_sections": "[\"Sevda Karaca Demir oylama satırı\", \"İskender Bayhan oylama satırı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-mekke-vote-event için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-municipal-22702-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -428,6 +454,71 @@
       "limitations": "Haber, yazılı bildirimin kayıtlı parti örgütüne ulaştığını veya üyelik kaydında yapılan işlemi göstermiyor; istifa ihraç değildir.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-may-resignation-event|0410-emep-2023-resignation-resignation-p|action için özgün tüzük ve ilgili haber pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-pdf-criticism-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0410-emep-mekke-748173-pdf-v1\"]",
+      "passage_ids": "[\"0410-emep-mekke-748173-pdf-criticism-p\"]",
+      "inspected_sections": "[\"Bayhan’ın anlaşmaya ilişkin değerlendirmesi\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mekke-question-event|0410-emep-mekke-748173-pdf-criticism-p|action için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-register-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0410-emep-mekke-748173-register-v1\"]",
+      "passage_ids": "[\"0410-emep-mekke-748173-register-date-p\"]",
+      "inspected_sections": "[\"TBMM soru kaydı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mekke-question-event|0410-emep-mekke-748173-register-date-p|action için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-register-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0410-emep-mekke-748173-register-v1\"]",
+      "passage_ids": "[\"0410-emep-mekke-748173-register-owner-p\"]",
+      "inspected_sections": "[\"TBMM soru kaydı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mekke-question-event|0410-emep-mekke-748173-register-owner-p|action için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-vote-event|0410-emep-mekke-ballot-bayhan-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0410-emep-mekke-ballot-v1\"]",
+      "passage_ids": "[\"0410-emep-mekke-ballot-bayhan-p\"]",
+      "inspected_sections": "[\"İskender Bayhan oylama satırı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mekke-vote-event|0410-emep-mekke-ballot-bayhan-p|action için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-vote-event|0410-emep-mekke-ballot-karaca-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0410-emep-mekke-ballot-v1\"]",
+      "passage_ids": "[\"0410-emep-mekke-ballot-karaca-p\"]",
+      "inspected_sections": "[\"Sevda Karaca Demir oylama satırı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mekke-vote-event|0410-emep-mekke-ballot-karaca-p|action için bağlı program ve TBMM pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -730,6 +821,32 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mekke-question-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mekke-748173-pdf-v1\", \"0410-emep-mekke-748173-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\", \"0410-emep-mekke-748173-pdf-criticism-p\", \"0410-emep-mekke-748173-register-date-p\", \"0410-emep-mekke-748173-register-owner-p\"]",
+      "inspected_sections": "[\"Bayhan’ın anlaşmaya ilişkin değerlendirmesi\", \"G/B/1\", \"TBMM soru kaydı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-mekke-question-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-mekke-vote-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mekke-ballot-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\", \"0410-emep-mekke-ballot-bayhan-p\", \"0410-emep-mekke-ballot-karaca-p\"]",
+      "inspected_sections": "[\"G/B/1\", \"Sevda Karaca Demir oylama satırı\", \"İskender Bayhan oylama satırı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-mekke-vote-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-municipal-22702-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -909,6 +1026,32 @@
       "limitations": "Haber, yazılı bildirimin kayıtlı parti örgütüne ulaştığını veya üyelik kaydında yapılan işlemi göstermiyor; istifa ihraç değildir.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-may-resignation-relation için özgün tüzük ve ilgili haber pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mekke-question-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mekke-748173-pdf-v1\", \"0410-emep-mekke-748173-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\", \"0410-emep-mekke-748173-pdf-criticism-p\", \"0410-emep-mekke-748173-register-date-p\", \"0410-emep-mekke-748173-register-owner-p\"]",
+      "inspected_sections": "[\"Bayhan’ın anlaşmaya ilişkin değerlendirmesi\", \"G/B/1\", \"TBMM soru kaydı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-mekke-question-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mekke-vote-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mekke-ballot-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\", \"0410-emep-mekke-ballot-bayhan-p\", \"0410-emep-mekke-ballot-karaca-p\"]",
+      "inspected_sections": "[\"G/B/1\", \"Sevda Karaca Demir oylama satırı\", \"İskender Bayhan oylama satırı\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-mekke-vote-relation için bağlı program ve TBMM pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -1185,6 +1328,32 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mekke-question-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\"]",
+      "inspected_sections": "[\"G/B/1\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-mekke-question-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mekke-vote-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\"]",
+      "inspected_sections": "[\"G/B/1\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-mekke-vote-relation için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-municipal-22702-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -1247,6 +1416,19 @@
       "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
       "result": "reviewed",
       "reason": "practice_statement / 0410-expression-statement için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-foreign-principles-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\"]",
+      "inspected_sections": "[\"G/B/1\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-foreign-principles-statement için bağlı program ve TBMM pasajları okundu."
     },
     {
       "subject_kind": "practice_statement",
@@ -1367,6 +1549,19 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-foreign-principles-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\"]",
+      "inspected_sections": "[\"G/B/1\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-foreign-principles-statement için bağlı program ve TBMM pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-forest-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:56:19+00:00",
@@ -1481,6 +1676,19 @@
       "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
       "result": "reviewed",
       "reason": "practice_statement.summary_finding_id / 0410-expression-statement için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-foreign-principles-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T09:31:23+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-016-0-passage\"]",
+      "inspected_sections": "[\"G/B/1\"]",
+      "supported_claim": "Program genel dış ilişki ilkeleri, Bayhan’ın sorusu ve ayrı açık oyu özgün kaynaklardan incelendi.",
+      "limitations": "Soru ve oy kişisel; katılmama nedeni bilinmez; program belirli anlaşmayı adlandırmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-foreign-principles-statement için bağlı program ve TBMM pasajları okundu."
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
@@ -1630,6 +1838,14 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-mekke-question-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-mekke-vote-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-municipal-22702-event"
     },
     {
@@ -1719,6 +1935,26 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-may-resignation-event|0410-emep-2023-resignation-resignation-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-pdf-criticism-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-register-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-register-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-vote-event|0410-emep-mekke-ballot-bayhan-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mekke-vote-event|0410-emep-mekke-ballot-karaca-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -1814,6 +2050,14 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mekke-question-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-mekke-vote-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-municipal-22702-relation"
     },
     {
@@ -1870,6 +2114,14 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mekke-question-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mekke-vote-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-municipal-22702-relation"
     },
     {
@@ -1951,6 +2203,14 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-may-resignation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mekke-question-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mekke-vote-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -1971,6 +2231,10 @@
     {
       "subject_kind": "practice_statement",
       "subject_id": "0410-expression-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-foreign-principles-statement"
     },
     {
       "subject_kind": "practice_statement",
@@ -2007,6 +2271,10 @@
     {
       "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-expression-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-foreign-principles-statement"
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -2043,6 +2311,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-expression-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-foreign-principles-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
