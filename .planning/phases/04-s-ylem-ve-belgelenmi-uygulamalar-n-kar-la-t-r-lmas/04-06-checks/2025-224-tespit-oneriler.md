@@ -1,0 +1,7 @@
+# 224 raporunda tespit ve öneriler
+
+Özgün raporun sıfır tabanlı 906–923. sayfaları okundu: 906 sendikalar bölümünün sonu, 907–923 ise 1–113 numaralı ortak komisyon tespit ve önerileridir. Alanlar arasında mevzuat, farkındalık, kurumsal kapasite, veri ve izleme, medya, kadınların güçlenmesi, destek ve rehabilitasyon, aile, afet/olağanüstü durumlar bulunur. Bunlar rapor önerileridir; yasalaştıkları veya uygulandıkları bu belgeden çıkarılmaz.
+
+DEM şerhiyle karşılaştırmaya elverişli somut noktalar: 13. öneri şiddet içermeyen aile uyuşmazlıklarında güvenlik ve uzman desteğiyle arabuluculuk önerir; DEM şerhi şiddetin görünmez kalması ve haklardan vazgeçirme riskiyle buna karşı çıkar. 29. öneride erken eğitimde eşitlik ve diğer becerilerle birlikte dinî değerler de geçer; DEM şerhi bu dinî değer önerisine itiraz eder. 93. öneri güvenceli ve esnek çalışma politikalarını birlikte anarken DEM şerhi esnekliğin güvencesizliği derinleştirebileceğini savunur. 109. öneri boşanma/ebeveyn danışmanlığını yaygınlaştırmayı önerirken şerh bunun kadınların şiddet içeren ilişkide kalmasına baskı oluşturabileceğini ileri sürer. Her gerekçe ilgili komisyon raporuna veya şerh yazarlarına atıflıdır.
+
+908. sayfanın otomatik PDF metninde bazı satırlar çift çıkar; öneriler sayfa bağlamında incelendi, bu metinden doğrudan alıntı kullanılacaksa görsel yerleşim ayrıca denetlenmelidir. Diğer sayfalar ve sonuçların fiilî uygulanması açıktır.
