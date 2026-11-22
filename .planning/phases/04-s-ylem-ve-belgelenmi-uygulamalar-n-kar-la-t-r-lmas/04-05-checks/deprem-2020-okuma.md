@@ -201,3 +201,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 205–209 okundu: İSMEP sonrası petrol/doğalgaz, baraj ve karayolu güvenliğine ilişkin ilgili kurum temsilcisi beyanları aktarılıyor. Kurum güvenlik iddiaları bağımsız doğrulanmadı; TİP faaliyeti olarak sunulmadı. İndeks 210 ve sonrası açık.
 
 - 2021 raporu indeks 210–214 okundu: karayolu, demiryolu, havalimanı ve elektrik dağıtımına dair risk azaltma çalışmaları kurum temsilcilerinin rapordaki beyanlarına dayanır. Beyanlar bağımsızca doğrulanmadı, TİP kaynaklı sayılmadı; indeks 215 ve sonrası açık.
+
+- 2021 raporu indeks 215–219 okundu: enerji tesisleri, tarihî miras ve 2012’den itibaren kentsel dönüşüm mevzuatı ilgili kurumların ve önceki komisyonun anlatımıyla açıklanıyor. Siyasi değerlendirmeler rapora atfedilir; geçmiş kurum çalışması TİP’e atfedilmez. İndeks 220 ve sonrası açık.
