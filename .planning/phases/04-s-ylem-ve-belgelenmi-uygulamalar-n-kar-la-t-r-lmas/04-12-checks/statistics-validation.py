@@ -43,7 +43,7 @@ page = (folder/'index.html').read_text()
 for view in ('party', 'comparison'):
     for anchor, snippets in (
         (f'{view}-practice-{stem}-relation', ('2/3961','277 kabul ve 118 ret','23.49.42')),
-        (f'{view}-unmatched-{bill}-candidate', ('2/4030','bağımsız bir doğrulama kurulu','Araştırma sürüyor')),
+        (f'{view}-unmatched-{bill}-candidate', ('2/4030','Bağımsız Fiyat ve Veri Doğrulama Kurulu','Araştırma sürüyor')),
     ):
         tag = f'id="{anchor}"'
         assert page.count(tag) == 1 and f'href="#{anchor}"' in page
