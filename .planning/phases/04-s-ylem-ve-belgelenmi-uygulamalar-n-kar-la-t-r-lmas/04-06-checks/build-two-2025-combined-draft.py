@@ -38,6 +38,10 @@ for number,event in [('103464','0406-2025-103464-gundem'),('103465','0406-2025-1
     if number=='103465':
         row['passage_ids']=json.dumps(json.loads(row['passage_ids'])+[local_id],ensure_ascii=False)
         row['inspected_sections']=json.dumps(json.loads(row['inspected_sections'])+['Yerel medya ve ilanlar'],ensure_ascii=False)
+        relation_review=next(x for x in review['practice_source_review'] if x['subject_kind']=='practice_relation' and x['subject_id']=='0406-2025-103465-relation')
+        relation_review['source_version_ids']=json.dumps(json.loads(relation_review['source_version_ids'])+['0406-tbmm-103465-detail-v1'],ensure_ascii=False)
+        relation_review['passage_ids']=json.dumps(json.loads(relation_review['passage_ids'])+['0406-tbmm-103465-detail-number-p','0406-tbmm-103465-detail-received-p',local_id],ensure_ascii=False)
+        relation_review['inspected_sections']=json.dumps(json.loads(relation_review['inspected_sections'])+['Resmî esas numarası','Başkanlığa geliş tarihi','Yerel medya ve ilanlar'],ensure_ascii=False)
 review['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in review['practice_source_review']]
 keys=[(x['subject_kind'],x['subject_id']) for x in review['practice_source_review']]
 assert len(keys)==len(set(keys))
