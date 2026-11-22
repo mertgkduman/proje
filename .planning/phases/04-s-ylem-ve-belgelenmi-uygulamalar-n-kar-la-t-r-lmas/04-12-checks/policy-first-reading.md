@@ -1,0 +1,7 @@
+# Demokrat Partili milletvekillerinin 2/1525 akaryakıt fiyatı teklifi
+
+TBMM kaydında 10 Ağustos 2023 teklifinde ilk imzacı Mehmet Salih Uzun. Haydar Altıntaş ve Cemal Enginyurt diğer imzacılar. İmzalı belgede üçü de Demokrat Parti milletvekili olarak belirtiliyor. Teklifin 1. maddesi, olağanüstü koşullarda veya belirli fiyat farklarında iki ayı aşmayan sürelerle geçici taban veya tavan fiyat belirlenmesine ilişkin yetki öngörüyor. Bu yetkinin kullanıldığını gösteren bir işlem bu kayıtta yer almıyor. [TBMM teklif kaydı](https://tbmm.gov.tr/Yasama/KanunTeklifi/e046e03d-64ee-4e9b-931d-0189df4fd32d) [İmzalı teklif](https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y1/T2/WebOnergeMetni/a366e710-c9dc-425e-bbae-14a8e9fe2871.pdf)
+
+30 Nisan 2024’te Uzun, 2/1525’in İçtüzük 37 uyarınca doğrudan Genel Kurul gündemine alınmasını istedi. Oturum başkanı gündeme alma önergesinin kabul edilmediğini açıkladı. Erişilen TBMM kayıt sayfası asıl teklifi komisyonda gösteriyor. Uzun’un Genel Kurulda sözünü ettiği ayrı EPDK yazısı ve fiyat işlemleri için birincil kayıt araştırması açık. [76. Birleşim tutanağı](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/76/Ham/416b7dab-c596-4d6f-83ad-5e4c2318e66d.html)
+
+23 Ekim 2023 tarihli Uzun imzalı 7/5577 yazılı sorusu petrol fiyatının belirlenme yöntemiyle ilgili ayrı bir işlem. Bakanın cevabı 15 Kasım tutanağında ayrı giriş olarak bulunuyor. Sonraki kaynak okumasında metin ve yetki sınırı ayrıca değerlendirilecek. [Yazılı soru kaydı](https://tbmm.gov.tr/Denetim/Yazili-Soru-Onergesi-Detay/c20d626c-a4fa-479e-b96d-018b617735b9)
