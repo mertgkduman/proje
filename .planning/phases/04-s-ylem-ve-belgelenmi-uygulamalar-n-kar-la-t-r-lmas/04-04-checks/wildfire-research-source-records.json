@@ -1,0 +1,360 @@
+{
+  "status": "source_body_and_outcome_reviewed",
+  "party_id": "yeni-parti",
+  "fetches": [
+    {
+      "number": "10/4460",
+      "family": "research",
+      "url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/88ad4610-6866-43ce-906f-019fc7529059",
+      "accessed_at": "2026-11-22T02:21:22+00:00",
+      "curl_exit": 0,
+      "http_status": "200",
+      "path": "data/.staging/gsd-0404-tbmm-member-registers/detail/10-4460.html",
+      "sha256": "3afdf0e1a50c8e771c295d24d4d2e83dfe1fdc578def4e6a42318b9d420ecb24",
+      "byte_count": 67721,
+      "final_url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/88ad4610-6866-43ce-906f-019fc7529059",
+      "mime": "text/html; charset=utf-8",
+      "result": "captured"
+    },
+    {
+      "number": "10/4460",
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T10/WebOnergeMetni/37a88940-edc6-41a2-b3a3-8bff56594c4e.pdf",
+      "accessed_at": "2026-11-22T03:41:24+00:00",
+      "status": "200",
+      "curl_exit": 0,
+      "sha256": "bc2b47c5124678427df1c5d51f0311871cb33a2f7c66c4255de500e7e18b2732",
+      "byte_count": 114532,
+      "path": "data/.staging/gsd-0404-tbmm-member-registers/signed/10-4460.pdf",
+      "mime": "application/pdf",
+      "final_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T10/WebOnergeMetni/37a88940-edc6-41a2-b3a3-8bff56594c4e.pdf"
+    },
+    {
+      "issue": "28-4-120",
+      "component": "transcript",
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/120/Tam/519e2174-62f7-4f11-96be-579512e48049.html",
+      "accessed_at": "2026-11-22T01:19:44+00:00",
+      "status": 200,
+      "final_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/120/Tam/519e2174-62f7-4f11-96be-579512e48049.html",
+      "mime": "text/html",
+      "received_bytes": 777897,
+      "sha256": "6e192121ce8c1e07a4dd897112a06d8ea353122039a5695c004873e209d212d3",
+      "path": "data/.staging/gsd-0404-tbmm-floor/28-4-120-transcript.html",
+      "result": "captured"
+    }
+  ],
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-register",
+        "party_id": "yeni-parti",
+        "title": "10/4460 Orman yangınları araştırma önergesi TBMM kaydı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-register-v1",
+        "document_id": "0404-tbmm-erken-10-4460-register",
+        "original_url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/88ad4610-6866-43ce-906f-019fc7529059",
+        "final_url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/88ad4610-6866-43ce-906f-019fc7529059",
+        "document_date": null,
+        "date_precision": "unknown",
+        "date_unknown_reason": "Kayıt sayfasının ilk yayım tarihi belirtilmiyor. İşlem tarihleri ayrı pasajlarda.",
+        "version_label": "TBMM esas numarası, geliş, imzacı ve yanıt durumu kaydı.",
+        "accessed_at": "2026-11-22T02:21:22+00:00",
+        "verified_at": "2026-11-22T03:57:08.981083+00:00",
+        "mime": "text/html",
+        "sha256": "3afdf0e1a50c8e771c295d24d4d2e83dfe1fdc578def4e6a42318b9d420ecb24",
+        "original_path": "objects/3afdf0e1a50c8e771c295d24d4d2e83dfe1fdc578def4e6a42318b9d420ecb24/original.html.bin",
+        "readable_path": "objects/3afdf0e1a50c8e771c295d24d4d2e83dfe1fdc578def4e6a42318b9d420ecb24/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-tbmm-erken-10-4460-register-v1",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": null,
+        "kind": "official",
+        "published_at": null,
+        "date_precision": "unknown",
+        "social_handle": null,
+        "public_url": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/88ad4610-6866-43ce-906f-019fc7529059",
+        "basis": "TBMM esas numarası, geliş, imzacı ve yanıt durumu kaydı. Yayımlanma günü ayrıca gösterilmemiştir."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "466dc86cd44e0f1a2973ddcee5ec0c66",
+        "format_version": 2,
+        "source_sha256": "3afdf0e1a50c8e771c295d24d4d2e83dfe1fdc578def4e6a42318b9d420ecb24",
+        "index_path": "views/466dc86cd44e0f1a2973ddcee5ec0c66/index.html",
+        "manifest_path": "views/466dc86cd44e0f1a2973ddcee5ec0c66/manifest.json",
+        "manifest_sha256": "eed47c2bf5ac9edccfc443fb21fe208ba6db630218278166909c5e64cf54b1ae",
+        "version_id": "0404-tbmm-erken-10-4460-register-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-register-number",
+        "version_id": "0404-tbmm-erken-10-4460-register-v1",
+        "exact": "10 / 4460",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Araştırma esas numarası",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-register-date",
+        "version_id": "0404-tbmm-erken-10-4460-register-v1",
+        "exact": "31/07/2026",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "TBMM giriş tarihi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-register-author",
+        "version_id": "0404-tbmm-erken-10-4460-register-v1",
+        "exact": "S&#xFC;reyya &#xD6;NE&#x15E; DER&#x130;C&#x130;",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İlk imzacı Süreyya Öneş Derici",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-register-summary",
+        "version_id": "0404-tbmm-erken-10-4460-register-v1",
+        "exact": "Orman yang&#x131;nlar&#x131;n&#x131;n nedenlerinin t&#xFC;m boyutlar&#x131;yla ara&#x15F;t&#x131;r&#x131;larak al&#x131;nmas&#x131; gereken &#xF6;nlemlerin belirlenmesi amac&#x131;yla bir Meclis ara&#x15F;t&#x131;rmas&#x131; a&#xE7;&#x131;lmas&#x131;na ili&#x15F;kin &#xF6;nergesi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "TBMM araştırma önergesi kapsamı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-register-status",
+        "version_id": "0404-tbmm-erken-10-4460-register-v1",
+        "exact": "G&#xFC;ndemde",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Erişim anındaki TBMM işlem durumu",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-filing",
+        "party_id": "yeni-parti",
+        "title": "10/4460 Orman yangınları araştırma önergesi imzalı aslı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-filing-v1",
+        "document_id": "0404-tbmm-erken-10-4460-filing",
+        "original_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T10/WebOnergeMetni/37a88940-edc6-41a2-b3a3-8bff56594c4e.pdf",
+        "final_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T10/WebOnergeMetni/37a88940-edc6-41a2-b3a3-8bff56594c4e.pdf",
+        "document_date": "2026-07-31",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "TBMM kayıt sayfasının bağlı imzalı başvuru metni.",
+        "accessed_at": "2026-11-22T03:41:24+00:00",
+        "verified_at": "2026-11-22T03:57:08.981083+00:00",
+        "mime": "application/pdf",
+        "sha256": "bc2b47c5124678427df1c5d51f0311871cb33a2f7c66c4255de500e7e18b2732",
+        "original_path": "objects/bc2b47c5124678427df1c5d51f0311871cb33a2f7c66c4255de500e7e18b2732/original.pdf",
+        "readable_path": "objects/bc2b47c5124678427df1c5d51f0311871cb33a2f7c66c4255de500e7e18b2732/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-tbmm-erken-10-4460-filing-v1",
+        "publisher": "Türkiye Büyük Millet Meclisi",
+        "author": "Süreyya Öneş Derici",
+        "kind": "official",
+        "published_at": null,
+        "date_precision": "unknown",
+        "social_handle": null,
+        "public_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T10/WebOnergeMetni/37a88940-edc6-41a2-b3a3-8bff56594c4e.pdf",
+        "basis": "TBMM kayıt sayfasının bağlı imzalı başvuru metni. Yayımlanma günü ayrıca gösterilmemiştir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-filing-number",
+        "version_id": "0404-tbmm-erken-10-4460-filing-v1",
+        "exact": "10/4460",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Özgün dosya esas numarası",
+        "pdf_page_index": 0,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-erken-10-4460-filing-purpose",
+        "version_id": "0404-tbmm-erken-10-4460-filing-v1",
+        "exact": "Orman yangınlarının nedenlerinin ve bütün boyutlarının ortaya çıkarılması, etkili önleme yöntemlerinin belirlenmesi",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Orman yangınları gerekçe metnindeki denetim ve önleme bölümü",
+        "pdf_page_index": 1,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "manual_passage",
+      "values": {
+        "passage_id": "0404-tbmm-erken-10-4460-filing-purpose",
+        "checked_at": "2026-11-22T03:57:08.981083+00:00",
+        "method": "Özgün tarama sayfası Poppler ile görsel olarak okundu.",
+        "reason": "Özgün dosyanın GEREKÇE başlıklı taranmış ikinci sayfası ve son paragrafı görsel olarak okundu."
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-tbmm-120-yangin-gundem",
+        "party_id": "yeni-parti",
+        "title": "5 Ağustos TBMM 120. birleşim tam tutanağı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-tbmm-120-yangin-gundem-v1",
+        "document_id": "0404-tbmm-120-yangin-gundem",
+        "original_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/120/Tam/519e2174-62f7-4f11-96be-579512e48049.html",
+        "final_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/120/Tam/519e2174-62f7-4f11-96be-579512e48049.html",
+        "document_date": "2026-08-05",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "120. birleşim tam tutanağı, grup gündem önerileri.",
+        "accessed_at": "2026-11-22T01:19:44+00:00",
+        "verified_at": "2026-11-22T03:57:08.981083+00:00",
+        "mime": "text/html",
+        "sha256": "6e192121ce8c1e07a4dd897112a06d8ea353122039a5695c004873e209d212d3",
+        "original_path": "objects/6e192121ce8c1e07a4dd897112a06d8ea353122039a5695c004873e209d212d3/original.html.bin",
+        "readable_path": "objects/6e192121ce8c1e07a4dd897112a06d8ea353122039a5695c004873e209d212d3/readable.html"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "d86d2ef1df888cef9d631b265046abdb",
+        "format_version": 2,
+        "source_sha256": "6e192121ce8c1e07a4dd897112a06d8ea353122039a5695c004873e209d212d3",
+        "index_path": "views/d86d2ef1df888cef9d631b265046abdb/index.html",
+        "manifest_path": "views/d86d2ef1df888cef9d631b265046abdb/manifest.json",
+        "manifest_sha256": "0d9df5563e3abb9d02d8295520fa50635982c048b5bc620bbdff11dae1dc1296",
+        "version_id": "0404-tbmm-120-yangin-gundem-v1"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-tbmm-120-yangin-gundem-v1",
+        "kind": "official",
+        "publisher": "Türkiye Büyük Millet Meclisi Tutanak Hizmetleri Başkanlığı",
+        "author": null,
+        "published_at": null,
+        "date_precision": "unknown",
+        "social_handle": null,
+        "public_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/120/Tam/519e2174-62f7-4f11-96be-579512e48049.html",
+        "basis": "Tutanak birleşim günü ve konuşma sırası incelendi. Tutanak sayfasının yayın saati belirtilmemiştir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-120-yangin-gundem-scheduling",
+        "version_id": "0404-tbmm-120-yangin-gundem-v1",
+        "exact": "31/7/2026 tarihinde Türkiye Büyük Millet Meclisi Başkanlığına verilmiş olan Meclis araştırması önergesinin ön görüşmelerinin",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "5 Ağustos gündeme alma önerisi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-120-yangin-gundem-authority",
+        "version_id": "0404-tbmm-120-yangin-gundem-v1",
+        "exact": "YENİ PARTİ GRUBU ADINA SÜREYYA ÖNEŞ DERİCİ (Muğla) - Sayın Başkan, değerli milletvekilleri, ekranları başında bizleri izleyen kıymetli vatandaşlarımız; orman yangınlarının nedenlerinin, müdahale ve önleme süreçlerinin tüm boyutlarıyla incelenmesi konusunda Yeni Parti adına söz almış bulunuyorum.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Yeni Parti grubunun konuşma yetkisi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-120-yangin-gundem-purpose",
+        "version_id": "0404-tbmm-120-yangin-gundem-v1",
+        "exact": "2) TBMM'de bütün partilerin katılımıyla bir ulusal orman yangınları araştırma komisyonu kurulması çağrımızı destekleyin.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Öneş Derici’nin ortak komisyon çağrısı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-tbmm-120-yangin-gundem-result",
+        "version_id": "0404-tbmm-120-yangin-gundem-v1",
+        "exact": "BAŞKAN - Öneriyi oylarınıza sunuyorum: Kabul edenler... Kabul etmeyenler... Öneri kabul edilmemiştir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "5 Ağustos grup gündemi oylama sonucu",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    }
+  ]
+}
