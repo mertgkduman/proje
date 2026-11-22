@@ -1,0 +1,89 @@
+{
+  "status": "draft_unvalidated",
+  "source_root": "data/practices/sources/yeni-parti",
+  "note": "İl geneli ve merkez ilçe ayrımı Yeni Ankara aktarımı; asıl tutanak görülmedi.",
+  "entries": [
+    {
+      "kind": "document",
+      "values": {
+        "id": "0404-kirikkale-scope",
+        "party_id": "yeni-parti",
+        "title": "Kırıkkale önseçiminde il ve merkez ilçe oyları",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0404-kirikkale-scope-v1",
+        "document_id": "0404-kirikkale-scope",
+        "original_url": "https://www.yeniankara.com.tr/turkiye-haberleri/kirikkale/yeni-parti-kirikkale-on-secimini-kim-kazandi-18-ekim-2026-sonuclari-186821",
+        "final_url": "https://www.yeniankara.com.tr/turkiye-haberleri/kirikkale/yeni-parti-kirikkale-on-secimini-kim-kazandi-18-ekim-2026-sonuclari-186821",
+        "document_date": "2026-10-19",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Yeni Ankara 19 Ekim 15:57; parti kaynaklarına atfedilen oy dökümü.",
+        "accessed_at": "2026-11-22T03:15:29.415287+00:00",
+        "verified_at": "2026-11-22T03:15:29.415287+00:00",
+        "mime": "text/html",
+        "sha256": "e6f72dafafd0d767bb0d825a7663b8cd2abc42f742c38a6f91b22c6cfe0251bc",
+        "original_path": "objects/e6f72dafafd0d767bb0d825a7663b8cd2abc42f742c38a6f91b22c6cfe0251bc/original.html.bin",
+        "readable_path": "objects/e6f72dafafd0d767bb0d825a7663b8cd2abc42f742c38a6f91b22c6cfe0251bc/readable.html"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "version_id": "0404-kirikkale-scope-v1",
+        "view_id": "d99d56efef1b9a849a74a3b987cdbfca",
+        "format_version": 2,
+        "source_sha256": "e6f72dafafd0d767bb0d825a7663b8cd2abc42f742c38a6f91b22c6cfe0251bc",
+        "index_path": "views/d99d56efef1b9a849a74a3b987cdbfca/index.html",
+        "manifest_path": "views/d99d56efef1b9a849a74a3b987cdbfca/manifest.json",
+        "manifest_sha256": "7afe036e0ca6685ac95fc15340799aa320e2b1d8f83ddcd3bf8b17e81354e5e2"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0404-kirikkale-scope-v1",
+        "kind": "journalism",
+        "publisher": "Yeni Ankara",
+        "author": "İdris Avcı",
+        "social_handle": null,
+        "published_at": "2026-10-19",
+        "date_precision": "day",
+        "public_url": "https://www.yeniankara.com.tr/turkiye-haberleri/kirikkale/yeni-parti-kirikkale-on-secimini-kim-kazandi-18-ekim-2026-sonuclari-186821",
+        "basis": "Özgün haber ve editör künyesi okundu; basın haberindeki parti kaynağı, asıl tutanak değildir."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-kirikkale-scope-city-p",
+        "version_id": "0404-kirikkale-scope-v1",
+        "exact": "Onur Yüksel Bozdağ 928 oy alarak ipi göğüslerken, rakibi Eftal Sarısu 221 oyda kaldı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İl genelinde aktarılan oylar",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0404-kirikkale-scope-center-p",
+        "version_id": "0404-kirikkale-scope-v1",
+        "exact": "Merkez ilçede Bozdağ 467 oy alırken, Sarısu 171 oy topladı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Merkez ilçede aktarılan oylar",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    }
+  ]
+}
