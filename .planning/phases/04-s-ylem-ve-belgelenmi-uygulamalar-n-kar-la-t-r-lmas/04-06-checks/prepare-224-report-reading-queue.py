@@ -24,7 +24,7 @@ while i<1054:
  state='examined' if i in examined else 'pending'; end=i
  while end+1<1054 and (end+1 in examined)==(state=='examined') and end-i<19 and end+1 not in (36,40,54,57,61,906,924):end+=1
  row=dict(first=i,last=end,state=state)
- if state=='examined':row.update(review_file=('2025-224-baskan-sunus.md' if i<36 else '2025-224-diger-onergeler.md' if 40<=i<54 else '2025-224-komisyon-uyeleri.md' if 57<=i<61 else '2025-224-calisma-takvimi.md' if 61<=i<65 else '2025-224-tespit-oneriler.md' if 906<=i<924 else '2025-224-dem-serhi-reading.md'),reviewed_at=now,pages=[x for x in pages if i<=x['pdf_page_index']<=end])
+ if state=='examined':row.update(review_file=('2025-224-baskan-sunus.md' if i<36 else '2025-224-diger-onergeler.md' if 40<=i<54 else '2025-224-komisyon-uyeleri.md' if 57<=i<61 else '2025-224-calisma-takvimi.md' if 61<=i<65 else '2025-224-tespit-oneriler.md' if 906<=i<924 else '2025-224-dem-serhi-reading.md'),text_checked_at=now,pages=[x for x in pages if i<=x['pdf_page_index']<=end])
  queue.append(row);i=end+1
 assert [x for r in queue for x in range(r['first'],r['last']+1)]==list(range(1054))
 result=dict(version=1,source_sha256=capture['sha256'],total_pages=1054,examined_pages=79,pending_pages=975,queue=queue,limitations='Başkan sunuşu, altı önerge, üyeler, çalışma takvimi kesiti, ortak tespit ve öneriler, DEM şerhi, örgüt görüşleri ve takdim/kuruluş sayfaları incelendi; diğer bölümler okunmadı, sonuçların uygulanması ve hukuki etki doğrulanmadı.')
