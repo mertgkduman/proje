@@ -1,0 +1,60 @@
+{
+  "tranche_id": "0404-yeni-party-api-047",
+  "status": "semantic_reading_completed_for_exact_ranges_only",
+  "read_at": "2026-11-22T01:51:01.074696+00:00",
+  "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+  "scope_closures": [],
+  "note": "Yalnız belirtilen JSON icerik karakter aralıkları okunmuştur.",
+  "documents": [
+    {
+      "id": 88,
+      "title": "YENİ Parti Genel Başkanı Özgür Özel, Halk TV Canlı Yayınına Katıldı",
+      "url": "https://api.yeni-parti.org.tr/api/haberler/88",
+      "publisher": "Yeni Parti",
+      "created_at": "2026-09-01T09:54:16.703Z",
+      "updated_at": "2026-09-01T10:38:29.260Z",
+      "created_at_semantics": "API oluşturulma zamanı; yayın zamanı kanıtı olarak kullanılmadı",
+      "accessed_at": "2026-11-22T00:42:47+00:00",
+      "sha256": "270dc7650a554a42a0acf260e63a7216db03e3975d4f688ed1ac92af1fe19354",
+      "mime": "application/json",
+      "owned_original": "data/practices/sources/yeni-parti/objects/270dc7650a554a42a0acf260e63a7216db03e3975d4f688ed1ac92af1fe19354/original.html.bin",
+      "source_section_ranges": {
+        "id": 88,
+        "section_start": 64,
+        "section_end": 81,
+        "char_start": 73834,
+        "char_end": 99096
+      },
+      "reading": "İttifak ilkeleri; bölgesel asgari ücret yerine belirli işletmelere prim desteği, tarımda planlama, haftada dört gün çalışma, robot vergisi ve yaşlı bakım sigortası gibi politika önerileri anlatılıyor. Bunlar gerçekleşmiş uygulama değildir.",
+      "next_leads": [
+        "Yaşlı bakım sigortasını mevcut kaynak ve söylem kimliğiyle eşleştir",
+        "İstihdam ve tarım önerilerini program kapsamına bağla"
+      ]
+    },
+    {
+      "id": 87,
+      "title": "YENİ Parti Lideri Özgür Özel, İlk Parti Meclisi Toplantısının Açılışında Konuştu",
+      "url": "https://api.yeni-parti.org.tr/api/haberler/87",
+      "publisher": "Yeni Parti",
+      "created_at": "2026-08-31T17:50:10.723Z",
+      "updated_at": "2026-09-01T10:53:52.193Z",
+      "created_at_semantics": "API oluşturulma zamanı; yayın zamanı kanıtı olarak kullanılmadı",
+      "accessed_at": "2026-11-22T00:42:48+00:00",
+      "sha256": "1528f8c6b3643bb2d5abb2942ec5863c04f02b101851ec1374abb022aab7ba3b",
+      "mime": "application/json",
+      "owned_original": "data/practices/sources/yeni-parti/objects/1528f8c6b3643bb2d5abb2942ec5863c04f02b101851ec1374abb022aab7ba3b/original.html.bin",
+      "source_section_ranges": {
+        "id": 87,
+        "section_start": 1,
+        "section_end": 27,
+        "char_start": 0,
+        "char_end": 21207
+      },
+      "reading": "İlk Parti Meclisi açılışında bağış ve aidat beyanı, kurultayda harcama açıklama sözü, 600 bin üye ve 72 il/857 ilçe beyanları var. Ön seçim 26 Eylül ve 17–18 Ekim olarak duyuruluyor; resmî kongre ve delege aşaması ayrıca tanımlanıyor. Üyelik tarihlerinin uzatılması MYK için öneri olarak sunuluyor.",
+      "next_leads": [
+        "Sonraki takvim değişikliği ve gerçekleşmiş ön seçim/kongreleri ayır",
+        "Kurultay mali açıklaması gerçek belgesini araştır"
+      ]
+    }
+  ]
+}
