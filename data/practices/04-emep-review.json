@@ -67,6 +67,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-expression-23643-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0410-emep-expression-23643-pdf-v1\", \"0410-emep-expression-23643-register-v1\"]",
+      "passage_ids": "[\"0410-emep-expression-23643-pdf-filing-p\", \"0410-emep-expression-23643-register-filed-p\"]",
+      "inspected_sections": "[\"TBMM teklif bilgisi\", \"İmzalı teklif metni\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-expression-23643-event için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-forest-23804-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:56:19+00:00",
@@ -262,6 +275,32 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-expression-23643-event|0410-emep-expression-23643-pdf-filing-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0410-emep-expression-23643-pdf-v1\"]",
+      "passage_ids": "[\"0410-emep-expression-23643-pdf-filing-p\"]",
+      "inspected_sections": "[\"İmzalı teklif metni\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-expression-23643-event|0410-emep-expression-23643-pdf-filing-p|action için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-expression-23643-event|0410-emep-expression-23643-register-filed-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0410-emep-expression-23643-register-v1\"]",
+      "passage_ids": "[\"0410-emep-expression-23643-register-filed-p\"]",
+      "inspected_sections": "[\"TBMM teklif bilgisi\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-expression-23643-event|0410-emep-expression-23643-register-filed-p|action için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-forest-23804-event|0410-emep-forest-23804-pdf-filing-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:56:19+00:00",
@@ -405,6 +444,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-expression-23643-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-expression-23643-pdf-v1\", \"0410-emep-expression-23643-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-0-passage\", \"0410-emep-expression-23643-pdf-filing-p\", \"0410-emep-expression-23643-pdf-proposal-p\", \"0410-emep-expression-23643-register-bayhan-p\", \"0410-emep-expression-23643-register-filed-p\", \"0410-emep-expression-23643-register-karaca-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"TBMM teklif bilgisi\", \"İmzalı teklif metni\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-expression-23643-relation için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-forest-23804-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:56:19+00:00",
@@ -519,6 +571,19 @@
       "limitations": "Haber disiplin kurulu üyelerinin sayısını ve oylama biçimini belirtmez; sekiz sayısı genel merkez delegelerine aittir.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-corum-disiplin-relation için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-expression-23643-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-expression-23643-pdf-v1\", \"0410-emep-expression-23643-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-0-passage\", \"0410-emep-expression-23643-pdf-filing-p\", \"0410-emep-expression-23643-pdf-proposal-p\", \"0410-emep-expression-23643-register-bayhan-p\", \"0410-emep-expression-23643-register-filed-p\", \"0410-emep-expression-23643-register-karaca-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"TBMM teklif bilgisi\", \"İmzalı teklif metni\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-expression-23643-relation için program, TBMM kayıt ve teklif metni incelendi."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -704,6 +769,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-expression-23643-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-0-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-expression-23643-relation için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-forest-23804-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:56:19+00:00",
@@ -753,6 +831,19 @@
       "limitations": "Haber, yazılı bildirimin kayıtlı parti örgütüne ulaştığını veya üyelik kaydında yapılan işlemi göstermiyor; istifa ihraç değildir.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-may-resignation-relation için özgün tüzük ve ilgili haber pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-expression-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-0-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-expression-statement için program, TBMM kayıt ve teklif metni incelendi."
     },
     {
       "subject_kind": "practice_statement",
@@ -834,6 +925,19 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-expression-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-0-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-expression-statement için program, TBMM kayıt ve teklif metni incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-forest-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:56:19+00:00",
@@ -909,6 +1013,19 @@
       "limitations": "Haber, yazılı bildirimin kayıtlı parti örgütüne ulaştığını veya üyelik kaydında yapılan işlemi göstermiyor; istifa ihraç değildir.",
       "result": "reviewed",
       "reason": "practice_statement.quote_finding_id / 0410-may-resignation-statement için özgün tüzük ve ilgili haber pasajı okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-expression-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T08:31:03+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-0-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ifade ve basın özgürlüğünü savunur; 2/3643 teklifi TCK 217/A maddesinin kaldırılmasını önerir.",
+      "limitations": "Teklifin kabulü ve fiilî etkisi kanıtlanmadı; gerekçedeki istatistikler bağımsız doğrulanmadı.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-expression-statement için program, TBMM kayıt ve teklif metni incelendi."
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
@@ -1012,6 +1129,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-expression-23643-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-forest-23804-event"
     },
     {
@@ -1072,6 +1193,14 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-expression-23643-event|0410-emep-expression-23643-pdf-filing-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-expression-23643-event|0410-emep-expression-23643-register-filed-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-forest-23804-event|0410-emep-forest-23804-pdf-filing-p|action"
     },
     {
@@ -1116,6 +1245,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-expression-23643-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-forest-23804-relation"
     },
     {
@@ -1152,6 +1285,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-expression-23643-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-forest-23804-relation"
     },
     {
@@ -1208,6 +1345,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-expression-23643-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-forest-23804-relation"
     },
     {
@@ -1221,6 +1362,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-may-resignation-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-expression-statement"
     },
     {
       "subject_kind": "practice_statement",
@@ -1248,6 +1393,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-expression-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-forest-statement"
     },
     {
@@ -1269,6 +1418,10 @@
     {
       "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-may-resignation-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-expression-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
