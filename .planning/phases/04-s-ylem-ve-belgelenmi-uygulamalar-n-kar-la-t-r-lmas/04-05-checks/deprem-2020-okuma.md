@@ -107,3 +107,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 23 Aralık toplantısı PDF indeks 9–13 de okundu: Harita ve Kadastro Mühendisleri Odası temsilcisi dönüşüm, yapı denetimi ve GNSS altyapısı için görüş ve önerilerini açıklar. Bunlar meslek kuruluşunun kendi katkısıdır; TİP tutumu veya gerçekleşmiş politika sonucu olarak atfedilmez. İndeks 14–132 açık.
 
 23 Aralık toplantısı PDF indeks 14–23 okundu: Harita ve Kadastro Mühendisleri Odası’nın önerileri, oda temsilcisi ile üyelerin istihdam, denetim, deprem vergileri ve dönüşüm hakkındaki farklı görüşleri yer alır. İhtilaflı sayılar ve değerlendirmeler taraflarına aittir; bunlar TİP görüşü veya bağımsız olgu olarak kaydedilmedi. İndeks 24–132 açık.
+
+23 Aralık toplantısı PDF indeks 24–28 okundu: oda önerilerinin tartışılması usulüne dair farklı görüşler ile TMMOB’nin ortak öneri hazırlığı ve mesleki denetim üzerine sorular yer alır. Tartışmanın varlığı tek başına nihai karar veya TİP etkisi anlamına gelmez. İndeks 29–132 açık.
