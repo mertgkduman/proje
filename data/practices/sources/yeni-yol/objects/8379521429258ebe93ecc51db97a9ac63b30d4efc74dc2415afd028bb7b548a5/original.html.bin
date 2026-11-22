@@ -1,0 +1,1438 @@
+
+<!DOCTYPE html>
+<html lang="tr" dir="ltr" class="no-js">
+<head>
+        <link rel="stylesheet" href="/Content/responsive/VOA/tr-TR/VOA-tr-TR.css?&amp;av=0.0.0.0&amp;cb=324">
+<script src="https://tags.voaturkce.com/voa-pangea/prod/utag.sync.js"></script><script type='text/javascript' src='https://www.youtube.com/iframe_api' async></script>    <script type="text/javascript">
+        //a general 'js' detection, must be on top level in <head>, due to CSS performance
+        document.documentElement.className = "js";
+        var cacheBuster = "324";
+        var appBaseUrl = "/";
+        var imgEnhancerBreakpoints = [0, 144, 256, 408, 650, 1023, 1597];
+        var isLoggingEnabled = false;
+        var isPreviewPage = false;
+        var isLivePreviewPage = false;
+        var isForPdf = false;
+
+                var vjsLocalization = {
+                        "Play Video": "play",
+                        "Play": "play",
+                        "Pause": "pause",
+                        "Current Time": "",
+                        "Duration": "",
+                        "Remaining Time": "",
+                        "Mute": "volume",
+                        "Unmute": "volume",
+                        "LIVE": "Live",
+                        "Quality": "source switch"
+                };
+            
+        if (!isPreviewPage) {
+            window.RFE = window.RFE || {};
+            window.RFE.cacheEnabledByParam = window.location.href.indexOf('nocache=1') === -1;
+
+            const url = new URL(window.location.href);
+            const params = new URLSearchParams(url.search);
+
+            // Remove the 'nocache' parameter
+            params.delete('nocache');
+
+            // Update the URL without the 'nocache' parameter
+            url.search = params.toString();
+            window.history.replaceState(null, '', url.toString());
+        } else if (!isForPdf) {
+            window.addEventListener('load', function() {
+                const links = window.document.links;
+                for (let i = 0; i < links.length; i++) {
+                    links[i].href = '#';
+                    links[i].target = '_self';
+                }
+             })
+        }
+
+        // Iframe & Embed detection
+        var embedProperties = {};
+
+        try {
+            // Reliable way to check if we are in an iframe.
+            var isIframe = window.self !== window.top;
+            embedProperties.is_iframe = isIframe;
+
+            if (!isIframe) {
+                embedProperties.embed_context = "main";
+            } else {
+                // We are in an iframe. Let's try to access the parent.
+                // This access will only fail with strict cross-origin (without document.domain).
+                var parentLocation = window.top.location;
+
+                // The access succeeded. Now we explicitly compare the hostname.
+                if (window.location.hostname === parentLocation.hostname) {
+                    embedProperties.embed_context = "embed_self";
+                } else {
+                    // Hostname is different (e.g. different subdomain with document.domain)
+                    embedProperties.embed_context = "embed_cross";
+                }
+
+                // Since the access works, we can safely get the details.
+                embedProperties.url_parent = parentLocation.href;
+                embedProperties.title_parent = window.top.document.title;
+            }
+        } catch (err) {
+            // We are in an iframe, and an error occurred, probably due to cross-origin restrictions.
+            embedProperties.is_iframe = true;
+            embedProperties.embed_context = "embed_cross";
+
+            // We cannot access the properties of window.top.
+            // `document.referrer` can sometimes provide the URL of the parent page.
+            // It is not 100% reliable, but it is the best we can do in this situation.
+            embedProperties.url_parent = document.referrer || null;
+            embedProperties.title_parent = null; // We can't get to the title in a cross-origin scenario.
+        }
+
+var pwaEnabled = false;        var swCacheDisabled;
+    </script>
+    <meta charset="utf-8" />
+
+            <title>Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  </title>
+            <meta name="description" content="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi " />
+                <meta name="keywords" content="TÜRKİYE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="robots" content="max-image-preview:large"><meta property="fb:pages" content="10150093764055442" />
+<meta name="msvalidate.01" content="3286EE554B6F672A6F2E608C02343C0E" />
+<meta name="yandex-verification" content="44109a8675ae26b6" />
+<meta name="facebook-domain-verification" content="uyxxi5qrcxqz4deqtmd7wiu2qhoam9" />
+        <link href="https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" rel="canonical" />
+
+        <meta name="apple-mobile-web-app-title" content="VOA Türkçe" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+            <meta name="apple-itunes-app" content="app-id=632618796, app-argument=//7936804.ltr" />
+<meta content="Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  " property="og:title"></meta>
+<meta content="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi " property="og:description"></meta>
+<meta content="article" property="og:type"></meta>
+<meta content="https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" property="og:url"></meta>
+<meta content="VOA Türkçe" property="og:site_name"></meta>
+<meta content="https://www.facebook.com/VOATurkce/" property="article:publisher"></meta>
+<meta content="https://gdb.voanews.com/D31D574C-A0C2-4377-BF23-F8D7D9B33869.jpg" property="og:image"></meta>
+<meta content="305944203160965" property="fb:app_id"></meta>
+<meta content="Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu" name="Author"></meta>
+<meta content="summary_large_image" name="twitter:card"></meta>
+<meta content="@VOATurkce" name="twitter:site"></meta>
+<meta content="https://gdb.voanews.com/D31D574C-A0C2-4377-BF23-F8D7D9B33869.jpg" name="twitter:image"></meta>
+<meta content="Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  " name="twitter:title"></meta>
+<meta content="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi " name="twitter:description"></meta>
+                    <link rel="amphtml" href="https://www.voaturkce.com/amp/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" />
+<script type="application/ld+json">{"articleSection":"T\u0026#220;RKİYE","isAccessibleForFree":true,"headline":"Ali Babacan Yeni Yol’un yol haritasındaki temel amacı açıkladı: Parlamenter sistem  ","inLanguage":"tr-TR","keywords":"TÜRKİYE","author":{"@type":"Person","url":"https://www.voaturkce.com/author/yildiz-yazicioglu/iibop","description":"Yıldız Yazıcıoğlu, 1994-1998 döneminde Ankara Üniversitesi İletişim Fakültesi Gazetecilik Bölümü’nde lisans eğitimini tamamladı. Mesleğe 1997 yılında Cumhuriyet’te stajyer olarak başladı. 1998-2000 döneminde yüksek lisans eğitimine devam etti. 2000 – Mayıs 2009 döneminde Milliyet’te mesleki kariyerini cumhurbaşkanlığı ve parlamento muhabirliği noktasına taşıdı. 2009 - 2011 yıllarında ABD’nin başkenti Washington DC’de kariyerini sürdürdü ve farklı medya kuruluşları için temsilcilik – yorumculuk görevlerini yürüttü. Bu dönemde VOA Türkçe’de eğitim aldı ve görev yaptı. Ardından Ankara’ya dönüşünde Habertürk TV’de, ArtıBir TV’de görevler üstlendi. Şu anda VOA Türkçe ekibinde görev almayı sürdürüyor.","image":{"@type":"ImageObject","url":"https://gdb.voanews.com/24792975-4584-452d-bb7e-015a3ea5790f.jpg"},"name":"Yıldız Yazıcıoğlu"},"datePublished":"2025-01-14 20:01:51Z","dateModified":"2025-01-14 20:04:32Z","publisher":{"logo":{"width":512,"height":220,"@type":"ImageObject","url":"https://www.voaturkce.com/Content/responsive/VOA/tr-TR/img/logo.png"},"@type":"NewsMediaOrganization","url":"https://www.voaturkce.com","sameAs":["https://www.facebook.com/voaturkce","https://twitter.com/VOATurkce","https://www.youtube.com/voaturkce","https://www.instagram.com/voaturkce/","https://t.me/voaturkce"],"name":"VOA Türkçe - Haberler","alternateName":""},"@context":"https://schema.org","@type":"NewsArticle","mainEntityOfPage":"https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html","url":"https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html","description":"DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi başka partilerce TBMM’deki çatı parti oluşumu olan Yeni Yol Partisi’ne katılım olması için “parlamenter sistem talep etmek” şartının olduğunu söyledi ","image":{"width":1200,"height":675,"@type":"ImageObject","url":"https://gdb.voanews.com/D31D574C-A0C2-4377-BF23-F8D7D9B33869_w1200_r1.jpg"},"name":"Ali Babacan Yeni Yol’un yol haritasındaki temel amacı açıkladı: Parlamenter sistem  "}</script>    <script src="/Scripts/responsive/infographics.bundle.min.js?&amp;av=0.0.0.0&amp;cb=324"></script>
+        <script src="/Scripts/responsive/dollardom.min.js?&amp;av=0.0.0.0&amp;cb=324"></script>
+        <script src="/Scripts/responsive/modules/commons.js?&amp;av=0.0.0.0&amp;cb=324"></script>
+        <script src="/Scripts/responsive/modules/app_code.js?&amp;av=0.0.0.0&amp;cb=324"></script>
+
+        <link rel="icon" type="image/svg+xml" href="/Content/responsive/VOA/img/webApp/favicon.svg" />
+        <link rel="alternate icon" href="/Content/responsive/VOA/img/webApp/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/Content/responsive/VOA/img/webApp/ico-152x152.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/Content/responsive/VOA/img/webApp/ico-144x144.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/Content/responsive/VOA/img/webApp/ico-114x114.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/Content/responsive/VOA/img/webApp/ico-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" href="/Content/responsive/VOA/img/webApp/ico-57x57.png" />
+        <link rel="icon" sizes="192x192" href="/Content/responsive/VOA/img/webApp/ico-192x192.png" />
+        <link rel="icon" sizes="128x128" href="/Content/responsive/VOA/img/webApp/ico-128x128.png" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/Content/responsive/VOA/img/webApp/ico-144x144.png" />
+    <link rel="alternate" type="application/rss+xml" title="VOA - Top Stories [RSS]" href="/api/" />
+    <link rel="sitemap" type="application/rss+xml" href="/sitemap.xml" />
+    
+    
+
+
+
+        <script type="text/javascript">
+            var analyticsData = Object.assign(embedProperties, {url:"https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html",property_id:"488",article_uid:"7936804",page_title:"ali babacan yeni yol’un yol haritasındaki temel amacı açıkladı: parlamenter sistem",page_type:"article",content_type:"article",subcontent_type:"article",last_modified:"2025-01-14 20:04:32Z",pub_datetime:"2025-01-14 20:01:51Z",pub_year:"2025",pub_month:"01",pub_day:"14",pub_hour:"20",pub_weekday:"tuesday",section:"türkİye",english_section:"turkiye",byline:"yıldız yazıcıoğlu",categories:"turkiye",domain:"www.voaturkce.com",language:"turkish",language_service:"voa turkish",platform:"web",copied:"no",copied_article:"not set",copied_title:"not set",runs_js:"yes",cms_release:"8.50.0.0.324",enviro_type:"prod",slug:"ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem",entity:"voa",short_language_service:"turk",platform_short:"w",page_name:"ali babacan yeni yol’un yol haritasındaki temel amacı açıkladı: parlamenter sistem"});
+            // Push Analytics data as GTM message (without "event" attribute and before GTM initialization)
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(analyticsData);
+        </script>
+        <script type="text/javascript" data-cookiecategory="analytics">
+
+            var gtmEventObject = {event: 'page_meta_ready'};window.dataLayer = window.dataLayer || [];window.dataLayer.push(gtmEventObject);
+            var renderGtm = "true";
+            if (renderGtm === "true") {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N8MP7P');
+            }
+        </script>
+</head>
+<body class=" nav-no-loaded cc_theme pg-article pg-article--single-column print-lay-article use-sticky-share nojs-images ">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8MP7P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>        <script type="text/javascript" data-cookiecategory="analytics">
+
+            var gtmEventObject = {event: 'page_meta_ready'};window.dataLayer = window.dataLayer || [];window.dataLayer.push(gtmEventObject);
+
+            var renderGtm = "true";
+            if (renderGtm === "true") {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N8MP7P');
+            }
+
+        </script>
+        <!--Analytics tag js version start-->
+            <script type="text/javascript" data-cookiecategory="analytics">
+                var utag_data = Object.assign({}, analyticsData, {pub_year:"2025",pub_month:"01",pub_day:"14",pub_hour:"20",pub_weekday:"tuesday"});
+if(typeof(TealiumTagFrom)==='function' && typeof(TealiumTagSearchKeyword)==='function') {
+var utag_from=TealiumTagFrom();var utag_searchKeyword=TealiumTagSearchKeyword();
+if(utag_searchKeyword!=null && utag_searchKeyword!=='' && utag_data["search_keyword"]==null) utag_data["search_keyword"]=utag_searchKeyword;if(utag_from!=null && utag_from!=='') utag_data["from"]=TealiumTagFrom();}
+                if(window.top!== window.self&&utag_data.page_type==="snippet"){utag_data.page_type = 'iframe';}
+                try{if(window.top!==window.self&&window.self.location.hostname===window.top.location.hostname){utag_data.platform = 'self-embed';utag_data.platform_short = 'se';}}catch(e){if(window.top!==window.self&&window.self.location.search.includes("platformType=self-embed")){utag_data.platform = 'cross-promo';utag_data.platform_short = 'cp';}}
+                (function(a,b,c,d){    a="https://tags.voaturkce.com/voa-pangea/prod/utag.js";    b=document;c="script";d=b.createElement(c);d.src=a;d.type="text/java"+c;d.async=true;    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);    })();
+            </script>
+            <!--Analytics tag js version end-->
+<!-- Analytics tag management NoScript -->
+<noscript>
+<img style="position: absolute; border: none;" src="https://ssc.voaturkce.com/b/ss/bbgprod,bbgentityvoa/1/G.4--NS/1595054769?pageName=voa%3aturk%3aw%3aarticle%3aali%20babacan%20yeni%20yol%e2%80%99un%20yol%20haritas%c4%b1ndaki%20temel%20amac%c4%b1%20a%c3%a7%c4%b1klad%c4%b1%3a%20parlamenter%20sistem%20%20&amp;c6=ali%20babacan%20yeni%20yol%e2%80%99un%20yol%20haritas%c4%b1ndaki%20temel%20amac%c4%b1%20a%c3%a7%c4%b1klad%c4%b1%3a%20parlamenter%20sistem%20%20&amp;v36=8.50.0.0.324&amp;v6=D=c6&amp;g=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;c1=D=g&amp;v1=D=g&amp;events=event1,event52&amp;c16=voa%20turkish&amp;v16=D=c16&amp;c5=turkiye&amp;v5=D=c5&amp;ch=t%c3%9crk%c4%b0ye&amp;c15=turkish&amp;v15=D=c15&amp;c4=article&amp;v4=D=c4&amp;c14=7936804&amp;v14=D=c14&amp;v20=no&amp;c17=web&amp;v17=D=c17&amp;mcorgid=518abc7455e462b97f000101%40adobeorg&amp;server=www.voaturkce.com&amp;pageType=D=c4&amp;ns=bbg&amp;v29=D=server&amp;v25=voa&amp;v30=488&amp;v105=D=User-Agent " alt="analytics" width="1" height="1" /></noscript>
+<!-- End of Analytics tag management NoScript -->
+
+
+        <!--*** Accessibility links - For ScreenReaders only ***-->
+        <nav class="sr-only" aria-label="Eri&#x15F;ilebilirlik">
+            <ul>
+                <li><a href="#content" data-disable-smooth-scroll="1">Ana içeri&#x11F;e geç</a></li>
+                <li><a href="#navigation" data-disable-smooth-scroll="1">Ana navigasyona geç</a></li>
+                <li><a href="#txtHeaderSearch" data-disable-smooth-scroll="1">Aramaya geç</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+<div dir="ltr">
+    <div id="page">
+            <aside>
+
+<div class="c-lightbox overlay-modal">
+    <div class="c-lightbox__intro">
+        <p class="c-lightbox__intro-title"></p>
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__intro-next" title="sonraki">
+            <span class="ico ico--rounded ico-chevron-right"></span>
+            <span class="sr-only">sonraki</span>
+        </button>
+    </div>
+    <div class="c-lightbox__nav">
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__btn--close" title="Kapat">
+            <span class="ico ico--rounded ico-close"></span>
+            <span class="sr-only">Kapat</span>
+        </button>
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__btn--prev" title="önceki">
+            <span class="ico ico--rounded ico-chevron-left"></span>
+            <span class="sr-only">önceki</span>
+        </button>
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__btn--next" title="sonraki">
+            <span class="ico ico--rounded ico-chevron-right"></span>
+            <span class="sr-only">sonraki</span>
+        </button>
+    </div>
+    <div class="c-lightbox__content-wrap">
+        <figure class="c-lightbox__content">
+            <span class="c-spinner c-spinner--lightbox">
+                <img src="/Content/responsive/img/player-spinner.png"
+                     alt="lütfen bekleyin"
+                     title="lütfen bekleyin" />
+            </span>
+            <div class="c-lightbox__img">
+                <div class="thumb">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <figcaption>
+                <div class="c-lightbox__info c-lightbox__info--foot">
+                    <span class="c-lightbox__counter"></span>
+                    <span class="caption c-lightbox__caption"></span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="hidden">
+        <div class="content-advisory__box content-advisory__box--lightbox">
+            <span class="content-advisory__box-text">Bu foto&#x11F;raf rahats&#x131;z edici bir görsel içerebilir.</span>
+            <button class="btn btn--transparent content-advisory__box-btn m-t-md" value="text" type="button">
+                <span class="btn__text">
+                    Click to reveal
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="print-dialogue">
+    <div class="container">
+        <p class="print-dialogue__title section-head">Print Options:</p>
+        <div class="print-dialogue__opts">
+            <ul class="print-dialogue__opt-group">
+                <li class="form__group form__group--checkbox">
+                    <input class="form__check " id="checkboxImages" name="checkboxImages" type="checkbox" checked="checked" />
+                    <label for="checkboxImages" class="form__label m-t-md">Images</label>
+                </li>
+                <li class="form__group form__group--checkbox">
+                    <input class="form__check " id="checkboxMultimedia" name="checkboxMultimedia" type="checkbox" checked="checked" />
+                    <label for="checkboxMultimedia" class="form__label m-t-md">Multimedia</label>
+                </li>
+            </ul>
+            <ul class="print-dialogue__opt-group">
+                <li class="form__group form__group--checkbox">
+                    <input class="form__check " id="checkboxEmbedded" name="checkboxEmbedded" type="checkbox" checked="checked" />
+                    <label for="checkboxEmbedded" class="form__label m-t-md">Embedded Content</label>
+                </li>
+                <li class="hidden">
+                    <input class="form__check " id="checkboxComments" name="checkboxComments" type="checkbox" />
+                    <label for="checkboxComments" class="form__label m-t-md">Comments</label>
+                </li>
+            </ul>
+        </div>
+        <div class="print-dialogue__buttons">
+            <button class="btn  btn--secondary close-button" type="button" title="&#x130;ptal et">
+                <span class="btn__text ">&#x130;ptal et</span>
+            </button>
+            <button class="btn  btn-cust-print m-l-sm" type="button" title="Yazd&#x131;r">
+                <span class="btn__text ">Yazd&#x131;r</span>
+            </button>
+        </div>
+    </div>
+</div>                
+<div class="ctc-message pos-fix">
+    <div class="ctc-message__inner">Link has been copied to clipboard</div>
+</div>
+            </aside>
+
+
+<div class="hdr-20 hdr-20--big">
+    <div class="hdr-20__inner">
+        <div class="hdr-20__max pos-rel">
+            <div class="hdr-20__side hdr-20__side--primary d-flex">
+                <label data-for="main-menu-ctrl" data-switcher-trigger="true" data-switch-target="main-menu-ctrl" class="burger hdr-trigger pos-rel trans-trigger" data-trans-evt="click" data-trans-id="menu">
+                    <span class="ico ico-close hdr-trigger__ico hdr-trigger__ico--close burger__ico burger__ico--close"></span>
+                    <span class="ico ico-menu hdr-trigger__ico hdr-trigger__ico--open burger__ico burger__ico--open"></span>
+                </label>
+                <div class="menu-pnl pos-fix trans-target" data-switch-target="main-menu-ctrl" data-trans-id="menu">
+                    <div class="menu-pnl__inner">
+                        <nav class="main-nav menu-pnl__item menu-pnl__item--first">
+                            <ul class="main-nav__list accordeon" data-analytics-tales="false" data-promo-name="link" data-location-name="nav,secnav">
+                                
+
+        <li class="main-nav__item accordeon__item" data-switch-target="menu-item-951">
+            <label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-951">
+                HABERLER
+                <span class="ico ico-chevron-down main-nav__chev"></span>
+            </label>
+            <div class="main-nav__sub-list">
+                
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Turkiye" title="TÜRK&#x130;YE" data-item-name="turkiye" >TÜRK&#x130;YE</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Amerika" title="AMER&#x130;KA" data-item-name="amerika" >AMER&#x130;KA</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Ortadogu" title="ORTADO&#x11E;U" data-item-name="ortadogu" >ORTADO&#x11E;U</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Avrupa" title="AVRUPA" data-item-name="avrupa" >AVRUPA</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Uluslararasi-Dunya" title="ULUSLARARASI" data-item-name="uluslararasi" >ULUSLARARASI</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Sa&#x11F;l&#x131;k" title="SA&#x11E;LIK" data-item-name="saglik" >SA&#x11E;LIK</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/BilimTeknoloji" title="B&#x130;L&#x130;M VE TEKNOLOJ&#x130;" data-item-name="bilim-tekonoloji" >B&#x130;L&#x130;M VE TEKNOLOJ&#x130;</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Ekonomi" title="EKONOM&#x130;" data-item-name="ekonomi" >EKONOM&#x130;</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Cevre" title="ÇEVRE" data-item-name="climate-crisis-environment" >ÇEVRE</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Hayattan" title="HAYATTAN" data-item-name="hayattan" >HAYATTAN</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Sanat" title="SANAT" data-item-name="sanat" >SANAT</a>
+
+            </div>
+        </li>
+
+        <li class="main-nav__item accordeon__item" data-switch-target="menu-item-694">
+            <label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-694">
+                PROGRAMLAR
+                <span class="ico ico-chevron-down main-nav__chev"></span>
+            </label>
+            <div class="main-nav__sub-list">
+                
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/AmerikadaYasam" title="AMER&#x130;KA&#x27;DA YA&#x15E;AM" data-item-name="only-in-the-us-life-in-america" >AMER&#x130;KA&#x27;DA YA&#x15E;AM</a>
+
+            </div>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="/UkraynaKrizi" title="UKRAYNA KR&#x130;Z&#x130;" data-item-name="ukrayna-ozel-2" >UKRAYNA KR&#x130;Z&#x130;</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="/yapayzekayenidunya" title="YAPAY ZEKA" data-item-name="ai-special-page" >YAPAY ZEKA</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="https://editorials.voa.gov/z/6205" title="YORUMLAR"  target="_blank" rel="noopener">YORUMLAR</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="/AmerikayaOzel-OnlyInAmerica" title="Amerika&#x27;ya Özel" data-item-name="amerika-ya-ozel-only-in-america" >Amerika&#x27;ya Özel</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="http://m.amerikaninsesi.com/p/6009.html" title="&#x130;NG&#x130;L&#x130;ZCE DERSLER&#x130;"  >&#x130;NG&#x130;L&#x130;ZCE DERSLER&#x130;</a>
+        </li>
+
+        <li class="main-nav__item accordeon__item" data-switch-target="menu-item-952">
+            <label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-952">
+                MULT&#x130;MEDYA
+                <span class="ico ico-chevron-down main-nav__chev"></span>
+            </label>
+            <div class="main-nav__sub-list">
+                
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/VideoGaleri" title="V&#x130;DEO GALER&#x130;" data-item-name="video-galeri" >V&#x130;DEO GALER&#x130;</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/FotoGaleri" title="FOTO GALER&#x130;" data-item-name="photos" >FOTO GALER&#x130;</a>
+
+            </div>
+        </li>
+
+
+
+                            </ul>
+                        </nav>
+                        
+
+<div class="menu-pnl__item">
+        <a href="https://learningenglish.voanews.com/" class="menu-pnl__item-link" alt="LEARNING ENGLISH">LEARNING ENGLISH</a>
+</div>
+
+
+                        
+                            <div class="menu-pnl__item menu-pnl__item--social">
+                                    <p class="menu-pnl__sub-head">Bizi takip edin</p>
+
+            <a href="https://www.facebook.com/voaturkce" title="Follow us on Facebook" data-analytics-text="follow_on_facebook" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-facebook"  target="_blank" rel="noopener">
+                <span class="ico ico-facebook-alt ico--rounded"></span>
+            </a>
+
+            <a href="https://twitter.com/VOATurkce" title="Follow us on X (Twitter)" data-analytics-text="follow_on_twitter" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-twitter"  target="_blank" rel="noopener">
+                <span class="ico ico-twitter ico--rounded"></span>
+            </a>
+
+            <a href="https://www.youtube.com/voaturkce" title="Follow us on Youtube" data-analytics-text="follow_on_youtube" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-youtube"  target="_blank" rel="noopener">
+                <span class="ico ico-youtube ico--rounded"></span>
+            </a>
+
+            <a href="https://www.instagram.com/voaturkce/" title="Follow us on Instagram" data-analytics-text="follow_on_instagram" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-instagram"  target="_blank" rel="noopener">
+                <span class="ico ico-instagram ico--rounded"></span>
+            </a>
+
+            <a href="https://t.me/voaturkce" title="Follow us on Telegram" data-analytics-text="follow_on_telegram" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-telegram"  target="_blank" rel="noopener">
+                <span class="ico ico-telegram ico--rounded"></span>
+            </a>
+
+                            </div>
+                            <div class="menu-pnl__item">
+                                <a href="/navigation/allsites" class="menu-pnl__item-link">
+                                    <span class="ico ico-languages "></span>
+                                    Diller
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <label data-for="top-search-ctrl" data-switcher-trigger="true" data-switch-target="top-search-ctrl" class="top-srch-trigger hdr-trigger">
+                    <span class="ico ico-close hdr-trigger__ico hdr-trigger__ico--close top-srch-trigger__ico top-srch-trigger__ico--close"></span>
+                    <span class="ico ico-search hdr-trigger__ico hdr-trigger__ico--open top-srch-trigger__ico top-srch-trigger__ico--open"></span>
+                </label>
+                <div class="srch-top srch-top--in-header" data-switch-target="top-search-ctrl">
+                    <div class="container">
+                        
+<form action="/s" class="srch-top__form srch-top__form--in-header" id="form-topSearchHeader" method="get" role="search">    <label for="txtHeaderSearch" class="sr-only">Ara</label>
+    <input type="text" id="txtHeaderSearch" name="k" placeholder="Arama" accesskey="s" value="" class="srch-top__input analyticstag-event" onkeydown="if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('#txtHeaderSearch')[0].value) }" />
+    <button title="Ara" type="submit" class="btn btn--top-srch analyticstag-event" onclick="FireAnalyticsTagEventOnSearch('search', $dom.get('#txtHeaderSearch')[0].value) ">
+        <span class="ico ico-search"></span>
+    </button>
+</form>
+                    </div>
+                </div>
+                <a href="/" class="main-logo-link">
+                    <img src="/Content/responsive/VOA/tr-TR/img/logo-compact.svg?cb=324" class="main-logo main-logo--comp" alt="site logo">
+                        <img src="/Content/responsive/VOA/tr-TR/img/logo.svg?cb=324" class="main-logo main-logo--big" alt="site logo">
+                </a>
+            </div>
+            <div class="hdr-20__side hdr-20__side--secondary d-flex">
+                
+
+    <a href="/VideoGaleri" title="Video" class="hdr-20__secondary-item" data-item-name="video">
+        
+    <span class="ico ico-video hdr-20__secondary-icon"></span>
+
+    </a>
+
+    <a href="https://www.instagram.com/voaturkce/" title="Instagram" class="hdr-20__secondary-item" data-item-name="custom1">
+        
+    <span class="ico-custom ico-custom--1 hdr-20__secondary-icon"></span>
+
+    </a>
+
+    <a href="/s" title="Ara" class="hdr-20__secondary-item hdr-20__secondary-item--search" data-item-name="search">
+        
+    <span class="ico ico-search hdr-20__secondary-icon hdr-20__secondary-icon--search"></span>
+
+    </a>
+
+
+
+                
+
+<div class="hdr-20__secondary-item live-b-drop">
+    <div class="live-b-drop__off">
+        <a href="/live" class="live-b-drop__link" title="CANLI" data-item-name="live">
+            <span class="badge badge--live-btn badge--live-btn-off">
+                CANLI
+            </span>
+        </a>
+    </div>
+    <div class="live-b-drop__on hidden">
+        <label data-for="live-ctrl" data-switcher-trigger="true" data-switch-target="live-ctrl" class="live-b-drop__label pos-rel">
+            <span class="badge badge--live badge--live-btn">
+                CANLI
+            </span>
+            <span class="ico ico-close live-b-drop__label-ico live-b-drop__label-ico--close"></span>
+        </label>
+        <div class="live-b-drop__panel" id="targetLivePanelDiv" data-switch-target="live-ctrl"></div>
+    </div>
+</div>
+
+
+                <div class="srch-bottom">
+                    
+<form action="/s" class="srch-bottom__form d-flex" id="form-bottomSearch" method="get" role="search">    <label for="txtSearch" class="sr-only">Ara</label>
+    <input type="search" id="txtSearch" name="k" placeholder="Arama" accesskey="s" value="" class="srch-bottom__input analyticstag-event" onkeydown="if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('#txtSearch')[0].value) }" />
+    <button title="Ara" type="submit" class="btn btn--bottom-srch analyticstag-event" onclick="FireAnalyticsTagEventOnSearch('search', $dom.get('#txtSearch')[0].value) ">
+        <span class="ico ico-search"></span>
+    </button>
+</form>
+                </div>
+            </div>
+            <img src="/Content/responsive/VOA/tr-TR/img/logo-print.gif?cb=324" class="logo-print" loading="lazy" alt="site logo">
+            <img src="/Content/responsive/VOA/tr-TR/img/logo-print_color.png?cb=324" class="logo-print logo-print--color" loading="lazy" alt="site logo">
+        </div>
+    </div>
+</div>
+    <script>
+        if (document.body.className.indexOf('pg-home') > -1) {
+            var nav2In = document.querySelector('.hdr-20__inner');
+            var nav2Sec = document.querySelector('.hdr-20__side--secondary');
+            var secStyle = window.getComputedStyle(nav2Sec);
+            if (nav2In && window.pageYOffset < 150 && secStyle['position'] !== 'fixed') {
+                nav2In.classList.add('hdr-20__inner--big')
+            }
+        }
+    </script>
+
+
+
+<div class="c-hlights c-hlights--breaking c-hlights--no-item" data-hlight-display="mobile,desktop">
+    <div class="c-hlights__wrap container p-0">
+        <div class="c-hlights__nav">
+            <a role="button" href="#" title="önceki">
+                <span class="ico ico-chevron-backward m-0"></span>
+                <span class="sr-only">önceki</span>
+            </a>
+            <a role="button" href="#" title="sonraki">
+                <span class="ico ico-chevron-forward m-0"></span>
+                <span class="sr-only">sonraki</span>
+            </a>
+        </div>
+        <span class="c-hlights__label">
+            <span class="">Son Dakika</span>
+            <span class="switcher-trigger">
+                <label data-for="more-less-1" data-switcher-trigger="true" class="switcher-trigger__label switcher-trigger__label--more p-b-0" title="Daha Fazla">
+                    <span class="ico ico-chevron-down"></span>
+                </label>
+                <label data-for="more-less-1" data-switcher-trigger="true" class="switcher-trigger__label switcher-trigger__label--less p-b-0" title="Show less">
+                    <span class="ico ico-chevron-up"></span>
+                </label>
+            </span>
+        </span>
+        <ul class="c-hlights__items switcher-target" data-switch-target="more-less-1">
+            
+        </ul>
+    </div>
+</div>
+
+
+
+        <div id="content">
+            
+
+    <main class="container">
+
+    <div class="hdr-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-category col-xs-12 col-md-8 col-md-offset-2">
+
+
+<div class="category js-category">
+<a class="" href="/Turkiye">TÜRK&#x130;YE</a></div></div>
+<div class="col-title col-xs-12 col-md-8 col-md-offset-2">
+
+    <h1 class="title pg-title">Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  </h1>
+</div>
+<div class="col-publishing-details col-xs-12 col-md-8 col-md-offset-2">
+
+<div class="publishing-details ">
+                <div class="links">
+                    <ul class="links__list">
+                            <li class="links__item">
+            <a class="links__item-link" href="/author/yildiz-yazicioglu/iibop"  title="Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu">Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu</a>                            </li>
+                    </ul>
+                </div>
+        <div class="published">
+            <span class="date" >
+                    <time pubdate="pubdate" datetime="2025-01-14T22:01:51&#x2B;02:00">
+                        14 Ocak 2025
+                    </time>
+            </span>
+        </div>
+</div>
+
+
+</div>
+<div class="col-xs-12 col-md-8 col-md-offset-2">
+
+<div class="col-article-tools pos-rel article-share">
+
+    <div class="share--box">
+                <div class="sticky-share-container" style="display:none">
+                    <div class="container">
+                        <a href="https://www.voaturkce.com" id="logo-sticky-share">&nbsp;</a>
+                        <div class="pg-title pg-title--sticky-share">
+                            Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  
+                        </div>
+                        <div class="sticked-nav-actions">
+                            <!--This part is for sticky navigation display-->
+                            <aside class="content-sharing js-content-sharing js-content-sharing--apply-sticky content-sharing--sticky" role="complementary" 
+                                   data-share-url="https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" data-share-title="Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  " data-share-text="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi ">
+                                <div class="content-sharing__popover">
+                                    <p class="content-sharing__title">Payla&#x15F;</p>
+                                    <button class="btn btn--text-like content-sharing__close-btn">
+                                        <span class="ico ico-close ico--l"></span>
+                                    </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--s"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;text=Ali&#x2B;Babacan&#x2B;Yeni&#x2B;Yol%e2%80%99un&#x2B;yol&#x2B;haritas%c4%b1ndaki&#x2B;temel&#x2B;amac%c4%b1&#x2B;a%c3%a7%c4%b1klad%c4%b1%3a&#x2B;Parlamenter&#x2B;sistem&#x2B;&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;title=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;subject=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                                </div>
+                            </aside>
+                            <p class="buttons link-content-sharing p-0">
+                                <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                    <span class="ico ico-share"></span>
+                                    <span class="btn__text">
+                                        Payla&#x15F;
+                                    </span>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="links" >
+                        <aside class="content-sharing js-content-sharing " role="complementary" 
+                               data-share-url="https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" data-share-title="Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  " data-share-text="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi ">
+                            <div class="content-sharing__popover">
+                                <p class="content-sharing__title">Payla&#x15F;</p>
+                                <button class="btn btn--text-like content-sharing__close-btn">
+                                    <span class="ico ico-close ico--l"></span>
+                                </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--l"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;text=Ali&#x2B;Babacan&#x2B;Yeni&#x2B;Yol%e2%80%99un&#x2B;yol&#x2B;haritas%c4%b1ndaki&#x2B;temel&#x2B;amac%c4%b1&#x2B;a%c3%a7%c4%b1klad%c4%b1%3a&#x2B;Parlamenter&#x2B;sistem&#x2B;&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;title=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;subject=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                            </div>
+                        </aside>
+                        <p class="buttons link-content-sharing p-0">
+                            <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                <span class="ico ico-share"></span>
+                                <span class="btn__text">
+                                    Payla&#x15F;
+                                </span>
+                            </button>
+                        </p>
+                    
+<p class="buttons link-comments p-0">
+    <a href="#comments" class="btn btn--link p-t-0" data-disable-smooth-scroll="1" title="">
+        <span class="ico ico-comment"></span>
+        <span class="btn__text hidden-xs">
+            Yorumlar&#x131; oku
+        </span>
+            <span class="btn__text hidden-sm">
+                
+                    <span class="disqus-comment-count" data-disqus-identifier="7936804"></span>
+            </span>
+    </a>
+</p>
+
+                </div>
+    </div>
+
+</div>
+</div>
+<div class="col-multimedia col-xs-12">
+
+<div class="cover-media">
+    <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb thumb16_9">
+
+            <img src="https://gdb.voanews.com/90a94138-189e-4a48-8176-44d7fff7d61a_w250_r1_s.jpeg" alt="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi. " />
+                                </div>
+        </div>
+            <figcaption>
+                <span class="caption">DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi. </span>
+            </figcaption>
+    </figure>
+</div>
+
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="body-container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
+                    <div id="article-content" class="content-floated-wrap fb-quotable">
+
+    <div class="wsw">
+
+<span class="dateline">ANKARA —&nbsp;</span>
+<p>Gelecek Partisi ve Saadet Partisi’nin mevcut grubuna DEVA Partisi’nin de katılımıyla Yeni Yol Partisi çatısı altındaki yeni grup, yarın ilk kez siyaset sahnesine çıkıyor. Lider olarak TBMM’de ilk kez grup kürsüsünde konuşacak olan Eski Başbakan Yardımcısı ve DEVA Partisi Genel Başkanı Ali Babacan, çatı partisindeki ortak amacı “parlamenter sistem” olarak açıkladı, CHP’de ise sistem ile ilgili farklı görüşler olduğunu söyledi. </p>
+
+<p>Babacan, yarınki ilk grup toplantısı öncesinde Yeni Yol Partisi kapsamında DEVA Partisi olarak Gelecek Partisi ve Saadet Partisi’yle neleri hedeflediklerini, nasıl bir parti işleyişi sağlayacaklarını anlattı.  </p>
+
+<p>Aralarında VOA Türkçe muhabirinin de olduğu gazetecilere “ekonomi” alanında Nobel Ödülü alan Daron Acemoğlu’nun çalışmasını anımsatan Babacan, sözkonusu akademik çalışmada hem güncel hem de tarihi verilerle güçlü ekonomi için güçlü kurumlar gerektiğinin ortaya konulduğunu işaret ederek, “Kurumları güçlü olan ülkelerde topyekun zenginleşme oluyor, topyekun refah artıyor. Ama kurumlar zayıfsa gelir dağılımı bozuluyor” anımsatması yaptı. Dolayısıyla muhalefet cephesinde halen en önemli ortaklaşma zeminini “parlamenter sistem” olarak gördüğünü kaydeden Babacan, Yeni Yol Partisi’ni de, Gelecek ile Saadet partileriyle temel prensiplerde anlaştıkları ve özellikle Türkiye’de sistem değişikliğinin gerektiği ortak temel payda olarak gördüklerini açıkladı.  </p>
+
+<p>TBMM’deki çatı parti oluşumuna Yeniden Refah Partisi’nin (YRP) katılma ihtimaliyle ilgili soru üzerine Babacan, bu konuda Gelecek ve Saadet partileriyle mutabakat sağlanması halinde başka parti ve vekillerin katılımına açık bir çatı partisi kurduklarını aktardı.  </p>
+
+<p>Yeni Yol Partisi ile artık seçim ittifakı gibi her türlü kritik karar aşamasında muhalefet cephesinde alternatif bir birliktelik kurulduğunu kaydeden Babacan, Yeni Yol Partisi’nin olası genişlemesiyle ilgili  “Türkiye için aynı hedefleri, aynı hayalleri paylaşıyor muyuz? O ortak zemini yakaladığımız anda bu zemin üzerinden yürüyeceğiz” mesajını verdi.  </p>
+
+<p><strong>Parlamenter sistem sözkonusu olduğunda “Hangi CHP?” diye sordu </strong></p>
+
+<p>Masasında halen duran, CHP’yle birlikte Millet İttifakı döneminde hazırlanan “Güçlendirilmiş Parlamenter Sistem” mutabakat metnini işaret eden Babacan, Yeni Yol Partisi’nin çatısı altında siyaset yapmak isteyecek başka partiler veya başka siyasetçiler olacaksa bunun temel ortak paydasını “parlamenter sistem” olarak gösterdi. </p>
+
+<p>Bu noktada CHP’ye eleştirel yaklaştığı gözlemlenen Babacan, “Yeni Yol Partisi çatısı altında grup oluşturulması aslında felsefi olarak Avrupa Parlamentosu’ndaki (AP) gruplara benziyor. Burada üç parti birleşmiyor, tek parti olmuyor. Partiler arasında görüş ayrılığı, nüanslar olabilecektir. Her parti kendi içinde özgünlüğünü koruyacak. Ama temel prensiplerle odaklanıp birlikte çalışılacak. Mesela parlamenter sistem değil mi? Biz daha sonra kafası karışanlardan değiliz mesela parlamenter sistem konusunda. Çok netiz bu konuda. Parlamenter sistem konusunda samimi, kafası net olan partiler ile genişletmemiz mümkün. Ama bazıları değişti bu altı partiden (Millet İttifakı’nı kastederek)” dedi.  </p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/6fab3609-7e8b-4202-8444-aa053df549d5_w250_r0_s.png" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Millet İttifakı’ndaki partilerden sistem konusunda görüşü değişen parti olarak CHP’yi mi işaret ettiğinin sorulması üzerine Babacan, “Hangi CHP, diye sormak lazım şimdi. Bir tane değil gibi geliyor bana şu anda. Ama şu var, Altılı Masa’da gördük ki bazı partilerde kuvvetli damarlar vardı. Sadece CHP değil. Yani Başkanlık yetkileri çok önemli. Biz iktidara gelince bu yetkileri biraz kullanmamız lazım diye yaklaşımlar vardı. Bizce kesinlikle böyle bir şey olmaz. Bu ifade, o zaman sistemi değiştirme konusunda samimi olmuyor. Dolayısıyla parlamenter sistemi önemli zemin olarak görüyorum” diye konuştu.  </p>
+
+<p><strong>Yeni Yol Partisi’ne Dervişoğlu’nun ilgisi, Özel’in ilgisizliği mi var? </strong></p>
+
+<p>Çatı parti oluşumu sürecinde Millet İttifakı’nın bir başka ortağı İYİ Parti’nin yakın ilgi göstermesine rağmen CHP’nin uzaktan izlemeyi tercih ettiği de belirtiliyor. </p>
+
+<p>İYİ Parti Genel Başkanı Müsavat Dervişoğlu’yla son süreçte detaylı görüşmeler yaptıklarını açıklayan Ali Babacan, “İYİ Parti’nin grubu bulunduğu için çatı partisi ortaklaşması üzerine değil ancak yakın temasta kalmak, bundan sonraki süreçte ilişkilerimiz nasıl bir zeminde ilerleyebilir, birlikte ne yapabiliriz, işbirliği alanlarımız ne olabilir üzerine karşılıklı istişarelerimiz oldu. Şu anda şöyle bir kararımız, çalışmamız var noktasında değiliz ama ilişkilerimiz gayet olumlu, daha yakın diyebiliriz” açıklamasında bulundu. </p>
+
+<p>DEVA Partisi olarak CHP Genel Başkanı Özgür Özel’le nasıl bir temas içinde olduğu sorulan Babacan, kendisini Kasım 2023’te CHP’de genel başkanlığı dolayısıyla ziyaret ettiğini hatırlatarak, 12 Ekim’de DEVA Partisi’nin kongresi sonrasında örneğin kendisine iade-i ziyaret olmadığını dile getirdi. Ancak Özel ile telefonda görüşmeler yaptığını söyleyen Babacan, son telefon konuşmasında Özel’e, Yeni Yol Partisi çatısı altındaki amacı, hedefleri anlattığını belirterek, “Kendisine bilgi verdim. O sormadı ama ben anlattım” ifadesini kullandı.  </p>
+
+<p><strong>DEVA Partisi’nden ayrılanlardan AK Parti’ye geçişler olur mu? </strong></p>
+
+<p>Çatı parti oluşumu gerekçesiyle DEVA Partisi’nden ayrılan İstanbul Milletvekili Mustafa Yeneroğlu, Manisa Milletvekili Selma Aliye Kavaf ve Balıkesir Milletvekili Burak Dalgın’ın başka partilere geçişiyle ilgili soru üzerine Babacan, öncelikle istifalar nedeniyle üzgün olduğunu söyledi.  </p>
+
+<p>DEVA Partisi Genel Merkezi ve Genel Başkanı olarak “Gidenler ardından konuşmuyoruz ilkesine sadık kalmak istiyoruz” diyen Babacan, “Ancak parti teşkilatında ayrılanlara yönelik maalesef kızgınlık duygusu hakim” yorumunu yaptı.  </p>
+
+<p>Şu anda bağımsız olan vekillerden örneğin Kavaf’ın AK Parti’ye geçeceği iddiasıyla ilgili ise Babacan, doğrudan isimlerle ilgili değerlendirme yapmayacağını kaydetti. İlkesel olarak muhalefet cephesinden iktidar cephesine geçişler olmasıyla ilgili soru üzerine ise Babacan, “Seçimden önce ne konuştuğumuz, vatandaşlarla aranızda bir akitleşme anlamına geliyor. Vatandaş, ben sana bunun için oy vermedim diyorsa, bir hak oluşur, bir vebal oluyor. Bizim AK Parti’den ayrılmak ve ayrı bir parti kurmak için gördüğümüz kök sebepler hiç değişmedi. Halen AK Parti’den ayrılma gerekçemiz olan sorunlar orada var. Siyaset sadece iktidar ve güç için yapılıyor olsaydı, o zaman DEVA Partisi olmazdı. Siyaset ilkeler ve değerler için de yapılır. Eğer öyle bir şey olursa üzüntüm kat kat artar” dedi.  </p>
+
+<p>Babacan, örneğin kendisinin AK Parti’den milletvekili değilken ve o dönemki yerel seçimler de geçtikten sonra ayrıldığını hatırlattı. </p>
+
+<p><strong>Çatı parti işleyişi nasıl olacak?: 2027’de erken seçim öngörüsü </strong></p>
+
+<p>DEVA, Gelecek ve Saadet partilerince TBMM’de ortak parti grubu oluşturma amacıyla 10 Ocak’ta kurulan Yeni Yol Partisi’nde nasıl çalışılacağı konusunda özellikle “ortaklaşma” diyen Babacan’a göre; sözkonusu üç parti Meclis’te grup çatısı olsa da hem ayrı tüzel kişilikleriyle hem de ayrı parti çalışmalarıyla yollarına devam edecek.  </p>
+
+<p>Yeni Yol Partisi’nin Kurucu Genel Başkanlığı’nı DEVA Partisi kadrosundan ancak milletvekili olmayan eski Anayasa Mahkemesi üyesi Celal Mümtaz Akıncı’nın üstlendiğini kaydeden Babacan, parti yönetiminde tüm yönetici görevler için “bir yıl süreli, dönüşümlü olması” şartı getirdiklerini açıkladı. Dolayısıyla Akıncı’nın yerine 1 Ocak 2026 sonrasında ya Gelecek Partisi’nden ya da Saadet Partisi’nden başka ismin görev alacağını belirtti. Babacan, TBMM’de ise Yeni Yol Partisi Grup Başkanlığı’nı Bülent Kaya’nın (Saadet), başkanvekilliklerini ise Mehmet Emin Ekmen (DEVA) ile Selçuk Özdağ’ın (Gelecek) yürüteceğini ifade etti.  </p>
+
+<p>“Seçime üç yıl olduğunu düşünüyorum. Dolayısıyla bu önümüzdeki üç yıl içinde üç partiden isimler çatı parti yönetimini üstlenecek” diyen Babacan, 2027 yılında erken seçim beklentisini de açıklamış oldu.  </p>
+
+<p>TBMM’deki aritmetik bakımından; DEVA Partisi’nde Evrim Rızvanoğlu (İstanbul) ile Seda Kaya Ösen’in (İzmir) kalmaya devam edeceğini açıklayan Babacan, DEVA Partili diğer 10 milletvekilinin yanısıra Saadet Partisi’nden 9 milletvekili ve Gelecek Partisi’nden muhtemelen 7 ismin ise Yeni Yol Partisi’nde görev alacağını belirtti. Babacan, Saadet Partisi Genel Başkanı Mahmut Arıkan’ın Kayseri milletvekili olarak genel başkan da olduğu için kendi partisinde olacağını kaydetti. </p>
+
+<p><strong>Kürt sorunu çözümü: “1 Ekim Süreci diyorum, tuğla tuğla inşa edilmesi gerekiyor” </strong></p>
+
+<p>DEVA Partisi lideri Babacan, Türkiye’de devlet ile terör örgütü PKK’nın ilk kez masaya oturduğu ve 2013 yılında resmen Çözüm Süreci’nin başlaması öncesinde Norveç’in başkenti Oslo’daki görüşmeler döneminde Dışişleri Bakanı idi.  </p>
+
+<p>AK Parti’de kabinede olduğu o dönemde Çözüm Süreci’ndeki tüm gelişmeleri birebir bildiğini işaret eden Babacan, yıllarca Milli Güvenlik Kurulu (MGK) üyesi olduğunu da anımsatarak, böylesi bir süreçte güven oluşması için basamak basamak hareket edilmesi gerektiğini söyledi.  </p>
+
+<p>Geçtiğimiz günlerde Sırrı Süreyya Önder, Pervin Buldan ve Ahmet Türk’ten oluşan İmralı heyetiyle görüştüğünü anımsatan Babacan, öncelikle MHP Genel Başkanı Devlet Bahçeli’nin açıklamalarıyla gelişen bu süreci “1 Ekim Süreci” olarak adlandırdığını açıkladı. Sözlerinin devamında Babacan, özetle, “İmralı heyetiyle görüşmemizde gördüğümüz risk alanlarını aktardım. Biz hiçbir zaman günlük siyasette ne söyleyelim, ne öğretelim, ne tüketelim derdinde değiliz. Önce altını dolu yapmak gerekiyor. Tuğla tuğla inşa edilmesi gereken bir süreçin içindeyiz. Mesela iki konu birbirine karıştırılmamalı. Hak ve özgürlükler konusuyla terörle mücadele konusu birbirine karıştırılmamalı. Şimdi heyet ne diyor? Barış ile çözümü birbirinden ayrı tutuyoruz diyor mesela. Değil mi? Bu önemli yani. Kronolojisi, tarzı şu olur, bu olur ama yani iki konuyu birbirine dokundurmamak gerekiyor. Bunu niye söylüyorum. Çünkü hepsinin arkasında sebep var, çünkü yaşanmışlıklar var. Bizim partimizde o süreçte deneyim sahibi isimler var. Ben de bizzat içindeydim yani. Oslo görüşmeleri varken dışişleri bakanıydım. O zaman çok farklı götürüyordum” diye konuştu.  </p>
+
+<p>Babacan, Oslo görüşmeleri döneminin detayına ilişkin soru üzerine “Şimdi odak noktamız Yeni Yol Partisi. Bunu başka zaman konuşalım” ifadesini kullandı.  </p>
+
+<p> </p>
+
+<p> </p>
+
+    </div>
+
+                            <div class="footer-toolbar">
+                            
+    <div class="share--box">
+                <div class="sticky-share-container" style="display:none">
+                    <div class="container">
+                        <a href="https://www.voaturkce.com" id="logo-sticky-share">&nbsp;</a>
+                        <div class="pg-title pg-title--sticky-share">
+                            Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  
+                        </div>
+                        <div class="sticked-nav-actions">
+                            <!--This part is for sticky navigation display-->
+                            <aside class="content-sharing js-content-sharing js-content-sharing--apply-sticky content-sharing--sticky" role="complementary" 
+                                   data-share-url="https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" data-share-title="Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  " data-share-text="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi ">
+                                <div class="content-sharing__popover">
+                                    <p class="content-sharing__title">Payla&#x15F;</p>
+                                    <button class="btn btn--text-like content-sharing__close-btn">
+                                        <span class="ico ico-close ico--l"></span>
+                                    </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--s"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;text=Ali&#x2B;Babacan&#x2B;Yeni&#x2B;Yol%e2%80%99un&#x2B;yol&#x2B;haritas%c4%b1ndaki&#x2B;temel&#x2B;amac%c4%b1&#x2B;a%c3%a7%c4%b1klad%c4%b1%3a&#x2B;Parlamenter&#x2B;sistem&#x2B;&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;title=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;subject=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                                </div>
+                            </aside>
+                            <p class="buttons link-content-sharing p-0">
+                                <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                    <span class="ico ico-share"></span>
+                                    <span class="btn__text">
+                                        Payla&#x15F;
+                                    </span>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="links" >
+                        <aside class="content-sharing js-content-sharing " role="complementary" 
+                               data-share-url="https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" data-share-title="Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  " data-share-text="DEVA Partisi lideri Ali Babacan, Yeniden Refah Partisi (YRP) gibi ba&#x15F;ka partilerce TBMM’deki çat&#x131; parti olu&#x15F;umu olan Yeni Yol Partisi’ne kat&#x131;l&#x131;m olmas&#x131; için “parlamenter sistem talep etmek” &#x15F;art&#x131;n&#x131;n oldu&#x11F;unu söyledi ">
+                            <div class="content-sharing__popover">
+                                <p class="content-sharing__title">Payla&#x15F;</p>
+                                <button class="btn btn--text-like content-sharing__close-btn">
+                                    <span class="ico ico-close ico--l"></span>
+                                </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--l"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;text=Ali&#x2B;Babacan&#x2B;Yeni&#x2B;Yol%e2%80%99un&#x2B;yol&#x2B;haritas%c4%b1ndaki&#x2B;temel&#x2B;amac%c4%b1&#x2B;a%c3%a7%c4%b1klad%c4%b1%3a&#x2B;Parlamenter&#x2B;sistem&#x2B;&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;title=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2fali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem%2f7936804.html&amp;subject=Ali Babacan Yeni Yol’un yol haritas&#x131;ndaki temel amac&#x131; aç&#x131;klad&#x131;: Parlamenter sistem  "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                            </div>
+                        </aside>
+                        <p class="buttons link-content-sharing p-0">
+                            <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                <span class="ico ico-share"></span>
+                                <span class="btn__text">
+                                    Payla&#x15F;
+                                </span>
+                            </button>
+                        </p>
+                    
+<p class="buttons link-comments p-0">
+    <a href="#comments" class="btn btn--link p-t-0" data-disable-smooth-scroll="1" title="">
+        <span class="ico ico-comment"></span>
+        <span class="btn__text hidden-xs">
+            Yorumlar&#x131; oku
+        </span>
+            <span class="btn__text hidden-sm">
+                
+                    <span class="disqus-comment-count" data-disqus-identifier="7936804"></span>
+            </span>
+    </a>
+</p>
+    <aside class="content-sharing js-content-sharing follow-us" role="complementary">
+        <div class="content-sharing__popover">
+                <p class="content-sharing__title">Follow us</p>
+            <button class="btn btn--text-like content-sharing__close-btn">
+                <span class="ico ico-close"></span>
+            </button>
+            <ul class="content-sharing__list link-content-sharing p-0">
+                            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://www.facebook.com/voaturkce" title="Follow us on Facebook" data-analytics-text="follow_on_facebook"    target="_blank" rel="noopener">
+                    <span class="ico ico-facebook-alt ico--rounded"></span>
+                    <span class="content-sharing__link-text">Facebook</span>
+                </a>
+            </li>
+
+            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://twitter.com/VOATurkce" title="Follow us on X (Twitter)" data-analytics-text="follow_on_twitter"    target="_blank" rel="noopener">
+                    <span class="ico ico-twitter ico--rounded"></span>
+                    <span class="content-sharing__link-text">X (Twitter)</span>
+                </a>
+            </li>
+
+            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://www.youtube.com/voaturkce" title="Follow us on Youtube" data-analytics-text="follow_on_youtube"    target="_blank" rel="noopener">
+                    <span class="ico ico-youtube ico--rounded"></span>
+                    <span class="content-sharing__link-text">Youtube</span>
+                </a>
+            </li>
+
+            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://www.instagram.com/voaturkce/" title="Follow us on Instagram" data-analytics-text="follow_on_instagram"    target="_blank" rel="noopener">
+                    <span class="ico ico-instagram ico--rounded"></span>
+                    <span class="content-sharing__link-text">Instagram</span>
+                </a>
+            </li>
+
+
+            </ul>
+        </div>
+    </aside>
+    <p class="buttons link-content-sharing p-0">
+            <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Follow us">
+            <span class="ico ico-bell"></span>
+            <span class="btn__text">
+                Follow us
+            </span>
+        </button>
+    </p>
+
+<p class="link-print hidden-xs buttons p-0">
+    <button class="btn btn--link btn-print p-t-0" onclick="if (typeof FireAnalyticsTagEvent === 'function') {FireAnalyticsTagEvent({ on_page_event: 'print_story' });}return false" title="(CTRL&#x2B;P)">
+        <span class="ico ico-print"></span>
+        <span class="btn__text">Yazd&#x131;r</span>
+    </button>
+</p>
+
+                </div>
+    </div>
+
+
+                            </div>
+
+        <ul class="authors-highlights">
+                <li class="authors-highlights__item">
+                    <div class="c-author c-author--hlight">
+        <div class="media-block d-flex">
+                <a href="/author/yildiz-yazicioglu/iibop" class="img-wrap  img-wrap--xxs">
+        <div class="thumb thumb1_1 rounded">
+                <noscript class="nojs-img">
+                    <img src="https://gdb.voanews.com/24792975-4584-452d-bb7e-015a3ea5790f_cx7_cy14_cw94_w100_r5.jpg" alt="16x9 Image" class="avatar" />
+                </noscript>
+            <img alt="16x9 Image" class="avatar" data-src="https://gdb.voanews.com/24792975-4584-452d-bb7e-015a3ea5790f_cx7_cy14_cw94_w66_r5.jpg" src="" />
+        </div>
+                </a>
+            <div class="c-author__content">
+                <p class="media-block__title media-block__title--author">
+                        <a href="/author/yildiz-yazicioglu/iibop">Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu</a>
+                </p>
+                    <div class="wsw c-author__wsw">
+                        <p>Yıldız Yazıcıoğlu, 1994-1998 döneminde Ankara Üniversitesi İletişim Fakültesi Gazetecilik Bölümü&rsquo;nde lisans eğitimini tamamladı. Mesleğe 1997 yılında Cumhuriyet&rsquo;te stajyer olarak başladı. 1998-2000 döneminde yüksek lisans eğitimine devam etti. 2000 &ndash; Mayıs 2009 döneminde Milliyet&rsquo;te mesleki kariyerini cumhurbaşkanlığı ve parlamento muhabirliği noktasına taşıdı. 2009 - 2011 yıllarında ABD&rsquo;nin başkenti Washington DC&rsquo;de kariyerini sürdürdü ve farklı medya kuruluşları için temsilcilik &ndash; yorumculuk görevlerini yürüttü. Bu dönemde VOA Türkçe&rsquo;de eğitim aldı ve görev yaptı. Ardından Ankara&rsquo;ya dönüşünde Habertürk TV&rsquo;de, ArtıBir TV&rsquo;de görevler üstlendi. Şu anda VOA Türkçe ekibinde görev almayı sürdürüyor.</p>
+
+                    </div>
+            </div>
+        </div>
+                    </div>
+                </li>
+        </ul>
+
+                        
+
+                    </div>
+
+    <div id="comments" class="comments-dialog comments-dialog--initialized comments-dialog--animated">
+        <div class="comments-dialog__dialog" role="dialog" aria-modal="true" aria-labelledby="comments-title">
+            <div class="comments-dialog__dialog-header">
+                <h2 id="comments-title" class="section-head section-head--comments font-1">Forum</h2>
+                <button class="btn btn--link btn--close " value="text" role="Close" type="" title="Kapat">
+                    <span class="ico ico-close "></span><span class="btn__text ">Kapat</span>
+                </button>
+            </div>
+            <div class="comments-dialog__dialog-content">
+                <div class="comments comments--ext">
+                        <div class="comments-form comments-external">
+                            <script id="dsq-count-scr" src="//voa-tr-tr-443.disqus.com/count.js" async></script>
+                            <div class="ext-comments" data-href="https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html" data-lang="en" data-mobile="true" data-disqus-identifier="7936804">
+                                <div id="disqus_thread"></div>
+<script>    
+    var disqus_config = function () {        
+        this.page.url = 'https://www.voaturkce.com/a/ali-babacan-yeni-yol-yol-haritasindaki-temel-amaci-acikladi-parlamenter-sistem/7936804.html';  
+        this.page.identifier = '7936804'; 
+    };    
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://voa-tr-tr-443.disqus.com/embed.js'; 
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="comments-dialog__dialog-footer">
+                <button class="btn btn--link btn--close " value="text" role="Close" type="" title="Kapat">
+                    <span class="ico ico-close "></span><span class="btn__text ">Kapat</span>
+                </button>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </main>
+
+
+
+        </div>
+
+
+
+<footer role="contentinfo">
+    <div id="foot" class="foot">
+        <div class="container">
+                <div class="foot-nav collapsed" id="foot-nav">
+                    <div class="menu">
+                        <ul class="items">
+                                <li class="socials block-socials">
+                                        <span class="handler" id="socials-handler">
+                                            Bizi takip edin
+                                        </span>
+                                    <div class="inner">
+                                        <ul class="subitems follow">
+                                                <li>
+            <a href="https://www.facebook.com/voaturkce" title="Follow us on Facebook" data-analytics-text="follow_on_facebook" class="btn btn--rounded js-social-btn btn-facebook"  target="_blank" rel="noopener">
+                <span class="ico ico-facebook-alt ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://twitter.com/VOATurkce" title="Follow us on X (Twitter)" data-analytics-text="follow_on_twitter" class="btn btn--rounded js-social-btn btn-twitter"  target="_blank" rel="noopener">
+                <span class="ico ico-twitter ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://www.youtube.com/voaturkce" title="Follow us on Youtube" data-analytics-text="follow_on_youtube" class="btn btn--rounded js-social-btn btn-youtube"  target="_blank" rel="noopener">
+                <span class="ico ico-youtube ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://www.instagram.com/voaturkce/" title="Follow us on Instagram" data-analytics-text="follow_on_instagram" class="btn btn--rounded js-social-btn btn-instagram"  target="_blank" rel="noopener">
+                <span class="ico ico-instagram ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://t.me/voaturkce" title="Follow us on Telegram" data-analytics-text="follow_on_telegram" class="btn btn--rounded js-social-btn btn-telegram"  target="_blank" rel="noopener">
+                <span class="ico ico-telegram ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="/rssfeeds" title="RSS" data-analytics-text="follow_on_rss" class="btn btn--rounded js-social-btn btn-rss" >
+                <span class="ico ico-rss ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="/podcasts" title="Podcast" data-analytics-text="follow_on_podcast" class="btn btn--rounded js-social-btn btn-podcast" >
+                <span class="ico ico-podcast ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="/subscribe.html" title="Subscribe" data-analytics-text="follow_on_subscribe" class="btn btn--rounded js-social-btn btn-email" >
+                <span class="ico ico-email ico--rounded"></span>
+            </a>
+    </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+    <li class="block-primary collapsed collapsible item">
+            <span class="handler">
+                VOA Türkçe&#x27;de ayr&#x131;ca
+                <span title="close tab" class="ico ico-chevron-up"></span>
+                <span title="open tab" class="ico ico-chevron-down"></span>
+                <span title="add" class="ico ico-plus"></span>
+                <span title="remove" class="ico ico-minus"></span>
+            </span>
+            <div class="inner">
+                <ul class="subitems">
+                    
+    <li class="subitem">
+        <a class="handler" href="http://m.amerikaninsesi.com/" title="Anasayfa" >Anasayfa</a>
+    </li>
+
+    <li class="subitem">
+        <a class="handler" href="/Erisebilirlik" title="Eri&#x15F;ilebilirlik" >Eri&#x15F;ilebilirlik</a>
+    </li>
+
+    <li class="subitem">
+        <a class="handler" href="https://www.voanews.com/p/5338.html" title="Kullan&#x131;m &#x15E;artlar&#x131; ve Gizlilik Politikas&#x131;" target="_blank" rel="noopener">Kullan&#x131;m &#x15E;artlar&#x131; ve Gizlilik Politikas&#x131;</a>
+    </li>
+
+                </ul>
+            </div>
+    </li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="foot__item foot__item--copyrights">
+                <p class="copyright"></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+</div>
+        <script defer src="/Scripts/responsive/serviceWorkerInstall.js?cb=324"></script>
+    <script type="text/javascript">
+
+        // opera mini - disable ico font
+        if (navigator.userAgent.match(/Opera Mini/i)) {
+            document.getElementsByTagName("body")[0].className += " can-not-ff";
+        }
+
+        // mobile browsers test
+        if (typeof RFE !== 'undefined' && RFE.isMobile) {
+            if (RFE.isMobile.any()) {
+                document.getElementsByTagName("body")[0].className += " is-mobile";
+            }
+            else {
+                document.getElementsByTagName("body")[0].className += " is-not-mobile";
+            }
+        }
+    </script>
+    <script src="/conf.js?x=324" type="text/javascript"></script>
+        <div class="responsive-indicator">
+            <div class="visible-xs-block">XS</div>
+            <div class="visible-sm-block">SM</div>
+            <div class="visible-md-block">MD</div>
+            <div class="visible-lg-block">LG</div>
+        </div>
+        <script type="text/javascript">
+            var bar_data = {
+  "apiId": "7936804",
+  "apiType": "1",
+  "isEmbedded": "0",
+  "culture": "tr-TR",
+  "cookieName": "cmsLoggedIn",
+  "cookieDomain": "www.voaturkce.com"
+};
+        </script>
+    
+    
+
+
+
+    <div id="scriptLoaderTarget" style="display:none;contain:strict;"></div>
+
+</body>
+</html>
+

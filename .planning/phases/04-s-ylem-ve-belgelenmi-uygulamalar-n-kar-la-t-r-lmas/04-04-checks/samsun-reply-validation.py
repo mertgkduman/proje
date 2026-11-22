@@ -65,14 +65,15 @@ def check(receipt_name, name, args, cwd, marker):
 
 
 def main(package_path, review_path, scope='samsun-reply', event_id='0404-samsun-soz-event',
-         relation_id='0404-samsun-soz-iliski-id', absent_dispute='0404-samsun-soz-dispute'):
+         relation_id='0404-samsun-soz-iliski-id', absent_dispute='0404-samsun-soz-dispute',
+         *, expected_party='yeni-parti', namespace='gsd-0404'):
     job = os.environ['SLURM_JOB_ID']
     receipt_name = f'{scope}-{job}'
     baseline = canonical_identity()
     ps, rs, inv = (sha(path) for path in (package_path, review_path, INVENTORY))
     package = json.loads(package_path.read_text())
-    require(package['base_release'] == baseline['release'] and package['party_id'] == 'yeni-parti', 'wrong package base/owner')
-    with tempfile.TemporaryDirectory(prefix=f'gsd-0404-{scope}-') as tmp:
+    require(package['base_release'] == baseline['release'] and package['party_id'] == expected_party, 'wrong package base/owner')
+    with tempfile.TemporaryDirectory(prefix=f'{namespace}-{scope}-') as tmp:
         stage = Path(tmp)
         shutil.copytree(ROOT / 'src', stage / 'src', ignore=ignore)
         shutil.copytree(DATA, stage / 'data', ignore=ignore)
@@ -129,12 +130,13 @@ def main(package_path, review_path, scope='samsun-reply', event_id='0404-samsun-
             require(f'id="{prefix}-practice-{relation_id}"' in report, f'{prefix} relation missing')
         require(canonical_identity()==baseline, 'canonical archive changed')
         require((sha(package_path),sha(review_path),sha(INVENTORY))==(ps,rs,inv), 'draft or inventory changed')
-        artifact = DATA / '.staging' / f'gsd-0404-{receipt_name}'
+        artifact = DATA / '.staging' / f'{namespace}-{receipt_name}'
         shutil.copytree(out, artifact)
         result = {'job':job,'scope':scope,'event':event_id,'relation':relation_id,'absent_dispute':absent_dispute,'package_sha256':ps,'review_sha256':rs,
                   'inventory_sha256':inv,'canonical':baseline,'preview':str(artifact/'releases'/rel.name),
                   'preview_manifest_sha256':sha(rel/'manifest.json'),'staged_source_paths':len(paths)}
         receipt(HERE / f'{receipt_name}.json', json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+        return result
 
 
 if __name__ == '__main__':

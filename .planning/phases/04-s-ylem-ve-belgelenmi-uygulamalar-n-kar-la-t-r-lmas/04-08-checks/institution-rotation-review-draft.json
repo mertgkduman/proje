@@ -1,0 +1,261 @@
+{
+  "practice_source_review": [
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0408-chair-rotation-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0206-yeni-yol-registry-v1\", \"0408-chair-rotation-anka-v1\", \"0408-chair-rotation-urfadasin-v1\", \"0408-chair-rotation-urfagazetesi-v1\"]",
+      "passage_ids": "[\"0206-yeni-yol-chair\", \"0408-chair-rotation-anka-plan\", \"0408-chair-rotation-urfadasin-date\", \"0408-chair-rotation-urfagazetesi-outcome\"]",
+      "inspected_sections": "[\"Akıncı ve Küçük arasındaki genel başkanlık devri\", \"Geleceğe dönük kurul ve görev devri öngörüsü\", \"Küçük’ün devraldığını ve gününü bildirdiği söz\", \"Siyasi Parti Genel Bilgileri tablosu\"]",
+      "supported_claim": "Kurucular Kurulu beklentisi ile Küçük’ün Yönetim Kurulu açıklaması usulün açık kaldığını gösteriyor.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_dispute hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Kurucular Kurulu beklentisi ile Küçük’ün Yönetim Kurulu açıklaması usulün açık kaldığını gösteriyor."
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0408-chair-rotation-dispute",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-anka-v1\", \"0408-chair-rotation-urfadasin-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-anka-plan\", \"0408-chair-rotation-urfadasin-date\"]",
+      "inspected_sections": "[\"Geleceğe dönük kurul ve görev devri öngörüsü\", \"Küçük’ün devraldığını ve gününü bildirdiği söz\"]",
+      "supported_claim": "Kurul adları, iki ayrı gün ve iki ayrı bilgi konumuyla yazıldı.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_dispute.summary_finding_id hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Kurul adları, iki ayrı gün ve iki ayrı bilgi konumuyla yazıldı."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0408-chair-rotation-dispute|0408-chair-rotation-anka-plan|Önceki haber Kurucular Kurulu tarafından seçim yapacağını öngörüyor.|conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-anka-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-anka-plan\"]",
+      "inspected_sections": "[\"Geleceğe dönük kurul ve görev devri öngörüsü\"]",
+      "supported_claim": "Önceki haber Kurucular Kurulu tarafından seçim yapacağını öngörüyor.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_dispute_evidence hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Önceki haber Kurucular Kurulu tarafından seçim yapacağını öngörüyor."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0408-chair-rotation-dispute|0408-chair-rotation-urfadasin-date|Küçük, görevi hangi kurul kararına bağladığını ve bildirdiği günü söylüyor.|support",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-urfadasin-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-urfadasin-date\"]",
+      "inspected_sections": "[\"Küçük’ün devraldığını ve gününü bildirdiği söz\"]",
+      "supported_claim": "Küçük, görevi hangi kurul kararına bağladığını ve bildirdiği günü söylüyor.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_dispute_evidence hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Küçük, görevi hangi kurul kararına bağladığını ve bildirdiği günü söylüyor."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0408-chair-rotation-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0206-yeni-yol-registry-v1\", \"0408-chair-rotation-urfadasin-v1\", \"0408-chair-rotation-urfagazetesi-v1\"]",
+      "passage_ids": "[\"0206-yeni-yol-chair\", \"0408-chair-rotation-urfadasin-date\", \"0408-chair-rotation-urfagazetesi-outcome\"]",
+      "inspected_sections": "[\"Akıncı ve Küçük arasındaki genel başkanlık devri\", \"Küçük’ün devraldığını ve gününü bildirdiği söz\", \"Siyasi Parti Genel Bilgileri tablosu\"]",
+      "supported_claim": "Tarihli yerel haber, yeni genel başkanı adlandırıyor. 13 Ocak devri Küçük’ün kendi açıklaması.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_event hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Tarihli yerel haber, yeni genel başkanı adlandırıyor. 13 Ocak devri Küçük’ün kendi açıklaması."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0408-chair-rotation-event|0206-yeni-yol-chair|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0206-yeni-yol-registry-v1\"]",
+      "passage_ids": "[\"0206-yeni-yol-chair\"]",
+      "inspected_sections": "[\"Siyasi Parti Genel Bilgileri tablosu\"]",
+      "supported_claim": "Erişilen Yargıtay bilgi sayfası İzzettin Küçük’ü genel başkan gösteriyor.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Erişilen Yargıtay bilgi sayfası İzzettin Küçük’ü genel başkan gösteriyor."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0408-chair-rotation-event|0408-chair-rotation-urfadasin-date|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-urfadasin-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-urfadasin-date\"]",
+      "inspected_sections": "[\"Küçük’ün devraldığını ve gününü bildirdiği söz\"]",
+      "supported_claim": "Küçük, 13 Ocak itibarıyla genel başkanlığı devraldığını açıkladı.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Küçük, 13 Ocak itibarıyla genel başkanlığı devraldığını açıkladı."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0408-chair-rotation-event|0408-chair-rotation-urfagazetesi-outcome|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-urfagazetesi-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-urfagazetesi-outcome\"]",
+      "inspected_sections": "[\"Akıncı ve Küçük arasındaki genel başkanlık devri\"]",
+      "supported_claim": "Yerel haber Akıncı’dan Küçük’e genel başkanlık devrini bildirdi.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Yerel haber Akıncı’dan Küçük’e genel başkanlık devrini bildirdi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0408-chair-rotation-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0206-yeni-yol-registry-v1\", \"0408-chair-rotation-babacan-v1\", \"0408-chair-rotation-urfadasin-v1\", \"0408-chair-rotation-urfagazetesi-v1\"]",
+      "passage_ids": "[\"0206-yeni-yol-chair\", \"0408-chair-rotation-babacan-rotation\", \"0408-chair-rotation-urfadasin-date\", \"0408-chair-rotation-urfagazetesi-outcome\"]",
+      "inspected_sections": "[\"Akıncı ve Küçük arasındaki genel başkanlık devri\", \"Küçük’ün devraldığını ve gününü bildirdiği söz\", \"Siyasi Parti Genel Bilgileri tablosu\", \"Yönetim görevlerinin dönüşümüne ilişkin aktarılan doğrudan ifade\"]",
+      "supported_claim": "Dönüşüm beyanı ve bir yıl sonraki bildirilen görev değişimi aynı Yeni Yol parti görevinde.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_relation hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Dönüşüm beyanı ve bir yıl sonraki bildirilen görev değişimi aynı Yeni Yol parti görevinde."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0408-chair-rotation-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-babacan-v1\", \"0408-chair-rotation-urfadasin-v1\", \"0408-chair-rotation-urfagazetesi-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-babacan-rotation\", \"0408-chair-rotation-urfadasin-date\", \"0408-chair-rotation-urfagazetesi-outcome\"]",
+      "inspected_sections": "[\"Akıncı ve Küçük arasındaki genel başkanlık devri\", \"Küçük’ün devraldığını ve gününü bildirdiği söz\", \"Yönetim görevlerinin dönüşümüne ilişkin aktarılan doğrudan ifade\"]",
+      "supported_claim": "Genel başkanlık ve TBMM grup başkanlığı ayrı yetki ve işlem. İlişki birinci göreve ait.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Genel başkanlık ve TBMM grup başkanlığı ayrı yetki ve işlem. İlişki birinci göreve ait."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0408-chair-rotation-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0206-yeni-yol-registry-v1\", \"0408-chair-rotation-urfagazetesi-v1\"]",
+      "passage_ids": "[\"0206-yeni-yol-chair\", \"0408-chair-rotation-urfagazetesi-outcome\"]",
+      "inspected_sections": "[\"Akıncı ve Küçük arasındaki genel başkanlık devri\", \"Siyasi Parti Genel Bilgileri tablosu\"]",
+      "supported_claim": "Yerel haber ve sicil Küçük’ü genel başkan olarak gösteriyor. Sicil başlangıç tarihi vermiyor.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Yerel haber ve sicil Küçük’ü genel başkan olarak gösteriyor. Sicil başlangıç tarihi vermiyor."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0408-chair-rotation-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-babacan-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-babacan-rotation\"]",
+      "inspected_sections": "[\"Yönetim görevlerinin dönüşümüne ilişkin aktarılan doğrudan ifade\"]",
+      "supported_claim": "Beyan, parti yönetim görevlerinin yıllık ve bileşenler arası dönüşümünü öngörüyor.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Beyan, parti yönetim görevlerinin yıllık ve bileşenler arası dönüşümünü öngörüyor."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0408-chair-rotation-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-babacan-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-babacan-rotation\"]",
+      "inspected_sections": "[\"Yönetim görevlerinin dönüşümüne ilişkin aktarılan doğrudan ifade\"]",
+      "supported_claim": "14 Ocak 2025 tarihinde Babacan, Yeni Yol yönetimi için yıllık dönüşümü tarif etti.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_statement hedefinde metin, aktör, gün ve dayanak kapsamı okundu. 14 Ocak 2025 tarihinde Babacan, Yeni Yol yönetimi için yıllık dönüşümü tarif etti."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0408-chair-rotation-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-babacan-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-babacan-rotation\"]",
+      "inspected_sections": "[\"Yönetim görevlerinin dönüşümüne ilişkin aktarılan doğrudan ifade\"]",
+      "supported_claim": "Dönüşümün süresi ve yöntemiyle ilgili kısa alıntı özgün metinle aynı.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Dönüşümün süresi ve yöntemiyle ilgili kısa alıntı özgün metinle aynı."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0408-chair-rotation-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T05:00:36.059737+00:00",
+      "source_version_ids": "[\"0408-chair-rotation-babacan-v1\"]",
+      "passage_ids": "[\"0408-chair-rotation-babacan-rotation\"]",
+      "inspected_sections": "[\"Yönetim görevlerinin dönüşümüne ilişkin aktarılan doğrudan ifade\"]",
+      "supported_claim": "Söz, DEVA Genel Başkanı’na atfedildi ve yönetim görevlerinin dönüşümüne sınırlandı.",
+      "limitations": "İlk dönem başkanlık ve görev devri zinciri. Tüzüğün tam metni, karar aslı ve diğer organlar araştırılıyor.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id hedefinde metin, aktör, gün ve dayanak kapsamı okundu. Söz, DEVA Genel Başkanı’na atfedildi ve yönetim görevlerinin dönüşümüne sınırlandı."
+    }
+  ],
+  "source_review_refs": [
+    {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0408-chair-rotation-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0408-chair-rotation-dispute"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0408-chair-rotation-dispute|0408-chair-rotation-anka-plan|Önceki haber Kurucular Kurulu tarafından seçim yapacağını öngörüyor.|conflict"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0408-chair-rotation-dispute|0408-chair-rotation-urfadasin-date|Küçük, görevi hangi kurul kararına bağladığını ve bildirdiği günü söylüyor.|support"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0408-chair-rotation-event"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0408-chair-rotation-event|0206-yeni-yol-chair|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0408-chair-rotation-event|0408-chair-rotation-urfadasin-date|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0408-chair-rotation-event|0408-chair-rotation-urfagazetesi-outcome|action"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0408-chair-rotation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0408-chair-rotation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0408-chair-rotation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0408-chair-rotation-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0408-chair-rotation-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0408-chair-rotation-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0408-chair-rotation-statement"
+    }
+  ]
+}
