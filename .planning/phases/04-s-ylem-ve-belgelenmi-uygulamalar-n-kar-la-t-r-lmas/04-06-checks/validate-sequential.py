@@ -4,7 +4,7 @@ from pathlib import Path
 
 here=Path(__file__).resolve().parent;root=here.parents[3];job=os.environ['SLURM_JOB_ID']
 spec=importlib.util.spec_from_file_location('dem_tracer_validation',here/'tracer-validation.py');mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
-package=here/'101831-combined-draft.json';review=here/'101831-combined-review-draft.json';live=root/'data/practices/04-dem.json'
+package=here/'101831-dossier-compatible-draft.json';review=here/'101831-combined-review-draft.json';live=root/'data/practices/04-dem.json'
 before=json.loads(live.read_text());candidate=json.loads(package.read_text());canonical=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
 for kind in ('entries','scope_inventory'):
  assert {canonical(x) for x in before[kind]} <= {canonical(x) for x in candidate[kind]},kind
