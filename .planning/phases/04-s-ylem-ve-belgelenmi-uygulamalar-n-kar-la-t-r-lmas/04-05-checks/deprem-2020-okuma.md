@@ -71,3 +71,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 9 Aralık toplantısı PDF indeks 68–72 de okundu: Emniyet Genel Müdür Yardımcısı Erhan Gülveren’in afet müdahale, trafik ve eğitim planları sunumu başlar. Yetkiliye ait mevcut kapasite ve hedef beyanları ayrı tutulur; bunlar TİP girişimi veya hedeflerin gerçekleşmesi olarak sunulmaz. İndeks 73–154 açık.
 
 9 Aralık toplantısı PDF indeks 73–77 de okundu: emniyet yetkilisinin haberleşme, Elâzığ örneği ve sunum sonrası trafik, personel ve yapı güvenliği sorularına yanıtları bulunur. Anlatılan olay ve sayılar ilgili yetkiliye atfedilir; TİP eylemi veya bağımsız doğrulama olarak kaydedilmedi. İndeks 78–154 açık.
+
+9 Aralık toplantısı PDF indeks 78–82 de okundu: Bedri Yaşar ve Kamil Okyay Sındır afet trafiği ve güvenliğini sorar, emniyet yetkilisi cevap verir. Tartışma ve sayısal iddialar sahiplerine aittir; TİP’e atıf veya bağımsız doğrulama yapılmadı. İndeks 83–154 açık.
