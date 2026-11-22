@@ -1,0 +1,19 @@
+import json,sys
+from datetime import datetime,timezone
+from pathlib import Path
+sys.path.insert(0,'src')
+from arsiv import html_source_text
+
+p=Path('.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks');entries=json.loads((p/'group-management-source-draft.json').read_text())['entries'];r={k:[] for k in ('practice_event','practice_event_evidence','practice_evidence_assessment','practice_relation')}
+source='0404-grup-yonetim-ekonomim-p';context='0404-grup-yonetim-ekonomim-context-p';program='0303-epm-grup-tbmm-grup-p2';summary='0303-epm-grup-tbmm-grup-summary';sid='0404-tbmm-grup-charter-statement';ev='0404-tbmm-grup-yonetim-0728-event';fid='0404-tbmm-grup-yonetim-0728-iliski';now=datetime.now(timezone.utc).isoformat(timespec='seconds')
+exact='YENİ Parti, Genel Başkan Özgür Özel&#039;in başkanlığında Türkiye Büyük Millet Meclisi&#039;ndeki ilk kapalı grup toplantısını gerçekleştirdi.';assert exact in html_source_text(Path('/tmp/gsd-0404-grup-ekonomim.html').read_bytes())
+entries.append(dict(kind='passage',values=dict(id=context,version_id='0404-grup-yonetim-ekonomim-v1',exact=exact,prefix=None,suffix=None,article=None,section='TBMM kapalı grup toplantısı',pdf_page_index=None,printed_page=None)))
+entries.append(dict(kind='finding',values=dict(id=fid,party_id='yeni-parti',heading='Söylem ve uygulama',pair_id=fid,text='Kuruluş tüzüğü TBMM grubunun grup iç yönetmeliğine göre grup yönetim kurulunu belirlemesini öngörür. Ekonomim’in 28 Temmuz haberinde TBMM kapalı grup toplantısı ve yönetim kurulundaki beş isim bildirildi. Haber, grup iç yönetmeliğinin bütün usullerine uygunluğu tek başına doğrulamaz.',provenance='summary',epistemic_type='claim')))
+for ref in (program,context,source):entries.append(dict(kind='finding_evidence',values=dict(finding_id=fid,passage_id=ref,role='support')));entries.append(dict(kind='verification',values=dict(finding_id=fid,passage_id=ref,checked_at=now,result='confirmed',reason='Tüzük grup hükmü ile Ekonomim toplantı ve yönetim listesi okundu.')))
+entries.append(dict(kind='review',values=dict(id='review-'+fid,kind='finding',subject_id=fid,reviewer_kind='agent',reviewed_at=now,result='reviewed',reason='Grup yönetimi ile başkanvekilleri ve TBMM Başkanlık Divanı görevleri ayrıldı.')))
+r['practice_event'].append(dict(id=ev,common_event_key='yeni-parti-2026-07-28-tbmm-grup-yonetimi',event_at='2026-07-28',date_precision='day',date_unknown_reason=None,scope_context='TBMM kapalı grup toplantısı',title='TBMM grup yönetim kurulunun belirlenmesi',occurrence_basis='Ekonomim’in 28 Temmuz tarihli toplantı ve yönetim kurulu haberi.'))
+for ref,point in ((context,'TBMM kapalı grup toplantısı'),(source,'Beş grup yönetim kurulu üyesi')):
+    r['practice_event_evidence'].append(dict(event_id=ev,passage_id=ref,supported_point=point,stage='action',concrete_basis='Ekonomim’in 28 Temmuz tarihli haberinin ilgili pasajı.',limitation='Haber belirleme usulünün tüm ayrıntılarını tek başına göstermez.',epistemic_type='claim'))
+    r['practice_evidence_assessment'].append(dict(event_id=ev,passage_id=ref,stage='action',basis_kind='independent_report'))
+r['practice_relation'].append(dict(id=fid+'-id',statement_id=sid,event_id=ev,party_id='yeni-parti',topic_id='tbmm-grup',scope_id=None,comparability_reason='Tüzüğün grup yönetimini belirleme hükmü ile haber verilen grup yönetimi ilişkilidir.',target_finding_id=summary,result_finding_id=None,explanation_finding_id=fid,temporal_context='Kuruluş tüzüğü ve 28 Temmuz tarihli haber birlikte değerlendirilir.',authority_context='TBMM grup yönetimi, grup başkanvekilleri ve Meclis Başkanlık Divanı ayrı görevlerdir.',uncertainty_reason='Grup iç yönetmeliği ve belirlemenin tüm usul ayrıntıları haberde gösterilmiyor.'))
+(p/'group-management-slice-draft.json').write_text(json.dumps(dict(status='draft_unvalidated',requires_statement=sid,entries=entries,practice_records=r),ensure_ascii=False,indent=2)+'\n')
