@@ -376,4 +376,6 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 
 - Aynı görüşmenin normalize metninde 449000–458500 okundu: Özgür Özel, Gürsel Erol ve oturum başkanı arasındaki usul tartışmasının ardından AK Parti adına Mustafa Demir İstanbul'daki yapı güvenliği ve dönüşüm çalışmalarını kendi beyanlarıyla anlatır. Sayısal iddialar bağımsız doğrulanmadı ve TİP'e bağlanmadı. Konum 458500 sonrası açık.
 
+- Aynı görüşmenin normalize metninde 458500–468000 okundu: Demir'in konuşması biter; AK Parti adına Necip Nasır İzmir, dönüşüm ve komisyon finansman önerilerini anlatır. Sayılar, hedefler ve siyasi değerlendirmeler ilgili konuşmacıya atfedildi; öneriler gerçekleşmiş sonuç sayılmadı. Konum 468000 sonrası açık.
+
 - Aynı görüşmenin normalize metninde 411000–420500 okundu: Karasu'nun barınma, dönüşüm ve eğitim önerileri biter; CHP adına Kamil Okyay Sındır, komisyonu ve İzmir'deki proje alanlarına ilişkin bakanlık yanıtlarını anlatmaya başlar. Beyanlar ve aktarılan yanıtlar ilgili kaynak ve aktörlere aittir; TİP sonucu sayılmaz. Konum 420500 sonrası açık.
