@@ -317,3 +317,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 495–499 metin katmanı okundu: Nuhoğlu'nun 11 Temmuz 2021 tarihli ek görüşü 498'de biter, kaynakça 499'da başlar. Görüşteki meslek odaları önerileri ve uygulama eleştirileri kendisine aittir; TİP'e veya doğrulanmış sonuca atfedilmedi. İndeks 500–523 ve görseller açık.
 
 - 2021 raporu indeks 500–504 metin katmanı okundu: kaynakçada resmî yayın, kurum yazıları, akademik yayın ve çevrimiçi bağlantılar listeleniyor. Liste bu kaynakların içeriğinin ayrıca incelendiğini göstermez; İHH bilgi notu kaydı bağımsız sağlık örgütlerinin temsilini kanıtlamaz. İndeks 505–523 ve görseller açık.
+
+- 2021 raporu indeks 505–509 metin katmanı okundu: kaynakçada Sağlık Bakanlığı bilgi notu, AFAD kaynakları ve diğer yayınlar; eklerde 2012–2020 UDAP proje listesi ve 6306 sayılı Kanun değişiklik tablosu yer alır. Resmî sağlık idaresi kaydı bağımsız sağlık örgütünün komisyon sunumu değildir; listeler güncel mevzuat teyidi sayılmaz. İndeks 510–523 ve görseller açık.
