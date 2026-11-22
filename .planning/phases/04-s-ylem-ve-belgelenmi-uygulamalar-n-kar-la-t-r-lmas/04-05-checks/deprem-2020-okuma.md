@@ -269,3 +269,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - 2021 raporu indeks 375–379 metin katmanı okundu: komisyon imar hakları, dönüşümde sosyolojik katılım, belediyelerin rolü ve mevzuat ihtiyaçlarını değerlendiriyor. Komisyon görüşleri uygulama ya da partinin tutumu olarak sunulmadı; indeks 380 ve sonrası açık.
 
 - 2021 raporu indeks 380–384 metin katmanı okundu: afet ve imar kanunlarının dönemsel eksikleri, görev çakışması ve DASK kapsamına ilişkin komisyon değerlendirmeleri var. Bunlar güncel mevzuat, gerçekleşmiş düzenleme veya partinin pozisyonu sayılmadı; indeks 385 ve sonrası açık.
+
+- 2021 raporu indeks 385–389 metin katmanı okundu: mevzuatın uygulanmasındaki komisyon tespitleri, 2020 idari yazı ve eski/yeni afet kurulları anlatılır. Yazı, Baş’ın çağrısına nedensel yanıt olarak gösterilmedi; komisyonun üst kurul önerisi uygulanmış karar sayılmadı. İndeks 390 ve sonrası açık.
