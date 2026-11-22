@@ -357,3 +357,5 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 - Aynı görüşmenin normalize metninde 344500–354000 okundu: Kaşıkçı konuşmasını bitirir, HDP adına Ali Kenanoğlu konuşmaya başlar. Raporun uygulanması hakkındaki eleştiriler Kenanoğlu'na aittir; TİP kaynaklı veya bağımsızca kanıtlanmış sonuç sayılmadı. Konum 354000 sonrası açık.
 
 - Aynı görüşmenin normalize metninde 354000–363500 okundu: Kenanoğlu, önceki raporların uygulanması, imar, afet koordinasyonu ve İzmir ile İstanbul koşulları üzerine kendi beyanlarını sürdürür. Bunlar HDP adına konuşmacıya aittir; tartışmalı iddialar, sayılar ve senaryolar bağımsız doğrulanmış olgu ya da TİP tutumu yapılmadı. Konum 363500 sonrası açık.
+
+- Aynı görüşmenin normalize metninde 363500–373000 okundu: Kenanoğlu'nun bina hasarı, vergi ve meslek odaları değerlendirmeleri biter; HDP adına Muazzez Orhan Işık konuşmaya başlar. İddialar ilgili konuşmacılara aittir, TİP'e veya doğrulanmış kurumsal sonuca atfedilmedi. Konum 373000 sonrası açık.
