@@ -21,3 +21,5 @@ Silopi 62402330 üç kapı ve altı olay/iki alternatif/önceki ihtilaf kontroll
 4 Kasım TBMM ham tutanağından grup konuşmacısı ve karşı çıkış için iki özgün pasaj içeren altı kayıtlık doğrulanmamış taslak `73c6f7f`; henüz canlı çifte dahil edilmedi, sonraki genişletmede renderer 30 ile üç kapı zorunludur.
 
 Yargıtay 2019 ve tarihsiz geçmiş liste PDF’leri 685d3c5 ile gerçek bayt ve satırların görsel doğrulamasıyla saklandı. 2019 YSGP 30.11.2012’yi ve HDP/DBP ayrı satırlarını gösterir; tarihsiz nüshada YEŞİL SOL PARTİ kısa adı vardır, tarihsiz belgeye varsayımsal yürürlük günü atanmamıştır.
+
+Kaynak sırasındaki 170 kesit tam metin okuma kanıtına bağlandı (`5898edc`), ancak 177 kesitin tamamı konuya özgü değerlendirme beklediği için pending durumunda. Önceki başarısız 2/2159 ve 10/1831 indirme denemeleri korunup sonraki başarılı kayıtlar ayrıca eklendi (`dd1060f`). Bir akademik çalışmadaki HDP programı bağlantısının DEM diye adlandırılması, geçerli DEM programı kanıtı değildir (`3380115`).
