@@ -368,4 +368,6 @@ Komisyonun 10, 16 ve 17 Mart 2021 tarihlerindeki 16–18. toplantılarının öz
 
 - Aynı görüşmenin normalize metninde 401500–411000 okundu: Zeybek'in dönüşüm ve finansmana ilişkin beyanı biter, CHP adına Ulaş Karasu konuşmaya başlar. Aktarılan sayılar ve siyasi değerlendirmeler bu kişilerin iddiasıdır; TİP görüşü veya bağımsız kaynakla doğrulanmış sonuç olarak kullanılmadı. Konum 411000 sonrası açık.
 
+- Aynı görüşmenin normalize metninde 420500–430000 okundu: Sındır'ın İzmir depremzedeleri hakkında beyanları biter, CHP adına Gürsel Erol'un Elâzığ hakkında eleştiri ve iddiaları ile Sevda Erdan Kılıç'ın konuşmasının başlangıcı gelir. Siyasi iddialar kişilerine aittir; TİP'e ya da bağımsızca doğrulanmış sonuca atfedilmedi. Konum 430000 sonrası açık.
+
 - Aynı görüşmenin normalize metninde 411000–420500 okundu: Karasu'nun barınma, dönüşüm ve eğitim önerileri biter; CHP adına Kamil Okyay Sındır, komisyonu ve İzmir'deki proje alanlarına ilişkin bakanlık yanıtlarını anlatmaya başlar. Beyanlar ve aktarılan yanıtlar ilgili kaynak ve aktörlere aittir; TİP sonucu sayılmaz. Konum 420500 sonrası açık.
