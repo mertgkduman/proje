@@ -1,0 +1,9 @@
+# Demokrat Parti’nin 2021 ve 2023 kesin hesap kararları
+
+2021 ve 2023 hesaplarına ait Resmî Gazete PDF’lerinin üçer sayfası görsel olarak okundu. 2021 hesabı E.2022/42 K.2024/116, karar 25 Aralık 2024 ve yayım 14 Mart 2025. 2023 hesabı E.2024/69 K.2025/155, karar 25 Aralık 2025 ve yayım 20 Nisan 2026. Her iki kararda Anayasa Mahkemesi, kesin hesabın eldeki bilgi ve belgelere göre doğru, denk ve 2820 sayılı Kanun’a uygun olduğuna oybirliğiyle karar verdi. 2023 kararındaki dönem içi gelir ve gider ile devreden nakit ve borç içeren genel toplamlar ayrı ölçüler. [2021 kararı](https://www.resmigazete.gov.tr/eskiler/2025/03/20250314-15.pdf) [2023 kararı](https://www.resmigazete.gov.tr/eskiler/2026/04/20260420-5.pdf?download=1)
+
+İlk inceleme tarihleri 2021 hesabında 9 Mart 2023, 2023 hesabında 27 Mart 2025. Kesin hesap belgelerinin Sayıştaya gönderimi için kararın tebliğinden itibaren otuz gün istemi ilk incelemede yer alıyor. Haziran sonu tüzük hükmü ile ilk inceleme istemi ayrı. AYM kararları, parti içi ibra, ilk gönderim günleri, Başsavcılığa bildirim ve gönderim günlerindeki tüzük yürürlüğü hakkında araştırmayı kapatmıyor. [Arşiv tüzüğü](dp-charter-archive-reading.md)
+
+İlk 2021 paketi 62474394 işinde reddedildi. İlk sayfanın metin katmanı kontrol karakterleri içeriyor ve doğrulayıcı bu sayfada özgün metinle eşleşmeyen elle pasajı reddetti. Sonraki adayda künyeler iki Resmî Gazete dizininden alındı. Karar pasajları iki PDF’nin metin katmanı boş ikinci ve üçüncü sayfalarına bağlandı. Özgün PDF baytları korundu. [2025 yayım dizini](https://www.resmigazete.gov.tr/eskiler/2025/03/20250314.htm) [2026 yayım dizini](https://www.resmigazete.gov.tr/eskiler/2026/04/20260420.htm)
+
+2020 hesabı E.2021/57 K.2024/73 sayılı başka karardır. Resmî Gazete metni web görünümünde ulaşıldı. Yerel özgün PDF alımı zaman aşımında kaldığı için aday paket dışında izleniyor. [2020 kararı](https://www.resmigazete.gov.tr/eskiler/2025/01/20250110-6.pdf)
