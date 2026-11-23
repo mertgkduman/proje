@@ -28,3 +28,5 @@ Bu metin seçili sayfa okumasıdır; tüm 57 sayfalık tutanak ve 198 sıra say�
 
 - PDF 30: Finansal Kurumlar Birliği adına Mehmet Karakılıç dinleniyor; ardından ara, sonra ikinci oturum açılıyor. Bu, daha önce belgelenen örgüt konuşmalarından ayrı bir temsilci ve katkıdır.
 - PDF 32: Ayten Kordu, İbrahim Akın ve Perihan Koca imzalı 26 Şubat 2025 yazılı önerge 2/2927 teklifinin 1. maddesinin çıkarılmasını ister; başkan önergenin kabul edilmediğini ilan eder. Bu, teklifin bütünü veya isimli oy sonucu değildir. Aynı sayfada farklı imzalı yeşil büyüme ibaresinin yeşil kalkınma olarak değiştirilmesi önergesi kabul edilir; iki önergenin sahibi, içeriği ve sonucu ayrıdır.
+
+- PDF 33–34: İbrahim Akın 2. maddedeki kavramları eleştiriyor. Aynı üç DEM imzacı 2/2927 2. maddenin çıkarılması için ayrı bir yazılı önerge sunuyor; başkan reddedildiğini söylüyor. Ardından başka imzalı ‘net sıfır emisyon hedefine uygun’ ibaresi ekleme önergesi ve madde kabul ediliyor. İki ayrı önerge ve söz konusu madde oylaması birleştirilmez; isimli oy yönü belirtilmiyor.
