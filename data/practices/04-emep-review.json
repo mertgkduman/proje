@@ -574,6 +574,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-ozka-27997-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0410-emep-ozka-27997-detail-v1\", \"0410-emep-ozka-27997-question-v1\"]",
+      "passage_ids": "[\"0410-emep-ozka-27997-detail-date-p\", \"0410-emep-ozka-27997-detail-number-p\", \"0410-emep-ozka-27997-detail-owner-p\", \"0410-emep-ozka-27997-detail-reply-p\", \"0410-emep-ozka-27997-question-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ilk sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-ozka-27997-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-question-13296-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:04:41+00:00",
@@ -2212,6 +2225,71 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0410-emep-ozka-27997-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-ozka-27997-detail-date-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-ozka-27997-event|0410-emep-ozka-27997-detail-date-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-number-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0410-emep-ozka-27997-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-ozka-27997-detail-number-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-ozka-27997-event|0410-emep-ozka-27997-detail-number-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0410-emep-ozka-27997-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-ozka-27997-detail-owner-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-ozka-27997-event|0410-emep-ozka-27997-detail-owner-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0410-emep-ozka-27997-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-ozka-27997-detail-reply-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-ozka-27997-event|0410-emep-ozka-27997-detail-reply-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-question-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0410-emep-ozka-27997-question-v1\"]",
+      "passage_ids": "[\"0410-emep-ozka-27997-question-p\"]",
+      "inspected_sections": "[\"İmzalı yazılı soru, ilk sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-ozka-27997-event|0410-emep-ozka-27997-question-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-question-13296-event|0410-emep-question-13296-answer-region-p|result",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:04:41+00:00",
@@ -3239,6 +3317,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-ozka-27997-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-ozka-27997-detail-v1\", \"0410-emep-ozka-27997-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-ozka-27997-detail-date-p\", \"0410-emep-ozka-27997-detail-number-p\", \"0410-emep-ozka-27997-detail-owner-p\", \"0410-emep-ozka-27997-detail-reply-p\", \"0410-emep-ozka-27997-question-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ilk sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-ozka-27997-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-question-13296-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:04:41+00:00",
@@ -3964,6 +4055,19 @@
       "limitations": "Çağrının günü ve santralda sonuç açık; haber içindeki zarar iddiaları ayrıca doğrulanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-nuclear-baskavak-2021-relation için ilgili program ve gazete haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-ozka-27997-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-ozka-27997-detail-v1\", \"0410-emep-ozka-27997-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-ozka-27997-detail-date-p\", \"0410-emep-ozka-27997-detail-number-p\", \"0410-emep-ozka-27997-detail-owner-p\", \"0410-emep-ozka-27997-detail-reply-p\", \"0410-emep-ozka-27997-question-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ilk sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-ozka-27997-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -4900,6 +5004,19 @@
       "limitations": "Çağrının günü ve santralda sonuç açık; haber içindeki zarar iddiaları ayrıca doğrulanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-nuclear-baskavak-2021-relation için ilgili program ve gazete haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-ozka-27997-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:31:29+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-ozka-27997-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -6186,6 +6303,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-ozka-27997-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-question-13296-event"
     },
     {
@@ -6690,6 +6811,26 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-number-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-question-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-question-13296-event|0410-emep-question-13296-answer-region-p|result"
     },
     {
@@ -7006,6 +7147,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-ozka-27997-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-question-13296-relation"
     },
     {
@@ -7230,6 +7375,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-ozka-27997-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-question-13296-relation"
     },
     {
@@ -7515,6 +7664,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-nuclear-baskavak-2021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-ozka-27997-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
