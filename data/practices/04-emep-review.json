@@ -561,6 +561,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-sik-makas-meclis-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:30:44+00:00",
+      "source_version_ids": "[\"0410-emep-sik-makas-party-v1\"]",
+      "passage_ids": "[\"0410-emep-sik-makas-party-full-p\"]",
+      "inspected_sections": "[\"TBMM basın toplantısı\"]",
+      "supported_claim": "Program ve toplantı yayını pasajları incelendi.",
+      "limitations": "Yayın tarihi kesin toplantı günü değildir; işçi taleplerinin sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-sik-makas-meclis-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-tpi-26431-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T04:19:30+00:00",
@@ -2095,6 +2108,19 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-sik-makas-meclis-event|0410-emep-sik-makas-party-full-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:30:44+00:00",
+      "source_version_ids": "[\"0410-emep-sik-makas-party-v1\"]",
+      "passage_ids": "[\"0410-emep-sik-makas-party-full-p\"]",
+      "inspected_sections": "[\"TBMM basın toplantısı\"]",
+      "supported_claim": "Program ve toplantı yayını pasajları incelendi.",
+      "limitations": "Yayın tarihi kesin toplantı günü değildir; işçi taleplerinin sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-sik-makas-meclis-event|0410-emep-sik-makas-party-full-p|initiative için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-tpi-26431-event|0410-emep-question-26431-register-date-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T04:19:30+00:00",
@@ -2836,6 +2862,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-sik-makas-meclis-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:30:44+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-sik-makas-anka-v1\", \"0410-emep-sik-makas-party-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-sik-makas-anka-meeting-p\", \"0410-emep-sik-makas-party-demand-p\", \"0410-emep-sik-makas-party-full-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"TBMM basın toplantısı\"]",
+      "supported_claim": "Program ve toplantı yayını pasajları incelendi.",
+      "limitations": "Yayın tarihi kesin toplantı günü değildir; işçi taleplerinin sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-sik-makas-meclis-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-tpi-26431-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T04:19:30+00:00",
@@ -3470,6 +3509,19 @@
       "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-seasonal-733034-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-sik-makas-meclis-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:30:44+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-sik-makas-anka-v1\", \"0410-emep-sik-makas-party-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-sik-makas-anka-meeting-p\", \"0410-emep-sik-makas-party-demand-p\", \"0410-emep-sik-makas-party-full-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"TBMM basın toplantısı\"]",
+      "supported_claim": "Program ve toplantı yayını pasajları incelendi.",
+      "limitations": "Yayın tarihi kesin toplantı günü değildir; işçi taleplerinin sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-sik-makas-meclis-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -4315,6 +4367,19 @@
       "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-seasonal-733034-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-sik-makas-meclis-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:30:44+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ve toplantı yayını pasajları incelendi.",
+      "limitations": "Yayın tarihi kesin toplantı günü değildir; işçi taleplerinin sonucu gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-sik-makas-meclis-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -5519,6 +5584,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-sik-makas-meclis-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-tpi-26431-event"
     },
     {
@@ -5991,6 +6060,10 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-sik-makas-meclis-event|0410-emep-sik-makas-party-full-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-tpi-26431-event|0410-emep-question-26431-register-date-p|action"
     },
     {
@@ -6219,6 +6292,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-sik-makas-meclis-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-tpi-26431-relation"
     },
     {
@@ -6415,6 +6492,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-sik-makas-meclis-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-tpi-26431-relation"
     },
     {
@@ -6672,6 +6753,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-seasonal-733034-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-sik-makas-meclis-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
