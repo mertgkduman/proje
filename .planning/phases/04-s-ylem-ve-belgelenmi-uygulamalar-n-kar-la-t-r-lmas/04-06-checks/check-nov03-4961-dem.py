@@ -11,6 +11,9 @@ assert hashlib.sha256(r.read_bytes()).hexdigest() == '4b757c1210852cace464e8fa98
 payload, review = json.loads(p.read_text()), json.loads(r.read_text())
 data = dict(payload['practice_records'])
 for x in payload['entries']: data.setdefault(x['kind'], []).append(x['values'])
+for kind in ('practice_event','practice_candidate','practice_attempt_v2','document','document_version','passage','practice_scope_source'):
+    keys = [(x['scope_id'],x['version_id']) if kind == 'practice_scope_source' else x['id'] for x in data.get(kind,[])]
+    assert len(keys) == len(set(keys)), kind
 prefix = '0406-nov03-4961-'
 names = ('practice_event', 'practice_event_evidence', 'practice_contribution', 'practice_candidate')
 sel = {k:[x for x in data.get(k, []) if str(x.get('id', x.get('event_id', ''))).startswith(prefix)] for k in names}
