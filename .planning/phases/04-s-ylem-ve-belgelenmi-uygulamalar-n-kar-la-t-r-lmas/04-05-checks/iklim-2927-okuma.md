@@ -324,3 +324,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 840–844 metni: Behiç Çelik İYİ Parti şerhinde su, tarım ve iklim değerlendirmeleri/uzman atıfları okunmuştur. 839 Paris taraflığı öncesi ifade içerir, sonraki onay durumu yerine kullanılmadı. Rakamlar ve siyasi eleştiriler şerhe atfedilir; TİP görüşü değildir. Sonraki 845; metin taraması 845/860, görseller ve 15 indeks açık.
 
 - PDF indeks 845–849 metni: Behiç Çelik İYİ Parti şerhinde su yönetimi, orman ve afet/göç senaryoları okundu; siyasi yorum, gözlem ve spekülatif öngörüler imzacıya aittir, bağımsız olgu veya TİP görüşü sayılmadı. Sonraki 850; metin taraması 850/860, görseller ve 10 indeks açık.
+
+- PDF indeks 850–854 metni: Behiç Çelik şerhi 851 imza ile biter; 852–854 kaynakça okunmuştur. 853 yerel bilgisayar yolu erişilebilir kaynak değildir; 854 aynı dosya adına sahip ipa.gov.tr URL listeler ama dosya içeriği ve eşleşmesi doğrulanmadı. Sonraki 855; metin taraması 855/860, görseller ve 5 indeks açık.
