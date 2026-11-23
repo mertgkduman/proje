@@ -41,3 +41,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 144000–155999 okundu (13/16): eğitim, sağlık ve gençlik hakları ile ücretsiz staja ilişkin eleştiriler. Ücretsiz staj eleştirisi 2026 staj sigortası gündemiyle konu yakınlığı taşır; sigorta/prim düzenlemesine ilişkin özdeş öncül veya uygulama kanıtı sayılmaz.
 
 2012 birincil metin 156000–167999 okundu (14/16): gençlerin katılımı, çocuk hakları ve kültür-sanat politikaları. Çocuk Hakları Sözleşmesi’nin Resmî Gazete yayım yılına ilişkin 1990 ifadesi kaynak iddiasıdır; özgün resmî yayın ve yürürlük tarihleri ayrıca doğrulanmadan benimsenmez.
+
+2012 birincil metin 168000–179999 okundu (15/16): hayvan hakları, bilgiye erişim ve kişisel veriler, fikri mülkiyet ve spor alanlarındaki görüş ve öneriler. Siyasi görüşler kaynak sahibine atıflıdır ve sonraki dönem gerçekleşmiş işlem olarak sunulmaz.
