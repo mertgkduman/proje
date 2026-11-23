@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 143 | 141 | 62489303 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 35 | 9 | 62486414 |
+| DEM Parti | 39 | 9 | 62488925 |
 | İYİ Parti | 15 | 10 | 62489274 |
 | Yeni Yol | 17 | 11 | 62489275 |
 | DBP | 29 | 7 | 62489251 |
-| EMEP | 53 | 55 | 62486487 |
+| EMEP | 54 | 56 | 62487027 |
 | Saadet Partisi | 14 | 12 | 62489362 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
@@ -149,3 +149,9 @@ Kocasinan kongresinin oluş dayanağı alanındaki Yıldırım kaynak adları, b
 Yeni Parti Grubu adına Aşkın Genç’in 8/153 ön görüşme talebine verdiği sözlü destek iki görünümde doğrulandı. Birleşim başkanının ön görüşme ret kararı ile esas dosyanın «Gündemde» kaydı ayrı. [Doğrulama makbuzu](nov03-genelgorusme-yeniparti-v3-62489303-complete.json)
 
 8/153’in 3 Kasım ön görüşme gündeminde Hasan Toktaş’ın İYİ Parti Grubu adına desteği ve Sadullah Kısacık’ın Yeni Yol Grubu adına ödeme ve şeffaflık çağrısı, iki çalışma paketinde ve iki HTML görünümünde doğrulandı. İmzalı dosya, tutanak ve TBMM sicilindeki «Gündemde» kaydı birlikte okundu. [İYİ Parti makbuzu](../04-07-checks/nov03-genelgorusme-v2-62489274.json) [Yeni Yol makbuzu](../04-08-checks/nov03-genelgorusme-v2-62489275.json)
+
+DEM Parti’nin 4114 sayılı rapordaki 14–17. madde çıkarma önergelerinin dört ayrı ret kaydı iki görünümde doğrulandı. 2012 parti programı arşiv yakalamasının metin gövdesi okundu. Yakalama zamanı, ilk yayım tarihi ve bugünkü yürürlük ayrı tutuldu. [Dört önergenin devam kaydı](../04-06-checks/devam-notu.md)
+
+EMEP’in Erlau 7/28709 yazılı sorusu ve Bakanlık cevabı iki görünümde doğrulandı. Genel mevzuat ve başvuru yolları hakkında cevap verildi. İşyerine ait inceleme ve fiilî sonuç açık. [Makbuz](../04-10-checks/erlau-28709-62487027-receipt.json)
+
+Yeni Parti, İYİ Parti ve Yeni Yol çalışma paketlerindeki 8/153 olay alanları ve ham tutanak özeti birebir eşleşti. Kendi grup katkıları ve kaynak pasajları ayrı. Dokuz kaynak kökünde aynı arşiv yolunu kullanan 199 dosyanın 576 kopyasında özgün bayt farkı bulunmadı. [Ortak olay denetimi](wave4-common-event-audit-05.json) [Arşiv yolu denetimi](wave4-source-paths-audit-02.json)
