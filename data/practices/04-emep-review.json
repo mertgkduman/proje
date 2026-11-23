@@ -223,6 +223,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-health-27371-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0410-emep-question-27371-notice-v1\", \"0410-emep-question-27371-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-notice-listing-p\", \"0410-emep-question-27371-notice-reply-p\", \"0410-emep-question-27371-register-date-p\", \"0410-emep-question-27371-register-owner-p\", \"0410-emep-question-27371-register-topic-p\"]",
+      "inspected_sections": "[\"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Süre içi yanıtsızlık ilan tarihi\", \"Süresinde cevaplanmayan soru ilanı\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-health-27371-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-izmit-2020-congress-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:20:00+00:00",
@@ -1052,6 +1065,71 @@
       "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-gebze-2026-congress-event|0410-emep-gebze-2026-plan-p|initiative için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-notice-listing-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0410-emep-question-27371-notice-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-notice-listing-p\"]",
+      "inspected_sections": "[\"Süresinde cevaplanmayan soru ilanı\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-health-27371-event|0410-emep-question-27371-notice-listing-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-notice-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0410-emep-question-27371-notice-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-notice-reply-p\"]",
+      "inspected_sections": "[\"Süre içi yanıtsızlık ilan tarihi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-health-27371-event|0410-emep-question-27371-notice-reply-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-register-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0410-emep-question-27371-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-register-date-p\"]",
+      "inspected_sections": "[\"Soru geliş tarihi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-health-27371-event|0410-emep-question-27371-register-date-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-register-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0410-emep-question-27371-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-register-owner-p\"]",
+      "inspected_sections": "[\"Soru sahibi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-health-27371-event|0410-emep-question-27371-register-owner-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-register-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0410-emep-question-27371-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-register-topic-p\"]",
+      "inspected_sections": "[\"Soru özeti\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-health-27371-event|0410-emep-question-27371-register-topic-p|action için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2043,6 +2121,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-health-27371-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-27371-notice-v1\", \"0410-emep-question-27371-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-notice-listing-p\", \"0410-emep-question-27371-notice-reply-p\", \"0410-emep-question-27371-register-date-p\", \"0410-emep-question-27371-register-owner-p\", \"0410-emep-question-27371-register-topic-p\", \"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\", \"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Süre içi yanıtsızlık ilan tarihi\", \"Süresinde cevaplanmayan soru ilanı\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-health-27371-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-izmit-2020-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:20:00+00:00",
@@ -2560,6 +2651,19 @@
       "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-gebze-2026-congress-relation için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-health-27371-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-27371-notice-v1\", \"0410-emep-question-27371-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-27371-notice-listing-p\", \"0410-emep-question-27371-notice-reply-p\", \"0410-emep-question-27371-register-date-p\", \"0410-emep-question-27371-register-owner-p\", \"0410-emep-question-27371-register-topic-p\", \"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\", \"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Süre içi yanıtsızlık ilan tarihi\", \"Süresinde cevaplanmayan soru ilanı\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-health-27371-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -3249,6 +3353,19 @@
       "limitations": "Haberde seçim sonucu yok; kaynak metinleri örtüşür, tüzüğün 2026 yürürlüğü ayrıca kanıtlanmadı.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-gebze-2026-congress-relation için tüzük ve ilgili yayın pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-health-27371-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:43:55+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0410-emep-safety-program-p\"]",
+      "inspected_sections": "[\"Program G/C/b\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve süre içi yanıtsızlık ilanı iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-health-27371-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -4557,6 +4674,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-health-27371-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-izmit-2020-congress-event"
     },
     {
@@ -4810,6 +4931,26 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-gebze-2026-congress-event|0410-emep-gebze-2026-plan-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-notice-listing-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-notice-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-register-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-register-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-health-27371-event|0410-emep-question-27371-register-topic-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -5117,6 +5258,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-health-27371-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-izmit-2020-congress-relation"
     },
     {
@@ -5277,6 +5422,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-health-27371-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-izmit-2020-congress-relation"
     },
     {
@@ -5486,6 +5635,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-gebze-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-health-27371-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
