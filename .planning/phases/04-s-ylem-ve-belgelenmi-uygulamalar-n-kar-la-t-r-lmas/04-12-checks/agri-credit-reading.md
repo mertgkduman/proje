@@ -1,0 +1,11 @@
+# Demokrat Parti tarım kredisi ve destek teklifleri
+
+2/3485’in beş PDF sayfası, kapak ve kaşe görselleri ile gerekçe ve teklif metninin metin katmanı üzerinden incelendi. İlk başvuru 20 Ocak 2026. Esas Plan ve Bütçe ile tali Tarım, Orman ve Köyişleri komisyonlarına giriş 21 Ocak. İkinci madde belirli üreticiler için borcu yoktur belgesini kaldırmayı, üçüncü madde faizsiz uzun vadeli yeniden yapılandırmayı ve dördüncü madde afet desteğiyle zarar tespitini öneriyor. 23 Kasım erişiminde sicilin durumu Komisyonda. Gerekçedeki 1 Ocak atfı teklif sahibinin açıklaması olarak kalıyor.
+
+Ardahan İl Tarım ve Orman Müdürlüğünün 17 Şubat yayınında başlık 15 Şubat Resmî Gazete kararına atıf yapıyor. İl duyurusunun tamamı okundu. Belge süresi 15 gün. Belirli borçlar için duyurulan mahsup azami yüzde 25 ve yılda en çok 300.000 TL. Yıl sonuna kadar açıklanan 400.000 TL istisnası temel bitkisel ve hayvansal üretimde aynî krediye bağlı. Resmî Gazete 20260215-1 PDF’sine doğrudan erişim zaman aşımına uğradı. İl duyurusu ile 2/3485 arasında nedensel bağ veya bireysel sonuç doğrulanmadı.
+
+2/3970’in tamamı beş özgün sayfadan görsel okundu. İmza 21 Ekim, TBMM evrak kaşesi 22 Ekim, komisyon işlem kutusu 23 Ekim. 23 Ekim 16 numaralı Gelen Kâğıtlar sevki ayrıca listeliyor. Madde 1 tarımsal destek ödeneği için GSYİH’nin yüzde biri ve en az yüzde 50 ekim veya dikim öncesi avans öneriyor. Madde 2 motorin ve gübreye KDV ve ÖTV istisnası ile destek ödemelerine haciz ve bloke koruması öneriyor. 18 Nisan 2006 kabul metnindeki 21. madde eşiği gayrisafi millî hasıla üzerinden ifade ediyor. Dönemsel kanun tadilleri, 23 Kasım sonunda görülen Komisyonda durumu ve fiilî bütçe ödemesi ayrı kayıt uçları.
+
+Demokrat Parti programının 29 Aralık 2021 tarihli arşiv nüshasında tarımsal kalkınma bölümü PDF indeks 36–39, basılı 43–46. 37. indeksteki Ziraat Bankası, sermaye yönetimi ve teşvik kaynağı pasajları karşılaştırmada kullanıldı. Arşiv tarihi, programın kabul günü ve 2026’daki yürürlüğü ayrı. Yeni Parti imzalı 2/4071 keşif sırasında doğrulandı. Kapaktaki Kasım 2026 tarihi yöntem kesiminden sonra olduğu için bu kayıtlara eklenmedi.
+
+Seçili arşiv pasajları, program ve sicille üç ayrı olay ve üç ilişki oluşturuldu. 42 yeni kaynak inceleme hedefi anlamsal kontrolden geçti. Kapsam kapanışı sıfır.
