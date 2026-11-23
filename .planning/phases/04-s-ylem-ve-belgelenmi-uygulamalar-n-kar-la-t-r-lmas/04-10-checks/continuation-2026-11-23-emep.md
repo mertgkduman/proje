@@ -20,3 +20,10 @@ Loglar ilgili `*-union-<job>.log`, önizleme `data/.staging/gsd-0410-<namespace>
 62466343 COMPLETED 0:0; 41 olay / 43 ilişki exact 8bf0762653fc2e12cbf636b60cd815d5170d09ba58933515a80bef620b538f1f / 04190a9449722c9fd62aa52850d1d07fef97bcd54bf0849ebfd106073f4ef94e, SQL/JSON/iki HTML ve monotonluk ile doğrulanıp 6722b027 canlıya alındı. Makbuz tpi-26431-62466343-receipt.json; canonical değişmedi, 610 hücre açık. 62469452 Gaziantep çalışıyor, 62472618 Malatya ve 62473858 Kırşehir afterok bekliyor; exact çiftler ve komut yukarıdaki önceki kayıtta. Terminal başarı, özgün receipt, monotonluk ve SQL/JSON/iki HTML bağımsız doğrulaması olmadan terfi yok.
 
 Parti API 001–025 gerçek gövde aralıkları ve SHA ile okundu, 021–025 sırasıyla 7a30a387, c768b14b, f0589e82, cd00b549, b11fc7a0; 026 sıradaki açık dilim. 11784 NATO zirvesi yasaklarına karşı dava dilekçesini aktarıyor; sonuç ve resmi dosya açık. Temel Conta ve DIGEL yerel anma ve sonraki heyet ziyaretleri ayrı. 11788 kira hesabında 238–194 farkı kaynakta 45 yazıyor; atıf ve uyuşmazlık korunmalı. 470/610 hücrede kaynak bağı = kapsamın bitmesi değil; bütün hücreler açık.
+
+
+### Devam kaydı: Gaziantep 42/44 ve kaynaklar
+
+62469452 COMPLETED 0:0; 42/44 exact 5f8fad1ad0a775d4f29739ad5b3c9e3629370aaba8e12dafeba2cd2d4154752f / cca2bb3e8771c5571c15bd2c5a41a82485e17cf8de58d0fd8c57d8f40103cddd, bağımsız monoton SQL/JSON/iki HTML ve canonical değişmezlik kontrolüyle 0d418f60 canlı. Makbuz gaziantep2026-62469452-receipt.json, preview b24aa51207824c5da6c97c6c0fa94356. 62472618 Malatya aktif, 62473858 Kırşehir afterok bekliyor.
+
+026 gövde okuma 8cdb55b6; sıradaki 027. 95cbd951 10 Haziran NATO yasağı davası için EMEP ve ANKA/Haberler özgün baytları ve pasif view, atıf ve pasajlar; kaynak draft nato-case-source-draft.json. Dilekçe dosyası ve karar açık, KESK/TKP davaları ve daha sonraki yasak ayrı. `0410-expression-statement` programı toplantı/gösteri hakkını da kapsıyor, sonraki 44/46 exact aday üstünde eşsiz olay ve semantik inceleme adayı hazırlanabilir; yayımlanma günü 10 Haziran dava günü olarak tek başına varsayılmamalı. 610 hücre ve tüm kapsamlar açık.
