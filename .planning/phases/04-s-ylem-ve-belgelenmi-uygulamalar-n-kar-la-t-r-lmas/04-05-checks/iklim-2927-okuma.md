@@ -288,3 +288,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 750–754 metni: CHP üyelerinin orman envanteri, yangın personeli ve tahsis konulu şerh ve kurumlara atıfları okundu; rakamlar ve eleştiriler kaynak sahipleriyle sınırlı tutuldu, TİP tutumu veya 2026 durumu sayılmadı. Sonraki 755; metin taraması 755/860, görseller ve 105 indeks açık.
 
 - PDF indeks 755–759 metni: CHP üyelerinin maden, turizm ve diğer orman tahsisleri, odun üretimi ve plastik atık şerhi okundu. 757 sayısal tablonun görseli görülmedi; üçüncü taraf verileri ve eleştiriler ilgili şerhe/kaynağa aittir, TİP görüşü sayılmadı. Sonraki 760; metin taraması 760/860, görseller ve 100 indeks açık.
+
+- PDF indeks 760–764 metni: CHP üyelerinin atık ticareti, hava ve sağlık konulu şerhi ve Interpol/DSÖ aktarımları okundu; iddialar sahiplerine aittir, TİP görüşü veya bağımsız doğrulanmış bulgu sayılmadı. 762 44.449 tondan 76.867 tona değişimi yüzde 42 der; bu iki sayı yaklaşık yüzde 73 artışa karşılık gelir, asıl veri ve kapsam doğrulanmadı. Sonraki 765; metin taraması 765/860, görseller ve 95 indeks açık.
