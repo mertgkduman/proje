@@ -130,3 +130,5 @@ Bayhan 7/29281 özgün TBMM soru, kayıt ve taranmış bakanlık yanıtı tüm s
 ### Son gerçek okuma ilerlemesi
 
 119, 120, 121 ve 122 gövde dilimleri sırasıyla 0a6d6e08, 6cefd0df, 709496ce ve a4437dae commitlerinde gerçek metin okuma makbuzlarıyla kaydedildi. 122, 8433 gövdesini 3716 karakterde bırakıyor; 123 devamında. 123 yalnız kısmen görüntülendi: çıktı kesildiğinden okunmuş işaretlenmedi. 62486487 23:29 RUNNING, 62487027/62487388/62487943 afterok bekliyor; üstteki exact zincir hâlâ geçerli. Terminal COMPLETED 0:0 ve dört marker olmadan terfi yok. 610 hücre açık.
+
+123–131 gerçek gövde aralıkları ve makbuzlar 62c9d22f, a4d8ac46, ee332baa, 38ea1e14, 0b4e21d9, ddd5d0ec, 599bfab7, 38f0e39b, f8c7766f ile işlendi. 8295 tersane ve 8245 Mitsubishi alınan gövdeleri cümle ortasında bitiyor, yokluğu varsayımla doldurulmadı; 8175 öğrenci kampanyası 132 diliminde sürer. 8187 Çayırhan soru önergesi mevcut olayla eşleştirilmeli. Önceki 123 kısmi notu artık geçersiz; gerçek okuma tamamlandı.
