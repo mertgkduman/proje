@@ -77,3 +77,5 @@ PDF 133–136: gelir/işsizlik verilerine atıflı bölgesel yorumlar, mevsimlik
 PDF 137–140: maden ruhsatları, orman, baraj ve çatışmanın ekonomik maliyeti üzerine şerh anlatımları okundu. Aktif ruhsat sayısı, hedeflenen yeni ruhsat ve fiilî faaliyet farklıdır; 1,5/2/4 trilyon dolar olarak aktarılan dönem ve yöntemleri belirsiz tahminler birbirine eşitlenmedi. 0–140 toplam 141/160, 19 açık.
 
 PDF 141–144: planlanan kurum ödenekleri, Kuzey İrlanda/Bask karşılaştırmaları ve demokratik ekonomi yaklaşımı okunmuştur. Ülkeler arası büyüme ve işsizlik karşılaştırmalarının dönem ve yöntemi dış kaynaklarla doğrulanmadı; 2026 ödenekleri gerçekleşmiş harcamalar değildir. 0–144 toplam 145/160, 15 açık.
+
+PDF 145–148: katılımcı/komünal ekonomi, ekolojik ekonomi ve demokratik toplum yaklaşımları şerhin normatif önerileri olarak okunmuştur; mevcut yönetim veya gerçekleşmiş reform olarak sunulmaz. 0–148 toplam 149/160, 11 açık.
