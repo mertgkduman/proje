@@ -178,3 +178,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 475–479 metni tarandı: kuraklık yönetimi ve DSİ sulama planlaması anlatımı. 477 grafik ve 479 fotoğraf/şekil görsel incelenmedi; kurumsal iddialar TİP işlemi olarak kodlanmadı. 0–479: 480/860 indeks metni veya boşluğu tarandı; görseller ve 380 indeks açık.
 
 2021 raporu indeks 480–484 metni tarandı: toprak nemi, sulama, tarımsal kuraklık eylem planı ve kurum sunumları. 480–481 grafikler ve 484 şema görsel incelenmedi; deney veya kurumların atıflı açıklamaları TİP işlemi olarak aktarılmadı. 0–484: 485/860 indeks metni veya boşluğu tarandı; görseller ve 375 indeks açık.
+
+2021 raporu indeks 485–489 metni tarandı: tarımsal kuraklık planı ve kurumların çeşit geliştirme anlatımları, kurak bölge ormancılığı önerileri. Raporun yöntem ve önerileri kendi bağlamında tutuldu; TİP faaliyeti olarak kaydedilmedi. 0–489: 490/860 indeks metni veya boşluğu tarandı; görseller ve 370 indeks açık.
