@@ -49,3 +49,5 @@ PDF 74–77: kadınların ve esnafın borçluluğu, tarım kredileri, kamu faizi
 PDF 78–81: kadınların bakım emeği, istihdam, işyerinde şiddet ve mevsimlik tarım deneyimleri ele alınıyor; Kadın Meclisi ve araştırma raporlarına atıflar ayrı araştırma uçlarıdır. PDF 79’da toplam kadın istihdamı 10.855 bin, ardından iki tam zamanlı alt grup 6.557+2.122=8.679 bin veriliyor; yüzdelerin paydası tüm istihdamla eşitlenmez. Metindeki erkek sayılarının birimi ve bütün veri kaynakları ayrıca incelenmelidir. 0–81 ve 115–117 toplam 85/160, 75 açık.
 
 PDF 82–85: kadın yoksulluğu ve bakım hizmetlerine ilişkin önerilerden kırsal yoksulluk ve mevsimlik emek anlatımına geçiliyor. İddialar ve görüşler şerhe, sahadan aktarılan sözler şerhte belirtilen kaynaklarına aittir; Dünya Bankası, OECD, TÜİK ve oda verileri ayrıca incelenmedi. 0–85 ve 115–117 toplam 89/160, 71 açık.
+
+PDF 86–89: kırsal ve kadın yoksulluğu, çocukların beslenmesi ve mesleki eğitimde güvenlik hakkındaki şerh görüş ve atıfları okundu. Eurostat/İSİG verileri ayrı tanım ve tarihlerle atfedilir; stajda güvenlik vurgusu emeklilik başlangıcına ilişkin özel vaade dönüştürülmez. 0–89 ve 115–117 toplam 93/160, 67 açık.
