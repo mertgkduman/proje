@@ -11,3 +11,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 29–34 ayrıca görsel olarak okundu. Aynı şerhin iklim krizi, fosil yakıtlar, iklim adaleti ve sosyal eşitsizlik hakkındaki değerlendirmeleri sürüyor. İmza ve aidiyet bu sayfalarda da görünmedi; iddialar yazarlarına atfedilmeli, kaynağın hiçbir kısmı TİP görüşü sayılmamalıdır. İmza tespiti için devam sayfaları bekliyor.
 
 İndeks 35–40 görsel olarak okundu: şerhte adil geçiş, çalışanlar ve teklifin eleştirisi sürüyor; 40. indekste CHP adına açık ifade bulunuyor. Önceki sayfaların nihai imzaları görülmediği için kapsamı geriye doğru genellenmedi; TİP pozisyonu atfedilmedi.
+
+İndeks 41–46 görsel okundu: teklifin eleştirisi ile 2021 araştırma komisyonu raporunun tavsiyelerinden aktarım devam ediyor. Sonuncusu bu şerhi veya eski komisyon raporunu TİP önerisi yapmaz; kaynak aidiyeti ve kalan sayfalar açıktır.
