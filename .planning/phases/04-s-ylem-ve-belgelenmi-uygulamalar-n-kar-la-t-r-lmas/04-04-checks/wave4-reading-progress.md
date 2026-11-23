@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 44 | 7 | 62493929 |
 | EMEP | 58 | 60 | 62489834 |
 | Saadet Partisi | 19 | 15 | 62492219 |
-| Demokrat Parti | 20 | 18 | 62493631 |
+| Demokrat Parti | 21 | 19 | 62495141 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -195,3 +195,5 @@ DEM Parti adına Yılmaz Hun’un 10/4314 gündemindeki katkısı iki görünüm
 EMEP’in Betek 7/20147 ve 7/21425 soruları iki ayrı olay ve kendi soru ve yanıt pasajlarıyla pakete alındı. Bakanlık kayıtları işyerine özgü süreç ile bireysel sonuç arasındaki sınırı koruyor. [EMEP makbuzu](../04-10-checks/betek-20147-21425-62489834-receipt.json)
 
 Demokrat Parti sitesinde 257 liste kaydının 34 tam metni okundu. İki kesim sonrası sayfa not edildi ve 221 liste kaydının gövdesi açık. Bağlar 2015 karar defterinin 269 sayfasından 113 farklı sayfa okundu. [Demokrat Parti okuma kaydı](../04-12-checks/party-news-002-reading.json) [Bağlar okuma kaydı](../04-09-checks/baglar-council-2015-reading-008.json)
+
+2/3793 esaslı 7595 oylamasının iki ayrı kesin cetvel sütunu ve ilk ilan uyuşmazlığı iki HTML görünümünde doğrulandı. Haydar Altıntaş maddelere geçişe katılmadı ve teklifin tümüne ret verdi. 18 Ağustos yayımı ile 1. maddede aranan MGK kararının Resmî Gazete yayımı ayrı. [Demokrat Parti makbuzu](../04-12-checks/framework-7595-62495141.json)
