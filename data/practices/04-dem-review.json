@@ -6148,6 +6148,97 @@
       "limitations": "Sözlü destek isimli oy değildir; gündem kararı esas önergenin sonucu değildir.",
       "result": "reviewed",
       "reason": "İlgili sicil, imzalı dosya ve tutanak okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2026-congress-event|0406-2026-congress-dw-result|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:00:42.938427+00:00",
+      "source_version_ids": "[\"0406-2026-congress-dw-v1\"]",
+      "passage_ids": "[\"0406-2026-congress-dw-result\"]",
+      "inspected_sections": "[\"DW haberinde iki başkan ve geçerli oylar\"]",
+      "supported_claim": "DW haberinde iki başkan ve geçerli oylar",
+      "limitations": "Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.",
+      "result": "reviewed",
+      "reason": "Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2026-congress-event|0406-2026-congress-jin-result|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:00:42.938427+00:00",
+      "source_version_ids": "[\"0406-2026-congress-jin-v1\"]",
+      "passage_ids": "[\"0406-2026-congress-jin-result\"]",
+      "inspected_sections": "[\"JINNEWS haberinde kapalı oylama\"]",
+      "supported_claim": "JINNEWS haberinde kapalı oylama",
+      "limitations": "Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.",
+      "result": "reviewed",
+      "reason": "Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2026-congress-event|0406-2026-congress-jin-count|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:00:42.938427+00:00",
+      "source_version_ids": "[\"0406-2026-congress-jin-v1\"]",
+      "passage_ids": "[\"0406-2026-congress-jin-count\"]",
+      "inspected_sections": "[\"JINNEWS haberinde kullanılan ve geçerli oylar\"]",
+      "supported_claim": "JINNEWS haberinde kullanılan ve geçerli oylar",
+      "limitations": "Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.",
+      "result": "reviewed",
+      "reason": "Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0406-2026-congress-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:00:42.938427+00:00",
+      "source_version_ids": "[\"0406-2026-congress-dw-v1\", \"0406-2026-congress-jin-v1\"]",
+      "passage_ids": "[\"0406-2026-congress-dw-result\", \"0406-2026-congress-jin-result\", \"0406-2026-congress-jin-count\"]",
+      "inspected_sections": "[\"DW haberinde iki başkan ve geçerli oylar\", \"JINNEWS haberinde kapalı oylama\", \"JINNEWS haberinde kullanılan ve geçerli oylar\"]",
+      "supported_claim": "2026 kongresi ve seçim sonucu.",
+      "limitations": "Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.",
+      "result": "reviewed",
+      "reason": "Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu."
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0406-2026-congress-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:00:42.938427+00:00",
+      "source_version_ids": "[\"0406-2026-congress-dw-v1\", \"0406-2026-congress-jin-v1\"]",
+      "passage_ids": "[\"0406-2026-congress-dw-result\", \"0406-2026-congress-jin-result\", \"0406-2026-congress-jin-count\"]",
+      "inspected_sections": "[\"DW haberinde iki başkan ve geçerli oylar\", \"JINNEWS haberinde kapalı oylama\", \"JINNEWS haberinde kullanılan ve geçerli oylar\"]",
+      "supported_claim": "Büyük kongre seçimi.",
+      "limitations": "Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.",
+      "result": "reviewed",
+      "reason": "Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu."
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0406-2026-congress-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:00:42.938427+00:00",
+      "source_version_ids": "[\"0406-2026-congress-dw-v1\", \"0406-2026-congress-jin-v1\"]",
+      "passage_ids": "[\"0406-2026-congress-dw-result\", \"0406-2026-congress-jin-result\", \"0406-2026-congress-jin-count\"]",
+      "inspected_sections": "[\"DW haberinde iki başkan ve geçerli oylar\", \"JINNEWS haberinde kapalı oylama\", \"JINNEWS haberinde kullanılan ve geçerli oylar\"]",
+      "supported_claim": "Seçim sonucu ve kaynak sınırı.",
+      "limitations": "Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.",
+      "result": "reviewed",
+      "reason": "Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu."
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0406-2026-congress-candidate",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:00:42.938427+00:00",
+      "source_version_ids": "[\"0406-2026-congress-dw-v1\", \"0406-2026-congress-jin-v1\"]",
+      "passage_ids": "[\"0406-2026-congress-dw-result\", \"0406-2026-congress-jin-result\", \"0406-2026-congress-jin-count\"]",
+      "inspected_sections": "[\"DW haberinde iki başkan ve geçerli oylar\", \"JINNEWS haberinde kapalı oylama\", \"JINNEWS haberinde kullanılan ve geçerli oylar\"]",
+      "supported_claim": "Tüzük dönemsel geçerliliği açık.",
+      "limitations": "Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.",
+      "result": "reviewed",
+      "reason": "Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu."
     }
   ],
   "source_review_refs": [
@@ -8042,6 +8133,34 @@
     {
       "subject_kind": "practice_candidate",
       "subject_id": "0406-dem-teacher-4314-candidate"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2026-congress-event|0406-2026-congress-dw-result|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2026-congress-event|0406-2026-congress-jin-result|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-2026-congress-event|0406-2026-congress-jin-count|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0406-2026-congress-event"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0406-2026-congress-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0406-2026-congress-contribution"
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0406-2026-congress-candidate"
     }
   ]
 }
