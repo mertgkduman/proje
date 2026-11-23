@@ -4,8 +4,8 @@ import json
 import sqlite3
 from datetime import date
 from pathlib import Path
-from uygulama_merge_kayit import (PRACTICE_MERGE_TABLES, materialize_practice_merge,
-                                  validate_practice_merge)
+from uygulama_merge_kayit import (ENTRY_KINDS, PRACTICE_ENTRY_ORDER, PRACTICE_MERGE_TABLES,
+                                  materialize_practice_merge, validate_practice_merge)
 
 PRACTICE_TABLES = {
     'practice_contract': 'version INTEGER PRIMARY KEY, taxonomy_version INTEGER NOT NULL, stage TEXT NOT NULL, method_version INTEGER NOT NULL, inventory_digest TEXT NOT NULL',
@@ -1116,7 +1116,7 @@ def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherit
         added_passages = set()
         for entry in payload['entries']:
             kind, values = entry['kind'], entry['values']
-            if kind not in ('document', 'document_version', 'archive_view', 'passage', 'manual_passage', 'person', 'actor', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing') or not values:
+            if kind not in ENTRY_KINDS or not values:
                 raise ValueError('Uygulama girdi türü geçersiz')
             if payload.get('party_id') is not None and values.get('party_id') is not None and values['party_id'] != payload['party_id']:
                 raise ValueError('Parti paketi başka partinin kaydını ekleyemez')
@@ -1606,7 +1606,7 @@ def _render_practice_preview(payload, out, inventory=None, base_release='current
         if merge_roots_by_entry:
             import copy
             payload = copy.deepcopy(payload)
-            order = {kind: index for index, kind in enumerate(('document', 'document_version', 'archive_view', 'passage', 'manual_passage', 'person', 'actor', 'finding', 'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing'))}
+            order = {kind: index for index, kind in enumerate(PRACTICE_ENTRY_ORDER)}
             payload['entries'].sort(key=lambda item: order[item['kind']])
         _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
         data = arsiv.export_db(work / 'records.sqlite3', release, strict_identity=True, storage_root=preview_root)

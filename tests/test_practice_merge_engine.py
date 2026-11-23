@@ -157,5 +157,33 @@ class MergeEngine(unittest.TestCase):
         d = self.decision(); d['input_digests']['two'] = digest(inputs[1]['raw']); d['decisions'][0]['event_refs'][1]['input_package_sha256'] = digest(inputs[1]['raw'])
         with self.assertRaisesRegex(MergeError, 'entry identity'): self.merge(d, inputs)
 
+    def test_persistence_retains_actor_and_manual_passage_entries(self):
+        from uygulama_merge_kayit import materialize_practice_merge, validate_practice_merge
+
+        item = package('e1', 'p1', 's1')
+        item['source_review_refs'] = []
+        for table in ('practice_source_review', 'practice_source_review_revision'):
+            del item['practice_records'][table]
+        item['entries'].extend([
+            dict(kind='manual_passage', values=dict(passage_id='s1')),
+            dict(kind='person', values=dict(id='person-1')),
+            dict(kind='actor', values=dict(id='actor-1', person_id='person-1')),
+        ])
+        inputs = [dict(identity='one', raw=raw(item))]
+        decisions = raw(dict(version=1, inventory_digest=digest(raw(self.inventory)),
+                             input_digests={'one': digest(inputs[0]['raw'])}, decisions=[]))
+        outcome = merge_packages(self.inventory, inputs, decisions,
+                                 decisions_sha256=digest(decisions), base_records={})
+        data = dict(outcome['payload']['practice_records'])
+        data.update(materialize_practice_merge(self.inventory, inputs, decisions, {}, outcome))
+        data['practice_coverage_contract'] = [dict(inventory_json=raw(self.inventory).decode())]
+        for entry in outcome['payload']['entries']:
+            data.setdefault(entry['kind'], []).append(entry['values'])
+
+        self.assertTrue(validate_practice_merge(data))
+        data['actor'].clear()
+        with self.assertRaisesRegex(ValueError, 'Birleşme girdisi kayıp'):
+            validate_practice_merge(data)
+
 
 if __name__ == '__main__': unittest.main()

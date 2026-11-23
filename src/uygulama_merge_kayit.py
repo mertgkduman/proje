@@ -18,8 +18,10 @@ PRACTICE_MERGE_TABLES = {
 }
 
 ORIGIN_KINDS = ('review_origins', 'review_contract_origins', 'review_ref_origins', 'entry_origins')
-ENTRY_KINDS = frozenset(('document', 'document_version', 'archive_view', 'passage', 'finding',
-                         'finding_evidence', 'verification', 'source_attribution', 'review', 'attempt', 'missing'))
+PRACTICE_ENTRY_ORDER = ('document', 'document_version', 'archive_view', 'passage', 'manual_passage',
+                        'person', 'actor', 'finding', 'finding_evidence', 'verification',
+                        'source_attribution', 'review', 'attempt', 'missing')
+ENTRY_KINDS = frozenset(PRACTICE_ENTRY_ORDER)
 REVIEW_FIELDS = {
     'practice_statement': ('summary_finding_id', 'quote_finding_id'),
     'practice_relation': ('target_finding_id', 'result_finding_id', 'explanation_finding_id'),

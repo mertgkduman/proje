@@ -1,0 +1,15 @@
+test_base_only_event_reference_is_preserved_without_invented_candidate (test_practice_merge_engine.MergeEngine.test_base_only_event_reference_is_preserved_without_invented_candidate) ... ok
+test_distinct_and_unresolved_remain_separate (test_practice_merge_engine.MergeEngine.test_distinct_and_unresolved_remain_separate) ... ok
+test_distinct_colliding_ids_preserve_base_identity (test_practice_merge_engine.MergeEngine.test_distinct_colliding_ids_preserve_base_identity) ... ok
+test_event_evidence_review_history_remaps_without_changing_original (test_practice_merge_engine.MergeEngine.test_event_evidence_review_history_remaps_without_changing_original) ... ok
+test_persistence_retains_actor_and_manual_passage_entries (test_practice_merge_engine.MergeEngine.test_persistence_retains_actor_and_manual_passage_entries) ... ok
+test_rejects_conflicting_entry_identity (test_practice_merge_engine.MergeEngine.test_rejects_conflicting_entry_identity) ... ok
+test_rejects_missing_forged_conflicting_and_field_conflicts (test_practice_merge_engine.MergeEngine.test_rejects_missing_forged_conflicting_and_field_conflicts) ... ok
+test_rejects_rewriting_base_row_and_unknown_event_reference (test_practice_merge_engine.MergeEngine.test_rejects_rewriting_base_row_and_unknown_event_reference) ... ok
+test_same_preserves_every_reference_and_original_readings (test_practice_merge_engine.MergeEngine.test_same_preserves_every_reference_and_original_readings) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.037s
+
+OK
+TESTS_OK count=9
