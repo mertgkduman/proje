@@ -98,3 +98,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 275–279 metni tarandı: bakanlık anlatımları, bitkisel üretim, biyoçeşitlilik ve orman bölümüne giriş. Yetkili açıklamaları TİP faaliyeti olarak kaydedilmedi; tarihsel sayılar bağımsız olarak doğrulanmadı. 0–279: 280/860 indeks metni veya boşluğu tarandı; önceki görseller ve 580 indeks açık.
 
 2021 raporu indeks 280–284 metni tarandı: ormancılık yönetimi, ekolojik bölge sınıflaması, envanter ve etkiler. 281 tablosu ve 282 haritası görsel incelenmedi; tekil tablo değerleri, kurumsal hedefler veya öngörüler TİP faaliyeti olarak kullanılmadı. 0–284: 285/860 indeks metni veya boşluğu tarandı; görseller ve 575 indeks açık.
+
+2021 raporu indeks 285–289 metni tarandı: orman, çölleşme, sulak alan ve ekosistem hizmetleri üzerine atıflı arka plan. 288 tablosu metin çıkarımında yalnız başlık olarak görülüyor; özgün görsel okunmadı. Kurumsal iddialar ve öngörüler TİP uygulaması olarak kullanılmadı. 0–289: 290/860 indeks metni veya boşluğu tarandı; görseller ve 570 indeks açık.
