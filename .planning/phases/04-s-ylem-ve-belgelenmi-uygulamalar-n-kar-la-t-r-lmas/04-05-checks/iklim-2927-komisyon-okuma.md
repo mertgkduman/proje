@@ -7,3 +7,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İlk teklif özgün PDF SHA-256 eae53f78c8b008900ccfdfbe0977178c85ed71bf07c8d05da4d91426aeb5ec58, 42 sayfa; sıfır indeks 0–3 metin katmanı incelendi. 2–3 imza sayfalarında metin bozuk olduğundan kimlik okuması için görüntü gerekir. Kaynaklar pakete alınmadı ve kapsam kapanmadı.
 
 İndeks 28–34 için metin çıkarımı yalnızca sayfa üstbilgisi verdi. İndeks 28 görsel olarak okundu: muhalefet şerhi yasama süreçlerine katılım, hesap verebilirlik ve iktidarın yasama yaklaşımına eleştiri içeriyor; bu sayfada yazar/imza görünmediğinden herhangi bir partiye veya kişiye atfedilmedi. İndeks 29–34 ve devamındaki taranmış şerhler görsel okuma kuyruğundadır.
+
+İndeks 29–34 ayrıca görsel olarak okundu. Aynı şerhin iklim krizi, fosil yakıtlar, iklim adaleti ve sosyal eşitsizlik hakkındaki değerlendirmeleri sürüyor. İmza ve aidiyet bu sayfalarda da görünmedi; iddialar yazarlarına atfedilmeli, kaynağın hiçbir kısmı TİP görüşü sayılmamalıdır. İmza tespiti için devam sayfaları bekliyor.
