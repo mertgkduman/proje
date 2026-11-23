@@ -1,0 +1,3 @@
+# 104. birleşim: iklim gündemi beşinci okuma dilimi
+
+2 Temmuz 2025 tam tutanak SHA 84c36043d410905c0227bc2ed17339ecd2fbc94fe0a58c6d0f40ea5afe57a679 normalize 296000–320000 okundu. İbrahim Akın, George Aslan, Celal Fırat, Mahmut Dindar, Perihan Koca, Sevilay Çelenk imzalı 19. maddenin çıkarılması önergesi üzerindeki Çelenk konuşmasının ardından başkan önergenin reddini bildirdi. Yeni Yol ve İYİ/CHP ayrı 19. madde önergeleri ve maddenin kabulü ayrıca gerçekleşti. 20. madde hakkında dört aynı mahiyette önergenin dördüncü listesinde Mahmut Dindar, İbrahim Akın, George Aslan, Salihe Aydeniz, Kamuran Tanhan, Celal Fırat imzacı; sonuç ve devam 320000 sonrası. Önerge ve üyelerin tüm teklif üzerine kişisel oyları ayrı aşamalar olarak korunur.
