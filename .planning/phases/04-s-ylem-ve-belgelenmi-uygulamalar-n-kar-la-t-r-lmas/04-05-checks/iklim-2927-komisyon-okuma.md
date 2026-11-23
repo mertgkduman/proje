@@ -43,3 +43,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 121–126 çift sütunlu metin katmanından okundu. 125. indekste komisyon sütunu madde 7 yerel planlarına adil geçiş ifadesini ekler; bu aşama nihai Genel Kurul metni veya fiilî uygulamayla eşitlenmedi.
 
 İndeks 127–132 metin katmanından okundu: teklif ve komisyon metinleri karbon ticareti, kurumsal görev ve gelir düzenlemelerini içerir. İki sütun ve yasalaşma aşamaları ayrı tutuldu.
+
+İndeks 133–142 metin katmanından okundu: gelir, idari yaptırımlar, denetim, geçiş ve yürürlük hükümleri teklif ve komisyon sütunlarında yer alır. Böylece bu 143 sayfalık raporun 0–27 ve 115–142 indeksleri metin katmanından, 28–114 indeksleri görsel olarak okunmuştur. Çift sütun atfı için gerektiğinde görsel doğrulama ve ayrı Genel Kurul metni karşılaştırması gerekir; bu durum diğer kaynakların veya 610 kapsam hücresinin tamamlandığı anlamına gelmez.
