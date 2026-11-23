@@ -69,3 +69,5 @@ PDF 114 ve 118–120: alternatif bütçe önerileri gençlik, çocuk, enerji, in
 PDF 121–124: alternatif bütçe için kaynak önerileri, Kürt sorununun ekonomik boyutu ve tarihsel anlatım incelendi. Vergi ve kamulaştırma hedefleri gerçekleşmiş işlem değil; tarihsel yorumlar ve çatışma maliyeti tahminleri şerhe atıflıdır. 0–124 toplam 125/160, 35 açık.
 
 PDF 125–128: bölgesel ekonomik eşitsizliğin tarihsel yorumu ve İBBS bölgelerine ilişkin gösterge tablosu okunmuştur. İllerle İBBS bölgeleri, toplam paylarla kişi başı endeksler ve geniş/dar işsizlik birbirinden ayrıdır; tarihsiz tablo ve kaynak paydaları ayrıca doğrulanmalıdır. 0–128 toplam 129/160, 31 açık.
+
+PDF 129–132: bölgesel sağlık personeli, eğitim ve kamu yatırımına ilişkin tablolar ve siyasi değerlendirmeler okunmuştur. 129–130 tablolarının başlık/satır sırası metin katmanında bozulmuştur; görsel ve tarihli kurumsal kaynakları kontrol edilmeden seri aktarılmaz. Kişi başına toplam hekim ile uzman hekim başına nüfus ayrı göstergelerdir. 0–132 toplam 133/160, 27 açık.
