@@ -1,6 +1,6 @@
 # Dördüncü dalga araştırma durumu
 
-Yeni Parti’nin çalışma çifti 141 olay ve 141 ilişkiye ulaştı. 21 Ekim tarihli 2/3968, üst düzey kamu görevleri sonrasındaki ödemelere ilişkin imzalı teklif ve komisyon kaydıyla doğrulandı. [2/3968 önizleme makbuzu](kamu-3968-62468795.json) 14 Ekim 2026 Plan ve Bütçe Komisyonu tutanağı, birleştirme ve alt komisyon önergelerinin reddini ve 2/3939’un komisyondaki kabulünü ayrı işlemler olarak belgeliyor. [Komisyon önizleme makbuzu](fund-commission-62455124.json) 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
+Yeni Parti’nin çalışma çifti 142 olay ve 141 ilişkiye ulaştı. 21 Ekim tarihli 2/3968, üst düzey kamu görevleri sonrasındaki ödemelere ilişkin imzalı teklif ve komisyon kaydıyla doğrulandı. [2/3968 önizleme makbuzu](kamu-3968-62468795.json) 14 Ekim 2026 Plan ve Bütçe Komisyonu tutanağı, birleştirme ve alt komisyon önergelerinin reddini ve 2/3939’un komisyondaki kabulünü ayrı işlemler olarak belgeliyor. [Komisyon önizleme makbuzu](fund-commission-62455124.json) 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
 
 Resmî parti API’sinin 58 dilimi ve 270 özgün gövdesi okundu. TBMM milletvekili dizinindeki 128 kanun teklifi, 306 Meclis araştırması ve sekiz dilimdeki 1.679 yazılı soru özeti okundu. Ayrıntı kayıtları için 325 alım makbuzunun ve imzalı başvuru veya cevap PDF'leri için 398 alım makbuzunun tamamı HTTP 200 ve özgün baytlarla doğrulandı. Makbuzlar tekrar edilen veya ayrı hedeflenen kayıtlar içerebilir. Seçilen PDF’lerin bağlam okuması sürüyor. 610 konu hücresinde kapanış yok.
 
@@ -8,13 +8,13 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
-| Yeni Parti | 141 | 141 | 62468795 |
+| Yeni Parti | 142 | 141 | 62483765 |
 | TİP | 19 | 18 | 62481718 |
 | DEM Parti | 22 | 9 | 62482438 |
 | İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 12 | 7 | 62481629 |
-| EMEP | 47 | 49 | 62479310 |
+| EMEP | 48 | 50 | 62481218 |
 | Saadet Partisi | 13 | 12 | 62482921 |
 | Demokrat Parti | 17 | 16 | 62478768 |
 
@@ -103,3 +103,7 @@ TİP’in 2/3864 elektrik ve temel hizmet desteği teklifi iki görünümde doğ
 Mehmet Zeki İrmez’in 20 Ekim’de 10/4625 gündemindeki DEM Parti Grup katkısı doğrulandı. Meclis araştırması için yaptığı çağrı sözlü katkı. Esas dosyası ve aynı gün reddedilen ön görüşme işlemi Yeni Yol kaydıyla aynı olaya bağlanabilir. İsimli oy ve önceki aynı kapsamdaki DEM Parti söylemi açık. [Doğrulama makbuzu](../04-06-checks/dem-staj-agenda-v2-62482438.json)
 
 Saadet Partisi’nin Yıldırım 10. Olağan İlçe Kongresi iki görünümde doğrulandı. 27 Eylül ön duyurusu ve aynı gün çıkan haberler kongreyi ve Nuri Keçeli’nin yeniden seçildiğini kaynaklıyor. İmzalı oy sayımı ve uygulanabilir tüzük nüshası araştırmaya açık. [Doğrulama makbuzu](../04-11-checks/yildirim-congress-62482921.json) [Kaynak okuması](../04-11-checks/yildirim-congress-reading.md)
+
+Yeni Parti’nin 7/51599 yazılı sorusu iki görünümde doğrulandı. İmzalı yazı 19 Ekim, TBMM kaydına giriş 20 Ekim ve Gelen Kâğıtlar ilanı 5 Kasım. 7/51538 dosyası ayrı. Yanıt durumunun kesim öncesindeki ilan tarihi araştırmaya açık. [Doğrulama makbuzu](fund-bank-51599-v2-62483765.json)
+
+EMEP’in Şık Makas kaydı iki görünümde doğrulandı. Sevda Karaca’nın toplantı sonrası açıklaması parti ve ANKA kaynaklarına bağlı. Haber günü ile görüşmenin kesin günü ayrı. TİP katkısı ve ortak olay kimliği ayrı kaynak denetiminde. [Doğrulama makbuzu](../04-10-checks/sik-makas-62481218-receipt.json)

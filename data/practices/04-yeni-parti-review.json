@@ -4759,6 +4759,42 @@
     {
       "subject_kind": "practice_contribution.finding_id",
       "subject_id": "0404-yeni-parti-2026-2-3968-contribution"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-group|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-permit|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-risk|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-payments|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-register-filed|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-register-ministry|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-gelen-question|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event"
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-unmatched"
     }
   ],
   "practice_source_review": [
@@ -20231,6 +20267,123 @@
       "limitations": "Belgelendirilen katkı, grup başkanvekili sıfatıyla imzalı teklif sunumuyla sınırlı.",
       "result": "reviewed",
       "reason": "practice_contribution.finding_id hedefinin kaynak, tarih ve iddia sınırları kontrol edildi. Yeni Parti Grup Başkanvekili Gökhan Günaydın’ın 2/3968 sayılı kanun teklifi, belirli kamu yöneticilerine görev sonrası yapılan ödemelerde değişiklik öneriyor."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-group|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-signed-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-signed-group\"]",
+      "inspected_sections": "[\"Grup başlığı ve önerge sayısı\"]",
+      "supported_claim": "19 Ekim tarihli imzalı metin Yeni Parti grup başlığını taşıyor.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin kaynak metni, tarihi ve iddia sınırları okundu. 19 Ekim tarihli imzalı metin Yeni Parti grup başlığını taşıyor."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-permit|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-signed-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-signed-permit\"]",
+      "inspected_sections": "[\"İkinci paragraf, Şubat faaliyet izni ve Resmî Gazete\"]",
+      "supported_claim": "Soru metni 11424 sayılı faaliyet iznini ve 4 Mart yayımını anıyor.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin kaynak metni, tarihi ve iddia sınırları okundu. Soru metni 11424 sayılı faaliyet iznini ve 4 Mart yayımını anıyor."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-risk|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-signed-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-signed-risk\"]",
+      "inspected_sections": "[\"Soru 9, fiilen faaliyete geçme ve risk bildirimleri\"]",
+      "supported_claim": "Soru 9 fiilî faaliyete geçilmesi ve risk bildirim tarihlerini soruyor.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin kaynak metni, tarihi ve iddia sınırları okundu. Soru 9 fiilî faaliyete geçilmesi ve risk bildirim tarihlerini soruyor."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-signed-payments|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-signed-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-signed-payments\"]",
+      "inspected_sections": "[\"Soru 18, aktarılan, tahsil edilen ve ödenen tutarlar\"]",
+      "supported_claim": "Soru 18 beklenen aktarım, tahsil ve ödeme tutarlarını ayrı istiyor.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin kaynak metni, tarihi ve iddia sınırları okundu. Soru 18 beklenen aktarım, tahsil ve ödeme tutarlarını ayrı istiyor."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-register-filed|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-register-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-register-filed\"]",
+      "inspected_sections": "[\"Başkanlığa geliş 20 Ekim\"]",
+      "supported_claim": "TBMM 7/51599’un Başkanlığa geliş gününü 20 Ekim olarak kaydetti.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin kaynak metni, tarihi ve iddia sınırları okundu. TBMM 7/51599’un Başkanlığa geliş gününü 20 Ekim olarak kaydetti."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-register-ministry|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-register-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-register-ministry\"]",
+      "inspected_sections": "[\"Önerge muhatabı\"]",
+      "supported_claim": "Soru Hazine ve Maliye Bakanına yöneltildi.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin kaynak metni, tarihi ve iddia sınırları okundu. Soru Hazine ve Maliye Bakanına yöneltildi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event|0404-bank-51599-gelen-question|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-gelen-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-gelen-question\"]",
+      "inspected_sections": "[\"69. sırada 7/51599 yazılı soru kaydı\"]",
+      "supported_claim": "5 Kasım Gelen Kâğıtları 7/51599’u 69. soru olarak yayımladı.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence hedefinin kaynak metni, tarihi ve iddia sınırları okundu. 5 Kasım Gelen Kâğıtları 7/51599’u 69. soru olarak yayımladı."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-gelen-v1\", \"0404-bank-51599-register-v1\", \"0404-bank-51599-signed-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-gelen-question\", \"0404-bank-51599-register-filed\", \"0404-bank-51599-register-ministry\", \"0404-bank-51599-signed-group\", \"0404-bank-51599-signed-payments\", \"0404-bank-51599-signed-permit\", \"0404-bank-51599-signed-risk\"]",
+      "inspected_sections": "[\"69. sırada 7/51599 yazılı soru kaydı\", \"Başkanlığa geliş 20 Ekim\", \"Grup başlığı ve önerge sayısı\", \"Soru 18, aktarılan, tahsil edilen ve ödenen tutarlar\", \"Soru 9, fiilen faaliyete geçme ve risk bildirimleri\", \"Önerge muhatabı\", \"İkinci paragraf, Şubat faaliyet izni ve Resmî Gazete\"]",
+      "supported_claim": "Mustafa Sezgin Tanrıkulu, 7/51599 ile Hazine ve Maliye Bakanı’na kuruluş ve faaliyet izinlerini, fiilî faaliyete geçişi ve fon yatırımcılarının zararlarına ilişkin finansman ve denetimi sordu.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_event hedefinin kaynak metni, tarihi ve iddia sınırları okundu. Mustafa Sezgin Tanrıkulu, 7/51599 ile Hazine ve Maliye Bakanı’na kuruluş ve faaliyet izinlerini, fiilî faaliyete geçişi ve fon yatırımcılarının zararlarına ilişkin finansman ve denetimi sordu."
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0404-yeni-parti-2026-bank-51599-unmatched",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:48:28.393295+00:00",
+      "source_version_ids": "[\"0404-bank-51599-gelen-v1\", \"0404-bank-51599-register-v1\", \"0404-bank-51599-signed-v1\"]",
+      "passage_ids": "[\"0404-bank-51599-gelen-question\", \"0404-bank-51599-register-filed\", \"0404-bank-51599-register-ministry\", \"0404-bank-51599-signed-group\", \"0404-bank-51599-signed-payments\", \"0404-bank-51599-signed-permit\", \"0404-bank-51599-signed-risk\"]",
+      "inspected_sections": "[\"69. sırada 7/51599 yazılı soru kaydı\", \"Başkanlığa geliş 20 Ekim\", \"Grup başlığı ve önerge sayısı\", \"Soru 18, aktarılan, tahsil edilen ve ödenen tutarlar\", \"Soru 9, fiilen faaliyete geçme ve risk bildirimleri\", \"Önerge muhatabı\", \"İkinci paragraf, Şubat faaliyet izni ve Resmî Gazete\"]",
+      "supported_claim": "7/51538 farklı muhatapla TLY’nin işlemlerini soruyor. 7/51599 banka izinleri ve finansmana odaklanıyor. Bu özel soru için daha erken tarihli karşılaştırılabilir parti söylemi araştırmaya açık.",
+      "limitations": "Soru 19 Ekim tarihli, TBMM’ye geliş 20 Ekim ve Gelen Kâğıtlar yayımı 5 Kasım. Kapsam kesiminde cevaba ve son durum ilanının gününe ilişkin tarihli belge açık. Önerge dört bankanın işlemlerini ve fon ödemelerini soruyor. Sorulardaki iddia ve tutarlar ayrı kaynak gerektiriyor.",
+      "result": "reviewed",
+      "reason": "practice_candidate hedefinin kaynak metni, tarihi ve iddia sınırları okundu. 7/51538 farklı muhatapla TLY’nin işlemlerini soruyor. 7/51599 banka izinleri ve finansmana odaklanıyor. Bu özel soru için daha erken tarihli karşılaştırılabilir parti söylemi araştırmaya açık."
     }
   ]
 }
