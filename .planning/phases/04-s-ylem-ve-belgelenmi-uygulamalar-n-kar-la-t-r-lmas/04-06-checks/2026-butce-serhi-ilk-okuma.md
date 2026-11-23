@@ -73,3 +73,5 @@ PDF 125–128: bölgesel ekonomik eşitsizliğin tarihsel yorumu ve İBBS bölge
 PDF 129–132: bölgesel sağlık personeli, eğitim ve kamu yatırımına ilişkin tablolar ve siyasi değerlendirmeler okunmuştur. 129–130 tablolarının başlık/satır sırası metin katmanında bozulmuştur; görsel ve tarihli kurumsal kaynakları kontrol edilmeden seri aktarılmaz. Kişi başına toplam hekim ile uzman hekim başına nüfus ayrı göstergelerdir. 0–132 toplam 133/160, 27 açık.
 
 PDF 133–136: gelir/işsizlik verilerine atıflı bölgesel yorumlar, mevsimlik emek, yerel kooperatif önerileri ve ekolojik etkiler hakkındaki görüşler okunmuştur. Bölgesel ölçüler, dış kaynaklar ve siyasi nedensellik iddiaları bağımsız doğrulanmamıştır. 0–136 toplam 137/160, 23 açık.
+
+PDF 137–140: maden ruhsatları, orman, baraj ve çatışmanın ekonomik maliyeti üzerine şerh anlatımları okundu. Aktif ruhsat sayısı, hedeflenen yeni ruhsat ve fiilî faaliyet farklıdır; 1,5/2/4 trilyon dolar olarak aktarılan dönem ve yöntemleri belirsiz tahminler birbirine eşitlenmedi. 0–140 toplam 141/160, 19 açık.
