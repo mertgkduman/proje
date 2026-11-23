@@ -136,3 +136,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 370–374 metni tarandı: erozyon kontrolü, ağaçlandırma ve maden sahalarının rehabilitasyonu hakkındaki kurum ve konuşmacı anlatımları. 372 iki tablo yalnız başlık olarak çıktı; görseller incelenmedi. Görüşler ilgili kişilerde ve proje iddiaları ilgili kurumlarda bırakıldı; TİP faaliyeti olarak kodlanmadı. 0–374: 375/860 indeks metni veya boşluğu tarandı; görseller ve 485 indeks açık.
 
 2021 raporu indeks 375–379 metni tarandı: maden rehabilitasyonunda Sayıştay eleştirileri, yangın önleme ve orman yönetimi hakkındaki rapor değerlendirmeleri. 378 tablo ve şekil görseli okunmadı; raporun başarı değerlendirmesi bağımsız doğrulama veya TİP faaliyeti sayılmadı. 0–379: 380/860 indeks metni veya boşluğu tarandı; görseller ve 480 indeks açık.
+
+2021 raporu indeks 380–384 metni tarandı: mera ve tarım yutakları, okyanuslar, kurumların deniz kirliliği anlatımı ve iklim uyum bölümünün girişi. 382 tablo yalnız başlık olarak çıktı ve görsel okunmadı; kamu kurumu açıklamaları TİP uygulaması sayılmadı. 0–384: 385/860 indeks metni veya boşluğu tarandı; görseller ve 475 indeks açık.
