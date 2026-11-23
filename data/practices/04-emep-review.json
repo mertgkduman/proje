@@ -275,6 +275,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-kirsehir-2026-congress-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0410-emep-kirsehir2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kirsehir2026-news-date-p\", \"0410-emep-kirsehir2026-news-p\"]",
+      "inspected_sections": "[\"Kırşehir 4. il kongresi haberi\", \"Kırşehir il kongresi tarihi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-kirsehir-2026-congress-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-kocaeli-2026-congress-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:44:30+00:00",
@@ -1260,6 +1273,45 @@
       "limitations": "Haber günü kesin kongre günü değildir; oy yöntemi ve ara tüzük değişiklikleri bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|result için ilgili tüzük ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0410-emep-kirsehir2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kirsehir2026-news-date-p\"]",
+      "inspected_sections": "[\"Kırşehir il kongresi tarihi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-date-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0410-emep-kirsehir2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kirsehir2026-news-p\"]",
+      "inspected_sections": "[\"Kırşehir 4. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0410-emep-kirsehir2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kirsehir2026-news-p\"]",
+      "inspected_sections": "[\"Kırşehir 4. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-p|result için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2355,6 +2407,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-kirsehir-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-kirsehir2026-news-v1\", \"0410-emep-kirsehir2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-kirsehir2026-news-date-p\", \"0410-emep-kirsehir2026-news-p\", \"0410-emep-kirsehir2026-party-p\", \"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"Kırşehir 4. il kongresi haberi\", \"Kırşehir 4. il kongresi parti yayını\", \"Kırşehir il kongresi tarihi\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-kirsehir-2026-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-kocaeli-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:44:30+00:00",
@@ -2940,6 +3005,19 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-kirsehir-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-kirsehir2026-news-v1\", \"0410-emep-kirsehir2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-kirsehir2026-news-p\", \"0410-emep-kirsehir2026-party-p\", \"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"Kırşehir 4. il kongresi haberi\", \"Kırşehir 4. il kongresi parti yayını\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-kirsehir-2026-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-kocaeli-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:44:30+00:00",
@@ -3343,6 +3421,19 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-kirsehir-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0410-emep-kirsehir2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-kirsehir2026-news-p\"]",
+      "inspected_sections": "[\"Kırşehir 4. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id / 0410-kirsehir-2026-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-kocaeli-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:44:30+00:00",
@@ -3717,6 +3808,19 @@
       "limitations": "Hesapların onaylanması veya sonucu belirtilmiyor.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-izmit-account-relation için önceki ve ek kaynak pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-kirsehir-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:24:26+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-kirsehir-2026-congress-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -5080,6 +5184,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-kirsehir-2026-congress-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-kocaeli-2026-congress-event"
     },
     {
@@ -5381,6 +5489,18 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-izmit-2020-congress-event|0410-emep-izmit-2020-news-result-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-p|result"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -5720,6 +5840,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-kirsehir-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-kocaeli-2026-congress-relation"
     },
     {
@@ -5900,6 +6024,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-kirsehir-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-kocaeli-2026-congress-relation"
     },
     {
@@ -6024,6 +6152,10 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-kirsehir-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-kocaeli-2026-congress-relation"
     },
     {
@@ -6137,6 +6269,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-izmit-account-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-kirsehir-2026-congress-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
