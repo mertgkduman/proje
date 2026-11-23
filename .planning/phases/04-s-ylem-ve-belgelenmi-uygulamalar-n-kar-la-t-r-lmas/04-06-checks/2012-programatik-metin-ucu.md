@@ -33,3 +33,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 96000–107999 okundu (9/16): enerji verimliliği ve yenilenebilir kaynakların yerel katılımla geliştirilmesi, kent planlaması ve gıda/tarım önerileri. Nicel ve tarihsel iddialar kaynak sahibine aittir, gerçekleşme ya da güncel yürürlük olarak benimsenmedi.
 
 2012 birincil metin 108000–119999 okundu (10/16): gıda/su hakları, doğa koruma ve tehlikeli endüstriyel atıklar için bağımsız çevre denetim kuruluşu ile sivil izleme kurulları önerisi. Bu eski genel hedef ile 2025 iklim teklifinin 14–15. madde gerekçeleri arasında konu yakınlığı vardır; tüzel kişilik, dönem, doğrudan kapsam ve güncel yürürlük araştırması tamamlanmadan ilişki kurulmadı.
+
+2012 birincil metin 120000–131999 okundu (11/16): kırsal yaşam, ekonomi, vergi ve emek/sendika hakları. Önceki genel asgari gelir hakkı ifadesi bu bölümde belirli seviyenin altında geliri olan bütün hanelere koşulsuz ve vergilerle finanse edilen gelir olarak somutlaştırılıyor; kapsamı hane ve gelir eşiğiyle sınırlı, bireysel evrensel ödeme ya da 2025 engellilik önergesiyle özdeş değildir.
