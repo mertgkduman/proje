@@ -244,3 +244,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 640–644 metni: finans, enerji altyapısı, ormancılık ve yangın senaryoları hakkındaki komisyon tavsiyeleri 2021 tarihli öneri olarak kaydedildi, gerçekleşmiş sonuç veya TİP görüşü değildir. Çok sütunlu tablolar görsel incelenmedi. Sonraki 645; metin taraması 645/860, görseller ve 215 indeks açık.
 
 - PDF indeks 645–649 metni: orman yangınlarıyla mücadele, personel, risk planlaması, doğal ormanların korunması ve restorasyon hakkında komisyon önerileri tarihli tavsiye olarak korundu; uygulama veya parti tutumu sayılmadı. Çok sütunlu tablolar görsel incelenmedi. Sonraki 650; metin taraması 650/860, görseller ve 210 indeks açık.
+
+- PDF indeks 650–654 metni: orman, erozyon, ormancılık araştırması, eğitim ve endemik türler üzerine komisyon tavsiyeleri tarihli önerilerdir; TİP görüşü ya da uygulama değildir. Tablolar görsel incelenmedi. Sonraki 655; metin taraması 655/860, görseller ve 205 indeks açık.
