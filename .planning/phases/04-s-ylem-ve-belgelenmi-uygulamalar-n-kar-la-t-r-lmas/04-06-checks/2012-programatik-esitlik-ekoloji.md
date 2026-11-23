@@ -5,3 +5,5 @@
 11–12 katılım, çoğulculuk ve yerinden yönetim yaklaşımını sürdürür. 12–16 çevre ve iklim adaleti, su/gıda, fosil yakıtlar ve doğa hakları hakkında tarihsel metnin değerlendirmelerini ve önerilerini içerir. 16–18 eşitlik ve toplumsal adalet başlığına geçer; 18. sayfada herkes için asgari gelir hakkına yönelik tarihsel ifade de vardır.
 
 Bu tarihsel beyan 2026 tarihli DEM görüşmeleriyle olası karşılaştırma için araştırma ucudur; arşiv görüntüsü tek başına DEM dönemindeki benimsenme veya yürürlük tarihini ispatlamaz. Tarihsel parti adı ve yayın bağlamı, 2023/2026 belge statüsü ve tam sayfa görselleri ayrıca doğrulanmalıdır. İddialar olgu veya uygulanmış sonuç gibi sunulmadı.
+
+İndeks 18 ayrıca PDF sayfa görselinden okundu: metin asgari gelir hakkının her vatandaş için sağlanmasını savunuyor. Sayfa yayınının ilk tarihi ve 30 Kasım 2012 sicil gözlemiyle ilişkisi kesinleştirilmeden bu beyan yöntem kapsamındaki tarihli DEM söylemi olarak terfi ettirilmez.
