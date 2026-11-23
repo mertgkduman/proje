@@ -9308,11 +9308,16 @@
       ],
       "topic_id": "parti-ici-seffaflik",
       "research_kind": "event",
-      "source_ids": [],
-      "source_section_ranges": [],
+      "source_ids": [
+        "0410-emep-akcadag2026-party-v1"
+      ],
+      "source_section_ranges": [
+        "Akçadağ ilçe genel kurulunda faaliyet ve mali raporun okunup ibra edilmesi: parti anlatımı; rapor metni veya kamuya erişim kanıtı değildir."
+      ],
       "next_leads": [
         "Envanter kaynak bölümleri incelenecek: ",
-        "Konu, parti ve dönemle ilgili gerçek kaynak araması yapılacak."
+        "Konu, parti ve dönemle ilgili gerçek kaynak araması yapılacak.",
+        "Bağımsız haber, rapor aslı, kongre günü ve içeriğin üyelere/kamuya erişimi araştırılacak; olay ve kapsam açık."
       ],
       "processed_at": null,
       "closure_refs": [],
@@ -15562,6 +15567,18 @@
         ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-reading-queue.json"
       ],
       "note": "33 HTTP200 API sayfası, 3270 ayrı kayıt, 383 metin aralığı. İlk sayfa tekrar SHA eş; date_gmt kontrol edildi. API listesi ve gövdeleri henüz insan okuması sayılmaz; yayın ve güncelleme tarihleri, kesimin aynı saniyesi ayrıca ele alınır."
+    },
+    {
+      "query": "EMEP Akçadağ 11. ilçe genel kurulunda mali rapor ve önceki Malatya il başkanlığı",
+      "query_variants": [
+        "https://www.emep.org/emek-partisi-akcadag-ilce-orgutu-11-olagan-genel-kurulu-yapildi-koylu-isci-uretici-cozum-icin-emepte-bulusmali"
+      ],
+      "searched_at": "2026-11-23T07:13:45.060926+00:00",
+      "results": [
+        ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/akcadag2026-source-draft.json",
+        ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-006-reading.json"
+      ],
+      "note": "Parti aslı 12 Ekim yayını raporun kongrede okunup ibra edildiğini aktarır; raporun metni veya herkese açık olduğu kanıtlanmaz, başkan seçiminden ayrı husus."
     }
   ],
   "candidate_leads": [
