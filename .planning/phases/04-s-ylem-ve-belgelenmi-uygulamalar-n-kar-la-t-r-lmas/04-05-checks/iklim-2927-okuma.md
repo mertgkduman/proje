@@ -236,3 +236,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 620–624 metni: komisyonun su, iklim, biyolojik çeşitlilik, taşkın ve kuraklık için düzenleme ve kurum önerileri okunmuştur; 620 iklim kanunu önerisi geçmiş komisyon önerisidir, TİP önerisi olarak eşleştirilmedi. Çok sütunlu tabloların görüntüsü incelenmedi; kurum-satır eşleştirmesi için görsel gerekli. Sonraki 625; metin taraması 625/860, görseller ve 235 indeks açık.
 
 - PDF indeks 625–629 metni: komisyonun maden alanları, emisyon ticareti, ulaşım ve enerji önerileri tarihli öneri olarak kaydedildi; 629 kömürden çıkış tarihi kararı vermez, politika belirlenmesini önerir. Çok sütunlu tabloların görselleri incelenmedi; satır-kurum ilişkisi görsel doğrulama gerektirir. Sonraki 630; metin taraması 630/860, görseller ve 230 indeks açık.
+
+- PDF indeks 630–634 metni: enerji teknolojileri, madencilik rehabilitasyonu, orman yutakları ve tarıma ilişkin tarihli komisyon önerileri; TİP görüşü ya da gerçekleşmiş mevzuat değil. Çok sütunlu tablolar görsel incelenmedi. Sonraki 635; metin taraması 635/860, görseller ve 225 indeks açık.
