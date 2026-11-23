@@ -268,3 +268,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 700–704 metni: CHP üyelerinin muhalefet şerhindeki komisyon katılımı ve raporlama eleştirileri ile iklim tanımları okundu; bu iddialar imzacılarına aittir ve TİP görüşü veya bağımsız doğrulanmış bilimsel veri olarak sunulmadı. Sonraki 705; metin taraması 705/860, görseller ve 155 indeks açık.
 
 - PDF indeks 705–709 metni: CHP üyelerinin şerhindeki iklim krizi, tarihli MGM verileri ve 2021 yangınlarına dair değerlendirme ve eleştirileri okundu; bu ifadeler TİP tutumu veya bağımsız doğrulanmış olgu diye alınmadı. Sonraki 710; metin taraması 710/860, görseller ve 150 indeks açık.
+
+- PDF indeks 710–714 metni: CHP komisyon üyelerinin iklim ve çevre hakkına dair şerh ve anayasal yorumları okundu, bu yorumlar TİP tutumu ya da bağımsız hukuki doğrulama sayılmadı. Sonraki 715; metin taraması 715/860, görseller ve 145 indeks açık.
