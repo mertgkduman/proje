@@ -12,3 +12,5 @@ Bu metin seçili sayfa okumasıdır; tüm 57 sayfalık tutanak ve 198 sıra say�
 - PDF 8–9: CHP adına Gökan Zeybek teklifin emisyon tahsisatı ve yerel yönetim boyutlarını eleştirirken Perihan Koca konuşmanın kesilmesine usul itirazı yapıyor; Ayten Kordu yerel kayyum atamalarına ilişkin söz alıyor. CHP konuşmasındaki iddialar ve rakamlar CHP’ye, iki kısa müdahale konuşmacılarına atfedilir; DEM grubu adına teklif veya oylama sonucu çıkarılmaz.
 
 - PDF 10–11: İbrahim Akın DEM Parti adına yönteme, sivil toplumun dinlenmesine ve teklifin ticari yönüne ilişkin eleştirilerini aktarıyor; iklim adaleti, enerji politikası ve ekokırım yasası hakkında talepler ileri sürüyor. İddialar konuşmacıya atfedilir; bunlar bağımsız olgu doğrulaması, teklifin nihai sonucu veya sayısal iddiaların kabulü değildir. Konuşma ardından başka bir milletvekiline geçiliyor.
+
+- PDF 12–13: Vecdi Gündoğdu ve ardından Ömer Fethi Gürer iklim düzenlemesi, tarım, adil geçiş ve önceki politikalar üzerine konuşuyor; bu sayfalarda ayrı bir DEM katkısı veya DEM adına oylama kaydı saptanmadı. İleri sürdükleri sayısal veriler ve değerlendirmeler konuşmacılarına aittir.
