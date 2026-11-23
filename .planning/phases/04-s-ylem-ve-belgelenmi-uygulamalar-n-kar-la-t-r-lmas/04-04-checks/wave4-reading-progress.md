@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 15 | 9 | 62463210 |
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 11 | 7 | 62461211 |
-| DBP | 10 | 7 | 62443961 |
+| DBP | 11 | 7 | 62464556 |
 | EMEP | 35 | 37 | 62461273 |
 | Saadet Partisi | 8 | 6 | 62437168 |
 | Demokrat Parti | 10 | 9 | 62452450 |
@@ -37,3 +37,5 @@ Yeni Yol’un 10/4343 ve 7 Ekim fon açıklaması ayrı olaylarla doğrulandı. 
 DEM Parti’nin 7 Ekim fon bilgilendirmesindeki Koçyiğit ve Temelli katkıları doğrulandı. Komisyon çağrısı, 14 Ekim komisyon işlemlerinden ve 22 Ekim kanun oylamasından ayrı bir olay. [DEM makbuzu](../04-06-checks/dem-fund-1007-62460660.json)
 
 İYİ Parti ile DEM Parti’nin 1 Temmuz 10/4343 görüşmelerindeki sözlü desteği ayrı parti katkıları olarak doğrulandı. İYİ Parti’nin 7 Ekim kaydı, 1 Temmuz grup konuşmasıyla ilişkilendirildi. EMEP medya dosyasında parti yayınının yazar atfı özgün üst veriye göre doğrulandı. [İYİ Parti makbuzu](../04-07-checks/fund-july-62463052.json) [DEM makbuzu](../04-06-checks/dem-fund-july-62463210.json) [EMEP makbuzu](../04-10-checks/media-attribution-fixed-union-62461273-receipt.json)
+
+DBP dosyasında Diyarbakır’ın 27 Mayıs 2015 otobüs tanıtımı ve il eş başkanının sözlü katkısı iki görünümde doğrulandı. Düzenli sefer başlangıcı ve önceki parti söylemi açık. DBP yerel yönetim raporunun 67 sayfası okundu. [Önizleme makbuzu](../04-09-checks/diyarbakir-cng-v2-62464556.json) [Rapor okuması](../04-09-checks/dbp-local-administration-report-reading.md)
