@@ -26,3 +26,4 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - 2021 rapor 45–49 indeksleri okundu: 10/1004 sonu, Yasin Uğur ve imzacıların 10/1018 önergesi, Mehmet Ali Çelebi 10/1150 başlangıcı. Bunlar kendilerine ait önerge ve iddialardır; TİP adına aktarılmadı. Toplam 52/860, 808 açık.
 - 2021 rapor 50–54 indeksleri okundu: Mehmet Ali Çelebi 10/1150 gerekçe ve imzaları ile Sevda Erdan Kılıç ve imzacıların 10/1170 önergesi; görüşler önerge sahiplerine ait. Toplam 57/860, 803 açık.
 - 2021 rapor 55–59 indeksleri okundu: Sefer Aycan ve imzacıların 10/1221 önergesi, Murat Bakan ve imzacıların 10/1305 önergesi. Raporlardan aktarılmış senaryolar ilgili önerge bağlamında tutuldu, TİP’e mal edilmedi. Toplam 62/860, 798 açık.
+- 2021 rapor 60–64 indeksleri okundu: Ahmet Akın 10/1434 su kaynakları ile Murat Bakan 10/1518 kuraklık önergelerinin ilgili metin ve imzaları; TİP aktörlerine atfedilmedi. Toplam 67/860, 793 açık.
