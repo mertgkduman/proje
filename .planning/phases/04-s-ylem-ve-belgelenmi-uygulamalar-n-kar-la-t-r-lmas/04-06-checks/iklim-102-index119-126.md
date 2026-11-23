@@ -1,0 +1,3 @@
+# 26 Haziran 2025, 102. birleşim basılı PDF 119–126
+
+TBMM basılı SHA-256 `f53c52767d9aaf40db8efc222584ca477a1014272eea4ca63dae17853ce65e5d`; PDF indeks 119–126 doğal metni okundu. 10. madde için CHP ve İYİ değişiklik önergeleri ayrı ayrı ret, AK Parti çevre mühendisleri odası temsili önergesi ve değişmiş 10. madde kabul. İndeks 123 / basılı 862’de Yeni Yol ve aynı mahiyette Akın, Aslan, Fırat, Dindar, Koca, Kordu imzalı 11. madde çıkarma önergeleri okundu; komisyon katılmadı. Kordu konuştu, indeks 126 / basılı 865’te başkan iki önergenin birlikte reddini duyurdu. Sonraki CHP değişikliği ayrı. Söylemler hatiplere aittir; imza kişisel oy değildir; görsel ve tam gate açık.
