@@ -310,3 +310,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 805–809 metni: Ersoy ve Kaçmaz şerhinde kömür santralleri ve izin/teşvik iddiaları tarihli kaynak sahipleriyle birlikte kaydedildi; bağımsız doğrulanmış güncel durum veya TİP görüşü değildir. 808 İtalya için aynı listede hem 2023 hem 2025 kapatma hedefi yazıyor, fark çözülmedi. Sonraki 810; metin taraması 810/860, görseller ve 50 indeks açık.
 
 - PDF indeks 810–814 metni: Ersoy ve Kaçmaz şerhinde kömür, fosil yakıtlar ve plastik atıklar hakkındaki tarihli veriler, rapor aktarımları ve görüşler okundu. Siyasi ve sağlık iddiaları imzacılara/kaynaklarına aittir, bağımsız doğrulama ya da TİP görüşü değildir. Sonraki 815; metin taraması 815/860, görseller ve 45 indeks açık.
+
+- PDF indeks 815–819 metni: Ersoy ve Kaçmaz şerhinin plastik, yapılaşma, madencilik ve tarım görüşleri ile tarihli olay iddiaları okundu; imzacılara atıf ve bağımsız doğrulama sınırı korundu, TİP sözü veya sonucu sayılmadı. Sonraki 820; metin taraması 820/860, görseller ve 40 indeks açık.
