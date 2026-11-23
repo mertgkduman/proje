@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 13 | 9 | 62477835 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 42 | 44 | 62469452 |
+| EMEP | 43 | 45 | 62472618 |
 | Saadet Partisi | 11 | 11 | 62475555 |
 | Demokrat Parti | 16 | 15 | 62476741 |
 
@@ -71,3 +71,5 @@ EMEP’in Gaziantep 11. il kongresi iki görünümde doğrulandı. Kongre günü
 Demokrat Parti’nin 2020 ve 2022 kesin hesap kararları da iki görünümde doğrulandı. 2020–2023 döneminin dört kararında hesap yılı, karar tarihi ve yayım tarihi ayrı. 2024 hesabının ilk incelemesi mahkeme gündem kaydında yer alıyor; bu hesabın esas kararı ve dört hesabın ilk gönderim günleri araştırmaya açık. [Doğrulama makbuzu](../04-12-checks/aym-earlier-accounts-62476741.json) [Kaynak okuması](../04-12-checks/aym-earlier-accounts-reading.md)
 
 Yeni Yol’un 10/4603 fon araştırması dosyası iki görünümde doğrulandı. 6 Ekim başvurusu, 8 Ekim’deki grup gündem önerisi ve ayrı ret kararı kaynaklı. Bu kararın konusu 8 Ekim’deki ön görüşme talebi. Esas dosyası «Gündemde». [Doğrulama makbuzu](../04-08-checks/fund-4603-62477835.json) [Kaynak okuması](../04-08-checks/fund-4603-reading.md)
+
+EMEP’in 2023 Malatya 10. il kongresine ilişkin bağımsız yerel yayın iki görünümde doğrulandı. Haberde aktarılan yeniden seçim ile 2026’daki 11. kongre ayrı olaylar. 2023 kongresinin tam günü açık. [Doğrulama makbuzu](../04-10-checks/malatya2023-62472618-receipt.json)
