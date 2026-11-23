@@ -5,3 +5,5 @@ Kayseri Haber’in 27 Ağustos ön duyurusunda kongre 28 Ağustos Cuma saat 19.3
 Partinin 29 Ağustos yayını 624 kongreye Genel Başkan’ın katıldığını başlık ve özet alanlarında bildiriyor. Ayrıntı gövdesi boş. Talas Express Haber gövdesi Arıkan ile Erdal Altun’un katılımını ve Selçuk Onat’ın yeniden ilçe başkanı seçildiğini anlatıyor. Kayseri Haber sonucu 29 Ağustos tarihli haber özetinde aynı şekilde aktarıyor. Talas Express’in arşivlenen sayfasında güncelleme 9 Ekim 2026. Davut Güleç sayfasında seçim anlatımı Talas metniyle cümle düzeyinde örtüşüyor. İki sayfadan bağımsız üçüncü doğrulama çıkarılmadı. [Parti ayrıntı alımı](party-news-008-reading.json)
 
 İmzalı seçim belgesi, delege ve tam sayım cetveli, toplantıda uygulanabilir tüzük nüshasının kabul ve yürürlük zinciri araştırmaya açık.
+
+Sonraki dosya denetiminde olayın oluş dayanağı alanına Yıldırım kongresinin yayın adları kopyalanmış olarak bulundu. Kocasinan için 28 Ağustos tarihli program ve 29 Ağustos tarihli Kayseri Haber ile Talas Express Haber kullanılıyor. Bağlı özgün pasajlar, olay tarihi ve bildirilen seçim sonucu aynı kaldı. Düzeltme ayrı adayda doğrulanıyor.
