@@ -33,3 +33,5 @@ PDF 43 görselindeki grafik 2013–2024 işlem değerlerini milyar TL ve milyar 
 PDF 46–49: banka kârları, gelir/servet dağılımı ve yoksulluk verileri ile siyasi değerlendirmeler okunmuştur. Şerh Kasım 2025 yoksulluk sınırını 27 ve 47 indekslerinde 97.159 TL, 49’da 97.459 TL olarak aktarıyor; özgün Türk-İş verisi kontrol edilmeden değerler birleştirilmez. 0–49 ve 115–117 toplam 53/160, 107 açık.
 
 PDF 50–53: gelir eşitsizliği, borçluluk ve servet dağılımında TÜİK, Eurostat, UBS ve başka kaynaklara atıflı karşılaştırmalar okunmuştur. Endeks, yıl, nüfus ve para birimi farkları incelenmeden rakamlar tek seri sayılmaz. 50. indekste Kasım 2025 yoksulluk sınırı yine 97.159 TL olarak geçer; farklı 97.459 yazımıyla kaynak içi uyuşmazlık sürer. 0–53 ve 115–117 toplam 57/160, 103 açık.
+
+PDF 54–57: vergi adaleti, dolaylı vergiler ve servet vergisi reformuna dair şerh görüş ve önerileri okundu; vergilendirme oranları ve hukuk açıklamaları bağımsız doğrulanmış durum olarak sunulmaz. PDF 57’de grafik metin katmanında yoktur; görsel ve Hazine verisi ayrıca incelenmelidir. 0–57 ve 115–117 toplam 61/160, 99 açık.
