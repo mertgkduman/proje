@@ -69,3 +69,10 @@ TÜPRAŞ 47/49 adayına ek Şık Makas 48/50 exact d9061b27, package 0ffe0ad3f57
 ### Devam kaydı: NATO terfi ve API 058
 
 62477844 COMPLETED 0:0 dört marker; SQL/JSON/iki HTML/monoton bağımsız denetim PASS. 45/47 exact package 4be7f7addc5efdbaf289c885f3f6c5a5229a34bb637fe7618ab287818bc865c2 review 37a42c8d12a85af4251999d461fa15169fc65d01733caa882a888318c8aaef96 486e6d2e canlı, receipt nato-case-62477844-receipt.json, preview a14f389aabc748d1a93e11cbbf93f122. 62479310 TÜPRAŞ çalışıyor, 62481218 Şık Makas afterok bekliyor. Yukarıdaki exact SHA ve promoted helper protokolü ile terminal başarı sonrası sırayla doğrula; canonical değişmedi. 048–058 gövde okuma makbuzları 34717325, 862aa365, a30296db, 28489ee5, 905e400c, cffda1f2, 802f1f7f, 7a857a98, 9ffd20bb, b5d5841b, c9171500; sıradaki 059. 10705/10685 aynı Bayhan soru metni; 10715 Tokat ziyaretini Mart TBMM toplantısıyla birleştirme. Tüm 610 kapsam açık.
+
+
+### Devam kaydı: API 065 ve sıralı işler
+
+059–065 gerçek gövde makbuzları c8a7bf43, ed68e4b4, 3c1788ca, b529ae87, 0c8cacbb, 53da7e88, beff52bc; sonraki 066. Parti Kürt sorunu raporu 10274 tüm gövdesi üç aralıkta okundu; tarihsel/hukuki yorum partiye atıflı, öneriler yasalaşmış sonuç değildir. 10283 Bayhan basın açıklaması, 10297 komisyona mektup ve komisyonun sonraki oylaması ayrı. 10257 Halk TV, 10271 Enternasyonal Dayanışma kaynaklı yeniden yayındır. 10249 Malatya üye iddiası ile açıklanan suç duyurusu ve sonucu ayrı.
+
+62479310 TÜPRAŞ 47/49 çalışıyor; 62481218 Şık Makas 48/50 afterok bekliyor. Yukarıdaki exact SHA, dört marker, terminal 0:0 ve bağımsız SQL/JSON/iki HTML/monoton helper protokolüyle sırayla doğrula ve ancak ardından terfi et. Canlı NATO 45/47 486e6d2e; 610 kapsam açık, kanonik sürüm değişmedi.
