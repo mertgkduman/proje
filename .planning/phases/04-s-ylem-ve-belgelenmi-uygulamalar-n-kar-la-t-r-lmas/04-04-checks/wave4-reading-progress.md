@@ -1,6 +1,6 @@
 # Dördüncü dalga araştırma durumu
 
-Yeni Parti’nin çalışma çifti 142 olay ve 141 ilişkiye ulaştı. 21 Ekim tarihli 2/3968, üst düzey kamu görevleri sonrasındaki ödemelere ilişkin imzalı teklif ve komisyon kaydıyla doğrulandı. [2/3968 önizleme makbuzu](kamu-3968-62468795.json) 14 Ekim 2026 Plan ve Bütçe Komisyonu tutanağı, birleştirme ve alt komisyon önergelerinin reddini ve 2/3939’un komisyondaki kabulünü ayrı işlemler olarak belgeliyor. [Komisyon önizleme makbuzu](fund-commission-62455124.json) 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
+Yeni Parti’nin çalışma çifti 143 olay ve 141 ilişkiye ulaştı. 21 Ekim tarihli 2/3968, üst düzey kamu görevleri sonrasındaki ödemelere ilişkin imzalı teklif ve komisyon kaydıyla doğrulandı. [2/3968 önizleme makbuzu](kamu-3968-62468795.json) 14 Ekim 2026 Plan ve Bütçe Komisyonu tutanağı, birleştirme ve alt komisyon önergelerinin reddini ve 2/3939’un komisyondaki kabulünü ayrı işlemler olarak belgeliyor. [Komisyon önizleme makbuzu](fund-commission-62455124.json) 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
 
 Resmî parti API’sinin 58 dilimi ve 270 özgün gövdesi okundu. TBMM milletvekili dizinindeki 128 kanun teklifi, 306 Meclis araştırması ve sekiz dilimdeki 1.679 yazılı soru özeti okundu. Ayrıntı kayıtları için 325 alım makbuzunun ve imzalı başvuru veya cevap PDF'leri için 398 alım makbuzunun tamamı HTTP 200 ve özgün baytlarla doğrulandı. Makbuzlar tekrar edilen veya ayrı hedeflenen kayıtlar içerebilir. Seçilen PDF’lerin bağlam okuması sürüyor. 610 konu hücresinde kapanış yok.
 
@@ -8,14 +8,14 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
-| Yeni Parti | 142 | 141 | 62483765 |
+| Yeni Parti | 143 | 141 | 62489303 |
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 35 | 9 | 62486414 |
 | İYİ Parti | 14 | 10 | 62484676 |
 | Yeni Yol | 16 | 11 | 62486087 |
-| DBP | 25 | 7 | 62486456 |
+| DBP | 29 | 7 | 62489251 |
 | EMEP | 53 | 55 | 62486487 |
-| Saadet Partisi | 14 | 12 | 62485205 |
+| Saadet Partisi | 14 | 12 | 62489362 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -141,3 +141,9 @@ EMEP’in 3/1199 ve 3/1200 tezkerelerinde 21 Ekim’deki grup konuşması, ret y
 Dokuz partinin 316 olay ve 275 ilişki içeren dondurulmuş çalışma girdileri, yalıtılmış birleştirme ve okuyucu denemesinde 312 olay, 275 ilişki, 324 olay eşlemesi ve 3.200 kaynak inceleme kökeni verdi. İki HTML görünümünde 275 ilişki ve geçerli 51 eşleşmemiş aday doğrulandı. Önceki aday revizyonu ve özgün kaynak atıfları korundu. Kanonik işaretçi denemenin öncesi ve sonrasında aynı özeti taşıyor. [Bağımsız denetim](wave4-merge-rehearsal-preview-pages-62487355.json)
 
 Saadet parti yayınlarında kesimden önceki 649 kaydın 77 gövdesi okundu. 4 Ağustos basın toplantısındaki hububat fiyatları, Bakanlığın 2 Haziran’da açıkladığı 2. grup fiyatlarından farklı. Ürün sınıfı ve son revizyon ayrıca araştırılıyor. Temmuz yıllık TÜFE gerçekleşmesi ile o tarihteki yıl sonu program hedefi kendi dönemleriyle kaydedildi. [Okuma makbuzu](../04-11-checks/party-news-010-reading.json) [Fiyat ve hedef kaynakları](../04-11-checks/party-tmo-ovp-reading.json)
+
+Tokluca’ya ilişkin 2015/22, 2015/251, 2016/64 ve 2016/187 belediye kararları iki görünümde doğrulandı. 2019 faaliyet raporu 19 Aralık 2018 tarihli dilekçede Tokluca Mahallesi adının kullanıldığını aktarıyor. Vali onayının sayısı ve kesin yürürlük tarihi açık. 2015 meclis derlemesinin 269 sayfasından 62’si okundu. [Makbuz](../04-09-checks/baglar-tokluca-v3-62489251.json) [Kaynak zinciri](../04-09-checks/baglar-tokluca-reading.md)
+
+Kocasinan kongresinin oluş dayanağı alanındaki Yıldırım kaynak adları, bağlı Kocasinan kaynaklarının doğru tarihleri ve yayıncılarıyla düzeltildi. İki görünüm ve bağımsız kayıt karşılaştırması geçti. [Düzeltme makbuzu](../04-11-checks/kocasinan-provenance-62489362.json)
+
+Yeni Parti Grubu adına Aşkın Genç’in 8/153 ön görüşme talebine verdiği sözlü destek iki görünümde doğrulandı. Birleşim başkanının ön görüşme ret kararı ile esas dosyanın «Gündemde» kaydı ayrı. [Doğrulama makbuzu](nov03-genelgorusme-yeniparti-v3-62489303-complete.json)

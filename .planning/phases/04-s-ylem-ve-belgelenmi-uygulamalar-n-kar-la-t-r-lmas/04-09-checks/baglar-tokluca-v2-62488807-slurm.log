@@ -1,0 +1,5 @@
+Staged 140 original, readable and view paths; package 3fec31bd1c84e2d622b7d08a3bfaa06b47b88b3ead496165e446cb0bea1eface; review 4efa04fed74455ac88902c0b1044627e965c736c7cddfdf7abf6b8cf2bddf473
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-09-checks/baglar-tokluca-v2-validation.py", line 59, in <module>
+    assert expected.casefold().replace('i̇','i') in card.casefold().replace('i̇','i'),(view,number,expected)
+AssertionError: ('party', '2015-22', 'vali onayının tarihi')
