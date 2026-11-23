@@ -21,7 +21,7 @@ for role, typ, path, url, final, date, kind, publisher, author, title in sources
         else: dest.write_bytes(content)
     add('document',id=ident,party_id='emep',title=title,source_kind=kind)
     add('document_version',id=version,document_id=ident,original_url=url,final_url=final,document_date=date,date_precision='day',date_unknown_reason=None,version_label=title,accessed_at=now,verified_at=now,mime='application/pdf' if typ=='pdf' else 'text/html',sha256=sha,original_path='objects/'+sha+'/'+original,readable_path='objects/'+sha+'/readable.html')
-    add('source_attribution',version_id=version,kind=kind,publisher=publisher,author=author,social_handle=None,published_at=date,date_precision='day',public_url=url,basis='Tarihli özgün YSK kararı veya ayrı parti yayını; alınışta YSK www TLS bağlantısı kesildi, ysk.gov.tr eşdeğer uç yanıt verdi.')
+    add('source_attribution',version_id=version,kind=kind,publisher=publisher,author=author,social_handle=None,published_at=date if role=='party' else None,date_precision='day' if role=='party' else 'unknown',public_url=url,basis='Tarihli YSK kararının yayın günü doğrulanmadı; ayrı parti yayını tarihlidir. YSK www TLS bağlantısı kesildi, ysk.gov.tr eşdeğer uç yanıt verdi.')
     if typ=='html':
         view=build_view(raw,url,root,fetch_assets=False,http_charset='utf-8');view['version_id']=version;validate_view(root,view);add('archive_view',**view)
         text=html_source_text(raw); specs=[('list','Emek Partisi (EMEP), Yeşil Sol Listelerinden seçime giren milletvekili adaylarını tanıttı.','Aday tanıtımı'),('education','Eğitim her kademede parasız, bilimsel, demokratik ve anadilinde olmalıdır.','Seçim bildirgesinde eğitim')]
