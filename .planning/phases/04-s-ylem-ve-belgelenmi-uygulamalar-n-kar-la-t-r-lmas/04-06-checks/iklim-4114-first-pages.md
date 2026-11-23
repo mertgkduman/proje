@@ -23,3 +23,5 @@ Bu metin seçili sayfa okumasıdır; tüm 57 sayfalık tutanak ve 198 sıra say�
 
 - PDF 22–23: Hasan Toktaş konuşması ardından Ayten Kordu teklifin yöntemini ve ticari yaklaşımını eleştirmeye başlıyor.
 - PDF 24–25: Ayten Kordu sözlerini çevre ve yaşam alanları, madencilik işçileri için geçiş ve katılım eleştirileriyle tamamlıyor; bunlar kendi görüş ve iddialarıdır. Ardından başkan maddelere geçilmesini oylatıyor ve kabul edildiğini bildiriyor; isimli oy veya DEM oy yönü bu pasajda yoktur. Aynı sayfada başkan STK temsilcilerinin dinleneceğini söylüyor ve Temiz Hava Hakkı Platformu temsilcisi Deniz Gümüşel gerçekten söz alıyor. Bu kayıt, Koca’nın ilk usul talebinin bütün örgütler bakımından karşılandığını kanıtlamaz.
+
+- PDF 26–29: Temiz Hava Hakkı Platformu temsilcisi Deniz Gümüşel ardından Türk Tabipleri Birliği temsilcisi Demet Parlar, İklim Ağı adına Özlem Katısöz ve İklim Adaleti Koalisyonundan Caner Gökbayrak konuşuyor. Bu dört gerçek dinleme, yalnız bu kişilerin bu aşamada söz aldığını gösterir; konuşma içerikleri ve sayısal iddialar temsilcilerine aittir.
