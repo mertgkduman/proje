@@ -181,3 +181,5 @@ Son ilerleme e04789e7: rapor 0–619 indeks metni/boşluğu tarandı (620/860), 
 Son ilerleme cd6caeca: rapor 0–649 indeks metni/boşluğu tarandı (650/860), sıradaki 650; 210 indeks ve not edilen görseller ile 620–649 çok sütunlu tabloların görsel okuması açık. Komisyon önerileri, TİP görüşü veya gerçekleşmiş işlem değildir; 629 kömür çıkış tarihi belirtmez. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
 
 Son ilerleme 7fb43c98: rapor 0–679 indeks metni/boşluğu tarandı (680/860), sıradaki 680; 180 indeks ve notlarda belirtilen görseller ile çok sütunlu tablolar açık. 658 istasyon çevresinde yapılaşma ifadesi 617 koruma tavsiyesi ile gerilimli, görsel/asıl bağlam doğrulanmadı. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme 2c33a9d2: rapor 0–729 indeks metni/boşluğu tarandı (730/860), sıradaki 730; 130 indeks ve notlarda belirtilen görseller açık. 693–694 imzalı karar görüntüsü ayrıca okundu, 23.11.2021 no 3; şerhler var. 695–729 kişisel ek görüş ve CHP şerhi; TİP atfı yok. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
