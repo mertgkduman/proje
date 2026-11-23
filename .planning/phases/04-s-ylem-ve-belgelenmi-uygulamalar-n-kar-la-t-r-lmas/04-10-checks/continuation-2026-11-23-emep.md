@@ -125,3 +125,8 @@ Bayhan 7/29281 özgün TBMM soru, kayıt ve taranmış bakanlık yanıtı tüm s
 7/26171 Bekaert sorusu ve 31 Ağustos 2026 genel hukuk yanıtı c19f243c özgün okuma, cb0eeccc owner-bound kaynak. 56/58 aday 964b4764 package `015abded7ac3d663fbb45de7349429b11d0f0e1a7a4d7598689e1fbdbbf75b55`, review `040b6b473ba97c737416c4c18ae80224c7013a421974f15a6d3ba09ad5bb1720`, 480 semantic PASS; gate 62487943 afterok 62487388. Somut işyeri teftiş sonucu cevapta yok. Sonraki exact terfiler sırayla 62486487, 62487027, 62487388 ve 62487943; her biri terminal 0:0, dört marker ve promote helper bağımsız/monoton kontrolleri gerektirir.
 
 112–118 gerçek okuma makbuzları 8f74b457, 9894f034, 71c528e2, bee5fdf6, 1222a885, 826c6b9b, 5defb689; sıradaki 119. 118 post 8571 başlık yüzde 85,24 ile gövdedeki yüzde 85,03 farklı; rakamlar atıf ve belirsizlikle ayrı. Post 8538in ilk 2094 karakteri okundu, devamı 119da. Tüm 610 kapsam hücresi açık.
+
+
+### Son gerçek okuma ilerlemesi
+
+119, 120, 121 ve 122 gövde dilimleri sırasıyla 0a6d6e08, 6cefd0df, 709496ce ve a4437dae commitlerinde gerçek metin okuma makbuzlarıyla kaydedildi. 122, 8433 gövdesini 3716 karakterde bırakıyor; 123 devamında. 123 yalnız kısmen görüntülendi: çıktı kesildiğinden okunmuş işaretlenmedi. 62486487 23:29 RUNNING, 62487027/62487388/62487943 afterok bekliyor; üstteki exact zincir hâlâ geçerli. Terminal COMPLETED 0:0 ve dört marker olmadan terfi yok. 610 hücre açık.
