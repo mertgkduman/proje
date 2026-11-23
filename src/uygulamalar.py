@@ -4,6 +4,7 @@ import json
 import sqlite3
 from datetime import date
 from pathlib import Path
+from kaynaklar import folded
 from uygulama_merge_kayit import (ENTRY_KINDS, PRACTICE_ENTRY_ORDER, PRACTICE_MERGE_TABLES,
                                   materialize_practice_merge, practice_entry_matches, validate_practice_merge)
 
@@ -921,7 +922,7 @@ def validate_practices(data):
             if actor['kind'] == 'individual_mp':
                 membership = passages.get(x['membership_passage_id'])
                 party_name = next(p['legal_name'] for p in data['party'] if p['id'] == x['party_id'])
-                if not membership or person['name'] not in membership['exact'] or party_name not in membership['exact'] or x['membership_passage_id'] == period['identity_passage_id'] or (documents[versions[membership['version_id']]['document_id']]['party_id'] != x['party_id'] and (membership['version_id'], x['party_id'], membership['id']) not in party_sources):
+                if not membership or person['name'] not in membership['exact'] or folded(party_name) not in folded(membership['exact']) or x['membership_passage_id'] == period['identity_passage_id'] or (documents[versions[membership['version_id']]['document_id']]['party_id'] != x['party_id'] and (membership['version_id'], x['party_id'], membership['id']) not in party_sources):
                     raise ValueError('Milletvekili kimliği ve üyeliği ayrı kanıt gerektirir')
         if actor['kind'] == 'authorized_representative' and (not x['authority_passage_id'] or x['authority_passage_id'] != actor['authorization_passage_id']):
             raise ValueError('Yetki kanıtı gerekli')

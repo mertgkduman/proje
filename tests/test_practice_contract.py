@@ -100,6 +100,13 @@ class PracticeContract(unittest.TestCase):
             mp['practice_actor_period'] = [dict(contribution_id='tracer-contribution', valid_from='2026-01-01', valid_to='2026-12-31', identity_passage_id='technical-identity')]
             mp['practice_contribution'][0]['membership_passage_id'] = 'technical-membership'
             validate_practices(mp)
+            membership = next(p for p in mp['passage'] if p['id'] == 'technical-membership')
+            membership['exact'] = 'Teknik Kişi Yeni Parti üyeliği'
+            validate_practices(mp)
+            membership['exact'] = 'Teknik Kişi Demokrat Parti üyeliği'
+            with self.assertRaisesRegex(ValueError, 'üyeliği ayrı kanıt'):
+                validate_practices(mp)
+            membership['exact'] = 'Teknik Kişi Yeni Parti üyeliği'
             rendered = arsiv.render_comparison_snapshot(mp, arsiv.render_report)
             self.assertEqual(rendered.count('Bireysel milletvekili faaliyeti'), 2)
             uncertain = copy.deepcopy(mp)
