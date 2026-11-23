@@ -274,3 +274,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 715–719 metni: CHP üyelerinin şerhinde çevre hakkı, kararname, ÇED ve anayasal güvence yorumları okundu; hukuki sonuçlar ve partiye ait görüş bağımsız doğrulanmadı, TİP görüşü sayılmadı. Sonraki 720; metin taraması 720/860, görseller ve 140 indeks açık.
 
 - PDF indeks 720–724 metni: CHP üyelerinin çevre hukukuna dair yorumları ve dönemin iktidarına yönelik ekolojik zarar iddiaları incelendi. Şerh sahiplerine atıf korunur, sayılar ve hukuki iddialar ayrıca doğrulanmadan TİP görüşü ya da kesin olgu sayılmadı. Sonraki 725; metin taraması 725/860, görseller ve 135 indeks açık.
+
+- PDF indeks 725–729 metni: CHP üyeleri şerhindeki enerji politikası, kömür santralleri, izinler ve geçmiş yargı/işlem anlatımı okunmuştur; iddialar ve hukuki yorumlar imzacılara atfedilir, bağımsız incelenmiş güncel durum veya TİP tutumu değildir. 725 ve 726 tablolar görsel okunmadı. Sonraki 730; metin taraması 730/860, görseller ve 130 indeks açık.
