@@ -15,6 +15,8 @@ for name,exact,section in [
  ('kocyigit-role','DEM PARTİ GRUBU ADINA GÜLÜSTAN KILIÇ KOÇYİĞİT (Kars)','Koçyiğit DEM grubu adına'),
  ('kocyigit-commission','Mecliste bir araştırma komisyonu kurulsun ve Meclis sürece el koysun','Koçyiğit komisyon talebi'),
  ('kocyigit-transparency','sistemi şeffaf, açık, denetlenebilir hâle getirmedikçe','Koçyiğit şeffaflık değerlendirmesi'),
+ ('kocyigit-system','Burada sistemsel bir sorun var','Koçyiğit sistemsel sorun değerlendirmesi'),
+ ('kocyigit-payment','yatırımcının parasını ne zaman alacağını bilmesi','Koçyiğit ödeme takvimi talebi'),
  ('temelli-role','DEM PARTİ GRUBU ADINA SEZAİ TEMELLİ (Muş)','Temelli DEM grubu adına'),
  ('temelli-commission','gerçekten, ciddiyetle bir komisyon kurulmasıdır.','Temelli komisyon talebi')]:
  assert exact in text,(name,exact)
