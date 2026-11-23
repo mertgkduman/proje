@@ -24,5 +24,9 @@ entries += [dict(kind='document',values=dict(id=doc,party_id='tip',title='TBMM 2
 for suffix,exact in [('number','2 / 3864'),('date','08/10/2021'),('status','H&#xDC;K&#xDC;MS&#xDC;Z (G)')]:
  assert exact in t
  entries.append(dict(kind='passage',values=dict(id=doc+'-'+suffix+'-p',version_id=vid,exact=exact,prefix=None,suffix=None,article=None,section='Teklif numarası, geliş veya sonuç alanı',pdf_page_index=None,printed_page=None)))
+listed=root/'objects/ba2883e38fed0a4a930fb66c3d51b7e72248196ebffb8df52e6688fef57a75ed/original.pdf'
+exact='3614 2/3864 Katma Değer Vergisi Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifi\n(Türkiye İşçi Partisi Genel Başkanı İstanbul Milletvekili Erkan Baş ve 3 Milletvekili)'
+assert exact in pdf_page_text(listed,208)
+entries.append(dict(kind='passage',values=dict(id='0405-tip-fatura-3864-hukumsuz-p',version_id='0405-tip-sendika-hukumsuz-v1',exact=exact,prefix=None,suffix=None,article=None,section='Dönem sonu hükümsüz teklifler sıra 3614',pdf_page_index=208,printed_page='175')))
 (P/'fatura-3864-source-draft.json').write_text(json.dumps(dict(status='draft_unvalidated',entries=entries),ensure_ascii=False,indent=2)+'\n')
 print('3864_SOURCE_DRAFT',len(entries))
