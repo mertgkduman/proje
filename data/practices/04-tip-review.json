@@ -730,6 +730,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0405-tip-secim-2023-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-aa-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-aa-delivered-p\", \"0405-tip-secim-2023-aa-review-p\"]",
+      "inspected_sections": "[\"YSK başkanının liste teslimi açıklaması\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0405-tip-secim-2023-event ilgili kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0405-tip-sendika-274390-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:49:44.557900+00:00",
@@ -1484,6 +1497,32 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-secim-2023-event|0405-tip-secim-2023-aa-delivered-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-aa-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-aa-delivered-p\"]",
+      "inspected_sections": "[\"YSK başkanının liste teslimi açıklaması\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0405-tip-secim-2023-event|0405-tip-secim-2023-aa-delivered-p|action ilgili kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-secim-2023-event|0405-tip-secim-2023-aa-review-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-aa-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-aa-review-p\"]",
+      "inspected_sections": "[\"YSK başkanının liste teslimi açıklaması\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0405-tip-secim-2023-event|0405-tip-secim-2023-aa-review-p|action ilgili kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0405-tip-sendika-274390-event|0405-tip-sendika-274390-pdf-provision-p|initiative",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:49:44.557900+00:00",
@@ -1796,6 +1835,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-secim-2023-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-aa-v1\", \"0405-tip-secim-2023-party-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-aa-delivered-p\", \"0405-tip-secim-2023-aa-review-p\", \"0405-tip-secim-2023-party-commission-p\"]",
+      "inspected_sections": "[\"Adaylık komisyonu\", \"YSK başkanının liste teslimi açıklaması\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0405-tip-secim-2023-relation ilgili kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0405-tip-sendika-iliski",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:49:44.557900+00:00",
@@ -2040,6 +2092,19 @@
       "limitations": "Haber 2026 güncellemesi taşıyor; teklifin kabulü veya uygulama sonucu gösterilmiyor.",
       "result": "reviewed",
       "reason": "Bu hedefin özgün pasajları incelendi: practice_relation.explanation_finding_id 0405-tip-saglik-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-secim-2023-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-aa-v1\", \"0405-tip-secim-2023-party-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-aa-delivered-p\", \"0405-tip-secim-2023-aa-review-p\", \"0405-tip-secim-2023-party-commission-p\"]",
+      "inspected_sections": "[\"Adaylık komisyonu\", \"YSK başkanının liste teslimi açıklaması\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0405-tip-secim-2023-relation ilgili kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -2394,6 +2459,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-secim-2023-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-party-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-party-commission-p\"]",
+      "inspected_sections": "[\"Adaylık komisyonu\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0405-tip-secim-2023-relation ilgili kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0405-tip-sendika-iliski",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:49:44.557900+00:00",
@@ -2615,6 +2693,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0405-tip-secim-2023-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-party-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-party-commission-p\"]",
+      "inspected_sections": "[\"Adaylık komisyonu\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0405-tip-secim-2023-statement ilgili kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0405-tip-sendika-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:49:44.557900+00:00",
@@ -2823,6 +2914,19 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0405-tip-secim-2023-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-party-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-party-commission-p\"]",
+      "inspected_sections": "[\"Adaylık komisyonu\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0405-tip-secim-2023-statement ilgili kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0405-tip-sendika-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:49:44.557900+00:00",
@@ -3028,6 +3132,19 @@
       "limitations": "Haber 2026 güncellemesi taşıyor; teklifin kabulü veya uygulama sonucu gösterilmiyor.",
       "result": "reviewed",
       "reason": "Bu hedefin özgün pasajları incelendi: practice_statement.summary_finding_id 0405-tip-saglik-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0405-tip-secim-2023-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T11:53:17+00:00",
+      "source_version_ids": "[\"0405-tip-secim-2023-party-v1\"]",
+      "passage_ids": "[\"0405-tip-secim-2023-party-commission-p\"]",
+      "inspected_sections": "[\"Adaylık komisyonu\"]",
+      "supported_claim": "Parti adaylık açıklaması ve YSK başkanının atıflı liste teslimi açıklandı.",
+      "limitations": "Komisyonun bireysel işlemleri, kesinleşme, seçilme ve başvuru şartlarının uygulanması çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0405-tip-secim-2023-statement ilgili kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
@@ -3296,6 +3413,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0405-tip-secim-2023-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0405-tip-sendika-274390-event"
     },
     {
@@ -3528,6 +3649,14 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-secim-2023-event|0405-tip-secim-2023-aa-delivered-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-secim-2023-event|0405-tip-secim-2023-aa-review-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0405-tip-sendika-274390-event|0405-tip-sendika-274390-pdf-provision-p|initiative"
     },
     {
@@ -3624,6 +3753,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-secim-2023-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0405-tip-sendika-iliski"
     },
     {
@@ -3700,6 +3833,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-secim-2023-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0405-tip-sendika-iliski"
     },
     {
@@ -3808,6 +3945,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-secim-2023-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0405-tip-sendika-iliski"
     },
     {
@@ -3876,6 +4017,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0405-tip-secim-2023-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0405-tip-sendika-statement"
     },
     {
@@ -3940,6 +4085,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0405-tip-secim-2023-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0405-tip-sendika-statement"
     },
     {
@@ -4001,6 +4150,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0405-tip-saglik-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0405-tip-secim-2023-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
