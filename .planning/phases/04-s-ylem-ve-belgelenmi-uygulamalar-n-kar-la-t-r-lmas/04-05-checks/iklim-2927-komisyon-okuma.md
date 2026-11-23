@@ -19,3 +19,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 53–58 görsel okundu: şerh teklifin 6–11. maddelerini, yerel planlar ve karbon ticareti konularını değerlendiriyor; 58. indekste komisyonda bu yönde sunulan önergenin reddi iddiası var, ancak aktör ve önerge kimliği bu sayfalarda verilmediğinden işlem olarak kaydedilmedi.
 
 İndeks 59–64 görsel okundu; aynı şerhte emisyon gelirleri ve teklifin 12–18. ve geçici 1. maddelerine ilişkin değerlendirmeler sürüyor. İmza henüz bulunmadı ve TİP atfı yapılmadı.
+
+İndeks 65–70 görsel okundu. İndeks 65 birinci şerhin bitimindeki 04.03.2025 tarihli Nimet Özdemir, Vecdi Gündoğdu, Semra Dinçer ve Gürsel Erol imzalarını gösterir; 40. indekste CHP adına ifade bulunan kesit bu şerhtedir. İndeks 66 yeni şerh başlangıcıdır ve 67. indekste DEM Parti adına teklif adını değiştirme talebi ve değiştirilmediği söylenir; DEM araştırmacısına bağımsız inceleme için iletildi. İkinci şerhin imzası henüz okunmadı.
