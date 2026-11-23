@@ -314,3 +314,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 815–819 metni: Ersoy ve Kaçmaz şerhinin plastik, yapılaşma, madencilik ve tarım görüşleri ile tarihli olay iddiaları okundu; imzacılara atıf ve bağımsız doğrulama sınırı korundu, TİP sözü veya sonucu sayılmadı. Sonraki 820; metin taraması 820/860, görseller ve 40 indeks açık.
 
 - PDF indeks 820–824 metni: Ersoy/Kaçmaz şerhinde 2015 emisyon referans senaryosu, su hakkı ve su kirliliğiyle ilgili tarihli iddialar okundu; bu görüşler imzacılara ait olup ayrı doğrulanmamış, TİP görüşü sayılmamıştır. Sonraki 825; metin taraması 825/860, görseller ve 35 indeks açık.
+
+- PDF indeks 825–829 metni: Ersoy ve Kaçmaz şerhinde HES, aşırı hava, tarım ve iklim bütçesi eleştirileri okunmuştur. Kurumların harcama ve etkilerine ilişkin çıkarımlar imzacıların 2021 görüşleridir; bağımsız sonuç veya TİP atfı değildir. Sonraki 830; metin taraması 830/860, görseller ve 30 indeks açık.
