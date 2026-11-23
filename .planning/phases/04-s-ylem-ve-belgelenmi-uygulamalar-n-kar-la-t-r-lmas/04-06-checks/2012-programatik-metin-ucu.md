@@ -43,3 +43,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 156000–167999 okundu (14/16): gençlerin katılımı, çocuk hakları ve kültür-sanat politikaları. Çocuk Hakları Sözleşmesi’nin Resmî Gazete yayım yılına ilişkin 1990 ifadesi kaynak iddiasıdır; özgün resmî yayın ve yürürlük tarihleri ayrıca doğrulanmadan benimsenmez.
 
 2012 birincil metin 168000–179999 okundu (15/16): hayvan hakları, bilgiye erişim ve kişisel veriler, fikri mülkiyet ve spor alanlarındaki görüş ve öneriler. Siyasi görüşler kaynak sahibine atıflıdır ve sonraki dönem gerçekleşmiş işlem olarak sunulmaz.
+
+2012 birincil metin 180000–182849 okundu (16/16): emekli ve yaşlıların sosyal, sağlık ve bakım hakları; sonrasında yalnız paylaşım bağlantıları. Arşiv yakalamasındaki 182.850 karakterlik çıkarılmış gövde tamamıyla okundu. Bu yalnız yakalanan metin için okuma tamamlanmasıdır; yayın tarihi, 87 sayfalık metinle eşitlik, hukukî kimlik, güncel yürürlük, envanter hücreleri ve sonraki olaylarla karşılaştırma araştırmaları açık kalır.
