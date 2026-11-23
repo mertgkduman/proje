@@ -130,3 +130,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 355–359 metni tarandı: karasal yutaklar, toprak karbon projesi ve orman karbonu genel arka planı. 356 harita, 357 tablo ve 359 karbon döngüsü şekli görsel incelenmedi; tablo sütunları çıkarımda karışık. Kurum anlatımları TİP faaliyeti olarak yazılmadı. 0–359: 360/860 indeks metni veya boşluğu tarandı; görseller ve 500 indeks açık.
 
 2021 raporu indeks 360–364 metni tarandı: IPCC karbon havuzu tanımları, orman envanteri ve korunan alanlara ilişkin tarihsel hedef ve anlatımlar. 360–362 tabloları ile 363–364 grafikler görsel incelenmedi; veriler veya planlar bağımsız bulgu ya da TİP icraatı olarak aktarılmadı. 0–364: 365/860 indeks metni veya boşluğu tarandı; görseller ve 495 indeks açık.
+
+2021 raporu indeks 365–369 metni tarandı: orman karbon stoku, ulusal envanter, gönüllü karbon ve ormancılık hedefleri. 365 ve 367 grafikleri görsel okunmadı; kurumsal anlatımlar ve uzman önerileri TİP icraatı sayılmadı. 0–369: 370/860 indeks metni veya boşluğu tarandı; görseller ve 490 indeks açık.
