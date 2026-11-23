@@ -45,3 +45,10 @@ NATO davası source draft 95cbd951; 44/46 Kırşehir taslağına ek 45/47 exact 
 033–036 gerçek gövde okuması 6d935e91, ab3f2c4c, 6b3fd6e8, 74f60663; 037 sonraki açık. TÜPRAŞ 7/36753 ve 7/36769 21 Kasım 2025 sorular ve iki cevabın 8 taranmış sayfası gerçek poppler-glib görsel okuması 3a650712, hamlar d47956fe; altı owner-bound kaynak 1c296c90. 36769 Enerji imza 19 Aralık 2025, bildirim 22 Aralık; 36753 Çalışma bildirim 7 Eylül 2026; Nisan haberinin önceki yanıtsızlık durumu bu tarihle çelişmez. Çalışma yanıtı genel mevzuatı anlatıyor, Enerji şirket sorumluluğunu ve Çalışma yetkisini belirtiyor; fiili sonuç varsayılmaz.
 
 NATO 45/47 üstüne TÜPRAŞ 47/49 aday f4cb4e2c package c2bd74510c1a5f072d1b91d6c57f46baaf5e94eed54bac0fedaba4a249e854ec review 3d56c224bbd8fcdcf75f0dbd7c89d89036a9ee65aeab0ed620577b8ea9b9e24c, 411 semantic PASS. İlk yerel validate_practices yanlış program pasaj kimliğini reddetti, 0410-emep-safety-program-p ile düzeltildi. Exact tam gate 62479310 NATO 62477844 afterok, henüz sonuç yok; terfi yok. 610 scope açık.
+
+
+### Devam kaydı: API 042 ve sıralı doğrulamalar
+
+037–042 gerçek gövde aralıkları okundu ve SHA bağlı makbuzlarla sırasıyla d2bb37b1, 6dec721c, 70e4a301, 21ad9e82, df11c4a5, 8dda1a12 işlendi; sıradaki 043. Parti API 11083 Defne Devlet Hastanesine ilişkin Karaca yazılı soru adayı, 11085 maden ihalelerine ilişkin Karaca/Bayhan sorusu, 11046 Menemen hafriyatı için Bayhan sorusu: özgün TBMM numarası, tarih, cevap ve kaynak bağları henüz araştırılmalı; parti metnindeki iddialar doğrulanmış sonuç sayılmamalı. 11062 EMEP dahil 11 örgütün ortak açıklamasıdır; yalnız EMEP kararı olarak aktarılmaz. 11013 okuması 3037 karakterde kesilir, kalanı 043tedir.
+
+62473858 Kırşehir input/source PASS, preview aktif; 62477844 NATO ve 62479310 TÜPRAŞ afterok bekliyor. Terminal COMPLETED 0:0 ve dört marker sonrası önce Kırşehir 44/46 exact 11c41372222f343373561c5eefc263be8523374032ef2b73f34fad1bed546496 / 08e53c73d4b5984f0226d82f328e5314c93e77eea2dfec4e2f1cbe80a31e0cc2 monotonic promotion helper ile kanıtlanmalı; sonraki exact SHA ve kaynak sınırları yukarıda. Canlı 43/45, 610 kapsam açık; kanonik sürüm değişmez.
