@@ -81,3 +81,5 @@ Sonraki güncelleme: 224 raporunda 283/1054 okundu, 771 açık (5fcd692d). 4062 
 2023 seçim bildirgesinin tamamı sonradan okundu: 73 metin sayfası ve üç metinsiz sayfanın görsel incelemesi, toplam 76/76 (`5d0ca792`). 2023 İşsizlik Sigortası Fonu, emeklilik ve farklı temel gelir önerileri ile 2026 komisyondaki farklı aktörlerin beyanları araştırma uçlarıdır; tarihsel kimlik, dönem, kapsam ve gerçekleşme ayrı doğrulanmalıdır. 2025 tarihli 224 raporunun 731 sayfası ve fazın başka kapsamı hâlâ açıktır.
 
 30 Mart 2023 HDP duyurusu ve erişim günü doğrudan bağlı PDF de arşivlendi (`a219d3c0`). `fe2863…` ile `8a7cc7…` bildirgeleri bayt ve içerik olarak farklı: sırasıyla “Kürt kimliğinin” / “Kürt kültürünün”, özerk sanat kurumu ve yurt dışındaki yurttaşlar bölümlerinde metin katmanı farkları var (`0bad57b9`). Yayın/değişiklik sırası ve duyuru bağlantısının geçmiş baytları bilinmiyor; ikinci dosyanın tam bağımsız okuması açık, iki sürüm birleştirilmemeli.
+
+224 sıra raporunda son kuyruk `7d3110b2` itibarıyla 331/1054 incelendi, 723 bekliyor. Basılı 267–268'deki süt izni çalışma süresi hakkındaki çelişik cümleler not edildi; tarihli birincil mevzuat kontrolü açık.
