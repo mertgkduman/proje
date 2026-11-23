@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 141 | 141 | 62468795 |
 | TİP | 19 | 18 | 62481718 |
-| DEM Parti | 21 | 9 | 62480714 |
+| DEM Parti | 22 | 9 | 62482438 |
 | İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 12 | 7 | 62481629 |
@@ -99,3 +99,5 @@ EMEP’in TÜPRAŞ denetimine ilişkin 7/36753 ve 7/36769 yazılı soruları iki
 Yeni Yol’un staj sigortası kayıtları iki görünümde doğrulandı. 2/3778’in 21 Temmuz başvurusu ve komisyon girişleri, 10/4625’in 20 Ekim ön görüşme oylamasından ayrı. Elif Esen’in Yeni Yol Grup desteği sözlü katkıya bağlı. 7 Ekim imzalı 10/4625 dosyasının TBMM giriş günü 8 Ekim ve esas durumu «Gündemde». [Doğrulama makbuzu](../04-08-checks/staj-agenda-v2-62481322.json) [Kaynak okuması](../04-08-checks/staj-agenda-reading.md)
 
 TİP’in 2/3864 elektrik ve temel hizmet desteği teklifi iki görünümde doğrulandı. Dokuz sayfalık imzalı metin ile dönem sonu hükümsüzlük kaydı ayrı dayanaklarda. Hükümsüzlüğün kesin işlem günü açık. 2022 yazılı soru ve 2023 cevabı kendi dosyasında. [Doğrulama makbuzu](../04-05-checks/fatura3864-62481718.json)
+
+Mehmet Zeki İrmez’in 20 Ekim’de 10/4625 gündemindeki DEM Parti Grup katkısı doğrulandı. Meclis araştırması için yaptığı çağrı sözlü katkı. Esas dosyası ve aynı gün reddedilen ön görüşme işlemi Yeni Yol kaydıyla aynı olaya bağlanabilir. İsimli oy ve önceki aynı kapsamdaki DEM Parti söylemi açık. [Doğrulama makbuzu](../04-06-checks/dem-staj-agenda-v2-62482438.json)
