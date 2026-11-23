@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 48 | 9 | 62494452 |
+| DEM Parti | 49 | 9 | 62497999 |
 | İYİ Parti | 17 | 10 | 62492649 |
-| Yeni Yol | 20 | 12 | 62496604 |
+| Yeni Yol | 21 | 12 | 62498133 |
 | DBP | 51 | 7 | 62496114 |
-| EMEP | 58 | 60 | 62489834 |
+| EMEP | 59 | 61 | 62491755 |
 | Saadet Partisi | 19 | 15 | 62492219 |
 | Demokrat Parti | 25 | 23 | 62496667 |
 
@@ -203,3 +203,9 @@ Bağlar /66→82, /46→83 ve /61→84 sevk ve raporları, ayrıca /81 yardım k
 Yeni Yol 8/134 önergesinin 17 Haziran sunumu ve 1 Temmuz gelen kâğıtlar eki iki HTML görünümünde doğrulandı. 13 Ocak asgari ücret düzeyi talebi, imzalı gerekçenin alt sınır ve intibak maddeleriyle karşılaştırıldı. Esas sicili 23 Kasım erişiminde Gündemde. [Yeni Yol makbuzu](../04-08-checks/inquiry-8134-v2-62496604.json)
 
 Demokrat Parti’nin 23 Şubat tarihli küçükbaş programı eleştirisi, 21 Şubat açıklaması ve 1 Nisan başvuru takvimiyle karşılaştırıldı. Haziran listesi ve bildirimler, Düzce’de 95 dişi ve 5 erkek hayvanla belgelenen tek işletme ve Yozgat’ta 2.381 başvuru ile il müdürlüğünün açıkladığı beş teslim ayrı kaynaklara bağlı. Tek tek ödeme ve teslim tarihleri açık. [Makbuz](../04-12-checks/kucukbas-v2-62496667.json)
+
+Yeni Yol’un 10/4251 hububat araştırmasının ön görüşme talebi için 10 Haziran tutanağındaki ret, Şerafettin Kılıç’ın grup adına katkısı ve 23 Kasım erişimindeki esas kaydı iki HTML görünümünde doğrulandı. [Yeni Yol makbuzu](../04-08-checks/hububat-62498133.json)
+
+DEM Parti kongre kaydı ve EMEP’in okul yemeği 7/16207 sorusu iki HTML görünümünde doğrulandı. Kongre sonucu kaynaklarına atıflı ve tüzük sürümünün kongre günündeki hukuki yürürlüğü açık. Okul yemeği sorusu ve Bakanlık cevabı ayrı pasajlarla, beslenme programının kapsamı ve doğrulanabilen uygulama sınırlarıyla kayıtlı. [DEM Parti makbuzu](../04-06-checks/dem-2026-congress-62497999.json) [EMEP makbuzu](../04-10-checks/school-meal-16207-topic-62491755-receipt.json)
+
+Bağlar 2015 defterinin 147 farklı sayfası okundu. /118 ve /128 aynı yazıya atıf yapıyor ve farklı plan ile parsel numaraları veriyor. Demokrat Parti sitesinde 49 kesim öncesi gövde okundu, 206 kayıt açık ve iki gövde kesim sonrası. Saadet sitesinde okunan 86 kesim öncesi gövdeden ikisi Haziran başındaki tarımsal kalkınma planı vaadi ve anayasa değerlendirmesini belgeliyor. [Bağlar okuma kaydı](../04-09-checks/baglar-council-2015-reading-010.json) [Demokrat Parti okuma kaydı](../04-12-checks/party-news-003-reading.json) [Saadet okuma kaydı](../04-11-checks/party-news-014-reading.json)
