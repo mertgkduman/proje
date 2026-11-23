@@ -318,3 +318,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 825–829 metni: Ersoy ve Kaçmaz şerhinde HES, aşırı hava, tarım ve iklim bütçesi eleştirileri okunmuştur. Kurumların harcama ve etkilerine ilişkin çıkarımlar imzacıların 2021 görüşleridir; bağımsız sonuç veya TİP atfı değildir. Sonraki 830; metin taraması 830/860, görseller ve 30 indeks açık.
 
 - PDF indeks 830–834 metni: Ersoy/Kaçmaz şerhinde kurum bütçesi eleştirileri, Paris değerlendirmesi ve öneriler okunmuştur; tarihli siyasi yorumlar ve rakamlar bağımsız doğrulama veya TİP görüşü değildir. 830 OGM odun geliri için 7 milyar 239 milyar TL yazıyor; birim/yazım farkı faaliyet raporuyla çözülmedi. Sonraki 835; metin taraması 835/860, görseller ve 25 indeks açık.
+
+- PDF indeks 835–839 metni: Ersoy ve Kaçmaz şerhi 835 öneriler ve iki imzacı adıyla biter; 836 Hasan Kalyoncu kişisel ek görüşü, 837 Behiç Çelik tarafından İYİ Parti adına ayrı şerh başlar. Bu görüşler TİP adına değil, kendi tarihli sahipleri adına tutulur. Sonraki 840; metin taraması 840/860, görseller ve 20 indeks açık.
