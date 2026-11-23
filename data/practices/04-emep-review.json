@@ -223,6 +223,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-gaziantep-2026-congress-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T05:12:57+00:00",
+      "source_version_ids": "[\"0410-emep-gaziantep2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-gaziantep2026-news-p\"]",
+      "inspected_sections": "[\"Gaziantep 11. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Kongre günü, oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-gaziantep-2026-congress-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-gebze-2026-congress-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:08:25+00:00",
@@ -1065,6 +1078,32 @@
       "limitations": "Programın yürürlük sırası ve konuşmanın politika sonucu bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-fund-bayhan-2026-event|0410-emep-fund-2026-basinca-speaker-p|action için ilgili program ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gaziantep-2026-congress-event|0410-emep-gaziantep2026-news-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T05:12:57+00:00",
+      "source_version_ids": "[\"0410-emep-gaziantep2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-gaziantep2026-news-p\"]",
+      "inspected_sections": "[\"Gaziantep 11. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Kongre günü, oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-gaziantep-2026-congress-event|0410-emep-gaziantep2026-news-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gaziantep-2026-congress-event|0410-emep-gaziantep2026-news-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T05:12:57+00:00",
+      "source_version_ids": "[\"0410-emep-gaziantep2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-gaziantep2026-news-p\"]",
+      "inspected_sections": "[\"Gaziantep 11. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Kongre günü, oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-gaziantep-2026-congress-event|0410-emep-gaziantep2026-news-p|result için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -2212,6 +2251,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-gaziantep-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T05:12:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-gaziantep2026-news-v1\", \"0410-emep-gaziantep2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-gaziantep2026-news-p\", \"0410-emep-gaziantep2026-party-p\", \"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"Gaziantep 11. il kongresi haberi\", \"Gaziantep 11. il kongresi parti yayını\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Kongre günü, oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-gaziantep-2026-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-gebze-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:08:25+00:00",
@@ -2771,6 +2823,19 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-gaziantep-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T05:12:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-gaziantep2026-news-v1\", \"0410-emep-gaziantep2026-party-v1\"]",
+      "passage_ids": "[\"0410-emep-gaziantep2026-news-p\", \"0410-emep-gaziantep2026-party-p\", \"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"Gaziantep 11. il kongresi haberi\", \"Gaziantep 11. il kongresi parti yayını\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Kongre günü, oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-gaziantep-2026-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-gebze-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:08:25+00:00",
@@ -3187,6 +3252,19 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-gaziantep-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T05:12:57+00:00",
+      "source_version_ids": "[\"0410-emep-gaziantep2026-news-v1\"]",
+      "passage_ids": "[\"0410-emep-gaziantep2026-news-p\"]",
+      "inspected_sections": "[\"Gaziantep 11. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Kongre günü, oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id / 0410-gaziantep-2026-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-izmit-2020-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:20:00+00:00",
@@ -3496,6 +3574,19 @@
       "limitations": "Programın yürürlük sırası ve konuşmanın politika sonucu bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-fund-bayhan-2026-relation için ilgili program ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-gaziantep-2026-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T05:12:57+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve haber kaynakları okundu.",
+      "limitations": "Kongre günü, oy sayısı ve 2026 tüzük ara sürümü bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-gaziantep-2026-congress-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -4882,6 +4973,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-gaziantep-2026-congress-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-gebze-2026-congress-event"
     },
     {
@@ -5139,6 +5234,14 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-fund-bayhan-2026-event|0410-emep-fund-2026-basinca-speaker-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gaziantep-2026-congress-event|0410-emep-gaziantep2026-news-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-gaziantep-2026-congress-event|0410-emep-gaziantep2026-news-p|result"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -5494,6 +5597,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-gaziantep-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-gebze-2026-congress-relation"
     },
     {
@@ -5666,6 +5773,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-gaziantep-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-gebze-2026-congress-relation"
     },
     {
@@ -5794,6 +5905,10 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-gaziantep-2026-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-izmit-2020-congress-relation"
     },
     {
@@ -5887,6 +6002,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-fund-bayhan-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-gaziantep-2026-congress-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
