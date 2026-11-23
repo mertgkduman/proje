@@ -11,7 +11,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 141 | 141 | 62468795 |
 | TİP | 18 | 18 | 62480777 |
 | DEM Parti | 21 | 9 | 62480714 |
-| İYİ Parti | 11 | 9 | 62478838 |
+| İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 13 | 9 | 62477835 |
 | DBP | 12 | 7 | 62481629 |
 | EMEP | 45 | 47 | 62477844 |
@@ -91,3 +91,5 @@ DEM Parti’nin 8 Ekim’deki iki ayrı Genel Kurul katkısı doğrulandı. Grub
 EMEP’in Ankara’daki NATO zirvesi protesto yasağına karşı dava girişimi iki görünümde doğrulandı. Parti duyurusu ile ANKA aktarımında yer alan başvuru ve talepler kaydedildi. Başvuru günü ve mahkeme sonucu araştırmaya açık. [Doğrulama makbuzu](../04-10-checks/nato-case-62477844-receipt.json)
 
 DBP için 10 Mart 2016 tarihli İHD sığınma evi raporu iki görünümde doğrulandı. İHD’nin 17 görüşmesi, 2014 yerel seçim sonuçları ve DBP’nin 2017 derlemesi ayrı kaynaklarda. Belediye hizmetinin açılış tarihi ve parti katkısı araştırmaya açık. [Doğrulama makbuzu](../04-09-checks/siginak-62481629.json) [Kaynak okuması](../04-09-checks/diyarbakir-siginma-ihd-reading.json)
+
+İYİ Parti’nin 14 Ekim 5. madde önergesi iki görünümde doğrulandı. Taş ve Usta’nın imzalı metninde Kurul görevlileri, Usta’nın açıklamasında şirket yönetim kurulu ödemeleri yer alıyor. Önerge reddedildi. Sonraki başka önerge ve 5. maddenin kabulü ayrı işlemler. [Doğrulama makbuzu](../04-07-checks/fund-commission-art5-62481667.json) [Kaynak okuması](../04-07-checks/fund-commission-art5-reading.md)
