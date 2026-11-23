@@ -12,7 +12,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | TİP | 18 | 18 | 62480777 |
 | DEM Parti | 21 | 9 | 62480714 |
 | İYİ Parti | 12 | 9 | 62481667 |
-| Yeni Yol | 13 | 9 | 62477835 |
+| Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 12 | 7 | 62481629 |
 | EMEP | 47 | 49 | 62479310 |
 | Saadet Partisi | 12 | 12 | 62479681 |
@@ -95,3 +95,5 @@ DBP için 10 Mart 2016 tarihli İHD sığınma evi raporu iki görünümde doğr
 İYİ Parti’nin 14 Ekim 5. madde önergesi iki görünümde doğrulandı. Taş ve Usta’nın imzalı metninde Kurul görevlileri, Usta’nın açıklamasında şirket yönetim kurulu ödemeleri yer alıyor. Önerge reddedildi. Sonraki başka önerge ve 5. maddenin kabulü ayrı işlemler. [Doğrulama makbuzu](../04-07-checks/fund-commission-art5-62481667.json) [Kaynak okuması](../04-07-checks/fund-commission-art5-reading.md)
 
 EMEP’in TÜPRAŞ denetimine ilişkin 7/36753 ve 7/36769 yazılı soruları iki görünümde doğrulandı. Çalışma Bakanlığının 7 Eylül 2026 tarihli cevabı ile Enerji Bakanlığının 22 Aralık 2025 tarihli cevabı kendi soru dosyalarına bağlı. Yanıtlarda tesis bazında fiilî görevlendirme sayıları açık. [Doğrulama makbuzu](../04-10-checks/tupras-norm-62479310-receipt.json)
+
+Yeni Yol’un staj sigortası kayıtları iki görünümde doğrulandı. 2/3778’in 21 Temmuz başvurusu ve komisyon girişleri, 10/4625’in 20 Ekim ön görüşme oylamasından ayrı. Elif Esen’in Yeni Yol Grup desteği sözlü katkıya bağlı. 7 Ekim imzalı 10/4625 dosyasının TBMM giriş günü 8 Ekim ve esas durumu «Gündemde». [Doğrulama makbuzu](../04-08-checks/staj-agenda-v2-62481322.json) [Kaynak okuması](../04-08-checks/staj-agenda-reading.md)
