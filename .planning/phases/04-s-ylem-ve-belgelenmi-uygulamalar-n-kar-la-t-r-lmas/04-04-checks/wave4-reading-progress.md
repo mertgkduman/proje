@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 142 | 141 | 62483765 |
-| TİP | 19 | 18 | 62481718 |
+| TİP | 20 | 19 | 62483737 |
 | DEM Parti | 22 | 9 | 62482438 |
 | İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 15 | 10 | 62481322 |
@@ -107,3 +107,5 @@ Saadet Partisi’nin Yıldırım 10. Olağan İlçe Kongresi iki görünümde do
 Yeni Parti’nin 7/51599 yazılı sorusu iki görünümde doğrulandı. İmzalı yazı 19 Ekim, TBMM kaydına giriş 20 Ekim ve Gelen Kâğıtlar ilanı 5 Kasım. 7/51538 dosyası ayrı. Yanıt durumunun kesim öncesindeki ilan tarihi araştırmaya açık. [Doğrulama makbuzu](fund-bank-51599-v2-62483765.json)
 
 EMEP’in Şık Makas kaydı iki görünümde doğrulandı. Sevda Karaca’nın toplantı sonrası açıklaması parti ve ANKA kaynaklarına bağlı. Haber günü ile görüşmenin kesin günü ayrı. TİP katkısı ve ortak olay kimliği ayrı kaynak denetiminde. [Doğrulama makbuzu](../04-10-checks/sik-makas-62481218-receipt.json)
+
+TİP’in Şık Makas kaydı ve Erkan Baş’ın ANKA’ya atfedilen desteği iki görünümde doğrulandı. EMEP’in Karaca kaydı aynı görüşmeye bağlı. Adayların dayanağındaki ANKA metni iki çalışma dizininde aynı özgün baytları taşıyor. Görüşmenin kesin günü ve talep sonucu açık. [TİP makbuzu](../04-05-checks/sikmakas-62483737.json) [Ortak olay denetimi](wave4-common-event-audit-03.json)

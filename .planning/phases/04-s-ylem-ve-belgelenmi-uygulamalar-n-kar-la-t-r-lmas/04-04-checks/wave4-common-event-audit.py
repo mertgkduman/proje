@@ -29,6 +29,16 @@ for party in slugs:
         proof[row['event_id']].append(dict(passage_id=passage['id'],version_id=version['id'],
             source_sha256=version['sha256'],source=version['final_url'],stage=row['stage'],
             section=passage['section'],claim=row['supported_point']))
+    candidate_proof = defaultdict(dict)
+    for row in records['practice_candidate']:
+        if not row['event_id']:
+            continue
+        for passage_id in json.loads(row['passage_ids']):
+            passage = tables['passage'][passage_id]
+            version = tables['document_version'][passage['version_id']]
+            candidate_proof[row['event_id']][passage_id] = dict(
+                passage_id=passage_id, source_sha256=version['sha256'],
+                source=version['final_url'], section=passage['section'])
     refs = {(row['subject_kind'],row['subject_id']) for row in package['source_review_refs']}
     embedded = {(row['subject_kind'],row['subject_id']) for row in records.get('practice_source_review', [])}
     review_path = path.with_name(f'04-{party}-review.json')
@@ -42,15 +52,18 @@ for party in slugs:
     for event in records['practice_event']:
         key = event['common_event_key']
         if key:
-            groups[key].append(dict(party=party,event=event,evidence=proof[event['id']]))
+            groups[key].append(dict(party=party,event=event,evidence=proof[event['id']],
+                candidate_evidence=list(candidate_proof[event['id']].values())))
 
 shared = []
 for key, members in sorted(groups.items()):
     if len(members) < 2:
         continue
     digests = [{row['source_sha256'] for row in member['evidence']} for member in members]
+    candidate_digests = [{row['source_sha256'] for row in member['candidate_evidence']} for member in members]
     shared.append(dict(candidate_key=key, party_records=members,
         common_evidence_sha256=sorted(set.intersection(*digests)),
+        common_candidate_evidence_sha256=sorted(set.intersection(*candidate_digests)),
         differing_fields=[field for field in sorted(members[0]['event']) if field!='id' and
                            len({member['event'][field] for member in members})>1]))
 print(json.dumps(dict(base_release=base_id,packages=package_receipts,common_event_candidates=shared),
