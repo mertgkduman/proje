@@ -9,12 +9,12 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 142 | 141 | 62483765 |
-| TİP | 20 | 19 | 62483737 |
+| TİP | 21 | 20 | 62486040 |
 | DEM Parti | 27 | 9 | 62484657 |
 | İYİ Parti | 14 | 10 | 62484676 |
-| Yeni Yol | 15 | 10 | 62481322 |
-| DBP | 18 | 7 | 62483813 |
-| EMEP | 49 | 51 | 62482891 |
+| Yeni Yol | 16 | 11 | 62486087 |
+| DBP | 25 | 7 | 62486456 |
+| EMEP | 50 | 52 | 62483818 |
 | Saadet Partisi | 14 | 12 | 62485205 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
@@ -125,3 +125,11 @@ Dokuz çalışma çiftinin yalıtılmış yapısal birleştirmesi 316 girdi olay
 Saadet Partisi’nin Kocasinan 8. Olağan İlçe Kongresi iki görünümde doğrulandı. 28 Ağustos programı, Selçuk Onat’ın yeniden seçilmesini bildiren 29 Ağustos haberleri ve parti API’sindeki boş ayrıntı ayrı korundu. İmzalı oy cetveli açık. [Doğrulama makbuzu](../04-11-checks/kocasinan-congress-62485205.json)
 
 Saadet’in Sivas konferansındaki BM atfı için 27 Ekim 2023 Genel Kurul kararı ve 18 Ekim Güvenlik Konseyi vetosu ayrı özgün belgelere bağlandı. Karar ve saha uygulamasına ilişkin değerlendirme farklı kaynak kapsamları. [BM kaynak okuması](../04-11-checks/party-sivas-un-source-reading.json)
+
+Yeni Yol’un 14 Ekim Plan ve Bütçe Komisyonunda 2/3939’un 5. maddesine ilişkin Kısacık önergesi ve ret sonucu iki görünümde doğrulandı. Komisyon önergesi, 10/4603 araştırma dosyası ve 22 Ekim’de kabul edilen 7596’nın 5. maddesi kendi işlemleriyle kaydedildi. [Doğrulama makbuzu](../04-08-checks/fund-kisacik-62486087.json)
+
+Bağlar’ın yedi 2015 belediye meclisi kararı iki görünümde doğrulandı. Çalışma vizesi kişi-ay birimini koruyor. Nakit yardımı için 367 kişi ve 125.050 TL komisyonun bildirdiği sayılar. Fiziki işler, satın alımlar ve takip raporları için ek kaynak gerekiyor. [Doğrulama makbuzu](../04-09-checks/baglar-services-62486456.json)
+
+TİP’in 2023 milletvekili adaylık komisyonu açıklaması ve YSK Başkanı’nın aday listeleri hakkında bildirdiği teslim işlemi iki görünümde doğrulandı. Komisyonun uyguladığı işlemler ve kesin aday listesi için doğrudan kaynak araştırması açık. [Doğrulama makbuzu](../04-05-checks/secim2023-62486040.json)
+
+EMEP’in akademisyenlerin çalışma koşulları hakkındaki 7/37207 yazılı sorusu ile 9 Şubat 2026 tarihli MEB/YÖK cevabı iki görünümde doğrulandı. Cevapta bildirilen devam eden denetim ve denetimin sonucu ayrı. [Doğrulama makbuzu](../04-10-checks/academics-37207-62483818-receipt.json)
