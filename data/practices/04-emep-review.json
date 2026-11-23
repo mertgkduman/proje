@@ -379,6 +379,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-karinca-9093-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0410-emep-karinca-9093-answer-v1\", \"0410-emep-karinca-9093-detail-v1\", \"0410-emep-karinca-9093-question-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-answer-visual-p\", \"0410-emep-karinca-9093-detail-date-p\", \"0410-emep-karinca-9093-detail-number-p\", \"0410-emep-karinca-9093-detail-owner-p\", \"0410-emep-karinca-9093-detail-reply-p\", \"0410-emep-karinca-9093-detail-topic-p\", \"0410-emep-karinca-9093-question-visual-p\"]",
+      "inspected_sections": "[\"Bakanlık yanıtı\", \"Soru ve yanıt bildirimi\", \"İmzalı soru\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-karinca-9093-event kaynak pasajları okundu. Eklenen özgün PDF sayfaları yeniden görsel okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-kirsehir-2026-congress-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T06:24:26+00:00",
@@ -662,6 +675,19 @@
       "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
       "result": "reviewed",
       "reason": "practice_event / 0410-ozka-27997-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-qral-9705-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0410-emep-qral-9705-answer-v1\", \"0410-emep-qral-9705-detail-v1\", \"0410-emep-qral-9705-question-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-answer-visual-p\", \"0410-emep-qral-9705-detail-date-p\", \"0410-emep-qral-9705-detail-number-p\", \"0410-emep-qral-9705-detail-owner-p\", \"0410-emep-qral-9705-detail-reply-p\", \"0410-emep-qral-9705-detail-topic-p\", \"0410-emep-qral-9705-question-visual-p\"]",
+      "inspected_sections": "[\"Bakanlık yanıtı\", \"Soru ve yanıt bildirimi\", \"İmzalı soru\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-qral-9705-event kaynak pasajları okundu. Eklenen özgün PDF sayfaları yeniden görsel okundu."
     },
     {
       "subject_kind": "practice_event",
@@ -1926,6 +1952,97 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-answer-visual-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:07:35+00:00",
+      "supported_claim": "TBMM özgün taranmış PDF sayfası görsel okundu.",
+      "limitations": "Görsel sayfalar kaynak kurum ve tarih sınırında değerlendirilir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-karinca-9093-event|0410-emep-karinca-9093-answer-visual-p|action özgün sayfa görsel okundu.",
+      "source_version_ids": "[\"0410-emep-karinca-9093-answer-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-answer-visual-p\"]",
+      "inspected_sections": "[\"Bakanlık yanıtı\"]"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0410-emep-karinca-9093-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-detail-date-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-karinca-9093-event|0410-emep-karinca-9093-detail-date-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-number-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0410-emep-karinca-9093-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-detail-number-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-karinca-9093-event|0410-emep-karinca-9093-detail-number-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0410-emep-karinca-9093-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-detail-owner-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-karinca-9093-event|0410-emep-karinca-9093-detail-owner-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0410-emep-karinca-9093-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-detail-reply-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-karinca-9093-event|0410-emep-karinca-9093-detail-reply-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0410-emep-karinca-9093-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-detail-topic-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-karinca-9093-event|0410-emep-karinca-9093-detail-topic-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-question-visual-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:07:35+00:00",
+      "supported_claim": "TBMM özgün taranmış PDF sayfası görsel okundu.",
+      "limitations": "Görsel sayfalar kaynak kurum ve tarih sınırında değerlendirilir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-karinca-9093-event|0410-emep-karinca-9093-question-visual-p|action özgün sayfa görsel okundu.",
+      "source_version_ids": "[\"0410-emep-karinca-9093-question-v1\"]",
+      "passage_ids": "[\"0410-emep-karinca-9093-question-visual-p\"]",
+      "inspected_sections": "[\"İmzalı soru\"]"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-date-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T06:24:26+00:00",
@@ -2677,6 +2794,97 @@
       "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-ozka-27997-event|0410-emep-ozka-27997-question-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-answer-visual-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:07:35+00:00",
+      "supported_claim": "TBMM özgün taranmış PDF sayfası görsel okundu.",
+      "limitations": "Görsel sayfalar kaynak kurum ve tarih sınırında değerlendirilir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-qral-9705-event|0410-emep-qral-9705-answer-visual-p|action özgün sayfa görsel okundu.",
+      "source_version_ids": "[\"0410-emep-qral-9705-answer-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-answer-visual-p\"]",
+      "inspected_sections": "[\"Bakanlık yanıtı\"]"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0410-emep-qral-9705-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-detail-date-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-qral-9705-event|0410-emep-qral-9705-detail-date-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-number-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0410-emep-qral-9705-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-detail-number-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-qral-9705-event|0410-emep-qral-9705-detail-number-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0410-emep-qral-9705-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-detail-owner-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-qral-9705-event|0410-emep-qral-9705-detail-owner-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0410-emep-qral-9705-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-detail-reply-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-qral-9705-event|0410-emep-qral-9705-detail-reply-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0410-emep-qral-9705-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-detail-topic-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-qral-9705-event|0410-emep-qral-9705-detail-topic-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-question-visual-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:07:35+00:00",
+      "supported_claim": "TBMM özgün taranmış PDF sayfası görsel okundu.",
+      "limitations": "Görsel sayfalar kaynak kurum ve tarih sınırında değerlendirilir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-qral-9705-event|0410-emep-qral-9705-question-visual-p|action özgün sayfa görsel okundu.",
+      "source_version_ids": "[\"0410-emep-qral-9705-question-v1\"]",
+      "passage_ids": "[\"0410-emep-qral-9705-question-visual-p\"]",
+      "inspected_sections": "[\"İmzalı soru\"]"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -3564,6 +3772,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-karinca-9093-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-karinca-9093-answer-v1\", \"0410-emep-karinca-9093-detail-v1\", \"0410-emep-karinca-9093-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-karinca-9093-answer-visual-p\", \"0410-emep-karinca-9093-detail-date-p\", \"0410-emep-karinca-9093-detail-number-p\", \"0410-emep-karinca-9093-detail-owner-p\", \"0410-emep-karinca-9093-detail-reply-p\", \"0410-emep-karinca-9093-detail-topic-p\", \"0410-emep-karinca-9093-question-visual-p\"]",
+      "inspected_sections": "[\"Bakanlık yanıtı\", \"G/A/5\", \"Soru ve yanıt bildirimi\", \"İmzalı soru\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-karinca-9093-relation kaynak pasajları okundu. Eklenen özgün PDF sayfaları yeniden görsel okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-kirsehir-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T06:24:26+00:00",
@@ -3860,6 +4081,19 @@
       "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
       "result": "reviewed",
       "reason": "practice_relation / 0410-ozka-27997-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-qral-9705-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-qral-9705-answer-v1\", \"0410-emep-qral-9705-detail-v1\", \"0410-emep-qral-9705-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\", \"0410-emep-qral-9705-answer-visual-p\", \"0410-emep-qral-9705-detail-date-p\", \"0410-emep-qral-9705-detail-number-p\", \"0410-emep-qral-9705-detail-owner-p\", \"0410-emep-qral-9705-detail-reply-p\", \"0410-emep-qral-9705-detail-topic-p\", \"0410-emep-qral-9705-question-visual-p\"]",
+      "inspected_sections": "[\"Bakanlık yanıtı\", \"G/A/6\", \"Soru ve yanıt bildirimi\", \"İmzalı soru\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-qral-9705-relation kaynak pasajları okundu. Eklenen özgün PDF sayfaları yeniden görsel okundu."
     },
     {
       "subject_kind": "practice_relation",
@@ -4396,6 +4630,19 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-karinca-9093-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-karinca-9093-detail-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-karinca-9093-detail-date-p\", \"0410-emep-karinca-9093-detail-number-p\", \"0410-emep-karinca-9093-detail-owner-p\", \"0410-emep-karinca-9093-detail-reply-p\", \"0410-emep-karinca-9093-detail-topic-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-karinca-9093-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-kirsehir-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T06:24:26+00:00",
@@ -4692,6 +4939,19 @@
       "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-ozka-27997-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-qral-9705-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-qral-9705-detail-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\", \"0410-emep-qral-9705-detail-date-p\", \"0410-emep-qral-9705-detail-number-p\", \"0410-emep-qral-9705-detail-owner-p\", \"0410-emep-qral-9705-detail-reply-p\", \"0410-emep-qral-9705-detail-topic-p\"]",
+      "inspected_sections": "[\"G/A/6\", \"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-qral-9705-relation kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -5436,6 +5696,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-karinca-9093-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:02:52+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve bakanlık yanıtının işin niteliğine ilişkin farklı anlatımları ve yanıt anında derdest dava ayrı tutulur.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-karinca-9093-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-kirsehir-2026-congress-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T06:24:26+00:00",
@@ -5732,6 +6005,19 @@
       "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-ozka-27997-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-qral-9705-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T15:57:19+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\"]",
+      "inspected_sections": "[\"G/A/6\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Bakanlık yanıtı Genel Müdürlük işlemleriyle sınırlıdır; iptalin tüm idari nedenleri açıklanmış değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-qral-9705-relation kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -6971,6 +7257,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-karinca-9093-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-kirsehir-2026-congress-event"
     },
     {
@@ -7056,6 +7346,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-ozka-27997-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-qral-9705-event"
     },
     {
       "subject_kind": "practice_event",
@@ -7447,6 +7741,34 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-answer-visual-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-number-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-detail-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-karinca-9093-event|0410-emep-karinca-9093-question-visual-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-kirsehir-2026-congress-event|0410-emep-kirsehir2026-news-date-p|action"
     },
     {
@@ -7676,6 +7998,34 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-ozka-27997-event|0410-emep-ozka-27997-question-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-answer-visual-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-number-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-detail-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-qral-9705-event|0410-emep-qral-9705-question-visual-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -7951,6 +8301,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-karinca-9093-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-kirsehir-2026-congress-relation"
     },
     {
@@ -8040,6 +8394,10 @@
     {
       "subject_kind": "practice_relation",
       "subject_id": "0410-ozka-27997-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-qral-9705-relation"
     },
     {
       "subject_kind": "practice_relation",
@@ -8207,6 +8565,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-karinca-9093-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-kirsehir-2026-congress-relation"
     },
     {
@@ -8296,6 +8658,10 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-ozka-27997-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-qral-9705-relation"
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -8527,6 +8893,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-karinca-9093-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-kirsehir-2026-congress-relation"
     },
     {
@@ -8616,6 +8986,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-ozka-27997-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-qral-9705-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
