@@ -19,7 +19,7 @@ for role, typ, path, url, final, date, kind, publisher, author, title in sources
         dest=obj/name
         if dest.exists(): assert dest.read_bytes()==content
         else: dest.write_bytes(content)
-    add('document',id=ident,party_id='emep',title=title,source_kind=kind)
+    add('document',id=ident,party_id='emep',title=title,source_kind='party' if kind=='party_publication' else kind)
     add('document_version',id=version,document_id=ident,original_url=url,final_url=final,document_date=date,date_precision='day',date_unknown_reason=None,version_label=title,accessed_at=now,verified_at=now,mime='application/pdf' if typ=='pdf' else 'text/html',sha256=sha,original_path='objects/'+sha+'/'+original,readable_path='objects/'+sha+'/readable.html')
     add('source_attribution',version_id=version,kind=kind,publisher=publisher,author=author,social_handle=None,published_at=date if role=='party' else None,date_precision='day' if role=='party' else 'unknown',public_url=url,basis='Tarihli YSK kararının yayın günü doğrulanmadı; ayrı parti yayını tarihlidir. YSK www TLS bağlantısı kesildi, ysk.gov.tr eşdeğer uç yanıt verdi.')
     if typ=='html':

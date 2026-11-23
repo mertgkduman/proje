@@ -24,7 +24,7 @@ for role, path, url, date, kind, publisher, author, title, exact in sources:
     view['version_id'] = version; validate_view(root, view)
     assert exact in html_source_text(raw)
     entries.extend([
-        dict(kind='document', values=dict(id=ident, party_id='emep', title=title, source_kind=kind)),
+        dict(kind='document', values=dict(id=ident, party_id='emep', title=title, source_kind='party' if kind=='party_publication' else kind)),
         dict(kind='document_version', values=dict(id=version, document_id=ident, original_url=url, final_url=url, document_date=date, date_precision='day', date_unknown_reason=None, version_label=title, accessed_at=now, verified_at=now, mime='text/html', sha256=sha, original_path='objects/'+sha+'/original.html.bin', readable_path='objects/'+sha+'/readable.html')),
         dict(kind='archive_view', values=view),
         dict(kind='source_attribution', values=dict(version_id=version, kind=kind, publisher=publisher, author=author, social_handle=None, published_at=date, date_precision='day', public_url=url, basis='Tarihli özgün yayın; parti açıklaması ve bağımsız haber ayrı belgelerdir.')),
