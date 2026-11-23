@@ -6,7 +6,7 @@ from uygulamalar import practice_review_targets
 c = Path(__file__).resolve().parent
 root = c.parents[3]
 p, r = c/'nov03-4961-dem-draft.json', c/'nov03-4961-dem-review-draft.json'
-assert hashlib.sha256(p.read_bytes()).hexdigest() == 'cf76a905d3dff0352ea334265cc66807d277af9418151cfd324fd8b036eb9ca1'
+assert hashlib.sha256(p.read_bytes()).hexdigest() == '0e498c38317c2746319cd8e9fa1f2cc0139a0c804fa43e8ff4ab55853ff41557'
 assert hashlib.sha256(r.read_bytes()).hexdigest() == 'c3f1303a72f442b0d12d9fab49471efb57d75138bc4168cc6542875338ef6f6c'
 payload, review = json.loads(p.read_text()), json.loads(r.read_text())
 data = dict(payload['practice_records'])

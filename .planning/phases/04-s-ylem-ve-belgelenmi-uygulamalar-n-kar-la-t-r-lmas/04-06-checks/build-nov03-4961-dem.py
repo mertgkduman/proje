@@ -57,7 +57,7 @@ for suffix, url in urls.items():
     version = ('0406-nov03-genelgorusme-floor-v1' if suffix == 'floor-v1' else q(suffix)); refs = [x for x in ids if passages[x]['version_id'] == version]
     if not any(x['scope_id'] == scope and x['version_id'] == version for x in pkg['practice_records'].get('practice_scope_source', [])):
         add('practice_scope_source', scope_id=scope, version_id=version, inspected_sections=json.dumps([passages[x]['section'] for x in refs], ensure_ascii=False), inspected_at=now)
-    add('practice_attempt_v2', id=q(suffix+'-reading'), scope_id=scope, attempted_at=now, query='3 Kasım 2026 10/4961 fonlar genel görüşme ve DEM grup konuşması', url=url,
+    add('practice_attempt_v2', id=q(suffix+'-reading'), scope_id=scope, attempted_at=now, query='3 Kasım 2026 10/4961 sigorta araştırması ve DEM grup konuşması', url=url,
         result='examined', reason='İlgili bölüm okundu; imzalı PDF üç sayfası görsel olarak incelendi.', source_version_id=version)
 pkg['entries'] += entries
 rev['source_review_refs'] = [dict(subject_kind=x['subject_kind'], subject_id=x['subject_id']) for x in rev['practice_source_review']]

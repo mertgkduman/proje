@@ -13,7 +13,7 @@ sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
 package = checks / 'nov03-4961-dem-draft.json'
 review = checks / 'nov03-4961-dem-review-draft.json'
-assert sha(package) == 'cf76a905d3dff0352ea334265cc66807d277af9418151cfd324fd8b036eb9ca1'
+assert sha(package) == '0e498c38317c2746319cd8e9fa1f2cc0139a0c804fa43e8ff4ab55853ff41557'
 assert sha(review) == 'c3f1303a72f442b0d12d9fab49471efb57d75138bc4168cc6542875338ef6f6c'
 old = root / 'data/practices/04-dem.json'
 old_review = root / 'data/practices/04-dem-review.json'
