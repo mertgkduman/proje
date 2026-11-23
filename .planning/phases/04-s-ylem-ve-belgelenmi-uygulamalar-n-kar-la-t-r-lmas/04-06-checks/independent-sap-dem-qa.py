@@ -13,11 +13,11 @@ sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
 package = checks / 'sap-dem-draft.json'
 review = checks / 'sap-dem-review-draft.json'
-assert sha(package) == '17f2fe5ab4754d7263bede0e2aade1b0f167bdd0fd18b3136208af6a7b42eed7'
+assert sha(package) == '72ca375a83715ce94b40a3740e90f66a16137dce47329808a486776cc4a0a08b'
 assert sha(review) == 'd7cfbcbe073f9b9f734196172c2303c67f7286e47ddd64db537e4145da37ea84'
 old = root / 'data/practices/04-dem.json'
 old_review = root / 'data/practices/04-dem-review.json'
-assert sha(old) == 'e6a2344a2e96f472f0c498252154a728ce391b1d20e7ab05d62bbce851fe21be'
+assert sha(old) == '560d462a1d24a52b7535a7f41f646613f9795e840f6be52f61b7ccad4f9916d9'
 assert sha(old_review) == '94ab250fda1f9414e9557b69c9d2b21ef5ea9309141c21166fba713b0738a4f8'
 base, new = (json.loads(p.read_text()) for p in (old, package))
 for key in ('entries', 'scope_inventory'):

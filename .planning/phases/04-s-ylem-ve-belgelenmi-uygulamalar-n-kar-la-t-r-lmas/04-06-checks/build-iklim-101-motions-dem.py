@@ -5,7 +5,7 @@ from arsiv import pdf_page_text
 from uygulamalar import practice_review_targets,validate_practice_source_review
 c=Path(__file__).resolve().parent;root=c.parents[3];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 p,r=c/'sap-dem-draft.json',c/'sap-dem-review-draft.json'
-assert sha(p)=='17f2fe5ab4754d7263bede0e2aade1b0f167bdd0fd18b3136208af6a7b42eed7'
+assert sha(p)=='72ca375a83715ce94b40a3740e90f66a16137dce47329808a486776cc4a0a08b'
 assert sha(r)=='d7cfbcbe073f9b9f734196172c2303c67f7286e47ddd64db537e4145da37ea84'
 pkg,rev=json.loads(p.read_text()),json.loads(r.read_text());now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 pdf=root/'data/practices/sources/dem/objects/4578102a09ed3332b00aa164dd796bed252eec3ee90e77120e442f351711349c/original.pdf'

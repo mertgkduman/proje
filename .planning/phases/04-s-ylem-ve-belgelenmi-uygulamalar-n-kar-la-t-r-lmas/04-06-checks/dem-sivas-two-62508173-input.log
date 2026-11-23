@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0406-dem-sivas-two-wwb12y5v/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0406-dem-sivas-two-wwb12y5v/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0406-dem-sivas-two-wwb12y5v/src/uygulamalar.py", line 1381, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0406-dem-sivas-two-wwb12y5v/src/uygulamalar.py", line 1345, in _load_practice_copy
+    validate_phase_one_workspace(work, storage_root=storage_root)
+  File "/tmp/gsd-0406-dem-sivas-two-wwb12y5v/src/arsiv.py", line 3073, in validate_phase_one_workspace
+    data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0406-dem-sivas-two-wwb12y5v/src/arsiv.py", line 2793, in export_db
+    validated_policy = validate_policy(db,result,storage_root=storage_root)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0406-dem-sivas-two-wwb12y5v/src/kaynaklar.py", line 87, in validate_policy
+    raise ValueError('Yeni kaynak için atıf gerekli')
+ValueError: Yeni kaynak için atıf gerekli

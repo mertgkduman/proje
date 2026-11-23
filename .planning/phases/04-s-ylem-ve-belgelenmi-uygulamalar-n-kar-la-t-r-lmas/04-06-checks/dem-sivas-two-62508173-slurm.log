@@ -1,0 +1,11 @@
+Staged 220 original, readable and view paths; package fe9d623bd2293b4b9fd99e61370e8d577f9ae041182522db796545b7c632b7c8; review af7dcf5f3961a01e900283082e49e32c3a3f521fe3b8f692936cf9efe1f1aaaf
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/validate-sivas-two-dem.py", line 24, in <module>
+    mod.main(package, review, 'dem-sivas-two', '0406-iklim-gk-17-event', '0406-2025-224-relation', '')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1

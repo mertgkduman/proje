@@ -5,7 +5,7 @@ from uygulamalar import practice_review_targets, validate_practice_source_review
 c=Path(__file__).resolve().parent
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 base,review=c/'iklim-103-motions-dem-draft.json',c/'iklim-103-motions-dem-review-draft.json'
-assert sha(base)=='e6a2344a2e96f472f0c498252154a728ce391b1d20e7ab05d62bbce851fe21be'
+assert sha(base)=='560d462a1d24a52b7535a7f41f646613f9795e840f6be52f61b7ccad4f9916d9'
 assert sha(review)=='94ab250fda1f9414e9557b69c9d2b21ef5ea9309141c21166fba713b0738a4f8'
 pkg,rev=json.loads(base.read_text()),json.loads(review.read_text())
 entries=json.loads((c/'sap-2882-source-records.json').read_text())['entries']

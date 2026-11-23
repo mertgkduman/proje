@@ -5,7 +5,7 @@ from uygulamalar import validate_practices
 c=Path(__file__).resolve().parent;root=c.parents[3]
 old=root/'data/practices/04-dem.json';candidate=c/'sivas-two-dem-draft.json'
 assert hashlib.sha256(old.read_bytes()).hexdigest()=='6e6161fe2a8e29fe78185807d03c27c441a912084e6d27cef2b3716e06747553'
-assert hashlib.sha256(candidate.read_bytes()).hexdigest()=='fe9d623bd2293b4b9fd99e61370e8d577f9ae041182522db796545b7c632b7c8'
+assert hashlib.sha256(candidate.read_bytes()).hexdigest()=='f2f7c7a74d75a762f5247a728be572559e96d2cc686e117a9c1aa47e4939bd44'
 base,new=json.loads(old.read_text()),json.loads(candidate.read_text())
 snapshot=root/'data/.staging/gsd-0406-dem-2026-pm-myk-62499139/releases/92cd80f8f9e346bba28f12a3623e4127/records.json'
 data=json.loads(snapshot.read_text());canon=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
