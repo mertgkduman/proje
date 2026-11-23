@@ -83,3 +83,5 @@ Cumhuriyet 27.06.2025 01:04 (+03) haberinin özgün HTML SHA aafa748fe4ffd56bffb
 104 tutanak metin 299000–311000 okundu: 19. madde çıkarma ve Yeni Yol değişiklik önergelerinin reddi, daha sonra İYİ Parti ve CHP benzer önerge konuşmalarının başlaması görülür; bunlar TİP işlemi değildir.
 
 104 tutanak metin 311000–323000 okundu: 19. madde benzer önergeleri ret ve madde kabulünden sonra 20. madde için dört aynı mahiyetli önerge görüşmesi başlıyor; imzacı gruplar ayrı listelenmiş, TİP atfı bulunmamıştır.
+
+104 tutanak metin 323000–345000 okundu: 20. madde benzer dört önerge reddi, maddenin kabulü, ardından teklifin tümü için Emel Gözükara Durmaz lehte ve sonraki bölümde Ali Mahir Başarır aleyhte konuştu. Böylece iklim teklifinin ilgili 202805–351494 karakter aralığı (birleşim sonu dahil) sırayla okundu; TİP konuşması veya TİP önergesi bu aralıkta saptanmadı. İlk 202805 karakter okunmadı; birleşimin tamamı okunmuş değildir.
