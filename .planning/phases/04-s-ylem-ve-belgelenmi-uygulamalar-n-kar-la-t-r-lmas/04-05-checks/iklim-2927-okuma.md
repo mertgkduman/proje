@@ -240,3 +240,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 630–634 metni: enerji teknolojileri, madencilik rehabilitasyonu, orman yutakları ve tarıma ilişkin tarihli komisyon önerileri; TİP görüşü ya da gerçekleşmiş mevzuat değil. Çok sütunlu tablolar görsel incelenmedi. Sonraki 635; metin taraması 635/860, görseller ve 225 indeks açık.
 
 - PDF indeks 635–639 metni: kent toprağı, adil geçiş, sağlık, ulaştırma, turizm ve kırılgan gruplarla ilgili komisyon önerileri, gerçekleşmiş uygulama veya TİP beyanı olarak alınmadı. Çok sütunlu tablolar görsel incelenmedi. Sonraki 640; metin taraması 640/860, görseller ve 220 indeks açık.
+
+- PDF indeks 640–644 metni: finans, enerji altyapısı, ormancılık ve yangın senaryoları hakkındaki komisyon tavsiyeleri 2021 tarihli öneri olarak kaydedildi, gerçekleşmiş sonuç veya TİP görüşü değildir. Çok sütunlu tablolar görsel incelenmedi. Sonraki 645; metin taraması 645/860, görseller ve 215 indeks açık.
