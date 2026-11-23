@@ -1,0 +1,3 @@
+# Öğretmen çalışma koşulları: tarihsel söylem ucu
+
+5 Aralık 2012 arşiv yakalamasındaki Yeşiller ve Sol Gelecek programatik metninin eğitim bölümünde, yeterli hizmet öncesi eğitimi almış öğretmenler için güvenceli istihdam ile tüm eğitim emekçileri için yaşam ve çalışma koşullarının iyileştirilmesi, grevli toplu sözleşmeli sendikal haklar ve özlük haklarının geliştirilmesi önerilir. Özgün SHA 8a0478f4dc358fbdbaeeddfad02a437c8a3135f7768982d2e151e4d9bc3522ed; arşiv yakalaması yayın veya hukuki yürürlük tarihi değildir. 24 Haziran 2026 DEM grup konuşması ile konu yakınlığı vardır; belge kimliği ve sonraki benimsenme durumu ayrıca araştırılmalıdır. Eski metin ile güncel uygulamanın gerçekleştiği veya özel sektör taban maaşının geri geldiği sonucu çıkarılmaz.
