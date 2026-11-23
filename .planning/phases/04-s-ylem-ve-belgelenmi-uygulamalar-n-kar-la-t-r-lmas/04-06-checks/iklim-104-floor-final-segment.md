@@ -1,0 +1,3 @@
+# 104. birleşim: iklim gündemi son okuma dilimi
+
+2 Temmuz 2025 tam tutanak SHA 84c36043d410905c0227bc2ed17339ecd2fbc94fe0a58c6d0f40ea5afe57a679 normalize 344000–350279 okundu. Ali Mahir Başarır’ın tüm teklif aleyhindeki kişisel konuşmasının ardından Genel Kurul elektronik açık oylamaya geçti. Başkan 383 oy, 242 kabul, 141 ret duyurdu ve teklifin kabulünü açıkladı; kesin cetvelin 242 kabul, 140 ret, 1 mükerrer ayrımı bağımsız belgede kayıtlıdır. Ardından başka teklif komisyon yokluğu nedeniyle ertelendi ve birleşim kapandı. Bu ve önceki beş notla normalize metnin 200000–350279 dilimi okundu; 0–199999 diğer gündemlerin DEM adına tamamının okunduğu anlamına gelmez.
