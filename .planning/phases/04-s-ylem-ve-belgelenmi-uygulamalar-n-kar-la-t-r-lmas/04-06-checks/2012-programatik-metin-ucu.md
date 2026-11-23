@@ -19,3 +19,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 12000–23999 okundu (2/16): Kürt sorunu, eşit yurttaşlık ve yerel yönetimlere ilişkin dönemsel değerlendirmeler; demokrasi, katılım, sendika ve yerel karar süreçleri üzerine hedefler. Dönemsel iddialar partiye aittir; 2026 uygulaması veya güncel yürürlük çıkarılmadı.
 
 2012 birincil metin 24000–35999 okundu (3/16): çevre ve iklim adaleti, fosil yakıtlar, ekolojik haklar ve yerel katılım bağlamında parti hedefleri; güncel çevre uygulaması veya ETS özel önergesi değildir. Tarihsel olgu ve nedensellik iddiaları partiye atıflıdır ve bağımsız doğrulanmadı.
+
+2012 birincil metin 36000–47999 okundu (4/16): her vatandaş için asgari gelir hakkı, katılım/cinsiyet eşitliği ve Kürt sorununda diyalog, yerel yönetim ve toplumsal haklar hedefleri. Genel asgari gelir hedefi, engellilik veya istihdam durumu özelindeki sonraki önerilerle kapsam ve miktar bakımından aynı varsayılmaz; tarihsel kimlik/yürürlük bağı ayrıca incelenir.
