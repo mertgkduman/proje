@@ -15,3 +15,5 @@ Basılı 19. sayfadaki (sıfır-indeks 20) 4.5 şeffaflık hükmü görsel okund
 Basılı 28. sayfadaki (sıfır-indeks 29) 7.2 her kademedeki parti organlarının gelir-gider ve diğer defterleri tutması gerektiğini belirtir. Bu genel defter kuralı ile 4.5'teki üyelerin mali durumu denetleme hakkı ilişkili olsa da, belirli bir yerel örgütte hesap tutulduğunu veya denetlendiğini tek başına kanıtlamaz; kaynak sürümü ve fiilî belgeler araştırılacaktır.
 
 Seçimlere ilişkin 7.1 bölümü basılı 27–28. sayfalarda sona erer; okunan bu bölümde adaylık, oy ve yeterlilik hükümleri vardır, ayrıca bir seçim itiraz usulü açıkça görülmedi. Bu yalnız belirtilen bölüm ve sürümle sınırlıdır; diğer hükümler, yönetmelikler, başka tüzük sürümleri ve somut itirazlar incelenmeden böyle bir usulün bulunmadığı sonucuna varılmaz.
+
+Basılı 19. sayfa 4.4, kongre ve konferansı temel başlık görüşlerinin tüm üyelerin katılımıyla oluşturulduğu organlar olarak tanımlar. Bu genel katılım hükmü her üyenin kongre oturumunda bizzat konuşma süresi ya da söz hakkını tek başına düzenlemez; kongre yönetmeliği ve somut oturum örnekleri ayrıca araştırılmalıdır.
