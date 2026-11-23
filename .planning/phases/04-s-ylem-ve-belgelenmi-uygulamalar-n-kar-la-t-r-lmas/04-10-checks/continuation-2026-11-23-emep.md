@@ -182,3 +182,8 @@ Gövde makbuzları 165–177 işlendi; sonraki 178. Parti 15 Mart İliç başvur
 
 - Sonraki okumalar: 193–196 tamam, 192 çok dilli 6287 bakımından `partial` (Türkçe okundu, Kürtçe/Arapça tam değerlendirilmedi); sıradaki 197. 62491679 0:0 tamamlandı; güçlendirilmiş 62491755 çalışıyor, önceki ara çift terfi edilmeyecek.
 - 2022 parti göç raporu ve Bayhan 7/2134 imzalı soru/İçişleri yanıtı özgün kaynakları `migration-2134-reading.json`, arşiv commit 365b0490. Parti ve bakanlık anlatımları ayrı, yanıt tüm merkezler için kesinlik vermez. 65/67 aday a3ae001d, 563 semantik hedef başarılı, exact paket `32394525b374b696fcc1de95e4aa08a57d5a09a2649d80f16e9f3785b843e262`, review `17af6bc9798acc85e261c0df1701ab9f0f5ae80c3623ff541338fa989682ee01`; 62497593, 62496822 ardından bekliyor.
+
+
+### 199–210 kaynak okumaları ve devam
+
+199–210 gövde dilimleri gerçek özgün aralıklar okunarak makbuzlandı ve queue güncellendi (dbe50457, abff96ee, f6d2fb0d, 59784391, a628a789, b46506c5, 00bd19ce, cc240741, 77d5e52e, 63295c6f, 2499b1ca, 75536d83). 192 çokdilli kısım partial kalıyor; 211 pending. 211 için 5778 devamı, 5773, 5770 ve 5766 gerçek okunmuş; henüz makbuzlanmadı, kalan parçalar okunmadan tranche read yapılmamalı. 62491755 25. dakikada RUNNING; sonraki tüm işler bağımlı ve kapı sonucu olmadan terfi yok. Canlı çift 58/60 ve 8ba92454. 610 hücre açık. 209daki deprem işçisi toplantısı BİRTEK-SEN ve işçi anlatılarını, 210daki 20 Haziran Bayhan göç önerileri ile parti açıklamasını ayrı tutar.
