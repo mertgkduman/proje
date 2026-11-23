@@ -29,3 +29,5 @@ PDF 38–41: serbest ve çağrı merkezi çalışanları, kurye, emekli ve engel
 PDF 42–45: şerh sermaye yoğunlaşması üzerine literatür, Rekabet Kurumu birleşme/devralma kayıtları ve İSO 500 kârlılık anlatımına yer veriyor. 43. indeksteki tablo metin katmanında görünmüyor; görüntüsü ve kurumsal kaynak kontrol edilmeden tablodan veri çıkarılmadı. Atıflı analiz ve yıllar arasındaki nominal kıyaslar kaynağına aittir. 0–45 ve 115–117 toplam 49/160, 111 açık.
 
 PDF 43 görselindeki grafik 2013–2024 işlem değerlerini milyar TL ve milyar dolar ayrı serilerle gösteriyor; metindeki tüm bildirilen işlem toplamı ile Türkiye hedef şirket değeri farklı evrenler olarak sunulmuş. Grafiğin seri kapsamı Rekabet Kurumu aslıyla doğrulanmadan bu iki sayıya eşitlenmedi.
+
+PDF 46–49: banka kârları, gelir/servet dağılımı ve yoksulluk verileri ile siyasi değerlendirmeler okunmuştur. Şerh Kasım 2025 yoksulluk sınırını 27 ve 47 indekslerinde 97.159 TL, 49’da 97.459 TL olarak aktarıyor; özgün Türk-İş verisi kontrol edilmeden değerler birleştirilmez. 0–49 ve 115–117 toplam 53/160, 107 açık.
