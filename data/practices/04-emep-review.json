@@ -236,6 +236,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-mdkd-report-2026-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-press-v1\", \"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-press-aggregate-p\", \"0410-emep-mdkd-report-2026-press-individual-p\", \"0410-emep-mdkd-report-2026-tbmm-aggregate-p\", \"0410-emep-mdkd-report-2026-tbmm-critique-p\", \"0410-emep-mdkd-report-2026-tbmm-intent-p\", \"0410-emep-mdkd-report-2026-tbmm-speaker-p\"]",
+      "inspected_sections": "[\"Bayhan’ın rapor taslağına ilişkin eleştirisi\", \"Bayhan’ın rapora hayır yönündeki beyanı\", \"Haberde bildirilen oy toplamı\", \"Haberde kişisel ret oyları\", \"Komisyon başkanının EMEP adına söz vermesi\", \"Komisyon başkanının açıkladığı oy toplamı\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-mdkd-report-2026-event için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-mekke-question-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:31:23+00:00",
@@ -951,6 +964,84 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-press-aggregate-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-press-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-press-aggregate-p\"]",
+      "inspected_sections": "[\"Haberde bildirilen oy toplamı\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-press-aggregate-p|result için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-press-individual-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-press-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-press-individual-p\"]",
+      "inspected_sections": "[\"Haberde kişisel ret oyları\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-press-individual-p|action için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-aggregate-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-tbmm-aggregate-p\"]",
+      "inspected_sections": "[\"Komisyon başkanının açıkladığı oy toplamı\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-aggregate-p|result için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-critique-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-tbmm-critique-p\"]",
+      "inspected_sections": "[\"Bayhan’ın rapor taslağına ilişkin eleştirisi\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-critique-p|action için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-intent-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-tbmm-intent-p\"]",
+      "inspected_sections": "[\"Bayhan’ın rapora hayır yönündeki beyanı\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-intent-p|action için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-speaker-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-tbmm-speaker-p\"]",
+      "inspected_sections": "[\"Komisyon başkanının EMEP adına söz vermesi\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-speaker-p|action için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-pdf-criticism-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:31:23+00:00",
@@ -1653,6 +1744,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mdkd-report-2026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mdkd-report-2026-press-v1\", \"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\", \"0410-emep-mdkd-report-2026-press-aggregate-p\", \"0410-emep-mdkd-report-2026-press-individual-p\", \"0410-emep-mdkd-report-2026-tbmm-aggregate-p\", \"0410-emep-mdkd-report-2026-tbmm-critique-p\", \"0410-emep-mdkd-report-2026-tbmm-intent-p\", \"0410-emep-mdkd-report-2026-tbmm-speaker-p\"]",
+      "inspected_sections": "[\"Bayhan’ın rapor taslağına ilişkin eleştirisi\", \"Bayhan’ın rapora hayır yönündeki beyanı\", \"G/A/6\", \"Haberde bildirilen oy toplamı\", \"Haberde kişisel ret oyları\", \"Komisyon başkanının EMEP adına söz vermesi\", \"Komisyon başkanının açıkladığı oy toplamı\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-mdkd-report-2026-relation için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-mekke-question-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:31:23+00:00",
@@ -2056,6 +2160,19 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mdkd-report-2026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-mdkd-report-2026-press-v1\", \"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\", \"0410-emep-mdkd-report-2026-press-individual-p\", \"0410-emep-mdkd-report-2026-tbmm-critique-p\", \"0410-emep-mdkd-report-2026-tbmm-intent-p\", \"0410-emep-mdkd-report-2026-tbmm-speaker-p\"]",
+      "inspected_sections": "[\"Bayhan’ın rapor taslağına ilişkin eleştirisi\", \"Bayhan’ın rapora hayır yönündeki beyanı\", \"G/A/6\", \"Haberde kişisel ret oyları\", \"Komisyon başkanının EMEP adına söz vermesi\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-mdkd-report-2026-relation için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-mekke-question-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:31:23+00:00",
@@ -2313,6 +2430,19 @@
       "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_relation.result_finding_id / 0410-luleburgaz-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-mdkd-report-2026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0410-emep-mdkd-report-2026-press-v1\", \"0410-emep-mdkd-report-2026-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-mdkd-report-2026-press-aggregate-p\", \"0410-emep-mdkd-report-2026-tbmm-aggregate-p\"]",
+      "inspected_sections": "[\"Haberde bildirilen oy toplamı\", \"Komisyon başkanının açıkladığı oy toplamı\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id / 0410-mdkd-report-2026-relation için ilgili program, TBMM tutanağı ve haber pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
@@ -2602,6 +2732,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mdkd-report-2026-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\"]",
+      "inspected_sections": "[\"G/A/6\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-mdkd-report-2026-relation için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-mekke-question-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T09:31:23+00:00",
@@ -2849,6 +2992,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-kurdish-rights-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\"]",
+      "inspected_sections": "[\"G/A/6\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-kurdish-rights-statement için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-labor-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:20:33+00:00",
@@ -3054,6 +3210,19 @@
       "limitations": "2023 ara tüzük ve resmî seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "0410-kongre-statement için ilgili metin ve dönemsellik incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-kurdish-rights-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\"]",
+      "inspected_sections": "[\"G/A/6\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-kurdish-rights-statement için ilgili program, TBMM tutanağı ve haber pasajları okundu."
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -3265,6 +3434,19 @@
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-kurdish-rights-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-22T22:35:47+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-007-0-passage\"]",
+      "inspected_sections": "[\"G/A/6\"]",
+      "supported_claim": "Program ulusal hakları ele alır; tutanak Bayhan’ın eleştirisi ve komisyon sonucunu, haber kişisel oyu bildirir.",
+      "limitations": "Tutanak ve haberin kabul sayıları farklı; komisyon raporu Genel Kurul kararı değildir.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-kurdish-rights-statement için ilgili program, TBMM tutanağı ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-labor-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:20:33+00:00",
@@ -3440,6 +3622,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-may-resignation-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-mdkd-report-2026-event"
     },
     {
       "subject_kind": "practice_event",
@@ -3663,6 +3849,30 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-press-aggregate-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-press-individual-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-aggregate-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-critique-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-intent-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-mdkd-report-2026-event|0410-emep-mdkd-report-2026-tbmm-speaker-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mekke-question-event|0410-emep-mekke-748173-pdf-criticism-p|action"
     },
     {
@@ -3879,6 +4089,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-mdkd-report-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-mekke-question-relation"
     },
     {
@@ -4003,6 +4217,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-mdkd-report-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-mekke-question-relation"
     },
     {
@@ -4080,6 +4298,10 @@
     {
       "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-luleburgaz-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-mdkd-report-2026-relation"
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
@@ -4171,6 +4393,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-mdkd-report-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-mekke-question-relation"
     },
     {
@@ -4247,6 +4473,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-kurdish-rights-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-labor-statement"
     },
     {
@@ -4311,6 +4541,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-kurdish-rights-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-labor-statement"
     },
     {
@@ -4372,6 +4606,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-kongre-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-kurdish-rights-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
