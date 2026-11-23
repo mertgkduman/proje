@@ -1,0 +1,11 @@
+Staged 138 original, readable and view paths; package 22e0a4d6b0e9753b3b8ad397d0ab5a7e8d975b02767c3a6debe20463454b102c; review 0e1caab64c6e770218b1ff272cd15aca1c32b7366c3c2396342e5050a59393a8
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/validate-4114-first-five.py", line 24, in <module>
+    mod.main(package, review, 'dem-4114-five', '0406-4114-madde1-event', '0406-2025-224-relation', '')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 112, in main
+    check(receipt_name, 'source', ['practice-source-check','--input',str(package_path),'--review',str(review_path)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: source: exit 1
