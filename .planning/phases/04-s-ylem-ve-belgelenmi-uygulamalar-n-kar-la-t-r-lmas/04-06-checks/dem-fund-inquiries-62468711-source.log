@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3522, in main
+    render_practice_preview(package, Path(tmp) / 'preview', base_release=package.get('base_release'), source_root=source_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1448, in render_practice_preview
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1615, in _render_practice_preview
+    _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1311, in _load_practice_copy
+    validate_practices(data)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 999, in validate_practices
+    validate_practice_source_review(data, data['practice_source_review'], require_coverage=c[0]['stage'] == 'complete', revisions=data['practice_source_review_revision'] if revision_extension else None)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 257, in validate_practice_source_review
+    raise ValueError('Aynı genel açıklama birden çok hedefe kopyalanamaz')
+ValueError: Aynı genel açıklama birden çok hedefe kopyalanamaz
