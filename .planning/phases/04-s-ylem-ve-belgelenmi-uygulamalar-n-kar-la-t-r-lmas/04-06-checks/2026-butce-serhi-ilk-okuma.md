@@ -63,3 +63,5 @@ PDF 102–105: toplumsal cinsiyet bütçelemesi, inanç alanı, engelli hakları
 PDF 106–109: çocuklara yönelik bütçe, ekoloji/kentsel dönüşüm ve tarım destekleri hakkındaki değerlendirmeler okundu. Kümülatif hedef, yıllık hedef ve gerçekleşme farklıdır; bütçe tahsisi ile gerçekleşen uygulama aynı değildir. ÇED, ithalat ve çevresel zarar anlatıları doğrulanmamış şerh iddiaları olarak kalır. 0–109 ve 115–117 toplam 113/160, 47 açık.
 
 PDF 110–113: eğitim bütçesi, gençlik ve sağlıkta kamu-özel ilişkisine dair şerh değerlendirmeleri ve gelecek hedefleri okunmuştur; kurum tutarları ve hizmet sonuçları özgün bütçe ve uygulama belgeleri incelenmeden doğrulanmış sayılmaz. 0–113 ve 115–117 toplam 117/160, 43 açık.
+
+PDF 114 ve 118–120: alternatif bütçe önerileri gençlik, çocuk, enerji, inanç ve göçmen haklarını kapsıyor. 120’de geliri olmayan/belirli gelirin altındaki haneler için temel gelir ve her haneden bir kişiye asgari ücretin üçte ikisi güvencesi önerisi yazıyor; belirli gelir koşulları ve hane düzeyi korunur. Bu bir öneri metnidir, 2/2159’da böyle genel bir ödeme yapıldığı veya uygulandığı iddia edilmez. 0–120 tamam: 121/160, 39 açık.
