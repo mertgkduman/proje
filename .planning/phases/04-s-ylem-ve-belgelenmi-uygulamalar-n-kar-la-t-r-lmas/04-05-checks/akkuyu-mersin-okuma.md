@@ -37,3 +37,4 @@ PDF indeks 60–64 okundu: İYİ Ayhan Altıntaş nükleer ve atık değerlendir
 PDF indeks 65–69 okundu: CHP Süleyman Girgin, HDP Ömer Öcalan, İYİ Aydın Adnan Sezgin, AK Parti Kemal Çelik konuşmaları ayrı değerlendirildi; Akkuyu iddiaları ve önerileri konuşmacılarına aittir.
 
 - 2022 enerji bütçesi tam tutanak indeks 70–74 okundu: CHP Kamil Okyay Sındır bütçe ve Akkuyu üzerindeki sorularını, HDP Dirayet Dilan Taşdemir çevre ve enerji fiyatlarına dair eleştirilerini dile getiriyor. Bu sözler Kadıgil veya TİP’e atfedilemez; iddialar konuşmacı görüşüdür.
+- Tam tutanak indeks 75–79 okundu: HDP Taşdemir ardından İYİ Parti Muhammet Naci Cinisli, MHP Halil Öztürk ve AK Parti Bekir Kuvvet Erim konuşuyor. Akkuyu mülkiyeti ve alım garantisi eleştirileri Cinisli’ye aittir; başkalarının ifadeleri TİP’e aktarılmadı.
