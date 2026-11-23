@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 22 | 9 | 62482438 |
 | İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 15 | 10 | 62481322 |
-| DBP | 12 | 7 | 62481629 |
+| DBP | 18 | 7 | 62483813 |
 | EMEP | 48 | 50 | 62481218 |
 | Saadet Partisi | 13 | 12 | 62482921 |
 | Demokrat Parti | 17 | 16 | 62478768 |
@@ -109,3 +109,5 @@ Yeni Parti’nin 7/51599 yazılı sorusu iki görünümde doğrulandı. İmzalı
 EMEP’in Şık Makas kaydı iki görünümde doğrulandı. Sevda Karaca’nın toplantı sonrası açıklaması parti ve ANKA kaynaklarına bağlı. Haber günü ile görüşmenin kesin günü ayrı. TİP katkısı ve ortak olay kimliği ayrı kaynak denetiminde. [Doğrulama makbuzu](../04-10-checks/sik-makas-62481218-receipt.json)
 
 TİP’in Şık Makas kaydı ve Erkan Baş’ın ANKA’ya atfedilen desteği iki görünümde doğrulandı. EMEP’in Karaca kaydı aynı görüşmeye bağlı. Adayların dayanağındaki ANKA metni iki çalışma dizininde aynı özgün baytları taşıyor. Görüşmenin kesin günü ve talep sonucu açık. [TİP makbuzu](../04-05-checks/sikmakas-62483737.json) [Ortak olay denetimi](wave4-common-event-audit-03.json)
+
+Bağlar’ın 2015 tarihli altı belediye kararı iki görünümde doğrulandı. İki ayrı kredi yetkisi, kadın konuk evi, Kardelen, denetim komisyonu seçimi ve 2014 temizlik bütçesi kendi kararlarına bağlı. Harcama satırlarının toplamı ile komisyonun bildirdiği toplam arasındaki fark kaynak okumasında korunuyor. 269 sayfanın 38’i okundu. [Doğrulama makbuzu](../04-09-checks/baglar-2015-decisions-62483813.json) [İkinci okuma](../04-09-checks/baglar-council-2015-reading-002.json)
