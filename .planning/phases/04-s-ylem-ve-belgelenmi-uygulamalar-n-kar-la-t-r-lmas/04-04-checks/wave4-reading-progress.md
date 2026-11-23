@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 142 | 141 | 62483765 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 27 | 9 | 62484657 |
+| DEM Parti | 35 | 9 | 62486414 |
 | İYİ Parti | 14 | 10 | 62484676 |
 | Yeni Yol | 16 | 11 | 62486087 |
 | DBP | 25 | 7 | 62486456 |
-| EMEP | 50 | 52 | 62483818 |
+| EMEP | 53 | 55 | 62486487 |
 | Saadet Partisi | 14 | 12 | 62485205 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
@@ -133,3 +133,11 @@ Bağlar’ın yedi 2015 belediye meclisi kararı iki görünümde doğrulandı. 
 TİP’in 2023 milletvekili adaylık komisyonu açıklaması ve YSK Başkanı’nın aday listeleri hakkında bildirdiği teslim işlemi iki görünümde doğrulandı. Komisyonun uyguladığı işlemler ve kesin aday listesi için doğrudan kaynak araştırması açık. [Doğrulama makbuzu](../04-05-checks/secim2023-62486040.json)
 
 EMEP’in akademisyenlerin çalışma koşulları hakkındaki 7/37207 yazılı sorusu ile 9 Şubat 2026 tarihli MEB/YÖK cevabı iki görünümde doğrulandı. Cevapta bildirilen devam eden denetim ve denetimin sonucu ayrı. [Doğrulama makbuzu](../04-10-checks/academics-37207-62483818-receipt.json)
+
+DEM Parti’nin 4114 sayılı komisyon raporundaki 6–13. madde önergeleri iki görünümde doğrulandı. Sekiz önergenin imza ve ret kayıtları ayrı. 9 Aralık 2024 tarihli bütçe şerhine bağlı PDF’nin 214 sayfası görsel olarak okundu. Şerh içindeki farklı engellilik geliri ve kamu kotası kapsamları ile görevli bakanlıkların ters yazıldığı iki sayfa kaynaklarına bağlı. [İklim makbuzu](../04-06-checks/dem-4114-six-thirteen-v2-62486414.json) [DEM okuma durumu](../04-06-checks/devam-notu.md)
+
+EMEP’in 3/1199 ve 3/1200 tezkerelerinde 21 Ekim’deki grup konuşması, ret yönündeki beyan ve Genel Kurulun iki ayrı kabul kararı kaynaklandı. 7/29281’deki sendikal hak sorusu ve daha sonra bildirilen Bakanlık cevabı da doğrulandı. Kişisel oy ve işyeri bazında takip açık. [Tezkere makbuzu](../04-10-checks/mandates-2025-62484257-receipt.json) [7/29281 makbuzu](../04-10-checks/tupras-vakif-29281-62486487-receipt.json)
+
+Dokuz partinin 316 olay ve 275 ilişki içeren dondurulmuş çalışma girdileri, yalıtılmış birleştirme ve okuyucu denemesinde 312 olay, 275 ilişki, 324 olay eşlemesi ve 3.200 kaynak inceleme kökeni verdi. İki HTML görünümünde 275 ilişki ve geçerli 51 eşleşmemiş aday doğrulandı. Önceki aday revizyonu ve özgün kaynak atıfları korundu. Kanonik işaretçi denemenin öncesi ve sonrasında aynı özeti taşıyor. [Bağımsız denetim](wave4-merge-rehearsal-preview-pages-62487355.json)
+
+Saadet parti yayınlarında kesimden önceki 649 kaydın 77 gövdesi okundu. 4 Ağustos basın toplantısındaki hububat fiyatları, Bakanlığın 2 Haziran’da açıkladığı 2. grup fiyatlarından farklı. Ürün sınıfı ve son revizyon ayrıca araştırılıyor. Temmuz yıllık TÜFE gerçekleşmesi ile o tarihteki yıl sonu program hedefi kendi dönemleriyle kaydedildi. [Okuma makbuzu](../04-11-checks/party-news-010-reading.json) [Fiyat ve hedef kaynakları](../04-11-checks/party-tmo-ovp-reading.json)
