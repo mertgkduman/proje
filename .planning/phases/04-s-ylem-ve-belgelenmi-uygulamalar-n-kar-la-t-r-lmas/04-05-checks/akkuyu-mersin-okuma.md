@@ -23,3 +23,5 @@ PDF indeks 25–29 okundu: CHP Ahmet Akın konuşması biter, toplantı çakış
 PDF indeks 30–34 okundu: HDP adına Garo Paylan ihtiyaç sınırına kadar ücretsiz elektrik, doğalgaz, su ve internet önerisini anlatır; ardından İYİ Parti adına Bedri Yaşar konuşur. Paylan ifadeleri Kadıgil/TİP adına kaydedilmez.
 
 PDF indeks 35–39 okundu: İYİ Parti adına Bedri Yaşar konuşması sona erer, MHP adına İsmail Faruk Aksu enerji arzı ve nükleer teknoloji değerlendirmesine başlar. Görüşler ilgili parti temsilcilerine aittir.
+
+PDF indeks 40–44 okundu: MHP İsmail Faruk Aksu konuşması biter, AK Parti İbrahim Aydemir grup konuşması ve diğer vekillerin karşılıklı müdahaleleri başlar. Kimlikler ayrıldı, iddialar doğrulanmış olgu diye kullanılmadı.
