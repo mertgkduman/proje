@@ -11,8 +11,8 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 143 | 141 | 62489303 |
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 35 | 9 | 62486414 |
-| İYİ Parti | 14 | 10 | 62484676 |
-| Yeni Yol | 16 | 11 | 62486087 |
+| İYİ Parti | 15 | 10 | 62489274 |
+| Yeni Yol | 17 | 11 | 62489275 |
 | DBP | 29 | 7 | 62489251 |
 | EMEP | 53 | 55 | 62486487 |
 | Saadet Partisi | 14 | 12 | 62489362 |
@@ -147,3 +147,5 @@ Tokluca’ya ilişkin 2015/22, 2015/251, 2016/64 ve 2016/187 belediye kararları
 Kocasinan kongresinin oluş dayanağı alanındaki Yıldırım kaynak adları, bağlı Kocasinan kaynaklarının doğru tarihleri ve yayıncılarıyla düzeltildi. İki görünüm ve bağımsız kayıt karşılaştırması geçti. [Düzeltme makbuzu](../04-11-checks/kocasinan-provenance-62489362.json)
 
 Yeni Parti Grubu adına Aşkın Genç’in 8/153 ön görüşme talebine verdiği sözlü destek iki görünümde doğrulandı. Birleşim başkanının ön görüşme ret kararı ile esas dosyanın «Gündemde» kaydı ayrı. [Doğrulama makbuzu](nov03-genelgorusme-yeniparti-v3-62489303-complete.json)
+
+8/153’in 3 Kasım ön görüşme gündeminde Hasan Toktaş’ın İYİ Parti Grubu adına desteği ve Sadullah Kısacık’ın Yeni Yol Grubu adına ödeme ve şeffaflık çağrısı, iki çalışma paketinde ve iki HTML görünümünde doğrulandı. İmzalı dosya, tutanak ve TBMM sicilindeki «Gündemde» kaydı birlikte okundu. [İYİ Parti makbuzu](../04-07-checks/nov03-genelgorusme-v2-62489274.json) [Yeni Yol makbuzu](../04-08-checks/nov03-genelgorusme-v2-62489275.json)
