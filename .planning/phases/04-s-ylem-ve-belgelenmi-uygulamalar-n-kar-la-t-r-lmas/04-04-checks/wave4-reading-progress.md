@@ -8,7 +8,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
-| Yeni Parti | 143 | 141 | 62489303 |
+| Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 45 | 9 | 62490422 |
 | İYİ Parti | 16 | 10 | 62490451 |
@@ -167,3 +167,5 @@ Turhan Çömez’in 3 Kasım birleşiminde kendi grubunun 10/4961 önergesine il
 EMEP’in Öz-Ka 7/27997 yazılı sorusu ve Bakanlık cevabı iki HTML görünümünde doğrulandı. Yanıt hukuk çerçevesini aktarıyor. İşyerine özgü denetim ve gerçekleşen sonuç açık. [Makbuz](../04-10-checks/ozka-27997-62487388-receipt.json)
 
 Bağlar Belediye Meclisinin 3–5 Şubat 2015 arasında aldığı yedi karar iki görünümde doğrulandı. Yardım yetkisi, iki ayrı pazar raporu, kurs raporu ve iki abonelik gibi unsurlar karar türleriyle birlikte korundu. Teslim, ödeme ve saha sonuçları açık. [Doğrulama makbuzu](../04-09-checks/baglar-february-62490789.json)
+
+Aykut Kaya’nın 10/4961 ön görüşme önerisine Yeni Parti Grubu adına verdiği sözlü destek iki HTML görünümünde doğrulandı. Bu olayın nötr alanları, İYİ Parti ve Yeni Yol paketleriyle birebir eşleşiyor. Parti katkıları ayrı. Yeni ortak denetim dokuz pakette 369 olay kaydı, 284 ilişki ve sıfır kapsam kapanışı gösterdi. [Yeni Parti makbuzu](nov03-genelgorusme-yeniparti-4961-62490423-complete.json) [Ortak olay denetimi](wave4-common-event-audit-06.json)
