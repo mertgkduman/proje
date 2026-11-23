@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 58 | 7 | 62499119 |
 | EMEP | 59 | 61 | 62491755 |
 | Saadet Partisi | 23 | 19 | 62498024 |
-| Demokrat Parti | 28 | 25 | 62497391 |
+| Demokrat Parti | 31 | 28 | 62499618 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -219,3 +219,5 @@ Saadet’in 10 Haziran tarihli hububat talebiyle aynı birleşimdeki 10/4251 ön
 Bağlar /44→103, /63→102 ve /64→100 sevk ve rapor zincirleri iki HTML görünümünde doğrulandı. /99 ve /105 aynı müdürlük için sırasıyla 23.025.318,56 TL ve 26.772.318,56 TL veriyor. 3.747.000 TL farkın nedeni, hesap kapsamı, fişleri ve ödeme uygulaması açık. [Bağlar makbuzu](../04-09-checks/baglar-may-chains-62499119.json)
 
 DEM Parti’nin 7 Eylül Parti Meclisi ve Kadın Meclisi kayıtları ayrı olay olarak iki HTML görünümünde doğrulandı. Parti duyuruları organ adları ve sonuçlarının kaynağı. Tüzüğün ilgili günde yürürlüğü ve kararların uygulaması açık. [DEM Parti makbuzu](../04-06-checks/dem-2026-pm-myk-62499139.json)
+
+Demokrat Parti’nin 2/3485 ve 2/3970 teklifleri ile 17 Şubat Ardahan kredi duyurusu ayrı olaylar olarak iki HTML görünümünde doğrulandı. İki teklifin esas sicilinde durum Komisyonda. Duyurudaki 300.000 TL mahsup sınırı ve belirli aynî krediler için 400.000 TL koşulu kaynaklarına atıflı. Resmî Gazete PDF’si erişim zaman aşımı verdi. Ödenek, kredi ve çiftçi bazında uygulama açık. [Makbuz](../04-12-checks/agri-credit-62499618.json)
