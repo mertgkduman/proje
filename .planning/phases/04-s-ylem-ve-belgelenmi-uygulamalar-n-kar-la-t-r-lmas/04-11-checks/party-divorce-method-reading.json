@@ -1,0 +1,36 @@
+{
+  "processed_at": "2026-11-23T10:47:33.127274+00:00",
+  "reviewer_kind": "agent",
+  "party_post_id": 627,
+  "publisher": "Türkiye İstatistik Kurumu",
+  "source_url": "https://nip.tuik.gov.tr/?value=Bosanma",
+  "body_url": "https://nip.tuik.gov.tr/Home/Bosanma",
+  "original_path": "data/practices/sources/saadet/objects/0703498a9d759a390df34f9d27a7adac867cb61c4051bda473b781ef07364840/original.html.bin",
+  "sha256": "0703498a9d759a390df34f9d27a7adac867cb61c4051bda473b781ef07364840",
+  "accessed_at": "2026-11-23T10:41:25.129488+00:00",
+  "attempts": [
+    {
+      "url": "https://veriportali.tuik.gov.tr/tr/databrowser/tuik/TR,DF_BOSANMA_CINS_YASGR,1.0",
+      "result": "table_open",
+      "reason": "Erişilen HTML tablo yerine JavaScript uygulamasının kabuğunu içeriyor."
+    },
+    {
+      "url": "https://nsiws.tuik.gov.tr/rest/dataflow/TR/DF_BOSANMA_CINS_YASGR/1.0?detail=full",
+      "result": "access_limited",
+      "http_status": 401,
+      "reason": "SDMX hizmeti erişim belirteci gerektiriyor."
+    },
+    {
+      "url": "https://veriportali.tuik.gov.tr/api/tr/dataflows",
+      "result": "access_limited",
+      "http_status": 403,
+      "reason": "Halka açık sayfanın katalog isteği erişim yanıtı verdi."
+    }
+  ],
+  "reading": "TÜİK Nüfus İstatistikleri Portalı boşanma serisinde 2003’ten itibaren MERNİS verisi ve gecikmeli kayıtlar için bir yıllık geriye dönük revizyon belirtiyor.",
+  "limitations": [
+    "Parti özetindeki 17.112 ve 61.252 değerleri için yaş ve kişi/olay tablosu açık. Metodoloji notu bu iki sayıyı doğrulamıyor.",
+    "2001–2025 karşılaştırmasındaki idari kaynak geçişi ve boşanan kişi ile boşanma olayı ayrımı sayısal sınamaya dahil edilecek."
+  ],
+  "closure_refs": []
+}

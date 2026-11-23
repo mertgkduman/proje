@@ -1,0 +1,54 @@
+
+<div id="nuKoSaSoKirilim2-top">
+    <h3><span>Boşanma</span></h3>
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <p>
+				Boşanma verileri 2003 yılından itibaren Merkezi Nüfus İdaresi Sistemi (MERNİS) veri tabanından elde edilerek analiz edilmekte ve üretilen istatistikler yıllık olarak yayımlanmaktadır. Ayrıca boşanma istatistikleri idari kayıtlara gecikmeli yansıyan yeni kayıtlardan dolayı 1 yıl geriye dönük olarak güncellenmektedir.
+			</p>
+        </div>
+    </div>
+</div>
+
+<div class="information-bottom">
+    <select class="form-control mainSelect" name="nameBosanma" id="IdBosanma">
+        <option value="Bosanma" selected>Boşanma Sayısı</option>
+        <option value="KabaBosanmaHizi">Kaba Boşanma Hızı</option>
+    </select>
+    <div class="container-fluid information-bottom-tab" id="IdSekmeler">
+
+    </div>
+</div>
+
+<div id="nuKoSaSoKirilim2-top">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <p>
+                <strong>Boşanma:</strong> Evlenmenin yasal olarak sona erdirilmesidir. Yani, erkek ile kadının, yeni bir evlenme yapacak şekilde hukuki bir kararla evliliklerini tamamen sona erdirmeleridir.
+            </p>
+            <p>
+                <strong>Kaba boşanma hızı:</strong> Belli bir yıl içinde her bin nüfus başına düşen boşanma sayısıdır.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        GetLayer("#IdSekmeler", $("#IdBosanma").val());
+        $("#IdBosanma").change(function () {
+            GetLayer("#IdSekmeler", $("#IdBosanma").val());
+        });
+    });
+
+    function GetLayer(position, name) {
+        nipLoaderOpen();
+        $.post("/Home/GetLayer"
+            , { "name": name }
+            , function (data) {
+                $(position).html(data);
+                nipLoaderClose();
+         });
+    }
+</script>
