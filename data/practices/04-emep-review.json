@@ -626,6 +626,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-migration-2134-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-answer-v1\", \"0410-emep-migration-2134-detail-v1\", \"0410-emep-migration-2134-question-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-answer-visual-p\", \"0410-emep-migration-2134-detail-date-p\", \"0410-emep-migration-2134-detail-number-p\", \"0410-emep-migration-2134-detail-owner-p\", \"0410-emep-migration-2134-detail-reply-p\", \"0410-emep-migration-2134-detail-topic-p\", \"0410-emep-migration-2134-question-visual-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\", \"İmzalı soru\", \"İçişleri Bakanlığı yanıtı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-migration-2134-event kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-municipal-22702-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -2680,6 +2693,97 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-answer-visual-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-answer-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-answer-visual-p\"]",
+      "inspected_sections": "[\"İçişleri Bakanlığı yanıtı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-migration-2134-event|0410-emep-migration-2134-answer-visual-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-detail-date-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-migration-2134-event|0410-emep-migration-2134-detail-date-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-number-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-detail-number-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-migration-2134-event|0410-emep-migration-2134-detail-number-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-detail-owner-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-migration-2134-event|0410-emep-migration-2134-detail-owner-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-detail-reply-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-migration-2134-event|0410-emep-migration-2134-detail-reply-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-detail-topic-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-migration-2134-event|0410-emep-migration-2134-detail-topic-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-question-visual-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0410-emep-migration-2134-question-v1\"]",
+      "passage_ids": "[\"0410-emep-migration-2134-question-visual-p\"]",
+      "inspected_sections": "[\"İmzalı soru\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-migration-2134-event|0410-emep-migration-2134-question-visual-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-municipal-22702-event|0410-emep-municipal-22702-pdf-signers-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -4032,6 +4136,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-migration-2134-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-migration-2022-policy-v1\", \"0410-emep-migration-2134-answer-v1\", \"0410-emep-migration-2134-detail-v1\", \"0410-emep-migration-2134-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-048-0-passage\", \"0410-emep-migration-2022-policy-p\", \"0410-emep-migration-2134-answer-visual-p\", \"0410-emep-migration-2134-detail-date-p\", \"0410-emep-migration-2134-detail-number-p\", \"0410-emep-migration-2134-detail-owner-p\", \"0410-emep-migration-2134-detail-reply-p\", \"0410-emep-migration-2134-detail-topic-p\", \"0410-emep-migration-2134-question-visual-p\"]",
+      "inspected_sections": "[\"G/C/8 hizmetler\", \"Geri gönderme merkezleri ve iltica\", \"Soru ve yanıt bildirimi\", \"İmzalı soru\", \"İçişleri Bakanlığı yanıtı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-migration-2134-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-municipal-22702-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -4887,6 +5004,19 @@
       "limitations": "Yanıt bildirimi, risklerin giderildiğini göstermez.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-mesem-78231-relation için program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-migration-2134-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-migration-2022-policy-v1\", \"0410-emep-migration-2134-detail-v1\"]",
+      "passage_ids": "[\"0309-emep-program-048-0-passage\", \"0410-emep-migration-2022-policy-p\", \"0410-emep-migration-2134-detail-date-p\", \"0410-emep-migration-2134-detail-number-p\", \"0410-emep-migration-2134-detail-owner-p\", \"0410-emep-migration-2134-detail-reply-p\", \"0410-emep-migration-2134-detail-topic-p\"]",
+      "inspected_sections": "[\"G/C/8 hizmetler\", \"Geri gönderme merkezleri ve iltica\", \"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-migration-2134-relation kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -5956,6 +6086,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-migration-2134-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-048-0-passage\"]",
+      "inspected_sections": "[\"G/C/8 hizmetler\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-migration-2134-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-municipal-22702-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -6411,6 +6554,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-migration-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-048-0-passage\"]",
+      "inspected_sections": "[\"G/C/8 hizmetler\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-migration-program-statement kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-municipal-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -6733,6 +6889,19 @@
       "limitations": "Konuşmanın kesin günü ve açıklamanın etkisi bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_statement.quote_finding_id / 0410-media-program-statement için ilgili tüzük ve parti bildirgesi pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-migration-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-048-0-passage\"]",
+      "inspected_sections": "[\"G/C/8 hizmetler\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-migration-program-statement kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -7061,6 +7230,19 @@
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-migration-program-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T16:23:25+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-048-0-passage\"]",
+      "inspected_sections": "[\"G/C/8 hizmetler\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Parti ve Bakanlık farklı anlatımları ayrı atfedilir; bütün merkezler için kesin sonuç çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-migration-program-statement kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-municipal-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T08:35:10+00:00",
@@ -7330,6 +7512,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-mesem-78231-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-migration-2134-event"
     },
     {
       "subject_kind": "practice_event",
@@ -7965,6 +8151,34 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-answer-visual-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-number-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-detail-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-migration-2134-event|0410-emep-migration-2134-question-visual-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-municipal-22702-event|0410-emep-municipal-22702-pdf-signers-p|action"
     },
     {
@@ -8381,6 +8595,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-migration-2134-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-municipal-22702-relation"
     },
     {
@@ -8645,6 +8863,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-migration-2134-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-municipal-22702-relation"
     },
     {
@@ -8973,6 +9195,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-migration-2134-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-municipal-22702-relation"
     },
     {
@@ -9113,6 +9339,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-migration-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-municipal-statement"
     },
     {
@@ -9213,6 +9443,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-migration-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-municipal-statement"
     },
     {
@@ -9310,6 +9544,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-media-program-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-migration-program-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
