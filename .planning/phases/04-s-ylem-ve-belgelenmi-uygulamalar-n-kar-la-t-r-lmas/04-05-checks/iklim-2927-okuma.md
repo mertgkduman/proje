@@ -322,3 +322,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 835–839 metni: Ersoy ve Kaçmaz şerhi 835 öneriler ve iki imzacı adıyla biter; 836 Hasan Kalyoncu kişisel ek görüşü, 837 Behiç Çelik tarafından İYİ Parti adına ayrı şerh başlar. Bu görüşler TİP adına değil, kendi tarihli sahipleri adına tutulur. Sonraki 840; metin taraması 840/860, görseller ve 20 indeks açık.
 
 - PDF indeks 840–844 metni: Behiç Çelik İYİ Parti şerhinde su, tarım ve iklim değerlendirmeleri/uzman atıfları okunmuştur. 839 Paris taraflığı öncesi ifade içerir, sonraki onay durumu yerine kullanılmadı. Rakamlar ve siyasi eleştiriler şerhe atfedilir; TİP görüşü değildir. Sonraki 845; metin taraması 845/860, görseller ve 15 indeks açık.
+
+- PDF indeks 845–849 metni: Behiç Çelik İYİ Parti şerhinde su yönetimi, orman ve afet/göç senaryoları okundu; siyasi yorum, gözlem ve spekülatif öngörüler imzacıya aittir, bağımsız olgu veya TİP görüşü sayılmadı. Sonraki 850; metin taraması 850/860, görseller ve 10 indeks açık.
