@@ -15,3 +15,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 41–46 görsel okundu: teklifin eleştirisi ile 2021 araştırma komisyonu raporunun tavsiyelerinden aktarım devam ediyor. Sonuncusu bu şerhi veya eski komisyon raporunu TİP önerisi yapmaz; kaynak aidiyeti ve kalan sayfalar açıktır.
 
 İndeks 47–52 görsel okundu: önce 2021 rapor tavsiyesi aktarımı biter, ardından teklifin 1, 2, 3, 5 ve 6. maddeleri hakkındaki eleştiriler başlar. İmza henüz görülmedi; içerik TİP görüşü olarak sunulmadı.
+
+İndeks 53–58 görsel okundu: şerh teklifin 6–11. maddelerini, yerel planlar ve karbon ticareti konularını değerlendiriyor; 58. indekste komisyonda bu yönde sunulan önergenin reddi iddiası var, ancak aktör ve önerge kimliği bu sayfalarda verilmediğinden işlem olarak kaydedilmedi.
