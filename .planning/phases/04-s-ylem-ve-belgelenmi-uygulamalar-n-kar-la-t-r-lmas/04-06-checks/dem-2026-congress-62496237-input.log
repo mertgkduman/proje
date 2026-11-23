@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0406-dem-2026-congress-k4sanvjx/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0406-dem-2026-congress-k4sanvjx/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0406-dem-2026-congress-k4sanvjx/src/uygulamalar.py", line 1381, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0406-dem-2026-congress-k4sanvjx/src/uygulamalar.py", line 1312, in _load_practice_copy
+    validate_practices(data)
+  File "/tmp/gsd-0406-dem-2026-congress-k4sanvjx/src/uygulamalar.py", line 868, in validate_practices
+    raise ValueError('Salt parti kaynağı oluş kanıtı değildir')
+ValueError: Salt parti kaynağı oluş kanıtı değildir
