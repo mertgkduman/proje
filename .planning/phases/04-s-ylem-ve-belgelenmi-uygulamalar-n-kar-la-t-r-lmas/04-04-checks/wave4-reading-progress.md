@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 58 | 9 | 62502354 |
+| DEM Parti | 60 | 9 | 62516584 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -249,3 +249,7 @@ Saadet yayın kataloğunun 94 gövdesi okundu. 22 Nisan grup konuşması, Sakary
 EMEP’in İliç 7/11963 sorusu, İliç suç duyurusu, Qral ve Karınca soru ve yanıt dosyaları doğrulanmış çalışma çiftine eklendi. Suç duyurusu ve hukuki sonuç ayrı. Qral ve Karınca’daki tarama pasajları önceki kayıtlarla birlikte iki HTML görünümünde doğrulandı. [İliç soru makbuzu](../04-10-checks/earthquake-11963-62492801-receipt.json) [İliç suç duyurusu makbuzu](../04-10-checks/ilic-complaint-20240315-62494445-receipt.json) [Son makbuz](../04-10-checks/visual-passages-preserved-62496822-receipt.json)
 
 Bağlar /222→258 tarife zincirindeki iki dayanak yazısı ve /202→206 ile /243 ekleri belediye arşivi, plan ve kayıt sorgularında araştırıldı. /24’te aynı eski tarih ve numara bulundu. İki kararın ilişkisinin gerekçesi, özgün yazılar ve ekler açık. [Arama kaydı](../04-09-checks/baglar-2015-ek-portal-arastirma-001.json)
+
+Beşinci yalıtılmış önizlemede 445 parti olay satırından 427 olay satırı ve 312 ilişki üretildi. On ortak olay için karar var, on iki aday açık. İklim Kanunu’nun tümüne verilen sekiz kişisel oy pasajı ve 10/2881’deki Ekmen ile Öztürk katkıları ayrı. Verisi on SQLite ve JSON tablosuyla, iki HTML görünümü 624 ilişki ve 286 açık aday bağlantısıyla doğrulandı. İlk HTML işi 104. Birleşimin okunabilir kopyasındaki Windows-1254 kodlama farkında durdu. Üç özgün TBMM dosyası aynı SHA ile doğrulandı ve türetilmiş okunabilir kopya kaynaktan yeniden üretildi. Yeniden çalıştırma ve bağımsız denetim geçti. Kapsam kapanışı sıfır. [Birleşik önizleme makbuzu](wave4-merge-rehearsal-05-62518055.json) [Kodlama düzeltmesi](wave4-merge-rehearsal-05-readable-recovery.json)
+
+DEM Parti paketindeki 10/2880 ve 10/2883 ayrı Sivas gündem işlemleri iki HTML görünümünde doğrulandı. İlk işlemdeki ikinci oylama ve ikinci işlemde DEM adına konuşma kendi tutanak pasajlarına bağlı. İki esas sicili erişimde Gündemde. [Makbuz](../04-06-checks/dem-sivas-two-62516584.json)

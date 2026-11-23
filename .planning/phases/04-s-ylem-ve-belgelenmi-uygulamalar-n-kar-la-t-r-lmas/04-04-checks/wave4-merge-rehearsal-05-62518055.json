@@ -1,0 +1,60 @@
+{
+  "job": "62518055",
+  "rehearsal": "05",
+  "active_unmatched": 143,
+  "preview": "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-wave4-rehearsal-preview-62518055/releases/d9b84c9f3c684962894f0f266dfca5e4",
+  "manifest_sha256": "2d897f94aeb3694a4ea858f5b81c7edb28af8b3a4e8c09f71d7f26309b6d57bb",
+  "events": 427,
+  "relations": 312,
+  "source_permissions": 451,
+  "shared_keys": [
+    "tbmm-28-3-104-10-2881-gundem",
+    "tbmm-28-3-104-2-2927-iklim-kanunu",
+    "tbmm-28-4-100-10-4251-gundem",
+    "tbmm-28-4-106-10-4314-gundem",
+    "tbmm-28-4-108-10-4343-gundem",
+    "tbmm-28-5-004-10-4603-gundem",
+    "tbmm-28-5-008-10-4625-gundem",
+    "tbmm-28-5-012-10-4961-gundem",
+    "tbmm-28-5-012-yeni-yol-genel-gorusme-fon-gundem",
+    "tbmm-sik-makas-karaca-isci-basin-toplantisi-2026"
+  ],
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "closures": 0,
+  "sqlite_json_tables": [
+    "practice_event",
+    "practice_relation",
+    "practice_candidate",
+    "practice_candidate_revision",
+    "practice_contribution",
+    "practice_event_alias",
+    "practice_event_decision",
+    "practice_event_evidence",
+    "practice_merge_origin",
+    "practice_source_party"
+  ],
+  "renderer_version": 31,
+  "event_aliases": 453,
+  "review_origins": 4370,
+  "open_merge_decisions": 12,
+  "slurm_state": "COMPLETED",
+  "slurm_exit_code": "0:0",
+  "independent_html_relation_anchors": 624,
+  "independent_html_unmatched_anchors": 286,
+  "readable_recovery": {
+    "failed_job": "62514150",
+    "affected_path": "data/practices/sources/dem/objects/84c36043d410905c0227bc2ed17339ecd2fbc94fe0a58c6d0f40ea5afe57a679/readable.html",
+    "original_sha256": "84c36043d410905c0227bc2ed17339ecd2fbc94fe0a58c6d0f40ea5afe57a679",
+    "original_parties": [
+      "dem",
+      "iyi",
+      "yeni-yol"
+    ],
+    "previous_readable_sha256": "24ea16c592216f6845b5a83ea01d806be675a125dedea6e393b2d1a036f15dad",
+    "readable_sha256": "5b5ef6d0a79865469ebb9a0d7909d18b8a79ed404a85ef79715425549e4febc9",
+    "previous_replacement_characters": 33176,
+    "new_replacement_characters": 0,
+    "original_encoding": "windows-1254",
+    "generated_at": "2026-11-23T21:01:30.677472+00:00"
+  }
+}
