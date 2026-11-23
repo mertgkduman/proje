@@ -106,6 +106,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-cayirhan-720948-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0410-emep-question-20948-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-20948-register-date-p\", \"0410-emep-question-20948-register-owner-p\", \"0410-emep-question-20948-register-reply-p\", \"0410-emep-question-20948-register-topic-p\"]",
+      "inspected_sections": "[\"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Yanıt bildirimi\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-cayirhan-720948-event için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-corum-il-kongre-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -688,6 +701,58 @@
       "limitations": "Haber oylama biçimi ve kongrenin tam gününü belirtmez; seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-bolu-il-kongre-event|0410-emep-2020-bolu-discipline-full-p|result için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0410-emep-question-20948-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-20948-register-date-p\"]",
+      "inspected_sections": "[\"Soru geliş tarihi\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-cayirhan-720948-event|0410-emep-question-20948-register-date-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0410-emep-question-20948-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-20948-register-owner-p\"]",
+      "inspected_sections": "[\"Soru sahibi\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-cayirhan-720948-event|0410-emep-question-20948-register-owner-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0410-emep-question-20948-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-20948-register-reply-p\"]",
+      "inspected_sections": "[\"Yanıt bildirimi\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-cayirhan-720948-event|0410-emep-question-20948-register-reply-p|action için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0410-emep-question-20948-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-20948-register-topic-p\"]",
+      "inspected_sections": "[\"Soru özeti\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-cayirhan-720948-event|0410-emep-question-20948-register-topic-p|action için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -1666,6 +1731,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-cayirhan-720948-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-20948-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-054-1-passage\", \"0410-emep-question-20948-register-date-p\", \"0410-emep-question-20948-register-owner-p\", \"0410-emep-question-20948-register-reply-p\", \"0410-emep-question-20948-register-topic-p\"]",
+      "inspected_sections": "[\"G/B/5\", \"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Yanıt bildirimi\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-cayirhan-720948-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-corum-disiplin-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -2105,6 +2183,19 @@
       "limitations": "Haber oylama biçimi ve kongrenin tam gününü belirtmez; seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-bolu-disiplin-relation için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-cayirhan-720948-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-20948-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-054-1-passage\", \"0410-emep-question-20948-register-date-p\", \"0410-emep-question-20948-register-owner-p\", \"0410-emep-question-20948-register-reply-p\", \"0410-emep-question-20948-register-topic-p\"]",
+      "inspected_sections": "[\"G/B/5\", \"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Yanıt bildirimi\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-cayirhan-720948-relation için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -2719,6 +2810,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-cayirhan-720948-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-054-1-passage\"]",
+      "inspected_sections": "[\"G/B/5\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-cayirhan-720948-relation için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-corum-disiplin-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T07:03:39+00:00",
@@ -3057,6 +3161,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-cayirhan-mining-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-054-1-passage\"]",
+      "inspected_sections": "[\"G/B/5\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-cayirhan-mining-statement için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-central-account-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T22:49:58+00:00",
@@ -3304,6 +3421,19 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-cayirhan-mining-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-054-1-passage\"]",
+      "inspected_sections": "[\"G/B/5\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-cayirhan-mining-statement için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-central-account-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T22:49:58+00:00",
@@ -3548,6 +3678,19 @@
       "limitations": "Yanıt bildirimi sorunların giderildiğini veya soru iddialarının doğruluğunu göstermez.",
       "result": "reviewed",
       "reason": "practice_statement.quote_finding_id / 0410-seasonal-agriculture-statement için ilgili program ve TBMM kayıt pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-cayirhan-mining-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T01:30:43+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-054-1-passage\"]",
+      "inspected_sections": "[\"G/B/5\"]",
+      "supported_claim": "Program belirli varlıkların ulusallaştırılmasını önerir; TBMM kaydı Çayırhan sorusu ve yanıt bildirimini gösterir.",
+      "limitations": "Yanıt bildirimi nihai ihale sonucunu veya soru iddialarının doğruluğunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-cayirhan-mining-statement için ilgili program ve TBMM kayıt pasajları okundu."
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
@@ -3832,6 +3975,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-cayirhan-720948-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-corum-il-kongre-event"
     },
     {
@@ -4009,6 +4156,22 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-bolu-il-kongre-event|0410-emep-2020-bolu-discipline-full-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-cayirhan-720948-event|0410-emep-question-20948-register-topic-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -4312,6 +4475,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-cayirhan-720948-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-corum-disiplin-relation"
     },
     {
@@ -4448,6 +4615,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-cayirhan-720948-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-corum-disiplin-relation"
     },
     {
@@ -4636,6 +4807,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-cayirhan-720948-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-corum-disiplin-relation"
     },
     {
@@ -4740,6 +4915,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-cayirhan-mining-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-central-account-statement"
     },
     {
@@ -4816,6 +4995,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-cayirhan-mining-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-central-account-statement"
     },
     {
@@ -4889,6 +5072,10 @@
     {
       "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-seasonal-agriculture-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-cayirhan-mining-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
