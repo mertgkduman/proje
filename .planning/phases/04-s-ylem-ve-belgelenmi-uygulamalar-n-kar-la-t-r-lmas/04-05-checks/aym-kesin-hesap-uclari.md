@@ -1,0 +1,5 @@
+# Kesin hesaplar: Anayasa Mahkemesi keşif uçları
+
+22 Kasım 2026 arama indeksinde 9 Mart 2023 tarihli AYM genel kurul gündemi `E.2022/47 (SPMD)` Türkiye İşçi Partisi 2021 kesin hesabını ilk inceleme başlığıyla gösteriyor: https://www.anayasa.gov.tr/tr/mahkeme-gundemi/genel-kurul/9-mart-2023-genel-kurul-gundemi-ve-sonuclari/ . 26 Mart 2026 gündeminde `E.2025/60 (SPMD)` TİP 2024 kesin hesabı ilk inceleme satırı görünüyor: https://www.anayasa.gov.tr/tr/mahkeme-gundemi/genel-kurul/26-mart-2026-genel-kurul-gundemi-ve-sonuclari/ . Benzer ad taşıyan Türkiye Sosyalist İşçi Partisi ve Türkiye İşçi Köylü Partisi bu partiyle karıştırılmamalıdır.
+
+Bu iki AYM adresine curl ile erişimde 22 Kasım 2026'da sertifika zinciri doğrulaması başarısız oldu; özgün baytlar arşivlenmedi. Arama indeksi keşif ipucudur, kaynak sürümü veya doğrulanmış inceleme sonucu değildir. İlk inceleme kaydı nihai mali kabul değildir, tüzükteki Büyük Kongreye sunum görevini de kendiliğinden kanıtlamaz. Sertifika doğrulayan erişimle özgün AYM kaydı, nihai karar ve kesin hesap belgeleri ayrıca araştırılmalıdır; kapsam kapanmaz.
