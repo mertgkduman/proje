@@ -14,7 +14,7 @@ canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
 package = checks / 'nov03-dem-draft.json'
 review = checks / 'nov03-dem-review-draft.json'
 assert sha(package) == '8eda3f1baafa3f6c5f0b8cf8c6d0074e15faccf5e1fd7094ab83bfd8ed6aa7ee'
-assert sha(review) == '999f247823a2b19f1912dcce2a059f3be03d880063cfbac863e43a0919141391'
+assert sha(review) == 'e1c856233c016b2fbc8c435afd5116b46b9cf214629bd6e20b99d73b45ba5cce'
 old = root / 'data/practices/04-dem.json'
 old_review = root / 'data/practices/04-dem-review.json'
 assert sha(old) == 'e1d815c485448981c7e4dc5be340a5e96fab3e620958edb5ba58622130bcbe35'

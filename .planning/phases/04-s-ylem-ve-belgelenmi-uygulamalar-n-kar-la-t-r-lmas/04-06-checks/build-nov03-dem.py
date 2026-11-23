@@ -48,7 +48,7 @@ for typ, ident, refs, description in targets:
     versions = list(dict.fromkeys(passages[x]['version_id'] for x in refs))
     rev['practice_source_review'].append(dict(subject_kind=typ, subject_id=ident, reviewer_kind='agent', reviewed_at=now,
         source_version_ids=json.dumps(versions, ensure_ascii=False), passage_ids=json.dumps(refs, ensure_ascii=False),
-        inspected_sections=json.dumps([passages[x]['section'] for x in refs], ensure_ascii=False), supported_claim=description,
+        inspected_sections=json.dumps(list(dict.fromkeys(passages[x]['section'] for x in refs)), ensure_ascii=False), supported_claim=description,
         limitations='İsimli oy, açık destek ve esas önergenin kabul veya reddi çıkarılmaz.', result='reviewed', reason=('İmzalı 8/153 belgesinin ilk sayfasındaki esas numarası incelendi.' if 'genelgorusme-signed-number|initiative' in ident else 'TBMM 8/153 esas kaydındaki numara incelendi.' if 'genelgorusme-register-number|initiative' in ident else 'TBMM 10/4961 esas kaydındaki numara incelendi.' if '4961-register-number|initiative' in ident else 'İlgili sicil, imzalı dosya ve tutanak okundu.')))
 urls = {'floor-v1': 'https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/5/12/Ham/0643059d-54b7-4950-980d-f3f86843df5e.html',
         'register-v1': 'https://tbmm.gov.tr/Denetim/Genel-Gorusme-Onergesi-Detay/da5cdaed-c494-42c2-a5c5-01a1a69d2f81',
