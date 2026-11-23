@@ -180,3 +180,10 @@ TBMM 4114 57/57 PDF metin sayfası okundu, 392d5076; seçili kaynak içi kronolo
 62482132 Python başlamadan compute düğümünde yerel /tmp pin dosyası yokluğu nedeniyle FAILED; çıktı ef4026d7. Aynı pin betiğinin eş baytlı kopyası checks/root-pin-for-compute.sh ile 62482140 aynı değişmez çift için yeniden başlatıldı. Herhangi bir doğrulama başarısı veya terfi iddia edilmez.
 
 62482140 pin geçti; gerçek giriş `İncelenen kaynak gerçek girişim gerektirir` hatasıyla FAIL, makbuz 4fb999d8. Eksik yalnız iki gerçek kaynak girişimi eklenmiş v2 66125b36; exact 62482438 çalışıyor, paket a2abfd368da20d88a3296cf72cedc42a3faf0f6ae92930901c6b5ae13b12b32b, review e1f2512884d7bf10669be84c65ca726623d18227faee83482864db9b0bdf8426. Terminal, bağımsız kontrol ve terfi henüz yok.
+
+
+### 22 olay canlı ve kaynak okuma devamı
+
+62482438 v2 COMPLETED 0:0; üç kapı ve bağımsız 22 olay SQLite/JSON, önceki paket/review altkümesi, manifest dosya hashleri ve iki görünümde yeni/eski bulgular PASS. Makbuz 1a327167, kalıcı manifest b101dd42f895c51bcbaba51b26cb6eb42b4f4d6d7622395f5af21233347fc8ca. Exact canlı çalışma çifti a304c66e; paket a2abfd368da20d88a3296cf72cedc42a3faf0f6ae92930901c6b5ae13b12b32b, review e1f2512884d7bf10669be84c65ca726623d18227faee83482864db9b0bdf8426. 10/4625 gündem reddi, TBMM esas dosyası Gündemde durumu, İrmez sözleri ve herhangi bir isimli oy ayrıdır; önceki özel söylem eşleşmesi yok.
+
+198 iklim raporundaki DEM imzalı şerh PDF 66–94 29/29 sayfa doğrudan görsel okundu 41165d12, 4114 tutanağı 57/57 metin okundu. 2026 bütçe şerhi özgün 160 sayfa SHA 112be437fd3a6ffa539a7f98f5f6bea4a218c7be95d6e9b88025183d313b466b; indeks 0–73 ve 115–117, toplam 77/160 metin okundu, 83 açık. 26–27 tabloları görsel kontrol ve sayısal uyuşmazlıklar 2026-butce-serhi-ilk-okuma.md içinde. Yedi bağımsız program kesiti ve 610 hücre ile diğer kaynaklar açık; 04-06 SUMMARY oluşturulmadı.
