@@ -248,3 +248,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 650–654 metni: orman, erozyon, ormancılık araştırması, eğitim ve endemik türler üzerine komisyon tavsiyeleri tarihli önerilerdir; TİP görüşü ya da uygulama değildir. Tablolar görsel incelenmedi. Sonraki 655; metin taraması 655/860, görseller ve 205 indeks açık.
 
 - PDF indeks 655–659 metni: korunan alan, tarım sigortası ve hidrometeorolojik veri konulu komisyon tavsiyeleri; TİP görüşü veya gerçekleşmiş sonuç değil. 658 istasyon çevresinde yapılaşmaya müsaade edilmemesi gerekmemektedir ifadesi, 617 koruma tavsiyesi ve aynı 658 önleyici tedbir ifadesiyle gerilimlidir; asıl görsel/niyet kontrol edilmedi. Tablolar görsel incelenmedi. Sonraki 660; metin taraması 660/860, görseller ve 200 indeks açık.
+
+- PDF indeks 660–664 metni: yağmur suyu, fenoloji, iklim forumu ve uyarı/havza planı hakkındaki tarihli komisyon önerileri, partiye veya sonuçlara atfedilmedi. Tablolar görsel incelenmedi. Sonraki 665; metin taraması 665/860, görseller ve 195 indeks açık.
