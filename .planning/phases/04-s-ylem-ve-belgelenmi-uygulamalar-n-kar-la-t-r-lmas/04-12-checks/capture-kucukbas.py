@@ -30,7 +30,7 @@ def store(relative, content):
 
 
 sources = (
-    ('party.html','statement','23 Şubat Demokrat Parti küçükbaş projesi açıklaması','2026-02-23','2026-02-23','Demokrat Parti Basın Merkezi','party',
+    ('party.html','statement','23 Şubat Demokrat Parti küçükbaş projesi açıklaması','2026-02-23','2026-02-23','Demokrat Parti','party',
      'https://www.dp.org.tr/haber/demokrat-parti-genel-baskani-gultekin-uysal-in-kucukbas-hayvanciligi-desteklemeye-yonelik-ilan-edilen-projeye-ve-hayvancilik-sektorunun-sorunlarina-dair-yaptigi-basin-aciklamasi',
      '83199a6b2092036d8a3471d8345d8342c670dda65a98aef9776e903c81156989', [
          ('day','Parti açıklamasının tarihi',None,'23/02/2026'),
@@ -100,7 +100,7 @@ for filename,key,title,date,published,publisher,kind,url,digest,anchors in sourc
         date_precision='day' if date else 'unknown',date_unknown_reason=None if date else 'Dinamik kayıt ilk yayın gününü belirtmiyor.',
         version_label='Özgün kurum veya parti nüshası.',accessed_at=datetime.fromtimestamp(path.stat().st_mtime,timezone.utc).isoformat(),
         verified_at=now,mime='application/pdf' if pdf else 'text/html',sha256=digest,original_path=obj,readable_path=readable)
-    add('source_attribution',version_id=vid,publisher=publisher,author=None,kind='official' if kind=='official' else 'party_publication',
+    add('source_attribution',version_id=vid,publisher=publisher,author='Gültekin Uysal' if kind == 'party' else None,kind='official' if kind=='official' else 'party_publication',
         published_at=published,date_precision='day' if published else 'unknown',social_handle=None,public_url=url,
         basis='Özgün üst başlık ve varsa gün, parti, ilk imza ve kurum bağlamı birlikte okundu.')
     if not pdf:
@@ -116,6 +116,6 @@ for filename,key,title,date,published,publisher,kind,url,digest,anchors in sourc
         assert exact in text,(key,suffix)
         add('passage',id=doc+'-'+suffix,version_id=vid,exact=exact,prefix=None,suffix=None,
             article=None,section=section,pdf_page_index=index,printed_page=None)
-(checks/'kucukbas-source-records.json').write_text(json.dumps(dict(party_id='demokrat',entries=entries),ensure_ascii=False,indent=2)+'\n')
+(checks/'kucukbas-v2-source-records.json').write_text(json.dumps(dict(party_id='demokrat',entries=entries),ensure_ascii=False,indent=2)+'\n')
 (stage/'kucukbas-source-paths').write_text('\n'.join(sorted(map(str,paths)))+'\n')
 print(len(entries),len(paths))

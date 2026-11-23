@@ -12,12 +12,12 @@ harness = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(harness)
 harness.HERE = checks
 harness.SOURCE = harness.DATA / 'practices' / 'sources' / 'demokrat'
-case = 'kucukbas'
+case = 'kucukbas-v2'
 stem = '0412-kucukbas-2026'
 package = checks / f'{case}-draft.json'
 review = checks / f'{case}-review-draft.json'
-assert harness.sha(package) == '70208713c098518739b79ea8024c1e17c4cdacc863e6a2d8e8e9c8d740a7848c'
-assert harness.sha(review) == '1f3659ef136a782903e8c97ea64729f478be4bb05693190052baeba918a73fe9'
+assert harness.sha(package) == '36f61414fb9f6eff55fa2850ace673eb22b71e23a5467b09c725d458ee06b735'
+assert harness.sha(review) == '708c183f18ee2cb4aa26e15cbc16b479c1ce6d316b498cbdf934947afe1cf52a'
 records = json.loads(package.read_bytes())['practice_records']
 assert (len(records['practice_event']), len(records['practice_relation']), len(records['practice_closure'])) == (25, 23, 0)
 labels = ('apply', 'first', 'duzce', 'yozgat')
