@@ -112,3 +112,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 310–314 metni tarandı: enerji planlaması, turizm ve ulaştırma arka planı ile bakanlık görüşü. 311 tablo yalnız başlık olarak çıkarıldı, özgün görsel okunmadı; bakanlık hedefleri ve yürüyen projeler TİP uygulaması veya sonuç olarak yazılmadı. 0–314: 315/860 indeks metni veya boşluğu tarandı; görseller ve 545 indeks açık.
 
 2021 raporu indeks 315–319 metni tarandı: ulaştırma bakanlığı anlatımının devamı ve sağlık, göç, yoksulluk, gıda ve ekonomi üzerine atıflı genel arka plan. Hiçbiri TİP işlemi olarak kodlanmadı; tarihsel tahminler olgu sayılmadı. 0–319: 320/860 indeks metni veya boşluğu tarandı; görseller ve 540 indeks açık.
+
+2021 raporu indeks 320–324 metni tarandı: ekonomi, şehircilik ve emisyon azaltımı bölümü; 324 Türkiye 2015 ulusal katkı beyanı hedeflerini aktarıyor. Bu hedefler TİP politikası veya gerçekleşmiş sonuç değildir. 323 emisyon grafiği görsel olarak incelenmedi. 0–324: 325/860 indeks metni veya boşluğu tarandı; görseller ve 535 indeks açık.
