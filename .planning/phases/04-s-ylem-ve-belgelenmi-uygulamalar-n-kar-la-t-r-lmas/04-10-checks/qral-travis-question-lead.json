@@ -19,6 +19,34 @@
       "observation": "23 Ocak 2024 oturumunda Sezai Temelli Patnostaki 17 Ocak uygulamasına değiniyor; bu ayrı kişi ve önceki olay, Karacanın Gaziantep sorusu veya buna yanıt değildir."
     }
   ],
-  "next": "Karacanın kesin TBMM esas numarası, imzalı soru ve varsa tarihli yanıt bulunup özgün baytları arşivlenmeli; gösterim iptali ve farklı şehirlerdeki işlemler ayrılmalı.",
-  "closure": false
+  "next": "Özgün kaynak kayıtlarını parti kökünde hazırla ve aday olay/ilişkiyi sıradaki exact paket üzerine bağla; 610 kapsam açık.",
+  "closure": false,
+  "primary_register": {
+    "number": "7/9705",
+    "filing_date": "2024-02-12",
+    "response_notified": "2024-06-07",
+    "detail_url": "https://tbmm.gov.tr/Denetim/Yazili-Soru-Onergesi-Detay/e0b20cd3-0efd-425f-9611-018da150f179"
+  },
+  "primary_reading": {
+    "read_at": "2026-11-23T15:54:49.603552+00:00",
+    "method": "PDF sayfaları yerel Poppler ile rasterleştirilip özgün bir soru ve iki yanıt sayfası görsel olarak okundu.",
+    "files": [
+      {
+        "file": "qral-9705-detail.html",
+        "sha256": "1e95f7ffea783998a831a9750397986ba222d0f2e4bbbee87818a39c873a99a8"
+      },
+      {
+        "file": "qral-9705-question.pdf",
+        "sha256": "1e41765c37f58cc3b2585426ac11c1519b78c6f9c8ad4e27d52b7e9ba5729f62"
+      },
+      {
+        "file": "qral-9705-answer.pdf",
+        "sha256": "1ec6d05f2b33f91ba4e39cea935a56162da62c7168df728158da3fe5b47f1534"
+      }
+    ],
+    "question": "12 Şubat 2024 imzalı soru, 11 Şubat Gaziantep gösterimi iptali ve Şano Arın ayrımcılık iddiasıyla yedi soru içeriyor; Patnos tarihi belge metninde 17 Ocak 2023 yazıyor.",
+    "answer": "Bakanlığın Devlet Tiyatroları Genel Müdürlüğü yanıtı, oyunun repertuvarında olmadığını, kendi sahneleri için tahsis başvurusu ve genel müdürlüğün iptal işlemi bulunmadığını, 2022–2024te genel müdürlükçe iptal edilen veya yasaklanan Kürtçe tiyatro oyunu bulunmadığını söylüyor; daha geniş idari işlemlerin tamamını çürüttüğü çıkarılamaz.",
+    "date_discrepancy": "23 Ocak 2024 Meclis tutanağında Temelli Patnos olayını 17 Ocak olarak anlatır; soru metninde 2023 yazılıdır. Kesin yılı uzlaştırma yapılmadan açık tut.",
+    "limits": "Bakanlık yanıtını Genel Müdürlük sınırında koru; Karacanın sorusu, yanıt ve farklı tarihteki Temelli konuşması ayrı. 610 kapsam kapanışı yok."
+  }
 }
