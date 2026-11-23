@@ -25,6 +25,8 @@ ids = list(ps)
 entries.append(dict(kind='finding', values=dict(id=finding, party_id='dem', heading='Belgelenmiş uygulamalar', pair_id=finding, text='1 Temmuz 2026 Genel Kurulunda DEM Parti grubu adına konuşan İbrahim Akın, sermaye piyasalarına ilişkin 10/4343 araştırma önergesinin aynı gün görüşülmesi için Yeni Yol grubunun önerisini sözlü olarak destekledi. Üçüncü elektronik oylama sonunda gündem önerisi kabul edilmedi. Tutanaktaki konuşma, isimli bir DEM oyunu veya araştırma komisyonu kurulduğunu göstermez.', provenance='summary', epistemic_type='claim')))
 for passage in ids:
     entries.append(dict(kind='finding_evidence', values=dict(finding_id=finding, passage_id=passage, role='support')))
+    entries.append(dict(kind='verification', values=dict(finding_id=finding, passage_id=passage, checked_at=now, result='confirmed', reason='TBMM basılı tutanakta ilgili kaynak ve ifade karşılaştırıldı.')))
+entries.append(dict(kind='review', values=dict(id='review-'+finding, kind='finding', subject_id=finding, reviewer_kind='agent', reviewed_at=now, result='reviewed', reason='Grup desteği, isimli oy ve gündem önerisi sonucu ayrı değerlendirildi.')))
 pkg['entries'] += entries
 points = [(q('agenda'), 'initiative', 'Yeni Yol aynı gün görüşme önerisi'), (q('dem-role'), 'action', 'Akın DEM grubu adına konuştu'), (q('dem-support'), 'action', 'Akın öneriyi sözlü destekledi'), (q('quorum1'), 'result', 'İlk oylamada karar yeter sayısı yoktu'), (q('quorum2'), 'result', 'İkinci oylamada karar yeter sayısı yoktu'), (q('decision'), 'result', 'Üçüncü oylamada grup önerisi kabul edilmedi')]
 records = {

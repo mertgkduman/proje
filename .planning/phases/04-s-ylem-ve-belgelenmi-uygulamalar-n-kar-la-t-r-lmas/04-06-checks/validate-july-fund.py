@@ -3,7 +3,7 @@ import importlib.util,json,os,sqlite3
 from pathlib import Path
 here=Path(__file__).resolve().parent;root=here.parents[3];job=os.environ['SLURM_JOB_ID'];spec=importlib.util.spec_from_file_location('dem_tracer_validation',here/'tracer-validation.py');mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
 package=here/'fund-july-draft.json';review=here/'fund-july-review-draft.json'
-assert mod.sha(package)=='5358ac28c2b5dc7a71c1270d3ba75413603e6543d6c3f395a5d906beb9a1748a' and mod.sha(review)=='419a33ceb62b6c7789efe46da3da16f11dddc632b6737bc631a957b26bd46bf1'
+assert mod.sha(package)=='f7c549bb34a5888f61fd0bda088f4602cebdedc96a95f8dda73b4b427b4da191' and mod.sha(review)=='34f22005f5f5281a84f3e8d77a9c37ac5dc78f43d708b5b996f6fd1ac6a0f893'
 before=json.loads((root/'data/practices/04-dem.json').read_text());candidate=json.loads(package.read_text());canonical=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
 for k in ('entries','scope_inventory'):assert {canonical(x) for x in before[k]} <= {canonical(x) for x in candidate[k]},k
 for k,rows in before['practice_records'].items():assert {canonical(x) for x in rows} <= {canonical(x) for x in candidate['practice_records'].get(k,[])},k
