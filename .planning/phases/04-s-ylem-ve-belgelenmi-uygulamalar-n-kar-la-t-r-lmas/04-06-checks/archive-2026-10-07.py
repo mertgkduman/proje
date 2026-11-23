@@ -9,11 +9,11 @@ result=[]
 for name,url,expected in items:
  raw=Path('/tmp/gsd-dem-2026-10-07-'+name+'.html').read_bytes(); digest=hashlib.sha256(raw).hexdigest(); assert digest==expected
  folder=root/'objects'/digest; folder.mkdir(parents=True,exist_ok=True)
- for fn,body in [('original.html.bin',raw),('readable.html',readable_bytes(raw,'html',legacy=False))]:
+ for fn,body in [('original.html.bin',raw),('readable.html',readable_bytes(raw,'html',legacy=True))]:
   path=folder/fn
   if path.exists(): assert path.read_bytes()==body
   else: path.write_bytes(body)
- view=build_view(raw,url,root,fetch_assets=False); view['version_id']='0406-2026-10-07-'+name+'-v1';validate_view(root,view)
+ view=build_view(raw,url,root,fetch_assets=False,http_charset='windows-1254'); view['version_id']='0406-2026-10-07-'+name+'-v1';validate_view(root,view)
  result.append(dict(id=name,original_url=url,final_url=url,document_date='2026-10-07',publisher='TBMM',accessed_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),sha256=digest,original_path='objects/'+digest+'/original.html.bin',readable_path='objects/'+digest+'/readable.html',view=view))
  print(name,digest,len(raw),len(html_source_text(raw)),view['view_id'])
 (checks/'2026-10-07-fon-captures.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
