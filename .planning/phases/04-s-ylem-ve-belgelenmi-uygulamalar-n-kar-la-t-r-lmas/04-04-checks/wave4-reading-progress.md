@@ -11,7 +11,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 142 | 141 | 62483765 |
 | TİP | 20 | 19 | 62483737 |
 | DEM Parti | 22 | 9 | 62482438 |
-| İYİ Parti | 12 | 9 | 62481667 |
+| İYİ Parti | 14 | 10 | 62484676 |
 | Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 18 | 7 | 62483813 |
 | EMEP | 49 | 51 | 62482891 |
@@ -115,3 +115,5 @@ Bağlar’ın 2015 tarihli altı belediye kararı iki görünümde doğrulandı.
 Demokrat Parti’nin 2/4012 internet düzenlemesi teklifi iki görünümde doğrulandı. Altıntaş’ın 2 Kasım imzası, 3 Kasım giriş ve 5 Kasım komisyon kayıtları ayrı. 7578 sayılı kabul metni yaş doğrulamasının önceki çerçevesi. 2/4012’nin yasama ve uygulama sonucu açık. [Doğrulama makbuzu](../04-12-checks/internet-4012-62484260.json)
 
 EMEP’in 7/35768 MESEM sorusu ve Bakanlık yanıtı iki görünümde doğrulandı. Yanıttaki genel politika açıklaması, sorunun istediği okul ve işyeri düzeyinde sonucu tek başına vermiyor. [EMEP makbuzu](../04-10-checks/mesem-35768-62482891-receipt.json)
+
+İYİ Parti’nin 2/1019 ve 10/4625 kayıtları iki görünümde doğrulandı. 2018 teklifi Ergun ve Türkkan’ın 17 Eylül imzalı yazısı. TBMM geliş günü bir sicilde 17 Eylül, 16 Ekim tutanağındaki Gelen Kâğıtlar bölümünde 14 Eylül. Ergun’un 20 Ekim 2026’da 10/4625 için açıkladığı grup desteği ayrı işlem ve İYİ Parti katkısı. [Doğrulama makbuzu](../04-07-checks/ergun-staj-62484676.json)
