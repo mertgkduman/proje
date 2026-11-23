@@ -6086,6 +6086,20 @@
         "result": "reviewed",
         "reason": "Grup desteği, isimli oy ve gündem önerisi sonucu ayrı değerlendirildi."
       }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0406-2026-10-07-bayhan-role-p",
+        "version_id": "0406-2026-10-07-full-v1",
+        "exact": "grubu bulunmayan İstanbul Milletvekili İskender Bayhan’ın aynı konuda konuşmaları",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Grubu bulunmayan İskender Bayhan konuşması",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
     }
   ],
   "practice_records": {
@@ -6235,9 +6249,9 @@
         "event_at": "2026-10-07",
         "date_precision": "day",
         "date_unknown_reason": null,
-        "scope_context": "TBMM 28. dönem 5. yasama yılı 3. birleşimde fon piyasaları gündem dışı bilgilendirmesi",
-        "title": "Fon piyasaları hakkında Genel Kurul bilgilendirmesi",
-        "occurrence_basis": "7 Ekim 2026 TBMM birleşimi tam tutanağı ve özeti."
+        "scope_context": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz fon piyasalarına ilişkin Genel Kurulda açıklama yaptı. Siyasi parti grupları ve grubu bulunmayan bir milletvekili görüşlerini bildirdi.",
+        "title": "TBMM 3. Birleşimde fon piyasası açıklaması ve görüşler",
+        "occurrence_basis": "TBMM birleşim tutanağı ve ilgili işlem belgeleri."
       },
       {
         "id": "0406-fund-july-4343-event",
@@ -6987,6 +7001,15 @@
         "stage": "result",
         "concrete_basis": "1 Temmuz TBMM birleşim tutanağının ilgili sayfası.",
         "limitation": "Sözlü destek isimli oy değildir; gündem kararı araştırma önergesinin esasından ayrıdır.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0406-2026-fund-1007",
+        "passage_id": "0406-2026-10-07-bayhan-role-p",
+        "supported_point": "Grubu bulunmayan İskender Bayhan aynı konuda konuştu.",
+        "stage": "action",
+        "concrete_basis": "TBMM birleşiminin konuşmacı dökümü.",
+        "limitation": "Konuşmacı kimliği, oy veya uygulama sonucu değildir.",
         "epistemic_type": "claim"
       }
     ],
@@ -8411,6 +8434,12 @@
         "event_id": "0406-fund-july-4343-event",
         "passage_id": "0406-fund-july-floor-decision",
         "stage": "result",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0406-2026-fund-1007",
+        "passage_id": "0406-2026-10-07-bayhan-role-p",
+        "stage": "action",
         "basis_kind": "document"
       }
     ],
