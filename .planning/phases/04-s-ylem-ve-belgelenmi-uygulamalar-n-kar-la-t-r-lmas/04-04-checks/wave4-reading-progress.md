@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 12 | 8 | 62471281 |
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 41 | 43 | 62466343 |
-| Saadet Partisi | 11 | 9 | 62473205 |
+| Saadet Partisi | 11 | 11 | 62475555 |
 | Demokrat Parti | 14 | 13 | 62474909 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -63,3 +63,5 @@ EMEP’in deprem barınma dosyasında toplantının günü belirsiz kaldı. İki
 Demokrat Parti’nin 2021 ve 2023 kesin hesap kararları, arşiv tüzüğündeki kesin hesap ve denetim hükümleriyle karşılaştırıldı. AYM karar tarihleri ve Resmî Gazete yayım tarihleri ayrı kayıtlarda. Her iki kararın hükmü Mahkemenin inceleyebildiği belgelerle sınırlı. İlk gönderim günü ve parti içi hesap onayının tutanakları araştırmaya açık. [Doğrulama makbuzu](../04-12-checks/aym-accounts-62474909.json) [Kaynak okuması](../04-12-checks/aym-accounts-reading.md)
 
 TPI işçilerine ilişkin 7/26431 yazılı sorusu ve Bakanlığın eylül cevabı, EMEP’in ilgili emek kaydıyla birlikte doğrulandı. Soru ve cevap tarihleri ayrı kayıtlarda. [Doğrulama makbuzu](../04-10-checks/tpi-26431-62466343-receipt.json)
+
+Saadet’in 7 Ekim fon açıklaması 7596 sayılı Kanun’un 1 ve 5. maddelerindeki tahsil hükümleriyle karşılaştırıldı. Kamu kaynaklarının kullanılmaması talebi, kabul edilen hükümlerin gösterdiği tahsil çerçevesinden ayrı kayıtta. 14 Ekim denetim ve yetki sınırı açıklaması da Arıkan’ın 5 Kasım’daki isimli oyuyla birlikte doğrulandı. Bu eşleşme Yemen önerisinin sonucunu veya oy gerekçesini belirlemiyor. [Doğrulama makbuzu](../04-11-checks/october-statements-62475555.json) [Kaynak okuması](../04-11-checks/october-statements-reading.md)
