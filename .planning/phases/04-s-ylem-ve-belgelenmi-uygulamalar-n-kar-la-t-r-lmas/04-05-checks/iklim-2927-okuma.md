@@ -272,3 +272,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 710–714 metni: CHP komisyon üyelerinin iklim ve çevre hakkına dair şerh ve anayasal yorumları okundu, bu yorumlar TİP tutumu ya da bağımsız hukuki doğrulama sayılmadı. Sonraki 715; metin taraması 715/860, görseller ve 145 indeks açık.
 
 - PDF indeks 715–719 metni: CHP üyelerinin şerhinde çevre hakkı, kararname, ÇED ve anayasal güvence yorumları okundu; hukuki sonuçlar ve partiye ait görüş bağımsız doğrulanmadı, TİP görüşü sayılmadı. Sonraki 720; metin taraması 720/860, görseller ve 140 indeks açık.
+
+- PDF indeks 720–724 metni: CHP üyelerinin çevre hukukuna dair yorumları ve dönemin iktidarına yönelik ekolojik zarar iddiaları incelendi. Şerh sahiplerine atıf korunur, sayılar ve hukuki iddialar ayrıca doğrulanmadan TİP görüşü ya da kesin olgu sayılmadı. Sonraki 725; metin taraması 725/860, görseller ve 135 indeks açık.
