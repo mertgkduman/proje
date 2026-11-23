@@ -165,3 +165,5 @@ Son ilerleme 3d6d714d: rapor 0–379 indeks metni/boşluğu tarandı (380/860), 
 Son ilerleme 7d18fa9c: rapor 0–409 indeks metni/boşluğu tarandı (410/860), sıradaki 410; kalan 450 indeks ve önceki görsel/tablolar açık. 380–409 su ve uyum kaynaklarında konuşmacı görüşleri, hedefler ve senaryolar ayrı tutuldu; karmaşık tablolar görsel incelenmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 değişmedi.
 
 Son ilerleme e0e625f9: 2021 raporu 0–439 indeks metni/boşluğu tarandı (440/860), sıradaki 440; 420 indeks ve önceden not edilmiş görseller açık. 423 gövde/dipnot 18 Mayıs/Nisan farkı ve 429 geçersiz 31 Nisan ile çelişkili hesap çözülmedi. 417–420 sadece fotoğraf başlıkları; görseller okunmadı. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme 05affeeb: rapor 0–469 indeks metni/boşluğu tarandı (470/860), sıradaki 470; 390 indeks ve önceki görseller açık. 442 doğrudan konuşma %40, özet %60 tasarruf dediği için asıl tutanakla fark çözülmedi. 445 yeraltı suyunun mutlak koruma iddiaları bağımsız olgu sayılmadı. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
