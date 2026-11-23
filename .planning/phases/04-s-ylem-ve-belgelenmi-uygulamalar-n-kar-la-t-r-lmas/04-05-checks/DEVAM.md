@@ -169,3 +169,5 @@ Son ilerleme e0e625f9: 2021 raporu 0–439 indeks metni/boşluğu tarandı (440/
 Son ilerleme 05affeeb: rapor 0–469 indeks metni/boşluğu tarandı (470/860), sıradaki 470; 390 indeks ve önceki görseller açık. 442 doğrudan konuşma %40, özet %60 tasarruf dediği için asıl tutanakla fark çözülmedi. 445 yeraltı suyunun mutlak koruma iddiaları bağımsız olgu sayılmadı. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
 
 Son ilerleme e7f4f1fc: rapor 0–499 indeks metni/boşluğu tarandı (500/860), sıradaki 500; 360 indeks ve önceden not edilen tablo/harita/görseller açık. 470 raporun su kalitesi izlemelerinde örnekleme/süreklilik ve ölçüm güvenilirliği sınırlılığını kendisinin belirttiği kaydedildi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme 46bbd72f: rapor 0–529 indeks metni/boşluğu tarandı (530/860), sıradaki 530; 330 indeks ve önceki notlarda belirtilen görseller açık. Kurumların tarihli proje iddiaları, öngörüleri ve tavsiyeleri partiye atfedilmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
