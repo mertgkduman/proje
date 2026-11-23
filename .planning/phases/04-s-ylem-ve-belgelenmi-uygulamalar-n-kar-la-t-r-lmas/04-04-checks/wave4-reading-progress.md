@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 141 | 141 | 62468795 |
 | TİP | 17 | 17 | 62466264 |
-| DEM Parti | 15 | 9 | 62466224 |
+| DEM Parti | 17 | 9 | 62468809 |
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 11 | 7 | 62461211 |
 | DBP | 11 | 7 | 62464556 |
@@ -47,3 +47,5 @@ Demokrat Parti’nin 2/3965 dosyası programın geçmişte arşivlenmiş yatır�
 Şiran Tekstilkent için adayın 29 Şubat 2024’te yayımlanan hedefleri ve belediyenin 18 Mayıs yer incelemesi duyurusu iki görünümde doğrulandı. İşletme açılışı ve istihdam sayıları için okuma açık. [Makbuz](../04-12-checks/siran-tekstil-62467362.json) [Kaynak okuması](../04-12-checks/siran-tekstil-reading.md)
 
 EMEP’in 7 Ekim fon görüşmesinde İskender Bayhan’ın milletvekili sıfatıyla yaptığı açıklama, ortak birleşimin partiye özgü katkısı olarak doğrulandı. [EMEP makbuzu](../04-10-checks/fund-union-62462343-receipt.json)
+
+DEM Parti’nin 10/4830 ve 10/4918 araştırma önergeleri iki görünümde doğrulandı. İmzalı önergelerdeki araştırma talepleri ve TBMM dosya durumları ayrı kaydedildi. [DEM makbuzu](../04-06-checks/dem-fund-inquiries-62468809.json)
