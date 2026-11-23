@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 43 | 45 | 62472618 |
 | Saadet Partisi | 11 | 11 | 62475555 |
-| Demokrat Parti | 16 | 15 | 62476741 |
+| Demokrat Parti | 17 | 16 | 62478768 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -75,3 +75,5 @@ Yeni Yol’un 10/4603 fon araştırması dosyası iki görünümde doğrulandı.
 EMEP’in 2023 Malatya 10. il kongresine ilişkin bağımsız yerel yayın iki görünümde doğrulandı. Haberde aktarılan yeniden seçim ile 2026’daki 11. kongre ayrı olaylar. 2023 kongresinin tam günü açık. [Doğrulama makbuzu](../04-10-checks/malatya2023-62472618-receipt.json)
 
 İYİ Parti’nin 14 Ekim önergesi iki görünümde doğrulandı. Taş ve Usta’nın emsal getiriyi aşan tutar için zorunlu iade önergesi komisyonda reddedildi. Komisyon daha sonra ayrı isteğe bağlı iade değişikliğini ve değişen 4. maddeyi kabul etti. [Doğrulama makbuzu](../04-07-checks/fund-commission-art4-62478838.json) [Kaynak okuması](../04-07-checks/fund-commission-art4-reading.md)
+
+Demokrat Parti’nin 2/4007 staj ve çıraklık teklifi iki görünümde doğrulandı. İmzalı metin, 3 Kasım başvurusu ve 4 Kasım komisyon girişleri ayrı kayıtlarda. 2021’de arşivlenen parti programındaki genç istihdamı ve eşit erişim amacıyla konu bağlantısı belgelendi. Teklif TBMM kaydında «Komisyonda». [Doğrulama makbuzu](../04-12-checks/staj-4007-62478768.json) [Kaynak okuması](../04-12-checks/staj-4007-reading.md)
