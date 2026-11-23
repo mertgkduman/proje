@@ -30,6 +30,9 @@ for role, path, url, date, kind, publisher, author, title, exact in sources:
         dict(kind='passage', values=dict(id=ident+'-p', version_id=version, exact=exact, prefix=None, suffix=None, article=None, section=title, pdf_page_index=None, printed_page=None)),
     ])
     print(role, sha, view['view_id'])
+exact = 'Küçük esnaf siftah yapamaz duruma geldi.'
+assert exact in html_source_text(Path('/tmp/gsd0410-monetary2021/party.html').read_bytes())
+entries.append(dict(kind='passage', values=dict(id='0410-emep-monetary2021-party-esnaf-p', version_id='0410-emep-monetary2021-party-v1', exact=exact, prefix=None, suffix=None, article=None, section='Küçük esnaf değerlendirmesi', pdf_page_index=None, printed_page=None)))
 out = Path(__file__).parent/'monetary2021-source-draft.json'
 with out.open('x') as f:
     json.dump(dict(entries=entries, status='source_read_package_pending', note='24 Kasım 2021 parti yayını döviz/faiz, alım gücü ve küçük esnaf durumunu ele alır. Açıklama somut faiz oranı önerisi veya doğrulanmış ekonomik veri olarak sunulmaz.'), f, ensure_ascii=False, indent=2)
