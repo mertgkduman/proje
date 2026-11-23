@@ -87,3 +87,5 @@ Sonraki güncelleme: 224 raporunda 283/1054 okundu, 771 açık (5fcd692d). 4062 
 Sonraki 297–304 indisleri de okundu: güncel kuyruk 339/1054 incelenmiş, 715 bekliyor (`3d644a92`). Kurum görevlerinin raporda anlatılması uygulama kanıtı değildir.
 
 5367 komisyon tutanağı sonradan 62/62 sayfa okundu (`358d2072`): DEM açıklamaları, TİP ve EMEP'in farklı hayır beyanları, diğer parti görüşleri ve toplu sonuç ayrı tutuldu. Nihai rapor, parti belgeleri, isimli oy ve sonraki sonuçlar ayrıca araştırılmalı; bu kaynak henüz canlı DEM paketinde değildir.
+
+5367 için altı özgün pasajlı DEM source-record taslağı hazır (`23485a8d`, SHA `5b65af5d39b2c86210077d19e4bae103de5b8e2db69db94fbe46f10c87550bce`). Artı Siirt haberinin 42/2/1 sayımı başkanın tutanaktaki 47/2/1 duyurusuyla ayrışır; özgün haber ayrı arşivlendi (`1bffe7c7`), fark giderilmedi. Her iki sayı ve aday kapsamı incelenmeden canlı terfi yapılmadı.
