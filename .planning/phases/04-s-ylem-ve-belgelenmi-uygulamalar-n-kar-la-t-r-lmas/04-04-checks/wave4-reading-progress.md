@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 45 | 9 | 62490422 |
 | İYİ Parti | 16 | 10 | 62490451 |
 | Yeni Yol | 18 | 11 | 62490452 |
-| DBP | 29 | 7 | 62489251 |
+| DBP | 36 | 7 | 62490789 |
 | EMEP | 55 | 57 | 62487388 |
 | Saadet Partisi | 16 | 13 | 62490394 |
 | Demokrat Parti | 18 | 16 | 62484260 |
@@ -165,3 +165,5 @@ DEM Parti’nin 4114 sayılı komisyon raporunun 18–20. maddeleri ile geçici 
 Turhan Çömez’in 3 Kasım birleşiminde kendi grubunun 10/4961 önergesine ilişkin açıklaması iki görünümde doğrulandı. Ön görüşme takvimi reddedildi. 30 Ekim KAP bildirimindeki taslak karşılık ve şirket anlatımı ile önergede ileri sürülen zarar ayrı kaydedildi. [İYİ Parti makbuzu](../04-07-checks/nov03-4961-62490451.json)
 
 EMEP’in Öz-Ka 7/27997 yazılı sorusu ve Bakanlık cevabı iki HTML görünümünde doğrulandı. Yanıt hukuk çerçevesini aktarıyor. İşyerine özgü denetim ve gerçekleşen sonuç açık. [Makbuz](../04-10-checks/ozka-27997-62487388-receipt.json)
+
+Bağlar Belediye Meclisinin 3–5 Şubat 2015 arasında aldığı yedi karar iki görünümde doğrulandı. Yardım yetkisi, iki ayrı pazar raporu, kurs raporu ve iki abonelik gibi unsurlar karar türleriyle birlikte korundu. Teslim, ödeme ve saha sonuçları açık. [Doğrulama makbuzu](../04-09-checks/baglar-february-62490789.json)
