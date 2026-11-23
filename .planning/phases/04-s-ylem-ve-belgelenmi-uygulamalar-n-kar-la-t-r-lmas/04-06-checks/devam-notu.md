@@ -85,3 +85,5 @@ Sonraki güncelleme: 224 raporunda 283/1054 okundu, 771 açık (5fcd692d). 4062 
 224 sıra raporunda son kuyruk `7d3110b2` itibarıyla 331/1054 incelendi, 723 bekliyor. Basılı 267–268'deki süt izni çalışma süresi hakkındaki çelişik cümleler not edildi; tarihli birincil mevzuat kontrolü açık.
 
 Sonraki 297–304 indisleri de okundu: güncel kuyruk 339/1054 incelenmiş, 715 bekliyor (`3d644a92`). Kurum görevlerinin raporda anlatılması uygulama kanıtı değildir.
+
+5367 komisyon tutanağı sonradan 62/62 sayfa okundu (`358d2072`): DEM açıklamaları, TİP ve EMEP'in farklı hayır beyanları, diğer parti görüşleri ve toplu sonuç ayrı tutuldu. Nihai rapor, parti belgeleri, isimli oy ve sonraki sonuçlar ayrıca araştırılmalı; bu kaynak henüz canlı DEM paketinde değildir.
