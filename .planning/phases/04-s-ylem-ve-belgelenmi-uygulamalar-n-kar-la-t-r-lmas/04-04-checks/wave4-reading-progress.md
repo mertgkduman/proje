@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 13 | 9 | 62477835 |
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 44 | 46 | 62473858 |
-| Saadet Partisi | 11 | 11 | 62475555 |
+| Saadet Partisi | 12 | 12 | 62479681 |
 | Demokrat Parti | 17 | 16 | 62478768 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -81,3 +81,5 @@ Demokrat Parti’nin 2/4007 staj ve çıraklık teklifi iki görünümde doğrul
 DEM Parti’nin fon komisyonunda belirli fiiller için cebren tahsil ve küçük hisse yatırımcılarının kapsama alınmasına yönelik iki ayrı önergesi doğrulandı. Her önerge için tutanakta ayrı ret kararı var. [Doğrulama makbuzu](../04-06-checks/dem-5472-motions-v2-62479627.json)
 
 EMEP’in 6 Eylül Kırşehir il kongresi ve Pelin Atarbay’ın seçildiği bilgisi iki görünümde doğrulandı. Ayrı yerel haber ve parti kaydı aynı kongreye ait. İmzalı oy cetveli araştırmaya açık. [Doğrulama makbuzu](../04-10-checks/kirsehir2026-62473858-receipt.json)
+
+Saadet Partisi Genel Başkanı’nın 4 Ekim’de staj ve çıraklık sigortası temsilcileriyle görüşmesi iki görünümde doğrulandı. Parti ve haber kaydı aynı görüşmeyi gösteriyor. Programdaki emeklilik koşullarını düzenleme hedefiyle konu bağlantısı kaydedildi. Bu görüşmenin ardından bir teklif sunulup sunulmadığı araştırmaya açık. [Doğrulama makbuzu](../04-11-checks/vocational-visit-62479681.json) [Kaynak okuması](../04-11-checks/vocational-visit-reading.md)
