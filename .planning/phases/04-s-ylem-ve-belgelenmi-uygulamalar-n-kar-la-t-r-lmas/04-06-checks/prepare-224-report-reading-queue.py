@@ -11,7 +11,7 @@ raw=Path('data/practices/sources/dem')/capture['original_path']
 assert hashlib.sha256(raw.read_bytes()).hexdigest()=='ed1e950a9d23850333dd94cd3fbae9acf4747da5861019c1b14b0ea5ed891bb0'
 now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 pages=[]
-examined=set(range(0,385)) | set(range(906,924)) | set(range(986,1002))
+examined=set(range(0,393)) | set(range(906,924)) | set(range(986,1002))
 for i in sorted(examined):
  text=pdf_page_text(raw,i)
  assert text.strip()
@@ -22,7 +22,7 @@ queue=[]
 i=0
 while i<1054:
  state='examined' if i in examined else 'pending'; end=i
- while end+1<1054 and (end+1 in examined)==(state=='examined') and end-i<19 and end+1 not in (20,36,40,54,57,61,69,81,97,105,113,121,129,137,145,153,161,169,177,185,193,201,209,217,225,249,257,265,273,281,289,297,305,313,321,329,337,345,353,361,369,377,906,924):end+=1
+ while end+1<1054 and (end+1 in examined)==(state=='examined') and end-i<19 and end+1 not in (20,36,40,54,57,61,69,81,97,105,113,121,129,137,145,153,161,169,177,185,193,201,209,217,225,249,257,265,273,281,289,297,305,313,321,329,337,345,353,361,369,377,385,906,924):end+=1
  row=dict(first=i,last=end,state=state)
  if state=='examined':row.update(review_file=('2025-224-kapak-icindekiler.md' if i<20 else '2025-224-baskan-sunus.md' if i<36 else '2025-224-diger-onergeler.md' if 40<=i<54 else '2025-224-komisyon-uyeleri.md' if 57<=i<61 else '2025-224-calisma-takvimi.md' if 61<=i<69 else '2025-224-istanbul-ziyaret.md' if 69<=i<81 else '2025-224-bolge-ziyaret.md' if 81<=i<97 else '2025-224-belge-sunumu.md' if 97<=i<105 else '2025-224-kavramsal-baslangic.md' if 105<=i<113 else '2025-224-esitlik-kaynaklari.md' if 113<=i<121 else '2025-224-ayrimcilik-turleri.md' if 121<=i<129 else '2025-224-aile-egitim.md' if 129<=i<137 else '2025-224-calisma.md' if 137<=i<145 else '2025-224-istihdam-verileri.md' if 145<=i<153 else '2025-224-medya-spor-siddet.md' if 153<=i<161 else '2025-224-siddet-cercevesi.md' if 161<=i<169 else '2025-224-siddet-bicimleri.md' if 169<=i<177 else '2025-224-risk-afet.md' if 177<=i<185 else '2025-224-yayginlik.md' if 185<=i<193 else '2025-224-arastirma-isyerleri.md' if 193<=i<201 else '2025-224-medya-sunumlari.md' if 201<=i<209 else '2025-224-medya-toplum.md' if 209<=i<217 else '2025-224-tespit-oneriler.md' if 906<=i<924 else '2025-224-dem-serhi-reading.md'),text_checked_at=now,pages=[x for x in pages if i<=x['pdf_page_index']<=end])
  if state=='examined' and 217<=i<249: row['review_file']='2025-224-evlilik-guclenme.md'
@@ -43,8 +43,9 @@ while i<1054:
  if state=='examined' and 361<=i<369: row['review_file']='2025-224-yargi-kdk-tihek.md'
  if state=='examined' and 369<=i<377: row['review_file']='2025-224-kurumsal-tbmm.md'
  if state=='examined' and 377<=i<385: row['review_file']='2025-224-plan-butce.md'
+ if state=='examined' and 385<=i<393: row['review_file']='2025-224-ddk-ashb.md'
  queue.append(row);i=end+1
 assert [x for r in queue for x in range(r['first'],r['last']+1)]==list(range(1054))
-result=dict(version=1,source_sha256=capture['sha256'],total_pages=1054,examined_pages=419,pending_pages=635,queue=queue,limitations='Kapak, içindekiler ve liste sayfaları, başkan sunuşu, altı önerge, üyeler, toplantı ve ziyaret kesitleri, kavramsal giriş, uluslararası belgeler, ulusal mevzuat, mahkeme kararları ve kurumsal yapıdan seçili sayfalar, ortak tespit ve öneriler, DEM şerhi ve takdim/kuruluş sayfaları incelendi; diğer bölümler okunmadı, sonuçların uygulanması ve hukuki etki doğrulanmadı.')
+result=dict(version=1,source_sha256=capture['sha256'],total_pages=1054,examined_pages=427,pending_pages=627,queue=queue,limitations='Kapak, içindekiler ve liste sayfaları, başkan sunuşu, altı önerge, üyeler, toplantı ve ziyaret kesitleri, kavramsal giriş, uluslararası belgeler, ulusal mevzuat, mahkeme kararları ve kurumsal yapıdan seçili sayfalar, ortak tespit ve öneriler, DEM şerhi ve takdim/kuruluş sayfaları incelendi; diğer bölümler okunmadı, sonuçların uygulanması ve hukuki etki doğrulanmadı.')
 (p/'2025-224-report-reading-queue.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-print('224_REPORT_QUEUE_EXACT',len(queue),'examined',419,'pending',635)
+print('224_REPORT_QUEUE_EXACT',len(queue),'examined',427,'pending',627)
