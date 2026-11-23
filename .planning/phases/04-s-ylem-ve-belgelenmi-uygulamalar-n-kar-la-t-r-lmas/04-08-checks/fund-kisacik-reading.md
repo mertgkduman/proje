@@ -1,0 +1,7 @@
+# Sadullah Kısacık’ın komisyon 5. madde önergesi
+
+14 Ekim 2026 tarihli 5472 numaralı komisyon tutanağının 90. basılı sayfasında, Sadullah Kısacık 2/3939 sayılı teklifin 5. maddesinin ikinci fıkrasına ek cümle önerdi. Yazılı metin, portföy yönetim şirketinin bağlı bulunduğu ana ve hâkim şirketler, holdingler ve onların denetimindeki diğer şirketlerde fon zararına sebep olan işlemlerde sorumluluk tespitini şart koşuyor. Cümlenin sonu tutanakta “belki müteselsilen sorumludur” olarak yazılmış. Kısacık, konuşmasında bağlantılı şirketleri kapsayan önergesini açıkladı. Önceki Taş ve Usta önergesi, Kısacık önergesi ve 5. maddenin kabulü tutanakta ayrı oylamalar. Kısacık önergesi reddedildi.
+
+Komisyon Başkanı 13 Mart 2025’te Kısacık’ın Yeni Yol Grubundan komisyon üyeliğine seçildiğini açıkladı. 8 Ekim 2026’da Kısacık Genel Kurulda Yeni Yol Grubu adına konuştu. 14 Ekim’deki değişiklik önergesi kendi imzasıyla sunuldu. 1 Temmuz tarihli 10/4343 küçük yatırımcının korunması ve tazmin yolları için genel bir araştırma istiyordu. 14 Ekim önergesi belirli hukuki araç ve sorumluluk koşullarına ilişkin.
+
+22 Ekim’de kabul edilen 7596 sayılı Kanunun 5. maddesi portföy yönetim şirketinin önceliği ile tahsil edilememe veya edilemeyeceğinin açık olması hâlinde Kurulca belirlenen kişilerin sorumluluğunu düzenliyor. Komisyon tutanağında SPK temsilcisi gerçek ve tüzel kişilerin taslak kapsamını ayrıca açıkladı. İsimli oy, belirli şirketlere ilişkin sorumluluk tespiti ve fiilî tahsil araştırmaya açık.
