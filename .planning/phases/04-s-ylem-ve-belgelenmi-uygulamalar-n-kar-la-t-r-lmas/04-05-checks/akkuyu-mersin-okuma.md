@@ -50,3 +50,4 @@ PDF indeks 65–69 okundu: CHP Süleyman Girgin, HDP Ömer Öcalan, İYİ Aydın
 - Tam tutanak indeks 128–132 okundu: Dördüncü oturum 20.02’de açılıyor; CHP Ünal Demirtaş, HDP Rıdvan Turan ve CHP Ahmet Önal konuşuyor. Turan’ın HDP adına açık nükleer enerji karşıtı değerlendirmesi TİP’e atfedilemez; Kadıgil’in ayrı ifadeleriyle birleştirilmedi.
 - Tam tutanak indeks 133–137 okundu: AK Parti Orhan Yegin, CHP Ahmet Vehbi Bakırlıoğlu ve Tacettin Bayır konuşuyor; rakamlar ve değerlendirmeler ilgili kişilere atıfla tutuldu.
 - Tam tutanak indeks 138–142 okundu: CHP Tacettin Bayır ve Orhan Sümer, AK Parti İsmail Güneş, CHP Cavit Arı konuşuyor. Tarife ve kişisel gözlem niteliğindeki iddialar TİP’e mal edilmedi.
+- Tam tutanak indeks 143–147 okundu: bütçe konuşmaları bitiyor ve üye soru bölümü açılıyor; MHP Ali Cumhur Taşkın Akkuyu ilk reaktörünün ne zaman işletmeye gireceğini soruyor. Bu bir soru ve sonraki yanıt aranmalı, gerçekleşme veya TİP işlemi sayılmamalı.
