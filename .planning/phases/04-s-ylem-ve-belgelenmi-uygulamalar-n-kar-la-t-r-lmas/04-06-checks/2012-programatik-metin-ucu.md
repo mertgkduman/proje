@@ -39,3 +39,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 132000–143999 okundu (12/16): emek ve cinsiyet eşitliği, sosyal politika, engelli hakları ve eğitim. Sosyal bölüm aynı gelir eşiği altındaki haneler hedefini tekrarlar; engellilikte konut, sağlık ve eğitim desteği ile eşit haklar önerileri vardır. Belirli asgari ücret tutarında engelli birey ödemesi iddiası bu bölümden çıkarılmadı.
 
 2012 birincil metin 144000–155999 okundu (13/16): eğitim, sağlık ve gençlik hakları ile ücretsiz staja ilişkin eleştiriler. Ücretsiz staj eleştirisi 2026 staj sigortası gündemiyle konu yakınlığı taşır; sigorta/prim düzenlemesine ilişkin özdeş öncül veya uygulama kanıtı sayılmaz.
+
+2012 birincil metin 156000–167999 okundu (14/16): gençlerin katılımı, çocuk hakları ve kültür-sanat politikaları. Çocuk Hakları Sözleşmesi’nin Resmî Gazete yayım yılına ilişkin 1990 ifadesi kaynak iddiasıdır; özgün resmî yayın ve yürürlük tarihleri ayrıca doğrulanmadan benimsenmez.
