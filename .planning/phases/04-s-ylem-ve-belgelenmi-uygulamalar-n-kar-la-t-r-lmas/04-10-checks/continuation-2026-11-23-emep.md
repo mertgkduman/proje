@@ -76,3 +76,5 @@ TÜPRAŞ 47/49 adayına ek Şık Makas 48/50 exact d9061b27, package 0ffe0ad3f57
 059–065 gerçek gövde makbuzları c8a7bf43, ed68e4b4, 3c1788ca, b529ae87, 0c8cacbb, 53da7e88, beff52bc; sonraki 066. Parti Kürt sorunu raporu 10274 tüm gövdesi üç aralıkta okundu; tarihsel/hukuki yorum partiye atıflı, öneriler yasalaşmış sonuç değildir. 10283 Bayhan basın açıklaması, 10297 komisyona mektup ve komisyonun sonraki oylaması ayrı. 10257 Halk TV, 10271 Enternasyonal Dayanışma kaynaklı yeniden yayındır. 10249 Malatya üye iddiası ile açıklanan suç duyurusu ve sonucu ayrı.
 
 62479310 TÜPRAŞ 47/49 çalışıyor; 62481218 Şık Makas 48/50 afterok bekliyor. Yukarıdaki exact SHA, dört marker, terminal 0:0 ve bağımsız SQL/JSON/iki HTML/monoton helper protokolüyle sırayla doğrula ve ancak ardından terfi et. Canlı NATO 45/47 486e6d2e; 610 kapsam açık, kanonik sürüm değişmedi.
+
+API 066 kısmi: 10234 9758–34231 gerçekten okundu; Eskişehir, Antalya, İzmir, Balıkesir ve Çanakkale anmaları ayrı yerel olaylardır, çok partili açıklamalar ortak kuruma atıflıdır. 10227 ve 10225 okunmadı; dilim pending, makbuz yazılmadı.
