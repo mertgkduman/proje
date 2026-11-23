@@ -196,3 +196,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 520–524 metni tarandı: orman uyum stratejileri ve kurum projelerinin rapordaki açıklaması. İlgili kurumların faaliyet ve önerileri TİP adına kodlanmadı, proje çıktıları bağımsız denetlenmiş sayılmadı. 0–524: 525/860 indeks metni veya boşluğu tarandı; görseller ve 335 indeks açık.
 
 2021 raporu indeks 525–529 metni tarandı: orman uyumu, çölleşme ve arazi iyileştirme için kurum proje ve önerileri. Kurumların başarı değerlendirmeleri bağımsız doğrulanmadı ve TİP işlemi olarak aktarılmadı. 0–529: 530/860 indeks metni veya boşluğu tarandı; görseller ve 330 indeks açık.
+
+2021 raporu indeks 530–534 metni tarandı: çölleşme/arazi tahribatı izleme, eski plan ve kurumsal hedefler. 533 %50,9 oranını düşük sınıf diye verirken 287 aynı oranı orta sınıf olarak adlandırıyor; kaynak veya harita görseliyle çözülmedi. 534 risk haritası görsel incelenmedi; oranlar olgu olarak aktarılmadı. 0–534: 535/860 indeks metni veya boşluğu tarandı; görseller ve 325 indeks açık.
