@@ -169,3 +169,10 @@ PDF sıfır tabanlı 0–947 ve 986–1001 okundu; 948–985 ve 1002–1053 aç�
 TBMM 4114 57/57 PDF metin sayfası okundu, 392d5076; seçili kaynak içi kronoloji ve yeniden oylama etiketi belirsizliği saklandı. PDF 31 ayrı ilk kayıtta, kalan sayfalar iklim-4114-first-pages.md dosyasında; 198 sıra sayılı raporun PDF 66, 67, 94 görselleri bağımsız incelendi (980ca112). 198 raporu bütünü henüz okunmadı. 4114 madde 1–20 ve geçici 1–2 için üç DEM imzalı ayrı çıkarma önergelerinin ayrı retleri, madde 14 anayasa denetim önergesi ve diğer parti önergeleri birbirinden ayrıdır.
 
 62480714 exact iki 8 Ekim olayı için sürüyor: girdi ve kaynak PASS, önizleme terminali bekleniyor; aday 09a12448a4d727b21f9734d71aed688e8d2d7698b6602291cc18df269a00e8bf ve inceleme 190f924b8665c292dff6826fa738fa341f4b9f12237363540f3b8e84faeefa89. Önce terminal 0 ve preview PASS kontrolü, sonra independent-oct08-qa.py (36112236), makbuz ve append-only kontrol, ancak ardından tam eş iki canlı dosyaya scoped flock ile terfi. Canlı önceki paket c6d3d3f3d8fbb75639cfc4bc94fe0dc85acd25d062b116a252877136314d6e74; review aefdb613131b4a115fdff379b726c6497fb9ca57f458bf99b65d9db34e4bb6d8.
+
+
+### 21 olay canlı; 10/4625 exact kapı
+
+62480714 üç kapı ve bağımsız monotonluk, manifest/SQLite/JSON/iki görünüm PASS; makbuz 117f7d02. 21 olaylı canlı çift 2169e4f9 paket 09a12448a4d727b21f9734d71aed688e8d2d7698b6602291cc18df269a00e8bf, review 190f924b8665c292dff6826fa738fa341f4b9f12237363540f3b8e84faeefa89, kalıcı manifest facbf0d2c55cd218b02634707dc5405694f36e77c126ab17af0fd5c0e4e21a08.
+
+20 Ekim 10/4625 imzalı PDF dört sayfası görüntüden okundu; TBMM esas dosyası 8 Ekim geliş ve erişimde Gündemde, 20 Ekim gündem önerisi ret ile ayrıdır. İrmez DEM grup sözleri ve ortak baytlı arşiv a1036f47/b920b3ea, kaynak kayıtları 03299c64. 22 olaylı taslak ve doğrulayıcı 6ad0c033; SHA 55313179a38f589bbcb9c457a47f504827db7ef9ae4e5fe1bd487ff58ca2f9c6 / 69495dee059a8cdb223835d9f198ccf78b860eb1ef0dfd5640f06ceedc2eb5a5. Bellek içi kaynak incelemesi PASS; 62482132 üç gerçek kapı sürüyor. Terminal sonrasında bağımsız makbuz ve monoton kontrol olmadan terfi yok. Önceki parti söylemi araştırması ve bütün faz kapsamı açık.
