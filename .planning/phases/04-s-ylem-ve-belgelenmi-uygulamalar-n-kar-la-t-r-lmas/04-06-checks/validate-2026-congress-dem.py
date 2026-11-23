@@ -21,7 +21,7 @@ for key in ('entries', 'scope_inventory'):
     assert {canon(x) for x in before[key]} <= {canon(x) for x in after[key]}
 for key, rows in before['practice_records'].items():
     assert {canon(x) for x in rows} <= {canon(x) for x in after['practice_records'][key]}
-mod.main(package, review, 'dem-2026-congress', '0406-dem-2026-congress-event', '0406-2025-224-relation', '')
+mod.main(package, review, 'dem-2026-congress', '0406-2026-congress-event', '0406-2025-224-relation', '')
 receipt = json.loads((here / f'dem-2026-congress-{job}.json').read_text())
 folder = Path(receipt['preview'])
 assert json.loads((folder / 'manifest.json').read_text())['renderer_version'] == 31
