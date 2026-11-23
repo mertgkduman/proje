@@ -171,3 +171,5 @@ Son ilerleme 05affeeb: rapor 0–469 indeks metni/boşluğu tarandı (470/860), 
 Son ilerleme e7f4f1fc: rapor 0–499 indeks metni/boşluğu tarandı (500/860), sıradaki 500; 360 indeks ve önceden not edilen tablo/harita/görseller açık. 470 raporun su kalitesi izlemelerinde örnekleme/süreklilik ve ölçüm güvenilirliği sınırlılığını kendisinin belirttiği kaydedildi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
 
 Son ilerleme 46bbd72f: rapor 0–529 indeks metni/boşluğu tarandı (530/860), sıradaki 530; 330 indeks ve önceki notlarda belirtilen görseller açık. Kurumların tarihli proje iddiaları, öngörüleri ve tavsiyeleri partiye atfedilmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme 49de6426: rapor 0–559 indeks metni/boşluğu tarandı (560/860), sıradaki 560; 300 indeks ve önceki notlarda belirtilen görseller açık. 533 aynı yüzdeyi düşük, 287 orta çölleşme riski olarak niteliyor; 548 gövde ve dipnotunda 2015/2021 ile 2 Temmuz/2 Haziran tarih farkları çözülmedi. 555–557 ve 559 görselleri incelenmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
