@@ -37,3 +37,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 120000–131999 okundu (11/16): kırsal yaşam, ekonomi, vergi ve emek/sendika hakları. Önceki genel asgari gelir hakkı ifadesi bu bölümde belirli seviyenin altında geliri olan bütün hanelere koşulsuz ve vergilerle finanse edilen gelir olarak somutlaştırılıyor; kapsamı hane ve gelir eşiğiyle sınırlı, bireysel evrensel ödeme ya da 2025 engellilik önergesiyle özdeş değildir.
 
 2012 birincil metin 132000–143999 okundu (12/16): emek ve cinsiyet eşitliği, sosyal politika, engelli hakları ve eğitim. Sosyal bölüm aynı gelir eşiği altındaki haneler hedefini tekrarlar; engellilikte konut, sağlık ve eğitim desteği ile eşit haklar önerileri vardır. Belirli asgari ücret tutarında engelli birey ödemesi iddiası bu bölümden çıkarılmadı.
+
+2012 birincil metin 144000–155999 okundu (13/16): eğitim, sağlık ve gençlik hakları ile ücretsiz staja ilişkin eleştiriler. Ücretsiz staj eleştirisi 2026 staj sigortası gündemiyle konu yakınlığı taşır; sigorta/prim düzenlemesine ilişkin özdeş öncül veya uygulama kanıtı sayılmaz.
