@@ -91,3 +91,5 @@ Sonraki 297–304 indisleri de okundu: güncel kuyruk 339/1054 incelenmiş, 715 
 5367 için altı özgün pasajlı DEM source-record taslağı hazır (`23485a8d`, SHA `5b65af5d39b2c86210077d19e4bae103de5b8e2db69db94fbe46f10c87550bce`). Artı Siirt haberinin 42/2/1 sayımı başkanın tutanaktaki 47/2/1 duyurusuyla ayrışır; özgün haber ayrı arşivlendi (`1bffe7c7`), fark giderilmedi. Her iki sayı ve aday kapsamı incelenmeden canlı terfi yapılmadı.
 
 224 sıra kaynağında sonraki iki kesit de okundu; `52ea3aee` itibarıyla 355/1054 sayfa incelenmiş, 699 bekliyor. Sayımlar yalnız bu belgenin okumasını gösterir ve 610 kapsam hücresinin veya fazın kapandığını göstermez.
+
+Sonraki 321–336 indisleri de okundu: `b9730362` ile 371/1054 incelenmiş, 683 sayfa bekliyor. Bu sayım da fazın kapanışı değildir.
