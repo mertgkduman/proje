@@ -12,7 +12,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 46 | 9 | 62491881 |
 | İYİ Parti | 16 | 10 | 62490451 |
-| Yeni Yol | 18 | 11 | 62490452 |
+| Yeni Yol | 19 | 11 | 62492688 |
 | DBP | 36 | 7 | 62490789 |
 | EMEP | 55 | 57 | 62487388 |
 | Saadet Partisi | 18 | 14 | 62491361 |
@@ -173,3 +173,7 @@ Aykut Kaya’nın 10/4961 ön görüşme önerisine Yeni Parti Grubu adına verd
 30 Temmuz ve 12 Ağustos özel okul öğretmenleri toplantıları Saadet çalışma paketinde iki HTML görünümünde doğrulandı. 29 Temmuz parti çağrısı ertesi günkü çalıştayla karşılaştırıldı. Sonraki görüşme ve taban ücretin yürürlüğü açık. [Saadet makbuzu](../04-11-checks/private-teacher-meetings-62491361.json)
 
 DEM Parti adına Zeynep Oduncu Akın’ın 8/153 ön görüşmesindeki katkısı iki HTML görünümünde doğrulandı. Kişisel oy ve açık destek çıkarımı yapılmadı. [DEM Parti devam kaydı](../04-06-checks/devam-notu.md)
+
+10/4314’ün 24 Haziran gündeminde Yeni Yol adına Mehmet Karaman’ın açıklaması iki HTML görünümünde doğrulandı. İlk gündem talebi reddedildi. TBMM esas sicilinde erişim günü Gündemde kaydı görüldü. [Yeni Yol makbuzu](../04-08-checks/teacher-4314-62492688.json)
+
+Dokuz arşiv kökünde ortak 219 yol ve 628 dosya kopyası aynı baytlarla doğrulandı. [Arşiv yolu denetimi](wave4-source-paths-audit-03.json)
