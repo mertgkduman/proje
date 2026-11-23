@@ -14,9 +14,9 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 18 | 7 | 62483813 |
-| EMEP | 48 | 50 | 62481218 |
+| EMEP | 49 | 51 | 62482891 |
 | Saadet Partisi | 13 | 12 | 62482921 |
-| Demokrat Parti | 17 | 16 | 62478768 |
+| Demokrat Parti | 18 | 16 | 62484260 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -111,3 +111,7 @@ EMEP’in Şık Makas kaydı iki görünümde doğrulandı. Sevda Karaca’nın 
 TİP’in Şık Makas kaydı ve Erkan Baş’ın ANKA’ya atfedilen desteği iki görünümde doğrulandı. EMEP’in Karaca kaydı aynı görüşmeye bağlı. Adayların dayanağındaki ANKA metni iki çalışma dizininde aynı özgün baytları taşıyor. Görüşmenin kesin günü ve talep sonucu açık. [TİP makbuzu](../04-05-checks/sikmakas-62483737.json) [Ortak olay denetimi](wave4-common-event-audit-03.json)
 
 Bağlar’ın 2015 tarihli altı belediye kararı iki görünümde doğrulandı. İki ayrı kredi yetkisi, kadın konuk evi, Kardelen, denetim komisyonu seçimi ve 2014 temizlik bütçesi kendi kararlarına bağlı. Harcama satırlarının toplamı ile komisyonun bildirdiği toplam arasındaki fark kaynak okumasında korunuyor. 269 sayfanın 38’i okundu. [Doğrulama makbuzu](../04-09-checks/baglar-2015-decisions-62483813.json) [İkinci okuma](../04-09-checks/baglar-council-2015-reading-002.json)
+
+Demokrat Parti’nin 2/4012 internet düzenlemesi teklifi iki görünümde doğrulandı. Altıntaş’ın 2 Kasım imzası, 3 Kasım giriş ve 5 Kasım komisyon kayıtları ayrı. 7578 sayılı kabul metni yaş doğrulamasının önceki çerçevesi. 2/4012’nin yasama ve uygulama sonucu açık. [Doğrulama makbuzu](../04-12-checks/internet-4012-62484260.json)
+
+EMEP’in 7/35768 MESEM sorusu ve Bakanlık yanıtı iki görünümde doğrulandı. Yanıttaki genel politika açıklaması, sorunun istediği okul ve işyeri düzeyinde sonucu tek başına vermiyor. [EMEP makbuzu](../04-10-checks/mesem-35768-62482891-receipt.json)
