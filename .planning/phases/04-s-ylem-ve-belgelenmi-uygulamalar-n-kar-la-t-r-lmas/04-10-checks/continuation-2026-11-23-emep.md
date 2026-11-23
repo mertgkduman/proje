@@ -13,3 +13,10 @@ Sıradaki bağımlı exact işler (tekrarlama; `sacct` ile terminal 0:0 ve log �
 - 62473858 `kirsehir2026-union-draft.json` / `kirsehir2026-union-review-draft.json`, 44/46, SHA `11c41372222f343373561c5eefc263be8523374032ef2b73f34fad1bed546496` / `08e53c73d4b5984f0226d82f328e5314c93e77eea2dfec4e2f1cbe80a31e0cc2`, namespace `kirsehir`. 6 Eylül tarihi yerel haber pasajında; oy sayısı ve tutanak açık.
 
 Loglar ilgili `*-union-<job>.log`, önizleme `data/.staging/gsd-0410-<namespace>-<job>/preview/releases/<id>`. Commitlerde pin ve ortak flock kullan, yalnız sahip olunan kesin yolları ekle; ortak STATE/ROADMAP ve diğer parti dosyalarına dokunma. Gerçek okumaları ve henüz takip edilmemiş uçları sürdür; tamamlanmamış plan için SUMMARY veya kapanış yazma.
+
+
+### Devam kaydı: TPI 41/43 ve API 025
+
+62466343 COMPLETED 0:0; 41 olay / 43 ilişki exact 8bf0762653fc2e12cbf636b60cd815d5170d09ba58933515a80bef620b538f1f / 04190a9449722c9fd62aa52850d1d07fef97bcd54bf0849ebfd106073f4ef94e, SQL/JSON/iki HTML ve monotonluk ile doğrulanıp 6722b027 canlıya alındı. Makbuz tpi-26431-62466343-receipt.json; canonical değişmedi, 610 hücre açık. 62469452 Gaziantep çalışıyor, 62472618 Malatya ve 62473858 Kırşehir afterok bekliyor; exact çiftler ve komut yukarıdaki önceki kayıtta. Terminal başarı, özgün receipt, monotonluk ve SQL/JSON/iki HTML bağımsız doğrulaması olmadan terfi yok.
+
+Parti API 001–025 gerçek gövde aralıkları ve SHA ile okundu, 021–025 sırasıyla 7a30a387, c768b14b, f0589e82, cd00b549, b11fc7a0; 026 sıradaki açık dilim. 11784 NATO zirvesi yasaklarına karşı dava dilekçesini aktarıyor; sonuç ve resmi dosya açık. Temel Conta ve DIGEL yerel anma ve sonraki heyet ziyaretleri ayrı. 11788 kira hesabında 238–194 farkı kaynakta 45 yazıyor; atıf ve uyuşmazlık korunmalı. 470/610 hücrede kaynak bağı = kapsamın bitmesi değil; bütün hücreler açık.
