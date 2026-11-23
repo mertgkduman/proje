@@ -13,3 +13,5 @@ PDF 137–140 görüntüleri de doğrudan okundu: 2025 bütçe önerisinde iklim
 Ek görsel okuma: PDF 0–3 kapak ve içindekiler; PDF 45–52 ekolojik talan bölümünün başlangıcı, özelleştirme, betonlaşma, doğanın ticarileşmesi, çevresel düzenleme ve doğa savunucuları üzerine şerhe atıflı görüşler ve kaynak iddiaları. PDF 50 Global Forest Watch görselindeki 2001–2023 ağaç örtüsü kaybı grafiği okunmuştur; grafiğin birincil verisi ve iddialar ayrıca doğrulanmadı. 12 Aralık 2024 Kordu konuşmasıyla bazı benzer ifadeler bulunması metinlerin birbiriyle aynı sürüm olduğunu veya şerhin kabul edildiğini kanıtlamaz. Şimdi görsel 0–3,45–52,137–140,175–177 = 19/214, 195 açık.
 
 PDF 4–7 görüntü okuması: şerh küresel sistem, savaşlar ve jeopolitik gelişmeler hakkında siyasal analiz ve atıflar sunuyor; atıflı olay, sayım ve siyasal nitelemeler bağımsız doğrulanmadı. Görsel kapsam 0–7,45–52,137–140,175–177: 23/214, 191 sayfa açık.
+
+PDF 8–11 görsel okuması: BRICS, küresel rekabet, teknoloji ve Ortadoğu analizleri şerhin kendi yorumlarıdır; atıflı veriler ve tarihsel iddialar ayrı denetlenmedi. Görsel kapsam 0–11,45–52,137–140,175–177: 27/214, 187 açık.
