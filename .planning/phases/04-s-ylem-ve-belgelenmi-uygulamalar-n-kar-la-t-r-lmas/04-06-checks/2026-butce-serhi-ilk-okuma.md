@@ -71,3 +71,5 @@ PDF 121–124: alternatif bütçe için kaynak önerileri, Kürt sorununun ekono
 PDF 125–128: bölgesel ekonomik eşitsizliğin tarihsel yorumu ve İBBS bölgelerine ilişkin gösterge tablosu okunmuştur. İllerle İBBS bölgeleri, toplam paylarla kişi başı endeksler ve geniş/dar işsizlik birbirinden ayrıdır; tarihsiz tablo ve kaynak paydaları ayrıca doğrulanmalıdır. 0–128 toplam 129/160, 31 açık.
 
 PDF 129–132: bölgesel sağlık personeli, eğitim ve kamu yatırımına ilişkin tablolar ve siyasi değerlendirmeler okunmuştur. 129–130 tablolarının başlık/satır sırası metin katmanında bozulmuştur; görsel ve tarihli kurumsal kaynakları kontrol edilmeden seri aktarılmaz. Kişi başına toplam hekim ile uzman hekim başına nüfus ayrı göstergelerdir. 0–132 toplam 133/160, 27 açık.
+
+PDF 133–136: gelir/işsizlik verilerine atıflı bölgesel yorumlar, mevsimlik emek, yerel kooperatif önerileri ve ekolojik etkiler hakkındaki görüşler okunmuştur. Bölgesel ölçüler, dış kaynaklar ve siyasi nedensellik iddiaları bağımsız doğrulanmamıştır. 0–136 toplam 137/160, 23 açık.
