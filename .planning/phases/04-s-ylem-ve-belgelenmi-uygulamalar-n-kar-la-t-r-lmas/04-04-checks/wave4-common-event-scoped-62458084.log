@@ -1,0 +1,18 @@
+original Conflicting single-valued event fields
+prototype_metadata Dangling review ref
+prototype_metadata_and_reviews structural merge passes 13 11 17 223
+origin audit entry kinds outside whitelist []
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-common-event-smoke.py", line 180, in <module>
+    scoped_union_preview()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-common-event-smoke.py", line 161, in scoped_union_preview
+    _render_practice_preview(payload,preview,inventory,report['base_release'],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1615, in _render_practice_preview
+    _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1311, in _load_practice_copy
+    validate_practices(data)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1002, in validate_practices
+    validate_practice_merge(data)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulama_merge_kayit.py", line 126, in validate_practice_merge
+    raise ValueError('Birleşme tabanı kayıp')
+ValueError: Birleşme tabanı kayıp

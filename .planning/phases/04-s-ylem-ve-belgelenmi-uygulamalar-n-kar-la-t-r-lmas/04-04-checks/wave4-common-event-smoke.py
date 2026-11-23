@@ -111,16 +111,21 @@ if '--preview' in sys.argv:
 
 def scoped_union_preview():
     """Test explicit passage grants for the two audited TBMM procedures."""
-    from uygulamalar import _digest, _render_practice_preview
+    from uygulamalar import (PRACTICE_COVERAGE_TABLES, PRACTICE_EVIDENCE_TABLES,
+        PRACTICE_SOURCE_REVIEW_REVISION_TABLES, PRACTICE_SOURCE_REVIEW_TABLES,
+        PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, _digest, _render_practice_preview)
     from uygulama_merge_kayit import materialize_practice_merge
 
     inputs = load(join_review=True, normalize=True)
     decisions = decision_bytes(inputs)
+    schemas = (PRACTICE_TABLES | PRACTICE_VARIANT_TABLES | PRACTICE_EVIDENCE_TABLES |
+               PRACTICE_COVERAGE_TABLES | PRACTICE_SOURCE_REVIEW_TABLES | PRACTICE_SOURCE_REVIEW_REVISION_TABLES)
+    base_records = {name:base[name] for name in schemas if name in base}
     result = merge_packages(inventory, inputs, decisions,
-        decisions_sha256=digest(decisions), base_records=base)
+        decisions_sha256=digest(decisions), base_records=base_records)
     payload = result['payload']
     records = payload['practice_records']
-    records.update(materialize_practice_merge(inventory,inputs,decisions,base,result))
+    records.update(materialize_practice_merge(inventory,inputs,decisions,base_records,result))
     documents = {r['id']:r for r in base['document']}
     versions = {r['id']:r for r in base['document_version']}
     passages = {r['id']:r for r in base['passage']}
