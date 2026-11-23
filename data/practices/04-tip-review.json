@@ -548,6 +548,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0405-tip-fatura-69660-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-answer-v1\", \"0405-tip-fatura-detail-v1\", \"0405-tip-fatura-question-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-answer-p\", \"0405-tip-fatura-detail-p\", \"0405-tip-fatura-question-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş tarihi\", \"Yanıtın il tablosu açıklaması\", \"İmzalı sorunun birinci sorusu\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0405-tip-fatura-69660-event özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0405-tip-kadin-274653-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T06:49:38.520151+00:00",
@@ -974,6 +987,45 @@
       "limitations": "2019 gündeme alma önergesi, 2022 teklifinin sonucu ve ayrı 2023 EYT yasası farklı işlemlerdir.",
       "result": "reviewed",
       "reason": "Hedefin özgün pasajları incelendi: practice_event_evidence 0405-tip-eyt-4804-event|0405-tip-eyt-hukumsuz-title-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-fatura-69660-event|0405-tip-fatura-answer-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-answer-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-answer-p\"]",
+      "inspected_sections": "[\"Yanıtın il tablosu açıklaması\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0405-tip-fatura-69660-event|0405-tip-fatura-answer-p|result özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-fatura-69660-event|0405-tip-fatura-detail-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-detail-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-detail-p\"]",
+      "inspected_sections": "[\"Başkanlığa geliş tarihi\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0405-tip-fatura-69660-event|0405-tip-fatura-detail-p|initiative özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-fatura-69660-event|0405-tip-fatura-question-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-question-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-question-p\"]",
+      "inspected_sections": "[\"İmzalı sorunun birinci sorusu\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0405-tip-fatura-69660-event|0405-tip-fatura-question-p|initiative özgün kaynakları incelendi."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -1432,6 +1484,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-fatura-69660-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-answer-v1\", \"0405-tip-fatura-detail-v1\", \"0405-tip-fatura-question-v1\", \"0405-tip-fatura-speech-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-answer-p\", \"0405-tip-fatura-detail-p\", \"0405-tip-fatura-question-p\", \"0405-tip-fatura-speech-p\"]",
+      "inspected_sections": "[\"13 Nisan 2022 açıklaması\", \"Başkanlığa geliş tarihi\", \"Yanıtın il tablosu açıklaması\", \"İmzalı sorunun birinci sorusu\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0405-tip-fatura-69660-relation özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0405-tip-istifa-iliski",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:39:47.901658+00:00",
@@ -1653,6 +1718,19 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-fatura-69660-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-answer-v1\", \"0405-tip-fatura-detail-v1\", \"0405-tip-fatura-question-v1\", \"0405-tip-fatura-speech-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-answer-p\", \"0405-tip-fatura-detail-p\", \"0405-tip-fatura-question-p\", \"0405-tip-fatura-speech-p\"]",
+      "inspected_sections": "[\"13 Nisan 2022 açıklaması\", \"Başkanlığa geliş tarihi\", \"Yanıtın il tablosu açıklaması\", \"İmzalı sorunun birinci sorusu\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0405-tip-fatura-69660-relation özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0405-tip-istifa-iliski",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:39:47.901658+00:00",
@@ -1835,6 +1913,19 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0405-tip-fatura-69660-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-answer-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-answer-p\"]",
+      "inspected_sections": "[\"Yanıtın il tablosu açıklaması\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id / 0405-tip-fatura-69660-relation özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0405-tip-kadin-old-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T06:49:38.520151+00:00",
@@ -1962,6 +2053,19 @@
       "limitations": "2019 gündeme alma önergesi, 2022 teklifinin sonucu ve ayrı 2023 EYT yasası farklı işlemlerdir.",
       "result": "reviewed",
       "reason": "Hedefin özgün pasajları incelendi: practice_relation.target_finding_id 0405-tip-eyt-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-fatura-69660-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-speech-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-speech-p\"]",
+      "inspected_sections": "[\"13 Nisan 2022 açıklaması\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0405-tip-fatura-69660-relation özgün kaynakları incelendi."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -2186,6 +2290,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0405-tip-fatura-69660-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-speech-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-speech-p\"]",
+      "inspected_sections": "[\"13 Nisan 2022 açıklaması\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0405-tip-fatura-69660-statement özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0405-tip-ic-tartisma-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:39:47.901658+00:00",
@@ -2381,6 +2498,19 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0405-tip-fatura-69660-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-speech-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-speech-p\"]",
+      "inspected_sections": "[\"13 Nisan 2022 açıklaması\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0405-tip-fatura-69660-statement özgün kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0405-tip-ic-tartisma-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T03:39:47.901658+00:00",
@@ -2573,6 +2703,19 @@
       "limitations": "2019 gündeme alma önergesi, 2022 teklifinin sonucu ve ayrı 2023 EYT yasası farklı işlemlerdir.",
       "result": "reviewed",
       "reason": "Hedefin özgün pasajları incelendi: practice_statement.summary_finding_id 0405-tip-eyt-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0405-tip-fatura-69660-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T09:18:26+00:00",
+      "source_version_ids": "[\"0405-tip-fatura-speech-v1\"]",
+      "passage_ids": "[\"0405-tip-fatura-speech-p\"]",
+      "inspected_sections": "[\"13 Nisan 2022 açıklaması\"]",
+      "supported_claim": "Fatura açıklaması, soru ve yanıtın ilgili pasajları incelendi.",
+      "limitations": "Üç aylık akış ile Aralık sonu stok farklıdır; uygulama veya etki çıkarılmaz.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0405-tip-fatura-69660-statement özgün kaynakları incelendi."
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
@@ -2876,6 +3019,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0405-tip-fatura-69660-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0405-tip-kadin-274653-event"
     },
     {
@@ -3005,6 +3152,18 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0405-tip-eyt-4804-event|0405-tip-eyt-hukumsuz-title-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-fatura-69660-event|0405-tip-fatura-answer-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-fatura-69660-event|0405-tip-fatura-detail-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-fatura-69660-event|0405-tip-fatura-question-p|initiative"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -3148,6 +3307,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-fatura-69660-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0405-tip-istifa-iliski"
     },
     {
@@ -3216,6 +3379,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-fatura-69660-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0405-tip-istifa-iliski"
     },
     {
@@ -3269,6 +3436,10 @@
     {
       "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0405-tip-eyt-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0405-tip-fatura-69660-relation"
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
@@ -3312,6 +3483,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-fatura-69660-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0405-tip-istifa-iliski"
     },
     {
@@ -3380,6 +3555,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0405-tip-fatura-69660-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0405-tip-ic-tartisma-statement"
     },
     {
@@ -3440,6 +3619,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0405-tip-fatura-69660-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0405-tip-ic-tartisma-statement"
     },
     {
@@ -3497,6 +3680,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0405-tip-eyt-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0405-tip-fatura-69660-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
