@@ -29,6 +29,11 @@ queue = {'source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
          'note': 'Arşiv yakalama tarihi yayın veya hukuki yürürlük tarihi değildir; parti kimliği ve kapsam ayrıca araştırılır.',
          'segments': [{'start': i, 'end': min(i+12000, len(text)), 'status': 'pending'} for i in range(0,len(text),12000)]}
 out = c/'2012-primary-reading-queue.json'
-assert not out.exists(), 'Var olan okuma kuyruğu üzerine yazılamaz.'
-out.write_text(json.dumps(queue,ensure_ascii=False,indent=2)+'\n')
+if out.exists():
+    previous = json.loads(out.read_text())
+    assert previous['source_sha256'] == queue['source_sha256']
+    assert previous['text_sha256'] == queue['text_sha256']
+    assert [(x['start'],x['end']) for x in previous['segments']] == [(x['start'],x['end']) for x in queue['segments']]
+else:
+    out.write_text(json.dumps(queue,ensure_ascii=False,indent=2)+'\n')
 print('SEGMENTS',len(queue['segments']),'CHARACTERS',len(text),'SHA',queue['text_sha256'])
