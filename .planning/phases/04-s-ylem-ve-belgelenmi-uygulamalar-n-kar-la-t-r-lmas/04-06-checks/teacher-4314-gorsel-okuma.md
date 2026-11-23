@@ -1,0 +1,3 @@
+# 10/4314 özgün imzalı önerge: görsel okuma
+
+24 Haziran 2026 tarihli 4/4 sayfa okunmuştur. İlk sayfa Bülent Kaya imzalı araştırma istemi ve 2014 taban maaş ifadesini; ikinci ve üçüncü sayfalar gerekçeyi, özel sektör ve ücretli öğretmenlik koşulları ile atama mülakatını; dördüncü sayfa imza listesini içerir. İddialar önerge sahiplerine aittir. 106. birleşimde Yılmaz Hun DEM Grubu adına Yeni Yol önerisini açıkça destekledi; oylamada isimli kişisel oy çıkarılmaz. Hun’un 2024 sözü, önergenin 2014 ifadesinden ayrı ve konuşmacıya atfedilerek korunur. Gündem önerisinin reddi, esas araştırma önergesinin sonucuyla karıştırılmaz.
