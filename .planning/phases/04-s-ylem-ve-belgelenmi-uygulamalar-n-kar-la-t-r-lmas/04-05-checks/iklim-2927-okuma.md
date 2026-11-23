@@ -180,3 +180,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 480–484 metni tarandı: toprak nemi, sulama, tarımsal kuraklık eylem planı ve kurum sunumları. 480–481 grafikler ve 484 şema görsel incelenmedi; deney veya kurumların atıflı açıklamaları TİP işlemi olarak aktarılmadı. 0–484: 485/860 indeks metni veya boşluğu tarandı; görseller ve 375 indeks açık.
 
 2021 raporu indeks 485–489 metni tarandı: tarımsal kuraklık planı ve kurumların çeşit geliştirme anlatımları, kurak bölge ormancılığı önerileri. Raporun yöntem ve önerileri kendi bağlamında tutuldu; TİP faaliyeti olarak kaydedilmedi. 0–489: 490/860 indeks metni veya boşluğu tarandı; görseller ve 370 indeks açık.
+
+2021 raporu indeks 490–494 metni tarandı: kurak bölge ağaçlandırması, kurumların Ar-Ge projeleri ve tarımsal kuraklık risk haritaları. 493–494 haritalar görsel incelenmedi; kurumların sayıları ve iddiaları bağımsız sonuç veya TİP işlemi olarak alınmadı. 0–494: 495/860 indeks metni veya boşluğu tarandı; görseller ve 365 indeks açık.
