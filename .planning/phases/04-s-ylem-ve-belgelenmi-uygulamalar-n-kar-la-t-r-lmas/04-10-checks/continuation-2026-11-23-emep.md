@@ -1,0 +1,15 @@
+# 04-10 EMEP devam notu
+
+04-10 tamamlanmadı; 610 hücre açık, 468 hücreye kaynak bağlantısı kurulması tam arama veya kapanış demek değildir. Kanonik sürüm f67ca0a35e634035bf3aa83a46571f50 değişmedi. Canlı çalışma çifti 39 olay/41 ilişki, paket SHA `43864ac63fd04d455ecf6079bb544fa60fdbad2f857767104bfbc11858c26ff7`, inceleme SHA `2ccf03fcf647c605fcffea03bd940729d25c379dd0c89741eb6552d476c55356`, commit 6cc88377. 62463708 üç CLI ve bağımsız SQLite/JSON/iki HTML denetiminden geçti. 22 Mayıs gelen kâğıt yalnız o tarihte süresinde yanıtlanmamayı gösterir.
+
+Parti WordPress API ham 33 sayfa ve 3270 kayıt, 383 dilimlik gerçek okuma kuyruğu `party-api-reading-queue.json`; 001–011 dilimleri gerçekten okunup ayrı `party-api-NNN-reading.json` makbuzlarında kaydedildi. 012 ve sonrası bekliyor; başlangıç 12262 gövde 3230–5545. Kısmi gövdeler ancak karşılık gelen aralıklar okunduğunda tamamlanmış sayılır. Katalog edinimi bütün içeriklerin okunması veya kapsam kapanışı değildir.
+
+Sıradaki bağımlı exact işler (tekrarlama; `sacct` ile terminal 0:0 ve log üç CLI markerını doğrula, sonra `promote-verified-asymmetric.py` ile monoton SQLite/JSON/iki HTML ve kanonik kontrolü yap):
+
+- 62464623 `earthquake2025-date-uncertain-union-draft.json` / `earthquake2025-date-uncertain-union-review-draft.json`, 40/42, SHA `cab596a22b9be2951dfbba5df29581598b453ec1cf1c77cda669c9163a88870c` / `6c99a277c81c9764b161bc1ee091c3753b6051ad14489fe3391297e8db36944b`, namespace `earthquake`; olay günü yayın gününden çıkarılmadı.
+- 62466343 `tpi-26431-union-draft.json` / `tpi-26431-union-review-draft.json`, 41/43, SHA `8bf0762653fc2e12cbf636b60cd815d5170d09ba58933515a80bef620b538f1f` / `04190a9449722c9fd62aa52850d1d07fef97bcd54bf0849ebfd106073f4ef94e`, namespace `tpi`.
+- 62469452 `gaziantep2026-union-draft.json` / `gaziantep2026-union-review-draft.json`, 42/44, SHA `5f8fad1ad0a775d4f29739ad5b3c9e3629370aaba8e12dafeba2cd2d4154752f` / `cca2bb3e8771c5571c15bd2c5a41a82485e17cf8de58d0fd8c57d8f40103cddd`, namespace `gaziantep`.
+- 62472618 `malatya2023-union-draft.json` / `malatya2023-union-review-draft.json`, 43/45, SHA `762928680596c1c8dbfbd75f9f559f6db397210a448d1249767c85c8d8db3b68` / `6c0b5f8ad0567fbe244a2e7b9f57b7466621ea59ffefb80d6537c75a6dfdbb5a`, namespace `malatya`. Malatya 2023 ve 2026 kongreleri ayrı; 2023 günü bilinmiyor.
+- 62473858 `kirsehir2026-union-draft.json` / `kirsehir2026-union-review-draft.json`, 44/46, SHA `11c41372222f343373561c5eefc263be8523374032ef2b73f34fad1bed546496` / `08e53c73d4b5984f0226d82f328e5314c93e77eea2dfec4e2f1cbe80a31e0cc2`, namespace `kirsehir`. 6 Eylül tarihi yerel haber pasajında; oy sayısı ve tutanak açık.
+
+Loglar ilgili `*-union-<job>.log`, önizleme `data/.staging/gsd-0410-<namespace>-<job>/preview/releases/<id>`. Commitlerde pin ve ortak flock kullan, yalnız sahip olunan kesin yolları ekle; ortak STATE/ROADMAP ve diğer parti dosyalarına dokunma. Gerçek okumaları ve henüz takip edilmemiş uçları sürdür; tamamlanmamış plan için SUMMARY veya kapanış yazma.
