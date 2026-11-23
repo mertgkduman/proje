@@ -1,0 +1,3 @@
+# 25 Haziran 2025, 101. birleşim 293.108–313.108
+
+TBMM tam HTML SHA-256 `0b9cd0250e4dd15f507f196df7ebbc6491a71a7d1a0befe9ae2983c313481a59`; normalize 293.108–313.108 okundu. Hemen başta, önceki dilimde metni ve DEM milletvekili imzaları okunan 2/2927 6. maddeyi çıkarma önergesinin başkan tarafından reddi var. Sonraki Yeni Yol 6/6 fıkra değişikliği ayrı; ilk elektronik oylamada karar yeter sayısı yok, yedinci oturumda yeniden oylanıp reddediliyor. Ardından CHP ve İYİ başka değişiklik önergeleri reddediliyor, 6. maddenin kendisi kabul ediliyor. Bu sonuçlar birleştirilemez; hiçbir imzacının bireysel oyu çıkarılmaz. Sonraki metin ve tam tutanak açık, paket öncesi sayfalar görselle doğrulanacak.
