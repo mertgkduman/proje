@@ -172,3 +172,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 460–464 metni tarandı: yeraltı suyu toplantı görüşleri ve su kalitesi kurum anlatımları. Jeotermal iddialar beyan sahiplerine bağlı tutuldu; bilimsel veya TİP bulgusu olarak aktarılmadı. 0–464: 465/860 indeks metni veya boşluğu tarandı; görseller ve 395 indeks açık.
 
 2021 raporu indeks 465–469 metni tarandı: kurumlara atıflı su kalitesi izlemeleri, dönemli örnekleme ve yönetim metni. 465, 467 ve 469 harita/grafikleri görsel okunmadı; belirli numunede bir kez saptanma geniş coğrafyaya veya bugüne genellenmedi. 0–469: 470/860 indeks metni veya boşluğu tarandı; görseller ve 390 indeks açık.
+
+2021 raporu indeks 470–474 metni tarandı: su kalitesi izleme ve kuraklık tanımları, kurum planları ve hedefleri. 470 sayfa raporun kendisi 2015–2018 verilerinde örnekleme, süreklilik ve ölçüm hataları sebebiyle güvenilirlik/temsil sınırını açıklıyor; 470–471 tablo görsel okunmadı, sayı çıkarılmadı. Kurumsal hedef TİP uygulaması sayılmadı. 0–474: 475/860 indeks metni veya boşluğu tarandı; görseller ve 385 indeks açık.
