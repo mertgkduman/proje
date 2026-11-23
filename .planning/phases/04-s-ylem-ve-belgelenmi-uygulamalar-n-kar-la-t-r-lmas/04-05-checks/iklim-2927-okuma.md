@@ -222,3 +222,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 585–589 metni: 2021 raporunun enerji ve turizm uyumu değerlendirmeleri ile Somuncu uzmanının 20 Mayıs toplantısındaki önerileri ve ulaştırma risk önerileri ayrı tutuldu; TİP tutumu veya gerçekleşmiş sonuç olarak sunulmadı. 586 ve 588 tablolarının görüntüsü okunmadı. Sonraki 590; metin taraması 590/860, görseller ve 270 indeks açık.
 
 - PDF indeks 590–594 metni: ulaşım, sağlık ve sigorta alanlarında bakanlık sunumları, plan ve hedefler aktör ve 2021 zamanıyla sınırlı; sonuçlar veya TİP politikası olarak sunulmadı. 592 metin Tolunay toplantısını 13 Nisan, dipnot 13 Ocak diyor; özgün tutanakla doğrulanmadı. 594 şekil görsel okunmadı. Sonraki 595; metin taraması 595/860, görseller ve 265 indeks açık.
+
+- PDF indeks 595–599 metni: tarım sigortalarının geçmiş uygulamaları ve 2022 için geleceğe dönük rapor planları ayrıldı; başka milletvekillerinin 2021 talepleri TİP görüşü sayılmadı. 596 15 Hazirana kadarki toplamların yanına 26 Mayıs tutanak dipnotu koyuyor; tarih uyumsuzluğu özgün dayanakla çözülmedi. Sonraki 600; metin taraması 600/860, görseller ve 260 indeks açık.
