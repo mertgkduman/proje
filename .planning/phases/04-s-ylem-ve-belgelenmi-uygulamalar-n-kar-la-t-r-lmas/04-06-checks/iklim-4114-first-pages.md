@@ -63,3 +63,5 @@ Okuma kapsamı: PDF 0–30 ve 32–56 bu notta; PDF 31 önceki ayrı kaynak okum
 198 rapor PDF 82–85 görselleri okundu: şerh ekolojik mücadele ile katılım ilişkisini, kırılgan gruplar ve iklim adaleti, istihdam ve sosyal güvenlik bakımından adil geçişi tartışıyor. DİSK ve diğer kaynaklara yapılan atıflar ayrı doğrulama gerektirir. Görsel okuma 66–85 ve 94; 86–93 açık.
 
 198 rapor PDF 86–89 görselleri okundu: şerh ekokırımın suç olarak tanınması çağrısını, kendi uluslararası mevzuat anlatımını ve madde değerlendirmelerinin 1–4 başlangıcını içeriyor. Yabancı hukuk ve sayısal iddialar şerhe atfedilir, bağımsız hukuk tespiti sayılmaz. Görsel okuma 66–89 ve 94; 90–93 açık.
+
+198 rapor PDF 90–93 görselleri okundu: şerhin madde değerlendirmeleri 5–11, 13–15 ve 17 üzerinden ilerliyor; PDF 94’te 18 ve üç imzacı bulunuyor. 12 ve 16 numaralarının bu yazılı bölümde görünmemesi, 4114 tutanağındaki ayrı önergelerin yokluğu anlamına gelmez. Böylece üç imzalı şerhin başlangıcından son imzaya PDF 66–94 tüm 29 sayfası doğrudan görüntüden okundu. Bu, 198 raporunun diğer şerhleri, raporun bütünü veya şerhteki haricî iddiaların bağımsız doğrulanması değildir.
