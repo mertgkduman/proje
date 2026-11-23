@@ -67,3 +67,5 @@ PDF 110–113: eğitim bütçesi, gençlik ve sağlıkta kamu-özel ilişkisine 
 PDF 114 ve 118–120: alternatif bütçe önerileri gençlik, çocuk, enerji, inanç ve göçmen haklarını kapsıyor. 120’de geliri olmayan/belirli gelirin altındaki haneler için temel gelir ve her haneden bir kişiye asgari ücretin üçte ikisi güvencesi önerisi yazıyor; belirli gelir koşulları ve hane düzeyi korunur. Bu bir öneri metnidir, 2/2159’da böyle genel bir ödeme yapıldığı veya uygulandığı iddia edilmez. 0–120 tamam: 121/160, 39 açık.
 
 PDF 121–124: alternatif bütçe için kaynak önerileri, Kürt sorununun ekonomik boyutu ve tarihsel anlatım incelendi. Vergi ve kamulaştırma hedefleri gerçekleşmiş işlem değil; tarihsel yorumlar ve çatışma maliyeti tahminleri şerhe atıflıdır. 0–124 toplam 125/160, 35 açık.
+
+PDF 125–128: bölgesel ekonomik eşitsizliğin tarihsel yorumu ve İBBS bölgelerine ilişkin gösterge tablosu okunmuştur. İllerle İBBS bölgeleri, toplam paylarla kişi başı endeksler ve geniş/dar işsizlik birbirinden ayrıdır; tarihsiz tablo ve kaynak paydaları ayrıca doğrulanmalıdır. 0–128 toplam 129/160, 31 açık.
