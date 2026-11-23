@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 18 | 7 | 62483813 |
 | EMEP | 49 | 51 | 62482891 |
-| Saadet Partisi | 13 | 12 | 62482921 |
+| Saadet Partisi | 14 | 12 | 62485205 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -121,3 +121,7 @@ EMEP’in 7/35768 MESEM sorusu ve Bakanlık yanıtı iki görünümde doğruland
 DEM Parti’nin iklim teklifi için ilk beş madde çıkarma önergesi ve her birinin komisyon reddi iki görünümde doğrulandı. İmza pasajları ve aynı toplantıdaki grup açıklamaları bağlı. Sonraki 198 sayılı şerh ve 6–20. maddeler için işlem zinciri araştırmaya açık. [Doğrulama makbuzu](../04-06-checks/dem-4114-five-v4-62484657.json)
 
 Dokuz çalışma çiftinin yalıtılmış yapısal birleştirmesi 316 girdi olayından 312 olay ve 275 ilişki üretti. Şık Makas ile 10/4603 ve 10/4625 adayları kendi olaylarına bağlandı. Kalan 14 aday açık. Çıktı iki girdi sırasıyla bayt düzeyinde yeniden üretildi. Kapsam kapanışı yok. [Yapısal deneme](wave4-merge-rehearsal-01.json)
+
+Saadet Partisi’nin Kocasinan 8. Olağan İlçe Kongresi iki görünümde doğrulandı. 28 Ağustos programı, Selçuk Onat’ın yeniden seçilmesini bildiren 29 Ağustos haberleri ve parti API’sindeki boş ayrıntı ayrı korundu. İmzalı oy cetveli açık. [Doğrulama makbuzu](../04-11-checks/kocasinan-congress-62485205.json)
+
+Saadet’in Sivas konferansındaki BM atfı için 27 Ekim 2023 Genel Kurul kararı ve 18 Ekim Güvenlik Konseyi vetosu ayrı özgün belgelere bağlandı. Karar ve saha uygulamasına ilişkin değerlendirme farklı kaynak kapsamları. [BM kaynak okuması](../04-11-checks/party-sivas-un-source-reading.json)
