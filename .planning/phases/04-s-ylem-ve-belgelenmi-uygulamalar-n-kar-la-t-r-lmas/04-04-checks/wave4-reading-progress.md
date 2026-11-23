@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 51 | 7 | 62496114 |
 | EMEP | 58 | 60 | 62489834 |
 | Saadet Partisi | 19 | 15 | 62492219 |
-| Demokrat Parti | 21 | 19 | 62495141 |
+| Demokrat Parti | 25 | 23 | 62496667 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -201,3 +201,5 @@ Demokrat Parti sitesinde 257 liste kaydının 34 tam metni okundu. İki kesim so
 Bağlar /66→82, /46→83 ve /61→84 sevk ve raporları, ayrıca /81 yardım kararının ret ve oybirliği ifadeleri iki HTML görünümünde doğrulandı. Yapı kontrol komisyonu iki yıkım ve 1.353.551,71 TL kesilmiş ceza bildiriyor. Tahsilat, /81 oylamasının kesin sonucu ve gerçekleşen ödeme açık. [Makbuz](../04-09-checks/baglar-april-chains-62496114.json)
 
 Yeni Yol 8/134 önergesinin 17 Haziran sunumu ve 1 Temmuz gelen kâğıtlar eki iki HTML görünümünde doğrulandı. 13 Ocak asgari ücret düzeyi talebi, imzalı gerekçenin alt sınır ve intibak maddeleriyle karşılaştırıldı. Esas sicili 23 Kasım erişiminde Gündemde. [Yeni Yol makbuzu](../04-08-checks/inquiry-8134-v2-62496604.json)
+
+Demokrat Parti’nin 23 Şubat tarihli küçükbaş programı eleştirisi, 21 Şubat açıklaması ve 1 Nisan başvuru takvimiyle karşılaştırıldı. Haziran listesi ve bildirimler, Düzce’de 95 dişi ve 5 erkek hayvanla belgelenen tek işletme ve Yozgat’ta 2.381 başvuru ile il müdürlüğünün açıkladığı beş teslim ayrı kaynaklara bağlı. Tek tek ödeme ve teslim tarihleri açık. [Makbuz](../04-12-checks/kucukbas-v2-62496667.json)
