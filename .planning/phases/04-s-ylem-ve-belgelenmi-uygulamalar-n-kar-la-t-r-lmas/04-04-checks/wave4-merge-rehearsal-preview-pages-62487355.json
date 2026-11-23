@@ -1,0 +1,32 @@
+{
+  "job": "62487355",
+  "preview": "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-wave4-rehearsal-preview-62487355/releases/06f767885b3e49979e5a16c52c400835",
+  "manifest_sha256": "ded67a0db0edcaec0903cd414570de1f1f0351c97f2539ab3c8bbc79eea097ae",
+  "events": 312,
+  "relations": 275,
+  "source_permissions": 56,
+  "shared_keys": [
+    "tbmm-28-5-004-10-4603-gundem",
+    "tbmm-28-5-008-10-4625-gundem",
+    "tbmm-sik-makas-karaca-isci-basin-toplantisi-2026"
+  ],
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "closures": 0,
+  "shared_events": {
+    "tbmm-28-5-004-10-4603-gundem": {
+      "event_id": "0406-oct08-yeniyol-event",
+      "aliases": 2
+    },
+    "tbmm-28-5-008-10-4625-gundem": {
+      "event_id": "0406-staj-agenda-event",
+      "aliases": 3
+    },
+    "tbmm-sik-makas-karaca-isci-basin-toplantisi-2026": {
+      "event_id": "0405-tip-sik-makas-event",
+      "aliases": 2
+    }
+  },
+  "review_origins": 3200,
+  "unmatched_candidates": 51,
+  "independent_checks": "manifest, pointer, SQLite, exported JSON, 2 HTML views"
+}
