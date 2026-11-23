@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 12 | 8 | 62471281 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 40 | 42 | 62464623 |
+| EMEP | 41 | 43 | 62466343 |
 | Saadet Partisi | 11 | 9 | 62473205 |
 | Demokrat Parti | 14 | 13 | 62474909 |
 
@@ -61,3 +61,5 @@ Saadet karşılaştırmasına 27 Ekim SPK 76/1903 kararı ve 30 Ekim’de başla
 EMEP’in deprem barınma dosyasında toplantının günü belirsiz kaldı. İki görünümde toplantı ve 5 Şubat yayımı ayrı. [EMEP makbuzu](../04-10-checks/earthquake2025-date-uncertain-62464623-receipt.json)
 
 Demokrat Parti’nin 2021 ve 2023 kesin hesap kararları, arşiv tüzüğündeki kesin hesap ve denetim hükümleriyle karşılaştırıldı. AYM karar tarihleri ve Resmî Gazete yayım tarihleri ayrı kayıtlarda. Her iki kararın hükmü Mahkemenin inceleyebildiği belgelerle sınırlı. İlk gönderim günü ve parti içi hesap onayının tutanakları araştırmaya açık. [Doğrulama makbuzu](../04-12-checks/aym-accounts-62474909.json) [Kaynak okuması](../04-12-checks/aym-accounts-reading.md)
+
+TPI işçilerine ilişkin 7/26431 yazılı sorusu ve Bakanlığın eylül cevabı, EMEP’in ilgili emek kaydıyla birlikte doğrulandı. Soru ve cevap tarihleri ayrı kayıtlarda. [Doğrulama makbuzu](../04-10-checks/tpi-26431-62466343-receipt.json)
