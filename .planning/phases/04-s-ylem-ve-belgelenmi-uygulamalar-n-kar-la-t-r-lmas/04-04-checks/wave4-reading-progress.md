@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 141 | 141 | 62468795 |
-| TİP | 18 | 18 | 62480777 |
+| TİP | 19 | 18 | 62481718 |
 | DEM Parti | 21 | 9 | 62480714 |
 | İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 15 | 10 | 62481322 |
@@ -97,3 +97,5 @@ DBP için 10 Mart 2016 tarihli İHD sığınma evi raporu iki görünümde doğr
 EMEP’in TÜPRAŞ denetimine ilişkin 7/36753 ve 7/36769 yazılı soruları iki görünümde doğrulandı. Çalışma Bakanlığının 7 Eylül 2026 tarihli cevabı ile Enerji Bakanlığının 22 Aralık 2025 tarihli cevabı kendi soru dosyalarına bağlı. Yanıtlarda tesis bazında fiilî görevlendirme sayıları açık. [Doğrulama makbuzu](../04-10-checks/tupras-norm-62479310-receipt.json)
 
 Yeni Yol’un staj sigortası kayıtları iki görünümde doğrulandı. 2/3778’in 21 Temmuz başvurusu ve komisyon girişleri, 10/4625’in 20 Ekim ön görüşme oylamasından ayrı. Elif Esen’in Yeni Yol Grup desteği sözlü katkıya bağlı. 7 Ekim imzalı 10/4625 dosyasının TBMM giriş günü 8 Ekim ve esas durumu «Gündemde». [Doğrulama makbuzu](../04-08-checks/staj-agenda-v2-62481322.json) [Kaynak okuması](../04-08-checks/staj-agenda-reading.md)
+
+TİP’in 2/3864 elektrik ve temel hizmet desteği teklifi iki görünümde doğrulandı. Dokuz sayfalık imzalı metin ile dönem sonu hükümsüzlük kaydı ayrı dayanaklarda. Hükümsüzlüğün kesin işlem günü açık. 2022 yazılı soru ve 2023 cevabı kendi dosyasında. [Doğrulama makbuzu](../04-05-checks/fatura3864-62481718.json)
