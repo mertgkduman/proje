@@ -17,3 +17,5 @@ PDF 4–7 görüntü okuması: şerh küresel sistem, savaşlar ve jeopolitik ge
 PDF 8–11 görsel okuması: BRICS, küresel rekabet, teknoloji ve Ortadoğu analizleri şerhin kendi yorumlarıdır; atıflı veriler ve tarihsel iddialar ayrı denetlenmedi. Görsel kapsam 0–11,45–52,137–140,175–177: 27/214, 187 açık.
 
 PDF 12–15 görsel okuması: Ortadoğu’daki devletler, savaş ve diplomasi üzerine şerhin görüşleri ve haber atıfları incelendi; yorumlar ve ölü/yaralı sayıları bağımsız doğrulanmadı. Görsel kapsam 0–15,45–52,137–140,175–177: 31/214, 183 açık.
+
+PDF 16–19 görsel okuması: siyasal model ve emek alanına ilişkin şerh yorumları, SGK/TÜİK/DİSK atıfları okunmuştur. 18. indekste resmî işsizlik için ‘yüzde 10 bandının altına düşmemiş’ genellemesi kaynak iddiasıdır, seri ve tanımlar karşılaştırılmadan doğrulanmış olgu sayılmadı; 19. indekste SGK sigortalıları, TÜİK kayıtlı istihdamı ve geniş tanımlı işsizlik ayrı göstergeler ve dönemlerle aktarılmıştır. Görsel kapsam 0–19,45–52,137–140,175–177: 35/214, 179 açık.
