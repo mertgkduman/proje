@@ -179,3 +179,5 @@ Son ilerleme e0e975d9: rapor 0–589 indeks metni/boşluğu tarandı (590/860), 
 Son ilerleme e04789e7: rapor 0–619 indeks metni/boşluğu tarandı (620/860), sıradaki 620; 240 indeks ve not edilen görsel/tablolar açık. 592 Nisan/Ocak, 596 15 Haziran toplamı ve 26 Mayıs dipnotu, 609–610 Haziran/Mayıs tarih farkları çözülmedi. 616 itibarıyla tavsiyeler komisyona aittir. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
 
 Son ilerleme cd6caeca: rapor 0–649 indeks metni/boşluğu tarandı (650/860), sıradaki 650; 210 indeks ve not edilen görseller ile 620–649 çok sütunlu tabloların görsel okuması açık. Komisyon önerileri, TİP görüşü veya gerçekleşmiş işlem değildir; 629 kömür çıkış tarihi belirtmez. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme 7fb43c98: rapor 0–679 indeks metni/boşluğu tarandı (680/860), sıradaki 680; 180 indeks ve notlarda belirtilen görseller ile çok sütunlu tablolar açık. 658 istasyon çevresinde yapılaşma ifadesi 617 koruma tavsiyesi ile gerilimli, görsel/asıl bağlam doğrulanmadı. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
