@@ -54,3 +54,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 165–169 okundu. Fotoğraflı üye listesi 165 ayrıca görsel denetlendi; üyelerin parti etiketleri görselde bulunmuyor. 166 komisyon usul kararlarını; 167 rapora göre 25 toplantı, 82 dinlenen kişi ve raporun 16.12.2021 sunumunu; 168–169 Nisan 2021 toplantılarının konuşmacı ve tutanak bağlantılarını içeriyor. Sayılan görüşler kurumsal toplantı kaydıdır, bireysel TİP tutumu olarak kodlanmadı. İndeks 0–169: 170/860 sayfa okundu, 690 sayfa açık.
 
 2021 raporu indeks 170–174 metin olarak okundu: Nisan–Haziran 2021 komisyon toplantılarındaki davetliler ve tam tutanak adresleri listeleniyor; bunlar bireysel parti görüşü değil. 0–174 arasında 175/860 sayfa okundu, 685 sayfa açık.
+
+2021 raporu indeks 175–179 metin olarak okundu: son iki komisyon toplantısı ve 13–14 Temmuz 2021 tarihli beş ilde inceleme seyahatinin katılımcıları ile yerel yetkililere atfedilen açıklamalar yer alıyor. Raporda sayılan ziyaret heyetinde TİP adına katılım gösterilmiyor; yerel açıklamalar bağımsız olarak doğrulanmış sonuçlara dönüştürülmedi. 0–179 arasında 180/860 sayfa okundu, 680 sayfa açık.
