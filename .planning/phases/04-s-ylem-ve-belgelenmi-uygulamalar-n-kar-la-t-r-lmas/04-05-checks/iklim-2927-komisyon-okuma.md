@@ -17,3 +17,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 47–52 görsel okundu: önce 2021 rapor tavsiyesi aktarımı biter, ardından teklifin 1, 2, 3, 5 ve 6. maddeleri hakkındaki eleştiriler başlar. İmza henüz görülmedi; içerik TİP görüşü olarak sunulmadı.
 
 İndeks 53–58 görsel okundu: şerh teklifin 6–11. maddelerini, yerel planlar ve karbon ticareti konularını değerlendiriyor; 58. indekste komisyonda bu yönde sunulan önergenin reddi iddiası var, ancak aktör ve önerge kimliği bu sayfalarda verilmediğinden işlem olarak kaydedilmedi.
+
+İndeks 59–64 görsel okundu; aynı şerhte emisyon gelirleri ve teklifin 12–18. ve geçici 1. maddelerine ilişkin değerlendirmeler sürüyor. İmza henüz bulunmadı ve TİP atfı yapılmadı.
