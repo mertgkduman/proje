@@ -61,3 +61,5 @@ Okuma kapsamı: PDF 0–30 ve 32–56 bu notta; PDF 31 önceki ayrı kaynak okum
 198 rapor PDF 78–81 görselleri okundu: şerh kentleşme, halk sağlığı, endüstriyel hayvancılık ve katılımı ele alıyor; THHP ve Avrupa Komisyonu atıfları içeriyor. 68.440 ölüm sayısı 2022 yılı için şerhte atfediliyor; 4114 toplantısında temsilci aynı sayıyı bir yıl için belirtmiş, bu iki anlatım dönem ve kaynakları ayrıca incelenmeden kesinleştirilmez. Görsel okuma 66–81 ve 94; 82–93 açık.
 
 198 rapor PDF 82–85 görselleri okundu: şerh ekolojik mücadele ile katılım ilişkisini, kırılgan gruplar ve iklim adaleti, istihdam ve sosyal güvenlik bakımından adil geçişi tartışıyor. DİSK ve diğer kaynaklara yapılan atıflar ayrı doğrulama gerektirir. Görsel okuma 66–85 ve 94; 86–93 açık.
+
+198 rapor PDF 86–89 görselleri okundu: şerh ekokırımın suç olarak tanınması çağrısını, kendi uluslararası mevzuat anlatımını ve madde değerlendirmelerinin 1–4 başlangıcını içeriyor. Yabancı hukuk ve sayısal iddialar şerhe atfedilir, bağımsız hukuk tespiti sayılmaz. Görsel okuma 66–89 ve 94; 90–93 açık.
