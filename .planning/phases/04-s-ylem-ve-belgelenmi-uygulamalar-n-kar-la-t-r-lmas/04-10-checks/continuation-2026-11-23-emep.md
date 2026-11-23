@@ -78,3 +78,12 @@ TÜPRAŞ 47/49 adayına ek Şık Makas 48/50 exact d9061b27, package 0ffe0ad3f57
 62479310 TÜPRAŞ 47/49 çalışıyor; 62481218 Şık Makas 48/50 afterok bekliyor. Yukarıdaki exact SHA, dört marker, terminal 0:0 ve bağımsız SQL/JSON/iki HTML/monoton helper protokolüyle sırayla doğrula ve ancak ardından terfi et. Canlı NATO 45/47 486e6d2e; 610 kapsam açık, kanonik sürüm değişmedi.
 
 API 066 kısmi: 10234 9758–34231 gerçekten okundu; Eskişehir, Antalya, İzmir, Balıkesir ve Çanakkale anmaları ayrı yerel olaylardır, çok partili açıklamalar ortak kuruma atıflıdır. 10227 ve 10225 okunmadı; dilim pending, makbuz yazılmadı.
+
+
+### Devam kaydı: TÜPRAŞ terfi, MESEM ve API 074
+
+62479310 COMPLETED 0:0, dört marker ve bağımsız SQL/JSON/iki HTML/monoton denetim PASS; TÜPRAŞ 47/49 exact package c2bd74510c1a5f072d1b91d6c57f46baaf5e94eed54bac0fedaba4a249e854ec review 3d56c224bbd8fcdcf75f0dbd7c89d89036a9ee65aeab0ed620577b8ea9b9e24c 86db4a13 canlı. Preview c965b2d211ff4762a77d593d7ab78dac, receipt tupras-norm-62479310-receipt.json. 62481218 Şık Makas çalışıyor; önce terminal 0:0 ve dört marker, ardından daha önce belirtilen tam SHA ile promote-verified-asymmetric.py doğrulayıp 48/50 exact terfi et.
+
+Bayhan 7/35768 MESEM sorusu 10 Ekim 2025, bakanlık yanıtı 27 Kasım bildirimi; 4 taranmış sayfa görsel okundu, özgün ve owner-bound kaynak 7c37f246/1f1e1491. Şık Makas üstüne 49/51 aday 3c23639d package 5bdb4fe9fff047bfb718e64fbfd920538fd30d1ff8e9173887bbb8dc3e483eba review 21fcfe48084e9dc95d3a501ca0202d734a5283112b6c78f3e9fbffe8a922384f, semantic 424 PASS; 62482891 afterok Şık Makas. Tam doğrulama sonrası sırayla terfi; iyileşme sonucu çıkarma.
+
+066–074 gerçek kaynak makbuzları 9383c139, 134f8d66, 21c6f52e, 5493a4cb, b6223086, 7c35258d, f0251a45, 0a3147cc, 288c8b26. Sıradaki 075. 10066 canlı TÜPRAŞ soru çiftinin parti yayını; tekrar olay açma. 7/37207 Bayhan akademik iş güvencesi sorusu ve 6 sayfa MEB/YÖK yanıtı 012b287b ve owner-bound 16a380a0; bir inceleme sürdüğü belirtiliyor, sonuç bilinmiyor, yeni aday henüz yok. 610 kapsam açık, canonical değişmedi.
