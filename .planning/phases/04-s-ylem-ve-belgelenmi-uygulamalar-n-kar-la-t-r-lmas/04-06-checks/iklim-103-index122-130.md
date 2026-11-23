@@ -1,0 +1,3 @@
+# 1 Temmuz 2025, 103. birleşim basılı PDF 122–130
+
+Özgün SHA-256 `85eb8b1af1952bd67610a902bdaa980cdcfd6685b3abdaf10483c3fafb3e8c73`; PDF indeksleri 122–130 doğal metni okundu. İndeks 124 / basılı 125: 2/2927 16. maddeyi çıkarmak için Yeni Yol önergesi ve aynı mahiyette İbrahim Akın, George Aslan, Celal Fırat, Mahmut Dindar, Perihan Koca, Ömer Faruk Gergerlioğlu imzalı diğer önerge okundu; komisyon katılmadı. Gergerlioğlu önerge üzerinde konuştu; indeks 127 başkan iki aynı mahiyetteki önergenin birlikte reddini duyurdu. Başka CHP ve İYİ değişiklik önergeleri, bunların retleri ve maddenin kabulü ayrı işlemlerdir. Konuşmacı iddiaları kendisine atfedilir; imza bireysel oy veya tüm teklif sonucu değildir. Madde ve sayfalar paket öncesi görselle doğrulanacaktır.
