@@ -20,3 +20,6 @@ Bu metin seçili sayfa okumasıdır; tüm 57 sayfalık tutanak ve 198 sıra say�
 - PDF 19: Semra Dinçer, Nimet Özdemir ve Müzeyyen Şevkin konuşuyor; DEM adına ayrı katkı veya oy saptanmadı. Sayısal iddialar konuşmacılarına aittir.
 
 - PDF 20–21: Müzeyyen Şevkin, Nermin Yıldırım Kara ve Hasan Toktaş teklif ve hazırlanma yöntemi hakkında konuşuyor. Bu sayfalarda ayrı DEM katkısı veya DEM adına oylama bulunmadı; olgusal ve sayısal iddialar konuşmacılara aittir.
+
+- PDF 22–23: Hasan Toktaş konuşması ardından Ayten Kordu teklifin yöntemini ve ticari yaklaşımını eleştirmeye başlıyor.
+- PDF 24–25: Ayten Kordu sözlerini çevre ve yaşam alanları, madencilik işçileri için geçiş ve katılım eleştirileriyle tamamlıyor; bunlar kendi görüş ve iddialarıdır. Ardından başkan maddelere geçilmesini oylatıyor ve kabul edildiğini bildiriyor; isimli oy veya DEM oy yönü bu pasajda yoktur. Aynı sayfada başkan STK temsilcilerinin dinleneceğini söylüyor ve Temiz Hava Hakkı Platformu temsilcisi Deniz Gümüşel gerçekten söz alıyor. Bu kayıt, Koca’nın ilk usul talebinin bütün örgütler bakımından karşılandığını kanıtlamaz.
