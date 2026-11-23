@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 17 | 11 | 62489275 |
 | DBP | 29 | 7 | 62489251 |
 | EMEP | 54 | 56 | 62487027 |
-| Saadet Partisi | 14 | 12 | 62489362 |
+| Saadet Partisi | 16 | 13 | 62490394 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -155,3 +155,5 @@ DEM Parti’nin 4114 sayılı rapordaki 14–17. madde çıkarma önergelerinin 
 EMEP’in Erlau 7/28709 yazılı sorusu ve Bakanlık cevabı iki görünümde doğrulandı. Genel mevzuat ve başvuru yolları hakkında cevap verildi. İşyerine ait inceleme ve fiilî sonuç açık. [Makbuz](../04-10-checks/erlau-28709-62487027-receipt.json)
 
 Yeni Parti, İYİ Parti ve Yeni Yol çalışma paketlerindeki 8/153 olay alanları ve ham tutanak özeti birebir eşleşti. Kendi grup katkıları ve kaynak pasajları ayrı. Dokuz kaynak kökünde aynı arşiv yolunu kullanan 199 dosyanın 576 kopyasında özgün bayt farkı bulunmadı. [Ortak olay denetimi](wave4-common-event-audit-05.json) [Arşiv yolu denetimi](wave4-source-paths-audit-02.json)
+
+Mahmut Arıkan’ın 28 Ocak ve 11 Ağustos 2026 tarihli karşılıklı ziyaretleri iki görünümde doğrulandı. Ocak ayındaki açıklama ile aynı gün gerçekleşen görüşme ayrı. Ağustos ziyareti temasın sürdüğünü belgeliyor. Resmî ittifak kararı için eşleşen belge bulunmadı. [Makbuz](../04-11-checks/arikan-erbakan-visits-v2-62490394.json)
