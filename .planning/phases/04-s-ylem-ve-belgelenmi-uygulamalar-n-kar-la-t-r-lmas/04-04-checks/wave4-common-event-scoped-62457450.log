@@ -1,0 +1,12 @@
+original Conflicting single-valued event fields
+prototype_metadata Dangling review ref
+prototype_metadata_and_reviews structural merge passes 13 11 17 223
+origin audit entry kinds outside whitelist []
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-common-event-smoke.py", line 175, in <module>
+    scoped_union_preview()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-common-event-smoke.py", line 157, in scoped_union_preview
+    _render_practice_preview(payload,output,inventory,report['base_release'],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1459, in _render_practice_preview
+    raise ValueError('Önizleme hedefi mevcut veya proje kökü içinde')
+ValueError: Önizleme hedefi mevcut veya proje kökü içinde

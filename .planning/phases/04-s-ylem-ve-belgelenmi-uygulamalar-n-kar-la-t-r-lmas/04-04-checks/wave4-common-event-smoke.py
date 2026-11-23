@@ -4,8 +4,10 @@ from hashlib import sha256
 from pathlib import Path
 import json
 import os
+import shutil
 import subprocess
 import sys
+import tempfile
 
 from uygulama_birlestirme import _json, merge_packages, MergeError
 from uygulama_merge_kayit import ENTRY_KINDS
@@ -154,8 +156,11 @@ def scoped_union_preview():
     roots = {_digest(entry):root/'practices/sources'/item['identity']
              for item in inputs for entry in json.loads(item['raw'])['entries']}
     output = root/'.staging'/('gsd-wave4-shared-scoped-'+os.environ['SLURM_JOB_ID'])
-    _render_practice_preview(payload,output,inventory,report['base_release'],
-                             _validated_merge_roots=roots)
+    with tempfile.TemporaryDirectory(prefix='gsd-wave4-scoped-') as directory:
+        preview = Path(directory)/'preview'
+        _render_practice_preview(payload,preview,inventory,report['base_release'],
+                                 _validated_merge_roots=roots)
+        shutil.copytree(preview,output)
     release, = (output/'releases').iterdir()
     saved = json.loads((release/'records.json').read_bytes())
     assert all(row in saved['practice_source_party'] for row in grants)
