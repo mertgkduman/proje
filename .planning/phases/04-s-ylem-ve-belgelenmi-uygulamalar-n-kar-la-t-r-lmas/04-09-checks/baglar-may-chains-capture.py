@@ -1,0 +1,11 @@
+from pathlib import Path
+import json,sys
+sys.path.insert(0,'src')
+from arsiv import pdf_page_text
+here=Path(__file__).parent;pdf=Path('data/practices/sources/dbp/objects/6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3/original.pdf');prefix='0409-baglar-may-chains-';rows=[]
+anchors={'44':[(48,'file','2015/44','2015/44 komisyon sevki'),(48,'topic','ġeyhĢamil Mahallesindeki Fen','Şeyhşamil Fen İşleri incelemesi')], '63':[(67,'file','2015/63','2015/63 komisyon sevki'),(67,'topic','Jiyan Sabit Semt Pazarındaki','Jiyan pazarı araştırması')], '64':[(68,'file','2015/64','2015/64 komisyon sevki'),(68,'topic','Kaynartepe','Kaynartepe sakinlerinin sorunları')], '103':[(106,'file','2015/103','2015/103 Fen İşleri raporu'),(107,'result','595, 600, 605, 606, 641 ve 642. ci','Komisyonun altı sokak bildirimi'),(107,'approved','verildi.06/05/2015','Fen İşleri raporunun kabulü')], '102':[(105,'file','2015/102','2015/102 kadın pazarı raporu'),(106,'result','Sabit Semt Pazarının yerinin değiĢtirilmesi talebinde bulundular.','Pazar yeri değişikliği talebi'),(106,'approved','verildi.06/05/2015','Pazar raporunun kabulü')], '100':[(103,'file','2015/100','2015/100 mahalle raporu'),(104,'result','sokaklardaki aydınlatmanın yetersiz olduğu','Mahalle sakinlerinin aydınlatma beyanı'),(104,'approved','verildi.06/05/2015','Mahalle raporunun kabulü')], '99':[(103,'sum','23.025.318,56 TL harcanmıĢ','2015/99 raporunda Temizlik İşleri toplamı')], '105':[(108,'file','2015/105','2015/105 kesin hesap kararı'),(109,'sum','26.772.318,56 TL','2015/105 kesin hesapta Temizlik İşleri toplamı'),(109,'approved','birliği ile kabulüne karar verildi.07/05/2015','2014 kesin hesabının kabulü')]}
+for number,parts in anchors.items():
+ for index,label,exact,section in parts:
+  assert exact in pdf_page_text(pdf,index),(number,label,exact)
+  rows.append(dict(kind='passage',values=dict(id=prefix+number+'-'+label,version_id='0409-cemr-baglar-v1',exact=exact,prefix=None,suffix=None,article=None,section=section,pdf_page_index=index,printed_page=None)))
+(here/'baglar-may-chains-source-records.json').write_text(json.dumps(dict(party_id='dbp',entries=rows),ensure_ascii=False,indent=2)+'\n');print('MAY_CHAINS_CAPTURE',len(rows))
