@@ -39,3 +39,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 4–19 metin katmanından okundu: imzacı ve katılma yazıları, genel gerekçe ve madde gerekçeleri teklif sahiplerinin belgesidir; TİP politika beyanı değildir. Bu bölümde açıklananlar teklif gerekçeleridir, uygulanmış sonuç varsayılmadı.
 
 İndeks 115–120 metin katmanından okundu. Teklif ve komisyonca kabul edilen metin iki sütunda verildiğinden çıkarılan metinler iç içe görünür; sütun atfı gereken alıntılar için sayfa görseli ayrıca doğrulanmalı.
+
+İndeks 121–126 çift sütunlu metin katmanından okundu. 125. indekste komisyon sütunu madde 7 yerel planlarına adil geçiş ifadesini ekler; bu aşama nihai Genel Kurul metni veya fiilî uygulamayla eşitlenmedi.
