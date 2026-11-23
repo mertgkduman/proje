@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 16 | 10 | 62490451 |
 | Yeni Yol | 18 | 11 | 62490452 |
 | DBP | 29 | 7 | 62489251 |
-| EMEP | 54 | 56 | 62487027 |
+| EMEP | 55 | 57 | 62487388 |
 | Saadet Partisi | 16 | 13 | 62490394 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
@@ -163,3 +163,5 @@ DEM Parti’nin 4114 sayılı komisyon raporunun 18–20. maddeleri ile geçici 
 10/4961 sayılı araştırma önergesinin ön görüşmesinde Selçuk Özdağ’ın Yeni Yol Grubu adına sözlü destek açıklaması iki HTML görünümünde doğrulandı. Ön görüşme gündem talebi reddedildi. Tutanakta kişisel oy dökümü bulunmadı. [Yeni Yol makbuzu](../04-08-checks/nov03-4961-62490452.json)
 
 Turhan Çömez’in 3 Kasım birleşiminde kendi grubunun 10/4961 önergesine ilişkin açıklaması iki görünümde doğrulandı. Ön görüşme takvimi reddedildi. 30 Ekim KAP bildirimindeki taslak karşılık ve şirket anlatımı ile önergede ileri sürülen zarar ayrı kaydedildi. [İYİ Parti makbuzu](../04-07-checks/nov03-4961-62490451.json)
+
+EMEP’in Öz-Ka 7/27997 yazılı sorusu ve Bakanlık cevabı iki HTML görünümünde doğrulandı. Yanıt hukuk çerçevesini aktarıyor. İşyerine özgü denetim ve gerçekleşen sonuç açık. [Makbuz](../04-10-checks/ozka-27997-62487388-receipt.json)
