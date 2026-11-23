@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 16 | 10 | 62490451 |
 | Yeni Yol | 19 | 11 | 62492688 |
 | DBP | 36 | 7 | 62490789 |
-| EMEP | 55 | 57 | 62487388 |
+| EMEP | 56 | 58 | 62487943 |
 | Saadet Partisi | 18 | 14 | 62491361 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
@@ -177,3 +177,5 @@ DEM Parti adına Zeynep Oduncu Akın’ın 8/153 ön görüşmesindeki katkısı
 10/4314’ün 24 Haziran gündeminde Yeni Yol adına Mehmet Karaman’ın açıklaması iki HTML görünümünde doğrulandı. İlk gündem talebi reddedildi. TBMM esas sicilinde erişim günü Gündemde kaydı görüldü. [Yeni Yol makbuzu](../04-08-checks/teacher-4314-62492688.json)
 
 Dokuz arşiv kökünde ortak 219 yol ve 628 dosya kopyası aynı baytlarla doğrulandı. [Arşiv yolu denetimi](wave4-source-paths-audit-03.json)
+
+EMEP’in Bekaert 7/26171 yazılı sorusu ve Bakanlık cevabı iki görünümde doğrulandı. Bakanlığın cevabı hukuki başvuru yollarını açıklıyor. İşyerine özgü sonuç ve işe dönüş açık. [EMEP makbuzu](../04-10-checks/bekaert-26171-62487943-receipt.json)

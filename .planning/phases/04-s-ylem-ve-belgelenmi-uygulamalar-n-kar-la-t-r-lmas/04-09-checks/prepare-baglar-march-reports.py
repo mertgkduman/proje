@@ -116,7 +116,7 @@ events=(
       ('approved','result','Halkla İlişkiler Komisyonu raporu 5 Mart’ta kabul edildi.')),('42-step','2015/42 Fatih Mahallesi sorunları komisyona sevk edilmişti.')),
     ('57','2015-03-05','tuketici-haklari','Kaynartepe fırın denetimleri raporunun kabulü',
      'Bağlar Belediye Meclisi, Kaynartepe’de 17 fırın hakkında tespitler içeren Çevre ve Sağlık Komisyonu raporunu kabul etti.',
-     'Raporda altı uyarı, iki idari yaptırım tutanağı, bir eksik gramaj işlemi ve sekiz normal temizlik tespiti var. Denetim formları, ceza tutarı ve tahsilat açık.',
+     'Raporda 17 fırın hakkında altı uyarı, iki idari yaptırım tutanağı, bir eksik gramaj işlemi ve sekiz normal temizlik tespiti var. Denetim formları, ceza tutarı ve tahsilat açık.',
      (('inspection','action','Komisyon Kaynartepe fırınlarındaki incelemeyi raporladı.'),
       ('fine','action','Komisyon raporunda eksik gramaj nedeniyle işlem yapıldığı yazıyor.'),
       ('warning','action','Komisyon raporunda temizlik yetersizliği nedeniyle uyarı örneği var.'),
@@ -188,7 +188,7 @@ for (kind,identity),(claim,limitation) in tasks.items():
 validate_practice_source_review(snapshot,reviews,target_keys=targets,party_id=party)
 refs=[dict(subject_kind=row['subject_kind'],subject_id=row['subject_id']) for row in reviews]
 package['source_review_refs']=review['source_review_refs']=refs
-for name,content in [('baglar-march-reports-draft.json',package),('baglar-march-reports-review-draft.json',review)]:
+for name,content in [('baglar-march-reports-v2-draft.json',package),('baglar-march-reports-v2-review-draft.json',review)]:
     path=here/name
     with path.open('x') as output:
         output.write(json.dumps(content,ensure_ascii=False,indent=2)+'\n')

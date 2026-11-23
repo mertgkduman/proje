@@ -1,0 +1,5 @@
+Staged 140 original, readable and view paths; package 313e2d28a638faf86a09009dbcc2e44d4b4fc2affea8017aefe638e5248c54a8; review e4cc1fc0cbe25ff5245666c43afa1d69578df7f041a87377d0422be3e8e0b09b
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-09-checks/baglar-march-reports-validation.py", line 67, in <module>
+    assert term.casefold().replace('i̇', 'i') in card.casefold().replace('i̇', 'i'), (view, number, term)
+AssertionError: ('party', '57', '17 fırın')
