@@ -1,0 +1,3 @@
+# 1 Temmuz 2025: üç ayrı madde önergesi görsel kontrolü
+
+TBMM 103. birleşim basılı tutanak SHA-256 `85eb8b1af1952bd67610a902bdaa980cdcfd6685b3abdaf10483c3fafb3e8c73`. PDF indeks 111 ve 114 (14. madde önerge/imzalar ve birlikte ret), 117, 118 ve 120 (15. madde metin, imzalar ve birlikte ret), 124 ve 127 (16. madde metin, imzalar ve birlikte ret) yedi sayfa görsel incelendi. Üç madde için ayrı aynı mahiyetteki Yeni Yol/ilgili İYİ imzalı ve DEM milletvekilleri imzalı önergeler ret; teklif metni, komisyon retleri ve iki partinin bireysel imzaları ayrı. Bu görsel kontrol 103 tutanağın tamamının okunması veya parti içi karar/kişisel oy tespiti değildir.
