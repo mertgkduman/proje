@@ -12,7 +12,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | TİP | 17 | 17 | 62466264 |
 | DEM Parti | 17 | 9 | 62468809 |
 | İYİ Parti | 10 | 8 | 62463052 |
-| Yeni Yol | 12 | 8 | 62471281 |
+| Yeni Yol | 13 | 9 | 62477835 |
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 42 | 44 | 62469452 |
 | Saadet Partisi | 11 | 11 | 62475555 |
@@ -69,3 +69,5 @@ Saadet’in 7 Ekim fon açıklaması 7596 sayılı Kanun’un 1 ve 5. maddelerin
 EMEP’in Gaziantep 11. il kongresi iki görünümde doğrulandı. Kongre günü ve seçimin oy cetveli açık. Parti metni ve aynı metni aktaran yerel yayın iki bağımsız sonuç olarak sayılmadı. [Doğrulama makbuzu](../04-10-checks/gaziantep2026-62469452-receipt.json)
 
 Demokrat Parti’nin 2020 ve 2022 kesin hesap kararları da iki görünümde doğrulandı. 2020–2023 döneminin dört kararında hesap yılı, karar tarihi ve yayım tarihi ayrı. 2024 hesabının ilk incelemesi mahkeme gündem kaydında yer alıyor; bu hesabın esas kararı ve dört hesabın ilk gönderim günleri araştırmaya açık. [Doğrulama makbuzu](../04-12-checks/aym-earlier-accounts-62476741.json) [Kaynak okuması](../04-12-checks/aym-earlier-accounts-reading.md)
+
+Yeni Yol’un 10/4603 fon araştırması dosyası iki görünümde doğrulandı. 6 Ekim başvurusu, 8 Ekim’deki grup gündem önerisi ve ayrı ret kararı kaynaklı. Bu kararın konusu 8 Ekim’deki ön görüşme talebi. Esas dosyası «Gündemde». [Doğrulama makbuzu](../04-08-checks/fund-4603-62477835.json) [Kaynak okuması](../04-08-checks/fund-4603-reading.md)
