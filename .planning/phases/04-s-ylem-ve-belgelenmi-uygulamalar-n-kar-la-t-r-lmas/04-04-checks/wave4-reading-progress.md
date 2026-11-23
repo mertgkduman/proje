@@ -10,10 +10,10 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 49 | 9 | 62497999 |
+| DEM Parti | 51 | 9 | 62499139 |
 | İYİ Parti | 17 | 10 | 62492649 |
 | Yeni Yol | 21 | 12 | 62498133 |
-| DBP | 51 | 7 | 62496114 |
+| DBP | 58 | 7 | 62499119 |
 | EMEP | 59 | 61 | 62491755 |
 | Saadet Partisi | 23 | 19 | 62498024 |
 | Demokrat Parti | 28 | 25 | 62497391 |
@@ -215,3 +215,7 @@ Bağlar 2015 defterinin 147 farklı sayfası okundu. /118 ve /128 aynı yazıya 
 Demokrat Parti’nin Afyonkarahisar, Konya ve Tokat il kongresi kayıtları iki HTML görünümünde doğrulandı. Afyonkarahisar’da Hikmet Bülbül’ün ve Konya’da Mehmet Ali Yavuz’un seçildiği haber ve listeyle kayda alındı. Tokat’ta tek liste ve oylamanın başladığı belgeli, tutanak ve sayım açık. Doğrudan parti sitesindeki tüzük PDF’si 18 Haziran 2022 arşiv nüshasıyla aynı baytları taşıyor. Kongre günlerinde yürürlük ve seçim sonuçları ayrı kaynaklara dayanıyor. [Makbuz](../04-12-checks/province-congress-62497391.json)
 
 Saadet’in 10 Haziran tarihli hububat talebiyle aynı birleşimdeki 10/4251 ön görüşme reddi iki HTML görünümünde doğrulandı. 25 Haziran ilk TMO ödemesi, 27 Temmuz ve 17 Ağustos birikimli duyuru rakamları ayrı. 2 Haziran ilk açıklamada 45 günlük üst süre, 10 Haziran konuşmasında 21 günlük süre ve 25 Haziran başlangıç bildirimi kaynaklarına atıflı. Çiftçi bazında fiilî ödeme ve süre teyidi açık. Yeni Yol’un aynı gündem işlemi kaynak ve metin kimliği denetimine hazır. [Saadet makbuzu](../04-11-checks/hububat-62498024.json)
+
+Bağlar /44→103, /63→102 ve /64→100 sevk ve rapor zincirleri iki HTML görünümünde doğrulandı. /99 ve /105 aynı müdürlük için sırasıyla 23.025.318,56 TL ve 26.772.318,56 TL veriyor. 3.747.000 TL farkın nedeni, hesap kapsamı, fişleri ve ödeme uygulaması açık. [Bağlar makbuzu](../04-09-checks/baglar-may-chains-62499119.json)
+
+DEM Parti’nin 7 Eylül Parti Meclisi ve Kadın Meclisi kayıtları ayrı olay olarak iki HTML görünümünde doğrulandı. Parti duyuruları organ adları ve sonuçlarının kaynağı. Tüzüğün ilgili günde yürürlüğü ve kararların uygulaması açık. [DEM Parti makbuzu](../04-06-checks/dem-2026-pm-myk-62499139.json)
