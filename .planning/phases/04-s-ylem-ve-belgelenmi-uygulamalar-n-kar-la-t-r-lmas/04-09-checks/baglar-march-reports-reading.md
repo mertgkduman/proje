@@ -1,0 +1,7 @@
+# Bağlar Belediye Meclisinin Şubat sevkleri ve Mart raporları
+
+2015/42 ve 2015/43 kararları Fatih Mahallesi ve Kaynartepe fırınları için ayrı komisyon sevkleri. 2015/56 ve 2015/57 ise bu dosyaların rapor kabulü. 5 Mart tarihli 2015/57 raporunda 17 fırın kaydı bulunuyor. Altı uyarı, iki idari yaptırım tutanağı, bir eksik gramaj işlemi ve sekiz normal temizlik tespiti sayıldı. Tekil denetim tutanakları ve tahsilat belgeleri açık. [Belediye meclisi derlemesi](https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf)
+
+2015/51, 2015/26 sevkinin ardından Fen İşlerinin 2014 harcama raporunu kabul etti. Görselden kontrol edilen 22 kalemin toplamı 14.060.244,50 TL. Komisyon 4.359.755,50 TL iade ve 18.420.000 TL ödenek bildirdi. 2015/52 ve 2015/54 ayrı kadın çalışanları incelemelerinin kabulü. 2015/58, aynı başvuru hakkında iki komisyona yapılan 2015/47 sevkinin İnceleme ve Araştırma Komisyonu cevabı. Muhasebe fişleri ve saha sonuçları açık. [Sayfa okuması](baglar-council-2015-reading-005.json)
+
+2015/49, 2015/99 ve 2015/161 kararları belediye bütçesi ve kamu hesap verebilirliğiyle ilgili. Parti bütçesi ve ilçe örgütü kesin hesabı konularındaki önceki aday kayıtları geçmişte korunuyor. Bu üç olay, aynı kanıt ve olay kimlikleriyle kamusal hesap verebilirlik kapsamında gösteriliyor. Kredi sözleşmeleri, gerçekleşen ödemeler ve Temizlik İşleri raporundaki harcama kalemi farkının muhasebe dayanağı araştırmaya açık. [Belediye meclisi derlemesi](https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf)
