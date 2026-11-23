@@ -17,3 +17,5 @@ PDF indeks 10–14 okundu: Bakanın enerji destekleri, verimlilik, Amasra soruş
 PDF indeks 15–19 okundu: EPDK başkanı sunumunu tamamlar, Nükleer Düzenleme Kurumu Başkanı lisans, denetim ve 2023 planlarını anlatır; bunlar kurumun tarihli beyanlarıdır, bağımsız gerçekleşme denetimi veya TİP atfı değildir.
 
 PDF indeks 20–24 okundu: NDK bütçe sunumu biter, başkan grup konuşmacılarını açıklar ve CHP adına Ahmet Akın enerji politikası eleştirisine başlar. Bu konuşmalar kendi aktörlerine aittir.
+
+PDF indeks 25–29 okundu: CHP Ahmet Akın konuşması biter, toplantı çakışması tartışılır, HDP adına Garo Paylan konuşur; Kadıgil indeks 28–29 maden kurumu yetkilisine ilişkin kısa araya girer. Paylan ana konuşması ve bu iddialar Kadıgil veya TİP sözüne dönüştürülmez; soruşturma sonucu varsayılmaz.
