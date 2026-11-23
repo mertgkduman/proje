@@ -57,3 +57,10 @@ NATO 45/47 üstüne TÜPRAŞ 47/49 aday f4cb4e2c package c2bd74510c1a5f072d1b91d
 ### Devam kaydı: Kırşehir terfi ve API 046
 
 62473858 COMPLETED 0:0, dört marker ve bağımsız SQL/JSON/iki HTML/monoton denetim PASS; 44/46 exact 11c41372222f343373561c5eefc263be8523374032ef2b73f34fad1bed546496 / 08e53c73d4b5984f0226d82f328e5314c93e77eea2dfec4e2f1cbe80a31e0cc2 3fbda1fa ile canlı, receipt kirsehir2026-62473858-receipt.json, preview d90e67e616574f628bdb69930b0a4285. Canonical aynı. 62477844 NATO 45/47 çalışıyor; 62479310 TÜPRAŞ 47/49 afterok bekliyor, yalnız terminal ve bağımsız denetim sonrası sırayla terfi. 043–046 SHA bağlı gerçek okumalar 1bcbb46e, 3414cf57, b9c02c07, e5f132fa; 047 sıradaki açık dilim. 10865 ve 10839 aynı Gökçeyazı iftarıdır, yinelenmemeli. 610 kapsam açık.
+
+
+### Devam kaydı: Şık Makas ve 047
+
+API 047 gerçek okuma 230ec010; sıradaki 048. 10778 kadın işçilerle Meclis buluşması ve 10784 ardından basın toplantısı aynı toplantı zinciridir. 10797 ayrı Şık Makas işçileriyle TBMM basın toplantısıdır; ANKA 4 Mart 17:55 yayını 3 Haziran güncellenmiş, parti yayını 6 Mart. 4 Mart yayın tarihi toplantının kesin günü olarak henüz alınmadı; özgün TBMM kanıtı ve işçi talepleri sonucu açık. ANKA gerçek ham bayt 2629ffa4231dfcf20c359916cb7f32a7543b3cedbb50359caffe90c00809d042; parti ham 55a49c72f35ae9f6c6ec4647befe85a2c6b2812b7b03016cb81f46b3aaa7c912; kaynak ve pasif görünümler 9bfdfb62, arama makbuzu faf03f1b. ANKA HTML entity nedeniyle ilk kaynak yakalama assertion reddi yaşandı; görünen kısa kesintisiz pasaj seçildi ve validate_view her iki kaynak için geçti.
+
+TÜPRAŞ 47/49 adayına ek Şık Makas 48/50 exact d9061b27, package 0ffe0ad3f57ecb194c499d89eaf679560e1775699d9ed1abf1662a55ae64441d review 21b37ccf239599467264a13aa13a2f5a61b44b07b6369b4df5b6417a40bd5689; 416 semantic PASS. 62481218 afterok 62479310; öncül terminal ve bağımsız kontrollerinden sonra 62481218 logundaki dört marker, exact SQL/JSON/iki HTML ve monoton helper ile terfi edilebilir. NATO 62477844 çalışıyor, TÜPRAŞ 62479310 ve Şık Makas bağımlı bekliyor. 610 kapsam açık, canonical değişmedi.
