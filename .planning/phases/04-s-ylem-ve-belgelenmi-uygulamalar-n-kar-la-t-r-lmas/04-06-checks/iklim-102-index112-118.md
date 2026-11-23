@@ -1,0 +1,3 @@
+# 26 Haziran 2025, 102. birleşim basılı PDF 112–118
+
+TBMM basılı SHA-256 `f53c52767d9aaf40db8efc222584ca477a1014272eea4ca63dae17853ce65e5d`; PDF indeks 112–118 doğal metni okundu. 9. madde için AK Parti ve İYİ ayrı aynı mahiyetteki tahsisat değişikliği önergeleri komisyon takdirine bırakılıp kabul edildi; bu, önceki Yeni Yol/DEM imzalı 9. madde çıkarma önergelerinin birlikte reddinden ayrı bir işlemdir. İndeks 114’te Yeni Yol ve aynı mahiyette Akın, Aslan, Fırat, Dindar, Koca imzalı 10. madde çıkarma önergeleri, komisyon katılmaması; Akın konuşması ardından indeks 118’de iki önergenin birlikte reddi yer alır. Sonrasında CHP’nin ayrı kurul değişikliği önergesi başlar. İmza, kişisel oy veya teklifin tümünün sonucu değildir; sayfalar görsel doğrulanacaktır.
