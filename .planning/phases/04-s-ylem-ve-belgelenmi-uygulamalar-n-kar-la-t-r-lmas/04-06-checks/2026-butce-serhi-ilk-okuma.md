@@ -9,3 +9,5 @@ PDF 4–5: şerh dünya ekonomisi, ekoloji ve finansallaşmaya dair değerlendir
 PDF 6–9: şerh ticaret tarifeleri, ekonomik riskler ve 2025 NATO Lahey zirvesi hakkında değerlendirme ve çeşitli dış kaynak atıfları sunuyor; rakamlar ve tarihsel iddialar şerh bağlamında kalır, dış kaynaklar ayrıca kontrol edilmedi. 0–9 ve 115–117 toplam 13/160 okundu; 147 sayfa açık.
 
 PDF 10–13: NATO harcamaları tahminleri ve Ortadoğu çatışmalarına ilişkin şerh yazarlarının analizi ve değerlendirmeleri aktarılıyor; tarih, uluslararası hukuk ve finansman iddiaları bağımsız doğrulama değildir. Okuma 0–13 ve 115–117: 17/160, 143 açık.
+
+PDF 14–17: Kıbrıs, Kafkasya ve bölgesel barışa ilişkin DEM adına tutum ve küresel emek hareketleri anlatılıyor. 17. indeks 13 Kasım 2025 ve 24–26 Kasım tarihlerindeki olayları geçmiş olarak anlatır; kaynak metninin kendi kronolojisidir, kesin yayımlanma tarihi ayrı kontrol edilmeli. Tarihsel ve güncel olay iddiaları doğrulanmış sayılmadı. 0–17 ve 115–117 toplam 21/160 okundu, 139 açık.
