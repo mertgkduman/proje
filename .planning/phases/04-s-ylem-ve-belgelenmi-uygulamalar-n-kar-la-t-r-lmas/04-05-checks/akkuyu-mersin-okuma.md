@@ -21,3 +21,5 @@ PDF indeks 20–24 okundu: NDK bütçe sunumu biter, başkan grup konuşmacılar
 PDF indeks 25–29 okundu: CHP Ahmet Akın konuşması biter, toplantı çakışması tartışılır, HDP adına Garo Paylan konuşur; Kadıgil indeks 28–29 maden kurumu yetkilisine ilişkin kısa araya girer. Paylan ana konuşması ve bu iddialar Kadıgil veya TİP sözüne dönüştürülmez; soruşturma sonucu varsayılmaz.
 
 PDF indeks 30–34 okundu: HDP adına Garo Paylan ihtiyaç sınırına kadar ücretsiz elektrik, doğalgaz, su ve internet önerisini anlatır; ardından İYİ Parti adına Bedri Yaşar konuşur. Paylan ifadeleri Kadıgil/TİP adına kaydedilmez.
+
+PDF indeks 35–39 okundu: İYİ Parti adına Bedri Yaşar konuşması sona erer, MHP adına İsmail Faruk Aksu enerji arzı ve nükleer teknoloji değerlendirmesine başlar. Görüşler ilgili parti temsilcilerine aittir.
