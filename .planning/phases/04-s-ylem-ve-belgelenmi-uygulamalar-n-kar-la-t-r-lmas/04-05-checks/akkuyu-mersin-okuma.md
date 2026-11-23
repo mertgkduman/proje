@@ -25,3 +25,5 @@ PDF indeks 30–34 okundu: HDP adına Garo Paylan ihtiyaç sınırına kadar üc
 PDF indeks 35–39 okundu: İYİ Parti adına Bedri Yaşar konuşması sona erer, MHP adına İsmail Faruk Aksu enerji arzı ve nükleer teknoloji değerlendirmesine başlar. Görüşler ilgili parti temsilcilerine aittir.
 
 PDF indeks 40–44 okundu: MHP İsmail Faruk Aksu konuşması biter, AK Parti İbrahim Aydemir grup konuşması ve diğer vekillerin karşılıklı müdahaleleri başlar. Kimlikler ayrıldı, iddialar doğrulanmış olgu diye kullanılmadı.
+
+PDF indeks 45–49 okundu: AK Parti İbrahim Aydemir grup konuşması biter; CHP Müzeyyen Şevkin ve HDP Ali Kenanoğlu konuşmaları başlar. Amasra hakkındaki iddialar kendi sahiplerine atıflıdır.
