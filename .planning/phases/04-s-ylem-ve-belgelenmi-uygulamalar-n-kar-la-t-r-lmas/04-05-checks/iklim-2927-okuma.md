@@ -334,3 +334,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 287 (basılı 270) ve 533 (basılı 516) görsel karşılaştırıldı: her ikisinde %22,5 yüksek, %50,9 ise sırasıyla orta düzey ve düşük diye basılıdır. Metin çıkarma hatası değil; sınıflandırma farkı temel 2018 harita veya kurum yazısı ile çözülmeden sonuç seçilmedi.
 
 - PDF indeks 548 (basılı 531) görsel okundu: gövdede 18 Mayıs 2015 / 2 Temmuz 2021, dipnotlarda 18 Mayıs 2021 / 2 Haziran 2021 basılıdır. Çelişkiler kaynak metninin kendisinde; gerçek toplantı tarihi özgün tutanakla çözülmeden seçilmedi.
+
+- PDF indeks 737–738 görsel okundu: CHP şerhinde 9,5 milyon bina ve 1,3 milyon belgeli bina, sonraki sayfada yüzde 3,2 yazıyor; görsel de metin çıkarımını doğruluyor. Aritmetik ilişki kaynakta tutarsız; hesap veya farklı payda uydurulmadı.
