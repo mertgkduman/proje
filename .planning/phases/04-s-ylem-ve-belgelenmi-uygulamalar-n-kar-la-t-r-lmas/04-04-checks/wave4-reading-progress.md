@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 12 | 8 | 62471281 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 38 | 40 | 62463265 |
+| EMEP | 39 | 41 | 62463708 |
 | Saadet Partisi | 9 | 7 | 62469964 |
 | Demokrat Parti | 12 | 11 | 62467362 |
 
@@ -53,3 +53,5 @@ DEM Parti’nin 10/4830 ve 10/4918 araştırma önergeleri iki görünümde doğ
 Saadet’in 21 Ekim yatırımcı güvencesi açıklaması ile 22 Ekim 7596 kabulü iki görünümde doğrulandı. Yeni Yol’un 10/4826 ön görüşme talebinin üç oylaması ile esas dosyası durumu birlikte korundu. [Saadet makbuzu](../04-11-checks/fund-7596-62469964.json) [Yeni Yol makbuzu](../04-08-checks/fund-4826-62471281.json)
 
 EMEP’in 7/49942 fon sorusu ve 4 Kasım imzalı Bakanlık cevabı iki görünümde doğrulandı. Sorunun talebi ve Bakanlığın açıklaması ayrı kaydedildi. [EMEP makbuzu](../04-10-checks/fund-question-749942-union-62463265-receipt.json)
+
+EMEP’in 7/27371 meslek hastalığı sorusu doğrulandı. 22 Mayıs Gelen Kâğıtlar kaydı bu tarihteki süre durumunu gösteriyor. [EMEP makbuzu](../04-10-checks/health-27371-union-62463708-receipt.json)
