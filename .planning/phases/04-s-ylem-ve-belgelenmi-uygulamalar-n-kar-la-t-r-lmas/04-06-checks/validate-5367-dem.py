@@ -4,8 +4,8 @@ from pathlib import Path
 here=Path(__file__).resolve().parent; root=here.parents[3]; job=os.environ['SLURM_JOB_ID']
 spec=importlib.util.spec_from_file_location('dem_tracer_validation',here/'tracer-validation.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
 package=here/'5367-dem-draft.json'; review=here/'5367-dem-review-draft.json'
-assert mod.sha(package)=='2976dde56d52521708f4ad015e78686b257f0161cbcb583059299297511b7c7d'
-assert mod.sha(review)=='58287ed01ca2c3a12bf9138d67755c34af3edacab8c940ae807ba8d52cdcc67d'
+assert mod.sha(package)=='3b29f030c76cda43adafe2e33db8fb7008b1a233c83bc14f6f82dcb259d9c17c'
+assert mod.sha(review)=='62534d40d4865a3fead5940678864ae3995bee7aee98f156055f3200b8d4a72e'
 before=json.loads((root/'data/practices/04-dem.json').read_text()); candidate=json.loads(package.read_text())
 canonical=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
 for k in ('entries','scope_inventory'): assert {canonical(x) for x in before[k]} <= {canonical(x) for x in candidate[k]},k
