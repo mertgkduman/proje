@@ -55,3 +55,5 @@ Okuma kapsamı: PDF 0–30 ve 32–56 bu notta; PDF 31 önceki ayrı kaynak okum
 198 sıra sayılı rapor PDF 68–69 görselleri de doğrudan okundu: imzalı DEM şerhi, yeşil büyüme ve emisyon ticareti çerçevesini eleştiriyor; ekosistemin korunmasına insan merkezli yaklaşımı tartışıyor. Bunlar şerh sahiplerinin görüşleridir. Bu iki sayfa eklenince görsel kapsam 66–69 ve 94’tür; aradaki 70–93 henüz bağımsız okunmadı.
 
 198 rapor PDF 70–73 görselleri okundu: şerh, sınırda karbon düzenlemesi ve karbon ticaretini, yenilenebilir enerji yer seçimini, yaptırımların caydırıcılığını ve düzenleyici kurumların bağımsızlığını eleştiriyor. Bunlar imzacıların atıflı değerlendirmeleridir. Görsel okuma 66–73 ve 94; 74–93 henüz bu çalışmada okunmadı.
+
+198 rapor PDF 74–77 görselleri okundu: şerh kömürden çıkış hedefi, fosil yakıt teşvikleri, nükleer enerji ve kent politikalarını değerlendiriyor. 2021 atıf ve rakamlar şerhin anlatımıdır; özgün çalışmalar ayrıca incelenmeden doğrulanmış hesap olarak sunulmaz. Görsel okuma 66–77 ve 94; 78–93 açık.
