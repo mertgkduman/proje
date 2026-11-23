@@ -1,6 +1,6 @@
 # Dördüncü dalga araştırma durumu
 
-Yeni Parti’nin çalışma çifti 139 olay ve 140 ilişkiye ulaştı. 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
+Yeni Parti’nin çalışma çifti 140 olay ve 141 ilişkiye ulaştı. 14 Ekim 2026 Plan ve Bütçe Komisyonu tutanağı, birleştirme ve alt komisyon önergelerinin reddini ve 2/3939’un komisyondaki kabulünü ayrı işlemler olarak belgeliyor. [Komisyon önizleme makbuzu](fund-commission-62455124.json) 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
 
 Resmî parti API’sinin 58 dilimi ve 270 özgün gövdesi okundu. TBMM milletvekili dizinindeki 128 kanun teklifi, 306 Meclis araştırması ve sekiz dilimdeki 1.679 yazılı soru özeti okundu. Ayrıntı kayıtları için 325 alım makbuzunun ve imzalı başvuru veya cevap PDF'leri için 398 alım makbuzunun tamamı HTTP 200 ve özgün baytlarla doğrulandı. Makbuzlar tekrar edilen veya ayrı hedeflenen kayıtlar içerebilir. Seçilen PDF’lerin bağlam okuması sürüyor. 610 konu hücresinde kapanış yok.
 
@@ -8,7 +8,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
-| Yeni Parti | 139 | 140 | 62406651 |
+| Yeni Parti | 140 | 141 | 62455124 |
 | TİP | 16 | 16 | 62450302 |
 | DEM Parti | 12 | 9 | 62442819 |
 | İYİ Parti | 7 | 6 | 62445700 |
