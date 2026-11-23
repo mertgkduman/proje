@@ -12,7 +12,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 48 | 9 | 62494452 |
 | İYİ Parti | 17 | 10 | 62492649 |
-| Yeni Yol | 19 | 11 | 62492688 |
+| Yeni Yol | 20 | 12 | 62496604 |
 | DBP | 51 | 7 | 62496114 |
 | EMEP | 58 | 60 | 62489834 |
 | Saadet Partisi | 19 | 15 | 62492219 |
@@ -199,3 +199,5 @@ Demokrat Parti sitesinde 257 liste kaydının 34 tam metni okundu. İki kesim so
 2/3793 esaslı 7595 oylamasının iki ayrı kesin cetvel sütunu ve ilk ilan uyuşmazlığı iki HTML görünümünde doğrulandı. Haydar Altıntaş maddelere geçişe katılmadı ve teklifin tümüne ret verdi. 18 Ağustos yayımı ile 1. maddede aranan MGK kararının Resmî Gazete yayımı ayrı. [Demokrat Parti makbuzu](../04-12-checks/framework-7595-62495141.json)
 
 Bağlar /66→82, /46→83 ve /61→84 sevk ve raporları, ayrıca /81 yardım kararının ret ve oybirliği ifadeleri iki HTML görünümünde doğrulandı. Yapı kontrol komisyonu iki yıkım ve 1.353.551,71 TL kesilmiş ceza bildiriyor. Tahsilat, /81 oylamasının kesin sonucu ve gerçekleşen ödeme açık. [Makbuz](../04-09-checks/baglar-april-chains-62496114.json)
+
+Yeni Yol 8/134 önergesinin 17 Haziran sunumu ve 1 Temmuz gelen kâğıtlar eki iki HTML görünümünde doğrulandı. 13 Ocak asgari ücret düzeyi talebi, imzalı gerekçenin alt sınır ve intibak maddeleriyle karşılaştırıldı. Esas sicili 23 Kasım erişiminde Gündemde. [Yeni Yol makbuzu](../04-08-checks/inquiry-8134-v2-62496604.json)
