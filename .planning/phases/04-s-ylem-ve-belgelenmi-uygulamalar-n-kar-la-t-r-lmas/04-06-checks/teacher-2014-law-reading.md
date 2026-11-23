@@ -1,0 +1,3 @@
+# Öğretmen ücret karşılaştırması: tarihsel hukuk belgeleri
+
+TBMM’nin 5580 sayılı kanunun özgün metninde madde 9 ikinci fıkra, okullarda yöneticilik ve eğitim-öğretim hizmeti yapanların ücretini kıdemlerine göre dengi resmî okullardaki aylık ve sosyal yardım kapsamındaki ek ödeme ile karşılaştırır. 6528 sayılı Kanun madde 14, 5580 madde 9 ikinci fıkrayı yürürlükten kaldırır. 6528’in özgün PDF 0 ve 6 indeksleri görsel okundu: kabul 1 Mart 2014, Resmî Gazete yayımı 14 Mart 2014, sayı 28941. Bu belirli eski hüküm ile 10/4314 imzalı gerekçedeki 2014 anlatımı bağdaşır; Hun’un 2024 ifadesinin hangi başka düzenlemeye atıf yaptığı bilinmediğinden sözü değiştirilmez. 2026 itibarıyla tüm güncel mevzuat veya öğretmenlerin fiilî ücretleri bu iki belgeyle tespit edilmiş değildir.
