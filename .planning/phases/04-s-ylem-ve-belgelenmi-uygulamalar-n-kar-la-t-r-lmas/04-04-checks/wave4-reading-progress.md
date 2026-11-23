@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 140 | 141 | 62455124 |
 | TİP | 16 | 16 | 62450302 |
-| DEM Parti | 14 | 9 | 62460660 |
-| İYİ Parti | 9 | 7 | 62460542 |
+| DEM Parti | 15 | 9 | 62463210 |
+| İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 11 | 7 | 62461211 |
 | DBP | 10 | 7 | 62443961 |
-| EMEP | 34 | 36 | 62457771 |
+| EMEP | 35 | 37 | 62461273 |
 | Saadet Partisi | 8 | 6 | 62437168 |
 | Demokrat Parti | 10 | 9 | 62452450 |
 
@@ -35,3 +35,5 @@ DEM Parti’nin 18 Şubat komisyon raporu dosyasında iki sayım farkı kaynakla
 Yeni Yol’un 10/4343 ve 7 Ekim fon açıklaması ayrı olaylarla doğrulandı. 10/4343’te üç elektronik oylamanın sırası iki görünümde korunuyor. [Makbuz](../04-08-checks/fund-july-62461211.json)
 
 DEM Parti’nin 7 Ekim fon bilgilendirmesindeki Koçyiğit ve Temelli katkıları doğrulandı. Komisyon çağrısı, 14 Ekim komisyon işlemlerinden ve 22 Ekim kanun oylamasından ayrı bir olay. [DEM makbuzu](../04-06-checks/dem-fund-1007-62460660.json)
+
+İYİ Parti ile DEM Parti’nin 1 Temmuz 10/4343 görüşmelerindeki sözlü desteği ayrı parti katkıları olarak doğrulandı. İYİ Parti’nin 7 Ekim kaydı, 1 Temmuz grup konuşmasıyla ilişkilendirildi. EMEP medya dosyasında parti yayınının yazar atfı özgün üst veriye göre doğrulandı. [İYİ Parti makbuzu](../04-07-checks/fund-july-62463052.json) [DEM makbuzu](../04-06-checks/dem-fund-july-62463210.json) [EMEP makbuzu](../04-10-checks/media-attribution-fixed-union-62461273-receipt.json)
