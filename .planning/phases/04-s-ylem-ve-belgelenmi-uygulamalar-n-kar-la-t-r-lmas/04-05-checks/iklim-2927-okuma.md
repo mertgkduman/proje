@@ -144,3 +144,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 390–394 metni tarandı: DSİ kaynaklı 2020 havza, su kullanımı, depolama ve sulama arka planı. 390–392 tabloları ile 394 grafik düzeni görsel olarak incelenmedi; sayılar TİP uygulaması veya güncel ölçüm olarak alınmadı. 0–394: 395/860 indeks metni veya boşluğu tarandı; görseller ve 465 indeks açık.
 
 2021 raporu indeks 395–399 metni tarandı: DSİ hidroelektrik ve havzalar arası aktarım anlatımları, farklı komisyon konuşmacılarının görüşleri ve su projeksiyonları. Katılımcı görüşleri birbirine ve TİP adına bir tutuma dönüştürülmedi; projeksiyonlar gerçekleşme değildir. 0–399: 400/860 indeks metni veya boşluğu tarandı; görseller ve 460 indeks açık.
+
+2021 raporu indeks 400–404 metni tarandı: üç model, iki senaryo ve havza bazlı yağış-su projeksiyonu. 401 tablo, 402–403 haritalar ve 404 tablo görsel okunmadı; senaryo öngörüleri gerçekleşme veya TİP tutumu sayılmadı. 0–404: 405/860 indeks metni veya boşluğu tarandı; görseller ve 455 indeks açık.
