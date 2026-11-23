@@ -27,3 +27,12 @@ Parti API 001–025 gerçek gövde aralıkları ve SHA ile okundu, 021–025 sı
 62469452 COMPLETED 0:0; 42/44 exact 5f8fad1ad0a775d4f29739ad5b3c9e3629370aaba8e12dafeba2cd2d4154752f / cca2bb3e8771c5571c15bd2c5a41a82485e17cf8de58d0fd8c57d8f40103cddd, bağımsız monoton SQL/JSON/iki HTML ve canonical değişmezlik kontrolüyle 0d418f60 canlı. Makbuz gaziantep2026-62469452-receipt.json, preview b24aa51207824c5da6c97c6c0fa94356. 62472618 Malatya aktif, 62473858 Kırşehir afterok bekliyor.
 
 026 gövde okuma 8cdb55b6; sıradaki 027. 95cbd951 10 Haziran NATO yasağı davası için EMEP ve ANKA/Haberler özgün baytları ve pasif view, atıf ve pasajlar; kaynak draft nato-case-source-draft.json. Dilekçe dosyası ve karar açık, KESK/TKP davaları ve daha sonraki yasak ayrı. `0410-expression-statement` programı toplantı/gösteri hakkını da kapsıyor, sonraki 44/46 exact aday üstünde eşsiz olay ve semantik inceleme adayı hazırlanabilir; yayımlanma günü 10 Haziran dava günü olarak tek başına varsayılmamalı. 610 hücre ve tüm kapsamlar açık.
+
+
+### Devam kaydı: 032 okuma ve NATO davası
+
+028–032 gövde aralıkları gerçek okundu ve SHA kontrolüyle 2a6463e1, 04ee3873, f3dca447, fa0a823b/b4dc154e, 749c49ad; 033 sıradaki açık dilim. 031de 11535 gövdesi 64063te tamamlandığı düzeltildi; 032 sonraki kaynak 11526 devamıdır. 11607 Aliağa önergesi mevcut 0410-aliaga-104172-event ile eşleştirilmeli, yeni kimlik yaratılmamalı.
+
+NATO davası source draft 95cbd951; 44/46 Kırşehir taslağına ek 45/47 exact NATO candidate d3d4e9bd: package 4be7f7addc5efdbaf289c885f3f6c5a5229a34bb637fe7618ab287818bc865c2, review 37a42c8d12a85af4251999d461fa15169fc65d01733caa882a888318c8aaef96. 397 source review semantic PASS; 62477844 Kırşehir 62473858 afterok bağımlı. Dava girişimi parti duyurusu olarak, tarih bilinmez, mahkeme sonucu yok. İlk local validator party_statement dayanak türünü reddetti; geçerli party_announcement olarak düzeltildi. 06d26fb1 gerçek arama makbuzu.
+
+62472618 Malatya input+source PASS, preview sürüyor; ardından Kırşehir ve NATO işler. Sadece terminal 0:0 sonrası her aşamayı exact input ve bağımsız SQL/JSON/iki HTML/monoton doğrulamayla terfi et. 610 scope açık; canonical değişmedi.
