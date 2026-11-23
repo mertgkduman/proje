@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 141 | 141 | 62468795 |
 | TİP | 18 | 18 | 62480777 |
-| DEM Parti | 19 | 9 | 62479627 |
+| DEM Parti | 21 | 9 | 62480714 |
 | İYİ Parti | 11 | 9 | 62478838 |
 | Yeni Yol | 13 | 9 | 62477835 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 44 | 46 | 62473858 |
+| EMEP | 45 | 47 | 62477844 |
 | Saadet Partisi | 12 | 12 | 62479681 |
 | Demokrat Parti | 17 | 16 | 62478768 |
 
@@ -85,3 +85,7 @@ EMEP’in 6 Eylül Kırşehir il kongresi ve Pelin Atarbay’ın seçildiği bil
 Saadet Partisi Genel Başkanı’nın 4 Ekim’de staj ve çıraklık sigortası temsilcileriyle görüşmesi iki görünümde doğrulandı. Parti ve haber kaydı aynı görüşmeyi gösteriyor. Programdaki emeklilik koşullarını düzenleme hedefiyle konu bağlantısı kaydedildi. Bu görüşmenin ardından bir teklif sunulup sunulmadığı araştırmaya açık. [Doğrulama makbuzu](../04-11-checks/vocational-visit-62479681.json) [Kaynak okuması](../04-11-checks/vocational-visit-reading.md)
 
 TİP’in elektrik kesintilerine ilişkin 7/69660 sorusu, önceki açıklama ve Bakanlığın 4 Nisan 2023 tarihli cevabıyla karşılaştırıldı. Sorudaki dönemsel kesinti sayısı ile cevaptaki yıl sonu borç ve kesinti durumu farklı ölçüler. Cevap, kesintilerin sayısal karşılaştırmasına veya politika etkisine tek başına dayanak oluşturmuyor. [Doğrulama makbuzu](../04-05-checks/fatura-62480777.json)
+
+DEM Parti’nin 8 Ekim’deki iki ayrı Genel Kurul katkısı doğrulandı. Grubun 19972 numaralı ön görüşme önerisi ile Cengiz Çiçek’in Yeni Yol’un 10/4603 gündem oylamasına ilişkin sözlü katkısı ayrı olaylarda. 19972’nin TBMM esas numarası açık. [Doğrulama makbuzu](../04-06-checks/dem-oct08-two-events-62480714.json)
+
+EMEP’in Ankara’daki NATO zirvesi protesto yasağına karşı dava girişimi iki görünümde doğrulandı. Parti duyurusu ile ANKA aktarımında yer alan başvuru ve talepler kaydedildi. Başvuru günü ve mahkeme sonucu araştırmaya açık. [Doğrulama makbuzu](../04-10-checks/nato-case-62477844-receipt.json)
