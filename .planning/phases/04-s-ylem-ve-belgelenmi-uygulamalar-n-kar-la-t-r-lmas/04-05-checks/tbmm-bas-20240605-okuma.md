@@ -1,0 +1,7 @@
+# TBMM Başkanının TİP heyetini kabulüne ilişkin kayıt
+
+Başlangıç kuyruğunda bağlantı sıfırlanması nedeniyle gövdesi alınamayan TBMM haberine yeniden erişildi. 5 Haziran 2024 15.19 tarihli resmî yayının özgün HTML gövdesi bütünüyle okundu; özgün SHA-256 `4d7466b1c862f10d79370d28b0aa8deab643d174883ad817e18e48aa94bd115f`, URL ve pasif yerel görünüm `tbmm-bas-20240605-capture.json` dosyasındadır.
+
+TBMM yayını, Başkan Numan Kurtulmuş'un TİP Genel Başkanı Erkan Baş'ı makamında kabul ettiğini, TİP İstanbul Milletvekili Ahmet Şık'ın da katıldığını ve kabulün yaklaşık 45 dakika sürdüğünü bildirir. Haberin gövdesi görüşme gündemini, bir politika talebini, parti içi bir kararın uygulanmasını veya toplantı sonucunu açıklamıyor. Haber yayın saati, tek başına görüşmenin başlangıç veya bitiş saati değildir.
+
+Bu kayıt, Baş'ın genel başkan sıfatıyla tarihli bir kurumsal katılımı için açık araştırma adayıdır; kurucu bir kararın uygulandığı veya belirli bir konuda anlaşmaya varıldığı çıkarılmamalıdır. Önceki 2/3864 fatura teklifi, 7/69660 tüketici sorusu ve 7/70567 Bakanlık icra sorusu ile görüşme arasında kaynakta bağ bulunmadığından enerji sürecinin devamı olarak sunulamaz. Canlı kapılar öncesi sadece kaynak okumasıdır; kapsam kapanışı yoktur.
