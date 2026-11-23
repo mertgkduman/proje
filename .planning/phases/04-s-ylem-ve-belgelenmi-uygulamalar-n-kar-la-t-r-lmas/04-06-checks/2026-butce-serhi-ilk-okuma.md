@@ -27,3 +27,5 @@ PDF 34–37: staj ve çıraklık çalışma koşulları, engelli çalışanları
 PDF 38–41: serbest ve çağrı merkezi çalışanları, kurye, emekli ve engelli bakım emeği üzerine şerh değerlendirmeleri; ardından tekelci kapitalizm literatürü aktarılır. Evde bakım hizmeti verenler için özgün emeklilik koşulu önerisi, staj başlangıcıyla ayrı hedef grubudur; dış kaynaklar incelenmeden iddialar doğrulanmış sayılmaz. 0–41 ve 115–117 toplam 45/160, 115 açık.
 
 PDF 42–45: şerh sermaye yoğunlaşması üzerine literatür, Rekabet Kurumu birleşme/devralma kayıtları ve İSO 500 kârlılık anlatımına yer veriyor. 43. indeksteki tablo metin katmanında görünmüyor; görüntüsü ve kurumsal kaynak kontrol edilmeden tablodan veri çıkarılmadı. Atıflı analiz ve yıllar arasındaki nominal kıyaslar kaynağına aittir. 0–45 ve 115–117 toplam 49/160, 111 açık.
+
+PDF 43 görselindeki grafik 2013–2024 işlem değerlerini milyar TL ve milyar dolar ayrı serilerle gösteriyor; metindeki tüm bildirilen işlem toplamı ile Türkiye hedef şirket değeri farklı evrenler olarak sunulmuş. Grafiğin seri kapsamı Rekabet Kurumu aslıyla doğrulanmadan bu iki sayıya eşitlenmedi.
