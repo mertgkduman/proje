@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 12 | 8 | 62471281 |
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 39 | 41 | 62463708 |
-| Saadet Partisi | 9 | 7 | 62469964 |
+| Saadet Partisi | 11 | 9 | 62473205 |
 | Demokrat Parti | 12 | 11 | 62467362 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -55,3 +55,5 @@ Saadet’in 21 Ekim yatırımcı güvencesi açıklaması ile 22 Ekim 7596 kabul
 EMEP’in 7/49942 fon sorusu ve 4 Kasım imzalı Bakanlık cevabı iki görünümde doğrulandı. Sorunun talebi ve Bakanlığın açıklaması ayrı kaydedildi. [EMEP makbuzu](../04-10-checks/fund-question-749942-union-62463265-receipt.json)
 
 EMEP’in 7/27371 meslek hastalığı sorusu doğrulandı. 22 Mayıs Gelen Kâğıtlar kaydı bu tarihteki süre durumunu gösteriyor. [EMEP makbuzu](../04-10-checks/health-27371-union-62463708-receipt.json)
+
+Saadet karşılaştırmasına 27 Ekim SPK 76/1903 kararı ve 30 Ekim’de başladığı açıklanan ara ödemeler ayrı tarihli kayıtlar olarak eklendi. 29,3 milyar TL, İletişim Başkanlığı açıklamasına ve bunu aktaran imzalı Bakanlık cevabına bağlı. [Saadet makbuzu](../04-11-checks/fund-payments-62473205.json)
