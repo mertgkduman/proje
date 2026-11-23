@@ -665,6 +665,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-school-meal-16207-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:32:09+00:00",
+      "source_version_ids": "[\"0410-emep-school-meal-16207-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-school-meal-16207-detail-date-p\", \"0410-emep-school-meal-16207-detail-number-p\", \"0410-emep-school-meal-16207-detail-owner-p\", \"0410-emep-school-meal-16207-detail-reply-p\", \"0410-emep-school-meal-16207-detail-topic-p\"]",
+      "inspected_sections": "[\"Soru ve cevap bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-school-meal-16207-event için önceki pasajlar ve resmi konu özeti yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-seasonal-733034-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T18:45:59+00:00",
@@ -2667,6 +2680,71 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:27:49+00:00",
+      "source_version_ids": "[\"0410-emep-school-meal-16207-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-school-meal-16207-detail-date-p\"]",
+      "inspected_sections": "[\"Soru ve cevap bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-date-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-number-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:27:49+00:00",
+      "source_version_ids": "[\"0410-emep-school-meal-16207-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-school-meal-16207-detail-number-p\"]",
+      "inspected_sections": "[\"Soru ve cevap bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-number-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:27:49+00:00",
+      "source_version_ids": "[\"0410-emep-school-meal-16207-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-school-meal-16207-detail-owner-p\"]",
+      "inspected_sections": "[\"Soru ve cevap bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-owner-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:27:49+00:00",
+      "source_version_ids": "[\"0410-emep-school-meal-16207-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-school-meal-16207-detail-reply-p\"]",
+      "inspected_sections": "[\"Soru ve cevap bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-reply-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:32:09+00:00",
+      "source_version_ids": "[\"0410-emep-school-meal-16207-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-school-meal-16207-detail-topic-p\"]",
+      "inspected_sections": "[\"Soru ve cevap bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-topic-p|action için önceki pasajlar ve resmi konu özeti yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-date-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T18:45:59+00:00",
@@ -3642,6 +3720,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-school-meal-16207-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:32:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-school-meal-16207-commission-v1\", \"0410-emep-school-meal-16207-detail-v1\", \"0410-emep-school-meal-16207-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-012-0-passage\", \"0410-emep-school-meal-16207-commission-p\", \"0410-emep-school-meal-16207-detail-date-p\", \"0410-emep-school-meal-16207-detail-number-p\", \"0410-emep-school-meal-16207-detail-owner-p\", \"0410-emep-school-meal-16207-detail-reply-p\", \"0410-emep-school-meal-16207-detail-topic-p\", \"0410-emep-school-meal-16207-question-p\"]",
+      "inspected_sections": "[\"18. toplantı, 4. oturum\", \"G/A/10\", \"Soru ve cevap bildirimi\", \"İmzalı soru, metindeki tarih\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-school-meal-16207-relation için önceki pasajlar ve resmi konu özeti yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-seasonal-733034-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T18:45:59+00:00",
@@ -4419,6 +4510,19 @@
       "limitations": "Soru, bakanlık yanıtı ve bölgesel rakam farklı aktör ve kapsamlara aittir; nihai politika sonucu çıkarılmadı.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-question-8988-relation için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-school-meal-16207-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:32:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-school-meal-16207-commission-v1\", \"0410-emep-school-meal-16207-detail-v1\", \"0410-emep-school-meal-16207-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-012-0-passage\", \"0410-emep-school-meal-16207-commission-p\", \"0410-emep-school-meal-16207-detail-date-p\", \"0410-emep-school-meal-16207-detail-number-p\", \"0410-emep-school-meal-16207-detail-owner-p\", \"0410-emep-school-meal-16207-detail-reply-p\", \"0410-emep-school-meal-16207-detail-topic-p\", \"0410-emep-school-meal-16207-question-p\"]",
+      "inspected_sections": "[\"18. toplantı, 4. oturum\", \"G/A/10\", \"Soru ve cevap bildirimi\", \"İmzalı soru, metindeki tarih\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-school-meal-16207-relation için önceki pasajlar ve resmi konu özeti yeniden okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -5407,6 +5511,19 @@
       "limitations": "Soru, bakanlık yanıtı ve bölgesel rakam farklı aktör ve kapsamlara aittir; nihai politika sonucu çıkarılmadı.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-question-8988-relation için program ve ilgili soru kaydı veya bakanlık yanıtı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-school-meal-16207-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:27:49+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-012-0-passage\"]",
+      "inspected_sections": "[\"G/A/10\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Yanıt bildirimi dilekçelerin akıbeti veya tüm öğrencilere yemek sağlanması sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-school-meal-16207-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -6682,6 +6799,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-school-meal-16207-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-seasonal-733034-event"
     },
     {
@@ -7298,6 +7419,26 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-number-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-school-meal-16207-event|0410-emep-school-meal-16207-detail-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-seasonal-733034-event|0410-emep-question-33034-register-date-p|action"
     },
     {
@@ -7598,6 +7739,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-school-meal-16207-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-seasonal-733034-relation"
     },
     {
@@ -7838,6 +7983,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-school-meal-16207-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-seasonal-733034-relation"
     },
     {
@@ -8139,6 +8288,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-question-8988-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-school-meal-16207-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
