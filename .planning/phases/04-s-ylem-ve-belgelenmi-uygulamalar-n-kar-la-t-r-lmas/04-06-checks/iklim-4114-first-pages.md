@@ -10,3 +10,5 @@ TBMM 4114 özgün PDF SHA-256 977202aa2e935ac7038dbff7d26443ae314f0b9369d45a8005
 Bu metin seçili sayfa okumasıdır; tüm 57 sayfalık tutanak ve 198 sıra sayılı taranmış rapor hâlâ açık araştırma alanıdır.
 
 - PDF 8–9: CHP adına Gökan Zeybek teklifin emisyon tahsisatı ve yerel yönetim boyutlarını eleştirirken Perihan Koca konuşmanın kesilmesine usul itirazı yapıyor; Ayten Kordu yerel kayyum atamalarına ilişkin söz alıyor. CHP konuşmasındaki iddialar ve rakamlar CHP’ye, iki kısa müdahale konuşmacılarına atfedilir; DEM grubu adına teklif veya oylama sonucu çıkarılmaz.
+
+- PDF 10–11: İbrahim Akın DEM Parti adına yönteme, sivil toplumun dinlenmesine ve teklifin ticari yönüne ilişkin eleştirilerini aktarıyor; iklim adaleti, enerji politikası ve ekokırım yasası hakkında talepler ileri sürüyor. İddialar konuşmacıya atfedilir; bunlar bağımsız olgu doğrulaması, teklifin nihai sonucu veya sayısal iddiaların kabulü değildir. Konuşma ardından başka bir milletvekiline geçiliyor.
