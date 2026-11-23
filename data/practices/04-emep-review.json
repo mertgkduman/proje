@@ -314,6 +314,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-malatya-2023-congress-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:02:09+00:00",
+      "source_version_ids": "[\"0410-emep-malatya-congress-news2023-v1\"]",
+      "passage_ids": "[\"0410-emep-malatya-congress-news2023-p\"]",
+      "inspected_sections": "[\"Malatya 10. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve 2023 haber kaynağı okundu.",
+      "limitations": "Kongre günü ve oy sayısı bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-malatya-2023-congress-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-mandate-3761-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:47:37+00:00",
@@ -1354,6 +1367,32 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-malatya-2023-congress-event|0410-emep-malatya-congress-news2023-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:02:09+00:00",
+      "source_version_ids": "[\"0410-emep-malatya-congress-news2023-v1\"]",
+      "passage_ids": "[\"0410-emep-malatya-congress-news2023-p\"]",
+      "inspected_sections": "[\"Malatya 10. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve 2023 haber kaynağı okundu.",
+      "limitations": "Kongre günü ve oy sayısı bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-malatya-2023-congress-event|0410-emep-malatya-congress-news2023-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-malatya-2023-congress-event|0410-emep-malatya-congress-news2023-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:02:09+00:00",
+      "source_version_ids": "[\"0410-emep-malatya-congress-news2023-v1\"]",
+      "passage_ids": "[\"0410-emep-malatya-congress-news2023-p\"]",
+      "inspected_sections": "[\"Malatya 10. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve 2023 haber kaynağı okundu.",
+      "limitations": "Kongre günü ve oy sayısı bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-malatya-2023-congress-event|0410-emep-malatya-congress-news2023-p|result için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:47:37+00:00",
@@ -2368,6 +2407,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-malatya-2023-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:02:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-malatya-congress-news2023-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\", \"0410-emep-malatya-congress-news2023-p\"]",
+      "inspected_sections": "[\"Malatya 10. il kongresi haberi\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve 2023 haber kaynağı okundu.",
+      "limitations": "Kongre günü ve oy sayısı bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-malatya-2023-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-mandate-3761-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:47:37+00:00",
@@ -2940,6 +2992,19 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-malatya-2023-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:02:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\", \"0410-emep-malatya-congress-news2023-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\", \"0410-emep-malatya-congress-news2023-p\"]",
+      "inspected_sections": "[\"Malatya 10. il kongresi haberi\", \"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve 2023 haber kaynağı okundu.",
+      "limitations": "Kongre günü ve oy sayısı bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-malatya-2023-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-mandate-3761-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T10:47:37+00:00",
@@ -3317,6 +3382,19 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-malatya-2023-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:02:09+00:00",
+      "source_version_ids": "[\"0410-emep-malatya-congress-news2023-v1\"]",
+      "passage_ids": "[\"0410-emep-malatya-congress-news2023-p\"]",
+      "inspected_sections": "[\"Malatya 10. il kongresi haberi\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve 2023 haber kaynağı okundu.",
+      "limitations": "Kongre günü ve oy sayısı bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id / 0410-malatya-2023-congress-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-mdkd-report-2026-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T22:35:47+00:00",
@@ -3691,6 +3769,19 @@
       "limitations": "Oy yöntemi, tutanak ve ara tüzük değişiklikleri bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-luleburgaz-2020-congress-relation için ilgili tüzük ve haber pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-malatya-2023-congress-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T06:02:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-charter-202305-v1\"]",
+      "passage_ids": "[\"0410-emep-kocaeli-charter-202305-p\", \"0410-emep-kocaeli-charter-selected-p\"]",
+      "inspected_sections": "[\"İl Kongresi görevleri\"]",
+      "supported_claim": "İl kongresi başkan seçimi tüzüğü ve 2023 haber kaynağı okundu.",
+      "limitations": "Kongre günü ve oy sayısı bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-malatya-2023-congress-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -5001,6 +5092,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-malatya-2023-congress-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-mandate-3761-event"
     },
     {
@@ -5321,6 +5416,14 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-malatya-2023-congress-event|0410-emep-malatya-congress-news2023-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-malatya-2023-congress-event|0410-emep-malatya-congress-news2023-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-mandate-3761-event|0410-emep-tezkere-3761-ballot-emep-p|action"
     },
     {
@@ -5633,6 +5736,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-malatya-2023-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-mandate-3761-relation"
     },
     {
@@ -5809,6 +5916,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-malatya-2023-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-mandate-3761-relation"
     },
     {
@@ -5925,6 +6036,10 @@
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-malatya-2023-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-mdkd-report-2026-relation"
     },
     {
@@ -6038,6 +6153,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-luleburgaz-2020-congress-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-malatya-2023-congress-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
