@@ -36,3 +36,12 @@ Parti API 001–025 gerçek gövde aralıkları ve SHA ile okundu, 021–025 sı
 NATO davası source draft 95cbd951; 44/46 Kırşehir taslağına ek 45/47 exact NATO candidate d3d4e9bd: package 4be7f7addc5efdbaf289c885f3f6c5a5229a34bb637fe7618ab287818bc865c2, review 37a42c8d12a85af4251999d461fa15169fc65d01733caa882a888318c8aaef96. 397 source review semantic PASS; 62477844 Kırşehir 62473858 afterok bağımlı. Dava girişimi parti duyurusu olarak, tarih bilinmez, mahkeme sonucu yok. İlk local validator party_statement dayanak türünü reddetti; geçerli party_announcement olarak düzeltildi. 06d26fb1 gerçek arama makbuzu.
 
 62472618 Malatya input+source PASS, preview sürüyor; ardından Kırşehir ve NATO işler. Sadece terminal 0:0 sonrası her aşamayı exact input ve bağımsız SQL/JSON/iki HTML/monoton doğrulamayla terfi et. 610 scope açık; canonical değişmedi.
+
+
+### Devam kaydı: Malatya ve TÜPRAŞ
+
+62472618 COMPLETED 0:0; 43/45 762928680596c1c8dbfbd75f9f559f6db397210a448d1249767c85c8d8db3b68 / 6c0b5f8ad0567fbe244a2e7b9f57b7466621ea59ffefb80d6537c75a6dfdbb5a exact bağımsız SQL/JSON/iki HTML ve monoton kontrolüyle 5c3335ca canlı. 62473858 Kırşehir çalışıyor, 62477844 NATO ve 62479310 TÜPRAŞ sıralı afterok bekliyor.
+
+033–036 gerçek gövde okuması 6d935e91, ab3f2c4c, 6b3fd6e8, 74f60663; 037 sonraki açık. TÜPRAŞ 7/36753 ve 7/36769 21 Kasım 2025 sorular ve iki cevabın 8 taranmış sayfası gerçek poppler-glib görsel okuması 3a650712, hamlar d47956fe; altı owner-bound kaynak 1c296c90. 36769 Enerji imza 19 Aralık 2025, bildirim 22 Aralık; 36753 Çalışma bildirim 7 Eylül 2026; Nisan haberinin önceki yanıtsızlık durumu bu tarihle çelişmez. Çalışma yanıtı genel mevzuatı anlatıyor, Enerji şirket sorumluluğunu ve Çalışma yetkisini belirtiyor; fiili sonuç varsayılmaz.
+
+NATO 45/47 üstüne TÜPRAŞ 47/49 aday f4cb4e2c package c2bd74510c1a5f072d1b91d6c57f46baaf5e94eed54bac0fedaba4a249e854ec review 3d56c224bbd8fcdcf75f0dbd7c89d89036a9ee65aeab0ed620577b8ea9b9e24c, 411 semantic PASS. İlk yerel validate_practices yanlış program pasaj kimliğini reddetti, 0410-emep-safety-program-p ile düzeltildi. Exact tam gate 62479310 NATO 62477844 afterok, henüz sonuç yok; terfi yok. 610 scope açık.
