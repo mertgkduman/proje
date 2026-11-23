@@ -1,0 +1,11 @@
+Staged 176 original, readable and view paths; package 9cbb67a8ee21b3cc3a8489405e521c80d05c8177c18056c24118ae03bc8903d6; review 29d3fb79e29688dad1c791ea87117775fed32f3cb30ad2f6ed8327e18772f854
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/validate-2026-congress-dem.py", line 24, in <module>
+    mod.main(package, review, 'dem-2026-congress', '0406-dem-2026-congress-event', '0406-2025-224-relation', '')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1
