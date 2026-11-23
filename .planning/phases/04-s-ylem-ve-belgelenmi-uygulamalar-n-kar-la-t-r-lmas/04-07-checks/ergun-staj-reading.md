@@ -1,0 +1,9 @@
+# İYİ Parti staj ve çıraklık sigortası
+
+2/1019 imzalı teklif beş tarama sayfasıdır. Beş sayfası görsel olarak okundu. İlk sayfada İYİ Parti Grup Başkanlığı damgası, Metin Ergun ve Lütfü Türkkan imzaları ile 17 Eylül 2018 tarihli yazı bulunuyor. İkinci sayfada iki evrak kaşesi 17 Eylül tarihli. Gerekçe ve birinci madde, belirli çıraklık ve zorunlu staj süreleri için borçlanma ve uzun vadeli sigorta başlangıcı öneriyor. Kapaktaki dayanak kanun tarihi 31.5.2016 olarak yazılmış. Gerekçe ve madde metni 31.5.2006 yazıyor.
+
+Kanun teklifinin TBMM komisyonları sicilinde üç komisyonun giriş günü 15 Ekim 2018. Esas sayfası Başkanlığa geliş tarihini 17 Eylül gösteriyor. 16 Ekim birleşim tutanağının 31. basılı sayfasında, Gelen Kâğıtlar 48. sırada aynı teklif ve aynı imza sahipleri için 14 Eylül geliş tarihi yazıyor. İmzalı düzenleme günü 17 Eylül kaynaklar arasında açık bir olay olarak esas alındı. Evrak geliş tarihlerindeki fark açık. 28. dönem ilk birleşim ekinin 54. basılı sayfası aynı teklifi 1013. sırada hükümsüz sayılanlar arasında gösteriyor. Kesin işlem günü açık. 16 Ekim 2018 ve 2 Haziran 2023 tutanaklarında bu kayıtların ilgili sayfaları okundu.
+
+2026’daki 10/4625 imzalı dosyası ve 20 Ekim Genel Kurul işlemi 2018 kanun teklifinden ayrı. 10/4625, 7 Ekim imzalı ve 8 Ekim TBMM girişli. Metin Ergun 20 Ekim’de İYİ Parti Grubu adına söz alıp CHP’nin ön görüşme önerisine destek açıkladı. Kendi 2018 teklifine atıf yaptı ve sigorta başlangıcı ile borçlanma modellerinin araştırılmasını savundu. Genel Kurul 20 Ekim ön görüşme önerisini kabul etmedi. Erişilen esas dosyası Gündemde. İsimli oy kaydı ve esas dosyanın sonraki işlemi araştırmaya açık.
+
+10/4625’in olay tarihi, başlığı, tanımı ve olay dayanağı Yeni Yol ve DEM Parti paketleriyle aynı. Parti katkıları ve kaynak pasajları aktöre göre izlenebilir. Araştırma kapsamı açık.
