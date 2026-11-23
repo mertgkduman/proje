@@ -49,3 +49,4 @@ PDF indeks 65–69 okundu: CHP Süleyman Girgin, HDP Ömer Öcalan, İYİ Aydın
 - Tam tutanak indeks 123–127 okundu: CHP Tahsin Tarhan ve AK Parti Uğur Aydemir söz alıyor; üçüncü oturum 19.32’de kapanıyor. Enerji tartışmasındaki iddialar ilgili konuşmacılara aittir, TİP görüşü sayılmadı.
 - Tam tutanak indeks 128–132 okundu: Dördüncü oturum 20.02’de açılıyor; CHP Ünal Demirtaş, HDP Rıdvan Turan ve CHP Ahmet Önal konuşuyor. Turan’ın HDP adına açık nükleer enerji karşıtı değerlendirmesi TİP’e atfedilemez; Kadıgil’in ayrı ifadeleriyle birleştirilmedi.
 - Tam tutanak indeks 133–137 okundu: AK Parti Orhan Yegin, CHP Ahmet Vehbi Bakırlıoğlu ve Tacettin Bayır konuşuyor; rakamlar ve değerlendirmeler ilgili kişilere atıfla tutuldu.
+- Tam tutanak indeks 138–142 okundu: CHP Tacettin Bayır ve Orhan Sümer, AK Parti İsmail Güneş, CHP Cavit Arı konuşuyor. Tarife ve kişisel gözlem niteliğindeki iddialar TİP’e mal edilmedi.
