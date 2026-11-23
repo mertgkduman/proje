@@ -1,8 +1,8 @@
 {
   "tranche_id": "0410-emep-api-244",
-  "read_at": "2026-11-23T19:44:32.524219+00:00",
-  "method": "Üç özgün Türkçe gövde aralığı SHA doğrulanarak okundu.",
-  "limitation": "4570 Farsça devamı çevrilmedi; diğer beş aralık okunmadı. Kapsam kapanışı yok.",
+  "read_at": "2026-11-23T22:03:29.885264+00:00",
+  "method": "Beş özgün Türkçe gövde aralığı SHA doğrulanarak okundu.",
+  "limitation": "4570 Farsça devamı çevrilmedi; 4488, 4475, 4466 okunmadı. Kapsam kapanışı yok.",
   "parts": [
     {
       "post_id": 4558,
@@ -33,6 +33,26 @@
       "end_char": 5708,
       "body_temporal_status": "last_modified_at_or_before_cutoff",
       "reading_note": "Akdenizin 1 Şubat 2022 tarihli Evrensel köşe yazısı; ittifaklar ve demokrasi değerlendirmeleri yazara ait."
+    },
+    {
+      "post_id": 4524,
+      "url": "https://www.emep.org/emek-partisinden-kadinlara-cagri-karartilan-gelecegi-aydinlatmanin-yolu-halk-ittifaki",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-22.json",
+      "body_sha256": "017134e06b11727a6349b8357950034095fa4080919391eb315125367fe68d07",
+      "start_char": 0,
+      "end_char": 17477,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Selma Gürkanın Evrenselden Elif Turguta bildirgenin kadınlar, bakım, şiddet ve örgütlenme yönleri hakkında verdiği röportaj; öneriler sonuç değildir."
+    },
+    {
+      "post_id": 4493,
+      "url": "https://www.emep.org/faturasi-da-kesintisinin-yuku-de-halkin-sirtina-krizin-yukunu-enerji-tekelleri-odesin",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-22.json",
+      "body_sha256": "06bcef8d5f5ddc6d80c512af2f2049895129b4e5d00a1874a5e820344e6c45b1",
+      "start_char": 0,
+      "end_char": 3938,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Genel Başkan Yardımcısı Sedat Başkavakın enerji kesintileri ve faturalara karşı talepleri; değerlendirmeler konuşmacıya atıflı."
     }
   ]
 }
