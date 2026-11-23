@@ -1,0 +1,3 @@
+# 2025 iklim oyu için kişi ve parti bağlamı
+
+12 Aralık 2024 32. birleşimin özgün PDF indeks 0 ve 5 görsel okundu. Başkanın konuşmacı listesi, Ayten Kordu ve İbrahim Akın’ı Halkların Eşitlik ve Demokrasi Partisi grubu adına sıralar. Bu 2024 tarihli kayıt geçmiş grup temsilini gösterir; devamlı üyelik veya 2025 oyuna ilişkin tek başına çıkarım sağlamaz. 30 Mayıs 2025 gelişli TBMM araştırma önergesinin 23 Kasım 2026’da erişilen sicili, Ayten Kordu, İbrahim Akın ve Perihan Koca Doğan’ı parti sütunuyla gösterir; sicildeki alanın sonradan güncellenebilir olduğu saklıdır. 2 Temmuz 2025 kesin oy cetveli de aynı üç ismi ve partiyi bireysel satırlarda içerir. 2024 grubunun sıfatı ve 2025 kişisel oy farklı olaylar olarak tutulur.
