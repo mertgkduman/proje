@@ -17,3 +17,5 @@ PDF 18–21: 2025 emek, kadın ve iklim hareketleri, demokratik sosyalizm yakla�
 PDF 22–25: grev ve sendikalaşma, kamu istihdamı, ücretler ve işsizlik fonuna ilişkin şerh değerlendirmeleri okunmuştur. 25. indekste çırak ve stajyerlerin sigortalı sayısına ilişkin bir istatistik anlatımı vardır; emeklilik başlangıcı için özel bir vaat olarak yorumlanmaz, TÜİK/SGK sayım tanımları ayrıca incelenmeden istatistik doğruluğu kabul edilmez. 0–25 ve 115–117 toplam 29/160 okundu; 131 açık.
 
 PDF 26–29: kayıtlı/kayıtsız istihdam tabloları, asgari ücret ve farklı işsizlik tanımları ele alınıyor. Metin katmanında tablo sırası bozuluyor ve toplam 33.068/33.069 bin olarak iki tabloda farklı yazılıyor; görsel ve kaynak/payda kontrolü yapılmadan birleştirilmez. Dar ve geniş işsizlik tanımları ayrı atfedilir. 0–29 ve 115–117 toplam 33/160 okundu; 127 açık.
+
+PDF 26–27 tabloları görsel doğrulandı: iki tabloda da TÜİK 2025 III. dönem atfı var; toplamlar sırasıyla 33.068 ve 33.069 bin kişi, kayıt dışı toplamlar 8.909 ve 8.910 bin yazıyor. Bu fark metin katmanı sırası kaynaklı değil, özgün görüntüde de var; yuvarlama veya başka nedenle açıklamadan önce TÜİK aslı incelenmeli.
