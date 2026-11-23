@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 21 | 9 | 62480714 |
 | İYİ Parti | 11 | 9 | 62478838 |
 | Yeni Yol | 13 | 9 | 62477835 |
-| DBP | 11 | 7 | 62464556 |
+| DBP | 12 | 7 | 62481629 |
 | EMEP | 45 | 47 | 62477844 |
 | Saadet Partisi | 12 | 12 | 62479681 |
 | Demokrat Parti | 17 | 16 | 62478768 |
@@ -89,3 +89,5 @@ TİP’in elektrik kesintilerine ilişkin 7/69660 sorusu, önceki açıklama ve 
 DEM Parti’nin 8 Ekim’deki iki ayrı Genel Kurul katkısı doğrulandı. Grubun 19972 numaralı ön görüşme önerisi ile Cengiz Çiçek’in Yeni Yol’un 10/4603 gündem oylamasına ilişkin sözlü katkısı ayrı olaylarda. 19972’nin TBMM esas numarası açık. [Doğrulama makbuzu](../04-06-checks/dem-oct08-two-events-62480714.json)
 
 EMEP’in Ankara’daki NATO zirvesi protesto yasağına karşı dava girişimi iki görünümde doğrulandı. Parti duyurusu ile ANKA aktarımında yer alan başvuru ve talepler kaydedildi. Başvuru günü ve mahkeme sonucu araştırmaya açık. [Doğrulama makbuzu](../04-10-checks/nato-case-62477844-receipt.json)
+
+DBP için 10 Mart 2016 tarihli İHD sığınma evi raporu iki görünümde doğrulandı. İHD’nin 17 görüşmesi, 2014 yerel seçim sonuçları ve DBP’nin 2017 derlemesi ayrı kaynaklarda. Belediye hizmetinin açılış tarihi ve parti katkısı araştırmaya açık. [Doğrulama makbuzu](../04-09-checks/siginak-62481629.json) [Kaynak okuması](../04-09-checks/diyarbakir-siginma-ihd-reading.json)
