@@ -103,3 +103,5 @@ PDF indeks 192–195 görsel okuması: yargı, emek ve kayyım uygulamalarına i
 PDF indeks 196–199 görsel okuması: eşit yurttaşlık, anadil ve yerel demokrasi talepleri; dış politikada bölgesel ilişkiler ve Suriye hakkındaki parti değerlendirmeleri. Dış aktörler ve çatışmalara dair ağır tarihsel/güncel iddialar bu okumada bağımsız doğrulanmadı ve şerh sahibine atfedilir. Görsel kapsam 0–199: 200/214; 14 sayfa açık.
 
 PDF indeks 200–203 görsel okuması: Suriye, Ege, Kıbrıs ve diğer bölgesel meseleler üzerine parti dış politika önerileri; yargı, suç örgütleri, uyuşturucu, kadın ve çocuklara karşı şiddet hakkındaki iddialar ve değerlendirmeler. Suç isnatları, bireysel olaylar ve istatistikler bağımsız teyit edilmedi; olgu olarak benimsenmeden metin sahibine atıfla ele alınmalı. Görsel kapsam 0–203: 204/214; 10 sayfa açık.
+
+PDF indeks 204–207 görsel okuması: çocuklar ve sağlık hizmetleri hakkındaki iddialar; sokak hayvanları yasası ve çevre tahribatı eleştirileri; demokratik çözüm ve tecrit değerlendirmelerinin başlangıcı. İddialar parti görüşüdür; bireysel davalar, çevresel olaylar ve koşullar bağımsız doğrulanmadı. Görsel kapsam 0–207: 208/214; 6 sayfa açık.
