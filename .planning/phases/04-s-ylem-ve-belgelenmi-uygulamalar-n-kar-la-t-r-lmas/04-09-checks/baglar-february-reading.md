@@ -1,0 +1,7 @@
+# Bağlar Belediye Meclisi, 3–5 Şubat 2015
+
+2015/32, 40 çölyak hastası için altı ay glutensiz gıda desteğini öngören kararı belgeliyor. 2015/35, 5 Nisan Mahallesi sakinlerinin hizmet talepleri hakkında Halkla İlişkiler Komisyonu raporunun kabulü. 2015/36, Eğitim Destek Evi, Kardelen Kadın Evi ve 5 Nisan Mahalle Evi için Halk Eğitim Merkeziyle yürütüldüğü bildirilen kursların rapor kabulü. Protokolün aslı, satın alma, kursların tamamlanması ve yardımın teslim belgeleri açık. [2015 belediye meclisi derlemesi](https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf)
+
+2015/37 ve 2015/39, aynı semt pazarları başvurusu üzerine iki farklı komisyonun raporunu iki günde kabul ediyor. İlk rapor sakinlerin cuma pazarı ve hijyen görüşlerini, ikinci rapor taşıt ve araç çekicisi taleplerini aktarıyor. Pazar düzeninde fiilî değişiklik araştırmaya açık. [2015 belediye meclisi derlemesi](https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf)
+
+2015/40, Suruç Belediyesine bir çöp aracı hibe edilmesini oybirliğiyle kabul etti. 2015/41, Yenişehir’de mülteci çadırlarının iki elektrik aboneliğinin giderleri ve yardım için Bağlar Belediye Başkanına yetki verdi. Aracın teslimi, elektrik ödemesi ve yardımın gerçekleşmesi için işlem belgeleri açık. Bu kayıtlar belediye meclisine ait. Parti organının önceki tarihli, aynı kapsamlı hedefi araştırılıyor. [2015 belediye meclisi derlemesi](https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf)
