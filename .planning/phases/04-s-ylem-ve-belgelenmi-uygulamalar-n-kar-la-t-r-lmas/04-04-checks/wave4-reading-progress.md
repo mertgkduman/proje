@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 47 | 9 | 62492699 |
+| DEM Parti | 48 | 9 | 62494452 |
 | İYİ Parti | 17 | 10 | 62492649 |
 | Yeni Yol | 19 | 11 | 62492688 |
 | DBP | 44 | 7 | 62493929 |
-| EMEP | 56 | 58 | 62487943 |
+| EMEP | 58 | 60 | 62489834 |
 | Saadet Partisi | 19 | 15 | 62492219 |
 | Demokrat Parti | 20 | 18 | 62493631 |
 
@@ -189,3 +189,9 @@ Demokrat Parti’nin tecil eleştirisi iki farklı işlemle karşılaştırıld�
 DEM Parti adına Çiçek Otlu Uçar’ın 10/4961 gündemindeki katkısı 47 olaylı çalışma çiftinde doğrulandı. [DEM Parti makbuzu](../04-06-checks/dem-nov03-4961-62492699.json) İYİ Parti adına Selçuk Türkoğlu’nun 10/4314’ün ön görüşülmesine sözlü desteği 17 olaylı çalışma çiftinde doğrulandı. İki tutanakta da kişisel oy cetveli yer almıyor. [İYİ Parti makbuzu](../04-07-checks/teacher-4314-62492649-complete.json)
 
 Bağlar’ın mart kararlarından iki sevk ve altı rapor kabulü yeni önizlemede iki HTML görünümünde doğrulandı. 2015/51’in 22 gider kalemi toplamı 18.420.000 TL. 2015/57 fırın denetim raporunda 17 işyeri ayrı sonuç türleriyle yer alıyor. Karar, rapor, ödeme ve tahsilat kayıtları ayrı. Üç mali kayıt aynı olay kimliğiyle kamu hesap verebilirliği konusuna yeniden bağlandı. [Bağlar makbuzu](../04-09-checks/baglar-march-reports-v2-62493929.json)
+
+DEM Parti adına Yılmaz Hun’un 10/4314 gündemindeki katkısı iki görünümde doğrulandı. 2014 tarihli 6528 değişikliği, özel okul öğretmenlerinin dengi resmî okullardaki aylığa ilişkin 5580 madde 9 ikinci fıkrayı kaldırdı. Birleşimdeki 2024 ifadesinin hangi başka işleme atıf yaptığı açık. [DEM Parti makbuzu](../04-06-checks/dem-teacher-4314-62494452.json)
+
+EMEP’in Betek 7/20147 ve 7/21425 soruları iki ayrı olay ve kendi soru ve yanıt pasajlarıyla pakete alındı. Bakanlık kayıtları işyerine özgü süreç ile bireysel sonuç arasındaki sınırı koruyor. [EMEP makbuzu](../04-10-checks/betek-20147-21425-62489834-receipt.json)
+
+Demokrat Parti sitesinde 257 liste kaydının 34 tam metni okundu. İki kesim sonrası sayfa not edildi ve 221 liste kaydının gövdesi açık. Bağlar 2015 karar defterinin 269 sayfasından 113 farklı sayfa okundu. [Demokrat Parti okuma kaydı](../04-12-checks/party-news-002-reading.json) [Bağlar okuma kaydı](../04-09-checks/baglar-council-2015-reading-008.json)
