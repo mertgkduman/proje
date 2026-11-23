@@ -18,3 +18,5 @@ Bu metin seçili sayfa okumasıdır; tüm 57 sayfalık tutanak ve 198 sıra say�
 - PDF 14–16: Ömer Fethi Gürer, Gürsel Erol ve Orhan Sarıbal teklifin içeriği, katılım ve çevre politikaları hakkında konuşuyor; ayrı DEM katkısı veya DEM adına oy kaydı bu sayfalarda saptanmadı.
 - PDF 17–18: Perihan Koca teklifin niteliğini eleştirirken onu ‘karbon emisyonu ticaret kanunu diyebileceğimiz’ diye niteliyor; iklim yasasının çevre ve ekoloji örgütleriyle, bilim insanlarıyla istişare edilmesini ve öncelikle ekokırım yasasını savunuyor. Bu sözlü niteleme, tek başına resmî değişiklik önergesi veya reddi değildir. 198 sıra sayılı rapordaki daha sonraki yazılı muhalefet şerhinin isim değişikliği talebi ayrı kaynaktır ve prosedür sonucu ayrıca araştırılmalıdır.
 - PDF 19: Semra Dinçer, Nimet Özdemir ve Müzeyyen Şevkin konuşuyor; DEM adına ayrı katkı veya oy saptanmadı. Sayısal iddialar konuşmacılarına aittir.
+
+- PDF 20–21: Müzeyyen Şevkin, Nermin Yıldırım Kara ve Hasan Toktaş teklif ve hazırlanma yöntemi hakkında konuşuyor. Bu sayfalarda ayrı DEM katkısı veya DEM adına oylama bulunmadı; olgusal ve sayısal iddialar konuşmacılara aittir.
