@@ -1,0 +1,121 @@
+{
+  "git_commit": "1fc4856d382bca3cc7608adb982d01467599ec3d",
+  "original_packages": {
+    "yeni-parti": {
+      "package_sha256": "e0e68011435a15b591d9481fe71a84bb7cfd34b4c779d71d0d5378c05797a165",
+      "companion_review_sha256": "9139945aeddf207f0ec27df786907d965d23d2642f05de457f2315cb36c6069b",
+      "events": 144,
+      "relations": 141,
+      "closures": 0,
+      "external_review_ref_count": 1223
+    },
+    "tip": {
+      "package_sha256": "57271c62f71966dbe8e1139060d3c2c10949234713ae279b9ae67b34eeac194e",
+      "companion_review_sha256": "add02d05e5cebcea4657eaf4ab578b2ff809544474d6cfa1bf83c1efcf6773dc",
+      "events": 21,
+      "relations": 20,
+      "closures": 0,
+      "external_review_ref_count": 245
+    },
+    "dem": {
+      "package_sha256": "41dcecda6759d881634fa06bb764ff73ebc76863a7176b9fe6823a95f986a6a2",
+      "companion_review_sha256": "4ff6002d431d89d1be21dd8af075a32780b1ed0603e04cfbeb7471da83f48613",
+      "events": 49,
+      "relations": 9,
+      "closures": 0,
+      "external_review_ref_count": 0
+    },
+    "iyi": {
+      "package_sha256": "c64ce1c1de05d5f2662ce1ac25f1000cca43f648753f2a735c1979eaa6131fc8",
+      "companion_review_sha256": "15c155ffe954ef0d75bcc73e7cccd4c03e99cdd5e143a600d8662ca45613d0ad",
+      "events": 17,
+      "relations": 10,
+      "closures": 0,
+      "external_review_ref_count": 246
+    },
+    "yeni-yol": {
+      "package_sha256": "bfac1eb8536806f1e620581c42cf3d7621e7a817fc9043899bae7155dea94073",
+      "companion_review_sha256": "c63d39dd1b93653e7e7fa8de8580e349b86a6f752f0564e0d75be6aa4c212416",
+      "events": 21,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 306
+    },
+    "dbp": {
+      "package_sha256": "b2f446c0f16c5063836bf1ec8a00d78a90a6cdd0d7cac00acd6a7e3c23c257ec",
+      "companion_review_sha256": "9d89e7b7ae94de4b65831ad3f884b462da01f4351ae1a259f4ac4e5b6354f2ab",
+      "events": 51,
+      "relations": 7,
+      "closures": 0,
+      "external_review_ref_count": 400
+    },
+    "emep": {
+      "package_sha256": "ca72d567ea99fa4a11e24854f440a4d9398b5e2f78d77d806305ec4727a910f4",
+      "companion_review_sha256": "198677b6992a10fe3a011d0fb26f9da4177e35ac56ea95243681596d917a320c",
+      "events": 59,
+      "relations": 61,
+      "closures": 0,
+      "external_review_ref_count": 507
+    },
+    "saadet": {
+      "package_sha256": "7562311c3900a059cdb70ca42a9283ff63acdde72059672db17824747625bc97",
+      "companion_review_sha256": "fc30cbd8d1121c7137b62a28b2cc9de1dbbc761ec1601e7498d801bb334a3b7c",
+      "events": 23,
+      "relations": 19,
+      "closures": 0,
+      "external_review_ref_count": 301
+    },
+    "demokrat": {
+      "package_sha256": "05e78901725c688c506b15b89aa918cb2e1cabdfd8053166d08883a7fa175bd0",
+      "companion_review_sha256": "00e7019d2a2f6b114184b6efd8f1baae2f4105b7bd0b6702d5151b07438a92cf",
+      "events": 28,
+      "relations": 25,
+      "closures": 0,
+      "external_review_ref_count": 377
+    }
+  },
+  "original_stages": {
+    "yeni-parti": "tracer",
+    "tip": "partial",
+    "dem": "tracer",
+    "iyi": "tracer",
+    "yeni-yol": "tracer",
+    "dbp": "tracer",
+    "emep": "tracer",
+    "saadet": "tracer",
+    "demokrat": "tracer"
+  },
+  "isolated_stage": "partial",
+  "isolated_envelope_sha256": {
+    "yeni-parti": "6ebab9afb5483f38afa7d1db61b7e7aec277496d28122bc36b5ea979c9845b19",
+    "tip": "604762642e22da4134b38425d94037ad358aafaaa55d7514541a89047f7f233c",
+    "dem": "169065265b910a3d2c7482a2f187a0b979330965aa5b3a1fc5d0f532f79540f7",
+    "iyi": "226d8391177e0f5f2165f975bd243ea8b4a048ccc01b31825e1e1f6c326ca553",
+    "yeni-yol": "7f0ee77b861688860c8f810865891871a9283dad35914a6e8695573a4eae284d",
+    "dbp": "9065f19a89afb0a83a70b3bf1857c176a539af370c66ec48ca38b24efa9cf020",
+    "emep": "272a18ec33c86898d2ff8fed8acb4b09ddebd4935d123b0e2801d7baea67815c",
+    "saadet": "badaa6240da37f38d210348ea17aa74693a26120877a06ea4b27be8fc7669fac",
+    "demokrat": "9a2e5715e70f6dbe9a3d69198a2ca198ecb8f3ab5d136d499915fefc8c0eb9b8"
+  },
+  "decisions_sha256": "2470ad530d4bd707cb7f21cb91e96c87790f34cc5e8f50f8205af201a58103eb",
+  "output_sha256": "61b6b2245a21c1538782d12d27db5804270943b0e8c46fbb03602ed1de960806",
+  "input_events": 413,
+  "input_relations": 304,
+  "merged_events": 397,
+  "merged_relations": 304,
+  "closure_count": 0,
+  "event_aliases": 421,
+  "review_origins": 4085,
+  "same_keys": [
+    "tbmm-28-3-104-2-2927-iklim-kanunu",
+    "tbmm-28-4-100-10-4251-gundem",
+    "tbmm-28-4-106-10-4314-gundem",
+    "tbmm-28-4-108-10-4343-gundem",
+    "tbmm-28-5-004-10-4603-gundem",
+    "tbmm-28-5-008-10-4625-gundem",
+    "tbmm-28-5-012-10-4961-gundem",
+    "tbmm-28-5-012-yeni-yol-genel-gorusme-fon-gundem",
+    "tbmm-sik-makas-karaca-isci-basin-toplantisi-2026"
+  ],
+  "unresolved_candidates": 12
+}

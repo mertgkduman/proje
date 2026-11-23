@@ -57,6 +57,7 @@ for decision in outcome['decisions']:
         document = docs['document'][version['document_id']]
         assert document['party_id'] in parties
         if key.startswith('tbmm-28-5-') or key in {
+            'tbmm-28-4-100-10-4251-gundem',
             'tbmm-28-4-106-10-4314-gundem',
             'tbmm-28-4-108-10-4343-gundem',
             'tbmm-28-3-104-2-2927-iklim-kanunu',
@@ -110,7 +111,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         assert rows==[(eid,)]
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?',(eid,))} <= parties
         assert len(db.execute('SELECT 1 FROM practice_event_alias WHERE decision_id=?',(key,)).fetchall())==len(parties)
-    if exercise['number'] in {'02', '03'}:
+    if exercise['number'] in {'02', '03', '04'}:
         november = {
             'tbmm-28-5-012-yeni-yol-genel-gorusme-fon-gundem',
             'tbmm-28-5-012-10-4961-gundem',
@@ -124,7 +125,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         for key in november & joined.keys():
             eid, parties = joined[key]
             expected = {'yeni-parti', 'iyi', 'yeni-yol'}
-            if exercise['number'] == '03':
+            if exercise['number'] in {'03', '04'}:
                 expected.add('dem')
             assert parties == expected
             contributions = db.execute(
@@ -133,9 +134,9 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             assert {row[0] for row in contributions} == parties
             assert len(contributions) == len({row[1] for row in contributions}) == len(parties)
             assert len({row[2] for row in contributions if row[2] is not None}) == 3
-            if exercise['number'] == '03':
+            if exercise['number'] in {'03', '04'}:
                 assert {row[0] for row in contributions if row[2] is None} == {'dem'}
-    if exercise['number'] == '03':
+    if exercise['number'] in {'03', '04'}:
         for key in ('tbmm-28-4-106-10-4314-gundem', 'tbmm-28-4-108-10-4343-gundem'):
             eid, parties = joined[key]
             assert parties == {'dem', 'iyi', 'yeni-yol'}
@@ -150,6 +151,23 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         assert {'0405-tip-climate-2025-ballot-bas-p', '0405-tip-climate-2025-ballot-kadigil-p',
                 '0405-tip-climate-2025-ballot-sik-p', '0410-emep-climate-2025-ballot-bayhan-p',
                 '0410-emep-climate-2025-ballot-karaca-p'} <= {r[0] for r in rows}
+    if exercise['number'] == '04':
+        hububat, parties = joined['tbmm-28-4-100-10-4251-gundem']
+        assert parties == {'yeni-yol', 'saadet'}
+        assert db.execute(
+            'SELECT party_id,actor_id,authority_passage_id FROM practice_contribution WHERE event_id=?',
+            (hububat,),
+        ).fetchall() == [('yeni-yol', '0408-hububat-actor', '0408-hububat-floor-role')]
+        assert db.execute(
+            'SELECT id,party_id FROM practice_relation WHERE event_id=?', (hububat,),
+        ).fetchall() == [('0411-hububat-2026-agenda-relation', 'saadet')]
+        assert db.execute(
+            'SELECT state FROM practice_candidate WHERE id=?', ('0408-hububat-candidate',),
+        ).fetchone() == ('unmatched',)
+        for key in ('tmo-2026-06-25-hububat-ilk-odeme','tmo-2026-07-27-hububat-alim-odeme-bildirim','tmo-2026-08-17-hububat-alim-odeme-bildirim'):
+            assert db.execute(
+                'SELECT count(*) FROM practice_event WHERE common_event_key=?', (key,),
+            ).fetchone() == (1,), key
 page = (release/'index.html').read_text()
 for r in records['practice_relation']:
     for view in ('party','comparison'):

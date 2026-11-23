@@ -1,0 +1,7 @@
+# 10/4251 ortak olay incelemesi
+
+Yeni Yol’un `0408-hububat-event` ve Saadet’in `0411-hububat-2026-agenda-event` kaydı 10 Haziran 2026 tarihli 100. Birleşimin ilk grup önerisine ait. İki paket aynı üç özgün SHA-256’yı kullanıyor. Esas kaydı `ea1ebdc79e7e2cb752315f208afbfaae6b483744c01f034b3fc1eff61cf56505`, dört sayfa imzalı önerge `89b5cccc0478e8012cf5b64b24df7ca18fafe630903dad4df65dd3477cadd760` ve birleşim tam tutanağı `6a870294ea7992b5fa674a5298ba876c9a0c4db52ebab0dd570391b58c08c8c2`. Dört ortak alan aynı. [TBMM esas kaydı](https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/a811a383-a3c9-49f8-b0e3-019ed4c70335) [İmzalı önerge](https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T10/WebOnergeMetni/be0f67fd-5e2a-4717-a037-397eb2a96192.pdf) [100. Birleşim tam tutanağı](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/100/Tam/b3917591-905c-4114-ab4d-70a37fd266fa.html)
+
+Başkan Yeni Yol adına Şerafettin Kılıç’a söz verdi ve gündem talebinin reddini açıkladı. Saadet ilişkisi Mahmut Arıkan’ın Saadet yayınına atıflı açıklamasıyla karşılaştırma içeriyor. Yeni Yol’un temsil görevi kendi yetki pasajıyla, Saadet’in karşılaştırması kendi söylem ve ilişki kimliğiyle kalıyor. Yeni Yol için önceki tarihli ayrı söylem adayı açık. 25 Haziran ilk ödeme ve 27 Temmuz ile 17 Ağustos birikimli TMO duyuruları ayrı olay. Kişisel oy, asıl araştırmanın yürütülmesi ve üretici bazında fiilî ödeme açık.
+
+Dokuz aynı olay kararı ve on iki açık aday, dördüncü yalıtılmış önizlemede doğrulanacak. Kapsam kapanışı sıfır.
