@@ -51,3 +51,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 Özgün teklif indeks 10–17 metin katmanından okundu; genel gerekçe ile 1–9 maddelere ilişkin gerekçe başlar. Metin tanıma kusurları bulunduğundan alıntı yapılırsa özgün görüntüyle karşılaştırılmalı.
 
 Özgün teklif indeks 18–25 metin katmanından okundu; 9–20 ve geçici maddelerin gerekçeleri burada tamamlanır. Metin tanıma hataları doğrudan alıntıda görsel denetimi gerektirir.
+
+Özgün teklif indeks 26–33 metin katmanından okundu; 1–10 maddeleri başlar. Metin tanıma hataları varsa sayfa görseli gerekir; özgün teklif ile komisyon değişikliği ayrı tutulur.
