@@ -266,3 +266,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 695–699 metni: Nevzat Ceylan ek görüşü ve dört CHP üyesinin muhalefet şerhi başlangıcı okundu. 697 beş partiye göre 43 araştırma önergesini listeler; 10/2009, 2139, 3798 imzacılarının o tarihli üyelikleri daha sonra TİP üyeliğine dönüştürülmedi. Komisyon çalışma yöntemi ve davetlere ilişkin eleştiriler muhalefet üyelerinin iddialarıdır. Sonraki 700; metin taraması 700/860, görseller ve 160 indeks açık.
 
 - PDF indeks 700–704 metni: CHP üyelerinin muhalefet şerhindeki komisyon katılımı ve raporlama eleştirileri ile iklim tanımları okundu; bu iddialar imzacılarına aittir ve TİP görüşü veya bağımsız doğrulanmış bilimsel veri olarak sunulmadı. Sonraki 705; metin taraması 705/860, görseller ve 155 indeks açık.
+
+- PDF indeks 705–709 metni: CHP üyelerinin şerhindeki iklim krizi, tarihli MGM verileri ve 2021 yangınlarına dair değerlendirme ve eleştirileri okundu; bu ifadeler TİP tutumu veya bağımsız doğrulanmış olgu diye alınmadı. Sonraki 710; metin taraması 710/860, görseller ve 150 indeks açık.
