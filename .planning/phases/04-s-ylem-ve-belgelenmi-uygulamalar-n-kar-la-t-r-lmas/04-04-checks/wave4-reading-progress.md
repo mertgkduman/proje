@@ -10,13 +10,13 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 46 | 9 | 62491881 |
-| İYİ Parti | 16 | 10 | 62490451 |
+| DEM Parti | 47 | 9 | 62492699 |
+| İYİ Parti | 17 | 10 | 62492649 |
 | Yeni Yol | 19 | 11 | 62492688 |
 | DBP | 36 | 7 | 62490789 |
 | EMEP | 56 | 58 | 62487943 |
-| Saadet Partisi | 18 | 14 | 62491361 |
-| Demokrat Parti | 18 | 16 | 62484260 |
+| Saadet Partisi | 19 | 15 | 62492219 |
+| Demokrat Parti | 20 | 18 | 62493631 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -181,3 +181,9 @@ Dokuz arşiv kökünde ortak 219 yol ve 628 dosya kopyası aynı baytlarla doğr
 EMEP’in Bekaert 7/26171 yazılı sorusu ve Bakanlık cevabı iki görünümde doğrulandı. Bakanlığın cevabı hukuki başvuru yollarını açıklıyor. İşyerine özgü sonuç ve işe dönüş açık. [EMEP makbuzu](../04-10-checks/bekaert-26171-62487943-receipt.json)
 
 369 olay kaydı ve 284 ilişkiyle dondurulan ikinci dokuz parti provası iki HTML görünümünde geçti. Beş olay grubu birleştirildi. Önizlemede 361 olay, 284 ilişki ve 95 etkin eşleşmemiş olay kartı bulunuyor. 8/153, 10/4961 ve 299 sıra sayılı teklif ayrı olaylar. İlk iki dosyada üçer parti katkısı kendi aktör ve yetki pasajıyla korundu. 14 olay uyuşması kararı açık. [Birleşim provası makbuzu](wave4-merge-rehearsal-02-62492655.json)
+
+Saadet’in 1 Temmuz asgari ücret düzeyinde emekli aylığı talebi, 7590 sayılı Kanunun 16. maddesinde temmuz ayı için belirlenen 23.552 TL dosya başı alt tutarla karşılaştırıldı. Net asgari ücret 28.075,50 TL, fark 4.523,50 TL. Kişisel banka ödemeleri ve kök aylık açık. [Saadet makbuzu](../04-11-checks/july-pension-floor-62492219.json)
+
+Demokrat Parti’nin tecil eleştirisi iki farklı işlemle karşılaştırıldı. 7582 sayılı Kanundaki genel 72 ay ve 1 milyon TL sınırı ile B/20 Tebliğinin belirli borçlar için yüzde 29 oranı ve 10 milyon TL teminat eşiği kendi kapsamlarında doğrulandı. Bireysel başvuru ve ödeme sonucu açık. [Demokrat Parti makbuzu](../04-12-checks/tax-deferral-62493631.json)
+
+DEM Parti adına Çiçek Otlu Uçar’ın 10/4961 gündemindeki katkısı 47 olaylı çalışma çiftinde doğrulandı. [DEM Parti makbuzu](../04-06-checks/dem-nov03-4961-62492699.json) İYİ Parti adına Selçuk Türkoğlu’nun 10/4314’ün ön görüşülmesine sözlü desteği 17 olaylı çalışma çiftinde doğrulandı. İki tutanakta da kişisel oy cetveli yer almıyor. [İYİ Parti makbuzu](../04-07-checks/teacher-4314-62492649-complete.json)
