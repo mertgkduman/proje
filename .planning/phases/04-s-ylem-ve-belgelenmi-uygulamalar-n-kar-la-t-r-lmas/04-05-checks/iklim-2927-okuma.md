@@ -24,3 +24,4 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - 2021 rapor 35–39 indeksleri okundu: 10/693 gerekçesi, Gülizar Biçer Karaca ve imzacıların 10/817 iklim önergesi ve Levent Gök 10/868 başlangıcı. İklim ve sağlık tahminleri önceki tarihli önerge kaynaklarına atıflıdır, TİP’e aktarılmadı. Toplam 42/860 sayfa, 818 açık.
 - 2021 rapor 40–44 indeksleri okundu: 10/868 imzaları, Cengiz Gökçel 10/992 ve Ednan Arslan 10/1004 önergesi; imzalar ve iddialar kendi önerge bağlamında, TİP’e atıf yok. Toplam 47/860, 813 açık.
 - 2021 rapor 45–49 indeksleri okundu: 10/1004 sonu, Yasin Uğur ve imzacıların 10/1018 önergesi, Mehmet Ali Çelebi 10/1150 başlangıcı. Bunlar kendilerine ait önerge ve iddialardır; TİP adına aktarılmadı. Toplam 52/860, 808 açık.
+- 2021 rapor 50–54 indeksleri okundu: Mehmet Ali Çelebi 10/1150 gerekçe ve imzaları ile Sevda Erdan Kılıç ve imzacıların 10/1170 önergesi; görüşler önerge sahiplerine ait. Toplam 57/860, 803 açık.
