@@ -110,3 +110,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 305–309 metni tarandı: korunan alanlar, sanayi ve enerji sektöründe tarihsel iklim etkileri ve modelleme arka planı. 308–309 tablo düzeni görsel incelenmedi; uzman ve kurum görüşleri TİP politikası olarak atfedilmedi. 0–309: 310/860 indeks metni veya boşluğu tarandı; önceki görseller ve 550 indeks açık.
 
 2021 raporu indeks 310–314 metni tarandı: enerji planlaması, turizm ve ulaştırma arka planı ile bakanlık görüşü. 311 tablo yalnız başlık olarak çıkarıldı, özgün görsel okunmadı; bakanlık hedefleri ve yürüyen projeler TİP uygulaması veya sonuç olarak yazılmadı. 0–314: 315/860 indeks metni veya boşluğu tarandı; görseller ve 545 indeks açık.
+
+2021 raporu indeks 315–319 metni tarandı: ulaştırma bakanlığı anlatımının devamı ve sağlık, göç, yoksulluk, gıda ve ekonomi üzerine atıflı genel arka plan. Hiçbiri TİP işlemi olarak kodlanmadı; tarihsel tahminler olgu sayılmadı. 0–319: 320/860 indeks metni veya boşluğu tarandı; görseller ve 540 indeks açık.
