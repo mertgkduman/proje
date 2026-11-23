@@ -33,3 +33,5 @@ PDF indeks 50–54 okundu: HDP Ali Kenanoğlu konuşmasını bitirir; İYİ İbr
 PDF indeks 55–59 okundu: AK Parti Nilgün Ök konuşması sonrası ikinci oturum başlar; Mehmet Bekaroğlu Akkuyu mülkiyet/bağımlılık sorularını, HDP Mahmut Celadet Gaydalı enerji dağıtımı görüşlerini anlatır. Bunlar Kadıgil konuşması değildir.
 
 PDF indeks 60–64 okundu: İYİ Ayhan Altıntaş nükleer ve atık değerlendirmesi, AK Parti Yaşar Kırkpınar enerji sunumu, CHP Süleyman Girgin maden ve iş güvenliği konuşması; her iddia kendi konuşmacısına aittir.
+
+PDF indeks 65–69 okundu: CHP Süleyman Girgin, HDP Ömer Öcalan, İYİ Aydın Adnan Sezgin, AK Parti Kemal Çelik konuşmaları ayrı değerlendirildi; Akkuyu iddiaları ve önerileri konuşmacılarına aittir.
