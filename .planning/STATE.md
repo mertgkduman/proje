@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
 Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: 2026-11-23 UTC — Yeni Parti 144 olay ve 141 ilişki, EMEP 55 olay ve 57 ilişki, TİP 21 olay ve 20 ilişki, DEM Parti 45 olay ve 9 ilişki, DBP 36 olay ve 7 ilişki, Demokrat Parti 18 olay ve 16 ilişki, Yeni Yol 18 olay ve 11 ilişki, Saadet 16 olay ve 13 ilişki, İYİ Parti 16 olay ve 10 ilişki. Dokuz partinin 5.490 kapsam hücresi açık.
+Last activity: 2026-11-23 UTC — Yeni Parti 144 olay ve 141 ilişki, EMEP 55 olay ve 57 ilişki, TİP 21 olay ve 20 ilişki, DEM Parti 46 olay ve 9 ilişki, DBP 36 olay ve 7 ilişki, Demokrat Parti 18 olay ve 16 ilişki, Yeni Yol 18 olay ve 11 ilişki, Saadet 18 olay ve 14 ilişki, İYİ Parti 16 olay ve 10 ilişki. Dokuz partinin 5.490 kapsam hücresi açık.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 

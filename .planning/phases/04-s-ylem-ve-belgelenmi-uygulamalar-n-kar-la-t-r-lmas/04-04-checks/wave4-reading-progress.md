@@ -10,12 +10,12 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 45 | 9 | 62490422 |
+| DEM Parti | 46 | 9 | 62491881 |
 | İYİ Parti | 16 | 10 | 62490451 |
 | Yeni Yol | 18 | 11 | 62490452 |
 | DBP | 36 | 7 | 62490789 |
 | EMEP | 55 | 57 | 62487388 |
-| Saadet Partisi | 16 | 13 | 62490394 |
+| Saadet Partisi | 18 | 14 | 62491361 |
 | Demokrat Parti | 18 | 16 | 62484260 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -169,3 +169,7 @@ EMEP’in Öz-Ka 7/27997 yazılı sorusu ve Bakanlık cevabı iki HTML görünü
 Bağlar Belediye Meclisinin 3–5 Şubat 2015 arasında aldığı yedi karar iki görünümde doğrulandı. Yardım yetkisi, iki ayrı pazar raporu, kurs raporu ve iki abonelik gibi unsurlar karar türleriyle birlikte korundu. Teslim, ödeme ve saha sonuçları açık. [Doğrulama makbuzu](../04-09-checks/baglar-february-62490789.json)
 
 Aykut Kaya’nın 10/4961 ön görüşme önerisine Yeni Parti Grubu adına verdiği sözlü destek iki HTML görünümünde doğrulandı. Bu olayın nötr alanları, İYİ Parti ve Yeni Yol paketleriyle birebir eşleşiyor. Parti katkıları ayrı. Yeni ortak denetim dokuz pakette 369 olay kaydı, 284 ilişki ve sıfır kapsam kapanışı gösterdi. [Yeni Parti makbuzu](nov03-genelgorusme-yeniparti-4961-62490423-complete.json) [Ortak olay denetimi](wave4-common-event-audit-06.json)
+
+30 Temmuz ve 12 Ağustos özel okul öğretmenleri toplantıları Saadet çalışma paketinde iki HTML görünümünde doğrulandı. 29 Temmuz parti çağrısı ertesi günkü çalıştayla karşılaştırıldı. Sonraki görüşme ve taban ücretin yürürlüğü açık. [Saadet makbuzu](../04-11-checks/private-teacher-meetings-62491361.json)
+
+DEM Parti adına Zeynep Oduncu Akın’ın 8/153 ön görüşmesindeki katkısı iki HTML görünümünde doğrulandı. Kişisel oy ve açık destek çıkarımı yapılmadı. [DEM Parti devam kaydı](../04-06-checks/devam-notu.md)
