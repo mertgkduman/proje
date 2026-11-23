@@ -18,7 +18,7 @@ for label,item in zip(('mezopotamya','independent'),json.loads((c/'2026-pm-myk-c
  v=dict(item['view']);v['version_id']=vid;add('archive_view',**v)
  if label=='mezopotamya':
   s=html_source_text(raw)
-  for key,section,exact in [('announcement','Basın komisyonunun bildirdiği belirleme','DEM Parti Basın Komisyonu partinin yeni Merkez Yürütme Kurulu (MYK) üyelerinin belirlendiği bilgisini paylaştı.'),('women','Ayrı kadın meclisi toplantısı',"Aynı zamanda Kadın Meclisi de toplandı. Toplantıda Kadın Meclisi Sözcü olarak Halide Türkoğlu seçilirken, yeni dönem Kadın Koordinasyonu'nda yer alacak isimler de belirlendi.")]:
+  for key,section,exact in [('meeting','Parti Meclisi toplantısı','Olağan Büyük Kongresi sonrası Eş Genel Başkanlar Tülay Hatimoğulları ve Tuncer Bakırhan başkanlığında gerçekleştirilen Parti Meclisi (PM) toplantısı sona erdi.'),('announcement','Basın komisyonunun bildirdiği belirleme','DEM Parti Basın Komisyonu partinin yeni Merkez Yürütme Kurulu (MYK) üyelerinin belirlendiği bilgisini paylaştı.'),('women','Ayrı kadın meclisi toplantısı',"Aynı zamanda Kadın Meclisi de toplandı. Toplantıda Kadın Meclisi Sözcü olarak Halide Türkoğlu seçilirken, yeni dönem Kadın Koordinasyonu'nda yer alacak isimler de belirlendi.")]:
    assert exact in s
    add('passage',id='0406-2026-pm-myk-'+key,version_id=vid,exact=exact,prefix=None,suffix=None,article=None,section=section,pdf_page_index=None,printed_page=None)
 (c/'2026-pm-myk-records.json').write_text(json.dumps(dict(party_id='dem',entries=rows),ensure_ascii=False,indent=2)+'\n')
