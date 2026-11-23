@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 17 | 10 | 62492649 |
 | Yeni Yol | 21 | 12 | 62498133 |
 | DBP | 58 | 7 | 62499119 |
-| EMEP | 59 | 61 | 62491755 |
+| EMEP | 59 | 61 | 62491846 |
 | Saadet Partisi | 23 | 19 | 62498024 |
 | Demokrat Parti | 31 | 28 | 62499618 |
 
@@ -221,3 +221,7 @@ Bağlar /44→103, /63→102 ve /64→100 sevk ve rapor zincirleri iki HTML gör
 DEM Parti’nin 7 Eylül Parti Meclisi ve Kadın Meclisi kayıtları ayrı olay olarak iki HTML görünümünde doğrulandı. Parti duyuruları organ adları ve sonuçlarının kaynağı. Tüzüğün ilgili günde yürürlüğü ve kararların uygulaması açık. [DEM Parti makbuzu](../04-06-checks/dem-2026-pm-myk-62499139.json)
 
 Demokrat Parti’nin 2/3485 ve 2/3970 teklifleri ile 17 Şubat Ardahan kredi duyurusu ayrı olaylar olarak iki HTML görünümünde doğrulandı. İki teklifin esas sicilinde durum Komisyonda. Duyurudaki 300.000 TL mahsup sınırı ve belirli aynî krediler için 400.000 TL koşulu kaynaklarına atıflı. Resmî Gazete PDF’si erişim zaman aşımı verdi. Ödenek, kredi ve çiftçi bazında uygulama açık. [Makbuz](../04-12-checks/agri-credit-62499618.json)
+
+EMEP’in Erlau 7/28709 okumasında önceki üç kaynak açıklaması ve pasajları korunarak soru ve Bakanlık cevabı denetlendi. 59 olay ve 61 ilişki iki HTML görünümünde doğrulandı. [Makbuz](../04-10-checks/erlau-28709-preserved-62491846-receipt.json)
+
+Bağlar karar defterinin 139–167 indeksleri özgün görüntülerden okundu. Toplam 175 ayrı sayfa okundu, 94 sayfa açık. Taşıt, kredi ve sözleşme yetkileri karar metinleriyle kayıtlı. Alım, kredi çekimi, sözleşme imzası ve ödeme için belgeler açık. [Okuma kaydı](../04-09-checks/baglar-council-2015-reading-011.json)
