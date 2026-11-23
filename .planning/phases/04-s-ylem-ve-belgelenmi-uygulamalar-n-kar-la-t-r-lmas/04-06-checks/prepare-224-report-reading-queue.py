@@ -11,7 +11,7 @@ raw=Path('data/practices/sources/dem')/capture['original_path']
 assert hashlib.sha256(raw.read_bytes()).hexdigest()=='ed1e950a9d23850333dd94cd3fbae9acf4747da5861019c1b14b0ea5ed891bb0'
 now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 pages=[]
-examined=set(range(0,906)) | set(range(906,986)) | set(range(986,1044))
+examined=set(range(0,906)) | set(range(906,986)) | set(range(986,1054))
 for i in sorted(examined):
  text=pdf_page_text(raw,i)
  assert text.strip()
@@ -121,8 +121,9 @@ while i<1054:
  if state=='examined' and 1018<=i<1026: row['review_file']='2025-224-yeniyol-serh-izleme.md'
  if state=='examined' and 1026<=i<1034: row['review_file']='2025-224-yeniyol-serh-son.md'
  if state=='examined' and 1034<=i<1044: row['review_file']='2025-224-kaynakca-ilk.md'
+ if state=='examined' and 1044<=i<1054: row['review_file']='2025-224-kaynakca-son.md'
  queue.append(row);i=end+1
 assert [x for r in queue for x in range(r['first'],r['last']+1)]==list(range(1054))
-result=dict(version=1,source_sha256=capture['sha256'],total_pages=1054,examined_pages=1044,pending_pages=10,queue=queue,limitations='Kapak, içindekiler ve liste sayfaları, başkan sunuşu, altı önerge, üyeler, toplantı ve ziyaret kesitleri, kavramsal giriş, uluslararası belgeler, ulusal mevzuat, mahkeme kararları ve kurumsal yapıdan seçili sayfalar, ortak tespit ve öneriler, DEM şerhi ve takdim/kuruluş sayfaları incelendi; diğer bölümler okunmadı, sonuçların uygulanması ve hukuki etki doğrulanmadı.')
+result=dict(version=1,source_sha256=capture['sha256'],total_pages=1054,examined_pages=1054,pending_pages=0,queue=queue,limitations='Bu raporun bütün PDF sayfaları metin katmanından incelendi; gerekli seçili tarama ve tablolar görsel kontrol edildi. Atıf yapılan kaynakların tamamı, önerilerin uygulanması, hukuki etki ve bütün parti araştırma kapsamı doğrulanmadı.')
 (p/'2025-224-report-reading-queue.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-print('224_REPORT_QUEUE_EXACT',len(queue),'examined',1044,'pending',10)
+print('224_REPORT_QUEUE_EXACT',len(queue),'examined',1054,'pending',0)
