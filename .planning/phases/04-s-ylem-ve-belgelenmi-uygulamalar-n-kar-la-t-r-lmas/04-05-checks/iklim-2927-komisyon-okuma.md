@@ -33,3 +33,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 95–100 görsel okundu; üçüncü muhalefet şerhi komisyon usulü, katılım ve teklif eleştirisiyle başlıyor. İmza henüz okunmadığı için parti veya kişiye bağlanmadı.
 
 İndeks 101–106 görsel okundu; üçüncü şerhte teklif eleştirileri ve 106. indekste grubun ücretsiz tahsisata ilişkin önergesinin reddedildiği iddiası bulunuyor. İmza ve önerge özgün kaydı görülmediğinden aktör ve sonuç doğrulanmış işlem sayılmadı.
+
+İndeks 107–114 görsel okundu. Üçüncü şerh indeks 109 Hasan Toktaş (Bursa) adıyla; dördüncü şerh indeks 114 Doğan Demir (İstanbul) adıyla sona erer. Şerhlerdeki reddedilen önerge anlatımları bu imza ve kaynak sınırlarıyla ele alınmalı, ayrı işlem kanıtı araştırılmalıdır. İndeks 28–114 tüm şerhler görsel okundu; raporun 4–19 ve 115–142. indeksleri henüz okunmadı.
