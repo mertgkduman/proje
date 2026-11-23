@@ -3,6 +3,8 @@
 from hashlib import sha256
 from pathlib import Path
 import json
+import os
+import subprocess
 import sys
 
 from uygulama_birlestirme import _json, merge_packages, MergeError
@@ -33,13 +35,16 @@ def load(join_review=False, normalize=False):
     result = []
     for party in selected:
         path = root/'practices'/f'04-{party}.json'
-        raw = path.read_bytes()
+        raw = subprocess.check_output(['git','show','78c1a0f3:'+str(path)])
         assert digest(raw)==report['packages'][party]['package_sha256']
         if join_review or normalize:
             package = json.loads(raw)
             records = package['practice_records']
             if join_review:
-                review = json.loads(path.with_name(f'04-{party}-review.json').read_bytes())
+                review_path = path.with_name(f'04-{party}-review.json')
+                review_raw = subprocess.check_output(['git','show','78c1a0f3:'+str(review_path)])
+                assert digest(review_raw)==report['packages'][party]['companion_review_sha256']
+                review = json.loads(review_raw)
                 records['practice_source_review'] = review['practice_source_review']
                 records['practice_source_review_contract'] = [{'version':1}]
             if normalize:
@@ -100,3 +105,71 @@ if '--preview' in sys.argv:
     assert len([row for row in records['practice_merge_origin'] if row['origin_kind']=='review_origins']) == 223
     assert json.loads((root/'current.json').read_bytes())['release_id'] == report['base_release']
     print('TWO_PARTY_SOURCE_AND_SQLITE_PREVIEW_OK', flush=True)
+
+
+def scoped_union_preview():
+    """Test explicit passage grants for the two audited TBMM procedures."""
+    from uygulamalar import _digest, _render_practice_preview
+    from uygulama_merge_kayit import materialize_practice_merge
+
+    inputs = load(join_review=True, normalize=True)
+    decisions = decision_bytes(inputs)
+    result = merge_packages(inventory, inputs, decisions,
+        decisions_sha256=digest(decisions), base_records=base)
+    payload = result['payload']
+    records = payload['practice_records']
+    records.update(materialize_practice_merge(inventory,inputs,decisions,base,result))
+    documents = {r['id']:r for r in base['document']}
+    versions = {r['id']:r for r in base['document_version']}
+    passages = {r['id']:r for r in base['passage']}
+    for entry in payload['entries']:
+        row = entry['values']
+        catalogs = {'document':documents, 'document_version':versions, 'passage':passages}
+        if entry['kind'] in catalogs:
+            catalogs[entry['kind']][row['id']] = row
+    existing = {(r['version_id'],r['party_id'],r['passage_id'])
+                for r in records['practice_source_party']+base.get('practice_source_party',[])}
+    grants = []
+    for decision in result['decisions']:
+        assert decision['decision']=='same' and decision['id'] in common
+        eid = decision['canonical_event_id']
+        ids = {r['passage_id'] for r in records['practice_event_evidence'] if r['event_id']==eid}
+        disputes = {r['id'] for r in records['practice_dispute'] if r['event_id']==eid}
+        ids.update(r['passage_id'] for r in records['practice_dispute_evidence'] if r['dispute_id'] in disputes)
+        assert set(decision['source_passage_ids']) <= ids
+        for pid in sorted(ids):
+            version = versions[passages[pid]['version_id']]
+            document = documents[version['document_id']]
+            assert document['source_kind']=='official' and document['party_id'] in selected
+            for party in selected:
+                if document['party_id']==party or (version['id'],party,pid) in existing:
+                    continue
+                reason = ('Geçici ortak olay denetimi. '+decision['id']+
+                          ' kararının aynı TBMM işlemine bağlı özgün resmî pasajı. '
+                          'Alıntılanan parti veya kişiye ait rol, oy ve önerge başvuruları ayrı korunuyor.')
+                grants.append(dict(version_id=version['id'],party_id=party,passage_id=pid,scope_reason=reason))
+    grants.sort(key=_json)
+    assert len(grants)==43,len(grants)
+    records['practice_source_party'].extend(grants)
+    roots = {_digest(entry):root/'practices/sources'/item['identity']
+             for item in inputs for entry in json.loads(item['raw'])['entries']}
+    output = root/'.staging'/('gsd-wave4-shared-scoped-'+os.environ['SLURM_JOB_ID'])
+    _render_practice_preview(payload,output,inventory,report['base_release'],
+                             _validated_merge_roots=roots)
+    release, = (output/'releases').iterdir()
+    saved = json.loads((release/'records.json').read_bytes())
+    assert all(row in saved['practice_source_party'] for row in grants)
+    assert len(records['practice_event_alias'])==17
+    assert len(records['practice_event'])==13
+    assert len(records['practice_relation'])==11
+    page = (release/'index.html').read_text()
+    for row in records['practice_relation']:
+        for view in ('party','comparison'):
+            tag = f'id="{view}-practice-{row["id"]}"'
+            assert page.count(tag)==1,tag
+    assert json.loads((root/'current.json').read_bytes())['release_id']==report['base_release']
+    print('TWO_PARTY_SCOPED_SOURCE_AND_SQLITE_PREVIEW_OK',len(grants),release,flush=True)
+
+
+if '--scoped-preview' in sys.argv:
+    scoped_union_preview()
