@@ -6,7 +6,7 @@
   "tranches": [
     {
       "tranche_id": "0410-emep-api-001",
-      "state": "pending",
+      "state": "read",
       "parts": [
         {
           "post_id": 12643,
@@ -89,7 +89,9 @@
           "end_char": 1886,
           "body_temporal_status": "last_modified_at_or_before_cutoff"
         }
-      ]
+      ],
+      "read_at": "2026-11-23T05:04:05.040431+00:00",
+      "reading_receipt": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-001-reading.json"
     },
     {
       "tranche_id": "0410-emep-api-002",
