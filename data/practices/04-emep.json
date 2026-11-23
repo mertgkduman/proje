@@ -9450,6 +9450,184 @@
         "result": "confirmed",
         "reason": "İlgili program, TBMM tutanağı veya haber pasajı incelendi."
       }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0410-emep-aym-2020-final",
+        "party_id": "emep",
+        "title": "AYM E.2021/35 K.2024/58, EMEP 2020 kesin hesap kararı",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0410-emep-aym-2020-final-v1",
+        "document_id": "0410-emep-aym-2020-final",
+        "document_date": "2024-06-27",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "27 Haziran 2024 AYM kararı; 17 Aralık 2024 Resmî Gazete; 8 Ocak 2026 arşiv kopyası",
+        "original_url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2024-58-spmd.pdf",
+        "final_url": "https://web.archive.org/web/20260108104455id_/https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2024-58-spmd.pdf",
+        "accessed_at": "2026-11-22T11:48:13+00:00",
+        "verified_at": "2026-11-22T11:48:13+00:00",
+        "mime": "application/pdf",
+        "sha256": "28d11db66ace0f6a2d6d5d69137462bf75d1b92518cc80e2403d2a12f49f38be",
+        "original_path": "objects/28d11db66ace0f6a2d6d5d69137462bf75d1b92518cc80e2403d2a12f49f38be/original.pdf",
+        "readable_path": "objects/28d11db66ace0f6a2d6d5d69137462bf75d1b92518cc80e2403d2a12f49f38be/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0410-emep-aym-2020-final-v1",
+        "publisher": "Anayasa Mahkemesi",
+        "author": null,
+        "kind": "official",
+        "published_at": null,
+        "date_precision": "unknown",
+        "social_handle": null,
+        "public_url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2024-58-spmd.pdf",
+        "basis": "27 Haziran 2024 karar tarihi ve 17 Aralık 2024 Resmî Gazete bilgisi belgede; AYM PDF sayfasının yayın günü ayrı doğrulanmadı."
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0410-emep-aym-2020-final-verdict-p",
+        "version_id": "0410-emep-aym-2020-final-v1",
+        "exact": "IV. SONUÇ\nEmek Partisinin 2020 yılı kesin hesabının incelenmesi sonucunda;\nPartinin 2020 yılı kesin hesabında gösterilen 827.656,16 gelir, 64.201,01 geçen yıldan\ndevreden nakit toplamı ile 841.209,52 TL gider, 50.647,65 TL gelecek yıla devreden nakit\ntoplamının eldeki bilgi ve belgelere göre doğru, denk ve 22/4/1983 tarihli ve 2820 sayılı Siyasi\nPartiler Kanunu’na uygun olduğuna 27/6/2024 tarihinde OYBİRLİĞİYLE karar verildi.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "IV. Sonuç",
+        "pdf_page_index": 1,
+        "printed_page": 2
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0309-emep-html-048-0-summary",
+        "passage_id": "0309-emep-html-048-0-passage",
+        "checked_at": "2026-11-22T22:49:58+00:00",
+        "result": "confirmed",
+        "reason": "Özgün tüzük paragrafı ve ilgili Faz 3 bulgusu tekrar okundu."
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0309-emep-html-048-0-quote",
+        "passage_id": "0309-emep-html-048-0-passage",
+        "checked_at": "2026-11-22T22:49:58+00:00",
+        "result": "confirmed",
+        "reason": "Özgün tüzük paragrafı ve ilgili Faz 3 bulgusu tekrar okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0410-aym-emep-2020-account-result",
+        "party_id": "emep",
+        "heading": "Belgelenmiş uygulamalar",
+        "pair_id": "0410-aym-emep-2020-account-result",
+        "text": "AYM, EMEP’in 2020 kesin hesabının eldeki bilgi ve belgelere göre doğru, denk ve ilgili kanuna uygun olduğuna 27 Haziran 2024’te oybirliğiyle karar verdi.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0410-aym-emep-2020-account-result",
+        "kind": "finding",
+        "subject_id": "0410-aym-emep-2020-account-result",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-22T22:49:58+00:00",
+        "result": "reviewed",
+        "reason": "Tüzük ve AYM kesin hesap kararının sonuç sayfası ayrı okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0410-aym-emep-2020-account-result",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0410-aym-emep-2020-account-result",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "checked_at": "2026-11-22T22:49:58+00:00",
+        "result": "confirmed",
+        "reason": "İlgili tüzük veya AYM karar pasajı incelendi."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0410-aym-emep-2020-account-explanation",
+        "party_id": "emep",
+        "heading": "Belgelenmiş uygulamalar",
+        "pair_id": "0410-aym-emep-2020-account-explanation",
+        "text": "Tüzük, partinin gelir-gider kesin hesabını kabul veya reddetme yetkisini Genel Kongre’ye verir. AYM, 2020 kesin hesabı hakkında 2024’te ayrı bir dış denetim kararı verdi; bu karar kongrenin ne karar aldığını göstermiyor.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0410-aym-emep-2020-account-explanation",
+        "kind": "finding",
+        "subject_id": "0410-aym-emep-2020-account-explanation",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-22T22:49:58+00:00",
+        "result": "reviewed",
+        "reason": "Tüzük ve AYM kesin hesap kararının sonuç sayfası ayrı okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0410-aym-emep-2020-account-explanation",
+        "passage_id": "0309-emep-html-048-0-passage",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0410-aym-emep-2020-account-explanation",
+        "passage_id": "0309-emep-html-048-0-passage",
+        "checked_at": "2026-11-22T22:49:58+00:00",
+        "result": "confirmed",
+        "reason": "İlgili tüzük veya AYM karar pasajı incelendi."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0410-aym-emep-2020-account-explanation",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0410-aym-emep-2020-account-explanation",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "checked_at": "2026-11-22T22:49:58+00:00",
+        "result": "confirmed",
+        "reason": "İlgili tüzük veya AYM karar pasajı incelendi."
+      }
     }
   ],
   "practice_records": {
@@ -9762,6 +9940,16 @@
         "scope_context": "Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu raporu",
         "title": "Komisyon raporuna ilişkin Bayhan açıklaması ve oylama",
         "occurrence_basis": "18 Şubat tarihli TBMM komisyon tutanağı ve haber."
+      },
+      {
+        "id": "0410-aym-emep-2020-account-event",
+        "common_event_key": "aym-2021-35-2024-58-emep-2020-kesin-hesap",
+        "event_at": "2024-06-27",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "AYM E.2021/35 K.2024/58, EMEP 2020 kesin hesabı",
+        "title": "AYM’nin EMEP 2020 kesin hesap kararı",
+        "occurrence_basis": "AYM kararının sonuç sayfasında yıl, karar tarihi ve sonuç belirtilir."
       }
     ],
     "practice_event_evidence": [
@@ -10520,6 +10708,24 @@
         "concrete_basis": "TBMM komisyon tutanağı veya Artı Siirt haberi; atıflar ayrı.",
         "limitation": "Tutanak kişisel oy cetveli değildir; haber ve tutanak kabul sayıları farklıdır. Komisyon işlemi Genel Kurul kararı değildir.",
         "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0410-aym-emep-2020-account-event",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "supported_point": "AYM, 2020 kesin hesabı hakkında 27 Haziran 2024’te sonuç kararı verdi.",
+        "stage": "action",
+        "concrete_basis": "AYM kararının IV. Sonuç bölümü.",
+        "limitation": "Karar 2020 yılı ve eldeki belgelerle sınırlı; Genel Kongre işlemini veya diğer yılları kanıtlamaz.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0410-aym-emep-2020-account-event",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "supported_point": "AYM, 2020 kesin hesabı hakkında 27 Haziran 2024’te sonuç kararı verdi.",
+        "stage": "result",
+        "concrete_basis": "AYM kararının IV. Sonuç bölümü.",
+        "limitation": "Karar 2020 yılı ve eldeki belgelerle sınırlı; Genel Kongre işlemini veya diğer yılları kanıtlamaz.",
+        "epistemic_type": "claim"
       }
     ],
     "practice_contribution": [],
@@ -10761,6 +10967,20 @@
         "period_basis": "2019 parti yayını ve 2020 web güncellemesi; programın kabul tarihi bilinmiyor.",
         "uncertainty_reason": "Ara program değişiklikleri ve 2026’daki tam sürüm ayrıca araştırılmalı.",
         "comparison_row_id": "04-03-v3-0309-emep-program-007-0-row"
+      },
+      {
+        "id": "0410-central-account-statement",
+        "party_id": "emep",
+        "topic_id": "merkez-hesap-denetimi",
+        "taxonomy_version": 4,
+        "summary_finding_id": "0309-emep-html-048-0-summary",
+        "quote_finding_id": "0309-emep-html-048-0-quote",
+        "statement_at": null,
+        "date_precision": "unknown",
+        "version_id": "0208-emep-program-charter-v1",
+        "period_basis": "2019 parti yayını ve 2020 web güncellemesi; tüzük kabul tarihi bilinmiyor.",
+        "uncertainty_reason": "2020 hesap döneminde olası ara tüzük değişiklikleri ve kongre işlemi açık.",
+        "comparison_row_id": "04-03-v3-0309-emep-html-048-0-row"
       }
     ],
     "practice_relation": [
@@ -11243,6 +11463,21 @@
         "temporal_context": "2019 program yayını ve 18 Şubat 2026 komisyon toplantısı ayrı tarihlidir.",
         "authority_context": "Açıklama Bayhan’a, kişisel oy habere ve komisyon sonucu başkana atfedilir.",
         "uncertainty_reason": "TBMM tutanağı 47, haber 42 kabul bildirir; farkın nedeni bilinmiyor. Komisyon raporu Genel Kurul kararı değildir; ara program sürümü açık."
+      },
+      {
+        "id": "0410-aym-emep-2020-account-relation",
+        "statement_id": "0410-central-account-statement",
+        "event_id": "0410-aym-emep-2020-account-event",
+        "party_id": "emep",
+        "topic_id": "merkez-hesap-denetimi",
+        "scope_id": "practice-879ce5dc5ab2a4635f021868c32f1b1828fdbdbc226587fb025932928e729f6a",
+        "comparability_reason": "Her iki kayıt parti kesin hesabı üzerinedir; tüzük iç Genel Kongre yetkisini, karar ayrı yargısal denetimi gösterir.",
+        "target_finding_id": "0309-emep-html-048-0-summary",
+        "result_finding_id": "0410-aym-emep-2020-account-result",
+        "explanation_finding_id": "0410-aym-emep-2020-account-explanation",
+        "temporal_context": "2019/2020 tüzük yayını, 2020 hesap yılı ve 27 Haziran 2024 AYM kararı farklı dönemlerdir.",
+        "authority_context": "Genel Kongre’nin iç kararı ile AYM’nin dış denetim kararı ayrı yetkilerdir.",
+        "uncertainty_reason": "AYM kararı kongrenin hesabı kabul veya reddettiğini göstermez; diğer hesap yılları ve ara tüzük değişiklikleri açık."
       }
     ],
     "practice_legacy_link": [],
@@ -11594,6 +11829,26 @@
         "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
         "research_kind": "event",
         "boundary_reason": "Yalnız programın ulusal haklar bölümü ve 18 Şubat komisyon raporu; diğer süreç ve kaynaklar açık."
+      },
+      {
+        "id": "practice-ad79e7c4e36f5927a9e2ad36d4e71bb5749166cbc500e44649f556fdca82f1ca",
+        "party_id": "emep",
+        "topic_id": "merkez-hesap-denetimi",
+        "taxonomy_version": 4,
+        "period_start": "1996-11-25",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "Genel kongrenin kesin hesap yetkisi ve 2020 hesabı hakkında AYM kararı; kongre işlemi ve diğer yıllar açık."
+      },
+      {
+        "id": "practice-879ce5dc5ab2a4635f021868c32f1b1828fdbdbc226587fb025932928e729f6a",
+        "party_id": "emep",
+        "topic_id": "merkez-hesap-denetimi",
+        "taxonomy_version": 4,
+        "period_start": "1996-11-25",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "Genel kongrenin kesin hesap yetkisi ve 2020 hesabı hakkında AYM kararı; kongre işlemi ve diğer yıllar açık."
       }
     ],
     "practice_scope_source": [
@@ -12004,6 +12259,12 @@
         "version_id": "0410-emep-mdkd-report-2026-press-v1",
         "inspected_sections": "[\"haberde kişisel oylar ve toplam\"]",
         "inspected_at": "2026-11-22T22:35:47+00:00"
+      },
+      {
+        "scope_id": "practice-879ce5dc5ab2a4635f021868c32f1b1828fdbdbc226587fb025932928e729f6a",
+        "version_id": "0410-emep-aym-2020-final-v1",
+        "inspected_sections": "[\"IV. Sonuç\"]",
+        "inspected_at": "2026-11-22T22:49:58+00:00"
       }
     ],
     "practice_lead": [
@@ -12550,6 +12811,14 @@
         "relevance_reason": "haberde kişisel oylar ve toplam",
         "state": "examined",
         "attempt_ids": "[\"0410-mdkd-report-2026-attempt-1\"]"
+      },
+      {
+        "id": "lead-0410-aym-emep-2020-account-attempt",
+        "scope_id": "practice-879ce5dc5ab2a4635f021868c32f1b1828fdbdbc226587fb025932928e729f6a",
+        "url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2024-58-spmd.pdf",
+        "relevance_reason": "IV. Sonuç",
+        "state": "examined",
+        "attempt_ids": "[\"0410-aym-emep-2020-account-attempt\"]"
       }
     ],
     "practice_lead_revision": [],
@@ -13233,6 +13502,16 @@
         "result": "examined",
         "reason": "haberde kişisel oylar ve toplam okundu; kabul sayıları çelişkisi açık.",
         "source_version_id": "0410-emep-mdkd-report-2026-press-v1"
+      },
+      {
+        "id": "0410-aym-emep-2020-account-attempt",
+        "scope_id": "practice-879ce5dc5ab2a4635f021868c32f1b1828fdbdbc226587fb025932928e729f6a",
+        "attempted_at": "2026-11-22T22:49:58+00:00",
+        "query": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2024-58-spmd.pdf",
+        "url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2024-58-spmd.pdf",
+        "result": "examined",
+        "reason": "AYM 2020 kesin hesap kararı sonuç sayfası okundu; kongre işlemi ve başka yıllar açık.",
+        "source_version_id": "0410-emep-aym-2020-final-v1"
       }
     ],
     "practice_candidate": [
@@ -13523,6 +13802,15 @@
         "state": "eligible",
         "reason": "Kürt sorunu ve dil haklarına değinen komisyon açıklaması ve rapor oylaması belgeli.",
         "passage_ids": "[\"0410-emep-mdkd-report-2026-tbmm-speaker-p\", \"0410-emep-mdkd-report-2026-tbmm-intent-p\", \"0410-emep-mdkd-report-2026-tbmm-critique-p\", \"0410-emep-mdkd-report-2026-press-individual-p\", \"0410-emep-mdkd-report-2026-tbmm-aggregate-p\", \"0410-emep-mdkd-report-2026-press-aggregate-p\"]"
+      },
+      {
+        "id": "0410-aym-emep-2020-account-candidate",
+        "scope_id": "practice-879ce5dc5ab2a4635f021868c32f1b1828fdbdbc226587fb025932928e729f6a",
+        "event_id": "0410-aym-emep-2020-account-event",
+        "relation_id": "0410-aym-emep-2020-account-relation",
+        "state": "eligible",
+        "reason": "Parti kesin hesabına dair AYM sonuç kararı resmî kaynakta belirtiliyor.",
+        "passage_ids": "[\"0410-emep-aym-2020-final-verdict-p\"]"
       }
     ],
     "practice_closure": [],
@@ -14041,6 +14329,18 @@
         "passage_id": "0410-emep-mdkd-report-2026-press-aggregate-p",
         "stage": "result",
         "basis_kind": "document"
+      },
+      {
+        "event_id": "0410-aym-emep-2020-account-event",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "stage": "action",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0410-aym-emep-2020-account-event",
+        "passage_id": "0410-emep-aym-2020-final-verdict-p",
+        "stage": "result",
+        "basis_kind": "document"
       }
     ],
     "practice_variant_contract": [
@@ -14092,6 +14392,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-aliaga-731468-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-aym-emep-2020-account-event"
     },
     {
       "subject_kind": "practice_event",
@@ -14248,6 +14552,14 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-aliaga-731468-event|0410-emep-question-31468-register-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aym-emep-2020-account-event|0410-emep-aym-2020-final-verdict-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-aym-emep-2020-account-event|0410-emep-aym-2020-final-verdict-p|result"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -14551,6 +14863,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-aym-emep-2020-account-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-bayhan-development-plan-nuclear-relation"
     },
     {
@@ -14679,6 +14995,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-aym-emep-2020-account-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-bayhan-development-plan-nuclear-relation"
     },
     {
@@ -14796,6 +15116,10 @@
     {
       "subject_kind": "practice_relation.result_finding_id",
       "subject_id": "0410-2023-kongre-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0410-aym-emep-2020-account-relation"
     },
     {
       "subject_kind": "practice_relation.result_finding_id",
@@ -14855,6 +15179,10 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-aym-emep-2020-account-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-bayhan-development-plan-nuclear-relation"
     },
     {
@@ -14963,6 +15291,10 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-central-account-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-expression-statement"
     },
     {
@@ -15031,6 +15363,10 @@
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-central-account-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-expression-statement"
     },
     {
@@ -15096,6 +15432,10 @@
     {
       "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-seasonal-agriculture-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-central-account-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
