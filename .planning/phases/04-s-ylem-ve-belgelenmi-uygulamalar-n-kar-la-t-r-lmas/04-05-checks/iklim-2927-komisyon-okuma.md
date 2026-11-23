@@ -67,3 +67,5 @@ Cumhuriyet 27.06.2025 01:04 (+03) haberinin özgün HTML SHA aafa748fe4ffd56bffb
 104. birleşim HTML cp1254 çözümlenip metin blokları sırayla birleştirilerek karakter 202805–215000 okundu: 17. maddenin çıkarılması için benzer iki önerge ve Selçuk Özdağ ile Sabahat Erdoğan Sarıtaş konuşmaları; tartışma sürmektedir. Bu şahısların açıklamaları TİP söylemi değildir. Bu bölüm dışında 215000–345000 ve birleşimin daha önceki bölümleri henüz okunmadı; otomatik karakter araması tam okuma sayılmaz.
 
 104 tutanak metin 215000–227000 okundu: 17. maddede benzer iki önergenin reddi, Aykut Kaya önergesinde önce karar yeter sayısı yokluğu ardından yeniden oylamada ret, Şenol Sunat önergesinde ret ve maddenin kabulü sırasıyla duyuruluyor. Her önerge kendi imzacıları ve işlemiyle ayrı; TİP imzası bu kesitte gösterilmedi.
+
+104 tutanak metin 227000–239000 okundu: 18. maddenin çıkarılmasına ilişkin benzer Yeni Yol ve DEM önergeleri reddedildi; Mehmet Emin Ekmen ve Kezban Konukçu konuşmaları kendilerine aittir. Sonraki önergenin görüşmesi bu kesitte başlar ve devamı açıktır.
