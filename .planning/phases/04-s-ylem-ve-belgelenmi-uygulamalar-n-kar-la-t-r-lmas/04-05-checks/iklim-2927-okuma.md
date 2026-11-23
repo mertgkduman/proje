@@ -160,3 +160,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 430–434 metni tarandı: havza işletmesi, sel riski ve yeraltı depolama önerileriyle kurumlara atıflı geçmiş hedefler. 434 şema görsel incelenmedi. Kurumsal planlar gerçekleşme veya TİP işlemi sayılmadı. 0–434: 435/860 indeks metni veya boşluğu tarandı; görseller ve 425 indeks açık.
 
 2021 raporu indeks 435–439 metni tarandı: komisyonun su hukuku önerileri, arazi toplulaştırması ve yeniden kullanım konusunda kurumlara atıflı geçmiş anlatımlar. Yasal açıklamalar güncel hukuk doğrulaması, öneriler kabul edilmiş kanun veya TİP işlemi olarak yazılmadı. 0–439: 440/860 indeks metni veya boşluğu tarandı; görseller ve 420 indeks açık.
+
+2021 raporu indeks 440–444 metni tarandı: atık suyun yeniden kullanımı hakkında bakanlık ve uzman açıklamaları ile yeraltı suyu yönetimine giriş. 442 başkanın aktarılmış konuşması yüzde 40 derken onu takip eden rapor özeti yüzde 60 diyor; asıl tutanak doğrulanmadan sayı kullanılmadı. Görüşler sahiplerine ait, TİP faaliyeti değildir. 0–444: 445/860 indeks metni veya boşluğu tarandı; görseller ve 415 indeks açık.
