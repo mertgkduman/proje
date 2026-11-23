@@ -88,3 +88,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 250–254 metni tarandı: insan kaynaklı etkiler ve afetlere ilişkin Meteoroloji Genel Müdürlüğü kaynaklı tarihsel arka plan. 251–254 grafikleri görsel olarak okunmadı; raporun sayıları güncel bağımsız doğrulama veya parti eylemi olarak kullanılmadı. 0–254: 255/860 indeks metni veya boşluğu tarandı; görseller ve 605 indeks açık.
 
 2021 raporu indeks 255–259 metni tarandı: hortum, dolu, yıldırım, yangın, çığ ve don başlıklarında raporun atıflı genel arka planı. Grafikler ve sistem görseli incelenmedi; MEUS açıklaması ilgili kurum ve toplantı konuşmacısının anlatımıdır, TİP uygulaması değildir. 0–259: 260/860 indeks metni veya boşluğu tarandı; görseller ve 600 indeks açık.
+
+2021 raporu indeks 260–264 metni tarandı: don, sıcak-soğuk dalgası, sis, heyelan, kum fırtınası ve kuraklık tanımları. 263 metin çıkarımı üst üste tekrarlı; tekil pasaj için özgün görsel incelenmeli. Bu sayfalardaki harita, grafik ve şekiller okunmadı. 0–264: 265/860 indeks metni veya boşluğu tarandı; görseller ve 595 indeks açık.
