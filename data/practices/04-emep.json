@@ -17892,6 +17892,38 @@
         "result": "confirmed",
         "reason": "TBMM ayrıntısındaki soru özeti okundu."
       }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0410-emep-erlau-28709-question-dismissal-p",
+        "version_id": "0410-emep-erlau-28709-question-v1",
+        "exact": "tüm işçileri işten çıkardı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "İmzalı soru",
+        "pdf_page_index": 0,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0410-erlau-28709-explanation",
+        "passage_id": "0410-emep-erlau-28709-question-dismissal-p",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0410-erlau-28709-explanation",
+        "passage_id": "0410-emep-erlau-28709-question-dismissal-p",
+        "checked_at": "2026-11-23T14:36:12+00:00",
+        "result": "confirmed",
+        "reason": "İmzalı soru önergesindeki iddia okundu."
+      }
     }
   ],
   "practice_records": {
@@ -20061,6 +20093,15 @@
         "stage": "action",
         "concrete_basis": "TBMM resmi soru özeti.",
         "limitation": "Özet, dilekçelerin akıbeti veya evrensel yemek uygulaması sonucu göstermez.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0410-erlau-28709-event",
+        "passage_id": "0410-emep-erlau-28709-question-dismissal-p",
+        "supported_point": "Soru, sendikalı işçilerin işten çıkarıldığı iddiasını içerir.",
+        "stage": "action",
+        "concrete_basis": "TBMM imzalı soru metni.",
+        "limitation": "Soru iddianın doğrulandığını veya işe dönüşü göstermez.",
         "epistemic_type": "claim"
       }
     ],
@@ -26675,6 +26716,12 @@
         "passage_id": "0410-emep-school-meal-16207-detail-topic-p",
         "stage": "action",
         "basis_kind": "document"
+      },
+      {
+        "event_id": "0410-erlau-28709-event",
+        "passage_id": "0410-emep-erlau-28709-question-dismissal-p",
+        "stage": "action",
+        "basis_kind": "document"
       }
     ],
     "practice_variant_contract": [
@@ -27162,6 +27209,10 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-erlau-28709-event|0410-emep-erlau-28709-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-erlau-28709-event|0410-emep-erlau-28709-question-dismissal-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",

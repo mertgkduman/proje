@@ -225,14 +225,14 @@
       "subject_kind": "practice_event",
       "subject_id": "0410-erlau-28709-event",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-23T12:25:19+00:00",
+      "reviewed_at": "2026-11-23T14:36:12+00:00",
       "source_version_ids": "[\"0410-emep-erlau-28709-detail-v1\", \"0410-emep-erlau-28709-question-v1\"]",
-      "passage_ids": "[\"0410-emep-erlau-28709-detail-date-p\", \"0410-emep-erlau-28709-detail-number-p\", \"0410-emep-erlau-28709-detail-owner-p\", \"0410-emep-erlau-28709-detail-reply-p\", \"0410-emep-erlau-28709-question-p\"]",
-      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ilk sayfa\"]",
+      "passage_ids": "[\"0410-emep-erlau-28709-detail-date-p\", \"0410-emep-erlau-28709-detail-number-p\", \"0410-emep-erlau-28709-detail-owner-p\", \"0410-emep-erlau-28709-detail-reply-p\", \"0410-emep-erlau-28709-question-dismissal-p\", \"0410-emep-erlau-28709-question-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\", \"İmzalı soru\", \"İmzalı yazılı soru, ilk sayfa\"]",
       "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
-      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez. İşçilerin işe dönüşü de kanıtlanmadı.",
       "result": "reviewed",
-      "reason": "practice_event / 0410-erlau-28709-event için kaynak pasajları okundu."
+      "reason": "practice_event / 0410-erlau-28709-event için kaynak pasajları okundu. Önceki pasajlar ve işten çıkarma iddiasını içeren yeni imzalı soru pasajı yeniden okundu."
     },
     {
       "subject_kind": "practice_event",
@@ -1481,6 +1481,19 @@
       "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-erlau-28709-event|0410-emep-erlau-28709-detail-reply-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-erlau-28709-event|0410-emep-erlau-28709-question-dismissal-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:36:12+00:00",
+      "source_version_ids": "[\"0410-emep-erlau-28709-question-v1\"]",
+      "passage_ids": "[\"0410-emep-erlau-28709-question-dismissal-p\"]",
+      "inspected_sections": "[\"İmzalı soru\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulanması veya işe dönüş sonucu değildir.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-erlau-28709-event|0410-emep-erlau-28709-question-dismissal-p|action için önceki pasajlar ve imzalı soru pasajı yeniden okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -3254,14 +3267,14 @@
       "subject_kind": "practice_relation",
       "subject_id": "0410-erlau-28709-relation",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-23T12:25:19+00:00",
+      "reviewed_at": "2026-11-23T14:36:12+00:00",
       "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-erlau-28709-detail-v1\", \"0410-emep-erlau-28709-question-v1\"]",
-      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-erlau-28709-detail-date-p\", \"0410-emep-erlau-28709-detail-number-p\", \"0410-emep-erlau-28709-detail-owner-p\", \"0410-emep-erlau-28709-detail-reply-p\", \"0410-emep-erlau-28709-question-p\"]",
-      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ilk sayfa\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-erlau-28709-detail-date-p\", \"0410-emep-erlau-28709-detail-number-p\", \"0410-emep-erlau-28709-detail-owner-p\", \"0410-emep-erlau-28709-detail-reply-p\", \"0410-emep-erlau-28709-question-dismissal-p\", \"0410-emep-erlau-28709-question-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı soru\", \"İmzalı yazılı soru, ilk sayfa\"]",
       "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
-      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez. İşçilerin işe dönüşü de kanıtlanmadı.",
       "result": "reviewed",
-      "reason": "practice_relation / 0410-erlau-28709-relation için kaynak pasajları okundu."
+      "reason": "practice_relation / 0410-erlau-28709-relation için kaynak pasajları okundu. Önceki pasajlar ve işten çıkarma iddiasını içeren yeni imzalı soru pasajı yeniden okundu."
     },
     {
       "subject_kind": "practice_relation",
@@ -4047,14 +4060,14 @@
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-erlau-28709-relation",
       "reviewer_kind": "agent",
-      "reviewed_at": "2026-11-23T12:25:19+00:00",
+      "reviewed_at": "2026-11-23T14:36:12+00:00",
       "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-erlau-28709-detail-v1\", \"0410-emep-erlau-28709-question-v1\"]",
-      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-erlau-28709-detail-date-p\", \"0410-emep-erlau-28709-detail-number-p\", \"0410-emep-erlau-28709-detail-owner-p\", \"0410-emep-erlau-28709-detail-reply-p\", \"0410-emep-erlau-28709-question-p\"]",
-      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ilk sayfa\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-erlau-28709-detail-date-p\", \"0410-emep-erlau-28709-detail-number-p\", \"0410-emep-erlau-28709-detail-owner-p\", \"0410-emep-erlau-28709-detail-reply-p\", \"0410-emep-erlau-28709-question-dismissal-p\", \"0410-emep-erlau-28709-question-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı soru\", \"İmzalı yazılı soru, ilk sayfa\"]",
       "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
-      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez. İşçilerin işe dönüşü de kanıtlanmadı.",
       "result": "reviewed",
-      "reason": "practice_relation.explanation_finding_id / 0410-erlau-28709-relation için kaynak pasajları okundu."
+      "reason": "practice_relation.explanation_finding_id / 0410-erlau-28709-relation için kaynak pasajları okundu. Önceki pasajlar ve işten çıkarma iddiasını içeren yeni imzalı soru pasajı yeniden okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -7048,6 +7061,10 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-erlau-28709-event|0410-emep-erlau-28709-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-erlau-28709-event|0410-emep-erlau-28709-question-dismissal-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
