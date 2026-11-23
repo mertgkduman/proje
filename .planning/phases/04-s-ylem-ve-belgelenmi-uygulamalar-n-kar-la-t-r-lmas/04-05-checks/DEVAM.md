@@ -173,3 +173,5 @@ Son ilerleme e7f4f1fc: rapor 0–499 indeks metni/boşluğu tarandı (500/860), 
 Son ilerleme 46bbd72f: rapor 0–529 indeks metni/boşluğu tarandı (530/860), sıradaki 530; 330 indeks ve önceki notlarda belirtilen görseller açık. Kurumların tarihli proje iddiaları, öngörüleri ve tavsiyeleri partiye atfedilmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
 
 Son ilerleme 49de6426: rapor 0–559 indeks metni/boşluğu tarandı (560/860), sıradaki 560; 300 indeks ve önceki notlarda belirtilen görseller açık. 533 aynı yüzdeyi düşük, 287 orta çölleşme riski olarak niteliyor; 548 gövde ve dipnotunda 2015/2021 ile 2 Temmuz/2 Haziran tarih farkları çözülmedi. 555–557 ve 559 görselleri incelenmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme e0e975d9: rapor 0–589 indeks metni/boşluğu tarandı (590/860), sıradaki 590; 270 indeks ve notlarda listelenen görsel/tablolar açık. 563 metin 2002 ölçümünü güncel diye anar; 574 1026 metreyi ayrı bağlamlarda en az/en fazla olarak gösterir, çözülmedi. 582 kendi sanayi suyu rakamlarının kesinliği sınırlılığını belirtir. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
