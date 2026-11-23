@@ -81,3 +81,5 @@ Cumhuriyet 27.06.2025 01:04 (+03) haberinin özgün HTML SHA aafa748fe4ffd56bffb
 104 tutanak metin 287000–299000 okundu: geçici 2. maddeyi çıkarma önergeleri reddi, İlhami Özcan Aygun ve arkadaşlarının tarihleri öne çekme önergesi reddi ve geçici maddenin kabulü ayrı duyuruldu. 19. madde görüşmesi başladı; TİP atfı yapılmadı.
 
 104 tutanak metin 299000–311000 okundu: 19. madde çıkarma ve Yeni Yol değişiklik önergelerinin reddi, daha sonra İYİ Parti ve CHP benzer önerge konuşmalarının başlaması görülür; bunlar TİP işlemi değildir.
+
+104 tutanak metin 311000–323000 okundu: 19. madde benzer önergeleri ret ve madde kabulünden sonra 20. madde için dört aynı mahiyetli önerge görüşmesi başlıyor; imzacı gruplar ayrı listelenmiş, TİP atfı bulunmamıştır.
