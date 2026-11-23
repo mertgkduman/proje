@@ -9,12 +9,12 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 140 | 141 | 62455124 |
-| TİP | 16 | 16 | 62450302 |
-| DEM Parti | 15 | 9 | 62463210 |
+| TİP | 17 | 17 | 62466264 |
+| DEM Parti | 15 | 9 | 62466224 |
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 11 | 7 | 62461211 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 35 | 37 | 62461273 |
+| EMEP | 36 | 38 | 62461291 |
 | Saadet Partisi | 8 | 6 | 62437168 |
 | Demokrat Parti | 11 | 10 | 62466333 |
 
@@ -41,3 +41,5 @@ DEM Parti’nin 7 Ekim fon bilgilendirmesindeki Koçyiğit ve Temelli katkılar�
 DBP dosyasında Diyarbakır’ın 27 Mayıs 2015 otobüs tanıtımı ve il eş başkanının sözlü katkısı iki görünümde doğrulandı. Düzenli sefer başlangıcı ve önceki parti söylemi açık. DBP yerel yönetim raporunun 67 sayfası okundu. [Önizleme makbuzu](../04-09-checks/diyarbakir-cng-v2-62464556.json) [Rapor okuması](../04-09-checks/dbp-local-administration-report-reading.md)
 
 Demokrat Parti’nin 2/3965 dosyası programın geçmişte arşivlenmiş yatırımcı güveni hedefiyle birlikte iki görünümde doğrulandı. 20 Ekim başvurusu, 21 Ekim komisyon sevki ve erişilen «Komisyonda» durumu kaynaklı. Demokrat Parti arşiv programı ile Şiran Sayıştay raporunun sayfa okumaları tamamlandı. [Makbuz](../04-12-checks/fund-3965-62466333.json) [Program okuması](../04-12-checks/dp-program-archive-reading.md) [Şiran okuması](../04-12-checks/siran-local-government-reading.md)
+
+7552’nin aynı Genel Kurul olayında TİP’in üç ret oyu, EMEP’in bir ret oyu ve Bayhan’ın «Katılmadı» kaydı ayrı parti kaynaklarıyla doğrulandı. DEM Parti’nin 7 Ekim olay başlığı ve kapsamı aynı tutanağa dayalı ortak alanlarla uyumlu. [TİP makbuzu](../04-05-checks/iklim-62466264.json) [EMEP makbuzu](../04-10-checks/climate-attribution-fixed-union-62461291-receipt.json) [DEM makbuzu](../04-06-checks/dem-fund-align-62466224.json)
