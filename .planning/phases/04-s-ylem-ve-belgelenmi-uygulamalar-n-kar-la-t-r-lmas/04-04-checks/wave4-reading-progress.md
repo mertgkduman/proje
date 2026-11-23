@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 142 | 141 | 62483765 |
 | TİP | 20 | 19 | 62483737 |
-| DEM Parti | 22 | 9 | 62482438 |
+| DEM Parti | 27 | 9 | 62484657 |
 | İYİ Parti | 14 | 10 | 62484676 |
 | Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 18 | 7 | 62483813 |
@@ -117,3 +117,7 @@ Demokrat Parti’nin 2/4012 internet düzenlemesi teklifi iki görünümde doğr
 EMEP’in 7/35768 MESEM sorusu ve Bakanlık yanıtı iki görünümde doğrulandı. Yanıttaki genel politika açıklaması, sorunun istediği okul ve işyeri düzeyinde sonucu tek başına vermiyor. [EMEP makbuzu](../04-10-checks/mesem-35768-62482891-receipt.json)
 
 İYİ Parti’nin 2/1019 ve 10/4625 kayıtları iki görünümde doğrulandı. 2018 teklifi Ergun ve Türkkan’ın 17 Eylül imzalı yazısı. TBMM geliş günü bir sicilde 17 Eylül, 16 Ekim tutanağındaki Gelen Kâğıtlar bölümünde 14 Eylül. Ergun’un 20 Ekim 2026’da 10/4625 için açıkladığı grup desteği ayrı işlem ve İYİ Parti katkısı. [Doğrulama makbuzu](../04-07-checks/ergun-staj-62484676.json)
+
+DEM Parti’nin iklim teklifi için ilk beş madde çıkarma önergesi ve her birinin komisyon reddi iki görünümde doğrulandı. İmza pasajları ve aynı toplantıdaki grup açıklamaları bağlı. Sonraki 198 sayılı şerh ve 6–20. maddeler için işlem zinciri araştırmaya açık. [Doğrulama makbuzu](../04-06-checks/dem-4114-five-v4-62484657.json)
+
+Dokuz çalışma çiftinin yalıtılmış yapısal birleştirmesi 316 girdi olayından 312 olay ve 275 ilişki üretti. Şık Makas ile 10/4603 ve 10/4625 adayları kendi olaylarına bağlandı. Kalan 14 aday açık. Çıktı iki girdi sırasıyla bayt düzeyinde yeniden üretildi. Kapsam kapanışı yok. [Yapısal deneme](wave4-merge-rehearsal-01.json)
