@@ -27,3 +27,5 @@ PDF indeks 35–39 okundu: İYİ Parti adına Bedri Yaşar konuşması sona erer
 PDF indeks 40–44 okundu: MHP İsmail Faruk Aksu konuşması biter, AK Parti İbrahim Aydemir grup konuşması ve diğer vekillerin karşılıklı müdahaleleri başlar. Kimlikler ayrıldı, iddialar doğrulanmış olgu diye kullanılmadı.
 
 PDF indeks 45–49 okundu: AK Parti İbrahim Aydemir grup konuşması biter; CHP Müzeyyen Şevkin ve HDP Ali Kenanoğlu konuşmaları başlar. Amasra hakkındaki iddialar kendi sahiplerine atıflıdır.
+
+PDF indeks 50–54 okundu: HDP Ali Kenanoğlu konuşmasını bitirir; İYİ İbrahim Halil Oral Akkuyu mülkiyet/atık soruları, MHP Baki Şimşek Mersin ve Akkuyu yerleşim önerileri, AK Parti Nilgün Ök enerji politikaları üzerine konuşur. Her görüş kendi aktörüne aittir.
