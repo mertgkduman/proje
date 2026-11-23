@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0406-dem-fund-july-cqdrw4qp/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0406-dem-fund-july-cqdrw4qp/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0406-dem-fund-july-cqdrw4qp/src/uygulamalar.py", line 1379, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0406-dem-fund-july-cqdrw4qp/src/uygulamalar.py", line 1311, in _load_practice_copy
+    validate_practices(data)
+  File "/tmp/gsd-0406-dem-fund-july-cqdrw4qp/src/uygulamalar.py", line 938, in validate_practices
+    finding = check_finding(x['finding_id'], x['party_id'])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0406-dem-fund-july-cqdrw4qp/src/uygulamalar.py", line 832, in check_finding
+    raise ValueError('Partiyle eşleşen doğrulanmış bulgu gerekli')
+ValueError: Partiyle eşleşen doğrulanmış bulgu gerekli
