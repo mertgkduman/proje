@@ -278,3 +278,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 725–729 metni: CHP üyeleri şerhindeki enerji politikası, kömür santralleri, izinler ve geçmiş yargı/işlem anlatımı okunmuştur; iddialar ve hukuki yorumlar imzacılara atfedilir, bağımsız incelenmiş güncel durum veya TİP tutumu değildir. 725 ve 726 tablolar görsel okunmadı. Sonraki 730; metin taraması 730/860, görseller ve 130 indeks açık.
 
 - PDF indeks 730–734 metni: CHP üyelerinin 2021 santral izin iddiaları, Hunutlu analizine ve adil dönüşüm/biokütleye ilişkin değerlendirmeleri okundu. Tesislerin 2026 durumu, yargısal sonuçlar ve TİP görüşü çıkarılmadı; üçüncü taraf senaryoları kendilerine atfedildi. Sonraki 735; metin taraması 735/860, görseller ve 125 indeks açık.
+
+- PDF indeks 735–739 metni: CHP üyelerinin biyokütle, enerji ve su politikası eleştirileri ile 2021 saha değerlendirmeleri okunmuştur; kaynaklı görüşler TİP adına veya bağımsız doğrulanmış olgu olarak sunulmadı. 737–738 yaklaşık 1,3 milyon/9,5 milyon bina sayılarını yüzde 3,2 diye ilişkilendirir; aritmetik uyumsuzluğu çözülmedi. Sonraki 740; metin taraması 740/860, görseller ve 120 indeks açık.
