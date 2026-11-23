@@ -150,3 +150,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 405–409 metni tarandı: havza ölçeğinde farklı dönem ve RCP8.5 senaryosuna dayalı su potansiyeli tabloları. Tablo sütunları ve sürekliliği görsel doğrulanmadı; tahminler gerçekleşmiş veri veya TİP politikası sayılmadı. 0–409: 410/860 indeks metni veya boşluğu tarandı; görseller ve 450 indeks açık.
 
 2021 raporu indeks 410–414 metni tarandı: senaryo tabloları, su kullanımı projeksiyonları ve DSİ sunumu ile tarımsal sulama önerileri. 410–412 tablo düzeni görsel incelenmedi; projeksiyon ve öneriler gerçekleşme ya da TİP işlemi olarak aktarılmadı. 0–414: 415/860 indeks metni veya boşluğu tarandı; görseller ve 445 indeks açık.
+
+2021 raporu indeks 415–419 metni tarandı: sulama varsayımları ve çiftlik rezervuarı önerileri; 417–419 yalnız fotoğraf başlıklarıdır, fotoğraflar görsel incelenmedi. Öneriler gerçekleşme veya TİP politikası sayılmadı. 0–419: 420/860 indeks metni veya boşluğu tarandı; görseller ve 440 indeks açık.
