@@ -37,3 +37,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 107–114 görsel okundu. Üçüncü şerh indeks 109 Hasan Toktaş (Bursa) adıyla; dördüncü şerh indeks 114 Doğan Demir (İstanbul) adıyla sona erer. Şerhlerdeki reddedilen önerge anlatımları bu imza ve kaynak sınırlarıyla ele alınmalı, ayrı işlem kanıtı araştırılmalıdır. İndeks 28–114 tüm şerhler görsel okundu; raporun 4–19 ve 115–142. indeksleri henüz okunmadı.
 
 İndeks 4–19 metin katmanından okundu: imzacı ve katılma yazıları, genel gerekçe ve madde gerekçeleri teklif sahiplerinin belgesidir; TİP politika beyanı değildir. Bu bölümde açıklananlar teklif gerekçeleridir, uygulanmış sonuç varsayılmadı.
+
+İndeks 115–120 metin katmanından okundu. Teklif ve komisyonca kabul edilen metin iki sütunda verildiğinden çıkarılan metinler iç içe görünür; sütun atfı gereken alıntılar için sayfa görseli ayrıca doğrulanmalı.
