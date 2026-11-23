@@ -1,0 +1,9 @@
+Staged 176 original, readable and view paths; package 41dcecda6759d881634fa06bb764ff73ebc76863a7176b9fe6823a95f986a6a2; review 4ff6002d431d89d1be21dd8af075a32780b1ed0603e04cfbeb7471da83f48613
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/validate-2026-congress-dem.py", line 24, in <module>
+    mod.main(package, review, 'dem-2026-congress', '0406-dem-2026-congress-event', '0406-2025-224-relation', '')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 123, in main
+    require(any(r['id']==event_id for r in snapshot['practice_event']), f'event missing: {event_id}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: event missing: 0406-dem-2026-congress-event
