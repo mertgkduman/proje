@@ -13,3 +13,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 35–40 görsel olarak okundu: şerhte adil geçiş, çalışanlar ve teklifin eleştirisi sürüyor; 40. indekste CHP adına açık ifade bulunuyor. Önceki sayfaların nihai imzaları görülmediği için kapsamı geriye doğru genellenmedi; TİP pozisyonu atfedilmedi.
 
 İndeks 41–46 görsel okundu: teklifin eleştirisi ile 2021 araştırma komisyonu raporunun tavsiyelerinden aktarım devam ediyor. Sonuncusu bu şerhi veya eski komisyon raporunu TİP önerisi yapmaz; kaynak aidiyeti ve kalan sayfalar açıktır.
+
+İndeks 47–52 görsel okundu: önce 2021 rapor tavsiyesi aktarımı biter, ardından teklifin 1, 2, 3, 5 ve 6. maddeleri hakkındaki eleştiriler başlar. İmza henüz görülmedi; içerik TİP görüşü olarak sunulmadı.
