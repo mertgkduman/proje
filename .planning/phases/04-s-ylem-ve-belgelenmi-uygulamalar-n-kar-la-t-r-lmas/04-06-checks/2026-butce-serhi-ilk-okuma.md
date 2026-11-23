@@ -75,3 +75,5 @@ PDF 129–132: bölgesel sağlık personeli, eğitim ve kamu yatırımına iliş
 PDF 133–136: gelir/işsizlik verilerine atıflı bölgesel yorumlar, mevsimlik emek, yerel kooperatif önerileri ve ekolojik etkiler hakkındaki görüşler okunmuştur. Bölgesel ölçüler, dış kaynaklar ve siyasi nedensellik iddiaları bağımsız doğrulanmamıştır. 0–136 toplam 137/160, 23 açık.
 
 PDF 137–140: maden ruhsatları, orman, baraj ve çatışmanın ekonomik maliyeti üzerine şerh anlatımları okundu. Aktif ruhsat sayısı, hedeflenen yeni ruhsat ve fiilî faaliyet farklıdır; 1,5/2/4 trilyon dolar olarak aktarılan dönem ve yöntemleri belirsiz tahminler birbirine eşitlenmedi. 0–140 toplam 141/160, 19 açık.
+
+PDF 141–144: planlanan kurum ödenekleri, Kuzey İrlanda/Bask karşılaştırmaları ve demokratik ekonomi yaklaşımı okunmuştur. Ülkeler arası büyüme ve işsizlik karşılaştırmalarının dönem ve yöntemi dış kaynaklarla doğrulanmadı; 2026 ödenekleri gerçekleşmiş harcamalar değildir. 0–144 toplam 145/160, 15 açık.
