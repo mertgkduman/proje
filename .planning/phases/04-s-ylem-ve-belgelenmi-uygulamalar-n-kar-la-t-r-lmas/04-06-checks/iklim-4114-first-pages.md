@@ -57,3 +57,5 @@ Okuma kapsamı: PDF 0–30 ve 32–56 bu notta; PDF 31 önceki ayrı kaynak okum
 198 rapor PDF 70–73 görselleri okundu: şerh, sınırda karbon düzenlemesi ve karbon ticaretini, yenilenebilir enerji yer seçimini, yaptırımların caydırıcılığını ve düzenleyici kurumların bağımsızlığını eleştiriyor. Bunlar imzacıların atıflı değerlendirmeleridir. Görsel okuma 66–73 ve 94; 74–93 henüz bu çalışmada okunmadı.
 
 198 rapor PDF 74–77 görselleri okundu: şerh kömürden çıkış hedefi, fosil yakıt teşvikleri, nükleer enerji ve kent politikalarını değerlendiriyor. 2021 atıf ve rakamlar şerhin anlatımıdır; özgün çalışmalar ayrıca incelenmeden doğrulanmış hesap olarak sunulmaz. Görsel okuma 66–77 ve 94; 78–93 açık.
+
+198 rapor PDF 78–81 görselleri okundu: şerh kentleşme, halk sağlığı, endüstriyel hayvancılık ve katılımı ele alıyor; THHP ve Avrupa Komisyonu atıfları içeriyor. 68.440 ölüm sayısı 2022 yılı için şerhte atfediliyor; 4114 toplantısında temsilci aynı sayıyı bir yıl için belirtmiş, bu iki anlatım dönem ve kaynakları ayrıca incelenmeden kesinleştirilmez. Görsel okuma 66–81 ve 94; 82–93 açık.
