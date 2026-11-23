@@ -340,3 +340,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 762 (basılı 745) görsel okundu: 44.449 tondan 76.867 tona yüzde 42 artış ifadesi gerçekten basılıdır. Bu iki sayı yaklaşık yüzde 72,9 artış verir; farklı kapsam olasılığı veya asıl istatistik incelenmedi.
 
 - PDF indeks 746 (basılı 729) görsel okundu: aynı cümlede 133 milyon ton ile yani 2 milyar tondan fazla ifadeleri gerçekten basılı. Nicelik ilişkisi asıl MAPEG kaynağına gidilmeden çözülmedi.
+
+- PDF indeks 592 (basılı 575) görsel okundu: Tolunay toplantısı gövdede 13 Nisan 2021, 515 dipnotunda 13 Ocak 2021 basılı; ayrım çıkarım hatası değil. Doğru tarih için tutanak gerekli.
