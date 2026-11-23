@@ -308,3 +308,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 800–804 metni: CHP üyelerinin şerhi imzaları ile sona eriyor; 801 Oya Ersoy ve Hüseyin Kaçmaz muhalefet şerhi başlıyor. Bu ayrı metnin iklim rejimi, sermaye ve 2015 beyanı konusundaki yorumları iki imzacıya aittir; TİP görüşüne dönüşmez. Sonraki 805; metin taraması 805/860, görseller ve 55 indeks açık.
 
 - PDF indeks 805–809 metni: Ersoy ve Kaçmaz şerhinde kömür santralleri ve izin/teşvik iddiaları tarihli kaynak sahipleriyle birlikte kaydedildi; bağımsız doğrulanmış güncel durum veya TİP görüşü değildir. 808 İtalya için aynı listede hem 2023 hem 2025 kapatma hedefi yazıyor, fark çözülmedi. Sonraki 810; metin taraması 810/860, görseller ve 50 indeks açık.
+
+- PDF indeks 810–814 metni: Ersoy ve Kaçmaz şerhinde kömür, fosil yakıtlar ve plastik atıklar hakkındaki tarihli veriler, rapor aktarımları ve görüşler okundu. Siyasi ve sağlık iddiaları imzacılara/kaynaklarına aittir, bağımsız doğrulama ya da TİP görüşü değildir. Sonraki 815; metin taraması 815/860, görseller ve 45 indeks açık.
