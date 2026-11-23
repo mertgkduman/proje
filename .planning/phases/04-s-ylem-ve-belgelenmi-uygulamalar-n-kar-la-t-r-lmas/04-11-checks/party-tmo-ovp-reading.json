@@ -1,0 +1,62 @@
+{
+  "processed_at": "2026-11-23T13:28:53.295467+00:00",
+  "reviewer_kind": "agent",
+  "source_records": [
+    {
+      "url": "https://www.tarimorman.gov.tr/Haber/7092/2026-Yili-Hububat-Alim-Ve-Satis-Fiyatlari",
+      "publisher": "Tarım ve Orman Bakanlığı",
+      "document_date": "2026-06-02",
+      "sha256": "75bc39604242a23704ec24bb4b58875d381b52791371533f5d0556e54cb2b347",
+      "bytes": 235280,
+      "original_path": "data/practices/sources/saadet/objects/75bc39604242a23704ec24bb4b58875d381b52791371533f5d0556e54cb2b347/original.html.bin",
+      "accessed_at": "2026-11-23T13:23:51.451372+00:00"
+    },
+    {
+      "url": "https://www.tarimorman.gov.tr/Haber/6697/",
+      "publisher": "Tarım ve Orman Bakanlığı",
+      "document_date": "2025-08-05",
+      "sha256": "675082fb11252400847d6fe0203b7e19ef654c4c75d54c05d314b829fcb794eb",
+      "bytes": 233322,
+      "original_path": "data/practices/sources/saadet/objects/675082fb11252400847d6fe0203b7e19ef654c4c75d54c05d314b829fcb794eb/original.html.bin",
+      "accessed_at": "2026-11-23T13:23:52.186374+00:00"
+    },
+    {
+      "url": "https://www.tarimorman.gov.tr/Haber/7210/",
+      "publisher": "Tarım ve Orman Bakanlığı",
+      "document_date": "2026-08-06",
+      "sha256": "acd8949c9f8e58b3a97fd69c91868caa459deabca4091b43e2dda641259c92d6",
+      "bytes": 233053,
+      "original_path": "data/practices/sources/saadet/objects/acd8949c9f8e58b3a97fd69c91868caa459deabca4091b43e2dda641259c92d6/original.html.bin",
+      "accessed_at": "2026-11-23T13:23:51.094370+00:00"
+    },
+    {
+      "url": "https://www.sbb.gov.tr/wp-content/uploads/2025/09/Orta-Vadeli-Program_2026-2028-Sunumu.pdf",
+      "publisher": "Cumhurbaşkanı Yardımcılığı",
+      "document_date": "2025-09-08",
+      "sha256": "c61db6555a6f8cdb2b9e32ab7ddf8c43f56b4ea8344d4384a0d804d69f761335",
+      "bytes": 1672306,
+      "original_path": "data/practices/sources/saadet/objects/c61db6555a6f8cdb2b9e32ab7ddf8c43f56b4ea8344d4384a0d804d69f761335/original.pdf",
+      "accessed_at": "2026-11-23T13:26:00.295789+00:00"
+    }
+  ],
+  "closure_refs": [],
+  "readings": {
+    "hububat": "2 Haziran duyurusunda 2. grup alım fiyatları buğday için iki sınıfta da 16.500 TL/ton ve arpa için 12.750 TL/ton. Destekli tutar ve satış fiyatı ayrı. 611 sayılı parti yayınındaki 16.350, 17.000 ve 13.520 ile fark sırasıyla -150, +500 ve +770 TL/ton. Aynı ürün grubumu ve son revizyon hakkında ayrı belge araştırılıyor.",
+    "findik": "Yüzde 50 sağlam iç fındık için Giresun 200→255 TL/kg, nominal %27,5. Levant 195→250 TL/kg, nominal %28,2051. Kalite, girdi fiyatı veya fiilî ödeme ayrı.",
+    "ovp": "Sunumun 19. slaytı 2026 program TÜFE değişimini %16 veriyor. Resmî OVP tablosu Aralık yıl sonu olduğunu belirtiyor.",
+    "tuik": "3 Ağustos 2026 58297 bülteni web metninde Temmuz yıllık %31,75 ve aylık %1,78. Doğrudan PDF/istatistik veri gövdesi alınamadı. HTTP gövdesi uygulama kabuğu, özgün bulgu kaydına bağlanmadı."
+  },
+  "source_access": [
+    {
+      "url": "https://veriportali.tuik.gov.tr/tr/press/58297",
+      "state": "web_text_examined",
+      "raw_data_state": "direct_shell_only",
+      "direct_shell_sha256": "af88f08963edd4aad9ef37aacd11efc4487d52c9a244c68f733194fc7c5da484"
+    },
+    {
+      "url": "https://www.sbb.gov.tr/wp-content/uploads/2025/09/Orta-Vadeli-Program-2026-2028.pdf",
+      "state": "web_table_examined",
+      "raw_data_state": "direct_download_interrupted"
+    }
+  ]
+}
