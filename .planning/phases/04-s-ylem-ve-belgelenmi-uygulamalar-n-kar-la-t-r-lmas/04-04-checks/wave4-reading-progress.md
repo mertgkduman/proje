@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 15 | 10 | 62481322 |
 | DBP | 12 | 7 | 62481629 |
 | EMEP | 47 | 49 | 62479310 |
-| Saadet Partisi | 12 | 12 | 62479681 |
+| Saadet Partisi | 13 | 12 | 62482921 |
 | Demokrat Parti | 17 | 16 | 62478768 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -101,3 +101,5 @@ Yeni Yol’un staj sigortası kayıtları iki görünümde doğrulandı. 2/3778�
 TİP’in 2/3864 elektrik ve temel hizmet desteği teklifi iki görünümde doğrulandı. Dokuz sayfalık imzalı metin ile dönem sonu hükümsüzlük kaydı ayrı dayanaklarda. Hükümsüzlüğün kesin işlem günü açık. 2022 yazılı soru ve 2023 cevabı kendi dosyasında. [Doğrulama makbuzu](../04-05-checks/fatura3864-62481718.json)
 
 Mehmet Zeki İrmez’in 20 Ekim’de 10/4625 gündemindeki DEM Parti Grup katkısı doğrulandı. Meclis araştırması için yaptığı çağrı sözlü katkı. Esas dosyası ve aynı gün reddedilen ön görüşme işlemi Yeni Yol kaydıyla aynı olaya bağlanabilir. İsimli oy ve önceki aynı kapsamdaki DEM Parti söylemi açık. [Doğrulama makbuzu](../04-06-checks/dem-staj-agenda-v2-62482438.json)
+
+Saadet Partisi’nin Yıldırım 10. Olağan İlçe Kongresi iki görünümde doğrulandı. 27 Eylül ön duyurusu ve aynı gün çıkan haberler kongreyi ve Nuri Keçeli’nin yeniden seçildiğini kaynaklıyor. İmzalı oy sayımı ve uygulanabilir tüzük nüshası araştırmaya açık. [Doğrulama makbuzu](../04-11-checks/yildirim-congress-62482921.json) [Kaynak okuması](../04-11-checks/yildirim-congress-reading.md)
