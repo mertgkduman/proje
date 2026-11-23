@@ -53,3 +53,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 Özgün teklif indeks 18–25 metin katmanından okundu; 9–20 ve geçici maddelerin gerekçeleri burada tamamlanır. Metin tanıma hataları doğrudan alıntıda görsel denetimi gerektirir.
 
 Özgün teklif indeks 26–33 metin katmanından okundu; 1–10 maddeleri başlar. Metin tanıma hataları varsa sayfa görseli gerekir; özgün teklif ile komisyon değişikliği ayrı tutulur.
+
+Özgün teklif indeks 34–41 metin katmanından okundu; 10–20 ve geçici maddeler sonlanır. Böylece 42 sayfanın 0–9 indeksleri görsel, 10–41 indeksleri metin katmanı üzerinden okundu; kimi el yazısı imzalar ve tanıma bozuklukları kesinleştirilmemiştir. Bu, tüm TİP araştırması veya kapsamı tamamlandı demek değildir.
