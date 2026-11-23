@@ -2,14 +2,17 @@
 
 from hashlib import sha256
 import json
+import os
 from pathlib import Path
 import subprocess
 
 from uygulama_birlestirme import _json, merge_packages
 
 here = Path(__file__).resolve().parent
-receipt = json.loads((here/'wave4-merge-rehearsal-01.json').read_bytes())
-decision_bytes = (here/'wave4-merge-rehearsal-01-decisions.json').read_bytes()
+number = os.environ.get('GSD0404_REHEARSAL_NUMBER', '01')
+assert number in {'01', '02'}
+receipt = json.loads((here / f'wave4-merge-rehearsal-{number}.json').read_bytes())
+decision_bytes = (here / f'wave4-merge-rehearsal-{number}-decisions.json').read_bytes()
 data = Path('data')
 inventory = json.loads((data/'practices/04-inventory.json').read_bytes())
 base = json.loads((data/'releases'/inventory['base_release']/'records.json').read_bytes())

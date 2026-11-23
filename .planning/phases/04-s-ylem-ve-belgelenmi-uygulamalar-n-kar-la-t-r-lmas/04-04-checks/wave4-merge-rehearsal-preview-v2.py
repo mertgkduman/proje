@@ -23,6 +23,7 @@ decisions = exercise['decision_bytes']
 inventory = exercise['inventory']
 base = exercise['base']
 outcome = exercise['first']
+rehearsal = exercise['receipt']
 data = exercise['data']
 payload = outcome['payload']
 records = payload['practice_records']
@@ -97,18 +98,49 @@ assert all(row in saved['practice_source_party'] for row in grants)
 with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',uri=True) as db:
     assert db.execute('PRAGMA foreign_key_check').fetchall()==[]
     assert db.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
+    assert db.execute('SELECT count(*) FROM practice_event').fetchone()[0] == rehearsal['merged_events']
+    assert db.execute('SELECT count(*) FROM practice_relation').fetchone()[0] == rehearsal['merged_relations']
+    assert db.execute('SELECT count(*) FROM practice_merge_origin WHERE origin_kind=?', ('review_origins',)).fetchone()[0] == rehearsal['review_origins']
     for key,(eid,parties) in joined.items():
         rows = db.execute('SELECT id FROM practice_event WHERE common_event_key=?',(key,)).fetchall()
         assert rows==[(eid,)]
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?',(eid,))} <= parties
         assert len(db.execute('SELECT 1 FROM practice_event_alias WHERE decision_id=?',(key,)).fetchall())==len(parties)
+    if exercise['number'] == '02':
+        november = {
+            'tbmm-28-5-012-yeni-yol-genel-gorusme-fon-gundem',
+            'tbmm-28-5-012-10-4961-gundem',
+            'tbmm-28-5-012-yeni-parti-fon-gundem-299',
+        }
+        records_by_key = dict(db.execute(
+            'SELECT common_event_key,id FROM practice_event WHERE common_event_key LIKE ?',
+            ('tbmm-28-5-012-%',)))
+        assert november <= records_by_key.keys()
+        assert len({records_by_key[key] for key in november}) == 3
+        for key in november & joined.keys():
+            eid, parties = joined[key]
+            assert parties == {'yeni-parti','iyi','yeni-yol'}
+            contributions = db.execute(
+                'SELECT party_id,actor_id,authority_passage_id FROM practice_contribution WHERE event_id=?', (eid,)
+            ).fetchall()
+            assert {row[0] for row in contributions} == parties
+            assert len(contributions) == len({row[1] for row in contributions}) == len({row[2] for row in contributions}) == 3
 page = (release/'index.html').read_text()
 for r in records['practice_relation']:
     for view in ('party','comparison'):
         target=f'{view}-practice-{r["id"]}'
         assert page.count(f'id="{target}"')==1 and f'href="#{target}"' in page,target
+active_candidates = {row['id']: row['state'] for row in saved.get('practice_candidate', [])}
+by_time = sorted(saved.get('practice_candidate_revision', []), key=lambda row: row['recorded_at'])
+for row in by_time:
+    active_candidates[row['candidate_id']] = row['state']
+for identity, state in active_candidates.items():
+    if state == 'unmatched':
+        for view in ('party', 'comparison'):
+            target = f'{view}-unmatched-{identity}'
+            assert page.count(f'id="{target}"') == 1 and f'href="#{target}"' in page, target
 assert sha256(pointer.read_bytes()).hexdigest()==before
-result = dict(job=job,preview=str(release.resolve()),manifest_sha256=sha256((release/'manifest.json').read_bytes()).hexdigest(),
+result = dict(job=job,rehearsal=exercise['number'],active_unmatched=sum(state=='unmatched' for state in active_candidates.values()),preview=str(release.resolve()),manifest_sha256=sha256((release/'manifest.json').read_bytes()).hexdigest(),
               events=len(records['practice_event']),relations=len(records['practice_relation']),
               source_permissions=len(grants),shared_keys=sorted(joined),canonical_pointer_sha256=before,
               closures=len(records['practice_closure']))
