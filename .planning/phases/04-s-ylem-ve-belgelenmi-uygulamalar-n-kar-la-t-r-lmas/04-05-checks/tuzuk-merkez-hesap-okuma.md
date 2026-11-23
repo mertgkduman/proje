@@ -17,3 +17,5 @@ Basılı 28. sayfadaki (sıfır-indeks 29) 7.2 her kademedeki parti organların�
 Seçimlere ilişkin 7.1 bölümü basılı 27–28. sayfalarda sona erer; okunan bu bölümde adaylık, oy ve yeterlilik hükümleri vardır, ayrıca bir seçim itiraz usulü açıkça görülmedi. Bu yalnız belirtilen bölüm ve sürümle sınırlıdır; diğer hükümler, yönetmelikler, başka tüzük sürümleri ve somut itirazlar incelenmeden böyle bir usulün bulunmadığı sonucuna varılmaz.
 
 Basılı 19. sayfa 4.4, kongre ve konferansı temel başlık görüşlerinin tüm üyelerin katılımıyla oluşturulduğu organlar olarak tanımlar. Bu genel katılım hükmü her üyenin kongre oturumunda bizzat konuşma süresi ya da söz hakkını tek başına düzenlemez; kongre yönetmeliği ve somut oturum örnekleri ayrıca araştırılmalıdır.
+
+Basılı 18–19. sayfa 4.4'te bütün organlarda üyelere ifade özgürlüğü ve organ kararlarına karşı ilgili organ ya da üyelerin üst organa itirazı düzenlenir; alınan kararların uygulanmasında birlik vurgusu da aynı bağlamda yer alır. Bu kurallar somut bir itirazın yapıldığı veya sonuca ulaştığı anlamına gelmez. Farklı kaynak sürümleri ve dönemler ayrıca açık tutulur.
