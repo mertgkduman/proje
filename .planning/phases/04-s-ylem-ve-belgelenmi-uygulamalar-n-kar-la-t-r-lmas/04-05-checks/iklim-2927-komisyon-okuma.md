@@ -71,3 +71,5 @@ Cumhuriyet 27.06.2025 01:04 (+03) haberinin özgün HTML SHA aafa748fe4ffd56bffb
 104 tutanak metin 227000–239000 okundu: 18. maddenin çıkarılmasına ilişkin benzer Yeni Yol ve DEM önergeleri reddedildi; Mehmet Emin Ekmen ve Kezban Konukçu konuşmaları kendilerine aittir. Sonraki önergenin görüşmesi bu kesitte başlar ve devamı açıktır.
 
 104 tutanak metin 239000–251000 okundu: iki ayrı 18. madde önergesinin reddi ve maddenin kabulü duyuruldu; Gülcan Kış ve Adnan Şefik Çirkin konuşmaları kendilerine aittir. Geçici 1. madde önergeleri görüşmesi başlar, devamı açık.
+
+104 tutanak metin 251000–263000 okundu: geçici 1. maddenin çıkarılması için benzer Yeni Yol ve DEM önergelerinin reddi duyuruldu; Medeni Yılmaz ve Nevroz Uysal Aslan konuşmaları kendi görüşleridir. Diğer önerge görüşmesi devam ediyor.
