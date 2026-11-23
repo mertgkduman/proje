@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 12 | 9 | 62481667 |
 | Yeni Yol | 13 | 9 | 62477835 |
 | DBP | 12 | 7 | 62481629 |
-| EMEP | 45 | 47 | 62477844 |
+| EMEP | 47 | 49 | 62479310 |
 | Saadet Partisi | 12 | 12 | 62479681 |
 | Demokrat Parti | 17 | 16 | 62478768 |
 
@@ -93,3 +93,5 @@ EMEP’in Ankara’daki NATO zirvesi protesto yasağına karşı dava girişimi 
 DBP için 10 Mart 2016 tarihli İHD sığınma evi raporu iki görünümde doğrulandı. İHD’nin 17 görüşmesi, 2014 yerel seçim sonuçları ve DBP’nin 2017 derlemesi ayrı kaynaklarda. Belediye hizmetinin açılış tarihi ve parti katkısı araştırmaya açık. [Doğrulama makbuzu](../04-09-checks/siginak-62481629.json) [Kaynak okuması](../04-09-checks/diyarbakir-siginma-ihd-reading.json)
 
 İYİ Parti’nin 14 Ekim 5. madde önergesi iki görünümde doğrulandı. Taş ve Usta’nın imzalı metninde Kurul görevlileri, Usta’nın açıklamasında şirket yönetim kurulu ödemeleri yer alıyor. Önerge reddedildi. Sonraki başka önerge ve 5. maddenin kabulü ayrı işlemler. [Doğrulama makbuzu](../04-07-checks/fund-commission-art5-62481667.json) [Kaynak okuması](../04-07-checks/fund-commission-art5-reading.md)
+
+EMEP’in TÜPRAŞ denetimine ilişkin 7/36753 ve 7/36769 yazılı soruları iki görünümde doğrulandı. Çalışma Bakanlığının 7 Eylül 2026 tarihli cevabı ile Enerji Bakanlığının 22 Aralık 2025 tarihli cevabı kendi soru dosyalarına bağlı. Yanıtlarda tesis bazında fiilî görevlendirme sayıları açık. [Doğrulama makbuzu](../04-10-checks/tupras-norm-62479310-receipt.json)
