@@ -9,3 +9,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 28–34 için metin çıkarımı yalnızca sayfa üstbilgisi verdi. İndeks 28 görsel olarak okundu: muhalefet şerhi yasama süreçlerine katılım, hesap verebilirlik ve iktidarın yasama yaklaşımına eleştiri içeriyor; bu sayfada yazar/imza görünmediğinden herhangi bir partiye veya kişiye atfedilmedi. İndeks 29–34 ve devamındaki taranmış şerhler görsel okuma kuyruğundadır.
 
 İndeks 29–34 ayrıca görsel olarak okundu. Aynı şerhin iklim krizi, fosil yakıtlar, iklim adaleti ve sosyal eşitsizlik hakkındaki değerlendirmeleri sürüyor. İmza ve aidiyet bu sayfalarda da görünmedi; iddialar yazarlarına atfedilmeli, kaynağın hiçbir kısmı TİP görüşü sayılmamalıdır. İmza tespiti için devam sayfaları bekliyor.
+
+İndeks 35–40 görsel olarak okundu: şerhte adil geçiş, çalışanlar ve teklifin eleştirisi sürüyor; 40. indekste CHP adına açık ifade bulunuyor. Önceki sayfaların nihai imzaları görülmediği için kapsamı geriye doğru genellenmedi; TİP pozisyonu atfedilmedi.
