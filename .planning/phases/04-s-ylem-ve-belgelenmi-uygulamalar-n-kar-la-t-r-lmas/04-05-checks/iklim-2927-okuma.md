@@ -294,3 +294,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 765–769 metni: CHP üyelerinin sağlık ve eğitim şerhi ile meslek örgütleri/HEAL aktarımı okundu; tıbbi iddialar bağımsız araştırma olarak doğrulanmadı, TİP beyanı sayılmadı. 769 görsel grafik/tablo varsa ayrıca görülmedi. Sonraki 770; metin taraması 770/860, görseller ve 90 indeks açık.
 
 - PDF indeks 770–774 metni: CHP şerhinde eğitim, tarım, gıda ve WWF aktarımı okundu; tarihli sayılar, sağlık/beslenme genellemeleri ve öneriler kaynaklarına atfedilir, TİP görüşü veya bağımsız bulgu sayılmaz. Sonraki 775; metin taraması 775/860, görseller ve 85 indeks açık.
+
+- PDF indeks 775–779 metni: CHP şerhinde agroekoloji ve Paris Anlaşması tartışmaları okundu. 779 eski yüzde 21 beyanının mutlak değil referans senaryosuna göre artıştan azaltım olduğunu açıklar; 600 indeksindeki eksik bağlam tamamlanır, güncel hedef olarak kullanılmaz. Şerhteki model eleştirileri imzacılara aittir. Sonraki 780; metin taraması 780/860, görseller ve 80 indeks açık.
