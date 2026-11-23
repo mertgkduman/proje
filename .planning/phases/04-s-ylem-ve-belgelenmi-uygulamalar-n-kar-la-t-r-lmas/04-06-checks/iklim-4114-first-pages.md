@@ -32,3 +32,5 @@ Bu metin seçili sayfa okumasıdır; tüm 57 sayfalık tutanak ve 198 sıra say�
 - PDF 33–34: İbrahim Akın 2. maddedeki kavramları eleştiriyor. Aynı üç DEM imzacı 2/2927 2. maddenin çıkarılması için ayrı bir yazılı önerge sunuyor; başkan reddedildiğini söylüyor. Ardından başka imzalı ‘net sıfır emisyon hedefine uygun’ ibaresi ekleme önergesi ve madde kabul ediliyor. İki ayrı önerge ve söz konusu madde oylaması birleştirilmez; isimli oy yönü belirtilmiyor.
 
 - PDF 35–36: Aynı DEM imzacıları 2/2927 3., 4. ve 5. maddelerin çıkarılmasını ayrı ayrı öneriyor; üç ayrı önergenin her birinin reddi başkan tarafından açıklanıyor. 3. ve 4. madde ayrıca kabul ediliyor; 5. maddede farklı imzacıların kömürden çıkışa ilişkin başka önergesi sonraki sayfaya devam ediyor, sonucu bu sayfadan çıkarılamaz. Gerekçelerdeki iddia ve rakamlar teklif sahiplerine atfedilir.
+
+- PDF 37–38: Önceki sayfada başlayan ayrı imzalı kömürden çıkış önergesinin reddi ve 5. maddenin kabulü açıklanıyor. 6. maddede İbrahim Akın uyum, orman ve tarım politikaları konusunda görüş bildiriyor; bu sayfada 6. madde önergesinin sonucu henüz yok.
