@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 47 | 9 | 62492699 |
 | İYİ Parti | 17 | 10 | 62492649 |
 | Yeni Yol | 19 | 11 | 62492688 |
-| DBP | 36 | 7 | 62490789 |
+| DBP | 44 | 7 | 62493929 |
 | EMEP | 56 | 58 | 62487943 |
 | Saadet Partisi | 19 | 15 | 62492219 |
 | Demokrat Parti | 20 | 18 | 62493631 |
@@ -187,3 +187,5 @@ Saadet’in 1 Temmuz asgari ücret düzeyinde emekli aylığı talebi, 7590 say�
 Demokrat Parti’nin tecil eleştirisi iki farklı işlemle karşılaştırıldı. 7582 sayılı Kanundaki genel 72 ay ve 1 milyon TL sınırı ile B/20 Tebliğinin belirli borçlar için yüzde 29 oranı ve 10 milyon TL teminat eşiği kendi kapsamlarında doğrulandı. Bireysel başvuru ve ödeme sonucu açık. [Demokrat Parti makbuzu](../04-12-checks/tax-deferral-62493631.json)
 
 DEM Parti adına Çiçek Otlu Uçar’ın 10/4961 gündemindeki katkısı 47 olaylı çalışma çiftinde doğrulandı. [DEM Parti makbuzu](../04-06-checks/dem-nov03-4961-62492699.json) İYİ Parti adına Selçuk Türkoğlu’nun 10/4314’ün ön görüşülmesine sözlü desteği 17 olaylı çalışma çiftinde doğrulandı. İki tutanakta da kişisel oy cetveli yer almıyor. [İYİ Parti makbuzu](../04-07-checks/teacher-4314-62492649-complete.json)
+
+Bağlar’ın mart kararlarından iki sevk ve altı rapor kabulü yeni önizlemede iki HTML görünümünde doğrulandı. 2015/51’in 22 gider kalemi toplamı 18.420.000 TL. 2015/57 fırın denetim raporunda 17 işyeri ayrı sonuç türleriyle yer alıyor. Karar, rapor, ödeme ve tahsilat kayıtları ayrı. Üç mali kayıt aynı olay kimliğiyle kamu hesap verebilirliği konusuna yeniden bağlandı. [Bağlar makbuzu](../04-09-checks/baglar-march-reports-v2-62493929.json)
