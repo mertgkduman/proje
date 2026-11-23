@@ -25,3 +25,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 71–76 görsel okundu; ikinci şerh karbon ticareti, enerji projeleri, denetim, fosil yakıtlar ve nükleer enerjiye ilişkin değerlendirmeleri içeriyor; şerh imzası sonraki sayfalarda araştırılacak.
 
 İndeks 77–82 görsel okundu; ikinci şerh kent politikası, halk sağlığı, endüstriyel hayvancılık ve toplumsal katılım hakkındaki eleştirileri içeriyor; imza henüz görülmedi.
+
+İndeks 83–88 görsel okundu; ikinci şerhin iklim adaleti, adil geçiş ve ekokırım değerlendirmeleri sürüyor. İmza henüz görülmedi ve içeriğin aidiyeti tamamlanmadı.
