@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 12 | 8 | 62471281 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 39 | 41 | 62463708 |
+| EMEP | 40 | 42 | 62464623 |
 | Saadet Partisi | 11 | 9 | 62473205 |
 | Demokrat Parti | 12 | 11 | 62467362 |
 
@@ -57,3 +57,5 @@ EMEP’in 7/49942 fon sorusu ve 4 Kasım imzalı Bakanlık cevabı iki görünü
 EMEP’in 7/27371 meslek hastalığı sorusu doğrulandı. 22 Mayıs Gelen Kâğıtlar kaydı bu tarihteki süre durumunu gösteriyor. [EMEP makbuzu](../04-10-checks/health-27371-union-62463708-receipt.json)
 
 Saadet karşılaştırmasına 27 Ekim SPK 76/1903 kararı ve 30 Ekim’de başladığı açıklanan ara ödemeler ayrı tarihli kayıtlar olarak eklendi. 29,3 milyar TL, İletişim Başkanlığı açıklamasına ve bunu aktaran imzalı Bakanlık cevabına bağlı. [Saadet makbuzu](../04-11-checks/fund-payments-62473205.json)
+
+EMEP’in deprem barınma dosyasında toplantının günü belirsiz kaldı. İki görünümde toplantı ve 5 Şubat yayımı ayrı. [EMEP makbuzu](../04-10-checks/earthquake2025-date-uncertain-62464623-receipt.json)
