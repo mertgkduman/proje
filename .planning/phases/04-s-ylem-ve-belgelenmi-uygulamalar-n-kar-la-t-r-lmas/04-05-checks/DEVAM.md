@@ -187,3 +187,5 @@ Son ilerleme 2c33a9d2: rapor 0–729 indeks metni/boşluğu tarandı (730/860), 
 Son ilerleme fe7366b4: rapor 0–759 indeks metni/boşluğu tarandı (760/860), sıradaki 760; 100 indeks ve notlarda belirtilen görseller açık. CHP şerhi 737–738 oranı ve 746 tonaj ifadeleri aritmetik olarak uyumsuz, çözülmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
 
 Son ilerleme 7731c9af: rapor 0–789 indeks metni/boşluğu tarandı (790/860), sıradaki 790; 70 indeks ve önceki görseller açık. 762 ithalat değişim yüzdesi sayılarla tutarsız, asıl veri doğrulanmadı; 779 eski yüzde 21 hedefinin artıştan azaltım olduğunu açıklıyor. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme 0175e43f: rapor 0–819 indeks metni/boşluğu tarandı (820/860), sıradaki 820; 40 indeks ve önceki görseller açık. 801 Ersoy/Kaçmaz ayrı tarihsel şerh, DEM araştırmacısına bildirildi. 790/792 emisyon ve 808 İtalya hedef yılları farklı, çözülmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
