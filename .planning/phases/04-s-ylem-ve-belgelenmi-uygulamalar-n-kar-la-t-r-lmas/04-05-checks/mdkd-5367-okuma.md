@@ -47,3 +47,5 @@ Ek okuma: 2026 tutanağının indeks 8–13 metin katmanı da incelendi. Genel S
 2025 özgün PDF'nin indeks 85 ve 93 sayfaları ayrıca görüntü olarak okundu: ilkinde üçte iki ve şeffaflık isteği, ikincisinde başkanın usul ve esaslara oybirliği kabul duyurusu metin katmanıyla uyumludur. Diğer görseller ve bağımsız doğrulama uçları açık kalır; tutanağın incelenmemiş niteliği sürer.
 
 İndeks 86 ve 87 görselleri de incelendi: Ekmen etiketi ardından başlayan Şık metninin ve Bayhan konuşmasının sonraki sayfada tekrar edilmesi PDF görüntüsünde de yer alır; metin çıkarıcısının tek başına ürettiği bir tekrar değildir. Ekmen'e bu tekrarlanan sözler atfedilmez. Diğer görseller açıktır.
+
+2026 tutanağının indeks 47 ve 60 sayfaları görselde de kontrol edildi: Şık'ın hayır iradesi ve başkanın 47 kabul, 2 ret, 1 çekimser duyurusu okunmaktadır. Bu, Artı Siirt'in 42 kabul sayısıyla farkı çözmez; diğer görseller açık kalır.
