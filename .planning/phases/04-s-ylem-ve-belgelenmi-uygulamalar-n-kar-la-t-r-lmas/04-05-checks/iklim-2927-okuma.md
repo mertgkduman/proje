@@ -254,3 +254,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 665–669 metni: havza planlaması, sulama ve su tüketimi üzerine tarihli komisyon tavsiyeleri; 2022 seferberlik ve yaptırım maddeleri gerçekleşmiş politika veya TİP görüşü diye sunulmadı. Tablolar görsel incelenmedi. Sonraki 670; metin taraması 670/860, görseller ve 190 indeks açık.
 
 - PDF indeks 670–674 metni: arazi toplulaştırması, havza/tesis, HES ve içme suyu konulu komisyon tespitleri ile gelecek senaryoları ve önerileri, TİP görüşü veya kanıtlanmış gerçekleşme sayılmadı. Tablolar görsel incelenmedi. Sonraki 675; metin taraması 675/860, görseller ve 185 indeks açık.
+
+- PDF indeks 675–679 metni: atık su geri kullanımı, taşkın ve yeraltı suyu konulu tarihli komisyon önerileri; hedeflenen su tasarrufu ve düzenlemeler gerçekleşmiş sonuç veya TİP görüşü değildir. Tablolar görsel incelenmedi. Sonraki 680; metin taraması 680/860, görseller ve 180 indeks açık.
