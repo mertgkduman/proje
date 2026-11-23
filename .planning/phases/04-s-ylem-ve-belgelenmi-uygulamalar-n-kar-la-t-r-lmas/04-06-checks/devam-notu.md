@@ -162,3 +162,10 @@ PDF sıfır tabanlı 0–947 ve 986–1001 okundu; 948–985 ve 1002–1053 aç�
 ## 5472 canlı ve 8 Ekim kapısı
 
 62479627 v2 giriş, kaynak, önizleme ve bağımsız monotonluk/manifest/SQLite/JSON/iki görünüm PASS; 19 olaylı canlı çift 4c79cdd5 SHA c6d3d3f3d8fbb75639cfc4bc94fe0dc85acd25d062b116a252877136314d6e74 / aefdb613131b4a115fdff379b726c6497fb9ca57f458bf99b65d9db34e4bb6d8. Makbuz f59f8ff8, kalıcı önizleme manifest a22f0392b2333b3ccc3e4ede252a8e4a8238cf5bed2347078f7cc8b3cb44c5d0. 8 Ekim iki ayrı olay adayı exact 09a12448a4d727b21f9734d71aed688e8d2d7698b6602291cc18df269a00e8bf / 190f924b8665c292dff6826fa738fa341f4b9f12237363540f3b8e84faeefa89 için 62480714 tam kapı çalışıyor; terminal ve bağımsız QA görülmeden terfi yok.
+
+
+### 4114 tutanak ve 8 Ekim kapısı devamı
+
+TBMM 4114 57/57 PDF metin sayfası okundu, 392d5076; seçili kaynak içi kronoloji ve yeniden oylama etiketi belirsizliği saklandı. PDF 31 ayrı ilk kayıtta, kalan sayfalar iklim-4114-first-pages.md dosyasında; 198 sıra sayılı raporun PDF 66, 67, 94 görselleri bağımsız incelendi (980ca112). 198 raporu bütünü henüz okunmadı. 4114 madde 1–20 ve geçici 1–2 için üç DEM imzalı ayrı çıkarma önergelerinin ayrı retleri, madde 14 anayasa denetim önergesi ve diğer parti önergeleri birbirinden ayrıdır.
+
+62480714 exact iki 8 Ekim olayı için sürüyor: girdi ve kaynak PASS, önizleme terminali bekleniyor; aday 09a12448a4d727b21f9734d71aed688e8d2d7698b6602291cc18df269a00e8bf ve inceleme 190f924b8665c292dff6826fa738fa341f4b9f12237363540f3b8e84faeefa89. Önce terminal 0 ve preview PASS kontrolü, sonra independent-oct08-qa.py (36112236), makbuz ve append-only kontrol, ancak ardından tam eş iki canlı dosyaya scoped flock ile terfi. Canlı önceki paket c6d3d3f3d8fbb75639cfc4bc94fe0dc85acd25d062b116a252877136314d6e74; review aefdb613131b4a115fdff379b726c6497fb9ca57f458bf99b65d9db34e4bb6d8.
