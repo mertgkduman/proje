@@ -5,7 +5,7 @@ import sqlite3
 from datetime import date
 from pathlib import Path
 from uygulama_merge_kayit import (ENTRY_KINDS, PRACTICE_ENTRY_ORDER, PRACTICE_MERGE_TABLES,
-                                  materialize_practice_merge, validate_practice_merge)
+                                  materialize_practice_merge, practice_entry_matches, validate_practice_merge)
 
 PRACTICE_TABLES = {
     'practice_contract': 'version INTEGER PRIMARY KEY, taxonomy_version INTEGER NOT NULL, stage TEXT NOT NULL, method_version INTEGER NOT NULL, inventory_digest TEXT NOT NULL',
@@ -1187,7 +1187,7 @@ def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherit
             if pk and all(key in values for key in pk):
                 existing = db.execute(f"SELECT * FROM {kind} WHERE " + ' AND '.join(key + '=?' for key in pk), [values[key] for key in pk]).fetchone()
                 if existing:
-                    if any(existing[key] != value for key, value in values.items()):
+                    if not practice_entry_matches(kind, dict(existing), values):
                         raise ValueError('Önceki kayıt değiştirilemez')
                     continue
             db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
@@ -1363,7 +1363,8 @@ def validate_practice_input(payload, base_release='current'):
         current_data = json.loads((current_folder / 'records.json').read_text(encoding='utf-8'))
         submitted = list(payload.get('entries', []))
         submitted += [{'kind': kind, 'values': row} for kind, rows in payload.get('practice_records', {}).items() for row in rows]
-        if not submitted or any(not any(all(existing.get(k) == v for k, v in item['values'].items()) for existing in current_data.get(item['kind'], [])) for item in submitted):
+        if not submitted or not all(any(practice_entry_matches(item['kind'], existing, item['values'])
+                                       for existing in current_data.get(item['kind'], [])) for item in submitted):
             raise ValueError('Güncel sürüm paket kayıtlarını içermiyor')
         del current_data
         base = payload['base_release']
@@ -1518,7 +1519,8 @@ def _render_practice_preview(payload, out, inventory=None, base_release='current
             cursor = historical_manifest.get('base_release')
         submitted = list(payload.get('entries', [])) + [dict(kind=k, values=row) for k, rows in payload.get('practice_records', {}).items() for row in rows]
         if (payload != original or successor.get('base_release') != base or not submitted or
-                any(not any(all(row.get(k) == v for k, v in item['values'].items()) for row in base_data.get(item['kind'], [])) for item in submitted)):
+                not all(any(practice_entry_matches(item['kind'], row, item['values'])
+                            for row in base_data.get(item['kind'], [])) for item in submitted)):
             raise ValueError('Taban sürüm veya tarihsel paket ardıllığı uyuşmuyor')
         adapted_from = _digest(payload)
         payload = successor

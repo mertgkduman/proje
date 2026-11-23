@@ -131,6 +131,7 @@ class MergePersistence(unittest.TestCase):
         decision = fixture.decision()
         for index, item in enumerate(fixture.inputs):
             package = json.loads(item['raw'])
+            package['entries'][0]['values']['printed_page'] = index + 1
             package['practice_records']['practice_contract'] = [dict(version=1, taxonomy_version=4,
                 method_version=1, inventory_digest='a' * 64, stage='partial')]
             for table in ('practice_source_review', 'practice_source_review_revision'):
@@ -153,6 +154,11 @@ class MergePersistence(unittest.TestCase):
         snapshot.update(extension)
         # Exercise the persisted representation, not just materializer output.
         with sqlite3.connect(':memory:') as db:
+            db.execute('CREATE TABLE printed_pages (id TEXT PRIMARY KEY, page TEXT)')
+            for passage in snapshot['passage']:
+                db.execute('INSERT INTO printed_pages VALUES (?, ?)', (passage['id'], passage['printed_page']))
+                passage['printed_page'] = db.execute(
+                    'SELECT page FROM printed_pages WHERE id=?', (passage['id'],)).fetchone()[0]
             for table, definition in uygulamalar.PRACTICE_MERGE_TABLES.items():
                 db.execute('CREATE TABLE ' + table + ' (' + definition + ')')
                 for row in extension[table]:
@@ -161,6 +167,10 @@ class MergePersistence(unittest.TestCase):
             for table in extension:
                 snapshot[table] = [dict(row) for row in db.execute('SELECT * FROM ' + table)]
         self.assertTrue(uygulamalar.validate_practice_merge(snapshot))
+        wrong_page = copy.deepcopy(snapshot)
+        wrong_page['passage'][0]['printed_page'] = '01'
+        with self.assertRaisesRegex(ValueError, 'Birleşme girdisi kayıp'):
+            uygulamalar.validate_practice_merge(wrong_page)
         promoted = copy.deepcopy(snapshot)
         promoted['practice_contract'][0]['stage'] = 'complete'
         self.assertTrue(uygulamalar.validate_practice_merge(promoted))

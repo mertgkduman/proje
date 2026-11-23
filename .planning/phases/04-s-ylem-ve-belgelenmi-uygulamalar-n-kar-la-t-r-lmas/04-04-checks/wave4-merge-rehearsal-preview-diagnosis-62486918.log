@@ -1,0 +1,23 @@
+STRUCTURAL_REHEARSAL_REPRODUCED 1bae5654e4a5b92cf17463466490a0c3b70cb40ceed7e776b52dd287170e75f8
+MATERIALIZED_REHEARSAL 56
+MERGE_ENTRY_DIFFERENCES {"counts": {"passage": 8}, "examples": [{"kind": "passage", "identity": {"id": "0404-sonraki-tuzuk-16kasim-gecici6-p", "version_id": "0404-sonraki-tuzuk-16kasim-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}, {"kind": "passage", "identity": {"id": "0406-224-submitted-p", "version_id": "0406-tbmm-2025-224-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}, {"kind": "passage", "identity": {"id": "0406-224-signatures-p", "version_id": "0406-tbmm-2025-224-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}, {"kind": "passage", "identity": {"id": "0406-224-dissent-heading-p", "version_id": "0406-tbmm-2025-224-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}, {"kind": "passage", "identity": {"id": "0406-224-dissent-end-p", "version_id": "0406-tbmm-2025-224-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}, {"kind": "passage", "identity": {"id": "0406-224-proposal-p", "version_id": "0406-tbmm-2025-224-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}, {"kind": "passage", "identity": {"id": "0410-emep-aym-2020-final-verdict-p", "version_id": "0410-emep-aym-2020-final-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}, {"kind": "passage", "identity": {"id": "0406-224-cover-p", "version_id": "0406-tbmm-2025-224-v1"}, "fields": ["printed_page"], "sqlite_match_exists": true}]}
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-merge-rehearsal-preview-diagnosis.py", line 46, in <module>
+    runpy.run_path(str(here/'wave4-merge-rehearsal-preview-v2.py'))
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-merge-rehearsal-preview-v2.py", line 89, in <module>
+    _render_practice_preview(payload,preview,inventory,base_id,_validated_merge_roots=roots)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1615, in _render_practice_preview
+    _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1311, in _load_practice_copy
+    validate_practices(data)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1002, in validate_practices
+    validate_practice_merge(data)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-merge-rehearsal-preview-diagnosis.py", line 17, in diagnose
+    return original(snapshot)
+           ^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulama_merge_kayit.py", line 124, in validate_practice_merge
+    raise ValueError('Birleşme girdisi kayıp')
+ValueError: Birleşme girdisi kayıp

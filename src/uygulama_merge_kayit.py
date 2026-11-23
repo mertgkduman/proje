@@ -52,6 +52,13 @@ def _sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
+def practice_entry_matches(kind, stored, submitted):
+    # Older packages use integers for page labels, which SQLite stores as text.
+    if kind == 'passage' and type(submitted.get('printed_page')) is int:
+        submitted = dict(submitted, printed_page=str(submitted['printed_page']))
+    return all(stored.get(key) == value for key, value in submitted.items())
+
+
 def _contract_descends(previous, current):
     """Only the operational stage may advance; every other field is immutable."""
     levels = {'tracer': 0, 'partial': 1, 'complete': 2}
@@ -119,8 +126,9 @@ def validate_practice_merge(data):
                     continue
                 if any(row not in data.get(table, []) for row in rows): raise ValueError('Birleşme kaydı kayıp: ' + table)
             for entry in replay['payload']['entries']:
-                if entry['kind'] not in ENTRY_KINDS or not any(all(existing.get(k) == v for k, v in entry['values'].items())
-                           for existing in data.get(entry['kind'], [])):
+                kind = entry['kind']
+                if kind not in ENTRY_KINDS or not any(practice_entry_matches(kind, existing, entry['values'])
+                                                     for existing in data.get(kind, [])):
                     raise ValueError('Birleşme girdisi kayıp')
             if any(row not in data.get(table, []) for table, rows in base.items() if table != 'practice_contract' for row in rows):
                 raise ValueError('Birleşme tabanı kayıp')
