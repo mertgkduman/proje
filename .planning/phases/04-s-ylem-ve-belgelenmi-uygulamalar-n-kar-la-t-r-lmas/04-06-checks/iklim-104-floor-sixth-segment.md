@@ -1,0 +1,3 @@
+# 104. birleşim: iklim gündemi altıncı okuma dilimi
+
+2 Temmuz 2025 tam tutanak SHA 84c36043d410905c0227bc2ed17339ecd2fbc94fe0a58c6d0f40ea5afe57a679 normalize 320000–344000 okundu. 20. maddeyi değiştirme üzerine dört aynı mahiyetteki önergeden dördüncünün imzacıları önceki dilimde; Kamuran Tanhan bu önergeler üzerinde konuştu. Başkan aynı mahiyette önergeleri reddedilmiş, 20. maddeyi kabul edilmiş ilan etti. Daha sonra teklifin tümü öncesi lehte ve aleyhte kişisel konuşmalara geçildi. 20. madde oylaması, nihai teklifin elektronik kesin oylaması ve konuşmacının kişisel oyu ayrı; önceki diğer parti konuşmalarının iddiaları kendi kaynak bağlamındadır. 344000–350279 son dilim ayrıca okunacak.
