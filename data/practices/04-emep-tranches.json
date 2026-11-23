@@ -15550,6 +15550,18 @@
         "https://www.emep.org/emep-halktan-emekten-yana-demokratik-yerel-yonetimler-icin-mucadele-edelim"
       ],
       "note": "2 Mart 2024 parti yayını ve Başkavak’ın yerel yönetimde halk meclisi önerisi okundu/arşivlendi; öneri fiili meclis veya karar sayılmadı, kapsam ve diğer uçlar açık."
+    },
+    {
+      "query": "EMEP kamu WordPress yayın listesi tarih kesimi ve tam gövde kuyruğu",
+      "query_variants": [
+        "https://www.emep.org/wp-json/wp/v2/posts?per_page=100&page=1&before=2026-11-10T17:38:46&_fields=id,date,date_gmt,modified,modified_gmt,link,title,content"
+      ],
+      "searched_at": "2026-11-23T05:02:46.967210+00:00",
+      "results": [
+        ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-catalog.json",
+        ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-reading-queue.json"
+      ],
+      "note": "33 HTTP200 API sayfası, 3270 ayrı kayıt, 383 metin aralığı. İlk sayfa tekrar SHA eş; date_gmt kontrol edildi. API listesi ve gövdeleri henüz insan okuması sayılmaz; yayın ve güncelleme tarihleri, kesimin aynı saniyesi ayrıca ele alınır."
     }
   ],
   "candidate_leads": [
@@ -15925,5 +15937,6 @@
   "ysk2019_objection_news_reading": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/ysk2019-objection-news-reading.json",
   "merit45365_scope_reading": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/merit-45365-scope-reading.json",
   "consult2024_scope_reading": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/consult2024-scope-reading.json",
-  "ysk2009_precedent_reading": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/ysk2009-precedent-reading.json"
+  "ysk2009_precedent_reading": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/ysk2009-precedent-reading.json",
+  "party_api_body_reading_queue": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-reading-queue.json"
 }
