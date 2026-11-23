@@ -1,0 +1,62 @@
+"""Bağımsız kalıcı önizleme, değişmezlik ve görünürlük kontrolü."""
+import hashlib
+import json
+import sqlite3
+from datetime import datetime, timezone
+from pathlib import Path
+
+checks = Path(__file__).resolve().parent
+root = checks.parents[3]
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
+package = checks / 'oct08-two-events-draft.json'
+review = checks / 'oct08-two-events-review-draft.json'
+assert sha(package) == '09a12448a4d727b21f9734d71aed688e8d2d7698b6602291cc18df269a00e8bf'
+assert sha(review) == '190f924b8665c292dff6826fa738fa341f4b9f12237363540f3b8e84faeefa89'
+old = root / 'data/practices/04-dem.json'
+old_review = root / 'data/practices/04-dem-review.json'
+assert sha(old) == 'c6d3d3f3d8fbb75639cfc4bc94fe0dc85acd25d062b116a252877136314d6e74'
+assert sha(old_review) == 'aefdb613131b4a115fdff379b726c6497fb9ca57f458bf99b65d9db34e4bb6d8'
+base, new = (json.loads(p.read_text()) for p in (old, package))
+for key in ('entries', 'scope_inventory'):
+    assert {canon(r) for r in base[key]} <= {canon(r) for r in new[key]}
+for key, rows in base['practice_records'].items():
+    assert {canon(r) for r in rows} <= {canon(r) for r in new['practice_records'][key]}
+before_review, after_review = (json.loads(p.read_text()) for p in (old_review, review))
+for key, rows in before_review.items():
+    assert {canon(r) for r in rows} <= {canon(r) for r in after_review[key]}
+receipt = json.loads((checks / 'dem-oct08-two-events-62480714.json').read_text())
+folder = Path(receipt['preview'])
+assert folder.is_relative_to(root / 'data/.staging')
+manifest = json.loads((folder / 'manifest.json').read_text())
+assert manifest['renderer_version'] == 31
+for name, expected in manifest['files'].items():
+    assert sha(folder / name) == expected, name
+snapshot = json.loads((folder / 'records.json').read_text())
+events = {r['id'] for r in new['practice_records']['practice_event']}
+assert len(events) == 21
+assert events <= {r['id'] for r in snapshot['practice_event']}
+db = sqlite3.connect(f'file:{folder / "records.sqlite3"}?mode=ro', uri=True)
+assert all(db.execute('select 1 from practice_event where id=?', (e,)).fetchone() for e in events)
+db.close()
+html = (folder / 'index.html').read_text()
+for prefix in ('party', 'comparison'):
+    for kind, candidate, finding in (
+        ('unmatched', '0406-oct08-yeniyol-candidate', '0406-oct08-yeniyol-finding'),
+        ('unmatched', '0406-oct08-dem-candidate', '0406-oct08-dem-finding'),
+        ('unmatched', '0406-dem-5472-cebir-candidate', '0406-dem-5472-cebir-finding'),
+        ('unmatched', '0406-dem-5472-hisse-candidate', '0406-dem-5472-hisse-finding'),
+        ('practice', '0406-hakkari-selection-relation', '0406-hakkari-dispute-finding'),
+        ('practice', '0406-101831-relation', '0406-101831-debate-f'),
+    ):
+        start = html.index(f'id="{prefix}-{kind}-{candidate}"')
+        end = html.index('</article>', start)
+        assert f'data-finding-id="{finding}"' in html[start:end], (prefix, candidate)
+result = {'job': 62480714, 'checked_at': datetime.now(timezone.utc).isoformat(),
+          'package_sha256': sha(package), 'review_sha256': sha(review),
+          'preview': str(folder), 'manifest_sha256': sha(folder / 'manifest.json'),
+          'renderer_version': 31, 'event_count': len(events),
+          'checks': ['old package and review monotonic', 'manifest files', '21 events SQLite and JSON',
+                     'two new and earlier findings in both HTML views'], 'status': 'passed'}
+(checks / 'dem-oct08-two-events-62480714-independent.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
+print(json.dumps(result, ensure_ascii=False, indent=2))
