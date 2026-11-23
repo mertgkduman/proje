@@ -31,3 +31,5 @@ PDF 42–45: şerh sermaye yoğunlaşması üzerine literatür, Rekabet Kurumu b
 PDF 43 görselindeki grafik 2013–2024 işlem değerlerini milyar TL ve milyar dolar ayrı serilerle gösteriyor; metindeki tüm bildirilen işlem toplamı ile Türkiye hedef şirket değeri farklı evrenler olarak sunulmuş. Grafiğin seri kapsamı Rekabet Kurumu aslıyla doğrulanmadan bu iki sayıya eşitlenmedi.
 
 PDF 46–49: banka kârları, gelir/servet dağılımı ve yoksulluk verileri ile siyasi değerlendirmeler okunmuştur. Şerh Kasım 2025 yoksulluk sınırını 27 ve 47 indekslerinde 97.159 TL, 49’da 97.459 TL olarak aktarıyor; özgün Türk-İş verisi kontrol edilmeden değerler birleştirilmez. 0–49 ve 115–117 toplam 53/160, 107 açık.
+
+PDF 50–53: gelir eşitsizliği, borçluluk ve servet dağılımında TÜİK, Eurostat, UBS ve başka kaynaklara atıflı karşılaştırmalar okunmuştur. Endeks, yıl, nüfus ve para birimi farkları incelenmeden rakamlar tek seri sayılmaz. 50. indekste Kasım 2025 yoksulluk sınırı yine 97.159 TL olarak geçer; farklı 97.459 yazımıyla kaynak içi uyuşmazlık sürer. 0–53 ve 115–117 toplam 57/160, 103 açık.
