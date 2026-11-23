@@ -1,8 +1,8 @@
 {
   "tranche_id": "0410-emep-api-244",
-  "read_at": "2026-11-23T22:03:29.885264+00:00",
-  "method": "Beş özgün Türkçe gövde aralığı SHA doğrulanarak okundu.",
-  "limitation": "4570 Farsça devamı çevrilmedi; 4488, 4475, 4466 okunmadı. Kapsam kapanışı yok.",
+  "read_at": "2026-11-23T23:11:42.262395+00:00",
+  "method": "Sekiz özgün Türkçe gövde aralığı SHA doğrulanarak okundu.",
+  "limitation": "4570 Farsça devamı ve 4488 Kürtçe sloganı çevrilmedi; 4466 devamı sonraki dilimde. Kapsam kapanışı yok.",
   "parts": [
     {
       "post_id": 4558,
@@ -53,6 +53,36 @@
       "end_char": 3938,
       "body_temporal_status": "last_modified_at_or_before_cutoff",
       "reading_note": "Genel Başkan Yardımcısı Sedat Başkavakın enerji kesintileri ve faturalara karşı talepleri; değerlendirmeler konuşmacıya atıflı."
+    },
+    {
+      "post_id": 4488,
+      "url": "https://www.emep.org/kurmanciyi-ve-zazakiyi-secelim",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-22.json",
+      "body_sha256": "b945bb3a0a5ebdf0a3c39d06e471081fbc66983ee7074f873d369da4f4a76815",
+      "start_char": 0,
+      "end_char": 3711,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Bölge örgütünün seçmeli Kürtçe dersler ve anadilde eğitim talebi; sayılar kuruma atıflı, Kürtçe son slogan çevrilmedi."
+    },
+    {
+      "post_id": 4475,
+      "url": "https://www.emep.org/sezen-aksuyu-hedefe-koymaktaki-amac-yoksul-halki-bolmek-catistirmaktir",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-22.json",
+      "body_sha256": "b6fb247762f2aef8d1d424c14c50bb96aa4ef64198d110840f92436ac3bc4373",
+      "start_char": 0,
+      "end_char": 3718,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Selma Gürkanın Sezen Aksu ve ifade özgürlüğü hakkında açıklaması; değerlendirmeler kendisine atıflı."
+    },
+    {
+      "post_id": 4466,
+      "url": "https://www.emep.org/ercument-akdeniz-evrensele-konustu-birlesik-mucadele-ve-halk-ittifakinin-yolunu-aciyoruz",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-22.json",
+      "body_sha256": "86013c090cf15b1e576ee82e8b774c50c51973e05abf62d9cb10cdad8732ea92",
+      "start_char": 0,
+      "end_char": 3281,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Serpil İlgünün Akdeniz ile Evrensel röportajının bildirge ve geçim sorunları üzerine ilk aralığı; devamı sonraki dilimde."
     }
   ]
 }
