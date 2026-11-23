@@ -225,3 +225,7 @@ Demokrat Parti’nin 2/3485 ve 2/3970 teklifleri ile 17 Şubat Ardahan kredi duy
 EMEP’in Erlau 7/28709 okumasında önceki üç kaynak açıklaması ve pasajları korunarak soru ve Bakanlık cevabı denetlendi. 59 olay ve 61 ilişki iki HTML görünümünde doğrulandı. [Makbuz](../04-10-checks/erlau-28709-preserved-62491846-receipt.json)
 
 Bağlar karar defterinin 139–167 indeksleri özgün görüntülerden okundu. Toplam 175 ayrı sayfa okundu, 94 sayfa açık. Taşıt, kredi ve sözleşme yetkileri karar metinleriyle kayıtlı. Alım, kredi çekimi, sözleşme imzası ve ödeme için belgeler açık. [Okuma kaydı](../04-09-checks/baglar-council-2015-reading-011.json)
+
+Dördüncü yalıtılmış birleştirme 413 parti olay satırından 397 ayrı olay ve 304 ilişki üretti. Dokuz ortak olay doğrulandı, 12 ortak olay incelemesi açık. 10/4251’in ortak olay kimliğinde Yeni Yol temsil görevi, Saadet söylem karşılaştırması ve önceki söylemi açık Yeni Yol adayı korundu. 25 Haziran, 27 Temmuz ve 17 Ağustos TMO kayıtları ayrı doğrulandı. Bağımsız süreç on SQLite ve JSON tablosu, iki görünümde 608 ilişki bağlantısı ve kanonik dosya özetlerini denetledi. Kapsam kapanışı sıfır. [Makbuz](wave4-merge-rehearsal-04-62500022.json)
+
+Bağlar defterinde 200 ayrı sayfa okundu ve 69 sayfa açık. /140 sevkini izleyen /171 Solin yaz raporu, 400 çocuğu ay bazında ve 45 kadını o güne kadarki sayı olarak bildiriyor. Bireysel katılım kayıtları ile /85 yönetmelik eki açık. /139→167 Yazı İşleri kalemleri, /99→105 Temizlik İşleri uyuşmazlığından ayrı. [Okuma kaydı](../04-09-checks/baglar-council-2015-reading-012.json)
