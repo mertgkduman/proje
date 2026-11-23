@@ -106,3 +106,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 295–299 metni tarandı: orman izleme, ekosistem, biyoçeşitlilik ve toprak arka planı. Kurumsal anlatımlar ve geleceğe ilişkin planlar ayrı tutuldu; bir hedef tamamlanmış uygulama veya TİP eylemi sayılmadı. 0–299: 300/860 indeks metni veya boşluğu tarandı; önceki görseller ve 560 indeks açık.
 
 2021 raporu indeks 300–304 metni tarandı: erozyon, bozkır, mera, sulak ve korunan alanlar. İlgili rapor metni genel arka plan olup kurumsal veya bilimsel iddiaları ayrıca doğrulanmadı ve TİP faaliyeti olarak kaydedilmedi. 0–304: 305/860 indeks metni veya boşluğu tarandı; önceki görseller ve 555 indeks açık.
+
+2021 raporu indeks 305–309 metni tarandı: korunan alanlar, sanayi ve enerji sektöründe tarihsel iklim etkileri ve modelleme arka planı. 308–309 tablo düzeni görsel incelenmedi; uzman ve kurum görüşleri TİP politikası olarak atfedilmedi. 0–309: 310/860 indeks metni veya boşluğu tarandı; önceki görseller ve 550 indeks açık.
