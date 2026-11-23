@@ -81,3 +81,5 @@ PDF 141–144: planlanan kurum ödenekleri, Kuzey İrlanda/Bask karşılaştırm
 PDF 145–148: katılımcı/komünal ekonomi, ekolojik ekonomi ve demokratik toplum yaklaşımları şerhin normatif önerileri olarak okunmuştur; mevcut yönetim veya gerçekleşmiş reform olarak sunulmaz. 0–148 toplam 149/160, 11 açık.
 
 PDF 149–152: demokratik toplum, yerel katılım, inanç özgürlüğü ve kadın örgütlenmesine dair şerhte açıklanan model okunmuştur. Modelin gerçekleştiği veya anayasal düzenleme olduğu sonucuna gidilmez. 0–152 toplam 153/160, 7 açık.
+
+PDF 153–156: komünal örgütlenme, demokratik cumhuriyet/anayasa önerisi ve 2024–2025 barış sürecine dair şerh anlatımı okunmuştur. Siyasal ve tarihsel yorumlar kaynağa atfedilir, anayasa değişikliği veya sonraki karar gerçekleşmiş sayılmaz. 0–156 toplam 157/160, 3 açık.
