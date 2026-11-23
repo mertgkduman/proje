@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 10 | 7 | 62443961 |
 | EMEP | 32 | 34 | 62443500 |
 | Saadet Partisi | 8 | 6 | 62437168 |
-| Demokrat Parti | 9 | 8 | 62441374 |
+| Demokrat Parti | 10 | 9 | 62452450 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
