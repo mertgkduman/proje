@@ -292,3 +292,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 760–764 metni: CHP üyelerinin atık ticareti, hava ve sağlık konulu şerhi ve Interpol/DSÖ aktarımları okundu; iddialar sahiplerine aittir, TİP görüşü veya bağımsız doğrulanmış bulgu sayılmadı. 762 44.449 tondan 76.867 tona değişimi yüzde 42 der; bu iki sayı yaklaşık yüzde 73 artışa karşılık gelir, asıl veri ve kapsam doğrulanmadı. Sonraki 765; metin taraması 765/860, görseller ve 95 indeks açık.
 
 - PDF indeks 765–769 metni: CHP üyelerinin sağlık ve eğitim şerhi ile meslek örgütleri/HEAL aktarımı okundu; tıbbi iddialar bağımsız araştırma olarak doğrulanmadı, TİP beyanı sayılmadı. 769 görsel grafik/tablo varsa ayrıca görülmedi. Sonraki 770; metin taraması 770/860, görseller ve 90 indeks açık.
+
+- PDF indeks 770–774 metni: CHP şerhinde eğitim, tarım, gıda ve WWF aktarımı okundu; tarihli sayılar, sağlık/beslenme genellemeleri ve öneriler kaynaklarına atfedilir, TİP görüşü veya bağımsız bulgu sayılmaz. Sonraki 775; metin taraması 775/860, görseller ve 85 indeks açık.
