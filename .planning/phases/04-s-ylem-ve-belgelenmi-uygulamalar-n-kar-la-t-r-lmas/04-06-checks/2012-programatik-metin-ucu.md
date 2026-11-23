@@ -17,3 +17,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil site yakalaması çıkarılmış metin karakter 0–11999 okundu (1/16 dilim): dünya ve Türkiye’de ekonomik eşitsizlik, iklim değişikliği, fosil yakıtlar, savaş, demokrasi ve kamu hizmetlerine dair dönemsel parti değerlendirmeleri var. Anlatımdaki tarihsel, ekonomik ve siyasal olgu iddiaları ayrıca doğrulanmadı. Sonraki ofset 12000; yayın ve hukuki yürürlük tarihi hâlâ açık.
 
 2012 birincil metin 12000–23999 okundu (2/16): Kürt sorunu, eşit yurttaşlık ve yerel yönetimlere ilişkin dönemsel değerlendirmeler; demokrasi, katılım, sendika ve yerel karar süreçleri üzerine hedefler. Dönemsel iddialar partiye aittir; 2026 uygulaması veya güncel yürürlük çıkarılmadı.
+
+2012 birincil metin 24000–35999 okundu (3/16): çevre ve iklim adaleti, fosil yakıtlar, ekolojik haklar ve yerel katılım bağlamında parti hedefleri; güncel çevre uygulaması veya ETS özel önergesi değildir. Tarihsel olgu ve nedensellik iddiaları partiye atıflıdır ve bağımsız doğrulanmadı.
