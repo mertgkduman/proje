@@ -33,3 +33,4 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - 2021 rapor 85–89 indeksleri okundu: Ömer Fethi Gürer 10/2909 su kullanımı ve Dilşat Canbaz Kaya 10/2929 iklim önergesi; sayısal iddialar ve imzalar ilgili önergelerin bağlamıyla sınırlı. Toplam 91/860, 769 açık.
 - 2021 rapor 90–94 indeksleri okundu: Nevzat Ceylan ve imzacıların 10/3031 sulak alanlar önergesi ve Cihan Pektaş 10/3032 başlangıcı; ifadeler ilgili önergelerin tarihli bağlamındadır. Toplam 96/860, 764 açık.
 - 2021 rapor 95–99 indeksleri okundu: Cihan Pektaş 10/3032 önergesinin 162 kişilik imza listesinin devamı ve gerekçesi; parti veya bireysel oy olarak genellenmedi. Toplam 101/860, 759 açık.
+- 2021 rapor 100–104 indeksleri okundu: 10/3032 gerekçe sonu, Murat Bakan 10/3382 su kaynakları önergesi ve Çetin Osman Budak 10/3558 başlangıcı. Sayısal ifadeler kaynaklarına atfedildi. Toplam 106/860, 754 açık.
