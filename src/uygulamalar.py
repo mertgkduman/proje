@@ -1302,7 +1302,11 @@ def _load_practice_copy(work, payload, base, *, storage_root=None, allow_inherit
                     if kind in ('practice_source_review', 'practice_source_review_revision'):
                         new_review_subjects.add((values['subject_kind'], values['subject_id']))
         # Validate a transaction-consistent snapshot before the commit.
-        data = {name: [dict(x) for x in db.execute(f'SELECT * FROM {name}')] for name in list(tables) + ['finding', 'finding_evidence', 'verification', 'review', 'passage', 'document_version', 'document', 'archive_view', 'source_attribution', 'actor', 'person', 'comparison_contract', 'comparison_row', 'comparison_completion_revision', 'identity_observation', 'method', 'party', 'scope_party', 'action', 'match', 'match_candidate', 'lead', 'attempt', 'missing', 'closure', 'reopen']}
+        context_tables = ('comparison_contract', 'comparison_row', 'comparison_completion_revision',
+                          'identity_observation', 'method', 'party', 'scope_party', 'action',
+                          'match', 'match_candidate', 'lead', 'closure', 'reopen')
+        data = {name: [dict(row) for row in db.execute(f'SELECT * FROM {name}')]
+                for name in (*tables, *PRACTICE_ENTRY_ORDER, *context_tables)}
         data['release_id'] = base
         validate_practices(data)
         if allow_inherited_review_pending:
