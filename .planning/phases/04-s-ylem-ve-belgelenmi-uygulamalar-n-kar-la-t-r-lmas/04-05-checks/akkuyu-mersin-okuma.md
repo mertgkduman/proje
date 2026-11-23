@@ -15,3 +15,5 @@ PDF indeks 5–9 okundu: Bakan Fatih Dönmez enerji arzı, yenilenebilir kaynakl
 PDF indeks 10–14 okundu: Bakanın enerji destekleri, verimlilik, Amasra soruşturması ve bütçe sunumu ile EPDK başkanının sunum başlangıcı; iddialar ve planlar sahiplerine aittir.
 
 PDF indeks 15–19 okundu: EPDK başkanı sunumunu tamamlar, Nükleer Düzenleme Kurumu Başkanı lisans, denetim ve 2023 planlarını anlatır; bunlar kurumun tarihli beyanlarıdır, bağımsız gerçekleşme denetimi veya TİP atfı değildir.
+
+PDF indeks 20–24 okundu: NDK bütçe sunumu biter, başkan grup konuşmacılarını açıklar ve CHP adına Ahmet Akın enerji politikası eleştirisine başlar. Bu konuşmalar kendi aktörlerine aittir.
