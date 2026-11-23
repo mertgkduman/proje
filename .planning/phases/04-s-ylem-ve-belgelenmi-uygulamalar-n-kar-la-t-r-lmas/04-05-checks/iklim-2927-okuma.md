@@ -306,3 +306,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 795–799 metni: CHP üyelerinin önerileri ve özet eleştirileri okundu, bu tarihli şerh görüşü TİP veya gerçekleşmiş karar değildir. 794 mevcut santrallere 2035 kapatma çağrısı yaparken 799 2030 kömürden çıkış yol haritası istemektedir; zaman kapsamı ve ilişki şerhte açıklanmıyor. Sonraki 800; metin taraması 800/860, görseller ve 60 indeks açık.
 
 - PDF indeks 800–804 metni: CHP üyelerinin şerhi imzaları ile sona eriyor; 801 Oya Ersoy ve Hüseyin Kaçmaz muhalefet şerhi başlıyor. Bu ayrı metnin iklim rejimi, sermaye ve 2015 beyanı konusundaki yorumları iki imzacıya aittir; TİP görüşüne dönüşmez. Sonraki 805; metin taraması 805/860, görseller ve 55 indeks açık.
+
+- PDF indeks 805–809 metni: Ersoy ve Kaçmaz şerhinde kömür santralleri ve izin/teşvik iddiaları tarihli kaynak sahipleriyle birlikte kaydedildi; bağımsız doğrulanmış güncel durum veya TİP görüşü değildir. 808 İtalya için aynı listede hem 2023 hem 2025 kapatma hedefi yazıyor, fark çözülmedi. Sonraki 810; metin taraması 810/860, görseller ve 50 indeks açık.
