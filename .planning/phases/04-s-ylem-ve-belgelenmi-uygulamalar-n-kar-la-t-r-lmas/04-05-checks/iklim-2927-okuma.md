@@ -186,3 +186,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 495–499 metni tarandı: uluslararası çölleşmeyle mücadele işbirliği, kurum proje anlatımı ve tarım uyumu. 499 kanun tablosu tarihsel ikincil anlatımdır, mevzuat numaraları görsel veya Resmî Gazete ile doğrulanmadı; güncel hukuk ve TİP işlemi olarak kullanılmadı. 0–499: 500/860 indeks metni veya boşluğu tarandı; görseller ve 360 indeks açık.
 
 2021 raporu indeks 500–504 metni tarandı: tarım uyumu, gübreleme, nitrat yönetimi ve ilgili kurum anlatımları. 501–502 görselleri okunmadı; tarihli kurum destekleri veya sonraki planlar TİP icraatı ya da güncel durum sayılmadı. 0–504: 505/860 indeks metni veya boşluğu tarandı; görseller ve 355 indeks açık.
+
+2021 raporu indeks 505–509 metni tarandı: organik tarım ve biyoenerji hakkındaki kurum anlatımları ile tarımsal uyum Ar-Ge öngörüleri. 509 grafik görseli okunmadı; sağlık ve üretim iddiaları bağımsız tıbbi/bilimsel doğrulama ya da TİP faaliyeti sayılmadı. 0–509: 510/860 indeks metni veya boşluğu tarandı; görseller ve 350 indeks açık.
