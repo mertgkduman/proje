@@ -59,3 +59,5 @@ Okuma kapsamı: PDF 0–30 ve 32–56 bu notta; PDF 31 önceki ayrı kaynak okum
 198 rapor PDF 74–77 görselleri okundu: şerh kömürden çıkış hedefi, fosil yakıt teşvikleri, nükleer enerji ve kent politikalarını değerlendiriyor. 2021 atıf ve rakamlar şerhin anlatımıdır; özgün çalışmalar ayrıca incelenmeden doğrulanmış hesap olarak sunulmaz. Görsel okuma 66–77 ve 94; 78–93 açık.
 
 198 rapor PDF 78–81 görselleri okundu: şerh kentleşme, halk sağlığı, endüstriyel hayvancılık ve katılımı ele alıyor; THHP ve Avrupa Komisyonu atıfları içeriyor. 68.440 ölüm sayısı 2022 yılı için şerhte atfediliyor; 4114 toplantısında temsilci aynı sayıyı bir yıl için belirtmiş, bu iki anlatım dönem ve kaynakları ayrıca incelenmeden kesinleştirilmez. Görsel okuma 66–81 ve 94; 82–93 açık.
+
+198 rapor PDF 82–85 görselleri okundu: şerh ekolojik mücadele ile katılım ilişkisini, kırılgan gruplar ve iklim adaleti, istihdam ve sosyal güvenlik bakımından adil geçişi tartışıyor. DİSK ve diğer kaynaklara yapılan atıflar ayrı doğrulama gerektirir. Görsel okuma 66–85 ve 94; 86–93 açık.
