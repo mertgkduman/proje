@@ -2,10 +2,10 @@ import importlib.util,json,os,sqlite3,subprocess,sys
 from pathlib import Path
 D=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location('harness',D/'samsun-reply-validation.py');h=importlib.util.module_from_spec(spec);spec.loader.exec_module(h)
-scope='nov03-genelgorusme-yeniparti-v2';stem='0404-nov03-genelgorusme-yeniparti';event=stem+'-event';candidate=stem+'-unmatched';con=stem+'-contribution'
+scope='nov03-genelgorusme-yeniparti-v3';stem='0404-nov03-genelgorusme-yeniparti';event=stem+'-event';candidate=stem+'-unmatched';con=stem+'-contribution'
 package=D/(scope+'-draft.json');review=D/(scope+'-review.json')
-assert h.sha(package)=='23918fd2d01247f5794b82af355568873fe39028c9636344c9d825e3d3b452f2'
-assert h.sha(review)=='662aca6458f577464b0895ee7af49e486eec34c45d1c124cc532c6b7a93f6995'
+assert h.sha(package)=='50eef2357332ff02a7073332ac3345a625bd2d112f837d73d6613c99be606ce1'
+assert h.sha(review)=='02f29b840cc994cbd2807a644e7c05245f6678c8784635c00e308077906124d6'
 draft=json.loads(package.read_bytes())['practice_records']; assert (len(draft['practice_event']),len(draft['practice_relation']))==(143,141) and not draft['practice_closure']
 r=h.main(package,review,scope,event,'0404-fon-komisyon-1014-relation',None)
 folder=Path(r['preview']); manifest=json.loads((folder/'manifest.json').read_bytes()); assert manifest['renderer_version']==31
