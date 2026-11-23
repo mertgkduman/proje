@@ -179,3 +179,5 @@ DEM Parti adına Zeynep Oduncu Akın’ın 8/153 ön görüşmesindeki katkısı
 Dokuz arşiv kökünde ortak 219 yol ve 628 dosya kopyası aynı baytlarla doğrulandı. [Arşiv yolu denetimi](wave4-source-paths-audit-03.json)
 
 EMEP’in Bekaert 7/26171 yazılı sorusu ve Bakanlık cevabı iki görünümde doğrulandı. Bakanlığın cevabı hukuki başvuru yollarını açıklıyor. İşyerine özgü sonuç ve işe dönüş açık. [EMEP makbuzu](../04-10-checks/bekaert-26171-62487943-receipt.json)
+
+369 olay kaydı ve 284 ilişkiyle dondurulan ikinci dokuz parti provası iki HTML görünümünde geçti. Beş olay grubu birleştirildi. Önizlemede 361 olay, 284 ilişki ve 95 etkin eşleşmemiş olay kartı bulunuyor. 8/153, 10/4961 ve 299 sıra sayılı teklif ayrı olaylar. İlk iki dosyada üçer parti katkısı kendi aktör ve yetki pasajıyla korundu. 14 olay uyuşması kararı açık. [Birleşim provası makbuzu](wave4-merge-rehearsal-02-62492655.json)
