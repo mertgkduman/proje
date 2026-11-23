@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 60 | 62 | 62492296 |
+| EMEP | 64 | 66 | 62496822 |
 | Saadet Partisi | 23 | 19 | 62498024 |
 | Demokrat Parti | 31 | 28 | 62499618 |
 
@@ -245,3 +245,7 @@ DEM Parti’nin 2/2927 Genel Kurul işlemlerinden 17, 18, geçici 1, geçici 2, 
 İYİ Parti’nin 10/2881 tekstil ve 10/2882 şap gündemlerindeki iki grup katkısı 2019 arşiv programı ve 2026 HTML pasajlarıyla iki görünümde doğrulandı. 10/2882 için tutanakta Akalın’a ek 19, imzalı çizelge ve esas sicilinde 20 isim var. Programın 2025’teki hukuki yürürlüğü ve bireysel oylar açık. [Makbuz](../04-07-checks/agenda-104-historic-62503516.json)
 
 Saadet yayın kataloğunun 94 gövdesi okundu. 22 Nisan grup konuşması, Sakarya plan hedefi ve Ocak ayındaki üç ayrı parti görüşmesi kendi okuma kayıtlarıyla saklandı. 555 kesim öncesi gövde açık. [Okuma kaydı](../04-11-checks/party-news-016-reading.json)
+
+EMEP’in İliç 7/11963 sorusu, İliç suç duyurusu, Qral ve Karınca soru ve yanıt dosyaları doğrulanmış çalışma çiftine eklendi. Suç duyurusu ve hukuki sonuç ayrı. Qral ve Karınca’daki tarama pasajları önceki kayıtlarla birlikte iki HTML görünümünde doğrulandı. [İliç soru makbuzu](../04-10-checks/earthquake-11963-62492801-receipt.json) [İliç suç duyurusu makbuzu](../04-10-checks/ilic-complaint-20240315-62494445-receipt.json) [Son makbuz](../04-10-checks/visual-passages-preserved-62496822-receipt.json)
+
+Bağlar /222→258 tarife zincirindeki iki dayanak yazısı ve /202→206 ile /243 ekleri belediye arşivi, plan ve kayıt sorgularında araştırıldı. /24’te aynı eski tarih ve numara bulundu. İki kararın ilişkisinin gerekçesi, özgün yazılar ve ekler açık. [Arama kaydı](../04-09-checks/baglar-2015-ek-portal-arastirma-001.json)
