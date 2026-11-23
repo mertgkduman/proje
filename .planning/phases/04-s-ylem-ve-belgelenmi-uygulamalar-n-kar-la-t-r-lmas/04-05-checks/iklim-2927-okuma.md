@@ -104,3 +104,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 290–294 metni tarandı: orman alanı kullanımları, yangın, zararlılar ve ekosistemin uyumu. 292 iki grafik görseli okunmadı; tarihsel orman izinleri ve öngörüler bağımsız doğrulanmış olay veya TİP icraatı olarak aktarılmadı. 0–294: 295/860 indeks metni veya boşluğu tarandı; görseller ve 565 indeks açık.
 
 2021 raporu indeks 295–299 metni tarandı: orman izleme, ekosistem, biyoçeşitlilik ve toprak arka planı. Kurumsal anlatımlar ve geleceğe ilişkin planlar ayrı tutuldu; bir hedef tamamlanmış uygulama veya TİP eylemi sayılmadı. 0–299: 300/860 indeks metni veya boşluğu tarandı; önceki görseller ve 560 indeks açık.
+
+2021 raporu indeks 300–304 metni tarandı: erozyon, bozkır, mera, sulak ve korunan alanlar. İlgili rapor metni genel arka plan olup kurumsal veya bilimsel iddiaları ayrıca doğrulanmadı ve TİP faaliyeti olarak kaydedilmedi. 0–304: 305/860 indeks metni veya boşluğu tarandı; önceki görseller ve 555 indeks açık.
