@@ -1,0 +1,17 @@
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-institution-62400681/check/src/arsiv.py: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-institution-62400681/check/src/uygulamalar.py: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-institution-62400681/check/src/rapor.py: OK
+/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/migration-2134-union-draft.json: OK
+/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/migration-2134-union-review-draft.json: OK
+/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-migration-2134-62497593/check/data/current.json: OK
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-migration-2134-62497593/check/src/arsiv.py", line 3670, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-migration-2134-62497593/check/src/arsiv.py", line 3582, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-migration-2134-62497593/check/src/uygulamalar.py", line 1343, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/data/.staging/gsd-0410-migration-2134-62497593/check/src/uygulamalar.py", line 1150, in _load_practice_copy
+    raise ValueError('Elle doğrulanan pasaj PDF metniyle uyuşmuyor')
+ValueError: Elle doğrulanan pasaj PDF metniyle uyuşmuyor
