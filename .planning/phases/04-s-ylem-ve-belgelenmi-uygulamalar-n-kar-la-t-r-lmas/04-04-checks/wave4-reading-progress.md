@@ -11,7 +11,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 140 | 141 | 62455124 |
 | TİP | 16 | 16 | 62450302 |
 | DEM Parti | 13 | 9 | 62457807 |
-| İYİ Parti | 7 | 6 | 62445700 |
+| İYİ Parti | 9 | 7 | 62460542 |
 | Yeni Yol | 9 | 5 | 62457327 |
 | DBP | 10 | 7 | 62443961 |
 | EMEP | 34 | 36 | 62457771 |
@@ -29,3 +29,5 @@ EMEP’in Çayırhan 7/20948 soru ve cevap zinciri yalıtılmış önizlemede do
 Yeni Yol’un 2/3940 telefon harcı girişiminde geliş tarihi farkı ve 9 Ekim komisyon sevki iki görünümde doğrulandı. [Yeni Yol makbuzu](../04-08-checks/imei-bill-62457327.json)
 
 DEM Parti’nin 18 Şubat komisyon raporu dosyasında iki sayım farkı kaynaklarına atfedildi. EMEP’in anadilde eğitim dosyasında 2011 girişimi, 2024 MYK açıklaması ve 2026 konuşması ayrı korundu. [DEM makbuzu](../04-06-checks/dem-5367-62457807.json) [EMEP makbuzu](../04-10-checks/anadil-kind-fixed-union-62457771-receipt.json)
+
+İYİ Parti’nin 7 Ekim fon bilgilendirmesindeki iki grup katkısı ve 22 Ekim 7596 karşılaştırması doğrulandı. [İYİ Parti makbuzu](../04-07-checks/fund-floor-62460542.json)
