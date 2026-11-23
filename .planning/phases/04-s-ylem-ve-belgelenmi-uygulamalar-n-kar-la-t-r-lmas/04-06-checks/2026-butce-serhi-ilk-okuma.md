@@ -53,3 +53,5 @@ PDF 82–85: kadın yoksulluğu ve bakım hizmetlerine ilişkin önerilerden kı
 PDF 86–89: kırsal ve kadın yoksulluğu, çocukların beslenmesi ve mesleki eğitimde güvenlik hakkındaki şerh görüş ve atıfları okundu. Eurostat/İSİG verileri ayrı tanım ve tarihlerle atfedilir; stajda güvenlik vurgusu emeklilik başlangıcına ilişkin özel vaade dönüştürülmez. 0–89 ve 115–117 toplam 93/160, 67 açık.
 
 PDF 90–93: çocuklara duyarlı bütçe, okul yemeği, MESEM ve ana dili eğitimine ilişkin talepler ile bütçe hakkı eleştirisi okunmuştur. Bunlar şerhin öneri ve iddialarıdır; planlanan ödeneğin, hakkın yürürlüğünün veya fiilî uygulamanın bağımsız kanıtı değildir. 0–93 ve 115–117 toplam 97/160, 63 açık.
+
+PDF 94–97: bütçe gelir/gider ve vergi tahmini ile siyasi eleştiriler okunmuştur. 62. indeks gelir vergisi 3.558, kurumlar 1.740 ve KDV 3.539 milyar; 95. indeks sırasıyla 3.517, 1.613 ve 3.993 milyar diyor. 97. indeks gelir vergisini 2.128 milyar yazarken 95’te bu tutar diğer vergi gelirleri için verilmiş. Tarih, sınıflama veya değişiklik açıklaması asıl bütçe teklifi incelenmeden varsayılmaz. 0–97 ve 115–117 toplam 101/160, 59 açık.
