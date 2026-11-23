@@ -282,3 +282,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 735–739 metni: CHP üyelerinin biyokütle, enerji ve su politikası eleştirileri ile 2021 saha değerlendirmeleri okunmuştur; kaynaklı görüşler TİP adına veya bağımsız doğrulanmış olgu olarak sunulmadı. 737–738 yaklaşık 1,3 milyon/9,5 milyon bina sayılarını yüzde 3,2 diye ilişkilendirir; aritmetik uyumsuzluğu çözülmedi. Sonraki 740; metin taraması 740/860, görseller ve 120 indeks açık.
 
 - PDF indeks 740–744 metni: CHP üyeleri şerhinde göller, saha ziyareti, havzalar arası transfer ve tarımsal su kullanımına dair iddia, uzman aktarımı ve öneriler okundu; imzacılara/kaynağa atıf korunur ve TİP görüşü veya bağımsız doğrulanmış etki sayılmaz. Sonraki 745; metin taraması 745/860, görseller ve 115 indeks açık.
+
+- PDF indeks 745–749 metni: CHP üyelerinin HES, taş ocağı ve su kirliliği konulu şerhi ve uzman aktarımları okundu; iddialar imzacılara atfedilir. 746 aynı cümlede 2018 için 133 milyon tonu 2 milyar tondan fazla diye eşitler; çözülmedi. Sonraki 750; metin taraması 750/860, görseller ve 110 indeks açık.
