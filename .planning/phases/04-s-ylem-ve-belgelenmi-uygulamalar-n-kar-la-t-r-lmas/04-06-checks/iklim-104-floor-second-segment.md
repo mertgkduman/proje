@@ -1,0 +1,3 @@
+# 104. birleşim: iklim gündemi ikinci okuma dilimi
+
+2 Temmuz 2025 tam tutanak SHA 84c36043d410905c0227bc2ed17339ecd2fbc94fe0a58c6d0f40ea5afe57a679 normalize metin 224000–248000 arası okundu. 17. madde kabulü ardından 18. maddenin çıkarılmasına yönelik Yeni Yol ve ayrı aynı mahiyette ikinci imzacı grubu önergeleri okundu; ikinci listede İbrahim Akın, George Aslan, Celal Fırat, Perihan Koca, Mahmut Dindar ve Kezban Konukçu var. Konukçu önerge üzerinde konuştu ve başkan aynı mahiyetteki önergelerin reddini duyurdu. Bu işlem 17. madde, teklifin tümü ve 26 Şubat komisyon işlemlerinden ayrıdır. Takip eden CHP ve İYİ Parti önerge ve konuşmaları ilgili kişilere aittir; haklarındaki iddialar doğrulanmış olguya çevrilmez. 248000 sonrası DEM adına ayrıca okuma gerektirir.
