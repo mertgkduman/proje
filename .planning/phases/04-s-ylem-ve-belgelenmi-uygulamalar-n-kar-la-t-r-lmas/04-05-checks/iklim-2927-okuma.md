@@ -286,3 +286,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 745–749 metni: CHP üyelerinin HES, taş ocağı ve su kirliliği konulu şerhi ve uzman aktarımları okundu; iddialar imzacılara atfedilir. 746 aynı cümlede 2018 için 133 milyon tonu 2 milyar tondan fazla diye eşitler; çözülmedi. Sonraki 750; metin taraması 750/860, görseller ve 110 indeks açık.
 
 - PDF indeks 750–754 metni: CHP üyelerinin orman envanteri, yangın personeli ve tahsis konulu şerh ve kurumlara atıfları okundu; rakamlar ve eleştiriler kaynak sahipleriyle sınırlı tutuldu, TİP tutumu veya 2026 durumu sayılmadı. Sonraki 755; metin taraması 755/860, görseller ve 105 indeks açık.
+
+- PDF indeks 755–759 metni: CHP üyelerinin maden, turizm ve diğer orman tahsisleri, odun üretimi ve plastik atık şerhi okundu. 757 sayısal tablonun görseli görülmedi; üçüncü taraf verileri ve eleştiriler ilgili şerhe/kaynağa aittir, TİP görüşü sayılmadı. Sonraki 760; metin taraması 760/860, görseller ve 100 indeks açık.
