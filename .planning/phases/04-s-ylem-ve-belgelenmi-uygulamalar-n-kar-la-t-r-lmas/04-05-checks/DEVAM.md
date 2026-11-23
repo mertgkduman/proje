@@ -185,3 +185,5 @@ Son ilerleme 7fb43c98: rapor 0–679 indeks metni/boşluğu tarandı (680/860), 
 Son ilerleme 2c33a9d2: rapor 0–729 indeks metni/boşluğu tarandı (730/860), sıradaki 730; 130 indeks ve notlarda belirtilen görseller açık. 693–694 imzalı karar görüntüsü ayrıca okundu, 23.11.2021 no 3; şerhler var. 695–729 kişisel ek görüş ve CHP şerhi; TİP atfı yok. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
 
 Son ilerleme fe7366b4: rapor 0–759 indeks metni/boşluğu tarandı (760/860), sıradaki 760; 100 indeks ve notlarda belirtilen görseller açık. CHP şerhi 737–738 oranı ve 746 tonaj ifadeleri aritmetik olarak uyumsuz, çözülmedi. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
+
+Son ilerleme 7731c9af: rapor 0–789 indeks metni/boşluğu tarandı (790/860), sıradaki 790; 70 indeks ve önceki görseller açık. 762 ithalat değişim yüzdesi sayılarla tutarsız, asıl veri doğrulanmadı; 779 eski yüzde 21 hedefinin artıştan azaltım olduğunu açıklıyor. 610 pending / 165 partial / 0 kapanış ve canlı çift 68fc1764 aynı.
