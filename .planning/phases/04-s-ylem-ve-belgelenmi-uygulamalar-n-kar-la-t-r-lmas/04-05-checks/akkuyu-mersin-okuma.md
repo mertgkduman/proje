@@ -51,3 +51,4 @@ PDF indeks 65–69 okundu: CHP Süleyman Girgin, HDP Ömer Öcalan, İYİ Aydın
 - Tam tutanak indeks 133–137 okundu: AK Parti Orhan Yegin, CHP Ahmet Vehbi Bakırlıoğlu ve Tacettin Bayır konuşuyor; rakamlar ve değerlendirmeler ilgili kişilere atıfla tutuldu.
 - Tam tutanak indeks 138–142 okundu: CHP Tacettin Bayır ve Orhan Sümer, AK Parti İsmail Güneş, CHP Cavit Arı konuşuyor. Tarife ve kişisel gözlem niteliğindeki iddialar TİP’e mal edilmedi.
 - Tam tutanak indeks 143–147 okundu: bütçe konuşmaları bitiyor ve üye soru bölümü açılıyor; MHP Ali Cumhur Taşkın Akkuyu ilk reaktörünün ne zaman işletmeye gireceğini soruyor. Bu bir soru ve sonraki yanıt aranmalı, gerçekleşme veya TİP işlemi sayılmamalı.
+- Tam tutanak indeks 148–152 okundu: soruların ardından Bakan Fatih Dönmez toplu yanıtına enerji maliyetleri, sübvansiyonlar ve kesintilerle başlıyor; aktarılmış istatistikler Bakan beyanıdır. Bu beş sayfada Akkuyu sorusuna doğrudan yanıt yok.
