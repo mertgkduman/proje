@@ -332,3 +332,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 658 (basılı 641) görseli açılıp 39.3 satırı okundu: kaynak gerçekten istasyon çevresinde yapılaşmaya müsaade edilmemesi gerekmemektedir yazıyor. 617 önerisi ve aynı satırdaki önleyici tedbir istemiyle gerilim metin çıkarma hatası değil, belge içi farktır; niyet düzeltilmedi. Bu tek görsel kontrol diğer tablo/görsellerin okunması demek değildir.
 
 - PDF indeks 287 (basılı 270) ve 533 (basılı 516) görsel karşılaştırıldı: her ikisinde %22,5 yüksek, %50,9 ise sırasıyla orta düzey ve düşük diye basılıdır. Metin çıkarma hatası değil; sınıflandırma farkı temel 2018 harita veya kurum yazısı ile çözülmeden sonuç seçilmedi.
+
+- PDF indeks 548 (basılı 531) görsel okundu: gövdede 18 Mayıs 2015 / 2 Temmuz 2021, dipnotlarda 18 Mayıs 2021 / 2 Haziran 2021 basılıdır. Çelişkiler kaynak metninin kendisinde; gerçek toplantı tarihi özgün tutanakla çözülmeden seçilmedi.
