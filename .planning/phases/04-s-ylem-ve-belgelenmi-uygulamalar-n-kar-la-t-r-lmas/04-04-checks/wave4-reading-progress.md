@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 51 | 7 | 62496114 |
 | EMEP | 59 | 61 | 62491755 |
 | Saadet Partisi | 19 | 15 | 62492219 |
-| Demokrat Parti | 25 | 23 | 62496667 |
+| Demokrat Parti | 28 | 25 | 62497391 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -211,3 +211,5 @@ DEM Parti kongre kaydı ve EMEP’in okul yemeği 7/16207 sorusu iki HTML görü
 Bağlar 2015 defterinin 147 farklı sayfası okundu. /118 ve /128 aynı yazıya atıf yapıyor ve farklı plan ile parsel numaraları veriyor. Demokrat Parti sitesinde 49 kesim öncesi gövde okundu, 206 kayıt açık ve iki gövde kesim sonrası. Saadet sitesinde okunan 86 kesim öncesi gövdeden ikisi Haziran başındaki tarımsal kalkınma planı vaadi ve anayasa değerlendirmesini belgeliyor. [Bağlar okuma kaydı](../04-09-checks/baglar-council-2015-reading-010.json) [Demokrat Parti okuma kaydı](../04-12-checks/party-news-003-reading.json) [Saadet okuma kaydı](../04-11-checks/party-news-014-reading.json)
 
 Üçüncü yalıtılmış birleştirme denemesi, dondurulan dokuz partideki 403 olay satırından 388 ayrı olay üretti ve 297 ilişkinin tümünü korudu. Sekiz ortak olay onaylandı, on iki inceleme açık. Önizlemede 411 olay takma kimliği, 3.977 inceleme kökeni, 388 kaynak izni ve 116 açık eşleştirme adayı var. Ayrı süreç on SQLite ve JSON tablosunu, iki HTML görünümünde 594 ilişki bağlantısını ve kanonik yayımın dosya özetlerini doğruladı. Kapsam kapanışı sıfır. [Makbuz](wave4-merge-rehearsal-03-62498521.json)
+
+Demokrat Parti’nin Afyonkarahisar, Konya ve Tokat il kongresi kayıtları iki HTML görünümünde doğrulandı. Afyonkarahisar’da Hikmet Bülbül’ün ve Konya’da Mehmet Ali Yavuz’un seçildiği haber ve listeyle kayda alındı. Tokat’ta tek liste ve oylamanın başladığı belgeli, tutanak ve sayım açık. Doğrudan parti sitesindeki tüzük PDF’si 18 Haziran 2022 arşiv nüshasıyla aynı baytları taşıyor. Kongre günlerinde yürürlük ve seçim sonuçları ayrı kaynaklara dayanıyor. [Makbuz](../04-12-checks/province-congress-62497391.json)
