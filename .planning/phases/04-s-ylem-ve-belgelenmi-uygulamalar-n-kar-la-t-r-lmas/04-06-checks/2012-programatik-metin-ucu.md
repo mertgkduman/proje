@@ -21,3 +21,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 24000–35999 okundu (3/16): çevre ve iklim adaleti, fosil yakıtlar, ekolojik haklar ve yerel katılım bağlamında parti hedefleri; güncel çevre uygulaması veya ETS özel önergesi değildir. Tarihsel olgu ve nedensellik iddiaları partiye atıflıdır ve bağımsız doğrulanmadı.
 
 2012 birincil metin 36000–47999 okundu (4/16): her vatandaş için asgari gelir hakkı, katılım/cinsiyet eşitliği ve Kürt sorununda diyalog, yerel yönetim ve toplumsal haklar hedefleri. Genel asgari gelir hedefi, engellilik veya istihdam durumu özelindeki sonraki önerilerle kapsam ve miktar bakımından aynı varsayılmaz; tarihsel kimlik/yürürlük bağı ayrıca incelenir.
+
+2012 birincil metin 48000–59999 okundu (5/16): geçmişle yüzleşme, azınlık hakları, inanç özgürlüğü, anayasal haklar ve katılım önerileri. Dönemsel tarih ve hukuk değerlendirmeleri kaynak sahibine atfedilir, ayrıca doğrulanmadı; 14. maddeye ilişkin 2025 usul önergesine eşitleme yapılmadı.
