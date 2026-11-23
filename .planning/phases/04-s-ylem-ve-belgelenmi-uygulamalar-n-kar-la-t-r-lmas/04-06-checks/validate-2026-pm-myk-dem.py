@@ -41,7 +41,10 @@ for prefix in ('party', 'comparison'):
         b = html.index('</article>', a)
         assert f'data-finding-id=\"{finding}\"' in html[a:b]
     for kind, item, finding in (
-        ('unmatched', '0406-dem-2026-pm-myk-candidate', '0406-dem-2026-pm-myk-finding'),
+        ('unmatched', '0406-2026-pm-myk-myk-candidate', '0406-2026-pm-myk-myk-finding'),
+        ('unmatched', '0406-2026-pm-myk-kadin-candidate', '0406-2026-pm-myk-kadin-finding'),
+        ('unmatched', '0406-2026-congress-candidate', '0406-2026-congress-finding'),
+        ('unmatched', '0406-dem-teacher-4314-candidate', '0406-dem-teacher-4314-finding'),
         ('unmatched', '0406-nov03-4961-candidate', '0406-nov03-4961-finding'),
         ('unmatched', '0406-nov03-genelgorusme-candidate', '0406-nov03-genelgorusme-finding'),
         ('unmatched', '0406-staj-agenda-candidate', '0406-staj-agenda-finding'),
