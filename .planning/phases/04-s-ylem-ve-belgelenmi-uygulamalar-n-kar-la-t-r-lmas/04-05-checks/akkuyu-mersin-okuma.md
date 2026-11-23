@@ -11,3 +11,5 @@ Haberin üst veri açıklamasında reaktörün faaliyete geçtiği yazarken göv
 PDF 0–4 ayrıca okundu: 2. indeks toplantı özeti, ilgili kurumların 2023 bütçe ve 2021 kesin hesaplarının komisyonca kabulünü kaydeder; genel kurul yasası veya Kadıgil bireysel oyu değildir. 0–1 ve 3. sayfalarda 2015/2016 tarihli hatalı üst şablonlar, 0 ve 2–4 üzerinde 16.11.2022 gerçek oturum tarihi ayrı görünür. Diğer PDF 5–94 ve 98–158 açık.
 
 PDF indeks 5–9 okundu: Bakan Fatih Dönmez enerji arzı, yenilenebilir kaynaklar ve Akkuyu hedeflerine ilişkin hükümet sunumu yapıyor. 9. indekste ilk ünitenin 2023 elektrik üretimi hedefi, gerçekleşmiş tarih değildir ve Kadıgil görüşüne atfedilmez.
+
+PDF indeks 10–14 okundu: Bakanın enerji destekleri, verimlilik, Amasra soruşturması ve bütçe sunumu ile EPDK başkanının sunum başlangıcı; iddialar ve planlar sahiplerine aittir.
