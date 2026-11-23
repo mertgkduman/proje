@@ -10,10 +10,10 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 52 | 9 | 62500084 |
+| DEM Parti | 58 | 9 | 62502354 |
 | İYİ Parti | 17 | 10 | 62492649 |
 | Yeni Yol | 23 | 12 | 62501645 |
-| DBP | 58 | 7 | 62499119 |
+| DBP | 64 | 7 | 62503426 |
 | EMEP | 60 | 62 | 62492296 |
 | Saadet Partisi | 23 | 19 | 62498024 |
 | Demokrat Parti | 31 | 28 | 62499618 |
@@ -237,3 +237,7 @@ Yeni Yol’un 10/2881 tekstil araştırması için 2 Temmuz ön görüşme reddi
 DEM Parti’nin 2/2927 kesin cetvelinde Ayten Kordu, İbrahim Akın ve Perihan Koca Doğan için kişisel ret pasajları iki görünümde doğrulandı. EMEP anayasa görüşmesi kendi toplantı ve kaynak bağlamıyla doğrulandı. [DEM Parti makbuzu](../04-06-checks/dem-iklim-final-62500084.json) [EMEP makbuzu](../04-10-checks/constitution-meeting-20240605-62492296-receipt.json)
 
 Bağlar 2015 karar defteri 15 dilimde 269/269 farklı PDF indeksiyle okundu. Özgün SHA-256 `6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3`. Ayrı Poppler süreci 269 sayfanın metin özetlerini, kesintisiz 0–268 indekslerini ve dilimlerin birikimli sayımlarını doğruladı. /256 2015 gelir-gider inceleme sevki. 2014 İnsan Kaynakları hesabındaki /210 tutar farkı ve fiilî uygulama belgeleri açık. [Dilim 014](../04-09-checks/baglar-council-2015-reading-014.json) [Dilim 015](../04-09-checks/baglar-council-2015-reading-015.json)
+
+Bağlar /139→167 ve /140→171 sevk ve raporları, /210 İnsan Kaynakları hesabı ve /256 ayrı inceleme sevki iki HTML görünümünde doğrulandı. /171’de 400 çocuk ay bazında, 45 kadın açıklama gününe kadar olan sayı. /210’da 16 harcama satırı toplamı 3.056.099,55 TL. 5.890.000 TL bütçeden harcamalar ve 669.900,45 TL iade çıkarılınca 2.164.000 TL kalıyor. Hesap farkının nedeni, /85 yönetmelik eki, bireysel katılım ve fiilî ödeme açık. [Makbuz](../04-09-checks/baglar-solin-budget-62503426.json)
+
+DEM Parti’nin 2/2927 Genel Kurul işlemlerinden 17, 18, geçici 1, geçici 2, 19 ve 20. maddeler için ayrı çıkarma önergeleri ve başkan kararları iki HTML görünümünde doğrulandı. Beş işlem aynı mahiyetteki önergelerin birlikte oylamasına, 19. madde ayrı DEM önergesine ait. Teklifin tümünün kesin açık oyu kendi olayında. [Makbuz](../04-06-checks/dem-iklim-floor-motions-62502354.json)
