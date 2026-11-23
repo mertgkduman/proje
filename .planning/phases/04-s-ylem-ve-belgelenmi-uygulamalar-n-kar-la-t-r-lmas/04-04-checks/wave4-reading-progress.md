@@ -1,6 +1,6 @@
 # Dördüncü dalga araştırma durumu
 
-Yeni Parti’nin çalışma çifti 140 olay ve 141 ilişkiye ulaştı. 14 Ekim 2026 Plan ve Bütçe Komisyonu tutanağı, birleştirme ve alt komisyon önergelerinin reddini ve 2/3939’un komisyondaki kabulünü ayrı işlemler olarak belgeliyor. [Komisyon önizleme makbuzu](fund-commission-62455124.json) 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
+Yeni Parti’nin çalışma çifti 141 olay ve 141 ilişkiye ulaştı. 21 Ekim tarihli 2/3968, üst düzey kamu görevleri sonrasındaki ödemelere ilişkin imzalı teklif ve komisyon kaydıyla doğrulandı. [2/3968 önizleme makbuzu](kamu-3968-62468795.json) 14 Ekim 2026 Plan ve Bütçe Komisyonu tutanağı, birleştirme ve alt komisyon önergelerinin reddini ve 2/3939’un komisyondaki kabulünü ayrı işlemler olarak belgeliyor. [Komisyon önizleme makbuzu](fund-commission-62455124.json) 16 Ekim–3 Kasım arasındaki yedi fon denetimi sorusu ayrıca eklendi. [Son fon denetimi önizleme makbuzu](fund-late-v30-62406651.json) Aidat yönetmeliği ile karma gelir açıklamalarına ilişkin iki kayıt eklendi. [Aidat önizleme makbuzu](member-dues-v30-62404298.json) Beş fon denetimi sorusu ve kesim tarihinde doğrulanabilen üç cevap eklendi. [Fon denetimi önizleme makbuzu](fund-followup-v30-62403249.json) Slurm 62398838 işi girdi, kaynak incelemesi ve yalıtılmış önizleme kontrollerini geçti. SQLite ve JSON kayıtları ile iki HTML görünümü eşleşti. Ardından 7/49426 okul güvenliği sorusu aynı kapsamdaki söylem araştırması açıkken iki HTML görünümünde de doğrulandı. Kapsam kapanışı sıfır. [124 olayın önizleme makbuzu](school-treaty-v29-62398838.json)
 
 Resmî parti API’sinin 58 dilimi ve 270 özgün gövdesi okundu. TBMM milletvekili dizinindeki 128 kanun teklifi, 306 Meclis araştırması ve sekiz dilimdeki 1.679 yazılı soru özeti okundu. Ayrıntı kayıtları için 325 alım makbuzunun ve imzalı başvuru veya cevap PDF'leri için 398 alım makbuzunun tamamı HTTP 200 ve özgün baytlarla doğrulandı. Makbuzlar tekrar edilen veya ayrı hedeflenen kayıtlar içerebilir. Seçilen PDF’lerin bağlam okuması sürüyor. 610 konu hücresinde kapanış yok.
 
@@ -8,13 +8,13 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
-| Yeni Parti | 140 | 141 | 62455124 |
+| Yeni Parti | 141 | 141 | 62468795 |
 | TİP | 17 | 17 | 62466264 |
 | DEM Parti | 15 | 9 | 62466224 |
 | İYİ Parti | 10 | 8 | 62463052 |
 | Yeni Yol | 11 | 7 | 62461211 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 36 | 38 | 62461291 |
+| EMEP | 37 | 39 | 62462343 |
 | Saadet Partisi | 8 | 6 | 62437168 |
 | Demokrat Parti | 12 | 11 | 62467362 |
 
@@ -45,3 +45,5 @@ Demokrat Parti’nin 2/3965 dosyası programın geçmişte arşivlenmiş yatır�
 7552’nin aynı Genel Kurul olayında TİP’in üç ret oyu, EMEP’in bir ret oyu ve Bayhan’ın «Katılmadı» kaydı ayrı parti kaynaklarıyla doğrulandı. DEM Parti’nin 7 Ekim olay başlığı ve kapsamı aynı tutanağa dayalı ortak alanlarla uyumlu. [TİP makbuzu](../04-05-checks/iklim-62466264.json) [EMEP makbuzu](../04-10-checks/climate-attribution-fixed-union-62461291-receipt.json) [DEM makbuzu](../04-06-checks/dem-fund-align-62466224.json)
 
 Şiran Tekstilkent için adayın 29 Şubat 2024’te yayımlanan hedefleri ve belediyenin 18 Mayıs yer incelemesi duyurusu iki görünümde doğrulandı. İşletme açılışı ve istihdam sayıları için okuma açık. [Makbuz](../04-12-checks/siran-tekstil-62467362.json) [Kaynak okuması](../04-12-checks/siran-tekstil-reading.md)
+
+EMEP’in 7 Ekim fon görüşmesinde İskender Bayhan’ın milletvekili sıfatıyla yaptığı açıklama, ortak birleşimin partiye özgü katkısı olarak doğrulandı. [EMEP makbuzu](../04-10-checks/fund-union-62462343-receipt.json)
