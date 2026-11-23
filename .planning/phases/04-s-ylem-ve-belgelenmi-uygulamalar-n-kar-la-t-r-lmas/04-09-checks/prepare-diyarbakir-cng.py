@@ -10,6 +10,8 @@ from uygulamalar import practice_review_package_targets, validate_practice_sourc
 
 here=Path(sys.argv[1])
 data=Path('data')
+exclude_city_report = '--exclude-city-report' in sys.argv[2:]
+suffix = '-v2' if exclude_city_report else ''
 def read(path):
     return json.loads(path.read_bytes())
 def encoded(value):
@@ -20,7 +22,10 @@ package=read(here/'baglar-cemr-draft.json')
 review=read(here/'baglar-cemr-review-draft.json')
 snapshot=read(data/'releases'/package['base_release']/'records.json')
 inventory=read(data/'practices/04-inventory.json')
-entries=package['entries']; entries.extend(aux['entries'])
+entries=package['entries']
+entries.extend(entry for entry in aux['entries'] if not (exclude_city_report and any(
+    isinstance(value,str) and value.startswith('0409-diyarbakir-cng-city-report')
+    for value in entry['values'].values())))
 records=package['practice_records']
 when=datetime.now(timezone.utc).isoformat()
 passages={r['id']:r for r in snapshot['passage']}
@@ -109,7 +114,7 @@ eid = event(stem,day,'Diyarbakır’da ilk 22 doğalgazlı otobüsün tanıtım�
 refs = [row[0] for row in evidence]
 additional = [source+key for key in ('may06-role','may06-goal','may06-plan','may06-agency',
     'dbp-report-author','dbp-report-claimed-route','city-report-cover','city-report-annual','city-report-station')]
-scope = readings(topic,'event',refs+additional)
+scope = readings(topic,'event',refs+[pid for pid in additional if pid in passages])
 reason = ('6 Mayıs hedefini Gültan Kışanak belediye başkanı sıfatıyla açıkladı. '
           'Tanıtım öncesindeki DBP parti söylemi için araştırma açık.')
 candidate = stem+'-unmatched'
@@ -152,7 +157,7 @@ for (kind,identity),(claim,limitation) in tasks.items():
 validate_practice_source_review(snapshot,reviews,target_keys=targets,party_id=party)
 refs=[dict(subject_kind=row['subject_kind'],subject_id=row['subject_id']) for row in reviews]
 package['source_review_refs']=review['source_review_refs']=refs
-for name,content in [('diyarbakir-cng-draft.json',package),('diyarbakir-cng-review-draft.json',review)]:
+for name,content in [(f'diyarbakir-cng{suffix}-draft.json',package),(f'diyarbakir-cng{suffix}-review-draft.json',review)]:
     path=here/name
     with path.open('x') as output:
         output.write(json.dumps(content,ensure_ascii=False,indent=2)+'\n')
