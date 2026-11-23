@@ -298,3 +298,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 775–779 metni: CHP şerhinde agroekoloji ve Paris Anlaşması tartışmaları okundu. 779 eski yüzde 21 beyanının mutlak değil referans senaryosuna göre artıştan azaltım olduğunu açıklar; 600 indeksindeki eksik bağlam tamamlanır, güncel hedef olarak kullanılmaz. Şerhteki model eleştirileri imzacılara aittir. Sonraki 780; metin taraması 780/860, görseller ve 80 indeks açık.
 
 - PDF indeks 780–784 metni: CHP üyelerinin Paris, iklim finansmanı ve sınırda karbon düzenlemesinin 2021 senaryolarına dair şerhi okundu. Model, plan ve tahminler güncel mevzuat veya gerçekleşmiş ekonomik sonuç olarak sunulmadı; TİP atfı yok. Sonraki 785; metin taraması 785/860, görseller ve 75 indeks açık.
+
+- PDF indeks 785–789 metni: CHP üyelerinin yeşil finans, yanıtlanmadığını söyledikleri sorular ve COP26 yorumları okunmuştur; kurum yanıtı, beklentiler ve siyasi eleştiriler ayrıdır, TİP görüşü veya sonraki gerçekleşmeler olarak sunulmadı. Sonraki 790; metin taraması 790/860, görseller ve 70 indeks açık.
