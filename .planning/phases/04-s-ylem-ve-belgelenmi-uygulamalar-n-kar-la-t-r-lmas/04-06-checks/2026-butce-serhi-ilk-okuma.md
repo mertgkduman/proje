@@ -59,3 +59,5 @@ PDF 94–97: bütçe gelir/gider ve vergi tahmini ile siyasi eleştiriler okunmu
 PDF 98–101: savunma, faiz ve kurum ödenekleriyle toplumsal cinsiyete duyarlı bütçe üzerine şerh yorumları okunmuştur. Öngörülen ödenekler fiilî harcama sayılmaz; bütçe büyüklüğü ve vergi geliri farklı paydalardır, yüzdeler karşılaştırılırken karıştırılmaz. 0–101 ve 115–117 toplam 105/160, 55 açık.
 
 PDF 102–105: toplumsal cinsiyet bütçelemesi, inanç alanı, engelli hakları ve bakım emeği önerileri incelendi. 105’te engelliler için asgari ücrete eş değer temel yurttaşlık geliri önerisi ile bakım emeği güvencesi ayrı hedeflerdir; 2/2159’un belirli kapsamlı teklifinin yürürlüğe girdiği veya tüm toplum için gelir ödendiği sonucu çıkmaz. 0–105 ve 115–117 toplam 109/160, 51 açık.
+
+PDF 106–109: çocuklara yönelik bütçe, ekoloji/kentsel dönüşüm ve tarım destekleri hakkındaki değerlendirmeler okundu. Kümülatif hedef, yıllık hedef ve gerçekleşme farklıdır; bütçe tahsisi ile gerçekleşen uygulama aynı değildir. ÇED, ithalat ve çevresel zarar anlatıları doğrulanmamış şerh iddiaları olarak kalır. 0–109 ve 115–117 toplam 113/160, 47 açık.
