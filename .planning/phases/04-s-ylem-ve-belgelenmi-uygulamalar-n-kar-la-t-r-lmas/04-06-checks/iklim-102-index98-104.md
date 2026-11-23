@@ -1,0 +1,3 @@
+# 26 Haziran 2025, 102. birleşim basılı PDF 98–104
+
+TBMM basılı tutanak https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/3/102/Basilmis/92a8eb73-ad9f-4cc1-bc0b-bcb8c2364b91.pdf özgün SHA-256 `f53c52767d9aaf40db8efc222584ca477a1014272eea4ca63dae17853ce65e5d`, 144 sayfa. PDF indeks 98–104 doğal metni okundu. İndeks 98 / basılı 837’de Akın, Aslan, Fırat, Dindar, Koca, Tanhan’ın 2/2927 8. maddeyi çıkarma önergesi, komisyonun katılmaması ve Tanhan konuşması; indeks 99 / basılı 838’de başkanın bu tek önergeyi ret açıklaması var. Tanhan’ın çevre hukuku yorumları kendisine atıflıdır. Ayrı CHP, İYİ ve Yeni Yol değişiklik önergeleri karıştırılmaz. Sayfaların görsel doğrulaması ve kalan tutanak okuması açık; bireysel oy veya kanunun tümü sonucu çıkarılmaz.
