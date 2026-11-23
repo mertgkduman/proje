@@ -3,7 +3,7 @@
   "register_source": "tbmm-karaca-question-register.html",
   "register_reading": "7/16207, 13.09.2024, öğrencilere ücretsiz yemek dilekçelerinin akıbeti; süre geçtikten sonra cevaplandı.",
   "party_source": "party-api-146-reading.json, post 7707; aynı gövdede teslim tarihi 14 Kasım 2023 ve 14 Kasım 2024 olarak çelişkili.",
-  "limitation": "PDF indirildi; bu oturumda PDF metni henüz okunmadı. Soru tarihi teslim tarihini tek başına kanıtlamaz; cevap tarihi ve içeriği incelenmedi.",
+  "limitation": "Soru metni OCR katmanından okundu; teslim tarihi çelişkili, bağımsız asıl görüşme kaydı ve yanıt henüz okunmadı.",
   "files": [
     {
       "path": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/school-meal-16207-detail.html",
@@ -17,5 +17,12 @@
       "sha256": "5d3f98ae215e695bac35c765a1f57e4df7b2d0868e6bbf9a15d896351a668a09",
       "bytes": 79092
     }
-  ]
+  ],
+  "question_reading": {
+    "read_at": "2026-11-23T14:16:47.099985+00:00",
+    "method": "PDF içindeki UTF-16 metin katmanındaki FlateDecode akışları standart kütüphane ile çözüldü; OCR hataları mümkündür.",
+    "pdf_sha256": "5d3f98ae215e695bac35c765a1f57e4df7b2d0868e6bbf9a15d896351a668a09",
+    "finding": "İmzalı soru 13.09.2024 tarihli ve soru cümlesi teslimi 14 Kasım 2024 diye anlatıyor; bu tarih soru tarihinden sonra. Parti haberinde 2023 ve 2024 farklı geçiyor. Teslimin gerçek yılı henüz belirlenmedi.",
+    "answer_status": "Bakanlık yanıtı okunmadı."
+  }
 }
