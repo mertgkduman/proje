@@ -1,0 +1,14 @@
+STRUCTURAL_REHEARSAL_REPRODUCED 1bae5654e4a5b92cf17463466490a0c3b70cb40ceed7e776b52dd287170e75f8
+MATERIALIZED_REHEARSAL 56
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-merge-rehearsal-preview-v2.py", line 89, in <module>
+    _render_practice_preview(payload,preview,inventory,base_id,_validated_merge_roots=roots)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1615, in _render_practice_preview
+    _load_practice_copy(work, payload, base, storage_root=preview_root, allow_inherited_review_pending=allow_inherited_review_pending)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1311, in _load_practice_copy
+    validate_practices(data)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1002, in validate_practices
+    validate_practice_merge(data)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulama_merge_kayit.py", line 124, in validate_practice_merge
+    raise ValueError('Birleşme girdisi kayıp')
+ValueError: Birleşme girdisi kayıp
