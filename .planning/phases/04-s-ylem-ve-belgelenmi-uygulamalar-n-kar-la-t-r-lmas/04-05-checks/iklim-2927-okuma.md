@@ -148,3 +148,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 400–404 metni tarandı: üç model, iki senaryo ve havza bazlı yağış-su projeksiyonu. 401 tablo, 402–403 haritalar ve 404 tablo görsel okunmadı; senaryo öngörüleri gerçekleşme veya TİP tutumu sayılmadı. 0–404: 405/860 indeks metni veya boşluğu tarandı; görseller ve 455 indeks açık.
 
 2021 raporu indeks 405–409 metni tarandı: havza ölçeğinde farklı dönem ve RCP8.5 senaryosuna dayalı su potansiyeli tabloları. Tablo sütunları ve sürekliliği görsel doğrulanmadı; tahminler gerçekleşmiş veri veya TİP politikası sayılmadı. 0–409: 410/860 indeks metni veya boşluğu tarandı; görseller ve 450 indeks açık.
+
+2021 raporu indeks 410–414 metni tarandı: senaryo tabloları, su kullanımı projeksiyonları ve DSİ sunumu ile tarımsal sulama önerileri. 410–412 tablo düzeni görsel incelenmedi; projeksiyon ve öneriler gerçekleşme ya da TİP işlemi olarak aktarılmadı. 0–414: 415/860 indeks metni veya boşluğu tarandı; görseller ve 445 indeks açık.
