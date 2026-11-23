@@ -665,6 +665,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-tupras-vakif-29281-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0410-emep-tupras-vakif-29281-detail-v1\", \"0410-emep-tupras-vakif-29281-question-v1\"]",
+      "passage_ids": "[\"0410-emep-tupras-vakif-29281-detail-date-p\", \"0410-emep-tupras-vakif-29281-detail-number-p\", \"0410-emep-tupras-vakif-29281-detail-owner-p\", \"0410-emep-tupras-vakif-29281-detail-reply-p\", \"0410-emep-tupras-vakif-29281-question-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ikinci sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-tupras-vakif-29281-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-women-conference-2025-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T22:53:22+00:00",
@@ -2459,6 +2472,71 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0410-emep-tupras-vakif-29281-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-tupras-vakif-29281-detail-date-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-date-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-number-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0410-emep-tupras-vakif-29281-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-tupras-vakif-29281-detail-number-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-number-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0410-emep-tupras-vakif-29281-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-tupras-vakif-29281-detail-owner-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-owner-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0410-emep-tupras-vakif-29281-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-tupras-vakif-29281-detail-reply-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirim kaydı\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-reply-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-question-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0410-emep-tupras-vakif-29281-question-v1\"]",
+      "passage_ids": "[\"0410-emep-tupras-vakif-29281-question-p\"]",
+      "inspected_sections": "[\"İmzalı yazılı soru, ikinci sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-question-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-women-conference-2025-event|0410-emep-women-conference-2025-party-author-p|initiative",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T22:53:22+00:00",
@@ -3174,6 +3252,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-tupras-vakif-29281-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-tupras-vakif-29281-detail-v1\", \"0410-emep-tupras-vakif-29281-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-tupras-vakif-29281-detail-date-p\", \"0410-emep-tupras-vakif-29281-detail-number-p\", \"0410-emep-tupras-vakif-29281-detail-owner-p\", \"0410-emep-tupras-vakif-29281-detail-reply-p\", \"0410-emep-tupras-vakif-29281-question-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ikinci sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-tupras-vakif-29281-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-women-conference-2025-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T22:53:22+00:00",
@@ -3873,6 +3964,19 @@
       "limitations": "Yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-tupras-36769-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-tupras-vakif-29281-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-tupras-vakif-29281-detail-v1\", \"0410-emep-tupras-vakif-29281-question-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\", \"0410-emep-tupras-vakif-29281-detail-date-p\", \"0410-emep-tupras-vakif-29281-detail-number-p\", \"0410-emep-tupras-vakif-29281-detail-owner-p\", \"0410-emep-tupras-vakif-29281-detail-reply-p\", \"0410-emep-tupras-vakif-29281-question-p\"]",
+      "inspected_sections": "[\"G/A/5\", \"Soru ve yanıt bildirim kaydı\", \"İmzalı yazılı soru, ikinci sayfa\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-tupras-vakif-29281-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -4783,6 +4887,19 @@
       "limitations": "Yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-tupras-36769-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-tupras-vakif-29281-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T12:04:48+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-006-1-passage\"]",
+      "inspected_sections": "[\"G/A/5\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları incelendi.",
+      "limitations": "Soru ve genel yanıt iddiaların doğrulandığını veya dava sonucunu göstermez.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-tupras-vakif-29281-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -5980,6 +6097,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-tupras-vakif-29281-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-women-conference-2025-event"
     },
     {
@@ -6532,6 +6653,26 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-number-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-tupras-vakif-29281-event|0410-emep-tupras-vakif-29281-question-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0410-women-conference-2025-event|0410-emep-women-conference-2025-party-author-p|initiative"
     },
     {
@@ -6752,6 +6893,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-tupras-vakif-29281-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-women-conference-2025-relation"
     },
     {
@@ -6968,6 +7113,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-tupras-vakif-29281-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-women-conference-2025-relation"
     },
     {
@@ -7245,6 +7394,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-tupras-36769-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-tupras-vakif-29281-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
