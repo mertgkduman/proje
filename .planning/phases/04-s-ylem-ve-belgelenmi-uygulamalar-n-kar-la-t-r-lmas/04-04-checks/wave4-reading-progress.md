@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 51 | 9 | 62499139 |
+| DEM Parti | 52 | 9 | 62500084 |
 | İYİ Parti | 17 | 10 | 62492649 |
-| Yeni Yol | 23 | 12 | 62500375 |
+| Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 58 | 7 | 62499119 |
-| EMEP | 59 | 61 | 62491846 |
+| EMEP | 60 | 62 | 62492296 |
 | Saadet Partisi | 23 | 19 | 62498024 |
 | Demokrat Parti | 31 | 28 | 62499618 |
 
@@ -231,3 +231,9 @@ Dördüncü yalıtılmış birleştirme 413 parti olay satırından 397 ayrı ol
 Bağlar defterinde 200 ayrı sayfa okundu ve 69 sayfa açık. /140 sevkini izleyen /171 Solin yaz raporu, 400 çocuğu ay bazında ve 45 kadını o güne kadarki sayı olarak bildiriyor. Bireysel katılım kayıtları ile /85 yönetmelik eki açık. /139→167 Yazı İşleri kalemleri, /99→105 Temizlik İşleri uyuşmazlığından ayrı. [Okuma kaydı](../04-09-checks/baglar-council-2015-reading-012.json)
 
 Yeni Yol’un 10/2881 tekstil araştırması için 2 Temmuz ön görüşme reddi ile Ekmen’in ayrı 7/29149 yazılı sorusuna 9 Temmuz’da bildirilen Bakanlık cevabı iki HTML görünümünde doğrulandı. 10/2881 önerge içindeki 19,3 ve 19,2 milyar dolar ifadeleri ayrı. 7/29149’da genel destek, konkordato verisinin kaynak sınırı ve başvuru sahibi aktör ayrı. [Makbuz](../04-08-checks/textile-2881-62500375.json)
+
+10/2881 olayındaki İHKİB iki baskı kanıtı iki HTML görünümünde doğrulandı. 2023 baskısında 19.316.151 bin dolar ve 2024 baskısının 2023 sütununda 19.242.984 bin dolar. Önerge yazarlarının hangi baskıyı kullandığı açık. [Yeni Yol makbuzu](../04-08-checks/textile-series-62501645.json)
+
+DEM Parti’nin 2/2927 kesin cetvelinde Ayten Kordu, İbrahim Akın ve Perihan Koca Doğan için kişisel ret pasajları iki görünümde doğrulandı. EMEP anayasa görüşmesi kendi toplantı ve kaynak bağlamıyla doğrulandı. [DEM Parti makbuzu](../04-06-checks/dem-iklim-final-62500084.json) [EMEP makbuzu](../04-10-checks/constitution-meeting-20240605-62492296-receipt.json)
+
+Bağlar 2015 karar defteri 15 dilimde 269/269 farklı PDF indeksiyle okundu. Özgün SHA-256 `6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3`. Ayrı Poppler süreci 269 sayfanın metin özetlerini, kesintisiz 0–268 indekslerini ve dilimlerin birikimli sayımlarını doğruladı. /256 2015 gelir-gider inceleme sevki. 2014 İnsan Kaynakları hesabındaki /210 tutar farkı ve fiilî uygulama belgeleri açık. [Dilim 014](../04-09-checks/baglar-council-2015-reading-014.json) [Dilim 015](../04-09-checks/baglar-council-2015-reading-015.json)
