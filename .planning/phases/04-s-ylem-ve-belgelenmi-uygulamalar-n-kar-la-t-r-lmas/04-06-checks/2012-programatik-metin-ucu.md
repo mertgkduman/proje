@@ -25,3 +25,5 @@ Birincil tarihsel arşiv ucu: 2013 tarihli akademik kaynakta atıflanan eski par
 2012 birincil metin 48000–59999 okundu (5/16): geçmişle yüzleşme, azınlık hakları, inanç özgürlüğü, anayasal haklar ve katılım önerileri. Dönemsel tarih ve hukuk değerlendirmeleri kaynak sahibine atfedilir, ayrıca doğrulanmadı; 14. maddeye ilişkin 2025 usul önergesine eşitleme yapılmadı.
 
 2012 birincil metin 60000–71999 okundu (6/16): seçim ve parti mevzuatı, yüzde 50 cinsiyet kotası, bağımsız yargı ve Sayıştay denetimi; bölgesel ve yerel yönetimler ile dış politika önerileri. Bunlar 2012 yakalamasındaki hedeflerdir; tarihsel kimlik, sonraki dönem uygulaması ve hukuki yürürlük ayrıca incelenir.
+
+2012 birincil metin 72000–83999 okundu (7/16): dış politika, toplumsal cinsiyet eşitliği, şiddetle mücadele ve LGBT haklarına yönelik tarihsel hedefler; cinsiyete duyarlı bütçe ve kamusal bakım önerileri. Sonraki komisyon çalışması veya mali gerçekleşme bu genel söylemden çıkarılmaz; kimlik ve güncel yürürlük ayrıca açıktır.
