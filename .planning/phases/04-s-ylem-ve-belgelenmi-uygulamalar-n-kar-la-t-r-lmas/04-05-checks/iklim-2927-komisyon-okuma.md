@@ -69,3 +69,5 @@ Cumhuriyet 27.06.2025 01:04 (+03) haberinin özgün HTML SHA aafa748fe4ffd56bffb
 104 tutanak metin 215000–227000 okundu: 17. maddede benzer iki önergenin reddi, Aykut Kaya önergesinde önce karar yeter sayısı yokluğu ardından yeniden oylamada ret, Şenol Sunat önergesinde ret ve maddenin kabulü sırasıyla duyuruluyor. Her önerge kendi imzacıları ve işlemiyle ayrı; TİP imzası bu kesitte gösterilmedi.
 
 104 tutanak metin 227000–239000 okundu: 18. maddenin çıkarılmasına ilişkin benzer Yeni Yol ve DEM önergeleri reddedildi; Mehmet Emin Ekmen ve Kezban Konukçu konuşmaları kendilerine aittir. Sonraki önergenin görüşmesi bu kesitte başlar ve devamı açıktır.
+
+104 tutanak metin 239000–251000 okundu: iki ayrı 18. madde önergesinin reddi ve maddenin kabulü duyuruldu; Gülcan Kış ve Adnan Şefik Çirkin konuşmaları kendilerine aittir. Geçici 1. madde önergeleri görüşmesi başlar, devamı açık.
