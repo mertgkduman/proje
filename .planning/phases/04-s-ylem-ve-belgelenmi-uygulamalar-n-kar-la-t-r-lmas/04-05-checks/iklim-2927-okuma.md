@@ -122,3 +122,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 335–339 metni tarandı: Enerji Bakanlığı geçmiş enerji sunumu ve sanayi projeleri. 338 Akkuyu ilk reaktör için 2023, dördü için 2026 tarihlerini raporun ileriye dönük beklentisi olarak verir; gerçekleşme veya TİP görüşü olarak kullanılmadı. 335–336 grafikler görsel incelenmedi. 0–339: 340/860 indeks metni veya boşluğu tarandı; görseller ve 520 indeks açık.
 
 2021 raporu indeks 340–344 metni tarandı: elektrikli ulaşım, bina, atık, tarım ve madencilik hakkındaki kamu kurumu ve konuşmacı anlatımları. Proje öngörüleri ve ilgili kişilere ait görüşler TİP işlemi olarak kullanılmadı. 0–344: 345/860 indeks metni veya boşluğu tarandı; önceki görseller ve 515 indeks açık.
+
+2021 raporu indeks 345–349 metni tarandı: enerji verimliliği ve ulaştırma kurumlarının tarihli açıklamaları. 345 aynı 2020 tasarrufunun parasal karşılığını önce 158, ardından 153 milyon dolar olarak yazıyor; açıklama doğrulanmadığından sayı kullanılmadı. Kurumsal hedefler gerçekleşme ya da TİP faaliyeti sayılmadı. 0–349: 350/860 indeks metni veya boşluğu tarandı; önceki görseller ve 510 indeks açık.
