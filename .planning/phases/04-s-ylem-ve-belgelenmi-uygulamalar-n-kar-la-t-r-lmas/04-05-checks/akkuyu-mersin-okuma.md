@@ -13,3 +13,5 @@ PDF 0–4 ayrıca okundu: 2. indeks toplantı özeti, ilgili kurumların 2023 b�
 PDF indeks 5–9 okundu: Bakan Fatih Dönmez enerji arzı, yenilenebilir kaynaklar ve Akkuyu hedeflerine ilişkin hükümet sunumu yapıyor. 9. indekste ilk ünitenin 2023 elektrik üretimi hedefi, gerçekleşmiş tarih değildir ve Kadıgil görüşüne atfedilmez.
 
 PDF indeks 10–14 okundu: Bakanın enerji destekleri, verimlilik, Amasra soruşturması ve bütçe sunumu ile EPDK başkanının sunum başlangıcı; iddialar ve planlar sahiplerine aittir.
+
+PDF indeks 15–19 okundu: EPDK başkanı sunumunu tamamlar, Nükleer Düzenleme Kurumu Başkanı lisans, denetim ve 2023 planlarını anlatır; bunlar kurumun tarihli beyanlarıdır, bağımsız gerçekleşme denetimi veya TİP atfı değildir.
