@@ -94,3 +94,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 265–269 metni tarandı: kuraklık tanımı, bakanlık anlatımı, geçmiş planlama ve senaryo arka planı, tarım bölümüne giriş. 266–267 grafikleri görsel okunmadı; rapordaki tahminler veya bakanlık hedefleri gerçekleşmiş uygulama ya da TİP faaliyeti sayılmadı. 0–269: 270/860 indeks metni veya boşluğu tarandı; görseller ve 590 indeks açık.
 
 2021 raporu indeks 270–274 metni tarandı: tarım, hayvancılık, bakanlığa atıflı destekler ve projeksiyonlar. 274 meyvecilik tablosunun sütunları metin çıkarımında karışık; görsel ve özgün veri kontrol edilmedi, sayı aktarılmadı. Kurum anlatımları TİP uygulaması değildir. 0–274: 275/860 indeks metni veya boşluğu tarandı; görseller ve 585 indeks açık.
+
+2021 raporu indeks 275–279 metni tarandı: bakanlık anlatımları, bitkisel üretim, biyoçeşitlilik ve orman bölümüne giriş. Yetkili açıklamaları TİP faaliyeti olarak kaydedilmedi; tarihsel sayılar bağımsız olarak doğrulanmadı. 0–279: 280/860 indeks metni veya boşluğu tarandı; önceki görseller ve 580 indeks açık.
