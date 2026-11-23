@@ -336,3 +336,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 548 (basılı 531) görsel okundu: gövdede 18 Mayıs 2015 / 2 Temmuz 2021, dipnotlarda 18 Mayıs 2021 / 2 Haziran 2021 basılıdır. Çelişkiler kaynak metninin kendisinde; gerçek toplantı tarihi özgün tutanakla çözülmeden seçilmedi.
 
 - PDF indeks 737–738 görsel okundu: CHP şerhinde 9,5 milyon bina ve 1,3 milyon belgeli bina, sonraki sayfada yüzde 3,2 yazıyor; görsel de metin çıkarımını doğruluyor. Aritmetik ilişki kaynakta tutarsız; hesap veya farklı payda uydurulmadı.
+
+- PDF indeks 762 (basılı 745) görsel okundu: 44.449 tondan 76.867 tona yüzde 42 artış ifadesi gerçekten basılıdır. Bu iki sayı yaklaşık yüzde 72,9 artış verir; farklı kapsam olasılığı veya asıl istatistik incelenmedi.
