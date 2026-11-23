@@ -7,3 +7,5 @@ PDF 115 emekli aylıkları ve kademeli emeklilik önerilerini, 116 ev emekçiler
 PDF 4–5: şerh dünya ekonomisi, ekoloji ve finansallaşmaya dair değerlendirmelerle başlıyor; IMF’nin Ekim 2025 görünümüne atıf içeriyor. Atıf belgeye en erken Ekim 2025 sonrası bağlam sağlar; tek başına kesin yayın gününü ve TBMM’ye sunum gününü belirlemez. Ekonomik yargılar ve tahminler şerhe atfedilir. Toplam okuma 9/160, 151 sayfa açık.
 
 PDF 6–9: şerh ticaret tarifeleri, ekonomik riskler ve 2025 NATO Lahey zirvesi hakkında değerlendirme ve çeşitli dış kaynak atıfları sunuyor; rakamlar ve tarihsel iddialar şerh bağlamında kalır, dış kaynaklar ayrıca kontrol edilmedi. 0–9 ve 115–117 toplam 13/160 okundu; 147 sayfa açık.
+
+PDF 10–13: NATO harcamaları tahminleri ve Ortadoğu çatışmalarına ilişkin şerh yazarlarının analizi ve değerlendirmeleri aktarılıyor; tarih, uluslararası hukuk ve finansman iddiaları bağımsız doğrulama değildir. Okuma 0–13 ve 115–117: 17/160, 143 açık.
