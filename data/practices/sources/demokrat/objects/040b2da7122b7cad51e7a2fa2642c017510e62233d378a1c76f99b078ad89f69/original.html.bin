@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>GÜMÜŞHANE ŞİRAN BELEDİYESİ : T.C. Sayıştay Başkanlığı</title>
+
+
+    <meta name="description">
+    <meta name="author" content="sayistay.gov.tr">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+    <link href="/Content/css/bundle.css" rel="stylesheet" />
+    <link href="/css/saycss.css" rel="stylesheet" />
+    <link href="/css/accessibility.min.css" rel="stylesheet" />
+
+    
+
+
+    <!-- Head Libs -->
+    <!--[if IE]>
+        <script src="/assets/vendor/modernizr/modernizr.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="speak-area overflow-hidden">
+        
+
+
+
+
+
+
+
+<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 45, 'stickySetTop': '-45px', 'stickyChangeLogo': true}">
+    <div class="header-body">
+        <div class="header-container container">
+            <div class="header-row">
+
+                <div class="header-column w-25">
+                    <div class="header-row">
+                        <div class="header-logo">
+                            <a href="/?lang=tr">
+                                            <img alt="Sayıştay Başkanlığı Logo" width="80" height="80" data-sticky-width="50" data-sticky-height="50" data-sticky-top="35" src="/img/sayistay/logoTr.png">
+                                  
+                                </a>
+                        </div>
+
+                        <div class="align-middle baskanlikTitle">
+                            <a href="/?lang=tr">T.C. Say&#x131;&#x15F;tay Ba&#x15F;kanl&#x131;&#x11F;&#x131;</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="header-column justify-content-end d-print-none">
+                    <div class="header-row pt-0">
+                        <nav class="header-nav-top">
+                            <ul class="nav nav-pills" id="diller">
+
+            <li class="nav-item   nav-item-left-border-sm-show topDilSec">
+                <a class="btn btn-sm " href="/Home/DilDegistir?lang=en">English</a>
+            </li>
+</ul>
+                        </nav>
+                        <div class="header-nav-features">
+                            <div class="header-nav-feature header-nav-features-search d-inline-flex">
+                                <a href="#" class="header-nav-features-toggle" data-focus="headerSearch" aria-label="Ara"><i style="color:#fff" class="fas fa-search header-nav-top-icon" aria-hidden="true"></i></a>
+                                <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
+                                    <form role="search" method="get" class="d-flex w-100" action="/Arama">
+                                        <div class="simple-search input-group w-100">
+
+                                            <input class="form-control border-0 border-radius-0 text-2" id="headerSearch" pattern=".{3,200}" required title="En az 3, en fazla 200 harf giriniz"  name="q" type="search" value="" placeholder="Bul ...">
+                                            <input type="hidden" name="lang" value="tr" />
+                                            <span class="input-group-append bg-light border-0 border-radius-0">
+                                                <button class="btn" type="submit" aria-label="Ara">
+                                                    <i class="fa fa-search header-nav-top-icon" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="header-nav-feature header-nav-features-cart d-none d-md-inline-flex">
+
+                                <ul class="header-social-icons social-icons d-sm-block">
+
+                                        <li class="social-icons-saglik"><a href="/pages/146-saglik" aria-label="sağlik"><i class="fa fa-heartbeat" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="header-row">
+                        <div class="header-nav pt-1">
+                            <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                                <nav class="collapse">
+                                    <ul class="nav nav-pills" id="mainNav">
+                                        <li class="dropdown firstMM"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa balance-scale"></i> Hakkımızda</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Tarihçe</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/65-sayistay-tarihcesi"> <i class="fa "></i> Sayıştay Tarihçesi</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/36-kurulus-ve-nizamnameler"> <i class="fa "></i> Kuruluş ve Nizamnameler</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/37-sayistay-baskanlari"> <i class="fa "></i> Sayıştay Başkanları</a></li><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="/files/871_Kurulusundan_Cumhuriyete_Sayistay_Tarihi_compressed.pdf" target='_blank' > <i class="fa "></i> Kuruluşundan Cumhuriyet'e Sayıştay Tarihi</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/38-gecmisten-gunumuze-sayistay-binalari"> <i class="fa "></i> Geçmişten Günümüze Sayıştay Binaları</a></li></ul></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/1-misyon-ve-vizyon"> <i class="fa asterisk"></i> Misyon ve Vizyon</a></li><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Kurumsal</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/40-sayistayin-gorevleri"> <i class="fa "></i> Sayıştay’ın Görevleri</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/41-sayistayin-yetkileri"> <i class="fa "></i> Sayıştay'ın Yetkileri</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/112-sayistay-denetimi"> <i class="fa "></i> Sayıştay Denetimi</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/42-denetim-alani"> <i class="fa "></i> Denetim Alanı</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/43-denetim-turleri"> <i class="fa "></i> Denetim Türleri</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/44-sayistay-denetciligi"> <i class="fa "></i> Sayıştay Denetçiliği</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/45-temel-ozellikleriyle-sayistay"> <i class="fa "></i> Temel Özellikleriyle Sayıştay</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/64-sayistay-yargisi"> <i class="fa "></i> Sayıştay  Yargısı</a></li></ul></li><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Yönetim</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/114-sayistay-baskani"> <i class="fa "></i> Sayıştay Başkanı</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/49-baskan-yardimcilari"> <i class="fa "></i> Başkan Yardımcıları </a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/50-bolum-baskanlari"> <i class="fa "></i> Bölüm Başkanları</a></li></ul></li><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Teşkilat Yapısı </a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/123-baskanlik"> <i class="fa "></i> Başkanlık</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/52-yargi-ve-karar-organlari"> <i class="fa "></i> Yargı ve Karar Organları</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/53-denetim-ve-destek-grup-baskanliklari"> <i class="fa "></i> Denetim ve Destek Grup Başkanlıkları</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/54-bassavcilik"> <i class="fa "></i> Başsavcılık</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/55-yonetim-mensuplari"> <i class="fa "></i> Yönetim Mensupları</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/56-teskilat-semasi"> <i class="fa "></i> Teşkilat Şeması</a></li></ul></li><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Uluslararası İlişkiler </a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/79-uye-olunan-uluslararasi-sayistay-teskilatl"> <i class="fa "></i> Üye Olunan Uluslararası Sayıştay Teşkilatları</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/80-ikili-isbirligi-anlasmalari"> <i class="fa "></i> İkili İşbirliği Anlaşmaları</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/81-uluslararasi-kuruluslarin-denetimi"> <i class="fa "></i> Uluslararası Kuruluşların Denetimi</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/82-ortak-denetimler"> <i class="fa "></i> Ortak Denetimler</a></li><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> TURKSAI Başkanlığı</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/538-hakkinda"> <i class="fa "></i> Hakkında</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/539-belgeler"> <i class="fa "></i> Belgeler</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/540-etkinlikler"> <i class="fa "></i> Etkinlikler</a></li></ul></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/98-diger-sayistaylara-yonelik-kapasite-gelist"> <i class="fa "></i> Diğer Sayıştaylara Yönelik Kapasite Geliştirme ve Eğitim Faaliyetleri</a></li></ul></li><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Stratejik Yönetim </a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/59-stratejik-planlar"> <i class="fa "></i> Stratejik Planlar</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/60-performans-programlari"> <i class="fa "></i> Performans Programları</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/61-faaliyet-raporlari"> <i class="fa "></i> Faaliyet Raporları</a></li><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="https://www.sayistay.gov.tr/files/5653_İletişim Stratejisi-30.12.2024.pdf" target='_blank' > <i class="fa "></i> Sayıştay İletişim Stratejisi</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/63-temel-mali-tablolar"> <i class="fa "></i> Temel Mali Tablolar</a></li></ul></li></ul></li><li class="dropdown firstMM"><a class="dropdown-item dropdown-toggle " href="/pages/114-sayistay-baskani"  > <i class="fa "></i> BAŞKAN</a></li><li class="dropdown firstMM"><a class="dropdown-item dropdown-toggle " href="/reports"  > <i class="fa file-invoice"></i> Raporlar</a></li><li class="dropdown firstMM"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Mevzuat</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Anayasa Hükümleri</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/14-anayasanin-sayistayla-ilgili-hukumleri"> <i class="fa "></i> Anayasanın Sayıştayla İlgili Hükümleri</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/15-eski-anayasa-metinlerinde-sayistay"> <i class="fa "></i> Eski Anayasa Metinlerinde Sayıştay</a></li></ul></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/19-kamu-mali-yonetimi-ve-kontrol-kanunu"> <i class="fa "></i> Kamu Mali Yönetimi ve Kontrol Kanunu</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/20-sayistay-kanunu"> <i class="fa "></i> Sayıştay Kanunu</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/21-kit-denetim-mevzuati"> <i class="fa "></i> KİT Denetim Mevzuatı</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/22-sayistay-ikincil-mevzuati"> <i class="fa "></i> Sayıştay İkincil Mevzuatı</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/142-denetim-rehberleri"> <i class="fa "></i> Denetim Rehberleri</a></li><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="/etik" target='_blank' > <i class="fa "></i> Etik</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/88-standartlar"> <i class="fa "></i> Standartlar</a></li></ul></li><li class="dropdown firstMM"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Kararlar</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="https://www.sayistay.gov.tr/KararlarGenelKurul"  > <i class="fa "></i> Genel Kurul Kararları</a></li><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="https://www.sayistay.gov.tr/KararlarTemyiz"  > <i class="fa "></i> Temyiz Kurulu Kararları</a></li><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="https://www.sayistay.gov.tr/KararlarDaire"  > <i class="fa "></i> Daire Kararları</a></li></ul></li><li class="dropdown firstMM"><a href="#" class="dropdown-item dropdown-toggle "> <i class="fa "></i> Yayınlar</a><ul class="dropdown-menu"><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/92-arastirma-inceleme-ceviri"> <i class="fa "></i> Araştırma / İnceleme / Çeviri</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/93-kurulus-yil-donumu-yayinlari"> <i class="fa "></i> Kuruluş Yıl Dönümü Yayınları</a></li><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="https://sayistaydergisi.gov.tr/" target='_blank' > <i class="fa "></i> Sayıştay Dergisi</a></li><li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle " href="/kutuphane" target='_blank' > <i class="fa "></i> Kütüphane</a></li><li class="dropdown-submenu"><a class="dropdown-item " href="/pages/96-uluslararasi-dergiler"> <i class="fa "></i> Uluslararası Dergiler</a></li></ul></li>
+
+                                    </ul>
+                                    <ul class="d-md-none nav nav-pills">
+
+                                        <li class="d-md-none d-flex flex-row justify-content-around m-n4">
+                                            <a href="https://twitter.com/TurkishSAI" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a><a href="https://www.youtube.com/TurkishSAI" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a><a href="https://www.linkedin.com/company/turkish-court-of-accounts-turkishsai/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>                                                 <a href="/pages/146-saglik" aria-label="saglik"><i class="fa fa-heartbeat" aria-hidden="true"></i></a>
+                                        </li>
+
+
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav" aria-label="btn">
+                                <i class="fas fa-bars" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div role="main" class="main">
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class='breadcrumb-item'>
+                            <a href='/'><i class='fa fa-home'></i> Ana Sayfa</a>
+                        </li>
+                        <li class='breadcrumb-item'>
+                            <a href="/reports">Raporlar</a>
+                        </li>
+                        <li class='breadcrumb-item'>
+
+                            <a href=" /reports/category/31-belediyeler---bagli-idareler"> Belediyeler - Ba&#x11F;l&#x131; &#x130;dareler</a>
+                        </li>
+                        <li class='breadcrumb-item'>
+                            G&#xDC;M&#xDC;&#x15E;HANE &#x15E;&#x130;RAN BELED&#x130;YES&#x130;
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-7">
+                <h1 class="mb-0">G&#xDC;M&#xDC;&#x15E;HANE &#x15E;&#x130;RAN BELED&#x130;YES&#x130;</h1>
+                <div class="divider divider-primary divider-small mb-4">
+                    <hr class="mr-auto">
+                </div>
+
+                <div class="note">
+                    Kategori: Belediyeler - Ba&#x11F;l&#x131; &#x130;dareler<br />
+                    Yıl:  2024<br />
+                    Rapor Adı: G&#xDC;M&#xDC;&#x15E;HANE &#x15E;&#x130;RAN BELED&#x130;YES&#x130;<br />
+                    Rapor Dosyası: <a href="/reports/download/47o87vXYy6-gumushane-siran-belediyesi" target="_blank"><i class="fa  fa-download"></i> &#x130;ndir </a><br />
+
+                <span>Kurum Tarafından Sunulan Mali Tablo Dosyası:</span> <a href="/reports/downloadMt/47o87vXYy6-gumushane-siran-belediyesi" target="_blank"><i class="fa fa-download"></i> &#x130;ndir </a><br />
+
+
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+
+               
+
+                <h4 class="mt-5">Bu Kategorideki Di&#x11F;er Raporlar</h4>
+
+                <div class="divider divider-primary divider-small mb-4">
+                    <hr class="mr-auto">
+                </div>
+
+                
+<ul class="list list-unstyled list-primary list-borders">
+        <li class="pt-2 pb-2">
+            <a href="/reports/xLYGe9Wgp4-adana-aladag-belediyesi">
+
+
+                ADANA ALADA&#x11E; BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/6do3Bm9YXx-adana-buyuksehir-belediyesi">
+
+
+                ADANA B&#xDC;Y&#xDC;K&#x15E;EH&#x130;R BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/X6QLVZRoyp-adana-ceyhan-belediyesi">
+
+
+                ADANA CEYHAN BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/Wmo1Dv5YZ3-adana-cukurova-belediyesi">
+
+
+                ADANA &#xC7;UKUROVA BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/OqY7qM4gN1-adana-feke-belediyesi">
+
+
+                ADANA FEKE BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/DNYnDAKg7b-adana-saimbeyli-belediyesi">
+
+
+                ADANA SA&#x130;MBEYL&#x130; BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/DJYy8v8Qwp-adana-seyhan-belediyesi">
+
+
+                ADANA SEYHAN BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/V5g6b59gBP-adana-su-ve-kanalizasyon-idaresi-genel-mudurlugu">
+
+
+                ADANA SU VE KANAL&#x130;ZASYON &#x130;DARES&#x130; GENEL M&#xDC;D&#xDC;RL&#xDC;&#x11E;&#xDC;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/jkQ2av4g70-adana-tufanbeyli-belediyesi">
+
+
+                ADANA TUFANBEYL&#x130; BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+        <li class="pt-2 pb-2">
+            <a href="/reports/1aYBjpPYew-adana-yuregir-belediyesi">
+
+
+                ADANA Y&#xDC;RE&#x11E;&#x130;R BELED&#x130;YES&#x130;                     <strong>2025 </strong>
+            </a>
+        </li>
+</ul>
+
+
+
+            
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="mt-auto d-print-none">
+    <footer id="footer" class="bg-color-quaternary m-0" style="position: relative !important">
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-md-2 my-3 mt-md-0  d-flex align-items-center justify-content-center justify-content-md-start">
+
+                    <a class="" href="/?lang=tr" style="background-color: transparent">
+
+                            <img src="/img/sayistay/logoTr.png" class="img-fluid" alt="Sayıştay Başkanlığı Logo">
+
+
+                    </a>
+                </div>
+
+
+
+                <div class="col-md-10 mb-3">
+                    <div class="contact-details mb-3 pb-5 py-md-5 px-2">
+                        <div class="mb-1 color-white">
+                            <h4>&#x130;leti&#x15F;im Bilgileri</h4>
+                            <p class="text-light" style="text-indent: unset"><a href="https://www.google.com/maps/place/Say%C4%B1%C5%9Ftay+Ba%C5%9Fkanl%C4%B1%C4%9F%C4%B1/39.9145361,32.8198808,16z/data=!4m5!3m4!1s0x0:0x9b65887828b1e316!8m2!3d39.9143452!4d32.8218337?hl=tr-TR" target="_blank"><i class="fas fa-map-marker-alt"></i> Adresi Haritada G&#xF6;ster</a></p>
+                            <p class="text-light" style="text-indent: unset"><a href="https://www.google.com/maps/place/Say%C4%B1%C5%9Ftay+Ba%C5%9Fkanl%C4%B1%C4%9F%C4%B1/39.9145361,32.8198808,16z/data=!4m5!3m4!1s0x0:0x9b65887828b1e316!8m2!3d39.9143452!4d32.8218337?hl=tr-TR" target="_blank"><i class=""></i> &#x130;n&#xF6;n&#xFC; Bulvar&#x131; (Eski&#x15F;ehir Yolu) No:45 06520 Balgat &#xC7;ankaya / ANKARA</a></p>
+                            <p class="text-light d-flex flex-column d-md-block" style="text-indent: unset">
+                                <a href="tel:(+90) 312 295 30 00" class="text-decoration-none font-weight-light d-inline-block mr-md-2"><i class="fas fa-phone"></i> (+90) 312 295 30 00</a>
+
+                                <a href="" class="text-decoration-none font-weight-light d-inline-block mr-md-2">
+
+                                    <i class="fas fa-envelope"></i>&nbsp;<img width="198" alt="Email Bilgisi" src="/img/sayistay/contact/sp.png">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright my-0" style="position: absolute; bottom: 0; left: 0;right:0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                            <nav id="sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href="/">
+                                            Anasayfa
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/pages/64-sayistay-yargisi">
+                                            Yargı
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/reports">
+                                            Raporlar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/pages/145-bilgi-guvenligi-politikasi">
+                                            Bilgi Güvenliği
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-center">T.C. Say&#x131;&#x15F;tay Ba&#x15F;kanl&#x131;&#x11F;&#x131; © 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="/Content/js/bundle.js"></script>
+    
+    <script type="text/javascript">
+
+        $(function () {
+
+        });
+
+    </script>
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ8WMJZFJZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QZ8WMJZFJZ');
+    </script>
+        <!--start:: ERİŞİLEBİLİRLİK MENÜSÜ-->
+
+<button class="accessibility-toggle-button"
+        id="accessibilityToggle"
+        aria-label="Erişilebilirlik Menüsünü Aç">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 122.88 122.88"
+         role="img">
+        <title>Erişilebilirlik Menüsü İkonu</title>
+        <path d="M61.44,0A61.46,61.46,0,1,1,18,18,61.21,61.21,0,0,1,61.44,0Zm-.39,74.18L52.1,98.91a4.94,4.94,0,0,1-2.58,2.83A5,5,0,0,1,42.7,95.5l6.24-17.28a26.3,26.3,0,0,0,1.17-4,40.64,40.64,0,0,0,.54-4.18c.24-2.53.41-5.27.54-7.9s.22-5.18.29-7.29c.09-2.63-.62-2.8-2.73-3.3l-.44-.1-18-3.39A5,5,0,0,1,27.08,46a5,5,0,0,1,5.05-7.74l19.34,3.63c.77.07,1.52.16,2.31.25a57.64,57.64,0,0,0,7.18.53A81.13,81.13,0,0,0,69.9,42c.9-.1,1.75-.21,2.6-.29l18.25-3.42A5,5,0,0,1,94.5,39a5,5,0,0,1,1.3,7,5,5,0,0,1-3.21,2.09L75.15,51.37c-.58.13-1.1.22-1.56.29-1.82.31-2.72.47-2.61,3.06.08,1.89.31,4.15.61,6.51.35,2.77.81,5.71,1.29,8.4.31,1.77.6,3.19,1,4.55s.79,2.75,1.39,4.42l6.11,16.9a5,5,0,0,1-6.82,6.24,4.94,4.94,0,0,1-2.58-2.83L63,74.23,62,72.4l-1,1.78Zm.39-53.52a8.83,8.83,0,1,1-6.24,2.59,8.79,8.79,0,0,1,6.24-2.59Zm36.35,4.43a51.42,51.42,0,1,0,15,36.35,51.27,51.27,0,0,0-15-36.35Z"></path>
+    </svg>
+</button>
+<div id="accessibilityPanel" class="ac-panel">
+    <div class="ac-panel--header">
+        <h5 class="ac-panel--header__title" id="acPanel">
+            Erişilebilirlik Menüsü
+        </h5>
+        <button id="accessibilityCloseButton"
+                type="button"
+                class="ac-panel--close-button"
+                aria-label="Kapat"></button>
+    </div>
+    <div class="ac-panel--body d-flex flex-column">
+        <div class="ac-panel--wrapper">
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="highlight-links">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <title>Bağlantı Vurgula İkonu</title>
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <p class="m-0">Ba&#x11F;lant&#x131; Vurgula</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="bigger-text">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <title>Metni Büyüt İkonu</title>
+                        <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                        <line x1="9" y1="20" x2="15" y2="20"></line>
+                        <line x1="12" y1="4" x2="12" y2="20"></line>
+                    </svg>
+                    <p class="m-0">B&#xFC;y&#xFC;k Metin</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="align-text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <line x1="21" y1="6" x2="3" y2="6"></line>
+                        <line x1="15" y1="12" x2="3" y2="12"></line>
+                        <line x1="17" y1="18" x2="3" y2="18"></line>
+                    </svg>
+                    <p class="m-0">Metni Sola Hizala</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper hide-on-sm">
+                <div class="ac-box" data-acc-option="bigger-cursor">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="m9 9 5 12 1.774-5.226L21 14 9 9z"></path>
+                        <path d="m16.071 16.071 4.243 4.243"></path>
+                        <path d="m7.188 2.239.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656-2.12 2.122"></path>
+                    </svg>
+                    <p class="m-0">&#x130;mle&#xE7;</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper hide-on-sm">
+                <div class="ac-box" data-acc-option="reading-guide">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z"></path>
+                        <path d="m16 12 2 2 4-4"></path>
+                        <path d="M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3"></path>
+                    </svg>
+                    <p class="m-0">Okuma K&#x131;lavuzu</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper hide-on-sm">
+                <div class="ac-box" data-acc-option="reading-mask">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <path d="M8 13h2"></path>
+                        <path d="M8 17h2"></path>
+                        <path d="M14 13h2"></path>
+                        <path d="M14 17h2"></path>
+                    </svg>
+                    <p class="m-0">Okuma Maskesi</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="dyslexic-friendly">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M4 20h16"></path>
+                        <path d="m6 16 6-12 6 12"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                    <p class="m-0">Disleksi Dostu</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="contrast">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 18a6 6 0 0 0 0-12v12z"></path>
+                    </svg>
+                    <p class="m-0">Kontrast</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="desaturate">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M12 10V2"></path>
+                        <path d="m4.93 10.93 1.41 1.41"></path>
+                        <path d="M2 18h2"></path>
+                        <path d="M20 18h2"></path>
+                        <path d="m19.07 10.93-1.41 1.41"></path>
+                        <path d="M22 22H2"></path>
+                        <path d="m16 6-4 4-4-4"></path>
+                        <path d="M16 18a4 4 0 0 0-8 0"></path>
+                    </svg>
+                    <p class="m-0">Solgunla&#x15F;t&#x131;rma</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="low-saturation">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                        <path d="M12 8a2.828 2.828 0 1 0 4 4"></path>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <p class="m-0">D&#xFC;&#x15F;&#xFC;k Doygunluk</p>
+                </div>
+            </div>
+            <div class="ac-box-wrapper">
+                <div class="ac-box" data-acc-option="high-saturation">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <p class="m-0">Y&#xFC;ksek Doygunluk</p>
+                </div>
+            </div>
+        </div>
+        <button id="clearSettings" class="ac-clear-button">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="24"
+                 height="24"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <path d="M3 2v6h6"></path>
+                <path d="M21 12A9 9 0 0 0 6 5.3L3 8"></path>
+                <path d="M21 22v-6h-6"></path>
+                <path d="M3 12a9 9 0 0 0 15 6.7l3-2.7"></path>
+            </svg>
+            Erişilebilirlik Ayarlarını Temizle
+        </button>
+    </div>
+</div>
+<div id="readingFocusTop" class="reading-focus-overlay-top"></div>
+<div id="readingFocusBottom" class="reading-focus-overlay-bottom"></div>
+<div id="readingGuideLine" class="reading-guide-line"></div>
+
+<!--end:: ERİŞİLEBİLİRLİK MENÜSÜ--> 
+</body>
+<script src="/js/accessibility.min.js"></script> 
+</html>
