@@ -1,0 +1,97 @@
+{
+  "reviewer_kind": "agent",
+  "scope": "2015/222–258 tarife yazıları; 2015/202–206 181 ada parsel listesi; 2015/243 4438 ada mülkiyet adı",
+  "source_original": "data/practices/sources/dbp/objects/6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3/original.pdf",
+  "source_sha256": "6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3",
+  "queries": [
+    {
+      "query": "\"Bağlar\" belediyesi \"2015/258\" \"tarife\"",
+      "result": "Arama belediyenin 2015 yıllık karar derlemesini buldu; münferit 584 veya 626 sayılı yazı ve eki bulunmadı."
+    },
+    {
+      "query": "\"Bağlar\" \"27/11/2015\" \"584\" \"tarife\"",
+      "result": "Özgün 584 sayılı yazı veya ekine ilişkin eşleşen belge bulunmadı."
+    },
+    {
+      "query": "\"Bağlar\" \"2015/206\" \"1395\" \"181\" imar",
+      "result": "2015/202–206 ile eşleşen özgün 1395 yazı veya plan eki bulunmadı."
+    },
+    {
+      "query": "\"181 ada\" \"1395\" \"Bağlar\" \"2015\"",
+      "result": "Eşleşen Bağlar plan eki yok; Sakarya Bağlar mahallesi sonuçları farklı yer."
+    },
+    {
+      "query": "\"Bağlar\" \"16.09.2015\" \"1395\" \"plan\"",
+      "result": "Eşleşen özgün dayanak ve plan bulunmadı."
+    },
+    {
+      "query": "\"Bağlar\" \"2015/243\" \"4438\" 2015 imar",
+      "result": "2015/243'e bağlı tapu veya plan eki bulunmadı."
+    },
+    {
+      "query": "\"4438 ada\" \"Hasan İdikurt\" \"Hediye Yiğit\" 2015",
+      "result": "Eşleşen özgün mülkiyet ve plan eki bulunmadı."
+    },
+    {
+      "query": "site:baglar.bel.tr 2015 belediye meclisi kararları tarife imar",
+      "result": "Yıllık meclis kararları, genel duyurular ve sicil portalı görüldü; üç uyuşmazlığın ekleri bu sorgu ve erişimlerden bulunmadı."
+    }
+  ],
+  "portal_visits": [
+    {
+      "url": "https://www.baglar.bel.tr/tr/dokumanlar/meclis-kararlari",
+      "outcome": "Erişildi; görünür liste 2016–2026 yıllarını gösteriyor, ayrı 2015 dayanak yazıları listelenmiyor."
+    },
+    {
+      "url": "https://www.baglar.bel.tr/tr/cat/duyuru",
+      "outcome": "Erişildi; açılan ilk sayfa 2026 güncel ilanları, aranan 2015 plan ekleri burada görünmüyor; diğer bütün sayfalar taranmış sayılmaz."
+    },
+    {
+      "url": "https://webportal.baglar.bel.tr/web/guest/2",
+      "outcome": "Web aracı 502 döndürdü; 2015 meclis ve parsel sorgulama sonuçları görülemedi. İndekslenen portal sayfasında bazı sicil işlemleri üyelik/SMS gerektiriyor; bu bütün portal fonksiyonlarının kapalı olduğu anlamına gelmez."
+    },
+    {
+      "url": "https://www.baglar.bel.tr/",
+      "outcome": "curl GET HTTP 200, son adres /tr; ana sayfanın açılması özgün yazı/ek erişimini kanıtlamaz."
+    }
+  ],
+  "internal_comparison": [
+    {
+      "indexes": [
+        24,
+        228,
+        264
+      ],
+      "finding": "Aynı belediye derlemesinde 09.01.2015 tarihli /24, 26.11.2014 tarih 626 sayılı yazıya ve 2015 tarifelerine dayanır. 11.12.2015 /258 de 26.11.2014 626'yı anar ama 05.11.2015 sevkini ve 2016 tarifelerini anlatır. /222 05.11.2015 kararında 27.11.2015 584 yazısı geçer. Bu başka bir yazının metin yoluyla kanıtı değil; /24 ile /258 aynı derlemedir, kopyalama olduğu kesinlenemez."
+    },
+    {
+      "indexes": [
+        207,
+        211,
+        212
+      ],
+      "finding": "/202 listesinde 181 ada 1,2,3,4,10,10,12; /206 raporunda 1,2,3,4,10,11,12; aynı 16.09.2015 1395 yazı ve UİP-1246,14 referansları var. Ek plan ve özgün yazı olmadan doğru liste belirlenemez."
+    },
+    {
+      "indexes": [
+        249,
+        250
+      ],
+      "finding": "/243 raporunun giriş ve inceleme paragraflarında 4438 ada 2–4 için farklı mülkiyet adları geçer; mülkiyet kaydı açık. 27.10.2015 1537 yazı ve UİP-1252,1 /238 sevkiyle eşleşir; tescil veya fiili uygulama kanıtlanmadı."
+    }
+  ],
+  "limitations": [
+    "İnternet sorgularından sonuç çıkmaması kaynağın mevcut olmadığını kanıtlamaz.",
+    "2015/24, /222, /258 aynı özgün PDF'deki kayıtlardır; bağımsız kaynak değildir.",
+    "Görünen parsel veya kişi bilgilerinden güncel mülkiyet ve özel tapu kaydı çıkarılmadı.",
+    "Tarife kabulü, uygulanma ya da tahsilat kanıtı değildir; plan kararı da inşaat kanıtı değildir.",
+    "Konu hücreleri ve kapsam kapanışı üretilmedi."
+  ],
+  "unresolved": [
+    "27.11.2015 tarih 584 sayılı Mali Hizmetler yazısı ve 2016 tarife ekleri",
+    "26.11.2014 tarih 626 sayılı yazı ile 2015 tarife ekleri",
+    "16.09.2015 tarih 1395 sayılı yazı ve UİP-1246,14 imzalı plan",
+    "27.10.2015 tarih 1537 sayılı yazı, UİP-1252,1 plan ve dönemsel yetkili mülkiyet kaydı"
+  ],
+  "closure_refs": []
+}
