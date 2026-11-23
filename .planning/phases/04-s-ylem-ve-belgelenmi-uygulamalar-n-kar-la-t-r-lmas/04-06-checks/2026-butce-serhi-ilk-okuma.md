@@ -79,3 +79,5 @@ PDF 137–140: maden ruhsatları, orman, baraj ve çatışmanın ekonomik maliye
 PDF 141–144: planlanan kurum ödenekleri, Kuzey İrlanda/Bask karşılaştırmaları ve demokratik ekonomi yaklaşımı okunmuştur. Ülkeler arası büyüme ve işsizlik karşılaştırmalarının dönem ve yöntemi dış kaynaklarla doğrulanmadı; 2026 ödenekleri gerçekleşmiş harcamalar değildir. 0–144 toplam 145/160, 15 açık.
 
 PDF 145–148: katılımcı/komünal ekonomi, ekolojik ekonomi ve demokratik toplum yaklaşımları şerhin normatif önerileri olarak okunmuştur; mevcut yönetim veya gerçekleşmiş reform olarak sunulmaz. 0–148 toplam 149/160, 11 açık.
+
+PDF 149–152: demokratik toplum, yerel katılım, inanç özgürlüğü ve kadın örgütlenmesine dair şerhte açıklanan model okunmuştur. Modelin gerçekleştiği veya anayasal düzenleme olduğu sonucuna gidilmez. 0–152 toplam 153/160, 7 açık.
