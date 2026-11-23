@@ -11647,24 +11647,6 @@
       "kind": "finding_evidence",
       "values": {
         "finding_id": "0406-2026-congress-finding",
-        "passage_id": "0406-2026-congress-party-result",
-        "role": "support"
-      }
-    },
-    {
-      "kind": "verification",
-      "values": {
-        "finding_id": "0406-2026-congress-finding",
-        "passage_id": "0406-2026-congress-party-result",
-        "checked_at": "2026-11-23T15:38:13.583941+00:00",
-        "result": "confirmed",
-        "reason": "Parti biyografisi ve iki ayrı haber ilgili bölümleri okundu."
-      }
-    },
-    {
-      "kind": "finding_evidence",
-      "values": {
-        "finding_id": "0406-2026-congress-finding",
         "passage_id": "0406-2026-congress-dw-result",
         "role": "support"
       }
@@ -11674,7 +11656,7 @@
       "values": {
         "finding_id": "0406-2026-congress-finding",
         "passage_id": "0406-2026-congress-dw-result",
-        "checked_at": "2026-11-23T15:38:13.583941+00:00",
+        "checked_at": "2026-11-23T15:58:42.355423+00:00",
         "result": "confirmed",
         "reason": "Parti biyografisi ve iki ayrı haber ilgili bölümleri okundu."
       }
@@ -11692,7 +11674,7 @@
       "values": {
         "finding_id": "0406-2026-congress-finding",
         "passage_id": "0406-2026-congress-jin-result",
-        "checked_at": "2026-11-23T15:38:13.583941+00:00",
+        "checked_at": "2026-11-23T15:58:42.355423+00:00",
         "result": "confirmed",
         "reason": "Parti biyografisi ve iki ayrı haber ilgili bölümleri okundu."
       }
@@ -11710,7 +11692,7 @@
       "values": {
         "finding_id": "0406-2026-congress-finding",
         "passage_id": "0406-2026-congress-jin-count",
-        "checked_at": "2026-11-23T15:38:13.583941+00:00",
+        "checked_at": "2026-11-23T15:58:42.355423+00:00",
         "result": "confirmed",
         "reason": "Parti biyografisi ve iki ayrı haber ilgili bölümleri okundu."
       }
@@ -11722,7 +11704,7 @@
         "kind": "finding",
         "subject_id": "0406-2026-congress-finding",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-23T15:38:13.583941+00:00",
+        "reviewed_at": "2026-11-23T15:58:42.355423+00:00",
         "result": "reviewed",
         "reason": "Kongre günü, parti ve haberlerin bildirdiği seçim sonucu kontrol edildi."
       }
@@ -14150,15 +14132,6 @@
       },
       {
         "event_id": "0406-2026-congress-event",
-        "passage_id": "0406-2026-congress-party-result",
-        "supported_point": "Parti biyografisinde 2026 seçimi",
-        "stage": "result",
-        "concrete_basis": "Parti biyografisi ile DW Türkçe ve JINNEWS kongre haberleri.",
-        "limitation": "Oy sayıları haber kaynaklarına atfedilir; seçim tutanağı elde edilmedi.",
-        "epistemic_type": "claim"
-      },
-      {
-        "event_id": "0406-2026-congress-event",
         "passage_id": "0406-2026-congress-dw-result",
         "supported_point": "DW haberinde iki başkan ve geçerli oylar",
         "stage": "result",
@@ -15332,19 +15305,19 @@
         "scope_id": "practice-a433ea5fa3150ee0f0b832989d2c0ca7c9ff2925ed20fec91567a684719d2d83",
         "version_id": "0406-2026-congress-party-v1",
         "inspected_sections": "[\"Parti biyografisinde 2026 seçimi\"]",
-        "inspected_at": "2026-11-23T15:38:13.583941+00:00"
+        "inspected_at": "2026-11-23T15:58:42.355423+00:00"
       },
       {
         "scope_id": "practice-a433ea5fa3150ee0f0b832989d2c0ca7c9ff2925ed20fec91567a684719d2d83",
         "version_id": "0406-2026-congress-dw-v1",
         "inspected_sections": "[\"DW haberinde iki başkan ve geçerli oylar\"]",
-        "inspected_at": "2026-11-23T15:38:13.583941+00:00"
+        "inspected_at": "2026-11-23T15:58:42.355423+00:00"
       },
       {
         "scope_id": "practice-a433ea5fa3150ee0f0b832989d2c0ca7c9ff2925ed20fec91567a684719d2d83",
         "version_id": "0406-2026-congress-jin-v1",
         "inspected_sections": "[\"JINNEWS haberinde kapalı oylama\", \"JINNEWS haberinde kullanılan ve geçerli oylar\"]",
-        "inspected_at": "2026-11-23T15:38:13.583941+00:00"
+        "inspected_at": "2026-11-23T15:58:42.355423+00:00"
       }
     ],
     "practice_lead": [
@@ -15758,7 +15731,7 @@
       {
         "id": "0406-2026-congress-party-v1-reading",
         "scope_id": "practice-a433ea5fa3150ee0f0b832989d2c0ca7c9ff2925ed20fec91567a684719d2d83",
-        "attempted_at": "2026-11-23T15:38:13.583941+00:00",
+        "attempted_at": "2026-11-23T15:58:42.355423+00:00",
         "query": "DEM 6 Eylül 2026 5. olağan kongre eş genel başkan seçimi",
         "url": "https://www.demparti.org.tr/tr/es-genel-baskanlar/17705/",
         "result": "examined",
@@ -15768,7 +15741,7 @@
       {
         "id": "0406-2026-congress-dw-v1-reading",
         "scope_id": "practice-a433ea5fa3150ee0f0b832989d2c0ca7c9ff2925ed20fec91567a684719d2d83",
-        "attempted_at": "2026-11-23T15:38:13.583941+00:00",
+        "attempted_at": "2026-11-23T15:58:42.355423+00:00",
         "query": "DEM 6 Eylül 2026 5. olağan kongre eş genel başkan seçimi",
         "url": "https://amp.dw.com/tr/dem-partide-bak%C4%B1rhan-ve-hatimo%C4%9Fullar%C4%B1-yeniden-se%C3%A7ildi/a-79055597",
         "result": "examined",
@@ -15778,7 +15751,7 @@
       {
         "id": "0406-2026-congress-jin-v1-reading",
         "scope_id": "practice-a433ea5fa3150ee0f0b832989d2c0ca7c9ff2925ed20fec91567a684719d2d83",
-        "attempted_at": "2026-11-23T15:38:13.583941+00:00",
+        "attempted_at": "2026-11-23T15:58:42.355423+00:00",
         "query": "DEM 6 Eylül 2026 5. olağan kongre eş genel başkan seçimi",
         "url": "https://jinnews.net/GUNCEL/content/view/287978",
         "result": "examined",
@@ -16172,7 +16145,7 @@
         "relation_id": null,
         "state": "unmatched",
         "reason": "Eş genel başkan seçimi ve 2023 tarihsel tüzük arasındaki ilişki, tüzük nüshasının dönemsel yürürlüğü ayrı doğrulanana dek açık tutuluyor.",
-        "passage_ids": "[\"0406-2026-congress-party-result\", \"0406-2026-congress-dw-result\", \"0406-2026-congress-jin-result\", \"0406-2026-congress-jin-count\"]"
+        "passage_ids": "[\"0406-2026-congress-dw-result\", \"0406-2026-congress-jin-result\", \"0406-2026-congress-jin-count\"]"
       }
     ],
     "practice_closure": [],
@@ -17477,12 +17450,6 @@
       {
         "event_id": "0406-dem-teacher-4314-event",
         "passage_id": "0406-dem-teacher-4314-result",
-        "stage": "result",
-        "basis_kind": "document"
-      },
-      {
-        "event_id": "0406-2026-congress-event",
-        "passage_id": "0406-2026-congress-party-result",
         "stage": "result",
         "basis_kind": "document"
       },

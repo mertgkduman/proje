@@ -12,8 +12,8 @@ spec = importlib.util.spec_from_file_location('tracer', here / 'tracer-validatio
 mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 package, review = here / '2026-congress-dem-draft.json', here / '2026-congress-dem-review-draft.json'
-assert mod.sha(package) == '5412ce22c2f8d6456658ac5a46c9420d611ee169b8dad2642e69f703c56684c6'
-assert mod.sha(review) == '2d85e13d3f84fb7ed18ebc53112a3ef2d616205b1e92768dd648804e1ffa0ea6'
+assert mod.sha(package) == '9cbb67a8ee21b3cc3a8489405e521c80d05c8177c18056c24118ae03bc8903d6'
+assert mod.sha(review) == '29d3fb79e29688dad1c791ea87117775fed32f3cb30ad2f6ed8327e18772f854'
 before = json.loads((root / 'data/practices/04-dem.json').read_text())
 after = json.loads(package.read_text())
 canon = lambda row: json.dumps(row, sort_keys=True, ensure_ascii=False)

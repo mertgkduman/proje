@@ -6,8 +6,8 @@ from uygulamalar import practice_review_targets, validate_practice_source_review
 c = Path(__file__).resolve().parent
 root = c.parents[3]
 p, r = c/'2026-congress-dem-draft.json', c/'2026-congress-dem-review-draft.json'
-assert hashlib.sha256(p.read_bytes()).hexdigest() == '5412ce22c2f8d6456658ac5a46c9420d611ee169b8dad2642e69f703c56684c6'
-assert hashlib.sha256(r.read_bytes()).hexdigest() == '2d85e13d3f84fb7ed18ebc53112a3ef2d616205b1e92768dd648804e1ffa0ea6'
+assert hashlib.sha256(p.read_bytes()).hexdigest() == '9cbb67a8ee21b3cc3a8489405e521c80d05c8177c18056c24118ae03bc8903d6'
+assert hashlib.sha256(r.read_bytes()).hexdigest() == '29d3fb79e29688dad1c791ea87117775fed32f3cb30ad2f6ed8327e18772f854'
 payload, review = json.loads(p.read_text()), json.loads(r.read_text())
 data = dict(payload['practice_records'])
 for x in payload['entries']: data.setdefault(x['kind'], []).append(x['values'])
@@ -19,7 +19,7 @@ names = ('practice_event', 'practice_event_evidence', 'practice_contribution', '
 sel = {k:[x for x in data.get(k, []) if str(x.get('id', x.get('event_id', ''))).startswith(prefix)] for k in names}
 targets = practice_review_targets(data, sel)
 rows = {(x['subject_kind'], x['subject_id']): x for x in review['practice_source_review']}
-assert len(targets) == 8
+assert len(targets) == 7
 for key, (refs, _) in targets.items(): assert key in rows and set(json.loads(rows[key]['passage_ids'])) == refs, key
 validate_practice_source_review(data, [rows[key] for key in targets], selection=sel)
 versions = {x['id']: x for x in data['document_version']}
@@ -28,4 +28,4 @@ for passage in (x for x in data['passage'] if x['id'].startswith(prefix)):
     path = root / 'data/practices/sources/dem' / version['original_path']
     text = pdf_page_text(path, passage['pdf_page_index']) if version['mime'] == 'application/pdf' else html_source_text(path.read_bytes())
     assert passage['exact'] in text or (not text.strip() and any(m['passage_id'] == passage['id'] for m in data.get('manual_passage', []))), passage['id']
-print('CONGRESS_TARGETS_8_AND_PASSAGES_OK')
+print('CONGRESS_TARGETS_7_AND_PASSAGES_OK')

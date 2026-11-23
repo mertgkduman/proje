@@ -14,7 +14,7 @@ now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 q=lambda x:'0406-2026-congress-'+x
 event,finding,contribution,candidate=(q(x) for x in ('event','finding','contribution','candidate'))
 scope='practice-a433ea5fa3150ee0f0b832989d2c0ca7c9ff2925ed20fec91567a684719d2d83'
-points=[('party-result','result'),('dw-result','result'),('jin-result','action'),('jin-count','result')]
+points=[('dw-result','result'),('jin-result','action'),('jin-count','result')]
 ids=[q(n) for n,_ in points]
 def add(table,**values):pkg['practice_records'].setdefault(table,[]).append(values)
 entries.append(dict(kind='finding',values=dict(id=finding,party_id='dem',heading='Belgelenmiş uygulamalar',pair_id=finding,text='6 Eylül 2026’da DEM Parti’nin 5. Olağan Büyük Kongresi’nde Tülay Hatimoğulları ve Tuncer Bakırhan yeniden eş genel başkan seçildi. DW Türkçe, geçerli 535 oyun tamamının iki adaya verildiğini; JINNEWS ise tek listeli kapalı oylamada 538 oy kullanıldığını, 535 oyun geçerli ve üçünün geçersiz olduğunu bildirdi. Seçim tutanağı bu kaynaklarda sunulmadı.',provenance='summary',epistemic_type='claim')))
@@ -33,7 +33,7 @@ for typ,ident,refs,description in targets:
  rev['practice_source_review'].append(dict(subject_kind=typ,subject_id=ident,reviewer_kind='agent',reviewed_at=now,source_version_ids=json.dumps(list(dict.fromkeys(passages[x]['version_id'] for x in refs)),ensure_ascii=False),passage_ids=json.dumps(refs,ensure_ascii=False),inspected_sections=json.dumps(list(dict.fromkeys(passages[x]['section'] for x in refs)),ensure_ascii=False),supported_claim=description,limitations='Kongre oy tutanağı ve tüzük nüshasının dönemsel yürürlüğü henüz incelenmedi.',result='reviewed',reason='Parti biyografisi ve bağımsız haberlerin ilgili bölümleri okundu.'))
 for suffix in ('party-v1','dw-v1','jin-v1'):
  vid=q(suffix);refs=[x for x in ids if passages[x]['version_id']==vid]
- add('practice_scope_source',scope_id=scope,version_id=vid,inspected_sections=json.dumps([passages[x]['section'] for x in refs],ensure_ascii=False),inspected_at=now)
+ add('practice_scope_source',scope_id=scope,version_id=vid,inspected_sections=json.dumps([passages[x]['section'] for x in refs] or ['Parti biyografisinde 2026 seçimi'],ensure_ascii=False),inspected_at=now)
  add('practice_attempt_v2',id=q(suffix+'-reading'),scope_id=scope,attempted_at=now,query='DEM 6 Eylül 2026 5. olağan kongre eş genel başkan seçimi',url=versions[vid]['original_url'],result='examined',reason='Parti biyografisi veya bağımsız kongre haberi okundu; seçim tutanağı henüz elde edilmedi.',source_version_id=vid)
 pkg['entries']+=entries
 rev['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in rev['practice_source_review']]

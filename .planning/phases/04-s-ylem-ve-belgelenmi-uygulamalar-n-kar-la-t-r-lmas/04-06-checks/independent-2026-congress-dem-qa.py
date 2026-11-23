@@ -13,8 +13,8 @@ sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
 package = checks / '2026-congress-dem-draft.json'
 review = checks / '2026-congress-dem-review-draft.json'
-assert sha(package) == '5412ce22c2f8d6456658ac5a46c9420d611ee169b8dad2642e69f703c56684c6'
-assert sha(review) == '2d85e13d3f84fb7ed18ebc53112a3ef2d616205b1e92768dd648804e1ffa0ea6'
+assert sha(package) == '9cbb67a8ee21b3cc3a8489405e521c80d05c8177c18056c24118ae03bc8903d6'
+assert sha(review) == '29d3fb79e29688dad1c791ea87117775fed32f3cb30ad2f6ed8327e18772f854'
 old = root / 'data/practices/04-dem.json'
 old_review = root / 'data/practices/04-dem-review.json'
 assert sha(old) == 'af249fce72f3d37a197b087d725a2a8094ef3bf6ef9c94c5c6c8c4b5574d652d'
