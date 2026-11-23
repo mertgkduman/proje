@@ -11,7 +11,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 143 | 141 | 62489303 |
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 45 | 9 | 62490422 |
-| İYİ Parti | 15 | 10 | 62489274 |
+| İYİ Parti | 16 | 10 | 62490451 |
 | Yeni Yol | 18 | 11 | 62490452 |
 | DBP | 29 | 7 | 62489251 |
 | EMEP | 54 | 56 | 62487027 |
@@ -161,3 +161,5 @@ Mahmut Arıkan’ın 28 Ocak ve 11 Ağustos 2026 tarihli karşılıklı ziyaretl
 DEM Parti’nin 4114 sayılı komisyon raporunun 18–20. maddeleri ile geçici 1 ve 2. maddelerinin çıkarılması için verdiği beş önerge ve 14. maddeye yönelik ayrı Anayasa itirazı kayda geçti. İki HTML görünümü ve bağımsız kayıt karşılaştırması geçti. [DEM Parti devam kaydı](../04-06-checks/devam-notu.md)
 
 10/4961 sayılı araştırma önergesinin ön görüşmesinde Selçuk Özdağ’ın Yeni Yol Grubu adına sözlü destek açıklaması iki HTML görünümünde doğrulandı. Ön görüşme gündem talebi reddedildi. Tutanakta kişisel oy dökümü bulunmadı. [Yeni Yol makbuzu](../04-08-checks/nov03-4961-62490452.json)
+
+Turhan Çömez’in 3 Kasım birleşiminde kendi grubunun 10/4961 önergesine ilişkin açıklaması iki görünümde doğrulandı. Ön görüşme takvimi reddedildi. 30 Ekim KAP bildirimindeki taslak karşılık ve şirket anlatımı ile önergede ileri sürülen zarar ayrı kaydedildi. [İYİ Parti makbuzu](../04-07-checks/nov03-4961-62490451.json)
