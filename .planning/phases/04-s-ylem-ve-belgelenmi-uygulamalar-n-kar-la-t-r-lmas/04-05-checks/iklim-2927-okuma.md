@@ -72,3 +72,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 210–214 metin olarak incelendi: 210 yalnız iki grafik başlığı, 211–214 meteoroloji indisleri, tablo ve grafik açıklamaları. İndeks 210, 212–214 grafikleri ve 211–212 tablo düzeni görsel olarak okunmadı; metin kaynak aktarımı veya bağımsız iklim bulgusu olarak kullanılmadı. 0–214 arası 215/860 indeksin metni veya boşluğu tarandı; grafikler ve 645 indeks açık.
 
 2021 raporu indeks 215–219 metin olarak incelendi: kuraklık ve buharlaşma arka planı, kurumlara atıf ve tarihsel model-senaryo projeksiyonları. 215–216 ve 218–219 grafik ve haritaları ile 217 tablo düzeni görsel olarak incelenmedi; bağımsız bulgu ya da TİP görüşü çıkarılmadı. 0–219 arası 220/860 indeksin metni veya boşluğu tarandı, grafikler ve 640 indeks açık.
+
+2021 raporu indeks 220–224 metin olarak incelendi: RCP4.5/RCP8.5 senaryolarında 2016–2099 sıcaklık projeksiyonlarının açıklamaları. Haritalar ve grafikler henüz görsel olarak okunmadı; projeksiyonlar gerçekleşmiş ölçüm veya TİP tutumu olarak aktarılmadı. 0–224 arası 225/860 indeksin metni veya boşluğu tarandı; grafikler ve 635 indeks açık.
