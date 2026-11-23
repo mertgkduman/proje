@@ -61,3 +61,5 @@ PDF 98–101: savunma, faiz ve kurum ödenekleriyle toplumsal cinsiyete duyarlı
 PDF 102–105: toplumsal cinsiyet bütçelemesi, inanç alanı, engelli hakları ve bakım emeği önerileri incelendi. 105’te engelliler için asgari ücrete eş değer temel yurttaşlık geliri önerisi ile bakım emeği güvencesi ayrı hedeflerdir; 2/2159’un belirli kapsamlı teklifinin yürürlüğe girdiği veya tüm toplum için gelir ödendiği sonucu çıkmaz. 0–105 ve 115–117 toplam 109/160, 51 açık.
 
 PDF 106–109: çocuklara yönelik bütçe, ekoloji/kentsel dönüşüm ve tarım destekleri hakkındaki değerlendirmeler okundu. Kümülatif hedef, yıllık hedef ve gerçekleşme farklıdır; bütçe tahsisi ile gerçekleşen uygulama aynı değildir. ÇED, ithalat ve çevresel zarar anlatıları doğrulanmamış şerh iddiaları olarak kalır. 0–109 ve 115–117 toplam 113/160, 47 açık.
+
+PDF 110–113: eğitim bütçesi, gençlik ve sağlıkta kamu-özel ilişkisine dair şerh değerlendirmeleri ve gelecek hedefleri okunmuştur; kurum tutarları ve hizmet sonuçları özgün bütçe ve uygulama belgeleri incelenmeden doğrulanmış sayılmaz. 0–113 ve 115–117 toplam 117/160, 43 açık.
