@@ -12,7 +12,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 51 | 9 | 62499139 |
 | İYİ Parti | 17 | 10 | 62492649 |
-| Yeni Yol | 21 | 12 | 62498133 |
+| Yeni Yol | 23 | 12 | 62500375 |
 | DBP | 58 | 7 | 62499119 |
 | EMEP | 59 | 61 | 62491846 |
 | Saadet Partisi | 23 | 19 | 62498024 |
@@ -229,3 +229,5 @@ Bağlar karar defterinin 139–167 indeksleri özgün görüntülerden okundu. T
 Dördüncü yalıtılmış birleştirme 413 parti olay satırından 397 ayrı olay ve 304 ilişki üretti. Dokuz ortak olay doğrulandı, 12 ortak olay incelemesi açık. 10/4251’in ortak olay kimliğinde Yeni Yol temsil görevi, Saadet söylem karşılaştırması ve önceki söylemi açık Yeni Yol adayı korundu. 25 Haziran, 27 Temmuz ve 17 Ağustos TMO kayıtları ayrı doğrulandı. Bağımsız süreç on SQLite ve JSON tablosu, iki görünümde 608 ilişki bağlantısı ve kanonik dosya özetlerini denetledi. Kapsam kapanışı sıfır. [Makbuz](wave4-merge-rehearsal-04-62500022.json)
 
 Bağlar defterinde 200 ayrı sayfa okundu ve 69 sayfa açık. /140 sevkini izleyen /171 Solin yaz raporu, 400 çocuğu ay bazında ve 45 kadını o güne kadarki sayı olarak bildiriyor. Bireysel katılım kayıtları ile /85 yönetmelik eki açık. /139→167 Yazı İşleri kalemleri, /99→105 Temizlik İşleri uyuşmazlığından ayrı. [Okuma kaydı](../04-09-checks/baglar-council-2015-reading-012.json)
+
+Yeni Yol’un 10/2881 tekstil araştırması için 2 Temmuz ön görüşme reddi ile Ekmen’in ayrı 7/29149 yazılı sorusuna 9 Temmuz’da bildirilen Bakanlık cevabı iki HTML görünümünde doğrulandı. 10/2881 önerge içindeki 19,3 ve 19,2 milyar dolar ifadeleri ayrı. 7/29149’da genel destek, konkordato verisinin kaynak sınırı ve başvuru sahibi aktör ayrı. [Makbuz](../04-08-checks/textile-2881-62500375.json)
