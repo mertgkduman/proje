@@ -38,6 +38,11 @@ assert len(events) == 27
 assert events <= {r['id'] for r in snapshot['practice_event']}
 db = sqlite3.connect(f'file:{folder / "records.sqlite3"}?mode=ro', uri=True)
 assert all(db.execute('select 1 from practice_event where id=?', (e,)).fetchone() for e in events)
+for n in range(1, 6):
+    for suffix in ('akin-dem', 'koca-grup'):
+        event, passage = f'0406-4114-madde{n}-event', f'0406-4114-{suffix}'
+        assert any(x['event_id'] == event and x['passage_id'] == passage and x['stage'] == 'action' for x in snapshot['practice_event_evidence'])
+        assert db.execute('select 1 from practice_event_evidence where event_id=? and passage_id=? and stage=?', (event, passage, 'action')).fetchone()
 db.close()
 html = (folder / 'index.html').read_text()
 for prefix in ('party', 'comparison'):
