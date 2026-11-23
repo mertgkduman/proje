@@ -338,3 +338,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 737–738 görsel okundu: CHP şerhinde 9,5 milyon bina ve 1,3 milyon belgeli bina, sonraki sayfada yüzde 3,2 yazıyor; görsel de metin çıkarımını doğruluyor. Aritmetik ilişki kaynakta tutarsız; hesap veya farklı payda uydurulmadı.
 
 - PDF indeks 762 (basılı 745) görsel okundu: 44.449 tondan 76.867 tona yüzde 42 artış ifadesi gerçekten basılıdır. Bu iki sayı yaklaşık yüzde 72,9 artış verir; farklı kapsam olasılığı veya asıl istatistik incelenmedi.
+
+- PDF indeks 746 (basılı 729) görsel okundu: aynı cümlede 133 milyon ton ile yani 2 milyar tondan fazla ifadeleri gerçekten basılı. Nicelik ilişkisi asıl MAPEG kaynağına gidilmeden çözülmedi.
