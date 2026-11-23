@@ -190,3 +190,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 505–509 metni tarandı: organik tarım ve biyoenerji hakkındaki kurum anlatımları ile tarımsal uyum Ar-Ge öngörüleri. 509 grafik görseli okunmadı; sağlık ve üretim iddiaları bağımsız tıbbi/bilimsel doğrulama ya da TİP faaliyeti sayılmadı. 0–509: 510/860 indeks metni veya boşluğu tarandı; görseller ve 350 indeks açık.
 
 2021 raporu indeks 510–514 metni tarandı: tarım araştırmaları, sürmekteki proje hedefleri ve toplantı görüşleri. 512 şekli görsel incelenmedi; kurum planları ve uzman görüşleri TİP işlemi sayılmadı. 0–514: 515/860 indeks metni veya boşluğu tarandı; görseller ve 345 indeks açık.
+
+2021 raporu indeks 515–519 metni tarandı: bitkisel üretim destekleri, orman uyumu, komisyon görüşleri ve tarihsel strateji belgeleri. Farklı konuşmacıların eleştirileri ve kurum planları TİP faaliyeti veya gerçekleşme olarak kodlanmadı. 0–519: 520/860 indeks metni veya boşluğu tarandı; görseller ve 340 indeks açık.
