@@ -166,3 +166,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 445–449 metni tarandı: yeraltı suyu ve geçmiş yönetim mevzuatı, rezerv ve tahsis hakkındaki kurumsal anlatımlar. 446 ve 448 harita/grafikler ile 447 karışık tablo görsel okunmadı; 445 yeraltı suyuna dair mutlak koruma ifadeleri bağımsız doğrulama olarak alınmadı. Raporun önerileri TİP politikası sayılmadı. 0–449: 450/860 indeks metni veya boşluğu tarandı; görseller ve 410 indeks açık.
 
 2021 raporu indeks 450–454 metni tarandı: komisyon konuşmacılarının yeraltı suyu ve sulama hakkındaki görüşleri, DSİ izleme açıklaması. 451, 452–454 görsel grafik ve tablolar incelenmedi; iddialar kişilerde kaldı, bağımsız doğrulama veya TİP faaliyeti sayılmadı. 0–454: 455/860 indeks metni veya boşluğu tarandı; görseller ve 405 indeks açık.
+
+2021 raporu indeks 455–459 metni tarandı: yeraltı suyu seviyeleri, obruk konusundaki toplantı soru ve yanıtları, kuraklık ve ölçüm hedefleri. 455–456 ve 459 grafikleri görsel okunmadı; görüş ve hedefler kendi bağlamında tutuldu. 0–459: 460/860 indeks metni veya boşluğu tarandı; görseller ve 400 indeks açık.
