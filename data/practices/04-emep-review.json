@@ -223,6 +223,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-earthquake-11963-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-11963-detail-date-p\", \"0410-emep-earthquake-11963-detail-number-p\", \"0410-emep-earthquake-11963-detail-owner-p\", \"0410-emep-earthquake-11963-detail-reply-p\", \"0410-emep-earthquake-11963-detail-topic-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-earthquake-11963-event kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-earthquake2025-hatay-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T03:51:11+00:00",
@@ -1442,6 +1455,71 @@
       "limitations": "Haber disiplin kurulu üyelerinin sayısını ve oylama biçimini belirtmez; sekiz sayısı genel merkez delegelerine aittir.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-corum-il-kongre-event|0410-emep-2023-corum-discipline-p|result için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-11963-detail-date-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-date-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-number-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-11963-detail-number-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-number-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-11963-detail-owner-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-owner-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-11963-detail-reply-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-reply-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-11963-detail-topic-p\"]",
+      "inspected_sections": "[\"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-topic-p|action kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -3291,6 +3369,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-earthquake-11963-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0309-emep-program-057-0-passage\", \"0410-emep-earthquake-11963-detail-date-p\", \"0410-emep-earthquake-11963-detail-number-p\", \"0410-emep-earthquake-11963-detail-owner-p\", \"0410-emep-earthquake-11963-detail-reply-p\", \"0410-emep-earthquake-11963-detail-topic-p\"]",
+      "inspected_sections": "[\"G/C/1\", \"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-earthquake-11963-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-earthquake2025-hatay-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T03:51:11+00:00",
@@ -4094,6 +4185,19 @@
       "limitations": "Haber disiplin kurulu üyelerinin sayısını ve oylama biçimini belirtmez; sekiz sayısı genel merkez delegelerine aittir.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-corum-disiplin-relation için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-earthquake-11963-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-earthquake-11963-detail-v1\"]",
+      "passage_ids": "[\"0309-emep-program-057-0-passage\", \"0410-emep-earthquake-11963-detail-date-p\", \"0410-emep-earthquake-11963-detail-number-p\", \"0410-emep-earthquake-11963-detail-owner-p\", \"0410-emep-earthquake-11963-detail-reply-p\", \"0410-emep-earthquake-11963-detail-topic-p\"]",
+      "inspected_sections": "[\"G/C/1\", \"Soru ve yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-earthquake-11963-relation kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -5108,6 +5212,19 @@
       "limitations": "Haber disiplin kurulu üyelerinin sayısını ve oylama biçimini belirtmez; sekiz sayısı genel merkez delegelerine aittir.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-corum-disiplin-relation için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-earthquake-11963-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T14:58:12+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-057-0-passage\"]",
+      "inspected_sections": "[\"G/C/1\"]",
+      "supported_claim": "Program ve TBMM kayıt pasajları okundu.",
+      "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-earthquake-11963-relation kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -6741,6 +6858,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-earthquake-11963-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-earthquake2025-hatay-event"
     },
     {
@@ -7114,6 +7235,26 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-corum-il-kongre-event|0410-emep-2023-corum-discipline-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-number-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-topic-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -7685,6 +7826,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-earthquake-11963-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-earthquake2025-hatay-relation"
     },
     {
@@ -7933,6 +8078,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-earthquake-11963-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-earthquake2025-hatay-relation"
     },
     {
@@ -8242,6 +8391,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-corum-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-earthquake-11963-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
