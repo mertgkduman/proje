@@ -8,7 +8,7 @@ from arsiv_gorunum import build_view, validate_view
 root = Path('data/practices/sources/emep')
 now = datetime.now(timezone.utc).isoformat(timespec='seconds')
 sources = [
-    ('statement', '/tmp/gsd0410-media/party.html', 'https://www.emep.org/iskender-bayhan-saray-oligarsisinin-baskisindan-genel-direnis-hattiyla-kurtulabiliriz', '2026-10-16', 'party_publication', 'Emek Partisi', 'Haber merkezi', 'Bayhan basın özgürlüğü açıklaması', 'Halkın haber alma hakkı, basın özgürlüğü, Halk TV hedefe konuyor.'),
+    ('statement', '/tmp/gsd0410-media/party.html', 'https://www.emep.org/iskender-bayhan-saray-oligarsisinin-baskisindan-genel-direnis-hattiyla-kurtulabiliriz', '2026-10-16', 'party_publication', 'Emek Partisi', 'Emep', 'Bayhan basın özgürlüğü açıklaması', 'Halkın haber alma hakkı, basın özgürlüğü, Halk TV hedefe konuyor.'),
     ('event', '/tmp/gsd0410-media/anka.html', 'https://ankahaber.net/haber/emep-li-bayhan-371-televizyon-kanalinin-hepsine-el-koysaniz-da-gercekleri-karartamayacaksiniz-be4252fc', '2026-10-15', 'journalism', 'ANKA Haber Ajansı', 'ANKA Haber', 'Bayhan Halk TV açıklaması', 'Halk TV’ye kayyum atanmasına ilişkin'),
 ]
 entries = []
