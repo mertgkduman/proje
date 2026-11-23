@@ -258,3 +258,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 675–679 metni: atık su geri kullanımı, taşkın ve yeraltı suyu konulu tarihli komisyon önerileri; hedeflenen su tasarrufu ve düzenlemeler gerçekleşmiş sonuç veya TİP görüşü değildir. Tablolar görsel incelenmedi. Sonraki 680; metin taraması 680/860, görseller ve 180 indeks açık.
 
 - PDF indeks 680–684 metni: yeraltı suyu kuyuları, tahsis, kooperatifler ve eğitim üzerine komisyon önerileri; partiye veya gerçekleşmiş sonuca atfedilmedi. 683 yeraltı suyunun nükleer etkilerden korunmasına dair genelleme rapor iddiasıdır, bağımsız doğrulama sayılmadı. Tablolar görsel incelenmedi. Sonraki 685; metin taraması 685/860, görseller ve 175 indeks açık.
+
+- PDF indeks 685–689 metni: eğitim, tarım, hayvancılık, kuraklık izleme ve üretim planlama konulu komisyon tavsiyeleri öneri olarak tutuldu; partiye veya uygulanmış sonuca atfedilmedi. Tablolar görsel incelenmedi. Sonraki 690; metin taraması 690/860, görseller ve 170 indeks açık.
