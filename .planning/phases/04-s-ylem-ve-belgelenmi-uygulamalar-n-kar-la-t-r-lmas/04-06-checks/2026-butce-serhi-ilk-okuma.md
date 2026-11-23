@@ -43,3 +43,5 @@ PDF 62–65: gelir ve kurumlar vergisi karşılaştırması, Vergi Konseyi öner
 PDF 66–69: ücret/ücret dışı vergi tarifesi önerisi, vergi harcamaları ve aflar, borçluluk tartışması okunmuştur. Şerh 69. indekste toplam 42 vergi affı ve alt dönemlerde 7+8+11+15 verir; bu dönemlerin toplamı 41’dir. Kapsamlar ve dönem sınırları açıklanmadan farklılık korunur. Önerilen tarife yürürlükteki tarife değildir. 0–69 ve 115–117 toplam 73/160, 87 açık.
 
 PDF 70–73: borçluluk, kredi kartları ve 2020–2025 kredi tabloları incelendi. 71. indeks 2020–2025 karşılaştırmasını dört yıl diye tanımlarken 73. indeks aynı aralığı beş yıllık diye adlandırır; belge içi dönem farkı kaynak aslı incelenmeden düzeltilmez. Nominal toplamlar, kişi sayıları ve yasal takip sayıları farklı ölçülerdir. 0–73 ve 115–117 toplam 77/160, 83 açık.
+
+PDF 74–77: kadınların ve esnafın borçluluğu, tarım kredileri, kamu faizi ve kadın yoksulluğuna dair şerh analizi okundu. Gerçekleşmiş net borç, bütçe teklifindeki faiz ödeneği ve sonraki yıla ilişkin tahminler ayrı ölçü ve dönemlerdir; dış veriler doğrulanmadı. 0–77 ve 115–117 toplam 81/160, 79 açık.
