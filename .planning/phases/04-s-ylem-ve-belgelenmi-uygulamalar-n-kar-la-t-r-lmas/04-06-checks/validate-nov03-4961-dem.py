@@ -13,7 +13,7 @@ mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 package, review = here / 'nov03-4961-dem-draft.json', here / 'nov03-4961-dem-review-draft.json'
 assert mod.sha(package) == '0e498c38317c2746319cd8e9fa1f2cc0139a0c804fa43e8ff4ab55853ff41557'
-assert mod.sha(review) == 'c3f1303a72f442b0d12d9fab49471efb57d75138bc4168cc6542875338ef6f6c'
+assert mod.sha(review) == 'e552eebf675ae0f8f4834291f9cba7c5f8288171dc906913737cd03d94d1a46c'
 before = json.loads((root / 'data/practices/04-dem.json').read_text())
 after = json.loads(package.read_text())
 canon = lambda row: json.dumps(row, sort_keys=True, ensure_ascii=False)

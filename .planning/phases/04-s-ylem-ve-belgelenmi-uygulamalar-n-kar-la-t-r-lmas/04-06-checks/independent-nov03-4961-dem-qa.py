@@ -14,11 +14,11 @@ canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
 package = checks / 'nov03-4961-dem-draft.json'
 review = checks / 'nov03-4961-dem-review-draft.json'
 assert sha(package) == '0e498c38317c2746319cd8e9fa1f2cc0139a0c804fa43e8ff4ab55853ff41557'
-assert sha(review) == 'c3f1303a72f442b0d12d9fab49471efb57d75138bc4168cc6542875338ef6f6c'
+assert sha(review) == 'e552eebf675ae0f8f4834291f9cba7c5f8288171dc906913737cd03d94d1a46c'
 old = root / 'data/practices/04-dem.json'
 old_review = root / 'data/practices/04-dem-review.json'
 assert sha(old) == '8eda3f1baafa3f6c5f0b8cf8c6d0074e15faccf5e1fd7094ab83bfd8ed6aa7ee'
-assert sha(old_review) == '7455297c72c70d2093de684ab3473ca0434065b1b2f175d45ad2c06a2b74fdc9'
+assert sha(old_review) == '999f247823a2b19f1912dcce2a059f3be03d880063cfbac863e43a0919141391'
 base, new = (json.loads(p.read_text()) for p in (old, package))
 for key in ('entries', 'scope_inventory'):
     assert {canon(r) for r in base[key]} <= {canon(r) for r in new[key]}

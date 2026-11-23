@@ -6,7 +6,7 @@ c = Path(__file__).resolve().parent
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 package, review = c / 'nov03-dem-draft.json', c / 'nov03-dem-review-draft.json'
 assert sha(package) == '8eda3f1baafa3f6c5f0b8cf8c6d0074e15faccf5e1fd7094ab83bfd8ed6aa7ee'
-assert sha(review) == '7455297c72c70d2093de684ab3473ca0434065b1b2f175d45ad2c06a2b74fdc9'
+assert sha(review) == '999f247823a2b19f1912dcce2a059f3be03d880063cfbac863e43a0919141391'
 pkg, rev = json.loads(package.read_text()), json.loads(review.read_text())
 entries = json.loads((c / 'nov03-4961-dem-source-records.json').read_text())['entries']
 passages = {x['values']['id']: x['values'] for x in entries if x['kind'] == 'passage'}
@@ -49,7 +49,7 @@ for typ, ident, refs, description in targets:
     rev['practice_source_review'].append(dict(subject_kind=typ, subject_id=ident, reviewer_kind='agent', reviewed_at=now,
         source_version_ids=json.dumps(versions, ensure_ascii=False), passage_ids=json.dumps(refs, ensure_ascii=False),
         inspected_sections=json.dumps([passages[x]['section'] for x in refs], ensure_ascii=False), supported_claim=description,
-        limitations='İsimli oy, açık destek ve esas önergenin kabul veya reddi çıkarılmaz.', result='reviewed', reason='İlgili sicil, imzalı dosya ve tutanak okundu.'))
+        limitations='İsimli oy, açık destek ve esas önergenin kabul veya reddi çıkarılmaz.', result='reviewed', reason=('İmzalı 8/153 belgesinin ilk sayfasındaki esas numarası incelendi.' if 'genelgorusme-signed-number|initiative' in ident else 'TBMM 8/153 esas kaydındaki numara incelendi.' if 'genelgorusme-register-number|initiative' in ident else 'TBMM 10/4961 esas kaydındaki numara incelendi.' if '4961-register-number|initiative' in ident else 'İlgili sicil, imzalı dosya ve tutanak okundu.')))
 urls = {'floor-v1': 'https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/5/12/Ham/0643059d-54b7-4950-980d-f3f86843df5e.html',
         'register-v1': 'https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/e60bf69c-b039-4d55-895f-01a1a6e214e5',
         'signed-v1': 'https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T10/WebOnergeMetni/7c72b7a0-bb49-404b-a402-d6e82f3651b7.pdf'}

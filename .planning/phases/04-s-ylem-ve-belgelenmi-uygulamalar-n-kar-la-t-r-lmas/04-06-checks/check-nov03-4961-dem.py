@@ -7,7 +7,7 @@ c = Path(__file__).resolve().parent
 root = c.parents[3]
 p, r = c/'nov03-4961-dem-draft.json', c/'nov03-4961-dem-review-draft.json'
 assert hashlib.sha256(p.read_bytes()).hexdigest() == '0e498c38317c2746319cd8e9fa1f2cc0139a0c804fa43e8ff4ab55853ff41557'
-assert hashlib.sha256(r.read_bytes()).hexdigest() == 'c3f1303a72f442b0d12d9fab49471efb57d75138bc4168cc6542875338ef6f6c'
+assert hashlib.sha256(r.read_bytes()).hexdigest() == 'e552eebf675ae0f8f4834291f9cba7c5f8288171dc906913737cd03d94d1a46c'
 payload, review = json.loads(p.read_text()), json.loads(r.read_text())
 data = dict(payload['practice_records'])
 for x in payload['entries']: data.setdefault(x['kind'], []).append(x['values'])
