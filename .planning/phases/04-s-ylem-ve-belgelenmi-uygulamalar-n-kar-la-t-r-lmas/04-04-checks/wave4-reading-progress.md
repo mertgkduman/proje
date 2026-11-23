@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 141 | 141 | 62468795 |
 | TİP | 17 | 17 | 62466264 |
-| DEM Parti | 17 | 9 | 62468809 |
+| DEM Parti | 19 | 9 | 62479627 |
 | İYİ Parti | 11 | 9 | 62478838 |
 | Yeni Yol | 13 | 9 | 62477835 |
 | DBP | 11 | 7 | 62464556 |
-| EMEP | 43 | 45 | 62472618 |
+| EMEP | 44 | 46 | 62473858 |
 | Saadet Partisi | 11 | 11 | 62475555 |
 | Demokrat Parti | 17 | 16 | 62478768 |
 
@@ -77,3 +77,7 @@ EMEP’in 2023 Malatya 10. il kongresine ilişkin bağımsız yerel yayın iki g
 İYİ Parti’nin 14 Ekim önergesi iki görünümde doğrulandı. Taş ve Usta’nın emsal getiriyi aşan tutar için zorunlu iade önergesi komisyonda reddedildi. Komisyon daha sonra ayrı isteğe bağlı iade değişikliğini ve değişen 4. maddeyi kabul etti. [Doğrulama makbuzu](../04-07-checks/fund-commission-art4-62478838.json) [Kaynak okuması](../04-07-checks/fund-commission-art4-reading.md)
 
 Demokrat Parti’nin 2/4007 staj ve çıraklık teklifi iki görünümde doğrulandı. İmzalı metin, 3 Kasım başvurusu ve 4 Kasım komisyon girişleri ayrı kayıtlarda. 2021’de arşivlenen parti programındaki genç istihdamı ve eşit erişim amacıyla konu bağlantısı belgelendi. Teklif TBMM kaydında «Komisyonda». [Doğrulama makbuzu](../04-12-checks/staj-4007-62478768.json) [Kaynak okuması](../04-12-checks/staj-4007-reading.md)
+
+DEM Parti’nin fon komisyonunda belirli fiiller için cebren tahsil ve küçük hisse yatırımcılarının kapsama alınmasına yönelik iki ayrı önergesi doğrulandı. Her önerge için tutanakta ayrı ret kararı var. [Doğrulama makbuzu](../04-06-checks/dem-5472-motions-v2-62479627.json)
+
+EMEP’in 6 Eylül Kırşehir il kongresi ve Pelin Atarbay’ın seçildiği bilgisi iki görünümde doğrulandı. Ayrı yerel haber ve parti kaydı aynı kongreye ait. İmzalı oy cetveli araştırmaya açık. [Doğrulama makbuzu](../04-10-checks/kirsehir2026-62473858-receipt.json)
