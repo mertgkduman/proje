@@ -184,3 +184,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 490–494 metni tarandı: kurak bölge ağaçlandırması, kurumların Ar-Ge projeleri ve tarımsal kuraklık risk haritaları. 493–494 haritalar görsel incelenmedi; kurumların sayıları ve iddiaları bağımsız sonuç veya TİP işlemi olarak alınmadı. 0–494: 495/860 indeks metni veya boşluğu tarandı; görseller ve 365 indeks açık.
 
 2021 raporu indeks 495–499 metni tarandı: uluslararası çölleşmeyle mücadele işbirliği, kurum proje anlatımı ve tarım uyumu. 499 kanun tablosu tarihsel ikincil anlatımdır, mevzuat numaraları görsel veya Resmî Gazete ile doğrulanmadı; güncel hukuk ve TİP işlemi olarak kullanılmadı. 0–499: 500/860 indeks metni veya boşluğu tarandı; görseller ve 360 indeks açık.
+
+2021 raporu indeks 500–504 metni tarandı: tarım uyumu, gübreleme, nitrat yönetimi ve ilgili kurum anlatımları. 501–502 görselleri okunmadı; tarihli kurum destekleri veya sonraki planlar TİP icraatı ya da güncel durum sayılmadı. 0–504: 505/860 indeks metni veya boşluğu tarandı; görseller ve 355 indeks açık.
