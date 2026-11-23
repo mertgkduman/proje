@@ -1,6 +1,7 @@
 """10/4830 ve 10/4918 resmi kaynakları; taslak değil gerçek pasajlar."""
 import json
 import hashlib
+import re
 from pathlib import Path
 from arsiv import html_source_text, pdf_page_text
 
@@ -24,7 +25,8 @@ for item in capture['records']:
         entries.append(dict(kind='archive_view', values=item['view']))
         text = html_source_text(raw)
         name = 'Bitlis Milletvekili H&#xFC;seyin Olan ve 19 Milletvekili' if number=='4830' else '&#x15E;&#x131;rnak Milletvekili Mehmet Zeki &#x130;rmez ve 19 Milletvekili'
-        specs = [('number','<td>10 / '+number+'</td>','Esas numarası'), ('filed','<td>21/10/2026</td>','Başkanlığa geliş'), ('owner',name,'İlk imza sahibi ve sayı'), ('party','Halklar&#x131;n E&#x15F;itlik Ve Demokrasi Partisi','İmza sahibinin parti bilgisi'), ('pending','<td>G&#xFC;ndemde</td>','Erişim anındaki dosya durumu')]
+        summary = re.search(r'<td>Sermaye piyasalar&#x131;nda ya&#x15F;anan manip&#xFC;lasyon.*?</td>', text).group()
+        specs = [('number','<td>10 / '+number+'</td>','Esas numarası'), ('filed','<td>21/10/2026</td>','Başkanlığa geliş'), ('owner',name,'İlk imza sahibi ve sayı'), ('party','Halklar&#x131;n E&#x15F;itlik Ve Demokrasi Partisi','İmza sahibinin parti bilgisi'), ('summary',summary,'Araştırma isteğinin TBMM özeti'), ('pending','<td>G&#xFC;ndemde</td>','Erişim anındaki dosya durumu')]
         for label, exact, section in specs:
             assert exact in text, (ident,label)
             entries.append(dict(kind='passage', values=dict(id=doc+'-'+label+'-p', version_id=ver, exact=exact, prefix=None, suffix=None, article=None, section=section, pdf_page_index=None, printed_page=None)))
