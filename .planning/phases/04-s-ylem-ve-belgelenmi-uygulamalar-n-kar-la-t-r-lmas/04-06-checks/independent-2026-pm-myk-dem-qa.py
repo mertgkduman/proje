@@ -13,12 +13,12 @@ sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
 package = checks / '2026-pm-myk-dem-draft.json'
 review = checks / '2026-pm-myk-dem-review-draft.json'
-assert sha(package) == '521311d1d65c480770478910b28b5de4fa40f585f81aa3fabe758e2eb0a2ecf4'
-assert sha(review) == '16daa3bcfdf9bcaea5d3fcd045b26b2a2f450da74987f625312eb217ffddf4b5'
+assert sha(package) == '6e6161fe2a8e29fe78185807d03c27c441a912084e6d27cef2b3716e06747553'
+assert sha(review) == 'eef2fb99c8c9ef7c296bb59d02079f6aac5a84415162d4b1c53b13f932e6c2a7'
 old = root / 'data/practices/04-dem.json'
 old_review = root / 'data/practices/04-dem-review.json'
-assert sha(old) == '9cbb67a8ee21b3cc3a8489405e521c80d05c8177c18056c24118ae03bc8903d6'
-assert sha(old_review) == '29d3fb79e29688dad1c791ea87117775fed32f3cb30ad2f6ed8327e18772f854'
+assert sha(old) == '41dcecda6759d881634fa06bb764ff73ebc76863a7176b9fe6823a95f986a6a2'
+assert sha(old_review) == '4ff6002d431d89d1be21dd8af075a32780b1ed0603e04cfbeb7471da83f48613'
 base, new = (json.loads(p.read_text()) for p in (old, package))
 for key in ('entries', 'scope_inventory'):
     assert {canon(r) for r in base[key]} <= {canon(r) for r in new[key]}

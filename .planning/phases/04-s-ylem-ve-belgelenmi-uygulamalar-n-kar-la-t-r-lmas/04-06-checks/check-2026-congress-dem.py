@@ -6,8 +6,8 @@ from uygulamalar import practice_review_targets, validate_practice_source_review
 c = Path(__file__).resolve().parent
 root = c.parents[3]
 p, r = c/'2026-congress-dem-draft.json', c/'2026-congress-dem-review-draft.json'
-assert hashlib.sha256(p.read_bytes()).hexdigest() == '9cbb67a8ee21b3cc3a8489405e521c80d05c8177c18056c24118ae03bc8903d6'
-assert hashlib.sha256(r.read_bytes()).hexdigest() == '29d3fb79e29688dad1c791ea87117775fed32f3cb30ad2f6ed8327e18772f854'
+assert hashlib.sha256(p.read_bytes()).hexdigest() == '41dcecda6759d881634fa06bb764ff73ebc76863a7176b9fe6823a95f986a6a2'
+assert hashlib.sha256(r.read_bytes()).hexdigest() == '4ff6002d431d89d1be21dd8af075a32780b1ed0603e04cfbeb7471da83f48613'
 payload, review = json.loads(p.read_text()), json.loads(r.read_text())
 data = dict(payload['practice_records'])
 for x in payload['entries']: data.setdefault(x['kind'], []).append(x['values'])

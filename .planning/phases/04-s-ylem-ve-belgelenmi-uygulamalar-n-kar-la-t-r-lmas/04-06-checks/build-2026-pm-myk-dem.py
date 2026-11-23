@@ -4,8 +4,8 @@ from pathlib import Path
 c=Path(__file__).resolve().parent
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 p,r=c/'2026-congress-dem-draft.json',c/'2026-congress-dem-review-draft.json'
-assert sha(p)=='9cbb67a8ee21b3cc3a8489405e521c80d05c8177c18056c24118ae03bc8903d6'
-assert sha(r)=='29d3fb79e29688dad1c791ea87117775fed32f3cb30ad2f6ed8327e18772f854'
+assert sha(p)=='41dcecda6759d881634fa06bb764ff73ebc76863a7176b9fe6823a95f986a6a2'
+assert sha(r)=='4ff6002d431d89d1be21dd8af075a32780b1ed0603e04cfbeb7471da83f48613'
 pkg,rev=json.loads(p.read_text()),json.loads(r.read_text())
 entries=json.loads((c/'2026-pm-myk-records.json').read_text())['entries']
 passages={x['values']['id']:x['values'] for x in entries if x['kind']=='passage'}
