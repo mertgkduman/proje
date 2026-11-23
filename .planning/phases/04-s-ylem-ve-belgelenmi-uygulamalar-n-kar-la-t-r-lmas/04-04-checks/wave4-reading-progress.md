@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 36 | 38 | 62461291 |
 | Saadet Partisi | 8 | 6 | 62437168 |
-| Demokrat Parti | 11 | 10 | 62466333 |
+| Demokrat Parti | 12 | 11 | 62467362 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -43,3 +43,5 @@ DBP dosyasında Diyarbakır’ın 27 Mayıs 2015 otobüs tanıtımı ve il eş b
 Demokrat Parti’nin 2/3965 dosyası programın geçmişte arşivlenmiş yatırımcı güveni hedefiyle birlikte iki görünümde doğrulandı. 20 Ekim başvurusu, 21 Ekim komisyon sevki ve erişilen «Komisyonda» durumu kaynaklı. Demokrat Parti arşiv programı ile Şiran Sayıştay raporunun sayfa okumaları tamamlandı. [Makbuz](../04-12-checks/fund-3965-62466333.json) [Program okuması](../04-12-checks/dp-program-archive-reading.md) [Şiran okuması](../04-12-checks/siran-local-government-reading.md)
 
 7552’nin aynı Genel Kurul olayında TİP’in üç ret oyu, EMEP’in bir ret oyu ve Bayhan’ın «Katılmadı» kaydı ayrı parti kaynaklarıyla doğrulandı. DEM Parti’nin 7 Ekim olay başlığı ve kapsamı aynı tutanağa dayalı ortak alanlarla uyumlu. [TİP makbuzu](../04-05-checks/iklim-62466264.json) [EMEP makbuzu](../04-10-checks/climate-attribution-fixed-union-62461291-receipt.json) [DEM makbuzu](../04-06-checks/dem-fund-align-62466224.json)
+
+Şiran Tekstilkent için adayın 29 Şubat 2024’te yayımlanan hedefleri ve belediyenin 18 Mayıs yer incelemesi duyurusu iki görünümde doğrulandı. İşletme açılışı ve istihdam sayıları için okuma açık. [Makbuz](../04-12-checks/siran-tekstil-62467362.json) [Kaynak okuması](../04-12-checks/siran-tekstil-reading.md)
