@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 7 | 6 | 62445700 |
 | Yeni Yol | 8 | 5 | 62447773 |
 | DBP | 10 | 7 | 62443961 |
-| EMEP | 32 | 34 | 62443500 |
+| EMEP | 33 | 35 | 62453840 |
 | Saadet Partisi | 8 | 6 | 62437168 |
 | Demokrat Parti | 10 | 9 | 62452450 |
 
@@ -23,3 +23,5 @@ TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından eriş
 Yeni Parti’nin beş ek fon denetimi sorusu ve üç cevabı kaynaklarıyla okundu. D-04 düzeltmesi 62401376 ile 7/49426 okul güvenliği kaydında doğrulandı. [Makbuz](d04-unmatched-v30-62401376.json)
 
 Yeni parti aktörü ve kişi kaydı ile taranmış PDF pasajı kontrolleri 62394087 işinde geçti. Hakkâri dosyasını engelleyen ihtilaf özeti gösterimi 855ba31 ile iki görünüme eklendi. Ayrı süreçlerde aynı HTML'yi üretmek için açık konu satırlarının sırası 4109c5d ile sabitlendi. Kanonik sürüm işaretçisi `f67ca0a35e634035bf3aa83a46571f50` olarak kaldı.
+
+EMEP’in Çayırhan 7/20948 soru ve cevap zinciri yalıtılmış önizlemede doğrulandı. Bakanlık yanıtındaki ihale ertelemesi ile ihalenin nihai sonucu ayrı. [EMEP makbuzu](../04-10-checks/cayirhan-branch-62453840-receipt.json)
