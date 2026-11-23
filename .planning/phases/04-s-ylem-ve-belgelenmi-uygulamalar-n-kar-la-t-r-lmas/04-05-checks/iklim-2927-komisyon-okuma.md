@@ -47,3 +47,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 İndeks 133–142 metin katmanından okundu: gelir, idari yaptırımlar, denetim, geçiş ve yürürlük hükümleri teklif ve komisyon sütunlarında yer alır. Böylece bu 143 sayfalık raporun 0–27 ve 115–142 indeksleri metin katmanından, 28–114 indeksleri görsel olarak okunmuştur. Çift sütun atfı için gerektiğinde görsel doğrulama ve ayrı Genel Kurul metni karşılaştırması gerekir; bu durum diğer kaynakların veya 610 kapsam hücresinin tamamlandığı anlamına gelmez.
 
 Özgün 42 sayfalık teklifin 0–9. indeksleri görsel incelendi: ilk sayfada AK Parti grup başkanlığı tarihi ve üç isimli sunuş, 1. indekste esas ve tali komisyon sevk kutusu; 2–9 arasında el yazılı imza listeleri var. Bazı el yazıları belirsiz olduğundan bütün imzacıların kimliği kesinlenmedi. 10–41 gerekçe ve teklif metinleri ayrı okunacak.
+
+Özgün teklif indeks 10–17 metin katmanından okundu; genel gerekçe ile 1–9 maddelere ilişkin gerekçe başlar. Metin tanıma kusurları bulunduğundan alıntı yapılırsa özgün görüntüyle karşılaştırılmalı.
