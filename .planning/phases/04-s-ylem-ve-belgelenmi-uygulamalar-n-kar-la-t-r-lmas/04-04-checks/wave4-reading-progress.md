@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 40 | 42 | 62464623 |
 | Saadet Partisi | 11 | 9 | 62473205 |
-| Demokrat Parti | 12 | 11 | 62467362 |
+| Demokrat Parti | 14 | 13 | 62474909 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -59,3 +59,5 @@ EMEP’in 7/27371 meslek hastalığı sorusu doğrulandı. 22 Mayıs Gelen Kâğ
 Saadet karşılaştırmasına 27 Ekim SPK 76/1903 kararı ve 30 Ekim’de başladığı açıklanan ara ödemeler ayrı tarihli kayıtlar olarak eklendi. 29,3 milyar TL, İletişim Başkanlığı açıklamasına ve bunu aktaran imzalı Bakanlık cevabına bağlı. [Saadet makbuzu](../04-11-checks/fund-payments-62473205.json)
 
 EMEP’in deprem barınma dosyasında toplantının günü belirsiz kaldı. İki görünümde toplantı ve 5 Şubat yayımı ayrı. [EMEP makbuzu](../04-10-checks/earthquake2025-date-uncertain-62464623-receipt.json)
+
+Demokrat Parti’nin 2021 ve 2023 kesin hesap kararları, arşiv tüzüğündeki kesin hesap ve denetim hükümleriyle karşılaştırıldı. AYM karar tarihleri ve Resmî Gazete yayım tarihleri ayrı kayıtlarda. Her iki kararın hükmü Mahkemenin inceleyebildiği belgelerle sınırlı. İlk gönderim günü ve parti içi hesap onayının tutanakları araştırmaya açık. [Doğrulama makbuzu](../04-12-checks/aym-accounts-62474909.json) [Kaynak okuması](../04-12-checks/aym-accounts-reading.md)
