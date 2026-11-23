@@ -55,3 +55,5 @@ Rapor indeks 20–21, teklifin 20 Şubat 2025 sunulduğunu, 21 Şubat sevk edild
 Özgün teklif indeks 26–33 metin katmanından okundu; 1–10 maddeleri başlar. Metin tanıma hataları varsa sayfa görseli gerekir; özgün teklif ile komisyon değişikliği ayrı tutulur.
 
 Özgün teklif indeks 34–41 metin katmanından okundu; 10–20 ve geçici maddeler sonlanır. Böylece 42 sayfanın 0–9 indeksleri görsel, 10–41 indeksleri metin katmanı üzerinden okundu; kimi el yazısı imzalar ve tanıma bozuklukları kesinleştirilmemiştir. Bu, tüm TİP araştırması veya kapsamı tamamlandı demek değildir.
+
+104. birleşim tam tutanağı f4fe6efc ile SHA 84c36043d410905c0227bc2ed17339ecd2fbc94fe0a58c6d0f40ea5afe57a679 arşivlendi. Son konuşma ve oylama bölümü incelendi: başkan 383 toplam, 242 kabul, 141 ret duyurdu; kesin cetvel aynı 383 toplamı 242 kabul, 140 ret ve 1 mükerrer olarak gösteriyor. Aşamalar birleştirilmedi. Bu bölümde Ali Mahir Başarır konuşması kendisine aittir, TİP beyanı değildir. Geri kalan uzun tutanak okunmamıştır.
