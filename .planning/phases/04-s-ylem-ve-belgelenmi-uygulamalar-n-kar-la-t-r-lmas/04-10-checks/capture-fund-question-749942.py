@@ -30,7 +30,7 @@ for role, typ, path, url in sources:
         else:
             dest.write_bytes(content)
     add('document', id=ident, party_id='emep', title='TBMM 7/49942 ' + {'register':'kayıt', 'question':'yazılı soru', 'answer':'bakanlık yanıtı'}[role], source_kind='official')
-    date = '2026-09-29' if role == 'question' else None
+    date = {'question': '2026-09-29', 'answer': '2026-11-04'}.get(role)
     add('document_version', id=ident+'-v1', document_id=ident, original_url=url, final_url=url, document_date=date, version_label={'register':'TBMM kayıt ekranı', 'question':'TBMM yazılı soru', 'answer':'Bakanlık yanıtı, altı sayfa görsel okundu'}[role], accessed_at=now, verified_at=now, mime='text/html' if typ=='html' else 'application/pdf', sha256=sha, original_path='objects/'+sha+'/'+original, readable_path='objects/'+sha+'/readable.html', date_precision='day' if date else 'unknown', date_unknown_reason=None if date else 'Belgenin yayımlanma tarihi doğrulanmadı.')
     if typ == 'html':
         view = build_view(raw, url, root, fetch_assets=False, http_charset='utf-8')
@@ -44,7 +44,7 @@ for role, typ, path, url in sources:
         exact = 'Fon vurgunundan mağdur olan 455 bini aşkın yurttaşın'
         assert exact in pdf_page_text(Path(path), 1)
         add('passage', id=ident+'-sale-p', version_id=ident+'-v1', exact=exact, prefix=None, suffix=None, article=None, section='Fon tasfiyesine ilişkin yazılı soru', pdf_page_index=1, printed_page=None)
-    add('source_attribution', version_id=ident+'-v1', kind='official', publisher='Türkiye Büyük Millet Meclisi', author=None, social_handle=None, published_at=None, date_precision='unknown', public_url=url, basis='TBMM resmî kayıt, soru ve bakanlık yanıtı ayrı belgelerdir; yayın tarihi çıkarılmadı.')
+    add('source_attribution', version_id=ident+'-v1', kind='official', publisher='Türkiye Büyük Millet Meclisi', author='Hazine ve Maliye Bakanlığı' if role == 'answer' else None, social_handle=None, published_at=None, date_precision='unknown', public_url=url, basis=('04.11.2026 tarihli Bakanlık üst yazısı; TBMM bildirilişi 05.11.2026; yayım tarihi çıkarılmadı.' if role == 'answer' else 'TBMM resmî kayıt, soru ve bakanlık yanıtı ayrı belgelerdir; yayın tarihi çıkarılmadı.'))
     print(role, sha)
 
 out = Path(__file__).parent / "fund-question-749942-source-draft.json"
