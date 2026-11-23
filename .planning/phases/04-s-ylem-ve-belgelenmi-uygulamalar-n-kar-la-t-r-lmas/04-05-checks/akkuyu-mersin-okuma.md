@@ -48,3 +48,4 @@ PDF indeks 65–69 okundu: CHP Süleyman Girgin, HDP Ömer Öcalan, İYİ Aydın
 - Tam tutanak indeks 118–122 okundu: HDP Serpil Kemalbay Pekgözegü, MHP Tamer Osmanağaoğlu ve CHP Bülent Kuşoğlu konuşuyor; Sayıştay bulgularına yönelik değerlendirmeler Kuşoğlu’na, Amasra üzerine sözler Kemalbay’a aittir.
 - Tam tutanak indeks 123–127 okundu: CHP Tahsin Tarhan ve AK Parti Uğur Aydemir söz alıyor; üçüncü oturum 19.32’de kapanıyor. Enerji tartışmasındaki iddialar ilgili konuşmacılara aittir, TİP görüşü sayılmadı.
 - Tam tutanak indeks 128–132 okundu: Dördüncü oturum 20.02’de açılıyor; CHP Ünal Demirtaş, HDP Rıdvan Turan ve CHP Ahmet Önal konuşuyor. Turan’ın HDP adına açık nükleer enerji karşıtı değerlendirmesi TİP’e atfedilemez; Kadıgil’in ayrı ifadeleriyle birleştirilmedi.
+- Tam tutanak indeks 133–137 okundu: AK Parti Orhan Yegin, CHP Ahmet Vehbi Bakırlıoğlu ve Tacettin Bayır konuşuyor; rakamlar ve değerlendirmeler ilgili kişilere atıfla tutuldu.
