@@ -300,3 +300,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 - PDF indeks 780–784 metni: CHP üyelerinin Paris, iklim finansmanı ve sınırda karbon düzenlemesinin 2021 senaryolarına dair şerhi okundu. Model, plan ve tahminler güncel mevzuat veya gerçekleşmiş ekonomik sonuç olarak sunulmadı; TİP atfı yok. Sonraki 785; metin taraması 785/860, görseller ve 75 indeks açık.
 
 - PDF indeks 785–789 metni: CHP üyelerinin yeşil finans, yanıtlanmadığını söyledikleri sorular ve COP26 yorumları okunmuştur; kurum yanıtı, beklentiler ve siyasi eleştiriler ayrıdır, TİP görüşü veya sonraki gerçekleşmeler olarak sunulmadı. Sonraki 790; metin taraması 790/860, görseller ve 70 indeks açık.
+
+- PDF indeks 790–794 metni: CHP üyelerinin kömürden çıkış ve iklim finansmanı eleştirileri ve kendi önerileri okunmuştur; 794 2035 kapatma çağrısı bu şerhin önerisidir, partiye özel sonraki tutum veya TİP sözü değildir. 790 ve 792 eski emisyon hedefi için 959 ve 929 milyon ton ifade ediyor, fark çözülmedi. Sonraki 795; metin taraması 795/860, görseller ve 65 indeks açık.
