@@ -210,6 +210,19 @@
     },
     {
       "subject_kind": "practice_contribution",
+      "subject_id": "0405-tip-sik-makas-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0203-tip-program-v1\", \"0405-tip-20241106-bas-v1\", \"0405-tip-sik-makas-anka-v1\"]",
+      "passage_ids": "[\"0304-tip-program-sendika-p1\", \"0405-tip-20241106-bas-authority-p\", \"0405-tip-sik-makas-anka-meeting-p\", \"0405-tip-sik-makas-commitment-p\", \"0405-tip-sik-makas-identity-p\"]",
+      "inspected_sections": "[\"Baş’ın toplantıda desteği\", \"TBMM basın toplantısı\", \"Tarihli kişi ve temsil görevi\", \"İŞÇİ SINIFI MÜCADELEYLE KAZANACAK\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_contribution / 0405-tip-sik-makas-contribution kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_contribution",
       "subject_id": "0405-tip-tezkere-3761-contribution",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:34:27.355560+00:00",
@@ -415,6 +428,19 @@
       "limitations": "Programın 2022 tarihli sürümü bilinmiyor; hükümsüzlük toplumsal hak sonucuna eşitlenmez.",
       "result": "reviewed",
       "reason": "Ayrı kaynak ve aşamalar bu alan için okundu: practice_contribution.finding_id"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0405-tip-sik-makas-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0203-tip-program-v1\", \"0405-tip-sik-makas-anka-v1\"]",
+      "passage_ids": "[\"0304-tip-program-sendika-p1\", \"0405-tip-sik-makas-anka-meeting-p\", \"0405-tip-sik-makas-commitment-p\", \"0405-tip-sik-makas-identity-p\"]",
+      "inspected_sections": "[\"Baş’ın toplantıda desteği\", \"TBMM basın toplantısı\", \"İŞÇİ SINIFI MÜCADELEYLE KAZANACAK\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_contribution.finding_id / 0405-tip-sik-makas-contribution kaynakları incelendi."
     },
     {
       "subject_kind": "practice_contribution.finding_id",
@@ -714,6 +740,19 @@
       "limitations": "Programın 2022 tarihli sürümü bilinmiyor; hükümsüzlük toplumsal hak sonucuna eşitlenmez.",
       "result": "reviewed",
       "reason": "Ayrı kaynak ve aşamalar bu alan için okundu: practice_event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0405-tip-sik-makas-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0405-tip-sik-makas-anka-v1\"]",
+      "passage_ids": "[\"0405-tip-sik-makas-anka-meeting-p\", \"0405-tip-sik-makas-commitment-p\"]",
+      "inspected_sections": "[\"Baş’ın toplantıda desteği\", \"TBMM basın toplantısı\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_event / 0405-tip-sik-makas-event kaynakları incelendi."
     },
     {
       "subject_kind": "practice_event",
@@ -1471,6 +1510,32 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-sik-makas-event|0405-tip-sik-makas-anka-meeting-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0405-tip-sik-makas-anka-v1\"]",
+      "passage_ids": "[\"0405-tip-sik-makas-anka-meeting-p\"]",
+      "inspected_sections": "[\"TBMM basın toplantısı\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0405-tip-sik-makas-event|0405-tip-sik-makas-anka-meeting-p|action kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-sik-makas-event|0405-tip-sik-makas-commitment-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0405-tip-sik-makas-anka-v1\"]",
+      "passage_ids": "[\"0405-tip-sik-makas-commitment-p\"]",
+      "inspected_sections": "[\"Baş’ın toplantıda desteği\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0405-tip-sik-makas-event|0405-tip-sik-makas-commitment-p|action kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0405-tip-tezkere-3761-event|0405-tip-20231017-tezkere-oy-name-p|action",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:34:27.355560+00:00",
@@ -1744,6 +1809,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-sik-makas-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0203-tip-program-v1\", \"0405-tip-sik-makas-anka-v1\"]",
+      "passage_ids": "[\"0304-tip-program-sendika-p1\", \"0304-tip-program-sendika-q\", \"0405-tip-sik-makas-anka-meeting-p\", \"0405-tip-sik-makas-commitment-p\", \"0405-tip-sik-makas-identity-p\"]",
+      "inspected_sections": "[\"Baş’ın toplantıda desteği\", \"TBMM basın toplantısı\", \"İŞÇİ SINIFI MÜCADELEYLE KAZANACAK\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0405-tip-sik-makas-relation kaynakları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0405-tip-tezkere-3761-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-22T11:34:27.355560+00:00",
@@ -1975,6 +2053,19 @@
       "limitations": "Programın 2022 tarihli sürümü bilinmiyor; hükümsüzlük toplumsal hak sonucuna eşitlenmez.",
       "result": "reviewed",
       "reason": "Ayrı kaynak ve aşamalar bu alan için okundu: practice_relation.explanation_finding_id"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-sik-makas-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0203-tip-program-v1\", \"0405-tip-sik-makas-anka-v1\"]",
+      "passage_ids": "[\"0304-tip-program-sendika-p1\", \"0405-tip-sik-makas-anka-meeting-p\", \"0405-tip-sik-makas-commitment-p\", \"0405-tip-sik-makas-identity-p\"]",
+      "inspected_sections": "[\"Baş’ın toplantıda desteği\", \"TBMM basın toplantısı\", \"İŞÇİ SINIFI MÜCADELEYLE KAZANACAK\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0405-tip-sik-makas-relation kaynakları incelendi."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -2313,6 +2404,19 @@
       "limitations": "Programın 2022 tarihli sürümü bilinmiyor; hükümsüzlük toplumsal hak sonucuna eşitlenmez.",
       "result": "reviewed",
       "reason": "Ayrı kaynak ve aşamalar bu alan için okundu: practice_relation.target_finding_id"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-sik-makas-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T10:46:22+00:00",
+      "source_version_ids": "[\"0203-tip-program-v1\"]",
+      "passage_ids": "[\"0304-tip-program-sendika-p1\", \"0304-tip-program-sendika-q\"]",
+      "inspected_sections": "[\"İŞÇİ SINIFI MÜCADELEYLE KAZANACAK\"]",
+      "supported_claim": "Program, katılımcılar ve Baş’ın destek sözü kaynaklarıyla okundu.",
+      "limitations": "Toplantı günü, programın 2026 yürürlük durumu ve işçi taleplerinin sonucu açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0405-tip-sik-makas-relation kaynakları incelendi."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -3032,6 +3136,10 @@
     },
     {
       "subject_kind": "practice_contribution",
+      "subject_id": "0405-tip-sik-makas-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution",
       "subject_id": "0405-tip-tezkere-3761-contribution"
     },
     {
@@ -3093,6 +3201,10 @@
     {
       "subject_kind": "practice_contribution.finding_id",
       "subject_id": "0405-tip-sendika-katki"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0405-tip-sik-makas-contribution"
     },
     {
       "subject_kind": "practice_contribution.finding_id",
@@ -3185,6 +3297,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0405-tip-sendika-274390-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0405-tip-sik-makas-event"
     },
     {
       "subject_kind": "practice_event",
@@ -3420,6 +3536,14 @@
     },
     {
       "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-sik-makas-event|0405-tip-sik-makas-anka-meeting-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-sik-makas-event|0405-tip-sik-makas-commitment-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
       "subject_id": "0405-tip-tezkere-3761-event|0405-tip-20231017-tezkere-oy-name-p|action"
     },
     {
@@ -3504,6 +3628,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-sik-makas-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0405-tip-tezkere-3761-relation"
     },
     {
@@ -3576,6 +3704,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-sik-makas-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0405-tip-tezkere-3761-relation"
     },
     {
@@ -3677,6 +3809,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0405-tip-sendika-iliski"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-sik-makas-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
