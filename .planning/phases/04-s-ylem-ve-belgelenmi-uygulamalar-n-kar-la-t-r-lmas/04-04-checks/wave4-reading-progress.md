@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 141 | 141 | 62468795 |
-| TİP | 17 | 17 | 62466264 |
+| TİP | 18 | 18 | 62480777 |
 | DEM Parti | 19 | 9 | 62479627 |
 | İYİ Parti | 11 | 9 | 62478838 |
 | Yeni Yol | 13 | 9 | 62477835 |
@@ -83,3 +83,5 @@ DEM Parti’nin fon komisyonunda belirli fiiller için cebren tahsil ve küçük
 EMEP’in 6 Eylül Kırşehir il kongresi ve Pelin Atarbay’ın seçildiği bilgisi iki görünümde doğrulandı. Ayrı yerel haber ve parti kaydı aynı kongreye ait. İmzalı oy cetveli araştırmaya açık. [Doğrulama makbuzu](../04-10-checks/kirsehir2026-62473858-receipt.json)
 
 Saadet Partisi Genel Başkanı’nın 4 Ekim’de staj ve çıraklık sigortası temsilcileriyle görüşmesi iki görünümde doğrulandı. Parti ve haber kaydı aynı görüşmeyi gösteriyor. Programdaki emeklilik koşullarını düzenleme hedefiyle konu bağlantısı kaydedildi. Bu görüşmenin ardından bir teklif sunulup sunulmadığı araştırmaya açık. [Doğrulama makbuzu](../04-11-checks/vocational-visit-62479681.json) [Kaynak okuması](../04-11-checks/vocational-visit-reading.md)
+
+TİP’in elektrik kesintilerine ilişkin 7/69660 sorusu, önceki açıklama ve Bakanlığın 4 Nisan 2023 tarihli cevabıyla karşılaştırıldı. Sorudaki dönemsel kesinti sayısı ile cevaptaki yıl sonu borç ve kesinti durumu farklı ölçüler. Cevap, kesintilerin sayısal karşılaştırmasına veya politika etkisine tek başına dayanak oluşturmuyor. [Doğrulama makbuzu](../04-05-checks/fatura-62480777.json)
