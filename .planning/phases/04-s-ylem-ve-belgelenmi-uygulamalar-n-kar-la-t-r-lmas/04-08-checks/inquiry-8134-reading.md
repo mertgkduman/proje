@@ -5,3 +5,5 @@
 Selçuk Özdağ’ın 13 Ocak’ta Yeni Yol Grubu adına savunduğu asgari ücret düzeyi, Haziran yazılı gerekçesinin alt sınır talebiyle karşılaştırıldı. 1 Temmuz 108. Birleşim gelen kâğıtlar ekinde 8/134, PDF indeks 32 ve basılı 931. sayfada listeleniyor. 173 sayfanın metin aramasında 8/134 bu ekte görüldü. 23 Kasım erişiminde esas sicili Gündemde. Ön görüşme oyu ve sonraki esas işlemi araştırmaya açık. 7590 sayılı Kanun ayrı 2/3764 işleminden çıktı. [13 Ocak ham tutanak](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/46/Ham/4f4628c2-d296-456e-8ea9-73afc1a5334a.html) [1 Temmuz gelen kâğıtlar listesi](https://tbmm.gov.tr/Gundem/GelenKagitDetay/32b91820-51d0-430b-a400-019f1c67bf61) [Basılı tutanak](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/108/Basilmis/8c78bb73-5fa2-43ca-965a-aa0deaac261e.pdf)
 
 20 olay ve 12 ilişkili aday 62496261 doğrulama işinde. Kapsam kapanışı yok.
+
+İlk 62496261 girdi çalışması, görsel denetim kayıtları pasajdan önce geldiği için durdu. Yeni paket görsel kaydı kendi pasajından sonra ekliyor. Yeni paket ve inceleme çifti 62496604 çalışmasına verildi.

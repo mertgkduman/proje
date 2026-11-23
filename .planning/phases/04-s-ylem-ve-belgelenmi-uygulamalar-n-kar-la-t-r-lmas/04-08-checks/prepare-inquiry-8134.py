@@ -12,7 +12,7 @@ def read(path):
     return json.loads(path.read_bytes())
 def encoded(value):
     return json.dumps(value,ensure_ascii=False,sort_keys=True)
-aux=read(here/'inquiry-8134-source-records.json')
+aux=read(here/'inquiry-8134-v2-source-records.json')
 party=aux['party_id']
 package=read(data/'practices/04-yeni-yol.json')
 review=read(data/'practices/04-yeni-yol-review.json')
@@ -157,7 +157,7 @@ for (kind,identity),(claim,limitation) in tasks.items():
 validate_practice_source_review(snapshot,reviews,target_keys=targets,party_id=party)
 refs=[dict(subject_kind=row['subject_kind'],subject_id=row['subject_id']) for row in reviews]
 package['source_review_refs']=review['source_review_refs']=refs
-for name,content in [('inquiry-8134-draft.json',package),('inquiry-8134-review-draft.json',review)]:
+for name,content in [('inquiry-8134-v2-draft.json',package),('inquiry-8134-v2-review-draft.json',review)]:
     path=here/name
     with path.open('x') as output:
         output.write(json.dumps(content,ensure_ascii=False,indent=2)+'\n')

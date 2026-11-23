@@ -93,16 +93,18 @@ for filename, label, title, day, url, digest, anchors in sources:
         add('archive_view', **view)
     for suffix, section, index, exact in anchors:
         passage = f'{doc}-{suffix}'
-        if label == 'signed' and suffix != 'number':
-            assert pdf_page_exists(root / obj, index)
-            add('manual_passage', passage_id=passage, checked_at=now,
-                method='Özgün dört imzalı PDF sayfası Poppler görüntüsünde okundu.',
-                reason='İmza veya gerekçe pasajı taranmış görselden kontrol edildi.')
+        manual = label == 'signed' and suffix != 'number'
+        if manual:
+            assert pdf_page_exists(root / obj, index) and not pdf_page_text(root / obj, index).strip()
         else:
             text = pdf_page_text(root / obj, index) if fmt == 'pdf' else html_source_text(raw)
             assert exact in text, (label, suffix)
         add('passage', id=passage, version_id=version, exact=exact, prefix=None, suffix=None, article=None,
             section=section, pdf_page_index=index, printed_page='931' if label == 'appendix' else None)
-(checks / 'inquiry-8134-source-records.json').write_text(json.dumps(dict(party_id='yeni-yol', entries=entries), ensure_ascii=False, indent=2) + '\n')
+        if manual:
+            add('manual_passage', passage_id=passage, checked_at=now,
+                method='Özgün dört imzalı PDF sayfası Poppler görüntüsünde okundu.',
+                reason='İmza veya gerekçe pasajı taranmış görselden kontrol edildi.')
+(checks / 'inquiry-8134-v2-source-records.json').write_text(json.dumps(dict(party_id='yeni-yol', entries=entries), ensure_ascii=False, indent=2) + '\n')
 (stage / 'inquiry-8134-source-paths').write_text('\n'.join(sorted(map(str, paths))) + '\n')
 print(len(entries), len(paths))

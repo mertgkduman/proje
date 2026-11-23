@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0408-inquiry-8134-nqh9_x6j/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0408-inquiry-8134-nqh9_x6j/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0408-inquiry-8134-nqh9_x6j/src/uygulamalar.py", line 1381, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0408-inquiry-8134-nqh9_x6j/src/uygulamalar.py", line 1165, in _load_practice_copy
+    raise ValueError('Elle doğrulama yeni paket pasajına bağlı olmalı')
+ValueError: Elle doğrulama yeni paket pasajına bağlı olmalı

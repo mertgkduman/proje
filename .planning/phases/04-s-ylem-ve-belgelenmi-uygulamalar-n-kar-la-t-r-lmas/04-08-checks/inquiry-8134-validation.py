@@ -12,12 +12,12 @@ harness = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(harness)
 harness.HERE = checks
 harness.SOURCE = harness.DATA / 'practices' / 'sources' / 'yeni-yol'
-case = 'inquiry-8134'
+case = 'inquiry-8134-v2'
 stem = '0408-inquiry-8134'
 package = checks / f'{case}-draft.json'
 review = checks / f'{case}-review-draft.json'
-assert harness.sha(package) == '9c735ddaa70da3d4fdc9e77fa4091b3c503943754ef3cc5350ddc66f50c41390'
-assert harness.sha(review) == 'c85a375414a050c4192bb81be0829f7270926ce501ba2fb089d815b6da10e441'
+assert harness.sha(package) == 'b5858bd90875292c989ed7bbed04c24a0de4a62a3cac381ad101096c5c0783c6'
+assert harness.sha(review) == 'b88e666e2b08910da0ea8d95293dccf5419d396265dfdad46435502db32882b0'
 records = json.loads(package.read_bytes())['practice_records']
 assert (len(records['practice_event']), len(records['practice_relation']), len(records['practice_closure'])) == (20, 12, 0)
 receipt = harness.main(package, review, case, stem + '-event', stem + '-relation',
