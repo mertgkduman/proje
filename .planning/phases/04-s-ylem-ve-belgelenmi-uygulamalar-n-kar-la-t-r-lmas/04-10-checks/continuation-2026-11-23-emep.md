@@ -164,3 +164,9 @@ Erlau genişletilmiş review için önceki dava sonucu sınırlaması ve önceki
 161 kısmi makbuz b8bfc972 korunuyor. 7250 Kürtçe özgün gövdesi, aynı yayıncıya ait 7248 iki dilli yayının içinde normalize metin olarak birebir doğrulandı; Türkçe bölümü de okundu. 161–164 sıra makbuzları sırasıyla fab74c38, 6f219c4a, f04d347e ve e0d8de99; sıra 165 devam eder. Aynı yayıncının bu iki yayını bağımsız kanıt sayılmaz. 164 içindeki 7166 kesilmiş gövde sonraki dilimde devam eder. Kapsam kapanışı yok.
 
 62487943 Bekaert gate 28 dakika sonunda çalışıyor; terminal 0:0 ve dört marker olmadan terfi yok. Ardıl afterok sırası: 62489834 Betek, 62491679 eski okul yemeği (terfi edilmez), 62491755 güçlendirilmiş okul yemeği, 62491816 eski Erlau (terfi edilmez), 62491846 korunan Erlau incelemesi (promote-verified-erlau-superset.py), 62492296 anayasa görüşmesi, 62492801 7/11963 deprem. Exact SHA ve aday yolları önceki kayıtlarla script/loglarda sabit, her geçerli terfi için bağımsız DB/JSON/HTML denetimi, receipt ve parent bildirimi zorunlu.
+
+
+### 2024 İliç suç duyurusu ve güncel terfi
+62487943 terminal 0:0, dört marker ve SQLite/JSON/iki HTML bağımsız monoton denetimi PASS; 56/58 exact canlı çift commit a4255bb0, paket SHA 015abded7ac3d663fbb45de7349429b11d0f0e1a7a4d7598689e1fbdbbf75b55, review SHA 040b6b473ba97c737416c4c18ae80224c7013a421974f15a6d3ba09ad5bb1720, makbuz bekaert-26171-62487943-receipt.json. 62489834 Betek RUNNING, ardıllar sıralı bekliyor.
+
+Gövde makbuzları 165–177 işlendi; sonraki 178. Parti 15 Mart İliç başvuru aslı ve aynı gün Cumhuriyet haberi b1e31fae; parti dilekçesinde kayma yılı bir yerde 2023, başlık ve diğer yerde 2024. Başvuru mahkeme sonucu değil. 62/64 aday e01f50ed, 527 semantic PASS. Paket ilic-complaint-20240315-union-draft.json SHA 59066ceb019b8a59004fc27e9f55aab49445336b29831d2a556f0a961c53982d; review SHA 9a2814d9ae2c89e19e3802dacc216a7e19ad1323b148f5ac6a64b98e017d7e66. Exact Slurm 62494445, afterok:62492801. 610 hücre açık.
