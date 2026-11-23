@@ -11,7 +11,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
 | DEM Parti | 58 | 9 | 62502354 |
-| İYİ Parti | 17 | 10 | 62492649 |
+| İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 60 | 62 | 62492296 |
@@ -241,3 +241,7 @@ Bağlar 2015 karar defteri 15 dilimde 269/269 farklı PDF indeksiyle okundu. Öz
 Bağlar /139→167 ve /140→171 sevk ve raporları, /210 İnsan Kaynakları hesabı ve /256 ayrı inceleme sevki iki HTML görünümünde doğrulandı. /171’de 400 çocuk ay bazında, 45 kadın açıklama gününe kadar olan sayı. /210’da 16 harcama satırı toplamı 3.056.099,55 TL. 5.890.000 TL bütçeden harcamalar ve 669.900,45 TL iade çıkarılınca 2.164.000 TL kalıyor. Hesap farkının nedeni, /85 yönetmelik eki, bireysel katılım ve fiilî ödeme açık. [Makbuz](../04-09-checks/baglar-solin-budget-62503426.json)
 
 DEM Parti’nin 2/2927 Genel Kurul işlemlerinden 17, 18, geçici 1, geçici 2, 19 ve 20. maddeler için ayrı çıkarma önergeleri ve başkan kararları iki HTML görünümünde doğrulandı. Beş işlem aynı mahiyetteki önergelerin birlikte oylamasına, 19. madde ayrı DEM önergesine ait. Teklifin tümünün kesin açık oyu kendi olayında. [Makbuz](../04-06-checks/dem-iklim-floor-motions-62502354.json)
+
+İYİ Parti’nin 10/2881 tekstil ve 10/2882 şap gündemlerindeki iki grup katkısı 2019 arşiv programı ve 2026 HTML pasajlarıyla iki görünümde doğrulandı. 10/2882 için tutanakta Akalın’a ek 19, imzalı çizelge ve esas sicilinde 20 isim var. Programın 2025’teki hukuki yürürlüğü ve bireysel oylar açık. [Makbuz](../04-07-checks/agenda-104-historic-62503516.json)
+
+Saadet yayın kataloğunun 94 gövdesi okundu. 22 Nisan grup konuşması, Sakarya plan hedefi ve Ocak ayındaki üç ayrı parti görüşmesi kendi okuma kayıtlarıyla saklandı. 555 kesim öncesi gövde açık. [Okuma kaydı](../04-11-checks/party-news-016-reading.json)
