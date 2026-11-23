@@ -194,3 +194,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 515–519 metni tarandı: bitkisel üretim destekleri, orman uyumu, komisyon görüşleri ve tarihsel strateji belgeleri. Farklı konuşmacıların eleştirileri ve kurum planları TİP faaliyeti veya gerçekleşme olarak kodlanmadı. 0–519: 520/860 indeks metni veya boşluğu tarandı; görseller ve 340 indeks açık.
 
 2021 raporu indeks 520–524 metni tarandı: orman uyum stratejileri ve kurum projelerinin rapordaki açıklaması. İlgili kurumların faaliyet ve önerileri TİP adına kodlanmadı, proje çıktıları bağımsız denetlenmiş sayılmadı. 0–524: 525/860 indeks metni veya boşluğu tarandı; görseller ve 335 indeks açık.
+
+2021 raporu indeks 525–529 metni tarandı: orman uyumu, çölleşme ve arazi iyileştirme için kurum proje ve önerileri. Kurumların başarı değerlendirmeleri bağımsız doğrulanmadı ve TİP işlemi olarak aktarılmadı. 0–529: 530/860 indeks metni veya boşluğu tarandı; görseller ve 330 indeks açık.
