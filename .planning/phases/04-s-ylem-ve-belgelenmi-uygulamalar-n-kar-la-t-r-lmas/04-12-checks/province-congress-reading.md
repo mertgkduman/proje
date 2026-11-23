@@ -1,0 +1,11 @@
+# Demokrat Parti Afyonkarahisar, Tokat ve Konya il kongreleri
+
+14 Aralık 2025 Afyonkarahisar 16. İl Kongresi sonucunda Hikmet Bülbül’ün tek listeyle yeniden il başkanı seçildiği yerel yayınlarda bildirildi. Odak Gazetesinin 15 Aralık sayısının basılı 8. sayfası kongrenin önceki gün Derya Düğün Salonu’nda yapılmasını, yeniden seçimi ve Adnan Demirel’in üst kurul delege seçimini ayrı aktarıyor. Afyon Haber yönetim, disiplin ve delege listelerini içeriyor. İmzalı seçim tutanağı ve sayım açık. [Afyon Haber](https://www.afyonhaber.com/demokrat-parti-afyonkarahisar-kongresi-yapildi) [Afyon Şehir](https://afyonsehir.com/dp-il-baskani-hikmet-bulbul-guven-tazeledi/) [Odak Gazetesi](https://odakgazetesicom.teimg.com/odakgazetesi-com/uploads/2025/12/15-12-25.pdf)
+
+7 Mart 2026 Tokat haberinin yayımlandığı sırada delegeler oy vermeye başlamıştı. Haber Seyfettin Yüksekkaya’nın tek listeyle girdiğini yazıyor. Hürsöz 23 Mayıs’ta kendisini il başkanı olarak anıyor. 7 Mart sayımı, kesin sonuç ve kurul listesi açık. [Tokat Haber](https://www.tokathaber.com.tr/tokatta-kongre-gunu-demokrat-parti-lideri-uysal-gundemi-degerlendirdi) [Hürsöz](https://www.hursozgazetesi.com/muhalefetten-mutlak-butlan-kararina-tokattan-sert-tepki-korkmayacagiz-sinecegiz-saniyorlar)
+
+29 Mart 2026 Konya haberinin 15.50 güncellemesi Mehmet Ali Yavuz’un il başkanı seçildiğini, yönetim kurulunun 20 asıl üyesini ve disiplin ile büyük kongre delege listelerini bildiriyor. Muhsin Ekmekçi toplantıda önceki il başkanı, güncellenen listede yönetim kurulu üyesi. Haberdeki listeler okundu. İmzalı seçim tutanağı ve oy sayımı açık. [Anadolu’da Bugün](https://www.anadoludabugun.com.tr/politika/konyada-demokrat-parti-kongresi-uysaldan-kritik-mesajlar/412898)
+
+Afyonkarahisar ve Konya sonuçları, 2022 arşiv nüshasının 27. maddesinde sayılan il kongresi organlarıyla karşılaştırıldı. Partinin 23 Kasım 2026’da erişilen tüzük sayfası aynı PDF’ye yönlendiriyor. İndirilen PDF 18 Haziran 2022 arşiv gözleminin özgün baytlarıyla eşleşiyor. Kabul, üyelik ve kongrelerdeki tarihsel yürürlük ayrı araştırma konuları. [Partinin tüzük sayfası](https://www.dp.org.tr/parti-tuzugu) [Bayt karşılaştırması](province-congress-charter-observation.json)
+
+28 olay ve 25 ilişkili aday küçükbaş v2 onayına bağlı 62497391 doğrulama işinde. Kapsam kapanışı yok.
