@@ -6,4 +6,4 @@
 
 İlk 2021 paketi 62474394 işinde reddedildi. İlk sayfanın metin katmanı kontrol karakterleri içeriyor ve doğrulayıcı bu sayfada özgün metinle eşleşmeyen elle pasajı reddetti. Sonraki adayda künyeler iki Resmî Gazete dizininden alındı. Karar pasajları iki PDF’nin metin katmanı boş ikinci ve üçüncü sayfalarına bağlandı. Özgün PDF baytları korundu. [2025 yayım dizini](https://www.resmigazete.gov.tr/eskiler/2025/03/20250314.htm) [2026 yayım dizini](https://www.resmigazete.gov.tr/eskiler/2026/04/20260420.htm)
 
-2020 hesabı E.2021/57 K.2024/73 sayılı başka karardır. Resmî Gazete metni web görünümünde ulaşıldı. Yerel özgün PDF alımı zaman aşımında kaldığı için aday paket dışında izleniyor. [2020 kararı](https://www.resmigazete.gov.tr/eskiler/2025/01/20250110-6.pdf)
+2020 hesabı E.2021/57 K.2024/73 sayılı başka karardır. Resmî Gazete metni web görünümünde ulaşıldı. Yerel özgün PDF başka Resmî Gazete adresinden alındı ve 2022 hesabıyla birlikte doğrulandı. [Sonraki kaynak okuması](aym-earlier-accounts-reading.md) [2020 kararı](https://www.resmigazete.gov.tr/eskiler/2025/01/20250110-6.pdf)

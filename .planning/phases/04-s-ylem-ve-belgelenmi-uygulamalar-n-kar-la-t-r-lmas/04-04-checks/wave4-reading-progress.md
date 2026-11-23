@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 42 | 44 | 62469452 |
 | Saadet Partisi | 11 | 11 | 62475555 |
-| Demokrat Parti | 14 | 13 | 62474909 |
+| Demokrat Parti | 16 | 15 | 62476741 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -67,3 +67,5 @@ TPI işçilerine ilişkin 7/26431 yazılı sorusu ve Bakanlığın eylül cevab�
 Saadet’in 7 Ekim fon açıklaması 7596 sayılı Kanun’un 1 ve 5. maddelerindeki tahsil hükümleriyle karşılaştırıldı. Kamu kaynaklarının kullanılmaması talebi, kabul edilen hükümlerin gösterdiği tahsil çerçevesinden ayrı kayıtta. 14 Ekim denetim ve yetki sınırı açıklaması da Arıkan’ın 5 Kasım’daki isimli oyuyla birlikte doğrulandı. Bu eşleşme Yemen önerisinin sonucunu veya oy gerekçesini belirlemiyor. [Doğrulama makbuzu](../04-11-checks/october-statements-62475555.json) [Kaynak okuması](../04-11-checks/october-statements-reading.md)
 
 EMEP’in Gaziantep 11. il kongresi iki görünümde doğrulandı. Kongre günü ve seçimin oy cetveli açık. Parti metni ve aynı metni aktaran yerel yayın iki bağımsız sonuç olarak sayılmadı. [Doğrulama makbuzu](../04-10-checks/gaziantep2026-62469452-receipt.json)
+
+Demokrat Parti’nin 2020 ve 2022 kesin hesap kararları da iki görünümde doğrulandı. 2020–2023 döneminin dört kararında hesap yılı, karar tarihi ve yayım tarihi ayrı. 2024 hesabının ilk incelemesi mahkeme gündem kaydında yer alıyor; bu hesabın esas kararı ve dört hesabın ilk gönderim günleri araştırmaya açık. [Doğrulama makbuzu](../04-12-checks/aym-earlier-accounts-62476741.json) [Kaynak okuması](../04-12-checks/aym-earlier-accounts-reading.md)
