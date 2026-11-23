@@ -1,0 +1,3 @@
+# 26 Haziran 2025, 102. birleşim basılı PDF 105–111
+
+TBMM basılı SHA-256 `f53c52767d9aaf40db8efc222584ca477a1014272eea4ca63dae17853ce65e5d`; PDF indeks 105–111 doğal metni okundu. İndeks 107–108 / basılı 846–847’de 2/2927 9. maddeyi çıkarma için Yeni Yol önergesi ve aynı mahiyette Akın, Aslan, Fırat, Koca, Dindar imzalı diğer önerge; komisyon katılmadı. Koca önerge üzerinde konuştu, indeks 111 / basılı 850’de başkan iki önergenin birlikte reddini duyurdu. 8. maddeye ilişkin önceki ayrı Yeni Yol değişikliği öncesi yoklama ve 8. maddenin kabulü bu retle birleştirilmez. İddialar konuşmacılara aittir; sayfalar görsel doğrulanmadan veya tam kapıdan geçmeden aday terfi edilmez.
