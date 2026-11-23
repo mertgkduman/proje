@@ -184,6 +184,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-fund-749942-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0410-emep-question-49942-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-49942-register-date-p\", \"0410-emep-question-49942-register-owner-p\", \"0410-emep-question-49942-register-reply-p\", \"0410-emep-question-49942-register-topic-p\"]",
+      "inspected_sections": "[\"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-fund-749942-event için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-fund-bayhan-2026-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T03:23:56+00:00",
@@ -935,6 +948,58 @@
       "limitations": "Teklif kabulü veya çevresel sonuç kanıtlanmadı; program ara dönem yürürlüğü ayrıca araştırılacak.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-forest-23804-event|0410-emep-forest-23804-register-filed-p|action için özgün program, imzalı teklif ve TBMM kayıt pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-date-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0410-emep-question-49942-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-49942-register-date-p\"]",
+      "inspected_sections": "[\"Soru geliş tarihi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-fund-749942-event|0410-emep-question-49942-register-date-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-owner-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0410-emep-question-49942-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-49942-register-owner-p\"]",
+      "inspected_sections": "[\"Soru sahibi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-fund-749942-event|0410-emep-question-49942-register-owner-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-reply-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0410-emep-question-49942-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-49942-register-reply-p\"]",
+      "inspected_sections": "[\"Yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-fund-749942-event|0410-emep-question-49942-register-reply-p|action için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-topic-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0410-emep-question-49942-register-v1\"]",
+      "passage_ids": "[\"0410-emep-question-49942-register-topic-p\"]",
+      "inspected_sections": "[\"Soru özeti\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-fund-749942-event|0410-emep-question-49942-register-topic-p|action için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -1939,6 +2004,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-fund-749942-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-49942-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-075-2-passage\", \"0314-policy-more-x09-part1-passage\", \"0410-emep-question-49942-register-date-p\", \"0410-emep-question-49942-register-owner-p\", \"0410-emep-question-49942-register-reply-p\", \"0410-emep-question-49942-register-topic-p\"]",
+      "inspected_sections": "[\"G/B/5 üretim\", \"HTML program G/B/5; tam madde\", \"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-fund-749942-relation için kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-fund-bayhan-2026-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T03:23:56+00:00",
@@ -2443,6 +2521,19 @@
       "limitations": "Teklif kabulü veya çevresel sonuç kanıtlanmadı; program ara dönem yürürlüğü ayrıca araştırılacak.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-forest-23804-relation için özgün program, imzalı teklif ve TBMM kayıt pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-fund-749942-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-question-49942-register-v1\"]",
+      "passage_ids": "[\"0309-emep-program-075-2-passage\", \"0410-emep-question-49942-register-date-p\", \"0410-emep-question-49942-register-owner-p\", \"0410-emep-question-49942-register-reply-p\", \"0410-emep-question-49942-register-topic-p\"]",
+      "inspected_sections": "[\"G/B/5 üretim\", \"Soru geliş tarihi\", \"Soru sahibi\", \"Soru özeti\", \"Yanıt bildirimi\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-fund-749942-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -3119,6 +3210,19 @@
       "limitations": "Teklif kabulü veya çevresel sonuç kanıtlanmadı; program ara dönem yürürlüğü ayrıca araştırılacak.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-forest-23804-relation için özgün program, imzalı teklif ve TBMM kayıt pasajları incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-fund-749942-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T03:36:00+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-075-2-passage\", \"0314-policy-more-x09-part1-passage\"]",
+      "inspected_sections": "[\"G/B/5 üretim\", \"HTML program G/B/5; tam madde\"]",
+      "supported_claim": "Program ve TBMM soru kayıt pasajları incelendi.",
+      "limitations": "Soru ve yanıt bildirimi iddiaları veya parti etkisini kanıtlamaz.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-fund-749942-relation için kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -4441,6 +4545,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-fund-749942-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-fund-bayhan-2026-event"
     },
     {
@@ -4670,6 +4778,22 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-forest-23804-event|0410-emep-forest-23804-register-filed-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-date-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-owner-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-reply-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-fund-749942-event|0410-emep-question-49942-register-topic-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -4981,6 +5105,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-fund-749942-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-fund-bayhan-2026-relation"
     },
     {
@@ -5137,6 +5265,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-fund-749942-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-fund-bayhan-2026-relation"
     },
     {
@@ -5342,6 +5474,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-forest-23804-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-fund-749942-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
