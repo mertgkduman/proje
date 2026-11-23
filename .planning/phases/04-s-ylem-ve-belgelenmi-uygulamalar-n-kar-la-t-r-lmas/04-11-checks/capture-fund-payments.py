@@ -93,7 +93,7 @@ for filename, key, title, date, publisher, kind, author, url, digest, specs in s
         date_precision='day', date_unknown_reason=None, version_label='Erişilen özgün nüsha.',
         mime=mime, accessed_at=datetime.fromtimestamp(src.stat().st_mtime, timezone.utc).isoformat(),
         verified_at=now, sha256=digest, original_path=original, readable_path=readable)
-    add('source_attribution', version_id=vid, publisher=publisher, author=author, kind=kind, social_handle=None,
+    add('source_attribution', version_id=vid, publisher=publisher, author=author, kind='journalism' if kind=='news' else kind, social_handle=None,
         published_at=date if key!='reply' else None, date_precision='day' if key!='reply' else 'unknown',
         public_url=url, basis='Yayımlayan kurum, imza ve yayın zamanı kaynak künyesinde ayrı incelendi.')
     if not pdf:

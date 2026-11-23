@@ -1,0 +1,12 @@
+Staged 136 original, readable and view paths; package 877cc95e67d647c0ae41bf9060642278b8f9edb0c84981c9b757f4ab6d13e795; review b13affd9ce0a6ac157648c37efba4e0fff9dbc2889bc051babbc51034ea368f1
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-11-checks/fund-payments-validation.py", line 25, in <module>
+    receipt = harness.main(package, review, 'fund-payments', payment+'-event', payment+'-relation', None,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 111, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1

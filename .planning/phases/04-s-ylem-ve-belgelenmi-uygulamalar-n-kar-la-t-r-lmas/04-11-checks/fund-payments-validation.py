@@ -17,7 +17,7 @@ payment = '0411-saadet-2026-fund-initial-payment'
 law = '0411-saadet-2026-fund-7596'
 package = here/'fund-payments-draft.json'
 review = here/'fund-payments-review-draft.json'
-assert harness.sha(package) == '877cc95e67d647c0ae41bf9060642278b8f9edb0c84981c9b757f4ab6d13e795'
+assert harness.sha(package) == '91d8444678a1db27d7fefd816f026c628cf8f1a9eff3eb7633e1107a99fc0fe7'
 assert harness.sha(review) == 'b13affd9ce0a6ac157648c37efba4e0fff9dbc2889bc051babbc51034ea368f1'
 draft = json.loads(package.read_bytes())['practice_records']
 assert (len(draft['practice_event']), len(draft['practice_relation'])) == (11, 9)
