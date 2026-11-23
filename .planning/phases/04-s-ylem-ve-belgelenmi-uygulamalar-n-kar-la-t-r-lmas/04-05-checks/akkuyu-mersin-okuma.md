@@ -29,3 +29,5 @@ PDF indeks 40–44 okundu: MHP İsmail Faruk Aksu konuşması biter, AK Parti İ
 PDF indeks 45–49 okundu: AK Parti İbrahim Aydemir grup konuşması biter; CHP Müzeyyen Şevkin ve HDP Ali Kenanoğlu konuşmaları başlar. Amasra hakkındaki iddialar kendi sahiplerine atıflıdır.
 
 PDF indeks 50–54 okundu: HDP Ali Kenanoğlu konuşmasını bitirir; İYİ İbrahim Halil Oral Akkuyu mülkiyet/atık soruları, MHP Baki Şimşek Mersin ve Akkuyu yerleşim önerileri, AK Parti Nilgün Ök enerji politikaları üzerine konuşur. Her görüş kendi aktörüne aittir.
+
+PDF indeks 55–59 okundu: AK Parti Nilgün Ök konuşması sonrası ikinci oturum başlar; Mehmet Bekaroğlu Akkuyu mülkiyet/bağımlılık sorularını, HDP Mahmut Celadet Gaydalı enerji dağıtımı görüşlerini anlatır. Bunlar Kadıgil konuşması değildir.
