@@ -12,10 +12,10 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | TİP | 17 | 17 | 62466264 |
 | DEM Parti | 17 | 9 | 62468809 |
 | İYİ Parti | 10 | 8 | 62463052 |
-| Yeni Yol | 11 | 7 | 62461211 |
+| Yeni Yol | 12 | 8 | 62471281 |
 | DBP | 11 | 7 | 62464556 |
 | EMEP | 37 | 39 | 62462343 |
-| Saadet Partisi | 8 | 6 | 62437168 |
+| Saadet Partisi | 9 | 7 | 62469964 |
 | Demokrat Parti | 12 | 11 | 62467362 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -49,3 +49,5 @@ Demokrat Parti’nin 2/3965 dosyası programın geçmişte arşivlenmiş yatır�
 EMEP’in 7 Ekim fon görüşmesinde İskender Bayhan’ın milletvekili sıfatıyla yaptığı açıklama, ortak birleşimin partiye özgü katkısı olarak doğrulandı. [EMEP makbuzu](../04-10-checks/fund-union-62462343-receipt.json)
 
 DEM Parti’nin 10/4830 ve 10/4918 araştırma önergeleri iki görünümde doğrulandı. İmzalı önergelerdeki araştırma talepleri ve TBMM dosya durumları ayrı kaydedildi. [DEM makbuzu](../04-06-checks/dem-fund-inquiries-62468809.json)
+
+Saadet’in 21 Ekim yatırımcı güvencesi açıklaması ile 22 Ekim 7596 kabulü iki görünümde doğrulandı. Yeni Yol’un 10/4826 ön görüşme talebinin üç oylaması ile esas dosyası durumu birlikte korundu. [Saadet makbuzu](../04-11-checks/fund-7596-62469964.json) [Yeni Yol makbuzu](../04-08-checks/fund-4826-62471281.json)
