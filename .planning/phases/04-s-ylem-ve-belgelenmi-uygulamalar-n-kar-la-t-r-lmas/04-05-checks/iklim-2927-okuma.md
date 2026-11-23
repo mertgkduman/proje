@@ -92,3 +92,5 @@ Ortak anahtar `tbmm-28-3-104-2-2927-iklim-kanunu` EMEP araştırmasıyla kararla
 2021 raporu indeks 260–264 metni tarandı: don, sıcak-soğuk dalgası, sis, heyelan, kum fırtınası ve kuraklık tanımları. 263 metin çıkarımı üst üste tekrarlı; tekil pasaj için özgün görsel incelenmeli. Bu sayfalardaki harita, grafik ve şekiller okunmadı. 0–264: 265/860 indeks metni veya boşluğu tarandı; görseller ve 595 indeks açık.
 
 2021 raporu indeks 265–269 metni tarandı: kuraklık tanımı, bakanlık anlatımı, geçmiş planlama ve senaryo arka planı, tarım bölümüne giriş. 266–267 grafikleri görsel okunmadı; rapordaki tahminler veya bakanlık hedefleri gerçekleşmiş uygulama ya da TİP faaliyeti sayılmadı. 0–269: 270/860 indeks metni veya boşluğu tarandı; görseller ve 590 indeks açık.
+
+2021 raporu indeks 270–274 metni tarandı: tarım, hayvancılık, bakanlığa atıflı destekler ve projeksiyonlar. 274 meyvecilik tablosunun sütunları metin çıkarımında karışık; görsel ve özgün veri kontrol edilmedi, sayı aktarılmadı. Kurum anlatımları TİP uygulaması değildir. 0–274: 275/860 indeks metni veya boşluğu tarandı; görseller ve 585 indeks açık.
