@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-098",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:12:21.292534+00:00",
+  "reads": [
+    {
+      "post_id": 482,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/gelecek-tepkilere-gore-politika-belirlemek-acziyettir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=gelecek-tepkilere-gore-politika-belirlemek-acziyettir",
+      "published_at": "2024-12-20T21:38:16+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:12:21.292534+00:00",
+      "original_path": "party-news-bodies/482.json",
+      "sha256": "46d6fdb47ed5e9a2edf0016af801a84472638c40e30cf62544086d5508730b05",
+      "normalized_body_sha256": "93d74ce8a1d6fb514295a7cad0829ba2db071cfb1c9ac6162b166fa53f3d0637",
+      "source_section_range": [
+        0,
+        1262
+      ],
+      "state": "examined",
+      "reading": "Arıkan çocuklara karşı şiddet komisyonunda geçtiği aktarılan bir diyaloğu sosyal medya açıklamasıyla eleştiriyor.",
+      "selected_passages": [
+        {
+          "start": 700,
+          "end": 756,
+          "exact": "acziyettir, yönetememektir, beklentileri hiçe saymaktır."
+        }
+      ],
+      "point": "Çocukların güvenliği komisyonunda karar gerekçesine yönelik eleştiri.",
+      "statement": "Arıkan gündeme gelen komisyon diyaloğunda kamuoyu tepkisine göre davranıldığı görüşünü eleştiriyor.",
+      "concrete_evidence": "Parti özgün API gövdesi diyaloğu ve Arıkan açıklamasını aktarıyor.",
+      "open_provenance": "Komisyon tutanağı veya ses kaydı ayrıca incelenmedi; konuşmaların tamamı ve komisyonun somut kararının dayanağı parti aktarımından kesinleştirilemez. Yayın tarihi toplantı tarihinin yerine geçirilmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 184,
+  "remaining_pre_cut_bodies": 465,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
