@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-190",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T19:11:14.676725+00:00",
+  "reads": [
+    {
+      "post_id": 391,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/zihniyet-degismezse-asgari-ucret-erir-gider",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=zihniyet-degismezse-asgari-ucret-erir-gider",
+      "published_at": "2023-06-20T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T19:11:14.676725+00:00",
+      "original_path": "party-news-bodies/391.json",
+      "sha256": "9d3ae64f830c0645f4314e07fb8d2c9beff4a07c988b83cd0004b453556d6c9e",
+      "normalized_body_sha256": "d6e9ce167bafdd850dee74248e77999bc671667107cfdf46cfec367472bf3764",
+      "source_section_range": [
+        0,
+        12574
+      ],
+      "state": "examined",
+      "reading": "Karamollaoğlu belirlenen asgari ücretin alım gücü, tarım desteği ve ulaştırmayı değerlendiriyor.",
+      "selected_passages": [
+        {
+          "start": 39,
+          "end": 193,
+          "exact": "Yeni belirlenen asgari ücret, ilk bakışta idare eder gibi gözükse de ekonomi politikaları ve zihniyet değişmedikçe yine birkaç ay sonra eriyip gidecektir."
+        }
+      ],
+      "point": "Asgari ücretin ilerideki alım gücü hakkında değerlendirme.",
+      "statement": "Ekonomi politikası değişmezse yeni belirlenen ücretin birkaç ay içinde eriyeceğini öngörüyor.",
+      "concrete_evidence": "Parti gövdesi tahmini genel başkana atfediyor; kesin tutarlı bir yeni ücret talebi belirtmiyor.",
+      "open_provenance": "Gerçek ücret ve enflasyon serileri bu okumada karşılaştırılmadı; 5488 sayılı Tarım Kanunu atfındaki uygulama iddiası ve ulaşım kazası isnatları bağımsız doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 276,
+  "remaining_pre_cut_bodies": 373,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü; blok sonları korundu, etiketler ve boş satırlar kaldırıldı."
+}
