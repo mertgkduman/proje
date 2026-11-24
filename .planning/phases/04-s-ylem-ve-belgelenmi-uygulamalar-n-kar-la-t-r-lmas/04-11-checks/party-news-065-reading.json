@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-065",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T12:15:09.594139+00:00",
+  "reads": [
+    {
+      "post_id": 525,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/milletimiz-yoksullasiyor-cikar-gruplari-zenginlesiyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=milletimiz-yoksullasiyor-cikar-gruplari-zenginlesiyor",
+      "published_at": "2025-08-20T11:52:00+00:00",
+      "updated_at": "2025-08-20T11:52:00+00:00",
+      "accessed_at": "2026-11-24T12:15:09.594157+00:00",
+      "original_path": "party-news-bodies/525.json",
+      "sha256": "bacce004665aaa16601858ae81f94b18e58e4255354ca71ca34725ecf30ab60a",
+      "normalized_body_sha256": "4eace97c323a17a742afb58368606dec8eed37e8c8cea4c4507c73be3714a72c",
+      "source_section_range": [
+        0,
+        11799
+      ],
+      "state": "examined",
+      "reading": "Yayında Abdullah Akının ekonomi, tarım, kamu ücretleri, Gazze ve kalkınma planı değerlendirmeleri aktarılıyor. Plan bölümünde 2,5 milyon iş alanı ve yüksek teknoloji/enerji bağımsızlığı hedefleri ifade ediliyor.",
+      "selected_passages": [
+        {
+          "start": 10434,
+          "end": 10485,
+          "exact": "İnşallah 2,5 milyon vatandaşımıza iş alanı açacağız"
+        }
+      ],
+      "point": "Kalkınma planı istihdam hedefi ve ekonomik eleştiriler.",
+      "statement": "Yayında 2,5 milyon iş alanı açma hedefi yer alıyor.",
+      "concrete_evidence": "Parti gövdesi hedefi ve ekonomik iddiaları kaydeder; planın uygulandığını veya istihdam gerçekleşmesini kanıtlamaz.",
+      "open_provenance": "Metin başta konuşmacıyı Abdullah Akın olarak tanıtırken plan bölümünde Ahmet Akın adını kullanır; ilgili bölümün gerçek konuşmacısı ayrıca doğrulanmalı. Fiyat oranları ve SGK çiftçi verilerinin kapsamı/dönemi ayrıca incelenmeli."
+    }
+  ],
+  "completed_pre_cut_bodies": 151,
+  "remaining_pre_cut_bodies": 498,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
