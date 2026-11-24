@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 69 | 71 | 62568514 |
 | Saadet Partisi | 26 | 22 | 62567788 |
-| Demokrat Parti | 41 | 34 | 62568686 |
+| Demokrat Parti | 46 | 38 | 62570397 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -319,3 +319,7 @@ Saadet 028–030 sonunda 115/649 gövdeye ulaştı ve 534 gövde açık. EMEP 25
 Demokrat Parti katalog taraması 111/257 gövdeye ulaştı. İki kayıt kesim sonrası ve 144 kayıt açık. 107’nin Ankara başlığı ile Antalya’yı anlatan gövdesi uyuşmuyor. Birinci başlık çıkarıldığında 107’nin gövdesi 108 ile aynı. 2, 4 ve 6 Mart ittifak duyuruları ayrı tarihlerle kaydedildi. [011. kaynak dilimi](../04-12-checks/party-news-011-reading.json)
 
 5.000 TL emekli ödemesiyle ilgili 7464’ün ilk kapsamı, 7491’in kapsam genişlemesi ve SGK’nın bildirdiği Aralık gerçekleşmesi üç ayrı olayda hazırlandı. 2023 ve 2024 faaliyet raporlarının ilgili sayfaları okundu. Yaklaşık 4,7 milyon kişi, 23,4 milyar TL ve SGK’ya Ocak aktarımı ayrı. 49 olay ve 40 ilişkilik aday 62571364, 62570397 sonrasında çalışmak üzere sırada. [Kaynak okuma kaydı](../04-12-checks/pension-5000-reading.md)
+
+Demokrat Parti görev dağılımı ve Can Atalay dosyası iki HTML görünümünde, SQLite ve JSON çıktısında doğrulandı. Başkanlık Divanı duyurusu tüzükteki Genel Sekreterlik ve onay hükmüne bağlandı, imzalı toplantı kararı açık. Can Atalay dosyasında 8 Kasım 2023 Yargıtay işlemi ayrı ve eşleşmemiş, 21 Aralık AYM kararı, 30 Ocak Meclis işlemi ve 22 Şubat norm denetimi üç ayrı ilişkide. Karar ve yayım tarihleri ayrı tutuldu. [Önizleme makbuzu](../04-12-checks/divan-atalay-62570397.json) · [Okuma kaydı](../04-12-checks/divan-atalay-reading.md)
+
+Demokrat Parti katalog taraması 121/257 gövdeye ulaştı ve 134 kayıt açık. 5 Ocak ortak açıklamasının 118–119 gövdeleri ilk başlık dışında aynı. 26 Ocak metni sitede 27 Ocak tarihinde kayıtlı. [012. dilim](../04-12-checks/party-news-012-reading.json) · [013. dilim](../04-12-checks/party-news-013-reading.json)
