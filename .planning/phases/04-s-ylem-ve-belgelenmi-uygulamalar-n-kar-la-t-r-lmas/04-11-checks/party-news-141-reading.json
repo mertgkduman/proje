@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-141",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T16:15:14.990628+00:00",
+  "reads": [
+    {
+      "post_id": 439,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/her-kanli-paranin-ortagisiniz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=her-kanli-paranin-ortagisiniz",
+      "published_at": "2024-11-05T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T16:15:14.990628+00:00",
+      "original_path": "party-news-bodies/439.json",
+      "sha256": "c61906268cb48e45a437e5386bd0f2f4a2043f519d8ed0bb3ef4b8107d1efd98",
+      "normalized_body_sha256": "82af48a5b25650b116c95a27c88f7f665ddbd89c4f2d57e2a99234bb1b4797e8",
+      "source_section_range": [
+        0,
+        16577
+      ],
+      "state": "examined",
+      "reading": "Mahmut Arıkan grup toplantısında tarım, ticaret, sağlık ve adalet konularını değerlendiriyor.",
+      "selected_passages": [
+        {
+          "start": 11831,
+          "end": 11875,
+          "exact": "81 ilimizde, çiftçimizle bir araya geleceğiz"
+        }
+      ],
+      "point": "Tarım desteği ve çiftçilerle il düzeyinde toplantı duyurusu.",
+      "statement": "Arıkan 81 ilde çiftçilerle bir araya gelip basın açıklamaları yapacaklarını söylüyor.",
+      "concrete_evidence": "Parti gövdesi konuşmanın 6 Kasım 2024te olduğunu belirtiyor ve politika kurullarıyla 81 ilde açıklama planını aktarıyor.",
+      "open_provenance": "API etiketi 5 Kasım 21:00 UTC, konuşma gövdesi 6 Kasım gününü gösterir. Her ilde toplantı veya basın açıklamasının yapıldığı burada doğrulanmadı; sayı gerçekleşme olarak sunulamaz."
+    }
+  ],
+  "completed_pre_cut_bodies": 227,
+  "remaining_pre_cut_bodies": 422,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
