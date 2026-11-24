@@ -62,6 +62,8 @@ bounds = ("Mahkemenin kararı ilgili hesap yılı ve eldeki bilgi ve belgelerle 
 claims = {}
 for row in receipt["sources"]:
     year = row["accounting_year"]
+    if year not in (2018, 2019):
+        continue
     docket, page, printed, figure, verdict, point = clauses[year]
     stem = f"{case}-{year}"
     vid = f"{stem}-v1"

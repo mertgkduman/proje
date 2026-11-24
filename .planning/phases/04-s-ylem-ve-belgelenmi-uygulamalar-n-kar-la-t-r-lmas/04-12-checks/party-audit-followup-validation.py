@@ -1,4 +1,4 @@
-"""Verify five additional audit records in both reader views."""
+"""Verify the 2018 and 2019 audit records in both reader views."""
 
 import importlib.util
 import json
@@ -19,7 +19,7 @@ package = checks / f"{case}-draft.json"
 review = checks / f"{case}-review-draft.json"
 assert [harness.sha(path) for path in (package, review)] == sys.argv[1:]
 records = json.loads(package.read_bytes())["practice_records"]
-assert [len(records[key]) for key in ("practice_event", "practice_relation", "practice_closure")] == [78,50,0]
+assert [len(records[key]) for key in ("practice_event", "practice_relation", "practice_closure")] == [75,50,0]
 receipt = harness.main(package, review, case, "0412-law-7253-adoption-event", "0412-law-7253-adoption-relation",
                        None, expected_party="demokrat", namespace="gsd-0412")
 folder = Path(receipt["preview"])
@@ -30,9 +30,6 @@ report = (folder / "index.html").read_text()
 with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=True) as db:
     db.row_factory = sqlite3.Row
     for year, phrases in (
-        (2014,("179.880,38 TL", "Hazineye irat", "5.421.416,72 TL")),
-        (2015,("1.809,98 TL", "Hazineye irat", "5.519.493,82 TL")),
-        (2016,("1.532.775,00 TL", "1.523.775 TL", "1.763.474,89 TL", "9.000 TL")),
         (2018,("6.641.061,27 TL", "6.640.527,90 TL", "1.704,82 TL")),
         (2019,("7.017.267,12 TL", "7.018.363,30 TL", "608,64 TL")),
     ):
@@ -48,8 +45,4 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
             assert report.count(marker)==1 and f'href="#{anchor}"' in report
             card = report.split(marker,1)[1].split("</article>",1)[0]
             assert all(phrase in card for phrase in phrases), (view, year)
-    dispute_id = f"{base}-2016-income-dispute"
-    dispute = db.execute("SELECT * FROM practice_dispute WHERE id=?", (dispute_id,)).fetchone()
-    assert dict(dispute) in export["practice_dispute"]
-    assert {row[0] for row in db.execute("SELECT role FROM practice_dispute_evidence WHERE dispute_id=?", (dispute_id,))} == {"conflict", "support"}
 print("DEMOCRAT_PARTY_AUDIT_FOLLOWUP_BOTH_VIEWS_OK", folder, flush=True)

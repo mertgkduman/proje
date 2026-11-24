@@ -1,0 +1,43 @@
+{
+  "failed": {
+    "job": "62592115",
+    "state": "FAILED",
+    "exit_code": "1:0",
+    "package_sha256": "faca21ebef1a92d847b0217dcc4d0aa265cb905899a8ddf788fb760669631186",
+    "review_sha256": "2b261b1b2c0eff4894e95a92d41c85b3d3a22d7f5731ecfd74d21e8f58ae08a9",
+    "draft_commit": "f123cc25",
+    "reason": "2014–2016 kararlarını içeren özgün 21.185.101 baytlık AYM cildi, 20.971.520 baytlık kaynak sınırında kaynak/önizleme girişini geçemedi."
+  },
+  "retry": {
+    "job": "62592388",
+    "package_sha256": "c59a6d87c95ab466afadd7adc5f76438e3bf29d02f7a550fb6b2d3c0b02bcefe",
+    "review_sha256": "3f043616ba1a95ad72320a46a4f19f824974bccecf9256d7a08ceeaf67d1aaa9",
+    "accounting_years": [
+      2018,
+      2019
+    ]
+  },
+  "remaining_accounting_years": [
+    2014,
+    2015,
+    2016
+  ],
+  "original_retrieval_results": [
+    {
+      "url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2019-15-spmd.pdf",
+      "http": 404
+    },
+    {
+      "url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2019-33-spmd.pdf",
+      "http": 404
+    },
+    {
+      "url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2020-22-spmd.pdf",
+      "http": 404
+    },
+    {
+      "url": "https://legalbank.net/resmi-gazete-dosyalar/20200114/81b34d41f7e04229b7ca773938112068.pdf",
+      "http": 403
+    }
+  ]
+}
