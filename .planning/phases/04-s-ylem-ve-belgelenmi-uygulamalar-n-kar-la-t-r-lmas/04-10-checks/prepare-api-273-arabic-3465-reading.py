@@ -1,0 +1,22 @@
+import hashlib,json,re
+from datetime import datetime,timezone
+from pathlib import Path
+c=Path(__file__).resolve().parent; page=c/'party-api-pages/page-25.json'; posts={p['id']:p for p in json.loads(page.read_text())}
+def sha(s):return hashlib.sha256(s.encode('utf-8')).hexdigest()
+ar=posts[3465]['content']['rendered']; tr=posts[3461]['content']['rendered']
+spans=list(re.finditer(r'<p class="wp-block-paragraph">.*?</p>',ar,re.S)); assert len(spans)==6
+notes=[
+ 'Arapça ilk paragraf Trump’ın Netanyahu’nun katılımıyla “yüzyılın anlaşması” adını verdiği planı anlattığını, Kudüs’ün İsrail’in başkenti olarak tanındığını, denizden nehre Filistin toprakları ve varlık koşulları yetersiz bir sözde devlet iddiasını parti değerlendirmesi olarak sunar. Gazze ile Batı Şeria’yı bağlayan tünel haritasından, kabul edilmezse zor yaşam tehdidinden ve Körfez Arap yönetimlerince finansman iddiasından söz eder.',
+ 'İkinci paragraf, Emek Partisi adına Trump planını ve ABD siyasetini kınar; Körfez’de destekleyen ve Filistinlilerin denizden nehre toprak hakkını savunmakta gevşek kaldığını söylediği Arap yönetimlerini eleştirir. Filistin halkına ve karşı çıkan diğer halklara dayanışma, plan karşısında birlik ve tarihsel Filistin toprağı hakkı çağrısı yapar.',
+ 'Yaşasın halkların mücadeleleri sloganı.',
+ 'Özgür ve onurlu Filistin sloganı.',
+ 'Siyonizm ve Amerikan faşizmi karşıtı slogan.',
+ 'İmza Arapça Emek Partisi ve parantez içinde Türkçe adın Arap harfleriyle yazımıdır; metinde kişi yazarı verilmez.'
+]
+parts=[]
+for m,note in zip(spans,notes):parts.append(dict(start_char=m.start(),end_char=m.end(),slice_sha256=sha(ar[m.start():m.end()]),reading_note=note))
+terms=['نفق يربط قطاع غزة','بالضفة الغربية','الانظمة الرجعية العربية','من البحر إلى','فلسطين\nالتاريخية']; assert all(x in ar for x in terms)
+turkish_terms=['yüzde on beş','elli milyar dolar','1967’de işgal','geri dönebilmelidir','tazminat ödemelidir']; assert all(x in tr for x in turkish_terms)
+out={'id':'0410-emep-api-273-arabic-3465-independent-reading','read_at':datetime.now(timezone.utc).isoformat(),'method':'Arapça özgün HTML gövdesi dış çeviri aracı kullanılmadan doğrudan Arapça okundu; metin anlamı çıkarıldıktan sonra Türkçe 3461 özgün gövdesi ile karşılaştırıldı. Ham gövde ve altı paragraf aralığı Unicode karakter sınırlarında SHA-256 ile bağlandı. Kaynakların iddiaları doğrulanmış olguya çevrilmedi.','source':{'post_id':3465,'url':posts[3465]['link'],'page':str(page),'api_date':posts[3465]['date'],'api_modified':posts[3465]['modified'],'body_sha256':sha(ar),'start_char':0,'end_char':len(ar),'parts':parts},'coverage':'Gövde başındaki boş style etiketi, altı paragraf ve sondaki HTML ayırıcılarıyla [0,1664) bütünü gözden geçirildi. Bu belge için 273teki unread_language_gap giderildi; genel korpus kapsamı açık.','comparison':{'post_id':3461,'url':posts[3461]['link'],'api_date':posts[3461]['date'],'api_modified':posts[3461]['modified'],'body_sha256':sha(tr),'start_char':0,'end_char':len(tr),'common':'İki metin Trump planını eleştirir, Filistin halkına dayanışma ve bağımsızlık çağrısı yapar. Her ikisi EMEP sitesinde parti adına yayımlanır; farklı yayım günleri tek olay veya iki ayrı parti işlemi ispatlamaz.','arabic_only_in_these_bodies':'Arapça gövde Gazze–Batı Şeria tüneli, denizden nehre/tarihsel Filistin ifadesi, Körfez Arap yönetimlerinin finansmanı ve Trump’ın reddetme hâlinde zor yaşam tehdidi iddialarını içerir; bunlar Türkçe 3461 gövdesinde bu biçimde bulunmaz.','turkish_only_in_these_bodies':'Türkçe 3461 yüzde 15, 50 milyar dolar, 1967 öncesi topraklarda başkenti Kudüs olan devlet, geri dönüş ve tazminat taleplerini açıkça içerir; bunlar Arapça 3465 gövdesinde bu biçimde bulunmaz.','relation':'Aynı konu hakkında farklı kapsamlı parti açıklamalarıdır; kelimesi kelimesine çeviri veya aynı belgenin birebir paralel sürümleri değillerdir. API yayım tarihleri 29 Ocak ve 1 Şubat 2020dir; üretim ve açıklama tarihleri hakkında ek kanıt yoktur.'},'limitations':['Bu özet görüş ve iddiaları EMEP yayınına atfeder; planın gerçekte ne öngördüğü, finansman, tehdit ve sınırların doğruluğu bağımsız birincil kaynakla incelenmedi.','Açıklama metninden kurumsal icra, bireysel sonuç veya nedensellik çıkarılmadı.','Bu yerel dil okuması araştırma kapsamını kapatmaz.'],'closure_refs':[]}
+with (c/'party-api-273-arabic-3465-reading.json').open('x') as f:json.dump(out,f,ensure_ascii=False,indent=2);f.write('\n')
+print('ARABIC3465_READING_OK',len(ar),len(parts),sha(ar),sha(tr))
