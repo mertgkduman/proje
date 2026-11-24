@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-179",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T18:43:19.918137+00:00",
+  "reads": [
+    {
+      "post_id": 402,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bugun-gerekli-tedbirleri-almazsak-yarin-ayaga-kalkamayiz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bugun-gerekli-tedbirleri-almazsak-yarin-ayaga-kalkamayiz",
+      "published_at": "2023-10-15T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T18:43:19.918137+00:00",
+      "original_path": "party-news-bodies/402.json",
+      "sha256": "9288cc0a064a7642e02faf07d73821f34d19ae0d5cfed12e4f3c5cef473d4a09",
+      "normalized_body_sha256": "5afbd0a8dbe4e93d0c6783fd0b7d9892eb9599da2411727f7526b8cc95e21588",
+      "source_section_range": [
+        0,
+        3356
+      ],
+      "state": "examined",
+      "reading": "Karamollaoğlu’nun Maltepe Özgür Filistin mitingindeki konuşması parti yayımında aktarılıyor.",
+      "selected_passages": [
+        {
+          "start": 38,
+          "end": 85,
+          "exact": "İstanbul İl Başkanlığımız tarafından düzenlenen"
+        }
+      ],
+      "point": "Maltepe’de Filistin için miting.",
+      "statement": "Parti yayımı etkinliği İstanbul İl Başkanlığına atfediyor ve genel başkanın konuşmasını aktarıyor.",
+      "concrete_evidence": "Haber mitingin yapıldığını ve Karamollaoğlu’nun katıldığını kendi yayımında bildiriyor.",
+      "open_provenance": "Etkinliğin bağımsız teyidi ve daha önceki tam olarak bu mitinge yönelik çağrı eşleştirilmedi; sayısal kalabalık ve diğer olgusal iddialar doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 265,
+  "remaining_pre_cut_bodies": 384,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü; blok sonları korundu, etiketler ve boş satırlar kaldırıldı."
+}
