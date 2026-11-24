@@ -23,16 +23,17 @@
     {
       "publisher": "TBMM",
       "url": "https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d27/c052/tbmm27052016.pdf",
-      "original_path": "tbmm-27-4-16-basili.pdf",
-      "sha256": "684d6f62bc6c49659c6b45c5e7259c460143ad32d7f8e064c4bd876718e8cd16",
-      "bytes": 12365254,
-      "retrieved_at_utc": "2026-11-24T13:27:47+00:00",
+      "original_path": "tbmm-27-4-16-basili-tam.pdf",
+      "sha256": "77844748cbb9ab3e3a814422e9cfd4be1963507a647bbea650805ef63d20eb6b",
+      "bytes": 12373446,
+      "retrieved_at_utc": "2026-11-24T14:00:15.356529+00:00",
       "pages_zero_based": [
         110,
         111,
         137
       ],
-      "reading": "Basılı 52. ciltte karar görüşmeleri ve kabul aynı birleşim içinde. Basılı 622. sayfadaki işlem satırı elektronik kişi cetveli içermiyor."
+      "reading": "Basılı 52. ciltte karar görüşmeleri ve kabul aynı birleşim içinde. Basılı 622. sayfadaki işlem satırı elektronik kişi cetveli içermiyor.",
+      "alternate_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/27/4/16/Basilmis/99358327-1245-49d3-aea1-dd2fc84b2b84.pdf"
     },
     {
       "publisher": "TBMM",
@@ -66,5 +67,13 @@
     "18 Kasım Resmî Gazete özgün nüshası ve MSB duyurularının yerel özgün HTML’si.",
     "Bir yıllık yetki ile sonraki yenilemeler ve fiilî faaliyet ayrı."
   ],
-  "closure_refs": []
+  "closure_refs": [],
+  "access_correction": {
+    "recovered_at_utc": "2026-11-24T14:00:15.356529+00:00",
+    "previous_capture": "tbmm-27-4-16-basili.pdf",
+    "previous_sha256": "684d6f62bc6c49659c6b45c5e7259c460143ad32d7f8e064c4bd876718e8cd16",
+    "previous_bytes": 12365254,
+    "expected_bytes": 12373446,
+    "reading": "İlk basılı indirme sunucu uzunluğundan 8.192 bayt kısaydı. Poppler seçili üç sayfayı açmıştı. İki TBMM adresinden yeniden alınan tam dosyalar aynı hashte ve 110, 111, 137. sayfaların metin katmanı ilk okumayla aynı. Kısa kopya ilk alım kanıtı olarak korunuyor, kaynak satırında tam dosya kullanılıyor."
+  }
 }
