@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 81 | 77 | 62611329 |
+| EMEP | 82 | 78 | 62617962 |
 | Saadet Partisi | 35 | 31 | 62616040 / 62616059 |
 | Demokrat Parti | 80 | 51 | 62610812 |
 
@@ -554,3 +554,5 @@ TİP Parti Açıklamaları dizininde 65–72 arası sekiz gövdenin 32.711 karak
 Saadet Partisi’nin 2023 emekli ödemesi karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. İlk adayda parti yayıncısının tam adı 401 numaralı API gövdesinde bulunamadı. Asıl gövde ayrı inceleme kaydında. Güncel aday, Saadet milletvekili Şerafettin Kılıç’ın 25 Ekim TBMM konuşmasını kendi sıfatıyla veriyor. 7464’teki 5.000 TL tek seferlik ödeme ve çalışmama koşulu ile 7491’deki kapsam değişikliği ayrı. SGK raporu 4,7 milyon kişiye yaklaşık 23,4 milyar TL ödeme kaydediyor. Bireysel ödeme ve konuşmanın yasaya etkisi açık. Çalışma çifti 35 olay ve 31 ilişki. [Önizleme makbuzu](../04-11-checks/retired-2023-62616040.json) [Bağımsız denetim](../04-11-checks/retired-2023-62616059-independent.log)
 
 TİP’in 2023 milletvekili seçimi ve Finlandiya’nın NATO üyeliği karşılaştırmaları iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 15 Mayıs geçici yüzde 1,75 açıklaması ve 30 Mayıs YSK kesin yüzde 1,76, 956.057 oy ve dört sandalye ayrı. NATO üyeliği ile parti açıklaması 4 Nisan’da. Gün içindeki sıra açık. 30 Mart 2/5005 Meclis oylaması ayrı ve eşleşmemiş. İlk girdi denemesi, görsel doğrulama kayıtlarının paket sırası nedeniyle reddedildi. Yeni aday boş metin katmanlı YSK eklerini görsel sayfa kanıtı olarak taşıyor. Finlandiya kesin cetvelindeki sayılar ve dört kişisel katılmama satırı kaynak okuma makbuzunda. Çalışma çifti 33 olay ve 31 ilişki. [Önizleme makbuzu](../04-05-checks/tip-election-finland-2023-62617736.json) [Bağımsız denetim](../04-05-checks/tip-election-finland-2023-62617736-independent.log) [Görsel cetvel okuması](../04-05-checks/tip-publication-catalog/party-statements-08/reading.json)
+
+EMEP’in Akbelen olağanüstü toplantı karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 4 Ağustos Başkent gazetesi, Sevda Karaca Demir’in Meclisin olağanüstü toplantıya çağrıldığını bildiren sözlerini aktardı. Sözün kesin günü açık. 3 Ağustos Başkanlık daveti ve 8 Ağustos saat 15.01 açılışı ayrı. EMEP ilişkisi açılışa bağlı. İYİ Parti’nin 8/14 ön görüşmesi, kişisel oylar ve madenin izni ayrı. Çalışma çifti 82 olay ve 78 ilişki. Aynı SHA ile 3305 İngilizce programının 75.374 HTML karakteri ve 3294 Türkçe metnin ilk 20.000 karakteri okundu. [Önizleme makbuzu](../04-10-checks/akbelen-emep-62617962.json) [Bağımsız denetim](../04-10-checks/akbelen-emep-62617962-independent.log) [İzin araştırması](../04-10-checks/akbelen-permit-open-reading.json)
