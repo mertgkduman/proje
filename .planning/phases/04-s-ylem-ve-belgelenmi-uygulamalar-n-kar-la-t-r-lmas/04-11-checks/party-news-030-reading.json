@@ -1,0 +1,70 @@
+{
+  "tranche_id": "saadet-party-news-030",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T09:50:49.557097+00:00",
+  "reads": [
+    {
+      "post_id": 565,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-butce-damacana-butcesidir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-butce-damacana-butcesidir",
+      "published_at": "2025-12-10T12:04:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T09:50:06.152208+00:00",
+      "original_path": "party-news-bodies/565.json",
+      "sha256": "86242371fdd3e25a30a0d8c923ca2fbd8eb57895178e15b65709fd53ddd30b9a",
+      "normalized_body_sha256": "367e760ff6aba9dfc5a0f6405b1cb034db4c3ae84f5e91c1e3451255a701e191",
+      "source_section_range": [
+        0,
+        2464
+      ],
+      "state": "examined",
+      "reading": "Genel başkan yardımcısı Mustafa Yılmaz 2026 bütçe görüşmeleri sırasında faize ve tarıma ayrıldığını söylediği tutarları kıyaslıyor ve 2027 bütçesini farklı önceliklerle yapacaklarını söylüyor. Faiz ve tarım tutarları aynı kapsam veya işlevsel sınıflandırma olup olmadığı gösterilmeden karşılaştırılmamalı.",
+      "selected_passages": [
+        {
+          "start": 2217,
+          "end": 2232,
+          "exact": "2027 bütçesini;"
+        }
+      ],
+      "point": "2026 bütçesi ve 2027 bütçe önceliği.",
+      "statement": "Faiz giderlerinin eleştirisi ve 2027 bütçesini çiftçi ve ücretli önceliğiyle yapma vaadi.",
+      "concrete_evidence": "Parti basın açıklaması; bütçe maddesi, kanunlaşma veya vaat edilen 2027 bütçesi için kendisi işlem kaydı değildir.",
+      "open_provenance": "2026 merkezi bütçe teklif ve kanun cetvelleri ile 888 milyar tarım kaleminin kapsamı, faiz gideri ve gerçekleşme ayrı; 2027 bütçe yapımının yetki ve sonucu açık. Boş güncelleme alanı eski sürümü kanıtlamaz."
+    },
+    {
+      "post_id": 564,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/faize-giden-kaynak-insana-gitmeyen-kaynaktir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=faize-giden-kaynak-insana-gitmeyen-kaynaktir",
+      "published_at": "2025-12-09T10:44:00+00:00",
+      "updated_at": "2025-12-09T10:44:00+00:00",
+      "accessed_at": "2026-11-24T09:50:16.116241+00:00",
+      "original_path": "party-news-bodies/564.json",
+      "sha256": "a4ff9ccbedbd125349086c348216d51a9a363f05897a32829fd179ec436180da",
+      "normalized_body_sha256": "9082c8a1c7325effc70b287252d19774dde1762e0047d1519b5392810f31ce6a",
+      "source_section_range": [
+        0,
+        7235
+      ],
+      "state": "examined",
+      "reading": "Genel başkan yardımcısı İbrahim Yıldız 10 Aralık insan hakları açıklamasında 2026 bütçe önceliklerini, yargı, toplanma, cezaevi ve göçmen hakları sorunlarını değerlendiriyor; etkili soruşturma ve şeffaflık talep ediyor. Ulusal kuruluş raporlarına genel atıf yapıyor fakat ad, rapor tarihi ve bölüm belirtmiyor; rakam ve hak ihlali değerlendirmeleri kendi açıklamasıdır.",
+      "selected_passages": [
+        {
+          "start": 6303,
+          "end": 6341,
+          "exact": "Yargı bağımsızlığının güçlendirilmesi,"
+        }
+      ],
+      "point": "Bütçe ve insan hakları, yargı ve göç.",
+      "statement": "Yargı bağımsızlığı, etkin soruşturma, cezaevi standartları ve sığınmacıların haklarına erişim talepleri.",
+      "concrete_evidence": "Parti Hukuk İşleri Başkanlığı açıklaması; söz konusu raporların tam kimliklerini ve tekil olay kayıtlarını vermiyor.",
+      "open_provenance": "2,742 trilyon faiz, 590 milyar sosyal kalem ve yüzde oranları için bütçe cetvel ve kapsamları; atıf yapılan raporların yayımlayıcıları, tarihleri ve bulguları ayrı incelenmeli. Boş güncelleme alanı eski sürümü kanıtlamaz."
+    }
+  ],
+  "completed_pre_cut_bodies": 115,
+  "remaining_pre_cut_bodies": 534,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
