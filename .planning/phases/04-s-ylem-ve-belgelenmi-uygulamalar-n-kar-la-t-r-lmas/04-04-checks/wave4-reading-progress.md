@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 78 | 75 | 62590521 |
+| EMEP | 79 | 76 | 62595421 |
 | Saadet Partisi | 32 | 28 | 62592492 |
 | Demokrat Parti | 75 | 50 | 62592388 |
 
@@ -494,3 +494,5 @@ TİP’in 14 Ekim X hesabı karşılaştırması 24 olay ve 23 ilişkiyle çalı
 TİP açıklamaları dizininde ilk 24 gövde okundu. 17–24 arasındaki 38.402 karakter, ekoloji, barış, otizm ve haklar, Mart 2025 MYK ve sonraki açıklama, ortak emek çağrısı ile hayvanları koruma teklifine ilişkin parti tutumlarını içeriyor. 2/3159 ve 7527 için TBMM uçları kaydedildi. Dizin içinde 166 gövde açık. [Üçüncü okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-03/reading.json)
 
 21 Kasım 2025 tarihli komisyon tutanağında Ahmet Şık görüşmeye desteğini, grup dışı temsilin dışlanmasına ve kapalı oylamaya itirazını ayrı ifade ediyor. Tutanaktaki açık oturumun kapatılması oylaması ile sonraki kapalı ziyaret kararı ayrı. TBMM, 24 Kasım ziyaretine katılan üç temsilciyi ve 4 Aralık özet sunumunu bildiriyor. Kapalı oylamanın kişi cetveli ve ziyaretin sonraki politika sonucu açık. [Tutanak ve kurum kaynakları](../04-05-checks/mddk-20251121-sources/reading.json)
+
+EMEP’in 8 Ekim 2019 açıklaması ve 3/878 Irak–Suriye tezkeresinin 1231 sayılı kararla kabulü iki görünümde ve bağımsız veri denetiminde doğrulandı. Açıklamada 3/878 numarası bulunmadığı için ilişki tarih ile konuya dayanıyor. 3/879 ayrı. Tutanak kabulü gösteriyor. İsimli oy cetveli, Resmî Gazete karar aslı ve sonraki uygulama açık. Çalışma çifti 79 olay ve 76 ilişki. [Önizleme makbuzu](../04-10-checks/tezkere-1231-62595421.json)

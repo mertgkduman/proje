@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-24T16:43:19.295944+00:00
-Stopped at: TİP X and Saadet 7534 in the working pairs; Democrat single decisions and EMEP 1231 preview validations in progress
+Last session: 2026-11-24T17:01:23Z
+Stopped at: EMEP 1231 and TİP X verified; Democrat audits, TİP Istanbul summit and DEM Ankara workshop validations running
 Resume file: None
