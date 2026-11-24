@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 23 | 22 | 62589852 |
+| TİP | 24 | 23 | 62594433 |
 | DEM Parti | 83 | 12 | 62587929 / 62587933 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -488,3 +488,5 @@ TİP açıklama dizinindeki ilk 16 gövde tam okundu. 9–16 aralığı 38.004 k
 TİP’in 15 Mayıs İstanbul barış zirvesi çağrısı, 4 Temmuz’a ilişkin katılımcı anlatımı, 5 Temmuz parti aktarımı ve 25 Temmuz tarihli nihai deklarasyon ayrı kaynaklarda. Girişimin Türkçe ve İngilizce nüshaları 25 Temmuz tarihli. 5 Temmuz yazısında 7 Temmuz için açıklama planı var. Daha erken ilk yayım açık. 7–8 Temmuz Ankara NATO zirvesi, 27 Haziran Mecidiyeköy eylemi ve 5 Temmuz TMMOB açıklaması ayrı kayıtlar. [Zirve kaynakları](../04-05-checks/ankara-nato-2026-sources/reading-followup.json)
 
 Demokrat Parti’nin 2014–2016 kararlarının özgün tekil PDF’leri AYM Kararlar Bilgi Bankasından alındı. 2014 ve 2015 kararlarında AYM’nin aktardığı beş parti cevabı ayrı pasajlarla kaydedildi. 2016’daki 9.000 TL fark tekil nüshada da görüldü. 78 olay ve 50 ilişkili aday 62596016 işinde denetleniyor. [Tekil PDF alımı ve okuması](../04-12-checks/party-financial-audit-sources/single-decisions-reading.json)
+
+TİP’in 14 Ekim X hesabı karşılaştırması 24 olay ve 23 ilişkiyle çalışma çiftine eklendi. İki görünümde ve bağımsız veri denetiminde İFÖD’ün Genel Merkez hesabına ilişkin gözlemi ve il hesabına ilişkin parti açıklaması ayrı kaldı. Özgün karar ve sonraki teknik uygulama açık. Kapsam kapanışı sıfır. [Önizleme makbuzu](../04-05-checks/tip-x-20261014-62594433.json) [Bağımsız denetim](../04-05-checks/tip-x-20261014-62594433-independent.log)

@@ -4854,19 +4854,33 @@
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-22T06:29:16.025745+00:00",
-        "note": "Program örgütlenme, eylem, ifade ve basın özgürlüklerinin korunması ve geliştirilmesi için mücadele eder. Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.",
+        "recorded_at": "2026-11-24T16:43:19.295944+00:00",
+        "note": "14 Ekim parti açıklaması ve İFÖD Genel Merkez hesabı izlemesi doğrulandı. Özgün karar, il hesabının bağımsız kaydı ve sonraki teknik uygulama açık.",
         "source_ids": [
-          "0203-tip-program-v1"
+          "0405-tip-x-20261014-party-v1"
         ],
+        "status": "partial",
+        "preview_job": "62594433",
         "urls": [
-          "https://tip.org.tr/parti-programi"
-        ],
-        "source_passage_ids": [
-          "0304-tip-program-ifade-p1"
-        ],
-        "status": "partial"
-      }
+          "https://www.tip.org.tr/parti-aciklamalari/bu-karanlik-ne-olursa-olsun-bitecek"
+        ]
+      },
+      "research_history": [
+        {
+          "recorded_at": "2026-11-22T06:29:16.025745+00:00",
+          "note": "Program örgütlenme, eylem, ifade ve basın özgürlüklerinin korunması ve geliştirilmesi için mücadele eder. Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.",
+          "source_ids": [
+            "0203-tip-program-v1"
+          ],
+          "urls": [
+            "https://tip.org.tr/parti-programi"
+          ],
+          "source_passage_ids": [
+            "0304-tip-program-ifade-p1"
+          ],
+          "status": "partial"
+        }
+      ]
     },
     {
       "tranche_id": "scope-198",
@@ -4882,7 +4896,21 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-24T16:43:19.295944+00:00",
+        "note": "14 Ekim parti açıklaması ve İFÖD Genel Merkez hesabı izlemesi doğrulandı. Özgün karar, il hesabının bağımsız kaydı ve sonraki teknik uygulama açık.",
+        "source_ids": [
+          "0405-tip-x-20261014-observation-v1",
+          "0405-tip-x-20261014-monthly-v1"
+        ],
+        "status": "partial",
+        "preview_job": "62594433",
+        "urls": [
+          "https://ifade.org.tr/engelliweb/turkiye-isci-partisinin-x-hesabi/",
+          "https://ifade.org.tr/haberler/ifodden-sosyal-medya-engellemeleri-yas-dogrulama-ve-oyun-platformlarina-iliskin-aciklama/"
+        ]
+      }
     },
     {
       "tranche_id": "scope-199",
