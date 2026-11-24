@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-165",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T17:37:34.137284+00:00",
+  "reads": [
+    {
+      "post_id": 415,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/terore-diz-cokecek-degiliz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=terore-diz-cokecek-degiliz",
+      "published_at": "2023-12-26T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T17:37:34.137284+00:00",
+      "original_path": "party-news-bodies/415.json",
+      "sha256": "75ae021b24cf2258a630bf8c533e2ef5e3a8a6e8dd66a27fdb6f970ee1b58f6c",
+      "normalized_body_sha256": "5e5db911fe833d9f7d7e167899269aa5b708969ebe4dfc636f5d0f3a0399eb05",
+      "source_section_range": [
+        0,
+        10220
+      ],
+      "state": "examined",
+      "reading": "Sabri Tekir Saadet-Gelecek grup toplantısında Hasan Bitmezi anıyor, 2024 bütçesi ve dış politika hakkında konuşuyor.",
+      "selected_passages": [
+        {
+          "start": 6387,
+          "end": 6455,
+          "exact": "tarımsal desteklemeye ise 91,5 milyar lira kaynak ayrılan bir bütçe!"
+        }
+      ],
+      "point": "2024 bütçesinde tarımsal destek tutarı iddiası.",
+      "statement": "Tekir 2024 bütçesinde tarımsal desteğe 91,5 milyar TL ayrıldığını ve yasal yüzde bir hedefinin daha yüksek olacağını ileri sürüyor.",
+      "concrete_evidence": "Parti gövdesi bütçe tutarı ve yüzde bir karşılığına dair iki ayrı rakam veriyor.",
+      "open_provenance": "Bütçe sınıflaması, 2024 gerçekleşen ödeme ve doğru GSYH paydası burada doğrulanmadı. Yayım tarihi kabul edilen bütçeye ilişkin geçmiş değerlendirmedir; tek başına öncesi–sonrası karşılaştırması değildir."
+    }
+  ],
+  "completed_pre_cut_bodies": 251,
+  "remaining_pre_cut_bodies": 398,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
