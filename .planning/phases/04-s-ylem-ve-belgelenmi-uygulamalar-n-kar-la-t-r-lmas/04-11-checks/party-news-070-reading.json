@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-070",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T12:37:36.531982+00:00",
+  "reads": [
+    {
+      "post_id": 516,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/madleeni-kinayip-velaya-goz-yummak-samimiyetsizlik",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=madleeni-kinayip-velaya-goz-yummak-samimiyetsizlik",
+      "published_at": "2025-06-11T13:34:00+00:00",
+      "updated_at": "2025-06-11T13:34:00+00:00",
+      "accessed_at": "2026-11-24T12:37:36.531982+00:00",
+      "original_path": "party-news-bodies/516.json",
+      "sha256": "abc50ad213ab563186a6caf1c5cb8963959fca2e9b3cbb3cf148166cd10194f4",
+      "normalized_body_sha256": "65cc146883dcfe0f34f1dc9dfab18a94e6e8d9c4e1f701c84973dc81c2d1c64f",
+      "source_section_range": [
+        0,
+        14587
+      ],
+      "state": "examined",
+      "reading": "Arıkan Gazze, Madleen ve Vela, uluslararası yardım filosu, yargı, ekonomi ve tarım üzerine konuşuyor. Filonun Türkiye’den kalkacak ilk gemisine parti adına öncülük etmeye hazır olduklarını bildiriyor; ayrıca Üsküdar’da pazar mitingi duyuruyor.",
+      "selected_passages": [
+        {
+          "start": 3748,
+          "end": 3846,
+          "exact": "Bu filonun Türkiye’den yola çıkacak ilk gemisine Saadet Partisi olarak biz öncülük etmeye hazırız."
+        }
+      ],
+      "point": "Türkiye çıkışlı uluslararası insani yardım filosuna öncülük iradesi.",
+      "statement": "11 Haziran 2025 açıklaması birinci gemiye öncülüğe hazır olma beyanıdır; düzenlenmiş sefer veya kalkış kaydı değildir.",
+      "concrete_evidence": "Partinin özgün API gövdesi 516; sonradan okunan parti 523 de gemi organizasyonuna dair ayrı bir açıklamadır.",
+      "open_provenance": "Haziran beyanını 523’ün Ağustos açıklaması veya daha sonraki Vicdan gemisi ile otomatik özdeşleştirecek gemi adı, liman ve tarih kanıtı yoktur. Vela ve meclisteki ret iddiaları bu gövdede taraf beyanıdır; ayrı tutanak ve gemi belgesi gerekir."
+    }
+  ],
+  "completed_pre_cut_bodies": 156,
+  "remaining_pre_cut_bodies": 493,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
