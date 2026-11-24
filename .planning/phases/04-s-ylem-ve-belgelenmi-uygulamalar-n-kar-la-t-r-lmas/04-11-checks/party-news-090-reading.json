@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-090",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:47:49.961235+00:00",
+  "reads": [
+    {
+      "post_id": 490,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/turkiye-olarak-22-yillik-gecmisimizde-nereye-el-attiysak-kan-ve-gozyasi-var-maalesef",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=turkiye-olarak-22-yillik-gecmisimizde-nereye-el-attiysak-kan-ve-gozyasi-var-maalesef",
+      "published_at": "2024-12-25T09:12:03+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:47:49.961235+00:00",
+      "original_path": "party-news-bodies/490.json",
+      "sha256": "209282dac313c23758147cf306e3218445063c79b5947d7fbf5efd0a3d46dbdc",
+      "normalized_body_sha256": "57c86131184d7f5336152f73f19133ae93c66bf9e6d78ceb6eeef20b83a98c8e",
+      "source_section_range": [
+        0,
+        11291
+      ],
+      "state": "examined",
+      "reading": "Arıkan Konya 8. olağan il kongresinde Gazze, Suriye, ekonomi ve muhalefet stratejisini değerlendiriyor; 2026 erken seçim öngörüsünde bulunuyor.",
+      "selected_passages": [
+        {
+          "start": 6976,
+          "end": 7025,
+          "exact": "2026’da erken seçim olması kaçınılmaz bir gerçek."
+        }
+      ],
+      "point": "2026 erken seçim öngörüsü.",
+      "statement": "Konuşmacı bütçe ve ekonomik koşullara dayanarak 2026da erken seçimin olacağını öngörüyor.",
+      "concrete_evidence": "ABC Gazetesi aynı kongre ve öngörüyü 22 Aralık 2024 yayın etiketiyle aktarıyor: https://abcgazetesi.com.tr/saadet-partisi-genel-baskani-arikandan-erken-secim-uyarisi-2026-kacinilmaz-784885 ; party-490-abc.html SHA256 834428ff45b293ee9e5e2bdfd4e19698c4f8d93856078256a2897f3c0c7a839d.",
+      "open_provenance": "Parti API etiketi 25 Aralık 2024, diğer haberin yayın etiketi 22 Aralıktır; olay saati ayrıca belirlenmedi. Erken seçim sözü bir tahmindir, seçimi yapma yetkisi veya taahhüdü değildir. Nihai 2026 sonucu ayrıca doğrulanmadan tahmine ilişkin gerçekleşme hükmü verilmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 176,
+  "remaining_pre_cut_bodies": 473,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
