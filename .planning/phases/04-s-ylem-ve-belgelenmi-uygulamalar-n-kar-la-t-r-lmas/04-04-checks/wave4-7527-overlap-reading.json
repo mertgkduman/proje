@@ -1,0 +1,96 @@
+{
+  "candidate_key": "tbmm-28-2-112-2-2275-law-7527",
+  "decision": "same",
+  "canonical_event_id": "0405-tip-law-7527-event",
+  "differing_fields": [],
+  "members": {
+    "tip": {
+      "event": {
+        "id": "0405-tip-law-7527-event",
+        "common_event_key": "tbmm-28-2-112-2-2275-law-7527",
+        "event_at": "2024-07-30",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "title": "7527 sayılı Hayvanları Koruma Kanunu değişikliğinin kabulü",
+        "scope_context": "28. Dönem 2. Yasama Yılı 112. birleşim, 2/2275 ve 160 sıra sayılı teklif.",
+        "occurrence_basis": "TBMM Genel Kurul tutanağı, kesin açık oy cetveli ve kanun sicili."
+      },
+      "passages": [
+        {
+          "passage_id": "0405-tip-law-7527-floor-adopt-p",
+          "sha256": "f1789bd4788ef5a4e7d5914f2aef6e9a99fcaec323449c823b4c4a48851eaf51",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/112/Basilmis/0325de46-3363-4d69-b730-50213c59c23e.pdf",
+          "page_index": 213,
+          "printed_page": "388",
+          "section": "Başkanlığın kabul duyurusu"
+        },
+        {
+          "passage_id": "0405-tip-law-7527-roll-count-p",
+          "sha256": "f1789bd4788ef5a4e7d5914f2aef6e9a99fcaec323449c823b4c4a48851eaf51",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/112/Basilmis/0325de46-3363-4d69-b730-50213c59c23e.pdf",
+          "page_index": 214,
+          "printed_page": "389",
+          "section": "Kesin cetvelde 273 kabul ve iki mükerrer"
+        },
+        {
+          "passage_id": "0405-tip-law-7527-adopt-day-p",
+          "sha256": "89ec1485503a121125fb8e6853d4be218d9116b9ff63bebe71b33ca8a54ea428",
+          "url": "https://tbmm.gov.tr/Yasama/Kanun/39ba3d53-08dd-45c0-94a0-0190a6fb1d67",
+          "page_index": null,
+          "printed_page": null,
+          "section": "TBMM sicilinde kabul günü"
+        }
+      ],
+      "verification_job": "62604036",
+      "package_sha256": "3b8ebcc9b594565ecf758a4480cdfe208fa66be0b519197b7365f1b0c413ec17"
+    },
+    "emep": {
+      "event": {
+        "id": "0410-law-7527-emep-event",
+        "common_event_key": "tbmm-28-2-112-2-2275-law-7527",
+        "event_at": "2024-07-30",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "28. Dönem 2. Yasama Yılı 112. birleşim, 2/2275 ve 160 sıra sayılı teklif.",
+        "title": "7527 sayılı Hayvanları Koruma Kanunu değişikliğinin kabulü",
+        "occurrence_basis": "TBMM Genel Kurul tutanağı, kesin açık oy cetveli ve kanun sicili."
+      },
+      "passages": [
+        {
+          "passage_id": "0410-law-7527-emep-floor-adoption-p",
+          "sha256": "f1789bd4788ef5a4e7d5914f2aef6e9a99fcaec323449c823b4c4a48851eaf51",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/112/Basilmis/0325de46-3363-4d69-b730-50213c59c23e.pdf",
+          "page_index": 213,
+          "printed_page": "388",
+          "section": "2/2275 teklifinin kabulü"
+        },
+        {
+          "passage_id": "0410-law-7527-emep-floor-tally-p",
+          "sha256": "f1789bd4788ef5a4e7d5914f2aef6e9a99fcaec323449c823b4c4a48851eaf51",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/112/Basilmis/0325de46-3363-4d69-b730-50213c59c23e.pdf",
+          "page_index": 214,
+          "printed_page": "389",
+          "section": "Kesin cetvel sonuç ve saat"
+        },
+        {
+          "passage_id": "0410-law-7527-emep-register-date-p",
+          "sha256": "89ec1485503a121125fb8e6853d4be218d9116b9ff63bebe71b33ca8a54ea428",
+          "url": "https://tbmm.gov.tr/Yasama/Kanun/39ba3d53-08dd-45c0-94a0-0190a6fb1d67",
+          "page_index": null,
+          "printed_page": null,
+          "section": "Kabul tarihi"
+        }
+      ],
+      "verification_job": "62605762",
+      "package_sha256": "7aa6b60caa5b2adb5aeefd97acb7490f63dce40f9746d1a576c35b827538d7ae"
+    }
+  },
+  "common_source_sha256": [
+    "89ec1485503a121125fb8e6853d4be218d9116b9ff63bebe71b33ca8a54ea428",
+    "f1789bd4788ef5a4e7d5914f2aef6e9a99fcaec323449c823b4c4a48851eaf51"
+  ],
+  "reviewer_kind": "agent",
+  "reviewed_at": "2026-11-24T18:11:31.644768+00:00",
+  "overlap_reason": "TBMM 28. Dönem 2. Yasama Yılı 112. birleşiminde 2/2275’in kabulü iki çalışma kaydında aynı. Kabul pasajı ve kesin açık oy cetveli aynı özgün tutanakta. Kabul günü aynı kanun sicilinden. TİP’in üç milletvekili ve EMEP’in Sevda Karaca oyu ayrı kişisel kayıtlar. 15 Ağustos Aydoğdu beyanı kabul olayını değiştirmiyor.",
+  "closure_refs": []
+}

@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-24T18:13:06Z
-Stopped at: TİP and EMEP 7527 verified. TİP Atalay 62607705 and Demokrat Parti bulletin 62607799 checks running.
+Last session: 2026-11-24T18:15:25Z
+Stopped at: TİP and EMEP 7527 verified. Merge rehearsal 11 (62608562), TİP Atalay (62607705) and Demokrat Parti bulletins (62607799) running.
 Resume file: None

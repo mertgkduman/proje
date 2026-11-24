@@ -4,6 +4,8 @@ from collections import defaultdict
 from hashlib import sha256
 import json
 from pathlib import Path
+import subprocess
+import sys
 
 data = Path('data')
 slugs = ('yeni-parti','tip','dem','iyi','yeni-yol','dbp','emep','saadet','demokrat')
@@ -11,9 +13,18 @@ base_id = json.loads((data/'current.json').read_bytes())['release_id']
 base = json.loads((data/'releases'/base_id/'records.json').read_bytes())
 groups = defaultdict(list)
 package_receipts = {}
+commit = sys.argv[1] if len(sys.argv) > 1 else None
+
+
+def read_package(path):
+    if commit:
+        return subprocess.check_output(['git', 'show', f'{commit}:{path}'])
+    return path.read_bytes()
+
+
 for party in slugs:
     path = data/'practices'/f'04-{party}.json'
-    raw = path.read_bytes()
+    raw = read_package(path)
     package = json.loads(raw)
     assert package['base_release'] == base_id and package['party_id'] == party
     records = package['practice_records']
@@ -42,11 +53,12 @@ for party in slugs:
     refs = {(row['subject_kind'],row['subject_id']) for row in package['source_review_refs']}
     embedded = {(row['subject_kind'],row['subject_id']) for row in records.get('practice_source_review', [])}
     review_path = path.with_name(f'04-{party}-review.json')
-    review = json.loads(review_path.read_bytes())
+    review_raw = read_package(review_path)
+    review = json.loads(review_raw)
     companion = {(row['subject_kind'],row['subject_id']) for row in review['practice_source_review']}
     assert refs <= companion
     package_receipts[party] = dict(package_sha256=sha256(raw).hexdigest(),
-        companion_review_sha256=sha256(review_path.read_bytes()).hexdigest(),events=len(records['practice_event']),
+        companion_review_sha256=sha256(review_raw).hexdigest(),events=len(records['practice_event']),
         relations=len(records['practice_relation']),closures=len(records['practice_closure']),
         external_review_ref_count=len(refs-embedded))
     for event in records['practice_event']:

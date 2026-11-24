@@ -13,7 +13,12 @@ checks=Path(sys.argv[1])
 source_commit=sys.argv[2]
 data=Path("data")
 audit=json.loads(Path(sys.argv[3]).read_bytes())
-before=json.loads((checks/"wave4-common-event-audit-10.json").read_bytes())
+baseline = json.loads(Path(sys.argv[6]).read_bytes()) if len(sys.argv) > 6 else {}
+if baseline:
+    before = json.loads(subprocess.check_output([sys.executable, str(checks/"wave4-common-event-audit.py"), baseline["git_commit"]]))
+    assert before["packages"] == baseline["original_packages"]
+else:
+    before=json.loads((checks/"wave4-common-event-audit-10.json").read_bytes())
 groups = {row["candidate_key"]:row for row in audit["common_event_candidates"]}
 prior_keys = {row["candidate_key"] for row in before["common_event_candidates"]}
 overlap = json.loads(Path(sys.argv[5]).read_bytes()) if len(sys.argv) > 5 else None
@@ -21,7 +26,8 @@ added_keys = {overlap["candidate_key"]} if overlap else set()
 assert set(groups) == prior_keys | added_keys and not prior_keys & added_keys
 assert before["common_event_candidates"] == [row for row in audit["common_event_candidates"]
                                              if row["candidate_key"] in prior_keys]
-previous=json.loads((checks/"wave4-merge-rehearsal-06-decisions.json").read_bytes())
+preceding_decisions = Path(sys.argv[6]).stem+"-decisions.json" if baseline else "wave4-merge-rehearsal-06-decisions.json"
+previous=json.loads((checks/preceding_decisions).read_bytes())
 inventory=json.loads((data/"practices/04-inventory.json").read_bytes())
 base=json.loads((data/"releases"/inventory["base_release"]/"records.json").read_bytes())
 assert audit["base_release"]==before["base_release"]==inventory["base_release"]
@@ -71,9 +77,16 @@ if overlap:
         assert all(actual[row["passage_id"]] == row["sha256"] for row in read["passages"])
         refs.append(dict(event_id=event["id"],input_package_sha256=envelopes[party]))
         evidence.extend(row["passage_id"] for row in read["passages"])
-    assert len(refs) == len(overlap["members"]) and overlap["decision"] == "unresolved"
+    assert len(refs) == len(overlap["members"])
+    canonical = overlap.get("canonical_event_id")
+    if overlap["decision"] == "same":
+        assert not group["differing_fields"] and canonical in {ref["event_id"] for ref in refs}
+        assert set(overlap["common_source_sha256"]) <= set(group["common_evidence_sha256"])
+        assert overlap["common_source_sha256"]
+    else:
+        assert overlap["decision"] == "unresolved" and canonical is None
     decisions.append(dict(id=key,candidate_keys=[key],event_refs=refs,
-        decision=overlap["decision"],canonical_event_id=None,overlap_reason=overlap["overlap_reason"],
+        decision=overlap["decision"],canonical_event_id=canonical,overlap_reason=overlap["overlap_reason"],
         source_passage_ids=sorted(evidence),reviewed_at=overlap["reviewed_at"],reviewer_kind=overlap["reviewer_kind"]))
 decision_bytes=(_json(dict(decisions=decisions,input_digests=envelopes,
                            inventory_digest=_digest(inventory),version=1))+"\n").encode()
@@ -89,7 +102,7 @@ assert counts==dict(practice_event=expected_events,practice_relation=sum(row["re
                     practice_closure=0), counts
 receipt=dict(git_commit=source_commit,base_release=inventory["base_release"],kind="isolated_merge_preflight",
              original_packages=audit["packages"],isolated_envelopes=envelopes,
-             preceding_decisions="wave4-merge-rehearsal-06-decisions.json",
+             preceding_decisions=preceding_decisions,
              unchanged_candidate_sources=True, decisions_sha256=decisions_hash,
              output_sha256=digest(_json(merged).encode()), forward_reverse_equal=True,
              same_candidates=sum(r["decision"]=="same" for r in decisions),
