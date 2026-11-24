@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 77 | 74 | 62586033 / 62588487 |
+| EMEP | 78 | 75 | 62590521 |
 | Saadet Partisi | 31 | 27 | 62588702 |
 | Demokrat Parti | 73 | 50 | 62587061 |
 
@@ -462,3 +462,13 @@ Saadet’in 8/60 genel görüşme zinciri iki görünümde ve bağımsız veri d
 Birleşik önizlemenin ilk denemesi aynı özgün 7242 HTML dosyasının iki okunabilir türevinde bayt farkı buldu. Özgün belge Windows-1254 kodlu. TİP türevi 5.404 değiştirme karakteri içeriyordu. EMEP türevi ile doğru yeniden üretimin hashleri eşleşti. Yalnız yalıtılmış kopyada yapılan düzeltme 62591349 ile denetleniyor. [Okunabilir kopya makbuzu](wave4-7242-readable-recovery.json)
 
 TİP’in 3/1044 Libya tezkeresi karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 2 Ocak 2020 parti yayımı ve Baş’ın parti temsilcisi olarak konuşması ayrı. Kesin oy cetveli 332 kabul, 183 ret, 6 mükerrer ve toplam 521. Kürsü ilk sayımı 325 kabul, 184 ret ve toplam 509. Baş’ın kişisel Red oyu ve Mengüllüoğlu’nun Katılmadı kaydı cetvelde. 1238’in 3 Ocak yayımı sicilde. İznin fiilî kullanımı ve kişinin katılmama nedeni açık. [1238 makbuzu](../04-05-checks/tip-libya-1238-62589852.json) [Bağımsız denetim](../04-05-checks/tip-libya-1238-62589852-independent.log)
+
+EMEP’in 25 Kasım 2019 çağrısı ve Tünel buluşması karşılaştırması iki görünümde ve bağımsız veri denetiminde doğrulandı. 24 Kasımda haberle aktarılan yasak, 25 Kasım kısıtlı güzergâh bildirimi ve haberle aktarılan kolluk müdahalesi ayrı. Özgün yasak ve değişiklik belgeleri, parti katılımı ve nedensellik açık. [Önizleme makbuzu](../04-10-checks/nov25-2019-62590521.json) [Bağımsız denetim](../04-10-checks/nov25-2019-62590521-independent.log)
+
+Bağlar Belediye Meclisinin 5 Ocak 2016 tarihli 2016/1 denetim komisyonu seçimi ve sonraki 2016/2–7 kararları özgün PDF metninden ve yerel görüntülerden okundu. 2016/1’deki 37 geçerli gizli oy, beş üye seçimi ve meclis başkanı sıfatı belgeli. 2016 gününe özgü parti aidiyeti ve komisyonun sonraki raporu açık. [2016/1 okuması](../04-09-checks/baglar-2016-denetim-001-reading.json) [Sıralı dilim](../04-09-checks/baglar-council-2016-reading-002.json)
+
+Demokrat Parti’nin beş ek mali denetim kararı özgün ciltlerden okundu. 2016 kararının gerekçesindeki 1.532.775,00 TL gelir ve hükümdeki 1.523.775 TL ayrı. 2014–2016 kararlarını içeren özgün cilt veri yükleme boyut sınırını aşıyor. Üç tekil PDF alımı HTTP 404. Sınır içindeki 2018 ve 2019 kararı 62592388 ile iki görünüm denetiminde. [Kaynak okuması](../04-12-checks/party-financial-audit-sources/followup-reading.json) [Doğrulama geçmişi](../04-12-checks/party-audit-followup-gate-history.json)
+
+TİP’in Parti Açıklamaları sayfası 190 ayrı bağlantıyla arşivlendi. İlk dilimde sekiz özgün sayfa alındı, beş gövdenin 16.834 karakteri tam okundu. Aynı sayfadaki diğer gövdeler ve ayrı yayın aileleri açık. [Katalog](../04-05-checks/tip-publication-catalog/catalog.json) [İlk dilim](../04-05-checks/tip-publication-catalog/party-statements-01/reading.json)
+
+7242’nin TİP çalışma türevi bildirilen Windows-1254 kodlamasıyla yeniden üretildi. Özgün HTML ve önceki önizleme makbuzu saklı. [Düzeltme makbuzu](wave4-7242-readable-recovery.json)
