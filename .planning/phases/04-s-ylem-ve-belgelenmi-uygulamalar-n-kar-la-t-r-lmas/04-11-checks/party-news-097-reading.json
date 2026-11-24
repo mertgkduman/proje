@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-097",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:10:53.461432+00:00",
+  "reads": [
+    {
+      "post_id": 483,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-butce-faiz-butcesidir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-butce-faiz-butcesidir",
+      "published_at": "2024-12-20T21:38:58+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:10:53.461432+00:00",
+      "original_path": "party-news-bodies/483.json",
+      "sha256": "d8c3b5848ad165778281939ec5c745525032b8d9022081f70b08d1c6f0986004",
+      "normalized_body_sha256": "37134e5e249d80c757a5359a7b0c5e82bc2a3d78f2e1971251fce87b9d62b013",
+      "source_section_range": [
+        0,
+        4446
+      ],
+      "state": "examined",
+      "reading": "Mehmet Atmaca bütçe görüşmelerinde çalışma takvimi, faiz, emekliler, KHK, tarım ve dış politika üzerine konuşuyor.",
+      "selected_passages": [
+        {
+          "start": 2607,
+          "end": 2690,
+          "exact": "KHK ile ihraç edilen ve masumiyeti kanıtlandığı hâlde işine iade edilmeyen insanlar"
+        }
+      ],
+      "point": "KHK ile ihraç edilmiş ve görevine dönmemiş kişilere ilişkin eleştiri.",
+      "statement": "Atmaca aklandığı hâlde göreve dönmeyen kişilerden söz ederek bu durumun giderilmesini istiyor.",
+      "concrete_evidence": "Parti API gövdesi 2024 sonundaki bütçe konuşmasını Atmacaya atfediyor. TBMM 10/2925 imzalı önerge çizelgesinde Mehmet Atmaca adı da var; önceki 074/KHK dosyası ayrı okunmuştur.",
+      "open_provenance": "Bu parti özeti konuşmanın tam tutanağı veya hangi hüküm ve kesinleşme şartının kastedildiğini göstermiyor. 2025 önergesindeki imza otomatik belirli bir kişiyi göreve iade etmez ve önceden terfi edilen KHK vakasına ikinci sonuç eklenmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 183,
+  "remaining_pre_cut_bodies": 466,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
