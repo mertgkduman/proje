@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 77 | 74 | 62586033 / 62588487 |
 | Saadet Partisi | 30 | 26 | 62586191 |
-| Demokrat Parti | 69 | 50 | 62586195 |
+| Demokrat Parti | 73 | 50 | 62587061 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -444,3 +444,7 @@ Saadet’in 1/278 bütçe karşılaştırması 62586191 ile iki HTML görünüm�
 7253 karşılaştırması 62586195 ile iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. 21 Temmuz 2/3050 teklifi, 29 Temmuz kabulü, 31 Temmuz yayımı, belirli maddeler için 1 Ekim yürürlüğü ve 2021’de açıklanan temsilci atamaları ayrı. 2023 AYM kararının belirli 5651 hükümlerine ilişkin iptal kapsamı ve ileri yürürlük tarihi ayrı kaydedildi. Uysal’ın 24 Temmuz’daki koşullu değerlendirmesi ile 29 Temmuz açıklamasının kaynakları ayrı. Kesin kişi oyu açık. Dört tarihsel mali denetim kararı 62587061 ile denetimde. [7253 makbuzu](../04-12-checks/law-7253-62586195.json) [Bağımsız denetim](../04-12-checks/law-7253-62586195-independent.log)
 
 EMEP’in 2019 tarım desteklerinin ödeme takvimi karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 21 Nisan ön takvimi, 22 Nisan parti talebi, 24 Nisan AA’nın aktardığı bakan açıklaması ve Hazine’nin aylık toplamları ayrı. Kişisel ödeme ve talebin ödemeler üzerindeki etkisi açık. İlk iş üç aşamada sıfır çıkış verdi. Son HTML kontrolü metindeki “8 ve 15 Mayıs” ifadesinin tam eşleşmesiyle ayrı işte geçti. [Son makbuz](../04-10-checks/agriculture-2020-62588487.json) [Bağımsız denetim](../04-10-checks/agriculture-2020-62588487-independent.log)
+
+Dört tarihsel Demokrat Parti mali denetim kararı iki HTML görünümünde ve bağımsız veri denetiminden geçti. 2011 hükmündeki 300 TL Hazineye irat ve 2012’deki 2.904,36 TL gecikme gideri ayrı. 2013 ve 2017 kararlarının denetlediği tutarlar kendi dönemlerine bağlı. Kararların fiilî icrası ile aynı döneme ait parti söylemi açık. [Mali denetim makbuzu](../04-12-checks/party-financial-audits-62587061.json) [Bağımsız denetim](../04-12-checks/party-financial-audits-62587061-independent.log)
+
+2 Ocak 2020 Libya tezkeresi için TİP açıklaması, 41. birleşim tutanağı, kesin açık oy cetveli ve karar sicili özgün baytlarla arşivlendi. 30 Aralık sunuşu, Baş’ın TİP temsilcisi sıfatı, bireysel Red oyu ve Mengüllüoğlu’nun Katılmadı kaydı ayrı. Kürsü sayıları ve kesin toplamlardaki fark kaydedildi. Kararın 3 Ocak yayımı TBMM sicilinden. 23 olay ve 22 ilişkilik aday 62589479 ile, 7242 doğrulamasına bağlı olarak sırada. [Libya kaynakları](../04-05-checks/tip-libya-1238-sources/reading.json)
