@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-175",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T18:37:35.339021+00:00",
+  "reads": [
+    {
+      "post_id": 406,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/genel-baskanimiz-temel-karamollaoglundan-100yil-mesaji",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=genel-baskanimiz-temel-karamollaoglundan-100yil-mesaji",
+      "published_at": "2023-10-29T11:28:26+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T18:37:35.339021+00:00",
+      "original_path": "party-news-bodies/406.json",
+      "sha256": "b7ffcae6f05d2311fdc87eb0d41b5e7c67ded5aa96c8edf4e829f7827d219485",
+      "normalized_body_sha256": "67888b145658b080c0d14bfb90933f9501d604e3b178cbd77f7cc1bf3be2e3d7",
+      "source_section_range": [
+        0,
+        2306
+      ],
+      "state": "examined",
+      "reading": "Karamollaoğlu’nun Cumhuriyetin 100. yıl dönümü dolayısıyla sosyal medya mesajının parti yayımı.",
+      "selected_passages": [
+        {
+          "start": 130,
+          "end": 236,
+          "exact": "Cumhuriyet’in 100. yılı ve 29 Ekim Cumhuriyet Bayramı dolayısıyla sosyal medya hesabından mesaj yayınladı."
+        }
+      ],
+      "point": "Cumhuriyetin 100. yılı mesajı.",
+      "statement": "Bağımsızlık mücadelesini anıyor ve Cumhuriyetin ikinci yüzyılı için genel kalkınma çağrısı yapıyor.",
+      "concrete_evidence": "Parti yayımı mesajı genel başkanın sosyal medya hesabına atfediyor.",
+      "open_provenance": "Sosyal medya özgün paylaşımı ayrıca doğrulanmadı; genel çağrı somut idari veya yasama sonucunu göstermiyor."
+    }
+  ],
+  "completed_pre_cut_bodies": 261,
+  "remaining_pre_cut_bodies": 388,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü; blok sonları korundu, etiketler ve boş satırlar kaldırıldı."
+}
