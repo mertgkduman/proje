@@ -72,6 +72,7 @@ receipt=dict(git_commit=source_commit,base_release=inventory["base_release"],kin
              counts=counts, aliases=len(merged["aliases"]), review_origins=len(merged["review_origins"]),
              canonical_pointer_sha256=digest((data/"current.json").read_bytes()))
 assert receipt["canonical_pointer_sha256"]=="5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7"
-with (checks/"wave4-merge-rehearsal-07-preflight.json").open("x") as stream:
+output = Path(sys.argv[4]) if len(sys.argv) > 4 else checks / "wave4-merge-rehearsal-07-preflight.json"
+with output.open("x") as stream:
     stream.write(json.dumps(receipt,ensure_ascii=False,indent=2)+"\n")
-print("REHEARSAL_07_INPUTS_AND_ORDER_OK",counts,receipt["output_sha256"],flush=True)
+print("REHEARSAL_INPUTS_AND_ORDER_OK",counts,receipt["output_sha256"],flush=True)

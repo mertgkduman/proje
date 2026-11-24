@@ -1,0 +1,105 @@
+{
+  "git_commit": "573e0bbd6cf98fce624266dc0fa599688b93e568",
+  "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+  "kind": "isolated_merge_preflight",
+  "original_packages": {
+    "yeni-parti": {
+      "package_sha256": "e0e68011435a15b591d9481fe71a84bb7cfd34b4c779d71d0d5378c05797a165",
+      "companion_review_sha256": "9139945aeddf207f0ec27df786907d965d23d2642f05de457f2315cb36c6069b",
+      "events": 144,
+      "relations": 141,
+      "closures": 0,
+      "external_review_ref_count": 1223
+    },
+    "tip": {
+      "package_sha256": "57271c62f71966dbe8e1139060d3c2c10949234713ae279b9ae67b34eeac194e",
+      "companion_review_sha256": "add02d05e5cebcea4657eaf4ab578b2ff809544474d6cfa1bf83c1efcf6773dc",
+      "events": 21,
+      "relations": 20,
+      "closures": 0,
+      "external_review_ref_count": 245
+    },
+    "dem": {
+      "package_sha256": "6e98b8a1a312c439b9076602c704cf5b1661080fc98e3a76ff938981645d2c81",
+      "companion_review_sha256": "a8556fd440f59412b678e32b0864ba65eff66b96d50cfaefb61e672c2e4d6486",
+      "events": 82,
+      "relations": 11,
+      "closures": 0,
+      "external_review_ref_count": 0
+    },
+    "iyi": {
+      "package_sha256": "5814587049d6af3f55d273eb8d2057af2cf2a22ae2ea3bc2051aac2453c148b1",
+      "companion_review_sha256": "7eba5cdfb8a96ddd885d57450a06e01a64db5f27c991401c7dcea24d695fa028",
+      "events": 19,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 290
+    },
+    "yeni-yol": {
+      "package_sha256": "07a7acdd87ff461abe7fd3f75f1e4e60ef4805c6cbdf2eab7f60756b703d9f6a",
+      "companion_review_sha256": "1b89ab0381dad5fc48a00a603c5624ed34489205d60d6bde83a5c7f298c79115",
+      "events": 23,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 345
+    },
+    "dbp": {
+      "package_sha256": "c261a747122fd39d50250c84c2ae6aed9884515ba5a8506610a9ff55f06b2957",
+      "companion_review_sha256": "56f9115e9e4006f24900431a9ac442a0b7d56590ec6dcbcdbaefc816d48c3cae",
+      "events": 64,
+      "relations": 7,
+      "closures": 0,
+      "external_review_ref_count": 472
+    },
+    "emep": {
+      "package_sha256": "1007688bad6981cf0a5c2f04275cfdcfb77bee7894b8dd105f46325b75683c95",
+      "companion_review_sha256": "03a3aee2eb56fbe13e2b52e98e92eeb365ad02f45f8d6079497cfad86dbe2134",
+      "events": 76,
+      "relations": 73,
+      "closures": 0,
+      "external_review_ref_count": 661
+    },
+    "saadet": {
+      "package_sha256": "cf6e21d5fc406d5fb91c8956f03c0203e6adbf1a55f648b637a5d84942fa64ba",
+      "companion_review_sha256": "8360a861db29d28f1f4de8747f003073015262f88474ea3b4b3044f8e2b8f0ac",
+      "events": 29,
+      "relations": 25,
+      "closures": 0,
+      "external_review_ref_count": 369
+    },
+    "demokrat": {
+      "package_sha256": "3848a79473d94f409206f9ee6299533ae278eaeae31b11a067639b9ee68a88d8",
+      "companion_review_sha256": "8787e957eed48406c0021a83e1504765de820c22d0a43cce367637028cbd639d",
+      "events": 62,
+      "relations": 48,
+      "closures": 0,
+      "external_review_ref_count": 735
+    }
+  },
+  "isolated_envelopes": {
+    "yeni-parti": "6ebab9afb5483f38afa7d1db61b7e7aec277496d28122bc36b5ea979c9845b19",
+    "tip": "604762642e22da4134b38425d94037ad358aafaaa55d7514541a89047f7f233c",
+    "dem": "f5faed75fe5463c312807501b2f43aae2652bee45a8199ec54f80a1f2eb1bfbd",
+    "iyi": "ef98fecead2896d576c53a4bfe7661aa7505091d54d2fb87ae08d5ec7e000384",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "276ca2d2db2d8a924ef807504290d66f13b68cbea769ecd59a182a54ef684a5c",
+    "emep": "60078cf376e11f3a42a50288c2880b7934aa2d5ab3c13918189ca3bdfb081677",
+    "saadet": "907d5d43b3fbfe72a3d9ffdd0db395417c5fae6f912ea991f5332eb878e41cd7",
+    "demokrat": "639d97c8b28775f652e5d2a26b80651cdef7d1ec7e7395923d91a7044bfa5e62"
+  },
+  "preceding_decisions": "wave4-merge-rehearsal-06-decisions.json",
+  "unchanged_candidate_sources": true,
+  "decisions_sha256": "3f4e67faed30a71218195cc8a65f9df3ef2f2e943c7628e844a21f33fdcc2c0b",
+  "output_sha256": "ae59c57780d722b9173b1eb33542ee6a4ae388e631367f7d741f66bf86c4cc8b",
+  "forward_reverse_equal": true,
+  "same_candidates": 11,
+  "unresolved_candidates": 12,
+  "counts": {
+    "practice_event": 500,
+    "practice_relation": 349,
+    "practice_closure": 0
+  },
+  "aliases": 528,
+  "review_origins": 5104,
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7"
+}
