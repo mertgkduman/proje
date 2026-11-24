@@ -1,0 +1,64 @@
+{
+  "tranche_id": "saadet-party-news-021",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T07:27:40.501134+00:00",
+  "reads": [
+    {
+      "post_id": 579,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/genel-baskanimiz-mahmut-arikan-chp-genel-merkezi-nde-chp-genel-baskani-ozgur-ozel-i-ziyaret-etti",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=genel-baskanimiz-mahmut-arikan-chp-genel-merkezi-nde-chp-genel-baskani-ozgur-ozel-i-ziyaret-etti",
+      "published_at": "2026-01-26T18:57:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T07:18:53.362696+00:00",
+      "original_path": "party-news-bodies/579.json",
+      "sha256": "e9c88329a6132563ee5088e618d30f7af212ef5059cbe4531874076c1bbf883f",
+      "normalized_body_sha256": "d8b2e099ebf4c94c06ba998f2547513c3e310bbeb0cb24df85e0e6893d1f8448",
+      "source_section_range": [
+        0,
+        998
+      ],
+      "state": "examined",
+      "reading": "Arıkanın CHP Genel Merkezinde Özgür Özeli kurultay sonrasında ziyaret ettiği ve iki liderin emekli gelirleri ve güncel gelişmeleri görüştüğü parti yayınının özetidir. Görüşmenin tam içeriği, tarihi ve ortak bir karar ayrı kaynaklarda açık.",
+      "selected_passages": [],
+      "point": "Parti liderlerinin ziyareti ve emekli gelirleri.",
+      "statement": "Arıkan emekli alım gücünü artıracak adım çağrısı yapıyor; Özel yeterli gelir gereğini savunuyor.",
+      "concrete_evidence": "Saadet haberi ziyareti ve iki liderin basın açıklamasını özetliyor; doğrudan alıntı ve ortak karar belgesi sunmuyor.",
+      "open_provenance": "CHP kaydı, basın toplantısı ve kesin görüşme tarihi ayrıca araştırılmalı; boş güncelleme alanı eski sürümü kanıtlamaz."
+    },
+    {
+      "post_id": 578,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-iktidar-emekliyi-sefalette-esitlemeye-kafa-koymus",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-iktidar-emekliyi-sefalette-esitlemeye-kafa-koymus",
+      "published_at": "2026-01-25T16:54:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T07:23:34.928594+00:00",
+      "original_path": "party-news-bodies/578.json",
+      "sha256": "2248651250c9f15e3d507fb4e3c730f5d4291b6bb4d5617be2c534833bb58ccc",
+      "normalized_body_sha256": "2188271c6829af6950f16b4b194fd39c2ce70382e64ea0d1f812d05793a94c47",
+      "source_section_range": [
+        0,
+        11230
+      ],
+      "state": "examined",
+      "reading": "Manisa il kongresinde Arıkan en düşük emekli aylığının asgari ücret seviyesine çıkarılması ve primlere göre kademelendirme teklifinin sunulduğunu, kampanyanın 1 milyon 214 bini aştığını söylüyor. 41 ana proje, 2,5 milyon istihdam ve 528 milyar dolar gelir artışı kalkınma planı hedefleri olarak açıklanıyor. Borç ve faiz rakamları, Gediz ile çiftçi cezası iddiaları konuşmacıya atıflıdır; rozet takılması parti tarafından bildirilen somut etkinliktir.",
+      "selected_passages": [
+        {
+          "start": 1203,
+          "end": 1324,
+          "exact": "en düşük emekli aylığı en az asgari ücret seviyesine yükseltilmeli, prim ödemelerine göre kademeli oranlama yapılmalıdır."
+        }
+      ],
+      "point": "Emekli aylığı, Manisa tarımı ve kalkınma planı.",
+      "statement": "En düşük emekli aylığı için asgari ücret tabanı ve primlere göre kademelendirme; 41 proje ve istihdam hedefi.",
+      "concrete_evidence": "Parti kongresi konuşması ve rozet takıldığına ilişkin parti haberi; kanunun kabulü ve vaatlerin uygulanması bu kaynakta kanıtlanmıyor.",
+      "open_provenance": "TBMM teklif numarası ve son durumu, imza dökümü, 41 projenin ayrıntıları ve gerçekleşmeleri, faiz hesapları ve çiftçiye kesildiği söylenen ceza ayrı doğrulanmalı. Kongre seçimi sonucu ve boş güncelleme alanı da açık."
+    }
+  ],
+  "completed_pre_cut_bodies": 101,
+  "remaining_pre_cut_bodies": 548,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
