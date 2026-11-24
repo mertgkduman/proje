@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 37 | 35 | 62621760 |
-| DEM Parti | 86 | 12 | 62621426 / 62621428 |
+| DEM Parti | 87 | 13 | 62625356 / 62625364 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 67 | 7 | 62625217 |
@@ -600,3 +600,7 @@ Birleşik prova 14, Slurm 62625117 ile tamamlandı. Bağımsız denetimde 551 ol
 DBP’nin Keskin Bayındır katılımı 62625217 ile doğrulandı. Bianet’in 24 Eylül Haliç haberi, dönemin DBP eş genel başkanı sıfatını ve salonda bulunanlar arasında sayıldığını gösteriyor. Önceki özgül parti açıklaması araştırması açık. Birleşik prova 14 daha önceki DBP çiftini kullanıyor. [DBP bağımsız doğrulama](../04-09-checks/halic-2022-dbp-62625217-independent.log)
 
 TİP dizininin 137–144 arasındaki sekiz gövdesi okundu, toplam 144/190. 13 Şubat 2021 tarihli 60. yıl yayımında anılan 1961 tarihsel kuruluşu, mevcut tüzel kişiliğin 2017 sicil başlangıcından ayrı tutuldu. [Okuma makbuzu](../04-05-checks/tip-publication-catalog/party-statements-18/reading.json)
+
+DEM Parti’nin Van mazbata dosyası 62625356 ve 62625364 ile iki görünümde bağımsız doğrulandı. 2 Nisan MYK açıklaması ve 2024/25 Van İl Seçim Kurulu işlemi, 3 Nisan YSK itiraz sonucundan ayrı. İmzalı YSK nüshası ile YSK karar numarası açık. [Bağımsız doğrulama](../04-06-checks/dem-van-2024-62625356-independent.json)
+
+TİP açıklama dizininde 168/190 özgün gövde okundu. 18 Mayıs belediye görevlendirmeleri ve 7242 öncesi infaz teklifi üzerine yayımlanan ortak açıklamalardaki imzacılar ile ilgili resmî işlemler ayrı izleniyor. [19–21. dilimler](../04-05-checks/tip-publication-catalog/party-statements-19/reading.json) [22. dilim](../04-05-checks/tip-publication-catalog/party-statements-22/reading.json) [23. dilim](../04-05-checks/tip-publication-catalog/party-statements-23/reading.json)
