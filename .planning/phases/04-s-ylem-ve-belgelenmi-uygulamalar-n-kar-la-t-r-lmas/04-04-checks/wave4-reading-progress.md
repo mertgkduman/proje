@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 76 | 73 | 62581748 |
 | Saadet Partisi | 29 | 25 | 62583013 |
-| Demokrat Parti | 60 | 47 | 62581680 |
+| Demokrat Parti | 62 | 48 | 62583044 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -425,3 +425,5 @@ Saadet’in 9 Temmuz 2025 tarihli 10/2925 KHK araştırma önergesi karşılaşt
 7333 dosyasında teklif ve komisyonun altı yıllık süresi, Genel Kurulun 23. madde için kabul ettiği dört yıllık süre ve 20. maddedeki ayrı altı yıllık süre kaynaklandı. 7490 hakkında AYM kararı 4. madde 2. fıkra mahsup hükmünü iptal etti. 7333’ün 23. maddesindeki uzatımın bazı fıkralarıyla ilgili ayrı 2022 hükmü mevcut. 65 olay ve 49 ilişkilik 7333 adayı, 7344 kapısının sonucuna bağlı olarak 62585551’e verildi. [7333 kaynakları](../04-12-checks/law-7333-sources/reading.json) [7490 kararı](../04-12-checks/law-7333-sources/budget-7490-constitutional-review.json)
 
 Borsa İstanbul pay devrinin 26 Kasım 2020 mutabakatı ve 30 Kasım kapanışı TVF’nin ayrı bildirimleriyle kaynaklandı. 2013 geri kabul anlaşması ve 18 Mart 2016 bildirisi ayrı özgün belgelerde. Demokrat Parti kataloğunun dokuz bağlantısı altı yeniden denemede de HTTP 500 döndürdü. Üçü için ayrı haber yayımı okundu. Parti gövdelerinin 12 özgün kaynak açığı ayrı izleniyor. [TVF ve AB kaynakları](../04-12-checks/2020-2021-external-sources/reading.json) [Katalog erişim kaydı](../04-12-checks/party-news-access-038/reading.json)
+
+7344 ana bütçe karşılaştırması iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. 13 Aralık 2021 konuşması kurum bütçesi gündeminde, 17 Aralık kabulü 1/283 oylamasında. Kesin cetvel 320 kabul, 195 ret ve dokuz mükerrer gösteriyor. Gültekin Uysal ve Cemal Enginyurt’un oyları Ret. 31 Aralık yayımı ve 1 Ocak yürürlüğü ayrı. [7344 makbuzu](../04-12-checks/budget-7344-62583044.json) [Bağımsız denetim](../04-12-checks/budget-7344-62583044-independent.log)
