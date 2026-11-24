@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 26 | 25 | 62604036 |
+| TİP | 28 | 27 | 62607705 |
 | DEM Parti | 84 | 12 | 62602872 / 62602874 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -524,3 +524,5 @@ EMEP’in 7527 karşılaştırması iki okuyucu görünümü ve bağımsız veri
 Demokrat Parti’nin 7/13274 imzalı sorusu ve TBMM ayrıntı kaydını içeren ilk önizleme denetimden geçti. Sonra 162 ve 169 sayılı Gelen Kağıtlar arşivlendi. 25 Haziran geliş, 4 Temmuz liste yayımı ve 19 Temmuz süresinde cevaplanmama ilanı ayrı. Bu iki bülteni içeren aday 62607799 ile yeniden denetleniyor. Sonraki imzalı cevap ile üyelik ve temas sonuçları açık. [Bülten kaynakları](../04-12-checks/question-13274-bulletin-sources/reading.json)
 
 On birinci birleşim için TİP ve EMEP’in 7527 kabulü aynı olay olarak eşlendi. İlgili kabul ve kesin cetvel pasajları aynı TBMM tutanağında, kabul günü aynı kanun sicilinde. Parti açıklamaları ve dört kişisel oy kendi kaynaklarıyla bağlı. Dondurulan dokuz çalışma paketindeki 551 olay ve 365 ilişki iki girdi sırasıyla 530 olay ve 365 ilişkiye birleşti. 25 ortak olay kararı, 559 olay başvurusu ve sıfır kapsam kapanışı var. 62608562 iki okuyucu görünümü için çalışıyor. [Ortak olay okuması](wave4-7527-overlap-reading.json) [Girdi dondurumu](wave4-merge-rehearsal-11.json)
+
+TİP’in 2023 Atalay dosyasında iki karşılaştırma, iki okuyucu görünümü ve bağımsız veri denetiminden geçti. 20 Eylül yürüyüş çağrısı 1 Ekim Hatay başlangıcı ve 28 Ekim Anıtpark bitişiyle bağlandı. 7 Kasım uygulama ve tahliye çağrısı, 8 Kasım Yargıtay kararının yayımlanmış nüshasıyla karşılaştırıldı. 25 Ekim ve 21 Aralık AYM kararları ile 3 Ocak 2024 kararı ve 30 Ocak TBMM işlemi ayrı. Yürüyüşün kararlar üzerindeki etkisi ve fiilî tahliye açık. Çalışma çifti 28 olay ve 27 ilişki. [Önizleme makbuzu](../04-05-checks/tip-atalay-2023-62607705.json) [Bağımsız denetim](../04-05-checks/tip-atalay-2023-62607705-independent.log)
