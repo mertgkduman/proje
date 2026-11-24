@@ -15,8 +15,8 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 69 | 71 | 62568514 |
-| Saadet Partisi | 26 | 22 | 62567788 |
-| Demokrat Parti | 46 | 38 | 62570397 |
+| Saadet Partisi | 27 | 23 | 62572150 |
+| Demokrat Parti | 49 | 40 | 62571364 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -335,3 +335,7 @@ EMEP 259, 262 ve 263’te açık bırakılan altı Arapça, Farsça ve Yunanca a
 EMEP’in 247, 252 ve 257 numaralı dilimlerinde bekleyen beş Kürtçe gövde özgün metinlerden okundu. Belarus–Polonya açıklaması 23 Kasım Türkçe ve 24 Kasım Kürtçe yayımlarıyla, Anadil Günü açıklaması 20 Şubat’ın paralel yayınlarıyla karşılaştırıldı. Cezaevi mektuplarının yönü iki Anadil Günü metninin ilk cümlesinde farklı. CIPOML 1 Mayıs çağrısı, Doğu Kudüs açıklaması ve Newroz metni yayıncı, konuşmacı ve tarih ayrımlarıyla kaydedildi. 247 ve 252’de kalan diğer aralıklar açık. [247](../04-10-checks/party-api-247-language-reading.json) · [252](../04-10-checks/party-api-252-language-reading.json) · [257](../04-10-checks/party-api-257-language-reading.json)
 
 EMEP 247 ve 252’nin önceki makbuzlarında açık kalan dokuz Türkçe metin aralığı okundu. 4260 ve 4100’ün sonraki dilimlerdeki devam konumları korundu. 4265’te 26 Ekim 2021 Irak ve Suriye tezkeresine karşı açık çağrı, 4106’da araştırma komisyonu ve yargı işlemi talepleri var. İşlem belgeleri ve nedensellik ayrı inceleme konusu. [247 devamı](../04-10-checks/party-api-247-continuation-reading.json) · [252 devamı](../04-10-checks/party-api-252-continuation-reading.json)
+
+Saadet 1/280 bütçe kapsamı iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Arıkan’ın 8 Aralık 2025’te Yeni Yol’dan devredilen grup süresindeki konuşması ile 21 Aralık nihai cetveli ayrı. Cetvelde Arıkan Katılmadı, Bülent Kaya ve Mustafa Kaya Yeni Yol satırlarında Ret. Nihai sonuç 316 kabul, 247 ret ve 6 mükerrer. 7567 sayılı kanunun kabul ve yayım tarihleri ayrı. Okuma 131/649 gövdeye ulaştı ve 518 açık. [Bütçe makbuzu](../04-11-checks/budget-1280-62572150.json) [045. dilim](../04-11-checks/party-news-045-reading.json)
+
+Demokrat Parti’nin 5.000 TL emekli ödemesi karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. İlk kapsam 14 Kasım 2023 açıklamasından önce yürürlükteydi. 7491 kapsam değişikliği, SGK’nın Aralık ödeme toplamı ve Kuruma Ocak aktarımı ayrı kayıtlara dayanıyor. Kesin ödeme günü ve meslek alt grupları açık. Parti arşivinde 131/257 gövde okundu, 2 yayın kapsam tarihinden sonra ve 124 gövde açık. [Ödeme makbuzu](../04-12-checks/pension-5000-62571364.json) [015. dilim](../04-12-checks/party-news-015-reading.json)
