@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 79 | 76 | 62595421 |
+| EMEP | 80 | 77 | 62605762 |
 | Saadet Partisi | 33 | 29 | 62603695 / 62603699 |
 | Demokrat Parti | 78 | 50 | 62596016 |
 
@@ -518,3 +518,7 @@ Saadet Partisi’nin tarım sayımı karşılaştırması iki okuyucu görünüm
 TİP’in 7527 karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 13 Temmuz Hayvan Hakları Komisyonu açıklaması, 30 Temmuz kabulü ve üç TİP milletvekilinin kişisel ret oyu ayrı. Kürsü 275 kabul bildirdi. Kesin cetvel 273 kabul ve 2 mükerrer gösteriyor. Aydoğdu’nun 15 Ağustos düzeltme talebi ayrı. Yerel uygulama sonuçları açık. Çalışma çifti 26 olay ve 25 ilişki. [Önizleme makbuzu](../04-05-checks/tip-law-7527-62604036.json) [Bağımsız denetim](../04-05-checks/tip-law-7527-62604036-independent.log)
 
 TİP Parti Açıklamaları dizininde 41–48 arası sekiz özgün gövdenin 23.753 karakteri okundu. Son toplam 48/190. 20 Eylül yürüyüş çağrısı, 1 Ekim Hatay başlangıcı, 27 Ekim devamı ve 28 Ekim Ankara Anıtpark mitingi kendi yayımlarında. 25 Ekim AYM hükmü ve 8 Kasım Yargıtay kararının yayımlanmış nüshası ayrı kaynaklarda. 21 Aralık AYM kararı ve daha sonraki TBMM işlemi ayrı. [Altıncı okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-06/reading.json) [8 Kasım karar okuması](../04-05-checks/tip-publication-catalog/party-statements-06/yargitay-20231108-reading.json)
+
+EMEP’in 7527 karşılaştırması iki okuyucu görünümü ve bağımsız veri denetiminde doğrulandı. 18 Temmuz parti haberi Sevda Karaca’nın teklifin geri çekilmesi talebini aktarıyor. Kesin cetvel Karaca’nın kişisel ret oyunu, sicil 30 Temmuz kabulünü gösteriyor. Parti haberinde bireysel yazar bilgisi yok. Belediye uygulamaları açık. Çalışma çifti 80 olay ve 77 ilişki. [Önizleme makbuzu](../04-10-checks/law-7527-emep-62605762.json) [Bağımsız denetim](../04-10-checks/law-7527-emep-62605762-independent.log)
+
+Demokrat Parti’nin 7/13274 imzalı sorusu ve TBMM ayrıntı kaydını içeren ilk önizleme denetimden geçti. Sonra 162 ve 169 sayılı Gelen Kağıtlar arşivlendi. 25 Haziran geliş, 4 Temmuz liste yayımı ve 19 Temmuz süresinde cevaplanmama ilanı ayrı. Bu iki bülteni içeren aday 62607799 ile yeniden denetleniyor. Sonraki imzalı cevap ile üyelik ve temas sonuçları açık. [Bülten kaynakları](../04-12-checks/question-13274-bulletin-sources/reading.json)
