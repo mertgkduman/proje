@@ -10,13 +10,13 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 82 | 11 | 62581767 / 62581774 |
+| DEM Parti | 82 | 12 | 62585486 / 62585531 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 76 | 73 | 62581748 |
 | Saadet Partisi | 29 | 25 | 62583013 |
-| Demokrat Parti | 62 | 48 | 62583044 |
+| Demokrat Parti | 65 | 49 | 62586052 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -429,3 +429,12 @@ Borsa İstanbul pay devrinin 26 Kasım 2020 mutabakatı ve 30 Kasım kapanışı
 7344 ana bütçe karşılaştırması iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. 13 Aralık 2021 konuşması kurum bütçesi gündeminde, 17 Aralık kabulü 1/283 oylamasında. Kesin cetvel 320 kabul, 195 ret ve dokuz mükerrer gösteriyor. Gültekin Uysal ve Cemal Enginyurt’un oyları Ret. 31 Aralık yayımı ve 1 Ocak yürürlüğü ayrı. [7344 makbuzu](../04-12-checks/budget-7344-62583044.json) [Bağımsız denetim](../04-12-checks/budget-7344-62583044-independent.log)
 
 Sekizinci yalıtılmış birleştirme ön denetiminde parti çalışma çiftleri 520 olay ve 349 ilişki içeriyordu. Birleşimde 500 olay ve 349 ilişki korundu. Önceki 11 ortak olay kararı ve 12 açık aday aynı kaynak ve üyelerle kaldı. İki girdi sırası aynı sonucu verdi. Kapsam kapanışı sıfır. [Sekizinci prova makbuzu](wave4-merge-rehearsal-08-preflight.json)
+
+
+7333 karşılaştırması ve ayrı AYM hükmü iki HTML görünümüyle bağımsız SQLite/JSON denetiminden geçti. İlk alımda AYM sunucusunun ileri tarihli HTTP saati ve belge gününün yayım günü olarak kullanılması düzeltildi. Özgün PDF hashleri aynı, 7253 adayı 62586195 ile denetimde. [7333 makbuzu](../04-12-checks/law-7333-62586052.json) [Bağımsız denetim](../04-12-checks/law-7333-62586052-independent.log) [Doğrulama geçmişi](../04-12-checks/law-7333-gate-history.json)
+
+DEM Parti için İbrahim Akın’ın 8 Nisan 2025 grup adına geri çekme çağrısı ve 2 Temmuz 2025 tarihli kişisel ret oyu, aynı 2/2927 dosyasına bağlı ayrı işlemler olarak ilişkilendirildi. Önceki eşleşmemiş adayın revizyonu saklandı. Grup oyu ve çevresel sonuç açık. [DEM makbuzu](../04-06-checks/dem-iklim-group-final-62585486.json) [Bağımsız denetim](../04-06-checks/dem-iklim-group-final-62585486-independent.json)
+
+Demokrat Parti’nin 2011, 2012, 2013 ve 2017 hesap yıllarına ait dört AYM kararı özgün ciltlerden okundu. 2011 için 300 TL Hazineye irat hükmü, 2012 için 2.904,36 TL gecikme gideri hakkındaki çoğunluk ve karşıoy ayrı. 2020–2023 hesap yıllarının önceki çalışmada arşivlenen özgün kararlarının hashleri kontrol edildi. [Mali denetim kaynakları](../04-12-checks/party-financial-audit-sources/reading.json)
+
+3323 ile ilk esnaf desteği, 3929 ile bir aylık uzatma ve Ticaret Bakanlığının 2021 toplam ödemeleri ayrı belgelendi. Millî Eğitim Bakanlığının 11 Eylül yazısı ve Konya İl Müdürlüğünün 21 Eylül okul örneği kaydedildi. Türkiye genelinde fiilî eğitim katılımı ve tekil ödeme sonuçları açık. [Esnaf desteği](../04-12-checks/pandemic-2020-sources/merchant-support-reading.json) [Yüz yüze eğitim](../04-12-checks/pandemic-2020-sources/school-reopening-reading.json)
