@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 75 | 72 | 62578062 |
 | Saadet Partisi | 28 | 24 | 62575423 |
-| Demokrat Parti | 55 | 45 | 62576495 |
+| Demokrat Parti | 57 | 46 | 62579304 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -391,3 +391,5 @@ EMEP’in 8 Nisan 2020 tarihli geri çekme çağrısı ve TBMM’nin 2/2762 dosy
 Saadet 075 sonunda 161/649 özgün gövde okudu ve 488 açık. 19 Mart 2025 Refah insani yardım çağrısı ile 21 Mayıs imzalı 10/2740 araştırma önergesinde ortak gündem Gazze’ye yardım koridoru. İmzalı önerge Refah’ı adlandırmıyor. Selçuk Özdağ, Yeni Yol Grup Başkanvekili sıfatıyla imzaladı. Koridorun fiilî açılması açık. [073. dilim](../04-11-checks/party-news-073-reading.json) [075. dilim](../04-11-checks/party-news-075-reading.json)
 
 DEM Parti’nin 9 Nisan 2025 tarihli dört madde çıkarma önergesi yalıtılmış iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. TBMM tutanağında dört önergenin ayrı metni, Celal Fırat’ın imzası, aynı günkü grup mensubiyeti ve ayrı ret işlemleri var. 2/2927 maddelerinin oyları ve sonraki kanun kabulü ayrı işlemler. Dört olayın önceki söylemle eşleştirilmesi açık. [Önizleme makbuzu](../04-06-checks/dem-iklim-74-motions-62579272.json) [Bağımsız denetim](../04-06-checks/dem-iklim-74-motions-62579272-independent.json)
+
+Demokrat Parti’nin 2/4496 akaryakıt teklifi iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. Uysal ve Enginyurt’un imzası, 16 Haziran 2022 Başkanlık gelişi, 17 Haziran komisyon sevki, 21 Haziran gelen kâğıtlar yayımı ve 22 Haziran parti açıklaması ayrı. 2 Haziran 2023’te hükümsüzlük kaydı var. Önerilen vergi değişikliğinin yürürlüğe girmesi veya fiilî fiyat etkisi bu dosyayla belgelenmedi. [Önizleme makbuzu](../04-12-checks/fuel-4496-62579304.json) [Bağımsız denetim](../04-12-checks/fuel-4496-62579304-independent.log)
