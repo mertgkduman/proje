@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 72 | 71 | 62573483 |
-| Saadet Partisi | 27 | 23 | 62572150 |
+| Saadet Partisi | 28 | 24 | 62575423 |
 | Demokrat Parti | 52 | 43 | 62572604 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -353,3 +353,9 @@ Demokrat Parti 2023 seçim dosyası iki HTML görünümünde ve bağımsız veri
 148 numaralı 3 Temmuz 2022 ortak açıklaması özgün parti sayfasından açıldı ve okundu. Demokrat Parti arşivinde 145/257 gövde okundu, 110 açık ve iki yayın kapsam tarihinden sonra. 2/4496 imzalı teklifin 16 Haziran Başkanlığa gelişi, 17 Haziran komisyon aşaması ve 2 Haziran 2023 hükümsüz dosyalar listesindeki yeri ayrı belgelerde. [148. yayın](../04-12-checks/party-news-018-recovery-reading.json) [2/4496 okuması](../04-12-checks/fuel-4496-sources/reading.json)
 
 55 olay ve 45 ilişkilik 7418 adayı 62576495 işiyle denetleniyor. 22 Haziran Enginyurt konuşması ve 3 Temmuz ortak açıklaması erken bağlam olarak kaynaklandı. 1310 için 62575664 girdi hatası görsel makbuzun pasajdan sonra yüklenmesiyle düzeltildi. 62575744 giriş 0 ve kaynak denetimi sürüyor. Ayasofya 2729 özgün Resmî Gazete dosyasından yeniden alındı ve önceki aynanın aynı baytları taşıdığı doğrulandı. [1310 kapı geçmişi](../04-10-checks/tezkere-1310-gate-history.json) [2729 özgün dosya karşılaştırması](../04-10-checks/ayasofya-2729-original-recovery.json)
+
+Saadet’in 33.000 TL talebi ile 2026 asgari ücret kararı iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Açıklamada talebin net mi brüt mü olduğu belirtilmiyor. ÇSGB hesabı net 28.075,50 TL ve brüt 33.030 TL. Karar görüntüsünün erişildiği oda arşivi, özgün gazete sunucusunun zaman aşımı ve fiilî ödeme sınırı kaynak okumasında kaydedildi. Parti arşivinde 148/649 gövde okundu ve 501 açık. [Ücret makbuzu](../04-11-checks/minimum-wage-2026-62575423.json) [062. dilim](../04-11-checks/party-news-062-reading.json)
+
+Demokrat Parti 151–155. yayın düğümlerinde 150/257 gövdeye ulaştı. 105 gövde açık ve iki yayın kapsam tarihinden sonra. Parti yayını 154, Türkiye’ye gönderilen demir ve çelik hurdasını 131 milyon ton olarak verdi. Eurostat’ın 2021 duyurusu hurda için 13,1 milyon ton ve tüm atık için 14,7 milyon ton bildiriyor. İki metin özgün rakamlarıyla kaydedildi. [019. dilim](../04-12-checks/party-news-019-reading.json) [Eurostat özgün yayını](../04-12-checks/eurostat-2021-sources/reading.json)
+
+EMEP’in 265. dilimindeki sekiz Kürtçe gövde ile önceki metnin son bölümü okundu. Roboski için 49976/16 numaralı AİHM kararının özgün Fransızca nüshası ve Bakanlığın gayriresmî Türkçe çevirisi incelendi. Karar, iç hukuk yollarının tüketilmesi şartına ilişkin oybirliğiyle kabul edilemezlik hükmünü ve yazılı bildirim gününü ayrı gösteriyor. [265 dil okuması](../04-10-checks/party-api-265-language-reading.json) [AİHM kaynak okuması](../04-10-checks/encu-49976-sources/reading.json)
