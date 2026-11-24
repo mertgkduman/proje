@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 28 | 27 | 62607705 |
+| TİP | 30 | 29 | 62615305 |
 | DEM Parti | 84 | 12 | 62602872 / 62602874 |
 | İYİ Parti | 20 | 12 | 62611360 / 62611365 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -542,3 +542,5 @@ Saadet’in 2 Ekim 2022 toplantısı karşılaştırması iki okuyucu görünüm
 On ikinci birleşim donduruldu. Dokuz çalışma çiftinde 558 olay, 369 ilişki, kaynak bağlı 279 kapsam hücresi ve arama girişimi bağlı 280 hücre var. 5.490 hücre açık. İki girdi sırası aynı 534 olay ve 369 ilişkiyi üretti. Ankara çalıştayı ve 2 Ekim liderler toplantısının ortak kimlikleri, her dosyadaki aynı özgün haber baytı ve olay alanlarıyla denetlendi. Önizleme 62615150 işinde. [Ortak olay okuması](wave4-ankara-and-six-leaders-overlap-reading.json) [Dondurulan girdiler](wave4-merge-rehearsal-12.json)
 
 TİP Parti Açıklamaları dizininde 57–64 arası sekiz gövdenin 21.069 karakteri okundu. Son toplam 64/190. 15 Mayıs geçici seçim açıklaması ile YSK’nın 30 Mayıs Resmî Gazete’deki kesin oyu, oranı ve sandalye sayısı ayrı. 2/5005 için kürsüdeki 276 kabul, kesin cetveldeki 275 kabul ve 2 mükerrer ile dört TİP milletvekilinin Katılmadı kaydı ayrı kanıtlarda. Finlandiya’nın NATO üyeliği 4 Nisan’da gerçekleşti. 24 Şubat Bakanlık açıklamasında 448 sayısının hangi sağlık personelini kapsadığı ve 21 Mayıs parti metninin kullandığı kapsam ayrı kaydedildi. [Sekizinci okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-08/reading.json)
+
+TİP’in 25 Ağustos 2023 Atalay açıklaması ve 7 Temmuz 2023 borçlanma açıklaması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. İlk dosyada Bakanlığın AYM’ye görüş sunması, 25 Ekim ihlal kararı ve yerel mahkemeye gönderim ayrı. Fiilî tahliye bu karardan çıkarılmadı. İkinci dosyada 2/1264 teklif ve komisyon tarihleri, 14 Temmuz kabulü ve 7456’nın 11. maddesindeki net borç kullanım kuralı kaynaklı. KDV ve IMEI düzenlemeleri, kişisel oy ve gerçekleşen borçlanma ayrı. TİP çalışma çifti 30 olay ve 29 ilişki. [Önizleme makbuzu](../04-05-checks/tip-july-october-2023-62615305.json) [Bağımsız denetim](../04-05-checks/tip-july-october-2023-62615305-independent.log)
