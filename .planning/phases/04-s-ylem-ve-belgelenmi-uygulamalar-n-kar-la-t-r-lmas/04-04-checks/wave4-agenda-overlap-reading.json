@@ -1,0 +1,381 @@
+{
+  "reviewer_kind": "agent",
+  "reviewed_at": "2026-11-24T15:15:13.482651+00:00",
+  "package_sha256": {
+    "dem": "666ba732e46b5a6bc9524fee2f4cb3c82774a0258fb44830094982f8a5c8549f",
+    "iyi": "5814587049d6af3f55d273eb8d2057af2cf2a22ae2ea3bc2051aac2453c148b1",
+    "yeni-yol": "07a7acdd87ff461abe7fd3f75f1e4e60ef4805c6cbdf2eab7f60756b703d9f6a"
+  },
+  "review_boundary": "Kaynaklarda aynı gündem işlemi örtüşüyor. Parti olaylarının tek değerli alanları farklı. Önceki provanın kararları ve özgün parti paketleri bu okumada korundu.",
+  "records": [
+    {
+      "candidate_key": "tbmm-28-2-050-10-437-gundem",
+      "source_reading": "17 Ocak 2024, TBMM 50. birleşim. İYİ Parti grubunun 10/437 yaşlı bakımı araştırmasını o gün görüşme önerisi kabul edilmedi. Şenol Sunat İYİ Parti Grubu adına konuştu ve Adalet Kaya DEM Parti Grubu adına destek açıkladı. İmzalı araştırma ile aynı gün görüşme önerisi ayrı aşamalardır.",
+      "member_events": {
+        "dem": {
+          "id": "0406-2024-10437-gundem",
+          "common_event_key": "tbmm-28-2-050-10-437-gundem",
+          "event_at": "2024-01-17",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "scope_context": "TBMM 28. dönem 2. yasama yılı 50. birleşimde İYİ 10/437 araştırma önergesinin ön görüşme takvimi",
+          "title": "Yaşlı bakımı araştırmasının ön görüşme takvimi",
+          "occurrence_basis": "İmzalı önerge, TBMM detay ve Genel Kurul tutanağı ile özetindeki takvim önerisi."
+        },
+        "iyi": {
+          "id": "0407-iyi-2024-10-437-gundem-event",
+          "common_event_key": "tbmm-28-2-050-10-437-gundem",
+          "event_at": "2024-01-17",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "10/437 için Genel Kurul gündemine alma önerisi",
+          "scope_context": "İYİ Parti Grubu 10/437 araştırma önergesinin 17 Ocak günü görüşülmesini istedi. Genel Kurul bu öneriyi kabul etmedi.",
+          "occurrence_basis": "TBMM 10/437 dosyası, 17 Ocak 50. Birleşim tam tutanağı ve işlem özeti."
+        }
+      },
+      "common_evidence_sha256": [
+        "6f2635a3cac7300200d5c4293693fb8f701070452e48138b3c36884eae4db0d4",
+        "9e55d126b2a033de14110116c53ece3d8d8bff9dc9dc1674b6529bc2ffb57c89",
+        "fe31777acc8be05c1801cc3290ddef8d07f69e08172e94785aa449962e0697fa"
+      ],
+      "different_single_value_fields": [
+        "occurrence_basis",
+        "scope_context",
+        "title"
+      ],
+      "consulted_passages": [
+        {
+          "party": "dem",
+          "passage_id": "0406-aged-iyi-437-id",
+          "version_id": "0406-aged-iyi-437-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/1de74186-02dd-4030-a545-018b3d649158",
+          "sha256": "6f2635a3cac7300200d5c4293693fb8f701070452e48138b3c36884eae4db0d4",
+          "section": "10/437 esas numarası"
+        },
+        {
+          "party": "dem",
+          "passage_id": "0406-aged-pension-2024-session-proposal",
+          "version_id": "0406-aged-pension-2024-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/50/Tam/8eacee7b-6d28-4728-ae25-74885298f608.html",
+          "sha256": "fe31777acc8be05c1801cc3290ddef8d07f69e08172e94785aa449962e0697fa",
+          "section": "Gündeme alınması istenen Ekim 2023 önerisi"
+        },
+        {
+          "party": "dem",
+          "passage_id": "0406-aged-pension-2024-session-dem-support",
+          "version_id": "0406-aged-pension-2024-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/50/Tam/8eacee7b-6d28-4728-ae25-74885298f608.html",
+          "sha256": "fe31777acc8be05c1801cc3290ddef8d07f69e08172e94785aa449962e0697fa",
+          "section": "DEM Parti Grubu adına yapılan sözlü destek açıklaması"
+        },
+        {
+          "party": "dem",
+          "passage_id": "0406-aged-pension-2024-summary-result",
+          "version_id": "0406-aged-pension-2024-summary-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/50/Ozet/daf93bf0-106b-4149-93f4-b97383f560c0.html",
+          "sha256": "9e55d126b2a033de14110116c53ece3d8d8bff9dc9dc1674b6529bc2ffb57c89",
+          "section": "Gündeme alma önerilerinin TBMM birleşim özetindeki sonucu"
+        },
+        {
+          "party": "iyi",
+          "passage_id": "0407-aged-iyi-437-id",
+          "version_id": "0407-aged-iyi-437-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/1de74186-02dd-4030-a545-018b3d649158",
+          "sha256": "6f2635a3cac7300200d5c4293693fb8f701070452e48138b3c36884eae4db0d4",
+          "section": "10/437 esas numarası"
+        },
+        {
+          "party": "iyi",
+          "passage_id": "0407-aged-pension-2024-session-sunat",
+          "version_id": "0407-aged-pension-2024-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/50/Tam/8eacee7b-6d28-4728-ae25-74885298f608.html",
+          "sha256": "fe31777acc8be05c1801cc3290ddef8d07f69e08172e94785aa449962e0697fa",
+          "section": "Gündeme alma önerisini savunan Şenol Sunat’ın grup yetkisi"
+        },
+        {
+          "party": "iyi",
+          "passage_id": "0407-aged-pension-2024-summary-result",
+          "version_id": "0407-aged-pension-2024-summary-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/50/Ozet/daf93bf0-106b-4149-93f4-b97383f560c0.html",
+          "sha256": "9e55d126b2a033de14110116c53ece3d8d8bff9dc9dc1674b6529bc2ffb57c89",
+          "section": "Gündeme alma önerilerinin TBMM birleşim özetindeki sonucu"
+        }
+      ],
+      "isolated_decision": "unresolved"
+    },
+    {
+      "candidate_key": "tbmm-28-4-079-10-3998-gundem",
+      "source_reading": "8 Nisan 2026, TBMM 79. birleşim. Yeni Yol grubunun 10/3998 TÜİK araştırmasını o gün görüşme önerisi elektronik oylamada kabul edilmedi. Burak Dalgın’ın İYİ Parti Grubu adına talepleri aynı işlemdeki ayrı konuşmadır. İYİ Parti olay başlığı konuşmaya, Yeni Yol olay başlığı gündem önerisine odaklanıyor.",
+      "member_events": {
+        "iyi": {
+          "id": "0407-iyi-2026-10-3998-event",
+          "common_event_key": "tbmm-28-4-079-10-3998-gundem",
+          "event_at": "2026-04-08",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "10/3998 görüşmesinde İYİ Parti Grubunun TÜİK çağrısı",
+          "scope_context": "Yeni Yol’un 10/3998 TÜİK araştırma önergesinin gündem görüşmesinde Burak Dalgın İYİ Parti Grubu adına fiyat ve ürün sepetinin açıklanmasını, akademik denetimi ve TÜİK Başkanının komisyonda dinlenmesini istedi. Genel Kurul aynı gün görüşme önerisini kabul etmedi.",
+          "occurrence_basis": "TBMM esas dosyası, 79. Birleşim tam tutanağı ve işlem özeti."
+        },
+        "yeni-yol": {
+          "id": "0408-yeni-yol-2026-10-3998-event",
+          "common_event_key": "tbmm-28-4-079-10-3998-gundem",
+          "event_at": "2026-04-08",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "10/3998 TÜİK araştırma önergesinin gündeme alınması",
+          "scope_context": "Yeni Yol Grubu 10/3998 TÜİK araştırma önergesinin ön görüşmesini aynı güne almak istedi. Genel Kurul kabul etmedi.",
+          "occurrence_basis": "10/3998 TBMM dosyası, imza taraması ve 79. Birleşim tutanağı."
+        }
+      },
+      "common_evidence_sha256": [
+        "1b9ebab5d3446768f626bd9b4ddd931d5ebdc821be51f302cdf52e3bf038d184",
+        "45aff9a11331a4c0b1e4fef9b14f2369eab8a7b9be59c2b7ab36082db7bc1abf",
+        "6631c4817e1290e3567b15381a596fb6bf44cbee285504983e5af72b6ebc006f"
+      ],
+      "different_single_value_fields": [
+        "occurrence_basis",
+        "scope_context",
+        "title"
+      ],
+      "consulted_passages": [
+        {
+          "party": "iyi",
+          "passage_id": "0407-tuik-3998-id",
+          "version_id": "0407-tuik-3998-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/5f4ebd17-60ec-4431-83d8-019d96b0d808",
+          "sha256": "6631c4817e1290e3567b15381a596fb6bf44cbee285504983e5af72b6ebc006f",
+          "section": "10/3998 esas numarası"
+        },
+        {
+          "party": "iyi",
+          "passage_id": "0407-tuik-3998-session-motion",
+          "version_id": "0407-tuik-3998-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/79/Tam/95653b0a-b778-4b4f-8107-4b20c9756996.html",
+          "sha256": "45aff9a11331a4c0b1e4fef9b14f2369eab8a7b9be59c2b7ab36082db7bc1abf",
+          "section": "İçtüzük 19 kapsamındaki gündeme alma önerisi"
+        },
+        {
+          "party": "iyi",
+          "passage_id": "0407-tuik-3998-session-dalgin-role",
+          "version_id": "0407-tuik-3998-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/79/Tam/95653b0a-b778-4b4f-8107-4b20c9756996.html",
+          "sha256": "45aff9a11331a4c0b1e4fef9b14f2369eab8a7b9be59c2b7ab36082db7bc1abf",
+          "section": "İYİ Parti Grubu adına Burak Dalgın"
+        },
+        {
+          "party": "iyi",
+          "passage_id": "0407-tuik-3998-session-decision",
+          "version_id": "0407-tuik-3998-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/79/Tam/95653b0a-b778-4b4f-8107-4b20c9756996.html",
+          "sha256": "45aff9a11331a4c0b1e4fef9b14f2369eab8a7b9be59c2b7ab36082db7bc1abf",
+          "section": "Elektronik oylama ve hemen izleyen başkan ilanı"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-stats-yy-3998-id",
+          "version_id": "0408-stats-yy-3998-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/5f4ebd17-60ec-4431-83d8-019d96b0d808",
+          "sha256": "6631c4817e1290e3567b15381a596fb6bf44cbee285504983e5af72b6ebc006f",
+          "section": "10/3998 esas numarası"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-stats-yy-3998-session-motion",
+          "version_id": "0408-stats-yy-3998-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/79/Tam/95653b0a-b778-4b4f-8107-4b20c9756996.html",
+          "sha256": "45aff9a11331a4c0b1e4fef9b14f2369eab8a7b9be59c2b7ab36082db7bc1abf",
+          "section": "İçtüzük 19 kapsamındaki gündeme alma önerisi"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-stats-yy-3998-session-decision",
+          "version_id": "0408-stats-yy-3998-session-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/79/Tam/95653b0a-b778-4b4f-8107-4b20c9756996.html",
+          "sha256": "45aff9a11331a4c0b1e4fef9b14f2369eab8a7b9be59c2b7ab36082db7bc1abf",
+          "section": "Elektronik oylama ve hemen izleyen başkan ilanı"
+        }
+      ],
+      "isolated_decision": "unresolved"
+    },
+    {
+      "candidate_key": "tbmm-28-4-24-10-3464-gundem",
+      "source_reading": "3 Aralık 2025, TBMM 24. birleşim. DEM grubunun 10/3464 engelli hakları araştırmasını o gün görüşme önerisi vardı. Elif Esen Yeni Yol Grubu adına destek açıkladı. İki yoklamada toplantı yeter sayısı bulunmadı, Başkan birleşimi kapattı. Öneriye ilişkin bir ret oyu bu işlem zincirinde yer almıyor.",
+      "member_events": {
+        "dem": {
+          "id": "0406-2025-103464-gundem",
+          "common_event_key": "tbmm-28-4-24-10-3464-gundem",
+          "event_at": "2025-12-03",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "scope_context": "TBMM 28. dönem 4. yasama yılı 24. birleşim; DEM 10/3464 araştırma önergesi ön görüşme takvimi",
+          "title": "Engelli yurttaşlar araştırmasının ön görüşme takvimi",
+          "occurrence_basis": "TBMM Genel Kurulu birleşim tutanağı."
+        },
+        "yeni-yol": {
+          "id": "0408-yeni-yol-2025-10-3464-destek-event",
+          "common_event_key": "tbmm-28-4-24-10-3464-gundem",
+          "event_at": "2025-12-03",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "10/3464 engelli hakları gündem önerisine Yeni Yol desteği",
+          "scope_context": "Elif Esen, Yeni Yol Grubu adına DEM Grubunun engelli hakları önerisine destek açıklaması yaptı. Yeter sayı bulunmadığı için ön görüşme takvimi oylanmadı.",
+          "occurrence_basis": "İmzalı teklif veya önerge, TBMM kayıt sayfası ve tutanak."
+        }
+      },
+      "common_evidence_sha256": [
+        "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f"
+      ],
+      "different_single_value_fields": [
+        "occurrence_basis",
+        "scope_context",
+        "title"
+      ],
+      "consulted_passages": [
+        {
+          "party": "dem",
+          "passage_id": "0406-tbmm-103464-detail-number-p",
+          "version_id": "0406-tbmm-103464-detail-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/203ab177-30e4-4fb6-a10e-019b0834c138",
+          "sha256": "b1adafe38ad7f8ef04ae2169747063889fb859e4eafd2a0e2e1258c15c45b573",
+          "section": "Esas numarası"
+        },
+        {
+          "party": "dem",
+          "passage_id": "0406-tbmm-2025-24-noquorum-p",
+          "version_id": "0406-tbmm-2025-24-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "DEM ön görüşme takvim önerisinde yeter sayı yokluğu"
+        },
+        {
+          "party": "dem",
+          "passage_id": "0406-tbmm-2025-24-second-rollcall-p",
+          "version_id": "0406-tbmm-2025-24-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "İkinci yoklama ve kapanış"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-policy-yeni-yol-shared-agenda",
+          "version_id": "0408-public-ads-plenary-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "DEM Grup önerisinin dayanağındaki 15229 grup numarası"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-policy-yeni-yol-shared-support",
+          "version_id": "0408-public-ads-plenary-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "Elif Esen’in grup desteği beyanı"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-policy-yeni-yol-shared-adjourn",
+          "version_id": "0408-public-ads-plenary-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "Oturum başkanının birleşimi kapatması"
+        }
+      ],
+      "isolated_decision": "unresolved"
+    },
+    {
+      "candidate_key": "tbmm-28-4-24-10-3465-gundem",
+      "source_reading": "3 Aralık 2025, TBMM 24. birleşim. Yeni Yol grubunun 10/3465 kamu reklam ve ilanları araştırmasını o gün görüşme önerisi kabul edilmedi. Aynı dosyaya ilişkin DEM katkısı ayrı. Yeni Yol olay kaydı ayrıca imzalı araştırmanın Başkanlığa gelişini içeriyor. Sicildeki Gündemde durumu oylamanın takvim kapsamıyla uyumlu.",
+      "member_events": {
+        "dem": {
+          "id": "0406-2025-103465-gundem",
+          "common_event_key": "tbmm-28-4-24-10-3465-gundem",
+          "event_at": "2025-12-03",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "scope_context": "TBMM 28. dönem 4. yasama yılı 24. birleşim; Yeni Yol 10/3465 araştırma önergesinin ön görüşme takvimi",
+          "title": "Kamu ilanları araştırmasının ön görüşme takvimi",
+          "occurrence_basis": "TBMM Genel Kurulu birleşim tutanağı."
+        },
+        "yeni-yol": {
+          "id": "0408-public-ads-3465-event",
+          "common_event_key": "tbmm-28-4-24-10-3465-gundem",
+          "event_at": "2025-12-03",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "10/3465 kamu reklamları araştırması ve ön görüşme takvimi",
+          "scope_context": "Selçuk Özdağ ve 20 milletvekilinin araştırma önergesi 3 Aralık’ta kayda girdi. Yeni Yol Grubunun ön görüşmeyi aynı güne alma önerisi kabul edilmedi.",
+          "occurrence_basis": "İmzalı araştırma belgesi, TBMM esas kaydı ve 24. Birleşim ikinci oturum tutanağı."
+        }
+      },
+      "common_evidence_sha256": [
+        "23c9edf75e2880657a6e564eb65b5c8c1641603bef69bbe542da4615de026b2a",
+        "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f"
+      ],
+      "different_single_value_fields": [
+        "occurrence_basis",
+        "scope_context",
+        "title"
+      ],
+      "consulted_passages": [
+        {
+          "party": "dem",
+          "passage_id": "0406-tbmm-103465-detail-number-p",
+          "version_id": "0406-tbmm-103465-detail-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/56aff489-2d98-4823-bd6a-019b083d86ae",
+          "sha256": "23c9edf75e2880657a6e564eb65b5c8c1641603bef69bbe542da4615de026b2a",
+          "section": "Esas numarası"
+        },
+        {
+          "party": "dem",
+          "passage_id": "0406-tbmm-2025-24-support-p",
+          "version_id": "0406-tbmm-2025-24-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "Yeni Yol takvim önerisi için DEM grubu adına oy yönü beyanı"
+        },
+        {
+          "party": "dem",
+          "passage_id": "0406-tbmm-2025-24-declined-p",
+          "version_id": "0406-tbmm-2025-24-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "Yeni Yol ön görüşme takvim önerisi sonucu"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-public-ads-register-date",
+          "version_id": "0408-public-ads-register-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/56aff489-2d98-4823-bd6a-019b083d86ae",
+          "sha256": "23c9edf75e2880657a6e564eb65b5c8c1641603bef69bbe542da4615de026b2a",
+          "section": "Başkanlığa geliş günü"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-public-ads-plenary-schedule",
+          "version_id": "0408-public-ads-plenary-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "Yeni Yol grubunun aynı gün ön görüşme talebi"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-public-ads-plenary-vote",
+          "version_id": "0408-public-ads-plenary-v1",
+          "source": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/24/Tam/2842bd28-bf72-4455-bc86-4efae804ab3f.html",
+          "sha256": "c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f",
+          "section": "24. Birleşim 2. Oturum Yeni Yol grup önerisinin sonucu"
+        },
+        {
+          "party": "yeni-yol",
+          "passage_id": "0408-public-ads-register-status",
+          "version_id": "0408-public-ads-register-v1",
+          "source": "https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/56aff489-2d98-4823-bd6a-019b083d86ae",
+          "sha256": "23c9edf75e2880657a6e564eb65b5c8c1641603bef69bbe542da4615de026b2a",
+          "section": "Erişilen TBMM kayıt sayfasında son durum"
+        }
+      ],
+      "isolated_decision": "unresolved"
+    }
+  ]
+}
