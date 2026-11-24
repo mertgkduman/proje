@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-167",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T17:41:17.395599+00:00",
+  "reads": [
+    {
+      "post_id": 413,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/kahrolsun-demekle-israil-kahrolmuyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=kahrolsun-demekle-israil-kahrolmuyor",
+      "published_at": "2023-11-29T10:13:30+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T17:41:17.395599+00:00",
+      "original_path": "party-news-bodies/413.json",
+      "sha256": "b69c02de0c79514ee9824b6102462c9fbad33544f873430e9ba1de3f980b217c",
+      "normalized_body_sha256": "240a2ba51fe64f4f881f9c378130e633912de10a06a941399064d061e30472ff",
+      "source_section_range": [
+        0,
+        7327
+      ],
+      "state": "examined",
+      "reading": "Temel Karamollaoğlu Gazze, hayat pahalılığı ve Ankaradaki köy arazileri hakkında konuşuyor.",
+      "selected_passages": [
+        {
+          "start": 6002,
+          "end": 6060,
+          "exact": "Sadece Ankara’da şu anda 389 köy arazisi satışa çıkarıldı!"
+        }
+      ],
+      "point": "Ankarada satışa çıkarıldığı ileri sürülen köy arazileri.",
+      "statement": "Karamollaoğlu Ankarada 389 köy arazisinin satışa çıkarıldığını ileri sürerek satışlara karşı çıkıyor.",
+      "concrete_evidence": "Parti haberinde TOKİ eliyle ihale ve arazi satışı iddiası yer alıyor.",
+      "open_provenance": "389 rakamı, parsel niteliği, TOKİ ihale ilanı ve fiilî satış sonucu bu okumada bağımsız doğrulanmadı. Açık artırmaya çıkarma satış gerçekleşmesi değildir."
+    }
+  ],
+  "completed_pre_cut_bodies": 253,
+  "remaining_pre_cut_bodies": 396,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
