@@ -14,7 +14,7 @@ for suffix,digest,url,mime,filename in specs:
  doc=q(suffix);v=doc+'-v1';p=source/'objects'/digest/filename
  assert hashlib.sha256(p.read_bytes()).hexdigest()==digest
  add('document',id=doc,party_id='dem',title='TBMM 10/2881 '+('esas kaydı' if suffix=='register' else 'imzalı önerge'),source_kind='official')
- add('document_version',id=v,document_id=doc,original_url=url,final_url=url,document_date='2025-07-02',date_precision='day',date_unknown_reason=None,version_label='2 Temmuz 2025 tarihli TBMM işlemi',accessed_at=now,verified_at=now,mime=mime,sha256=digest,original_path='objects/'+digest+'/'+filename,readable_path='objects/'+digest+'/readable.html')
+ add('document_version',id=v,document_id=doc,original_url=url,final_url=url,document_date=None if suffix=='register' else '2025-07-02',date_precision='unknown' if suffix=='register' else 'day',date_unknown_reason='Dinamik TBMM esas kaydının ilk yayın günü bilinmiyor.' if suffix=='register' else None,version_label='TBMM özgün kaynak nüshası.',accessed_at=now,verified_at=now,mime=mime,sha256=digest,original_path='objects/'+digest+'/'+filename,readable_path='objects/'+digest+'/readable.html')
  if suffix=='register':
   view=json.loads((c/'textile-2881-detail-capture.json').read_text())[0]['view'];view['version_id']=v;add('archive_view',**view)
   raw=html_source_text(p.read_bytes())

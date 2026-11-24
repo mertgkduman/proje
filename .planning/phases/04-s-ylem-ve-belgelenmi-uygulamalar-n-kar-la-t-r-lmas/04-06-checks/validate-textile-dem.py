@@ -12,7 +12,7 @@ spec = importlib.util.spec_from_file_location('tracer', here / 'tracer-validatio
 mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 package, review = here / 'textile-dem-draft.json', here / 'textile-dem-review-draft.json'
-assert mod.sha(package) == '5f65f955aa7cc7d96b3cf97e85820d24497c32c8cae62145413f5a34e3905fd5'
+assert mod.sha(package) == '1935b71446fdb85cc2724baa96e5d468a1a7210f3b677ea07744fe218fbc3069'
 assert mod.sha(review) == '8a0dc49a0683f89d9c4881b5d9b55c077036cdfcce2d231511d830e507f6a236'
 before = json.loads((root / 'data/practices/04-dem.json').read_text())
 after = json.loads(package.read_text())
