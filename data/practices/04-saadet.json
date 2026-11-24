@@ -16063,6 +16063,274 @@
         "result": "reviewed",
         "reason": "Arıkanın parti yayınıyla TBMM tutanağının kapanışı birebir aynı değildir. Arıkan 21 Aralık açık oylamasına katılmadı; ona ret oyu atfedilemez. Bülent Kaya Yeni Yol Grubu adına konuştu ve kendi ret oyu kaydedildi; bir kişinin oyu bütün parti veya grubun oyunu temsil etmez."
       }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0411-wage-2026-press",
+        "party_id": "saadet",
+        "title": "Arıkanın 2026 asgari ücret talebi",
+        "source_kind": "news"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0411-wage-2026-press-v1",
+        "document_id": "0411-wage-2026-press",
+        "original_url": "https://www.kayserihaber.com/mahmut-arikan-asgari-ucret-en-az-33-bin-tl-olmali",
+        "final_url": "https://www.kayserihaber.com/mahmut-arikan-asgari-ucret-en-az-33-bin-tl-olmali",
+        "document_date": "2025-10-23",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Kayseri Haber yayını; parti API konuşması ayrıca okundu.",
+        "accessed_at": "2026-11-24T11:11:57.979407+00:00",
+        "verified_at": "2026-11-24T11:11:57.979407+00:00",
+        "mime": "text/html",
+        "sha256": "fbf95ba45be0b48811f8c68287d72263f80d6189d060ee54151fb6d103a8af54",
+        "original_path": "objects/fbf95ba45be0b48811f8c68287d72263f80d6189d060ee54151fb6d103a8af54/original.html.bin",
+        "readable_path": "objects/fbf95ba45be0b48811f8c68287d72263f80d6189d060ee54151fb6d103a8af54/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0411-wage-2026-press-v1",
+        "publisher": "Kayseri Haber",
+        "author": "Nadire Nur Temur",
+        "kind": "journalism",
+        "published_at": "2025-10-23",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://www.kayserihaber.com/mahmut-arikan-asgari-ucret-en-az-33-bin-tl-olmali",
+        "basis": "Yayıncı ve imza haberin özgün sayfasından."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "74f778db407d306ffebd47df25382941",
+        "format_version": 2,
+        "source_sha256": "fbf95ba45be0b48811f8c68287d72263f80d6189d060ee54151fb6d103a8af54",
+        "index_path": "views/74f778db407d306ffebd47df25382941/index.html",
+        "manifest_path": "views/74f778db407d306ffebd47df25382941/manifest.json",
+        "manifest_sha256": "272facf2bc8ab8abab008b3c1cf5afb0fa4d327da165624d9b6551e309a8e093",
+        "version_id": "0411-wage-2026-press-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0411-wage-2026-demand",
+        "version_id": "0411-wage-2026-press-v1",
+        "exact": "En az yüzde 50 zamla 33 bin lira olmalıdır. Bunun altı kabul edilemez.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Arıkanın asgari ücret talebi",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0411-wage-2026-official-net-brut",
+        "version_id": "0411-july-pension-wage-announcement-v1",
+        "exact": "net asgari ücret 28 bin 75 lira 50 kuruş, brüt asgari ücret tutarı ise 33 bin 30 lira olarak belirlenmiştir.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "2026 için net ve brüt ücret duyurusu",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0411-saadet-minimum-wage-2026-target",
+        "party_id": "saadet",
+        "heading": "Belgelenmiş uygulamalar",
+        "text": "Mahmut Arıkan 2026 asgari ücretinin en az yüzde 50 zamla 33.000 TL olmasını istedi.",
+        "pair_id": "0411-saadet-minimum-wage-2026-target",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-target",
+        "passage_id": "0411-wage-2026-demand",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-target",
+        "passage_id": "0411-wage-2026-demand",
+        "checked_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "confirmed",
+        "reason": "22 Ekim parti açıklaması ve 23 Ekim imzalı haber okundu."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0411-saadet-minimum-wage-2026-target",
+        "kind": "finding",
+        "subject_id": "0411-saadet-minimum-wage-2026-target",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "reviewed",
+        "reason": "22 Ekim parti açıklaması ve 23 Ekim imzalı haber okundu."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0411-saadet-minimum-wage-2026-quote",
+        "party_id": "saadet",
+        "heading": "Belgelenmiş uygulamalar",
+        "text": "En az yüzde 50 zamla 33 bin lira olmalıdır. Bunun altı kabul edilemez.",
+        "pair_id": "0411-saadet-minimum-wage-2026-target",
+        "provenance": "quote",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-quote",
+        "passage_id": "0411-wage-2026-demand",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-quote",
+        "passage_id": "0411-wage-2026-demand",
+        "checked_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "confirmed",
+        "reason": "İmzalı haberdeki birebir pasaj."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0411-saadet-minimum-wage-2026-quote",
+        "kind": "finding",
+        "subject_id": "0411-saadet-minimum-wage-2026-quote",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "reviewed",
+        "reason": "İmzalı haberdeki birebir pasaj."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0411-saadet-minimum-wage-2026-result",
+        "party_id": "saadet",
+        "heading": "Belgelenmiş uygulamalar",
+        "text": "23 Aralıkta 2026 için 1 Ocaktan geçerli aylık net 28.075,50 TL ve brüt 33.030 TL duyuruldu.",
+        "pair_id": "0411-saadet-minimum-wage-2026-result",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-result",
+        "passage_id": "0411-wage-2026-official-net-brut",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-result",
+        "passage_id": "0411-wage-2026-official-net-brut",
+        "checked_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "confirmed",
+        "reason": "ÇSGB tutarları ve yürürlük başlangıcı."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0411-saadet-minimum-wage-2026-result",
+        "kind": "finding",
+        "subject_id": "0411-saadet-minimum-wage-2026-result",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "reviewed",
+        "reason": "ÇSGB tutarları ve yürürlük başlangıcı."
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0411-saadet-minimum-wage-2026-explanation",
+        "party_id": "saadet",
+        "heading": "Belgelenmiş uygulamalar",
+        "text": "Talep ve karar 2026 asgari ücretiyle ilgilidir. Talebin net veya brüt niteliği açık olmadığından 33.000 TL eşiğinin karşılandığı kesin söylenemez. Talep net ise açıklanan net ücret 4.924,50 TL altındadır; 33.030 TL ise brüttür. Talepte net veya brüt açıkça belirtilmemiştir. Komisyonu Saadet Partisi yönetmemiştir; talep ile karar arasında etki veya nedensellik gösterilmemiştir. Bakanlığın tutarları belirlenen ücrettir, tüm fiilî ödemeleri kanıtlamaz.",
+        "pair_id": "0411-saadet-minimum-wage-2026-explanation",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-explanation",
+        "passage_id": "0411-wage-2026-demand",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-explanation",
+        "passage_id": "0411-wage-2026-demand",
+        "checked_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "confirmed",
+        "reason": "Talepte net veya brüt açıkça belirtilmemiştir. Komisyonu Saadet Partisi yönetmemiştir; talep ile karar arasında etki veya nedensellik gösterilmemiştir. Bakanlığın tutarları belirlenen ücrettir, tüm fiilî ödemeleri kanıtlamaz."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-explanation",
+        "passage_id": "0411-wage-2026-official-net-brut",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0411-saadet-minimum-wage-2026-explanation",
+        "passage_id": "0411-wage-2026-official-net-brut",
+        "checked_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "confirmed",
+        "reason": "Talepte net veya brüt açıkça belirtilmemiştir. Komisyonu Saadet Partisi yönetmemiştir; talep ile karar arasında etki veya nedensellik gösterilmemiştir. Bakanlığın tutarları belirlenen ücrettir, tüm fiilî ödemeleri kanıtlamaz."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0411-saadet-minimum-wage-2026-explanation",
+        "kind": "finding",
+        "subject_id": "0411-saadet-minimum-wage-2026-explanation",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-24T11:13:39.989973+00:00",
+        "result": "reviewed",
+        "reason": "Talepte net veya brüt açıkça belirtilmemiştir. Komisyonu Saadet Partisi yönetmemiştir; talep ile karar arasında etki veya nedensellik gösterilmemiştir. Bakanlığın tutarları belirlenen ücrettir, tüm fiilî ödemeleri kanıtlamaz."
+      }
     }
   ],
   "practice_records": {
@@ -16345,6 +16613,16 @@
         "title": "1/280 2026 bütçesinin kesin oylaması",
         "scope_context": "2026 bütçe teklifi açık oylamada kabul edildi. Bülent Kaya ret verdi; Mahmut Arıkan katılmadı.",
         "occurrence_basis": "TBMM 39. birleşim kesin oy tablosu ve 7567 sicili."
+      },
+      {
+        "id": "0411-saadet-minimum-wage-2026-event",
+        "common_event_key": "turkiye-minimum-wage-commission-2026-decision-2025-1",
+        "event_at": "2025-12-23",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "title": "2026 asgari ücretinin belirlenmesi",
+        "scope_context": "Asgari Ücret Tespit Komisyonu 2026 için ücret belirledi; ÇSGB 23 Aralıkta net ve brüt tutarları açıkladı.",
+        "occurrence_basis": "ÇSGB 23 Aralık duyurusu; yürürlük 1 Ocak 2026."
       }
     ],
     "practice_event_evidence": [
@@ -17724,6 +18002,15 @@
         "concrete_basis": "Kanunun kabul tarihi",
         "limitation": "Arıkanın parti yayınıyla TBMM tutanağının kapanışı birebir aynı değildir. Arıkan 21 Aralık açık oylamasına katılmadı; ona ret oyu atfedilemez. Bülent Kaya Yeni Yol Grubu adına konuştu ve kendi ret oyu kaydedildi; bir kişinin oyu bütün parti veya grubun oyunu temsil etmez.",
         "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0411-saadet-minimum-wage-2026-event",
+        "passage_id": "0411-wage-2026-official-net-brut",
+        "stage": "result",
+        "supported_point": "Bakanlık 2026 ücretini net 28.075,50 ve brüt 33.030 TL olarak duyurdu.",
+        "concrete_basis": "2026 için net ve brüt ücret duyurusu",
+        "limitation": "Talepte net veya brüt açıkça belirtilmemiştir. Komisyonu Saadet Partisi yönetmemiştir; talep ile karar arasında etki veya nedensellik gösterilmemiştir. Bakanlığın tutarları belirlenen ücrettir, tüm fiilî ödemeleri kanıtlamaz.",
+        "epistemic_type": "claim"
       }
     ],
     "practice_evidence_assessment": [
@@ -18650,6 +18937,12 @@
         "passage_id": "0411-budget-1280-law-adopt",
         "stage": "result",
         "basis_kind": "document"
+      },
+      {
+        "event_id": "0411-saadet-minimum-wage-2026-event",
+        "passage_id": "0411-wage-2026-official-net-brut",
+        "stage": "result",
+        "basis_kind": "document"
       }
     ],
     "practice_statement": [
@@ -18890,6 +19183,20 @@
         "period_basis": "TBMM 26. birleşim 8 Aralık 2025.",
         "uncertainty_reason": "Arıkanın parti yayınıyla TBMM tutanağının kapanışı birebir aynı değildir. Arıkan 21 Aralık açık oylamasına katılmadı; ona ret oyu atfedilemez. Bülent Kaya Yeni Yol Grubu adına konuştu ve kendi ret oyu kaydedildi; bir kişinin oyu bütün parti veya grubun oyunu temsil etmez.",
         "comparison_row_id": "04-03-v3-0311-saadet-makroekonomik-politika"
+      },
+      {
+        "id": "0411-saadet-minimum-wage-2026-statement",
+        "party_id": "saadet",
+        "topic_id": "asgari-ucret",
+        "taxonomy_version": 4,
+        "summary_finding_id": "0411-saadet-minimum-wage-2026-target",
+        "quote_finding_id": "0411-saadet-minimum-wage-2026-quote",
+        "statement_at": "2025-10-22",
+        "date_precision": "day",
+        "version_id": "0411-wage-2026-press-v1",
+        "period_basis": "Parti API metninde 22 Ekim grup konuşması; haber 23 Ekimde yayımlandı.",
+        "uncertainty_reason": "Talepte net veya brüt açıkça belirtilmemiştir. Komisyonu Saadet Partisi yönetmemiştir; talep ile karar arasında etki veya nedensellik gösterilmemiştir. Bakanlığın tutarları belirlenen ücrettir, tüm fiilî ödemeleri kanıtlamaz.",
+        "comparison_row_id": "04-03-v3-0311-saadet-asgari-ucret"
       }
     ],
     "practice_relation": [
@@ -19237,6 +19544,21 @@
         "temporal_context": "8 Aralık bütçe konuşması ile 21 Aralık nihai oy ayrı; 7567 sicilinde 31 Aralık Resmî Gazete kaydı ayrıca yer alır.",
         "authority_context": "Arıkan Saadet Genel Başkanı ve milletvekili olarak Yeni Yol Grubu süresinden konuştu; 21 Aralık Kaya grup adına konuştu ve kendi oyunu verdi. Arıkan katılmadı.",
         "uncertainty_reason": "Arıkanın parti yayınıyla TBMM tutanağının kapanışı birebir aynı değildir. Arıkan 21 Aralık açık oylamasına katılmadı; ona ret oyu atfedilemez. Bülent Kaya Yeni Yol Grubu adına konuştu ve kendi ret oyu kaydedildi; bir kişinin oyu bütün parti veya grubun oyunu temsil etmez."
+      },
+      {
+        "id": "0411-saadet-minimum-wage-2026-relation",
+        "statement_id": "0411-saadet-minimum-wage-2026-statement",
+        "event_id": "0411-saadet-minimum-wage-2026-event",
+        "party_id": "saadet",
+        "topic_id": "asgari-ucret",
+        "scope_id": "practice-9fa0c567e47932cee1906da2de729bd5c772a556c591b96ab2c9a80c2480ddbf",
+        "comparability_reason": "Talep ve karar 2026 asgari ücretiyle ilgilidir. Talebin net veya brüt niteliği açık olmadığından 33.000 TL eşiğinin karşılandığı kesin söylenemez. Talep net ise açıklanan net ücret 4.924,50 TL altındadır; 33.030 TL ise brüttür.",
+        "target_finding_id": "0411-saadet-minimum-wage-2026-target",
+        "result_finding_id": "0411-saadet-minimum-wage-2026-result",
+        "explanation_finding_id": "0411-saadet-minimum-wage-2026-explanation",
+        "temporal_context": "22 Ekim 2025 talebi, 23 Aralık 2025 komisyon kararı; yürürlük 1 Ocak 2026.",
+        "authority_context": "Arıkan Saadet genel başkanı olarak talepte bulundu; ücretin tespiti Asgari Ücret Tespit Komisyonunun görevidir. Parti yetkisi veya nedensellik iddia edilmez.",
+        "uncertainty_reason": "Talepte net veya brüt açıkça belirtilmemiştir. Komisyonu Saadet Partisi yönetmemiştir; talep ile karar arasında etki veya nedensellik gösterilmemiştir. Bakanlığın tutarları belirlenen ücrettir, tüm fiilî ödemeleri kanıtlamaz."
       }
     ],
     "practice_coverage_contract": [
@@ -19589,6 +19911,26 @@
         "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
         "research_kind": "event",
         "boundary_reason": "Partiler arası temas duyurusu ve iki görüşmenin tarihli açıklamaları okundu."
+      },
+      {
+        "id": "practice-699d1f2a4eb217b6fbfe9b69375342decd9462cc7a6098d1c2f642919a56fadc",
+        "party_id": "saadet",
+        "topic_id": "asgari-ucret",
+        "taxonomy_version": 4,
+        "period_start": "2001-07-20",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "statement",
+        "boundary_reason": "2026 asgari ücret açıklaması ve ilgili komisyon duyurusu incelendi."
+      },
+      {
+        "id": "practice-9fa0c567e47932cee1906da2de729bd5c772a556c591b96ab2c9a80c2480ddbf",
+        "party_id": "saadet",
+        "topic_id": "asgari-ucret",
+        "taxonomy_version": 4,
+        "period_start": "2001-07-20",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "2026 asgari ücret açıklaması ve ilgili komisyon duyurusu incelendi."
       }
     ],
     "practice_scope_source": [
@@ -20149,6 +20491,18 @@
         "version_id": "0411-budget-1280-law-v1",
         "inspected_at": "2026-11-24T10:21:00.343876+00:00",
         "inspected_sections": "[\"7567 sayılı bütçe kanunu sicili\", \"Kanunun kabul tarihi\", \"Resmî Gazete tarihi ve sayısı\"]"
+      },
+      {
+        "scope_id": "practice-699d1f2a4eb217b6fbfe9b69375342decd9462cc7a6098d1c2f642919a56fadc",
+        "version_id": "0411-wage-2026-press-v1",
+        "inspected_at": "2026-11-24T11:13:39.989973+00:00",
+        "inspected_sections": "[\"Arıkanın asgari ücret talebi\"]"
+      },
+      {
+        "scope_id": "practice-9fa0c567e47932cee1906da2de729bd5c772a556c591b96ab2c9a80c2480ddbf",
+        "version_id": "0411-july-pension-wage-announcement-v1",
+        "inspected_at": "2026-11-24T11:13:39.989973+00:00",
+        "inspected_sections": "[\"2026 için net ve brüt ücret duyurusu\"]"
       }
     ],
     "practice_lead": [
@@ -20887,6 +21241,22 @@
         "relevance_reason": "Ocak 2026 partiler arası temas duyurusu veya tarihli görüşme kaydı.",
         "state": "examined",
         "attempt_ids": "[\"budget-1280-reading-event-makroekonomik-politika-0411-budget-1280-law-v1\"]"
+      },
+      {
+        "id": "lead-minimum-wage-2026-reading-statement-asgari-ucret-0411-wage-2026-press-v1",
+        "scope_id": "practice-699d1f2a4eb217b6fbfe9b69375342decd9462cc7a6098d1c2f642919a56fadc",
+        "url": "https://www.kayserihaber.com/mahmut-arikan-asgari-ucret-en-az-33-bin-tl-olmali",
+        "relevance_reason": "2026 asgari ücret talebi veya bakanlık kararı.",
+        "state": "examined",
+        "attempt_ids": "[\"minimum-wage-2026-reading-statement-asgari-ucret-0411-wage-2026-press-v1\"]"
+      },
+      {
+        "id": "lead-minimum-wage-2026-reading-event-asgari-ucret-0411-july-pension-wage-announcement-v1",
+        "scope_id": "practice-9fa0c567e47932cee1906da2de729bd5c772a556c591b96ab2c9a80c2480ddbf",
+        "url": "https://www.csgb.gov.tr/haberler/2026-yilinda-gecerli-olacak-yeni-asgari-ucret-28-bin-75-lira-olarak-belirlendi",
+        "relevance_reason": "2026 asgari ücret talebi veya bakanlık kararı.",
+        "state": "examined",
+        "attempt_ids": "[\"minimum-wage-2026-reading-event-asgari-ucret-0411-july-pension-wage-announcement-v1\"]"
       }
     ],
     "practice_lead_revision": [],
@@ -21840,6 +22210,26 @@
         "result": "examined",
         "reason": "Belgenin belirtilen bölümü ve aktör bağlamı özgün nüshada okundu.",
         "source_version_id": "0411-budget-1280-law-v1"
+      },
+      {
+        "id": "minimum-wage-2026-reading-statement-asgari-ucret-0411-wage-2026-press-v1",
+        "scope_id": "practice-699d1f2a4eb217b6fbfe9b69375342decd9462cc7a6098d1c2f642919a56fadc",
+        "attempted_at": "2026-11-24T11:13:39.989973+00:00",
+        "query": "https://www.kayserihaber.com/mahmut-arikan-asgari-ucret-en-az-33-bin-tl-olmali",
+        "url": "https://www.kayserihaber.com/mahmut-arikan-asgari-ucret-en-az-33-bin-tl-olmali",
+        "result": "examined",
+        "reason": "Belgenin belirtilen bölümü ve aktör bağlamı özgün nüshada okundu.",
+        "source_version_id": "0411-wage-2026-press-v1"
+      },
+      {
+        "id": "minimum-wage-2026-reading-event-asgari-ucret-0411-july-pension-wage-announcement-v1",
+        "scope_id": "practice-9fa0c567e47932cee1906da2de729bd5c772a556c591b96ab2c9a80c2480ddbf",
+        "attempted_at": "2026-11-24T11:13:39.989973+00:00",
+        "query": "https://www.csgb.gov.tr/haberler/2026-yilinda-gecerli-olacak-yeni-asgari-ucret-28-bin-75-lira-olarak-belirlendi",
+        "url": "https://www.csgb.gov.tr/haberler/2026-yilinda-gecerli-olacak-yeni-asgari-ucret-28-bin-75-lira-olarak-belirlendi",
+        "result": "examined",
+        "reason": "Belgenin belirtilen bölümü ve aktör bağlamı özgün nüshada okundu.",
+        "source_version_id": "0411-july-pension-wage-announcement-v1"
       }
     ],
     "practice_candidate": [
@@ -22103,6 +22493,15 @@
         "state": "eligible",
         "reason": "Arıkanın eleştirdiği 2026 bütçe teklifi ile 21 Aralıkta oylanan 1/280 aynı bütçedir.",
         "passage_ids": "[\"0411-budget-1280-vote-kaya-speech\", \"0411-budget-1280-vote-kaya-vote\", \"0411-budget-1280-vote-arikan-vote\", \"0411-budget-1280-vote-totals\", \"0411-budget-1280-law-number\", \"0411-budget-1280-law-adopt\"]"
+      },
+      {
+        "id": "0411-saadet-minimum-wage-2026-candidate",
+        "scope_id": "practice-9fa0c567e47932cee1906da2de729bd5c772a556c591b96ab2c9a80c2480ddbf",
+        "event_id": "0411-saadet-minimum-wage-2026-event",
+        "relation_id": "0411-saadet-minimum-wage-2026-relation",
+        "state": "eligible",
+        "reason": "Talep ve karar 2026 asgari ücretiyle ilgilidir. Talebin net veya brüt niteliği açık olmadığından 33.000 TL eşiğinin karşılandığı kesin söylenemez. Talep net ise açıklanan net ücret 4.924,50 TL altındadır; 33.030 TL ise brüttür.",
+        "passage_ids": "[\"0411-wage-2026-official-net-brut\"]"
       }
     ],
     "practice_candidate_legacy": [],
@@ -23510,6 +23909,42 @@
     {
       "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0411-saadet-budget-1280-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0411-saadet-minimum-wage-2026-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0411-saadet-minimum-wage-2026-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0411-saadet-minimum-wage-2026-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0411-saadet-minimum-wage-2026-event|0411-wage-2026-official-net-brut|result"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0411-saadet-minimum-wage-2026-event"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0411-saadet-minimum-wage-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0411-saadet-minimum-wage-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0411-saadet-minimum-wage-2026-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0411-saadet-minimum-wage-2026-relation"
     }
   ]
 }
