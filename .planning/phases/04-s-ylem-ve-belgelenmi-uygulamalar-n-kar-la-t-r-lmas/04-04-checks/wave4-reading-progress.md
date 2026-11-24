@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 72 | 71 | 62573483 |
 | Saadet Partisi | 27 | 23 | 62572150 |
-| Demokrat Parti | 49 | 40 | 62571364 |
+| Demokrat Parti | 52 | 43 | 62572604 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -347,3 +347,9 @@ EMEP 3/1704 dosyasında 26 Ekim 2021 sabahı yayımlanan ret çağrısı, aynı 
 Demokrat Parti yayın kataloğunda 018 numaralı dilim sonunda 144/257 gövde okundu. 111 gövde açık ve 2 yayın kapsam tarihinden sonra. 148 numaralı sayfa iki denemede açılamadı. 147 numaralı yayında 29 Haziran kadın ve gençlik kolları görev başlangıcı, liste ve gövde tarihleriyle ayrı. 13 Ekim 2022 tutanağı 2/4471 29. madde oylaması ile teklifin tümünün oylamasını ayrı gösteriyor. 7418’in 18 Ekim yayımı ve 8 Kasım 2023 AYM norm denetimi özgün kaynakları arşivlendi. [018. dilim](../04-12-checks/party-news-018-reading.json) [7418 kaynakları](../04-12-checks/law-7418-sources/reading.json)
 
 Saadet 050 numaralı dilim sonunda 136/649 özgün gövde okudu ve 513 açık. 2026 asgari ücret adayı 62575423 ile denetleniyor. 33.000 TL parti ifadesinde net ve brüt açıkça belirtilmedi. Komisyon kararı, ÇSGB’nin net ve brüt hesabı ile fiilî ödeme kanıtı ayrı. [050. dilim](../04-11-checks/party-news-050-reading.json)
+
+Demokrat Parti 2023 seçim dosyası iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Ortak aday duyurusu, CHP ve İYİ Parti Meclis gruplarının YSK başvurusu, dört adaylı kesin listenin kararı ve yayımı ile 28 Mayıs oylama sonucu ayrı. [Seçim makbuzu](../04-12-checks/election-2023-62572604.json)
+
+148 numaralı 3 Temmuz 2022 ortak açıklaması özgün parti sayfasından açıldı ve okundu. Demokrat Parti arşivinde 145/257 gövde okundu, 110 açık ve iki yayın kapsam tarihinden sonra. 2/4496 imzalı teklifin 16 Haziran Başkanlığa gelişi, 17 Haziran komisyon aşaması ve 2 Haziran 2023 hükümsüz dosyalar listesindeki yeri ayrı belgelerde. [148. yayın](../04-12-checks/party-news-018-recovery-reading.json) [2/4496 okuması](../04-12-checks/fuel-4496-sources/reading.json)
+
+55 olay ve 45 ilişkilik 7418 adayı 62576495 işiyle denetleniyor. 22 Haziran Enginyurt konuşması ve 3 Temmuz ortak açıklaması erken bağlam olarak kaynaklandı. 1310 için 62575664 girdi hatası görsel makbuzun pasajdan sonra yüklenmesiyle düzeltildi. 62575744 giriş 0 ve kaynak denetimi sürüyor. Ayasofya 2729 özgün Resmî Gazete dosyasından yeniden alındı ve önceki aynanın aynı baytları taşıdığı doğrulandı. [1310 kapı geçmişi](../04-10-checks/tezkere-1310-gate-history.json) [2729 özgün dosya karşılaştırması](../04-10-checks/ayasofya-2729-original-recovery.json)
