@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 68 | 70 | 62530588 |
 | Saadet Partisi | 25 | 21 | 62544651 |
-| Demokrat Parti | 35 | 30 | 62565773 |
+| Demokrat Parti | 38 | 32 | 62567797 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -294,3 +294,6 @@ Saadet 024 sonunda 104/649 gövdeye ulaştı. 21 Ocak emekli araştırması niye
 EMEP 250, 251 ve 253–256. kaynak dilimlerini tamamladı. 252 ve 257’deki kimi Kürtçe bölümler açık. Bulu ile ilgili 3 Şubat 2021 tarihli rektörün istifası ve seçim talebi, aynı kişi için 14 Temmuz görevden alma kararıyla karşılaştırılıyor. 62568514 işi yeni karşılaştırmayı denetliyor. Parti yetkisi ve nedensellik için belge açık. 60f4e41f içine daha önce indexte bulunan beş Saadet kaynak dosyası da girdi. Sonraki commitlerde açık dosya listesi kullanıldı. [256. kaynak dilimi](../04-10-checks/party-api-256-reading.json) [Bulu resmî karar okuması](../04-10-checks/bulu-official-2021-reading.json)
 
 Demokrat Parti’nin 008. dilimi sonunda 83 gövde okundu, iki kayıt kesim sonrası ve 172 kayıt açık. 7/20085’in imzalı sorusu ve 7 Ocak cevapsızlık ilanı ile 2/3139 ve 2/3144’ün esas sicilleri ve imzalı nüshaları okundu. Üç kayıt 62567797 ile denetleniyor. 8 Mayıs zeytinyağı söylemi, 1 Haziran kotası, 13 Eylül kısıt kaldırma bildirimi ve 14 Eylül fon kesintisi kaldırma kararı kendi dayanaklarıyla okundu. [008. dilim](../04-12-checks/party-news-008-reading.json) [Zeytinyağı kaynak okuması](../04-12-checks/olive-oil-source-reading.json)
+
+
+2/3139, 2/3144 ve 7/20085 aynı exact çalışma çiftiyle iki HTML görünümünde doğrulandı. İki teklif ve bir soru kendi tarihleriyle yer aldı. 2/3139’daki iki 45. madde atfı PDF’nin ayrı sayfalarına bağlı. 7/20085’in imza, teslim ve süresinde cevaplanmama günleri ayrı. Programdaki katkı payı hedefiyle ilaç teminine özgü söylem eşleştirmesi açık. [Önizleme makbuzu](../04-12-checks/three-dossiers-62567797.json)
