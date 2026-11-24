@@ -1,0 +1,46 @@
+{
+  "tranche_id": "0410-emep-api-276",
+  "read_at": "2026-11-24T15:04:22.304087+00:00",
+  "method": "275te 10.000 karakterde bırakılan özgün Türkçe HTML gövdesi [10000,20000), [20000,30000), [30000,36234) aralıklarında doğrudan okundu; gövde ve her aralık UTF-8 SHA-256 ile bağlandı.",
+  "limitations": [
+    "Barış Pınarı tezkere kimliği, tarihli oylama ve ABD/Rusya mutabakatları birincil belgelerle ayrıca doğrulanmadı; sonraki 2021 3/1704 ile eşlenmedi.",
+    "Sınır saldırısı, savaşın maliyeti ve göçmen tercihlerine dair genellemeler partiye atıflıdır.",
+    "Belirli 3404 gövdesinin okunması tüm corpus kapsamını kapatmaz."
+  ],
+  "parts": [
+    {
+      "post_id": 3404,
+      "url": "https://www.emep.org/tek-adam-tek-parti-yonetiminin-suriye-politikasi",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "body_sha256": "53db02bfb9feedcc0e8882006b14b680b21c64855c38a04f09c294084490912b",
+      "start_char": 10000,
+      "end_char": 20000,
+      "slice_sha256": "9328b9c5f593f6869dcde4abdf2f81d104c46ca66228d9a643e8cc4bd3017089",
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Parti metni Kürt sorunu, sınır ötesi ulusal güvenlik ve “milli politika” söylemine ilişkin yorumlarını sürdürüyor. Suriye/Irak asker gönderme tezkerelerinin her yıl çıkarıldığı ve HDP dışındaki partilerin desteklediği iddiası için her yetki, tarih ve oy ayrı TBMM kaydıyla doğrulanmalı; belirli 2019 tezkere kimliği bu pasajda açıkça verilmez."
+    },
+    {
+      "post_id": 3404,
+      "url": "https://www.emep.org/tek-adam-tek-parti-yonetiminin-suriye-politikasi",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "body_sha256": "53db02bfb9feedcc0e8882006b14b680b21c64855c38a04f09c294084490912b",
+      "start_char": 20000,
+      "end_char": 30000,
+      "slice_sha256": "05312fb493febe9e733fa0f6525fb0d0ee2a9146e826ee1792e415166010956f",
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Metin yabancı askerî güçlerin Suriye’den çekilmesini, Suriyeli göçmenlerin iş, eğitim, sağlık ve güvenli geleceğe erişimini ve yerli-göçmen işçiler için aynı çalışma koşullarını savunuyor. Güvenli bölge ve 2 milyon kişinin yerleştirilmesiyle ilgili anlatı parti iddiasıdır; resmî öneri, karar ve fiilî yerleşim ayrı incelenmelidir."
+    },
+    {
+      "post_id": 3404,
+      "url": "https://www.emep.org/tek-adam-tek-parti-yonetiminin-suriye-politikasi",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "body_sha256": "53db02bfb9feedcc0e8882006b14b680b21c64855c38a04f09c294084490912b",
+      "start_char": 30000,
+      "end_char": 36234,
+      "slice_sha256": "71481932bc13312c9c8f3e0e14b4f7b5d95a2aab9279bbf2ef463e85689c4881",
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Son bölüm savaş giderleri ve ekonomik yük üzerine parti değerlendirmesi yapar; ABD ve Rusya ile mutabakatlardan söz edip Suriye’de yabancı askerî üs ve birliklerin çekilmesini, Türkiye’de İncirlik dahil yabancı üslerin kapatılmasını ister. Mutabakatların tam tarih ve metni ile açıklama sonrasındaki uygulama burada kanıtlanmaz."
+    }
+  ],
+  "closure_refs": []
+}
