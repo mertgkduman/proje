@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 39 | 37 | 62625832 |
+| TİP | 42 | 40 | 62628991 |
 | DEM Parti | 87 | 13 | 62625356 / 62625364 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -612,3 +612,5 @@ TİP parti açıklamaları dizininde 190/190 yayın gövdesi okundu. Son dört y
 Birleşik prova 15, 62629055 ile başladı. 582 girdi olayı ve 387 ilişki, iki sırada aynı 554 olay, 387 ilişki ve 590 olay eş adı verdi. Amasra, São Paulo ve Van dosyaları girdide. Haliç ortak olayı, önceki üç katılımcı kaydını koruyarak DBP’nin Keskin Bayındır katılımını da kapsıyor. İlk yapısal kontrolde 5.782 inceleme kökeni ve 616 kaynak yetkisi doğrulandı. Son önizleme denetimi sürüyor. [Dondurma makbuzu](wave4-merge-rehearsal-15.json) [Haliç ek kaynak okuması](wave4-halic-dbp-overlap-reading.json)
 
 2021 okul açılışı, Montrö ve Paris Anlaşması için TİP’in 42 olay ve 40 ilişkilik adayı 62628991 ile çalıştırıldı. Önceki doğrulanmış 39/37 çifti çalışma girdisi olarak duruyor. [Aday denetimi](../04-05-checks/tip-school-montro-paris-validation.py)
+
+TİP’in okul, Montrö ve Paris karşılaştırmaları 62628991 ile bağımsız doğrulandı ve araştırma çifti 42 olay ile 40 ilişkiye çıktı. 10 Ağustos okul çağrısı, 19 Ağustos plan ve 6 Eylül açılış ayrı. Montrö’de savaşan taraflara kısıt ve diğer ülkelere telkin ayrı. Paris’te 6 Ekim uygun bulma, 11 Ekim depo, 13 Ekim bildirim ve 10 Kasım yürürlük ayrı tarihli. [Bağımsız doğrulama](../04-05-checks/tip-school-montro-paris-62628991-independent.log)
