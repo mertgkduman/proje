@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 22 | 21 | 62587905 |
-| DEM Parti | 82 | 12 | 62585486 / 62585531 |
+| DEM Parti | 83 | 12 | 62587929 / 62587933 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -450,3 +450,9 @@ Dört tarihsel Demokrat Parti mali denetim kararı iki HTML görünümünde ve b
 2 Ocak 2020 Libya tezkeresi için TİP açıklaması, 41. birleşim tutanağı, kesin açık oy cetveli ve karar sicili özgün baytlarla arşivlendi. 30 Aralık sunuşu, Baş’ın TİP temsilcisi sıfatı, bireysel Red oyu ve Mengüllüoğlu’nun Katılmadı kaydı ayrı. Kürsü sayıları ve kesin toplamlardaki fark kaydedildi. Kararın 3 Ocak yayımı TBMM sicilinden. 23 olay ve 22 ilişkilik aday 62589479 ile, 7242 doğrulamasına bağlı olarak sırada. [Libya kaynakları](../04-05-checks/tip-libya-1238-sources/reading.json)
 
 TİP’in 6 Nisan 2020 ortak açıklaması ve 7242’nin kabulü iki HTML görünümünde, bağımsız JSON ve SQLite denetiminde doğrulandı. Kesin cetvelde iki TİP milletvekilinin satırı Katılmadı. EMEP kaydı aynı kabul işlemini kendi açıklamasıyla ilişkilendiriyor. Birleştirme adayı ortak kaynağı ve iki partinin ayrı delillerini içeriyor. [TİP makbuzu](../04-05-checks/tip-7242-62587905.json) [Bağımsız denetim](../04-05-checks/tip-7242-62587905-independent.log)
+
+DEM Parti’nin 26 Şubat 2025 komisyon kaydı iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Perihan Koca sivil toplum ve ekoloji örgütlerinin önce dinlenmesini istedi. Başkanın sıralama yanıtı ve sonra Temiz Hava Hakkı temsilcisinin konuşması ayrı. Talebin ayrıca oylandığı ve bütün kuruluşların dinlendiği açık. [DEM makbuzu](../04-06-checks/dem-iklim-komisyon-katilim-62587929.json) [Bağımsız denetim](../04-06-checks/dem-iklim-komisyon-katilim-62587929-independent.json)
+
+Dokuzuncu yalıtılmış birleştirme provasında 535 girdi olayı ve 355 ilişki vardı. İki sırada da 515 olay, 355 ilişki ve sıfır kapanış elde edildi. Önceki 11 ortak olay ve 12 açık adayın bileşimi korundu. 7242 için tutanak ve cetvel ortak. Olay dayanağı alanlarının ayrı ifadeleri nedeniyle aday açık bırakıldı. İki görünüm denetimi 62590442 ile sürüyor. [Prova makbuzu](wave4-merge-rehearsal-09.json) [7242 kaynak okuması](wave4-7242-overlap-reading.json) [Dört gündem kaydı](wave4-agenda-overlap-reading.json)
+
+1238 Libya adayı 62589479 ilk giriş denetiminde yayın atfı tarih biçimi nedeniyle durdu. Yayım günü atıfta gün hassasiyetiyle kaydedildi. Özgün kaynak saat üst verisi okuma kaydında duruyor. Yeni aday 62589852 ile denetimde. [Doğrulama geçmişi](../04-05-checks/tip-libya-1238-gate-history.json)
