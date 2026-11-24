@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-099",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:13:24.628549+00:00",
+  "reads": [
+    {
+      "post_id": 481,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-ekonomik-felaketin-bedelini-hepimiz-oduyoruz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-ekonomik-felaketin-bedelini-hepimiz-oduyoruz",
+      "published_at": "2024-12-20T21:37:40+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:13:24.628549+00:00",
+      "original_path": "party-news-bodies/481.json",
+      "sha256": "bd1eea3100fe9b74f6fdcde77ed7aabd52188642387098e50745cbb9dc34d415",
+      "normalized_body_sha256": "8fe4570c418f1d98db5a1670d930612189da112e771c70efb800aaa078942bbc",
+      "source_section_range": [
+        0,
+        4725
+      ],
+      "state": "examined",
+      "reading": "Mesut Doğanın 2025 bütçe açığı, faiz ödeneği ve borçlara ilişkin değerlendirmeleri aktarılıyor.",
+      "selected_passages": [
+        {
+          "start": 2194,
+          "end": 2262,
+          "exact": "2025 yılı için ödenecek faizlerin toplamının 1 trilyon 950 milyar TL"
+        }
+      ],
+      "point": "Bütçe faiz ödeneği ve toplu borç iddiası.",
+      "statement": "Doğan öngörülen bütçe açığını ve faiz tutarını eleştirerek denk bütçe görüşünü savunuyor.",
+      "concrete_evidence": "Parti gövdesinde 2025 gelir 12,8 trilyon ve gider 14,73 trilyon TL iddiaları ile faiz ödeneği 1,95 trilyon TL açıklanıyor.",
+      "open_provenance": "Aynı gövdede toplam borç 40,5 ve 36,5 trilyon TL olarak iki farklı rakamla belirtilmiş; kapsam farkı açıklanmıyor. 81 il bütçesi ve faiz oranına ilişkin cümlelerde yön de net değil. Bütçe tahmini ve fiili faiz ödemesi birbirinden ayrılmalı; rakamlar özgün bütçe cetvelleriyle burada doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 185,
+  "remaining_pre_cut_bodies": 464,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
