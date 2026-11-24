@@ -92,9 +92,9 @@ for filename, role, day, title in source_specs:
     )
     add(
         'source_attribution', version_id=version, kind='party_publication' if is_party else 'official',
-        publisher=review['publisher'], author='Selma Gürkan' if is_party else None, social_handle=None,
-        published_at='2021-10-26T09:22:20+03:00' if is_party else day,
-        date_precision='instant' if is_party else ('day' if day else 'unknown'),
+        publisher='Emek Partisi' if is_party else review['publisher'],
+        author='Selma Gürkan' if is_party else None, social_handle=None,
+        published_at=day, date_precision='day' if day else 'unknown',
         public_url=url, basis=review['reading'],
     )
     if fmt == 'html':
