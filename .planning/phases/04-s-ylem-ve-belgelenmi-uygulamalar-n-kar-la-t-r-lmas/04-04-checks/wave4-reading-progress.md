@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 66 | 7 | 62619918 |
 | EMEP | 82 | 78 | 62617962 |
-| Saadet Partisi | 35 | 31 | 62616040 / 62616059 |
+| Saadet Partisi | 36 | 32 | 62619367 / 62619370 |
 | Demokrat Parti | 81 | 52 | 62618726 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -572,3 +572,5 @@ Birleşik prova 13, dokuz doğrulanmış paketin 570 olay ve 379 ilişki içeren
 DBP Bağlar Belediye Meclisinin 2016/18 gıda denetimi ve 2016/20 Kardelen danışmanlık raporu kayıtları doğrulandı. 447 yerin denetlendiğine ilişkin sayı, komisyon raporunun bildirdiği kapsamı gösteriyor. 2015/231 ile 2016/20 arasındaki kesin dosya bağı ve bireysel hizmet sonuçları açık. Birleşik prova 13 bu iki kayıttan önceki DBP çiftini kullanıyor. [DBP doğrulama geçmişi](../04-09-checks/baglar-2016-reports-gate-history.json)
 
 TİP parti açıklamaları dizinindeki 89–96 arasındaki sekiz özgün yayın okundu. Kümülatif 96 gövde okundu, 94 gövde açık. Amasra’da ölüm ve ulaşılamayan kişi sayıları açıklama zamanına ve yayımlayan aktöre göre ayrı tutuldu. Cemevi Başkanlığının kuruluş ve yürürlük hükümleri ile 7421’in bakım ve aydınlatma maddeleri okundu. 24 Eylül Haliç buluşmasındaki kurucu bileşenler, konuşmacılar ve diğer katılan temsilciler kaynaklarda ayrı belirlendi. [Okuma makbuzu](../04-05-checks/tip-publication-catalog/party-statements-12/reading.json)
+
+Saadet Partisi’nin 3 Mart açıklaması ile 6 Mart tarihli altı lider buluşması ve ortak aday duyurusu iki görünümde doğrulandı. YSK’nın geçici aday listesi daha sonraki ayrı işlem olarak kaynaklara bağlandı. Birleşik prova 13 bu karşılaştırmadan önceki Saadet çiftini kullanıyor. [Saadet önizleme makbuzu](../04-11-checks/saadet-six-leaders-2023-62619367.json)
