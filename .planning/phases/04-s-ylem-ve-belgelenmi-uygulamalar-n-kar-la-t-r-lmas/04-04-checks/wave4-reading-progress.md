@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 72 | 9 | 62557779 |
+| DEM Parti | 74 | 9 | 62562198 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -270,3 +270,12 @@ DEM Parti’nin 25 ve 26 Haziran iklim önergeleri ile 2 Temmuz 10/2881 tekstil 
 Saadet’in 591 ve 586 numaralı gövdeleri okundu. 98/649 okundu ve 551 gövde açık. Demokrat Parti’de 52–56 numaralı beş gövde okundu. 54 gövde incelendi, iki gövde kesimden sonra ve 201 kayıt açık. Manisa don haberindeki hektar ve dekar ifadeleri ayrı saklandı. [Saadet 018](../04-11-checks/party-news-018-reading.json) [Saadet 019](../04-11-checks/party-news-019-reading.json) [Demokrat Parti 004](../04-12-checks/party-news-004-reading.json)
 
 Altıncı yalıtılmış provada 463 parti olay satırından 443 olay ve 320 ilişki üretildi. Ortak 10/2881 ve 10/2882 işlemlerinin iki ayrı olay olduğu ve katkılarının kendi kanıtlarına bağlı kaldığı doğrulandı. On bir ortak olay birleştirildi ve on iki ortak olay adayı açık. İlk iş iklim oylaması için önceki provanın parti beklentisini kullandı. Düzeltilen salt okunur denetim, mevcut önizlemede geçti. Bağımsız denetim on SQLite ve JSON tablosunu, 640 ilişki ve 306 açık aday bağlantısını, arşiv özeti ve ana veri sürümünü doğruladı. Kapsam kapanışı sıfır. [Doğrulama kaydı](wave4-merge-rehearsal-06-62557787.json)
+
+
+DEM Parti’nin 1 Temmuz 2025 iklim teklifinde 12 ve 13. maddeye ilişkin ayrı önergeleri ve 13. maddedeki ertelenen oylama geçişi, 62562198 ve bağımsız 62563817 ile iki HTML görünümünde doğrulandı. 10/2879 sicili ve altı imzalı PDF sayfası da okundu. İlgili yeni ana paket kaydı henüz açık. [İklim makbuzu](../04-06-checks/dem-iklim-103-12-13-62562198.json)
+
+EMEP 245, 246, 248 ve 249 kaynak dilimlerini tamamladı. 247’deki 4283 Kürtçe metin ve aynı yazarın Türkçe yayını metin bakımından benzer. Tam eşdeğerlik açık ve 247 kısmi. [249. dilim](../04-10-checks/party-api-249-reading.json) [Dil karşılaştırması](../04-10-checks/party-api-247-kurdish-comparison.json)
+
+Saadet’te 585, 579 ve 578 numaralı gövdeler okundu. Toplam 101/649 ve 548 gövde açık. 662 katalog kimliği çakışması ayrıca açık. Demokrat Parti’de 57–64 numaralı gövdelerle toplam 62/257 okundu, 193 kayıt açık ve iki kayıt kesim sonrası. 57 ve 58 aynı haberin farklı başlıkla yapılan iki yayını. [Saadet 021](../04-11-checks/party-news-021-reading.json) [Demokrat Parti 005](../04-12-checks/party-news-005-reading.json)
+
+12 Mart 2025 tarihli 2/2860 geçici 1. madde önergesinde Altıntaş imzası ve konuşması, teklifin tümüne ait kesin cetvelde Katılmadı kaydıyla ayrı işlemlerde doğrulandı. Başkanın duyurduğu 246 kabul ve 102 ret ile kesin cetveldeki 245 kabul ve 101 ret arasındaki fark, cetvelde işaretli birer mükerrer oya karşılık geliyor. 7545’in kabul günü 12 Mart, Resmî Gazete günü 19 Mart. [TBMM okuma kaydı](../04-12-checks/siber-7545-source-reading.json)
