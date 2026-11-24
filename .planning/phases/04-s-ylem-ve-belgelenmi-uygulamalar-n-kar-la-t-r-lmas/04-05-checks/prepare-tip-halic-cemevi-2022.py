@@ -40,6 +40,11 @@ package, review = map(read, pair)
 entries, records = package["entries"], package["practice_records"]
 assert [len(records[key]) for key in ("practice_event", "practice_relation", "practice_closure")] == [35, 33, 0]
 
+education = next(row for row in records["practice_event"] if row["common_event_key"] == "yok-2023-03-30-bahar-yuzyuze-secenegi")
+assert education["scope_context"] == "14 Şubat TİP Bilim Kurulu fizikî açılış çağrısı ve 30 Mart YÖK kararıyla uzaktan eğitimin yanında yüz yüze seçenek."
+education["scope_context"] = "30 Mart 2023 YÖK kararıyla bahar döneminde uzaktan öğretimin yanında yüz yüze eğitim seçeneği."
+
+
 
 def insert(kind, row):
     entries.append({"kind": kind, "values": row})
@@ -69,16 +74,18 @@ def store(relative, content):
 receipt = read(source_dir / "reading.json")
 source_rows = {row["path"]: row for row in receipt["linked_material"]}
 source_rows.update({row["path"]: row for row in read(source_dir / "capture.json")})
+prior_dir = source_dir.with_name("party-statements-13")
+source_rows.update({row["path"]: row for row in read(prior_dir / "capture.json")})
 source_specs = {
     "declaration": ("095.html.bin", "2022-09-25", "TİP’in yayımladığı ortak ittifak deklarasyonu",
                     "party_publication", "Türkiye İşçi Partisi", None,
                     "25 Eylül TİP yayımı 24 Eylül buluşmasını geriye dönük bildiriyor ve ortak metni basıyor."),
+    "prior": ("097.html.bin", "2022-08-25", "TİP’in yayımladığı 25 Ağustos ortak ittifak açıklaması",
+              "party_publication", "Türkiye İşçi Partisi", None,
+              "Altı bileşenin ortak metni, Eylül sonunda halk buluşması ve ittifak ilanı kararını bildiriyor."),
     "bianet": ("bianet-267592.html.bin", "2022-09-24", "Bianet’in Haliç buluşması haberi",
                "journalism", "Bianet", "Ruken Tuncel",
                "Olay günü yerinde haber. İlk yayım 15.24, erişilen metnin güncellemesi 23.08."),
-    "hdp": ("hdp-16728.html.bin", "2022-09-24", "HDP’nin Haliç buluşması haberi",
-            "party_publication", "Halkların Demokratik Partisi", None,
-            "24 Eylül HDP yayımı. Erkan Baş’ın sıfatını ve konuşmasını bildiriyor."),
     "cemevi-statement": ("092.html.bin", "2022-10-10", "10 Ekim TİP cemevi ve eşit yurttaşlık açıklaması",
                          "party_publication", "Türkiye İşçi Partisi", None,
                          "TİP’in tarihli kaynak yayımı. Duyurulan başkanlık, hizmet giderleri ve tanınma talebi."),
@@ -89,7 +96,10 @@ source_specs = {
 sources = {}
 for key, (name, day, title, kind, publisher, author, basis) in source_specs.items():
     row = source_rows[name]
-    path = Path(row["archive_copy"]) if row.get("archive_copy") else source_dir / name
+    if row.get("archive_copy"):
+        path = Path(row["archive_copy"])
+    else:
+        path = (prior_dir if key == "prior" else source_dir) / name
     raw = path.read_bytes()
     assert sha(raw) == row["sha256"]
     folder = Path("objects") / row["sha256"]
@@ -115,14 +125,18 @@ passages = {}
 for key, source, exact, label, article in (
     ("halic-held", "bianet", "Haliç Kongre Merkezi'nde yol haritasını açıklamak üzere toplandı.",
      "24 Eylül Haliç buluşmasının gerçekleşmesi", None),
+    ("halic-delivered", "bianet", "açıklanması ile devam etti.",
+     "Bianet haberinde buluşmada deklarasyonun açıklanması", None),
     ("halic-parts", "bianet", "Emek Partisi (EMEP), Türkiye İşçi Partisi (TİP), Toplumsal Özgürlük Partisi (TÖP)",
      "Bianet haberinin kurucu bileşenleri", None),
-    ("halic-authority", "hdp", "Türkiye İşçi Partisi Genel Başkanı Erkan Baş",
+    ("halic-authority", "bianet", "Türkiye İşçi Partisi Genel Başkanı Erkan Baş",
      "24 Eylül yayımında Erkan Baş’ın parti sıfatı", None),
     ("halic-spoke", "bianet", "Genel Başkanı Erkan Baş ise şunları söyledi:",
      "Bianet haberinde Erkan Baş’ın konuşması", None),
-    ("halic-speech", "hdp", "Hepinizi Türkiye İşçi Partisi adına, devrimciliğimizin olanca ateşiyle selamlıyorum.",
-     "HDP yayımında Erkan Baş’ın Haliç konuşması", None),
+    ("halic-call", "prior", "Eylül ayı sonunda kitlesel bir halk buluşması",
+     "25 Ağustos ortak açıklamasında Eylül sonu halk buluşması", None),
+    ("halic-plan", "prior", "Emek ve Özgürlük İttifakı’nın kuruluşunun ilan edilmesine karar verilmiştir.",
+     "25 Ağustos ortak açıklamasında ittifak ilanı kararı", None),
     ("halic-sign", "declaration", "EHP-EMEP-HDP-SMF-TİP-TÖP",
      "25 Eylül TİP yayımında ittifak metninin altı bileşeni", None),
     ("cemevi-call", "cemevi-statement", "İnanç ve ibadethanelerinin tanınmasını istiyor.",
@@ -155,7 +169,7 @@ for row in read(working / "04-inventory.json")["cells"]:
 assert len(scopes) == 4
 for key, (_, url) in sources.items():
     topic = "alevi-inanc-orgutlenmesi" if key in ("gazette", "cemevi-statement") else "siyasal-ittifaklar"
-    lane = "statement" if key in ("declaration", "cemevi-statement") else "event"
+    lane = "statement" if key in ("declaration", "prior", "cemevi-statement") else "event"
     scope = scopes[topic, lane]
     version = vid(key)
     sections = [row["section"] for row in passages.values() if row["version_id"] == version]
@@ -204,13 +218,14 @@ add("practice_event", id=halic, common_event_key="halic-emek-ozgurluk-2022-09-24
     occurrence_basis="24 Eylül 2022 tarihli Bianet haberi ve HDP yayını, Haliç Kongre Merkezi’ndeki halk buluşmasını ve deklarasyonun açıklanmasını bildiriyor.")
 halic_refs = evidence(halic, (
     ("halic-held", "action", "independent_report", "Haliç Kongre Merkezi’nde 24 Eylül buluşması yapıldı."),
+    ("halic-delivered", "result", "independent_report", "Haliç programında ortak deklarasyon açıklandı."),
     ("halic-parts", "action", "independent_report", "TİP ortak buluşmanın kurucu bileşenlerinden biri olarak anıldı."),
     ("halic-spoke", "action", "independent_report", "Erkan Baş Haliç toplantısında konuştu."),
 ), halic_limit)
 party_claim = finding("halic-party", "TİP, buluşmada çerçevesi açıklanan ittifakın altı kurucu bileşeni arasında yer aldı.",
                       ("halic-parts", "halic-sign"))
 speaker_claim = finding("halic-speaker", "TİP Genel Başkanı Erkan Baş, 24 Eylül’de Haliç buluşmasına katılıp parti adına konuştu.",
-                        ("halic-authority", "halic-speech", "halic-spoke"))
+                        ("halic-authority", "halic-spoke"))
 institution = f"{case}-party-actor"
 representative = f"{case}-speaker-actor"
 insert("actor", dict(id=institution, kind="institution", party_id=party, person_id=None, authorization_passage_id=None))
@@ -227,9 +242,25 @@ for suffix, actor, finding_id, authority, limit in (
     if authority:
         add("practice_actor_period", contribution_id=contribution, valid_from="2022-09-24", valid_to="2022-09-24",
             identity_passage_id=authority)
-add("practice_candidate", id=f"{case}-halic-unmatched", scope_id=scopes["siyasal-ittifaklar", "event"],
-    event_id=halic, relation_id=None, state="unmatched",
-    reason="25 Eylül TİP yayımı 24 Eylül buluşmasını geriye dönük aktarıyor. Olaydan önceki bağımsız TİP çağrısı araştırması açık.",
+topic = "siyasal-ittifaklar"
+halic_statement = f"{case}-halic-statement"
+halic_target = finding("halic-target", "TİP’in yayımladığı 25 Ağustos ortak açıklamasında altı bileşen, Eylül sonunda halka açık bir buluşma ve ittifakın kuruluşunun ilanını kararlaştırdı.", ("halic-call", "halic-plan"))
+halic_quote = finding("halic-quote", passages["halic-call"]["exact"], ("halic-call",), quote=True, pair=halic_target)
+add("practice_statement", id=halic_statement, party_id=party, topic_id=topic, taxonomy_version=4,
+    summary_finding_id=halic_target, quote_finding_id=halic_quote, statement_at="2022-08-25", date_precision="day",
+    version_id=vid("prior"), period_basis="TİP’in 25 Ağustos 2022’de yayımladığı altı bileşenli ortak açıklama.",
+    comparison_row_id="04-03-v3-0304-tip-program-sinif-ittifak-row", uncertainty_reason=None)
+halic_result = finding("halic-result", "Altı bileşenin Haliç buluşması 24 Eylül’de gerçekleşti. İttifakın deklarasyonu açıklandı. Erkan Baş toplantıda TİP adına konuştu.", halic_refs)
+halic_comparison = finding("halic-comparison", "25 Ağustos ortak ilan kararı 24 Eylül Haliç buluşmasında gerçekleşti. TİP altı bileşenden biriydi ve Erkan Baş parti adına konuştu. TİP’in program metnini yeniden yayımladığı 25 Eylül, buluşmadan sonraki gündü.", ("halic-call", "halic-plan", *halic_refs, "halic-sign"))
+halic_relation = f"{case}-halic-relation"
+add("practice_relation", id=halic_relation, party_id=party, topic_id=topic, scope_id=scopes[topic, "event"],
+    statement_id=halic_statement, event_id=halic, target_finding_id=halic_target, result_finding_id=halic_result,
+    explanation_finding_id=halic_comparison, comparability_reason="25 Ağustos ortak açıklaması ve 24 Eylül buluşması aynı kuruluş ilanına ilişkin.",
+    temporal_context="25 Ağustos hazırlık açıklaması, 24 Eylül Haliç buluşması ve 25 Eylül TİP yayımı.",
+    authority_context="Altı bileşenin ortak kararı ve TİP’in bireysel temsilci konuşması ayrı kayıtlarda.",
+    uncertainty_reason=halic_limit)
+add("practice_candidate", id=f"{case}-halic-candidate", scope_id=scopes[topic, "event"], event_id=halic,
+    relation_id=halic_relation, state="eligible", reason="25 Ağustos ortak ilan kararı ve 24 Eylül Haliç buluşması.",
     passage_ids=json.dumps([pid(ref) for ref in halic_refs]))
 
 topic = "alevi-inanc-orgutlenmesi"
