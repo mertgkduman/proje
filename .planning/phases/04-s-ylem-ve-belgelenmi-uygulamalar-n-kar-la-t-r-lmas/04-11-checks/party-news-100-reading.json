@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-100",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:14:24.980660+00:00",
+  "reads": [
+    {
+      "post_id": 480,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/biz-israil-ile-ticaretin-belgelerini-sunuyoruz-siz-sadece-inkar-ediyorsunuz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=biz-israil-ile-ticaretin-belgelerini-sunuyoruz-siz-sadece-inkar-ediyorsunuz",
+      "published_at": "2024-12-20T21:36:55+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:14:24.980660+00:00",
+      "original_path": "party-news-bodies/480.json",
+      "sha256": "ddf4530be9686f35322a697c78197c52bcd0dce2ca0bf2757904e93b86078247",
+      "normalized_body_sha256": "8f3501432bb6cca2e9136f8546992272564514a12a001404ef4d9947713a8259",
+      "source_section_range": [
+        0,
+        3977
+      ],
+      "state": "examined",
+      "reading": "Şerafettin Kılıç Ticaret Bakanlığı bütçesi konuşmasında Filistine ihracat artışlarını ve İsrail ile ticareti ele alıyor.",
+      "selected_passages": [
+        {
+          "start": 2530,
+          "end": 2581,
+          "exact": "Filistin'e çelik ihracatımız yüzde 11.045 artmıştır"
+        }
+      ],
+      "point": "Filistin ihracat oranları ve ürünlerin varış noktası iddiası.",
+      "statement": "Kılıç sektörlerde yüksek yüzdelik ihracat artışı öne sürüyor ve ürünlerin Filistin adı altında İsraile gittiğini iddia ediyor.",
+      "concrete_evidence": "Parti özgün gövdesi iddiaları ve konuşmacının TİM verilerine atfını içeriyor.",
+      "open_provenance": "TİM verisinin özgün dönem, sektör, baz ve varış noktası burada incelenmedi. Yüzdelik artış, mutlak sevkiyat ve son kullanım yeri aynı olgu değildir; gümrük/teslim kaydı olmadan nihai varış doğrulanmış sayılamaz. Petrol ücretine dair beyan da ayrı kaynak ister."
+    }
+  ],
+  "completed_pre_cut_bodies": 186,
+  "remaining_pre_cut_bodies": 463,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
