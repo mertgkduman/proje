@@ -1,0 +1,1184 @@
+<!doctype html>
+<html lang="TR-tr">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="language" content="tr" />
+   
+
+
+        <title>TÜRKİYE BÜYÜK MİLLET MECLİSİ</title>
+
+    <meta name="title" content="TÜRKİYE BÜYÜK MİLLET MECLİSİ">
+    <meta name="description" content="Türkiye Büyük Millet Meclisi Resmi İnternet Sitesi">
+    <meta name="classification" content="government">
+
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="max-snippet:[255]" />
+    <meta name="robots" content="max-image-preview:standart" />
+    <meta name="robots" content="max-video-preview:[10]" />
+
+    <meta name="google" content="sitelinkssearchbox" />
+    <meta name="google-site-verification" content="tbmm.gov.tr" />
+    <meta name="googlebot-image" content="index, follow" />
+    <meta name="MSNBot-Media" content="index, follow" />
+
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--
+    <link href="~/anasayfa/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    -->
+
+
+    <link rel="shortcut icon" type="image/ico" href="/favicon/favicon.ico" />
+
+
+
+    <!-- generics -->
+    <link rel="icon" href="/favicon/16x16.png" sizes="16x16">
+    <link rel="icon" href="/favicon/32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon/180x180.png" sizes="180x180">
+    <link rel="icon" href="/favicon/192x192.png" sizes="192x192">
+    <link rel="icon" href="/favicon/512x512.png" sizes="512x512">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="192x192" href="/favicon/192x192.png">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/favicon/180x180.png" sizes="180x180">
+
+
+
+
+
+
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap_520/bootstrap.min.css" />
+
+<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+
+
+<link rel="stylesheet" href="/css/tbmm-yeni-tasarim.css" />
+
+
+    
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9Z7KYM55Q"></script>
+    <script>
+            window.dataLayer = window.dataLayer || []; 
+            function gtag() { dataLayer.push(arguments); } 
+            gtag('js', new Date()); 
+            gtag('config', 'G-Q9Z7KYM55Q');
+    </script>
+
+
+
+</head>
+<body>
+
+
+<style>
+    .navbar .megamenu {
+        padding: 1rem;
+    }
+
+    /* ============ desktop view ============ */
+    @media all and (min-width: 992px) {
+
+        .navbar .has-megamenu {
+            position: static !important;
+        }
+
+        .navbar .megamenu {
+            left: 0;
+            right: 0;
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    /* ============ desktop view .end// ============ */
+
+    /* ============ mobile view ============ */
+    @media(max-width: 991px) {
+        .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+            overflow-y: auto;
+            max-height: 90vh;
+            margin-top: 10px;
+        }
+    }
+
+
+
+    
+
+
+
+</style>
+<header>
+    <div id="header-container">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+
+
+                    <div id="header-banner">
+
+                        <div id="header-background">
+
+                            <a id="header-link" href="/">
+                                <div id="header-background-image">
+                                </div>
+                                <div id="header-logo">
+                                    <img alt="Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur." src="/img/tbmm-logo.png" />
+                                </div>
+
+                                <div id="header-title">
+                                    <span id="header-title-main">
+                                        TÜRKİYE BÜYÜK MİLLET MECLİSİ
+                                    </span>
+                                    <span id="header-title-sub">
+                                        “EGEMENLİK KAYITSIZ ŞARTSIZ MİLLETİNDİR”
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="header-buttons-holder">
+
+                            <a id="header-language-button" target="_self" href="https://global.tbmm.gov.tr">
+                                <span class="header-language-button-span">EN </span>
+                                <img alt="Sayfanın dilini ingilizceye döndürmek için kullanılan icon" src="/img/icon_language.png" />
+                            </a>
+                            <div id="header-search-button-holder">
+                                <div class="search-box">
+                                    <input id="genel-arama-input" target-url="/Arama/Sonuc" type="text" class="search-input" placeholder="Arama">
+                                    <button style="background:none; border:none" class="search-btn" href="#" onclick="GenelArama()">
+                                        <img alt="Sayfa içersinde arama yapmak için kullanılan icon" src="/img/icon_search.png" />
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-container-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="header-menu-bar">
+
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="/">ANASAYFA</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    BAŞKAN
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/ozgecmis">Öz Geçmiş</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/haberler">Haberler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/mesajlar">Mesajlar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/meclis-baskanlari">TBMM Başkanları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/iletisim">İletişim</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    MİLLETVEKİLLERİ
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili-arama/form">Arama</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/liste">Liste</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/milletvekiligi-sona-erenler">Milletvekilliği Sona Erenler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/sandalyedagilimi">Sandalye Dağılımı</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/eposta-liste">E-Posta</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/telefon-liste">Telefon Rehberi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    YASAMA
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yasama/kanun-teklifleri">Kanun Teklifleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/ihtisas-komisyonlari/liste">İhtisas Komisyonları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Yasama/Kanunlar">Kanunlar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Yasama/Kararlar">Kararlar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Yasama/Khklar">Kanun Hükmünde Kararnameler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yasama/cumhurbaskanligi-kararnamaleri">Cumhurbaşkanlığı Kararnameleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yasama/komisyon-raporlari">Komisyon Raporları</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    DENETİM
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/yazili-soru-onergeleri">Yazılı Soru Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/genel-gorusme-onergeleri">Genel Görüşme Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-arastirma-onergeleri">Meclis Araştırması Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-sorusturma-onergeleri">Meclis Soruşturması Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-arastirmasi-komisyonlari">Meclis Araştırması Komisyonları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-sorusturmasi-komisyonlari">Meclis Soruşturması Komisyonları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/gensoru-onergeleri">Geçmiş Dönemler Gensoru Önergeleri</a></li>
+                                                   
+
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    TUTANAKLAR
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                  
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/SonTutanak">Son Tutanak</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/TutanakSorgu">Tutanak Sorgu</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/TutanakMetinleri">Tutanak Metinleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/DoneminTutanakMetinleri?Donem=26&amp;YasamaYili=1">Tutanak Özetleri (Yazılı, Seslendirme, İşaret Dili)</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/GizliOturumTutanaklari">Gizli Oturum Tutanakları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kutuphane-tutanaklara-erisim">1908'den Günümüze Tutanaklar</a></li></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/SecilmisTutanaklar">Seçilmiş Tutanaklar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/KomisyonTutanaklari">Komisyon Tutanakları</a></li>
+                                                 
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    GÜNDEM
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Gundem/GenelKurulGundemi">Genel Kurul Gündemi</a></li>
+                                                <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Gundem/KomisyonGundemleri">Komisyon Gündemleri</a></li>
+                                                <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Gundem/GelenKagitlarListe">Gelen Kağıtlar</a></li>
+                                            </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    KURUMSAL
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-baskanlik-divani">TBMM Başkanlık Divanı</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-genel-sekreter">Genel Sekreter</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/teskilat-semasi">Teşkilat Şeması</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-idari-teskilat">İdari Teşkilat</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-mevzuat">Mevzuat</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/etikkomisyonu-giris">Etik Komisyonu</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/arabuluculuk-komisyonu-iletisim-bilgileri">Arabuluculuk Komisyonu</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-genel-sekreterler">Genel Sekreterlerimiz</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/BilgiEdinme">Bilgi Edinme</a></li>
+  
+                                            </ul>
+                                            </li>
+
+
+
+
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    YAYINLAR
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/Meclis-Baskanlari-Konusmalari">Meclis Başkanları Konuşmaları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar-milletvekilleri-albumu">Milletvekilleri Albümü</a></li>
+                                                    <!-- <li><img src="~/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/yuzuncu-yil-eserleri">100. Yıl Eserler</a></li>  -->
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/PrestijEserler">Prestij Kitaplar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/TbmmYayinlari">TBMM Yayınları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/Brosurler">Broşürler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/Kitapciklar">Kitapçıklar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/MeclisHaberDergisi">Meclis Haber Dergisi</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" target="_blank" href="https://acikerisim.tbmm.gov.tr/">Elektronik Kitaplar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" target="_blank" href="https://tbmm.gov.tr/kutuphane-bakim">İstiklal Mahkemeleri Kataloğu</a></li>
+
+                                                </ul>
+                                            </li>
+
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </nav>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="header-container-mobile" >
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 g-0">
+                    <div id="header-banner">
+
+                        <div id="header-background">
+                            <div id="header-background-image"></div>
+                        </div>
+
+                        <a id="header-link" href="/">
+                            <div id="header-logo">
+                                <img src="/img/tbmm-logo.png" />
+                            </div>
+                        </a>
+
+                        <!--
+                        <a id="header-mobile-menu" href="javascript:void(0)" onclick="MobileMenuGoster()">
+                           </a>
+                           -->
+                            <!--
+                            <img src="~/img/hamburger_menu_icon.png" />
+                            -->
+                            <div id="mobileHamburgerMenu" class="navMobile">
+                                <a href="javascript:void(0)" onclick="MobileMenuGosterKapatYeni()" id="navButton">
+                                    <div></div>
+                                </a>
+                            </div>
+
+
+                     
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    
+        <div id="MobileMenuAlani">
+
+                <div id="mobile-menu-header">
+                 
+               
+                    <!--
+                             <a id="mobile-menu-close-button" href="javascript:void(0)" onclick="MobileMenuKapat()">
+                  
+                                <img src="~/img/menu_close_icon.png" />
+                          
+                            </a>
+                       -->
+
+
+
+                <img alt="Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur." src="/img/tbmm-logo.png" />
+
+
+
+                    <div id="mobile-menu-title-holder">
+                        <span id="header-title-main">
+                            TÜRKİYE BÜYÜK MİLLET MECLİSİ
+                        </span>
+                        <span id="header-title-sub">
+                            “EGEMENLİK KAYITSIZ ŞARTSIZ MİLLETİNDİR”
+                        </span>
+                        <span id="header-title-line"></span>
+                    </div>
+
+                </div>
+
+                <div id="mobile-menu-arama-alani">
+                    <div id="mobile-menu-arama-alani-background">
+                        <form method="Get" action="/Arama/Sonuc">
+                            <input id="mobile-menu-arama-alani-input" name="q" type="text" />
+                            <button id="mobile-menu-arama-alani-submit" type="submit">
+                            <img alt="Sayfa içersinde arama yapmak için kullanılan icon" src="/img/menu_search_icon.png" />
+                            </button>
+                        </form>
+                    </div>
+                    <div id="mobile-menu-eng-button">
+                        <a href="https://global.tbmm.gov.tr/">EN</a>
+                    </div>
+
+                </div>
+
+
+                <div id="mobile-menu-liste-alani">
+
+
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+
+
+                        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">ANASAYFA</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">BAŞKAN</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/baskan/ozgecmis">Öz Geçmiş</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/haberler">Haberler</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/mesajlar">Mesajlar</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/meclis-baskanlari">TBMM Başkanları</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/iletisim">İletişim</a></li>
+                                    </ul>
+                                </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            MİLLETVEKİLLERİ
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/milletvekili-arama/form"> Arama</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/liste"> Liste</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/milletvekiligi-sona-erenler"> Milletvekilliği Sona Erenler</a></li>
+                                            <li><a class="dropdown-item" href="/sandalyedagilimi"> Sandalye Dağılımı</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/eposta-liste"> E-Posta</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/telefon-liste"> Telefon Rehberi</a></li>                                          
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            YASAMA
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/yasama/kanun-teklifleri"> Kanun Teklifleri</a></li>
+                                            <li><a class="dropdown-item" href="/ihtisas-komisyonlari/liste"> İhtisas Komisyonları</a></li>
+                                            <li><a class="dropdown-item" href="/Yasama/Kanunlar">  Kanunlar</a></li>
+                                            <li><a class="dropdown-item" href="/Yasama/Kararlar"> Kararlar</a></li>
+                                            <li><a class="dropdown-item" href="/Yasama/Khklar">  Kanun Hükmünde Kararnameler</a></li>
+                                            <li><a class="dropdown-item" href="/yasama/cumhurbaskanligi-kararnamaleri">  Cumhurbaşkanlığı Kararnameleri</a></li>
+                                            <li><a class="dropdown-item" href="/yasama/komisyon-raporlari"> Komisyon Raporları</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            DENETİM
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/denetim/yazili-soru-onergeleri">Yazılı Soru Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/genel-gorusme-onergeleri">Genel Görüşme Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-arastirma-onergeleri">Meclis Araştırması Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-sorusturma-onergeleri">Meclis Soruşturması Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-arastirmasi-komisyonlari">Meclis Araştırması Komisyonları</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-sorusturmasi-komisyonlari">Meclis Soruşturması Komisyonları</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/gensoru-onergeleri">Geçmiş Dönemler Gensoru Önergeleri</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            TUTANAKLAR
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/Tutanaklar/SonTutanak">Son Tutanak</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/TutanakSorgu">Tutanak Sorgu</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/TutanakMetinleri">Tutanak Metinleri</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/DoneminTutanakMetinleri?Donem=26&amp;YasamaYili=1">Tutanak Özetleri (Yazılı, Seslendirme, İşaret Dili)</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/GizliOturumTutanaklari">Gizli Oturum Tutanakları</a></li>
+                                            <li><a class="dropdown-item" href="/kutuphane-tutanaklara-erisim">1908'den Günümüze Tutanaklar</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/SecilmisTutanaklar">Seçilmiş Tutanaklar</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/KomisyonTutanaklari">Komisyon Tutanakları</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            GÜNDEM
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/Gundem/GenelKurulGundemi">Genel Kurul Gündemi</a></li>
+                                        <li><a class="dropdown-item" href="/Gundem/KomisyonGundemleri">Komisyon Gündemleri</a></li>
+                                        <li><a class="dropdown-item" href="/Gundem/GelenKagitlarListe">Gelen Kağıtlar</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            KURUMSAL
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                            <li><a class="dropdown-item" href="/kurumsal-baskanlik-divani">TBMM Başkanlık Divanı</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-genel-sekreter">Genel Sekreter</a></li>
+                                            <li><a class="dropdown-item" href="/teskilat-semasi">Teşkilat Şeması</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-idari-teskilat">İdari Teşkilat</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-mevzuat">Mevzuat</a></li>
+                                            <li><a class="dropdown-item" href="/etikkomisyonu-giris">Etik Komisyonu</a></li>
+                                            <li><a class="dropdown-item" href="/arabuluculuk-komisyonu-iletisim-bilgileri">Arabuluculuk Komisyonu</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-genel-sekreterler">Genel Sekreterlerimiz</a></li>
+                                            <li><a class="dropdown-item" href="/BilgiEdinme">Bilgi Edinme</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            YAYINLAR
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/yayinlar/Meclis-Baskanlari-Konusmalari">Meclis Başkanları Konuşmaları</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar-milletvekilleri-albumu">Milletvekilleri Albümü</a></li>
+                                            
+                                            <!-- <li><a class="dropdown-item" href="/yayinlar/yuzuncu-yil-eserleri">100. Yıl Eserler</a></li>  -->
+                                            <li><a class="dropdown-item" href="/yayinlar/PrestijEserler">Prestij Kitaplar</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/TbmmYayinlari">TBMM Yayınları</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/Brosurler">Broşürler</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/Kitapciklar">Kitapçıklar</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/MeclisHaberDergisi">Meclis Haber Dergisi</a></li>
+                                            <li><a class="dropdown-item" target="_blank" href="https://acikerisim.tbmm.gov.tr/">Elektronik Kitaplar</a></li>
+                                        <li><a class="dropdown-item" target="_blank" href="https://tbmm.gov.tr/kutuphane-bakim">İstiklal Mahkemeleri Kataloğu</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                    </nav>
+
+
+                </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</header>
+    
+
+<div id="dayanismaKomisyonu" class="page-content">
+    <div class="container g-0">
+
+
+        <div class="row g-0">
+            <div class="col-lg-8 col-sm-12">
+
+
+
+
+
+
+                <div id="content-dinamik-title">
+                    <div id="content-title-type">
+                        <div class="komadi">
+                            MİLLÎ DAYANIŞMA, KARDEŞLİK VE DEMOKRASİ KOMİSYONU
+                        </div>
+                        <div class="kombaslik">
+                            KOMİSYON DUYURULARI
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="blog-content tbmm-div-list" style="margin:85px 15px 0px 0px;">
+
+
+<h2>18 ŞUBAT 2026, ÇARŞAMBA (21. TOPLANTI)</h2><p>Terörsüz Türkiye" hedefi doğrultusunda TBMM'de kurulan Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 18 Şubat 2026 Çarşamba günü TBMM Başkanımız Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Toplantının açılışında konuşan TBMM Başkanımız, uzunca bir süredir büyük bir titizlikle, demokratik olgunlukla hazırlanan rapor taslağının komisyon üyeleri tarafından müzakere edilmesinin ardından Türkiye kamuoyuyla paylaşılacağını belirtmiştir.</p><p>TBMM Başkanımız Kurtulmuş, Komisyon’un, toplumsal huzur ve sükunu zedeleyen terör eylemleri ve şiddet iklimini sona erdirme iradesini rapor haline getirdiğini belirterek, taslak raporun genel başlıkları hakkında bilgi vermiştir.</p><p>Raporun, af mahiyetinde algı üretecek başlıklardan uzak duran, hukuk düzeninin belirlilik ilkesini merkeze alan ve kamu vicdanının hassasiyetini gözeten yaklaşımın ana hatlarını ortaya koyduğunu belirten TBMM Başkanımız, ayrıca raporun, devlet aklıyla millet vicdanını koruyan demokratik iradenin, aynı bütünlük içinde harekete geçtiğinde, toplumsal barışın kalıcı zeminini kurduğuna vurgu yapmıştır.</p><p>Büyük bir titizlikle hazırlanan raporun, bundan sonraki süreçte atılacak adımlara istikamet çizen ve ortak hedefler doğrultusunda yol gösteren kıymetli bir başvuru metni olma özelliğini taşıdığını ifade eden TBMM Başkanımız, raporun bu anlamda bir nihayet değil, bilakis atılan ve atılacak kararlı adımların mihenk taşı olduğunu belirtmiştir.</p><p>TBMM Başkanımız Kurtulmuş, yeni bir anayasa hazırlamanın, Komisyon’un görev alanında olmamakla birlikte, ülkemiz için tehir edilmeden yerine getirilmesi gereken ortak bir ödev ve sorumluluk olarak herkesin önünde durduğunu ifade etmiştir.</p><p>TBMM Başkanımız ayrıca, raporda bahsedilen düzenlemeler ve önerilere ek olarak; siyasi partilerin daha önce çeşitli vesilelerle kamuoyuyla paylaştığı raporlarda ifade ettikleri daha demokratik, sivil, özgürlükçü, katılımcı ve kapsayıcı yeni bir anayasaya ihtiyaç duyulduğunun da altını çizmiştir.</p><p>Terör meselesinde tarihî bir dönemde bulunduğumuzu, bu süreçte, milli iradenin tecelligâhı Gazi Meclis’in üzerine düşen vazifeyi tereddütsüz biçimde üstlendiğini belirten TBMM Başkanımız, Türkiye Büyük Millet Meclisi’nin milletimizin geleceğini ilgilendiren her meselenin meşru çözüm adresi olduğunun altını çizmiştir.</p><p>TBMM Başkanımız, Türkiye’de terör meselesinin kalıcı biçimde çözülmesinin sadece güvenlik boyutuyla sınırlı olmayan, çok boyutlu, çok yönlü, çok katmanlı ve çok taraflı politikaları zorunlu kıldığını, siyasal meşruiyet, toplumsal kabul ve demokratik kapasitenin aynı anda güçlendirilmesini gerektirdiğini kaydetmiştir.</p><p>Komisyon’un 21. Toplantısında, taslak raporun “Sürece ilişkin yasal düzenleme önerileri” başlıklı 6’ncı ve “Demokratikleşme ile ilgili öneriler” başlıklı 7’nci bölümü ile “Sonuç ve değerlendirme” kısmı okunmuş, Komisyon üyeleri taslak rapora ilişkin değerlendirmelerde bulunmuştur.</p><p>Daha sonra yapılan oylamada Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu Raporu, nitelikli çoğunlukla (47 kabul, 2 ret, 1 çekimser) kabul edilmiştir.</p><ul><li><a href="https://x.com/tbmmresmi/status/2024081265771602010?s=48&amp;t=93v__did2Yk0esddR4uzeA">https://x.com/tbmmresmi/status/2024081265771602010?s=48&amp;t=93v__did2Yk0esddR4uzeA</a>&nbsp;</li></ul><h2>24 ARALIK 2025, ÇARŞAMBA (20. TOPLANTI)</h2>
+
+
+<p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 24 Aralık 2025 Çarşamba günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.
+</p>
+
+
+<p>
+Toplantının açılışında, TBMM Başkanımız, Libya Genelkurmay Başkanı Orgeneral Muhammed Ali Al-Haddad ve beraberindeki 4 kişi ile 3 mürettebatı taşıyan özel jetin dün akşam saatlerinde Ankara Esenboğa Havalimanı’ndan kalktıktan kısa bir süre sonra düşmesi dolayısıyla büyük üzüntü yaşadıklarını belirtmiş, dost ve kardeş Libya halkına TBMM ve Türk milleti adına başsağlığı dileğinde bulunmuştur. 
+</p>
+
+<p>
+	5 Ağustos'ta başlayan komisyon çalışmaları süresince büyük bir demokratik olgunluğun sergilendiğini, son derece verimli ve faydalı çalışmaların ortaya konulduğunu belirten TBMM Başkanımız Kurtulmuş, 19 toplantıda 58 oturumun gerçekleştirildiğini ve 86 saat çalışma yapıldığını, 135 kişi dinlenerek 4 bin 139 sayfa tutanak tutulduğunu kaydetmiştir.
+</p>
+
+
+<p>
+	Komisyonun, çalışmalarındaki son eşiğe geldiğini, siyasi partilerin tamamının raporlarını Meclis Başkanlığına sunduğunu ifade eden TBMM Başkanımız, nihai raporun hazırlanmasında farklı fikirleri daha da yakınlaştırabilmek için partiler arası temaslarının artırılmasının yararlı olacağını vurgulamıştır.
+</p>
+
+
+<p>
+	TBMM Başkanımız, ayrıca nihai raporun tamamlanabilmesi için ilave bir süreye ihtiyaç olacağını da belirtmiştir.
+</p>
+
+
+
+<p>
+	Toplantıda, Prof. Dr. Havva Kök Arslan ve Dr. Murat Sevencan tarafından Komisyonun bugüne kadar yaptığı çalışmalar kapsamında “Tutanak İçerik Analiz Rapor Özeti” başlıklı sunum gerçekleştirilmiş, bu sunum üzerine de müzakereler yapılmıştır. Ayrıca toplantıda, üyeler tarafından, komisyonun bugüne kadar yaptığı çalışmalar ile hazırlanacak nihai komisyon raporuna ilişkin değerlendirmeler yapılmıştır.
+
+</p>
+
+
+
+<p>
+Toplantının son bölümünde, Komisyonun Çalışma Usul ve Esasları’nın 11’inci maddesi uyarınca Komisyonun görev süresinin 31.12.2025 tarihinden geçerli olmak üzere iki ay uzatılması oy birliğiyle kabul edilmiştir.
+</p>
+
+
+<ul>
+ <li>
+ 	<a href="https://x.com/TBMMresmi/status/2003775193798566370">
+ 		https://x.com/TBMMresmi/status/2003775193798566370	
+ 	</a>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>4 ARALIK 2025, PERŞEMBE (19. TOPLANTI)</h2>
+
+
+<p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 4 Aralık 2025 Perşembe günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.
+</p>
+
+<p>
+Toplantının açılışında, TBMM Başkanımız, Terörsüz Türkiye sürecinde ve komisyon faaliyetlerinde gelinen aşamaya dikkati çekmiş, şimdiye kadar hassasiyetle ve fedakarlıkla yürüttükleri çalışmaların sonuna gelindiğini, artık nihai raporun hazırlanarak Türkiye Büyük Millet Meclisi Genel Kuruluna sunulacağını belirtmiştir.
+</p>
+
+<p>
+Komisyonda şimdiye kadar; konunun tarafları, bu süreçlerde mağdur olanlar ile farklı toplumsal kesimlerden 134 kişi ve kuruluşun dinlendiğini, 18’inci toplantıda ise 5'te 3 nitelikli çoğunlukla alınan karar doğrultusunda üç siyasi partinin temsilcisi ve komisyon üyesi milletvekillerinin 24 Kasım’da İmralı ziyareti gerçekleştirdiğini ifade eden TBMM Başkanımız Kurtulmuş, komisyondaki dinleme faslını nihayete erdirdiklerini kaydetmiştir.
+</p>
+
+<p>
+TBMM Başkanımız, Terörsüz Türkiye'nin gerçekleştirilmesi konusunda müşterek kanaatlerin paylaşıldığı bir raporun da hazırlanması temennisini dile getirmiştir.
+</p>
+
+<p>
+Söylenen her bir sözün normalden katbekat tesirli olduğu bir döneme girildiğine işaret eden TBMM Başkanımız Kurtulmuş, kimsenin, sürecin bundan sonraki en hassas dönemini, siyasi pozisyonlarının malzemesi haline getirmemesi gerektiğini vurgulamıştır. 
+</p>
+
+<p>
+Basına da sorumluluk düştüğünü hatırlatan TBMM Başkanımız Kurtulmuş, ortaya konulan somut sonuçlara odaklanılması, sürecin magazinleştirilmemesi için olağanüstü bir gayret sarf edilmesi çağrısını yapmıştır.
+</p>
+
+<p>
+TBMM Başkanımız ayrıca, süreç hayırla ve başarıyla sonuçlandığında bir ya da birkaç parti değil, sürece karşı olan partiler de dahil olmak üzere bütün Türkiye’nin kazanacağını vurgulamıştır.
+</p>
+
+<p>
+Komisyonun 19. toplantısının ilk bölümünde, komisyonun bugüne kadar yaptığı çalışmalar ile hazırlanacak nihai komisyon raporuna ilişkin üyelerin değerlendirmeleri yer almıştır. 
+</p>
+
+<p>
+Toplantının ikinci bölümünde ise 24 Kasım 2025 tarihinde İmralı Yüksek Güvenlikli Ceza İnfaz Kurumuna giden komisyon üyesi milletvekillerinin gerçekleştirdiği görüşmeye ilişkin not okunmuş, komisyonun bilgisine sunulmuştur.
+</p>
+
+<p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu’nun bir sonraki toplantısının tarihi ve gündemi bilahare duyurulacaktır.
+</p>
+
+<p>
+
+</p>
+
+
+<ul>
+ <li>
+ 	<a href="https://x.com/tbmmresmi/status/1996611170363429368?s=48&amp;t=93v__did2Yk0esddR4uzeA">
+ 		https://x.com/tbmmresmi/status/1996611170363429368?s=48&amp;t=93v__did2Yk0esddR4uzeA		
+ 	</a>
+</li>
+</ul>
+
+
+
+
+
+
+ <h2>21 KASIM 2025, CUMA (18. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 21 Kasım 2025 Cuma günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Toplantının birinci kısmında komisyon üyeleri bugüne kadar yapılan ve bundan sonra yapılması muhtemel çalışmalar hakkında değerlendirmelerde bulunmuş, toplantının ikinci oturumunun kapalı yapılması oylanarak kabul edilmiştir.</p><p>Bu oturumda, hazırlanacak nihai rapor başta olmak üzere, bundan sonraki aşamalar ele alınmış, Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, üye tam sayının 5’te 3 nitelikli çoğunluğunun oyuyla İmralı Yüksek Güvenlikli Ceza İnfaz Kurumu’na gidilmesini kararlaştırmıştır.</p><p>Ayrıca, İmralı Yüksek Güvenlikli Ceza İnfaz Kurumuna gidecek temsilcilerin parti gruplarınca 22 Kasım 2025 Cumartesi sabahına ve Komisyonun nihai raporunun hazırlanması için teklif ve görüşlerin de 28 Kasım Cuma akşamına kadar TBMM Başkanlığına bildirilmesi istenmiştir.</p><ul>
+ <li><a href="https://x.com/tbmmresmi/status/1991880699717013781?s=48&amp;t=93v__did2Yk0esddR4uzeA">https://x.com/tbmmresmi/status/1991880699717013781?s=48&amp;t=93v__did2Yk0esddR4uzeA</a>&nbsp;</li></ul>
+
+
+
+ <h2>18 KASIM 2025, SALI (17. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 18 Kasım 2025 Salı günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Komisyonun 17’nci toplantısında, TBMM Başkanımız açılış konuşması yapmış, kapalı gerçekleşen bölümde ise İçişleri Bakanı Sayın Ali Yerlikaya, Millî Savunma Bakanı Sayın Yaşar Güler ve Millî İstihbarat Teşkilatı Başkanı Sayın İbrahim Kalın sunum yapmış ve milletvekillerinin soruları yanıtlanmıştır.</p><p>Toplantının açık yapılan kısmında, son dönemde siyasi nezaket ve üslupla bağdaşmayan bazı söylemlere karşı Milli Dayanışma, Kardeşlik ve Demokrasi Komisyonunun ortak açıklama metni okunmuş ve oylanarak ittifakla kabul edilmiştir.</p><p>Komisyon, bugüne kadar gerçekleştirdiği çalışmaları değerlendirmek, İmralı Yüksek Güvenlikli Ceza İnfaz Kurumuna gidilmesi konusu da dahil olmak üzere gelecek süreçte yapacağı çalışmaları görüşmek için 21 Kasım 2025 Cuma günü saat 14.00’te toplanacaktır.</p><ul><li><a href="https://x.com/tbmmresmi/status/1990845609516089458?s=48&amp;t=Q12rEJZFcpToB2dfHavMIw">https://x.com/tbmmresmi/status/1990845609516089458?s=48&amp;t=Q12rEJZFcpToB2dfHavMIw</a>&nbsp;</li></ul>
+
+
+
+ <h2>30 EKİM 2025, PERŞEMBE (16. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 30 Ekim 2025 Perşembe günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.
+</p><p>
+Komisyonun 16’ncı toplantısı, TBMM Başkanımızın açılış konuşmasının ardından yapılan oylama sonucu kapalı gerçekleştirilmiştir.</p><p>
+
+Toplantının ilk bölümünde Dışişleri Bakanı Hakan Fidan, ikinci bölümünde de Adalet Bakanı Yılmaz Tunç bilgilendirmede bulunmuş, milletvekillerinin sorularını yanıtlamıştır.
+</p><p>
+TBMM Başkanımız Kurtulmuş, açılış konuşmasında, 5 Ağustos'tan beri yürütülen komisyon çalışmalarının başarıyla ilerlediğini, toplam 130 kurum, sivil toplum kuruluşu temsilcisi, akademisyen ve kanaat önderinin bilgi, fikir ve önerilerinin alındığını belirtmiştir.
+</p><p>
+Terör örgütünün 26 Ekim’deki açıklamasının sürecin ilerlemesi açısından önemli bir adım olduğunu belirten TBMM Başkanımız, terör örgütünün sahadaki varlığını tasfiye ettiğinin Türkiye’nin güvenlik birimleri tarafından tespit ve tescil edilmesiyle Komisyonun, atılacak adımları belirleyen bir çerçeveyi TBMM Genel Kurulu'na sunacağını vurgulamıştır.</p><p>
+
+Terörsüz Türkiye sürecinin hedefine ulaşmasıyla dünyaya bir “Türkiye modeli”nin sunulacağını ifade eden TBMM Başkanımız Kurtulmuş, bu modelin birçok ülkedeki çatışma çözümlerine ışık tutacağını belirtmiştir.
+</p><p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu 17’nci toplantısının tarihi ve gündemi bilahare duyurulacaktır.</p><ul><li><a href="https://x.com/TBMMresmi/status/1983912410172797334">https://x.com/TBMMresmi/status/1983912410172797334</a><span style="background-color: rgba(255, 255, 255, 0.03)"><span style="font-family: &quot;open sans&quot;; font-size: 15px"> </span></span></li></ul><h2>15 EKİM 2025, ÇARŞAMBA (15. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 15 Ekim 2025 Çarşamba günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Komisyonun 15’inci toplantısında, gençleri ve kadınları temsil eden sivil toplum kuruluşlarının temsilcileri dinlenmiştir.&nbsp;</p><p>Toplantının ilk bölümünde Anadolu Gençlik Derneği (AGD) Genel Başkanı Salih Turhan, Türkiye Teknoloji Takımı Vakfı&nbsp; (T3) Yönetim Kurulu Başkanı Elvan Kuzucu Hıdır, Genç Barış İnşacıları Derneği temsilcileri Baran Yalçınkaya ve Rona Şenol, Türkiye Gençlik Vakfı (TÜGVA) Başkan Yardımcıları Tuba Arslan ve İsmail Hakkı Karagüzel, Gençlik Örgütleri Forumu (GoFor) Genel Koordinatörü Hasan Oğuzhan Aytaç ve Milli Türk Talebe Birliği (MTTB) Genel Başkanı Tahsin Başarı değerlendirmelerde bulunmuştur.</p><p>Toplantının ikinci bölümünde de Hazar Eğitim Kültür ve Dayanışma Derneği Yönetim Kurulu Üyesi Tülin Tezel Öztemel, Barışa İhtiyacım Var Kadın İnisiyatifi temsilcileri Feride Eralp ve Ruşen Seydaoğlu, Türkiye İş Kadınları Derneği (TİKAD) Başkanı Nilüfer Bulut, 29 Ekim Kadınları Derneği (29 EKD) Genel Başkanı Şenal Sarıhan ile Kadın ve Demokrasi Derneği (KADEM) Yönetim Kurulu Başkanı Canan Sarı görüş ve önerilerini belirtmiştir.&nbsp;<br>TBMM Başkanımız Sayın Numan Kurtulmuş, 15’inci toplantı dahil şimdiye kadar 128 sivil toplum kuruluşu temsilcisi ve kanaat önderinin dinlendiğini belirtmiştir.</p><p>Davet edilen her bir ismin kendi fikir ve tekliflerini Komisyonda açıklıkla dile getirdiğini vurgulayan TBMM Başkanımız Kurtulmuş, bu toplantılarda teklif edilen konuların her birinin titizlikle gözden geçirilerek hazırlanacak Komisyon raporunda yer alacağını belirtmiştir.</p><p>TBMM Başkanımız Kurtulmuş, 17 Ekim Cuma günü Diyarbakır’a yapacağı ziyaretine ilişkin de bilgi vermiş, bu ziyaretin Komisyon’un değil, TBMM Başkanı olarak kendisinin; Diyarbakır’daki vatandaşlar, öğrenciler ve sivil toplum kuruluşlarının temsilcileriyle bir araya geleceği programları içerdiğini ifade etmiştir.&nbsp;</p><p>TBMM Başkanımız, kendisinin bu ziyaretine eşlik etmek isteyen Komisyon üyelerini ve TBMM Başkanlık Divanı üyelerini de bir kez daha davet etmiştir.&nbsp;</p><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu 16’ncı toplantısının tarihi ve gündemi bilahare duyurulacaktır.</p><ul><li><a href="https://x.com/tbmmresmi/status/1978498519792021611?s=48&amp;t=93v__did2Yk0esddR4uzeA">https://x.com/tbmmresmi/status/1978498519792021611?s=48&amp;t=93v__did2Yk0esddR4uzeA</a></li></ul><h2>8 EKİM 2025, ÇARŞAMBA (14. TOPLANTI)</h2><p>"Terörsüz Türkiye" hedefi doğrultusunda Türkiye Büyük Millet Meclisinde kurulan Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 8 Ekim 2025 Çarşamba günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Komisyonun 14’üncü toplantısında, Türkiye’nin terörle mücadelesinde büyük bedel ödemiş emekli subaylar, astsubaylar, uzman jandarmalar ve uzman erbaşlar tarafından kurulan derneklerin ve bazı sivil toplum kuruluşlarının temsilcileri dinlenmiştir.</p><p>Toplantının ilk bölümünde Türkiye Emekli Subaylar Derneği (TESUD) Genel Başkanı Erdoğan Karakuş, Türkiye Emekli Astsubaylar Derneği (TEMAD) Genel Başkanı Cahit Koca, Emekli Uzman Jandarmalar Derneği (EMUJAD) Genel Başkanı Şeref Çayırtepe ve Türkiye Emekli Uzman Erbaşlar Derneği (TEMUD) Genel Başkanı Ali Tilkici görüş ve önerilerini ifade etmiştir.</p><p>Toplantının ikinci bölümünde de Medeniyetler Beşiğinde Yakınlarını Kaybeden Aileler ile Yardımlaşma Dayanışma Birlik ve Kültür Derneği (MEBYA-DER) Batman Şube Başkanı Nezahat Toprak Hasan, MEBYA-DER Diyarbakır Şube Başkanı Ramazan Dengiz, Demokrasi ve Birlik Derneği (DEMBİRDER) Genel Başkanı Mehmet Metiner, Kamusal Politika ve Demokrasi Çalışmaları Derneği (PODEM) Yönetim Kurulu Üyesi Oral Çalışlar, Hak İnisiyatifi Derneği Genel Başkanı Fatma Bostan Ünsal ile Hak İnisiyatifi Derneği Genel Başkan Yardımcısı Mehmet Akif Koçer, Barış Vakfı Başkanı Hakan Temel Tahmaz ve Toplumsal Mutabakat Derneği (TMD) Başkanı Mahmut Şimşek değerlendirmelerde bulunmuştur.</p><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu 15’inci toplantısının tarihi ve gündemi bilahare duyurulacaktır.</p><ul><li><a href="https://x.com/TBMMresmi/status/1975959377812107438">https://x.com/TBMMresmi/status/1975959377812107438</a></li></ul><h2>2 EKİM 2025, PERŞEMBE (13. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 2 Ekim 2025 Perşembe günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Komisyonun 13’üncü toplantısında, hukuk alanındaki çalışmalarıyla öne çıkan sivil toplum kuruluşlarının temsilcileriyle akademisyenler dinlenmiştir.</p><p>Toplantının birinci bölümünde Hukukçular Derneği Genel Başkanı Mehmet Melih Gülseren, Özgürlük İçin Hukukçular Derneği (ÖHD) Eş Genel Başkanları Serhat Çakmak ve Ekin Yeter Moray, Sosyal Demokrat Avukatlar Derneği (SODAD) Kurucu Başkanı Kemal Akkurt, Hukuki Araştırmalar Derneği (HUDER) Genel Başkanı Hasan Oymak söz almış, ikinci bölümde ise Prof. Dr. Abdurrahman Eren, Prof. Dr. Fazıl Hüsnü Erdem, Prof. Dr. İlhan Üzülmez, Prof. Dr. Mahmut Koca ile Prof. Dr. Bahri Öztürk görüş ve önerilerini ifade etmiştir.&nbsp;</p><p>TBMM Başkanımız Sayın Numan Kurtulmuş, toplantının açılışında yaptığı konuşmada, dün açılışını yaptıkları TBMM’nin 28. Dönem 4. Yasama Yılı’nın hayırlı olmasını dilemiştir.&nbsp;</p><p>TBMM Başkanımız, Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu’nda en kısa süre içerisinde konuşmaları, dinlemeleri, müzakereleri tamamlayarak, bundan sonraki süreçle ilgili atılacak adımların çerçevesini çizen kapsamlı raporu ortaya koyarak tavsiyelerini Genel Kurula iletebilme temennisini dile getirmiştir.&nbsp;</p><p>İnsani yardım ulaştırmak amacıyla Gazze'ye doğru yol alan Küresel Sumud Filosu'na yönelik İsrail terör devletine ait donanma unsurları tarafından uluslararası sularda, dünyanın gözü önünde gerçekleştirilen ve insanlığı büyük bir infiale sevk eden saldırıyı da gündemine alan TBMM Başkanımız Kurtulmuş, İsrail’in bu saldırısını Türkiye Büyük Millet Meclisi olarak kuvvetli şekilde kınadıklarını belirtmiştir.</p><p>İsrail terör kuvvetlerinin müdahale ettiği yerin, uluslararası sular olduğunu ve uluslararası sularda Birleşmiş Milletler'in bütün kurallarına uygun bir şekilde, her geminin seyrüsefer güvenliğinin bulunduğunu ve buna asla mani olunamayacağını vurgulayan TBMM Başkanımız, yapılanların uluslararası hukuka ve insancıl hukuka aykırı olduğunun altını çizmiştir.</p><p>Bu saldırıyla birlikte Netanyahu ve çetesinin yalnızlaşmaya devam edeceğine de işaret eden TBMM Başkanımız, Sumud'a yapılan bu saldırının, toplumlar nezdinde gerekli cevabı bulacağını ve İsrail'in aleyhine döneceğini belirtmiştir.&nbsp;</p><p>TBMM Başkanımız Kurtulmuş, bir kere daha Sumud Filosu’na başından itibaren destek veren bütün halklara, bütün devletlere, hükümetlere ve bu insani çabaya gönülden destek olan geniş kitlelere insanlık cephesi adına teşekkür etmiştir.</p><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu 14’üncü toplantısı, 8 Ekim 2025 Çarşamba günü gerçekleştirilecek olup, toplantı gündemi bilahare duyurulacaktır.</p><ul><li><a href="https://x.com/TBMMresmi/status/1973732319652364606">https://x.com/TBMMresmi/status/1973732319652364606</a><span style="font-family: &quot;Times New Roman&quot;; font-size: 15px"> </span></li></ul><h2>24 EYLÜL 2025, ÇARŞAMBA (12. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 24 Eylül 2025 Çarşamba günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Komisyonun 12’nci toplantısında Siyaset, Ekonomi ve Toplum Araştırmaları Vakfı (SETA) Dış Politika Araştırmaları Direktörü Prof. Dr. Murat Yeşiltaş, Dicle Toplumsal Araştırmalar Merkezi (DİTAM) Başkanı Mesut Azizoğlu ve DİTAM Başkan Yardımcısı Sedat Yurtdaş, Rawest Araştırma Direktörü Roj Esir Girasun, Kürt Çalışmaları Merkezi (KSC) Başkanı İbrahim Reha Ruhavioğlu, Ekopolitik Kültür, Eğitim ve Araştırma Vakfı (EKEAV) Yönetim Kurulu Üyesi Ahmet Tarık Çelenk, Ankara Enstitüsü Başkanı Doç. Dr. Hatem Ete, Sosyo-Politik Saha Araştırmaları Merkezi (SAHAM) Koordinatörü Yüksel Genç, Türkiye Ekonomi Politikaları Araştırma Vakfı (TEPAV) Kurucu Direktörü Prof. Dr. Güven Sak, Ortadoğu Araştırmaları Merkezi (ORSAM) Başkanı Dr. Kadir Temiz ve GENAR Araştırma Başkanı İhsan Aktaş’ın görüş ve önerileri dinlenmiştir.</p><p>TBMM Başkanımız Sayın Numan Kurtulmuş, toplantının açılışında yaptığı konuşmada, Komisyonun bugüne kadar gerçekleşen toplantılarında 80 kişinin dinlendiğini, yaklaşık 50 saati aşkın bir çalışmanın ortaya konulduğunu ve yaklaşık 830 sayfa tutanak tutulduğunu belirterek, 11 toplantıda fevkalade verimli müzakereler yapıldığını belirtmiştir.</p><p>TBMM Başkanımız, Komisyon çalışmalarının disiplinli ve verimli ilerlediğini vurgulayarak dinlemelerin yavaş yavaş sonuna gelindiğini, önümüzdeki süreçte Komisyonun çalışma raporunun ve yasal düzenleme önerilerinin hazırlanacağını ifade etmiştir.</p><p>TBMM Başkanımız Kurtulmuş, Cumhurbaşkanımız Sayın Recep Tayyip Erdoğan’ın New York’taki Birleşmiş Milletler Genel Kurulu'nda yaptığı iki ayrı konuşmaya da işaret ederek, Filistin davasına ilişkin bu konuşmaların tarihi nitelikte olduğunun altını çizmiş, Türkiye Büyük Millet Meclisi olarak, Cumhurbaşkanımız Sayın Recep Tayyip Erdoğan’ın her iki oturumda ortaya koyduğu tavrı fevkalade önemli bulduklarını ve sonuna kadar desteklediklerini vurgulamıştır.</p><p>TBMM Başkanımız ayrıca Fransa, İngiltere, Avustralya, Kanada gibi ülkelerin de aralarında bulunduğu 10 ülke tarafından Filistin Devleti’nin tanınmasının her türlü takdirin üstünde olduğunu belirterek, Türkiye Büyük Millet Meclisi adına bu kararı alan ülkelerin meclislerini ve hükümetlerini canı yürekten tebrik ettiklerini ifade etmiştir.</p><p>Komisyonun 13’üncü toplantısının programı bilahare duyurulacaktır.</p><ul><li><a href="https://x.com/TBMMresmi/status/1970841731546382605">https://x.com/TBMMresmi/status/1970841731546382605</a></li></ul><h2>18 EYLÜL 2025, PERŞEMBE (11. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 18 Eylül 2025 Perşembe günü, Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.&nbsp;</p><p>Komisyonun 11’inci toplantısının ilk bölümünde; Güneydoğu Sanayici ve İş İnsanları Derneği (GÜNSİAD) Başkanı Şahismail Bedirhanoğlu, Doğu ve Güneydoğu İş Kadınları Derneği (DOGÜNKAD) Başkanı Özlem Külahci Tanaman, Doğu Güneydoğu Sanayici ve İş İnsanları Dernekleri Federasyonu (DOGÜNSİFED) Başkanı Devrim Türk, Anadolu Güvenlik Korucuları ve Şehit Aileleri Konfederasyonu Başkanı Orhan Kandemir ve Kadim Aşiretler Federasyonu Başkanı Rasim Aslan dinlenmiştir.&nbsp;</p><p>Komisyon toplantısının ikinci bölümünde ise; Mezopotamya Göç İzleme ve Araştırma Derneği Başkanı Murat Sarı, Mezopotamya İslami Araştırmalar Federasyonu Temsilcisi Abdullah Sağır, İslami Tebliğ Tedris İlim Hareketi Adamları Derneği (İTTİHAD) Başkan Yardımcısı Mehmet Beşir Şimşek, Medrese Alimleri Vakfı (MEDAV) Başkanı Tayyip Elçi ile Fethullah Ayte dinlenmiştir.&nbsp;</p><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 24 Eylül 2025 Çarşamba günü saat 11:00'de TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda 12. toplantısını gerçekleştirecektir. Bu toplantıda, düşünce kuruluşlarının temsilcileri dinlenecektir.</p><ul><li><a href="https://x.com/TBMMresmi/status/1968641488813711431">https://x.com/TBMMresmi/status/1968641488813711431</a></li></ul><h2>17 EYLÜL 2025, ÇARŞAMBA (10. TOPLANTI)</h2><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 17 Eylül 2025 Çarşamba günü, Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p><p>Komisyonun 10. toplantısında Prof. Dr. Havva Kök Arslan, Prof. Dr. Sevtap Yokuş Veznedaroğlu, Prof. Dr. Ayşe Betül Çelik, Doç. Dr. Çerağ Esra Çuhadar, Üsküp Büyükelçisi Fatih Ulusoy, İnsan Hak ve Hürriyetleri (İHH) İnsani Yardım Vakfı Mütevelli Heyeti Başkanvekili Hüseyin Oruç, Prof. Dr. Deniz Ülke Kaynak, Doç. Dr. Vahap Coşkun ve Prof. Dr. Talha Köse dinlenmiştir.</p><p>TBMM Başkanımız Sayın Numan Kurtulmuş, toplantının açılışında; komisyonun öncelikli vazifesinin, sürecin millet adına denetim ve kontrolünü yapmak, toplumsal mutabakatı tesise yönelik adımlar atmak ve gereken yasal düzenlemelere zemin hazırlamak olduğunu vurgulamıştır.&nbsp;</p><p>TBMM Başkanımız Sayın Kurtulmuş, sürecin Türkiye’ye özgü bir model olduğunu ve komisyonun çalışmalarını tamamlaması akabinde bu modelin dünya literatürüne ve demokrasi tarihine armağan edilecek başarılı bir örnek olacağını ifade etmiştir.</p><p>TBMM Başkanımız konuşmasında, sürece ilişkin farklı kanaatler bulunmasına rağmen “Artık analar ağlamasın, silahlar konuşmasın; bu memlekette huzurun, barışın ve selametin temin edilmesi için herkes üzerine düşen sorumlulukları yerine getirsin” ortak mesajında birleşildiğini belirtmiştir.</p><p>Kurtulmuş, gereken adımların atılabilmesi, Türkiye siyasetinin önünün açılabilmesi ve rahatlayabilmesi için örgütün İmralı’dan yapılan çağrıya uyarak bir an evvel silahlarını tamamen bırakmasının bu sürecin en önemli hususlarından biri olduğunu vurgulamıştır.</p><p>TBMM Başkanımız ayrıca bölgesel ve küresel şartların Türkiye üzerine ağır yükler yüklediğini ve bu ortamda bir an evvel nihai bir barışı temin etmenin ve huzuru ve kardeşliği tesis etmenin zorunlu olduğunu vurgulamıştır.</p><p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 18 Eylül 2025 Perşembe günü (yarın) saat 11:00'de TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda 11. toplantısını gerçekleştirecektir.</p><p>Bu toplantıda, Güneydoğu Sanayici ve İş İnsanları Derneği (GÜNSİAD), Doğu ve Güneydoğu İş Kadınları Derneği (DOGÜNKAD), Doğu Güneydoğu Sanayici ve İş İnsanları Dernekleri Federasyonu (DOGÜNSİFED), Anadolu Güvenlik Korucuları ve Şehit Aileleri Konfederasyonu, Kadim Aşiretler Federasyonu, Mezopotamya Göç İzleme ve Araştırma Derneği, Mezopotamya İslami Araştırmalar Federasyonu, İslami Tebliğ Tedris İlim Hareketi Adamları Derneği (İTTİHAD) ve Medrese Alimleri Vakfı (MEDAV) temsilcileri dinlenecektir.</p><ul><li><a href="https://x.com/TBMMresmi/status/1968362716441067629">https://x.com/TBMMresmi/status/1968362716441067629</a><span class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3" style="border: 0 solid rgba(0, 0, 0, 1); color: rgba(15, 20, 25, 1); display: inline; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-size: 17px; line-height: inherit; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; list-style: none; margin: 0; padding: 0; position: relative; overflow-wrap: break-word; min-width: 0"><span style="color: rgba(0, 0, 0, 1); font-size: 15px"></span></span></li></ul><h2>12 EYLÜL 2025, CUMA (9. TOPLANTI)</h2>
+<p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 12 Eylül 2025 Cuma günü, Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.
+</p><p>
+Komisyonun 9. toplantısında Türkiye Odalar ve Borsalar Birliği (TOBB) Başkanı Rifat Hisarcıklıoğlu, Türkiye Esnaf ve Sanatkarları Konfederasyonu (TESK) Genel Başkanı Bendevi Palandöken, Türkiye İşveren Sendikaları Konfederasyonu (TİSK) Genel Başkanı Özgür Burak Akkol, Türkiye Ziraat Odaları Birliği (TZOB) Genel Başkan Vekili Ahmet Bahadır Sezgin, Müstakil Sanayici ve İşadamları Derneği (MÜSİAD) Genel Başkanı Burhan Özdemir, Türk Sanayicileri ve İşinsanları Derneği (TÜSİAD) Başkan Yardımcısı Bülent Ozan Diren, Anadolu Aslanları İş Adamları Derneği (ASKON) Genel Başkanı Orhan Aydın dinlenmiştir. 
+</p><p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 17 Eylül 2025 Çarşamba ve 18 Eylül 2025 Perşembe günü TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanarak çatışma çözümü alanında çalışmaları olan akademisyenler ve uzmanlar ile Doğu ve Güneydoğu Anadolu bölgesinde faaliyet gösteren bazı sivil toplum kuruluşlarının temsilcilerini dinleyecektir.
+</p>
+
+ <ul><li><a href="https://x.com/tbmmresmi/status/1966495338061033934" target="_blank">https://x.com/tbmmresmi/status/1966495338061033934</a></li></ul>
+
+ <hr>
+
+
+ <h2>11 EYLÜL 2025, PERŞEMBE (8. TOPLANTI)</h2>
+<p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 11 Eylül 2025 Perşembe günü, Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.
+</p><p>
+Komisyonun 8. toplantısında Memur Sendikaları Konfederasyonu (Memur-Sen) Genel Başkanı Ali Yalçın, Türkiye Kamu Çalışanları Sendikaları Konfederasyonu (Türkiye Kamu-Sen) Genel Başkanı Önder Kahveci, Kamu Emekçileri Sendikaları Konfederasyonu (KESK) Eş Genel Başkanları Ayfer Koçak ve Ahmet Karagöz, Türkiye İşçi Sendikaları Konfederasyonu (TÜRK-İŞ) Genel Başkan Yardımcısı Ramazan Ağar, Hak İşçi Sendikaları Konfederasyonu (HAK-İŞ) Genel Başkanı Mahmut Arslan ve Türkiye Devrimci İşçi Sendikaları Konfederasyonu (DİSK) Genel Başkanı Arzu Çerkezoğlu dinlenmiştir. 
+</p><p>
+TBMM Başkanımız Sayın Numan Kurtulmuş, toplantının açılışında, son günlerde Katar, Tunus, Suriye ve Yemen’e saldıran İsrail’in bölgedeki artan saldırgan tutumlarına işaret ederek, Netanyahu ve çetesinin bu saldırganlığının bölge ülkeleri için uyarı sinyallerini de ortaya koyduğunu ve herkesi alarma geçirmesi gerektiğini vurgulamıştır. 
+</p><p>
+İsrail’in bu saldırılarla, “İstediğim ülkede, istediğim insanı öldürebilirim.” mesajını verdiğini, ülkelerin egemenlik haklarını tanımadığını, ABD üslerinin bölge halklarını ve ülkelerini koruyamayacağını gösterdiğini belirten TBMM Başkanımız, Komisyonun yapmış olduğu görevin ne kadar hayati ve ne kadar önemli olduğunun İsrail’in bölgedeki son saldırganlıklarıyla bir kez daha ortaya çıktığının altını çizmiştir. 
+</p><p>
+TBMM Başkanımız Numan Kurtulmuş, İsrail’in bu saldırılarının herkesi güçlü bir uyanışa sevk etmesi gerektiğini belirterek, bu çerçevede Komisyonun yüklendiği görevin son derece önemli ve tarihi bir sorumluluk olduğunu ifade etmiştir. 
+</p><p>
+TBMM Başkanımız, ayrıca bölerek, parçalayarak, terör örgütleri ve vekil güçleri vasıtasıyla Orta Doğu halklarının içine nifak sokarak, bölgeyi karıştırarak yoluna devam eden, teopolitikten kaynaklanan siyonizmin yayılmacı anlayışına ve siyasetine karşı, bölge halklarının birlik ve beraberliğini ortaya koyması gerektiğini vurgulamıştır. 
+</p><p>
+Milli dayanışmayı artırarak, kardeşliğimizi pekiştirerek ortaya koymanın, Türkiye'de demokrasinin standartlarını artırarak herkesin özgür ve güvenlik içerisinde yaşadığı bir ülkeyi kurmanın ve buna destek olmanın Komisyonun başlıca hedefi olduğunu ve bu çerçevede büyük mesafe de alındığını belirten TBMM Başkanımız, en kısa zamanda silahların sustuğu, kardeşliğin hakim olduğu bir Türkiye'yi ve bölgeyi inşa etme temennisini dile getirmiştir.
+</p><p>
+Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 12 Eylül 2025 Cuma günü (yarın) saat 14.00'te TBMM Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda 9. toplantısını gerçekleştirecektir.
+</p><p>
+Bu toplantıda, Türkiye Odalar ve Borsalar Birliği (TOBB), Türkiye Ziraat Odaları Birliği (TZOB), Türkiye Esnaf ve Sanatkarları Konfederasyonu (TESK), Türkiye İşveren Sendikaları Konfederasyonu (TİSK), Türk Sanayicileri ve İşinsanları Derneği (TÜSİAD), Müstakil Sanayici ve İşadamları Derneği (MÜSİAD) temsilcileri dinlenecektir.
+</p>
+
+
+ <ul><li><a href="https://x.com/tbmmresmi/status/1966151302120931710" target="_blank">https://x.com/tbmmresmi/status/1966151302120931710</a></li></ul>
+
+ <hr>
+
+
+ <h2>28 AĞUSTOS 2025, PERŞEMBE (7. TOPLANTI)</h2>
+ <p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 28 Ağustos 2025 Perşembe günü, Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p>
+ <p>Önceki dönem TBMM Başkanlarının katılımıyla gerçekleşen Komisyonun 7’nci toplantısı, iki oturum olarak yapılmış, ilk bölümünde; 20. TBMM Başkanı Sayın Hikmet Çetin, 21. TBMM Başkanı Sayın Ömer İzgi, 22. TBMM Başkanı Sayın Bülent Arınç, 23. TBMM Başkanı Sayın Köksal Toptan ve 24. TBMM Başkanı Sayın Mehmet Ali Şahin söz almış, ikinci bölümde ise 25. TBMM Başkanı Sayın Cemil Çiçek, 26. TBMM Başkanı Sayın İsmet Yılmaz, 27. TBMM Başkanı Sayın İsmail Kahraman, 28. TBMM Başkanı Sayın Binali Yıldırım ve 29. TBMM Başkanı Sayın Mustafa Şentop değerlendirmelerde bulunmuştur.</p>
+ <p>TBMM Başkanımız Sayın Numan Kurtulmuş, yasama faaliyetleri ve siyasi çalışmalar açısından engin tecrübelere sahip, Türkiye’nin temel meselelerini yakinen takip eden ve çözüm üretmek için gayret sarf etmiş olan önceki dönem meclis başkanlarının dinlenmesinin önemine vurgu yapmıştır.</p>
+ <p>Komisyonun gelecek toplantılarında iş dünyasının, memur ve işçi sendikalarının temsilcileri dinlenecektir. Ayrıca çatışma çözümü alanında, dünya örnekleri üzerine çalışmalar yapan akademisyenler ve uzmanlar davet edilerek görüş ve önerileri de alınacaktır.</p>
+ <ul><li><a href="https://x.com/TBMMresmi/status/1961049740876869874" target="_blank">https://x.com/TBMMresmi/status/1961049740876869874</a></li></ul>
+
+ <hr>
+<h2>27 AĞUSTOS 2025, ÇARŞAMBA (6. TOPLANTI)</h2>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 27 Ağustos 2025 Çarşamba günü, Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p>
+<p>TBMM Başkanımız Sayın Numan Kurtulmuş, toplantının açılışında, Terörsüz Türkiye sürecinin başarıyla sürdürülmesi için gerekli bazı yasal altyapı hazırlıklarının gerçekleştirilmesinin kaçınılmaz olduğunu belirtmiş, Türkiye Barolar Birliğinin ve farklı baroların Komisyonda dinlenmesinin önemine işaret ederek, hukuk camiasının süreçteki katkılarının çok değerli ve faydalı olacağını vurgulamıştır.</p>
+<p>Komisyonun, toplumsal rızanın yaygınlaşmasını amaçladığını belirten TBMM Başkanımız, Türkiye'nin kendine özgü bir modelle gerçekleştirmeye çalıştığı Terörsüz Türkiye sürecinin tamamlanması için Komisyon üyeleri ve Komisyondaki siyasi partilere büyük sorumluluklar düştüğünü ifade etmiştir.</p>
+<p>Komisyon toplantısında Türkiye Barolar Birliği (TBB) Başkanı Erinç Sağkan ile Ankara 2 Nolu Barosu Başkanı Gökhan Ağdemir, Bingöl Baro Başkanı Yusuf Ketenalp, Diyarbakır Baro Başkanı Abdulkadir Güleç, Hatay Baro Başkanı Hatay Tut, İstanbul 2 Nolu Barosu Başkanı Yasin Şamlı, Malatya Baro Başkanı Onur Demez, Mardin Baro Başkanı Ahmet Duyan, Mersin Baro Başkanı Gazi Özdemir, Sivas Baro Başkanı Fatih Sevim ve Van Baro Başkanı Sinan Özaraz dinlenmiştir.</p>
+<p>Komisyon toplantısının son oturumunda ayrıca milletvekillerinin değerlendirmeleri dinlenmiştir.</p>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 28 Ağustos 2025 Perşembe günü (yarın) saat 11.00'de Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda 7. toplantısını gerçekleştirecektir.</p>
+<p>Bu toplantıda, önceki dönem Meclis Başkanları Hikmet Çetin, Ömer İzgi, Bülent Arınç, Köksal Toptan, Mehmet Ali Şahin, Cemil Çiçek, İsmet Yılmaz, İsmail Kahraman, Binali Yıldırım, Mustafa Şentop’un sürece ilişkin görüş, öneri ve değerlendirmeleri alınacaktır.</p>
+<ul><li><a href="https://x.com/TBMMresmi/status/1960730697364066631" target="_blank">https://x.com/TBMMresmi/status/1960730697364066631</a></li></ul>
+
+<hr>
+
+<h2>20 AĞUSTOS 2025, ÇARŞAMBA (5. TOPLANTI)</h2>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 20 Ağustos 2025 Çarşamba günü, Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p>
+<p>TBMM Başkanımız Sayın Numan Kurtulmuş, toplantının açılışında, 40 yılı aşkın bir süredir yaşadığımız acıların herkesin ortak acısı olduğunu belirtmiş, bu acıların bir daha yaşanmaması için siyaset kurumunun kardeşlik ve demokrasi içerisinde hareket ederek, gerekli tedbirleri alması gerektiğinin altını çizmiştir.</p>
+<p>TBMM Başkanımız Kurtulmuş, Terörsüz Türkiye sürecini 86 milyonun ortak faydasına olacak şekilde bir an evvel sonuçlandırmak için çalışanlar ve bunun için gayret sarf edenler olduğu gibi, bu süreci zehirlemek isteyen sayıca çok az bazı grupların da bulunduğuna dikkati çekmiştir.</p>
+<p>TBMM Başkanımız, Komisyonda hiçbir şekilde konuşulmamış, Komisyonun kurulmasından önceki süreçlerde dahi gündeme gelmemiş, toplantıların hiçbir anında Komisyon üyeleri tarafından paylaşılmamış sözleri hem de gizli oturumlarda konuşulmuş gibi ortaya koymanın en hafif tabiriyle açık bir provokatörlük olduğunu vurgulamıştır.</p>
+<p>TBMM Başkanımız Kurtulmuş, komisyon çalışmalarını sekteye uğratabilecek çabalara karşı komisyondaki 51 üyenin ortak bir kararlılık içerisinde olduğunu belirtmiştir.</p>
+<p>Komisyon toplantısında Cumartesi Anneleri ve Barış Anneleri ile İnsan Hakları Derneği, İnsan Hakları ve Mazlumlar İçin Dayanışma Derneği, Tahir Elçi İnsan Hakları Vakfı, İnsan Hak ve Hürriyetleri ve İnsani Yardım Vakfı temsilcileri dinlenmiştir.</p>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 27 Ağustos 2025 Çarşamba günü saat 11.00'de Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda 6. toplantısını gerçekleştirecektir.</p>
+<p>Bu toplantıda, önceki dönem Meclis Başkanları Hikmet Çetin, Ömer İzgi, Bülent Arınç, Köksal Toptan, Mehmet Ali Şahin, Cemil Çiçek, İsmet Yılmaz, İsmail Kahraman, Binali Yıldırım, Mustafa Şentop’un sürece ilişkin görüş, öneri ve değerlendirmeleri alınacaktır.</p>
+<p>Ayrıca Komisyonun 28 Ağustos Perşembe günü saat 14.00'te Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda gerçekleşecek 7. toplantısında Türkiye Barolar Birliği dinlenecektir.</p>
+<ul><li><a href="https://x.com/TBMMresmi/status/1958191402140991624" target="_blank">https://x.com/TBMMresmi/status/1958191402140991624</a></li></ul>
+
+<hr>
+
+<h2>19 AĞUSTOS 2025, SALI (4. TOPLANTI)</h2>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 19 Ağustos 2025 Salı günü Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p>
+<p>TBMM Başkanımız Sayın Numan Kurtulmuş, toplantının açılışında; Türkiye Büyük Millet Meclisinin hiçbir pazarlığın içerisinde olmadan, hiçbir pazarlığın konusu olmadan bu sürecin bir an evvel bitirilmesi ve bu ülkede ezeli-ebedi kardeşliğimizin yeniden tesis edilmesi için üzerine düşen sorumluluğu yerine getireceğini vurgulamış, gelinen sürecin hiçbir noktasında da herhangi bir pazarlığın olmadığını, bundan sonra da olmayacağını belirtmiştir.</p>
+<p>Terörsüz Türkiye hedefi doğrultusunda başlatılan bu sürecin menziline bir an evvel ulaşmasını arzuladıklarını söyleyen TBMM Başkanımız, bu süreci zehirlemeye kalkanların olabileceğine dikkat çekerek ülkemizde millî birliğin güçlendirilerek yola başarıyla devam etmenin önemini ifade etmiştir.</p>
+<p>Komisyon toplantısına davetle katılan Aile ve Sosyal Hizmetler Bakanı Sayın Mahinur Özdemir Göktaş, şehit aileleri ve gazilerimiz için yapılan hizmetler ile verilen destekleri içeren detaylı bir sunum yapmıştır.</p>
+<p>Komisyonda ayrıca, Türkiye Harp Malulü Gaziler, Şehit Dul ve Yetimleri Derneği, Türkiye Gaziler ve Şehit Aileleri Vakfı, Türkiye Şehit Yakınları ve Gaziler Dayanışma Vakfı, Emniyet Teşkilatı Vazife Malulü, Muharip Gaziler Derneği, Şehit Aileleri Vakfı temsilcileri ve Diyarbakır Anneleri dinlenmiştir.</p>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, yarın (20 Ağustos 2025 Çarşamba) saat 14.00’te Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda 5. Toplantısını gerçekleştirecektir.</p>
+<ul><li><a href="https://x.com/TBMMresmi/status/1957818185199301038" target="_blank">https://x.com/TBMMresmi/status/1957818185199301038</a></li></ul>
+
+<hr>
+
+<h2>12 AĞUSTOS 2025, SALI (3. TOPLANTI)</h2>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 12 Ağustos 2025 tarihinde Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p>
+<p>Komisyon çalışmalarına katılmama yönündeki kararını TBMM Başkanlığı’na bildiren İYİ Parti’ye ait üç üyelik, AK Parti, CHP ve DEM Parti’ye verilmiş, bu kapsamda isimleri bildirilen AK Parti Denizli Milletvekili Cahit Özkan, CHP Ankara Milletvekili Umut Akdoğan ve DEM Parti İstanbul Milletvekili Celal Fırat Komisyonda yeni üye olarak yer almıştır. Böylelikle Komisyon, siyasi parti gruplarının TBMM’deki milletvekili sayıları göz önüne alınarak, mümkün olan en geniş katılım ve adil temsil ilkesi gereği belirlenen 51 üyesiyle toplanmıştır.</p>
+<p>TBMM Başkanımız Sayın Numan Kurtulmuş’un açılış konuşmasıyla başlayan toplantıda, Komisyon üyesi 38 milletvekili söz alarak, terörün Türkiye'nin gündeminden tamamen çıkartılması amacıyla toplumsal duyarlılığın artırılması, millî birlik, kardeşlik, özgürlük, demokrasi ve adalet başta olmak üzere çeşitli konularda görüş ve tekliflerini dile getirmişlerdir.</p>
+<p>Bundan sonraki çalışmalarda; konunun toplumsal, yasal ve ekonomik yönleriyle ilgili kapsamlı değerlendirmelerde bulunmak üzere kanaat önderleri, çeşitli meslek örgütleri ile sivil toplum kuruluşlarının temsilcileri ve akademisyenler Komisyona davet edilecektir.</p>
+<p>Komisyonun gelecek toplantısına Aile ve Sosyal Hizmetler Bakanı Sayın Mahinur Özdemir Göktaş ile şehit yakınları ve gaziler davet edilmiştir.</p>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, dördüncü toplantısını 19 Ağustos 2025 Salı günü, saat 14.00'te TBMM Tören Salonu’nda gerçekleştirecektir.</p>
+<ul><li><a href="https://x.com/TBMMresmi/status/1955339167673520207" target="_blank">https://x.com/TBMMresmi/status/1955339167673520207</a></li></ul>
+
+<hr>
+
+<h2>8 AĞUSTOS 2025, CUMA (2. TOPLANTI)</h2>
+<p>Terörsüz Türkiye hedefi doğrultusunda çalışmalarına başlayan Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu, 8 Ağustos 2025 tarihinde Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmıştır.</p>
+<p>TBMM Başkanımız Sayın Numan Kurtulmuş’un açılış konuşmasıyla başlayan Komisyonun ikinci toplantısının tam kapalılık ilkesi çerçevesinde gerçekleştirilmesi için oylama yapılmış ve oy birliğiyle Komisyon toplantısının kapalı gerçekleştirilmesi kararlaştırılmıştır.</p>
+<p>TBMM Başkanımız Sayın Numan Kurtulmuş, kapalı toplantının usul ve esaslarını Komisyona aktarmış, kapalı toplantının tutanaklarının gizli olması konusunda Anayasa ve İçtüzük’ün ilgili hükümlerini ve genel uygulamayı hatırlatmıştır. Daha sonra Komisyonda kapalı toplantı düzenine geçilmiştir.</p>
+<p>Toplantıya davetle katılan İçişleri Bakanı Sayın Ali Yerlikaya, Millî Savunma Bakanı Sayın Yaşar Güler ve Millî İstihbarat Teşkilatı Başkanı Sayın İbrahim Kalın, güvenlik, savunma ve istihbarat alanlarında Komisyona detaylı sunum yapmış, Komisyon üyelerinden kendilerine gelen soruları yanıtlamıştır.</p>
+<p>Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu; üyelerinin, komisyon çalışmalarına yönelik önerilerini almak üzere üçüncü toplantısını, 12 Ağustos Salı günü saat 14.00’te TBMM Tören Salonu’nda gerçekleştirecektir.</p>
+<ul><li><a href="https://x.com/TBMMresmi/status/1953859632524312656" target="_blank">https://x.com/TBMMresmi/status/1953859632524312656</a></li></ul>
+
+<hr>
+
+<h2>5 AĞUSTOS 2025, SALI (1. TOPLANTI)</h2>
+<p>MİLLÎ DAYANIŞMA, KARDEŞLİK VE DEMOKRASİ KOMİSYONU'NUN ÇALIŞMA USUL VE ESASLARI OY BİRLİĞİYLE KABUL EDİLMİŞTİR</p>
+<p>Terörsüz Türkiye hedefi doğrultusunda, toplumsal bütünleşmenin güçlendirilmesi, milli dayanışma ve kardeşliğin pekiştirilmesi, özgürlük, demokrasi ve hukuk devleti alanlarında yapılacak çalışmaların değerlendirilmesi amacıyla Gazi Meclisimizin çatısı altında oluşturulan komisyon, 5 Ağustos 2025 tarihinde Türkiye Büyük Millet Meclisi Başkanımız Sayın Numan Kurtulmuş’un başkanlığında TBMM Tören Salonu’nda toplanmış ve ilk toplantısını gerçekleştirmiştir.</p>
+<p>Komisyon, ülkemizin tarihi bir fırsat yakaladığı bu dönemde, yarınlarımızı şekillendirecek önemli bir sürecin takipçisi olacak, barışı kalıcılaştıracaktır. Ayrıca, ihtiyaç duyulan kanuni düzenlemeleri tespit edip kanun teklifi taslaklarına yönelik çalışmalar yapacak, kamuoyunun mevcut sürece dair bilgilendirilmesini sağlayacaktır.</p>
+<p>Toplantıda, siyasi parti grupları ile grubu bulunmayan siyasi partilerin temsilcileri sürece ve komisyonun önemine ilişkin görüşlerini paylaşmıştır.</p>
+<p>Bu ilk toplantıda komisyonun çalışma usul ve esasları oy birliğiyle kabul edilmiştir.</p>
+<p>Komisyonun adı, “Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu” olarak belirlenmiştir.</p>
+<p>Komisyon bir sonraki toplantısını, 8 Ağustos 2025 Cuma günü saat 14.00’te TBMM Tören Salonu’nda gerçekleştirecektir.</p>
+<p>Söz konusu toplantıya, İçişleri Bakanı Sayın Ali Yerlikaya, Millî Savunma Bakanı Sayın Yaşar Güler ve Millî İstihbarat Teşkilatı Başkanı Sayın İbrahim Kalın kurumları adına yürüttükleri çalışmalar ve güncel gelişmeler hakkında komisyonu bilgilendirmek üzere davet edilmişlerdir.</p>
+<p>Komisyon çalışmalarına ilişkin bilgilendirmeler, yalnızca Türkiye Büyük Millet Meclisi Başkanlığı tarafından yapılacaktır.</p>
+<ul><li><a href="https://x.com/TBMMresmi/status/1952778652493508997" target="_blank">https://x.com/TBMMresmi/status/1952778652493508997</a></li></ul>                </div>
+
+
+
+            </div>
+
+
+            <div class="col-md-4">
+<link href="/multi-level-accordion/style.css" rel="stylesheet" />
+
+<div id="anasayfa-social-area">
+        <a id="anasayfa-social-link-tbmm-tv" href="https://tv.tbmm.gov.tr/">
+        <div>
+            <span id="tbmm-tv-img-text-holder">
+               <!-- <img src="~/images/yeni_tasarim/icon_tbmm_tv.png" /> --> TBMM TV
+               
+            </span>
+        </div>
+    </a>
+    <a target="_blank" href="https://www.facebook.com/TBMMresmi/">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_facebook.png">
+        </div>
+
+    </a>
+
+    <a target="_blank" href="https://twitter.com/TBMMresmi">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_twitter.png">
+
+        </div>
+    </a>
+
+
+    <a id="anasayfa-social-link-instagram" target="_blank" href="https://www.instagram.com/tbmmresmi/">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_instagram.png">
+        </div>
+    </a>
+
+    <a target="_blank" id="anasayfa-social-link-youtube" href="https://www.youtube.com/c/tbmm">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_youtube.png">
+        </div>
+    </a>
+</div>
+<div id="yeni_tasarim_sag_menu">
+
+
+
+
+
+    <div class="menu">
+        <ul class="items">
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/">HAKKINDA</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/KomisyonUyeleri">KOMİSYON ÜYELERİ</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Calisma-Usul-ve-Esaslari">ÇALIŞMA USUL VE ESASLARI</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Toplanti-Gundemleri">TOPLANTI GÜNDEMLERİ</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Toplanti-Tutanaklari">TOPLANTI TUTANAKLARI</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Komisyondan-Haberler">KOMİSYONDAN HABERLER</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Komisyon-Duyurulari">KOMİSYON DUYURULARI</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Siyasi-Partilerin-Raporlari">SİYASİ PARTİLERİN RAPORLARI</a></li>
+            <li class="list"><a href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Imrali-Yuksek-Guvenlikli-Cezaevi-Gorusme-Tutanagi">İMRALI YÜKSEK GÜVENLİKLİ CEZAEVİ<br />GÖRÜŞME TUTANAĞI</a></li>
+        </ul>
+    </div>
+
+
+    <div style="width:100%; margin:10px 0px;  float:left; display:block; text-align:center; padding:30px; background:#7f0000">
+        <a style="font-weight:bold; color:white; font-size:22px;" href="/Milli-Dayanisma-Kardeslik-Demokrasi-Komisyonu/Komisyon-Raporu">KOMİSYON RAPORU</a>
+    </div>
+
+
+ 
+
+
+   
+</div> 
+
+<script src="/multi-level-accordion/script.js"></script>            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+
+
+<div id="footer-container">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="footer-image-alani">
+                    <img alt="Sayfanın alt kısmında bulunan Türkiye Büyük Millet Meclisinin siluetinin bulunduğu resim" src="/images/yeni_tasarim/tbbm_siluet_footer.png" />
+                    <br />
+                    <span>
+                        EGEMENLİK KAYITSIZ ŞARTSIZ MİLLETİNDİR
+                    </span>
+                </div>
+
+                <div id="footer-linkler-alani">
+                    <div id="fl-baskanlik">
+                        <span>
+                            <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('tbmmBaskanligi')">                        
+                                TBMM Başkanlığı    
+                                 <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="tbmmBaskanligi">
+                            <li><a href="http://tbmm.gov.tr/baskan/ozgecmis"><i class="icon-caret-right"></i>TBMM Başkanı</a></li>
+                            <li><a href="/kurumsal-baskanlik-divani"><i class="icon-caret-right"></i>Başkanlık Divanı</a></li>                        
+                            <li><a href="/turkiye-buyuk-millet-meclisi-baskanvekilleri"><i class="icon-caret-right"></i>Başkanvekilleri</a></li>
+                            <li><a href="/turkiye-buyuk-millet-meclisi-katip-uyeleri"><i class="icon-caret-right"></i>Katip Üyeler</a></li>
+                            <li><a href="/turkiye-buyuk-millet-meclisi-idare-amirleri"><i class="icon-caret-right"></i>İdare Amirleri</a></li>
+                        
+                        </ul>
+                    </div>
+
+                    <div id="fl-idari-teskilat">
+                        <span>
+                            <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('idariTeskilat')">       
+                                İdari Teşkilat
+                                <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="idariTeskilat">
+                            <li><a href="/kurumsal-genel-sekreter"><i class="icon-caret-right"></i>Genel Sekreter</a></li>
+                            <li><a href="/etikkomisyonu-giris"><i class="icon-caret-right"></i>Etik Komisyonu</a></li>
+                            <li><a href="/kurumsal-tarihce"><i class="icon-caret-right"></i>Tarihçe</a></li>
+                            <li><a href="/kurumsal-mevzuat"><i class="icon-caret-right"></i>Mevzuat</a></li>
+                            <li><a href="/teskilat-semasi"><i class="icon-caret-right"></i>Teşkilat Şeması</a></li>
+                            <li><a href="http://tbmm.gov.tr/kurumsal/telefonrehberi"><i class="icon-caret-right"></i>Telefon Rehberi</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div id="fl-tbmm-ziyaret">
+                        <span>
+                             <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('ziyaretEdin')">     
+                                    TBMM'yi Ziyaret Edin
+                                     <img src="/img/footer_asaga_ok.png" />
+                              </a>
+                        </span>
+                        <ul id="ziyaretEdin">
+                            <li><a href="/tbmm-basin-yayin-ve-halkla-iliskiler-baskanligi-rehberlik-hizmetleri"><i class="icon-caret-right"></i>Randevulu Gezi</a></li>
+                            <li><a href="https://www.turkiye.gov.tr/tbmm-randevu"><i class="icon-caret-right"></i>E-Devlet Üzerinden Randevu</a></li>
+                            <li><a href="/halk-gunu"><i class="icon-caret-right"></i>Halk Günü</a></li>
+                            <li><a href="https://kurtulussavasimuzesi.tbmm.gov.tr/" target="_blank"><i class="icon-caret-right"></i>Kurtuluş Savaşı Müzesi</a></li>
+                            <li><a href="http://tbmm.gov.tr/Sayfa/SanalTur"><i class="icon-caret-right"></i>Sanal Tur</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="fl-engelsiz-meclis">
+                        <span>
+                             <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('engelsizMeclis')">     
+                            Engelsiz Meclis
+                             <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="engelsizMeclis">
+                            <li><a href="https://www.youtube.com/playlist?list=PLptIGXuA0xRRhzDoKVTM-8jrYVKxexL22"><i class="icon-caret-right"></i>İşitme Engelliler</a></li>
+                            <li><a href="http://tbmm.gov.tr/Sayfa/EngelsizMeclis"><i class="icon-caret-right"></i>Görme Engelliler</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div id="fl-aydinlatma">
+                        <span>
+                            <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('aydinlatma')">
+                                Hızlı Erişim
+                                <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="aydinlatma">
+                            <li><a target="_blank" href="https://www.tbmm.gov.tr/Files/CerezAydinlatmaMetni.pdf"><i class="icon-caret-right"></i>Çerez Politikası</a></li>
+                            <li><a target="_blank" href="https://www.tbmm.gov.tr/Files/KisiselVerilerAydinlatmaMetni.pdf"><i class="icon-caret-right"></i>Aydınlatma Metni</a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div id="footer-end-line">
+                    <div id="footer-tbmm-logo-holder">
+                        <img alt="Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur." src="/img/tbmm-logo.png">
+                    </div>
+
+                    <div id="footer-tbmm-text-holder">
+                        <div id="footer-tbmm-text-holder-tbmm">
+                            Türkiye Büyük Millet Meclisi
+                        </div>
+                        <div id="footer-tbmm-text-holder-kurumsal">
+                            Kurumsal İnternet Sayfası
+                        </div>
+                    </div>
+
+
+
+                    <div id="footer-adres-area">
+                        <span id="footer-bize-ulasin-title">
+                            <a style="color:white" href="https://www.tbmm.gov.tr/Sayfa/Iletisim">
+                                BİZE ULAŞIN
+                            </a>
+                        </span>
+                        <address>
+                        <div><span  id="footer_home_icon">
+                                    <img alt="Tbmm adresi iconu" src="/images/yeni_tasarim/tbmm_home_icon.png" />
+                                </span>Atatürk Bulvarı TBMM 06543  Bakanlıklar - ANKARA
+                            </div>
+                        <div><span>
+                                    <img alt="Tbmm telefonu iconu" src="/images/yeni_tasarim/tbmm_tel_icon.png" />
+                                </span><a href="tel:03124205000">0 (312) 420 50 00</a>
+                            </div>
+                            <div><span id="footer_email_icon">
+                                    <img alt="Eposta adresi iconu" src="/images/yeni_tasarim/tbmm_email_icon.png" />
+                                </span>
+                                <a href="mailto:ozelkalem@tbmm.gov.tr">ozelkalem@tbmm.gov.tr</a></div>
+                        </address>
+
+                    </div>
+
+
+
+                    <div id="footer-social-area">
+
+                        <a target="_blank" href="https://www.facebook.com/TBMMresmi/">
+                            <div>
+                                <img alt="Facebook iconu" style="width:19%;" src="/images/yeni_tasarim/Icon_facebook.png">
+                            </div>
+
+                        </a>
+
+                        <a target="_blank" href="https://twitter.com/TBMMresmi">
+                            <div>
+                                <img alt="Twitter iconu" src="/images/yeni_tasarim/Icon_twitter.png">
+
+                            </div>
+                        </a>
+
+
+                        <a  target="_blank" href="https://www.instagram.com/tbmmresmi/">
+                            <div>
+                                <img alt="Instagram iconu" src="/images/yeni_tasarim/Icon_instagram.png">
+                            </div>
+                        </a>
+
+
+                        <a target="_blank" id="anasayfa-social-link-youtube" href="https://www.youtube.com/c/tbmm">
+                            <div>
+                                <img alt="Youtube iconu" src="/images/yeni_tasarim/Icon_youtube.png">
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    
+
+<script src="/js/bootstrap_520/bootstrap.bundle.min.js"></script>
+
+<script src="/js/jquery-3.6.0.min.js"></script> 
+
+<script src="/js/tbmm-yeni-tasarim.js"></script>
+    
+
+</body>
+</html>
+
+
