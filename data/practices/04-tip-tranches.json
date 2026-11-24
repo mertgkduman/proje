@@ -4,8 +4,8 @@
   "base_release": "f67ca0a35e634035bf3aa83a46571f50",
   "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
   "period_start": "2017-11-07",
-  "status": "pending",
-  "note": "Kuyruk oluşturuldu; kaynak bölümleri ve hücreler araştırılmış veya kapanmış değildir.",
+  "status": "research_in_progress",
+  "note": "Kaynak gövdeleri, olaylar ve yalıtılmış önizlemeler konu kuyruğuna bağlanıyor. Kapanış bekleyen 610 hücre var.",
   "tranches": [
     {
       "tranche_id": "scope-001",
@@ -930,19 +930,36 @@
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-22T06:29:16.025572+00:00",
-        "note": "Program bağımsız ve tarafsız yargı, savunmanın bağımsızlığı ve adalete erişimde ekonomik engellerin kaldırılmasını savunur. Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.",
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62615305",
+        "note": "25 Ağustos TİP çağrısı ve 25 Ekim AYM 2023/53898 kararı doğrulandı. Fiilî tahliye ve sonraki işlemler ayrı.",
         "source_ids": [
-          "0203-tip-program-v1"
+          "0405-tip-july-october-2023-court-statement-v1"
         ],
         "urls": [
-          "https://tip.org.tr/parti-programi"
+          "https://www.tip.org.tr/parti-aciklamalari/can-atalay-derhal-tahliye-edilmelidir"
         ],
         "source_passage_ids": [
-          "0304-tip-program-adalet-p1"
-        ],
-        "status": "partial"
-      }
+          "0405-tip-july-october-2023-court-call-p"
+        ]
+      },
+      "research_history": [
+        {
+          "recorded_at": "2026-11-22T06:29:16.025572+00:00",
+          "note": "Program bağımsız ve tarafsız yargı, savunmanın bağımsızlığı ve adalete erişimde ekonomik engellerin kaldırılmasını savunur. Bu kaynak tek başına dönem boyu bütün söylemleri veya tarihsel sürümü belirlemez; TBMM, parti, haber ve diğer uçlar açıktır.",
+          "source_ids": [
+            "0203-tip-program-v1"
+          ],
+          "urls": [
+            "https://tip.org.tr/parti-programi"
+          ],
+          "source_passage_ids": [
+            "0304-tip-program-adalet-p1"
+          ],
+          "status": "partial"
+        }
+      ]
     },
     {
       "tranche_id": "scope-028",
@@ -963,7 +980,28 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62615305",
+        "note": "25 Ağustos TİP çağrısı ve 25 Ekim AYM 2023/53898 kararı doğrulandı. Fiilî tahliye ve sonraki işlemler ayrı.",
+        "source_ids": [
+          "0405-tip-atalay-2023-aym-first-v1"
+        ],
+        "urls": [
+          "https://www.anayasa.gov.tr/media/9210/2023_cilt_2.pdf"
+        ],
+        "source_passage_ids": [
+          "0405-tip-july-october-2023-court-date-p",
+          "0405-tip-july-october-2023-court-number-p",
+          "0405-tip-july-october-2023-court-ministry-p",
+          "0405-tip-july-october-2023-court-rights-p",
+          "0405-tip-july-october-2023-court-liberty-p",
+          "0405-tip-july-october-2023-court-order-p",
+          "0405-tip-july-october-2023-court-referral-p"
+        ]
+      }
     },
     {
       "tranche_id": "scope-029",
@@ -2471,7 +2509,23 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62615305",
+        "note": "7 Temmuz TİP açıklaması ile 7456’nın net borç kullanım hükmü doğrulandı. Fiilî borç tutarı ve kişisel oy açık.",
+        "source_ids": [
+          "0405-tip-july-october-2023-debt-statement-v1"
+        ],
+        "urls": [
+          "https://www.tip.org.tr/parti-aciklamalari/saray-harciyor-halk-oduyor"
+        ],
+        "source_passage_ids": [
+          "0405-tip-july-october-2023-debt-call-p",
+          "0405-tip-july-october-2023-debt-criticism-p"
+        ]
+      }
     },
     {
       "tranche_id": "scope-084",
@@ -2487,7 +2541,34 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62615305",
+        "note": "7 Temmuz TİP açıklaması ile 7456’nın net borç kullanım hükmü doğrulandı. Fiilî borç tutarı ve kişisel oy açık.",
+        "source_ids": [
+          "0405-tip-july-october-2023-floor-v1",
+          "0405-tip-july-october-2023-law-v1",
+          "0405-tip-july-october-2023-proposal-v1",
+          "0405-tip-july-october-2023-registry-v1"
+        ],
+        "urls": [
+          "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/1/15/Tam/7bcaf374-6fed-4166-819c-352270d441ba.html",
+          "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y6/KanunMetni/307c8ce5-3d8b-4d86-8439-abae345e7626.htm",
+          "https://tbmm.gov.tr/Yasama/KanunTeklifi/4d7f7d1a-2505-4d34-86b5-01892575798f",
+          "https://tbmm.gov.tr/Yasama/Kanun/4d7f7d1a-2505-4d34-86b5-01892575798f"
+        ],
+        "source_passage_ids": [
+          "0405-tip-july-october-2023-debt-file-p",
+          "0405-tip-july-october-2023-debt-file-day-p",
+          "0405-tip-july-october-2023-debt-vote-p",
+          "0405-tip-july-october-2023-debt-adoption-p",
+          "0405-tip-july-october-2023-debt-publication-p",
+          "0405-tip-july-october-2023-debt-issue-p",
+          "0405-tip-july-october-2023-debt-text-p"
+        ]
+      }
     },
     {
       "tranche_id": "scope-085",
@@ -4225,16 +4306,19 @@
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-24T17:22:19+00:00",
-        "note": "15 Mayıs duyurusu ve 4 Temmuz İstanbul toplantısı doğrulandı. 25 Temmuz nihai deklarasyonu ve Ankara NATO zirvesi ayrı. Diğer dönemler ve hedeflerin uygulanması açık.",
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62617736",
+        "note": "4 Nisan parti yayımı ve Finlandiya’nın üyeliği doğrulandı. 30 Mart TBMM kabulü ayrı. Kişisel katılmama cetveli okuma makbuzunda.",
         "source_ids": [
-          "0405-tip-peace-summit-2026-announcement-v1"
+          "0405-tip-election-finland-2023-nato-statement-v1"
         ],
         "urls": [
-          "https://tip.org.tr/partiden-haberler/uluslararasi-anti-emperyalist-baris-zirvesi"
+          "https://www.tip.org.tr/parti-aciklamalari/silahlanma-yarisina-askeri-paktlara-hayir-nato-lagvedilmelidir"
         ],
-        "status": "partial",
-        "preview_job": "62600646"
+        "source_passage_ids": [
+          "0405-tip-election-finland-2023-nato-call-p"
+        ]
       },
       "research_history": [
         {
@@ -4250,6 +4334,18 @@
             "0304-tip-program-nato-p1"
           ],
           "status": "partial"
+        },
+        {
+          "recorded_at": "2026-11-24T17:22:19+00:00",
+          "note": "15 Mayıs duyurusu ve 4 Temmuz İstanbul toplantısı doğrulandı. 25 Temmuz nihai deklarasyonu ve Ankara NATO zirvesi ayrı. Diğer dönemler ve hedeflerin uygulanması açık.",
+          "source_ids": [
+            "0405-tip-peace-summit-2026-announcement-v1"
+          ],
+          "urls": [
+            "https://tip.org.tr/partiden-haberler/uluslararasi-anti-emperyalist-baris-zirvesi"
+          ],
+          "status": "partial",
+          "preview_job": "62600646"
         }
       ]
     },
@@ -4269,23 +4365,48 @@
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-24T17:22:19+00:00",
-        "note": "15 Mayıs duyurusu ve 4 Temmuz İstanbul toplantısı doğrulandı. 25 Temmuz nihai deklarasyonu ve Ankara NATO zirvesi ayrı. Diğer dönemler ve hedeflerin uygulanması açık.",
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62617736",
+        "note": "4 Nisan parti yayımı ve Finlandiya’nın üyeliği doğrulandı. 30 Mart TBMM kabulü ayrı. Kişisel katılmama cetveli okuma makbuzunda.",
         "source_ids": [
-          "0405-tip-peace-summit-2026-organizer-v1",
-          "0405-tip-peace-summit-2026-attendee-v1",
-          "0405-tip-peace-summit-2026-declaration-v1",
-          "0405-tip-peace-summit-2026-nato-v1"
+          "0405-tip-election-finland-2023-nato-floor-v1",
+          "0405-tip-election-finland-2023-nato-membership-v1",
+          "0405-tip-election-finland-2023-nato-registration-v1"
         ],
         "urls": [
-          "https://tip.org.tr/partiden-haberler/uluslararasi-anti-emperyalist-baris-zirvesine-ev-sahipligi-yaptik",
-          "https://www.csotan.org/textes/doc.php?art_id=1635&theme=&type=articles",
-          "https://notonato2026.org/duyurular/uluslararasi-anti-emperyalist-baris-zirvesi-deklarasyonu-2026-07-25",
-          "https://www.nato.int/en/news-and-events/articles/news/2026/07/08/secretary-general-on-the-ankara-summit-nato-delivers"
+          "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/27/6/82/Basilmis/f4bc3d18-43e1-481a-b487-13290229b679.pdf",
+          "https://www.nato.int/en/news-and-events/articles/news/2023/04/04/finland-joins-nato-as-31st-ally",
+          "https://tbmm.gov.tr/Yasama/Kanun/48ac1939-05a4-4d34-a68a-0186fa842ee1"
         ],
-        "status": "partial",
-        "preview_job": "62600646"
-      }
+        "source_passage_ids": [
+          "0405-tip-election-finland-2023-nato-member-p",
+          "0405-tip-election-finland-2023-nato-bill-p",
+          "0405-tip-election-finland-2023-nato-announcement-p",
+          "0405-tip-election-finland-2023-nato-adoption-p",
+          "0405-tip-election-finland-2023-nato-publication-p"
+        ]
+      },
+      "research_history": [
+        {
+          "recorded_at": "2026-11-24T17:22:19+00:00",
+          "note": "15 Mayıs duyurusu ve 4 Temmuz İstanbul toplantısı doğrulandı. 25 Temmuz nihai deklarasyonu ve Ankara NATO zirvesi ayrı. Diğer dönemler ve hedeflerin uygulanması açık.",
+          "source_ids": [
+            "0405-tip-peace-summit-2026-organizer-v1",
+            "0405-tip-peace-summit-2026-attendee-v1",
+            "0405-tip-peace-summit-2026-declaration-v1",
+            "0405-tip-peace-summit-2026-nato-v1"
+          ],
+          "urls": [
+            "https://tip.org.tr/partiden-haberler/uluslararasi-anti-emperyalist-baris-zirvesine-ev-sahipligi-yaptik",
+            "https://www.csotan.org/textes/doc.php?art_id=1635&theme=&type=articles",
+            "https://notonato2026.org/duyurular/uluslararasi-anti-emperyalist-baris-zirvesi-deklarasyonu-2026-07-25",
+            "https://www.nato.int/en/news-and-events/articles/news/2026/07/08/secretary-general-on-the-ankara-summit-nato-delivers"
+          ],
+          "status": "partial",
+          "preview_job": "62600646"
+        }
+      ]
     },
     {
       "tranche_id": "scope-163",
@@ -13049,7 +13170,22 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62617736",
+        "note": "15 Mayıs geçici parti sonucu ve 30 Mayıs YSK kesin cetvelleri doğrulandı. İtiraz dosyaları ve cumhurbaşkanı seçimi ayrı.",
+        "source_ids": [
+          "0405-tip-election-finland-2023-election-statement-v1"
+        ],
+        "urls": [
+          "https://www.tip.org.tr/parti-aciklamalari/inatciyiz-umutluyuz"
+        ],
+        "source_passage_ids": [
+          "0405-tip-election-finland-2023-election-call-p"
+        ]
+      }
     },
     {
       "tranche_id": "scope-542",
@@ -13065,7 +13201,24 @@
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "status": "partial",
+        "preview_job": "62617736",
+        "note": "15 Mayıs geçici parti sonucu ve 30 Mayıs YSK kesin cetvelleri doğrulandı. İtiraz dosyaları ve cumhurbaşkanı seçimi ayrı.",
+        "source_ids": [
+          "0405-tip-election-finland-2023-election-gazette-v1"
+        ],
+        "urls": [
+          "https://www.resmigazete.gov.tr/eskiler/2023/05/20230530M1-1.pdf"
+        ],
+        "source_passage_ids": [
+          "0405-tip-election-finland-2023-election-decision-p",
+          "0405-tip-election-finland-2023-election-total-p",
+          "0405-tip-election-finland-2023-election-seats-p"
+        ]
+      }
     },
     {
       "tranche_id": "scope-543",
