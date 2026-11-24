@@ -29,7 +29,8 @@ for key, rows in before_review.items():
     assert {canon(r) for r in rows} <= {canon(r) for r in after_review[key]}
 receipt = json.loads((checks / f'dem-iklim-103-12-13-{JOB_ID}.json').read_text())
 folder = Path(receipt['preview'])
-assert folder.is_relative_to(root / 'data/.staging')
+staging = Path(os.environ.get('GSD0404_PREVIEW_STAGING', root / 'data/.staging')).resolve()
+assert folder.resolve().is_relative_to(staging)
 manifest = json.loads((folder / 'manifest.json').read_text())
 assert manifest['renderer_version'] == 31
 for name, expected in manifest['files'].items():

@@ -129,7 +129,8 @@ def main(package_path, review_path, scope='dem-tracer', event_id='0406-2159',
             require(f'id="{prefix}-practice-{relation_id}"' in report, f'{prefix} relation missing')
         require(canonical_identity()==baseline, 'canonical archive changed')
         require((sha(package_path),sha(review_path),sha(INVENTORY))==(ps,rs,inv), 'draft or inventory changed')
-        artifact = DATA / '.staging' / f'gsd-0406-{receipt_name}'
+        staging = Path(os.environ.get('GSD0404_PREVIEW_STAGING', DATA / '.staging')).resolve()
+        artifact = staging / f'gsd-0406-{receipt_name}'
         shutil.copytree(out, artifact)
         result = {'job':job,'scope':scope,'event':event_id,'relation':relation_id,'absent_dispute':absent_dispute,'package_sha256':ps,'review_sha256':rs,
                   'inventory_sha256':inv,'canonical':baseline,'preview':str(artifact/'releases'/rel.name),
