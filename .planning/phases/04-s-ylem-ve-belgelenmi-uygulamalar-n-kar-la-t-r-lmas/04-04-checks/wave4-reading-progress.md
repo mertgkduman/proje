@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 77 | 11 | 62576233 / 62576239 |
+| DEM Parti | 81 | 11 | 62579272 / 62579275 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -389,3 +389,5 @@ Demokrat Parti kataloğunda 182–193 arasındaki özgün gövdelerle 188/257 ka
 EMEP’in 8 Nisan 2020 tarihli geri çekme çağrısı ve TBMM’nin 2/2762 dosyasını 7242 sayılı kanun olarak kabulü için 76 olay ve 73 ilişkilik aday 62581031 ile denetleniyor. 13 Nisan birleşim açılışı, 14 Nisan 00.09 kesin oy cetveli ve 15 Nisan yayımı ayrı. Cetvelde Gültekin Uysal’ın satırı ilk notta hatalı okundu, özgün görselde **Katılmadı** olarak yeniden doğrulandı. 6 Nisan ortak metin ve 14 Nisan kabul sonrası açıklama ek kaynak bağlamında. [7242 kaynak okuması](../04-10-checks/law-7242-sources/reading.json)
 
 Saadet 075 sonunda 161/649 özgün gövde okudu ve 488 açık. 19 Mart 2025 Refah insani yardım çağrısı ile 21 Mayıs imzalı 10/2740 araştırma önergesinde ortak gündem Gazze’ye yardım koridoru. İmzalı önerge Refah’ı adlandırmıyor. Selçuk Özdağ, Yeni Yol Grup Başkanvekili sıfatıyla imzaladı. Koridorun fiilî açılması açık. [073. dilim](../04-11-checks/party-news-073-reading.json) [075. dilim](../04-11-checks/party-news-075-reading.json)
+
+DEM Parti’nin 9 Nisan 2025 tarihli dört madde çıkarma önergesi yalıtılmış iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. TBMM tutanağında dört önergenin ayrı metni, Celal Fırat’ın imzası, aynı günkü grup mensubiyeti ve ayrı ret işlemleri var. 2/2927 maddelerinin oyları ve sonraki kanun kabulü ayrı işlemler. Dört olayın önceki söylemle eşleştirilmesi açık. [Önizleme makbuzu](../04-06-checks/dem-iklim-74-motions-62579272.json) [Bağımsız denetim](../04-06-checks/dem-iklim-74-motions-62579272-independent.json)
