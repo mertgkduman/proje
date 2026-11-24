@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/build-sivas-2024-relations.py", line 21, in <module>
+    add('source_attribution',version_id=vid,publisher='HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ' if kind=='party' else 'TBMM',author=None,kind='party_publication' if kind=='party' else 'official',published_at='2024-07-02',date_precision='day',social_handle=None,public_url=cap['original_url'],basis='Parti yayını ve aynı ana makinede tam hukuki adı taşıyan arşivli parti yayını.' if kind=='party' else 'TBMM 97. birleşim tutanağı.')
+TypeError: add() got multiple values for argument 'kind'

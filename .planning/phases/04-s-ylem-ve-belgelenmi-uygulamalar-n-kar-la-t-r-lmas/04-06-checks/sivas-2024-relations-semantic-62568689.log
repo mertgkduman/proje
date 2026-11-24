@@ -1,0 +1,8 @@
+SIVAS_2024_RELATIONS_SEMANTIC_PASS
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/build-sivas-2024-relations.py", line 73, in <module>
+    validate_practice_source_review(snapshot,review['practice_source_review'],target_keys=targets,party_id='dem');print('SOURCE_REVIEW_PASS',len(targets),flush=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 238, in validate_practice_source_review
+    raise ValueError('Kaynak inceleme hedefi tekrarlı veya bulunamadı')
+ValueError: Kaynak inceleme hedefi tekrarlı veya bulunamadı
