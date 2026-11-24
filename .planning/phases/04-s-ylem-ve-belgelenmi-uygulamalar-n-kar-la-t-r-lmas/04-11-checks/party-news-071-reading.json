@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-071",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T12:37:36.531982+00:00",
+  "reads": [
+    {
+      "post_id": 514,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-kasirgalar-nicin-sizin-gemiciklerinize-dokunmuyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-kasirgalar-nicin-sizin-gemiciklerinize-dokunmuyor",
+      "published_at": "2025-05-27T21:00:00+00:00",
+      "updated_at": "2025-05-27T21:00:00+00:00",
+      "accessed_at": "2026-11-24T12:37:36.531982+00:00",
+      "original_path": "party-news-bodies/514.json",
+      "sha256": "a45db845708b8bdf9e34be9b9ba66dcf50b9a9a814f405fd47b5be904c977582",
+      "normalized_body_sha256": "42db0ccc235cfc3a11f1f88b4808186050797e4c5b02f0dfbea9683c1d5f2482",
+      "source_section_range": [
+        0,
+        15512
+      ],
+      "state": "examined",
+      "reading": "Arıkan aile ve nüfus politikaları, süt üreticileri, emekli ikramiyeleri, ekonomi ve Gazze hakkında konuşuyor. Ücretli destek formülü, kreş yükümlülüğü ve Gazze yardım koridoru çağrısı yapıyor.",
+      "selected_passages": [
+        {
+          "start": 4893,
+          "end": 5054,
+          "exact": "Çalışan annelerin doğum sonrası 2 yıllık ücretsiz izin hakları boyunca maaşlarının %80’ini asgari ücretten az olmamak kaydıyla işsizlik sigortasından karşılayın."
+        }
+      ],
+      "point": "Doğum sonrası ücretsiz izin döneminde gelir desteği talebi.",
+      "statement": "İki yıllık ücretsiz izin boyunca ücretin yüzde 80’inin asgari ücretten az olmadan işsizlik sigortasından karşılanmasını hükümetten istiyor.",
+      "concrete_evidence": "Partinin özgün API gövdesi 514, ayrıca 100’den fazla çalışanlı işyerlerinde kreş gibi ayrı talepler içerir.",
+      "open_provenance": "API zamanı 27 Mayıs 21:00 UTC, Türkiye saatiyle 28 Mayıs 00:00’dır; metindeki 29 Mayıs İstanbul’un fethi yıldönümüne yarın denmesi yerel tarih açısından tutarlıdır. Yayın zamanı konuşmanın kesin saatini kanıtlamaz. Aynı nitelik, kapsam ve parti bağı olan sonraki imzalı işlem henüz belirlenmedi; talep gerçekleşme değildir."
+    }
+  ],
+  "completed_pre_cut_bodies": 157,
+  "remaining_pre_cut_bodies": 492,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
