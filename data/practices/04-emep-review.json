@@ -236,6 +236,19 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-earthquake-workshop-2025-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T17:07:09+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-workshop-2025-news-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-workshop-2025-news-p\"]",
+      "inspected_sections": "[\"Gaziantep deprem çalıştayı haberi\"]",
+      "supported_claim": "Program, parti raporu ve bağımsız haberin ilgili pasajları okundu.",
+      "limitations": "Toplantıdaki önerilerin uygulanması ve kesin gün bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-earthquake-workshop-2025-event kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-earthquake2025-hatay-event",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T03:51:11+00:00",
@@ -1572,6 +1585,19 @@
       "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-topic-p|action kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-workshop-2025-event|0410-emep-earthquake-workshop-2025-news-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T17:07:09+00:00",
+      "source_version_ids": "[\"0410-emep-earthquake-workshop-2025-news-v1\"]",
+      "passage_ids": "[\"0410-emep-earthquake-workshop-2025-news-p\"]",
+      "inspected_sections": "[\"Gaziantep deprem çalıştayı haberi\"]",
+      "supported_claim": "Program, parti raporu ve bağımsız haberin ilgili pasajları okundu.",
+      "limitations": "Toplantıdaki önerilerin uygulanması ve kesin gün bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-earthquake-workshop-2025-event|0410-emep-earthquake-workshop-2025-news-p|action kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -3720,6 +3746,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-earthquake-workshop-2025-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T17:07:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-earthquake-workshop-2025-news-v1\", \"0410-emep-earthquake-workshop-2025-report-v1\"]",
+      "passage_ids": "[\"0309-emep-program-057-0-passage\", \"0410-emep-earthquake-workshop-2025-news-p\", \"0410-emep-earthquake-workshop-2025-report-p\"]",
+      "inspected_sections": "[\"G/C/1\", \"Gaziantep deprem çalıştayı haberi\", \"İkinci yıl deprem raporu\"]",
+      "supported_claim": "Program, parti raporu ve bağımsız haberin ilgili pasajları okundu.",
+      "limitations": "Toplantıdaki önerilerin uygulanması ve kesin gün bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-earthquake-workshop-2025-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-earthquake2025-hatay-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T03:51:11+00:00",
@@ -4588,6 +4627,19 @@
       "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-earthquake-11963-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-earthquake-workshop-2025-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T17:07:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\", \"0410-emep-earthquake-workshop-2025-news-v1\", \"0410-emep-earthquake-workshop-2025-report-v1\"]",
+      "passage_ids": "[\"0309-emep-program-057-0-passage\", \"0410-emep-earthquake-workshop-2025-news-p\", \"0410-emep-earthquake-workshop-2025-report-p\"]",
+      "inspected_sections": "[\"G/C/1\", \"Gaziantep deprem çalıştayı haberi\", \"İkinci yıl deprem raporu\"]",
+      "supported_claim": "Program, parti raporu ve bağımsız haberin ilgili pasajları okundu.",
+      "limitations": "Toplantıdaki önerilerin uygulanması ve kesin gün bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-earthquake-workshop-2025-relation kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -5667,6 +5719,19 @@
       "limitations": "Soru ve yanıt davaların çözüldüğünü göstermez; soru ve yanıttaki deprem yılı dizinle farklı.",
       "result": "reviewed",
       "reason": "practice_relation.target_finding_id / 0410-earthquake-11963-relation kaynak pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-earthquake-workshop-2025-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-23T17:07:09+00:00",
+      "source_version_ids": "[\"0208-emep-program-charter-v1\"]",
+      "passage_ids": "[\"0309-emep-program-057-0-passage\"]",
+      "inspected_sections": "[\"G/C/1\"]",
+      "supported_claim": "Program, parti raporu ve bağımsız haberin ilgili pasajları okundu.",
+      "limitations": "Toplantıdaki önerilerin uygulanması ve kesin gün bilinmiyor.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-earthquake-workshop-2025-relation kaynak pasajları okundu."
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -7395,6 +7460,10 @@
     },
     {
       "subject_kind": "practice_event",
+      "subject_id": "0410-earthquake-workshop-2025-event"
+    },
+    {
+      "subject_kind": "practice_event",
       "subject_id": "0410-earthquake2025-hatay-event"
     },
     {
@@ -7804,6 +7873,10 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-earthquake-11963-event|0410-emep-earthquake-11963-detail-topic-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-earthquake-workshop-2025-event|0410-emep-earthquake-workshop-2025-news-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -8467,6 +8540,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-earthquake-workshop-2025-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-earthquake2025-hatay-relation"
     },
     {
@@ -8735,6 +8812,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-earthquake-workshop-2025-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-earthquake2025-hatay-relation"
     },
     {
@@ -9064,6 +9145,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-earthquake-11963-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-earthquake-workshop-2025-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
