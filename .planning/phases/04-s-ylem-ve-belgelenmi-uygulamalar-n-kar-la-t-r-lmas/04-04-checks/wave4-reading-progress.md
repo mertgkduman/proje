@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 35 | 33 | 62619283 |
-| DEM Parti | 84 | 12 | 62602872 / 62602874 |
+| DEM Parti | 85 | 12 | 62618221 / 62618228 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -564,3 +564,7 @@ Demokrat Parti’nin Yassıada oteli karşılaştırması iki okuyucu görünüm
 TİP Parti Açıklamaları dizininde 81–88 arası sekiz gövde ve 21.321 karakter okundu. Son toplam 88/190. İliç’te 2022 Bakanlık denetimi, işletmenin miktar beyanı, yaptırım ve geçici durdurma yazılı soru cevabında ayrı. TİP’in suç duyurusu ve takipsizlik aslı açık. Türkiye’nin Çocuk Hakları Sözleşmesi çekincesi BM’nin özgün tevdi sayfasında. Glasgow ve COP27 kararlarının ilgili bölümleri çevrimiçi resmî metinden okundu, özgün PDF aktarımı açık. [On birinci okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-11/reading.json)
 
 TİP’in deprem sonrası yapılaşma ve yükseköğretim karşılaştırmaları iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 9 Mart açıklaması 5 Nisan 7452 kabulü, 10 Nisan yayımı ve 2. maddenin ilgili fıkrasıyla karşılaştırıldı. Parsel ve konut uygulaması açık. 14 Şubat yüz yüze açılış çağrısı, 17 Şubat uzaktan öğretim kararı ve 30 Mart YÖK kararı ayrı. 3 Nisan’dan itibaren isteğe bağlı yüz yüze seçenek, uzaktan öğretimle birlikte yürüdü. Kurum kararları ve tek tek derslerde katılım açık. TİP çalışma çifti 35 olay ve 33 ilişki. [Önizleme makbuzu](../04-05-checks/tip-earthquake-2023-62619283.json) [Bağımsız denetim](../04-05-checks/tip-earthquake-2023-62619283-independent.log)
+
+DEM Parti’nin taşımalı eğitim araştırma önergesinin üç imzalı sayfası incelendi. Grup kaşesi ve parti yayımı 19 Eylül 2024, TBMM Başkanlığına geliş kaydı 20 Eylül tarihini taşıyor. 10/1783, iki okuyucu görünümünde eşleşmemiş aday olarak doğrulandı. Cengiz Çiçek’in 7/15029 sayılı yazılı sorusu ayrı araştırma ucu. [Bağımsız denetim](../04-06-checks/dem-tasimali-101783-62618221-independent.json)
+
+Birleşik prova 13, dokuz doğrulanmış paketin 570 olay ve 379 ilişki içeren kopyasından başlatıldı. Ön kontrol iki girdi sırasıyla aynı 546 olayı ve 379 ilişkiyi üretti. 14 aynı olay kararı, 13 çözümlenmemiş aday ve 5.652 inceleme kökeni korundu. 330 konu hücresinin kaydı açıldı. 292 hücrede kaynak bağı, 293 hücrede arama girişimi var. Envanterdeki 5.490 hücrenin tamamı hâlâ açık. Slurm işi 62620455, birleşik okuyucu önizlemesini üretiyor. [Girdi ve birleştirme makbuzu](wave4-merge-rehearsal-13.json)

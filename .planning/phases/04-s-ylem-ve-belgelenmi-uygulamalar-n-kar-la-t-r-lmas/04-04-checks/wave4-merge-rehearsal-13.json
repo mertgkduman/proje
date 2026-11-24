@@ -1,0 +1,133 @@
+{
+  "git_commit": "818826d6023bc87ef6da2caa1e2a458f7b8f4f40",
+  "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+  "kind": "isolated_merge_preflight",
+  "original_packages": {
+    "yeni-parti": {
+      "package_sha256": "e0e68011435a15b591d9481fe71a84bb7cfd34b4c779d71d0d5378c05797a165",
+      "companion_review_sha256": "9139945aeddf207f0ec27df786907d965d23d2642f05de457f2315cb36c6069b",
+      "events": 144,
+      "relations": 141,
+      "closures": 0,
+      "external_review_ref_count": 1223
+    },
+    "tip": {
+      "package_sha256": "366fafcea5829e6aaa7f98c78313626fbfbb561b0fbefa3f4a260adaf4d27e8f",
+      "companion_review_sha256": "e00cb2ee931c6138457a70b8f2171757c310bded68e89cb8f29d42a03296f34d",
+      "events": 35,
+      "relations": 33,
+      "closures": 0,
+      "external_review_ref_count": 436
+    },
+    "dem": {
+      "package_sha256": "6dbdf8957464782f99860884841dffe7037f752f0d0d7e2f48026a53f9de20f5",
+      "companion_review_sha256": "cc88060809d6915fe2af2ec37e7059e1b76fbaf504cc4256515d2a141e51e120",
+      "events": 85,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 797
+    },
+    "iyi": {
+      "package_sha256": "1a0960a4d5eac4c029cfad9e985bc13c1c46ae05a3834cd887e5ccb0e66835bf",
+      "companion_review_sha256": "e10e4e42084be8a82108dd93b13a0c7a30cd92e68de84f80e11d3962121ff0ad",
+      "events": 21,
+      "relations": 13,
+      "closures": 0,
+      "external_review_ref_count": 310
+    },
+    "yeni-yol": {
+      "package_sha256": "07a7acdd87ff461abe7fd3f75f1e4e60ef4805c6cbdf2eab7f60756b703d9f6a",
+      "companion_review_sha256": "1b89ab0381dad5fc48a00a603c5624ed34489205d60d6bde83a5c7f298c79115",
+      "events": 23,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 345
+    },
+    "dbp": {
+      "package_sha256": "c261a747122fd39d50250c84c2ae6aed9884515ba5a8506610a9ff55f06b2957",
+      "companion_review_sha256": "56f9115e9e4006f24900431a9ac442a0b7d56590ec6dcbcdbaefc816d48c3cae",
+      "events": 64,
+      "relations": 7,
+      "closures": 0,
+      "external_review_ref_count": 472
+    },
+    "emep": {
+      "package_sha256": "6d0f6c948e6a3b1e29f667baa02b5d521f8121d66e5de8cd01c5270622c894ad",
+      "companion_review_sha256": "f49fe7c8c3bf04867b4e47d57c8c15dc97ed5665134d5c3573df050c1792acfc",
+      "events": 82,
+      "relations": 78,
+      "closures": 0,
+      "external_review_ref_count": 738
+    },
+    "saadet": {
+      "package_sha256": "2dfb4420d680fa466e49d9877106c767cc2fe24e356f3347f71c32f8ff70fa3a",
+      "companion_review_sha256": "e4af2c40825f06179d8319824fd0c02a50b06d35157b6c5f5fbcb0ed93a88195",
+      "events": 35,
+      "relations": 31,
+      "closures": 0,
+      "external_review_ref_count": 447
+    },
+    "demokrat": {
+      "package_sha256": "486c4f736ab03cab9e7ee52e57339d56ce4c07deec5045719ca0d579383cfe1a",
+      "companion_review_sha256": "3b6d03e6c7870b28e0f054c63e6c21f991008d70209cb829a032d881174b5fae",
+      "events": 81,
+      "relations": 52,
+      "closures": 0,
+      "external_review_ref_count": 884
+    }
+  },
+  "isolated_envelopes": {
+    "yeni-parti": "6ebab9afb5483f38afa7d1db61b7e7aec277496d28122bc36b5ea979c9845b19",
+    "tip": "6d7c84ef4de4f813951fb22e78388536854d8b79a6bd9a343bb0a5abd2e18b01",
+    "dem": "52ef7c9c331fa7f6d748c7573deacc05c3be8a2cbc69eab4cce9c45f2bd4e2a0",
+    "iyi": "bb9e0ec5b61504e2bdfdbb3d3c5adfd5dcfa1097211d873fc0d057a69332899a",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "276ca2d2db2d8a924ef807504290d66f13b68cbea769ecd59a182a54ef684a5c",
+    "emep": "662301b2256942290981e48092e54880a74994edff29fb56dcb97d12fe33894d",
+    "saadet": "4229e294418e6b3a935e69fb6d42ae9c6907223492ac6d5c06317324bd0fd72b",
+    "demokrat": "25365ce3d9fc2d58fed14873c9d34b0cab4c07ac26d6f41332d5b0988bc0779f"
+  },
+  "preceding_decisions": "wave4-merge-rehearsal-12-decisions.json",
+  "unchanged_candidate_sources": true,
+  "decisions_sha256": "847f611c25bb3f663be61a174ae8d9bb7ca175b0c5098cfe188e3e013cf24278",
+  "output_sha256": "9f0638ee4bc0b1cebdfff39827ff1239c1840b17b8c289198c474a58bc1071f6",
+  "forward_reverse_equal": true,
+  "same_candidates": 14,
+  "unresolved_candidates": 13,
+  "counts": {
+    "practice_event": 546,
+    "practice_relation": 379,
+    "practice_closure": 0
+  },
+  "aliases": 578,
+  "review_origins": 5652,
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "original_stages": {
+    "yeni-parti": "tracer",
+    "tip": "partial",
+    "dem": "tracer",
+    "iyi": "tracer",
+    "yeni-yol": "tracer",
+    "dbp": "tracer",
+    "emep": "tracer",
+    "saadet": "tracer",
+    "demokrat": "tracer"
+  },
+  "isolated_stage": "partial",
+  "isolated_envelope_sha256": {
+    "yeni-parti": "6ebab9afb5483f38afa7d1db61b7e7aec277496d28122bc36b5ea979c9845b19",
+    "tip": "6d7c84ef4de4f813951fb22e78388536854d8b79a6bd9a343bb0a5abd2e18b01",
+    "dem": "52ef7c9c331fa7f6d748c7573deacc05c3be8a2cbc69eab4cce9c45f2bd4e2a0",
+    "iyi": "bb9e0ec5b61504e2bdfdbb3d3c5adfd5dcfa1097211d873fc0d057a69332899a",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "276ca2d2db2d8a924ef807504290d66f13b68cbea769ecd59a182a54ef684a5c",
+    "emep": "662301b2256942290981e48092e54880a74994edff29fb56dcb97d12fe33894d",
+    "saadet": "4229e294418e6b3a935e69fb6d42ae9c6907223492ac6d5c06317324bd0fd72b",
+    "demokrat": "25365ce3d9fc2d58fed14873c9d34b0cab4c07ac26d6f41332d5b0988bc0779f"
+  },
+  "merged_events": 546,
+  "merged_relations": 379,
+  "closure_count": 0,
+  "event_aliases": 578,
+  "added_reviewed_candidates": []
+}

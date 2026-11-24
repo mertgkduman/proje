@@ -26,7 +26,7 @@ outcome = exercise['first']
 rehearsal = exercise['receipt']
 data = exercise['data']
 number = exercise['number']
-recent_rehearsals = {'09', '10', '11', '12'}
+recent_rehearsals = {'09', '10', '11', '12', '13'}
 payload = outcome['payload']
 records = payload['practice_records']
 schemas = (PRACTICE_TABLES | PRACTICE_VARIANT_TABLES | PRACTICE_EVIDENCE_TABLES |
@@ -302,7 +302,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             'SELECT input_event_id,canonical_event_id FROM practice_event_alias WHERE decision_id=? ORDER BY input_event_id',
             (key,),
         ).fetchall() == [('0405-tip-7242-event','0405-tip-7242-event'), ('0410-law-7242-event','0410-law-7242-event')]
-    if number in {'11', '12'}:
+    if number in {'11', '12', '13'}:
         key = 'tbmm-28-2-112-2-2275-law-7527'
         event_id, parties = joined[key]
         assert parties == {'tip', 'emep'}
@@ -313,7 +313,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         }
         assert votes <= {row[0] for row in db.execute(
             'SELECT passage_id FROM practice_event_evidence WHERE event_id=?', (event_id,))}
-    if number == '12':
+    if number in {'12', '13'}:
         meeting, parties = joined['six-leaders-2022-10-02-chp-second-round-meeting']
         assert parties == {'demokrat', 'iyi', 'saadet'}
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?', (meeting,))} == {'demokrat', 'saadet'}

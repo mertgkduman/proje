@@ -113,7 +113,7 @@ receipt=dict(git_commit=source_commit,base_release=inventory["base_release"],kin
              canonical_pointer_sha256=digest((data/"current.json").read_bytes()))
 assert receipt["canonical_pointer_sha256"]=="5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7"
 output = Path(sys.argv[4]) if len(sys.argv) > 4 else checks / "wave4-merge-rehearsal-07-preflight.json"
-if overlaps:
+if baseline or overlaps:
     receipt.update(original_stages=stages,isolated_stage="partial",isolated_envelope_sha256=envelopes,
         merged_events=counts["practice_event"],merged_relations=counts["practice_relation"],
         closure_count=counts["practice_closure"],event_aliases=receipt["aliases"],added_reviewed_candidates=sorted(added_keys))
