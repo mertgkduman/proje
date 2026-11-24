@@ -12,5 +12,8 @@ url="https://www.hdp.org.tr/tr/gasp-edilen-halkin-iradesidir-sessiz-kalmayacagiz
 p=c/"yesilsol-2020-evidence/birgun-20200519.pdf";raw=p.read_bytes();h=hashlib.sha256(raw).hexdigest();assert h=="ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22";folder=root/"objects"/h;folder.mkdir(parents=True,exist_ok=True);f=folder/"original.pdf"
 if f.exists(): assert f.read_bytes()==raw
 else:f.write_bytes(raw)
-out["birgun"]=dict(url="https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",accessed_at=datetime.datetime.fromtimestamp(p.stat().st_mtime,datetime.timezone.utc).isoformat(),sha256=h,original_path=f"objects/{h}/original.pdf",readable_path=None)
+f=folder/"readable.html";body=readable_bytes(raw,"pdf",legacy=False)
+if f.exists(): assert f.read_bytes()==body
+else:f.write_bytes(body)
+out["birgun"]=dict(url="https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",accessed_at=datetime.datetime.fromtimestamp(p.stat().st_mtime,datetime.timezone.utc).isoformat(),sha256=h,original_path=f"objects/{h}/original.pdf",readable_path=f"objects/{h}/readable.html")
 (c/"yesilsol-2020-capture.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n");print(json.dumps(out,ensure_ascii=False,indent=2))

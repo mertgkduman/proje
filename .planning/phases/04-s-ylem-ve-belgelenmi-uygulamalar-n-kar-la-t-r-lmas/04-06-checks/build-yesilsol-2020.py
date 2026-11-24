@@ -15,7 +15,7 @@ for key in ('hdp','birgun'):
  add('document',id=doc,party_id='dem',title='18 Mayıs ortak bildirisi HDP yayını' if key=='hdp' else 'BirGün 19 Mayıs 2020 basılı sayı',source_kind='news')
  add('document_version',id=vid,document_id=doc,original_url=x['url'],final_url=x['url'],document_date=date,date_precision='day',date_unknown_reason=None,version_label='Özgün HDP yayını' if key=='hdp' else 'Özgün basılı gazete PDF',accessed_at=x['accessed_at'],verified_at=when,mime='text/html' if key=='hdp' else 'application/pdf',sha256=x['sha256'],original_path=x['original_path'],readable_path=x['readable_path'])
  if key=='hdp':add('archive_view',**x['view'])
- add('source_attribution',version_id=vid,publisher='Halkların Demokratik Partisi' if key=='hdp' else 'BirGün',author=None,kind='party_publication' if key=='hdp' else 'journalism',published_at=date,date_precision='day',social_handle=None,public_url=x['url'],basis='HDP ortak imzacı yayıncısıdır.' if key=='hdp' else '19 Mayıs basılı gazete sayfa 8 haberi.')
+ add('source_attribution',version_id=vid,publisher='Halkların Demokratik Partisi' if key=='hdp' else 'BirGün',author=None,kind='other' if key=='hdp' else 'journalism',published_at=date,date_precision='day',social_handle=None,public_url=x['url'],basis='HDP ayrı parti ve ortak imzacı yayıncıdır.' if key=='hdp' else '19 Mayıs basılı gazete sayfa 8 haberi.')
  keys=[k for k,v in anchors.items() if v[0]==key]
  for k in keys:
   _,exact,section=anchors[k];assert exact in raw,k;add('passage',id=q(k),version_id=vid,exact=exact,prefix=None,suffix=None,article=None,section=section,pdf_page_index=7 if key=='birgun' else None,printed_page='8' if key=='birgun' else None)

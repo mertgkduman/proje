@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0406-dem-yesilsol-2020-fub124s2/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0406-dem-yesilsol-2020-fub124s2/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0406-dem-yesilsol-2020-fub124s2/src/uygulamalar.py", line 1381, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0406-dem-yesilsol-2020-fub124s2/src/uygulamalar.py", line 1194, in _load_practice_copy
+    db.execute(f"INSERT INTO {kind} ({','.join(values)}) VALUES ({','.join('?' for _ in values)})", list(values.values()))
+sqlite3.IntegrityError: NOT NULL constraint failed: document_version.readable_path
