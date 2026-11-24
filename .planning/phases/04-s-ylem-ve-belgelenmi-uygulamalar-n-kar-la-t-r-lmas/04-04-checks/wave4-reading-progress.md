@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 81 | 11 | 62579272 / 62579275 |
+| DEM Parti | 82 | 11 | 62581767 / 62581774 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 75 | 72 | 62578062 |
+| EMEP | 76 | 73 | 62581748 |
 | Saadet Partisi | 28 | 24 | 62575423 |
 | Demokrat Parti | 60 | 47 | 62581680 |
 
@@ -409,3 +409,10 @@ ANKAPARK için ABB maliyet icmali, 6 Temmuz 2022 tarihli tahliye kararının yay
 7344 ana bütçe adayının girdi dosyaları 62583044 için kesin hashlerle hazırlandı. İş 7414 ek bütçe doğrulamasına bağlı. Saadet 082 sonunda 168/649 özgün gövde okudu, 481 açık. 10/2925 imzalı önerge için ilk Slurm süresi yetersizdi ve aday 62583013 ile yeniden denetime girdi. İliç dosyasında 8/64 genel görüşme önergesi, aynı gün görüşülmesi hakkındaki grup işlemi ve komisyonun raporu ayrı. [7344 adayı](../04-12-checks/budget-7344-draft.json) [Saadet 082](../04-11-checks/party-news-082-reading.json)
 
 7414 ek bütçe ve 7490 kesin hesap karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. TBMM kesin cetveli iki Demokrat Parti milletvekilini Katılmadı olarak kaydediyor. İmzalı teklifteki Cumhurbaşkanlığı ödeneği kalemi, kabul edilen 7414 hükmü ve 7490 yıl sonu hesabı ayrı. Kişisel fiilî ödeme açık. 7344 ana bütçe adayı 62583044 ile denetimde. [7414 makbuzu](../04-12-checks/budget-7414-62581680.json) [Bağımsız denetim](../04-12-checks/budget-7414-62581680-independent.log)
+
+
+DEM Parti’nin 8 Nisan 2025 tarihli 73. birleşimdeki iki grup konuşması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. İbrahim Akın’ın geri çekme talebi ile Perihan Koca’nın emisyon ticareti eleştirisi, 2/2927’nin tümü görüşülürken yapılan ayrı katkılar. 9 Nisan önergeleri ve 2 Temmuz nihai oylaması ayrı. Önceki bağımsız parti söylemiyle ilişki ve kişisel oy açık. [DEM makbuzu](../04-06-checks/dem-iklim-73-group-62581767.json) [Bağımsız denetim](../04-06-checks/dem-iklim-73-group-62581767-independent.json)
+
+EMEP’in 8 Nisan 2020 geri çekme çağrısı ile 2/2762 teklifinin 7242 sayılı kanun olarak kabulü iki görünümde ve bağımsız veri denetiminde doğrulandı. 6 Nisan ortak metni, 14 Nisan 00.09 kesin oylaması, sonraki 14 Nisan parti açıklaması ve 15 Nisan yayımı ayrı. Gültekin Uysal’ın satırı özgün görselde Katılmadı. Üç maddeye ilişkin ayrı rejimler ilişki kartında, bireysel tahliye sonucu açık. [7242 makbuzu](../04-10-checks/law-7242-62581748.json) [Bağımsız denetim](../04-10-checks/law-7242-62581748-independent.log)
+
+Demokrat Parti’nin 037. diliminde 243/257 özgün gövde okundu. İki yayın kapsam tarihinden sonra. Açık 12 kaydın içinde ilk erişimde HTTP 500 dönen dokuz bağlantı var. [037. dilim](../04-12-checks/party-news-037-reading.json)
