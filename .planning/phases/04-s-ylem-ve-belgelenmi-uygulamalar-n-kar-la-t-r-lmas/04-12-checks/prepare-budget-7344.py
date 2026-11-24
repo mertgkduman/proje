@@ -20,7 +20,8 @@ party = "demokrat"
 topic = "maliye-vergi"
 now = datetime.now(timezone.utc).isoformat(timespec="seconds")
 preflight = sys.argv[1:] == ["--preflight"]
-assert preflight or not sys.argv[1:]
+from_predecessor_draft = sys.argv[1:] == ["--from-predecessor-draft"]
+assert preflight or from_predecessor_draft or not sys.argv[1:]
 
 def read(path):
     return json.loads(path.read_bytes())
@@ -28,7 +29,7 @@ def read(path):
 def sha(content):
     return hashlib.sha256(content).hexdigest()
 
-if preflight:
+if preflight or from_predecessor_draft:
     pair = (checks / "budget-7414-draft.json", checks / "budget-7414-review-draft.json")
 else:
     pair = (working / "04-demokrat.json", working / "04-demokrat-review.json")
