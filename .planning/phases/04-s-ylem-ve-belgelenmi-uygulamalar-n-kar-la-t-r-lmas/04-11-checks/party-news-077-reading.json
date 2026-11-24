@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-077",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:14:35.966178+00:00",
+  "reads": [
+    {
+      "post_id": 503,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-ulkede-erken-secim-olmalidir-cunku-mevcut-yonetim-halkin-sorunlarini-cozemiyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-ulkede-erken-secim-olmalidir-cunku-mevcut-yonetim-halkin-sorunlarini-cozemiyor",
+      "published_at": "2025-02-19T10:41:40+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:14:35.966178+00:00",
+      "original_path": "party-news-bodies/503.json",
+      "sha256": "39e31861e7e06e1d048c362fd6d64beecd2095c8fba3fab75e93552e84b7b7f9",
+      "normalized_body_sha256": "83ca90d743b94f4e635d3b400dcb87aa551fe51d191a80a5eefdfb929005bc42",
+      "source_section_range": [
+        0,
+        13063
+      ],
+      "state": "examined",
+      "reading": "Arıkan adalet, sağlık, erken seçim, ekonomik ve aile politikalarını değerlendiriyor; doğum izninin ilk altı ayında tam ücret, sonrasında iki yıla kadar ücret desteği ve kreş öneriyor.",
+      "selected_passages": [
+        {
+          "start": 10489,
+          "end": 10556,
+          "exact": "doğum izninin ilk 6 ayında tam ücretli izin verilmesini öneriyoruz."
+        }
+      ],
+      "point": "Doğum sonrası izin ve ücret desteği önerisi.",
+      "statement": "Çalışan anneler için ilk altı ay tam ücretli izin; sonrasında iki yıl yüzde 80 ücretin asgari ücretten az olmamak kaydıyla işsizlik sigortasından karşılanması öneriliyor.",
+      "concrete_evidence": "19 Şubat 2025 tarihli özgün parti gövdesi; aynı maaş desteği ve kreş başlıkları 28 Mayıs Türkiye tarihli 514 numaralı ayrı gövdede yeniden geçiyor.",
+      "open_provenance": "İlk altı ay ile sonraki iki yıl metinde ayrı sürelerdir; 514 gövdesinin ifadesiyle otomatik süre toplama veya sonraki kanunun kabulü çıkarılmamalı. Ödeme ve işyeri yükümlülüğü için ayrı resmî işlem gereklidir."
+    }
+  ],
+  "completed_pre_cut_bodies": 163,
+  "remaining_pre_cut_bodies": 486,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
