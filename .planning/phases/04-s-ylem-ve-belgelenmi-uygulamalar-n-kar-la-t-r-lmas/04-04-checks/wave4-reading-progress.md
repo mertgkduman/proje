@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 69 | 71 | 62568514 |
+| EMEP | 72 | 71 | 62573483 |
 | Saadet Partisi | 27 | 23 | 62572150 |
 | Demokrat Parti | 49 | 40 | 62571364 |
 
@@ -339,3 +339,11 @@ EMEP 247 ve 252’nin önceki makbuzlarında açık kalan dokuz Türkçe metin a
 Saadet 1/280 bütçe kapsamı iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Arıkan’ın 8 Aralık 2025’te Yeni Yol’dan devredilen grup süresindeki konuşması ile 21 Aralık nihai cetveli ayrı. Cetvelde Arıkan Katılmadı, Bülent Kaya ve Mustafa Kaya Yeni Yol satırlarında Ret. Nihai sonuç 316 kabul, 247 ret ve 6 mükerrer. 7567 sayılı kanunun kabul ve yayım tarihleri ayrı. Okuma 131/649 gövdeye ulaştı ve 518 açık. [Bütçe makbuzu](../04-11-checks/budget-1280-62572150.json) [045. dilim](../04-11-checks/party-news-045-reading.json)
 
 Demokrat Parti’nin 5.000 TL emekli ödemesi karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. İlk kapsam 14 Kasım 2023 açıklamasından önce yürürlükteydi. 7491 kapsam değişikliği, SGK’nın Aralık ödeme toplamı ve Kuruma Ocak aktarımı ayrı kayıtlara dayanıyor. Kesin ödeme günü ve meslek alt grupları açık. Parti arşivinde 131/257 gövde okundu, 2 yayın kapsam tarihinden sonra ve 124 gövde açık. [Ödeme makbuzu](../04-12-checks/pension-5000-62571364.json) [015. dilim](../04-12-checks/party-news-015-reading.json)
+
+EMEP için Ayasofya’nın 2 Temmuz 2020 Danıştay kararı, 10 Temmuz 2729 sayılı Cumhurbaşkanı kararı ve 24 Temmuz Diyanet fiilî açılış kaydı, üç eşleşmesiz olay olarak iki görünüm ve bağımsız JSON/SQLite denetiminden geçti. 12 Temmuz parti yayınının Türkçe ve İngilizce ifadelerindeki anlam farkı kendi kaynağıyla kayıtlıdır. 2729 için kullanılan gazete görüntüsünün Wikimedia erişimi, TBMM ve Diyanet doğrulaması ile ilk doğrulama sorunları kaydedildi. [Ayasofya makbuzu](../04-10-checks/ayasofya-2020-62573483.json) [Denetim geçmişi](../04-10-checks/ayasofya-2020-gate-history.json)
+
+EMEP 3/1704 dosyasında 26 Ekim 2021 sabahı yayımlanan ret çağrısı, aynı gün Genel Kurul tutanağındaki kabulle kaynaklandı. 1310 kararının 28 Ekim yayımı ve iki yıllık sürenin 30 Ekim başlangıcı ayrı. 73 olay ve 72 ilişki adayı 62575664 ile denetleniyor. [Özgün kaynak okuması](../04-10-checks/tezkere-1310-sources/reading.json)
+
+Demokrat Parti yayın kataloğunda 018 numaralı dilim sonunda 144/257 gövde okundu. 111 gövde açık ve 2 yayın kapsam tarihinden sonra. 148 numaralı sayfa iki denemede açılamadı. 147 numaralı yayında 29 Haziran kadın ve gençlik kolları görev başlangıcı, liste ve gövde tarihleriyle ayrı. 13 Ekim 2022 tutanağı 2/4471 29. madde oylaması ile teklifin tümünün oylamasını ayrı gösteriyor. 7418’in 18 Ekim yayımı ve 8 Kasım 2023 AYM norm denetimi özgün kaynakları arşivlendi. [018. dilim](../04-12-checks/party-news-018-reading.json) [7418 kaynakları](../04-12-checks/law-7418-sources/reading.json)
+
+Saadet 050 numaralı dilim sonunda 136/649 özgün gövde okudu ve 513 açık. 2026 asgari ücret adayı 62575423 ile denetleniyor. 33.000 TL parti ifadesinde net ve brüt açıkça belirtilmedi. Komisyon kararı, ÇSGB’nin net ve brüt hesabı ile fiilî ödeme kanıtı ayrı. [050. dilim](../04-11-checks/party-news-050-reading.json)
