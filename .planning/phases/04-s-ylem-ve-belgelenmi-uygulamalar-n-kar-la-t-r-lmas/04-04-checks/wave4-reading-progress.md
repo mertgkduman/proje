@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 37 | 35 | 62621760 |
+| TİP | 39 | 37 | 62625832 |
 | DEM Parti | 87 | 13 | 62625356 / 62625364 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -604,3 +604,7 @@ TİP dizininin 137–144 arasındaki sekiz gövdesi okundu, toplam 144/190. 13 �
 DEM Parti’nin Van mazbata dosyası 62625356 ve 62625364 ile iki görünümde bağımsız doğrulandı. 2 Nisan MYK açıklaması ve 2024/25 Van İl Seçim Kurulu işlemi, 3 Nisan YSK itiraz sonucundan ayrı. İmzalı YSK nüshası ile YSK karar numarası açık. [Bağımsız doğrulama](../04-06-checks/dem-van-2024-62625356-independent.json)
 
 TİP açıklama dizininde 168/190 özgün gövde okundu. 18 Mayıs belediye görevlendirmeleri ve 7242 öncesi infaz teklifi üzerine yayımlanan ortak açıklamalardaki imzacılar ile ilgili resmî işlemler ayrı izleniyor. [19–21. dilimler](../04-05-checks/tip-publication-catalog/party-statements-19/reading.json) [22. dilim](../04-05-checks/tip-publication-catalog/party-statements-22/reading.json) [23. dilim](../04-05-checks/tip-publication-catalog/party-statements-23/reading.json)
+
+TİP’in Amasra ve São Paulo karşılaştırmaları 62625832 ile bağımsız doğrulandı. Amasra’da bireysel araştırma çağrısı ile 19 Ekim TBMM komisyon kararı ve 22 Ekim yayımı ayrı. São Paulo’da ön izin koşulları, 26 Ağustos iptal açıklaması ve 29 Eylül imzalı soru kaydı ayrı. Amasra’nın 20 MiB’ı aşan komisyon raporu özgün arşivde, okuyucu önizlemesinde karar sicili ve Resmî Gazete dizini kullanıldı. [Bağımsız doğrulama](../04-05-checks/tip-amasra-saopaulo-2022-62625832-independent.log)
+
+TİP parti açıklamaları dizininde 190/190 yayın gövdesi okundu. Son dört yayının tamamı gömülü görsellerdeydi. Kurucu Meclis ve Merkez Komitesi’nin 2018 açıklamaları, seçim destekleri ve kurumsal görevler kendi kaynaklarına bağlandı. Diğer konu ve kaynak aileleri açık. [24. dilim](../04-05-checks/tip-publication-catalog/party-statements-24/reading.json) [25. dilim](../04-05-checks/tip-publication-catalog/party-statements-25/reading.json) [26. dilim](../04-05-checks/tip-publication-catalog/party-statements-26/reading.json)
