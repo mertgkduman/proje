@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 66 | 7 | 62619918 |
 | EMEP | 83 | 79 | 62621978 |
-| Saadet Partisi | 36 | 32 | 62619367 / 62619370 |
+| Saadet Partisi | 37 | 33 | 62621740 / 62621747 |
 | Demokrat Parti | 81 | 52 | 62618726 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -588,3 +588,7 @@ TİP 25 Ağustos ortak hazırlık açıklamasını 24 Eylül Haliç buluşmasıy
 EMEP’in 14 Eylül çağrısı, 24 Eylül Haliç buluşmasındaki kurum katkısı ve Ercüment Akdeniz’in konuşmasına ilişkin kaynaklar iki görünümde doğrulandı. 26 Eylül EMEP program yayımı ve erişilen sürümün Şubat 2023 güncellemesi ayrı tarihler. Akdeniz konuşması, konuşma ve dönem sıfatı kanıtlarıyla ilişki bulgusuna bağlı. [EMEP bağımsız doğrulama](../04-10-checks/halic-2022-emep-v2-62621978-independent.log)
 
 TİP’in 1344 Amasra araştırma kararı ve São Paulo şartlı onay iptali adayları Slurm 62624848 ile doğrulanıyor. Meclis araştırması kişisel ceza sorumluluğu sürecinden, ithalat izni iptali ise geminin sonraki Brezilya sürecinden ayrı kaynaklarda.
+
+Saadet Partisi’nin 22 Şubat yüz yüze eğitim çağrısı, 30 Mart YÖK kararına ve 31 Mart yazısına bağlandı. 3 Nisan’dan itibaren uzaktan öğretimin yanında isteyen öğrenciye yüz yüze seçenek ve üniversite kurullarının düzenleme yetkisi iki görünümde doğrulandı. Kampüs uygulaması ve parti etkisi ayrı kanıt gerektiriyor. [Saadet önizleme makbuzu](../04-11-checks/education-2023-62621740.json)
+
+Birleşik prova 14 62625117 ile başlatıldı. Dokuz doğrulanmış çiftin 578 olay ve 384 ilişkisi, iki farklı girdi sırasında aynı 551 ortak olayı ve 384 ilişkiyi üretti. 24 Eylül Haliç buluşması TİP, EMEP ve tarihsel Yeşil Sol temsilcilerinin ayrı rollerini koruyan tek olay. 30 Mart YÖK kararı TİP ve Saadet ilişkilerini ayrı tutan tek olay. Ön kontrolde 16 aynı ve 13 çözümlenmemiş ortak aday, 586 olay eş adı ve 5737 inceleme kökeni var. 337 konu hücresinin kaydı açıldı. 299 hücre kaynak ve 300 hücre arama girişimi taşıyor. 5.490 kapsam hücresinin tamamı açık. [Ortak kanıt okuması](wave4-halic-yok-overlap-reading.json) [Birleştirme makbuzu](wave4-merge-rehearsal-14.json)
