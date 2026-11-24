@@ -2,6 +2,9 @@ import json,sqlite3,sys
 from pathlib import Path
 checks=Path(__file__).resolve().parent;receipt=json.loads((checks/('ankara-workshop-emep-'+sys.argv[1]+'.json')).read_text());folder=Path(receipt['preview']);old=json.loads(Path('data/practices/04-emep.json').read_text());new=json.loads((checks/'ankara-workshop-emep-draft.json').read_text());exported=json.loads((folder/'records.json').read_text());report=(folder/'index.html').read_text()
 assert (len(old['practice_records']['practice_event']),len(old['practice_records']['practice_relation']))==(80,77)
+other=json.loads((checks.parent/'04-06-checks'/'ankara-workshop-dem-draft.json').read_text());common='ankara-2025-11-01-02-demokrasi-baris-calistayi'
+emep_event=next(x for x in new['practice_records']['practice_event'] if x['common_event_key']==common);dem_event=next(x for x in other['practice_records']['practice_event'] if x['common_event_key']==common)
+assert {k:v for k,v in emep_event.items() if k!='id'}=={k:v for k,v in dem_event.items() if k!='id'}
 counts={}
 with sqlite3.connect((folder/'records.sqlite3').as_uri()+'?mode=ro',uri=True) as db:
  db.row_factory=sqlite3.Row
@@ -17,4 +20,4 @@ with sqlite3.connect((folder/'records.sqlite3').as_uri()+'?mode=ro',uri=True) as
  assert db.execute('SELECT COUNT(*) FROM practice_event WHERE common_event_key=?',('ankara-2025-11-01-02-demokrasi-baris-calistayi',)).fetchone()[0]==1
  for view in ('party','comparison'):
   anchor=view+'-unmatched-0410-ankara-workshop-candidate';assert report.count('id="'+anchor+'"')==1
-print('ANKARA_WORKSHOP_EMEP_INDEPENDENT_APPEND_ONLY_OK',json.dumps(counts,sort_keys=True),flush=True)
+print('ANKARA_WORKSHOP_EMEP_INDEPENDENT_APPEND_ONLY_AND_DEM_EVENT_OK',json.dumps(counts,sort_keys=True),flush=True)
