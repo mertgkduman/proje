@@ -1,0 +1,682 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:TimesNewRomanPSMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:MinionPro-Regular;
+	panose-1:2 4 5 3 5 3 6 2 2 3;}
+@font-face
+	{font-family:"\30D2\30E9\30AE\30CE\660E\671D Pro W3";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"\@\30D2\30E9\30AE\30CE\660E\671D Pro W3";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Açıklama Metni Char1";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Üst Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Alt Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Konu Başlığı Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p
+	{mso-style-name:"Normal \(Web\)\,Normal \(Web\) Char Char\,Normal \(Web\) Char Char Char Char\,Normal \(Web\) Char Char Char";
+	mso-style-link:"Normal \(Web\) Char\,Normal \(Web\) Char Char Char1\,Normal \(Web\) Char Char Char Char Char\,Normal \(Web\) Char Char Char Char1";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Açıklama Konusu Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balon Metni Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-link:"Aralık Yok Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Normal1
+	{mso-style-name:Normal1;
+	font-family:"Arial",sans-serif;}
+span.BalonMetniChar
+	{mso-style-name:"Balon Metni Char";
+	mso-style-link:"Balon Metni";
+	font-family:"Segoe UI",sans-serif;}
+span.Gvdemetni
+	{mso-style-name:"Gövde metni_";
+	mso-style-link:"Gövde metni1";
+	background:white;}
+p.Gvdemetni1, li.Gvdemetni1, div.Gvdemetni1
+	{mso-style-name:"Gövde metni1";
+	mso-style-link:"Gövde metni_";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:13.7pt;
+	background:white;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+span.stBilgiChar
+	{mso-style-name:"Üst Bilgi Char";
+	mso-style-link:"Üst Bilgi";}
+span.AltBilgiChar
+	{mso-style-name:"Alt Bilgi Char";
+	mso-style-link:"Alt Bilgi";}
+span.FontStyle15
+	{mso-style-name:"Font Style15";
+	font-family:"Times New Roman",serif;
+	letter-spacing:.5pt;}
+span.FontStyle16
+	{mso-style-name:"Font Style16";
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.FontStyle37
+	{mso-style-name:"Font Style37";
+	font-family:"Times New Roman",serif;}
+span.Gvdemetni0
+	{mso-style-name:"Gövde metni";
+	font-variant:normal !important;
+	letter-spacing:0pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;}
+p.baslk, li.baslk, div.baslk
+	{mso-style-name:baslk;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.altbaslik, li.altbaslik, div.altbaslik
+	{mso-style-name:altbaslik;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.kantab, li.kantab, div.kantab
+	{mso-style-name:kantab;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.fontstyle01
+	{mso-style-name:fontstyle01;
+	font-family:TimesNewRomanPSMT;
+	color:black;
+	font-weight:normal;
+	font-style:normal;}
+p.nor, li.nor, div.nor
+	{mso-style-name:nor;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.metin, li.metin, div.metin
+	{mso-style-name:metin;
+	mso-style-link:"metin Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.baslk0, li.baslk0, div.baslk0
+	{mso-style-name:baslk0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:18.0pt;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.AklamaMetni1, li.AklamaMetni1, div.AklamaMetni1
+	{mso-style-name:"Açıklama Metni1";
+	mso-style-link:"Açıklama Metni Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar
+	{mso-style-name:"Açıklama Metni Char";
+	mso-style-link:"Açıklama Metni1";}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.KonuBalChar
+	{mso-style-name:"Konu Başlığı Char";
+	mso-style-link:"Konu Başlığı";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.ksmblm, li.ksmblm, div.ksmblm
+	{mso-style-name:kısımbölüm;
+	margin-top:2.85pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.nor0, li.nor0, div.nor0
+	{mso-style-name:nor0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.kantab0, li.kantab0, div.kantab0
+	{mso-style-name:kantab0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.NormalWebChar
+	{mso-style-name:"Normal \(Web\) Char\,Normal \(Web\) Char Char Char1\,Normal \(Web\) Char Char Char Char Char\,Normal \(Web\) Char Char Char Char1";
+	mso-style-link:"Normal \(Web\)\,Normal \(Web\) Char Char\,Normal \(Web\) Char Char Char Char\,Normal \(Web\) Char Char Char";
+	font-family:"Times New Roman",serif;}
+p.stylenormal, li.stylenormal, div.stylenormal
+	{mso-style-name:style_normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.stbilgiChar1
+	{mso-style-name:"Üstbilgi Char1";
+	font-family:"Calibri",sans-serif;}
+span.BalonMetniChar1
+	{mso-style-name:"Balon Metni Char1";
+	font-family:"Segoe UI",sans-serif;}
+p.Gvde, li.Gvde, div.Gvde
+	{mso-style-name:Gövde;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	border:none;}
+span.metinChar
+	{mso-style-name:"metin Char";
+	mso-style-link:metin;
+	font-family:"Times New Roman",serif;}
+span.AralkYokChar
+	{mso-style-name:"Aralık Yok Char";
+	mso-style-link:"Aralık Yok";
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar1
+	{mso-style-name:"Açıklama Metni Char1";
+	mso-style-link:"Açıklama Metni";}
+span.AklamaKonusuChar
+	{mso-style-name:"Açıklama Konusu Char";
+	mso-style-link:"Açıklama Konusu";
+	font-weight:bold;}
+p.BasicParagraph, li.BasicParagraph, div.BasicParagraph
+	{mso-style-name:"\[Basic Paragraph\]";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:MinionPro-Regular;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:49.65pt 70.85pt 63.8pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=TR>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+margin-bottom:3.0pt;margin-left:0cm;text-align:center;line-height:150%'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>HAYVANLARI
+KORUMA KANUNUNDA </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+margin-bottom:3.0pt;margin-left:0cm;text-align:center;line-height:150%'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>DEĞİŞİKLİK
+YAPILMASINA DAİR KANUN</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:12.5pt;border-collapse:collapse'>
+ <tr>
+  <td width=211 valign=top style='width:158.25pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-align:justify;line-height:normal'><b><u><span
+  style='font-size:14.0pt;font-family:"Times New Roman",serif'>Kanun No. 7527</span></u></b></p>
+  </td>
+  <td width=121 valign=top style='width:90.85pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:17.0pt;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+  </td>
+  <td width=256 valign=top style='width:192.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=right style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:right;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Times New Roman",serif'> <u>Kabul
+  Tarihi: 30/7/2024       </u></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#00B050'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE 1-</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> </span><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>24/6/2004
+tarihli ve 5199 sayılı Hayvanları Koruma Kanununun 1 inci maddesinin birinci
+fıkrasında yer alan “Kanunun amacı;” ibaresinden sonra gelmek üzere “insan,
+hayvan ve çevre sağlığı gözetilmek kaydıyla” ibaresi eklenmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+2- </span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>5199
+sayılı Kanunun 3 üncü maddesinin birinci fıkrasının (f) ve (j) bentleri
+aşağıdaki şekilde ve (k) bendinde yer alan “ve hayvanların rehabilite
+edileceği”<br>
+ibaresi “, hayvanların sahiplendirilinceye kadar barındırıldığı ve rehabilite
+edildiği” şeklinde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“f)
+Sahipsiz hayvan: Sahipli hayvanlar dışında kalan evcil hayvanları,”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“j)
+Sahipli hayvan: Bir kişi, kuruluş, kurum ya da tüzel kişilik tarafından
+sahiplenilen, bakımı, aşıları, periyodik sağlık kontrolleri yapılan ve Bakanlık
+veri tabanına kaydedilen ev hayvanlarını,”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+3-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun 4 üncü maddesinin birinci fıkrasının (b) bendi yürürlükten
+kaldırılmış, (d) bendinde yer alan “hayvanlara bakan veya bakmak” ibaresi
+“hayvanları sahiplenmek” şeklinde ve (j) bendinde yer alan “ve güçten düşmüş
+hayvanların korunması” ibaresi “hayvanların sahiplendirilinceye kadar
+bakılmaları” şeklinde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+4-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun 6 ncı maddesinin birinci fıkrasında yer alan “, 3285 sayılı
+Hayvan Sağlığı Zabıtası Kanununda öngörülen durumlar dışında” ibaresi “kanuni
+istisnalar hariç” şeklinde, üçüncü fıkrasında yer alan “çevreye olabilecek”
+ibaresi “insan ve çevre sağlığı için oluşabilecek” şeklinde ve “Çevre ve
+Şehircilik Bakanlığı” ibaresi “Çevre, Şehircilik ve İklim Değişikliği
+Bakanlığı” şeklinde, dördüncü fıkrasının son cümlesi aşağıdaki şekilde ve
+altıncı fıkrasında yer alan “hayvanlara bakan veya bakmak” ibaresi “hayvanları
+hayvan bakımevi kurarak sahiplenmek” şeklinde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;line-height:normal'><span lang=EN-GB
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>“Bakımevlerine
+alınan hayvanlar Bakanlık veri sistemine kaydedilir ve rehabilite edilen
+köpekler, sahiplendirilinceye kadar hayvan bakımevlerinde barındırılır.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+5-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun İkinci Kısım Dördüncü Bölüm başlığında yer alan
+“Öldürülmesi” ibaresi “Ötanazisi” şeklinde ve 13 üncü maddesinin başlığı
+“Hayvanların ötanazisi” şeklinde değiştirilmiş, maddeye birinci fıkrasından
+önce gelmek üzere aşağıdaki fıkralar eklenmiş ve mevcut ikinci fıkrasının
+ikinci cümlesinde yer alan “Öldürme esas ve usulleri” ibaresi “Öldürme ve
+ötanazi işlemine ilişkin esas ve usuller” şeklinde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“Bakımevine
+alınan köpeklerden; insan ve hayvanların hayatı ve sağlığı için tehlike teşkil
+eden ve olumsuz davranışları kontrol edilemeyen, bulaşıcı veya tedavi
+edilemeyen hastalığı bulunan ya da sahiplenilmesi yasak olanlara 11/6/2010
+tarihli ve 5996 sayılı Veteriner Hizmetleri, Bitki Sağlığı, Gıda ve Yem
+Kanununun 9 uncu maddesinin üçüncü fıkrasında belirtilen tedbir uygulanır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>Yerel
+yönetimler sahipsiz köpeklere ilişkin yürüttüğü iş ve işlemlerde Bakanlar
+Kurulunun 28/8/2003 tarihli ve 2003/6168 sayılı Kararı ile onaylanan Ev
+Hayvanlarının Korunmasına Dair Avrupa Sözleşmesi kapsamında gerekli idari
+tedbirleri almaya yetkilidir.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+6-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun 14 üncü maddesinin birinci fıkrasının (h) bendinde yer alan
+“Tıbbî” ibaresi “Kanunî ve tıbbî” şeklinde değiştirilmiş ve fıkraya aşağıdaki
+bent eklenmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“o)
+Yerel yönetimler adına toplanan sahipsiz hayvanları bakımevi dışında bir yere
+terk etmek veya bakımevinde barındırılan köpekleri bakımevi dışında bir yere
+bırakmak.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+7-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun 16 ncı maddesinin birinci fıkrasının (b) bendi aşağıdaki
+şekilde değiştirilmiş ve (f) bendi yürürlükten kaldırılmıştır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“b) İl
+sınırları içinde hayvanların korunmasına ilişkin ve sahipsiz hayvanlardan
+kaynaklı sorunları belirleyip, sorunların çözüm tekliflerini içeren yıllık, beş
+yıllık ve on yıllık plan ve projeler yapmak, yıllık hedef raporları hazırlayıp
+Bakanlığın uygun görüşüne sunmak, Bakanlığın olumlu görüşünü alarak insan,
+hayvan ve çevre sağlığına ilişkin her türlü önlemi almak,”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+8- </span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>5199
+sayılı Kanunun 19 uncu maddesinin birinci fıkrasının birinci cümlesi aşağıdaki
+şekilde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“İnsan,
+hayvan ve çevre sağlığının korunması amacıyla bakımevleri, hastaneler ve
+ameliyathaneler kurmak, bunlara ilişkin ilaç, alet ve ekipmanları temin etmek
+ile bakımevlerinde bakım, rehabilitasyon ve sahiplendirme gibi faaliyetleri
+yürütmek için, başta yerel yönetimler olmak üzere diğer ilgili kurum ve
+kuruluşlara teşvik veya Bakanlıkça uygun görülen miktarlarda mali destek
+sağlanır.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+9- </span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>5199
+sayılı Kanunun 24 üncü maddesinin birinci fıkrasında yer alan “ve bu suretle
+bulundurduğu” ibaresi “veya sahiplendiği” şeklinde ve fıkranın son cümlesi
+aşağıdaki şekilde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;line-height:normal'><span lang=EN-GB
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>“Söz konusu
+hayvanlardan sahiplendirilme niteliği olanlar sahiplendirilinceye kadar hayvan
+bakımevinde barındırılır.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+10-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun 28 inci maddesinin birinci fıkrasının (ı) bendinde yer alan
+“ikinci” ibaresi “dördüncü” şeklinde, (j) bendinde yer alan “hayvan başına iki
+bin” ibaresi “hayvan başına altmış bin” şeklinde ve aynı bentte yer alan “idarî
+para cezası.” ibaresi “; (o) bendine aykırı davrananlara hayvan başına elli bin
+Türk lirası idarî para cezası.” şeklinde değiştirilmiş, ikinci fıkrasında yer
+alan “hayvan koruma gönüllüsü,” ibaresi madde metninden çıkarılmıştır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+11-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun 28/A maddesinin ikinci fıkrasına “birinci” ibaresinden
+sonra gelmek üzere “, ikinci ve üçüncü” ibaresi eklenmiş ve yedinci fıkrasında
+yer alan “hayvan koruma gönüllüsü,” ibaresi madde metninden çıkarılmıştır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+12-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun 31 inci maddesinde yer alan “3285 sayılı Hayvan Sağlığı ve
+Zabıtası Kanunu, 4631 sayılı Hayvan Islahı Kanunu” ibaresi “5996 sayılı Kanun”
+şeklinde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+13-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun ek 1 inci maddesinin başlığı “Yerel yönetimlerin
+sorumluluğu” şeklinde değiştirilmiş, birinci fıkrasında yer alan “büyükşehir
+ilçe belediyeleri ile diğer” ibaresi madde metninden çıkarılmış, fıkraya
+“korunması ve” ibaresinden sonra gelmek üzere “sahiplendirilinceye kadar”
+ibaresi, ikinci fıkrasının ikinci cümlesinde yer alan “olmayan belediyeler” ibaresinden
+sonra gelmek üzere “ile il özel idareleri” ibaresi eklenmiş ve fıkranın üçüncü
+ve dördüncü cümleleri ile üçüncü fıkrası aşağıdaki şekilde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;line-height:normal'><span lang=EN-GB
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>“Bakımevlerine
+alınan hayvanlar Bakanlık veri sistemine kaydedilir. Rehabilite edilen köpekler,
+sahiplendirilinceye kadar hayvan bakımevlerinde barındırılır.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“Büyükşehir
+belediyeleri, il belediyeleri ve nüfusu yirmi beş bini aşan belediyeler
+bakımından, geçici 4 üncü maddenin ikinci fıkrasında belirtilen kaynağı
+ayırmayan belediye başkanı ve meclis üyeleri ile ayrılan kaynağı hayvan
+bakımevi kurmak, sahipsiz hayvanları toplamak, rehabilite etmek veya
+sahiplendirilinceye kadar bakmak için sarf etmeyen ya da bu kaynağı başka
+amaçlar için sarf eden belediye başkanı ve belediye yetkililerine altı aydan
+iki yıla kadar hapis cezası verilir.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+14-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun geçici 4 üncü maddesi aşağıdaki şekilde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“GEÇİCİ
+MADDE 4- Büyükşehir belediyeleri, il belediyeleri ve nüfusu yirmi beş bini aşan
+belediyeler 31/12/2028 tarihine kadar ek 1 inci maddenin birinci fıkrasında
+belirtilen hayvan bakımevlerini kurmakla ve mevcut bakımevlerinin koşullarını
+iyileştirmekle yükümlüdür.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>Belediyeler
+31/12/2028 tarihine kadar birinci fıkra gereğince hayvan bakımevleri kurmak,
+rehabilitasyon işlemlerini gerçekleştirmek ve sahipsiz hayvanlara
+sahiplendirilinceye kadar bakmak için kesinleşmiş en son bütçe gelirlerinin
+binde beşi oranında kaynak ayırır. Bu oran büyükşehir belediyelerinde binde üç
+olarak uygulanır. Bu fıkra uyarınca ayrılan ödenekler başka bir amaç için
+kullanılamaz.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>Belediyelerce bu
+maddenin ikinci fıkrasında belirlenen oranların üzerinde yapılan harcamaların
+yüzde 40’ı, tevsik edilmesi kaydıyla ilgili belediyeye Hazine ve Maliye
+Bakanlığınca aktarılır. Ancak, aktarılacak tutar hiçbir şekilde ikinci fıkrada
+belirlenen oranların yüzde 40’ını geçemez. Bu fıkranın uygulanmasına ilişkin
+usul ve esaslar Hazine ve Maliye Bakanlığınca belirlenir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>Kedi ve
+köpek sahipleri, hayvanlarını en geç 31/12/2025 tarihine kadar dijital
+kimliklendirme yöntemleriyle kayıt altına aldırmak zorundadır.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+15-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5199 sayılı Kanunun;</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>a) 5
+inci maddesinin birinci fıkrasında yer alan “veya ona bakan” ibaresi, dördüncü
+fıkrasında yer alan “ve kontrollü hayvanları bulundurma ve” ibaresi ile 17 nci maddesinin
+üçüncü fıkrasında yer alan “ev hayvanları ile” ibaresi metinden çıkarılmış,</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>b) Üçüncü
+Kısım İkinci Bölüm başlığında yer alan “ve Hayvan Koruma Gönüllüleri” ibaresi
+kanun metninden çıkarılmış ve 18 inci maddesi yürürlükten kaldırılmıştır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+16-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+Bu Kanun yayımı tarihinde yürürlüğe girer.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+17-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+Bu Kanun hükümlerini Cumhurbaşkanı yürütür.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;line-height:normal'><span style='font-size:
+12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

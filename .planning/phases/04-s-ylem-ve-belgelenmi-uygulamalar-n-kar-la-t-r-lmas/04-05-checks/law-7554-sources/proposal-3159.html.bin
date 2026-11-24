@@ -1,0 +1,2560 @@
+<!doctype html>
+<html lang="TR-tr">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="language" content="tr" />
+   
+
+
+        <title>TÜRKİYE BÜYÜK MİLLET MECLİSİ</title>
+
+    <meta name="title" content="TÜRKİYE BÜYÜK MİLLET MECLİSİ">
+    <meta name="description" content="Türkiye Büyük Millet Meclisi Resmi İnternet Sitesi">
+    <meta name="classification" content="government">
+
+
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="max-snippet:[255]" />
+    <meta name="robots" content="max-image-preview:standart" />
+    <meta name="robots" content="max-video-preview:[10]" />
+
+    <meta name="google" content="sitelinkssearchbox" />
+    <meta name="google-site-verification" content="tbmm.gov.tr" />
+    <meta name="googlebot-image" content="index, follow" />
+    <meta name="MSNBot-Media" content="index, follow" />
+
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--
+    <link href="~/anasayfa/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    -->
+
+
+    <link rel="shortcut icon" type="image/ico" href="/favicon/favicon.ico" />
+
+
+
+    <!-- generics -->
+    <link rel="icon" href="/favicon/16x16.png" sizes="16x16">
+    <link rel="icon" href="/favicon/32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon/180x180.png" sizes="180x180">
+    <link rel="icon" href="/favicon/192x192.png" sizes="192x192">
+    <link rel="icon" href="/favicon/512x512.png" sizes="512x512">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="192x192" href="/favicon/192x192.png">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/favicon/180x180.png" sizes="180x180">
+
+
+
+
+
+
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap_520/bootstrap.min.css" />
+
+<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+
+
+<link rel="stylesheet" href="/css/tbmm-yeni-tasarim.css" />
+
+
+    
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9Z7KYM55Q"></script>
+    <script>
+            window.dataLayer = window.dataLayer || []; 
+            function gtag() { dataLayer.push(arguments); } 
+            gtag('js', new Date()); 
+            gtag('config', 'G-Q9Z7KYM55Q');
+    </script>
+
+
+
+</head>
+<body>
+
+
+<style>
+    .navbar .megamenu {
+        padding: 1rem;
+    }
+
+    /* ============ desktop view ============ */
+    @media all and (min-width: 992px) {
+
+        .navbar .has-megamenu {
+            position: static !important;
+        }
+
+        .navbar .megamenu {
+            left: 0;
+            right: 0;
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    /* ============ desktop view .end// ============ */
+
+    /* ============ mobile view ============ */
+    @media(max-width: 991px) {
+        .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+            overflow-y: auto;
+            max-height: 90vh;
+            margin-top: 10px;
+        }
+    }
+
+
+
+    
+
+
+
+</style>
+<header>
+    <div id="header-container">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+
+
+                    <div id="header-banner">
+
+                        <div id="header-background">
+
+                            <a id="header-link" href="/">
+                                <div id="header-background-image">
+                                </div>
+                                <div id="header-logo">
+                                    <img alt="Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur." src="/img/tbmm-logo.png" />
+                                </div>
+
+                                <div id="header-title">
+                                    <span id="header-title-main">
+                                        TÜRKİYE BÜYÜK MİLLET MECLİSİ
+                                    </span>
+                                    <span id="header-title-sub">
+                                        “EGEMENLİK KAYITSIZ ŞARTSIZ MİLLETİNDİR”
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="header-buttons-holder">
+
+                            <a id="header-language-button" target="_self" href="https://global.tbmm.gov.tr">
+                                <span class="header-language-button-span">EN </span>
+                                <img alt="Sayfanın dilini ingilizceye döndürmek için kullanılan icon" src="/img/icon_language.png" />
+                            </a>
+                            <div id="header-search-button-holder">
+                                <div class="search-box">
+                                    <input id="genel-arama-input" target-url="/Arama/Sonuc" type="text" class="search-input" placeholder="Arama">
+                                    <button style="background:none; border:none" class="search-btn" href="#" onclick="GenelArama()">
+                                        <img alt="Sayfa içersinde arama yapmak için kullanılan icon" src="/img/icon_search.png" />
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-container-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="header-menu-bar">
+
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="/">ANASAYFA</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    BAŞKAN
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/ozgecmis">Öz Geçmiş</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/haberler">Haberler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/mesajlar">Mesajlar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/meclis-baskanlari">TBMM Başkanları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/baskan/iletisim">İletişim</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    MİLLETVEKİLLERİ
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili-arama/form">Arama</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/liste">Liste</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/milletvekiligi-sona-erenler">Milletvekilliği Sona Erenler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/sandalyedagilimi">Sandalye Dağılımı</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/eposta-liste">E-Posta</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/milletvekili/telefon-liste">Telefon Rehberi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    YASAMA
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yasama/kanun-teklifleri">Kanun Teklifleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/ihtisas-komisyonlari/liste">İhtisas Komisyonları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Yasama/Kanunlar">Kanunlar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Yasama/Kararlar">Kararlar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Yasama/Khklar">Kanun Hükmünde Kararnameler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yasama/cumhurbaskanligi-kararnamaleri">Cumhurbaşkanlığı Kararnameleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yasama/komisyon-raporlari">Komisyon Raporları</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    DENETİM
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/yazili-soru-onergeleri">Yazılı Soru Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/genel-gorusme-onergeleri">Genel Görüşme Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-arastirma-onergeleri">Meclis Araştırması Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-sorusturma-onergeleri">Meclis Soruşturması Önergeleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-arastirmasi-komisyonlari">Meclis Araştırması Komisyonları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/meclis-sorusturmasi-komisyonlari">Meclis Soruşturması Komisyonları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/denetim/gensoru-onergeleri">Geçmiş Dönemler Gensoru Önergeleri</a></li>
+                                                   
+
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    TUTANAKLAR
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                  
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/SonTutanak">Son Tutanak</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/TutanakSorgu">Tutanak Sorgu</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/TutanakMetinleri">Tutanak Metinleri</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/DoneminTutanakMetinleri?Donem=26&amp;YasamaYili=1">Tutanak Özetleri (Yazılı, Seslendirme, İşaret Dili)</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/GizliOturumTutanaklari">Gizli Oturum Tutanakları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kutuphane-tutanaklara-erisim">1908'den Günümüze Tutanaklar</a></li></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/SecilmisTutanaklar">Seçilmiş Tutanaklar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Tutanaklar/KomisyonTutanaklari">Komisyon Tutanakları</a></li>
+                                                 
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    GÜNDEM
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Gundem/GenelKurulGundemi">Genel Kurul Gündemi</a></li>
+                                                <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Gundem/KomisyonGundemleri">Komisyon Gündemleri</a></li>
+                                                <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/Gundem/GelenKagitlarListe">Gelen Kağıtlar</a></li>
+                                            </ul>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    KURUMSAL
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-baskanlik-divani">TBMM Başkanlık Divanı</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-genel-sekreter">Genel Sekreter</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/teskilat-semasi">Teşkilat Şeması</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-idari-teskilat">İdari Teşkilat</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-mevzuat">Mevzuat</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/etikkomisyonu-giris">Etik Komisyonu</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/arabuluculuk-komisyonu-iletisim-bilgileri">Arabuluculuk Komisyonu</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/kurumsal-genel-sekreterler">Genel Sekreterlerimiz</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/BilgiEdinme">Bilgi Edinme</a></li>
+  
+                                            </ul>
+                                            </li>
+
+
+
+
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    YAYINLAR
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/Meclis-Baskanlari-Konusmalari">Meclis Başkanları Konuşmaları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar-milletvekilleri-albumu">Milletvekilleri Albümü</a></li>
+                                                    <!-- <li><img src="~/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/yuzuncu-yil-eserleri">100. Yıl Eserler</a></li>  -->
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/PrestijEserler">Prestij Kitaplar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/TbmmYayinlari">TBMM Yayınları</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/Brosurler">Broşürler</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/Kitapciklar">Kitapçıklar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" href="/yayinlar/MeclisHaberDergisi">Meclis Haber Dergisi</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" target="_blank" href="https://acikerisim.tbmm.gov.tr/">Elektronik Kitaplar</a></li>
+                                                    <li><img src="/images/yeni_tasarim/BrownRightArrowIcon.png" /><a class="dropdown-item" target="_blank" href="https://tbmm.gov.tr/kutuphane-bakim">İstiklal Mahkemeleri Kataloğu</a></li>
+
+                                                </ul>
+                                            </li>
+
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </nav>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="header-container-mobile" >
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 g-0">
+                    <div id="header-banner">
+
+                        <div id="header-background">
+                            <div id="header-background-image"></div>
+                        </div>
+
+                        <a id="header-link" href="/">
+                            <div id="header-logo">
+                                <img src="/img/tbmm-logo.png" />
+                            </div>
+                        </a>
+
+                        <!--
+                        <a id="header-mobile-menu" href="javascript:void(0)" onclick="MobileMenuGoster()">
+                           </a>
+                           -->
+                            <!--
+                            <img src="~/img/hamburger_menu_icon.png" />
+                            -->
+                            <div id="mobileHamburgerMenu" class="navMobile">
+                                <a href="javascript:void(0)" onclick="MobileMenuGosterKapatYeni()" id="navButton">
+                                    <div></div>
+                                </a>
+                            </div>
+
+
+                     
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    
+        <div id="MobileMenuAlani">
+
+                <div id="mobile-menu-header">
+                 
+               
+                    <!--
+                             <a id="mobile-menu-close-button" href="javascript:void(0)" onclick="MobileMenuKapat()">
+                  
+                                <img src="~/img/menu_close_icon.png" />
+                          
+                            </a>
+                       -->
+
+
+
+                <img alt="Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur." src="/img/tbmm-logo.png" />
+
+
+
+                    <div id="mobile-menu-title-holder">
+                        <span id="header-title-main">
+                            TÜRKİYE BÜYÜK MİLLET MECLİSİ
+                        </span>
+                        <span id="header-title-sub">
+                            “EGEMENLİK KAYITSIZ ŞARTSIZ MİLLETİNDİR”
+                        </span>
+                        <span id="header-title-line"></span>
+                    </div>
+
+                </div>
+
+                <div id="mobile-menu-arama-alani">
+                    <div id="mobile-menu-arama-alani-background">
+                        <form method="Get" action="/Arama/Sonuc">
+                            <input id="mobile-menu-arama-alani-input" name="q" type="text" />
+                            <button id="mobile-menu-arama-alani-submit" type="submit">
+                            <img alt="Sayfa içersinde arama yapmak için kullanılan icon" src="/img/menu_search_icon.png" />
+                            </button>
+                        </form>
+                    </div>
+                    <div id="mobile-menu-eng-button">
+                        <a href="https://global.tbmm.gov.tr/">EN</a>
+                    </div>
+
+                </div>
+
+
+                <div id="mobile-menu-liste-alani">
+
+
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+
+
+                        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">ANASAYFA</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">BAŞKAN</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/baskan/ozgecmis">Öz Geçmiş</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/haberler">Haberler</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/mesajlar">Mesajlar</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/meclis-baskanlari">TBMM Başkanları</a></li>
+                                        <li><a class="dropdown-item" href="/baskan/iletisim">İletişim</a></li>
+                                    </ul>
+                                </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            MİLLETVEKİLLERİ
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/milletvekili-arama/form"> Arama</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/liste"> Liste</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/milletvekiligi-sona-erenler"> Milletvekilliği Sona Erenler</a></li>
+                                            <li><a class="dropdown-item" href="/sandalyedagilimi"> Sandalye Dağılımı</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/eposta-liste"> E-Posta</a></li>
+                                            <li><a class="dropdown-item" href="/milletvekili/telefon-liste"> Telefon Rehberi</a></li>                                          
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            YASAMA
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/yasama/kanun-teklifleri"> Kanun Teklifleri</a></li>
+                                            <li><a class="dropdown-item" href="/ihtisas-komisyonlari/liste"> İhtisas Komisyonları</a></li>
+                                            <li><a class="dropdown-item" href="/Yasama/Kanunlar">  Kanunlar</a></li>
+                                            <li><a class="dropdown-item" href="/Yasama/Kararlar"> Kararlar</a></li>
+                                            <li><a class="dropdown-item" href="/Yasama/Khklar">  Kanun Hükmünde Kararnameler</a></li>
+                                            <li><a class="dropdown-item" href="/yasama/cumhurbaskanligi-kararnamaleri">  Cumhurbaşkanlığı Kararnameleri</a></li>
+                                            <li><a class="dropdown-item" href="/yasama/komisyon-raporlari"> Komisyon Raporları</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            DENETİM
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/denetim/yazili-soru-onergeleri">Yazılı Soru Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/genel-gorusme-onergeleri">Genel Görüşme Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-arastirma-onergeleri">Meclis Araştırması Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-sorusturma-onergeleri">Meclis Soruşturması Önergeleri</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-arastirmasi-komisyonlari">Meclis Araştırması Komisyonları</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/meclis-sorusturmasi-komisyonlari">Meclis Soruşturması Komisyonları</a></li>
+                                            <li><a class="dropdown-item" href="/denetim/gensoru-onergeleri">Geçmiş Dönemler Gensoru Önergeleri</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            TUTANAKLAR
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/Tutanaklar/SonTutanak">Son Tutanak</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/TutanakSorgu">Tutanak Sorgu</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/TutanakMetinleri">Tutanak Metinleri</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/DoneminTutanakMetinleri?Donem=26&amp;YasamaYili=1">Tutanak Özetleri (Yazılı, Seslendirme, İşaret Dili)</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/GizliOturumTutanaklari">Gizli Oturum Tutanakları</a></li>
+                                            <li><a class="dropdown-item" href="/kutuphane-tutanaklara-erisim">1908'den Günümüze Tutanaklar</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/SecilmisTutanaklar">Seçilmiş Tutanaklar</a></li>
+                                            <li><a class="dropdown-item" href="/Tutanaklar/KomisyonTutanaklari">Komisyon Tutanakları</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            GÜNDEM
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/Gundem/GenelKurulGundemi">Genel Kurul Gündemi</a></li>
+                                        <li><a class="dropdown-item" href="/Gundem/KomisyonGundemleri">Komisyon Gündemleri</a></li>
+                                        <li><a class="dropdown-item" href="/Gundem/GelenKagitlarListe">Gelen Kağıtlar</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            KURUMSAL
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                            <li><a class="dropdown-item" href="/kurumsal-baskanlik-divani">TBMM Başkanlık Divanı</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-genel-sekreter">Genel Sekreter</a></li>
+                                            <li><a class="dropdown-item" href="/teskilat-semasi">Teşkilat Şeması</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-idari-teskilat">İdari Teşkilat</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-mevzuat">Mevzuat</a></li>
+                                            <li><a class="dropdown-item" href="/etikkomisyonu-giris">Etik Komisyonu</a></li>
+                                            <li><a class="dropdown-item" href="/arabuluculuk-komisyonu-iletisim-bilgileri">Arabuluculuk Komisyonu</a></li>
+                                            <li><a class="dropdown-item" href="/kurumsal-genel-sekreterler">Genel Sekreterlerimiz</a></li>
+                                            <li><a class="dropdown-item" href="/BilgiEdinme">Bilgi Edinme</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            YAYINLAR
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/yayinlar/Meclis-Baskanlari-Konusmalari">Meclis Başkanları Konuşmaları</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar-milletvekilleri-albumu">Milletvekilleri Albümü</a></li>
+                                            
+                                            <!-- <li><a class="dropdown-item" href="/yayinlar/yuzuncu-yil-eserleri">100. Yıl Eserler</a></li>  -->
+                                            <li><a class="dropdown-item" href="/yayinlar/PrestijEserler">Prestij Kitaplar</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/TbmmYayinlari">TBMM Yayınları</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/Brosurler">Broşürler</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/Kitapciklar">Kitapçıklar</a></li>
+                                            <li><a class="dropdown-item" href="/yayinlar/MeclisHaberDergisi">Meclis Haber Dergisi</a></li>
+                                            <li><a class="dropdown-item" target="_blank" href="https://acikerisim.tbmm.gov.tr/">Elektronik Kitaplar</a></li>
+                                        <li><a class="dropdown-item" target="_blank" href="https://tbmm.gov.tr/kutuphane-bakim">İstiklal Mahkemeleri Kataloğu</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                    </nav>
+
+
+                </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</header>
+    
+
+
+
+
+
+
+<div id="kanun-teklifi-detay" class="common-page-content page-content">
+    <div class="container g-0">
+        <div class="row g-0">
+            <div class="col-lg-8 col-md-12">
+                <div id="content-dinamik-title">
+                    <div id="content-title-type">
+                        KANUN TEKL&#x130;F&#x130; BİLGİLERİ
+                    </div>
+                </div>
+                <div class="blog-content tbmm-div-list">
+                    <table class="table table-striped">
+
+                        <tr>
+                            <td style="width:25%"></td>
+                            <td><a target="_blank" href="https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y3/T2/WebOnergeMetni/ffbdd768-1ca1-4682-bf20-a42fd3cd17e2.pdf">Kanun Teklifinin Metni</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Dönemi ve Yasama Yılı</b></td>
+                            <td>28 / 3</td>
+                        </tr>
+                        <tr>
+                            <td><b>Esas Numarası</b></td>
+                            <td>2 / 3159</td>
+                        </tr>
+                        <tr>
+                            <td><b>Başkanlığa Geliş Tarihi</b></td>
+                            <td>13/06/2025</td>
+                        </tr>
+                        <tr>
+                            <td><b>Teklifin Ba&#x15F;l&#x131;&#x11F;&#x131;</b></td>
+                            <td>Baz&#x131; Kanunlarda De&#x11F;i&#x15F;iklik Yap&#x131;lmas&#x131;na Dair Kanun Teklifi</td>
+                        </tr>
+                        <tr>
+                            <td><b>Teklifin &#xD6;zeti</b></td>
+                            <td>Teklif ile, r&#xFC;zg&#xE2;r ve g&#xFC;ne&#x15F; enerjilerine yap&#x131;lan yat&#x131;r&#x131;mlar&#x131; art&#x131;rmak amac&#x131;yla yenilenebilir enerji projelerine ait izin s&#xFC;re&#xE7;lerinin sadele&#x15F;tirilerek h&#x131;zland&#x131;r&#x131;lmas&#x131;, mevcut yerli k&#xF6;m&#xFC;r yak&#x131;tl&#x131; termik santrallerin ham madde arz&#x131; sorunlar&#x131; nedeniyle kapanma tehlikelerinin &#xF6;n&#xFC;ne ge&#xE7;mek amac&#x131;yla ge&#xE7;ici d&#xFC;zenleme yap&#x131;lmas&#x131;, maden arama ve i&#x15F;letme faaliyetlerine y&#xF6;nelik izin s&#xFC;re&#xE7;lerinin Maden ve Petrol &#x130;&#x15F;leri Genel M&#xFC;d&#xFC;rl&#xFC;&#x11F;&#xFC;nce ruhsat verilmeden &#xF6;nce tamamlanmas&#x131;, &#xE7;evresel etki de&#x11F;erlendirmesi s&#xFC;re&#xE7;leri ve izin s&#xFC;re&#xE7;leri aras&#x131;ndaki koordinasyonun art&#x131;r&#x131;larak yat&#x131;r&#x131;mlar&#x131;n h&#x131;zland&#x131;r&#x131;lmas&#x131;, arama faaliyetlerinin daha nitelikli y&#xF6;ntemlerle yap&#x131;lmas&#x131; ve te&#x15F;vik edilmesi, i&#x15F;letme a&#x15F;amas&#x131;nda yat&#x131;r&#x131;mc&#x131; taraf&#x131;ndan verilen taahh&#xFC;tlerin ger&#xE7;ekle&#x15F;tirilmesine y&#xF6;nelik ilave tedbirlerin al&#x131;nmas&#x131;, kurumlar aras&#x131; ihtilaf halinde IV. Grup ile stratejik veya kritik madenlere ili&#x15F;kin izinlerin Cumhurba&#x15F;kan&#x131; yard&#x131;mc&#x131;s&#x131; ba&#x15F;kanl&#x131;&#x11F;&#x131;nda ve ilgili bakanlar&#x131;n kat&#x131;l&#x131;m&#x131; ile te&#x15F;ekk&#xFC;l eden Kurul taraf&#x131;ndan verilmesinin sa&#x11F;lanmas&#x131;, stratejik ve kritik madenlere ili&#x15F;kin acele kamula&#x15F;t&#x131;rma imkan&#x131; ve stoklama y&#xFC;k&#xFC;ml&#xFC;l&#xFC;&#x11F;&#xFC; getirilmesi, maden arama ruhsat&#x131; d&#xFC;zenlenebilmesi i&#xE7;in yat&#x131;r&#x131;m teminat&#x131; &#x15F;art&#x131; getirilmesi ile arama ruhsat&#x131; d&#xF6;neminde taahh&#xFC;t edilen yat&#x131;r&#x131;m&#x131;n ger&#xE7;ekle&#x15F;tirilememesi halinde teminat&#x131;n irat kaydedilmesi ve asgari arama faaliyetlerinin y&#xFC;r&#xFC;t&#xFC;lmemesi halinde ruhsat iptali yapt&#x131;r&#x131;m&#x131;n&#x131;n getirilmesi, ruhsat s&#xFC;resinin uzat&#x131;lmas&#x131; taleplerinin uygun bulunabilmesi i&#xE7;in asgari standartlarda &#xFC;retim faaliyeti &#x15F;art&#x131; getirilmesi, rehabilitasyon bedellerinin art&#x131;r&#x131;lmas&#x131; ve rehabilitasyon y&#xFC;k&#xFC;ml&#xFC;l&#xFC;&#x11F;&#xFC;ne uyumu sa&#x11F;lamak i&#xE7;in yeni y&#xFC;k&#xFC;ml&#xFC;l&#xFC;kler belirlenmesi ama&#xE7;lanmaktad&#x131;r.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Son Durumu</b></td>
+                            <td>KANUNLA&#x15E;TI</td>
+                        </tr>
+                        <tr>
+                            <td><b>Teklifin Sonucu</b></td>
+                            <td>KANUNLA&#x15E;TI</td>
+                        </tr>
+                    </table>
+                    <!-- BASLA -  Kanun Teklifi Komisyon Bilgileri -->
+                        <div class="p-3 mb-2 bg-secondary tbmm-div-sayfa-ici-baslik" style="margin:10px 0px 0px 0px;width:100%;">KANUN TEKL&#x130;F&#x130; KOMİSYON BİLGİLERİ</div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Komisyon Tipi</th>
+                                    <th>Adı</th>
+                                    <th>Giriş Tarihi</th>
+                                    <th>Çıkış Tarihi</th>
+                                    <th>Yapılan İşlem</th>
+                                    <th>Karar Tarihi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>Esas Komisyon</td>
+                                        <td>
+                                            <a target="_blank" href="/ihtisas-komisyonlari/Icerik/ihtisas-komisyonlari-sanayi-ticaret-enerji-tabii-kaynaklar-bilgi-ve-teknoloji-komisyonu-hakkinda/sanayi-ticaret-enerji-tabii-kaynaklar-bilgi-ve-teknoloji-komisyonu/F72877D1-B474-037B-E050-007F01005610">SANAY&#x130;,  T&#x130;CARET, ENERJ&#x130;, TAB&#x130;&#x130; KAYNAKLAR, B&#x130;LG&#x130; VE TEKNOLOJ&#x130;  KOM&#x130;SYONU</a>
+                                        </td>
+                                        <td>13/06/2025</td>
+                                        <td>23/06/2025</td>
+                                        <td>Raporunu Verdi</td>
+                                        <td>20/06/2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tali Komisyon</td>
+                                        <td>
+                                            <a target="_blank" href="/ihtisas-komisyonlari/Icerik/ihtisas-komisyonlari-cevre-komisyonu-hakkinda/cevre-komisyonu/F72877D1-B46D-037B-E050-007F01005610">&#xC7;EVRE KOM&#x130;SYONU</a>
+                                        </td>
+                                        <td>13/06/2025</td>
+                                        <td>23/06/2025</td>
+                                        <td>Raporunu Vermedi</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tali Komisyon</td>
+                                        <td>
+                                            <a target="_blank" href="/ihtisas-komisyonlari/Icerik/ihtisas-komisyonlari-tarim-orman-ve-koyisleri-komisyonu-hakkinda/tarim-orman-ve-koyisleri-komisyonu/F72877D1-B476-037B-E050-007F01005610">TARIM, ORMAN VE K&#xD6;Y&#x130;&#x15E;LER&#x130; KOM&#x130;SYONU</a>
+                                        </td>
+                                        <td>13/06/2025</td>
+                                        <td>23/06/2025</td>
+                                        <td>Raporunu Vermedi</td>
+                                        <td></td>
+                                    </tr>
+                            </tbody>
+
+                        </table>
+                    <!-- SON - Kanun Teklifi Komisyon Bilgileri -->
+                    <!-- BASLA - Komisyon Raporu Sırasayısı -->
+                            <div class="p-3 mb-2 bg-secondary tbmm-div-sayfa-ici-baslik" style="margin:10px 0px 0px 0px;width:100%;">KOMİSYON RAPORU</div>
+                            <table class="table table-striped">
+
+                                <tbody>
+
+                                    <tr>
+                                        <td style="width:80%">
+
+Esas Komisyon Raporu(Sırasayısı)
+
+                                        </td>
+                                        <td>
+
+                                                <a target="_blank" href="https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y3/T2/DosyaKomisyonRaporunuVerdi/01166932-08c9-4414-9133-ddc70467ece0.pdf">215</a>
+
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+
+
+                                </tbody>
+
+
+                            </table>
+                    
+
+                    <!-- SON - Komisyon Raporu EkSırasayısı -->
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                    <!-- BASLA - Kanun/Karar Numarası -->
+                                    <div class="p-3 mb-2 bg-secondary tbmm-div-sayfa-ici-baslik" style="margin:10px 0px 0px 0px;width:100%;">
+                                        KANUN NUMARASI
+                                    </div>
+                                    <table class="table table-striped">
+                                        <tbody>
+
+                                            <tr>
+                                                <td style="width:80%">
+                                                    KANUN NUMARASI
+                                                </td>
+                                                <td>
+
+                                                    <a target="_blank" href="/Yasama/Kanun/80d8f541-8c22-47af-ae19-019769447bc3">7554</a>
+
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                    <!-- SON - Kanun/Karar Numarası -->
+                    <!-- BASLA - Esas Alınan Teklif -->
+                    <!-- SON - Esas Alınan Teklif -->
+                    <!-- BASLA - Birleşenler -->
+                    <!-- SON - Birleşenler -->
+                    <!-- BASLA - OnergeninOncekiDonemBilgileriVms -->
+                    <!-- SON - OnergeninOncekiDonemBilgileriVms -->
+                    <!-- BASLA - OnergeninSonrakiDonemBilgileriVms -->
+                    <!-- SON - OnergeninSonrakiDonemBilgileriVms -->
+                    <!-- BASLA - Kanun Teklifi İmza Sahipleri -->
+                        <div class="p-3 mb-2 bg-secondary tbmm-div-sayfa-ici-baslik" style="margin:10px 0px 0px 0px;width:100%;">KANUN TEKLİFİ İMZA SAHİPLERİ</div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Adı ve Soyadı</th>
+                                    <th>Partisi</th>
+                                    <th>Seçim Çevresi</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d9d6-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        O&#x11F;uzhan KAYA
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#xC7;orum</td>
+                                        <td>&#x130;lk &#x130;mza Sahibi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc2a-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ahmet &#xC7;OLAKO&#x11E;LU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Zonguldak</td>
+                                        <td>&#x130;lk &#x130;mza Sahibi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc0d-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x15E;ahin T&#x130;N
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Denizli</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=5c67bef9-a43d-496c-adfc-01887b1544e5">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ersan AKSU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Samsun</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d96d-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Nilg&#xFC;n &#xD6;K
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Denizli</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=974f1aac-4881-4671-b45f-0188760daad6">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x130;brahim Ethem TA&#x15E;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Antalya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=487da061-a03a-4c7e-9847-0188768ac47f">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Seda SARIBA&#x15E;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ayd&#x131;n</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=b80cb256-0e95-451f-95e6-01887725bf1e">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x15E;eng&#xFC;l KARSLI
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=59bb4ce4-0779-4f0f-8371-018857ef70ca">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Necmettin ERKAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>K&#x131;r&#x15F;ehir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=8794d5a2-ed93-4c8b-8346-0188766a076f">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#xD6;mer &#xD6;ZMEN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ayd&#x131;n</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=6ade9097-9834-44b5-9db4-01886c284155">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mustafa O&#x11E;UZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Burdur</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=085c2d12-1d52-40e8-a426-01887b00b7ec">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Y&#x131;ld&#x131;z KONAL S&#xDC;SL&#xDC;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=d85eba3d-1738-4980-803a-018876eff13f">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ruken K&#x130;LERC&#x130;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>A&#x11F;r&#x131;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-da04-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet U&#x11F;ur G&#xD6;KG&#xD6;Z
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Isparta</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=7bfd1e01-88a5-4e72-9d86-0188760498f3">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Adem KORKMAZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Burdur</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=ec963599-271b-4f54-8c0b-01887164bf0f">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Fahrettin TU&#x11E;RUL
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>U&#x15F;ak</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=e72e2415-1f37-4d78-b3bf-01886769eda4">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Sunay KARAMIK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Adana</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=c8dd2a52-b139-436a-9c8b-0188719ac82c">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Halil ULUAY
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kastamonu</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-da00-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Osman MESTEN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bursa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d03f-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Adem YE&#x15E;&#x130;LDAL
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Hatay</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=0b9abc5e-6bac-4bdc-8a2a-01887aed0413">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Kemal KARAHAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Hatay</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc13-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Abdulkadir &#xD6;ZEL
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Hatay</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=3c2ad0c7-7a43-4ade-b57d-018866ca405c">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ahmet Ersagun Y&#xDC;CEL
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=36eb9984-ca9c-4daa-b406-01887afb517d">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Rabia &#x130;LHAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=6b5c0649-ccf2-4d47-afaa-018876e78827">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        B&#xFC;&#x15F;ra PAKER
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=24f64882-f4f9-4c1f-958a-01886702f73c">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mahmut R&#x131;dvan NAZIRLI
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Elaz&#x131;&#x11F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=a56d0c26-07d9-4d5b-aa37-01887664b2c9">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Osman ZABUN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Isparta</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-daff-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Y&#xFC;ksel CO&#x15E;KUNY&#xDC;REK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bolu</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d995-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x130;smail G&#xDC;NE&#x15E;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>U&#x15F;ak</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d927-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Orhan ERDEM
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Konya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=77ef29c5-9693-4eb7-84fe-01886bf49289">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Adem &#xC7;ALKIN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kars</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d954-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet Emin &#x15E;&#x130;M&#x15E;EK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Mu&#x15F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=d35d50b8-c392-4259-9f23-018876e4cc7c">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Yakup OTG&#xD6;Z
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Mu&#x11F;la</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=fe1ebd37-50ca-4d40-8fe4-01886742d45e">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ercan &#xD6;ZT&#xDC;RK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>D&#xFC;zce</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=775dee21-c8a7-4533-b684-0188668d33eb">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Cevahir UZKURT
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ni&#x11F;de</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=1396bdc3-a93f-4d38-9bbf-018877237616">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Yahya &#xC7;EL&#x130;K
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=d966ee8e-5123-4fba-ad25-01886c26cadd">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Yusuf AHLATCI
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#xC7;orum</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=4d804eac-0ad4-4397-b33d-01886762726e">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        L&#xFC;tfi BAYRAKTAR
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Sakarya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=ac283a32-cb8f-48c1-8429-0188668ac644">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        S&#xFC;leyman &#xD6;ZG&#xDC;N
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Nev&#x15F;ehir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=bfd7f6e4-866c-4741-9c2b-01887111567a">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Cevahir Asuman YAZMACI
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x15E;anl&#x131;urfa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=8fe17667-cff7-4213-9bd2-018876675d09">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mustafa ALKAYI&#x15E;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ad&#x131;yaman</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=c4e0e5b9-eb46-42c2-bf61-01887698d0fc">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ertu&#x11F;rul KOCACIK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Sakarya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dd08-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        L&#xFC;tfiye Selva &#xC7;AM
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ankara</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d994-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Asuman ERDO&#x11E;AN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ankara</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d915-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Meliha AKYOL
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Yalova</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=5d99af0c-e966-4ee7-9ea2-0188771fdca7">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Veysal T&#x130;P&#x130;O&#x11E;LU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kocaeli</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=ff24dde3-7242-4b44-b580-0188762797cb">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Cant&#xFC;rk ALAG&#xD6;Z
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>I&#x11F;d&#x131;r</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d854-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        C&#xFC;neyt Y&#xDC;KSEL
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc44-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x15E;amil AYRIM
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=2bf137cd-1a17-4cdd-bd09-0188666946d2">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Resul KURT
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ad&#x131;yaman</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc65-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ziya ALTUNYALDIZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Konya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=dc9e2e0e-3b14-448c-b9d6-018871123be0">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Yusuf Ziya ALDATMAZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bart&#x131;n</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=753fc85d-d760-4e09-9178-01886c4704cc">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Hikmet BA&#x15E;AK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x15E;anl&#x131;urfa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-cd06-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Burhan KAYAT&#xDC;RK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Van</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=1e693b8c-2062-4524-a880-0188765a9ebe">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet Emin &#xD6;Z
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Erzurum</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-cce6-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Kayhan T&#xDC;RKMENO&#x11E;LU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Van</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=5363241f-4c1d-4c1d-bf91-0188712e8549">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Latif SELV&#x130;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Konya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-ca3c-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ali &#x130;NC&#x130;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Sakarya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dbf7-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Abdullah DO&#x11E;RU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Adana</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=38e15a4e-ae75-4e7f-bb6d-018870af5a05">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ferhat NASIRO&#x11E;LU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Batman</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=81dde651-23a5-4d7a-a818-018871b30f16">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Tuba K&#xD6;KSAL
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kahramanmara&#x15F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=bad394a2-e484-48b5-9378-01887605db79">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#xD6;mer Oru&#xE7; Bilal DEBG&#x130;C&#x130;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kahramanmara&#x15F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=27d79972-abee-483f-a1b0-01886c909569">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Faruk AYTEK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Adana</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=168c27ad-f684-4708-ac0b-018866b3eb11">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Havva Sibel S&#xD6;YLEMEZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Mersin</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc36-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Refik &#xD6;ZEN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bursa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d98a-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet Ali &#xC7;ELEB&#x130;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;zmir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=1b91a562-8dff-437d-bc34-0188771ba64f">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Kaan KO&#xC7;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ardahan</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=daf6ff3e-6d17-477b-989f-0188674f0718">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        C&#xFC;neyt ALDEM&#x130;R
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Tokat</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=13c6d46b-8a4e-4897-b2c6-018866e25460">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Seydi G&#xDC;LSOY
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Osmaniye</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=feac2cc5-7d6d-4955-9200-01886c2116b7">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet Eyup &#xD6;ZKE&#xC7;EC&#x130;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Gaziantep</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=6d5f4c44-dd3c-4752-91a5-01886b95a044">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Abdurrahim FIRAT
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Erzurum</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dd1c-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        R&#xFC;meysa KADAK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=6d0f8f03-595a-4d5c-8ffe-01884892d207">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mestan &#xD6;ZCAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Tekirda&#x11F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=0922f25e-2266-4dd3-ad96-018866d8a2a2">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x130;rfan &#xC7;EL&#x130;KASLAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Gaziantep</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=153c73b0-b5d8-48a7-9dbe-018852d2a007">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Zehranur AYDEM&#x130;R
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Ankara</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=9c786b2c-936a-4685-837c-018876e1c75b">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet BAYKAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Konya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dca8-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x130;brahim YURDUNUSEVEN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Afyonkarahisar</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d2e0-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Suat PAMUK&#xC7;U
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=43c2435b-8261-473e-ad19-018866e3b62a">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Hasan ARSLAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Afyonkarahisar</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=b45dd046-b137-450b-b2c9-018876e374e0">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x130;smail ERDEM
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=b0b5fb26-c901-4280-90ae-018866f71696">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ayhan SALMAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bursa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=c935c0cd-f4bf-438f-a576-018870fb8260">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#x130;brahim EYY&#xDC;PO&#x11E;LU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x15E;anl&#x131;urfa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=8f9cf849-720f-4b21-aada-0188772fc6a9">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mustafa YAVUZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bursa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=af48b4fb-e1e4-43fb-b485-01887730a22b">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mervan G&#xDC;L
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Siirt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dd07-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mustafa CANBEY
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bal&#x131;kesir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=176557eb-70ad-4775-9b31-0188667b1fed">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Saffet BOZKURT
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Zonguldak</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-bffb-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ejder A&#xC7;IKKAPI
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Elaz&#x131;&#x11F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=5a6d1615-a4e0-4ef0-b4ae-01886c8e366f">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Hakan AKSU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Sivas</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=4d65aa37-1d29-4836-a3f4-01886b937186">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Zeki KORKUTATA
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bing&#xF6;l</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=d754e45c-7300-4cf3-b139-01886c660913">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Erol KELE&#x15E;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Elaz&#x131;&#x11F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc7c-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mustafa ARSLAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Tokat</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=4aa61b78-ba24-40a0-aecf-0188717fb6af">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Nurettin ALAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d940-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#xC7;i&#x11F;dem KONCAG&#xDC;L
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Tekirda&#x11F;</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=c5d82ae1-18db-49a1-a808-018871134f8c">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        &#xDC;mm&#xFC;g&#xFC;l&#x15F;en &#xD6;ZT&#xDC;RK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d9ae-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ya&#x15F;ar KIRKPINAR
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;zmir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=7849e13d-bdf0-4655-9a0f-0188668b58a4">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet Sait YAZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Diyarbak&#x131;r</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=3bbbd903-20ad-4f74-bb15-0188773183a5">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Sadettin H&#xDC;LAG&#xDC;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kocaeli</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=a28d6736-8e34-4dff-830e-01886c92df36">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Osman SA&#x11E;LAM
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Karaman</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d929-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Fehmi Alpay &#xD6;ZALAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;zmir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=ba2c30d1-3e5e-47f1-8535-01886c1b2646">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mustafa Hakan &#xD6;ZER
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Konya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=b7b0421d-192c-4877-96f4-01886c770267">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Say&#x131;n Bayar &#xD6;ZSOY
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kayseri</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=ea663758-7136-4d49-b027-018871154525">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Abd&#xFC;rrahim DUSAK
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x15E;anl&#x131;urfa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=b0fee96c-d779-45dd-acab-01886623df60">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Murat KAYA
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Sakarya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc38-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Muhammet M&#xFC;fit AYDIN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Bursa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d9ac-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Sami &#xC7;AKIR
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kocaeli</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc72-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Cemil YAMAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kocaeli</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d986-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Murat BAYBATUR
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Manisa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d993-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Ahmet M&#xFC;cahit ARIN&#xC7;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Manisa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc6f-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Hasan &#xC7;&#x130;LEZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Amasya</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=a1cb9579-b4c2-46d2-b86b-018867ad7923">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Emre &#xC7;ALI&#x15E;KAN
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Nev&#x15F;ehir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dc57-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Fatih D&#xD6;NMEZ
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Eski&#x15F;ehir</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=c750b19e-afb2-4d6a-bf23-0188719df1e8">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Arslan TATAR
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x15E;&#x131;rnak</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d9bc-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Naz&#x131;m MAV&#x130;&#x15E;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Sinop</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=e7b0c06f-7540-444c-8260-01887af2d476">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Sevan SIVACIO&#x11E;LU
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-d9b5-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Mehmet Ali CEVHER&#x130;
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x15E;anl&#x131;urfa</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=7af06509-bd5c-4ea7-a35f-01887b219868">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Y&#xFC;cel Arzen HACIO&#x11E;ULLARI
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>&#x130;stanbul</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/milletvekili/MilletvekiliDetay?DonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7&amp;Id=f72877c2-dd1e-037b-e050-007f01005610">
+                                                <!-- milletvekili dönemi kanunTeklifiBilgileriVm den geliyor sicilide imzaSahibi den alınacak.-->
+                                        Hulusi AKAR
+
+                                            </a>
+                                        </td>
+                                        <td>ADALET VE KALKINMA PART&#x130;S&#x130;</td>
+                                        <td>Kayseri</td>
+                                        <td></td>
+                                    </tr>
+                            </tbody>
+
+
+                        </table>
+                    <!-- SON - Kanun Teklifi İmza Sahipleri -->
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="col-md-4">
+<div id="sag_menu_holder">
+
+<div id="anasayfa-social-area">
+        <a id="anasayfa-social-link-tbmm-tv" href="https://tv.tbmm.gov.tr/">
+        <div>
+            <span id="tbmm-tv-img-text-holder">
+               <!-- <img src="~/images/yeni_tasarim/icon_tbmm_tv.png" /> --> TBMM TV
+               
+            </span>
+        </div>
+    </a>
+    <a target="_blank" href="https://www.facebook.com/TBMMresmi/">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_facebook.png">
+        </div>
+
+    </a>
+
+    <a target="_blank" href="https://twitter.com/TBMMresmi">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_twitter.png">
+
+        </div>
+    </a>
+
+
+    <a id="anasayfa-social-link-instagram" target="_blank" href="https://www.instagram.com/tbmmresmi/">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_instagram.png">
+        </div>
+    </a>
+
+    <a target="_blank" id="anasayfa-social-link-youtube" href="https://www.youtube.com/c/tbmm">
+        <div>
+            <img src="/images/yeni_tasarim/Icon_youtube.png">
+        </div>
+    </a>
+</div>
+
+    <div id="yeni_tasarim_sag_menu">
+
+        <ul>
+            <li>
+                <a href="/parlamentolar-arasi-iliskiler">
+                    <div class="sag-menu-border-holder">
+                        <div class="image-holder">
+                            <img src="/images/yeni_tasarim/icon_parlamentolar_arasi_iliskiler.png" />
+                        </div>
+                        PARLAMENTOLAR ARASI İLİŞKİLER
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/Kutuphane">
+                    <div class="sag-menu-border-holder">
+                        <div class="image-holder">
+                            <img src="/images/yeni_tasarim/icon_kutuphane.png" />
+                        </div>
+                        KÜTÜPHANE VE ARŞİV
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/anayasa">
+                    <div class="sag-menu-border-holder">
+                        <div class="image-holder">
+                            <img src="/images/yeni_tasarim/icon_anayasa.png" />
+                        </div>
+                        ANAYASA VE İÇTÜZÜK SİTESİ
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/kanun-ve-karar-bilgi-sistemi">
+                    <div class="sag-menu-border-holder">
+                        <div class="image-holder">
+                            <img src="/images/yeni_tasarim/icon_kanun_ve_kararlar.png" />
+                        </div>
+                        KANUN VE KARAR BİLGİ SİSTEMİ
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://edilekce.tbmm.gov.tr/">
+                    <div class="sag-menu-border-holder">
+                        <div class="image-holder">
+                            <img src="/images/yeni_tasarim/icon_edilekce.png" />
+                        </div>
+                        E-DİLEKÇE
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="http://tbmm.gov.tr/BilgiEdinme">
+                    <div class="sag-menu-border-holder">
+                        <div class="image-holder">
+                            <img src="/images/yeni_tasarim/icon_bilgi_edinme.png" />
+                        </div>
+                        BİLGİ EDİNME
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+<div id="sag-menu-duyurular-alani" style="margin-top:15px;">
+
+    <div id="sag-menu-duyurular-alani-holder">
+        <div id="sag-menu-duyurular-alani-baslik">
+            DUYURULAR
+        </div>
+    </div>
+    <div id="sag-menu-duyurular-icerigi-holder">
+        <ul>
+            <li>
+                <a href="/ISAY/icerik-listesi?contentBoxName=TBMMGenelDuyurular"><span class="duyuru-baslik">Genel Duyurular</span></a>
+            </li>
+
+            <li>
+                <a href="/ISAY/icerik-listesi?contentBoxName=TBMMSinavDuyurusu"> <span class="duyuru-baslik">Sınav Duyurusu</span></a>
+            </li>
+
+            <li>
+                <a href="/ISAY/icerik-listesi?contentBoxName=TBMMStajDuyurulari"> <span class="duyuru-baslik">İnsan Kaynakları Staj Duyurusu</span></a>
+            </li>
+            <li>
+                <a href="/saglik-duyurulari"> <span class="duyuru-baslik">Sağlık Duyuruları</span></a>
+            </li>
+            <li>
+                <a href="/ISAY/icerik-listesi?contentBoxName=TBMMIsciDuyurusu"> 
+                    <span class="duyuru-baslik">
+                         İşçi Alımı
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div>            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="footer-container">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="footer-image-alani">
+                    <img alt="Sayfanın alt kısmında bulunan Türkiye Büyük Millet Meclisinin siluetinin bulunduğu resim" src="/images/yeni_tasarim/tbbm_siluet_footer.png" />
+                    <br />
+                    <span>
+                        EGEMENLİK KAYITSIZ ŞARTSIZ MİLLETİNDİR
+                    </span>
+                </div>
+
+                <div id="footer-linkler-alani">
+                    <div id="fl-baskanlik">
+                        <span>
+                            <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('tbmmBaskanligi')">                        
+                                TBMM Başkanlığı    
+                                 <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="tbmmBaskanligi">
+                            <li><a href="http://tbmm.gov.tr/baskan/ozgecmis"><i class="icon-caret-right"></i>TBMM Başkanı</a></li>
+                            <li><a href="/kurumsal-baskanlik-divani"><i class="icon-caret-right"></i>Başkanlık Divanı</a></li>                        
+                            <li><a href="/turkiye-buyuk-millet-meclisi-baskanvekilleri"><i class="icon-caret-right"></i>Başkanvekilleri</a></li>
+                            <li><a href="/turkiye-buyuk-millet-meclisi-katip-uyeleri"><i class="icon-caret-right"></i>Katip Üyeler</a></li>
+                            <li><a href="/turkiye-buyuk-millet-meclisi-idare-amirleri"><i class="icon-caret-right"></i>İdare Amirleri</a></li>
+                        
+                        </ul>
+                    </div>
+
+                    <div id="fl-idari-teskilat">
+                        <span>
+                            <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('idariTeskilat')">       
+                                İdari Teşkilat
+                                <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="idariTeskilat">
+                            <li><a href="/kurumsal-genel-sekreter"><i class="icon-caret-right"></i>Genel Sekreter</a></li>
+                            <li><a href="/etikkomisyonu-giris"><i class="icon-caret-right"></i>Etik Komisyonu</a></li>
+                            <li><a href="/kurumsal-tarihce"><i class="icon-caret-right"></i>Tarihçe</a></li>
+                            <li><a href="/kurumsal-mevzuat"><i class="icon-caret-right"></i>Mevzuat</a></li>
+                            <li><a href="/teskilat-semasi"><i class="icon-caret-right"></i>Teşkilat Şeması</a></li>
+                            <li><a href="http://tbmm.gov.tr/kurumsal/telefonrehberi"><i class="icon-caret-right"></i>Telefon Rehberi</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div id="fl-tbmm-ziyaret">
+                        <span>
+                             <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('ziyaretEdin')">     
+                                    TBMM'yi Ziyaret Edin
+                                     <img src="/img/footer_asaga_ok.png" />
+                              </a>
+                        </span>
+                        <ul id="ziyaretEdin">
+                            <li><a href="/tbmm-basin-yayin-ve-halkla-iliskiler-baskanligi-rehberlik-hizmetleri"><i class="icon-caret-right"></i>Randevulu Gezi</a></li>
+                            <li><a href="https://www.turkiye.gov.tr/tbmm-randevu"><i class="icon-caret-right"></i>E-Devlet Üzerinden Randevu</a></li>
+                            <li><a href="/halk-gunu"><i class="icon-caret-right"></i>Halk Günü</a></li>
+                            <li><a href="https://kurtulussavasimuzesi.tbmm.gov.tr/" target="_blank"><i class="icon-caret-right"></i>Kurtuluş Savaşı Müzesi</a></li>
+                            <li><a href="http://tbmm.gov.tr/Sayfa/SanalTur"><i class="icon-caret-right"></i>Sanal Tur</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="fl-engelsiz-meclis">
+                        <span>
+                             <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('engelsizMeclis')">     
+                            Engelsiz Meclis
+                             <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="engelsizMeclis">
+                            <li><a href="https://www.youtube.com/playlist?list=PLptIGXuA0xRRhzDoKVTM-8jrYVKxexL22"><i class="icon-caret-right"></i>İşitme Engelliler</a></li>
+                            <li><a href="http://tbmm.gov.tr/Sayfa/EngelsizMeclis"><i class="icon-caret-right"></i>Görme Engelliler</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div id="fl-aydinlatma">
+                        <span>
+                            <a href="javascript:void(0)" onclick="MobilFooterMenuAcKapat('aydinlatma')">
+                                Hızlı Erişim
+                                <img src="/img/footer_asaga_ok.png" />
+                            </a>
+                        </span>
+                        <ul id="aydinlatma">
+                            <li><a target="_blank" href="https://www.tbmm.gov.tr/Files/CerezAydinlatmaMetni.pdf"><i class="icon-caret-right"></i>Çerez Politikası</a></li>
+                            <li><a target="_blank" href="https://www.tbmm.gov.tr/Files/KisiselVerilerAydinlatmaMetni.pdf"><i class="icon-caret-right"></i>Aydınlatma Metni</a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div id="footer-end-line">
+                    <div id="footer-tbmm-logo-holder">
+                        <img alt="Türkiye Büyük Millet Meclisi Logosu - Kırmızı bir daire içinde ortasında beyaz ay ve yıldız onun etrafında daireyi çevreleyen Türkiye Büyük Millet Meclisi yazısından oluşur." src="/img/tbmm-logo.png">
+                    </div>
+
+                    <div id="footer-tbmm-text-holder">
+                        <div id="footer-tbmm-text-holder-tbmm">
+                            Türkiye Büyük Millet Meclisi
+                        </div>
+                        <div id="footer-tbmm-text-holder-kurumsal">
+                            Kurumsal İnternet Sayfası
+                        </div>
+                    </div>
+
+
+
+                    <div id="footer-adres-area">
+                        <span id="footer-bize-ulasin-title">
+                            <a style="color:white" href="https://www.tbmm.gov.tr/Sayfa/Iletisim">
+                                BİZE ULAŞIN
+                            </a>
+                        </span>
+                        <address>
+                        <div><span  id="footer_home_icon">
+                                    <img alt="Tbmm adresi iconu" src="/images/yeni_tasarim/tbmm_home_icon.png" />
+                                </span>Atatürk Bulvarı TBMM 06543  Bakanlıklar - ANKARA
+                            </div>
+                        <div><span>
+                                    <img alt="Tbmm telefonu iconu" src="/images/yeni_tasarim/tbmm_tel_icon.png" />
+                                </span><a href="tel:03124205000">0 (312) 420 50 00</a>
+                            </div>
+                            <div><span id="footer_email_icon">
+                                    <img alt="Eposta adresi iconu" src="/images/yeni_tasarim/tbmm_email_icon.png" />
+                                </span>
+                                <a href="mailto:ozelkalem@tbmm.gov.tr">ozelkalem@tbmm.gov.tr</a></div>
+                        </address>
+
+                    </div>
+
+
+
+                    <div id="footer-social-area">
+
+                        <a target="_blank" href="https://www.facebook.com/TBMMresmi/">
+                            <div>
+                                <img alt="Facebook iconu" style="width:19%;" src="/images/yeni_tasarim/Icon_facebook.png">
+                            </div>
+
+                        </a>
+
+                        <a target="_blank" href="https://twitter.com/TBMMresmi">
+                            <div>
+                                <img alt="Twitter iconu" src="/images/yeni_tasarim/Icon_twitter.png">
+
+                            </div>
+                        </a>
+
+
+                        <a  target="_blank" href="https://www.instagram.com/tbmmresmi/">
+                            <div>
+                                <img alt="Instagram iconu" src="/images/yeni_tasarim/Icon_instagram.png">
+                            </div>
+                        </a>
+
+
+                        <a target="_blank" id="anasayfa-social-link-youtube" href="https://www.youtube.com/c/tbmm">
+                            <div>
+                                <img alt="Youtube iconu" src="/images/yeni_tasarim/Icon_youtube.png">
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    
+
+<script src="/js/bootstrap_520/bootstrap.bundle.min.js"></script>
+
+<script src="/js/jquery-3.6.0.min.js"></script> 
+
+<script src="/js/tbmm-yeni-tasarim.js"></script>
+    
+
+</body>
+</html>
+
+
