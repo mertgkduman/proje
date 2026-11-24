@@ -1,0 +1,69 @@
+{
+  "tranche_id": "0410-emep-api-277",
+  "read_at": "2026-11-24T15:38:03.103451+00:00",
+  "method": "Özgün API HTML gövdeleri doğrudan okundu; tam gövdeler ve aralıklar UTF-8 SHA-256 ile bağlandı.",
+  "research_leads": [
+    {
+      "post_id": 3379,
+      "lead": "8 Ekim 2019 tezkereye hayır çağrısı; TBMM 27/3/3 ilk oturum 15.00, Irak-Suriye 3/878 ve kabul tutanakta görünüyor. Aynı gün kabul edilen Mali/Orta Afrika 3/879 değildir.",
+      "preliminary_primary": "https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d27/c018/tbmm27018003.pdf",
+      "open": "Özgün TBMM baytlarını arşivleyip 3/878 kimliğini, kabulü, gün içi sıralamayı ve mevcut paketlerle eş olay bulunup bulunmadığını bağımsız sınamadan aday sayılmadı."
+    }
+  ],
+  "limitations": [
+    "Belirtilen vergi, askerî ve seçim iddiaları bağımsız doğrulanmadı.",
+    "Gün içi karşılaştırmada API zaman dilimi ve resmî tutanak olayı ayrı doğrulanmalıdır.",
+    "Kapsam kapanışı yapılmadı."
+  ],
+  "parts": [
+    {
+      "post_id": 3382,
+      "url": "https://www.emep.org/vergi-paketi-ve-2020-butcesi-ile-krizin-yuku-halka-fatura-ediliyor-bu-faturayi-odemeyecegiz",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "api_date": "2019-10-26T13:17:51",
+      "body_sha256": "ff4da23525fcfaae9d8cb2e623316bde3d3aab62681336555a7e037db5d8280c",
+      "start_char": 0,
+      "end_char": 3100,
+      "slice_sha256": "ff4da23525fcfaae9d8cb2e623316bde3d3aab62681336555a7e037db5d8280c",
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Şükran Doğan 2020 bütçesi ve vergi paketi hakkında asgari ücretin vergi dışı bırakılması, dolaylı vergi yükünün kaldırılması ve eğitim/sağlığa kaynak talep eder. Vergi dilimi, araç sayıları ve Cumhurbaşkanlığı ödeneklerine ilişkin sayılar tasarı, kanun ve bütçe gerçekleşmeleriyle ayrı doğrulanmalı."
+    },
+    {
+      "post_id": 3379,
+      "url": "https://www.emep.org/bedel-odemeyi-kabul-etmeyelim-savasa-hayir",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "api_date": "2019-10-08T13:18:39",
+      "body_sha256": "6a36f1ebf486482827eb7facb5dba17b5e41292a834389817952178008b02e8e",
+      "start_char": 0,
+      "end_char": 4317,
+      "slice_sha256": "6a36f1ebf486482827eb7facb5dba17b5e41292a834389817952178008b02e8e",
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "EMEP Genel Merkezi 8 Ekim 2019 yayımlı açıklamasında Fırat’ın doğusunda operasyonu eleştirir ve TBMM milletvekillerine tezkereye hayır oyu çağrısı yapar. API yayım saati 13.18.39; metin teklif numarası vermez. Aynı günkü 3/878 Irak-Suriye tezkere görüşmesi ile ilişki ve önce-sonra bağı özgün Meclis kaydıyla ayrıca sınanmalı; 3/879 Mali/Orta Afrika ayrı."
+    },
+    {
+      "post_id": 3377,
+      "url": "https://www.emep.org/hukumet-suriyede-girdigi-tehlikeli-yoldan-vazgecmeli",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "api_date": "2019-10-07T18:04:31",
+      "body_sha256": "71b8417054c35b4530f4fad0824ad3198da7791fda56fb181cd2919fcb8941af",
+      "start_char": 0,
+      "end_char": 1675,
+      "slice_sha256": "71b8417054c35b4530f4fad0824ad3198da7791fda56fb181cd2919fcb8941af",
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Selma Gürkan 7 Ekim 2019’da Suriye’ye yönelik askerî operasyona karşı çıkıp hükümeti bu yoldan dönmeye çağırır. Güvenlik ve diğer devletlerin amaçları hakkındaki değerlendirmeler partinin görüşüdür; tezkere veya operasyonun sonucu değildir."
+    },
+    {
+      "post_id": 3374,
+      "url": "https://www.emep.org/yuzde-40-ya-da-50-arti-1-tartismasiyla-tek-adam-rejiminin-basarisizligi-kapatilamaz",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "api_date": "2019-10-07T15:12:37",
+      "body_sha256": "7dd92bba128d3121d14612b1e82204dbd650616be00771054d2d7204a6c0dc7d",
+      "start_char": 0,
+      "end_char": 3125,
+      "slice_sha256": "7dd92bba128d3121d14612b1e82204dbd650616be00771054d2d7204a6c0dc7d",
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Gürkan yüzde 40 artı 1 ve yüzde 50 artı 1 tartışması bağlamında seçim barajından ziyade demokratikleşmeyi savunur, atanmışlar yönetimi yerine yöneticilerin seçim ve halkça denetlenmesini ister. Metin bir anayasa değişikliği veya gerçekleşmiş yeni eşik göstermez."
+    }
+  ],
+  "closure_refs": []
+}
