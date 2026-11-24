@@ -1,0 +1,149 @@
+[
+  {
+    "candidate_key": "halic-emek-ozgurluk-2022-09-24",
+    "differing_fields": [],
+    "canonical_event_id": "0405-tip-halic-cemevi-2022-halic-event",
+    "decision": "same",
+    "common_source_sha256": [
+      "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e"
+    ],
+    "overlap_reason": "DBP, aynı Bianet haberinin özdeş özgün baytlarında eş genel başkanı Keskin Bayındır’ın katılımını belgeliyor. Önceki üç çalışmanın olay kimlikleri, kaynakları ve katkıları korunuyor. DBP katkısı salonda bulunma ile sınırlı.",
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-24T23:04:01.121060+00:00",
+    "members": {
+      "tip": {
+        "event": {
+          "id": "0405-tip-halic-cemevi-2022-halic-event",
+          "common_event_key": "halic-emek-ozgurluk-2022-09-24",
+          "event_at": "2022-09-24",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Emek ve Özgürlük İttifakı’nın Haliç halk buluşması",
+          "scope_context": "24 Eylül 2022’de İstanbul Haliç Kongre Merkezi’nde düzenlenen Emek ve Özgürlük İttifakı halk buluşması ve deklarasyonun açıklanması.",
+          "occurrence_basis": "24 Eylül 2022 tarihli Bianet haberi ve HDP yayını, Haliç Kongre Merkezi’ndeki halk buluşmasını ve deklarasyonun açıklanmasını bildiriyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0405-tip-halic-cemevi-2022-halic-held-p",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "24 Eylül Haliç buluşmasının gerçekleşmesi",
+            "claim": "Haliç Kongre Merkezi’nde 24 Eylül buluşması yapıldı."
+          },
+          {
+            "passage_id": "0405-tip-halic-cemevi-2022-halic-delivered-p",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Bianet haberinde buluşmada deklarasyonun açıklanması",
+            "claim": "Haliç programında ortak deklarasyon açıklandı."
+          },
+          {
+            "passage_id": "0405-tip-halic-cemevi-2022-halic-parts-p",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Bianet haberinin kurucu bileşenleri",
+            "claim": "TİP ortak buluşmanın kurucu bileşenlerinden biri olarak anıldı."
+          },
+          {
+            "passage_id": "0405-tip-halic-cemevi-2022-halic-spoke-p",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Bianet haberinde Erkan Baş’ın konuşması",
+            "claim": "Erkan Baş Haliç toplantısında konuştu."
+          }
+        ]
+      },
+      "dem": {
+        "event": {
+          "id": "0406-halic-2022-event",
+          "common_event_key": "halic-emek-ozgurluk-2022-09-24",
+          "event_at": "2022-09-24",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Emek ve Özgürlük İttifakı’nın Haliç halk buluşması",
+          "scope_context": "24 Eylül 2022’de İstanbul Haliç Kongre Merkezi’nde düzenlenen Emek ve Özgürlük İttifakı halk buluşması ve deklarasyonun açıklanması.",
+          "occurrence_basis": "24 Eylül 2022 tarihli Bianet haberi ve HDP yayını, Haliç Kongre Merkezi’ndeki halk buluşmasını ve deklarasyonun açıklanmasını bildiriyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0406-halic-2022-occurrence",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Haliç buluşması",
+            "claim": "Haliç buluşması"
+          },
+          {
+            "passage_id": "0406-halic-2022-presence",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Yeşil Sol temsilcilerinin katılımı",
+            "claim": "Yeşil Sol temsilcilerinin katılımı"
+          }
+        ]
+      },
+      "dbp": {
+        "event": {
+          "id": "0409-halic-2022-dbp-event",
+          "common_event_key": "halic-emek-ozgurluk-2022-09-24",
+          "event_at": "2022-09-24",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Emek ve Özgürlük İttifakı’nın Haliç halk buluşması",
+          "scope_context": "24 Eylül 2022’de İstanbul Haliç Kongre Merkezi’nde düzenlenen Emek ve Özgürlük İttifakı halk buluşması ve deklarasyonun açıklanması.",
+          "occurrence_basis": "24 Eylül 2022 tarihli Bianet haberi ve HDP yayını, Haliç Kongre Merkezi’ndeki halk buluşmasını ve deklarasyonun açıklanmasını bildiriyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0409-halic-2022-bianet-event",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Haliçte ortak halk buluşması",
+            "claim": "Bianet Haliç halk buluşmasını bildirir."
+          },
+          {
+            "passage_id": "0409-halic-2022-bianet-declaration",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Halk buluşmasında deklarasyon açıklanması",
+            "claim": "Bianet buluşmada deklarasyonun açıklandığını bildirir."
+          },
+          {
+            "passage_id": "0409-halic-2022-bianet-attendance",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Buluşmada sayılan kişiler",
+            "claim": "Bianet Bayındırı salonda bulunanlar arasında sayar."
+          }
+        ]
+      },
+      "emep": {
+        "event": {
+          "id": "0410-halic-2022-event",
+          "common_event_key": "halic-emek-ozgurluk-2022-09-24",
+          "event_at": "2022-09-24",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Emek ve Özgürlük İttifakı’nın Haliç halk buluşması",
+          "scope_context": "24 Eylül 2022’de İstanbul Haliç Kongre Merkezi’nde düzenlenen Emek ve Özgürlük İttifakı halk buluşması ve deklarasyonun açıklanması.",
+          "occurrence_basis": "24 Eylül 2022 tarihli Bianet haberi ve HDP yayını, Haliç Kongre Merkezi’ndeki halk buluşmasını ve deklarasyonun açıklanmasını bildiriyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0410-halic-2022-bianet-meeting-p",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Haliçte yol haritası toplantısı",
+            "claim": "Bianet güncellenen haberi Haliçte yol haritası buluşmasını bildirir."
+          },
+          {
+            "passage_id": "0410-halic-2022-bianet-declaration-p",
+            "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+            "source": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+            "section": "Halk buluşmasında deklarasyon açıklanması",
+            "claim": "Bianet güncellenen haberi halk buluşmasında deklarasyonun açıklandığını bildirir."
+          }
+        ]
+      }
+    }
+  }
+]

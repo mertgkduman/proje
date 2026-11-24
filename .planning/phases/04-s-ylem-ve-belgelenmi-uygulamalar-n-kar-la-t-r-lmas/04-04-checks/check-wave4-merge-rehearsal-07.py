@@ -20,14 +20,23 @@ if baseline:
 else:
     before=json.loads((checks/"wave4-common-event-audit-10.json").read_bytes())
 groups = {row["candidate_key"]:row for row in audit["common_event_candidates"]}
-prior_keys = {row["candidate_key"] for row in before["common_event_candidates"]}
+prior_groups = {row["candidate_key"]: row for row in before["common_event_candidates"]}
 overlap_doc = json.loads(Path(sys.argv[5]).read_bytes()) if len(sys.argv) > 5 else []
 overlaps = overlap_doc if isinstance(overlap_doc, list) else [overlap_doc]
-added_keys = {overlap["candidate_key"] for overlap in overlaps}
-assert len(added_keys) == len(overlaps)
-assert set(groups) == prior_keys | added_keys and not prior_keys & added_keys
-assert before["common_event_candidates"] == [row for row in audit["common_event_candidates"]
-                                             if row["candidate_key"] in prior_keys]
+reviewed_keys = {overlap["candidate_key"] for overlap in overlaps}
+assert len(reviewed_keys) == len(overlaps)
+added_keys = reviewed_keys - prior_groups.keys()
+expanded_keys = reviewed_keys & prior_groups.keys()
+assert set(groups) == prior_groups.keys() | added_keys
+for key, group in prior_groups.items():
+    if key not in expanded_keys:
+        assert group == groups[key]
+        continue
+    old_members = {row["event"]["id"]: row for row in group["party_records"]}
+    current_members = {row["event"]["id"]: row for row in groups[key]["party_records"]}
+    assert old_members.keys() < current_members.keys()
+    assert all(current_members[ident] == row for ident, row in old_members.items())
+    assert {row["party"] for row in old_members.values()} < {row["party"] for row in current_members.values()}
 preceding_decisions = Path(sys.argv[6]).stem+"-decisions.json" if baseline else "wave4-merge-rehearsal-06-decisions.json"
 previous=json.loads((checks/preceding_decisions).read_bytes())
 inventory=json.loads((data/"practices/04-inventory.json").read_bytes())
@@ -62,7 +71,12 @@ for party, row in audit["packages"].items():
 
 members={event["event"]["id"]:event["party"] for group in audit["common_event_candidates"] for event in group["party_records"]}
 decisions=[]
+previous_expansions = {}
 for record in previous["decisions"]:
+    if record["id"] in expanded_keys:
+        assert record["decision"] == "same"
+        previous_expansions[record["id"]] = record
+        continue
     refs=[dict(event_id=ref["event_id"],input_package_sha256=envelopes[members[ref["event_id"]]])
           for ref in record["event_refs"]]
     decisions.append(dict(record,event_refs=refs))
@@ -87,8 +101,15 @@ for overlap in overlaps:
         assert overlap["common_source_sha256"]
     else:
         assert overlap["decision"] == "unresolved" and canonical is None
+    reason = overlap["overlap_reason"]
+    if key in expanded_keys:
+        prior = previous_expansions[key]
+        assert overlap["decision"] == "same" and canonical == prior["canonical_event_id"]
+        assert {ref["event_id"] for ref in prior["event_refs"]} < {ref["event_id"] for ref in refs}
+        assert set(prior["source_passage_ids"]) <= set(evidence)
+        reason = f'{prior["overlap_reason"]} {reason}'
     decisions.append(dict(id=key,candidate_keys=[key],event_refs=refs,
-        decision=overlap["decision"],canonical_event_id=canonical,overlap_reason=overlap["overlap_reason"],
+        decision=overlap["decision"],canonical_event_id=canonical,overlap_reason=reason,
         source_passage_ids=sorted(evidence),reviewed_at=overlap["reviewed_at"],reviewer_kind=overlap["reviewer_kind"]))
 decision_bytes=(_json(dict(decisions=decisions,input_digests=envelopes,
                            inventory_digest=_digest(inventory),version=1))+"\n").encode()
@@ -117,6 +138,8 @@ if baseline or overlaps:
     receipt.update(original_stages=stages,isolated_stage="partial",isolated_envelope_sha256=envelopes,
         merged_events=counts["practice_event"],merged_relations=counts["practice_relation"],
         closure_count=counts["practice_closure"],event_aliases=receipt["aliases"],added_reviewed_candidates=sorted(added_keys))
+    if expanded_keys:
+        receipt["expanded_reviewed_candidates"] = sorted(expanded_keys)
     with output.with_name(output.stem+"-decisions.json").open("xb") as stream:
         stream.write(decision_bytes)
 with output.open("x") as stream:

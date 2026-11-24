@@ -6,7 +6,7 @@ current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılmas
 current_plan: 4
 status: executing
 stopped_at: Wave 4 source research and isolated previews in progress
-last_updated: "2026-11-24T22:35:06Z"
+last_updated: "2026-11-24T23:07:08Z"
 last_activity: 2026-11-24
 last_activity_desc: Phase 04 wave 4 research and package verification in progress
 state_head: 9ad927100a7fddb2df27731dbac0f4b43fcdb14a
@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
 Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: 2026-11-24 UTC — Birleşik prova 14 bağımsız doğrulandı. 551 olay, 384 ilişki ve 204 eşleşmemiş aday. Dokuz partinin 5.490 kapsam hücresi açık.
+Last activity: 2026-11-24 UTC — Amasra, São Paulo ve Van yalıtılmış denetimleri geçti. TİP dizinindeki 190 açıklama okundu. Birleşik prova 15 çalışıyor. Dokuz partinin 5.490 hücresi açık.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-24T19:35:28Z
-Stopped at: Birleşik prova 14 (62625117) bağımsız doğrulandı. Amasra ve São Paulo, Van mazbata ve DBP Haliç çalışmalarının doğrulaması sürüyor.
+Last session: 2026-11-24T23:07:08Z
+Stopped at: Birleşik prova 14 bağımsız doğrulandı. Birleşik prova 15 (62629055) ve TİP okul, Montrö ve Paris denetimi (62628991) sürüyor.
 Resume file: None
