@@ -1,0 +1,19 @@
+{
+  "attempts": [
+    {
+      "job": "62575664",
+      "state": "FAILED",
+      "exit_code": "1:0",
+      "package_sha256": "e2124c64fd44f4cf834615fae376c181b7ea0d23bc3d89ca7be9a38a789c0014",
+      "review_sha256": "1c444259b8dda79784e933d5011f2f7c2c901f68112495f9258de6a139bdba2c",
+      "reason": "Girdi yükleme sırası. Elle doğrulama satırı aynı çıktı dizisindeki pasajdan önceydi."
+    },
+    {
+      "job": "62575744",
+      "state": "submitted",
+      "package_sha256": "2dd16c019b1bfe74e87dcc2da2a24664884be7f29d85bf1955be28eb4e5abe17",
+      "review_sha256": "9cb39143f4f55542102269b5d58c4dc48ff29640780ac44d9f4e96cb7af8a349",
+      "reason": "Görsel okuma makbuzu artık doğruladığı pasajın hemen ardından ekleniyor. Özgün kaynak baytları ve karşılaştırma alanları aynı."
+    }
+  ]
+}

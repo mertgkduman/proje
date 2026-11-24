@@ -97,16 +97,19 @@ for role, (filename, day, title, anchors) in specs.items():
     for suffix, page, exact in anchors:
         pid = doc + '-' + suffix + '-p'
         content = html_source_text(raw) if page is None else pdf_page_text(src, page)
-        if role == 'court' and page == 7:
+        optical = role == 'court' and page == 7
+        if optical:
             assert not content.strip()
-            add('manual_passage', passage_id=pid, checked_at=now,
-                method='Özgün Resmî Gazete PDF’sinin sekizinci sayfası Poppler ve Cairo üzerinden görsel okundu.',
-                reason='Sekizinci sayfanın metin katmanı boş. E.2022/129 K.2023/189 aynı sayının fihristinde kayıtlı.')
         else:
             assert exact in content, (role, suffix)
         add('passage', id=pid, version_id=version, exact=exact, prefix=None, suffix=None,
             article='29' if suffix == 'article29' else None, section=sections[suffix],
             pdf_page_index=page, printed_page=None)
+        if optical:
+            add('manual_passage', passage_id=pid, checked_at=now,
+                method='Özgün Resmî Gazete PDF’sinin sekizinci sayfası Poppler ve Cairo üzerinden görsel okundu.',
+                reason='Sekizinci sayfanın metin katmanı boş. E.2022/129 K.2023/189 aynı sayının fihristinde kayıtlı.')
+
 with (checks / 'law-7418-source-draft.json').open('x') as fh:
     json.dump({'entries': entries}, fh, ensure_ascii=False, indent=2)
     fh.write('\n')

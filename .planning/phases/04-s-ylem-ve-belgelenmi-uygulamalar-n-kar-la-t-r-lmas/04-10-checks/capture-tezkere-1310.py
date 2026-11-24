@@ -106,19 +106,21 @@ for filename, role, day, title in source_specs:
     for suffix, page, printed, section, exact in passage_specs[role]:
         pid = doc + '-' + suffix + '-p'
         content = html_source_text(raw) if page is None else pdf_page_text(source, page)
-        if role == 'gazette' and page == 1:
+        optical = role == 'gazette' and page == 1
+        if optical:
             assert not content.strip(), (role, page)
-            add(
-                'manual_passage', passage_id=pid, checked_at=now,
-                method='Özgün Resmî Gazete PDF sayfası Poppler ve Cairo ile görselleştirilerek okundu.',
-                reason='İkinci sayfanın metin katmanı boş. Kararın son cümlesi ve tutanak kabul pasajı karşılaştırıldı.',
-            )
         else:
             assert exact in content, (role, page, exact)
         add(
             'passage', id=pid, version_id=version, exact=exact, prefix=None, suffix=None,
             article=None, section=section, pdf_page_index=page, printed_page=printed,
         )
+        if optical:
+            add(
+                'manual_passage', passage_id=pid, checked_at=now,
+                method='Özgün Resmî Gazete PDF sayfası Poppler ve Cairo ile görselleştirilerek okundu.',
+                reason='İkinci sayfanın metin katmanı boş. Kararın son cümlesi ve tutanak kabul pasajı karşılaştırıldı.',
+            )
 
 out = checks / 'tezkere-1310-source-draft.json'
 with out.open('x') as fh:
