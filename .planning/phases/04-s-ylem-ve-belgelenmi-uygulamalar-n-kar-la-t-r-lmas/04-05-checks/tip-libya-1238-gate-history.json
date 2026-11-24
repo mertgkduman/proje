@@ -1,0 +1,16 @@
+[
+  {
+    "job": "62589479",
+    "state": "FAILED",
+    "exit_code": "1:0",
+    "package_sha256": "f6bf43ef45556103da017343b77e95dfdc8c11bea56326d1103edbb6045491b3",
+    "source_review_sha256": "a8943f3c80b7df02df3c6d2568478de089b09119b0991c807d5209a902d1975c",
+    "reason": "İlk girdi, kaynak atfının gün hassasiyeti için beklediği tarihe saat de içerdiği için reddedildi. İlk aday 62108729 içinde."
+  },
+  {
+    "job": "62589852",
+    "package_sha256": "e907eb2b76ee3a7881ed48b96bce2b24696133832bb88e7fbcf6a2a835a34f87",
+    "source_review_sha256": "21ddf3d0622c5e23697ffc766665261f87ea75ac6268373d5a893a26e70ca62d",
+    "reason": "Atıf alanına yalnız 2 Ocak günü girildi. Özgün HTML 14.33.52 +03 bilgisi kaynak okumasında saklı."
+  }
+]

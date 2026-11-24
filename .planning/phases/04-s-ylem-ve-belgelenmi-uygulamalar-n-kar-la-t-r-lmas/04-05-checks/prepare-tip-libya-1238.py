@@ -78,7 +78,7 @@ for key, name, label in (
     doc_id = f"{case}-{key}"
     is_party = key == "party"
     date = source["document_date"]
-    publish_date = source["published_at"]
+    publish_date = date if source["published_at"] else None
     insert("document", dict(id=doc_id, party_id=party, title=label,
                             source_kind="party" if is_party else "official"))
     insert("document_version", dict(id=vid(key), document_id=doc_id, original_url=source["url"],
@@ -89,7 +89,7 @@ for key, name, label in (
         original_path=str(original), readable_path=str(readable)))
     insert("source_attribution", dict(version_id=vid(key), kind="party_publication" if is_party else "official",
         publisher=source["publisher"], author=None, social_handle=None, published_at=publish_date,
-        date_precision="instant" if publish_date else "unknown", public_url=source["url"], basis=source["reading"]))
+        date_precision="day" if publish_date else "unknown", public_url=source["url"], basis=source["reading"]))
     if kind == "html":
         view = build_view(raw, source["url"], source_root, fetch_assets=False,
                           http_charset=source.get("http_charset"))
