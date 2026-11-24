@@ -16,7 +16,7 @@
       "url": "https://notonato2026.org/tr/news/uluslararasi-anti-emperyalist-baris-zirvesi-deklarasyonu-2026-07-25",
       "error": "HTTP Error 404: Not Found",
       "retrieved_at_utc": "2026-11-24T16:31:23.376989+00:00",
-      "reading": "İngilizce sayfanın görünür dil bağlantısıyla erişilen Türkçe sürüm ayrı alım kaydında."
+      "reading": "Doğrudan /tr/news adresi 404 verdi. Görünür dil bağlantısıyla yapılan alımlar ayrı."
     },
     {
       "status": 200,
@@ -66,7 +66,19 @@
       "sha256": "4cc5af0c8ccd110ba181f2a7134caa9336359559ceb5456f878bf2a5e5a9fb5f",
       "bytes": 20923,
       "retrieved_at_utc": "2026-11-24T16:32:56.511018+00:00",
-      "reading": "İngilizce sayfanın dil bağlantısındaki Türkçe duyuru. 25 Temmuz 2026 tarihli nihai bildirge aynı politika başlıklarıyla yayımlanmış."
+      "reading": "Türkçe dil bağlantısı çerezli oturum kurulmadan izlendiğinde İngilizce gövde döndü. Baytlar ilk alım olarak saklandı.",
+      "observed_language": "en"
+    },
+    {
+      "url": "https://notonato2026.org/duyurular/uluslararasi-anti-emperyalist-baris-zirvesi-deklarasyonu-2026-07-25?lang=tr",
+      "final_url": "https://notonato2026.org/duyurular/uluslararasi-anti-emperyalist-baris-zirvesi-deklarasyonu-2026-07-25",
+      "status": 200,
+      "observed_language": "tr",
+      "bytes": 22075,
+      "sha256": "476fc80cc6b505c1c47bae9c56334a91fd7cab3463649de3673f39c4e6b3373a",
+      "retrieved_at_utc": "2026-11-24T16:35:19.298242+00:00",
+      "path": "final-tr-confirmed.html.bin",
+      "reading": "Kampanya sitesinin görünür dil bağlantısı çerezli oturumla Türkçe gövdeyi verdi. Nihai deklarasyon 25 Temmuz tarihli."
     }
   ],
   "finding": "5 Temmuz TİP yayımında 7 Temmuz için duyuru planı var. Girişimin iki dildeki tarihli nihai bildirgesi ve TİP’in bildirge yayımı 25 Temmuz tarihini veriyor. Daha erken yayıma ilişkin doğrulama açık.",
