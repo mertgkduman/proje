@@ -1,0 +1,12 @@
+import hashlib,json
+from datetime import datetime,timezone
+from pathlib import Path
+c=Path(__file__).resolve().parent;page=c/'party-api-pages/page-25.json';posts={p['id']:p for p in json.loads(page.read_text())}
+notes={3279:'İstanbul İl Başkanı Sema Barbaros çocuk istismarı ve cinsel saldırıya karşı açıklamasında İstanbul Büyükşehir Meclisindeki toplumsal cinsiyet eşitliği komisyonu önerisinin reddedildiğini ileri sürer; kadınları 1 Mayısa çağırır. Komisyon önerisi, oylama ve kolluk müdahalesi resmi ve bağımsız kaynaklarla ayrı doğrulanmalıdır.',3276:'Selma Gürkan 23 Nisan öncesi ulusal egemenlik, yasama ve çocuk hakları hakkında siyasi değerlendirme yapar. 99 yıllık tarihsel ifade ve seçim sürecine ilişkin iddialar parti liderine atfedilir.',3273:'Selma Gürkan Kemal Kılıçdaroğluna yönelik saldırıyı kınar, olayın organize olduğu değerlendirmesini yapar, sorumluların cezalandırılmasını ve bazı görevlilerin istifasını ister. Saldırının örgütlenmesi ve cezai sonuç yargı belgeleriyle ayrı doğrulanmalıdır.',3269:'EMEP Genel Merkezi Sudan Cumhurbaşkanı Beşirin devrilmesi ve ordu müdahalesini yorumlar; Sudan halkının demokrasi mücadelesiyle dayanışma açıklar. Ölüm, döviz ve enflasyon sayıları ile tarihsel nedensellik iddiaları bağımsız doğrulanmadı.',3267:'Ankara İl Başkanı Fikret Aslan yerel seçim sonuçlarını değerlendirir ve Ankara Büyükşehir Belediyesinde önceki döneme ilişkin iddiaların açıklanmasını ister. İddialar, seçim sonuçları ve sonraki incelemeler ayrı kurum belgeleri gerektirir.'}
+parts=[]
+for pid,n in notes.items():
+ p=posts[pid];b=p['content']['rendered'];h=hashlib.sha256(b.encode()).hexdigest();parts.append({'post_id':pid,'url':p['link'],'api_date':p['date'],'page':str(page),'body_sha256':h,'start_char':0,'end_char':len(b),'total_char':len(b),'slice_sha256':h,'reading_note':n})
+out={'tranche_id':'0410-emep-api-297','read_at':datetime.now(timezone.utc).isoformat(),'method':'API sırasındaki beş özgün HTML gövdesi bütünüyle okundu.','parts':parts,'next_unread':{'after_post_id':3267,'page':str(page)},'limitations':['Komisyon kararı, cezai sonuç ve sayısal iddialar açıklamadan bağımsız doğrulanmalıdır.','Sonraki gövdeler okunmadı; kapsam kapatılmadı.'],'closure_refs':[]}
+assert sum(x['end_char'] for x in parts)<48000
+with (c/'party-api-297-source-reading.json').open('x') as f:json.dump(out,f,ensure_ascii=False,indent=2);f.write('\n')
+print('API297_READING_OK',sum(x['end_char'] for x in parts))
