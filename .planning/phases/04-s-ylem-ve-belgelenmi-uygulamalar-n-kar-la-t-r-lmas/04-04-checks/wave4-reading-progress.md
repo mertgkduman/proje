@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 78 | 75 | 62590521 |
-| Saadet Partisi | 31 | 27 | 62588702 |
+| Saadet Partisi | 32 | 28 | 62592492 |
 | Demokrat Parti | 75 | 50 | 62592388 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -478,3 +478,7 @@ Dokuzuncu birleşik önizleme 62591349 ile tamamlandı. Bağımsız denetim 515 
 TİP’in 14 Ekim 2026 X hesapları açıklaması İFÖD’ün özgün EngelliWeb kaydı ve yayına bağlı görselle karşılaştırıldı. İFÖD Genel Merkez hesabını adlandırıyor, o anda platformun Türkiye’den gizlemediğini bildiriyor. 2 Kasım raporu hesap başına uygulama günü vermiyor. İl hesabı ve özgün karar açık. [Kaynak okuması](../04-05-checks/tip-x-20261014-sources/reading.json)
 
 Demokrat Parti 2018 ve 2019 mali denetim kararları iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 2018 Kararlar Dergisi kaydı daha önce arşivlenen ciltte başka sayfalarda. 2019 özgün cilt alımı önceki erişim boşluğunu doldurdu. Hesap yılı, karar günü ve Resmî Gazete yayımı kaynaklarında ayrı. [Denetim makbuzu](../04-12-checks/party-audit-followup-62592388.json) [Bağımsız denetim](../04-12-checks/party-audit-followup-62592388-independent.log)
+
+Saadet Partisi’nin 7534 sayılı kanun karşılaştırması 32 olay ve 28 ilişkiyle çalışma çiftine eklendi. 2/2691 teklifinin Başkanlığa sunuluşu, Mehmet Atmaca’nın 26 Kasım 2024 tarihli Saadet Grubu konuşması, kişisel ret oyu ve kanunun kabulü ayrı kayıtlarda. Konuşmada bütün için ret ve ayrı köy maddesine destek yer alıyor. Başkanlığın açıkladığı 247 kabul ve 73 ret ile kesin cetvelin 242 kabul, 74 ret ve 5 mükerrer kaydı iki kaynak pasajıyla aktarıldı. Kanunun sahadaki etkisi açık. Üç doğrulama, iki okuyucu görünümü ve bağımsız JSON ile SQLite karşılaştırması geçti. Kapsam kapanışı sıfır. [Önizleme makbuzu](../04-11-checks/village-2691-62592492.json)
+
+Saadet sitesindeki tarihli 649 gövdenin 234’ü okundu. 103–138 aralığındaki 36 makbuzun özgün ve normalize sağlama değerleri ile pasaj ofsetleri bağımsız denetlendi. 30 değerlendirmedeki şablon alanları kaynaklarına göre düzeltildi. 2024’teki tarım sayımı çağrısı, Temmuz 2025’te sayımın başladığını bildiren Bakanlık duyurusu ve TÜİK’in Ocak 2026’ya uzatma kararı kendi kaynaklarında. Tamamlanma ve parti çağrısının etkisi açık.

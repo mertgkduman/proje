@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-24T16:14:30Z
-Stopped at: 2018 and 2019 Demokrat audits verified; Saadet 7534 62592492 and TİP X 62594433 in progress
+Last session: 2026-11-24T16:29:10Z
+Stopped at: Saadet 7534 verified and included in working pair; TİP X and EMEP 1231 preview validations in progress
 Resume file: None
