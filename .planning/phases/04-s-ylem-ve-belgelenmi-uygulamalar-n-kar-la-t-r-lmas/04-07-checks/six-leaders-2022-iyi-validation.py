@@ -1,7 +1,7 @@
 import importlib.util,json,sqlite3
 from pathlib import Path
 c=Path(__file__).resolve().parent;spec=importlib.util.spec_from_file_location('harness',c.parent/'04-04-checks'/'samsun-reply-validation.py');h=importlib.util.module_from_spec(spec);spec.loader.exec_module(h);h.HERE=c;h.SOURCE=h.DATA/'practices/sources/iyi'
-p=c/'six-leaders-2022-iyi-draft.json';r=c/'six-leaders-2022-iyi-review-draft.json';assert h.sha(p)=='f50bfb35af63592e402ee6c01bf2d920a4bfabdaecf43e6616e485c240fef3e8' and h.sha(r)=='2929ecd279ca098f3b7cc46c6325306d361e6a4e8dd87e397283fcad734eadb5'
+p=c/'six-leaders-2022-iyi-draft.json';r=c/'six-leaders-2022-iyi-review-draft.json';assert h.sha(p)=='c52f2914e2bf9309f42a78c41507936d8fd191af6bc66aa01176bd39a783a846' and h.sha(r)=='bac9620248b5556473ff32cbf52e316b78bd03acf756954bc52458d587cc1cd9'
 records=json.loads(p.read_text())['practice_records'];assert (len(records['practice_event']),len(records['practice_relation']),len(records['practice_closure']))==(20,12,0)
 receipt=h.main(p,r,'six-leaders-2022-iyi','0407-six-leaders-2022-event','0407-agenda-104-2881-relation',None,expected_party='iyi',namespace='gsd-0407')
 folder=Path(receipt['preview']);assert json.loads((folder/'manifest.json').read_text())['renderer_version']==31

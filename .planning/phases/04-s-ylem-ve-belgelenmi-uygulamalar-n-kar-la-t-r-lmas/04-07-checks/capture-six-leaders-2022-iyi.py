@@ -16,7 +16,7 @@ for key,filename,url,day,publisher in sources:
   target=folder/name
   if target.exists():assert target.read_bytes()==body
   else:target.write_bytes(body)
- view=build_view(raw,url,root,fetch_assets=False);view['version_id']='0407-six-leaders-'+key+'-v1';validate_view(root,view)
+ view=build_view(raw,url,root,fetch_assets=False);view['version_id']='0407-six-leaders-2022-'+key+'-v1';validate_view(root,view)
  result[key]=dict(url=url,date=day,publisher=publisher,sha256=h,accessed_at=datetime.datetime.fromtimestamp(src.stat().st_mtime,datetime.timezone.utc).isoformat(),original_path=f'objects/{h}/original.html.bin',readable_path=f'objects/{h}/readable.html',view=view)
 raw=html_source_text(Path(sources[0][1]).read_bytes());assert '2 Ekim 2022 Pazar günü saat 14.00’da CHP Genel Merkezinde' in raw
 raw=html_source_text(Path(sources[1][1]).read_bytes());assert 'İYİ Parti Genel Başkanı Meral Akşener, CHP Genel Merkezi’ne ulaştı.' in raw and 'Saat 14.11’de başlayan görüşmenin' in raw

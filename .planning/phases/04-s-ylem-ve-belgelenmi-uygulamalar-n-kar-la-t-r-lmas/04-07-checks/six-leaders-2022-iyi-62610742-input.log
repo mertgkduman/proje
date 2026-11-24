@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/tmp/gsd-0407-six-leaders-2022-iyi-443tj_yc/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/tmp/gsd-0407-six-leaders-2022-iyi-443tj_yc/src/arsiv.py", line 3584, in main
+    validate_practice_input(package, args.base_release); print('PRACTICE_INPUT_OK')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gsd-0407-six-leaders-2022-iyi-443tj_yc/src/uygulamalar.py", line 1381, in validate_practice_input
+    _load_practice_copy(work, payload, base)
+  File "/tmp/gsd-0407-six-leaders-2022-iyi-443tj_yc/src/uygulamalar.py", line 1130, in _load_practice_copy
+    raise ValueError('Kaynak kaydı parti sahibine ait değil')
+ValueError: Kaynak kaydı parti sahibine ait değil
