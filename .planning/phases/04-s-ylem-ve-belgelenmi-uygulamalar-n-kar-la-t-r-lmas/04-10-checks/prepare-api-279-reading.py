@@ -1,0 +1,20 @@
+import hashlib,json
+from datetime import datetime,timezone
+from pathlib import Path
+c=Path(__file__).resolve().parent;page=c/'party-api-pages/page-25.json';posts={p['id']:p for p in json.loads(page.read_text())}
+notes={
+3331:'İstanbul İl Başkanı Sema Barbaros yenilenen 23 Haziran seçiminden sonra sonucu halkın birlik ve beraberliği olarak yorumlar; dayanışmanın hak ve çalışma koşulları için sürmesini ister. Seçim sonucu ve sonraki hak politikaları bu siyasi değerlendirmeden ayrı belgelendirilmelidir.',
+3328:'EMEP Genel Merkezi mültecilere yönelik ayrımcılığı eleştirir; hukuki statü, hakların korunması ve eşit yurttaşlık talep eder. Göçmen ve işçi sayıları ile hukuki durum iddiaları bu parti metninden bağımsız doğrulanmadı.',
+3325:'EMEP Genel Merkezi 15–16 Haziran işçi direnişine atıfla kıdem tazminatının fona devrine ve zorunlu BES’e karşı çıkar. Metin gerçekleşmiş bir fon kanunu veya bireysel işçi sonucunu göstermez.',
+3319:'10 Haziran tarihli İngilizce EMEP metni Sudanda gücün Özgürlük ve Değişim İttifakına devrini, seçim ve sorumluların yargılanmasını ister; saldırıda 113 kişinin öldüğünü ileri sürer. Beş gün önceki 3316 Türkçe metnin en az 35 sayısı ile aynı zamanlı veya aynı kesinlikte değildir; ölüm sayıları bağımsız doğrulanmadı.',
+3316:'5 Haziran Türkçe EMEP Genel Merkezi açıklaması Sudanda iktidarın Özgürlük ve Değişim Bildirgesi Güçlerine devrini, seçim ve sorumluların yargılanmasını ister; saldırıda en az 35 kişinin öldüğünü ileri sürer. 3319 daha sonraki İngilizce yayında 113 der; fark ayrı tarihlerle korunur.',
+3314:'Selma Gürkan bayram mesajında barış ve kardeşliği vurgular, yoksulluk, kadınlara şiddet ve kutuplaşmayı eleştirir; ortak mücadele çağrısı yapar. Genel bir siyasal beyan, somut uygulama veya sonuç taahhüdü değildir.',
+3310:'EMEP İstanbul İl Başkanı Sema Barbaros belediye kaynakları hakkında İmamoğluna atfedilen sayıları ve yoksulluk iddialarını aktarır; 23 Haziran öncesi Cumhur İttifakına oy verilmemesi çağrısı yapar. Rakamlar, kurumsal hesap ve seçim sonucu bağımsız doğrulama ister.',
+3305:'İngilizce programın yalnızca 0–12000 özgün karakteri okundu: giriş EMEPin sınıf, eşitlik ve uluslararası dayanışma anlayışını açıklar; A bölümü 1–10 kapitalist üretim, kadınların ezilmesi, işsizlik ve ortak mülkiyet savlarını işler; II bölümünün başında tekelci sermaye ve emperyalizm tartışması başlar. Metindeki tarihsel ve ekonomik iddialar program görüşüdür. 12000 sonrası bu makbuzda okunmadı; 2020 tarihli 3596 kopyasıyla özgün gövdelerin hash ve uzunlukları farklıdır.'}
+parts=[]
+for pid,note in notes.items():
+ p=posts[pid];body=p['content']['rendered'];end=12000 if pid==3305 else len(body);fragment=body[:end];parts.append(dict(post_id=pid,url=p['link'],page=str(page),api_date=p['date'],body_sha256=hashlib.sha256(body.encode()).hexdigest(),start_char=0,end_char=end,total_char=len(body),slice_sha256=hashlib.sha256(fragment.encode()).hexdigest(),reading_note=note))
+assert sum(p['end_char']-p['start_char'] for p in parts)<=48000
+out=dict(tranche_id='0410-emep-api-279',read_at=datetime.now(timezone.utc).isoformat(),method='Sıralı yedi Türkçe/İngilizce kısa gövde tamamı ve sonraki İngilizce programın gerçek 0–12000 HTML karakter aralığı okundu; aralık ve tam gövde UTF-8 SHA-256 ile bağlandı.',parts=parts,language_comparison='3316 Türkçe 5 Haziranda en az 35, 3319 İngilizce 10 Haziranda 113 öldürüldüğü iddiasını taşır; ayrı yayın günleri ve açık biçimde atfedilen sayılar korunur, doğrudan eşzamanlı çeviri denmez.',next_unread={'post_id':3305,'start_char':12000,'total_char':len(posts[3305]['content']['rendered'])},limitations=['Programın 12000 sonrası okunmadı; diğer sayfalar veya kapsamın tümü kapanmış değildir.','Kişilere ve kurumlara atfedilen iddialar bağımsız yargı, sayısal veri veya gerçekleşmiş uygulama olarak değerlendirilmedi.'],closure_refs=[])
+with (c/'party-api-279-source-reading.json').open('x') as f:json.dump(out,f,ensure_ascii=False,indent=2);f.write('\n')
+print('API279_READING_OK',len(parts),sum(p['end_char']-p['start_char'] for p in parts))
