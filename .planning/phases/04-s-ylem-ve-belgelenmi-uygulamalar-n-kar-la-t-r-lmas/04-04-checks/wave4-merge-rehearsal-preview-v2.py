@@ -121,7 +121,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         assert rows==[(eid,)]
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?',(eid,))} <= parties
         assert len(db.execute('SELECT 1 FROM practice_event_alias WHERE decision_id=?',(key,)).fetchall())==len(parties)
-    if exercise['number'] in {'02', '03', '04', '05', '06'}:
+    if exercise['number'] in {'02', '03', '04', '05', '06', '09'}:
         november = {
             'tbmm-28-5-012-yeni-yol-genel-gorusme-fon-gundem',
             'tbmm-28-5-012-10-4961-gundem',
@@ -135,7 +135,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         for key in november & joined.keys():
             eid, parties = joined[key]
             expected = {'yeni-parti', 'iyi', 'yeni-yol'}
-            if exercise['number'] in {'03', '04', '05', '06'}:
+            if exercise['number'] in {'03', '04', '05', '06', '09'}:
                 expected.add('dem')
             assert parties == expected
             contributions = db.execute(
@@ -144,9 +144,9 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             assert {row[0] for row in contributions} == parties
             assert len(contributions) == len({row[1] for row in contributions}) == len(parties)
             assert len({row[2] for row in contributions if row[2] is not None}) == 3
-            if exercise['number'] in {'03', '04', '05', '06'}:
+            if exercise['number'] in {'03', '04', '05', '06', '09'}:
                 assert {row[0] for row in contributions if row[2] is None} == {'dem'}
-    if exercise['number'] in {'03', '04', '05', '06'}:
+    if exercise['number'] in {'03', '04', '05', '06', '09'}:
         for key in ('tbmm-28-4-106-10-4314-gundem', 'tbmm-28-4-108-10-4343-gundem'):
             eid, parties = joined[key]
             assert parties == {'dem', 'iyi', 'yeni-yol'}
@@ -160,7 +160,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         expected_passages = {'0405-tip-climate-2025-ballot-bas-p', '0405-tip-climate-2025-ballot-kadigil-p',
                              '0405-tip-climate-2025-ballot-sik-p', '0410-emep-climate-2025-ballot-bayhan-p',
                              '0410-emep-climate-2025-ballot-karaca-p'}
-        if exercise['number'] in {'05', '06'}:
+        if exercise['number'] in {'05', '06', '09'}:
             expected_parties.add('dem')
             expected_passages.update('0406-iklim-final-' + name + '-vote' for name in ('akin', 'kordu', 'koca'))
             contributions = db.execute(
@@ -172,7 +172,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         assert parties == expected_parties
         rows = db.execute('SELECT passage_id FROM practice_event_evidence WHERE event_id=?', (climate,)).fetchall()
         assert expected_passages <= {r[0] for r in rows}
-    if exercise['number'] in {'04', '05', '06'}:
+    if exercise['number'] in {'04', '05', '06', '09'}:
         hububat, parties = joined['tbmm-28-4-100-10-4251-gundem']
         assert parties == {'yeni-yol', 'saadet'}
         assert db.execute(
@@ -189,10 +189,10 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             assert db.execute(
                 'SELECT count(*) FROM practice_event WHERE common_event_key=?', (key,),
             ).fetchone() == (1,), key
-    if exercise['number'] in {'05', '06'}:
+    if exercise['number'] in {'05', '06', '09'}:
         textile, parties = joined['tbmm-28-3-104-10-2881-gundem']
         expected_parties = {'iyi', 'yeni-yol'}
-        if exercise['number'] == '06':
+        if exercise['number'] in {'06', '09'}:
             expected_parties.add('dem')
         assert parties == expected_parties
         rows = db.execute(
@@ -202,7 +202,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             ('iyi', '0407-agenda-104-2881-actor', '0407-agenda-104-floor-authority-2881'),
             ('yeni-yol', '0408-textile-2881-actor', '0408-textile-2881-floor-role'),
         }
-        if exercise['number'] == '06':
+        if exercise['number'] in {'06', '09'}:
             expected_contributions.add(('dem', '0406-dem-institution', None))
         assert set(rows) == expected_contributions
         assert db.execute('SELECT id,party_id FROM practice_relation WHERE event_id=?', (textile,)).fetchall() == [
@@ -214,7 +214,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
                           ('0408-textile-2881-reply-number','action')).fetchone() == ('0408-textile-2881-29149-event',)
         assert db.execute('SELECT count(*) FROM practice_dispute_evidence WHERE dispute_id=?',
                           ('0408-textile-2881-export-dispute',)).fetchone() == (5,)
-    if exercise['number'] == '06':
+    if exercise['number'] in {'06', '09'}:
         disease_agenda, parties = joined['tbmm-28-3-104-10-2882-gundem']
         assert parties == {'dem', 'iyi'}
         assert set(db.execute(
@@ -234,6 +234,16 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
                 event, 'unmatched',
             )
         assert textile != disease_agenda
+    if exercise['number'] == '09':
+        key = 'tbmm-27-3-84-2-2762-law-7242'
+        assert db.execute('SELECT id FROM practice_event WHERE common_event_key=? ORDER BY id', (key,)).fetchall() == [
+            ('0405-tip-7242-event',), ('0410-law-7242-event',),
+        ]
+        assert db.execute('SELECT decision FROM practice_event_decision WHERE id=?', (key,)).fetchone() == ('unresolved',)
+        assert db.execute(
+            'SELECT input_event_id,canonical_event_id FROM practice_event_alias WHERE decision_id=? ORDER BY input_event_id',
+            (key,),
+        ).fetchall() == [('0405-tip-7242-event','0405-tip-7242-event'), ('0410-law-7242-event','0410-law-7242-event')]
 page = (release/'index.html').read_text()
 for r in records['practice_relation']:
     for view in ('party','comparison'):

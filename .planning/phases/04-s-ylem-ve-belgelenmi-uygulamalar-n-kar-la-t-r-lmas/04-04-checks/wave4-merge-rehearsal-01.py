@@ -10,7 +10,7 @@ from uygulama_birlestirme import _json, merge_packages
 
 here = Path(__file__).resolve().parent
 number = os.environ.get('GSD0404_REHEARSAL_NUMBER', '01')
-assert number in {'01', '02', '03', '04', '05', '06'}
+assert number in {'01', '02', '03', '04', '05', '06', '09'}
 receipt = json.loads((here / f'wave4-merge-rehearsal-{number}.json').read_bytes())
 decision_bytes = (here / f'wave4-merge-rehearsal-{number}-decisions.json').read_bytes()
 data = Path('data')
