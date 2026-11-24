@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 75 | 9 | 62566333 |
+| DEM Parti | 75 | 11 | 62569027 / 62569034 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -311,3 +311,7 @@ EMEP’in 3 Şubat 2021 rektörün istifası ve rektör seçimi talebi ile 14 Te
 Demokrat Parti’nin 2022 arşiv tüzüğünün 48 sayfalık ve arşiv programının 83 sayfalık okunmuş nüshaları sayfa hashleriyle yeniden denetlendi. Araştırma kuyruğundaki 169 kaynak bölümü bu sayfa makbuzlarına bağlandı. Açık 14 kaynak bölümünde tarihsel metinler ve sayfa işareti bulunmayan program eşleştirmeleri var. 610 konu hücresinin araştırması sürüyor. Başkanlık Divanı duyurusu ve Can Atalay dosyasının dört ayrı işlemi 62570397 ile denetleniyor. [Kaynak bölümü makbuzu](../04-12-checks/demokrat-read-pdf-sections.json) · [Olay okuma kaydı](../04-12-checks/divan-atalay-reading.md)
 
 Demokrat Parti’nin 183 arşiv kaynak bölümünün tamamına okuma makbuzu bağlandı. Sayfa işareti olmayan altı program eşleştirmesi özgün bağlamdan, sekiz tarihsel bölüm 1983, 1985, 1988 ve 1990 program taramaları ile Demokrasi Programı özetindeki ilgili sayfalardan okundu. 610 konu hücresi ve sonraki uygulama kaynaklarının kuyruğu açık. [Program bağlamı](../04-12-checks/demokrat-program-context-readings.json) · [1983 ve 1985](../04-12-checks/demokrat-historical-pdf-001-reading.json) · [1988 ve 1990](../04-12-checks/demokrat-historical-pdf-002-reading.json) · [Tarihsel özet](../04-12-checks/demokrat-historical-pdf-003-reading.json)
+
+DEM Parti’nin 2 Temmuz 2024 Madımak araştırma komisyonu talebi, 1 Temmuz 2025 tarihli 10/2879 başvurusu ve 2 Temmuz 2025 tarihli 10/2880 gündem işlemiyle iki ayrı ilişkide doğrulandı. 10/2879’a araştırma sonucu eklenmedi. 10/2880 sonucu gündem sırasına ilişkin ön görüşme ile sınırlı. İmzalı 2024 önerge nüshası ve esas numarası açık. [Önizleme makbuzu](../04-06-checks/dem-sivas-2024-relations-62569027.json) · [Bağımsız denetim](../04-06-checks/dem-sivas-2024-relations-62569027-independent.json)
+
+Saadet 028–030 sonunda 115/649 gövdeye ulaştı ve 534 gövde açık. EMEP 259’un iki Arapça yayını iç içe metinler olarak kaydedildi. Yunanca, Arapça ve Farsça aralıklar açık. EMEP 263’te Ayasofya açıklamasının Türkçe ve İngilizce sürümleri arasında onay ifadesinin anlamı farklı. [Saadet 030](../04-11-checks/party-news-030-reading.json) · [EMEP 259](../04-10-checks/party-api-259-arabic-parallel-comparison.json) · [EMEP 263](../04-10-checks/party-api-263-partial-reading.json)
