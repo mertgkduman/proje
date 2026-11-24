@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-101",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:15:32.713946+00:00",
+  "reads": [
+    {
+      "post_id": 479,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-butcenin-adi-vatandasi-silkeleme-butcesidir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-butcenin-adi-vatandasi-silkeleme-butcesidir",
+      "published_at": "2024-12-16T15:59:04+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:15:32.713946+00:00",
+      "original_path": "party-news-bodies/479.json",
+      "sha256": "ad976749ad794f5675361e21b61cd0bbe2c5b910c8bdfa4d77399fb064c5e80a",
+      "normalized_body_sha256": "92eed1541377d34cd88af2f2812bcba7b2bf2bb9e84ede97f2bdce8191d81390",
+      "source_section_range": [
+        0,
+        9278
+      ],
+      "state": "examined",
+      "reading": "Bülent Kaya Hazine ve Maliye bütçesi görüşmesinde vergi yükü, faiz ve bütçe açığını eleştiriyor.",
+      "selected_passages": [
+        {
+          "start": 7548,
+          "end": 7581,
+          "exact": "Bütçe açığı 1 trilyon 930 milyar."
+        }
+      ],
+      "point": "Bütçe açığı ve vergi politikası eleştirisi.",
+      "statement": "Kaya yaklaşık 1,93 trilyon TL bütçe açığı ve 1,95 trilyon TL faiz ödeneğine değinerek vergi dağılımını eleştiriyor.",
+      "concrete_evidence": "Parti API gövdesi konuşmayı Saadet-Gelecek grubu adına aktarıyor.",
+      "open_provenance": "Bu 16 Aralık etiketli maliye görüşmesi 489un 20 Aralık bütçenin tümü konuşması ve 21 Aralık nihai oylamasından ayrı ele alınmalı. Öngörülen faiz tutarı fiilen o anda ödenen tutar değildir; konuşmanın dakika bazlı hesabı kaynakta retorik tahmindir."
+    }
+  ],
+  "completed_pre_cut_bodies": 187,
+  "remaining_pre_cut_bodies": 462,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
