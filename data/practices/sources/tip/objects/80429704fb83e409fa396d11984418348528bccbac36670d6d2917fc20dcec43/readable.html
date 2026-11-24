@@ -1,0 +1,179 @@
+<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;!----&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css&quot;&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../Style/cso.css&quot; type=&quot;text/css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../layout/cso.css&quot; type=&quot;text/css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../layout/cso.petit.css&quot; type=&quot;text/css&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;images/png&quot; href=&quot;../images/tilogo.png&quot; /&gt;
+
+&lt;script src=&quot;../scripts/base.js&quot;&gt;&lt;/script&gt;
+&lt;!----&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../layout/font-awesome/css/font-awesome.min.css&quot;&gt;
+
+ &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;title&gt;A Tale of Two Cities&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;span id=&quot;btToggle&quot; class=&quot;fa-stack fa-lg petitEcran&quot;&gt;
+  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fa fa-bars fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+
+
+&lt;div class=&quot;row&quot; style=&quot;text-align:center;margin:7px&quot;&gt;
+	&lt;div class=&quot;col-12&quot;&gt;&lt;div class=&quot;divBanniere cadreClair&quot;&gt;
+		&lt;table width=&quot;100%&quot;  border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+		&lt;tr&gt;
+		  &lt;td&gt;&lt;a href=&quot;http://www.csotan.org/&quot;&gt;&lt;img src=&quot;../images/logo.png&quot; hspace=&quot;10&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+		  &lt;td width=&quot;100%&quot; align=&quot;center&quot; valign=&quot;middle&quot;&gt;
+			&lt;div class=&quot;titreBanniere&quot;&gt;Comité Surveillance OTAN&lt;/div&gt;
+			&lt;div class=&quot;soustitreBanniere&quot;&gt;&lt;a href=&#x27;../textes/docs.php?type=articles&#x27;&gt;Articles, textes, documents&lt;/a&gt;&lt;/div&gt;		  &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+  
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;margin-left:7px;    margin-right: 7px;&quot;&gt;
+
+	&lt;div id=&quot;menuLeft&quot; class=&quot;col-sm-6 col-md-2 col-lg-2 col-xl-2 pasPetitEcran&quot;&gt;&lt;div class=&quot;menuLeft&quot;&gt;
+
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../index.php&quot;&gt;Accueil&lt;/a&gt;&lt;/div&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../home_fr.php&quot;&gt;Qui sommes-nous&lt;/a&gt;&lt;/div&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../ao/ao.php&quot;&gt;Alerte OTAN&amp;nbsp;!&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;menuLeft&quot;&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=communiqués&quot;&gt;Communiqués&lt;/a&gt;&lt;/div&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=documents&quot;&gt;Documents officiels&lt;/a&gt;&lt;/div&gt;
+	&lt;!--&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=autres&quot;&gt;Autres textes&lt;/a&gt;&lt;/div&gt;--&gt;
+	&lt;!--&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../images/otan.gif&quot; target=&quot;_blank&quot;&gt;Carte de l&#x27;Otan&lt;/a&gt;&lt;/div&gt;--&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&quot;&gt;Articles, textes, documents...&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;menuLeft&quot;&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;https://groups.google.com/g/alerte-otan&quot; target=&quot;_blank&quot;&gt;Mailing liste &#x27;Alerte OTAN&#x27;!&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;menuLeft&quot;&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../archives.php&quot;&gt;Archives&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;menuLeft&quot;&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;mailto:info@csotan.org&quot;&gt;Contactez-nous&amp;nbsp;!&lt;/a&gt;&lt;/div&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;mailto:alerte@csotan.org&quot; object=&quot;Je désire m&#x27;inscrire à la mailing-liste du CSO&quot;&gt;Inscrivez-vous à la mailing-liste du CSO&lt;/a&gt;&lt;/div&gt;
+	&lt;!--&lt;div&gt;&lt;input id=&quot;eMailML&quot; type=&quot;email&quot; placeholder=&quot;entrez ici votre adresse e-mail&quot; style=&quot;width: 80%;&quot;/&gt;&lt;img src=&quot;./images/ok.png&quot; style=&quot;cursor:pointer; margin:0 3px&quot; id=&quot;btML&quot;&gt;&lt;/i&gt;&lt;/div&gt;--&gt;
+&lt;/div&gt;
+&lt;!-- &lt;div class=&quot;menuLeft&quot;&gt; --&gt;
+	&lt;!-- &lt;div class=&quot;roro&quot;&gt;Le Comité de Surveillance OTAN ne vit que par le soutien de ses lecteurs et de ses amis. --&gt;
+&lt;!-- Votre contribution sera toujours la bienvenue et peut être versée au compte&lt;br/&gt;&lt;p style=&quot;text-align:center; margin-top:5px;&quot;&gt;csotan BE94 0682 4474 9114 &lt;/p&gt;&lt;/div&gt; --&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;hr/&gt;
+&lt;div style=&quot;text-align:right; font-style: italic;  color:#009&quot;&gt;Dossiers&lt;/div&gt;
+		&lt;div class=&quot;menuLeft&quot;&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../dossier.php?id=2&quot;&gt;&quot;Pas un pouce&quot;... L&#x27;élargissement de l&#x27;OTAN vers la Russie&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+			&lt;div class=&quot;menuLeft&quot;&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../dossier.php?id=1&quot;&gt;Ukraine, une invasion non-provoquée...&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-sm-12 col-md-8 col-lg-8 col-xl-8 &quot; &gt;&lt;div class=&quot;document&quot;&gt;
+	&lt;div class=&quot;impression&quot;&gt;&lt;a href=&quot;../textes/print.php?id=1635&quot; target=&quot;_blank&quot;&gt;imprimer&lt;/a&gt;&lt;/div&gt;
+		&lt;div class=&quot;texteTitre&quot;&gt;A Tale of Two Cities&lt;/div&gt;
+						
+		&lt;div class=&quot;texteTexte&quot;&gt;&lt;p&gt;&lt;strong&gt;Istanbul&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../ao/AO100/Istanbul.png&quot; style=&quot;float: left; max-width:20%; margin-right:5px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With generous support of Belgian comrades Yves and myself travelled to Istanbul for the International Anti-Imperialist Peace Summit organized by TIP - The Turkish Workers Party on 4 July 2026. The summit was scheduled to correspond with the NATO 2026 summit in Ankara. While the Turkish state permitted the peace summit in Istanbul it was not without interference and of course with more than 200 citizens in Ankara jailed 2 weeks before the arrival of the western dignitaries. Of the european activists and invitees that came to Istanbul, our two fellow Belgians from Vrede were interrogated for a couple hours before being allowed leave the airport. 5 europeans from different organisations were detained upon arrival and then sent back to their countries. Some of them were scheduled to speak at the Summit.&lt;/p&gt;
+
+&lt;p&gt;The summit functioned extremely well with no visible problems. Very surprising for a first major international conference by the TIP. Very many official speechs occurred in various languages with simultaneous translation. It was stimulating to hear different ideas and stories from numerous cities and countries from across the world. There was an inspiring continuity across people and networks with a common thread of humanism underpinning a criticism of capitalist power structures feeding democratic disfunction, corruption, keynesian militarism, ecological dismissal and unfit approaches to the future. Obviously colonialism, imperialism and war were constantly brought up to be denounced. Futures with justice, fairness, equality, sharing, ecological care, peace and organised political awareness that makes this possible, were described and championed.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../ao/AO100/Istanbul.webp&quot; style=&quot;max-width:60%&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;On Sunday following the summit, a large march against NATO and for peace was organized. More than 20 left wing parties walked one after the other with the 1000 or so TIP members making up about half of the total that made it to the central square. Here speeches were given and filmed in the big crowd. Myself and two other comrades were able to make speechs that were translated into Turkish for the public and shared online. The demonstration was permitted even though there was a heavy police presence. The previous evening 100 activists and personalities were put in jail to weaken the weaken the event and remind everyone who is the authority.&lt;/p&gt;
+
+&lt;p&gt;Documentation from the summit, including the final declaration, is available on the “&lt;em&gt;A Budget for Peace, Not War&lt;/em&gt;” event website: &lt;a href=&quot;https://notonato2026.org/en&quot; target=&quot;_blank&quot;&gt;https://notonato2026.org/en&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chicago&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../ao/AO100/Chicago.jpeg&quot; style=&quot;float: left; max-width:30%; margin-right:5px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Less than two weeks later I was in Chicago and I attended a protest against the US/Israel war against Iran.&lt;/p&gt;
+
+&lt;p&gt;It was planned for Trump Tower chicago but the police forbade it. Moved across the street it was once again forbidden. In the subsequent arguments between police and organisers, an organising association leader was arrested and brought to jail.&lt;/p&gt;
+
+&lt;p&gt;The demonstration moved down the street and to one side of Trump Tower and numerous speeches were made in front of a small group of citizens.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p class=&quot;petit&quot; style=&quot;clear: both; text-align: center&quot;&gt;&lt;em&gt;Photos of signs and posters expressing opposition to the war by Chicago residents &lt;/em&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; padding:7px;&quot;&gt;&lt;img src=&quot;../ao/AO100/Chicago3.jpeg&quot; style=&quot;max-width:60%&quot; /&gt;
+&lt;div style=&quot;text-align: center; padding:7px;&quot;&gt;&lt;img src=&quot;../ao/AO100/Chicago1.jpeg&quot; style=&quot;max-width:60%&quot; /&gt;
+&lt;div style=&quot;text-align: center; padding:7px;&quot;&gt;&lt;img src=&quot;../ao/AO100/Chicago2.jpeg&quot; style=&quot;max-width:60%&quot; /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	
+	&lt;/div&gt;	  &lt;/div&gt;
+	&lt;div class=&quot;col-2 pasPetitEcran&quot;&gt;		
+	&lt;div  style=&quot;font-size:9pt; color: #333&quot;&gt;
+	
+			&lt;div id=&quot;btFormSearch&quot; class=&quot;roro lien&quot; style=&quot;text-align:right&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&amp;nbsp;&lt;i&gt;Recherche...&lt;/i&gt;&lt;/div&gt;
+			&lt;input type=&quot;hidden&quot; id=&quot;isSearch&quot; value=&quot;&quot;/&gt;
+			&lt;input type=&quot;hidden&quot; id=&quot;SearchTheme&quot; value=&quot;&quot;/&gt;
+			&lt;div id=&quot;formSearch&quot; class=&quot;roro row1&quot; style=&quot;margin: 7px;   padding: 7px; border: 1px solid rgb(128, 128, 128);  border-radius: 7px; display: none&quot;&gt;
+
+
+				&lt;div&gt;				
+				     Le titre contient...&lt;br/&gt;
+				     &lt;input type=&quot;text&quot; name=&quot;titre&quot; id=&quot;titre&quot; autocomplete=&quot;off&quot; style=&quot;width:100%&quot; value=&quot;&quot;&gt;
+				&lt;/div&gt;
+
+				&lt;div&gt;				
+				     Le texte contient...&lt;br/&gt;
+				     &lt;input type=&quot;text&quot; name=&quot;texte&quot; id=&quot;texte&quot; autocomplete=&quot;off&quot; style=&quot;width:100%&quot; value=&quot;&quot;&gt;
+				&lt;/div&gt;
+
+				&lt;div&gt;Postérieur à...&lt;br/&gt; &lt;input type=&quot;text&quot; name=&quot;apres&quot; id=&quot;apres&quot; class=&quot;datepicker&quot; value=&quot;&quot;/&gt; &lt;/div&gt;
+				&lt;div&gt;Antérieur à...&lt;br/&gt;   &lt;input type=&quot;text&quot; name=&quot;avant&quot; id=&quot;avant&quot; class=&quot;datepicker&quot; value=&quot;&quot;/&gt; &lt;/div&gt;
+			
+				&lt;div&gt;Auteur&lt;br/&gt;
+				
+					&lt;div id=&quot;listeAuteurs&quot; style=&quot;position: absolute; margin-top:24px; border: 1px solid black; background-color: wheat;display: none; padding:7px; z-index:10000&quot;&gt;&lt;/div&gt;
+
+					&lt;input type=&quot;hidden&quot; id =&quot;nomAuteur&quot; value=&quot;&quot;/&gt;
+
+					&lt;input type=&quot;text&quot; name=&quot;auteur&quot; id=&quot;auteur&quot; class=&quot;autocomplete&quot;  value=&quot;&quot; style=&quot;width:100%&quot;
+						data-ou=&quot;Articles LEFT JOIN LinksArticlesThemes ON IdA=art_id&quot;
+						data-search=&quot;DISTINCT(auteur) as auteur&quot; data-quoi=&quot;auteur&quot; 	
+						data-id=&quot;auteur&quot; 
+						data-ctrl=&quot;nomAuteur&quot; data-liste=&quot;listeAuteurs&quot;
+						data-con=&quot;auteur is not null AND type IN (&#x27;articles&#x27;, &#x27;autres&#x27;)&quot;/&gt;
+
+				&lt;/div&gt;
+				
+				&lt;div style=&quot;text-align:right; padding:12px;&quot; id=&quot;btRechercher&quot; &gt;
+					&lt;i class=&quot;fa fa-search fa-2x lien&quot; title=&quot;Rechercher&quot;&gt;&lt;/i&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+&lt;/div&gt;	
+	
+
+		
+	&lt;div class=&quot;menuRight&quot;&gt;&lt;div class=&quot;roro&quot;&gt;
+	&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=F&quot;&gt;Afghanistan&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=S&quot;&gt;Amérique Latine&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=SA&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Venezuela&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=I&quot;&gt;Arctique&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=Q&quot;&gt;Chine&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=J&quot;&gt;ex-URSS&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=JG&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Arménie&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=JB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Géorgie&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=JC&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kazakhstan&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=JF&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Moldavie&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=JE&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Pays Baltes&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=JD&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Russie&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=JA&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Ukraine&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=U&quot;&gt;Irak&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=L&quot;&gt;Iran&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=B&quot;&gt;Kosovo &amp; ex-Yougoslavie&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;TPIY &amp; Milosevic&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=N&quot;&gt;Libye&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=M&quot;&gt;Palestine&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=MA&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mordechai Vanunu&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=C&quot;&gt;Péninsule arabique et Afrique de l&#x27;Est&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=CB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Soudan&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=CA&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Yemen&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=W&quot;&gt;QUAD&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=P&quot;&gt;Syrie&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=D&quot;&gt;Union Européenne&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=DD&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Allemagne&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=DB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Belgique&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=DBB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Medias&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=DBA&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Stop Militarisation&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=DE&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Roumanie&lt;/a&gt;&lt;/div&gt;&lt;hr/&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=X&quot;&gt;Armes nucléaires&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=XE&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hiroshima - Nagasaki&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=XH&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;TIAN &amp; TNP&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=O&quot;&gt;Otan et ONU&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=K&quot;&gt;Terrorisme&lt;/a&gt;&lt;/div&gt;&lt;hr/&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=articles&amp;theme=Z&quot;&gt;Manlio Dinucci : L&#x27;Art de la Guerre&lt;/a&gt;&lt;/div&gt;	&lt;/div&gt;&lt;/div&gt;
+	
+	&lt;div class=&quot;menuRight&quot;&gt;&lt;div class=&quot;roro&quot;&gt;&lt;a href=&quot;../textes/docs.php?type=autres&quot;&gt;Documents d&#x27;archives&lt;/a&gt;&lt;/div&gt;	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
