@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-120",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:48:58.529396+00:00",
+  "reads": [
+    {
+      "post_id": 460,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/genel-idare-kurulu-toplantimiz-genel-baskanimiz-mahmut-arikanin-baskanliginda-gerceklestirildi",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=genel-idare-kurulu-toplantimiz-genel-baskanimiz-mahmut-arikanin-baskanliginda-gerceklestirildi",
+      "published_at": "2024-11-30T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:48:58.529396+00:00",
+      "original_path": "party-news-bodies/460.json",
+      "sha256": "8601745fda363b1635a82139f50a695fcbdc7c5eb8c401abb7ee749dd9efc797",
+      "normalized_body_sha256": "43921efcae321bd5b295c7d0ec608c715ddeaaf8f6e32b8bbfd3dc098a739005",
+      "source_section_range": [
+        0,
+        1389
+      ],
+      "state": "examined",
+      "reading": "Parti yeni Genel İdare Kurulunun ilk toplantısını ve üye listesini bildiriyor.",
+      "selected_passages": [
+        {
+          "start": 272,
+          "end": 283,
+          "exact": "Bülent Kaya"
+        }
+      ],
+      "point": "2024 parti yönetim kurulu bileşimi.",
+      "statement": "Parti Arıkan başkanlığındaki yeni GİK üyeleri arasında Bülent ve Mustafa Kayayı ayrı adlarla listeliyor.",
+      "concrete_evidence": "30 Kasım tarihli parti sayfası ilk GİK toplantısı ve üye listesini bildiriyor; Bülent Kaya aynı dönem konuşmacısının parti yönetimindeki rolü için destekleyici parti kaynağıdır.",
+      "open_provenance": "Bu liste tek başına resmî grup sıfatını, sonraki görev süresini veya GİK kararı alındığını kanıtlamaz; TBMM dönemsel grup konuşması ve bireysel oy ayrıca değerlendirilir."
+    }
+  ],
+  "completed_pre_cut_bodies": 206,
+  "remaining_pre_cut_bodies": 443,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
