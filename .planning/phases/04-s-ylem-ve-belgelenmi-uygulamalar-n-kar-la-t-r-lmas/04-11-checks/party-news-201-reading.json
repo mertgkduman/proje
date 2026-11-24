@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-201",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T21:53:38.700060+00:00",
+  "reads": [
+    {
+      "post_id": 379,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/ekonomik-rezaletin-sucu-marketlere-atiliyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=ekonomik-rezaletin-sucu-marketlere-atiliyor",
+      "published_at": "2023-01-04T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T21:51:26.361319+00:00",
+      "original_path": "party-news-bodies/379.json",
+      "sha256": "ceea9c1970a0f3090e23b1e0cd7fc60bc45dc6ba22ff50085677637da03d2681",
+      "normalized_body_sha256": "bf2fd3ed2efc92819802bb2003530996fa23dbe84ff5be9dbcbb215908d4b270",
+      "source_section_range": [
+        0,
+        6070
+      ],
+      "state": "examined",
+      "reading": "Genel başkan yardımcısı Şerafettin Kılıç seçili ürün fiyatlarını gösteriyor ve partinin ortalama artışını yüzde 133 olarak sunuyor.",
+      "selected_passages": [
+        {
+          "start": 3194,
+          "end": 3293,
+          "exact": "Bir yıl boyunca aynı marka ürünlerin aynı marketlerde gerçekleşen fiyat artışlarını takip ediyoruz."
+        }
+      ],
+      "point": "Partinin seçili ürün fiyatları çalışması.",
+      "statement": "Genel başkan yardımcısı Şerafettin Kılıç seçili ürün fiyatlarını gösteriyor ve partinin ortalama artışını yüzde 133 olarak sunuyor.",
+      "concrete_evidence": "Parti yayımı Ocak 2022 ve Ocak 2023 için seçili ürün fiyatları tablosunu ve çalışmanın tanımını içeriyor.",
+      "open_provenance": "Parti sepetindeki seçili markalar ve fiyat ortalaması TÜİK’in ağırlıklı tüketici enflasyonu ile aynı istatistik değildir. Tablo hesapları ve mağaza gözlemleri ayrıca doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 287,
+  "remaining_pre_cut_bodies": 362,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı indirme dosyasının ilk yazılma zamanıdır."
+}

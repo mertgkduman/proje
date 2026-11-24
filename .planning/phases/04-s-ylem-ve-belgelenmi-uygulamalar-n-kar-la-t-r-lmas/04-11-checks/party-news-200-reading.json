@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-200",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T21:53:38.691537+00:00",
+  "reads": [
+    {
+      "post_id": 380,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/sozde-yerli-ve-milliler",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=sozde-yerli-ve-milliler",
+      "published_at": "2023-01-17T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T21:51:25.714316+00:00",
+      "original_path": "party-news-bodies/380.json",
+      "sha256": "1c52852a051b4b660d798325748b9f1667d892800710e55a9b7924e7cb7c207e",
+      "normalized_body_sha256": "98bc1ab432e300213b23b649a3002254fd08a0523990c9c50e82710b80895a23",
+      "source_section_range": [
+        0,
+        11618
+      ],
+      "state": "examined",
+      "reading": "Karamollaoğlu seçim kararı alınmasını ve en geç iki ay içinde seçime gidilmesini istiyor.",
+      "selected_passages": [
+        {
+          "start": 3720,
+          "end": 3789,
+          "exact": "Bugün seçim kararı alınsın, en geç 2 ay içerisinde de seçime gidelim."
+        }
+      ],
+      "point": "Ekonomi eleştirisi ve erken seçim çağrısı.",
+      "statement": "Karamollaoğlu seçim kararı alınmasını ve en geç iki ay içinde seçime gidilmesini istiyor.",
+      "concrete_evidence": "18 Ocak yerel günlü parti yayımı çağrıyı genel başkanın haftalık basın toplantısına atfediyor.",
+      "open_provenance": "Sonradan alınan seçim kararı ve gerçekleşen seçim tarihi ayrı kurumsal kaynakla doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 286,
+  "remaining_pre_cut_bodies": 363,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı indirme dosyasının ilk yazılma zamanıdır."
+}
