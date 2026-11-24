@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-130",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T15:18:43.725509+00:00",
+  "reads": [
+    {
+      "post_id": 450,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bugun-iktidara-yuruyusumuzun-basladigi-gundur",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bugun-iktidara-yuruyusumuzun-basladigi-gundur",
+      "published_at": "2024-11-23T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T15:18:43.725509+00:00",
+      "original_path": "party-news-bodies/450.json",
+      "sha256": "5871e1a885953039b685cd7b3922b457642dcb96a2a8a7e3d0847ee9650a1677",
+      "normalized_body_sha256": "484d784b682898e67a3a0c8fe04e746bbb8bf47dd757bca2fd05e8587e866b01",
+      "source_section_range": [
+        0,
+        24891
+      ],
+      "state": "examined",
+      "reading": "Parti Mahmut Arıkanın genel başkan adaylığı kongre konuşmasını haberleştiriyor.",
+      "selected_passages": [
+        {
+          "start": 2497,
+          "end": 2529,
+          "exact": "sözünüzü tutun mülakatı kaldırın"
+        }
+      ],
+      "point": "Kongre konuşmasında öğretmen mülakatına ilişkin çağrı.",
+      "statement": "Parti haberine göre Atmaca teklifin belirli köy maddesini desteklerken teklifin geneline sözünüzü tutun mülakatı kaldırın ifade ediyor.",
+      "concrete_evidence": "30 Kasım tarihli parti sayfası ilk GİK toplantısı ve üye listesini bildiriyor; sözünüzü tutun mülakatı kaldırın aynı dönem konuşmacısının parti yönetimindeki rolü için destekleyici parti kaynağıdır.",
+      "open_provenance": "450 ve 452 ayrı katalog gövdeleri aynı kongre konuşmasının tekrar/versiyonlarıdır; iki ayrı konuşma veya iki ayrı talep sayılmaz. API tarih etiketi 23 Kasım 21:00 UTC iken gövde konuşmayı 24 Kasım olarak tarihler."
+    }
+  ],
+  "completed_pre_cut_bodies": 216,
+  "remaining_pre_cut_bodies": 433,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
