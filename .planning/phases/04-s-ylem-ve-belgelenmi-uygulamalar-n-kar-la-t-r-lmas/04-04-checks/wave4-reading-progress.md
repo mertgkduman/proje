@@ -11,7 +11,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 30 | 29 | 62615305 |
 | DEM Parti | 84 | 12 | 62602872 / 62602874 |
-| İYİ Parti | 20 | 12 | 62611360 / 62611365 |
+| İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 81 | 77 | 62611329 |
@@ -548,3 +548,5 @@ TİP’in 25 Ağustos 2023 Atalay açıklaması ve 7 Temmuz 2023 borçlanma aç�
 On ikinci birleşik önizleme 62615150 ile tamamlandı ve bağımsız denetimden geçti. Dokuz dondurulmuş paketten 534 olay, 369 ilişki, 566 olay başvurusu, 27 ortak olay kararı ve 199 eşleşmemiş aday doğrulandı. İki okuyucu görünümünde 738 ilişki ve 398 eşleşmemiş aday bağlantısı var. Ankara çalıştayında DEM Parti ile EMEP’in katkıları ayrı. 2 Ekim liderler toplantısında Demokrat Parti ve Saadet ilişkileri, Uysal ve Akşener katılım kayıtları ve Karamollaoğlu’nun varış pasajı ayrı. Aynı haberin özgün baytları iki olay için kendi kaynak gruplarında doğrulandı. 7527’nin dört kişisel oyu ve 7242’nin iki açık kimliği korundu. Kapsam kapanışı sıfır. [Bağımsız birleşim denetimi](wave4-merge-rehearsal-12-62615150-independent.json)
 
 TİP Parti Açıklamaları dizininde 65–72 arası sekiz gövdenin 32.711 karakteri okundu. Son toplam 72/190. 126 sayılı kararname dört özgün Resmî Gazete sayfasından, 7452 kabulü ve 2. madde Meclis tutanağı ve kanun metninden okundu. 14 Şubat parti çağrısı, 17 Şubat uzaktan öğretim kararı ve 3 Nisan’dan başlayabilen isteğe bağlı yüz yüze eğitim ayrı. Üniversitelerin kararları ve öğrencilerin fiilî katılımı ayrı tutuldu. [Dokuzuncu okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-09/reading.json)
+
+İYİ Parti’nin Akbelen karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 7 Ağustos ANKA haberindeki Kürşad Zorlu’ya atfedilen katılım ve destek açıklaması ile Metin Ergun’un 8 Ağustos 8/14 ön görüşmesindeki grup konuşması ayrı. Genel Kurul genel görüşme açmayı kabul etmedi. 4/13 çağrısı, 4/15 devam işlemi, kişisel oylar ve maden izninin fiilî durumu ayrı. İYİ Parti çalışma çifti 21 olay ve 13 ilişki. [Önizleme makbuzu](../04-07-checks/akbelen-iyi-62615506.json) [Bağımsız denetim](../04-07-checks/akbelen-iyi-62615506-independent.json)
