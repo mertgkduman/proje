@@ -91,13 +91,13 @@ assert (len(records['practice_event']),len(records['practice_relation']),len(rec
 topic='tarim-hayvancilik'; stem='0411-saadet-agriculture-2025'; src='0411-agriculture-2025-'
 statement,target,quote=(stem+s for s in ('-statement','-target','-quote'))
 goal='Saadet Partisi Antalya Milletvekili Şerafettin Kılıç 8 Kasım 2024te yeni bir tarım sayımının ivedilikle yapılması çağrısında bulundu.'
-limit='Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.'
+limit='Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.'
 sp=[src+'party-identity',src+'party-call']; finding(target,goal,sp,'Saadet Partisi API özgün gövdesindeki Kılıç açıklaması.')
 finding(quote,passages[sp[1]]['exact'],[sp[1]],'Açıklamadaki tarım sayımı çağrısı.',pair=target)
 records['practice_statement'].append(dict(id=statement,party_id=party,topic_id=topic,taxonomy_version=4,summary_finding_id=target,quote_finding_id=quote,statement_at='2024-11-08',date_precision='day',version_id=passages[sp[1]]['version_id'],period_basis='Parti API yayım günlü basın toplantısı haberi.',uncertainty_reason=limit,comparison_row_id='04-03-v3-0311-saadet-tarim-hayvancilik'))
 readings(topic,'statement',sp)
 for kind,claim in [('practice_statement',goal),('practice_statement.summary_finding_id',goal),('practice_statement.quote_finding_id',passages[sp[1]]['exact'])]: task(kind,statement,claim,limit)
-ep=[(src+'ministry-start','action','document','Bakanlık sayımın 1 Temmuz 2025te başladığını bildirdi.'),(src+'circular3-extension','result','document','TÜİK 3 numaralı genelgeyle veri derleme süresini 30 Ocak 2026ya uzattı.')]
+ep=[(src+'prior-plan','initiative','document','Bakan 18 Aralık 2023te TÜİK protokolü ve sayımın 2026 sonunda tamamlanması hedefini açıkladı.'),(src+'ministry-start','action','document','Bakanlık sayımın 1 Temmuz 2025te başladığını bildirdi.'),(src+'circular3-extension','result','document','TÜİK 3 numaralı genelgeyle veri derleme süresini 30 Ocak 2026ya uzattı.')]
 eid=event(stem,'2025-07-01','2025 Genel Tarım Sayımının başlaması','Bakanlık ve TÜİK işbirliğindeki sayım 1 Temmuz 2025te başladı; veri derleme süresi 30 Ocak 2026ya uzatıldı.',ep,limit)
 records['practice_event'][-1].update(common_event_key='tuik-2025-genel-tarim-sayimi-baslangic',occurrence_basis='Bakanlığın 2 Eylül 2025 duyurusu ve TÜİK 3 numaralı genelgesi.')
 eids=[r[0] for r in ep]; scope=readings(topic,'event',eids); rid,result,explanation=(stem+s for s in ('-relation','-result','-explanation'))

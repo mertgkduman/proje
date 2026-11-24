@@ -19072,7 +19072,7 @@
         "date_unknown_reason": null,
         "version_label": "Parti API özgün JSON gövdesi.",
         "accessed_at": "2026-11-24T16:02:58.197212+00:00",
-        "verified_at": "2026-11-24T17:03:33.324436+00:00",
+        "verified_at": "2026-11-24T17:06:29.956646+00:00",
         "mime": "application/json",
         "sha256": "e945fe55891db0caa33ca0dc63886584133186a68a990ef386fb764cd0500487",
         "original_path": "objects/e945fe55891db0caa33ca0dc63886584133186a68a990ef386fb764cd0500487/original.html.bin",
@@ -19086,11 +19086,11 @@
         "publisher": "Saadet Partisi",
         "author": null,
         "kind": "official",
-        "published_at": "2024-11-08T14:50:09+00:00",
-        "date_precision": "second",
+        "published_at": "2024-11-08",
+        "date_precision": "day",
         "social_handle": null,
-        "public_url": "https://saadet.org.tr/dostum-trump-demekle-filistine-dusmanim-demek-ayni-mahiyettedir",
-        "basis": "Parti API zamanı ve özgün içerik."
+        "public_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=dostum-trump-demekle-filistine-dusmanim-demek-ayni-mahiyettedir",
+        "basis": "Parti API yayım günü ve özgün JSON; kullanıcı sayfası https://saadet.org.tr/dostum-trump-demekle-filistine-dusmanim-demek-ayni-mahiyettedir."
       }
     },
     {
@@ -19136,6 +19136,74 @@
     {
       "kind": "document",
       "values": {
+        "id": "0411-agriculture-2025-prior",
+        "party_id": "saadet",
+        "title": "2025 Genel Tarım Sayımı: prior",
+        "source_kind": "official"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0411-agriculture-2025-prior-v1",
+        "document_id": "0411-agriculture-2025-prior",
+        "original_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/39/Tam/464b5cb6-aa99-40c5-a6d8-d5906e72304d.html",
+        "final_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/39/Tam/464b5cb6-aa99-40c5-a6d8-d5906e72304d.html",
+        "document_date": "2023-12-18",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Bakanlık özgün duyurusu.",
+        "accessed_at": "2026-11-24T17:04:55.890076+00:00",
+        "verified_at": "2026-11-24T17:06:29.956646+00:00",
+        "mime": "text/html",
+        "sha256": "0677f0cd5dc36cc012983cc5df44c7a2a351d2f9c17c80d8a91217a4ed1737d2",
+        "original_path": "objects/0677f0cd5dc36cc012983cc5df44c7a2a351d2f9c17c80d8a91217a4ed1737d2/original.html.bin",
+        "readable_path": "objects/0677f0cd5dc36cc012983cc5df44c7a2a351d2f9c17c80d8a91217a4ed1737d2/readable.html"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0411-agriculture-2025-prior-v1",
+        "publisher": "TBMM",
+        "author": null,
+        "kind": "official",
+        "published_at": null,
+        "date_precision": "unknown",
+        "social_handle": null,
+        "public_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/39/Tam/464b5cb6-aa99-40c5-a6d8-d5906e72304d.html",
+        "basis": "Kurumun özgün belgesi; kaynak yayım saati ayrıca bilinmiyor."
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "70f0916e03af0aa4b356e907c83913ab",
+        "format_version": 2,
+        "source_sha256": "0677f0cd5dc36cc012983cc5df44c7a2a351d2f9c17c80d8a91217a4ed1737d2",
+        "index_path": "views/70f0916e03af0aa4b356e907c83913ab/index.html",
+        "manifest_path": "views/70f0916e03af0aa4b356e907c83913ab/manifest.json",
+        "manifest_sha256": "7c94960e5379e5354b5603775c3adac6ec664b669b3baa8d5bdc70eba99210be",
+        "version_id": "0411-agriculture-2025-prior-v1"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0411-agriculture-2025-prior-plan",
+        "version_id": "0411-agriculture-2025-prior-v1",
+        "exact": "TÜİK’le imzaladığımız protokol kapsamında genel tarım sayımı 2026 sonunda tamamlanacaktır.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Bakanın 2023 yılı protokol ve sayım planı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "document",
+      "values": {
         "id": "0411-agriculture-2025-ministry",
         "party_id": "saadet",
         "title": "2025 Genel Tarım Sayımı: ministry",
@@ -19154,7 +19222,7 @@
         "date_unknown_reason": null,
         "version_label": "Bakanlık özgün duyurusu.",
         "accessed_at": "2026-11-24T16:07:02.305699+00:00",
-        "verified_at": "2026-11-24T17:03:33.324436+00:00",
+        "verified_at": "2026-11-24T17:06:29.956646+00:00",
         "mime": "text/html",
         "sha256": "d98404924ce7fe426f51d84a6c6b74dca765849f15b0efc41c03fb4040527c13",
         "original_path": "objects/d98404924ce7fe426f51d84a6c6b74dca765849f15b0efc41c03fb4040527c13/original.html.bin",
@@ -19222,7 +19290,7 @@
         "date_unknown_reason": "Genelge üzerinde yayım günü belirtilmemiştir.",
         "version_label": "TÜİK 3 numaralı genelge.",
         "accessed_at": "2026-11-24T16:07:47.908241+00:00",
-        "verified_at": "2026-11-24T17:03:33.324436+00:00",
+        "verified_at": "2026-11-24T17:06:29.956646+00:00",
         "mime": "application/pdf",
         "sha256": "b4fd5204bfc15f3359e43ec9a95b85c07a25f917af1798ec02659457553afd6b",
         "original_path": "objects/b4fd5204bfc15f3359e43ec9a95b85c07a25f917af1798ec02659457553afd6b/original.pdf",
@@ -19282,7 +19350,7 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-target",
         "passage_id": "0411-agriculture-2025-party-identity",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
         "reason": "Saadet Partisi API özgün gövdesindeki Kılıç açıklaması."
       }
@@ -19300,7 +19368,7 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-target",
         "passage_id": "0411-agriculture-2025-party-call",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
         "reason": "Saadet Partisi API özgün gövdesindeki Kılıç açıklaması."
       }
@@ -19312,7 +19380,7 @@
         "kind": "finding",
         "subject_id": "0411-saadet-agriculture-2025-target",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-24T17:03:35.278399+00:00",
+        "reviewed_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "reviewed",
         "reason": "Saadet Partisi API özgün gövdesindeki Kılıç açıklaması."
       }
@@ -19342,7 +19410,7 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-quote",
         "passage_id": "0411-agriculture-2025-party-call",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
         "reason": "Açıklamadaki tarım sayımı çağrısı."
       }
@@ -19354,7 +19422,7 @@
         "kind": "finding",
         "subject_id": "0411-saadet-agriculture-2025-quote",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-24T17:03:35.278399+00:00",
+        "reviewed_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "reviewed",
         "reason": "Açıklamadaki tarım sayımı çağrısı."
       }
@@ -19375,6 +19443,24 @@
       "kind": "finding_evidence",
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-result",
+        "passage_id": "0411-agriculture-2025-prior-plan",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0411-saadet-agriculture-2025-result",
+        "passage_id": "0411-agriculture-2025-prior-plan",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
+        "result": "confirmed",
+        "reason": "Bakanlık duyurusu ve TÜİK genelgesi."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0411-saadet-agriculture-2025-result",
         "passage_id": "0411-agriculture-2025-ministry-start",
         "role": "support"
       }
@@ -19384,7 +19470,7 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-result",
         "passage_id": "0411-agriculture-2025-ministry-start",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
         "reason": "Bakanlık duyurusu ve TÜİK genelgesi."
       }
@@ -19402,7 +19488,7 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-result",
         "passage_id": "0411-agriculture-2025-circular3-extension",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
         "reason": "Bakanlık duyurusu ve TÜİK genelgesi."
       }
@@ -19414,7 +19500,7 @@
         "kind": "finding",
         "subject_id": "0411-saadet-agriculture-2025-result",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-24T17:03:35.278399+00:00",
+        "reviewed_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "reviewed",
         "reason": "Bakanlık duyurusu ve TÜİK genelgesi."
       }
@@ -19425,7 +19511,7 @@
         "id": "0411-saadet-agriculture-2025-explanation",
         "party_id": "saadet",
         "heading": "Belgelenmiş uygulamalar",
-        "text": "Kılıcın yeni tarım sayımı çağrısı ile Bakanlık ve TÜİKin sonraki genel tarım sayımı aynı genel sayım konusundadır. Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
+        "text": "Kılıcın yeni tarım sayımı çağrısı ile Bakanlık ve TÜİKin sonraki genel tarım sayımı aynı genel sayım konusundadır. Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
         "pair_id": "0411-saadet-agriculture-2025-explanation",
         "provenance": "summary",
         "epistemic_type": "claim"
@@ -19444,9 +19530,9 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-explanation",
         "passage_id": "0411-agriculture-2025-party-identity",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
-        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
+        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
       }
     },
     {
@@ -19462,9 +19548,27 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-explanation",
         "passage_id": "0411-agriculture-2025-party-call",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
-        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
+        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0411-saadet-agriculture-2025-explanation",
+        "passage_id": "0411-agriculture-2025-prior-plan",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0411-saadet-agriculture-2025-explanation",
+        "passage_id": "0411-agriculture-2025-prior-plan",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
+        "result": "confirmed",
+        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
       }
     },
     {
@@ -19480,9 +19584,9 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-explanation",
         "passage_id": "0411-agriculture-2025-ministry-start",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
-        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
+        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
       }
     },
     {
@@ -19498,9 +19602,9 @@
       "values": {
         "finding_id": "0411-saadet-agriculture-2025-explanation",
         "passage_id": "0411-agriculture-2025-circular3-extension",
-        "checked_at": "2026-11-24T17:03:35.278399+00:00",
+        "checked_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "confirmed",
-        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
+        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
       }
     },
     {
@@ -19510,9 +19614,9 @@
         "kind": "finding",
         "subject_id": "0411-saadet-agriculture-2025-explanation",
         "reviewer_kind": "agent",
-        "reviewed_at": "2026-11-24T17:03:35.278399+00:00",
+        "reviewed_at": "2026-11-24T17:06:31.956451+00:00",
         "result": "reviewed",
-        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
+        "reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
       }
     }
   ],
@@ -21454,11 +21558,20 @@
       },
       {
         "event_id": "0411-saadet-agriculture-2025-event",
+        "passage_id": "0411-agriculture-2025-prior-plan",
+        "stage": "initiative",
+        "supported_point": "Bakan 18 Aralık 2023te TÜİK protokolü ve sayımın 2026 sonunda tamamlanması hedefini açıkladı.",
+        "concrete_basis": "Bakanın 2023 yılı protokol ve sayım planı",
+        "limitation": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0411-saadet-agriculture-2025-event",
         "passage_id": "0411-agriculture-2025-ministry-start",
         "stage": "action",
         "supported_point": "Bakanlık sayımın 1 Temmuz 2025te başladığını bildirdi.",
         "concrete_basis": "Bakanlığın sayım başlangıcı",
-        "limitation": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
+        "limitation": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
         "epistemic_type": "claim"
       },
       {
@@ -21467,7 +21580,7 @@
         "stage": "result",
         "supported_point": "TÜİK 3 numaralı genelgeyle veri derleme süresini 30 Ocak 2026ya uzattı.",
         "concrete_basis": "TÜİK veri derleme süresini uzatıyor",
-        "limitation": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
+        "limitation": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
         "epistemic_type": "claim"
       }
     ],
@@ -22542,6 +22655,12 @@
       },
       {
         "event_id": "0411-saadet-agriculture-2025-event",
+        "passage_id": "0411-agriculture-2025-prior-plan",
+        "stage": "initiative",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0411-saadet-agriculture-2025-event",
         "passage_id": "0411-agriculture-2025-ministry-start",
         "stage": "action",
         "basis_kind": "document"
@@ -22873,7 +22992,7 @@
         "date_precision": "day",
         "version_id": "0411-agriculture-2025-party-v1",
         "period_basis": "Parti API yayım günlü basın toplantısı haberi.",
-        "uncertainty_reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
+        "uncertainty_reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez.",
         "comparison_row_id": "04-03-v3-0311-saadet-tarim-hayvancilik"
       }
     ],
@@ -23311,7 +23430,7 @@
         "explanation_finding_id": "0411-saadet-agriculture-2025-explanation",
         "temporal_context": "8 Kasım 2024 açıklamasını 1 Temmuz 2025 sayım başlangıcı izledi.",
         "authority_context": "Kılıç Saadet milletvekili olarak çağrı yaptı; sayım Bakanlık ve TÜİK tarafından yürütüldü.",
-        "uncertainty_reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; bir kurumsal karar veya sayımı yürütme yetkisi değildir. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
+        "uncertainty_reason": "Kılıçın açıklaması parti kaynağındaki basın toplantısıdır; kurumsal karar veya sayımı yürütme yetkisi değildir. Bakan 18 Aralık 2023te TÜİK protokolü ve 2026 sonunda tamamlanması hedefini zaten açıklamıştı. Sayımın çağrı nedeniyle başlatıldığına ilişkin kanıt yoktur. TÜİK genelgesinin yayım günü bilinmiyor. Veri derleme süresinin uzatılması sayım sonuçlarının yayımlandığını göstermez."
       }
     ],
     "practice_coverage_contract": [
@@ -24398,19 +24517,25 @@
       {
         "scope_id": "practice-f34d9b3c59ff5e1478936383f8bd0b97d510e1de747f5ebf4adc811d498c7d08",
         "version_id": "0411-agriculture-2025-party-v1",
-        "inspected_at": "2026-11-24T17:03:35.278399+00:00",
+        "inspected_at": "2026-11-24T17:06:31.956451+00:00",
         "inspected_sections": "[\"Kılıcın yeni tarım sayımı çağrısı\", \"Parti kaynağı Kılıcın basın toplantısı sıfatını bildirir\"]"
       },
       {
         "scope_id": "practice-4a102512cbc79d35fe2bd38f652a2bb72a730e5c5559f8212063b7dc5005d64c",
+        "version_id": "0411-agriculture-2025-prior-v1",
+        "inspected_at": "2026-11-24T17:06:31.956451+00:00",
+        "inspected_sections": "[\"Bakanın 2023 yılı protokol ve sayım planı\"]"
+      },
+      {
+        "scope_id": "practice-4a102512cbc79d35fe2bd38f652a2bb72a730e5c5559f8212063b7dc5005d64c",
         "version_id": "0411-agriculture-2025-ministry-v1",
-        "inspected_at": "2026-11-24T17:03:35.278399+00:00",
+        "inspected_at": "2026-11-24T17:06:31.956451+00:00",
         "inspected_sections": "[\"Bakanlığın sayım başlangıcı\"]"
       },
       {
         "scope_id": "practice-4a102512cbc79d35fe2bd38f652a2bb72a730e5c5559f8212063b7dc5005d64c",
         "version_id": "0411-agriculture-2025-circular3-v1",
-        "inspected_at": "2026-11-24T17:03:35.278399+00:00",
+        "inspected_at": "2026-11-24T17:06:31.956451+00:00",
         "inspected_sections": "[\"TÜİK veri derleme süresini uzatıyor\"]"
       }
     ],
@@ -25278,6 +25403,14 @@
         "relevance_reason": "Tarım sayımı açıklaması ve kurumsal kayıt.",
         "state": "examined",
         "attempt_ids": "[\"agriculture-2025-reading-statement-tarim-hayvancilik-0411-agriculture-2025-party-v1\"]"
+      },
+      {
+        "id": "lead-agriculture-2025-reading-event-tarim-hayvancilik-0411-agriculture-2025-prior-v1",
+        "scope_id": "practice-4a102512cbc79d35fe2bd38f652a2bb72a730e5c5559f8212063b7dc5005d64c",
+        "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/39/Tam/464b5cb6-aa99-40c5-a6d8-d5906e72304d.html",
+        "relevance_reason": "Tarım sayımı açıklaması ve kurumsal kayıt.",
+        "state": "examined",
+        "attempt_ids": "[\"agriculture-2025-reading-event-tarim-hayvancilik-0411-agriculture-2025-prior-v1\"]"
       },
       {
         "id": "lead-agriculture-2025-reading-event-tarim-hayvancilik-0411-agriculture-2025-ministry-v1",
@@ -26401,7 +26534,7 @@
       {
         "id": "agriculture-2025-reading-statement-tarim-hayvancilik-0411-agriculture-2025-party-v1",
         "scope_id": "practice-f34d9b3c59ff5e1478936383f8bd0b97d510e1de747f5ebf4adc811d498c7d08",
-        "attempted_at": "2026-11-24T17:03:35.278399+00:00",
+        "attempted_at": "2026-11-24T17:06:31.956451+00:00",
         "query": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=dostum-trump-demekle-filistine-dusmanim-demek-ayni-mahiyettedir",
         "url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=dostum-trump-demekle-filistine-dusmanim-demek-ayni-mahiyettedir",
         "result": "examined",
@@ -26409,9 +26542,19 @@
         "source_version_id": "0411-agriculture-2025-party-v1"
       },
       {
+        "id": "agriculture-2025-reading-event-tarim-hayvancilik-0411-agriculture-2025-prior-v1",
+        "scope_id": "practice-4a102512cbc79d35fe2bd38f652a2bb72a730e5c5559f8212063b7dc5005d64c",
+        "attempted_at": "2026-11-24T17:06:31.956451+00:00",
+        "query": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/39/Tam/464b5cb6-aa99-40c5-a6d8-d5906e72304d.html",
+        "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/39/Tam/464b5cb6-aa99-40c5-a6d8-d5906e72304d.html",
+        "result": "examined",
+        "reason": "Belgenin belirtilen bölümü ve aktör bağlamı özgün nüshada okundu.",
+        "source_version_id": "0411-agriculture-2025-prior-v1"
+      },
+      {
         "id": "agriculture-2025-reading-event-tarim-hayvancilik-0411-agriculture-2025-ministry-v1",
         "scope_id": "practice-4a102512cbc79d35fe2bd38f652a2bb72a730e5c5559f8212063b7dc5005d64c",
-        "attempted_at": "2026-11-24T17:03:35.278399+00:00",
+        "attempted_at": "2026-11-24T17:06:31.956451+00:00",
         "query": "https://www.tarimorman.gov.tr/Haber/6721/2025-Genel-Tarim-Sayimi",
         "url": "https://www.tarimorman.gov.tr/Haber/6721/2025-Genel-Tarim-Sayimi",
         "result": "examined",
@@ -26421,7 +26564,7 @@
       {
         "id": "agriculture-2025-reading-event-tarim-hayvancilik-0411-agriculture-2025-circular3-v1",
         "scope_id": "practice-4a102512cbc79d35fe2bd38f652a2bb72a730e5c5559f8212063b7dc5005d64c",
-        "attempted_at": "2026-11-24T17:03:35.278399+00:00",
+        "attempted_at": "2026-11-24T17:06:31.956451+00:00",
         "query": "https://www.tuik.gov.tr/media/corporatecontent/tuik-uc-nolu-genelge.pdf",
         "url": "https://www.tuik.gov.tr/media/corporatecontent/tuik-uc-nolu-genelge.pdf",
         "result": "examined",
@@ -26743,7 +26886,7 @@
         "relation_id": "0411-saadet-agriculture-2025-relation",
         "state": "eligible",
         "reason": "Kılıcın yeni tarım sayımı çağrısı ile Bakanlık ve TÜİKin sonraki genel tarım sayımı aynı genel sayım konusundadır.",
-        "passage_ids": "[\"0411-agriculture-2025-ministry-start\", \"0411-agriculture-2025-circular3-extension\"]"
+        "passage_ids": "[\"0411-agriculture-2025-prior-plan\", \"0411-agriculture-2025-ministry-start\", \"0411-agriculture-2025-circular3-extension\"]"
       }
     ],
     "practice_candidate_legacy": [],
@@ -28419,6 +28562,10 @@
     {
       "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0411-saadet-agriculture-2025-statement"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0411-saadet-agriculture-2025-event|0411-agriculture-2025-prior-plan|initiative"
     },
     {
       "subject_kind": "practice_event_evidence",
