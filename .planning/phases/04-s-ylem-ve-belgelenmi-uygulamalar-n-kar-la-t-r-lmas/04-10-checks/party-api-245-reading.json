@@ -1,8 +1,8 @@
 {
   "tranche_id": "0410-emep-api-245",
-  "read_at": "2026-11-24T00:12:07.786318+00:00",
-  "method": "İki özgün Türkçe gövde aralığı SHA doğrulanarak okundu.",
-  "limitation": "4466 devamı ve 4391, 4330, 4328 okunmadı; kapsam kapanışı yok.",
+  "read_at": "2026-11-24T00:45:49.348289+00:00",
+  "method": "Dört özgün gövde aralığı SHA doğrulanarak okundu.",
+  "limitation": "4466 devamı ve 4391 okunmadı; 4328 sonraki dilimde sürüyor. Kapsam kapanışı yok.",
   "parts": [
     {
       "post_id": 4459,
@@ -23,6 +23,26 @@
       "end_char": 2320,
       "body_temporal_status": "last_modified_at_or_before_cutoff",
       "reading_note": "HDP çağrısı üzerine 18 Ocak 2022 Ankara ortak toplantısı ve açıklaması; gelecekteki ittifaklar veya sonuçları varsayılmıyor."
+    },
+    {
+      "post_id": 4330,
+      "url": "https://www.emep.org/multecilere-yonelik-saldirilara-karsi-yerli-gocmen-isciler-olarak-birleselim",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-22.json",
+      "body_sha256": "e75b5376e00c4103b6ab1cd43fd649440b663966f0b0c0e8f7413ff810b44564",
+      "start_char": 0,
+      "end_char": 2650,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Genel merkezin mültecilere saldırılar ve yerli-göçmen işçi dayanışması açıklaması; atıflı iddia ve çağrılar."
+    },
+    {
+      "post_id": 4328,
+      "url": "https://www.emep.org/devlet-destegi-adi-altinda-nafaka-aldatmacisini-kabul-etmiyoruz-haklarimiz-icin-mucadele-edecegiz",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-22.json",
+      "body_sha256": "01edf5916a46c154fd45775361a9b3caf879e9d408c5a4d503c82b9302f7c054",
+      "start_char": 0,
+      "end_char": 1372,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "reading_note": "Nafaka hakkı hakkında açıklamanın ilk aralığı; metin bir sonraki dilimde devam ediyor."
     }
   ]
 }
