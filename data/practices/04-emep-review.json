@@ -1,6 +1,58 @@
 {
   "practice_source_review": [
     {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0410-bulu-2021-conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bogazici-20210519-v1\", \"0410-emep-bulu-2021-official-v1\", \"0410-emep-bulu-2021-party-v1\", \"0410-emep-bulu-2021-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-bogazici-20210519-p\", \"0410-emep-bulu-2021-official-p\", \"0410-emep-bulu-2021-party-p\", \"0410-emep-bulu-2021-tbmm-p\"]",
+      "inspected_sections": "[\"2021/360 sayılı karar\", \"Boğaziçi ve üniversite özerkliği\", \"Garo Paylan komisyon konuşması\", \"Yükseköğretim ve mücadele\"]",
+      "supported_claim": "MYK istifa derken resmî karar ve TBMM konuşması görevden alma diyor.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_dispute / 0410-bulu-2021-conflict için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0410-bulu-2021-conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-2021-official-v1\", \"0410-emep-bulu-2021-party-v1\", \"0410-emep-bulu-2021-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-2021-official-p\", \"0410-emep-bulu-2021-party-p\", \"0410-emep-bulu-2021-tbmm-p\"]",
+      "inspected_sections": "[\"2021/360 sayılı karar\", \"Garo Paylan komisyon konuşması\", \"Yükseköğretim ve mücadele\"]",
+      "supported_claim": "MYK istifa derken resmî karar ve TBMM konuşması görevden alma diyor.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_dispute.summary_finding_id / 0410-bulu-2021-conflict için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0410-bulu-2021-conflict|0410-emep-bulu-2021-party-p|İşlemin niteliği|conflict",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-2021-party-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-2021-party-p\"]",
+      "inspected_sections": "[\"Yükseköğretim ve mücadele\"]",
+      "supported_claim": "EMEP MYK açıklaması Bulu için istifa ifadesini kullandı.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_dispute_evidence / 0410-bulu-2021-conflict|0410-emep-bulu-2021-party-p|İşlemin niteliği|conflict için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0410-bulu-2021-conflict|0410-emep-bulu-2021-tbmm-p|İşlemin niteliği|support",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-2021-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-2021-tbmm-p\"]",
+      "inspected_sections": "[\"Garo Paylan komisyon konuşması\"]",
+      "supported_claim": "TBMM tutanağında Paylan Bulu’nun görevden alındığını söyledi.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_dispute_evidence / 0410-bulu-2021-conflict|0410-emep-bulu-2021-tbmm-p|İşlemin niteliği|support için ilgili özgün pasajlar okundu."
+    },
+    {
       "subject_kind": "practice_event",
       "subject_id": "0410-2020-ninth-event",
       "reviewer_kind": "agent",
@@ -168,6 +220,19 @@
       "limitations": "Haber oylama biçimi ve kongrenin tam gününü belirtmez; seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "practice_event / 0410-bolu-il-kongre-event için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-bulu-dismissal-2021-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bogazici-20210519-v1\", \"0410-emep-bulu-2021-official-v1\", \"0410-emep-bulu-2021-party-v1\", \"0410-emep-bulu-2021-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-bogazici-20210519-p\", \"0410-emep-bulu-2021-official-p\", \"0410-emep-bulu-2021-party-p\", \"0410-emep-bulu-2021-tbmm-p\"]",
+      "inspected_sections": "[\"2021/360 sayılı karar\", \"Boğaziçi ve üniversite özerkliği\", \"Garo Paylan komisyon konuşması\", \"Yükseköğretim ve mücadele\"]",
+      "supported_claim": "3 Şubat talebi ve 14 Temmuz görevden alma aynı kişiye ve rektörlük görevine ilişkindir; işlem ve seçim talepleri ayrıdır.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_event / 0410-bulu-dismissal-2021-event için ilgili özgün pasajlar okundu."
     },
     {
       "subject_kind": "practice_event",
@@ -1416,6 +1481,58 @@
       "limitations": "Haber oylama biçimi ve kongrenin tam gününü belirtmez; seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "practice_event_evidence / 0410-bolu-il-kongre-event|0410-emep-2020-bolu-discipline-full-p|result için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bogazici-20210519-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bogazici-20210519-v1\"]",
+      "passage_ids": "[\"0410-emep-bogazici-20210519-p\"]",
+      "inspected_sections": "[\"Boğaziçi ve üniversite özerkliği\"]",
+      "supported_claim": "Başkavak 19 Mayısta Boğaziçi ve özerk üniversite talebini andı.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-bulu-dismissal-2021-event|0410-emep-bogazici-20210519-p|initiative için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-official-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-2021-official-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-2021-official-p\"]",
+      "inspected_sections": "[\"2021/360 sayılı karar\"]",
+      "supported_claim": "Resmî PDF metin katmanı 2021/360 numarasını ve 14 Temmuz tarihini gösterir; görsel sayfa görevden alma der.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-official-p|action için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-party-p|initiative",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-2021-party-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-2021-party-p\"]",
+      "inspected_sections": "[\"Yükseköğretim ve mücadele\"]",
+      "supported_claim": "EMEP MYK açıklaması Bulu için istifa ifadesini kullandı.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-party-p|initiative için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-tbmm-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-2021-tbmm-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-2021-tbmm-p\"]",
+      "inspected_sections": "[\"Garo Paylan komisyon konuşması\"]",
+      "supported_claim": "TBMM tutanağında Paylan Bulu’nun görevden alındığını söyledi.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence / 0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-tbmm-p|action için ilgili özgün pasajlar okundu."
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -3733,6 +3850,19 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-bulu-2021-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bogazici-20210519-v1\", \"0410-emep-bulu-2021-official-v1\", \"0410-emep-bulu-2021-party-v1\", \"0410-emep-bulu-2021-tbmm-v1\", \"0410-emep-bulu-demand-20210203-v1\"]",
+      "passage_ids": "[\"0410-emep-bogazici-20210519-p\", \"0410-emep-bulu-2021-official-p\", \"0410-emep-bulu-2021-party-p\", \"0410-emep-bulu-2021-tbmm-p\", \"0410-emep-bulu-demand-20210203-election-p\", \"0410-emep-bulu-demand-20210203-resign-p\"]",
+      "inspected_sections": "[\"2021/360 sayılı karar\", \"Boğaziçi ve üniversite özerkliği\", \"Bulu istifa talebi\", \"Garo Paylan komisyon konuşması\", \"Rektörlerin seçilmesi talebi\", \"Yükseköğretim ve mücadele\"]",
+      "supported_claim": "3 Şubat talebi ve 14 Temmuz görevden alma aynı kişiye ve rektörlük görevine ilişkindir; işlem ve seçim talepleri ayrıdır.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_relation / 0410-bulu-2021-relation için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-cayirhan-720948-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T01:30:43+00:00",
@@ -4640,6 +4770,19 @@
       "limitations": "Haber oylama biçimi ve kongrenin tam gününü belirtmez; seçim tutanağı görülmedi.",
       "result": "reviewed",
       "reason": "practice_relation.explanation_finding_id / 0410-bolu-disiplin-relation için kaynakta il, kurul, üye ve haberin tarih sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-bulu-2021-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-2021-official-v1\", \"0410-emep-bulu-2021-tbmm-v1\", \"0410-emep-bulu-demand-20210203-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-2021-official-p\", \"0410-emep-bulu-2021-tbmm-p\", \"0410-emep-bulu-demand-20210203-election-p\", \"0410-emep-bulu-demand-20210203-resign-p\"]",
+      "inspected_sections": "[\"2021/360 sayılı karar\", \"Bulu istifa talebi\", \"Garo Paylan komisyon konuşması\", \"Rektörlerin seçilmesi talebi\"]",
+      "supported_claim": "3 Şubat talebi ve 14 Temmuz görevden alma aynı kişiye ve rektörlük görevine ilişkindir; işlem ve seçim talepleri ayrıdır.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id / 0410-bulu-2021-relation için ilgili özgün pasajlar okundu."
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
@@ -5761,6 +5904,19 @@
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-bulu-2021-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-demand-20210203-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-demand-20210203-election-p\", \"0410-emep-bulu-demand-20210203-resign-p\"]",
+      "inspected_sections": "[\"Bulu istifa talebi\", \"Rektörlerin seçilmesi talebi\"]",
+      "supported_claim": "Gürkan Bulu istifası ve rektör seçimi taleplerini açıkladı.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id / 0410-bulu-2021-relation için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-cayirhan-720948-relation",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T01:30:43+00:00",
@@ -6515,6 +6671,19 @@
     },
     {
       "subject_kind": "practice_statement",
+      "subject_id": "0410-bulu-2021-demand-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-demand-20210203-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-demand-20210203-election-p\", \"0410-emep-bulu-demand-20210203-resign-p\"]",
+      "inspected_sections": "[\"Bulu istifa talebi\", \"Rektörlerin seçilmesi talebi\"]",
+      "supported_claim": "Gürkan Bulu istifası ve rektör seçimi taleplerini açıkladı.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_statement / 0410-bulu-2021-demand-statement için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
       "subject_id": "0410-cayirhan-mining-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T01:30:43+00:00",
@@ -6863,6 +7032,19 @@
       "limitations": "Önerinin kabulü ve söyleşinin hukuki sonucu bilinmiyor.",
       "result": "reviewed",
       "reason": "practice_statement.quote_finding_id / 0410-anadil-proposal-statement için ilgili tüzük ve parti bildirgesi pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-bulu-2021-demand-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-demand-20210203-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-demand-20210203-resign-p\"]",
+      "inspected_sections": "[\"Bulu istifa talebi\"]",
+      "supported_claim": "Gürkan 3 Şubat 2021’de Bulu’nun istifasını istedi.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id / 0410-bulu-2021-demand-statement için ilgili özgün pasajlar okundu."
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -7217,6 +7399,19 @@
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-bulu-2021-demand-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T09:12:37+00:00",
+      "source_version_ids": "[\"0410-emep-bulu-demand-20210203-v1\"]",
+      "passage_ids": "[\"0410-emep-bulu-demand-20210203-election-p\", \"0410-emep-bulu-demand-20210203-resign-p\"]",
+      "inspected_sections": "[\"Bulu istifa talebi\", \"Rektörlerin seçilmesi talebi\"]",
+      "supported_claim": "Gürkan Bulu istifası ve rektör seçimi taleplerini açıkladı.",
+      "limitations": "Resmî kararda neden veya parti yetkisi bulunmaz; rektör seçiminin gerçekleşmesi gösterilmedi.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id / 0410-bulu-2021-demand-statement için ilgili özgün pasajlar okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-cayirhan-mining-statement",
       "reviewer_kind": "agent",
       "reviewed_at": "2026-11-23T01:30:43+00:00",
@@ -7556,6 +7751,22 @@
   ],
   "source_review_refs": [
     {
+      "subject_kind": "practice_dispute",
+      "subject_id": "0410-bulu-2021-conflict"
+    },
+    {
+      "subject_kind": "practice_dispute.summary_finding_id",
+      "subject_id": "0410-bulu-2021-conflict"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0410-bulu-2021-conflict|0410-emep-bulu-2021-party-p|İşlemin niteliği|conflict"
+    },
+    {
+      "subject_kind": "practice_dispute_evidence",
+      "subject_id": "0410-bulu-2021-conflict|0410-emep-bulu-2021-tbmm-p|İşlemin niteliği|support"
+    },
+    {
       "subject_kind": "practice_event",
       "subject_id": "0410-2020-ninth-event"
     },
@@ -7606,6 +7817,10 @@
     {
       "subject_kind": "practice_event",
       "subject_id": "0410-bolu-il-kongre-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-bulu-dismissal-2021-event"
     },
     {
       "subject_kind": "practice_event",
@@ -7990,6 +8205,22 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-bolu-il-kongre-event|0410-emep-2020-bolu-discipline-full-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bogazici-20210519-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-official-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-party-p|initiative"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-bulu-dismissal-2021-event|0410-emep-bulu-2021-tbmm-p|action"
     },
     {
       "subject_kind": "practice_event_evidence",
@@ -8705,6 +8936,10 @@
     },
     {
       "subject_kind": "practice_relation",
+      "subject_id": "0410-bulu-2021-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
       "subject_id": "0410-cayirhan-720948-relation"
     },
     {
@@ -8985,6 +9220,10 @@
     },
     {
       "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-bulu-2021-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
       "subject_id": "0410-cayirhan-720948-relation"
     },
     {
@@ -9326,6 +9565,10 @@
     {
       "subject_kind": "practice_relation.target_finding_id",
       "subject_id": "0410-bolu-disiplin-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-bulu-2021-relation"
     },
     {
       "subject_kind": "practice_relation.target_finding_id",
@@ -9558,6 +9801,10 @@
     {
       "subject_kind": "practice_statement",
       "subject_id": "0410-anadil-proposal-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-bulu-2021-demand-statement"
     },
     {
       "subject_kind": "practice_statement",
@@ -9666,6 +9913,10 @@
     {
       "subject_kind": "practice_statement.quote_finding_id",
       "subject_id": "0410-anadil-proposal-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-bulu-2021-demand-statement"
     },
     {
       "subject_kind": "practice_statement.quote_finding_id",
@@ -9774,6 +10025,10 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0410-anadil-proposal-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-bulu-2021-demand-statement"
     },
     {
       "subject_kind": "practice_statement.summary_finding_id",

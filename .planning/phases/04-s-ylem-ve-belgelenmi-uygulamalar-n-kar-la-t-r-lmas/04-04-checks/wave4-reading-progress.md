@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 68 | 70 | 62530588 |
+| EMEP | 69 | 71 | 62568514 |
 | Saadet Partisi | 26 | 22 | 62567788 |
 | Demokrat Parti | 41 | 34 | 62568686 |
 
@@ -305,3 +305,5 @@ Demokrat Parti’nin 009 ve 010 dilimlerindeki 18 gövde okundu. Katalogda 101 g
 Demokrat Parti’nin zeytinyağı karşılaştırmasında üç ayrı olay iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Altıntaş’ın 8 Mayıs 2024 kişisel çağrısı, 1 Haziran 50 bin ton kotası ve 13 Eylül kısıt kaldırma bildirimiyle karşılaştırıldı. 14 Eylül 8957 fon kesintisi kararı ayrı ve eşleşmemiş kaydedildi. Önceki çağrının kararlara etkisi ve kota kullanımı açık. [Önizleme makbuzu](../04-12-checks/olive-oil-62568686.json)
 
 Saadet yayın kataloğunun 025–027 aralığında beş özgün gövde daha okundu. 109/649 gövde incelendi ve 540 açık, ayrıca 662 kimlik uyuşmazlığı ve 577 teklif eşleşmesi açık. EMEP’in 258, 260 ve 261 kaynak dilimleri, 259’un Türkçe ve İngilizce bölümleri okundu. Bazı önceki Kürtçe ve 259’da iki Arapça aralık anlam incelemesi bekliyor. [Saadet 027](../04-11-checks/party-news-027-reading.json) · [EMEP 259](../04-10-checks/party-api-259-partial-reading.json) · [EMEP 261](../04-10-checks/party-api-261-reading.json)
+
+EMEP’in 3 Şubat 2021 rektörün istifası ve rektör seçimi talebi ile 14 Temmuz görevden alma kararı, iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. EMEP’in sonraki istifa ifadesi ve Resmî Gazete’deki görevden alma işlemi ayrı kaynaklara dayanıyor. Kararın nedeni, parti katkısı ve seçim usulünün uygulanması açık. İlk eşleşmesiz deneme 62567834 yalıtılmış olarak saklandı. 62568514 daha özgül önceki açıklamayı içeriyor. [Önizleme makbuzu](../04-10-checks/bulu-2021-v4-62568514.json)
