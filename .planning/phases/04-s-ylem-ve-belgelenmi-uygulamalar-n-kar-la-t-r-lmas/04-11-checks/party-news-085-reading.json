@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-085",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:34:15.760148+00:00",
+  "reads": [
+    {
+      "post_id": 495,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/emeklilerimizin-calisanlarimizin-ici-yaniyor-siz-insanlarin-umutlarini-caliyorsunuz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=emeklilerimizin-calisanlarimizin-ici-yaniyor-siz-insanlarin-umutlarini-caliyorsunuz",
+      "published_at": "2025-01-07T18:57:43+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:34:15.760148+00:00",
+      "original_path": "party-news-bodies/495.json",
+      "sha256": "14a025e602f1d3a94dadd14e30050283d131fcb195d475e55fc477bf652a2270",
+      "normalized_body_sha256": "5d75b0ef61e3ca925536692de89b7424454d27dc122035afe1bdec02f046f190",
+      "source_section_range": [
+        0,
+        4998
+      ],
+      "state": "examined",
+      "reading": "Arıkan TÜİK önünde enflasyon ölçümü ve maaş artışlarını eleştiriyor; kurumun market açması önerisiyle açıklanan fiyatları hicvediyor.",
+      "selected_passages": [
+        {
+          "start": 2361,
+          "end": 2420,
+          "exact": "Biz TÜİK’e bir marketler zinciri açmasını tavsiye ediyoruz."
+        }
+      ],
+      "point": "TÜİK önünde enflasyon eleştirisi.",
+      "statement": "Parti gövdesi Arıkanın TÜİK önünde açıklama yaptığını, kurumun market ve konut açmasını önerdiğini aktarıyor.",
+      "concrete_evidence": "Independent Türkçe aynı TÜİK önü açıklamasını 3 Ocak 2025 15:53 yayın etiketiyle aktarıyor: https://www.indyturk.com/node/751618/siyaset/saadet-partisi-t%C3%BCi%CC%87k-%C3%B6n%C3%BCndeydi-i%CC%87nsanlar%C4%B1n-cebinden-alenen-%C3%A7al%C4%B1n%C4%B1yor ; party-495-indy.html SHA256 fb1e199a68c25abb225b128ca51445fe344df39d03f5aed1ac345175d94b226d.",
+      "open_provenance": "Parti API yayın etiketi 7 Ocak, diğer haberin yayın etiketi 3 Ocaktır; olay gününü iki etiket arasından gelişigüzel seçmemeli. Fiyatlara dayalı hiciv gerçekleşmiş bir market açma projesi değildir. Gövdedeki enflasyon rakamları Arıkanın iddialarıdır."
+    }
+  ],
+  "completed_pre_cut_bodies": 171,
+  "remaining_pre_cut_bodies": 478,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
