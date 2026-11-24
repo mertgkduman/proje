@@ -1,0 +1,10 @@
+{
+  "baseline": {"events": 82, "relations": 78, "package_sha256": "6d0f6c948e6a3b1e29f667baa02b5d521f8121d66e5de8cd01c5270622c894ad", "review_sha256": "f49fe7c8c3bf04867b4e47d57c8c15dc97ed5665134d5c3573df050c1792acfc"},
+  "candidate": {"events": 83, "relations": 79, "package_sha256": "faf5b3a8e52a67c1fbf0d946ee81044bbbfef3a8231c58567bfd8b159a9390b2", "review_sha256": "9a325e0e74acbab72c7edbf35ff62b04db9fb2db0e6efae9677d5227adc8e7f6"},
+  "earlier_job": {"id": "62621799", "status": "cancelled deliberately", "reason": "Başka partinin yayınının EMEP party_publication kaydı olarak paketlenmemesi için HDP kaynağı yalnız özgün okuma makbuzunda tutuldu; v1 terfi edilmedi."},
+  "job": "62621978", "terminal_state": "COMPLETED", "terminal_exit": "0:0", "input_exit": 0, "source_exit": 0, "preview_exit": 0,
+  "preview": "/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0410-halic-2022-emep-v2-62621978/releases/cd78add5b7c047a8b01a64084af771c0",
+  "checks": ["HALIC2022_EMEP_SEMANTIC_OK", "HALIC2022_EMEP_BOTH_VIEWS_OK", "HALIC2022_EMEP_INDEPENDENT_APPEND_ONLY_OK"],
+  "independent": "Önceki 82 olay, 78 ilişki ve tüm eski kayıtların aday JSON, dışa aktarılmış JSON ve SQLite içindeki varlığı; yeni olay, ilişki, söylem, aday ve kurumsal katkı ile iki görünüm kontrol edildi.",
+  "limits": ["25 Ağustos ortak karar, 14 Eylül Akdeniz çağrısı, 24 Eylül buluşması ve sonraki EMEP yayımları ayrı aşamalardır.", "EMEP altı bileşenden biridir; Akdeniz'in konuşması ve Yeşil Sol temsilcilerinin salondaki varlığı ayrı kaynak bulgularıdır, Yeşil Sol kurucu bileşen sayılmaz. Kişi için ayrı yetkili aktör katkısı kaydı iddia edilmez.", "Bianet ilk yayın 15.24, erişilen sürüm 23.08 güncellemelidir. Program sayfası 16 Şubat 2023 güncellemesi taşır; eski gövde değişmezliği çıkarılmaz.", "HDP özgün baytları yalnız kaynak okuma makbuzundadır; paket kanıtı Bianet ve EMEP yayınlarıdır. Deklarasyon maddelerinin sonraki uygulaması ve kapsam kapanışı çıkarılmadı."]
+}
