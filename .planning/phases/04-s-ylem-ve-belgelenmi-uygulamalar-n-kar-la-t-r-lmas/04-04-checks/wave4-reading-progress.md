@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 24 | 23 | 62594433 |
+| TİP | 25 | 24 | 62600646 |
 | DEM Parti | 83 | 12 | 62587929 / 62587933 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -500,3 +500,7 @@ EMEP’in 8 Ekim 2019 açıklaması ve 3/878 Irak–Suriye tezkeresinin 1231 say
 Demokrat Parti’nin 2014–2016 mali denetimleri iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. Üç AYM tekil PDF’si ile 2014 ve 2015 kararlarındaki beş parti cevabı ayrı pasajlarla saklandı. 2016 gerekçesindeki 1.532.775,00 TL ve hükümdeki 1.523.775 TL arasındaki 9.000 TL fark çözülmemiş olarak gösterildi. İrat hükümlerinin tahsil durumu açık. Çalışma çifti 78 olay ve 50 ilişki. [Önizleme makbuzu](../04-12-checks/party-audit-single-62596016.json) [Bağımsız denetim](../04-12-checks/party-audit-single-62596016-independent.log)
 
 TİP dizininde 25–32 arası 28.631 karakter okundu. Son toplam 32/190. 23 Nisan 2024 açıklamasındaki %22,1 için TÜİK’in kaynak grafiği incelendi. Gösterge 15–17 yaş grubunun işgücüne katılma oranını ölçüyor. Bütün emekçiler içinde çocukların payına ilişkin parti yorumu ayrı kaydedildi. ILO’nun 2021’de yayımladığı 160 milyon tahmini 2020 referans yılına ait. [Dördüncü okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-04/reading.json)
+
+TİP’in 15 Mayıs çağrısı ve 4 Temmuz 2026 İstanbul barış zirvesi karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Parti duyurusunun ev sahipliği hedefi, katılımcının oluş anlatımı, 5 Temmuz yazısındaki 7 Temmuz duyuru planı ve girişimin 25 Temmuz tarihli nihai deklarasyonu ayrı. Ankara NATO zirvesi ve bildirgenin sonraki politika hedefleri ayrı kapsamda. Çalışma çifti 25 olay ve 24 ilişki. [Önizleme makbuzu](../04-05-checks/tip-peace-summit-2026-62600646.json) [Bağımsız denetim](../04-05-checks/tip-peace-summit-2026-62600646-independent.log)
+
+7527 ve 7554 için teklif, kanun sicili ve seçili tutanak pasajları özgün dosyalardan incelendi. 7527’de kürsünün 275 kabul bildirimi ve kesin cetveldeki 273 kabul ile 2 mükerrer ayrı. Baş, Kadıgil ve Şık cetvelde ayrı ret satırlarında. Aydoğdu’nun 15 Ağustos düzeltme talebi ayrı bir beyan. 7554 için kişisel oy ve uygulama araştırması açık. [7527 kaynakları](../04-05-checks/law-7527-sources/reading.json) [7554 kaynakları](../04-05-checks/law-7554-sources/reading.json)

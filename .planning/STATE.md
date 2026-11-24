@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-24T17:10:25+00:00
-Stopped at: Democrat single-decision audits verified; TİP summit, DEM workshop and Saadet census validations running
+Last session: 2026-11-24T17:22:19+00:00
+Stopped at: TİP Istanbul summit verified; nine-party rehearsal 62603188, DEM workshop and Saadet census checks running
 Resume file: None
