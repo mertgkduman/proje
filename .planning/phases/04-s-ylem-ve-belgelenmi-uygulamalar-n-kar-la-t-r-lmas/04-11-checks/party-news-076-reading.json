@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-076",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:12:25.459090+00:00",
+  "reads": [
+    {
+      "post_id": 504,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/cumhurbaskani-erdogani-tebrik-ediyorum-iktidarin-uyguladigi-politikalar-turkiyeyi-yorungesinden-cikartti",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=cumhurbaskani-erdogani-tebrik-ediyorum-iktidarin-uyguladigi-politikalar-turkiyeyi-yorungesinden-cikartti",
+      "published_at": "2025-02-26T09:57:52+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:12:25.459090+00:00",
+      "original_path": "party-news-bodies/504.json",
+      "sha256": "cbfa4da79a6e7ddd8b4af73ec02ee6091e502ff8cca357998b5b8d634798bd04",
+      "normalized_body_sha256": "874002877e519ae39a4a29bf21d9dfb0d29dcf47ecd4a4a9e307cb95adac3d4c",
+      "source_section_range": [
+        0,
+        14169
+      ],
+      "state": "examined",
+      "reading": "Arıkan Erbakanı, demokrasiyi, barınma maliyetlerini, sosyal güvenlik ve emekli ikramiyelerini ele alıyor. 50 yaşından emeklilik ve işsizlik boyunca gelir güvencesi öneriyor.",
+      "selected_passages": [
+        {
+          "start": 12383,
+          "end": 12479,
+          "exact": "İşsiz kalanlara işsiz kaldığı süre boyunca insanca yaşayacakları bir gelir güvencesi sağlanacak."
+        }
+      ],
+      "point": "İşsizlik süresince süre sınırı olmadan gelir güvencesi.",
+      "statement": "Arıkan Saadet iktidarında işsiz kalanlara işsiz kaldıkları süre boyunca insanca yaşayacakları gelir güvencesi vaat ediyor.",
+      "concrete_evidence": "Özgün parti API gövdesi ayrıca 50 yaşından emeklilik ve emekli maaşı artışının asgari ücret ile memur maaşlarına endekslenmesini öneriyor.",
+      "open_provenance": "Bunlar teklif ve gelecek iktidar vaadidir; sonraki kanun, parti yetkisi veya fiili ödeme sonucu doğrudan gösterilmemiştir. Bütçeye ek yük getirmeme konuşmacının iddiasıdır."
+    }
+  ],
+  "completed_pre_cut_bodies": 162,
+  "remaining_pre_cut_bodies": 487,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
