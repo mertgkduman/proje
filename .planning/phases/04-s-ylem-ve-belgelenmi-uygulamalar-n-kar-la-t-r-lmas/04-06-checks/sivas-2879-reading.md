@@ -1,0 +1,7 @@
+# 10/2879 Sivas araştırma önergesi: sicil ve altı sayfa
+
+24 Kasım 2026 erişiminde [TBMM esas kaydı](https://tbmm.gov.tr/Denetim/Meclis-Arastirma-Onergesi-Detay/f346be24-1cac-4646-9f9c-0197d0ba88d5), 1 Temmuz 2025 gelişini, Erzurum milletvekili Meral Danış Beştaş ve 20 milletvekilini, 10/2879 numarasını ve “Gündemde” durumunu gösterir. Sicil HTML SHA-256 `40135724ff5ab4635c39e437799281224f403c22c0f51d01e626bccb68e4d837`; dinamik sayfanın ilk yayın tarihi bilinmiyor. Bu numara, 2 Temmuz tarihli grup önergesi 10/2880'den ayrıdır.
+
+[İmzalı TBMM PDF](https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y3/T10/WebOnergeMetni/048ccdfa-20f0-4945-9199-a273a0415377.pdf) SHA-256 `1a4007efed456f954d598074375252e7b3e28834c8757436dc38ae5c1b839de7`; altı sayfanın 0–5 indeksleri görsel incelendi. Sayfa 0'da 01.07.2025 tarihli ve Danış Beştaş imzalı araştırma talebi, sayfa 5'te 20 ek imza satırı vardır. Sayfa 0–1 gerekçe özeti, sayfa 1–4 gerekçeyi içerir; yargılama, tahliye ve hukuki nitelendirmeye ilişkin değerlendirmeler önerge sahiplerine aittir, burada bağımsız doğrulanmış olgular olarak kaydedilmemiştir. Sayfa 4 gerekçenin son paragrafıdır; sayfa 5 imza tablosudur.
+
+Bu okuma önergenin içeriği ve sicildeki durumu ile sınırlıdır. Araştırmanın açıldığına veya önerilen araştırmanın sonuçlandığına kanıt değildir. İlgili Meclis işlemleri, varsa sonraki sicil hareketleri ve önceki parti söylemiyle ilişki ayrıca araştırılmalıdır; henüz paket/gate yoktur. Makine tarafından aranabilir gövde katmanı eksikliği nedeniyle görsel okumadan alıntı doğrulaması varsayılmamıştır.
