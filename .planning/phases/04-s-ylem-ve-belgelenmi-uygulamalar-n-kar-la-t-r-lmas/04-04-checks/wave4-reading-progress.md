@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 76 | 73 | 62581748 |
-| Saadet Partisi | 29 | 25 | 62583013 |
+| Saadet Partisi | 30 | 26 | 62586191 |
 | Demokrat Parti | 65 | 49 | 62586052 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -438,3 +438,5 @@ DEM Parti için İbrahim Akın’ın 8 Nisan 2025 grup adına geri çekme çağr
 Demokrat Parti’nin 2011, 2012, 2013 ve 2017 hesap yıllarına ait dört AYM kararı özgün ciltlerden okundu. 2011 için 300 TL Hazineye irat hükmü, 2012 için 2.904,36 TL gecikme gideri hakkındaki çoğunluk ve karşıoy ayrı. 2020–2023 hesap yıllarının önceki çalışmada arşivlenen özgün kararlarının hashleri kontrol edildi. [Mali denetim kaynakları](../04-12-checks/party-financial-audit-sources/reading.json)
 
 3323 ile ilk esnaf desteği, 3929 ile bir aylık uzatma ve Ticaret Bakanlığının 2021 toplam ödemeleri ayrı belgelendi. Millî Eğitim Bakanlığının 11 Eylül yazısı ve Konya İl Müdürlüğünün 21 Eylül okul örneği kaydedildi. Türkiye genelinde fiilî eğitim katılımı ve tekil ödeme sonuçları açık. [Esnaf desteği](../04-12-checks/pandemic-2020-sources/merchant-support-reading.json) [Yüz yüze eğitim](../04-12-checks/pandemic-2020-sources/school-reopening-reading.json)
+
+Saadet’in 1/278 bütçe karşılaştırması 62586191 ile iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Bülent Kaya 20 Aralık 2024’te Saadet Partisi Grubu adına konuştu. Erişilen kesin cetvel 2025 bütçesinde ve 2023 kesin hesabında iki Ret oyu kaydediyor. Cetveldeki Yeni Yol kaydı, dönemsel konuşma sıfatından ayrı işlendi. Belgenin elektronik yayım günü açık. [Bütçe makbuzu](../04-11-checks/budget-1278-62586191.json) [Bağımsız denetim](../04-11-checks/budget-1278-62586191-independent.log)
