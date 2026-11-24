@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-088",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:37:43.818635+00:00",
+  "reads": [
+    {
+      "post_id": 492,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/aciklanan-rakam-kabul-edilemez-bu-emekciye-zulumdur",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=aciklanan-rakam-kabul-edilemez-bu-emekciye-zulumdur",
+      "published_at": "2024-12-25T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:37:43.818635+00:00",
+      "original_path": "party-news-bodies/492.json",
+      "sha256": "b6789d8e255eb1549b4b2dfac6c21b6cdbb6c0f52043f9fcd83d5c6745c47906",
+      "normalized_body_sha256": "f98cf2b7f9c1cf6a60bc605583fe3a6c6830b6f296cbfb1074adc66d97a1f7f6",
+      "source_section_range": [
+        0,
+        3466
+      ],
+      "state": "examined",
+      "reading": "Arıkan Türk-İş başkanını ziyaret ve basın açıklamasında 2025 asgari ücretini eleştiriyor; Türkiye genelinde meydan çalışması duyuruyor.",
+      "selected_passages": [
+        {
+          "start": 3265,
+          "end": 3345,
+          "exact": "Asgari ücretli çalışanlarımızı meydanlarda yapacağımız çalışmaya davet ediyorum."
+        }
+      ],
+      "point": "2025 asgari ücretine karşı meydan çalışması daveti.",
+      "statement": "Arıkan ücret açıklamasını yeterli bulmadığını söyleyip asgari ücretlileri meydan çalışmalarına çağırıyor.",
+      "concrete_evidence": "Parti gövdesi gelecekte Türkiye genelinde çalışma için 29 Aralık gününü belirtiyor; 493 ayrı haberi daha sonra meydan açıklamalarını bildiriyor.",
+      "open_provenance": "Kaynak ‘29 Aralık Cuma’ diyor, fakat 29 Aralık 2024 Pazardır; gün adı/tarih çelişkisi açıklanmadı. API etiketi 25 Aralık 21:00 UTC, Türkiye saatinde 26 Aralık 00:00dır ve gerçek ziyaret saatini tek başına kanıtlamaz. Ülke çapında her eylemin sayısı, yeri ve para gönderimi ayrıca doğrulanmalı."
+    }
+  ],
+  "completed_pre_cut_bodies": 174,
+  "remaining_pre_cut_bodies": 475,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
