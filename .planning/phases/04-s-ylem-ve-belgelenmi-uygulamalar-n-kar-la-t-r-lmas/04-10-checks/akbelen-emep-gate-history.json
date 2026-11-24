@@ -1,0 +1,9 @@
+{
+  "baseline": {"events": 81, "relations": 77, "package_sha256": "7d63027d2dec7b9518ca86abae315e4306846ef2cdb8c5b3afc8972d3f110224", "review_sha256": "c87ddf95f097f750647140bf6f88d34d807fdb115346fadbe4fbc124b150b944"},
+  "candidate": {"events": 82, "relations": 78, "package_sha256": "6d0f6c948e6a3b1e29f667baa02b5d521f8121d66e5de8cd01c5270622c894ad", "review_sha256": "f49fe7c8c3bf04867b4e47d57c8c15dc97ed5665134d5c3573df050c1792acfc"},
+  "job": "62617962", "terminal_state": "COMPLETED", "terminal_exit": "0:0", "input_exit": 0, "source_exit": 0, "preview_exit": 0,
+  "preview": "/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0410-akbelen-emep-62617962/releases/ffd1f4362aa746b7b72886d8599b7b4f",
+  "checks": ["AKBELEN_EMEP_SEMANTIC_OK", "AKBELEN_EMEP_BOTH_VIEWS_OK", "AKBELEN_EMEP_INDEPENDENT_APPEND_ONLY_OK"],
+  "independent": "Eski 81 olay ve 77 ilişkinin bütün satırları dahil eski kayıtların tamamı aday JSON, dışa aktarılan JSON ve SQLite içinde aynen var; yeni olay, ilişki, beyan ve aday JSON/SQLite içinde ve iki HTML görünümündeki bağlantılar doğrulandı.",
+  "limits": ["Karaca Demir'in çağrısının günü bilinmiyor; 4 Ağustos haber yayım günü, 3 Ağustos TBMM daveti ve 8 Ağustos toplantı açılış günü ayrıdır.", "İlişki yalnız aynı konulu olağanüstü toplantının açılması ile sınırlıdır; çağrının toplantıya neden olduğu veya 8/14 önergesine kişisel oy kullanıldığı çıkarılmaz.", "Orman/maden izni, olası uzatma ve ÇED işleminin özgün belgeleri açık kalır; kişisel çevresel sonuç gösterilmez.", "Kapsam kapatma yoktur."]
+}
