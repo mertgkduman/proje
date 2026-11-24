@@ -1,0 +1,66 @@
+{
+  "candidate_key": "tbmm-27-3-84-2-2762-law-7242",
+  "reviewed_at": "2026-11-24T15:17:23.637681+00:00",
+  "reviewer_kind": "agent",
+  "members": {
+    "tip": {
+      "package_sha256": "895205aaeff4c56d02993ddbaf040557fa361fa65f5ec880eb1bbc48011650ae",
+      "event": {
+        "id": "0405-tip-7242-event",
+        "common_event_key": "tbmm-27-3-84-2-2762-law-7242",
+        "event_at": "2020-04-14",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "title": "7242 sayılı infaz kanunu teklifinin kabulü",
+        "scope_context": "TBMM 27. dönem 3. yasama yılı 84. birleşim, 2/2762, 207 sıra",
+        "occurrence_basis": "13 Nisan’da açılan 84. birleşimin gece yarısından sonra açıklanan kabulü, kesin cetvel ve sicil."
+      },
+      "passages": [
+        {
+          "passage_id": "0405-tip-7242-floor-accepted-p",
+          "sha256": "e122a76eaede3c0358215c6a39d94c3219d71b6d95e26f927ff9a1fd4a084f3d",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/3/84/cc117fdb-c3f7-462b-98e5-712c94df1eea.pdf",
+          "page": 69
+        },
+        {
+          "passage_id": "0405-tip-7242-roll-count-p",
+          "sha256": "3d64b213c6dd9a430e2ec7f5277072c02277c4734bcfdf7f83cbb70df658ef4d",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/27/3/84/Basilmis/5b4735f8-07d5-4af0-a25a-7d3f59556c04.pdf",
+          "page": 158
+        }
+      ]
+    },
+    "emep": {
+      "package_sha256": "9ab640a732034bf893e2702e28edd897f1f28178bc3754c92962a0236dee404f",
+      "event": {
+        "id": "0410-law-7242-event",
+        "common_event_key": "tbmm-27-3-84-2-2762-law-7242",
+        "event_at": "2020-04-14",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "scope_context": "TBMM 27. dönem 3. yasama yılı 84. birleşim, 2/2762, 207 sıra",
+        "title": "7242 sayılı infaz kanunu teklifinin kabulü",
+        "occurrence_basis": "13 Nisanda açılan birleşim gece yarısını geçti; 14 Nisan oylamasında 279 kabul, 51 ret, toplam 330 oy ve 7242 sicilinde kabul günü 14 Nisandır. Basılı cetvelde saat 00.09 görsel olarak okundu."
+      },
+      "passages": [
+        {
+          "passage_id": "0410-law-7242-floor-accepted-p",
+          "sha256": "e122a76eaede3c0358215c6a39d94c3219d71b6d95e26f927ff9a1fd4a084f3d",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/3/84/cc117fdb-c3f7-462b-98e5-712c94df1eea.pdf",
+          "page": 69
+        },
+        {
+          "passage_id": "0410-law-7242-printed-header-p",
+          "sha256": "3d64b213c6dd9a430e2ec7f5277072c02277c4734bcfdf7f83cbb70df658ef4d",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/27/3/84/Basilmis/5b4735f8-07d5-4af0-a25a-7d3f59556c04.pdf",
+          "page": 158
+        }
+      ]
+    }
+  },
+  "differing_fields": [
+    "occurrence_basis"
+  ],
+  "overlap_reason": "TİP ve EMEP kaynakları 2/2762 teklifinin 14 Nisan 2020’de 84. birleşimde kabul edildiği aynı TBMM işlemini gösteriyor. Kesin cetvel ve tutanak iki pakette aynı özgün hashte. Olayın dayanak alanında iki farklı ifade bulunduğundan bu provada iki olay ayrı tutuldu. Parti açıklamaları ve kişi kayıtları kendi kaynaklarına bağlı.",
+  "decision": "unresolved"
+}
