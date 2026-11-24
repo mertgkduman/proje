@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 80 | 77 | 62605762 |
 | Saadet Partisi | 33 | 29 | 62603695 / 62603699 |
-| Demokrat Parti | 78 | 50 | 62596016 |
+| Demokrat Parti | 79 | 50 | 62607799 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -526,3 +526,5 @@ Demokrat Parti’nin 7/13274 imzalı sorusu ve TBMM ayrıntı kaydını içeren 
 On birinci birleşim için TİP ve EMEP’in 7527 kabulü aynı olay olarak eşlendi. İlgili kabul ve kesin cetvel pasajları aynı TBMM tutanağında, kabul günü aynı kanun sicilinde. Parti açıklamaları ve dört kişisel oy kendi kaynaklarıyla bağlı. Dondurulan dokuz çalışma paketindeki 551 olay ve 365 ilişki iki girdi sırasıyla 530 olay ve 365 ilişkiye birleşti. 25 ortak olay kararı, 559 olay başvurusu ve sıfır kapsam kapanışı var. 62608562 iki okuyucu görünümü için çalışıyor. [Ortak olay okuması](wave4-7527-overlap-reading.json) [Girdi dondurumu](wave4-merge-rehearsal-11.json)
 
 TİP’in 2023 Atalay dosyasında iki karşılaştırma, iki okuyucu görünümü ve bağımsız veri denetiminden geçti. 20 Eylül yürüyüş çağrısı 1 Ekim Hatay başlangıcı ve 28 Ekim Anıtpark bitişiyle bağlandı. 7 Kasım uygulama ve tahliye çağrısı, 8 Kasım Yargıtay kararının yayımlanmış nüshasıyla karşılaştırıldı. 25 Ekim ve 21 Aralık AYM kararları ile 3 Ocak 2024 kararı ve 30 Ocak TBMM işlemi ayrı. Yürüyüşün kararlar üzerindeki etkisi ve fiilî tahliye açık. Çalışma çifti 28 olay ve 27 ilişki. [Önizleme makbuzu](../04-05-checks/tip-atalay-2023-62607705.json) [Bağımsız denetim](../04-05-checks/tip-atalay-2023-62607705-independent.log)
+
+Demokrat Parti’nin 7/13274 dosyasına imzalı soru, işlem ayrıntısı ve iki TBMM bülteniyle dayanan olay eklendi. 25 Haziran 2024 Başkanlığa geliş, 4 Temmuz 162 sayılı bültendeki liste kaydı ve 19 Temmuz 169 sayılı bültendeki süresinde cevaplanmama ilanı ayrı. Parti yayımının sayfa ve gövde tarihleri daha sonra. Önceki karşılaştırılabilir söylem, sonraki imzalı cevap ve dış politika sonucu açık. İki okuyucu görünümü ve bağımsız veri denetimi geçti. Çalışma çifti 79 olay ve 50 ilişki. [Önizleme makbuzu](../04-12-checks/question-13274-bulletins-62607799.json) [Bağımsız denetim](../04-12-checks/question-13274-bulletins-62607799-independent.log)
