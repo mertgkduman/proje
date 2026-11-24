@@ -1,0 +1,241 @@
+{
+  "reviewer_kind": "agent",
+  "reviewed_at_utc": "2026-11-24T17:25:33.875966+00:00",
+  "range": [
+    33,
+    40
+  ],
+  "read_characters": 23630,
+  "fully_read_cumulative": 40,
+  "remaining_catalog_bodies": 150,
+  "linked_material": [
+    {
+      "url": "https://www.ysk.gov.tr/doc/karar/dosya/57816264/2024-2367.pdf",
+      "final_url": "https://www.ysk.gov.tr/doc/karar/dosya/57816264/2024-2367.pdf",
+      "status": 0,
+      "retrieved_at_utc": "2026-11-24T17:21:29.097834+00:00",
+      "access_note": "curl: (35) OpenSSL SSL_connect: Connection reset by peer in connection to www.ysk.gov.tr:443"
+    },
+    {
+      "url": "https://www.ysk.gov.tr/doc/dosyalar/docs/2024MahalliIdareler/2024KesinSecimSonuclar%C4%B1/BELEDIYEBASKANLIGI.pdf",
+      "final_url": "https://www.ysk.gov.tr/doc/dosyalar/docs/2024MahalliIdareler/2024KesinSecimSonuclar%C4%B1/BELEDIYEBASKANLIGI.pdf",
+      "status": 0,
+      "retrieved_at_utc": "2026-11-24T17:21:29.087001+00:00",
+      "access_note": "curl: (35) OpenSSL SSL_connect: Connection reset by peer in connection to www.ysk.gov.tr:443"
+    },
+    {
+      "url": "https://www.hacibektas.bel.tr/web/baskan-ali-kaim-gorevine-basladi/",
+      "final_url": "https://www.hacibektas.bel.tr/web/baskan-ali-kaim-gorevine-basladi/",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-24T17:21:33.213304+00:00",
+      "path": "hacibektas-kaim.html.bin",
+      "sha256": "dece62a4b9dfb757d4ad33bde9596c63a5a5c8e82f292a78b17a5f93f6b169f8",
+      "bytes": 108042
+    },
+    {
+      "url": "https://eski--kararlarbilgibankasi.anayasa.gov.tr/BB/2023/99744",
+      "final_url": "https://eski--kararlarbilgibankasi.anayasa.gov.tr/BB/2023/99744",
+      "status": 0,
+      "retrieved_at_utc": "2026-11-24T17:21:28.826732+00:00",
+      "access_note": "curl: (6) Could not resolve host: eski--kararlarbilgibankasi.anayasa.gov.tr"
+    },
+    {
+      "url": "https://www.resmigazete.gov.tr/fihrist?tarih=2023-12-13",
+      "final_url": "https://www.resmigazete.gov.tr/fihrist?tarih=2023-12-13",
+      "status": 0,
+      "retrieved_at_utc": "2026-11-24T17:21:53.844767+00:00",
+      "access_note": "curl: (28) Operation timed out after 25001 milliseconds with 0 bytes received"
+    },
+    {
+      "url": "https://www.tip.org.tr/myk-ve-parti-meclisi/parti-meclisi-degerlendirmesi-6-7-nisan-2024",
+      "status": 200,
+      "final_url": "https://www.tip.org.tr/myk-ve-parti-meclisi/parti-meclisi-degerlendirmesi-6-7-nisan-2024",
+      "path": "tip-0406-pm.html.bin",
+      "sha256": "f9d1ab8894a1723e8055f40985af731823ca3ad6372c9af9812c782c79c8c6b0",
+      "bytes": 116655,
+      "retrieved_at_utc": "2026-11-24T17:24:00.801223+00:00"
+    },
+    {
+      "url": "https://samandag.bel.tr/public/baskan/ozgecmis",
+      "status": 200,
+      "final_url": "https://samandag.bel.tr/public/baskan/ozgecmis",
+      "path": "samandag-mayor.html.bin",
+      "sha256": "e3f28e08d2ee52aaacc0ec983432593a7aa9ea172f1ec81d6b3a88d31df00d20",
+      "bytes": 208155,
+      "retrieved_at_utc": "2026-11-24T17:24:01.935293+00:00"
+    },
+    {
+      "url": "https://anayasa.gov.tr/tr/mahkeme-gundemi/genel-kurul/21-aralik-2023-genel-kurul-gundemi-ve-sonuclari/",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "retrieved_at_utc": "2026-11-24T17:24:00.714066+00:00"
+    },
+    {
+      "path": "ysk-2024-2367.pdf",
+      "status": 200,
+      "final_url": "https://ysk.gov.tr/doc/karar/dosya/57816264/2024-2367.pdf",
+      "sha256": "c008648441e48b30d007649dff3d5758d7b97721f926103a20762b7548bdcc59",
+      "bytes": 9311,
+      "retrieved_at_utc": "2026-11-24T17:23:21.688517+00:00",
+      "verified_body": true
+    },
+    {
+      "path": "ysk-2024-mayors.pdf",
+      "status": 200,
+      "final_url": "https://ysk.gov.tr/doc/dosyalar/docs/2024MahalliIdareler/2024KesinSecimSonuclar%C4%B1/BELEDIYEBASKANLIGI.pdf",
+      "sha256": "51e807ea0c2cd338ee5cf954a05c76b53d9f1f2326049c12fbecbb98890c31ad",
+      "bytes": 266578,
+      "retrieved_at_utc": "2026-11-24T17:23:22.965521+00:00",
+      "verified_body": true
+    },
+    {
+      "path": "aym-2023-99744-shell.html.bin",
+      "status": 200,
+      "final_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/BB/2023/99744",
+      "sha256": "11828fd88254b37991bafc3eb1d82310a9120d7e39ccc312be8286b956897821",
+      "bytes": 2453,
+      "retrieved_at_utc": "2026-11-24T17:23:24.422526+00:00",
+      "verified_body": false
+    }
+  ],
+  "linked_pdf_pages": {
+    "ysk-2024-2367.pdf": [
+      0
+    ],
+    "ysk-2024-mayors.pdf": [
+      0,
+      1
+    ]
+  },
+  "linked_material_basis": "9 Nisan parti ve belediye yayımlarında aday sıfatı pasajları. YSK kesin sonuç kararı ve Liste-3. AYM giriş sayfası karar metni olarak okunmadı.",
+  "records": [
+    {
+      "i": 33,
+      "path": "033.html.bin",
+      "original_sha256": "6b554a3f718b981d924420245b121ae5ef3a4609ac8f0af7a7b5b67cc2efd51d",
+      "publication_time": "2024-04-02T15:49:00+03:00",
+      "body_characters": 4977,
+      "body_sha256": "a52edf254bf51903b83b5faba9422fcb8a1dd077adab554936c2fca99f0b3493",
+      "read_ranges": [
+        [
+          0,
+          4977
+        ]
+      ],
+      "reading": "TİP Engelliler ve Çocuk Hakları komisyonları otistik bireylerin erişilebilirlik, destek, öz temsil ve eşit katılım hakları hakkında çağrı yayımlıyor.",
+      "open_evidence": "Kurumsal öneriler kaynakta. Yerel erişilebilirlik ve mevzuat değişikliği ayrı kaynak gerektiriyor."
+    },
+    {
+      "i": 34,
+      "path": "034.html.bin",
+      "original_sha256": "349d016d1bc71ff6d004da7b39ea09cc83db8b5e9ff47368a37b946d01d319f9",
+      "publication_time": "2024-04-01T13:34:30+03:00",
+      "body_characters": 7088,
+      "body_sha256": "486d07e99b65d2788bec7214cbb1590e9e34faa85faf53ffbb352e191229f763",
+      "read_ranges": [
+        [
+          0,
+          7088
+        ]
+      ],
+      "reading": "1 Nisan Parti Meclisi metni 31 Mart sonuçlarını değerlendiriyor. Samandağ ve Hacıbektaş iki siyasi kazanım olarak sayılıyor. 6–7 Nisan toplantısının 9 Nisan yayımı Hacıbektaş’ta desteklenen bağımsız adayı açıkça belirtiyor. Hacıbektaş Belediyesi Ali Kaim’in bağımsız seçildiğini ve 3 Nisan’da mazbata aldığını duyuruyor. Samandağ Belediyesi Emrah Karaçay’ın TİP adaylığını ve seçilmesini doğruluyor. YSK 6 Mayıs kesin sonuç eki TİP’e bir başkanlık kaydediyor.",
+      "open_evidence": "Seçilen adayın resmî sıfatı ve partinin siyasi destek değerlendirmesi kaynaklarında ayrı. İlk metindeki 156 aday ve daha sonraki belediye uygulaması ayrı araştırma."
+    },
+    {
+      "i": 35,
+      "path": "035.html.bin",
+      "original_sha256": "46ed533a589c2d434542985031871bf31932f72628c21cebcd6591c7325b5dfa",
+      "publication_time": "2024-03-22T17:37:11+03:00",
+      "body_characters": 2346,
+      "body_sha256": "8559ff6618728ebc9bd733fa25becd087a87f0cb8549d9c213c75939f9cfabd2",
+      "read_ranges": [
+        [
+          0,
+          2346
+        ]
+      ],
+      "reading": "22 Mart Parti Meclisi metni Hatay Büyükşehir adayından desteğin çekildiğini ve bazı ittifak ortaklarının adaylarının desteklenmesini önerdiğini bildiriyor. İlçe meclisleri için ayrı hedefler var.",
+      "open_evidence": "Parti desteği, kesin aday listesi, büyükşehir pusulası ve belediye meclisi sonuçları ayrı kayıt."
+    },
+    {
+      "i": 36,
+      "path": "036.html.bin",
+      "original_sha256": "860987dc7bc2691ce612b25fb4a296dcbef29a3dc6ab13706d785d9dd6657f9d",
+      "publication_time": "2024-02-05T18:43:55+03:00",
+      "body_characters": 2411,
+      "body_sha256": "955f41996decb4452022400d29d66a62a0b30324307b5f84a8e6ed95f7448eb9",
+      "read_ranges": [
+        [
+          0,
+          2411
+        ]
+      ],
+      "reading": "TİP deprem yıl dönümü açıklamasında imar affı, yardım, ruhsatlar, Can Atalay ve 7 Şubat olarak duyurduğu yargılamayı ayrı gündemler olarak ele alıyor.",
+      "open_evidence": "Kurum işlemleri, yargılama ve sorumluluk iddialarının bağımsız dayanakları ayrı."
+    },
+    {
+      "i": 37,
+      "path": "037.html.bin",
+      "original_sha256": "84bc92f4e6a21bf52cf40653705d738e10e63bcc61fa736f84dd296d8a52371b",
+      "publication_time": "2024-01-25T10:31:53+03:00",
+      "body_characters": 1159,
+      "body_sha256": "b1e4e1ed7038c1f7bddbbdc67a1e00e1f5068818e6dc8c5bc3d7a4f8a7c84d59",
+      "read_ranges": [
+        [
+          0,
+          1159
+        ]
+      ],
+      "reading": "TİP Bilim Kurulu Kadir Has Üniversitesindeki akademisyene destek veriyor ve üniversite yönetimini soruşturmaya ilişkin tutumunu değiştirmeye çağırıyor.",
+      "open_evidence": "Soruşturma evrakı, tarih ve üniversitenin cevabı açık."
+    },
+    {
+      "i": 38,
+      "path": "038.html.bin",
+      "original_sha256": "a3f4d18663a224482e71b9a0a1a5314d8fdfaefd6b324c8221a1473df10d61c0",
+      "publication_time": "2024-01-15T14:40:23+03:00",
+      "body_characters": 2198,
+      "body_sha256": "99af37286d29b7c30ab3c41aead08b619d0870f088051672f34443ba5db4aba0",
+      "read_ranges": [
+        [
+          0,
+          2198
+        ]
+      ],
+      "reading": "Parti, Sultanbeyli işyeri yangınında üç işçinin öldüğünü bildiriyor. Barınma koşulları, iş güvenliği denetimi ve yaptırım talebi var.",
+      "open_evidence": "Yangın nedeni, ölüm ve kusur bulguları ile sonraki denetim için yetkili kaynak araştırması açık."
+    },
+    {
+      "i": 39,
+      "path": "039.html.bin",
+      "original_sha256": "516597200cd2c90337226ddd7a69dac7ec290e5f46213aa3baf6bd16b874adf3",
+      "publication_time": "2024-01-08T15:23:16+03:00",
+      "body_characters": 2132,
+      "body_sha256": "dc4a1e2afc485acbc67c151b7c51b35ed7c467473128ed2813f2b631090444cc",
+      "read_ranges": [
+        [
+          0,
+          2132
+        ]
+      ],
+      "reading": "TİP Kent ve Ekoloji Bürosu Aralık 2023 orman sınırı kararına ilişkin itirazını ve harita bağlantısını yayımlıyor. 12 Aralık yayım günü veriyor. Resmî Gazete dizin görünümü 7951’i 13 Aralık tarihli 32398 sayıda ve Mersin’i de içeren il listesiyle gösteriyor.",
+      "open_evidence": "Özgün gazete alımı zaman aşımına uğradı. Karar imzası, ek paftalar, düzenleme ve sahadaki değişimler ayrı inceleme."
+    },
+    {
+      "i": 40,
+      "path": "040.html.bin",
+      "original_sha256": "7207b4c3b9699193b72ad016f1d087606e38e26259a5729051ac04c12f3a6bc9",
+      "publication_time": "2024-01-04T11:43:54+03:00",
+      "body_characters": 1319,
+      "body_sha256": "b07b4cfc21177408735fc235e9cb1dca3874e4f6f3638d5a0fb3b82112190b8d",
+      "read_ranges": [
+        [
+          0,
+          1319
+        ]
+      ],
+      "reading": "TİP MYK ve Parti Meclisi Can Atalay hakkında Yargıtay kararından sonra ortak çalışma, olağanüstü toplantı için temas ve suç duyurusu kararı bildirdi.",
+      "open_evidence": "AYM 2023/99744 karar kimliği ve 21 Aralık tarihi kurum görünümünde. Yeni karar sayfasının ham alımı uygulama giriş sayfası döndürdü. Ocak karar aslı, Meclis çağrısı ve suç duyurusunun gerçekleşmesini ayrı belgelemek gerekiyor."
+    }
+  ],
+  "closure_refs": []
+}
