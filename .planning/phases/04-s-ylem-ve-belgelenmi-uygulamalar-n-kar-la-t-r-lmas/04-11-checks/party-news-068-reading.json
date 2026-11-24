@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-068",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T12:32:50.047881+00:00",
+  "reads": [
+    {
+      "post_id": 520,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/dunyada-biri-oksurse-turkiye-zaturre-oluyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=dunyada-biri-oksurse-turkiye-zaturre-oluyor",
+      "published_at": "2025-06-25T10:54:00+00:00",
+      "updated_at": "2025-06-25T10:54:00+00:00",
+      "accessed_at": "2026-11-24T12:32:50.047907+00:00",
+      "original_path": "party-news-bodies/520.json",
+      "sha256": "7c0ae10641569b6b7aed2e2d58046feba6eb44be429fdb09297c0838bdc2a810",
+      "normalized_body_sha256": "437c8673e2de13ac5f0bad0506e4c36828717ae86a704a66e021cad9c35d4e6b",
+      "source_section_range": [
+        0,
+        4944
+      ],
+      "state": "examined",
+      "reading": "Arıkan grup toplantısında gelir eşitsizliği ve eğitim yoksulluğu üzerinde duruyor; bir önceki hafta eğitim fırsat eşitsizliğini eleştirdiklerini ve aynı hafta okul kıyafeti adımını desteklediklerini söylüyor.",
+      "selected_passages": [
+        {
+          "start": 4163,
+          "end": 4203,
+          "exact": "Biz bu adımı sonuna kadar destekliyoruz."
+        }
+      ],
+      "point": "Okul kıyafeti düzenlemesi ve eğitimde eşitsizlik.",
+      "statement": "Arıkan okul üniformasına dönüş olarak anlattığı kararı destekliyor; yemek ve temel ihtiyaç eksikliklerini ayrıca vurguluyor.",
+      "concrete_evidence": "Kemaliye İlçe MEB sitesindeki mevzuatın konsolide nüshası 3. maddenin 6 Aralık 2024 tarihli 9216 sayılı kararla değiştiğini ve kıyafetin görüşler alınarak okul müdürlüğünce belirleneceğini gösterir: https://kemaliye.meb.gov.tr/meb_iys_dosyalar/2025_07/11222446_21.5.20123959.pdf ; ham school-uniform-meb-consolidated-2025.pdf SHA256 589b7c2e66941a83008fc97242989871370ed9722872ca4eb7514dd0368ca533. Karar metni kıyafetin ülke genelinde tek tip olduğunu söylemez.",
+      "open_provenance": "Haziran 2025te sözü edilen adımın 2024 yönetmeliğinin uygulaması mı yoksa başka yeni bir karar mı olduğu ve önceki hafta konuşmasının tam tarihi henüz saptanmadı. 2024 değişikliği 25 Haziran konuşmasından öncedir; önceki söze neden veya uygulama olarak bağlanamaz. Kaynak 56 ülkelik servet araştırmasının adını vermiyor."
+    }
+  ],
+  "completed_pre_cut_bodies": 154,
+  "remaining_pre_cut_bodies": 495,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
