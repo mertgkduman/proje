@@ -1,0 +1,49 @@
+{
+  "subject": "Ayasofya açıklamasının iki dildeki anlam sınırı ve karar kronolojisi",
+  "reviewed_at": "2026-11-24T10:13:32.475648+00:00",
+  "party_sources": {
+    "3694": {
+      "date": "2020-07-15T19:26:58",
+      "url": "https://www.emep.org/hagia-sophia-cannot-be-turned-into-political-material",
+      "body_sha256": "3080cb81da913e3c375ad0f95034358b4a75a2b8c10f847b2ce58c4eb313a9c7",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json"
+    },
+    "3690": {
+      "date": "2020-07-12T19:16:04",
+      "url": "https://www.emep.org/ayasofya-siyasi-malzeme-yapilamaz",
+      "body_sha256": "2a54b5781211c0885eba968ba91745f2a367952d60cc0b10833641141d4246c6",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json"
+    },
+    "1593": {
+      "date": "2016-05-30T10:07:09",
+      "url": "https://www.emep.org/her-yil-daha-da-abartarak",
+      "body_sha256": "a5fa90bed5fbe460016798f221d912b318749a0a60cfa36ec3f00499412dd58a",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-29.json"
+    }
+  },
+  "official_sources": [
+    {
+      "publisher": "Danıştay Onuncu Dairesi",
+      "url": "https://danistay.gov.tr/assets/pdf/guncelKararlar/10_07_2020_060019.pdf",
+      "finding": "2 Temmuz 2020 E:2016/16015 K:2020/2595; 1934 tarihli müzeye çevirme Bakanlar Kurulu kararının iptali, temyiz yolu açık. Parti açıklamasından önce."
+    },
+    {
+      "publisher": "T.C. Resmî Gazete",
+      "url": "https://resmigazete.gov.tr/fihrist?mukerrer=1&tarih=2020-07-10",
+      "finding": "10 Temmuz 2020, 31181 1. mükerrer; 2729 sayılı Cumhurbaşkanı kararı Diyanete yönetim devri ve ibadete açılmasına ilişkin; açıklamadan önce. Karar PDF bağlantısı erişimde zaman aşımına uğradı; fihrist doğrudan incelendi."
+    },
+    {
+      "publisher": "Diyanet İşleri Başkanlığı",
+      "url": "https://www.diyanet.gov.tr/icerik/38988",
+      "finding": "24 Temmuz 2020 ilk cuma namazıyla fiilî yeniden açılış bildiriliyor; 12 ve 15 Temmuz açıklamalarından sonra, 10 Temmuz idarî kararının uygulanması."
+    }
+  ],
+  "findings": [
+    "12 Temmuz 3690 Türkçe gövdede gerilim politikalarını onaylamamakta, 15 Temmuz 3694 İngilizce gövdede we condone these politics of tension deniyor. Sözcüklerin açık anlam yönleri ters; metinlerin geri kalan bağlamı ve ortak başlığı gerilim politikalarının eleştirisidir. İngilizce metnin niyeti, düzeltildiği veya hatanın nedeni ayrıca kanıtlanmadı.",
+    "Türkçe metin yapının siyasi malzeme olmaması ve dini bakımdan önemli mekânların korunması gerektiğini savunur; camiye çevrilmesine kategorik karşı çıkma talebi içermez. 24 Temmuz namazının yapılması bu ifadeyle tek başına karşıtlık veya parti uygulaması değildir.",
+    "Önceki 2016 tarihli 1593 parti sitesindeki İhsan Çaralan imzalı Evrensel köşe yazısı fetih törenini ve cami yapılması için gösteriyi eleştirir; parti genel başkanının kesin müze statüsü vaadi sayılmaz.",
+    "Taranan 04 parti paketlerinde Ayasofya ve Hagia Sophia eş olayı bulunmadı; 10 Temmuz resmî karar 12 Temmuz açıklamasından önce, 24 Temmuz fiilî açılış ise mevcut kararın uygulanmasıdır."
+  ],
+  "decision": "Paket adayı hazırlanmadı: somut, ölçülebilir önceki parti talebi ile sonraki uygulama arasında güvenilir karşılaştırma kurulamadı. 24 Temmuz olayı belgeli ancak partinin karar yetkisi veya nedenselliği yok; çeviri uyuşmazlığı düzeltilmiş sayılmadı.",
+  "limitations": "API gövde hashleri arşivlenmiş sayfalardan doğrulandı; Türkçe parti sayfası web görüntüleyicisinde erişim hatası verdi. Kaynak araştırması bu arşiv ve incelenen belgelerle sınırlıdır, tüm dış kaynakları tüketmez."
+}
