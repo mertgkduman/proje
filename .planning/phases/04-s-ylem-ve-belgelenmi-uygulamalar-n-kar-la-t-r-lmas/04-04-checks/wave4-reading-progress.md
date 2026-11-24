@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 66 | 7 | 62619918 |
-| EMEP | 82 | 78 | 62617962 |
+| EMEP | 83 | 79 | 62621978 |
 | Saadet Partisi | 36 | 32 | 62619367 / 62619370 |
 | Demokrat Parti | 81 | 52 | 62618726 |
 
@@ -584,3 +584,7 @@ Birleşik prova 13, Slurm 62620455 ile tamamlandı. Bağımsız denetim 546 olay
 TİP 25 Ağustos ortak hazırlık açıklamasını 24 Eylül Haliç buluşmasıyla karşılaştırdı. Erkan Baş’ın konuşması ve TİP’in altı bileşenden biri olarak yer alması ayrı katkılar. TİP’in 25 Eylül yayımı olay sonrası. 10 Ekim cemevi açıklaması ve 7421’in 16 Kasım kabulü, 26 Kasım yayımı, bakım ve aydınlatma hükümleri iki görünümde doğrulandı. YÖK’ün 30 Mart olay kapsamı kurum kararına göre yazıldı ve 14 Şubat TİP söylemi kendi ilişkisinde korundu. İlk Haliç taslağı üçüncü parti yayımı için atıf kontrolünde durdu. Özgün HDP yayımı okuma makbuzunda, olay ve temsilcilik kanıtı pakette Bianet kaynağına bağlı. [TİP bağımsız doğrulama](../04-05-checks/tip-halic-cemevi-2022-62621760-independent.log)
 
 24 Eylül 2022 Haliç buluşmasında tarihsel Yeşil Sol Parti temsilcileri Ayşe Erdem ve İbrahim Akın’ın katılımı bağımsız Bianet haberi ve HDP yayımında okundu. DEM çalışma çifti, iki ayrı temsilciye ait katılım kanıtını içeriyor. İttifakın kurucu açıklamasındaki Halkların Demokratik Partisi sicil kimliği ayrı. [DEM bağımsız makbuzu](../04-06-checks/dem-halic-2022-62621426-independent.json)
+
+EMEP’in 14 Eylül çağrısı, 24 Eylül Haliç buluşmasındaki kurum katkısı ve Ercüment Akdeniz’in konuşmasına ilişkin kaynaklar iki görünümde doğrulandı. 26 Eylül EMEP program yayımı ve erişilen sürümün Şubat 2023 güncellemesi ayrı tarihler. Akdeniz konuşması, konuşma ve dönem sıfatı kanıtlarıyla ilişki bulgusuna bağlı. [EMEP bağımsız doğrulama](../04-10-checks/halic-2022-emep-v2-62621978-independent.log)
+
+TİP’in 1344 Amasra araştırma kararı ve São Paulo şartlı onay iptali adayları Slurm 62624848 ile doğrulanıyor. Meclis araştırması kişisel ceza sorumluluğu sürecinden, ithalat izni iptali ise geminin sonraki Brezilya sürecinden ayrı kaynaklarda.
