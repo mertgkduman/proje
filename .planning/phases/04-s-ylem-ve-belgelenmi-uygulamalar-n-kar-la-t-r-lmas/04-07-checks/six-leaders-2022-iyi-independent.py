@@ -3,10 +3,10 @@ from pathlib import Path
 from datetime import datetime,timezone
 c=Path(__file__).resolve().parent;root=c.parents[3];job=os.environ['SLURM_JOB_ID'];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();canon=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
 p=c/'six-leaders-2022-iyi-draft.json';r=c/'six-leaders-2022-iyi-review-draft.json';old=root/'data/practices/04-iyi.json';oldr=root/'data/practices/04-iyi-review.json'
-assert sha(p)=='c52f2914e2bf9309f42a78c41507936d8fd191af6bc66aa01176bd39a783a846' and sha(r)=='bac9620248b5556473ff32cbf52e316b78bd03acf756954bc52458d587cc1cd9'
+assert sha(p)=='f63197aab0d8acb54fb11d4477837f6e49c1c04d008165aeda445895abf7c0ff' and sha(r)=='e7a920753b3381200d79c8f39851f6e197ee816fe114b5032761f81fe2535237'
 assert sha(old)=='5814587049d6af3f55d273eb8d2057af2cf2a22ae2ea3bc2051aac2453c148b1' and sha(oldr)=='7eba5cdfb8a96ddd885d57450a06e01a64db5f27c991401c7dcea24d695fa028'
 b,n=json.loads(old.read_text()),json.loads(p.read_text())
-for k in ('entries','scope_inventory'):assert {canon(x) for x in b[k]}<={canon(x) for x in n[k]}
+for k in ('entries','scope_inventory','source_review_refs'):assert {canon(x) for x in b[k]}<={canon(x) for x in n[k]}
 for k,rows in b['practice_records'].items():assert {canon(x) for x in rows}<={canon(x) for x in n['practice_records'][k]}
 br,nr=json.loads(oldr.read_text()),json.loads(r.read_text())
 for k,rows in br.items():assert {canon(x) for x in rows}<={canon(x) for x in nr[k]}
