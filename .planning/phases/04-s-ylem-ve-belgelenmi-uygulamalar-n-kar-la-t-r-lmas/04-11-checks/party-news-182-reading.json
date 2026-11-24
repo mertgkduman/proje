@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-182",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T18:49:41.781375+00:00",
+  "reads": [
+    {
+      "post_id": 399,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/karsimizda-kac-erdogan-var-biz-hangi-erdogani-muhatap-alalim",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=karsimizda-kac-erdogan-var-biz-hangi-erdogani-muhatap-alalim",
+      "published_at": "2023-09-26T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T18:49:41.781375+00:00",
+      "original_path": "party-news-bodies/399.json",
+      "sha256": "09df0cf0ee77b3caa38721515b117a829ef4ddf4200071b94e6b028dad922d43",
+      "normalized_body_sha256": "e9333eaa6a48023082466620ca43923effa4f18dd2bd2b928284b7660b7e63f0",
+      "source_section_range": [
+        0,
+        10635
+      ],
+      "state": "examined",
+      "reading": "Karamollaoğlu basın toplantısında ekonomi, dış politika ve emeklilerin gelirini değerlendiriyor.",
+      "selected_passages": [
+        {
+          "start": 7623,
+          "end": 7668,
+          "exact": "Meclis’i olağanüstü toplantıya çağırdığımızda"
+        }
+      ],
+      "point": "Emekli aylıkları ve Meclisin olağanüstü toplanması üzerine açıklama.",
+      "statement": "Emekli maaşları için daha erken düzenleme istediklerini ve Meclisi olağanüstü toplantıya çağırdıklarını söylüyor.",
+      "concrete_evidence": "Parti yayımı hem çağrı anlatısını hem daha önce düzenleme talebini konuşmacıya atfediyor.",
+      "open_provenance": "Çağrının imzalı metni, çağrıya resmî parti/ortak grup sıfatıyla katılımı ve toplantı işlemleri bu okumada eşleştirilmedi; konuşmadaki diğer iddialar bağımsız doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 268,
+  "remaining_pre_cut_bodies": 381,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü; blok sonları korundu, etiketler ve boş satırlar kaldırıldı."
+}
