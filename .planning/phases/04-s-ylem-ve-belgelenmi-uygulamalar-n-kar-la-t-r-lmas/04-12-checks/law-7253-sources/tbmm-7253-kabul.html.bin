@@ -1,0 +1,698 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"New York";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:TimesNewRomanPSMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:MinionPro-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\30D2\30E9\30AE\30CE\660E\671D Pro W3";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@\30D2\30E9\30AE\30CE\660E\671D Pro W3";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Açıklama Metni Char1";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Üst Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Alt Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Konu Başlığı Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p
+	{mso-style-name:"Normal \(Web\)\,Normal \(Web\) Char Char\,Normal \(Web\) Char Char Char Char\,Normal \(Web\) Char Char Char";
+	mso-style-link:"Normal \(Web\) Char\,Normal \(Web\) Char Char Char1\,Normal \(Web\) Char Char Char Char Char\,Normal \(Web\) Char Char Char Char1";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Açıklama Konusu Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balon Metni Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-link:"Aralık Yok Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Normal1
+	{mso-style-name:Normal1;
+	font-family:"Arial",sans-serif;}
+span.BalonMetniChar
+	{mso-style-name:"Balon Metni Char";
+	mso-style-link:"Balon Metni";
+	font-family:"Segoe UI",sans-serif;}
+span.Gvdemetni
+	{mso-style-name:"Gövde metni_";
+	mso-style-link:"Gövde metni1";
+	background:white;}
+p.Gvdemetni1, li.Gvdemetni1, div.Gvdemetni1
+	{mso-style-name:"Gövde metni1";
+	mso-style-link:"Gövde metni_";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:13.7pt;
+	background:white;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+span.stBilgiChar
+	{mso-style-name:"Üst Bilgi Char";
+	mso-style-link:"Üst Bilgi";}
+span.AltBilgiChar
+	{mso-style-name:"Alt Bilgi Char";
+	mso-style-link:"Alt Bilgi";}
+span.FontStyle15
+	{mso-style-name:"Font Style15";
+	font-family:"Times New Roman",serif;
+	letter-spacing:.5pt;}
+span.FontStyle16
+	{mso-style-name:"Font Style16";
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.FontStyle37
+	{mso-style-name:"Font Style37";
+	font-family:"Times New Roman",serif;}
+span.Gvdemetni0
+	{mso-style-name:"Gövde metni";
+	font-variant:normal !important;
+	letter-spacing:0pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;}
+p.baslk, li.baslk, div.baslk
+	{mso-style-name:baslk;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.altbaslik, li.altbaslik, div.altbaslik
+	{mso-style-name:altbaslik;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.kantab, li.kantab, div.kantab
+	{mso-style-name:kantab;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.fontstyle01
+	{mso-style-name:fontstyle01;
+	font-family:TimesNewRomanPSMT;
+	color:black;
+	font-weight:normal;
+	font-style:normal;}
+p.nor, li.nor, div.nor
+	{mso-style-name:nor;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.metin, li.metin, div.metin
+	{mso-style-name:metin;
+	mso-style-link:"metin Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.baslk0, li.baslk0, div.baslk0
+	{mso-style-name:baslk0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:18.0pt;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.AklamaMetni1, li.AklamaMetni1, div.AklamaMetni1
+	{mso-style-name:"Açıklama Metni1";
+	mso-style-link:"Açıklama Metni Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar
+	{mso-style-name:"Açıklama Metni Char";
+	mso-style-link:"Açıklama Metni1";}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.KonuBalChar
+	{mso-style-name:"Konu Başlığı Char";
+	mso-style-link:"Konu Başlığı";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.ksmblm, li.ksmblm, div.ksmblm
+	{mso-style-name:kısımbölüm;
+	margin-top:2.85pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.nor0, li.nor0, div.nor0
+	{mso-style-name:nor0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.kantab0, li.kantab0, div.kantab0
+	{mso-style-name:kantab0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.NormalWebChar
+	{mso-style-name:"Normal \(Web\) Char\,Normal \(Web\) Char Char Char1\,Normal \(Web\) Char Char Char Char Char\,Normal \(Web\) Char Char Char Char1";
+	mso-style-link:"Normal \(Web\)\,Normal \(Web\) Char Char\,Normal \(Web\) Char Char Char Char\,Normal \(Web\) Char Char Char";
+	font-family:"Times New Roman",serif;}
+p.stylenormal, li.stylenormal, div.stylenormal
+	{mso-style-name:style_normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.stbilgiChar1
+	{mso-style-name:"Üstbilgi Char1";
+	font-family:"Calibri",sans-serif;}
+span.BalonMetniChar1
+	{mso-style-name:"Balon Metni Char1";
+	font-family:"Segoe UI",sans-serif;}
+p.Gvde, li.Gvde, div.Gvde
+	{mso-style-name:Gövde;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	border:none;}
+span.metinChar
+	{mso-style-name:"metin Char";
+	mso-style-link:metin;
+	font-family:"Times New Roman",serif;}
+span.AralkYokChar
+	{mso-style-name:"Aralık Yok Char";
+	mso-style-link:"Aralık Yok";
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar1
+	{mso-style-name:"Açıklama Metni Char1";
+	mso-style-link:"Açıklama Metni";}
+span.AklamaKonusuChar
+	{mso-style-name:"Açıklama Konusu Char";
+	mso-style-link:"Açıklama Konusu";
+	font-weight:bold;}
+p.BasicParagraph, li.BasicParagraph, div.BasicParagraph
+	{mso-style-name:"\[Basic Paragraph\]";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:MinionPro-Regular;
+	color:black;}
+p.NoParagraphStyle, li.NoParagraphStyle, div.NoParagraphStyle
+	{mso-style-name:"\[No Paragraph Style\]";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:MinionPro-Regular;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:49.65pt 70.85pt 63.8pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=TR>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+margin-bottom:3.0pt;margin-left:0cm;text-align:center;line-height:150%'><b><span
+lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>İNTERNET
+ORTAMINDA YAPILAN YAYINLARIN DÜZENLENMESİ VE BU YAYINLAR YOLUYLA İŞLENEN
+SUÇLARLA MÜCADELE EDİLMESİ HAKKINDA KANUNDA DEĞİŞİKLİK YAPILMASINA DAİR KANUN</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:12.5pt;border-collapse:collapse'>
+ <tr style='height:15.3pt'>
+  <td width=211 valign=top style='width:158.25pt;padding:0cm 3.5pt 0cm 3.5pt;
+  height:15.3pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-align:justify;line-height:normal'><b><u><span
+  style='font-size:14.0pt;font-family:"Times New Roman",serif'>Kanun No. 7253</span></u></b></p>
+  </td>
+  <td width=121 valign=top style='width:90.85pt;padding:0cm 3.5pt 0cm 3.5pt;
+  height:15.3pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:17.0pt;
+  line-height:normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+  </td>
+  <td width=256 valign=top style='width:192.0pt;padding:0cm 3.5pt 0cm 3.5pt;
+  height:15.3pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:17.0pt;
+  line-height:normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>   
+  <u>Kabul Tarihi: 29/7/2020       </u></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE 1-</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> </span><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>4/5/2007
+tarihli ve 5651 sayılı İnternet Ortamında Yapılan Yayınların Düzenlenmesi ve Bu
+Yayınlar Yoluyla İşlenen Suçlarla Mücadele Edilmesi Hakkında Kanunun 2 nci
+maddesinin birinci fıkrasının (j) bendine “IP adresi,” ibaresinden sonra gelmek
+üzere “port bilgisi,” ibaresi ve fıkraya aşağıdaki bent eklenmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“s)
+Sosyal ağ sağlayıcı: Sosyal etkileşim amacıyla kullanıcıların internet
+ortamında metin, görüntü, ses, konum gibi içerikleri oluşturmalarına, görüntülemelerine
+veya paylaşmalarına imkân sağlayan gerçek veya tüzel kişileri,”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+2-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5651 sayılı Kanunun 3 üncü maddesine aşağıdaki fıkra eklenmiştir. </span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“(5) Bu
+Kanun kapsamında verilen idari para cezaları, muhatabın yurt dışında bulunması
+hâlinde Kurum tarafından doğrudan muhataba üçüncü fıkradaki usulle de
+bildirilebilir. Bu bildirim 11/2/1959 tarihli ve 7201 sayılı Tebligat Kanununa
+göre yapılan tebligat hükmündedir. Bu bildirimin yapıldığı tarihi izleyen
+beşinci günün sonunda tebligat yapılmış sayılır.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE 3</span></b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>- 5651
+sayılı Kanunun 5 inci maddesinin altıncı fıkrasında yer alan “on bin Türk
+Lirasından yüz bin Türk Lirasına” ibaresi “yüz bin Türk lirasından bir milyon
+Türk lirasına” şeklinde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+4-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5651 sayılı Kanunun 8 inci maddesinin başlığı “İçeriğin çıkarılması ve erişimin
+engellenmesi kararları ile yerine getirilmesi” şeklinde, birinci fıkrasında yer
+alan “erişimin engellenmesine” ibaresi “içeriğin çıkarılmasına ve/veya erişimin
+engellenmesine” şeklinde, ikinci fıkrasının birinci cümlesinde yer alan
+“Erişimin engellenmesi” ibaresi “İçeriğin çıkarılması ve/veya erişimin
+engellenmesi” şeklinde, ikinci ve altıncı cümlelerinde yer alan “erişimin
+engellenmesine” ibareleri “içeriğin çıkarılmasına ve/veya erişimin
+engellenmesine” şeklinde, üçüncü fıkrasında yer alan “erişimin engellenmesi”
+ibaresi “içeriğin çıkarılması ve/veya erişimin engellenmesi” şeklinde, dördüncü
+fıkrasının birinci cümlesinde yer alan “erişimin engellenmesi” ibaresi
+“içeriğin çıkarılması ve/veya erişimin engellenmesi” şeklinde, ikinci cümlesi
+aşağıdaki şekilde, beşinci fıkrasında yer alan “Erişimin engellenmesi” ibaresi
+“İçeriğin çıkarılması ve/veya erişimin engellenmesi” şeklinde, altıncı
+fıkrasında yer alan “erişimin engellenmesi” ibaresi “içeriğin çıkarılması
+ve/veya erişimin engellenmesi” şeklinde, yedinci fıkrasının birinci ve ikinci
+cümlelerinde yer alan “erişimin engellenmesi” ibareleri “içeriğin çıkarılması
+ve/veya erişimin engellenmesi” şeklinde, sekizinci fıkrasının birinci ve ikinci
+cümlelerinde yer alan “erişimin engellenmesi” ibareleri “içeriğin çıkarılması
+ve/veya erişimin engellenmesi” şeklinde, onuncu fıkrasında yer alan “erişimin
+engellenmesi kararının gereğini yerine getirmeyen” ibaresi “içeriğin
+çıkarılması ve/veya erişimin engellenmesi kararının gereğini yerine getirmeyen
+içerik,” şeklinde, onbirinci fıkrasında yer alan “erişimin engellenmesi”
+ibaresi “içeriğin çıkarılması ve/veya erişimin engellenmesi” şeklinde, “erişim
+sağlayıcısına” ibaresi “ilgili içerik, yer ve erişim sağlayıcısına” şeklinde
+değiştirilmiş, aynı fıkraya “yirmidört saat içinde” ibaresinden sonra gelmek
+üzere “erişim sağlayıcı tarafından” ibaresi eklenmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;line-height:normal'><span lang=EN-GB
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>“Bu karar, ilgili
+içerik ve yer sağlayıcılar ile erişim sağlayıcısına bildirilerek gereğinin
+yerine getirilmesi istenir.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+5-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5651 sayılı Kanunun 9 uncu maddesinin birinci fıkrasında yer alan “içeriğe
+erişimin engellenmesini” ibaresi “içeriğin çıkarılmasını ve/veya erişimin
+engellenmesini” şeklinde, üçüncü fıkrasında yer alan “erişimin engellenmesine”
+ibaresi “içeriğin çıkarılmasına ve/veya erişimin engellenmesine” şeklinde,
+beşinci fıkrasında yer alan “erişimin engellenmesi” ibaresi “içeriğin
+çıkarılması ve/veya erişimin engellenmesi” şeklinde, sekizinci fıkrası
+aşağıdaki şekilde ve dokuzuncu fıkrasında yer alan “erişimin engellenmesi”
+ibaresi “içeriğin çıkarılması ve/veya erişimin engellenmesi” şeklinde
+değiştirilmiş, maddeye dokuzuncu fıkradan sonra gelmek üzere aşağıdaki onuncu
+fıkra eklenmiş, mevcut onuncu fıkra buna göre teselsül ettirilmiş ve aynı
+fıkrada yer alan “sorumlu kişi” ibaresi “içerik, yer ve erişim sağlayıcıların
+sorumluları” şeklinde değiştirilmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“(8)
+Birlik tarafından ilgili içerik ve yer sağlayıcılar ile erişim sağlayıcıya
+gönderilen içeriğin çıkarılması ve/veya erişimin engellenmesi kararının gereği
+derhâl, en geç dört saat içinde ilgili içerik ve yer sağlayıcılar ile erişim
+sağlayıcı tarafından yerine getirilir.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“(10)
+İnternet ortamında yapılan yayın içeriği nedeniyle kişilik hakları ihlal
+edilenlerin talep etmesi durumunda hâkim tarafından, başvuranın adının bu madde
+kapsamındaki karara konu internet adresleri ile ilişkilendirilmemesine karar
+verilebilir. Kararda, Birlik tarafından hangi arama motorlarına bildirim
+yapılacağı gösterilir.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+6-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5651 sayılı Kanuna aşağıdaki ek madde eklenmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“EK
+MADDE 4- (1) Türkiye’den günlük erişimi bir milyondan fazla olan yurt dışı
+kaynaklı sosyal ağ sağlayıcı; Kurum, Birlik, adli veya idari makamlarca
+gönderilecek tebligat, bildirim veya taleplerin gereğinin yerine getirilmesi ve
+kişiler tarafından bu Kanun kapsamında yapılacak başvuruların cevaplandırılması
+ve bu Kanun kapsamındaki diğer yükümlülüklerin yerine getirilmesini temin için
+yetkili en az bir kişiyi Türkiye’de temsilci olarak belirler ve bu kişinin
+iletişim bilgilerine kolayca görülebilecek ve doğrudan erişilebilecek şekilde
+internet sitesinde yer verir. Sosyal ağ sağlayıcı bu kişinin kimlik ve iletişim
+bilgilerini Kuruma bildirmekle yükümlüdür. Temsilcinin gerçek kişi olması
+hâlinde Türk vatandaşı olması zorunludur.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(2)
+Birinci fıkrada düzenlenen temsilci belirleme ve bildirme yükümlülüğünü yerine
+getirmeyen sosyal ağ sağlayıcıya, Kurum tarafından bildirimde bulunulur.
+Bildirimden itibaren otuz gün içinde bu yükümlülüğün yerine getirilmemesi
+hâlinde sosyal ağ sağlayıcıya Başkan tarafından on milyon Türk lirası idari
+para cezası verilir. Verilen idari para cezasının tebliğinden itibaren otuz gün
+içinde bu yükümlülüğün yerine getirilmemesi hâlinde otuz milyon Türk lirası
+daha idari para cezası verilir. İkinci kez verilen idari para cezasının tebliğinden
+itibaren otuz gün içinde bu yükümlülüğün yerine getirilmemesi hâlinde Başkan
+tarafından Türkiye’de mukim vergi mükellefi olan gerçek ve tüzel kişilerin
+ilgili sosyal ağ sağlayıcısına yeni reklam vermesi yasaklanır, bu kapsamda yeni
+sözleşme kurulamaz ve buna ilişkin para transferi yapılamaz. Reklam yasağı
+kararının verildiği tarihten itibaren üç ay içinde bu yükümlülüğün yerine
+getirilmemesi hâlinde Başkan, sosyal ağ sağlayıcının internet trafiği bant
+genişliğinin yüzde elli oranında daraltılması için sulh ceza hâkimliğine
+başvurabilir. Başvurunun kabulüne ilişkin hâkim kararının uygulanmasından
+itibaren otuz gün içinde söz konusu yükümlülüğün yerine getirilmemesi hâlinde
+Başkan, sosyal ağ sağlayıcının internet trafiği bant genişliğinin yüzde doksan
+oranına kadar daraltılması için sulh ceza hâkimliğine başvurabilir. Hâkim
+ikinci başvuru üzerine vereceği kararında, yüzde elliden düşük olmamak
+kaydıyla, sunulan hizmetin niteliğini de dikkate alarak daha düşük bir oran
+belirleyebilir. Bu kararlara karşı Başkan tarafından 5271 sayılı Kanun
+hükümlerine göre itiraz yoluna gidilebilir. Hâkim tarafından verilen kararlar
+erişim sağlayıcılara bildirilmek üzere Kuruma gönderilir. Kararların gereği,
+bildirimden itibaren derhâl ve en geç dört saat içinde erişim sağlayıcıları
+tarafından yerine getirilir. Temsilci belirleme ve bildirme yükümlülüğünün
+yerine getirilmesi hâlinde; verilen idari para cezalarının dörtte biri tahsil
+edilir, reklam yasağı kaldırılır ve hâkim kararları kendiliğinden hükümsüz
+kalır. İnternet trafiği bant genişliğine yapılan müdahalenin sona erdirilmesi
+için erişim sağlayıcılara Kurum tarafından bildirim yapılır. </span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(3)
+Türkiye’den günlük erişimi bir milyondan fazla olan yurt içi veya yurt dışı
+kaynaklı sosyal ağ sağlayıcı, 9 uncu ve 9/A maddeleri kapsamındaki içeriklere
+yönelik olarak kişiler tarafından yapılacak başvurulara, başvurudan itibaren en
+geç kırk sekiz saat içinde olumlu ya da olumsuz cevap vermekle yükümlüdür.
+Olumsuz cevaplar gerekçeli olarak verilir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(4)
+Türkiye’den günlük erişimi bir milyondan fazla olan yurt içi veya yurt dışı
+kaynaklı sosyal ağ sağlayıcı, kendisine bildirilen içeriğin çıkarılması ve/veya
+erişimin engellenmesi kararlarının uygulanmasına ve üçüncü fıkra kapsamındaki
+başvurulara ilişkin istatistiksel ve kategorik bilgileri içeren Türkçe
+hazırlanmış raporları altı aylık dönemlerle Kuruma bildirir. Üçüncü fıkra
+kapsamındaki başvurulara ilişkin rapor, kişisel verilerden arındırılmak
+suretiyle sosyal ağ sağlayıcının kendi internet sitesinde de yayınlanır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(5)
+Türkiye’den günlük erişimi bir milyondan fazla olan yurt içi veya yurt dışı
+kaynaklı sosyal ağ sağlayıcı, Türkiye’deki kullanıcıların verilerini Türkiye’de
+barındırma yönünde gerekli tedbirleri alır. </span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(6)
+Üçüncü fıkradaki yükümlülüğü yerine getirmeyen sosyal ağ sağlayıcıya beş milyon
+Türk lirası, dördüncü fıkradaki yükümlülüğü yerine getirmeyen sosyal ağ
+sağlayıcıya ise on milyon Türk lirası idari para cezası Başkan tarafından
+verilir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(7)
+Türkiye’den günlük erişimi bir milyondan fazla olan yurt dışı kaynaklı sosyal
+ağ sağlayıcılar hakkında 8 inci ve 8/A maddeleri kapsamında verilecek olan
+idari para cezaları bir milyon Türk lirası olarak, 8 inci ve 9 uncu maddeleri
+kapsamında verilecek olan adli para cezaları ise elli bin gün olarak verilir.
+Söz konusu idari para cezasını gerektiren ihlallerin bir yıl içinde her bir
+tekrarında cezalar bir kat artırılarak uygulanır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(8)
+Hukuka aykırılığı hâkim veya mahkeme kararı ile tespit edilen içeriğin sosyal
+ağ sağlayıcıya bildirilmesi durumunda, bildirime rağmen yirmi dört saat içinde içeriği
+çıkarmayan veya erişimi engellemeyen sosyal ağ sağlayıcı, doğan zararların
+tazmin edilmesinden sorumludur. Bu hukuki sorumluluğun işletilmesi için içerik
+sağlayıcının sorumluluğuna gidilmesi veya içerik sağlayıcıya dava açılması
+şartı aranmaz.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(9) Bu
+maddenin uygulanmasında sosyal ağ sağlayıcının yükümlülükleri, içerik veya yer
+sağlayıcısı olmasından doğan sorumluluk ve yükümlülüklerini ortadan kaldırmaz.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(10) Bu
+maddenin uygulanmasına ilişkin usul ve esaslar Kurum tarafından belirlenir.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+7-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+5651 sayılı Kanuna aşağıdaki geçici madde eklenmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>“GEÇİCİ
+MADDE 5- (1) Sosyal ağ sağlayıcılar, ek 4 üncü maddenin;</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>a) Üçüncü
+fıkrası kapsamındaki yükümlülüklerini yerine getirmek üzere bu maddenin
+yürürlük tarihinden itibaren üç ay içinde gerekli çalışmaları tamamlar.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>b) Dördüncü
+fıkrası kapsamındaki yükümlülükleri uyarınca hazırlayacakları ilk raporlarını,
+2021 yılı Haziran ayında Kuruma bildirir ve internet sitesinde yayınlar.”</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+8-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+Bu Kanunun;</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>a) 1
+inci maddesiyle 5651 sayılı Kanunun 2 nci maddesinin birinci fıkrasına eklenen
+(s) bendi, 6 ncı ve 7 nci maddeleri 1/10/2020 tarihinde,</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>b) Diğer
+hükümleri yayımı tarihinde,</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>yürürlüğe
+girer.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+9-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+Bu Kanun hükümlerini Cumhurbaşkanı yürütür.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
