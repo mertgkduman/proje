@@ -23,9 +23,12 @@ def put(relative, raw):
     paths.add(str(target))
 
 sources = [
-    ('speech', 'party-news-bodies/401.json', 'https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=hirsiza-hirsiz-isgalciye-isgalci-katile-katil-zalime-ise-zalim-diyemediler', '2023-10-11', 'Saadet Partisi', 'party', 'party_publication', 'application/json', '2026-11-24T18:45:34.779574+00:00', [
-        ('quote', 'Genel başkanın ödeme değerlendirmesi', 'Emeklilerimize, hatta sadece başka bir işte çalışmayan emeklilerimize, tek seferliğine mahsus verilecek 5 bin lira ikramiyeyi kabul etmediğimizin', None),
-        ('role', 'Açıklamanın grup konuşması', 'Genel Başkanımız Temel Karamollaoğlu, TBMM Grup Toplantısı’nda yaptığı konuşmada', None)]),
+    ('speech', 'retired-2023-speech-original.html', 'https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/12/Tam/ea87822e-b2c2-4270-8a73-f6658cd63d6d.html', '2023-10-25', 'TBMM', 'official', 'official', 'text/html', None, [
+        ('quote', 'Kalıcı aylık iyileştirmesi beklentisi', 'Emeklilerimiz maaşlarında kalıcı iyileştirme beklerken', None),
+        ('exclusion', 'Çalışmayanlarla sınırlı ödeme eleştirisi', 'çalışmayan emeklilere verecekmişsiniz.', None),
+        ('speaker', 'Konuşmacı ve bağlamı', 'ŞERAFETTİN KILIÇ (Antalya) – Sayın Başkan, değerli milletvekilleri; hepinizi saygıyla selamlıyorum.', None)]),
+    ('role', 'retired-2023-role-original.html', 'https://www.tbmm.gov.tr/Haber/Detay?Id=00548664-8274-400e-9ca3-01889add2784', None, 'TBMM', 'official', 'official', 'text/html', None, [
+        ('identity', 'Kılıç’ın Saadet Partisi milletvekilliği', 'Saadet Partisi Antalya Milletvekili Şerafettin Kılıç', None)]),
     ('law7464', 'retired-2023-7464-original.html', 'https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y6/KanunMetni/0ad8a727-9c26-42ec-9eaa-e3d6dc92595d.htm', '2023-10-25', 'TBMM', 'official', 'official', 'text/html', '2026-11-24T18:46:53.292829+00:00', [
         ('amount', 'İlk düzenlemede tek seferlik tutar', '2023 yılı Ekim ödeme döneminde\r\ngelir veya aylık ödemesi yapılanlara dosya bazında 5.000 TL tutarında bir\r\ndefaya mahsus olmak üzere ödeme yapılır.', None),
         ('excluded', 'Çalışma nedeniyle kapsam dışı bırakma', 'almakta iken 2023 yılı Ekim ayı içinde bu Kanun veya 506 sayılı Kanunun geçici\r\n20 nci maddesi kapsamında sigortalı olarak çalışanlar', None),
@@ -54,9 +57,9 @@ for key, name, url, day, publisher, kind, attribution, mime, captured, passages 
     put(original, raw)
     put(readable, readable_bytes(raw, ext, legacy=False))
     accessed = captured or datetime.fromtimestamp(path.stat().st_mtime, timezone.utc).isoformat()
-    add('document', id=doc, party_id='saadet', title={'speech':'Karamollaoğlu’nun 2023 ödeme değerlendirmesi', 'law7464':'7464 sayılı kanun metni', 'law7491':'7491 sayılı kanun metni', 'registry':'7491 sayılı kanunun TBMM sicili', 'debate':'TBMM’de teklif maddesinin kabulü', 'sgk':'SGK 2023 faaliyet raporu'}[key], source_kind=kind)
+    add('document', id=doc, party_id='saadet', title={'speech':'Şerafettin Kılıç’ın 2023 ödeme değerlendirmesi', 'role':'Şerafettin Kılıç’ın parti sıfatına ilişkin TBMM haberi', 'law7464':'7464 sayılı kanun metni', 'law7491':'7491 sayılı kanun metni', 'registry':'7491 sayılı kanunun TBMM sicili', 'debate':'TBMM’de teklif maddesinin kabulü', 'sgk':'SGK 2023 faaliyet raporu'}[key], source_kind=kind)
     add('document_version', id=vid, document_id=doc, original_url=url, final_url=url, document_date=day, date_precision='day' if day else 'unknown', date_unknown_reason=None if day else 'Belgenin ilk yayımlandığı gün kaynakta kesinleştirilmedi.', version_label='Erişilen özgün kaynak.', accessed_at=accessed, verified_at=now, mime=mime, sha256=digest, original_path=original, readable_path=readable)
-    add('source_attribution', version_id=vid, publisher=publisher, author=None, kind=attribution, published_at=day if key == 'speech' else None, date_precision='day' if key == 'speech' else 'unknown', social_handle=None, public_url=url, basis='Parti yayımı grup konuşmasını aktarır.' if key == 'speech' else 'Kurumun özgün kaydı incelendi.')
+    add('source_attribution', version_id=vid, publisher=publisher, author=None, kind=attribution, published_at=None, date_precision='unknown', social_handle=None, public_url=url, basis='Kurumun özgün kaydı incelendi.')
     if ext == 'html':
         view = build_view(raw, url, root, fetch_assets=False)
         view['version_id'] = vid

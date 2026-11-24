@@ -17,12 +17,12 @@ topic='sosyal-guvenlik'
 stem='0411-saadet-retired-2023'
 src='0411-retired-2023-'
 statement,target,quote=(stem+s for s in ('-statement','-target','-quote'))
-goal='Saadet Partisi Genel Başkanı Temel Karamollaoğlu, çalışmayan emeklilerle sınırlı tek seferlik 5.000 TL ödemeyi kabul etmediklerini açıkladı.'
+goal='Saadet Partisi milletvekili Şerafettin Kılıç, tek seferlik 5.000 TL ödemeyi ve bunun çalışmayan emeklilerle sınırlanmasını eleştirdi. Emekli aylıklarında kalıcı iyileştirme istedi.'
 limit='İlk kanunda ölüm geliri veya aylığı alanlar için ayrı istisna vardı. Kapsamın genişlemesi, tek seferlik ödeme tutarına ilişkin eleştirinin karşılandığı anlamına gelmez. SGK verisi toplu ödeme verisidir. Bu kaynaklar Saadet Partisinin değişikliğe neden olduğunu göstermez.'
-sp=[src+'speech-quote',src+'speech-role']
-finding(target,goal,sp,'Parti yayımında konuşmacı ve ödeme değerlendirmesi okundu.')
-finding(quote,passages[sp[0]]['exact'],[sp[0]],'Konuşmadaki ödeme ifadesi.',pair=target)
-records['practice_statement'].append(dict(id=statement,party_id=party,topic_id=topic,taxonomy_version=4,summary_finding_id=target,quote_finding_id=quote,statement_at='2023-10-11',date_precision='day',version_id=passages[sp[0]]['version_id'],period_basis='Saadet Partisi yayımında Genel Başkanın grup konuşması.',uncertainty_reason=limit,comparison_row_id='04-03-v3-0311-saadet-sosyal-guvenlik'))
+sp=[src+'speech-quote',src+'speech-exclusion',src+'speech-speaker',src+'role-identity']
+finding(target,goal,sp,'TBMM tutanağında konuşma ve dönemsel parti sıfatı ayrı okundu.')
+finding(quote,passages[sp[0]]['exact'],[sp[0]],'Konuşmadaki kalıcı iyileştirme ifadesi.',pair=target)
+records['practice_statement'].append(dict(id=statement,party_id=party,topic_id=topic,taxonomy_version=4,summary_finding_id=target,quote_finding_id=quote,statement_at='2023-10-25',date_precision='day',version_id=passages[sp[0]]['version_id'],period_basis='Saadet Partili Antalya milletvekilinin Meclis konuşması.',uncertainty_reason=limit,comparison_row_id='04-03-v3-0311-saadet-sosyal-guvenlik'))
 readings(topic,'statement',sp)
 for kind,claim in [('practice_statement',goal),('practice_statement.summary_finding_id',goal),('practice_statement.quote_finding_id',passages[sp[0]]['exact'])]: task(kind,statement,claim,limit)
 ep=[(src+'law7491-repeal','action','document','7491 sayılı kanunun 54. maddesi bu istisna fıkrasını kaldırdı.'),(src+'registry-gazette','action','document','TBMM sicili 7491 sayılı kanunun 28 Aralık 2023 tarihinde yayımlandığını gösteriyor.'),(src+'sgk-expanded','result','document','SGK çalışan emeklilerin de ödemeden yararlandığını bildiriyor.'),(src+'sgk-paid','result','document','SGK daha önce çalışma nedeniyle ödenmeyen yaklaşık 4,7 milyon kişiye toplam 23,4 milyar TL ödeme yapıldığını bildiriyor.')]
@@ -37,7 +37,7 @@ compare='Açıklama ve sonraki düzenleme aynı 5.000 TL ödemenin çalışma du
 connection='Çalışma nedeniyle kapsam dışında kalanlar için yasal istisna kaldırıldı ve SGK toplu ödeme bildirdi. Ödeme 5.000 TL ve bir defalık kaldı. Görüşülen teklifin 55. maddesi kabul edilen kanunda 54. madde oldu.'
 finding(result,observed,[src+'law7491-repeal',src+'registry-gazette',src+'sgk-paid'],'Kanun metni, yayım sicili ve SGK ödeme verisi ayrı okundu.')
 finding(explanation,connection,sp+[src+'law7464-amount',src+'law7464-excluded',src+'law7464-exception',src+'law7491-repeal',src+'debate-article',src+'sgk-paid'],'Tutar, kapsam ve gerçekleşen ödeme ayrı değerlendirildi.')
-records['practice_relation'].append(dict(id=rid,statement_id=statement,event_id=eid,party_id=party,topic_id=topic,scope_id=scope,comparability_reason=compare,target_finding_id=target,result_finding_id=result,explanation_finding_id=explanation,temporal_context='Ekim 2023 açıklaması, ilk kanun ve Aralık değişikliği ayrı tarihlerdir.',authority_context='Karamollaoğlu Saadet Partisi Genel Başkanı olarak konuştu. Kanunu TBMM kabul etti ve ödemeyi SGK bildirdi.',uncertainty_reason=limit))
+records['practice_relation'].append(dict(id=rid,statement_id=statement,event_id=eid,party_id=party,topic_id=topic,scope_id=scope,comparability_reason=compare,target_finding_id=target,result_finding_id=result,explanation_finding_id=explanation,temporal_context='Ekim 2023 açıklaması, ilk kanun ve Aralık değişikliği ayrı tarihlerdir.',authority_context='Kılıç konuşmasını Saadet Partisi milletvekili olarak yaptı. Kanunu TBMM kabul etti ve ödemeyi SGK bildirdi.',uncertainty_reason=limit))
 records['practice_candidate'].append(dict(id=stem+'-candidate',scope_id=scope,event_id=eid,relation_id=rid,state='eligible',reason=compare,passage_ids=encoded(eids)))
 for kind,claim in [('practice_relation',compare),('practice_relation.target_finding_id',goal),('practice_relation.result_finding_id',observed),('practice_relation.explanation_finding_id',connection)]: task(kind,rid,claim,limit)
 '''
