@@ -19,8 +19,11 @@ stem = "0412-question-13274"
 sources_dir = checks / "party-news-access-039"
 source_root = working / "sources" / party
 now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-preflight = sys.argv[1:] == ["--preflight"]
-assert preflight or not sys.argv[1:]
+options = set(sys.argv[1:])
+assert len(options) == len(sys.argv[1:]) and options <= {"--preflight", "--with-bulletins"}
+preflight = "--preflight" in options
+with_bulletins = "--with-bulletins" in options
+draft_name = "question-13274-bulletins" if with_bulletins else "question-13274"
 
 
 def read(path):
@@ -61,16 +64,24 @@ def add(table, **row):
 capture = {row["path"]: row for row in read(sources_dir / "capture.json")}
 capture.update(read(sources_dir / "reading.json")["official_sources"])
 sources = {}
-for key, filename, date, title, kind, publisher, author, basis in (
+source_specs = [
     ("signed", "257-tbmm-signed.pdf", "2024-06-25", "Haydar Altıntaş’ın imzalı 7/13274 yazılı sorusu",
      "official", "TBMM", "Haydar Altıntaş", "TBMM’nin tek sayfalık özgün imzalı önerge taraması."),
     ("detail", "257-tbmm-detail.html.bin", None, "TBMM yazılı soru 7/13274 işlem kaydı",
      "official", "TBMM", None, "TBMM işlem kaydındaki önerge numarası, geliş tarihi ve son durum."),
     ("party", "257-party.html.bin", "2024-06-28", "Demokrat Parti’nin 7/13274 konulu sonraki yayımı",
      "party_publication", "Demokrat Parti", "DP Basın Merkezi", "Sayfa üstünde 28 Haziran, gövde imzasında 27 Haziran 2024 yazıyor."),
-):
+]
+bulletin_dir = checks / "question-13274-bulletin-sources"
+if with_bulletins:
+    for row in read(bulletin_dir / "reading.json")["matches"]:
+        capture[row["path"]] = dict(row, source_dir=bulletin_dir)
+        key = {162: "registered", 169: "overdue"}[row["serial"]]
+        source_specs.append((key, row["path"], row["date"], f"TBMM Gelen Kağıtlar No. {row['serial']}",
+                             "official", "TBMM", None, row["reading"]))
+for key, filename, date, title, kind, publisher, author, basis in source_specs:
     info = capture[filename]
-    path = sources_dir / filename
+    path = info.get("source_dir", sources_dir) / filename
     raw = path.read_bytes()
     assert info["status"] == 200 and sha(raw) == info["sha256"]
     media = "pdf" if path.suffix == ".pdf" else "html"
@@ -90,9 +101,10 @@ for key, filename, date, title, kind, publisher, author, basis in (
            version_label=title, accessed_at=info["retrieved_at_utc"], verified_at=now,
            mime="application/pdf" if media == "pdf" else "text/html", sha256=info["sha256"],
            original_path=str(original), readable_path=str(readable))
+    published = date if key in {"party", "registered", "overdue"} else None
     insert("source_attribution", version_id=version, kind=kind, publisher=publisher, author=author,
-           social_handle=None, published_at=date if key == "party" else None,
-           date_precision="day" if key == "party" else "unknown", public_url=url, basis=basis)
+           social_handle=None, published_at=published, date_precision="day" if published else "unknown",
+           public_url=url, basis=basis)
     if media == "html":
         view = build_view(raw, url, source_root, fetch_assets=False)
         validate_view(source_root, view)
@@ -100,8 +112,10 @@ for key, filename, date, title, kind, publisher, author, basis in (
     sources[key] = (path, version, url)
 
 event = f"{stem}-event"
+status_boundary = ("4 Temmuz liste kaydı ve 19 Temmuz süresinde cevaplanmama ilanı belgeli. Sonraki imzalı bakanlık cevabı açık."
+                   if with_bulletins else "TBMM ayrıntı kaydındaki son durumun ilan günü ve imzalı bakanlık cevabı açık.")
 limitations = ("Parti sayfasında 28 Haziran 2024 yayın tarihi ve gövdede DP Basın Merkezi’nin 27 Haziran 2024 tarihi var. "
-               "TBMM ayrıntı kaydındaki son durumun ilan günü ve imzalı bakanlık cevabı açık. "
+               f"{status_boundary} "
                "Üyelik hedefinin resmî durumu, NATO ile temas ve sonraki sonuçlar için ayrı kanıt gerekiyor.")
 add("practice_event", id=event, common_event_key="tbmm-28-2-7-13274-yazili-soru", event_at="2024-06-25",
     date_precision="day", date_unknown_reason=None, title="Haydar Altıntaş’ın NATO ve ŞİÖ hakkında 7/13274 yazılı sorusu",
@@ -111,7 +125,7 @@ add("practice_event", id=event, common_event_key="tbmm-28-2-7-13274-yazili-soru"
 passages = {}
 event_passages = []
 source_passages = {key: [] for key in sources}
-for suffix, source, exact, section, stage, point in (
+passage_specs = [
     ("number", "detail", "7 / 13274", "TBMM esas numarası", "initiative", "TBMM işlemi 7/13274 numarasıyla kaydetti."),
     ("arrival", "detail", "25.06.2024", "TBMM Başkanlığına geliş tarihi", "action", "Önerge 25 Haziran 2024’te Başkanlığa geldi."),
     ("date", "signed", "Saygılarımla. 25.06.2024", "İmzalı önerge tarihi", "initiative", "Haydar Altıntaş’ın imzalı metni 25 Haziran 2024 tarihli."),
@@ -125,7 +139,22 @@ for suffix, source, exact, section, stage, point in (
     ("party-day", "party", "28/06/2024", "Parti sayfasının görünen yayın günü", None, "Parti sayfasında 28 Haziran 2024 yayın tarihi var."),
     ("party-dateline", "party", "DP Basın Merkezi &ndash; 27 Haziran 2024", "Parti yayımının gövde imzası ve tarihi", None,
      "Parti yayımının gövdesinde DP Basın Merkezi ve 27 Haziran 2024 yazıyor."),
-):
+]
+if with_bulletins:
+    passage_specs.extend([
+        ("registered-day", "registered", "4.07.2024 Perşembe", "162 sayılı Gelen Kağıtlar tarihi", "action",
+         "Önergenin listeye girdiği 162 sayılı bülten 4 Temmuz 2024 tarihli."),
+        ("registered-line", "registered", "(7/13274) (Başkanlığa geliş tarihi: 25.06.2024)",
+         "162 sayılı bülten, 51. satır", "action", "4 Temmuz Gelen Kağıtların 51. satırı 7/13274’ü 25 Haziran geliş tarihiyle yayımladı."),
+        ("overdue-day", "overdue", "19.07.2024 Cuma", "169 sayılı Gelen Kağıtlar tarihi", "result",
+         "Süre ilanının yer aldığı 169 sayılı bülten 19 Temmuz 2024 tarihli."),
+        ("overdue-heading", "overdue", "S&uuml;resi İ&ccedil;inde Cevaplandırılmayan Yazılı Soru &Ouml;nergeleri",
+         "169 sayılı bültende süresinde cevaplanmayan yazılı sorular bölümü", "result",
+         "19 Temmuz Gelen Kağıtlar süresinde cevaplanmayan yazılı soruları ayrı bölümde yayımladı."),
+        ("overdue-line", "overdue", "(7/13274)", "169 sayılı bültende Dışişleri Bakanlığı, 50. satır", "result",
+         "7/13274, 19 Temmuz’da Dışişleri Bakanlığı bölümünün 50. satırında süresinde cevaplanmayan soru olarak ilan edildi."),
+    ])
+for suffix, source, exact, section, stage, point in passage_specs:
     path, version, _ = sources[source]
     is_scan = source == "signed"
     if is_scan:
@@ -199,6 +228,6 @@ for payload in (package, review):
     payload["source_review_refs"] = references
 if not preflight:
     for suffix, payload in (("draft", package), ("review-draft", review)):
-        with (checks / f"question-13274-{suffix}.json").open("x") as stream:
+        with (checks / f"{draft_name}-{suffix}.json").open("x") as stream:
             stream.write(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
 print("DEMOCRAT_QUESTION_13274_OK", len(records["practice_event"]), len(records["practice_relation"]))
