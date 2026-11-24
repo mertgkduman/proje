@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 22 | 21 | 62587905 |
+| TİP | 23 | 22 | 62589852 |
 | DEM Parti | 83 | 12 | 62587929 / 62587933 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -460,3 +460,5 @@ Dokuzuncu yalıtılmış birleştirme provasında 535 girdi olayı ve 355 ilişk
 Saadet’in 8/60 genel görüşme zinciri iki görünümde ve bağımsız veri denetiminde doğrulandı. Bülent Kaya’nın grup açıklaması, imzalı önerge ve aynı gün ön görüşmeye alma önerisinin elektronik oylamada reddi kendi kayıtlarında. İmzalı belge sicilde Gündemde. Tutuklama gününün parti metniyle tutanakta farklı verilmesi ve sonraki kişi sonuçları açık. [8/60 makbuzu](../04-11-checks/forum-860-62588702.json) [Bağımsız denetim](../04-11-checks/forum-860-62588702-independent.log)
 
 Birleşik önizlemenin ilk denemesi aynı özgün 7242 HTML dosyasının iki okunabilir türevinde bayt farkı buldu. Özgün belge Windows-1254 kodlu. TİP türevi 5.404 değiştirme karakteri içeriyordu. EMEP türevi ile doğru yeniden üretimin hashleri eşleşti. Yalnız yalıtılmış kopyada yapılan düzeltme 62591349 ile denetleniyor. [Okunabilir kopya makbuzu](wave4-7242-readable-recovery.json)
+
+TİP’in 3/1044 Libya tezkeresi karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 2 Ocak 2020 parti yayımı ve Baş’ın parti temsilcisi olarak konuşması ayrı. Kesin oy cetveli 332 kabul, 183 ret, 6 mükerrer ve toplam 521. Kürsü ilk sayımı 325 kabul, 184 ret ve toplam 509. Baş’ın kişisel Red oyu ve Mengüllüoğlu’nun Katılmadı kaydı cetvelde. 1238’in 3 Ocak yayımı sicilde. İznin fiilî kullanımı ve kişinin katılmama nedeni açık. [1238 makbuzu](../04-05-checks/tip-libya-1238-62589852.json) [Bağımsız denetim](../04-05-checks/tip-libya-1238-62589852-independent.log)
