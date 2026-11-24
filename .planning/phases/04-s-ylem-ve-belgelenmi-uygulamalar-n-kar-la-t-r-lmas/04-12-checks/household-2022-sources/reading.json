@@ -1,0 +1,86 @@
+{
+  "reviewer_kind": "agent",
+  "reviewed_at_utc": "2026-11-24T12:41:36.503223+00:00",
+  "party_ref": "../party-news-024-reading.json",
+  "party_post": 181,
+  "sources": [
+    {
+      "publisher": "ÇSGB",
+      "url": "https://www.csgb.gov.tr/cgm/haberler/16-12-2021/",
+      "original_path": "csgb-20211216-asgari-ucret.html.bin",
+      "sha256": "502f42e0bedf9b61d61c83817287846918cf5fbdb44216fb3104f3ef104a0683",
+      "bytes": 85839,
+      "retrieved_at_utc": "2026-11-24T12:34:54.777462+00:00",
+      "pages_zero_based": [],
+      "reading": "16 Aralık 2021 duyurusu aylık brüt 5.004 TL ve net 4.253,40 TL olarak hesaplıyor. 17 Aralık parti açıklamasındaki 4.250 TL yuvarlatılmış aktarım."
+    },
+    {
+      "publisher": "ÇSGB",
+      "url": "https://www.csgb.gov.tr/Media/n4mg2sky/2022-faaliyet-raporu.pdf",
+      "original_path": "csgb-2022-faaliyet.pdf",
+      "sha256": "76a171060312df3298962308b9c97613de1c6b66af7dde001fde43f4450a2082",
+      "bytes": 7499601,
+      "retrieved_at_utc": "2026-11-24T12:35:12.950522+00:00",
+      "pages_zero_based": [
+        72
+      ],
+      "reading": "Kurumun 2022 faaliyet raporunda temmuz dönemi net 5.500,35 TL, brüt 6.471 TL. İkinci dönemin başlangıcı 1 Temmuz."
+    },
+    {
+      "publisher": "TBMM",
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T2/KanunMetni/19276381-bcbb-4d80-b3f7-7b63932a55f4.html",
+      "original_path": "tbmm-7351-kabul.html.bin",
+      "sha256": "d68b863298d8f5ea3a1c7ef5f8325a5e09e5fcfe49d434cd2706212c2db7a513",
+      "bytes": 45390,
+      "retrieved_at_utc": "2026-11-24T12:36:13.963721+00:00",
+      "pages_zero_based": [],
+      "reading": "7351 madde 13, 5510 ek 19 dosya başı alt tutarını 1.500’den 2.500 TL’ye çıkarıyor. 19 Ocak kabul, 22 Ocak yayım ve 2022 Ocak ödeme döneminden uygulanma ayrı."
+    },
+    {
+      "publisher": "TBMM",
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T2/KanunMetni/7d0315a6-731c-42bd-adbf-30a2e0fa6d20.html",
+      "original_path": "tbmm-7417-kabul.html.bin",
+      "sha256": "68791d7f279324eeed76367409be11dcfd448ce5bae6da62efba7e4e6e25f943",
+      "bytes": 460999,
+      "retrieved_at_utc": "2026-11-24T12:36:15.415725+00:00",
+      "pages_zero_based": [],
+      "reading": "7417 madde 16, 5510 ek 19 dosya başı alt tutarını 2.500’den 3.500 TL’ye çıkarıyor. 1 Temmuz kabul, 5 Temmuz yayım ve 2022 Temmuz ödeme döneminden uygulanma ayrı."
+    },
+    {
+      "publisher": "Hazine ve Maliye Bakanlığı",
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T7/WebOnergeMetni/4dfac693-cc6c-4148-a8aa-ec2e518f6e3c.pdf",
+      "original_path": "hmb-7-57168-yanit.pdf",
+      "sha256": "3b15faf5e7275e5d3bde9017b8129410d0a67ed3d853d0542445d3d77d19928e",
+      "bytes": 122132,
+      "retrieved_at_utc": "2026-11-24T12:34:53.403458+00:00",
+      "pages_zero_based": [
+        0,
+        1
+      ],
+      "reading": "Tülay Hatimoğulları Oruç’un yazılı sorusuna Bakanlığın imzalı yanıtı. 12 Şubat tarihli 5189 kararı 13 Şubat yayımlandı. ÖTV’ye tabi, indirimli oran uygulanan ürünler hariç gıda ürünleri için 14 Şubat’tan itibaren yüzde 1, önceki yüzde 8 oranlı ürün kapsamına örnekler var."
+    }
+  ],
+  "comparison": [
+    {
+      "period": "2022 Ocak–Haziran",
+      "unit": "TRY",
+      "monthly_net_minimum_wage": "4253.40",
+      "pension_file_minimum": "2500.00",
+      "difference": "1753.40"
+    },
+    {
+      "period": "2022 Temmuz–Aralık",
+      "unit": "TRY",
+      "monthly_net_minimum_wage": "5500.35",
+      "pension_file_minimum": "3500.00",
+      "difference": "2000.35"
+    }
+  ],
+  "open_evidence": [
+    "Parti açıklamasındaki temel ihtiyaç kapsamı bütün gıda kalemleriyle özdeş olmayabilir. 5189 için Bakanlık yanıtı yüzde 1’i belgeliyor. Parti talebi yüzde 0.",
+    "Ödeme tabanı dosya bazındadır. Kişi bazında kök aylık, hak sahipliği, fiilî ödeme ve perakende fiyat etkisi açık.",
+    "Dar Gelirli Enflasyon Sepeti için yetkili kurumun eşleşebilecek ayrıntılı metodolojisi ve bu dönemdeki kabul kaydı açık."
+  ],
+  "availability": "5189 ilk gazete PDF’sinin ve 15 Şubat düzeltmesinin yerel indirme isteği zaman aşımına uğradı. Bakanlığın özgün imzalı karşılığı ve TBMM’deki kanun metinleri arşivlendi.",
+  "closure_refs": []
+}
