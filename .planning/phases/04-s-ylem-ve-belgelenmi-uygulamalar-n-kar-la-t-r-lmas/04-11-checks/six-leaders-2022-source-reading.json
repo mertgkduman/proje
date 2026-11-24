@@ -1,0 +1,40 @@
+{
+  "examined_at": "2026-11-24T18:26:30.889093+00:00",
+  "sources": [
+    {
+      "path": "party-news-bodies/353.json",
+      "url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=liderlerin-ortak-aciklamasi-21082022",
+      "sha256": "996821ca6dd2c1b6ae99dad3f794a0d171291382f11c25315dae03858434e7b3"
+    },
+    {
+      "path": "six-leaders-2022-08-21-dp-original.html",
+      "url": "https://dp.org.tr/haber/alti-siyasi-parti-genel-baskaninin-ortak-aciklamasi-ankara-21-agustos-2022",
+      "sha256": "c332072d06e21dc5fa18ef0340581b4e802cbe89f274035bbee0e3a45d65baa7"
+    },
+    {
+      "path": "six-leaders-2022-10-02-chp-original.html",
+      "url": "https://chp.org.tr/haberler/alti-siyasi-parti-genel-baskaninin-ortak-aciklamasi-ankara-2-ekim-2022",
+      "sha256": "301b30e9e86b7b07cfe5b04e4673e5b177b863327b17facfa48d91449151f773"
+    },
+    {
+      "path": "six-leaders-2022-10-02-independent-original.html",
+      "url": "https://www.indyturk.com/node/559216/haber/6-lider-chp-genel-merkezinde-bulu%C5%9Ftu-g%C3%B6sterece%C4%9Fimiz-ortak-aday-t%C3%BCrkiye%E2%80%99nin-13",
+      "sha256": "b66726ba40ee965dfacdf44fd6486e267f1c0d5d4b0c9bd09ac6c576a587aedc"
+    }
+  ],
+  "statement": "21 Ağustos ortak metni Saadet ev sahipliğindeki altıncı toplantıyı ve 2 Ekim saat 14.00te CHP merkezinde sonraki toplantıyı bildiriyor; altı liderin ortak metnidir.",
+  "event": "2 Ekim 2022de CHP ev sahipliğinde ikinci turun ilk toplantısı gerçekleşti; Independent Türkçe/ANKA haberinde DP Uysal 13.57, Saadet Karamollaoğlu 13.59, İYİ Akşener 14.10 varışı ve görüşmenin 14.11 başlangıcı yer alır. CHP ortak açıklaması aynı tarihte yayımlanan toplantı kararlarını aktarır.",
+  "distinctions": "Planlanan 14.00 ile haberdeki 14.11 fiili başlangıç ayrı. Saadet Ağustosta ev sahibi ve Ekimde katılımcı; CHP Ekimde ev sahibidir. Ortak politikalar için çalışma grubu kararı, bu politikaların yürürlüğe girmesi veya seçimin kazanılması değildir. Saadet API zaman damgası UTC 21 Ağustos 21.00, Türkiyede 22 Ağustos 00.00; belge 21 Ağustos tarihli açıklamadır, gerçek yayın saati varsayılmaz.",
+  "collision": {
+    "catalog_id": "364",
+    "catalog_date": "2022-10-02",
+    "slug": "alti-siyasi-parti-genel-baskaninin-ortak-aciklamasi",
+    "returned_id": "332",
+    "returned_content_date": "2022-05-29",
+    "path": "six-leaders-2022-10-02-slug-collision.json",
+    "sha256": "09fdc517638539e295933a22ffd340a7d467f319fbe661bc15cc18088d54db7b",
+    "state": "identity_collision_not_read_364"
+  },
+  "event_key": "six-leaders-2022-10-02-chp-second-round-meeting",
+  "independent_access": "Bianet sitesi doğrudan HTTP 403, erişilemedi; Independent Türkçe özgün haber okundu."
+}

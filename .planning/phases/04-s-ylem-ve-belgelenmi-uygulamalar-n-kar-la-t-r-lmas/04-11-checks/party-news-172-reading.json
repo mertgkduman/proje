@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-172",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T18:21:39.364794+00:00",
+  "reads": [
+    {
+      "post_id": 353,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/liderlerin-ortak-aciklamasi-21082022",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=liderlerin-ortak-aciklamasi-21082022",
+      "published_at": "2022-08-21T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T18:21:39.364794+00:00",
+      "original_path": "party-news-bodies/353.json",
+      "sha256": "996821ca6dd2c1b6ae99dad3f794a0d171291382f11c25315dae03858434e7b3",
+      "normalized_body_sha256": "1c6b94976f93a84d2ca98dde8147140246e61ed47354647d5e2364a598db141c",
+      "source_section_range": [
+        0,
+        4605
+      ],
+      "state": "examined",
+      "reading": "Saadet 21 Ağustos 2022de ev sahibi olduğu altı lider toplantısının ortak açıklamasını yayımlıyor.",
+      "selected_passages": [
+        {
+          "start": 4494,
+          "end": 4551,
+          "exact": "2 Ekim 2022 Pazar günü saat 14.00’da CHP Genel Merkezinde"
+        }
+      ],
+      "point": "2 Ekimde CHP merkezinde sonraki altı lider toplantısının ortak ilanı.",
+      "statement": "Altı lider ortak metinde 2 Ekim 2022 saat 14.00te CHP Genel Merkezinde yeniden toplanacaklarını söylüyor.",
+      "concrete_evidence": "Özgün parti gövdesi 21 Ağustos altıncı toplantının Saadet ev sahipliğini ve sonraki toplantı tarih/yerini açıkça veriyor.",
+      "open_provenance": "2 Ekim 364 katalog satırına ait slug, aynı sluglı 332/29 Mayıs gövdesine çözümlendi; 364 okunmadı. 2 Ekim gerçekleşme doğrulaması bağımsız haber ve ev sahibi CHP açıklamasına dayanıyor. API zaman damgası 21 Ağustos 21.00 UTC, açıklamanın kendi tarihinden farklı yayın günü ima edebilir; açıklama tarihi metnin kendi tarihidir."
+    }
+  ],
+  "completed_pre_cut_bodies": 258,
+  "remaining_pre_cut_bodies": 391,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
