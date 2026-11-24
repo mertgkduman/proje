@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 68 | 70 | 62530588 |
 | Saadet Partisi | 26 | 22 | 62567788 |
-| Demokrat Parti | 38 | 32 | 62567797 |
+| Demokrat Parti | 41 | 34 | 62568686 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -301,3 +301,7 @@ Demokrat Parti’nin 008. dilimi sonunda 83 gövde okundu, iki kayıt kesim sonr
 Saadet 10/3605 aynı kesin girdiyle iki görünümde ve bağımsız veri denetiminde doğrulandı. 14 Ocak açıklaması ile Yeni Yol’un imzalı başvurusu ve ön görüşme reddi ayrı kayıtlar. Açıklama ve başvurunun saat sırası ile önceki araştırmaların 5 ve 6 olarak sayılması açık. 25 olay ve 21 ilişkilik önceki kayıtların tamamı korundu. [Önizleme makbuzu](../04-11-checks/inquiry-3605-62567788.json)
 
 Demokrat Parti’nin 009 ve 010 dilimlerindeki 18 gövde okundu. Katalogda 101 gövde incelendi, iki kayıt kesim sonrası ve 154 kayıt açık. Açık kayıtlar arasında 86 ve 87’nin başlık dışında gövdesi bulunmuyor. 104. yayın 22 Temmuz 2023 Başkanlık Divanı görev dağılımını ve Altıntaş’ın sözcü olarak görevlendirilmesini bildiriyor. [009. dilim](../04-12-checks/party-news-009-reading.json) · [010. dilim](../04-12-checks/party-news-010-reading.json)
+
+Demokrat Parti’nin zeytinyağı karşılaştırmasında üç ayrı olay iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Altıntaş’ın 8 Mayıs 2024 kişisel çağrısı, 1 Haziran 50 bin ton kotası ve 13 Eylül kısıt kaldırma bildirimiyle karşılaştırıldı. 14 Eylül 8957 fon kesintisi kararı ayrı ve eşleşmemiş kaydedildi. Önceki çağrının kararlara etkisi ve kota kullanımı açık. [Önizleme makbuzu](../04-12-checks/olive-oil-62568686.json)
+
+Saadet yayın kataloğunun 025–027 aralığında beş özgün gövde daha okundu. 109/649 gövde incelendi ve 540 açık, ayrıca 662 kimlik uyuşmazlığı ve 577 teklif eşleşmesi açık. EMEP’in 258, 260 ve 261 kaynak dilimleri, 259’un Türkçe ve İngilizce bölümleri okundu. Bazı önceki Kürtçe ve 259’da iki Arapça aralık anlam incelemesi bekliyor. [Saadet 027](../04-11-checks/party-news-027-reading.json) · [EMEP 259](../04-10-checks/party-api-259-partial-reading.json) · [EMEP 261](../04-10-checks/party-api-261-reading.json)
