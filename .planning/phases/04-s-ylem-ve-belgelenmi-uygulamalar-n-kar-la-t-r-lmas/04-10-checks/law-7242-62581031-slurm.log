@@ -1,0 +1,12 @@
+Staged 566 original, readable and view paths; package dbd8dc76ccb8a409d6c8e6fb673cb60bc8440d6492e89605a7119da1a5fcd990; review b3d8fa3dcb3d65b877eb0b60d4c3b16f840226960c5801d489fc83da1c630c24
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/law-7242-validation.py", line 11, in <module>
+    receipt=h.main(p,r,case,'0410-law-7242-event','0410-law-7242-relation',None,expected_party='emep',namespace='gsd-0410'); folder=Path(receipt['preview']); exported=json.loads((folder/'records.json').read_bytes()); report=(folder/'index.html').read_text()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 113, in main
+    check(receipt_name, 'source', ['practice-source-check','--input',str(package_path),'--review',str(review_path)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: source: exit 1
