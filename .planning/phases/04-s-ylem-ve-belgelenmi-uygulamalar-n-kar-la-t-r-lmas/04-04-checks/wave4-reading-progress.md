@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 79 | 76 | 62595421 |
-| Saadet Partisi | 32 | 28 | 62592492 |
+| Saadet Partisi | 33 | 29 | 62603695 / 62603699 |
 | Demokrat Parti | 78 | 50 | 62596016 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -512,3 +512,5 @@ Demokrat Parti kataloğundaki üç HTTP 500 satırı 28, 195 ve 82. sırada zate
 DEM Parti’nin 1–2 Kasım 2025 Ankara çalıştayı 84 olay ve 12 ilişkiyle çalışma çiftine eklendi. Altı düzenleyici ortak olayda, DEM’in kurumsal katkısı ayrı kanıtta. 3 Kasım sonuç metni yayın günüyle kayıtlı. Önceki denk söylem ve önerilerin sahadaki uygulanması açık. İstanbul başlıklı ayrı haberin ortak olay kimliği açık. İki görünüm ve bağımsız veri denetimi geçti. [Kaynak okuması](../04-06-checks/ankara-workshop-reading.json) [Bağımsız denetim](../04-06-checks/dem-ankara-workshop-62602872-independent.json)
 
 Onuncu birleşik önizleme 62603188 ile tamamlandı. Dokuz dondurulmuş parti paketi 546 olay ve 361 ilişki içeriyordu. Girdi sırası ters çevrildiğinde aynı birleşim özeti elde edildi. Bağımsız denetimde 526 olay, 361 ilişki, 554 olay başvurusu, 24 ortak olay kararı ve 195 eşleşmemiş aday doğrulandı. İki görünümde 722 ilişki ve 390 aday bağlantısı denetlendi. 7242’nin iki açık olay kimliği ile özgün HTML ve okunabilir türevin sağlama değerleri korundu. TİP İstanbul barış zirvesi ve DEM Ankara çalıştayı dondurma sonrasında çalışma çiftlerine eklendi. Kapsam kapanışı sıfır. [Bağımsız birleşim denetimi](wave4-merge-rehearsal-10-62603188-independent.json)
+
+Saadet Partisi’nin tarım sayımı karşılaştırması iki okuyucu görünümü ve bağımsız veri denetiminden geçti. Aralık 2023 Bakanlık hazırlık açıklaması, Saadet’in 2024 tarihli çağrısı, Temmuz 2025 saha başlangıcı ve TÜİK’in 30 Ocak 2026’ya uzatması ayrı kayıtlarda. 2027 Yılı Cumhurbaşkanlığı Yıllık Programındaki idari kayıt ve yıl sonu öngörüsü sayım sonucu olarak kullanılmadı. Nihai sonuç ve çağrının etkisi açık. Çalışma çifti 33 olay ve 29 ilişki. [Önizleme makbuzu](../04-11-checks/agriculture-2025-62603695.json) [Bağımsız denetim](../04-11-checks/agriculture-2025-62603699-independent.log)
