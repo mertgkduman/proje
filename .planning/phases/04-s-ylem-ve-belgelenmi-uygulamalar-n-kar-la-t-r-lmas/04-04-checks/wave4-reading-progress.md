@@ -9,8 +9,8 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 35 | 33 | 62619283 |
-| DEM Parti | 85 | 12 | 62618221 / 62618228 |
+| TİP | 37 | 35 | 62621760 |
+| DEM Parti | 86 | 12 | 62621426 / 62621428 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 66 | 7 | 62619918 |
@@ -580,3 +580,7 @@ TİP’in 97–104 arasındaki sekiz özgün yayını okundu. 190 gövdeden 104�
 Demokrat Parti haber kataloğunun 86, 87 ve 140 numaralı üç gövdesine alternatif parti yolu üzerinden erişildi ve bağlı dört özgün görsel bütünüyle okundu. 246 farklı parti gövdesi okundu, üç tekrar ve iki kesim sonrası madde ayrı. Altı özgün parti gövdesi açık. 21 Ağustos 2022 imzalı ortak açıklaması ilk turu ve 2 Ekim için duyurulan toplantıyı ayrı kaydediyor. 4 Nisan 2024 Van açıklamasından önceki YSK karar tarihi ayrıca izlendi. [Okuma makbuzu](../04-12-checks/party-news-access-041/reading.json)
 
 Birleşik prova 13, Slurm 62620455 ile tamamlandı. Bağımsız denetim 546 olay, 379 ilişki, 201 etkin eşleşmemiş aday, 578 olay eş adı ve 5.652 inceleme kökenini doğruladı. 758 karşılaştırma ve 402 eşleşmemiş aday bağlantısı iki okuyucu görünümünde bulundu. EMEP’in Akbelen oturum açılışı ve İYİ Parti’nin Akbelen 8/14 işlemi ayrı olay kimliklerinde. TİP’in deprem karşılaştırmaları ve YSK/NATO kayıtları, DEM taşımalı eğitim önergesi, Saadet ikramiye karşılaştırması ve Demokrat Parti Yassıada karşılaştırması bu sürümde denetlendi. Dokuz partide 5.490 kapsam hücresi açık. [Bağımsız makbuz](wave4-merge-rehearsal-13-62620455-independent.json)
+
+TİP 25 Ağustos ortak hazırlık açıklamasını 24 Eylül Haliç buluşmasıyla karşılaştırdı. Erkan Baş’ın konuşması ve TİP’in altı bileşenden biri olarak yer alması ayrı katkılar. TİP’in 25 Eylül yayımı olay sonrası. 10 Ekim cemevi açıklaması ve 7421’in 16 Kasım kabulü, 26 Kasım yayımı, bakım ve aydınlatma hükümleri iki görünümde doğrulandı. YÖK’ün 30 Mart olay kapsamı kurum kararına göre yazıldı ve 14 Şubat TİP söylemi kendi ilişkisinde korundu. İlk Haliç taslağı üçüncü parti yayımı için atıf kontrolünde durdu. Özgün HDP yayımı okuma makbuzunda, olay ve temsilcilik kanıtı pakette Bianet kaynağına bağlı. [TİP bağımsız doğrulama](../04-05-checks/tip-halic-cemevi-2022-62621760-independent.log)
+
+24 Eylül 2022 Haliç buluşmasında tarihsel Yeşil Sol Parti temsilcileri Ayşe Erdem ve İbrahim Akın’ın katılımı bağımsız Bianet haberi ve HDP yayımında okundu. DEM çalışma çifti, iki ayrı temsilciye ait katılım kanıtını içeriyor. İttifakın kurucu açıklamasındaki Halkların Demokratik Partisi sicil kimliği ayrı. [DEM bağımsız makbuzu](../04-06-checks/dem-halic-2022-62621426-independent.json)
