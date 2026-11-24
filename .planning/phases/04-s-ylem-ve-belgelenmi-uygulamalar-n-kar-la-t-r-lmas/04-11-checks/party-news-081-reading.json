@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-081",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:24:40.035480+00:00",
+  "reads": [
+    {
+      "post_id": 499,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/sahte-kr-donguye-saadet-iktidari-ile-son-verecegiz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=sahte-kr-donguye-saadet-iktidari-ile-son-verecegiz",
+      "published_at": "2025-01-20T11:07:15+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:24:40.035480+00:00",
+      "original_path": "party-news-bodies/499.json",
+      "sha256": "baab385303e802170817eee6d79d4cfe9cc0901df89969131abceadf2defa5b0",
+      "normalized_body_sha256": "d0a5a2d888383b642a152eb67d8b308c80e7bdb2c4f069d2efc6c4cd39d043e5",
+      "source_section_range": [
+        0,
+        23998
+      ],
+      "state": "examined",
+      "reading": "Arıkan Zonguldak 7. olağan il kongresi konuşmasında Gazze, ekonomi, gençlik, madencilik ve örgütlenme hedeflerini ele alıyor; tüm D-8 ülkelerine ziyaret hedefi belirtiyor.",
+      "selected_passages": [
+        {
+          "start": 18036,
+          "end": 18087,
+          "exact": "Ben inşallah tüm D-8 ülkelerine gideceğim inşallah."
+        }
+      ],
+      "point": "Tüm D-8 ülkelerini ziyaret etme hedefi.",
+      "statement": "Arıkan eski dostlarla görüşmek ve işbirliklerini konuşmak üzere bütün D-8 ülkelerine gitmeyi hedeflediğini söylüyor.",
+      "concrete_evidence": "Parti API özgün gövdesi Zonguldak il kongresinde açıklanan hedefi içeriyor; ülke bazında bilet, toplantı veya gerçekleşme listesi vermiyor.",
+      "open_provenance": "Hedef herhangi bir ziyareti ispatlamaz; her ziyaret tarihi ve kimliği bağımsız kaynak gerektirir. Metin son teşkilat bölümünde saydığı adım sayısını açık biçimde tamamlamaz; eksikliği doldurulmadı. Yayın tarihi, kongrenin kesin tarih ve seçim sonucunu tek başına kanıtlamaz."
+    }
+  ],
+  "completed_pre_cut_bodies": 167,
+  "remaining_pre_cut_bodies": 482,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
