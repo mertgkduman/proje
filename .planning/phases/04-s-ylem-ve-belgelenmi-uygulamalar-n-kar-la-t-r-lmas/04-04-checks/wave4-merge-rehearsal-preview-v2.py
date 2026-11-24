@@ -98,6 +98,33 @@ destination = data/'.staging'/f'gsd-wave4-rehearsal-preview-{job}'
 if existing_job is None:
     with tempfile.TemporaryDirectory(prefix='gsd-wave4-rehearsal-') as directory:
         preview = Path(directory)/'preview'
+        if exercise['number'] == '09':
+            from arsiv import readable_bytes
+
+            source_receipt = json.loads((here/'wave4-7242-readable-recovery.json').read_bytes())
+            entries = {entry['values']['id']:entry for entry in payload['entries']
+                       if entry['kind']=='document_version'}
+            recover = entries[source_receipt['version_ids']['tip']]
+            reference = entries[source_receipt['version_ids']['emep']]
+            a, b = recover['values'], reference['values']
+            assert a['sha256']==b['sha256']==source_receipt['original_sha256']
+            assert a['original_path']==b['original_path'] and a['readable_path']==b['readable_path']
+            candidate_root, reference_root = (roots[_digest(e)] for e in (recover, reference))
+            original = (candidate_root/a['original_path']).read_bytes()
+            assert original==(reference_root/b['original_path']).read_bytes()
+            assert sha256(original).hexdigest()==a['sha256']
+            prior = (candidate_root/a['readable_path']).read_bytes()
+            corrected = readable_bytes(original,'html',legacy=False)
+            assert sha256(prior).hexdigest()==source_receipt['tip_prior_readable_sha256']
+            assert corrected==(reference_root/b['readable_path']).read_bytes()
+            assert sha256(corrected).hexdigest()==source_receipt['canonical_readable_sha256']
+            normalized = Path(directory)/'tip-7242-source'
+            for key, body in (('original_path',original),('readable_path',corrected)):
+                target = normalized/a[key]
+                target.parent.mkdir(parents=True,exist_ok=True)
+                target.write_bytes(body)
+            roots[_digest(recover)] = normalized
+            print('EXACT_7242_DERIVATIVE_RECOVERED', source_receipt['canonical_readable_sha256'], flush=True)
         _render_practice_preview(payload,preview,inventory,base_id,_validated_merge_roots=roots)
         shutil.copytree(preview,destination)
 else:
