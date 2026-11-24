@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-093",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:06:41.962178+00:00",
+  "reads": [
+    {
+      "post_id": 487,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/faizci-kapitalist-somuren-sistem-devam-ediyor-sadece-kilif-degistirdi",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=faizci-kapitalist-somuren-sistem-devam-ediyor-sadece-kilif-degistirdi",
+      "published_at": "2024-12-20T21:41:40+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:06:41.962178+00:00",
+      "original_path": "party-news-bodies/487.json",
+      "sha256": "71c277745e875c80d79588be2fe90f5773198c366421f7b34e94f50654771373",
+      "normalized_body_sha256": "d462434b7ae6585c8b5b7ba9b3fc5404a2e6fdcd1a6afb5d920dc1a61a54e08b",
+      "source_section_range": [
+        0,
+        7187
+      ],
+      "state": "examined",
+      "reading": "Necmettin Çalışkan 2023 kesin hesap gelirleri ile görüşülen 2025 bütçesi faiz ödeneğini karşılaştırıyor ve bütçe önceliklerini eleştiriyor.",
+      "selected_passages": [
+        {
+          "start": 288,
+          "end": 330,
+          "exact": "az önce oyladığımız 2023 yılı kesin hesabı"
+        }
+      ],
+      "point": "2023 kesin hesap ve 2025 bütçesi faiz kalemi karşılaştırması.",
+      "statement": "Çalışkan iki farklı yılın toplam gelir ve faiz rakamlarını karşılaştırıp faiz önceliğini eleştiriyor.",
+      "concrete_evidence": "Özgün parti API gövdesi Saadet-Gelecek grubu adına konuşma olarak aktarıyor ve 2023 kesin hesap ile 2025 bütçe kalemlerini ayrı gösteriyor.",
+      "open_provenance": "Açıklamadaki ‘az önce oyladığımız 2023 kesin hesabı’ ifadesi ile 20 Aralık 40. birleşimde 162 bütçe ve 163 kesin hesap nihai oylamasının sırası otomatik eşlenmemeli; hangi önceki aşama oylamasının kastedildiği asıl tutanakla belirlenmeli. İki yılın gelir ve ödenekleri aynı dönemin gerçekleşme verisi değildir."
+    }
+  ],
+  "completed_pre_cut_bodies": 179,
+  "remaining_pre_cut_bodies": 470,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
