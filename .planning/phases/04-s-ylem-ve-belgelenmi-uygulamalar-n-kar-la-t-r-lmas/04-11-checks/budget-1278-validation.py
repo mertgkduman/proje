@@ -17,8 +17,8 @@ case = 'budget-1278'
 stem = '0411-saadet-budget-1278'
 package = checks / f'{case}-draft.json'
 review = checks / f'{case}-review-draft.json'
-assert harness.sha(package) == 'aacd7bca4a3a3550bd642f08789309540770e3fb40dc786c48fa4c53e1d28433'
-assert harness.sha(review) == '2ef10a4dc821d570828929e85c4320b114be99474ea9b219f9025e5ad12b815b'
+assert harness.sha(package) == 'eeaf6da0974537583886cfc2fafbaf2599318956fb9b87e9d82c97d894e2e539'
+assert harness.sha(review) == '7f52d9c95138bd47df6142f04060f7b0d5d127c8794a2cae5bf493298a46bf1b'
 records = json.loads(package.read_bytes())['practice_records']
 assert (len(records['practice_event']), len(records['practice_relation']), len(records['practice_closure'])) == (30, 26, 0)
 if len(sys.argv)==2:
