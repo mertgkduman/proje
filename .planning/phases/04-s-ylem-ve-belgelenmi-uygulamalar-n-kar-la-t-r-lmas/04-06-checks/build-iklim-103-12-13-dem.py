@@ -5,7 +5,7 @@ from arsiv import pdf_page_text
 from uygulamalar import practice_review_targets,validate_practice_source_review
 c=Path(__file__).resolve().parent;root=c.parents[3];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 p,r=c/'iklim-102-motions-dem-draft.json',c/'iklim-102-motions-dem-review-draft.json'
-assert sha(p)=='41854f21aac8faabdfe6a520df9b999e163936b60974efeb93440416f49b98cf'
+assert sha(p)=='b643183afb6f261aa4e6cb346f089419bbc91d18475778cc114e495e49abb833'
 assert sha(r)=='8a99b3b60dd347be1f311cb2cb698270e30b26670f3a9133d932cb65528af64e'
 pkg,rev=json.loads(p.read_text()),json.loads(r.read_text());now=datetime.datetime.now(datetime.timezone.utc).isoformat()
 pdf=root/'data/practices/sources/dem/objects/85eb8b1af1952bd67610a902bdaa980cdcfd6685b3abdaf10483c3fafb3e8c73/original.pdf'
