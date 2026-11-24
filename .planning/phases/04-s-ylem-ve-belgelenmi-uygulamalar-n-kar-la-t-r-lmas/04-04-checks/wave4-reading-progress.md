@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 82 | 78 | 62617962 |
 | Saadet Partisi | 35 | 31 | 62616040 / 62616059 |
-| Demokrat Parti | 80 | 51 | 62610812 |
+| Demokrat Parti | 81 | 52 | 62618726 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -558,3 +558,5 @@ TİP’in 2023 milletvekili seçimi ve Finlandiya’nın NATO üyeliği karşıl
 EMEP’in Akbelen olağanüstü toplantı karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 4 Ağustos Başkent gazetesi, Sevda Karaca Demir’in Meclisin olağanüstü toplantıya çağrıldığını bildiren sözlerini aktardı. Sözün kesin günü açık. 3 Ağustos Başkanlık daveti ve 8 Ağustos saat 15.01 açılışı ayrı. EMEP ilişkisi açılışa bağlı. İYİ Parti’nin 8/14 ön görüşmesi, kişisel oylar ve madenin izni ayrı. Çalışma çifti 82 olay ve 78 ilişki. Aynı SHA ile 3305 İngilizce programının 75.374 HTML karakteri ve 3294 Türkçe metnin ilk 20.000 karakteri okundu. [Önizleme makbuzu](../04-10-checks/akbelen-emep-62617962.json) [Bağımsız denetim](../04-10-checks/akbelen-emep-62617962-independent.log) [İzin araştırması](../04-10-checks/akbelen-permit-open-reading.json)
 
 TİP Parti Açıklamaları dizininde 73–80 arası yedi metin gövdesi ve 77. sıradaki ittifak açıklamasının özgün görseli okundu. Son toplam 80/190. 6785 kararı ile 9 Şubat Meclis onayı ayrı. DHMİ planı Hatay Havalimanı’ndaki kapanışı ve iki sınırlı açılış aşamasını kaydediyor. 2022/2 asgari ücret kararı Resmî Gazete görselinde. BirGün’ün özgün sayfası 403 verdi, karşılıklı beyanların ayrı haber aktarımı saklandı. 2/4779 imzalı metninde 24 ve 41. maddeler ayrı, TBMM sicilinde Hükümsüz kaydı var. [Onuncu okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-10/reading.json)
+
+Demokrat Parti’nin Yassıada oteli karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 5 Eylül 2022 Uysal itirazı, Bakanlığın 2022/2 şartnamesi ve 18 Ekim müzakeresi ayrı. Ada Gazetesi müzakereye iki şirketin katıldığını bildirdi. Haberdeki sonraki onay ve devir beklentisiyle imzalı tahsis işlemi ayrı. 2021 Uysal açıklamasının Gazete Zebra aktarımı ve 2024 işletmeci duyurusu kaynak makbuzunda. Parti kataloğunda 243 özgün gövde okundu, dokuz satır açık. Çalışma çifti 81 olay ve 52 ilişki. [Kaynak okuması](../04-12-checks/party-news-access-040/reading.json) [Önizleme makbuzu](../04-12-checks/yassiada-2022-dp-62618726.json) [Bağımsız denetim](../04-12-checks/yassiada-2022-dp-62618726-independent.log)
