@@ -1,7 +1,7 @@
 import importlib.util,json,os,sqlite3
 from pathlib import Path
 c=Path(__file__).resolve().parent;root=c.parents[3];job=os.environ['SLURM_JOB_ID'];spec=importlib.util.spec_from_file_location('tracer',c/'tracer-validation.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-p=c/'ankara-workshop-dem-draft.json';r=c/'ankara-workshop-dem-review-draft.json';assert m.sha(p)=='f33e33f8debe5f64bf1a1bf963a4bc859cb90faa4b7608d86958235f754dd47e' and m.sha(r)=='cdf7844f566de2c78947d68043178fbb9c7ab800065d7768776569a99d8d685e'
+p=c/'ankara-workshop-dem-draft.json';r=c/'ankara-workshop-dem-review-draft.json';assert m.sha(p)=='edddf6d5326d82cab43d792d1d1c6845a43cde41495cc991f18d72110d1cf10a' and m.sha(r)=='f460677b33bc2e56768e2c6cc930434397c98966874cc91df77a940321f05daa'
 b=json.loads((root/'data/practices/04-dem.json').read_text());n=json.loads(p.read_text());canon=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
 for k in ('entries','scope_inventory'):assert {canon(x) for x in b[k]}<={canon(x) for x in n[k]}
 for k,rows in b['practice_records'].items():assert {canon(x) for x in rows}<={canon(x) for x in n['practice_records'][k]}

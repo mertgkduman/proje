@@ -1,0 +1,11 @@
+Staged 278 original, readable and view paths; package f33e33f8debe5f64bf1a1bf963a4bc859cb90faa4b7608d86958235f754dd47e; review cdf7844f566de2c78947d68043178fbb9c7ab800065d7768776569a99d8d685e
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/validate-ankara-workshop.py", line 8, in <module>
+    m.main(p,r,'dem-ankara-workshop','0406-ankara-workshop-event','0406-iklim-group-final-relation','')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1
