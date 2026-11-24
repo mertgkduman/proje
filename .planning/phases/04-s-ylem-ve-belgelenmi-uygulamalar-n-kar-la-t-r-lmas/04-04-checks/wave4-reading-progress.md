@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 30 | 29 | 62615305 |
+| TİP | 33 | 31 | 62617736 |
 | DEM Parti | 84 | 12 | 62602872 / 62602874 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -552,3 +552,5 @@ TİP Parti Açıklamaları dizininde 65–72 arası sekiz gövdenin 32.711 karak
 İYİ Parti’nin Akbelen karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 7 Ağustos ANKA haberindeki Kürşad Zorlu’ya atfedilen katılım ve destek açıklaması ile Metin Ergun’un 8 Ağustos 8/14 ön görüşmesindeki grup konuşması ayrı. Genel Kurul genel görüşme açmayı kabul etmedi. 4/13 çağrısı, 4/15 devam işlemi, kişisel oylar ve maden izninin fiilî durumu ayrı. İYİ Parti çalışma çifti 21 olay ve 13 ilişki. [Önizleme makbuzu](../04-07-checks/akbelen-iyi-62615506.json) [Bağımsız denetim](../04-07-checks/akbelen-iyi-62615506-independent.json)
 
 Saadet Partisi’nin 2023 emekli ödemesi karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. İlk adayda parti yayıncısının tam adı 401 numaralı API gövdesinde bulunamadı. Asıl gövde ayrı inceleme kaydında. Güncel aday, Saadet milletvekili Şerafettin Kılıç’ın 25 Ekim TBMM konuşmasını kendi sıfatıyla veriyor. 7464’teki 5.000 TL tek seferlik ödeme ve çalışmama koşulu ile 7491’deki kapsam değişikliği ayrı. SGK raporu 4,7 milyon kişiye yaklaşık 23,4 milyar TL ödeme kaydediyor. Bireysel ödeme ve konuşmanın yasaya etkisi açık. Çalışma çifti 35 olay ve 31 ilişki. [Önizleme makbuzu](../04-11-checks/retired-2023-62616040.json) [Bağımsız denetim](../04-11-checks/retired-2023-62616059-independent.log)
+
+TİP’in 2023 milletvekili seçimi ve Finlandiya’nın NATO üyeliği karşılaştırmaları iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 15 Mayıs geçici yüzde 1,75 açıklaması ve 30 Mayıs YSK kesin yüzde 1,76, 956.057 oy ve dört sandalye ayrı. NATO üyeliği ile parti açıklaması 4 Nisan’da. Gün içindeki sıra açık. 30 Mart 2/5005 Meclis oylaması ayrı ve eşleşmemiş. İlk girdi denemesi, görsel doğrulama kayıtlarının paket sırası nedeniyle reddedildi. Yeni aday boş metin katmanlı YSK eklerini görsel sayfa kanıtı olarak taşıyor. Finlandiya kesin cetvelindeki sayılar ve dört kişisel katılmama satırı kaynak okuma makbuzunda. Çalışma çifti 33 olay ve 31 ilişki. [Önizleme makbuzu](../04-05-checks/tip-election-finland-2023-62617736.json) [Bağımsız denetim](../04-05-checks/tip-election-finland-2023-62617736-independent.log) [Görsel cetvel okuması](../04-05-checks/tip-publication-catalog/party-statements-08/reading.json)
