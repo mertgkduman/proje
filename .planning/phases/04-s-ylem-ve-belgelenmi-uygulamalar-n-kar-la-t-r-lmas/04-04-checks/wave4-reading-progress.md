@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 65 | 67 | 62530566 |
+| EMEP | 68 | 70 | 62530588 |
 | Saadet Partisi | 25 | 21 | 62544651 |
 | Demokrat Parti | 31 | 28 | 62499618 |
 
@@ -260,3 +260,6 @@ DEM Parti’nin 2/2927 iklim teklifindeki 2, 3 ve 4. maddelere ilişkin üç ayr
 EMEP’in göç politikasıyla ilgili 7/2134 yazılı sorusu ve 2022 parti açıklaması izlenebilir pasajlarıyla iki görünümde doğrulandı. Arşivdeki metin tanıma ve parti yayını atfı için ilk iki doğrulama düzeltilerek yeniden çalıştırıldı. [EMEP makbuzu](../04-10-checks/migration-2134-sourcekind-62530566-receipt.json)
 
 Saadet’in arşivinde 595 ve 592 numaralı iki gövde okundu. Toplam 96/649, 553 gövde açık. Ocaktaki iki görüşme 25 olay ve 21 ilişki içeren aday pakette ayrı işlendi. İlk önizleme girdi ve kaynak denetimlerini geçti. Son kart denetiminde sonuç cümlesi, kartın gösterdiği kanıt cümlesiyle eşleştirildi. 62541273 girdi, kaynak ve önizleme denetimlerini tamamladı. İki kartın görüntülenen ifadeleri ve kayıtların tam adları ayrı kontrollerle doğrulandı. Salt okunur 62544651 işi ve bağımsız denetim geçti. [Önizleme](../04-11-checks/january-visits-62541273.json) [017. okuma](../04-11-checks/party-news-017-reading.json) [Ocak kaynak okuması](../04-11-checks/january-visits-source-reading.md)
+
+
+EMEP’in Gaziantep deprem çalıştayı, Yeğin’in üyeliği ve gençlik konferansı art arda üç doğrulamadan geçti. Çalıştayın açıklama tarihi ile etkinliğin kesin günü ayrı. Konferans duyurusu, etkinliğin yapıldığını gösteren bağımsız kayıtla eşleştirildi. Çalıştay önerilerinin uygulanması açık. [Çalıştay](../04-10-checks/earthquake-workshop-2025-sourcekind-62530567-receipt.json) [Üyelik](../04-10-checks/yegin-membership-sourcekind-62530568-receipt.json) [Konferans](../04-10-checks/youth-conference-sourcekind-62530588-receipt.json)
