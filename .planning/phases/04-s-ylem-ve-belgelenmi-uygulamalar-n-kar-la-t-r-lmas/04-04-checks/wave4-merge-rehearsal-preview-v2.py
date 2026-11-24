@@ -115,7 +115,8 @@ if existing_job is None:
             assert sha256(original).hexdigest()==a['sha256']
             prior = (candidate_root/a['readable_path']).read_bytes()
             corrected = readable_bytes(original,'html',legacy=False)
-            assert sha256(prior).hexdigest()==source_receipt['tip_prior_readable_sha256']
+            assert sha256(prior).hexdigest() in {
+                source_receipt['tip_prior_readable_sha256'], source_receipt['canonical_readable_sha256']}
             assert corrected==(reference_root/b['readable_path']).read_bytes()
             assert sha256(corrected).hexdigest()==source_receipt['canonical_readable_sha256']
             normalized = Path(directory)/'tip-7242-source'

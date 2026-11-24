@@ -77,7 +77,7 @@ for suffix, filename, date, label in (
     original = object_dir / ("original.pdf" if kind == "pdf" else "original.html.bin")
     readable = object_dir / "readable.html"
     copy_verified(source_root / original, raw)
-    copy_verified(source_root / readable, readable_bytes(raw, kind))
+    copy_verified(source_root / readable, readable_bytes(raw, kind, legacy=suffix != "law"))
     doc_id = f"{case}-{suffix}"
     version = vid(suffix)
     insert("document", dict(id=doc_id, party_id=party, title=label, source_kind="party" if is_party else "official"))
