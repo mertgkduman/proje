@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-092",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:03:49.370170+00:00",
+  "reads": [
+    {
+      "post_id": 488,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/mucadele-edeceklerini-soyledikleri-yolsuzluk-yoksulluk-yasaklar-diz-boyunu-gecti",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=mucadele-edeceklerini-soyledikleri-yolsuzluk-yoksulluk-yasaklar-diz-boyunu-gecti",
+      "published_at": "2024-12-20T21:42:23+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:03:49.370170+00:00",
+      "original_path": "party-news-bodies/488.json",
+      "sha256": "e0071409d9d6377343e5c9b4200c31b3da644b582fd2cf7a88ba172a1e23d44c",
+      "normalized_body_sha256": "7793223f5758f2a56489f4d5d6ab938ac868fc90ba608c390234eb861586811e",
+      "source_section_range": [
+        0,
+        7189
+      ],
+      "state": "examined",
+      "reading": "Parti gövdesi Ali Fazıl Kasapın Saadet-Gelecek Grubu adına bütçe görüşmelerindeki gelir dağılımı ve dış politika eleştirilerini aktarıyor.",
+      "selected_passages": [
+        {
+          "start": 1167,
+          "end": 1211,
+          "exact": "Bu bütçede fakirler yoktu değerli arkadaşlar"
+        }
+      ],
+      "point": "Bütçe önceliklerinde yoksulların ele alınması.",
+      "statement": "Kasap görüşülen bütçeyi yoksulları ve emeklileri yeterince içermediği gerekçesiyle eleştiriyor.",
+      "concrete_evidence": "Partinin özgün API gövdesi konuşmanın Saadet-Gelecek grubu adına yapıldığını belirtir; bütçe metninin kapsamı hakkındaki yorum konuşmacıya aittir.",
+      "open_provenance": "Kasapın bireysel parti üyeliği, ortak grupta söz alma sıfatından ayrı teyit gerektirir; API yayın zamanı konuşma veya nihai oylama zamanı değildir. Somut oy kaydı bu gövdede bulunmuyor."
+    }
+  ],
+  "completed_pre_cut_bodies": 178,
+  "remaining_pre_cut_bodies": 471,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
