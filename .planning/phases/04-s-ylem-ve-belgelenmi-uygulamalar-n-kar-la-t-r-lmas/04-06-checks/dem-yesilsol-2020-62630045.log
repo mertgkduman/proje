@@ -1,0 +1,11 @@
+Staged 310 original, readable and view paths; package 35f7eeb6bdca9a5c3ea79d21ff081259aad8e457ab24b94015b1b5735afb9192; review 00fdeac8e4d9db509b0b6c2cd2a0824a6545b4ca1ece79bf2f53879bfa7e4fa4
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/validate-yesilsol-2020.py", line 8, in <module>
+    m.main(p,r,'dem-yesilsol-2020','0406-yesilsol-2020-event','0406-iklim-group-final-relation','')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 110, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-06-checks/tracer-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1

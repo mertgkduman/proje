@@ -1,7 +1,7 @@
 import importlib.util,json,os,sqlite3
 from pathlib import Path
 c=Path(__file__).resolve().parent;root=c.parents[3];job=os.environ['SLURM_JOB_ID'];spec=importlib.util.spec_from_file_location('tracer',c/'tracer-validation.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-p=c/'yesilsol-2020-dem-draft.json';r=c/'yesilsol-2020-dem-review-draft.json';assert m.sha(p)=='35f7eeb6bdca9a5c3ea79d21ff081259aad8e457ab24b94015b1b5735afb9192' and m.sha(r)=='00fdeac8e4d9db509b0b6c2cd2a0824a6545b4ca1ece79bf2f53879bfa7e4fa4'
+p=c/'yesilsol-2020-dem-draft.json';r=c/'yesilsol-2020-dem-review-draft.json';assert m.sha(p)=='eecb16315fbf1990c664601e4591e7718e66858e8fedc948b8041064e4e5c4cd' and m.sha(r)=='2f7df55e18057a6c9060e578a47bb3424e4260f631b54c6cebe5291adeac9bb8'
 b=json.loads((root/'data/practices/04-dem.json').read_text());n=json.loads(p.read_text());canon=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False)
 for k in ('entries','scope_inventory','source_review_refs'):assert {canon(x) for x in b[k]}<={canon(x) for x in n[k]}
 for k,rows in b['practice_records'].items():assert {canon(x) for x in rows}<={canon(x) for x in n['practice_records'][k]}
