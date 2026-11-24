@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 73 | 72 | 62575744 |
+| EMEP | 75 | 72 | 62578062 |
 | Saadet Partisi | 28 | 24 | 62575423 |
 | Demokrat Parti | 55 | 45 | 62576495 |
 
@@ -381,3 +381,5 @@ Demokrat Parti katalog okuması 176/257, 79 açık ve iki kapsam sonrası yayın
 EMEP 267 ve 268 kaynak dilimlerinde Türkçe ve İngilizce paralel yayınlar aynı açıklama olarak izleniyor. Tarım desteği, infaz ve ücretsiz maske gibi sonraki somut araştırma uçları ayrı. DEM Parti 9 Nisan 74. birleşimdeki dört madde çıkarma önergesini ayrı imza ve sonuçlarla 62579272 adayına aldı. Şubat komisyon işlemleri bu dört Genel Kurul önergesinden ayrı. [EMEP 267](../04-10-checks/party-api-267-source-reading.json) [EMEP 268](../04-10-checks/party-api-268-source-reading.json) [DEM önerge okuması](../04-06-checks/iklim-74-madde-1-4-followup.md)
 
 Saadet 069 sonunda 155/649 özgün gövde okudu ve 494 açık. 18 Haziran TRT açıklamasındaki tarih atfı, 6 Mayıs KİT tutanağındaki sözleşme ve ilişki bitişi hakkında kurum beyanından farklı. Sözleşme ve fesih belgeleri açık. [069. dilim](../04-11-checks/party-news-069-reading.json)
+
+Roboski için AYM 2014/11864 ve AİHM 49976/16 kararları iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. İki usul kararı, Resmî Gazete yayımı ve AİHM’in yazılı bildirim günü ayrı. EMEP Bölge Örgütü’nün daha sonraki açıklaması kaynak bağlamında. Kararlar eşleşmemiş durumunda ve kapsam açık. [Önizleme makbuzu](../04-10-checks/encu-decisions-62578062.json) [Bağımsız denetim](../04-10-checks/encu-decisions-62578062-independent.log)
