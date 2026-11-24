@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-195",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T20:26:55.025130+00:00",
+  "reads": [
+    {
+      "post_id": 386,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/millet-ittifakinin-cumhurbaskani-adayi-kemal-kilicdarogludur",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=millet-ittifakinin-cumhurbaskani-adayi-kemal-kilicdarogludur",
+      "published_at": "2023-03-11T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T20:26:55.025130+00:00",
+      "original_path": "party-news-bodies/386.json",
+      "sha256": "f024bd46a933fdb045cb8eabee6874139cf9e7d2af46e88ae8fbbdada41a87d4",
+      "normalized_body_sha256": "2c7d2794bf79bbe8311ad1713cc33055536f7feb46af4cf619bc754ce7d1ff82",
+      "source_section_range": [
+        0,
+        2236
+      ],
+      "state": "examined",
+      "reading": "Saadet ev sahipliğindeki altı lider toplantısının ardından Karamollaoğlu ortak cumhurbaşkanı adayını açıklıyor.",
+      "selected_passages": [
+        {
+          "start": 1247,
+          "end": 1304,
+          "exact": "Sayın Kemal Kılıçdaroğlu bizim cumhurbaşkanı adayımızdır."
+        }
+      ],
+      "point": "Millet İttifakı ortak cumhurbaşkanı adayı açıklaması.",
+      "statement": "Karamollaoğlu ortak aday olarak Kemal Kılıçdaroğlu’nu duyuruyor.",
+      "concrete_evidence": "Parti yayımı Saadet ev sahipliğini, altı liderin katılımını ve ortak aday duyurusunu aktarıyor.",
+      "open_provenance": "API yayım damgası 12 Mart yerel günü gösteriyor. Dış kaynaklar toplantı ve aday duyurusunu 6 Martta tarihlendiriyor. Özgün tarihli ortak açıklama ve dönemsel bağımsız haber ayrıca okunmalıdır. Ortak açıklama resmî adaylığın hukuki tescili veya seçilme sonucuyla aynı işlem değildir. YSK kesin aday listesi ve seçilme sonucu ayrıca doğrulanmalıdır."
+    }
+  ],
+  "completed_pre_cut_bodies": 281,
+  "remaining_pre_cut_bodies": 368,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü. Blok sonları korundu ve etiketler ile boş satırlar kaldırıldı."
+}

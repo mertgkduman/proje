@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-192",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T20:25:31.517847+00:00",
+  "reads": [
+    {
+      "post_id": 389,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/egri-cetvelden-dogru-cizgi-cikmaz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=egri-cetvelden-dogru-cizgi-cikmaz",
+      "published_at": "2023-06-06T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T20:25:31.517847+00:00",
+      "original_path": "party-news-bodies/389.json",
+      "sha256": "af6819c46c191afc62101094e284aecbc4ef8fb3d2888d9e7426ce7afde31043",
+      "normalized_body_sha256": "fbb83bf85cb85eec5b9b039a7859c2d2f8f04d2c194ded4a6acd5056706cedfe",
+      "source_section_range": [
+        0,
+        13298
+      ],
+      "state": "examined",
+      "reading": "Karamollaoğlu seçim sonrasında kabine, gelir ve yönetim sistemi üzerine basın açıklaması yapıyor.",
+      "selected_passages": [
+        {
+          "start": 8498,
+          "end": 8534,
+          "exact": "biz kişileri değil sistemi eleştirir"
+        }
+      ],
+      "point": "Seçim sonrası muhalefet ve yönetim değerlendirmesi.",
+      "statement": "Yeni görev alan kişileri peşinen değerlendirmeden politikaları ve yönetim yaklaşımını izleyip eleştireceğini söylüyor.",
+      "concrete_evidence": "Parti yayımı genel başkanın basın toplantısındaki tutumunu ve açıklanan yeni kabineye değinişini içeriyor.",
+      "open_provenance": "Seçim süreci ve ekonomik göstergeler hakkındaki diğer değerlendirmeler konuşmacıya atıflıdır. Belirli bir sonraki işlem bu okumada eşleştirilmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 278,
+  "remaining_pre_cut_bodies": 371,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü. Blok sonları korundu ve etiketler ile boş satırlar kaldırıldı."
+}
