@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 72 | 71 | 62573483 |
+| EMEP | 73 | 72 | 62575744 |
 | Saadet Partisi | 28 | 24 | 62575423 |
 | Demokrat Parti | 52 | 43 | 62572604 |
 
@@ -359,3 +359,5 @@ Saadet’in 33.000 TL talebi ile 2026 asgari ücret kararı iki HTML görünüm�
 Demokrat Parti 151–155. yayın düğümlerinde 150/257 gövdeye ulaştı. 105 gövde açık ve iki yayın kapsam tarihinden sonra. Parti yayını 154, Türkiye’ye gönderilen demir ve çelik hurdasını 131 milyon ton olarak verdi. Eurostat’ın 2021 duyurusu hurda için 13,1 milyon ton ve tüm atık için 14,7 milyon ton bildiriyor. İki metin özgün rakamlarıyla kaydedildi. [019. dilim](../04-12-checks/party-news-019-reading.json) [Eurostat özgün yayını](../04-12-checks/eurostat-2021-sources/reading.json)
 
 EMEP’in 265. dilimindeki sekiz Kürtçe gövde ile önceki metnin son bölümü okundu. Roboski için 49976/16 numaralı AİHM kararının özgün Fransızca nüshası ve Bakanlığın gayriresmî Türkçe çevirisi incelendi. Karar, iç hukuk yollarının tüketilmesi şartına ilişkin oybirliğiyle kabul edilemezlik hükmünü ve yazılı bildirim gününü ayrı gösteriyor. [265 dil okuması](../04-10-checks/party-api-265-language-reading.json) [AİHM kaynak okuması](../04-10-checks/encu-49976-sources/reading.json)
+
+EMEP’in 26 Ekim 2021 tarihli ret çağrısı, aynı günkü 3/1704 Genel Kurul kabulüyle iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 1310 sayılı kararın 28 Ekim yayımı ve 30 Ekim süre başlangıcı ayrı belgelere dayanıyor. Kişisel oy, sayısal oy dağılımı ve yetkinin fiilî kullanımı açık. [Önizleme makbuzu](../04-10-checks/tezkere-1310-62575744.json) [Bağımsız denetim](../04-10-checks/tezkere-1310-62575744-independent.log)
