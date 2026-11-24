@@ -1,0 +1,10 @@
+{
+  "baseline": {"events": 64, "relations": 7, "package_sha256": "c261a747122fd39d50250c84c2ae6aed9884515ba5a8506610a9ff55f06b2957", "review_sha256": "56f9115e9e4006f24900431a9ac442a0b7d56590ec6dcbcdbaefc816d48c3cae"},
+  "candidate": {"events": 66, "relations": 7, "package_sha256": "005fda05b3e462a76c0a5d8a33248eb38c149d6adcdd8ea2e84c376695b6cccd", "review_sha256": "4dac79689061ea897d70c201265b0efeb4707fc76e0c6ba7f7d0932fcabf58be"},
+  "earlier_job": {"id": "62619767", "status": "cancelled deliberately", "reason": "2016 PDF için mevcut özgün sürüm saptanarak ikinci sürüm eklenmemesi için v2 hazırlandı; ilk aday terfi edilmedi."},
+  "job": "62619918", "terminal_state": "COMPLETED", "terminal_exit": "0:0", "input_exit": 0, "source_exit": 0, "preview_exit": 0,
+  "preview": "/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0409-baglar-2016-reports-v2-62619918/releases/7ff747c24ba74a17bf3667e864491ea1",
+  "checks": ["DBP2016_REPORTS_SEMANTIC_PASS", "DBP2016_REPORTS_BOTH_VIEWS_OK", "DBP2016_REPORTS_INDEPENDENT_APPEND_ONLY_OK"],
+  "independent": "Önceki 64 olay, 7 ilişki ve tüm diğer eski kayıtlar aday JSON, dışa aktarılan JSON ve SQLite içinde aynen doğrulandı; iki yeni olay ve eşleşmemiş adayları iki görünüm ve SQLite içinde kontrol edildi.",
+  "limits": ["Gıda denetimi ve kadın evi hizmetleri komisyonun anlatımıdır; meclis kararı raporun kabulünü gösterir. Tekil denetim, kişisel yararlanma, yardım ve sonuç kayıtları açık.", "2015/231 aynı ev ve komisyona dair önceki bir sevktir; 2016/20 bu sevk numarasını veya altı aylık dönemi anmadığından kesin zincir olarak gösterilmedi.", "2014 seçim kaydı dönem bağlamıdır; belediye meclisi işlemi, parti organı direktifi veya belirsiz kişisel oy olarak gösterilmez.", "Kapsam kapatılmadı."]
+}
