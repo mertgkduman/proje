@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-131",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T15:21:07.232237+00:00",
+  "reads": [
+    {
+      "post_id": 449,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bugunden-itibaren-yeni-nesil-siyaset-baslamistir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bugunden-itibaren-yeni-nesil-siyaset-baslamistir",
+      "published_at": "2024-11-23T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T15:21:07.232237+00:00",
+      "original_path": "party-news-bodies/449.json",
+      "sha256": "66c6a720d448c07c364524b4d1c6f079e56bed91d414ee9e1359cba54d020d0d",
+      "normalized_body_sha256": "ccb2a808906bce0c63a169d0b7838fe5d28bef1993ec39a7f72f9da1ad5bdf68",
+      "source_section_range": [
+        0,
+        1281
+      ],
+      "state": "examined",
+      "reading": "Parti kongrede Mahmut Arıkanın genel başkan seçildiğini ve açıklanan oy sayısını bildiriyor.",
+      "selected_passages": [
+        {
+          "start": 64,
+          "end": 93,
+          "exact": "823 oyla Genel Başkan seçildi"
+        }
+      ],
+      "point": "Parti kongresinde genel başkan seçimi sonucu.",
+      "statement": "Parti haberine göre Atmaca teklifin belirli köy maddesini desteklerken teklifin geneline 823 oyla Genel Başkan seçildi ifade ediyor.",
+      "concrete_evidence": "30 Kasım tarihli parti sayfası ilk GİK toplantısı ve üye listesini bildiriyor; 823 oyla Genel Başkan seçildi aynı dönem konuşmacısının parti yönetimindeki rolü için destekleyici parti kaynağıdır.",
+      "open_provenance": "API tarih etiketi 23 Kasım 21:00 UTCdir; kongre konuşmaları 24 Kasım gününü belirtir. Oy sayımı ve sonuç parti açıklamasına dayanır; imzalı seçim tutanağı bu adımda görülmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 217,
+  "remaining_pre_cut_bodies": 432,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
