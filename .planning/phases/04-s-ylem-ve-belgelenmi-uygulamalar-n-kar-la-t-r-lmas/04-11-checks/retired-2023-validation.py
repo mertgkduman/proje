@@ -17,8 +17,8 @@ case = 'retired-2023'
 stem = '0411-saadet-retired-2023'
 package = checks / f'{case}-draft.json'
 review = checks / f'{case}-review-draft.json'
-assert harness.sha(package) == '9bd7cb615f35fd06059d0ecffd644801f3c2eecf2c7b58f3535957782cf024d3'
-assert harness.sha(review) == '4db45b7706247d6ce6d36f5c40c6eddd488c9d531048b16d8df5bd5375deef98'
+assert harness.sha(package) == '2dfb4420d680fa466e49d9877106c767cc2fe24e356f3347f71c32f8ff70fa3a'
+assert harness.sha(review) == 'e4af2c40825f06179d8319824fd0c02a50b06d35157b6c5f5fbcb0ed93a88195'
 records = json.loads(package.read_bytes())['practice_records']
 assert (len(records['practice_event']), len(records['practice_relation']), len(records['practice_closure'])) == (35, 31, 0)
 if len(sys.argv)==2:

@@ -24,7 +24,7 @@ def put(relative, raw):
 
 sources = [
     ('speech', 'retired-2023-speech-original.html', 'https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/12/Tam/ea87822e-b2c2-4270-8a73-f6658cd63d6d.html', '2023-10-25', 'TBMM', 'official', 'official', 'text/html', None, [
-        ('quote', 'Kalıcı aylık iyileştirmesi beklentisi', 'Emeklilerimiz maaşlarında kalıcı iyileştirme beklerken', None),
+        ('quote', 'Kalıcı aylık iyileştirmesi beklentisi', 'Tekrar ifade ediyorum, emeklilerimizin maaşlarında kalıcı bir iyileştirme bekliyoruz, bu iyileştirme tek seferlik sadakayla olmaz.', None),
         ('exclusion', 'Çalışmayanlarla sınırlı ödeme eleştirisi', 'çalışmayan emeklilere verecekmişsiniz.', None),
         ('speaker', 'Konuşmacı ve bağlamı', 'ŞERAFETTİN KILIÇ (Antalya) – Sayın Başkan, değerli milletvekilleri; hepinizi saygıyla selamlıyorum.', None)]),
     ('role', 'retired-2023-role-original.html', 'https://www.tbmm.gov.tr/Haber/Detay?Id=00548664-8274-400e-9ca3-01889add2784', None, 'TBMM', 'official', 'official', 'text/html', None, [
