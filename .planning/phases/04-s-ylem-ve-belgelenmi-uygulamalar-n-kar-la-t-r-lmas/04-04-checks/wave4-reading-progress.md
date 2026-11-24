@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 74 | 9 | 62562198 |
+| DEM Parti | 75 | 9 | 62566333 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -285,3 +285,12 @@ Demokrat Parti’nin 3 Haziran 2025 toplu görüşme çağrısı, İZELMAN imza 
 
 
 2/2860 geçici 1. madde işlemi ve teklifin tümünün oylaması, 65. birleşimin basılı nüshasında ayrı pasajlarla ve altı denetim dosyasıyla iki HTML görünümünde doğrulandı. Altıntaş’ın imzası ve konuşması ilk işlemde, Katılmadı kaydı teklifin tümünde. Arşivde önceki söylem eşleşmeleri açık. [Önizleme makbuzu](../04-12-checks/siber-7545-62565773.json)
+
+
+DEM Parti 10/2879 imzalı başvurusu, 2 Temmuz’daki 10/2880 gündem işleminden ayrı ve eşleşmemiş olay olarak doğrulandı. Kanonik konu kimliği sabit. İlk sınır açıklaması saklandı ve 1 Temmuz kaydını tarif eden tek cümle eklendi. Geçersiz kapsam kimliği ve eksik kaynak atfı ilk iki girdi denemesinde düzeltildi. Bağımsız denetim eski kayıtları ve tek açıklama farkını doğruladı. [Makbuz](../04-06-checks/dem-sivas-2879-62566333.json)
+
+Saadet 024 sonunda 104/649 gövdeye ulaştı. 21 Ocak emekli araştırması niyetine kesin dosya bağlantısı açık. 14 Ocak 10/3605 imzalı dosyası ve gündem işlemi okundu. Aynı günkü konuşma ve Meclis işleminin kesin saat sırası ile önceki araştırmaların beş ve altı diye sayılması açık. Aday 62567788 denetleniyor. [024. dilim](../04-11-checks/party-news-024-reading.json) [10/3605 kaynak okuması](../04-11-checks/inquiry-3605-source-reading.json)
+
+EMEP 250, 251 ve 253–256. kaynak dilimlerini tamamladı. 252 ve 257’deki kimi Kürtçe bölümler açık. Bulu ile ilgili 3 Şubat 2021 tarihli rektörün istifası ve seçim talebi, aynı kişi için 14 Temmuz görevden alma kararıyla karşılaştırılıyor. 62568514 işi yeni karşılaştırmayı denetliyor. Parti yetkisi ve nedensellik için belge açık. 60f4e41f içine daha önce indexte bulunan beş Saadet kaynak dosyası da girdi. Sonraki commitlerde açık dosya listesi kullanıldı. [256. kaynak dilimi](../04-10-checks/party-api-256-reading.json) [Bulu resmî karar okuması](../04-10-checks/bulu-official-2021-reading.json)
+
+Demokrat Parti’nin 008. dilimi sonunda 83 gövde okundu, iki kayıt kesim sonrası ve 172 kayıt açık. 7/20085’in imzalı sorusu ve 7 Ocak cevapsızlık ilanı ile 2/3139 ve 2/3144’ün esas sicilleri ve imzalı nüshaları okundu. Üç kayıt 62567797 ile denetleniyor. 8 Mayıs zeytinyağı söylemi, 1 Haziran kotası, 13 Eylül kısıt kaldırma bildirimi ve 14 Eylül fon kesintisi kaldırma kararı kendi dayanaklarıyla okundu. [008. dilim](../04-12-checks/party-news-008-reading.json) [Zeytinyağı kaynak okuması](../04-12-checks/olive-oil-source-reading.json)
