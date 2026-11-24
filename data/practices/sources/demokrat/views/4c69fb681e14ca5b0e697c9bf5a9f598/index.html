@@ -1,0 +1,639 @@
+<!doctype html><html>
+
+<head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;none&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; img-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;none&#x27;; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+
+
+<style>
+<!--
+ 
+ @font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:TimesNewRomanPSMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:MinionPro-Regular;
+	panose-1:2 4 5 3 5 3 6 2 2 3;}
+@font-face
+	{
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ 
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Açıklama Metni Char1";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Üst Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Alt Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Konu Başlığı Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p
+	{
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Açıklama Konusu Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balon Metni Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-link:"Aralık Yok Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Normal1
+	{mso-style-name:Normal1;
+	font-family:"Arial",sans-serif;}
+span.BalonMetniChar
+	{mso-style-name:"Balon Metni Char";
+	mso-style-link:"Balon Metni";
+	font-family:"Segoe UI",sans-serif;}
+span.Gvdemetni
+	{mso-style-name:"Gövde metni_";
+	mso-style-link:"Gövde metni1";
+	background:white;}
+p.Gvdemetni1, li.Gvdemetni1, div.Gvdemetni1
+	{mso-style-name:"Gövde metni1";
+	mso-style-link:"Gövde metni_";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:13.7pt;
+	background:white;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+span.stBilgiChar
+	{mso-style-name:"Üst Bilgi Char";
+	mso-style-link:"Üst Bilgi";}
+span.AltBilgiChar
+	{mso-style-name:"Alt Bilgi Char";
+	mso-style-link:"Alt Bilgi";}
+span.FontStyle15
+	{mso-style-name:"Font Style15";
+	font-family:"Times New Roman",serif;
+	letter-spacing:.5pt;}
+span.FontStyle16
+	{mso-style-name:"Font Style16";
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.FontStyle37
+	{mso-style-name:"Font Style37";
+	font-family:"Times New Roman",serif;}
+span.Gvdemetni0
+	{mso-style-name:"Gövde metni";
+	font-variant:normal !important;
+	letter-spacing:0pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;}
+p.baslk, li.baslk, div.baslk
+	{mso-style-name:baslk;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.altbaslik, li.altbaslik, div.altbaslik
+	{mso-style-name:altbaslik;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.kantab, li.kantab, div.kantab
+	{mso-style-name:kantab;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.fontstyle01
+	{mso-style-name:fontstyle01;
+	font-family:TimesNewRomanPSMT;
+	color:black;
+	font-weight:normal;
+	font-style:normal;}
+p.nor, li.nor, div.nor
+	{mso-style-name:nor;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.metin, li.metin, div.metin
+	{mso-style-name:metin;
+	mso-style-link:"metin Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.baslk0, li.baslk0, div.baslk0
+	{mso-style-name:baslk0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:18.0pt;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.AklamaMetni1, li.AklamaMetni1, div.AklamaMetni1
+	{mso-style-name:"Açıklama Metni1";
+	mso-style-link:"Açıklama Metni Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar
+	{mso-style-name:"Açıklama Metni Char";
+	mso-style-link:"Açıklama Metni1";}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.KonuBalChar
+	{mso-style-name:"Konu Başlığı Char";
+	mso-style-link:"Konu Başlığı";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.ksmblm, li.ksmblm, div.ksmblm
+	{mso-style-name:kısımbölüm;
+	margin-top:2.85pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.nor0, li.nor0, div.nor0
+	{mso-style-name:nor0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.kantab0, li.kantab0, div.kantab0
+	{mso-style-name:kantab0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.NormalWebChar
+	{
+	font-family:"Times New Roman",serif;}
+p.stylenormal, li.stylenormal, div.stylenormal
+	{mso-style-name:style_normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.stbilgiChar1
+	{mso-style-name:"Üstbilgi Char1";
+	font-family:"Calibri",sans-serif;}
+span.BalonMetniChar1
+	{mso-style-name:"Balon Metni Char1";
+	font-family:"Segoe UI",sans-serif;}
+p.Gvde, li.Gvde, div.Gvde
+	{mso-style-name:Gövde;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	border:none;}
+span.metinChar
+	{mso-style-name:"metin Char";
+	mso-style-link:metin;
+	font-family:"Times New Roman",serif;}
+span.AralkYokChar
+	{mso-style-name:"Aralık Yok Char";
+	mso-style-link:"Aralık Yok";
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar1
+	{mso-style-name:"Açıklama Metni Char1";
+	mso-style-link:"Açıklama Metni";}
+span.AklamaKonusuChar
+	{mso-style-name:"Açıklama Konusu Char";
+	mso-style-link:"Açıklama Konusu";
+	font-weight:bold;}
+p.BasicParagraph, li.BasicParagraph, div.BasicParagraph
+	{
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:MinionPro-Regular;
+	color:black;}
+p.NoParagraphStyle, li.NoParagraphStyle, div.NoParagraphStyle
+	{
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:MinionPro-Regular;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ 
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:49.65pt 70.85pt 63.8pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ 
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+<style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head>
+
+<body lang="TR">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;
+margin-bottom:3.0pt;margin-left:0cm;text-align:center;line-height:150%"><b><span lang="EN-GB" style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">2022
+YILI MERKEZİ YÖNETİM </span></b><b><span lang="EN-US" style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,serif">KESİN HESAP KANUNU</span></b></p>
+
+<table class="MsoNormalTable" style="margin-left:12.5pt;border-collapse:collapse">
+ <tr>
+  <td width="211" style="width:158.25pt;padding:0cm 3.5pt 0cm 3.5pt">
+  <p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-align:justify;line-height:normal"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">Kanun No. 7490</span></b></p>
+  </td>
+  <td width="121" style="width:90.85pt;padding:0cm 3.5pt 0cm 3.5pt">
+  <p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:17.0pt;
+  line-height:normal"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span></b></p>
+  </td>
+  <td width="256" style="width:192.0pt;padding:0cm 3.5pt 0cm 3.5pt">
+  <p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:17.0pt;line-height:normal"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">Kabul Tarihi: 25/12/2023      
+  </span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:#00B050"> </span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Gider bütçesi</span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE 1-</span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(1)
+17/12/2021 tarihli ve 7344 sayılı 2022 Yılı Merkezi Yönetim Bütçe Kanunu ile
+10/12/2003 tarihli ve 5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanununa ekli;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) (I)
+sayılı cetvelde yer alan genel bütçe kapsamındaki kamu idarelerine
+1.728.401.621.000 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) (II)
+sayılı cetvelde yer alan özel bütçeli idarelere 155.249.695.000 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">c)
+(III) sayılı cetvelde yer alan düzenleyici ve denetleyici kurumlara
+10.238.553.000 Türk lirası, </span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">ödenek
+verilmiştir.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(2)  Kanunların
+verdiği yetkiye dayanarak yıl içerisinde eklenen ve düşülen ödenekler sonrası
+2022 yılı merkezi yönetim kesin hesap gider cetvellerinde gösterildiği üzere,
+5018 sayılı Kanuna ekli;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) (I)
+sayılı cetvelde yer alan genel bütçe kapsamındaki kamu idarelerinin bütçe giderleri
+2.888.034.289.531,49 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) (II)
+sayılı cetvelde yer alan özel bütçeli idarelerin bütçe giderleri
+344.139.538.593,21 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">c)
+(III) sayılı cetvelde yer alan düzenleyici ve denetleyici kurumların bütçe giderleri
+12.815.610.584,15 Türk lirası, </span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">olarak
+gerçekleşmiştir.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(3)  2022
+yılı merkezi yönetim net bütçe gideri 2.942.747.714.595,65 Türk lirasıdır.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Gelir
+bütçesi</span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE
+2-</span></b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+(1) 2022 Yılı Merkezi Yönetim Bütçe Kanunu ile 5018 sayılı Kanuna ekli;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) (I)
+sayılı cetvelde yer alan genel bütçenin gelirleri 1.448.944.742.000 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) (II)
+sayılı cetvelde yer alan özel bütçeli idarelerin gelirleri 19.623.651.000 Türk
+lirası öz gelir, 136.708.735.000 Türk lirası Hazine yardımı olmak üzere toplam
+156.332.386.000 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">c)
+(III) sayılı cetvelde yer alan düzenleyici ve denetleyici kurumların gelirleri
+10.062.295.000 Türk lirası öz gelir, 176.258.000 Türk lirası Hazine yardımı
+olmak üzere toplam 10.238.553.000 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">olarak
+tahmin edilmiştir.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(2)
+2022 yılı merkezi yönetim kesin hesap gelir cetvellerinde gösterildiği üzere,
+5018 sayılı Kanuna ekli;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) (I) sayılı
+cetvelde yer alan genel bütçenin gelirleri 2.747.757.752.152,37 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) (II)
+sayılı cetvelde yer alan özel bütçeli idarelerin gelirleri 48.430.263.942,27
+Türk lirası öz gelir, 279.847.318.168,72 Türk lirası Hazine yardımı olmak üzere
+toplam 328.277.582.110,99 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">c)
+(III) sayılı cetvelde yer alan düzenleyici ve denetleyici kurumların gelirleri
+12.848.674.261,14 Türk lirası öz gelir, 204.750.155 Türk lirası Hazine yardımı
+olmak üzere toplam 13.053.424.416,14 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">olarak
+gerçekleşmiştir.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(3)
+2022 yılı merkezi yönetim net bütçe geliri 2.800.087.704.480,03 Türk lirasıdır.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Denge</span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE
+3-</span></b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+(1) 2022 yılı bütçe giderleri ile bütçe gelirleri toplamları arasında, 5018
+sayılı Kanuna ekli;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) (I) sayılı
+cetvelde yer alan genel bütçe kapsamındaki kamu idarelerinin 140.276.537.379,12
+Türk lirası gider fazlası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) (II)
+sayılı cetvelde yer alan özel bütçeli idarelerin 15.861.956.482,22 Türk lirası
+gider fazlası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">c) (III)
+sayılı cetvelde yer alan düzenleyici ve denetleyici kurumların 237.813.831,99
+Türk lirası gelir fazlası, </span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">gerçekleşmiştir.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(2) 2022 yılı
+merkezi yönetim net bütçe gider fazlası 142.660.010.115,62 Türk lirasıdır.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Kullanılmayan
+ödenek </span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE
+4-</span></b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+(1) 2022 yılı merkezi yönetim kesin hesap gider cetvellerinde gösterildiği
+üzere, 5018 sayılı Kanuna ekli;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) (I)
+sayılı cetvelde yer alan genel bütçe kapsamındaki kamu idarelerinin
+62.255.957.374,01 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) (II)
+sayılı cetvelde yer alan özel bütçeli idarelerin 11.958.919.929,91 Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">c) (III)
+sayılı cetvelde yer alan düzenleyici ve denetleyici kurumların 817.046.500,22
+Türk lirası,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">ödeneği
+kullanılmamıştır.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(2)
+Merkezi yönetim kesin hesap gider cetvellerinde gösterildiği üzere, kamu
+idarelerinin 2022 yılı ödenek üstü giderlerini karşılamak üzere, 5018 sayılı
+Kanuna ekli;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) (I)
+sayılı cetvelde yer alan genel bütçe kapsamındaki kamu idarelerinin
+4.139.051.484,36 Türk lirası gideri,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) (II)
+sayılı cetvelde yer alan özel bütçeli idarelerin 2.484.814,13 Türk lirası
+gideri,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">karşılığı ödenek,
+kullanılmayan ödenekten mahsup edilmek suretiyle karşılanmıştır.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Devlet
+borçları</span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE
+5-</span></b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+(1) Devlet borçlarına ilişkin cetvellerde gösterildiği üzere, 2022 yılı sonu
+itibarıyla;</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">a) 1.904.207.473.553,68
+Türk lirası Devlet iç borcu,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">b) 2.111.346.834.121,51
+Türk lirası Devlet dış borcu,</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">c) 402.493.539.260,14
+Türk lirası Hazine garantili borç, </span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">mevcuttur.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Yürürlük</span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE
+6- </span></b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(1)
+Bu Kanun yayımı tarihinde yürürlüğe girer. </span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Yürütme</span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE 7-</span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"> (1) Bu Kanun
+hükümlerini Cumhurbaşkanı yürütür</span><span lang="EN-GB" style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif">.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+</div>
+
+</body>
+
+</html>

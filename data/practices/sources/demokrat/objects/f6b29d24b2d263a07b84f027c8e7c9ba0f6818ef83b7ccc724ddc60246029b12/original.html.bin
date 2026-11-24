@@ -1,0 +1,494 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:TimesNewRomanPSMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\30D2\30E9\30AE\30CE\660E\671D Pro W3";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"\@\30D2\30E9\30AE\30CE\660E\671D Pro W3";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Açıklama Metni Char1";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Üst Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Alt Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Konu Başlığı Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{font-family:"Times New Roman",serif;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-name:"Normal \(Web\)\,Normal \(Web\) Char Char\,Normal \(Web\) Char Char Char Char\,Normal \(Web\) Char Char Char";
+	mso-style-link:"Normal \(Web\) Char\,Normal \(Web\) Char Char Char1\,Normal \(Web\) Char Char Char Char Char\,Normal \(Web\) Char Char Char Char1";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Açıklama Konusu Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balon Metni Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-link:"Aralık Yok Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Normal1
+	{mso-style-name:Normal1;
+	font-family:"Arial",sans-serif;}
+span.BalonMetniChar
+	{mso-style-name:"Balon Metni Char";
+	mso-style-link:"Balon Metni";
+	font-family:"Segoe UI",sans-serif;}
+span.Gvdemetni
+	{mso-style-name:"Gövde metni_";
+	mso-style-link:"Gövde metni1";
+	background:white;}
+p.Gvdemetni1, li.Gvdemetni1, div.Gvdemetni1
+	{mso-style-name:"Gövde metni1";
+	mso-style-link:"Gövde metni_";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:13.7pt;
+	background:white;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+span.stBilgiChar
+	{mso-style-name:"Üst Bilgi Char";
+	mso-style-link:"Üst Bilgi";}
+span.AltBilgiChar
+	{mso-style-name:"Alt Bilgi Char";
+	mso-style-link:"Alt Bilgi";}
+span.FontStyle15
+	{mso-style-name:"Font Style15";
+	font-family:"Times New Roman",serif;
+	letter-spacing:.5pt;}
+span.FontStyle16
+	{mso-style-name:"Font Style16";
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.FontStyle37
+	{mso-style-name:"Font Style37";
+	font-family:"Times New Roman",serif;}
+span.Gvdemetni0
+	{mso-style-name:"Gövde metni";
+	font-variant:normal !important;
+	letter-spacing:0pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;}
+p.baslk, li.baslk, div.baslk
+	{mso-style-name:baslk;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.altbaslik, li.altbaslik, div.altbaslik
+	{mso-style-name:altbaslik;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.kantab, li.kantab, div.kantab
+	{mso-style-name:kantab;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.fontstyle01
+	{mso-style-name:fontstyle01;
+	font-family:TimesNewRomanPSMT;
+	color:black;
+	font-weight:normal;
+	font-style:normal;}
+p.nor, li.nor, div.nor
+	{mso-style-name:nor;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.metin, li.metin, div.metin
+	{mso-style-name:metin;
+	mso-style-link:"metin Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.baslk0, li.baslk0, div.baslk0
+	{mso-style-name:baslk0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:18.0pt;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.AklamaMetni1, li.AklamaMetni1, div.AklamaMetni1
+	{mso-style-name:"Açıklama Metni1";
+	mso-style-link:"Açıklama Metni Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar
+	{mso-style-name:"Açıklama Metni Char";
+	mso-style-link:"Açıklama Metni1";}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.KonuBalChar
+	{mso-style-name:"Konu Başlığı Char";
+	mso-style-link:"Konu Başlığı";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.ksmblm, li.ksmblm, div.ksmblm
+	{mso-style-name:kısımbölüm;
+	margin-top:2.85pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.nor0, li.nor0, div.nor0
+	{mso-style-name:nor0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.kantab0, li.kantab0, div.kantab0
+	{mso-style-name:kantab0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.NormalWebChar
+	{mso-style-name:"Normal \(Web\) Char\,Normal \(Web\) Char Char Char1\,Normal \(Web\) Char Char Char Char Char\,Normal \(Web\) Char Char Char Char1";
+	mso-style-link:"Normal \(Web\)\,Normal \(Web\) Char Char\,Normal \(Web\) Char Char Char Char\,Normal \(Web\) Char Char Char";
+	font-family:"Times New Roman",serif;}
+p.stylenormal, li.stylenormal, div.stylenormal
+	{mso-style-name:style_normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.stbilgiChar1
+	{mso-style-name:"Üstbilgi Char1";
+	font-family:"Calibri",sans-serif;}
+span.BalonMetniChar1
+	{mso-style-name:"Balon Metni Char1";
+	font-family:"Segoe UI",sans-serif;}
+p.Gvde, li.Gvde, div.Gvde
+	{mso-style-name:Gövde;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	border:none;}
+span.metinChar
+	{mso-style-name:"metin Char";
+	mso-style-link:metin;
+	font-family:"Times New Roman",serif;}
+span.AralkYokChar
+	{mso-style-name:"Aralık Yok Char";
+	mso-style-link:"Aralık Yok";
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar1
+	{mso-style-name:"Açıklama Metni Char1";
+	mso-style-link:"Açıklama Metni";}
+span.AklamaKonusuChar
+	{mso-style-name:"Açıklama Konusu Char";
+	mso-style-link:"Açıklama Konusu";
+	font-weight:bold;}
+span.Bodytext2
+	{mso-style-name:"Body text \(2\)_";
+	mso-style-link:"Body text \(2\)";
+	font-family:"Times New Roman",serif;
+	background:white;}
+p.Bodytext20, li.Bodytext20, div.Bodytext20
+	{mso-style-name:"Body text \(2\)";
+	mso-style-link:"Body text \(2\)_";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:13.7pt;
+	background:white;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.A9
+	{mso-style-name:A9;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:49.65pt 70.85pt 63.8pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=TR link="#0563C1" vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+margin-bottom:3.0pt;margin-left:0cm;text-align:center;line-height:150%'><b><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>2022
+YILI MERKEZİ YÖNETİM BÜTÇE KANUNU İLE BAĞLI CETVELLERİNDE DEĞİŞİKLİK
+YAPILMASINA DAİR KANUN </span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:12.5pt;border-collapse:collapse'>
+ <tr>
+  <td width=211 valign=top style='width:158.25pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-align:justify;line-height:normal'><b><u><span
+  style='font-size:14.0pt;font-family:"Times New Roman",serif'>Kanun No. <span
+  style='color:black'>7414</span></span></u></b></p>
+  </td>
+  <td width=121 valign=top style='width:90.85pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:17.0pt;
+  line-height:normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+  </td>
+  <td width=256 valign=top style='width:192.0pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:17.0pt;
+  line-height:normal'><b><span style='font-size:14.0pt;font-family:"Times New Roman",serif'> <u>Kabul
+  Tarihi: 29/6/2022      </u></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#00B050'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:black'>Gider ve bağlı cetveller</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE 1-</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> </span><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(1) Bu
+Kanuna bağlı (A) işaretli cetvelde gösterildiği üzere; 10/12/2003 tarihli ve
+5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanununa ekli (I) sayılı cetvelde yer
+alan genel bütçe kapsamındaki idarelerin bütçe tertiplerine 817.271.632.000
+Türk Lirası, (II) sayılı cetvelde yer alan özel bütçeli idarelerin bütçe
+tertiplerine 63.203.143.000 Türk Lirası olmak üzere toplam 880.474.775.000 Türk
+Lirası ödenek eklenmiştir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(2)  Cumhurbaşkanlığı
+bütçesinde yer alan “01.08- Cumhurbaşkanı Ödeneği” ekonomik kodlu tertip hariç
+olmak üzere merkezi yönetim kapsamındaki kamu idarelerinin bütçelerinde yer alan
+“01- Personel Giderleri” ile “02- Sosyal Güvenlik Kurumlarına Devlet Primi
+Giderleri” ekonomik kodlarını içeren tertiplere başlangıç ödeneklerinin yüzde
+40,5’i oranında ödenek eklenmiştir. </span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(3)  Bu
+madde kapsamında, yapılan ödenek eklemeleri karşılığı Hazine yardımı
+ödeneklerini ilgili idare bütçelerine eklemeye Cumhurbaşkanı yetkilidir.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(4)  Bu
+Kanunun yürürlük tarihinden itibaren; 17/12/2021 tarihli ve 7344 sayılı 2022
+Yılı Merkezi Yönetim Bütçe Kanununa bağlı (H), (K) ve (M) işaretli cetveller bu
+Kanunun ekinde yer aldığı şekliyle uygulanır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>Gelir</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+2-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+(1) 2022 Yılı Merkezi Yönetim Bütçe Kanununa bağlı (B) işaretli cetvelde yer
+alan genel bütçe gelir tahmini bu Kanuna bağlı (B) işaretli cetvelde yer aldığı
+şekilde toplam l.080.515.421.000 Türk Lirası artırılmıştır.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>Yürürlük</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+3-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+(1) Bu Kanun yayımı tarihinde yürürlüğe girer.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>Yürütme</span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><b><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>MADDE
+4-</span></b><span lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+(1) Bu Kanun hükümlerini Cumhurbaşkanı yürütür.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal'><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>(2)
+Türkiye Büyük Millet Meclisi ile ilgili hükümlerini Türkiye Büyük Millet
+Meclisi Başkanı, Sayıştay Başkanlığı ile ilgili hükümlerini Sayıştay Başkanı,
+düzenleyici ve denetleyici kurumlara ilişkin hükümlerini kendi kurulları
+ve/veya kurum başkanları yürütür.</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;line-height:normal'><span style='font-size:
+12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
