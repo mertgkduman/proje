@@ -1,0 +1,95 @@
+{
+  "reviewer_kind": "agent",
+  "reviewed_at_utc": "2026-11-24T17:37:56.497599+00:00",
+  "catalog_total": 257,
+  "examined_distinct_bodies": 243,
+  "normally_unreachable_entries_explained": 3,
+  "explained_duplicate_entries": [
+    {
+      "position": 250,
+      "read_original_at_position": 28,
+      "path": "250-party.html.bin",
+      "prior_sha256": "18337510af70f67da5ca3b4599501b0440799d92e299d39d13273e5668c6bb72",
+      "body_sha256": "7a2a2bfcb373b12a7f78703ea0bfe9dbd54453d06de7462bf19fba21121328be",
+      "section_range": [
+        0,
+        2385
+      ],
+      "reading": "23 Ocak 2026 parti yayımı Altıntaş’ın emekli aylığı ve sosyal devlet konuşmasını aktarıyor. TBMM’nin 21 Ocak 49. birleşim, dördüncü oturum tutanağı Altıntaş’ı 248 sıra sayılı teklifin 5. maddesinin çıkarılması için ortak önerge imzacıları arasında gösteriyor ve önerge konuşmasını yazıyor. Sonraki parti yayımı ve kişisel parlamento işlemi ayrı."
+    },
+    {
+      "position": 256,
+      "read_original_at_position": 195,
+      "path": "256-party.html.bin",
+      "prior_sha256": "20fecc2e83463378381e081e15672e195594a4c83298cb6c32e554ed3eac9b3a",
+      "body_sha256": "1bec61d1390f41236adf34bea7a92a5147e11cda5d915a6af35adfab66d28b02",
+      "section_range": [
+        0,
+        28203
+      ],
+      "reading": "16 Kasım 2021 DP Basın Merkezi metni Ordu il başkanlığına daha önce atanan Selçuk Yücesan’ın tek listeyle kongrede seçildiğini bildiriyor. Divan, yönetim ve disiplin kurulu adları ile Uysal, Enginyurt ve Yücesan konuşmaları metinde. Kongre tarihi, oy toplamı ve imzalı tutanak ayrı kaynak gerektiriyor."
+    },
+    {
+      "position": 257,
+      "read_original_at_position": 82,
+      "path": "257-party.html.bin",
+      "prior_sha256": "d0029df1787b2ca0219d15247967999d3944b0da77465006cd421521ec19183e",
+      "body_sha256": "8961173ed6ffb09c1863d7d5f7cc1e19edd7798a21ce46d21659b2b818fda885",
+      "section_range": [
+        0,
+        1767
+      ],
+      "reading": "27 Haziran 2024 Basın Merkezi gövdesi ile 28 Haziran site tarihi ayrı. 25 Haziran tarihli 7/13274 imzalı PDF’de 13274 damgası, Haydar Altıntaş, Hakan Fidan muhataplığı ve ŞİÖ ile NATO hakkında beş soru var. TBMM ayrıntısı kayıtta cevapsızlığın Gelen Kağıtlarda ilan edildiğini belirtiyor. Bir üyelik kararı veya fiilî NATO görüşmesi kaynakta açık."
+    }
+  ],
+  "excluded_post_cut": 2,
+  "unresolved_catalog_positions": [
+    86,
+    87,
+    140,
+    249,
+    251,
+    252,
+    253,
+    254,
+    255
+  ],
+  "read_characters": 32355,
+  "official_sources": {
+    "257-tbmm-signed.pdf": {
+      "path": "257-tbmm-signed.pdf",
+      "final_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y2/T7/WebOnergeMetni/e6e26125-16c2-4dcd-92d4-2619cba6f5e5.pdf",
+      "status": 200,
+      "bytes": 38872,
+      "sha256": "7b5b231d2b165f7e5579f728895b74676a48c03d71adea13790bd65f10fea8af",
+      "retrieved_at_utc": "2026-11-24T17:28:10.422449+00:00"
+    },
+    "250-tbmm-session-49.pdf": {
+      "path": "250-tbmm-session-49.pdf",
+      "final_url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/49/Basilmis/e159fbbd-bba0-46e8-8e94-7afed3d017e4.pdf",
+      "status": 200,
+      "bytes": 1543040,
+      "sha256": "47d7b48bbce96801b3e34386c6f88d6e27db93268600dbc8eeecd7468fca228c",
+      "retrieved_at_utc": "2026-11-24T17:34:59.375771+00:00"
+    }
+  },
+  "official_selections": {
+    "250-tbmm-session-49.pdf": {
+      "page_index": 146,
+      "printed_page": "395",
+      "page_text_sha256": "899f8e6a96fb994446bdd42bda71e7d561b1ea6fa91375028187a0aedf7e9c7c"
+    },
+    "257-tbmm-signed.pdf": {
+      "page_index": 0,
+      "reading_basis": "Görsel okuma",
+      "rendered_page_sha256": "a7523eedb74edb1e17703778d2c732c87640e2f5ea39ccaf56f270208f909035"
+    },
+    "257-tbmm-detail.html.bin": {
+      "sections": [
+        "7/13274, Başkanlığa geliş, muhatap ve son durum"
+      ]
+    }
+  },
+  "duplicate_rule": "Katalog bağlantıları tutuldu. Üçünde normalleştirilmiş makale metni önceden okunan yayımın gövdesiyle birebir aynı.",
+  "closure_refs": []
+}
