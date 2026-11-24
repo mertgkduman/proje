@@ -94,7 +94,8 @@ for suffix, name, date, label in (
         original_path=str(original), readable_path=str(readable)))
     insert("source_attribution", dict(version_id=version, kind="party_publication" if is_party else "official",
         publisher=source["publisher"], author="Gültekin Uysal" if is_party else None, social_handle=None,
-        published_at=date, date_precision="day", public_url=source["url"], basis=source["reading"]))
+        published_at=date if is_party else None, date_precision="day" if is_party else "unknown",
+        public_url=source["url"], basis=source["reading"]))
     if kind == "html":
         charset = source.get("passive_view", {}).get("http_charset")
         view = build_view(raw, source["url"], source_root, fetch_assets=False, http_charset=charset)
