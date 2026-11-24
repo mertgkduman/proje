@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-24T17:22:19+00:00
-Stopped at: TİP Istanbul summit verified; nine-party rehearsal 62603188, DEM workshop and Saadet census checks running
+Last session: 2026-11-24T17:38:49Z
+Stopped at: DEM Ankara workshop verified; merge 62603188, Saadet 62603695 and TİP/EMEP 7527 checks running
 Resume file: None

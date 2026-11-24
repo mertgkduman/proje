@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 25 | 24 | 62600646 |
-| DEM Parti | 83 | 12 | 62587929 / 62587933 |
+| DEM Parti | 84 | 12 | 62602872 / 62602874 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -508,3 +508,5 @@ TİP’in 15 Mayıs çağrısı ve 4 Temmuz 2026 İstanbul barış zirvesi karş
 TİP Parti Açıklamaları dizininde 40/190 gövde okundu. 31 Mart 2024 yerel seçimlerinde YSK kesin eki TİP için bir başkanlık kaydediyor. TİP’in 9 Nisan yayımı Hacıbektaş’ı desteklenen bağımsız aday üzerinden siyasi kazanım olarak açıklıyor. Seçilen adayların sıfatları Samandağ ve Hacıbektaş belediye kaynaklarında ayrı. [Beşinci okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-05/reading.json)
 
 Demokrat Parti kataloğundaki üç HTTP 500 satırı 28, 195 ve 82. sırada zaten okunan özgün yayımlara bağlandı. Üç normalleştirilmiş makale gövdesi eşleşti. Ayrı okunan 243 gövde ve iki kapsam dışı tarih aynı sayıda. Dokuz katalog satırı açık. 25 Haziran 2024 tarihli 7/13274 imzalı soru görselden okundu. 21 Ocak 2026 tarihli Altıntaş konuşması ve ortak önerge tutanakta. [Erişim ve kaynak makbuzu](../04-12-checks/party-news-access-039/reading.json)
+
+DEM Parti’nin 1–2 Kasım 2025 Ankara çalıştayı 84 olay ve 12 ilişkiyle çalışma çiftine eklendi. Altı düzenleyici ortak olayda, DEM’in kurumsal katkısı ayrı kanıtta. 3 Kasım sonuç metni yayın günüyle kayıtlı. Önceki denk söylem ve önerilerin sahadaki uygulanması açık. İstanbul başlıklı ayrı haberin ortak olay kimliği açık. İki görünüm ve bağımsız veri denetimi geçti. [Kaynak okuması](../04-06-checks/ankara-workshop-reading.json) [Bağımsız denetim](../04-06-checks/dem-ankara-workshop-62602872-independent.json)
