@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 86 | 12 | 62621426 / 62621428 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
-| DBP | 66 | 7 | 62619918 |
+| DBP | 67 | 7 | 62625217 |
 | EMEP | 83 | 79 | 62621978 |
 | Saadet Partisi | 37 | 33 | 62621740 / 62621747 |
 | Demokrat Parti | 81 | 52 | 62618726 |
@@ -596,3 +596,7 @@ Birleşik prova 14 62625117 ile başlatıldı. Dokuz doğrulanmış çiftin 578 
 TİP açıklama dizininde 136 özgün gövde okundu, 54 gövde açık. 2022 seçim kanunu açıklaması, kadın örgütlenmesi broşürü, sağlık emekçisi dayanışma çağrısı, 2021 okul açılışı, orman yangınları ve Paris Anlaşması çağrıları sonraki kurumsal kayıtlarla izleniyor. [14. dilim](../04-05-checks/tip-publication-catalog/party-statements-14/reading.json) [15. dilim](../04-05-checks/tip-publication-catalog/party-statements-15/reading.json) [16. dilim](../04-05-checks/tip-publication-catalog/party-statements-16/reading.json) [17. dilim](../04-05-checks/tip-publication-catalog/party-statements-17/reading.json)
 
 Birleşik prova 14, Slurm 62625117 ile tamamlandı. Bağımsız denetimde 551 olay, 384 ilişki, 204 etkin eşleşmemiş aday, 586 olay eş adı, 5.737 inceleme kökeni ve 597 ortak pasaj yetkisi doğrulandı. 768 karşılaştırma ve 408 eşleşmemiş aday bağlantısı iki okuyucu görünümünde bulundu. Haliç buluşmasında iki parti ilişkisi ve tarihsel Yeşil Sol temsilcilerinin eşleşmemiş katılımı aynı gerçekleşme kaydına bağlı. Ercüment Akdeniz’in konuşması EMEP ilişki bulgusunda. YÖK kararına TİP’in 14 Şubat ve Saadet’in 22 Şubat çağrıları ayrı ilişkilerle bağlı. Bütün 5.490 kapsam hücresi açık. [Bağımsız makbuz](wave4-merge-rehearsal-14-62625117-independent.json)
+
+DBP’nin Keskin Bayındır katılımı 62625217 ile doğrulandı. Bianet’in 24 Eylül Haliç haberi, dönemin DBP eş genel başkanı sıfatını ve salonda bulunanlar arasında sayıldığını gösteriyor. Önceki özgül parti açıklaması araştırması açık. Birleşik prova 14 daha önceki DBP çiftini kullanıyor. [DBP bağımsız doğrulama](../04-09-checks/halic-2022-dbp-62625217-independent.log)
+
+TİP dizininin 137–144 arasındaki sekiz gövdesi okundu, toplam 144/190. 13 Şubat 2021 tarihli 60. yıl yayımında anılan 1961 tarihsel kuruluşu, mevcut tüzel kişiliğin 2017 sicil başlangıcından ayrı tutuldu. [Okuma makbuzu](../04-05-checks/tip-publication-catalog/party-statements-18/reading.json)
