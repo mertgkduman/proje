@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-044",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T10:46:48.664508+00:00",
+  "reads": [
+    {
+      "post_id": 548,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/haksizliga-quot-dur-quot-diyecek-milli-gorus-var",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=haksizliga-quot-dur-quot-diyecek-milli-gorus-var",
+      "published_at": "2025-10-27T10:21:00+00:00",
+      "updated_at": "2025-10-27T10:21:00+00:00",
+      "accessed_at": "2026-11-24T10:46:48.664538+00:00",
+      "original_path": "party-news-bodies/548.json",
+      "sha256": "75aab8ddb79cc3292deb8606c55cbe0a0b26cc03a890717f9ac6706563dd6bf0",
+      "normalized_body_sha256": "781949d164db4bd4c410fd8615426737533e9124a40abee30f5ff9e5760f5faf",
+      "source_section_range": [
+        0,
+        5356
+      ],
+      "state": "examined",
+      "reading": "Gövde Arıkan’ın yeni nesil siyaset dili, dış politika, özgürlükler ve 2026 vergi/bütçe eleştirilerini aktarıyor; İzmirde gençlerle buluşmadan söz ediyor.",
+      "selected_passages": [
+        {
+          "start": 824,
+          "end": 903,
+          "exact": "Siyaseti dilini yeniden nezaketin, erdemin ve adaletin dili haline getirmektir!"
+        }
+      ],
+      "point": "Siyaset dili, dış politika ve bütçe eleştirisi.",
+      "statement": "Nezaket ve adalet merkezli siyasi dil ve dış politikada tutarlılık savunuluyor; 2026 vergi gelirlerinin kullanımına ilişkin eleştiri yapılıyor.",
+      "concrete_evidence": "Parti yayını açıklamayı kaydediyor, somut bir bütçe oyu veya dış politika işlemini tek başına kanıtlamıyor.",
+      "open_provenance": "API gövdesi açılış tanıtımı olmadan doğrudan alıntı içinde başlıyor; tam konuşmanın önceki kısmı ve etkinliğin kesin günü bilinmiyor. Ekonomik ve dış politika iddiaları bağımsız doğrulanmalı."
+    }
+  ],
+  "completed_pre_cut_bodies": 130,
+  "remaining_pre_cut_bodies": 519,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
