@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 76 | 73 | 62581748 |
 | Saadet Partisi | 30 | 26 | 62586191 |
-| Demokrat Parti | 65 | 49 | 62586052 |
+| Demokrat Parti | 69 | 50 | 62586195 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -440,3 +440,5 @@ Demokrat Parti’nin 2011, 2012, 2013 ve 2017 hesap yıllarına ait dört AYM ka
 3323 ile ilk esnaf desteği, 3929 ile bir aylık uzatma ve Ticaret Bakanlığının 2021 toplam ödemeleri ayrı belgelendi. Millî Eğitim Bakanlığının 11 Eylül yazısı ve Konya İl Müdürlüğünün 21 Eylül okul örneği kaydedildi. Türkiye genelinde fiilî eğitim katılımı ve tekil ödeme sonuçları açık. [Esnaf desteği](../04-12-checks/pandemic-2020-sources/merchant-support-reading.json) [Yüz yüze eğitim](../04-12-checks/pandemic-2020-sources/school-reopening-reading.json)
 
 Saadet’in 1/278 bütçe karşılaştırması 62586191 ile iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Bülent Kaya 20 Aralık 2024’te Saadet Partisi Grubu adına konuştu. Erişilen kesin cetvel 2025 bütçesinde ve 2023 kesin hesabında iki Ret oyu kaydediyor. Cetveldeki Yeni Yol kaydı, dönemsel konuşma sıfatından ayrı işlendi. Belgenin elektronik yayım günü açık. [Bütçe makbuzu](../04-11-checks/budget-1278-62586191.json) [Bağımsız denetim](../04-11-checks/budget-1278-62586191-independent.log)
+
+7253 karşılaştırması 62586195 ile iki HTML görünümünde ve bağımsız SQLite/JSON denetiminde doğrulandı. 21 Temmuz 2/3050 teklifi, 29 Temmuz kabulü, 31 Temmuz yayımı, belirli maddeler için 1 Ekim yürürlüğü ve 2021’de açıklanan temsilci atamaları ayrı. 2023 AYM kararının belirli 5651 hükümlerine ilişkin iptal kapsamı ve ileri yürürlük tarihi ayrı kaydedildi. Uysal’ın 24 Temmuz’daki koşullu değerlendirmesi ile 29 Temmuz açıklamasının kaynakları ayrı. Kesin kişi oyu açık. Dört tarihsel mali denetim kararı 62587061 ile denetimde. [7253 makbuzu](../04-12-checks/law-7253-62586195.json) [Bağımsız denetim](../04-12-checks/law-7253-62586195-independent.log)
