@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-11-24T09:16:26.508428+00:00",
+  "type": "research_candidates_only",
+  "source_date": "2024-07-02",
+  "source_refs": [
+    {
+      "id": "0406-sivas-2024-party",
+      "sha256": "d578745de6a34bebe468842af9120d7d25d97b0cca44258256bc239618a44b4a",
+      "url": "https://www.demparti.org.tr/tr/madimak-katliami/20178/",
+      "view": "5ca6427d496f2ab46dff1c4d1150831b"
+    },
+    {
+      "id": "0406-sivas-2024-tbmm",
+      "sha256": "bb1eba84d477f1451d13a51b956f825e16cb7899381ea1c4ed3327f564045299",
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/2/97/Tam/ea0a7bcb-b641-4f4d-9f3d-7f8d14dae6a7.html",
+      "view": "3c26693620cb42771043c8c7cb973bb0"
+    }
+  ],
+  "anchors": [
+    {
+      "id": "party-commission",
+      "exact": "araştırma komisyonunun kurulması elzemdir."
+    },
+    {
+      "id": "party-date",
+      "exact": "2 Temmuz 2024"
+    },
+    {
+      "id": "tbmm-motion",
+      "exact": "6131 grup numaralı"
+    },
+    {
+      "id": "tbmm-speaker",
+      "exact": "DEM PARTİ GRUBU ADINA İBRAHİM AKIN (İzmir)"
+    }
+  ],
+  "event_candidates": [
+    {
+      "event_id": "0406-sivas-2879-event",
+      "source_ids": [
+        "0406-sivas-2024-party",
+        "0406-sivas-2024-tbmm"
+      ],
+      "assessment": "1 Temmuz 2025 bireysel önergesinin araştırma konusu ile tarihsel ve somut konu benzerliği; ayrı ilişki değerlendirmesi gerekir.",
+      "limits": "İmzacı ve işlem 10/2880’den ayrıdır; eşleşme, gerçekleşme veya sonuç kararı verilmedi."
+    },
+    {
+      "event_id": "0406-sivas-2880-event",
+      "source_ids": [
+        "0406-sivas-2024-party",
+        "0406-sivas-2024-tbmm"
+      ],
+      "assessment": "2 Temmuz 2025 grup önergesinin konusu ve grup başkanvekilleriyle doğrudan önceki kaynak benzerliği; ayrı ilişki değerlendirmesi gerekir.",
+      "limits": "2024 ve 2025 ayrı önergeler ve gündem işlemleridir; ret veya sonuç diğerine aktarılmaz."
+    }
+  ],
+  "status": "open",
+  "not_promoted": true
+}
