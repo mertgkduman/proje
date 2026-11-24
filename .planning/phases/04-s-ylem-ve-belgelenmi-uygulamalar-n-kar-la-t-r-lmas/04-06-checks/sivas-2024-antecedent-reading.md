@@ -7,3 +7,8 @@
 **Ayrı aday değerlendirmeleri.** 1 Temmuz 2025 tarihli 10/2879, Meral Danış Beştaş ve 20 milletvekilinin ayrı başvurusudur. Araştırma konusu 2024 parti talebiyle doğrudan ilişkilidir; ortak tarih, imzacı veya birinin diğerini yerine getirdiği kanıtlanmış değildir. 2 Temmuz 2025 tarihli 10/2880, Koçyiğit ve Temelli'nin ayrı grup önergesidir; konu ve grup başkanvekilleri yönünden 2024 kaynağıyla güçlü doğrudan benzerlik vardır. 2025'te aynı gün ön görüşme gündemindeki karar, yalnız kaynaklandığı 10/2880 işlemine ilişkindir; 10/2879'a veya 2024 işlemine aktarılmaz.
 
 Bu okuma iki olay için ayrı kaynak adayları hazırlamaya yeterlidir; otomatik ilişki, yeni bulgu, doğrulanmış tutarlılık kararı veya kapanış değildir. 2024 önergesinin resmi esas numarası ve tam imzalı aslı ayrıca belirlenebilir; iki 2025 dosyasının sonraki esas işlemleri ayrıca izlenmelidir. Mevcut 75 olaylı canlı çift değiştirilmedi, render yapılmadı.
+
+
+## Ayrı ilişkilerin doğrulanması
+
+75/9 temelinden iki ilişki ve eski eşleşmemiş adayları koruyan ayrı eligible revizyonlar hazırlandı. `62568699` gerçek 75 olaylı snapshot üzerinde anlamsal doğrulama ve 10 kaynak inceleme hedefini geçti. `62569027` giriş, kaynak ve renderer kapıları; `62569034` bağımsız manifest, SQLite/JSON ve iki HTML görünümü denetimi COMPLETED 0:0. Eski kayıtlar korundu; 2879 sonuç alanı boş, 2880 sonuç alanı yalnız ön görüşme takvimi kararına aittir. Kesin 75/11 çift `d0277518`; önizleme manifest SHA-256 `2e408a5f23da492f04f97ad8b74ba7ee4d9242297639521e8dd90598ab8b9acd`. Araştırma komisyonlarının açılışı, sonuçları ve kapsam kapanışı açık. İlk semantik denemeler `62568682` ve `62568689` hataları ile birlikte saklanmıştır.
