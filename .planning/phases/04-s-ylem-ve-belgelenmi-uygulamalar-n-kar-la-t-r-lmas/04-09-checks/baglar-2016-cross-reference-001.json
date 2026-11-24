@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "2015 özgün PDF indeks 237, 238, 262 ve 2016 özgün PDF indeks 22, 35, 37 metin katmanı karşılaştırıldı. 2016 indeks 35 ve 37 ayrıca yerel Poppler/Cairo görüntüsünden okundu.",
+  "sources": [
+    {"year": 2015, "path": "data/practices/sources/dbp/objects/6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3/original.pdf", "sha256": "6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3", "indexes": [237, 238, 262]},
+    {"year": 2016, "path": "data/practices/sources/dbp/objects/8364a09ace89fc806e5d65ea578e6eef8054bcaf54f3d41ddf9c7c5e298ffca1/original.pdf", "sha256": "8364a09ace89fc806e5d65ea578e6eef8054bcaf54f3d41ddf9c7c5e298ffca1", "indexes": [22, 35, 37]}
+  ],
+  "comparisons": [
+    {"prior": "2015/256, 11 Aralık 2015", "later": "2016/35, 3 Şubat 2016", "finding": "Her iki belgede Nezire Baran imzalı 2015 belediye gelir ve gider araştırması ile Plan-Bütçe Komisyonu örtüşür: önce havale, sonra rapor kabulü. Sonraki komisyon metni ilk karar numarasını tekrarlamaz. Raporun gelir/gider kalem ve toplamları görüntüden de okundu; kalemler kendi toplamlarına eşit. Muhasebe fişleri ve nihai hesap ayrı."},
+    {"prior": "2015/232, 6 Kasım 2015", "later": "2016/33, Şubat 2016", "finding": "Her iki belgede Şenay Pektaş ve Ramazan Özçelik imzalı 2. Lig kadın basketbol takımı araştırması ve Gençlik ve Spor Komisyonu örtüşür: önce havale, sonra rapor kabulü. 2016/33 görselinde başlık 2 Şubat, sonuç satırı 3 Şubat; çelişki korunur. Maç sonucu ve oyuncu kayıtları ayrı."},
+    {"prior": "2015/231, 6 Kasım 2015", "later": "2016/20, 7 Ocak 2016", "finding": "Önceki karar Kardelen-1'in son altı ayının araştırılmasını Halkla İlişkiler Komisyonuna sevk eder; sonraki aynı komisyonun aynı kadın evine ilişkin raporunu kabul eder. Sonraki metin ilk karar sayısını, önceki önerge imzalarını ve altı aylık dönemi belirtmez; özdeş sevkin sonucu olduğu kesin sayılmaz."}
+  ],
+  "limits": ["İşlemler belediye organlarınındır; kaynaklar parti organı talimatı veya kişinin parti adına oyunu kurmaz.", "Komisyonun tarih ve miktar anlatımları bağımsız hesap, ödeme veya bireysel sonuç kaydı değildir.", "İncelenen iki görsel özgün PDF sayfasıdır; PDF baytları değiştirilmedi."],
+  "closure_refs": []
+}
