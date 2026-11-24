@@ -85,17 +85,25 @@ records['practice_source_party'].extend(grants)
 print('MATERIALIZED_REHEARSAL',len(grants),flush=True)
 roots = {_digest(entry):data/'practices/sources'/row['identity']
          for row in input_rows for entry in json.loads(row['raw'])['entries']}
-job = os.environ['SLURM_JOB_ID']
+validation_job = os.environ['SLURM_JOB_ID']
+existing_job = os.environ.get('GSD0404_REHEARSAL_EXISTING_JOB')
+job = existing_job or validation_job
+assert job.isdecimal()
 pointer = data/'current.json'
 before = sha256(pointer.read_bytes()).hexdigest()
 base_id = inventory['base_release']
 assert json.loads(pointer.read_bytes())['release_id']==base_id
 assert before=='5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7'
 destination = data/'.staging'/f'gsd-wave4-rehearsal-preview-{job}'
-with tempfile.TemporaryDirectory(prefix='gsd-wave4-rehearsal-') as directory:
-    preview = Path(directory)/'preview'
-    _render_practice_preview(payload,preview,inventory,base_id,_validated_merge_roots=roots)
-    shutil.copytree(preview,destination)
+if existing_job is None:
+    with tempfile.TemporaryDirectory(prefix='gsd-wave4-rehearsal-') as directory:
+        preview = Path(directory)/'preview'
+        _render_practice_preview(payload,preview,inventory,base_id,_validated_merge_roots=roots)
+        shutil.copytree(preview,destination)
+else:
+    assert destination.is_dir()
+    before_build = here / f'wave4-merge-rehearsal-{exercise["number"]}-{job}-slurm.log'
+    assert ('STRUCTURAL_REHEARSAL_REPRODUCED ' + rehearsal['output_sha256']) in before_build.read_text()
 release, = (destination/'releases').iterdir()
 saved = json.loads((release/'records.json').read_bytes())
 manifest = json.loads((release/'manifest.json').read_bytes())
@@ -152,7 +160,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         expected_passages = {'0405-tip-climate-2025-ballot-bas-p', '0405-tip-climate-2025-ballot-kadigil-p',
                              '0405-tip-climate-2025-ballot-sik-p', '0410-emep-climate-2025-ballot-bayhan-p',
                              '0410-emep-climate-2025-ballot-karaca-p'}
-        if exercise['number'] == '05':
+        if exercise['number'] in {'05', '06'}:
             expected_parties.add('dem')
             expected_passages.update('0406-iklim-final-' + name + '-vote' for name in ('akin', 'kordu', 'koca'))
             contributions = db.execute(
@@ -241,7 +249,7 @@ for identity, state in active_candidates.items():
             target = f'{view}-unmatched-{identity}'
             assert page.count(f'id="{target}"') == 1 and f'href="#{target}"' in page, target
 assert sha256(pointer.read_bytes()).hexdigest()==before
-result = dict(job=job,rehearsal=exercise['number'],active_unmatched=sum(state=='unmatched' for state in active_candidates.values()),preview=str(release.resolve()),manifest_sha256=sha256((release/'manifest.json').read_bytes()).hexdigest(),
+result = dict(job=job,validation_job=validation_job,rehearsal=exercise['number'],active_unmatched=sum(state=='unmatched' for state in active_candidates.values()),preview=str(release.resolve()),manifest_sha256=sha256((release/'manifest.json').read_bytes()).hexdigest(),
               events=len(records['practice_event']),relations=len(records['practice_relation']),
               source_permissions=len(grants),shared_keys=sorted(joined),canonical_pointer_sha256=before,
               closures=len(records['practice_closure']))

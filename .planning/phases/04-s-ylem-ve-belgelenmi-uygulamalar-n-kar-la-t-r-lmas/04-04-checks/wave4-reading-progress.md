@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 64 | 9 | 62530965 |
+| DEM Parti | 72 | 9 | 62557779 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -262,4 +262,11 @@ EMEP’in göç politikasıyla ilgili 7/2134 yazılı sorusu ve 2022 parti açı
 Saadet’in arşivinde 595 ve 592 numaralı iki gövde okundu. Toplam 96/649, 553 gövde açık. Ocaktaki iki görüşme 25 olay ve 21 ilişki içeren aday pakette ayrı işlendi. İlk önizleme girdi ve kaynak denetimlerini geçti. Son kart denetiminde sonuç cümlesi, kartın gösterdiği kanıt cümlesiyle eşleştirildi. 62541273 girdi, kaynak ve önizleme denetimlerini tamamladı. İki kartın görüntülenen ifadeleri ve kayıtların tam adları ayrı kontrollerle doğrulandı. Salt okunur 62544651 işi ve bağımsız denetim geçti. [Önizleme](../04-11-checks/january-visits-62541273.json) [017. okuma](../04-11-checks/party-news-017-reading.json) [Ocak kaynak okuması](../04-11-checks/january-visits-source-reading.md)
 
 
-EMEP’in Gaziantep deprem çalıştayı, Yeğin’in üyeliği ve gençlik konferansı art arda üç doğrulamadan geçti. Çalıştayın açıklama tarihi ile etkinliğin kesin günü ayrı. Konferans duyurusu, etkinliğin yapıldığını gösteren bağımsız kayıtla eşleştirildi. Çalıştay önerilerinin uygulanması açık. [Çalıştay](../04-10-checks/earthquake-workshop-2025-sourcekind-62530567-receipt.json) [Üyelik](../04-10-checks/yegin-membership-sourcekind-62530568-receipt.json) [Konferans](../04-10-checks/youth-conference-sourcekind-62530588-receipt.json)
+EMEP’in Gaziantep deprem çalıştayı, Yeğin’in üyeliği ve gençlik konferansı art arda üç doğrulamadan geçti. Çalıştayın açıklama tarihi ile etkinliğin kesin günü ayrı. Konferans duyurusu, etkinliğin yapıldığını gösteren bağımsız kayıtla eşleştirildi. Çalıştay önerilerinin uygulanması açık. [Çalıştay](../04-10-checks/earthquake-workshop-2025-sourcekind-62530567-receipt.json) [Üyelik](../04-10-checks/yegin-membership-sourcekind-62530568-receipt.json) [Konferans](../04-10-checks/youth-conference-2022-sourcekind-62530588-receipt.json)
+
+
+DEM Parti’nin 25 ve 26 Haziran iklim önergeleri ile 2 Temmuz 10/2881 tekstil gündemindeki katkısı doğrulandı. 10/2881 dinamik sicilinin tarihi işlem gününden ayrı tutuldu. DEM kaydında önceki söylem eşleşmesi açık. [Tekstil](../04-06-checks/dem-textile-2881-62554446.json) [26 Haziran](../04-06-checks/dem-iklim-102-62557779.json)
+
+Saadet’in 591 ve 586 numaralı gövdeleri okundu. 98/649 okundu ve 551 gövde açık. Demokrat Parti’de 52–56 numaralı beş gövde okundu. 54 gövde incelendi, iki gövde kesimden sonra ve 201 kayıt açık. Manisa don haberindeki hektar ve dekar ifadeleri ayrı saklandı. [Saadet 018](../04-11-checks/party-news-018-reading.json) [Saadet 019](../04-11-checks/party-news-019-reading.json) [Demokrat Parti 004](../04-12-checks/party-news-004-reading.json)
+
+Altıncı yalıtılmış provada 463 parti olay satırından 443 olay ve 320 ilişki üretildi. Ortak 10/2881 ve 10/2882 işlemlerinin iki ayrı olay olduğu ve katkılarının kendi kanıtlarına bağlı kaldığı doğrulandı. On bir ortak olay birleştirildi ve on iki ortak olay adayı açık. İlk iş iklim oylaması için önceki provanın parti beklentisini kullandı. Düzeltilen salt okunur denetim, mevcut önizlemede geçti. Bağımsız denetim on SQLite ve JSON tablosunu, 640 ilişki ve 306 açık aday bağlantısını, arşiv özeti ve ana veri sürümünü doğruladı. Kapsam kapanışı sıfır. [Doğrulama kaydı](wave4-merge-rehearsal-06-62557787.json)
