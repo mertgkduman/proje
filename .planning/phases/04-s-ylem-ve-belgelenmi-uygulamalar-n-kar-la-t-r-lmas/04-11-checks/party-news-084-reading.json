@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-084",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:32:46.011093+00:00",
+  "reads": [
+    {
+      "post_id": 496,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/adada-konusanlarin-siyasete-katildigi-salonda-konusanlarin-nezarete-atildigi-bir-surec-hicbir-yaraya-merhem-olmaz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=adada-konusanlarin-siyasete-katildigi-salonda-konusanlarin-nezarete-atildigi-bir-surec-hicbir-yaraya-merhem-olmaz",
+      "published_at": "2025-01-07T18:58:52+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:32:46.011093+00:00",
+      "original_path": "party-news-bodies/496.json",
+      "sha256": "2b914a7bb548ffc8ee6a635180183749b43db3b6d8bb8992256a9fa550a6b9ad",
+      "normalized_body_sha256": "21c7c3281b3d8ef565ef5fd0d502d4be38d762498fa06254bce983da0790dffd",
+      "source_section_range": [
+        0,
+        13419
+      ],
+      "state": "examined",
+      "reading": "Arıkan 2024 ekonomisi ve bölgesel durumu değerlendirdikten sonra süreçte şeffaflık ve katılım için altı öneri sıralıyor.",
+      "selected_passages": [
+        {
+          "start": 9719,
+          "end": 9807,
+          "exact": "Tüm siyasi partiler ve toplumsal aktörler sürece etkin mekanizmalarla dahil edilmelidir."
+        }
+      ],
+      "point": "Siyasi partilerin ve toplumsal aktörlerin sürece etkin katılımı.",
+      "statement": "Arıkan çözüm sürecine tüm siyasi ve toplumsal aktörlerin etkin mekanizmalarla dahil edilmesini istiyor.",
+      "concrete_evidence": "ANKA benzer uzun açıklamayı il başkanları ve il müfettişleri toplantısı bağlamında 4 Ocak 2025 12:19 yayın etiketiyle aktarıyor: https://ankahaber.net/haber/detay/mahmut_arikan_adada_konusanlarin_siyasete_katildigi_salonda_konusanlarin_nezarete_atildigi_bir_surec_hicbir_yaraya_merhem_olmaz_213584 ; party-496-anka.html SHA256 6b87c9cbe0d6bf5eef664a24831eb837ed0ee5aa6aea17ebae28fb5c490c0446. ANKA erişilen sayfa 1 Haziran 2026 güncellemesi gösteriyor.",
+      "open_provenance": "Parti API etiketi 7 Ocak 2025, ANKA ilk yayın etiketi 4 Ocak 2025; bunlar ayrı kaynağın yayın zamanlarıdır, yeniden yayımlama veya geçmiş sürüm kesinliği kanıtlanmadı. 497’deki 8 Ocak ayrı grup konuşması benzer ifade kullansa da otomatik aynı etkinlik sayılmaz. Gazete Duvar özgün sayfası olağan curl ile HTTP 403 verdi; içerik dosyası olarak kaydedilmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 170,
+  "remaining_pre_cut_bodies": 479,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
