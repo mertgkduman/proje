@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 33 | 31 | 62617736 |
+| TİP | 35 | 33 | 62619283 |
 | DEM Parti | 84 | 12 | 62602872 / 62602874 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -562,3 +562,5 @@ TİP Parti Açıklamaları dizininde 73–80 arası yedi metin gövdesi ve 77. s
 Demokrat Parti’nin Yassıada oteli karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 5 Eylül 2022 Uysal itirazı, Bakanlığın 2022/2 şartnamesi ve 18 Ekim müzakeresi ayrı. Ada Gazetesi müzakereye iki şirketin katıldığını bildirdi. Haberdeki sonraki onay ve devir beklentisiyle imzalı tahsis işlemi ayrı. 2021 Uysal açıklamasının Gazete Zebra aktarımı ve 2024 işletmeci duyurusu kaynak makbuzunda. Parti kataloğunda 243 özgün gövde okundu, dokuz satır açık. Çalışma çifti 81 olay ve 52 ilişki. [Kaynak okuması](../04-12-checks/party-news-access-040/reading.json) [Önizleme makbuzu](../04-12-checks/yassiada-2022-dp-62618726.json) [Bağımsız denetim](../04-12-checks/yassiada-2022-dp-62618726-independent.log)
 
 TİP Parti Açıklamaları dizininde 81–88 arası sekiz gövde ve 21.321 karakter okundu. Son toplam 88/190. İliç’te 2022 Bakanlık denetimi, işletmenin miktar beyanı, yaptırım ve geçici durdurma yazılı soru cevabında ayrı. TİP’in suç duyurusu ve takipsizlik aslı açık. Türkiye’nin Çocuk Hakları Sözleşmesi çekincesi BM’nin özgün tevdi sayfasında. Glasgow ve COP27 kararlarının ilgili bölümleri çevrimiçi resmî metinden okundu, özgün PDF aktarımı açık. [On birinci okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-11/reading.json)
+
+TİP’in deprem sonrası yapılaşma ve yükseköğretim karşılaştırmaları iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. 9 Mart açıklaması 5 Nisan 7452 kabulü, 10 Nisan yayımı ve 2. maddenin ilgili fıkrasıyla karşılaştırıldı. Parsel ve konut uygulaması açık. 14 Şubat yüz yüze açılış çağrısı, 17 Şubat uzaktan öğretim kararı ve 30 Mart YÖK kararı ayrı. 3 Nisan’dan itibaren isteğe bağlı yüz yüze seçenek, uzaktan öğretimle birlikte yürüdü. Kurum kararları ve tek tek derslerde katılım açık. TİP çalışma çifti 35 olay ve 33 ilişki. [Önizleme makbuzu](../04-05-checks/tip-earthquake-2023-62619283.json) [Bağımsız denetim](../04-05-checks/tip-earthquake-2023-62619283-independent.log)
