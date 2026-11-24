@@ -14,7 +14,7 @@
     "pdf_page_index": 0,
     "page_text_sha256_utf8": "12bfb954fa358aef38f04452d2f4f6c4a9579b58aaf66c1e4641dd048587b1e5",
     "page_text_characters": 1448,
-    "reading_method": "Özgün PDF baytının hash'i doğrulandı ve 0. sayfanın Poppler metin katmanı baştan sona okundu; görüntü alma denemesi zaman aşımına uğradı. Görsel doğrulama açık."
+    "reading_method": "Özgün PDF baytının hash'i doğrulandı; 0. sayfanın Poppler metin katmanı ve yerel Poppler/Cairo ile 2x üretilen görüntüsü baştan sona okundu. Görüntüde karar numarası, tarih, önerge imzacıları, 36 üye, 37 geçerli oy, seçilen beş kişi ve meclis başkanı sıfatı metinle örtüşüyor. Önceki web ekran görüntüsü zaman aşımı yerel okumayla aşıldı."
   },
   "decision": {
     "number": "2016/1",
@@ -34,7 +34,20 @@
   "next_leads": [
     "2016 denetim komisyonu raporunu, ilgili meclis gündem ve kararlarını ayrı belge ve tarihleriyle ara; rapor yokluğundan denetim yapılmadığı sonucu çıkarma.",
     "Seçilen kişilerin aday gösterme ve dönemsel parti kimliği belgelerini ara; gizli oy tercihlerini veya kurumsal DBP tutumunu atfetme.",
-    "PDF 0. sayfasını görsel olarak doğrula; 2016 derlemesinin geri kalanı bu makbuzla okunmuş sayılmaz."
+    "2016 derlemesinin geri kalanı bu makbuzla okunmuş sayılmaz."
   ],
+  "follow_up_2026_11_24": {
+    "visual": "Yerel Poppler/Cairo /tmp/gsd-dbp-baglar-2016-1.png, 1191 x 1684; aynı PDF indeks 0 görüntüsünün tamamı okundu. Yeniden üretim: baglar-2016-page-render.py. Bu görüntü özgün PDF baytlarının yerini almaz.",
+    "primary_queries": [
+      {"query": "site:baglar.bel.tr \"2016\" \"denetim komisyonu\" \"2015\" \"raporu\"", "result": "Bağlar 2016 faaliyet raporu ve 2016 karar derlemesi bulundu; seçilen 2016/1 komisyonuna özgü rapor bu sorgudan saptanmadı."},
+      {"query": "\"Bağlar Belediyesi\" \"2016\" \"denetim komisyonu raporu\" 2015", "result": "Özgün 2016/1 komisyon raporuyla eşleşen sonuç saptanmadı."},
+      {"query": "\"Birsen Kaya Akat\" \"DBP\" \"2016\" site:gov.tr", "result": "Adayın 05.01.2016 günündeki parti üyeliğini gösteren birincil sicil bulunmadı; 2017 ajans haberi ikincil kaynak olarak zaten kayıtlı."},
+      {"query": "\"Birsen Kaya Akat\" \"DBP\" \"2016\" site:tbmm.gov.tr", "result": "Aynı güne ait parti üyeliğini veya grup yetkisini doğrulayan TBMM kaydı bu sorguda bulunmadı."},
+      {"query": "\"Birsen Kaya Akat\" \"Demokratik Bölgeler\" 2016 belediye başkanı site:gov.tr", "result": "05.01.2016 üyelik durumunu doğrudan ispatlayan birincil kayıt bu sorguda bulunmadı."}
+    ],
+    "targeted_text_scan": "Aynı özgün 252 sayfalık 2016 karar PDF'sinin Poppler metin katmanında 'Denetim Komisyonu Raporu', 'Denetim Komisyon Raporu', 'Denetim Komisyonu tarafından' ve 'Denetim Komisyonunun' dizeleri aranıp eşleşme bulunmadı. Genel 'denetim' araması 0, 2, 20, 33, 34, 37, 38, 54, 58, 124, 138, 152, 171, 215, 236 ve 243 indekslerinde eşleşti; çoğu başka denetim veya müdürlüklerdir. Bu yalnız metin katmanı dizgi aramasıdır, 251 sayfanın anlamca veya görüntüyle okunması ve raporun yokluğu değildir.",
+    "other_primary_lead": "Belediyenin https://www.baglar.bel.tr/Content/uploads/911abed3-beea-4fad-b686-2d0821c1772b.pdf adresindeki '2016 yılı faaliyet raporu' arama motorunda denetim komisyonunu iç kontrol aktörleri arasında genel olarak anar; bulunan pasaj 2016/1'e bağlı somut denetim raporunu tanımlamaz. Aynı çevrimiçi metnin sonundaki güvence beyanı 2015 yılı ve 30.03.2016 tarihini taşır; kapak/yıl ile iç tarih arasındaki ilişki özgün bayt ve görüntüyle ayrıca incelenmeden çözülmüş sayılmamalıdır.",
+    "unresolved": "2016/1 ile bağlanabilen özgün denetim raporu, tutanak/teslim tarihi ve 05.01.2016 gününe özgü ayrı DBP üyelik ya da yetki belgesi açık. Kişisel oy ve gerçekleşmiş denetim iddiası yok; kapsam kapanışı yapılmadı."
+  },
   "closure_refs": []
 }
