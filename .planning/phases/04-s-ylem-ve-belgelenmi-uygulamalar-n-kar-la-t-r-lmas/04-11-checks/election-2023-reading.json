@@ -1,0 +1,15 @@
+{
+  "party_post_id": 380,
+  "statement_local_date": "2023-01-18",
+  "call": "Bugün seçim kararı alınsın, en geç 2 ay içerisinde de seçime gidelim.",
+  "date_corroboration": "18 Ocak 2023 saat 12.44 tarihli AjansHaber metni aynı çağrıyı aktarıyor. API zaman damgasının Türkiye yerel günü de 18 Ocak.",
+  "documents": [
+    {"path":"election-2023-jan18-news-original.html","url":"https://ajanshaber.com.tr/haber/karamollaoglu-en-gec-iki-ay-icinde-secime-gidelim","sha256":"9c678ba49643d2937fdecd94aa26a5632ee51935948ce701206a6d4cd647d9f0","retrieved_at_utc":"2026-11-24T22:24:36.620561+00:00","inspection":"18 Ocak tarihli tam haber ve çağrı okundu."},
+    {"path":"election-2023-rg-121-original.pdf","url":"https://www.resmigazete.gov.tr/eskiler/2023/03/20230310M1-1.pdf?download=1","sha256":"ab8d19b510c68d8abd8452e378e4778e02fc9c5671a7db4e81ccacdb81612a9d","retrieved_at_utc":"2026-11-24T22:15:19.907372+00:00","inspection":"Tek sayfa ve Cumhurbaşkanı imzası görsel olarak okundu. Metin katmanında yalnız başlık ve imza bulunduğundan karar cümlesi görüntüden okundu."},
+    {"path":"election-2023-ysk-90-original.pdf","url":"https://www.resmigazete.gov.tr/eskiler/2023/03/20230310M2-1.pdf?download=1","sha256":"0cd4c92f04add5514330b42fc98222054685b735f5a308045e6306bf43783058","retrieved_at_utc":"2026-11-24T22:22:50.608144+00:00","inspection":"Üç sayfanın tümü görsel okundu. İlk sayfa yalnız başlık metni içeriyor, 1 ve 2 numaralı sayfa indekslerinin metin katmanı boş. 2023/90 kararı 14 Mayıs oy verme gününü belirliyor."},
+    {"path":"election-2023-tbmm-first-original.html","url":"https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/28/1/1/Tam/3fa77d2f-e0ad-452d-81a1-83949e1c8487.html","sha256":"bdc650244359c7b5156260fd608b7b8ab84db70faf239ee434afbae81cb350c5","retrieved_at_utc":"2026-11-24T23:12:03.720841+00:00","inspection":"2 Haziran 2023 tarihli birinci birleşim başkan konuşmasında 14 Mayıs milletvekili seçimi ve Cumhurbaşkanı seçiminin ilk turunun yapıldığı açıkça anlatılıyor."}
+  ],
+  "time_comparison": "18 Ocak 2023 çağrısında bugün karar ve en geç iki ay içinde oy verme isteniyor. İki takvim ayı 18 Martta doluyor. 10 Mart kararı çağrıdan 51 gün sonra, 14 Mayıs oy verme günü çağrıdan 116 gün sonra ve karardan 65 gün sonra. YSK 90 kararı ile oy verme ayrı olgulardır.",
+  "limits": "Cumhurbaşkanının kararı ve YSK gün belirleme yetkisi ayrı. Çağrının karar üzerinde etkisi kaynaklarda gösterilmiyor. 18 Mart takvim sınırı, gerçekleşen kararın 10 Martta alınmış olmasından bağımsız olarak 18 Ocak çağrısının doğal takvim hesabıdır.",
+  "access_observations": "YSK 2023/99 özgün sitesi yerel erişimde TLS bağlantısını sıfırladı. 2023/90 Resmî Gazete dosyası ilk denemede zaman aşımı verdi, olağan tekrar ve download=1 ile erişildi. Erişilemeyen 99 dosyası okunmuş sayılmadı."
+}
