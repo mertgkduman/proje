@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-180",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T18:45:34.779574+00:00",
+  "reads": [
+    {
+      "post_id": 401,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/hirsiza-hirsiz-isgalciye-isgalci-katile-katil-zalime-ise-zalim-diyemediler",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=hirsiza-hirsiz-isgalciye-isgalci-katile-katil-zalime-ise-zalim-diyemediler",
+      "published_at": "2023-10-10T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T18:45:34.779574+00:00",
+      "original_path": "party-news-bodies/401.json",
+      "sha256": "c5e2405af4bb749342c98dac6fe74c0f1bbc0ac72f0e59ad1be66072e337fc1a",
+      "normalized_body_sha256": "e2296e8021592319811c6de4f16c9ae7e996a92544496c00d2dbd115fb1abe3d",
+      "source_section_range": [
+        0,
+        11033
+      ],
+      "state": "examined",
+      "reading": "Karamollaoğlu grup konuşmasında Gazze ve emekliye tek seferlik ödeme açıklaması yapıyor.",
+      "selected_passages": [
+        {
+          "start": 10294,
+          "end": 10368,
+          "exact": "tek seferliğine mahsus verilecek 5 bin lira ikramiyeyi kabul etmediğimizin"
+        }
+      ],
+      "point": "Gazze ve tek seferlik emekli ödemesi değerlendirmesi.",
+      "statement": "Genel başkan çalışmayan emekliye sınırlanan bir defalık 5 bin lira ödemeyi kabul etmediklerini söylüyor.",
+      "concrete_evidence": "Parti gövdesi bu somut ödeme miktarını ve sınırlama eleştirisini konuşmaya atfediyor.",
+      "open_provenance": "İlgili özgün yasa, dönem ve Meclis işlem sonucu bu dilimde yeniden eşleştirilmedi; açıklama tek başına nihai grup oyu değildir. Dış politikaya dair tarihsel ve olgusal iddialar bağımsız doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 266,
+  "remaining_pre_cut_bodies": 383,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü; blok sonları korundu, etiketler ve boş satırlar kaldırıldı."
+}
