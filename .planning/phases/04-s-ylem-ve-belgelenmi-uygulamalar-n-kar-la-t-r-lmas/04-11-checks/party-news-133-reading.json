@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-133",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T15:28:16.140156+00:00",
+  "reads": [
+    {
+      "post_id": 447,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/simdi-iktidara-yuruyus-zamanidir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=simdi-iktidara-yuruyus-zamanidir",
+      "published_at": "2024-11-23T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T15:28:16.140156+00:00",
+      "original_path": "party-news-bodies/447.json",
+      "sha256": "49539e45897d1dca10b59d2f314883161749dae49278bbb3c051e3e7f604f85c",
+      "normalized_body_sha256": "ce62e9d4284cfbca64c8500dbd1f8f1a64ed16c4eb7d7ca3eb90bc46c3af1c83",
+      "source_section_range": [
+        0,
+        6412
+      ],
+      "state": "examined",
+      "reading": "Kongre tertip heyeti başkanı Arslan Ateş açılış konuşmasında partinin siyasal hedeflerini anlatıyor.",
+      "selected_passages": [
+        {
+          "start": 5577,
+          "end": 5610,
+          "exact": "Şimdi iktidara yürüyüş zamanıdır."
+        }
+      ],
+      "point": "Kongrede açılış ve siyasal hedefler.",
+      "statement": "Parti haberine göre Atmaca teklifin belirli köy maddesini desteklerken teklifin geneline Şimdi iktidara yürüyüş zamanıdır. ifade ediyor.",
+      "concrete_evidence": "30 Kasım tarihli parti sayfası ilk GİK toplantısı ve üye listesini bildiriyor; Şimdi iktidara yürüyüş zamanıdır. aynı dönem konuşmacısının parti yönetimindeki rolü için destekleyici parti kaynağıdır.",
+      "open_provenance": "Siyasi hedef genel niteliktedir, tek başına belirli bir kurumsal işlem veya sonraki sonucu kanıtlamaz. API 23 Kasım 21:00 UTC etiketiyle kongrenin yerel günü ayrıca değerlendirilir."
+    }
+  ],
+  "completed_pre_cut_bodies": 219,
+  "remaining_pre_cut_bodies": 430,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
