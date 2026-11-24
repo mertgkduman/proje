@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 76 | 11 | 62571175 / 62571180 |
+| DEM Parti | 77 | 11 | 62576233 / 62576239 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -361,3 +361,11 @@ Demokrat Parti 151–155. yayın düğümlerinde 150/257 gövdeye ulaştı. 105 
 EMEP’in 265. dilimindeki sekiz Kürtçe gövde ile önceki metnin son bölümü okundu. Roboski için 49976/16 numaralı AİHM kararının özgün Fransızca nüshası ve Bakanlığın gayriresmî Türkçe çevirisi incelendi. Karar, iç hukuk yollarının tüketilmesi şartına ilişkin oybirliğiyle kabul edilemezlik hükmünü ve yazılı bildirim gününü ayrı gösteriyor. [265 dil okuması](../04-10-checks/party-api-265-language-reading.json) [AİHM kaynak okuması](../04-10-checks/encu-49976-sources/reading.json)
 
 EMEP’in 26 Ekim 2021 tarihli ret çağrısı, aynı günkü 3/1704 Genel Kurul kabulüyle iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 1310 sayılı kararın 28 Ekim yayımı ve 30 Ekim süre başlangıcı ayrı belgelere dayanıyor. Kişisel oy, sayısal oy dağılımı ve yetkinin fiilî kullanımı açık. [Önizleme makbuzu](../04-10-checks/tezkere-1310-62575744.json) [Bağımsız denetim](../04-10-checks/tezkere-1310-62575744-independent.log)
+
+DEM Parti için 9 Nisan 2025 tarihli 74. birleşimde Ayten Kordu’nun 2/2927 hakkındaki grup konuşması iki HTML görünümü ve bağımsız veri denetiminden geçti. Başkan, konuşma yetkisini DEM Parti grubu olarak duyurdu. Teklifin geri çekilip yeniden hazırlanması yönündeki talep kaynaklı. Önceki bağımsız açıklama, kişisel oy ve sonraki sonuç eşleme dışında açık. [Önizleme makbuzu](../04-06-checks/dem-iklim-74-kordu-62576233.json) [Bağımsız denetim](../04-06-checks/dem-iklim-74-kordu-62576233-independent.json)
+
+Demokrat Parti 156–160. yayınlarla 155/257 gövdeye ulaştı. 100 gövde açık ve iki yayın kapsam tarihinden sonra. İmzalı 1/284 metni, 7414 kabul metni, kürsü sayımı, kesin oy cetveli ve 7490 kesin hesap kaynaklandı. Kesin cetvel 265 kabul, 117 ret ve iki mükerrer, kürsü sayımı 266 kabul ve 117 ret. İki Demokrat Parti milletvekilinin kesin sonucu KATILMADI. [020. dilim](../04-12-checks/party-news-020-reading.json) [Bütçe kaynakları](../04-12-checks/budget-7414-sources/reading.json)
+
+EMEP İngilizce programının 70.418 karakterlik özgün API gövdesi baştan sona okundu. Sondaki Kasım 2016 ibaresi ile 2020 API yayım günü ayrı. Roboski için 24 Şubat 2016 AYM 2014/11864 özgün kararı, AİHM’in 10 Nisan 2018 hükmü ve 17 Mayıs yazılı bildirimi incelendi. EMEP Bölge Örgütü’nün sonraki özgün açıklaması arşivlendi. İki eşleşmemiş kararın adayı 62578062 ile denetleniyor. [Programın son aralıkları](../04-10-checks/party-api-3596-english-after-26000-reading.json) [AYM kaynak okuması](../04-10-checks/encu-49976-sources/domestic-reading.json)
+
+Saadet’in ücretsiz yemek ve su çağrısı için 10/3274 imzalı İYİ Parti araştırması, 23 Ekim ön görüşme işlemi ve MEB’in 7/49037 yanıtı okundu. Sicilde araştırma Gündemde. Bakanlık yanıtı belirli gruplarda ücretsiz öğle yemeği bildiriyor. Bütün öğrenciler, temiz su ve sonraki doğrudan Saadet işlemi açık. Arşiv 149/649 gövdeye ulaştı ve 500 açık. [Okul yemeği kaynak zinciri](../04-11-checks/school-meal-532-trace.md) [063. dilim](../04-11-checks/party-news-063-reading.json)
