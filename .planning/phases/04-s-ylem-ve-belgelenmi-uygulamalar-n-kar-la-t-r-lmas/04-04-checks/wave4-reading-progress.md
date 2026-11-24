@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 77 | 74 | 62586033 / 62588487 |
-| Saadet Partisi | 30 | 26 | 62586191 |
+| Saadet Partisi | 31 | 27 | 62588702 |
 | Demokrat Parti | 73 | 50 | 62587061 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -456,3 +456,7 @@ DEM Parti’nin 26 Şubat 2025 komisyon kaydı iki HTML görünümünde ve bağ�
 Dokuzuncu yalıtılmış birleştirme provasında 535 girdi olayı ve 355 ilişki vardı. İki sırada da 515 olay, 355 ilişki ve sıfır kapanış elde edildi. Önceki 11 ortak olay ve 12 açık adayın bileşimi korundu. 7242 için tutanak ve cetvel ortak. Olay dayanağı alanlarının ayrı ifadeleri nedeniyle aday açık bırakıldı. İki görünüm denetimi 62590442 ile sürüyor. [Prova makbuzu](wave4-merge-rehearsal-09.json) [7242 kaynak okuması](wave4-7242-overlap-reading.json) [Dört gündem kaydı](wave4-agenda-overlap-reading.json)
 
 1238 Libya adayı 62589479 ilk giriş denetiminde yayın atfı tarih biçimi nedeniyle durdu. Yayım günü atıfta gün hassasiyetiyle kaydedildi. Özgün kaynak saat üst verisi okuma kaydında duruyor. Yeni aday 62589852 ile denetimde. [Doğrulama geçmişi](../04-05-checks/tip-libya-1238-gate-history.json)
+
+Saadet’in 8/60 genel görüşme zinciri iki görünümde ve bağımsız veri denetiminde doğrulandı. Bülent Kaya’nın grup açıklaması, imzalı önerge ve aynı gün ön görüşmeye alma önerisinin elektronik oylamada reddi kendi kayıtlarında. İmzalı belge sicilde Gündemde. Tutuklama gününün parti metniyle tutanakta farklı verilmesi ve sonraki kişi sonuçları açık. [8/60 makbuzu](../04-11-checks/forum-860-62588702.json) [Bağımsız denetim](../04-11-checks/forum-860-62588702-independent.log)
+
+Birleşik önizlemenin ilk denemesi aynı özgün 7242 HTML dosyasının iki okunabilir türevinde bayt farkı buldu. Özgün belge Windows-1254 kodlu. TİP türevi 5.404 değiştirme karakteri içeriyordu. EMEP türevi ile doğru yeniden üretimin hashleri eşleşti. Yalnız yalıtılmış kopyada yapılan düzeltme 62591349 ile denetleniyor. [Okunabilir kopya makbuzu](wave4-7242-readable-recovery.json)
