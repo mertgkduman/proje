@@ -10,7 +10,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 75 | 11 | 62569027 / 62569034 |
+| DEM Parti | 76 | 11 | 62571175 / 62571180 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
@@ -323,3 +323,9 @@ Demokrat Parti katalog taraması 111/257 gövdeye ulaştı. İki kayıt kesim so
 Demokrat Parti görev dağılımı ve Can Atalay dosyası iki HTML görünümünde, SQLite ve JSON çıktısında doğrulandı. Başkanlık Divanı duyurusu tüzükteki Genel Sekreterlik ve onay hükmüne bağlandı, imzalı toplantı kararı açık. Can Atalay dosyasında 8 Kasım 2023 Yargıtay işlemi ayrı ve eşleşmemiş, 21 Aralık AYM kararı, 30 Ocak Meclis işlemi ve 22 Şubat norm denetimi üç ayrı ilişkide. Karar ve yayım tarihleri ayrı tutuldu. [Önizleme makbuzu](../04-12-checks/divan-atalay-62570397.json) · [Okuma kaydı](../04-12-checks/divan-atalay-reading.md)
 
 Demokrat Parti katalog taraması 121/257 gövdeye ulaştı ve 134 kayıt açık. 5 Ocak ortak açıklamasının 118–119 gövdeleri ilk başlık dışında aynı. 26 Ocak metni sitede 27 Ocak tarihinde kayıtlı. [012. dilim](../04-12-checks/party-news-012-reading.json) · [013. dilim](../04-12-checks/party-news-013-reading.json)
+
+2024 Madımak başvurusunun imzalı ilk sayfası 6131 grup numarasını ve 10/1568 esas numarasını birlikte gösteriyor. İmzalı üç sayfa, güncel sicil ve 97. birleşim tutanağı okundu. Başkan aynı gün gündeme alma talebinin reddedildiğini açıkladı. Temelli’nin karar yeter sayısı itirazı ve esas dosyasının Gündemde durumu ayrı. Olay, açıklamanın saat sırası açık olduğu için eşleşmemiş olarak doğrulandı. [Önizleme makbuzu](../04-06-checks/dem-sivas-1568-62571175.json) · [Bağımsız denetim](../04-06-checks/dem-sivas-1568-62571175-independent.json)
+
+Demokrat Parti’nin 6 Mart 2023 ortak aday ilanı, 24 Mart adaylık başvurusu, 30 Mart kesin liste kararı ve 28 Mayıs YSK sonuçlarıyla ayrı ilişkiler halinde hazırlandı. 52/43 aday 62572604, 62571364 sonrasında çalışmak üzere sırada. [Seçim kaynak okuması](../04-12-checks/election-2023-reading.md)
+
+Saadet 031–036 sonunda 122/649 özgün gövde okundu. 1/280 bütçe dosyasının 8 Aralık konuşması ile 21 Aralık nihai isimli oy cetveli ayrı. Arıkan Katılmadı, Bülent Kaya ve Mustafa Kaya Ret kayıtlı. 27/23 aday 62572150 ile denetleniyor. [036. dilim](../04-11-checks/party-news-036-reading.json)
