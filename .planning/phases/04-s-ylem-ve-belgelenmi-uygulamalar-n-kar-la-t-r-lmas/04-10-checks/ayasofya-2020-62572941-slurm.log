@@ -1,0 +1,12 @@
+Staged 514 original, readable and view paths; package 9eba464c4e4e637ffb3b49cf3edee6b9fb0d03eee0225a4ed51c2ab879028ed6; review f84ed681926440805bf7abf9f3da3cf53b57b190b685eaf958b061c12380c3ee
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/ayasofya-2020-validation.py", line 16, in <module>
+    receipt=h.main(p,r,'ayasofya-2020','0410-ayasofya-2020-court-event','0410-youth9-conference-relation',None,expected_party='emep',namespace='gsd-0410')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 113, in main
+    check(receipt_name, 'source', ['practice-source-check','--input',str(package_path),'--review',str(review_path)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: source: exit 1

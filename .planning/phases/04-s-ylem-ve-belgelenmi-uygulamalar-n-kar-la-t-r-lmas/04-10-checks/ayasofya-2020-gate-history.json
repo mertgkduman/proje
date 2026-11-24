@@ -1,0 +1,22 @@
+{
+  "current_package_sha256": "9eba464c4e4e637ffb3b49cf3edee6b9fb0d03eee0225a4ed51c2ab879028ed6",
+  "current_review_sha256": "f84ed681926440805bf7abf9f3da3cf53b57b190b685eaf958b061c12380c3ee",
+  "attempts": [
+    {
+      "job": "62572664",
+      "result": "input exit 1",
+      "reason": "PDF karar gövdesi görsel, sayfada başka metin katmanı bulunduğu için mevcut kod manual passage kabul etmedi; karar numarası metin katmanından, işlemin içeriği ayrı Diyanet pasajından desteklenecek şekilde taslak yenilendi."
+    },
+    {
+      "job": "62572941",
+      "result": "input exit 0, source exit 1",
+      "reason": "TMPDIR ağ dosya sistemi /work üzerindeydi; kaynak kontrolünde aktif SQLite için yerel dosya sistemi gerekir hatası oluştu. Bu aday içeriği veya kanıt doğruluğu kararı değildir."
+    },
+    {
+      "job": "62573483",
+      "result": "input 0, source 0, preview 0; 3 unmatched iki görünüm ve bağımsız append-only JSON/SQLite denetimi başarılı",
+      "reason": "Aynı exact taslakla TMPDIR kaldırıldı; yalnız tamamlanmış preview /work staging alanına yazılır."
+    }
+  ],
+  "independent_log": "ayasofya-2020-62573483-independent.log"
+}

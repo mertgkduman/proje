@@ -1,0 +1,38 @@
+Staged 514 original, readable and view paths; package 5742568d5ecf5be0229cdbb8aabbce6281048d0cbb22530de32ea50b0fbab7b9; review 5f5301f294bca54f3a64670ea06d56d402b4225a54f86ce11cd467cd98993f2e
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 111, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/ayasofya-2020-validation.py", line 16, in <module>
+    receipt=h.main(p,r,'ayasofya-2020','0410-ayasofya-2020-court-event','0410-youth9-conference-relation',None,expected_party='emep',namespace='gsd-0410')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 76, in main
+    with tempfile.TemporaryDirectory(prefix=f'{namespace}-{scope}-') as tmp:
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/shutil.py", line 785, in rmtree
+    _rmtree_safe_fd(fd, path, onexc)
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/shutil.py", line 686, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onexc)
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/shutil.py", line 686, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onexc)
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/shutil.py", line 686, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onexc)
+  [Previous line repeated 2 more times]
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/shutil.py", line 697, in _rmtree_safe_fd
+    onexc(os.rmdir, fullname, err)
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/shutil.py", line 695, in _rmtree_safe_fd
+    os.rmdir(entry.name, dir_fd=topfd)
+OSError: [Errno 39] Directory not empty: 'c3eb7e2855a1d26b1ee984f002583d706b7dcd4adc42bc1feaf8eba2a7ac603f'
