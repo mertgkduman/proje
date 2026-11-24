@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 76 | 73 | 62581748 |
-| Saadet Partisi | 28 | 24 | 62575423 |
+| Saadet Partisi | 29 | 25 | 62583013 |
 | Demokrat Parti | 60 | 47 | 62581680 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -416,3 +416,12 @@ DEM Parti’nin 8 Nisan 2025 tarihli 73. birleşimdeki iki grup konuşması iki 
 EMEP’in 8 Nisan 2020 geri çekme çağrısı ile 2/2762 teklifinin 7242 sayılı kanun olarak kabulü iki görünümde ve bağımsız veri denetiminde doğrulandı. 6 Nisan ortak metni, 14 Nisan 00.09 kesin oylaması, sonraki 14 Nisan parti açıklaması ve 15 Nisan yayımı ayrı. Gültekin Uysal’ın satırı özgün görselde Katılmadı. Üç maddeye ilişkin ayrı rejimler ilişki kartında, bireysel tahliye sonucu açık. [7242 makbuzu](../04-10-checks/law-7242-62581748.json) [Bağımsız denetim](../04-10-checks/law-7242-62581748-independent.log)
 
 Demokrat Parti’nin 037. diliminde 243/257 özgün gövde okundu. İki yayın kapsam tarihinden sonra. Açık 12 kaydın içinde ilk erişimde HTTP 500 dönen dokuz bağlantı var. [037. dilim](../04-12-checks/party-news-037-reading.json)
+
+
+Saadet’in 9 Temmuz 2025 tarihli 10/2925 KHK araştırma önergesi karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. Mart açıklaması ve Temmuz önergesi beraat ve takipsizlik durumlarını birlikte ele alıyor. Önergenin 22 imzası, aktörlerin dönemsel sıfatları ve teklif aşaması kaydedildi. Göreve iade sonucu açık. Saadet 093 sonunda 179/649 gövde okudu, 470 açık. [10/2925 makbuzu](../04-11-checks/khk-102925-62583013.json) [Bağımsız denetim](../04-11-checks/khk-102925-62583013-independent.log) [093. dilim](../04-11-checks/party-news-093-reading.json)
+
+1272 kararında 3/1394 16 Kasım 2020 tarihli, 17 Kasım TBMM kabulü ve 18 Kasım yayımı ayrı. Parti metni önceki oy niyeti ve olumlu oy beyanını birlikte taşıyor. Meclis işlem satırında kişi oyu ve sayısal dağılım açık. İlk basılı PDF indirmesi eksikti. İki TBMM adresinden alınan tam dosya aynı hashte ve seçili üç sayfanın metin katmanı ilk okumayla aynı. [1272 kaynakları](../04-12-checks/decision-1272-sources/reading.json)
+
+7333 dosyasında teklif ve komisyonun altı yıllık süresi, Genel Kurulun 23. madde için kabul ettiği dört yıllık süre ve 20. maddedeki ayrı altı yıllık süre kaynaklandı. 7490 hakkında AYM kararı 4. madde 2. fıkra mahsup hükmünü iptal etti. 7333’ün 23. maddesindeki uzatımın bazı fıkralarıyla ilgili ayrı 2022 hükmü mevcut. 65 olay ve 49 ilişkilik 7333 adayı, 7344 kapısının sonucuna bağlı olarak 62585551’e verildi. [7333 kaynakları](../04-12-checks/law-7333-sources/reading.json) [7490 kararı](../04-12-checks/law-7333-sources/budget-7490-constitutional-review.json)
+
+Borsa İstanbul pay devrinin 26 Kasım 2020 mutabakatı ve 30 Kasım kapanışı TVF’nin ayrı bildirimleriyle kaynaklandı. 2013 geri kabul anlaşması ve 18 Mart 2016 bildirisi ayrı özgün belgelerde. Demokrat Parti kataloğunun dokuz bağlantısı altı yeniden denemede de HTTP 500 döndürdü. Üçü için ayrı haber yayımı okundu. Parti gövdelerinin 12 özgün kaynak açığı ayrı izleniyor. [TVF ve AB kaynakları](../04-12-checks/2020-2021-external-sources/reading.json) [Katalog erişim kaydı](../04-12-checks/party-news-access-038/reading.json)
