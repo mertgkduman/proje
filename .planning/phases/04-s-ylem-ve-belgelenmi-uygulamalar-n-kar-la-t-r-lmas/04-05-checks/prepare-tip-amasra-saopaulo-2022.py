@@ -82,8 +82,10 @@ sources = {}
 for key, name, day, title, kind, publisher, author, basis in (
     ("mine-statement", "091.html.bin", "2022-10-14", "14 Ekim TİP Amasra ve soruşturma açıklaması",
      "party_publication", "Türkiye İşçi Partisi", None, "Olay günü yayımlanan TİP açıklaması. Sayılar yayım anına atfedildi."),
-    ("mine-report", "tbmm-amasra-report.pdf", None, "TBMM Amasra Araştırma Komisyonu Raporu",
-     "official", "TBMM", None, "S. Sayısı 440 rapor kapağında Mart 2023. Komisyonun kuruluşu, dosya ve karar bilgileri."),
+    ("mine-registry", "amasra-commission-registry.html.bin", "2022-10-19", "TBMM Amasra Araştırma Komisyonu sicili",
+     "official", "TBMM", None, "Komisyonun kuruluş tarihini, 9. birleşimi, 1344 kararını ve sekiz önergeyi gösteren sicil."),
+    ("mine-gazette", "amasra-1344-gazette-index.html.bin", "2022-10-22", "31991 sayılı Resmî Gazete fihristi",
+     "official", "Resmî Gazete", None, "22 Ekim tarihli gazete fihristinde 1344 Amasra araştırma komisyonu kararı."),
     ("ship-statement", "101.html.bin", "2022-07-28", "TİP’in São Paulo gemisinin getirilmesine ilişkin açıklaması",
      "party_publication", "Türkiye İşçi Partisi", None, "TİP Kent ve Ekoloji Bürosu ile Emek Bürosunun 28 Temmuz yayımı."),
     ("ship-aa", "naesao-2670217.html.bin", "2022-08-26", "Bakanın São Paulo iptal açıklaması",
@@ -104,18 +106,18 @@ for key, name, day, title, kind, publisher, author, basis in (
     document = f"{case}-{key}"
     source_kind = "party" if kind == "party_publication" else kind
     insert("document", dict(id=document, party_id=party, title=title, source_kind=source_kind))
-    precision = "day" if day else "unknown"
-    document_day = None if precision == "unknown" else day
     insert("document_version", dict(id=vid(key), document_id=document, original_url=row["url"], final_url=url,
-        document_date=document_day, date_precision=precision, date_unknown_reason=(
-            "Raporda Mart 2023 belirtiliyor, yayım günü kapakta yok." if not document_day else None),
+        document_date=day, date_precision="day", date_unknown_reason=None,
         version_label=title, accessed_at=row["retrieved_at_utc"], verified_at=now,
         mime="application/pdf" if media == "pdf" else "text/html", sha256=row["sha256"],
         original_path=str(original), readable_path=str(readable)))
     insert("source_attribution", dict(version_id=vid(key), kind=kind, publisher=publisher, author=author,
-        social_handle=None, published_at=document_day, date_precision=precision, public_url=url, basis=basis))
+        social_handle=None, published_at=None if key == "mine-registry" else day,
+        date_precision="unknown" if key == "mine-registry" else "day", public_url=url, basis=basis))
     if media == "html":
-        view = build_view(raw, url, source_root, fetch_assets=False)
+        content_type = row.get("content_type", "")
+        charset = content_type.split("charset=", 1)[1] if "charset=" in content_type else None
+        view = build_view(raw, url, source_root, fetch_assets=False, http_charset=charset)
         validate_view(source_root, view)
         insert("archive_view", dict(view, version_id=vid(key)))
     sources[key] = path, url
@@ -125,12 +127,14 @@ passages = {}
 for key, source, page, exact, label in (
     ("mine-call", "mine-statement", None, "sorumlular hakkında derhal soruşturma başlatılmalıdır.",
      "TİP’in 14 Ekim Amasra soruşturma çağrısı"),
-    ("mine-approved", "mine-report", 44, "Önergelerinin, 19.10.2022 tarihinde Türkiye Büyük Millet Meclisi Genel Kurulu",
-     "S. Sayısı 440. Sekiz önerge, 19 Ekim 9. birleşim"),
-    ("mine-commission", "mine-report", 44, "Meclis Araştırması Komisyonu kurulmuştur.",
-     "S. Sayısı 440. Amasra Meclis Araştırması Komisyonunun kurulması"),
-    ("mine-published", "mine-report", 46, "1344 sayılı Kararı 22.10.2022 tarihli Resmî",
-     "S. Sayısı 440. 1344 kararının yayımı"),
+    ("mine-approved", "mine-registry", None, "19/10/2022",
+     "TBMM komisyon sicilinde kuruluş tarihi ve 9. birleşim"),
+    ("mine-commission", "mine-registry", None, "1344",
+     "TBMM komisyon sicilinde 1344 kuruluş kararı"),
+    ("mine-published", "mine-gazette", None, "22 Ekim 2022 Tarihli ve 31991 Sayılı",
+     "22 Ekim 31991 sayılı Resmî Gazete fihristi"),
+    ("mine-title", "mine-gazette", None, "1344&nbsp;&nbsp;&nbsp;&nbsp; Bartın’ın Amasra",
+     "Fihristte 1344 Amasra Meclis Araştırması Komisyonu kararı"),
     ("ship-call", "ship-statement", None, "NAe São Paulo Gemisi’nin ülkemize gelişi bir an önce durdurulmalıdır.",
      "28 Temmuz parti çağrısı"),
     ("ship-announce", "ship-aa", None, "26 Ağustos 2022", "Bakanın iptali bildirdiği 26 Ağustos tarihli haber"),
@@ -230,15 +234,16 @@ add_case(
     "mine", "madencilik", "04-03-v3-0304-tip-program-context-madencilik-row", "2022-10-14", "2022-10-19",
     "Amasra maden faciası için 1344 sayılı TBMM araştırma kararı", "tbmm-2022-10-19-amasra-karar-1344",
     "14 Ekim TİP soruşturma çağrısı ve 19 Ekim Genel Kurulun aynı Amasra olayıyla ilgili araştırma kararı.",
-    "22 Ekim Resmî Gazete’deki 1344 sayılı karar ve TBMM S. Sayısı 440 komisyon raporu.",
+    "TBMM komisyon sicili ve 22 Ekim Resmî Gazete fihristindeki 1344 sayılı karar.",
     "TİP’in 14 Ekim açıklaması Amasra maden faciasında sorumlular hakkında soruşturma başlatılması çağrısı yaptı.",
     "TBMM, 19 Ekim’de sekiz önerge üzerine Meclis araştırması açılmasına ve komisyon kurulmasına karar verdi. 1344 sayılı karar 22 Ekim’de yayımlandı.",
     "14 Ekim TİP çağrısı ve TBMM’nin 19 Ekim kararı aynı Amasra olayına ilişkin. Komisyonun görevi olayın nedenlerini ve önleyici tedbirleri araştırmaktı. TİP’in istediği bireysel sorumluluk soruşturması ve yargı sonucu ayrı kaynaklarda izleniyor.",
     "TİP kamuya çağrı yaptı. Meclis araştırmasının açılması Genel Kurula, kişisel adli süreçler yetkili yargı makamlarına ait.",
-    "14 Ekim TİP açıklaması, 19 Ekim Genel Kurul kararı ve 22 Ekim Resmî Gazete yayımı. Komisyon raporunun kapağı Mart 2023.",
+    "14 Ekim TİP açıklaması, 19 Ekim Genel Kurul kararı ve 22 Ekim Resmî Gazete yayımı. S. Sayısı 440 raporunun kapağı Mart 2023.",
     (("mine-approved", "action", "19 Ekim 2022 Genel Kurul işlem tarihi.", "document"),
      ("mine-commission", "result", "Amasra araştırma komisyonu kuruldu.", "document"),
-     ("mine-published", "result", "1344, 22 Ekim Resmî Gazete’de yayımlandı.", "document")),
+     ("mine-published", "result", "22 Ekim Resmî Gazete fihristi ve sayı numarası.", "document"),
+     ("mine-title", "result", "1344 Amasra komisyonu kararı gazete fihristinde yer alıyor.", "document")),
 )
 add_case(
     "ship", "is-sagligi", "04-03-v3-0304-tip-program-issagligi-baglam-row", "2022-07-28", "2022-08-26",

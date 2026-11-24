@@ -1,0 +1,586 @@
+
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="https://www5.tbmm.gov.tr/favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Language" content="Tr" />
+<meta name="Copyright" content="Türkiye Büyük Millet Meclisi Bilgi Ýþlem Baþkanlýðý 2012" />
+<meta name="Author" content="Tasarým: Emre Baydur" />
+<meta name="description" content="Türkiye Büyük Millet Meclisi Resmi Ýnternet Sitesi">
+<meta name="keywords" content="TBMM, Türkiye Büyük Millet Meclisi, parlamento, parlemento, meclis, yasama, denetim, milletvekili, kanun tasarýsý, kanun teklifi, tbmm kararý, meclis kararý, kanun hukmunde kararname, khk, gensoru, yazýlý soru, sozlu soru, meclis araþtýrmasý, meclis soruþturmasý, anayasa, TBMM Genel Sekreterliði, Genel Sekreterlik" />
+<meta name="keywords" content="TGNA, GNAT, Turkish Parliament, Grand National Assembly of Turkey, legislation, turkey, turkish, " />
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta name="ROBOTS" content="INDEX, FOLLOW" />
+<title>TÜRKÝYE BÜYÜK MÝLLET MECLÝSÝ</title>
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/reset.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/text.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/960.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/layout.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/nav.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/blitzer/jquery-ui-1.8.23.custom.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+<script type="text/javascript" src="https://www5.tbmm.gov.tr/v2_js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="https://www5.tbmm.gov.tr/v2_js/jquery-ui-1.8.23.custom.min.2.js"></script>
+<script type="text/javascript" src="https://www5.tbmm.gov.tr/v2_js/jquery-fluid16.js"></script>
+<script type="text/javascript" src="https://www5.tbmm.gov.tr/v2_js/jcarousellite_1.0.1c4.js" ></script>
+<script type="text/javascript" src="https://www5.tbmm.gov.tr/v2_js/jquery.jfontsize-1.0.js" ></script>
+<script type="text/javascript">
+$(function() {
+  $(".newsticker-jcarousellite").jCarouselLite({
+    vertical: true,
+    hoverPause:true,
+    visible: 3,
+    auto:3000,
+    speed:1000
+  });
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/jquery.popeye.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/v2_css/jquery.popeye.style.css" media="screen" />
+<script type="text/javascript" src="https://www5.tbmm.gov.tr/v2_js/jquery.popeye-2.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://www5.tbmm.gov.tr/css/mv_ozgecmis.css" media="screen">
+
+<script type="text/javascript" src="https://www5.tbmm.gov.tr/js/ddaccordion.js"></script>
+<script type="text/javascript">
+ddaccordion.init({
+  headerclass: "submenuheader", //Shared CSS class name of headers group
+  contentclass: "submenu", //Shared CSS class name of contents group
+  revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+  mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+  collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+  defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+  onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+  animatedefault: false, //Should contents open by default be animated into view?
+  persiststate: true, //persist state of opened contents within browser session?
+  toggleclass: ["", ""], //Two CSS classes to be applied to the header when its collapsed and expanded, respectively ["class1", "class2"]
+  togglehtml: ["suffix", "", ""], //Additional HTML added to the header when its collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+  animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+  oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+    //do nothing
+  },
+  onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+    //do nothing
+  }
+})
+</script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<script>
+  function a1() {
+    $("#aciklama").text("Kurumsal Facebook Sayfasý");
+  };
+  function a2() {
+    $("#aciklama").text("Kurumsal Twitter Sayfasý");
+  };
+  function a3() {
+    $("#aciklama").text("TBMM RSS Akýþlarý");
+  };
+  function a4() {
+    $("#aciklama").text("Günlük Haber Aboneliði");
+  };
+  function a5() {
+    $("#aciklama").text("Genel Kurul Facebook Sayfasý");
+  };
+  function a6() {
+    $("#aciklama").text("Genel Kurul Twitter Sayfasý");
+  };
+  function a7() {
+    $("#aciklama").text("Web Yöneticisine Mesaj");
+  };
+  function a8() {
+    $("#aciklama").text("Sosyal Aðlarda TBMM");
+  };
+    
+</script>
+
+<script>
+    $(function() {
+        $( "#languages" ).dialog({
+           autoOpen: false
+        });
+        $( "#open-languages" )
+            .click(function() {
+                $( "#languages" ).dialog( "open" );
+            });
+            
+        $(".fontsizer").jfontsize();
+    });
+    </script>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51699411-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "UA-51699411-1");
+</script>
+
+
+
+<style>
+    .TB_Wrapper {
+        max-width: 680px;
+        height: 352px;  
+    }
+</style>
+
+
+
+
+<script src="https://www5.tbmm.gov.tr/trans_banner/jquery.hoverIntent.minified.js" language="javascript"></script>
+<link rel="stylesheet" href="https://www5.tbmm.gov.tr/trans_banner/style.css" />
+<script src="https://www5.tbmm.gov.tr/trans_banner/jquery.easing.1.3.min.js"></script>
+<script src="https://www5.tbmm.gov.tr/trans_banner/trans-banner.min.js"></script>
+<script type="text/javascript">
+    jQuery(function($){
+        $(".TB_Wrapper").TransBanner({
+            caption_position_x: 50,
+            caption_position_y: 100,
+            caption_width: 300,
+            caption_height: "",
+            caption_bg_color: "#890000",
+            caption_bg_opacity: .2,
+            caption_bg_radius: 6,
+            caption_bg_shadow: .3,
+            caption_allow_selection: false
+        });    
+    });    
+</script>
+
+
+
+
+
+</head>
+<body>
+<div class="container_16">
+  <div class="grid_16" id="topmenu">
+    <ul>
+     <li><a target="_blank" href="https://www5.tbmm.gov.tr/docs/KVKKAydinlatmaMetni.pdf">KVKK Aydýnlatma Metni</a></li>
+      <li><a href="https://www5.tbmm.gov.tr/gorme_engelli.htm">Engelsiz Meclis</a></li>
+      <li><a href="#linkleri_gec">Linkleri Geç</a></li>
+      <li><a href="https://www5.tbmm.gov.tr/siteharita.htm">Site Haritasý</a></li>
+      <li><a href="https://www5.tbmm.gov.tr/">Ana Sayfa</a></li>
+      <li><a href="https://www5.tbmm.gov.tr/iletisim.htm">Ýletiþim</a></li>
+      <li><a id="open-languages">Languages</a></li>
+    </ul>
+  </div>
+  <div class="grid_16"><a href="https://www5.tbmm.gov.tr"><img src="https://www5.tbmm.gov.tr/v2_img/header.jpg" width="940" height="100" alt="Turkiye Buyuk Millet Meclisi" /></a></div>
+  <div class="clear"></div>
+  <div class="grid_16">
+    <ul class="nav main">
+      <li><a href="https://www5.tbmm.gov.tr/">ANA SAYFA</a>
+        <ul>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/tutanak_sd.son_tutanak">Son Tutanak</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/gundem/gundem.htm" target="_blank">Genel Kurul Gündemi</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/kkarmd.komisyon_gundemleri_web">Komisyon Gündemleri</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/gelen_kagit.liste">Gelen Kaðýtlar</a></li>
+        </ul>
+      </li>
+      <li><a href="#">MÝLLETVEKÝLLERÝ</a>
+        <ul>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/milletvekillerimiz_sd.arama">Arama</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/milletvekillerimiz_sd.liste">Liste</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/milletvekillerimiz_sd.ayrilanlar">Milletvekilliði Sona Erenler</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/milletvekillerimiz_sd.dagilim">Sandalye Daðýlýmý</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/mv_e_posta_sd.uye_e_posta">E-Posta</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/mvtelefon.liste">Telefon Rehberi</a></li>
+        </ul>
+      </li>
+      <li><a href="#">YASAMA</a>
+        <ul>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/tasari_teklif_sd.sorgu_baslangic">Kanun Teklifleri</a></li>
+          <li><a href="http://komisyon.tbmm.gov.tr">Ýhtisas Komisyonlarý</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/kanunlar_sd.sorgu_baslangic">Kanunlar</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/tbmm_kararlari_sd.sorgu_baslangic">Kararlar</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/khk_sd.sorgu_baslangic">KHKlar</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/sirasayi_sd.sorgu_baslangic">Komisyon Raporlarý</a></li>
+        </ul>
+      </li>
+      <li><a href="#">DENETÝM</a>
+        <ul>
+             <li><a href="https://www5.tbmm.gov.tr/develop/owa/yazili_sozlu_soru_sd.sorgu_baslangic">Yazýlý Soru Önergeleri</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/develop/owa/meclis_genel_gorus_onergeleri.sorgu_son_donem">Genel Görüþme Önergeleri</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.sorgu_son_donem">Meclis Araþtýrmasý Önergeleri</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/develop/owa/meclis_sorusturma_onergeleri.sorgu_son_donem">Meclis Soruþturmasý Önergeleri</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/develop/owa/arastirma_onergesi_sd.sorgu_baslangic">Meclis Araþtýrmasý Komisyonlarý</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/develop/owa/sorusturma_onergesi_sd.sorgu_baslangic">Meclis Soruþturmasý Komisyonlarý</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/develop/owa/gensoru_onergeleri.sorgu_son_donem">Geçmiþ Dönemler Gensoru Önergeleri</a></li>
+        </ul>
+      </li>
+      <li><a href="#">TUTANAKLAR</a>
+        <ul>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/tutanak_sd.son_tutanak">Son Tutanak</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/tutanak_sd.sorgu_baslangic">Tutanak Sorgu</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/tutanak/tutanaklar.htm">Tutanak Metinleri</a></li>        
+          <li><a href="https://www5.tbmm.gov.tr/tutanak/donem26/tutanak1.htm">Tutanak Özetleri(Seslendirme, Ýþaret Dili)</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/tutanak/kapali_oturumlar/kapali_oturum_tutanaklari.htm">Gizli Oturum Tutanaklarý</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/kutuphane/tutanak_sorgu.html" target="_blank">1908'den Günümüze Tutanaklar</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/tutanak_erisim.giris" target="_blank">Seçilmiþ Tutanaklar</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/komisyon_tutanaklari.kom_liste">Komisyon Tutanaklarý</a></li>
+        </ul>
+      </li>
+      <li><a href="#">PARLAMENTOLARARASI ÝLÝÞKÝLER</a>
+        <ul style="width:300px">
+          <li><a href="https://www5.tbmm.gov.tr/uluslararasi_komisyonlar.htm">Uluslararasý Komisyonlar</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/dostluk_gruplari.grup">Dostluk Gruplarý</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="#">KURUMSAL</a>
+        <ul><li><a href="https://www5.tbmm.gov.tr/develop/owa/baskanlik_divani_sd.liste">TBMM Baþkanlýk Divaný</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/teskilat_ozgecmis.teskilat_sema">Teþkilat Þemasý</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/genel_sekreterlik.htm">Ýdari Teþkilat</a></li>
+  
+          <li><a href="https://www5.tbmm.gov.tr/genser/giris.htm">Mevzuat</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/develop/owa/web_rehber.liste">Telefon Rehberi</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/etik_komisyonu/index.htm">Etik Komisyonu</a></li>
+
+          <li><a href="https://www5.tbmm.gov.tr/genser/genel_sekreterler.htm">Genel Sekreterlerimiz</a></li>
+        </ul>
+      </li>
+      <li><a href="#">YAYINLAR</a>
+        <ul>
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/TBMM_Album.htm">Milletvekilleri Albümü</a></li>
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/yuzuncu_yil_eserler.htm">100.Yýl Eserler</a></li>
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/prestij_kitaplar.htm" target="_blank"> Prestij Eserler</a></li>
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/yayinlar/yayinlar.htm" target="_blank">TBMM Yayýnlarý</a></li>
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/tbmm_brosurler.htm">Broþürler</a></li>       
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/kitapciklar.htm">Kitapçýklar</a></li>
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/develop/owa/meclis_bulteni.liste">Meclis Haber Dergisi</a></li>
+          <li style="float:right;"><a href="https://acikerisim.tbmm.gov.tr/xmlui/">Elektronik Kitaplar</a></li>        
+          <li style="float:right;"><a href="https://www5.tbmm.gov.tr/arsiv_dis_kullanici.htm">Ýstiklal Mahkemeleri Kataloðu</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <a name="linkleri_gec"></a>
+  <div class="clear"></div>
+      
+<div class="grid_12"><br />
+<span class="AltKonuBaslikB16Gri">Meclis Araþtýrmasý Komisyonlarý Önerge Bilgileri</span>
+<HR>
+<TABLE  border=2>
+<TR>
+<TD><B>Dönemi/Yasama Yýlý</B></TD>
+<TD>27 / 6</TD>
+</TR>
+<TR>
+<TD><B>Esas No</B></TD>
+<td>
+<table>
+<tr></tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326231" target="_blank">6598</a></tr>
+<tr>, </tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326232" target="_blank">6599</a></tr>
+<tr>, </tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326233" target="_blank">6600</a></tr>
+<tr>, </tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326234" target="_blank">6601</a></tr>
+<tr>, </tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326235" target="_blank">6602</a></tr>
+<tr>, </tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326236" target="_blank">6603</a></tr>
+<tr>, </tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326237" target="_blank">6604</a></tr>
+<tr>, </tr>
+<tr><a href="https://www.tbmm.gov.tr/develop/owa/meclis_arastirma_onergeleri.onerge_bilgileri?kanunlar_sira_no=326238" target="_blank">6605</a></tr>
+</table>
+</td>
+</TR>
+<TR>
+<TD><B>Adý</B></TD>
+<TD>Bartýn'ýn Amasra Ýlçesinde Meydana Gelen Maden Kazasýnýn Tüm Yönleriyle Araþtýrýlarak Benzer Kazalarýn Önlenmesine Yönelik Tedbirlerin Belirlenmesi Amacýyla Kurulan Meclis Araþtýrmasý Komisyonu</TD>
+</TR>
+<TR>
+<TD><B>Önerge Sahibi</B></TD>
+<TD>Ýzmir Milletvekili Serpil Kemalbay Pekgözegü ve 20 Milletvekili (10/6598), Mersin Milletvekili Rýdvan Turan ve 19 Milletvekili (10/6599), ÝYÝ Parti Grubu adýna Grup Baþkanvekili Ýzmir Milletvekili Dursun Müsavat Derviþoðlu (10/6600), MHP Grubu adýna Grup Baþkanvekili Sakarya Milletvekili Muhammed Levent Bülbül (10/6601), Ýstanbul Milletvekili Engin Altay ve 131 Milletvekili (10/6602), Ýstanbul Milletvekili Numan Kurtulmuþ ve 66 Milletvekili (10/6603), AK Parti Grubu adýna Grup Baþkaný Sivas Milletvekili Ýsmet Yýlmaz, Grup Baþkanvekili Çanakkale Milletvekili Bülent Turan, Grup Baþkanvekili Kayseri Milletvekili Mustafa Elitaþ, Grup Baþkanvekili Kahramanmaraþ Milletvekili Mahir Ünal, Grup Baþkanvekili Çankýrý Milletvekili Muhammet Emin Akbaþoðlu ve Grup Baþkanvekili Bartýn Milletvekili Yýlmaz Tunç (10/6604), Ankara Milletvekili Mustafa Destici ve 27 Milletvekili (10/6605)</TD>
+</TR>
+<TR>
+<TD><B>Kuruluþ Tarihi</B></TD>
+<TD>19/10/2022</TD>
+</TR>
+<TR>
+<TD><B>Kurulduðu Birleþim</B></TD>
+<TD><A HREF="/develop/owa/tutanak_g_sd.birlesim_baslangic?PAGE1=1&PAGE2=1&p4=23784&p5=H" target="_blank">9</A></TD>
+</TR>
+<TR>
+<TD><B>Kuruluþ Karar No</B></TD>
+<TD>1344</TD>
+</TR>
+<TR>
+<TD><B>Göreve Baþlama Tarihi</B></TD>
+<TD>25/10/2022</TD>
+</TR>
+<TR>
+<TD><B>Görev Süresi</B></TD>
+<TD>3 Ay</TD>
+</TR>
+<TR>
+<TD><B>Ek Süre Baþlangýç Tarihi</B></TD>
+<TD>25/01/2023</TD>
+</TR>
+<TR>
+<TD><B>Ek Görev Süresi</B></TD>
+<TD>1 Ay</TD>
+</TR>
+<TR>
+<TD><B>Rapor Durumu</B></TD>
+<TD>Komisyon Çalýþmalarý Sürüyor</TD>
+</TR>
+<TR>
+<TD><B>Rapor Sýra Sayýsý No</B></TD>
+<TD><B></B></TD>
+</TR>
+<TR>
+<TD><B>Rapor Daðýtým Tarihi</B></TD>
+<TD></TD>
+</TR>
+<TR>
+<TD><B>Görüþme Tarihi</B></TD>
+<TD></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD COLSPAN="4"><A HREF="http://www.tbmm.gov.tr/MeclisArastirmasiKomisyonlari/Amasramaden-AnaSayfa">Web Sayfasý</A></TD>
+</TR>
+<TR>
+<TD><B>Görüþüldüðü Birleþim</B></TD>
+<TD></TD>
+</TR>
+</TABLE>
+<TABLE  border=2>
+</TABLE>
+</div>
+
+    <div class="grid_4" id="aramabox">
+    
+    <div class="box">
+      <h2> <a href="#" id="toggle-sosyalmedya">Sosyal Medya</a> </h2>
+      <div class="block" id="sosyalmedya">
+           <a href="http://www.facebook.com/tbmmresmi" onMouseOut="MM_swapImgRestore(),a8()" onMouseOver="MM_swapImage('kurumsal_facebook','','https://www5.tbmm.gov.tr/v2_img/social_media/facebook_kurumsal_2.jpg',1),a1()"><img src="https://www5.tbmm.gov.tr/v2_img/social_media/facebook_kurumsal_1.jpg" alt="Kurumsal Facebook Adresi" name="kurumsal_facebook" width="25" height="25" border="0"></a>
+           <a href="http://www.twitter.com/tbmmresmi" onMouseOut="MM_swapImgRestore(),a8()" onMouseOver="MM_swapImage('kurumsal_twitter','','https://www5.tbmm.gov.tr/v2_img/social_media/twitter_kurumsal_2.jpg',1),a2()"><img src="https://www5.tbmm.gov.tr/v2_img/social_media/twitter_kurumsal_1.jpg" alt="Kurumsal Twitter Adresi" name="kurumsal_twitter" width="25" height="25" border="0"></a>
+           <a href="https://www5.tbmm.gov.tr/rss.htm" onMouseOut="MM_swapImgRestore(),a8()" onMouseOver="MM_swapImage('rss_aboneligi','','https://www5.tbmm.gov.tr/v2_img/social_media/rss_2.jpg',1),a3()"><img src="https://www5.tbmm.gov.tr/v2_img/social_media/rss_1.jpg" alt="RSS Aboneliði" name="rss_aboneligi" width="25" height="25" border="0"></a>
+           <a href="https://www5.tbmm.gov.tr/bulten_abonelik.htm" onMouseOut="MM_swapImgRestore(),a8()" onMouseOver="MM_swapImage('gunluk_haber_aboneligi','','https://www5.tbmm.gov.tr/v2_img/social_media/bulten_aboneligi_2.jpg',1),a4()"><img src="https://www5.tbmm.gov.tr/v2_img/social_media/bulten_aboneligi_1.jpg" alt="Gunluk Haber Aboneliði" name="gunluk_haber_aboneligi" width="25" height="25" border="0"></a>
+           <a href="http://www.facebook.com/pages/TBMM-Genel-Kurulu/147994631981141" onMouseOut="MM_swapImgRestore(),a8()" onMouseOver="MM_swapImage('genel_kurul_facebook','','https://www5.tbmm.gov.tr/v2_img/social_media/facebook_genel_kurul_2.jpg',1),a5()"><img src="https://www5.tbmm.gov.tr/v2_img/social_media/facebook_genel_kurul_1.jpg" alt="Genel Kurul Facebook Adresi" name="genel_kurul_facebook" width="25" height="25" border="0"></a>
+           <a href="http://twitter.com/TBMMGenelKurulu" onMouseOut="MM_swapImgRestore(),a8()" onMouseOver="MM_swapImage('genel_kurul_twitter','','https://www5.tbmm.gov.tr/v2_img/social_media/twitter_genel_kurul_2.jpg',1),a6()"><img src="https://www5.tbmm.gov.tr/v2_img/social_media/twitter_genel_kurul_1.jpg" alt="Genel Kurul Twitter Adresi" name="genel_kurul_twitter" width="25" height="25" border="0"></a>
+           <a href="mailto:www@tbmm.gov.tr" onMouseOut="MM_swapImgRestore(),a8()" onMouseOver="MM_swapImage('yonetici_mesaj','','https://www5.tbmm.gov.tr/v2_img/social_media/web_yoneticisi_2.jpg',1),a7()"><img src="https://www5.tbmm.gov.tr/v2_img/social_media/web_yoneticisi_1.jpg" alt="Web Yoneticisine Mesaj" name="yonetici_mesaj" width="25" height="25" border="0"></a>
+
+           <div id="aciklama" style="font-weight:bold">Sosyal Aðlarda TBMM</div>
+      </div>
+    </div>
+      
+  
+    <div class="box">
+      <h2> <a href="#" id="toggle-arama">Arama</a> </h2>
+      <div class="block" id="arama">
+<script>
+  (function() {
+    var cx = "007257566280455178271:hj7gmfdasru";
+    var gcse = document.createElement("script");
+    gcse.type = "text/javascript";
+    gcse.async = true;
+    gcse.src = (document.location.protocol == "https:" ? "https:" : "http:") +
+        "//www.google.com/cse/cse.js?cx=" + cx;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+
+      </div>
+    </div>
+    
+
+
+       <div class="box">
+      <h2> <a href="#" id="toggle-duyurular">Duyurular</a> </h2>
+      <div class="block" id="duyurular">
+        <ul class="duyurularliste">
+          <li><a href="https://www5.tbmm.gov.tr/duyurular/genel_duyurular.htm">Genel Duyurular <img src="https://www5.tbmm.gov.tr/resimler/yeni5.gif" width="24" height="18" style="margin-bottom:-5px"></a></li>
+          <li><a href="https://www5.tbmm.gov.tr/duyurular/sinav_duyurusu.htm">Sýnav Duyurusu <img src="https://www5.tbmm.gov.tr/resimler/yeni5.gif" width="24" height="18" style="margin-bottom:-5px"></a></li>
+          <li><a href="https://www5.tbmm.gov.tr/ihale_duyurulari.htm">Ýhale Duyurularý</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/duyurular/insan_kaynaklari.htm">Ýnsan Kaynaklarý Staj Duyurularý<img src="https://www5.tbmm.gov.tr/resimler/yeni5.gif" style="margin-bottom: -2px;width: 15px;height: 12px;"></a></li>
+        
+        
+          <li><a href="https://www5.tbmm.gov.tr/duyurular.htm">Etkinlikler</a></li>
+          <li><a href="https://www5.tbmm.gov.tr/duyurular/saglik_hizmetleri.htm">Saðlýk Duyurularý - Hak Sahipliði</a></li>  
+          <li><a href="https://www5.tbmm.gov.tr/duyurular/sss.htm">Sýkça Sorulan Sorular</a></li>       
+        </ul>
+      </div>
+    </div>
+
+    
+    
+    
+    <div class="box">
+      <h2> <a href="#" id="toggle-parlamentoterimleri">Parlamento Terimleri Sözlüðü</a> </h2>
+      <div class="block" id="parlamentoterimleri">
+        <a href="https://www5.tbmm.gov.tr/psozluk.htm"><img src="https://www5.tbmm.gov.tr/v2_img/parlamento_terimleri_sozlugu.jpg" /></a>
+      </div>
+    </div>
+    
+    
+      <div class="box">
+    <h2> <a href="#" id="toggle-uygulamalar">Mobil Uygulamalar</a> </h2>
+    <div class="block" id="uygulamalar">
+        <a href="https://itunes.apple.com/tr/app/tbmm/id637465749?mt=8"><img src="https://www5.tbmm.gov.tr/images/app_store_logo.png" alt="Apple App Store"/></a></li>
+        <a href="https://play.google.com/store/apps/details?id=com.spexco.flexcoder2.tbmm.vatandas.activities&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5zcGV4Y28uZmxleGNvZGVyMi50Ym1tLnZhdGFuZGFzLmFjdGl2aXRpZXMiXQ.."><img src="https://www5.tbmm.gov.tr/images/google_play_logo.png" alt="Google Play"/></a></li>
+         <a href="http://apps.microsoft.com/windows/en-us/app/tbmm/578c5414-9249-464b-8019-c1bdf09ecd78"><img src="https://www5.tbmm.gov.tr/images/windows_phone_store.png" alt="Google Play"/></a></li>
+         <a href="http://www.windowsphone.com/tr-tr/store/app/tbmm/2d26e278-6ed2-4277-9131-7d4171715582"><img src="https://www5.tbmm.gov.tr/images/windows_store.png" alt="Google Play"/></a></li>
+    </div>
+  </div>
+
+    <div class="box menu">
+      <h2> <a href="#" id="toggle-section-menu">Baðlantýlar</a> </h2>
+      <div class="block" id="section-menu">
+        <ul class="section menu">
+          <li> <a class="menuitem">Kurumsal Baðlantýlar</a>
+            <ul class="submenu">
+              <li><a href="https://www5.tbmm.gov.tr/anayasa.htm">Anayasa</a></li>
+              <li><a href="https://www5.tbmm.gov.tr/docs/ictuzuk.pdf">Ýçtüzük</a></li>
+              <li><a href="https://edilekce.tbmm.gov.tr/" target="_blank">E-Dilekçe</a></li>
+             
+              <li><a href="https://www5.tbmm.gov.tr/kurumsalkimlik.htm">Kurumsal Kimlik</a></li>
+            </ul>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+    
+    <div class="box">
+      <h2> <a href="#" id="toggle-ziyaret">TBMM'yi Ziyaret</a> </h2>
+      <div class="block" id="ziyaret">
+        <div id="accordion">
+        <h3 class="toggler atStart">TBMM Gezi ve Rehberlik<img src="https://www5.tbmm.gov.tr/resimler/yeni5.gif" width="24" height="18" style="margin-bottom:-5px"></h3>
+          <div class="element atStart">
+            <div align="center"><img src="https://www5.tbmm.gov.tr/v2_img/popeye/5b.jpg" width="180" height="120" alt="Rehber Eþliðinde Gezi" class="fotografcercevesi" /> </div>                                                       
+ <p>Türkiye Büyük Millet Meclisi'nin tanýtýmý kapsamýnda ziyaretçilerin rehber eþliðinde gezdirilmesi, TBMM rehberlik online kayýt sistemine baþvurunun ardýndan, Basýn, Yayýn ve Halkla Ýliþkiler Baþkanlýðý tarafýndan hazýrlanan bir program dahilinde gerçekleþtirilmektedir.</p>   
+          <p><a target="_blank" href="https://rehberlik.tbmm.gov.tr/">Detaylý Bilgi Ýçin</a></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>                                                                                          
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+          <h3 class="toggler atStart">E-devlet Üzerinden Randevu</h3>
+          <div class="element atStart">
+             <div align="center"> <img src="https://www5.tbmm.gov.tr/v2_img/edevlet.jpg" width="180" height="61" alt="E-devlet Linki" class="fotografcercevesi" /> </div>                                     
+  <p>Türkiye Büyük Millet Meclisi'ni ziyaret etmek için e-Devlet üzerinden randevu talebinde bulunabilirsiniz.</p>     
+  <p><a href="https://giris.turkiye.gov.tr/Giris/gir" target="_blank">e-Devlet Linki</a></p>                                                                                                 
+           
+           
+          </div>
+        <h3 class="toggler atStart">Halk Günü</h3>
+            <div class="element atStart">
+          <div align="center"><img src="https://www5.tbmm.gov.tr/v2_img/halk_gunu.jpg" width="180" height="120" alt="Halk Günü" class="fotografcercevesi" /> </div>                                                                  
+   <p> Milli Ýradenin kalbinin attýðý yer olan Türkiye Büyük Millet Meclisi tüm vatandaþlarýmýzýn ziyaretine açýlmýþtýr. Her ayýn ilk Cumartesi günü 11.00 - 15.00 saatleri arasýnda önceden herhangi bir randevu almaksýzýn saat baþý gerçekleþtirilen gezi programlarýna katýlabilmek için TBMM Dikmen Kapýsýna gelmeniz yeterli olacaktýr. </p>
+  <p><a href="https://www5.tbmm.gov.tr/duyurular/halk_gunu.htm">Detaylý Bilgi Ýçin</a></p><p>&nbsp;</p><p>&nbsp;</p>                                                                                                        
+        
+        
+        
+        </div>
+        
+           <h3 class="toggler atStart">Kurtuluþ Savaþý Müzesi </h3>
+          <div class="element atStart">
+           <div align="center"> <img src="https://www5.tbmm.gov.tr/v2_img/ilk_meclis.jpg" width="180" height="120" alt="Kurtuluþ Savaþý Müzes" class="fotografcercevesi" /> </div>                                                                               
+ <p>'Birinci Millî Mimarlýk Dönemi Üslubu'nun Ankara'daki ilk örneklerinden olan I.TBMM Binasý, 1920-1924 yýllarý arasýnda Kurucu Meclis olarak da görev yapan Gazi Meclis tarafýndan kullanýlmýþtýr. Halen TBMM Basýn, Yayýn ve Halkla Ýliþkiler Baþkanlýðý uhdesinde Kurtuluþ Savaþý Müzesi (I.TBMM Binasý) olarak hizmet vermektedir. </p>  
+         
+          </div>
+          
+          <h3 class="toggler atStart">Sanal Tur</h3>
+          <div class="element atStart">
+            <div align="center"> 
+            <img src="https://www5.tbmm.gov.tr/v2_img/sanaltur.jpg" width="180" height="120" alt="Türkiye Büyük Millet Meclisi Sanal Tur" class="fotografcercevesi" /> </div>  
+ <p>Türkiye Büyük Millet Meclisi'ni aþaðýdaki baðlantýyý kullanarak sanal olarak gezebilirsiniz.</p>           
+           <p><a href="https://www5.tbmm.gov.tr/sanal_tur/sanal_tur.htm">TBMM Sanal Tur Gezisi</a></p>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <h2><a href="#" id="toggle-engelsiz">Engelsiz Meclis</a></h2>
+      <div class="block" id="engelsiz">
+        <div id="accordion">
+          <h3 class="toggler atStart">Ýþitme Engelliler</h3>
+          <div class="element atStart">
+            <div align="center"><img src="https://www5.tbmm.gov.tr/v2_img/engelsiz_meclis.jpg" width="180" height="120" alt="Rehber Eþliðinde Gezi" class="fotografcercevesi" /></div> 
+            <p>Yasama ve Denetim Hizmetlerine Ýliþkin Tanýtým Videolarýna aþaðýdaki linkten eriþebilirsiniz.</p>
+                    <p><a href="https://www.youtube.com/playlist?list=PLptIGXuA0xRRhzDoKVTM-8jrYVKxexL22" target="_blank">Youtube Eriþim Linki</a></p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p> 
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+
+  <div class="grid_16" id="footer_icon_nav">
+
+       <ul>
+           <li><a href="https://www5.tbmm.gov.tr/yayinlar/yayinlar.htm" target="_blank"><img src="https://www5.tbmm.gov.tr/v2_img/tbmm_yayinlari.png" width="180" height="87" alt="TBMM Yayýnlarý" /></a></li>
+           <li><a href="https://www5.tbmm.gov.tr/bilgiedinme/bilgiedinme-index.htm"><img src="https://www5.tbmm.gov.tr/v2_img/bilgi_edinme.png" width="180" height="87" alt="Bilgi Edinme" /></a></li>
+           <li><a href="https://www5.tbmm.gov.tr/kutuphane/index.htm" target="_blank"><img src="https://www5.tbmm.gov.tr/v2_img/kutuphane.png" width="180" height="87" alt="Kütüphane" /></a></li>
+           <li><a href="http://tv.tbmm.gov.tr" target="_blank"><img src="https://www5.tbmm.gov.tr/v2_img/tbmm_tv.png" width="180" height="87" alt="TBMM TV Sitesi"></a></li>
+           <li><a href="http://anayasa.tbmm.gov.tr/" target="_blank"><img src="https://www5.tbmm.gov.tr/v2_img/yeni_anayasa_sitesi.png" width="180" height="87" alt="Anayasa Sayfasý" /></a></li>
+       </ul>
+
+  </div>
+  <div class="clear"></div>
+  <div class="grid_16" id="site_info">
+    <div class="box"><img src="https://www5.tbmm.gov.tr/v2_img/eskiz.png" width="267" height="78" /></div>
+  </div>
+  <div class="clear"></div>
+  <div class="grid_16" id="footer_link">
+         <p class="footer_text">Türkiye Büyük Millet Meclisi Resmi Ýnternet Sitesi</p>
+         <div id="footermenu">
+         <ul>
+             <li><a href="https://www5.tbmm.gov.tr/">ANA SAYFA</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/siteharita.htm">SÝTE HARÝTASI</a></li>
+             <li><a href="https://www5.tbmm.gov.tr/iletisim.htm">ÝLETÝÞÝM</a></li>
+         </ul>
+         <ul>
+             <li><a href="http://global.tbmm.gov.tr/index.php/EN/yd/" target="_blank">English</a></li>
+             
+         </ul>
+         </div>    
+    </div>
+  </div>
+</div>
+<div id="languages" title="Change Language" style="background:#eeeeee !important; visible:false;">
+     <ul class="popuplang">
+             <li><a href="http://global.tbmm.gov.tr/index.php/EN/yd/" target="_blank">English</a></li>
+             
+     </ul>    
+</div>
+</body>
+</html>
+          

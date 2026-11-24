@@ -39,7 +39,7 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
                 actual = db.execute(f"SELECT * FROM {table} WHERE id=?", (row["id"],)).fetchone()
                 assert row in export[table] and row == dict(actual), row["id"]
     for suffix, page_index, stage in (
-        ("mine-approved", 44, "action"), ("mine-published", 46, "result"),
+        ("mine-approved", None, "action"), ("mine-published", None, "result"),
         ("ship-init", 2, "initiative"), ("ship-cancel", 2, "result"),
     ):
         actual = db.execute("SELECT p.pdf_page_index, e.stage FROM practice_event_evidence AS e "
