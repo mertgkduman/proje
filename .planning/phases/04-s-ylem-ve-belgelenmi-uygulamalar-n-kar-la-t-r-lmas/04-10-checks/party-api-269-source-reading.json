@@ -1,0 +1,126 @@
+{
+  "tranche_id": "0410-emep-api-269",
+  "read_at": "2026-11-24T12:37:37.088823+00:00",
+  "method": "Özgün Türkçe ve İngilizce API HTML aralıkları 12.000 kaynak tokenından küçük parçalarda okundu. Tam gövde ve her ham aralık UTF-8 SHA-256 doğrulandı; 3570 için önceki tam okuma ayrıca kaynakla karşılaştırıldı.",
+  "special_source_limits": {
+    "3552": {
+      "publication_datetime": "2020-04-13T14:26:33",
+      "body_signature": "Demokrasi için Birlik",
+      "limits": "Parti sitesi yeniden yayınıdır; imzalı kişi veya ayrıca tarihli özgün DİB yayını metinde bulunmadı. Yayım günü ayrı olay ya da teklif tarihi değildir."
+    },
+    "3570": {
+      "publication_datetime": "2020-04-22T12:06:37",
+      "body_signature": "EMEK PARTİSİ Genel Merkezi",
+      "source_body_sha256": "f03d787c0a466267127a2f7c1e9e88febf586f3fdd70e70519d2f654feff8719",
+      "periods_and_names": "2019 yılına ait tarımsal desteklerin henüz tamamlanmadığı ve Nisan ayında tamamen ödenmesi istenir; 2020 tarımsal desteklerinin kapsamının genişletilmesi, artırılması ve yıl içinde ödenmesi istenir. 21 ilde yazlık ekim tohumluğunun yüzde 75 hibe edilmesine değinilir.",
+      "limits": "Metin 2019 ve 2020 için genel tarımsal destek ifadeleri kullanır; belirli ürün/destek programı adı, karar numarası, ödeme cetveli, konuşmacı bakanın adı veya 21 il listesi vermez. Ödeme ve beyanlar bağımsız kanıtlanmadı."
+    }
+  },
+  "limitations": [
+    "3552 268in devamıdır; 3519un 6811 sonrası 270de ayrı okunmalıdır.",
+    "3540/3524 aynı EMEP MYK metninin iki dilidir; ayrı olay sayılmaz. 3527 çok partili, 3552 DİB imzalıdır.",
+    "İddialar, sağlık veya hukuk değerlendirmeleri bağımsız doğrulanmadı; hiçbir kapsam kapatılmadı."
+  ],
+  "parts": [
+    {
+      "post_id": 3552,
+      "url": "https://www.emep.org/korona-yasalari-salginin-ortasinda-buyuyen-karanlik",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "b3e9e7e6f64ae8c5191ef45154bd0b8f0e019fb5dab0efc67e871ba8918b7219",
+      "start_char": 1674,
+      "end_char": 3271,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "640101a6371fcb0ee0aabc8e95227035eb87212e2b5e3267f9d4bccb845f99c6",
+      "reading_note": "268de başlayan açıklamanın devamında Demokrasi için Birlik torba ve infaz tekliflerinin geri çekilmesini, karantina ve geçim desteğini ister. İmza Demokrasi için Birliktir; EMEP sitesinde yeniden yayımlanması partinin kendi yazarlığını veya somut uygulamasını göstermez. API 13 Nisan 2020 yayım günüdür; metinde kişi konuşmacı veya bağımsız açıklama günü verilmez."
+    },
+    {
+      "post_id": 3546,
+      "url": "https://www.emep.org/cozum-sokaga-cikma-yasagi-degil-halkin-ihtiyaclarinin-karsilandigi-karantinadir",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "0c043253957c3883bd27b3c96b445b637970b026ba2db8810b8ca8bca9a1176a",
+      "start_char": 0,
+      "end_char": 1965,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "0c043253957c3883bd27b3c96b445b637970b026ba2db8810b8ca8bca9a1176a",
+      "reading_note": "Gürkan 11 Nisan salgın açıklamasında hafta sonu kısıtlamasını eleştirir; zorunlu alanlar dışında ücretli izin ve ihtiyaçların karşılandığı karantina ister."
+    },
+    {
+      "post_id": 3540,
+      "url": "https://www.emep.org/lets-stop-carrying-this-outdated-system",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "4e514a266e6e25ebdc8fdc7941c4cad863eb42babd36f5ba33dcc70d7627578c",
+      "start_char": 0,
+      "end_char": 12083,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "4e514a266e6e25ebdc8fdc7941c4cad863eb42babd36f5ba33dcc70d7627578c",
+      "reading_note": "İngilizce EMEP MYK Nisan açıklaması pandemi, ücretli izin, bedelsiz koruyucu malzeme ve servet vergisi gibi 10 talep içerir. Türkçe 3524 paralel metindir; birbirinden bağımsız iki olay sayılmaz. Salgın köken ve sağlıkla ilgili iddialar partiye atıflıdır."
+    },
+    {
+      "post_id": 3536,
+      "url": "https://www.emep.org/adi-isciye-tadi-sermayeye",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "ea11b9a3918ac47756bd8ce81c86aa4e3a99dce08f2ea568773df5dd82631d02",
+      "start_char": 0,
+      "end_char": 2965,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "ea11b9a3918ac47756bd8ce81c86aa4e3a99dce08f2ea568773df5dd82631d02",
+      "reading_note": "Doğan 9 Nisan işten çıkarma ve ücretsiz izin taslağını, 39,24 TL günlük destek ve kapsamını eleştirir; teklif-son kanun ayrımı ve hukukî kapsam bağımsız birincil kaynakla doğrulanmalı."
+    },
+    {
+      "post_id": 3531,
+      "url": "https://www.emep.org/ayrimci-infaz-yasasi-duzenlemesine-hayir",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "3b696aa156af759586075494082bfcd7850387153255d0f20a2dd001663db3af",
+      "start_char": 0,
+      "end_char": 2352,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "3b696aa156af759586075494082bfcd7850387153255d0f20a2dd001663db3af",
+      "reading_note": "Gürkan 8 Nisanda infaz teklifinin geri çekilmesi ve ayrım gözetmeyen düzenleme ister; hangi suçların ne şekilde kapsandığına ilişkin beyanlar kanun ve sürümlerle doğrulanmalı."
+    },
+    {
+      "post_id": 3527,
+      "url": "https://www.emep.org/infaz-yasasinda-esitlik-istiyoruz-adaletin-sesini-yukseltmeye-cagiriyoruz",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "70b1b3a4b9dec0cf7bfba3ec2171967f97007f43e0b2b5242984e88cdaa9860b",
+      "start_char": 0,
+      "end_char": 4722,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "70b1b3a4b9dec0cf7bfba3ec2171967f97007f43e0b2b5242984e88cdaa9860b",
+      "reading_note": "6 Nisan çok partili açıklamada EMEP on bir imzacıdan biridir; infaz teklifini eleştirip adalet çağrısı yapar. Ortak metin EMEPe tek başına yazarlık, karar yetkisi veya sonuç atfetmez."
+    },
+    {
+      "post_id": 3524,
+      "url": "https://www.emep.org/bu-kohne-duzeni-sirtimizda-tasimayalim",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "18126be0e49dc52a2bb212cf284ba68dd02dd469308589ea57bcd0a9dbe292aa",
+      "start_char": 0,
+      "end_char": 12215,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "18126be0e49dc52a2bb212cf284ba68dd02dd469308589ea57bcd0a9dbe292aa",
+      "reading_note": "Türkçe EMEP MYK Nisan açıklaması 10 pandemik önlem talep eder; İngilizce 3540 ile paraleldir. Salgın kökeni hakkında nedensellik iddiaları bilimsel kanıt olarak alınmadı."
+    },
+    {
+      "post_id": 3521,
+      "url": "https://www.emep.org/halktan-bagis-degil-servetten-vergi-adil-paylasim-ucretsiz-saglik-ucretli-izin",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "2fcee510219d08f7e4953796b222631d7b257bc74eead1eb7caa82ca8a09d0c4",
+      "start_char": 0,
+      "end_char": 3290,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "2fcee510219d08f7e4953796b222631d7b257bc74eead1eb7caa82ca8a09d0c4",
+      "reading_note": "Gürkan 31 Martta bağış kampanyasını eleştirir ve kamu kaynaklarının salgında ihtiyaçlara yönlendirilmesi, gerekli olmayan işlerde ücretli izin ister; atıflı iddiaların sonucunu göstermez."
+    },
+    {
+      "post_id": 3519,
+      "url": "https://www.emep.org/kapitalizm-yarattigi-sorunlari-cozmez-care-iscilerin-iktidari",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-24.json",
+      "body_sha256": "4377c2bdd211bcab760ec8648a768513e966dd11518f8611cecb2eeb4aaa8328",
+      "start_char": 0,
+      "end_char": 6811,
+      "body_temporal_status": "last_modified_at_or_before_cutoff",
+      "slice_sha256": "78c610ba99180b7b1714a4b7f96df6fff2cdb353cb8f5e00d705a9bc88e37196",
+      "reading_note": "Gürkanın salgın, şeffaflık ve sağlık hizmetleri röportajının yalnız [0,6811) kısmı; ham gövde sonundaki kaynak notu Evrensel gazetesi röportajı olduğunu belirtir. Devamı 270tedir; iki yayım bağımsız röportaj sayılmaz."
+    }
+  ],
+  "closure_refs": []
+}
