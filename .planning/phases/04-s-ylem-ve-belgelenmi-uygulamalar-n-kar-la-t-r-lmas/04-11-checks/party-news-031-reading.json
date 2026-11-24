@@ -1,0 +1,53 @@
+{
+  "tranche_id": "saadet-party-news-031",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T10:08:58.981192+00:00",
+  "reads": [
+    {
+      "post_id": 563,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/butce-teklifini-reddediyoruz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=butce-teklifini-reddediyoruz",
+      "published_at": "2025-12-08T10:43:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T10:07:37.391628+00:00",
+      "original_path": "party-news-bodies/563.json",
+      "sha256": "f35727720a942617bfeaf69b50059afe528fa632076be711a3cd76b95741016d",
+      "normalized_body_sha256": "c30945a52fce5410742f710ff82e47cee4ba8f8d318cb79da959c15889f9bc0c",
+      "source_section_range": [
+        0,
+        12357
+      ],
+      "state": "examined",
+      "reading": "Parti yayını Arıkanın 2026 merkezi yönetim bütçe teklifi üzerine Genel Kurul konuşmasını ve bütçeyi reddettikleri açıklamasını aktarıyor. Vergi, sosyal program ve faiz kıyasları konuşmacıya atıflıdır. TBMM 8 Aralık 26. birleşim tutanağı Arıkanın Yeni Yol grubunun devredilen söz süresinde konuştuğunu ve bütçenin arkasındaki zihniyeti reddettiğini kaydeder. Parti yayınının son cümlesi tutanak kapanışıyla birebir örtüşmez; ikisi ayrı kaynaktır.",
+      "selected_passages": [
+        {
+          "start": 12268,
+          "end": 12290,
+          "exact": "bu bütçeyi reddediyor,"
+        }
+      ],
+      "point": "2026 merkezi yönetim bütçe teklifi ve parti tutumu.",
+      "statement": "Arıkan bütçe önceliklerini eleştirdi; parti yayını bütçeyi reddetme açıklaması aktarıyor.",
+      "concrete_evidence": "8 Aralık 2025 TBMM 26. birleşim tam tutanağı, 1/280 teklifinin tümü üzerindeki konuşmayı ve Arıkanın Yeni Yol süresinden konuştuğunu doğrudan kaydeder. Konuşma ve ret yönündeki tutum bir oylama tutanağının yerini almaz.",
+      "open_provenance": "Parti metnindeki son cümle ile tutanak sonu aynı değildir; konuşma taslağı ve fiili söz arasındaki farkın nedeni açıklanmadı. Ayrı bütçe oylamasında isimli oy ve 2026 ücretinin açıklanma zamanı araştırılmalı; boş güncelleme alanı eski sürümü kanıtlamaz.",
+      "companion_sources": [
+        {
+          "publisher": "TBMM",
+          "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/26/Tam/1cf85bb5-760b-40b9-aefb-c83726a61322.pdf",
+          "document_date": "2025-12-08",
+          "original_path": "party-news-bodies/563-tbmm-26.pdf",
+          "sha256": "a1f3aa8636330a165e2590794aa05f2dd9285a5ad998e66e671934ba7f1d050c",
+          "accessed_at": "2026-11-24T10:08:33.536810+00:00",
+          "sections": "26. birleşim: Yeni Yol grup süresinin devri, Arıkanın konuşması ve sonu",
+          "limitation": "Bütçe oylaması ve münferit oy kaydı değil."
+        }
+      ]
+    }
+  ],
+  "completed_pre_cut_bodies": 116,
+  "remaining_pre_cut_bodies": 533,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
