@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 21 | 20 | 62486040 |
+| TİP | 22 | 21 | 62587905 |
 | DEM Parti | 82 | 12 | 62585486 / 62585531 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -448,3 +448,5 @@ EMEP’in 2019 tarım desteklerinin ödeme takvimi karşılaştırması iki HTML
 Dört tarihsel Demokrat Parti mali denetim kararı iki HTML görünümünde ve bağımsız veri denetiminden geçti. 2011 hükmündeki 300 TL Hazineye irat ve 2012’deki 2.904,36 TL gecikme gideri ayrı. 2013 ve 2017 kararlarının denetlediği tutarlar kendi dönemlerine bağlı. Kararların fiilî icrası ile aynı döneme ait parti söylemi açık. [Mali denetim makbuzu](../04-12-checks/party-financial-audits-62587061.json) [Bağımsız denetim](../04-12-checks/party-financial-audits-62587061-independent.log)
 
 2 Ocak 2020 Libya tezkeresi için TİP açıklaması, 41. birleşim tutanağı, kesin açık oy cetveli ve karar sicili özgün baytlarla arşivlendi. 30 Aralık sunuşu, Baş’ın TİP temsilcisi sıfatı, bireysel Red oyu ve Mengüllüoğlu’nun Katılmadı kaydı ayrı. Kürsü sayıları ve kesin toplamlardaki fark kaydedildi. Kararın 3 Ocak yayımı TBMM sicilinden. 23 olay ve 22 ilişkilik aday 62589479 ile, 7242 doğrulamasına bağlı olarak sırada. [Libya kaynakları](../04-05-checks/tip-libya-1238-sources/reading.json)
+
+TİP’in 6 Nisan 2020 ortak açıklaması ve 7242’nin kabulü iki HTML görünümünde, bağımsız JSON ve SQLite denetiminde doğrulandı. Kesin cetvelde iki TİP milletvekilinin satırı Katılmadı. EMEP kaydı aynı kabul işlemini kendi açıklamasıyla ilişkilendiriyor. Birleştirme adayı ortak kaynağı ve iki partinin ayrı delillerini içeriyor. [TİP makbuzu](../04-05-checks/tip-7242-62587905.json) [Bağımsız denetim](../04-05-checks/tip-7242-62587905-independent.log)

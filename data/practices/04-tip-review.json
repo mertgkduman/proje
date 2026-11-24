@@ -3184,6 +3184,240 @@
       "limitations": "Haber doğrudan konuşma dökümü değildir; teklif ve hükümsüzlük barınma sonucunu göstermez.",
       "result": "reviewed",
       "reason": "Kayıt türü, tarih ve yetki bağlamı karşılaştırıldı: practice_statement.summary_finding_id 0405-tip-yurt-statement"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0405-tip-7242-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-floor-v1\", \"0405-tip-7242-law-v1\", \"0405-tip-7242-registry-v1\", \"0405-tip-7242-roll-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-floor-accepted-p\", \"0405-tip-7242-floor-votes-p\", \"0405-tip-7242-law-effective-p\", \"0405-tip-7242-law-exclusions-p\", \"0405-tip-7242-registry-adopt-p\", \"0405-tip-7242-registry-issue-p\", \"0405-tip-7242-registry-publish-p\", \"0405-tip-7242-roll-atay-p\", \"0405-tip-7242-roll-bas-p\", \"0405-tip-7242-roll-count-p\"]",
+      "inspected_sections": "[\"207 sıra sayılı teklifin kabulü\", \"52. madde geçici denetimli serbestlik istisnası\", \"68. maddeye göre yayım günü yürürlük\", \"Basılı s. 383, 00.09 kesin sonuç ve sayısal oy cetveli\", \"Basılı s. 387, TİP Hatay Barış Atay Mengüllüoğlu satırı\", \"Basılı s. 388, TİP İstanbul Erkan Baş satırı\", \"Kürsünün okuduğu toplam ve oy sayıları\", \"Resmî Gazete sayısı\", \"TBMM sicilinde 7242 kabul tarihi\", \"TBMM sicilinde 7242 yayımı\"]",
+      "supported_claim": "2/2762 teklifinin kabul edildiği duyuruldu. Kürsü 330 toplam, 279 kabul ve 51 ret bildirdi. 68. madde uyarınca yürürlük günü yayımla aynı. 52. madde geçici denetimli serbestlikte Terörle Mücadele Kanunu kapsamı istisnasını içeriyor. Sicil 14 Nisan kabul gününü kaydediyor. Resmî Gazete sayısı 31100. Sicil 15 Nisan 2020 yayım gününü kaydediyor. Basılı 387. sayfa, TİP Hatay Barış Atay Mengüllüoğlu için Katılmadı. Basılı 388. sayfa, TİP İstanbul Erkan Baş için Katılmadı. Basılı kesin cetvel 00.09, 279 kabul, 51 ret ve 330 toplam gösteriyor.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event türündeki 0405-tip-7242-event kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-floor-accepted-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-floor-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-floor-accepted-p\"]",
+      "inspected_sections": "[\"207 sıra sayılı teklifin kabulü\"]",
+      "supported_claim": "2/2762 teklifinin kabul edildiği duyuruldu.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-floor-accepted-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-floor-votes-p|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-floor-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-floor-votes-p\"]",
+      "inspected_sections": "[\"Kürsünün okuduğu toplam ve oy sayıları\"]",
+      "supported_claim": "Kürsü 330 toplam, 279 kabul ve 51 ret bildirdi.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-floor-votes-p|action kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-law-effective-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-law-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-law-effective-p\"]",
+      "inspected_sections": "[\"68. maddeye göre yayım günü yürürlük\"]",
+      "supported_claim": "68. madde uyarınca yürürlük günü yayımla aynı.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-law-effective-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-law-exclusions-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-law-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-law-exclusions-p\"]",
+      "inspected_sections": "[\"52. madde geçici denetimli serbestlik istisnası\"]",
+      "supported_claim": "52. madde geçici denetimli serbestlikte Terörle Mücadele Kanunu kapsamı istisnasını içeriyor.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-law-exclusions-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-registry-adopt-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-registry-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-registry-adopt-p\"]",
+      "inspected_sections": "[\"TBMM sicilinde 7242 kabul tarihi\"]",
+      "supported_claim": "Sicil 14 Nisan kabul gününü kaydediyor.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-registry-adopt-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-registry-issue-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-registry-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-registry-issue-p\"]",
+      "inspected_sections": "[\"Resmî Gazete sayısı\"]",
+      "supported_claim": "Resmî Gazete sayısı 31100.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-registry-issue-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-registry-publish-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-registry-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-registry-publish-p\"]",
+      "inspected_sections": "[\"TBMM sicilinde 7242 yayımı\"]",
+      "supported_claim": "Sicil 15 Nisan 2020 yayım gününü kaydediyor.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-registry-publish-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-roll-atay-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-roll-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-roll-atay-p\"]",
+      "inspected_sections": "[\"Basılı s. 387, TİP Hatay Barış Atay Mengüllüoğlu satırı\"]",
+      "supported_claim": "Basılı 387. sayfa, TİP Hatay Barış Atay Mengüllüoğlu için Katılmadı.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-roll-atay-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-roll-bas-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-roll-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-roll-bas-p\"]",
+      "inspected_sections": "[\"Basılı s. 388, TİP İstanbul Erkan Baş satırı\"]",
+      "supported_claim": "Basılı 388. sayfa, TİP İstanbul Erkan Baş için Katılmadı.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-roll-bas-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-roll-count-p|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-roll-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-roll-count-p\"]",
+      "inspected_sections": "[\"Basılı s. 383, 00.09 kesin sonuç ve sayısal oy cetveli\"]",
+      "supported_claim": "Basılı kesin cetvel 00.09, 279 kabul, 51 ret ve 330 toplam gösteriyor.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_event_evidence türündeki 0405-tip-7242-event|0405-tip-7242-roll-count-p|result kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-7242-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-floor-v1\", \"0405-tip-7242-law-v1\", \"0405-tip-7242-party-v1\", \"0405-tip-7242-registry-v1\", \"0405-tip-7242-roll-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-floor-accepted-p\", \"0405-tip-7242-floor-votes-p\", \"0405-tip-7242-law-effective-p\", \"0405-tip-7242-law-exclusions-p\", \"0405-tip-7242-party-name-p\", \"0405-tip-7242-party-quote-p\", \"0405-tip-7242-registry-adopt-p\", \"0405-tip-7242-registry-issue-p\", \"0405-tip-7242-registry-publish-p\", \"0405-tip-7242-roll-atay-p\", \"0405-tip-7242-roll-bas-p\", \"0405-tip-7242-roll-count-p\"]",
+      "inspected_sections": "[\"207 sıra sayılı teklifin kabulü\", \"52. madde geçici denetimli serbestlik istisnası\", \"6 Nisan ortak açıklamasındaki kapsam itirazı\", \"68. maddeye göre yayım günü yürürlük\", \"Açıklamanın 11 imzacısı içinde TİP\", \"Basılı s. 383, 00.09 kesin sonuç ve sayısal oy cetveli\", \"Basılı s. 387, TİP Hatay Barış Atay Mengüllüoğlu satırı\", \"Basılı s. 388, TİP İstanbul Erkan Baş satırı\", \"Kürsünün okuduğu toplam ve oy sayıları\", \"Resmî Gazete sayısı\", \"TBMM sicilinde 7242 kabul tarihi\", \"TBMM sicilinde 7242 yayımı\"]",
+      "supported_claim": "2/2762 teklifinin kabul edildiği duyuruldu. Kürsü 330 toplam, 279 kabul ve 51 ret bildirdi. 68. madde uyarınca yürürlük günü yayımla aynı. 52. madde geçici denetimli serbestlikte Terörle Mücadele Kanunu kapsamı istisnasını içeriyor. Açıklamanın 11 imzacısı içinde TİP 6 Nisan ortak açıklamasındaki kapsam itirazı Sicil 14 Nisan kabul gününü kaydediyor. Resmî Gazete sayısı 31100. Sicil 15 Nisan 2020 yayım gününü kaydediyor. Basılı 387. sayfa, TİP Hatay Barış Atay Mengüllüoğlu için Katılmadı. Basılı 388. sayfa, TİP İstanbul Erkan Baş için Katılmadı. Basılı kesin cetvel 00.09, 279 kabul, 51 ret ve 330 toplam gösteriyor.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_relation türündeki 0405-tip-7242-relation kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-7242-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-law-v1\", \"0405-tip-7242-party-v1\", \"0405-tip-7242-registry-v1\", \"0405-tip-7242-roll-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-law-exclusions-p\", \"0405-tip-7242-party-quote-p\", \"0405-tip-7242-registry-adopt-p\", \"0405-tip-7242-roll-atay-p\", \"0405-tip-7242-roll-bas-p\", \"0405-tip-7242-roll-count-p\"]",
+      "inspected_sections": "[\"52. madde geçici denetimli serbestlik istisnası\", \"6 Nisan ortak açıklamasındaki kapsam itirazı\", \"Basılı s. 383, 00.09 kesin sonuç ve sayısal oy cetveli\", \"Basılı s. 387, TİP Hatay Barış Atay Mengüllüoğlu satırı\", \"Basılı s. 388, TİP İstanbul Erkan Baş satırı\", \"TBMM sicilinde 7242 kabul tarihi\"]",
+      "supported_claim": "52. madde geçici denetimli serbestlikte Terörle Mücadele Kanunu kapsamı istisnasını içeriyor. 6 Nisan ortak açıklamasındaki kapsam itirazı Sicil 14 Nisan kabul gününü kaydediyor. Basılı 387. sayfa, TİP Hatay Barış Atay Mengüllüoğlu için Katılmadı. Basılı 388. sayfa, TİP İstanbul Erkan Baş için Katılmadı. Basılı kesin cetvel 00.09, 279 kabul, 51 ret ve 330 toplam gösteriyor.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.explanation_finding_id türündeki 0405-tip-7242-relation kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0405-tip-7242-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-floor-v1\", \"0405-tip-7242-law-v1\", \"0405-tip-7242-registry-v1\", \"0405-tip-7242-roll-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-floor-accepted-p\", \"0405-tip-7242-floor-votes-p\", \"0405-tip-7242-law-effective-p\", \"0405-tip-7242-registry-publish-p\", \"0405-tip-7242-roll-atay-p\", \"0405-tip-7242-roll-bas-p\"]",
+      "inspected_sections": "[\"207 sıra sayılı teklifin kabulü\", \"68. maddeye göre yayım günü yürürlük\", \"Basılı s. 387, TİP Hatay Barış Atay Mengüllüoğlu satırı\", \"Basılı s. 388, TİP İstanbul Erkan Baş satırı\", \"Kürsünün okuduğu toplam ve oy sayıları\", \"TBMM sicilinde 7242 yayımı\"]",
+      "supported_claim": "2/2762 teklifinin kabul edildiği duyuruldu. Kürsü 330 toplam, 279 kabul ve 51 ret bildirdi. 68. madde uyarınca yürürlük günü yayımla aynı. Sicil 15 Nisan 2020 yayım gününü kaydediyor. Basılı 387. sayfa, TİP Hatay Barış Atay Mengüllüoğlu için Katılmadı. Basılı 388. sayfa, TİP İstanbul Erkan Baş için Katılmadı.",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.result_finding_id türündeki 0405-tip-7242-relation kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-7242-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-party-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-party-name-p\", \"0405-tip-7242-party-quote-p\"]",
+      "inspected_sections": "[\"6 Nisan ortak açıklamasındaki kapsam itirazı\", \"Açıklamanın 11 imzacısı içinde TİP\"]",
+      "supported_claim": "Açıklamanın 11 imzacısı içinde TİP 6 Nisan ortak açıklamasındaki kapsam itirazı",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_relation.target_finding_id türündeki 0405-tip-7242-relation kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0405-tip-7242-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-party-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-party-name-p\", \"0405-tip-7242-party-quote-p\"]",
+      "inspected_sections": "[\"6 Nisan ortak açıklamasındaki kapsam itirazı\", \"Açıklamanın 11 imzacısı içinde TİP\"]",
+      "supported_claim": "Açıklamanın 11 imzacısı içinde TİP 6 Nisan ortak açıklamasındaki kapsam itirazı",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_statement türündeki 0405-tip-7242-statement kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0405-tip-7242-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-party-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-party-quote-p\"]",
+      "inspected_sections": "[\"6 Nisan ortak açıklamasındaki kapsam itirazı\"]",
+      "supported_claim": "6 Nisan ortak açıklamasındaki kapsam itirazı",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_statement.quote_finding_id türündeki 0405-tip-7242-statement kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0405-tip-7242-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T14:46:24+00:00",
+      "source_version_ids": "[\"0405-tip-7242-party-v1\"]",
+      "passage_ids": "[\"0405-tip-7242-party-name-p\", \"0405-tip-7242-party-quote-p\"]",
+      "inspected_sections": "[\"6 Nisan ortak açıklamasındaki kapsam itirazı\", \"Açıklamanın 11 imzacısı içinde TİP\"]",
+      "supported_claim": "Açıklamanın 11 imzacısı içinde TİP 6 Nisan ortak açıklamasındaki kapsam itirazı",
+      "limitations": "TİP ortak açıklamanın ayrı imzacısı. TBMM cetvelinde iki kişisel kayıt Katılmadı. Katılmama kaydının nedeni, ayrı parti kararı ve bireysel infaz uygulaması açık.",
+      "result": "reviewed",
+      "reason": "practice_statement.summary_finding_id türündeki 0405-tip-7242-statement kaydı için ilgili 6 Nisan ortak metni ve 7242 pasajları okundu."
     }
   ],
   "source_review_refs": [
@@ -4166,6 +4400,78 @@
     {
       "subject_kind": "practice_statement.summary_finding_id",
       "subject_id": "0405-tip-yurt-statement"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0405-tip-7242-event"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-floor-accepted-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-floor-votes-p|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-law-effective-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-law-exclusions-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-registry-adopt-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-registry-issue-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-registry-publish-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-roll-atay-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-roll-bas-p|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0405-tip-7242-event|0405-tip-7242-roll-count-p|result"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0405-tip-7242-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0405-tip-7242-relation"
+    },
+    {
+      "subject_kind": "practice_relation.result_finding_id",
+      "subject_id": "0405-tip-7242-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0405-tip-7242-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0405-tip-7242-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0405-tip-7242-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0405-tip-7242-statement"
     }
   ]
 }
