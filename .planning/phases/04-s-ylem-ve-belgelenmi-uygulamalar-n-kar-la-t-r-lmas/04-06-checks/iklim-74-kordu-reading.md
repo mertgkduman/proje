@@ -1,0 +1,5 @@
+# 9 Nisan 2025 DEM grup konuşması
+
+[TBMM 28. dönem 3. yasama yılı 74. birleşim tam tutanağı](https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/3/74/Tam/0fb55943-1a03-46cc-8bb2-3c59a2fb8af2.html) özgün SHA-256 `489decab3ae68c7d1e77936d0e13f593e5bcb692a038cd2a2f4740b946fa042b`. Belge tarihi, 2/2927 teklif ve 198 sıra sayılı rapor başlığı ile Ayten Kordu'nun DEM Grubu adına yaptığı konuşma okundu. Kordu teklifin kabul edilmemesini, geri çekilmesini ve ilgili kurumlar, odalar, sivil toplum ile çevre örgütleriyle iklim kanunu hazırlanmasını istedi. Teklifin içeriği ve gerekçeleri hakkında yaptığı eleştiriler kendisine ve konuşmanın grup sıfatına atfedilir.
+
+Bu olay grup konuşmasıdır; 9 Nisan'daki madde önergelerinin imza ve oylamaları veya 2 Temmuz'daki nihai açık oylama değildir. Tutanak bu konuşmadan Kordu'nun kişisel oyunu ya da fiilen yeni kanun hazırlandığını göstermez. Önceki bağımsız parti söylemiyle dönemsel eşleşme açık bırakıldı. Belgenin tamamı veya tüm 74. birleşim okundu iddiası yoktur.
