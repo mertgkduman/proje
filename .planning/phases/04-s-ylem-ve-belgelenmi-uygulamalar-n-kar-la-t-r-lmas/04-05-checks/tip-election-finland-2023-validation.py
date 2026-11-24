@@ -39,9 +39,7 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
             row = next(data for data in records[table] if data["id"] == ident)
             actual = db.execute(f"SELECT * FROM {table} WHERE id=?", (ident,)).fetchone()
             assert dict(actual) == row and row in export[table], (table, ident)
-    pages = {"election-total": (3, "MM/24"), "election-seats": (4, "MM/25"), "nato-final": (130, "839"),
-             "nato-atay": (137, "846"), "nato-bas": (138, "847"), "nato-kadigil": (139, "848"),
-             "nato-sik": (140, "849")}
+    pages = {"election-total": (3, "MM/24"), "election-seats": (4, "MM/25")}
     for name, expected in pages.items():
         selected = db.execute(
             "SELECT p.pdf_page_index,p.printed_page FROM passage p JOIN manual_passage m ON p.id=m.passage_id WHERE p.id=?",

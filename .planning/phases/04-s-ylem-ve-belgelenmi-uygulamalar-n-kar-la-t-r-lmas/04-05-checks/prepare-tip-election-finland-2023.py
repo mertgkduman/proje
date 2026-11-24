@@ -80,7 +80,7 @@ for key, name, day, title, kind, publisher, author, published, basis in (
     ("nato-membership", "nato-finland-20230404.html.bin", "2023-04-04", "Finlandiya’nın NATO üyeliği", "official",
      "NATO", None, None, "NATO açıklamasında üyeliğin tarihi ve katılma belgesinin teslimi."),
     ("nato-floor", "tbmm-finland-floor.pdf", "2023-03-30", "30 Mart TBMM 82. birleşim tutanağı", "official",
-     "TBMM", None, None, "Teklif ve sıra sayısı, kürsü bildirimi ve ayrı kesin açık oy cetveli."),
+     "TBMM", None, None, "Teklif ve sıra sayısı ile kürsü bildirimi. Kesin cetvel ayrı bir ek."),
     ("nato-registration", "tbmm-finland-register.html.bin", "2023-03-30", "TBMM 7448 sicili", "official",
      "TBMM", None, None, "7448, kabul ve yayım günleri ve Resmî Gazete sayısı."),
 ):
@@ -115,8 +115,8 @@ for key, source, page, printed, exact, label, manual in (
     ("election-call", "election-statement", None, None,
      "1 milyona yakın oyla (81 ilin 51’inden alınan yüzde 1,75 oy) şimdilik çıkardığımız 4 vekillik",
      "15 Mayıs parti açıklamasında geçici oy oranı ve sandalye sayısı", False),
-    ("election-decision", "election-gazette", 0, None, "Karar No: 2023/1255",
-     "30 Mayıs mükerrer 32206 sayılı Resmî Gazete. 14 Mayıs milletvekili seçimi kesin kararı", True),
+    ("election-decision", "election-gazette", 0, None, "YÜKSEK SEÇİM KURULU KARARI",
+     "30 Mayıs mükerrer 32206 sayılı Resmî Gazete. 14 Mayıs milletvekili seçimi kesin 2023/1255 sayılı kararı", False),
     ("election-total", "election-gazette", 3, "MM/24", "TÜRKİYE İŞÇİ PARTİSİ | 903.742 | 52.315 | 956.057 | %1,76",
      "Türkiye geneli toplamı, yurt içi, yurt dışı ve gümrük oyları ve yüzde satırı", True),
     ("election-seats", "election-gazette", 4, "MM/25", "TÜRKİYE İŞÇİ PARTİSİ | 4",
@@ -128,34 +128,23 @@ for key, source, page, printed, exact, label, manual in (
     ("nato-bill", "nato-floor", 114, "823", "Kanun Teklifi (2/5005) ve\nDışişleri Komisyonu Raporu (S. Sayısı 438)",
      "82. birleşimde 2/5005 ve S.S. 438", False),
     ("nato-announcement", "nato-floor", 126, "835", "“Kullanılan oy sayısı : 276\nKabul\n: 276 (*)",
-     "2/5005 için kürsü bildirimi", False),
-    ("nato-final", "nato-floor", 130, "839", "Sıra Sayısı : 438 | Kabul Edenler : 275 | Mükerrer Oylar : 2 | Toplam : 277",
-     "23.51 kesin cetveli. Başlık ve sayılar S.S. 438 sütunundan", True),
-    ("nato-atay", "nato-floor", 137, "846", "Hatay | Mengüllüoğlu | Barış Atay | TİP | S.S. 438 Katılmadı",
-     "Barış Atay Mengüllüoğlu, S.S. 438 sütunu", True),
-    ("nato-bas", "nato-floor", 138, "847", "İstanbul | Baş | Erkan | TİP | S.S. 438 Katılmadı",
-     "Erkan Baş, S.S. 438 sütunu", True),
-    ("nato-kadigil", "nato-floor", 139, "848", "İstanbul | Kadıgil Sütlü | Saliha Sera | TİP | S.S. 438 Katılmadı",
-     "Saliha Sera Kadıgil Sütlü, S.S. 438 sütunu", True),
-    ("nato-sik", "nato-floor", 140, "849", "İstanbul | Şık | Ahmet | TİP | S.S. 438 Katılmadı",
-     "Ahmet Şık, S.S. 438 sütunu", True),
+     "2/5005 için kürsü bildirimi, kesin cetveldeki ayrı sayım yerine kullanılmaz", False),
     ("nato-adoption", "nato-registration", None, None, "30/03/2023",
      "TBMM 7448 sicilinde kabul günü", False),
     ("nato-publication", "nato-registration", None, None, "01/04/2023",
      "TBMM 7448 sicilinde 32150 sayılı Resmî Gazete yayım günü", False),
 ):
     path = sources[source][0]
-    if manual:
-        insert("manual_passage", dict(passage_id=pid(key), checked_at=now, method="Görsel PDF sayfası okuması",
-            reason=label + ". Dikey cetvel döndürülüp ilgili başlık ve satırlar özgün PDF’den okundu."
-            if source == "nato-floor" else label + ". Tarama görselindeki karar başlığı veya cetvel satırı okundu."))
-    elif page is None:
-        assert exact in html_source_text(path.read_bytes()), key
-    else:
-        assert exact in pdf_page_text(path, page), key
+    if not manual:
+        original = html_source_text(path.read_bytes()) if page is None else pdf_page_text(path, page)
+        assert exact in original, key
     passage = dict(id=pid(key), version_id=vid(source), exact=exact, prefix=None, suffix=None,
         article=None, section=label, pdf_page_index=page, printed_page=printed)
     insert("passage", passage)
+    if manual:
+        assert not pdf_page_text(path, page).strip(), key
+        insert("manual_passage", dict(passage_id=pid(key), checked_at=now, method="Görsel PDF sayfası okuması",
+            reason=label + ". Metin katmanı boş. Tarama görselindeki karar başlığı veya cetvel satırı okundu."))
     passages[key] = passage
 
 scopes = {}
@@ -263,15 +252,10 @@ ballot_event = f"{case}-nato-vote-event"
 add("practice_event", id=ballot_event, common_event_key="tbmm-27-6-82-2-5005-law-7448", event_at="2023-03-30",
     date_precision="day", date_unknown_reason=None, title="Finlandiya’nın NATO protokolü için 7448 sayılı kanunun kabulü",
     scope_context="TBMM 27. Dönem 6. Yasama Yılı 82. Birleşim, 2/5005 ve S.S. 438.",
-    occurrence_basis="30 Mart 2023 82. birleşimin altıncı oturum tutanağı, kesin cetvel ve 7448 sicili.")
+    occurrence_basis="30 Mart 2023 82. birleşimin altıncı oturum tutanağı ve 7448 sicili.")
 ballot_refs = {
     "nato-bill": "2/5005 ve S.S. 438 aynı dosya.",
     "nato-announcement": "Kürsü, kullanılan 276 oyun 276’sını kabul olarak duyurdu.",
-    "nato-final": "S.S. 438 kesin cetvelinde 275 kabul, 0 ret, 0 çekimser, 2 mükerrer ve 277 toplam.",
-    "nato-atay": "Barış Atay Mengüllüoğlu için Katılmadı kaydı.",
-    "nato-bas": "Erkan Baş için Katılmadı kaydı.",
-    "nato-kadigil": "Saliha Sera Kadıgil Sütlü için Katılmadı kaydı.",
-    "nato-sik": "Ahmet Şık için Katılmadı kaydı.",
     "nato-adoption": "7448’in kabul günü 30 Mart.",
     "nato-publication": "7448, 1 Nisan 32150 sayılı Resmî Gazete’de yayımlandı.",
 }
@@ -319,7 +303,7 @@ for payload in (package, review):
     payload["source_review_refs"] = references
 if not preflight:
     for suffix, payload in (("draft", package), ("review-draft", review)):
-        with (checks / f"tip-election-finland-2023-{suffix}.json").open("x") as stream:
+        with (checks / f"tip-election-finland-2023-{suffix}.json").open("w") as stream:
             json.dump(payload, stream, ensure_ascii=False, indent=2)
             stream.write("\n")
 print("TIP_ELECTION_FINLAND_2023_SEMANTIC_OK", len(records["practice_event"]), len(records["practice_relation"]))
