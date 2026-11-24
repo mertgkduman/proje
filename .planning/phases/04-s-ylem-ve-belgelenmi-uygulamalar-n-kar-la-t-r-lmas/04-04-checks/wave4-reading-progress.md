@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 68 | 70 | 62530588 |
 | Saadet Partisi | 25 | 21 | 62544651 |
-| Demokrat Parti | 31 | 28 | 62499618 |
+| Demokrat Parti | 33 | 30 | 62562757 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -279,3 +279,6 @@ EMEP 245, 246, 248 ve 249 kaynak dilimlerini tamamladı. 247’deki 4283 Kürtç
 Saadet’te 585, 579 ve 578 numaralı gövdeler okundu. Toplam 101/649 ve 548 gövde açık. 662 katalog kimliği çakışması ayrıca açık. Demokrat Parti’de 57–64 numaralı gövdelerle toplam 62/257 okundu, 193 kayıt açık ve iki kayıt kesim sonrası. 57 ve 58 aynı haberin farklı başlıkla yapılan iki yayını. [Saadet 021](../04-11-checks/party-news-021-reading.json) [Demokrat Parti 005](../04-12-checks/party-news-005-reading.json)
 
 12 Mart 2025 tarihli 2/2860 geçici 1. madde önergesinde Altıntaş imzası ve konuşması, teklifin tümüne ait kesin cetvelde Katılmadı kaydıyla ayrı işlemlerde doğrulandı. Başkanın duyurduğu 246 kabul ve 102 ret ile kesin cetveldeki 245 kabul ve 101 ret arasındaki fark, cetvelde işaretli birer mükerrer oya karşılık geliyor. 7545’in kabul günü 12 Mart, Resmî Gazete günü 19 Mart. [TBMM okuma kaydı](../04-12-checks/siber-7545-source-reading.json)
+
+
+Demokrat Parti’nin 3 Haziran 2025 toplu görüşme çağrısı, İZELMAN imza duyurusu ve İZENERJİ imzasına daha sonraki belediye atfıyla iki ayrı karşılaştırmada doğrulandı. Çağrının belediye veya sendika kararına etkisi, imzalı metinler ve ödemeler açık. [Önizleme makbuzu](../04-12-checks/izmir-tis-62562757.json)
