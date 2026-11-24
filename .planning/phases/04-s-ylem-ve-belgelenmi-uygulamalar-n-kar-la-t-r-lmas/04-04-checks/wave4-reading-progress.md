@@ -11,12 +11,12 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 28 | 27 | 62607705 |
 | DEM Parti | 84 | 12 | 62602872 / 62602874 |
-| İYİ Parti | 19 | 12 | 62503516 |
+| İYİ Parti | 20 | 12 | 62611360 / 62611365 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 80 | 77 | 62605762 |
+| EMEP | 81 | 77 | 62611329 |
 | Saadet Partisi | 33 | 29 | 62603695 / 62603699 |
-| Demokrat Parti | 79 | 50 | 62607799 |
+| Demokrat Parti | 80 | 51 | 62610812 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -528,3 +528,7 @@ On birinci birleşim için TİP ve EMEP’in 7527 kabulü aynı olay olarak eşl
 TİP’in 2023 Atalay dosyasında iki karşılaştırma, iki okuyucu görünümü ve bağımsız veri denetiminden geçti. 20 Eylül yürüyüş çağrısı 1 Ekim Hatay başlangıcı ve 28 Ekim Anıtpark bitişiyle bağlandı. 7 Kasım uygulama ve tahliye çağrısı, 8 Kasım Yargıtay kararının yayımlanmış nüshasıyla karşılaştırıldı. 25 Ekim ve 21 Aralık AYM kararları ile 3 Ocak 2024 kararı ve 30 Ocak TBMM işlemi ayrı. Yürüyüşün kararlar üzerindeki etkisi ve fiilî tahliye açık. Çalışma çifti 28 olay ve 27 ilişki. [Önizleme makbuzu](../04-05-checks/tip-atalay-2023-62607705.json) [Bağımsız denetim](../04-05-checks/tip-atalay-2023-62607705-independent.log)
 
 Demokrat Parti’nin 7/13274 dosyasına imzalı soru, işlem ayrıntısı ve iki TBMM bülteniyle dayanan olay eklendi. 25 Haziran 2024 Başkanlığa geliş, 4 Temmuz 162 sayılı bültendeki liste kaydı ve 19 Temmuz 169 sayılı bültendeki süresinde cevaplanmama ilanı ayrı. Parti yayımının sayfa ve gövde tarihleri daha sonra. Önceki karşılaştırılabilir söylem, sonraki imzalı cevap ve dış politika sonucu açık. İki okuyucu görünümü ve bağımsız veri denetimi geçti. Çalışma çifti 79 olay ve 50 ilişki. [Önizleme makbuzu](../04-12-checks/question-13274-bulletins-62607799.json) [Bağımsız denetim](../04-12-checks/question-13274-bulletins-62607799-independent.log)
+
+EMEP, 1–2 Kasım 2025 Ankara Demokrasi ve Barış Çalıştayı’nın altı ortak düzenleyicisinden biri olarak belgelendi. 3 Kasım EMEP metni ve sahadaki İlke TV kaydı kendi kaynaklarıyla karşılaştırıldı. Eylüldeki genel çağrı belirli çalıştayı adlandırmadığı için aday eşleşmemiş durumda. İki görünüm ve bağımsız veri denetimi geçti. Çalışma çifti 81 olay ve 77 ilişki. [Önizleme makbuzu](../04-10-checks/ankara-workshop-emep-62611329.json) [Bağımsız denetim](../04-10-checks/ankara-workshop-emep-62611329-independent.log)
+
+Altı liderin 2 Ekim 2022 toplantısı Demokrat Parti ve İYİ Parti çalışma çiftlerinde iki okuyucu görünümüyle doğrulandı. 21 Ağustos açıklamasındaki 14.00 planı, haberdeki 14.11 başlangıcı ve iki liderin katılımı ayrı. Demokrat Parti’nin 21 Ağustos ortak metnini yayımladığı doğrulandı. İYİ Parti’nin kendi yayımının araması açık. Ortak çalışma grubu kararı sahadaki politika sonucundan ayrı. Demokrat Parti 80 olay ve 51 ilişki. İYİ Parti 20 olay ve 12 ilişki. [Demokrat Parti önizlemesi](../04-12-checks/six-leaders-2022-dp-62610812.json) [İYİ Parti ortak olay incelemesi](../04-07-checks/six-leaders-2022-shared-comparison.json)
