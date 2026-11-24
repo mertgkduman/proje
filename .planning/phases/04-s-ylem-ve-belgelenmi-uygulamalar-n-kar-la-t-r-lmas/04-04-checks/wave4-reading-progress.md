@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 68 | 70 | 62530588 |
 | Saadet Partisi | 25 | 21 | 62544651 |
-| Demokrat Parti | 33 | 30 | 62562757 |
+| Demokrat Parti | 35 | 30 | 62565773 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -282,3 +282,6 @@ Saadet’te 585, 579 ve 578 numaralı gövdeler okundu. Toplam 101/649 ve 548 g�
 
 
 Demokrat Parti’nin 3 Haziran 2025 toplu görüşme çağrısı, İZELMAN imza duyurusu ve İZENERJİ imzasına daha sonraki belediye atfıyla iki ayrı karşılaştırmada doğrulandı. Çağrının belediye veya sendika kararına etkisi, imzalı metinler ve ödemeler açık. [Önizleme makbuzu](../04-12-checks/izmir-tis-62562757.json)
+
+
+2/2860 geçici 1. madde işlemi ve teklifin tümünün oylaması, 65. birleşimin basılı nüshasında ayrı pasajlarla ve altı denetim dosyasıyla iki HTML görünümünde doğrulandı. Altıntaş’ın imzası ve konuşması ilk işlemde, Katılmadı kaydı teklifin tümünde. Arşivde önceki söylem eşleşmeleri açık. [Önizleme makbuzu](../04-12-checks/siber-7545-62565773.json)
