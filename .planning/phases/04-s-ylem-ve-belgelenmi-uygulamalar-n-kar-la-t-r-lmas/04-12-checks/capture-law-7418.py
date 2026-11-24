@@ -17,16 +17,21 @@ reading_path = checks / 'law-7418-sources' / 'reading.json'
 reading = json.loads(reading_path.read_bytes())
 party_reading = json.loads((reading_path.parent / reading['party_source_ref']).read_bytes())
 party_item = next(row for row in party_reading['examined'] if row['position'] == reading['party_listing_position'])
+joint_reading = json.loads((reading_path.parent / reading['related_party_ref']).read_bytes())
+joint_item = next(row for row in joint_reading['examined'] if row['position'] == 148)
 sources = {row['original_path']: row for row in reading['sources']}
-sources[party_item['original_path']] = dict(
-    party_item, retrieved_at_utc=party_item['accessed_at'],
-    reading='Parti sayfası 6 Ekim tarihini, açıklama gövdesi 5 Ekim tarihini ve Neslihan Çevik’e atfı içeriyor.',
-)
+for row in (party_item, joint_item):
+    sources[row['original_path']] = dict(row, retrieved_at_utc=row['accessed_at'])
+
 now = datetime.now(timezone.utc).isoformat(timespec='seconds')
 specs = {
     'party': ('party-news-web/126.html.bin', '2022-10-06', 'Neslihan Çevik’in 5 Ekim tarihli 2/4471 açıklaması',
               [('request', None, 'bu yasaya karşı durmaya'), ('article29', None, 'Halkı yanıltıcı bilgiyi alenen yayma'),
                ('headline', None, 'ilk iki maddesi'), ('body', None, 'ilk maddesi de kabul edildi.')]),
+    'early-floor': ('tbmm-27-5-106.pdf', '2022-06-22', 'Cemal Enginyurt’un 22 Haziran Genel Kurul açıklaması',
+                    [('intent', 9, 'Demokrat Parti olarak aleyhinde oy\nkullanacağımızı ifade ediyor')]),
+    'joint': ('party-news-web/148.html.bin', '2022-07-03', 'Altı parti genel başkanının 3 Temmuz ortak açıklaması',
+              [('delay', None, 'Dezenformasyon yasasının ertelenmesi')]),
     'floor': ('tbmm-27-6-7.pdf', '2022-10-13', 'TBMM 27. dönem 6. yasama yılı 7. birleşim',
               [('article29', 27, '29’uncu madde kabul\nedilmiştir.'),
                ('bill', 61, 'Teklif kabul edilmiş ve kanunlaşmıştır.')]),
@@ -41,6 +46,8 @@ specs = {
                ('stay', 7, 'talebinin REDDİNE 8/11/2023 tarihinde OYBİRLİĞİYLE karar verilmiştir.')]),
 }
 sections = {
+    'intent': 'Enginyurt’un Genel Kuruldaki oy niyeti açıklaması',
+    'delay': 'Altı genel başkanın ortak teklif değerlendirmesi',
     'request': 'Parti sözcüsünün 2/4471’e karşı çağrısı',
     'article29': '2/4471 ve 7418’in 29. maddesi',
     'headline': 'Parti sayfasının ilk iki maddeye ilişkin sunuşu',
@@ -61,7 +68,8 @@ def add(table, **values):
 
 
 for role, (filename, day, title, anchors) in specs.items():
-    src = checks / filename if role == 'party' else reading_path.parent / filename
+    is_party = role in ('party', 'joint')
+    src = checks / filename if is_party else reading_path.parent / filename
     row = sources[filename]
     raw = src.read_bytes()
     digest = sha256(raw).hexdigest()
@@ -80,14 +88,13 @@ for role, (filename, day, title, anchors) in specs.items():
             target.write_bytes(blob)
     doc = case + '-' + role
     version = doc + '-v1'
-    is_party = role == 'party'
     add('document', id=doc, party_id=party, title=title, source_kind='party' if is_party else 'official')
     add('document_version', id=version, document_id=doc, original_url=url, final_url=final,
         document_date=day, date_precision='day', date_unknown_reason=None, version_label=title,
         accessed_at=row['retrieved_at_utc'], verified_at=now, mime='application/pdf' if fmt == 'pdf' else 'text/html',
         sha256=digest, original_path=str(original.relative_to(root)), readable_path=str(readable.relative_to(root)))
     add('source_attribution', version_id=version, kind='party_publication' if is_party else 'official',
-        publisher=row['publisher'], author='Neslihan Çevik' if is_party else None, social_handle=None,
+        publisher=row['publisher'], author={'party':'Neslihan Çevik', 'joint':'Altı siyasi parti genel başkanı'}.get(role), social_handle=None,
         published_at=day, date_precision='day', public_url=url, basis=row['reading'])
     if fmt == 'html':
         view = build_view(raw, final, root, fetch_assets=False)

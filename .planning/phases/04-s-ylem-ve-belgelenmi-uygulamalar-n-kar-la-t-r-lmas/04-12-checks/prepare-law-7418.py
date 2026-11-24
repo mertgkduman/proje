@@ -106,13 +106,17 @@ def register_statement(stem, topic, day, read_basis, comparison_row, short, refe
     return sid, target, short, references
 
 
-def compare(stem, topic, eid, statement, compare_text, temporal, authority, limit, outcome=None):
+def compare(stem, topic, eid, statement, compare_text, temporal, authority, limit,
+            outcome=None, context='', context_refs=()):
     sid, target, short, statement_refs = statement
     event_refs = [row['passage_id'] for row in records['practice_event_evidence'] if row['event_id'] == eid]
     scope = readings(topic, 'event', event_refs)
     rid = stem + '-relation'
     explanation = stem + '-explanation'
-    finding(explanation, compare_text + ' ' + limit, statement_refs + event_refs, limit)
+    finding(explanation, ' '.join(part for part in (compare_text, context, limit) if part),
+            statement_refs + event_refs + list(context_refs), limit)
+    if context_refs:
+        readings(topic, 'statement', context_refs)
     result = None
     if outcome:
         result = stem + '-result'
@@ -129,7 +133,7 @@ def compare(stem, topic, eid, statement, compare_text, temporal, authority, limi
         id=stem + '-candidate', scope_id=scope, event_id=eid, relation_id=rid,
         state='eligible', reason=compare_text, passage_ids=encoded(event_refs)))
     for kind, claim in (('practice_relation', compare_text), ('practice_relation.target_finding_id', short),
-                        ('practice_relation.explanation_finding_id', compare_text)):
+                        ('practice_relation.explanation_finding_id', (compare_text + ' ' + context).strip())):
         task(kind, rid, claim, limit)
     return scope
 
@@ -170,7 +174,9 @@ records['practice_event'][-1]['common_event_key'] = 'tbmm-27-6-07-2-4471-law-fin
 compare(stem + '-bill', topic, eid, statement,
         'Parti açıklamasında karşı çıkılan teklifin tümü Genel Kurulda kabul edildi.',
         'Teklifin tamamı 13 Ekim’de kabul edildi. Kanun 18 Ekim’de yayımlandı ve 29. madde aynı gün yürürlüğe girdi.',
-        authority, coverage, '2/4471, 7418 sayılı Kanun olarak 18 Ekim’de yayımlandı. 29. madde için yayım günü yürürlük tarihi.')
+        authority, coverage, '2/4471, 7418 sayılı Kanun olarak 18 Ekim’de yayımlandı. 29. madde için yayım günü yürürlük tarihi.',
+        context='Enginyurt 22 Haziran’da Genel Kurulda aleyhte oy verme niyetini açıkladı. Altı parti genel başkanının 3 Temmuz ortak metni teklifin ertelenmesinden söz ediyor.',
+        context_refs=(stem + '-early-floor-intent-p', stem + '-joint-delay-p'))
 court_refs = [
     (stem + '-court-index-docket-p', 'action', 'document', 'Fihrist 8 Kasım 2023, E.2022/129 ve K.2023/189 künyesini veriyor.'),
     (stem + '-court-review-p', 'action', 'document', 'AYM esastan iptal istemini altı karşıoyla oyçokluğuyla reddetti.'),
