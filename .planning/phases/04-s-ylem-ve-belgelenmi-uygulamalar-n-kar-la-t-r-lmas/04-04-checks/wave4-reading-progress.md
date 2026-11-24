@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 79 | 76 | 62595421 |
 | Saadet Partisi | 32 | 28 | 62592492 |
-| Demokrat Parti | 75 | 50 | 62592388 |
+| Demokrat Parti | 78 | 50 | 62596016 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -496,3 +496,5 @@ TİP açıklamaları dizininde ilk 24 gövde okundu. 17–24 arasındaki 38.402 
 21 Kasım 2025 tarihli komisyon tutanağında Ahmet Şık görüşmeye desteğini, grup dışı temsilin dışlanmasına ve kapalı oylamaya itirazını ayrı ifade ediyor. Tutanaktaki açık oturumun kapatılması oylaması ile sonraki kapalı ziyaret kararı ayrı. TBMM, 24 Kasım ziyaretine katılan üç temsilciyi ve 4 Aralık özet sunumunu bildiriyor. Kapalı oylamanın kişi cetveli ve ziyaretin sonraki politika sonucu açık. [Tutanak ve kurum kaynakları](../04-05-checks/mddk-20251121-sources/reading.json)
 
 EMEP’in 8 Ekim 2019 açıklaması ve 3/878 Irak–Suriye tezkeresinin 1231 sayılı kararla kabulü iki görünümde ve bağımsız veri denetiminde doğrulandı. Açıklamada 3/878 numarası bulunmadığı için ilişki tarih ile konuya dayanıyor. 3/879 ayrı. Tutanak kabulü gösteriyor. İsimli oy cetveli, Resmî Gazete karar aslı ve sonraki uygulama açık. Çalışma çifti 79 olay ve 76 ilişki. [Önizleme makbuzu](../04-10-checks/tezkere-1231-62595421.json)
+
+Demokrat Parti’nin 2014–2016 mali denetimleri iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. Üç AYM tekil PDF’si ile 2014 ve 2015 kararlarındaki beş parti cevabı ayrı pasajlarla saklandı. 2016 gerekçesindeki 1.532.775,00 TL ve hükümdeki 1.523.775 TL arasındaki 9.000 TL fark çözülmemiş olarak gösterildi. İrat hükümlerinin tahsil durumu açık. Çalışma çifti 78 olay ve 50 ilişki. [Önizleme makbuzu](../04-12-checks/party-audit-single-62596016.json) [Bağımsız denetim](../04-12-checks/party-audit-single-62596016-independent.log)
