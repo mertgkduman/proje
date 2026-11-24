@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-051",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T11:23:39.583759+00:00",
+  "reads": [
+    {
+      "post_id": 540,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/kira-enflasyonunda-avrupa-yi-katladik",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=kira-enflasyonunda-avrupa-yi-katladik",
+      "published_at": "2025-09-30T10:54:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T11:23:39.583781+00:00",
+      "original_path": "party-news-bodies/540.json",
+      "sha256": "508bec79bb684a18f0ab9e2d36e2f28dcb2fbb64b8f192d9954bd21d0320ec7d",
+      "normalized_body_sha256": "d7f5240c94408f08e03120fee41eaddd30eb0e97e3ad2887b702284c39cd704f",
+      "source_section_range": [
+        0,
+        5146
+      ],
+      "state": "examined",
+      "reading": "Sinan Tekin konut ve kira maliyetlerini eleştiriyor; düşük gelirli kiracıya en yüksek sendika açlık sınırının yüzde 25i tutarında destek, sosyal konut, lojman, denetim ve uzun vadeli finansman öneriyor.",
+      "selected_passages": [
+        {
+          "start": 4254,
+          "end": 4416,
+          "exact": "Yoksulluk sınırının altında yaşayan ve ev sahibi olmayan hanelere, sendikalarca açıklanan en yüksek açlık sınırının yüzde 25’i oranında kira desteği verilmelidir."
+        }
+      ],
+      "point": "Düşük gelirli kiracı desteği ve sosyal konut.",
+      "statement": "Tekin ev sahibi olmayan yoksul hanelere tanımladığı açlık sınırının yüzde 25i oranında kira desteği öneriyor.",
+      "concrete_evidence": "Parti açıklaması somut destek formülünü kaydeder; teklif verilmesi veya ödenmesi için işlem kanıtı değildir.",
+      "open_provenance": "Bu oran ve hedef kitleyle örtüşen tarihli Meclis teklifi varsa ayrıca doğrulanmalı. OECD/TÜİK kıyaslarının serileri, endeks ve yöntemleri bağımsız incelenmeli; kaynakta 2.500den 32.500e artış örneğiyle aktarılan diğer yüzde oranları doğrudan eşit varsayılmamalı."
+    }
+  ],
+  "completed_pre_cut_bodies": 137,
+  "remaining_pre_cut_bodies": 512,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
