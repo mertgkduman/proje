@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-095",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T14:08:43.073260+00:00",
+  "reads": [
+    {
+      "post_id": 485,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/milyonlarin-umuduyla-oynamaktan-vazgecin-insanlarla-dalga-gecmeyin",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=milyonlarin-umuduyla-oynamaktan-vazgecin-insanlarla-dalga-gecmeyin",
+      "published_at": "2024-12-20T21:40:15+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T14:08:43.073260+00:00",
+      "original_path": "party-news-bodies/485.json",
+      "sha256": "831493f60143615fa053b38691bb25423aecb78a66e53fe0dc2b0f306b2db5e7",
+      "normalized_body_sha256": "31ff37489ef03fd9f806ec0cc1997d8de46185d1e6b0678888369e25a42d558d",
+      "source_section_range": [
+        0,
+        2132
+      ],
+      "state": "examined",
+      "reading": "Arıkan 2025 asgari ücretinin tespitinden önce üç toplantıda teklif sunulmadığı iddiasını ve partinin yüzde 61 artı enflasyon farkı formülünü açıklıyor.",
+      "selected_passages": [
+        {
+          "start": 1317,
+          "end": 1401,
+          "exact": "asgari ücrete yapılacak zam, %61 + enflasyon farkı dikkate alınarak belirlenmelidir."
+        }
+      ],
+      "point": "2025 asgari ücret artışına yüzde 61 artı enflasyon farkı önerisi.",
+      "statement": "Parti Ekonomi Politikaları Kurulu çalışmasına dayanarak artışın yüzde 61 ve ayrıca enflasyon farkı dikkate alınarak belirlenmesini istiyor.",
+      "concrete_evidence": "20 Aralık 2024 tarihli parti API gövdesi 2025 ücret tespit süreci öncesi formülü aktarıyor.",
+      "open_provenance": "Enflasyon farkının dönemi, hesap tabanı, net/brüt ve formülün toplam sayısal sonucu bu gövdede belirtilmiyor; yüzde 61in tek başına nihai talep tutarı olduğu varsayılmamalı. 2026 için önceki 33 bin TL vakası ile farklı yıldır."
+    }
+  ],
+  "completed_pre_cut_bodies": 181,
+  "remaining_pre_cut_bodies": 468,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
