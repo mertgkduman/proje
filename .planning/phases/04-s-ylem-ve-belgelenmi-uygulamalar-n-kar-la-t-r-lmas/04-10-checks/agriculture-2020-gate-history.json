@@ -9,7 +9,14 @@
     },
     {
       "job": "62586033",
-      "result": "running at creation; exact outcome in job logs and receipt"
+      "result": "FAILED 1:0; input, source, preview CLI exit 0",
+      "reason": "Önizleme üretildi; ek wrapper 8 Mayıs aradı fakat iki kartta tarih 8 ve 15 Mayıs olarak yazıyor. İçerik anlamı yerinde; literal test hatası."
+    },
+    {
+      "job": "62588487",
+      "result": "COMPLETED 0:0; önceki üç CLI çıkışı, exact hash ve manifest, iki HTML kartı ve bağımsız eski/yeni JSON-SQLite satırları doğrulandı",
+      "receipt": "agriculture-2020-62588487.json",
+      "independent": "agriculture-2020-62588487-independent.log"
     }
   ],
   "interpretation_limits": "21 Nisan ön duyurusu parti açıklamasından öncedir. AA 24 Nisan bakan açıklaması takvimdir; Hazine'nin Nisan ve Mayıs 2020 bütçe gerçekleşmeleri tüm buzağı desteği satırının aylık toplamlarıdır, üretici bazında ödeme veya 2019 dönemine özgü harcama dökümü değildir. Tüm tarım desteklerinin tamamlandığı ve parti nedenselliği gösterilmez.",

@@ -1,0 +1,6 @@
+Staged 580 original, readable and view paths; package 9ab640a732034bf893e2702e28edd897f1f28178bc3754c92962a0236dee404f; review 2f2e58f00b788e7247f02d9b9a682fecf9ef7c7be01038fbd03a1fa79219a38d
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/agriculture-2020-validation.py", line 18, in <module>
+    for text in ('21 Nisan','22 Nisan','24 Nisan','8 Mayıs','15 Mayıs','710','690'): assert text in card,(view,text)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('party', '8 Mayıs')
