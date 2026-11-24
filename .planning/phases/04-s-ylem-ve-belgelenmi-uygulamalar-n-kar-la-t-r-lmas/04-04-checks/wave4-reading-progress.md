@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 75 | 72 | 62578062 |
 | Saadet Partisi | 28 | 24 | 62575423 |
-| Demokrat Parti | 57 | 46 | 62579304 |
+| Demokrat Parti | 60 | 47 | 62581680 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -407,3 +407,5 @@ Demokrat Parti 033 sonunda 220/257 özgün gövde okudu. İki yayın kapsam tari
 ANKAPARK için ABB maliyet icmali, 6 Temmuz 2022 tarihli tahliye kararının yayımlanan bölümü, 18 Temmuz teslim tutanağının yayımlanan bölümü, ziyaret ve sonraki hizmet duyuruları okundu. İcmaldeki dolar hesabı ve partinin iki farklı tutar açıklaması kendi kaynaklarında. Alanın tamamının kalıcı dönüşümü ve sonraki yargı sonucu açık. [ANKAPARK kaynakları](../04-12-checks/ankapark-followup-sources/reading.json)
 
 7344 ana bütçe adayının girdi dosyaları 62583044 için kesin hashlerle hazırlandı. İş 7414 ek bütçe doğrulamasına bağlı. Saadet 082 sonunda 168/649 özgün gövde okudu, 481 açık. 10/2925 imzalı önerge için ilk Slurm süresi yetersizdi ve aday 62583013 ile yeniden denetime girdi. İliç dosyasında 8/64 genel görüşme önergesi, aynı gün görüşülmesi hakkındaki grup işlemi ve komisyonun raporu ayrı. [7344 adayı](../04-12-checks/budget-7344-draft.json) [Saadet 082](../04-11-checks/party-news-082-reading.json)
+
+7414 ek bütçe ve 7490 kesin hesap karşılaştırması iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. TBMM kesin cetveli iki Demokrat Parti milletvekilini Katılmadı olarak kaydediyor. İmzalı teklifteki Cumhurbaşkanlığı ödeneği kalemi, kabul edilen 7414 hükmü ve 7490 yıl sonu hesabı ayrı. Kişisel fiilî ödeme açık. 7344 ana bütçe adayı 62583044 ile denetimde. [7414 makbuzu](../04-12-checks/budget-7414-62581680.json) [Bağımsız denetim](../04-12-checks/budget-7414-62581680-independent.log)
