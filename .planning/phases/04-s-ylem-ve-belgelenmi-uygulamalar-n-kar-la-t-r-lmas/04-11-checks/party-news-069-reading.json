@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-069",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T12:34:32.594848+00:00",
+  "reads": [
+    {
+      "post_id": 518,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/ilk-secimde-milletimiz-sizleri-kenara-birakacak",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=ilk-secimde-milletimiz-sizleri-kenara-birakacak",
+      "published_at": "2025-06-18T13:22:00+00:00",
+      "updated_at": "2025-06-18T13:22:00+00:00",
+      "accessed_at": "2026-11-24T12:34:32.594873+00:00",
+      "original_path": "party-news-bodies/518.json",
+      "sha256": "f5d70f750d626787b809bf2a0594427b5b8b9a7e5210d548214fed5e09946ca4",
+      "normalized_body_sha256": "b571855094fd036fd24937ea120568e6f8fec62ff0b0d1e8a657e7ff010c0c20",
+      "source_section_range": [
+        0,
+        11821
+      ],
+      "state": "examined",
+      "reading": "Arıkan TRTnin AppsFlyer ilişkisi, eğitim eşitsizliği, kamu işçileri ve ekonomik sorunları ele alıyor; yazılım ilişkisinden dönülmesi ve yerli yazılım çağrısı yapıyor. Sözleşmenin 2022de kurulduğunu ve bitiş sorularına cevap verilmediğini ileri sürüyor.",
+      "selected_passages": [
+        {
+          "start": 3248,
+          "end": 3339,
+          "exact": "Sözleşme ne zaman bitiyor? Bitmesine daha ne kadar var? Bu soruların hiçbiri cevaplanmıyor!"
+        }
+      ],
+      "point": "TRT AppsFlyer sözleşmesinin tarih ve bitişine ilişkin çelişkili beyanlar.",
+      "statement": "Arıkan 18 Haziranda sözleşme süresinin ne zaman biteceğinin açıklanmadığını sorguluyor ve yerli yazılım istiyor.",
+      "concrete_evidence": "TBMM KİT Komisyonu 6 Mayıs 2025 resmî tutanak PDF s.41-42 (PDF indeks 40-41): TRT Genel Müdürü 2022 yerine 2020 sözleşmesini, 2024 sonunda ilişkinin kesildiğini ve hizmetin Adjusttan alındığını söylüyor. https://tbmm.gov.tr/Tutanaklar/TutanakGoster/4175 ; trt-kit-20250506-official.pdf SHA256 30bbe394d9e39d59ae1db7aa3548d5a040e0429fa6e929a39a63cfc82c8a2923. TBMM haberinde de aynı kurum beyanı var: https://www.tbmm.gov.tr/Haber/Detay?Id=3b47feca-cb6c-41b8-ab6e-0196a79e6fdd ; trt-kit-20250506-tbmm-news.html SHA256 e16f91032b9a8403ce88b97981e379ba94e67e1c51843166e301e6323b0f490d.",
+      "open_provenance": "Genel Müdürün 2020 ve 2024 sonu beyanı, Haziran parti açıklamasındaki 2022 ve bitişin açıklanmadığı iddiasıyla çatışır; tutanak bağımsız sözleşme/fesih belgesi değildir. Sözleşme, fesih kaydı ve teknik veri akışı ayrıca doğrulanmalı. Mayıstaki beyan Haziran talebinin sonraki uygulaması sayılmaz."
+    }
+  ],
+  "completed_pre_cut_bodies": 155,
+  "remaining_pre_cut_bodies": 494,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
