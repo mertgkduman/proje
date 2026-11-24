@@ -17,8 +17,8 @@ case = 'village-2691'
 stem = '0411-saadet-village-2691'
 package = checks / f'{case}-draft.json'
 review = checks / f'{case}-review-draft.json'
-assert harness.sha(package) == 'bfb5c2a1d92554dec82ec26be299c8601898fc613369a44249782882545fb624'
-assert harness.sha(review) == '21e2867d8bbb295d5a502ac1f4e610056dc7e9989932a9a759265088bb3f65f0'
+assert harness.sha(package) == 'b2654e0d49a257a68b0b3da7bd73be327a221a9469e6fd65ce4915d8824d0771'
+assert harness.sha(review) == '584745fa96f553464802964ca44de84fdc519dfec26c65fbc1187fe6f69c2d21'
 records = json.loads(package.read_bytes())['practice_records']
 assert (len(records['practice_event']), len(records['practice_relation']), len(records['practice_closure'])) == (32, 28, 0)
 if len(sys.argv)==2:

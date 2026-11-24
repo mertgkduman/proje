@@ -30,7 +30,7 @@ for key,name,url,day in sources:
   anchors=[('identity','Görüşülen 2/2691 teklifinin adı ve esas numarası','Köy Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifi (2/2691)',None),('authority','Atmacanın dönemsel grup sıfatı','SAADET PARTİSİ GRUBU ADINA MEHMET ATMACA (Bursa)',None),('stance','Teklifin bütünü için ret konuşması','bu kanun değişikliğine ret oyu vereceğimizi ifade ediyorum',None)]
  elif key=='session':
   start=body.rindex("174 sıra sayılı Kanun Teklifi'nin açık oylama sonucu:"); end=body.index('Teklif kabul edilmiş ve kanunlaşmıştır.',start)+len('Teklif kabul edilmiş ve kanunlaşmıştır.'); text=body[start:end]; assert ': 320' in text and ': 247' in text and ': 73' in text
-  anchors=[('totals','Başkanın 174 sıra sayılı nihai oy sonucu ve kabul açıklaması',text,None)]
+  anchors=[('identity','27. birleşimde 2/2691 esas ve 174 sıra numarası','Köy Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifi (2/2691) ve Bayındırlık, İmar, Ulaştırma ve Turizm Komisyonu Raporu (S. Sayısı: 174)',None),('totals','Başkanın 174 sıra sayılı nihai oy sonucu ve kabul açıklaması',text,None)]
  elif key=='vote':
   text=pdf_page_text(root/original,149); start=text.index('Kabul Edenler'); end=text.index('İli Soyadı',start); totals=text[start:end]; assert all(x in totals for x in ('242','74','321','Mükerrer'))
   anchors=[('atmaca','Atmaca bireysel oy satırı','Bursa Atmaca Mehmet YENİ YOL Ret',152),('totals','Basılı cetvelde farklı toplam ve mükerrer oylar',totals,149)]
