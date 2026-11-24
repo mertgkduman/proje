@@ -13,7 +13,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DEM Parti | 85 | 12 | 62618221 / 62618228 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
-| DBP | 64 | 7 | 62503426 |
+| DBP | 66 | 7 | 62619918 |
 | EMEP | 82 | 78 | 62617962 |
 | Saadet Partisi | 35 | 31 | 62616040 / 62616059 |
 | Demokrat Parti | 81 | 52 | 62618726 |
@@ -568,3 +568,7 @@ TİP’in deprem sonrası yapılaşma ve yükseköğretim karşılaştırmaları
 DEM Parti’nin taşımalı eğitim araştırma önergesinin üç imzalı sayfası incelendi. Grup kaşesi ve parti yayımı 19 Eylül 2024, TBMM Başkanlığına geliş kaydı 20 Eylül tarihini taşıyor. 10/1783, iki okuyucu görünümünde eşleşmemiş aday olarak doğrulandı. Cengiz Çiçek’in 7/15029 sayılı yazılı sorusu ayrı araştırma ucu. [Bağımsız denetim](../04-06-checks/dem-tasimali-101783-62618221-independent.json)
 
 Birleşik prova 13, dokuz doğrulanmış paketin 570 olay ve 379 ilişki içeren kopyasından başlatıldı. Ön kontrol iki girdi sırasıyla aynı 546 olayı ve 379 ilişkiyi üretti. 14 aynı olay kararı, 13 çözümlenmemiş aday ve 5.652 inceleme kökeni korundu. 330 konu hücresinin kaydı açıldı. 292 hücrede kaynak bağı, 293 hücrede arama girişimi var. Envanterdeki 5.490 hücrenin tamamı hâlâ açık. Slurm işi 62620455, birleşik okuyucu önizlemesini üretiyor. [Girdi ve birleştirme makbuzu](wave4-merge-rehearsal-13.json)
+
+DBP Bağlar Belediye Meclisinin 2016/18 gıda denetimi ve 2016/20 Kardelen danışmanlık raporu kayıtları doğrulandı. 447 yerin denetlendiğine ilişkin sayı, komisyon raporunun bildirdiği kapsamı gösteriyor. 2015/231 ile 2016/20 arasındaki kesin dosya bağı ve bireysel hizmet sonuçları açık. Birleşik prova 13 bu iki kayıttan önceki DBP çiftini kullanıyor. [DBP doğrulama geçmişi](../04-09-checks/baglar-2016-reports-gate-history.json)
+
+TİP parti açıklamaları dizinindeki 89–96 arasındaki sekiz özgün yayın okundu. Kümülatif 96 gövde okundu, 94 gövde açık. Amasra’da ölüm ve ulaşılamayan kişi sayıları açıklama zamanına ve yayımlayan aktöre göre ayrı tutuldu. Cemevi Başkanlığının kuruluş ve yürürlük hükümleri ile 7421’in bakım ve aydınlatma maddeleri okundu. 24 Eylül Haliç buluşmasındaki kurucu bileşenler, konuşmacılar ve diğer katılan temsilciler kaynaklarda ayrı belirlendi. [Okuma makbuzu](../04-05-checks/tip-publication-catalog/party-statements-12/reading.json)
