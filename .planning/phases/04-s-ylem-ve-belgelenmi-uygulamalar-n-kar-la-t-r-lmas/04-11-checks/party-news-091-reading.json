@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-091",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T13:51:51.151332+00:00",
+  "reads": [
+    {
+      "post_id": 489,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/siz-bu-butceyle-zengini-kayiriyor-vatandasi-silkeliyorsunuz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=siz-bu-butceyle-zengini-kayiriyor-vatandasi-silkeliyorsunuz",
+      "published_at": "2024-12-20T21:43:10+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T13:51:51.151332+00:00",
+      "original_path": "party-news-bodies/489.json",
+      "sha256": "cebaf7efd20a56afcbf3c7e6c7039a5494b1d0fe84f0ace82dc5ed3d196f62b9",
+      "normalized_body_sha256": "5d80c86b935b3273e375f30f0e4829dd7a097f22a159160c443c8d24929bf59e",
+      "source_section_range": [
+        0,
+        6703
+      ],
+      "state": "examined",
+      "reading": "Saadet-Gelecek grup başkanvekili Bülent Kaya ve İsa Mesih Şahinin 2025 bütçesine ilişkin genel kurul konuşmaları aktarılıyor.",
+      "selected_passages": [
+        {
+          "start": 3140,
+          "end": 3191,
+          "exact": "bu bütçeye de veto edeceğimizi belirtmek istiyorum."
+        }
+      ],
+      "point": "2025 merkezi yönetim bütçesine karşı tutum ve oy.",
+      "statement": "Kaya bütçeye karşı oy vereceklerini bildiriyor; Şahinin değerlendirmesi ayrı konuşmadır.",
+      "concrete_evidence": "20 Aralık 2024 tarihli 40. birleşim TBMM PDF indeks 159, basılı 378de Bülent Kaya 162 bütçe ve 163 kesin hesap için ayrı Ret/Ret görülür; indeks 151de 162 için 317 kabul, 249 ret, 1 çekimser açıklanır. https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/3/40/Basilmis/9bdf06af-4371-4ab5-940a-df3674e01db0.pdf ; budget-2025-40-tbmm.pdf SHA256 61f893d96c1a6750be3d754e9e3b24f999b6a74e46f64d26241f3a617bd40818. TBMM 7535 kanun metni 21 Aralık 2024 kabul tarihini gösterir: https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y2/KanunMetni/743b1489-bca3-4793-99ea-9aceed7dc737.htm ; budget-2025-7535-tbmm.html SHA256 ee31177434ea9175e19e6ee539c38a85051ba2253db97cf12302fee4b8983f8d.",
+      "open_provenance": "Görsel oy tablosu Kaya için 2024 birleşim başlığı altında Yeni Yol parti etiketi gösterir; grup Ocak 2025te kurulduğundan bu sütun tarihsel parti sıfatı için kullanılmaz. Etiket farkının nedeni açık. Birleşim başlığı 20 Aralık olsa da 7535 kabul tarihi 21 Aralıktır; kapanış saati 01:03. Oy, bütçenin bütünü hakkındadır; 2026 bütçesi 1/280 ile karıştırılmaz."
+    }
+  ],
+  "completed_pre_cut_bodies": 177,
+  "remaining_pre_cut_bodies": 472,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
