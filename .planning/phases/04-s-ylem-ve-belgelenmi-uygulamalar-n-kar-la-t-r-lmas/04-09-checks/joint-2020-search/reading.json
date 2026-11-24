@@ -1,0 +1,68 @@
+{
+  "reviewer_kind": "agent",
+  "checked_at_utc": "2026-11-24",
+  "case_scope": "TİP dizini 155 ve 158; iki ayrı ortak metnin kaynak araştırması, olay veya paket üretimi değil",
+  "queries": [
+    "\"18 Mayıs 2020\" \"EMEP\" \"DBP\" belediyelere kayyım ortak açıklama",
+    "\"2020\" \"infaz\" \"DBP\" \"EMEP\" \"Türkiye İşçi Partisi\" \"Yeşiller\" ortak açıklama",
+    "site:emep.org 18 mayıs 2020 kayyım DBP TİP",
+    "site:emep.org 2020 infaz yasası \"DBP\" \"TİP\"",
+    "\"Gasp edilen halkın iradesidir\" \"emek partisi\" 2020",
+    "\"infaz yasasında eşitlik istiyoruz\" \"emep\" 2020",
+    "\"gasp edilen halkın iradesidir\" site:emep.org",
+    "\"gasp edilen halkın iradesidir\" site:dbp.org.tr",
+    "\"gasp edilen halkın iradesidir\" \"18 mayıs 2020\" partiden"
+  ],
+  "sources": [
+    {
+      "case": "6 Nisan infaz ortak açıklaması",
+      "publisher": "Emek Partisi; ortak açıklamanın ev sahibi ve imzacısı",
+      "url": "https://www.emep.org/infaz-yasasinda-esitlik-istiyoruz-adaletin-sesini-yukseltmeye-cagiriyoruz",
+      "original_existing_path": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/law-7242-sources/emep-3527.html.bin",
+      "sha256": "070ae86482caef382687a9d7d113e7a57bc5caf40e2c14a6e73876bd9740190b",
+      "reading": "Özgün gövde 6 Nisan 2020 tarihini ve on bir imzacı listesinde Demokratik Bölgeler Partisi, Emek Partisi, Türkiye İşçi Partisi, Yeşiller ve Sol Gelecek Partisi adlarını içerir. Önceki 2/2762 teklifine ilişkin eleştiri ve eşitlik talebi; kabul veya kişisel oylama değildir. Diğer kaynakla paketlenirken ortak metnin gerçek yayıncısı ve ortak imzacı niteliği korunur."
+    },
+    {
+      "case": "6 Nisan infaz ortak açıklaması",
+      "publisher": "Evrensel Haber Merkezi",
+      "url": "https://www.evrensel.net/haber/401468/11-siyasi-partiden-ortak-aciklama-infaz-yasasinda-esitlik-istiyoruz",
+      "original_path": "evrensel-401468.html.bin",
+      "sha256": "843938b39978636b3ea23ab5dcb165fe6ea759c0e529eb68726fea3f05711974",
+      "reading": "Bağımsız haber 06.04.2020 18:52; güncelleme 07.04.2020 04:48. 11 parti arasında dört adı ayrı sayar ve ortak açıklamayı aktarır; tamlık ve içerik EMEP kaynağıyla kontrol edildi."
+    },
+    {
+      "case": "18 Mayıs kayyım ortak açıklaması",
+      "publisher": "Halkların Demokratik Partisi; ortak açıklamanın ev sahibi ve imzacısı",
+      "url": "https://www.hdp.org.tr/tr/gasp-edilen-halkin-iradesidir-sessiz-kalmayacagiz/14267/",
+      "original_path": "hdp-14267.html.bin",
+      "sha256": "9e2db9a324041600d0ef6268c72b9c81210ef5b5e746eed58523cf7a664a0478",
+      "reading": "18 Mayıs 2020 tarihli ortak metin, giriş ve imzacı listesinde DBP, EMEP, TİP ve Yeşiller ve Sol Gelecek Partisini ayrı sayıyor; beş belediye ve seçilmişlerin göreve iadesi söylemi kendi iddia ve çağrılarıdır, idari atamaların asıl sicili değildir."
+    },
+    {
+      "case": "18 Mayıs kayyım ortak açıklaması",
+      "publisher": "BirGün Haber Merkezi",
+      "url": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+      "original_path": "birgun-2020-05-19.pdf",
+      "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+      "pdf_page_index": 7,
+      "reading": "19 Mayıs 2020 basılı sayfa 8 haberi aynı başlıklı ortak açıklama ve dört imzacıyı sayıyor. Poppler metninde sütun karışımı var; isimler metin katmanında görülerek okundu. Haber atamaların asli idari kayıtlarının yerine geçmez."
+    },
+    {
+      "case": "18 Mayıs kayyım ortak açıklaması",
+      "publisher": "Yeni Yaşam Haber Merkezi",
+      "url": "https://yeniyasamgazetesi9.com/yerel-yonetimlerin-etkisizlestirilmesine-sessiz-kalmayacagiz/",
+      "reading": "Arama motorunda 18 Mayıs 14:49 gövde ve dört imzacı görüldü; doğrudan HTTP isteği bağlantı sıfırladı, bayt arşivlenmedi ve ayrı bir kaynak kapısı olarak kullanılmamalı."
+    }
+  ],
+  "limits": [
+    "18 Mayıs metni için yapılan dar aramalarda DBP veya EMEP ev sahipli kopya bulunmadı; yokluğu kanıtlanmadı. HDP ve TİP farklı yayınevi olmakla birlikte imzacı ortak metni yayınlıyor.",
+    "18 Mayıs metni belirli beş atamanın kendisi değildir; ilgili idari kararlar ve tarihler ayrı aranmalı.",
+    "6 Nisan ortak açıklaması önceki öneri, 14 Nisan TBMM kabulü ve 15 Nisan yayımı ayrı işlemlerdir; tüm istisnalar veya bireysel sonuç hakkında çıkarım yapılmadı.",
+    "Özgün HTML veya PDF baytları değiştirilmedi; bu klasör yalnız arama ve kaynak makbuzudur, canlı paket değişmedi."
+  ],
+  "capture_metadata": [
+    "capture.json",
+    "birgun-capture.json"
+  ],
+  "closure_refs": []
+}
