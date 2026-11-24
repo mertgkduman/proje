@@ -4,6 +4,7 @@ import importlib.util
 import json
 from pathlib import Path
 import sqlite3
+import sys
 
 checks = Path(__file__).resolve().parent
 spec = importlib.util.spec_from_file_location(
@@ -21,8 +22,16 @@ assert harness.sha(review) == 'b4e37bb765995d44b48f691747d717f399088c6a364cd9098
 records = json.loads(package.read_bytes())['practice_records']
 assert (len(records['practice_event']), len(records['practice_relation']), len(records['practice_closure'])) == (25, 21, 0)
 labels = ('dem', 'iyi')
-receipt = harness.main(package, review, case, stem + '-dem-event', stem + '-dem-relation',
-                       None, expected_party='saadet', namespace='gsd-0411')
+if len(sys.argv) == 2:
+    prior_job = sys.argv[1]
+    assert prior_job.isdecimal()
+    receipt = json.loads((checks / f'{case}-{prior_job}.json').read_bytes())
+    assert receipt['job'] == prior_job
+    assert receipt['package_sha256'] == harness.sha(package)
+    assert receipt['review_sha256'] == harness.sha(review)
+else:
+    receipt = harness.main(package, review, case, stem + '-dem-event', stem + '-dem-relation',
+                           None, expected_party='saadet', namespace='gsd-0411')
 folder = Path(receipt['preview'])
 manifest = json.loads((folder / 'manifest.json').read_bytes())
 assert manifest['preview'] and manifest['renderer_version'] == 31
@@ -38,6 +47,9 @@ with sqlite3.connect((folder / 'records.sqlite3').as_uri() + '?mode=ro', uri=Tru
             row = next(row for row in records[table] if row['id'] == identity)
             assert row in export[table]
             assert row == dict(db.execute(f'SELECT * FROM {table} WHERE id=?', (identity,)).fetchone())
+    iyi_context = db.execute('SELECT scope_context FROM practice_event WHERE id=?',
+                             (stem + '-iyi-event',)).fetchone()[0]
+    assert 'Müsavat Dervişoğlu' in iyi_context
     matched = db.execute('SELECT id FROM practice_relation WHERE statement_id=?', (stem + '-statement',))
     assert {row[0] for row in matched} == {f'{stem}-{label}-relation' for label in labels}
     dates = db.execute('SELECT event_at FROM practice_event WHERE id LIKE ? ORDER BY event_at', (stem + '-%',))
@@ -47,7 +59,7 @@ report = (folder / 'index.html').read_text()
 for view in ('party', 'comparison'):
     for label, terms in (
         ('dem', ('Mahmut Arıkan', 'Tuncer Bakırhan', 'görüşmeden sonra basına açıklama yaptı', 'rapor yayımlaması açık')),
-        ('iyi', ('Müsavat Dervişoğlu', 'nezaket ziyareti', 'bildirilen haftadan önce')),
+        ('iyi', ('Dervişoğlu İYİ Parti genel başkanı', 'nezaket ziyareti', 'bildirilen haftadan önce')),
     ):
         anchor = f'{view}-practice-{stem}-{label}-relation'
         tag = f'id="{anchor}"'
