@@ -20238,6 +20238,175 @@
         "result": "reviewed",
         "reason": "Parti yayımı, sicil tarihi ve imzalı belge ayrıldı."
       }
+    },
+    {
+      "kind": "document",
+      "values": {
+        "id": "0406-halic-2022-bianet",
+        "party_id": "dem",
+        "title": "Emek ve Özgürlük İttifakı halkla buluştu",
+        "source_kind": "journalism"
+      }
+    },
+    {
+      "kind": "document_version",
+      "values": {
+        "id": "0406-halic-2022-bianet-v1",
+        "document_id": "0406-halic-2022-bianet",
+        "original_url": "https://www.bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+        "final_url": "https://bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+        "document_date": "2022-09-24",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "version_label": "Bianet özgün haber",
+        "accessed_at": "2026-11-24T21:10:46.271077+00:00",
+        "verified_at": "2026-11-24T21:19:26.938757+00:00",
+        "mime": "text/html",
+        "sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+        "original_path": "objects/a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e/original.html.bin",
+        "readable_path": "objects/a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e/readable.html"
+      }
+    },
+    {
+      "kind": "archive_view",
+      "values": {
+        "view_id": "af6e8d351c0b58eba341680aa3321cb2",
+        "format_version": 2,
+        "source_sha256": "a086de25cf9ac44d84a409f658b25d16a6e9f33b801089d56e066806fd10625e",
+        "index_path": "views/af6e8d351c0b58eba341680aa3321cb2/index.html",
+        "manifest_path": "views/af6e8d351c0b58eba341680aa3321cb2/manifest.json",
+        "manifest_sha256": "ae5fa6351904b0e4a7386cfb5cc87e0833f72ff3bc5d18cc0ab08fc36b5c9868",
+        "version_id": "0406-halic-2022-bianet-v1"
+      }
+    },
+    {
+      "kind": "source_attribution",
+      "values": {
+        "version_id": "0406-halic-2022-bianet-v1",
+        "publisher": "Bianet",
+        "author": null,
+        "kind": "journalism",
+        "published_at": "2022-09-24",
+        "date_precision": "day",
+        "social_handle": null,
+        "public_url": "https://www.bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+        "basis": "24 Eylül 2022 tarihli Bianet haber gövdesi"
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0406-halic-2022-occurrence",
+        "version_id": "0406-halic-2022-bianet-v1",
+        "exact": "oluşturduğu \"Emek ve Özgürlük İttifakı\", Haliç Kongre Merkezi'nde yol haritasını açıklamak üzere toplandı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Haliç buluşması",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "passage",
+      "values": {
+        "id": "0406-halic-2022-presence",
+        "version_id": "0406-halic-2022-bianet-v1",
+        "exact": "Yeşil Sol Parti Eş Genel Başkanları İbrahim Akın ve Ayşe Erdem, Devrimci Parti Genel Başkanı Elif Torun Öneren, Sosyalist Yeniden Kuruluş Partisi (SYKP) Eş Genel Başkanları Canan Yüce ve Cavit Uğur, Sosyalist Dayanışma Platformu (SODAP) Eşsözcüleri Kezban Konukçu ve Sezgin Kartal ile ittifakın bileşen partilerinin milletvekilleri ile temsilcileri de yer aldı.",
+        "prefix": null,
+        "suffix": null,
+        "article": null,
+        "section": "Yeşil Sol temsilcilerinin katılımı",
+        "pdf_page_index": null,
+        "printed_page": null
+      }
+    },
+    {
+      "kind": "finding",
+      "values": {
+        "id": "0406-halic-2022-finding",
+        "party_id": "dem",
+        "heading": "Belgelenmiş uygulamalar",
+        "pair_id": "0406-halic-2022-finding",
+        "text": "Bianet’in 24 Eylül tarihli haberine göre Yeşil Sol Parti temsilcileri Ayşe Erdem ve İbrahim Akın Haliç buluşmasında bulundu. Haber katılımı bildiriyor, kurucu imzayı veya deklarasyonu hazırlama görevini göstermiyor.",
+        "provenance": "summary",
+        "epistemic_type": "claim"
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0406-halic-2022-finding",
+        "passage_id": "0406-halic-2022-occurrence",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0406-halic-2022-finding",
+        "passage_id": "0406-halic-2022-occurrence",
+        "checked_at": "2026-11-24T21:19:26.938757+00:00",
+        "result": "confirmed",
+        "reason": "Özgün haber gövdesi okundu."
+      }
+    },
+    {
+      "kind": "finding_evidence",
+      "values": {
+        "finding_id": "0406-halic-2022-finding",
+        "passage_id": "0406-halic-2022-presence",
+        "role": "support"
+      }
+    },
+    {
+      "kind": "verification",
+      "values": {
+        "finding_id": "0406-halic-2022-finding",
+        "passage_id": "0406-halic-2022-presence",
+        "checked_at": "2026-11-24T21:19:26.938757+00:00",
+        "result": "confirmed",
+        "reason": "Özgün haber gövdesi okundu."
+      }
+    },
+    {
+      "kind": "review",
+      "values": {
+        "id": "review-0406-halic-2022-finding",
+        "kind": "finding",
+        "subject_id": "0406-halic-2022-finding",
+        "reviewer_kind": "agent",
+        "reviewed_at": "2026-11-24T21:19:26.938757+00:00",
+        "result": "reviewed",
+        "reason": "Katılım ile kurucu imza ve ayrı parti kimlikleri ayrıldı."
+      }
+    },
+    {
+      "kind": "person",
+      "values": {
+        "id": "0406-halic-2022-erdem-person",
+        "name": "Ayşe Erdem"
+      }
+    },
+    {
+      "kind": "actor",
+      "values": {
+        "id": "0406-halic-2022-erdem-actor",
+        "kind": "authorized_representative",
+        "party_id": "dem",
+        "person_id": "0406-halic-2022-erdem-person",
+        "authorization_passage_id": "0406-halic-2022-presence"
+      }
+    },
+    {
+      "kind": "actor",
+      "values": {
+        "id": "0406-halic-2022-akin-actor",
+        "kind": "authorized_representative",
+        "party_id": "dem",
+        "person_id": "0406-iklim-final-akin-person",
+        "authorization_passage_id": "0406-halic-2022-presence"
+      }
     }
   ],
   "practice_records": {
@@ -21100,6 +21269,16 @@
         "title": "10/1783 taşımalı eğitim araştırma önergesinin sunulması",
         "scope_context": "DEM Parti grup başkanvekillerinin köy okulları ve taşımalı eğitim hakkında araştırma talebi.",
         "occurrence_basis": "TBMM 10/1783 esas kaydı ve imzalı önerge. DEM Parti aynı metni 19 Eylül 2024 tarihli yayında aktardı."
+      },
+      {
+        "id": "0406-halic-2022-event",
+        "common_event_key": "halic-emek-ozgurluk-2022-09-24",
+        "event_at": "2022-09-24",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "title": "Emek ve Özgürlük İttifakı’nın Haliç halk buluşması",
+        "scope_context": "24 Eylül 2022’de İstanbul Haliç Kongre Merkezi’nde düzenlenen Emek ve Özgürlük İttifakı halk buluşması ve deklarasyonun açıklanması.",
+        "occurrence_basis": "24 Eylül 2022 tarihli Bianet haberi ve HDP yayını, Haliç Kongre Merkezi’ndeki halk buluşmasını ve deklarasyonun açıklanmasını bildiriyor."
       }
     ],
     "practice_event_evidence": [
@@ -24405,6 +24584,24 @@
         "concrete_basis": "TBMM imzalı önerge taraması",
         "limitation": "19 Eylül grup belgesi ve yayın tarihi ile 20 Eylül Başkanlığa geliş tarihi ayrı kayıtlardır. Sicil durumu erişim anına aittir.",
         "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0406-halic-2022-event",
+        "passage_id": "0406-halic-2022-occurrence",
+        "supported_point": "Haliç buluşması",
+        "stage": "action",
+        "concrete_basis": "Bianet haber gövdesi",
+        "limitation": "Haberin güncellenme zamanı aynı gün 23.08 olarak gösterilir. Katılım kurucu imza sayılmaz.",
+        "epistemic_type": "claim"
+      },
+      {
+        "event_id": "0406-halic-2022-event",
+        "passage_id": "0406-halic-2022-presence",
+        "supported_point": "Yeşil Sol temsilcilerinin katılımı",
+        "stage": "action",
+        "concrete_basis": "Bianet haber gövdesi",
+        "limitation": "Haberin güncellenme zamanı aynı gün 23.08 olarak gösterilir. Katılım kurucu imza sayılmaz.",
+        "epistemic_type": "claim"
       }
     ],
     "practice_contribution": [
@@ -25386,6 +25583,28 @@
         "authority_passage_id": null,
         "membership_passage_id": null,
         "responsibility_limit": "DEM grup başkanvekillerinin araştırma önergesi. Komisyon kurulması veya uygulanan eğitim politikası sonucu çıkarılmaz."
+      },
+      {
+        "id": "0406-halic-2022-erdem-contribution",
+        "event_id": "0406-halic-2022-event",
+        "party_id": "dem",
+        "actor_id": "0406-halic-2022-erdem-actor",
+        "contribution_kind": "unknown",
+        "finding_id": "0406-halic-2022-finding",
+        "authority_passage_id": "0406-halic-2022-presence",
+        "membership_passage_id": null,
+        "responsibility_limit": "Haberin bildirdiği bireysel katılım. Kurucu imza, metin hazırlığı veya politika uygulaması sonucu çıkarılmaz."
+      },
+      {
+        "id": "0406-halic-2022-akin-contribution",
+        "event_id": "0406-halic-2022-event",
+        "party_id": "dem",
+        "actor_id": "0406-halic-2022-akin-actor",
+        "contribution_kind": "unknown",
+        "finding_id": "0406-halic-2022-finding",
+        "authority_passage_id": "0406-halic-2022-presence",
+        "membership_passage_id": null,
+        "responsibility_limit": "Haberin bildirdiği bireysel katılım. Kurucu imza, metin hazırlığı veya politika uygulaması sonucu çıkarılmaz."
       }
     ],
     "practice_statement": [
@@ -25911,6 +26130,16 @@
         "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
         "research_kind": "event",
         "boundary_reason": "10/1783 taşımalı eğitim araştırma önergesinin dar aday zinciri incelendi. Kapsam araştırması sürüyor."
+      },
+      {
+        "id": "practice-9a039f4f4e799b093a2abad214db0c890161e9e7cb97ca5374938d23ca99e93e",
+        "party_id": "dem",
+        "topic_id": "siyasal-ittifaklar",
+        "taxonomy_version": 4,
+        "period_start": "2012-11-30",
+        "cutoff_at": "2026-11-10T14:38:46.154751+00:00",
+        "research_kind": "event",
+        "boundary_reason": "24 Eylül 2022 Haliç buluşmasında Yeşil Sol temsilcilerinin katılımı incelendi. Kapsam araştırması sürüyor."
       }
     ],
     "practice_scope_source": [
@@ -26351,6 +26580,12 @@
         "version_id": "0406-101783-signed-v1",
         "inspected_sections": "[\"İmzalı taramanın esas numarası\"]",
         "inspected_at": "2026-11-24T20:23:44.803723+00:00"
+      },
+      {
+        "scope_id": "practice-9a039f4f4e799b093a2abad214db0c890161e9e7cb97ca5374938d23ca99e93e",
+        "version_id": "0406-halic-2022-bianet-v1",
+        "inspected_sections": "[\"Haliç buluşması\", \"Yeşil Sol temsilcilerinin katılımı\"]",
+        "inspected_at": "2026-11-24T21:19:26.938757+00:00"
       }
     ],
     "practice_lead": [
@@ -27370,6 +27605,16 @@
         "result": "examined",
         "reason": "Parti yayını, imzalı önergenin üç sayfa görüntüsü ve esas sicilindeki ayrı tarih ile durum okundu.",
         "source_version_id": "0406-101783-signed-v1"
+      },
+      {
+        "id": "0406-halic-2022-reading",
+        "scope_id": "practice-9a039f4f4e799b093a2abad214db0c890161e9e7cb97ca5374938d23ca99e93e",
+        "attempted_at": "2026-11-24T21:19:26.938757+00:00",
+        "query": "24 Eylül 2022 Haliç buluşması Yeşil Sol katılımı",
+        "url": "https://www.bianet.org/haber/emek-ve-ozgurluk-ittifaki-halkla-bulustu-birlikte-kazanacagiz-267592",
+        "result": "examined",
+        "reason": "Bianet haber gövdesi ve ayrıca HDP özgün yayını okundu. Kurucu imza ile katılım ayrıldı.",
+        "source_version_id": "0406-halic-2022-bianet-v1"
       }
     ],
     "practice_candidate": [
@@ -28083,6 +28328,15 @@
         "state": "unmatched",
         "reason": "Daha önceki bağımsız parti söylemi araştırılacak. 7/15029 kişisel yazılı soru ayrı işlemdir.",
         "passage_ids": "[\"0406-tasimali-101783-party-role\", \"0406-tasimali-101783-party-scope\", \"0406-tasimali-101783-party-date\", \"0406-tasimali-101783-register-id\", \"0406-tasimali-101783-register-date\", \"0406-tasimali-101783-register-status\", \"0406-tasimali-101783-signed-id\"]"
+      },
+      {
+        "id": "0406-halic-2022-candidate",
+        "scope_id": "practice-9a039f4f4e799b093a2abad214db0c890161e9e7cb97ca5374938d23ca99e93e",
+        "event_id": "0406-halic-2022-event",
+        "relation_id": null,
+        "state": "unmatched",
+        "reason": "Daha önceki bağımsız parti söylemi ayrıca araştırılacak. Katılım kurucu imza sayılmaz.",
+        "passage_ids": "[\"0406-halic-2022-occurrence\", \"0406-halic-2022-presence\"]"
       }
     ],
     "practice_closure": [],
@@ -30344,6 +30598,18 @@
         "passage_id": "0406-tasimali-101783-signed-id",
         "stage": "initiative",
         "basis_kind": "document"
+      },
+      {
+        "event_id": "0406-halic-2022-event",
+        "passage_id": "0406-halic-2022-occurrence",
+        "stage": "action",
+        "basis_kind": "document"
+      },
+      {
+        "event_id": "0406-halic-2022-event",
+        "passage_id": "0406-halic-2022-presence",
+        "stage": "action",
+        "basis_kind": "document"
       }
     ],
     "practice_actor_period": [
@@ -30520,6 +30786,18 @@
         "valid_from": "2025-02-26",
         "valid_to": "2025-02-26",
         "identity_passage_id": "0406-iklim-komisyon-katilim-identity"
+      },
+      {
+        "contribution_id": "0406-halic-2022-erdem-contribution",
+        "valid_from": "2022-09-24",
+        "valid_to": "2022-09-24",
+        "identity_passage_id": "0406-halic-2022-presence"
+      },
+      {
+        "contribution_id": "0406-halic-2022-akin-contribution",
+        "valid_from": "2022-09-24",
+        "valid_to": "2022-09-24",
+        "identity_passage_id": "0406-halic-2022-presence"
       }
     ],
     "practice_dispute": [
@@ -33814,6 +34092,38 @@
     {
       "subject_kind": "practice_candidate",
       "subject_id": "0406-tasimali-101783-candidate"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-halic-2022-event|0406-halic-2022-occurrence|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-halic-2022-event|0406-halic-2022-presence|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0406-halic-2022-event"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0406-halic-2022-erdem-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0406-halic-2022-erdem-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0406-halic-2022-akin-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0406-halic-2022-akin-contribution"
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0406-halic-2022-candidate"
     }
   ]
 }
