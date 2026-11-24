@@ -119,8 +119,48 @@
   ],
   "open_evidence": [
     "2011 Hazineye irat kararının fiilî tahsilatı ve denetime esas çizelgeler.",
-    "2019 E.2020/22 K.2023/9, 2020 E.2021/57 K.2024/73 ve 2023 E.2024/69 K.2025/155 için resmî bütün PDF’lerin yerel özgün baytları. Bu üç kararın web metni veya gazete dizini okundu, bu sayımda özgün dosya olarak yer almıyor.",
+    "2019 E.2020/22 K.2023/9 yerel bütün PDF’si. AYM web metni ve 22 Haziran 2023 tarihli 32229 sayılı Resmî Gazete dizini okundu. 2020, 2021, 2022 ve 2023 özgün dosyaları daha önceki doğrulanmış çalışma paketinde bulundu ve hashleri kontrol edildi.",
     "Geri kalan hesap yıllarının ayrı taraması."
   ],
-  "closure_refs": []
+  "closure_refs": [],
+  "existing_verified_accounting_years": [
+    {
+      "accounting_year": 2020,
+      "version_id": "0412-aym-2020-hesap-v1",
+      "url": "https://resmigazete.gov.tr/eskiler/2025/01/20250110-6.pdf",
+      "sha256": "d7cfbb2ee766b61cf16dc65644d792b0690489aeb3458ef06621ec0badc32ad4",
+      "original_path": "data/practices/sources/demokrat/objects/d7cfbb2ee766b61cf16dc65644d792b0690489aeb3458ef06621ec0badc32ad4/original.pdf"
+    },
+    {
+      "accounting_year": 2021,
+      "version_id": "0412-aym-2021-hesap-v1",
+      "url": "https://www.resmigazete.gov.tr/eskiler/2025/03/20250314-15.pdf",
+      "sha256": "1d13096b536d818fc328dbf69c413c4088cded2e0befe5854d38c2b4a262eaa3",
+      "original_path": "data/practices/sources/demokrat/objects/1d13096b536d818fc328dbf69c413c4088cded2e0befe5854d38c2b4a262eaa3/original.pdf"
+    },
+    {
+      "accounting_year": 2022,
+      "version_id": "0412-aym-2022-hesap-v1",
+      "url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260416-7.pdf",
+      "sha256": "7c9c8a59c1828479d898c4646219ce85a032dbb0c17b55be99ec4c4bce827d9a",
+      "original_path": "data/practices/sources/demokrat/objects/7c9c8a59c1828479d898c4646219ce85a032dbb0c17b55be99ec4c4bce827d9a/original.pdf"
+    },
+    {
+      "accounting_year": 2023,
+      "version_id": "0412-aym-2023-hesap-v1",
+      "url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260420-5.pdf",
+      "sha256": "976695db0990f158e9c9b9e745b5d37d220345abb8d45e334ca5b7e921692365",
+      "original_path": "data/practices/sources/demokrat/objects/976695db0990f158e9c9b9e745b5d37d220345abb8d45e334ca5b7e921692365/original.pdf"
+    }
+  ],
+  "unmatched_statement_search": {
+    "searched_at": "2026-11-24T14:34:53.633345+00:00",
+    "queries": [
+      "site:dp.org.tr 2014/68 veya 2014/77 Mali Denetimi Demokrat Parti",
+      "site:dp.org.tr 2016/33 veya 2021/89 Demokrat Parti kesin hesap",
+      "Demokrat Parti 2011 yılı kesin hesabı 2014/68 300 parti açıklaması",
+      "Demokrat Parti 2012 yılı kesin hesabı 2014/77 2904,36 parti açıklaması"
+    ],
+    "reading": "İlgili yıllara ait bağımsız ve tarihlenmiş parti açıklaması bu aramalarda doğrulanmadı. 2011 ve 2012 kararları parti açıklamalarından pasaj aktarıyor. 2022’de yakalanan tüzüğün önceki yıllarda yürürlüğü açık."
+  }
 }
