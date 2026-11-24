@@ -1,0 +1,146 @@
+{
+  "reviewer_kind": "agent",
+  "reviewed_at_utc": "2026-11-24T12:10:50.355003+00:00",
+  "party_publication": {
+    "position": 157,
+    "receipt": "../party-news-020-reading.json"
+  },
+  "sources": [
+    {
+      "publisher": "EPDK",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=ZGHXfl5R49M%3D",
+      "original_path": "epdk-april.xlsx",
+      "bytes": 96523,
+      "sha256": "6a9b7a244877f18acd6c57c9fe8ec0e03b0bc8e0f247c861afe2eabfb49110e2",
+      "retrieved_at_utc": "2026-11-24T12:08:14.307243+00:00"
+    },
+    {
+      "publisher": "EPDK",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=uG89eWIz%2B%2Bg%3D",
+      "original_path": "epdk-june.xlsx",
+      "bytes": 96484,
+      "sha256": "ed3a8f485871ae3e4a566521a22e519d8868ad4436e6a6ed4d76553d91f06b6a",
+      "retrieved_at_utc": "2026-11-24T12:08:14.304243+00:00"
+    },
+    {
+      "publisher": "EPDK",
+      "url": "https://www.epdk.gov.tr/Detay/DownloadDocument?id=xaNhwZghzos%3D",
+      "original_path": "epdk-10997.docx",
+      "bytes": 26036,
+      "sha256": "ec0d3a6b260b49ca966332a4d7083e97cee313332613a8b18ab637ae1f564f2e",
+      "retrieved_at_utc": "2026-11-24T12:08:14.012243+00:00"
+    },
+    {
+      "publisher": "BOTAŞ",
+      "url": "https://www.botas.gov.tr/uploads/dosyaYoneticisi/827613-mayis_2022_tarifesi.pdf",
+      "original_path": "botas-may.pdf",
+      "bytes": 405959,
+      "sha256": "f8c8c71f7131f2cd5c5e99c7eb4951eb401a75c604b0625a81fb6d842f40b168",
+      "retrieved_at_utc": "2026-11-24T12:02:40.120154+00:00"
+    },
+    {
+      "publisher": "BOTAŞ",
+      "url": "https://www.botas.gov.tr/uploads/dosyaYoneticisi/265942-haziran_2022_tarifesi.pdf",
+      "original_path": "botas-june.pdf",
+      "bytes": 405594,
+      "sha256": "3af87ef1beba1815441fe7cc7ec7a86ceea7acc91728cad4757c475b9c70ced1",
+      "retrieved_at_utc": "2026-11-24T12:02:39.978153+00:00"
+    }
+  ],
+  "epdk_electricity": {
+    "decision": "10997",
+    "decision_day": "2022-05-31",
+    "published_day": "2022-06-01",
+    "effective_day": "2022-06-01",
+    "gazette": "31853",
+    "index": "https://www.resmigazete.gov.tr/fihrist?tarih=2022-06-01",
+    "selection": "Faaliyet Bazlı Tarife Tablosu, dağıtım sistemi alçak gerilim tek terim, güç hariç toplam tek zamanlı, kr/kWh.",
+    "changes": [
+      {
+        "category": "Sanayi",
+        "source_cells": [
+          "C22",
+          "I22"
+        ],
+        "april": "230.1092",
+        "june": "287.5739",
+        "change_percent": "24.97"
+      },
+      {
+        "category": "Kamu ve Özel Hizmetler Sektörü ile Diğer (30 kWh/gün ve altı)",
+        "source_cells": [
+          "C23",
+          "I23"
+        ],
+        "april": "167.4587",
+        "june": "208.9154",
+        "change_percent": "24.76"
+      },
+      {
+        "category": "Kamu ve Özel Hizmetler Sektörü ile Diğer (30 kWh/gün üstü)",
+        "source_cells": [
+          "C24",
+          "I24"
+        ],
+        "april": "222.7343",
+        "june": "278.0099",
+        "change_percent": "24.82"
+      },
+      {
+        "category": "Mesken (8 kWh/gün ve altı)",
+        "source_cells": [
+          "C25",
+          "I25"
+        ],
+        "april": "112.4377",
+        "june": "129.0639",
+        "change_percent": "14.79"
+      },
+      {
+        "category": "Mesken (8 kWh/gün üstü)",
+        "source_cells": [
+          "C26",
+          "I26"
+        ],
+        "april": "167.8584",
+        "june": "192.7977",
+        "change_percent": "14.86"
+      }
+    ]
+  },
+  "botas_gas": {
+    "selection": "Özgün aylık cetvellerin ilk sayfasındaki satırlar, TL/Sm³, KDV ve ÖTV hariç toptan satış.",
+    "changes": [
+      {
+        "category": "Konut için dağıtım şirketine satış",
+        "may": "2.511159",
+        "june": "3.264507",
+        "change_percent": "30.00"
+      },
+      {
+        "category": "Elektrik üretimi için satış",
+        "may": "10.750000",
+        "june": "12.500000",
+        "change_percent": "16.28"
+      },
+      {
+        "category": "Elektrik üretimi dışı kademe 1",
+        "may": "3.348212",
+        "june": "4.687497",
+        "change_percent": "40.00"
+      },
+      {
+        "category": "Elektrik üretimi dışı kademe 2",
+        "may": "9.450000",
+        "june": "10.416667",
+        "change_percent": "10.23"
+      }
+    ]
+  },
+  "limits": [
+    "Parti açıklamasında doğal gaz için yüzde 10,23 ikinci kademe ile uyumlu. İlk kademe yaklaşık yüzde 40 arttı. Organize sanayi bölgesi hesabında mayısta tüzel kişi, haziranda tesis ölçüsü var.",
+    "Toptan satış tarifesi, gerçek perakende fatura ve tüketim davranışı ayrı. Elektrik yüzdeleri eş türde alçak gerilim tarife satırlarıyla hesaplandı.",
+    "Yıllık oranlar, akaryakıt beklentileri ve kurun yüzde 75 etkisi bu belge setinde açık."
+  ],
+  "closure_refs": []
+}
