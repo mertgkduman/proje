@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-062",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T11:42:37.810469+00:00",
+  "reads": [
+    {
+      "post_id": 528,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/memuruna-hak-ettigi-zammi-yapacak-bir-iktidar-yok",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=memuruna-hak-ettigi-zammi-yapacak-bir-iktidar-yok",
+      "published_at": "2025-08-27T10:30:00+00:00",
+      "updated_at": "2025-08-27T10:30:00+00:00",
+      "accessed_at": "2026-11-24T11:42:37.810494+00:00",
+      "original_path": "party-news-bodies/528.json",
+      "sha256": "33d2203ae052610642e04f483405e69024d9c0b014cd12aef54a51bb9dcee0f3",
+      "normalized_body_sha256": "1523192d902a2bdd0c1d604d2812b8a00f654bb683411be5a473655fdec97d3b",
+      "source_section_range": [
+        0,
+        1354
+      ],
+      "state": "examined",
+      "reading": "Arıkan Kamu Görevlileri Hakem Kurulunun memur ve emekli zammı kararını eleştiriyor ve memur haklarını Mecliste savunacaklarını söylüyor.",
+      "selected_passages": [
+        {
+          "start": 1245,
+          "end": 1314,
+          "exact": "memurumuzun hakkını savunmak için bütün gayretimizi ortaya koyacağız."
+        }
+      ],
+      "point": "Memur ve memur emeklisi zamları.",
+      "statement": "Arıkan açıklamadan önceki hakem kurulu kararını eleştirip Mecliste memur hakkını savunma sözü veriyor.",
+      "concrete_evidence": "Parti yayını tepki ve genel sözü kaydeder; özgün kurul kararını veya sonraki somut Meclis işlemini kanıtlamaz.",
+      "open_provenance": "Kurulun karar metni ve zam dönemleri ve varsa daha sonraki açık Saadet/Yeni Yol işlemi ayrı doğrulanmalı; bu karara yönelik açıklama kararın öncesine taşınmamalı."
+    }
+  ],
+  "completed_pre_cut_bodies": 148,
+  "remaining_pre_cut_bodies": 501,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
