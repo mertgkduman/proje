@@ -1,0 +1,46 @@
+{
+  "tranche_id": "saadet-party-news-032",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T10:10:11.784967+00:00",
+  "reads": [
+    {
+      "post_id": 562,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/turkiye-nin-yeni-bir-baslangica-ihtiyaci-var",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=turkiye-nin-yeni-bir-baslangica-ihtiyaci-var",
+      "published_at": "2025-12-06T10:41:00+00:00",
+      "updated_at": "2025-12-06T10:41:00+00:00",
+      "accessed_at": "2026-11-24T10:09:22.106968+00:00",
+      "original_path": "party-news-bodies/562.json",
+      "sha256": "0547e28eda6d0de2a59f9d6764ea1338878060175b548833868bc854347a1ac3",
+      "normalized_body_sha256": "49a896993105fed21f5db9ec33168c967d1510809f9ab7224085f85da835d65b",
+      "source_section_range": [
+        0,
+        21314
+      ],
+      "state": "examined",
+      "reading": "Yayın Arıkanın Gebze ilçe kongresi konuşma notları olarak sunuluyor; kalkınma planında 41 ana proje, 2,5 milyon istihdam ve 528 milyar dolar hedefi ile ilk yüz gün ve medya politikası vaatleri var. Metin başlığı 6 Aralık 2025 derken gövde 6 Kasım 2025 diyor. Yayın hazırlanmış not niteliğinde; her sözün fiilen söylendiği, kongre seçimi sonucu ve hedeflerin gerçekleşmesi ayrı kaynak gerektirir.",
+      "selected_passages": [
+        {
+          "start": 50,
+          "end": 107,
+          "exact": "6 ARALIK 2025 TARİHLİ GEBZE İLÇE KONGRESİ KONUŞMA NOTLARI"
+        },
+        {
+          "start": 588,
+          "end": 607,
+          "exact": "Bugün 6 Kasım 2025."
+        }
+      ],
+      "point": "Gebze kongresi konuşma notları, kalkınma ve ilk yüz gün.",
+      "statement": "41 ana proje, istihdam ve gelir hedefleri; medya reformu ve uyuşturucu ağlarına ilişkin ilk yüz gün vaatleri.",
+      "concrete_evidence": "Parti API yanıtı Gebze kongresi için konuşma notlarını içerir; notların sahnede aynen söylendiğini veya vaatlerin gerçekleştiğini tek başına göstermez.",
+      "open_provenance": "Başlıktaki 6 Aralık ile metindeki 6 Kasım tarihi çelişiyor. Kongrenin günü, konuşma kaydı, seçilen yönetim ve planın kaynak/maliyet ve sonuçları ayrı doğrulanmalı. Boş güncelleme alanı eski sürümü kanıtlamaz."
+    }
+  ],
+  "completed_pre_cut_bodies": 117,
+  "remaining_pre_cut_bodies": 532,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
