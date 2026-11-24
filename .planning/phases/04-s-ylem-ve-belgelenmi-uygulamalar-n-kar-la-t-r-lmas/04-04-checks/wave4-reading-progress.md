@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 68 | 70 | 62530588 |
-| Saadet Partisi | 25 | 21 | 62544651 |
+| Saadet Partisi | 26 | 22 | 62567788 |
 | Demokrat Parti | 38 | 32 | 62567797 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -297,3 +297,7 @@ Demokrat Parti’nin 008. dilimi sonunda 83 gövde okundu, iki kayıt kesim sonr
 
 
 2/3139, 2/3144 ve 7/20085 aynı exact çalışma çiftiyle iki HTML görünümünde doğrulandı. İki teklif ve bir soru kendi tarihleriyle yer aldı. 2/3139’daki iki 45. madde atfı PDF’nin ayrı sayfalarına bağlı. 7/20085’in imza, teslim ve süresinde cevaplanmama günleri ayrı. Programdaki katkı payı hedefiyle ilaç teminine özgü söylem eşleştirmesi açık. [Önizleme makbuzu](../04-12-checks/three-dossiers-62567797.json)
+
+Saadet 10/3605 aynı kesin girdiyle iki görünümde ve bağımsız veri denetiminde doğrulandı. 14 Ocak açıklaması ile Yeni Yol’un imzalı başvurusu ve ön görüşme reddi ayrı kayıtlar. Açıklama ve başvurunun saat sırası ile önceki araştırmaların 5 ve 6 olarak sayılması açık. 25 olay ve 21 ilişkilik önceki kayıtların tamamı korundu. [Önizleme makbuzu](../04-11-checks/inquiry-3605-62567788.json)
+
+Demokrat Parti’nin 009 ve 010 dilimlerindeki 18 gövde okundu. Katalogda 101 gövde incelendi, iki kayıt kesim sonrası ve 154 kayıt açık. Açık kayıtlar arasında 86 ve 87’nin başlık dışında gövdesi bulunmuyor. 104. yayın 22 Temmuz 2023 Başkanlık Divanı görev dağılımını ve Altıntaş’ın sözcü olarak görevlendirilmesini bildiriyor. [009. dilim](../04-12-checks/party-news-009-reading.json) · [010. dilim](../04-12-checks/party-news-010-reading.json)
