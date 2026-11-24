@@ -1,0 +1,462 @@
+<!doctype html><html>
+
+<head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;none&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; img-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;none&#x27;; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+
+
+<style>
+<!--
+ 
+ @font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:TimesNewRomanPSMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ 
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Açıklama Metni Char1";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Üst Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Alt Bilgi Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Konu Başlığı Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Gövde Metni Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{font-family:"Times New Roman",serif;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Açıklama Konusu Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balon Metni Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-link:"Aralık Yok Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Normal1
+	{mso-style-name:Normal1;
+	font-family:"Arial",sans-serif;}
+span.BalonMetniChar
+	{mso-style-name:"Balon Metni Char";
+	mso-style-link:"Balon Metni";
+	font-family:"Segoe UI",sans-serif;}
+span.Gvdemetni
+	{mso-style-name:"Gövde metni_";
+	mso-style-link:"Gövde metni1";
+	background:white;}
+p.Gvdemetni1, li.Gvdemetni1, div.Gvdemetni1
+	{mso-style-name:"Gövde metni1";
+	mso-style-link:"Gövde metni_";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:13.7pt;
+	background:white;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+span.stBilgiChar
+	{mso-style-name:"Üst Bilgi Char";
+	mso-style-link:"Üst Bilgi";}
+span.AltBilgiChar
+	{mso-style-name:"Alt Bilgi Char";
+	mso-style-link:"Alt Bilgi";}
+span.FontStyle15
+	{mso-style-name:"Font Style15";
+	font-family:"Times New Roman",serif;
+	letter-spacing:.5pt;}
+span.FontStyle16
+	{mso-style-name:"Font Style16";
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.FontStyle37
+	{mso-style-name:"Font Style37";
+	font-family:"Times New Roman",serif;}
+span.Gvdemetni0
+	{mso-style-name:"Gövde metni";
+	font-variant:normal !important;
+	letter-spacing:0pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;}
+p.baslk, li.baslk, div.baslk
+	{mso-style-name:baslk;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.altbaslik, li.altbaslik, div.altbaslik
+	{mso-style-name:altbaslik;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.kantab, li.kantab, div.kantab
+	{mso-style-name:kantab;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.fontstyle01
+	{mso-style-name:fontstyle01;
+	font-family:TimesNewRomanPSMT;
+	color:black;
+	font-weight:normal;
+	font-style:normal;}
+p.nor, li.nor, div.nor
+	{mso-style-name:nor;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.metin, li.metin, div.metin
+	{mso-style-name:metin;
+	mso-style-link:"metin Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.baslk0, li.baslk0, div.baslk0
+	{mso-style-name:baslk0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:18.0pt;
+	font-size:12.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+p.AklamaMetni1, li.AklamaMetni1, div.AklamaMetni1
+	{mso-style-name:"Açıklama Metni1";
+	mso-style-link:"Açıklama Metni Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar
+	{mso-style-name:"Açıklama Metni Char";
+	mso-style-link:"Açıklama Metni1";}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.KonuBalChar
+	{mso-style-name:"Konu Başlığı Char";
+	mso-style-link:"Konu Başlığı";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.ksmblm, li.ksmblm, div.ksmblm
+	{mso-style-name:kısımbölüm;
+	margin-top:2.85pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.nor0, li.nor0, div.nor0
+	{mso-style-name:nor0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"New York",serif;}
+p.kantab0, li.kantab0, div.kantab0
+	{mso-style-name:kantab0;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"New York",serif;
+	font-weight:bold;}
+span.NormalWebChar
+	{
+	font-family:"Times New Roman",serif;}
+p.stylenormal, li.stylenormal, div.stylenormal
+	{mso-style-name:style_normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.stbilgiChar1
+	{mso-style-name:"Üstbilgi Char1";
+	font-family:"Calibri",sans-serif;}
+span.BalonMetniChar1
+	{mso-style-name:"Balon Metni Char1";
+	font-family:"Segoe UI",sans-serif;}
+p.Gvde, li.Gvde, div.Gvde
+	{mso-style-name:Gövde;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	border:none;}
+span.metinChar
+	{mso-style-name:"metin Char";
+	mso-style-link:metin;
+	font-family:"Times New Roman",serif;}
+span.AralkYokChar
+	{mso-style-name:"Aralık Yok Char";
+	mso-style-link:"Aralık Yok";
+	font-family:"Calibri",sans-serif;}
+span.AklamaMetniChar1
+	{mso-style-name:"Açıklama Metni Char1";
+	mso-style-link:"Açıklama Metni";}
+span.AklamaKonusuChar
+	{mso-style-name:"Açıklama Konusu Char";
+	mso-style-link:"Açıklama Konusu";
+	font-weight:bold;}
+span.Bodytext2
+	{
+	font-family:"Times New Roman",serif;
+	background:white;}
+p.Bodytext20, li.Bodytext20, div.Bodytext20
+	{
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:13.7pt;
+	background:white;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.A9
+	{mso-style-name:A9;
+	color:black;}
+span.GvdeMetniChar
+	{mso-style-name:"Gövde Metni Char";
+	mso-style-link:"Gövde Metni";}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ 
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:49.65pt 70.85pt 63.8pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ 
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+<style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head>
+
+<body lang="TR">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;
+margin-bottom:3.0pt;margin-left:0cm;text-align:center;line-height:150%"><b><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">SOSYAL
+SİGORTALAR VE GENEL SAĞLIK SİGORTASI KANUNU İLE 375 SAYILI KANUN HÜKMÜNDE
+KARARNAMEDE DEĞİŞİKLİK YAPILMASINA DAİR KANUN</span></b></p>
+
+<table class="MsoNormalTable" style="margin-left:12.5pt;border-collapse:collapse">
+ <tr>
+  <td width="211" style="width:158.25pt;padding:0cm 3.5pt 0cm 3.5pt">
+  <p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-align:justify;line-height:normal"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">Kanun No. <span style="color:black">7438</span></span></b></p>
+  </td>
+  <td width="121" style="width:90.85pt;padding:0cm 3.5pt 0cm 3.5pt">
+  <p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:17.0pt;
+  line-height:normal"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span></b></p>
+  </td>
+  <td width="256" style="width:192.0pt;padding:0cm 3.5pt 0cm 3.5pt">
+  <p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:17.0pt;
+  line-height:normal"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">Kabul
+  Tarihi: 1/3/2023      </span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:#00B050"> </span></b></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE 1-</span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"> 31/5/2006 tarihli
+ve 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanununa aşağıdaki
+geçici madde eklenmiştir.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">“GEÇİCİ MADDE 95-
+Bu maddenin yürürlük tarihinden sonra aylık bağlanması için talepte
+bulunanlardan 506 sayılı Kanunun geçici 81 inci maddesinin birinci fıkrasının
+(B) bendi, 1479 sayılı Kanunun geçici 10 uncu maddesinin ikinci fıkrası, 2925
+sayılı Kanunun geçici 2 nci maddesinin birinci fıkrasının (B) bendi ve 5434
+sayılı Kanunun geçici 205 inci maddesi hükümlerine göre yaşlılık veya emekli
+aylığı bağlanacak olanlar, söz konusu hükümlerde yaş dışındaki diğer şartları
+taşımaları halinde yaşlılık veya emekli aylığından yararlanırlar. Bu fıkra esas
+alınarak geriye dönük herhangi bir ödeme yapılmaz ve geriye dönük hak talep
+edilemez.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Birinci fıkra
+kapsamında yaşlılık veya emekli aylığı talebinde bulunarak ilk defa yaşlılık
+veya emekli aylığı bağlananlardan, yaşlılık veya emekli aylığı talebi nedeniyle
+işten ayrılış bildirgesi verilenlerin işten ayrılış tarihini takip eden 30 gün
+içerisinde en son çalışılan özel sektör işyerinde sosyal güvenlik destek
+primine tabi çalışmaya başlamaları halinde, sosyal güvenlik destek primine tabi
+çalışılmaya başlandığı tarihten itibaren bu Kanunun geçici 14 üncü maddesinin
+birinci fıkrasının (a) bendinde belirtilen sosyal güvenlik destek primi işveren
+hissesinin beş puanlık kısmına isabet eden tutar Hazinece karşılanır. Sosyal
+güvenlik destek primi işveren hissesi indiriminden yararlanılan sigortalının
+işten ayrılması halinde, söz konusu sigortalıdan dolayı bu indirimden tekrar
+yararlanılamaz. Bu fıkrada yer alan indirimden, bu Kanunun 81 inci maddesinin
+birinci fıkrasının (ı) bendinde yer alan diğer şartlar sağlanmak kaydıyla
+yararlanılır. Bu fıkranın uygulanmasına ilişkin usul ve esaslar Bakanlık ile Hazine
+ve Maliye Bakanlığı tarafından müştereken belirlenir.”</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE 2- </span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">27/6/1989 tarihli
+ve 375 sayılı Kanun Hükmünde Kararnamenin geçici 23 üncü maddesinin beşinci
+fıkrasının ikinci cümlesi ile geçici 24 üncü maddesinin birinci fıkrasının
+dördüncü cümlesi yürürlükten kaldırılmıştır.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE 3- </span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Bu Kanun yayımı
+tarihinde yürürlüğe girer.</span></p>
+
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:justify;text-indent:17.0pt;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">MADDE 4- </span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Bu Kanun
+hükümlerini Cumhurbaşkanı yürütür.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+</div>
+
+</body>
+
+</html>
