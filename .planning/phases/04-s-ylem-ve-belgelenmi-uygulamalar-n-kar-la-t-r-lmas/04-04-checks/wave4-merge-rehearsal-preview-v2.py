@@ -234,7 +234,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             ('iyi', '0407-agenda-104-2881-actor', '0407-agenda-104-floor-authority-2881'),
             ('yeni-yol', '0408-textile-2881-actor', '0408-textile-2881-floor-role'),
         }
-        if exercise['number'] in {'06', '09', '10'}:
+        if number in {'06'} | recent_rehearsals:
             expected_contributions.add(('dem', '0406-dem-institution', None))
         assert set(rows) == expected_contributions
         assert db.execute('SELECT id,party_id FROM practice_relation WHERE event_id=?', (textile,)).fetchall() == [
