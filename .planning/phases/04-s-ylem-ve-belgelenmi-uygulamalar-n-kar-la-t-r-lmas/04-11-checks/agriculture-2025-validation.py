@@ -17,8 +17,8 @@ case = 'agriculture-2025'
 stem = '0411-saadet-agriculture-2025'
 package = checks / f'{case}-draft.json'
 review = checks / f'{case}-review-draft.json'
-assert harness.sha(package) == '95226a1206d93658e56f113bf2ce6ed7ee09ae086cf6782f533089911228384a'
-assert harness.sha(review) == '5add10ba8f99838508b044a2ba5c463a46420a93bd0024b4c809982ef778c2e4'
+assert harness.sha(package) == '7f78c4fbe5248d6513beb56dd9d4298d98995737d3d773abf8cd14da27848da8'
+assert harness.sha(review) == 'edce38a01ac2411f44ac8e531894c84c8a0e3de731e3df9be95f398c8f23fbd8'
 records = json.loads(package.read_bytes())['practice_records']
 assert (len(records['practice_event']), len(records['practice_relation']), len(records['practice_closure'])) == (33, 29, 0)
 if len(sys.argv)==2:
