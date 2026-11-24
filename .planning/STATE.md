@@ -196,5 +196,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-24T19:35:28Z
-Stopped at: Rehearsal 11 independently verified, all three 2 October party packages verified, rehearsal 12 (62615150) running.
+Stopped at: Rehearsal 12 (62615150) independently verified. TİP Atalay and borrowing comparisons verified in 62615305. Wave 4 source research continues.
 Resume file: None
