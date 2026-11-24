@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-186",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T18:53:47.425172+00:00",
+  "reads": [
+    {
+      "post_id": 395,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/7den-77ye-herkesin-oncelikli-gundemi-ekonomi",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=7den-77ye-herkesin-oncelikli-gundemi-ekonomi",
+      "published_at": "2023-08-22T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T18:53:47.425172+00:00",
+      "original_path": "party-news-bodies/395.json",
+      "sha256": "82fd5a664c482e1af973279cfff3648ccb980b842dafc351ae3d2c0834698383",
+      "normalized_body_sha256": "0d837abdffac88fdefe285692d91e01face274d2b35513c8636983eedcc27da2",
+      "source_section_range": [
+        0,
+        14938
+      ],
+      "state": "examined",
+      "reading": "Genel Başkan Vekili Sabri Tekir yükseköğrenim, çiftçi ve emeklilerin ekonomik koşullarını değerlendiriyor.",
+      "selected_passages": [
+        {
+          "start": 3963,
+          "end": 4003,
+          "exact": "TMO buğday ödemelerini geciktirmektedir."
+        }
+      ],
+      "point": "Ekonomi ve tarımsal ödeme eleştirisi.",
+      "statement": "Mısır alım fiyatının yetersiz olduğunu ve TMO buğday ödemelerinin geciktiğini savunuyor.",
+      "concrete_evidence": "Parti yayımı genel başkan vekilinin fiyat ve ödeme gecikmesi açıklamasını içeriyor.",
+      "open_provenance": "Alım duyurusu, ürün yılı, fiyat birimi, ödeme tarihleri ve gecikme iddiası bu okumada bağımsız doğrulanmadı; sonraki işlemle eşleştirilmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 272,
+  "remaining_pre_cut_bodies": 377,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü; blok sonları korundu, etiketler ve boş satırlar kaldırıldı."
+}
