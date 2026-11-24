@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 78 | 75 | 62590521 |
 | Saadet Partisi | 31 | 27 | 62588702 |
-| Demokrat Parti | 73 | 50 | 62587061 |
+| Demokrat Parti | 75 | 50 | 62592388 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -476,3 +476,5 @@ TİP’in Parti Açıklamaları sayfası 190 ayrı bağlantıyla arşivlendi. İ
 Dokuzuncu birleşik önizleme 62591349 ile tamamlandı. Bağımsız denetim 515 olay, 355 ilişki, 24 ortak olay kararı kaydı, 543 olay başvurusu ve iki görünümde 710 ilişki bağlantısını doğruladı. 7242’nin özgün belgesi ve düzeltilen okunabilir türevi denetlendi. Önizleme, terfi sırasındaki üç sonraki parti ekinden önce dondurulan girdilere bağlı. Kapsam kapanışı sıfır. [Bağımsız birleşim denetimi](wave4-merge-rehearsal-09-62591349-independent.json)
 
 TİP’in 14 Ekim 2026 X hesapları açıklaması İFÖD’ün özgün EngelliWeb kaydı ve yayına bağlı görselle karşılaştırıldı. İFÖD Genel Merkez hesabını adlandırıyor, o anda platformun Türkiye’den gizlemediğini bildiriyor. 2 Kasım raporu hesap başına uygulama günü vermiyor. İl hesabı ve özgün karar açık. [Kaynak okuması](../04-05-checks/tip-x-20261014-sources/reading.json)
+
+Demokrat Parti 2018 ve 2019 mali denetim kararları iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 2018 Kararlar Dergisi kaydı daha önce arşivlenen ciltte başka sayfalarda. 2019 özgün cilt alımı önceki erişim boşluğunu doldurdu. Hesap yılı, karar günü ve Resmî Gazete yayımı kaynaklarında ayrı. [Denetim makbuzu](../04-12-checks/party-audit-followup-62592388.json) [Bağımsız denetim](../04-12-checks/party-audit-followup-62592388-independent.log)
