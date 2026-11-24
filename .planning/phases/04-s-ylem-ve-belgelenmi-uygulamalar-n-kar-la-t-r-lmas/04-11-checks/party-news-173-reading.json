@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-173",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T18:31:59.876781+00:00",
+  "reads": [
+    {
+      "post_id": 408,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/gazze-filistinindir-kudusun-dogusu-da-batisi-da-filistinlilerindir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=gazze-filistinindir-kudusun-dogusu-da-batisi-da-filistinlilerindir",
+      "published_at": "2023-11-07T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-24T18:31:59.876781+00:00",
+      "original_path": "party-news-bodies/408.json",
+      "sha256": "f1526c2fd9eb6e878d09ff501de16dcdd8cff231f4507a34911ca08509b0cb8c",
+      "normalized_body_sha256": "03f17d42a8cf1b85ca57fa02d67db35fc7d780bfb944481b452e1e8f042e6d4a",
+      "source_section_range": [
+        0,
+        10791
+      ],
+      "state": "examined",
+      "reading": "Temel Karamollaoğlu Saadet-Gelecek grup toplantısında Filistin ve Mısırdaki milletvekili heyeti hakkında konuşuyor.",
+      "selected_passages": [
+        {
+          "start": 1204,
+          "end": 1284,
+          "exact": "Gazze için yola çıkan milletvekili arkadaşlarımız Mısır’da temaslarda bulundular"
+        }
+      ],
+      "point": "Gazze ziyaretine yönelik Mısır temasları anlatımı.",
+      "statement": "Karamollaoğlu milletvekillerinin Mısırda temaslarda bulunup Gazze’ye girmeye çalıştığını fakat giremediklerini söylüyor.",
+      "concrete_evidence": "Aynı parti API arşivindeki 409 raporu ortak heyetin Mısır temas ve geçiş engeli anlatısını ayrıntılandırıyor.",
+      "open_provenance": "Bu iki metin aynı parti kaynağına aittir; TBMM kurumsal heyeti veya bölgeye giriş gerçekleşmesi anlamına gelmez. Konuşmadaki ölü sayıları ve BM atıfları bağımsız doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 259,
+  "remaining_pre_cut_bodies": 390,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
