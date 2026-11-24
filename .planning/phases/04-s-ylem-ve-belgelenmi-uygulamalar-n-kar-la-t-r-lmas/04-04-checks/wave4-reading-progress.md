@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 73 | 72 | 62575744 |
 | Saadet Partisi | 28 | 24 | 62575423 |
-| Demokrat Parti | 52 | 43 | 62572604 |
+| Demokrat Parti | 55 | 45 | 62576495 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -369,3 +369,7 @@ Demokrat Parti 156–160. yayınlarla 155/257 gövdeye ulaştı. 100 gövde aç�
 EMEP İngilizce programının 70.418 karakterlik özgün API gövdesi baştan sona okundu. Sondaki Kasım 2016 ibaresi ile 2020 API yayım günü ayrı. Roboski için 24 Şubat 2016 AYM 2014/11864 özgün kararı, AİHM’in 10 Nisan 2018 hükmü ve 17 Mayıs yazılı bildirimi incelendi. EMEP Bölge Örgütü’nün sonraki özgün açıklaması arşivlendi. İki eşleşmemiş kararın adayı 62578062 ile denetleniyor. [Programın son aralıkları](../04-10-checks/party-api-3596-english-after-26000-reading.json) [AYM kaynak okuması](../04-10-checks/encu-49976-sources/domestic-reading.json)
 
 Saadet’in ücretsiz yemek ve su çağrısı için 10/3274 imzalı İYİ Parti araştırması, 23 Ekim ön görüşme işlemi ve MEB’in 7/49037 yanıtı okundu. Sicilde araştırma Gündemde. Bakanlık yanıtı belirli gruplarda ücretsiz öğle yemeği bildiriyor. Bütün öğrenciler, temiz su ve sonraki doğrudan Saadet işlemi açık. Arşiv 149/649 gövdeye ulaştı ve 500 açık. [Okul yemeği kaynak zinciri](../04-11-checks/school-meal-532-trace.md) [063. dilim](../04-11-checks/party-news-063-reading.json)
+
+Demokrat Parti 7418 karşılaştırmaları iki HTML görünümünde ve bağımsız veri denetiminde doğrulandı. 2/4471 için ilk maddeler, 29. madde ve teklifin tümü farklı işlemlerde. 7418’in 18 Ekim yayımı ve AYM’nin 8 Kasım 2023 kararı ayrı. 22 Haziran Enginyurt konuşması oy niyetini belgeliyor, kişisel oy açık. [Önizleme makbuzu](../04-12-checks/law-7418-62576495.json) [Bağımsız denetim](../04-12-checks/law-7418-62576495-independent.log)
+
+Demokrat Parti yayın kataloğunda 161–174 aralığı ve 169’un bağlı 44 sayfalık özgün PDF’siyle 169/257 gövde incelendi. İki yayın kapsam tarihinden sonra ve 86 kayıt açık. 28 Şubat 2022 mutabakat PDF’sinin kapak ve bütün metin sayfaları okundu. Nisan ve Haziran elektrik cetvelleri ile Mayıs ve Haziran doğal gaz toptan fiyatları karşılaştırıldı. Nisan TÜFE gerçekleşmesi, TCMB’nin yıl sonu koşullu tahmini, Aralık gerçekleşmesi ve süt tavsiye fiyatı ayrı kayıtlarda. [022. dilim](../04-12-checks/party-news-022-reading.json) [169 bağlı özgün dosya](../04-12-checks/parliamentary-agreement-20220228-sources/catalog-169-recovery.json) [Tarife cetvelleri](../04-12-checks/tariffs-202206-sources/reading.json) [TÜFE ve süt kaynakları](../04-12-checks/additional-may-2022-sources/reading.json)
