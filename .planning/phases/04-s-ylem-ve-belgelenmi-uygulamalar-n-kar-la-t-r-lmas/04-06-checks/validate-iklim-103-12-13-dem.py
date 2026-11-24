@@ -12,7 +12,7 @@ spec = importlib.util.spec_from_file_location('tracer', here / 'tracer-validatio
 mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 package, review = here / 'iklim-103-12-13-dem-draft.json', here / 'iklim-103-12-13-dem-review-draft.json'
-assert mod.sha(package) == 'bba343874a79888cfeffde83b483067a3dbf4d5262a1d0d046cca1ce02afb3f6'
+assert mod.sha(package) == '04b06110aad4ff0dc7a4cf64155b0277114175e2255897c8c8ebc040da4ebd2e'
 assert mod.sha(review) == '5aa6e1feed4e99f638c2cb8503d976595e555c1e8c81f97f4f7b464519f9602e'
 before = json.loads((root / 'data/practices/04-dem.json').read_text())
 after = json.loads(package.read_text())

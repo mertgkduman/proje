@@ -13,11 +13,11 @@ sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 canon = lambda row: json.dumps(row, ensure_ascii=False, sort_keys=True)
 package = checks / 'iklim-103-12-13-dem-draft.json'
 review = checks / 'iklim-103-12-13-dem-review-draft.json'
-assert sha(package) == 'bba343874a79888cfeffde83b483067a3dbf4d5262a1d0d046cca1ce02afb3f6'
+assert sha(package) == '04b06110aad4ff0dc7a4cf64155b0277114175e2255897c8c8ebc040da4ebd2e'
 assert sha(review) == '5aa6e1feed4e99f638c2cb8503d976595e555c1e8c81f97f4f7b464519f9602e'
 old = root / 'data/practices/04-dem.json'
 old_review = root / 'data/practices/04-dem-review.json'
-assert sha(old) == '41854f21aac8faabdfe6a520df9b999e163936b60974efeb93440416f49b98cf'
+assert sha(old) == 'b643183afb6f261aa4e6cb346f089419bbc91d18475778cc114e495e49abb833'
 assert sha(old_review) == '8a99b3b60dd347be1f311cb2cb698270e30b26670f3a9133d932cb65528af64e'
 base, new = (json.loads(p.read_text()) for p in (old, package))
 for key in ('entries', 'scope_inventory'):
