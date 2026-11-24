@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-24T15:55:00Z
-Stopped at: EMEP 25 November verified; combined 62591349, Demokrat audits 62592388 and Saadet 7534 62592492 in progress
+Last session: 2026-11-24T16:08:02Z
+Stopped at: ninth combined preview verified; Demokrat audits 62592388 and Saadet 7534 62592492 in progress
 Resume file: None

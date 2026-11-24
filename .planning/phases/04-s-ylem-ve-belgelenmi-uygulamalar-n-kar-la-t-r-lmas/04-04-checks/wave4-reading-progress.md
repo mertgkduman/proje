@@ -472,3 +472,7 @@ Demokrat Parti’nin beş ek mali denetim kararı özgün ciltlerden okundu. 201
 TİP’in Parti Açıklamaları sayfası 190 ayrı bağlantıyla arşivlendi. İlk dilimde sekiz özgün sayfa alındı, beş gövdenin 16.834 karakteri tam okundu. Aynı sayfadaki diğer gövdeler ve ayrı yayın aileleri açık. [Katalog](../04-05-checks/tip-publication-catalog/catalog.json) [İlk dilim](../04-05-checks/tip-publication-catalog/party-statements-01/reading.json)
 
 7242’nin TİP çalışma türevi bildirilen Windows-1254 kodlamasıyla yeniden üretildi. Özgün HTML ve önceki önizleme makbuzu saklı. [Düzeltme makbuzu](wave4-7242-readable-recovery.json)
+
+Dokuzuncu birleşik önizleme 62591349 ile tamamlandı. Bağımsız denetim 515 olay, 355 ilişki, 24 ortak olay kararı kaydı, 543 olay başvurusu ve iki görünümde 710 ilişki bağlantısını doğruladı. 7242’nin özgün belgesi ve düzeltilen okunabilir türevi denetlendi. Önizleme, terfi sırasındaki üç sonraki parti ekinden önce dondurulan girdilere bağlı. Kapsam kapanışı sıfır. [Bağımsız birleşim denetimi](wave4-merge-rehearsal-09-62591349-independent.json)
+
+TİP’in 14 Ekim 2026 X hesapları açıklaması İFÖD’ün özgün EngelliWeb kaydı ve yayına bağlı görselle karşılaştırıldı. İFÖD Genel Merkez hesabını adlandırıyor, o anda platformun Türkiye’den gizlemediğini bildiriyor. 2 Kasım raporu hesap başına uygulama günü vermiyor. İl hesabı ve özgün karar açık. [Kaynak okuması](../04-05-checks/tip-x-20261014-sources/reading.json)
