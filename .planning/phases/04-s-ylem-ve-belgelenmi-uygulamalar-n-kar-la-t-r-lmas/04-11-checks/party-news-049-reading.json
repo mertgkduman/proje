@@ -1,0 +1,41 @@
+{
+  "tranche_id": "saadet-party-news-049",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-24T11:21:44.779410+00:00",
+  "reads": [
+    {
+      "post_id": 542,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/durumflasyon-bizim-durumlerimizi-kim-yiyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=durumflasyon-bizim-durumlerimizi-kim-yiyor",
+      "published_at": "2025-10-03T10:40:00+00:00",
+      "updated_at": "2025-10-03T10:40:00+00:00",
+      "accessed_at": "2026-11-24T11:21:44.779432+00:00",
+      "original_path": "party-news-bodies/542.json",
+      "sha256": "0e42eef9c87ec55b9f4f68b69ae6c7130b9b9dd3bef72d711eb81eddeac9f1d8",
+      "normalized_body_sha256": "c07f586ce5c5f74ecd4dfdc06269aeac88c21e61b5db49d884443afad6a576be",
+      "source_section_range": [
+        0,
+        8189
+      ],
+      "state": "examined",
+      "reading": "Mustafa Yılmaz öğrenci bursunun tavuk dürüm fiyatına oranıyla enflasyonu eleştiriyor; 3.000 TL burs ve varsayılan 150 TL fiyatla 20 dürüm, 2002de 86 ve 2023te 31 dürüm hesabı veriyor. API gövdesindeki haber bütünüyle iki kez tekrarlanmış.",
+      "selected_passages": [
+        {
+          "start": 2316,
+          "end": 2362,
+          "exact": "O yüzden ortalama 150 TL üzerinden hesapladık."
+        }
+      ],
+      "point": "Öğrenci bursunun örnek gıda fiyatıyla alım gücü.",
+      "statement": "Yılmaz kendi seçtiği dürüm fiyatı ile burs oranını kullanarak alım gücündeki azalmayı eleştiriyor.",
+      "concrete_evidence": "3.000/150=20 aritmetiği verilen varsayımlarla tutarlı; parti açıklaması tarihsel fiyat ve burs serilerini veya Meclis işlemini doğrulamaz.",
+      "open_provenance": "2002 ve 2023 bursları, karşılaştırılan dürüm fiyatlarının yer, gramaj ve kaynakları, fiyat örneklemi ve tarihler bağımsız doğrulanmalı. Tek ürün oranı genel enflasyon endeksi değildir. Tekrarlı metin bir kaynak sayılır."
+    }
+  ],
+  "completed_pre_cut_bodies": 135,
+  "remaining_pre_cut_bodies": 514,
+  "closure_refs": [],
+  "normalization": "HTML varlıkları iki kez çözüldü, blok ve satır sonları korundu; etiketler kaldırıldı, boş satırlar ve satır kenarı boşlukları çıkarıldı."
+}
