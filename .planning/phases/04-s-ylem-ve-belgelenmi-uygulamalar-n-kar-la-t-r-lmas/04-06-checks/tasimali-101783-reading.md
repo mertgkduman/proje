@@ -1,0 +1,9 @@
+# DEM taşımalı eğitim yayını ve 10/1783
+
+19 Eylül 2024 tarihli DEM Parti yayınındaki giriş, araştırma talebi ve gerekçe gövdesinin tamamı okundu. Metin, taşımalı eğitimin sınırlandırılmasının gerekçelerinin ve köy okullarının kapanmasının sonuçlarının araştırılmasını ve eğitimde fırsat eşitliği bakımından politikaların gözden geçirilmesini istiyor. Yönetmelik değişikliğine ilişkin mesafe ve öğrenci sayısı anlatımı ile pansiyonların, ailelerin ve çocukların karşılaşabileceği sonuçlar partinin gerekçesindeki iddialardır. Bunların hukuki ve fiilî doğruluğu bu okumayla bağımsız olarak saptanmadı.
+
+Yayın, grup başkanvekilleri Gülistan Kılıç Koçyiğit ve Sezai Temelli adına önerge verildiğini söylüyor. TBMM esas kaydı aynı iki ilk imzacıyı, aynı konu ve 10/1783 numarasını taşıyor. Sicilde Başkanlığa geliş 20 Eylül 2024, erişim anındaki durum Gündemde. DEM yayınının 19 Eylül tarihi ile sicilin 20 Eylül geliş tarihi ayrı kayıtlardır. Sicilde görülen durum bu tarihte bir ön görüşme veya komisyon sonucunu kanıtlamaz.
+
+TBMM bağlantısındaki 3 sayfalık imzalı özgün PDF tüm sayfaları Poppler ve Cairo ile görüntülenerek okundu. Birinci sayfanın görüntüsünde DEM Grup Başkanlığı kaşesinde 19 Eylül 2024 ve 7468 numarası görülüyor. İki imza altında Sezai Temelli ile Gülüstan Kılıç Koçyiğit grup başkanvekilleri ve seçim çevreleri ile yer alıyor. Sonraki iki sayfa gerekçeyi içeriyor. PDF metin katmanında ilk sayfada yalnız 10/1783 dizisi var. Görüntüyle okunan imzalar ve kaşe metin katmanı alıntısı olarak gösterilmez. Sayfa görüntüleri özgün PDF'nin yerine geçmez.
+
+5 Ağustos 2024 tarihli Cengiz Çiçek 7/15029 yazılı soru izi, taşımalı eğitim düzenlemesine ilişkin ayrı bir kişisel işlemdir. Temelli ve Kılıç Koçyiğit'in araştırma önergesi ile aynı işlem veya önceki kurumsal vaat olduğu varsayılmadı. Daha önceki bağımsız DEM söylemi, soru yanıtı ve araştırma önergesinin sonraki işlemleri açık bırakıldı.
