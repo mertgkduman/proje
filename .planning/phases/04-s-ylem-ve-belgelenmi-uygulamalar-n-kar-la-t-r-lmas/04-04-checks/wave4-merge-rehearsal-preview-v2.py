@@ -26,7 +26,7 @@ outcome = exercise['first']
 rehearsal = exercise['receipt']
 data = exercise['data']
 number = exercise['number']
-recent_rehearsals = {'09', '10', '11'}
+recent_rehearsals = {'09', '10', '11', '12'}
 payload = outcome['payload']
 records = payload['practice_records']
 schemas = (PRACTICE_TABLES | PRACTICE_VARIANT_TABLES | PRACTICE_EVIDENCE_TABLES |
@@ -68,6 +68,32 @@ for decision in outcome['decisions']:
             'tbmm-28-2-112-2-2275-law-7527',
         }:
             assert document['source_kind']=='official'
+        elif key == 'six-leaders-2022-10-02-chp-second-round-meeting':
+            assert parties == {'demokrat', 'iyi', 'saadet'}
+            assert document['source_kind'] == 'journalism'
+            source = attributions[version['id']]
+            assert source['kind'] == 'journalism'
+            if source['publisher'] == 'Karar':
+                assert document['party_id'] == 'iyi'
+                assert version['sha256'] == '0a80a470c8af3a1bc3623c69454cbc43ad67562b450d60ce0d3ed43dcba35f7f'
+            else:
+                assert source['publisher'] == 'Independent Türkçe'
+                assert version['sha256'] == 'b66726ba40ee965dfacdf44fd6486e267f1c0d5d4b0c9bd09ac6c576a587aedc'
+        elif key == 'ankara-2025-11-01-02-demokrasi-baris-calistayi':
+            assert parties == {'dem', 'emep'}
+            source = attributions[version['id']]
+            if document['source_kind'] == 'news':
+                assert source['kind'] == 'journalism' and source['publisher'] == 'İlke TV'
+                assert version['sha256'] == '94bef19cf3b6aa09b86728a5b83ce64fdbf2620b391b03c3096039a0154abec3'
+            elif document['source_kind'] == 'party':
+                assert source['kind'] == 'party_publication'
+                assert (document['party_id'], source['publisher']) in {
+                    ('dem', 'HALKLARIN EŞİTLİK VE DEMOKRASİ PARTİSİ'), ('emep', 'Emek Partisi'),
+                }
+            else:
+                assert document['source_kind'] == 'unknown' and document['party_id'] == 'emep'
+                assert source['kind'] == 'other' and source['publisher'] == 'DEM Parti'
+                assert version['sha256'] == 'daa8f7ee3a2b7db149f5597ea9f898bac547f3634aae49127b49c988ab4072e5'
         else:
             assert key=='tbmm-sik-makas-karaca-isci-basin-toplantisi-2026'
             assert parties=={'emep','tip'}
@@ -276,7 +302,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             'SELECT input_event_id,canonical_event_id FROM practice_event_alias WHERE decision_id=? ORDER BY input_event_id',
             (key,),
         ).fetchall() == [('0405-tip-7242-event','0405-tip-7242-event'), ('0410-law-7242-event','0410-law-7242-event')]
-    if number == '11':
+    if number in {'11', '12'}:
         key = 'tbmm-28-2-112-2-2275-law-7527'
         event_id, parties = joined[key]
         assert parties == {'tip', 'emep'}
@@ -287,6 +313,17 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         }
         assert votes <= {row[0] for row in db.execute(
             'SELECT passage_id FROM practice_event_evidence WHERE event_id=?', (event_id,))}
+    if number == '12':
+        meeting, parties = joined['six-leaders-2022-10-02-chp-second-round-meeting']
+        assert parties == {'demokrat', 'iyi', 'saadet'}
+        assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?', (meeting,))} == {'demokrat', 'saadet'}
+        assert {r[0] for r in db.execute('SELECT party_id FROM practice_contribution WHERE event_id=?', (meeting,))} == {'demokrat', 'iyi'}
+        assert db.execute('SELECT event_id FROM practice_event_evidence WHERE passage_id=?',
+                          ('0411-six-leaders-2022-meeting-arrival',)).fetchone() == (meeting,)
+        workshop, parties = joined['ankara-2025-11-01-02-demokrasi-baris-calistayi']
+        assert parties == {'dem', 'emep'}
+        assert not db.execute('SELECT party_id FROM practice_relation WHERE event_id=?', (workshop,)).fetchall()
+        assert {r[0] for r in db.execute('SELECT party_id FROM practice_contribution WHERE event_id=?', (workshop,))} == parties
 page = (release/'index.html').read_text()
 for r in records['practice_relation']:
     for view in ('party','comparison'):

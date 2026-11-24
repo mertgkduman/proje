@@ -21,8 +21,10 @@ else:
     before=json.loads((checks/"wave4-common-event-audit-10.json").read_bytes())
 groups = {row["candidate_key"]:row for row in audit["common_event_candidates"]}
 prior_keys = {row["candidate_key"] for row in before["common_event_candidates"]}
-overlap = json.loads(Path(sys.argv[5]).read_bytes()) if len(sys.argv) > 5 else None
-added_keys = {overlap["candidate_key"]} if overlap else set()
+overlap_doc = json.loads(Path(sys.argv[5]).read_bytes()) if len(sys.argv) > 5 else []
+overlaps = overlap_doc if isinstance(overlap_doc, list) else [overlap_doc]
+added_keys = {overlap["candidate_key"] for overlap in overlaps}
+assert len(added_keys) == len(overlaps)
 assert set(groups) == prior_keys | added_keys and not prior_keys & added_keys
 assert before["common_event_candidates"] == [row for row in audit["common_event_candidates"]
                                              if row["candidate_key"] in prior_keys]
@@ -64,7 +66,7 @@ for record in previous["decisions"]:
     refs=[dict(event_id=ref["event_id"],input_package_sha256=envelopes[members[ref["event_id"]]])
           for ref in record["event_refs"]]
     decisions.append(dict(record,event_refs=refs))
-if overlap:
+for overlap in overlaps:
     key = overlap["candidate_key"]
     group = groups[key]
     assert group["differing_fields"] == overlap["differing_fields"]
@@ -111,7 +113,7 @@ receipt=dict(git_commit=source_commit,base_release=inventory["base_release"],kin
              canonical_pointer_sha256=digest((data/"current.json").read_bytes()))
 assert receipt["canonical_pointer_sha256"]=="5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7"
 output = Path(sys.argv[4]) if len(sys.argv) > 4 else checks / "wave4-merge-rehearsal-07-preflight.json"
-if overlap:
+if overlaps:
     receipt.update(original_stages=stages,isolated_stage="partial",isolated_envelope_sha256=envelopes,
         merged_events=counts["practice_event"],merged_relations=counts["practice_relation"],
         closure_count=counts["practice_closure"],event_aliases=receipt["aliases"],added_reviewed_candidates=sorted(added_keys))

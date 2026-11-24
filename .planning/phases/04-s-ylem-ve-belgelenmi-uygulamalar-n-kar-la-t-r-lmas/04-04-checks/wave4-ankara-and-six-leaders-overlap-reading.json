@@ -1,0 +1,142 @@
+[
+  {
+    "candidate_key": "ankara-2025-11-01-02-demokrasi-baris-calistayi",
+    "canonical_event_id": "0406-ankara-workshop-event",
+    "decision": "same",
+    "differing_fields": [],
+    "members": {
+      "dem": {
+        "event": {
+          "id": "0406-ankara-workshop-event",
+          "common_event_key": "ankara-2025-11-01-02-demokrasi-baris-calistayi",
+          "event_at": "2025-11-01",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Ankara Demokrasi ve Barış Çalıştayı",
+          "scope_context": "DEM Parti, EHP, EMEP, SMF, TİP ve TÖP tarafından Ankara’da 1–2 Kasım 2025’te düzenlenen ortak çalıştay.",
+          "occurrence_basis": "DEM 3 Kasım ortak metni ve İlke TV 2 Kasım ikinci gün haberi."
+        },
+        "passages": [
+          {
+            "passage_id": "0406-ankara-workshop-ilke-passage",
+            "sha256": "94bef19cf3b6aa09b86728a5b83ce64fdbf2620b391b03c3096039a0154abec3",
+            "url": "https://ilketv.com.tr/tayip-temel-chpye-yonelik-saldirilar-surecin-toplumsallasmasini-engelliyor/",
+            "section": "İkinci gün ve altı düzenleyici"
+          }
+        ],
+        "verification_job": "62602872",
+        "package_sha256": "edddf6d5326d82cab43d792d1d1c6845a43cde41495cc991f18d72110d1cf10a"
+      },
+      "emep": {
+        "event": {
+          "id": "0410-ankara-workshop-event",
+          "common_event_key": "ankara-2025-11-01-02-demokrasi-baris-calistayi",
+          "event_at": "2025-11-01",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Ankara Demokrasi ve Barış Çalıştayı",
+          "scope_context": "DEM Parti, EHP, EMEP, SMF, TİP ve TÖP tarafından Ankara’da 1–2 Kasım 2025’te düzenlenen ortak çalıştay.",
+          "occurrence_basis": "DEM 3 Kasım ortak metni ve İlke TV 2 Kasım ikinci gün haberi."
+        },
+        "passages": [
+          {
+            "passage_id": "0410-ankara-workshop-ilke-p",
+            "sha256": "94bef19cf3b6aa09b86728a5b83ce64fdbf2620b391b03c3096039a0154abec3",
+            "url": "https://ilketv.com.tr/tayip-temel-chpye-yonelik-saldirilar-surecin-toplumsallasmasini-engelliyor/",
+            "section": "Ankarada ikinci gün ve düzenleyiciler"
+          }
+        ],
+        "verification_job": "62611329",
+        "package_sha256": "7d63027d2dec7b9518ca86abae315e4306846ef2cdb8c5b3afc8972d3f110224"
+      }
+    },
+    "common_source_sha256": [
+      "94bef19cf3b6aa09b86728a5b83ce64fdbf2620b391b03c3096039a0154abec3"
+    ],
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-24T19:33:46.824844+00:00",
+    "overlap_reason": "Ankara’da 1–2 Kasım 2025 çalıştayı iki çalışma kaydında aynı. 2 Kasım İlke TV yayımının özgün baytları eşit ve altı düzenleyiciye ilişkin pasaj iki kanıtta ortak. 3 Kasım parti metinleri ile iki kurumsal katkı kendi yayıncılarına bağlı.",
+    "closure_refs": []
+  },
+  {
+    "candidate_key": "six-leaders-2022-10-02-chp-second-round-meeting",
+    "canonical_event_id": "0412-six-leaders-2022-dp-event",
+    "decision": "same",
+    "differing_fields": [],
+    "members": {
+      "demokrat": {
+        "event": {
+          "id": "0412-six-leaders-2022-dp-event",
+          "common_event_key": "six-leaders-2022-10-02-chp-second-round-meeting",
+          "event_at": "2022-10-02",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Altı liderin CHP Genel Merkezindeki ikinci tur ilk toplantısı",
+          "scope_context": "Altı siyasi parti liderinin 2 Ekim 2022 tarihinde CHP Genel Merkezindeki ikinci tur ilk toplantısı.",
+          "occurrence_basis": "2 Ekim 2022’de CHP’nin ev sahipliğinde yapılan ikinci turun ilk toplantısını 2 Ekim ortak açıklaması ve Independent Türkçe’nin tarihli haberi belgeliyor. Katılımcılar arasında Temel Karamollaoğlu, Gültekin Uysal ve Meral Akşener vardı."
+        },
+        "passages": [
+          {
+            "passage_id": "0412-six-leaders-2022-dp-meeting-round-p",
+            "sha256": "b66726ba40ee965dfacdf44fd6486e267f1c0d5d4b0c9bd09ac6c576a587aedc",
+            "url": "https://www.indyturk.com/node/559216/haber/6-lider-chp-genel-merkezinde-bulu%C5%9Ftu-g%C3%B6sterece%C4%9Fimiz-ortak-aday-t%C3%BCrkiye%E2%80%99nin-13",
+            "section": "2 Ekim haberinde ev sahibi ve toplantı sırası"
+          }
+        ],
+        "verification_job": "62610812",
+        "package_sha256": "13daa495af604e8c69c9eb4833b5a26bc0a1608071c354e5fba47572d423e815"
+      },
+      "saadet": {
+        "event": {
+          "id": "0411-saadet-six-leaders-2022-event",
+          "common_event_key": "six-leaders-2022-10-02-chp-second-round-meeting",
+          "event_at": "2022-10-02",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Altı liderin CHP Genel Merkezindeki ikinci tur ilk toplantısı",
+          "scope_context": "Altı siyasi parti liderinin 2 Ekim 2022 tarihinde CHP Genel Merkezindeki ikinci tur ilk toplantısı.",
+          "occurrence_basis": "2 Ekim 2022’de CHP’nin ev sahipliğinde yapılan ikinci turun ilk toplantısını 2 Ekim ortak açıklaması ve Independent Türkçe’nin tarihli haberi belgeliyor. Katılımcılar arasında Temel Karamollaoğlu, Gültekin Uysal ve Meral Akşener vardı."
+        },
+        "passages": [
+          {
+            "passage_id": "0411-six-leaders-2022-meeting-host",
+            "sha256": "b66726ba40ee965dfacdf44fd6486e267f1c0d5d4b0c9bd09ac6c576a587aedc",
+            "url": "https://www.indyturk.com/node/559216/haber/6-lider-chp-genel-merkezinde-bulu%C5%9Ftu-g%C3%B6sterece%C4%9Fimiz-ortak-aday-t%C3%BCrkiye%E2%80%99nin-13",
+            "section": "CHP ev sahipliğinde ikinci turun başlaması"
+          }
+        ],
+        "verification_job": "62612802",
+        "package_sha256": "e273528bd5104b6556ea60bb028ccc95d61ac7d3a7376907eaf7334d31f580c2"
+      },
+      "iyi": {
+        "event": {
+          "id": "0407-six-leaders-2022-event",
+          "common_event_key": "six-leaders-2022-10-02-chp-second-round-meeting",
+          "event_at": "2022-10-02",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Altı liderin CHP Genel Merkezindeki ikinci tur ilk toplantısı",
+          "scope_context": "Altı siyasi parti liderinin 2 Ekim 2022 tarihinde CHP Genel Merkezindeki ikinci tur ilk toplantısı.",
+          "occurrence_basis": "2 Ekim 2022’de CHP’nin ev sahipliğinde yapılan ikinci turun ilk toplantısını 2 Ekim ortak açıklaması ve Independent Türkçe’nin tarihli haberi belgeliyor. Katılımcılar arasında Temel Karamollaoğlu, Gültekin Uysal ve Meral Akşener vardı."
+        },
+        "passages": [
+          {
+            "passage_id": "0407-six-leaders-2022-opening",
+            "sha256": "b66726ba40ee965dfacdf44fd6486e267f1c0d5d4b0c9bd09ac6c576a587aedc",
+            "url": "https://www.indyturk.com/node/559216/haber/6-lider-chp-genel-merkezinde-bulu%C5%9Ftu-g%C3%B6sterece%C4%9Fimiz-ortak-aday-t%C3%BCrkiye%E2%80%99nin-13",
+            "section": "2 Ekim haberinde bildirilen fiilî başlangıç"
+          }
+        ],
+        "verification_job": "62611360",
+        "package_sha256": "f63197aab0d8acb54fb11d4477837f6e49c1c04d008165aeda445895abf7c0ff"
+      }
+    },
+    "common_source_sha256": [
+      "b66726ba40ee965dfacdf44fd6486e267f1c0d5d4b0c9bd09ac6c576a587aedc"
+    ],
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-24T19:33:47.173170+00:00",
+    "overlap_reason": "2 Ekim 2022’de CHP Genel Merkezindeki ikinci tur ilk buluşma üç çalışma kaydında aynı. Independent Türkçe ve ANKA yayımının özgün baytları eşit. Parti açıklamalarında planlanan saat ile haberdeki başlama ve lider geliş saatleri ayrı. Katılımcı sıfatları, ortak grup kararı ve sonraki politika uygulaması ayrı kayıtlar.",
+    "closure_refs": []
+  }
+]

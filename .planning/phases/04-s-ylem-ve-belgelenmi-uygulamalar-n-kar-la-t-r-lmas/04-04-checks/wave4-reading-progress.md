@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
 | EMEP | 81 | 77 | 62611329 |
-| Saadet Partisi | 33 | 29 | 62603695 / 62603699 |
+| Saadet Partisi | 34 | 30 | 62612802 / 62612810 |
 | Demokrat Parti | 80 | 51 | 62610812 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -536,3 +536,7 @@ Altı liderin 2 Ekim 2022 toplantısı Demokrat Parti ve İYİ Parti çalışma 
 On birinci birleşik önizleme, 62608562 tarafından oluşturulan dosyalar üzerinde 62614469 ile doğrulandı. İlk denetim dalında 10/2881’in DEM katkısı için 11. prova numarası eksikti. SQLite kaydı önceki üç katkıyı doğruladı. Düzeltilen denetim aynı dosyalarla 0:0 tamamlandı. Bağımsız denetimde 530 olay, 365 ilişki, 559 olay başvurusu, 25 ortak olay kararı ve 196 eşleşmemiş aday doğrulandı. 7527 kabulü tek olay. TİP ve EMEP ilişkileri ve dört kişinin kesin cetveldeki oyları ayrı. Kapsam kapanışı sıfır. [İlk deneme](wave4-merge-rehearsal-11-62608562-slurm.log) [Doğrulama](wave4-merge-rehearsal-11-62614469-validation.log) [Bağımsız denetim](wave4-merge-rehearsal-11-62614469-independent.json)
 
 TİP Parti Açıklamaları dizininde 49–56 arası sekiz gövdenin 15.463 karakteri okundu. Son toplam 56/190. 7399 sayılı kararın yayım günü ve yürürlüğü Resmî Gazete görselinden, ilaç fiyatlandırmasına uygulanması TİTCK raporundan okundu. 2/1264, 7456’nın 11. maddesindeki borç kullanım kuralı ve 14 Temmuz kabulü TBMM kaynaklarında. Akbelen 4/13 çağrısı, 8/14 ön görüşmesi ve iznin fiilî durumu ayrı. [Yedinci okuma dilimi](../04-05-checks/tip-publication-catalog/party-statements-07/reading.json)
+
+Saadet’in 2 Ekim 2022 toplantısı karşılaştırması iki okuyucu görünümünde ve bağımsız veri denetiminde doğrulandı. Saadet yayımındaki 21 Ağustos planı, önceki Saadet ev sahipliği ve sonraki CHP ev sahipliği ayrı. Haberde Karamollaoğlu’nun 13.59 varışı, açıklamada 14.00 planı ve haberde 14.11 başlangıcı var. Saadet çalışma çifti 34 olay ve 30 ilişki. 277/649 özgün parti gövdesi okundu. [Saadet önizleme makbuzu](../04-11-checks/six-leaders-2022-62612802.json) [Bağımsız denetim](../04-11-checks/six-leaders-2022-62612810-independent.log)
+
+On ikinci birleşim donduruldu. Dokuz çalışma çiftinde 558 olay, 369 ilişki, kaynak bağlı 279 kapsam hücresi ve arama girişimi bağlı 280 hücre var. 5.490 hücre açık. İki girdi sırası aynı 534 olay ve 369 ilişkiyi üretti. Ankara çalıştayı ve 2 Ekim liderler toplantısının ortak kimlikleri, her dosyadaki aynı özgün haber baytı ve olay alanlarıyla denetlendi. Önizleme 62615150 işinde. [Ortak olay okuması](wave4-ankara-and-six-leaders-overlap-reading.json) [Dondurulan girdiler](wave4-merge-rehearsal-12.json)
