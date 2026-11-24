@@ -10,11 +10,11 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 21 | 20 | 62486040 |
-| DEM Parti | 60 | 9 | 62516584 |
+| DEM Parti | 64 | 9 | 62530965 |
 | İYİ Parti | 19 | 12 | 62503516 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 64 | 7 | 62503426 |
-| EMEP | 64 | 66 | 62496822 |
+| EMEP | 65 | 67 | 62530566 |
 | Saadet Partisi | 23 | 19 | 62498024 |
 | Demokrat Parti | 31 | 28 | 62499618 |
 
@@ -253,3 +253,10 @@ Bağlar /222→258 tarife zincirindeki iki dayanak yazısı ve /202→206 ile /2
 Beşinci yalıtılmış önizlemede 445 parti olay satırından 427 olay satırı ve 312 ilişki üretildi. On ortak olay için karar var, on iki aday açık. İklim Kanunu’nun tümüne verilen sekiz kişisel oy pasajı ve 10/2881’deki Ekmen ile Öztürk katkıları ayrı. Verisi on SQLite ve JSON tablosuyla, iki HTML görünümü 624 ilişki ve 286 açık aday bağlantısıyla doğrulandı. İlk HTML işi 104. Birleşimin okunabilir kopyasındaki Windows-1254 kodlama farkında durdu. Üç özgün TBMM dosyası aynı SHA ile doğrulandı ve türetilmiş okunabilir kopya kaynaktan yeniden üretildi. Yeniden çalıştırma ve bağımsız denetim geçti. Kapsam kapanışı sıfır. [Birleşik önizleme makbuzu](wave4-merge-rehearsal-05-62518055.json) [Kodlama düzeltmesi](wave4-merge-rehearsal-05-readable-recovery.json)
 
 DEM Parti paketindeki 10/2880 ve 10/2883 ayrı Sivas gündem işlemleri iki HTML görünümünde doğrulandı. İlk işlemdeki ikinci oylama ve ikinci işlemde DEM adına konuşma kendi tutanak pasajlarına bağlı. İki esas sicili erişimde Gündemde. [Makbuz](../04-06-checks/dem-sivas-two-62516584.json)
+
+
+DEM Parti’nin 2/2927 iklim teklifindeki 2, 3 ve 4. maddelere ilişkin üç ayrı çıkarma önergesi ve başkan kararı doğrulandı. Ardından 2 Temmuz’daki 10/2882 gündemine DEM Grubu adına Bülent Altın’ın katkısı eklendi. Ön görüşme talebini İYİ Parti Grubu getirdi. Altın’ın önerdiği aşılama politikasına ilişkin konuşma şahsi oya veya gündem desteğine çevrilmedi. [İklim makbuzu](../04-06-checks/dem-iklim-m2-4-62520605.json) [10/2882 makbuzu](../04-06-checks/dem-sap-2882-62530965.json)
+
+EMEP’in göç politikasıyla ilgili 7/2134 yazılı sorusu ve 2022 parti açıklaması izlenebilir pasajlarıyla iki görünümde doğrulandı. Arşivdeki metin tanıma ve parti yayını atfı için ilk iki doğrulama düzeltilerek yeniden çalıştırıldı. [EMEP makbuzu](../04-10-checks/migration-2134-sourcekind-62530566-receipt.json)
+
+Saadet’in arşivinde 595 ve 592 numaralı iki gövde okundu. Toplam 96/649, 553 gövde açık. Ocaktaki iki görüşme 25 olay ve 21 ilişki içeren aday pakette ayrı işlendi. İlk önizleme girdi ve kaynak denetimlerini geçti. Son kart denetiminde sonuç cümlesi, kartın gösterdiği kanıt cümlesiyle eşleştirildi. Aynı paketle yeniden doğrulama işi 62541273. [017. okuma](../04-11-checks/party-news-017-reading.json) [Ocak kaynak okuması](../04-11-checks/january-visits-source-reading.md)

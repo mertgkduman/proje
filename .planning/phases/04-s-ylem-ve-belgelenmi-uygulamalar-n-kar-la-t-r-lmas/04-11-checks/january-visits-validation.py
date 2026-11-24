@@ -46,7 +46,7 @@ report = (folder / 'index.html').read_text()
 
 for view in ('party', 'comparison'):
     for label, terms in (
-        ('dem', ('Mahmut Arıkan', 'Tuncer Bakırhan', 'ortak basın açıklaması', 'rapor yayımlaması açık')),
+        ('dem', ('Mahmut Arıkan', 'Tuncer Bakırhan', 'görüşmeden sonra basına açıklama yaptı', 'rapor yayımlaması açık')),
         ('iyi', ('Müsavat Dervişoğlu', 'nezaket ziyareti', 'bildirilen haftadan önce')),
     ):
         anchor = f'{view}-practice-{stem}-{label}-relation'
