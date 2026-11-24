@@ -1,0 +1,57 @@
+import datetime,hashlib,json
+from pathlib import Path
+from arsiv import html_source_text
+from uygulamalar import practice_review_package_targets,validate_practice_source_review,validate_practices
+c=Path(__file__).resolve().parent;root=c.parents[3];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();enc=lambda x:json.dumps(x,ensure_ascii=False);q=lambda x:'0407-akbelen-2023-'+x
+base=root/'data/practices/04-iyi.json';rp=root/'data/practices/04-iyi-review.json';assert sha(base)=='f63197aab0d8acb54fb11d4477837f6e49c1c04d008165aeda445895abf7c0ff' and sha(rp)=='e7a920753b3381200d79c8f39851f6e197ee816fe114b5032761f81fe2535237'
+pkg,review=json.loads(base.read_text()),json.loads(rp.read_text());cap=json.loads((c/'akbelen-iyi-capture.json').read_text());when=datetime.datetime.now(datetime.timezone.utc).isoformat();se='practice-832faac2550eedf61d8325816cb4a7cd7e4dd6a6698243200c6abaa222f67af1';ss='practice-8308e9a51db8ef7de1a43fefc1e4ffedda4ae84a05e9aa0f623064ca8f28f3dd'
+entries=[];records={k:[] for k in ('practice_scope_v2','practice_event','practice_event_evidence','practice_evidence_assessment','practice_contribution','practice_actor_period','practice_candidate','practice_scope_source','practice_attempt_v2','practice_statement','practice_relation')}
+def add(category,**v):entries.append(dict(kind=category,values=v))
+for sid,lane in [(se,'event'),(ss,'statement')]:records['practice_scope_v2'].append(dict(id=sid,party_id='iyi',topic_id='orman-su-yonetimi',taxonomy_version=4,period_start='2017-10-25',cutoff_at='2026-11-10T14:38:46.154751+00:00',research_kind=lane,boundary_reason='2023 Akbelen ön görüşmesi ve 7 Ağustos açıklaması incelendi. Kapsam araştırması sürüyor.'))
+anchors={
+ 'news-role':('İYİ Parti Sözcüsü Kürşad Zorlu, bugün, parti genel merkezinde, Başkanlık Divanı toplantısının ardından düzenlediği basın toplantısında gündemi değerlendirdi.','7 Ağustos parti sözcüsü sıfatı'),
+ 'news-subject':('TBMM Genel Kurulu’nun yarın, Akbelen gündemi ile toplanacağını anımsatan Zorlu','Akbelen gündemi'),
+ 'news-pledge':('yarın TBMM’de olacağız. Bu öneriyi destekleyeceğiz.','Katılım ve öneriyi destekleme açıklaması'),
+ 'floor-id':('(8/14) esas numaralı Genel Görüşme Önergesi’nin ön görüşmesine başlıyoruz.','8/14 ön görüşmesinin başlaması'),
+ 'floor-role':('İYİ Parti Grubu adına Muğla Milletvekili Metin Ergun.','Metin Ergun grup adına söz alıyor'),
+ 'floor-speech':('Bizim arayışımız ve itirazımız kaynaklarımızın birbirine zarar vermeden değerlendirilmesi ve gelecek nesillere korunarak aktarılmasıdır.','Ergun’un kaynakların korunmasına ilişkin konuşması'),
+ 'floor-result':('Genel görüşme açılması kabul edilmemiştir.','Genel görüşme açılmaması')}
+for key,kind in [('news','journalism'),('floor','official')]:
+ x=cap[key];rawpath=root/'data/practices/sources/iyi'/x['original_path'];assert sha(rawpath)==x['sha256'];raw=html_source_text(rawpath.read_bytes());doc=q(key);vid=doc+'-v1'
+ add('document',id=doc,party_id='iyi',title='Zorlu’nun 7 Ağustos parti basın toplantısı haberi' if key=='news' else 'TBMM 8 Ağustos 2023 18. Birleşim tutanağı',source_kind=kind)
+ add('document_version',id=vid,document_id=doc,original_url=x['url'],final_url=x['url'],document_date=x['date'],date_precision='day',date_unknown_reason=None,version_label='Özgün HTML',accessed_at=x['accessed_at'],verified_at=when,mime='text/html',sha256=x['sha256'],original_path=x['original_path'],readable_path=x['readable_path'])
+ add('archive_view',**x['view']);add('source_attribution',version_id=vid,publisher=x['publisher'],author=None,kind=kind,published_at=x['date'],date_precision='day',social_handle=None,public_url=x['url'],basis='7 Ağustos parti sözcüsünün ANKA haberinden aktarılan açıklaması' if key=='news' else 'TBMM 18. Birleşim tam tutanağı')
+ keys=[k for k in anchors if k.startswith(key+'-')]
+ for name in keys:
+  exact,section=anchors[name];assert exact in raw,name;add('passage',id=q(name),version_id=vid,exact=exact,prefix=None,suffix=None,article=None,section=section,pdf_page_index=None,printed_page=None)
+ scope=ss if key=='news' else se;records['practice_scope_source'].append(dict(scope_id=scope,version_id=vid,inspected_sections=enc([anchors[k][1] for k in keys]),inspected_at=when));records['practice_attempt_v2'].append(dict(id=q(key+'-reading'),scope_id=scope,attempted_at=when,query='Akbelen 7 Ağustos İYİ açıklaması 8 Ağustos 8/14 grup konuşması',url=x['url'],result='examined',reason='Önceki sözcü açıklaması, grup adına konuşma ve açmama sonucu ayrı aşamalar olarak okundu.',source_version_id=vid))
+def finding(fid,body,pids,quote=False,pair=None):
+ add('finding',id=fid,party_id='iyi',heading='Belgelenmiş uygulamalar',pair_id=pair or fid,text=body,provenance='quote' if quote else 'summary',epistemic_type='claim')
+ for pid in pids:add('finding_evidence',finding_id=fid,passage_id=pid,role='support');add('verification',finding_id=fid,passage_id=pid,checked_at=when,result='confirmed',reason='Önceki haber ve TBMM tutanağının ilgili bölümleri okundu.')
+ add('review',id='review-'+fid,kind='finding',subject_id=fid,reviewer_kind='agent',reviewed_at=when,result='reviewed',reason='Açıklama, grup konuşması ve Genel Kurul sonucu ayrı tutuldu.')
+np=[q('news-'+k) for k in ('role','subject','pledge')];ep=[q('floor-'+k) for k in ('id','role','speech','result')];target=q('target');quote=q('quote');explanation=q('explanation');finding_id=q('finding');statement=q('statement');event=q('event');relation=q('relation');actor=q('ergun-actor');person=q('ergun-person');contribution=q('contribution')
+finding(target,'7 Ağustos 2023 günü İYİ Parti Sözcüsü Kürşad Zorlu, Akbelen gündemli Meclis toplantısına katılacaklarını ve öneriyi destekleyeceklerini söyledi.',np)
+finding(quote,anchors['news-pledge'][0],[q('news-pledge')],quote=True,pair=target)
+records['practice_statement'].append(dict(id=statement,party_id='iyi',topic_id='orman-su-yonetimi',taxonomy_version=4,summary_finding_id=target,quote_finding_id=quote,statement_at='2023-08-07',date_precision='day',version_id=q('news-v1'),period_basis='7 Ağustos 2023 tarihli ANKA kaynaklı parti sözcüsü basın toplantısı haberi.',uncertainty_reason='Parti açıklamasının kendi sitesindeki özgün nüshası bulunamadı. Haber aktarımı kullanıldı.',comparison_row_id='04-03-v3-0306-iyi-program-orman-su-yonetimi-row'))
+records['practice_event'].append(dict(id=event,common_event_key='tbmm-28-1-18-akbelen-8-14-on-gorusme',event_at='2023-08-08',date_precision='day',date_unknown_reason=None,title='Akbelen için genel görüşme önergesinin ön görüşmesi',scope_context='CHP Grubunun Akbelen Ormanı konusunda verdiği 8/14 esas numaralı genel görüşme önergesinin 8 Ağustos 2023 tarihli ön görüşmesi ve genel görüşme açılmaması.',occurrence_basis='TBMM 28. Dönem 1. Yasama Yılı 18. Birleşim tam tutanağı, 8/14 ön görüşmesini ve genel görüşme açılmasının kabul edilmediğini belgeliyor.'))
+for key,stage in [('id','initiative'),('role','action'),('speech','action'),('result','result')]:
+ pid=q('floor-'+key);records['practice_event_evidence'].append(dict(event_id=event,passage_id=pid,supported_point=anchors['floor-'+key][1],stage=stage,concrete_basis='TBMM 18. Birleşim tam tutanağı',limitation='Meclis sonucu bireysel oyu veya maden izninin iptalini göstermez.',epistemic_type='claim'));records['practice_evidence_assessment'].append(dict(event_id=event,passage_id=pid,stage=stage,basis_kind='document'))
+add('person',id=person,name='Metin Ergun');add('actor',id=actor,kind='authorized_representative',party_id='iyi',person_id=person,authorization_passage_id=q('floor-role'))
+finding(finding_id,'8 Ağustos 2023 günü Muğla Milletvekili Metin Ergun, 8/14 ön görüşmesinde İYİ Parti Grubu adına konuştu. Kaynakların zarar vermeden değerlendirilmesini ve gelecek nesiller için korunmasını savundu.',ep)
+records['practice_contribution'].append(dict(id=contribution,event_id=event,party_id='iyi',actor_id=actor,contribution_kind='task',finding_id=finding_id,authority_passage_id=q('floor-role'),membership_passage_id=None,responsibility_limit='Ergun’un İYİ Grubu adına yaptığı konuşma. Bireysel veya bütün grup üyelerinin oyları çıkarılmaz.'))
+records['practice_actor_period'].append(dict(contribution_id=contribution,valid_from='2023-08-08',valid_to='2023-08-08',identity_passage_id=q('floor-role')))
+finding(explanation,'İYİ Parti sözcüsü 7 Ağustos’ta toplantıya katılacaklarını ve öneriyi destekleyeceklerini söyledi. Ertesi gün Metin Ergun ön görüşmede İYİ Grubu adına konuştu. TBMM genel görüşme açılmasını kabul etmedi. Tutanaktaki bu pasajlar her vekilin oyunu veya maden izninin iptalini göstermiyor.',np+ep)
+records['practice_relation'].append(dict(id=relation,statement_id=statement,event_id=event,party_id='iyi',topic_id='orman-su-yonetimi',scope_id=se,comparability_reason='Önceki parti açıklaması aynı Akbelen toplantısına katılım ve öneriye destek hakkındadır. Ergun aynı ön görüşmede grup adına konuştu.',target_finding_id=target,result_finding_id=None,explanation_finding_id=explanation,temporal_context='7 Ağustos 2023 sözcü açıklaması ve 8 Ağustos 2023 ön görüşmesi.',authority_context='7 Ağustos açıklaması parti sözcüsüne atfedilir. 8 Ağustos’ta başkan Ergun’a İYİ Grubu adına söz verdi.',uncertainty_reason='Tek tek milletvekillerinin oyları ve maden izninin durumu bu karşılaştırmada saptanmadı.'))
+records['practice_candidate'].append(dict(id=q('candidate'),scope_id=se,event_id=event,relation_id=relation,state='eligible',reason='Aynı ön görüşmeye katılım açıklaması grup adına yapılan konuşmayla dar biçimde karşılaştırılır.',passage_ids=enc(ep)))
+pkg['entries']+=entries
+for k,v in records.items():pkg['practice_records'].setdefault(k,[]).extend(v)
+snap=Path('/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0407-six-leaders-2022-iyi-62611360/releases/c644391c1eef424cba656fdfb59f0bbf/records.json');data=json.loads(snap.read_text())
+for e in entries:data.setdefault(e['kind'],[]).append(e['values'])
+for k,v in records.items():data.setdefault(k,[]).extend(v)
+validate_practices(data);print('SEMANTIC_PASS',flush=True)
+newp=[e['values']['id'] for e in entries if e['kind']=='passage'];targets=practice_review_package_targets(data,records,newp,'iyi');allp={x['id']:x for x in data['passage']};old={(x['subject_kind'],x['subject_id']) for x in review['practice_source_review']}
+for (kind,ident),(refs,owners) in targets.items():
+ assert (kind,ident) not in old;refs=sorted(refs);review['practice_source_review'].append(dict(subject_kind=kind,subject_id=ident,reviewer_kind='agent',reviewed_at=when,source_version_ids=enc(sorted({allp[x]['version_id'] for x in refs})),passage_ids=enc(refs),inspected_sections=enc(sorted({allp[x]['section'] for x in refs})),supported_claim='Akbelen açıklaması ve 8/14 ön görüşmesi '+kind+' '+ident,limitations='Bireysel oy ve maden izninin iptali bu kanıtlardan çıkarılmaz.',result='reviewed',reason='Parti sözcüsü açıklaması haberden, ön görüşme ve sonuç tutanaktan okundu.'))
+validate_practice_source_review(data,[x for x in review['practice_source_review'] if (x['subject_kind'],x['subject_id']) in targets],target_keys=targets,party_id='iyi');review['source_review_refs']=[dict(subject_kind=x['subject_kind'],subject_id=x['subject_id']) for x in review['practice_source_review']];pkg['source_review_refs']=review['source_review_refs'];print('SOURCE_REVIEW_PASS',len(targets),flush=True)
+for name,obj in [('akbelen-iyi-draft.json',pkg),('akbelen-iyi-review-draft.json',review)]:
+ f=c/name;f.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n');print(name,sha(f),flush=True)
