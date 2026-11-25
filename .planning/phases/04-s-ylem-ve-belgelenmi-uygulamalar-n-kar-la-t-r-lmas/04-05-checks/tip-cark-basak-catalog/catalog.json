@@ -33,8 +33,11 @@
     {
       "issue": 3,
       "url": "https://tip.org.tr/yayinlar/cark-basak-dergi/3",
-      "reading_receipts": [],
-      "state": "listing_only"
+      "reading_receipts": [
+        "issue-03/reading-01.json",
+        "issue-03/reading-02.json"
+      ],
+      "state": "body_read"
     },
     {
       "issue": 4,
@@ -206,5 +209,6 @@
     }
   ],
   "boundary": "Resmî sayfa 1–29, 41 ve 42 bağlantılarını listeledi. 30–40 aralığı listede görünmüyor. Erişilebilirlik ve yayın tarihi ayrıca araştırılacak.",
-  "closure_refs": []
+  "closure_refs": [],
+  "number_gap_receipt": "listing-gap-30-40/access.json"
 }
