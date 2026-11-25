@@ -6,7 +6,7 @@ current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılmas
 current_plan: 4
 status: executing
 stopped_at: Wave 4 source research and isolated previews in progress
-last_updated: "2026-11-25T19:11:51Z"
+last_updated: "2026-11-25T20:18:18Z"
 last_activity: 2026-11-25
 last_activity_desc: Phase 04 wave 4 research and package verification in progress
 state_head: 9ad927100a7fddb2df27731dbac0f4b43fcdb14a
@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-25T19:11:51Z
-Stopped at: Birleşik prova 16 (62697713) ve TİP 2018 Meclis temsili, Gazi Cemevi ve 2019 seçim yeterliliği (62697596) bağımsız doğrulandı. TİP çalışma çifti 49 olay ve 46 ilişkiye çıktı.
+Last session: 2026-11-25T20:18:18Z
+Stopped at: 16. birleşik prova ve 49/46 TİP paketi bağımsız doğrulandı. 17. birleşik prova (62701339) ve Damal, YSK yeterliliği, Özsüt adayı (62701886) doğrulamada. ÇarkBaşak sayı 1–6 okundu.
 Resume file: None
