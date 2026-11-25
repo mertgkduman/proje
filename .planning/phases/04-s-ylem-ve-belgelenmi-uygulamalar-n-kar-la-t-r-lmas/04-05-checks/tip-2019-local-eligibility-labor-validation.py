@@ -51,7 +51,7 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
 markers = {
     f"practice-{stem}-damal-relation": ("Şubat", "31 Mart", "75 oy", "bağımsız"),
     f"practice-{stem}-elig21-relation": ("30 Haziran", "26 Ocak", "17 parti", "TİP listede yok"),
-    f"practice-{stem}-elig22-relation": ("Ekim 2019", "12 Ocak 2022", "24 parti", "20. sıra"),
+    f"practice-{stem}-elig22-relation": ("14–15 Eylül", "Ekim 2019", "12 Ocak 2022", "24 parti", "20. sıra"),
     f"unmatched-{stem}-ozsut-unmatched": ("Özsüt", "17 Temmuz", "kısmi ödeme", "Ağustos"),
 }
 for anchor, phrases in markers.items():
