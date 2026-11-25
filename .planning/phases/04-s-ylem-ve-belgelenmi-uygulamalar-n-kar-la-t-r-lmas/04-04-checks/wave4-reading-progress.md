@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 42 | 40 | 62628991 |
+| TİP | 46 | 43 | 62694339 |
 | DEM Parti | 88 | 13 | 62630225 / 62630229 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -620,3 +620,5 @@ Birleşik prova 15, 62629055 ile tamamlandı ve bağımsız denetimi geçti. 554
 Saadet'in 18 Ocak iki ay içinde seçim çağrısı, 10 Mart yenileme ve gün belirleme kararları ile 14 Mayıs oylaması karşılaştırması 62630191 ve 62630197 ile doğrulandı. Tarihler ve yetkiler 14 Mayıs seçim sonucuna ilişkin TİP kaydından ayrı.
 
 18 Mayıs 2020 ortak bildirisinin tarihsel Yeşil Sol, DBP ve EMEP imzaları üç parti paketinde yalıtılmış denetimden geçti. İmzacı partiler ile kaynak yayıncıları ayrı. DBP ve EMEP'in iki yeni kaynak ipucundaki şablon konu açıklaması düzeltilerek kapılar yeniden çalıştırıldı. Bildirinin yayımlanması ile 15 Mayıs tarihli belediye işlemleri ayrı araştırılıyor. [Tarihsel Yeşil Sol](../04-06-checks/dem-yesilsol-2020-62630225-independent.json) [DBP](../04-09-checks/joint-2020-dbp-v2-62635637-independent.log) [EMEP](../04-10-checks/joint-2020-emep-v2-62639064-independent.log)
+
+TİP’in 46 olay ve 43 ilişkili çalışma çifti 62694339 ile bağımsız doğrulandı. Berberoğlu dosyasında iki AYM kararı, yerel işlemler ve 11 Şubat Genel Kurul bildirimi ayrı. 2021 asgari ücret açıklamasındaki tutarlar ve 23 Haziran 2019 YSK oy dağılımı kendi kurum belgelerine dayanıyor. 18 Mayıs ortak bildirisi için TİP yayımındaki imza, bağımsız BirGün haberiyle birlikte araştırma çiftine eklendi. [Bağımsız doğrulama](../04-05-checks/tip-2020-2021-court-wage-election-62694339-independent.log)
