@@ -642,3 +642,11 @@ Birleşik prova 17, 62701339 ile tamamlandı ve bağımsız denetimi geçti. 565
 Saadet'in 376 ve 375 numaralı yayınlarının arşivli API gövdeleri okundu. Karamollaoğlu’nun asgari ücret hedefi ile Ekinci’nin tarımsal girdi ve vergi önerileri ayrı. Okunan toplam 291/649, açık gövde 358. Gerçekleşme desteği bu dilimde kurulmadı. [Saadet okuma makbuzu](../04-11-checks/party-news-204-reading.json)
 
 TİP’in 53 olay ve 49 ilişkili çalışma çifti 62702313 ile bağımsız doğrulandı. Damal’da Şubat desteği, YSK bağımsız aday statüsü ve Anadolu Ajansı verili 75 oy sonucu ayrı. TİP’in 30 Haziran 2020 beyanı, 26 Ocak 2021 YSK listesinde yer almaması ve 12 Ocak 2022 listesinde 20. sırada yer alması kendi kaynaklarıyla doğrulandı. Özsüt desteği eşleşmemiş bir olay, ödeme sözü ve haberleştirilen kısmi ödeme ayrı aşamalar. İlçe sonuç tutanağı, partiye özgü YSK inceleme evrakı ve Özsüt son ödeme kapsamı açık. [Bağımsız doğrulama](../04-05-checks/tip-2019-local-eligibility-labor-62702313-independent.log)
+
+ÇarkBaşak sayı 1–7, dizinde görünen 31 sayının 174 özgün PDF sayfasıyla okundu. Kasım 2019 sayısında metin katmanı yetersiz olduğundan 20 sayfanın tamamı görsel okundu. Kasım deprem eğitimi, Öğrenci Bürosu kararı ve 11–12 Ekim Kıbrıs görüşmeleri için muhatap veya kurum belgeleri ayrıca izleniyor. [ÇarkBaşak kataloğu](../04-05-checks/tip-cark-basak-catalog/DEVAM.md)
+
+EMEP API kaynak dilimi 298, özgün sayfa 25 içindeki 3263, 3260, 3254, 3252 ve 3248 numaralı beş gövdeyi kapsıyor. İstanbul yeniden sayım çağrısı ve mazbata talebi parti sözü. Denizli’deki halk meclisi aday hedefi. Sırada 3244 var. [EMEP makbuzu](../04-10-checks/party-api-298-source-reading.json)
+
+Saadet’in 374 numaralı yayını, refah payı ve asgari ücret hedefini parti iktidarı koşuluyla içeriyor. Kaynak sayacı 292/649, açık gövde 357. [Saadet makbuzu](../04-11-checks/party-news-205-reading.json)
+
+TBMM 2/3961, 295 sıra sayılı raporun basılı 27–30. sayfalarındaki DEM muhalefet şerhi görsel okundu. Metin ve üç basılı milletvekili adı kaynakta. Kişisel komisyon oyu ile kesim sonrası yürürlük ayrı araştırılıyor. [DEM makbuzu](../04-06-checks/2026-3961-dem-muhalefet-serhi-gorsel-okuma.md)
