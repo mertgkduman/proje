@@ -10,12 +10,12 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
 | TİP | 42 | 40 | 62628991 |
-| DEM Parti | 87 | 13 | 62625356 / 62625364 |
+| DEM Parti | 88 | 13 | 62630225 / 62630229 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
-| DBP | 67 | 7 | 62625217 |
-| EMEP | 83 | 79 | 62621978 |
-| Saadet Partisi | 37 | 33 | 62621740 / 62621747 |
+| DBP | 68 | 7 | 62635637 |
+| EMEP | 84 | 79 | 62639064 |
+| Saadet Partisi | 38 | 34 | 62630191 / 62630197 |
 | Demokrat Parti | 81 | 52 | 62618726 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -614,3 +614,9 @@ Birleşik prova 15, 62629055 ile başladı. 582 girdi olayı ve 387 ilişki, iki
 2021 okul açılışı, Montrö ve Paris Anlaşması için TİP’in 42 olay ve 40 ilişkilik adayı 62628991 ile çalıştırıldı. Önceki doğrulanmış 39/37 çifti çalışma girdisi olarak duruyor. [Aday denetimi](../04-05-checks/tip-school-montro-paris-validation.py)
 
 TİP’in okul, Montrö ve Paris karşılaştırmaları 62628991 ile bağımsız doğrulandı ve araştırma çifti 42 olay ile 40 ilişkiye çıktı. 10 Ağustos okul çağrısı, 19 Ağustos plan ve 6 Eylül açılış ayrı. Montrö’de savaşan taraflara kısıt ve diğer ülkelere telkin ayrı. Paris’te 6 Ekim uygun bulma, 11 Ekim depo, 13 Ekim bildirim ve 10 Kasım yürürlük ayrı tarihli. [Bağımsız doğrulama](../04-05-checks/tip-school-montro-paris-62628991-independent.log)
+
+Birleşik prova 15, 62629055 ile tamamlandı ve bağımsız denetimi geçti. 554 olay, 387 ilişki, 205 etkin eşleşmemiş aday, 590 olay eş adı, 5.782 inceleme kökeni ve 616 ortak kaynak yetkisi doğrulandı. 774 ilişki ve 410 eşleşmemiş aday bağlantısı iki görünümde bulundu. Haliç iki ilişkiyi ve tarihsel Yeşil Sol ile DBP'nin eşleşmemiş katılımlarını aynı olay altında koruyor. Kapsam hücreleri açık. [Bağımsız makbuz](wave4-merge-rehearsal-15-62629055-independent.json)
+
+Saadet'in 18 Ocak iki ay içinde seçim çağrısı, 10 Mart yenileme ve gün belirleme kararları ile 14 Mayıs oylaması karşılaştırması 62630191 ve 62630197 ile doğrulandı. Tarihler ve yetkiler 14 Mayıs seçim sonucuna ilişkin TİP kaydından ayrı.
+
+18 Mayıs 2020 ortak bildirisinin tarihsel Yeşil Sol, DBP ve EMEP imzaları üç parti paketinde yalıtılmış denetimden geçti. İmzacı partiler ile kaynak yayıncıları ayrı. DBP ve EMEP'in iki yeni kaynak ipucundaki şablon konu açıklaması düzeltilerek kapılar yeniden çalıştırıldı. Bildirinin yayımlanması ile 15 Mayıs tarihli belediye işlemleri ayrı araştırılıyor. [Tarihsel Yeşil Sol](../04-06-checks/dem-yesilsol-2020-62630225-independent.json) [DBP](../04-09-checks/joint-2020-dbp-v2-62635637-independent.log) [EMEP](../04-10-checks/joint-2020-emep-v2-62639064-independent.log)
