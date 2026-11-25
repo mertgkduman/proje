@@ -1,0 +1,50 @@
+{
+  "tranche_id": "saadet-party-news-205",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-25T21:06:55.860885+00:00",
+  "reads": [
+    {
+      "post_id": 374,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-ulkenin-uc-harfli-sorunu-akpdir-mhpdir-maalesef-rtedir",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-ulkenin-uc-harfli-sorunu-akpdir-mhpdir-maalesef-rtedir",
+      "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-ulkenin-uc-harfli-sorunu-akpdir-mhpdir-maalesef-rtedir",
+      "http_status": 200,
+      "published_at": "2022-12-06T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-25T20:44:50.348287+00:00",
+      "original_path": "party-news-bodies/374.json",
+      "original_bytes": 23327,
+      "sha256": "e4e93dfd28c50fc643763b0ae132ce95f8ba83f2dd221f0880d3edecd07dc01b",
+      "normalized_body_sha256": "8f83197248cf0cbd07587eaaff5a92270a0be578b689a0754779579cc1e8ac8e",
+      "source_section_range": [
+        0,
+        18038
+      ],
+      "state": "examined",
+      "reading": "Temel Karamollaoğlu ekonomik eleştiriler sunuyor ve parti iktidarı için emekli aylığı, asgari ücret, adalet ve şiddetle mücadele hedefleri açıklıyor.",
+      "selected_passages": [
+        {
+          "start": 15805,
+          "end": 15966,
+          "exact": "Emeklilerimizin maaşlarına her yıl ‘Refah Payı’ adı altında, en az o yılın büyüme oranı kadar ilave zam yapılarak, ekonomik büyümeden pay almaları sağlanacaktır."
+        },
+        {
+          "start": 17536,
+          "end": 17606,
+          "exact": "Asgari ücrette açlık sınırı değil ‘İnsanca Yaşam’ ücreti hedeflenecek."
+        }
+      ],
+      "point": "2023 parti vizyonunda emekli aylığı ve ücret hedefleri.",
+      "statement": "Parti iktidarında emekli aylıklarına en az büyüme oranında yıllık refah payı eklenmesini ve asgari ücrette insanca yaşam ücretini hedefliyor.",
+      "concrete_evidence": "Parti yayımı 7 Aralık 2022 yerel günlü haftalık basın toplantısı metnini aktarıyor. Metin hedefleri gelecekteki iktidar bağlamına yerleştiriyor.",
+      "open_provenance": "Bunlar siyasi hedeflerdir. Daha sonraki ücret, büyüme ve parti yetkisi ayrı kaynaklarla karşılaştırılmadı. Metindeki bütçe görüşmesi olayı ve diğer ekonomik iddialar da bu gövdeden bağımsız doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 292,
+  "remaining_pre_cut_bodies": 357,
+  "closure_refs": [],
+  "source_token_observation": "Tam tekil gövdenin okuma çıktısı araç tarafından yaklaşık 5.172 token olarak raporlandı ve 12.000 token sınırının altında.",
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı indirme dosyasının ilk yazılma zamanıdır."
+}
