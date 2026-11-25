@@ -1,0 +1,78 @@
+{
+  "tranche_id": "saadet-party-news-204",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-25T20:26:38.029108+00:00",
+  "reads": [
+    {
+      "post_id": 376,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/ak-parti-iktidari-turkiye-ekonomisini-yonetemiyor",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=ak-parti-iktidari-turkiye-ekonomisini-yonetemiyor",
+      "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=ak-parti-iktidari-turkiye-ekonomisini-yonetemiyor",
+      "http_status": 200,
+      "published_at": "2022-12-28T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-25T20:16:52.596521+00:00",
+      "original_path": "party-news-bodies/376.json",
+      "original_bytes": 24720,
+      "sha256": "f2ffdf92c1e32e292c7446693d47c865e4296557dcbcce0e1cbfab5b9d2ba6c0",
+      "normalized_body_sha256": "3a19bf6ffa05580a2d6abce69189f52c81d8b6d33d2978dd2d42c582099b67ab",
+      "source_section_range": [
+        0,
+        20361
+      ],
+      "state": "examined",
+      "reading": "Genel Başkan Temel Karamollaoğlu 8.500 liranın yetersiz olduğunu ve asgari ücretin en kısa zamanda yoksulluk sınırına çıkarılmasını hedeflediklerini söylüyor. Altı liderin gelecek ayın beşinde toplanacağını da belirtiyor.",
+      "selected_passages": [
+        {
+          "start": 20066,
+          "end": 20184,
+          "exact": "6’lı Masa’nın çalışmaları devam ediyor, önümüzdeki ayın 5’inde, biraz geciken toplantımızı inşallah gerçekleştireceğiz"
+        }
+      ],
+      "point": "Asgari ücret, ekonomi ve altı lider toplantısı.",
+      "statement": "Genel Başkan Temel Karamollaoğlu 8.500 liranın yetersiz olduğunu ve asgari ücretin en kısa zamanda yoksulluk sınırına çıkarılmasını hedeflediklerini söylüyor. Altı liderin gelecek ayın beşinde toplanacağını da belirtiyor.",
+      "concrete_evidence": "Parti API yayımı 29 Aralık 2022 yerel günü gösteriyor. Konuşma beş yıllık hedef ve 5 Ocak için sonraki toplantı ifadesi içeriyor.",
+      "open_provenance": "Yoksulluk sınırı ve ücret değerleri açıklamadaki siyasi değerlendirmedir. Takip eden toplantının gerçekleşmesi ve ücret verileri bu gövdeyle bağımsız doğrulanmadı."
+    },
+    {
+      "post_id": 375,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/buyumenin-devam-etmesi-icin-uretim-sart",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=buyumenin-devam-etmesi-icin-uretim-sart",
+      "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=buyumenin-devam-etmesi-icin-uretim-sart",
+      "http_status": 200,
+      "published_at": "2022-12-14T04:56:48+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-25T20:16:53.284523+00:00",
+      "original_path": "party-news-bodies/375.json",
+      "original_bytes": 16756,
+      "sha256": "4ff7df2b1da8c0d9c8cbc5f8e793705691bf715ee1459f8ec56422696338bbfc",
+      "normalized_body_sha256": "f265e1828d2c7ddcfd772c054fe1b49c49502f1e5104116beb755e4e1e68c2b7",
+      "source_section_range": [
+        0,
+        13155
+      ],
+      "state": "examined",
+      "reading": "Kadın Kolları Genel Başkanı Nurgül Beytiye Ekinci üretimi ve tarımı güçlendirmeyi, tarımsal girdilere doğrudan destek ve vergi indirimi sağlamayı öneriyor.",
+      "selected_passages": [
+        {
+          "start": 10048,
+          "end": 10197,
+          "exact": "Gübre, mazot, ilaç, tohum, elektrik, yem, sulama ücreti gibi girdi maliyetlerini doğrudan destek ve vergi indirimi yoluyla makul düzeylere çekeceğiz."
+        }
+      ],
+      "point": "Yerli üretim ve tarımsal destek önerileri.",
+      "statement": "Kadın Kolları Genel Başkanı Nurgül Beytiye Ekinci üretimi ve tarımı güçlendirmeyi, tarımsal girdilere doğrudan destek ve vergi indirimi sağlamayı öneriyor.",
+      "concrete_evidence": "14 Aralık 2022 tarihli parti yayımı Yerli Malı Haftası basın toplantısı metninde Ekinci’nin parti adına önerilerini ve tarihsel sanayi iddialarını aktarıyor.",
+      "open_provenance": "Tarihsel fabrika sayıları ve CİMER’e atfedilen satış rakamları parti açıklamasıdır. Önerilerin fiilen uygulanması veya tarihsel iddialar burada bağımsız doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 291,
+  "remaining_pre_cut_bodies": 358,
+  "closure_refs": [],
+  "total_original_bytes": 41476,
+  "source_token_observation": "İki tam gövdenin okuma çıktısı araç tarafından yaklaşık 9.417 token olarak raporlandı. Her iki gövde birlikte 12.000 token sınırının altında.",
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı indirme dosyasının ilk yazılma zamanıdır."
+}
