@@ -2,7 +2,7 @@
 
 Kasım 2018, sayı 1, özgün PDF’nin 20 sayfası iki dilimde okundu. Ekim 2018 Temel Yönelim ve Hedefler metni örgüt üzerinden görüş bekleyen taslak. Türkiye Konferansı’ndaki onay, 21 Ekim kuruluş etkinliğinde dağıtım ve 26 Ekim Örgüt Bürosu kararları ayrı kayıtlar. İlk cilt, 7 Kasım 2017 sicil tarihini yeniden tarihlemiyor. Tarihli konferans tutanağı, dağıtılan iki metnin birebir sürümü, Kasım ayındaki fiilî halk toplantıları ve parti içi mekanizmaların sonraki işlemleri açık.
 
-Dizinde görünen 31 sayının her sayfa gövdesi sıraya alınır. Aralık 2018, sayı 2, bütün sayfalarıyla okundu. Ocak 2019, sayı 3, bütün sayfalarıyla okundu. Şubat 2019, sayı 4, bütün sayfalarıyla okundu. Bir sonraki sayı 5. Ciltteki diğer materyal bağlantıları, sayının kendi yayım günü ve sonraki kaynaklar konu bazında izlenir. Dizin kapsamındaki 30–40 boşluğu ayrı sınanır.
+Dizinde görünen 31 sayının her sayfa gövdesi sıraya alınır. Aralık 2018, sayı 2, bütün sayfalarıyla okundu. Ocak 2019, sayı 3, bütün sayfalarıyla okundu. Şubat 2019, sayı 4, bütün sayfalarıyla okundu. Temmuz 2019, sayı 5, bütün sayfalarıyla okundu. Bir sonraki sayı 6. Ciltteki diğer materyal bağlantıları, sayının kendi yayım günü ve sonraki kaynaklar konu bazında izlenir. Dizin kapsamındaki 30–40 boşluğu ayrı sınanır.
 
 [Kasım 2018 ilk dilim](issue-01/reading-01.json) [İkinci dilim](issue-01/reading-02.json)
 
@@ -11,3 +11,5 @@ Aralık 2018 kaydı Kadın Bürosunun 10 Kasım toplantısını, İşçi Bürosu
 Ocak sayısı, TİP’in daha önce dağıttığını söylediği 2.800 TL asgari ücret bildirisini ve önceki işyeri birimi hedefi hakkında İşçi Bürosunun kendi değerlendirmesini kaydediyor. Bildirinin tarihli aslı ve uygulama kanıtları araştırılıyor. Dizin boşluğunda 30–40 numara adresleri ayrı ayrı denendi. [Sayı 3 okuması](issue-03/reading-01.json) [Adres denemeleri](listing-gap-30-40/access.json)
 
 Şubat sayısında 10 Mart İşçi Konferansı duyurusu, işyeri ve kent örgütlenmesine ilişkin taslaklar ve Damal için bağımsız Tolga Erezer desteği okundu. Konferansın toplantı tutanağı ve çalışma taslaklarının fiilî sonuçları açık. Dört sayfa diliminde metin ile grafik ve görsellerin ilgili özgün sayfaları ayrı kaydedildi. [Şubat okuması](issue-04/reading-01.json) [Dördüncü dilim](issue-04/reading-04.json)
+
+Temmuz sayısı, İşçi Konferansı’nda ilkeler metninin ve İşçi Meclisleri kararının kabul edildiğini, Damal’da bağımsız adaya verilen desteği ve İzmir kundura çalışmasının hazırlık aşamalarını aktarıyor. İşçi Konferansı’nın kesin tarihi ve açık toplantıların gerçekleşme kayıtları araştırılıyor. [Temmuz okuması](issue-05/reading-01.json) [İkinci dilim](issue-05/reading-02.json) [Üçüncü dilim](issue-05/reading-03.json)
