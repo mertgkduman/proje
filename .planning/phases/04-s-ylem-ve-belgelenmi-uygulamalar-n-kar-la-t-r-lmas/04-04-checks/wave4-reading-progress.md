@@ -634,3 +634,5 @@ TİP’in 49 olay ve 46 ilişkili çalışma çifti 62697596 ile bağımsız do�
 Birleşik prova 17, 62701339 ile 49/46 TİP çalışma çiftini içeriyor. Yapısal ön kontrolde 596 ham olay 565 birleşik olaya indi. 397 ilişki, 604 olay eş adı, 5.924 inceleme kökeni ve 655 kaynak yetkisi doğrulandı. Önceki ortak olay kararları aynı kaynaklarla taşındı. Önizleme denetimi sürüyor. [Dondurma makbuzu](wave4-merge-rehearsal-17.json)
 
 Damal bağımsız adaylığı, 26 Ocak 2021 ve 12 Ocak 2022 YSK listeleri ve Özsüt desteği için 53 olay ve 49 ilişkilik TİP adayı 62701886 ile çalıştırıldı. Özsüt olayı, önceki tarihli özgül açıklama açık olduğu için eşleşmemiş olarak bekliyor. Damal ilçe oyları Anadolu Ajansı verili Sözcü seçim panelinde, aday statüsü YSK listesinden. Kapsam kapanışı yok. [Kaynak okuması](../04-05-checks/2019-local-eligibility-and-labor-sources/reading.json) [Aday denetimi](../04-05-checks/tip-2019-local-eligibility-labor-validation.py)
+
+Komünist sayı 8'in rapor kapağı, 14–15 Eylül 2019 konferans tarihini gösteriyor. Bu özgün pasaj karşılaştırmaya doğrudan bağlandı. CPU kotasında bekleyen 62701886 geri çekilip yeni girdiyle 62702313 başlatıldı.
