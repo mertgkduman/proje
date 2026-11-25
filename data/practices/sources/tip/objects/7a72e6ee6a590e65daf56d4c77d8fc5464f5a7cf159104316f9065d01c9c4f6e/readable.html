@@ -1,0 +1,1625 @@
+<!doctype html><meta charset="utf-8"><title>Arşiv kopyası</title><pre>
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;tr-TR&quot;&gt;
+
+&lt;head&gt;
+    &lt;script&gt;
+    var searchInputPlaceholder_DDL = &#x27;Arama&#x27;;
+    var placeholder_DDL = &#x27;Seçiniz&#x27;;
+    &lt;/script&gt;
+
+    &lt;!--Css &amp; meta loaded--&gt;
+    
+
+&lt;!-- Required meta tags --&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta id=&quot;Viewport&quot; name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;T.C. Aile, Çalışma ve Sosyal Hizmetler Bakanlığı | Bilgi İşlem Daire Başkanlığı, İnternet Hizmetleri Şubesi Müdürlüğü &quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;Bilgi İşlem Dairesi Başkanlığı&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;İnternet Hizmetleri Şubesi Müdürlüğü&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;T.C. Çalışma ve Sosyal Güvenlik Bakanlığı, ÇSGB, Çalışma Genel Müdürlüğü, Asgari Ücret, Sendikalar, Çalışma Hayatı, İstihdam Danışma Kurulu, Ulusal İstihdam Stratejisi, İş Sağlığı ve Güvenliği, Sosyal Güvenlik, SGK, İŞKUR, İşçi, İşveren&quot;&gt;
+
+
+&lt;!-- Favicons --&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;/Contents/Images/favicon/apple-icon-57x57.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;60x60&quot; href=&quot;/Contents/Images/favicon/apple-icon-60x60.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;/Contents/Images/favicon/apple-icon-72x72.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;76x76&quot; href=&quot;/Contents/Images/favicon/apple-icon-76x76.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;/Contents/Images/favicon/apple-icon-114x114.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;120x120&quot; href=&quot;/Contents/Images/favicon/apple-icon-120x120.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;/Contents/Images/favicon/apple-icon-144x144.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;152x152&quot; href=&quot;/Contents/Images/favicon/apple-icon-152x152.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;/Contents/Images/favicon/apple-icon-180x180.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;192x192&quot; href=&quot;/Contents/Images/favicon/android-icon-192x192.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;/Contents/Images/favicon/favicon-32x32.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;96x96&quot; href=&quot;/Contents/Images/favicon/favicon-96x96.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;/Contents/Images/favicon/favicon-16x16.png&quot;&gt;
+&lt;link rel=&quot;manifest&quot; href=&quot;/Contents/Images/favicon/manifest.json&quot;&gt;
+&lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#ffffff&quot;&gt;
+&lt;meta name=&quot;msapplication-TileImage&quot; content=&quot;/Contents/Images/favicon/ms-icon-144x144.png&quot;&gt;
+&lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+
+
+
+&lt;!--Jquery--&gt;
+&lt;script src=&quot;/Assets/js/lib/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;!--Vendors JS --&gt;
+&lt;script src=&quot;/Assets/js/vendor.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--FancyBox JS --&gt;
+&lt;script src=&quot;/Contents/Vendors/FancyBox/3.5.7/jquery.fancybox.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Bootstrap-Table JS --&gt;
+&lt;script src=&quot;/Contents/Vendors/Bootstrap-Table/1.21.0/bootstrap-table.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/Contents/Vendors/Bootstrap-Table/1.21.0/extensions/filter-control/bootstrap-table-filter-control.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--Datatable JS--&gt;
+&lt;script src=&quot;/Contents/Vendors/DataTables/1.12.1/datatables.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Vendors CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/Assets/css/vendor.css&quot; /&gt;
+
+&lt;!--FancyBox Stylesheets --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/Contents/Vendors/FancyBox/3.5.7/jquery.fancybox.min.css&quot; /&gt;
+
+&lt;!-- Font Awesome&#x27;s CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/Contents/Fonts/Fontawesome/6.5.1/css/all.min.css&quot;&gt;
+&lt;link href=&quot;/Assets/css/lib/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;link href=&quot;/Assets/css/accessibility.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+
+&lt;!-- Customized CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/Assets/css/style.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/additions.css&quot; /&gt;
+
+&lt;!-- Bootstrap-Table CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/Contents/Vendors/Bootstrap-Table/1.19.0/bootstrap-table.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/Contents/Vendors/Bootstrap-Table/1.19.0/extensions/filter-control/bootstrap-table-filter-control.min.css&quot;&gt;
+
+&lt;link href=&quot;/Contents/Vendors/DataTables/1.12.1/datatables.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    //Cihaza göre ölçekleme yapar
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        var ww = ($(window).width() &lt; window.screen.width) ? $(window).width() : window.screen.width; //get proper width
+        var mw = 480; // min width of site
+        var ratio = ww / mw; //calculate ratio
+        if (ww &lt; mw) { //smaller than minimum size
+            $(&#x27;#Viewport&#x27;).attr(&#x27;content&#x27;, &#x27;initial-scale=&#x27; + ratio + &#x27;, maximum-scale=&#x27; + ratio + &#x27;, minimum-scale=&#x27; + ratio + &#x27;, user-scalable=yes, width=&#x27; + ww);
+        } else { //regular size
+            $(&#x27;#Viewport&#x27;).attr(&#x27;content&#x27;, &#x27;initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=&#x27; + ww);
+        }
+    }
+&lt;/script&gt;
+
+
+    
+
+    &lt;!-- HTML Meta Tags --&gt;
+    &lt;title&gt;T.C. Çalışma ve Sosyal Güvenlik Bakanlığı | Haberler&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot; /&gt;
+
+    &lt;!-- Facebook Meta Tags --&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;http://www.csgb.gov.tr&quot;&gt;
+    &lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;Bakan Sel&amp;#231;uk: “1 Ocak 2020&amp;#39;den İtibaren Ge&amp;#231;erli Olacak Asgari &amp;#220;cret, Br&amp;#252;t 2 Bin 943 Lira, Net 2 Bin 324 Lira 70 Kuruş Olarak Belirlendi”&quot;&gt;
+    &lt;meta property=&quot;og:description&quot; content=&quot;&quot;&gt;
+    &lt;meta property=&quot;og:image&quot; content=&quot;http://www.csgb.gov.tr/Media/4ibpy11r/bakan-sel&amp;#231;uk-1-ocak-2020-den-itibaren-ge&amp;#231;erli-olacak-asgari-&amp;#252;cret-br&amp;#252;t-2-bin-943-lira-net-2-bin-324-lira-70-kuruş-olarak-belirlendi.jpeg&quot;&gt;
+
+    &lt;!-- Twitter Meta Tags --&gt;
+    &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+    &lt;meta property=&quot;twitter:domain&quot; content=&quot;http://www.csgb.gov.tr&quot;&gt;
+    &lt;meta property=&quot;twitter:url&quot; content=&quot;http://www.csgb.gov.tr/cgm/haberler/26-12-2019/&quot;&gt;
+    &lt;meta name=&quot;twitter:title&quot; content=&quot;Bakan Sel&amp;#231;uk: “1 Ocak 2020&amp;#39;den İtibaren Ge&amp;#231;erli Olacak Asgari &amp;#220;cret, Br&amp;#252;t 2 Bin 943 Lira, Net 2 Bin 324 Lira 70 Kuruş Olarak Belirlendi”&quot;&gt;
+    &lt;meta name=&quot;twitter:description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;twitter:image&quot; content=&quot;http://www.csgb.gov.tr/Media/4ibpy11r/bakan-sel&amp;#231;uk-1-ocak-2020-den-itibaren-ge&amp;#231;erli-olacak-asgari-&amp;#252;cret-br&amp;#252;t-2-bin-943-lira-net-2-bin-324-lira-70-kuruş-olarak-belirlendi.jpeg&quot;&gt;
+
+
+
+    &lt;script src=&quot;/Assets/js/App/_app.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!--Start:Top Bar Header (_iner top bar ı kırmızı yapar)--&gt;
+    &lt;header class=&quot;header-sticky header-dark_inner&quot;&gt;
+
+        &lt;div class=&quot;container&quot; style=&quot;position: relative&quot;&gt;
+            &lt;!--Top bar detail--&gt;
+            
+
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark&quot;&gt;
+
+    &lt;!--Menu open button--&gt;
+    &lt;div class=&quot;nav-button&quot; title=&quot;Bakanlık Men&amp;#252;&quot;&gt;
+        &lt;!--Three line--&gt;
+        &lt;div id=&quot;nav-icon&quot;&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--Csgb logo--&gt;
+    &lt;div class=&quot;navbar-brand  mt-xs-3 ml-xs-1 sub-page&quot; title=&quot;T.C. ÇALIŞMA VE &lt;br/&gt; SOSYAL GÜVENLİK BAKANLIĞI&quot;&gt;
+            &lt;img onclick=&quot;location.href =&#x27;/&#x27;&quot; class=&quot;navbar-logo navbar-logo-light&quot; src=&quot;/Contents/Images/Logo/logo-text-red-with-white-background.svg&quot; alt=&quot;T.C. &amp;#199;ALIŞMA VE &amp;lt;br/&amp;gt; SOSYAL G&amp;#220;VENLİK BAKANLIĞI&quot;&gt;
+
+        &lt;!--GM ismi--&gt;
+
+        &lt;div onclick=&quot;location.href =&#x27;/cgm/&#x27;&quot; class=&quot;logo-text general-directorate&quot;&gt;
+
+                &lt;div class=&quot;logo-text-ministry&quot;&gt;
+                    &amp;#199;ALIŞMA GENEL M&amp;#220;D&amp;#220;RL&amp;#220;Ğ&amp;#220;
+                &lt;/div&gt;
+
+            &lt;small class=&quot;logo-text-department&quot;&gt;&lt;/small&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+    &lt;!--Top header bar right buttons--&gt;
+    &lt;div class=&quot;desktop&quot;&gt;
+        &lt;ul class=&quot;navbar-nav align-items-center mr-0&quot;&gt;
+            &lt;!--Item--&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; title=&quot;Genç İstihdam Hamlesi&quot; aria-label=&quot;Genç İstihdam Hamlesi&quot; href=&quot;https://guc.iskur.gov.tr/&quot; target=&quot;_blank&quot;&gt;
+                    &lt;span style=&quot;width:115px;&quot;&gt;
+                        &lt;img src=&quot;/Media/5qsdfuhy/guc_tv.png&quot;&gt;
+                    &lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;!--Item--&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; title=&quot;&amp;#199;alışma TV&quot; aria-label=&quot;&amp;#199;alışma TV&quot; href=&quot;https://calismatv.csgb.gov.tr&quot; target=&quot;_blank&quot;&gt;
+                    &lt;span class=&quot;icon&quot;&gt;
+                        &lt;img src=&quot;/Contents/Images/Special/tv_logo.png&quot;&gt;
+                    &lt;/span&gt;
+                    &lt;span class=&quot;text&quot; style=&quot;width: 70px; padding-top: 7px; height: 100%; display: flex; align-items: center; &quot;&gt;&amp;#199;alışma TV&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+
+            &lt;!--Item--&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; title=&quot;&amp;#199;alışma Hayatı İletişim Merkezi&quot; aria-label=&quot;&amp;#199;alışma Hayatı İletişim Merkezi&quot; href=&quot;http://www.alo170.gov.tr/&quot; target=&quot;_blank&quot;&gt;
+                    &lt;span class=&quot;icon&quot;&gt;
+                        &lt;img src=&quot;/Contents/Images/alo170-bw.svg&quot;&gt;
+                    &lt;/span&gt;
+                    &lt;span class=&quot;text&quot;&gt;&amp;#199;alışma Hayatı İletişim Merkezi&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;!--Item--&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; title=&quot;Sık&amp;#231;a Sorulan Sorular&quot; aria-label=&quot;Sıkça Sorulan Sorular&quot; href=&quot;/sikca-sorulan-sorular/&quot;&gt;
+                    &lt;span class=&quot;icon&quot;&gt;
+                        &lt;img src=&quot;/Contents/Images/faq-bw.svg&quot;&gt;
+                    &lt;/span&gt;
+                    &lt;span class=&quot;text&quot;&gt;Sık&amp;#231;a Sorulan Sorular&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;!--Item DDL--&gt;
+                &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown-Language&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Çoklu Dil Seçimi&quot; title=&quot;&amp;#199;oklu Dil Se&amp;#231;imi&quot;&gt;
+                        &lt;span class=&quot;icon-language&quot;&gt;&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+
+                        &lt;a href=&quot;/cgm/en/news/26-12-2019/&quot; class=&quot;dropdown-item &quot;&gt;English&lt;/a&gt;
+                        &lt;a href=&quot;/cgm/haberler/26-12-2019/&quot; class=&quot;dropdown-item &quot;&gt;Türkçe&lt;/a&gt;
+
+
+                        
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;!--Item  , Search(scss:_header.search)--&gt;
+            &lt;li class=&quot;nav-item&quot; style=&quot;min-width: 190px;&quot; id=&quot;main-search-nav-red&quot;&gt;
+
+                &lt;div class=&quot;container&quot; title=&quot;Arama&quot;&gt;
+&lt;form action=&quot;/cgm/haberler/26-12-2019/&quot; enctype=&quot;multipart/form-data&quot; method=&quot;post&quot;&gt;&lt;input name=&quot;__RequestVerificationToken&quot; type=&quot;hidden&quot; value=&quot;MrT4KlDYFtUUydCQHrESbcmZ9_v0Dd9PDox9ZqDoPnIBixAvDaiv7IaO-iY4ke-wvWVmIyplP9bRNaK3WQuwjXGKoXU1&quot; /&gt;&lt;input id=&quot;Request_PageNumber&quot; name=&quot;Request.PageNumber&quot; type=&quot;hidden&quot; value=&quot;1&quot; /&gt;&lt;input id=&quot;SearchTerm&quot; name=&quot;SearchTerm&quot; placeHolder=&quot;Arama&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;                        &lt;div class=&quot;search&quot;&gt;&lt;/div&gt;
+&lt;input name=&quot;ufprt&quot; type=&quot;hidden&quot; value=&quot;7961DAFCDCFFED1E75547BDBC33A27ECCFC9769DEC3C4197A66D06D1376F5B510AC1C4D1AFDB09184E0738A072BF4CF3E1BBE3F53E7451F70D42E8201A1CB3ED475174B98A150F2AEE26A1B7C134F9D7A048F0B7A55B6A7ECAAE3946BD07C379C9EA9B47A3F616EAD6182BF673E36589C5672033392B3E07DC28D152A1D74EBF79066A6B&quot; /&gt;&lt;/form&gt;
+                &lt;/div&gt;
+
+            &lt;/li&gt;
+
+
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;
+
+
+        &lt;/div&gt;
+
+    &lt;/header&gt;
+    &lt;!--End:Top Bar Header--&gt;
+    &lt;!--Menu--&gt;
+    
+
+
+&lt;script src=&quot;/Assets/js/App/Partials/Ministry/_navigation.js&quot;&gt;&lt;/script&gt;
+
+&lt;sction class=&quot;navigation&quot; id=&quot;scroll&quot;&gt;
+
+    &lt;ul id=&quot;onlyOne&quot; class=&quot;mt-md-12 mt-lg-12 mt-xl-12&quot; data-accordion-group&gt;
+                &lt;li data-accordion class=&quot;level-0&quot;&gt;
+
+                    &lt;!--Node:Adli Geçiş için menude yeşil yapıldı--&gt;
+                    &lt;div class=&quot;accordion-control &quot; data-control&gt;Genel M&amp;#252;d&amp;#252;rl&amp;#252;k&lt;/div&gt;
+
+                    &lt;ul data-content&gt;
+
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/genel-mudurluk/genel-mudur/&quot;  title=&quot;&quot;&gt;Genel M&amp;#252;d&amp;#252;r&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li data-accordion class=&quot;level-1&quot;&gt;
+                                    &lt;div class=&quot;accordion-control&quot; data-control&gt;Genel M&amp;#252;d&amp;#252;r Yardımcıları&lt;/div&gt;
+                                    &lt;ul data-content&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/genel-mudur-yardimcilari/emin-turker/&quot;  title=&quot;&quot;&gt;Emin T&amp;#220;RKER&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/genel-mudur-yardimcilari/suat-dede/&quot;  title=&quot;&quot;&gt;Suat DEDE&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/genel-mudur-yardimcilari/ziya-kursat-babayigit/&quot;  title=&quot;&quot;&gt;Ziya K&amp;#252;rşat BABAYİĞİT&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/genel-mudur-yardimcilari/selahattin-altun/&quot;  title=&quot;&quot;&gt;Selahattin ALTUN&lt;/a&gt;
+                                                &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li data-accordion class=&quot;level-1&quot;&gt;
+                                    &lt;div class=&quot;accordion-control&quot; data-control&gt;Daire Başkanları&lt;/div&gt;
+                                    &lt;ul data-content&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/calisma-hayatinda-donusum-daire-baskani/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma Hayatında D&amp;#246;n&amp;#252;ş&amp;#252;m Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/calisma-istatistikleri-daire-baskani/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma İstatistikleri Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/calisma-hayatinda-temel-haklar-daire-baskani-v/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma Hayatında Temel Haklar Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/istihdam-politikalari-daire-baskani/&quot;  title=&quot;&quot;&gt;İstihdam Politikaları Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/kamu-gorevlileri-daire-baskani/&quot;  title=&quot;&quot;&gt;Kamu G&amp;#246;revlileri Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/iletisim-ve-koordinasyon-daire-baskani/&quot;  title=&quot;&quot;&gt;İletişim ve Koordinasyon Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/mevzuat-daire-baskani-v/&quot;  title=&quot;&quot;&gt;Mevzuat Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/sendikalar-daire-baskani/&quot;  title=&quot;&quot;&gt;Sendikalar Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/toplu-is-iliskileri-daire-baskani/&quot;  title=&quot;&quot;&gt;Toplu İş İlişkileri Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/genel-mudurluk/daire-baskanlari/yonetim-hizmetleri-daire-baskani/&quot;  title=&quot;&quot;&gt;Y&amp;#246;netim Hizmetleri Daire Başkanı&lt;/a&gt;
+                                                &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/genel-mudurluk/tarihce/&quot;  title=&quot;&quot;&gt;Tarih&amp;#231;e&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/genel-mudurluk/misyon-ve-vizyonumuz/&quot;  title=&quot;&quot;&gt;Misyon ve Vizyonumuz&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/genel-mudurluk/gorevlerimiz/&quot;  title=&quot;&quot;&gt;G&amp;#246;revlerimiz&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/genel-mudurluk/teskilat-semasi/&quot;  title=&quot;&quot;&gt;Teşkilat Şeması&lt;/a&gt;
+                                &lt;/li&gt;
+
+                    &lt;/ul&gt;
+
+                &lt;/li&gt;
+&lt;li class=&quot;level-0&quot; &gt;
+
+                    &lt;div data-control&gt;
+                        &lt;a href=&quot;/cgm/mevzuat/&quot;  title=&quot;&quot;&gt;Mevzuat&lt;/a&gt;
+                    &lt;/div&gt;
+
+                &lt;/li&gt;
+                &lt;li data-accordion class=&quot;level-0&quot;&gt;
+
+                    &lt;!--Node:Adli Geçiş için menude yeşil yapıldı--&gt;
+                    &lt;div class=&quot;accordion-control &quot; data-control&gt;Galeri&lt;/div&gt;
+
+                    &lt;ul data-content&gt;
+
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/galeri/fotograflar/&quot;  title=&quot;&quot;&gt;Fotoğraflar&lt;/a&gt;
+                                &lt;/li&gt;
+
+                    &lt;/ul&gt;
+
+                &lt;/li&gt;
+                &lt;li data-accordion class=&quot;level-0&quot;&gt;
+
+                    &lt;!--Node:Adli Geçiş için menude yeşil yapıldı--&gt;
+                    &lt;div class=&quot;accordion-control &quot; data-control&gt;İstatistikler&lt;/div&gt;
+
+                    &lt;ul data-content&gt;
+
+                                &lt;li data-accordion class=&quot;level-1&quot;&gt;
+                                    &lt;div class=&quot;accordion-control&quot; data-control&gt;&amp;#199;alışma Hayatı İstatistikleri&lt;/div&gt;
+                                    &lt;ul data-content&gt;
+                                                &lt;li data-accordion class=&quot;level-2&quot;&gt;
+                                                    &lt;div class=&quot;accordion-control&quot; data-control&gt;Resmi İstatistik Programı&lt;/div&gt;
+                                                    &lt;ul data-content&gt;
+
+&lt;li &gt;
+                                                                    &lt;a href=&quot;/ıstatistikler/calisma-hayati-ıstatistikleri/resmi-ıstatistik-programi/calisma-hayati-istatistikleri/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma Hayatı İstatistikleri&lt;/a&gt;
+                                                                &lt;/li&gt;
+&lt;li &gt;
+                                                                    &lt;a href=&quot;/ıstatistikler/calisma-hayati-ıstatistikleri/resmi-ıstatistik-programi/is-uyusmazligi-istatistikleri/&quot;  title=&quot;&quot;&gt;İş Uyuşmazlığı İstatistikleri&lt;/a&gt;
+                                                                &lt;/li&gt;
+&lt;li &gt;
+                                                                    &lt;a href=&quot;/ıstatistikler/calisma-hayati-ıstatistikleri/resmi-ıstatistik-programi/calisma-izni-istatistikleri/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma İzni İstatistikleri&lt;/a&gt;
+                                                                &lt;/li&gt;
+&lt;li &gt;
+                                                                    &lt;a href=&quot;/ıstatistikler/calisma-hayati-ıstatistikleri/resmi-ıstatistik-programi/resmi-ıstatistik-portali-tuık/&quot;  title=&quot;&quot;&gt;Resmi İstatistik Portalı (TUİK)&lt;/a&gt;
+                                                                &lt;/li&gt;
+                                                    &lt;/ul&gt;
+
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/ıstatistikler/calisma-hayati-ıstatistikleri/kidem-tazminati-tavan-miktari/&quot;  title=&quot;&quot;&gt;Kıdem Tazminatı&lt;/a&gt;
+                                                &lt;/li&gt;
+                                                &lt;li data-accordion class=&quot;level-2&quot;&gt;
+                                                    &lt;div class=&quot;accordion-control&quot; data-control&gt;Sendikal İstatistikler&lt;/div&gt;
+                                                    &lt;ul data-content&gt;
+
+&lt;li &gt;
+                                                                    &lt;a href=&quot;/ıstatistikler/calisma-hayati-ıstatistikleri/sendikal-ıstatistikler/isci-sayilari-ve-sendikalarin-uye-sayilari-hakkinda-tebligler/&quot;  title=&quot;&quot;&gt;İş&amp;#231;i Sayıları ve Sendikaların &amp;#220;ye Sayıları Hakkında Tebliğler&lt;/a&gt;
+                                                                &lt;/li&gt;
+&lt;li &gt;
+                                                                    &lt;a href=&quot;/ıstatistikler/calisma-hayati-ıstatistikleri/sendikal-ıstatistikler/kamu-gorevlileri-sendika-uye-sayilari-hakkinda-tebligler/&quot;  title=&quot;&quot;&gt;Kamu G&amp;#246;revlileri Sendika ve &amp;#220;ye Sayıları Hakkında Tebliğler&lt;/a&gt;
+                                                                &lt;/li&gt;
+                                                    &lt;/ul&gt;
+
+                                                &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+
+                    &lt;/ul&gt;
+
+                &lt;/li&gt;
+                &lt;li data-accordion class=&quot;level-0&quot;&gt;
+
+                    &lt;!--Node:Adli Geçiş için menude yeşil yapıldı--&gt;
+                    &lt;div class=&quot;accordion-control &quot; data-control&gt;Dok&amp;#252;manlar&lt;/div&gt;
+
+                    &lt;ul data-content&gt;
+
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/dokumanlar/ulusal-istihdam-stratejisi/&quot;  title=&quot;&quot;&gt;Ulusal İstihdam Stratejisi&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/dokumanlar/ulusal-adil-gecis-stratejisi-eylem-plani/&quot;  title=&quot;&quot;&gt;Ulusal Adil Ge&amp;#231;iş Stratejisi Eylem Planı&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/dokumanlar/cocuk-ısciligi-ıle-mucadele-ulusal-programi-eylem-plani/&quot;  title=&quot;&quot;&gt;&amp;#199;ocuk İş&amp;#231;iliği İle M&amp;#252;cadele Ulusal Programı Eylem Planı&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/dokumanlar/ulusal-genc-ıstihdam-stratejisi-ve-eylem-plani/&quot;  title=&quot;&quot;&gt;Ulusal Gen&amp;#231; İstihdam Stratejisi ve Eylem Planı&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/dokumanlar/uzmanlik-tezleri/&quot;  title=&quot;&quot;&gt;Uzmanlık Tezleri&lt;/a&gt;
+                                &lt;/li&gt;
+
+                    &lt;/ul&gt;
+
+                &lt;/li&gt;
+&lt;li class=&quot;level-0&quot; &gt;
+
+                    &lt;div data-control&gt;
+                        &lt;a href=&quot;/cgm/projeler/&quot;  title=&quot;&quot;&gt;Projeler&lt;/a&gt;
+                    &lt;/div&gt;
+
+                &lt;/li&gt;
+                &lt;li data-accordion class=&quot;level-0&quot;&gt;
+
+                    &lt;!--Node:Adli Geçiş için menude yeşil yapıldı--&gt;
+                    &lt;div class=&quot;accordion-control &quot; data-control&gt;Yayınlar&lt;/div&gt;
+
+                    &lt;ul data-content&gt;
+
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/yayinlar/calisma-hayati-istatistik-ebultenleri/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma Hayatı İstatistik E-B&amp;#252;ltenleri&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/yayinlar/calisma-hayati-ebulteni/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma Hayatı E-B&amp;#252;lteni&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/yayinlar/calisma-hayati-gundemi/&quot;  title=&quot;&quot;&gt;&amp;#199;alışma Hayatı G&amp;#252;ndemi&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/yayinlar/diger-yayinlar/&quot;  title=&quot;&quot;&gt;Diğer Yayınlar&lt;/a&gt;
+                                &lt;/li&gt;
+
+                    &lt;/ul&gt;
+
+                &lt;/li&gt;
+                &lt;li data-accordion class=&quot;level-0&quot;&gt;
+
+                    &lt;!--Node:Adli Geçiş için menude yeşil yapıldı--&gt;
+                    &lt;div class=&quot;accordion-control line-between&quot; data-control&gt;Adil Ge&amp;#231;iş&lt;/div&gt;
+
+                    &lt;ul data-content&gt;
+
+                                &lt;li data-accordion class=&quot;level-1&quot;&gt;
+                                    &lt;div class=&quot;accordion-control&quot; data-control&gt;Adil Ge&amp;#231;iş S&amp;#252;reci&lt;/div&gt;
+                                    &lt;ul data-content&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/adil-gecis/adil-gecis-sureci/adil-gecis-nedir/&quot;  title=&quot;&quot;&gt;Adil Geciş Nedir ?&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/adil-gecis/adil-gecis-sureci/turkiye-de-adil-gecis-sureci/&quot;  title=&quot;&quot;&gt;T&amp;#252;rkiye&amp;#39;de Adil Ge&amp;#231;iş S&amp;#252;reci&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/adil-gecis/adil-gecis-sureci/ulusal-politika-belgeleri/&quot;  title=&quot;&quot;&gt;Ulusal Politika Belgeleri&lt;/a&gt;
+                                                &lt;/li&gt;
+&lt;li &gt;
+                                                    &lt;a href=&quot;/cgm/adil-gecis/adil-gecis-sureci/projeler/&quot;  title=&quot;&quot;&gt;Projeler&lt;/a&gt;
+                                                &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/adil-gecis/agep/&quot;  title=&quot;&quot;&gt;AGEP&lt;/a&gt;
+                                &lt;/li&gt;
+&lt;li &gt;
+                                    &lt;a href=&quot;/cgm/adil-gecis/referans-kaynaklar/&quot;  title=&quot;&quot;&gt;Referans Kaynaklar&lt;/a&gt;
+                                &lt;/li&gt;
+
+                    &lt;/ul&gt;
+
+                &lt;/li&gt;
+&lt;li class=&quot;level-0&quot; &gt;
+
+                    &lt;div data-control&gt;
+                        &lt;a href=&quot;/cgm/ıletisim/&quot;  title=&quot;&quot;&gt;İletişim&lt;/a&gt;
+                    &lt;/div&gt;
+
+                &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!--Social Media--&gt;
+    &lt;div class=&quot;social-media__accounts mt-4&quot;&gt;
+        &lt;a href=&quot;https://www.facebook.com/csgbakanlik&quot; title=&quot;Facebook hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link facebook&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com/cgm_csgb&quot; title=&quot;Instagram hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link instagram&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://twitter.com/cgm_csgb&quot; title=&quot;Twitter hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link twitter&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-brands fa-x-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.youtube.com/@csgbakanligi&quot; title=&quot;Youtube hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link youtube&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;#&quot; title=&quot;Linkedin hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link linkedin&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!--Açılır menu en alt kısım--&gt;
+    &lt;ul class=&quot;navigation-bottom navbar-nav d-block&quot;&gt;
+        &lt;!--Item--&gt;
+        &lt;li class=&quot;nav-item d-inline&quot;&gt;
+            &lt;a class=&quot;nav-link d-inline&quot; title=&quot;&amp;#199;alışma Hayatı İletişim Merkezi&quot; aria-label=&quot;&amp;#199;alışma Hayatı İletişim Merkezi&quot; href=&quot;http://www.alo170.gov.tr/&quot; target=&quot;_blank&quot;&gt;
+                &lt;span class=&quot;icon&quot;&gt;
+                    &lt;img src=&quot;/Contents/Images/alo170-bw.svg&quot;&gt;
+                &lt;/span&gt;
+            &lt;/a&gt;|
+        &lt;/li&gt;
+        &lt;!--Item--&gt;
+        &lt;li class=&quot;nav-item d-inline&quot;&gt;
+            &lt;a class=&quot;nav-link d-inline&quot; title=&quot;Sık&amp;#231;a Sorulan Sorular&quot; aria-label=&quot;Sıkça Sorulan Sorular&quot; href=&quot;/sikca-sorulan-sorular/&quot;&gt;
+                &lt;span class=&quot;icon&quot;&gt;
+                    &lt;img src=&quot;/Contents/Images/faq-bw.svg&quot;&gt;
+                &lt;/span&gt;
+            &lt;/a&gt;|
+        &lt;/li&gt;
+        &lt;!--Item DDL--&gt;
+            &lt;li class=&quot;nav-item language-options dropdown d-inline&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle d-inline position-relative&quot; href=&quot;javascript:void(0)&quot; id=&quot;navbarDropdown-Language&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Çoklu Dil Seçimi&quot; title=&quot;&amp;#199;oklu Dil Se&amp;#231;imi&quot;&gt;
+                    &lt;span class=&quot;icon-language&quot;&gt;&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;/cgm/en/news/26-12-2019/&quot;&gt;English&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;/cgm/haberler/26-12-2019/&quot;&gt;Türkçe&lt;/a&gt;
+                    
+                &lt;/div&gt;|
+            &lt;/li&gt;
+
+        &lt;li class=&quot;nav-item d-inline&quot; title=&quot;İstiklalden İstikbale&quot;&gt;
+            &lt;a class=&quot;nav-link d-inline&quot; href=&quot;http://calismatv.csgb.gov.tr&quot;&gt;
+                &lt;span class=&quot;icon&quot;&gt;
+                    &lt;img width=&quot;33&quot; src=&quot;/Contents/Images/Special/tv_logo.png&quot;&gt;
+                &lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/sction&gt;
+
+
+
+    &lt;!-- Start: -------MAIN CONTENT-------- --&gt;
+    &lt;main class=&quot;main-page_inner speak-area&quot; style=&quot;transition: .5s;&quot;&gt;
+        
+
+&lt;!--Mevcut sayfanın geriye doğru haritalanmasını yapar--&gt;
+        &lt;!-- Breadcrumbs--&gt;
+        &lt;section class=&quot;m-0 p-0&quot;&gt;
+            &lt;nav class=&quot;breadcrumb&quot; aria-label=&quot;breadcrumb&quot;&gt;
+                &lt;ol class=&quot;breadcrumb-inner&quot;&gt;
+                            &lt;li class=&quot;breadcrumb-item&quot;&gt;
+                                &lt;a href=&quot;/cgm/&quot;&gt;&amp;#199;alışma Genel M&amp;#252;d&amp;#252;rl&amp;#252;ğ&amp;#252;&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;breadcrumb-item&quot;&gt;
+                                &lt;a href=&quot;/cgm/haberler/&quot;&gt;Haberler&lt;/a&gt;
+                            &lt;/li&gt;
+                    &lt;li class=&quot;breadcrumb-item &quot; aria-current=&quot;26.12.2019&quot;&gt;
+                        &lt;span&gt;26.12.2019&lt;/span&gt;
+                    &lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/nav&gt;
+        &lt;/section&gt;
+        &lt;!-- / Breadcrumbs --&gt;
+
+&lt;!--Mevcut sayfanın geriye doğru haritalanmasını yapar--&gt;
+        
+
+
+
+
+&lt;section class=&quot;content mb-15 news-item&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;!--Title--&gt;
+        &lt;h2 class=&quot;page-title text-center font-weight-bold&quot;&gt;Bakan Sel&amp;#231;uk: “1 Ocak 2020&amp;#39;den İtibaren Ge&amp;#231;erli Olacak Asgari &amp;#220;cret, Br&amp;#252;t 2 Bin 943 Lira, Net 2 Bin 324 Lira 70 Kuruş Olarak Belirlendi”&lt;/h2&gt;
+        &lt;!--Date--&gt;
+        &lt;!--pre-next--&gt;
+        &lt;p class=&quot;text-center&quot;&gt;26 Aralık 2019, Perşembe&lt;/p&gt;
+
+        &lt;div class=&quot;custom-container&quot;&gt;
+                &lt;div class=&quot;bg-white next text-center&quot;&gt;&lt;a href=&quot;/cgm/haberler/24-12-2019/&quot; title=&quot;24.12.2019&quot;&gt;&amp;#214;NCEKİ HABER&lt;/a&gt;&lt;/div&gt;
+            &lt;ul class=&quot;share-box list-unstyled&quot;&gt;
+                &lt;li class=&quot;line&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+                &lt;div class=&quot;bg-white previous text-center&quot;&gt;&lt;a href=&quot;/cgm/haberler/09-01-2020/&quot; title=&quot;09.01.2020&quot;&gt;SONRAKİ HABER&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;new-content&quot;&gt;
+        &lt;!--Common content template--&gt;
+            &lt;div class=&quot;image-container&quot;&gt;
+        &lt;div class=&quot;images image-gradient-vertical&quot;&gt;
+                &lt;!-- News Photos --&gt;
+                &lt;div class=&quot;swiper-container&quot;&gt;
+                    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+                                &lt;div class=&quot;swiper-slide&quot;&gt;
+                                        &lt;div class=&quot;swiper-lazy-preloader&quot;&gt;&lt;/div&gt;
+                                        &lt;img class=&quot;img-fluid swiper-lazy&quot; src=&quot;/Media/4ibpy11r/bakan-sel&amp;#231;uk-1-ocak-2020-den-itibaren-ge&amp;#231;erli-olacak-asgari-&amp;#252;cret-br&amp;#252;t-2-bin-943-lira-net-2-bin-324-lira-70-kuruş-olarak-belirlendi.jpeg?anchor=center&amp;amp;mode=crop&amp;amp;width=1920&amp;amp;height=1080&amp;amp;rnd=133364992685600000&quot; alt=&quot;&quot;&gt;
+                                &lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;!-- Add Arrows --&gt;
+                    &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+
+                    &lt;!-- Add Pagination --&gt;
+                    &lt;div class=&quot;swiper-pagination text-left&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;div class=&quot;row no-gutters&quot;&gt;
+            &lt;!--Header--&gt;
+            &lt;div class=&quot;col-sm-11 col-md-11 col-lg-11 px-0 my-auto text-left&quot;&gt;
+                &lt;h1 class=&quot;page-title&quot;&gt;Bakan Sel&amp;#231;uk: “1 Ocak 2020&amp;#39;den İtibaren Ge&amp;#231;erli Olacak Asgari &amp;#220;cret, Br&amp;#252;t 2 Bin 943 Lira, Net 2 Bin 324 Lira 70 Kuruş Olarak Belirlendi”&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;!--Page Print--&gt;
+            &lt;div class=&quot;col-sm-1 col-md-1 col-lg-1 px-0 my-auto text-right&quot;&gt;
+                &lt;div class=&quot;flex&quot;&gt;
+                    &lt;div id=&quot;pagePrint&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;icon icon-printer-line&quot; title=&quot;Yazdır&quot; onclick=&#x27;print();&#x27;&gt;
+                                    &lt;span&gt;Yazdır&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!--Content--&gt;
+            &lt;div class=&quot;col-sm-12 col-md-12 col-lg-12 px-0 my-auto&quot;&gt;
+                &lt;hr /&gt;
+                &lt;h4 class=&quot;page-subtitle&quot;&gt;&lt;/h4&gt;
+
+                &lt;div class=&quot;editor-content&quot;&gt;
+                    &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;İşçi, işveren ve hükümet temsilcilerinden oluşan Asgari Ücret Tespit Komisyonu; Aile, Çalışma ve Sosyal Hizmetler Bakanlığının ev sahipliğinde toplandı.&lt;/p&gt;
+&lt;p&gt;2002&#x27;de net 184 lira olan asgari ücreti 2019&#x27;da net 2 bin 20 lira 90 kuruşa yükselttiklerini belirten Selçuk, &quot;Böylelikle asgari ücrette son 17 yılda reel olarak yüzde 142, nominal olarak yaklaşık 10 kat artış sağlandı. AB ülkeleriyle kıyasladığımızda da satın alma gücü paritesine göre 2002&#x27;de 15. sıradayken 2019&#x27;da 10. sıraya yükselmiş durumdayız.&quot; dedi.&lt;/p&gt;
+&lt;p&gt;Asgari ücretin sosyal yardım ve hizmetlerde önemli bir kriter olduğunu vurgulayan Selçuk, asgari ücretin genel sağlık sigortası, SGK borçlanması, asgari geçim indirimi gibi birçok hesaplamayı etkilediğini, yeni rakamı belirlerken bu dengeleri ve toplumun tüm kesimlerini gözettiklerini söyledi.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+
+    &lt;/main&gt;
+    &lt;!-- End: -------MAIN CONTENT-------- --&gt;
+    &lt;!--Start:Footer--&gt;
+    &lt;footer&gt;
+
+
+        &lt;!--Google Analytics--&gt;
+        
+
+&lt;script src=&quot;/Assets/js/App/Partials/Ministry/_SocialAccounts.js&quot;&gt;&lt;/script&gt;
+
+&lt;section class=&quot;bg-gray__section&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row d-flex flex-row align-items-center justify-content-between&quot;&gt;
+            &lt;div class=&quot;col-lg-5 col-md-6 col-sm-12 col-xs-12&quot;&gt;
+                &lt;h4 class=&quot;change-middle-font-size&quot;&gt;Sosyal Medya Hesaplarımız&lt;/h4&gt;
+            &lt;/div&gt;
+           
+
+
+            &lt;div class=&quot;social-media__accounts col-lg-4 col-md-4 col-sm-12 col-xs-12&quot;&gt;
+                    &lt;a href=&quot;https://sosyal.teknofest.app/@csgbakanligi&quot; title=&quot;NSosyal hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link nsosyal unchange-font-size&quot; target=&quot;_blank&quot;&gt;
+                        &lt;img class=&quot;img-fluid nsosyal-img&quot; style=&quot;height:32px;&quot; src=&quot;/Contents/Images/nsosyal-red.svg&quot; /&gt;
+                    &lt;/a&gt;
+                &lt;a href=&quot;https://www.facebook.com/csgbakanlik&quot; title=&quot;Facebook hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link facebook unchange-font-size&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;https://www.instagram.com/cgm_csgb&quot; title=&quot;Instagram hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link instagram unchange-font-size&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;https://twitter.com/cgm_csgb&quot; title=&quot;Twitter hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link twitter unchange-font-size&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-brands fa-x-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;https://www.youtube.com/@csgbakanligi&quot; title=&quot;Youtube hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link youtube unchange-font-size&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;a href=&quot;#&quot; title=&quot;Linkedin hesabına gitmek i&amp;#231;in tıklayın.&quot; class=&quot;nav-item nav-link linkedin unchange-font-size&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fab fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/section&gt;
+
+        &lt;!--Social media seciton--&gt;
+        
+
+
+
+        &lt;!--CALISMA GENEL MUDURLUGU--&gt;
+        &lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-5J9NV1QQVE&quot;&gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag(&#x27;js&#x27;, new Date());
+
+            var disableGaCookies = localStorage.getItem(&#x27;ga-cookies-disable&#x27;) == null ? false : (localStorage.getItem(&#x27;ga-cookies-disable&#x27;) == &quot;true&quot;);
+            window[&#x27;ga-disable-G-5J9NV1QQVE&#x27;] = disableGaCookies;
+            gtag(&#x27;config&#x27;, &#x27;G-5J9NV1QQVE&#x27;);
+        &lt;/script&gt;
+
+&lt;!--TODO--&gt;
+&lt;!--Avrupa Birliği ve Mali Yardımlar Dairesi Başkanlığı--&gt;
+&lt;!-- Google tag (gtag.js) --&gt;
+&lt;!--&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GB9QP21609&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag(&#x27;js&#x27;, new Date());
+
+    gtag(&#x27;config&#x27;, &#x27;G-GB9QP21609&#x27;);
+&lt;/script&gt;--&gt;
+
+
+        &lt;!--Start:Red section--&gt;
+        &lt;section class=&quot;bg-red__section pt-5&quot;&gt;
+            &lt;!--Bakanlık Bağlantıları--&gt;
+            
+    &lt;section class=&quot;google-maps__section&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-12 &quot;&gt;
+                    &lt;div class=&quot;boxed col-12 row m-0&quot;&gt;
+                        &lt;!--Title--&gt;
+                        &lt;div class=&quot;col-12 mb-3 mt-3&quot;&gt;
+                            &lt;div class=&quot;col-sm-12 col-md-12 col-lg-12&quot;&gt;
+                                &lt;div class=&quot;d-flex justify-content-between align-items-center&quot;&gt;
+
+                                    &lt;h5 class=&quot;links-title font-weight-normal&quot;&gt;Bakanlık Bağlantıları&lt;/h5&gt;
+
+                                &lt;/div&gt;
+                                &lt;hr class=&quot;m-0&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+
+                        &lt;div class=&quot;footer-links mb-2 container-fluid px-0&quot;&gt;
+                          &lt;div class=&quot;row g-4 justify-content-center justify-content-lg-between&quot;&gt;
+                                &lt;div class=&quot;col-6 col-sm-4 col-md-3 col-lg-2 d-flex&quot;&gt;
+                                  &lt;a class=&quot;footer-link w-100 mx-auto d-flex align-items-center justify-content-center p-2&quot;
+                                     target=&quot;_blank&quot; href=&quot;https://www.tccb.gov.tr/&quot;&gt;
+                                    &lt;div class=&quot;footer-icon-container text-center&quot;&gt;
+                                          &lt;img class=&quot;img-fluid d-block mx-auto&quot;
+                                               src=&quot;/Media/yhmp33bn/presidency.png&quot;
+                                               alt=&quot;Cumhurbaşkanlığı&quot;
+                                               style=&quot;height:80px;width:auto;&quot;&gt;
+                                    &lt;/div&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-6 col-sm-4 col-md-3 col-lg-2 d-flex&quot;&gt;
+                                  &lt;a class=&quot;footer-link w-100 mx-auto d-flex align-items-center justify-content-center p-2&quot;
+                                     target=&quot;_blank&quot; href=&quot;https://www.ikg.gov.tr/&quot;&gt;
+                                    &lt;div class=&quot;footer-icon-container text-center&quot;&gt;
+                                          &lt;img class=&quot;img-fluid d-block mx-auto&quot;
+                                               src=&quot;/Media/a1aku2n4/ikgpro.png&quot;
+                                               alt=&quot;İnsan Kaynaklarının Geliştirilmesi Otoritesi&quot;
+                                               style=&quot;height:80px;width:auto;&quot;&gt;
+                                    &lt;/div&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-6 col-sm-4 col-md-3 col-lg-2 d-flex&quot;&gt;
+                                  &lt;a class=&quot;footer-link w-100 mx-auto d-flex align-items-center justify-content-center p-2&quot;
+                                     target=&quot;_blank&quot; href=&quot;https://www.sgk.gov.tr/&quot;&gt;
+                                    &lt;div class=&quot;footer-icon-container text-center&quot;&gt;
+                                          &lt;img class=&quot;img-fluid d-block mx-auto&quot;
+                                               src=&quot;/Media/xmvahwkv/sgk-logo.png&quot;
+                                               alt=&quot;Sosyal Güvenlik Kurumu&quot;
+                                               style=&quot;height:80px;width:auto;&quot;&gt;
+                                    &lt;/div&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-6 col-sm-4 col-md-3 col-lg-2 d-flex&quot;&gt;
+                                  &lt;a class=&quot;footer-link w-100 mx-auto d-flex align-items-center justify-content-center p-2&quot;
+                                     target=&quot;_blank&quot; href=&quot;https://www.iskur.gov.tr/&quot;&gt;
+                                    &lt;div class=&quot;footer-icon-container text-center&quot;&gt;
+                                          &lt;img class=&quot;img-fluid d-block mx-auto&quot;
+                                               src=&quot;/Media/0dinovv3/iskur.png&quot;
+                                               alt=&quot;Türkiye İş Kurumu&quot;
+                                               style=&quot;height:80px;width:auto;&quot;&gt;
+                                    &lt;/div&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-6 col-sm-4 col-md-3 col-lg-2 d-flex&quot;&gt;
+                                  &lt;a class=&quot;footer-link w-100 mx-auto d-flex align-items-center justify-content-center p-2&quot;
+                                     target=&quot;_blank&quot; href=&quot;https://www.casgem.gov.tr/&quot;&gt;
+                                    &lt;div class=&quot;footer-icon-container text-center&quot;&gt;
+                                          &lt;img class=&quot;img-fluid d-block mx-auto&quot;
+                                               src=&quot;/Media/kbhnj3no/casgem-logo.png&quot;
+                                               alt=&quot;Çalışma ve Sosyal Eğitim ve Araştırma Merkezi&quot;
+                                               style=&quot;height:80px;width:auto;&quot;&gt;
+                                    &lt;/div&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-6 col-sm-4 col-md-3 col-lg-2 d-flex&quot;&gt;
+                                  &lt;a class=&quot;footer-link w-100 mx-auto d-flex align-items-center justify-content-center p-2&quot;
+                                     target=&quot;_blank&quot; href=&quot;https://www.myk.gov.tr/tr&quot;&gt;
+                                    &lt;div class=&quot;footer-icon-container text-center&quot;&gt;
+                                          &lt;img class=&quot;img-fluid d-block mx-auto&quot;
+                                               src=&quot;/Media/2iih0bom/myk.png&quot;
+                                               alt=&quot;Mesleki Yeterlilik Kurumu&quot;
+                                               style=&quot;height:80px;width:auto;&quot;&gt;
+                                    &lt;/div&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+
+
+
+            &lt;!--Bülten ve SGK kapatıldı--&gt;
+            
+
+            
+&lt;section class=&quot;google-maps__section map my-3&quot; id=&quot;GoogleMaps&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;!--Contact Us--&gt;
+            &lt;div class=&quot;col-lg-4&quot;&gt;
+                &lt;div class=&quot;boxed p-5 h-100&quot;&gt;
+
+                    &lt;h2 class=&quot;change-middle-font-size&quot;&gt; Daha fazla bilgi i&amp;#231;in l&amp;#252;tfen&lt;span&gt;&amp;nbsp;  bizimle &amp;nbsp;&lt;/span&gt; iletişime ge&amp;#231;in.&lt;/h2&gt;
+
+                    &lt;ul class=&quot;list-group list-group-flush list-group--line&quot;&gt;
+
+                        &lt;li class=&quot;list-group-item d-flex align-items-center&quot;&gt;
+                            &lt;i class=&quot;fa fa-map-marker-alt fs-24 text-red&quot;&gt;&lt;/i&gt;
+                            &lt;span&gt;Emek Mahallesi Naci AYVALIOĞLU Caddesi No:13 Pk: 06520 &amp;#199;ankaya / ANKARA&lt;/span&gt;
+                        &lt;/li&gt;
+
+                        
+
+                        &lt;li class=&quot;list-group-item d-flex align-items-center&quot;&gt;
+                            &lt;i class=&quot;fa fa-phone-alt fs-24 text-red&quot;&gt;&lt;/i&gt;
+                            &lt;span&gt;+90 (312) 296 60 00&lt;/span&gt;
+                        &lt;/li&gt;
+
+                    &lt;/ul&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!--Maps--&gt;
+            &lt;div class=&quot;col-lg-8 map-parent-div&quot;&gt;
+                &lt;div id=&quot;map&quot; class=&quot;map-area --field&quot;&gt;
+
+                    &lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.160161083054!2d32.81769177643424!3d39.91543187152461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f383d4c678d%3A0x7609ffb1a0006dfa!2zw4dhbMSxxZ9tYSB2ZSBTb3N5YWwgR8O8dmVubGlrIEJha2FubMSxxJ_EsQ!5e0!3m2!1str!2str!4v1685695119353!5m2!1str!2str&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;border-radius: 9px;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+
+            
+
+
+&lt;section&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-12 &quot;&gt;
+
+                &lt;div class=&quot;col-12 row m-0 p-2 copyright-border&quot;&gt;
+                    &lt;div class=&quot;col-lg-9 col-12 p-0&quot;&gt;
+                        &lt;p&gt;&lt;b style=&quot;color:white !important; &quot;&gt;T&amp;#252;rkiye Cumhuriyeti &amp;#199;alışma ve Sosyal G&amp;#252;venlik Bakanlığı  &lt;/b&gt; &lt;br /&gt;   T.C. Çalışma ve Sosyal Güvenlik Bakanlığı © 2026 Tüm Hakları Saklıdır. &lt;/p&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-lg-1 col-12 p-0  mr-lg-1&quot;&gt;
+                        
+                    &lt;/div&gt; 
+
+                    &lt;div class=&quot;col-lg-1 col-12 p-0&quot;&gt;
+                        &lt;div class=&quot;justify-content-start&quot;&gt;
+                            &lt;a class=&quot;bd-highlight&quot; target=&quot;_blank&quot; href=&quot;https://portal.csgb.gov.tr/my.policy&quot; title=&quot;Portal&quot;&gt;Portal&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-12 row m-0 p-2&quot;&gt;
+                    &lt;a href=&quot;/footer-contents/cerez-onayi-politikasi/&quot; class=&quot;orginal-a mr-1&quot; style=&quot;color:white&quot;&gt;&amp;#199;erez Politikası&lt;/a&gt;|&lt;a href=&quot;/footer-contents/kvkk-aydinlatma-metni/&quot; class=&quot;orginal-a mr-1 ml-1&quot; style=&quot;color:white&quot;&gt;KVKK Aydınlatma Metni&lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+        &lt;/section&gt;
+        &lt;!--End:Red section--&gt;
+        &lt;!--Start:Last Footer Section--&gt;
+        &lt;section class=&quot;bg-gray__section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+
+                &lt;div class=&quot;row align-items-center&quot;&gt;
+                    &lt;div class=&quot;col-sm-12 col-md-12 col-lg-12 col-xl-12&quot;&gt;
+                        
+&lt;ul class=&quot;list__logo-horizontal d-flex flex-row justify-content-end p-0&quot;&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.cimer.gov.tr/&quot; target=&quot;_blank&quot; title=&quot;Cumhurbaşkanlığı İletişim Merkezi&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;/Contents/Images/brand/cimer.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;http://www.guvenlinet.org/tr/&quot; target=&quot;_blank&quot; title=&quot;Güvenli İnternet Web Sitesi&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;/Contents/Images/brand/guvenli-internet-merkezi.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;http://www.guvenliweb.org.tr/&quot; target=&quot;_blank&quot; title=&quot;Güvenli Web İnternet Sitesi&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;/Contents/Images/brand/guvenli-web.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;http://www.ihbarweb.org.tr/&quot; target=&quot;_blank&quot; title=&quot;İnternet Bilgi İhbar Merkezi Web Sitesi&quot;&gt;
+            &lt;img class=&quot;&quot; src=&quot;/Contents/Images/brand/ihbar-web.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!--Accessibility Section--&gt;
+        &lt;button class=&quot;accessibility-toggle-button&quot;
+        id=&quot;accessibilityToggle&quot;
+        aria-label=&quot;Erişilebilirlik Menüsünü Aç&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+         viewBox=&quot;0 0 122.88 122.88&quot;
+         role=&quot;img&quot;&gt;
+        &lt;title&gt;Erişilebilirlik Menüsü İkonu&lt;/title&gt;
+        &lt;path d=&quot;M61.44,0A61.46,61.46,0,1,1,18,18,61.21,61.21,0,0,1,61.44,0Zm-.39,74.18L52.1,98.91a4.94,4.94,0,0,1-2.58,2.83A5,5,0,0,1,42.7,95.5l6.24-17.28a26.3,26.3,0,0,0,1.17-4,40.64,40.64,0,0,0,.54-4.18c.24-2.53.41-5.27.54-7.9s.22-5.18.29-7.29c.09-2.63-.62-2.8-2.73-3.3l-.44-.1-18-3.39A5,5,0,0,1,27.08,46a5,5,0,0,1,5.05-7.74l19.34,3.63c.77.07,1.52.16,2.31.25a57.64,57.64,0,0,0,7.18.53A81.13,81.13,0,0,0,69.9,42c.9-.1,1.75-.21,2.6-.29l18.25-3.42A5,5,0,0,1,94.5,39a5,5,0,0,1,1.3,7,5,5,0,0,1-3.21,2.09L75.15,51.37c-.58.13-1.1.22-1.56.29-1.82.31-2.72.47-2.61,3.06.08,1.89.31,4.15.61,6.51.35,2.77.81,5.71,1.29,8.4.31,1.77.6,3.19,1,4.55s.79,2.75,1.39,4.42l6.11,16.9a5,5,0,0,1-6.82,6.24,4.94,4.94,0,0,1-2.58-2.83L63,74.23,62,72.4l-1,1.78Zm.39-53.52a8.83,8.83,0,1,1-6.24,2.59,8.79,8.79,0,0,1,6.24-2.59Zm36.35,4.43a51.42,51.42,0,1,0,15,36.35,51.27,51.27,0,0,0-15-36.35Z&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/button&gt;
+&lt;div id=&quot;accessibilityPanel&quot; class=&quot;ac-panel&quot;&gt;
+    &lt;div class=&quot;ac-panel--header&quot;&gt;
+        &lt;h5 class=&quot;ac-panel--header__title&quot; id=&quot;acPanel&quot;&gt;
+            Eri&amp;#x15F;ilebilirlik Men&amp;#xFC;s&amp;#xFC;
+        &lt;/h5&gt;
+        &lt;button id=&quot;accessibilityCloseButton&quot;
+                type=&quot;button&quot;
+                class=&quot;ac-panel--close-button&quot;
+                aria-label=&quot;Kapat&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ac-panel--body d-flex flex-column&quot;&gt;
+        &lt;div class=&quot;ac-panel--wrapper&quot;&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot;
+                     id=&quot;speakButton&quot;
+                     data-acc-option=&quot;screen-reader&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;path d=&quot;M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v3&quot;&gt;&lt;/path&gt;
+                        &lt;polyline points=&quot;14 2 14 8 20 8&quot;&gt;&lt;/polyline&gt;
+                        &lt;path d=&quot;m7 10-3 2H2v4h2l3 2v-8Z&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M11 11c.64.8 1 1.87 1 3s-.36 2.2-1 3&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Ekran Okuyucu&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot;
+                     id=&quot;selectSpeakButton&quot;
+                     data-acc-option=&quot;select-reader&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;path d=&quot;M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v3&quot;&gt;&lt;/path&gt;
+                        &lt;polyline points=&quot;14 2 14 8 20 8&quot;&gt;&lt;/polyline&gt;
+                        &lt;path d=&quot;m7 10-3 2H2v4h2l3 2v-8Z&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M11 11c.64.8 1 1.87 1 3s-.36 2.2-1 3&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Se&amp;#xE7;ili Alan Okuyucu&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;highlight-links&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;title&gt;Bağlantı Vurgula İkonu&lt;/title&gt;
+                        &lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Ba&amp;#x11F;lant&amp;#x131; Vurgula&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;bigger-text&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;title&gt;Metni Büyüt İkonu&lt;/title&gt;
+                        &lt;polyline points=&quot;4 7 4 4 20 4 20 7&quot;&gt;&lt;/polyline&gt;
+                        &lt;line x1=&quot;9&quot; y1=&quot;20&quot; x2=&quot;15&quot; y2=&quot;20&quot;&gt;&lt;/line&gt;
+                        &lt;line x1=&quot;12&quot; y1=&quot;4&quot; x2=&quot;12&quot; y2=&quot;20&quot;&gt;&lt;/line&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;B&amp;#xFC;y&amp;#xFC;k Metin&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;align-text-left&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;line x1=&quot;21&quot; y1=&quot;6&quot; x2=&quot;3&quot; y2=&quot;6&quot;&gt;&lt;/line&gt;
+                        &lt;line x1=&quot;15&quot; y1=&quot;12&quot; x2=&quot;3&quot; y2=&quot;12&quot;&gt;&lt;/line&gt;
+                        &lt;line x1=&quot;17&quot; y1=&quot;18&quot; x2=&quot;3&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Metni Sola Hizala&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper hide-on-sm&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;bigger-cursor&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;path d=&quot;m9 9 5 12 1.774-5.226L21 14 9 9z&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m16.071 16.071 4.243 4.243&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m7.188 2.239.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656-2.12 2.122&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;&amp;#x130;mle&amp;#xE7;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper hide-on-sm&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;reading-guide&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;path d=&quot;M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m16 12 2 2 4-4&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Okuma K&amp;#x131;lavuzu&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper hide-on-sm&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;reading-mask&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;path d=&quot;M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z&quot;&gt;&lt;/path&gt;
+                        &lt;polyline points=&quot;14 2 14 8 20 8&quot;&gt;&lt;/polyline&gt;
+                        &lt;path d=&quot;M8 13h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M8 17h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M14 13h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M14 17h2&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Okuma Maskesi&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;contrast&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;&gt;&lt;/circle&gt;
+                        &lt;path d=&quot;M12 18a6 6 0 0 0 0-12v12z&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Kontrast&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;desaturate&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;path d=&quot;M12 10V2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m4.93 10.93 1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M2 18h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M20 18h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m19.07 10.93-1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M22 22H2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m16 6-4 4-4-4&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M16 18a4 4 0 0 0-8 0&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Solgunla&amp;#x15F;t&amp;#x131;rma&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;low-saturation&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;path d=&quot;M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M12 8a2.828 2.828 0 1 0 4 4&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M12 2v2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M12 20v2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m4.93 4.93 1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m17.66 17.66 1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M2 12h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M20 12h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m6.34 17.66-1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m19.07 4.93-1.41 1.41&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;D&amp;#xFC;&amp;#x15F;&amp;#xFC;k Doygunluk&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ac-box-wrapper&quot;&gt;
+                &lt;div class=&quot;ac-box&quot; data-acc-option=&quot;high-saturation&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                         width=&quot;24&quot;
+                         height=&quot;24&quot;
+                         viewBox=&quot;0 0 24 24&quot;
+                         fill=&quot;none&quot;
+                         stroke=&quot;currentColor&quot;
+                         stroke-width=&quot;2&quot;
+                         stroke-linecap=&quot;round&quot;
+                         stroke-linejoin=&quot;round&quot;&gt;
+                        &lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;
+                        &lt;path d=&quot;M12 2v2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M12 20v2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m4.93 4.93 1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m17.66 17.66 1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M2 12h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M20 12h2&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m6.34 17.66-1.41 1.41&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;m19.07 4.93-1.41 1.41&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;p class=&quot;m-0&quot;&gt;Y&amp;#xFC;ksek Doygunluk&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button id=&quot;clearSettings&quot; class=&quot;ac-clear-button&quot;&gt;
+            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                 width=&quot;24&quot;
+                 height=&quot;24&quot;
+                 viewBox=&quot;0 0 24 24&quot;
+                 fill=&quot;none&quot;
+                 stroke=&quot;currentColor&quot;
+                 stroke-width=&quot;2&quot;
+                 stroke-linecap=&quot;round&quot;
+                 stroke-linejoin=&quot;round&quot;&gt;
+                &lt;path d=&quot;M3 2v6h6&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M21 12A9 9 0 0 0 6 5.3L3 8&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M21 22v-6h-6&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M3 12a9 9 0 0 0 15 6.7l3-2.7&quot;&gt;&lt;/path&gt;
+            &lt;/svg&gt;
+            Erişilebilirlik Ayarlarını Temizle
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;readingFocusTop&quot; class=&quot;reading-focus-overlay-top&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;readingFocusBottom&quot; class=&quot;reading-focus-overlay-bottom&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;readingGuideLine&quot; class=&quot;reading-guide-line&quot;&gt;&lt;/div&gt;
+        &lt;!-- End of Accessibility Section--&gt;
+        &lt;!--End:Last Footer Section--&gt;
+        &lt;!--Application JS --&gt;
+        &lt;script src=&quot;/Assets/js/accessibility.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/Assets/js/app.js&quot;&gt;&lt;/script&gt;
+
+        &lt;script src=&quot;/Contents/Scripts/jquery.validate.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/Contents/Scripts/jquery.validate.unobtrusive.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/Contents/Scripts/jquery.unobtrusive-ajax.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/footer&gt;
+    &lt;!--End:Footer--&gt;
+
+    &lt;div id=&quot;overlay&quot; class=&quot;black-screen&quot;&gt;&lt;/div&gt;
+
+    &lt;script&gt;
+        /*****Instagram Kapatıldı********/
+        /*
+         * $(document).ready(function () {
+            //Start : Instagram Feeds Carousel (Single Post end Video) Horizontal
+            var swiperHorizontal = new Swiper(&#x27;.swiper-container-h&#x27;,
+                {
+                    //slidesPerView: 3,
+                    slidesPerView: &#x27;auto&#x27;,
+                    spaceBetween: 15,
+
+                    //loop: true,
+
+                    grabCursor: true,
+
+                    //mousewheel: true,
+
+                    watchOverflow: true,
+
+                });
+        //End : Instagram Feeds Carousel Horizontal
+
+                 //Start : Instagram Feeds &quot;CAROUSEL ALBUM&quot; Vertical
+        var swiperVertical = new Swiper(&quot;.swiper-container-v&quot;,
+            {
+                direction: &quot;vertical&quot;,
+                spaceBetween: 60,
+                mousewheel: true,
+                pagination: {
+                    el: &quot;.swiper-pagination-v&quot;,
+                    clickable: true,
+                },
+                nested: true
+            });
+                //End : Instagram Feeds &quot;CAROUSEL ALBUM&quot; Vertical
+            });
+        * /
+
+        /********Twitter Kapatıldı********/
+        /*
+         *
+         * var options = {
+            &quot;url&quot;: &quot;/Contents/Vendors/CustomizeTwitter/twitter.css&quot;
+        };
+        CustomizeTwitterWidget(options);
+        */
+    &lt;/script&gt;
+
+    &lt;!--Popup image--&gt;
+
+
+    
+
+    &lt;!--Çerez Politikası--&gt;
+    
+
+&lt;script src=&quot;/Assets/js/App/Partials/Ministry/_cookieConsent.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Cookie Consent --&gt;
+&lt;div id=&quot;cookieConsent&quot;&gt;
+    &lt;div class=&quot;row col-12 justify-content-center&quot;&gt;
+
+
+        Sizlere daha iyi hizmet verebilmek i&amp;#231;in sitemizde &amp;#231;erezlere yer veriyoruz. 
+                &lt;span&gt;
+                    &amp;nbsp; Daha fazla bilgi için &lt;a href=&quot;/footer-contents/cerez-onayi-politikasi/&quot;&gt;&lt;b&gt; linke &lt;/b&gt;&lt;/a&gt; tıklayarak Çerez Politikamıza ulaşabilirsiniz.
+                &lt;/span&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;row col-12 justify-content-center&quot;&gt;
+        &lt;button class=&quot;m-1&quot; onclick=&quot;rejectAllCookies()&quot;&gt;
+            T&amp;#252;m&amp;#252;n&amp;#252; Reddet
+        &lt;/button&gt;
+        &lt;button class=&quot;m-1&quot; data-toggle=&quot;modal&quot; data-target=&quot;#cookieInfoModal&quot;&gt;
+            &amp;#199;erez Ayarları
+        &lt;/button&gt;
+        &lt;button class=&quot;m-1&quot; onclick=&quot;acceptAllCookies()&quot;&gt;
+            T&amp;#252;m&amp;#252;n&amp;#252; Kabul Et
+        &lt;/button&gt;
+    &lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;!-- Popup --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;cookieInfoModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;cookieInfoModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog modal-lg&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;h6 class=&quot;modal-title&quot; id=&quot;cookieInfoModalLabel&quot;&gt;&lt;strong&gt;&amp;#199;erez Bilgileri&lt;/strong&gt;&lt;/h6&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close position-absolute p-0&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+
+
+                &lt;div class=&quot;accordion-group&quot; data-accordion-group=&quot;&quot;&gt;
+
+                    &lt;div class=&quot;accordion mb-1&quot; data-accordion=&quot;&quot;&gt;
+                        &lt;!--TITLE--&gt;
+                        &lt;div class=&quot;accordion-control pl-1&quot; data-control=&quot;&quot;&gt;
+                            &lt;b class=&quot;font-weight-bold accordion-title&quot;&gt;&amp;#199;erez Politikası &lt;/b&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;accordion-content&quot; data-content=&quot;&quot; style=&quot;max-height: 0px; overflow: hidden; transition: max-height 300ms ease 0s;&quot;&gt;
+                            &lt;div class=&quot;accordion-content-wrapper&quot;&gt;
+                                &lt;p&gt;
+                                    T.C. &amp;#199;alışma ve Sosyal G&amp;#252;venlik Bakanlığı (Bakanlık) tarafından veya onlar adına y&amp;#252;r&amp;#252;t&amp;#252;len https://www.csgb.gov.tr başta olmak &amp;#252;zere, Bakanlık ile ilgili t&amp;#252;m internet siteleri ve &amp;#252;&amp;#231;&amp;#252;nc&amp;#252; parti programlar &amp;#252;zerinden erişilen veya kullanılan uygulamalar i&amp;#231;in ge&amp;#231;erlidir.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;accordion-group&quot; data-accordion-group=&quot;&quot;&gt;
+
+                    &lt;div class=&quot;accordion mb-1&quot; data-accordion=&quot;&quot;&gt;
+                        &lt;!--TITLE--&gt;
+                        &lt;div class=&quot;accordion-control pl-1&quot; data-control=&quot;&quot;&gt;
+                            &lt;div class=&quot;d-flex align-items-center justify-content-between&quot;&gt;
+
+                                &lt;strong class=&quot;font-weight-bold accordion-title&quot;&gt;Zorunlu &amp;#199;erezler&lt;/strong&gt;
+
+                                &lt;small class=&quot;text-right mr-2&quot; style=&quot;color: #ff00007a&quot;&gt;Her zaman etkin&lt;/small&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;accordion-content&quot; data-content=&quot;&quot; style=&quot;max-height: unset !important; overflow: hidden; transition: max-height 300ms ease 0s;&quot;&gt;
+                            &lt;div class=&quot;accordion-content-wrapper&quot;&gt;
+                                &lt;p&gt;
+                                    Bu &amp;#231;erezler, İnternet Sitesi’nin d&amp;#252;zg&amp;#252;n şekilde &amp;#231;alışması i&amp;#231;in mutlaka gerekli olan &amp;#231;erezlerdir. Bu &amp;#231;erezlere, sistemin y&amp;#246;netilebilmesi, sahte işlemlerin &amp;#246;nlenmesi i&amp;#231;in ihtiya&amp;#231; vardır ve engellenmesi halinde internet sitesi &amp;#231;alışamayacaktır.
+
+                                    &lt;br /&gt;
+                                    &lt;small&gt;
+                                        &lt;i&gt;
+                                            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;showRequiredCookies()&quot; id=&quot;requiredCookiesListButton&quot;&gt;
+                                                Tanımlama Bilgisi Ayrıntıları
+                                            &lt;/a&gt;
+                                        &lt;/i&gt;
+                                    &lt;/small&gt;
+
+
+                                    &lt;ul id=&quot;requiredCookiesList&quot; style=&quot;display:none&quot;&gt;
+                                        &lt;li&gt;
+                                            __Secure-3PSIDCC
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, pazarlama ve y&amp;#246;nlendirmelerle ilgili Shopify analizleri i&amp;#231;in kullanılmaktadır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            __Secure-1PSIDCC
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erezler, ziyaret&amp;#231;ilerin web sitemizi nasıl kullandığı hakkında bilgi toplamak i&amp;#231;in kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            __Secure-3PSIDTS
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Google&amp;#39;ın __Secure-3PSIDTS &amp;#231;erezi, Google hizmetleri ve reklamlarıyla olan etkileşimleriniz hakkında bilgi toplar. Reklamların etkinliğini &amp;#246;l&amp;#231;mek ve ilgi alanlarınıza g&amp;#246;re kişiselleştirilmiş i&amp;#231;erik sunmak i&amp;#231;in kullanılır. &amp;#199;erez benzersiz bir tanımlayıcı i&amp;#231;erir.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            SIDCC
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Google ziyaret&amp;#231;isinin orijinalliğini doğrular, Google giriş bilgilerinin hileli kullanımını &amp;#246;nler ve ziyaret&amp;#231;i verilerini yetkisiz erişime karşı korur.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            __Secure-3PAPISID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Alakalı ve kişiselleştirilmiş Google reklamlarını g&amp;#246;stermek i&amp;#231;in web sitesi ziyaret&amp;#231;isinin ilgi alanlarının bir profilini oluşturmak amacıyla hedefleme amacıyla kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            __Secure-1PSID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, alakalı ve kişiselleştirilmiş Google reklamlarını g&amp;#246;stermek amacıyla web sitesi ziyaret&amp;#231;isinin ilgi alanlarına ilişkin bir profil oluşturmak amacıyla hedefleme amacıyla kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            SAPISID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, Google tarafından, son aramalara ve &amp;#246;nceki etkileşimlere dayalı olarak Google sitelerinde kişiselleştirilmiş reklamlar g&amp;#246;r&amp;#252;nt&amp;#252;lemek i&amp;#231;in kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            __Secure-3PSID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, alakalı ve kişiselleştirilmiş Google reklamlarını g&amp;#246;stermek amacıyla web sitesi ziyaret&amp;#231;isinin ilgi alanlarına ilişkin bir profil oluşturmak amacıyla hedefleme amacıyla kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            APISID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, Google tarafından, son aramalara ve &amp;#246;nceki etkileşimlere dayalı olarak Google sitelerinde kişiselleştirilmiş reklamlar g&amp;#246;r&amp;#252;nt&amp;#252;lemek i&amp;#231;in kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            HSID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, kullanıcının Google Hesap Kimliğinin ve en son oturum a&amp;#231;ma zamanının dijital olarak imzalanmış ve şifrelenmiş kayıtlarını i&amp;#231;erir.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            __Secure-1PSIDTS
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Google&amp;#39;ın __Secure-1PSIDTS &amp;#231;erezi, Google hizmetleri ve reklamlarıyla olan etkileşimleriniz hakkında bilgi toplar. Benzersiz bir tanımlayıcı i&amp;#231;erir.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            SSID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Google, YouTube tarafından Google Haritalar&amp;#39;a entegre edilmiş haritalarda barındırılan videolara ilişkin ziyaret&amp;#231;i bilgilerini toplar.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            SID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Kullanıcının Google Hesap Kimliğinin ve en son giriş zamanının dijital olarak imzalanmış ve şifrelenmiş kayıtlarını i&amp;#231;erir ve Google&amp;#39;ın bir&amp;#231;ok saldırı t&amp;#252;r&amp;#252;n&amp;#252; engellemesine olanak tanır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            __Secure-1PAPISID
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, alakalı ve kişiselleştirilmiş Google reklamlarını g&amp;#246;stermek amacıyla web sitesi ziyaret&amp;#231;isinin ilgi alanlarına ilişkin bir profil oluşturmak amacıyla hedefleme amacıyla kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            YSC
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            YouTube&amp;#39;da kullanıcının izlediği videoların istatistiklerini tutmak i&amp;#231;in benzersiz bir kimlik tutmak i&amp;#231;in kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            PREF
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez, tercihlerinizi ve diğer bilgileri, &amp;#246;zellikle tercih edilen dil, sayfanızda ka&amp;#231; arama sonucu g&amp;#246;sterilmesini istediğinizi ve Google&amp;#39;ın G&amp;#252;venli Arama filtresinin a&amp;#231;ık olmasını isteyip istemediğinizi saklar.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            ar_debug
+                                            &lt;br /&gt;
+                                            .www.google-analytics.com
+                                            &lt;br /&gt;
+                                            Teknik hata ayıklayıcı &amp;#231;erezin mevcut olup olmadığını kontrol eden bir Google &amp;#231;erezi.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            VISITOR_PRIVACY_METADATA
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Ge&amp;#231;erli alan adı i&amp;#231;in kullanıcının &amp;#231;erez izin durumunu saklar.
+                                        &lt;li&gt;
+                                            LOGIN_INFO
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            YouTube (Google) tarafından kullanıcı giriş ve bilgilerini elde etmek amacıyla kullanılır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            ASP.NET_SessionId
+                                            &lt;br /&gt;
+                                            .csgb.gov.tr
+                                            &lt;br /&gt;
+                                            ASP.Net_SessionId, kullanıcıların sunucudaki oturumunu tanımlamak i&amp;#231;in kullanılan bir &amp;#231;erezdir.&amp;#160;Sunucudaki kapalı HTTP istekleri arasında veri depolamak i&amp;#231;in kullanılan oturum.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            TS01befc97
+                                            &lt;br /&gt;
+                                            .csgb.gov.tr
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erezler, web taleplerinizin oturumunuz s&amp;#252;resince altyapımızdaki aynı sunucu tarafından tutarlı bir şekilde işlenmesini sağlamak amacıyla web sunucusu altyapımız tarafından ayarlanır.
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            VISITOR_INFO1_LIVE
+                                            &lt;br /&gt;
+                                            .youtube.com
+                                            &lt;br /&gt;
+                                            Entegre YouTube videolarının bulunduğu sayfalarda kullanıcıların bant genişliğini tahmin etmeye &amp;#231;alışır.
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+
+                                &lt;/p&gt;
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;accordion-group&quot; data-accordion-group=&quot;&quot;&gt;
+
+                    &lt;div class=&quot;accordion mb-1&quot; data-accordion=&quot;&quot;&gt;
+                        &lt;!--TITLE--&gt;
+                        &lt;div class=&quot;accordion-control pl-1&quot; data-control=&quot;&quot;&gt;
+                            &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+
+                                &lt;b class=&quot;font-weight-bold accordion-title&quot;&gt;Analitik &amp;#199;erezleri&lt;/b&gt;
+
+                                &lt;!-- Switch-Style Checkbox --&gt;
+                                &lt;div class=&quot;checkbox-wrapper-6 ml-auto&quot;&gt;
+                                    &lt;input class=&quot;tgl tgl-light&quot; id=&quot;cookie-analytics-checkbox&quot; type=&quot;checkbox&quot; /&gt;
+                                    &lt;label class=&quot;tgl-btn pull-right mr-1&quot; for=&quot;cookie-analytics-checkbox&quot;&gt;&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;accordion-content&quot; data-content=&quot;&quot; style=&quot;max-height: 0px; overflow: hidden; transition: max-height 300ms ease 0s;&quot;&gt;
+                            &lt;div class=&quot;accordion-content-wrapper&quot;&gt;
+                                &lt;p&gt;
+                                    Analitik &amp;#231;erezler ile Site&amp;#39;yi ziyaret edenlerin sayıları, Site&amp;#39;de g&amp;#246;r&amp;#252;nt&amp;#252;lenen sayfaların tespiti, Site ziyaret saatleri, Site sayfaları kaydırma hareketleri gibi analitik sonu&amp;#231;ların &amp;#252;retimini sağlayan &amp;#231;erezlerdir.
+
+                                    &lt;br /&gt;
+                                    &lt;small&gt;
+                                        &lt;i&gt;
+                                            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;showAnalyticsCookies()&quot; id=&quot;requiredCookiesListButton&quot;&gt;
+                                                Tanımlama Bilgisi Ayrıntıları
+                                            &lt;/a&gt;
+                                        &lt;/i&gt;
+                                    &lt;/small&gt;
+
+
+                                    &lt;ul id=&quot;analyticsCookiesList&quot; style=&quot;display:none&quot;&gt;
+                                        &lt;li&gt;
+                                            _ga
+                                            &lt;br /&gt;
+                                            .csgb.gov.tr
+                                            &lt;br /&gt;
+                                            Bu &amp;#231;erez Google Analytics tarafından y&amp;#252;klenir. &amp;#199;erez, sitenin analiz raporu i&amp;#231;in ziyaret&amp;#231;i, oturum, kampanya verilerini hesaplamak ve site kullanımını takip etmek i&amp;#231;in kullanılır. &amp;#199;erezler bilgileri anonim olarak saklar ve benzersiz ziyaret&amp;#231;ileri tanımlamak i&amp;#231;in rastgele oluşturulmuş bir sayı atar.
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-sm&quot; data-dismiss=&quot;modal&quot; onclick=&quot;acceptSomeCookies()&quot;&gt;Se&amp;#231;imleri Onayla&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-sm&quot; data-dismiss=&quot;modal&quot; onclick=&quot;acceptAllCookies()&quot;&gt;T&amp;#252;m&amp;#252;n&amp;#252; Kabul Et&lt;/button&gt;
+                &lt;!-- Ek başka butonlar ekleyebilirsiniz --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+&lt;/style&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
