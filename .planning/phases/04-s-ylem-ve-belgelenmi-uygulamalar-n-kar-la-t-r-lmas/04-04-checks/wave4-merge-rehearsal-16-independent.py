@@ -10,13 +10,15 @@ import sqlite3
 
 checks = Path(__file__).resolve().parent
 job = argv[1]
+number = argv[2] if len(argv) == 3 else "16"
+assert number in {"16", "17"}
 prefix = "UNION_REHEARSAL_PREVIEW_OK "
-log = checks / f"wave4-merge-rehearsal-16-{job}-slurm.log"
-frozen = json.loads((checks / "wave4-merge-rehearsal-16.json").read_bytes())
+log = checks / f"wave4-merge-rehearsal-{number}-{job}-slurm.log"
+frozen = json.loads((checks / f"wave4-merge-rehearsal-{number}.json").read_bytes())
 previous = json.loads((checks / "wave4-merge-rehearsal-12-62615150-independent.json").read_bytes())
 line, = (line for line in log.read_text().splitlines() if line.startswith(prefix))
 receipt = json.loads(line.removeprefix(prefix))
-assert receipt["job"] == receipt["validation_job"] == job and receipt["rehearsal"] == "16"
+assert receipt["job"] == receipt["validation_job"] == job and receipt["rehearsal"] == number
 folder = Path(receipt["preview"])
 
 
@@ -39,7 +41,7 @@ origins = sum(row["origin_kind"] == "review_origins" for row in records["practic
 assert origins == frozen["review_origins"]
 joint_key = "yerel-yonetimler-2020-05-18-ortak-bildiri"
 assert receipt["source_permissions"] == 655
-assert frozen["added_reviewed_candidates"] == [joint_key]
+assert frozen["added_reviewed_candidates"] == ([joint_key] if number == "16" else [])
 halic_key = "halic-emek-ozgurluk-2022-09-24"
 yok_key = "yok-2023-03-30-bahar-yuzyuze-secenegi"
 assert set(receipt["shared_keys"]) == set(previous["shared_keys"]) | {halic_key, yok_key, joint_key}
@@ -173,6 +175,12 @@ for kind, identities in (("practice", relations), ("unmatched", unmatched)):
         for view in ("party", "comparison"):
             anchor = f"{view}-{kind}-{ident}"
             assert html.count(f'id="{anchor}"') == 1 and f'href="#{anchor}"' in html, anchor
+new_relations = {
+    "0405-tip-2018-institution-member-relation": ("6 Ekim", "10 Ekim", "24 Haziran", "HDP"),
+    "0405-tip-2018-institution-meeting-relation": ("21 Ekim", "26 Ekim", "4 Aralık", "Gazi Cemevi"),
+    "0405-tip-2018-institution-elig-relation": ("2 Ocak", "13 parti", "TİP"),
+} if number == "17" else {}
+assert set(new_relations) <= set(relations)
 for relation, phrases in {
     "0405-tip-halic-cemevi-2022-halic-relation": ("25 Ağustos", "24 Eylül", "25 Eylül", "Erkan Baş"),
     "0410-halic-2022-relation": ("14 Eylül", "24 Eylül", "Ercüment Akdeniz"),
@@ -188,6 +196,7 @@ for relation, phrases in {
     "0405-tip-2020-2021-court-wage-election-wage-relation": ("9 Aralık", "28 Aralık", "2.825,90"),
     "0405-tip-2020-2021-court-wage-election-election-relation": ("21 Haziran", "23 Haziran", "4.742.082"),
     "0411-saadet-election-2023-relation": ("18 Ocak", "10 Mart", "14 Mayıs"),
+    **new_relations,
 }.items():
     for view in ("party", "comparison"):
         card = html.split(f'id="{view}-practice-{relation}"', 1)[1].split("</article>", 1)[0]
@@ -202,8 +211,8 @@ receipt.update(independently_verified=True, terminal_validation_exit="0:0",
                    joint_key: {"event_id": joint_event, "aliases": 4}}),
                joint_statement_candidates=sorted(joint_candidates), joint_statement_roles=sorted(joint_roles),
                halic_contributions=sorted(roles, key=lambda row: (row[0], row[1] or "", row[2])),
-               audited_new_relations=list(expected_relations),
+               audited_new_relations=[*expected_relations, *new_relations],
                verified_separate_akbelen_events=[relations["0407-akbelen-2023-relation"], relations["0410-akbelen-meeting-relation"]])
-with (checks / f"wave4-merge-rehearsal-16-{job}-independent.json").open("x") as stream:
+with (checks / f"wave4-merge-rehearsal-{number}-{job}-independent.json").open("x") as stream:
     stream.write(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
-print("REHEARSAL_16_INDEPENDENT_OK", receipt["events"], receipt["relations"], len(unmatched), origins, flush=True)
+print(f"REHEARSAL_{number}_INDEPENDENT_OK", receipt["events"], receipt["relations"], len(unmatched), origins, flush=True)
