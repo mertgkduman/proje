@@ -10633,6 +10633,110 @@
       "limitations": "İmzalı başvuru ve YSK kararı ile karar numarası açık.",
       "result": "reviewed",
       "reason": "DEM yayını ve iki ayrı basın aktarımı okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-hdp-sign|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-hdp-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-hdp-sign\"]",
+      "inspected_sections": "[\"HDP yayını ve tarihsel imzacı\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_event_evidence 0406-yesilsol-2020-event|0406-yesilsol-2020-hdp-sign|action",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-hdp-date|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-hdp-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-hdp-date\"]",
+      "inspected_sections": "[\"Ortak bildirinin tarihi\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_event_evidence 0406-yesilsol-2020-event|0406-yesilsol-2020-hdp-date|action",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-birgun-title|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-birgun-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-birgun-title\"]",
+      "inspected_sections": "[\"Bağımsız gazete ortak bildiri haberi\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_event_evidence 0406-yesilsol-2020-event|0406-yesilsol-2020-birgun-title|action",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-birgun-sign|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-birgun-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-birgun-sign\"]",
+      "inspected_sections": "[\"Basılı sayfada Yeşil Sol imzası\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_event_evidence 0406-yesilsol-2020-event|0406-yesilsol-2020-birgun-sign|action",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0406-yesilsol-2020-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-birgun-v1\", \"0406-yesilsol-2020-hdp-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-birgun-sign\", \"0406-yesilsol-2020-birgun-title\", \"0406-yesilsol-2020-hdp-date\", \"0406-yesilsol-2020-hdp-sign\"]",
+      "inspected_sections": "[\"Basılı sayfada Yeşil Sol imzası\", \"Bağımsız gazete ortak bildiri haberi\", \"HDP yayını ve tarihsel imzacı\", \"Ortak bildirinin tarihi\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_event 0406-yesilsol-2020-event",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0406-yesilsol-2020-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-birgun-v1\", \"0406-yesilsol-2020-hdp-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-birgun-sign\", \"0406-yesilsol-2020-birgun-title\", \"0406-yesilsol-2020-hdp-date\", \"0406-yesilsol-2020-hdp-sign\"]",
+      "inspected_sections": "[\"Basılı sayfada Yeşil Sol imzası\", \"Bağımsız gazete ortak bildiri haberi\", \"HDP yayını ve tarihsel imzacı\", \"Ortak bildirinin tarihi\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_contribution 0406-yesilsol-2020-contribution",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0406-yesilsol-2020-contribution",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-birgun-v1\", \"0406-yesilsol-2020-hdp-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-birgun-sign\", \"0406-yesilsol-2020-birgun-title\", \"0406-yesilsol-2020-hdp-date\", \"0406-yesilsol-2020-hdp-sign\"]",
+      "inspected_sections": "[\"Basılı sayfada Yeşil Sol imzası\", \"Bağımsız gazete ortak bildiri haberi\", \"HDP yayını ve tarihsel imzacı\", \"Ortak bildirinin tarihi\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_contribution.finding_id 0406-yesilsol-2020-contribution",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0406-yesilsol-2020-candidate",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-24T23:22:54.998623+00:00",
+      "source_version_ids": "[\"0406-yesilsol-2020-birgun-v1\", \"0406-yesilsol-2020-hdp-v1\"]",
+      "passage_ids": "[\"0406-yesilsol-2020-birgun-sign\", \"0406-yesilsol-2020-birgun-title\", \"0406-yesilsol-2020-hdp-date\", \"0406-yesilsol-2020-hdp-sign\"]",
+      "inspected_sections": "[\"Basılı sayfada Yeşil Sol imzası\", \"Bağımsız gazete ortak bildiri haberi\", \"HDP yayını ve tarihsel imzacı\", \"Ortak bildirinin tarihi\"]",
+      "supported_claim": "2020 yerel yönetimler ortak bildirisi practice_candidate 0406-yesilsol-2020-candidate",
+      "limitations": "HDP yayıncıdır, bireysel imza yetkilisi açık. Gazete sayfa metni sütunları karıştırır.",
+      "result": "reviewed",
+      "reason": "HDP yayını ve bağımsız BirGün sayfası okundu."
     }
   ],
   "source_review_refs": [
@@ -13907,6 +14011,38 @@
     {
       "subject_kind": "practice_contribution.finding_id",
       "subject_id": "0406-van-2024-contribution"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-hdp-sign|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-hdp-date|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-birgun-title|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0406-yesilsol-2020-event|0406-yesilsol-2020-birgun-sign|action"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0406-yesilsol-2020-event"
+    },
+    {
+      "subject_kind": "practice_contribution",
+      "subject_id": "0406-yesilsol-2020-contribution"
+    },
+    {
+      "subject_kind": "practice_contribution.finding_id",
+      "subject_id": "0406-yesilsol-2020-contribution"
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0406-yesilsol-2020-candidate"
     }
   ]
 }
