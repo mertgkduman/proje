@@ -650,3 +650,11 @@ EMEP API kaynak dilimi 298, özgün sayfa 25 içindeki 3263, 3260, 3254, 3252 ve
 Saadet’in 374 numaralı yayını, refah payı ve asgari ücret hedefini parti iktidarı koşuluyla içeriyor. Kaynak sayacı 292/649, açık gövde 357. [Saadet makbuzu](../04-11-checks/party-news-205-reading.json)
 
 TBMM 2/3961, 295 sıra sayılı raporun basılı 27–30. sayfalarındaki DEM muhalefet şerhi görsel okundu. Metin ve üç basılı milletvekili adı kaynakta. Kişisel komisyon oyu ile kesim sonrası yürürlük ayrı araştırılıyor. [DEM makbuzu](../04-06-checks/2026-3961-dem-muhalefet-serhi-gorsel-okuma.md)
+
+ÇarkBaşak sayı 8'in 20 sayfası iki dilimde okundu. İlk sekiz sayı toplam 190 sayfa. 3.000 TL önerisinin brüt/net tanımı ve 8 Aralık Bakırköy mitingindeki TİP fiilî katılımı açık. [Aralık makbuzu](../04-05-checks/tip-cark-basak-catalog/issue-08/reading-01.json)
+
+2019 3.000 TL hedefi ve 2020 ücret kararı, 7197 bütçe kabulü, 7438 EYT düzenlemesi ve 19 Kasım Kıbrıs bildirisi için TİP’in 57 olay ve 53 ilişkilik adayı 62708340 ile denetimde. Bütçe birleşim tarihi ve ertesi takvim günü kabulü, ücretin açıklanması ve Resmî Gazete yayımı, EYT yaş ölçütü ve başka şartlar, Kıbrıs görüşmesi ve bildiri ayrı. [Kaynak makbuzu](../04-05-checks/2019-campaign-sources/reading.json) [Aday denetimi](../04-05-checks/tip-2019-campaign-validation.py)
+
+Saadet yayın 373 ve 372, DP ev sahipliğindeki altı lider toplantısı ve öğretmen kariyer ödemesine ilişkin önerileri içeriyor. Toplam 294/649 özgün gövde, 355 açık. [Dilim 206](../04-11-checks/party-news-206-reading.json) [Dilim 207](../04-11-checks/party-news-207-reading.json)
+
+DEM 2/3961 komisyon şerhi için 89 olay ve 13 ilişkilik adayın üç kapısı 62708088, bağımsız denetimi 62708185. 27 Ekim komisyon işlemi 5 Kasım Genel Kurul kabulünden ayrı. 14 Kasım Resmî Gazete yayımı kapsam kesiminden sonra.
