@@ -1,0 +1,121 @@
+[
+  {
+    "candidate_key": "yerel-yonetimler-2020-05-18-ortak-bildiri",
+    "differing_fields": [],
+    "canonical_event_id": "0406-yesilsol-2020-event",
+    "decision": "same",
+    "common_source_sha256": [
+      "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22"
+    ],
+    "overlap_reason": "19 Mayıs 2020 BirGün basılı sayısının 8. sayfası, 18 Mayıs ortak bildirisini ve dört partinin imzasını gösteriyor. TİP ve HDP özgün metinlerinin yayıncıları ve tarihsel imzacılar kendi kaynaklarında korunuyor. Bildiri yayımlanması ile belediye işlemleri ayrı.",
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-25T17:51:01.970245+00:00",
+    "members": {
+      "tip": {
+        "event": {
+          "id": "0405-tip-2020-2021-court-wage-election-joint-event",
+          "common_event_key": "yerel-yonetimler-2020-05-18-ortak-bildiri",
+          "event_at": "2020-05-18",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Yerel yönetimlere ilişkin 18 Mayıs 2020 ortak bildirisi",
+          "scope_context": "18 Mayıs 2020 tarihli ortak bildirinin yayımlanması.",
+          "occurrence_basis": "18 Mayıs tarihli ortak açıklama ve 19 Mayıs BirGün basılı sayı, sayfa 8."
+        },
+        "passages": [
+          {
+            "passage_id": "0405-tip-2020-2021-court-wage-election-joint-press-p",
+            "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+            "source": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+            "section": "19 Mayıs BirGün haberinde TİP imzası, parti adı önceki satırdaki Türkiye ile başlıyor",
+            "claim": "19 Mayıs BirGün haberinde TİP imzası, parti adı önceki satırdaki Türkiye ile başlıyor"
+          }
+        ]
+      },
+      "dem": {
+        "event": {
+          "id": "0406-yesilsol-2020-event",
+          "common_event_key": "yerel-yonetimler-2020-05-18-ortak-bildiri",
+          "event_at": "2020-05-18",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Yerel yönetimlere ilişkin 18 Mayıs 2020 ortak bildirisi",
+          "scope_context": "18 Mayıs 2020 tarihli ortak bildirinin yayımlanması.",
+          "occurrence_basis": "18 Mayıs tarihli ortak açıklama ve 19 Mayıs BirGün basılı sayı, sayfa 8."
+        },
+        "passages": [
+          {
+            "passage_id": "0406-yesilsol-2020-birgun-title",
+            "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+            "source": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+            "section": "Bağımsız gazete ortak bildiri haberi",
+            "claim": "Bağımsız gazete ortak bildiri haberi"
+          },
+          {
+            "passage_id": "0406-yesilsol-2020-birgun-sign",
+            "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+            "source": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+            "section": "Basılı sayfada Yeşil Sol imzası",
+            "claim": "Basılı sayfada Yeşil Sol imzası"
+          }
+        ]
+      },
+      "dbp": {
+        "event": {
+          "id": "0409-joint-2020-dbp-event",
+          "common_event_key": "yerel-yonetimler-2020-05-18-ortak-bildiri",
+          "event_at": "2020-05-18",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Yerel yönetimlere ilişkin 18 Mayıs 2020 ortak bildirisi",
+          "scope_context": "18 Mayıs 2020 tarihli ortak bildirinin yayımlanması.",
+          "occurrence_basis": "18 Mayıs tarihli ortak açıklama ve 19 Mayıs BirGün basılı sayı, sayfa 8."
+        },
+        "passages": [
+          {
+            "passage_id": "0409-joint-2020-birgun-title",
+            "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+            "source": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+            "section": "Basılı haber başlığı",
+            "claim": "BirGün sonraki gün ortak bildiriyi haberleştirdi."
+          },
+          {
+            "passage_id": "0409-joint-2020-birgun-signature",
+            "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+            "source": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+            "section": "Basılı haber DBP imza listesi",
+            "claim": "BirGün basılı haberi DBPyi imzacı listesinde sayar."
+          }
+        ]
+      },
+      "emep": {
+        "event": {
+          "id": "0410-joint-2020-emep-event",
+          "common_event_key": "yerel-yonetimler-2020-05-18-ortak-bildiri",
+          "event_at": "2020-05-18",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Yerel yönetimlere ilişkin 18 Mayıs 2020 ortak bildirisi",
+          "scope_context": "18 Mayıs 2020 tarihli ortak bildirinin yayımlanması.",
+          "occurrence_basis": "18 Mayıs tarihli ortak açıklama ve 19 Mayıs BirGün basılı sayı, sayfa 8."
+        },
+        "passages": [
+          {
+            "passage_id": "0410-joint-2020-birgun-title",
+            "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+            "source": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+            "section": "Basılı haber başlığı",
+            "claim": "BirGün sonraki gün ortak bildiriyi haberleştirdi."
+          },
+          {
+            "passage_id": "0410-joint-2020-birgun-signature",
+            "sha256": "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22",
+            "source": "https://static.birgun.net/belge/2020/05/19/19-mayis-birgun-atejcd.pdf",
+            "section": "Basılı haber EMEP imza listesi",
+            "claim": "BirGün basılı haberi EMEPyi imzacı listesinde sayar."
+          }
+        ]
+      }
+    }
+  }
+]
