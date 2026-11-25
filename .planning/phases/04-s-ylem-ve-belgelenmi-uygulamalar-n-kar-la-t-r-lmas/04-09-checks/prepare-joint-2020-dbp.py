@@ -3,6 +3,7 @@ from hashlib import sha256
 import json,sys
 here=Path(sys.argv[1]); template=(here/'prepare-diyarbakir-cng.py').read_text(); head=template[:template.index("assert party == 'dbp'")]
 head=head.replace("read(here/'diyarbakir-cng-source-records.json')","read(here/'joint-2020-dbp-source-records.json')").replace("read(here/'baglar-cemr-draft.json')","read(data/'practices/04-dbp.json')").replace("read(here/'baglar-cemr-review-draft.json')","read(data/'practices/04-dbp-review.json')").replace('cng-reading-','joint-2020-dbp-reading-').replace('Diyarbakır belediye ulaşımı ve DBP’nin belgelenen katkısı dar kapsamda incelendi.','18 Mayıs 2020 ortak bildirisi ve DBP imzası dar kapsamda incelendi.').replace('27 Mayıs 2015 tarihli Temsilci haberi ve ayrı belediye ulaşımı kaynakları.','18 Mayıs tarihli ortak açıklama ve 19 Mayıs BirGün basılı sayı, sayfa 8.')
+head=head.replace("2015 tanıtımı ve belediye ulaşımının ilgili kaynak bağlamı.","18 Mayıs 2020 ortak bildirisinin yayın tarihi ve imzacıları.")
 exec(head,globals())
 assert sha256((data/'practices/04-dbp.json').read_bytes()).hexdigest()=='3e1e0bd7bc3f05adf2cf8ca32a5d3fe0544c9f810faf15af076098bb8a86e134'
 assert sha256((data/'practices/04-dbp-review.json').read_bytes()).hexdigest()=='b5b55ae18b0851ac620adc1cfe56b774c416ae86c8623ae986e107e9b856f8fe'
