@@ -643,7 +643,7 @@ Saadet'in 376 ve 375 numaralı yayınlarının arşivli API gövdeleri okundu. K
 
 TİP’in 53 olay ve 49 ilişkili çalışma çifti 62702313 ile bağımsız doğrulandı. Damal’da Şubat desteği, YSK bağımsız aday statüsü ve Anadolu Ajansı verili 75 oy sonucu ayrı. TİP’in 30 Haziran 2020 beyanı, 26 Ocak 2021 YSK listesinde yer almaması ve 12 Ocak 2022 listesinde 20. sırada yer alması kendi kaynaklarıyla doğrulandı. Özsüt desteği eşleşmemiş bir olay, ödeme sözü ve haberleştirilen kısmi ödeme ayrı aşamalar. İlçe sonuç tutanağı, partiye özgü YSK inceleme evrakı ve Özsüt son ödeme kapsamı açık. [Bağımsız doğrulama](../04-05-checks/tip-2019-local-eligibility-labor-62702313-independent.log)
 
-ÇarkBaşak sayı 1–7, dizinde görünen 31 sayının 174 özgün PDF sayfasıyla okundu. Kasım 2019 sayısında metin katmanı yetersiz olduğundan 20 sayfanın tamamı görsel okundu. Kasım deprem eğitimi, Öğrenci Bürosu kararı ve 11–12 Ekim Kıbrıs görüşmeleri için muhatap veya kurum belgeleri ayrıca izleniyor. [ÇarkBaşak kataloğu](../04-05-checks/tip-cark-basak-catalog/DEVAM.md)
+ÇarkBaşak sayı 1–7, dizinde görünen 31 sayının 170 özgün PDF sayfasıyla okundu. Kasım 2019 sayısında metin katmanı yetersiz olduğundan 20 sayfanın tamamı görsel okundu. Kasım deprem eğitimi, Öğrenci Bürosu kararı ve 11–12 Ekim Kıbrıs görüşmeleri için muhatap veya kurum belgeleri ayrıca izleniyor. [ÇarkBaşak kataloğu](../04-05-checks/tip-cark-basak-catalog/DEVAM.md)
 
 EMEP API kaynak dilimi 298, özgün sayfa 25 içindeki 3263, 3260, 3254, 3252 ve 3248 numaralı beş gövdeyi kapsıyor. İstanbul yeniden sayım çağrısı ve mazbata talebi parti sözü. Denizli’deki halk meclisi aday hedefi. Sırada 3244 var. [EMEP makbuzu](../04-10-checks/party-api-298-source-reading.json)
 
