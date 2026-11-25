@@ -1,0 +1,45 @@
+{
+  "tranche_id": "saadet-party-news-207",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-25T22:26:49.362091+00:00",
+  "reads": [
+    {
+      "post_id": 372,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/turkiye-hoyratca-idare-edilemez",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=turkiye-hoyratca-idare-edilemez",
+      "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=turkiye-hoyratca-idare-edilemez",
+      "http_status": 200,
+      "published_at": "2022-11-22T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-25T21:40:01.636749+00:00",
+      "original_path": "party-news-bodies/372.json",
+      "original_bytes": 20503,
+      "sha256": "495cdeba03f0062d609a14325a80a16f2e5a9dd5b2578b3e252861f7563eb3f2",
+      "normalized_body_sha256": "60559cbc5bd29e24dbdf583a73afaa1623d44615e82c8687b577f6e9fbb873af",
+      "source_section_range": [
+        0,
+        16119
+      ],
+      "state": "examined",
+      "reading": "Temel Karamollaoğlu öğretmenlerin kariyer sınavının kaldırılması, kariyerin kıdeme bağlanması ve kariyer ödemesinin artırılarak emekliliğe yansıtılmasını savunuyor.",
+      "selected_passages": [
+        {
+          "start": 15600,
+          "end": 15727,
+          "exact": "Sınav kalkmalı, kariyer kıdeme bağlanmalıdır. Kariyer kaynaklı ödeme miktarı hem artırılmalı hem de emekliliğe yansıtılmalıdır."
+        }
+      ],
+      "point": "Öğretmen kariyeri, ücret ve emeklilik hedefleri.",
+      "statement": "Temel Karamollaoğlu öğretmenlerin kariyer sınavının kaldırılması, kariyerin kıdeme bağlanması ve kariyer ödemesinin artırılarak emekliliğe yansıtılmasını savunuyor.",
+      "concrete_evidence": "23 Kasım 2022 Türkiye yerel günlü parti yayımı 7354 sayılı Öğretmenlik Meslek Kanununu eleştiriyor ve bu cümleleri Saadet iktidarının icraatları olarak niteliyor.",
+      "open_provenance": "Metin bunların mevcut iktidardan talep değil Saadet iktidarı için icraat cümleleri olduğunu açıkça belirtiyor. Sonraki mevzuat, fiilî ödeme ve parti yetkisi ayrıca incelenmedi."
+    }
+  ],
+  "completed_pre_cut_bodies": 294,
+  "remaining_pre_cut_bodies": 355,
+  "closure_refs": [],
+  "source_token_observation": "Tam tekil gövdenin okuma çıktısı araç tarafından yaklaşık 4599 token olarak raporlandı ve 12.000 token sınırının altında.",
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı indirme dosyasının ilk yazılma zamanıdır."
+}

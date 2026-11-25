@@ -1,0 +1,45 @@
+{
+  "tranche_id": "saadet-party-news-206",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-25T22:26:49.351401+00:00",
+  "reads": [
+    {
+      "post_id": 373,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/secimlere-de-iktidara-da-haziriz",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=secimlere-de-iktidara-da-haziriz",
+      "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=secimlere-de-iktidara-da-haziriz",
+      "http_status": 200,
+      "published_at": "2022-11-29T21:00:00+00:00",
+      "updated_at": null,
+      "accessed_at": "2026-11-25T21:40:01.290748+00:00",
+      "original_path": "party-news-bodies/373.json",
+      "original_bytes": 17112,
+      "sha256": "c701bd2b134effe88a158a4101d91786ce33ec5146b8139e63639fc6e0a75869",
+      "normalized_body_sha256": "f20add8075cd996631af52c70677b7272b443d5f62c35417c1c06382d67e8d85",
+      "source_section_range": [
+        0,
+        12734
+      ],
+      "state": "examined",
+      "reading": "Temel Karamollaoğlu anayasa değişikliği teklifinin kamuoyuna sunulduğunu ve ardından Gültekin Uysal ev sahipliğinde ikinci turun üçüncü toplantısının yapıldığını söylüyor.",
+      "selected_passages": [
+        {
+          "start": 2229,
+          "end": 2346,
+          "exact": "Ardından da Demokrat Parti Genel Başkanı Gültekin Uysal'ın ev sahipliğinde, 2. turun 3. toplantısını gerçekleştirdik."
+        }
+      ],
+      "point": "Altı partinin anayasa teklifi ve Demokrat Parti ev sahipliği.",
+      "statement": "Temel Karamollaoğlu anayasa değişikliği teklifinin kamuoyuna sunulduğunu ve ardından Gültekin Uysal ev sahipliğinde ikinci turun üçüncü toplantısının yapıldığını söylüyor.",
+      "concrete_evidence": "30 Kasım 2022 Türkiye yerel günlü parti yayımı, pazartesi sunumu ile ardından gerçekleştiği belirtilen toplantıyı ayırıyor.",
+      "open_provenance": "Pazartesi 28 Kasım 2022’ye işaret eder. Toplantı günü ve kapsamı ile ortak teklifin özgün metni başka bir tarihli kaynaktan henüz doğrulanmadı. Parti anlatımı tek başına teklifin Meclise sunulmasını veya kabulünü göstermez."
+    }
+  ],
+  "completed_pre_cut_bodies": 293,
+  "remaining_pre_cut_bodies": 356,
+  "closure_refs": [],
+  "source_token_observation": "Tam tekil gövdenin okuma çıktısı araç tarafından yaklaşık 3686 token olarak raporlandı ve 12.000 token sınırının altında.",
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı indirme dosyasının ilk yazılma zamanıdır."
+}
