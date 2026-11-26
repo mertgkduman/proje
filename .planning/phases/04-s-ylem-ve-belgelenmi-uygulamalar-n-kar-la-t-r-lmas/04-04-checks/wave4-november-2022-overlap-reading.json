@@ -1,0 +1,118 @@
+[
+  {
+    "candidate_key": "six-leaders-2022-11-28-dp-meeting",
+    "differing_fields": [],
+    "canonical_event_id": "0411-saadet-nov-2022-meeting-event",
+    "decision": "same",
+    "common_source_sha256": [
+      "8b2d283fd2a306af8e7b97e11558b0737210021bad5c9bc886b47ece87870f39"
+    ],
+    "overlap_reason": "İHA aynı gün Demokrat Parti Genel Merkezindeki liderler toplantısını yayımladı. 14 Kasım ortak planı, 28 Kasım toplantısına ev sahipliği ve katılım rolleri ayrı.",
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-26T04:03:22.051797+00:00",
+    "members": {
+      "saadet": {
+        "event": {
+          "id": "0411-saadet-nov-2022-meeting-event",
+          "common_event_key": "six-leaders-2022-11-28-dp-meeting",
+          "event_at": "2022-11-28",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Altı liderin Demokrat Parti ev sahipliğindeki toplantısı",
+          "scope_context": "Altı siyasi parti liderinin 28 Kasım 2022 tarihinde Demokrat Parti Genel Merkezindeki toplantısı.",
+          "occurrence_basis": "28 Kasım 2022’de Demokrat Parti Genel Merkezinde altı liderin yaptığı toplantıyı DEVA Partisinin 28. sayı bültenindeki ortak açıklama ve İHA haberi belgeliyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0411-six-leaders-nov-2022-iha-host",
+            "sha256": "8b2d283fd2a306af8e7b97e11558b0737210021bad5c9bc886b47ece87870f39",
+            "source": "https://www.sondakika.com/guncel/haber-altili-masa-nin-9-toplantisi-6-saat-surdu-15459327/",
+            "section": "DP Genel Merkezindeki toplantı",
+            "exact": "ev sahipliğinde Demokrat Parti Genel Merkezi'nde gerçekleştirildi.",
+            "claim": "İHA haberi toplantının Demokrat Parti Genel Merkezinde ev sahipliğiyle yapıldığını bildiriyor."
+          }
+        ]
+      },
+      "demokrat": {
+        "event": {
+          "id": "0412-six-leaders-2022-11-28-meeting-event",
+          "common_event_key": "six-leaders-2022-11-28-dp-meeting",
+          "event_at": "2022-11-28",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Altı liderin Demokrat Parti ev sahipliğindeki toplantısı",
+          "scope_context": "Altı siyasi parti liderinin 28 Kasım 2022 tarihinde Demokrat Parti Genel Merkezindeki toplantısı.",
+          "occurrence_basis": "28 Kasım 2022’de Demokrat Parti Genel Merkezinde altı liderin yaptığı toplantıyı DEVA Partisinin 28. sayı bültenindeki ortak açıklama ve İHA haberi belgeliyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0412-six-leaders-2022-11-28-meeting-role-p",
+            "sha256": "8b2d283fd2a306af8e7b97e11558b0737210021bad5c9bc886b47ece87870f39",
+            "source": "https://www.sondakika.com/guncel/haber-altili-masa-nin-9-toplantisi-6-saat-surdu-15459327/",
+            "section": "İHA haberinde Uysal ev sahipliğinde DP genel merkezi toplantısı",
+            "exact": "Gültekin Uysal</a>'ın ev sahipliğinde Demokrat Parti Genel Merkezi'nde gerçekleştirildi.",
+            "claim": "28 Kasım’da altı lider Demokrat Parti Genel Merkezinde Gültekin Uysal’ın ev sahipliğinde toplandı."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "candidate_key": "six-party-2022-11-28-constitutional-proposal-presentation",
+    "differing_fields": [],
+    "canonical_event_id": "0411-saadet-nov-2022-presentation-event",
+    "decision": "same",
+    "common_source_sha256": [
+      "820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65"
+    ],
+    "overlap_reason": "VOA Türkçe aynı gün Bilkent Otel’deki altı parti anayasa önerisi tanıtımını yayımladı. Saadet adına sunum ve Demokrat Parti genel başkanının katılımı ayrı dayanaklı.",
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-26T04:03:22.056451+00:00",
+    "members": {
+      "saadet": {
+        "event": {
+          "id": "0411-saadet-nov-2022-presentation-event",
+          "common_event_key": "six-party-2022-11-28-constitutional-proposal-presentation",
+          "event_at": "2022-11-28",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Altı partinin anayasa değişikliği önerisini kamuoyuna tanıtması",
+          "scope_context": "Altı siyasi partinin 28 Kasım 2022 tarihinde Ankara Bilkent Otel’de anayasa değişikliği önerisini tanıtması.",
+          "occurrence_basis": "28 Kasım 2022’de Ankara Bilkent Otel’de altı liderin katıldığı tanıtım toplantısını CHP yayımı ve VOA Türkçe haberi belgeliyor. DEVA Partisinin 28. sayı bültenindeki ortak açıklama, önerinin liderler toplantısından önce tanıtıldığını doğruluyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0411-six-leaders-nov-2022-voa-location",
+            "sha256": "820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65",
+            "source": "https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html",
+            "section": "Bilkent Otel tanıtımı",
+            "exact": "teklif metni tanıtım toplantısı Bilkent Oteli’nde yapıldı.",
+            "claim": "VOA Türkçe haberi anayasa önerisi tanıtımının Bilkent Otel’de yapıldığını bildiriyor."
+          }
+        ]
+      },
+      "demokrat": {
+        "event": {
+          "id": "0412-six-leaders-2022-11-28-presentation-event",
+          "common_event_key": "six-party-2022-11-28-constitutional-proposal-presentation",
+          "event_at": "2022-11-28",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Altı partinin anayasa değişikliği önerisini kamuoyuna tanıtması",
+          "scope_context": "Altı siyasi partinin 28 Kasım 2022 tarihinde Ankara Bilkent Otel’de anayasa değişikliği önerisini tanıtması.",
+          "occurrence_basis": "28 Kasım 2022’de Ankara Bilkent Otel’de altı liderin katıldığı tanıtım toplantısını CHP yayımı ve VOA Türkçe haberi belgeliyor. DEVA Partisinin 28. sayı bültenindeki ortak açıklama, önerinin liderler toplantısından önce tanıtıldığını doğruluyor."
+        },
+        "passages": [
+          {
+            "passage_id": "0412-six-leaders-2022-11-28-presentation-independent-p",
+            "sha256": "820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65",
+            "source": "https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html",
+            "section": "VOA haberinde Bilkent tanıtımı",
+            "exact": "teklif metni tanıtım toplantısı Bilkent Oteli’nde yapıldı.",
+            "claim": "Bilkent Otel’de anayasa önerisi tanıtıldı."
+          }
+        ]
+      }
+    }
+  }
+]
