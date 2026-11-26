@@ -112,6 +112,22 @@ class PracticeTracer(unittest.TestCase):
         actual = arsiv.render_comparison_snapshot(data, render_report).encode('utf-8')
         self.assertEqual(actual, (folder / 'index.html').read_bytes())
 
+    def test_unlinked_statement_has_both_reader_views(self):
+        folder = arsiv.DATA / 'releases' / '53b24e6740104cb5be5d3419491bd735'
+        data = json.loads((folder / 'records.json').read_bytes())
+        statement = data['practice_statement'][0]
+        sid = statement['id']
+        data['practice_relation'] = [row for row in data['practice_relation'] if row['statement_id'] != sid]
+        report = arsiv.render_comparison_snapshot(data, arsiv.render_report)
+        for view in ('party', 'comparison'):
+            anchor = f'{view}-statement-{sid}'
+            self.assertEqual(report.count(f'id="{anchor}"'), 1)
+            self.assertIn(f'href="#{anchor}"', report)
+        for key in ('summary_finding_id', 'quote_finding_id'):
+            self.assertIn(f'data-finding-id="{statement[key]}"', report)
+        old = arsiv.render_comparison_snapshot(data, arsiv.render_v31_report)
+        self.assertNotIn(f'id="party-statement-{sid}"', old)
+
     def test_real_archived_event_reaches_both_views(self):
         base = '9003e475ee5d49b29a1310c0bfe2007d'
         folder = arsiv.DATA / 'releases' / base

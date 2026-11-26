@@ -8,7 +8,7 @@ from dosyalar import SOURCE_TYPE_LABELS
 from kaynaklar import attribution_text
 
 
-RENDERER_VERSION = 31
+RENDERER_VERSION = 32
 STYLE = Path(__file__).with_name('rapor_v25.css').read_text(encoding='utf-8')
 HEADINGS = (
     ('kurulus', 'Kuruluş'),
@@ -161,6 +161,14 @@ def render_foundation_timeline(pid, events, event_dates, findings, notes, citati
 
 
 def render_report(data):
+    return _render_report(data, standalone_statements=True)
+
+
+def render_v31_report(data):
+    return _render_report(data, standalone_statements=False)
+
+
+def _render_report(data, *, standalone_statements):
     parties = {p['id']: p for p in data['party']}
     comparison_domains = {(t['topic_id'], t['taxonomy_version']): t['domain'] for t in data.get('comparison_topic', [])}
     versions = {v['id']: v for v in data['document_version']}
@@ -424,6 +432,7 @@ def render_report(data):
     for item in data.get('practice_position_change', []):
         changes_by_party_topic.setdefault((item['party_id'], item['topic_id']), []).append(item)
     relations_by_party_topic = {}
+    standalone_by_party_topic = defaultdict(list)
     unmatched_by_party_topic = {}
     practice_scopes = {s['id']: s for s in data.get('practice_scope', [])}
     practice_attempts = {}
@@ -441,6 +450,12 @@ def render_report(data):
         event_relations.setdefault(item['event_id'], []).append(item)
         statement = statements[item['statement_id']]
         relations_by_party_topic.setdefault((item['party_id'], item['topic_id'], statement['taxonomy_version']), []).append(item)
+    if standalone_statements:
+        linked_statements = {item['statement_id'] for item in data.get('practice_relation', [])}
+        for statement in statements.values():
+            if statement['id'] not in linked_statements:
+                key = (statement['party_id'], statement['topic_id'], statement['taxonomy_version'])
+                standalone_by_party_topic[key].append(statement)
     for item in data.get('practice_unmatched', []):
         scope = practice_scopes[item['statement_scope_id']]
         unmatched_by_party_topic.setdefault((item['party_id'], item['topic_id'], scope['taxonomy_version']), []).append(item)
@@ -506,6 +521,23 @@ def render_report(data):
                       f'Çözülemeyen: {esc(dispute["unresolved_points"])} {sources}</p>')
 
     def add_practice_records(party_id, topic_id=None, taxonomy_version=None, comparison=False):
+        for (pid, tid, version), items in standalone_by_party_topic.items():
+            if pid != party_id or (topic_id is not None and (tid, version) != (topic_id, taxonomy_version)):
+                continue
+            for statement in items:
+                sid = statement['id']
+                side, alternate = ('comparison', 'party') if comparison else ('party', 'comparison')
+                pieces.append(f'<article class="record" id="{esc(f"{side}-statement-{sid}")}">')
+                for field in ('summary_finding_id', 'quote_finding_id'):
+                    finding = findings[statement[field]]
+                    cls, text = format_finding(finding)
+                    sources = ' '.join(named_citation(ref['passage_id']) for ref in evidence[finding['id']])
+                    pieces.append(f'<p class="{cls}" data-finding-id="{esc(finding["id"])}">{text} {sources}</p>')
+                pieces.append(f'<p class="metadata">{time_tag(statement["statement_at"])} · '
+                              f'{esc(statement["period_basis"])} {esc(statement["uncertainty_reason"])}</p>')
+                other = fragment(f'{alternate}-statement-{sid}')
+                topic = fragment('comparison-' + statement['comparison_row_id'])
+                pieces.append(f'<p><a href="#{other}">Diğer görünüm</a> · <a href="#{topic}">İlgili konu</a></p></article>')
         if data.get('practice_coverage_contract'):
             scopes_v2 = {s['id']: s for s in data.get('practice_scope_v2', [])}
             legacy_closures = {c['id']: c for c in data.get('closure', [])}
