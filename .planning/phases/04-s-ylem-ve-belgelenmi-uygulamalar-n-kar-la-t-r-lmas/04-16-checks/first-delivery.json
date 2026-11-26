@@ -1,0 +1,656 @@
+{
+  "scope": "İlk teslim",
+  "coverage_doctrine": "Açık hücreler ve kapsam geçmişi veri paketinde korunur. Bu teslim dokuz partinin incelenen kayıtlarını kapsar.",
+  "archive": {
+    "job": "62742674",
+    "input_revision": "d9cd241912caeca07b91c9152938d1863e67066e",
+    "stage": "partial",
+    "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+    "preview": "/work/mg551/gsd-phase04-previews.sgFrq4/gsd-phase04-first-delivery-62742674/releases/9079b7fa5bcb4af29ed4c552e38a5eeb",
+    "preview_manifest_sha256": "35be3fd7e5b8b86ff4104de141c94bf42cbb669e5c3dac795fa15bedd162555f",
+    "renderer_version": 32,
+    "verified_assets": 5294,
+    "coverage": {
+      "not_researched": 5134,
+      "open": 355,
+      "closed": 1
+    },
+    "closures": [
+      "practice-efcecaa0915230b240585109772983b0737267707db445251fcf30f32b119020"
+    ],
+    "historical_closures": {
+      "0404-yeni-kimlik-2026-statement-closure": "practice-efcecaa0915230b240585109772983b0737267707db445251fcf30f32b119020",
+      "0405-tip-kimlik-statement-closure": "practice-e00240839beaaacc91a9340774a6be85c89a9836d5774cf77031fc15aa8d76dc"
+    },
+    "reopens": [
+      {
+        "closure_id": "0405-tip-kimlik-statement-closure",
+        "id": "0405-tip-2018-ad-karari-statement-reopen",
+        "lead_id": "0405-tip-2018-ad-karari-statement-reading-lead",
+        "opened_at": "2026-11-26T19:39:04.793647+00:00",
+        "reason": "11 Ocak 2018 cevabı, erişilen Ekim 2018 tüzük nüshasından önce amblem değişikliğine ilişkin yeni belge ve araştırma ucu gösteriyor."
+      }
+    ],
+    "merge_sha256": "87953d35f4f8338eebddeff7bd645003cdd5d3fb27703640eeed8837fee3ad31",
+    "sqlite_integrity": "ok",
+    "sqlite_foreign_key_violations": 0,
+    "verified_views": [
+      "party",
+      "comparison"
+    ],
+    "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7"
+  },
+  "data_sha256": {
+    "index.html": "87e19e8ea4d6736cae1eb0ebd59dbacd3d7872b8c4a7c20237bc37ea4f39868a",
+    "records.json": "c3705e983815d94eef3f8005c91d9d1c04ea0a6ab6b51c7cad658e79ae4ff698",
+    "records.sqlite3": "492ad9e3f43ef432255d57139dd8e6cfeab9c30512ce6b30f78cbaaa2502a214"
+  },
+  "accepted_candidate_pairs": {
+    "tip": {
+      "package_sha256": "d5026d2b8f18e71cd69e6c0f7dc8097b68763e021eaec675c45f76715696965b",
+      "review_sha256": "f11533be3fd239bb08cadb87c0c335dc9e209e29ef3d31be3e987889a2100090"
+    },
+    "dem": {
+      "package_sha256": "c98496c3cb2918a72bcca12a3888e351f3bc588cac88805703cb49250751edeb",
+      "review_sha256": "0ea6c608f181391e4ad89e7a56579b226037dfff008df2559a710e7f309e8458"
+    }
+  },
+  "source_chains": {
+    "release_id": "9079b7fa5bcb4af29ed4c552e38a5eeb",
+    "manifest_sha256": "35be3fd7e5b8b86ff4104de141c94bf42cbb669e5c3dac795fa15bedd162555f",
+    "last_known_decisions": {
+      "same": 22,
+      "unresolved": 13
+    },
+    "records": {
+      "practice_event": 625,
+      "practice_relation": 428
+    },
+    "nine_source_chains": [
+      {
+        "party": "yeni-parti",
+        "relation_id": "0404-fon-komisyon-1014-relation",
+        "event_id": "0404-fon-komisyon-1014-event",
+        "event_date": "2026-10-14",
+        "title": "2/3939 fon tasfiyesi teklifinin Plan ve Bütçe Komisyonundaki görüşmesi",
+        "actor": "Başkan birleştirme önergesini Yeni Partiye atfediyor. Ayrı dört imzalı alt komisyon önergesi ve komisyon kararları tutanakta.",
+        "limitation": "Komisyondaki oy sonuçları önergelere ve 2/3939 teklifine ait. 2/3895 dosyasının sonraki durumu ayrı. Takasbank ve SPK açıklamaları bildirdikleri işlem ve kurum değerlendirmesini gösteriyor. TLY hakkındaki 20 Ekim tarihli 7/51538 yazılı sorusunun resmî cevabı bu kayıtlarla doğrulanmış değil.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0404-fund-commission-5472-ari",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0404-fund-commission-5472-karabat",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0404-fund-commission-5472-merge-motion",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0404-fund-commission-5472-spk",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0404-fund-commission-5472-takasbank",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0404-fund-commission-5472-takasbank-basis",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "initiative",
+            "passage_id": "0404-ilk-yayin-takip-fon-23895-id",
+            "version_id": "0404-ilk-yayin-takip-fon-23895-v1",
+            "original_path": "objects/724f6b88fea0443df4881deefed05dfa28970649831a81c5008678963cf4f744/original.html.bin",
+            "sha256": "724f6b88fea0443df4881deefed05dfa28970649831a81c5008678963cf4f744",
+            "url": "https://tbmm.gov.tr/Yasama/KanunTeklifi/8bdc192b-ef6a-4ef2-befe-01a0e803dd24"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0404-fund-commission-5472-merge-result",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0404-fund-commission-5472-result",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0404-fund-commission-5472-subcommission",
+            "version_id": "0404-fund-commission-5472-v1",
+            "original_path": "objects/bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b/original.pdf",
+            "sha256": "bb6077353f49dbf12c19679e9c883f302ef70165b2010c8bf9390be48e50789b",
+            "url": "https://tbmm.gov.tr/Tutanaklar/TutanakGoster/5472"
+          }
+        ]
+      },
+      {
+        "party": "tip",
+        "relation_id": "0405-tip-istanbul-sozlesmesi-court-final-relation",
+        "event_id": "0405-tip-istanbul-sozlesmesi-court-final-event",
+        "event_date": "2022-12-19",
+        "title": "İstanbul Sözleşmesi davasında Danıştay İDDK onaması",
+        "actor": "TİP temyiz eden davacı. Onama Danıştay İdari Dava Daireleri Kurulunun kararı.",
+        "limitation": "Sonraki AYM başvurusunun resmî kayıt numarası ve inceleme sonucu açık.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-case-number",
+            "version_id": "0405-tip-istanbul-sozlesmesi-court-v1",
+            "original_path": "objects/4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44/original.pdf",
+            "sha256": "4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44",
+            "url": "https://tip.org.tr/wp-content/uploads/2024/06/3.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-final",
+            "version_id": "0405-tip-istanbul-sozlesmesi-court-v1",
+            "original_path": "objects/4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44/original.pdf",
+            "sha256": "4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44",
+            "url": "https://tip.org.tr/wp-content/uploads/2024/06/3.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-affirmed",
+            "version_id": "0405-tip-istanbul-sozlesmesi-court-v1",
+            "original_path": "objects/4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44/original.pdf",
+            "sha256": "4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44",
+            "url": "https://tip.org.tr/wp-content/uploads/2024/06/3.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-standing",
+            "version_id": "0405-tip-istanbul-sozlesmesi-court-v1",
+            "original_path": "objects/4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44/original.pdf",
+            "sha256": "4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44",
+            "url": "https://tip.org.tr/wp-content/uploads/2024/06/3.pdf"
+          }
+        ]
+      },
+      {
+        "party": "dem",
+        "relation_id": "0406-dem-kimlik-21716-relation",
+        "event_id": "0406-dem-kimlik-21716-event",
+        "event_date": "2023-10-24",
+        "title": "2/1716 teklifinin HEDEP antetiyle TBMM Başkanlığına gelişi",
+        "actor": "Antet ve imza TBMM grup işlemini, tüzük metni parti yayınına ait beyanı belgeliyor.",
+        "limitation": "Antet ve amblem bu evraktaki kullanımı gösteriyor. Genel parti tescil tarihi, teklifin kabulü ve uygulama sonucu ayrı araştırma konuları.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0406-dem-kimlik-21716-ledger-date",
+            "version_id": "0406-dem-kimlik-ledger-21716-v1",
+            "original_path": "objects/ef5153b8d7d48998f4ade8b2527e7e4a1d302603d086dbf83bcb6e58f0896dd4/original.html.bin",
+            "sha256": "ef5153b8d7d48998f4ade8b2527e7e4a1d302603d086dbf83bcb6e58f0896dd4",
+            "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/1beddb37-5384-4760-96fe-018b7014558b"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0406-dem-kimlik-21716-ledger-no",
+            "version_id": "0406-dem-kimlik-ledger-21716-v1",
+            "original_path": "objects/ef5153b8d7d48998f4ade8b2527e7e4a1d302603d086dbf83bcb6e58f0896dd4/original.html.bin",
+            "sha256": "ef5153b8d7d48998f4ade8b2527e7e4a1d302603d086dbf83bcb6e58f0896dd4",
+            "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/1beddb37-5384-4760-96fe-018b7014558b"
+          },
+          {
+            "stage": "initiative",
+            "passage_id": "0406-dem-kimlik-21716-pdf",
+            "version_id": "0406-dem-kimlik-tbmm-21716-v1",
+            "original_path": "objects/e6a3569e32567918eeeba8d6dfa0d47993581f3a53462ae70ec3aa7556767716/original.pdf",
+            "sha256": "e6a3569e32567918eeeba8d6dfa0d47993581f3a53462ae70ec3aa7556767716",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y2/T2/WebOnergeMetni/c779c8eb-b8e7-4567-a1c8-e3638ff3c2d1.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0406-dem-kimlik-21716-referral",
+            "version_id": "0406-dem-kimlik-tbmm-21716-v1",
+            "original_path": "objects/e6a3569e32567918eeeba8d6dfa0d47993581f3a53462ae70ec3aa7556767716/original.pdf",
+            "sha256": "e6a3569e32567918eeeba8d6dfa0d47993581f3a53462ae70ec3aa7556767716",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y2/T2/WebOnergeMetni/c779c8eb-b8e7-4567-a1c8-e3638ff3c2d1.pdf"
+          }
+        ]
+      },
+      {
+        "party": "iyi",
+        "relation_id": "0407-akbelen-2023-relation",
+        "event_id": "0407-akbelen-2023-event",
+        "event_date": "2023-08-08",
+        "title": "Akbelen için genel görüşme önergesinin ön görüşmesi",
+        "actor": "7 Ağustos açıklaması parti sözcüsüne atfedilir. 8 Ağustos’ta başkan Ergun’a İYİ Grubu adına söz verdi.",
+        "limitation": "Tek tek milletvekillerinin oyları ve maden izninin durumu bu karşılaştırmada saptanmadı.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0407-akbelen-2023-floor-role",
+            "version_id": "0407-akbelen-2023-floor-v1",
+            "original_path": "objects/b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca/original.html.bin",
+            "sha256": "b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca",
+            "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/28/1/18/Tam/66113233-be03-41b2-a64a-097e527f8129.html"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0407-akbelen-2023-floor-speech",
+            "version_id": "0407-akbelen-2023-floor-v1",
+            "original_path": "objects/b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca/original.html.bin",
+            "sha256": "b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca",
+            "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/28/1/18/Tam/66113233-be03-41b2-a64a-097e527f8129.html"
+          },
+          {
+            "stage": "initiative",
+            "passage_id": "0407-akbelen-2023-floor-id",
+            "version_id": "0407-akbelen-2023-floor-v1",
+            "original_path": "objects/b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca/original.html.bin",
+            "sha256": "b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca",
+            "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/28/1/18/Tam/66113233-be03-41b2-a64a-097e527f8129.html"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0407-akbelen-2023-floor-result",
+            "version_id": "0407-akbelen-2023-floor-v1",
+            "original_path": "objects/b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca/original.html.bin",
+            "sha256": "b770603f42fe52fe8ceca17fab04e06f495d4f4635aece764b2f3617a0e2d6ca",
+            "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/28/1/18/Tam/66113233-be03-41b2-a64a-097e527f8129.html"
+          }
+        ]
+      },
+      {
+        "party": "yeni-yol",
+        "relation_id": "0408-inquiry-8134-relation",
+        "event_id": "0408-inquiry-8134-event",
+        "event_date": "2026-06-17",
+        "title": "8/134 emekli aylığı hesabı genel görüşme önergesinin sunulması",
+        "actor": "İlk imza Bülent Kaya’ya, 20 imzalı önerge gruptaki milletvekillerine ve evrakın işleme alınması TBMM’ye ait.",
+        "limitation": "Gelen kâğıtlar eki 1 Temmuz’da evrakı listeliyor. 23 Kasım erişiminde esas kaydı Gündemde. 8/134’ün ön görüşme oyu, esasa ilişkin işlemi ve önerilen değişikliklerin yürürlüğe girmesi açık.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0408-inquiry-8134-register-day",
+            "version_id": "0408-inquiry-8134-register-v1",
+            "original_path": "objects/7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e/original.html.bin",
+            "sha256": "7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e",
+            "url": "https://tbmm.gov.tr/Denetim/Genel-Gorusme-Onergesi-Detay/70ad73c1-989d-4ea3-bbcd-019edee4a171"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0408-inquiry-8134-register-party",
+            "version_id": "0408-inquiry-8134-register-v1",
+            "original_path": "objects/7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e/original.html.bin",
+            "sha256": "7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e",
+            "url": "https://tbmm.gov.tr/Denetim/Genel-Gorusme-Onergesi-Detay/70ad73c1-989d-4ea3-bbcd-019edee4a171"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0408-inquiry-8134-signed-adjustment",
+            "version_id": "0408-inquiry-8134-signed-v1",
+            "original_path": "objects/72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be/original.pdf",
+            "sha256": "72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T8/WebOnergeMetni/9516925c-a2a9-4363-9814-289108a37f4d.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0408-inquiry-8134-signed-lower-bound",
+            "version_id": "0408-inquiry-8134-signed-v1",
+            "original_path": "objects/72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be/original.pdf",
+            "sha256": "72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T8/WebOnergeMetni/9516925c-a2a9-4363-9814-289108a37f4d.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0408-inquiry-8134-signed-request",
+            "version_id": "0408-inquiry-8134-signed-v1",
+            "original_path": "objects/72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be/original.pdf",
+            "sha256": "72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T8/WebOnergeMetni/9516925c-a2a9-4363-9814-289108a37f4d.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0408-inquiry-8134-signed-signatories",
+            "version_id": "0408-inquiry-8134-signed-v1",
+            "original_path": "objects/72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be/original.pdf",
+            "sha256": "72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T8/WebOnergeMetni/9516925c-a2a9-4363-9814-289108a37f4d.pdf"
+          },
+          {
+            "stage": "initiative",
+            "passage_id": "0408-inquiry-8134-register-number",
+            "version_id": "0408-inquiry-8134-register-v1",
+            "original_path": "objects/7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e/original.html.bin",
+            "sha256": "7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e",
+            "url": "https://tbmm.gov.tr/Denetim/Genel-Gorusme-Onergesi-Detay/70ad73c1-989d-4ea3-bbcd-019edee4a171"
+          },
+          {
+            "stage": "initiative",
+            "passage_id": "0408-inquiry-8134-signed-number",
+            "version_id": "0408-inquiry-8134-signed-v1",
+            "original_path": "objects/72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be/original.pdf",
+            "sha256": "72a0dde5187f0557c862474aca020a72b5f51a595e561473802a09c4262806be",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T8/WebOnergeMetni/9516925c-a2a9-4363-9814-289108a37f4d.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0408-inquiry-8134-appendix-listed",
+            "version_id": "0408-inquiry-8134-appendix-v1",
+            "original_path": "objects/64997aaa954056faaeea620b8d5519d03f44b5269922388a8c9340560369fa79/original.pdf",
+            "sha256": "64997aaa954056faaeea620b8d5519d03f44b5269922388a8c9340560369fa79",
+            "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/108/Basilmis/8c78bb73-5fa2-43ca-965a-aa0deaac261e.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0408-inquiry-8134-incoming-listed",
+            "version_id": "0408-inquiry-8134-incoming-v1",
+            "original_path": "objects/49c63a51a20ec32a663f997a7ada93184708231ba0dad492ebbe9daf8375e728/original.html.bin",
+            "sha256": "49c63a51a20ec32a663f997a7ada93184708231ba0dad492ebbe9daf8375e728",
+            "url": "https://tbmm.gov.tr/Gundem/GelenKagitDetay/32b91820-51d0-430b-a400-019f1c67bf61"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0408-inquiry-8134-register-pending",
+            "version_id": "0408-inquiry-8134-register-v1",
+            "original_path": "objects/7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e/original.html.bin",
+            "sha256": "7d06afa4774d8c2eb7eb30277085353099844687a364094fed563e30fc789b9e",
+            "url": "https://tbmm.gov.tr/Denetim/Genel-Gorusme-Onergesi-Detay/70ad73c1-989d-4ea3-bbcd-019edee4a171"
+          }
+        ]
+      },
+      {
+        "party": "dbp",
+        "relation_id": "0409-dbp-baglar-2015-cemr-relation",
+        "event_id": "0409-dbp-baglar-2015-cemr-event",
+        "event_date": "2015-02-06",
+        "title": "Bağlar Belediye Meclisinin 2015/48 CEMR kararı",
+        "actor": "DBP konferans bildirgesi ve Bağlar Belediye Meclisi kararı ayrı. Anadolu Ajansı BDP seçimini ve DBP bağını kaydediyor.",
+        "limitation": "2015/48 kararı Bağlar Belediye Meclisine ait. Parti konferansı kararı ile belediye meclisinin ayrı yetkileri var. 2015 oturumunda kişinin oyu, o yıl imzalanan bir belge ve sonraki uygulama açık. Türkiye Belediyeler Birliği imza tablosu Bağlar için 1 Ekim 2024 tarihini veriyor.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0409-cemr-baglar-agenda",
+            "version_id": "0409-cemr-baglar-v1",
+            "original_path": "objects/6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3/original.pdf",
+            "sha256": "6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3",
+            "url": "https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0409-cemr-baglar-chair",
+            "version_id": "0409-cemr-baglar-v1",
+            "original_path": "objects/6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3/original.pdf",
+            "sha256": "6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3",
+            "url": "https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0409-cemr-baglar-decision-id",
+            "version_id": "0409-cemr-baglar-v1",
+            "original_path": "objects/6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3/original.pdf",
+            "sha256": "6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3",
+            "url": "https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0409-cemr-baglar-approval",
+            "version_id": "0409-cemr-baglar-v1",
+            "original_path": "objects/6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3/original.pdf",
+            "sha256": "6059362c11b4a6e867ec207394929002475c1b5d0cec6ee142a8eb65e61dccd3",
+            "url": "https://www.baglar.bel.tr/Content/uploads/21863ec7-9e03-474f-a5ef-053be6f60cdb.pdf"
+          }
+        ]
+      },
+      {
+        "party": "emep",
+        "relation_id": "0410-emep-istanbul-sozlesmesi-relation",
+        "event_id": "0405-tip-istanbul-sozlesmesi-withdrawal-event",
+        "event_date": "2021-03-19",
+        "title": "İstanbul Sözleşmesi için 3718 sayılı fesih kararı",
+        "actor": "Kararları Cumhurbaşkanı verdi. EMEP’in belgelenen rolü, 20 Mart tarihli parti açıklamasında itirazını yayımlamak.",
+        "limitation": "Sözleşmeden ayrılmanın fiilî sonuçları ve EMEP’in karar alma sürecinde rolü için ayrı kanıt gerekiyor.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-object-of-suit",
+            "version_id": "0405-tip-istanbul-sozlesmesi-court-v1",
+            "original_path": "objects/4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44/original.pdf",
+            "sha256": "4b49cf024f157cda1c3d1ea1e6d1721d8a9bd03f3c8f6e2b9722470410230f44",
+            "url": "https://tip.org.tr/wp-content/uploads/2024/06/3.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-withdrawal-id",
+            "version_id": "0405-tip-istanbul-sozlesmesi-3718-v1",
+            "original_path": "objects/86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31/original.pdf",
+            "sha256": "86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/03/20210320-49.pdf"
+          },
+          {
+            "stage": "action",
+            "passage_id": "0410-emep-istanbul-sozlesmesi-withdrawal-id",
+            "version_id": "0410-emep-istanbul-sozlesmesi-3718-v1",
+            "original_path": "objects/86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31/original.pdf",
+            "sha256": "86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/03/20210320-49.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-effect-id",
+            "version_id": "0405-tip-istanbul-sozlesmesi-3928-v1",
+            "original_path": "objects/5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5/original.pdf",
+            "sha256": "5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/04/20210430-13.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-effect-publication",
+            "version_id": "0405-tip-istanbul-sozlesmesi-3928-v1",
+            "original_path": "objects/5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5/original.pdf",
+            "sha256": "5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/04/20210430-13.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0405-tip-istanbul-sozlesmesi-withdrawal-publication",
+            "version_id": "0405-tip-istanbul-sozlesmesi-3718-v1",
+            "original_path": "objects/86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31/original.pdf",
+            "sha256": "86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/03/20210320-49.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0410-emep-istanbul-sozlesmesi-effect-id",
+            "version_id": "0410-emep-istanbul-sozlesmesi-3928-v1",
+            "original_path": "objects/5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5/original.pdf",
+            "sha256": "5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/04/20210430-13.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0410-emep-istanbul-sozlesmesi-effect-publication",
+            "version_id": "0410-emep-istanbul-sozlesmesi-3928-v1",
+            "original_path": "objects/5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5/original.pdf",
+            "sha256": "5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/04/20210430-13.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0410-emep-istanbul-sozlesmesi-withdrawal-publication",
+            "version_id": "0410-emep-istanbul-sozlesmesi-3718-v1",
+            "original_path": "objects/86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31/original.pdf",
+            "sha256": "86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31",
+            "url": "https://www.resmigazete.gov.tr/eskiler/2021/03/20210320-49.pdf"
+          }
+        ]
+      },
+      {
+        "party": "saadet",
+        "relation_id": "0411-saadet-mine-inquiry-35779-relation",
+        "event_id": "0411-saadet-mine-inquiry-35779-event",
+        "event_date": "2021-01-27",
+        "title": "Enerji Bakanlığının 7/35779 yazılı soruya yanıtı",
+        "actor": "Karaduman soruyu Konya milletvekili olarak yöneltti. Yanıt Enerji ve Tabii Kaynaklar Bakanına aittir.",
+        "limitation": "20 Ekim soru, Karaduman’ın milletvekili sıfatıyla bireysel denetim işlemidir. 15 Ekim konuşması parti kimliğini gösterir, bu soru için grup kararı göstermez. 27 Ocak yanıtı ödenmemiş ücretlerin veya kıdem tazminatlarının ödendiğini kanıtlamaz. 21 Ekim konuşması ve sonraki gözaltılar ayrı olaylardır.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0411-mine-inquiry-answer-sign",
+            "version_id": "0411-mine-inquiry-answer-v1",
+            "original_path": "objects/c23c7a1e91be5075ca9ee63e19222c870e7493bfe07a85cc72099f582daf178e/original.pdf",
+            "sha256": "c23c7a1e91be5075ca9ee63e19222c870e7493bfe07a85cc72099f582daf178e",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y4/T7/WebOnergeMetni/5161c5f1-4bf7-43d1-bb7e-ff78a94ce1f7.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0411-mine-inquiry-answer-involvement",
+            "version_id": "0411-mine-inquiry-answer-v1",
+            "original_path": "objects/c23c7a1e91be5075ca9ee63e19222c870e7493bfe07a85cc72099f582daf178e/original.pdf",
+            "sha256": "c23c7a1e91be5075ca9ee63e19222c870e7493bfe07a85cc72099f582daf178e",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y4/T7/WebOnergeMetni/5161c5f1-4bf7-43d1-bb7e-ff78a94ce1f7.pdf"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0411-mine-inquiry-answer-reply",
+            "version_id": "0411-mine-inquiry-answer-v1",
+            "original_path": "objects/c23c7a1e91be5075ca9ee63e19222c870e7493bfe07a85cc72099f582daf178e/original.pdf",
+            "sha256": "c23c7a1e91be5075ca9ee63e19222c870e7493bfe07a85cc72099f582daf178e",
+            "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y4/T7/WebOnergeMetni/5161c5f1-4bf7-43d1-bb7e-ff78a94ce1f7.pdf"
+          }
+        ]
+      },
+      {
+        "party": "demokrat",
+        "relation_id": "0412-six-leaders-2022-11-28-presentation-relation",
+        "event_id": "0411-saadet-nov-2022-presentation-event",
+        "event_date": "2022-11-28",
+        "title": "Altı partinin anayasa değişikliği önerisini kamuoyuna tanıtması",
+        "actor": "Altı parti ortak çalışma yürüttü; Demokrat Parti Uysal ile temsil edildi.",
+        "limitation": "Ortak açıklama ve haberler sınırlı bağlamda okunmuştur. Tanıtım kabul edilmiş anayasa değişikliği değildir; kapalı toplantıdaki tekil konuşmalar ve imzaların bireysel kimliği belirlenmemiştir.",
+        "sources": [
+          {
+            "stage": "action",
+            "passage_id": "0411-six-leaders-nov-2022-voa-location",
+            "version_id": "0411-six-leaders-nov-2022-voa-v1",
+            "original_path": "objects/820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65/original.html.bin",
+            "sha256": "820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65",
+            "url": "https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0412-six-leaders-2022-11-28-presentation-independent-p",
+            "version_id": "0412-six-leaders-2022-11-28-presentation-v1",
+            "original_path": "objects/820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65/original.html.bin",
+            "sha256": "820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65",
+            "url": "https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html"
+          },
+          {
+            "stage": "result",
+            "passage_id": "0411-six-leaders-nov-2022-voa-speakers",
+            "version_id": "0411-six-leaders-nov-2022-voa-v1",
+            "original_path": "objects/820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65/original.html.bin",
+            "sha256": "820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65",
+            "url": "https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html"
+          }
+        ]
+      }
+    ],
+    "shared_event": {
+      "id": "0405-tip-istanbul-sozlesmesi-withdrawal-event",
+      "relations": [
+        "0405-tip-istanbul-sozlesmesi-withdrawal-relation",
+        "0410-emep-istanbul-sozlesmesi-relation"
+      ]
+    },
+    "views": [
+      "party",
+      "comparison"
+    ]
+  },
+  "browser": [
+    {
+      "width": 360,
+      "report": "file:///work/mg551/gsd-phase04-previews.sgFrq4/gsd-phase04-first-delivery-62742674/releases/9079b7fa5bcb4af29ed4c552e38a5eeb/index.html",
+      "checks": [
+        "direct hash, focus, nine party tabs and comparison tab",
+        "keyboard comparison tab",
+        "party-to-comparison, evidence stages, quote and summary colors, details",
+        "same event links to EMEP",
+        "citation expands, local passive source opens"
+      ],
+      "citationId": "source-0410-emep-istanbul-sozlesmesi-stance-text",
+      "local": "file:///work/mg551/gsd-phase04-previews.sgFrq4/gsd-phase04-first-delivery-62742674/views/85176aee864cb7472451008536a82327/index.html",
+      "transport": "file"
+    },
+    {
+      "width": 1365,
+      "report": "file:///work/mg551/gsd-phase04-previews.sgFrq4/gsd-phase04-first-delivery-62742674/releases/9079b7fa5bcb4af29ed4c552e38a5eeb/index.html",
+      "checks": [
+        "direct hash, focus, nine party tabs and comparison tab",
+        "keyboard comparison tab",
+        "party-to-comparison, evidence stages, quote and summary colors, details",
+        "same event links to EMEP",
+        "citation expands, local passive source opens"
+      ],
+      "citationId": "source-0410-emep-istanbul-sozlesmesi-stance-text",
+      "local": "file:///work/mg551/gsd-phase04-previews.sgFrq4/gsd-phase04-first-delivery-62742674/views/85176aee864cb7472451008536a82327/index.html",
+      "transport": "file"
+    },
+    {
+      "width": 360,
+      "report": "http://127.0.0.1:34543/releases/9079b7fa5bcb4af29ed4c552e38a5eeb/index.html",
+      "checks": [
+        "direct hash, focus, nine party tabs and comparison tab",
+        "keyboard comparison tab",
+        "party-to-comparison, evidence stages, quote and summary colors, details",
+        "same event links to EMEP",
+        "citation expands, local passive source opens"
+      ],
+      "citationId": "source-0410-emep-istanbul-sozlesmesi-stance-text",
+      "local": "http://127.0.0.1:34543/views/85176aee864cb7472451008536a82327/index.html",
+      "transport": "loopback"
+    },
+    {
+      "width": 1365,
+      "report": "http://127.0.0.1:34543/releases/9079b7fa5bcb4af29ed4c552e38a5eeb/index.html",
+      "checks": [
+        "direct hash, focus, nine party tabs and comparison tab",
+        "keyboard comparison tab",
+        "party-to-comparison, evidence stages, quote and summary colors, details",
+        "same event links to EMEP",
+        "citation expands, local passive source opens"
+      ],
+      "citationId": "source-0410-emep-istanbul-sozlesmesi-stance-text",
+      "local": "http://127.0.0.1:34543/views/85176aee864cb7472451008536a82327/index.html",
+      "transport": "loopback"
+    }
+  ]
+}
