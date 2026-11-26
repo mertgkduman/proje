@@ -196,5 +196,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-25T23:36:34Z
-Stopped at: 18. birleşik prova 62710973 ile 574 olay ve 404 ilişki için bağımsız doğrulandı. TİP Bakırköy 62714095 ile doğrulandı ve 58/54 çalışma çifti güncellendi. DEM 89/13 için 2/3961 sıra 295 raporu 48/48 okundu. EMEP Bakırköy 85/79 doğrulandı. Saadet önizlemesi 62714558 tamamlandı, 62714559 sırada. Demokrat Parti 62714572 ve EMEP Trelleborg 62715191 çalışıyor. TİP yerel olayları 62715478 ve İdlib/7244 adayı 62717054 sırada. ÇarkBaşak 14/31 sayı, 321 sayfa ve Saadet 294/649 gövde okundu.
+Stopped at: 18. birleşik prova 62710973 ile 574 olay ve 404 ilişki için bağımsız doğrulandı. TİP Bakırköy 62714095 ile doğrulandı ve 58/54 çalışma çifti güncellendi. DEM 89/13 için 2/3961 sıra 295 raporu 48/48 okundu. EMEP Bakırköy 85/79 doğrulandı. Saadet’in iki 28 Kasım kaydı 62714558 önizlemesi ve bağımsız yerel denetimle 40/36 çalışma çiftine alındı. Demokrat Parti 62714572 ve EMEP Trelleborg 62715191 çalışıyor. TİP yerel olayları 62715478 ve İdlib/7244 adayı 62717054 sırada. ÇarkBaşak 14/31 sayı, 321 sayfa ve Saadet 294/649 gövde okundu.
 Resume file: None

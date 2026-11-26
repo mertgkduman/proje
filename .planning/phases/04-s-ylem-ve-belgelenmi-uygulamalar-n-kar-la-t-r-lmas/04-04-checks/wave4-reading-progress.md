@@ -15,7 +15,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 68 | 7 | 62635637 |
 | EMEP | 85 | 79 | 62711488 |
-| Saadet Partisi | 38 | 34 | 62630191 / 62630197 |
+| Saadet Partisi | 40 | 36 | 62714558, bağımsız yerel denetim |
 | Demokrat Parti | 81 | 52 | 62618726 |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
@@ -686,3 +686,5 @@ Mayıs 2020 ÇarkBaşak 27 sayfayla okundu, toplam 13/31 sayı ve 301 sayfa. 1 M
 Haziran 2020 ÇarkBaşak 20 sayfayla okundu. Toplam 14/31 sayı ve 321 sayfa. Baro düzenlemesinin Haziran tartışması, Rosa Kadın Derneği işlemleri ve YKS kampanyası farklı kaynak uçlarına ayrıldı. DEM 2/3961 komisyon raporu 20/48 sayfaya ulaştı. EMEP kaynak kuyruğunda 299 ve 300 dilimleri okundu, sıradaki yayın 3226. [Haziran okuması](../04-05-checks/tip-cark-basak-catalog/issue-14/reading-01.json) [DEM anlaşma sonu](../04-06-checks/2026-3961-anlasma-indeks44-47-okuma.md)
 
 TİP’in 8 Aralık 2019 Bakırköy karşılaştırması 62714095 ile girdi, kaynak, iki HTML görünümü ve bağımsız kayıt denetiminden geçti. TİP çalışma çifti 58 olay ve 54 ilişki. Katılım kararı ve fotoğraflı parti aktarımı ile HKMO raporundaki miting zamanı ve yeri kendi atıflarında. DEM’in 2/3961 sıra 295 raporunun 48 sayfası okundu. EMEP Trelleborg ve Demokrat Parti adayları çalışıyor. Saadet önizlemesi tamamlandı, bağımsız iş sırada. 19. birleşik provanın aday girdileriyle yapısal ön deneme 583 olay ve 410 ilişki verdi. Üretim girdisi parti çiftlerinin doğrulanmış sürümlerine dayanacak. [TİP denetimi](../04-05-checks/tip-bakirkoy-2019-62714095-independent.log) [DEM son dilimleri](../04-06-checks/2026-3961-rapor-indeks09-17-okuma.md)
+
+Saadet’in 28 Kasım 2022 tarihli iki karşılaştırması 62714558 ile oluşturuldu. Girdi, kaynak ve önizleme kapıları başarılı. Ayrı yerel süreçte olaylar, iki HTML görünümü, SQLite ve JSON satırları ile sürüm özetleri doğrulandı. Çalışma çifti 40 olay, 36 ilişki. Bilkent Otel anayasa önerisi tanıtımı ile Demokrat Parti Genel Merkezi liderler toplantısının tarih ve rollerine ayrı kanıt bağlandı. [Saadet bağımsız denetimi](../04-11-checks/six-leaders-nov-2022-v2-62714558-independent-local.log)
