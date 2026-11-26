@@ -1,0 +1,80 @@
+[
+  {
+    "candidate_key": "bakirkoy-2019-12-08-insanca-yasamak-istiyoruz",
+    "differing_fields": [],
+    "canonical_event_id": "0405-tip-bakirkoy-2019-event",
+    "decision": "same",
+    "common_source_sha256": [
+      "71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b"
+    ],
+    "overlap_reason": "HKMO İstanbul Şubesinin aynı özgün raporunun PDF indeksi 99, 8 Aralık 2019 tarihi ve Bakırköy Halk Pazarı yerini iki pakette aynı metinle gösteriyor. TİP katılım kararı ve fotoğraflı bildirimi ile EMEP katılım haberleri kendi yayıncıları ve parti katkılarıyla korunuyor.",
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-26T03:39:55.381356+00:00",
+    "members": {
+      "tip": {
+        "event": {
+          "id": "0405-tip-bakirkoy-2019-event",
+          "common_event_key": "bakirkoy-2019-12-08-insanca-yasamak-istiyoruz",
+          "event_at": "2019-12-08",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Bakırköy’de İnsanca Yaşamak İstiyoruz mitingi",
+          "scope_context": "8 Aralık 2019’da İstanbul Bakırköy Halk Pazarı’nda düzenlenen İnsanca Yaşamak İstiyoruz mitingi.",
+          "occurrence_basis": "TMMOB Harita ve Kadastro Mühendisleri Odası İstanbul Şubesinin 25. Dönem Çalışma Raporu, PDF sayfa indeksi 99."
+        },
+        "passages": [
+          {
+            "passage_id": "0405-tip-bakirkoy-2019-occurrence-p",
+            "sha256": "71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b",
+            "source": "https://obs.hkmo.org.tr/show-media/resimler/ekler/db8db97e67619ec_ek.pdf",
+            "section": "HKMO 25. Dönem Çalışma Raporu, miting tarihi ve düzenleyici.",
+            "exact": "8 Aralık 2019 tarihinde İstanbul Emek, Demokrasi ve Barış Koordinasyonu",
+            "pdf_page_index": 99,
+            "claim": "HKMO, 8 Aralık mitingini ve ortak düzenleyiciyi bildiriyor."
+          },
+          {
+            "passage_id": "0405-tip-bakirkoy-2019-venue-p",
+            "sha256": "71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b",
+            "source": "https://obs.hkmo.org.tr/show-media/resimler/ekler/db8db97e67619ec_ek.pdf",
+            "section": "HKMO 25. Dönem Çalışma Raporu, miting yeri.",
+            "exact": "Bakırköy Halk Pazarında",
+            "pdf_page_index": 99,
+            "claim": "8 Aralık mitingi Bakırköy Halk Pazarı’nda yapıldı."
+          }
+        ]
+      },
+      "emep": {
+        "event": {
+          "id": "0410-bakirkoy-2019-emep-event",
+          "common_event_key": "bakirkoy-2019-12-08-insanca-yasamak-istiyoruz",
+          "event_at": "2019-12-08",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Bakırköy’de İnsanca Yaşamak İstiyoruz mitingi",
+          "scope_context": "8 Aralık 2019’da İstanbul Bakırköy Halk Pazarı’nda düzenlenen İnsanca Yaşamak İstiyoruz mitingi.",
+          "occurrence_basis": "TMMOB Harita ve Kadastro Mühendisleri Odası İstanbul Şubesinin 25. Dönem Çalışma Raporu, PDF sayfa indeksi 99."
+        },
+        "passages": [
+          {
+            "passage_id": "0410-bakirkoy-2019-hkmo-date",
+            "sha256": "71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b",
+            "source": "https://obs.hkmo.org.tr/show-media/resimler/ekler/db8db97e67619ec_ek.pdf",
+            "section": "Miting tarihi",
+            "exact": "8 Aralık 2019 tarihinde İstanbul Emek, Demokrasi ve Barış Koordinasyonu",
+            "pdf_page_index": 99,
+            "claim": "HKMO 8 Aralık 2019 mitingine katıldığını bildirir."
+          },
+          {
+            "passage_id": "0410-bakirkoy-2019-hkmo-place",
+            "sha256": "71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b",
+            "source": "https://obs.hkmo.org.tr/show-media/resimler/ekler/db8db97e67619ec_ek.pdf",
+            "section": "Bakırköy Halk Pazarı",
+            "exact": "Bakırköy Halk Pazarında",
+            "pdf_page_index": 99,
+            "claim": "HKMO miting yerini Bakırköy Halk Pazarı olarak bildirir."
+          }
+        ]
+      }
+    }
+  }
+]
