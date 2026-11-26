@@ -1,0 +1,231 @@
+{
+  "reviewed_at_utc": "2026-11-26T06:31:59.189390+00:00",
+  "reviewer_kind": "agent",
+  "queries": [
+    "İYİ Parti Ümit Özdağ 16 Kasım 2020 Müşterek Disiplin Kurulu oybirliği 76/D",
+    "Ümit Özdağ Ankara 1 Asliye Hukuk Mahkemesi kesin 13 Ocak 2021 esas karar numarası",
+    "20 Ocak 2021 Ümit Özdağ gerekçeli karar sevk savunma İYİ Parti",
+    "4 Mart 2021 Ümit Özdağ İYİ Parti istifa TBMM basın toplantısı"
+  ],
+  "source_reads": [
+    {
+      "version": "0205-iyi-charter-istanbul-v1",
+      "document_date": "2020-09-20",
+      "sha256": "45b1a30149247ae80e00105290343bed2e6d056dbd3cf2db8f5964a3c542441b",
+      "pdf_indices": [
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "observations": [
+        "71. madde sevk belgesinde isnat ve cezanın gerekçeli açıklamasını ister. Savunma çağrısının içeriği ayrıca düzenlenir.",
+        "75. madde birleşik kurula milletvekillerinin çıkarma dosyalarını karara bağlama yetkisi verir.",
+        "76. madde yetki, şekil ve usule ilişkin itirazın mahkeme yolunu gösterir. 57. maddeye atıf yapar."
+      ]
+    },
+    {
+      "sources": [
+        "aa-decision",
+        "sozcu-decision"
+      ],
+      "event_at": "2020-11-16",
+      "observations": [
+        "AA olayı aynı gün bildirdi. Sözcü parti duyurusunu ayrı alıntıyla verdi. Kurucular Kurulu üyeliği dahil kesin çıkarma bildirildi.",
+        "İmzalı kurul kararı ve tebligat nüshası açık. Karar metninde aktarılan iddialar olay olmuş kabul edilmedi."
+      ]
+    },
+    {
+      "sources": [
+        "aa-ruling",
+        "cumhuriyet-ruling"
+      ],
+      "event_at": "2021-01-13",
+      "observations": [
+        "Ankara 1. Asliye Hukuk Mahkemesinin iptali duruşmadan bildirildi. AA aynı haberinde kısa hükmün kesin olduğunu ve iki tarafın sevk ve yazışmaya dair görüşlerini ayrı verdi."
+      ]
+    },
+    {
+      "sources": [
+        "aa-reaction",
+        "aa-reasons"
+      ],
+      "observation": "14 Ocak Uğur Poyraz usul eksikliği olmadığını söyledi. 20 Ocak AA, tebliğ edilen gerekçeli kararda sevk, soruşturma ve karar gerekçeleri arasındaki farkın usul yönünden ele alındığını bildirdi. Tam karar ve dosya numarası açık."
+    },
+    {
+      "url": "https://www.tbmm.gov.tr/Haber/Detay?Id=3b401fd1-8192-4db3-9595-330cc1f28340",
+      "event_at": "2021-03-04",
+      "observation": "TBMM’nin web görünümünde Mecliste istifa açıklaması var. Özgün yerel bayt alımında bağlantı kesildi. İstifa, kurul ve mahkeme kararlarından ayrı bir süreçtir."
+    }
+  ],
+  "attempts": [
+    {
+      "key": "aa-decision",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/aa-decision.html.bin",
+      "url": "https://www.aa.com.tr/tr/politika/umit-ozdag-iyi-partiden-ihrac-edildi-/2045558",
+      "publisher": "Anadolu Ajansı",
+      "publication_day": "2020-11-16",
+      "retrieved_at_utc": "2026-11-26T06:26:48.195359+00:00",
+      "status": null,
+      "error": "The read operation timed out"
+    },
+    {
+      "key": "aa-ruling",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/aa-ruling.html.bin",
+      "url": "https://www.aa.com.tr/tr/turkiye/istanbul-milletvekili-umit-ozdagin-iyi-partiden-ihrac-karari-mahkemece-iptal-edildi/2108242",
+      "publisher": "Anadolu Ajansı",
+      "publication_day": "2021-01-13",
+      "retrieved_at_utc": "2026-11-26T06:26:48.199393+00:00",
+      "status": 200,
+      "final_url": "https://www.aa.com.tr/tr/turkiye/istanbul-milletvekili-umit-ozdagin-iyi-partiden-ihrac-karari-mahkemece-iptal-edildi/2108242",
+      "bytes": 356406,
+      "sha256": "86a5e0b572feb4b39480d5ab21c20226c245c713f27ea02512143b77ee0aa10f",
+      "content_type": "text/html; charset=utf-8",
+      "markers": {
+        "iptaline kesin olarak hükmetti": true,
+        "13 Ocak": true
+      }
+    },
+    {
+      "key": "aa-reasons",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/aa-reasons.html.bin",
+      "url": "https://www.aa.com.tr/tr/turkiye/ozdagin-iyi-partiden-ihracinin-iptaline-iliskin-kararin-gerekcesi-aciklandi/2117004",
+      "publisher": "Anadolu Ajansı",
+      "publication_day": "2021-01-20",
+      "retrieved_at_utc": "2026-11-26T06:26:48.209661+00:00",
+      "status": 200,
+      "final_url": "https://www.aa.com.tr/tr/turkiye/ozdagin-iyi-partiden-ihracinin-iptaline-iliskin-kararin-gerekcesi-aciklandi/2117004",
+      "bytes": 359285,
+      "sha256": "1d356f553ba1fefa2e489d2cb4c5d169ccf4ad01ac677344bce1a908d3f2d774",
+      "content_type": "text/html; charset=utf-8",
+      "markers": {
+        "taraflara tebliğ ettiği gerekçeli kararda": true,
+        "20 Ocak": true
+      }
+    },
+    {
+      "key": "aa-reaction",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/aa-reaction.html.bin",
+      "url": "https://www.aa.com.tr/tr/politika/iyi-partiden-ozdagin-partiden-ihracinin-iptali-kararina-tepki-bize-gore-bir-usul-eksikligi-yok/2109943",
+      "publisher": "Anadolu Ajansı",
+      "publication_day": "2021-01-14",
+      "retrieved_at_utc": "2026-11-26T06:26:48.232711+00:00",
+      "status": 200,
+      "final_url": "https://www.aa.com.tr/tr/politika/iyi-partiden-ozdagin-partiden-ihracinin-iptali-kararina-tepki-bize-gore-bir-usul-eksikligi-yok/2109943",
+      "bytes": 364077,
+      "sha256": "e545cc429f383493085a46f8221048d510f07f1115f8f5624a7ddb91dbea9444",
+      "content_type": "text/html; charset=utf-8",
+      "markers": {
+        "Bize göre bir usul eksikliği yok": true,
+        "14 Ocak": true
+      }
+    },
+    {
+      "key": "tbmm-resignation",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/tbmm-resignation.html.bin",
+      "url": "https://www.tbmm.gov.tr/Haber/Detay?Id=3b401fd1-8192-4db3-9595-330cc1f28340",
+      "publisher": "TBMM",
+      "publication_day": "2021-03-04",
+      "retrieved_at_utc": "2026-11-26T06:26:48.248924+00:00",
+      "status": null,
+      "error": "<urlopen error [Errno 104] Connection reset by peer>"
+    },
+    {
+      "key": "cumhuriyet-ruling",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/cumhuriyet-ruling.html.bin",
+      "url": "https://www.cumhuriyet.com.tr/haber/mahkeme-umit-ozdagin-iyi-partiden-ihrac-kararini-iptal-etti-1805702",
+      "publisher": "Cumhuriyet",
+      "publication_day": "2021-01-13",
+      "retrieved_at_utc": "2026-11-26T06:26:48.253601+00:00",
+      "status": 200,
+      "final_url": "https://www.cumhuriyet.com.tr/haber/mahkeme-umit-ozdagin-iyi-partiden-ihrac-kararini-iptal-etti-1805702",
+      "bytes": 321899,
+      "sha256": "6fb6b5b26478fbb90e70d699f8b222b29b2368371dcf0c41bdc70f4156e5e793",
+      "content_type": "text/html; charset=utf-8",
+      "markers": {
+        "13.01.2021": true,
+        "iptal etti": true
+      }
+    },
+    {
+      "key": "aa-decision",
+      "url": "https://m.aa.com.tr/tr/politika/umit-ozdag-iyi-partiden-ihrac-edildi-/2045558",
+      "publication_day": "2020-11-16",
+      "publisher": "Anadolu Ajansı",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/aa-decision.html.bin",
+      "retrieved_at_utc": "2026-11-26T06:27:41.230228+00:00",
+      "final_url": "https://m.aa.com.tr/tr/politika/umit-ozdag-iyi-partiden-ihrac-edildi-/2045558",
+      "status": 200,
+      "sha256": "aa7b27ebfa5a6ae062c70391cf9008fcd245104ffe30c3510db8f5439d2d4efe",
+      "bytes": 355955,
+      "content_type": "text/html; charset=utf-8",
+      "markers": {
+        "kesin olarak çıkarılmasına": true
+      }
+    },
+    {
+      "key": "aa-decision-mobile",
+      "url": "https://mobile.aa.com.tr/tr/politika/umit-ozdag-iyi-partiden-ihrac-edildi-/2045558",
+      "publication_day": "2020-11-16",
+      "publisher": "Anadolu Ajansı",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/aa-decision-mobile.html.bin",
+      "retrieved_at_utc": "2026-11-26T06:27:41.234427+00:00",
+      "final_url": "https://mobile.aa.com.tr/tr/politika/umit-ozdag-iyi-partiden-ihrac-edildi-/2045558",
+      "status": 200,
+      "sha256": "a38f1296f19245d8d6a22858cef391e66690c4b62162e18bc519c5ff768e816b",
+      "bytes": 356084,
+      "content_type": "text/html; charset=utf-8",
+      "markers": {
+        "kesin olarak çıkarılmasına": true
+      }
+    },
+    {
+      "key": "t24-decision",
+      "url": "https://t24.com.tr/gundem/iyi-parti-kararini-verdi-umit-ozdag-partiden-ihrac-edildi%2C915114",
+      "publication_day": "2020-11-16",
+      "publisher": "T24",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/t24-decision.html.bin",
+      "retrieved_at_utc": "2026-11-26T06:27:41.262632+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "sozcu-decision",
+      "url": "https://www.sozcu.com.tr/son-dakika-iyi-partiden-umit-ozdag-karari-wp6127608",
+      "publication_day": "2020-11-16",
+      "publisher": "Sözcü",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/sozcu-decision.html.bin",
+      "retrieved_at_utc": "2026-11-26T06:27:41.269019+00:00",
+      "final_url": "https://www.sozcu.com.tr/son-dakika-iyi-partiden-umit-ozdag-karari-wp6127608",
+      "status": 200,
+      "sha256": "98297136737972a82c1fa87b3e604c72919c71caa409d867227b05ec5e291d5b",
+      "bytes": 106496,
+      "content_type": "text/html; charset=utf-8",
+      "markers": {
+        "KESİN OLARAK ÇIKARILMASINA": true
+      }
+    },
+    {
+      "key": "tbmm-resignation",
+      "url": "https://www.tbmm.gov.tr/Haber/Detay?Id=3b401fd1-8192-4db3-9595-330cc1f28340",
+      "publication_day": "2021-03-04",
+      "publisher": "TBMM",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/tbmm-resignation.html.bin",
+      "retrieved_at_utc": "2026-11-26T06:27:41.270132+00:00",
+      "status": null,
+      "error": "<urlopen error [Errno 104] Connection reset by peer>"
+    },
+    {
+      "key": "aa-resignation",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-ozdag-sources/aa-resignation.html.bin",
+      "url": "https://www.aa.com.tr/tr/politika/istanbul-milletvekili-umit-ozdag-iyi-partiden-istifa-etti/2164310",
+      "publication_day": "2021-03-04",
+      "publisher": "Anadolu Ajansı",
+      "retrieved_at_utc": "2026-11-26T06:28:25.925880+00:00",
+      "status": null,
+      "error": "Remote end closed connection without response"
+    }
+  ],
+  "scope_closures": []
+}
