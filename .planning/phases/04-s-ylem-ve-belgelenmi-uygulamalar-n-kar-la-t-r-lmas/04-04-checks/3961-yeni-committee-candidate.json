@@ -1,0 +1,89 @@
+{
+  "kind": "isolated_research_candidate",
+  "schema_status": "not_ingestible_pending_archive_and_project_validation",
+  "base": {
+    "path": "data/practices/04-yeni-parti.json",
+    "sha256": "e0e68011435a15b591d9481fe71a84bb7cfd34b4c779d71d0d5378c05797a165",
+    "event_count": 144,
+    "relation_count": 141
+  },
+  "document": {
+    "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y5/T2/DosyaKomisyonRaporunuVerdi/cd70ebe9-711b-42fe-8baf-896ee6b8eb29.pdf",
+    "sha256": "0d813e029374bdeb9274911cbb8f04ffd33facbd68b8edb887ce650b017d9e98",
+    "existing_original": "data/practices/sources/dem/objects/0d813e029374bdeb9274911cbb8f04ffd33facbd68b8edb887ce650b017d9e98/original.pdf",
+    "publisher": "TBMM",
+    "report_date": "2026-10-30",
+    "commission_meeting": "2026-10-27"
+  },
+  "event": {
+    "id": "0404-3961-yeni-commission-dissent-proposal",
+    "date": "2026-10-28",
+    "date_basis": "Şerhin basılı son sayfasındaki tarih, sunulma veya fiili yazılma saatini göstermez.",
+    "title": "2/3961 komisyon raporundaki Yeni Parti muhalefet şerhi",
+    "actors": [
+      {
+        "name": "Talih Özcan",
+        "constituency": "Düzce",
+        "role": "Dışişleri Komisyonu üyesi ve şerhte adı bulunan Yeni Parti temsilcisi"
+      },
+      {
+        "name": "Utku Çakırözer",
+        "constituency": "Eskişehir",
+        "role": "Dışişleri Komisyonu üyesi ve şerhte adı bulunan Yeni Parti temsilcisi"
+      }
+    ],
+    "party_identity_quote": "Bizler TBMM Dışişleri Komisyonu’nun Yeni Parti’ye mensup temsilcileri olarak",
+    "identity_pdf_page_index": 23,
+    "identity_printed_page": 24,
+    "name_date_pdf_page_index": 25,
+    "name_date_printed_page": 26,
+    "summary": "İki temsilci, mevcut biçimiyle Mekke Ortak Savunma Anlaşmasına muhalefetlerini ve TBMM denetimine ilişkin kaygılarını yazılı şerhte belirtti.",
+    "limitations": [
+      "Raporda basılı adlar bulunur, ıslak imza gösterilmez.",
+      "Komisyon üye çizelgesindeki şerh ibaresi kişisel oy cetveli değildir.",
+      "Komisyon işlemi, rapor tarihi ve 5 Kasım Genel Kurul kabulü ayrı evrelerdir."
+    ]
+  },
+  "statement": {
+    "date": "2026-10-27",
+    "speaker": "Özgür Özel",
+    "capacity": "Yeni Parti Genel Başkanı",
+    "source": {
+      "url": "https://www.haberler.com/guncel/ozgur-ozel-mekke-anlasmasi-kapsaminda-turk-20370508-haberi/",
+      "status": 200,
+      "retrieved_at": "2026-11-26T05:07:26.483209+00:00",
+      "sha256": "d76f55db7a693e1476340d49ac9637ee855890a696360508fe306547b6277e10",
+      "file": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/3961-yeni-committee-statement-haberler-original.html",
+      "bytes": 201418
+    },
+    "quote": "Türk askerini Yemen çöllerine göndermeye YENİ Parti asla sessiz kalmaz, asla destek olmaz.",
+    "scope": "Mekke anlaşmasına ilişkin itiraz ve askerin çatışmaya gönderilmesi",
+    "limitations": [
+      "Haber ANKA atıflı bir ikincil kaynaktır.",
+      "Aynı gün komisyon toplantısına göre saat sırası ve 28 Ekim tarihli şerhin tam yazılma saati gösterilmez."
+    ]
+  },
+  "relation_proposal": {
+    "status": "provisional",
+    "assessment": "Aynı anlaşmada çatışmaya dahil olma ve meclis denetimi kaygısı açısından karşılaştırılabilir. 27 Ekim açıklamasıyla 28 Ekim tarihli yazılı şerh arasında dar kapsamlı uyum önerilir.",
+    "not_established": [
+      "Açıklamanın şerhe neden olduğu",
+      "İki ismin bireysel komisyon oyu",
+      "Anlaşmanın asker sevki veya fiili politika sonucu",
+      "14 Kasım kesim dışı yayımın kapsam içi sonucu"
+    ]
+  },
+  "independent_confirmation": {
+    "url": "https://www.sozcu.com.tr/husiler-somali-de-mehmetcik-e-tehdit-p375390",
+    "status": 200,
+    "retrieved_at": "2026-11-26T05:07:08.619126+00:00",
+    "sha256": "1caf3236a63e3e4ca69e6503288ded21ebadbb72fa855e2a6dfa1ea14d972afd",
+    "file": ".planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/3961-yeni-committee-members-original.html",
+    "bytes": 144007
+  },
+  "review_needed": [
+    "Tarih, alıntı ve sayfa çapalarını ikinci kişi yeniden okumalı.",
+    "Yeni Parti kaynak arşivine usulüne uygun nesne/sürüm kaydı ve yapısal kaynak denetimi gerekir.",
+    "Yerel semantik kontrol, uygulama kapıları ve iki görünüm yerine geçmez."
+  ]
+}
