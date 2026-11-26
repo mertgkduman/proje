@@ -1,5 +1,14 @@
 # Faz 04 yürütüm sözleşmesi
 
+## 26 Kasım 2026 ilk teslim kararı
+
+Kullanıcının kapsamı daraltma onayı uyarınca Faz 4, [04-16 ilk teslim
+planıyla](04-16-PLAN.md) tamamlanabilir. Dokuz parti, yöntem, kesim ve
+kaynak doğrulaması sürer. Bu ilk teslim sağlaması yapılan paketleri ve
+açık araştırma durumlarını içerir. Aşağıdaki tam tarama sözleşmesi,
+`partial` ve `complete` veri durumları, kaynak kayıtları ve 04-04–15’teki
+kalan araştırma işleri daha sonraki genişletmeler için geçerlidir.
+
 Bu destek belgesi 04-CONTEXT.md kararlarını değiştirmez. Bütün PLAN görevleri bu sözleşmeyi okuyarak uygulanır. GSD planlama akışı kullanıcı tarafından başlatılmıştır; plan üretimi kod yürütümü veya kamu yayını değildir.
 
 ## Hedef ve korunan taban
