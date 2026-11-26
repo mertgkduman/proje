@@ -878,3 +878,20 @@ EMEP'in 3.270 özgün API metninden 2.598'i tam okundu. DEM'in Aralık 2012
 arşiv nüshasındaki 86.464 karakterlik tüzük metni bütünüyle okundu. DEM'in
 2013 arşiv nüshasındaki 182.507 karakterlik program metninin 56.613
 karakteri okundu. [DEM tüzük okuması](../04-06-checks/historical-charter-final-sections-reading.json).
+
+## 26 Kasım kaynak okuması ve önizleme kuyruğu
+
+DEM'in 182.507 karakterlik Aralık 2013 program nüshası baştan sona
+dokuz ardışık dilimde okundu. Son dört bölüm ve metnin bitişi
+[son okuma kaydında](../04-06-checks/historical-program-policies-25-28-reading.json)
+yer alıyor. Kuruluş günü ve önceki kısa adların kullanımı
+[dört sicil nüshası ve iki haberle](../04-06-checks/historical-short-name-registry-source-reading.json)
+incelendi. 2016 kongre kararının imzalı nüshası ve kısa adın sicile işlendiği gün açık.
+
+EMEP'in [Ocak 2018 açıklamaları ve dil nüshaları](../04-10-checks/party-api-2018-january-afrin-languages-reading.json)
+okundu. Özgün metin üzerinden doğrulanan toplam 2.609, kalan 661.
+
+Güncel dokuz paket için izole birleşik HTML ve SQLite önizlemesi 62739549
+numaralı Slurm işiyle kuyruğa alındı. Son kontrolde işlemci kotası nedeniyle
+başlangıç zamanı verilmedi. Yapısal birleştirme sonucu ve iki kapsam kapanışının
+tek tek bağımsız denetimleri kayıtlı.
