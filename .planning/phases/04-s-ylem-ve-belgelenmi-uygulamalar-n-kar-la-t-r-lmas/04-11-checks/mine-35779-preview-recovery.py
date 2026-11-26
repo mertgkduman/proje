@@ -43,10 +43,15 @@ for gate, marker in (("input", "PRACTICE_INPUT_OK"), ("source", "PRACTICE_SOURCE
 old_root = root / "data/practices/sources/saadet"
 new_root = archive / "source-root"
 entries = read(package)["entries"]
-for entry in entries:
-    row = entry["values"]
-    if entry["kind"] == "document_version" and row["id"].startswith("0411-saadet-mine-inquiry-35779"):
-        assert sha(new_root / row["original_path"]) == row["sha256"]
+new_versions = [
+    entry["values"] for entry in entries
+    if entry["kind"] == "document_version" and entry["values"]["id"].startswith("0411-mine-inquiry-")
+]
+assert {row["id"] for row in new_versions} == {
+    "0411-mine-inquiry-identity-v1", "0411-mine-inquiry-filing-v1", "0411-mine-inquiry-answer-v1",
+}
+for row in new_versions:
+    assert sha(new_root / row["original_path"]) == row["sha256"]
 with TemporaryDirectory(prefix="gsd-0411-35779-preview-", dir="/tmp") as folder:
     scratch = Path(folder)
     source = scratch / "party-sources"
