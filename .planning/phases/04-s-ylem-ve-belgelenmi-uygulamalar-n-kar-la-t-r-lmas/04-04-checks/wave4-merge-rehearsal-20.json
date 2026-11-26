@@ -1,0 +1,136 @@
+{
+  "git_commit": "84407c42d5704b6a44a5efb87b52788b4c8d4281",
+  "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+  "kind": "isolated_merge_preflight",
+  "original_packages": {
+    "yeni-parti": {
+      "package_sha256": "e0e68011435a15b591d9481fe71a84bb7cfd34b4c779d71d0d5378c05797a165",
+      "companion_review_sha256": "9139945aeddf207f0ec27df786907d965d23d2642f05de457f2315cb36c6069b",
+      "events": 144,
+      "relations": 141,
+      "closures": 0,
+      "external_review_ref_count": 1223
+    },
+    "tip": {
+      "package_sha256": "56f351d7e0537d7640533392784c6408ac449c433637bc3657864d2a9a28083f",
+      "companion_review_sha256": "d4cbce3ba31b2861f85e41c9d4b634fea238a4e0e7efddff9af8ed6f357c79cf",
+      "events": 65,
+      "relations": 56,
+      "closures": 0,
+      "external_review_ref_count": 744
+    },
+    "dem": {
+      "package_sha256": "da836b07b4cb4ac61bcaefe6eaf744ce66c1effcdf714df1ea97ec946818c9df",
+      "companion_review_sha256": "02db365953f11836672a19ef088ede88ac970d075cfbaa2f6dd835a5f1195891",
+      "events": 89,
+      "relations": 13,
+      "closures": 0,
+      "external_review_ref_count": 836
+    },
+    "iyi": {
+      "package_sha256": "1a0960a4d5eac4c029cfad9e985bc13c1c46ae05a3834cd887e5ccb0e66835bf",
+      "companion_review_sha256": "e10e4e42084be8a82108dd93b13a0c7a30cd92e68de84f80e11d3962121ff0ad",
+      "events": 21,
+      "relations": 13,
+      "closures": 0,
+      "external_review_ref_count": 310
+    },
+    "yeni-yol": {
+      "package_sha256": "07a7acdd87ff461abe7fd3f75f1e4e60ef4805c6cbdf2eab7f60756b703d9f6a",
+      "companion_review_sha256": "1b89ab0381dad5fc48a00a603c5624ed34489205d60d6bde83a5c7f298c79115",
+      "events": 23,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 345
+    },
+    "dbp": {
+      "package_sha256": "607f99e57799c1a93201732588c59b03064a2b71ed339dc173ad4cdfdf15c2f1",
+      "companion_review_sha256": "5e5f136dfbbbb5ab6fd14ff1f59c29d70a7e3ba9a5fbca24a007de939302e8b1",
+      "events": 68,
+      "relations": 7,
+      "closures": 0,
+      "external_review_ref_count": 499
+    },
+    "emep": {
+      "package_sha256": "276844791716e0f4080dd4150425362dc6bd340f6f33e1a798001b2d4a2bce11",
+      "companion_review_sha256": "2694a8b41ac5b561b96f3d137f5fd7f6c482053209c2144243de9a68a26fde4a",
+      "events": 87,
+      "relations": 81,
+      "closures": 0,
+      "external_review_ref_count": 795
+    },
+    "saadet": {
+      "package_sha256": "6fe02492e12793cdd5b5373016e2ad914fb0fb960bba4779a99f290c2e2f0dc4",
+      "companion_review_sha256": "dfa1384c1d84bf86706aa5d15390dcddda0012649f28c20e8ee0c4f541bccbbb",
+      "events": 40,
+      "relations": 36,
+      "closures": 0,
+      "external_review_ref_count": 502
+    },
+    "demokrat": {
+      "package_sha256": "83b02dd64c3791a8774cacfe788995c247a3263e4565e8fd913c74d2359ef736",
+      "companion_review_sha256": "226698882d18a9a29565b44ff7c2c37749666e22c4cbf1c2a543117b6ad1059c",
+      "events": 83,
+      "relations": 54,
+      "closures": 0,
+      "external_review_ref_count": 908
+    }
+  },
+  "original_stages": {
+    "yeni-parti": "tracer",
+    "tip": "partial",
+    "dem": "tracer",
+    "iyi": "tracer",
+    "yeni-yol": "tracer",
+    "dbp": "tracer",
+    "emep": "tracer",
+    "saadet": "tracer",
+    "demokrat": "tracer"
+  },
+  "isolated_stage": "partial",
+  "isolated_envelopes": {
+    "yeni-parti": "6ebab9afb5483f38afa7d1db61b7e7aec277496d28122bc36b5ea979c9845b19",
+    "tip": "0e5cea95a9d59328e027673b3212363234f48e2b003a13829651c3cc2041b478",
+    "dem": "e1bebd7829a560e0bc3cbdadaa67e7dcbc96bc351b1ad9002210cd8753bb8fd5",
+    "iyi": "bb9e0ec5b61504e2bdfdbb3d3c5adfd5dcfa1097211d873fc0d057a69332899a",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "860bfb656c97319c53ec6a337455ff573023f461ef093de2c1c2a962d0370f38",
+    "emep": "ea76fed806a644cfac974115d89ee8430b69859f23def7ffe1b4ecc4306aeece",
+    "saadet": "6851ed1893f3e0938f562af5006d5382e5e02f78b1915fe49998dce79eefc800",
+    "demokrat": "418ab522df6afa79983bf78cc93430919dbb5c649a513fad06188fe3139fe79e"
+  },
+  "isolated_envelope_sha256": {
+    "yeni-parti": "6ebab9afb5483f38afa7d1db61b7e7aec277496d28122bc36b5ea979c9845b19",
+    "tip": "0e5cea95a9d59328e027673b3212363234f48e2b003a13829651c3cc2041b478",
+    "dem": "e1bebd7829a560e0bc3cbdadaa67e7dcbc96bc351b1ad9002210cd8753bb8fd5",
+    "iyi": "bb9e0ec5b61504e2bdfdbb3d3c5adfd5dcfa1097211d873fc0d057a69332899a",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "860bfb656c97319c53ec6a337455ff573023f461ef093de2c1c2a962d0370f38",
+    "emep": "ea76fed806a644cfac974115d89ee8430b69859f23def7ffe1b4ecc4306aeece",
+    "saadet": "6851ed1893f3e0938f562af5006d5382e5e02f78b1915fe49998dce79eefc800",
+    "demokrat": "418ab522df6afa79983bf78cc93430919dbb5c649a513fad06188fe3139fe79e"
+  },
+  "preceding_decisions": "wave4-merge-rehearsal-19-decisions.json",
+  "unchanged_candidate_sources": true,
+  "decisions_sha256": "3dd39a60db939e34bdd3dd246d40e21641afcc86c4c04eb0ee466c0630fa4dd8",
+  "output_sha256": "b7aedf4308c152bdd2593b03eaa3e736796af20548aaa6e1552544b0a21f0854",
+  "forward_reverse_equal": true,
+  "same_candidates": 21,
+  "unresolved_candidates": 13,
+  "counts": {
+    "practice_event": 585,
+    "practice_relation": 413,
+    "practice_closure": 0
+  },
+  "aliases": 628,
+  "event_aliases": 628,
+  "review_origins": 6162,
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "merged_events": 585,
+  "merged_relations": 413,
+  "closure_count": 0,
+  "added_reviewed_candidates": [
+    "idlib-2020-03-05-moskova-ek-protokol"
+  ],
+  "active_unmatched": 217
+}
