@@ -1,0 +1,1825 @@
+
+<!DOCTYPE html>
+<html lang="tr" dir="ltr" class="no-js">
+<head>
+        <link rel="stylesheet" href="/Content/responsive/VOA/tr-TR/VOA-tr-TR.css?&amp;av=0.0.0.0&amp;cb=325">
+<script src="https://tags.voaturkce.com/voa-pangea/prod/utag.sync.js"></script><script type='text/javascript' src='https://www.youtube.com/iframe_api' async></script>    <script type="text/javascript">
+        //a general 'js' detection, must be on top level in <head>, due to CSS performance
+        document.documentElement.className = "js";
+        var cacheBuster = "325";
+        var appBaseUrl = "/";
+        var imgEnhancerBreakpoints = [0, 144, 256, 408, 650, 1023, 1597];
+        var isLoggingEnabled = false;
+        var isPreviewPage = false;
+        var isLivePreviewPage = false;
+        var isForPdf = false;
+
+                var vjsLocalization = {
+                        "Play Video": "play",
+                        "Play": "play",
+                        "Pause": "pause",
+                        "Current Time": "",
+                        "Duration": "",
+                        "Remaining Time": "",
+                        "Mute": "volume",
+                        "Unmute": "volume",
+                        "LIVE": "Live",
+                        "Quality": "source switch"
+                };
+            
+        if (!isPreviewPage) {
+            window.RFE = window.RFE || {};
+            window.RFE.cacheEnabledByParam = window.location.href.indexOf('nocache=1') === -1;
+
+            const url = new URL(window.location.href);
+            const params = new URLSearchParams(url.search);
+
+            // Remove the 'nocache' parameter
+            params.delete('nocache');
+
+            // Update the URL without the 'nocache' parameter
+            url.search = params.toString();
+            window.history.replaceState(null, '', url.toString());
+        } else if (!isForPdf) {
+            window.addEventListener('load', function() {
+                const links = window.document.links;
+                for (let i = 0; i < links.length; i++) {
+                    links[i].href = '#';
+                    links[i].target = '_self';
+                }
+             })
+        }
+
+        // Iframe & Embed detection
+        var embedProperties = {};
+
+        try {
+            // Reliable way to check if we are in an iframe.
+            var isIframe = window.self !== window.top;
+            embedProperties.is_iframe = isIframe;
+
+            if (!isIframe) {
+                embedProperties.embed_context = "main";
+            } else {
+                // We are in an iframe. Let's try to access the parent.
+                // This access will only fail with strict cross-origin (without document.domain).
+                var parentLocation = window.top.location;
+
+                // The access succeeded. Now we explicitly compare the hostname.
+                if (window.location.hostname === parentLocation.hostname) {
+                    embedProperties.embed_context = "embed_self";
+                } else {
+                    // Hostname is different (e.g. different subdomain with document.domain)
+                    embedProperties.embed_context = "embed_cross";
+                }
+
+                // Since the access works, we can safely get the details.
+                embedProperties.url_parent = parentLocation.href;
+                embedProperties.title_parent = window.top.document.title;
+            }
+        } catch (err) {
+            // We are in an iframe, and an error occurred, probably due to cross-origin restrictions.
+            embedProperties.is_iframe = true;
+            embedProperties.embed_context = "embed_cross";
+
+            // We cannot access the properties of window.top.
+            // `document.referrer` can sometimes provide the URL of the parent page.
+            // It is not 100% reliable, but it is the best we can do in this situation.
+            embedProperties.url_parent = document.referrer || null;
+            embedProperties.title_parent = null; // We can't get to the title in a cross-origin scenario.
+        }
+
+var pwaEnabled = false;        var swCacheDisabled;
+    </script>
+    <meta charset="utf-8" />
+
+            <title>Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; </title>
+            <meta name="description" content="Parlamenter sisteme geçi&#x15F;i amaçlayan anayasa de&#x11F;i&#x15F;ikli&#x11F;i teklifinde, yedi y&#x131;ll&#x131;&#x11F;&#x131;na bir defa seçilecek, partisiz, sembolik cumhurba&#x15F;kan&#x131;n&#x131;n yan&#x131;s&#x131;ra ba&#x11F;&#x131;ms&#x131;z yarg&#x131; kararlar&#x131; için atama ve tayin sistemi iyile&#x15F;tirilmi&#x15F; güçlü hakim tan&#x131;mlamas&#x131; ön plana ç&#x131;kt&#x131; " />
+                <meta name="keywords" content="TÜRKİYE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="robots" content="max-image-preview:large"><meta property="fb:pages" content="10150093764055442" />
+<meta name="msvalidate.01" content="3286EE554B6F672A6F2E608C02343C0E" />
+<meta name="yandex-verification" content="44109a8675ae26b6" />
+<meta name="facebook-domain-verification" content="uyxxi5qrcxqz4deqtmd7wiu2qhoam9" />
+        <link href="https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html" rel="canonical" />
+
+        <meta name="apple-mobile-web-app-title" content="VOA Türkçe" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+            <meta name="apple-itunes-app" content="app-id=632618796, app-argument=//6853087.ltr" />
+<meta content="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; " property="og:title"></meta>
+<meta content="Parlamenter sisteme geçi&#x15F;i amaçlayan anayasa de&#x11F;i&#x15F;ikli&#x11F;i teklifinde, yedi y&#x131;ll&#x131;&#x11F;&#x131;na bir defa seçilecek, partisiz, sembolik cumhurba&#x15F;kan&#x131;n&#x131;n yan&#x131;s&#x131;ra ba&#x11F;&#x131;ms&#x131;z yarg&#x131; kararlar&#x131; için atama ve tayin sistemi iyile&#x15F;tirilmi&#x15F; güçlü hakim tan&#x131;mlamas&#x131; ön plana ç&#x131;kt&#x131; " property="og:description"></meta>
+<meta content="article" property="og:type"></meta>
+<meta content="https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html" property="og:url"></meta>
+<meta content="VOA Türkçe" property="og:site_name"></meta>
+<meta content="https://www.facebook.com/VOATurkce/" property="article:publisher"></meta>
+<meta content="https://gdb.voanews.com/022a0000-0aff-0242-bcc6-08dad14d42ec_w1200_h630.jpg" property="og:image"></meta>
+<meta content="1200" property="og:image:width"></meta>
+<meta content="630" property="og:image:height"></meta>
+<meta content="305944203160965" property="fb:app_id"></meta>
+<meta content="Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu" name="Author"></meta>
+<meta content="Murat Karabulut" name="Author"></meta>
+<meta content="summary_large_image" name="twitter:card"></meta>
+<meta content="@VOATurkce" name="twitter:site"></meta>
+<meta content="https://gdb.voanews.com/022a0000-0aff-0242-bcc6-08dad14d42ec_w1200_h630.jpg" name="twitter:image"></meta>
+<meta content="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; " name="twitter:title"></meta>
+<meta content="Parlamenter sisteme geçi&#x15F;i amaçlayan anayasa de&#x11F;i&#x15F;ikli&#x11F;i teklifinde, yedi y&#x131;ll&#x131;&#x11F;&#x131;na bir defa seçilecek, partisiz, sembolik cumhurba&#x15F;kan&#x131;n&#x131;n yan&#x131;s&#x131;ra ba&#x11F;&#x131;ms&#x131;z yarg&#x131; kararlar&#x131; için atama ve tayin sistemi iyile&#x15F;tirilmi&#x15F; güçlü hakim tan&#x131;mlamas&#x131; ön plana ç&#x131;kt&#x131; " name="twitter:description"></meta>
+                    <link rel="amphtml" href="https://www.voaturkce.com/amp/altili-masa-anayasa-degisikligini-tanitti/6853087.html" />
+<script type="application/ld+json">{"articleSection":"T\u0026#220;RKİYE","isAccessibleForFree":true,"headline":"Altılı Masa Anayasa Değişikliğini  Tanıttı ","inLanguage":"tr-TR","keywords":"TÜRKİYE","author":[{"@type":"Person","url":"https://www.voaturkce.com/author/yildiz-yazicioglu/iibop","description":"Yıldız Yazıcıoğlu, 1994-1998 döneminde Ankara Üniversitesi İletişim Fakültesi Gazetecilik Bölümü’nde lisans eğitimini tamamladı. Mesleğe 1997 yılında Cumhuriyet’te stajyer olarak başladı. 1998-2000 döneminde yüksek lisans eğitimine devam etti. 2000 – Mayıs 2009 döneminde Milliyet’te mesleki kariyerini cumhurbaşkanlığı ve parlamento muhabirliği noktasına taşıdı. 2009 - 2011 yıllarında ABD’nin başkenti Washington DC’de kariyerini sürdürdü ve farklı medya kuruluşları için temsilcilik – yorumculuk görevlerini yürüttü. Bu dönemde VOA Türkçe’de eğitim aldı ve görev yaptı. Ardından Ankara’ya dönüşünde Habertürk TV’de, ArtıBir TV’de görevler üstlendi. Şu anda VOA Türkçe ekibinde görev almayı sürdürüyor.","image":{"@type":"ImageObject","url":"https://gdb.voanews.com/24792975-4584-452d-bb7e-015a3ea5790f.jpg"},"name":"Yıldız Yazıcıoğlu"},{"@type":"Person","url":"https://www.voaturkce.com/author/murat-karabulut/gvoyr","description":"","image":{"@type":"ImageObject"},"name":"Murat Karabulut"}],"datePublished":"2022-11-28 14:50:47Z","dateModified":"2022-11-28 20:30:31Z","publisher":{"logo":{"width":512,"height":220,"@type":"ImageObject","url":"https://www.voaturkce.com/Content/responsive/VOA/tr-TR/img/logo.png"},"@type":"NewsMediaOrganization","url":"https://www.voaturkce.com","sameAs":["https://www.facebook.com/voaturkce","https://twitter.com/VOATurkce","https://www.youtube.com/voaturkce","https://www.instagram.com/voaturkce/","https://t.me/voaturkce"],"name":"VOA Türkçe - Haberler","alternateName":""},"@context":"https://schema.org","@type":"NewsArticle","mainEntityOfPage":"https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html","url":"https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html","description":"Parlamenter sisteme geçişi amaçlayan anayasa değişikliği teklifinde, yedi yıllığına bir defa seçilecek, partisiz, sembolik cumhurbaşkanının yanısıra bağımsız yargı kararları için atama ve tayin sistemi iyileştirilmiş güçlü hakim tanımlaması ön plana çıktı ","image":{"width":1200,"height":675,"@type":"ImageObject","url":"https://gdb.voanews.com/022a0000-0aff-0242-bcc6-08dad14d42ec_w1200_r1.jpg"},"name":"Altılı Masa Anayasa Değişikliğini  Tanıttı "}</script>    <script src="/Scripts/responsive/infographics.bundle.min.js?&amp;av=0.0.0.0&amp;cb=325"></script>
+        <script src="/Scripts/responsive/dollardom.min.js?&amp;av=0.0.0.0&amp;cb=325"></script>
+        <script src="/Scripts/responsive/modules/commons.js?&amp;av=0.0.0.0&amp;cb=325"></script>
+        <script src="/Scripts/responsive/modules/app_code.js?&amp;av=0.0.0.0&amp;cb=325"></script>
+
+        <link rel="icon" type="image/svg+xml" href="/Content/responsive/VOA/img/webApp/favicon.svg" />
+        <link rel="alternate icon" href="/Content/responsive/VOA/img/webApp/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/Content/responsive/VOA/img/webApp/ico-152x152.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/Content/responsive/VOA/img/webApp/ico-144x144.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/Content/responsive/VOA/img/webApp/ico-114x114.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/Content/responsive/VOA/img/webApp/ico-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" href="/Content/responsive/VOA/img/webApp/ico-57x57.png" />
+        <link rel="icon" sizes="192x192" href="/Content/responsive/VOA/img/webApp/ico-192x192.png" />
+        <link rel="icon" sizes="128x128" href="/Content/responsive/VOA/img/webApp/ico-128x128.png" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/Content/responsive/VOA/img/webApp/ico-144x144.png" />
+    <link rel="alternate" type="application/rss+xml" title="VOA - Top Stories [RSS]" href="/api/" />
+    <link rel="sitemap" type="application/rss+xml" href="/sitemap.xml" />
+    
+    
+
+
+
+        <script type="text/javascript">
+            var analyticsData = Object.assign(embedProperties, {url:"https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html",property_id:"488",article_uid:"6853087",page_title:"altılı masa anayasa değişikliğini  tanıttı",page_type:"article",content_type:"article",subcontent_type:"article",last_modified:"2022-11-28 20:30:31Z",pub_datetime:"2022-11-28 14:50:47Z",pub_year:"2022",pub_month:"11",pub_day:"28",pub_hour:"14",pub_weekday:"monday",section:"türkİye",english_section:"turkiye",byline:"yıldız yazıcıoğlu, murat karabulut",categories:"turkiye",domain:"www.voaturkce.com",language:"turkish",language_service:"voa turkish",platform:"web",copied:"no",copied_article:"not set",copied_title:"not set",runs_js:"yes",cms_release:"8.50.0.0.325",enviro_type:"prod",slug:"altili-masa-anayasa-degisikligini-tanitti",entity:"voa",short_language_service:"turk",platform_short:"w",page_name:"altılı masa anayasa değişikliğini  tanıttı"});
+            // Push Analytics data as GTM message (without "event" attribute and before GTM initialization)
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(analyticsData);
+        </script>
+        <script type="text/javascript" data-cookiecategory="analytics">
+
+            var gtmEventObject = {event: 'page_meta_ready'};window.dataLayer = window.dataLayer || [];window.dataLayer.push(gtmEventObject);
+            var renderGtm = "true";
+            if (renderGtm === "true") {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N8MP7P');
+            }
+        </script>
+</head>
+<body class=" nav-no-loaded cc_theme pg-article pg-article--single-column print-lay-article use-sticky-share nojs-images ">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8MP7P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>        <script type="text/javascript" data-cookiecategory="analytics">
+
+            var gtmEventObject = {event: 'page_meta_ready'};window.dataLayer = window.dataLayer || [];window.dataLayer.push(gtmEventObject);
+
+            var renderGtm = "true";
+            if (renderGtm === "true") {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N8MP7P');
+            }
+
+        </script>
+        <!--Analytics tag js version start-->
+            <script type="text/javascript" data-cookiecategory="analytics">
+                var utag_data = Object.assign({}, analyticsData, {pub_year:"2022",pub_month:"11",pub_day:"28",pub_hour:"14",pub_weekday:"monday"});
+if(typeof(TealiumTagFrom)==='function' && typeof(TealiumTagSearchKeyword)==='function') {
+var utag_from=TealiumTagFrom();var utag_searchKeyword=TealiumTagSearchKeyword();
+if(utag_searchKeyword!=null && utag_searchKeyword!=='' && utag_data["search_keyword"]==null) utag_data["search_keyword"]=utag_searchKeyword;if(utag_from!=null && utag_from!=='') utag_data["from"]=TealiumTagFrom();}
+                if(window.top!== window.self&&utag_data.page_type==="snippet"){utag_data.page_type = 'iframe';}
+                try{if(window.top!==window.self&&window.self.location.hostname===window.top.location.hostname){utag_data.platform = 'self-embed';utag_data.platform_short = 'se';}}catch(e){if(window.top!==window.self&&window.self.location.search.includes("platformType=self-embed")){utag_data.platform = 'cross-promo';utag_data.platform_short = 'cp';}}
+                (function(a,b,c,d){    a="https://tags.voaturkce.com/voa-pangea/prod/utag.js";    b=document;c="script";d=b.createElement(c);d.src=a;d.type="text/java"+c;d.async=true;    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);    })();
+            </script>
+            <!--Analytics tag js version end-->
+<!-- Analytics tag management NoScript -->
+<noscript>
+<img style="position: absolute; border: none;" src="https://ssc.voaturkce.com/b/ss/bbgprod,bbgentityvoa/1/G.4--NS/1090418657?pageName=voa%3aturk%3aw%3aarticle%3aalt%c4%b1l%c4%b1%20masa%20anayasa%20de%c4%9fi%c5%9fikli%c4%9fini%20%20tan%c4%b1tt%c4%b1%20&amp;c6=alt%c4%b1l%c4%b1%20masa%20anayasa%20de%c4%9fi%c5%9fikli%c4%9fini%20%20tan%c4%b1tt%c4%b1%20&amp;v36=8.50.0.0.325&amp;v6=D=c6&amp;g=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;c1=D=g&amp;v1=D=g&amp;events=event1,event52&amp;c16=voa%20turkish&amp;v16=D=c16&amp;c5=turkiye&amp;v5=D=c5&amp;ch=t%c3%9crk%c4%b0ye&amp;c15=turkish&amp;v15=D=c15&amp;c4=article&amp;v4=D=c4&amp;c14=6853087&amp;v14=D=c14&amp;v20=no&amp;c17=web&amp;v17=D=c17&amp;mcorgid=518abc7455e462b97f000101%40adobeorg&amp;server=www.voaturkce.com&amp;pageType=D=c4&amp;ns=bbg&amp;v29=D=server&amp;v25=voa&amp;v30=488&amp;v105=D=User-Agent " alt="analytics" width="1" height="1" /></noscript>
+<!-- End of Analytics tag management NoScript -->
+
+
+        <!--*** Accessibility links - For ScreenReaders only ***-->
+        <nav class="sr-only" aria-label="Eri&#x15F;ilebilirlik">
+            <ul>
+                <li><a href="#content" data-disable-smooth-scroll="1">Ana içeri&#x11F;e geç</a></li>
+                <li><a href="#navigation" data-disable-smooth-scroll="1">Ana navigasyona geç</a></li>
+                <li><a href="#txtHeaderSearch" data-disable-smooth-scroll="1">Aramaya geç</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+<div dir="ltr">
+    <div id="page">
+            <aside>
+
+<div class="c-lightbox overlay-modal">
+    <div class="c-lightbox__intro">
+        <p class="c-lightbox__intro-title"></p>
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__intro-next" title="sonraki">
+            <span class="ico ico--rounded ico-chevron-right"></span>
+            <span class="sr-only">sonraki</span>
+        </button>
+    </div>
+    <div class="c-lightbox__nav">
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__btn--close" title="Kapat">
+            <span class="ico ico--rounded ico-close"></span>
+            <span class="sr-only">Kapat</span>
+        </button>
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__btn--prev" title="önceki">
+            <span class="ico ico--rounded ico-chevron-left"></span>
+            <span class="sr-only">önceki</span>
+        </button>
+        <button class="btn btn--rounded c-lightbox__btn c-lightbox__btn--next" title="sonraki">
+            <span class="ico ico--rounded ico-chevron-right"></span>
+            <span class="sr-only">sonraki</span>
+        </button>
+    </div>
+    <div class="c-lightbox__content-wrap">
+        <figure class="c-lightbox__content">
+            <span class="c-spinner c-spinner--lightbox">
+                <img src="/Content/responsive/img/player-spinner.png"
+                     alt="lütfen bekleyin"
+                     title="lütfen bekleyin" />
+            </span>
+            <div class="c-lightbox__img">
+                <div class="thumb">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <figcaption>
+                <div class="c-lightbox__info c-lightbox__info--foot">
+                    <span class="c-lightbox__counter"></span>
+                    <span class="caption c-lightbox__caption"></span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="hidden">
+        <div class="content-advisory__box content-advisory__box--lightbox">
+            <span class="content-advisory__box-text">Bu foto&#x11F;raf rahats&#x131;z edici bir görsel içerebilir.</span>
+            <button class="btn btn--transparent content-advisory__box-btn m-t-md" value="text" type="button">
+                <span class="btn__text">
+                    Click to reveal
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="print-dialogue">
+    <div class="container">
+        <p class="print-dialogue__title section-head">Print Options:</p>
+        <div class="print-dialogue__opts">
+            <ul class="print-dialogue__opt-group">
+                <li class="form__group form__group--checkbox">
+                    <input class="form__check " id="checkboxImages" name="checkboxImages" type="checkbox" checked="checked" />
+                    <label for="checkboxImages" class="form__label m-t-md">Images</label>
+                </li>
+                <li class="form__group form__group--checkbox">
+                    <input class="form__check " id="checkboxMultimedia" name="checkboxMultimedia" type="checkbox" checked="checked" />
+                    <label for="checkboxMultimedia" class="form__label m-t-md">Multimedia</label>
+                </li>
+            </ul>
+            <ul class="print-dialogue__opt-group">
+                <li class="form__group form__group--checkbox">
+                    <input class="form__check " id="checkboxEmbedded" name="checkboxEmbedded" type="checkbox" checked="checked" />
+                    <label for="checkboxEmbedded" class="form__label m-t-md">Embedded Content</label>
+                </li>
+                <li class="hidden">
+                    <input class="form__check " id="checkboxComments" name="checkboxComments" type="checkbox" />
+                    <label for="checkboxComments" class="form__label m-t-md">Comments</label>
+                </li>
+            </ul>
+        </div>
+        <div class="print-dialogue__buttons">
+            <button class="btn  btn--secondary close-button" type="button" title="&#x130;ptal et">
+                <span class="btn__text ">&#x130;ptal et</span>
+            </button>
+            <button class="btn  btn-cust-print m-l-sm" type="button" title="Yazd&#x131;r">
+                <span class="btn__text ">Yazd&#x131;r</span>
+            </button>
+        </div>
+    </div>
+</div>                
+<div class="ctc-message pos-fix">
+    <div class="ctc-message__inner">Link has been copied to clipboard</div>
+</div>
+            </aside>
+
+
+<div class="hdr-20 hdr-20--big">
+    <div class="hdr-20__inner">
+        <div class="hdr-20__max pos-rel">
+            <div class="hdr-20__side hdr-20__side--primary d-flex">
+                <label data-for="main-menu-ctrl" data-switcher-trigger="true" data-switch-target="main-menu-ctrl" class="burger hdr-trigger pos-rel trans-trigger" data-trans-evt="click" data-trans-id="menu">
+                    <span class="ico ico-close hdr-trigger__ico hdr-trigger__ico--close burger__ico burger__ico--close"></span>
+                    <span class="ico ico-menu hdr-trigger__ico hdr-trigger__ico--open burger__ico burger__ico--open"></span>
+                </label>
+                <div class="menu-pnl pos-fix trans-target" data-switch-target="main-menu-ctrl" data-trans-id="menu">
+                    <div class="menu-pnl__inner">
+                        <nav class="main-nav menu-pnl__item menu-pnl__item--first">
+                            <ul class="main-nav__list accordeon" data-analytics-tales="false" data-promo-name="link" data-location-name="nav,secnav">
+                                
+
+        <li class="main-nav__item accordeon__item" data-switch-target="menu-item-951">
+            <label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-951">
+                HABERLER
+                <span class="ico ico-chevron-down main-nav__chev"></span>
+            </label>
+            <div class="main-nav__sub-list">
+                
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Turkiye" title="TÜRK&#x130;YE" data-item-name="turkiye" >TÜRK&#x130;YE</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Amerika" title="AMER&#x130;KA" data-item-name="amerika" >AMER&#x130;KA</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Ortadogu" title="ORTADO&#x11E;U" data-item-name="ortadogu" >ORTADO&#x11E;U</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Avrupa" title="AVRUPA" data-item-name="avrupa" >AVRUPA</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Uluslararasi-Dunya" title="ULUSLARARASI" data-item-name="uluslararasi" >ULUSLARARASI</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Sa&#x11F;l&#x131;k" title="SA&#x11E;LIK" data-item-name="saglik" >SA&#x11E;LIK</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/BilimTeknoloji" title="B&#x130;L&#x130;M VE TEKNOLOJ&#x130;" data-item-name="bilim-tekonoloji" >B&#x130;L&#x130;M VE TEKNOLOJ&#x130;</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Ekonomi" title="EKONOM&#x130;" data-item-name="ekonomi" >EKONOM&#x130;</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Cevre" title="ÇEVRE" data-item-name="climate-crisis-environment" >ÇEVRE</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Hayattan" title="HAYATTAN" data-item-name="hayattan" >HAYATTAN</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/Sanat" title="SANAT" data-item-name="sanat" >SANAT</a>
+
+            </div>
+        </li>
+
+        <li class="main-nav__item accordeon__item" data-switch-target="menu-item-694">
+            <label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-694">
+                PROGRAMLAR
+                <span class="ico ico-chevron-down main-nav__chev"></span>
+            </label>
+            <div class="main-nav__sub-list">
+                
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/AmerikadaYasam" title="AMER&#x130;KA&#x27;DA YA&#x15E;AM" data-item-name="only-in-the-us-life-in-america" >AMER&#x130;KA&#x27;DA YA&#x15E;AM</a>
+
+            </div>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="/UkraynaKrizi" title="UKRAYNA KR&#x130;Z&#x130;" data-item-name="ukrayna-ozel-2" >UKRAYNA KR&#x130;Z&#x130;</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="/yapayzekayenidunya" title="YAPAY ZEKA" data-item-name="ai-special-page" >YAPAY ZEKA</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="https://editorials.voa.gov/z/6205" title="YORUMLAR"  target="_blank" rel="noopener">YORUMLAR</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="/AmerikayaOzel-OnlyInAmerica" title="Amerika&#x27;ya Özel" data-item-name="amerika-ya-ozel-only-in-america" >Amerika&#x27;ya Özel</a>
+        </li>
+
+        <li class="main-nav__item">
+            <a class="main-nav__item-name main-nav__item-name--link" href="http://m.amerikaninsesi.com/p/6009.html" title="&#x130;NG&#x130;L&#x130;ZCE DERSLER&#x130;"  >&#x130;NG&#x130;L&#x130;ZCE DERSLER&#x130;</a>
+        </li>
+
+        <li class="main-nav__item accordeon__item" data-switch-target="menu-item-952">
+            <label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-952">
+                MULT&#x130;MEDYA
+                <span class="ico ico-chevron-down main-nav__chev"></span>
+            </label>
+            <div class="main-nav__sub-list">
+                
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/VideoGaleri" title="V&#x130;DEO GALER&#x130;" data-item-name="video-galeri" >V&#x130;DEO GALER&#x130;</a>
+
+    <a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/FotoGaleri" title="FOTO GALER&#x130;" data-item-name="photos" >FOTO GALER&#x130;</a>
+
+            </div>
+        </li>
+
+
+
+                            </ul>
+                        </nav>
+                        
+
+<div class="menu-pnl__item">
+        <a href="https://learningenglish.voanews.com/" class="menu-pnl__item-link" alt="LEARNING ENGLISH">LEARNING ENGLISH</a>
+</div>
+
+
+                        
+                            <div class="menu-pnl__item menu-pnl__item--social">
+                                    <p class="menu-pnl__sub-head">Bizi takip edin</p>
+
+            <a href="https://www.facebook.com/voaturkce" title="Follow us on Facebook" data-analytics-text="follow_on_facebook" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-facebook"  target="_blank" rel="noopener">
+                <span class="ico ico-facebook-alt ico--rounded"></span>
+            </a>
+
+            <a href="https://twitter.com/VOATurkce" title="Follow us on X (Twitter)" data-analytics-text="follow_on_twitter" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-twitter"  target="_blank" rel="noopener">
+                <span class="ico ico-twitter ico--rounded"></span>
+            </a>
+
+            <a href="https://www.youtube.com/voaturkce" title="Follow us on Youtube" data-analytics-text="follow_on_youtube" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-youtube"  target="_blank" rel="noopener">
+                <span class="ico ico-youtube ico--rounded"></span>
+            </a>
+
+            <a href="https://www.instagram.com/voaturkce/" title="Follow us on Instagram" data-analytics-text="follow_on_instagram" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-instagram"  target="_blank" rel="noopener">
+                <span class="ico ico-instagram ico--rounded"></span>
+            </a>
+
+            <a href="https://t.me/voaturkce" title="Follow us on Telegram" data-analytics-text="follow_on_telegram" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-telegram"  target="_blank" rel="noopener">
+                <span class="ico ico-telegram ico--rounded"></span>
+            </a>
+
+                            </div>
+                            <div class="menu-pnl__item">
+                                <a href="/navigation/allsites" class="menu-pnl__item-link">
+                                    <span class="ico ico-languages "></span>
+                                    Diller
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <label data-for="top-search-ctrl" data-switcher-trigger="true" data-switch-target="top-search-ctrl" class="top-srch-trigger hdr-trigger">
+                    <span class="ico ico-close hdr-trigger__ico hdr-trigger__ico--close top-srch-trigger__ico top-srch-trigger__ico--close"></span>
+                    <span class="ico ico-search hdr-trigger__ico hdr-trigger__ico--open top-srch-trigger__ico top-srch-trigger__ico--open"></span>
+                </label>
+                <div class="srch-top srch-top--in-header" data-switch-target="top-search-ctrl">
+                    <div class="container">
+                        
+<form action="/s" class="srch-top__form srch-top__form--in-header" id="form-topSearchHeader" method="get" role="search">    <label for="txtHeaderSearch" class="sr-only">Ara</label>
+    <input type="text" id="txtHeaderSearch" name="k" placeholder="Arama" accesskey="s" value="" class="srch-top__input analyticstag-event" onkeydown="if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('#txtHeaderSearch')[0].value) }" />
+    <button title="Ara" type="submit" class="btn btn--top-srch analyticstag-event" onclick="FireAnalyticsTagEventOnSearch('search', $dom.get('#txtHeaderSearch')[0].value) ">
+        <span class="ico ico-search"></span>
+    </button>
+</form>
+                    </div>
+                </div>
+                <a href="/" class="main-logo-link">
+                    <img src="/Content/responsive/VOA/tr-TR/img/logo-compact.svg?cb=325" class="main-logo main-logo--comp" alt="site logo">
+                        <img src="/Content/responsive/VOA/tr-TR/img/logo.svg?cb=325" class="main-logo main-logo--big" alt="site logo">
+                </a>
+            </div>
+            <div class="hdr-20__side hdr-20__side--secondary d-flex">
+                
+
+    <a href="/VideoGaleri" title="Video" class="hdr-20__secondary-item" data-item-name="video">
+        
+    <span class="ico ico-video hdr-20__secondary-icon"></span>
+
+    </a>
+
+    <a href="https://www.instagram.com/voaturkce/" title="Instagram" class="hdr-20__secondary-item" data-item-name="custom1">
+        
+    <span class="ico-custom ico-custom--1 hdr-20__secondary-icon"></span>
+
+    </a>
+
+    <a href="/s" title="Ara" class="hdr-20__secondary-item hdr-20__secondary-item--search" data-item-name="search">
+        
+    <span class="ico ico-search hdr-20__secondary-icon hdr-20__secondary-icon--search"></span>
+
+    </a>
+
+
+
+                
+
+<div class="hdr-20__secondary-item live-b-drop">
+    <div class="live-b-drop__off">
+        <a href="/live" class="live-b-drop__link" title="CANLI" data-item-name="live">
+            <span class="badge badge--live-btn badge--live-btn-off">
+                CANLI
+            </span>
+        </a>
+    </div>
+    <div class="live-b-drop__on hidden">
+        <label data-for="live-ctrl" data-switcher-trigger="true" data-switch-target="live-ctrl" class="live-b-drop__label pos-rel">
+            <span class="badge badge--live badge--live-btn">
+                CANLI
+            </span>
+            <span class="ico ico-close live-b-drop__label-ico live-b-drop__label-ico--close"></span>
+        </label>
+        <div class="live-b-drop__panel" id="targetLivePanelDiv" data-switch-target="live-ctrl"></div>
+    </div>
+</div>
+
+
+                <div class="srch-bottom">
+                    
+<form action="/s" class="srch-bottom__form d-flex" id="form-bottomSearch" method="get" role="search">    <label for="txtSearch" class="sr-only">Ara</label>
+    <input type="search" id="txtSearch" name="k" placeholder="Arama" accesskey="s" value="" class="srch-bottom__input analyticstag-event" onkeydown="if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('#txtSearch')[0].value) }" />
+    <button title="Ara" type="submit" class="btn btn--bottom-srch analyticstag-event" onclick="FireAnalyticsTagEventOnSearch('search', $dom.get('#txtSearch')[0].value) ">
+        <span class="ico ico-search"></span>
+    </button>
+</form>
+                </div>
+            </div>
+            <img src="/Content/responsive/VOA/tr-TR/img/logo-print.gif?cb=325" class="logo-print" loading="lazy" alt="site logo">
+            <img src="/Content/responsive/VOA/tr-TR/img/logo-print_color.png?cb=325" class="logo-print logo-print--color" loading="lazy" alt="site logo">
+        </div>
+    </div>
+</div>
+    <script>
+        if (document.body.className.indexOf('pg-home') > -1) {
+            var nav2In = document.querySelector('.hdr-20__inner');
+            var nav2Sec = document.querySelector('.hdr-20__side--secondary');
+            var secStyle = window.getComputedStyle(nav2Sec);
+            if (nav2In && window.pageYOffset < 150 && secStyle['position'] !== 'fixed') {
+                nav2In.classList.add('hdr-20__inner--big')
+            }
+        }
+    </script>
+
+
+
+<div class="c-hlights c-hlights--breaking c-hlights--no-item" data-hlight-display="mobile,desktop">
+    <div class="c-hlights__wrap container p-0">
+        <div class="c-hlights__nav">
+            <a role="button" href="#" title="önceki">
+                <span class="ico ico-chevron-backward m-0"></span>
+                <span class="sr-only">önceki</span>
+            </a>
+            <a role="button" href="#" title="sonraki">
+                <span class="ico ico-chevron-forward m-0"></span>
+                <span class="sr-only">sonraki</span>
+            </a>
+        </div>
+        <span class="c-hlights__label">
+            <span class="">Son Dakika</span>
+            <span class="switcher-trigger">
+                <label data-for="more-less-1" data-switcher-trigger="true" class="switcher-trigger__label switcher-trigger__label--more p-b-0" title="Daha Fazla">
+                    <span class="ico ico-chevron-down"></span>
+                </label>
+                <label data-for="more-less-1" data-switcher-trigger="true" class="switcher-trigger__label switcher-trigger__label--less p-b-0" title="Show less">
+                    <span class="ico ico-chevron-up"></span>
+                </label>
+            </span>
+        </span>
+        <ul class="c-hlights__items switcher-target" data-switch-target="more-less-1">
+            
+        </ul>
+    </div>
+</div>
+
+
+
+        <div id="content">
+            
+
+    <main class="container">
+
+    <div class="hdr-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-category col-xs-12 col-md-8 col-md-offset-2">
+
+
+<div class="category js-category">
+<a class="" href="/Turkiye">TÜRK&#x130;YE</a></div></div>
+<div class="col-title col-xs-12 col-md-8 col-md-offset-2">
+
+    <h1 class="title pg-title">Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; </h1>
+</div>
+<div class="col-publishing-details col-xs-12 col-md-8 col-md-offset-2">
+
+<div class="publishing-details ">
+                <div class="links">
+                    <ul class="links__list">
+                            <li class="links__item">
+            <a class="links__item-link" href="/author/yildiz-yazicioglu/iibop"  title="Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu">Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu</a>                            </li>
+                            <li class="links__item">
+            <a class="links__item-link" href="/author/murat-karabulut/gvoyr"  title="Murat Karabulut">Murat Karabulut</a>                            </li>
+                    </ul>
+                </div>
+        <div class="published">
+            <span class="date" >
+                    <time pubdate="pubdate" datetime="2022-11-28T16:50:47&#x2B;02:00">
+                        28 Kas&#x131;m 2022
+                    </time>
+            </span>
+        </div>
+</div>
+
+
+</div>
+<div class="col-xs-12 col-md-8 col-md-offset-2">
+
+<div class="col-article-tools pos-rel article-share">
+
+    <div class="share--box">
+                <div class="sticky-share-container" style="display:none">
+                    <div class="container">
+                        <a href="https://www.voaturkce.com" id="logo-sticky-share">&nbsp;</a>
+                        <div class="pg-title pg-title--sticky-share">
+                            Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; 
+                        </div>
+                        <div class="sticked-nav-actions">
+                            <!--This part is for sticky navigation display-->
+                            <aside class="content-sharing js-content-sharing js-content-sharing--apply-sticky content-sharing--sticky" role="complementary" 
+                                   data-share-url="https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html" data-share-title="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; " data-share-text="Parlamenter sisteme geçi&#x15F;i amaçlayan anayasa de&#x11F;i&#x15F;ikli&#x11F;i teklifinde, yedi y&#x131;ll&#x131;&#x11F;&#x131;na bir defa seçilecek, partisiz, sembolik cumhurba&#x15F;kan&#x131;n&#x131;n yan&#x131;s&#x131;ra ba&#x11F;&#x131;ms&#x131;z yarg&#x131; kararlar&#x131; için atama ve tayin sistemi iyile&#x15F;tirilmi&#x15F; güçlü hakim tan&#x131;mlamas&#x131; ön plana ç&#x131;kt&#x131; ">
+                                <div class="content-sharing__popover">
+                                    <p class="content-sharing__title">Payla&#x15F;</p>
+                                    <button class="btn btn--text-like content-sharing__close-btn">
+                                        <span class="ico ico-close ico--l"></span>
+                                    </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--s"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;text=Alt%c4%b1l%c4%b1&#x2B;Masa&#x2B;Anayasa&#x2B;De%c4%9fi%c5%9fikli%c4%9fini&#x2B;&#x2B;Tan%c4%b1tt%c4%b1&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;title=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;subject=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                                </div>
+                            </aside>
+                            <p class="buttons link-content-sharing p-0">
+                                <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                    <span class="ico ico-share"></span>
+                                    <span class="btn__text">
+                                        Payla&#x15F;
+                                    </span>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="links" >
+                        <aside class="content-sharing js-content-sharing " role="complementary" 
+                               data-share-url="https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html" data-share-title="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; " data-share-text="Parlamenter sisteme geçi&#x15F;i amaçlayan anayasa de&#x11F;i&#x15F;ikli&#x11F;i teklifinde, yedi y&#x131;ll&#x131;&#x11F;&#x131;na bir defa seçilecek, partisiz, sembolik cumhurba&#x15F;kan&#x131;n&#x131;n yan&#x131;s&#x131;ra ba&#x11F;&#x131;ms&#x131;z yarg&#x131; kararlar&#x131; için atama ve tayin sistemi iyile&#x15F;tirilmi&#x15F; güçlü hakim tan&#x131;mlamas&#x131; ön plana ç&#x131;kt&#x131; ">
+                            <div class="content-sharing__popover">
+                                <p class="content-sharing__title">Payla&#x15F;</p>
+                                <button class="btn btn--text-like content-sharing__close-btn">
+                                    <span class="ico ico-close ico--l"></span>
+                                </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--l"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;text=Alt%c4%b1l%c4%b1&#x2B;Masa&#x2B;Anayasa&#x2B;De%c4%9fi%c5%9fikli%c4%9fini&#x2B;&#x2B;Tan%c4%b1tt%c4%b1&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;title=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;subject=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                            </div>
+                        </aside>
+                        <p class="buttons link-content-sharing p-0">
+                            <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                <span class="ico ico-share"></span>
+                                <span class="btn__text">
+                                    Payla&#x15F;
+                                </span>
+                            </button>
+                        </p>
+                    
+
+                </div>
+    </div>
+
+</div>
+</div>
+<div class="col-multimedia col-xs-12">
+
+<div class="cover-media">
+    <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb thumb16_9">
+
+            <img src="https://gdb.voanews.com/022a0000-0aff-0242-bcc6-08dad14d42ec_w250_r1_s.jpg" alt="&#xA;" />
+                                </div>
+        </div>
+            <figcaption>
+                <span class="caption">&#xA;</span>
+            </figcaption>
+    </figure>
+</div>
+
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="body-container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
+                    <div id="article-content" class="content-floated-wrap fb-quotable">
+
+    <div class="wsw">
+
+<span class="dateline">Ankara —&nbsp;</span>
+<p>Altılı masa işbirliğindeki CHP, İyi Parti, Saadet Partisi, Demokrat Parti, DEVA Partisi ve Gelecek Partisi, parlamenter sisteme geçişi amaçlayan anayasa değişikliği teklifini “insan onuru” temelinde tanıttı.<br />
+<br />
+Muhalefet cephesindeki altı siyasi parti, 28 Şubat'ta kamuoyuna açıklanan Güçlendirilmiş Parlamenter Sistem Mutabakatı doğrultusunda 9 başlıkta 84 maddelik anayasa değişikliği teklifini tamamladı.</p>
+
+<p>Muhalefet, bunun taslak metin olduğunu vurgulayarak, sivil toplum ve meslek örgütleriyle müzakere edildikten sonra gelecek seçim sonrasında TBMM’de anayasa değişikliği teklifi hazırlanmasını öngördüklerini bildirdi.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/022a0000-0aff-0242-3463-08dad14d4c88_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Teklif metninde, güçlendirilmiş parlamento hedefiyle yedi yıllığına bir defa seçilecek, partisiz, sembolik nitelikte cumhurbaşkanın yanısıra bağımsız yargı kararı alınabilmesi için atama ve tayin sistemi iyileştirilmiş güçlü hakim tanımlaması ön plana çıktı.</p>
+
+<p>TBMM’nin üçüncü büyük partisi konumundaki HDP aleyhine Anayasa Mahkemesi’nde kapatma davası gündemdeyken, altılı masa tarafından “Yasama dokunulmazlığı kapsamındaki konuşmalar için odak olma tespitinde aleyhte delil olamaz” görüşü benimsendi.</p>
+
+<p>CHP Genel Başkanı Kemal Kılıçdaroğlu, İyi Parti Genel Başkanı Meral Akşener, Saadet Partisi Genel Başkanı Temel Karamollaoğlu, Demokrat Parti Genel Başkanı Gültekin Uysal, DEVA Partisi Genel Başkanı Ali Babacan ve Gelecek Partisi Genel Başkanı Ahmet Davutoğlu’nun altına imza atacağı teklif metni tanıtım toplantısı Bilkent Oteli’nde yapıldı.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/03370000-0aff-0242-342e-08dad14d4d62_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Altı parti adına teklif metnindeki önemli başlıkları, “Anayasa ve Yasal Reformlar Komisyonu” üyeleri Muharrem Erkek (CHP), Mustafa Yeneroğlu (DEVA), Serhan Yücel (Demokrat Parti), Prof. Dr. Serap Yazıcı (Gelecek Partisi), Uğur Poyraz (İyi Parti) ve Bülent Kaya (Saadet Partisi), alfabetik sırayla özetledi.</p>
+
+<p>Ardından altı lider, ellerinde ortak hazırladıkları anayasa değişikliği kitapçığıyla sahneye çıktı ve hep birlikte poz verdi.</p>
+
+<p>CHP Genel Başkan Yardımcısı Muharrem Erkek, yasama, yürütme, yargı, temel hak ve özgürlükler, kamu yönetimi başlıkları altında hazırlanan taslak anayasa değişikliği için “toplumsal sözleşme taslağı” vurgusu yaptı.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/022a0000-0aff-0242-92a6-08dad14d4b33_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Erkek, “Bu niteliğine uygun olarak değişiklik önerilerimizi, demokrasinin asli gereği olan çoğulculuk ve uzlaşma ilkeleri doğrultusunda toplumun tüm kesimleri ile müzakere ettikten sonra seçimlerin hemen ardından Türkiye Büyük Millet Meclisi’ne sunacağız. Önerimizle anayasal düzenin temeline ‘insan onurunu’ koyuyoruz. İnsan onuru dokunulmazdır ve anayasal düzenin temelidir. Devlet, insan onuruna saygı göstermek ve onu korumakla yükümlüdür” dedi.</p>
+
+<p>Erkek, Türkiye’de seçilmiş belediye başkanlarına karşı İçişleri Bakanlığı’nın kayyım uygulaması ile ilgili, “Seçilmiş yerel yöneticilerin yargı kararı olmadan görevlerinden alınmalarına son vereceğiz” mesajını verdi. </p>
+
+
+
+
+    <div class="wsw__embed">
+<div class="media-pholder media-pholder--video media-pholder--embed">
+    <div class="c-sticky-container" data-poster="https://gdb.voanews.com/09410000-0a00-0242-64de-08dad1503f6a_tv_w250_r1.jpg">
+        <div class="c-sticky-element" data-sp_api="vjs" data-persistent data-persistent-browse-out >
+                <div class="videojs-wrapper videojs-wrapper--video videojs-wrapper--video-embed" id="vjs-player6853090" data-aspect-ratio="640/360" data-media-id="6853090" data-title="Masada Gündem Ortak Aday Açıklama Takvimi ve Seçim  " data-pub_datetime="2022-11-28 15:30:30Z" data-media-pub-type="normal">
+                        <div class="c-vjs-poster c-vjs-poster--video">
+                                <img src="https://gdb.voanews.com/09410000-0a00-0242-64de-08dad1503f6a_tv_w250_r1.jpg" alt="Masada Gündem Ortak Aday Aç&#x131;klama Takvimi ve Seçim  " title="Masada Gündem Ortak Aday Aç&#x131;klama Takvimi ve Seçim  " class="c-vjs-poster__image-h" fetchpriority="high" />
+                        </div>
+                        <video class="video-js vjs-show-big-play-button-on-pause" data-sdkadaptive="true" data-sdkamp="false" data-sdktitle="Masada Gündem Ortak Aday Açıklama Takvimi ve Seçim  " data-sdkvideo="html5" data-sdkid="6853090" data-sdktype="Video ondemand">
+                                <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-64de-08dad1503f6a_720p.mp4?cb=edb16cb16" type="video/mp4" label="Auto" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-64de-08dad1503f6a_240p.mp4?cb=edb16cb16" type="video/mp4" label="240p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-64de-08dad1503f6a.mp4?cb=edb16cb16" type="video/mp4" label="360p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-64de-08dad1503f6a_480p.mp4?cb=edb16cb16" type="video/mp4" label="480p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-64de-08dad1503f6a_720p.mp4?cb=edb16cb16" type="video/mp4" label="720p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-64de-08dad1503f6a_1080p.mp4?cb=edb16cb16" type="video/mp4" label="1080p" />
+                        </video>
+
+                        <div class="c-vjs-overlay c-vjs-overlay--title c-vjs-overlay--partial c-vjs-overlay--disabled c-vjs-overlay--slide-from-top js-c-vjs-title-overlay">
+                            <span class="c-vjs-overlay-actions c-vjs-overlay-actions-top js-overlay-actions">
+                                        <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--embed js-btn-embed-overlay" title="Embed" role="button" tabindex="0">
+                                            <span class="c-vjs-overlay-actions-link-ico ico ico-embed-code"></span>
+                                            <span class="c-vjs-overlay-actions-link-text">Embed</span>
+                                        </span>
+                                        <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--share js-btn-sharing-overlay" title="Payla&#x15F;" role="button" tabindex="0">
+                                            <span class="c-vjs-overlay-actions-link-ico ico ico-share"></span>
+                                            <span class="c-vjs-overlay-actions-link-text">Payla&#x15F;</span>
+                                        </span>
+                                <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--close-sticky c-sticky-element__close-el" title="close">
+                                    <span class="c-vjs-overlay-actions-link-ico ico ico-close"></span>
+                                </span>
+                            </span>
+                            <div class="c-vjs-overlay-title js-overlay-title">
+                                <h5 class="c-vjs-overlay-media-title">
+                                        <a class="js-media-title-link" href="/a/6853090.html" target="_blank" rel="noopener" title="Masada Gündem Ortak Aday Aç&#x131;klama Takvimi ve Seçim  ">Masada Gündem Ortak Aday Aç&#x131;klama Takvimi ve Seçim  </a>
+                                </h5>
+                                    <div class="c-vjs-overlay-site-title">
+                                        <small>by <a href="https://www.voaturkce.com" target="_blank" rel="noopener" title="VOA Türkçe - Haberler">VOA Türkçe - Haberler</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="c-vjs-overlay c-vjs-overlay--sharing c-vjs-overlay--full c-vjs-overlay--disabled c-vjs-overlay--slide-from-bottom js-c-vjs-sharing-overlay">
+                            <span class="c-vjs-overlay-actions">
+                                    <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--embed js-btn-embed-overlay" title="Embed" role="button" tabindex="0">
+                                        <span class="c-vjs-overlay-actions-link-ico ico ico-embed-code"></span>
+                                        <span class="c-vjs-overlay-actions-link-text">Embed</span>
+                                    </span>
+                                    <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--share js-btn-sharing-overlay" title="Payla&#x15F;" role="button" tabindex="0">
+                                        <span class="c-vjs-overlay-actions-link-ico ico ico-share"></span>
+                                        <span class="c-vjs-overlay-actions-link-text">Payla&#x15F;</span>
+                                    </span>
+                                <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--close js-btn-close-overlay" title="close" role="button" tabindex="0" aria-label="close">
+                                    <span class="c-vjs-overlay-actions-link-ico ico ico-close"></span>
+                                </span>
+                            </span>
+                            <div class="c-vjs-overlay-tabs">
+                                    <div class="c-vjs-overlay-tab c-vjs-overlay-tab--disabled c-vjs-overlay-tab--slide-backward js-tab-embed-overlay" data-trigger="js-btn-embed-overlay" data-embed-source="//www.voaturkce.com/embed/player/0/6853090.html?type=video" role="form">
+                                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                                            <div class="c-vjs-overlay-column">
+                                                <div class="c-vjs-status-msg ta-c js-message-embed-code-copied" role="tooltip">
+                                                    The code has been copied to your clipboard.
+                                                </div>
+                                                <div class="c-vjs-form-group ta-c">
+                                                    <input type="text" name="embed_code" class="c-vjs-input-text js-embed-code" dir="ltr" value="" readonly />
+                                                    <span class="c-vjs-input-btn js-btn-copy-embed-code" title="Copy to clipboard" role="button" tabindex="0" aria-label="Copy to clipboard"><span class="ico ico-content-copy"></span></span>
+                                                </div>
+                                                    <hr class="c-vjs-separator-line" />
+                                                    <div class="c-vjs-form-group ta-c">
+                                                        <label class="c-vjs-form-inline-element">
+                                                            <span class="c-vjs-form-inline-element-text" title="width">width</span>
+                                                            <input type="text" title="width" value="640" data-default="640" dir="ltr" name="embed_width" class="ta-c c-vjs-input-text c-vjs-input-text--xs js-video-embed-width" aria-live="assertive" />
+                                                            <span class="c-vjs-input-suffix">px</span>
+                                                        </label>
+                                                        <label class="c-vjs-form-inline-element">
+                                                            <span class="c-vjs-form-inline-element-text" title="height">height</span>
+                                                            <input type="text" title="height" value="360" data-default="360" dir="ltr" name="embed_height" class="ta-c c-vjs-input-text c-vjs-input-text--xs js-video-embed-height" aria-live="assertive" />
+                                                            <span class="c-vjs-input-suffix">px</span>
+                                                        </label>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-vjs-overlay-tab c-vjs-overlay-tab--disabled c-vjs-overlay-tab--slide-forward js-tab-sharing-overlay" data-trigger="js-btn-sharing-overlay" role="form">
+                                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                                            <div class="c-vjs-overlay-column">
+                                                <div class="c-vjs-audio-float">
+                                                    
+                <aside class="player-content-share share share--mmp" role="complementary" 
+                       data-share-url="https://www.voaturkce.com/a/6853090.html" data-share-title="Masada Gündem Ortak Aday Aç&#x131;klama Takvimi ve Seçim  " data-share-text="">
+            <ul class="share__list">
+                    <li class="share__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2f6853090.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="btn bg-transparent  js-social-btn">
+            <span class="ico ico-facebook fs_xl "></span>
+        </a>
+                    </li>
+                    <li class="share__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2f6853090.html&amp;text=Masada&#x2B;G%c3%bcndem&#x2B;Ortak&#x2B;Aday&#x2B;A%c3%a7%c4%b1klama&#x2B;Takvimi&#x2B;ve&#x2B;Se%c3%a7im&#x2B;&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="btn bg-transparent  js-social-btn">
+            <span class="ico ico-twitter fs_xl "></span>
+        </a>
+                    </li>
+
+                    <li class="share__item">
+                        <a href="/a/6853090.html" title="Share this media" class="btn bg-transparent" target="_blank" rel="noopener">
+                            <span class="ico ico-ellipsis fs_xl "></span>
+                        </a>
+                    </li>
+            </ul>
+                </aside>
+
+
+                                                </div>
+                                                <hr class="c-vjs-separator-line c-vjs-audio-float c-vjs-hide-xs c-vjs-hide-s" />
+                                                    <div class="c-vjs-status-msg ta-c js-message-share-url-copied" role="tooltip">
+                                                        The URL has been copied to your clipboard
+                                                    </div>
+                                                <div class="c-vjs-form-group ta-c c-vjs-audio-float c-vjs-hide-xs c-vjs-hide-s">
+                                                    <input type="text" name="share_url" class="c-vjs-input-text js-share-url" value="https://www.voaturkce.com/a/6853090.html" dir="ltr" readonly />
+                                                    <span class="c-vjs-input-btn js-btn-copy-share-url" title="Copy to clipboard" role="button" tabindex="0" aria-label="Copy to clipboard"><span class="ico ico-content-copy"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <div class="c-vjs-overlay c-vjs-overlay--settings c-vjs-overlay--full c-vjs-overlay--disabled c-vjs-overlay--slide-from-bottom js-c-vjs-settings-overlay">
+                        <span class="c-vjs-overlay-actions">
+                            <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--close js-btn-close-overlay" title="close" role="button" tabindex="0" aria-label="close">
+                                <span class="c-vjs-overlay-actions-link-ico ico ico-close"></span>
+                            </span>
+                        </span>
+                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                            <div class="c-vjs-overlay-column c-vjs-overlay-column--scrolling js-sources"></div>
+                        </div>
+                    </div>
+
+                    <div class="c-vjs-overlay c-vjs-overlay--message c-vjs-overlay--full c-vjs-overlay--disabled js-c-vjs-disabled-overlay">
+                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                            <div class="c-vjs-overlay-column">
+                                    <p class="ta-c"><span class="ico ico-clock"></span>No media source currently available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>    </div>
+</div>
+    </div>
+
+
+<p>Cumhuriyet’in ikinci yüzyılında bu topraklara eşitliği, özgürlüğü, adaleti hep birlikte getirmeyi hedeflediklerini belirten Erkek, “Güçlendirilmiş parlamenter sistem, ‘iş ve aş’ demektir. Güçlendirilmiş parlamenter sistem, ‘yolsuzluğun, yoksulluğun ve israfın sona ermesi’ demektir” sözleriyle sistem değişikliğiyle ekonomiye de çözüm bulunacağı vurgusu yaptı.</p>
+
+<p>Erkek, gelecek seçim içinse “Bir sistemden yana olanlar değil, demokrasiden yana olanlar kazanacak; altılı masanın ortak Cumhurbaşkanı adayı, Türkiye’nin 13. Cumhurbaşkanı olacak” iddiasını dile getirdi.</p>
+
+<p><strong>Vekillik düşürmede Berberoğlu gibi vakalara anayasa önlemi </strong></p>
+
+<p>DEVA Partisi Genel Başkan Yardımcısı Mustafa Yeneroğlu da altılı masa imzalı anayasa değişikliği teklifindeki Yasama başlığını özetleyerek Meclis’te temsil gücünü arttırmak için seçim barajını anayasada yüzde 3 olarak düzenleyeceklerini söyledi.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/03370000-0aff-0242-36f6-08dad14d436f_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Yurtdışındaki seçmenlere doğrudan vekil seçme hakkı tanınacağını açıklayan Yeneroğlu, “Diasporanın doğrudan mecliste temsil edilmesini sağlayacağız” dedi.</p>
+
+<p>Yeneroğlu’nun işaret ettiği madde uyarınca TBMM’deki sandalye sayısı 600 milletvekili olarak korunacak ancak yurtdışı oylar ülke geneline paylaştırılmayacak ve 81 il vekilinin dışında yurtdışı oyları temsil edecek milletvekilliği oluşturulacak.</p>
+
+<p>Yasama dokunulmazlığına karşı keyfi uygulamaları ortadan kaldıracaklarını kaydeden Yeneroğlu, “Dokunulmazlıkların kaldırılması için üye tamsayının salt çoğunluğunu gerekli kılacağız. Milletvekilliğinin kesin hüküm giyme nedeniyle düşmesini, bireysel başvuru yoluna gidilmesi halinde, Anayasa Mahkemesi’nin bu konudaki kararına kadar bekletileceğini açıkça düzenleyeceğiz” diye konuştu.</p>
+
+
+
+
+    <div class="wsw__embed">
+<div class="media-pholder media-pholder--video media-pholder--embed">
+    <div class="c-sticky-container" data-poster="https://gdb.voanews.com/09410000-0a00-0242-1c11-08dad13b75c4_tv_w250_r1.jpg">
+        <div class="c-sticky-element" data-sp_api="vjs" data-persistent data-persistent-browse-out >
+                <div class="videojs-wrapper videojs-wrapper--video videojs-wrapper--video-embed" id="vjs-player6852913" data-aspect-ratio="640/360" data-media-id="6852913" data-title="Altılı Masa Anayasa Değişikliğini Tanıttı: VOA Türkçe Muhabirleri Değerlendiriyor" data-pub_datetime="2022-11-28 14:36:45Z" data-media-pub-type="normal">
+                        <div class="c-vjs-poster c-vjs-poster--video">
+                                <img src="https://gdb.voanews.com/09410000-0a00-0242-1c11-08dad13b75c4_tv_w250_r1.jpg" alt="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini Tan&#x131;tt&#x131;: VOA Türkçe Muhabirleri De&#x11F;erlendiriyor" title="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini Tan&#x131;tt&#x131;: VOA Türkçe Muhabirleri De&#x11F;erlendiriyor" class="c-vjs-poster__image-h" fetchpriority="high" />
+                        </div>
+                        <video class="video-js vjs-show-big-play-button-on-pause" data-sdkadaptive="true" data-sdkamp="false" data-sdktitle="Altılı Masa Anayasa Değişikliğini Tanıttı: VOA Türkçe Muhabirleri Değerlendiriyor" data-sdkvideo="html5" data-sdkid="6852913" data-sdktype="Video ondemand">
+                                <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-1c11-08dad13b75c4_720p.mp4?cb=edb17a689" type="video/mp4" label="Auto" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-1c11-08dad13b75c4_240p.mp4?cb=edb17a689" type="video/mp4" label="240p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-1c11-08dad13b75c4.mp4?cb=edb17a689" type="video/mp4" label="360p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-1c11-08dad13b75c4_480p.mp4?cb=edb17a689" type="video/mp4" label="480p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-1c11-08dad13b75c4_720p.mp4?cb=edb17a689" type="video/mp4" label="720p" />
+                                    <source src="https://voa-video-ns.akamaized.net/pangeavideo/2022/11/0/09/09410000-0a00-0242-1c11-08dad13b75c4_1080p.mp4?cb=edb17a689" type="video/mp4" label="1080p" />
+                        </video>
+
+                        <div class="c-vjs-overlay c-vjs-overlay--title c-vjs-overlay--partial c-vjs-overlay--disabled c-vjs-overlay--slide-from-top js-c-vjs-title-overlay">
+                            <span class="c-vjs-overlay-actions c-vjs-overlay-actions-top js-overlay-actions">
+                                        <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--embed js-btn-embed-overlay" title="Embed" role="button" tabindex="0">
+                                            <span class="c-vjs-overlay-actions-link-ico ico ico-embed-code"></span>
+                                            <span class="c-vjs-overlay-actions-link-text">Embed</span>
+                                        </span>
+                                        <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--share js-btn-sharing-overlay" title="Payla&#x15F;" role="button" tabindex="0">
+                                            <span class="c-vjs-overlay-actions-link-ico ico ico-share"></span>
+                                            <span class="c-vjs-overlay-actions-link-text">Payla&#x15F;</span>
+                                        </span>
+                                <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--close-sticky c-sticky-element__close-el" title="close">
+                                    <span class="c-vjs-overlay-actions-link-ico ico ico-close"></span>
+                                </span>
+                            </span>
+                            <div class="c-vjs-overlay-title js-overlay-title">
+                                <h5 class="c-vjs-overlay-media-title">
+                                        <a class="js-media-title-link" href="/a/6852913.html" target="_blank" rel="noopener" title="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini Tan&#x131;tt&#x131;: VOA Türkçe Muhabirleri De&#x11F;erlendiriyor">Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini Tan&#x131;tt&#x131;: VOA Türkçe Muhabirleri De&#x11F;erlendiriyor</a>
+                                </h5>
+                                    <div class="c-vjs-overlay-site-title">
+                                        <small>by <a href="https://www.voaturkce.com" target="_blank" rel="noopener" title="VOA Türkçe - Haberler">VOA Türkçe - Haberler</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="c-vjs-overlay c-vjs-overlay--sharing c-vjs-overlay--full c-vjs-overlay--disabled c-vjs-overlay--slide-from-bottom js-c-vjs-sharing-overlay">
+                            <span class="c-vjs-overlay-actions">
+                                    <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--embed js-btn-embed-overlay" title="Embed" role="button" tabindex="0">
+                                        <span class="c-vjs-overlay-actions-link-ico ico ico-embed-code"></span>
+                                        <span class="c-vjs-overlay-actions-link-text">Embed</span>
+                                    </span>
+                                    <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--share js-btn-sharing-overlay" title="Payla&#x15F;" role="button" tabindex="0">
+                                        <span class="c-vjs-overlay-actions-link-ico ico ico-share"></span>
+                                        <span class="c-vjs-overlay-actions-link-text">Payla&#x15F;</span>
+                                    </span>
+                                <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--close js-btn-close-overlay" title="close" role="button" tabindex="0" aria-label="close">
+                                    <span class="c-vjs-overlay-actions-link-ico ico ico-close"></span>
+                                </span>
+                            </span>
+                            <div class="c-vjs-overlay-tabs">
+                                    <div class="c-vjs-overlay-tab c-vjs-overlay-tab--disabled c-vjs-overlay-tab--slide-backward js-tab-embed-overlay" data-trigger="js-btn-embed-overlay" data-embed-source="//www.voaturkce.com/embed/player/0/6852913.html?type=video" role="form">
+                                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                                            <div class="c-vjs-overlay-column">
+                                                <div class="c-vjs-status-msg ta-c js-message-embed-code-copied" role="tooltip">
+                                                    The code has been copied to your clipboard.
+                                                </div>
+                                                <div class="c-vjs-form-group ta-c">
+                                                    <input type="text" name="embed_code" class="c-vjs-input-text js-embed-code" dir="ltr" value="" readonly />
+                                                    <span class="c-vjs-input-btn js-btn-copy-embed-code" title="Copy to clipboard" role="button" tabindex="0" aria-label="Copy to clipboard"><span class="ico ico-content-copy"></span></span>
+                                                </div>
+                                                    <hr class="c-vjs-separator-line" />
+                                                    <div class="c-vjs-form-group ta-c">
+                                                        <label class="c-vjs-form-inline-element">
+                                                            <span class="c-vjs-form-inline-element-text" title="width">width</span>
+                                                            <input type="text" title="width" value="640" data-default="640" dir="ltr" name="embed_width" class="ta-c c-vjs-input-text c-vjs-input-text--xs js-video-embed-width" aria-live="assertive" />
+                                                            <span class="c-vjs-input-suffix">px</span>
+                                                        </label>
+                                                        <label class="c-vjs-form-inline-element">
+                                                            <span class="c-vjs-form-inline-element-text" title="height">height</span>
+                                                            <input type="text" title="height" value="360" data-default="360" dir="ltr" name="embed_height" class="ta-c c-vjs-input-text c-vjs-input-text--xs js-video-embed-height" aria-live="assertive" />
+                                                            <span class="c-vjs-input-suffix">px</span>
+                                                        </label>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-vjs-overlay-tab c-vjs-overlay-tab--disabled c-vjs-overlay-tab--slide-forward js-tab-sharing-overlay" data-trigger="js-btn-sharing-overlay" role="form">
+                                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                                            <div class="c-vjs-overlay-column">
+                                                <div class="c-vjs-audio-float">
+                                                    
+                <aside class="player-content-share share share--mmp" role="complementary" 
+                       data-share-url="https://www.voaturkce.com/a/6852913.html" data-share-title="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini Tan&#x131;tt&#x131;: VOA Türkçe Muhabirleri De&#x11F;erlendiriyor" data-share-text="">
+            <ul class="share__list">
+                    <li class="share__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2f6852913.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="btn bg-transparent  js-social-btn">
+            <span class="ico ico-facebook fs_xl "></span>
+        </a>
+                    </li>
+                    <li class="share__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2f6852913.html&amp;text=Alt%c4%b1l%c4%b1&#x2B;Masa&#x2B;Anayasa&#x2B;De%c4%9fi%c5%9fikli%c4%9fini&#x2B;Tan%c4%b1tt%c4%b1%3a&#x2B;VOA&#x2B;T%c3%bcrk%c3%a7e&#x2B;Muhabirleri&#x2B;De%c4%9ferlendiriyor"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="btn bg-transparent  js-social-btn">
+            <span class="ico ico-twitter fs_xl "></span>
+        </a>
+                    </li>
+
+                    <li class="share__item">
+                        <a href="/a/6852913.html" title="Share this media" class="btn bg-transparent" target="_blank" rel="noopener">
+                            <span class="ico ico-ellipsis fs_xl "></span>
+                        </a>
+                    </li>
+            </ul>
+                </aside>
+
+
+                                                </div>
+                                                <hr class="c-vjs-separator-line c-vjs-audio-float c-vjs-hide-xs c-vjs-hide-s" />
+                                                    <div class="c-vjs-status-msg ta-c js-message-share-url-copied" role="tooltip">
+                                                        The URL has been copied to your clipboard
+                                                    </div>
+                                                <div class="c-vjs-form-group ta-c c-vjs-audio-float c-vjs-hide-xs c-vjs-hide-s">
+                                                    <input type="text" name="share_url" class="c-vjs-input-text js-share-url" value="https://www.voaturkce.com/a/6852913.html" dir="ltr" readonly />
+                                                    <span class="c-vjs-input-btn js-btn-copy-share-url" title="Copy to clipboard" role="button" tabindex="0" aria-label="Copy to clipboard"><span class="ico ico-content-copy"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <div class="c-vjs-overlay c-vjs-overlay--settings c-vjs-overlay--full c-vjs-overlay--disabled c-vjs-overlay--slide-from-bottom js-c-vjs-settings-overlay">
+                        <span class="c-vjs-overlay-actions">
+                            <span class="c-vjs-overlay-actions-link c-vjs-overlay-actions-link--close js-btn-close-overlay" title="close" role="button" tabindex="0" aria-label="close">
+                                <span class="c-vjs-overlay-actions-link-ico ico ico-close"></span>
+                            </span>
+                        </span>
+                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                            <div class="c-vjs-overlay-column c-vjs-overlay-column--scrolling js-sources"></div>
+                        </div>
+                    </div>
+
+                    <div class="c-vjs-overlay c-vjs-overlay--message c-vjs-overlay--full c-vjs-overlay--disabled js-c-vjs-disabled-overlay">
+                        <div class="c-vjs-overlay-body c-vjs-overlay-body--centered-vertical">
+                            <div class="c-vjs-overlay-column">
+                                    <p class="ta-c"><span class="ico ico-clock"></span>No media source currently available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>    </div>
+</div>
+    </div>
+
+
+<p>Cumhurbaşkanı ve AKP Genel Başkanı Recep Tayyip Erdoğan’ın 20 Mart 2021’de tek imzasıyla İstanbul Sözleşmesi’nden Türkiye’yi çekmesi örneğine karşı da muhalefet anayasa teklifinde düzenleme yaptı.</p>
+
+<p>Buna ilişkin Yeneroğlu, “Anayasada ise milletlerarası antlaşmalardan geri çekilmenin meclisin asli yetkisi olduğunu güvence altına alacağız. Böylece Cumhurbaşkanı, milletlerarası bir sözleşmeden gece yarısı tek başına çıkma kararı veremeyecek” açıklaması yaptı.</p>
+
+<p>Yeneroğlu, kanun yapım süreci, bütçe hakkı gibi pek çok başlıkta yasamanın güçlendirileceğini işaret etti.</p>
+
+<p><strong>Cumhurbaşkanı 1 kez seçilebilecek, OHAL süreci kısalacak </strong></p>
+
+<p>Demokrat Parti Genel Sekreteri Serhan Yücel, Yürütme bölümündeki değişiklikleri anlatarak, “Mevcut anayasanın en problemli, tüm sistemi enfekte eden kısmı “tek adam rejimi” üzerine kurgulanan ‘yürütme’dir. Mevcut sistemde yürütmenin konforu için yasama ve yargı işlevsiz bırakılmıştır. Anayasanın tek derdi, tek kişiye dikensiz gül bahçesi hazırlamak olmuştur. Dört senedir her gün duyduğumuz ‘Cumhurbaşkanımızın talimatıyla’ klişesini artık duymayacağız. Bu çerçevede; cumhurbaşkanının bir dönem ve 7 yıl için seçilebilmesini öneriyoruz. Seçilen cumhurbaşkanının varsa partisi ile ilişiğinin kesilmesini teklif ediyoruz. Cumhurbaşkanının kanunları veto yetkisini kaldırıyor, kendilerine sadece bir defaya mahsus geri gönderme hakkı tanıyan bir düzenleme yapıyoruz” dedi.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/09410000-0a00-0242-521a-08dad14d3aba_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Yürütme’yi halka karşı “görev” olarak tanımlayacaklarını da vurgulayan Yücel, “Meclis denetimine tabi olmayan, siyasi sorumluluk taşımayan ve hiçbir şekilde hesap vermeyen, usulsüzlük, yolsuzluk ya da beceriksizlik gibi sebepler ile sorumluluklarını ‘affını istemekle’ yerine getiren, usulsüzlük ve yolsuzluk iddiaları karşısında Yüce Divan’da yargılanma hakkı olmayıp, Külliye’den uzaklaştırma cezası ile sorumluluktan kurtulan ‘Cumhurbaşkanlığı Kabinesi’ yerine, Meclise karşı siyasi sorumluluğu ve Yüce Divan’da aklanma hakkı olan Başbakanlık ve Bakanlar Kurulu’nu, Güçlendirilmiş Parlamenter Sistem Anayasa Değişikliği önerimiz ile yeniden kuruyoruz” diye konuştu.</p>
+
+<p>Yücel ayrıca, “Cumhurbaşkanı’nın ya da Bakanlar Kurulu’nun tek başına olağanüstü hal ilan etme yetkisi yoktur. Olağanüstü hal ilan etme yetkisi, cumhurbaşkanı başkanlığında toplanan Bakanlar Kurulu’na aittir. OHAL için öngörülen süreler kısaltılmıştır” hatırlatması yaptı.</p>
+
+<p><strong>Yargı bağımsızlığı için hakimlere güvence sağlanacak </strong></p>
+
+<p>Gelecek Partisi Genel Başkan Yardımcısı Serap Yazıcı da Cumhurbaşkanlığı Hükümet Sistemi’nin altında en ağır hasarı yargının yaşadığını belirterek, neleri değiştireceklerini özetledi.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/022a0000-0aff-0242-613e-08dad14d54b6_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Gerçek bir hukuk devletini inşa etmek istediklerini belirten Yazıcı, “Hakimlik ve savcılık teminatını düzenleyen 139. maddeye coğrafi teminat eklenmiştir. Böylece hakim ve savcıların bireysel bağımsızlıkları güçlendirilmiştir. Yargı mensuplarının bireysel bağımsızlıklarını güçlendirmek amacıyla ayrıca Hakimler Kurulu ve Savcılar Kurulu şeklinde iki organ düzenlenmiştir. Hakimler Kurulu, hakimlerin özlük hakları konusunda, Savcılar Kurulu ise savcıların özlük hakları konusunda karar verme yetkisine sahip olacaktır. Bu organların üye kompozisyonu ve üyelerinin seçiminde izlenen yöntem, çoğulculuk esasına göre tasarlanmıştır” dedi.</p>
+
+<p>Avukatlar açısından savcılar ile yani iddia makamı ile eşit statü sağlanacağını da vurgulayan Yazıcı, “Önerimiz, yargılama sürecinin önemli unsurlarından biri olan savunma makamını ilk kez bir anayasa hükmüyle düzenlemiş; böylece savunmaya anayasal bir statü kazandırmıştır. Bunun doğal sonucu olarak savunma, iddia makamıyla eşit bir statüye kavuşacaktır. Bu ise hukuk devletinin temel unsurlarından olan adil yargılanma hakkını ve bu hakkın asli unsurlarından olan savunma hakkını güçlendirecektir. Öte yandan bu yenilikle adil yargılanma hakkının bir başka unsuru olan silahların eşitliği ilkesi garanti edilecektir. Bu hüküm kapsamında Türkiye Barolar Birliği’ne özerk bir statü sağlanmış; bu yenilikle avukatlık mesleğine sahip olması gereken itibar kazandırılmıştır” diye konuştu.</p>
+
+<p><strong>Türkiye’de ilk: YSK kararlarına karşı AYM yolu açılacak </strong></p>
+
+<p>Serap Yazıcı, Anayasa Mahkemesi’nin yapısındaki değişiklikler içinse “Anayasa Mahkemesi’nin ağır iş yükü dikkate alınarak üye sayısı on beşten yirmi ikiye çıkarılmış; halen iki daire ve bir Genel Kurul halinde çalışan Mahkeme’nin dört daire ve bir Genel Kurul halinde çalışması sağlanmıştır. Böylece dairelerin alacağı kararlar, itiraz denetimine tâbi kılınmıştır” açıklaması yaptı.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/09410000-0a00-0242-4f40-08dad14d3aae_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Yazıcı, “Yüksek Seçim Kurulu’nun seçme, seçilme ve siyasi faaliyette bulunma haklarına ilişkin verdiği kararların, Anayasa Mahkemesi’ne yapılacak bireysel başvurulara konu olması sağlanmıştır” dedi.</p>
+
+<p>Dolayısıyla eğer muhalefet taslağı hayata geçirilirse Türkiye’de ilk kez yüksek yargı organı niteliğinde tüm seçim süreçleriyle ilgili kararları alan YSK’nın kararlarına karşı temyiz niteliğinde AYM’ye başvuru yolu açılacak.</p>
+
+<p><strong>Yasama konuşmaları parti kapatma delili olamayacak </strong></p>
+
+<p>İYİ Parti Genel Sekreteri Uğur Poyraz, “İnsan onurunun dokunulmazlığını ve devletin buna saygı gösterme ve koruma yükümlülüğü ile temel hak ve hürriyetlerin bütünlüğünü ve yasama yürütme ve yargıyı bağlayıcı olduğunu anayasanın 12. maddesine ekliyoruz. Devlete insan hakları ihlallerini önleme ve herkesin haklardan yararlanmasını sağlama yükümlüğünü getiriyoruz” sözleriyle Temel Haklar ve Özgürlükler Başlığı’na ilişkin bilgi verdi.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/03370000-0aff-0242-40d0-08dad14d3aaa_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Poyraz, Türkiye gündeminde son günlerde kutuplaşma başlıklarından birisi olan “hayvan hakları” konusuna da değinerek, “Hayvan hakları da bu değişiklik önerimizde yer alıyor. Devletin doğal hayatı ve hayvanları korumak ile hayvanlara yönelik eziyet ve kötü muamele yapılmaması için gereken tedbirleri alma görevi olduğunu belirtiyoruz” dedi.</p>
+
+<p>Poyraz, altılı masa anayasada siyasi partiler ile ilgili öneriler kapsamında Anayasa Mahkemesi’nin gündeminde HDP aleyhindeki parti kapatma davası kapsamında konuşulacak bölümleri de açıkladı.</p>
+
+<p>Poyraz, “Milletvekili genel seçimlerinde geçerli oyların yüzde birini alan partilere devletin mali yardımda bulunacağı ve bu yardımın dörtte birinin partiler arasında eşit olarak dağıtılacağı, geri kalan tutarın ise partilerin elde ettikleri oy oranına göre paylaştırılacağı düzenlemesini getiriyoruz. Demokratik hayatın vazgeçilmez unsuru olan siyasi partiler hakkında Yargıtay Cumhuriyet Başsavcısı’nın kapatma davası açabilmesini TBMM’nin iznine bağlıyoruz. Kapatma kararının ancak odak olma halinde verilebileceği daha yalın olarak düzenlenip odak olma tanımına yoğun, sürekli ve demokratik düzene ciddi tehlike oluşturacak bir şekilde kavramları ile fıkranın son cümlesine yasama sorumsuzluğu kapsamında kullanılan oy, söz ve düşünce açıklamaları odak olmanın tespitinde gözetilemez hükmü ekliyoruz” diye konuştu.</p>
+
+<p><strong>İçişleri Bakanı’nın yetkisi tırpanlanacak </strong></p>
+
+<p>Son olarak Saadet Partisi Genel Başkan Yardımcısı Bülent Kaya da Kamu Yönetimi ve Siyasi Etik başlıklarındaki değişiklikleri kapsamında İçişleri Bakanı’nın mahalli idarelerdeki yöneticileri görevden uzaklaştırma kararı alamayacağını söyledi.</p>
+
+
+
+    <div class="wsw__embed">
+        <figure class="media-image js-media-expand">
+        <div class="img-wrap">
+            <div class="thumb">
+                <img alt="" src="https://gdb.voanews.com/022a0000-0aff-0242-c795-08dad14d3ab8_w250_r1_s.jpg" />
+            </div>
+        </div>
+        </figure>
+    </div>
+
+
+
+<p>Kaya, “Kamu yararı bulunması şartıyla İçişleri Bakanının talebi üzerine Danıştay tarafından bir ay süre ile verilebileceğini, bu kararın ayda bir Danıştay tarafından gözden geçirilmesini ve nihai olarak bu kararın 6 ayı geçmemesini öngörüyoruz” dedi.</p>
+
+<p>Kaya, mahalli idareler dolayısıyla belediyeler açısından yetkileri arttıracaklarını işaret ederek, demokrasiyi yerel düzeyde yaygınlaştıracaklarını vurguladı.</p>
+
+<p> </p>
+
+    </div>
+
+                            <div class="footer-toolbar">
+                            
+    <div class="share--box">
+                <div class="sticky-share-container" style="display:none">
+                    <div class="container">
+                        <a href="https://www.voaturkce.com" id="logo-sticky-share">&nbsp;</a>
+                        <div class="pg-title pg-title--sticky-share">
+                            Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; 
+                        </div>
+                        <div class="sticked-nav-actions">
+                            <!--This part is for sticky navigation display-->
+                            <aside class="content-sharing js-content-sharing js-content-sharing--apply-sticky content-sharing--sticky" role="complementary" 
+                                   data-share-url="https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html" data-share-title="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; " data-share-text="Parlamenter sisteme geçi&#x15F;i amaçlayan anayasa de&#x11F;i&#x15F;ikli&#x11F;i teklifinde, yedi y&#x131;ll&#x131;&#x11F;&#x131;na bir defa seçilecek, partisiz, sembolik cumhurba&#x15F;kan&#x131;n&#x131;n yan&#x131;s&#x131;ra ba&#x11F;&#x131;ms&#x131;z yarg&#x131; kararlar&#x131; için atama ve tayin sistemi iyile&#x15F;tirilmi&#x15F; güçlü hakim tan&#x131;mlamas&#x131; ön plana ç&#x131;kt&#x131; ">
+                                <div class="content-sharing__popover">
+                                    <p class="content-sharing__title">Payla&#x15F;</p>
+                                    <button class="btn btn--text-like content-sharing__close-btn">
+                                        <span class="ico ico-close ico--l"></span>
+                                    </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--s"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;text=Alt%c4%b1l%c4%b1&#x2B;Masa&#x2B;Anayasa&#x2B;De%c4%9fi%c5%9fikli%c4%9fini&#x2B;&#x2B;Tan%c4%b1tt%c4%b1&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;title=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;subject=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--s"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                                </div>
+                            </aside>
+                            <p class="buttons link-content-sharing p-0">
+                                <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                    <span class="ico ico-share"></span>
+                                    <span class="btn__text">
+                                        Payla&#x15F;
+                                    </span>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="links" >
+                        <aside class="content-sharing js-content-sharing " role="complementary" 
+                               data-share-url="https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html" data-share-title="Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; " data-share-text="Parlamenter sisteme geçi&#x15F;i amaçlayan anayasa de&#x11F;i&#x15F;ikli&#x11F;i teklifinde, yedi y&#x131;ll&#x131;&#x11F;&#x131;na bir defa seçilecek, partisiz, sembolik cumhurba&#x15F;kan&#x131;n&#x131;n yan&#x131;s&#x131;ra ba&#x11F;&#x131;ms&#x131;z yarg&#x131; kararlar&#x131; için atama ve tayin sistemi iyile&#x15F;tirilmi&#x15F; güçlü hakim tan&#x131;mlamas&#x131; ön plana ç&#x131;kt&#x131; ">
+                            <div class="content-sharing__popover">
+                                <p class="content-sharing__title">Payla&#x15F;</p>
+                                <button class="btn btn--text-like content-sharing__close-btn">
+                                    <span class="ico ico-close ico--l"></span>
+                                </button>
+            <ul class="content-sharing__list">
+                    <li class="content-sharing__item">
+                            <div class="ctc ">
+                                <input type="text" class="ctc__input" readonly="readonly">
+                                <a href="" class="content-sharing__link ctc__button">
+                                    <span class="ico ico-copy-link ico--rounded ico--l"></span>
+                                        <span class="content-sharing__link-text">Ba&#x11F;lant&#x131;y&#x131; Kopyala</span>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://facebook.com/sharer.php?u=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_facebook"
+           title="Facebook" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-facebook ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Facebook</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://twitter.com/share?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;text=Alt%c4%b1l%c4%b1&#x2B;Masa&#x2B;Anayasa&#x2B;De%c4%9fi%c5%9fikli%c4%9fini&#x2B;&#x2B;Tan%c4%b1tt%c4%b1&#x2B;"
+           data-analytics-text="share_on_twitter"
+           title="Twitter" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-twitter ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Twitter</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;title=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           data-analytics-text="share_on_linkedIn"
+           title="LinkedIn" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-linkedin ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">LinkedIn</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="https://telegram.me/share/url?url=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_telegram"
+           title="Telegram" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-telegram ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Telegram</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-xs-inline-block visible-sm-inline-block">
+        <a href="whatsapp://send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item visible-md-inline-block visible-lg-inline-block">
+        <a href="https://web.whatsapp.com/send?text=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html"
+           data-analytics-text="share_on_whatsapp_desktop"
+           title="WhatsApp" target="_blank"
+           class="content-sharing__link  js-social-btn">
+            <span class="ico ico-whatsapp ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">WhatsApp</span>
+        </a>
+                    </li>
+                    <li class="content-sharing__item">
+        <a href="mailto:?body=https%3a%2f%2fwww.voaturkce.com%2fa%2faltili-masa-anayasa-degisikligini-tanitti%2f6853087.html&amp;subject=Alt&#x131;l&#x131; Masa Anayasa De&#x11F;i&#x15F;ikli&#x11F;ini  Tan&#x131;tt&#x131; "
+           
+           title="Email" 
+           class="content-sharing__link ">
+            <span class="ico ico-email ico--rounded ico--l"></span>
+                <span class="content-sharing__link-text">Email</span>
+        </a>
+                    </li>
+
+            </ul>
+                            </div>
+                        </aside>
+                        <p class="buttons link-content-sharing p-0">
+                            <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Payla&#x15F;">
+                                <span class="ico ico-share"></span>
+                                <span class="btn__text">
+                                    Payla&#x15F;
+                                </span>
+                            </button>
+                        </p>
+                    
+    <aside class="content-sharing js-content-sharing follow-us" role="complementary">
+        <div class="content-sharing__popover">
+                <p class="content-sharing__title">Follow us</p>
+            <button class="btn btn--text-like content-sharing__close-btn">
+                <span class="ico ico-close"></span>
+            </button>
+            <ul class="content-sharing__list link-content-sharing p-0">
+                            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://www.facebook.com/voaturkce" title="Follow us on Facebook" data-analytics-text="follow_on_facebook"    target="_blank" rel="noopener">
+                    <span class="ico ico-facebook-alt ico--rounded"></span>
+                    <span class="content-sharing__link-text">Facebook</span>
+                </a>
+            </li>
+
+            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://twitter.com/VOATurkce" title="Follow us on X (Twitter)" data-analytics-text="follow_on_twitter"    target="_blank" rel="noopener">
+                    <span class="ico ico-twitter ico--rounded"></span>
+                    <span class="content-sharing__link-text">X (Twitter)</span>
+                </a>
+            </li>
+
+            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://www.youtube.com/voaturkce" title="Follow us on Youtube" data-analytics-text="follow_on_youtube"    target="_blank" rel="noopener">
+                    <span class="ico ico-youtube ico--rounded"></span>
+                    <span class="content-sharing__link-text">Youtube</span>
+                </a>
+            </li>
+
+            <li class="content-sharing__item ">
+                <a class="content-sharing__link " href="https://www.instagram.com/voaturkce/" title="Follow us on Instagram" data-analytics-text="follow_on_instagram"    target="_blank" rel="noopener">
+                    <span class="ico ico-instagram ico--rounded"></span>
+                    <span class="content-sharing__link-text">Instagram</span>
+                </a>
+            </li>
+
+
+            </ul>
+        </div>
+    </aside>
+    <p class="buttons link-content-sharing p-0">
+            <button class="btn btn--link btn-content-sharing p-t-0" value="text" role="Button" type="" title="Follow us">
+            <span class="ico ico-bell"></span>
+            <span class="btn__text">
+                Follow us
+            </span>
+        </button>
+    </p>
+
+<p class="link-print hidden-xs buttons p-0">
+    <button class="btn btn--link btn-print p-t-0" onclick="if (typeof FireAnalyticsTagEvent === 'function') {FireAnalyticsTagEvent({ on_page_event: 'print_story' });}return false" title="(CTRL&#x2B;P)">
+        <span class="ico ico-print"></span>
+        <span class="btn__text">Yazd&#x131;r</span>
+    </button>
+</p>
+
+                </div>
+    </div>
+
+
+                            </div>
+
+        <ul class="authors-highlights">
+                <li class="authors-highlights__item">
+                    <div class="c-author c-author--hlight">
+        <div class="media-block d-flex">
+                <a href="/author/yildiz-yazicioglu/iibop" class="img-wrap  img-wrap--xxs">
+        <div class="thumb thumb1_1 rounded">
+                <noscript class="nojs-img">
+                    <img src="https://gdb.voanews.com/24792975-4584-452d-bb7e-015a3ea5790f_cx7_cy14_cw94_w100_r5.jpg" alt="16x9 Image" class="avatar" />
+                </noscript>
+            <img alt="16x9 Image" class="avatar" data-src="https://gdb.voanews.com/24792975-4584-452d-bb7e-015a3ea5790f_cx7_cy14_cw94_w66_r5.jpg" src="" />
+        </div>
+                </a>
+            <div class="c-author__content">
+                <p class="media-block__title media-block__title--author">
+                        <a href="/author/yildiz-yazicioglu/iibop">Y&#x131;ld&#x131;z Yaz&#x131;c&#x131;o&#x11F;lu</a>
+                </p>
+                    <div class="wsw c-author__wsw">
+                        <p>Yıldız Yazıcıoğlu, 1994-1998 döneminde Ankara Üniversitesi İletişim Fakültesi Gazetecilik Bölümü&rsquo;nde lisans eğitimini tamamladı. Mesleğe 1997 yılında Cumhuriyet&rsquo;te stajyer olarak başladı. 1998-2000 döneminde yüksek lisans eğitimine devam etti. 2000 &ndash; Mayıs 2009 döneminde Milliyet&rsquo;te mesleki kariyerini cumhurbaşkanlığı ve parlamento muhabirliği noktasına taşıdı. 2009 - 2011 yıllarında ABD&rsquo;nin başkenti Washington DC&rsquo;de kariyerini sürdürdü ve farklı medya kuruluşları için temsilcilik &ndash; yorumculuk görevlerini yürüttü. Bu dönemde VOA Türkçe&rsquo;de eğitim aldı ve görev yaptı. Ardından Ankara&rsquo;ya dönüşünde Habertürk TV&rsquo;de, ArtıBir TV&rsquo;de görevler üstlendi. Şu anda VOA Türkçe ekibinde görev almayı sürdürüyor.</p>
+
+                    </div>
+            </div>
+        </div>
+                    </div>
+                </li>
+        </ul>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </main>
+
+
+
+        </div>
+
+
+
+<footer role="contentinfo">
+    <div id="foot" class="foot">
+        <div class="container">
+                <div class="foot-nav collapsed" id="foot-nav">
+                    <div class="menu">
+                        <ul class="items">
+                                <li class="socials block-socials">
+                                        <span class="handler" id="socials-handler">
+                                            Bizi takip edin
+                                        </span>
+                                    <div class="inner">
+                                        <ul class="subitems follow">
+                                                <li>
+            <a href="https://www.facebook.com/voaturkce" title="Follow us on Facebook" data-analytics-text="follow_on_facebook" class="btn btn--rounded js-social-btn btn-facebook"  target="_blank" rel="noopener">
+                <span class="ico ico-facebook-alt ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://twitter.com/VOATurkce" title="Follow us on X (Twitter)" data-analytics-text="follow_on_twitter" class="btn btn--rounded js-social-btn btn-twitter"  target="_blank" rel="noopener">
+                <span class="ico ico-twitter ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://www.youtube.com/voaturkce" title="Follow us on Youtube" data-analytics-text="follow_on_youtube" class="btn btn--rounded js-social-btn btn-youtube"  target="_blank" rel="noopener">
+                <span class="ico ico-youtube ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://www.instagram.com/voaturkce/" title="Follow us on Instagram" data-analytics-text="follow_on_instagram" class="btn btn--rounded js-social-btn btn-instagram"  target="_blank" rel="noopener">
+                <span class="ico ico-instagram ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="https://t.me/voaturkce" title="Follow us on Telegram" data-analytics-text="follow_on_telegram" class="btn btn--rounded js-social-btn btn-telegram"  target="_blank" rel="noopener">
+                <span class="ico ico-telegram ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="/rssfeeds" title="RSS" data-analytics-text="follow_on_rss" class="btn btn--rounded js-social-btn btn-rss" >
+                <span class="ico ico-rss ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="/podcasts" title="Podcast" data-analytics-text="follow_on_podcast" class="btn btn--rounded js-social-btn btn-podcast" >
+                <span class="ico ico-podcast ico--rounded"></span>
+            </a>
+    </li>
+
+    <li>
+            <a href="/subscribe.html" title="Subscribe" data-analytics-text="follow_on_subscribe" class="btn btn--rounded js-social-btn btn-email" >
+                <span class="ico ico-email ico--rounded"></span>
+            </a>
+    </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+    <li class="block-primary collapsed collapsible item">
+            <span class="handler">
+                VOA Türkçe&#x27;de ayr&#x131;ca
+                <span title="close tab" class="ico ico-chevron-up"></span>
+                <span title="open tab" class="ico ico-chevron-down"></span>
+                <span title="add" class="ico ico-plus"></span>
+                <span title="remove" class="ico ico-minus"></span>
+            </span>
+            <div class="inner">
+                <ul class="subitems">
+                    
+    <li class="subitem">
+        <a class="handler" href="http://m.amerikaninsesi.com/" title="Anasayfa" >Anasayfa</a>
+    </li>
+
+    <li class="subitem">
+        <a class="handler" href="/Erisebilirlik" title="Eri&#x15F;ilebilirlik" >Eri&#x15F;ilebilirlik</a>
+    </li>
+
+    <li class="subitem">
+        <a class="handler" href="https://www.voanews.com/p/5338.html" title="Kullan&#x131;m &#x15E;artlar&#x131; ve Gizlilik Politikas&#x131;" target="_blank" rel="noopener">Kullan&#x131;m &#x15E;artlar&#x131; ve Gizlilik Politikas&#x131;</a>
+    </li>
+
+                </ul>
+            </div>
+    </li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="foot__item foot__item--copyrights">
+                <p class="copyright"></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+</div>
+        <script defer src="/Scripts/responsive/serviceWorkerInstall.js?cb=325"></script>
+    <script type="text/javascript">
+
+        // opera mini - disable ico font
+        if (navigator.userAgent.match(/Opera Mini/i)) {
+            document.getElementsByTagName("body")[0].className += " can-not-ff";
+        }
+
+        // mobile browsers test
+        if (typeof RFE !== 'undefined' && RFE.isMobile) {
+            if (RFE.isMobile.any()) {
+                document.getElementsByTagName("body")[0].className += " is-mobile";
+            }
+            else {
+                document.getElementsByTagName("body")[0].className += " is-not-mobile";
+            }
+        }
+    </script>
+    <script src="/conf.js?x=325" type="text/javascript"></script>
+        <div class="responsive-indicator">
+            <div class="visible-xs-block">XS</div>
+            <div class="visible-sm-block">SM</div>
+            <div class="visible-md-block">MD</div>
+            <div class="visible-lg-block">LG</div>
+        </div>
+        <script type="text/javascript">
+            var bar_data = {
+  "apiId": "6853087",
+  "apiType": "1",
+  "isEmbedded": "0",
+  "culture": "tr-TR",
+  "cookieName": "cmsLoggedIn",
+  "cookieDomain": "www.voaturkce.com"
+};
+        </script>
+    
+    
+
+
+
+    <div id="scriptLoaderTarget" style="display:none;contain:strict;"></div>
+
+</body>
+</html>
+
