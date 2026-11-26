@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 145 | 142 | 62719203 girdi ve kaynak, 62719510 önizleme ve bağımsız denetim |
-| TİP | 70 | 57 | 62718930, bağımsız kart ve 1.746 varlık denetimi |
+| TİP | 75 | 57 | 62721068, bağımsız 1.784 varlık denetimi |
 | DEM Parti | 89 | 13 | 62708088 / 62708185 |
 | İYİ Parti | 23 | 15 | 62720343, bağımsız 1.392 varlık denetimi |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -751,3 +751,8 @@ Saadet 7/35779 için 20 Ekim soru gelişi, 15 Ekim aidiyet kanıtı ve 27 Ocak 2
 EMEP’in İstanbul Sözleşmesi kaydı çalışma çiftini 88 olay ve 82 ilişkiye taşıdı. Ağustos 2020’de Şükran Doğan’ın çağrısı, 19 Mart 2021 tarihli 3718 kararı, 20 Mart Selma Gürkan açıklaması ve 1 Temmuz’daki sona erme ayrı. EMEP’in katkısı yayımlanmış itirazla sınırlı. 23 Haziran 2022 parti çağrısı, davaya taraf olunduğuna ilişkin kanıt olarak kullanılmadı. İki görünüm ve 1.850 yerel dosya denetlendi. [Kaynak okuması](../04-10-checks/emep-istanbul-sozlesmesi-reading.json) [Bağımsız makbuz](../04-10-checks/emep-istanbul-sozlesmesi-62720897-independent.json)
 
 EMEP’in İngilizce programının 33.529 karakterlik aralığı altı kesitte okundu ve önceki makbuzlarla tüm gövde doğrulandı. Toplam 2.516 tam gövde ve 754 açık gövde var. EMEP ile DİSK’in 9 Ekim 2018 görüşmesi iki kurumun özgün yayınlarıyla doğrulandı. Adana OSB’de 19 Ekim gözaltıları ve 5 Aralık takipsizlik haberi ayrı. İmzalı takipsizlik ve dosya numarası açık. [İngilizce program okuması](../04-10-checks/party-api-gap-005-source-reading.json) [DİSK ve Adana makbuzu](../04-10-checks/adana-disk-2018-source-reading.json)
+
+
+TİP’in 2020 güz kayıtları 75 olay ve 57 ilişkiye ulaştı. 31 Ağustos Barış Atay saldırısı, 2 Eylül tutuklama haberleri ve 11 Ocak 2022 ilk derece sonucu ayrı. 1 Eylül Yoğurtçu Parkı açıklamasına ilişkin kişi ve parti kaynakları, İzmir deprem yardımına ilişkin belediye ve parti bildirimleriyle ayrı atıflar taşıyor. 25 Kasım Kadıköy etkinliğinde İstanbul 25 Kasım Platformu, Ermenek’te 25 Kasım gözaltıları ve 26 Kasım salıverilmeler kendi belgelerine bağlı. Beş kayıtta karşılaştırma için ayrı söylem veya yetki kanıtı araştırılıyor. [Önizleme](../04-05-checks/tip-2020-autumn-civic-62721068.json) [Bağımsız makbuz](../04-05-checks/tip-2020-autumn-civic-62721068-independent.json)
+
+3718 sayılı karar için dokuz aday paketin ön kontrolü ileri ve ters giriş sırasıyla 602 olay, 422 ilişki ve 226 açık aday verdi. Bu sayılar TİP ile Saadet denetimleri süren adayları içeriyor. EMEP’in itirazı ve TİP’in dava işlemleri ayrı. Dondurulacak birleştirme kabul edilen paketlere dayanacak. [Kaynak eşleştirme incelemesi](wave4-3718-overlap-reading.json)
