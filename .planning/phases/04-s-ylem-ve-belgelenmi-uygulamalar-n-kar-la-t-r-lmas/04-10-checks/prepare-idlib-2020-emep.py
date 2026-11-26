@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path.insert(0,'src')
 import uygulamalar as rules
 c=Path(__file__).resolve().parent; now=datetime.now(timezone.utc).isoformat(timespec='seconds'); read=lambda p:json.loads(Path(p).read_bytes()); package=read('data/practices/04-emep.json'); review=read('data/practices/04-emep-review.json'); base=read('data/releases/f67ca0a35e634035bf3aa83a46571f50/records.json'); inv=read('data/practices/04-inventory.json'); entries=package['entries']; records=package['practice_records']; assert (len(records['practice_event']),len(records['practice_relation']),len(records['practice_closure']))==(86,80,0)
-case='0410-idlib-2020'; topic='dis-politika'; event=case+'-event'; relation=case+'-relation'; statement=case+'-statement'; sources=read(c/'idlib-2020-emep-source-draft.json')['entries']; entries.extend(sources); passages={e['values']['id']:e['values'] for e in sources if e['kind']=='passage'}; versions={e['values']['id']:e['values'] for e in sources if e['kind']=='document_version'}
+case='0410-idlib-2020'; topic='dis-politika'; event=case+'-event'; relation=case+'-relation'; statement=case+'-statement'; sources=read(c/'idlib-2020-emep-v2-source-draft.json')['entries']; entries.extend(sources); passages={e['values']['id']:e['values'] for e in sources if e['kind']=='passage'}; versions={e['values']['id']:e['values'] for e in sources if e['kind']=='document_version'}
 def add(table,**v): records[table].append(v)
 def insert(table,**v): entries.append(dict(kind=table,values=v))
 def finding(suffix,text,provenance,refs,heading,pair):
@@ -46,6 +46,6 @@ for (kind,identity),(ids,_) in sorted(targets.items()):
  assert claims,(kind,identity,ids)
  reviews.append(dict(subject_kind=kind,subject_id=identity,reviewer_kind='agent',reviewed_at=now,source_version_ids=json.dumps(sorted({p['version_id'] for p in ps})),passage_ids=json.dumps([p['id'] for p in ps]),inspected_sections=json.dumps(sorted({p['section'] for p in ps}),ensure_ascii=False),supported_claim=' '.join(claims),limitations=limit,result='reviewed',reason=kind+' / '+identity+' için özgün kaynak incelendi.'))
 rules.validate_practice_source_review(data,reviews,party_id='emep',target_keys=set(targets)); refs=[{k:r[k] for k in ('subject_kind','subject_id')} for r in reviews]; package['source_review_refs']=refs; review['practice_source_review']=reviews; review['source_review_refs']=refs
-for name,obj in [('idlib-2020-emep-draft.json',package),('idlib-2020-emep-review-draft.json',review)]:
+for name,obj in [('idlib-2020-emep-v2-draft.json',package),('idlib-2020-emep-v2-review-draft.json',review)]:
  with (c/name).open('x') as f: json.dump(obj,f,ensure_ascii=False,indent=2); f.write('\n')
 print('IDLIB_SEMANTIC_OK',len(records['practice_event']),len(records['practice_relation']),len(reviews))

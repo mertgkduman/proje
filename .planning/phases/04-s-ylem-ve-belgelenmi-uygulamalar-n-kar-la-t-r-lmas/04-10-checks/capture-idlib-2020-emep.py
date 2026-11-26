@@ -7,7 +7,7 @@ from arsiv import html_source_text,pdf_page_text,readable_bytes
 from arsiv_gorunum import build_view,validate_view
 c=Path(__file__).resolve().parent; root=Path('data/practices/sources/emep'); source=c/'idlib-2020-emep-sources'; capture=json.loads((source/'capture.json').read_text()); now=datetime.now(timezone.utc).isoformat(); entries=[]
 def add(table,**values): entries.append(dict(kind=table,values=values))
-specs=[('call','EMEP Genel Merkezi: TSK ve bütün yabancı güçler Suriye’den çekilsin','party_publication','party','Emek Partisi','2020-02-28','text/html','emep-3479.html.bin'),('bm','BM S/2020/187: Türkiye ve Rusya’nın İdlib ek protokolü','official','official','Birleşmiş Milletler','2020-03-06','application/pdf','un-s-2020-187.pdf')]
+specs=[('call','EMEP Genel Merkezi: TSK ve bütün yabancı güçler Suriye’den çekilsin','party','party_publication','Emek Partisi','2020-02-28','text/html','emep-3479.html.bin'),('bm','BM S/2020/187: Türkiye ve Rusya’nın İdlib ek protokolü','official','official','Birleşmiş Milletler','2020-03-06','application/pdf','un-s-2020-187.pdf')]
 for key,title,kind,attribution,publisher,day,mime,filename in specs:
  meta=next(x for x in capture if x.get('file')==filename); raw=(source/filename).read_bytes(); digest=sha256(raw).hexdigest(); assert digest==meta['sha256']; obj=root/'objects'/digest; obj.mkdir(parents=True,exist_ok=True); orig=obj/('original.pdf' if mime=='application/pdf' else 'original.html.bin'); readable=obj/'readable.html'
  for path,data in ((orig,raw),(readable,readable_bytes(raw,'pdf' if mime=='application/pdf' else 'html',legacy=False))):
@@ -20,5 +20,5 @@ for key,title,kind,attribution,publisher,day,mime,filename in specs:
  anchors={'call':[('quote','İdlib’de ateş altındaki askerlerin çekilmesi','İdlib’de ateş altındaki askerleri acilen geri\nçekmeye çağırıyoruz.',None,None),('all','Suriye’de bütün askerî güçlerin çekilmesi','buradaki tüm\naskeri güçlerin geri çekilmesinden geçmektedir.',None,None)],'bm':[('signature','S/2020/187 eki, 5 Mart Moskova imzası.','Done in Moscow on 5 March, 2020',1,'2'),('start','S/2020/187 eki madde 1, İdlib temas hattında ateşkesin öngörülen başlangıcı.','starting from 00:01 of March 6, 2020.',1,'2'),('patrol','S/2020/187 eki madde 3, 15 Mart için ortak devriye düzenlemesi.','joint Turkish-Russian patrolling will begin',1,'2'),('transmission','S/2020/187 mektubu, BM’ye 6 Mart iletimi.','Letter dated 6 March 2020',0,None)]}
  for suffix,section,exact,page,printed in anchors[key]:
   text=body if page is None else pdf_page_text(orig,page); assert exact in text,(key,suffix); add('passage',id=doc+'-'+suffix,version_id=vid,exact=exact,prefix=None,suffix=None,article='1' if suffix=='start' else ('3' if suffix=='patrol' else None),section=section,pdf_page_index=page,printed_page=printed)
-with (c/'idlib-2020-emep-source-draft.json').open('x') as f: json.dump(dict(party_id='emep',entries=entries),f,ensure_ascii=False,indent=2); f.write('\n')
+with (c/'idlib-2020-emep-v2-source-draft.json').open('x') as f: json.dump(dict(party_id='emep',entries=entries),f,ensure_ascii=False,indent=2); f.write('\n')
 print('IDLIB_CAPTURE_OK',len(entries))

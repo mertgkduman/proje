@@ -1,0 +1,14 @@
+Staged 698 original, readable and view paths; package 7dc305ca8dbd958f15fa9225f0ece87590da2988cfdd44ee838a8d889169093a; review 13a02e5272a4391a9d6d2199a0cd101233e985d2c722c19eaed3b5f85656de37
+Traceback (most recent call last):
+  File "/work/mg551/gsd-phase04-recovery.L0IReu/run-audit.py", line 17, in <module>
+    exec(compile(source, str(path), "exec"), {"__name__": "__main__", "__file__": str(path)})
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/idlib-2020-emep-validation.py", line 11, in <module>
+    stem='0410-idlib-2020'; receipt=h.main(p,r,case,stem+'-event',stem+'-relation',None,expected_party='emep',namespace='gsd-0410'); folder=Path(receipt['preview']); exported=json.loads((folder/'records.json').read_bytes()); report=(folder/'index.html').read_text()
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 111, in main
+    check(receipt_name, 'input', ['practice-check','--input',str(package_path),'--inventory',str(staged_inventory)],
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 63, in check
+    require(code == 0, f'{name}: exit {code}')
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/samsun-reply-validation.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: input: exit 1
