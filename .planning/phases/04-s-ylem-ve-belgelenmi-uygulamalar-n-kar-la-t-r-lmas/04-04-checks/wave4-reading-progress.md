@@ -658,3 +658,5 @@ TBMM 2/3961, 295 sıra sayılı raporun basılı 27–30. sayfalarındaki DEM mu
 Saadet yayın 373 ve 372, DP ev sahipliğindeki altı lider toplantısı ve öğretmen kariyer ödemesine ilişkin önerileri içeriyor. Toplam 294/649 özgün gövde, 355 açık. [Dilim 206](../04-11-checks/party-news-206-reading.json) [Dilim 207](../04-11-checks/party-news-207-reading.json)
 
 DEM 2/3961 komisyon şerhi için 89 olay ve 13 ilişkilik adayın üç kapısı 62708088, bağımsız denetimi 62708185. 27 Ekim komisyon işlemi 5 Kasım Genel Kurul kabulünden ayrı. 14 Kasım Resmî Gazete yayımı kapsam kesiminden sonra.
+
+DEM’in 2/3961 komisyon şerhi 62708088 ve 62708185 ile doğrulandı. 27 Ekim 2026 komisyon işlemi, DEM adına sunulan yazılı şerh ve Ceylan Akça Cupolo’nun sözlü katkısı kendi dayanaklarıyla izlendi. 5 Kasım Genel Kurul sonucu mevcut kayıtta duruyor. 14 Kasım yayımı kapsam kesiminden sonra. DEM çalışma kaydı 89 olay ve 13 ilişki. [Bağımsız doğrulama](../04-06-checks/dem-3961-commission-62708088-independent.json)

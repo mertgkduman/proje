@@ -196,5 +196,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-25T23:36:34Z
-Stopped at: 17. birleşik prova ile TİP 53/49 bağımsız doğrulandı. TİP ücret/bütçe/EYT/Kıbrıs adayı (62708340) ve DEM 2/3961 (62708088 / 62708185) denetimde. ÇarkBaşak sayı 1–8 ve Saadet 294/649 okundu.
+Stopped at: 17. birleşik prova ile TİP 53/49 bağımsız doğrulandı. TİP ücret/bütçe/EYT/Kıbrıs adayı (62708340) denetimde. DEM 2/3961 komisyon şerhi bağımsız doğrulandı ve 89/13 çalışma kaydına alındı. ÇarkBaşak sayı 1–8 ve Saadet 294/649 okundu.
 Resume file: None
