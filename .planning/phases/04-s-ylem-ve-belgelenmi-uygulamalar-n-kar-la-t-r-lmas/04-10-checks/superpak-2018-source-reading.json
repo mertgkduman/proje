@@ -1,0 +1,126 @@
+{
+  "cutoff": "2026-11-10T14:38:46.154751+00:00",
+  "read_at": "2026-11-26T08:30:36.924982+00:00",
+  "captures": [
+    {
+      "id": "evrensel-visit",
+      "url": "https://www.evrensel.net/haber/356817/emepten-superpak-iscilerine-dayanisma-ziyareti",
+      "status": 200,
+      "retrieved_at": "2026-11-26T08:28:58.685007+00:00",
+      "file": "evrensel-visit.html",
+      "sha256": "f3d0e5c96d84c41d720d63e6fb9361022b40f754944c699bc615002fcc2632c8",
+      "size": 123464,
+      "mime": "text/html; charset=utf-8",
+      "final_url": "https://www.evrensel.net/haber/356817/emepten-superpak-iscilerine-dayanisma-ziyareti",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-superpak-2018.P76FsC/evrensel-visit.html"
+    },
+    {
+      "id": "liman-outcome",
+      "url": "https://limanis.org.tr/superpakta-186-gunluk-grev-iscilerin-kazanimiyla-bitti/",
+      "status": 200,
+      "retrieved_at": "2026-11-26T08:29:02.117585+00:00",
+      "file": "liman-outcome.html",
+      "sha256": "b7c82fcf79632812fb502431925244bf2a55e69950fce99e1f169d99dcecb6cc",
+      "size": 51506,
+      "mime": "text/html; charset=UTF-8",
+      "final_url": "https://limanis.org.tr/superpakta-186-gunluk-grev-iscilerin-kazanimiyla-bitti/",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-superpak-2018.P76FsC/liman-outcome.html"
+    },
+    {
+      "id": "industriall-letter",
+      "url": "https://www.industriall-union.org/wp-content/uploads/documents/2018/TURKEY/industriall_global_union_letter_to_mayr-melnhof_packaging_ref_mm_superpa.pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-26T08:29:00.238251+00:00",
+      "file": "industriall-letter.pdf",
+      "sha256": "6894f0f4fbf9f858b4fca0b32dd7ea32c5477a8c09b458ee571585e710dccb81",
+      "size": 403100,
+      "mime": "application/pdf",
+      "final_url": "https://www.industriall-union.org/wp-content/uploads/documents/2018/TURKEY/industriall_global_union_letter_to_mayr-melnhof_packaging_ref_mm_superpa.pdf",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-superpak-2018.P76FsC/industriall-letter.pdf"
+    },
+    {
+      "id": "seluloz-start",
+      "url": "https://www.selulozis.org.tr/haber/superpak-ambalajda-grev-basladi/",
+      "status": 200,
+      "retrieved_at": "2026-11-26T08:29:32+00:00",
+      "file": "start-www.raw",
+      "sha256": "2a078bb736710945df9ca2941ffcef481e360638898647a3efb3b506faea9028",
+      "size": 52277,
+      "mime": "text/html; charset=UTF-8",
+      "final_url": "https://selulozis.org.tr/haber/superpak-ambalajda-grev-basladi/",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-superpak-2018.P76FsC/start-www.raw"
+    },
+    {
+      "id": "seluloz-terms",
+      "url": "https://www.selulozis.org.tr/haber/superpak-isyerinde-grev-kazanimla-sonuclandi/",
+      "status": 200,
+      "retrieved_at": "2026-11-26T08:29:32+00:00",
+      "file": "terms-www.raw",
+      "sha256": "50a9bf637e939bae0c5bdca9f2dbfca061f4572bab10fd66891bfd243f4407d0",
+      "size": 55479,
+      "mime": "text/html; charset=UTF-8",
+      "final_url": "https://selulozis.org.tr/haber/superpak-isyerinde-grev-kazanimla-sonuclandi/",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-superpak-2018.P76FsC/terms-www.raw"
+    }
+  ],
+  "capture_limits": [
+    {
+      "id": "seluloz-start",
+      "url": "https://selulozis.org.tr/haber/superpak-ambalajda-grev-basladi/",
+      "status": 200,
+      "note": "İlk HTML güvenlik sayfası döndürdü. Doğrudan yeni alım kaynak gövdesini verdi."
+    },
+    {
+      "id": "seluloz-terms",
+      "url": "https://selulozis.org.tr/haber/superpak-isyerinde-grev-kazanimla-sonuclandi/",
+      "status": 200,
+      "note": "İlk HTML güvenlik sayfası döndürdü. Doğrudan yeni alım kaynak gövdesini verdi."
+    },
+    {
+      "id": "dha-outcome",
+      "url": "https://t24.com.tr/ekonomi/superpakta-grev-sona-erdi,780815",
+      "status": "403",
+      "note": "Doğrudan alım HTTP 403 döndürdü. Sendika açıklaması ve Liman-İş yayımı kullanıldı."
+    }
+  ],
+  "records": [
+    {
+      "id": "superpak-strike-start",
+      "date": "2018-06-20",
+      "source_ids": [
+        "seluloz-start"
+      ],
+      "note": "Selüloz-İş, toplu iş sözleşmesi görüşmelerinde anlaşma çıkmayınca grevin İzmir/Torbalı, Karaman ve Gaziantep fabrikalarında 20 Haziran saat 08.00’de başladığını ve yaklaşık 250 işçiyi kapsadığını bildiriyor."
+    },
+    {
+      "id": "emep-superpak-gaziantep-visit",
+      "publication_date": "2018-07-13",
+      "source_ids": [
+        "evrensel-visit"
+      ],
+      "api_post_id": 2915,
+      "note": "Evrensel haberi ve parti arşivindeki aynı haberin yeniden yayımı, EMEP Genel Başkan Yardımcısı Mehmet Türkmen ile üyelerin Gaziantep’te dayanışma ziyaretini aktarıyor. 13 Temmuz yayın günü. Ziyaretin kesin günü ve varsa ayrı yerel örgüt tutanağı açık. Parti rolü açıklama ve ziyarettir."
+    },
+    {
+      "id": "industriall-letter-to-mayr-melnhof",
+      "date": "2018-07-30",
+      "source_ids": [
+        "industriall-letter"
+      ],
+      "pdf_page_index": 0,
+      "note": "IndustriALL Genel Sekreteri Cenevre’den Mayr-Melnhof Packaging yönetimine yazdı ve Selüloz-İş’le pazarlık için Türkiye’deki şirket yönetimi nezdinde girişim istedi. Sendika mektubu ayrı müdahale. İşverenin yanıtı ve mektubun etkisi açık."
+    },
+    {
+      "id": "superpak-agreement",
+      "date": "2018-12-22",
+      "union_report_date": "2018-12-24",
+      "announced_return_date": "2019-01-02",
+      "source_ids": [
+        "seluloz-terms",
+        "liman-outcome"
+      ],
+      "note": "Selüloz-İş, 22 Aralık’ta İzmir’de işverenle anlaşma ve grevin sona erdiğini 24 Aralık’ta duyurdu. Üç yıllık sözleşme, enflasyona bağlı ücret artışı, sosyal yardımlar, vergi dilimleri ve 2 Ocak’a kadar ücretli izin sendika açıklamasında. Liman-İş yayını 2018 için 280 TL, 2019 ilk yarısı için 300 TL brüt artış ve sonraki dönem için enflasyon oranı bildiriyor. Asıl imzalı sözleşme ve ücret bordroları açık. 2 Ocak ilan edilen işbaşı günü. İşbaşı gerçekleşmesi ve EMEP’in anlaşmaya etkisi bu belgelerde belirlenmedi."
+    }
+  ],
+  "scope_closures": []
+}
