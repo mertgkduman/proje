@@ -196,5 +196,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-25T23:36:34Z
-Stopped at: 18. birleşik prova 62710973 ile 574 olay ve 404 ilişki için bağımsız doğrulandı. TİP ücret, bütçe, EYT ve Kıbrıs olayları bağımsız doğrulamayla 57/53 çalışma kaydına alındı. DEM 2/3961 komisyon şerhi bağımsız doğrulandı ve 89/13 çalışma kaydına alındı. EMEP Bakırköy 85/79 doğrulandı. TİP Bakırköy inceleme bağı tamamlandı ve 62713808 ile yeniden çalışıyor. ÇarkBaşak sayı 1–9 ve Saadet 294/649 okundu.
+Stopped at: 18. birleşik prova 62710973 ile 574 olay ve 404 ilişki için bağımsız doğrulandı. TİP ücret, bütçe, EYT ve Kıbrıs olayları bağımsız doğrulamayla 57/53 çalışma kaydına alındı. DEM 2/3961 komisyon şerhi bağımsız doğrulandı ve 89/13 çalışma kaydına alındı. EMEP Bakırköy 85/79 doğrulandı. TİP Bakırköy inceleme bağı tamamlandı ve 62713808 ile yeniden çalışıyor. ÇarkBaşak sayı 1–10 ve Saadet 294/649 okundu.
 Resume file: None
