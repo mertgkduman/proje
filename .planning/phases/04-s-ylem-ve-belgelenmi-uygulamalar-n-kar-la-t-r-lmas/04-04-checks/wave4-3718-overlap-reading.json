@@ -1,0 +1,83 @@
+{
+  "reviewed_at": "2026-11-26T06:53:21.820742+00:00",
+  "reviewer_kind": "agent",
+  "candidate_key": "cumhurbaskanligi-2021-03-19-3718",
+  "assessment": "same_candidate_pending_preview",
+  "canonical_event_id": "0405-tip-istanbul-sozlesmesi-withdrawal-event",
+  "members": {
+    "tip": {
+      "event": {
+        "id": "0405-tip-istanbul-sozlesmesi-withdrawal-event",
+        "common_event_key": "cumhurbaskanligi-2021-03-19-3718",
+        "event_at": "2021-03-19",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "title": "İstanbul Sözleşmesi için 3718 sayılı fesih kararı",
+        "scope_context": "Cumhurbaşkanı 19 Mart 2021’de İstanbul Sözleşmesi’nin Türkiye bakımından feshedilmesine karar verdi.",
+        "occurrence_basis": "Resmî Gazete’nin 31429 sayısındaki 3718 kararı ve 31470 sayısındaki 3928 kararı."
+      },
+      "relation_id": "0405-tip-istanbul-sozlesmesi-withdrawal-relation",
+      "package_sha256": "ea387982aa36335f24dd001e020065a699b843526039dcbcb6bf9a6420e06893",
+      "passages": [
+        {
+          "passage_id": "0405-tip-istanbul-sozlesmesi-withdrawal-id",
+          "stage": "action",
+          "exact": "Karar Sayısı: 3718\n19 Mart 2021",
+          "pdf_page_index": 0,
+          "sha256": "86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31",
+          "url": "https://www.resmigazete.gov.tr/eskiler/2021/03/20210320-49.pdf"
+        },
+        {
+          "passage_id": "0405-tip-istanbul-sozlesmesi-effect-id",
+          "stage": "result",
+          "exact": "Karar Sayısı: 3928\n29 Nisan 2021",
+          "pdf_page_index": 0,
+          "sha256": "5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5",
+          "url": "https://www.resmigazete.gov.tr/eskiler/2021/04/20210430-13.pdf"
+        }
+      ],
+      "contribution_kind": []
+    },
+    "emep": {
+      "event": {
+        "id": "0410-emep-istanbul-sozlesmesi-event",
+        "common_event_key": "cumhurbaskanligi-2021-03-19-3718",
+        "event_at": "2021-03-19",
+        "date_precision": "day",
+        "date_unknown_reason": null,
+        "title": "İstanbul Sözleşmesi için 3718 sayılı fesih kararı",
+        "scope_context": "Cumhurbaşkanı 19 Mart 2021’de İstanbul Sözleşmesi’nin Türkiye bakımından feshedilmesine karar verdi.",
+        "occurrence_basis": "Resmî Gazete’nin 31429 sayısındaki 3718 kararı ve 31470 sayısındaki 3928 kararı."
+      },
+      "relation_id": "0410-emep-istanbul-sozlesmesi-relation",
+      "package_sha256": "772056d54ef6d2e8d2f8bd4cb48b4eca9f20b14648131fcea899dbfaa9cfd274",
+      "passages": [
+        {
+          "passage_id": "0410-emep-istanbul-sozlesmesi-withdrawal-id",
+          "stage": "action",
+          "exact": "Karar Sayısı: 3718\n19 Mart 2021",
+          "pdf_page_index": 0,
+          "sha256": "86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31",
+          "url": "https://www.resmigazete.gov.tr/eskiler/2021/03/20210320-49.pdf"
+        },
+        {
+          "passage_id": "0410-emep-istanbul-sozlesmesi-effect-id",
+          "stage": "result",
+          "exact": "Karar Sayısı: 3928\n29 Nisan 2021",
+          "pdf_page_index": 0,
+          "sha256": "5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5",
+          "url": "https://www.resmigazete.gov.tr/eskiler/2021/04/20210430-13.pdf"
+        }
+      ],
+      "contribution_kind": [
+        "objection"
+      ]
+    }
+  },
+  "overlap_reason": "19 Mart 2021 tarihli 3718 sayılı karar aynı Resmî Gazete nüshası, sayfa ve pasajla belgelendi. 3928 kaydı aynı sona erme tarihini gösteriyor. TİP’in dava işlemleri ayrı olay, EMEP’in 20 Mart açıklaması yayımlanmış itiraz.",
+  "verification_jobs": {
+    "tip": "62720896",
+    "emep": "62720897"
+  },
+  "scope_closures": []
+}
