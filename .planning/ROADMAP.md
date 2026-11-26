@@ -6,7 +6,7 @@
 
 **Status:** Kullanıcı tarafından onaylandı — 2026-11-09.
 **Milestone:** v1.0 — Kaynak temelli ilk araştırma arşivi ve rapor.
-**Structure:** Kullanıcının seçimiyle bütün aşamalar `mvp` modundadır. Gereksinimler onaylanmıştır; Faz 1 ve Faz 2 tamamlanmıştır. Faz 3, 16/16 teknik yürütüm ve bağımsız teknik doğrulama sonrası insan kabulü bekler; Faz 4–6 başlamamıştır.
+**Yapı.** Bütün aşamalar kullanıcı seçimiyle `mvp` modunda. Gereksinimler onaylandı. Faz 1–3 tamamlandı. Faz 4 yürütülüyor ve 15 planın üçü tamamlandı.
 **Coverage:** 35/35 v1 gereksinimi tam olarak birer aşamaya atanmıştır. Eşleme, gereksinimlerin tamamlandığı anlamına gelmez.
 
 ## Phases
@@ -327,4 +327,4 @@ Plans:
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
 ---
-*Last updated: 2026-11-16 after Phase 3 completion; technical 14/14 and explicit user UAT acceptance 6/6. Phase 4 not started.*
+*26 Kasım 2026 güncellemesi. Faz 4 yürütülüyor. Faz 3 teknik doğrulaması 14/14 ve kullanıcı kabulü 6/6.*
