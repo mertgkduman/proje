@@ -960,3 +960,11 @@ birleştiren [prova](wave4-dem-tip-candidate-merge-preflight.json), 625 olay ve
 tarihçede ve ona bağlı yeniden açılış kaydı korunuyor. Bu prova 1 etkin
 kapanış ve 5.489 açık hücre gösteriyor. Yayıma hazır dokuz paket denetimi,
 DEM ve TİP kaynak ve HTML doğrulamasına bağlı.
+
+## Önceki dokuz paketin arşiv denetimi
+
+62739549, 621 olay ve 424 ilişki içeren önceki birleşik arşivi
+doğruladı. 5.274 dosya özeti, SQLite bütünlüğü ve iki okuyucu görünümü
+kontrol edildi. [Önceki birleşimin makbuzu](wave4-accepted-merge-62739549.json).
+26 Kasım kapsam kararıyla ilk teslim, DEM ve TİP adaylarını da içeren
+[04-16 planına](../04-16-PLAN.md) alındı. İlk teslim için 62742674 çalışıyor.
