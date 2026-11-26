@@ -10880,6 +10880,318 @@
       "limitations": "Grev kararı, Bakanlar Kurulu ertelemesi, parti çağrısı, fiilî iş bırakma ve toplu sözleşme ayrı incelendi.",
       "result": "reviewed",
       "reason": "Pasajın ilgili olay aşaması, yayın günü ve kapsamı denetlendi."
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0410-emep-election-2018-eligibility-unmatched",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-eligibility-264-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-eligibility-result\"]",
+      "inspected_sections": "[\"YSK 2018/264, sonuç ve parti listesi\"]",
+      "supported_claim": "YSK’nın ilk seçim yeterliği listesi",
+      "limitations": "Karar EMEP’in örgütlenmesine özgü gerekçe ya da tebligat içermiyor. 25 Nisan ek listesine yalnızca HÜDA PAR alındı.",
+      "result": "reviewed",
+      "reason": "Olayın ele alınan konuyla bağı ve EMEP’e atfın sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0410-emep-election-2018-official-results-unmatched",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-mv-953-v1\", \"0410-emep-election-2018-mv-96d-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-result-decree\", \"0410-emep-election-2018-result-seats\"]",
+      "inspected_sections": "[\"YSK 2018/953, karar tarihi\", \"YSK 96/D, milletvekili sandalye dağılımı\"]",
+      "supported_claim": "24 Haziran milletvekili seçiminin kesin sonuç ilanı",
+      "limitations": "24 Hazirandaki oy verme ile 4 Temmuzdaki ilan ayrı. Toplamlar EMEP’in desteğinin etkisini ölçmez.",
+      "result": "reviewed",
+      "reason": "Olayın ele alınan konuyla bağı ve EMEP’e atfın sınırı okundu."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-eligibility-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-eligibility-264-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-eligibility-result\"]",
+      "inspected_sections": "[\"YSK 2018/264, sonuç ve parti listesi\"]",
+      "supported_claim": "YSK’nın 22 Nisan tarihli ilk yeterlik listesinde EMEP adı yer almadı.",
+      "limitations": "Karar EMEP’in örgütlenmesine özgü gerekçe ya da tebligat içermiyor. 25 Nisan ek listesine yalnızca HÜDA PAR alındı.",
+      "result": "reviewed",
+      "reason": "Olayın tarihi ve kaynak sahibinin işlem kapsamı incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-legislation-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-tbmm-7102-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-law-effective\", \"0410-emep-election-2018-law-ratification\"]",
+      "inspected_sections": "[\"Kanunun numarası ve kabul tarihi\", \"Madde 25, yürürlük hükmü\"]",
+      "supported_claim": "TBMM belgesi 13 Mart kabul tarihini ve yürürlük hükmünü içeriyor.",
+      "limitations": "EMEP’in kanunu kabul eden Meclis işlemi üzerindeki yetkisi veya etkisi bu kaynaklardan çıkmaz.",
+      "result": "reviewed",
+      "reason": "Olayın tarihi ve kaynak sahibinin işlem kapsamı incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-official-results-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-mv-953-v1\", \"0410-emep-election-2018-mv-96d-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-result-decree\", \"0410-emep-election-2018-result-seats\"]",
+      "inspected_sections": "[\"YSK 2018/953, karar tarihi\", \"YSK 96/D, milletvekili sandalye dağılımı\"]",
+      "supported_claim": "YSK’nın 4 Temmuz kararı ve 96/D tablosu kesin milletvekili dağılımını gösteriyor.",
+      "limitations": "24 Hazirandaki oy verme ile 4 Temmuzdaki ilan ayrı. Toplamlar EMEP’in desteğinin etkisini ölçmez.",
+      "result": "reviewed",
+      "reason": "Olayın tarihi ve kaynak sahibinin işlem kapsamı incelendi."
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-support-event",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-karinca-report-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-support-report\"]",
+      "inspected_sections": "[\"Gazete Emek, Gazete Karınca’nın Selma Gürkan söyleşisinde aktardığı destek açıklaması\"]",
+      "supported_claim": "Gazete Emek, Gazete Karınca’ya konuşan Selma Gürkan’ın seçim desteğini açıkladığını bildirdi.",
+      "limitations": "Haber açıklamanın tarihini gösteriyor. Parti kurulundaki oylamanın tarihi, imzalı karar ve aday listesi ayrı.",
+      "result": "reviewed",
+      "reason": "Olayın tarihi ve kaynak sahibinin işlem kapsamı incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-eligibility-event|0410-emep-election-2018-eligibility-result|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-eligibility-264-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-eligibility-result\"]",
+      "inspected_sections": "[\"YSK 2018/264, sonuç ve parti listesi\"]",
+      "supported_claim": "YSK 2018/264 sonuç listesi ve ilan hükmü.",
+      "limitations": "Karar EMEP’in örgütlenmesine özgü gerekçe ya da tebligat içermiyor. 25 Nisan ek listesine yalnızca HÜDA PAR alındı.",
+      "result": "reviewed",
+      "reason": "Bu pasajın ilişkilendirildiği işlem aşaması incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-legislation-event|0410-emep-election-2018-law-effective|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-tbmm-7102-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-law-effective\"]",
+      "inspected_sections": "[\"Madde 25, yürürlük hükmü\"]",
+      "supported_claim": "Yayımı tarihinde yürürlüğe girme hükmü.",
+      "limitations": "EMEP’in kanunu kabul eden Meclis işlemi üzerindeki yetkisi veya etkisi bu kaynaklardan çıkmaz.",
+      "result": "reviewed",
+      "reason": "Bu pasajın ilişkilendirildiği işlem aşaması incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-legislation-event|0410-emep-election-2018-law-ratification|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-tbmm-7102-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-law-ratification\"]",
+      "inspected_sections": "[\"Kanunun numarası ve kabul tarihi\"]",
+      "supported_claim": "TBMM özgün metnindeki 13 Mart kabul tarihi.",
+      "limitations": "EMEP’in kanunu kabul eden Meclis işlemi üzerindeki yetkisi veya etkisi bu kaynaklardan çıkmaz.",
+      "result": "reviewed",
+      "reason": "Bu pasajın ilişkilendirildiği işlem aşaması incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-official-results-event|0410-emep-election-2018-result-decree|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-mv-953-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-result-decree\"]",
+      "inspected_sections": "[\"YSK 2018/953, karar tarihi\"]",
+      "supported_claim": "4 Temmuz kesin ilan kararı.",
+      "limitations": "24 Hazirandaki oy verme ile 4 Temmuzdaki ilan ayrı. Toplamlar EMEP’in desteğinin etkisini ölçmez.",
+      "result": "reviewed",
+      "reason": "Bu pasajın ilişkilendirildiği işlem aşaması incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-official-results-event|0410-emep-election-2018-result-seats|result",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-mv-96d-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-result-seats\"]",
+      "inspected_sections": "[\"YSK 96/D, milletvekili sandalye dağılımı\"]",
+      "supported_claim": "96/D sandalye dağılım cetveli.",
+      "limitations": "24 Hazirandaki oy verme ile 4 Temmuzdaki ilan ayrı. Toplamlar EMEP’in desteğinin etkisini ölçmez.",
+      "result": "reviewed",
+      "reason": "Bu pasajın ilişkilendirildiği işlem aşaması incelendi."
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-support-event|0410-emep-election-2018-support-report|action",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-karinca-report-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-support-report\"]",
+      "inspected_sections": "[\"Gazete Emek, Gazete Karınca’nın Selma Gürkan söyleşisinde aktardığı destek açıklaması\"]",
+      "supported_claim": "4 Mayıs yayını, Gürkan’ın Gazete Karınca’ya açıklaması.",
+      "limitations": "Haber açıklamanın tarihini gösteriyor. Parti kurulundaki oylamanın tarihi, imzalı karar ve aday listesi ayrı.",
+      "result": "reviewed",
+      "reason": "Bu pasajın ilişkilendirildiği işlem aşaması incelendi."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-emep-election-2018-legislation-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\", \"0410-emep-election-2018-tbmm-7102-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-law-effective\", \"0410-emep-election-2018-law-ratification\", \"0410-emep-election-2018-march10-law\"]",
+      "inspected_sections": "[\"Kanunun numarası ve kabul tarihi\", \"Madde 25, yürürlük hükmü\", \"Seçim yasası ve OHAL hakkında Selma Gürkan’ın söyleşisi\"]",
+      "supported_claim": "Gürkan’ın 10 Martta karşı çıktığı seçim düzenlemesi 13 Martta TBMM’de kabul edildi. Öneri ve kabul ayrı evreler.",
+      "limitations": "EMEP’in kanunu kabul eden Meclis işlemi üzerindeki yetkisi veya etkisi bu kaynaklardan çıkmaz.",
+      "result": "reviewed",
+      "reason": "Söyleşinin dönemi ve sonraki işlemin belgesi ayrı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-emep-election-2018-support-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-karinca-report-v1\", \"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-alliance\", \"0410-emep-election-2018-support-report\"]",
+      "inspected_sections": "[\"Gazete Emek, Gazete Karınca’nın Selma Gürkan söyleşisinde aktardığı destek açıklaması\", \"Selma Gürkan’ın demokratik talepler temelindeki ittifak yaklaşımı\"]",
+      "supported_claim": "10 Marttaki geniş demokratik ittifak çağrısı ile 4 Mayısta açıklanan seçim desteği aynı seçim bağlamının farklı kararları.",
+      "limitations": "Haber açıklamanın tarihini gösteriyor. Parti kurulundaki oylamanın tarihi, imzalı karar ve aday listesi ayrı.",
+      "result": "reviewed",
+      "reason": "Söyleşinin dönemi ve sonraki işlemin belgesi ayrı karşılaştırıldı."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-emep-election-2018-legislation-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\", \"0410-emep-election-2018-tbmm-7102-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-law-effective\", \"0410-emep-election-2018-law-ratification\", \"0410-emep-election-2018-march10-law\"]",
+      "inspected_sections": "[\"Kanunun numarası ve kabul tarihi\", \"Madde 25, yürürlük hükmü\", \"Seçim yasası ve OHAL hakkında Selma Gürkan’ın söyleşisi\"]",
+      "supported_claim": "Gürkan’ın 10 Martta karşı çıktığı seçim düzenlemesi 13 Martta TBMM’de kabul edildi. Öneri ve kabul ayrı evreler.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "İlişkinin işlem ve söylem dayanakları ayrı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-emep-election-2018-support-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-karinca-report-v1\", \"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-alliance\", \"0410-emep-election-2018-support-report\"]",
+      "inspected_sections": "[\"Gazete Emek, Gazete Karınca’nın Selma Gürkan söyleşisinde aktardığı destek açıklaması\", \"Selma Gürkan’ın demokratik talepler temelindeki ittifak yaklaşımı\"]",
+      "supported_claim": "10 Marttaki geniş demokratik ittifak çağrısı ile 4 Mayısta açıklanan seçim desteği aynı seçim bağlamının farklı kararları.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "İlişkinin işlem ve söylem dayanakları ayrı incelendi."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-emep-election-2018-legislation-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-law\"]",
+      "inspected_sections": "[\"Seçim yasası ve OHAL hakkında Selma Gürkan’ın söyleşisi\"]",
+      "supported_claim": "Gürkan, tartışılan düzenlemeyle seçime gidilmesine karşı olduğunu söyledi.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "Söyleşideki hedefin karşılaştırma kapsamı yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-emep-election-2018-support-relation",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-alliance\"]",
+      "inspected_sections": "[\"Selma Gürkan’ın demokratik talepler temelindeki ittifak yaklaşımı\"]",
+      "supported_claim": "Gürkan, temel demokratik talepler etrafında geniş ittifak önerdi.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "Söyleşideki hedefin karşılaştırma kapsamı yeniden okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-emep-election-2018-alliances-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-alliance\"]",
+      "inspected_sections": "[\"Selma Gürkan’ın demokratik talepler temelindeki ittifak yaklaşımı\"]",
+      "supported_claim": "Gürkan, temel demokratik talepler etrafında geniş ittifak önerdi.",
+      "limitations": "10 Mart söyleşisine bağlı siyasi beyan. İmzalı işlem veya oylama kanıtı ayrı.",
+      "result": "reviewed",
+      "reason": "İki bulgunun dönem, aktör ve belge rolü birlikte okundu."
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-emep-election-2018-law-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-law\"]",
+      "inspected_sections": "[\"Seçim yasası ve OHAL hakkında Selma Gürkan’ın söyleşisi\"]",
+      "supported_claim": "Gürkan, tartışılan düzenlemeyle seçime gidilmesine karşı olduğunu söyledi.",
+      "limitations": "10 Mart söyleşisine bağlı siyasi beyan. İmzalı işlem veya oylama kanıtı ayrı.",
+      "result": "reviewed",
+      "reason": "İki bulgunun dönem, aktör ve belge rolü birlikte okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-emep-election-2018-alliances-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-alliance\"]",
+      "inspected_sections": "[\"Selma Gürkan’ın demokratik talepler temelindeki ittifak yaklaşımı\"]",
+      "supported_claim": "demokratik bir ittifak gönlümüzün arzu ettiği şeydir.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "Tırnak içindeki özgün söz kaynak HTML içinde okundu."
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-emep-election-2018-law-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-law\"]",
+      "inspected_sections": "[\"Seçim yasası ve OHAL hakkında Selma Gürkan’ın söyleşisi\"]",
+      "supported_claim": "seçim yasasıyla seçime gitmemek için bugünden mücadele etmek gerektiğini düşünüyoruz.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "Tırnak içindeki özgün söz kaynak HTML içinde okundu."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-emep-election-2018-alliances-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-alliance\"]",
+      "inspected_sections": "[\"Selma Gürkan’ın demokratik talepler temelindeki ittifak yaklaşımı\"]",
+      "supported_claim": "Gürkan, temel demokratik talepler etrafında geniş ittifak önerdi.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "Kaynağın desteklediği söylem özetinin kapsamı kontrol edildi."
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-emep-election-2018-law-statement",
+      "reviewer_kind": "agent",
+      "reviewed_at": "2026-11-26T17:54:35.447342+00:00",
+      "source_version_ids": "[\"0410-emep-election-2018-march10-v1\"]",
+      "passage_ids": "[\"0410-emep-election-2018-march10-law\"]",
+      "inspected_sections": "[\"Seçim yasası ve OHAL hakkında Selma Gürkan’ın söyleşisi\"]",
+      "supported_claim": "Gürkan, tartışılan düzenlemeyle seçime gidilmesine karşı olduğunu söyledi.",
+      "limitations": "Pasaj bu alanın tarihli sözünü veya olay aşamasını kaynak bağlamında destekliyor.",
+      "result": "reviewed",
+      "reason": "Kaynağın desteklediği söylem özetinin kapsamı kontrol edildi."
     }
   ],
   "source_review_refs": [
@@ -14230,6 +14542,102 @@
     {
       "subject_kind": "practice_event_evidence",
       "subject_id": "0410-emep-metal-2018-work-stoppage-event|0410-emep-metal-2018-business-stop-p|action"
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0410-emep-election-2018-eligibility-unmatched"
+    },
+    {
+      "subject_kind": "practice_candidate",
+      "subject_id": "0410-emep-election-2018-official-results-unmatched"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-eligibility-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-legislation-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-official-results-event"
+    },
+    {
+      "subject_kind": "practice_event",
+      "subject_id": "0410-emep-election-2018-support-event"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-eligibility-event|0410-emep-election-2018-eligibility-result|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-legislation-event|0410-emep-election-2018-law-effective|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-legislation-event|0410-emep-election-2018-law-ratification|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-official-results-event|0410-emep-election-2018-result-decree|action"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-official-results-event|0410-emep-election-2018-result-seats|result"
+    },
+    {
+      "subject_kind": "practice_event_evidence",
+      "subject_id": "0410-emep-election-2018-support-event|0410-emep-election-2018-support-report|action"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-emep-election-2018-legislation-relation"
+    },
+    {
+      "subject_kind": "practice_relation",
+      "subject_id": "0410-emep-election-2018-support-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-emep-election-2018-legislation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.explanation_finding_id",
+      "subject_id": "0410-emep-election-2018-support-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-emep-election-2018-legislation-relation"
+    },
+    {
+      "subject_kind": "practice_relation.target_finding_id",
+      "subject_id": "0410-emep-election-2018-support-relation"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-emep-election-2018-alliances-statement"
+    },
+    {
+      "subject_kind": "practice_statement",
+      "subject_id": "0410-emep-election-2018-law-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-emep-election-2018-alliances-statement"
+    },
+    {
+      "subject_kind": "practice_statement.quote_finding_id",
+      "subject_id": "0410-emep-election-2018-law-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-emep-election-2018-alliances-statement"
+    },
+    {
+      "subject_kind": "practice_statement.summary_finding_id",
+      "subject_id": "0410-emep-election-2018-law-statement"
     }
   ]
 }
