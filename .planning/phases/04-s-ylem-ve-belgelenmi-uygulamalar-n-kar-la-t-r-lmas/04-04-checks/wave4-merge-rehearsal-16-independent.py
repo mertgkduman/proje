@@ -11,7 +11,7 @@ import sqlite3
 checks = Path(__file__).resolve().parent
 job = argv[1]
 number = argv[2] if len(argv) == 3 else "16"
-assert number in {"16", "17", "18", "19", "20"}
+assert number in {"16", "17", "18", "19", "20", "21"}
 prefix = "UNION_REHEARSAL_PREVIEW_OK "
 log = checks / f"wave4-merge-rehearsal-{number}-{job}-slurm.log"
 frozen = json.loads((checks / f"wave4-merge-rehearsal-{number}.json").read_bytes())
@@ -45,12 +45,15 @@ bakirkoy_key = "bakirkoy-2019-12-08-insanca-yasamak-istiyoruz"
 presentation_key = "six-party-2022-11-28-constitutional-proposal-presentation"
 meeting_key = "six-leaders-2022-11-28-dp-meeting"
 november_keys = {presentation_key, meeting_key}
-expanded_keys = {bakirkoy_key, *november_keys} if number in {"19", "20"} else set()
+expanded_keys = {bakirkoy_key, *november_keys} if number in {"19", "20", "21"} else set()
 idlib_key = "idlib-2020-03-05-moskova-ek-protokol"
-if number == "20":
+withdrawal_key = "cumhurbaskanligi-2021-03-19-3718"
+if number in {"20", "21"}:
     expanded_keys.add(idlib_key)
-assert receipt["source_permissions"] == {"19": 669, "20": 677}.get(number, 655)
-expected_added = {"16": {joint_key}, "20": {idlib_key}}.get(number, expanded_keys)
+if number == "21":
+    expanded_keys.add(withdrawal_key)
+assert receipt["source_permissions"] == {"19": 669, "20": 677, "21": 686}.get(number, 655)
+expected_added = {"16": {joint_key}, "20": {idlib_key}, "21": {withdrawal_key}}.get(number, expanded_keys)
 assert set(frozen["added_reviewed_candidates"]) == expected_added
 halic_key = "halic-emek-ozgurluk-2022-09-24"
 yok_key = "yok-2023-03-30-bahar-yuzyuze-secenegi"
@@ -164,7 +167,8 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
             ).fetchall()
             assert len(filled) == 1
             event_id, date = filled[0]
-            assert date == {bakirkoy_key: "2019-12-08", idlib_key: "2020-03-05"}.get(key, "2022-11-28")
+            expected_date = {bakirkoy_key: "2019-12-08", idlib_key: "2020-03-05", withdrawal_key: "2021-03-19"}
+            assert date == expected_date.get(key, "2022-11-28")
             count = db.execute(
                 "SELECT COUNT(*) FROM practice_event_alias WHERE decision_id=? AND canonical_event_id=?",
                 (key, event_id),
@@ -204,6 +208,36 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
                     (party, "041fbaf925821e6ca8b9397167017e5bcd5dd3da695159daec66ed0ef9aac92d", 1, "Done in Moscow on 5 March, 2020")
                     for party in ("tip", "emep")
                 }
+            elif key == withdrawal_key:
+                assert actual_relations == {
+                    ("0405-tip-istanbul-sozlesmesi-withdrawal-relation", "tip"),
+                    ("0410-emep-istanbul-sozlesmesi-relation", "emep"),
+                }
+                assert actual_roles == {("emep", "objection")}
+                gazette = {
+                    "86a0854a2502d559264cb5250d06c2b18a8bd4c8f3c0f5f5e4aee39751413f31",
+                    "5e98f6f6ac6eae8b863315d9edf38cf58d6a9e664a7efa3b4c4c408f3a6a55a5",
+                }
+                by_source = db.execute(
+                    "SELECT DISTINCT d.party_id,v.sha256,p.pdf_page_index,p.exact FROM practice_event_evidence e "
+                    "JOIN passage p ON p.id=e.passage_id JOIN document_version v ON v.id=p.version_id "
+                    "JOIN document d ON d.id=v.document_id JOIN source_attribution a ON a.version_id=v.id "
+                    "WHERE e.event_id=? AND a.publisher='Resmî Gazete'", (event_id,),
+                )
+                gazette_rows = [tuple(row) for row in by_source]
+                assert {row[:3] for row in gazette_rows} == {
+                    (party, identity, 0) for party in ("tip", "emep") for identity in gazette
+                }
+                assert all({row[3] for row in gazette_rows if row[1] == identity and row[0] == "tip"}
+                           == {row[3] for row in gazette_rows if row[1] == identity and row[0] == "emep"}
+                           for identity in gazette)
+                court_relations = {relations[f"0405-tip-istanbul-sozlesmesi-court-{stage}-relation"]
+                                   for stage in ("first", "final")}
+                assert len(court_relations) == 2 and event_id not in court_relations
+                for case_id in court_relations:
+                    assert [tuple(row) for row in db.execute(
+                        "SELECT party_id,contribution_kind FROM practice_contribution WHERE event_id=?", (case_id,),
+                    )] == [("tip", "objection")]
             else:
                 suffix = "presentation" if key == presentation_key else "meeting"
                 assert actual_relations == {
@@ -226,7 +260,7 @@ for row in sorted(records["practice_candidate_revision"], key=lambda row: dateti
 assert candidates["0406-tasimali-101783-candidate"] == candidates["0405-tip-election-finland-2023-nato-vote-candidate"] == "unmatched"
 unmatched = sorted(key for key, state in candidates.items() if state == "unmatched")
 assert len(unmatched) == receipt["active_unmatched"]
-if number in {"19", "20"}:
+if number in {"19", "20", "21"}:
     assert candidates["0410-bakirkoy-2019-emep-unmatched"] == "unmatched"
     if number == "19":
         assert len(unmatched) == 212
@@ -256,8 +290,8 @@ new_relations = {
     "0405-tip-2018-institution-member-relation": ("6 Ekim", "10 Ekim", "24 Haziran", "HDP"),
     "0405-tip-2018-institution-meeting-relation": ("21 Ekim", "26 Ekim", "4 Aralık", "Gazi Cemevi"),
     "0405-tip-2018-institution-elig-relation": ("2 Ocak", "13 parti", "TİP"),
-} if number in {"17", "18", "19", "20"} else {}
-if number in {"18", "19", "20"}:
+} if number in {"17", "18", "19", "20", "21"} else {}
+if number in {"18", "19", "20", "21"}:
     new_relations.update({
         "0405-tip-2019-local-eligibility-labor-damal-relation": ("Damal", "75 oy", "bağımsız"),
         "0405-tip-2019-local-eligibility-labor-elig21-relation": ("26 Ocak", "2021/22"),
@@ -281,7 +315,7 @@ if number in {"18", "19", "20"}:
     assert commission["id"] not in relations.values()
     vote = events["0406-2026-3961-vote"]
     assert vote["event_at"] == "2026-11-05" and "2/3961" in vote["scope_context"]
-if number in {"19", "20"}:
+if number in {"19", "20", "21"}:
     new_relations.update({
         "0405-tip-bakirkoy-2019-relation": ("8 Aralık", "Bakırköy", "Halk Pazarı"),
         "0411-saadet-nov-2022-presentation-relation": ("14 Kasım", "28 Kasım", "Bilkent"),
@@ -289,10 +323,15 @@ if number in {"19", "20"}:
         "0412-six-leaders-2022-11-28-presentation-relation": ("14 Kasım", "28 Kasım", "Bilkent"),
         "0412-six-leaders-2022-11-28-meeting-relation": ("14 Kasım", "28 Kasım", "Demokrat Parti"),
     })
-if number == "20":
+if number in {"20", "21"}:
     new_relations.update({
         "0405-tip-2020-policy-idlib-relation": ("3 Şubat", "5 Mart", "S/2020/187"),
         "0410-idlib-2020-relation": ("28 Şubat", "5 Mart", "15 Mart"),
+    })
+if number == "21":
+    new_relations.update({
+        "0405-tip-istanbul-sozlesmesi-withdrawal-relation": ("3718", "20 Mart", "3928", "1 Temmuz"),
+        "0410-emep-istanbul-sozlesmesi-relation": ("3718", "20 Mart", "1 Temmuz"),
     })
 assert set(new_relations) <= set(relations)
 for relation, phrases in {
