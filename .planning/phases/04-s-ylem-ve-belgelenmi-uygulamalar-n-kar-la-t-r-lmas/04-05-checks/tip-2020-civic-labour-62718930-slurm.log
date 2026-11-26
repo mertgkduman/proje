@@ -1,0 +1,7 @@
+Staged 608 original, readable and view paths; package 39a1bec163da1ef88163ee9ea196edb05c56670f54d1f3206657132289c24473; review 614e5fff7d1568c1895a0329cf03b26c0151d72d06c2eb561ab44dec64d70209
+Traceback (most recent call last):
+  File "/work/mg551/gsd-phase04-recovery.L0IReu/run-audit.py", line 17, in <module>
+    exec(compile(source, str(path), "exec"), {"__name__": "__main__", "__file__": str(path)})
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/tip-2020-civic-labour-validation.py", line 65, in <module>
+    assert all(word.casefold() in card for word in words), (anchor, words)
+AssertionError: ('party-unmatched-0405-tip-2020-civic-tempo-report-candidate', ('21 Eylül', '19 işçi', 'ödemesi'))
