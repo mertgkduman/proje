@@ -6,7 +6,7 @@
 
 **Status:** Kullanıcı tarafından onaylandı — 2026-11-09.
 **Milestone:** v1.0 — Kaynak temelli ilk araştırma arşivi ve rapor.
-**Yapı.** Bütün aşamalar kullanıcı seçimiyle `mvp` modunda. Gereksinimler onaylandı. Faz 1–3 tamamlandı. Faz 4’ün daraltılmış ilk tesliminde dört etkin planın üçü tamamlandı.
+**Yapı.** Bütün aşamalar kullanıcı seçimiyle `mvp` modunda. Gereksinimler onaylandı. Faz 1–3 ve Faz 4’ün daraltılmış ilk teslimi tamamlandı.
 **Coverage:** 35/35 v1 gereksinimi tam olarak birer aşamaya atanmıştır. Eşleme, gereksinimlerin tamamlandığı anlamına gelmez.
 
 ## Phases
@@ -16,7 +16,7 @@
 - [x] **Phase 1: Kapsam, yöntem ve kaynaklı pilot rapor** - Okur, kapsamı ve araştırma yöntemini görebilir; seçilen bir partinin beş başlıklı pilot dosyasını ortak kayıttan HTML raporuna ve arşiv belgelerine kadar izleyebilir. (completed 2026-11-10)
 - [x] **Phase 2: Bütün partiler için dosyalar ve sürümlü kaynaklar** - Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir. (completed 2026-11-11)
 - [x] **Phase 3: Tüzük ve programların karşılaştırılması** - Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir. (completed 2026-11-16)
-- [ ] **Phase 4: Söylem ve belgelenmiş uygulamaların karşılaştırılması** - Okur, ilan edilen ilke ve vaatlerin belgelenmiş uygulamalarla ilişkisini ortak yöntem ve olay bağlamı içinde değerlendirebilir.
+- [x] **Phase 4: Söylem ve belgelenmiş uygulamaların karşılaştırılması** - Okur, ilan edilen ilke ve vaatlerin belgelenmiş uygulamalarla ilişkisini ortak yöntem ve olay bağlamı içinde değerlendirebilir. (completed 2026-11-26)
 - [ ] **Phase 5: Finansman ve harcamaların belgelenmesi** - Okur, partilerin erişilebilen gelir ve harcama bilgilerini dönem ve kapsam farklarını anlayarak inceleyebilir.
 - [ ] **Phase 6: Güncellenebilir veri tabanı ve paylaşılabilir rapor** - Araştırmacı kaynak ve bulguları geçmişi korunarak güncelleyebilir; okur aynı kayıtlardan üretilen tam, erişilebilir ve paylaşılabilir HTML araştırma raporunu kullanabilir.
 
@@ -228,7 +228,7 @@ Plans:
 
 **İlk teslim kapsamı:** Dokuz partinin incelenen kayıtları, ortak kaynak ölçütleri, iki okuyucu görünümü ve yerel arşiv. 26 Kasım 2026 tarihli kullanıcı kararıyla açık araştırma hücreleri ve genişletme işleri devam için kayda alındı. Veri paketi tam tarama için `partial` durumunu taşımaya devam eder.
 
-**Plans:** 3/4 plans executed
+**Plans:** 4/4 plans complete
 
 Plans:
 **Wave 1**
@@ -245,9 +245,9 @@ Plans:
 
 **Wave 4**
 
-- [ ] 04-16-PLAN.md — Dokuz partinin incelenmiş kayıtlarından ilk teslim, kaynak ve tarayıcı doğrulaması
+- [x] 04-16-PLAN.md — Dokuz partinin incelenmiş kayıtlarından ilk teslim, kaynak ve tarayıcı doğrulaması
 
-Eski 04-04–15’in kalan işleri ve kaynak kayıtları faz dizinindeki planlarında korunur. İlk teslim 04-16’da tanımlanır.
+Eski 04-04–15’in kalan işleri ve kaynak kayıtları faz dizinindeki planlarında korunur. [İlk teslim arşivi ve okuyucu örnekleri](phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-16-SUMMARY.md).
 
 **Cross-cutting constraints:**
 
@@ -306,9 +306,9 @@ Eski 04-04–15’in kalan işleri ve kaynak kayıtları faz dizinindeki planlar
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
 | 3. Tüzük ve programların karşılaştırılması | 16/16 | Complete    | 2026-11-16 |
-| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 3/4 | İlk teslim doğrulanıyor |  |
+| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 4/4 | Complete    | 2026-11-26 |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
 ---
-*26 Kasım 2026 güncellemesi. Faz 4 yürütülüyor. Faz 3 teknik doğrulaması 14/14 ve kullanıcı kabulü 6/6.*
+*26 Kasım 2026 güncellemesi. Faz 4’ün dokuz partilik ilk teslimi doğrulandı ve tamamlandı.*

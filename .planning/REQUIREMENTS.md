@@ -34,8 +34,8 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 ### Söylem, uygulama ve mali bilgiler
 
-- [ ] **UYG-01**: Okur, açıklanan ilke veya vaadi, buna ilişkin belgelenmiş uygulama kaydıyla aynı konu altında karşılaştırabilir.
-- [ ] **UYG-02**: Okur, söylem–uygulama karşılaştırmasının aktörünü, tarihlerini, bağlamını ve belgelerin desteklediği benzerlik veya farklılığı görebilir.
+- [x] **UYG-01**: Okur, açıklanan ilke veya vaadi, buna ilişkin belgelenmiş uygulama kaydıyla aynı konu altında karşılaştırabilir.
+- [x] **UYG-02**: Okur, söylem–uygulama karşılaştırmasının aktörünü, tarihlerini, bağlamını ve belgelerin desteklediği benzerlik veya farklılığı görebilir.
 - [ ] **MAL-01**: Okur, erişilebilen belgelerde partinin finansman kaynaklarını ve açıklanan gelir tutarlarını görebilir.
 - [ ] **MAL-02**: Okur, erişilebilen belgelerde partinin harcama kalemlerini ve açıklanan harcama tutarlarını görebilir.
 - [ ] **MAL-03**: Okur, mali kaydın hesap dönemini, para birimini ve kapsadığı örgütsel düzeyi görebilir; farklı dönem ve kapsamlar eşdeğer gibi karşılaştırılmaz.
@@ -53,7 +53,7 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 - [x] **KAR-01**: Okur, partilerin tüzük düzenlemelerini aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
 - [x] **KAR-02**: Okur, partilerin programlarını aynı konular üzerinden, her hücrenin kanıtı veya eksik bilgi durumuyla karşılaştırabilir.
-- [ ] **KAR-03**: Okur, açıklanan ilkeler ile belgelenmiş uygulamaların karşılaştırmalarını bütün partilere uygulanan ortak ölçütlerle görebilir.
+- [x] **KAR-03**: Okur, açıklanan ilkeler ile belgelenmiş uygulamaların karşılaştırmalarını bütün partilere uygulanan ortak ölçütlerle görebilir.
 - [ ] **RAP-01**: Okur, parti bazlı ana sekmelerden ve Karşılaştırmalı Özet sekmesinden oluşan Türkçe HTML raporunu açabilir ve paylaşabilir; her parti altında ortak araştırma başlıklarını, ilgili sekmenin altında kaynakları ve metin içinde kaynak kaydına bağlantıları görebilir. Eksik bilgi durumu ve gerekçesi ilgili araştırma başlığında gösterilir.
 - [x] **RAP-02**: Okur, rapordaki bulgulardan ve karşılaştırma hücrelerinden ilgili kaynak kaydına ve erişilebilen arşiv belgesine ulaşabilir.
 - [ ] **RAP-03**: Okur, rapor sekmelerini klavyeyle kullanabilir ve dar ekranda içerik kaybı olmadan okuyabilir.
@@ -127,8 +127,8 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 | KAY-02 | Phase 1 | Complete |
 | KAY-03 | Phase 1 | Complete |
 | KAY-04 | Phase 2 | Complete |
-| UYG-01 | Phase 4 | Pending |
-| UYG-02 | Phase 4 | Pending |
+| UYG-01 | Phase 4 | Complete |
+| UYG-02 | Phase 4 | Complete |
 | MAL-01 | Phase 5 | Pending |
 | MAL-02 | Phase 5 | Pending |
 | MAL-03 | Phase 5 | Pending |
@@ -140,7 +140,7 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 | EKS-02 | Phase 1 | Complete |
 | KAR-01 | Phase 3 | Complete |
 | KAR-02 | Phase 3 | Complete |
-| KAR-03 | Phase 4 | Pending |
+| KAR-03 | Phase 4 | Complete |
 | RAP-01 | Phase 6 | Pending |
 | RAP-02 | Phase 3 | Complete |
 | RAP-03 | Phase 6 | Pending |

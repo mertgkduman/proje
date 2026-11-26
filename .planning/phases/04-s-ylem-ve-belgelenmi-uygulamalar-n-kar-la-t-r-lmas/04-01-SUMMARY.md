@@ -65,18 +65,18 @@ Mevcut arşivdeki Çeşme ön seçimi, ayrı dönemsel söylem ve oluş kanıtı
 | `7d9ba91` | Önceden eski kalmış karşılaştırma stil testini tarihsel üreticileri ayrıca koruyacak şekilde düzeltme. |
 | `d34dcd5` | Doğrulanmış yerel tracer sürümü, incelemeler ve son koruma düzeltmeleri. |
 
-Tracer geri bildirim kapısı, ilk GREEN commit'inden sonra `python3 tests/run.py --pattern test_practice_tracer.py` ile yeniden çalıştırıldı ve geçti. Son sürüm üzerinde testler tekrarlandı.
+Tracer geri bildirim kapısı, ilk GREEN commit'inden sonra <code>python3 tests/run.py --pattern test_practice_tracer.py</code> ile yeniden çalıştırıldı ve geçti. Son sürüm üzerinde testler tekrarlandı.
 
 ## Doğrulama
 
-- `python3 src/arsiv.py practice-check --input data/practices/04-tracer.json` — exit 0, `PRACTICE_INPUT_OK`.
+- <code>python3 src/arsiv.py practice-check --input data/practices/04-tracer.json</code> — exit 0, `PRACTICE_INPUT_OK`.
 - `python3 src/arsiv.py audit --release current --phase 4 --stage tracer` — exit 0, `PHASE4_AUDIT_OK 53b24e6740104cb5be5d3419491bd735`.
 - `python3 src/arsiv.py audit --release current --phase 2` — exit 0, `PHASE2_AUDIT_OK` aynı sürüm.
 - `python3 src/arsiv.py audit --release current --phase 3 --stage complete` — exit 0, `PHASE3_AUDIT_OK` aynı sürüm.
-- `python3 tests/run.py --pattern test_practice_tracer.py` — 3/3, `TESTS_OK`; gerçek arşivden DB→JSON→iki HTML görünümü, yanlış pasaj/parti ve eksik incelemede rollback, açık kaynak-parti kapsamı ve XSS sınırı.
-- `python3 tests/run.py --pattern test_practice_legacy.py` — 6/6, `TESTS_OK`; migration rollback, marker/manifest kaybı, tüm practice tablolarının kaldırılması, policy 2, Faz 2 öneki, Faz 3 seçimi, şema 6 export ve renderer 24 byte eşitliği.
-- `python3 tests/run.py --pattern test_matches.py` — 7/7, `TESTS_OK`.
-- `python3 tests/run.py --pattern test_comparisons.py` — düzeltilmiş tam koşu 10/10, `TESTS_OK`. İlk koşu, aşağıdaki tarihsel stil testi nedeniyle 9/10 idi.
+- <code>python3 tests/run.py --pattern test_practice_tracer.py</code> — 3/3, `TESTS_OK`; gerçek arşivden DB→JSON→iki HTML görünümü, yanlış pasaj/parti ve eksik incelemede rollback, açık kaynak-parti kapsamı ve XSS sınırı.
+- <code>python3 tests/run.py --pattern test_practice_legacy.py</code> — 6/6, `TESTS_OK`; migration rollback, marker/manifest kaybı, tüm practice tablolarının kaldırılması, policy 2, Faz 2 öneki, Faz 3 seçimi, şema 6 export ve renderer 24 byte eşitliği.
+- <code>python3 tests/run.py --pattern test_matches.py</code> — 7/7, `TESTS_OK`.
+- <code>python3 tests/run.py --pattern test_comparisons.py</code> — düzeltilmiş tam koşu 10/10, `TESTS_OK`. İlk koşu, aşağıdaki tarihsel stil testi nedeniyle 9/10 idi.
 
 ## Hash ve tarihsel koruma
 

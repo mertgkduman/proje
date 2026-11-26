@@ -1,20 +1,21 @@
 ---
 gsd_state_version: "1.0"
 milestone: v1.0
-current_phase: 04
-current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
-current_plan: 4
-status: executing
-stopped_at: Onaylanan ilk teslimde dokuz parti korunuyor. Birleşik rapor için 62742674 çalışıyor.
-last_updated: "2026-11-26T20:55:14+00:00"
+current_phase: 5
+current_phase_name: Finansman ve harcamaların belgelenmesi
+current_plan: Not started
+status: planning
+stopped_at: Phase 4 complete, ready to plan Phase 5
+last_updated: "2026-11-26T21:35:12.176Z"
 last_activity: 2026-11-26
-last_activity_desc: Onaylanan ilk teslimde dokuz parti korunuyor. Birleşik rapor için 62742674 çalışıyor.
-state_head: ad1e703536efc4be0449ea4034e2f0bffefadfeb
+last_activity_desc: Phase 4 complete, transitioned to Phase 5
+state_head: 640e72cc3bb80ec66438deb8116a3c43a5330dd8
 progress:
   total_phases: 6
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 36
-  completed_plans: 35
+  completed_plans: 36
+  percent: 67
 ---
 
 # Project State
@@ -24,18 +25,20 @@ progress:
 See: .planning/PROJECT.md (updated 2026-11-16)
 
 **Core value:** Kaynağına kadar izlenebilen, karşılaştırılabilir ve eksiklerini açıkça gösteren siyasi parti bilgisine eşit erişim.
-**Current focus:** Phase 04 — Söylem ve belgelenmiş uygulamaların karşılaştırılması
+**Current focus:** Faz 5 — Finansman ve harcamaların belgelenmesi
 
 ## Current Position
 
-Current Plan: 4
-Total Plans in Phase: 4
-Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
-Plan: 4 of 4 (04-16)
-Status: Daraltılmış ilk teslim doğrulanıyor. 04-01–04-03 tamamlandı.
-Last activity: Onaylanan ilk teslimde dokuz parti korunuyor. Birleşik rapor için 62742674 çalışıyor.
+Current Plan: Not started
+Total Plans in Phase: TBD
+Phase: 5 — Finansman ve harcamaların belgelenmesi
+Plan: Henüz oluşturulmadı
+Status: Ready to plan
+Last activity: 2026-11-26 — Phase 4 complete, transitioned to Phase 5
 
-Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
+Progress: [███████░░░] 67% (4/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
+
+[Faz 4 ilk teslimi](phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-16-SUMMARY.md).
 
 Dalga 4 devam kaydı: [kaynak taraması ve doğrulama durumu](phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-reading-progress.md).
 
@@ -45,7 +48,7 @@ Bu dalganın yazılabilir çalışma kopyası `/work/mg551/gsd-phase04-checkout.
 
 **Velocity:**
 
-- Total plans completed: 35 (Faz 1–3 tamamlandı; Faz 4 üç plan)
+- Total plans completed: 36 (Faz 1–3 ve Faz 4 ilk teslimi)
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
 - Total execution time: Faz 1 altı, Faz 2 on ve Faz 3 on altı plan ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
@@ -56,11 +59,12 @@ Bu dalganın yazılabilir çalışma kopyası `/work/mg551/gsd-phase04-checkout.
 | 1 | 6 | - | - |
 | 02 | 10 | - | - |
 | 03 | 16 | - | - |
+| 4 | 4 | - | - |
 
 **Recent Trend:**
 
 - Last 5 plans: 03-12, 03-13, 03-14, 03-15, 03-16
-- Trend: Faz 1–3 tamamlandı. Faz 3 teknik 14/14 ve kullanıcı UAT 6/6; kabulün toplu niteliği kayıtlarda korunur. Faz 4’te 04-01–04-03 tamamlandı. 04-16 ilk teslim doğrulanıyor.
+- Trend: Faz 1–3 tamamlandı. Faz 3 teknik 14/14 ve kullanıcı UAT 6/6; kabulün toplu niteliği kayıtlarda korunur. Faz 4 ilk tesliminin 4/4 etkin planı tamamlandı. Faz 5’in planı henüz oluşturulmadı.
 
 **Per-Plan Metrics:**
 
@@ -198,5 +202,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-26T19:40:51+00:00
-Stopped at: Dokuz kabul edilmiş paketin yapısal birleşimi doğrulandı. TİP’in eski amblemine ilişkin yeni AYM kaydı yeniden incelemeye alındı. Faz 4’te 3/15 plan tamamlandı. Kabul edilmiş paketlerin 5.488 kapsam hücresi açık.
+Stopped at: Phase 4 complete, ready to plan Phase 5
 Resume file: None
