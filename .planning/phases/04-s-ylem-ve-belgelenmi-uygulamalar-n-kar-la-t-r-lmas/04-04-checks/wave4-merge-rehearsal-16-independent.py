@@ -184,7 +184,7 @@ if number == "18":
     new_relations.update({
         "0405-tip-2019-local-eligibility-labor-damal-relation": ("Damal", "75 oy", "bağımsız"),
         "0405-tip-2019-local-eligibility-labor-elig21-relation": ("26 Ocak", "2021/22"),
-        "0405-tip-2019-local-eligibility-labor-elig22-relation": ("12 Ocak", "2022/13"),
+        "0405-tip-2019-local-eligibility-labor-elig22-relation": ("12 Ocak", "YSK/13", "20. sırada"),
         "0405-tip-2019-campaign-wage-relation": ("3.000 TL", "2.324,70 TL", "27 Aralık"),
         "0405-tip-2019-campaign-budget-relation": ("20 Aralık", "21 Aralık", "31 Aralık", "329 kabul", "159 ret"),
         "0405-tip-2019-campaign-eyt-relation": ("30 Ocak", "1 Mart", "3 Mart", "yaş dışındaki şartları"),
@@ -202,7 +202,8 @@ if number == "18":
     commission = events["0406-3961-commission-event"]
     assert commission["event_at"] == "2026-10-27"
     assert commission["id"] not in relations.values()
-    assert any(row["event_at"] == "2026-11-05" and "2/3961" in row["title"] for row in events.values())
+    vote = events["0406-2026-3961-vote"]
+    assert vote["event_at"] == "2026-11-05" and "2/3961" in vote["scope_context"]
 assert set(new_relations) <= set(relations)
 for relation, phrases in {
     "0405-tip-halic-cemevi-2022-halic-relation": ("25 Ağustos", "24 Eylül", "25 Eylül", "Erkan Baş"),
