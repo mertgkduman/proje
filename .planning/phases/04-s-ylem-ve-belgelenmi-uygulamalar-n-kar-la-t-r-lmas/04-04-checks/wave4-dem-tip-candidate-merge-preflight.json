@@ -1,0 +1,98 @@
+{
+  "revision": "d9cd241912caeca07b91c9152938d1863e67066e",
+  "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+  "inventory_digest": "05939c41f3780c137f69b66e7dea0811a9b8e2ecccc10c43efc55efb37c3f509",
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "stage": "partial",
+  "accepted_input": {
+    "yeni-parti": {
+      "package_sha256": "ab8fa08da4f799ea74f2a631710b18239c55f12cf3b68849a3a702b89fece4b4",
+      "review_sha256": "88eeab584a0db49ab445934916cfa767faf770aaa9453597bb82925b6e835372"
+    },
+    "dem": {
+      "package_sha256": "da836b07b4cb4ac61bcaefe6eaf744ce66c1effcdf714df1ea97ec946818c9df",
+      "review_sha256": "02db365953f11836672a19ef088ede88ac970d075cfbaa2f6dd835a5f1195891"
+    },
+    "iyi": {
+      "package_sha256": "79b4d1acce823b036fdf7b3276f218917ed4319c980f32040c698246101c7c01",
+      "review_sha256": "7bc5e354d030d4010135657013860f1ba4eeed1bb9ee399c4345f3f8462e5bb0"
+    },
+    "yeni-yol": {
+      "package_sha256": "07a7acdd87ff461abe7fd3f75f1e4e60ef4805c6cbdf2eab7f60756b703d9f6a",
+      "review_sha256": "1b89ab0381dad5fc48a00a603c5624ed34489205d60d6bde83a5c7f298c79115"
+    },
+    "tip": {
+      "package_sha256": "1ef36e74c2556b489d2a1501106de9d4c798aa23bbf19f18a2a020bd4af91b41",
+      "review_sha256": "dbe021a600cacecd7a2a3e72312940bf2bf104bc684a4d501e7c2362e59cf86e"
+    },
+    "dbp": {
+      "package_sha256": "607f99e57799c1a93201732588c59b03064a2b71ed339dc173ad4cdfdf15c2f1",
+      "review_sha256": "5e5f136dfbbbb5ab6fd14ff1f59c29d70a7e3ba9a5fbca24a007de939302e8b1"
+    },
+    "emep": {
+      "package_sha256": "c89f81a1a2b4cf0266d1293d952a9293cfd99fdb57555e719a7775caa65c2063",
+      "review_sha256": "e8af53ab729931da743d17d7eed2a4d7f8abd03700a983bad8e2568d2fb8d4cf"
+    },
+    "saadet": {
+      "package_sha256": "3cc21615f355aa00c3010b1a415f5126020fd27db895e2235e317d679c371f04",
+      "review_sha256": "a305484f46ec4bd7cae6eae1201e3bc509ba71c06c90e1d30192d81116a85e36"
+    },
+    "demokrat": {
+      "package_sha256": "83b02dd64c3791a8774cacfe788995c247a3263e4565e8fd913c74d2359ef736",
+      "review_sha256": "226698882d18a9a29565b44ff7c2c37749666e22c4cbf1c2a543117b6ad1059c"
+    }
+  },
+  "isolated_input_sha256": {
+    "yeni-parti": "652a65b697b703195df48b1b0ee7193cfa77791f3fdf68ad575609a71bf2f7a3",
+    "dem": "3132b1042f0a2160db95ec7afabaf1eacdfe3ef666b417fd81686b7b7b60ad08",
+    "iyi": "84a06fd69b5b853f7957d63b6646f69d15456b5fe002120b9429ff17545ad5af",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "tip": "dd12d7d30186ac37d46210d64b14875789dbcf682f7cc8b923aae6a26d854202",
+    "dbp": "860bfb656c97319c53ec6a337455ff573023f461ef093de2c1c2a962d0370f38",
+    "emep": "f796faaf907c9705b45ead2910276ff28b65cea03f23169f03d15a4dc6254ac9",
+    "saadet": "e8ceb924ae6c4fee1de2db093bae7b1ec1872f4a72e6f6b3babc0360244f62cf",
+    "demokrat": "418ab522df6afa79983bf78cc93430919dbb5c649a513fad06188fe3139fe79e"
+  },
+  "candidate_overrides": {
+    "tip": {
+      "package_sha256": "d5026d2b8f18e71cd69e6c0f7dc8097b68763e021eaec675c45f76715696965b",
+      "review_sha256": "f11533be3fd239bb08cadb87c0c335dc9e209e29ef3d31be3e987889a2100090"
+    },
+    "dem": {
+      "package_sha256": "c98496c3cb2918a72bcca12a3888e351f3bc588cac88805703cb49250751edeb",
+      "review_sha256": "0ea6c608f181391e4ad89e7a56579b226037dfff008df2559a710e7f309e8458"
+    }
+  },
+  "historical_closures": {
+    "0404-yeni-kimlik-2026-statement-closure": "practice-efcecaa0915230b240585109772983b0737267707db445251fcf30f32b119020",
+    "0405-tip-kimlik-statement-closure": "practice-e00240839beaaacc91a9340774a6be85c89a9836d5774cf77031fc15aa8d76dc"
+  },
+  "reopens": [
+    {
+      "closure_id": "0405-tip-kimlik-statement-closure",
+      "id": "0405-tip-2018-ad-karari-statement-reopen",
+      "lead_id": "0405-tip-2018-ad-karari-statement-reading-lead",
+      "opened_at": "2026-11-26T19:39:04.793647+00:00",
+      "reason": "11 Ocak 2018 cevabı, erişilen Ekim 2018 tüzük nüshasından önce amblem değişikliğine ilişkin yeni belge ve araştırma ucu gösteriyor."
+    }
+  ],
+  "decisions_sha256": "fb3d4d41c99b78b1ce0b62efa76d9ae7b4147fe6e25871d438e60d0c832e07cb",
+  "decision_counts": {
+    "same": 22,
+    "unresolved": 13
+  },
+  "output_sha256": "87953d35f4f8338eebddeff7bd645003cdd5d3fb27703640eeed8837fee3ad31",
+  "forward_reverse_equal": true,
+  "practice_event": 625,
+  "practice_relation": 428,
+  "closures": [
+    "practice-efcecaa0915230b240585109772983b0737267707db445251fcf30f32b119020"
+  ],
+  "coverage": {
+    "not_researched": 5134,
+    "open": 355,
+    "closed": 1
+  },
+  "review_origins": 6449,
+  "publication_status": "DEM ve TİP adaylarının yapısal birleşim provası. Parti arşivleri için kaynak ve iki HTML görünümü denetimleri bekliyor. Kabul edilmiş dokuz paketin önizlemesinden ayrı."
+}

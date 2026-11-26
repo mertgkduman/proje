@@ -944,3 +944,19 @@ imzacı söyleşisini ve 10 Ekim TBMM konuşmasını karşılaştırıyor. Çağ
 eşlik eden görseller ayrı okundu. 2017 kuruluş tüzüğündeki ve 11 Ocak
 cevabına eklenen amblemlerin özgün nüshaları açık. Kuyruktaki AYM adayı
 aynı girdi özetiyle doğrulama bekliyor.
+
+## EMEP maden ve bütçe kaynakları ile DEM ve TİP aday provası
+
+EMEP’te tam gövde okuması doğrulanan yayın sayısı 2.637, kalan sayı 633.
+[Altı API gövdesi ve yedi resmî belge](../04-10-checks/party-api-2017-november-mining-and-budget-reading.json)
+Zonguldak maden ruhsatlarında tasarı, değişiklik önergesi, kanun ve 2019
+değişikliğini ayırıyor. Bütçe tasarısı, 7066 sayılı kanun ve 7198 sayılı
+kesin hesap ayrı kaynaklara bağlı. Saha düzeyindeki ihale, sözleşme ve
+proje düzeyindeki garanti ödemeleri açık.
+
+DEM ve TİP adaylarını yedi kabul edilmiş parti paketiyle yapısal olarak
+birleştiren [prova](wave4-dem-tip-candidate-merge-preflight.json), 625 olay ve
+428 ilişki üretti. İki girdi sırası aynı çıktıyı verdi. TİP’in önceki kapanışı
+tarihçede ve ona bağlı yeniden açılış kaydı korunuyor. Bu prova 1 etkin
+kapanış ve 5.489 açık hücre gösteriyor. Yayıma hazır dokuz paket denetimi,
+DEM ve TİP kaynak ve HTML doğrulamasına bağlı.
