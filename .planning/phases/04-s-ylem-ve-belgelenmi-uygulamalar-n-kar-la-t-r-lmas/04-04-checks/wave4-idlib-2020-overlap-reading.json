@@ -1,0 +1,64 @@
+[
+  {
+    "candidate_key": "idlib-2020-03-05-moskova-ek-protokol",
+    "differing_fields": [],
+    "canonical_event_id": "0405-tip-2020-policy-idlib-event",
+    "decision": "same",
+    "common_source_sha256": [
+      "041fbaf925821e6ca8b9397167017e5bcd5dd3da695159daec66ed0ef9aac92d"
+    ],
+    "overlap_reason": "Her iki aday 5 Mart 2020 Moskova imzası için BM S/2020/187’nin aynı özgün PDF indeks 1 sayfasına ve aynı cümleye dayanıyor. TİP ve EMEP’in önceki çekilme ve diplomasi çağrılarının kapsamı kendi karşılaştırmalarında korunuyor.",
+    "reviewer_kind": "agent",
+    "reviewed_at": "2026-11-26T05:05:14.322927+00:00",
+    "members": {
+      "tip": {
+        "event": {
+          "id": "0405-tip-2020-policy-idlib-event",
+          "common_event_key": "idlib-2020-03-05-moskova-ek-protokol",
+          "event_at": "2020-03-05",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Türkiye ve Rusya’nın İdlib ek protokolü",
+          "scope_context": "5 Mart 2020’de Moskova’da Türkiye ve Rusya’nın İdlib Gerginliği Azaltma Bölgesi için imzaladığı ek protokol.",
+          "occurrence_basis": "Türkiye ve Rusya temsilcilerinin 6 Mart tarihli S/2020/187 ortak iletimi ve ekindeki protokol."
+        },
+        "passages": [
+          {
+            "passage_id": "0405-tip-2020-policy-idlib-signature",
+            "sha256": "041fbaf925821e6ca8b9397167017e5bcd5dd3da695159daec66ed0ef9aac92d",
+            "source": "https://peacemaker.un.org/sites/default/files/document/files/2024/05/additional20protocol20to20the20memorandum20on20the20stabilization20of20the20situation20in20the20idli.pdf",
+            "section": "S/2020/187 eki, 5 Mart Moskova imzası.",
+            "exact": "Done in Moscow on 5 March, 2020",
+            "pdf_page_index": 1,
+            "printed_page": "2",
+            "claim": "S/2020/187 eki, 5 Mart Moskova imzası."
+          }
+        ]
+      },
+      "emep": {
+        "event": {
+          "id": "0410-idlib-2020-event",
+          "common_event_key": "idlib-2020-03-05-moskova-ek-protokol",
+          "event_at": "2020-03-05",
+          "date_precision": "day",
+          "date_unknown_reason": null,
+          "title": "Türkiye ve Rusya’nın İdlib ek protokolü",
+          "scope_context": "5 Mart 2020’de Moskova’da Türkiye ve Rusya’nın İdlib Gerginliği Azaltma Bölgesi için imzaladığı ek protokol.",
+          "occurrence_basis": "Türkiye ve Rusya temsilcilerinin 6 Mart tarihli S/2020/187 ortak iletimi ve ekindeki protokol."
+        },
+        "passages": [
+          {
+            "passage_id": "0410-idlib-2020-bm-signature",
+            "sha256": "041fbaf925821e6ca8b9397167017e5bcd5dd3da695159daec66ed0ef9aac92d",
+            "source": "https://documents.un.org/doc/undoc/gen/n20/060/26/pdf/n2006026.pdf",
+            "section": "S/2020/187 eki, 5 Mart Moskova imzası.",
+            "exact": "Done in Moscow on 5 March, 2020",
+            "pdf_page_index": 1,
+            "printed_page": "2",
+            "claim": "S/2020/187 eki, 5 Mart Moskova imzası."
+          }
+        ]
+      }
+    }
+  }
+]
