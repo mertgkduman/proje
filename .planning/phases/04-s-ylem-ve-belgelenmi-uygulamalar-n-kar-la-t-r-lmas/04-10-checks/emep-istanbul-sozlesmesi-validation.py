@@ -23,8 +23,14 @@ emep = json.loads(package.read_bytes())
 records = emep["practice_records"]
 assert [len(records[key]) for key in ("practice_event", "practice_relation", "practice_closure")] == [88, 82, 0]
 tip_path = checks.parent / "04-05-checks" / "tip-istanbul-sozlesmesi-draft.json"
-assert harness.sha(tip_path) == "3b73079fae9ca4349f6513abdf9831d29d7739e7349d03f06f95eca5d033dd7a"
+assert harness.sha(tip_path) == "ea387982aa36335f24dd001e020065a699b843526039dcbcb6bf9a6420e06893"
 tip = json.loads(tip_path.read_bytes())
+event = next(row for row in records["practice_event"] if row["id"] == f"{prefix}-event")
+tip_event = next(row for row in tip["practice_records"]["practice_event"]
+                 if row["id"] == f"{tip_prefix}-withdrawal-event")
+assert {key: value for key, value in event.items() if key != "id"} == {
+    key: value for key, value in tip_event.items() if key != "id"
+}
 
 def get_entry(package, kind, identity):
     return next(entry["values"] for entry in package["entries"]

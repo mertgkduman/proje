@@ -201,7 +201,7 @@ cases = (
     dict(key="withdrawal", day="2021-03-19", common="cumhurbaskanligi-2021-03-19-3718",
          title="İstanbul Sözleşmesi için 3718 sayılı fesih kararı",
          context="Cumhurbaşkanı 19 Mart 2021’de İstanbul Sözleşmesi’nin Türkiye bakımından feshedilmesine karar verdi.",
-         occurrence="Resmî Gazete’nin 31429 sayısındaki 3718 kararı ve Danıştay’ın dava konusu tespiti.",
+         occurrence="Resmî Gazete’nin 31429 sayısındaki 3718 kararı ve 31470 sayısındaki 3928 kararı.",
          outcome="3718 sayılı fesih kararı 20 Mart’ta yayımlandı. 3928 sayılı karar, sözleşmenin Türkiye bakımından sona erme tarihini 1 Temmuz 2021 olarak tespit etti.",
          comparison="TİP Kadın Koordinasyonu sözleşmenin korunmasını savundu. Araştırılan dönemde Cumhurbaşkanının fesih kararı ve 1 Temmuz için sona erme kararı kayda geçti.",
          authority="Kararları Cumhurbaşkanı verdi. TİP’in daha sonraki davacı rolü yargı kayıtlarında ayrıca gösteriliyor.",
