@@ -92,5 +92,15 @@ for key, phrases in {
         card = html.split(marker,1)[1].split('</article>',1)[0].casefold()
         assert all(phrase.casefold() in card for phrase in phrases), (anchor, phrases)
         if key == 'tatlioglu':
-            assert f'href="#source-{prefix}-research-10-970-detail"' in card, anchor
+            registry_ids = ('date', 'status')
+            filing_ids = ('file', 'purpose')
+            by_id = {row['id']: row for row in export['passage']}
+            for ids, version in ((registry_ids, 'detail'), (filing_ids, 'filing')):
+                expected_version = f'{prefix}-research-10-970-{version}-v1'
+                assert sum(row['id'] == expected_version for row in export['document_version']) == 1
+                for suffix in ids:
+                    pid = f'{prefix}-tatlioglu-{suffix}'
+                    assert by_id[pid]['version_id'] == expected_version, (anchor, pid)
+                    assert f'href="#source-{pid}"' in card, (anchor, pid)
+                    assert html.count(f'id="source-{pid}"') == 1, pid
 print('IYI_AIRPORT_BOTH_VIEWS_OK',folder,flush=True)
