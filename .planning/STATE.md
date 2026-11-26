@@ -196,5 +196,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-26T08:13:48.614828+00:00
-Stopped at: TİP İstanbul Sözleşmesi 62721069 ile 78/60 ve Saadet 7/35779 resmî HTML nüshaları 62258890 ile 41/37 bağımsız denetlendi. 20. birleşik prova 62719939 ile doğrulandı. 21. provanın doğrulanmış girdileri donduruldu. İki sıra 602 olay, 422 ilişki ve 226 açık aday verdi. Okuyucu denetimi 62722842 işine gönderildi. EMEP DİSK ve Adana adayı 62722031 üzerinde denetleniyor. EMEP API tam okuması 2.534/3.270. Kapsam kapanışı sıfır.
+Stopped at: TİP İstanbul Sözleşmesi 62721069 ile 78/60 ve Saadet 7/35779 resmî HTML nüshaları 62258890 ile 41/37 bağımsız denetlendi. 20. birleşik prova 62719939 ile doğrulandı. 21. provanın doğrulanmış girdileri donduruldu. İki sıra 602 olay, 422 ilişki ve 226 açık aday verdi. Okuyucu denetimi 62722842 işine gönderildi. EMEP DİSK ve Adana adayı 62722031 üzerinde denetleniyor. EMEP API tam okuması 2.542/3.270. İYİ Parti havalimanı adayı 62722986 kuyruğunda. 21. prova mevcut 62258890 tahsisinde de çalışıyor. Kapsam kapanışı sıfır.
 Resume file: None
