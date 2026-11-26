@@ -935,3 +935,12 @@ doğrulandı ve 639 gövde açık. [On iki Aralık 2017 gövdesi](../04-10-check
 61.151 karakteri kapsıyor. Kudüs açıklamasının üç dildeki yayınları birbiriyle,
 Bostancı duyurusu parti ve basındaki etkinlik haberleriyle ilişkilendirildi.
 İnsan Hakları Evrensel Bildirisi’nin kabul yılı BM kaydıyla karşılaştırıldı.
+
+## TİP’in 2018 çağrısı ve görsel kaynakları
+
+[Çağrı ve amblem kaynak okuması](../04-05-checks/tip-2018-public-call-and-emblem-reading.json)
+parti sitesindeki 13 Şubat tarihini, 23 Mart basın aktarımını, 28 Mart
+imzacı söyleşisini ve 10 Ekim TBMM konuşmasını karşılaştırıyor. Çağrıya
+eşlik eden görseller ayrı okundu. 2017 kuruluş tüzüğündeki ve 11 Ocak
+cevabına eklenen amblemlerin özgün nüshaları açık. Kuyruktaki AYM adayı
+aynı girdi özetiyle doğrulama bekliyor.
