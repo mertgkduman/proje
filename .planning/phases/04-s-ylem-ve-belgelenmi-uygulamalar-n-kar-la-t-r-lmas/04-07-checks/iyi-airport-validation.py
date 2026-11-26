@@ -25,29 +25,39 @@ packages = json.loads(package.read_bytes())['practice_records']
 case = 'iyi-airport'
 prefix = '0407-iyi-airport'
 
-with tempfile.TemporaryDirectory(prefix='gsd-0407-airport-base-', dir=candidate) as directory:
-    stage = Path(directory)
-    shutil.copytree(root / 'src', stage / 'src', ignore=harness.ignore)
-    shutil.copytree(root / 'data', stage / 'data', ignore=harness.ignore)
-    source_root = stage / 'data/practices/sources/iyi'
-    for path in (candidate / 'sources').rglob('*'):
-        if path.is_file():
-            target = source_root / path.relative_to(candidate / 'sources')
-            target.parent.mkdir(parents=True, exist_ok=True)
-            if target.exists():
-                assert harness.sha(path) == harness.sha(target)
-            else:
-                shutil.copyfile(path, target)
-    harness.ROOT, harness.DATA = stage, stage / 'data'
-    harness.INVENTORY, harness.SOURCE = harness.DATA / 'practices/04-inventory.json', source_root
-    os.environ['GIT_DIR'] = str(root / '.git')
-    os.environ['GIT_WORK_TREE'] = str(stage)
-    assert harness.canonical_identity() == before
-    receipt = harness.main(package, review, case, f'{prefix}-beyaz-event',
-                           '0407-iyi-ozdag-2020-2021-court-relation', None,
-                           expected_party='iyi', namespace='gsd-0407')
-    harness.DATA = root / 'data'
-    assert harness.canonical_identity() == before
+relation = '0407-iyi-ozdag-2020-2021-court-relation'
+existing_receipt = os.environ.get('GSD0407_AIRPORT_PREVIEW_RECEIPT')
+if existing_receipt:
+    receipt = json.loads(Path(existing_receipt).read_bytes())
+    assert receipt['scope'] == case and receipt['relation'] == relation
+    assert receipt['event'] == f'{prefix}-beyaz-event'
+    assert [receipt['package_sha256'], receipt['review_sha256']] == sys.argv[1:]
+    assert receipt['inventory_sha256'] == harness.sha(harness.INVENTORY)
+    assert receipt['canonical'] == before
+else:
+    with tempfile.TemporaryDirectory(prefix='gsd-0407-airport-base-', dir=candidate) as directory:
+        stage = Path(directory)
+        shutil.copytree(root / 'src', stage / 'src', ignore=harness.ignore)
+        shutil.copytree(root / 'data', stage / 'data', ignore=harness.ignore)
+        source_root = stage / 'data/practices/sources/iyi'
+        for path in (candidate / 'sources').rglob('*'):
+            if path.is_file():
+                target = source_root / path.relative_to(candidate / 'sources')
+                target.parent.mkdir(parents=True, exist_ok=True)
+                if target.exists():
+                    assert harness.sha(path) == harness.sha(target)
+                else:
+                    shutil.copyfile(path, target)
+        harness.ROOT, harness.DATA = stage, stage / 'data'
+        harness.INVENTORY, harness.SOURCE = harness.DATA / 'practices/04-inventory.json', source_root
+        os.environ['GIT_DIR'] = str(root / '.git')
+        os.environ['GIT_WORK_TREE'] = str(stage)
+        assert harness.canonical_identity() == before
+        receipt = harness.main(package, review, case, f'{prefix}-beyaz-event',
+                               relation, None,
+                               expected_party='iyi', namespace='gsd-0407')
+        harness.DATA = root / 'data'
+        assert harness.canonical_identity() == before
 
 folder = Path(receipt['preview'])
 export = json.loads((folder / 'records.json').read_bytes())
@@ -62,8 +72,10 @@ with sqlite3.connect((folder/'records.sqlite3').as_uri()+'?mode=ro',uri=True) as
     live = db.execute('SELECT c.id,c.state,c.relation_id,e.event_at FROM practice_candidate c '
                       'JOIN practice_event e ON c.event_id=e.id WHERE c.id LIKE ?', (prefix+'%',))
     assert {tuple(row) for row in live} == {(f'{prefix}-{key}-unmatched','unmatched',None,date) for key,date in dates.items()}
-manifest = json.loads((folder/'manifest.json').read_bytes())
+assert harness.sha(folder / 'manifest.json') == receipt['preview_manifest_sha256']
+manifest = json.loads((folder / 'manifest.json').read_bytes())
 assert manifest['preview'] and manifest['renderer_version'] == 31
+assert all(harness.sha(folder / name) == digest for name, digest in manifest['files'].items())
 for rel, expected in manifest['asset_files'].items():
     with (folder.parents[1]/rel).open('rb') as stream:
         assert file_digest(stream,'sha256').hexdigest() == expected
@@ -71,12 +83,14 @@ html = (folder/'index.html').read_text()
 for key, phrases in {
     'beyaz':('7/3166','25 Ekim','17 Ekim'),
     'ozdag':('8/3','2 Kasım','2 Ekim','hükümsüzlük'),
-    'tatlioglu':('10/970','15 Şubat','hükümsüzlük'),
+    'tatlioglu':('10/970','15.02.2019','hükümsüzlük'),
 }.items():
     for view in ('party','comparison'):
         anchor = f'{view}-unmatched-{prefix}-{key}-unmatched'
         marker = f'id="{anchor}"'
         assert html.count(marker)==1 and f'href="#{anchor}"' in html
         card = html.split(marker,1)[1].split('</article>',1)[0].casefold()
-        assert all(phrase.casefold() in card for phrase in phrases), (anchor,phrases)
+        assert all(phrase.casefold() in card for phrase in phrases), (anchor, phrases)
+        if key == 'tatlioglu':
+            assert f'href="#source-{prefix}-research-10-970-detail"' in card, anchor
 print('IYI_AIRPORT_BOTH_VIEWS_OK',folder,flush=True)
