@@ -1070,14 +1070,15 @@
       "next_leads": [
         "Envanter kaynak bölümü incelenecek: inventory-9cfa485d0e7f273bc3a5ee707394c09a24b67da1a93402b785f5d31df881b04c",
         "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
-        "25 Ağustos eylemi, işe dönüş tarihleri ve geçmiş alacakların fiilî ödemesi için kurum ya da sendika kaydı ara."
+        "25 Ağustos eylemi, işe dönüş tarihleri ve geçmiş alacakların fiilî ödemesi için kurum ya da sendika kaydı ara.",
+        "İşçilerin ücret ve kıdem taleplerinin fiilî sonucunu ve ziyaret gününü ayrı kayıtlardan araştır."
       ],
       "processed_at": null,
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-26T07:04:31+00:00",
-        "note": "Arşivli Faz3 sendika satırı ile TBMM 27. dönem 2/4390 metni ve 2 Haziran 2023 hükümsüz listesi okundu. Programın 2022 tarihindeki sürümü bilinmiyor; başka olaylar ve uçlar araştırılmalı. 1 Mayıs DİSK gözaltı kapsamı ile Tempo’nun 12 Ağustos Şişli haberi ve 21 Eylül işe dönüş haberi belgeye bağlandı.",
+        "recorded_at": "2026-11-26T07:44:30+00:00",
+        "note": "Arşivli Faz3 sendika satırı ile TBMM 27. dönem 2/4390 metni ve 2 Haziran 2023 hükümsüz listesi okundu. Programın 2022 tarihindeki sürümü bilinmiyor; başka olaylar ve uçlar araştırılmalı. 1 Mayıs DİSK gözaltı kapsamı ile Tempo’nun 12 Ağustos Şişli haberi ve 21 Eylül işe dönüş haberi belgeye bağlandı. 25 Kasım Ermenek gözaltıları ve 26 Kasım salıverilme haberi iki aşamadır.",
         "source_ids": [
           "0203-tip-program-v1",
           "0405-tip-sendika-274390-pdf-v1",
@@ -1085,7 +1086,8 @@
           "0405-tip-2020-civic-may-disk-v1",
           "0405-tip-2020-civic-may-tihv-v1",
           "0405-tip-2020-civic-tempo-paper-v1",
-          "0405-tip-2020-civic-tempo-result-v1"
+          "0405-tip-2020-civic-tempo-result-v1",
+          "0405-tip-2020-autumn-anka-v1"
         ],
         "urls": [
           "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T2/WebOnergeMetni/9c60b46f-6665-479a-aa0f-9025c059f4e9.pdf",
@@ -1093,16 +1095,22 @@
           "https://disk.org.tr/2020/05/taksim-yine-yasak-disk-yoneticileri-gozaltinda-foto-haber/",
           "https://tihv.org.tr/gunluk-ih-raporlari/01-04-mayis-2020-gunluk-insan-haklari-raporu/",
           "https://www.mucadelebirligi24.net/pdf/mbg/gunluk/MB_Gunluk_085.pdf",
-          "https://www.evrensel.net/haber/414601/tempo-cagri-merkezi-iscileri-ise-geri-alindi"
+          "https://www.evrensel.net/haber/414601/tempo-cagri-merkezi-iscileri-ise-geri-alindi",
+          "https://ankahaber.net/haber/detay/ermenekli_madenciler_serbest_birakildi_22205"
         ],
         "status": "partial",
-        "preview_job": "62718930",
+        "preview_job": "62721068",
         "source_passage_ids": [
           "0405-tip-2020-civic-may-disk",
           "0405-tip-2020-civic-may-tihv",
           "0405-tip-2020-civic-tempo-august",
           "0405-tip-2020-civic-tempo-role",
-          "0405-tip-2020-civic-tempo-report"
+          "0405-tip-2020-civic-tempo-report",
+          "0405-tip-2020-autumn-miners-25",
+          "0405-tip-2020-autumn-miners-26"
+        ],
+        "prior_preview_jobs": [
+          "62718930"
         ]
       }
     },
@@ -4290,11 +4298,28 @@
       "source_ids": [],
       "source_section_ranges": [],
       "next_leads": [
-        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak."
+        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
+        "Belirli TİP katkısı, katılım sayısı ve uygulama sonucu için ayrı kaynak ara."
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-26T07:44:30+00:00",
+        "status": "partial",
+        "preview_job": "62721068",
+        "note": "25 Kasım Kadıköy etkinliğinde düzenleyici İstanbul 25 Kasım Platformu olarak kaydedildi.",
+        "source_ids": [
+          "0405-tip-2020-autumn-ozgur-v1"
+        ],
+        "urls": [
+          "https://ozgurgelecek56.net/kadikoyde-kadinlar-haykirdi-birbirimiz-icin-sokakta-erkek-devlet-siddetine-karsi-isyandayiz/"
+        ],
+        "source_passage_ids": [
+          "0405-tip-2020-autumn-women-meeting",
+          "0405-tip-2020-autumn-women-public"
+        ]
+      }
     },
     {
       "tranche_id": "scope-153",
@@ -4354,11 +4379,34 @@
       "source_ids": [],
       "source_section_ranges": [],
       "next_leads": [
-        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak."
+        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
+        "Gerekçeli karar, kesinleşme ve doğrulanmış dava dosyası için resmî kayıt ara."
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-26T07:44:30+00:00",
+        "status": "partial",
+        "preview_job": "62721068",
+        "note": "31 Ağustos saldırısı, 2 Eylül tutuklama haberleri ve 11 Ocak ilk derece sonucu ayrı kaynaklandı.",
+        "source_ids": [
+          "0405-tip-2020-autumn-bianet-v1",
+          "0405-tip-2020-autumn-sozcu-v1",
+          "0405-tip-2020-autumn-trt-v1"
+        ],
+        "urls": [
+          "https://bianet.org/haber/tbmm-baskani-ndan-baris-atay-a-saldiriya-kinama-230002",
+          "https://www.sozcu.com.tr/baris-ataya-saldiri-davasinda-karar-wp6881784",
+          "https://www.trthaber.com/haber/turkiye/milletvekili-baris-ataya-saldiranlar-tutuklandi-513371.html"
+        ],
+        "source_passage_ids": [
+          "0405-tip-2020-autumn-atay-night",
+          "0405-tip-2020-autumn-atay-date",
+          "0405-tip-2020-autumn-atay-pretrial",
+          "0405-tip-2020-autumn-atay-trial"
+        ]
+      }
     },
     {
       "tranche_id": "scope-157",
@@ -12219,11 +12267,33 @@
       "source_ids": [],
       "source_section_ranges": [],
       "next_leads": [
-        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak."
+        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
+        "Katılım ve parti organlarının fiilî görev dağılımı için bağımsız kayıt ara."
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-26T07:44:30+00:00",
+        "status": "partial",
+        "preview_job": "62721068",
+        "note": "1 Eylül Yoğurtçu Parkı açıklaması ve parti duyurusu ayrı atıflara bağlandı.",
+        "source_ids": [
+          "0405-tip-2020-autumn-bold-v1",
+          "0405-tip-2020-autumn-statement-v1",
+          "0405-tip-2020-autumn-cark17-v1"
+        ],
+        "urls": [
+          "https://boldmedya.com/2020/09/01/milletvekili-baris-atay-soylu-bakan-degil-akp-mafyatik-sisteminin-cete-lideri/",
+          "https://www.tip.org.tr/parti-aciklamalari/baris-atay-yalniz-degildir",
+          "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi17_202009.pdf"
+        ],
+        "source_passage_ids": [
+          "0405-tip-2020-autumn-yogurtcu-report",
+          "0405-tip-2020-autumn-yogurtcu-published",
+          "0405-tip-2020-autumn-yogurtcu-party"
+        ]
+      }
     },
     {
       "tranche_id": "scope-473",
@@ -12422,11 +12492,32 @@
       "source_ids": [],
       "source_section_ranges": [],
       "next_leads": [
-        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak."
+        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
+        "Parti yardımında teslim günü, miktar, yararlanıcı kapsamı ve harcama kaydı ara."
       ],
       "processed_at": null,
       "closure_refs": [],
-      "state": "pending"
+      "state": "pending",
+      "research_progress": {
+        "recorded_at": "2026-11-26T07:44:30+00:00",
+        "status": "partial",
+        "preview_job": "62721068",
+        "note": "30 Ekim depreminden sonraki belediye yardımları ve parti bildirimi ayrı kurumsal kayıtlardır.",
+        "source_ids": [
+          "0405-tip-2020-autumn-izmir-v1",
+          "0405-tip-2020-autumn-cark19-v1"
+        ],
+        "urls": [
+          "https://www.izmir.bel.tr/tr/Haberler/izmir-buyuksehir-belediyesi-ekipleri-teyakkuzda/44237/156",
+          "https://tip.org.tr/assets/carkbasak/CarkBasak_Sayi19_202011.pdf"
+        ],
+        "source_passage_ids": [
+          "0405-tip-2020-autumn-izmir-city",
+          "0405-tip-2020-autumn-izmir-city-result",
+          "0405-tip-2020-autumn-izmir-day",
+          "0405-tip-2020-autumn-izmir-aid"
+        ]
+      }
     },
     {
       "tranche_id": "scope-485",
