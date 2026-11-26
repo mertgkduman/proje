@@ -53,12 +53,26 @@ def add(table, **values):
 
 sources = {}
 unpublished = 'TBMM’nin erişim anındaki sicil görünümü. Tarih alanı ayrı önerge işlemini gösteriyor.'
+notice_pages = {'beyaz-notice-cover': 927, 'beyaz-notice-heading': 958, 'beyaz-notice-item': 998}
+if all(key in captures for key in notice_pages):
+    notice_sources = tuple(
+        (key, f'25 Ekim 2018 Gelen Kâğıtlar No. 16, basılı sayfa {page}', '2018-10-25', None,
+         f'TBMM 11. birleşim tutanağının ayrı yayımlanan özgün {page}. sayfası.')
+        for key, page in notice_pages.items()
+    )
+    notice_locations = ((key, 0) for key in notice_pages)
+else:
+    notice_sources = (
+        ('beyaz-unanswered', '25 Ekim 2018 Gelen Kâğıtlar No. 16', '2018-10-25', None,
+         'TBMM yayımındaki süresinde cevaplandırılmayan yazılı sorular bölümü, 575. sıra.'),
+    )
+    notice_locations = (('beyaz-unanswered', None) for _ in notice_pages)
+cover_page, heading_page, item_page = notice_locations
 for key, title, date, author, basis in (
     ('beyaz-detail', 'TBMM 7/3166 yazılı soru sicili', None, None, unpublished),
     ('beyaz-filing', 'Ümit Beyaz imzalı 7/3166 yazılı soru önergesi', '2018-10-17', 'Ümit Beyaz',
      'İmzalı nüshada basılı tarih 17 Ekim, İYİ Parti Grup Başkanlığı kaşesi 20 Eylül 2018.'),
-    ('beyaz-unanswered', '25 Ekim 2018 Gelen Kâğıtlar No. 16', '2018-10-25', None,
-     'TBMM yayımındaki süresinde cevaplandırılmayan yazılı sorular bölümü, 575. sıra.'),
+    *notice_sources,
     ('general-8-3-detail', 'TBMM 8/3 genel görüşme önergesi sicili', None, None, unpublished),
     ('general-8-3-filing', 'Ümit Özdağ ve 20 milletvekilinin imzaladığı 8/3 genel görüşme önergesi', '2018-10-31', 'Ümit Özdağ ve 20 milletvekili',
      'İmzalı metin 31 Ekim. Grup kaşesi 2 Kasım 2018, No. 01.'),
@@ -101,9 +115,9 @@ for key, source, page, exact, section in (
     ('beyaz-id','beyaz-detail',None,'7 / 3166','Önerge sicilinde esas numarası 7/3166.'),
     ('beyaz-received','beyaz-detail',None,'20.09.2018','TBMM siciline göre Başkanlığa geliş 20 Eylül 2018.'),
     ('beyaz-mp','beyaz-detail',None,'&#xDC;mit BEYAZ','Soru sahibi İstanbul milletvekili Ümit Beyaz.'),
-    ('beyaz-list-date','beyaz-unanswered',None,'25 Ekim 2018 Perşembe','No. 16 Gelen Kâğıtlar listesi 25 Ekim 2018 tarihli.'),
-    ('beyaz-list-state','beyaz-unanswered',None,'Süresi İçinde Cevaplandırılmayan Yazılı Soru Önergeleri','Süresinde cevaplandırılmayan yazılı sorular başlığı.'),
-    ('beyaz-list-id','beyaz-unanswered',None,'(7/3166)','7/3166, No. 16 listesinin cevaplandırılmayanlar bölümünde 575. sırada.'),
+    ('beyaz-list-date',*cover_page,'25 Ekim 2018 Perşembe','No. 16 Gelen Kâğıtlar listesi 25 Ekim 2018 tarihli.'),
+    ('beyaz-list-state',*heading_page,'Süresi İçinde Cevaplandırılmayan Yazılı Soru Önergeleri','Süresinde cevaplandırılmayan yazılı sorular başlığı.'),
+    ('beyaz-list-id',*item_page,'(7/3166)','7/3166, No. 16 listesinin cevaplandırılmayanlar bölümünde 575. sırada.'),
     ('ozdag-date','general-8-3-detail',None,'02/11/2018','TBMM 8/3 sicilinin geliş tarihi 2 Kasım 2018.'),
     ('ozdag-sign','general-8-3-filing',0,'talep ederiz. 31.10.2018','Genel görüşme isteminin imzalı metin tarihi 31 Ekim 2018.'),
     ('ozdag-occupational','general-8-3-filing',0,'kazaları, işçilerin iş güvenliği ve sosyal haklarındaki iddia olunan usulsüzlükler ile','İmzalı metin iş kazalarını, iş güvenliği ve sosyal hak iddialarını görüşmeye açmayı istiyor.'),
@@ -116,8 +130,9 @@ for key, source, page, exact, section in (
     item = sources[source]
     body = html_source_text(item['original'].read_bytes()) if page is None else pdf_page_text(item['original'], page)
     assert exact in body, (source, exact)
+    printed_page = str(notice_pages[source]) if source in notice_pages else None
     row = dict(id=f'{prefix}-{key}',version_id=item['version'],exact=exact,prefix=None,suffix=None,article=None,
-               section=section,pdf_page_index=page,printed_page=None)
+               section=section,pdf_page_index=page,printed_page=printed_page)
     entry('passage', **row)
     passages[key] = row
 
