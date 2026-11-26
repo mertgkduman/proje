@@ -864,3 +864,17 @@ uç olarak kaydedildi. Fiilî amblem kullanımı için olay kapsamı açık.
 [Önizleme](/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0405-tip-kimlik-62738520/releases/be75c24a4e8949bf9f27c39e0118c5b2/index.html).
 [Bağımsız denetim](../04-05-checks/tip-kimlik-62738520-independent.json).
 İki kapsam hücresi kapandı, 5.488 açık. Faz 4'te 3/15 plan tamamlandı.
+
+## Dokuz partinin birleştirme denetimi
+
+Dokuz kabul edilmiş paketin birleştirilmesi girdi sırası değiştiğinde
+aynı çıktıyı üretti. Çıktı 621 olay, 424 ilişki ve 6.407 kaynak inceleme
+kaydı içeriyor. Yeni Parti ve TİP'in ad ve amblem söylemine ait iki hücre
+kapalı, 351 hücrenin araştırması açık ve 5.137 hücrenin araştırması henüz
+başlamadı. Eşleştirmede 22 ortak olay kararı uygulandı ve 13 adayın
+kararı açık kaldı. [Birleştirme denetimi](wave4-accepted-merge-preflight.json).
+
+EMEP'in 3.270 özgün API metninden 2.598'i tam okundu. DEM'in Aralık 2012
+arşiv nüshasındaki 86.464 karakterlik tüzük metni bütünüyle okundu. DEM'in
+2013 arşiv nüshasındaki 182.507 karakterlik program metninin 56.613
+karakteri okundu. [DEM tüzük okuması](../04-06-checks/historical-charter-final-sections-reading.json).
