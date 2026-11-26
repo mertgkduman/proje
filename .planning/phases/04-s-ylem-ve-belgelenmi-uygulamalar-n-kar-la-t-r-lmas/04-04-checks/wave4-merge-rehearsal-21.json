@@ -1,0 +1,136 @@
+{
+  "git_commit": "687d9e15a5bb454e0b5e324a007716128b5f9ebf",
+  "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+  "kind": "isolated_merge_preflight",
+  "original_packages": {
+    "yeni-parti": {
+      "package_sha256": "df8f9c5253112ec11cbdf28208fdeac0a97a811d5acbdd210fb53f217b55b629",
+      "companion_review_sha256": "5ad1689587e43e152725d82fbdabc18ed69f87e293e60413892c0e72c217e1ce",
+      "events": 145,
+      "relations": 142,
+      "closures": 0,
+      "external_review_ref_count": 1234
+    },
+    "tip": {
+      "package_sha256": "ea387982aa36335f24dd001e020065a699b843526039dcbcb6bf9a6420e06893",
+      "companion_review_sha256": "a659a0e107d64a7d60ecff5cb407af0989fed90c23be53f2dea63686104602de",
+      "events": 78,
+      "relations": 60,
+      "closures": 0,
+      "external_review_ref_count": 836
+    },
+    "dem": {
+      "package_sha256": "da836b07b4cb4ac61bcaefe6eaf744ce66c1effcdf714df1ea97ec946818c9df",
+      "companion_review_sha256": "02db365953f11836672a19ef088ede88ac970d075cfbaa2f6dd835a5f1195891",
+      "events": 89,
+      "relations": 13,
+      "closures": 0,
+      "external_review_ref_count": 836
+    },
+    "iyi": {
+      "package_sha256": "20cedb9d27fba78c62cded057745dd405212effac12268ebf54ef3a372f97337",
+      "companion_review_sha256": "721b77e6b2f52a693e8b5ff2f7ccd6e47d8212924b48dabc961fd22d4fc84a03",
+      "events": 23,
+      "relations": 15,
+      "closures": 0,
+      "external_review_ref_count": 335
+    },
+    "yeni-yol": {
+      "package_sha256": "07a7acdd87ff461abe7fd3f75f1e4e60ef4805c6cbdf2eab7f60756b703d9f6a",
+      "companion_review_sha256": "1b89ab0381dad5fc48a00a603c5624ed34489205d60d6bde83a5c7f298c79115",
+      "events": 23,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 345
+    },
+    "dbp": {
+      "package_sha256": "607f99e57799c1a93201732588c59b03064a2b71ed339dc173ad4cdfdf15c2f1",
+      "companion_review_sha256": "5e5f136dfbbbb5ab6fd14ff1f59c29d70a7e3ba9a5fbca24a007de939302e8b1",
+      "events": 68,
+      "relations": 7,
+      "closures": 0,
+      "external_review_ref_count": 499
+    },
+    "emep": {
+      "package_sha256": "772056d54ef6d2e8d2f8bd4cb48b4eca9f20b14648131fcea899dbfaa9cfd274",
+      "companion_review_sha256": "3a4b1092567102c003d0ffb8143e23cf74f063079b96e05f1952456e85f88ba6",
+      "events": 88,
+      "relations": 82,
+      "closures": 0,
+      "external_review_ref_count": 809
+    },
+    "saadet": {
+      "package_sha256": "3cc21615f355aa00c3010b1a415f5126020fd27db895e2235e317d679c371f04",
+      "companion_review_sha256": "a305484f46ec4bd7cae6eae1201e3bc509ba71c06c90e1d30192d81116a85e36",
+      "events": 41,
+      "relations": 37,
+      "closures": 0,
+      "external_review_ref_count": 513
+    },
+    "demokrat": {
+      "package_sha256": "83b02dd64c3791a8774cacfe788995c247a3263e4565e8fd913c74d2359ef736",
+      "companion_review_sha256": "226698882d18a9a29565b44ff7c2c37749666e22c4cbf1c2a543117b6ad1059c",
+      "events": 83,
+      "relations": 54,
+      "closures": 0,
+      "external_review_ref_count": 908
+    }
+  },
+  "original_stages": {
+    "yeni-parti": "tracer",
+    "tip": "partial",
+    "dem": "tracer",
+    "iyi": "tracer",
+    "yeni-yol": "tracer",
+    "dbp": "tracer",
+    "emep": "tracer",
+    "saadet": "tracer",
+    "demokrat": "tracer"
+  },
+  "isolated_stage": "partial",
+  "isolated_envelopes": {
+    "yeni-parti": "4c6840d5d1ceaa98841e586c31fb8d26635c177e3a9f0e30e3248227e1e9355a",
+    "tip": "466839c59e08fde9a2d44d728b43d5f0fef0a09dd5c45a455cbcfc723a811b58",
+    "dem": "e1bebd7829a560e0bc3cbdadaa67e7dcbc96bc351b1ad9002210cd8753bb8fd5",
+    "iyi": "0c0af088191e41f7a5392ba343bdae613bb9382f2b3b2663c81453f5ea668b76",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "860bfb656c97319c53ec6a337455ff573023f461ef093de2c1c2a962d0370f38",
+    "emep": "1ae5a409d7866f1905eb265b6b8aa79883bbb8edc2a89f234aaae43571d1cf06",
+    "saadet": "e8ceb924ae6c4fee1de2db093bae7b1ec1872f4a72e6f6b3babc0360244f62cf",
+    "demokrat": "418ab522df6afa79983bf78cc93430919dbb5c649a513fad06188fe3139fe79e"
+  },
+  "isolated_envelope_sha256": {
+    "yeni-parti": "4c6840d5d1ceaa98841e586c31fb8d26635c177e3a9f0e30e3248227e1e9355a",
+    "tip": "466839c59e08fde9a2d44d728b43d5f0fef0a09dd5c45a455cbcfc723a811b58",
+    "dem": "e1bebd7829a560e0bc3cbdadaa67e7dcbc96bc351b1ad9002210cd8753bb8fd5",
+    "iyi": "0c0af088191e41f7a5392ba343bdae613bb9382f2b3b2663c81453f5ea668b76",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "860bfb656c97319c53ec6a337455ff573023f461ef093de2c1c2a962d0370f38",
+    "emep": "1ae5a409d7866f1905eb265b6b8aa79883bbb8edc2a89f234aaae43571d1cf06",
+    "saadet": "e8ceb924ae6c4fee1de2db093bae7b1ec1872f4a72e6f6b3babc0360244f62cf",
+    "demokrat": "418ab522df6afa79983bf78cc93430919dbb5c649a513fad06188fe3139fe79e"
+  },
+  "preceding_decisions": "wave4-merge-rehearsal-20-decisions.json",
+  "unchanged_candidate_sources": true,
+  "decisions_sha256": "6fa5492d1616af275a826b2d37f934805450a7ccfe11cd89d0b468a873fc2e5c",
+  "output_sha256": "2583fbbb67321cf484bb61f0ad13c6d091ebd1bacb8c0afa94123ac637c2f927",
+  "forward_reverse_equal": true,
+  "same_candidates": 22,
+  "unresolved_candidates": 13,
+  "counts": {
+    "practice_event": 602,
+    "practice_relation": 422,
+    "practice_closure": 0
+  },
+  "aliases": 646,
+  "event_aliases": 646,
+  "review_origins": 6315,
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "merged_events": 602,
+  "merged_relations": 422,
+  "closure_count": 0,
+  "added_reviewed_candidates": [
+    "cumhurbaskanligi-2021-03-19-3718"
+  ],
+  "active_unmatched": 226
+}
