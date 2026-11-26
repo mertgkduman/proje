@@ -922,7 +922,7 @@ arşivlendi. 11 Ocak 2018 cevabına ilişkin Başsavcılık aktarımı amblemin
 değiştiğini bildiriyor. Hüküm ad, rumuz ve sicilden terkin talebiyle sınırlı.
 2017 imzalı tüzüğü ve 11 Ocak cevabındaki amblem görseli açık kaldı.
 
-TİP'in izinli kapsam geçmişini koruyan [aday paket](../04-05-checks/tip-aym-kimlik-candidate-status.json)
+TİP'in önceki kapsam kapanışını koruyan [aday paket](../04-05-checks/tip-aym-kimlik-candidate-status.json)
 eski kapanışa bağlı yeniden açılış ve bir AYM olayı içeriyor. İki hücre
 aday doğrulamasında açık. 62740417 önizlemesi işlemci kotasında,
 62740426 bağımsız denetimi başarılı önizlemeyi bekliyor. Mevcut kabul
