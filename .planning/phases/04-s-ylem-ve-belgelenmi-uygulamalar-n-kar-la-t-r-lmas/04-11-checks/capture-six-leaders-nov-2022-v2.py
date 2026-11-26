@@ -1,0 +1,35 @@
+from datetime import datetime,timezone
+from hashlib import sha256
+from pathlib import Path
+import json
+from arsiv import html_source_text,pdf_page_text,readable_bytes
+from arsiv_gorunum import build_view,validate_view
+here=Path(__file__).resolve().parent;root=Path('data/practices/sources/saadet');entries=[];paths=set();now=datetime.now(timezone.utc).isoformat()
+def add(table,**row):entries.append({'kind':table,'values':row})
+def put(rel,raw):
+ p=root/rel;p.parent.mkdir(parents=True,exist_ok=True)
+ if p.exists():assert p.read_bytes()==raw
+ else:p.write_bytes(raw)
+ paths.add(str(p))
+sources=[
+ ('plan','six-leaders-2022-11-chp-week-original.pdf','https://chp.org.tr/yayin/21---27-kasim-2022-haftasi-bilgilendirme-raporu/Open','2022-11-27','Cumhuriyet Halk Partisi','party','party_publication','application/pdf','2026-11-26T01:50:58.100182+00:00','21–27 Kasım CHP bülteninde 14 Kasım altı lider ortak açıklaması.', [('present','Anayasa önerisini açıklama planı','Altılı Masa olarak, bu çalışmayı 28\nKasım tarihinde kamuoyuyla paylaşma kararı aldık.',7)]),
+ ('meetingplan','six-leaders-2022-11-14-karar-original.html','https://www.karar.com/guncel-haberler/altili-masadan-mutabakat-metni-aciklamasi-28-kasimda-kamuoyuna-1705091','2022-11-14','Karar','journalism','journalism','text/html','2026-11-26T02:27:17.219775+00:00','14 Kasım ortak açıklamasının tarihli gazete aktarımı.', [('next','Bir sonraki liderler toplantısı planı','Altılı Masanın bir sonraki liderler buluşması 28 Kasım 2022 tarihinde Demokrat Parti’nin ev sahipliğinde gerçekleştirilecektir.',None),('role','14 Kasım toplantısında Saadet Genel Başkanı','Saadet Partisi Genel Başkanı Temel Karamollaoğlu',None)]),
+ ('prior','six-leaders-2022-11-14-deva-original.pdf','https://cdn.devapartisi.org/640/DEVA-B%C3%9CLTEN-27.-SAYI.pdf','2022-11-14','DEVA Partisi','party','party_publication','application/pdf','2026-11-26T01:09:55.597609+00:00','DEVA bülteni 27. sayı, 14 Kasım ortak açıklama başlığı ve imzalı görsel.', [('date','14 Kasım ortak açıklama başlığı','Altı Siyasi Parti\nGenel Başkanının\nOrtak Açıklaması\n(Ankara, 14 Kasım 2022)',8)]),
+ ('joint','six-leaders-2022-11-28-deva-original.pdf','https://cdn.devapartisi.org/645/DEVA-B%C3%9CLTEN-28.-SAYI.pdf','2022-11-28','DEVA Partisi','party','party_publication','application/pdf','2026-11-25T23:33:43.920528+00:00','DEVA bülteni 28. sayı. İmzalı ortak metin PDF indeksi 10 görselde.', [('heading','Altı lider ortak açıklama başlığı','ALTI SİYASİ PARTİ GENEL BAŞKANININ\nORTAK AÇIKLAMASI',9)]),
+ ('chp','six-leaders-2022-11-28-chp-original.html','https://chp.org.tr/haberler/altili-masa-156-sayfalik-guclendirilmis-parlamenter-sistem-anayasa-degisikligi-onerisini-acikladi','2022-11-28','Cumhuriyet Halk Partisi','party','party_publication','text/html','2026-11-25T23:24:18.930556+00:00','CHP 28 Kasım tanıtım haberi.', [('leaders','Altı liderin tanıtıma katılımı','Altılı Masa, Güçlendirilmiş Parlamenter Sistem Anayasa Değişikliği Önerisi’ni bugün Ankara’da düzenlediği toplantıda kamuoyuna açıkladı.',None),('kaya','Saadet adına sunumu yapan Bülent Kaya','Sunumda altıncı ve son olarak söz alan Saadet Partisi Seçim İşleri Başkanı Bülent Kaya şöyle konuştu:',None)]),
+ ('voa','six-leaders-2022-11-28-voa-original.html','https://www.voaturkce.com/a/altili-masa-anayasa-degisikligini-tanitti/6853087.html','2022-11-28','VOA Türkçe','journalism','journalism','text/html','2026-11-25T23:24:19.881559+00:00','VOA Türkçe 28 Kasım tarihli haber.', [('location','Bilkent Otel tanıtımı','teklif metni tanıtım toplantısı Bilkent Oteli’nde yapıldı.',None),('speakers','Komisyon üyelerinin tanıtımı','ve Bülent Kaya (Saadet Partisi), alfabetik sırayla özetledi.',None)]),
+ ('iha','six-leaders-2022-11-28-meeting-original.html','https://www.sondakika.com/guncel/haber-altili-masa-nin-9-toplantisi-6-saat-surdu-15459327/','2022-11-28','Son Dakika','journalism','journalism','text/html','2026-11-25T23:24:20.365561+00:00','İHA kaynaklı 28 Kasım tarihli haber.', [('host','DP Genel Merkezindeki toplantı',"ev sahipliğinde Demokrat Parti Genel Merkezi'nde gerçekleştirildi.",None),('joint','Toplantı sonrası ortak açıklama','Toplantının ardından altı siyasi parti ortak bir metin yayımladı.',None)])]
+sources=[row for row in sources if row[0] in ('meetingplan','voa','iha')]
+sources[0][-1].append(('present','Ortak anayasa önerisinin tanıtım planı','Altılı Masa olarak, bu çalışmayı 28 Kasım tarihinde kamuoyuyla paylaşma kararı aldık.',None))
+sources.append(('saadet','party-news-bodies/373.json','https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=secimlere-de-iktidara-da-haziriz','2022-11-30','Saadet Partisi','party','party_publication','application/json','2026-11-25T21:40:01.290748+00:00','Saadet Genel Başkanının 30 Kasım tarihli toplantı değerlendirmesi.', [('present','Saadet liderinin tanıtım aktarımı','Pazartesi günü, ‘Güçlendirilmiş Parlamenter Sisteme Geçiş’ ile ilgili anayasa değişikliği teklifimizi kamuoyu ile paylaştık.',None),('meeting','Saadet liderinin DP ev sahipliğinde buluşma aktarımı',"Ardından da Demokrat Parti Genel Başkanı Gültekin Uysal'ın ev sahipliğinde, 2. turun 3. toplantısını gerçekleştirdik.",None)]))
+for key,name,url,day,publisher,kind,attr,mime,accessed,basis,anchors in sources:
+ raw=(here/name).read_bytes();h=sha256(raw).hexdigest();doc='0411-six-leaders-nov-2022-'+key;vid=doc+'-v1';media='pdf' if mime=='application/pdf' else 'html';original=f'objects/{h}/original.'+('pdf' if media=='pdf' else 'html.bin');readable=f'objects/{h}/readable.html'
+ put(original,raw);put(readable,readable_bytes(raw,media,legacy=False));add('document',id=doc,party_id='saadet',title='2022 Kasım altı lider '+key,source_kind=kind)
+ add('document_version',id=vid,document_id=doc,original_url=url,final_url=url,document_date=day,date_precision='day',date_unknown_reason=None,version_label=basis,accessed_at=accessed,verified_at=now,mime=mime,sha256=h,original_path=original,readable_path=readable)
+ add('source_attribution',version_id=vid,publisher=publisher,author=None,kind=attr,published_at=None,date_precision='unknown',social_handle=None,public_url=url,basis=basis)
+ if media=='html':
+  view=build_view(raw,url,root,fetch_assets=False);view['version_id']=vid;validate_view(root,view);add('archive_view',**view);m=root/view['manifest_path'];paths.add(str(m));paths.update(str(m.parent/n) for n in json.loads(m.read_bytes())['files'])
+ for suffix,section,exact,page in anchors:
+  content=pdf_page_text(root/original,page) if page is not None else html_source_text(raw);assert exact in content,(key,suffix)
+  add('passage',id=doc+'-'+suffix,version_id=vid,exact=exact,prefix=None,suffix=None,article=None,section=section,pdf_page_index=page,printed_page=None)
+(here/'six-leaders-nov-2022-v2-source-records.json').write_text(json.dumps({'party_id':'saadet','entries':entries},ensure_ascii=False,indent=2)+'\n');Path('/tmp/gsd0411-six-leaders-nov-v2-paths').write_text('\n'.join(sorted(paths))+'\n');print('entries',len(entries),'paths',len(paths))
