@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3672, in <module>
+    main()
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/arsiv.py", line 3522, in main
+    render_practice_preview(package, Path(tmp) / 'preview', base_release=package.get('base_release'), source_root=source_root)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1450, in render_practice_preview
+    return _render_practice_preview(payload, out, inventory, base_release, storage_root=storage_root,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1586, in _render_practice_preview
+    copy_asset(entry_root, values[key], reject_links=True)
+  File "/hpc/group/pfisterlab/mg551/storage/proje/src/uygulamalar.py", line 1557, in copy_asset
+    if not target.exists(): shutil.copyfile(source, target)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/home/mg551/miniconda3/lib/python3.12/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/group/pfisterlab/mg551/storage/proje/data/practices/sources/yeni-parti/objects/717dd1ee9811ad051ebeef26ad93adde13f38e73a1dc97456ed3caec0cefcc41/original.html.bin'

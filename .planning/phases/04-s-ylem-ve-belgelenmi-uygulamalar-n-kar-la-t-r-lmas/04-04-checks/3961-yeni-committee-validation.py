@@ -1,4 +1,4 @@
-import importlib.util, os, hashlib
+import importlib.util, os, hashlib, shutil
 from pathlib import Path
 c=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location("harness",c/"samsun-reply-validation.py")
@@ -13,5 +13,17 @@ def node_local_call(*args, **kwargs):
  return _original_call(*args, **kwargs)
 m.subprocess.call = node_local_call
 m.SOURCE=Path("/work/mg551/gsd-phase04-recovery.L0IReu/yeni-3961-source")
+_original_check = m.check
+_staged = None
+def staged_check(receipt_name, name, args, cwd, marker):
+ global _staged
+ if name == "input":
+  _staged = Path(cwd)
+ if name == "source":
+  assert _staged is not None
+  shutil.copytree(m.SOURCE, _staged / "data/practices/sources/yeni-parti", dirs_exist_ok=True)
+  cwd = _staged
+ return _original_check(receipt_name, name, args, cwd, marker)
+m.check = staged_check
 os.environ["GSD0404_PREVIEW_STAGING"]="/work/mg551/gsd-phase04-recovery.L0IReu"
-m.main(c/"3961-yeni-committee-package-draft.json",c/"3961-yeni-committee-review-draft.json",scope="3961-yeni-committee-v3",event_id="0404-3961-yeni-committee-event",relation_id="0404-3961-yeni-committee-relation",absent_dispute="")
+m.main(c/"3961-yeni-committee-package-draft.json",c/"3961-yeni-committee-review-draft.json",scope="3961-yeni-committee-v4",event_id="0404-3961-yeni-committee-event",relation_id="0404-3961-yeni-committee-relation",absent_dispute="")
