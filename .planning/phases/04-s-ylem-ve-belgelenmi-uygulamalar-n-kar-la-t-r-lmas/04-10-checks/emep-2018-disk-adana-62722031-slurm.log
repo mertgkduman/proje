@@ -1,0 +1,10 @@
+Staged 734 original, readable and view paths; package 17b05076f6aef93ab0687645605e270e06cbbe25d6f1e73bd2498630a0676ce3; review 7ec4079e19b868e46aa86e58ff6d6e7058efe71726f7361a33a5286055e3d530
+Traceback (most recent call last):
+  File "/work/mg551/gsd-phase04-recovery.L0IReu/run-audit.py", line 17, in <module>
+    exec(compile(source, str(path), "exec"), {"__name__": "__main__", "__file__": str(path)})
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/emep-2018-disk-adana-validation.py", line 57, in <module>
+    assert all(phrase.casefold() in card for phrase in phrases),(anchor,phrases)
+AssertionError: ('party-unmatched-0410-emep-2018-disk-adana-decision-unmatched', ('5 Aralık', 'yayım günü', 'imzalı takipsizlik'))
+
+SAVED_PREVIEW_CARD_RECHECK renderer=31 casefold=Turkish-capital-I original_slurm_exit=1
+EMEP_2018_DISK_ADANA_BOTH_VIEWS_OK /work/mg551/gsd-phase04-previews.sgFrq4/gsd-0410-emep-2018-disk-adana-62722031/releases/22fd527f0bd54937b4a33b56a4673fe8
