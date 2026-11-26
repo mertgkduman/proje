@@ -38,4 +38,4 @@ Ağustos sayısında çoklu baro kabulünden sonra yayımlanan değerlendirme, k
 
 Eylül sayısı, Barış Atay olayından sonraki 1 Eylül Yoğurtçu Parkı basın açıklamasının tam metnini yayımlıyor. Örgüt Bürosu’nun salgın dayanışma fonu bildirimi, İşçi Bürosu’nun ağ sayıları ve sağlık çalışma koşulları ayrı uçlarda. [Eylül ilk dilim](issue-17/reading-01.json) [İkinci dilim](issue-17/reading-02.json)
 
-Ekim sayısında 13 fotoğraflı parti haberi ve Tempo işçisinin birinci kişi anlatısı ayrı okundu. 12 Ağustos ve 25 Ağustos Şişli eylemleri, şirketin Eylül kararı ve sonraki işe dönüşler aynı güne bağlanmadı. Çerkezköy büro açılış haberi ve üç ayrı işyeri dayanışmasına ait kaynak uçları var. [Ekim ilk dilim](issue-18/reading-01.json) [İkinci dilim](issue-18/reading-02.json)
+Ekim sayısında 14 fotoğraflı parti haberi ve Tempo işçisinin birinci kişi anlatısı ayrı okundu. 12 Ağustos ve 25 Ağustos Şişli eylemleri, şirketin Eylül kararı ve sonraki işe dönüşler aynı güne bağlanmadı. Çerkezköy büro açılış haberi ve üç ayrı işyeri dayanışmasına ait kaynak uçları var. [Ekim ilk dilim](issue-18/reading-01.json) [İkinci dilim](issue-18/reading-02.json)
