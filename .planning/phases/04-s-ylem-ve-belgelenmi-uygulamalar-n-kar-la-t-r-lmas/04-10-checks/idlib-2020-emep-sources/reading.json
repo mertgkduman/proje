@@ -1,0 +1,59 @@
+{
+  "read_at": "2026-11-26T04:13:52.579632+00:00",
+  "method": "EMEP 3479 asıl API HTML gövdesi tekrar; BM özgün iki sayfalı PDF metin katmanı iki sayfa; PİRHA tarih ve atıf kontrolü okundu. API sayfası ve indirilen özgün baytlar SHA-256 ile sabit.",
+  "party_source": {
+    "post_id": 3479,
+    "url": "https://www.emep.org/tsk-ve-butun-yabanci-gucler-suriyeden-cekilsin-savasi-degil-barisi-buyutelim",
+    "api_date": "2020-02-28T12:23:49",
+    "api_page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+    "body_sha256": "11e62248a7cc681fd78007eb06fcdbaa4ff5ddab8921592962c0eab66806fe47",
+    "body_range": [
+      0,
+      3104
+    ],
+    "party_passage": "İdlib’de ateş altındaki askerleri acilen geri\nçekmeye çağırıyoruz.",
+    "party_passage_range": [
+      2347,
+      2413
+    ],
+    "source_original_sha256": "2981ad94ca320cdaab178e03f8d9670019aebd0635bc4f6136966a06c16a31e5",
+    "finding": "EMEP Genel Merkezi İdlib’de ateş altındaki askerlerin acilen çekilmesini, Suriye müdahalesinin bitirilmesini ve bütün askeri güçlerin çekilmesini ister. Güçlerin rolü ve çatışmanın nedenlerine ilişkin ifadeler parti beyanıdır."
+  },
+  "un_source": {
+    "url": "https://documents.un.org/api/symbol/access?l=en&s=S%2F2020%2F187&t=pdf",
+    "sha256": "041fbaf925821e6ca8b9397167017e5bcd5dd3da695159daec66ed0ef9aac92d",
+    "page_index_count": 2,
+    "pages": [
+      {
+        "index": 0,
+        "text_sha256": "f76469b1f5af554002e00878d8cb56cf54bea3ed6c590729637c1a6f553fdd9e",
+        "char_count": 809
+      },
+      {
+        "index": 1,
+        "text_sha256": "02e7e3adf19984f44586e0dfc2a2b36ba289b25eef17ab7e3dc6e25a5020ab67",
+        "char_count": 2544
+      }
+    ],
+    "anchors": [
+      "Letter dated 6 March 2020",
+      "Cease all military actions along the line of contact",
+      "On March 15, 2020 joint Turkish-Russian patrolling",
+      "Done in Moscow on 5 March, 2020"
+    ],
+    "finding": "S/2020/187 6 Mart 2020 iki daimi temsilcinin Güvenlik Konseyi başkanına mektubudur; ek, Türkiye ve Rusya’nın 5 Martta Moskova’da düzenlediği protokoldür. Ek 6 Mart 00:01 itibarıyla İdlib temas hattında askerî faaliyetlerin durdurulmasını, M4 boyunca 6 km kuzey ve güney güvenlik koridorunun kurulmasını, parametrelerin yedi günde savunma bakanlıklarınca kararlaştırılmasını ve 15 Mart ortak devriye başlangıcını öngörür."
+  },
+  "corroboration": {
+    "source": "PİRHA",
+    "sha256": "6f87a4375b97edc774a38a7d1f2ec61747ff2c185b7d3212681d4e0d2622a4ac",
+    "date": "2020-02-28",
+    "finding": "PİRHA 15:49 haberi açıklamayı EMEP Genel Merkezine atfeder; bağımsız kurum kararı değildir."
+  },
+  "boundary": [
+    "5 Mart protokolü tam Türk veya yabancı asker çekilmesini taahhüt etmez; ateşkes ve ortak devriye düzenlemesiyle EMEP talebi eşdeğer değildir.",
+    "Protokol hükümleri uygulandığının, ateşkesin sürdüğünün veya partinin sonucu etkilediğinin kanıtı değildir.",
+    "TİP’in aynı dönemdeki açıklaması ayrı parti metnidir; EMEP pozisyonunu ondan türetmiyoruz.",
+    "Önceki 272 makbuzu Türkçe 3479 ve İngilizce 3483 metinlerini paralel okumuştur; yeni olay veya kapsam kapanışı yapılmadı."
+  ],
+  "closure_refs": []
+}
