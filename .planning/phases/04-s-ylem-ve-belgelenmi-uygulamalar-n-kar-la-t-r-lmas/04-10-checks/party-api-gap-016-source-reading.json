@@ -1,0 +1,139 @@
+{
+  "tranche_id": "0410-emep-api-gap-016",
+  "read_at": "2026-11-26T09:22:35.154065+00:00",
+  "method": "Altı özgün EMEP API gövdesi tam okundu. Diller arasındaki anlam farkı, konferansın ortak bildirisi ve kurumların birbirinden bağımsız açıklamaları kaynaklarına bağlandı.",
+  "linked_documents": [
+    {
+      "id": "evrensel-gyk",
+      "url": "https://www.evrensel.net/haber/356078/emepten-isci-ve-emekcilere-cagri-tek-adama-karsi-mucadeleye",
+      "attempted_at": "2026-11-26T09:21:25.663246+00:00",
+      "status": "403",
+      "error": "curl: (22) The requested URL returned error: 403",
+      "reading_access": "Evrensel Haber Merkezi, 2 Temmuz 2018 15:14 (3 Temmuz 06:28 güncelleme). İndekslenen Türkçe gövde, seçim değerlendirmesini ve parti beyanının aktarılan pasajlarını okumaya izin verdi. Doğrudan indirme HTTP 403."
+    },
+    {
+      "id": "pcof-paris",
+      "url": "https://pcof.net/communique-de-la-conference-internationale-des-partis-et-organisations-marxistes-leninistes-deurope/",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:21:26.513230+00:00",
+      "file": "pcof-paris.html",
+      "sha256": "324906ab0805d422f48b9942d1d1b3cdf9bf7a50a3fc42fc6ee01194146a0e03",
+      "size": 48462,
+      "mime": "text/html; charset=UTF-8",
+      "final_url": "https://pcof.net/communique-de-la-conference-internationale-des-partis-et-organisations-marxistes-leninistes-deurope/",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap016.0kAlYz/pcof-paris.html"
+    },
+    {
+      "id": "pcof-paris-document",
+      "url": "https://www.pcof.net/wp-content/uploads/2018/06/relu-Solidarite%CC%81-internationale-contre-la-re%CC%81action.pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:21:26.571964+00:00",
+      "file": "pcof-paris-document.pdf",
+      "sha256": "a63d07e8287ba6f8e38e219c52ef87bd5876f0cfa97caa7dfd2f7c4319e3c208",
+      "size": 46600,
+      "mime": "application/pdf",
+      "final_url": "https://www.pcof.net/wp-content/uploads/2018/06/relu-Solidarite%CC%81-internationale-contre-la-re%CC%81action.pdf",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap016.0kAlYz/pcof-paris-document.pdf"
+    },
+    {
+      "id": "un-sc-8233",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=S%2FPV.8233&t=pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:21:26.916867+00:00",
+      "file": "un-sc-8233.pdf",
+      "sha256": "a3b59f5e9b0e4d4797bee4c8a94b8ce27787aebd3e9fd9e1a6eb57c176bfd12d",
+      "size": 479600,
+      "mime": "application/pdf",
+      "final_url": "https://documents.un.org/doc/undoc/pro/n18/108/91/pdf/n1810891.pdf",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap016.0kAlYz/un-sc-8233.pdf"
+    },
+    {
+      "id": "mfa-105",
+      "url": "https://astana-be.mfa.gov.tr/Mission/ShowAnnouncement/342565",
+      "attempted_at": "2026-11-26T09:21:34.229680+00:00",
+      "status": "302",
+      "error": "curl: (47) Maximum (50) redirects followed",
+      "reading_access": "14 Nisan 2018 ve 105 sayılı Türkçe Dışişleri Bakanlığı açıklamasının başlığı ve giriş paragrafı yayıncıdan indekslenmiş nüshada okunabildi. Doğrudan indirmede yönlendirme döngüsü."
+    }
+  ],
+  "parts": [
+    {
+      "post_id": 2909,
+      "url": "https://www.emep.org/struggle-against-one-man-regime-and-its-new-attacks",
+      "api_date": "2018-07-03T19:02:43",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "a922dfcc2dbede2f9a399e984a86e3b096517844ca79c1a76442ee54ae8be304",
+      "start_char": 0,
+      "end_char": 7276,
+      "total_char": 7276,
+      "slice_sha256": "a922dfcc2dbede2f9a399e984a86e3b096517844ca79c1a76442ee54ae8be304",
+      "reading_note": "3 Temmuz İngilizce EMEP yayını 24 Haziran seçimini ele alan iki günlük GYK toplantısının ardından yapılan çağrıyı aktarıyor. Evrensel'in 2 Temmuz yayını çağrının Türkçe pasajlarını ve Pervin Buldan'ı HDP Eş Genel Başkanı olarak veriyor. İngilizce nüshadaki sözcü sıfatı Türkçe aktarımla uyuşmuyor. Toplantının takvim günleri ve imzalı tutanak açık. YSK kesin sonuçları ayrı kayıtta."
+    },
+    {
+      "post_id": 3022,
+      "url": "https://www.emep.org/la-lucha-contra-el-regimen-unipersonal-y-sus-nuevos-ataques",
+      "api_date": "2018-07-03T08:17:00",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "b772172c32f3e63d6fd5a7389f1a6d02fb953e10fde5f5ddc534a03ef4664290",
+      "start_char": 0,
+      "end_char": 7426,
+      "total_char": 7426,
+      "slice_sha256": "b772172c32f3e63d6fd5a7389f1a6d02fb953e10fde5f5ddc534a03ef4664290",
+      "reading_note": "3 Temmuz İspanyolca EMEP yayını aynı seçim değerlendirmesini ve çağrıyı aktarıyor. Barajı yüzde 10 diye sayısallaştırıyor ve Buldan'ı eş başkan olarak tanımlıyor. Enflasyonun çift haneye yaklaştığı ifadesi, İngilizce ve 2 Temmuz Türkçe aktarımda zaten çift hanelerde yükseldiği ifadesinden farklı. Bu metin karşılaştırması TÜİK serisinin denetimi yerine kullanılmadı."
+    },
+    {
+      "post_id": 2872,
+      "url": "https://www.emep.org/cipoml-erdoganin-otoriter-rejimine-karsi-mucadeleyi-destekliyoruz",
+      "api_date": "2018-06-18T12:07:23",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "f58cf4ba0df625ddbd26d781e2a3455185c452ca20d914108a18a96ea6eaeb30",
+      "start_char": 0,
+      "end_char": 5194,
+      "total_char": 5194,
+      "slice_sha256": "f58cf4ba0df625ddbd26d781e2a3455185c452ca20d914108a18a96ea6eaeb30",
+      "reading_note": "18 Haziran EMEP yayını, Paris'te Haziran 2018'de yapılan CIPOML Avrupa konferansının ortak bildirisini aktarıyor. Katılımcı örgüt PCOF'un 15 Haziran tarihli yayını ve iki sayfalık bildiri PDF'sinin sonundaki dokuz örgüt listesi EMEP'i de içeriyor. Belgenin tarih satırında yalnızca ay ve yıl bulunuyor. Toplantının tam günü, EMEP adına katılan kişi ve imzalı heyet listesi açık."
+    },
+    {
+      "post_id": 2811,
+      "url": "https://www.emep.org/we-condemn-the-attacks-on-syria-initiated-by-the-us-britain-and-france",
+      "api_date": "2018-04-17T15:37:29",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "2a7043955000a8581bdd2d17fab997c4ffb9fd5c97c5c9ac2944e27ec1fd171e",
+      "start_char": 0,
+      "end_char": 2562,
+      "total_char": 2562,
+      "slice_sha256": "2a7043955000a8581bdd2d17fab997c4ffb9fd5c97c5c9ac2944e27ec1fd171e",
+      "reading_note": "17 Nisan İngilizce parti yayını da operasyon karşıtlığını ve Türkiye hükümetine eleştiriyi aktarıyor. Rusya ve S-400 hakkında 14 Nisan Türkçe metninde yer almayan ek değerlendirmeler İspanyolca yayında da var. İki yabancı dil yayını ayrı arşiv gövdeleri ve aynı açıklama kümesinin genişletilmiş sürümleri."
+    },
+    {
+      "post_id": 2809,
+      "url": "https://www.emep.org/condenamos-los-ataques-de-estados-unidos-gran-bretana-y-francia-en-territorio-sirio",
+      "api_date": "2018-04-17T15:34:10",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "b8ffdd9d48b00cc6fed6c861c12bf0d6c1539bcdc580606e1b97ca7674fd9e95",
+      "start_char": 0,
+      "end_char": 2663,
+      "total_char": 2663,
+      "slice_sha256": "b8ffdd9d48b00cc6fed6c861c12bf0d6c1539bcdc580606e1b97ca7674fd9e95",
+      "reading_note": "17 Nisan İspanyolca parti yayını, 14 Nisan Türkçe açıklamasındaki operasyon karşıtlığını aktarırken Türkiye'nin Rusya ile ilişkileri ve S-400 hakkında ek değerlendirmeler içeriyor. Bu kısımlar okunmuş Türkçe metinde yer almıyor. Öngörüler parti yayınındaki değerlendirme olarak kaydedildi."
+    },
+    {
+      "post_id": 2798,
+      "url": "https://www.emep.org/abd-ingiltere-ve-fransanin-suriyeye-saldirisini-kiniyoruz",
+      "api_date": "2018-04-14T15:39:31",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "1dfad7932147dcc5d8f836a949626cf5112b58f84f899f32aeaec9cc58254f76",
+      "start_char": 0,
+      "end_char": 1361,
+      "total_char": 1361,
+      "slice_sha256": "1dfad7932147dcc5d8f836a949626cf5112b58f84f899f32aeaec9cc58254f76",
+      "reading_note": "14 Nisan EMEP Genel Merkezi açıklaması, ABD, Birleşik Krallık ve Fransa'nın Suriye'deki operasyonunu kınıyor ve Türkiye hükümetinin desteğini eleştiriyor. Dışişleri Bakanlığının aynı tarihli 105 sayılı açıklaması operasyonu yerinde bir tepki olarak niteliyor. BM Güvenlik Konseyinde Rusya'nın S/2018/355 taslağı aynı gün 3 lehte, 8 aleyhte ve 4 çekimser oyla kabul edilmedi (S/PV.8233, s. 23). Parti tutumu, hükümet açıklaması ve Konsey oylaması ayrı olaylar."
+    }
+  ]
+}
