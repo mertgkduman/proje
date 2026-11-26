@@ -8,7 +8,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
-| Yeni Parti | 144 | 141 | 62490423 |
+| Yeni Parti | 145 | 142 | 62719203 girdi ve kaynak, 62719510 önizleme ve bağımsız denetim |
 | TİP | 65 | 56 | 62718929, bağımsız arşiv denetimi |
 | DEM Parti | 89 | 13 | 62708088 / 62708185 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
@@ -728,3 +728,5 @@ Haziran 2021’in 20 ve Temmuz 2021’in 22 sayfasıyla ÇarkBaşak okuması 27/
 TİP’in 65/56 ve EMEP’in 87/81 çalışma çiftleri yalıtılmış önizlemelerden sonra güncellendi. İdlib’de 5 Mart 2020 Moskova ek protokolü her iki pakette aynı BM belgesi ve pasajıyla kaydedildi. TİP’in 3 Şubat ve EMEP’in 28 Şubat açıklamaları ayrı ilişkilerdir. Protokoldeki ateşkes ve devriye takvimi ile bunların sahadaki gerçekleşmesi ayrı kanıt gerektirir. TİP’in 12 Mart ücretli izin çağrısı 7244 sayılı Kanun’un koşullu ücretsiz izin düzenlemesiyle karşılaştırıldı. İzin kullanımı ve ücret ödemesi için uygulama kanıtı açık. İki pakette de kapsam kapanışı sıfır. [TİP önizlemesi](../04-05-checks/tip-2020-policy-62718929.json) [TİP varlık denetimi](../04-05-checks/tip-2020-policy-62718929-assets.json) [EMEP önizlemesi](../04-10-checks/idlib-2020-emep-v2-62718977.json) [EMEP ekleme denetimi](../04-10-checks/idlib-2020-emep-v2-62718977-append-only.log) [EMEP varlık denetimi](../04-10-checks/idlib-2020-emep-v2-62718977-assets.json)
 
 ÇarkBaşak resmî dizinindeki 31 ayrı özgün PDF ve 677 sayfa okuma makbuzuyla doğrulandı. 25 Kasım alımında 30–40 numaralı yollar genel dizini döndürdü. Katalog 41 ve 42 iki farklı 2025 PDF’si ve basılı numaraları aynı. Sayıların parti anlatımları sonraki kaynak araştırması için ayrı kaydedildi. [Dizin](../04-05-checks/tip-cark-basak-catalog/catalog.json) [Okuma kaydı](../04-05-checks/tip-cark-basak-catalog/DEVAM.md)
+
+Yeni Parti’nin 2/3961 dosyasındaki çalışma çifti 145/142 oldu. ANKA 27 Ekim 2026 tarihli parti toplantısındaki Özgür Özel açıklamasını, TBMM sıra 295 raporunun basılı 26. sayfası Talih Özcan ve Utku Çakırözer’in 28 Ekim tarihli şerhini, Sözcü ise 3 Kasım’da bu şerhi aktarıyor. Komisyon görüşmesi, şerh tarihi, 30 Ekim raporu ve 5 Kasım Genel Kurulu ayrı. Kişi bazında oy, fiilî sevk ve açıklamanın etkisi açık. Aynı girdi ve kaynak özetleriyle düğüm yerel diskinde kurulan önizleme iki görünümde ve 2.208 arşiv dosyasında doğrulandı. [Önizleme](3961-yeni-committee-preview-recovery-62719510.json) [Bağımsız denetim](3961-yeni-committee-preview-recovery-62719510-independent.json)
