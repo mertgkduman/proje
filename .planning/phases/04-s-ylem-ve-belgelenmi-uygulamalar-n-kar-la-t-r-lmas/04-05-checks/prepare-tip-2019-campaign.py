@@ -239,57 +239,6 @@ def add_case(key, topic, comparison_row, source_day, occurrence_day, title, comm
         state="eligible", reason=context, passage_ids=json.dumps([pid(ref) for ref in refs]))
 
 
-def finding(suffix, content, refs, *, quote=False, pair=None):
-    ident = f"{case}-{suffix}"
-    insert("finding", dict(id=ident, party_id=party, heading="Belgelenmiş uygulamalar", pair_id=pair or ident,
-        text=content, provenance="quote" if quote else "summary", epistemic_type="claim"))
-    insert("review", dict(id=f"review-{ident}", kind="finding", subject_id=ident, reviewer_kind="agent", reviewed_at=now,
-        result="reviewed", reason="İddianın dayandığı tarihli özgün pasajlar okundu."))
-    for ref in refs:
-        insert("finding_evidence", dict(finding_id=ident, passage_id=pid(ref), role="quotation" if quote else "support"))
-        insert("verification", dict(finding_id=ident, passage_id=pid(ref), checked_at=now, result="confirmed", reason=passages[ref]["section"]))
-    return ident
-
-
-event_claims = {}
-
-def add_case(key, topic, comparison_row, source_day, occurrence_day, title, common_key, context, occurrence_basis,
-             summary, outcome, comparison, authority, timeline, points, extra_refs=(), *, statement_version=None, period_basis=None):
-    call = f"{key}-call"
-    summary_id = finding(f"{key}-summary", summary, (call,))
-    quote = finding(f"{key}-quote", passages[call]["exact"], (call,), quote=True, pair=summary_id)
-    statement = f"{case}-{key}-statement"
-    add("practice_statement", id=statement, party_id=party, topic_id=topic, taxonomy_version=4,
-        summary_finding_id=summary_id, quote_finding_id=quote, statement_at=source_day,
-        date_precision="day" if source_day else "unknown", version_id=statement_version or vid(f"{key}-statement"),
-        period_basis=period_basis or "TİP’in tarihli özgün parti yayımı.",
-        comparison_row_id=comparison_row, uncertainty_reason=limitations[key])
-    event = f"{case}-{key}-event"
-    add("practice_event", id=event, common_event_key=common_key, event_at=occurrence_day, date_precision="day",
-        date_unknown_reason=None, title=title, scope_context=context, occurrence_basis=occurrence_basis)
-    for ref, stage, point, basis in points:
-        add("practice_event_evidence", event_id=event, passage_id=pid(ref), stage=stage, supported_point=point,
-            concrete_basis=passages[ref]["section"], limitation=limitations[key], epistemic_type="claim")
-        add("practice_evidence_assessment", event_id=event, passage_id=pid(ref), stage=stage, basis_kind=basis)
-        event_claims[pid(ref)] = point
-    refs = tuple(point[0] for point in points)
-    result = finding(f"{key}-result", outcome, refs)
-    explanation = finding(f"{key}-comparison", comparison, (call, *refs, *extra_refs))
-    relation = f"{case}-{key}-relation"
-    add("practice_relation", id=relation, party_id=party, topic_id=topic, scope_id=scopes[topic,"event"], statement_id=statement,
-        event_id=event, target_finding_id=summary_id, result_finding_id=result, explanation_finding_id=explanation,
-        comparability_reason=context, temporal_context=timeline, authority_context=authority, uncertainty_reason=limitations[key])
-    add("practice_candidate", id=f"{case}-{key}-candidate", scope_id=scopes[topic,"event"], event_id=event, relation_id=relation,
-        state="eligible", reason=context, passage_ids=json.dumps([pid(ref) for ref in refs]))
-
-
-limitations = {
-    "damal": "Bağımsız aday için ilçe seçim kurulu birleştirme tutanağı ve bildirinin kesin yayım günü açık.",
-    "elig21": "YSK’nın TİP için hangi ölçütü hangi belgeyle değerlendirdiği ve olası itiraz kararı açık.",
-    "elig22": "YSK tespiti kararın kendi tarihli eşiklerine dayanıyor. İlk yeterlilik günü veya partiye özgü sicil yazısı açık.",
-    "ozsut": "Eylem dizisinin başlangıcı, sonraki ödemelerin tamamı, ödeme belgeleri ve katkının ödeme üzerindeki etkisi açık.",
-}
-
 limitations = {
     "wage": "Parti yayınındaki 3.000 TL’nin brüt ya da net niteliği ve kesin yayım günü açık. Karar fiilî ücret ödemesi değildir.",
     "budget": "Kişisel oylar için açık oy eki ve fiilî bütçe gerçekleşmeleri ayrı. Konuşma, oy veya ödenek gerçekleşmesi olarak sayılmadı.",
