@@ -37,13 +37,13 @@ passages={
  'authority':('anka',None,None,"YENİ Parti Genel Başkanı Özgür Özel, TBMM Dışişleri Komisyonu'nda görüşülen Mekke Ortak Savunma Anlaşması",'Genel başkan sıfatı ve aynı teklif'),
  'news':('sozcu',None,None,'YENİ Parti Eskişehir Milletvekili Utku Çakırözer ve Düzce Milletvekili Talih Özcan, kanun teklifine yazdıkları muhalefet şerhinde','Şerhin iki milletvekili'),
  'signed':('report',25,'26','28.10.2026','Şerhin kendi tarihi ve basılı adların bulunduğu sayfa'),
- 'identity':('report',23,'24','Bizler TBMM Dışişleri Komisyonu’nun Yeni Parti’ye mensup temsilcileri olarak','İki üyenin parti sıfatı ve görevini bildiren şerh'),
+ 'name1':('report',25,'26','Talih Özcan','Şerhte adı bulunan Düzce milletvekili'),
+ 'name2':('report',25,'26','Utku Çakırözer','Şerhte adı bulunan Eskişehir milletvekili'),
 }
 for k,(source,page,printed,exact,label) in passages.items():
  raw=sources[source][0].read_bytes();text=html_source_text(raw) if page is None else pdf_page_text(sources[source][0],page)
- if k!='identity':assert exact in text,(k,exact)
+ assert exact in text,(k,exact)
  add('passage',dict(id=q(k),version_id=q(source)+'-v1',exact=exact,prefix=None,suffix=None,article=None,section=label,pdf_page_index=page,printed_page=printed))
- if k=='identity':add('manual_passage',dict(passage_id=q(k),checked_at=now,method='Özgün PDF 23. indeks sayfası Poppler/Cairo görüntüsünde okundu.',reason='Şerh gövdesi tarama görüntüsüdür, metin katmanı yalnız altbilgi içerir.'))
 
 def finding(k,text,refs,quote=False,pair=None):
  ident=q(k);add('finding',dict(id=ident,party_id='yeni-parti',heading='Söylem ve uygulama',pair_id=pair or ident,text=text,provenance='quote' if quote else 'summary',epistemic_type='claim'))
@@ -54,20 +54,24 @@ def finding(k,text,refs,quote=False,pair=None):
  return ident
 summary=finding('statement-summary','Özgür Özel, Yeni Parti genel başkanı olarak Mekke Anlaşması kapsamında Türk askerinin Yemen’e gönderilmesine karşı çıktı.',['statement','authority'])
 quote=finding('statement-quote',passages['statement'][3],['statement'],True,summary)
-explain=finding('explanation','Yeni Parti genel başkanı 27 Ekimde Mekke Anlaşması kapsamında Yemen’e asker gönderilmesine itiraz etti. İki Yeni Parti komisyon üyesi 28 Ekim tarihli şerhte anlaşmaya muhalefet etti. Şerh kişisel oy veya fiilî asker sevki kanıtı değildir.',['statement','authority','news','signed','identity'])
+explain=finding('explanation','Yeni Parti genel başkanı 27 Ekimde Mekke Anlaşması kapsamında Yemen’e asker gönderilmesine itiraz etti. İki Yeni Parti komisyon üyesi 28 Ekim tarihli şerhte anlaşmaya muhalefet etti. Şerh kişisel oy veya fiilî asker sevki kanıtı değildir.',['statement','authority','news','signed','name1','name2'])
 scope='practice-d49dcefd73a16d98c559f5127cd6d70a202d9e1614805d83e7f90d4cd310bb07';topic='dis-guvenlik';event=q('event');sid=q('statement-record');relation=q('relation')
 new['practice_statement'].append(dict(id=sid,party_id='yeni-parti',topic_id=topic,taxonomy_version=4,summary_finding_id=summary,quote_finding_id=quote,statement_at='2026-10-27',date_precision='day',version_id=q('anka')+'-v1',period_basis='27 Ekim ANKA haberindeki Yeni Parti genel başkanı açıklaması.',uncertainty_reason='Konuşmanın komisyon toplantısına göre saati doğrulanmadı.',comparison_row_id='04-03-v3-0303-epm-program-dis-guvenlik-row'))
-new['practice_event'].append(dict(id=event,common_event_key='tbmm-2-3961-yeni-parti-2026-10-28-serh',event_at='2026-10-28',date_precision='day',date_unknown_reason=None,title='2/3961 komisyon raporundaki Yeni Parti muhalefet şerhi',scope_context='Talih Özcan ile Utku Çakırözerin 28 Ekim tarihli Mekke Anlaşması muhalefet şerhi.',occurrence_basis='TBMM sıra 295 raporunun basılı 24 ve 26. sayfaları ile 3 Kasım Sözcü haberi.'))
-for k in ('news','signed','identity'):
- new['practice_event_evidence'].append(dict(event_id=event,passage_id=q(k),stage='action',supported_point=passages[k][4],concrete_basis='TBMM raporunun görüntüsü veya şerhi aktaran haber.',limitation='Şerh tarihi toplantı, kişisel oy, yayın ve fiilî sevk tarihlerinden ayrıdır.',epistemic_type='claim'))
+new['practice_event'].append(dict(id=event,common_event_key='tbmm-2-3961-yeni-parti-2026-10-28-serh',event_at='2026-10-28',date_precision='day',date_unknown_reason=None,title='2/3961 komisyon raporundaki Yeni Parti muhalefet şerhi',scope_context='Talih Özcan ile Utku Çakırözerin 28 Ekim tarihli Mekke Anlaşması muhalefet şerhi.',occurrence_basis='TBMM sıra 295 raporunun basılı 26. sayfası ile 3 Kasım Sözcü haberi.'))
+for k in ('news','signed','name1','name2'):
+ new['practice_event_evidence'].append(dict(event_id=event,passage_id=q(k),stage='action',supported_point=passages[k][4],concrete_basis='TBMM raporunun metin katmanı veya şerhi aktaran haber.',limitation='Şerh tarihi toplantı, kişisel oy, yayın ve fiilî sevk tarihlerinden ayrıdır.',epistemic_type='claim'))
  new['practice_evidence_assessment'].append(dict(event_id=event,passage_id=q(k),stage='action',basis_kind='document'))
 new['practice_relation'].append(dict(id=relation,statement_id=sid,event_id=event,party_id='yeni-parti',topic_id=topic,scope_id=scope,comparability_reason='Aynı anlaşma ve savaş ortamına asker sevki riski yönünden karşılaştırılır.',target_finding_id=summary,result_finding_id=None,explanation_finding_id=explain,temporal_context='27 Ekim açıklaması ve 28 Ekim tarihli şerh, 30 Ekim rapor ve 5 Kasım Genel Kurulundan ayrıdır.',authority_context='Özel genel başkan olarak konuştu. Özcan ve Çakırözer kendilerini komisyonun Yeni Parti temsilcileri olarak tanımladı.',uncertainty_reason='Kişisel oylar, şerhin hazırlama saati, açıklamanın etkisi ve fiilî sevk gösterilmiyor.'))
-new['practice_candidate'].append(dict(id=q('candidate'),scope_id=scope,event_id=event,relation_id=relation,state='eligible',reason='İki tarihli kaynak aynı anlaşma ve asker sevki kaygısını ele alır.',passage_ids=json.dumps([q(x) for x in ('news','signed','identity')])))
+new['practice_candidate'].append(dict(id=q('candidate'),scope_id=scope,event_id=event,relation_id=relation,state='eligible',reason='İki tarihli kaynak aynı anlaşma ve asker sevki kaygısını ele alır.',passage_ids=json.dumps([q(x) for x in ('news','signed','name1','name2')])))
+for k in ('anka','sozcu','report'):
+ new['practice_attempt_v2'].append(dict(id=q(k+'-reading'),scope_id=scope,attempted_at=now,query='2/3961 Yeni Parti açıklama ve muhalefet şerhi',url=sources[k][1],result='examined',reason='İlgili metin, tarih ve aktör sıfatı kaynakta okundu.',source_version_id=q(k)+'-v1'))
+ new['practice_scope_source'].append(dict(scope_id=scope,version_id=q(k)+'-v1',inspected_sections=json.dumps([passages[x][4] for x in passages if passages[x][0]==k],ensure_ascii=False),inspected_at=now))
 for k,rows in new.items():p['practice_records'][k].extend(rows)
 data=json.loads(Path('data/releases/f67ca0a35e634035bf3aa83a46571f50/records.json').read_text())
 for x in p['entries']:
  if x['values'] not in data.setdefault(x['kind'],[]):data[x['kind']].append(x['values'])
 for k,rows in p['practice_records'].items():
+ data.setdefault(k,[])
  for x in rows:
   if x not in data.setdefault(k,[]):data[k].append(x)
 rules.validate_practices(data);print('SEMANTIC_PASS',flush=True)
