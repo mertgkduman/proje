@@ -1,0 +1,48 @@
+{
+  "tranche_id": "saadet-party-news-209",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-26T04:49:44.049136+00:00",
+  "reads": [
+    {
+      "post_id": 370,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/saadet-partisi-turkiyenin-umududur",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=saadet-partisi-turkiyenin-umududur",
+      "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=saadet-partisi-turkiyenin-umududur",
+      "http_status": 200,
+      "published_at": "2022-11-08T21:00:00+00:00",
+      "accessed_at": "2026-11-26T04:49:05.387443+00:00",
+      "original_path": "party-news-bodies/370.json",
+      "original_bytes": 19255,
+      "sha256": "94360cd652708a390c8618e079c5ee909ee9d5d74b8449851dea0a39afdeeea5",
+      "normalized_body_sha256": "b69a899c5fa325a1a0041a4ccf2bea8883552284d2cb515ddead3024bc619959",
+      "source_section_range": [
+        0,
+        15369
+      ],
+      "state": "examined",
+      "point": "Enflasyon, asgari ücret ve okul açlığı üzerine ekonomik eleştiri.",
+      "statement": "Temel Karamollaoğlu Ekim 2020 ve Ekim 2022 yıllık TÜFE oranlarını ve Avrupa asgari ücret sıralaması iddiasını açıklıyor, okula aç giden çocuklardan söz ediyor.",
+      "concrete_evidence": "9 Kasım 2022 yerel günlü parti yayımında belirtilen TÜFE oranları yüzde 11,89 ve yüzde 85,51. Asgari ücret sıralaması ve okul açlığı ifadeleri konuşmacının iddiaları olarak korunuyor.",
+      "selected_passages": [
+        {
+          "start": 9957,
+          "end": 10080,
+          "exact": "TÜFE; 2020 yılı Ekim ayı itibariyle yıllık % 11,89 seviyesinde iken, 2022 Ekim ayı itibariyle % 85,51 seviyesine çıkmıştır."
+        },
+        {
+          "start": 10652,
+          "end": 10774,
+          "exact": "Avrupa’da en düşük asgari ücret ödenen ikinci ülkeyiz ve aynı zamanda asgari ücretli çalışan oranı en yüksek olan ülkeyiz."
+        }
+      ],
+      "open_provenance": "TÜİK serisi ve Avrupa ücret sıralamasının coğrafyası, para birimi, net veya brüt ölçütü bağımsız doğrulanmadı. Okulda ücretsiz yemek önerisi veya uygulama sonucu bu metinde bulunmuyor. Diğer siyasi partilere atfedilen vaat iddiaları özgün vaat ve verilerle doğrulanmadı."
+    }
+  ],
+  "completed_pre_cut_bodies": 296,
+  "remaining_pre_cut_bodies": 353,
+  "closure_refs": [],
+  "source_token_observation": "15.369 karakterlik tekil gövdenin tamamı ayrı dilimde okunmuştur. Araç çıktısı 12.000 token sınırının altındadır.",
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı ilk indirme dosyasının mtime değeridir."
+}

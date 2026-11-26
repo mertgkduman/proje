@@ -1,0 +1,53 @@
+{
+  "tranche_id": "saadet-party-news-208",
+  "party_id": "saadet",
+  "reviewer_kind": "agent",
+  "processed_at": "2026-11-26T04:48:55.431541+00:00",
+  "reads": [
+    {
+      "post_id": 371,
+      "publisher": "Saadet Partisi",
+      "public_url": "https://saadet.org.tr/bu-alcak-saldiri-rutin-ifadelerle-gecistirilemez",
+      "source_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-alcak-saldiri-rutin-ifadelerle-gecistirilemez",
+      "final_url": "https://admin.saadet.org.tr/veriler/api.php?resource=haber_detay&kod=bu-alcak-saldiri-rutin-ifadelerle-gecistirilemez",
+      "http_status": 200,
+      "published_at": "2022-11-16T21:00:00+00:00",
+      "accessed_at": "2026-11-26T04:47:59.046175+00:00",
+      "original_path": "party-news-bodies/371.json",
+      "original_bytes": 17437,
+      "sha256": "3917ba451c24174aee5f1ec50044ccf73d42b3dfbdca4238ed225026eb361bf9",
+      "normalized_body_sha256": "faed371baae5e5603621a690af426b04fffaa47352a5f35cb31fa719cc0a4580",
+      "source_section_range": [
+        0,
+        13431
+      ],
+      "state": "examined",
+      "point": "14 Kasım liderler toplantısı ve parti başkanlık divanı.",
+      "statement": "Temel Karamollaoğlu, 14 Kasım toplantısının DEVA Partisi ev sahipliğinde yapıldığını belirtiyor ve yeni dönem görev dağılımını açıklıyor.",
+      "concrete_evidence": "17 Kasım yerel günlü parti yayımı, toplantıyı ikinci turun ikinci buluşması olarak anlatıyor. Hasan Bitmez Seçim İşleri ve Bülent Kaya Hukuk İşleri başkanı olarak listeleniyor.",
+      "selected_passages": [
+        {
+          "start": 6321,
+          "end": 6420,
+          "exact": "14 Kasım Pazartesi günü, 2. turun 2. toplantısını Deva Partisi'nin ev sahipliğinde gerçekleştirdik."
+        },
+        {
+          "start": 10959,
+          "end": 10996,
+          "exact": "Seçim İşleri Başkanımız; Hasan Bitmez"
+        },
+        {
+          "start": 11274,
+          "end": 11310,
+          "exact": "Hukuk İşleri Başkanımız; Bülent Kaya"
+        }
+      ],
+      "open_provenance": "28 Kasım tarihli CHP yayımı Bülent Kaya için Seçim İşleri Başkanı unvanını kullanıyor. Arada görev değişikliği veya yayın hatası olup olmadığı doğrulanmadı. Parti açıklaması toplantı sonrası beyanıdır. Öteki partiler veya bağımsız olay dayanakları yerine geçmez."
+    }
+  ],
+  "completed_pre_cut_bodies": 295,
+  "remaining_pre_cut_bodies": 354,
+  "closure_refs": [],
+  "source_token_observation": "13.431 karakterlik tekil gövdenin tamamı okunmuştur. Araç çıktısı 12.000 token sınırının altındadır.",
+  "normalization": "HTML varlıkları iki kez çözüldü. Etiketler kaldırıldı ve boşluklar birleştirildi. Erişim zamanı ilk indirme dosyasının mtime değeridir."
+}
