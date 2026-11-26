@@ -854,3 +854,13 @@ doğrulanmış arşiv varlığı taşıyor. [Bağımsız makbuz](../04-10-checks
 62736494 işlemci kotasında beklerken aynı denetim 62258890 tahsisinde tamamlandı.
 EMEP'in önceki adlarına ilişkin [YSK, AYM, AİHM ve kongre kaydı](../04-10-checks/historical-name-source-reading.json)
 ayrı izleniyor. İmzalı kuruluş tüzüğü ile 2005 kongre kararı araştırılmaya devam ediyor.
+
+## TİP tüzüğü ve amblem beyanı
+
+TİP ad, kısa ad ve amblem söylemi incelendi. 2018–2026 arşiv kopyaları,
+PDF nüshaları ve sicil satırı ayrı okundu. İmzalı kuruluş nüshası erişilemeyen
+uç olarak kaydedildi. Fiilî amblem kullanımı için olay kapsamı açık.
+
+[Önizleme](/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0405-tip-kimlik-62738520/releases/be75c24a4e8949bf9f27c39e0118c5b2/index.html).
+[Bağımsız denetim](../04-05-checks/tip-kimlik-62738520-independent.json).
+İki kapsam hücresi kapandı, 5.488 açık. Faz 4'te 3/15 plan tamamlandı.
