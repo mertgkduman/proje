@@ -1,0 +1,54 @@
+{
+  "tranche_id": "0410-emep-api-304",
+  "read_at": "2026-11-26T04:30:18.369098+00:00",
+  "method": "3197 özgün HTML gövdesinin sadece [16000,32000) aralığı doğrudan okundu; aralıklar aynı gövde SHA-256 ile bağlandı.",
+  "parts": [
+    {
+      "post_id": 3197,
+      "url": "https://www.emep.org/emegin-cevrenin-ve-kulturun-yasatildigi-kentler-icin-halkci-belediyecilik",
+      "api_date": "2019-02-25T15:44:42",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+      "body_sha256": "dca6251ca67b95608c9c7f2421d7c3afd77a7a0760a28a8972cd26d19fe771a3",
+      "start_char": 16000,
+      "end_char": 32000,
+      "total_char": 48550,
+      "slice_sha256": "931b5384c523336664a78a442e2a460609b83a4b7ce1bb5e1db94402db9a7d41",
+      "reading_note": "Seçilmiş yerel yönetimler; valilik ve kaymakamlıkların kaldırılması ve kayyım yetkisinin yasal değişiklikle sona erdirilmesi; halkın yöneticileri geri çağırması; yönetici ücretlerinin vasıflı işçi veya memur düzeyi; halk meclisleri, açık toplantı ve hesapların aylık yayımlanması önerilir. Son bölüm kâr yerine toplumsal yararı ve belediye hizmetlerini savunur. Bunlar parti politika önerileridir; mevcut mevzuat, atanma veya seçilmiş bir belediyedeki gerçekleşme değildir.",
+      "anchors": [
+        {
+          "exact": "Atanmışlar değil seçilmişler yönetmelidir",
+          "start_char": 18039,
+          "end_char": 18080
+        },
+        {
+          "exact": "Halk meclisleri yerel yönetimlerin en üst organı olmalıdır",
+          "start_char": 21738,
+          "end_char": 21796
+        },
+        {
+          "exact": "vasıflı bir işçi ya da memurdan fazla ücret almamalıdır",
+          "start_char": 20660,
+          "end_char": 20715
+        },
+        {
+          "exact": "Üretken ve paylaşımcı belediyecilik",
+          "start_char": 28446,
+          "end_char": 28481
+        }
+      ]
+    }
+  ],
+  "total_source_chars": 16000,
+  "next_unread": {
+    "post_id": 3197,
+    "start_char": 32000,
+    "total_char": 48550,
+    "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json"
+  },
+  "limitations": [
+    "Metindeki atama ve görevden alma yetkileri, maaş ve meclis kararları mevcut hukuk ya da uygulama olarak alınamaz.",
+    "Gövdenin 32000 sonrası okunmadı; kapsam açık."
+  ],
+  "closure_refs": []
+}
