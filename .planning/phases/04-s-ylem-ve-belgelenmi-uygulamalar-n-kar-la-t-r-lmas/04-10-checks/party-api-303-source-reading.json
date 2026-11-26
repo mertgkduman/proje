@@ -1,0 +1,55 @@
+{
+  "tranche_id": "0410-emep-api-303",
+  "read_at": "2026-11-26T04:29:10.619510+00:00",
+  "method": "3197 özgün HTML gövdesinin sadece [0,16000) karakter aralığı doğrudan okundu; aralık bir cümlenin ortasında bitiyor. UTF-8 SHA-256 tüm gövdeye ve aralığa ayrı bağlanmıştır.",
+  "parts": [
+    {
+      "post_id": 3197,
+      "url": "https://www.emep.org/emegin-cevrenin-ve-kulturun-yasatildigi-kentler-icin-halkci-belediyecilik",
+      "api_date": "2019-02-25T15:44:42",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+      "body_sha256": "dca6251ca67b95608c9c7f2421d7c3afd77a7a0760a28a8972cd26d19fe771a3",
+      "start_char": 0,
+      "end_char": 16000,
+      "total_char": 48550,
+      "slice_sha256": "e0431f5b3a9b17096b5915d3c9950205d9d2c1270c2aa3309ba9c864b28070d7",
+      "reading_note": "25 Şubat 2019 tarihli yerel seçim metninin başlangıcı; EMEP merkezi yönetim, yap-işlet-devret, kayyım ve büyük projelere ilişkin eleştirilerini ortaya koyar; 31 Mart öncesi ekonomik kriz, zam, beslenme, ulaşım, enerji ve barınma alanlarında halkçı belediyecilik çağrısı yapar. 2017 Sayıştay raporlarına dair yolsuzluk iddiası, belirli bir rapor ve karar ayrıca okunmadan bağımsız olgu değildir. Metindeki ücretsiz hizmet ve zam uygulamama önerileri parti görüşüdür, gerçekleşmiş belediye işlemi değildir.",
+      "anchors": [
+        {
+          "exact": "31 Mart seçimleri",
+          "start_char": 143,
+          "end_char": 160
+        },
+        {
+          "exact": "Yerel seçimler ve krizin faturasına karşı mücadele",
+          "start_char": 5310,
+          "end_char": 5360
+        },
+        {
+          "exact": "HALKÇI BELEDİYECİLİĞİN TEMEL ÖZELLİKLERİ",
+          "start_char": 12364,
+          "end_char": 12404
+        },
+        {
+          "exact": "2017 yılına ait raporlarla",
+          "start_char": 13967,
+          "end_char": 13993
+        }
+      ]
+    }
+  ],
+  "total_source_chars": 16000,
+  "next_unread": {
+    "post_id": 3197,
+    "start_char": 16000,
+    "total_char": 48550,
+    "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json"
+  },
+  "limitations": [
+    "Bu aralıkta merkezi yönetim ve kamu kurumlarına ilişkin iddialar parti görüşü olarak aktarılır.",
+    "Sayıştay raporları, atama belgeleri ve belediye kararları ayrı kurum kanıtı gerektirir.",
+    "Gövdenin 16000 sonrası okunmadı; araştırma kapsamı açık."
+  ],
+  "closure_refs": []
+}
