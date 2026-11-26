@@ -895,3 +895,22 @@ Güncel dokuz paket için izole birleşik HTML ve SQLite önizlemesi 62739549
 numaralı Slurm işiyle kuyruğa alındı. Son kontrolde işlemci kotası nedeniyle
 başlangıç zamanı verilmedi. Yapısal birleştirme sonucu ve iki kapsam kapanışının
 tek tek bağımsız denetimleri kayıtlı.
+
+## DEM grup anteti ve sonraki işlerin durumu
+
+Tüzükteki HEDEP ve DEM Parti kısa adları, fiilî kullanımın görüldüğü üç
+[imzalı teklif kaydıyla](../04-06-checks/short-name-parliamentary-use-reading.json)
+karşılaştırıldı. [Başkanlığa geliş kayıtları](../04-06-checks/short-name-signed-submissions-ledger-reading.json)
+antet günü, geliş günü ve havale gününü ayırıyor. DEM adayına üç olay,
+üç ilişki ve iki tüzük beyanı eklendi. İzole girdi kontrolü geçti ve
+330 kaynak dosyasının mevcudiyeti doğrulandı. 62739992 numaralı kaynak ve
+önizleme işi işlemci kotasında, 62740168 numaralı bağımsız denetim onun
+başarılı tamamlanmasını bekliyor. [Aday ve iş kimlikleri](../04-06-checks/dem-kimlik-candidate-status.json).
+
+EMEP API metinlerinde 2.619 tam okuma doğrulandı ve 651 açık kaldı.
+[Son okuma kaydı](../04-10-checks/party-api-2017-year-end-congress-spanish-reading.json)
+çevirideki iki seçim tarihini YSK kayıtlarıyla karşılaştırıyor.
+
+Birleşik önizleme işi 62739549, DEM adayından önce kabul edilmiş dokuz
+paketin sabit özetlerini kullanıyor. Bu birleşimde iki kapsam hücresi kapalı.
+Kanonik arşiv işaretçisi f67ca0a35e634035bf3aa83a46571f50 sürümünü gösteriyor.
