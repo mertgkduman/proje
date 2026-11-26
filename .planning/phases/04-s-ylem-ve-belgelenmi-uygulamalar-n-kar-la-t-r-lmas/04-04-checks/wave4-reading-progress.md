@@ -914,3 +914,16 @@ EMEP API metinlerinde 2.619 tam okuma doğrulandı ve 651 açık kaldı.
 Birleşik önizleme işi 62739549, DEM adayından önce kabul edilmiş dokuz
 paketin sabit özetlerini kullanıyor. Bu birleşimde iki kapsam hücresi kapalı.
 Kanonik arşiv işaretçisi f67ca0a35e634035bf3aa83a46571f50 sürümünü gösteriyor.
+
+## TİP’in 2018 ad ve rumuz kararı
+
+[AYM'nin 2018/9 sayılı kararının iki nüshası](../04-05-checks/tip-2018-name-and-emblem-evidence-reading.json)
+arşivlendi. 11 Ocak 2018 cevabına ilişkin Başsavcılık aktarımı amblemin
+değiştiğini bildiriyor. Hüküm ad, rumuz ve sicilden terkin talebiyle sınırlı.
+2017 imzalı tüzüğü ve 11 Ocak cevabındaki amblem görseli açık kaldı.
+
+TİP'in izinli kapsam geçmişini koruyan [aday paket](../04-05-checks/tip-aym-kimlik-candidate-status.json)
+eski kapanışa bağlı yeniden açılış ve bir AYM olayı içeriyor. İki hücre
+aday doğrulamasında açık. 62740417 önizlemesi işlemci kotasında,
+62740426 bağımsız denetimi başarılı önizlemeyi bekliyor. Mevcut kabul
+edilmiş paketlerde önceki iki kapanış yer alıyor.
