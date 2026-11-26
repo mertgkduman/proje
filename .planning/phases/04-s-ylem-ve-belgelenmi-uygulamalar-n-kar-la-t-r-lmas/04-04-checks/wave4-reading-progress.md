@@ -813,3 +813,17 @@ EMEP'te 3.270 API gövdesinin 2.586'sı tam okundu, 684 gövde açık. [2018 se�
 22 ve 25 Nisan YSK kararlarını, seçim desteğinin açıklanmasını ve 4 Temmuz
 kesin sonuçlarını birbirinden ayırıyor. Yeni dosyanın arşiv denetimi 62735266
 ve 62735267 işleriyle sürüyor.
+
+## Yeni Parti adı ve amblemi, 2026-11-26
+
+`scope-379` ad, kısa ad ve amblem söylemi kapandı. 22 Temmuz tarihli tüzük PDF'sinin
+beşinci sayfası, Madde 1'in HTML nüshası ve 365 numaralı sicil kaydı birlikte
+okundu. `scope-380` araştırması sürüyor. 29 Eylül ve 21 Ekim AYM gündemlerinde
+E.2026/9 sonuç alanı boş. Savunma süresi AA'ya, ret haberi DHA'ya atfedildi.
+İmzalı karar ve tebligat için takip sürüyor.
+
+Önizleme [iki görünüm](/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0404-yeni-parti-kimlik-2026-62734724/releases/4b85a80528ee47f9842ff43fa4aa25b6/index.html).
+[Bağımsız denetim](yeni-parti-kimlik-2026-62734724-independent.json) SQLite, kayıtlar, iki okuyucu
+görünümü ve 2224 varlığı doğruladı. Yeni Parti paketi
+148 olay, 142 ilişki ve 1 kapsam kapanışı taşıyor. Faz 4'te 3/15 plan
+tamamlandı ve 5.489 kapsam hücresi açık.
