@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from hashlib import sha256
 import json
 from pathlib import Path
+import sys
 
 from arsiv import html_source_text, pdf_page_text, readable_bytes
 from arsiv_gorunum import build_view, validate_view
@@ -11,6 +12,8 @@ import uygulamalar as rules
 
 
 checks = Path(__file__).resolve().parent
+assert len(sys.argv) in (1, 2)
+output_dir = Path(sys.argv[1]).resolve() if len(sys.argv) == 2 else checks
 practices = Path("data/practices")
 source_root = practices / "sources" / "tip"
 prefix = "0405-tip-2020-policy"
@@ -186,7 +189,8 @@ cases = (
          title="Türkiye ve Rusya’nın İdlib ek protokolü",
          summary="TİP, 3 Şubat’ta Türk Silahlı Kuvvetlerinin Suriye’den çekilmesini ve Ankara ile Şam arasında doğrudan temas kurulmasını istedi.",
          context="TİP’in İdlib bağlamındaki çekilme ve diplomasi talebi ile Türkiye ve Rusya arasındaki İdlib protokolü aynı bölgesel gelişmeyle ilgili.",
-         occurrence="Türkiye ve Rusya temsilcilerinin BM S/2020/187 sayılı ortak iletimi ve imzalı ekin metni.",
+         event_context="5 Mart 2020’de Moskova’da Türkiye ve Rusya’nın İdlib Gerginliği Azaltma Bölgesi için imzaladığı ek protokol.",
+         occurrence="Türkiye ve Rusya temsilcilerinin 6 Mart tarihli S/2020/187 ortak iletimi ve ekindeki protokol.",
          outcome="Türkiye ve Rusya 5 Mart’ta Moskova’da İdlib protokolünü imzaladı. Metin, temas hattında askerî faaliyetlerin 6 Mart 00.01’den itibaren durdurulmasını öngördü.",
          comparison="TİP’in talebi Suriye’den çekilme ve Ankara–Şam temasıydı. Protokol, Türkiye ile Rusya arasında İdlib’de çatışmanın durdurulması ve devriye düzenlemeleri getirdi. Taraflar ve düzenlemenin kapsamı farklı.",
          authority="TİP açıklamayı yayımladı. Protokolün tarafları Türkiye ve Rusya, mektubun muhatabı BM Güvenlik Konseyi Başkanı.",
@@ -198,6 +202,7 @@ cases = (
          title="7244 sayılı Kanunla fesih sınırı ve ücretsiz izin düzenlemesi",
          summary="TİP, 12 Mart’ta salgın nedeniyle kalabalık ortamlarda çalışan emekçilere en az iki hafta ücretli idari izin verilmesini istedi.",
          context="Salgında çalışma ilişkileri ve gelir güvencesi hakkında 12 Mart tarihli parti açıklaması ile Nisan ayındaki yasal düzenleme.",
+         event_context="7244 sayılı Kanunun 9. maddesiyle getirilen fesih sınırı ve tam veya kısmi ücretsiz izin düzenlemesi.",
          occurrence="7244’ün 17 Nisan 2020 tarih ve 31102 sayılı Resmî Gazete’deki ilk metni.",
          outcome="7244 sayılı Kanun 16 Nisan’da kabul edildi. 9. madde, istisnalı bir fesih sınırı ile üç ayı geçmeyen tam veya kısmi ücretsiz izin yetkisi getirdi.",
          comparison="Parti, ücretli idari izin önerdi. İlk kanun metni ücretsiz izni mümkün kılıyor ve işten çıkarma için istisnalı bir sınır koyuyor. Nakdi ücret desteği ayrı şartlara bağlı.",
@@ -222,7 +227,7 @@ for case in cases:
         comparison_row_id=case["row"])
     event = identifier(f"{key}-event")
     add("practice_event", id=event, common_event_key=case["common"], event_at=case["day"], date_precision="day",
-        date_unknown_reason=None, title=case["title"], scope_context=case["context"], occurrence_basis=case["occurrence"])
+        date_unknown_reason=None, title=case["title"], scope_context=case["event_context"], occurrence_basis=case["occurrence"])
     refs = tuple(ref for ref, _ in case["points"])
     for ref, stage in case["points"]:
         row = passages[ref]
@@ -270,7 +275,7 @@ refs = [{key: row[key] for key in ("subject_kind", "subject_id")} for row in rev
 assert [len(records[table]) for table in ("practice_event", "practice_relation", "practice_closure")] == [65, 56, 0]
 for suffix, value in (("", package), ("-review", review)):
     value["source_review_refs"] = refs
-    path = checks / f"tip-2020-policy{suffix}-draft.json"
+    path = output_dir / f"tip-2020-policy{suffix}-draft.json"
     with path.open("x") as stream:
         stream.write(json.dumps(value, ensure_ascii=False, indent=2) + "\n")
     print(sha256(path.read_bytes()).hexdigest(), path)
