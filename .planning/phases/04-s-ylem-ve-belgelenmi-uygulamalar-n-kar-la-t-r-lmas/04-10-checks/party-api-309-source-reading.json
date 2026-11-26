@@ -1,0 +1,74 @@
+{
+  "tranche_id": "0410-emep-api-309",
+  "read_at": "2026-11-26T04:39:18.043083+00:00",
+  "method": "İki özgün Kurmancî HTML gövdesi doğrudan okundu; kişi ve parti atıfları kaynakla sınırlı Türkçe özetlendi. Gövde SHA ve karakter konumları sabit.",
+  "parts": [
+    {
+      "post_id": 3175,
+      "url": "https://www.emep.org/yekitiya-hezen-soresger-a-dersime-namzeten-xwe-yen-saredariye-daxuyand",
+      "api_date": "2019-02-11T13:30:59",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+      "body_sha256": "fac2cb4d9434bdb30270e9f42eb0fb40147ee0a5341c7bfdb80793c7ea22f238",
+      "start_char": 0,
+      "end_char": 7628,
+      "total_char": 7628,
+      "slice_sha256": "fac2cb4d9434bdb30270e9f42eb0fb40147ee0a5341c7bfdb80793c7ea22f238",
+      "reading_note": "Kurmancî özgün metinde EMEP, HDP, ESP ve Partizan tarafından kurulduğu bildirilen Dersim Devrimci Güç Birliği aday tanıtımına Selma Gürkan, TİP Barış Atay ve DBP Halide Türkoğlu’nun da katıldığı aktarılır; Gürkan ve Türkoğlu konuşmaları ayrı atfedilir. Metinde Ovacık (Pulurê) adayları Serpil Argın ve Sinan Zenk listelenir. Metnin sonunda Evrensel Gazetesi ve 01.02.2019 tarihi, API yayınında 11 Şubat vardır; haber tarihi ile etkinliğin günü otomatik eşitlenemez ve seçim sonucu çıkarılmaz.",
+      "anchors": [
+        {
+          "exact": "Selma Gurkan",
+          "start_char": 935,
+          "end_char": 947
+        },
+        {
+          "exact": "Bariş Atay",
+          "start_char": 986,
+          "end_char": 996
+        },
+        {
+          "exact": "01.02.2019",
+          "start_char": 7589,
+          "end_char": 7599
+        }
+      ]
+    },
+    {
+      "post_id": 3172,
+      "url": "https://www.emep.org/li-hemberi-krize-sidete-u-newekheviye-yekitiya-me-hez-dide-me",
+      "api_date": "2019-02-11T13:21:18",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+      "body_sha256": "d5cf7f73452f0b21904b0139ea3a24d471e7a519d6b6e44401493351ab28edba",
+      "start_char": 0,
+      "end_char": 3326,
+      "total_char": 3326,
+      "slice_sha256": "d5cf7f73452f0b21904b0139ea3a24d471e7a519d6b6e44401493351ab28edba",
+      "reading_note": "Kurmancî parti genel merkezi açıklaması 8 Mart’a kadar işçi ve emekçi kadınlarla buluşma ve sonuçları 8 Mart’ta raporla açıklama hedefini belirtir. Önceki 308’deki Sema Barbaros röportajı 7 Mart tarihi vermiş, 3212 7 Martta raporu tanıtmıştır; hedeflerdeki tarih farkı birleştirilmez. Görüşmeler ve raporun etkisi bu beyanla tek başına doğrulanmaz.",
+      "anchors": [
+        {
+          "exact": "di 8ê Adarê de weke raporek ragihînin raya giştî",
+          "start_char": 2693,
+          "end_char": 2741
+        },
+        {
+          "exact": "NAVENDA GIŞTÎ",
+          "start_char": 3308,
+          "end_char": 3321
+        }
+      ]
+    }
+  ],
+  "total_source_chars": 10954,
+  "next_unread": {
+    "after_post_id": 3172,
+    "next_post_id": 3170,
+    "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json"
+  },
+  "limitations": [
+    "3175 tarihli haberin etkinlik günü bağımsız saptanmadı; TİP ve DBP isimlerinin katılımı kurucu bileşen olmakla eşitlenmedi.",
+    "3172 ile 3178 rapor duyuru tarihlerinde 8/7 Mart farkı açık bırakıldı.",
+    "Araştırma kapsamı açık."
+  ],
+  "closure_refs": []
+}
