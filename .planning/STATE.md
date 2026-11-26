@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 4
 status: executing
-stopped_at: Dokuz kabul edilmiş paketin yapısal birleşimi doğrulandı. TİP’in eski amblemine ilişkin yeni AYM kaydı yeniden incelemeye alındı.
-last_updated: "2026-11-26T19:40:51+00:00"
+stopped_at: DEM ve TİP adaylarının yapısal birleşimi doğrulandı. Üç arşiv işi Slurm işlemci kotasında bekliyor.
+last_updated: "2026-11-26T19:54:18+00:00"
 last_activity: 2026-11-26
-last_activity_desc: Dokuz kabul edilmiş paketin yapısal birleşimi doğrulandı. TİP’in eski amblemine ilişkin yeni AYM kaydı yeniden incelemeye alındı.
-state_head: 358a2e25d62d1ba2d8ab650638090a97edb6fa4d
+last_activity_desc: DEM ve TİP adaylarının yapısal birleşimi doğrulandı. Üç arşiv işi Slurm işlemci kotasında bekliyor.
+state_head: 48f7117e1400e428e707c3710460cb6ba96c45ec
 progress:
   total_phases: 6
   completed_phases: 3
@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
 Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: Dokuz kabul edilmiş paketin yapısal birleşimi doğrulandı. TİP’in eski amblemine ilişkin yeni AYM kaydı yeniden incelemeye alındı. Faz 4’te 3/15 plan tamamlandı. Kabul edilmiş paketlerin 5.488 kapsam hücresi açık.
+Last activity: DEM ve TİP adaylarının yapısal birleşimi doğrulandı. Üç arşiv işi Slurm işlemci kotasında bekliyor. Faz 4’te 3/15 plan tamamlandı. Kabul edilmiş paketlerde 5.488 kapsam hücresi açık.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
