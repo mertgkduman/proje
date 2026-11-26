@@ -2,7 +2,7 @@
 
 Kasım 2018, sayı 1, özgün PDF’nin 20 sayfası iki dilimde okundu. Ekim 2018 Temel Yönelim ve Hedefler metni örgüt üzerinden görüş bekleyen taslak. Türkiye Konferansı’ndaki onay, 21 Ekim kuruluş etkinliğinde dağıtım ve 26 Ekim Örgüt Bürosu kararları ayrı kayıtlar. İlk cilt, 7 Kasım 2017 sicil tarihini yeniden tarihlemiyor. Tarihli konferans tutanağı, dağıtılan iki metnin birebir sürümü, Kasım ayındaki fiilî halk toplantıları ve parti içi mekanizmaların sonraki işlemleri açık.
 
-Dizinde görünen 31 sayının her sayfa gövdesi sıraya alınır. Aralık 2018, sayı 2, bütün sayfalarıyla okundu. Ocak 2019, sayı 3, bütün sayfalarıyla okundu. Şubat 2019, sayı 4, bütün sayfalarıyla okundu. Temmuz 2019, sayı 5, bütün sayfalarıyla okundu. Ekim 2019, sayı 6, bütün sayfalarıyla okundu. Kasım 2019, sayı 7, bütün sayfalarıyla görsel olarak okundu. Aralık 2019, sayı 8, bütün sayfalarıyla okundu. Bir sonraki sayı 9. Ciltteki diğer materyal bağlantıları, sayının kendi yayım günü ve sonraki kaynaklar konu bazında izlenir. Dizin kapsamındaki 30–40 boşluğu ayrı sınanır.
+Dizinde görünen 31 sayının her sayfa gövdesi sıraya alınır. Aralık 2018, sayı 2, bütün sayfalarıyla okundu. Ocak 2019, sayı 3, bütün sayfalarıyla okundu. Şubat 2019, sayı 4, bütün sayfalarıyla okundu. Temmuz 2019, sayı 5, bütün sayfalarıyla okundu. Ekim 2019, sayı 6, bütün sayfalarıyla okundu. Kasım 2019, sayı 7, bütün sayfalarıyla görsel olarak okundu. Aralık 2019, sayı 8, bütün sayfalarıyla okundu. Ocak 2020, sayı 9, bütün sayfalarıyla okundu. Bir sonraki sayı 10. Ciltteki diğer materyal bağlantıları, sayının kendi yayım günü ve sonraki kaynaklar konu bazında izlenir. Dizin kapsamındaki 30–40 boşluğu ayrı sınanır.
 
 [Kasım 2018 ilk dilim](issue-01/reading-01.json) [İkinci dilim](issue-01/reading-02.json)
 
@@ -19,3 +19,5 @@ Ekim sayısı, İşçi Konferansı ile Utkan Adıyaman Konferansı’nı ayrı a
 Kasım sayısı, İstanbul deprem eğitiminin başladığını, 11–12 Ekim Kıbrıs ziyaretini ve öğrenci örgütlenmesi kararını bildiriyor. Metin katmanı yetersiz olduğundan 20 sayfa dört görsel dilimde okundu. [İlk dilim](issue-07/reading-01.json) [Son dilim](issue-07/reading-04.json)
 
 Aralık sayısı, en az 3.000 TL asgari ücret, EYT ve borç önerilerini ayrı veriyor. Bakırköy mitingi için katılım kararı var. Sonraki işlem ve sonuç belgeleri araştırılıyor. [Aralık ilk dilim](issue-08/reading-01.json) [İkinci dilim](issue-08/reading-02.json)
+
+Ocak sayısının parti haberleri, Bakırköy ve Diyarbakır mitinglerini ayrı bildiriyor. İstanbul mitinginin görseli parti atfıyla okundu. Öğrenci Sendikası ile gençlik merkezi için hazırlık ve hedefler, Kanal İstanbul yazısı için yazar ve atıf yapılan işlemler ayrı kaydedildi. [Ocak ilk dilim](issue-09/reading-01.json) [İkinci dilim](issue-09/reading-02.json)
