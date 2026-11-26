@@ -20,9 +20,23 @@ stage = Path(os.environ['GSD0410_DISK_ADANA_CANDIDATE']).resolve()
 package,review = (stage/f'{case}{suffix}-draft.json' for suffix in ('','-review'))
 assert [harness.sha(path) for path in (package, review)] == sys.argv[1:]
 prefix = '0410-emep-2018-disk-adana'
-receipt = harness.main(package,review,case,f'{prefix}-disk-event','0410-emep-istanbul-sozlesmesi-relation',
-                       None,expected_party='emep',namespace='gsd-0410')
-folder=Path(receipt['preview'])
+relation = '0410-emep-istanbul-sozlesmesi-relation'
+existing_receipt = os.environ.get('GSD0410_DISK_ADANA_PREVIEW_RECEIPT')
+if existing_receipt:
+    receipt = json.loads(Path(existing_receipt).read_bytes())
+    assert receipt['scope'] == case and receipt['relation'] == relation
+    assert receipt['event'] == f'{prefix}-disk-event'
+    assert [receipt['package_sha256'], receipt['review_sha256']] == sys.argv[1:]
+    assert receipt['inventory_sha256'] == harness.sha(harness.INVENTORY)
+    assert receipt['canonical'] == harness.canonical_identity()
+else:
+    receipt = harness.main(package, review, case, f'{prefix}-disk-event', relation,
+                           None, expected_party='emep', namespace='gsd-0410')
+folder = Path(receipt['preview'])
+assert harness.sha(folder / 'manifest.json') == receipt['preview_manifest_sha256']
+manifest = json.loads((folder / 'manifest.json').read_bytes())
+assert manifest['preview'] and manifest['renderer_version'] == 31
+assert all(harness.sha(folder / name) == digest for name, digest in manifest['files'].items())
 rows=json.loads(package.read_bytes())['practice_records']
 export=json.loads((folder/'records.json').read_bytes())
 with sqlite3.connect((folder/'records.sqlite3').as_uri()+'?mode=ro',uri=True) as db:
@@ -47,12 +61,14 @@ html=(folder/'index.html').read_text()
 for key, phrases in {
     'disk':('9 Ekim','DİSK','görev dağılımı'),
     'adana':('19 Ekim','beş','6362/107(2)'),
-    'decision':('5 Aralık','yayım günü','imzalı takipsizlik'),
+    'decision':('5 Aralık','yayım günü','İmzalı takipsizlik, karar tarihi ve dosya numarası açık'),
 }.items():
     for view in ('party','comparison'):
         anchor=f'{view}-unmatched-{prefix}-{key}-unmatched'
         marker=f'id="{anchor}"'
         assert html.count(marker)==1 and f'href="#{anchor}"' in html,anchor
         card=html.split(marker,1)[1].split('</article>',1)[0].casefold()
-        assert all(phrase.casefold() in card for phrase in phrases),(anchor,phrases)
+        assert all(phrase.casefold() in card for phrase in phrases), (anchor, phrases)
+        if key == 'decision':
+            assert f'href="#source-{prefix}-adana-decision"' in card, anchor
 print('EMEP_2018_DISK_ADANA_BOTH_VIEWS_OK',folder,flush=True)
