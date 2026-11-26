@@ -11,7 +11,7 @@ import sqlite3
 checks = Path(__file__).resolve().parent
 job = argv[1]
 number = argv[2] if len(argv) == 3 else "16"
-assert number in {"16", "17"}
+assert number in {"16", "17", "18"}
 prefix = "UNION_REHEARSAL_PREVIEW_OK "
 log = checks / f"wave4-merge-rehearsal-{number}-{job}-slurm.log"
 frozen = json.loads((checks / f"wave4-merge-rehearsal-{number}.json").read_bytes())
@@ -158,7 +158,7 @@ for row in sorted(records["practice_candidate_revision"], key=lambda row: dateti
     candidates[row["candidate_id"]] = row["state"]
 assert candidates["0406-tasimali-101783-candidate"] == candidates["0405-tip-election-finland-2023-nato-vote-candidate"] == "unmatched"
 unmatched = sorted(key for key, state in candidates.items() if state == "unmatched")
-assert len(unmatched) == receipt["active_unmatched"] == 209
+assert len(unmatched) == receipt["active_unmatched"] == (211 if number == "18" else 209)
 assert candidates["0406-halic-2022-candidate"] == candidates["0409-halic-2022-dbp-unmatched"] == "unmatched"
 joint_candidates = {
     "0405-tip-2020-2021-court-wage-election-joint-unmatched", "0406-yesilsol-2020-candidate",
@@ -179,7 +179,30 @@ new_relations = {
     "0405-tip-2018-institution-member-relation": ("6 Ekim", "10 Ekim", "24 Haziran", "HDP"),
     "0405-tip-2018-institution-meeting-relation": ("21 Ekim", "26 Ekim", "4 Aralık", "Gazi Cemevi"),
     "0405-tip-2018-institution-elig-relation": ("2 Ocak", "13 parti", "TİP"),
-} if number == "17" else {}
+} if number in {"17", "18"} else {}
+if number == "18":
+    new_relations.update({
+        "0405-tip-2019-local-eligibility-labor-damal-relation": ("Damal", "75 oy", "bağımsız"),
+        "0405-tip-2019-local-eligibility-labor-elig21-relation": ("26 Ocak", "2021/22"),
+        "0405-tip-2019-local-eligibility-labor-elig22-relation": ("12 Ocak", "2022/13"),
+        "0405-tip-2019-campaign-wage-relation": ("3.000 TL", "2.324,70 TL", "27 Aralık"),
+        "0405-tip-2019-campaign-budget-relation": ("20 Aralık", "21 Aralık", "31 Aralık", "329 kabul", "159 ret"),
+        "0405-tip-2019-campaign-eyt-relation": ("30 Ocak", "1 Mart", "3 Mart", "yaş dışındaki şartları"),
+        "0405-tip-2019-campaign-cyprus-relation": ("11–12 Ekim", "19 Kasım", "iki bölgeli", "Sol Hareket"),
+    })
+    for candidate, phrases in {
+        "0405-tip-2019-local-eligibility-labor-ozsut-unmatched": ("Özsüt", "17 Temmuz"),
+        "0406-3961-commission-candidate": ("27 Ekim", "2/3961", "Ceylan Akça Cupolo"),
+    }.items():
+        assert candidate in unmatched
+        for view in ("party", "comparison"):
+            card = html.split(f'id="{view}-unmatched-{candidate}"', 1)[1].split("</article>", 1)[0]
+            assert all(phrase in card for phrase in phrases), (view, candidate)
+    events = {row["id"]: row for row in records["practice_event"]}
+    commission = events["0406-3961-commission-event"]
+    assert commission["event_at"] == "2026-10-27"
+    assert commission["id"] not in relations.values()
+    assert any(row["event_at"] == "2026-11-05" and "2/3961" in row["title"] for row in events.values())
 assert set(new_relations) <= set(relations)
 for relation, phrases in {
     "0405-tip-halic-cemevi-2022-halic-relation": ("25 Ağustos", "24 Eylül", "25 Eylül", "Erkan Baş"),
