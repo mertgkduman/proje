@@ -14,7 +14,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 68 | 7 | 62635637 |
-| EMEP | 85 | 79 | 62711488 |
+| EMEP | 86 | 80 | 62715191 |
 | Saadet Partisi | 40 | 36 | 62714558, bağımsız yerel denetim |
 | Demokrat Parti | 83 | 54 | 62714572 kapıları, bağımsız kurtarma denetimi |
 
@@ -694,3 +694,5 @@ Temmuz 2020 ÇarkBaşak 20 sayfayla okundu. Toplam 15/31 sayı ve 341 sayfa. 30 
 Demokrat Parti’nin iki 28 Kasım kaydı 83 olay ve 54 ilişkiyle çalışma çiftine alındı. 62714572 üç kapıyı geçti ve disk dolduğunda kopyalama sırasında FAILED 1:0 durumuna geçti. İşin yarım önizleme kopyası özetleri doğrulanarak çalışma diskine taşındı. Manifestteki 1.778 yerel varlığın 1.559 eksik kopyası kayıtlı özetleri eşleşen kaynaklardan tamamlandı. Özgün manifest, SQLite/JSON, iki HTML görünümü ve tüm varlık özetleri bağımsız yerel denetimde doğrulandı. [Kurtarma makbuzu](../04-12-checks/six-leaders-november-dp-v2-62714572-asset-restoration.json) [Bağımsız denetim](../04-12-checks/six-leaders-november-dp-v2-62714572-recovered-independent.log)
 
 Ağustos 2020 ÇarkBaşak 20 sayfayla okundu, toplam 16/31 sayı ve 361 sayfa. Çoklu baro mevzuatına ilişkin Haziran tartışması ve Ağustos değerlendirmesi farklı. Kıdem fonu önerisi, İstanbul Sözleşmesi ve afet eğitim planı için farklı kaynak uçları kaydedildi. [Ağustos okuması](../04-05-checks/tip-cark-basak-catalog/issue-16/reading-01.json)
+
+EMEP’in Gebze Trelleborg yılbaşı ziyareti, 62715191 işinin üç kapısı ve bağımsız denetimiyle 86 olay ve 80 ilişkilik çalışma çiftine alındı. 30 Aralık çağrısı, 31 Aralık–1 Ocak ziyaret aralığı ve Petrol-İş’in 22 Ocak toplu sözleşme açıklaması ayrı. 1.832 yerel varlık ile HTML, JSON ve SQLite dosyaları manifestteki özetlerle eşleşti. [EMEP bağımsız denetimi](../04-10-checks/trelle-2019-emep-62715191-independent.json)
