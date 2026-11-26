@@ -1,0 +1,70 @@
+{
+  "tranche_id": "0410-emep-api-300",
+  "read_at": "2026-11-26T04:16:28.645403+00:00",
+  "method": "İki özgün Kurmancî HTML gövdesi doğrudan okunarak Türkçe anlam ve atıf sınırları kaydedildi; özgün gövde karakter konumları ve UTF-8 SHA-256 bağlandı. Otomatik çeviri servisi kullanılmadı.",
+  "parts": [
+    {
+      "post_id": 3232,
+      "url": "https://www.emep.org/8e-adare-rojatekosin-u-hevgirtinajinanpiroz-be",
+      "api_date": "2019-03-12T10:38:16",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+      "body_sha256": "cd05dc5899d22d16e22d84a4f7b755005c1a11750d58351db0d271dd80c9353d",
+      "start_char": 0,
+      "end_char": 3792,
+      "total_char": 3792,
+      "slice_sha256": "cd05dc5899d22d16e22d84a4f7b755005c1a11750d58351db0d271dd80c9353d",
+      "reading_note": "Kurmancî metni doğrudan okundu: Selma Gürkan imzalı 8 Mart mesajı kadınların eşitlik ve insanca yaşam mücadelesini, güvencesiz çalışma ve savaşın kadınlar üzerindeki etkilerine dair siyasal değerlendirmeyi aktarır. Bir önceki gün parti tarafından kadın işçi ve emekçileri etkileyen kriz hakkında rapor açıklandığı söylenir; raporun kendi tarihi ve içeriği ayrı kaynaktan doğrulanmalıdır. Metinde 8 Mart sonrası seçimin yaklaştığı belirtilir; API yayın günü 12 Marttır, konuşmanın söylendiği günü bu tarihe eşitlemiyoruz.",
+      "anchors": [
+        {
+          "exact": "Do partiya me raporekê ragihand bo raya giştî.",
+          "start_char": 1538,
+          "end_char": 1584
+        },
+        {
+          "exact": "Piştî 8ê Adarê hilbijartin nêzîk e.",
+          "start_char": 3477,
+          "end_char": 3512
+        }
+      ]
+    },
+    {
+      "post_id": 3229,
+      "url": "https://www.emep.org/pulur-debimeclisen-gel-betebirevebirin",
+      "api_date": "2019-03-12T10:35:46",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+      "body_sha256": "66be1dd27a3f4aba41a29babd5979432c7075da5a64cc343a7b6523442e91ed1",
+      "start_char": 0,
+      "end_char": 6517,
+      "total_char": 6517,
+      "slice_sha256": "66be1dd27a3f4aba41a29babd5979432c7075da5a64cc343a7b6523442e91ed1",
+      "reading_note": "Kurmancî metni doğrudan okundu: Gazete Duvar / Vecdî Erbay imzalı röportajda Pülümür (Pûlûr) eş belediye başkan adayı Serpil Berk Argin, HDP, EMEP, DBP, Partizan ve ESP bileşenleriyle ifade edilen Devrimci Güç Birliği ortak adayı olarak tanıtılır; seçilirse sorunların halkla belirlenmesi, halk meclisleriyle yönetim ve kreş vaatlerini anlatır. Röportaj adayın EMEP üyeliğini bildirir; seçilme, belediyenin sonradan yönetimi veya vaatlerin gerçekleşmesi bu kaynakla kanıtlanmaz. Gazete Duvar atfı korunur.",
+      "anchors": [
+        {
+          "exact": "Bi biryara hevpar a Yekîtiya Hêzên Şoreşger",
+          "start_char": 2109,
+          "end_char": 2152
+        },
+        {
+          "exact": "Vecdî",
+          "start_char": 6461,
+          "end_char": 6466
+        }
+      ]
+    }
+  ],
+  "total_source_chars": 10309,
+  "next_unread": {
+    "after_post_id": 3229,
+    "next_post_id": 3226,
+    "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json"
+  },
+  "limitations": [
+    "3232 metni API yayın tarihinden önceki bir konuşma/çağrı olabilir; konuşma günü ayrı kanıtlanmadı.",
+    "3229 Gazete Duvar haberinde bireysel adayın seçim öncesi önerileri seçim sonucunu veya uygulamayı kanıtlamaz.",
+    "Kurmancî ayrıntılarda yorum sınırı vardır; aday veya sonuçlara ilişkin başka bağımsız kanıt aranmalıdır.",
+    "Kapsam açıktır."
+  ],
+  "closure_refs": []
+}
