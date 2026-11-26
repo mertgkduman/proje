@@ -11,7 +11,7 @@ import sqlite3
 checks = Path(__file__).resolve().parent
 job = argv[1]
 number = argv[2] if len(argv) == 3 else "16"
-assert number in {"16", "17", "18", "19"}
+assert number in {"16", "17", "18", "19", "20"}
 prefix = "UNION_REHEARSAL_PREVIEW_OK "
 log = checks / f"wave4-merge-rehearsal-{number}-{job}-slurm.log"
 frozen = json.loads((checks / f"wave4-merge-rehearsal-{number}.json").read_bytes())
@@ -31,6 +31,7 @@ assert digest(folder / "manifest.json") == receipt["manifest_sha256"]
 manifest = json.loads((folder / "manifest.json").read_bytes())
 assert manifest["preview"] and manifest["renderer_version"] == 31
 assert all(digest(folder / name) == identity for name, identity in manifest["files"].items())
+assert all(digest(folder.parents[1] / name) == identity for name, identity in manifest["asset_files"].items())
 assert digest(Path("data/current.json")) == receipt["canonical_pointer_sha256"] == frozen["canonical_pointer_sha256"]
 records = json.loads((folder / "records.json").read_bytes())
 assert {name: len(records[name]) for name in frozen["counts"]} == frozen["counts"]
@@ -44,9 +45,12 @@ bakirkoy_key = "bakirkoy-2019-12-08-insanca-yasamak-istiyoruz"
 presentation_key = "six-party-2022-11-28-constitutional-proposal-presentation"
 meeting_key = "six-leaders-2022-11-28-dp-meeting"
 november_keys = {presentation_key, meeting_key}
-expanded_keys = {bakirkoy_key, *november_keys} if number == "19" else set()
-assert receipt["source_permissions"] == (669 if number == "19" else 655)
-expected_added = {joint_key} if number == "16" else expanded_keys
+expanded_keys = {bakirkoy_key, *november_keys} if number in {"19", "20"} else set()
+idlib_key = "idlib-2020-03-05-moskova-ek-protokol"
+if number == "20":
+    expanded_keys.add(idlib_key)
+assert receipt["source_permissions"] == {"19": 669, "20": 677}.get(number, 655)
+expected_added = {"16": {joint_key}, "20": {idlib_key}}.get(number, expanded_keys)
 assert set(frozen["added_reviewed_candidates"]) == expected_added
 halic_key = "halic-emek-ozgurluk-2022-09-24"
 yok_key = "yok-2023-03-30-bahar-yuzyuze-secenegi"
@@ -160,7 +164,7 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
             ).fetchall()
             assert len(filled) == 1
             event_id, date = filled[0]
-            assert date == ("2019-12-08" if key == bakirkoy_key else "2022-11-28")
+            assert date == {bakirkoy_key: "2019-12-08", idlib_key: "2020-03-05"}.get(key, "2022-11-28")
             count = db.execute(
                 "SELECT COUNT(*) FROM practice_event_alias WHERE decision_id=? AND canonical_event_id=?",
                 (key, event_id),
@@ -185,6 +189,21 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
                     (party, "71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b", 99)
                     for party in ("tip", "emep")
                 }
+            elif key == idlib_key:
+                assert actual_relations == {
+                    ("0405-tip-2020-policy-idlib-relation", "tip"), ("0410-idlib-2020-relation", "emep"),
+                }
+                assert not actual_roles
+                by_source = db.execute(
+                    "SELECT d.party_id,v.sha256,p.pdf_page_index,p.exact FROM practice_event_evidence e "
+                    "JOIN passage p ON p.id=e.passage_id JOIN document_version v ON v.id=p.version_id "
+                    "JOIN document d ON d.id=v.document_id WHERE e.event_id=? AND e.stage='action'",
+                    (event_id,),
+                )
+                assert {tuple(row) for row in by_source} == {
+                    (party, "041fbaf925821e6ca8b9397167017e5bcd5dd3da695159daec66ed0ef9aac92d", 1, "Done in Moscow on 5 March, 2020")
+                    for party in ("tip", "emep")
+                }
             else:
                 suffix = "presentation" if key == presentation_key else "meeting"
                 assert actual_relations == {
@@ -207,11 +226,14 @@ for row in sorted(records["practice_candidate_revision"], key=lambda row: dateti
 assert candidates["0406-tasimali-101783-candidate"] == candidates["0405-tip-election-finland-2023-nato-vote-candidate"] == "unmatched"
 unmatched = sorted(key for key, state in candidates.items() if state == "unmatched")
 assert len(unmatched) == receipt["active_unmatched"]
-if number == "19":
+if number in {"19", "20"}:
     assert candidates["0410-bakirkoy-2019-emep-unmatched"] == "unmatched"
-    local = {key for key in unmatched if key.startswith("0405-tip-2020-local-")}
-    assert len(local) in {0, 5}
-    assert len(unmatched) == 212 + len(local)
+    if number == "19":
+        assert len(unmatched) == 212
+    else:
+        local = {key for key in unmatched if key.startswith("0405-tip-2020-local-")}
+        assert len(local) == 5
+        assert len(unmatched) == frozen["active_unmatched"]
 else:
     assert len(unmatched) == (211 if number == "18" else 209)
 assert candidates["0406-halic-2022-candidate"] == candidates["0409-halic-2022-dbp-unmatched"] == "unmatched"
@@ -234,8 +256,8 @@ new_relations = {
     "0405-tip-2018-institution-member-relation": ("6 Ekim", "10 Ekim", "24 Haziran", "HDP"),
     "0405-tip-2018-institution-meeting-relation": ("21 Ekim", "26 Ekim", "4 Aralık", "Gazi Cemevi"),
     "0405-tip-2018-institution-elig-relation": ("2 Ocak", "13 parti", "TİP"),
-} if number in {"17", "18", "19"} else {}
-if number in {"18", "19"}:
+} if number in {"17", "18", "19", "20"} else {}
+if number in {"18", "19", "20"}:
     new_relations.update({
         "0405-tip-2019-local-eligibility-labor-damal-relation": ("Damal", "75 oy", "bağımsız"),
         "0405-tip-2019-local-eligibility-labor-elig21-relation": ("26 Ocak", "2021/22"),
@@ -259,13 +281,18 @@ if number in {"18", "19"}:
     assert commission["id"] not in relations.values()
     vote = events["0406-2026-3961-vote"]
     assert vote["event_at"] == "2026-11-05" and "2/3961" in vote["scope_context"]
-if number == "19":
+if number in {"19", "20"}:
     new_relations.update({
         "0405-tip-bakirkoy-2019-relation": ("8 Aralık", "Bakırköy", "Halk Pazarı"),
         "0411-saadet-nov-2022-presentation-relation": ("14 Kasım", "28 Kasım", "Bilkent"),
         "0411-saadet-nov-2022-meeting-relation": ("14 Kasım", "28 Kasım", "Demokrat Parti"),
         "0412-six-leaders-2022-11-28-presentation-relation": ("14 Kasım", "28 Kasım", "Bilkent"),
         "0412-six-leaders-2022-11-28-meeting-relation": ("14 Kasım", "28 Kasım", "Demokrat Parti"),
+    })
+if number == "20":
+    new_relations.update({
+        "0405-tip-2020-policy-idlib-relation": ("3 Şubat", "5 Mart", "S/2020/187"),
+        "0410-idlib-2020-relation": ("28 Şubat", "5 Mart", "15 Mart"),
     })
 assert set(new_relations) <= set(relations)
 for relation, phrases in {
@@ -292,6 +319,7 @@ for relation, phrases in {
 receipt.update(independently_verified=True, terminal_validation_exit="0:0",
                reference_counts={table: len(records[table]) for table in compare},
                matched_reader_links=2 * len(relations), unmatched_reader_links=2 * len(unmatched),
+               verified_assets=len(manifest["asset_files"]),
                source_review_origins=origins, frozen_output_sha256=frozen["output_sha256"],
                shared_events=dict(previous["shared_events"], **{halic_key: {"event_id": halic, "aliases": 4},
                    yok_key: {"event_id": yok, "aliases": 2},
