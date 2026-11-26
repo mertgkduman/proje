@@ -1,0 +1,71 @@
+{
+  "party_id": "yeni-parti",
+  "docket": "E.2026/9 (Değişik İşler)",
+  "checked_at": "2026-11-26T16:58:33+00:00",
+  "portal": "https://siyasipartikararlar.anayasa.gov.tr/kbb/",
+  "search_endpoint": "https://siyasipartikararlar.anayasa.gov.tr/api/core/public/search",
+  "method": "POST",
+  "requests": [
+    {
+      "body": {
+        "page": 0,
+        "size": 20,
+        "esasNo": "2026/9",
+        "kararTipi": "SiyasiParti"
+      },
+      "status": 200,
+      "mime": "application/json",
+      "response_sha256": "1b45eacb3cb94569c9a73a145148c67a44cd2907c04353f807a1809c6ee14666",
+      "response_file": "/work/mg551/gsd-phase04-recovery.L0IReu/yeni-identity-2026.OFS5HZ/aym-search.bKxVrn/kbb-2026-9-party-result.json",
+      "total": 0,
+      "rows": []
+    },
+    {
+      "body": {
+        "page": 0,
+        "size": 20,
+        "esasNo": "2026/9"
+      },
+      "status": 200,
+      "mime": "application/json",
+      "response_sha256": "1b45eacb3cb94569c9a73a145148c67a44cd2907c04353f807a1809c6ee14666",
+      "response_file": "/work/mg551/gsd-phase04-recovery.L0IReu/yeni-identity-2026.OFS5HZ/aym-search.bKxVrn/kbb-2026-9-all-result.json",
+      "total": 0,
+      "rows": []
+    },
+    {
+      "body": {
+        "page": 0,
+        "size": 3,
+        "kararTipi": "SiyasiParti",
+        "esasNo": "1990/1"
+      },
+      "status": 200,
+      "mime": "application/json",
+      "response_sha256": "7ce933bdc9ead203bc68c4d427440b565ae102c9112d337bcbaa609e9163fbb0",
+      "response_file": "/work/mg551/gsd-phase04-recovery.L0IReu/yeni-identity-2026.OFS5HZ/aym-search.bKxVrn/kbb-control-exact-result.json",
+      "total": 2,
+      "rows": [
+        {
+          "esasNo": "1990/1",
+          "kararNo": "1991/1",
+          "kararTarihi": "1991-07-16",
+          "kararTipi": "SiyasiParti"
+        },
+        {
+          "esasNo": "1990/1",
+          "kararNo": "1990/2",
+          "kararTarihi": "1990-05-03",
+          "kararTipi": "SiyasiParti"
+        }
+      ]
+    }
+  ],
+  "official_agendas": [
+    "https://www.anayasa.gov.tr/94858",
+    "https://www.anayasa.gov.tr/94937"
+  ],
+  "note": "Kamuya açık karar araması 2026/9 esas numarası ile siyasi parti filtresinde ve filtresiz olarak sıfır kayıt döndürdü. Aynı esas alanı için 1990/1 karşılaştırma sorgusunda iki kayıt döndü. Bu sorgu, erişim anındaki Kararlar Bilgi Bankası sonucunu gösterir. İmzalı karar, tebligat ve Resmî Gazete izlemesi açık.",
+  "event_scope": "practice-e673654ec7b038837263bb4aa572ca8889122963e97546aad6c09d846fae71af",
+  "closure_refs": []
+}
