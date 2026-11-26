@@ -1,0 +1,130 @@
+{
+  "git_commit": "ff03e8d96450f2e8223b503ed0d7e11600036be1",
+  "git_directory": "/work/mg551/gsd-phase04-recovery.L0IReu/iyi-airport-62258890-isolated.git",
+  "base_release": "f67ca0a35e634035bf3aa83a46571f50",
+  "kind": "isolated_merge_preflight",
+  "changed_packages": [
+    "emep",
+    "iyi"
+  ],
+  "original_packages": {
+    "yeni-parti": {
+      "package_sha256": "df8f9c5253112ec11cbdf28208fdeac0a97a811d5acbdd210fb53f217b55b629",
+      "companion_review_sha256": "5ad1689587e43e152725d82fbdabc18ed69f87e293e60413892c0e72c217e1ce",
+      "events": 145,
+      "relations": 142,
+      "closures": 0,
+      "external_review_ref_count": 1234
+    },
+    "tip": {
+      "package_sha256": "ea387982aa36335f24dd001e020065a699b843526039dcbcb6bf9a6420e06893",
+      "companion_review_sha256": "a659a0e107d64a7d60ecff5cb407af0989fed90c23be53f2dea63686104602de",
+      "events": 78,
+      "relations": 60,
+      "closures": 0,
+      "external_review_ref_count": 836
+    },
+    "dem": {
+      "package_sha256": "da836b07b4cb4ac61bcaefe6eaf744ce66c1effcdf714df1ea97ec946818c9df",
+      "companion_review_sha256": "02db365953f11836672a19ef088ede88ac970d075cfbaa2f6dd835a5f1195891",
+      "events": 89,
+      "relations": 13,
+      "closures": 0,
+      "external_review_ref_count": 836
+    },
+    "iyi": {
+      "package_sha256": "0986acbe5228e124ab2567fb6595f95853ea4bf91fa8e5119e96e59c6d1d26cf",
+      "companion_review_sha256": "fb33dbe21caa1d6409faa75d0a93ade66033213996cf52ee0905ffa2c70a1951",
+      "events": 26,
+      "relations": 15,
+      "closures": 0,
+      "external_review_ref_count": 355
+    },
+    "yeni-yol": {
+      "package_sha256": "07a7acdd87ff461abe7fd3f75f1e4e60ef4805c6cbdf2eab7f60756b703d9f6a",
+      "companion_review_sha256": "1b89ab0381dad5fc48a00a603c5624ed34489205d60d6bde83a5c7f298c79115",
+      "events": 23,
+      "relations": 12,
+      "closures": 0,
+      "external_review_ref_count": 345
+    },
+    "dbp": {
+      "package_sha256": "607f99e57799c1a93201732588c59b03064a2b71ed339dc173ad4cdfdf15c2f1",
+      "companion_review_sha256": "5e5f136dfbbbb5ab6fd14ff1f59c29d70a7e3ba9a5fbca24a007de939302e8b1",
+      "events": 68,
+      "relations": 7,
+      "closures": 0,
+      "external_review_ref_count": 499
+    },
+    "emep": {
+      "package_sha256": "17b05076f6aef93ab0687645605e270e06cbbe25d6f1e73bd2498630a0676ce3",
+      "companion_review_sha256": "7ec4079e19b868e46aa86e58ff6d6e7058efe71726f7361a33a5286055e3d530",
+      "events": 91,
+      "relations": 82,
+      "closures": 0,
+      "external_review_ref_count": 819
+    },
+    "saadet": {
+      "package_sha256": "3cc21615f355aa00c3010b1a415f5126020fd27db895e2235e317d679c371f04",
+      "companion_review_sha256": "a305484f46ec4bd7cae6eae1201e3bc509ba71c06c90e1d30192d81116a85e36",
+      "events": 41,
+      "relations": 37,
+      "closures": 0,
+      "external_review_ref_count": 513
+    },
+    "demokrat": {
+      "package_sha256": "83b02dd64c3791a8774cacfe788995c247a3263e4565e8fd913c74d2359ef736",
+      "companion_review_sha256": "226698882d18a9a29565b44ff7c2c37749666e22c4cbf1c2a543117b6ad1059c",
+      "events": 83,
+      "relations": 54,
+      "closures": 0,
+      "external_review_ref_count": 908
+    }
+  },
+  "original_stages": {
+    "yeni-parti": "tracer",
+    "tip": "partial",
+    "dem": "tracer",
+    "iyi": "tracer",
+    "yeni-yol": "tracer",
+    "dbp": "tracer",
+    "emep": "tracer",
+    "saadet": "tracer",
+    "demokrat": "tracer"
+  },
+  "isolated_stage": "partial",
+  "isolated_envelope_sha256": {
+    "yeni-parti": "4c6840d5d1ceaa98841e586c31fb8d26635c177e3a9f0e30e3248227e1e9355a",
+    "tip": "466839c59e08fde9a2d44d728b43d5f0fef0a09dd5c45a455cbcfc723a811b58",
+    "dem": "e1bebd7829a560e0bc3cbdadaa67e7dcbc96bc351b1ad9002210cd8753bb8fd5",
+    "iyi": "b1180879d63fc02fd5dd97b530ec05ae7ed9d50c6647ed87f6d1f6e724779a38",
+    "yeni-yol": "e90007ef3560a5bc4ec73399bcccaeaa3844e6991c7c078510bcbb14204c828b",
+    "dbp": "860bfb656c97319c53ec6a337455ff573023f461ef093de2c1c2a962d0370f38",
+    "emep": "8d34c7200380739c9d4c8bbbef95f5626920f30eb934b77e2b80008ef1da4da4",
+    "saadet": "e8ceb924ae6c4fee1de2db093bae7b1ec1872f4a72e6f6b3babc0360244f62cf",
+    "demokrat": "418ab522df6afa79983bf78cc93430919dbb5c649a513fad06188fe3139fe79e"
+  },
+  "preceding_decisions": "wave4-merge-rehearsal-21-decisions.json",
+  "unchanged_candidate_sources": true,
+  "forward_reverse_equal": true,
+  "decisions_sha256": "c65f7ecf912f9e14f371b8ca8165a07118a2c9181ab309f89baab249f81f0393",
+  "output_sha256": "a12c555824d02f037f325bf62b185361a50649a002440f1a8071443add003db3",
+  "same_candidates": 22,
+  "unresolved_candidates": 13,
+  "counts": {
+    "practice_event": 608,
+    "practice_relation": 422,
+    "practice_closure": 0
+  },
+  "event_aliases": 652,
+  "review_origins": 6345,
+  "canonical_pointer_sha256": "5a20d69e24d6623361b067c30d2af018bdfc8fc51874d065111065c1a98b0ad7",
+  "merged_events": 608,
+  "merged_relations": 422,
+  "closure_count": 0,
+  "active_unmatched": 232,
+  "aliases": 652,
+  "added_reviewed_candidates": [
+    "cumhurbaskanligi-2021-03-19-3718"
+  ]
+}

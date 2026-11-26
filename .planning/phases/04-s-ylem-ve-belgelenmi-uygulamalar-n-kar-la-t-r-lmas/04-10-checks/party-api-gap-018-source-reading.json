@@ -1,0 +1,223 @@
+{
+  "tranche_id": "0410-emep-api-gap-018",
+  "read_at": "2026-11-26T09:47:49.459859+00:00",
+  "method": "Altı EMEP API gövdesi baştan sona okundu. Röportajlar, yeniden yayımlar, kesin seçim tablosu ve seçim usulü belgeleri tarih ve yayıncı atfıyla eşleştirildi.",
+  "linked_documents": [
+    {
+      "id": "evrensel-gurkan-26-haziran",
+      "url": "https://www.evrensel.net/haber/355652/selma-gurkan-umut-liderlerde-degil-emekcilerin-kendi-gucunde",
+      "attempted_at": "2026-11-26T09:46:21.374834+00:00",
+      "status": "403",
+      "error": "curl: (22) The requested URL returned error: 403",
+      "reading_access": "Evrensel indeksli gövdesi, 26 Haziran 2018 13:51 ve 16:06 güncellemesiyle tarihlendi."
+    },
+    {
+      "id": "evrensel-izmir-secenek",
+      "url": "https://www.evrensel.net/haber/354361/selma-gurkan-asil-siyaseti-ozne-olan-isci-sinifi-yapmalidir",
+      "attempted_at": "2026-11-26T09:46:21.400358+00:00",
+      "status": "403",
+      "error": "curl: (22) The requested URL returned error: 403",
+      "reading_access": "Evrensel indeksli gövdesi aynı buluşma dizisini ve kaynak atfını içeriyor."
+    },
+    {
+      "id": "evrensel-kurtce-gurkan-karsiligi",
+      "url": "https://www.evrensel.net/haber/351642/emep-secimde-selahattin-demirtasi-ve-hdpyi-destekleyecegiz",
+      "attempted_at": "2026-11-26T09:46:21.390757+00:00",
+      "status": "403",
+      "error": "curl: (22) The requested URL returned error: 403"
+    },
+    {
+      "id": "duvar-gurkan-ortak-aday",
+      "url": "https://www.gazeteduvar.com.tr/politika/2018/04/29/emek-partisi-genel-baskani-selma-gurkan-ortak-aday-zeminini-kacirmadik",
+      "attempted_at": "2026-11-26T09:46:21.408331+00:00",
+      "status": "403",
+      "error": "curl: (22) The requested URL returned error: 403",
+      "reading_access": "Hacı Bişkin imzalı özgün röportajın indeksli metni ve yayın/güncelleme tarihleri okundu."
+    },
+    {
+      "id": "ysk-2018-cumhurbaskani-kesin",
+      "url": "https://www.ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/2018CB-416D.pdf",
+      "attempted_at": "2026-11-26T09:46:21.892477+00:00",
+      "status": "000",
+      "error": "curl: (35) OpenSSL SSL_connect: Connection reset by peer in connection to www.ysk.gov.tr:443"
+    },
+    {
+      "id": "ysk-2018-milletvekili-kesin",
+      "url": "https://www.ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/2018MV-96C.pdf",
+      "attempted_at": "2026-11-26T09:46:21.850309+00:00",
+      "status": "000",
+      "error": "curl: (35) OpenSSL SSL_connect: Connection reset by peer in connection to www.ysk.gov.tr:443"
+    },
+    {
+      "id": "ysk-bilesik-oy-pusulasi",
+      "url": "https://www.ysk.gov.tr/tr/haber/birlesik-oy-pusulasi/77680",
+      "attempted_at": "2026-11-26T09:46:21.892745+00:00",
+      "status": "000",
+      "error": "curl: (35) OpenSSL SSL_connect: Connection reset by peer in connection to www.ysk.gov.tr:443"
+    },
+    {
+      "id": "ysk-2018-milletvekili-kesin-alt",
+      "url": "https://ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/2018MV-96C.pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:46:49.421301+00:00",
+      "file": "ysk-2018-milletvekili-kesin-alt.pdf",
+      "sha256": "d720e962dcb308017d50acbad96ddd970b4f6adf4b6662cd5c8367fa79837684",
+      "size": 43577,
+      "mime": "application/pdf",
+      "final_url": "https://ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/2018MV-96C.pdf",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap018.BHpVQh/retry/ysk-2018-milletvekili-kesin-alt.pdf"
+    },
+    {
+      "id": "ysk-2018-kura",
+      "url": "https://ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/2018CBMV-BirlesikOyPusulasi-KuraTutanagi.pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:46:51.263932+00:00",
+      "file": "ysk-2018-kura.pdf",
+      "sha256": "687b6e1e2a4602355699af079b1f0157d5fdbafc0687c367289537acba86c199",
+      "size": 210060,
+      "mime": "application/pdf",
+      "final_url": "https://ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/2018CBMV-BirlesikOyPusulasi-KuraTutanagi.pdf",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap018.BHpVQh/retry/ysk-2018-kura.pdf"
+    },
+    {
+      "id": "ysk-344",
+      "url": "https://ysk.gov.tr/doc/karar/dosya/77597/2018-344.pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:46:49.412521+00:00",
+      "file": "ysk-344.pdf",
+      "sha256": "392bb3bebc9daf0c3b1c56d0bd8d228c7b6b69c4e381441a7b24fddf245235c3",
+      "size": 91594,
+      "mime": "application/pdf",
+      "final_url": "https://ysk.gov.tr/doc/karar/dosya/77597/2018-344.pdf",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap018.BHpVQh/retry/ysk-344.pdf"
+    },
+    {
+      "id": "tuzla-yargilama-ikincil",
+      "url": "https://ekmekvegul.net/gundem/tuzladaki-istismar-davasi-ertelendi",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:46:48.812808+00:00",
+      "file": "tuzla-yargilama-ikincil.html",
+      "sha256": "8b5533c30f402088d59b9034da726d9944b9c2de2e6bc6045b254fd30e3db762",
+      "size": 52818,
+      "mime": "text/html; charset=utf-8",
+      "final_url": "https://ekmekvegul.net/gundem/tuzladaki-istismar-davasi-ertelendi",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap018.BHpVQh/retry/tuzla-yargilama-ikincil.html"
+    },
+    {
+      "id": "karatas-analiz-yeniden-yayin",
+      "url": "https://www.medgundem.com/evrensel-gazetesinden-yusuf-karatas-kurt-illerindeki-sonuclari-nasil-okumak-gerekiyor",
+      "status": 200,
+      "retrieved_at": "2026-11-26T09:46:48.902408+00:00",
+      "file": "karatas-analiz-yeniden-yayin.html",
+      "sha256": "a3b66ba1eb723f02be9ba9890f129bc504e35e46cf91aac1de6b1feb9d7eb1ca",
+      "size": 196820,
+      "mime": "text/html; charset=utf-8",
+      "final_url": "https://www.medgundem.com/evrensel-gazetesinden-yusuf-karatas-kurt-illerindeki-sonuclari-nasil-okumak-gerekiyor",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-api-gap018.BHpVQh/retry/karatas-analiz-yeniden-yayin.html"
+    },
+    {
+      "id": "evrensel-may4",
+      "url": "https://www.evrensel.net/haber/351642/emep-secimde-selahattin-demirtasi-ve-hdpyi-destekleyecegiz",
+      "status": 200,
+      "retrieved_at": "2026-11-26T08:24:44.082203+00:00",
+      "file": "evrensel-may4.html",
+      "sha256": "7b7d7727ec4b040d5ebccfbfd3c9dae5bbd185cfea1868de5d7c602d3c7ab272",
+      "size": 77675,
+      "mime": "text/html; charset=utf-8",
+      "final_url": "https://www.evrensel.net/haber/351642/emep-secimde-selahattin-demirtasi-ve-hdpyi-destekleyecegiz",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-election-2018.xXGgYo/evrensel-may4.html"
+    },
+    {
+      "id": "ysk-416d",
+      "url": "https://www.ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/2018CB-416D.pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-26T08:25:11+00:00",
+      "file": "ysk-416d-retry.pdf",
+      "sha256": "f8eb405b8bd699d2682ab475fc99235eeee6f6e5361992fac2cfba663c5a0189",
+      "size": 42475,
+      "mime": "application/pdf",
+      "final_url": "https://www.ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/2018CB-416D.pdf",
+      "path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-election-2018.xXGgYo/ysk-416d-retry.pdf"
+    }
+  ],
+  "parts": [
+    {
+      "post_id": 2896,
+      "url": "https://www.emep.org/umut-liderlerde-degil-emekcilerin-kendi-gucunde",
+      "api_date": "2018-06-29T16:30:39",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "03645f4e4b6fe1db08ef42e73e5ace9594f52b93d0f44a40f50c0dee96beb9ee",
+      "start_char": 0,
+      "end_char": 7834,
+      "total_char": 7834,
+      "slice_sha256": "03645f4e4b6fe1db08ef42e73e5ace9594f52b93d0f44a40f50c0dee96beb9ee",
+      "reading_note": "29 Haziran EMEP arşivi 26 Haziran Evrensel WebTV röportajını aktarıyor. Selma Gürkan seçim ve sandık güvenliği hakkındaki iddia ve tahminlerini ifade ediyor. 20–30 bin sandık tahmininin veri tablosu gösterilmiyor. YSK 416/D kesin tablosunda 50.068.627 geçerli oy ve Erdoğan'a 26.330.823 oy var. Salt çoğunluğun asgari sayısı 25.034.314 ve aritmetik fark 1.296.509. Bu sayı sandıklar hakkındaki iddianın doğrulanmasında kullanılmadı."
+    },
+    {
+      "post_id": 2894,
+      "url": "https://www.emep.org/kurt-illerindeki-sonuclari-nasil-okumak-gerekiyor",
+      "api_date": "2018-06-27T11:58:12",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "5d1789312d6710ba19aa570279ce89f70df6bd55fd9d12eca34998d4832d0003",
+      "start_char": 0,
+      "end_char": 10802,
+      "total_char": 10802,
+      "slice_sha256": "5d1789312d6710ba19aa570279ce89f70df6bd55fd9d12eca34998d4832d0003",
+      "reading_note": "27 Haziran Yusuf Karataş yazısı 2015 genel seçimi, 2017 halkoylaması ve 2018 genel seçimini karşılaştıran yazar analizidir. Yazı 5.850.000 civarı HDP oyu bildiriyor. Daha sonra yayımlanan YSK 96/C kesin tablosu 5.867.302 oy ve yüzde 11,70 veriyor. İl bazında oran karşılaştırması, bireysel oy geçişi veya seçmenin niyetini kanıtlamıyor. İllerdeki iddiaların aynı seçim çevresi ve payda ile yeniden denetimi açık."
+    },
+    {
+      "post_id": 2877,
+      "url": "https://www.emep.org/aslolan-iscilerin-emekcilerin-lehine-olan-bir-demokrasi-anlayisidir",
+      "api_date": "2018-06-21T19:51:10",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "4eac59ff4693e37a196ade5c2eb2ff23fc4914f08858f43085584377ba654525",
+      "start_char": 0,
+      "end_char": 7326,
+      "total_char": 7326,
+      "slice_sha256": "4eac59ff4693e37a196ade5c2eb2ff23fc4914f08858f43085584377ba654525",
+      "reading_note": "21 Haziran EMEP yayını, İstanbul İl Başkanı Sema Barbaros'un Evrensel WebTV'deki seçim çalışması anlatımıdır. Açıklama geniş güç birliği görüşmelerinin sonucunu, HDP ve Demirtaş'a desteği ve partinin kendi örgütlenme çağrısını ayırıyor. Tuzla'da OHAL gerekçeli engelleme iddiası bir sonraki araştırma ucu. Bulunan Tuzla soruşturma haberi ayrı dosyayı anlatıyor. Engellemenin günü, idari emri ve fail/kurum kimliği açık."
+    },
+    {
+      "post_id": 2865,
+      "url": "https://www.emep.org/selma-gurkan-asil-siyaseti-ozne-olan-isci-sinifi-yapmalidir",
+      "api_date": "2018-06-08T14:13:11",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "a23f0285c85f7afc6a3a3dad09dd0aaf9366a3eb98bad9c1a6dc7499950e5eda",
+      "start_char": 0,
+      "end_char": 9523,
+      "total_char": 9523,
+      "slice_sha256": "a23f0285c85f7afc6a3a3dad09dd0aaf9366a3eb98bad9c1a6dc7499950e5eda",
+      "reading_note": "8 Haziran EMEP arşivi Evrensel haberini yeniden yayımlıyor. Balçova ilçe örgütünün çağrısı ile Dokuz Eylül Hastanesi çalışanları toplantısı, Narlıdere örgütünün Çatalkaya toplantısı, Ege Üniversitesi işçileri ziyareti ve BEKEV ziyareti dört ayrı oluş kaydıdır. Evrensel haberindeki ilk iki katılım sayısı 25 ve yaklaşık 100, kendi haber atfıyla korunuyor. Toplantıların tek tek gün/saat, davet ve katılımcı listeleri ile işten çıkarma ve işe dönüş süreçleri açık."
+    },
+    {
+      "post_id": 2839,
+      "url": "https://www.emep.org/partiya-kede-em-e-di-hilbijartinan-de-desteke-bidin-selahattin-demirtas-u-hdpe",
+      "api_date": "2018-05-07T15:59:18",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "6f2f3a83498c6c4bea1de5ac7f89115bc68cf49b43270cab80def3a700803791",
+      "start_char": 0,
+      "end_char": 4233,
+      "total_char": 4233,
+      "slice_sha256": "6f2f3a83498c6c4bea1de5ac7f89115bc68cf49b43270cab80def3a700803791",
+      "reading_note": "7 Mayıs Kürtçe EMEP yayını GYK toplantısından sonra Selma Gürkan'ın Evrensel'e anlattığı iki ayrı seçim desteğini aktarıyor. Türkçe 4 Mayıs Evrensel yayını aynı beyanı taşıyor. 7 Mayıs Kürtçe yayım tarihi tek başına yeni bir karar veya GYK toplantı günü vermiyor. Demokrat Parti siyasi ittifak anlatımında geçiyor. 20 Mayıs YSK kura tutanağında Millet İttifakı için ayrı pusula sıralamasında CHP, İYİ Parti ve Saadet Parti logoları var. DP'nin politik desteği, aday listesi ve pusula statüsü ayrı kanıt gerektiriyor."
+    },
+    {
+      "post_id": 2825,
+      "url": "https://www.emep.org/hizla-hareket-edildigi-takdirde-demokratik-bir-guc-birliginin-zemini-ve-suresi-mevcuttur",
+      "api_date": "2018-04-29T13:19:52",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-26.json",
+      "page_sha256": "cf6a16971554a187b33af5769398d8b2d426de89e1cbb7207dadaa9ab281b58c",
+      "body_sha256": "e818221f82f3ab98f6222d680dff9bb2d18644e04f5e2c0e7b381a029bc81a00",
+      "start_char": 0,
+      "end_char": 7796,
+      "total_char": 7796,
+      "slice_sha256": "e818221f82f3ab98f6222d680dff9bb2d18644e04f5e2c0e7b381a029bc81a00",
+      "reading_note": "29 Nisan Hacı Bişkin röportajında Selma Gürkan, ortak demokratik aday görüşmelerinin sürdüğünü, Selahattin Demirtaş'ın seçeneklerden biri olduğunu ve olası ikinci tur kararının platforma göre verileceğini açıkladı. Gazete Duvar, 2020 güncellemesini ayrıca gösteriyor. YSK 2018/344, 4–9 Mayıs seçmen imza günlerini doğruluyor. 25 Nisan çağrısı, 29 Nisan görüşme açıklaması ve 4 Mayıs destek tercihi ayrı aşamalar."
+    }
+  ]
+}
