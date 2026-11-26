@@ -5,15 +5,15 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 4
 status: executing
-stopped_at: DEM ve TİP adaylarının yapısal birleşimi doğrulandı. Üç arşiv işi Slurm işlemci kotasında bekliyor.
-last_updated: "2026-11-26T19:54:18+00:00"
+stopped_at: Onaylanan ilk teslimde dokuz parti korunuyor. Birleşik rapor için 62742674 çalışıyor.
+last_updated: "2026-11-26T20:55:14+00:00"
 last_activity: 2026-11-26
-last_activity_desc: DEM ve TİP adaylarının yapısal birleşimi doğrulandı. Üç arşiv işi Slurm işlemci kotasında bekliyor.
-state_head: 48f7117e1400e428e707c3710460cb6ba96c45ec
+last_activity_desc: Onaylanan ilk teslimde dokuz parti korunuyor. Birleşik rapor için 62742674 çalışıyor.
+state_head: ad1e703536efc4be0449ea4034e2f0bffefadfeb
 progress:
   total_phases: 6
   completed_phases: 3
-  total_plans: 47
+  total_plans: 36
   completed_plans: 35
 ---
 
@@ -29,11 +29,11 @@ See: .planning/PROJECT.md (updated 2026-11-16)
 ## Current Position
 
 Current Plan: 4
-Total Plans in Phase: 15
+Total Plans in Phase: 4
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
-Plan: 4 of 15
-Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: DEM ve TİP adaylarının yapısal birleşimi doğrulandı. Üç arşiv işi Slurm işlemci kotasında bekliyor. Faz 4’te 3/15 plan tamamlandı. Kabul edilmiş paketlerde 5.488 kapsam hücresi açık.
+Plan: 4 of 4 (04-16)
+Status: Daraltılmış ilk teslim doğrulanıyor. 04-01–04-03 tamamlandı.
+Last activity: Onaylanan ilk teslimde dokuz parti korunuyor. Birleşik rapor için 62742674 çalışıyor.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -60,7 +60,7 @@ Bu dalganın yazılabilir çalışma kopyası `/work/mg551/gsd-phase04-checkout.
 **Recent Trend:**
 
 - Last 5 plans: 03-12, 03-13, 03-14, 03-15, 03-16
-- Trend: Faz 1–3 tamamlandı. Faz 3 teknik 14/14 ve kullanıcı UAT 6/6; kabulün toplu niteliği kayıtlarda korunur. Faz 4 yürütülüyor; 04-01–04-03 tamamlandı, 12 plan kaldı.
+- Trend: Faz 1–3 tamamlandı. Faz 3 teknik 14/14 ve kullanıcı UAT 6/6; kabulün toplu niteliği kayıtlarda korunur. Faz 4’te 04-01–04-03 tamamlandı. 04-16 ilk teslim doğrulanıyor.
 
 **Per-Plan Metrics:**
 

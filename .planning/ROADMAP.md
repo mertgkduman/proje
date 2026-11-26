@@ -6,7 +6,7 @@
 
 **Status:** Kullanıcı tarafından onaylandı — 2026-11-09.
 **Milestone:** v1.0 — Kaynak temelli ilk araştırma arşivi ve rapor.
-**Yapı.** Bütün aşamalar kullanıcı seçimiyle `mvp` modunda. Gereksinimler onaylandı. Faz 1–3 tamamlandı. Faz 4 yürütülüyor ve 15 planın üçü tamamlandı.
+**Yapı.** Bütün aşamalar kullanıcı seçimiyle `mvp` modunda. Gereksinimler onaylandı. Faz 1–3 tamamlandı. Faz 4’ün daraltılmış ilk tesliminde dört etkin planın üçü tamamlandı.
 **Coverage:** 35/35 v1 gereksinimi tam olarak birer aşamaya atanmıştır. Eşleme, gereksinimlerin tamamlandığı anlamına gelmez.
 
 ## Phases
@@ -226,7 +226,9 @@ Plans:
 2. Okur, her eşleştirmenin aktörünü, açıklama ve olay tarihlerini, geçerli belge sürümünü ve bağlamını görebilir; parti açıklaması tek başına uygulamanın gerçekleştiğine kanıt sayılmaz.
 3. Okur, aynı ölçütlerle hazırlanmış karşılaştırmalarda belgelerin desteklediği benzerlik/farklılıkları, kaynağın beyanını ve araştırmacı/yapay zekâ yorumunu ayrı görebilir; kanıt eksikliği uyum veya çelişki sonucu gibi sunulmaz.
 
-**Plans:** 3/15 plans executed
+**İlk teslim kapsamı:** Dokuz partinin incelenen kayıtları, ortak kaynak ölçütleri, iki okuyucu görünümü ve yerel arşiv. 26 Kasım 2026 tarihli kullanıcı kararıyla açık araştırma hücreleri ve genişletme işleri devam için kayda alındı. Veri paketi tam tarama için `partial` durumunu taşımaya devam eder.
+
+**Plans:** 3/4 plans executed
 
 Plans:
 **Wave 1**
@@ -241,29 +243,11 @@ Plans:
 
 - [x] 04-03-PLAN.md — Dokuz parti kapsam envanteri, kapanış/yeniden açılma ve bağımsız önizleme
 
-**Wave 4** *(blocked on Wave 3 completion)*
+**Wave 4**
 
-- [ ] 04-04-PLAN.md — Yeni Parti bütün konu ve kaynak zincirleri
-- [ ] 04-05-PLAN.md — TİP bütün konu ve kaynak zincirleri
-- [ ] 04-06-PLAN.md — DEM Parti bütün konu ve kaynak zincirleri
-- [ ] 04-07-PLAN.md — İYİ Parti bütün konu ve kaynak zincirleri
-- [ ] 04-08-PLAN.md — Yeni Yol Partisi bütün konu ve kaynak zincirleri
-- [ ] 04-09-PLAN.md — DBP bütün konu ve kaynak zincirleri
-- [ ] 04-10-PLAN.md — EMEP bütün konu ve kaynak zincirleri
-- [ ] 04-11-PLAN.md — Saadet Partisi bütün konu ve kaynak zincirleri
-- [ ] 04-12-PLAN.md — Demokrat Parti bütün konu ve kaynak zincirleri
+- [ ] 04-16-PLAN.md — Dokuz partinin incelenmiş kayıtlarından ilk teslim, kaynak ve tarayıcı doğrulaması
 
-**Wave 5** *(blocked on Wave 4 completion)*
-
-- [ ] 04-13-PLAN.md — Ortak olayların seri birleşimi ve bütün-parti geri tarama kapanışı
-
-**Wave 6** *(blocked on Wave 5 completion)*
-
-- [ ] 04-14-PLAN.md — Bütün ortak konularda kaynaklı kısa partiler arası sentez
-
-**Wave 7** *(blocked on Wave 6 completion)*
-
-- [ ] 04-15-PLAN.md — Gerçek maddi kaynak incelemesi, tarayıcı kanıtı ve kullanıcı kabulü hazırlığı
+Eski 04-04–15’in kalan işleri ve kaynak kayıtları faz dizinindeki planlarında korunur. İlk teslim 04-16’da tanımlanır.
 
 **Cross-cutting constraints:**
 
@@ -322,7 +306,7 @@ Plans:
 | 1. Kapsam, yöntem ve kaynaklı pilot rapor | 6/6 | Complete    | 2026-11-10 |
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
 | 3. Tüzük ve programların karşılaştırılması | 16/16 | Complete    | 2026-11-16 |
-| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 3/15 | In Progress|  |
+| 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 3/4 | İlk teslim doğrulanıyor |  |
 | 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
