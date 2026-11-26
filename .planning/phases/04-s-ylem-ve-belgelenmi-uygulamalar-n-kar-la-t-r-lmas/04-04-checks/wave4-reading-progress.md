@@ -702,3 +702,5 @@ EMEP’in Gebze Trelleborg yılbaşı ziyareti, 62715191 işinin üç kapısı v
 TİP’in beş yerel olay işi 62717954 olarak çalışma diskine alındı. Ardındaki İdlib ve 7244 işi 62718153, ortak olay açıklamasını ilgili parti söylemlerinden ayıran 9a28eef2 adayını kullanıyor. Önceki iş 62717955 bağımlılıkta iptal edildi. Saadet kaynağı 296/649 tamamlandı. [Güncel TİP adayı](../04-05-checks/tip-2020-policy-draft.json) [Saadet 209](../04-11-checks/party-news-209-reading.json)
 
 Eylül 2020 ÇarkBaşak 20 sayfayla okundu, toplam 17/31 sayı ve 381 sayfa. 31 Ağustos saldırı tarihi, 1 Eylül Yoğurtçu Parkı parti açıklaması ve ceza davası aşamaları farklı belgeler gerektiriyor. 2019 İşçi Konferansı kararı ve 2020 dayanışma ağı sayıları kendi parti yayımına atfedildi. [Eylül okuması](../04-05-checks/tip-cark-basak-catalog/issue-17/reading-01.json)
+
+Ekim 2020 ÇarkBaşak 20 sayfayla okundu. Toplam 18/31 sayı ve 401 sayfa. Parti haberleri görsel ve metin olarak okundu. 14 Temmuz Tempo işten çıkarmaları, 12 Ağustos ve 25 Ağustos Şişli eylemleri ve Eylül işe iade açıklamaları ayrı izleniyor. [Ekim okuması](../04-05-checks/tip-cark-basak-catalog/issue-18/reading-01.json)
