@@ -9,12 +9,12 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 63 | 54 | 62717954 kapıları, bağımsız kart ve arşiv denetimi |
+| TİP | 65 | 56 | 62718929, bağımsız arşiv denetimi |
 | DEM Parti | 89 | 13 | 62708088 / 62708185 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 68 | 7 | 62635637 |
-| EMEP | 86 | 80 | 62715191 |
+| EMEP | 87 | 81 | 62718977, bağımsız ekleme ve arşiv denetimi |
 | Saadet Partisi | 40 | 36 | 62714558, bağımsız yerel denetim |
 | Demokrat Parti | 83 | 54 | 62714572 kapıları, bağımsız kurtarma denetimi |
 
@@ -724,3 +724,5 @@ Nisan 2021’in 20 ve Mayıs 2021’in 22 sayfasıyla ÇarkBaşak okuması 25/31
 İstanbul Sözleşmesi zincirinde 19 Mart tarihli 3718 ve 29 Nisan tarihli 3928’in özgün Resmî Gazete PDF’leri alınıp görsel okundu. 20 Mart yayım, 22 Mart bildirim, 30 Nisan yayım ve 1 Temmuz sona erme farklı tarihler. TİP’in 23 Mart başvurusu, Danıştay’ın 14 Haziran 2022 reddi, 19 Aralık kesin onaması ve 28 Nisan 2023 tarihli AYM formu ayrıştırıldı. AYM dosya numarası ve sonuç açık. [Kaynak zinciri](../04-05-checks/istanbul-sozlesmesi-case-sources/reading.json)
 
 Haziran 2021’in 20 ve Temmuz 2021’in 22 sayfasıyla ÇarkBaşak okuması 27/31 sayıya ve 585 sayfaya ulaştı. KYK borç silme ve burs talebi, yaz dönemi yerel etkinlik bildirileri, Parti Meclisine sunulan öneriler ile üyelik sayıları ayrı okundu. [Haziran](../04-05-checks/tip-cark-basak-catalog/issue-26/reading-01.json) [Temmuz](../04-05-checks/tip-cark-basak-catalog/issue-27/reading-01.json)
+
+TİP’in 65/56 ve EMEP’in 87/81 çalışma çiftleri yalıtılmış önizlemelerden sonra güncellendi. İdlib’de 5 Mart 2020 Moskova ek protokolü her iki pakette aynı BM belgesi ve pasajıyla kaydedildi. TİP’in 3 Şubat ve EMEP’in 28 Şubat açıklamaları ayrı ilişkilerdir. Protokoldeki ateşkes ve devriye takvimi ile bunların sahadaki gerçekleşmesi ayrı kanıt gerektirir. TİP’in 12 Mart ücretli izin çağrısı 7244 sayılı Kanun’un koşullu ücretsiz izin düzenlemesiyle karşılaştırıldı. İzin kullanımı ve ücret ödemesi için uygulama kanıtı açık. İki pakette de kapsam kapanışı sıfır. [TİP önizlemesi](../04-05-checks/tip-2020-policy-62718929.json) [TİP varlık denetimi](../04-05-checks/tip-2020-policy-62718929-assets.json) [EMEP önizlemesi](../04-10-checks/idlib-2020-emep-v2-62718977.json) [EMEP ekleme denetimi](../04-10-checks/idlib-2020-emep-v2-62718977-append-only.log) [EMEP varlık denetimi](../04-10-checks/idlib-2020-emep-v2-62718977-assets.json)
