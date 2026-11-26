@@ -6,10 +6,10 @@ current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılmas
 current_plan: 4
 status: executing
 stopped_at: Phase 04 source reading and isolated preview verification in progress
-last_updated: "2026-11-26T07:04:31+00:00"
+last_updated: "2026-11-26T07:28:24+00:00"
 last_activity: 2026-11-26
-last_activity_desc: TİP 70 olay ve 57 ilişki iki görünümde doğrulandı. EMEP API okuması 2.505 tam gövdeye ulaştı.
-state_head: 9d7066bcf809d504d849ba6f0cfc568112d34dfa
+last_activity_desc: 20. birleşik prova bağımsız olarak doğrulandı. İYİ Parti ve EMEP çalışma çiftleri güncellendi.
+state_head: dea88353d1f095c954c641f83def3c6b86e6e7db
 progress:
   total_phases: 6
   completed_phases: 3
@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
 Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: 2026-11-26 UTC — TİP 70 olay ve 57 ilişki, EMEP 2.505 tam gövde, Yeni Parti 145 olay ve 142 ilişki. Dokuz partinin 5.490 kapsam hücresi açık.
+Last activity: 2026-11-26 UTC — 20. birleşik prova 585 olay ve 413 ilişki. İYİ Parti 23/15, EMEP 88/82, TİP 70/57, Yeni Parti 145/142. Dokuz partinin 5.490 kapsam hücresi açık.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-26T07:04:31+00:00
-Stopped at: 19. birleşik prova 62718152 ile bağımsız doğrulandı. 20. prova 585 olay ve 413 ilişkiyi yeniden üretti; önizleme 62719939 ve yerel 62258890 çalışmasında. TİP’in 62718930 önizlemesinin üç adımı geçti, kart denetimi kaynak metninden tamamlandı ve 1.746 yerel dosya doğrulandı. TİP güz 62721068 ve İstanbul Sözleşmesi 62721069, EMEP İstanbul Sözleşmesi 62720897, İYİ Parti disiplin 62720343, Saadet 7/35779 önizleme 62720779 ve yerel 62258890 sırada. Kapsam kapanışı sıfır.
+Last session: 2026-11-26T07:28:24+00:00
+Stopped at: 20. birleşik prova 62719939 ile bağımsız doğrulandı. 585 olay, 413 ilişki, 217 eşleşmemiş aday, 6.162 inceleme kökeni ve 5.010 arşiv dosyası denetlendi. İYİ Parti 23/15 (62720343) ve EMEP 88/82 (62720897) kabul edildi. TİP güz 62721068 ve İstanbul Sözleşmesi 62721069 ile Saadet’in küçük TBMM nüshaları 62258890 denetleniyor. Saadet 7/35779 PDF adayı 62720779 ile 41/37 ve 1.592 varlık denetlendi. 3718 için dondurulmamış dokuz paket ön kontrolü var. Kapsam kapanışı sıfır.
 Resume file: None

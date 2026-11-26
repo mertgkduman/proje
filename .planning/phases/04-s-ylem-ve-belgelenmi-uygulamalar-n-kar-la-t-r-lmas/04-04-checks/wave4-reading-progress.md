@@ -11,10 +11,10 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Yeni Parti | 145 | 142 | 62719203 girdi ve kaynak, 62719510 önizleme ve bağımsız denetim |
 | TİP | 70 | 57 | 62718930, bağımsız kart ve 1.746 varlık denetimi |
 | DEM Parti | 89 | 13 | 62708088 / 62708185 |
-| İYİ Parti | 21 | 13 | 62615506 / 62615510 |
+| İYİ Parti | 23 | 15 | 62720343, bağımsız 1.392 varlık denetimi |
 | Yeni Yol | 23 | 12 | 62501645 |
 | DBP | 68 | 7 | 62635637 |
-| EMEP | 87 | 81 | 62718977, bağımsız ekleme ve arşiv denetimi |
+| EMEP | 88 | 82 | 62720897, bağımsız 1.850 varlık denetimi |
 | Saadet Partisi | 40 | 36 | 62714558, bağımsız yerel denetim |
 | Demokrat Parti | 83 | 54 | 62714572 kapıları, bağımsız kurtarma denetimi |
 
@@ -742,3 +742,12 @@ EMEP API’sinin 33 sayfası ve 3.270 gönderi gövdesi özetler ve kapsanan kar
 EMEP’in arşiv denetiminde 2.515 gövde tam, biri kısmi ve 754 gövde makbuzla doğrulanamadı. 9 Ekim 2018 parti yayını Selma Gürkan’ın İstanbul 26. Ağır Ceza Mahkemesindeki savunmasını aktarıyor. 24 Nisan 2019 hükmü, istinaf ve bozma haberlerinin günleri ve 6 Kasım 2024 beraat duruşması ayrı. İstinaf ve Yargıtay kararlarının özgün metinleriyle beraatin kesinleşme kaydı açık. Roboski’de AYM’nin 24 Şubat 2016 ret kararı 23 Mart’ta yayımlandı. AİHM 49976/16 ve diğer başvurularda 10 Nisan 2018’de kabul edilemezlik kararı verdi, 17 Mayıs’ta yazılı bildirim yapıldı. 2021/15347 daha sonra yapılan ayrı AYM başvurusudur. [Okuma kapsamı](../04-10-checks/party-api-coverage-20261126.json) [Yeni gövde okumaları](../04-10-checks/party-api-gap-004-source-reading.json) [Yargı belgeleri ve haberler](../04-10-checks/roboski-gurkan-source-reading.json)
 
 Saadet 7/35779 için 20 Ekim soru gelişi, 15 Ekim aidiyet kanıtı ve 27 Ocak 2021 imzalı Bakanlık cevabı 41 olay ve 37 ilişkili bir adayda doğrulandı. 62720779 önizlemesinin iki görünümü ve 1.592 arşiv dosyası bağımsız olarak denetlendi. Büyük tutanak PDF’leri çalışma diskinde duruyor. Daha küçük resmî TBMM HTML nüshaları aynı aidiyet ve soru kaydını içeriyor. Gelen kâğıtlar belgesinin sunucu başlığı UTF-8, HTML içi beyanı Windows-1254. Özgün baytlar sabit tutularak pasif görünüm sunucu başlığına göre üretildi. HTML nüshalarıyla ayrı kaynak ve önizleme denetimi 62258890 üzerinde başladı. [PDF adayının bağımsız denetimi](../04-11-checks/mine-35779-62720779-independent.json) [HTML kaynak özeti](../04-11-checks/mine-35779-official-html-source-proof.json)
+
+
+20. birleşik prova 62719939 ile bağımsız doğrulandı. 585 olay, 413 ilişki, araştırmaya açık 217 aday, 628 olay eş adı ve 6.162 inceleme kökeni iki görünümde korundu. 677 pasaj izni ve 5.010 yerel arşiv dosyası denetlendi. İdlib’in tek ortak olayında TİP ve EMEP’in ayrı açıklamaları aynı BM belgesine dayanıyor. 21 ortak olay kararı ve 13 çözümlenmemiş aday var. Her iki veri çıktısı aynı kayıtları içeriyor. [Makbuz](wave4-merge-rehearsal-20-62719939-independent.json) [Üretim günlüğü](wave4-merge-rehearsal-20-62719939-slurm.log)
+
+İYİ Parti’nin iki yeni karşılaştırması 23 olay ve 15 ilişkiye ulaştı. 2020 tüzüğünün 71, 75 ve 76. maddeleri, Müşterek Disiplin Kurulunun 16 Kasım 2020 kararı ve 13 Ocak 2021’de bildirilen Ankara 1. Asliye Hukuk Mahkemesi iptaliyle karşılaştırıldı. 14 Ocak parti açıklaması ile 20 Ocak gerekçe haberi ayrı. 4 Mart’taki istifa ayrı kaynak zinciri. İmzalı mahkeme kararı, iç disiplin evrakı ve kesinleşme kaydı açık. [Kaynak okuması](../04-07-checks/iyi-ozdag-discipline-reading.json) [Bağımsız makbuz](../04-07-checks/iyi-ozdag-discipline-62720343-independent.json)
+
+EMEP’in İstanbul Sözleşmesi kaydı çalışma çiftini 88 olay ve 82 ilişkiye taşıdı. Ağustos 2020’de Şükran Doğan’ın çağrısı, 19 Mart 2021 tarihli 3718 kararı, 20 Mart Selma Gürkan açıklaması ve 1 Temmuz’daki sona erme ayrı. EMEP’in katkısı yayımlanmış itirazla sınırlı. 23 Haziran 2022 parti çağrısı, davaya taraf olunduğuna ilişkin kanıt olarak kullanılmadı. İki görünüm ve 1.850 yerel dosya denetlendi. [Kaynak okuması](../04-10-checks/emep-istanbul-sozlesmesi-reading.json) [Bağımsız makbuz](../04-10-checks/emep-istanbul-sozlesmesi-62720897-independent.json)
+
+EMEP’in İngilizce programının 33.529 karakterlik aralığı altı kesitte okundu ve önceki makbuzlarla tüm gövde doğrulandı. Toplam 2.516 tam gövde ve 754 açık gövde var. EMEP ile DİSK’in 9 Ekim 2018 görüşmesi iki kurumun özgün yayınlarıyla doğrulandı. Adana OSB’de 19 Ekim gözaltıları ve 5 Aralık takipsizlik haberi ayrı. İmzalı takipsizlik ve dosya numarası açık. [İngilizce program okuması](../04-10-checks/party-api-gap-005-source-reading.json) [DİSK ve Adana makbuzu](../04-10-checks/adana-disk-2018-source-reading.json)
