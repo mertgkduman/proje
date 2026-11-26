@@ -16,7 +16,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | DBP | 68 | 7 | 62635637 |
 | EMEP | 85 | 79 | 62711488 |
 | Saadet Partisi | 40 | 36 | 62714558, bağımsız yerel denetim |
-| Demokrat Parti | 81 | 52 | 62618726 |
+| Demokrat Parti | 83 | 54 | 62714572 kapıları, bağımsız kurtarma denetimi |
 
 TİP’in önceki birleşik önizlemesine düğüm temizliğinin ardından erişilemedi. 62399107 ile alınan dört olaylı önizleme paylaşılan dizinde korundu ve ayrı süreçte denetlendi. Saadet ve Demokrat Parti çalışmalarında tüzük nüshasının dönemi ve seçim tutanağına ilişkin belirsizlikler okuyucu kaydında belirtildi.
 
@@ -690,3 +690,5 @@ TİP’in 8 Aralık 2019 Bakırköy karşılaştırması 62714095 ile girdi, kay
 Saadet’in 28 Kasım 2022 tarihli iki karşılaştırması 62714558 ile oluşturuldu. Girdi, kaynak ve önizleme kapıları başarılı. Ayrı yerel süreçte olaylar, iki HTML görünümü, SQLite ve JSON satırları ile sürüm özetleri doğrulandı. Çalışma çifti 40 olay, 36 ilişki. Bilkent Otel anayasa önerisi tanıtımı ile Demokrat Parti Genel Merkezi liderler toplantısının tarih ve rollerine ayrı kanıt bağlandı. [Saadet bağımsız denetimi](../04-11-checks/six-leaders-nov-2022-v2-62714558-independent-local.log)
 
 Temmuz 2020 ÇarkBaşak 20 sayfayla okundu. Toplam 15/31 sayı ve 341 sayfa. 30 Haziran örgütlenme tamamlama beyanı, 26 Ocak 2021 listesinde TİP’in yer almaması ve 12 Ocak 2022 listesine girmesi ayrı. Nisan kampanyasındaki yaklaşık 1.600 başvuru parti bildirimi. [Temmuz okuması](../04-05-checks/tip-cark-basak-catalog/issue-15/reading-01.json)
+
+Demokrat Parti’nin iki 28 Kasım kaydı 83 olay ve 54 ilişkiyle çalışma çiftine alındı. 62714572 üç kapıyı geçti ve disk dolduğunda kopyalama sırasında FAILED 1:0 durumuna geçti. İşin yarım önizleme kopyası özetleri doğrulanarak çalışma diskine taşındı. Manifestteki 1.778 yerel varlığın 1.559 eksik kopyası kayıtlı özetleri eşleşen kaynaklardan tamamlandı. Özgün manifest, SQLite/JSON, iki HTML görünümü ve tüm varlık özetleri bağımsız yerel denetimde doğrulandı. [Kurtarma makbuzu](../04-12-checks/six-leaders-november-dp-v2-62714572-asset-restoration.json) [Bağımsız denetim](../04-12-checks/six-leaders-november-dp-v2-62714572-recovered-independent.log)
