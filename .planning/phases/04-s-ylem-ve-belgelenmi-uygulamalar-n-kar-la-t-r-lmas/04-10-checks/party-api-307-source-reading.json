@@ -1,0 +1,54 @@
+{
+  "tranche_id": "0410-emep-api-307",
+  "read_at": "2026-11-26T04:36:48.149650+00:00",
+  "method": "3182 özgün HTML gövdesinin [12000,28201) son aralığı doğrudan okundu; önceki 306 ile aynı kaynak gövde SHA-256.",
+  "parts": [
+    {
+      "post_id": 3182,
+      "url": "https://www.emep.org/halk-meclisleriyle-yonetelim",
+      "api_date": "2019-02-19T11:04:41",
+      "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json",
+      "page_sha256": "ba60759623e5767b561d6921acdb5bc09c26d7bbc00d78c0a89ee1126abe8479",
+      "body_sha256": "35b5da4b16b806398c594ed33e5f455cfa2749d5e7e752394967a11930647338",
+      "start_char": 12000,
+      "end_char": 28201,
+      "total_char": 28201,
+      "slice_sha256": "255e8b53b87f29abe56f72dbe219bab68141c5b201e8a01215a7dcde94a88c77",
+      "reading_note": "Evrensel Gazetesi atıflı derlemenin devamında Tekirdağ bağımsız aday Tuncay Sağıroğlu ve EMEP Başkanı Selma Gürkan’ın açıklamaları, Denizli bağımsız aday Mehmet Kırgız’ın seçim öncesi vaatleri, EMEP İzmir İl Başkanı Emine Uyar’ın Tunç Soyer ve yerel ittifaklara ilişkin değerlendirmesi var. Su/ulaşım, halk meclisi ve özelleştirmeye ilişkin aday önerileri gerçekleşmiş işlem değildir; mevcut İZBAN düzeni ve belediye kararlarına yönelik eleştiriler de bağımsız kanıt gerektirir.",
+      "anchors": [
+        {
+          "exact": "Mehmet Kırgız",
+          "start_char": 16081,
+          "end_char": 16094
+        },
+        {
+          "exact": "Emine Uyar",
+          "start_char": 19640,
+          "end_char": 19650
+        },
+        {
+          "exact": "Tunç Soyer",
+          "start_char": 19666,
+          "end_char": 19676
+        },
+        {
+          "exact": "Haber: Evrensel Gazetesi",
+          "start_char": 28172,
+          "end_char": 28196
+        }
+      ]
+    }
+  ],
+  "total_source_chars": 16201,
+  "next_unread": {
+    "after_post_id": 3182,
+    "next_post_id": 3178,
+    "page": "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-10-checks/party-api-pages/page-25.json"
+  },
+  "limitations": [
+    "Yayıncı Evrensel Gazetesi atfı EMEP sitesi kopyasında korunmuştur.",
+    "Siyasi adaylık ve partinin değerlendirmeleri seçilme veya belediye uygulaması değildir.",
+    "Diğer kaynaklar ve kapsam açık."
+  ],
+  "closure_refs": []
+}
