@@ -927,3 +927,11 @@ eski kapanışa bağlı yeniden açılış ve bir AYM olayı içeriyor. İki hü
 aday doğrulamasında açık. 62740417 önizlemesi işlemci kotasında,
 62740426 bağımsız denetimi başarılı önizlemeyi bekliyor. Mevcut kabul
 edilmiş paketlerde önceki iki kapanış yer alıyor.
+
+## EMEP Aralık 2017 metinleri
+
+EMEP’in özgün API arşivinde 3.270 gövdenin 2.631’i tam okuma makbuzuyla
+doğrulandı ve 639 gövde açık. [On iki Aralık 2017 gövdesi](../04-10-checks/party-api-2017-december-statements-and-events-reading.json)
+61.151 karakteri kapsıyor. Kudüs açıklamasının üç dildeki yayınları birbiriyle,
+Bostancı duyurusu parti ve basındaki etkinlik haberleriyle ilişkilendirildi.
+İnsan Hakları Evrensel Bildirisi’nin kabul yılı BM kaydıyla karşılaştırıldı.
