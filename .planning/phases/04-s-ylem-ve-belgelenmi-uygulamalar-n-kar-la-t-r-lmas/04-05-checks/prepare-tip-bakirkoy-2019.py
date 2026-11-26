@@ -195,6 +195,7 @@ for kind, ident in sorted(targets.keys() - old_targets):
         supported_claim=" ".join(row["section"] for row in inspected), limitations=limitation,
         result="reviewed", reason=f"{kind} türündeki {ident} için etkinlik ve parti rolünün ayrı kanıtları okundu."))
 rules.validate_practice_source_review(snapshot, reviews, party_id="tip", target_keys=set(targets))
+package["source_review_refs"] = [dict(subject_kind=kind, subject_id=ident) for kind, ident in sorted(targets)]
 assert [len(records[table]) for table in ("practice_event", "practice_relation", "practice_closure")] == [58, 54, 0]
 for suffix, value in (("", package), ("-review", review)):
     path = checks / f"tip-bakirkoy-2019{suffix}-draft.json"
