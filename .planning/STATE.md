@@ -196,5 +196,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-25T23:36:34Z
-Stopped at: 19. birleşik prova 62718152 ile bağımsız doğrulandı. 578 olay, 410 ilişki, 212 eşleşmemiş aday ve 4.966 arşiv dosyası denetlendi. TİP İdlib/7244 62718929 ile 65/56, EMEP İdlib 62718977 ile 87/81 çalışma çiftine alındı. Bağımsız denetimde 1.706 ve 1.838 varlık doğrulandı. ÇarkBaşak 27/31 sayı ve 585 sayfa, Saadet 296/649 gövde okundu. TİP baro/YKS/emek 62718930 ve güz 62719575 işleri kuyrukta. Yeni Parti 2/3961 adayı 62719203 girdi ve kaynak adımlarını geçti. Önizleme aynı girdilerle 62719510 işinde düğüm yerel diskinde sürüyor. Kapsam kapanışı sıfır.
+Stopped at: 19. birleşik prova 62718152 ile bağımsız doğrulandı. 578 olay, 410 ilişki, 212 eşleşmemiş aday ve 4.966 arşiv dosyası denetlendi. TİP İdlib/7244 62718929 ile 65/56, EMEP İdlib 62718977 ile 87/81 çalışma çiftine alındı. Bağımsız denetimde 1.706 ve 1.838 varlık doğrulandı. ÇarkBaşak resmî dizinindeki 31 PDF ve 677 sayfa, Saadet 296/649 gövde okundu. TİP baro/YKS/emek 62718930 ve güz 62719575 işleri kuyrukta. Yeni Parti 2/3961 adayı 62719203 girdi ve kaynak adımlarını geçti. Önizleme aynı girdilerle 62719510 işinde düğüm yerel diskinde sürüyor. Kapsam kapanışı sıfır.
 Resume file: None
