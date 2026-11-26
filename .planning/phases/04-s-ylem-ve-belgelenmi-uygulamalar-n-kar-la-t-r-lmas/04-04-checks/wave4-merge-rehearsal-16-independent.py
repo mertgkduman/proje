@@ -11,7 +11,7 @@ import sqlite3
 checks = Path(__file__).resolve().parent
 job = argv[1]
 number = argv[2] if len(argv) == 3 else "16"
-assert number in {"16", "17", "18"}
+assert number in {"16", "17", "18", "19"}
 prefix = "UNION_REHEARSAL_PREVIEW_OK "
 log = checks / f"wave4-merge-rehearsal-{number}-{job}-slurm.log"
 frozen = json.loads((checks / f"wave4-merge-rehearsal-{number}.json").read_bytes())
@@ -40,11 +40,17 @@ assert Counter(row["decision"] for row in records["practice_event_decision"]) ==
 origins = sum(row["origin_kind"] == "review_origins" for row in records["practice_merge_origin"])
 assert origins == frozen["review_origins"]
 joint_key = "yerel-yonetimler-2020-05-18-ortak-bildiri"
-assert receipt["source_permissions"] == 655
-assert frozen["added_reviewed_candidates"] == ([joint_key] if number == "16" else [])
+bakirkoy_key = "bakirkoy-2019-12-08-insanca-yasamak-istiyoruz"
+presentation_key = "six-party-2022-11-28-constitutional-proposal-presentation"
+meeting_key = "six-leaders-2022-11-28-dp-meeting"
+november_keys = {presentation_key, meeting_key}
+expanded_keys = {bakirkoy_key, *november_keys} if number == "19" else set()
+assert receipt["source_permissions"] == (669 if number == "19" else 655)
+expected_added = {joint_key} if number == "16" else expanded_keys
+assert set(frozen["added_reviewed_candidates"]) == expected_added
 halic_key = "halic-emek-ozgurluk-2022-09-24"
 yok_key = "yok-2023-03-30-bahar-yuzyuze-secenegi"
-assert set(receipt["shared_keys"]) == set(previous["shared_keys"]) | {halic_key, yok_key, joint_key}
+assert set(receipt["shared_keys"]) == set(previous["shared_keys"]) | {halic_key, yok_key, joint_key} | expanded_keys
 
 compare = ("practice_event", "practice_relation", "practice_closure", "practice_candidate", "practice_candidate_revision",
            "practice_contribution", "practice_event_decision", "practice_event_alias", "practice_source_party",
@@ -146,6 +152,48 @@ with sqlite3.connect((folder / "records.sqlite3").as_uri() + "?mode=ro", uri=Tru
         (party, "ff2a7d6312825665a6e74c54f5b1164045c0cc0324eef5237400bb9507085d22", 7)
         for party in ("tip", "dem", "dbp", "emep")
     }
+    expanded_events = {}
+    if expanded_keys:
+        for key in sorted(expanded_keys):
+            filled = db.execute(
+                "SELECT id,event_at FROM practice_event WHERE common_event_key=?", (key,)
+            ).fetchall()
+            assert len(filled) == 1
+            event_id, date = filled[0]
+            assert date == ("2019-12-08" if key == bakirkoy_key else "2022-11-28")
+            count = db.execute(
+                "SELECT COUNT(*) FROM practice_event_alias WHERE decision_id=? AND canonical_event_id=?",
+                (key, event_id),
+            ).fetchone()[0]
+            assert count == 2
+            actual_relations = {tuple(row) for row in db.execute(
+                "SELECT id,party_id FROM practice_relation WHERE event_id=?", (event_id,)
+            )}
+            actual_roles = {tuple(row) for row in db.execute(
+                "SELECT party_id,contribution_kind FROM practice_contribution WHERE event_id=?", (event_id,)
+            )}
+            if key == bakirkoy_key:
+                assert actual_relations == {("0405-tip-bakirkoy-2019-relation", "tip")}
+                assert actual_roles == {("tip", "support"), ("emep", "unknown")}
+                by_source = db.execute(
+                    "SELECT DISTINCT d.party_id,v.sha256,p.pdf_page_index FROM practice_event_evidence e "
+                    "JOIN passage p ON p.id=e.passage_id JOIN document_version v ON v.id=p.version_id "
+                    "JOIN document d ON d.id=v.document_id WHERE e.event_id=? AND p.pdf_page_index=99",
+                    (event_id,),
+                )
+                assert {tuple(row) for row in by_source} == {
+                    (party, "71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b", 99)
+                    for party in ("tip", "emep")
+                }
+            else:
+                suffix = "presentation" if key == presentation_key else "meeting"
+                assert actual_relations == {
+                    (f"0411-saadet-nov-2022-{suffix}-relation", "saadet"),
+                    (f"0412-six-leaders-2022-11-28-{suffix}-relation", "demokrat"),
+                }
+                assert actual_roles == {("demokrat", "task")}
+            expanded_events[key] = {"event_id": event_id, "aliases": count}
+        assert expanded_events[presentation_key]["event_id"] != expanded_events[meeting_key]["event_id"]
     for suffix, page in (("court-first-order", 30), ("court-october-order", 7), ("court-second-order", 35)):
         row = db.execute(
             "SELECT p.pdf_page_index FROM passage AS p JOIN manual_passage AS m ON m.passage_id=p.id WHERE p.id=?",
@@ -158,7 +206,14 @@ for row in sorted(records["practice_candidate_revision"], key=lambda row: dateti
     candidates[row["candidate_id"]] = row["state"]
 assert candidates["0406-tasimali-101783-candidate"] == candidates["0405-tip-election-finland-2023-nato-vote-candidate"] == "unmatched"
 unmatched = sorted(key for key, state in candidates.items() if state == "unmatched")
-assert len(unmatched) == receipt["active_unmatched"] == (211 if number == "18" else 209)
+assert len(unmatched) == receipt["active_unmatched"]
+if number == "19":
+    assert candidates["0410-bakirkoy-2019-emep-unmatched"] == "unmatched"
+    local = {key for key in unmatched if key.startswith("0405-tip-2020-local-")}
+    assert len(local) in {0, 5}
+    assert len(unmatched) == 212 + len(local)
+else:
+    assert len(unmatched) == (211 if number == "18" else 209)
 assert candidates["0406-halic-2022-candidate"] == candidates["0409-halic-2022-dbp-unmatched"] == "unmatched"
 joint_candidates = {
     "0405-tip-2020-2021-court-wage-election-joint-unmatched", "0406-yesilsol-2020-candidate",
@@ -179,8 +234,8 @@ new_relations = {
     "0405-tip-2018-institution-member-relation": ("6 Ekim", "10 Ekim", "24 Haziran", "HDP"),
     "0405-tip-2018-institution-meeting-relation": ("21 Ekim", "26 Ekim", "4 Aralık", "Gazi Cemevi"),
     "0405-tip-2018-institution-elig-relation": ("2 Ocak", "13 parti", "TİP"),
-} if number in {"17", "18"} else {}
-if number == "18":
+} if number in {"17", "18", "19"} else {}
+if number in {"18", "19"}:
     new_relations.update({
         "0405-tip-2019-local-eligibility-labor-damal-relation": ("Damal", "75 oy", "bağımsız"),
         "0405-tip-2019-local-eligibility-labor-elig21-relation": ("26 Ocak", "2021/22"),
@@ -204,6 +259,14 @@ if number == "18":
     assert commission["id"] not in relations.values()
     vote = events["0406-2026-3961-vote"]
     assert vote["event_at"] == "2026-11-05" and "2/3961" in vote["scope_context"]
+if number == "19":
+    new_relations.update({
+        "0405-tip-bakirkoy-2019-relation": ("8 Aralık", "Bakırköy", "Halk Pazarı"),
+        "0411-saadet-nov-2022-presentation-relation": ("14 Kasım", "28 Kasım", "Bilkent"),
+        "0411-saadet-nov-2022-meeting-relation": ("14 Kasım", "28 Kasım", "Demokrat Parti"),
+        "0412-six-leaders-2022-11-28-presentation-relation": ("14 Kasım", "28 Kasım", "Bilkent"),
+        "0412-six-leaders-2022-11-28-meeting-relation": ("14 Kasım", "28 Kasım", "Demokrat Parti"),
+    })
 assert set(new_relations) <= set(relations)
 for relation, phrases in {
     "0405-tip-halic-cemevi-2022-halic-relation": ("25 Ağustos", "24 Eylül", "25 Eylül", "Erkan Baş"),
@@ -232,7 +295,7 @@ receipt.update(independently_verified=True, terminal_validation_exit="0:0",
                source_review_origins=origins, frozen_output_sha256=frozen["output_sha256"],
                shared_events=dict(previous["shared_events"], **{halic_key: {"event_id": halic, "aliases": 4},
                    yok_key: {"event_id": yok, "aliases": 2},
-                   joint_key: {"event_id": joint_event, "aliases": 4}}),
+                   joint_key: {"event_id": joint_event, "aliases": 4}}, **expanded_events),
                joint_statement_candidates=sorted(joint_candidates), joint_statement_roles=sorted(joint_roles),
                halic_contributions=sorted(roles, key=lambda row: (row[0], row[1] or "", row[2])),
                audited_new_relations=[*expected_relations, *new_relations],

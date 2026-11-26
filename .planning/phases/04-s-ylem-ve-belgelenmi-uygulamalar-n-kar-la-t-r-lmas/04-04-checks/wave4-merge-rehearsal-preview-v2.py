@@ -26,7 +26,7 @@ outcome = exercise['first']
 rehearsal = exercise['receipt']
 data = exercise['data']
 number = exercise['number']
-recent_rehearsals = {'09', '10', '11', '12', '13', '14', '15', '16', '17', '18'}
+recent_rehearsals = {'09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19'}
 payload = outcome['payload']
 records = payload['practice_records']
 schemas = (PRACTICE_TABLES | PRACTICE_VARIANT_TABLES | PRACTICE_EVIDENCE_TABLES |
@@ -95,7 +95,7 @@ for decision in outcome['decisions']:
                 assert source['kind'] == 'other' and source['publisher'] == 'DEM Parti'
                 assert version['sha256'] == 'daa8f7ee3a2b7db149f5597ea9f898bac547f3634aae49127b49c988ab4072e5'
         elif key == 'halic-emek-ozgurluk-2022-09-24':
-            assert parties == ({'tip', 'dem', 'emep', 'dbp'} if number in {'15', '16', '17', '18'} else {'tip', 'dem', 'emep'})
+            assert parties == ({'tip', 'dem', 'emep', 'dbp'} if number in {'15', '16', '17', '18', '19'} else {'tip', 'dem', 'emep'})
             source = attributions[version['id']]
             if document['source_kind'] == 'party':
                 assert document['party_id'] == 'emep' and source['kind'] == 'party_publication'
@@ -119,6 +119,34 @@ for decision in outcome['decisions']:
                     '4c33779603e24a832bb4c000727b9c1a9c91a96a8b111b169acca420ab21243b',
                     '9e2db9a324041600d0ef6268c72b9c81210ef5b5e746eed58523cf7a664a0478',
                 }
+        elif key == 'bakirkoy-2019-12-08-insanca-yasamak-istiyoruz':
+            assert parties == {'tip', 'emep'}
+            source = attributions[version['id']]
+            if source['kind'] == 'official':
+                assert document['source_kind'] == 'official'
+                assert source['publisher'] == 'TMMOB Harita ve Kadastro Mühendisleri Odası İstanbul Şubesi'
+                assert version['sha256'] == '71d7365d5b82963fa8cf3de2c928cc2b032101f9135e3e192760d1ec1e24d00b'
+                assert docs['passage'][pid]['pdf_page_index'] == 99
+            else:
+                assert document['party_id'] == 'emep' and document['source_kind'] == 'news'
+                assert source['kind'] == 'journalism'
+                assert version['sha256'] == {
+                    'Özgür Gelecek': '594c664a8fa4ab4e537bf1c1537b42d20c4d2169b2935b1c73b11964ad89c39f',
+                    'ANF': 'f31b9e9878da907ab95ad63a5235be04091544fd240843024164d7d86a445846',
+                    'Evrensel': '27b4251ad65ef8f002cfcbe04de45ea28e7105cac4d902b0006f6fa73194af98',
+                }[source['publisher']]
+        elif key == 'six-party-2022-11-28-constitutional-proposal-presentation':
+            assert parties == {'saadet', 'demokrat'} and document['source_kind'] == 'journalism'
+            source = attributions[version['id']]
+            assert source['kind'] == 'journalism' and source['publisher'] == 'VOA Türkçe'
+            assert version['sha256'] == '820cc3c0a298eeaea8606f82b32ab24b3fbf9210d6f28790932160cc39ef4a65'
+        elif key == 'six-leaders-2022-11-28-dp-meeting':
+            assert parties == {'saadet', 'demokrat'} and document['source_kind'] == 'journalism'
+            source = attributions[version['id']]
+            assert source['kind'] == 'journalism' and source['publisher'] == {
+                'saadet': 'Son Dakika', 'demokrat': 'Son Dakika / İhlas Haber Ajansı',
+            }[document['party_id']]
+            assert version['sha256'] == '8b2d283fd2a306af8e7b97e11558b0737210021bad5c9bc886b47ece87870f39'
         elif key == 'yok-2023-03-30-bahar-yuzyuze-secenegi':
             assert parties == {'tip', 'saadet'}
             assert document['source_kind'] == 'official'
@@ -331,7 +359,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             'SELECT input_event_id,canonical_event_id FROM practice_event_alias WHERE decision_id=? ORDER BY input_event_id',
             (key,),
         ).fetchall() == [('0405-tip-7242-event','0405-tip-7242-event'), ('0410-law-7242-event','0410-law-7242-event')]
-    if number in {'11', '12', '13', '14', '15', '16', '17', '18'}:
+    if number in {'11', '12', '13', '14', '15', '16', '17', '18', '19'}:
         key = 'tbmm-28-2-112-2-2275-law-7527'
         event_id, parties = joined[key]
         assert parties == {'tip', 'emep'}
@@ -342,7 +370,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         }
         assert votes <= {row[0] for row in db.execute(
             'SELECT passage_id FROM practice_event_evidence WHERE event_id=?', (event_id,))}
-    if number in {'12', '13', '14', '15', '16', '17', '18'}:
+    if number in {'12', '13', '14', '15', '16', '17', '18', '19'}:
         meeting, parties = joined['six-leaders-2022-10-02-chp-second-round-meeting']
         assert parties == {'demokrat', 'iyi', 'saadet'}
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?', (meeting,))} == {'demokrat', 'saadet'}
@@ -353,9 +381,9 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         assert parties == {'dem', 'emep'}
         assert not db.execute('SELECT party_id FROM practice_relation WHERE event_id=?', (workshop,)).fetchall()
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_contribution WHERE event_id=?', (workshop,))} == parties
-    if number in {'14', '15', '16', '17', '18'}:
+    if number in {'14', '15', '16', '17', '18', '19'}:
         halic, parties = joined['halic-emek-ozgurluk-2022-09-24']
-        assert parties == ({'tip', 'dem', 'emep', 'dbp'} if number in {'15', '16', '17', '18'} else {'tip', 'dem', 'emep'})
+        assert parties == ({'tip', 'dem', 'emep', 'dbp'} if number in {'15', '16', '17', '18', '19'} else {'tip', 'dem', 'emep'})
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?', (halic,))} == {'tip', 'emep'}
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_contribution WHERE event_id=?', (halic,))} == parties
         assert set(db.execute('SELECT p.name, c.contribution_kind FROM practice_contribution AS c '
@@ -365,7 +393,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         }
         assert db.execute('SELECT event_id,state FROM practice_candidate WHERE id=?',
                           ('0406-halic-2022-candidate',)).fetchone() == (halic, 'unmatched')
-        if number in {'15', '16', '17', '18'}:
+        if number in {'15', '16', '17', '18', '19'}:
             assert set(db.execute('SELECT p.name,c.contribution_kind FROM practice_contribution AS c '
                                   'JOIN actor AS a ON a.id=c.actor_id JOIN person AS p ON p.id=a.person_id '
                                   'WHERE c.event_id=? AND c.party_id=?', (halic, 'dbp'))) == {
@@ -377,7 +405,7 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
         assert parties == {'tip', 'saadet'}
         assert {r[0] for r in db.execute('SELECT party_id FROM practice_relation WHERE event_id=?', (yok,))} == parties
         assert not db.execute('SELECT id FROM practice_contribution WHERE event_id=?', (yok,)).fetchall()
-    if number in {'16', '17', '18'}:
+    if number in {'16', '17', '18', '19'}:
         key = 'yerel-yonetimler-2020-05-18-ortak-bildiri'
         event_id, parties = joined[key]
         assert parties == {'tip', 'dem', 'emep', 'dbp'}
@@ -388,6 +416,28 @@ with sqlite3.connect((release/'records.sqlite3').resolve().as_uri()+'?mode=ro',u
             "SELECT s.party_id FROM practice_candidate AS c JOIN practice_scope_v2 AS s ON c.scope_id=s.id "
             "WHERE c.event_id=? AND c.state='unmatched'", (event_id,),
         )} == parties
+    if number == '19':
+        bakirkoy = 'bakirkoy-2019-12-08-insanca-yasamak-istiyoruz'
+        presentation = 'six-party-2022-11-28-constitutional-proposal-presentation'
+        meeting = 'six-leaders-2022-11-28-dp-meeting'
+        assert joined[presentation][0] != joined[meeting][0]
+        for key, date, relation_parties, roles in (
+            (bakirkoy, '2019-12-08', {'tip'}, {('tip', 'support'), ('emep', 'unknown')}),
+            (presentation, '2022-11-28', {'saadet', 'demokrat'}, {('demokrat', 'task')}),
+            (meeting, '2022-11-28', {'saadet', 'demokrat'}, {('demokrat', 'task')}),
+        ):
+            event_id, _ = joined[key]
+            assert db.execute('SELECT event_at FROM practice_event WHERE id=?', (event_id,)).fetchone() == (date,)
+            assert {row[0] for row in db.execute(
+                'SELECT party_id FROM practice_relation WHERE event_id=?', (event_id,)
+            )} == relation_parties
+            assert set(db.execute(
+                'SELECT party_id,contribution_kind FROM practice_contribution WHERE event_id=?', (event_id,)
+            )) == roles
+        assert tuple(db.execute(
+            'SELECT c.state FROM practice_candidate AS c JOIN practice_scope_v2 AS s ON c.scope_id=s.id '
+            'WHERE c.event_id=? AND s.party_id=?', (joined[bakirkoy][0], 'emep'),
+        ).fetchone()) == ('unmatched',)
 page = (release/'index.html').read_text()
 for r in records['practice_relation']:
     for view in ('party','comparison'):
