@@ -827,3 +827,22 @@ E.2026/9 sonuç alanı boş. Savunma süresi AA'ya, ret haberi DHA'ya atfedildi.
 görünümü ve 2224 varlığı doğruladı. Yeni Parti paketi
 148 olay, 142 ilişki ve 1 kapsam kapanışı taşıyor. Faz 4'te 3/15 plan
 tamamlandı ve 5.489 kapsam hücresi açık.
+
+## 26 Kasım ikinci doğrulama turu
+
+EMEP'in 3.270 özgün API gövdesinden 2.591'i tam okundu. 679 gövdenin
+okuması açık. [Seçim platformu](../04-10-checks/party-api-2018-may-election-platform-reading.json)
+ve [yazar yazısı ile söyleşi](../04-10-checks/party-api-2018-election-commentary-reading.json)
+ayrı atıflı. 2018 seçim paketi 62736493 ile girdi ve kaynak denetimini
+geçti. Önizleme ve ardından 62736494 bağımsız denetimi sırada.
+
+TİP eski paketi için [104 arşiv dosyası](../04-05-checks/tip-accepted-assets-recovery.json),
+Demokrat Parti eski paketi için [72 arşiv dosyası](../04-12-checks/demokrat-accepted-assets-recovery.json)
+önceki önizlemelerden SHA-256 eşleşmesiyle geri yüklendi. TİP ad ve amblem
+paketi 62738520 ile girdi denetimini geçti. Kaynak, önizleme ve 62738521
+bağımsız denetim işlemleri sürüyor.
+
+Yeni Yol'un kuruluş basın duyurusu, tarihli sicil ve erken TBMM işlemleri
+[ayrı kaynak kayıtlarıyla](../04-08-checks/founding-charter-source-reading.json)
+izleniyor. 14 Ocak konuşmasının TBMM profil etiketi ve basılı tutanaktaki
+grup sıfatı farklı. İmzalı tüzük ve program ile TBMM grup bildirimi açık.
