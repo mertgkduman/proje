@@ -1,0 +1,102 @@
+{
+  "party_id": "yeni-yol",
+  "topic_id": "parti-kimligi",
+  "checked_at": "2026-11-26T18:26:18.445396+00:00",
+  "scope_ids": {
+    "scope-379": "practice-1ea5cd10d13f3f293944a2104e95a2a2194fa745b1058e144acb79d5061b1cba",
+    "scope-380": "practice-9fec4d433d944f83fe121d2734c23476c055d5e8dd72e4d4d2e26ff746cc21ea"
+  },
+  "sources": [
+    {
+      "source": "Yargıtay Cumhuriyet Başsavcılığı, sicil 331",
+      "url": "https://www.yargitaycb.gov.tr/sipar/331",
+      "inspected_section": "Ad, kısa ad, kuruluş tarihi ve genel başkan alanları",
+      "finding": "YENİ YOL adı ve kısa adı, 13.01.2025 kuruluş tarihi. Tüzük ve program eki sicil sayfasında yayımlanmıyor.",
+      "canonical_version_id": "0206-yeni-yol-registry-v1"
+    },
+    {
+      "source": "Yargıtay Cumhuriyet Başsavcılığı, 25 Mart 2025 tarihli faal partiler listesi",
+      "url": "https://www.yargitaycb.gov.tr/documents/25032025FaalPartiler-kurulu%C5%9Ftarihineg%C3%B6re-1742904119.pdf",
+      "pdf_page_indexes": [
+        3
+      ],
+      "inspected_section": "169. sıra, ad, kısa ad ve kuruluş tarihi sütunları",
+      "finding": "YENİ YOL adı ve kısa adı ile 13.01.2025 tarihi tarihli sicil listesinde de kayıtlı.",
+      "sha256": "0478a005b5ecc45bc660f113c6587f500230b4f5e850c337bdb5d24587d91856",
+      "captured_file": "/work/mg551/gsd-phase04-recovery.L0IReu/yeni-yol-identity.On6SwE/register-march25.pdf"
+    },
+    {
+      "source": "Anka Haber, 9 Ocak 2025",
+      "url": "https://ankahaber.net/haber/detay/saadet_deva_ve_gelecek_cati_parti_calismasini_tamamladi_yeni_yol_kuruluyor_214480",
+      "inspected_section": "Tam haber, 09.01.2025 ilk yayın ve 01.06.2026 son güncelleme",
+      "finding": "Ad, kurucular, program ve tüzük taslağı üzerinde mutabakat bildiriliyor. İmzalı ekler haber gövdesinde yer almıyor."
+    },
+    {
+      "source": "TV5, 10 Ocak 2025",
+      "url": "https://www.tv5.com.tr/cati-parti-yeni-yolun-kurulus-dilekcesi-icisleri-bakanligina-teslim-edildi",
+      "inspected_section": "Tam haber, saat 18.01 yayın ve 18.13 güncelleme",
+      "finding": "Heyetin aynı gün saat 16.00 dolaylarında dilekçe teslim ettiği aktarılıyor. Teslim alındısı ve imzalı ekler için bağımsız belge gerekiyor."
+    },
+    {
+      "source": "DEVA Partisi e-arşivi, 10 Ocak 2025",
+      "url": "https://devapartisi.org/parti/e-arsiv/yeni-yol-grubunun-genel-baskan-celal-mumtaz-aknc-demokrasi-ve-hukuka-adanms-bir-omur",
+      "inspected_section": "İlk paragraf ve biyografi",
+      "finding": "DEVA Partisinin kendi yayını, üç partinin kurduğu grubun genel başkanı olarak Celal Mümtaz Akıncı’yı duyuruyor. Açıklama, kuruluş evrakını ve TBMM grup başkanlığı kararını içermiyor.",
+      "capture_limitation": "Tarayıcı görünümünde gövde erişilebilir. Doğrudan arşivleme isteği HTTP 403 döndü."
+    },
+    {
+      "source": "AYM E.2023/3 (Değişik İşler), K.2023/10, 30 Kasım 2023",
+      "url": "https://siyasipartikararlar.anayasa.gov.tr/Dosyalar/Kararlar/KararPDF/2023-10-spdi.pdf",
+      "official_gazette_url": "https://www.resmigazete.gov.tr/eskiler/2024/01/20240119-10.pdf",
+      "inspected_section": "Künye, §4, §6 ve hüküm",
+      "finding": "Karar, 2025 sicil kaydından önceki aynı adlı tüzel kişiliğin sona erişine ilişkin. §4’te 4/5/2020, §6’da 4/5/2000 yazıyor. Eski kararın metin içi tarih uyuşmazlığı 2025 oluşumuna aktarılmadı.",
+      "canonical_version_id": "0206-yeni-yol-court-rg-v1"
+    },
+    {
+      "source": "TBMM 47. Birleşim, 14 Ocak 2025",
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/3/47/Basilmis/24928ebb-3d61-46f7-936b-252ba6fdd9d9.pdf",
+      "pdf_page_indexes": [
+        84,
+        85
+      ],
+      "inspected_section": "Basılı 297–298, Selçuk Özdağ’ın CHP grup önerisi üzerine konuşması",
+      "finding": "Basılı tutanağın kürsü başlığı Saadet Partisi Grubu, konuşmanın kendi ifadesi Gelecek-Saadet Grubu. Bugünkü profil satırındaki YENİ YOL etiketi, konuşma tarihindeki sıfatı belirlemek için kullanılmadı.",
+      "sha256": "5e6c9795eb3f507f8efee04008c8cde0bc81f72415e14fd4d8412b8be75e6ec6",
+      "captured_file": "/work/mg551/gsd-phase04-recovery.L0IReu/yeni-yol-identity.On6SwE/tbmm-47.pdf"
+    },
+    {
+      "source": "TBMM milletvekili konuşma listesi",
+      "url": "https://tbmm.gov.tr/milletvekili/UyeGenelKurulKonusma?Id=f72877c2-d347-037b-e050-007f01005610&ortakDonemId=134155f0-c3d6-4d24-893b-f3a2ef695ae7",
+      "inspected_section": "14.01.2025, birleşim 47, basılı 297–298",
+      "finding": "Bugünkü profil satırı YENİ YOL etiketini taşıyor. Dönemin basılı tutanağındaki kürsü başlığı ayrı korundu."
+    },
+    {
+      "source": "TBMM 48. Birleşim, 15 Ocak 2025",
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/3/48/Basilmis/b49308e5-a333-4dd3-8a9e-96e6e8035d6c.pdf",
+      "pdf_page_indexes": [
+        25,
+        26,
+        34,
+        35,
+        43,
+        44,
+        45
+      ],
+      "inspected_section": "Basılı 380–381, 389–390, 398–400, grup oluşumuna değinen konuşma, Bülent Kaya imzalı 19. madde önerisi, yoklama ve oylama",
+      "finding": "Yeni Yol’un TBMM grubu olarak işlem yaptığı belgeleniyor. Oturumun 19. madde kapsamındaki öncelik önerisi kabul edilmedi. Oylama, Suriye konulu temel genel görüşme önergesinin nihai akıbetini göstermiyor.",
+      "sha256": "3d722c1fcb0d19983cf79b067881d1bb8351a82b098fd65f8cb3c60f30fd235e",
+      "canonical_version_id": "0206-yeni-yol-tbmm-pdf-v1"
+    }
+  ],
+  "searches": [
+    "\"Yeni Yol Partisi\" \"parti tüzüğü\" \"2025\" kuruluş",
+    "\"Yeni Yol Partisi\" \"tüzük\" \"program\" PDF",
+    "Yeni Yol Ocak 2025 kuruluş ve grup duyuruları, Yargıtay, TBMM ve üç kurucu partinin yayınları"
+  ],
+  "next_leads": [
+    "İçişleri Bakanlığına teslim edilen imzalı kuruluş bildirgesi, teslim alındısı, tüzük ve programın onaylı tam metinleri.",
+    "TBMM Başkanlığına grup kuruluş bildirimi ve ekleri. 15 Ocak işlemi grup sıfatını gösteriyor ve bildirimin imza/geliş gününü belgelemiyor.",
+    "Celal Mümtaz Akıncı ve İzzettin Küçük için tarihli parti organı kararları. DEVA duyurusu ve sicil anlık görüntüsü, kararların yerine geçmiyor."
+  ],
+  "closure_refs": []
+}
