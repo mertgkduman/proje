@@ -2,10 +2,10 @@
   "cutoff": "2026-11-10T14:38:46.154751+00:00",
   "source_pages": 33,
   "total_posts": 3270,
-  "receipt_files": 330,
+  "receipt_files": 331,
   "body_status": {
-    "full": 2522,
-    "unverified": 748
+    "full": 2524,
+    "unverified": 746
   },
   "excluded_parts": {
     "no_intervals": 11,
@@ -20,12 +20,12 @@
     {
       "previous": "pending",
       "verified": "full",
-      "count": 19
+      "count": 20
     },
     {
       "previous": "pending",
       "verified": "partial",
-      "count": 4
+      "count": 3
     },
     {
       "previous": "pending",
@@ -39,30 +39,6 @@
     }
   ],
   "next_gaps": [
-    {
-      "post_id": 3010,
-      "url": "https://www.emep.org/her-duzeyde-birlesik-bir-mucadelenin-ihtiyaclarina-yanit-vermek-bugunun-en-acil-gorevidir",
-      "page": "page-26.json",
-      "ranges": [
-        [
-          0,
-          7520
-        ]
-      ],
-      "body_characters": 7520
-    },
-    {
-      "post_id": 2995,
-      "url": "https://www.emep.org/bir-suc-varsa-ortada-partimizin-goruslerinin-ve-politikalarinin-yargilanmasidir",
-      "page": "page-26.json",
-      "ranges": [
-        [
-          0,
-          10832
-        ]
-      ],
-      "body_characters": 10832
-    },
     {
       "post_id": 2984,
       "url": "https://www.emep.org/acil-talepler-etrafinda-mucadeleden-baska-recete-yok",
@@ -158,6 +134,30 @@
         ]
       ],
       "body_characters": 13200
+    },
+    {
+      "post_id": 2938,
+      "url": "https://www.emep.org/ortak-taleplerle-birlesik-mucadele",
+      "page": "page-26.json",
+      "ranges": [
+        [
+          0,
+          12489
+        ]
+      ],
+      "body_characters": 12489
+    },
+    {
+      "post_id": 2935,
+      "url": "https://www.emep.org/erdogan-yerli-ve-yabanci-sermayeye-garanti-veriyor-faturayi-halka-kesiyor",
+      "page": "page-26.json",
+      "ranges": [
+        [
+          0,
+          4753
+        ]
+      ],
+      "body_characters": 4753
     }
   ],
   "note": "Sayım özgün API gövdesine ve okuma makbuzlarındaki karakter aralıklarına dayanır. Makbuz eksiği kaynak yokluğu veya kapsam kapanışı değildir."
