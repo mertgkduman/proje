@@ -846,3 +846,11 @@ Yeni Yol'un kuruluş basın duyurusu, tarihli sicil ve erken TBMM işlemleri
 [ayrı kaynak kayıtlarıyla](../04-08-checks/founding-charter-source-reading.json)
 izleniyor. 14 Ocak konuşmasının TBMM profil etiketi ve basılı tutanaktaki
 grup sıfatı farklı. İmzalı tüzük ve program ile TBMM grup bildirimi açık.
+
+EMEP'in 2018 seçim paketi bağımsız SQLite, JSON, kaynak dosyası ve iki okuyucu
+görünümü kontrolünden geçti. Kabul edilen paket 101 olay, 84 ilişki ve 1906
+doğrulanmış arşiv varlığı taşıyor. [Bağımsız makbuz](../04-10-checks/emep-election-2018-62736493-independent.json).
+[Önizleme](/work/mg551/gsd-phase04-previews.sgFrq4/gsd-0410-emep-election-2018-62736493/releases/8c8a6c49a5654b798c5096977f06dbfa/index.html).
+62736494 işlemci kotasında beklerken aynı denetim 62258890 tahsisinde tamamlandı.
+EMEP'in önceki adlarına ilişkin [YSK, AYM, AİHM ve kongre kaydı](../04-10-checks/historical-name-source-reading.json)
+ayrı izleniyor. İmzalı kuruluş tüzüğü ile 2005 kongre kararı araştırılmaya devam ediyor.
