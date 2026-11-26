@@ -196,5 +196,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-25T23:36:34Z
-Stopped at: 17. birleşik prova bağımsız doğrulandı. 18. prova 62710973 ile 574 olay ve 404 ilişki için çalışıyor. TİP ücret, bütçe, EYT ve Kıbrıs olayları bağımsız doğrulamayla 57/53 çalışma kaydına alındı. DEM 2/3961 komisyon şerhi bağımsız doğrulandı ve 89/13 çalışma kaydına alındı. ÇarkBaşak sayı 1–9 ve Saadet 294/649 okundu.
+Stopped at: 18. birleşik prova 62710973 ile 574 olay ve 404 ilişki için bağımsız doğrulandı. TİP ücret, bütçe, EYT ve Kıbrıs olayları bağımsız doğrulamayla 57/53 çalışma kaydına alındı. DEM 2/3961 komisyon şerhi bağımsız doğrulandı ve 89/13 çalışma kaydına alındı. ÇarkBaşak sayı 1–9 ve Saadet 294/649 okundu.
 Resume file: None
