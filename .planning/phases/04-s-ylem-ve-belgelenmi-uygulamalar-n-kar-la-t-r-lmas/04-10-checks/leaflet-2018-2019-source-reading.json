@@ -1,0 +1,75 @@
+{
+  "party_id": "emep",
+  "topic_id": "ifade-basin-ozgurlugu",
+  "checked_at": "2026-11-26T18:50:44.886820+00:00",
+  "scopes": [
+    "practice-5cff790420dbc5a23e83b2aa57a6c6b875cf0c84487ed534d03cc395733abdd3",
+    "practice-b54cb76fa011230f63ae02f86b5a4eaf84212778fe837de061f2bacf0a961045"
+  ],
+  "sources": [
+    {
+      "url": "https://tihv.org.tr/gunluk-ih-raporlari/27-31-ocak-2018-gunluk-insan-haklari-raporu/",
+      "source_sha256": "db0f66052fd8bf8262930fa64a3d069d97b84b7b44070d9dda7ec8eaf02b356e",
+      "bytes_path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-leaflet.eao4X2/tihv-early.body",
+      "section": "27–31 Ocak 2018 TİHV raporu, gözaltı ve tutuklama",
+      "exact": "27 Ocak 2048 tarihinde"
+    },
+    {
+      "url": "https://tihv.org.tr/gunluk-ih-raporlari/28-subat-2018-gunluk-insan-haklari-raporu/",
+      "source_sha256": "6a86fecd0e1b80491c833554cbede842cec3e605a1346a4b057fa429eaff6091",
+      "bytes_path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-leaflet.eao4X2/tihv-release.body",
+      "section": "28 Şubat 2018 TİHV raporu, madde 02/347",
+      "exact": "Mahkeme, Karyemez ile Karaman’ın tahliyesine karar verdi"
+    },
+    {
+      "url": "https://en.tihv.org.tr/documentation/08-february-2019-hrft-documentation-center-daily-human-rights-report/",
+      "source_sha256": "d9f3e07d80f7840fcc4d99c23d5a23351297c6f45c61cf0ea680ebe94150b0a4",
+      "bytes_path": "/work/mg551/gsd-phase04-recovery.L0IReu/emep-leaflet.eao4X2/tihv-verdict.body",
+      "section": "8 Şubat 2019 TİHV İngilizce raporu, madde 02/094",
+      "exact": "The court acquitted 2 people."
+    },
+    {
+      "url": "https://www.emep.org/neslihan-karyemez-ve-bilal-karaman-derhal-serbest-birakilsin-barisi-savunmak-suc-degildir",
+      "publication_date": "2018-01-27",
+      "author": "Sema Barbaros",
+      "source": "Parti API sayfa 26 kayıt 2735",
+      "section": "İstanbul İl Örgütü bildirisi ve salıverme çağrısı"
+    },
+    {
+      "url": "https://www.evrensel.net/haber/373078/baris-bildirisinden-yargilanan-emep-uyeleri-beraat-etti",
+      "publication_date": "2019-02-07",
+      "source": "Evrensel",
+      "section": "İstanbul 33. Ağır Ceza Mahkemesi beşinci duruşma haberi",
+      "capture_limit": "Tarayıcı metni okundu. Doğrudan indirme HTTP 403."
+    },
+    {
+      "url": "https://tihv.org.tr/wp-content/uploads/2021/02/Tu%CC%88rkiye-I%CC%87nsan-Haklari-Raporu-2019.pdf",
+      "source": "TİHV 2019 İnsan Hakları Raporu",
+      "section": "Örgütlenme Özgürlüğü, İstanbul’da Bildiri Dağıttıkları Gerekçesiyle Yargılanan EMEP Üyeleri",
+      "capture_limit": "İlgili metin tarayıcıdan okundu. PDF indirme isteği HTTP 404."
+    }
+  ],
+  "chronology": [
+    {
+      "event": "Bildiri dağıtımı, gözaltı ve tutuklama",
+      "label": "Ocak 2018",
+      "precision": "reported_conflict",
+      "basis": "Sonraki TİHV kaynakları 26 Ocak tutuklamasını, EMEP 27 Ocak yayınındaki önceki gün ifadesiyle uyumlu biçimde aktarır. Erken TİHV sürümünde gözaltı 25 Ocak 2018 ve tutuklama 27 Ocak 2048 yazıyor. Tarih ayrımı özgün karar bekliyor."
+    },
+    {
+      "event": "İlk duruşma ve tahliye",
+      "reported_at": "2018-02-27",
+      "basis": "TİHV 28 Şubat raporunda İstanbul 33. Ağır Ceza Mahkemesi, ilk duruşma ve 10 Temmuz için yeni duruşma günü yer alır."
+    },
+    {
+      "event": "Beşinci duruşma ve beraat",
+      "reported_at": "2019-02-07",
+      "basis": "Evrensel haberi ve TİHV 8 Şubat raporu aynı tarihi bildirir. İmzalı gerekçeli karar ve kesinleşme bilgisi açık."
+    }
+  ],
+  "next_leads": [
+    "İstanbul 11. Sulh Ceza Hâkimliği imzalı tutuklama kararı ile gözaltı/dağıtım günü.",
+    "İstanbul 33. Ağır Ceza Mahkemesi iddianame, 27 Şubat 2018 tutanağı, 7 Şubat 2019 gerekçeli karar ve kesinleşme belgesi."
+  ],
+  "closure_refs": []
+}
