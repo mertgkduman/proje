@@ -5,11 +5,11 @@ current_phase: 04
 current_phase_name: Söylem ve belgelenmiş uygulamaların karşılaştırılması
 current_plan: 4
 status: executing
-stopped_at: Wave 4 source research and isolated previews in progress
-last_updated: "2026-11-25T23:36:34Z"
-last_activity: 2026-11-25
-last_activity_desc: Phase 04 wave 4 research and package verification in progress
-state_head: 9ad927100a7fddb2df27731dbac0f4b43fcdb14a
+stopped_at: Phase 04 source reading and isolated preview verification in progress
+last_updated: "2026-11-26T07:04:31+00:00"
+last_activity: 2026-11-26
+last_activity_desc: TİP 70 olay ve 57 ilişki iki görünümde doğrulandı. EMEP API okuması 2.505 tam gövdeye ulaştı.
+state_head: 9d7066bcf809d504d849ba6f0cfc568112d34dfa
 progress:
   total_phases: 6
   completed_phases: 3
@@ -33,7 +33,7 @@ Total Plans in Phase: 15
 Phase: 04 (Söylem ve belgelenmiş uygulamaların karşılaştırılması) — EXECUTING
 Plan: 4 of 15
 Status: 04-04–04-12 araştırma ve doğrulama sürüyor. 04-01–04-03 tamamlandı.
-Last activity: 2026-11-26 UTC — Yeni Parti 2/3961 yeni komisyon kaydı 145 olay ve 142 ilişkili çalışmaya alındı. ÇarkBaşak 31 PDF ve 677 sayfa. Dokuz partinin 5.490 kapsam hücresi açık.
+Last activity: 2026-11-26 UTC — TİP 70 olay ve 57 ilişki, EMEP 2.505 tam gövde, Yeni Parti 145 olay ve 142 ilişki. Dokuz partinin 5.490 kapsam hücresi açık.
 
 Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -195,6 +195,6 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 
 ## Session Continuity
 
-Last session: 2026-11-25T23:36:34Z
-Stopped at: 19. birleşik prova 62718152 ile bağımsız doğrulandı. 578 olay, 410 ilişki, 212 eşleşmemiş aday ve 4.966 arşiv dosyası denetlendi. TİP İdlib/7244 62718929 ile 65/56, EMEP İdlib 62718977 ile 87/81 çalışma çiftine alındı. Bağımsız denetimde 1.706 ve 1.838 varlık doğrulandı. ÇarkBaşak resmî dizinindeki 31 PDF ve 677 sayfa, Saadet 296/649 gövde okundu. TİP baro/YKS/emek 62718930 ve güz 62719575 işleri kuyrukta. Yeni Parti 2/3961, 62719203 girdi ve kaynak kontrolleri ile 62719510 önizlemesi ve bağımsız 2.208 varlık denetiminden sonra 145/142 çalışma çiftine alındı. 20. birleşik provada 585 olay ve 413 ilişki yeniden üretildi. İki HTML görünümü için 62719939 işi grup işlemci kuyruğunda. Kapsam kapanışı sıfır.
+Last session: 2026-11-26T07:04:31+00:00
+Stopped at: 19. birleşik prova 62718152 ile bağımsız doğrulandı. 20. prova 585 olay ve 413 ilişkiyi yeniden üretti; önizleme 62719939 ve yerel 62258890 çalışmasında. TİP’in 62718930 önizlemesinin üç adımı geçti, kart denetimi kaynak metninden tamamlandı ve 1.746 yerel dosya doğrulandı. TİP güz 62721068 ve İstanbul Sözleşmesi 62721069, EMEP İstanbul Sözleşmesi 62720897, İYİ Parti disiplin 62720343, Saadet 7/35779 önizleme 62720779 ve yerel 62258890 sırada. Kapsam kapanışı sıfır.
 Resume file: None

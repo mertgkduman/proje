@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 145 | 142 | 62719203 girdi ve kaynak, 62719510 önizleme ve bağımsız denetim |
-| TİP | 65 | 56 | 62718929, bağımsız arşiv denetimi |
+| TİP | 70 | 57 | 62718930, bağımsız kart ve 1.746 varlık denetimi |
 | DEM Parti | 89 | 13 | 62708088 / 62708185 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -732,3 +732,8 @@ TİP’in 65/56 ve EMEP’in 87/81 çalışma çiftleri yalıtılmış önizleme
 Yeni Parti’nin 2/3961 dosyasındaki çalışma çifti 145/142 oldu. ANKA 27 Ekim 2026 tarihli parti toplantısındaki Özgür Özel açıklamasını, TBMM sıra 295 raporunun basılı 26. sayfası Talih Özcan ve Utku Çakırözer’in 28 Ekim tarihli şerhini, Sözcü ise 3 Kasım’da bu şerhi aktarıyor. Komisyon görüşmesi, şerh tarihi, 30 Ekim raporu ve 5 Kasım Genel Kurulu ayrı. Kişi bazında oy, fiilî sevk ve açıklamanın etkisi açık. Aynı girdi ve kaynak özetleriyle düğüm yerel diskinde kurulan önizleme iki görünümde ve 2.208 arşiv dosyasında doğrulandı. [Önizleme](3961-yeni-committee-preview-recovery-62719510.json) [Bağımsız denetim](3961-yeni-committee-preview-recovery-62719510-independent.json)
 
 İdlib, 7244 ve 2/3961 önizlemelerindeki doğrulanmış söylem ve olay pasajları sekiz açık konu hücresinin kuyruğuna bağlandı. Fiilî uygulama, ödemeler ve kişisel oylar için sonraki araştırma uçları kaydedildi. [TİP kuyruğu](../../../../data/practices/04-tip-tranches.json) [EMEP kuyruğu](../../../../data/practices/04-emep-tranches.json) [Yeni Parti kuyruğu](../../../../data/practices/04-yeni-parti-tranches.json)
+
+
+TİP’in 2020 baro, YKS, 1 Mayıs ve Tempo dosyaları 70 olay ve 57 ilişkiye ulaştı. Barış Atay’ın 9 Temmuz’daki şahsı adına konuşması, 11 Temmuz’daki kanun kabulü ve 15 Temmuz yayımı ayrı. DİSK’in 1 Mayıs çağrısında kaydedilen 15 gözaltının kapsamı ile ÇarkBaşak’ın yaklaşık 20 sayısı ayrı. YKS’nin önce duyurulan ve gerçekleşen hafta sonları ÖSYM kayıtlarında eşleşti. Tempo’nun 12 Ağustos Şişli eylemi, 25 Ağustos eylemi ve 21 Eylül işe dönüş haberi ayrı; haberdeki 19 işçi sayısı özgün metinden doğrulandı. Fiilî alacak ödemesi açık. JSON ve SQLite eşleşti, iki HTML görünümü ve 1.746 yerel dosya doğrulandı. [Önizleme](../04-05-checks/tip-2020-civic-labour-62718930.json) [Kart doğrulaması](../04-05-checks/tip-2020-civic-labour-62718930-card-recovery.log) [Bağımsız makbuz](../04-05-checks/tip-2020-civic-labour-62718930-independent.json)
+
+EMEP API’sinin 33 sayfası ve 3.270 gönderi gövdesi özetler ve kapsanan karakter aralıklarıyla yeniden sayıldı. 2.505 gövde tamamen okundu, bir gövde kısmi, 764 gövde makbuzla doğrulanamadı. Son on Kurmancî metinde arşive yükleme tarihi ve tarihsel olay günü ayrı tutuldu. Gebze viyadüğünde EMEP metninin dört ölüm aktarımıyla Meclis ve Anadolu Ajansı kaynaklarındaki üç ölüm ve bir yaralanma ayrı kaydedildi. 7/6339 cevabındaki proje ve ülke verilerinin sınırları ayrı. [EMEP okuma kapsamı](../04-10-checks/party-api-coverage-20261126.json) [Son on gövde](../04-10-checks/party-api-gap-003-source-reading.json) [Gebze kaynak okuması](../04-10-checks/gebze-viyaduk-2018-reading.json)

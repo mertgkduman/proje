@@ -976,21 +976,30 @@
       ],
       "next_leads": [
         "Envanter kaynak bölümü incelenecek: inventory-67f2330edc9d84f93c06f81af91e8371237da7501f81d4c45912e7efa5d20a65",
-        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak."
+        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
+        "7249’un uygulama kayıtlarını ve baroların kurumsal verisini araştır."
       ],
       "processed_at": null,
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-24T20:50:15+00:00",
+        "recorded_at": "2026-11-26T07:04:31+00:00",
         "status": "partial",
-        "preview_job": "62615305",
-        "note": "25 Ağustos TİP çağrısı ve 25 Ekim AYM 2023/53898 kararı doğrulandı. Fiilî tahliye ve sonraki işlemler ayrı.",
+        "preview_job": "62718930",
+        "note": "25 Ağustos TİP çağrısı ve 25 Ekim AYM 2023/53898 kararı doğrulandı. Fiilî tahliye ve sonraki işlemler ayrı. Baro dosyasına 2/2999, 9 Temmuz konuşması, 11 Temmuz kabulü ve 15 Temmuz 7249 yayımı bağlandı.",
         "source_ids": [
-          "0405-tip-atalay-2023-aym-first-v1"
+          "0405-tip-atalay-2023-aym-first-v1",
+          "0405-tip-2020-civic-bar-proposal-v1",
+          "0405-tip-2020-civic-bar-floor-v1",
+          "0405-tip-2020-civic-bar-law-v1",
+          "0405-tip-2020-civic-bar-registry-v1"
         ],
         "urls": [
-          "https://www.anayasa.gov.tr/media/9210/2023_cilt_2.pdf"
+          "https://www.anayasa.gov.tr/media/9210/2023_cilt_2.pdf",
+          "https://tbmm.gov.tr/Yasama/KanunTeklifi/f72877c1-8431-037b-e050-007f01005610",
+          "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/3/110/ac7a62cf-64d0-471e-bd89-5bae71dbd1a8.html",
+          "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y3/T2/KanunMetni/d6b05e2d-5e37-4781-921c-a4c732ffb1f3.html",
+          "https://tbmm.gov.tr/Yasama/Kanun/F72877C1-8431-037B-E050-007F01005610"
         ],
         "source_passage_ids": [
           "0405-tip-july-october-2023-court-date-p",
@@ -999,7 +1008,14 @@
           "0405-tip-july-october-2023-court-rights-p",
           "0405-tip-july-october-2023-court-liberty-p",
           "0405-tip-july-october-2023-court-order-p",
-          "0405-tip-july-october-2023-court-referral-p"
+          "0405-tip-july-october-2023-court-referral-p",
+          "0405-tip-2020-civic-bar-entry",
+          "0405-tip-2020-civic-bar-speaker",
+          "0405-tip-2020-civic-bar-accept",
+          "0405-tip-2020-civic-bar-published"
+        ],
+        "prior_preview_jobs": [
+          "62615305"
         ]
       }
     },
@@ -1053,24 +1069,41 @@
       ],
       "next_leads": [
         "Envanter kaynak bölümü incelenecek: inventory-9cfa485d0e7f273bc3a5ee707394c09a24b67da1a93402b785f5d31df881b04c",
-        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak."
+        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
+        "25 Ağustos eylemi, işe dönüş tarihleri ve geçmiş alacakların fiilî ödemesi için kurum ya da sendika kaydı ara."
       ],
       "processed_at": null,
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-22T03:51:46.115166+00:00",
-        "note": "Arşivli Faz3 sendika satırı ile TBMM 27. dönem 2/4390 metni ve 2 Haziran 2023 hükümsüz listesi okundu. Programın 2022 tarihindeki sürümü bilinmiyor; başka olaylar ve uçlar araştırılmalı.",
+        "recorded_at": "2026-11-26T07:04:31+00:00",
+        "note": "Arşivli Faz3 sendika satırı ile TBMM 27. dönem 2/4390 metni ve 2 Haziran 2023 hükümsüz listesi okundu. Programın 2022 tarihindeki sürümü bilinmiyor; başka olaylar ve uçlar araştırılmalı. 1 Mayıs DİSK gözaltı kapsamı ile Tempo’nun 12 Ağustos Şişli haberi ve 21 Eylül işe dönüş haberi belgeye bağlandı.",
         "source_ids": [
           "0203-tip-program-v1",
           "0405-tip-sendika-274390-pdf-v1",
-          "0405-tip-sendika-hukumsuz-v1"
+          "0405-tip-sendika-hukumsuz-v1",
+          "0405-tip-2020-civic-may-disk-v1",
+          "0405-tip-2020-civic-may-tihv-v1",
+          "0405-tip-2020-civic-tempo-paper-v1",
+          "0405-tip-2020-civic-tempo-result-v1"
         ],
         "urls": [
           "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y5/T2/WebOnergeMetni/9c60b46f-6665-479a-aa0f-9025c059f4e9.pdf",
-          "https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d28/c001/tbmm28001001.pdf"
+          "https://www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d28/c001/tbmm28001001.pdf",
+          "https://disk.org.tr/2020/05/taksim-yine-yasak-disk-yoneticileri-gozaltinda-foto-haber/",
+          "https://tihv.org.tr/gunluk-ih-raporlari/01-04-mayis-2020-gunluk-insan-haklari-raporu/",
+          "https://www.mucadelebirligi24.net/pdf/mbg/gunluk/MB_Gunluk_085.pdf",
+          "https://www.evrensel.net/haber/414601/tempo-cagri-merkezi-iscileri-ise-geri-alindi"
         ],
-        "status": "partial"
+        "status": "partial",
+        "preview_job": "62718930",
+        "source_passage_ids": [
+          "0405-tip-2020-civic-may-disk",
+          "0405-tip-2020-civic-may-tihv",
+          "0405-tip-2020-civic-tempo-august",
+          "0405-tip-2020-civic-tempo-role",
+          "0405-tip-2020-civic-tempo-report"
+        ]
       }
     },
     {
@@ -1366,14 +1399,15 @@
       ],
       "next_leads": [
         "Envanter kaynak bölümü incelenecek: inventory-65f0700d49a354ab75e29faa8cdd5efb58175899b9dd4a37a4f89b995c71d41c",
-        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak."
+        "Konu, parti, aktör ve dönemle kurum, TBMM, parti, haber ve bağımsız rapor araması yapılacak.",
+        "Sınavın erişim koşulları, parti katkısı ve başvuru sonuçlarını ayrı belgelerle ara."
       ],
       "processed_at": null,
       "closure_refs": [],
       "state": "pending",
       "research_progress": {
-        "recorded_at": "2026-11-22T17:33:53.269616+00:00",
-        "note": "Faz 3 programının her düzeyde parasız eğitim hakkı bağlamı, 2021 öğrenci barınmasına ilişkin 2/3833 taramasının altı sayfası ve haberde aktarılan destek okundu. Yurt barınması ile eğitim ücretlendirmesi aynı konu değildir; programın 2021 sürümü, diğer olay ve uçlar araştırılmalı. 2022 2/4600 gıda ve su teklifi, 2023 hükümsüzlük listesi ve 2023 2/1573 yeniden teklifi okunup ayrı kayıtlarla bağlandı; yeni teklifin kesim aşaması ve fiilî hizmet sonucu açık. Diğer kaynak ve uçlar devam ediyor.",
+        "recorded_at": "2026-11-26T07:04:31+00:00",
+        "note": "Faz 3 programının her düzeyde parasız eğitim hakkı bağlamı, 2021 öğrenci barınmasına ilişkin 2/3833 taramasının altı sayfası ve haberde aktarılan destek okundu. Yurt barınması ile eğitim ücretlendirmesi aynı konu değildir; programın 2021 sürümü, diğer olay ve uçlar araştırılmalı. 2022 2/4600 gıda ve su teklifi, 2023 hükümsüzlük listesi ve 2023 2/1573 yeniden teklifi okunup ayrı kayıtlarla bağlandı; yeni teklifin kesim aşaması ve fiilî hizmet sonucu açık. Diğer kaynak ve uçlar devam ediyor. ÖSYM’nin 20–21 Haziran için önceki takvimi ve 27–28 Haziran gerçekleşen YKS kayıtları belgelendi.",
         "source_ids": [
           "0203-tip-program-v1",
           "0405-tip-yurt-273833-v1",
@@ -1381,7 +1415,9 @@
           "0405-tip-okul-4600-v1",
           "0405-tip-okul-1573-v1",
           "0405-tip-1573-detail-v1",
-          "0405-tip-sendika-hukumsuz-v1"
+          "0405-tip-sendika-hukumsuz-v1",
+          "0405-tip-2020-civic-yks-plan-v1",
+          "0405-tip-2020-civic-yks-held-v1"
         ],
         "urls": [
           "https://tip.org.tr/parti-programi",
@@ -1389,9 +1425,17 @@
           "https://www.gercekhaberci.com/gundem/yurt-krizi-tbmm-ye-tasindi-tip-li-4-vekilden-kanun-teklifi/147956",
           "https://cdn.tbmm.gov.tr/KKBSPublicFile/D27/Y6/T2/WebOnergeMetni/97fe7f56-5661-421f-90d1-78aa3fbf7f29.pdf",
           "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y1/T2/WebOnergeMetni/cb8f2786-1b10-4e37-a332-280e8748f20d.pdf",
-          "https://tbmm.gov.tr/Yasama/KanunTeklifi/f3088537-18e1-4b39-983a-018a89975d85"
+          "https://tbmm.gov.tr/Yasama/KanunTeklifi/f3088537-18e1-4b39-983a-018a89975d85",
+          "https://www.osym.gov.tr/2020yks-basvurularinin-alinmasi",
+          "https://www.osym.gov.tr/2020yuksekogretim-kurumlari-sinavi-2020yks-sonuclari-aciklandi"
         ],
-        "status": "partial"
+        "status": "partial",
+        "preview_job": "62718930",
+        "source_passage_ids": [
+          "0405-tip-2020-civic-yks-initial",
+          "0405-tip-2020-civic-yks-actual",
+          "0405-tip-2020-civic-yks-results"
+        ]
       }
     },
     {
