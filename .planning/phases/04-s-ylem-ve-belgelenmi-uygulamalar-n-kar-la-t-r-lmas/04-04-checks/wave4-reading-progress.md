@@ -9,7 +9,7 @@ Dokuz partinin aşağıdaki çalışma çiftleri girdi, kaynak ve yalıtılmış
 | Parti | Olay | İlişki | Son doğrulama işi |
 |---|---:|---:|---|
 | Yeni Parti | 144 | 141 | 62490423 |
-| TİP | 58 | 54 | 62714095 |
+| TİP | 63 | 54 | 62717954 kapıları, bağımsız kart ve arşiv denetimi |
 | DEM Parti | 89 | 13 | 62708088 / 62708185 |
 | İYİ Parti | 21 | 13 | 62615506 / 62615510 |
 | Yeni Yol | 23 | 12 | 62501645 |
@@ -706,3 +706,5 @@ Eylül 2020 ÇarkBaşak 20 sayfayla okundu, toplam 17/31 sayı ve 381 sayfa. 31 
 Ekim 2020 ÇarkBaşak 20 sayfayla okundu. Toplam 18/31 sayı ve 401 sayfa. Parti haberleri görsel ve metin olarak okundu. 14 Temmuz Tempo işten çıkarmaları, 12 Ağustos ve 25 Ağustos Şişli eylemleri ve Eylül işe iade açıklamaları ayrı izleniyor. [Ekim okuması](../04-05-checks/tip-cark-basak-catalog/issue-18/reading-01.json)
 
 ÇarkBaşak Kasım 2020 sayısının 20 sayfasıyla okuma 19/31 sayıya ve 421 sayfaya ulaştı. Bayraklı’daki deprem yardımı, Ermenek ve Soma ziyaretleri, 25 Kasım hazırlığı ve 2911 sayılı Kanun’un 22. maddesi ayrı izlendi. AYM karar günü ile yayım günü ayrı kaydedildi. [İlk dilim](../04-05-checks/tip-cark-basak-catalog/issue-19/reading-01.json) [İkinci dilim](../04-05-checks/tip-cark-basak-catalog/issue-19/reading-02.json)
+
+TİP’in beş yerel olay kaydı, 62717954 girdi, kaynak ve önizleme adımlarından geçti. İlk kart denetimi Trelleborg için 22 Ocak tarihini kart başlığında aradığı için durdu. İki kartta Petrol-İş bağlantısı, SQLite’da bağlanan 22 Ocak 2020 pasajı, 1.692 yerel varlığın özeti ve 63 olay ile 54 ilişkinin JSON ve SQLite karşılığı ayrı doğrulandı. Kanal İstanbul insan zinciri, Trelleborg grevi, İstanbul Üniversitesi yemekhane tepkisi, İstanbul ulaşım tarifesi ve Gezi duruşması kendi kanıt zincirleriyle araştırmaya açık. [Önizleme](../04-05-checks/tip-2020-local-events-62717954.json) [Kart denetimi](../04-05-checks/tip-2020-local-events-62717954-card-recheck.log) [Varlık denetimi](../04-05-checks/tip-2020-local-events-62717954-asset-check.json) [Bağımsız denetim](../04-05-checks/tip-2020-local-events-62717954-independent.log)

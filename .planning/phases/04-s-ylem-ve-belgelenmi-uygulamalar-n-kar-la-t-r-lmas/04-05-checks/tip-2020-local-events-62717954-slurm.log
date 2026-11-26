@@ -1,0 +1,8 @@
+Staged 554 original, readable and view paths; package 5314a31eb4ae250319aaa9cf102eb1a0385c23495ec394582af12341cd35c576; review c06cfb76bad60b39d9939673f1cf97f6c6df175f2cf13b19b78bd88121068665
+Traceback (most recent call last):
+  File "/work/mg551/gsd-phase04-recovery.L0IReu/run-audit.py", line 16, in <module>
+    sys.argv = [str(path), *sys.argv[2:]]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/hpc/group/pfisterlab/mg551/storage/proje/.planning/phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-05-checks/tip-2020-local-events-validation.py", line 49, in <module>
+    assert all(word.casefold() in card for word in words), (anchor, words)
+AssertionError: ('party-unmatched-0405-tip-2020-local-grev-unmatched', ('Trelleborg', '22 Ocak', '33. günü'))
