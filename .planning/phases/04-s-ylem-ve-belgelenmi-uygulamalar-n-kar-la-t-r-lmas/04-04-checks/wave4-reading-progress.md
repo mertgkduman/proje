@@ -792,3 +792,24 @@ EMEP’in 3.270 API gövdesinin 2.573’ü tam okundu. 697 gövde açık. 2 Temm
 İYİ Parti havalimanı dosyasının 26/15 paketi özgün tek sayfalık resmî nüshalarla yazılabilir çalışma dalına alındı. İki okuyucu görünümündeki sicil ve imzalı önerge pasajları ile 1.416 arşiv dosyası bağımsız doğrulandı. [Makbuz](../04-07-checks/iyi-airport-62724082-independent.json).
 
 EMEP metal işçileri dosyasında 97 olay ve 82 ilişki doğrulandı. Girdi, kaynak, SQLite, JSON ve iki okuyucu görünümü geçti. EMEP API gövdelerinin 2.579'u tam okundu ve 691 açık kaldı. [Metal dosyası](../04-10-checks/emep-metal-2018-62258890-independent.json) [Arşiv kapsamı](../04-10-checks/party-api-coverage-20261126.json).
+
+## 26 Kasım, yazılabilir dal ve okuyucu denetimi
+
+Ana çalışma alanında kullanılabilir alan bir MB düzeyinde kaldı. Yürütüm
+`gsd/phase-04-resume` dalıyla şu çalışma kopyasında sürüyor.
+
+`/work/mg551/gsd-phase04-checkout.ej3W7Z/proje`
+
+22. birleşik önizleme ile İYİ Parti ve EMEP metal işçileri önizlemelerinin
+makbuzları çalışma dalında. İlişkisi bulunmayan belgeye dayalı söylem iki görünümde
+kaynaklarıyla gösteriliyor. Bu değişiklik renderer 32 ile üretildi. Renderer
+31 için arşivlenmiş EMEP HTML'i bayt düzeyinde yeniden üretildi ve üç rapor
+testi geçti. Yeni Parti ad ve amblem paketi 62734724 ile inceleniyor ve
+62734725 bağımsız denetimi bekliyor. [AYM Bilgi Bankası sorgusu](yeni-parti-e2026-9-aym-kbb-search.json)
+ve [9 Kasım metinleri](yeni-parti-9-kasim-tuzuk-source-reading.json) ayrı
+makbuzlarda.
+
+EMEP'te 3.270 API gövdesinin 2.586'sı tam okundu, 684 gövde açık. [2018 seçim dosyası](../04-10-checks/election-2018-source-reading.json)
+22 ve 25 Nisan YSK kararlarını, seçim desteğinin açıklanmasını ve 4 Temmuz
+kesin sonuçlarını birbirinden ayırıyor. Yeni dosyanın arşiv denetimi 62735266
+ve 62735267 işleriyle sürüyor.

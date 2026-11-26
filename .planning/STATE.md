@@ -39,6 +39,8 @@ Progress: [█████░░░░░] 50% (3/6 tamamlanan faz); Faz 3: 16/1
 
 Dalga 4 devam kaydı: [kaynak taraması ve doğrulama durumu](phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-04-checks/wave4-reading-progress.md).
 
+Bu dalganın yazılabilir çalışma kopyası `/work/mg551/gsd-phase04-checkout.ej3W7Z/proje` ve dalı `gsd/phase-04-resume`.
+
 ## Performance Metrics
 
 **Velocity:**
