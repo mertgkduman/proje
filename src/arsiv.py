@@ -57,7 +57,7 @@ from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate
                       check_evidence_attribution, validate_policy_descent)
 from arsiv_gorunum import VIEW_TABLES, validate_view, decode_html, visible_html_text, CSP as ARCHIVE_CSP
 from dosyalar import (DOSSIER_TABLES, foundation_for_party, migrate_workspace,
-                      validate_dossier, validate_delivery_prefix, DELIVERY_ORDER)
+                      validate_dossier, validate_delivery_prefix, validate_phase_two_data, DELIVERY_ORDER)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
@@ -3084,6 +3084,10 @@ def audit_release(release='current', _seen=None, *, storage_root=None):
 def validate_phase_one_workspace(work, strict_identity=True, *, storage_root=None):
     path = Path(work) / 'records.sqlite3'
     data = export_db(path, 'workspace', strict_identity=strict_identity, storage_root=storage_root)
+    return _validate_phase_one_data(path, data, storage_root=storage_root)
+
+
+def _validate_phase_one_data(path, data, *, storage_root=None):
     db = connect_readonly(path)
     try:
         for attempt in db.execute("SELECT * FROM attempt WHERE lead_id IS NOT NULL AND type='access' AND result='examined'"):
@@ -3372,11 +3376,12 @@ def publish_release(work, fail_at=None, party=None, stage='complete', refresh=Fa
                 base_phase = bool(has_method and base.execute('SELECT 1 FROM method LIMIT 1').fetchone())
             finally: base.close()
         if base_phase or payload.get('method'):
-            phase_data = validate_phase_one_workspace(staging)
-            validate_phase_one_html(phase_data, (staging / 'index.html').read_text(encoding='utf-8'))
+            _validate_phase_one_data(staging / 'records.sqlite3', payload)
+            validate_phase_one_html(payload, (staging / 'index.html').read_text(encoding='utf-8'))
         if phase_delivery:
-            from dosyalar import validate_phase_two_workspace
-            validate_phase_two_workspace(staging, None if refresh else party, stage)
+            if not (base_phase or payload.get('method')):
+                _validate_phase_one_data(staging / 'records.sqlite3', payload)
+            validate_phase_two_data(payload, None if refresh else party, stage)
             for completed_party in phase_delivery['completed_prefix']:
                 validate_dossier(payload, completed_party, 'complete')
         if payload['schema_version'] in (6,7):

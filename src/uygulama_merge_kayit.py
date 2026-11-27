@@ -4,6 +4,7 @@ Origins retain exact original JSON and are not current-scope source reviews.
 Each batch includes raw inputs, decisions, inventory and accepted base evidence;
 replay checks every decision, alias, origin and resulting record on every export.
 """
+from collections import defaultdict
 import hashlib
 import json
 
@@ -103,6 +104,12 @@ def validate_practice_merge(data):
     for table in PRACTICE_MERGE_TABLES:
         if table not in ('practice_merge_contract', 'practice_merge_provenance') and any(x['provenance_id'] not in batches for x in data[table]): raise ValueError('Köksüz birleşme kaydı')
     try:
+        passages = {p['id']: p for p in data.get('passage', [])}
+        versions = {v['id']: v for v in data.get('document_version', [])}
+        documents = {d['id']: d for d in data.get('document', [])}
+        grants = {(r['version_id'], r['party_id'], r['passage_id'])
+                  for r in data.get('practice_source_party', []) if r.get('scope_reason')}
+        entry_indexes = {}
         for prov in data['practice_merge_provenance']:
             batch = prov['id']
             inputs = [dict(identity=x['input_identity'], raw=bytes.fromhex(x['raw_hex'])) for x in data['practice_merge_input'] if x['provenance_id'] == batch]
@@ -126,9 +133,19 @@ def validate_practice_merge(data):
                     continue
                 if any(row not in data.get(table, []) for row in rows): raise ValueError('Birleşme kaydı kayıp: ' + table)
             for entry in replay['payload']['entries']:
-                kind = entry['kind']
-                if kind not in ENTRY_KINDS or not any(practice_entry_matches(kind, existing, entry['values'])
-                                                     for existing in data.get(kind, [])):
+                kind, values = entry['kind'], entry['values']
+                if kind not in ENTRY_KINDS:
+                    raise ValueError('Birleşme girdisi kayıp')
+                records = data.get(kind, [])
+                key = next((name for name in ('id', 'version_id', 'finding_id', 'passage_id') if name in values), None)
+                if key is not None:
+                    if (kind, key) not in entry_indexes:
+                        index = defaultdict(list)
+                        for record in records:
+                            index[record.get(key)].append(record)
+                        entry_indexes[kind, key] = index
+                    records = entry_indexes[kind, key].get(values[key], [])
+                if not any(practice_entry_matches(kind, record, values) for record in records):
                     raise ValueError('Birleşme girdisi kayıp')
             if any(row not in data.get(table, []) for table, rows in base.items() if table != 'practice_contract' for row in rows):
                 raise ValueError('Birleşme tabanı kayıp')
@@ -144,8 +161,6 @@ def validate_practice_merge(data):
                     if not _review_target_exists(data, original['subject_kind'], origin['canonical_subject_id']):
                         raise ValueError('Birleşme inceleme hedefi bulunamadı')
                     if kind == 'review_origins':
-                        passages = {p['id']: p for p in data.get('passage', [])}
-                        versions = {v['id']: v for v in data.get('document_version', [])}
                         passage_ids = json.loads(original['passage_ids'])
                         version_ids = json.loads(original['source_version_ids'])
                         if (not isinstance(passage_ids, list) or not passage_ids or len(set(passage_ids)) != len(passage_ids) or
@@ -162,8 +177,6 @@ def validate_practice_merge(data):
                                 raise ValueError('Birleşme inceleme pasajı hedefe bağlı değil')
                         party = origin['party_id']
                         if party is not None:
-                            documents = {d['id']: d for d in data.get('document', [])}
-                            grants = {(r['version_id'], r['party_id'], r['passage_id']) for r in data.get('practice_source_party', []) if r.get('scope_reason')}
                             for passage_id in passage_ids:
                                 version_id = passages[passage_id]['version_id']
                                 document = documents.get(versions[version_id]['document_id'])

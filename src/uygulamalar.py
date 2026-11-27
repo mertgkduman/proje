@@ -1025,7 +1025,10 @@ def practice_manifest_fields(data):
 def validate_practice_descent(base, candidate):
     if 'practice_merge_contract' in base:
         for name in PRACTICE_MERGE_TABLES:
-            if name not in candidate or any(row not in candidate[name] for row in base[name]):
+            if name not in candidate:
+                raise ValueError('Önceki birleşme kökeni değiştirilemez')
+            candidate_rows = {frozenset(row.items()) for row in candidate[name]}
+            if any(frozenset(row.items()) not in candidate_rows for row in base[name]):
                 raise ValueError('Önceki birleşme kökeni değiştirilemez')
     previous = {row['id'] for row in base.get('practice_merge_provenance', [])}
     for row in candidate.get('practice_merge_provenance', []):
