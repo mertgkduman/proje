@@ -1,0 +1,129 @@
+{
+  "schema": "proje-aym-mali-dizin-v1",
+  "method": "POST",
+  "url": "https://siyasipartikararlar.anayasa.gov.tr/api/core/public/search",
+  "periods": [
+    2023,
+    2024,
+    2025
+  ],
+  "parties": [
+    {
+      "party": "dbp",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "5c1f88cc-717c-9cf2-7bd5-5807da150690",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T21:58:11.451601+00:00",
+      "result_count": 10,
+      "response": "dbp-search.json.gz",
+      "response_sha256": "835f952f630299b8e5ee4d8f8a77f5790db5f0369776efe3d9230638d60d70c8"
+    },
+    {
+      "party": "dem",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "ee829192-0026-b05d-3a7c-4f485fb81d28",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T22:01:22.966934+00:00",
+      "result_count": 11,
+      "response": "dem-search.json.gz",
+      "response_sha256": "56f168e9b141f8304ad387e1374f4ec4ac8797360ed269624f5fde13b18a0503"
+    },
+    {
+      "party": "demokrat",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "c2977ece-f756-0c6f-0222-d129028dc63c",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T21:58:11.591075+00:00",
+      "result_count": 32,
+      "response": "demokrat-search.json.gz",
+      "response_sha256": "ec9487917de540fbd963ec3ad98a333859ef27fb0ee225d8d2b66abc23b39ca8"
+    },
+    {
+      "party": "emep",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "dd84135c-22ba-34a1-9804-08755d6bc06f",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T21:58:12.053196+00:00",
+      "result_count": 20,
+      "response": "emep-search.json.gz",
+      "response_sha256": "bcc66d999845dec33e32ec1506bd954e81815d39fac911f15dd45e918cb09af9"
+    },
+    {
+      "party": "iyi",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "896d4982-c303-3429-049a-920c42474df2",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T21:58:12.207109+00:00",
+      "result_count": 6,
+      "response": "iyi-search.json.gz",
+      "response_sha256": "fe02a9b1a0dd3c32dcff528234b40910aac738cf26c6a67bbc0c36c66d2bbc9a"
+    },
+    {
+      "party": "saadet",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "e2ad8a31-e583-7223-3bca-a14ecccad954",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T22:01:23.639213+00:00",
+      "result_count": 25,
+      "response": "saadet-search.json.gz",
+      "response_sha256": "daa64ca5cbf41a9d43647e8b6dd660ea00dd6319a3bb615e77bcde71cbfa52cd"
+    },
+    {
+      "party": "tip",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "c6824a7b-61aa-9fd3-be1b-bfa6c178c368",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T21:58:12.829502+00:00",
+      "result_count": 16,
+      "response": "tip-search.json.gz",
+      "response_sha256": "8af104bdbb147635a0102ffa4c937e110501ace7cd17f4db40fe1f6396a19d2b"
+    },
+    {
+      "party": "yeni-parti",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "4e5d048e-2df9-881e-5935-4dd9b481fa62",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T21:58:13.444629+00:00",
+      "result_count": 9,
+      "response": "yeni-parti-search.json.gz",
+      "response_sha256": "8ce6f747f49a08093ec1e0a94a6416e3af578454a362aa0b2c600c77f74247a2"
+    },
+    {
+      "party": "yeni-yol",
+      "query": {
+        "kararTipi": "SiyasiParti",
+        "davalilar": "6bd2579b-d479-469d-378d-9172c4ec0fc3",
+        "page": 0,
+        "size": 100
+      },
+      "checked_at": "2026-11-27T21:58:14.063503+00:00",
+      "result_count": 2,
+      "response": "yeni-yol-search.json.gz",
+      "response_sha256": "8e547cfa83bd1d134e137021d9960207eb0d16bd70488c723c4913b145e8a57c"
+    }
+  ]
+}
