@@ -1,0 +1,30 @@
+
+
+
+.wp-caption {
+	display:inline-block;
+	max-width:100%;
+	outline:none;
+}
+
+.wp-caption-text {
+	text-align:center;
+}
+
+.sticky:before {
+	content:'';
+}
+
+.screen-reader-text {
+	width:1px;
+	height:1px;
+	clip:rect(1px, 1px, 1px, 1px);
+}
+
+.gallery-caption {
+	text-align:center;
+}
+
+.bypostauthor:before {
+	content:'';
+}

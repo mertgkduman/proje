@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;none&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; img-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;none&#x27;; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tüzük - Türkiye İşçi Partisi</title>
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+    
+  
+      
+  
+  
+      
+    
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+
+
+  <style>
+    :root { --offBg:#273248; --offFg:#e5e7eb; --glass:rgba(255,255,255,0.08); --night:#0f274a; --night-2:#132c55; --vr:#e5e7eb; }
+    .navbar { background:#e43442 !important; }
+    .nav-link.lang-link{ display:flex; align-items:center; gap:6px; font-weight:700; }
+    .nav-link.lang-link i{ font-size:14px; }
+    .mobile-topbar{ width:100%; display:flex; align-items:center; justify-content:space-between; }
+    .mobile-center-logo{ position:absolute; left:50%; transform:translateX(-50%); }
+    @media (min-width:768px){ .mobile-center-logo{ position:static; transform:none; } }
+    .icon-btn,.icon-link{ border:0 !important; outline:none !important; box-shadow:none !important; background:transparent; -webkit-tap-highlight-color:transparent; display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; }
+    .icon-btn:focus,.icon-btn:focus-visible,.icon-btn:active,.icon-link:focus,.icon-link:focus-visible,.icon-link:active{ border:0 !important; outline:none !important; box-shadow:none !important; }
+    .icon-btn::-moz-focus-inner{ border:0; }
+    .top-right-stack{ display:flex; align-items:center; gap:12px; }
+    .icon-img,.icon-img-lg{ height:28px; width:auto; display:block; }
+    .icon-link:hover img{ opacity:1; }
+    .icon-link img{ opacity:.95; transition:opacity .15s ease; }
+    .position-static .dropdown-menu.mega-menu{ left:0; right:0; width:100%; border:0; border-radius:0; padding:22px 0; background:#fff; }
+    .mega-menu .container{ max-width:1280px; padding-left:16px; padding-right:16px; }
+    .mega-menu .row{ margin-left:0; margin-right:0; }
+    .mega-menu h5.fw-bold{ font-weight:800; font-size:15px; letter-spacing:.02em; color:#111827; margin:0 0 10px; }
+    .mega-menu .dropdown-item{ padding:6px 0; color:#111827; }
+    .mega-menu .dropdown-item:hover{ color:#e43442; background:transparent; }
+    @media (min-width:992px){ .mega-col{ position:relative; padding:0 18px; border-right:1px solid var(--vr); } .mega-col:last-of-type{ border-right:1px solid var(--vr); } .mega-banners{ padding-left:24px; } }
+    .quick-access-wrap{ display:flex; flex-direction:column; gap:12px; }
+    .quick-access-wrap .quick-banner{ display:block; width:100%; border-radius:12px; overflow:hidden; }
+    .quick-access-wrap .quick-banner img{ border-radius:8px; display:block; width:100%; height:auto; object-fit:cover; max-height:180px; }
+    .offcanvas-modern{ background: radial-gradient(1200px 600px at 20% -10%, rgba(255,255,255,.12), transparent 60%), radial-gradient(1000px 500px at 120% 20%, rgba(255,255,255,.08), transparent 70%), var(--offBg); color:var(--offFg); border-right:0; }
+    .offcanvas-modern .offcanvas-header{ justify-content:space-between; align-items:center; padding-right:48px; }
+    .offcanvas-modern .brand-chip{ display:flex; align-items:center; justify-content:center; text-decoration:none; color:var(--offFg); padding:8px 12px; background:var(--glass); border-radius:14px; backdrop-filter:blur(10px); }
+    .offcanvas-modern .brand-chip img{ height:60px; }
+    .offcanvas-modern .btn-close{ right:12px; top:12px; filter:invert(1); }
+    .offcanvas-modern .group-card{ background:var(--glass); border-radius:16px; padding:12px 14px; margin-bottom:12px; }
+    .offcanvas-modern .group-title{ font-weight:800; font-size:18px; letter-spacing:.02em; color:#f8fafc; opacity:.95; margin:2px 2px 10px; }
+    .offcanvas-modern .list-modern .item{ display:flex; align-items:center; gap:10px; padding:10px 8px; border-radius:10px; text-decoration:none; color:var(--offFg); }
+    .offcanvas-modern .list-modern .item:hover{ background:rgba(255,255,255,.08); }
+    .offcanvas-modern .quick-banners{ display:flex; flex-direction:column; gap:10px; margin:6px 0 14px; }
+    .offcanvas-modern .quick-banners .quick-banner img{ display:block; width:100%; height:auto; object-fit:cover; max-height:140px; border-radius:8px; }
+    .social-row{ display:flex; align-items:center; gap:12px; }
+    .nav-actions a.icon-link{ display:inline-flex; align-items:center; justify-content:center; height:36px; }
+    .search-overlay{ position:fixed; inset:0; z-index:1055; background:linear-gradient(180deg, rgba(19,44,85,.88), rgba(19,44,85,.88)); display:none; backdrop-filter:blur(2px); }
+    .search-overlay.show{ display:block; }
+    .search-card{ position:absolute; left:50%; transform:translateX(-50%); top:clamp(10px, 6vh, 64px); width:min(960px, 92vw); border-radius:16px; overflow:hidden; background:#fff; box-shadow:0 12px 40px rgba(0,0,0,.25); }
+    .search-head{ padding:14px; }
+    .search-head input[type="search"]{ width:100%; border:1px solid #e5e7eb; border-radius:10px; padding:12px 14px; outline:0; }
+    .search-results{ display:none; max-height:60vh; overflow:auto; padding:8px 10px; background:#fff; border-top:1px solid #eee; }
+    .search-results.show{ display:block; }
+    .sr-item{ display:flex; gap:10px; padding:10px; border-radius:12px; text-decoration:none; color:#111; }
+    .sr-item:hover{ background:#f7f7f8; }
+    .sr-thumb{ flex:0 0 64px; width:64px; height:64px; border-radius:8px; background:#f0f0f0; overflow:hidden; }
+    .sr-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .sr-title{ font-weight:800; margin:0 0 4px; font-size:16px; }
+    .sr-snippet{ margin:0; color:#555; font-size:13px; line-height:1.5; }
+    .sr-empty{ padding:14px; color:#333; }
+    .sr-badge{ display:inline-block; font-size:11px; font-weight:700; padding:2px 6px; border-radius:6px; background:#e8eef7; color:#17325a; margin-left:6px; }
+    @media (max-width: 991.98px){ .search-results{ max-height:70vh; } #mobileMenu.offcanvas{ --bs-offcanvas-width:100vw; } #mobileMenu .offcanvas-header{ padding-left:max(12px, env(safe-area-inset-left)); padding-right:max(12px, env(safe-area-inset-right)); } #mobileMenu .offcanvas-body{ height:calc(100vh - 84px); overflow:auto; padding-bottom:max(16px, env(safe-area-inset-bottom)); } }
+    .lang-pill{ display:inline-flex; align-items:center; gap:6px; font-weight:800; font-size:13px; letter-spacing:.02em; color:#0f172a; background:#e5e7eb; padding:6px 10px; border-radius:999px; text-decoration:none; }
+    .lang-pill .fa-globe{ font-size:14px; }
+    .navbar.sticky-top { z-index:1040; }
+    .position-static .dropdown-menu.mega-menu { z-index:1050; }
+    .contact-strip{ margin:6px 0 14px; }
+    .contact-btn{ display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:#e43442; color:#fff; text-decoration:none; padding:12px 14px; border-radius:12px; font-weight:800; letter-spacing:.01em; box-shadow:0 6px 16px rgba(228,52,66,.35); }
+    .contact-btn:active{ transform:translateY(1px); }
+    .ghost-login{ display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; border:1px solid rgba(255,255,255,.9); color:#fff; background:transparent; text-decoration:none; font-weight:600; font-size:15px; letter-spacing:.01em; line-height:1; transition:background .2s ease, border-color .2s ease, color .2s ease, transform .05s ease; will-change:background, transform; }
+    .ghost-login:hover{ background:rgba(255,255,255,.14); color:#fff; }
+    .ghost-login:active{ transform:translateY(1px); }
+    .ghost-login .fa-user{ font-size:14px; }
+
+    
+    .mktp-trigger{
+      position:fixed;
+      right:max(14px, env(safe-area-inset-right));
+      bottom:max(14px, env(safe-area-inset-bottom));
+      z-index:1061;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:46px;
+      height:46px;
+      border-radius:999px;
+      border:0;
+      background:#111827;
+      color:#fff;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      -webkit-tap-highlight-color:transparent;
+      cursor:pointer;
+    }
+    .mktp-trigger i{ font-size:18px; }
+
+    
+    @media (max-width: 576px){
+      .mktp-trigger{
+        width:58px;
+        height:58px;
+      }
+      .mktp-trigger i{ font-size:22px; }
+    }
+
+    .mktp-modal{
+      position:fixed;
+      inset:0;
+      z-index:1065;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:clamp(10px, 2.5vh, 22px);
+    }
+    .mktp-modal.show{ display:flex; }
+    .mktp-backdrop{
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.65);
+      backdrop-filter:blur(2px);
+    }
+    .mktp-dialog{
+      position:relative;
+      z-index:1;
+      width:min(740px, 99vw);
+      max-height:92vh;
+      background:#fff;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 18px 60px rgba(0,0,0,.35);
+    }
+    .mktp-dialog img{
+      display:block;
+      width:100%;
+      height:auto;
+      max-height:92vh;
+      object-fit:contain;
+  background:#15202c;
+    }
+    .mktp-close{
+      position:absolute;
+      top:10px;
+      right:10px;
+      z-index:2;
+      width:42px;
+      height:42px;
+      border-radius:999px;
+      border:0;
+      background:rgba(17,24,39,.85);
+      color:#fff;
+      font-size:28px;
+      line-height:42px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .mktp-close:hover{ background:rgba(17,24,39,.95); }
+    .mktp-link{ display:block; text-decoration:none; color:inherit; }
+  </style>
+<style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head>
+<body>
+
+
+
+  <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+
+
+
+<div class="mktp-modal" id="mektupModal" role="dialog" aria-label="Mektup">
+  <div class="mktp-backdrop"></div>
+  <div class="mktp-dialog" role="document">
+    ×
+    <a class="mktp-link" href="https://tipekatil.tip.org.tr" aria-label="Görseli yeni sekmede aç">
+      <img alt="Mektup" width="1240" height="1755">
+    </a>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light sticky-top shadow-sm">
+  <div class="container-fluid-header w-100">
+    <div class="mobile-topbar d-md-none position-relative">
+      
+        <span class="navbar-toggler-icon"></span>
+      
+      <a href="https://web.archive.org/" class="navbar-brand mobile-center-logo">
+        <img alt="TİP Logo" height="40">
+      </a>
+      <div class="d-flex align-items-center ms-auto" style="gap:10px;">
+        
+          <img alt="Ara" class="img-raw" width="28" height="28">
+        
+      </div>
+    </div>
+    <a href="https://web.archive.org/" class="d-none d-md-block navbar-brand ms-md-2">
+      <img alt="TİP Logo" height="50">
+    </a>
+    <div class="d-none d-md-block collapse navbar-collapse" id="topNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown position-static" id="hizliErisimDropdown">
+          <a href="#" class="nav-link" id="hizliDropdown" aria-expanded="false">
+            Hızlı Erişim <i class="fa-chevron-down fas fs-6"></i>
+          </a>
+          <div class="p-0 dropdown-menu mega-menu" aria-labelledby="hizliDropdown">
+            <div class="container">
+              <div class="row gy-0 align-items-start">
+                <div class="col-lg-2 mega-col">
+                  <h5 class="fw-bold">Parti</h5>
+                  <ul class="list-unstyled m-0">
+                                          <li><a href="https://web.archive.org/parti-programi" class="dropdown-item">Program</a></li>
+                                          <li><a href="https://web.archive.org/tuzuk" class="dropdown-item">Tüzük</a></li>
+                                          <li><a href="https://web.archive.org/genel-baskan" class="dropdown-item">Genel Başkan</a></li>
+                                          <li><a href="https://web.archive.org/parti-sozcusu" class="dropdown-item">Parti Sözcüsü</a></li>
+                                          <li><a href="https://web.archive.org/yonetim" class="dropdown-item">Yönetim</a></li>
+                                          <li><a href="https://web.archive.org/burolar-ve-komisyonlar" class="dropdown-item">Bürolar ve Komisyonlar</a></li>
+                                      </ul>
+                </div>
+                <div class="col-lg-3 mega-col">
+                  <h5 class="fw-bold">Çalışmalar</h5>
+                  <ul class="list-unstyled m-0">
+                                          <li><a href="https://web.archive.org/myk-ve-parti-meclisi/" class="dropdown-item">MYK ve Parti Meclisi Değerlendirmeleri</a></li>
+                                          <li><a href="https://web.archive.org/raporlar-belgeler/" class="dropdown-item">Raporlar ve Belgeler</a></li>
+                                          <li><a href="https://web.archive.org/kanun-teklifleri/" class="dropdown-item">Kanun Teklifleri ve Soru Önergeleri</a></li>
+                                          <li><a href="https://web.archive.org/basin-toplantilari-ve-aciklamalari/" class="dropdown-item">Basın Toplantıları ve Açıklamaları</a></li>
+                                          <li><a href="https://web.archive.org/partiden-haberler/" class="dropdown-item">Partiden Haberler</a></li>
+                                      </ul>
+                </div>
+                <div class="col-lg-2 mega-col">
+                  <h5 class="fw-bold">Yayınlar</h5>
+                  <ul class="list-unstyled m-0">
+                                          <li><a href="https://web.archive.org/yayinlar/cark-basak-dergi" class="dropdown-item">ÇarkBaşak</a></li>
+                                          <li><a href="https://web.archive.org/yayinlar/komunist-dergi" class="dropdown-item">Komünist</a></li>
+                                          <li><a href="https://web.archive.org/yayinlar/inat-dergi" class="dropdown-item">İnat Dergi</a></li>
+                                          <li><a href="https://web.archive.org/bultenler/" class="dropdown-item">Bültenler</a></li>
+                                      </ul>
+                </div>
+                <div class="col-lg-5 mega-banners">
+                  <div class="quick-access-wrap">
+                    <a href="https://tipekatil.tip.org.tr" class="quick-banner" aria-label="TİP’e Katıl">
+                      <img alt="TİP’e Katıl">
+                    </a>
+                    <a href="https://web.archive.org/bagis-yap" class="quick-banner" aria-label="Bağış Yap">
+                      <img alt="Bağış Yap">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="https://web.archive.org/iletisim" class="nav-link">Bize Ulaşın</a></li>
+        <li class="nav-item">
+          <a href="https://tip.org.tr/en" class="nav-link lang-link" aria-label="English site">
+            <i class="fa-solid fa-globe"></i><span class="d-none d-lg-inline">EN</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-none d-md-flex align-items-center ms-auto top-right-stack nav-actions">
+      
+        <img alt="Ara" class="img-raw" width="28" height="28">
+      
+      <div class="social-row">
+                  <a href="https://www.facebook.com/tipgenelmerkez" class="icon-link" aria-label="facebook">
+            <img alt="Facebook" class="icon-img">
+          </a>
+                  <a href="https://twitter.com/tipgenelmerkez" class="icon-link" aria-label="twitter">
+            <img alt="Twitter" class="icon-img">
+          </a>
+                  <a href="https://www.instagram.com/tipgenelmerkez" class="icon-link" aria-label="instagram">
+            <img alt="Instagram" class="icon-img">
+          </a>
+                  <a href="https://www.youtube.com/@tipgenelmerkez" class="icon-link" aria-label="youtube">
+            <img alt="Youtube" class="icon-img">
+          </a>
+              </div>
+      <a href="https://portal.tip.org.tr" class="ghost-login" aria-label="Üye Girişi - portal.tip.org.tr">
+        <i class="fa-regular fa-user" aria-hidden="true"></i>
+        <span>Üye Girişi</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="search-overlay" id="searchOverlay" role="dialog">
+  <div class="search-card" role="search">
+    <div class="search-head">
+      
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-start offcanvas-modern" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <a href="https://web.archive.org/" class="brand-chip" id="mobileMenuLabel" aria-label="Anasayfa">
+      <img alt="TİP Logo">
+    </a>
+    <div class="right-actions" style="display:flex; align-items:center; gap:10px;">
+      <a class="lang-pill" href="https://tip.org.tr/en" aria-label="English site">
+        <i class="fa-solid fa-globe" aria-hidden="true"></i><span>EN</span>
+      </a>
+      <div class="social-row">
+                  <a href="https://www.facebook.com/tipgenelmerkez" class="icon-link" aria-label="facebook">
+            <img alt="Facebook" class="icon-img">
+          </a>
+                  <a href="https://twitter.com/tipgenelmerkez" class="icon-link" aria-label="twitter">
+            <img alt="Twitter" class="icon-img">
+          </a>
+                  <a href="https://www.instagram.com/tipgenelmerkez" class="icon-link" aria-label="instagram">
+            <img alt="Instagram" class="icon-img">
+          </a>
+                  <a href="https://www.youtube.com/@tipgenelmerkez" class="icon-link" aria-label="youtube">
+            <img alt="Youtube" class="icon-img">
+          </a>
+              </div>
+    </div>
+    
+  </div>
+  <div class="offcanvas-body">
+    <div class="contact-strip">
+      <a href="https://web.archive.org/iletisim" class="contact-btn" aria-label="Bize Ulaşın">
+        <i class="fa-regular fa-envelope"></i><span>Bize Ulaşın</span>
+      </a>
+    </div>
+    <div class="contact-strip">
+      <a href="https://portal.tip.org.tr" class="contact-btn" aria-label="Üye Girişi - portal.tip.org.tr" style="background:transparent;border:1px solid rgba(255,255,255,.85);box-shadow:none;color:#fff;">
+        <i class="fa-regular fa-user" aria-hidden="true"></i><span>Üye Girişi</span>
+      </a>
+    </div>
+    <div class="quick-banners">
+      <a href="https://tipekatil.tip.org.tr" class="quick-banner" aria-label="TİP’e Katıl">
+        <img alt="TİP’e Katıl">
+      </a>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Parti</div>
+      <div class="list-modern">
+                  <a class="item" href="https://web.archive.org/parti-programi"><i class="fa-regular fa-circle-right"></i><span>Program</span></a>
+                  <a class="item" href="https://web.archive.org/tuzuk"><i class="fa-regular fa-circle-right"></i><span>Tüzük</span></a>
+                  <a class="item" href="https://web.archive.org/genel-baskan"><i class="fa-regular fa-circle-right"></i><span>Genel Başkan</span></a>
+                  <a class="item" href="https://web.archive.org/parti-sozcusu"><i class="fa-regular fa-circle-right"></i><span>Parti Sözcüsü</span></a>
+                  <a class="item" href="https://web.archive.org/yonetim"><i class="fa-regular fa-circle-right"></i><span>Yönetim</span></a>
+                  <a class="item" href="https://web.archive.org/burolar-ve-komisyonlar"><i class="fa-regular fa-circle-right"></i><span>Bürolar ve Komisyonlar</span></a>
+              </div>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Çalışmalar</div>
+      <div class="list-modern">
+                  <a class="item" href="https://web.archive.org/myk-ve-parti-meclisi/"><i class="fa-regular fa-circle-right"></i><span>MYK ve Parti Meclisi Değerlendirmeleri</span></a>
+                  <a class="item" href="https://web.archive.org/raporlar-belgeler/"><i class="fa-regular fa-circle-right"></i><span>Raporlar ve Belgeler</span></a>
+                  <a class="item" href="https://web.archive.org/kanun-teklifleri/"><i class="fa-regular fa-circle-right"></i><span>Kanun Teklifleri ve Soru Önergeleri</span></a>
+                  <a class="item" href="https://web.archive.org/basin-toplantilari-ve-aciklamalari/"><i class="fa-regular fa-circle-right"></i><span>Basın Toplantıları ve Açıklamaları</span></a>
+                  <a class="item" href="https://web.archive.org/partiden-haberler/"><i class="fa-regular fa-circle-right"></i><span>Partiden Haberler</span></a>
+              </div>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Yayınlar</div>
+      <div class="list-modern">
+                  <a class="item" href="https://web.archive.org/yayinlar/cark-basak-dergi"><i class="fa-regular fa-circle-right"></i><span>ÇarkBaşak</span></a>
+                  <a class="item" href="https://web.archive.org/yayinlar/komunist-dergi"><i class="fa-regular fa-circle-right"></i><span>Komünist</span></a>
+                  <a class="item" href="https://web.archive.org/yayinlar/inat-dergi"><i class="fa-regular fa-circle-right"></i><span>İnat Dergi</span></a>
+                  <a class="item" href="https://web.archive.org/bultenler/"><i class="fa-regular fa-circle-right"></i><span>Bültenler</span></a>
+              </div>
+    </div>
+    <div class="quick-banners">
+      <a href="https://web.archive.org/bagis-yap" class="quick-banner" aria-label="Bağış Yap">
+        <img alt="Bağış Yap">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+<body>
+
+
+<div class="page-banner">
+  <div class="container-1200">
+    <div class="banner-row">
+      <h1 class="banner-title">TÜZÜK</h1>
+      
+      
+        Keşfet
+      
+    </div>
+  </div>
+</div>
+
+<section class="pt-0 pb-4">
+  <div class="container-1200">
+    <div class="row g-4">
+      
+      <aside class="col-lg-3 d-none d-lg-block">
+        <div class="card border-0 shadow-sm sticky-top">
+          <div class="card-body">
+            <div class="content-outline mb-3">
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <span class="sidebar-heading">Arama yap</span>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                
+                ×
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <small class="text-muted">Sonuç: <span id="searchCount">0</span></small>
+                <small class="text-muted">Enter: sonraki • Shift+Enter: önceki</small>
+              </div>
+            </div>
+
+            <div class="content-outline">
+              <nav id="tocNav" class="nav flex-column small gap-1 mb-2">
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-i-genel-nitelikler">
+                    <span class="flex-grow-1">BÖLÜM I: GENEL NİTELİKLER</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-2-uyelik">
+                    <span class="flex-grow-1">BÖLÜM 2: ÜYELİK</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-3-parti-organlari">
+                    <span class="flex-grow-1">BÖLÜM 3: PARTİ ORGANLARI</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-4-ortak-hukumler">
+                    <span class="flex-grow-1">BÖLÜM 4: ORTAK HÜKÜMLER</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-5-denetleme-ve-disiplin-hukumleri">
+                    <span class="flex-grow-1">BÖLÜM 5: DENETLEME VE DİSİPLİN HÜKÜMLERİ</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-6-mali-hukumler">
+                    <span class="flex-grow-1">BÖLÜM 6: MALİ HÜKÜMLER</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                                  <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-7-parti-ici-secim-hukumleri">
+                    <span class="flex-grow-1">BÖLÜM 7: PARTİ İÇİ SEÇİM HÜKÜMLERİ</span>
+                    <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                  </a>
+                              </nav>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+
+      
+      <main class="col-lg-9">
+        <div id="tuzukContent" class="card border-0 shadow-sm">
+          <div class="card-body p-0 p-md-5">
+            <div id="top"></div>
+
+            
+            <div class="offcanvas offcanvas-start" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="tocOffcanvasLabel">Tüzük </h5>
+                
+              </div>
+              <div class="offcanvas-body">
+                <div class="input-group mb-2">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                  
+                  ×
+                </div>
+                <div class="mb-2"><small class="text-muted">Sonuç: <span id="searchCountMobile">0</span></small></div>
+
+                <div class="content-outline">
+                  <nav id="tocNavMobile" class="nav flex-column small gap-1 mb-2">
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-i-genel-nitelikler">
+                        <span class="flex-grow-1"><strong>BÖLÜM I: GENEL NİTELİKLER</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-2-uyelik">
+                        <span class="flex-grow-1"><strong>BÖLÜM 2: ÜYELİK</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-3-parti-organlari">
+                        <span class="flex-grow-1"><strong>BÖLÜM 3: PARTİ ORGANLARI</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-4-ortak-hukumler">
+                        <span class="flex-grow-1"><strong>BÖLÜM 4: ORTAK HÜKÜMLER</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-5-denetleme-ve-disiplin-hukumleri">
+                        <span class="flex-grow-1"><strong>BÖLÜM 5: DENETLEME VE DİSİPLİN HÜKÜMLERİ</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-6-mali-hukumler">
+                        <span class="flex-grow-1"><strong>BÖLÜM 6: MALİ HÜKÜMLER</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                          <a class="nav-link py-1 px-2 rounded toc-link d-flex align-items-center" href="#bolum-7-parti-ici-secim-hukumleri">
+                        <span class="flex-grow-1"><strong>BÖLÜM 7: PARTİ İÇİ SEÇİM HÜKÜMLERİ</strong></span>
+                        <span class="ms-2 badge bg-light text-dark border hit-badge d-none">0</span>
+                      </a>
+                                      </nav>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="tuzuk-html">
+                              <section id="bolum-i-genel-nitelikler" class="tuzuk-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>BÖLÜM I: GENEL NİTELİKLER</strong></h2>
+                  <h3>Madde 1.1:</h3>
+<p>Partinin Adı, TÜRKİYE İŞÇİ PARTİSİ, kısa adı TİP, Genel Merkezi Ankara‘dadır. Partinin Amblemi içi içe geçmiş Çark-Başak-Yıldız&#x27;dan oluşur ve ortasında TİP yazılıdır.</p>
+<h3>Madde 1.2:</h3>
+<p>TİP, Parti programındaki ilkeler çerçevesinde sınıfsız-sömürüsüz bir dünya ve toplum için mücadele eder. Hedefi, çağımızda insanca bir yaşam, yaşanabilecek bir ülke ve eşitlikçi, özgürlükçü bir dünya için tek gerçek seçenek olan sosyalizmdir.</p>
+<p>Parti bu hedefe ulaşmak için, sosyalizmin toplumsal ölçekte siyasal bir güç haline gelmesi, sosyalist siyaset ve ideolojinin geniş kitlelere duyurularak emekçiler arasında yaygınlaşması ve sosyalizme yürüyüşün önündeki engellerin aşılması için mücadele eder.</p>
+<p>Türkiye İşçi Partisi;</p>
+<p>•	Sosyalizme ve sınıfsız topluma ulaşma mücadelesinin temel gücü olan işçi sınıfının partisi olarak, sermaye düzeninin sömürüsüne ve tahakkümüne maruz kalan tüm emekçilerin partisidir.</p>
+<p>•	Hiçbir ayrım gözetmeksizin emekçilerin kapitalizme (sermaye düzenine) karşı ortak mücadelesini hedefler. Bu ortak mücadeleyi engelleyen tüm gerici ideolojilere, ataerkiye, emperyalizme ve faşizme karşı tavizsiz bir devrimci tutum alır. Sosyalizm mücadelesini ileriye taşıyacak ve güçlendirecek tüm ilerici hak mücadelelerinin içinde olur, bu mücadeleleri örgütler ve destekler.</p>
+<p>•	Sömürücüler dışında, emeğiyle geçinen tüm halk kesimlerine öncülük etmeyi, bu kesimleri sınıfsız ve sömürüsüz toplum mücadelesine kazanmayı amaçlar ve onların katkılarından yararlanmayı görev bilir.</p>
+<p>•	Dünya üzerindeki sosyalist, devrimci, ilerici ve anti-emperyalist mücadelelerin yanındadır, enternasyonalisttir. Yaşanmış sosyalist mücadele ve sosyalist kuruluş deneylerini tarihsel birikiminin bir parçası olarak görür ve bunları geliştirmeyi görev kabul eder.</p>
+<p>•	Türkiye sosyalist hareketinin bugüne kadarki siyasal ve örgütsel birikimini ve Türkiye&#x27;deki devrimci gelenek ve değerleri sahiplenir. Türkiye işçi sınıfı ve emekçilerinin mücadele birikiminin taşıyıcısıdır. TİP, sosyalist hareketin tarihini eleştirel bir bakış açısıyla sahiplenir ve sosyalist hareketin birikiminin devrimci bir program zemininde birliğini ve yeniden kuruluşunu hedefler.</p>                </section>
+                              <section id="bolum-2-uyelik" class="tuzuk-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>BÖLÜM 2: ÜYELİK</strong></h2>
+                  <h3>Madde 2.1: Parti üyesi</h3>
+<p>Parti programını ve tüzüğünü benimseyen, bir ilçe örgütüne bağlı olmayı ve parti aidatlarını düzenli olarak ödemeyi kabul eden herkes parti üyesi olmak için başvurabilir.</p>
+<h3>Madde 2.2: Üyelik Başvurusu</h3>
+<p>Üyelik koşullarını kabul eden kişi, ilçe örgütlerinden birine başvurabilir ya da üyelik talebini elektronik olarak internet üzerinden iletebilir.</p>
+<p>Üyelik başvurusunun kişinin tercih ettiği ilçe örgütüne yapılması halinde talep, başvuruyu alan ilçe örgütü tarafından, varsa görüş ve önerilerini de ekleyerek en geç 15 gün içerisinde Örgüt Komitesine iletilir. Örgüt Komitesi doğrudan kendisine gelen başvuruları ise ilgili ilçe örgütünün görüşünü alarak değerlendirir.</p>
+<p>Eğer üyelik başvurusu hakkındaki değerlendirme olumlu ise parti kayıtlarına kaydı yapılır ve başvuru sahibine bilgi verilir. Üyelik başvurusunun kabul edilmesi durumunda kişinin tercih ettiği ilçe örgütüne üye olabilmesi için o ilçede ikamet etme zorunluluğu aranmaz. Örgüt Komitesi üyelik başvurusu hakkındaki değerlendirmesi olumsuz ise ret gerekçesiyle birlikte başvuru sahibine bildirilir. Üyelik başvurusu reddedilen kişinin yazılı olarak Merkez Yürütme Kuruluna itirazda bulunma hakkı vardır. Merkez Yürütme Kurulunun ilgili itirazları inceleme ve karar verme süresi 30 günü geçemez. Merkez Yürütme Kurulunun vereceği karar kesindir.</p>
+<h3>Madde 2.3: Fahri Üyelik</h3>
+<p>Parti tüzüğü ve programını benimsemekle birlikte herhangi bir nedenle parti üyesi olamayan kişilerin katkısının alınabilmesi için Merkez Yürütme Kurulu kararıyla fahri üyeler kayıt edilebilir. Fahri üyelerden tüm parti, örgüt ve organlarında etkin bir biçimde yararlanılabilmesi için Parti Meclisi gerekli yönetmelikleri çıkarır.</p>
+<h3>Madde 2.4: Parti kimlik kartı</h3>
+<p>Parti kimlik kartları, üyeliğe kabul kararı sonunda verilir. Örgüt Komitesi tarafından düzenlenen parti kimlik kartları partiye aittir. Partiden çıkarılan ya da istifa eden kişiler kimlik kartlarını bağlı bulundukları örgüte iade eder.</p>
+<h3>Madde 2.5: Yer değiştirme</h3>
+<p>Parti üyesi, bağlı bulunduğu ilçe örgütünü değiştirirken, en son bağlı bulunduğu parti örgütüne nakil talebini bildirir. İlgili örgütün yönetici organı bu talebi üye devir formuyla birlikte Örgüt Komitesine iletir. Üye, talebinin yanıtını en son bağlı bulunduğu parti örgütünden öğrenerek yeni örgütüyle bağlantı kurar.</p>
+<h3>Madde 2.6: Üyelikten çıkarma</h3>
+<p>Partiye başvuran üye, başvuru formunda yanlış veya gerçek dışı beyanda bulunmuşsa ya da üyeliğe başvuru sırasında yasaların ve Tüzük&#x27;ün gerekli kıldığı niteliklere sahip değilse üyelikten çıkarılması için ilçe ya da il örgütleri yazılı olarak durumu Merkez Yürütme Kuruluna bildirir. Bunun dışındaki üyelikten çıkarma başlıkları disiplin maddelerinin konusudur.</p>
+<h3>Madde 2.7: Üyelikten ayrılma</h3>
+<p>Parti üyeliğinden ayrılmak isteyen kişi, talebini yazılı olarak ve gerekçeleriyle birlikte bağlı bulunduğu ilçe örgütüne bildirir. Üyelikten ayrılma Merkez Yürütme Kurulunun bilgisi dahilinde ve ilgili üyeye doğrudan bildirilerek uygulamaya konur. Ayrılma talebinde bulunan kişinin üyelik sorumlulukları, parti kimlik kartı, kendisinde bulunan parti evrak ve malları ile çalışma yaptığı alanla ilgili tüm bilgi ve belgeleri partiye aktardığında sona erer.</p>                </section>
+                              <section id="bolum-3-parti-organlari" class="tuzuk-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>BÖLÜM 3: PARTİ ORGANLARI</strong></h2>
+                  <h3>Madde 3.1: Parti Kurullarının Tanımı</h3>
+<h3 class="subheading"><strong>A)	MERKEZ KURULLAR</strong></h3>
+<p>•Büyük Kongre/Konferans Parti Meclisi</p>
+<p>•Genel Başkan</p>
+<p>•Merkez Yürütme Kurulu Örgüt Komitesi</p>
+<p>•Merkez Disiplin Kurulu</p>
+<h3 class="subheading"><strong>B)	ALAN KURULLARI</strong></h3>
+<p>•Birim</p>
+<p>•İlçe ve İl Yönetim Kurulları Bölge Komiteleri</p>
+<p>•Bürolar</p>
+<p>•Komisyonlar</p>
+<h3 class="subheading"><strong>C)	KOLLAR VE YAN ÖRGÜTLER</strong></h3>
+<p>•TİP Bilim Kurulu Adalet İçin Hukukçular Parti örgütleri ile Parti Meclisi arasında oluşturulan sekreterlikler, komite ve bürolar tüzükle tarif edilmiştir. Bu kurullar parti çalışmalarını yürütmek ve koordine etmekle yükümlüdür.</p>
+<p>Üst üste 3 kez ve 1 yıl içinde toplam olarak 5 kez geçerli mazeret belirtmeden kurul toplantılarına gelmeyen üyeler, ilgili kurul görevlerinden çekilmiş kabul edilir.</p>
+<h3>Madde 3.2: Birimler, Birimin Tanımı ve Yapısı</h3>
+<p>Birimler toplumsal bir alanda, siyasal mücadele ve örgütlenme amacıyla kurulur. Bu alanlar, öncelikle fabrika, işyeri, mahalle, okul, semt, sendika ve kitle örgütleri gibi tanımlı öncelikli alanlar olabileceği gibi istisnai durumlarda işlev temelli birimler de kurulabilir.</p>
+<p>Birimler ilçe, il ve bölge komiteleri tarafından oluşturulabilir.</p>
+<p>Birimlerin yapısı, işleyişi ve oluşumuna ilişkin esaslar PM tarafından düzenlenecek yönetmelikle düzenlenir.</p>
+<h3>Madde 3.3: Parti Kongresi (Büyük Kongre)</h3>
+<p>Parti Kongresi 3 (üç) yılda bir toplanır. Kongre, partinin en yüksek siyasal ve örgütsel karar organıdır. Parti program ve tüzüğünü değiştirmeye yetkili tek organdır. Genel Başkanı, Parti Meclisini (PM) ve Merkez Disiplin Kurulunu (MDK) seçer. Parti Kongresi Genel Başkan veya Parti Meclisi kararıyla zamanından önce toplanabilir.</p>
+<p>Parti Kongresinin yer ve tarihi Parti Meclisi tarafından saptanarak en geç 1 ay öncesinde parti üyelerine duyurulur.</p>
+<p>Parti Kongresi, duyurulan toplantı yer ve saatinde delege sayısının salt çoğunluğu ile toplanır. Salt çoğunluk sağlanamazsa, önceden belirlenmiş ikinci bir yer, gün ve saatte bu kez delege çoğunluğu aranmaksızın mevcut delegelerle toplanır.</p>
+<p>İl kongrelerinde seçilecek büyük kongre delege sayısı, ilgili il kongresindeki toplam delege sayısının %30’u olacak şekilde seçilir. Parti Meclisi üyeleri, MDK üyeleri ile partili milletvekilleri Parti Kongresi doğal delegeleridir. Doğal delegeler il kongrelerinde Parti Kongre delegesi seçilemez. Parti Kongresi öncesinde partinin siyasal ve örgütsel hedefleri konusunda yürütülecek çalışma ve tartışmaların gündemleri Merkez Yürütme Kurulu tarafından yayımlanacak genelgelerle belirlenir.</p>
+<h3>Madde 3.4: Olağanüstü Parti Kongresi</h3>
+<p>•	Olağanüstü Parti Kongresi, Genel Başkan veya Parti Meclisi kararıyla toplanır.</p>
+<p>•	Olağanüstü Parti Kongresi son Parti Kongresi delegelerinin en az %35&#x27;inin yazılı istemi üzerine toplanır.</p>
+<p>Olağanüstü Kongre talep eden üyeler, taleplerini iç yayın organında, gerekçeleriyle birlikte açıklar. Talebi içeren iç yayın organı yayımlandıktan sonraki 15 gün içinde, olağanüstü kongre talebini desteklediklerini Parti Meclisine bildiren yeterli sayıda delegeye ulaşıldığı takdirde Parti</p>
+<p>Meclisi Olağanüstü Kongreyi 30 gün içerisinde ve son Parti Kongresi delegeleriyle toplamakla yükümlüdür.</p>
+<h3>Madde 3.5: Parti Konferansı</h3>
+<p>Parti Konferansı iki Kongre arasında partinin siyasal ve örgütsel faaliyetlerini değerlendirmek, gözden geçirmek ve güncelleştirmek, Parti Meclisi ve diğer kurulların çalışmalarına yön vermek amacıyla toplanır.</p>
+<p>Parti Konferansı&#x27;nın zamanı, toplanma biçimi ve bileşimi MYK tarafından belirlenir ve parti örgütüne duyurulur.</p>
+<h3>Madde 3.6: Parti Meclisi</h3>
+<p>Parti Meclisi (PM), iki Parti Kongresi arasında partinin en yüksek karar organıdır. Kongre ve Konferanslar tarafından karara bağlanan siyasal ve örgütsel çalışmaların hayata geçirilmesinden sorumludur. Büyük Kongre tarafından seçilir.</p>
+<p>PM, Genel Başkan ile kongrede seçilecek 55 (elli beş) asıl ve 5 (beş) yedek üyeden oluşur. PM seçimi aday olan üyelerin dizildiği tek liste ile yapılır.</p>
+<p>PM üyeliğine adaylık, partinin siyasi faaliyetlerinde sorumluluk alma talebi olarak değerlendirilir. PM üyelerinin, görev ve sorumluluklarını aksatmaksızın yerine getirecek adaylar arasından seçimi, aday olanların ise bu görevi bir ayrıcalık değil, sorumluluk olarak kavramaları esastır.</p>
+<p>PM oluşmasını takip eden en geç 15 gün içerisinde ve rutin olarak en geç iki ayda bir toplanır. İlk toplantısında kendi içinden Örgüt Komitesini belirler.</p>
+<p>Örgüt Komitesi, il ve bölge komiteleri ile Parti Meclisi arasındaki bağın kurulmasına, tüm örgüt çalışmalarının Kongre ve PM kararları doğrultusunda koordine edilerek yönlendirilmesine Parti Meclisi adına önderlik eder. İlk PM toplantısında, 5 kişiden az olmamak kaydıyla, Parti Meclisi üyeleriarasından belirlenir.</p>
+<p>PM üyeliği yaptığı sırada herhangi bir nedenle disiplin cezası almış olan kişinin PM üyeliği düşer ve bir sonraki dönem yeniden aday olamaz.</p>
+<h3>Madde 3.7: Parti Meclisinin Görev ve Sorumlulukları:</h3>
+<p>PM, Kongre ve Konferans kararları doğrultusunda partinin tüm siyasal ve örgütsel çalışmalarına önderlik etmekle, siyasal ve stratejik kararlar almakla görevlidir.</p>
+<p>Alınmış kararların uygulanması, gerektiği durumlarda derinleştirilmesi ve geliştirilmesi PM&#x27;nin görevidir. Konferans ve Kongre süreçlerini örgütler, partililerin siyasal ve örgütsel açılımlar konusunda en kısa sürede bilgilenmelerini sağlar, parti içindeki tartışma ve katılım kanallarının işlemesini güvence altına alır. Merkez Yürütme Kurulunun hazırladığı yönetmelik taslaklarını karara bağlar. Merkez Yürütme Kurulunun, Parti Meclisi üyelerinin ve parti kurullarının sunduğu raporları, önerileri ve tasarılarını görüşüp karara bağlar.</p>
+<p>Seçimlere katılıp katılmama ve seçimlerde yasa ve tüzük kurallarına göre aday saptama yöntemini belirleyen kararları alır; merkez adaylarını ve merkez yoklaması yoluyla belirlenmesi gereken adayları belirler.</p>
+<p>Tüzüğün uygulanabilmesi, güncel ihtiyaçlara yanıt verebilmesi ve etkili kılınması için yönetmelik ve genelgeler çıkarır. Çalışma dönemi ile ilgili Kongre&#x27;ye sunulacak raporu, görüşülmesini istediği öneri ve karar tasarılarını hazırlar. Büyük Kongre&#x27;ye kesin hesap, bilanço ve bütçe tasarısını sunar.</p>
+<p>Parti Meclisi, Genel Başkan veya MYK tarafından, en az yedi gün öncesinden hazırlanan gündemle toplantıya çağrılır. Parti içi yaşamda yoldaşlık ilkelerinin korunmasını sağlar, eğitimleri ve parti yayınlarını planlayarak yönetir. Kongre çalışmalarını örgütleyip bununla ilgili yönetmelikleri hazırlar.</p>
+<p>Parti Meclisi, Parti üyeleri ve Parti üyesi olmayanlardan kendisine bağlı çalışma grupları ve komisyonlar oluşturabilir.</p>
+<p>Parti Meclisi, bilgi almak ya da görüşmek amacıyla, toplantılarına TBMM Grup Başkan Vekillerini, partili milletvekillerini, belediye ve il başkanlarını, belediye meclis üyelerini davet ederek genişletilmiş PM toplantıları düzenleyebilir. Bu toplantılarda PM üyesi olmayanlar oy kullanamaz.</p>
+<p>Tüm parti kurullarını atama yoluyla belirleme yetkisi vardır. Gerekli gördüğü durumlarda kurul ve örgütleri feshetme, yönetici kurulları görevden alma yetkisine sahiptir. Bu doğrultudaki kararlarını ilgili parti örgütüne gerekçeleriyle açıklar. PM bu yetkisini uygun gördüğü şart ve koşullarda MYK&#x27;ye geçici olarak devredebilir.</p>
+<h3>Madde 3.8: Parti Meclisi İşleyiş Kuralları</h3>
+<p>PM olağan olarak iki ayda bir toplanır.</p>
+<p>PM, ilk toplantısında kendi içinde görev bölüşümü yapar. Ölüm/ kayıp, yaşlılık, hastalık, tutukluluk, parti görevi olmaksızın yurtdışına taşınma veya benzer bir nedenle ya da görevden azledilme talebi sonucunda PM üyeleri arasında bir eksilme olursa, eksilen kişi sayısı kadar ve aldıkları oy oranına göre sırayla yedek üyeler PM&#x27;ye alınır. PM, ihtiyaç halinde belirleyeceği parti üyelerini ilgili gündem maddelerinde toplantılarına danışman ya da gözlemci olarak çağırabilir.</p>
+<p>Kararların görüş birliği ile alınması için çaba harcanır, bunun mümkün olmadığı durumlarda açık oylama yoluyla ve salt çoğunlukla karar alınır. PM&#x27;nin aldığı karar tüm üyeler açısından bağlayıcıdır. Parti Meclisi, tüm karar, eylem ve etkinliklerinin sorumluluğunu kolektif olarak üstlenir.</p>
+<p>İhtiyaç duyması halinde PM, belirlediği konulardaki karar önerilerini tüm üyelerin oylarına sunabilir. Oylama kuralları ve usulü önceden belirlenerek tüm üyelere bildirilir.</p>
+<p>PM’nin çalışma prensipleri ve işleyişi çıkartılacak bir yönetmelikle belirlenir.</p>
+<h3>Madde 3.9: Genel Başkan</h3>
+<p>Büyük Kongre&#x27;de gizli oyla ve delege tam sayısının salt çoğunluğu ile seçilir. İlk turda çoğunluk sağlanamazsa ikinci turda en çok oyu alan aday Genel Başkan seçilir.</p>
+<p>Genel Başkanlığın boşalması halinde MYK kendi içinden bir Genel Başkan Vekili seçer ve 30 gün içinde Olağanüstü Büyük Kongre&#x27;yi toplar.</p>
+<p>Genel Başkan&#x27;ın yokluğunda MYK içinden seçilen bir MYK üyesi Genel Başkan&#x27;a vekâlet eder.</p>
+<p>Partinin kolektif önderliğinin temsilcisi ve sözcüsüdür. Parti yönetim organlarını ve kurullarını birlikte veya ayrı ayrı toplantıya çağırabilir. Kurullar arasında çalışma düzeni ve iş birliğini sağlar. Parti örgütlerini görevlendirir ve denetler.</p>
+<p>Parti adına, görüşmeler yapmakla ve açıklamalar yapmakla görevli ve yetkilidir.</p>
+<p>Gerekli gördüğü durumlarda danışmanlar görevlendirebilir, çalışmalarında yardımcı olmak üzere Danışma Kurulu oluşturabilir. Parti Meclisini ve Merkez Yürütme Kurulunu toplantıya çağırabilir, aynı zamanda bu kurulların da başkanıdır.</p>
+<p>Genel Başkan, Siyasi Partiler Kanunu&#x27;nda belirtilen yetki ve sorumluluklara sahiptir.</p>
+<h3>Madde 3.10: Merkez Yürütme Kurulu (MYK)</h3>
+<p>MYK, Genel Başkan tarafından belirlenir ve ilk toplantısında PM onayına sunulur. PM onayıyla oluşur ve göreve başlar.</p>
+<p>MYK üyeliklerinden eksilme olması halinde yenileri belirlenir. Genel Başkan, MYK üyeleri arasından partinin ihtiyaçları doğrultusunda Genel Başkan Yardımcıları görevlendirebilir.</p>
+<p>Genel Başkan Yardımcılarının sayısı ve görev alanları Genel Başkan tarafından belirlenir.</p>
+<p>MYK, partinin kolektif önderliği adına günlük siyasal ve örgütsel faaliyetlerin sürdürülmesinden sorumludur. Kongre/Konferans ve PM kararları doğrultusunda tüm parti çalışmalarına önderlik eder. PM&#x27;den başlayarak merkezi organların etkin, canlı ve istikrarlı bir biçimde çalışması için görev üstlenir. PM başta olmak üzere partinin kurul ve kadrolarının çalışmalarını koordine eder. Haftada en az 1 kez toplanır.</p>
+<p>Gerekli gördüğü ve gecikmesinde sakınca gördüğü durumlarda bilgi vermek suretiyle PM yetkisindeki konularda da kararlar alıp bu kararları uygulamaya koyabilir. Bu yetkisini kullandığı durumlarda 10 gün içerisinde alınan kararı değerlendirmek üzere PM&#x27;yi olağanüstü toplantıyaçağırır.</p>
+<p>Partinin görüş ve değerlendirmelerini yaygınlaştırmak amacıyla basılı yerel, süreli ve/veya elektronik yayın çıkartmaya kararverebilir.</p>
+<h3>Madde 3.11: TİP’li Öğrenciler</h3>
+<p>Türkiye İşçi Partisi üyesi öğrencilerin yürüteceği TİP&#x27;li Öğrenciler çalışması, partinin programını ve dünya görüşünü gençler arasında yaygınlaştırmak, öğrencilerin yaşadığı sorunlarla mücadele ederek örgütlenmek, bilimsel çalışmalar yapıp öğrenci gençliğin sorunlarına çözümler önermek amacıyla faaliyet yürütür.</p>
+<p>Türkiye&#x27;deki ilerici, aydınlanmacı, emekten yana olan öğrencilerin birlikteliğini sağlar ve siyaset, hak ve özgürlükler, bilim, kültür alanlarında çalışmalar yürütebilir.</p>
+<p>TİP&#x27;li Öğrenciler çalışmasını yönetmekle görevlendirilen organ Öğrenci Bürosudur. Öğrenci Bürosuna bağlı olmak üzere her ilde TİP&#x27;li Öğrenciler çalışması kurulur.</p>
+<p>TİP&#x27;li Öğrenciler, Öğrenci Bürosunun kararı ile her türlü kapalı ve açık salon etkinliği, konferans, panel, sempozyum, basın açıklaması, yürüyüş, miting düzenleyebilir. Basılı metin, dergi, broşür, afiş, kitap çıkarabilir. Raporlar, incelemeler ve çalışmalar hazırlayıp yayımlayabilir.</p>
+<p>TİP&#x27;li Öğrenciler çalışmalarının kuruluş, işleyiş ve çalışma yöntemleri PM tara- fından hazırlanacak bir yönetmelikle düzenlenir.</p>
+<h3>Madde 3.12: TİP’li Kadınlar</h3>
+<p>Türkiye İşçi Partisi üyesi kadınların yürüteceği TİP&#x27;li Kadınlar çalışması, partinin programını ve dünya görüşünü kadınlar arasında yaygınlaştırmak, kadınların yaşadığı sorunlarla mücadele ederek örgütlenmek, bilimsel çalışmalar yapıp kadınların sorunlarına çözümler önermek amacıyla faaliyet yürütür.</p>
+<p>Türkiye&#x27;de toplumsal cinsiyet eşitsizliğini üreten ve derinleştiren, kadınların eşit ve özgür yaşamasının önünde engel teşkil eden her türlü gerici ve ataerkil ideolojiye karşı tüm kadınların birlikte mücadele etmesini sağlamayı amaçlar. TİP&#x27;li Kadınlar çalışmasını yönetmekle görevlendirilen organ Kadın Bürosudur. Kadın Bürosuna bağlı olmak üzere her ilde TİP&#x27;li Kadınlar çalışması kurulur.</p>
+<p>TİP&#x27;li Kadınlar, Kadın Bürosunun kararı ile her türlü kapalı ve açık salon etkinliği, konferans, panel, sempozyum, basın açıklaması, yürüyüş, miting düzenleyebilir. Basılı metin, dergi, broşür, afiş, kitap çıkarabilir. Raporlar, incelemeler ve çalışmalar hazırlayıp yayımlayabilir.</p>
+<p>TİP&#x27;li Kadınlar çalışmalarının kuruluş, işleyiş ve çalışma yöntemleri PM tarafından hazırlanacak bir yönetmelikle düzenlenir.</p>
+<h3 class="subheading"><strong>İL ÖRGÜTÜ</strong></h3>
+<h3>Madde 3.13: İl Kongresi</h3>
+<p>İl Kongresi, sayısı 600&#x27;ü geçmeyecek şekilde ilçe kongrelerince seçilen delegelerden ve doğal delegelerden oluşur. İl Başkanı, İl Yönetim Kurulu üyeleri, İl Disiplin Kurulu üyeleri, ilgili ilin partili milletvekilleri, ilçe Başkanları ve İlçe Yönetim Kurulu üyeleri il kongresinin doğaldelegeleridir.</p>
+<p>İl Kongresi olağan olarak üç yılda bir, İl Yönetimi tarafından saptanan gün, yer ve gündemle toplanır. Olağanüstü İl Kongresi ise İl Yönetimin kararı ve bu kararın MYK tarafından onaylanmasıyla toplanır. İlgili ilin Büyük Kongre delegelerini, İl Başkanını, İl Yönetimini ve İl Disiplin Kurulunu seçer.</p>
+<p>İl kongrelerinde seçilecek büyük kongre delege sayısı, ilgili il kongresindeki toplam delege sayısının %30’udur. Büyük kongre delegeleri seçiminde eşit temsil hedeflenmekle birlikte eşit temsil koşulları oluşana kadar %40 oranında kadın kotası uygulanır.</p>
+<p>İl Başkanlığı, İl Yönetim Kurulu ve İl Disiplin Kuruluna seçilecek kişilerin o ilde ikamet etme zorunluluğu aranmaz.</p>
+<h3>Madde 3.14: İl Yönetim Kurulu ve İl Disiplin Kurulu</h3>
+<p>İl Yönetim Kurulu, İl Kongresi tarafından seçilen İl Başkanı hariç en az yedi (7) üyeden oluşur. Parti Meclisinin, belirleyeceği illerde bu sayıyı iki katı oranına kadar artırma yetkisi bulunmaktadır.</p>
+<p>İl YK, üye tam sayısının salt çoğunluğu ile kendi içinde görev bölüşümünü gerçekleştirir. İl kararları salt çoğunlukla alınır.</p>
+<p>İl Başkanı, İl YK ve İl Disiplin Kurulu, MYK üye tam sayısının üçte iki çoğunluğunun kararı ile görevden alınabilir.</p>
+<p>Görevden alınmalar veya istifalar nedeniyle boşalan İl YK üyeliklerine MYK tarafından yeni üyeler atanır. İl Disiplin Kurulu İl kongresi tarafından seçilen 3 (üç) üyeden oluşur.</p>
+<h3 class="subheading"><strong>İLÇE ÖRGÜTÜ</strong></h3>
+<h3>Madde 3.15: İlçe Kongresi</h3>
+<p>İlçe kongresi, o ilçeye bağlı tüm üyelerden oluşur. İlçe Kongresi, İlçe Başkanını, İlçe Yönetim Kurulunu ve İl Kongresi&#x27;ne gönderilecek delegeleri seçer. İlçe Kongresi olağan olarak üç yılda bir, İl Yönetimi tarafından belirlenen kongre dönemi içinde toplanır. İlçe Kongresi&#x27;nin gün, yer ve gündemi İlçe Yönetimi tarafından belirlenir. Olağanüstü İlçe Kongresi ise İlçe Yönetiminin kararı ve bu kararın İl Yönetiminin ve MYK tarafından onaylanmasıyla toplanır. İlçe kongresinin toplantıya çağrılabilmesi için o ilçede 6 kayıtlı üyenin olması yeterlidir. İlçe başkanlığı ve ilçe yönetim kuruluna seçilecek kişilerin o ilçede ikamet etme zorunluluğu aranmaz.</p>
+<p>İlçe Başkanı ve İlçe Yönetim Kurulu üyeleri il kongresinin doğal delegeleridir.</p>
+<p>İlçe kongrelerinde seçilecek il delegelerinin sayısı o ilçenin üye sayısı 1-10 arasında ise 1, 11-50 arasında ise 3, 51-100 arasında ise 5, 101-250 arasında ise 7, 251-500 arasında ise 10, 501 ve üzeri üyesi olan ilçelerde ise her 100 üye için +1 delege şeklinde belirlenir.</p>
+<h3>Madde 3.16: İlçe Yönetim Kurulu</h3>
+<p>İlçe Yönetimi Kurulu, İlçe Kongresi tarafından seçilen İlçe Başkanı hariç en az beş (5) üyeden oluşur. Parti Meclisinin, belirleyeceği ilçelerde bu sayıyı iki katına kadar arttırma yetkisi bulunmaktadır.</p>
+<p>İlçe Yönetimi, üye tam sayısının salt çoğunluğu ile görev bölüşümünü gerçekleştirir. İlçe kararları salt çoğunlukla alınır. İlçe Başkanı ve İlçe Yönetimi, İl Yönetimi tarafından, İl Yönetimi üye tam sayısının üçte iki çoğunluk kararı ve MYK onayı ile görevden alınabilir. Görevden alma ya da İlçe Yönetim Kurulu üyelerinin istifaları ile boşalan İlçe Yönetim Kurulu üyeliklerine, MYK onayı ile İl Yönetimi tarafından yeni üyeler atanır.</p>
+<h3>Madde 3.17: Parti Temsilcisi</h3>
+<p>Bir il veya ilçede parti örgütü kurulmamışsa bu il veya ilçede parti örgütünü kurmak üzere partiyi temsil için bir Parti Temsilcisi, MYK tarafından yazılı görevlendirmeyle atanır.</p>
+<h3>Madde 3.18: Parti Temsilcilikleri</h3>
+<p>Parti örgütü bulunan il ve ilçelerin mahalle ve köylerinde ilgili yönetici organ talebiyle ve MYK onayıyla, parti örgütünün bulunmadığı yerlerde ise MYK kararıyla Parti Temsilcilikleri, Parti Lokalleri ve İrtibat Büroları açılabilir. Temsilcilik, lokal ve irtibat büroları MYK tarafından feshedilebilir.</p>
+<p>Gerekli görüldüğü takdirde İstanbul&#x27;da Genel Başkanlık İrtibat Bürosu açılabilir.</p>
+<h3>Madde 3.19: Yurtdışı Temsilcilikleri</h3>
+<p>PM kararıyla yurtdışında Parti temsilcilikleri açılabilir. Örgütlenme ilkeleri Yurtdışı Temsilcilikleri aracılığı ile üye olanlar için de geçerlidir.</p>
+<p>PM kendi içinde bir üyeyi, Yurtdışı Temsilcilikleri ile olağan teması yürütmek üzere görevlendirir. Yurtdışında aşağıda sayılı ülke ve şehirlerinde temsilcilikler açılabilir.</p>
+<p>a)	ALMANYA&#x27;da: Münih, Berlin, Frankfurt, Hamburg kentlerinde;</p>
+<p>b)	AVUSTRALYA&#x27;da: Sydney ve Melbourne kentlerinde;</p>
+<p>c)	AVUSTURYA&#x27;da: Viyana kentinde;</p>
+<p>d)	BELÇİKA&#x27;da: Brüksel kentinde;</p>
+<p>e)	BEYAZ RUSYA&#x27;da: Minsk kentinde;</p>
+<p>f)	BULGARİSTAN&#x27;da: Sofya kentinde;</p>
+<p>g)	ÇİN HALK CUMHURİYETİ&#x27;nde: Pekin kentinde;</p>
+<p>h)	DANİMARKA&#x27;da: Kopenhag kentinde;</p>
+<p>i)	FRANSA&#x27;da: Paris, Strazburg, Lyon, Marsilya kentlerinde;</p>
+<p>j)	HOLLANDA&#x27;da: Amsterdam, Rotterdam, Laheykentlerinde;</p>
+<p>k)	İNGİLTERE&#x27;de: Londra kentinde;</p>
+<p>l)	IRAK&#x27;ta Bağdat, Basra kentlerinde,</p>
+<p>m)	İRAN&#x27;da Tahran kentinde;</p>
+<p>n)	İSPANYA&#x27;da: Madrid kentinde;</p>
+<p>o)	İSVEÇ&#x27;te: Stokholm kentinde;</p>
+<p>p)	İSVİÇRE&#x27;de: Lozan, Zürih, Basel, ve Cenevre kentlerinde;</p>
+<p>r)	İTALYA&#x27;da: Roma kentinde;</p>
+<p>s)	KUZEY KIBRIS TÜRK CUMHURİYETİ&#x27;nde: Lefhoşa kentinde;</p>
+<p>t)	KÜBA&#x27;da: Havana kentinde;</p>
+<p>u)	PORTEKİZ&#x27;de: Lizbon kentinde;</p>
+<p>v)	ROMANYA&#x27;da: Bükreşkentinde;</p>
+<p>y)	RUSYA&#x27;da: Moskova ve St. Petersburg kentlerinde;</p>
+<p>z)	SIRBİSTAN&#x27;da: Belgrad kentinde;</p>
+<p>aa)	SURİYE&#x27;de: Halep ve Şam kentlerinde;</p>
+<p>ab) UKRAYNA&#x27;da: Kiev kentinde;</p>
+<p>ac) YUNANİSTAN&#x27;da: Atina ve Selanik kentlerinde.</p>
+<h3>Madde 3.20: Meclis Grupları</h3>
+<p>(a)	TBMM Parti Grubu, partili milletvekillerinden oluşur. Parti Meclis Grubunun çalışmaları MYK ile koordineli olarak sürdürülür. PM tarafından hazırlanan yönetmelikler çerçevesinde gerçekleştirilir.</p>
+<p>(b)	Mahalli Meclis Grupları bağlı bulundukları İl ve İlçe YK&#x27;ları denetiminde belediye ve il genel meclislerinin partili üyelerinden kurulur. Mahalli Meclis Grupları çalışma ve işleyişleri iç yönetmeliklerle düzenlenir.</p>
+<p>(c)	Parti milletvekillerinin sayısının grup kurmaya yetmediği durumlarda, milletvekilleri Partinin genel tutumunu ilgilendiren konularda toplanarak ortak tutum belirler. Milletvekilleri, aralarındaki işbirliği, görev bölüşümünün kural ve işleyişlerini MYK&#x27;ye danışarak saptarlar.</p>
+<h3>Madde 3.21: Yan Örgütler</h3>
+<p>Parti, Parti Kongresi, Konferansı ya da PM kararıyla yan örgütler kurabilir. Yan örgütlerin yasal ve siyasal sorumluluğu Türkiye İşçi Partisi&#x27;ne aittir. Çalışmaları PM tarafından hazırlanan yönetmeliklerle düzenlenir.</p>
+<p>Yan örgütlerin çalışmalarına parti üyesi olmayanlar da katılabilir. Yan örgütler Parti binalarını kullanabilecekleri gibi MYK kararıyla çalışmaları için kendi adıyla bina, temsilcilik, büro ya da lokal açabilirler. İki kongre arasında kurulan yan örgütler alınan kararın karar defterine işlenmesiyle birlikte çalışmalarına derhal başlarlar ve ilk kongrede de yan örgüt olarak parti tüzüğüne işlenirler.</p>
+<p>a)	Bilim Kurulu: Alanlarında yetkin ve uzman parti üye ve gönüllülerinden oluşan, kolektif üretim yapan bir danışma organıdır. Parti temsilcileri ve üyelerinin çeşitli alanlarda sürdürdükleri çalışmaların derinleşmesi, anlaşılır kılınması veya topluma propaganda edilmesi için, ihtiyaç duyulan başlıklarda parti politikaları ile uyumlu bilgi üretmek üzere faaliyet yürütür. Bu amaçla kolektif bilgi süzgecinden geçirilmiş kitap-kitapçık, broşür, beyanname, rapor, inceleme, vb. çalışmaları hazırlayabilir ve sunabilir; konferans, panel, sempozyum, vb. düzenleyebilir.</p>
+<p>Bilim Kurulu çalışma konuları ve öncelikleri parti genel kurulları ile merkezi yönetim kurullarının karar ve talepleri ile şekillenir. Kurulun çalışma yürüteceği konular ve önceliklerinin belirlenmesinde MYK, PM talepleri, TBMM&#x27;de görev yapan parti üyesi milletvekilleri, Belediye Başkanları ve yerel yönetimlerde görev almış üyeler ile toplumsal, mesleki, sendikal örgütlerde çalışan parti üyelerinin talepleri göz önünde tutulur. Bilim Kurulu çalışma usul ve esasları yönetmelikle belirlenir.</p>
+<p>b)	Adalet İçin Hukukçular: Parti üyesi ve gönüllüsü olan hukukçulardan oluşan bir platformdur. Kadın hakları, LGBTİ+ hakları, insan hakları, kent-çevre-ekoloji hakları, işçi hakları, çocuk hakları, avukat hakları, hayvan hakları, meslek sorunları vb. gibi toplumsal mücadeleler alanında davalar açmak, açılan davaları takip etmek, açılan davalara katılma talebinde bulunmak, suç duyuruları yapmak, meclis faaliyetleri kapsamında yasama çalışmalarını takip etmek, bunlara ilişkin yayın faaliyetinde bulunmak, raporlar hazırlamak, basın açıklamaları yapmak gibi alanlarda çeşitli faaliyetlerde bulunabilir.</p>
+<h3>Madde 3.22: Bürolar ve Komisyonlar</h3>
+<p>Partinin merkezi siyasal faaliyetlerini sürdürmek, örgütsel çalışmaları beslemek ve genel merkez fonksiyonlarını yerine getirmek için belirli alanlarda uzmanlaşan, partinin kaynaklarını bu alanlar için seferber ve koordine eden, parti dışından katkıların verimli bir şekilde parti çalışmasıyla bütünleşmesini sağlayan merkezi bürolar ve komisyonlar PM tarafından oluşturulur.</p>
+<p>Bürolar, belirli alanlarda partinin resmi görüşü ve merkezi siyaseti doğrultusunda süreklileşmiş çalışmaları yönlendirmek ve koordine etmek üzere oluşturulur. Komisyonlar ise yeni alanlarda partinin resmi görüşünü olgunlaştırmak amacıyla siyaset önerileri ve tasarılarını parti merkezine sunmak üzere oluşturulur.</p>
+<p>Her yeni dönemde bürolar ve komisyon sekreteryaları PM tarafından ilgili alan çalışanlarının görüşü alınarak atanır. Her büro ve komisyon bir PM üyesinin koordinatörlüğünde çalışır. Komisyonlar görev süreleri dolduğunda ilgili alana dair siyaset önerilerini ve tasarılarını rapor halinde PM&#x27;ye sunar. Raporunu PM&#x27;ya sunmasının ardından komisyonun büroya dönüştürülüp dönüştürülmeyeceği PM&#x27;nin tasarrufundadır.</p>
+<p>Bürolarda yalnızca parti üyeleri yer alabilir. Komisyonlarda ise parti üyeleriyle birlikte ilgili alanda katkı koyabilecek gönüllülere de yer verilir.</p>
+<p>Bürolar ve komisyonlar işleyiş biçimlerini ve hedeflerini içeren bir çalışma planını PM&#x27;ye sunar, PM&#x27;nin bu planı onaylamasının ardından büro ve komisyon faaliyetleri başlar. Tüm bürolar ve komisyonlar Parti Meclisi toplantılarına değerlendirme ve hedef raporlarını sunar.</p>
+<p>Kadın ve Emek Bürolarına bağlı olarak illerde ve ilçelerde emek ve kadın çalışması temsilcileri yer alır. Öğrenci Bürosu ise partinin gençlik çalışmalarının hem siyasal hem de örgütsel olarak yürütülmesinden sorumludur. İl ve ilçelerdeki öğrenci çalışmaları, faaliyetlerini Öğrenci Bürosu&#x27;na bağlı olarak yürütürler. Büro ve Komisyonların çalışma usul ve esasları yönetmelikle belirlenir.</p>
+<h3>Madde 3.23: Bölge Komiteleri</h3>
+<p>Farklı il ve ilçelerde bulunan örgütlerin sorumluları ile oluşturulan kuruldur. Parti çalışmalarını koordine eden, il ve ilçe örgüt çalışmalarını yöneten, MYK ile bağı kuran bölgesel ara yönetici kurullardır.</p>
+<p>Bölge sekreteri, kurulun sekreteridir. Kurul bileşimi ve sekreterliği MYK tarafından atanır.</p>                </section>
+                              <section id="bolum-4-ortak-hukumler" class="tuzuk-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>BÖLÜM 4: ORTAK HÜKÜMLER</strong></h2>
+                  <h3>Madde 4.1: Devrimcilik ve Yoldaşlık</h3>
+<p>Kapitalizm, toplumun büyük çoğunluğunu oluşturan işçiler, emekçiler ve yoksul halk üzerindeki sermaye diktatörlüğünün adıdır. TİP, bu sömürü düzenini yıkma, toplumu değiştirme ve insanı özgürleştirme iddiasıyla mücadele eden devrimci bir partidir. Marksizm-Leninizm’i rehber edinir.</p>
+<p>Parti, sosyalizm kavgasında hiçbir mücadele biçimini ve aygıtını önsel olarak reddetmez ve bunlara mutlaklık atfetmez. Parti, her hal ve şartta mücadelenin sürdürülmesinin güvencesi ve işçi sınıfının iktidarı için en önemli araçtır. Parti, sosyalizm hedefini ortaya koyan ve kolektif olarak üretilen bir program etrafında örgütlenmiş, eşitlik ve özgürlük mücadelesine katkı koymak isteyen üyelerden oluşur.</p>
+<p>Bir bütün olarak Parti ve tek tek tüm üyeleri, sömürücülerin iktidarına son vermek, toplumsal, siyasal, ekonomik ve kültürel dönüşümlere öncülük etmek için devrimci bir perspektifle kendisini sürekli olarak geliştirmek ve yetkinleştirmek için çalışır.</p>
+<p>Türkiye İşçi Partisi, üyelerinin gönüllü ve özverili birlikteliğine dayanır. Her parti üyesi, partinin kolektif iradesiyle kabul edilmiş program ve politikalarına, devrimci değerlere ve partinin çalışma ilkelerine uygun hareket eder. Üye, kendini sürekli yeniden ve yeniden eğitir, geliştirir ve diğer üyelerin eğitimlerine katkıda bulunur.</p>
+<p>Parti üyesi, hazırcı, tüketici değil, üreten, yaratan, dayanışmayı-paylaşmayı esas alan bir mücadale insanıdır. Parti üyeleri, sosyalist devrim için birlikte mücadeleyi tanımlayan yoldaşlık hukukuyla birbirlerine bağlıdır.</p>
+<p>Parti, üyelerinin gelişimi ve devrimci kadroların yetişmesi için uygun bir ortam yaratmak, parti üyeleri ise birer kadro olmak için özel olarak çaba sarfetmekle yükümlüdür. Parti üyeleri, her koşulda emekçilerin haklı mücadelesinin içinde ve önünde olmayı görev edinir.</p>
+<h3>Madde 4.2: Partinin Bağımsızlığı</h3>
+<p>Partinin siyasal-ideolojik ve örgütsel bağımsızlığı esastır. Kararlar parti organlarında ve parti üyeleriyle birlikte alır.</p>
+<p>Partinin tanımlı kurullarının üzerinde bir irade tanınmaz.</p>
+<p>Ulusal veya uluslararası düzeyde, ortak amaçlar doğrultusunda kalıcı veya geçici olarak oluşturulan güç ve eylem birliklerine katılma konusunda iki kongre arasında tek yetkili organ Parti Meclisi&#x27;dir.</p>
+<p>Partinin mali açıdan sadece üyelerine ve emekçilerin bağışlarına yaslanması bu ilkenin bir gereğidir.</p>
+<h3>Madde 4.3: Toplumsal Mücadelelere Önderlik</h3>
+<p>Kapitalist toplumda tüm çelişkilerin kaynağı emek-sermaye çelişkisidir. Bu çelişki gündelik hayat ve siyasal tartışmalara farklı biçimlerde yansıyabilir. Tek tek her üye, parti örgütleri ve bir bütün olarak Parti, başta işçi sınıfı olmak üzere emekçilerin, gençlerin, kadınların ve tüm ezilen insanların mücadelesini kendi mücadelesi olarak görür.</p>
+<p>Parti ve üyeleri, farklı alanlarda ortaya çıkan çeşitli mücadeleler gündeme geldiğinde halkın çıkarlarını savunmak üzere, bu mücadelelerin büyümesi ve zaferi için çabalar.</p>
+<p>Parti, halka güvenir. Halkın hak mücadelelerinin örgütlenmesi ve somut başarılar kazanarak ilerlemesi için tüm olanaklarını seferber eder, farklı alanlardaki mücadelelerin birleştirilmesi için önderlik eder. Mücadele süreci içerisinde ortaya çıkan sorunların özgür ve zengin tartışmalarla, halkın en geniş kesimlerinin ortaklaşmasıyla çözülmesine çalışır.</p>
+<p>Parti üyeleri, esas olarak somut mücadele süreçleri içinde gelişir, devrimcileşir ve önderlik yeteneğini geliştirir.</p>
+<p>Parti üyeleri düşüncelerini söylemeyi, söylediğini yapmayı ve yaptığını savunmayı ilke edinir. Halka zarar veren herhangi bir eylem ve etkinlik yapılamaz.</p>
+<p>Halkın, egemenlerin saldırılarından korunması öncelikli görev olarak benimsenir.</p>
+<h3>Madde 4.4: Demokratik Merkeziyetçilik</h3>
+<p>Partinin temel işleyiş ilkesi, demokratik merkeziyetçiliktir.</p>
+<p>Demokratik merkeziyetçilik, karar oluşturma sürecinde, kısıtlama olmaksızın tartışılabileceğini, alınmış kararın uygulanmasında ise tüm partinin birlikte hareket etmesi gerektiğini ifade eden bir ilkedir. Bu ilke, partinin iç yaşamının zenginleşmesinin de güvencesidir.</p>
+<p>Partide üstlenilen sorumluluğun bir yansıması olan örgütsel görev üyeyebir ayrıcalık tanımaz. Tüm üyelerin partinin eşit ve asli unsuru olduğu kabul edilir.</p>
+<p>Partinin teorik ve siyasal düzeyini geliştirmek, iç yapısını kuvvetlendirmek ve mücadele gücünü yükseltmek için bütün organlarda tüm üyelere ifade özgürlüğü sağlanır.</p>
+<p>Hedef birliğini zedelemeyen görüş farklılıklarının daha gelişkin bir parti için zenginlik olarak değerlendirilmesi esastır.</p>
+<p>Parti içinde canlı bir düşünce hayatı geliştirmek, bütün yönetici organların ve üyelerin görevidir. Bütün yönetim organları, siyasetlerini oluştururken ve önemli kararlar verirken, üyelerin ve halkın talep ve görüşlerini almak üzere toplantılar düzenlerler.</p>
+<p>Demokratik merkeziyetçilik parti organlarını esas alır. Tüm tartışmalar parti organlarında yapılır, kararlar organlarda alınır. Organ kararlarına karşı, ilgili organlar veya üyeler bir üst organa itiraz edebilir.</p>
+<p>Bütün parti üyelerinin, topluma karşı, programı ve temel siyasetleri savunma sorumlulukları vardır. Bu nedenle tüm parti üyelerinin kendi organlarının toplantılarında partinin kararları ve siyasetleri üzerine görüş bildirme ve tartışmalara katılma sorumluluğunu yerine getirmesi beklenir.</p>
+<p>Bu ilkeler doğrultusunda, Üyeler bağlı oldukları parti organlarında her tür tartışmayı yapabilirler. Tüm parti örgütünün gündemine sokulması gereken tartışmalar için sadece üyelere dönük olarak yayımlanan “iç yayın” kullanılabilir.</p>
+<p>Kongre ve Konferans, temel başlıklardaki görüşlerin tüm üyelerin katılımıyla oluşturulduğu parti organlarıdır. Partinin önderlik yeteneğini geliştirmek ve sosyalizm hedefine ilerlemek, parti içi disiplinin yol gösterici ilkeleridir. Kararların uygulanmasında ve görevlerin yerine getirilmesinde, azınlık çoğunluğa, alt kurullar üst kurullara, bütün parti Parti Meclisi kararlarına, Parti Meclisi Kongre/Konferans kararlarına uyar.</p>
+<p>Partinin karar organları seçimle göreve gelir. Bütün parti kurulları kendilerini seçen üyeler tarafından geri çağrılabilir. Bir İlçe örgütünde örgütlü üyelerinin üçte birinin talep etmesi durumunda olağanüstü ilçe kongresi, il kongresi delegelerinin yarısının talep etmesi durumunda olağanüstü il kongresi düzenlenir.</p>
+<p>Partinin iç meseleleri ile ilgili hiçbir tartışma kamuya açık bir şekilde yapılmaz.</p>
+<h3>Madde 4.5: Şeffaflık</h3>
+<p>Her üyenin partinin bütün çalışmalarıyla ilgili bilgi edinme hakkı vardır. Partinin çalışmaları ve mali durumu üyelerin denetimine açıktır.</p>
+<p>Tüm yönetici organlar, parti üye ve örgütlerinin talep ettikleri bilgilere zamanında ve yeterli bir biçimde ulaşabilmelerini, çalışmaları denetleyebilmelerini sağlamakla yükümlüdür.</p>
+<p>Bu hak kapsamında yazılı olarak gelen taleplere PM aracılığıyla bilgi talep edilen kurul ya da bizzat PM en geç 45 gün içinde yanıt vermek zorundadır.</p>
+<p>Şeffaflık ilkesinin tüm parti nezdinde en önemli aracı, sadece parti üyeleri için çıkarılan iç yayındır. Partinin her düzeydeki yöneticileri özellikle sorumluluk alanlarında emekçilerin ve halkın gözlemine, eleştirisine, denetimine, diyaloğuna açık olması esastır.</p>
+<p>Şeffaflık ilkesi, politik bir çerçevede olmak kaydıyla tüm halka açık olmayı da kapsar.</p>
+<p>Her üye, parçası olduğu parti organının bağlı bulunduğu parti üst kurullarıyla ve Parti Meclisi&#x27;yle görüşme ve rapor sunma hakkına sahiptir.</p>
+<p>Üyelerin kişisel ve özel alanlarına giren konular bu maddenin kapsamı dışındadır.</p>
+<p>Madde 4.6 Toplumsal Cinsiyet ve Eşit Temsiliyet Parti&#x27;nin tüm organlarında eşit temsil hedeflenmekle birlikte, eşit temsil koşulları oluşana kadar seçilecek tüm kurullarda, %40 oranında kadın kotası uygulanır. Bu oran MDK ve İl Disiplin Kurulları için en az %50&#x27;dir.</p>
+<p>Parti organları oluşturulurken gençler, engelliler, azınlıklar, LGBTİ+&#x27;lar gibi toplumda ayrımcılığa maruz kalan tüm kesimlerin dahil edilmesine özen gösterilmesi esastır.</p>
+<h3>Madde 4.7: Yeryüzüne Saygı</h3>
+<p>Parti, yeryüzünde yaşadığımız iklim ve bioçeşitlilik krizi göz önünde bulundurarak parti faaliyetlerinde karbon ayak izini azaltmak için çaba harcar. Örgüt ve üyelerini konuya gerekli özeni göstermesi için teşvik eder.</p>
+<h3>Madde 4.8: Yetkinin Kullanımı</h3>
+<p>Partinin tüm çalışmalarında Kurul İşleyişi esastır. Farklı birimlerin ve/veya farklı parti örgütlerinin faaliyetleri hakkında, genel siyasal anlam ve hedeflerin ötesine geçen somut örgütsel, kişisel bilgiler veya sorunlar, kişisel ilişkiler yoluyla aktarılamaz.</p>
+<p>Örgütsel veya kişisel bilgiler, gerekli olduğu ölçüde, üst kurullar aracılığıyla ilgili parti örgütlerine ve birimlere aktarılır.</p>
+<p>Partinin, iki kongre arasında en yetkili karar organı Parti Meclisi (PM)&#x27;dir. PM kararları bütün parti organlarını bağlar. PM kararlarını takip etmek, geliştirmek ve onlarla çelişmeyen yeni kararlar almak ve gündelik faaliyeti yürütmek tüm parti kurulların ortak sorumluluğudur.</p>
+<p>Merkez Bürolar, kendi çalışma alanlarına dönük üretimlerini, çalışmalarını ve kararlarını PM&#x27;ye sunarlar. PM, merkez büroların çalışmalarını ve önerilerini değerlendirerek karar haline getirir, planlama yapar ve parti örgütlerine iletir.</p>
+<p>Bölge, İl ve ilçe komiteleri, PM&#x27;den gelen karar ve genelgeleri uygular ve aynı zamanda kendi sorumlu bulundukları alana dönük kararlar alırlar.</p>
+<p>Tüm birimler ve komiteler, kendi alanlarına dönük kararlar oluşturabilir.</p>
+<h3>Madde 4.9: Karar Alma</h3>
+<p>Açık tartışma yoluyla ortak görüş oluşturulması esastır. Ortak bir görüşün oluşamaması halinde açık oylama yoluyla ve salt çoğunlukla karar alınır. Alınan karar hayata geçene kadar tartışmalara kapalıdır.</p>
+<h3>Madde 4.10: Genişletilmiş İl ve İlçe Başkanları Toplantısı</h3>
+<p>PM, partinin çalışmalarını daha da etkinleştirmek, hızlandırmak ve ortaklık sağlamak için örgüt ve birim temsilcilerini gerekli gördüğü zamanlarda toplantıya çağırır.</p>
+<p>Örgüt Temsilcileri Toplantısı Parti Meclisi ile birlikte il ve ilçe başkanları, il ve ilçe yönetim kurulu üyeleri ve büro üyeleriyle yapılır.</p>
+<h3>Madde 4.11: Toplantı Tutanakları ve Rapor Sistemi</h3>
+<p>Partinin bütün yönetici kurulları ve komiteleri ile bürolar tüm toplantılarında tutanak tutar, tutanaklar üst kurula iletilir. İl-Bölge Komiteleri ve tüm merkez büroların toplantılarının tutanakları Örgüt Komitesi&#x27;ne, Örgüt Komitesi toplantı tutanakları PM&#x27;ye sunulur.</p>
+<h3>Madde 4.12: Parti Denetmenleri</h3>
+<p>Parti Meclisi, örgütle ilgili görevlerinin yerine getirilmesine yardımcı olmak üzere parti denetmenleri görevlendirilebilir. Parti denetmenlerinin çalışma yöntemleri, görev ve yetkileri yönetmelikle düzenlenir.</p>
+<h3>Madde 4.13: Dava Açma Ehliyeti</h3>
+<p>Parti, işçi hakları, insan hakları, çocuk hakları, kadın hakları, LGBTİ+ hakları, kent-çevre-ekoloji hakları, avukat hakları, hayvan hakları, meslek sorunları ve çalışma yaşamı gibi toplumsal mücadele alanlarında davalar açabilir, açılan davalara katılabilir ve suç duyurularındabulunulabilir.</p>                </section>
+                              <section id="bolum-5-denetleme-ve-disiplin-hukumleri" class="tuzuk-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>BÖLÜM 5: DENETLEME VE DİSİPLİN HÜKÜMLERİ</strong></h2>
+                  <h3>Madde 5.1: Denetleme Kurulları</h3>
+<p>İl, ilçe ve tüm parti örgütlerinin çalışmalarına yardımcı olmak ve katkı koymak, partinin siyasal açılımlarının uygulanmasında yol göstermek, çalışmaları zenginleştirmek, ilgili örgütün çalışmalarını planlamak, verimliliği artırmak, ilgili örgütü izlemek ve denetlemek için yılda bir kez rapor hazırlamak üzere en az 3 kişiden oluşan Denetleme Kurulları, Parti Meclisi tarafından oluşturulur.</p>
+<p>İlgili il, ilçe ya da parti örgütü çalışmalarını inceler, ortak çalışma planı hazırlar ve izlenimlerini raporla PM&#x27;ye sunar.</p>
+<h3>Madde 5.2: Disiplin Kurulları</h3>
+<p>Merkez Disiplin Kurulu (MDK) Büyük Kongre tarafından seçilen 7 asıl ve 1 yedek üyeden oluşur ve MDK kendi içinden bir başkan seçer.</p>
+<h3>Madde 5.3: İl Disiplin Kurulu</h3>
+<p>İl Kongresi tarafından seçilen 3 asıl 1 yedek üyeden oluşur. Kurul, kendi içinden bir başkan seçer.</p>
+<h3>Madde 5.4:TBMM Parti Grubu Disiplin Kurulu</h3>
+<p>TBMM Parti Grubu Disiplin Kurulu, Genel Kurul tarafından seçilen 7 üyeden oluşur. Kendi içinden bir başkan seçer.</p>
+<h3>Madde 5.5: Disiplin Kurullarının İşleyişi</h3>
+<p>Parti programına, tüzüğüne ve yönetim organlarının kararlarına aykırı davranan üyelere disiplin cezası verilir. Disiplin başlığı siyasi bir konu olarak ele alınır. Partili kimlik, partilinin yaşam biçimi ve parti işleyişi ile ilgili konular adli sorunlar olarak değerlendirilmez.</p>
+<p>İl Disiplin Kurullarına sevk yetkisi İl Yönetim Kurullarına, MDK&#x27;ye sevk yetkisi ise MYK&#x27;ye ait olduğu gibi, her üye İl Disiplin Kurulunun görev alanına giren konular için bağlı bulunduğu örgüt aracılığıyla İl Disiplin Kuruluna, MDK&#x27;nin görev alanına giren konular için PM aracılığıyla MDK&#x27;ye başvurabilir.</p>
+<p>Bununla birlikte, özel alan dahil çocuk, kadın ve LGBTİ+&#x27;lara yönelik her türlü fiziksel, cinsel, ekonomik ya da psikolojik şiddet kapsamında değerlendirilebilen suçlar bakımından, üyelerin, Kadın Büro aracılığıyla da MDK&#x27;ye başvurmaları mümkündür.</p>
+<p>İlgili disiplin kurulunun kovuşturma usulleri işletilmek ve suçlanan tarafın savunma hakkı ihlal edilmemek koşuluyla kadının beyanı esas alınır.</p>
+<p>Uyarı ve kınama cezasını gerektiren suçlar İl Disiplin Kurullarının, partiden geçici ve kesin çıkarma cezalarını gerektiren suçlar ise Merkez Disiplin Kurulunun görev alanına girer.</p>
+<p>Uyarma ve kınama cezası gerektiren suçları işleyen üyeler, İl Yönetimi Kurulu tarafından İl Disiplin Kuruluna sevkedilirler. İl Disiplin Kurulu, bu üyelerin savunmasını almak üzere yazılı çağrıda bulunur. İlgili üye, yazılı veya sözlü savunmasını 15 gün içinde İl Disiplin Kuruluna verir. İlgili üye 15 gün içinde yazılı çağrıya yanıt vermezse, İl Disiplin Kurulu toplanıp, İl Yönetim Kurulunun iddiasını görüşüp karara bağlar.</p>
+<p>Bu kararını cevap süresi dolduktan sonra 15 gün içinde ilgili üyeye yazılı olarak bildirilir. İlgili üye 15 gün içerisinde, İl Disiplin Kurulu kararına karşı, bağlı bulunduğu örgüt aracılığı ile Merkez Disiplin Kuruluna itirazda bulunur. Merkez Disiplin Kurulu, bir ay içinde itirazı görüşüp karara bağlar ve bir yazı ile ilgili üyeye bildirilmek üzere Merkez Yürütme Kuruluna iletir. İl Disiplin Kurulu kararına itiraz üzerine verilen Merkez Disiplin Kurulukararı kesindir.</p>
+<p>İlçe ve İl Yönetim Kurulu, Part Meclisi, Merkez Yürütme Kurulu, İl Disiplin Kurulu, Merkez Disiplin Kurulu üyeleri ile ilgili disiplin suçlarına Merkez Disiplin Kurulu bakar. MDK, geçici ve kesin çıkarma cezası gerektiren suçlara ilişkin şikayet üzerine ilgili üyelerin savunmasını almak üzere yazılı çağrıda bulunur. İlgili üye, yazılı veya sözlü savunmasını 15 gün içinde MDK&#x27;ye verir. İlgili üye 15 gün içinde yazılı çağrıya yanıt vermezse, MDK toplanıp, iddiaları görüşüp karara bağlar. Bu kararını, savunma süresinin bitimi itibariyle 15 gün içinde ilgili üyeye bildirilmek üzere Merkez Yürütme Kuruluna iletir. MDK kararına itiraz edilmesi halinde MDK dosyayı tekrar inceler ve 15 gün içinde karara bağlar. Bu kararlar kesindir.</p>
+<p>Partili Bakanlar ve Milletvekilleri ile ilgili disiplin suçlarına TBMM Parti Grubu Disiplin Kurulu, Merkez Disiplin Kurulu ile müşterek olarak bakar. Partili Bakanlar ve Milletvekilleri ile ilgili suçlamaları MYK değerlendirip, suçlamayı ciddi bulursa, ilgili üyeleri TBMM Parti Grubu Disiplin Kuruluna sevkeder. TBMM Parti Grubu Disiplin Kurulu, bu kişilerin savunmasını almak üzere yazılı çağrıda bulunur. İlgili kişi yazılı veya sözlü savunmasını 15 gün içinde verir. İlgili kişi 15 gün içinde yazılı çağrıya yanıt vermezse, TBMM Parti Grubu Disiplin Kurulu Merkez Disiplin Kurulu ile müşterek olarak toplanır, iddiaları görüşüp karara bağlar.</p>
+<p>Bu kararını 15 gün içinde ilgili üyeye bildirilmek üzere Merkez Yürütme Kurulu&#x27;na iletir. Bu kararlar kesindir.</p>
+<p>MDK, disiplin soruşturması bakımından gerekli görülmesi halinde, disipline konu üyenin soruşturma süresinde yöneticilik görevlerinin askıya alınmasına tedbiren karar verebilir. Görevlerin askıya alınmasına ilişkin karar MYK&#x27;ye iletilerek uygulanır.</p>
+<p>Özel alan dahil kadın ve LGBTİ+&#x27;lara yönelik her türlü fiziksel ya da psikolojik şiddet suçu kapsamında disiplin sürecine konu edilen üye bu süreçte partiden istifa etse dahi disiplin süreci tamamlanarak karara bağlanır. Özel alan dahil çocuk, kadın ve LGBTİ+&#x27;lara yönelik her türlü fiziksel, cinsel, ekonomik ya da psikolojik şiddet kapsamında değerlendirilebilen suç kapsamındaki başvurular ve şikayetler öncelikli olarak ele alınır ve bu kapsamdaki soruşturmalarda İstanbul Sözleşmesi hükümleri doğrudan uygulanır.</p>
+<h3>Madde 5.6: Disiplin Suçları</h3>
+<p>Aşağıda sıralanan disiplin suçlarına, karşılarında yazılı olan cezalardan biri uygulanır.</p>
+<p>a)	Yetkili organlar tarafından verilen parti görevlerini mazeretsiz yerine getirmeyenlere uyarı;</p>
+<p>b)	Geçerli bir mazereti olmaksızın kendisine yapılan bildirime rağmen 3 ay üst üste aidatını ödemeyen üyeye uyarı;</p>
+<p>c)	Parti çalışmalarını mazeretsiz aksatanlara uyarı;</p>
+<p>ç) Geçerli bir mazereti olmaksızın bağlı olduğu örgüt üye toplantısına üç kez üst üste katılmayan üyeye uyarı;</p>
+<p>d)	Parti varlıklarını gerektiği gibi korumayan, israf veya kaybına sebep olanlara uyarı veya kınama;</p>
+<p>e)	Parti kolektif işleyişini zorlayacak davranışlarda bulunanlara uyarı veya kınama;</p>
+<p>f)	Görev ve yetkilerini aşma olarak nitelendirilebilecek eylemlere kınama;</p>
+<p>g)	Parti iç toplantılarındaki konuşma ve değerlendirmeleri, alınan kararları, yetkili organ kararı olmaksızın açıklayanlara kınama;</p>
+<p>h)	Uyarma cezası gerektiren disiplin suçlarını ikinci kez işleyenlere kınama;</p>
+<p>ı) Üye ve yöneticiler hakkında, yalan ve yanlış beyanda bulunanlara kınama veya geçici çıkarma;</p>
+<p>i)	Parti binalarına ve mallarına kasıtlı olarak zarar verenlere geçici veya kesin çıkarma;</p>
+<p>j)	Parti organlarına kasıtlı olarak yanlış bilgi verenlere geçici çıkarma;</p>
+<p>k)	Parti üyelerine yönelik sözlü saldırılarda bulunanlara geçici çıkarma;</p>
+<p>l)	Kınama cezası gerektiren disiplin suçlarını ikinci kez işleyen üyelere geçici çıkarma;</p>
+<p>m)	Parti programı, tüzük ve kararlarına karşı topluca muhalefet eden üyelere kesin çıkarma;</p>
+<p>n)	Parti program, tüzük ve kararlarına aykırı siyasal çalışmalara ve eylemlere katılan, katkıda bulunanlara kesin çıkarma;</p>
+<p>o)	Parti eylem ve etkinliklerine karşı eylem ve etkinliklerde bulunanlara kesin çıkarma;</p>
+<p>ö) Temel insan haklarıyla bağdaşmayan, doğaya yıkıcı zararlar veren fiil ve eylemlerde bulunan veya bu tarz tutum ve davranışları olumlayanlara kesin çıkarma;</p>
+<p>p)	Özel alan dahil çocuk, kadın, LGBTİ+‘lara, hayvanlara, yönelik her türlü fiziksel, cinsel, ekonomik ve psikolojik şiddet (sistematik baskı, tehdit, aşağılama, taciz vb.) kınama, geçici çıkarma veya kesin çıkarma; cinsel taciz uygulayanlara üyelikten geçici çıkarma veya kesinçıkarma;</p>
+<p>r)	Parti üyelerine yönelik fiziksel saldırılarda bulunanlara kesin çıkarma;</p>
+<p>s)	Yurtdışında yaşayan parti üyelerinin bulunduğu ülkelerdeki dost partilere üye olması hariç tutulmak kaydıyla, Türkiye&#x27;de faaliyet yürüten başka bir siyasal örgüte üye olanlara kesin çıkarma;</p>
+<p>ş) Basın-yayın yoluyla veya sosyal medya aracılığı ile parti ya da parti üyeleri aleyhine konuşma kınama, geçici çıkarma veya kesin çıkarma;</p>
+<p>t)	Partideki görevini/konumunu kullanmak suretiyle parti hukuku ve örgütsel gündem dışında şahsi çıkar (ekonomik, duygusal, romantik, cinsel beklentiler) sağlayan veya bu amaçla faaliyette bulunanlara kesin çıkarma;</p>
+<p>u)	Partinin veya partililerin güvenliğini tehdit edecek davranışta bulunanlara kesin çıkarma;</p>
+<p>ü) Geçici çıkarma cezası gerektiren disiplin suçlarını ikinci kez işleyenlere kesin çıkarma cezası uygulanır.</p>
+<h3>Madde 5.7: Disiplin Cezaları</h3>
+<p>Disiplin cezaları “uyarma”, “kınama”, “geçici çıkarma” ve “kesin çıkarma”dır. Uyarma cezası, üyenin yazılı olarak dikkatinin çekilmesidir.</p>
+<p>Kınama cezası, üyenin yazılı olarak kusurunun bildirilmesidir. Kınama cezası alan üyeler altı ay süre ile parti organlarına yönetici olarak seçilemezler, seçilmiş iseler görevlerinden alınırlar. Kınama cezası alanların bilgileri bağlı bulundukları organa iletilir.</p>
+<p>Geçici çıkarma cezası, üyenin partiden 3 aydan 1 yıla kadar ilişkisinin kesilmesidir. Geçici çıkarma cezası alan üyeler bu süre içerisinde parti üyelerine tanınan hakları kullanamazlar ve cezalarının tamamlanmasından itibaren 6 ay süre ile parti organlarına yönetici olarak seçilemezler. Ancak bu durum, ceza alan üyelerin parti programına, tüzüğüne, yönetmeliklerine ve kararlarına uyma yükümlülüğünü ortadan kaldırmaz. Geçici çıkarma cezası alanların bilgileri bütün parti örgütüne duyurulur.</p>
+<p>Geçici çıkarma cezası alan üye, kendisinde bulunan parti evrak ve mallarını ve çalışma yaptığı alanla ilgili tüm bilgi ve belgeleri bağlı bulunduğu organa teslim eder. Bu süre zarfında partiyle bağı, tanımlanmış bir yönetici tarafından sağlanır. Parti kimlik kartı bu süre zarfında bağlı bulunduğu yönetici kurul tarafından tutulur.</p>
+<p>Kesin çıkarma cezası, üyenin parti ile ilişkisinin süresiz olarak kesilmesidir. Kesin çıkarma cezası alanların bilgileri bütün parti örgütüne duyurulur. Partiden kesin olarak çıkarılan ilgili kişi, parti kimlik kartını, kendisinde bulunan parti evrak ve mallarını ve çalışma yaptığı alanla ilgili tüm bilgi ve belgeleri partiye teslim eder.</p>
+<p>Partiden geçici ya da kesin çıkarma talebiyle disiplin kuruluna sevk edilen üyeler, MDK&#x27;nin tedbir kararı vermesi halinde karar alınana kadar parti çalışmalarına katılamaz, parti organ ve kurullarına öneride bulunamaz, partide görev alamaz ve partiyi temsil edemez. Ancak bu süre boyunca program, tüzük ve yönetmeliklere ve parti organlarının kararlarına uymak zorundadır. Disiplin cezalarının uygulanması ve takibi Örgüt Komitesinin sorumluluğundadır.</p>
+<h3>Madde 5.8: Cezanın Kaldırılması</h3>
+<p>Özel alan dahil çocuk, kadın ve LGBTİ+&#x27;lara yönelik nitelikli fiziksel saldırı ve cinsel taciz ile sistematik ya da ağır psikolojik şiddet suçları nedeniyle verilen kesin çıkarma cezaları hariç olmak kaydıyla, cezaları bağışlama yetkisi PM&#x27;dedir.</p>
+<p>Geçici çıkarma cezası için 6 ay, kesin çıkarma cezası için 1 yıl süre geçtikten sonra cezanın kaldırılması talebi MYK tarafından gündeme alınarak PM görüşüne sunulabilir.</p>                </section>
+                              <section id="bolum-6-mali-hukumler" class="tuzuk-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>BÖLÜM 6: MALİ HÜKÜMLER</strong></h2>
+                  <h3>Madde 6.1:</h3>
+<p>Her üyeden giriş aidatı ve aylık olarak üyelik aidatı alınır. Giriş aidatı ile aylık aidatların miktarı, üyenin maddi durumu gözetilerek, ilgili yönetim organı tarafından belirlenir. En düşük aidat 10 TL, en yüksek aidat ise 7.000 TL&#x27;dir. Aidattan muaf tutma yetkisi PM&#x27;ye aittir.</p>
+<p>Parti adına harcamalar yetkili kurulların onayı ile ve belgelenerek yapılır. Bütçe ve bilançolar, gelir ve gider cetvelleri ile kesin hesapların nasıl düzenleneceği Siyasi Partiler Yasası&#x27;nın ilgili hükümleri uyarınca belirlenir.</p>                </section>
+                              <section id="bolum-7-parti-ici-secim-hukumleri" class="tuzuk-section mb-4 pb-4 border-bottom">
+                  <h2 class="h4 mb-3"><strong>BÖLÜM 7: PARTİ İÇİ SEÇİM HÜKÜMLERİ</strong></h2>
+                  <h3>Madde 7.1: Seçimler</h3>
+<p>Kongrelerin yapılması için gazete ilanı veya Belediye duyurusu şartı aranmaz. Kongrelerin toplantı yeter sayısı sağlanamadığı hallerde birinci ve ikinci toplantı arasındaki süreyi kongreleri toplantıya çağıran kurul ayrıca saptar.</p>
+<p>Seçimlerden önce yoklama yapılarak oylamaya katılacak üye sayısı belirlenir. Genel Merkez, İl ve İlçe organları seçimleri ile İl Kongresi ve Parti Kongreleri delegelerinin seçimleri gizli oy açık tasnif esasına göre yapılır. Ancak seçilecek üye sayısından fazla aday olmadığı takdirde açık oylama ile seçim yoluna gidilebilir.</p>
+<p>Oylamalarda kullanılacak oy pusulalarında adayların isimleri önceden liste halinde yazılabilir. Adayların listesini içeren oy pusulasını alan üye veya delege, listedeki aday isimlerinden bazılarını iptal edebilir ya da listeye başka aday isimleri ekleyebilir. Pusulada seçilecek üye sayısından fazla isim varsa, pusula özel olarak işaretlenmişse, o pusula geçersiz sayılır.</p>
+<p>İlçe ve il kongrelerinde aday olabilmek için parti üyesinin o ilçe veya il örgütüne kayıtlı olması veya kongre listesinde isminin bulunması gerekmektedir.</p>
+<p>İlçe, il ve büyük kongrelerin yapılabilmesi için ilk toplantıda kongre üye veya delege listesindeki sayının salt çoğunluğunun kongreye katılması şarttır. Çoğunluk sağlanamadığı takdirde yapılacak ikinci toplantı ise toplantıya katılan üye veya delegelerle yapılır. İkinci toplantının yapılabilmesi için kongreye katılacak üye ve delegeler için asgari bir sayı sınırlaması yoktur.</p>
+<p>Büyük Kongrede asıl ve yedek üye seçimleri birlikte yapılır. Asıl üyeler belirlendikten sonra kalanlar arasında en çok oy alan aday veya adaylar yedek üye olarak seçilmiş olur.</p>
+<p>PM, Kongrelerin usul ve şekilleri, seçimlerde kullanılacak oy pusulası, listelerin düzenlenmesini ve kotaların uygulanması gibi hususları çıkaracağı Kongreler Yönetmeliği ile belirler.</p>
+<p>Bu tüzükte belirtilen ilkeler ışığında birim sekreterliği, ilçe yönetim kurulu üyeliği ve ilçe başkanlığı, il yönetim kurulu üyeliği ve il başkanlığı, il ve büyük kongre delegeliği, Parti Meclisi üyeliği, Merkez Disiplin Kurulu üyeliği gibi bütün parti organ ve görevleri için her üye aday olabilir.</p>
+<p>Yeter sayıda aday olması halinde yönetici organlarda görev alacak adayların ve delegelerin seçiminde, Parti Meclisi (PM), İl ve İlçe Yönetim Kurullarında %40, İl ve Merkez Disiplin Kurulunda (MDK) ise en az %50 oranında kadın kotası uygulanır.</p>
+<p>Tüm seçimlerde seçilme yeterliliği, kullanılan oyların en az 1/5&#x27;idir.</p>
+<h3>Madde 7.2: Tutulacak Defterler</h3>
+<p>Her kademedeki parti organları üye kayıt defteri, karar defteri, gelen ve giden evrak kayıt defteri, gelir ve gider defteri ile demirbaş eşya defteri tutmak zorundadır.</p>
+<p>Parti örgütlerinde aşağıda belirtilen defterlerin tutulması zorunludur.</p>
+<p>a)	Üye Defteri</p>
+<p>b)	Karar Defteri</p>
+<p>c)	Yazışma Defteri</p>
+<p>d)	Gelir ve Gider Defteri</p>
+<p>e)	Demirbaş Defteri</p>                </section>
+                          </div>
+
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  body, .card-body, .tuzuk-html { color:#000; }
+
+  .page-banner { background:#f8f9fa; border-bottom:2px solid #e43442; padding:.75rem 0; margin-bottom:1rem; }
+  .banner-row { display:flex; align-items:center; justify-content:space-between; gap:.75rem; }
+  .banner-title { font-size:1.25rem; font-weight:700; margin:0; color:#000; }
+
+  .content-outline { border:1px solid #eee; border-radius:.5rem; padding:.75rem; background:#fff; }
+  .sidebar-heading { font-size:.8rem; letter-spacing:.04em; text-transform:uppercase; color:#6c757d; }
+
+  #tocNav .toc-link, #tocNavMobile .toc-link { color:#000; border-left:3px solid transparent; transition: border-color .15s ease; }
+  #tocNav .toc-link .flex-grow-1, #tocNavMobile .toc-link .flex-grow-1 { font-weight:400; }
+
+  #tocNav .toc-link.active, #tocNav .toc-link[aria-current="true"],
+  #tocNavMobile .toc-link.active, #tocNavMobile .toc-link[aria-current="true"] {
+    background:#fde6e6; border-left-color:#1f1f1f;
+  }
+  #tocNav .toc-link.active .flex-grow-1, #tocNav .toc-link[aria-current="true"] .flex-grow-1,
+  #tocNavMobile .toc-link.active .flex-grow-1, #tocNavMobile .toc-link[aria-current="true"] .flex-grow-1 {
+    font-weight:800 !important; color:#000;
+  }
+
+  .hit-badge { font-weight:600; }
+  .tuzuk-section { scroll-margin-top: 84px; } 
+  .tuzuk-section h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; }
+  .tuzuk-section h3 { font-size:1.1rem; font-weight:600; margin-top:.75rem; margin-bottom:.5rem; }
+  .tuzuk-section h3.subheading { margin-top:1rem; }
+  .tuzuk-section h3.subheading strong { font-weight:800; }
+
+  mark.search-hit { background:#ffe08a; padding:0 .2em; border-radius:.2em; }
+
+  .btn-tip { background:#e43442; color:#fff; border-color:#e43442; }
+  .btn-tip:hover { color:#fff; filter:brightness(.95); }
+
+  .offcanvas .content-outline { margin-top:.5rem; }
+
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; width:48px; height:48px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    border:none; outline:none; cursor:pointer;
+    background:#e43442; color:#fff; box-shadow:0 6px 20px rgba(0,0,0,.15);
+    opacity:0; pointer-events:none; transform:translateY(12px);
+    transition:opacity .2s ease, transform .2s ease, box-shadow .2s ease; z-index:1030;
+  }
+  .back-to-top.show{opacity:1; pointer-events:auto; transform:translateY(0);}
+  .back-to-top:hover{box-shadow:0 8px 24px rgba(0,0,0,.2);}
+</style>
+
+
+  <i class="fa-solid fa-arrow-up"></i>
+
+
+
+
+
+
+
+
+<style>
+  .footer-divider{
+    display:none;
+  }
+  @media (max-width: 767.98px){
+    .footer-divider{
+      display:block;
+      height:1px;
+      width:100%;
+      margin:6px 0 14px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,.28), transparent);
+      border:0;
+    }
+  }
+  .footer-social-round a.social-round{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:36px;height:36px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.3);
+    text-decoration:none
+  }
+  .footer-social-round a.social-round + a.social-round{margin-left:8px}
+	
+.footer-main-grid {
+  align-items: stretch;              
+}
+.footer-company-info,
+.footer-mail-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;           
+}
+
+
+.footer-mail-box {
+  align-items: flex-start;           
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px){
+  .footer-mail-box {
+    align-items: center;             
+    padding-left: 0;
+  }
+}
+
+</style>
+
+
+
+<footer class="site-footer">
+  <div class="container-1200">
+    
+  <div class="footer-main-grid">
+  
+  <div class="footer-company-info">
+    <div class="footer-contact">
+      <span>
+        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        Kocatepe Mah. Selanik Cad. No:41/7<br>Çankaya / ANKARA
+      </span>
+     
+    </div>
+  </div>
+
+  
+  <div class="footer-mail-box">
+    <div class="footer-contact">
+      <span>
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        <a href="https://web.archive.org/cdn-cgi/l/email-protection#52263b2212263b227c3d20357c2620"><span class="__cf_email__">[email protected]</span></a>
+      </span>
+		 <span>
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <a>+90 (216) 418 00 32</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+    
+    <div class="footer-bottom">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="small mb-0">
+          © 2026 Türkiye İşçi Partisi. Tüm hakları saklıdır.
+        </p>
+        <div class="footer-social-round">
+          <a href="https://www.facebook.com/tipgenelmerkez" class="social-round" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/tipgenelmerkez" class="social-round" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/tipgenelmerkez" class="social-round" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@tipgenelmerkez" class="social-round" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+

@@ -1,0 +1,560 @@
+<!doctype html><html lang="tr" dir="ltr" class="rQMB2q_variable"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; script-src &#x27;none&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; img-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;none&#x27;; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;"><meta name="viewport" content="width=device-width,initial-scale=1"><style>
+.footer-layer-tier {
+  --footer-layer-default-bg: #1c1e20;
+  --footer-layer-default-dark-bg: #0f1113;
+  --footer-layer-default-border: hsl(0 0% 19.8%);
+  --footer-layer-default-dark-border: rgba(39, 42, 46, 0.8);
+  position: relative;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+
+:is(html:not(.dark), .site-theme-scope:not(.dark), [data-theme="light"]) .footer-layer-tier[data-has-footer-bg="1"] {
+  background-color: var(--footer-layer-bg) !important;
+}
+:is(html:not(.dark), .site-theme-scope:not(.dark), [data-theme="light"]) .footer-layer-tier[data-has-footer-border="1"] {
+  border-top-color: var(--footer-layer-border) !important;
+  border-bottom-color: var(--footer-layer-border) !important;
+}
+:is(html:not(.dark), .site-theme-scope:not(.dark), [data-theme="light"]) .footer-layer-tier[data-has-footer-text="1"] {
+  color: var(--footer-layer-text) !important;
+}
+.footer-layer-tier[data-no-border="1"] {
+  border-top-width: 0px !important;
+  border-bottom-width: 0px !important;
+}
+
+
+.footer-layer-tier[data-has-footer-bg="1"]:not(.is-dark) {
+  background-color: var(--footer-layer-bg);
+}
+.footer-layer-tier[data-has-footer-border="1"]:not(.is-dark) {
+  border-top-color: var(--footer-layer-border);
+  border-bottom-color: var(--footer-layer-border);
+}
+.footer-layer-tier[data-has-footer-text="1"]:not(.is-dark) {
+  color: var(--footer-layer-text);
+}
+
+
+:is(.site-theme-scope.dark, [data-preview-theme="dark"], html.dark:not(:has(.site-theme-scope)), [data-theme="dark"], .dark-preview) .footer-layer-tier[data-has-footer-dark-bg="1"],
+.footer-layer-tier.is-dark[data-has-footer-dark-bg="1"] {
+  background-color: var(--footer-layer-dark-bg) !important;
+}
+:is(.site-theme-scope.dark, [data-preview-theme="dark"], html.dark:not(:has(.site-theme-scope)), [data-theme="dark"], .dark-preview) .footer-layer-tier[data-has-footer-dark-border="1"],
+.footer-layer-tier.is-dark[data-has-footer-dark-border="1"] {
+  border-top-color: var(--footer-layer-dark-border) !important;
+  border-bottom-color: var(--footer-layer-dark-border) !important;
+}
+:is(.site-theme-scope.dark, [data-preview-theme="dark"], html.dark:not(:has(.site-theme-scope)), [data-theme="dark"], .dark-preview) .footer-layer-tier[data-has-footer-dark-text="1"],
+.footer-layer-tier.is-dark[data-has-footer-dark-text="1"] {
+  color: var(--footer-layer-dark-text) !important;
+}
+.header-layer-tier {
+  --layer-default-bg: #ffffff;
+  --layer-default-dark-bg: #0f1113;
+  --layer-default-border: rgba(219, 224, 229, 0.8);
+  --layer-default-dark-border: rgba(39, 42, 46, 0.8);
+  position: relative;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+
+:is(html:not(.dark), .site-theme-scope:not(.dark), [data-theme="light"]) .header-layer-tier[data-has-layer-bg="1"] {
+  background-color: var(--layer-bg) !important;
+}
+:is(html:not(.dark), .site-theme-scope:not(.dark), [data-theme="light"]) .header-layer-tier[data-has-layer-border="1"] {
+  border-bottom-color: var(--layer-border) !important;
+}
+:is(html:not(.dark), .site-theme-scope:not(.dark), [data-theme="light"]) .header-layer-tier[data-has-layer-text="1"] {
+  color: var(--layer-text) !important;
+}
+.header-layer-tier[data-no-border="1"] {
+  border-bottom-width: 0px !important;
+}
+
+
+.header-layer-tier[data-has-layer-bg="1"]:not(.is-dark) {
+  background-color: var(--layer-bg);
+}
+.header-layer-tier[data-has-layer-border="1"]:not(.is-dark) {
+  border-bottom-color: var(--layer-border);
+}
+.header-layer-tier[data-has-layer-text="1"]:not(.is-dark) {
+  color: var(--layer-text);
+}
+
+
+:is(.site-theme-scope.dark, [data-preview-theme="dark"], html.dark:not(:has(.site-theme-scope)), [data-theme="dark"], .dark-preview) .header-layer-tier[data-has-layer-dark-bg="1"],
+.header-layer-tier.is-dark[data-has-layer-dark-bg="1"] {
+  background-color: var(--layer-dark-bg) !important;
+}
+:is(.site-theme-scope.dark, [data-preview-theme="dark"], html.dark:not(:has(.site-theme-scope)), [data-theme="dark"], .dark-preview) .header-layer-tier[data-has-layer-dark-border="1"],
+.header-layer-tier.is-dark[data-has-layer-dark-border="1"] {
+  border-bottom-color: var(--layer-dark-border) !important;
+}
+:is(.site-theme-scope.dark, [data-preview-theme="dark"], html.dark:not(:has(.site-theme-scope)), [data-theme="dark"], .dark-preview) .header-layer-tier[data-has-layer-dark-text="1"],
+.header-layer-tier.is-dark[data-has-layer-dark-text="1"] {
+  color: var(--layer-dark-text) !important;
+}.mm-btn{--mm-bg:#f1f3f5;--mm-bd:#dbe0e5;--mm-ic:#3b4046;--mm-fg:#272a2e;--mm-h-bg:#dbe0e5;--mm-h-bd:#b8c0c8;--mm-h-ic:#1c1e20;--mm-h-fg:#1c1e20;display:inline-flex;align-items:center;justify-content:center;gap:.375rem;padding:.5rem;border-radius:var(--mm-radius,.75rem);background:var(--mm-bg);border:1px solid var(--mm-bd);color:var(--mm-fg);font-size:.75rem;font-weight:700;cursor:pointer;transition:all .15s ease;user-select:none;box-sizing:border-box}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn,.mm-btn.is-dark{--mm-bg:rgba(39,42,46,.8);--mm-bd:rgba(59,64,70,.6);--mm-ic:#dbe0e5;--mm-fg:#f1f3f5;--mm-h-bg:#3b4046;--mm-h-bd:#525a62;--mm-h-ic:#ffffff;--mm-h-fg:#ffffff}
+
+
+.mm-btn[data-size="sm"]{padding:.375rem;font-size:.6875rem}
+.mm-btn[data-size="sm"] svg{width:1rem;height:1rem}
+.mm-btn[data-size="md"]{padding:.5rem;font-size:.75rem}
+.mm-btn[data-size="md"] svg{width:1.25rem;height:1.25rem}
+.mm-btn[data-size="lg"]{padding:.625rem;font-size:.875rem}
+.mm-btn[data-size="lg"] svg{width:1.5rem;height:1.5rem}
+
+
+.mm-btn[data-style="ghost"]{background:transparent;border-color:transparent}
+.mm-btn[data-style="outline"]{background:transparent}
+.mm-btn[data-style="circle"]{border-radius:9999px!important}
+
+
+.mm-btn[data-has-custom-bg="1"]{--mm-bg:var(--mm-c-bg)}
+.mm-btn[data-has-custom-bd="1"]{--mm-bd:var(--mm-c-bd)}
+.mm-btn[data-has-custom-ic="1"]{--mm-ic:var(--mm-c-ic)}
+.mm-btn[data-has-custom-fg="1"]{--mm-fg:var(--mm-c-fg)}
+.mm-btn[data-has-custom-h-bg="1"]{--mm-h-bg:var(--mm-c-h-bg)}
+.mm-btn[data-has-custom-h-bd="1"]{--mm-h-bd:var(--mm-c-h-bd)}
+.mm-btn[data-has-custom-h-ic="1"]{--mm-h-ic:var(--mm-c-h-ic)}
+.mm-btn[data-has-custom-h-fg="1"]{--mm-h-fg:var(--mm-c-h-fg)}
+
+
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-bg="1"],.mm-btn.is-dark[data-has-custom-d-bg="1"]{--mm-bg:var(--mm-c-d-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-bd="1"],.mm-btn.is-dark[data-has-custom-d-bd="1"]{--mm-bd:var(--mm-c-d-bd)}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-ic="1"],.mm-btn.is-dark[data-has-custom-d-ic="1"]{--mm-ic:var(--mm-c-d-ic)}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-fg="1"],.mm-btn.is-dark[data-has-custom-d-fg="1"]{--mm-fg:var(--mm-c-d-fg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-h-bg="1"],.mm-btn.is-dark[data-has-custom-d-h-bg="1"]{--mm-h-bg:var(--mm-c-d-h-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-h-bd="1"],.mm-btn.is-dark[data-has-custom-d-h-bd="1"]{--mm-h-bd:var(--mm-c-d-h-bd)}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-h-ic="1"],.mm-btn.is-dark[data-has-custom-d-h-ic="1"]{--mm-h-ic:var(--mm-c-d-h-ic)}
+:is(.dark,[data-theme="dark"],.dark-preview) .mm-btn[data-has-custom-d-h-fg="1"],.mm-btn.is-dark[data-has-custom-d-h-fg="1"]{--mm-h-fg:var(--mm-c-d-h-fg)}
+
+.mm-btn svg{color:var(--mm-ic);transition:color .15s ease,transform .15s ease}
+.mm-btn:hover{background:var(--mm-h-bg);border-color:var(--mm-h-bd);color:var(--mm-h-fg)}
+.mm-btn:hover svg{color:var(--mm-h-ic)}.srch{--srch-bg:#f1f3f5;--srch-fg:#3b4046;--srch-ph:#919ba5;--srch-bd:#dbe0e5;position:relative;display:flex;align-items:center;gap:.55em;box-sizing:border-box;height:var(--srch-h);padding:0 1em;width:var(--srch-w);max-width:min(var(--srch-max),100%);margin:0;border-radius:var(--srch-radius);background:var(--srch-c-bg,var(--srch-bg));color:var(--srch-c-fg,var(--srch-fg));border:1px solid var(--srch-c-bd,var(--srch-bd));font-size:var(--srch-fs);font-family:inherit;line-height:1;text-align:left;cursor:text;overflow:hidden;transition:background .2s,border-color .2s,box-shadow .2s,width .25s ease,color .2s}
+.srch[data-m="modal"]{cursor:pointer}
+.srch:hover{background:var(--srch-c-h-bg,var(--srch-c-bg,var(--srch-bg)));border-color:var(--srch-c-h-bd,var(--srch-c-bd,var(--srch-bd)))}
+
+:is(.dark,[data-theme="dark"],.dark-preview) .srch,.srch.is-dark{--srch-bg:rgba(39,42,46,.8);--srch-fg:#dbe0e5;--srch-bd:#3b4046;background:var(--srch-c-d-bg,var(--srch-bg));color:var(--srch-c-d-fg,var(--srch-fg));border-color:var(--srch-c-d-bd,var(--srch-bd))}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch:hover,.srch.is-dark:hover{background:var(--srch-c-d-h-bg,var(--srch-c-d-bg,var(--srch-bg)));border-color:var(--srch-c-d-h-bd,var(--srch-c-d-bd,var(--srch-bd)))}
+
+.srch .srch-ic{display:inline-flex;flex-shrink:0;color:var(--srch-c-ic,var(--srch-c-fg,var(--srch-ph)));transition:color .2s}
+.srch .srch-ic svg{width:1.25em;height:1.25em}
+.srch .srch-in{flex:1 1 auto;min-width:0;width:100%;height:100%;padding:0;margin:0;border:0;outline:0;box-shadow:none;background:transparent;font:inherit;color:inherit;appearance:none;-webkit-appearance:none}
+.srch .srch-in::placeholder{color:var(--srch-c-ph,var(--srch-ph));opacity:1}
+.srch .srch-tx{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--srch-c-ph,var(--srch-ph))}
+
+:is(.dark,[data-theme="dark"],.dark-preview) .srch .srch-ic,.srch.is-dark .srch-ic{color:var(--srch-c-d-ic,var(--srch-c-d-fg,var(--srch-ph)))}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch .srch-in::placeholder,:is(.dark,[data-theme="dark"],.dark-preview) .srch .srch-tx,.srch.is-dark .srch-in::placeholder,.srch.is-dark .srch-tx{color:var(--srch-c-d-ph,var(--srch-c-d-fg,var(--srch-ph)))}
+
+.srch:hover .srch-ic,.srch:focus-within .srch-ic{color:var(--srch-c-ic,var(--srch-accent))}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch:hover .srch-ic,:is(.dark,[data-theme="dark"],.dark-preview) .srch:focus-within .srch-ic,.srch.is-dark:hover .srch-ic,.srch.is-dark:focus-within .srch-ic{color:var(--srch-c-d-ic,var(--srch-accent))}
+
+.srch:focus-within{border-color:var(--srch-c-bd,var(--srch-accent));box-shadow:0 0 0 3px color-mix(in srgb,var(--srch-accent) 20%,transparent)}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch:focus-within,.srch.is-dark:focus-within{border-color:var(--srch-c-d-bd,var(--srch-accent))}
+
+.srch[data-d="outline"]{--srch-bg:transparent;--srch-bd:#b8c0c8}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="outline"],.srch.is-dark[data-d="outline"]{--srch-bg:transparent;--srch-bd:#525a62}
+
+.srch[data-d="underline"]{--srch-bg:transparent;border-color:transparent;border-bottom:2px solid var(--srch-c-bd,#b8c0c8);border-radius:0;padding:0 .25em}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="underline"],.srch.is-dark[data-d="underline"]{--srch-bg:transparent;border-bottom-color:var(--srch-c-d-bd,#525a62)}
+.srch[data-d="underline"]:focus-within{box-shadow:none;border-bottom-color:var(--srch-c-bd,var(--srch-accent))}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="underline"]:focus-within,.srch.is-dark[data-d="underline"]:focus-within{border-bottom-color:var(--srch-c-d-bd,var(--srch-accent))}
+
+.srch[data-d="minimal"]{--srch-bg:transparent;border-color:transparent;padding:0 .5em}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="minimal"],.srch.is-dark[data-d="minimal"]{--srch-bg:transparent}
+.srch[data-d="minimal"]:hover{background:var(--srch-c-h-bg,color-mix(in srgb,currentColor 7%,transparent))}
+.srch[data-d="minimal"]:focus-within{box-shadow:none;border-color:transparent;background:var(--srch-c-h-bg,color-mix(in srgb,currentColor 7%,transparent))}
+
+.srch[data-d="dark"]{--srch-bg:#1c1e20;--srch-fg:#f8f9fa;--srch-ph:#919ba5;--srch-bd:#272a2e}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="dark"],.srch.is-dark[data-d="dark"]{--srch-bg:#1c1e20;--srch-fg:#f8f9fa;--srch-ph:#919ba5;--srch-bd:#272a2e}
+
+.srch[data-d="brand"]{--srch-bg:color-mix(in srgb,var(--srch-accent) 12%,transparent);--srch-bd:color-mix(in srgb,var(--srch-accent) 30%,transparent);--srch-fg:var(--srch-accent);--srch-ph:color-mix(in srgb,var(--srch-accent) 65%,transparent)}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="brand"],.srch.is-dark[data-d="brand"]{--srch-bg:color-mix(in srgb,var(--srch-accent) 12%,transparent);--srch-bd:color-mix(in srgb,var(--srch-accent) 30%,transparent);--srch-fg:var(--srch-accent);--srch-ph:color-mix(in srgb,var(--srch-accent) 65%,transparent)}
+
+.srch[data-d="shadow"]{--srch-bg:#fff;--srch-bd:transparent;box-shadow:0 2px 12px rgba(28, 30, 32,.12)}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="shadow"],.srch.is-dark[data-d="shadow"]{--srch-bg:#272a2e;--srch-bd:transparent}
+.srch[data-d="shadow"]:focus-within{box-shadow:0 0 0 3px color-mix(in srgb,var(--srch-accent) 22%,transparent),0 2px 12px rgba(28, 30, 32,.12)}
+
+.srch[data-d="glass"]{--srch-bg:color-mix(in srgb,currentColor 8%,transparent);--srch-bd:color-mix(in srgb,currentColor 22%,transparent);--srch-fg:inherit;--srch-ph:color-mix(in srgb,currentColor 55%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="glass"],.srch.is-dark[data-d="glass"]{--srch-bg:color-mix(in srgb,currentColor 8%,transparent);--srch-bd:color-mix(in srgb,currentColor 22%,transparent);--srch-fg:inherit;--srch-ph:color-mix(in srgb,currentColor 55%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+
+.srch[data-d="split"]{padding:0 0 0 1em;border-color:var(--srch-c-bd,var(--srch-accent));--srch-bg:transparent}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="split"],.srch.is-dark[data-d="split"]{--srch-bg:transparent;border-color:var(--srch-c-d-bd,var(--srch-accent))}
+.srch[data-d="split"] .srch-go{display:inline-flex;align-items:center;justify-content:center;align-self:stretch;flex-shrink:0;padding:0 1em;margin:0;border:0;background:var(--srch-c-ic,var(--srch-accent));color:#fff;cursor:pointer;transition:filter .2s}
+:is(.dark,[data-theme="dark"],.dark-preview) .srch[data-d="split"] .srch-go,.srch.is-dark[data-d="split"] .srch-go{background:var(--srch-c-d-ic,var(--srch-accent))}
+.srch[data-d="split"] .srch-go:hover{filter:brightness(1.1)}
+.srch[data-d="split"] .srch-go svg{width:1.25em;height:1.25em}
+
+.srch[data-d="icon"][data-m="modal"]{width:var(--srch-w);min-width:var(--srch-h);padding:0 calc((var(--srch-h) - 1.25em) / 2 - 1px);justify-content:center}
+.srch[data-d="icon"][data-m="modal"] .srch-tx{flex:0 1 auto;color:inherit;font-weight:600;padding-right:.25em}
+.srch[data-d="icon"][data-m="inline"]{width:var(--srch-h);padding:0 calc((var(--srch-h) - 1.25em) / 2 - 1px);cursor:pointer}
+.srch[data-d="icon"][data-m="inline"] .srch-in{flex:0 0 0;width:0;opacity:0;transition:opacity .2s}
+.srch[data-d="icon"][data-m="inline"]:hover,.srch[data-d="icon"][data-m="inline"]:focus-within{width:var(--srch-w);cursor:text}
+.srch[data-d="icon"][data-m="inline"]:hover .srch-in,.srch[data-d="icon"][data-m="inline"]:focus-within .srch-in{flex:1 1 auto;width:100%;opacity:1}
+@media (prefers-reduced-motion:reduce){.srch{transition:none}}.cta-btn{--cta-main:var(--cta-main-light);--cta-fg:var(--cta-fg-light);--cta-hover:color-mix(in srgb,var(--cta-main) 84%,#000);--cta-tint:color-mix(in srgb,var(--cta-main) 14%,transparent);--cta-tint-h:color-mix(in srgb,var(--cta-main) 26%,transparent);position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.45em;box-sizing:border-box;height:var(--cta-h,36px);min-height:var(--cta-h,36px);padding:0 var(--cta-px,13px);border-radius:var(--cta-radius);font-size:var(--cta-fs,12px);font-weight:700;line-height:1;letter-spacing:.01em;white-space:nowrap;text-decoration:none;cursor:pointer;user-select:none;overflow:hidden;border:1px solid transparent;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease,border-color .2s ease,filter .2s ease}
+.cta-btn .cta-ic{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .2s ease}
+.cta-btn .cta-ic svg{width:var(--cta-i,1.2em);height:var(--cta-i,1.2em)}
+.cta-btn .cta-label{display:inline-block;line-height:normal}
+.cta-btn .cta-badge{font-size:.72em;font-weight:800;line-height:1;padding:.22em .5em;border-radius:999px;background:#ef4444;color:#fff;letter-spacing:.03em}
+
+
+.cta-btn[data-display="icon-only"] .cta-label,
+.cta-btn[data-display="icon-only"] .cta-badge{display:none!important}
+.cta-btn[data-display="icon-only"]:not([data-v="link"]):not([data-v="split"]){width:var(--cta-h,36px)!important;min-width:var(--cta-h,36px)!important;padding:0!important}
+.cta-btn[data-display="text-only"] .cta-ic{display:none!important}
+
+
+.cta-btn[data-v="solid"]{background:var(--cta-main);color:var(--cta-fg);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+.cta-btn[data-v="solid"]:hover{background:var(--cta-hover)}
+.cta-btn[data-v="outline"]{background:transparent;color:var(--cta-main);border-color:var(--cta-main)}
+.cta-btn[data-v="outline"]:hover{background:var(--cta-main);color:var(--cta-fg)}
+.cta-btn[data-v="soft"]{background:var(--cta-tint);color:var(--cta-main)}
+.cta-btn[data-v="soft"]:hover{background:var(--cta-tint-h)}
+.cta-btn[data-v="gradient"]{background:linear-gradient(135deg,color-mix(in srgb,var(--cta-main) 76%,#fff),var(--cta-main) 55%,color-mix(in srgb,var(--cta-main) 78%,#000));color:var(--cta-fg);box-shadow:0 2px 8px color-mix(in srgb,var(--cta-main) 35%,transparent)}
+.cta-btn[data-v="gradient"]:hover{filter:brightness(1.08) saturate(1.06)}
+.cta-btn[data-v="dark"]{background:#1c1e20;color:#fff;border-color:rgba(255,255,255,.1)}
+.cta-btn[data-v="dark"]:hover{background:#000}
+.cta-btn[data-v="ghost"]{background:transparent;color:var(--cta-main)}
+.cta-btn[data-v="ghost"]:hover{background:var(--cta-tint)}
+.cta-btn[data-v="link"]{background:transparent;color:var(--cta-main);padding-left:2px;padding-right:2px;border-radius:0;border-bottom:2px solid color-mix(in srgb,var(--cta-main) 35%,transparent)}
+.cta-btn[data-v="link"]:hover{border-bottom-color:var(--cta-main);color:var(--cta-hover)}
+.cta-btn[data-v="glow"]{background:var(--cta-main);color:var(--cta-fg);box-shadow:0 4px 16px color-mix(in srgb,var(--cta-main) 55%,transparent)}
+.cta-btn[data-v="glow"]:hover{box-shadow:0 0 0 3px color-mix(in srgb,var(--cta-main) 25%,transparent),0 6px 22px color-mix(in srgb,var(--cta-main) 70%,transparent)}
+.cta-btn[data-v="3d"]{background:var(--cta-main);color:var(--cta-fg);border-bottom:3px solid color-mix(in srgb,var(--cta-main) 60%,#000)}
+.cta-btn[data-v="3d"]:hover{transform:translateY(1px);border-bottom-width:2px;background:var(--cta-hover)}
+.cta-btn[data-v="neon"]{background:#0f1113;color:var(--cta-main);border-color:var(--cta-main);box-shadow:0 0 8px color-mix(in srgb,var(--cta-main) 55%,transparent),inset 0 0 8px color-mix(in srgb,var(--cta-main) 22%,transparent);text-shadow:0 0 6px color-mix(in srgb,var(--cta-main) 70%,transparent)}
+.cta-btn[data-v="neon"]:hover{background:color-mix(in srgb,var(--cta-main) 16%,#0f1113);box-shadow:0 0 14px color-mix(in srgb,var(--cta-main) 80%,transparent),inset 0 0 12px color-mix(in srgb,var(--cta-main) 30%,transparent)}
+.cta-btn[data-v="brutal"]{background:var(--cta-main);color:var(--cta-fg);border:2px solid #111;box-shadow:3px 3px 0 #111}
+.cta-btn[data-v="brutal"]:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 #111}
+.cta-btn[data-v="glass"]{background:color-mix(in srgb,var(--cta-main) 16%,transparent);color:var(--cta-main);border-color:color-mix(in srgb,var(--cta-main) 35%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.cta-btn[data-v="glass"]:hover{background:color-mix(in srgb,var(--cta-main) 28%,transparent)}
+.cta-btn[data-v="split"]{background:transparent;color:var(--cta-main);border-color:var(--cta-main);padding:0 var(--cta-px) 0 0;gap:0}
+.cta-btn[data-v="split"] .cta-ic{align-self:stretch;padding:0 .7em;margin-right:.7em;background:var(--cta-main);color:var(--cta-fg)}
+.cta-btn[data-v="split"] .cta-label{padding:var(--cta-py) 0}
+.cta-btn[data-v="split"] .cta-label:first-child{padding-left:var(--cta-px)}
+.cta-btn[data-v="split"]:hover{background:var(--cta-tint)}
+
+
+.cta-btn[data-fx="lift"]:hover{transform:translateY(-2px);box-shadow:0 8px 18px color-mix(in srgb,var(--cta-main) 32%,transparent)}
+.cta-btn[data-fx="glow"]:hover{box-shadow:0 0 0 3px color-mix(in srgb,var(--cta-main) 25%,transparent),0 6px 22px color-mix(in srgb,var(--cta-main) 60%,transparent)}
+.cta-btn[data-fx="shine"]::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:left .6s ease;pointer-events:none}
+.cta-btn[data-fx="shine"]:hover::after{left:130%}
+.cta-btn[data-fx="pulse"]{animation:cta-pulse 2s ease-out infinite}
+.cta-btn[data-fx="bounce"]{animation:cta-bounce 2.4s ease-in-out infinite}
+.cta-btn[data-fx="nudge"]:hover .cta-ic{transform:translateX(4px)}
+@keyframes cta-pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--cta-main) 55%,transparent)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@keyframes cta-bounce{0%,86%,100%{transform:translateY(0)}91%{transform:translateY(-4px)}96%{transform:translateY(0)}}
+
+
+.cta-btn[data-has-custom-bg="1"]{background:var(--cta-c-bg)!important}
+.cta-btn[data-has-custom-bd="1"]{border-color:var(--cta-c-bd)!important}
+.cta-btn[data-has-custom-fg="1"]{color:var(--cta-c-fg)!important}
+.cta-btn[data-has-custom-ic="1"] .cta-ic{color:var(--cta-c-ic)!important}
+.cta-btn[data-has-custom-h-bg="1"]:hover{background:var(--cta-c-h-bg)!important}
+.cta-btn[data-has-custom-h-bd="1"]:hover{border-color:var(--cta-c-h-bd)!important}
+.cta-btn[data-has-custom-h-fg="1"]:hover{color:var(--cta-c-h-fg)!important}
+.cta-btn[data-has-custom-h-ic="1"]:hover .cta-ic{color:var(--cta-c-h-ic)!important}
+
+
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn, .cta-btn.is-dark{--cta-main:var(--cta-main-dark);--cta-fg:var(--cta-fg-dark)}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-bg="1"], .cta-btn.is-dark[data-has-custom-d-bg="1"]{background:var(--cta-c-d-bg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-bd="1"], .cta-btn.is-dark[data-has-custom-d-bd="1"]{border-color:var(--cta-c-d-bd)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-fg="1"], .cta-btn.is-dark[data-has-custom-d-fg="1"]{color:var(--cta-c-d-fg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-ic="1"] .cta-ic, .cta-btn.is-dark[data-has-custom-d-ic="1"] .cta-ic{color:var(--cta-c-d-ic)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-h-bg="1"]:hover, .cta-btn.is-dark[data-has-custom-d-h-bg="1"]:hover{background:var(--cta-c-d-h-bg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-h-bd="1"]:hover, .cta-btn.is-dark[data-has-custom-d-h-bd="1"]:hover{border-color:var(--cta-c-d-h-bd)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-h-fg="1"]:hover, .cta-btn.is-dark[data-has-custom-d-h-fg="1"]:hover{color:var(--cta-c-d-h-fg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .cta-btn[data-has-custom-d-h-ic="1"]:hover .cta-ic, .cta-btn.is-dark[data-has-custom-d-h-ic="1"]:hover .cta-ic{color:var(--cta-c-d-h-ic)!important}
+
+
+@media (max-width:767px){
+  .cta-btn[data-mobile-icon="1"] .cta-label,
+  .cta-btn[data-mobile-icon="1"] .cta-badge{display:none!important}
+  .cta-btn[data-mobile-icon="1"]:not([data-v="link"]):not([data-v="split"]){width:var(--cta-h,36px)!important;min-width:var(--cta-h,36px)!important;padding:0!important}
+}
+@media (prefers-reduced-motion:reduce){.cta-btn{animation:none!important;transition:none}}.wtr-widget{position:relative;display:inline-flex;align-items:center;gap:.625rem;font-size:.75rem;font-weight:700;line-height:1;color:inherit;box-sizing:border-box;transition:background .2s ease,border-color .2s ease,color .2s ease;user-select:none}
+.wtr-widget[data-has-custom-bg="1"],.wtr-widget[data-has-custom-bd="1"]{padding:.375rem .625rem;border-radius:var(--wtr-radius,.5rem);border:1px solid transparent}
+.wtr-trigger{display:inline-flex;align-items:center;gap:.375rem;font-size:.75rem;font-weight:700;color:inherit;background:transparent;border:none;padding:0;cursor:pointer;transition:opacity .15s ease,color .15s ease}
+.wtr-trigger:hover{opacity:.82}
+.wtr-pin-ic,.wtr-chev-ic{display:inline-flex;align-items:center;opacity:.8;flex-shrink:0}
+.wtr-pin-ic svg{width:.875rem;height:.875rem}
+.wtr-chev-ic svg{width:.75rem;height:.75rem;transition:transform .2s ease}
+.wtr-info{display:inline-flex;align-items:center;gap:.375rem;font-size:.75rem;font-weight:700;padding-left:.625rem;border-left:1px solid currentColor;opacity:1}
+.wtr-info-noborder{border-left:none!important;padding-left:0!important}
+.wtr-icon{font-size:.875rem;line-height:1}
+.wtr-temp{font-weight:900;color:#f59e0b}
+.wtr-desc{font-size:.6875rem;opacity:.75}
+
+
+.wtr-widget[data-has-custom-bg="1"]{background:var(--wtr-c-bg)!important}
+.wtr-widget[data-has-custom-bd="1"]{border-color:var(--wtr-c-bd)!important}
+.wtr-widget[data-has-custom-bd="1"] .wtr-info{border-left-color:var(--wtr-c-bd)!important}
+.wtr-widget[data-has-custom-fg="1"],.wtr-widget[data-has-custom-fg="1"] .wtr-trigger,.wtr-widget[data-has-custom-fg="1"] .wtr-desc{color:var(--wtr-c-fg)!important}
+.wtr-widget[data-has-custom-ic="1"] .wtr-pin-ic,.wtr-widget[data-has-custom-ic="1"] .wtr-chev-ic{color:var(--wtr-c-ic)!important;opacity:1!important}
+.wtr-widget[data-has-custom-tmp="1"] .wtr-temp{color:var(--wtr-c-tmp)!important}
+
+.wtr-widget[data-has-custom-h-bg="1"]:hover{background:var(--wtr-c-h-bg)!important}
+.wtr-widget[data-has-custom-h-bd="1"]:hover{border-color:var(--wtr-c-h-bd)!important}
+.wtr-widget[data-has-custom-h-fg="1"]:hover,.wtr-widget[data-has-custom-h-fg="1"]:hover .wtr-trigger{color:var(--wtr-c-h-fg)!important}
+
+
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget .wtr-temp,.wtr-widget.is-dark .wtr-temp{color:#fbbf24}
+
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-bg="1"],.wtr-widget.is-dark[data-has-custom-d-bg="1"]{background:var(--wtr-c-d-bg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-bd="1"],.wtr-widget.is-dark[data-has-custom-d-bd="1"]{border-color:var(--wtr-c-d-bd)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-bd="1"] .wtr-info,.wtr-widget.is-dark[data-has-custom-d-bd="1"] .wtr-info{border-left-color:var(--wtr-c-d-bd)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-fg="1"],:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-fg="1"] .wtr-trigger,:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-fg="1"] .wtr-desc,.wtr-widget.is-dark[data-has-custom-d-fg="1"],.wtr-widget.is-dark[data-has-custom-d-fg="1"] .wtr-trigger,.wtr-widget.is-dark[data-has-custom-d-fg="1"] .wtr-desc{color:var(--wtr-c-d-fg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-ic="1"] .wtr-pin-ic,:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-ic="1"] .wtr-chev-ic,.wtr-widget.is-dark[data-has-custom-d-ic="1"] .wtr-pin-ic,.wtr-widget.is-dark[data-has-custom-d-ic="1"] .wtr-chev-ic{color:var(--wtr-c-d-ic)!important;opacity:1!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-tmp="1"] .wtr-temp,.wtr-widget.is-dark[data-has-custom-d-tmp="1"] .wtr-temp{color:var(--wtr-c-d-tmp)!important}
+
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-h-bg="1"]:hover,.wtr-widget.is-dark[data-has-custom-d-h-bg="1"]:hover{background:var(--wtr-c-d-h-bg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-h-bd="1"]:hover,.wtr-widget.is-dark[data-has-custom-d-h-bd="1"]:hover{border-color:var(--wtr-c-d-h-bd)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .wtr-widget[data-has-custom-d-h-fg="1"]:hover,.wtr-widget.is-dark[data-has-custom-d-h-fg="1"]:hover .wtr-trigger{color:var(--wtr-c-d-h-fg)!important}.ttg{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.5em;box-sizing:border-box;height:var(--ttg-s);min-width:var(--ttg-s);padding:0;margin:0;border:1px solid transparent;border-radius:var(--ttg-radius,12px);background:transparent;color:inherit;cursor:pointer;font-family:inherit;font-size:var(--ttg-fs);font-weight:600;line-height:1;white-space:nowrap;transition:background .2s,border-color .2s,color .2s}
+.ttg svg{width:var(--ttg-i);height:var(--ttg-i);flex-shrink:0}
+.ttg .ttg-moon,.ttg .ttg-sun{display:inline-flex;align-items:center;justify-content:center}
+.ttg .ttg-sun{display:none;color:var(--ttg-icon,#fbbf24)}
+.ttg .ttg-moon{color:var(--ttg-icon,#919ba5)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg .ttg-sun,.ttg.is-dark .ttg-sun{display:inline-flex;color:var(--ttg-dark-icon,#fbbf24)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg .ttg-moon,.ttg.is-dark .ttg-moon{display:none}
+.ttg .ttg-tx-d{display:none}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg .ttg-tx-l,.ttg.is-dark .ttg-tx-l{display:none}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg .ttg-tx-d,.ttg.is-dark .ttg-tx-d{display:inline}
+
+.ttg[data-d="icon"]{background:var(--ttg-bg,#f1f3f5);border-color:var(--ttg-border,#dbe0e5);color:var(--ttg-text,inherit)}
+.ttg[data-d="icon"]:hover{background:var(--ttg-hover-bg,#dbe0e5);border-color:var(--ttg-hover-border,var(--ttg-border,#dbe0e5))}
+.ttg[data-d="icon"] .ttg-moon{color:var(--ttg-icon,#919ba5)}
+.ttg[data-d="icon"] svg{width:calc(var(--ttg-i) * .82);height:calc(var(--ttg-i) * .82)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="icon"],.ttg.is-dark[data-d="icon"]{background:var(--ttg-dark-bg,rgba(39,42,46,.8));border-color:var(--ttg-dark-border,#3b4046);color:var(--ttg-dark-text,inherit)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="icon"]:hover,.ttg.is-dark[data-d="icon"]:hover{background:var(--ttg-dark-hover-bg,#3b4046);border-color:var(--ttg-dark-hover-border,var(--ttg-dark-border,#3b4046))}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="icon"] .ttg-sun,.ttg.is-dark[data-d="icon"] .ttg-sun{color:var(--ttg-dark-icon,#fbbf24)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="icon"] .ttg-moon,.ttg.is-dark[data-d="icon"] .ttg-moon{color:var(--ttg-dark-icon,#919ba5)}
+
+.ttg[data-d="filled"]{background:var(--ttg-bg,#f1f3f5);border-color:var(--ttg-border,#dbe0e5);color:var(--ttg-text,inherit)}
+.ttg[data-d="filled"]:hover{background:var(--ttg-hover-bg,#dbe0e5);border-color:var(--ttg-hover-border,var(--ttg-border,#dbe0e5))}
+.ttg[data-d="filled"] .ttg-moon{color:var(--ttg-icon,inherit)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="filled"],.ttg.is-dark[data-d="filled"]{background:var(--ttg-dark-bg,#272a2e);border-color:var(--ttg-dark-border,#3b4046);color:var(--ttg-dark-text,inherit)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="filled"]:hover,.ttg.is-dark[data-d="filled"]:hover{background:var(--ttg-dark-hover-bg,#3b4046);border-color:var(--ttg-dark-hover-border,var(--ttg-dark-border,#3b4046))}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="filled"] .ttg-sun,.ttg.is-dark[data-d="filled"] .ttg-sun{color:var(--ttg-dark-icon,#fbbf24)}
+
+.ttg[data-d="circle"]{border-radius:var(--ttg-radius,999px);border-color:var(--ttg-border,#b8c0c8);background:var(--ttg-bg,transparent);color:var(--ttg-text,inherit)}
+.ttg[data-d="circle"]:hover{background:var(--ttg-hover-bg,#f1f3f5);border-color:var(--ttg-hover-border,var(--ttg-border,#b8c0c8))}
+.ttg[data-d="circle"] .ttg-moon{color:var(--ttg-icon,inherit)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="circle"],.ttg.is-dark[data-d="circle"]{border-color:var(--ttg-dark-border,#525a62);background:var(--ttg-dark-bg,transparent);color:var(--ttg-dark-text,inherit)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="circle"]:hover,.ttg.is-dark[data-d="circle"]:hover{background:var(--ttg-dark-hover-bg,#272a2e);border-color:var(--ttg-dark-hover-border,var(--ttg-dark-border,#525a62))}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="circle"] .ttg-sun,.ttg.is-dark[data-d="circle"] .ttg-sun{color:var(--ttg-dark-icon,#fbbf24)}
+
+.ttg[data-d="button"]{padding:0 .9em;border-radius:var(--ttg-radius,12px);border-color:var(--ttg-border,#dbe0e5);background:var(--ttg-bg,#f1f3f5);color:var(--ttg-text,inherit)}
+.ttg[data-d="button"]:hover{background:var(--ttg-hover-bg,#dbe0e5);border-color:var(--ttg-hover-border,var(--ttg-border,#dbe0e5))}
+.ttg[data-d="button"] .ttg-moon{color:var(--ttg-icon,inherit)}
+.ttg[data-d="button"] svg{width:calc(var(--ttg-i) * .8);height:calc(var(--ttg-i) * .8)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="button"],.ttg.is-dark[data-d="button"]{border-color:var(--ttg-dark-border,#3b4046);background:var(--ttg-dark-bg,#272a2e);color:var(--ttg-dark-text,inherit)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="button"]:hover,.ttg.is-dark[data-d="button"]:hover{background:var(--ttg-dark-hover-bg,#3b4046);border-color:var(--ttg-dark-hover-border,var(--ttg-dark-border,#3b4046))}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="button"] .ttg-sun,.ttg.is-dark[data-d="button"] .ttg-sun{color:var(--ttg-dark-icon,#fbbf24)}
+
+.ttg[data-d="switch"]{width:calc(var(--ttg-s) * 1.55);min-width:0;height:calc(var(--ttg-s) * .68);border-radius:var(--ttg-radius,999px);background:var(--ttg-bg,#dbe0e5);border-color:var(--ttg-border,#b8c0c8);justify-content:flex-start}
+.ttg[data-d="switch"]:hover{background:var(--ttg-hover-bg,var(--ttg-bg,#dbe0e5));border-color:var(--ttg-hover-border,var(--ttg-border,#b8c0c8))}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="switch"],.ttg.is-dark[data-d="switch"]{background:var(--ttg-dark-bg,#3b4046);border-color:var(--ttg-dark-border,#525a62);justify-content:flex-end}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="switch"]:hover,.ttg.is-dark[data-d="switch"]:hover{background:var(--ttg-dark-hover-bg,var(--ttg-dark-bg,#3b4046));border-color:var(--ttg-dark-hover-border,var(--ttg-dark-border,#525a62))}
+.ttg[data-d="switch"] .ttg-moon,.ttg[data-d="switch"] .ttg-sun{width:calc(var(--ttg-s) * .68 - 6px);height:calc(var(--ttg-s) * .68 - 6px);margin:0 2px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);color:var(--ttg-icon,#525a62)}
+.ttg[data-d="switch"] .ttg-sun{color:var(--ttg-icon,#f59e0b)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="switch"] .ttg-moon,.ttg.is-dark[data-d="switch"] .ttg-moon{color:var(--ttg-dark-icon,#525a62)}
+:is(.dark,[data-theme="dark"],.dark-preview) .ttg[data-d="switch"] .ttg-sun,.ttg.is-dark[data-d="switch"] .ttg-sun{color:var(--ttg-dark-icon,#f59e0b)}
+.ttg[data-d="switch"] svg{width:60%;height:60%}
+
+@media (prefers-reduced-motion:reduce){.ttg{transition:none}}.bn-bar{--bn-bg:transparent;--bn-bd:transparent;--bn-fg:inherit;--bn-badge-bg:#dc2626;--bn-badge-fg:#ffffff;--bn-badge-bd:transparent;--bn-time-bg:rgba(145,155,165,.15);--bn-time-fg:#6e7781;--bn-cat-bg:rgba(37,99,235,.1);--bn-cat-fg:#2563eb;--bn-ctrl-bg:rgba(145,155,165,.15);--bn-ctrl-fg:#6e7781;position:relative;display:flex;align-items:center;gap:.625rem;width:100%;max-width:100%;min-width:0;overflow:hidden;user-select:none;border-radius:var(--bn-radius,0px);background:var(--bn-bg);border:1px solid var(--bn-bd);box-sizing:border-box}
+.bn-bar[data-has-custom-bg="1"],.bn-bar[data-has-custom-bd="1"]{padding:.25rem .5rem}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar,.bn-bar.is-dark{--bn-badge-bg:#dc2626;--bn-badge-fg:#ffffff;--bn-time-bg:rgba(59,64,70,.4);--bn-time-fg:#919ba5;--bn-cat-bg:rgba(37,99,235,.2);--bn-cat-fg:#60a5fa;--bn-ctrl-bg:rgba(59,64,70,.4);--bn-ctrl-fg:#919ba5}
+
+
+.bn-bar[data-has-custom-bg="1"]{--bn-bg:var(--bn-c-bg)}
+.bn-bar[data-has-custom-bd="1"]{--bn-bd:var(--bn-c-bd)}
+.bn-bar[data-has-custom-fg="1"]{--bn-fg:var(--bn-c-fg)}
+.bn-bar[data-has-custom-b-bg="1"]{--bn-badge-bg:var(--bn-c-b-bg)}
+.bn-bar[data-has-custom-b-fg="1"]{--bn-badge-fg:var(--bn-c-b-fg)}
+.bn-bar[data-has-custom-b-bd="1"]{--bn-badge-bd:var(--bn-c-b-bd)}
+.bn-bar[data-has-custom-t-bg="1"]{--bn-time-bg:var(--bn-c-t-bg)}
+.bn-bar[data-has-custom-t-fg="1"]{--bn-time-fg:var(--bn-c-t-fg)}
+.bn-bar[data-has-custom-c-bg="1"]{--bn-cat-bg:var(--bn-c-c-bg)}
+.bn-bar[data-has-custom-c-fg="1"]{--bn-cat-fg:var(--bn-c-c-fg)}
+.bn-bar[data-has-custom-ctrl-bg="1"]{--bn-ctrl-bg:var(--bn-c-ctrl-bg)}
+.bn-bar[data-has-custom-ctrl-fg="1"]{--bn-ctrl-fg:var(--bn-c-ctrl-fg)}
+
+
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-bg="1"],.bn-bar.is-dark[data-has-custom-d-bg="1"]{--bn-bg:var(--bn-c-d-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-bd="1"],.bn-bar.is-dark[data-has-custom-d-bd="1"]{--bn-bd:var(--bn-c-d-bd)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-fg="1"],.bn-bar.is-dark[data-has-custom-d-fg="1"]{--bn-fg:var(--bn-c-d-fg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-b-bg="1"],.bn-bar.is-dark[data-has-custom-d-b-bg="1"]{--bn-badge-bg:var(--bn-c-d-b-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-b-fg="1"],.bn-bar.is-dark[data-has-custom-d-b-fg="1"]{--bn-badge-fg:var(--bn-c-d-b-fg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-b-bd="1"],.bn-bar.is-dark[data-has-custom-d-b-bd="1"]{--bn-badge-bd:var(--bn-c-d-b-bd)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-t-bg="1"],.bn-bar.is-dark[data-has-custom-d-t-bg="1"]{--bn-time-bg:var(--bn-c-d-t-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-t-fg="1"],.bn-bar.is-dark[data-has-custom-d-t-fg="1"]{--bn-time-fg:var(--bn-c-d-t-fg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-c-bg="1"],.bn-bar.is-dark[data-has-custom-d-c-bg="1"]{--bn-cat-bg:var(--bn-c-d-c-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-c-fg="1"],.bn-bar.is-dark[data-has-custom-d-c-fg="1"]{--bn-cat-fg:var(--bn-c-d-c-fg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-ctrl-bg="1"],.bn-bar.is-dark[data-has-custom-d-ctrl-bg="1"]{--bn-ctrl-bg:var(--bn-c-d-ctrl-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-ctrl-fg="1"],.bn-bar.is-dark[data-has-custom-d-ctrl-fg="1"]{--bn-ctrl-fg:var(--bn-c-d-ctrl-fg)}
+
+
+.bn-badge{display:inline-flex;align-items:center;gap:.375rem;padding:.25rem .625rem;border-radius:.375rem;font-size:.6875rem;font-weight:900;text-transform:uppercase;letter-spacing:.05em;flex-shrink:0;background-color:var(--bn-badge-bg);color:var(--bn-badge-fg);border:1px solid var(--bn-badge-bd);box-shadow:0 1px 2px rgba(0,0,0,.06);transition:all .15s ease}
+.bn-badge-outline{background-color:transparent!important;color:var(--bn-badge-bg)!important;border-color:var(--bn-badge-bg)!important}
+
+
+.bn-title{color:var(--bn-fg);text-decoration:none;font-weight:600;transition:color .15s ease}
+.bn-bar[data-has-custom-h-fg="1"] .bn-title:hover{color:var(--bn-c-h-fg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .bn-bar[data-has-custom-d-h-fg="1"] .bn-title:hover,.bn-bar.is-dark[data-has-custom-d-h-fg="1"] .bn-title:hover{color:var(--bn-c-d-h-fg)!important}
+
+
+.bn-time{background-color:var(--bn-time-bg);color:var(--bn-time-fg);font-size:.625rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:600;padding:.125rem .375rem;border-radius:.25rem;white-space:nowrap}
+.bn-cat{background-color:var(--bn-cat-bg);color:var(--bn-cat-fg);font-size:.625rem;font-weight:700;text-transform:uppercase;padding:.125rem .375rem;border-radius:.25rem;white-space:nowrap}
+.bn-controls{display:inline-flex;align-items:center;gap:.125rem;background-color:var(--bn-ctrl-bg);color:var(--bn-ctrl-fg);padding:.125rem;border-radius:.25rem}
+.bn-btn{display:inline-flex;align-items:center;justify-content:center;padding:.2rem;border-radius:.2rem;background:transparent;border:none;color:inherit;cursor:pointer;transition:background .15s ease,opacity .15s ease}
+.bn-btn:hover{background:rgba(255,255,255,.2);opacity:.9}
+.bn-counter{font-size:.625rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;color:var(--bn-ctrl-fg);padding:0 .25rem;white-space:nowrap}
+
+@keyframes bnMarqueeScroll{0%{transform:translateX(0%)}100%{transform:translateX(-50%)}}</style><title>Dilaver Demir’in yönetim listesi belli oldu - Günaydın Aydın</title><style>html{overflow-wrap:anywhere}img{max-width:100%;height:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.elementor-tab-content,[role="tabpanel"]{display:block!important;height:auto!important;opacity:1!important;visibility:visible!important}</style></head><body class="rQMB2q_className"><div></div><div class="min-h-screen bg-(--bg-page) text-(--text-main) font-(family-name:--font-body) transition-colors"><style>
+    :root {
+      --primary: #dc2626; --secondary: #1e293b; --accent: #f59e0b;
+      --bg-page: #f1f3f7;
+      --bg-surface: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --radius: 8px;
+      --max-width: 1200px;
+      --font-body: var(--font-inter-nf, 'Inter'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-heading: var(--font-inter-nf, 'Inter'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --brand-50: 252 238 238; --brand-100: 249 220 220; --brand-200: 244 186 186; --brand-300: 238 147 147; --brand-400: 230 99 99; --brand-500: 224 64 64; --brand-600: 220 38 38; --brand-700: 189 33 33; --brand-800: 158 27 27; --brand-900: 128 22 22; --brand-950: 92 16 16;
+      --highlight-50: 254 247 235; --highlight-100: 253 239 216; --highlight-200: 252 224 177; --highlight-300: 250 207 133; --highlight-400: 248 185 79; --highlight-500: 246 170 40; --highlight-600: 245 158 11; --highlight-700: 211 136 9; --highlight-800: 176 114 8; --highlight-900: 142 92 6; --highlight-950: 103 66 5;
+    }
+
+    .dark, html.dark, [data-theme="dark"] {
+      --bg-page: #0b0d10;
+      --bg-surface: #15181c;
+      --text-main: #f8f9fa;
+      --text-muted: #919ba5;
+    }
+
+    
+
+    
+
+    
+    
+    main section[class*="my-6"],
+    main [class*="my-6"] {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    
+  </style><header class="w-full relative select-none" style="display:contents"><div class="lg:hidden sticky top-0 z-55"><div class="header-layer-tier w-full transition-colors relative z-55 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800/80" style="--layer-bg:#ffffff;--layer-dark-bg:#0f1113"><div class="w-full px-4 sm:px-6 py-1.5 flex items-center justify-between gap-2 sm:gap-4 w-full"><div class="flex items-center gap-2 sm:gap-3 justify-start min-w-0 order-1 overflow-hidden" style="flex:25 1 0%;max-width:25%;width:25%"><div></div></div><div class="flex items-center gap-2 sm:gap-3 justify-center min-w-0 order-2 text-center overflow-hidden" style="flex:50 1 0%;max-width:50%;width:50%"><div><div class="flex items-center justify-center text-center select-none"><a title="gundemx" class="flex min-w-0 items-center gap-3 group" href="https://gunaydinaydin.com/"><img alt="gundemx" width="105" height="30" class="w-auto  object-contain hidden dark:block" title="gundemx" style="height:30px;max-width:180px;max-height:30px;object-fit:contain"><img alt="gundemx" width="105" height="30" class="w-auto  object-contain dark:hidden" title="gundemx" style="height:30px;max-width:180px;max-height:30px;object-fit:contain"><h1 class="sr-only">gundemx - Haber &amp; İçerik Portalı</h1></a></div></div></div><div class="flex items-center gap-2 justify-end min-w-0 order-3 overflow-hidden" style="flex:25 1 0%;max-width:25%;width:25%"><div><span class="srch-ic" aria-hidden="true"></span></div><div><a class="cta-btn" style="--cta-fs:12px;--cta-py:0px;--cta-px:13px;--cta-h:36px;--cta-i:16px;--cta-radius:100px;--cta-main-light:rgb(var(--brand-500));--cta-fg-light:#ffffff;--cta-main-dark:rgb(var(--brand-500));--cta-fg-dark:#ffffff;--cta-c-bg:#1c1e20;--cta-c-bd:#ffffff33;--cta-c-fg:#ffffff;--cta-c-ic:#ffffff;--cta-c-h-bg:#00000040;--cta-c-h-bd:#00000040;--cta-c-h-fg:#ffffff;--cta-c-h-ic:#ffffff" title="Giriş Yap" href="https://gunaydinaydin.com/uye/giris"><span class="cta-ic" aria-hidden="true"></span></a></div></div></div></div></div><div class="hidden lg:block"><div class="header-layer-tier w-full transition-colors relative z-50 bg-white dark:bg-slate-900 " style="--layer-bg:#d7050f"><div class="max-w-(--max-width) mx-auto px-4 sm:px-6 py-1.5 flex items-center justify-between gap-2 sm:gap-4 w-full"><div class="flex items-center gap-2 sm:gap-3 justify-start min-w-0 order-1 overflow-hidden" style="flex:67 1 0%;max-width:67%;width:67%"><div><style>.fnb{--fnb-up:#10b981;--fnb-down:#f43f5e;--fnb-fg:#1c1e20;--fnb-muted:#6e7781;--fnb-bg:#f1f3f5;--fnb-bd:#dbe0e5;display:flex;align-items:center;gap:.6em;font-size:var(--fnb-fs, 12px);line-height:1.2;color:var(--fnb-fg);overflow-x:auto;padding:2px 0;max-width:100%;-ms-overflow-style:none;scrollbar-width:none;user-select:none}
+.fnb::-webkit-scrollbar{display:none}
+
+
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb,.fnb.is-dark{--fnb-fg:#f1f3f5;--fnb-muted:#919ba5;--fnb-bg:rgba(39,42,46,.8);--fnb-bd:rgba(59,64,70,.6)}
+
+
+.fnb[data-has-custom-up="1"]{--fnb-up:var(--fnb-c-up)}
+.fnb[data-has-custom-down="1"]{--fnb-down:var(--fnb-c-down)}
+.fnb[data-has-custom-fg="1"]{--fnb-fg:var(--fnb-c-fg)}
+.fnb[data-has-custom-lbl="1"]{--fnb-muted:var(--fnb-c-lbl)}
+.fnb[data-has-custom-bg="1"]{--fnb-bg:var(--fnb-c-bg)}
+.fnb[data-has-custom-bd="1"]{--fnb-bd:var(--fnb-c-bd)}
+
+
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-up="1"],.fnb.is-dark[data-has-custom-d-up="1"]{--fnb-up:var(--fnb-c-d-up)}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-down="1"],.fnb.is-dark[data-has-custom-d-down="1"]{--fnb-down:var(--fnb-c-d-down)}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-fg="1"],.fnb.is-dark[data-has-custom-d-fg="1"]{--fnb-fg:var(--fnb-c-d-fg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-lbl="1"],.fnb.is-dark[data-has-custom-d-lbl="1"]{--fnb-muted:var(--fnb-c-d-lbl)}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-bg="1"],.fnb.is-dark[data-has-custom-d-bg="1"]{--fnb-bg:var(--fnb-c-d-bg)}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-bd="1"],.fnb.is-dark[data-has-custom-d-bd="1"]{--fnb-bd:var(--fnb-c-d-bd)}
+
+.fnb-it{display:flex;align-items:center;gap:.4em;white-space:nowrap;font-weight:700;flex-shrink:0;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.fnb-code{color:var(--fnb-muted);font-size:.85em;text-transform:uppercase;letter-spacing:.05em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;transition:color .15s ease}
+.fnb-name{color:var(--fnb-muted);font-size:.95em;transition:color .15s ease}
+.fnb-price{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--fnb-fg);transition:color .15s ease}
+.fnb-chg{font-size:.85em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;transition:color .15s ease}
+.fnb-it[data-dir="up"] .fnb-chg,.fnb-it[data-dir="up"] .fnb-dir{color:var(--fnb-up)}
+.fnb-it[data-dir="down"] .fnb-chg,.fnb-it[data-dir="down"] .fnb-dir{color:var(--fnb-down)}
+.fnb-dir{display:inline-flex}
+.fnb-dir svg{width:1em;height:1em}
+
+
+.fnb[data-d="badges"] .fnb-it{padding:.3em .55em;border-radius:var(--fnb-radius,6px);background:var(--fnb-bg);border:1px solid var(--fnb-bd);box-shadow:0 1px 1px rgba(28, 30, 32,.05)}
+.fnb[data-d="compact"] .fnb-code::after{content:":"}
+.fnb[data-d="compact"] .fnb-code{font-family:inherit;text-transform:none;letter-spacing:0;font-size:1em}
+.fnb[data-d="compact"] .fnb-name{font-size:1em}
+.fnb[data-d="cards"]{gap:.5em}
+.fnb[data-d="cards"] .fnb-it{flex-direction:column;align-items:flex-start;gap:.1em;padding:.4em .8em;border-radius:var(--fnb-radius,10px);background:var(--fnb-bg);border:1px solid var(--fnb-bd);min-width:5.6em}
+.fnb[data-d="cards"] .fnb-price{font-size:1.2em}
+.fnb[data-d="cards"] .fnb-row{display:flex;align-items:center;gap:.35em}
+.fnb[data-d="pills"] .fnb-it{padding:.3em .7em;border-radius:var(--fnb-radius,999px);border:1px solid transparent}
+.fnb[data-d="pills"] .fnb-it[data-dir="up"]{background:color-mix(in srgb,var(--fnb-up) 14%,transparent);border-color:color-mix(in srgb,var(--fnb-up) 30%,transparent)}
+.fnb[data-d="pills"] .fnb-it[data-dir="down"]{background:color-mix(in srgb,var(--fnb-down) 14%,transparent);border-color:color-mix(in srgb,var(--fnb-down) 30%,transparent)}
+.fnb[data-d="pills"] .fnb-it[data-dir="neutral"]{background:var(--fnb-bg);border-color:var(--fnb-bd)}
+.fnb[data-d="dividers"]{gap:0}
+.fnb[data-d="dividers"] .fnb-it{padding:0 .9em}
+.fnb[data-d="dividers"] .fnb-it:first-child{padding-left:0}
+.fnb[data-d="dividers"] .fnb-it+.fnb-it{border-left:1px solid var(--fnb-bd)}
+
+.fnb[data-d="dark"] .fnb-it{padding:.35em .65em;border-radius:var(--fnb-radius,6px);background:var(--fnb-bg);border:1px solid var(--fnb-bd)}
+.fnb[data-d="dark"]:not([data-has-custom-bg="1"]) .fnb-it{background:#1c1e20}
+.fnb[data-d="dark"]:not([data-has-custom-bd="1"]) .fnb-it{border-color:#272a2e}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-d="dark"]:not([data-has-custom-d-bg="1"]) .fnb-it,.fnb.is-dark[data-d="dark"]:not([data-has-custom-d-bg="1"]) .fnb-it{background:#272a2e}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-d="dark"]:not([data-has-custom-d-bd="1"]) .fnb-it,.fnb.is-dark[data-d="dark"]:not([data-has-custom-d-bd="1"]) .fnb-it{border-color:#3b4046}
+
+.fnb[data-d="ticker"]{display:block;overflow:hidden;width:var(--fnb-w);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.fnb-track{display:flex;align-items:center;width:max-content;animation:fnb-scroll 26s linear infinite}
+.fnb[data-d="ticker"]:hover .fnb-track{animation-play-state:paused}
+.fnb[data-d="ticker"] .fnb-it{padding-right:1.4em}
+@keyframes fnb-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.fnb-track{animation:none}}
+
+
+.fnb[data-has-custom-h-bg="1"] .fnb-it:hover{background:var(--fnb-c-h-bg)!important}
+.fnb[data-has-custom-h-bd="1"] .fnb-it:hover{border-color:var(--fnb-c-h-bd)!important}
+.fnb[data-has-custom-h-fg="1"] .fnb-it:hover .fnb-price,.fnb[data-has-custom-h-fg="1"] .fnb-it:hover .fnb-code,.fnb[data-has-custom-h-fg="1"] .fnb-it:hover .fnb-name{color:var(--fnb-c-h-fg)!important}
+
+
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-h-bg="1"] .fnb-it:hover,.fnb.is-dark[data-has-custom-d-h-bg="1"] .fnb-it:hover{background:var(--fnb-c-d-h-bg)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-h-bd="1"] .fnb-it:hover,.fnb.is-dark[data-has-custom-d-h-bd="1"] .fnb-it:hover{border-color:var(--fnb-c-d-h-bd)!important}
+:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-h-fg="1"] .fnb-it:hover .fnb-price,:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-h-fg="1"] .fnb-it:hover .fnb-code,:is(.dark,[data-theme="dark"],.dark-preview) .fnb[data-has-custom-d-h-fg="1"] .fnb-it:hover .fnb-name,.fnb.is-dark[data-has-custom-d-h-fg="1"] .fnb-it:hover .fnb-price,.fnb.is-dark[data-has-custom-d-h-fg="1"] .fnb-it:hover .fnb-code,.fnb.is-dark[data-has-custom-d-h-fg="1"] .fnb-it:hover .fnb-name{color:var(--fnb-c-d-h-fg)!important}</style><div class="fnb" style="--fnb-fs:12px;--fnb-w:360px;--fnb-c-fg:#f8fafc;--fnb-c-lbl:#ffffff;--fnb-c-up:#ffffff;--fnb-c-down:#ffffff" role="group" aria-label="Piyasa"><div class="fnb-it"><span class="fnb-code">USD</span><span class="fnb-price">48,45</span><span class="fnb-chg">+0,23%</span></div><div class="fnb-it"><span class="fnb-code">EUR</span><span class="fnb-price">56,25</span><span class="fnb-chg">-0,24%</span></div><div class="fnb-it"><span class="fnb-code">ALTIN</span><span class="fnb-price">6.896,90</span><span class="fnb-chg">-0,77%</span></div><div class="fnb-it"><span class="fnb-code">BIST</span><span class="fnb-price">14.641,56</span><span class="fnb-chg">+0,45%</span></div></div></div></div><div class="flex items-center gap-2 justify-end min-w-0 order-3 overflow-hidden" style="flex:33 1 0%;max-width:33%;width:33%"><div><div class="wtr-widget relative flex items-center gap-2.5  " style="--wtr-c-fg:#ffffff;--wtr-c-ic:#ffffff"><span class="wtr-pin-ic" aria-hidden="true"></span><span>İstanbul</span><span class="wtr-chev-ic" aria-hidden="true"></span><div class="wtr-info flex items-center gap-1.5 text-xs font-bold pl-2.5 border-l "><span class="wtr-icon text-sm">☀️</span><span class="wtr-temp font-black text-amber-500 dark:text-amber-400">22°C</span><span class="wtr-desc text-[11px] hidden lg:inline text-current opacity-75">Güneşli</span></div></div></div></div></div></div><div class="header-layer-tier w-full transition-colors relative z-45 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800/80" style="--layer-bg:#d7050f"><div class="max-w-(--max-width) mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-4 w-full"><div class="flex items-center gap-2 sm:gap-3 justify-start min-w-0 order-1 overflow-hidden" style="flex:17.2 1 0%;max-width:17.2%;width:17.2%"><div><div class="flex items-center justify-start text-left select-none"><a title="gundemx" class="flex min-w-0 items-center gap-3 group" href="https://gunaydinaydin.com/"><img alt="gundemx" width="245" height="70" class="w-auto  object-contain hidden dark:block" title="gundemx" style="height:70px;object-fit:contain"><img alt="gundemx" width="245" height="70" class="w-auto  object-contain dark:hidden" title="gundemx" style="height:70px;object-fit:contain"><div class="sr-only">gundemx - Haber &amp; İçerik Portalı</div></a></div></div></div><div class="flex items-center gap-2 sm:gap-3 justify-center min-w-0 order-2 text-center overflow-hidden" style="flex:69 1 0%;max-width:69%;width:69%"><div><span class="srch-ic" aria-hidden="true"></span><span class="srch-tx">Haberlerde ara...</span></div></div><div class="flex items-center gap-2 justify-end min-w-0 order-3 overflow-hidden" style="flex:13.8 1 0%;max-width:13.8%;width:13.8%"><div><span class="srch-ic" aria-hidden="true"></span></div><div><div class="flex items-center"><span class="ttg-moon"></span><span class="ttg-sun"></span></div></div><div><a class="cta-btn" style="--cta-fs:12px;--cta-py:0px;--cta-px:13px;--cta-h:36px;--cta-i:16px;--cta-radius:100px;--cta-main-light:#3b4046;--cta-fg-light:#ffffff;--cta-main-dark:#3b4046;--cta-fg-dark:#ffffff;--cta-c-bg:#ffffff33;--cta-c-bd:#ffffff33;--cta-c-fg:#ffffff;--cta-c-ic:#ffffff;--cta-c-h-bg:#00000040;--cta-c-h-bd:#00000040;--cta-c-h-fg:#ffffff;--cta-c-h-ic:#ffffff" title="Giriş Yap" href="https://gunaydinaydin.com/uye/giris"><span class="cta-ic" aria-hidden="true"></span></a></div></div></div></div></div><div class="hidden lg:block sticky top-0 z-40 transition-shadow duration-200"><div class="header-layer-tier w-full transition-colors relative z-40 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800/80"><div class="max-w-(--max-width) mx-auto px-4 sm:px-6 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-4 w-full"><div class="flex items-center gap-2 sm:gap-3 justify-start min-w-0 order-1 overflow-hidden" style="flex:100 1 0%;max-width:100%;width:100%"><div><nav class="flex items-center gap-1 sm:gap-2 flex-wrap w-full min-w-0 justify-start"><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/son-dakika"><span>Son Dakika</span><span class="text-[9px] font-black uppercase px-1.5 py-0.2 rounded-full bg-brand-500 text-white animate-pulse">CANLI</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/genel"><span>Genel</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/gundem"><span>Gündem</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/asayis"><span>Asayiş</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/siyaset"><span>Siyaset</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/spor"><span>Spor</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/saglik"><span>Sağlık</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/ekonomi"><span>Ekonomi</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/canli-yayin"><span>Canlı Yayın</span></a></div><div class="relative"><a class="relative px-(--nav-px,0.75rem) py-1.5 text-xs sm:text-sm font-bold transition flex items-center gap-1 uppercase tracking-wider text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) hover:text-(--hc-hv-l,rgb(var(--brand-500))) dark:hover:text-(--hc-hv-d,rgb(var(--brand-500))) transition-colors after:absolute after:left-(--nav-px,0.75rem) after:right-(--nav-px,0.75rem) after:bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-(--cat-accent,rgb(var(--brand-500))) after:transition-transform after:duration-300 hover:after:scale-x-100" href="https://gunaydinaydin.com/resmi-ilanlar"><span>Resmi İlanlar</span></a></div></nav></div></div></div></div></div><div class="hidden lg:block"><div class="header-layer-tier w-full transition-colors relative z-35 bg-white dark:bg-slate-900 " style="--layer-bg:#ffffff;--layer-dark-bg:#1c1e20"><div class="max-w-(--max-width) mx-auto px-4 sm:px-6 py-1.5 flex items-center justify-between gap-2 sm:gap-4 w-full"><div class="flex items-center gap-2 sm:gap-3 justify-start min-w-0 order-1 overflow-hidden" style="flex:100 1 0%;max-width:100%;width:100%"><div class="flex-1 w-full min-w-0"><div class="bn-bar flex items-center gap-2 sm:gap-3 w-full max-w-full min-w-0 overflow-hidden select-none" style="max-width:100%;min-width:0;--bn-c-d-t-bg:#ffffff;--bn-c-d-t-fg:#000000;--bn-c-ctrl-bg:#ffffff;--bn-c-d-ctrl-fg:#000000"><div class="bn-badge"><span>SON DAKİKA</span></div><div class="flex items-center gap-2 sm:gap-3 flex-1 min-w-0 overflow-hidden"><div class="relative overflow-hidden flex-1 min-w-0 h-7 flex items-center"><div class="animate-in slide-in-from-bottom-3 fade-in duration-300 flex items-center gap-2 w-full min-w-0"><span class="bn-time shrink-0">22:13</span><a class="bn-link text-xs sm:text-sm font-semibold truncate block min-w-0 flex-1" title="Germencik’te ağaçlar budanıyor, çevre güzelleşiyor" href="https://gunaydinaydin.com/germencik-te-agaclar-budaniyor-cevre-guzellesiyor">Germencik’te ağaçlar budanıyor, çevre güzelleşiyor</a></div></div><div class="flex items-center gap-1.5 shrink-0"><div class="bn-controls"></div></div></div></div></div></div></div></div></div></header><div class="ad-slot-container my-3 overflow-hidden text-center max-w-(--max-width) mx-auto px-4"><a href="http://www.beriltas.com.tr/" class="block mx-auto transition hover:opacity-95" style="width:min(100%, 970px, 1358px)"><img alt="Beril Dogaltas" class="block w-full h-auto rounded-md shadow-xs object-contain" width="970" height="250" style="aspect-ratio:970 / 250"></a></div><div class="max-w-(--max-width) mx-auto px-4 py-6 sm:py-8 space-y-10"><div class="grid grid-cols-1 lg:grid-cols-(--article-grid-cols) gap-8 lg:gap-10 items-start" style="--article-grid-cols:minmax(0, 67fr) minmax(0, 33fr)"><main class="min-w-0 bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 p-5 sm:p-8 rounded-2xl transition-all"><article class="space-y-6"><nav aria-label="Sayfa yolu" class="flex select-none flex-wrap items-center gap-2 text-xs text-slate-500 dark:text-slate-400"><a class="inline-flex items-center gap-1 transition hover:text-(--primary)" href="https://gunaydinaydin.com/"><span>Ana Sayfa</span></a><a class="font-medium transition hover:text-(--primary)" href="https://gunaydinaydin.com/aydin">Aydın</a><span class="max-w-[200px] truncate font-normal text-slate-400 dark:text-slate-500 sm:max-w-xs">Dilaver Demir’in yönetim listesi belli oldu</span></nav><div class="space-y-3 "><h1 class="text-2xl sm:text-3xl font-extrabold font-(family-name:--font-heading) leading-tight tracking-tight text-slate-900 dark:text-white">Dilaver Demir’in yönetim listesi belli oldu</h1></div><div><p class="text-base sm:text-lg text-(--hc-tx-l,#3b4046) dark:text-(--hc-tx-d,#b8c0c8) font-medium leading-relaxed">Yeni Parti Aydın İl Başkanlığı 1. Olağan Kongresi’nde delegeler oy kullanmaya başladı. Tek aday Dilaver Demir’in yönetim listesi belli oldu. Sandıklar saat 17.00’de kapanacak.</p></div><div><div class="cat-card cat-card-body flex select-none flex-wrap items-center justify-between gap-3 border-y border-slate-200 py-3 text-xs text-(--hc-su-l,#6e7781) dark:text-(--hc-su-d,#919ba5) dark:border-slate-800"><div class="flex flex-wrap items-center gap-3"><a class="flex items-center gap-2.5 font-bold text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) transition hover:opacity-80" href="https://gunaydinaydin.com/kemal"><span class="inline-flex shrink-0 rounded-full p-[2px]" style="background:linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7)"><span class="inline-flex rounded-full bg-white p-[2px] dark:bg-slate-900"><span class="block overflow-hidden rounded-full" style="width:30px;height:30px"><span class="flex h-full w-full items-center justify-center bg-slate-100 font-bold text-slate-500 dark:bg-slate-800 dark:text-slate-300" style="font-size:13px">K</span></span></span></span><span>Kemal Altan</span></a><span aria-hidden="true">•</span><time class="flex items-center gap-1" datetime="2026-10-26T11:36:19.071Z"> 26 Ekim 2026 14:36</time></div></div></div><figure class="space-y-2"><img alt="Dilaver Demir’in yönetim listesi belli oldu" width="1280" height="720" class="w-full h-full object-cover"><span aria-hidden="true" class="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-xs transition duration-300 group-hover:scale-110 group-hover:bg-black/70"></span></figure><div class="flex select-none flex-wrap items-center justify-between gap-2 py-2.5 border-y border-slate-100 dark:border-slate-800/80"><div class="flex items-center"><a href="https://www.google.com/preferences/source?q=gunaydinaydin.com" class="inline-flex h-9 items-center gap-2 rounded-full border border-slate-200 bg-transparent px-3.5 text-xs font-bold text-slate-700 transition hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"><span>Google&#x27;da Abone Ol</span></a></div><div class="ml-auto flex items-center gap-2"><span>0</span><span>0</span><span>Paylaş</span></div></div><div class="prose prose-slate dark:prose-invert max-w-none text-slate-800 dark:text-slate-200 text-base sm:text-lg leading-relaxed"><div class="article-html-content space-y-4 "><div><p dir="ltr"><span>Yeni Parti Aydın İl Başkanlığı’nın 1. Olağan Kongresi’nde delegeler oy kullanmaya başladı. Ön seçimde beş aday arasında birinci olan Dilaver Demir’in tek aday olarak girdiği kongrede, il yönetim kurulu listesi de belli oldu. Oy verme işleminin saat 17.00’de sona ermesi bekleniyor.</span></p></div><div>
+
+<figure class="kg-card kg-image-card"><span class="zoomable-image"><img class="kg-image" width="1280" height="720"></span></figure>
+
+<p dir="ltr"><span>Yeni Parti Aydın İl Başkanlığı’nın 1. Olağan Kongresi, Çeştepe Düğün Salonu’nda gerçekleştiriliyor. Saat 10.30’da başlayan kongrede delegeler sandık başına giderek oylarını kullanmaya başladı.</span></p>
+
+<p dir="ltr"><span>Ön seçim sürecinde beş aday arasında birinci olan Dilaver Demir, kongreye tek aday olarak katılıyor. Kongrede il başkanlığı seçiminin yanı sıra partinin Aydın’daki yeni dönem yönetim kadrosu da gündeme geldi.</span></p></div><aside aria-label="Bunlar da İlginizi Çekebilir" class="not-prose my-6 rounded-xl border border-slate-200/90 bg-slate-50/80 p-3.5 dark:border-slate-700/70 dark:bg-slate-800/40 sm:p-4"><div class="mb-3 flex items-center gap-2"><span class="h-4 w-1 shrink-0 rounded-full bg-brand-500" aria-hidden="true"></span><span class="text-xs font-black uppercase tracking-wide text-slate-900 dark:text-white sm:text-[13px]">Bunlar da İlginizi Çekebilir</span></div><div class="grid grid-cols-2 sm:grid-cols-3 gap-3"><a class="group flex flex-col overflow-hidden rounded-lg border border-slate-200/80 bg-white transition hover:shadow-md dark:border-slate-700/60 dark:bg-slate-800/60 col-span-2 sm:col-span-1" href="https://gunaydinaydin.com/pehlivan-develer-arenaya-hazirlaniyor"><div class="relative overflow-hidden bg-slate-100 dark:bg-slate-800 aspect-16/10 w-full"><img alt="Pehlivan develer arenaya hazırlanıyor!" class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105"></div><span class="block p-2.5"><span class="line-clamp-3 text-[13px] font-bold leading-snug text-slate-900 transition group-hover:text-brand-500 dark:text-slate-100">Pehlivan develer arenaya hazırlanıyor!</span></span></a><a class="group flex flex-col overflow-hidden rounded-lg border border-slate-200/80 bg-white transition hover:shadow-md dark:border-slate-700/60 dark:bg-slate-800/60 " href="https://gunaydinaydin.com/zeytinyaginda-siki-denetim"><div class="relative overflow-hidden bg-slate-100 dark:bg-slate-800 aspect-16/10 w-full"><img alt="Zeytinyağında sıkı denetim!" class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105"></div><span class="block p-2.5"><span class="line-clamp-3 text-[13px] font-bold leading-snug text-slate-900 transition group-hover:text-brand-500 dark:text-slate-100">Zeytinyağında sıkı denetim!</span></span></a><a class="group flex flex-col overflow-hidden rounded-lg border border-slate-200/80 bg-white transition hover:shadow-md dark:border-slate-700/60 dark:bg-slate-800/60 " href="https://gunaydinaydin.com/buyuksehir-in-2027-yili-butcesi-onaylandi"><div class="relative overflow-hidden bg-slate-100 dark:bg-slate-800 aspect-16/10 w-full"><img alt="Büyükşehir’in 2027 yılı bütçesi onaylandı" class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105"></div><span class="block p-2.5"><span class="line-clamp-3 text-[13px] font-bold leading-snug text-slate-900 transition group-hover:text-brand-500 dark:text-slate-100">Büyükşehir’in 2027 yılı bütçesi onaylandı</span></span></a></div></aside><div>
+
+<p dir="ltr"><b><strong>Dilaver Demir’in yönetim listesi belli oldu</strong></b></p>
+
+<p dir="ltr"><span>Kongre öncesinde merak edilen konuların başında gelen il yönetim kurulu listesi belli oldu. Delegelerin oy verme işlemi devam ederken gözler, seçim sürecinin tamamlanmasına çevrildi.</span></p>
+
+<p dir="ltr"><b><strong>Sandıklar saat 17.00’de kapanacak</strong></b></p>
+
+<p dir="ltr"><span>Kongrede oy verme işleminin saat 17.00’de sona ermesi bekleniyor. Sandıkların kapanmasının ardından oyların sayılmasıyla birlikte Yeni Parti Aydın’da Dilaver Demir ve Yönetim listesi onaylanmış olacak.</span></p>
+
+<figure class="kg-card kg-image-card"><span class="zoomable-image"><img class="kg-image" width="1200" height="1600"></span></figure>
+
+<p dir="ltr"><b><strong>İşte Dilaver Demir’in yönetim listesi</strong></b></p>
+
+<p dir="ltr"><span>Şule Akalın, Hakkı Aksoy, Volkan Aktemur, Mehmet Aslan, Levent Ataş, Müge Başakçı, Bekir Bayar, Nazike Cengi, Duygu Sandıklıli Coşgun, Yıldıray Çakmak, Ozan Dinç, Selma Böcekçioğlu Dündar, Sinan Egemen, Mehmet Esen, Yusuf Gökçe, Hasan Işık, Nilay Ataman Kamacı, Banu Karaaslan, Damla Karababa, Fatih Karahan, Altan Kemerci, Kayhan Kirişli, Gökhan Öğmen, Remziye Özbek, Yusuf Özdil, Tayfun Şahin, Gülseren Şengül, Vefa Berk Tezsezener, Sinan Tosun, Hasan Vardar, Yezdan Yıldırım ve Ezgi Algül Yörük.</span></p>
+
+<p dir="ltr"><b><strong>İl yönetim kurulu yedek üyeleri:</strong></b></p>
+
+<p dir="ltr"><span>Ceylan Sarı, Cafer Demirtaş, Sevil Gökçe, Seyit Ali Turgut, Gürhan Cem Ulucan, Gökhan Gürbüz, Cemran Melissa Ulutaş, Emrah Taş, Özgün Yalem, Hakan Ilgın, Cüneyt Çetin, Hüsniye Boran Dağlıca, Sibel Kıdış, Seval Çetin, Ender Kapkara, Hikmet Kaya, Barış Karataş, Naim Homitov, Şentürk Aydın, Arif Çelik, Fatih Bulaktaşı, Nil Pınar Sönmez, Meral Boruzan, Gülay Akosman, Burak Karaoğlu, Rukiye Urgancı, Batıralp Toros, Beril Vardarlı, Rıfat Akcan, Gönül Kurt, Filiz Özmen ve Levent Uslu.</span></p></div></div></div><div class="ad-slot-container my-3 overflow-hidden text-center "><a href="#" class="block mx-auto transition hover:opacity-95" style="width:min(100%, 2048px, 933px)"><img alt="reklam iç" class="block w-full h-auto rounded-md shadow-xs object-contain" width="2048" height="768" style="aspect-ratio:2048 / 768"></a></div><div id="yorumlar" class="pt-6 border-t scroll-mt-24"><section id="comments" class="pt-8 border-t border-slate-200 dark:border-slate-800 space-y-8"><div class="flex items-center justify-between flex-wrap gap-3"><h3 class="text-lg sm:text-xl font-bold flex items-center gap-2.5 font-(family-name:--font-heading)"><span>Okuyucu Yorumları</span><span class="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold">0</span></h3></div><div class="space-y-4"><div class="p-6 sm:p-8 text-center bg-slate-50 dark:bg-[#1c1e20]/60 rounded-xl border border-slate-200 dark:border-slate-800"><p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Bu habere henüz yorum yapılmamış. İlk görüşü siz paylaşın!</p></div></div><div class="cat-card cat-card-body p-6 bg-(--hc-bg-l,#f8f9fa) dark:bg-(--hc-bg-d,rgb(28_30_32/0.8)) rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4"><h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 flex items-center gap-2"><span>Yeni Bir Yorum Bırakın</span></h4><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div>Adınız Soyadınız *</div><div>E-Posta Adresiniz * (Gizli tutulur)</div></div><div>Yorumunuz *</div>Yorumu Yayınla</div></section></div></article></main><aside class="min-w-0 space-y-6"><div class="flex flex-col gap-6 sm:gap-8 w-full"><section class="w-full p-4 sm:p-5 bg-(--hc-bg-l,#ffffff) dark:bg-(--hc-bg-d,#1c1e20) border border-slate-200 dark:border-slate-800 space-y-3.5 transition-colors" style="border-radius:var(--radius)"><div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2.5"><div class="flex items-center gap-2"><div class="w-6 h-6 rounded-md bg-brand-50 dark:bg-brand-950/60 text-brand-500 flex items-center justify-center shrink-0"></div><h2 class="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-slate-100 font-(family-name:--font-heading)">En Çok Okunanlar</h2></div><span class="text-[10px] font-bold uppercase tracking-wider text-(--cat-accent,rgb(var(--brand-600))) dark:text-(--cat-accent,rgb(var(--brand-400))) bg-brand-50 dark:bg-brand-950/50 px-2 py-0.5 rounded-full">Popüler</span></div><div class="space-y-1 divide-y divide-slate-100 dark:divide-slate-800/60"><a class="group flex items-center gap-3 py-2.5 first:pt-1 last:pb-1 rounded-md hover:bg-slate-50 dark:hover:bg-slate-800/40 px-1.5 transition" href="https://gunaydinaydin.com/pehlivan-develer-arenaya-hazirlaniyor"><span class="w-6 h-6 rounded-md flex items-center justify-center font-black text-xs shrink-0 bg-linear-to-br from-brand-400 to-brand-600 text-white">1</span><div class="w-14 h-11 rounded overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Pehlivan develer arenaya hazırlanıyor!" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div><div class="flex-1 min-w-0 space-y-0.5"><h3 class="text-xs font-bold line-clamp-2 leading-snug text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) transition">Pehlivan develer arenaya hazırlanıyor!</h3><div class="flex items-center gap-2 text-[10px] font-medium text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#919ba5)"><span class="text-(--cat-accent,rgb(var(--brand-600))) dark:text-(--cat-accent,rgb(var(--brand-400))) font-semibold truncate max-w-[100px]">Aydın</span><span>•</span><span class="shrink-0">21 Kas</span></div></div></a><a class="group flex items-center gap-3 py-2.5 first:pt-1 last:pb-1 rounded-md hover:bg-slate-50 dark:hover:bg-slate-800/40 px-1.5 transition" href="https://gunaydinaydin.com/baskan-gencay-gece-sahaya-indi"><span class="w-6 h-6 rounded-md flex items-center justify-center font-black text-xs shrink-0 bg-linear-to-br from-slate-400 to-slate-600 text-white">2</span><div class="w-14 h-11 rounded overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Başkan Gençay gece sahaya indi!" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div><div class="flex-1 min-w-0 space-y-0.5"><h3 class="text-xs font-bold line-clamp-2 leading-snug text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) transition">Başkan Gençay gece sahaya indi!</h3><div class="flex items-center gap-2 text-[10px] font-medium text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#919ba5)"><span class="text-(--cat-accent,rgb(var(--brand-600))) dark:text-(--cat-accent,rgb(var(--brand-400))) font-semibold truncate max-w-[100px]">Didim</span><span>•</span><span class="shrink-0">21 Kas</span></div></div></a><a class="group flex items-center gap-3 py-2.5 first:pt-1 last:pb-1 rounded-md hover:bg-slate-50 dark:hover:bg-slate-800/40 px-1.5 transition" href="https://gunaydinaydin.com/soke-mhp-il-olmak-icin-hazirlik-yapiyor"><span class="w-6 h-6 rounded-md flex items-center justify-center font-black text-xs shrink-0 bg-linear-to-br from-brand-700 to-brand-900 text-white">3</span><div class="w-14 h-11 rounded overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Söke MHP, il olmak için hazırlık yapıyor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div><div class="flex-1 min-w-0 space-y-0.5"><h3 class="text-xs font-bold line-clamp-2 leading-snug text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) transition">Söke MHP, il olmak için hazırlık yapıyor</h3><div class="flex items-center gap-2 text-[10px] font-medium text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#919ba5)"><span class="text-(--cat-accent,rgb(var(--brand-600))) dark:text-(--cat-accent,rgb(var(--brand-400))) font-semibold truncate max-w-[100px]">Siyaset</span><span>•</span><span class="shrink-0">21 Kas</span></div></div></a><a class="group flex items-center gap-3 py-2.5 first:pt-1 last:pb-1 rounded-md hover:bg-slate-50 dark:hover:bg-slate-800/40 px-1.5 transition" href="https://gunaydinaydin.com/anadolu-birligi-partisinde-buyuk-kongre-heyecani"><span class="w-6 h-6 rounded-md flex items-center justify-center font-black text-xs shrink-0 bg-slate-100 dark:bg-slate-800 text-(--hc-su-l,#6e7781) dark:text-(--hc-su-d,#919ba5) font-bold">4</span><div class="w-14 h-11 rounded overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Anadolu Birliği Partisi’nde büyük kongre heyecanı!" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div><div class="flex-1 min-w-0 space-y-0.5"><h3 class="text-xs font-bold line-clamp-2 leading-snug text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) transition">Anadolu Birliği Partisi’nde büyük kongre heyecanı!</h3><div class="flex items-center gap-2 text-[10px] font-medium text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#919ba5)"><span class="text-(--cat-accent,rgb(var(--brand-600))) dark:text-(--cat-accent,rgb(var(--brand-400))) font-semibold truncate max-w-[100px]">Siyaset</span><span>•</span><span class="shrink-0">21 Kas</span></div></div></a><a class="group flex items-center gap-3 py-2.5 first:pt-1 last:pb-1 rounded-md hover:bg-slate-50 dark:hover:bg-slate-800/40 px-1.5 transition" href="https://gunaydinaydin.com/ozdag-trafolara-kedilerin-girmemesi-icin-is-birligi-yapacagiz"><span class="w-6 h-6 rounded-md flex items-center justify-center font-black text-xs shrink-0 bg-slate-100 dark:bg-slate-800 text-(--hc-su-l,#6e7781) dark:text-(--hc-su-d,#919ba5) font-bold">5</span><div class="w-14 h-11 rounded overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Özdağ “TRAFOLARA KEDİLERİN GİRMEMESİ İÇİN İŞ BİRLİĞİ YAPACAĞIZ”" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div><div class="flex-1 min-w-0 space-y-0.5"><h3 class="text-xs font-bold line-clamp-2 leading-snug text-(--hc-tx-l,#272a2e) dark:text-(--hc-tx-d,#dbe0e5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) transition">Özdağ “TRAFOLARA KEDİLERİN GİRMEMESİ İÇİN İŞ BİRLİĞİ YAPACAĞIZ”</h3><div class="flex items-center gap-2 text-[10px] font-medium text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#919ba5)"><span class="text-(--cat-accent,rgb(var(--brand-600))) dark:text-(--cat-accent,rgb(var(--brand-400))) font-semibold truncate max-w-[100px]">Siyaset</span><span>•</span><span class="shrink-0">21 Kas</span></div></div></a></div></section></div></aside></div><section class="pt-8 border-t border-slate-200 dark:border-slate-800 space-y-8"><div class="flex flex-col gap-6 sm:gap-8 w-full"><section class="w-full space-y-4 @container my-3 select-none"><div class="flex items-center justify-between gap-4 border-b border-slate-200/80 dark:border-slate-800 pb-2.5"><h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2.5 tracking-tight"><span class="w-1.5 h-4 sm:h-5 rounded-sm shrink-0" style="background-color:var(--primary, #2563eb)"></span><span>İlginizi Çekebilecek Diğer Haberler</span></h2></div><div class="grid grid-cols-1 @sm:grid-cols-2 @2xl:grid-cols-4 gap-4 sm:gap-5"><a class="cat-card group flex flex-col bg-(--hc-bg-l,#ffffff) dark:bg-(--hc-bg-d,#1c1e20) border border-slate-200/90 dark:border-slate-800 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 overflow-hidden rounded-lg" href="https://gunaydinaydin.com/germencik-te-agaclar-budaniyor-cevre-guzellesiyor"><div class="relative aspect-16/10 overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Germencik’te ağaçlar budanıyor, çevre güzelleşiyor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"><span class="absolute top-2.5 left-2.5 z-10 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs text-white bg-slate-900/80">Genel</span></div><div class="cat-card-body p-3 sm:p-3.5 flex flex-col justify-between flex-1 gap-2"><div class="space-y-1.5"><h3 class="text-xs sm:text-[13px] font-bold text-(--hc-tx-l,#1c1e20) dark:text-(--hc-tx-d,#f1f3f5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) line-clamp-2 leading-snug transition-colors">Germencik’te ağaçlar budanıyor, çevre güzelleşiyor</h3></div><div class="pt-2 text-[10px] sm:text-[11px] text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#6e7781) font-medium border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-1"><span class="truncate">Haber Merkezi</span><span class="shrink-0">21 Kas 2026</span></div></div></a><a class="cat-card group flex flex-col bg-(--hc-bg-l,#ffffff) dark:bg-(--hc-bg-d,#1c1e20) border border-slate-200/90 dark:border-slate-800 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 overflow-hidden rounded-lg" href="https://gunaydinaydin.com/nazilli-kaleyi-saglama-aldi"><div class="relative aspect-16/10 overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Nazilli kaleyi sağlama aldı!" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"><span class="absolute top-2.5 left-2.5 z-10 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs text-white bg-slate-900/80">Spor</span></div><div class="cat-card-body p-3 sm:p-3.5 flex flex-col justify-between flex-1 gap-2"><div class="space-y-1.5"><h3 class="text-xs sm:text-[13px] font-bold text-(--hc-tx-l,#1c1e20) dark:text-(--hc-tx-d,#f1f3f5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) line-clamp-2 leading-snug transition-colors">Nazilli kaleyi sağlama aldı!</h3></div><div class="pt-2 text-[10px] sm:text-[11px] text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#6e7781) font-medium border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-1"><span class="truncate">Kemal Altan</span><span class="shrink-0">21 Kas 2026</span></div></div></a><a class="cat-card group flex flex-col bg-(--hc-bg-l,#ffffff) dark:bg-(--hc-bg-d,#1c1e20) border border-slate-200/90 dark:border-slate-800 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 overflow-hidden rounded-lg" href="https://gunaydinaydin.com/incirliova-belediyespor-deplasmanda-kazandi-namaglup-serisini-surdurdu"><div class="relative aspect-16/10 overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="İncirliova Belediyespor deplasmanda kazandı namağlup serisini sürdürdü" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"><span class="absolute top-2.5 left-2.5 z-10 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs text-white bg-slate-900/80">Spor</span></div><div class="cat-card-body p-3 sm:p-3.5 flex flex-col justify-between flex-1 gap-2"><div class="space-y-1.5"><h3 class="text-xs sm:text-[13px] font-bold text-(--hc-tx-l,#1c1e20) dark:text-(--hc-tx-d,#f1f3f5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) line-clamp-2 leading-snug transition-colors">İncirliova Belediyespor deplasmanda kazandı namağlup serisini sürdürdü</h3></div><div class="pt-2 text-[10px] sm:text-[11px] text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#6e7781) font-medium border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-1"><span class="truncate">Haber Merkezi</span><span class="shrink-0">21 Kas 2026</span></div></div></a><a class="cat-card group flex flex-col bg-(--hc-bg-l,#ffffff) dark:bg-(--hc-bg-d,#1c1e20) border border-slate-200/90 dark:border-slate-800 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 overflow-hidden rounded-lg" href="https://gunaydinaydin.com/deve-guresi-sahasinda-hazirliklar-tamamlandi"><div class="relative aspect-16/10 overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0"><img alt="Deve güreşi sahasında hazırlıklar tamamlandı" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"><span class="absolute top-2.5 left-2.5 z-10 text-[10px] font-bold px-2 py-0.5 rounded shadow-xs text-white bg-slate-900/80">Genel</span></div><div class="cat-card-body p-3 sm:p-3.5 flex flex-col justify-between flex-1 gap-2"><div class="space-y-1.5"><h3 class="text-xs sm:text-[13px] font-bold text-(--hc-tx-l,#1c1e20) dark:text-(--hc-tx-d,#f1f3f5) group-hover:text-(--hc-hv-l,rgb(var(--brand-600))) dark:group-hover:text-(--hc-hv-d,rgb(var(--brand-400))) line-clamp-2 leading-snug transition-colors">Deve güreşi sahasında hazırlıklar tamamlandı</h3></div><div class="pt-2 text-[10px] sm:text-[11px] text-(--hc-su-l,#919ba5) dark:text-(--hc-su-d,#6e7781) font-medium border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-1"><span class="truncate">Haber Merkezi</span><span class="shrink-0">21 Kas 2026</span></div></div></a></div></section></div></section></div><footer class="w-full relative mt-16 sm:mt-20 select-none"><div class="footer-layer-tier w-full transition-colors relative bg-slate-900 text-slate-200 border-t border-b border-[hsl(0_0%_19.8%)]" style="--footer-layer-bg:#1c1e20"><div class="max-w-(--max-width) mx-auto px-4 sm:px-6 py-3 sm:py-4 grid grid-cols-1  lg:grid-cols-(--footer-grid-cols) gap-8 lg:gap-12 items-start" style="--footer-grid-cols:minmax(0, 100fr)"><div class="flex flex-col gap-6 min-w-0"><div><div class="space-y-2.5"><div class="sc-list" style="--sc-size:46px;--sc-gap:10px"><a href="https://www.facebook.com/gunaydingazetesi" class="sc-item" style="--sc-brand:#0866FF;--sc-brand-l:#0866FF;--sc-brand-d:#0866FF;--sc-on-brand:#ffffff" title="Facebook" aria-label="Facebook"></a><a href="https://www.instagram.com/gunaydingzt/" class="sc-item" style="--sc-brand:#FF0069;--sc-brand-l:#FF0069;--sc-brand-d:#FF0069;--sc-on-brand:#ffffff" title="Instagram" aria-label="Instagram"></a></div></div></div></div></div></div><div class="footer-layer-tier w-full transition-colors relative bg-slate-900 text-slate-200 border-b border-[hsl(0_0%_19.8%)]"><div class="max-w-(--max-width) mx-auto px-4 sm:px-6 py-10 sm:py-14 grid grid-cols-1  lg:grid-cols-(--footer-grid-cols) gap-8 lg:gap-12 items-start" style="--footer-grid-cols:minmax(0, 100fr)"><div class="flex flex-col gap-6 min-w-0"><div><div class="fm-menu space-y-3 min-w-[160px]"><ul class="fm-list text-xs opacity-75 flex flex-wrap items-center gap-x-4 gap-y-2"><li class="flex items-center gap-1.5"><a class="fm-link hover:opacity-100 hover:text-brand-500 transition" href="https://gunaydinaydin.com/">Ana Sayfa</a></li><li class="flex items-center gap-1.5"><a class="fm-link hover:opacity-100 hover:text-brand-500 transition" href="https://gunaydinaydin.com/hakkimizda">Hakkımızda</a></li><li class="flex items-center gap-1.5"><a class="fm-link hover:opacity-100 hover:text-brand-500 transition" href="https://gunaydinaydin.com/kunye">Künye</a></li><li class="flex items-center gap-1.5"><a class="fm-link hover:opacity-100 hover:text-brand-500 transition" href="https://gunaydinaydin.com/gizlilik-politikasi">Gizlilik Politikası</a></li><li class="flex items-center gap-1.5"><a class="fm-link hover:opacity-100 hover:text-brand-500 transition" href="https://gunaydinaydin.com/gazete-mansetleri">Gazete Manşetleri</a></li><li class="flex items-center gap-1.5"><a class="fm-link hover:opacity-100 hover:text-brand-500 transition" href="https://gunaydinaydin.com/iletisim">İletişim</a></li></ul></div></div></div></div></div><div class="footer-layer-tier w-full transition-colors relative bg-slate-950 text-slate-100 "><div class="max-w-(--max-width) mx-auto px-4 sm:px-6 py-3 sm:py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-(--footer-grid-cols) gap-8 lg:gap-12 items-start" style="--footer-grid-cols:minmax(0, 65fr) minmax(0, 35fr)"><div class="flex flex-col gap-6 min-w-0"><div class="text-xs opacity-75 leading-normal select-none">© 2026 Günaydın Aydın. Tüm hakları saklıdır.</div></div><div class="flex flex-col gap-6 min-w-0"><div><style>
+        .ulakom-branding-align { display: flex; justify-content: center; width: 100%; }
+        @media (min-width: 768px) { .ulakom-branding-align { justify-content: flex-end; } }
+      </style><div class="ulakom-branding-align"><div style="display:flex;align-items:center;gap:6px;font-size:12px;opacity:0.8;user-select:none"><span>Haber Yazılımı:</span><a href="https://ulakom.com" title="Ulakom Haber Sistemi" style="display:inline-flex;align-items:center;gap:4px;font-weight:900;text-decoration:none;color:rgb(var(--brand-400));transition:color 150ms"><span>Ulakom</span></a></div></div></div></div></div></div></footer></div><div id="S:0"><div id="ulk-nav-progress" aria-hidden="true"><style>
+#ulk-nav-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:2147483647;pointer-events:none;opacity:0;transition:opacity .2s}
+#ulk-nav-progress[data-active="1"]{opacity:1;transition:none}
+#ulk-nav-progress>i{display:block;height:100%;overflow:hidden;box-shadow:0 0 8px var(--primary,#2563eb);transform-origin:0 50%;transform:scaleX(0)}
+#ulk-nav-progress>i::before{content:"";display:block;width:200%;height:100%;background:linear-gradient(90deg,var(--primary,#2563eb),var(--accent,#f59e0b),#ec4899,var(--primary,#2563eb),var(--accent,#f59e0b),#ec4899,var(--primary,#2563eb));animation:ulk-nav-flow 1.1s linear infinite}
+@keyframes ulk-nav-flow{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+#ulk-nav-progress[data-active="1"]>i{animation:ulk-nav-grow 8s cubic-bezier(.08,.8,.2,1) forwards}
+#ulk-nav-progress[data-active="1"][data-done="1"]{opacity:0;transition:opacity .25s}
+@keyframes ulk-nav-grow{0%{transform:scaleX(0)}10%{transform:scaleX(.35)}100%{transform:scaleX(.92)}}
+@media (prefers-reduced-motion:reduce){#ulk-nav-progress[data-active="1"]>i{animation:none;transform:scaleX(.6)}#ulk-nav-progress>i::before{animation:none}}
+</style><i></i></div></div>
+</body></html>

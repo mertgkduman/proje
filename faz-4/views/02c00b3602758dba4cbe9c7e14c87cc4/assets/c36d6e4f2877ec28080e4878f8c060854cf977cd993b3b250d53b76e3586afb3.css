@@ -1,0 +1,5683 @@
+﻿@font-face {
+    font-family: Cinzel;
+    src: none;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Cinzel;
+    src: none;
+    font-weight: 700;
+}
+
+
+
+@font-face {
+    font-family: Lato;
+    src: none;
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: Lato;
+    src: none;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Lato;
+    src: none;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: Inter;
+    src: none;
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: Inter;
+    src: none;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Inter;
+    src: none;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: Raleway;
+    src: none;
+    font-weight: 300;
+}
+
+
+
+@font-face {
+    font-family: Raleway;
+    src: none format('truetype'), 
+          none format('svg'), 
+          none format('woff'), 
+          url("8e9d1aba37a102665016fffea61a124e6c385d6783d6cef869f9910c6115a401.woff2") format('woff2'), 
+         none format('embedded-opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: none;
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: Raleway;
+    src: none;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: Poppins;
+    src: none;
+    font-weight: 100;
+}
+
+
+
+
+
+*:focus, *:hover {
+    outline: none;
+}
+
+
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+#header-container, #header-container-mobile {
+    background: #7e2525;
+}
+
+#header-container-menu {
+    background: #a89872;
+}
+
+
+
+#header-banner {
+    height: 120px;
+    width: 100%;
+    display: block;
+}
+
+
+#header-link {
+    position: absolute;
+    width: 100%;
+}
+
+
+#header-background {
+    background: #7e2525;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+#header-background-image {
+    position: relative;
+    z-index: 1;
+    width: 95%;
+    margin-right: 5%;
+    height: 120px;
+    float: right;
+    background: none no-repeat #7e2525;
+    background-position: right;
+}
+
+#header-logo {
+    position: absolute;
+    z-index: 2;
+    height: 86px;
+    top: 20px;
+    left: 100px;
+}
+
+    #header-logo img {
+        position: absolute;
+        height: 90%;
+    }
+
+#header-title {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 230px;
+    color: white;
+    font-family: 'Cinzel', sans-serif;
+}
+
+#header-title-main {
+    font-size: 29px;
+    display: block;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+#header-title-sub {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+#header-buttons-holder {
+    position: relative;
+    float: right;
+    z-index: 2;
+    height: 120px;
+    top: 16px;
+    right: 20px;
+    display: block;
+    width: 250px;
+    font-family: Raleway, sans-serif;
+}
+
+
+    #header-buttons-holder #header-language-button img {
+        right: 0px;
+        top: 5px;
+        position: absolute
+    }
+
+    #header-buttons-holder span.header-language-button-span {
+        right: 25px;
+        position: absolute
+    }
+
+    #header-buttons-holder a:hover {
+        color: #CCC;
+        cursor: pointer;
+    }
+
+
+
+#header-language-button {
+    position: relative;
+    float: right;
+    line-height: 26px;
+    font-size: 18px;
+    color: white;
+    width: 50px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+
+
+
+#header-search-area {
+    display: none;
+    width: 180px;
+    right: 75px;
+    position: relative;
+    height: 37px;
+    top: 50px;
+}
+
+
+#header-search-input {
+    height: 32px;
+    width: 140px;
+    border: 1px solid #dedede;
+    position: absolute;
+    right: 32px;
+    top: 0px;
+}
+
+#header-search-submit-button {
+    height: 32px;
+    width: 26px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    outline: none;
+    background: #7b2424;
+    border: none;
+}
+
+
+
+#header-search-input:focus, #header-search-input:hover {
+    outline: none;
+}
+
+
+#header-menu-bar {
+    background: #a89872;
+    height: 64px;
+    width: 100%;
+    display: block;
+}
+
+
+
+    #header-menu-bar .nav-link {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1.20px;
+        font-size: 14px;
+        margin-bottom: 13px;
+         margin-top: 14px;
+       
+        text-decoration: none !important;
+    }
+
+
+
+.nav-item.dropdown:hover .nav-link,
+.nav-item.dropdown:focus-within .nav-link {
+    background-color: #fff;
+    color: black !important;
+    margin-bottom: 0px !important;
+   padding-top: 13px !important; 
+    padding-bottom: 13px !important;
+    margin-top: 0px !important;
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.2), 10px 0 15px rgba(0, 0, 0, 0.2), 10px -10px 15px rgba(0, 0, 0, 0.2);
+   font-weight:bold;
+}
+
+
+
+
+
+
+
+#anasayfa-banner-area {
+    width: 100%;
+    display: block;
+    min-height: 400px;
+}
+
+    #anasayfa-banner-area .container {
+        padding: 0px;
+    }
+
+
+
+#carouselAnasayfaSlider {
+    min-height: 480px;
+}
+
+.haberImgHolder {
+    min-height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#carousel-indicators-holder {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 5;
+    background: #888888;
+    width: 100%;
+    display: block;
+    height: 50px;
+}
+
+
+
+#carousel-indicators-holder-left {
+    width: 85%;
+    float: left;
+}
+
+#carousel-indicators-holder-right {
+    width: 15%;
+    text-align: right;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+    #carousel-indicators-holder-right a {
+        color: white;
+        letter-spacing: 1.4px;
+        font-family: Raleway;
+    }
+
+
+
+#carousel-indicators-holder ol.carousel-indicators {
+    list-style: none;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+#carouselAnasayfaSlider .carousel-indicators li {
+    float: left;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    border: none;
+    line-height: 50px;
+    color: #fff !important;
+    background-color: #333;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    margin-left: 5px;
+    background: #888;
+    text-indent: 0px;
+    font-size: 16px;
+}
+
+    #carouselAnasayfaSlider .carousel-indicators li ::before {
+        color: #fff !important;
+    }
+
+    #carouselAnasayfaSlider .carousel-indicators li.active {
+        background: #393939
+    }
+
+
+#carouselAnasayfaSlider .carousel-caption {
+    right: 0%;
+    left: 0%;
+    padding: 20px 5%;
+    bottom: 50px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+#carouselAnasayfaSlider .carousel-baslik {
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+
+
+#anasayfa-social-area {
+    width: 100%;
+    height: 70px;
+    background: #dddddd;
+    display: block;
+}
+
+
+    #anasayfa-social-area a {
+        width: 18%;
+        float: left;
+        text-align: center;
+        height: 100%;
+    }
+
+
+
+
+#anasayfa-social-link-tbmm-tv {
+    width: 28% !important;
+}
+
+
+
+
+
+
+    #anasayfa-social-link-tbmm-tv img {
+        height: 26px !important;
+        float: left;
+    }
+
+
+
+
+
+
+
+#anasayfa-social-area div {
+    border-right: 1px solid #CCC;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+    height: 30px;
+}
+
+
+#anasayfa-social-link-youtube div {
+    border-right: none !important;
+}
+
+
+#anasayfa-social-link-tbmm-tv div {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+
+
+#tbmm-tv-img-text-holder {
+    width: 82px;
+    margin: 0 auto;
+    padding: 1px 0px;
+    display: block;
+    height: 40px;
+    color: #616161;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+    
+
+    #tbmm-tv-img-text-holder img {
+        margin: 0px;
+        width: 100%;
+    }
+
+
+
+#anasayfa-social-area a:hover {
+    background: #d7d7d7;
+}
+
+
+
+
+
+
+#anasayfa-social-area div img {
+    height: 20px;
+}
+
+
+#tbmm-tv-izle-text {
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    color: #414141;
+    margin-top: 2px;
+    margin-left: 15px;
+    float: left;
+}
+
+
+
+#tbmmde-bugun {
+    width: 100%;
+    height: 410px;
+    background: #fff;
+    display: block;
+    padding: 20px 0px 20px 20px;
+}
+
+
+#tbmmde-bugun-baslik-alani {
+    margin-top: -15px;
+    width: 100%;
+    height: 69px;
+    display: block;
+    border-bottom: 1px solid #6c4d00;
+}
+
+
+#tbmmde-bugun-gun {
+    padding-right: 15px;
+    max-width: 20%;
+    display: block;
+    height: 100%;
+    color: #6c4d00;
+    letter-spacing: 0px;
+    line-height: 68px;
+    font-size: 54px;
+    float: left;
+    text-align: left;
+    font-family: Poppins;
+    font-weight: 100;
+}
+
+#tbmmde-bugun-tarih-alani {
+    width: 58%;
+    color: #6c4d00;
+    display: block;
+    height: 100%;
+    float: left;
+    letter-spacing: 1px;
+}
+
+#tbmmde-bugun-gun-adi {
+    width: 100%;
+    display: block;
+    letter-spacing: 1px;
+    color: #6c4d00;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    margin-top: -3px;
+    height: 18px;
+}
+
+
+
+#tbmmde-bugun-ay-yil {
+    width: 100%;
+    display: block;
+    color: #6c4d00;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    margin-top: 8px
+}
+
+#tbmmde-bugun-yil {
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+}
+
+
+
+#tbmmde-bugun-splitter {
+    width: 1px;
+    margin-top: 24px;
+    background: #6c4d00;
+    float: left;
+    display: block;
+    height: 24px;
+}
+
+
+#tbmmde-bugun-hepsi-link {
+    width: 18%;
+    color: #6c4d00;
+    float: right;
+    display: block;
+    height: 60px;
+    line-height: 68px;
+    text-align: right;
+    letter-spacing: 0.84px;
+    font-family: Raleway;
+    font-size: 18px;
+}
+
+    #tbmmde-bugun-hepsi-link a {
+        color: #6c4d00;
+        letter-spacing: 1px;
+        font-size: 13px
+    }
+
+
+
+
+        #tbmmde-bugun-hepsi-link a img {
+            height: 10px;
+            position: relative;
+            top: -3px;
+            margin-left: 5px;
+        }
+
+
+.tbmmde-bugun-satir {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #d5d5d5;
+    padding: 10px 0px;
+}
+
+.tbmmde-bugun-baslik {
+    color: #555;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.tbmmde-bugun-aciklama {
+    color: #777777;
+    font-family: Raleway;
+    font-size: 13px;
+}
+
+
+#tbmmde-bugun-satirlarin-alani {
+    overflow: hidden;
+    height: 400px;
+}
+
+    #tbmmde-bugun-satirlarin-alani .frame ul.items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+        #tbmmde-bugun-satirlarin-alani .frame ul.items li {
+            float: left;
+            width: 100%;
+            cursor: pointer;
+        }
+
+
+
+
+#anasayfa-link-bar {
+    height: 110px;
+    background: #4b4f5a;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.anasayfa-link-bar-link {
+    display: block;
+    float: left;
+    border-right: 1px solid #c3af84;
+    text-align: center;
+    height: 80px;
+    color: #D6D6D6;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 12px;
+    width: 16.6%;
+    margin: 15px 0px;
+    letter-spacing: 1px;
+}
+
+
+    .anasayfa-link-bar-link:hover {
+        color: #c1ad82;
+    }
+
+
+
+    .anasayfa-link-bar-link div {
+        width: 100%;
+        margin-bottom: 11px;
+    }
+
+    .anasayfa-link-bar-link img {
+        max-height: 30px;
+    }
+
+
+
+
+
+
+
+.anasayfa-link-bar-link-kutuphane {
+    
+}
+
+
+.anasayfa-link-bar-link-anayasa {
+    
+}
+
+
+
+.anasayfa-link-bar-link-kanun {
+    
+}
+
+
+.anasayfa-link-bar-link-edilekce {
+    line-height: 38px;
+    border-right: none;
+}
+
+
+    .anasayfa-link-bar-link-edilekce span {
+        line-height: 38px;
+    }
+
+
+
+    .anasayfa-link-bar-link-edilekce div img {
+        padding-left: 12px
+    }
+
+
+
+
+.anasayfa-link-bar-link-bilgiedinme {
+    
+    border-right: none;
+}
+
+    .anasayfa-link-bar-link-bilgiedinme span {
+        line-height: 40px;
+    }
+
+
+    .anasayfa-link-bar-link-bilgiedinme div {
+        margin-top: 5px;
+    }
+
+
+
+.anasayfa-link-bar-link-edilekce div {
+    margin-bottom: 5px;
+}
+
+
+
+
+.anasayfa-link-bar-link-komisyon div {
+    margin-bottom: 5px;
+}
+
+
+
+.anasayfa-link-bar-link-komisyon span {
+    display: block;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+#header-container-menu {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(88,88,88,0.6);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(88,88,88,0.6);
+    box-shadow: 0px 3px 5px 0px rgba(88,88,88,0.6);
+}
+
+
+
+.scrollbar {
+    position: relative;
+    width: 4px;
+    height: 310px;
+    margin-top: 25px;
+    background: #e3e3e3;
+    line-height: 0;
+}
+
+    .scrollbar .handle {
+        width: 100%;
+        height: 100px;
+        background: #686868;
+        cursor: pointer;
+    }
+
+        .scrollbar .handle .mousearea {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 22px;
+            height: 100%;
+        }
+
+
+#tbmmde-bugun-scrollbar-holder {
+    width: 1%;
+    float: right;
+    height: 290px;
+}
+
+#tbmmde-bugun-satirlarin-alani .frame {
+    width: 96%;
+    margin-right: 1%;
+    height: 332px;
+    overflow: hidden;
+    float: left;
+}
+
+
+#anasayfa-haberler-area {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#anasayfa-haberler-bar {
+    padding-left: 0px;
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid #6c4d00;
+}
+
+#anasayfa-haberler-bar-baslik {
+    float: left;
+    letter-spacing: 3.60px;
+    font-size: 24px;
+    color: #6c4d00;
+    font-weight: 400;
+    font-family: Raleway
+}
+
+#anasayfa-haberler-bar-hepsi-link {
+    float: right;
+    font-size: 18px;
+}
+
+    #anasayfa-haberler-bar-hepsi-link a {
+        color: #6c4d00 !important;
+        letter-spacing: 1.4px;
+    }
+
+        #anasayfa-haberler-bar-hepsi-link a img {
+            height: 10px;
+            position: relative;
+            top: -3px;
+            margin-left: 5px;
+        }
+
+#anasayfa-haberler-menu {
+    background: #cdcdcd;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    margin-top: 10px;
+}
+
+
+    #anasayfa-haberler-menu a {
+        width: 20%;
+        text-align: center;
+        float: left;
+        color: #898989;
+        font-size: 17px;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+        font-family: Raleway;
+    }
+
+        #anasayfa-haberler-menu a.active {
+            color: #000000;
+        }
+
+#anasayfa-haberler-active-area-holder {
+    width: 100%;
+    min-height: 340px;
+    margin-top: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.arh {
+    width: 100%;
+    height: 220px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.5);
+}
+
+.art {
+    font-size: 16px;
+    color: #b7b7b7;
+    width: 100%;
+    margin: 5px 0px;
+    margin-top: 15px;
+    font-family: Inter;
+}
+
+.arb {
+    font-size: 17px;
+    color: #000;
+    width: 100%;
+    margin: 10px 0px;
+    font-family: Raleway;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.ard {
+    font-size: 14px;
+    color: #343434;
+    width: 100%;
+    margin: 15px 0px;
+    font-family: Raleway;
+    font-weight: 300;
+    line-height: 19px
+}
+
+
+
+#anasayfa-haberler-active-area .col-md-4 {
+    padding: 0px 15px;
+}
+
+
+
+
+
+#anasayfa-duyurular-area {
+    margin-top: 32px;
+}
+
+.duyuru-baslik-holder {
+    border-bottom: 1px solid #6c4d00;
+    float: left;
+    width: 90%;
+    height: 39px;
+}
+
+.duyuru-baslik {
+    font-size: 18px;
+    color: #6c4d00;
+    font-family: Raleway;
+    font-weight: 400;
+    letter-spacing: 3.0px;
+    float: left;
+}
+
+.duyuru-hepsi-link {
+    float: right;
+    margin-top: 7px;
+}
+
+    .duyuru-hepsi-link a {
+        color: #6c4d00 !important;
+        letter-spacing: 1.4px;
+        font-size: 16px
+    }
+
+
+    .duyuru-hepsi-link img {
+        height: 10px;
+        position: relative;
+        top: -2px;
+        margin-left: 5px;
+    }
+
+
+
+
+
+#duyurular-header-sol {
+    width: 90%;
+}
+
+
+#duyurular-header-sag {
+    width: 90%;
+    float: right
+}
+
+
+.duyurular-content {
+    float: left;
+    width: 90%;
+}
+
+.duyurular-content-sol .duyuru-baslik {
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-family: Raleway;
+}
+
+.duyurular-content-sol .duyuruLine {
+    width: 90% !important;
+    margin-top: 10px;
+}
+
+
+.duyuruLine {
+    border-bottom: 1px solid #d3d3d3;
+    float: left;
+    width: 100%;
+}
+
+    .duyuruLine .art {
+        color: #808080;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 5px 0px;
+        margin-top: 15px;
+        letter-spacing: 1.5px;
+    }
+
+
+    .duyuruLine .arb {
+        font-size: 14px;
+        margin: 0px;
+        margin-bottom: 15px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+
+
+        .duyuruLine .arb:hover {
+            color: #6c4d00;
+            cursor: pointer;
+        }
+
+
+.duyurular-content .duyuruLine:last-child {
+    border-bottom: none;
+}
+
+
+
+#footer-container {
+    float: left;
+    background: #272c38;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+#footer-image-alani {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+    #footer-image-alani img {
+        width: 380px
+    }
+
+
+
+    #footer-image-alani span {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: white;
+        font-family: Cinzel;
+        margin-top: 10px;
+        display: block;
+        color: #dedede;
+    }
+
+
+
+
+#footer-linkler-alani {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #666b76;
+    margin-bottom: 20px;
+}
+
+
+    #footer-linkler-alani div {
+        width: 20%;
+        float: left;
+        padding-bottom: 10px;
+    }
+
+#fl-baskanlik {
+    width: 20%;
+}
+
+#fl-idari-teskilat {
+    width: 20%;
+    padding: 0px 0px 0px 30px;
+}
+
+
+#fl-tbmm-ziyaret {
+    padding: 0px 0px 0px 30px;
+}
+
+
+#fl-engelsiz-meclis {
+    padding: 0px 0px 0px 110px;
+}
+
+#fl-aydinlatma {
+    width: 20%;
+    padding: 0px 0px 0px 100px;
+}
+
+
+#footer-linkler-alani span {
+    color: #c4b084;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 400;
+    width: 70%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #5d626d;
+}
+
+
+
+
+#footer-linkler-alani ul {
+    position: relative;
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0px;
+}
+
+    #footer-linkler-alani ul li {
+        padding-top: 5px;
+    }
+
+
+
+
+        #footer-linkler-alani ul li a {
+            color: #8D919D;
+            font-family: Raleway;
+            font-weight: 400;
+            font-size: 15px;
+            text-decoration: none !important;
+        }
+
+
+
+            #footer-linkler-alani ul li a i {
+                padding-right: 15px;
+            }
+
+
+
+
+#footer-end-line {
+    width: 100%;
+    height: 150px;
+    display: block;
+    float: left;
+}
+
+
+#footer-tbmm-logo-holder {
+    width: 10%;
+    float: left;
+    height: 100%;
+    text-align: left
+}
+
+    #footer-tbmm-logo-holder img {
+        height: 90px;
+        margin-top: 10px;
+    }
+
+
+#footer-tbmm-text-holder {
+    float: left;
+    width: 37%;
+    display: block;
+    margin-top: 20px;
+}
+
+#footer-tbmm-text-holder-tbmm {
+    width: 100%;
+    font-size: 24px;
+    color: white;
+    font-family: Cinzel;
+    font-weight: 400;
+    letter-spacing: 1.60px;
+}
+
+#footer-tbmm-text-holder-kurumsal {
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    font-family: Cinzel;
+    font-weight: 400;
+    letter-spacing: 1.60px;
+}
+
+
+#footer-adres-area {
+    width: 27%;
+    border-left: 1px solid #666b76;
+    border-right: 1px solid #666b76;
+    text-align: left;
+    margin: 20px 0px;
+    padding-left: 20px;
+    float: left;
+    color: #bfbfbf;
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+
+#footer-social-area {
+    width: 25%;
+    float: right;
+    margin-top: 38px;
+}
+
+
+    #footer-social-area a {
+        width: 25%;
+        float: left;
+        text-align: center;
+    }
+
+        #footer-social-area a img {
+            width: 40%;
+        }
+
+#haberAlaniMeclisBaskani, #haberAlaniMeclis, #haberAlaniYasama, #haberAlaniKomisyon, #haberAlaniMilletvekilleri {
+    width: 100%;
+    display: none;
+}
+
+
+#haberAlaniMeclisBaskani {
+    display: block;
+}
+
+.page-content {
+    padding-bottom: 20px;
+}
+
+
+
+#haber-detay-baslik {
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px 0px;
+    display: block;
+    font-family: Raleway;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #6c4d00;
+    padding-bottom: 0px;
+}
+
+
+#haber-detay-golge {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(171,171,171,0.3);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(171,171,171,0.3);
+    box-shadow: 0px 2px 5px 0px rgba(171,171,171,0.3);
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+#haber-detay-saat {
+    font-size: 16px;
+    font-family: Inter;
+    color: #898989;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+
+
+#haber-detay-ozet {
+    display: block;
+    text-align: left;
+    border-left: 4px solid #a89872;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: justify;
+    padding-right: 20px;
+    font-family: Raleway;
+    line-height: 20px
+}
+
+#haber-detay-aciklama {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 40px;
+    font-family: Raleway;
+}
+
+
+
+#yeni_tasarim_sag_menu ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+    #yeni_tasarim_sag_menu ul li a {
+        background: #4b4f5a;
+        display: block;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        color: #d4d4d4;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        text-decoration:none !important;
+    }
+
+
+        #yeni_tasarim_sag_menu ul li a:hover {
+            
+            color: #c1ad82;
+        }
+
+        #yeni_tasarim_sag_menu ul li a .image-holder {
+            width: 50px;
+            text-align: center;
+            height: 100%;
+            float: left;
+            margin-right: 5px;
+        }
+
+
+        #yeni_tasarim_sag_menu ul li a img {
+            height: 26px;
+            padding-right: 10px;
+        }
+
+
+.sag-menu-border-holder {
+    border-bottom: 1px solid #62656f;
+    padding: 21px 0px;
+    margin: 0 4px;
+}
+
+
+
+.ImageLazyLoader {
+    background-position: center;
+}
+
+
+#header-search-button {
+    transition: width .55s ease;
+}
+
+    #header-search-button:focus, #header-search-button:active {
+        width: 300px;
+        background: green;
+    }
+
+
+
+#header-search-button-holder:hover #header-search-button {
+    width: 300px;
+}
+
+
+#header-search-button {
+    position: absolute;
+    z-index: 2;
+    height: 32px;
+    top: 50px;
+    display: block;
+    width: 100px;
+    color: white;
+    right: 0px;
+}
+
+
+#haber-img {
+    width: 100%;
+    background: #dedede;
+    display: block;
+    height: 371px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#text-description {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+.search-box {
+    position: absolute;
+    top: 36px;
+    right: 0%;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+    background: none;
+    width: 0;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    transition: .3s;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+    .search-input::placeholder {
+        color: #dbc5b0;
+    }
+
+.search-btn {
+    color: #fff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.search-input:focus,
+.search-input:not(:placeholder-shown) {
+    width: 200px;
+    padding: 1px 15px;
+    background: #fff;
+    color: black;
+    font-size: 14px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.search-box:hover > .search-input {
+    width: 200px;
+    padding: 1px 15px;
+    background: #fff;
+    color: black;
+    font-size: 14px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.search-box:hover > .search-btn,
+.search-input:focus + .search-btn,
+.search-input:not(:placeholder-shown) + .search-btn {
+    
+}
+
+
+#sag-menu-duyurular-alani {
+    width: 100%;
+    display: block;
+}
+
+
+
+#sag-menu-duyurular-alani-baslik {
+    float: left;
+    letter-spacing: 3.60px;
+    font-size: 24px;
+    color: #6c4d00;
+    font-weight: 500;
+    font-family: Raleway;
+}
+
+
+#sag-menu-duyurular-alani-hepsi-link {
+    float: right;
+    font-size: 18px;
+}
+
+
+    #sag-menu-duyurular-alani-hepsi-link a {
+        color: #6c4d00 !important;
+        letter-spacing: 1.4px;
+    }
+
+
+        #sag-menu-duyurular-alani-hepsi-link a img {
+            height: 10px;
+            position: relative;
+            top: -3px;
+            margin-left: 5px;
+        }
+
+
+#sag-menu-duyurular-alani-holder {
+    border-bottom: 1px solid #6c4c00;
+    height: 44px;
+}
+
+
+#sag-menu-duyurular-icerigi-holder {
+    width: 100%;
+    float: left;
+}
+
+
+    #sag-menu-duyurular-icerigi-holder ul {
+        padding-left: 0px;
+    }
+
+
+        #sag-menu-duyurular-icerigi-holder ul li {
+            width: 100%;
+            display: block;
+            float: left;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+
+
+            #sag-menu-duyurular-icerigi-holder ul li .duyuru-tarih {
+                font-size: 14px;
+                color: #808080;
+                display: block;
+                width: 100%;
+                font-weight: 300;
+                text-align: left;
+                margin-top: 5px;
+                font-family: Inter;
+            }
+
+
+            #sag-menu-duyurular-icerigi-holder ul li .duyuru-baslik {
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: #000;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                font-weight: 500;
+            }
+
+
+
+#content-dinamik-title {
+    width: 100%;
+    height: 70px;
+    background: #4b4f5a;
+    float: left;
+}
+
+
+#content-title-type {
+    
+    width: 90%;
+    float: left;
+    font-size: 21px;
+    height: 70px;
+    color: #c4b084;
+    display: block;
+    padding-left: 40px;
+    
+    font-family: Raleway;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#detay-content {
+    padding: 10px;
+    padding-left: 0px;
+    float: left;
+    display: block;
+}
+
+
+
+#duyurular-content-right {
+    float: right;
+}
+
+
+#header-container-mobile #header-background {
+    position: absolute;
+    z-index: 1;
+    height: 120px;
+    width: 100%;
+}
+
+
+#header-container-mobile #header-link {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    display: block;
+    z-index: 99;
+}
+
+
+#header-container-mobile #header-mobile-menu {
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+}
+
+    #header-container-mobile #header-mobile-menu img {
+        height: 32px;
+        margin-top: 24px;
+        margin-right: 20px;
+    }
+
+
+#MobileMenuAlani {
+    display: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: #7e2525;
+    z-index: 999;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+#mobile-menu-header {
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    display: block;
+    z-index: 999;
+    height: 250px;
+}
+
+    #mobile-menu-header img {
+        width: 80px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+#mobile-menu-title-holder {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    font-family: 'Cinzel', sans-serif;
+}
+
+    #mobile-menu-title-holder #header-title-main {
+        font-size: 24px;
+        color: white;
+    }
+
+    #mobile-menu-title-holder #header-title-sub {
+        font-size: 14px;
+        color: #ababab;
+    }
+
+
+    #mobile-menu-title-holder #header-title-line {
+        height: 2px;
+        background: #893333;
+        width: 90%;
+        display: block;
+        margin-top: 15px;
+        margin-left: 5%;
+    }
+
+
+#mobile-menu-close-button {
+    position: absolute;
+    right: 18px;
+    top: 0px;
+}
+
+    #mobile-menu-close-button img {
+        height: 36px;
+        width: 36px;
+    }
+
+#mobile-menu-arama-alani {
+    width: 90%;
+    display: block;
+    margin-top: 25px;
+    margin-left: 5%;
+    height: 45px;
+    float: left;
+}
+
+#mobile-menu-arama-alani-background {
+    border-radius: 30px;
+    background: white;
+    width: 70%;
+    height: 44px;
+    float: left;
+}
+
+#mobile-menu-arama-alani-input {
+    border-radius: 30px;
+    background: white;
+    border: none;
+    width: 70%;
+    float: left;
+    height: 44px;
+    padding-left: 20px;
+}
+
+#mobile-menu-arama-alani-submit {
+    float: right;
+    background: white;
+    border: none;
+    height: 44px;
+    text-align: right;
+    border-radius: 30px;
+    width: 20%;
+}
+
+    #mobile-menu-arama-alani-submit img {
+        height: 36px;
+        padding-right: 0px;
+        float: right;
+    }
+
+
+#mobile-menu-eng-button {
+    width: 25%;
+    float: right;
+    text-align: center
+}
+
+    #mobile-menu-eng-button a {
+        background: #a89872;
+        color: white;
+        height: 44px;
+        border-radius: 30px;
+        padding: 0px 25px;
+        text-align: center;
+        display: inline-block;
+        line-height: 44px;
+        font-size: 22px;
+    }
+
+#mobile-menu-liste-alani {
+    width: 90%;
+    display: block;
+    margin-top: 0px;
+    margin-left: 5%;
+    float: left;
+    overflow-y: auto;
+    height: 700px;
+}
+
+
+
+    #mobile-menu-liste-alani::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    
+    #mobile-menu-liste-alani::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    
+    #mobile-menu-liste-alani::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba(168,152,114,0.8);
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    }
+
+        #mobile-menu-liste-alani::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(255,0,0,0.4);
+        }
+
+
+
+
+
+
+
+
+
+#ul-mobile-menu {
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+
+    #ul-mobile-menu li {
+        width: 100%;
+        color: #d4b7b7;
+        font-size: 18px;
+        padding: 15px 0px;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #b07979;
+    }
+
+#mobile-menu-liste-alani .nav-link {
+    font-family: Raleway;
+    width: 100%;
+    color: #d4b7b7;
+    font-size: 18px;
+    padding: 15px 0px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #b07979;
+    background: #7e2525;
+    text-decoration: none !important;
+}
+
+#mobile-menu-liste-alani .dropdown-menu {
+    margin: 0px;
+    border: none;
+    background: #7e2525;
+}
+
+    #mobile-menu-liste-alani .dropdown-menu li .dropdown-item {
+        font-weight: 100;
+        width: 100%;
+        color: #d4b7b7;
+        font-size: 18px;
+        padding: 10px 0px;
+        padding-left: 30px;
+        margin-left: 0%;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #b07979;
+        text-decoration: none !important;
+    }
+
+
+
+
+
+
+
+
+
+select .form-control {
+    -webkit-appearance: menulist;
+}
+
+.search-form {
+    font-family: Raleway;
+    margin: 90px 15px 0px 0px;
+}
+
+    .search-form form {
+        border: 1px solid #dee2e6 !important;
+        padding: 15px 15px 10px 15px;
+    }
+
+        .search-form form > .form-group {
+            margin-bottom: 5px;
+        }
+
+            .search-form form > .form-group > label {
+                font-weight: 600;
+            }
+
+            .search-form form > .form-group input, .search-form form > .form-group select {
+                border-radius: unset !important;
+            }
+
+    .search-form a {
+        color: #c1ad82;
+    }
+
+        .search-form a:hover {
+            color: black;
+        }
+
+.tbmm-button {
+    margin-top: 10px;
+    width: 100%;
+    line-height: 30px;
+    background-color: #c4b084 !important;
+    border: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.20px;
+    font-size: 14px;
+    font-weight: 400;
+    float: right;
+}
+
+
+
+
+.dataTables_filter {
+    float: right !important;
+}
+
+    .dataTables_filter label input {
+        border: 1px solid #ced4da;
+    }
+
+.dataTables_info {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.pagination {
+    --bs-pagination-color: white;
+    --bs-pagination-border-width: 0px;
+}
+
+.paging_full_numbers ul {
+    justify-content: space-between !important;
+    background-color: #888888;
+    padding: 0px;
+    height: 44px;
+    border-radius: 3px;
+    line-height: 32px;
+}
+
+    .paging_full_numbers ul > li {
+        background-color: #888888;
+        margin: 0px;
+    }
+
+        .paging_full_numbers ul > li > a {
+            background-color: #888888 !important;
+            color: #ccd4d4;
+        }
+
+            .paging_full_numbers ul > li > a:hover {
+                color: #c4b084 !important;
+                background-color: #575757 !important;
+            }
+
+            .paging_full_numbers ul > li > a:focus {
+                color: #ccd4d4;
+                box-shadow: none;
+            }
+
+        .paging_full_numbers ul > li.active > a {
+            background-color: #575757 !important;
+            color: #c4b084 !important;
+        }
+
+        .paging_full_numbers ul > li.disabled > a {
+            color: #c9c5c5 !important;
+        }
+
+        .paging_full_numbers ul > li > a > img {
+            width: 23%;
+        }
+
+.tbmm-div-list {
+    font-family: Raleway;
+}
+
+    .tbmm-div-list li {
+        border-radius: unset !important;
+    }
+
+    .tbmm-div-list ul li:nth-child(2n) {
+        background-color: #f2f2f2;
+    }
+
+    .tbmm-div-list a {
+        color: #916D1F;
+    }
+
+        .tbmm-div-list a:hover {
+            color: black;
+        }
+
+
+
+
+
+.tbmm-div-listemeleme-baslik {
+    background-color: #b6b6b6;
+}
+
+.tbmm-div-sayfa-ici-baslik {
+    background-color: #a9a9a9;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #d4d4d4;
+    float: left;
+    width: 100%;
+}
+
+
+    .tbmm-div-sayfa-ici-baslik td {
+        color: #d4d4d4 !important;
+    }
+
+.tbmm-div-sayfa-ici-alt-baslik {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    background-color: #b6b6b6;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px;
+    letter-spacing: 3px;
+}
+
+.tbmm-div-list thead tr th {
+    font-weight: 400;
+}
+
+
+.tbmm-list-ul {
+    margin-bottom: 1.5px;
+}
+
+.tbmm-list-item-active {
+    background-color: #b6b6b6 !important;
+    border: none;
+    text-align: center;
+    color: black !important;
+    font-weight: 400;
+    font-size: large;
+    font-family: Raleway;
+    letter-spacing: 3px;
+    height: 40px;
+}
+
+.tbmm-list-item {
+    font-family: Raleway;
+    border: 1px #b6b6b6 solid;
+    border-bottom: none;
+}
+
+    .tbmm-list-item:last-child {
+        border: 1px #b6b6b6 solid;
+        border-radius: unset;
+        border-top: none;
+    }
+
+.tbmm-list-item-bolder {
+    border: 1px #b6b6b6 solid;
+    border-top: none;
+    background-color: #ebebeb;
+    border-bottom: none;
+}
+
+.tbmm-list-item-border:last-child {
+    border: 1px #b6b6b6 solid;
+    border-radius: unset;
+    border-top: none;
+}
+
+.tbmm-list-item-bolder a {
+    color: black;
+}
+
+.tbmm-list-item a {
+    color: black;
+}
+
+    .tbmm-list-item a:hover {
+        color: #c1ad82;
+        font-size: 16px;
+    }
+
+.tbmm-list-item-bolder a:hover {
+    color: #c1ad82;
+    font-size: 16px;
+}
+
+.list-group {
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+.list-group-item:first-child {
+    border-radius: unset;
+}
+
+.list-group-item-link {
+    background-color: #c4b084;
+    border-radius: unset;
+    font-weight: 400;
+    font-family: Raleway;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.navbar-nav .nav-item:nth-last-child(1) ul {
+    width: 400px !important;
+    text-align: left;
+    left: -283px;
+}
+
+
+.navbar-nav .nav-item:nth-last-child(2) ul {
+    width: 400px !important;
+    text-align: left;
+    left: -272px;
+}
+
+
+
+select.form-control {
+    -webkit-appearance: menulist;
+}
+
+.search-form form > .form-group {
+    margin-bottom: 5px;
+}
+
+    .search-form form > .form-group > label {
+        font-weight: 600;
+    }
+
+    .search-form form > .form-group input, .search-form form > .form-group select {
+        border-radius: unset !important;
+    }
+
+
+.content-list li a:hover {
+    
+    color: black !important;
+}
+
+.sorgula-button {
+    margin-top: 10px;
+    width: 100%;
+    line-height: 30px;
+    background-color: #c4b084 !important;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: white;
+}
+
+
+.onerge-ozeti > b {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.onerge-ozeti > .row {
+    padding: 17px 0px 0px 0px;
+}
+
+    .onerge-ozeti > .row > .col-md-6 > b {
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+
+.page-content a {
+    color: #916D1F;
+}
+
+    .page-content a:hover {
+        color: black;
+    }
+
+
+
+
+
+.profile-list {
+    border-bottom: 1px solid #ccc !important;
+    margin: 5px 0px 10px;
+    padding: 15px 0px 25px;
+    font-family: Raleway;
+}
+
+.profile-image {
+    border-radius: 5px;
+    width: 70%;
+    -webkit-box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.47);
+    box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.47);
+}
+
+.social-media-td a {
+    margin-right: 20px;
+}
+
+.liste-sosyal-medya-table tr:nth-child(odd) {
+    border-style: hidden;
+    background-color: #ebebeb;
+}
+
+.mail-adresi {
+    color: #c1ad82;
+}
+
+    .mail-adresi:hover {
+        color: black !important;
+    }
+
+
+
+
+
+.dataTables_filter {
+    float: right !important;
+}
+
+.dataTables_info {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.pagination {
+    --bs-pagination-color: white;
+    --bs-pagination-border-width: 0px;
+}
+
+.paging_full_numbers ul {
+    justify-content: space-between !important;
+    background-color: #888888;
+    padding: 0px;
+    height: 44px;
+    border-radius: 0px;
+    line-height: 32px;
+}
+
+    .paging_full_numbers ul > li {
+        background-color: #888888;
+        margin: 0px;
+    }
+
+        .paging_full_numbers ul > li > a {
+            background-color: #888888 !important;
+            color: #ccd4d4;
+        }
+
+            .paging_full_numbers ul > li > a:hover {
+                color: #c4b084 !important;
+                background-color: #575757 !important;
+            }
+
+            .paging_full_numbers ul > li > a:focus {
+                color: #ccd4d4;
+                box-shadow: none;
+            }
+
+        .paging_full_numbers ul > li.active > a {
+            background-color: #575757 !important;
+            color: #c4b084 !important;
+        }
+
+        .paging_full_numbers ul > li.disabled > a {
+            color: #c9c5c5 !important;
+        }
+
+
+#milletvekili-list {
+    margin: 0px 20px 0px;
+    float: left;
+}
+
+
+.card-list {
+    padding-right: 10px;
+}
+
+    .card-list #card-content {
+        text-align: center;
+    }
+
+    .card-list .col {
+        border: unset;
+        border: hidden;
+        border-radius: unset;
+        margin-bottom: 40px;
+    }
+
+        .card-list .col .card {
+            border: unset;
+            border: hidden;
+            border-radius: unset;
+        }
+
+    .card-list img {
+        border-radius: unset;
+    }
+
+    .card-list h6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        text-align: center;
+    }
+
+.tbmm-button {
+    margin-top: 10px;
+    width: 100%;
+    line-height: 30px;
+    background-color: #c4b084 !important;
+    border: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tbmm-link {
+    display: inline-block;
+    margin: 2px 3px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding: 8px 17px;
+    color: white !important;
+    width: 45%;
+    background-color: #c4b084 !important;
+}
+
+    .tbmm-link:hover {
+        color: black !important;
+    }
+
+
+
+
+.baskan-header-menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: Raleway;
+    font-size: 16px;
+    background: #cdcdcd;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    text-align: justify-all;
+}
+
+
+    .baskan-header-menu a {
+        width: 20%;
+        text-align: center;
+        float: left;
+        color: #898989;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        font-family: Raleway;
+    }
+
+        .baskan-header-menu a.active {
+            color: #000000;
+        }
+
+#content-title-type a:hover {
+    color: #d4d4c8;
+}
+
+.baskanlik-content {
+    margin: 10px 0px;
+}
+
+.alt-sayfa-content {
+    margin: 80px 10px 0px 0px;
+}
+
+.baskanlik-anasayfa-alt-haber {
+    margin: 20px 0px;
+}
+
+.baskanlik-baskan-ozgecmis img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.baskanlik-baskan-ozgecmis p {
+    text-align: justify;
+    line-height: 28px;
+}
+
+
+
+#load-btn:hover {
+    border: unset;
+}
+
+#load-btn {
+    border: unset;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    background-color: #c4b084;
+    letter-spacing: 2px;
+}
+
+.content-note {
+    margin: 0px 10px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #6c4d00;
+    letter-spacing: 2px;
+}
+
+.content-note-il {
+    margin: 12px 0px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #6c4d00;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+#anasayfa-haberler-active-area .art-mobile {
+    display: none;
+}
+
+.baskanlik-anasayfa-alt-haber .art-mobile {
+    display: none;
+}
+
+#anasayfa-etkinlikler .duyurular-content {
+    margin-top: 10px;
+}
+
+    #anasayfa-etkinlikler .duyurular-content img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 50%);
+        height: 200px;
+    }
+
+
+#anasayfa-fotograflarla-tbmm .duyurular-content {
+    margin-top: 10px;
+}
+
+
+    #anasayfa-fotograflarla-tbmm .duyurular-content img {
+        width: 100%;
+        height: 203px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 50%);
+    }
+
+
+#footer-linkler-alani div span a {
+    color: #c4b084;
+    width: 100%;
+    display: block;
+    text-decoration: none !important;
+}
+
+
+#footer-linkler-alani div span img {
+    display: none;
+}
+
+.content-p {
+    font-weight: 500;
+    font-family: Raleway;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 23px;
+    font-size: 14px !important;
+}
+
+
+
+#anasayfa-sanal-tur-holder .duyurular-content {
+    margin-top: 10px;
+}
+
+
+
+    #anasayfa-sanal-tur-holder .duyurular-content img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 50%);
+        height: 200px;
+    }
+
+#milletvekili-secim-alani {
+    display: none;
+}
+
+
+
+.content-title-small {
+    font-size: 20px !important;
+    letter-spacing: 0.3px !important;
+}
+
+#milletvekili-detay-holder .content-title {
+    font-size: 16px !important;
+    width: 80%;
+}
+
+#milletvekili-detay-holder .content-sub-title {
+    font-family: Raleway;
+    display: inline-block;
+    margin: 23px 23px;
+    float: right;
+}
+
+    #milletvekili-detay-holder .content-sub-title a {
+        float: right;
+        color: #c1ad82;
+    }
+
+        #milletvekili-detay-holder .content-sub-title a:hover {
+            color: #d4d4d4;
+        }
+
+        #milletvekili-detay-holder .content-sub-title a img {
+            height: 10px;
+            position: relative;
+            top: -3px;
+            margin-left: 5px;
+        }
+
+#milletvekili-detay-holder-desktop .profile-image {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.47);
+    box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.47);
+}
+
+#milletvekili-detay-holder .profil-komisyon-div {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Raleway;
+}
+
+#milletvekili-detay-holder .profile-ozgecmis-div {
+    text-align: justify;
+    font-size: 16px !important;
+    font-family: Raleway;
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+
+
+
+
+
+#milletvekili-detay-holder-desktop .profile-adres-div,
+#milletvekili-detay-holder .profile-adres-div {
+    background-color: #e3e3e3;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+
+
+    #milletvekili-detay-holder-desktop .profile-adres-div table tbody,
+    #milletvekili-detay-holder .profile-adres-div table tbody {
+        font-size: 14px;
+        font-family: 'Raleway';
+        line-height: 10px;
+    }
+
+#milletvekili-detay-holder .generic-list-div ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+    #milletvekili-detay-holder .generic-list-div ul > li {
+        margin-top: 15px;
+        font-family: Raleway;
+        color: black;
+        font-size: 15px;
+    }
+
+        #milletvekili-detay-holder .generic-list-div ul > li.title {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ccc !important;
+        }
+
+        #milletvekili-detay-holder .generic-list-div ul > li a {
+            color: #916D1F;
+        }
+
+            #milletvekili-detay-holder .generic-list-div ul > li a:hover {
+                color: black;
+            }
+
+#milletvekili-detay-holder .profile-sosyal-medya {
+    margin: 10px 0px;
+    width: 100%;
+}
+
+    #milletvekili-detay-holder .profile-sosyal-medya img {
+        margin: 0px 7px;
+    }
+
+#milletvekili-detay-holder .mail-adresi {
+    color: #916D1F;
+}
+
+    #milletvekili-detay-holder .mail-adresi:hover {
+        color: black !important;
+    }
+
+
+
+#milletvekili-detay-holder-mobile {
+    display: none;
+}
+
+
+#milletvekili-arama-sonuclari .ozgemis_linki_desktop {
+    float: right;
+    display: inline-block;
+    margin: 0px !important;
+}
+
+#milletvekili-arama-sonuclari .ozgemis_linki_mobile,
+#milletvekili-arama-sonuclari .millletvekili_parti_mobile,
+#isay-vesta .ozgemis_linki_mobile,
+#isay-vesta .millletvekili_parti_mobile {
+    display: none;
+}
+
+#isay-kibele .ozgemis_linki_mobile,
+#isay-kibele .millletvekili_parti_mobile {
+    display: none;
+}
+
+#milletvekilligi-sona-erenler .ozgemis_linki_desktop {
+    float: right;
+    display: inline-block;
+    margin: 5px 0px 0px;
+}
+
+#milletvekilligi-sona-erenler .ozgemis_linki_mobile {
+    display: none
+}
+
+
+#milletvekilligi-sona-erenler .mini-parti-logo {
+    display: none
+}
+
+#milletvekilligi-sona-erenler .mv_sona_eren_ad_soyad {
+    padding-bottom: 5px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid #ccc !important;
+    color: #000;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+#milletvekilligi-sona-erenler .mv_sona_eren_makam {
+    font-size: 14px;
+    padding-top: 5px;
+    display: block
+}
+
+#milletvekilligi-sona-erenler .mv_sona_eren_ayrilis_bilgisi {
+    font-size: 14px;
+    padding-top: 5px;
+    display: block
+}
+
+
+
+#tbmm-tv-content .accordion-item {
+    border-radius: unset !important;
+    margin-bottom: 5px;
+}
+
+#tbmm-tv-content .accordion-button {
+    background-color: #6c757d;
+    color: #d4d4d4;
+    border: unset !important;
+    border-radius: unset !important;
+}
+
+    #tbmm-tv-content .accordion-button:not(.collapsed) {
+        background-color: #6c757d;
+        color: #d4d4d4;
+        border: unset !important;
+        border-radius: unset !important;
+    }
+
+    #tbmm-tv-content .accordion-button:focus {
+        box-shadow: unset;
+    }
+
+    #tbmm-tv-content .accordion-button:not(.collapsed)::after {
+        background-image: var(--bs-accordion-btn-icon);
+    }
+
+#tbmm-tv-content .accordion-body {
+    text-align: justify;
+}
+
+#tbmm-tv-content .video_holder {
+    width: 100%;
+    min-height: 36px;
+    max-height: 486px
+}
+
+
+
+#sandalye-dagilimi #content-title-type-mobile {
+    display: none;
+}
+
+
+
+
+
+#SandalyeDagilimiUyeListe .ozgemis_linki_desktop {
+    float: right;
+    display: inline-block;
+    margin: 0px !important;
+}
+
+#SandalyeDagilimiUyeListe .ozgemis_linki_mobile {
+    display: none;
+}
+
+#millletvekilleri-eposta .tbmm-div-list {
+    margin: 80px 10px 0px 0px;
+}
+
+
+#komisyon-baskani #baskan-resmi {
+    border-radius: 15px;
+    width: 70%;
+}
+
+#komisyon-tasari-teklifler #data-holder {
+    border: 1px solid #dedede;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#komisyon-kanunlasan-isler #data-holder {
+    border: 1px solid #dedede;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#komisyon-raporlari #data-holder {
+    border: 1px solid #dedede;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#tutanak-detay #data-holder {
+    border: 1px solid #dedede;
+    padding: 35px;
+    margin-top: 50px
+}
+
+.line {
+    height: 1px;
+    background: #dedede;
+    width: 100%;
+    display: block;
+    margin: 10px 0px;
+}
+
+
+#content-title-type {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 70px;
+    padding-left: 20px;
+}
+
+
+
+#content-dinamik-title {
+    height: auto;
+}
+
+
+
+#yayinlar-genel .tbmm-div-list {
+    margin: 90px 15px 0px 0px
+}
+
+#dostluk-gruplari .tbmm-div-list {
+    margin: 90px 15px 0px 0px;
+}
+
+#dostluk-gruplari #map1 {
+    width: 100%;
+    height: 600px;
+}
+
+#dostluk-gruplari-genel-bilgi .tbmm-div-list {
+    margin: 90px 15px 0px 0px;
+    text-align: justify;
+}
+
+
+
+.anayasa-sayfa .tbmm-div-list {
+    margin: 90px 15px 0px 0px;
+}
+
+#milletvekili-kanun-bilgileri .tbmm-div-list {
+    margin: 90px 15px 0px 0px;
+}
+
+#sandalye-dagilimi .tbmm-div-list {
+    margin: 90px 15px 0px 0px;
+}
+
+
+.common-page-content .tbmm-div-list {
+    margin: 90px 15px 0px 0px;
+}
+
+
+#ozel-gundem-toplantilari #content-title-type {
+    font-size: 14px;
+    white-space: inherit;
+    word-break: break-word;
+    width: 100%;
+}
+
+
+.tbmm-link-safahat {
+    width: 96%;
+}
+
+.common-page-content .accordion {
+    padding-left: 0px;
+}
+
+#tbmm-tv {
+    margin: 85px 15px 0px 0px;
+}
+
+
+
+.baskanlik-header {
+    width: 15%;
+    float: right;
+    font-size: 16px;
+    height: 70px;
+    color: #c4b084;
+    font-family: Raleway;
+    font-weight: 100;
+    letter-spacing: 2px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+#isay-vesta .ozgemis_linki_desktop {
+    float: right;
+    display: inline-block;
+    margin: 0px !important;
+}
+
+#isay-kibele .ozgemis_linki_desktop {
+    float: right;
+    display: inline-block;
+    margin: 0px !important;
+}
+
+.yeni-baslik {
+    color: white;
+    letter-spacing: 2px;
+    padding: 8px 15px !important;
+    margin-bottom: 0px !important;
+}
+
+
+.sari-link {
+    background-color: #c4b084;
+    border-radius: unset;
+    font-weight: 400;
+    font-family: Raleway;
+    font-size: 13px;
+    color: white !important;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+    .sari-link:hover {
+        color: black !important;
+    }
+
+
+#footer-bize-ulasin-title {
+    width: 100%;
+    display: block;
+    color: white;
+}
+
+
+
+#footer-adres-area div a {
+    color: #bfbfbf;
+}
+
+#footer-adres-area div {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+    #footer-adres-area div span {
+        width: 30px;
+        display: block;
+        float: left
+    }
+
+
+
+
+    #footer-adres-area div img {
+        height: 16px;
+        margin-right: 10px;
+    }
+
+
+#footer-bize-ulasin-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#footer_home_icon img {
+    height: 14px !important;
+}
+
+#footer_email_icon img {
+    height: 12px !important;
+}
+
+
+#carouselAnasayfaSlider .carousel-item a img {
+    width: 100%;
+    height: 480px
+}
+
+
+#milletvekili-arama-sonuclari #content-title-type {
+    width: 70%;
+}
+
+#milletvekili-arama-sonuclari .content-title {
+    font-size: 16px !important;
+    width: 80%;
+}
+
+#milletvekili-arama-sonuclari .content-sub-title {
+    font-family: Raleway;
+    display: inline-block;
+    margin: 23px 23px;
+    margin-left: 0px;
+    float: right;
+}
+
+
+    #milletvekili-arama-sonuclari .content-sub-title a img {
+        height: 10px;
+        position: relative;
+        top: -3px;
+        margin-left: 5px;
+    }
+
+    #milletvekili-arama-sonuclari .content-sub-title a {
+        float: right;
+        color: #c1ad82;
+        letter-spacing: 1.5px;
+    }
+
+        #milletvekili-arama-sonuclari .content-sub-title a:hover {
+            color: #d4d4d4;
+        }
+
+
+.baskanlik-anasayfa-alt-haber .arh img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#mazbata-arama .millletvekili_parti_mobile {
+    display: none;
+}
+
+
+.dataTables_length {
+    height: 70px;
+    line-height: 70px;
+    width: 300px;
+}
+
+    .dataTables_length label span {
+        float: left;
+        display: inline-block;
+    }
+
+    .dataTables_length label select {
+        float: left;
+        display: inline-block;
+        width: 100px;
+        margin: 0px 10px;
+        margin-top: 20px;
+    }
+
+
+#dataTable_processing {
+    width: 100%;
+    background: #4b4f5a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+}
+
+
+
+#PageLoadGif {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#searchBar {
+    margin: 85px 0px 15px 0px;
+}
+
+    #searchBar .row div input {
+        font-weight: 300;
+    }
+
+
+#link-bar-sag-ok, #link-bar-sol-ok {
+    display: none;
+}
+
+
+
+#link-haberbar-sag-ok, #link-haberbar-sol-ok {
+    display: none;
+}
+
+
+#footer-bib {
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: #818181;
+    float: left;
+    font-size: 12px;
+}
+
+
+
+#anasayfa-kalite-area {
+    width: 100%;
+    padding-top: 30px;
+    display: block;
+    float: left;
+}
+
+    #anasayfa-kalite-area #belge-holder {
+        width: 100%;
+    }
+
+
+    #anasayfa-kalite-area a {
+        margin-right: 10px;
+    }
+
+        #anasayfa-kalite-area a img {
+            width: 100px;
+            padding-top: 20px;
+        }
+
+
+
+#teskilat-semasi-holder {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width:80%;
+    margin:0 auto;
+}
+
+
+.mobile_enabled {
+    display:none;
+}
+
+
+#loadingmesaj {
+    display: none;
+    padding: 5px;
+    color: black;
+    text-align: center;
+    letter-spacing: 3px;
+    animation: loading 1.2s ease-in-out infinite;
+}
+
+
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+    .lds-ellipsis div {
+        position: absolute;
+        top: 13px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #272c38;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+
+        .lds-ellipsis div:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+
+
+#anasayfa-modal {
+    max-width: 55%;
+    top: 5%
+}
+
+
+#mobile-hepsi-butonu {
+   display:none;
+}
+
+
+
+
+#anasayfa-banner-default-image {
+    width: 100%;
+    height: 480px;
+}
+
+
+
+
+#dayanismaKomisyonu #content-title-type {
+    display: block;
+}
+
+
+#dayanismaKomisyonu #content-title-type {
+    font-size: 18px !important;
+}
+
+
+
+ #dayanismaKomisyonu #content-title-type .komadi {
+        display: block;
+        width: 100%;
+        float: left;
+        height: 35px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+#dayanismaKomisyonu #content-title-type .kombaslik {
+    display: block;
+    width: 100%;
+    float: left;
+    color: white;
+    height: 35px;
+}
+
+
+#dayanismaKomisyonu #komisyonHaberleri ul li {
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+        width: 450px;
+        padding: 5px 15px 15px 15px !important;
+        box-shadow: 5px 7px 15px -6px #888888;
+        border: none;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .dropdown-toggle::after {
+        display: none
+    }
+
+
+
+
+    .navbar .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+        .navbar .navbar-nav .nav-item .nav-link {
+            border-right: 1px solid #dfcfa9;
+            padding: 0px 20px;
+            margin-top: 8px;
+        }
+
+
+
+        .navbar .navbar-nav .nav-item:last-child .nav-link {
+            border-right: none;
+        }
+
+
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        background: #fff;
+        color: white;
+        border-radius: 0px;
+    }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu li:not(:last-child) {
+            color: #414141;
+            z-index: 1000000 !important;
+            border-bottom: 1px solid #e3e3e3;
+            height: 40px;
+            margin: 13px 0px;
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu li a {
+            font-family: Raleway;
+            margin: 0px;
+            padding: 0px 12px;
+            z-index: 100000 !important;
+            font-weight: 400;
+            display: inline;
+            color: #212529 !important;
+            text-decoration: none !important;
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu li img {
+            display: inline;
+            width: 9px;
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu li a:hover {
+            color: #7c6d4a !important;
+            background-color: white !important;
+        }
+
+
+
+       
+
+    .navbar-expand-lg .navbar-nav {
+        margin: 0px auto;
+    }
+
+    #header-container-mobile {
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 1200px) {
+
+
+
+    #anasayfa-modal {
+        max-width:80%;
+        top: 5%
+    }
+
+
+    #header-menu-bar .nav-link {
+        letter-spacing: 1.00px;
+        font-size: 13px;
+        text-decoration: none !important;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding: 0px 10px;
+    }
+
+    #header-logo {
+        left: 20px;
+    }
+
+    #header-title {
+        left: 130px;
+    }
+
+
+    #anasayfa-banner-default-image {
+        width: 80%;
+        height: 400px;
+        margin-left:10%;
+        padding: 20px 0px 20px 0px;
+    }
+
+}
+
+
+
+@media all and (max-width: 992px) {
+
+
+    #anasayfa-modal {
+        max-width: 90%;
+        margin: 0 auto;
+        top: 5%;
+    }
+
+
+
+    #header-title-main {
+        font-size: 22px;
+        letter-spacing: 1.76px;
+    }
+
+    #header-menu-bar .mx-auto {
+        margin-right: 0px !important;
+    }
+
+
+    #anasayfa-link-bar {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        
+    }
+
+        #anasayfa-link-bar::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+    .anasayfa-link-bar-link {
+        padding: 0px 15px;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+    }
+
+
+    .anasayfa-link-bar-link-anayasa span {
+        width: 100px;
+        display: block;
+    }
+
+    .anasayfa-link-bar-link-kanun span {
+        width: 125px;
+        display: block;
+    }
+
+    .anasayfa-link-bar-link-edilekce span {
+        width: 80px;
+        display: block;
+    }
+
+    .anasayfa-link-bar-link-bilgiedinme span {
+        width: 80px;
+        display: block;
+    }
+
+
+
+
+
+
+    #footer-image-alani img {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    .navbar-toggler {
+        background: #a89872;
+    }
+
+
+
+    .anasayfa-link-bar-link {
+        font-size: 9px;
+    }
+
+
+    .anasayfa-link-bar-link-edilekce {
+        line-height: 18px;
+       
+    }
+
+
+
+
+
+
+        .anasayfa-link-bar-link-edilekce span {
+            line-height: 24px;
+        }
+
+
+
+    .anasayfa-link-bar-link-bilgiedinme div {
+        margin-bottom: 5px
+    }
+
+
+
+    #anasayfa-haberler-menu a {
+        width: 100%;
+        border-bottom: 1px solid #dedede;
+    }
+
+
+
+    #duyurular-header-sag {
+        width: 100%;
+        float: left;
+    }
+
+
+    #duyurular-content-right {
+        float: left;
+    }
+
+
+
+    #fl-genelkurul, #fl-idari-teskilat, #fl-komisyonlar {
+        width: 100% !important;
+    }
+
+
+    .container, .container-md, .container-sm {
+        max-width: 100%;
+    }
+
+    #detay-content {
+        padding: 0px;
+    }
+
+
+    #header-container {
+        display: none;
+    }
+
+    #header-container-mobile {
+        display: block;
+        webkit-box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
+        
+    }
+
+
+    #anasayfa-haberler-bar {
+        margin-left: 3%;
+        width: 94%;
+        padding-right: 0px;
+        height: 30px;
+    }
+
+    #anasayfa-haberler-bar-baslik {
+        font-size: 18px;
+    }
+
+    #anasayfa-haberler-bar-hepsi-link {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+        #anasayfa-haberler-bar-hepsi-link a {
+            letter-spacing: 1px;
+            font-family: 'Raleway';
+            font-size: 13px;
+        }
+
+
+
+    #anasayfa-haberler-menu {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+
+
+
+        #anasayfa-haberler-menu::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+        #anasayfa-haberler-menu a {
+            margin: -8px 0px;
+            padding: 0px 8px;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 14px;
+            border: none;
+        }
+
+
+
+            #anasayfa-haberler-menu a div {
+                display: block;
+                min-width: 130px;
+            }
+
+    #anasayfa-haberler-menu {
+        height: 46px;
+        padding: 0px;
+    }
+
+    #anasayfa-haberler-active-area .arh {
+        width: 35%;
+        height: 110px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        float: left;
+        margin-right: 5%;
+    }
+
+
+
+    #anasayfa-haberler-active-area .ard {
+        display: none;
+    }
+
+    #anasayfa-haberler-active-area .arb {
+        font-size: 12px;
+        font-weight: bold;
+        color: #464646;
+        letter-spacing: 0.5px;
+        margin: 0px;
+        line-height: 18px;
+    }
+
+    #anasayfa-haberler-active-area .art {
+        display: none
+    }
+
+    .baskanlik-anasayfa-alt-haber .art {
+        display: none;
+    }
+
+    #anasayfa-haberler-active-area .art-mobile {
+        display: block !important;
+        font-size: 12px;
+        color: #7e7e7e;
+        letter-spacing: 1px;
+        margin-top: 5px;
+    }
+
+    #anasayfa-haberler-active-area a {
+        margin: 5px 0px;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    #anasayfa-duyurular-area {
+        margin-top: 20px;
+    }
+
+
+    #anasayfa-duyurular-area {
+        margin-top: 20px;
+        width: 96%;
+        margin-left: 2%;
+        float: left;
+        display: block;
+    }
+
+
+    .duyuru-baslik {
+        font-size: 18px;
+    }
+
+
+    .duyurular-content-sol .duyuru-baslik {
+        font-size: 14px;
+    }
+
+    #anasayfa-etkinlikler .duyuru-baslik-holder {
+        margin-top: 20px;
+    }
+
+    #duyurular-header-sol {
+        width: 100%;
+        float: left;
+    }
+
+    #duyurular-content-sol {
+        display: block;
+        float: left;
+    }
+
+    .duyurular-content-sol .duyuruLine {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+
+
+    #anasayfa-etkinlikler .duyurular-content {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+
+    #anasayfa-etkinlikler .duyurular-content {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+
+        #anasayfa-etkinlikler .duyurular-content img {
+            width: 100%;
+            height: 203px;
+            border-radius: 5px;
+            box-shadow: none;
+            margin: 0px auto;
+        }
+
+
+
+
+    #anasayfa-sanal-tur-holder {
+        margin-top: 20px;
+    }
+
+
+        #anasayfa-sanal-tur-holder .duyurular-content {
+            width: 100%;
+        }
+
+
+
+            #anasayfa-sanal-tur-holder .duyurular-content img {
+                width: 100%;
+                height: 203px;
+                border-radius: 5px;
+                box-shadow: none;
+                margin: 0px auto;
+            }
+
+
+
+    #anasayfa-fotograflarla-tbmm {
+        margin-top: 20px;
+    }
+
+
+        #anasayfa-fotograflarla-tbmm .duyurular-content {
+            width: 100% !important;
+            margin-top: 10px;
+        }
+
+
+
+            #anasayfa-fotograflarla-tbmm .duyurular-content img {
+                width: 100%;
+                height: 203px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 50%)
+            }
+
+
+
+
+    #fl-idari-teskilat, #fl-tbmm-ziyaret, #fl-engelsiz-meclis,  #fl-aydinlatma {
+        padding-left: 0px;
+    }
+
+
+    #footer-image-alani span {
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: white;
+        font-family: Cinzel;
+        margin-top: 10px;
+        display: block;
+        color: #dedede;
+    }
+
+    #anasayfa-social-link-tbmm-tv img {
+        height: 26px !important;
+    }
+
+
+
+    #footer-linkler-alani div span {
+        display: block;
+        width: 100%;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        padding-bottom: 13px;
+        margin-bottom: 13px;
+    }
+
+        #footer-linkler-alani div span a {
+            color: #c4b084;
+            width: 100%;
+            display: block
+        }
+
+
+        #footer-linkler-alani div span img {
+            height: 16px;
+            margin-top: 6px;
+            float: right;
+            display: block !important;
+        }
+
+
+    #footer-linkler-alani div ul {
+        display: none
+    }
+
+    #footer-linkler-alani div {
+        width: 100%;
+        text-align: left;
+        padding-bottom: 0px !important;
+    }
+
+
+
+    #footer-linkler-alani {
+        border-bottom: none;
+    }
+
+    #footer-tbmm-logo-holder {
+        width: 80px;
+        height: 60px;
+    }
+
+        #footer-tbmm-logo-holder img {
+            width:60px;
+            height:60px;
+        }
+
+    #footer-tbmm-text-holder {
+        width: 80%;
+    }
+
+    #footer-tbmm-text-holder-tbmm {
+        font-size: 14px;
+    }
+
+    #footer-tbmm-text-holder-kurumsal {
+        font-size: 12px;
+        color: #878787
+    }
+
+    #footer-adres-area {
+        width: 100%;
+        margin-left: 0px;
+        border: none;
+        margin-top: 36px;
+        font-size: 14px;
+        padding-left: 10px;
+        border-top: 1px solid #4a505b;
+        padding-top: 20px;
+        float: left;
+        letter-spacing: 0px;
+        color: #bfbfbf;
+    }
+
+
+        #footer-adres-area div a {
+            color: #bfbfbf;
+        }
+
+        #footer-adres-area div {
+            display: block;
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+            #footer-adres-area div span {
+                width: 30px;
+                display: block;
+                float: left
+            }
+
+
+
+
+            #footer-adres-area div img {
+                height: 16px;
+                margin-right: 10px;
+            }
+
+
+    #footer-bize-ulasin-title {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    #footer_home_icon img {
+        height: 14px !important;
+    }
+
+    #footer_email_icon img {
+        height: 12px !important;
+    }
+
+
+    #footer-social-area {
+        display: none
+    }
+
+    #footer-end-line {
+        margin-top: 10px;
+        height: 260px;
+    }
+
+
+    .duyuru-baslik-holder {
+        width: 100%;
+        height: 30px;
+    }
+
+
+    .alt-sayfa-content {
+        margin: 0px !important;
+    }
+
+
+    .baskan-header-menu a {
+        font-size: 13px !important;
+    }
+
+    .baskanlik-content p {
+        margin: 8px;
+    }
+
+    .baskanlik-anasayfa-alt-haber {
+        margin: 0px;
+        width: 100%;
+        margin-top: 15px;
+        overflow: hidden;
+        float: left
+    }
+
+
+
+
+
+
+
+    .baskanlik-baskan-ozgecmis img {
+        margin-bottom: 0px;
+    }
+
+
+
+
+
+
+
+    .baskanlik-anasayfa-alt-haber .arh {
+        width: 35%;
+        height: 100px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        float: left;
+        margin-right: 5%;
+    }
+
+
+
+
+
+
+
+
+
+
+    .baskanlik-anasayfa-alt-haber .ard {
+        display: none;
+    }
+
+    .baskanlik-anasayfa-alt-haber .arb {
+        padding-right: 15px;
+        font-size: 11px;
+        font-weight: bold;
+        color: #464646;
+        letter-spacing: 0.5px;
+        margin: 0px;
+        line-height: 18px;
+    }
+
+    .baskanlik-anasayfa-alt-haber .art {
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .baskanlik-anasayfa-alt-haber .art-mobile {
+        display: block !important;
+        font-size: 12px;
+        color: #7e7e7e;
+        letter-spacing: 1px;
+        margin-top: 5px;
+    }
+
+
+    .baskanlik-anasayfa-alt-haber a {
+        margin: 0px 0px 10px 15px;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+
+    #sag_menu_holder {
+        display: none;
+    }
+
+    .paging_full_numbers ul {
+        height: 50px;
+    }
+
+        .paging_full_numbers ul li {
+            line-height: 30px;
+            padding: 0px 5px;
+        }
+
+        .paging_full_numbers ul > li > a {
+            height: 40px;
+            padding: 0px 5px;
+            margin: 10px 0px;
+        }
+
+    .page-item:not(:first-child) .page-link {
+        margin-left: 0px;
+    }
+
+    .pagination .active a {
+        height: 50px !important;
+        margin: 0px;
+        padding: 10px 0px !important;
+        min-width: 100px;
+        text-align: center;
+    }
+
+
+
+    
+    
+    
+    .baskan-header-menu {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+        .baskan-header-menu::-webkit-scrollbar {
+            display: none;
+        }
+
+        .baskan-header-menu a {
+            padding: 0px 20px;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+        }
+    
+
+
+    #baskan-header-menu-meclis-baskalari {
+        display: block;
+        width: 150px;
+    }
+
+    #meclis-baskanlari-table img {
+        width: 32px;
+    }
+
+
+    #meclis-baskanlari-table {
+        font-size: 11px;
+    }
+
+    
+
+
+    #content-title-type {
+        width: 100%;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+
+    #milletvekili-secim-alani {
+        display: block;
+    }
+
+    #milletvekili-harita-alani, #map-note {
+        display: none;
+    }
+
+    #milletvekili-secim-alani {
+        margin: 60px 5px 5px 5px;
+    }
+
+    #milletvekili-list {
+        margin: 0px 10px 0px;
+    }
+
+        #milletvekili-list .card {
+            width: 32%;
+        }
+
+
+
+    
+
+
+    #milletvekili-detay-holder #content-title-type span {
+        display: none;
+    }
+
+    #milletvekili-detay-holder .content-sub-title {
+        width: 10%;
+        text-align: center;
+        margin: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+
+        #milletvekili-detay-holder .content-sub-title span {
+            display: none;
+        }
+
+        #milletvekili-detay-holder .content-sub-title a {
+            float: none;
+            padding-top: 13px;
+            height: 45px;
+            display: block;
+        }
+
+    #milletvekili-detay-holder-desktop {
+        display: none;
+    }
+
+    #milletvekili-detay-holder-mobile {
+        padding: 10px;
+        display: flex;
+        font-family: Raleway;
+    }
+
+        #milletvekili-detay-holder-mobile #milletvekili-adi {
+            width: 100%;
+            display: block;
+        }
+
+        #milletvekili-detay-holder-mobile #milletvekili-donem {
+            width: 100%;
+            display: block;
+            color: #8b8b8b;
+            font-size: 14px;
+            margin-top: 10px;
+            font-family: Arial;
+            font-weight: 500
+        }
+
+        #milletvekili-detay-holder-mobile #milletvekili-sehir {
+            width: 100%;
+            display: block;
+            font-size: 12px;
+            color: #8b8b8b;
+            font-family: Arial;
+            font-weight: 500
+        }
+
+        #milletvekili-detay-holder-mobile #milletvekili-komisyon {
+            width: 100%;
+            display: block;
+            font-size: 12px;
+            color: #8b8b8b;
+            font-family: Arial;
+            font-weight: 500;
+            padding-top: 10px;
+        }
+
+        #milletvekili-detay-holder-mobile #milletvekili-web-adresi {
+            width: 100%;
+            display: block;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        #milletvekili-detay-holder-mobile #mobile-social-area-holder {
+            width: 100%;
+            display: block;
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: center;
+            border-top: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            padding: 10px 0px;
+        }
+
+            #milletvekili-detay-holder-mobile #mobile-social-area-holder a {
+                padding: 0px 5%;
+            }
+
+    
+
+    #milletvekili-detay-holder #adres-alani {
+    }
+
+    #milletvekili-detay-holder-mobile #adres-alani table {
+        margin: 0px;
+    }
+
+        #milletvekili-detay-holder-mobile #adres-alani table tr td {
+            font-size: 14px;
+        }
+
+            #milletvekili-detay-holder-mobile #adres-alani table tr td.adres {
+                line-height: 18px;
+            }
+
+    #milletvekili-detay-holder-mobile .profile-adres-div {
+        background-color: #e3e3e3;
+        margin: 0px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #milletvekili-detay-holder-mobile .profile-image {
+        width: 100%;
+    }
+
+    #milletvekili-detay-holder-mobile #ozgecmis-alani {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+        #milletvekili-detay-holder-mobile #ozgecmis-alani ozgecmis-alani-holder {
+            text-align: justify;
+        }
+
+
+
+    #milletvekili-arama-sonuclari .tbmm-div-list {
+        float: left;
+        margin: 0px !important;
+    }
+
+    #milletvekili-arama-sonuclari .profile-list {
+        margin: 0px !important;
+    }
+
+    #milletvekili-arama-sonuclari .profile-image {
+        width: 100%;
+    }
+
+    #milletvekili-arama-sonuclari .isim_soyisim {
+        font-size: 14px !important;
+    }
+
+    #milletvekili-arama-sonuclari .ozgemis_linki_desktop {
+        display: none;
+    }
+
+    #milletvekili-arama-sonuclari .ozgemis_linki_mobile {
+        display: block;
+    }
+
+    #milletvekili-arama-sonuclari .gorev_listesi {
+        display: none !important;
+    }
+
+    #milletvekili-arama-sonuclari .milletvekili_cehresi {
+        text-align: left !important;
+    }
+
+    #milletvekili-arama-sonuclari .milletvekili-liste-desktop {
+        display: none !important;
+    }
+
+
+    #milletvekilligi-sona-erenler .profile-image {
+        width: 100%;
+    }
+
+    #milletvekilligi-sona-erenler .ozgemis_linki_desktop {
+        display: none
+    }
+
+    #milletvekilligi-sona-erenler .ozgemis_linki_mobile {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #milletvekilligi-sona-erenler .mv_sona_eren_ad_soyad {
+        font-size: 14px;
+    }
+
+    #milletvekilligi-sona-erenler .mv_sona_erenler_parti_logo {
+        display: none
+    }
+
+    #tbmm_yayinlari_holder .tbmm-link {
+        width: 100%;
+    }
+
+    #tbmm_yayinlari_holder .card-list {
+        padding: 10px;
+    }
+
+        #tbmm_yayinlari_holder .card-list h6 {
+            font-size: 14px;
+        }
+
+    #tbmm-tv-content .video_holder {
+        width: 100%;
+        min-height: 36px;
+        max-height: 280px
+    }
+
+    #sandalye-dagilimi #content-title-type {
+        font-size: 16px;
+        padding-top: 12px;
+    }
+
+    #sandalye-dagilimi table tr td {
+        font-size: 14px;
+    }
+
+
+
+
+
+    #sandalye-dagilimi #content-title-type {
+        display: none;
+    }
+
+    #sandalye-dagilimi #content-title-type-mobile {
+        display: block;
+        white-space: nowrap;
+        width: 80%;
+        float: left;
+        font-size: 14px;
+        height: 70px;
+        color: #c4b084;
+        display: block;
+        padding-left: 20px;
+        line-height: 23px;
+        font-family: Raleway;
+        font-weight: 100;
+        letter-spacing: 2px;
+        padding-top: 13px;
+    }
+
+    #sandalye-dagilimi table tr td:first-child {
+        font-weight: bold;
+    }
+
+
+
+
+
+
+    .mobile_disabled {
+        display: none;
+    }
+
+
+
+
+    .mobile_enabled {
+        display: block;
+    }
+
+
+
+
+    #SandalyeDagilimiUyeListe .tbmm-div-list {
+        float: left;
+        margin: 0px !important;
+    }
+
+    #SandalyeDagilimiUyeListe .profile-list {
+        margin: 0px !important;
+    }
+
+    #SandalyeDagilimiUyeListe .profile-image {
+        width: 100%;
+    }
+
+    #SandalyeDagilimiUyeListe .isim_soyisim {
+        font-size: 14px !important;
+    }
+
+    #SandalyeDagilimiUyeListe .ozgemis_linki_desktop {
+        display: none;
+    }
+
+    #SandalyeDagilimiUyeListe .ozgemis_linki_mobile {
+        display: block;
+    }
+
+    #SandalyeDagilimiUyeListe .gorev_listesi {
+        display: none !important;
+    }
+
+    #SandalyeDagilimiUyeListe .milletvekili_cehresi {
+        text-align: left !important;
+    }
+
+    #SandalyeDagilimiUyeListe .milletvekili-liste-desktop {
+        display: none !important;
+    }
+
+
+    #millletvekilleri-eposta #content-title-type {
+        font-size: 12px;
+    }
+
+
+    #millletvekilleri-eposta table tr td {
+        font-size: 13px;
+    }
+
+    #millletvekilleri-eposta table tr th {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #millletvekilleri-eposta .tbmm-div-list {
+        margin: 0px;
+    }
+
+
+    #SandalyeDagilimiUyeListe .profile-list {
+        margin: 0px !important;
+    }
+
+    #SandalyeDagilimiUyeListe .tbmm-div-list {
+        float: left;
+        margin: 0px !important;
+    }
+
+    #SandalyeDagilimiUyeListe .profile-list {
+        margin: 0px !important;
+    }
+
+    #SandalyeDagilimiUyeListe .profile-image {
+        width: 100%;
+    }
+
+    #SandalyeDagilimiUyeListe .isim_soyisim {
+        font-size: 14px !important;
+    }
+
+    #SandalyeDagilimiUyeListe .ozgemis_linki_desktop {
+        display: none;
+    }
+
+    #SandalyeDagilimiUyeListe .ozgemis_linki_mobile {
+        display: block;
+    }
+
+    #SandalyeDagilimiUyeListe .gorev_listesi {
+        display: none !important;
+    }
+
+    #SandalyeDagilimiUyeListe .milletvekili_cehresi {
+        text-align: left !important;
+    }
+
+    #SandalyeDagilimiUyeListe .milletvekili-liste-desktop {
+        display: none !important;
+    }
+
+    #komisyon-baskani #baskan-resmi {
+        width: 50% !important;
+        margin-left: 25%;
+        margin-right: 25%
+    }
+
+    #millletvekilleri-eposta #content-title-type {
+        font-size: 12px;
+    }
+
+
+    #millletvekilleri-eposta table tr td {
+        font-size: 13px;
+    }
+
+    #millletvekilleri-eposta table tr th {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #millletvekilleri-eposta .tbmm-div-list {
+        margin: 0px;
+    }
+
+    #millletvekilleri-eposta #mecTable_filter {
+        padding-right: 10px;
+    }
+
+
+    #mv-telefon-liste #content-title-type {
+        font-size: 11px;
+    }
+
+    #mv-telefon-liste table tr td {
+        font-size: 13px;
+    }
+
+    #mv-telefon-liste table tr th {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #kanun-teklifleri-sonuclari #content-title-type {
+        font-size: 13px;
+    }
+
+    #kanun-teklifleri-sonuclari table tr td {
+        font-size: 13px;
+    }
+
+    #kanun-teklifleri-sonuclari table tr th {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+    #kanun-teklifi-detay table tr td {
+        font-size: 11px;
+    }
+
+    #kanun-teklifi-detay table tr th {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    #komisyon-baskani #baskan-resmi {
+        width: 50% !important;
+        margin-left: 25%;
+        margin-right: 25%
+    }
+
+    #komisyon-baskani #kom-baskani-parti-logo {
+        width: 20%;
+        margin: 0 auto;
+        padding: 0px !important
+    }
+
+    #komisyon-uyeleri #uye-resmi {
+        width: 50% !important;
+        margin-left: 25%;
+        margin-right: 25%
+    }
+
+
+    #komisyon-baskani #parti-logo {
+        width: 20%;
+        margin: 0 auto;
+        padding: 0px !important
+    }
+
+    #komisyon-uyeleri #parti-logo {
+        width: 20%;
+        margin: 0 auto;
+        padding: 0px !important
+    }
+
+    #komisyon-uyeleri #ad-soyad {
+        text-align: center;
+    }
+
+    #komisyon-raporlari #data-holder table tr th {
+        font-size: 12px;
+    }
+
+
+    #komisyon-kanunlasan-isler #data-holder {
+        padding: 0px;
+        border: none;
+        margin-top: 10px;
+    }
+
+        #komisyon-kanunlasan-isler #data-holder table tr td {
+            font-size: 12px;
+        }
+
+        #komisyon-kanunlasan-isler #data-holder table tr th {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+
+    #yasama-kanun-sonuc table tr td {
+        font-size: 13px;
+    }
+
+    #kanun-detay table tr td {
+        font-size: 13px;
+    }
+
+
+    #tutanak-detay table tr td {
+        font-size: 13px;
+    }
+
+    #tutanak-detay #data-holder {
+        padding: 10px;
+        padding-top: 15px;
+        margin-top: 0px;
+        float: left
+    }
+
+
+    #karar-detay table tr td {
+        font-size: 14px;
+    }
+
+
+    #khk-sonuc-sayfasi #content-title-type {
+        font-size: 14px;
+        white-space: normal;
+        line-height: 20px;
+        padding-top: 16px;
+    }
+
+
+
+    #millletvekilleri-eposta #content-title-type {
+        font-size: 12px;
+    }
+
+
+    #telefon-rehberi-detay table tr th,
+    #butce-kanun-tasari-detay table tr th,
+    #gensoru-onergesi table tr th,
+    #gensoru-onergeleri-sonuc table tr th,
+    #gecmis-donem-meclis-arastirma-komisyonlari-sonuclari table tr th,
+    #meclis-arastirma-komisyonlari-sonucu table tr th,
+    #meclis-arastirma-komisyonlari-sonuclari table tr th,
+    #meclis-arastirma-onerge-arama-sonuc table tr th,
+    #gecmis-donem-gene-gorusme-onergeleri-sonuc table tr th,
+    #genel-gorusme-onergeleri-sonuc table tr th,
+    #gecmis-donem-yazili-soru-onergeleri-sonuc table tr th,
+    #yazili-soru-onergeleri-sonuc table tr th,
+    #gecmis-kanunlar-sonuc table tr th,
+    #gecmis-kanunlar table tr th,
+    #gecmis-komisyon-raporlari-sonuc table tr th,
+    #komisyon-raporlari-sonuc table tr th,
+    #karar-arama-sonuclari table tr th,
+    #gecmis-karar-arama-sonuclari table tr th,
+    #khk-sonuc-sayfasi table tr th,
+    #gecmis-khk table tr th,
+    #gecmis-khklar-sonuc table tr th {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
+
+
+
+    #telefon-rehberi-detay table tr td,
+    #butce-kanun-tasari-detay table tr td,
+    #gensoru-onergesi table tr td,
+    #gensoru-onergeleri-sonuc table tr td,
+    #gecmis-donem-meclis-arastirma-komisyonlari-sonuclari table tr td,
+    #meclis-arastirma-komisyonlari-sonucu table tr td,
+    #meclis-arastirma-komisyonlari-sonuclari table tr td,
+    #meclis-arastirma-onerge-arama-sonuc table tr td,
+    #gecmis-donem-gene-gorusme-onergeleri-sonuc table tr td,
+    #genel-gorusme-onergeleri-sonuc table tr td,
+    #gecmis-yazili-soru-onergesi-detay table tr td,
+    #gecmis-donem-yazili-soru-onergeleri-sonuc table tr td,
+    #yazili-soru-onergeleri-sonuc table tr td,
+    #gecmis-kanunlar-sonuc table tr td,
+    #gecmis-kanunlar table tr td,
+    #gecmis-komisyon-raporlari-sonuc table tr td,
+    #komisyon-raporlari-sonuc table tr td,
+    #karar-arama-sonuclari table tr td,
+    #gecmis-karar-arama-sonuclari table tr td,
+    #khk-sonuc-sayfasi table tr td,
+    #gecmis-khk table tr td,
+    #gecmis-khklar-sonuc table tr td {
+        font-size: 12px;
+    }
+
+
+    #millletvekilleri-eposta table tr th {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #millletvekilleri-eposta .tbmm-div-list {
+        margin: 0px;
+    }
+
+    #millletvekilleri-eposta #mecTable_filter {
+        padding-right: 10px;
+    }
+
+
+
+
+
+    #gelen-kagitlar-liste #content-title-type,
+    #komisyon-tutanaklari #content-title-type,
+    #gensoru-onergeleri-sonuc #content-title-type,
+    #gensoru-onergeleri-formu #content-title-type,
+    #meclis-arastirma-komisyonlari-sonucu #content-title-type,
+    #meclis-arastirma-onergesi-detay #content-title-type,
+    #yazili-soru-onergeleri #content-title-type {
+        font-size: 13px;
+    }
+
+
+
+
+    .page-content .container:first-child {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #isay-apollo .blog-content {
+        text-align: justify;
+        float: left;
+        width: 100%;
+        margin: 0px;
+    }
+
+        #isay-apollo .blog-content p {
+            margin: 10px;
+        }
+
+    #yayinlar-genel .tbmm-div-list {
+        margin: 90px 15px 0px 15px
+    }
+
+    #dostluk-gruplari #ulke-list .card {
+        width: 24%;
+        height: 84px
+    }
+
+        #dostluk-gruplari #ulke-list .card img {
+            height: 50px
+        }
+
+    #dostluk-gruplari .tbmm-div-list {
+        margin: 10px
+    }
+
+    #dostluk-gruplari #map1 {
+        width: 100%;
+        height: 400px;
+    }
+
+    #dostluk-gruplari-genel-bilgi .tbmm-div-list {
+        margin: 10px;
+        text-align: justify;
+    }
+
+
+
+
+
+    .anayasa-sayfa .tbmm-div-list {
+        margin: 60px 10px 0px 10px;
+    }
+
+    .anayasa-sayfa .content-title-small {
+        font-size: 13px !important;
+    }
+
+    .search-form {
+        margin: 2%;
+        width: 96%;
+        float: left;
+    }
+
+
+    #milletvekili-kanun-bilgileri .tbmm-div-list {
+        margin: 10px;
+        float: left;
+    }
+
+    #milletvekili-kanun-bilgileri .content-title-type {
+        font-size: 14px;
+    }
+
+
+    #sandalye-dagilimi .tbmm-div-list {
+        margin: 90px 10px 0px 10px;
+    }
+
+    .common-page-content .tbmm-div-list {
+        margin: 10px;
+        float: left;
+    }
+
+    #meclis-baskanlari-sayfasi .flip-card {
+        width: 48%;
+    }
+
+
+
+    #ozel-gundem-toplantilari #content-title-type {
+        font-size: 11px;
+        white-space: inherit;
+        word-break: break-word;
+        width: 100%;
+    }
+
+    
+
+    #isay-vesta .parti-logo {
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 10px;
+    }
+
+    #isay-kibele .parti-logo {
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 10px;
+    }
+
+    .tbmm-link-safahat {
+        width: 100%;
+    }
+
+
+    .meclishaber-ustmenu .col-8 {
+        width: 100%;
+    }
+
+    .meclishaber-ustmenu .col-4 {
+        display: none;
+    }
+
+
+    #header-banner {
+        height: 60px;
+        width: 100%;
+        display: block;
+    }
+
+    #header-container-mobile #header-background {
+        height: 60px;
+        overflow: hidden
+    }
+
+    #anasayfa-social-area {
+        height: 50px;
+    }
+
+    #anasayfa-social-link-tbmm-tv div {
+        margin-top: 15px;
+    }
+
+    #anasayfa-social-area div {
+        margin-top: 12px;
+    }
+
+
+
+    ul.pagination li:nth-child(2n) {
+        background-color: #888888;
+    }
+
+
+
+
+
+
+    #content-title-type {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+
+    #haber-img {
+        height: 220px;
+    }
+
+    #haber-detay-aciklama {
+        margin-top: 24px;
+        line-height: 20px;
+    }
+
+
+
+    #haber-detay-baslik {
+        padding: 10px 0px;
+        font-size: 18px;
+        margin-bottom: 0px;
+        line-height: 23px;
+    }
+
+    .meclis-haber-hepsi #content-dinamik-title .col-8 {
+        width: 100%;
+    }
+
+    .meclis-haber-hepsi #content-dinamik-title .col-4 {
+        display: none
+    }
+
+    
+
+
+    #anasayfa-social-area div img {
+        height: 18px;
+    }
+
+
+    #tbmm-tv {
+        margin: 74px 0px 0px 0px;
+    }
+
+    #footer-linkler-alani {
+        margin-bottom: 0px;
+    }
+
+    .page-content {
+        padding-bottom: 0px;
+    }
+
+    #footer-container {
+        margin-top: 5px;
+    }
+
+
+    #anasayfa-haberler-active-area-holder {
+        width: 94%;
+        margin-left: 2%;
+        margin-top: 10px;
+    }
+
+    .baskanlik-header {
+        height: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .navMobile {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 15px;
+        padding-right: 5%;
+    }
+
+        .navMobile a {
+            display: block;
+            height: 30px;
+            width: 30px;
+        }
+
+            .navMobile a:after,
+            .navMobile a:before,
+            .navMobile a div {
+                background-color: white;
+                border-radius: 3px;
+                content: '';
+                display: block;
+                height: 2px;
+                margin: 7px 0;
+                transition: all 0.3s ease-in-out;
+            }
+
+
+
+    .HamburgerMenuActive.navMobile a div {
+        transform: scale(0);
+        background-color: #FFF;
+    }
+
+    .HamburgerMenuActive.navMobile a:before {
+        transform: translateY(6px) rotate(135deg);
+        background-color: #FFF;
+    }
+
+    .HamburgerMenuActive.navMobile a:after {
+        transform: translateY(-12px) rotate(-135deg);
+        background-color: #FFF;
+    }
+
+
+
+    .HamburgerMenuPasive.navMobile a div {
+        
+    }
+
+    .HamburgerMenuPasive.navMobile a:before {
+        transform: translateY(0px) rotate(0deg);
+        background-color: #FFF;
+    }
+
+    .HamburgerMenuPasive.navMobile a:after {
+        transform: translateY(0px) rotate(0deg);
+        background-color: #FFF;
+    }
+
+
+    .HamburgerMenuActive {
+        z-index: 1000;
+    }
+
+    .HamburgerMenuPasive {
+        z-index: 1000;
+    }
+
+    
+
+    
+
+
+
+    #header-background-image {
+        height: 80px;
+    }
+
+    #header-logo img {
+        height: 40px;
+    }
+
+    .millletvekili_parti_mobile {
+        float: left;
+        width: 50%;
+    }
+
+        .millletvekili_parti_mobile img {
+            height: 48px;
+            margin-top: 6px;
+        }
+
+    .ozgemis_linki_mobile {
+        float: right;
+        width: 50%;
+        margin-top: 32px;
+    }
+
+
+    #milletvekili-arama-sonuclari .millletvekili_parti_mobile {
+        display: block;
+    }
+
+
+    #isay-vesta .profile-image {
+        width: 100%;
+    }
+
+    #isay-vesta .isim_soyisim {
+        font-size: 14px !important;
+    }
+
+    #isay-vesta .ozgemis_linki_desktop {
+        display: none;
+    }
+
+    #isay-vesta .milletvekili_cehresi {
+        text-align: left !important;
+    }
+
+
+    #isay-vesta .milletvekili-liste-desktop {
+        display: none !important;
+    }
+
+    #isay-vesta .ozgemis_linki_mobile,
+    #isay-vesta .millletvekili_parti_mobile {
+        display: block;
+    }
+
+    #isay-kibele .profile-image {
+        width: 100%;
+    }
+
+    #isay-kibele .isim_soyisim {
+        font-size: 14px !important;
+    }
+
+    #isay-kibele .ozgemis_linki_desktop {
+        display: none;
+    }
+
+    #isay-kibele .milletvekili_cehresi {
+        text-align: left !important;
+    }
+
+
+    #isay-kibele .milletvekili-liste-desktop {
+        display: none !important;
+    }
+
+    #isay-kibele .ozgemis_linki_mobile,
+    #isay-kibele .millletvekili_parti_mobile {
+        display: block;
+    }
+
+
+    
+
+
+    #anasayfa-social-link-instagram img {
+        height: 19px !important;
+    }
+
+
+
+    .baskanlik-header {
+        width: 15%;
+        float: right;
+        font-size: 16px;
+        height: 70px;
+        color: #c4b084;
+        font-family: Raleway;
+        font-weight: 100;
+        letter-spacing: 2px;
+        display: flex;
+        margin-right: 20px;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .flip-card-responsive {
+        width: 32%;
+    }
+
+
+
+    
+
+
+
+    #carouselAnasayfaSlider .carousel-baslik {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    #carouselAnasayfaSlider .carousel-caption {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 100%);
+        background-color: transparent;
+        opacity: 0.9;
+        line-height: 18px;
+        bottom: 0px;
+        padding: 15px 2%;
+    }
+
+
+    #tbmmde-bugun-yil {
+        font-size: 18px;
+    }
+
+    #tbmmde-bugun-ay-yil {
+        font-size: 18px;
+    }
+
+    #tbmmde-bugun-gun-adi {
+        width: 100%;
+        display: block;
+        color: #6c4d00;
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        height: 24px;
+        margin-top: -3px;
+    }
+
+    #tbmmde-bugun-tarih-alani {
+        padding-left: 5px;
+    }
+
+
+    #tbmmde-bugun {
+        padding: 20px 0px 20px 10px;
+    }
+
+
+
+    #anasayfa-link-bar {
+        height: 80px;
+        margin-top: 10px;
+        background: #4b4f5a;
+    }
+
+    .anasayfa-link-bar-link img {
+        max-height: 25px;
+    }
+
+    .anasayfa-link-bar-link {
+        height: 60px;
+    }
+
+    .anasayfa-link-bar-link {
+        margin: 10px 0px;
+    }
+
+    .anasayfa-link-bar-link-edilekce div {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .anasayfa-link-bar-link-bilgiedinme span {
+        line-height: 26px;
+    }
+
+
+    .anasayfa-link-bar-link div {
+        display: none
+    }
+
+
+
+    .anasayfa-link-bar-link span {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 60px;
+        font-size: 10px
+    }
+
+
+
+    #baskanlik-haberler .baskanlik-anasayfa-alt-haber {
+        margin: 0px;
+        float: left;
+        margin-top: 15px;
+        width: 96%;
+    }
+
+    #milletvekili-arama-sonuclari #content-title-type {
+        font-size: 16px;
+    }
+
+    #mazbata-arama .profile-image {
+        width: 100%;
+    }
+
+    #mazbata-arama {
+        font-size: 14px !important;
+    }
+
+        #mazbata-arama .gorev-listesi {
+            font-size: 12px !important;
+        }
+
+        #mazbata-arama .parti-logo {
+            display: none
+        }
+
+        #mazbata-arama .millletvekili_parti_mobile {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+    #haber-detay-saat {
+        font-size: 13px;
+    }
+
+    #haber-detay-saat-dakika {
+        width: 50%;
+    }
+
+
+
+    .nav-item.dropdown:hover .nav-link,
+    .nav-item.dropdown:focus-within .nav-link {
+        color: white !important;
+        margin-bottom: 0px !important;
+        padding-bottom: 15px !important;
+        margin-top: 2px !important;
+        box-shadow: none !important;
+        font-weight: normal !important;
+    }
+
+
+
+
+
+
+ 
+}
+
+
+
+
+
+
+
+@media all and (min-width: 991px) {
+    #header-container {
+        display: block;
+    }
+
+    #header-container-mobile {
+        display: none;
+    }
+
+}
+
+
+@media all and (min-width: 991px) and (max-width: 1200px) {
+
+    #anasayfa-banner-default-image {
+        height: 400px;
+        padding: 50px 0px 50px 0px;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    #carousel-indicators-holder {
+        display: none;
+    }
+
+
+    #carouselAnasayfaSlider, #carouselAnasayfaSlider .haberImgHolder {
+        min-height: 175px;
+        height: 175px;
+        width: 100%;
+        float: left;
+        background-size: cover !important;
+        background-color: #7d2222;
+    }
+
+
+
+    #tbmmde-bugun {
+        width: 97%;
+    }
+
+    #header-title-main {
+        font-size: 19px;
+        letter-spacing: 0.5px;
+    }
+
+    #header-title-sub {
+        font-size: 12px;
+        letter-spacing: 0.82px;
+    }
+
+    #header-title {
+        left: 60px;
+    }
+
+    #header-background-image {
+        background-position: left;
+        width: 100%;
+        margin-right: 0px;
+        background-size: cover;
+        height: 80px;
+    }
+
+    #header-logo {
+        left: 20px;
+        height: 60px;
+        top: 11px;
+    }
+
+
+    .container, .container-sm {
+        max-width: 100%;
+    }
+
+    #tbmm-tv-content .accordion-button {
+        height: 32px;
+        font-size: 12px;
+    }
+
+    #tbmm-tv-content .accordion-body {
+        font-size: 12px;
+    }
+
+    #tbmm-tv-content .accordion-item .table {
+        font-size: 12px;
+    }
+
+    .baskanlik-header {
+        width: 15%;
+        float: right;
+        font-size: 12px;
+        height: 47px;
+        color: #c4b084;
+        font-family: Raleway;
+        font-weight: 100;
+        letter-spacing: 2px;
+        display: flex;
+        margin-right: 20px;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #milletvekili-detay-holder .content-title {
+        width: 85%;
+    }
+
+    .paging_full_numbers ul > li > a > img {
+        width: 30%;
+    }
+
+    #searchBar {
+        margin: 47px 0px 15px 0px;
+    }
+
+        #searchBar .row {
+            padding: 10px 10px 0px 10px;
+        }
+
+            #searchBar .row div {
+                padding: 0px 10px;
+            }
+
+                #searchBar .row div input {
+                    margin-top: 10px;
+                }
+
+            #searchBar .row #searchButton {
+                padding: 10px 10px 0px 10px;
+            }
+
+
+
+    #link-bar-sag-ok, #link-bar-sol-ok {
+        display: block;
+        color: #dedede;
+        font-size: 24px;
+        text-align: center;
+        line-height: 70px;
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+        
+    }
+
+    #link-bar-sol-ok {
+        left: 0px;
+        background-image: none
+    }
+
+
+    #link-bar-sag-ok {
+        right: 0px;
+        background-image: none
+    }
+
+
+
+
+
+    #link-haberbar-sag-ok, #link-haberbar-sol-ok {
+        display: block;
+        color: #dedede;
+        font-size: 24px;
+        text-align: center;
+        line-height: 46px;
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 25px !important;
+        height: 46px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 0px !important;
+    }
+
+    #link-haberbar-sol-ok {
+        left: 0px;
+        color: red;
+        background-image: none
+    }
+
+
+    #link-haberbar-sag-ok {
+        right: 0px;
+        background-image: none
+    }
+
+    #link-haberAlaniMeclisBaskani {
+        padding-left: 10px !important;
+    }
+
+    #link-haberAlaniMilletvekilleri {
+        padding-right: 10px !important;
+    }
+
+
+    #link-haberAlaniMeclis div {
+        min-width: 120px !important;
+    }
+
+    #link-haberAlaniYasama div {
+        min-width: 10px !important;
+    }
+
+    #anasayfa-kalite-area {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+
+    #teskilat-semasi-image-holder {
+        width:30% !important; 
+        padding-bottom:20px; 
+        margin:0 auto;
+    }
+
+    #mobile-hepsi-butonu {
+        width: 100%;
+        display: block;
+        text-align: right;
+        padding: 10px;
+        float: left;
+    }
+
+
+    #carouselAnasayfaSlider .carousel-item a img {
+        width: 100%;
+        height: 177px
+    }
+
+
+
+    #anasayfa-banner-default-image {
+       
+
+        height: 177px;
+        margin:0; 
+        padding: 0px;
+    }
+
+    #anasayfa-banner-alani {
+        text-align:center;
+    }
+
+
+
+    #anasayfa-link-bar {
+        width: 100%;
+        float: left;
+        height: auto;
+        display: block
+    }
+
+    .anasayfa-link-bar-link {
+        width: 100%;
+        border-bottom: 1px solid #dedede;
+        font-size: 14px;
+        text-align: center;
+        height: 50px;
+        display: block;
+    }
+
+
+        .anasayfa-link-bar-link span {
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            display: block;
+        }
+
+
+}

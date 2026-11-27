@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Faz 4 araştırma raporu</title></head>
+<body><p id="status" role="status">Rapor yükleniyor.</p>
+<p><a href="https://github.com/mertgkduman/proje/releases/tag/data-archive-20261127-phase04">Rapor arşivini indir</a></p>
+<script>
+(async () => {
+  try {
+    const response = await fetch("report.html.gz");
+    if (!response.ok || !response.body) throw new Error("report");
+    const stream = response.body.pipeThrough(new DecompressionStream("gzip"));
+    const report = await new Response(stream).text();
+    document.open();
+    document.write(report);
+    document.close();
+  } catch (error) {
+    document.getElementById("status").textContent = "Rapor yüklenemedi. Arşiv bağlantısını kullanabilirsiniz.";
+  }
+})();
+</script></body></html>
