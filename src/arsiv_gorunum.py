@@ -181,6 +181,39 @@ class PassiveHTML(HTMLParser):
         else:self.parts.append(html.escape(data))
 
 
+
+class VisibleText(HTMLParser):
+    """Read the text of a static HTML document, keeping inline words together."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+        self.ignored = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag in {"head", "script", "style", "template", "noscript"}:
+            self.ignored.append(tag)
+        if tag == "br" and not self.ignored:
+            self.parts.append(" ")
+
+    def handle_endtag(self, tag):
+        if self.ignored:
+            if tag == self.ignored[-1]:
+                self.ignored.pop()
+        elif tag in {"p", "h1", "h2", "h3", "div", "td", "li"}:
+            self.parts.append(" ")
+
+    def handle_data(self, data):
+        if not self.ignored:
+            self.parts.append(data)
+
+
+def visible_html_text(contents):
+    reader = VisibleText()
+    reader.feed(decode_html(contents))
+    reader.close()
+    return " ".join("".join(reader.parts).replace("​", "").split())
+
 def decode_html(content, http_charset=None):
     """Decode without replacement; BOM, HTTP and HTML declarations take precedence."""
     if content.startswith((codecs.BOM_UTF32_LE,codecs.BOM_UTF32_BE)):

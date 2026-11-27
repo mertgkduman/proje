@@ -55,7 +55,7 @@ from uygulamalar import (PRACTICE_TABLES, PRACTICE_VARIANT_TABLES, PRACTICE_EVID
                          validate_practice_descent)
 from kaynaklar import (POLICY_TABLES, active_policy, check_attribution, validate_policy,
                       check_evidence_attribution, validate_policy_descent)
-from arsiv_gorunum import VIEW_TABLES, validate_view, decode_html, CSP as ARCHIVE_CSP
+from arsiv_gorunum import VIEW_TABLES, validate_view, decode_html, visible_html_text, CSP as ARCHIVE_CSP
 from dosyalar import (DOSSIER_TABLES, foundation_for_party, migrate_workspace,
                       validate_dossier, validate_delivery_prefix, DELIVERY_ORDER)
 
@@ -2596,7 +2596,9 @@ def check_financial(db, v, *, storage_root=None):
         except InvalidOperation: raise ValueError('Geçersiz tutar')
         if not db.execute("SELECT 1 FROM review WHERE kind='financial' AND subject_id=? AND result='reviewed' AND reviewer_kind IN ('agent','human') AND reviewed_at<>'' AND reason<>''", (v['id'],)).fetchone(): raise ValueError('Mali ifade için kaynak incelemesi gerekli')
         currency = r'(?:TL|TRY|lira)' if v['currency'] == 'TRY' else re.escape(v['currency'])
-        clauses = re.split(r'[;\n]|(?<=[.!?])\s+', source['exact'])
+        # The court uses "vb." inside item names, followed by a lowercase word.
+        clause_break = r'[;\n]|(?<=[!?])\s+|(?<=\.)(?:(?<!\bvb\.)\s+|\s+(?![a-zçğıöşü\s]))'
+        clauses = re.split(clause_break, source['exact'])
         numbers = [n for clause in clauses if v['category'].casefold() in clause.casefold()
                    for n in re.findall(r'(?<![\w.\-])(?<!\d[./-])(\d+(?:[.,]\d+)*)\s*' + currency + r'\b', clause, re.I)]
         fmt = v.get('number_format')
@@ -2828,8 +2830,12 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
             except ValueError: pass # Historical derivatives retain their original bytes.
             if readable.read_bytes() not in acceptable:
                 raise ValueError('Okunabilir arşiv özgün belgeden farklı')
+        versions = {v['id']: v for v in result['document_version']}
+        finance_sources = {s['version_id'] for s in result.get('dossier_source', [])
+                           if s['heading'] == 'Finansman ve harcamalar'}
+        rendered_decisions = {}
         for p in result['passage']:
-            v = next(v for v in result['document_version'] if v['id'] == p['version_id'])
+            v = versions[p['version_id']]
             path = safe_path(storage_root, v['original_path'])
             if path.name == 'original.pdf':
                 if p['pdf_page_index'] is None or p['pdf_page_index'] < 0: raise ValueError('PDF sayfa indeksi gerekli')
@@ -2837,14 +2843,21 @@ def export_db(path, release_id, strict_identity=False, *, storage_root=None):
                 if manual:
                     if not manual['checked_at'] or not manual['method'] or not manual['reason'] or not pdf_page_exists(path, p['pdf_page_index']): raise ValueError('PDF elle doğrulama kaydı geçersiz')
                     continue
-                content = pdf_page_text(path, p['pdf_page_index'])
+                content = _pdf_page_text(path, v['sha256'], p['pdf_page_index'])
             else:
                 raw=path.read_bytes()
                 content=html_source_text(raw)
                 if p['exact'] not in content and safe_path(storage_root,v['readable_path']).read_bytes()==readable_bytes(raw,'html'):
                     content=raw.decode('utf-8',errors='replace')
-            if p['exact'] not in content:
-                raise ValueError('Pasaj özgün belgede bulunamadı')
+            if p['exact'] in content:
+                continue
+            if (path.name != 'original.pdf' and v['id'] in finance_sources and
+                    re.fullmatch(r'https://siyasipartikararlar\.anayasa\.gov\.tr/kbb/SP/[0-9]{4}/[0-9]+/2', v['final_url'])):
+                if v['id'] not in rendered_decisions:
+                    rendered_decisions[v['id']] = visible_html_text(raw)
+                if p['exact'] in rendered_decisions[v['id']]:
+                    continue
+            raise ValueError('Pasaj özgün belgede bulunamadı: ' + p['id'])
         for f in result['finding']:
             if f['provenance'] == 'quote' and not any(f['text'] == p['exact'] for e in result['finding_evidence'] if e['finding_id'] == f['id'] for p in result['passage'] if p['id'] == e['passage_id']):
                 raise ValueError('Alıntı kanıt pasajıyla eşleşmiyor')

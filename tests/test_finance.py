@@ -5,8 +5,15 @@ import unittest
 from pathlib import Path
 
 import arsiv
+from arsiv_gorunum import visible_html_text
 from fixture_data import copy_fixture
 from rapor import render_report
+
+
+class DecisionPassages(unittest.TestCase):
+    def test_visible_decision_preserves_inline_words_and_excludes_scripts(self):
+        decision = b"<p>ge<span>lir</span> 1.234,56&nbsp;TL</p><script>skip this</script><p>gider</p>"
+        self.assertEqual(visible_html_text(decision), "gelir 1.234,56 TL gider")
 
 
 class FinanceContract(unittest.TestCase):
@@ -43,6 +50,16 @@ class FinanceContract(unittest.TestCase):
             with self.subTest(changes=changes), self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, **changes))
         self.db.execute("UPDATE passage SET exact=exact || '; Bağış konusu incelenmedi.' WHERE id='finance-fixture'")
         with self.assertRaises(ValueError): arsiv.check_financial(self.db, dict(self.row, category='bağış'))
+
+    def test_amount_and_abbreviated_category_in_same_clause(self):
+        self.db.execute(
+            "UPDATE passage SET exact=? WHERE id='finance-fixture'",
+            ("Kocaeli il örgütü için 12,50 TL bayrak, rozet vb. giderleri kapsamındadır. Bağış konusu incelendi.",),
+        )
+        row = dict(self.row, amount="12.50", category="bayrak, rozet vb. giderleri")
+        arsiv.check_financial(self.db, row)
+        with self.assertRaises(ValueError):
+            arsiv.check_financial(self.db, dict(row, category="Bağış"))
 
     def test_null_and_documented_zero_are_distinct(self):
         self.db.execute("INSERT INTO attempt (id,party_id,heading,topic_id,type,query,attempted_at,result,reason) VALUES ('finance-missing-attempt','yeni-parti','Finansman ve harcamalar','test','verification','test','2026-11-10T15:00:00+00:00','inconclusive','Test')")
