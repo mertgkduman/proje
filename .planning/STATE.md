@@ -1,21 +1,21 @@
 ---
 gsd_state_version: "1.0"
 milestone: v1.0
-current_phase: 5
-current_phase_name: Finansman ve harcamaların belgelenmesi
+current_phase: 6
+current_phase_name: Güncellenebilir veri tabanı ve paylaşılabilir rapor
 current_plan: Not started
 status: planning
-stopped_at: Phase 4 complete, ready to plan Phase 5
-last_updated: "2026-11-27T22:02:42.451Z"
-last_activity: 2026-11-26
-last_activity_desc: Proje önizlemelerinin kalıcı arşivi ve grup kotasının açılması
-state_head: 536a9bf6e653e605b9a4ec2e9460497e27d5222a
+stopped_at: Phase 5 complete, ready to plan Phase 6
+last_updated: "2026-11-27T22:57:37.965Z"
+last_activity: 2026-11-27
+last_activity_desc: Phase 5 complete, transitioned to Phase 6
+state_head: d42dff690de26fefd1af3aa05ba19b24157e7c92
 progress:
   total_phases: 6
-  completed_phases: 4
-  total_plans: 36
-  completed_plans: 36
-  percent: 67
+  completed_phases: 5
+  total_plans: 37
+  completed_plans: 37
+  percent: 83
 ---
 
 # Project State
@@ -31,12 +31,12 @@ See: .planning/PROJECT.md (updated 2026-11-16)
 
 Current Plan: Not started
 Total Plans in Phase: TBD
-Phase: 5 — Finansman ve harcamaların belgelenmesi
+Phase: 6 — Güncellenebilir veri tabanı ve paylaşılabilir rapor
 Plan: Henüz oluşturulmadı
 Status: Ready to plan
-Last activity: 2026-11-26 — Proje önizlemelerinin kalıcı arşivi ve grup kotasının açılması (261126-ql8)
+Last activity: 2026-11-27 — Phase 5 complete, transitioned to Phase 6
 
-Progress: [███████░░░] 67% (4/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
+Progress: [████████░░] 83% (4/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
 [Faz 4 ilk teslimi](phases/04-s-ylem-ve-belgelenmi-uygulamalar-n-kar-la-t-r-lmas/04-16-SUMMARY.md).
 
@@ -48,7 +48,7 @@ Bu dalganın yazılabilir çalışma kopyası `/work/mg551/gsd-phase04-checkout.
 
 **Velocity:**
 
-- Total plans completed: 36 (Faz 1–3 ve Faz 4 ilk teslimi)
+- Total plans completed: 37 (Faz 1–3 ve Faz 4 ilk teslimi)
 - Average duration: Kesin toplam ölçülmedi; plan bazlı yaklaşık süreler SUMMARY dosyalarında.
 - Total execution time: Faz 1 altı, Faz 2 on ve Faz 3 on altı plan ile belgelenmiş düzeltmeler uygulandı; kesin toplam süre ölçülmedi.
 
@@ -60,6 +60,7 @@ Bu dalganın yazılabilir çalışma kopyası `/work/mg551/gsd-phase04-checkout.
 | 02 | 10 | - | - |
 | 03 | 16 | - | - |
 | 4 | 4 | - | - |
+| 5 | 1 | - | - |
 
 **Recent Trend:**
 
@@ -204,5 +205,5 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 ## Session Continuity
 
 Last session: 2026-11-26T19:40:51+00:00
-Stopped at: Phase 4 complete, ready to plan Phase 5
+Stopped at: Phase 5 complete, ready to plan Phase 6
 Resume file: None

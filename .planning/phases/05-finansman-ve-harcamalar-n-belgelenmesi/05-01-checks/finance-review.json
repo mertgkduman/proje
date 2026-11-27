@@ -1,0 +1,70 @@
+{
+  "package_sha256": "b96cef2c890d763193d6e832565a30db5a3215271e0eed506a67700e4ce28a8f",
+  "database": {
+    "sources": 8,
+    "amounts": 264,
+    "annual_scope": {
+      "belgeli": 3,
+      "Bulunamadı": 18,
+      "Doğrulanamadı": 1,
+      "kuruluş-öncesi": 5
+    },
+    "phase04_rows_retained": {
+      "comparison_row": 14754,
+      "practice_scope": 0,
+      "practice_relation": 428,
+      "practice_statement": 255
+    }
+  },
+  "browser": {
+    "url": "https://mertgkduman.github.io/proje/finansman/",
+    "parties": 9,
+    "rows": 264,
+    "externalSources": 8,
+    "gaps": 18,
+    "preFoundation": 5,
+    "missingReview": 1,
+    "focused": true,
+    "width": 360,
+    "contentWidth": 360,
+    "keyboardSource": true
+  },
+  "browser_report_sha256": "7f954ace3a8b25a90a1047180e8ab249c9843275026abe1b6dee7b7ec6ac1df8",
+  "tests": {
+    "command": "python3 tests/run.py --pattern test_finance.py",
+    "passed": 6
+  },
+  "combined_report": {
+    "url": "https://mertgkduman.github.io/proje/arastirma/releases/c426b97652d1447d97041685f1261e2b/index.html",
+    "details": {
+      "tabs": 11,
+      "first": "tab-yeni-parti",
+      "focused": "tab-yeni-parti",
+      "firstIndex": 0,
+      "second": "tab-tip"
+    },
+    "selected": {
+      "focused": "tab-tip",
+      "tab": "tab-tip",
+      "panel": "party-tip",
+      "width": 360,
+      "contentWidth": 360
+    },
+    "html": {
+      "hasFinance": true,
+      "hasSource": true,
+      "sourceGroup": "sources-dbp-finansman",
+      "archive": "https://mertgkduman.github.io/proje/arastirma/views/c912aac0430daf46c75d0de4eca28bae/index.html",
+      "rows": 264,
+      "quoteColor": "rgb(0, 0, 0)",
+      "summaryColor": "rgb(0, 51, 102)"
+    },
+    "pages_commit": "8b49bbcf6ef138566cd3edc225a289fbb09ff5a2"
+  },
+  "archive": {
+    "url": "https://github.com/mertgkduman/proje/releases/tag/data-archive-20261127-phase05",
+    "bytes": 325763,
+    "sha256": "c6adfd3d1a5810224bc7fa6daacb997d32d847e9c5ab8afc64ba00974ca9ca5f",
+    "restored_files": 3
+  }
+}

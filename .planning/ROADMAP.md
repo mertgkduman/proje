@@ -17,7 +17,7 @@
 - [x] **Phase 2: Bütün partiler için dosyalar ve sürümlü kaynaklar** - Okur, onaylanan kapsamdaki bütün partilerin ortak beş başlıklı dosyalarını ve dayandıkları kaynak sürümlerini aynı rapordan inceleyebilir. (completed 2026-11-11)
 - [x] **Phase 3: Tüzük ve programların karşılaştırılması** - Okur, üyelik haklarını, parti yönetimini ve program ilkelerini bütün partiler için aynı konular üzerinden kaynaklarına ulaşarak karşılaştırabilir. (completed 2026-11-16)
 - [x] **Phase 4: Söylem ve belgelenmiş uygulamaların karşılaştırılması** - Okur, ilan edilen ilke ve vaatlerin belgelenmiş uygulamalarla ilişkisini ortak yöntem ve olay bağlamı içinde değerlendirebilir. (completed 2026-11-26)
-- [ ] **Phase 5: Finansman ve harcamaların belgelenmesi** - Okur, partilerin erişilebilen gelir ve harcama bilgilerini dönem ve kapsam farklarını anlayarak inceleyebilir.
+- [x] **Phase 5: Finansman ve harcamaların belgelenmesi** - Okur, partilerin erişilebilen gelir ve harcama bilgilerini dönem ve kapsam farklarını anlayarak inceleyebilir. (completed 2026-11-27)
 - [ ] **Phase 6: Güncellenebilir veri tabanı ve paylaşılabilir rapor** - Araştırmacı kaynak ve bulguları geçmişi korunarak güncelleyebilir; okur aynı kayıtlardan üretilen tam, erişilebilir ve paylaşılabilir HTML araştırma raporunu kullanabilir.
 
 ## Phase Details
@@ -268,7 +268,7 @@ Eski 04-04–15’in kalan işleri ve kaynak kayıtları faz dizinindeki planlar
 2. Okur, her parti için erişilebilen harcama kalemlerini ve açıklanan harcama tutarlarını belge dayanağıyla veya gerekçeli eksik bilgi durumlarıyla görebilir.
 3. Okur, her mali kaydın hesap dönemini, para birimini ve örgütsel kapsamını görebilir; farklı yıllar/kapsamlar eşdeğer sayılmaz, açıklanmayan tutarlar sıfır gibi gösterilmez.
 
-**Plans:** TBD
+**Plans:** 1/1 plans complete
 **UI hint**: yes
 
 ### Phase 6: Güncellenebilir veri tabanı ve paylaşılabilir rapor
@@ -307,7 +307,7 @@ Eski 04-04–15’in kalan işleri ve kaynak kayıtları faz dizinindeki planlar
 | 2. Bütün partiler için dosyalar ve sürümlü kaynaklar | 10/10 | Complete    | 2026-11-11 |
 | 3. Tüzük ve programların karşılaştırılması | 16/16 | Complete    | 2026-11-16 |
 | 4. Söylem ve belgelenmiş uygulamaların karşılaştırılması | 4/4 | Complete    | 2026-11-26 |
-| 5. Finansman ve harcamaların belgelenmesi | 0/TBD | Not started | - |
+| 5. Finansman ve harcamaların belgelenmesi | 1/1 | Complete    | 2026-11-27 |
 | 6. Güncellenebilir veri tabanı ve paylaşılabilir rapor | 0/TBD | Not started | - |
 
 ---

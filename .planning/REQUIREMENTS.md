@@ -36,9 +36,9 @@ Bu maddeler onaylanan PROJECT.md ve kullanıcının kapsam/metin kökeni kararla
 
 - [x] **UYG-01**: Okur, açıklanan ilke veya vaadi, buna ilişkin belgelenmiş uygulama kaydıyla aynı konu altında karşılaştırabilir.
 - [x] **UYG-02**: Okur, söylem–uygulama karşılaştırmasının aktörünü, tarihlerini, bağlamını ve belgelerin desteklediği benzerlik veya farklılığı görebilir.
-- [ ] **MAL-01**: Okur, erişilebilen belgelerde partinin finansman kaynaklarını ve açıklanan gelir tutarlarını görebilir.
-- [ ] **MAL-02**: Okur, erişilebilen belgelerde partinin harcama kalemlerini ve açıklanan harcama tutarlarını görebilir.
-- [ ] **MAL-03**: Okur, mali kaydın hesap dönemini, para birimini ve kapsadığı örgütsel düzeyi görebilir; farklı dönem ve kapsamlar eşdeğer gibi karşılaştırılmaz.
+- [x] **MAL-01**: Okur, erişilebilen belgelerde partinin finansman kaynaklarını ve açıklanan gelir tutarlarını görebilir.
+- [x] **MAL-02**: Okur, erişilebilen belgelerde partinin harcama kalemlerini ve açıklanan harcama tutarlarını görebilir.
+- [x] **MAL-03**: Okur, mali kaydın hesap dönemini, para birimini ve kapsadığı örgütsel düzeyi görebilir; farklı dönem ve kapsamlar eşdeğer gibi karşılaştırılmaz.
 
 ### Metin kökeni ve eksik bilgiler
 
@@ -129,9 +129,9 @@ Okur önce neden kurulduğunu, ne söylediğini/vaat ettiğini/yaptığını ve 
 | KAY-04 | Phase 2 | Complete |
 | UYG-01 | Phase 4 | Complete |
 | UYG-02 | Phase 4 | Complete |
-| MAL-01 | Phase 5 | Pending |
-| MAL-02 | Phase 5 | Pending |
-| MAL-03 | Phase 5 | Pending |
+| MAL-01 | Phase 5 | Complete |
+| MAL-02 | Phase 5 | Complete |
+| MAL-03 | Phase 5 | Complete |
 | MET-01 | Phase 1 | Complete |
 | MET-02 | Phase 1 | Complete |
 | MET-03 | Phase 1 | Complete |
