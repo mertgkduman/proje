@@ -234,16 +234,33 @@ def validate_dossier(data, party_id=None, stage='tracer'):
                 raise ValueError('Kuruluş, tüzük ve program incelenmeli; beş başlığın durumu gerekli')
             if any(states[h] not in ('reviewed','not_researched') for h in HEADINGS[3:]):
                 raise ValueError('Sonraki faz başlığı henüz incelenmedi veya incelendi olmalı')
+            dossier_sources = {(s['heading'], s['version_id']) for s in data['dossier_source'] if s['party_id'] == party_id}
+            review_ids = {r['subject_id'] for r in data['review'] if r['kind'] == 'finding'
+                          and r['reviewer_kind'] in ('agent', 'human') and r['result'] == 'reviewed'
+                          and r['reason'] and r['reviewed_at']}
+            attributions = {a['version_id'] for a in data.get('source_attribution', [])}
+            practice = bool(data.get('practice_contract'))
+            party_findings = {fid: f for fid, f in findings.items() if f['party_id'] == party_id}
             for heading in HEADINGS:
-                relevant = [f for f in findings.values() if f['party_id'] == party_id and f['heading'] == heading]
-                gaps = [m for m in missing.values() if m['party_id'] == party_id and m['heading'] == heading]
+                has_finding = any(f['heading'] == heading for f in party_findings.values())
+                has_gap = any(m['party_id'] == party_id and m['heading'] == heading for m in missing.values())
                 if states[heading] == 'not_researched':
-                    if relevant or gaps: raise ValueError('İçerik veya girişimli eksik bulunan başlık incelenmemiş sayılamaz')
+                    if has_finding or has_gap: raise ValueError('İçerik veya girişimli eksik bulunan başlık incelenmemiş sayılamaz')
+                elif not has_finding and not has_gap:
+                    raise ValueError('İncelenen başlık için bulgu veya girişimli eksik gerekli')
+            for ev in evidence:
+                f = party_findings.get(ev['finding_id'])
+                if not f or f['heading'] not in HEADINGS:
                     continue
-                if not relevant and not gaps: raise ValueError('İncelenen başlık için bulgu veya girişimli eksik gerekli')
-                for f in relevant:
-                    for ev in (e for e in evidence if e['finding_id'] == f['id']):
-                        if not any(s['party_id'] == party_id and s['heading'] == heading and s['version_id'] == passages[ev['passage_id']]['version_id'] for s in data['dossier_source']): raise ValueError('Bulgu kaynağı başlığa bağlanmalı')
+                version_id = passages[ev['passage_id']]['version_id']
+                if (f['heading'], version_id) in dossier_sources:
+                    continue
+                # Later practice snapshots group their cited passages by the
+                # finding's heading, with a recorded review and attribution.
+                if (practice and f['heading'] == 'Söylem ve uygulama' and
+                        f['id'] in review_ids and version_id in attributions and owner(ev['passage_id']) == party_id):
+                    continue
+                raise ValueError('Bulgu kaynağı başlığa bağlanmalı: ' + f['id'])
             context_versions = {c['version_id'] for c in data['version_context']}
             if any(s['version_id'] not in context_versions for s in data['dossier_source'] if s['party_id'] == party_id): raise ValueError('Kaynak dönemi veya gerekçeli belirsizlik gerekli')
     return True
@@ -252,6 +269,10 @@ def validate_dossier(data, party_id=None, stage='tracer'):
 def validate_phase_two_workspace(work, party_id=None, stage='complete'):
     import arsiv
     data = arsiv.validate_phase_one_workspace(work)
+    return validate_phase_two_data(data, party_id, stage)
+
+
+def validate_phase_two_data(data, party_id=None, stage='complete'):
     if data['schema_version'] not in (4,5,6,7): raise ValueError('Faz 2 için şema 4/5/6/7 gerekli')
     if stage not in ('tracer', 'complete'): raise ValueError('Geçersiz aşama')
     if party_id:

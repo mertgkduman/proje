@@ -40,6 +40,16 @@ def add_tip_tracer(work):
     return [{'kind':kind, 'values':values} for kind,values in records]
 
 
+def complete_dossier_fixture():
+    data = {k:[] for k in ('finding','passage','document_version','document','event_date','finding_evidence','review','dossier_field','dossier_event','dossier_source','version_context','version_relation','dossier_identity_note','party_identity_revision','research_state','missing')}
+    for i, heading in enumerate(dosyalar.HEADINGS):
+        data['research_state'].append(dict(party_id='tip',heading=heading,state='reviewed' if i<3 else 'not_researched'))
+        if i<3:data['missing'].append(dict(id='gap-'+str(i),party_id='tip',heading=heading))
+    for field in dosyalar.FIELDS[:5]:
+        data['dossier_field'].append(dict(party_id='tip',field=field,value=None,finding_id=None,missing_id='gap-0',as_of=None,date_precision='unknown',date_unknown_reason='Testte alanın araştırma sonucu eksik.'))
+    return data
+
+
 class DossierTracer(unittest.TestCase):
     def test_refresh_requires_unchanged_completed_delivery(self):
         import copy
@@ -85,20 +95,40 @@ class DossierTracer(unittest.TestCase):
             finally:arsiv.DATA=old
 
     def test_complete_collection_keeps_later_research_explicitly_unexamined(self):
-        # Faz 2 kapsamı: ilk üç başlıkta girişimli belge sonucu; diğer iki
-        # başlıkta henüz çalışılmadı. Tam teslim araştırma yapılmış gibi görünmez.
-        data = {k:[] for k in ('finding','passage','document_version','document','event_date','finding_evidence','review','dossier_field','dossier_event','dossier_source','version_context','version_relation','dossier_identity_note','party_identity_revision','research_state','missing')}
-        for i, heading in enumerate(dosyalar.HEADINGS):
-            data['research_state'].append(dict(party_id='tip',heading=heading,state='reviewed' if i<3 else 'not_researched'))
-            if i<3:data['missing'].append(dict(id='gap-'+str(i),party_id='tip',heading=heading))
-        for field in dosyalar.FIELDS[:5]:
-            data['dossier_field'].append(dict(party_id='tip',field=field,value=None,finding_id=None,missing_id='gap-0',as_of=None,date_precision='unknown',date_unknown_reason='Testte alanın araştırma sonucu eksik.'))
+        data = complete_dossier_fixture()
         self.assertTrue(dosyalar.validate_dossier(data,'tip','complete'))
         data['research_state'][1]['state']='not_researched'
         with self.assertRaises(ValueError):dosyalar.validate_dossier(data,'tip','complete')
         data['research_state'][1]['state']='reviewed'
         data['missing'].append(dict(id='fake-unexamined-gap',party_id='tip',heading=dosyalar.HEADINGS[3]))
         with self.assertRaises(ValueError):dosyalar.validate_dossier(data,'tip','complete')
+
+    def test_reviewed_practice_evidence_is_a_source_for_its_dossier_heading(self):
+        data = complete_dossier_fixture()
+        heading = 'Söylem ve uygulama'
+        data['research_state'][3]['state'] = 'reviewed'
+        data['document'].append(dict(id='document', party_id='tip', source_kind='journalism'))
+        data['document_version'].append(dict(id='version', document_id='document'))
+        data['passage'].append(dict(id='passage', version_id='version'))
+        data['finding'].append(dict(id='finding', heading=heading, party_id='tip'))
+        data['finding_evidence'].append(dict(finding_id='finding', passage_id='passage'))
+        data['practice_contract'] = [dict(stage='complete')]
+        data['source_attribution'] = [dict(version_id='version')]
+        data['review'].append(dict(kind='finding', subject_id='finding', reviewer_kind='agent',
+                                   result='reviewed', reviewed_at='2026-11-27T20:00:00Z',
+                                   reason='Kaynak pasajı incelendi.'))
+        self.assertTrue(dosyalar.validate_dossier(data, 'tip', 'complete'))
+
+        for key in ('practice_contract', 'source_attribution', 'review'):
+            with self.subTest(key=key), self.assertRaisesRegex(ValueError, 'başlığa bağlanmalı'):
+                dosyalar.validate_dossier(dict(data, **{key: []}), 'tip', 'complete')
+        with self.assertRaisesRegex(ValueError, 'başlığa bağlanmalı'):
+            dosyalar.validate_dossier(dict(data, document=[dict(data['document'][0], party_id='dbp')]),
+                                     'tip', 'complete')
+        data['missing'].append(dict(id='practice-gap', party_id='tip', heading=heading))
+        data['finding'][0]['heading'] = 'Tüzük'
+        with self.assertRaisesRegex(ValueError, 'başlığa bağlanmalı'):
+            dosyalar.validate_dossier(data, 'tip', 'complete')
 
     def test_tip_report_exposes_identity_and_grouped_sources(self):
         data = json.loads((arsiv.DATA / 'releases' / arsiv.current() / 'records.json').read_text())
