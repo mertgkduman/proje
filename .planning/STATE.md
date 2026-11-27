@@ -6,10 +6,10 @@ current_phase_name: Finansman ve harcamaların belgelenmesi
 current_plan: Not started
 status: planning
 stopped_at: Phase 4 complete, ready to plan Phase 5
-last_updated: "2026-11-26T21:35:12.176Z"
+last_updated: "2026-11-27T00:30:33.727Z"
 last_activity: 2026-11-26
-last_activity_desc: Phase 4 complete, transitioned to Phase 5
-state_head: 640e72cc3bb80ec66438deb8116a3c43a5330dd8
+last_activity_desc: Proje önizlemelerinin kalıcı arşivi ve grup kotasının açılması
+state_head: f4956a7dfd0c02419762984b035ac9999e198d70
 progress:
   total_phases: 6
   completed_phases: 4
@@ -34,7 +34,7 @@ Total Plans in Phase: TBD
 Phase: 5 — Finansman ve harcamaların belgelenmesi
 Plan: Henüz oluşturulmadı
 Status: Ready to plan
-Last activity: 2026-11-26 — Phase 4 complete, transitioned to Phase 5
+Last activity: 2026-11-26 — Proje önizlemelerinin kalıcı arşivi ve grup kotasının açılması (261126-ql8)
 
 Progress: [███████░░░] 67% (4/6 tamamlanan faz); Faz 3: 16/16 plan, teknik 14/14, kullanıcı UAT 6/6.
 
@@ -187,6 +187,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 | 261111-epm | Kaynak derleme yaklaşımı, gerçek Yeni Parti içeriği, sade rapor ve özgün görünümlü belge arşivlerinin yayımlanması | 2026-11-11 | 7e18593 | [261111-epm-kaynak-derleme-y-ntemini-sadele-tir-yeni](./quick/261111-epm-kaynak-derleme-y-ntemini-sadele-tir-yeni/) |
 | 261111-j4v | Süreç içi PDF yeniden kullanımı; 34 test geçti, tek makbuz ölçümü 180s sınırında tamamlanmadı | 2026-11-11 | a475f5a | [261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel](./quick/261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel/) |
 | 261116-mgh | Faz 3 UAT 6/6, örnekli doğrulama sekmesi ve GitHub Pages yayını | 2026-11-16 | 5af8f43 | [261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-](./quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/) |
+| 261126-ql8 | Proje önizlemelerinin kalıcı arşivi ve grup kotasının açılması | 2026-11-26 | f4956a7d | [261126-ql8-archive-verified-project-previews-and-re](./quick/261126-ql8-archive-verified-project-previews-and-re/) |
 
 ### Roadmap Evolution
 
