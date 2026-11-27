@@ -6,10 +6,10 @@ current_phase_name: Finansman ve harcamaların belgelenmesi
 current_plan: Not started
 status: planning
 stopped_at: Phase 4 complete, ready to plan Phase 5
-last_updated: "2026-11-27T00:30:33.727Z"
+last_updated: "2026-11-27T22:02:42.451Z"
 last_activity: 2026-11-26
 last_activity_desc: Proje önizlemelerinin kalıcı arşivi ve grup kotasının açılması
-state_head: f4956a7dfd0c02419762984b035ac9999e198d70
+state_head: 536a9bf6e653e605b9a4ec2e9460497e27d5222a
 progress:
   total_phases: 6
   completed_phases: 4
@@ -188,6 +188,7 @@ Kararların tamamı PROJECT.md Key Decisions tablosundadır.
 | 261111-j4v | Süreç içi PDF yeniden kullanımı; 34 test geçti, tek makbuz ölçümü 180s sınırında tamamlanmadı | 2026-11-11 | a475f5a | [261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel](./quick/261111-j4v-ayn-pdf-sayfalar-n-n-s-re-i-indeki-yinel/) |
 | 261116-mgh | Faz 3 UAT 6/6, örnekli doğrulama sekmesi ve GitHub Pages yayını | 2026-11-16 | 5af8f43 | [261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-](./quick/261116-mgh-faz-3-do-rulama-sekmesi-ve-github-pages-/) |
 | 261126-ql8 | Proje önizlemelerinin kalıcı arşivi ve grup kotasının açılması | 2026-11-26 | f4956a7d | [261126-ql8-archive-verified-project-previews-and-re](./quick/261126-ql8-archive-verified-project-previews-and-re/) |
+| 261127-nad | GitHub Release arşivi ve grup diski temizliği | 2026-11-27 | 536a9bf6 | [261127-nad-github-release-ar-ivi-ve-eski-nizlemeler](./quick/261127-nad-github-release-ar-ivi-ve-eski-nizlemeler/) |
 
 ### Roadmap Evolution
 
